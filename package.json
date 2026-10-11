@@ -1,0 +1,14 @@
+{
+  "name": "nihongo-intermediate",
+  "version": "1.0.0",
+  "description": "Intermediate Japanese Learning & Dokkai Trainer — JLPT N3 SRS & Reading Comprehension",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "dev": "python -m http.server 8080"
+  },
+  "keywords": ["japanese", "JLPT", "N3", "vocabulary", "dokkai", "reading", "SRS"],
+  "author": "jaiad",
+  "license": "MIT"
+}

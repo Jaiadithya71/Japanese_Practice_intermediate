@@ -1,0 +1,255 @@
+/* =============================================
+   NIHONGO INTERMEDIATE — Vocabulary Browser & Hard Words
+   ============================================= */
+
+.vocab-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.vocab-search-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box i {
+  position: absolute;
+  left: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  outline: none;
+  transition: all 0.18s ease;
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+/* Chapter Chips Scroller */
+.chapter-chips-wrap {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: thin;
+}
+
+.chapter-chip {
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.chapter-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.chapter-chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 10px var(--accent-glow);
+}
+
+.chapter-chip.has-hard {
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.chip-dot.red { background: var(--red); }
+.chip-dot.green { background: var(--green); }
+
+/* Filter Tabs */
+.vocab-filter-tabs {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.vf-tab {
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.vf-tab:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.vf-tab.active {
+  color: var(--accent);
+  background: var(--accent-light);
+  font-weight: 700;
+}
+
+/* Vocabulary List & Cards */
+.vocab-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.vocab-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.15s ease;
+}
+
+.vocab-card:hover {
+  border-color: var(--border-strong);
+  background: var(--bg3);
+}
+
+.vocab-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.vocab-term-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.vocab-term {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.vocab-pos {
+  font-size: 0.75rem;
+  color: var(--cyan);
+  background: var(--cyan-light);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.vocab-meaning {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.vocab-example {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-top: 0.2rem;
+  border-left: 2px solid var(--border);
+  padding-left: 0.6rem;
+}
+
+.vocab-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.btn-hard-flame {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-dim);
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-hard-flame:hover {
+  background: var(--surface);
+  color: var(--amber);
+}
+
+.btn-hard-flame.is-hard {
+  color: var(--red);
+  background: var(--red-light);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+/* Hard Words Section Styles */
+.hard-words-header {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.08), var(--bg2));
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--card-radius);
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hard-words-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hard-flame-icon {
+  font-size: 2rem;
+  color: var(--red);
+}
+
+.hard-controls-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}

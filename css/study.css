@@ -1,0 +1,234 @@
+/* =============================================
+   NIHONGO INTERMEDIATE — Study Session & Flashcards
+   ============================================= */
+
+#view-study {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.study-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.study-progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  max-width: 400px;
+}
+
+.study-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.study-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.25s ease;
+}
+
+.study-progress-count {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* 3D Flashcard Container */
+.flashcard-stage {
+  perspective: 1000px;
+  width: 100%;
+  min-height: 380px;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.flashcard {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.25s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.flashcard:hover {
+  border-color: var(--border-strong);
+}
+
+.flashcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-lesson-tag {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+}
+
+.flashcard-body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.card-term-large {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.card-meaning-large {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.card-meaning-zh {
+  font-size: 1.1rem;
+  color: var(--text-dim);
+}
+
+.card-example-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.4rem;
+  text-align: left;
+  width: 100%;
+  max-width: 580px;
+  margin-top: 1rem;
+}
+
+.card-example-ja {
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card-example-en {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 0.35rem;
+}
+
+.flashcard-bottom {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.82rem;
+}
+
+/* Grading Actions */
+.grade-controls {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.btn-grade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: var(--font-body);
+}
+
+.btn-grade:hover {
+  transform: translateY(-2px);
+}
+
+.grade-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.grade-time {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-top: 0.2rem;
+}
+
+.btn-grade.grade-again { color: var(--red); border-color: rgba(239,68,68,0.25); }
+.btn-grade.grade-again:hover { background: var(--red-light); }
+
+.btn-grade.grade-hard { color: var(--amber); border-color: rgba(245,158,11,0.25); }
+.btn-grade.grade-hard:hover { background: var(--amber-light); }
+
+.btn-grade.grade-good { color: var(--accent); border-color: rgba(99,102,241,0.25); }
+.btn-grade.grade-good:hover { background: var(--accent-light); }
+
+.btn-grade.grade-easy { color: var(--green); border-color: rgba(16,185,129,0.25); }
+.btn-grade.grade-easy:hover { background: var(--green-light); }
+
+/* Study Summary Screen */
+.study-summary-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 3rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.summary-trophy {
+  font-size: 3.5rem;
+  color: var(--amber);
+}
+
+.summary-stats-row {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.summary-stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.summary-stat-val {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
