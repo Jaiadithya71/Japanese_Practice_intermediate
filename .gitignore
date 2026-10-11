@@ -19,3 +19,22 @@ desktop.ini
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Temporary scratch and extraction dumps
+scratch_*.txt
+step_*.txt
+full_step*.txt
+summary_step*.txt
+scripts/*.txt
+scripts/pages/
+scripts/booklet/
+scripts/*.jpg
+scripts/check_*.py
+scripts/find_*.py
+scripts/dump_*.py
+scripts/inspect_*.py
+scripts/list_*.py
+scripts/print_*.py
+scripts/read_*.py
+scripts/scan_*.py
+extract_*.py

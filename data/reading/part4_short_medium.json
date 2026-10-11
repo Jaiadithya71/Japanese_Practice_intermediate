@@ -1,0 +1,2841 @@
+{
+  "metadata": {
+    "bookTitle": "新完全マスター JLPT N3 読解",
+    "bookTitleRomaji": "Shin Kanzen Master JLPT N3 Dokkai",
+    "englishTitle": "New Complete Master JLPT N3 Reading Comprehension",
+    "level": "JLPT N3 (Intermediate)",
+    "section": "実力養成編 第4部 実戦問題",
+    "subSection": "短文・中文 (Short Texts & Mid-length Texts)",
+    "description": "Comprehensive transcription of Shin Kanzen Master JLPT N3 Dokkai Part 4: Practical Test Problems (Problems 29-41, pp. 76-99) including Short Texts (Problems 29-32) and Mid-length Texts (Problems 33-41) with complete ruby furigana, comprehensive questions, and bilingual explanations.",
+    "version": "1.0.0",
+    "lastUpdated": "2026-10-12"
+  },
+  "lessons": [
+    {
+      "id": "dokkai-n3-p4-intro",
+      "pages": [
+        76,
+        77
+      ],
+      "problemNumber": null,
+      "genre": "実力養成編案内",
+      "genre_en": "Practice Guide",
+      "genre_zh": "实战指南",
+      "title_ja": "第4部 学習の前に：実戦問題に挑戦しよう",
+      "title_en": "Part 4 Before Learning: Practical Test Exercises",
+      "title_zh": "第4部分 学习之前：挑战实战问题",
+      "preReading": {
+        "question_ja": "実際のJLPT N3読解試験では、どんな形式や長さの文章が出題されるか知っていますか。",
+        "question_en": "Do you know what formats and lengths of reading passages appear on the actual JLPT N3 exam?",
+        "question_zh": "你知道实际JLPT N3读解考试中会考查哪些形式和长度的文章吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "第4部「実戦問題」の構成と解き方のポイントを読み、本番形式の読解練習に備えましょう。",
+        "instruction_en": "Read the structure and strategy tips of Part 4 'Practical Exercises' to prepare for real-exam format reading."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "第4部では、第1部、第2部および第3部の学習で身につけた力を生かして、実際の試験と同じ形式の問題を練習します。",
+            "ruby_html": "<ruby>第4部<rt>だいよんぶ</rt></ruby>では、<ruby>第1部<rt>だいいちぶ</rt></ruby>、<ruby>第2部<rt>だいにぶ</rt></ruby>および<ruby>第3部<rt>だいさんぶ</rt></ruby>の<ruby>学習<rt>がくしゅう</rt></ruby>で<ruby>身<rt>み</rt></ruby>につけた<ruby>力<rt>ちから</rt></ruby>を<ruby>生<rt>い</rt></ruby>かして、<ruby>実際<rt>じっさい</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>形式<rt>けいしき</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>を<ruby>練習<rt>れんしゅう</rt></ruby>します。",
+            "text_en": "In Part 4, applying the knowledge and skills acquired in Parts 1 through 3, you practice questions using the same format as in the actual examination."
+          },
+          {
+            "id": 2,
+            "text_ja": "読解力は、たくさんの文章を読む練習を重ねることで高まります。",
+            "ruby_html": "<ruby>読解力<rt>どっかいりょく</rt></ruby>は、たくさんの<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む<ruby>練習<rt>れんしゅう</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねることで<ruby>高<rt>たか</rt></ruby>まります。",
+            "text_en": "Reading comprehension ability improves by reading a large number of texts over and over."
+          },
+          {
+            "id": 3,
+            "text_ja": "1) 内容理解（短文）は150〜250字程度の短い文章で、1つの文章につき質問が1問あります。",
+            "ruby_html": "1) <ruby>内容理解<rt>ないようりかい</rt></ruby>（<ruby>短文<rt>たんぶん</rt></ruby>）は150〜250<ruby>字程度<rt>じていど</rt></ruby>の<ruby>短<rt>みじか</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>で、1つの<ruby>文章<rt>ぶんしょう</rt></ruby>につき<ruby>質問<rt>しつもん</rt></ruby>が1<ruby>問<rt>もん</rt></ruby>あります。",
+            "text_en": "1) Content Comprehension (Short Passages) consists of short texts of around 150-250 characters, with one question per passage."
+          },
+          {
+            "id": 4,
+            "text_ja": "2) 内容理解（中文）は350字程度の中くらいの長さの文章で、1つの文章に3問の質問があります。",
+            "ruby_html": "2) <ruby>内容理解<rt>ないようりかい</rt></ruby>（<ruby>中文<rt>ちゅうぶん</rt></ruby>）は350<ruby>字程度<rt>じていど</rt></ruby>の<ruby>中<rt>なか</rt></ruby>くらいの<ruby>長<rt>なが</rt></ruby>さの<ruby>文章<rt>ぶんしょう</rt></ruby>で、1つの<ruby>文章<rt>ぶんしょう</rt></ruby>に3<ruby>問<rt>もん</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>があります。",
+            "text_en": "2) Content Comprehension (Mid-length Passages) consists of mid-length texts of around 350 characters, with three questions per passage."
+          },
+          {
+            "id": 5,
+            "text_ja": "時間配分に気を配りながら、繰り返し練習して確かな実力をつけましょう。",
+            "ruby_html": "<ruby>時間配分<rt>じかんはいぶん</rt></ruby>に<ruby>気<rt>き</rt></ruby>を<ruby>配<rt>くば</rt></ruby>りながら、<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し<ruby>練習<rt>れんしゅう</rt></ruby>して<ruby>確<rt>たし</rt></ruby>かな<ruby>実力<rt>じつりょく</rt></ruby>をつけましょう。",
+            "text_en": "While paying attention to time allocation, let us practice repeatedly to build up solid, reliable ability."
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "形式",
+          "reading": "けいしき",
+          "meaning": "format, style, form / 形式",
+          "type": "noun"
+        },
+        {
+          "term": "読解力",
+          "reading": "どっかいりょく",
+          "meaning": "reading comprehension ability / 阅读理解能力",
+          "type": "noun"
+        },
+        {
+          "term": "時間配分",
+          "reading": "じかんはいぶん",
+          "meaning": "time allocation, pacing / 时间分配",
+          "type": "noun"
+        },
+        {
+          "term": "実力",
+          "reading": "じつりょく",
+          "meaning": "real ability, true competence / 实力",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-p4-intro-1",
+          "questionNumber": 1,
+          "questionText_ja": "第4部の学習の目的として最も適切なものはどれか。",
+          "questionText_en": "Which is the most appropriate statement regarding the purpose of studying Part 4?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "新しい文法用語だけを覚えること",
+              "text_en": "Memorizing new grammatical terms only"
+            },
+            {
+              "id": 2,
+              "text_ja": "実際の試験と同じ形式で多くの文章を読み、実力を高めること",
+              "text_en": "Reading many texts in the same format as the real examination to improve practical reading competence"
+            },
+            {
+              "id": 3,
+              "text_ja": "辞書を引かずに短い文章だけを速く読むこと",
+              "text_en": "Reading only short passages quickly without consulting a dictionary"
+            },
+            {
+              "id": 4,
+              "text_ja": "試験の解答をすべて暗記すること",
+              "text_en": "Memorizing all answers to the examination questions"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "案内文にある通り、第4部では実際の試験と同じ形式の問題を繰り返し練習し、確かな実力を養うことを目的としています。したがって、2が正解です。",
+          "explanation_en": "As described in the introductory guide, Part 4 provides practice using the same formats as the real examination to develop practical comprehension proficiency. Therefore, Option 2 is correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-29",
+      "pages": [
+        78
+      ],
+      "problemNumber": 29,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "おにぎりの上手な作り方",
+      "title_en": "How to Make Delicious Onigiri",
+      "title_zh": "做饭团的好方法",
+      "preReading": {
+        "question_ja": "おにぎりを作ったことがありますか。美味しくにぎるコツは何だと思いますか。",
+        "question_en": "Have you ever made onigiri? What do you think is the trick to shaping it deliciously?",
+        "question_zh": "你做过饭团吗？你认为捏出美味饭团的诀窍是什么？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "おにぎりは簡単に食べられるので、とても人気がある。",
+            "ruby_html": "おにぎり<sup>(注1)</sup>は<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるので、とても<ruby>人気<rt>にんき</rt></ruby>がある。",
+            "text_en": "Because onigiri can be eaten easily, it is very popular."
+          },
+          {
+            "id": 2,
+            "text_ja": "このおにぎり、ただご飯を丸くしただけのように見えるが、上手に作るのは簡単ではない。",
+            "ruby_html": "このおにぎり、ただご<ruby>飯<rt>はん</rt></ruby>を<ruby>丸<rt>まる</rt></ruby>くしただけのように<ruby>見<rt>み</rt></ruby>えるが、<ruby>上手<rt>じょうず</rt></ruby>に<ruby>作<rt>つく</rt></ruby>るのは<ruby>簡単<rt>かんたん</rt></ruby>ではない。",
+            "text_en": "This onigiri looks like nothing more than simply rounded cooked rice, but making it well is not easy."
+          },
+          {
+            "id": 3,
+            "text_ja": "ぎゅうぎゅうと力を込めて固くにぎっては、おいしいおにぎりにならない。",
+            "ruby_html": "ぎゅうぎゅうと<ruby>力<rt>ちから</rt></ruby>を<ruby>込<rt>こ</rt></ruby>めて<ruby>固<rt>かた</rt></ruby>くにぎっては、おいしいおにぎりにならない。",
+            "text_en": "If you press it tightly with great force until it is hard, it will not become delicious onigiri."
+          },
+          {
+            "id": 4,
+            "text_ja": "けれどもあまり力を入れないと、食べるときにぼろぼろとくずれてしまう。",
+            "ruby_html": "けれどもあまり<ruby>力<rt>ちから</rt></ruby>を<ruby>入<rt>い</rt></ruby>れないと、<ruby>食<rt>た</rt></ruby>べるときにぼろぼろとくずれてしまう。",
+            "text_en": "However, if you put in too little force, it crumbles apart messily when eating."
+          },
+          {
+            "id": 5,
+            "text_ja": "食べるときにお米と具の味が混ざるように、ふわふわと、でも、くずれない程度に力を込めてにぎらなければならない。",
+            "ruby_html": "<ruby>食<rt>た</rt></ruby>べるときにお<ruby>米<rt>こめ</rt></ruby>と<ruby>具<rt>ぐ</rt></ruby><sup>(注2)</sup>の<ruby>味<rt>あじ</rt></ruby>が<ruby>混<rt>ま</rt></ruby>ざるように、ふわふわと、でも、くずれない<ruby>程度<rt>ていど</rt></ruby>に<ruby>力<rt>ちから</rt></ruby>を<ruby>込<rt>こ</rt></ruby>めてにぎらなければならない。",
+            "text_en": "You must shape it with just enough firmness so it does not fall apart, yet keeping it fluffy so that the flavor of the rice and filling blend together when eaten."
+          },
+          {
+            "id": 6,
+            "text_ja": "自分の作ったおにぎりがあまりおいしくないと思っているなら、くずれない程度に強く、味が混ざるように優しくにぎってみることをすすめる。",
+            "ruby_html": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>作<rt>つく</rt></ruby>ったおにぎりがあまりおいしくないとおもっているなら、くずれない<ruby>程度<rt>ていど</rt></ruby>に<ruby>強<rt>つよ</rt></ruby>く、<ruby>味<rt>あじ</rt></ruby>が<ruby>混<rt>ま</rt></ruby>ざるように<ruby>優<rt>やさ</rt></ruby>しくにぎってみることをすすめる。",
+            "text_en": "If you feel the onigiri you make isn't very tasty, I recommend trying to shape it firmly enough not to collapse, yet gently enough so the flavors harmonize."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "おにぎり",
+          "reading": "おにぎり",
+          "definition_ja": "炊いたご飯を三角形や丸の形にして作った日本の食べ物",
+          "definition_en": "onigiri: Japanese food made by shaping cooked rice into triangle or round balls",
+          "definition_zh": "饭团：将煮熟的米饭捏成三角形或圆形的日本食物"
+        },
+        {
+          "index": 2,
+          "term_ja": "具",
+          "reading": "ぐ",
+          "definition_ja": "おにぎりの中に入れるおかずになるもの",
+          "definition_en": "filling: ingredients/side dishes placed inside the onigiri",
+          "definition_zh": "馅料：放入饭团内部的菜肴成分"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "ただ〜だけ",
+          "reading": "ただ〜だけ",
+          "meaning": "just, only / 只是",
+          "type": "grammar"
+        },
+        {
+          "term": "ぎゅうぎゅう",
+          "reading": "ぎゅうぎゅう",
+          "meaning": "tightly, packed tightly / 使劲状，挤得满满地",
+          "type": "adverb"
+        },
+        {
+          "term": "ぼろぼろ",
+          "reading": "ぼろぼろ",
+          "meaning": "crumbly, crumbling apart / 散落状，零落破碎",
+          "type": "adverb"
+        },
+        {
+          "term": "ふわふわ",
+          "reading": "ふわふわ",
+          "meaning": "fluffy, soft / 蓬松绵软状",
+          "type": "adverb"
+        },
+        {
+          "term": "力を込める",
+          "reading": "ちからをこめる",
+          "meaning": "to put strength/force into / 用力",
+          "type": "phrase"
+        },
+        {
+          "term": "くずれる",
+          "reading": "くずれる",
+          "meaning": "to crumble, fall apart / 散架，崩溃",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-29-1",
+          "questionNumber": 1,
+          "questionText_ja": "上手なおにぎりの作り方として正しいのはどれか。",
+          "questionText_en": "Which is correct as the way to make good onigiri?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "食べるときにこわれてしまわないようにご飯を固くまとめる。",
+              "text_en": "Bind the rice firmly so that it does not break when eaten."
+            },
+            {
+              "id": 2,
+              "text_ja": "形が丸くなるように力を込めて何度もにぎる。",
+              "text_en": "Press repeatedly with force so that its shape becomes round."
+            },
+            {
+              "id": 3,
+              "text_ja": "食べるときに形がこわれるぐらいやわらかくにぎる。",
+              "text_en": "Shape it softly to the extent that it breaks apart when eating."
+            },
+            {
+              "id": 4,
+              "text_ja": "くずれないけれども食べるときにはやわらかいと感じるようににぎる。",
+              "text_en": "Shape it so that it will not crumble apart, yet feels tender and soft upon eating."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文に「食べるときにお米と具の味が混ざるように、ふわふわと、でも、くずれない程度に力を込めてにぎらなければならない」とあります。形が崩れない硬さを保ちながら、口の中でふんわりと柔らかく感じられる程度に握るのが正しいため、4が正解です。",
+          "explanation_en": "The author explains: 'You must shape it with just enough firmness so it does not fall apart, yet keeping it fluffy so that the flavor of the rice and filling blend together when eaten.' Thus, Option 4 is correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-30",
+      "pages": [
+        79
+      ],
+      "problemNumber": 30,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "日本人の集団主義と稲作",
+      "title_en": "Japanese Collectivism and Rice Farming",
+      "title_zh": "日本人的集体主义与水稻种植",
+      "preReading": {
+        "question_ja": "「集団主義」と聞いてどんな行動を思い浮かべますか。",
+        "question_en": "What actions come to mind when you hear 'collectivism'?",
+        "question_zh": "听到“集体主义”时，你会联想到怎样的行为？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "日本人は集団主義だとよく言われる。",
+            "ruby_html": "<ruby>日本人<rt>にほんじん</rt></ruby>は<ruby>集団主義<rt>しゅうだんしゅぎ</rt></ruby>だとよく<ruby>言<rt>い</rt></ruby>われる。",
+            "text_en": "It is often said that Japanese people are collectivist."
+          },
+          {
+            "id": 2,
+            "text_ja": "つまり、個人よりもみんなで行動することや、みんなのために行動することを大切にするというのだ。",
+            "ruby_html": "つまり、<ruby>個人<rt>こじん</rt></ruby>よりもみんなで<ruby>行動<rt>こうどう</rt></ruby>することや、みんなのために<ruby>行動<rt>こうどう</rt></ruby>することを<ruby>大切<rt>たいせつ</rt></ruby>にするというのだ。",
+            "text_en": "That is to say, they prioritize acting as a group or acting for the benefit of the group over the individual."
+          },
+          {
+            "id": 3,
+            "text_ja": "それにはさまざまな原因があるが、その一つに日本人が昔から「稲作」を行ってきたことがあると言われている。",
+            "ruby_html": "それにはさまざまな<ruby>原因<rt>げんいん</rt></ruby>があるが、その<ruby>一<rt>ひと</rt></ruby>つに<ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>昔<rt>むかし</rt></ruby>から「<ruby>稲作<rt>いなさく</rt></ruby>」<sup>(注1)</sup>を<ruby>行<rt>おこな</rt></ruby>ってきたことがあると<ruby>言<rt>い</rt></ruby>われている。",
+            "text_en": "There are various causes for this, but one of them is said to be that Japanese people have engaged in wet-rice cultivation since ancient times."
+          },
+          {
+            "id": 4,
+            "text_ja": "稲作では田植えや収穫など、みんなで一度に行う作業が多い。",
+            "ruby_html": "<ruby>稲作<rt>いなさく</rt></ruby>では<ruby>田植<rt>たう</rt></ruby>えや<ruby>収穫<rt>しゅうかく</rt></ruby>など、みんなで<ruby>一度<rt>いちど</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>う<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+            "text_en": "In rice farming, many tasks such as rice-planting and harvesting must be conducted all at once by everyone together."
+          },
+          {
+            "id": 5,
+            "text_ja": "また、より多くの稲を上手に育てるには、稲作で使う水を個人の田んぼだけではなく、地域全体を考えて管理する必要がある。",
+            "ruby_html": "また、より<ruby>多<rt>おお</rt></ruby>くの<ruby>稲<rt>いね</rt></ruby>を<ruby>上手<rt>じょうず</rt></ruby>に<ruby>育<rt>そだ</rt></ruby>てるには、<ruby>稲作<rt>いなさく</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う<ruby>水<rt>みず</rt></ruby>を<ruby>個人<rt>こじん</rt></ruby>の<ruby>田<rt>たん</rt></ruby>ぼだけではなく、<ruby>地域全体<rt>ちいきぜんたい</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えて<ruby>管理<rt>かんり</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がある。",
+            "text_en": "Moreover, in order to cultivate larger yields of rice successfully, the water used in paddies had to be managed considering the entire local community, not just individual plots."
+          },
+          {
+            "id": 6,
+            "text_ja": "このような稲作を何千年も続ける中で、日本社会では「みんな」がとても重要な基準になっていったのだろう。",
+            "ruby_html": "このような<ruby>稲作<rt>いなさく</rt></ruby>を<ruby>何千年<rt>なんぜんねん</rt></ruby>も<ruby>続<rt>つづ</rt></ruby>ける<ruby>中<rt>なか</rt></ruby>で、<ruby>日本社会<rt>にほんしゃかい</rt></ruby>では「みんな」がとても<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>基準<rt>きじゅん</rt></ruby>になっていったのだろう。",
+            "text_en": "Through thousands of years of continuing such rice cultivation, 'everyone / the collective' likely became a vital standard in Japanese society."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "稲作",
+          "reading": "いなさく",
+          "definition_ja": "米を作ること",
+          "definition_en": "rice cultivation: growing and harvesting rice",
+          "definition_zh": "水稻种植：种植并收获稻米"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "田植え",
+          "reading": "たうえ",
+          "meaning": "rice-planting / 插秧",
+          "type": "noun"
+        },
+        {
+          "term": "収穫",
+          "reading": "しゅうかく",
+          "meaning": "harvest / 收割，收获",
+          "type": "noun"
+        },
+        {
+          "term": "作業",
+          "reading": "さぎょう",
+          "meaning": "work, operations / 劳动作业",
+          "type": "noun"
+        },
+        {
+          "term": "地域",
+          "reading": "ちいき",
+          "meaning": "area, district, region / 地区",
+          "type": "noun"
+        },
+        {
+          "term": "管理する",
+          "reading": "かんりする",
+          "meaning": "to manage / 管理",
+          "type": "verb"
+        },
+        {
+          "term": "基準",
+          "reading": "きじゅん",
+          "meaning": "standard, criterion / 基准",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-30-1",
+          "questionNumber": 1,
+          "questionText_ja": "どうして日本人は集団主義になったと書かれているか。",
+          "questionText_en": "Why does the text say the Japanese people became collectivist?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "何千年も米を食べ続けているから。",
+              "text_en": "Because they have continued to eat rice for thousands of years."
+            },
+            {
+              "id": 2,
+              "text_ja": "昔から協力して飲み水を管理してきたから。",
+              "text_en": "Because they have cooperatively managed drinking water since ancient times."
+            },
+            {
+              "id": 3,
+              "text_ja": "自分の田んぼで上手に稲を作ろうと競争してきたから。",
+              "text_en": "Because they competed to grow rice skillfully in their own paddies."
+            },
+            {
+              "id": 4,
+              "text_ja": "みんなでする作業が多い稲作を続けてきたから。",
+              "text_en": "Because they continued rice farming, which involves many group tasks."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文に「稲作では田植えや収穫など、みんなで一度に行う作業が多い」「稲作で使う水を個人の田んぼだけではなく、地域全体を考えて管理する必要がある」「このような稲作を何千年も続ける中で、日本社会では『みんな』がとても重要な基準になっていった」と書かれています。全員で協力する作業が多い稲作を長期にわたって行ってきたことが理由であるため、4が正解です。",
+          "explanation_en": "The text states that rice farming required many collective tasks such as planting and harvesting, as well as community-wide water management, which shaped collective awareness over millennia. Hence, Option 4 is correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-31",
+      "pages": [
+        80
+      ],
+      "problemNumber": 31,
+      "genre": "指示文",
+      "genre_en": "Instruction texts",
+      "genre_zh": "操作说明",
+      "title_ja": "手動発電式ライトの説明書",
+      "title_en": "Manual Crank Dynamo Light Instructions",
+      "title_zh": "手摇发电式手电筒说明书",
+      "preReading": {
+        "question_ja": "電池がなくても使える防災用の手動ライトを見たことがありますか。",
+        "question_en": "Have you ever seen an emergency hand-crank light that can be used without batteries?",
+        "question_zh": "你见过无需电池即可使用的防灾用手摇手电筒吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章は手動発電式ライトの説明書である。本文を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The following text is the instructions for a manual crank dynamo light. Read the text and answer the question. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "使用方法",
+            "ruby_html": "<ruby>使用方法<rt>しようほうほう</rt></ruby>",
+            "text_en": "How to Use"
+          },
+          {
+            "id": 2,
+            "text_ja": "①右側のハンドルを引き出します。",
+            "ruby_html": "①<ruby>右側<rt>みぎがわ</rt></ruby>のハンドルを<ruby>引<rt>ひ</rt></ruby>き<ruby>出<rt>だ</rt></ruby>します。",
+            "text_en": "1. Pull out the handle on the right side."
+          },
+          {
+            "id": 3,
+            "text_ja": "②ハンドルを矢印の方向にくり返し回すことで、発電ができます。",
+            "ruby_html": "②ハンドルを<ruby>矢印<rt>やじるし</rt></ruby>の<ruby>方向<rt>ほうこう</rt></ruby>にくり<ruby>返<rt>かえ</rt></ruby>し<ruby>回<rt>まわ</rt></ruby>すことで、<ruby>発電<rt>はつでん</rt></ruby>ができます。",
+            "text_en": "2. Power is generated by turning the handle repeatedly in the direction of the arrow."
+          },
+          {
+            "id": 4,
+            "text_ja": "1分間の発電で、約10分の使用が可能です。",
+            "ruby_html": "1<ruby>分間<rt>ぷんかん</rt></ruby>の<ruby>発電<rt>はつでん</rt></ruby>で、<ruby>約<rt>やく</rt></ruby>10<ruby>分<rt>ぷん</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby>が<ruby>可能<rt>かのう</rt></ruby>です。",
+            "text_en": "With 1 minute of cranking, approximately 10 minutes of use is possible."
+          },
+          {
+            "id": 5,
+            "text_ja": "③ライトスイッチを押すと、ライトがつきます。",
+            "ruby_html": "③ライトスイッチを<ruby>押<rt>お</rt></ruby>すと、ライトがつきます。",
+            "text_en": "3. Press the light switch, and the light illuminates."
+          },
+          {
+            "id": 6,
+            "text_ja": "④ライトスイッチを押してから、白いボタンを押すと、ライトを点滅させることができます。",
+            "ruby_html": "④ライトスイッチを<ruby>押<rt>お</rt></ruby>してから、<ruby>白<rt>しろ</rt></ruby>いボタンを<ruby>押<rt>お</rt></ruby>すと、ライトを<ruby>点滅<rt>てんめつ</rt></ruby><sup>(注1)</sup>させることができます。",
+            "text_en": "4. Pressing the white button after pressing the light switch allows the light to flash."
+          },
+          {
+            "id": 7,
+            "text_ja": "使用上の注意",
+            "ruby_html": "<ruby>使用上<rt>しようじょう</rt></ruby>の<ruby>注意<rt>ちゅうい</rt></ruby>",
+            "text_en": "Precautions for Use"
+          },
+          {
+            "id": 8,
+            "text_ja": "・長時間ご使用の場合、ライトが暗くなることがあります。暗くなりましたら、発電用ハンドルを回してください。",
+            "ruby_html": "・<ruby>長時間<rt>ちょうじかん</rt></ruby>ご<ruby>使用<rt>しよう</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>、ライトが<ruby>暗<rt>くら</rt></ruby>くなることがあります。<ruby>暗<rt>くら</rt></ruby>くなりましたら、<ruby>発電用<rt>はつでんよう</rt></ruby>ハンドルを<ruby>回<rt>まわ</rt></ruby>してください。",
+            "text_en": "- During prolonged use, the light may become dim. If it dims, please turn the power generation handle."
+          },
+          {
+            "id": 9,
+            "text_ja": "・故障の原因となりますので、中を開けて分解しないでください。",
+            "ruby_html": "・<ruby>故障<rt>こしょう</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>となりますので、<ruby>中<rt>なか</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けて<ruby>分解<rt>ぶんかい</rt></ruby>しないでください。",
+            "text_en": "- To prevent malfunction, do not open the inside and disassemble."
+          },
+          {
+            "id": 10,
+            "text_ja": "・本製品は防水性ではありませんので、ぬらさないでください。",
+            "ruby_html": "・<ruby>本製品<rt>ほんせいひん</rt></ruby>は<ruby>防水性<rt>ぼうすいせい</rt></ruby>ではありませんので、ぬらさないでください。",
+            "text_en": "- This product is not waterproof, so please do not get it wet."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "点滅",
+          "reading": "てんめつ",
+          "definition_ja": "ライトがついたり消えたりすること",
+          "definition_en": "blinking, flashing: the light turning on and off repeatedly",
+          "definition_zh": "闪烁：灯光一亮一灭的状态"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "引き出す",
+          "reading": "ひきだす",
+          "meaning": "to draw out, pull out / 拔出来，拉出",
+          "type": "verb"
+        },
+        {
+          "term": "発電",
+          "reading": "はつでん",
+          "meaning": "power generation / 发电",
+          "type": "noun"
+        },
+        {
+          "term": "〜が可能だ",
+          "reading": "〜がかのうだ",
+          "meaning": "it is possible to ~ / 能够~",
+          "type": "phrase"
+        },
+        {
+          "term": "〜上",
+          "reading": "〜じょう",
+          "meaning": "in terms of ~, regarding ~ / ~方面",
+          "type": "suffix"
+        },
+        {
+          "term": "分解する",
+          "reading": "ぶんかいする",
+          "meaning": "to disassemble, take apart / 拆卸，分解",
+          "type": "verb"
+        },
+        {
+          "term": "防水性",
+          "reading": "ぼうすいせい",
+          "meaning": "waterproof quality / 防水性",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-31-1",
+          "questionNumber": 1,
+          "questionText_ja": "本文の内容と合っているものはどれか。",
+          "questionText_en": "Which statement matches the content of the text?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "ライトがつかなくなったら、電池を取り替えればよい。",
+              "text_en": "If the light stops turning on, you should replace the batteries."
+            },
+            {
+              "id": 2,
+              "text_ja": "ライトが暗くなったら、ハンドルを回して発電すればよい。",
+              "text_en": "If the light becomes dim, you should turn the handle to generate power."
+            },
+            {
+              "id": 3,
+              "text_ja": "ライトスイッチを押せば、ライトを点滅させることができる。",
+              "text_en": "If you press the light switch, you can make the light flash."
+            },
+            {
+              "id": 4,
+              "text_ja": "長時間使うとライトが暗くなるので、短い時間だけ使うようにする。",
+              "text_en": "Because using it for a long time dims the light, you should only use it for brief intervals."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "「使用上の注意」に「暗くなりましたら、発電用ハンドルを回してください」と明記されているため、2が正解です。手動発電式のため電池交換は不要で、点滅にはスイッチに加えて白いボタンを押す必要があります。",
+          "explanation_en": "The precautions explicitly state: 'If it dims, please turn the power generation handle.' Thus, Option 2 is correct. Since it is hand-crank powered, no batteries are replaced, and flashing requires pressing the white button after the main switch."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-32",
+      "pages": [
+        81
+      ],
+      "problemNumber": 32,
+      "genre": "メール（プライベート）",
+      "genre_en": "E-mail (private)",
+      "genre_zh": "电子邮件（私人）",
+      "title_ja": "山田先生からの日程変更メール",
+      "title_en": "Rescheduling Email from Prof. Yamada",
+      "title_zh": "来自山田老师的改期邮件",
+      "preReading": {
+        "question_ja": "教授や先生と面談の約束を変更するとき、どのようなメールを書きますか。",
+        "question_en": "When rescheduling an appointment with a professor or teacher, what kind of email do you write?",
+        "question_zh": "与教授或老师更改会面约定时，你会写怎样的邮件？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "○×大学のサラさんは山田先生の研究室に月曜日に行く約束をしていたが、山田先生から下のようなメールが届いた。",
+            "ruby_html": "○×<ruby>大学<rt>だいがく</rt></ruby>のサラさんは<ruby>山田先生<rt>やまだせんせい</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>に<ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>約束<rt>やくそく</rt></ruby>をしていたが、<ruby>山田先生<rt>やまだせんせい</rt></ruby>から<ruby>下<rt>した</rt></ruby>のようなメールが<ruby>届<rt>とど</rt></ruby>いた。",
+            "text_en": "Sarah of Marubatsu University had promised to visit Professor Yamada's laboratory on Monday, but received the following email from Professor Yamada."
+          },
+          {
+            "id": 2,
+            "text_ja": "あて先：1234abc@lits.ac.jp 件名：月曜日の約束 送信日時：20XX年7月16日 13:16",
+            "ruby_html": "あて<ruby>先<rt>さき</rt></ruby>：1234abc@lits.ac.jp　<ruby>件名<rt>けんめい</rt></ruby>：<ruby>月曜日<rt>げつようび</rt></ruby>の<ruby>約束<rt>やくそく</rt></ruby>　<ruby>送信日時<rt>そうしんにちじ</rt></ruby>：20XX<ruby>年<rt>ねん</rt></ruby>7<ruby>月<rt>がつ</rt></ruby>16<ruby>日<rt>にち</rt></ruby> 13:16",
+            "text_en": "To: 1234abc@lits.ac.jp | Subject: Monday's Appointment | Sent: July 16, 20XX 13:16"
+          },
+          {
+            "id": 3,
+            "text_ja": "サラさん こんにちは、山田です。",
+            "ruby_html": "サラさん　こんにちは、<ruby>山田<rt>やまだ</rt></ruby>です。",
+            "text_en": "Dear Sarah, Hello, this is Yamada."
+          },
+          {
+            "id": 4,
+            "text_ja": "来週の月曜日に研究室に来てくれるという約束でしたが、実は急に会議が入ってしまい、都合が悪くなってしまいました。",
+            "ruby_html": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>研究室<rt>けんきゅうしつ</rt></ruby>に<ruby>来<rt>き</rt></ruby>てくれるという<ruby>約束<rt>やくそく</rt></ruby>でしたが、<ruby>実<rt>じつ</rt></ruby>は<ruby>急<rt>きゅう</rt></ruby>に<ruby>会議<rt>かいぎ</rt></ruby>が<ruby>入<rt>はい</rt></ruby>ってしまい、<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなってしまいました。",
+            "text_en": "We had arranged for you to come to my office next Monday, but an urgent meeting came up unexpectedly, making it inconvenient for me."
+          },
+          {
+            "id": 5,
+            "text_ja": "申し訳ないけれど、日時を変更させてください。",
+            "ruby_html": "<ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ないけれど、<ruby>日時<rt>にちじ</rt></ruby>を<ruby>変更<rt>へんこう</rt></ruby>させてください。",
+            "text_en": "I am terribly sorry, but please allow me to change the date and time."
+          },
+          {
+            "id": 6,
+            "text_ja": "もし早いほうがよければ明日、17日の5:00以降、月曜日よりも後でよければ、水、木なら10時からOKです。",
+            "ruby_html": "もし<ruby>早<rt>はや</rt></ruby>いほうがよければ<ruby>明日<rt>あした</rt></ruby>、17<ruby>日<rt>にち</rt></ruby>の5:00<ruby>以降<rt>いこう</rt></ruby>、<ruby>月曜日<rt>げつようび</rt></ruby>よりも<ruby>後<rt>あと</rt></ruby>でよければ、<ruby>水<rt>すい</rt></ruby>、<ruby>木<rt>もく</rt></ruby>なら10<ruby>時<rt>じ</rt></ruby>からOKです。",
+            "text_en": "If earlier suits you better, tomorrow the 17th after 5:00 PM; if after Monday is preferable, Wednesday or Thursday from 10:00 AM works."
+          },
+          {
+            "id": 7,
+            "text_ja": "サラさんの都合を教えてください。",
+            "ruby_html": "サラさんの<ruby>都合<rt>つごう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。",
+            "text_en": "Please let me know your availability."
+          },
+          {
+            "id": 8,
+            "text_ja": "○×大学 外国語学部 山田 はな e-mail yamadahana@marubatsu.ac.jp",
+            "ruby_html": "○×<ruby>大学<rt>だいがく</rt></ruby> <ruby>外国語学部<rt>がいこくごがくぶ</rt></ruby> <ruby>山田<rt>やまだ</rt></ruby> はな e-mail yamadahana@marubatsu.ac.jp",
+            "text_en": "Marubatsu University, Faculty of Foreign Languages, Hana Yamada (e-mail: yamadahana@marubatsu.ac.jp)"
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "実は",
+          "reading": "じつは",
+          "meaning": "in fact, in truth, actually / 实际上",
+          "type": "adverb"
+        },
+        {
+          "term": "都合が悪い",
+          "reading": "つごうがわるい",
+          "meaning": "inconvenient, schedule conflict / 不方便",
+          "type": "phrase"
+        },
+        {
+          "term": "日時",
+          "reading": "にちじ",
+          "meaning": "date and time / 日期和时间",
+          "type": "noun"
+        },
+        {
+          "term": "変更する",
+          "reading": "へんこうする",
+          "meaning": "to change, reschedule / 变更",
+          "type": "verb"
+        },
+        {
+          "term": "以降",
+          "reading": "いこう",
+          "meaning": "onward, after / 之后",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-32-1",
+          "questionNumber": 1,
+          "questionText_ja": "このメールを読んだ後、サラさんは山田先生にどんなメールを出せばよいか。",
+          "questionText_en": "After reading this email, what kind of email should Sarah send to Professor Yamada?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "もう一度先生の都合を聞くメール",
+              "text_en": "An email asking about the professor's schedule once again"
+            },
+            {
+              "id": 2,
+              "text_ja": "自分の都合を教えるメール",
+              "text_en": "An email informing the professor of her own availability"
+            },
+            {
+              "id": 3,
+              "text_ja": "約束を延期したことをあやまるメール",
+              "text_en": "An email apologizing for having postponed the appointment"
+            },
+            {
+              "id": 4,
+              "text_ja": "都合が悪くなったことをあやまるメール",
+              "text_en": "An email apologizing for her schedule having conflicted"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "山田先生から代替の日程候補が具体的に提示されており、文末で「サラさんの都合を教えてください」と依頼されています。したがって、サラさんは提示された候補の中から自分の都合を伝えるメールを返信するのが適切であり、2が正解です。",
+          "explanation_en": "Professor Yamada offered specific alternate dates and concluded by asking Sarah to inform her of her schedule ('サラさんの都合を教えてください'). Therefore, Sarah should send an email indicating her availability, making Option 2 correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-33",
+      "pages": [
+        82,
+        83
+      ],
+      "problemNumber": 33,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "3億円の宝くじと賢い判断",
+      "title_en": "The 300 Million Yen Lottery and a Wise Decision",
+      "title_zh": "三亿日元彩票与明智的抉择",
+      "preReading": {
+        "question_ja": "もし宝くじで大金が当たったら、あなたはどうしますか。",
+        "question_en": "If you won a huge sum in the lottery, what would you do?",
+        "question_zh": "如果你彩票中了巨奖，你会怎么做？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "3億円が当たる宝くじがある。",
+            "ruby_html": "3<ruby>億円<rt>おくえん</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる<ruby>宝<rt>たから</rt></ruby>くじ<sup>(注1)</sup>がある。",
+            "text_en": "There is a lottery in which one can win 300 million yen."
+          },
+          {
+            "id": 2,
+            "text_ja": "それが当たったのにお金を受け取らなかった人がいる。",
+            "ruby_html": "それが<ruby>当<rt>あ</rt></ruby>たったのにお<ruby>金<rt>かね</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らなかった<ruby>人<rt>ひと</rt></ruby>がいる。",
+            "text_en": "There is a person who won it yet did not accept the prize money."
+          },
+          {
+            "id": 3,
+            "text_ja": "彼は70代の一人暮らしの男性で、受け取らない理由は「どう使えばいいかわからないから。」だそうだ。",
+            "ruby_html": "<ruby>彼<rt>かれ</rt></ruby>は70<ruby>代<rt>だい</rt></ruby>の<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしの<ruby>男性<rt>だんせい</rt></ruby>で、<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らない<ruby>理由<rt>りゆう</rt></ruby>は「どう<ruby>使<rt>つか</rt></ruby>えばいいかわからないから。」だそうだ。",
+            "text_en": "He is a man in his 70s living alone, and his reason for not taking it is reportedly, 'Because I would not know how to spend it.'"
+          },
+          {
+            "id": 4,
+            "text_ja": "今は静かに生活をしていて、それに何の不満もない。",
+            "ruby_html": "<ruby>今<rt>いま</rt></ruby>は<ruby>静<rt>しず</rt></ruby>かに<ruby>生活<rt>せいかつ</rt></ruby>をしていて、それに<ruby>何<rt>なん</rt></ruby>の<ruby>不満<rt>ふまん</rt></ruby>もない。",
+            "text_en": "Currently, he lives peacefully, with no dissatisfaction whatsoever with his life."
+          },
+          {
+            "id": 5,
+            "text_ja": "彼が宝くじを買ったのは、亡くなった妻が宝くじを楽しんでいたためで、お金が欲しいからではなかった。",
+            "ruby_html": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>宝<rt>たから</rt></ruby>くじを<ruby>買<rt>か</rt></ruby>ったのは、<ruby>亡<rt>な</rt></ruby>くなった<ruby>妻<rt>つま</rt></ruby>が<ruby>宝<rt>たから</rt></ruby>くじを<ruby>楽<rt>たの</rt></ruby>しんでいたためで、お<ruby>金<rt>かね</rt></ruby>が<ruby>欲<rt>ほ</rt></ruby>しいからではなかった。",
+            "text_en": "He had bought the lottery ticket because his late wife used to enjoy the lottery, not because he wanted money."
+          },
+          {
+            "id": 6,
+            "text_ja": "3億円を受け取っても、それを分けるような子どもや親せきもいないし、高級車や大きな家を買う必要もない。",
+            "ruby_html": "3<ruby>億円<rt>おくえん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>っても、それを<ruby>分<rt>わ</rt></ruby>けるような<ruby>子<rt>こ</rt></ruby>どもや<ruby>親<rt>しん</rt></ruby>せきもいないし、<ruby>高級車<rt>こうきゅうしゃ</rt></ruby>や<ruby>大<rt>おお</rt></ruby>きな<ruby>家<rt>いえ</rt></ruby>を<ruby>買<rt>か</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>もない。",
+            "text_en": "Even if he received 300 million yen, he had no children or relatives to share it with, nor any need to purchase luxury cars or a large house."
+          },
+          {
+            "id": 7,
+            "text_ja": "それよりも、もし3億円を受け取ったら、その金を目的に人が寄ってきていろいろな問題が起きるかもしれない。",
+            "ruby_html": "それよりも、もし3<ruby>億円<rt>おくえん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ったら、その<ruby>金<rt>かね</rt></ruby>を<ruby>目的<rt>もくてき</rt></ruby>に<ruby>人<rt>ひと</rt></ruby>が<ruby>寄<rt>よ</rt></ruby>ってきていろいろな<ruby>問題<rt>もんだい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きるかもしれない。",
+            "text_en": "More than that, if he were to receive 300 million yen, people might flock to him seeking that money, potentially causing all kinds of troubles."
+          },
+          {
+            "id": 8,
+            "text_ja": "楽しい事より大変な事が多いと考えたのだろう。",
+            "ruby_html": "<ruby>楽<rt>たの</rt></ruby>しい<ruby>事<rt>こと</rt></ruby>より<ruby>大変<rt>たいへん</rt></ruby>な<ruby>事<rt>こと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いと<ruby>考<rt>かんが</rt></ruby>えたのだろう。",
+            "text_en": "He likely figured that hardship would far outweigh enjoyment."
+          },
+          {
+            "id": 9,
+            "text_ja": "何人もの人が受け取るようにすすめたが、彼の気持ちは変わらなかった。",
+            "ruby_html": "<ruby>何人<rt>なんにん</rt></ruby>もの<ruby>人<rt>ひと</rt></ruby>が<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>るようにすすめたが、<ruby>彼<rt>かれ</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちは<ruby>変<rt>か</rt></ruby>わらなかった。",
+            "text_en": "Many people urged him to collect the winnings, but his mind did not change."
+          },
+          {
+            "id": 10,
+            "text_ja": "当たらない者から見たらもったいない話だが、彼がかしこい判断をしたのかもしれない。",
+            "ruby_html": "<ruby>当<rt>あ</rt></ruby>たらない<ruby>者<rt>もの</rt></ruby>から<ruby>見<rt>み</rt></ruby>たらもったいない<ruby>話<rt>はなし</rt></ruby>だが、<ruby>彼<rt>かれ</rt></ruby>がかしこい<ruby>判断<rt>はんだん</rt></ruby>をしたのかもしれない。",
+            "text_en": "From the viewpoint of someone who never wins, it seems like a wasteful shame, but perhaps he made a wise decision."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "宝くじ",
+          "reading": "たからくじ",
+          "definition_ja": "番号などのついた券を買い、当たれば賞金がもらえる。",
+          "definition_en": "lottery: buying numbered tickets and receiving prize money if drawn",
+          "definition_zh": "彩票：购买印有号码的奖券，中奖即可获得奖金"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "親せき",
+          "reading": "しんせき",
+          "meaning": "relation, kin, relatives / 亲戚",
+          "type": "noun"
+        },
+        {
+          "term": "高級車",
+          "reading": "こうきゅうしゃ",
+          "meaning": "luxury car / 豪华车",
+          "type": "noun"
+        },
+        {
+          "term": "気持ちが変わる",
+          "reading": "きもちがかわる",
+          "meaning": "to change one's mind / 改变主意",
+          "type": "phrase"
+        },
+        {
+          "term": "もったいない",
+          "reading": "もったいない",
+          "meaning": "wasteful, what a shame / 可惜",
+          "type": "adjective"
+        },
+        {
+          "term": "かしこい",
+          "reading": "かしこい",
+          "meaning": "clever, intelligent / 聪明",
+          "type": "adjective"
+        },
+        {
+          "term": "判断",
+          "reading": "はんだん",
+          "meaning": "judgment, decision / 判断，决定",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-33-1",
+          "questionNumber": 1,
+          "questionText_ja": "彼はどうして3億円の宝くじを買ったのか。",
+          "questionText_en": "Why did he buy the 300 million yen lottery ticket?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "3億円を何かに使う夢を見たかったから。",
+              "text_en": "Because he wanted to dream of using 300 million yen for something."
+            },
+            {
+              "id": 2,
+              "text_ja": "亡くなった妻が宝くじが好きだったから。",
+              "text_en": "Because his deceased wife loved the lottery."
+            },
+            {
+              "id": 3,
+              "text_ja": "お金が欲しいと思ったから。",
+              "text_en": "Because he wanted money."
+            },
+            {
+              "id": 4,
+              "text_ja": "楽しいことがあると思ったから。",
+              "text_en": "Because he thought something fun would happen."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文に「彼が宝くじを買ったのは、亡くなった妻が宝くじを楽しんでいたためで、お金が欲しいからではなかった」と明確に書かれているため、2が正解です。",
+          "explanation_en": "The passage directly explains: 'He had bought the lottery ticket because his late wife used to enjoy the lottery, not because he wanted money.' Therefore, Option 2 is correct."
+        },
+        {
+          "questionId": "q-33-2",
+          "questionNumber": 2,
+          "questionText_ja": "3億円が当たった後で彼はどうしようと思ったか。",
+          "questionText_en": "What did he decide to do after winning 300 million yen?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "子どもや親せきと分けようと思った。",
+              "text_en": "He thought about dividing it with children or relatives."
+            },
+            {
+              "id": 2,
+              "text_ja": "高級車を買おうと思った。",
+              "text_en": "He thought about buying a luxury car."
+            },
+            {
+              "id": 3,
+              "text_ja": "大きな家を買おうと思った。",
+              "text_en": "He thought about buying a large house."
+            },
+            {
+              "id": 4,
+              "text_ja": "受け取らないことにしようと思った。",
+              "text_en": "He decided not to receive the prize money."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文冒頭に「それが当たったのにお金を受け取らなかった人がいる」「受け取らない理由は『どう使えばいいかわからないから。』だそうだ」とある通り、彼は当選金を受け取らないことに決めました。したがって、4が正解です。",
+          "explanation_en": "As stated in the text, he won the jackpot yet did not take the money because he didn't know how to use it, choosing not to collect it. Hence, Option 4 is correct."
+        },
+        {
+          "questionId": "q-33-3",
+          "questionNumber": 3,
+          "questionText_ja": "彼がかしこい判断をしたのかもしれない。とあるが、それはなぜか。",
+          "questionText_en": "It is stated that 'perhaps he made a wise decision'. Why is this?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "何人もの人に相談して意見を聞いたから。",
+              "text_en": "Because he consulted multiple people and listened to their opinions."
+            },
+            {
+              "id": 2,
+              "text_ja": "面倒な問題が起きる可能性がなくなったから。",
+              "text_en": "Because the possibility of troublesome problems arising was eliminated."
+            },
+            {
+              "id": 3,
+              "text_ja": "お金を役立つように使おうとしたから。",
+              "text_en": "Because he tried to use the money helpfully."
+            },
+            {
+              "id": 4,
+              "text_ja": "車や家を買って周りの人にあげようと思ったから。",
+              "text_en": "Because he thought about buying cars or houses to give to people around him."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文に「もし3億円を受け取ったら、その金を目的に人が寄ってきていろいろな問題が起きるかもしれない。楽しい事より大変な事が多いと考えたのだろう」とあります。受け取らないことでそうした面倒なトラブルを避けることができたため、「かしこい判断」と評されています。したがって、2が正解です。",
+          "explanation_en": "The author notes that taking the money could cause people to gather seeking it, bringing about various troubles. Declining the prize eliminated these troublesome risks, making Option 2 correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-34",
+      "pages": [
+        84,
+        85
+      ],
+      "problemNumber": 34,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "我慢できるストレスの危険性",
+      "title_en": "The Hidden Danger of Tolerable Stress",
+      "title_zh": "能够忍受的压力的潜在危险",
+      "preReading": {
+        "question_ja": "日常の小さなストレスをそのままにしていませんか。",
+        "question_en": "Do you leave small everyday stresses as they are?",
+        "question_zh": "你会对日常的小压力听之任之吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "人間関係のこと、勉強や仕事のことなど、いろいろなストレスが原因で病気になることは少なくない。",
+            "ruby_html": "<ruby>人間関係<rt>にんげんかんけい</rt></ruby>のこと、<ruby>勉強<rt>べんきょう</rt></ruby>や<ruby>仕事<rt>しごと</rt></ruby>のことなど、いろいろなストレスが<ruby>原因<rt>げんいん</rt></ruby>で<ruby>病気<rt>びょうき</rt></ruby>になることは<ruby>少<rt>すく</rt></ruby>なくない。",
+            "text_en": "It is not uncommon to fall ill due to various stresses such as interpersonal relationships, studies, or work."
+          },
+          {
+            "id": 2,
+            "text_ja": "ストレスなど全くない生活をしてみたいものだが、なかなかそうはいかない。",
+            "ruby_html": "ストレスなど<ruby>全<rt>まった</rt></ruby>くない<ruby>生活<rt>せいかつ</rt></ruby>をしてみたいものだが、なかなかそうはいかない。",
+            "text_en": "One might wish to live a life completely free of stress, but that is simply not easily possible."
+          },
+          {
+            "id": 3,
+            "text_ja": "どうせストレスから逃げられないのなら、大きなストレスよりも、がまんできるぐらいの小さなストレスのほうがまだいいと思うだろう。",
+            "ruby_html": "どうせストレスから<ruby>逃<rt>に</rt></ruby>げられないのなら、<ruby>大<rt>おお</rt></ruby>きなストレスよりも、がまんできるぐらいの<ruby>小<rt>ちい</rt></ruby>さなストレスのほうがまだいいと<ruby>思<rt>おも</rt></ruby>うだろう。",
+            "text_en": "If we cannot escape stress anyway, one would probably think that a small, bearable stress is preferable to a massive one."
+          },
+          {
+            "id": 4,
+            "text_ja": "しかし、専門家に言わせると、このがまんできるぐらいのストレスが一番問題なのだという。",
+            "ruby_html": "しかし、<ruby>専門家<rt>せんもんか</rt></ruby>に<ruby>言<rt>い</rt></ruby>わせると、このがまんできるぐらいのストレスが<ruby>一番<rt>いちばん</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>なのだという。",
+            "text_en": "However, according to specialists, this bearable level of stress is actually the most problematic."
+          },
+          {
+            "id": 5,
+            "text_ja": "なぜなら、受けたストレスをがまんできると思うと、人はそれを解決せずそのままにしてしまうからだ。",
+            "ruby_html": "なぜなら、<ruby>受<rt>う</rt></ruby>けたストレスをがまんできると<ruby>思<rt>おも</rt></ruby>うと、<ruby>人<rt>ひと</rt></ruby>はそれを<ruby>解決<rt>かいけつ</rt></ruby>せずそのままにしてしまうからだ。",
+            "text_en": "This is because when people think they can endure the stress received, they leave it unresolved as it is."
+          },
+          {
+            "id": 6,
+            "text_ja": "そして、そうしているうちに、心や体をこわしてしまうというのだ。",
+            "ruby_html": "そして、そうしているうちに、<ruby>心<rt>こころ</rt></ruby>や<ruby>体<rt>からだ</rt></ruby>をこわしてしまうというのだ。",
+            "text_en": "And while doing so, they end up breaking down mentally and physically."
+          },
+          {
+            "id": 7,
+            "text_ja": "反対に、大きなストレスはつらいものだが、何とかそれを解決しようという力を起こさせ、人が成長するきっかけになることも多いという。",
+            "ruby_html": "<ruby>反対<rt>はんたい</rt></ruby>に、<ruby>大<rt>おお</rt></ruby>きなストレスはつらいものだが、<ruby>何<rt>なん</rt></ruby>とかそれを<ruby>解決<rt>かいけつ</rt></ruby>しようという<ruby>力<rt>ちから</rt></ruby>を<ruby>起<rt>お</rt></ruby>こさせ、<ruby>人<rt>ひと</rt></ruby>が<ruby>成長<rt>せいちょう</rt></ruby>するきっかけになることも<ruby>多<rt>おお</rt></ruby>いという。",
+            "text_en": "Conversely, while great stress is painful, it stirs up the power to somehow solve it, often becoming an opportunity for personal growth."
+          },
+          {
+            "id": 8,
+            "text_ja": "ストレスが心や体をこわす原因になるかどうかは、その大小ではなく、乗り越えようとする気持ちと関係があるようだ。",
+            "ruby_html": "ストレスが<ruby>心<rt>こころ</rt></ruby>や<ruby>体<rt>からだ</rt></ruby>をこわす<ruby>原因<rt>げんいん</rt></ruby>になるかどうかは、その<ruby>大小<rt>だいしょう</rt></ruby>ではなく、<ruby>乗<rt>の</rt></ruby>り<ruby>越<rt>こ</rt></ruby>えようとする<ruby>気持<rt>きも</rt></ruby>ちと<ruby>関係<rt>かんけい</rt></ruby>があるようだ。",
+            "text_en": "Whether stress causes harm to mind and body appears to depend not on its magnitude, but on one's determination to overcome it."
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "人間関係",
+          "reading": "にんげんかんけい",
+          "meaning": "interpersonal relations / 人际关系",
+          "type": "noun"
+        },
+        {
+          "term": "そうはいかない",
+          "reading": "そうはいかない",
+          "meaning": "cannot do that easily / 不可能实现，行不通",
+          "type": "phrase"
+        },
+        {
+          "term": "まだいい",
+          "reading": "まだいい",
+          "meaning": "tolerable, preferable / 勉强可以",
+          "type": "phrase"
+        },
+        {
+          "term": "〜せず",
+          "reading": "〜せず",
+          "meaning": "without doing ~ / 没有~，不做~",
+          "type": "grammar"
+        },
+        {
+          "term": "そのまま",
+          "reading": "そのまま",
+          "meaning": "as is, without changing / 保持原样",
+          "type": "adverb"
+        },
+        {
+          "term": "きっかけ",
+          "reading": "きっかけ",
+          "meaning": "trigger, incentive / 契机",
+          "type": "noun"
+        },
+        {
+          "term": "〜かどうか",
+          "reading": "〜かどうか",
+          "meaning": "whether or not ~ / 是否~",
+          "type": "grammar"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-34-1",
+          "questionNumber": 1,
+          "questionText_ja": "専門家はストレスについてどう言っているか。",
+          "questionText_en": "What do specialists say about stress?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "人間関係や勉強や仕事のことなどがストレスになる。",
+              "text_en": "Things like interpersonal relations, studies, and work become stress."
+            },
+            {
+              "id": 2,
+              "text_ja": "ストレスが原因で体をこわすこともある。",
+              "text_en": "Stress can sometimes cause one's health to break down."
+            },
+            {
+              "id": 3,
+              "text_ja": "小さなストレスが一番困る。",
+              "text_en": "Small, bearable stress is the most problematic."
+            },
+            {
+              "id": 4,
+              "text_ja": "ストレスが全くない生活をするべきだ。",
+              "text_en": "One should live a life completely free of stress."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "本文に「専門家に言わせると、このがまんできるぐらいのストレスが一番問題なのだという」と明確に述べられています。がまんできる小さなストレスこそが最も問題であるため、3が正解です。",
+          "explanation_en": "The author explains: 'According to specialists, this bearable level of stress is actually the most problematic.' Thus, Option 3 is correct."
+        },
+        {
+          "questionId": "q-34-2",
+          "questionNumber": 2,
+          "questionText_ja": "そうしているうちに とあるが、これは何を指しているのか。",
+          "questionText_en": "It says 'while doing so' (そうしているうちに). What does this refer to?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "大きなストレスをがまんしているうちに",
+              "text_en": "While enduring large stresses"
+            },
+            {
+              "id": 2,
+              "text_ja": "大きなストレスを解決しようとしているうちに",
+              "text_en": "While trying to resolve large stresses"
+            },
+            {
+              "id": 3,
+              "text_ja": "小さなストレスをそのままにしているうちに",
+              "text_en": "While leaving small stresses as they are without resolving them"
+            },
+            {
+              "id": 4,
+              "text_ja": "ストレスが全然ない生活をしているうちに",
+              "text_en": "While living a life with zero stress"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "直前の文「受けたストレスをがまんできると思うと、人はそれを解決せずそのままにしてしまうからだ」を承けており、がまんできる小さなストレスを未解決のまま放置している状態を指しています。したがって、3が正解です。",
+          "explanation_en": "This refers directly to the previous sentence stating that people leave bearable stress unresolved as it is without addressing it, making Option 3 correct."
+        },
+        {
+          "questionId": "q-34-3",
+          "questionNumber": 3,
+          "questionText_ja": "本文の内容と合っているものはどれか。",
+          "questionText_en": "Which statement matches the content of the text?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "小さくてがまんできるストレスならば何も心配いらない。",
+              "text_en": "If it is small and bearable stress, there is no need to worry at all."
+            },
+            {
+              "id": 2,
+              "text_ja": "ストレスが大きいと必ず心や体をこわしてしまう。",
+              "text_en": "If stress is large, it will always ruin mind and body."
+            },
+            {
+              "id": 3,
+              "text_ja": "小さなストレスでも解決しなければ心や体をこわす原因になる。",
+              "text_en": "Even small stresses will become the cause of breaking mind and body if not resolved."
+            },
+            {
+              "id": 4,
+              "text_ja": "大きなストレスは成長するきっかけになるから辛くない。",
+              "text_en": "Large stress is not painful because it becomes a chance to grow."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "本文では、がまんできる小さなストレスであっても解決せずに放置していると、やがて心や体を壊す原因になると説明されています。したがって、3が正解です。",
+          "explanation_en": "The passage explains that leaving even tolerable small stresses unaddressed will eventually break down one's body and mind, making Option 3 correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-35",
+      "pages": [
+        86,
+        87
+      ],
+      "problemNumber": 35,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "トキの絶滅と自然の再生",
+      "title_en": "Extinction of the Crested Ibis and Restoring Nature",
+      "title_zh": "朱鹮的灭绝与大自然的再生",
+      "preReading": {
+        "question_ja": "一度絶滅した生物を元に戻すことについて、どのように思いますか。",
+        "question_en": "What do you think about restoring creatures that once went extinct?",
+        "question_zh": "你对恢复一度灭绝的生物有何看法？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "トキは大きくて美しい鳥である。",
+            "ruby_html": "トキは<ruby>大<rt>おお</rt></ruby>きくて<ruby>美<rt>うつく</rt></ruby>しい<ruby>鳥<rt>とり</rt></ruby>である。",
+            "text_en": "The crested ibis is a large, beautiful bird."
+          },
+          {
+            "id": 2,
+            "text_ja": "体の大きさは75センチほどで、羽を広げると140センチにもなる。",
+            "ruby_html": "<ruby>体<rt>からだ</rt></ruby>の<ruby>大<rt>おお</rt></ruby>きさは75センチほどで、<ruby>羽<rt>はね</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げると140センチにもなる。",
+            "text_en": "Its body length is around 75 cm, and when spreading its wings, it reaches up to 140 cm."
+          },
+          {
+            "id": 3,
+            "text_ja": "体の色は白っぽく見えるが、羽を広げると、うすい赤い色をしている。",
+            "ruby_html": "<ruby>体<rt>からだ</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>は<ruby>白<rt>しろ</rt></ruby>っぽく<ruby>見<rt>み</rt></ruby>えるが、<ruby>羽<rt>はね</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げると、うすい<ruby>赤<rt>あか</rt></ruby>い<ruby>色<rt>いろ</rt></ruby>をしている。",
+            "text_en": "Its body appears whitish, but when it spreads its wings, it shows a delicate pale pinkish-red color."
+          },
+          {
+            "id": 4,
+            "text_ja": "これはトキ色と呼ばれ、人々に好まれた。",
+            "ruby_html": "これはトキ<ruby>色<rt>いろ</rt></ruby>と<ruby>呼<rt>よ</rt></ruby>ばれ、<ruby>人々<rt>ひとびと</rt></ruby>に<ruby>好<rt>この</rt></ruby>まれた。",
+            "text_en": "This is known as 'toki-iro' (ibis pink) and was cherished by people."
+          },
+          {
+            "id": 5,
+            "text_ja": "昔は日本中どこでもトキを見ることができたが、100年ほど前から羽を取るために捕まえられ、少しずつ数を減らしていった。",
+            "ruby_html": "<ruby>昔<rt>むかし</rt></ruby>は<ruby>日本中<rt>にほんじゅう</rt></ruby>どこでもトキを<ruby>見<rt>み</rt></ruby>ることができたが、100<ruby>年<rt>ねん</rt></ruby>ほど<ruby>前<rt>まえ</rt></ruby>から<ruby>羽<rt>はね</rt></ruby>を<ruby>取<rt>と</rt></ruby>るために<ruby>捕<rt>つか</rt></ruby>まえられ、<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>数<rt>かず</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らしていった。",
+            "text_en": "In ancient times, crested ibises could be seen anywhere throughout Japan, but around 100 years ago they were captured for their feathers, gradually decreasing in number."
+          },
+          {
+            "id": 6,
+            "text_ja": "工業化が進むと、トキが暮らす田んぼや森が減ったり、環境が汚染されたりして、その数は非常に少なくなった。",
+            "ruby_html": "<ruby>工業化<rt>こうぎょうか</rt></ruby>が<ruby>進<rt>すす</rt></ruby>むと、トキが<ruby>暮<rt>く</rt></ruby>らす<ruby>田<rt>たん</rt></ruby>ぼや<ruby>森<rt>もり</rt></ruby>が<ruby>減<rt>へ</rt></ruby>ったり、<ruby>環境<rt>かんきょう</rt></ruby>が<ruby>汚染<rt>おせん</rt></ruby>されたりして、その<ruby>数<rt>かず</rt></ruby>は<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>少<rt>すく</rt></ruby>なくなった。",
+            "text_en": "As industrialization progressed, the rice fields and forests where the ibis lived decreased, the environment became polluted, and their numbers dropped dramatically."
+          },
+          {
+            "id": 7,
+            "text_ja": "そして1981年、ついに日本のトキは絶滅した。",
+            "ruby_html": "そして1981<ruby>年<rt>ねん</rt></ruby>、ついに<ruby>日本<rt>にほん</rt></ruby>のトキは<ruby>絶滅<rt>ぜつめつ</rt></ruby><sup>(注1)</sup>した。",
+            "text_en": "Then in 1981, Japan's native crested ibis finally went extinct."
+          },
+          {
+            "id": 8,
+            "text_ja": "現在は、中国にいた同じ種類のトキを輸入し、佐渡という島で育てている。",
+            "ruby_html": "<ruby>現在<rt>げんざい</rt></ruby>は、<ruby>中国<rt>ちゅうごく</rt></ruby>にいた<ruby>同<rt>おな</rt></ruby>じ<ruby>種類<rt>しゅるい</rt></ruby>のトキを<ruby>輸入<rt>ゆにゅう</rt></ruby>し、<ruby>佐渡<rt>さど</rt></ruby>という<ruby>島<rt>しま</rt></ruby>で<ruby>育<rt>そだ</rt></ruby>てている。",
+            "text_en": "Currently, the same species of crested ibis from China has been imported and is being bred on the island of Sado."
+          },
+          {
+            "id": 9,
+            "text_ja": "そして、数が増えてきたら自然に戻すという計画が立てられている。",
+            "ruby_html": "そして、<ruby>数<rt>かず</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきたら<ruby>自然<rt>しぜん</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>すという<ruby>計画<rt>けいかく</rt></ruby>が<ruby>立<rt>た</rt></ruby>てられている。",
+            "text_en": "And plans have been made to release them back into the wild once their population multiplies."
+          },
+          {
+            "id": 10,
+            "text_ja": "トキを復活させるため、多くの金を使い、多くの人々が努力している。",
+            "ruby_html": "トキを<ruby>復活<rt>ふっかつ</rt></ruby><sup>(注2)</sup>させるため、<ruby>多<rt>おお</rt></ruby>くのお<ruby>金<rt>かね</rt></ruby>を<ruby>使<rt>つか</rt></ruby>い、<ruby>多<rt>おお</rt></ruby>くの<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>努力<rt>どりょく</rt></ruby>している。",
+            "text_en": "In order to revive the crested ibis, great sums of money are spent, and many people are making tremendous efforts."
+          },
+          {
+            "id": 11,
+            "text_ja": "自然は簡単に失われるが、一度失われたら元に戻すのは簡単ではない。",
+            "ruby_html": "<ruby>自然<rt>しぜん</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>失<rt>うしな</rt></ruby>われるが、<ruby>一度<rt>いちど</rt></ruby><ruby>失<rt>うしな</rt></ruby>われたら<ruby>元<rt>もと</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>すのは<ruby>簡単<rt>かんたん</rt></ruby>ではない。",
+            "text_en": "Nature is easily lost, but once lost, restoring it to its original state is not easy at all."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "絶滅する",
+          "reading": "ぜつめつする",
+          "definition_ja": "ある種類の生物がすっかりいなくなる",
+          "definition_en": "extinction: a species of creature completely disappears",
+          "definition_zh": "灭绝：某种生物完全消失"
+        },
+        {
+          "index": 2,
+          "term_ja": "復活",
+          "reading": "ふっかつ",
+          "definition_ja": "なくなってしまったものが、また元に戻ること",
+          "definition_en": "revival: what had ceased to exist returning to its original state",
+          "definition_zh": "复活，恢复：已经消失的事物再次恢复原样"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "羽",
+          "reading": "はね",
+          "meaning": "wing, feather / 翅膀，羽毛",
+          "type": "noun"
+        },
+        {
+          "term": "白っぽい",
+          "reading": "しろっぽい",
+          "meaning": "whitish / 发白",
+          "type": "adjective"
+        },
+        {
+          "term": "好む",
+          "reading": "このむ",
+          "meaning": "to like, prefer / 喜爱",
+          "type": "verb"
+        },
+        {
+          "term": "田んぼ",
+          "reading": "たんぼ",
+          "meaning": "rice paddy / 稻田",
+          "type": "noun"
+        },
+        {
+          "term": "汚染",
+          "reading": "おせん",
+          "meaning": "pollution, contamination / 污染",
+          "type": "noun"
+        },
+        {
+          "term": "自然に戻す",
+          "reading": "しぜんにもどす",
+          "meaning": "to return to nature, release into wild / 放归大自然",
+          "type": "phrase"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-35-1",
+          "questionNumber": 1,
+          "questionText_ja": "日本のトキの説明について、本文と合っているものはどれか。",
+          "questionText_en": "Which statement matches the text regarding the crested ibis in Japan?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "昔は日本中にいたが、数を減らし、今は佐渡に数羽いるだけである。",
+              "text_en": "Formerly they lived throughout Japan, but declined and now only several birds remain on Sado."
+            },
+            {
+              "id": 2,
+              "text_ja": "日本各地の田んぼや森にいたが、絶滅し、今は輸入されたトキを育てている。",
+              "text_en": "They used to live in paddies and forests across Japan but went extinct, and now imported ones are being bred."
+            },
+            {
+              "id": 3,
+              "text_ja": "工業化が進むにしたがって数が減ってしまったが、現在はまた増えている。",
+              "text_en": "Numbers declined as industrialization progressed, but are now naturally increasing again."
+            },
+            {
+              "id": 4,
+              "text_ja": "絶滅してしまったため、トキに似た中国の鳥を輸入し、育てている。",
+              "text_en": "Because they went extinct, birds from China resembling toki were imported and raised."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文に「1981年、ついに日本のトキは絶滅した」「現在は、中国にいた同じ種類のトキを輸入し、佐渡という島で育てている」と書かれています。日本固有の群れは絶滅し、現在は中国から輸入された同種のトキを飼育しているため、2が正解です。",
+          "explanation_en": "The passage confirms that Japan's native toki went extinct in 1981, and that individuals of the identical species imported from China are currently bred on Sado Island. Thus, Option 2 is correct."
+        },
+        {
+          "questionId": "q-35-2",
+          "questionNumber": 2,
+          "questionText_ja": "日本のトキはなぜ、数が減ったのか。",
+          "questionText_en": "Why did the number of crested ibises in Japan decrease?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "トキが田んぼや森の生き物を食べすぎて、捕まえられたから。",
+              "text_en": "Because toki ate too many creatures in paddies and forests and were captured."
+            },
+            {
+              "id": 2,
+              "text_ja": "捕まえられた上に、トキの住む環境も悪化したから。",
+              "text_en": "Because in addition to being hunted, the environment where they lived degraded."
+            },
+            {
+              "id": 3,
+              "text_ja": "トキの生きられる場所が減り、中国などの国に行ってしまったから。",
+              "text_en": "Because places where toki could live decreased and they migrated to China."
+            },
+            {
+              "id": 4,
+              "text_ja": "きれいなトキを飼いたいと思った人が多く、捕まえられたから。",
+              "text_en": "Because many people wanted to keep pretty toki as pets and caught them."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "羽を取るために乱獲されたことに加え、工業化によって生息地である田んぼや森が減り、環境汚染が進んだことが原因と書かれています。捕獲と環境悪化の両方が要因であるため、2が正解です。",
+          "explanation_en": "Hunting for feathers combined with environmental destruction (habitat loss and pollution due to industrialization) caused the population decline, making Option 2 correct."
+        },
+        {
+          "questionId": "q-35-3",
+          "questionNumber": 3,
+          "questionText_ja": "この文章を書いた人が言いたいことは何か。",
+          "questionText_en": "What does the author want to express most in this passage?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "非常にきれいな日本のトキが絶滅してしまったのは残念なことだ。",
+              "text_en": "It is unfortunate that the extremely beautiful Japanese toki went extinct."
+            },
+            {
+              "id": 2,
+              "text_ja": "美しい生き物は、経済的に大変でも、再び増やして自然に返したほうがいい。",
+              "text_en": "Beautiful creatures should be restored and returned to nature even if costly."
+            },
+            {
+              "id": 3,
+              "text_ja": "自然は、復活させるのが非常に難しいので、大切にしなければならない。",
+              "text_en": "Because reviving nature is extremely difficult once lost, it must be cherished."
+            },
+            {
+              "id": 4,
+              "text_ja": "自然が失われかけても、さまざまな方法により復活させることができる。",
+              "text_en": "Even if nature is about to be lost, it can be revived through various methods."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "本文最後の文「自然は簡単に失われるが、一度失われたら元に戻すのは簡単ではない」が筆者の言いたい中心的な主張です。自然の再生には膨大な資金と労力がかかり極めて難しいため、失われる前に大切に守らなければならないという3が正解です。",
+          "explanation_en": "The final sentence conveys the core theme: 'Nature is easily lost, but once lost, restoring it to its original state is not easy at all.' Reviving nature requires immense resources and is hard, so it must be preserved carefully (Option 3)."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-36",
+      "pages": [
+        88,
+        89
+      ],
+      "problemNumber": 36,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "自動販売機の省エネ技術",
+      "title_en": "Energy-Saving Technology in Vending Machines",
+      "title_zh": "自动售货机的节能技术",
+      "preReading": {
+        "question_ja": "夜間に街中で光る自動販売機を見て、電気代や環境について考えたことがありますか。",
+        "question_en": "Have you ever thought about electricity bills and the environment upon seeing vending machines glowing on the street at night?",
+        "question_zh": "看到夜间街头通体明亮的自动售货机时，你曾考虑过电费与环保问题吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "町やビルで見かける飲み物の自動販売機は便利だが、夜、だれも使っていないのに、明かりがついているのを見ると、電気代をむだ使いしているように感じられる。",
+            "ruby_html": "<ruby>町<rt>まち</rt></ruby>やビルで<ruby>見<rt>み</rt></ruby>かける<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>の<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>は<ruby>便利<rt>べんり</rt></ruby>だが、<ruby>夜<rt>よる</rt></ruby>、だれも<ruby>使<rt>つか</rt></ruby>っていないのに、<ruby>明<rt>あ</rt></ruby>かりがついているのを<ruby>見<rt>み</rt></ruby>ると、<ruby>電気代<rt>でんきだい</rt></ruby>をむだ<ruby>使<rt>づか</rt></ruby>いしているように<ruby>感<rt>かん</rt></ruby>じられる。",
+            "text_en": "Vending machines for beverages seen on streets and in buildings are convenient, but seeing them illuminated at night when nobody is using them makes one feel that electricity is being wasted."
+          },
+          {
+            "id": 2,
+            "text_ja": "しかし、実は、自動販売機はエネルギーを節約する技術が非常に進んでいる機械である。",
+            "ruby_html": "しかし、<ruby>実<rt>じつ</rt></ruby>は、<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>はエネルギーを<ruby>節約<rt>せつやく</rt></ruby>する<ruby>技術<rt>ぎじゅつ</rt></ruby>が<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んでいる<ruby>機械<rt>きかい</rt></ruby>である。",
+            "text_en": "However, in reality, vending machines are machines in which energy-saving technology has advanced significantly."
+          },
+          {
+            "id": 3,
+            "text_ja": "そこには、どのような工夫があるのだろうか。",
+            "ruby_html": "そこには、どのような<ruby>工夫<rt>くふう</rt></ruby>があるのだろうか。",
+            "text_en": "What kind of innovations exist there?"
+          },
+          {
+            "id": 4,
+            "text_ja": "まず、冷たい飲み物は、全部を冷やすのではなく、売る直前の分だけ冷やすようになっている。",
+            "ruby_html": "まず、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は、<ruby>全部<rt>ぜんぶ</rt></ruby>を<ruby>冷<rt>ひ</rt></ruby>やすのではなく、<ruby>売<rt>う</rt></ruby>る<ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>分<rt>ぶん</rt></ruby>だけ<ruby>冷<rt>ひ</rt></ruby>やすようになっている。",
+            "text_en": "First, instead of chilling all cold drinks, they are designed so that only the portions immediately prior to being sold are cooled."
+          },
+          {
+            "id": 5,
+            "text_ja": "自動販売機の中にあるコンピューターが、曜日や時間による売れ方の変化を見て、最小限の数だけを冷やすのである。",
+            "ruby_html": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にあるコンピューターが、<ruby>曜日<rt>ようび</rt></ruby>や<ruby>時間<rt>じかん</rt></ruby>による<ruby>売<rt>う</rt></ruby>れ<ruby>方<rt>かた</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>最小限<rt>さいしょうげん</rt></ruby>の<ruby>数<rt>かず</rt></ruby>だけを<ruby>冷<rt>ひ</rt></ruby>やすのである。",
+            "text_en": "The computer inside the vending machine observes variations in sales patterns by day of the week and time, cooling only the minimum required quantity."
+          },
+          {
+            "id": 6,
+            "text_ja": "だから、電気代が少なくてすむ。",
+            "ruby_html": "だから、<ruby>電気代<rt>でんきだい</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくてすむ。",
+            "text_en": "Therefore, the electricity cost remains low."
+          },
+          {
+            "id": 7,
+            "text_ja": "また、冷たい飲み物と温かい飲み物を同時に売る自動販売機の場合、冷たい飲み物を冷やしたときに出る熱を使って、温かい飲み物を温めることができるようになっている。",
+            "ruby_html": "また、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>と<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>同時<rt>どうじ</rt></ruby>に<ruby>売<rt>う</rt></ruby>る<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>冷<rt>ひ</rt></ruby>やしたときに<ruby>出<rt>で</rt></ruby>る<ruby>熱<rt>ねつ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>めることができるようになっている。",
+            "text_en": "Moreover, in vending machines that sell cold and hot drinks simultaneously, heat expelled when cooling cold drinks is utilized to warm the hot drinks."
+          },
+          {
+            "id": 8,
+            "text_ja": "以上のようなさまざまな技術によって、自動販売機は電力の消費を減らすことができたのである。",
+            "ruby_html": "<ruby>以上<rt>いじょう</rt></ruby>のようなさまざまな<ruby>技術<rt>ぎじゅつ</rt></ruby>によって、<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>は<ruby>電力<rt>でんりょく</rt></ruby>の<ruby>消費<rt>しょうひ</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らすことができたのである。",
+            "text_en": "Through such diverse technologies, vending machines have succeeded in reducing their power consumption."
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "自動販売機",
+          "reading": "じどうはんばいき",
+          "meaning": "vending machine / 自动售货机",
+          "type": "noun"
+        },
+        {
+          "term": "むだ使いする",
+          "reading": "むだづかいする",
+          "meaning": "to waste, spend lavishly / 浪费",
+          "type": "verb"
+        },
+        {
+          "term": "節約する",
+          "reading": "せつやくする",
+          "meaning": "to economize, save / 节约",
+          "type": "verb"
+        },
+        {
+          "term": "工夫",
+          "reading": "くふう",
+          "meaning": "ingenuity, scheme, clever idea / 窍门，好的做法",
+          "type": "noun"
+        },
+        {
+          "term": "最小限",
+          "reading": "さいしょうげん",
+          "meaning": "minimum / 最小限度",
+          "type": "noun"
+        },
+        {
+          "term": "消費",
+          "reading": "しょうひ",
+          "meaning": "consumption / 消费，消耗",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-36-1",
+          "questionNumber": 1,
+          "questionText_ja": "自動販売機が電気をむだ使いしているように見えるのはなぜか。",
+          "questionText_en": "Why do vending machines look as if they are wasting electricity?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "自動販売機のエネルギーを節約する技術がなかなか進まないから。",
+              "text_en": "Because energy-saving technology for vending machines barely progresses."
+            },
+            {
+              "id": 2,
+              "text_ja": "だれも使っていないときも、明かりがついているから。",
+              "text_en": "Because their lights stay illuminated even when nobody is using them."
+            },
+            {
+              "id": 3,
+              "text_ja": "昼だけでなく、夜になっても使う人がいるから。",
+              "text_en": "Because there are people who use them during the night as well as the daytime."
+            },
+            {
+              "id": 4,
+              "text_ja": "町やビルなどさまざまな場所にたくさん置いてあるから。",
+              "text_en": "Because so many of them are installed in diverse places like towns and buildings."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文冒頭に「夜、だれも使っていないのに、明かりがついているのを見ると、電気代をむだ使いしているように感じられる」と述べられているため、2が正解です。",
+          "explanation_en": "The author notes that seeing the lights staying on at night even when no one uses the machine creates the impression that electricity is being wasted, matching Option 2."
+        },
+        {
+          "questionId": "q-36-2",
+          "questionNumber": 2,
+          "questionText_ja": "自動販売機の飲み物の冷やし方として、正しいものはどれか。",
+          "questionText_en": "Which statement is correct regarding how beverages in vending machines are cooled?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "急に冷やすのではなく、コンピューターで管理しながらゆっくり冷やす。",
+              "text_en": "Rather than sudden cooling, they are cooled slowly under computer management."
+            },
+            {
+              "id": 2,
+              "text_ja": "コンピューターによって、売る直前に短い時間で冷やす。",
+              "text_en": "They are cooled in a short time right before being sold by the computer."
+            },
+            {
+              "id": 3,
+              "text_ja": "コンピューターが外の温度の変化を調べて、冷やす。",
+              "text_en": "The computer investigates changes in outside temperature to cool them."
+            },
+            {
+              "id": 4,
+              "text_ja": "コンピューターでいつどのぐらい売れるかがわかるので、その分だけ冷やす。",
+              "text_en": "Because the computer detects when and how much will sell, only that amount is cooled."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文に「自動販売機の中にあるコンピューターが、曜日や時間による売れ方の変化を見て、最小限の数だけを冷やすのである」とある通り、販売予測に合わせて必要最小限の分だけを冷やしているため、4が正解です。",
+          "explanation_en": "The text explains that the internal computer tracks sales patterns by day and time to cool only the necessary minimum amount of cans, making Option 4 correct."
+        },
+        {
+          "questionId": "q-36-3",
+          "questionNumber": 3,
+          "questionText_ja": "自動販売機のエネルギーの節約方法として、正しいものはどれか。",
+          "questionText_en": "Which is correct as an energy-saving method of vending machines?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "冷たい飲み物を冷やすと熱が出るので、それで温かい飲み物を温める。",
+              "text_en": "Because heat is produced when cooling cold drinks, it is used to warm hot drinks."
+            },
+            {
+              "id": 2,
+              "text_ja": "温かい飲み物から出た熱を利用して、冷たい飲み物を冷やす。",
+              "text_en": "Using heat produced from hot drinks to cool down cold drinks."
+            },
+            {
+              "id": 3,
+              "text_ja": "温かい飲み物は、冷たい飲み物と同じ自動販売機で売らない。",
+              "text_en": "Hot drinks are not sold in the same vending machines as cold drinks."
+            },
+            {
+              "id": 4,
+              "text_ja": "温かい飲み物は自動販売機の明かりの熱で温める。",
+              "text_en": "Hot drinks are warmed using the heat of the vending machine's lighting."
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "本文に「冷たい飲み物を冷やしたときに出る熱を使って、温かい飲み物を温めることができるようになっている」と明確に説明されているため、1が正解です。",
+          "explanation_en": "The passage states that the heat exhausted during the cooling of cold drinks is repurposed to heat hot drinks, making Option 1 correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-37",
+      "pages": [
+        90,
+        91
+      ],
+      "problemNumber": 37,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "話し合いへの参加とうなずき",
+      "title_en": "Participating in Discussions with Nodding",
+      "title_zh": "参与讨论与点头示意",
+      "preReading": {
+        "question_ja": "日本語で会議やディスカッションに参加するとき、どのように相づちを打ちますか。",
+        "question_en": "When participating in a meeting or discussion in Japanese, how do you give conversational responses?",
+        "question_zh": "用日语参加会议或讨论时，你会如何随声附和？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "日本語で話し合いをしているとき、なかなか話に入れないことがある。",
+            "ruby_html": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いをしているとき、なかなか<ruby>話<rt>はなし</rt></ruby>に<ruby>入<rt>はい</rt></ruby>れないことがある。",
+            "text_en": "When participating in a discussion in Japanese, one sometimes finds it difficult to join the conversation."
+          },
+          {
+            "id": 2,
+            "text_ja": "どうしたら、参加できるようになるだろうか。",
+            "ruby_html": "どうしたら、<ruby>参加<rt>さんか</rt></ruby>できるようになるだろうか。",
+            "text_en": "How can one become able to participate?"
+          },
+          {
+            "id": 3,
+            "text_ja": "まずは、だれかが話しているとき、首を縦に振って「うなずく」ことである。",
+            "ruby_html": "まずは、だれかが<ruby>話<rt>はな</rt></ruby>しているとき、<ruby>首<rt>くび</rt></ruby>を<ruby>縦<rt>たて</rt></ruby>に<ruby>振<rt>ふ</rt></ruby>って「うなずく」ことである。",
+            "text_en": "First of all, when someone is speaking, it is to shake one's head vertically—that is, to 'nod'."
+          },
+          {
+            "id": 4,
+            "text_ja": "1対1の話し合いならうなずいている人でも、多くの人での話し合いでは、何もしないでじっとしていることがある。",
+            "ruby_html": "1<ruby>対<rt>たい</rt></ruby>1の<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いならうなずいている<ruby>人<rt>ひと</rt></ruby>でも、<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>での<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いでは、<ruby>何<rt>なに</rt></ruby>もしないでじっとしていることがある。",
+            "text_en": "Even people who nod during one-on-one talks sometimes stay completely still doing nothing in large group discussions."
+          },
+          {
+            "id": 5,
+            "text_ja": "しかし、これでは話している人は、不安になってしまう。",
+            "ruby_html": "しかし、これでは<ruby>話<rt>はな</rt></ruby>している<ruby>人<rt>ひと</rt></ruby>は、<ruby>不安<rt>ふあん</rt></ruby>になってしまう。",
+            "text_en": "However, when this happens, the speaker becomes anxious."
+          },
+          {
+            "id": 6,
+            "text_ja": "うなずきは、相手の意見に同意するときだけでなく、同意できないときでも「あなたの話を聞いています」という合図なので、小さくうなずくだけで話し合いに参加できていることになる。",
+            "ruby_html": "うなずきは、<ruby>相手<rt>あいて</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>するときだけでなく、<ruby>同意<rt>どうい</rt></ruby>できないときでも「あなたの<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いています」という<ruby>合図<rt>あいず</rt></ruby>なので、<ruby>小<rt>ちい</rt></ruby>さくうなずくだけで<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いに<ruby>参加<rt>さんか</rt></ruby>できていることになる。",
+            "text_en": "Because nodding serves as a signal meaning 'I am listening to what you say'—not only when agreeing with their opinion but even when disagreeing—just nodding slightly means you are actively participating in the discussion."
+          },
+          {
+            "id": 7,
+            "text_ja": "そうすると、話し手は安心して先に進める。",
+            "ruby_html": "そうすると、<ruby>話<rt>はな</rt></ruby>し<ruby>手<rt>て</rt></ruby>は<ruby>安心<rt>あんしん</rt></ruby>して<ruby>先<rt>さき</rt></ruby>に<ruby>進<rt>すす</rt></ruby>める。",
+            "text_en": "When that happens, the speaker feels reassured and can proceed forward."
+          },
+          {
+            "id": 8,
+            "text_ja": "うなずくとき、「はい」や「そうですね」と相づちを打ってもいい。",
+            "ruby_html": "うなずくとき、「はい」や「そうですね」と<ruby>相<rt>あい</rt></ruby>づちを<ruby>打<rt>う</rt></ruby>ってもいい。",
+            "text_en": "When nodding, you can also offer conversational responses like 'yes' or 'that's right'."
+          },
+          {
+            "id": 9,
+            "text_ja": "さらに、共感できるところで「本当にそうですね」と言うことが大切である。",
+            "ruby_html": "さらに、<ruby>共感<rt>きょうかん</rt></ruby><sup>(注1)</sup>できるところで「<ruby>本当<rt>ほんとう</rt></ruby>にそうですね」と<ruby>言<rt>い</rt></ruby>うことが<ruby>大切<rt>たいせつ</rt></ruby>である。",
+            "text_en": "Furthermore, saying 'That really is so' whenever you genuinely empathize is important."
+          },
+          {
+            "id": 10,
+            "text_ja": "このようにしていると、会話に入りやすくなる。",
+            "ruby_html": "このようにしていると、<ruby>会話<rt>かいわ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>りやすくなる。",
+            "text_en": "By doing this, it becomes much easier to enter into the conversation."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "共感する",
+          "reading": "きょうかんする",
+          "definition_ja": "相手の気持ちや意見を自分も同じように感じたり、理解したりする。",
+          "definition_en": "to empathize: feeling or understanding the other person's emotions and opinions as one's own",
+          "definition_zh": "产生共鸣：自己也同样感受或理解对方的心情与意见"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "じっとする",
+          "reading": "じっとする",
+          "meaning": "to stay still, keep quiet / 一动不动",
+          "type": "phrase"
+        },
+        {
+          "term": "合図",
+          "reading": "あいず",
+          "meaning": "signal, sign / 暗号，信号",
+          "type": "noun"
+        },
+        {
+          "term": "相づちを打つ",
+          "reading": "あいづちをうつ",
+          "meaning": "to nod along, chime in / 随声附和",
+          "type": "phrase"
+        },
+        {
+          "term": "うなずく",
+          "reading": "うなずく",
+          "meaning": "to nod / 点头",
+          "type": "verb"
+        },
+        {
+          "term": "同意する",
+          "reading": "どういする",
+          "meaning": "to agree / 同意",
+          "type": "verb"
+        },
+        {
+          "term": "共感",
+          "reading": "きょうかん",
+          "meaning": "empathy, sympathy / 共鸣，同感",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-37-1",
+          "questionNumber": 1,
+          "questionText_ja": "そうすると とあるが、どのようにすることか。",
+          "questionText_en": "It says 'when doing so' (そうすると). What action does this describe?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "相手に「あなたの話を聞いています」と言う。",
+              "text_en": "Saying to the other person: 'I am listening to your talk.'"
+            },
+            {
+              "id": 2,
+              "text_ja": "相手の意見に同意できるときにだけ、首を縦に振る。",
+              "text_en": "Shaking one's head vertically only when agreeing with their opinion."
+            },
+            {
+              "id": 3,
+              "text_ja": "相手が話しているときは、何もしないでじっとしている。",
+              "text_en": "Staying completely still doing nothing while the person is speaking."
+            },
+            {
+              "id": 4,
+              "text_ja": "相手の意見に同意できるときもできないときも首を縦に振る。",
+              "text_en": "Shaking one's head vertically whether agreeing or disagreeing with their opinion."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "直前の文に「うなずきは、相手の意見に同意するときだけでなく、同意できないときでも『あなたの話を聞いています』という合図なので、小さくうなずくだけで話し合いに参加できていることになる」とあり、「首を縦に振る（うなずく）」ことを指しています。したがって、4が正解です。",
+          "explanation_en": "The immediately preceding sentence explains that nodding (shaking head vertically) conveys 'I am listening' regardless of whether one agrees or disagrees. Thus, Option 4 is correct."
+        },
+        {
+          "questionId": "q-37-2",
+          "questionNumber": 2,
+          "questionText_ja": "うなずくことは、どのような役割があるか。",
+          "questionText_en": "What role does nodding have?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "相手の話を早く先に進ませる役割",
+              "text_en": "The role of making the other's talk proceed faster"
+            },
+            {
+              "id": 2,
+              "text_ja": "相手の話を聞いていることを示す役割",
+              "text_en": "The role of showing that you are listening to what they say"
+            },
+            {
+              "id": 3,
+              "text_ja": "相手の意見に共感していることを伝える役割",
+              "text_en": "The role of conveying empathy with their opinion"
+            },
+            {
+              "id": 4,
+              "text_ja": "自分がこれから話し始めたいことを表す役割",
+              "text_en": "The role of expressing that you want to start speaking now"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文に「同意できないときでも『あなたの話を聞いています』という合図なので」と明確に書かれています。相手の話をきちんと聞いているサインとしての役割を持つため、2が正解です。",
+          "explanation_en": "The author clearly states that nodding acts as a sign meaning 'I am listening to your talk', making Option 2 correct."
+        },
+        {
+          "questionId": "q-37-3",
+          "questionNumber": 3,
+          "questionText_ja": "この文章では、どうすれば上手に話を始められると言っているか。",
+          "questionText_en": "How does the passage say one can smoothly enter the conversation?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "1対1の話し合いではうなずくこと、大勢では相づちを打つこと",
+              "text_en": "Nodding in one-on-one talks, and chiming in with aizuchi in large groups"
+            },
+            {
+              "id": 2,
+              "text_ja": "だれかが話しているときにうなずいたり、相づちを打ったりすること",
+              "text_en": "Nodding and providing aizuchi while someone else is speaking"
+            },
+            {
+              "id": 3,
+              "text_ja": "相手が話している間はじっと聞き、終わってから「そうですね」と言うこと",
+              "text_en": "Listening motionless while the other speaks, and saying 'I see' after they finish"
+            },
+            {
+              "id": 4,
+              "text_ja": "相手の話に共感できなくても、「本当にそうですね」と相づちを打つこと",
+              "text_en": "Saying 'That really is so' even if you cannot empathize with their talk"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文では、だれかが話している最中にうなずいたり、「はい」「そうですね」と相づちを打ったり共感を示したりすることで、話し合いに入りやすくなると説明されています。したがって、2が正解です。",
+          "explanation_en": "The text explains that nodding and chiming in with verbal acknowledgments while someone is speaking facilitates entering the conversation smoothly, matching Option 2."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-38",
+      "pages": [
+        92,
+        93
+      ],
+      "problemNumber": 38,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "科学技術の進歩と失われる能力",
+      "title_en": "Technological Progress and Lost Human Abilities",
+      "title_zh": "科技进步与退化的人类能力",
+      "preReading": {
+        "question_ja": "便利な機械やスマートフォンが普及したことで、使わなくなった能力はありますか。",
+        "question_en": "Are there abilities you stopped using due to the spread of convenient machines and smartphones?",
+        "question_zh": "由于便利的机器和智能手机的普及，你是否有不再使用的能力？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "科学技術の進歩によって、私たちの生活はより快適で便利になっている。",
+            "ruby_html": "<ruby>科学技術<rt>かがくぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>によって、<ruby>私<rt>わたし</rt></ruby>たちの<ruby>生活<rt>せいかつ</rt></ruby>はより<ruby>快適<rt>かいてき</rt></ruby>で<ruby>便利<rt>べんり</rt></ruby>になっている。",
+            "text_en": "Due to the progress of science and technology, our daily lives have become more comfortable and convenient."
+          },
+          {
+            "id": 2,
+            "text_ja": "しかし、便利になるということは、人間の能力が失われることだとも言われている。",
+            "ruby_html": "しかし、<ruby>便利<rt>べんり</rt></ruby>になるということは、①<ruby>人間<rt>にんげん</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>が<ruby>失<rt>うしな</rt></ruby>われることだとも<ruby>言<rt>い</rt></ruby>われている。",
+            "text_en": "However, it is also said that becoming convenient means that human capabilities are being lost."
+          },
+          {
+            "id": 3,
+            "text_ja": "たとえば、重いものを持ち上げて運ぶとき、機械がなかった時代には人が行っていた。",
+            "ruby_html": "たとえば、<ruby>重<rt>おも</rt></ruby>いものを<ruby>持<rt>も</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げて<ruby>運<rt>はこ</rt></ruby>ぶとき、<ruby>機械<rt>きかい</rt></ruby>がなかった<ruby>時代<rt>じだい</rt></ruby>には<ruby>人<rt>ひと</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>っていた。",
+            "text_en": "For instance, lifting and carrying heavy loads was performed by humans in eras when machines did not exist."
+          },
+          {
+            "id": 4,
+            "text_ja": "昔の武道を研究している人の話によると、これはそのころの人が今よりずっと力があったというわけではなく、どのように体を使えば重いものを運べるかがわかっていたので、できたのだという。",
+            "ruby_html": "<ruby>昔<rt>むかし</rt></ruby>の<ruby>武道<rt>ぶどう</rt></ruby><sup>(注1)</sup>を<ruby>研究<rt>けんきゅう</rt></ruby>している<ruby>人<rt>ひと</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>によると、これはそのころの<ruby>人<rt>ひと</rt></ruby>が<ruby>今<rt>いま</rt></ruby>よりずっと<ruby>力<rt>ちから</rt></ruby>があったというわけではなく、どのように<ruby>体<rt>からだ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>えば<ruby>重<rt>おも</rt></ruby>いものを<ruby>運<rt>はこ</rt></ruby>べるかがわかっていたので、できたのだという。",
+            "text_en": "According to a researcher studying ancient martial arts, this was not because people back then possessed far greater brute strength than today, but rather because they understood how to use their bodies to carry heavy objects."
+          },
+          {
+            "id": 5,
+            "text_ja": "だが、今はそれが伝えられることもなくなりつつある。",
+            "ruby_html": "だが、<ruby>今<rt>いま</rt></ruby>は②それが<ruby>伝<rt>つた</rt></ruby>えられることもなくなりつつある。",
+            "text_en": "However, nowadays even the passing down of that knowledge is disappearing."
+          },
+          {
+            "id": 6,
+            "text_ja": "また、文字を持たない社会には、非常に長い物語や詩などでも、覚えて伝えられる人がいた。",
+            "ruby_html": "また、<ruby>文字<rt>もじ</rt></ruby>を<ruby>持<rt>も</rt></ruby>たない<ruby>社会<rt>しゃかい</rt></ruby>には、<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>長<rt>なが</rt></ruby>い<ruby>物語<rt>ものがたり</rt></ruby>や<ruby>詩<rt>し</rt></ruby>などでも、<ruby>覚<rt>おぼ</rt></ruby>えて<ruby>伝<rt>つた</rt></ruby>えられる<ruby>人<rt>ひと</rt></ruby>がいた。",
+            "text_en": "Moreover, in societies without writing, there were individuals who could memorize and transmit exceptionally long stories or epic poems."
+          },
+          {
+            "id": 7,
+            "text_ja": "しかし、今、そのような人は非常に少なくなっている。",
+            "ruby_html": "しかし、<ruby>今<rt>いま</rt></ruby>、そのような<ruby>人<rt>ひと</rt></ruby>は<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>少<rt>すく</rt></ruby>なくなっている。",
+            "text_en": "However, today such people have become exceedingly rare."
+          },
+          {
+            "id": 8,
+            "text_ja": "こうしたことを考えると、自分たちがなくしたものの存在に気づかされる。",
+            "ruby_html": "こうしたことを<ruby>考<rt>かんが</rt></ruby>えると、<ruby>自分<rt>じぶん</rt></ruby>たちがなくしたものの<ruby>存在<rt>そんざい</rt></ruby>に<ruby>気<rt>き</rt></ruby>づかされる。",
+            "text_en": "When reflecting upon these things, one is made aware of the existence of things we have lost."
+          },
+          {
+            "id": 9,
+            "text_ja": "これから、私たちはどのような能力を失うのだろうか。",
+            "ruby_html": "これから、<ruby>私<rt>わたし</rt></ruby>たちはどのような<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>うのだろうか。",
+            "text_en": "From now on, what kinds of abilities will we lose?"
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "武道",
+          "reading": "ぶどう",
+          "definition_ja": "武士が戦いのために身につけなければならない技術や精神",
+          "definition_en": "martial arts: techniques and mental discipline required for samurai warriors",
+          "definition_zh": "武道：武士为了战斗必须掌握的技艺与精神"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "進歩",
+          "reading": "しんぽ",
+          "meaning": "progress, advancement / 进步",
+          "type": "noun"
+        },
+        {
+          "term": "快適な",
+          "reading": "かいてきな",
+          "meaning": "comfortable / 舒适",
+          "type": "adjective"
+        },
+        {
+          "term": "失う",
+          "reading": "うしなう",
+          "meaning": "to lose / 失去",
+          "type": "verb"
+        },
+        {
+          "term": "持ち上げる",
+          "reading": "もちあげる",
+          "meaning": "to lift, raise / 举起",
+          "type": "verb"
+        },
+        {
+          "term": "気づかされる",
+          "reading": "きづかされる",
+          "meaning": "to be made aware of / 被启发意识到",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-38-1",
+          "questionNumber": 1,
+          "questionText_ja": "なぜ、人間の能力が失われる のか。",
+          "questionText_en": "Why are human abilities being lost?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "今は、昔よりも生活に役立つ機械や道具が増えてきたから。",
+              "text_en": "Because machines and tools useful for daily life have multiplied compared to ancient times."
+            },
+            {
+              "id": 2,
+              "text_ja": "今の人々は昔のことを思い出そうとしなくなったから。",
+              "text_en": "Because modern people have stopped trying to recall the past."
+            },
+            {
+              "id": 3,
+              "text_ja": "昔の人々はいつも能力を高めようとしていたが、今はしないから。",
+              "text_en": "Because ancient people constantly sought to heighten abilities, but modern people do not."
+            },
+            {
+              "id": 4,
+              "text_ja": "昔と違い、今の人々は快適で便利な生活を求めなくなったから。",
+              "text_en": "Because unlike the past, modern people no longer seek comfortable and convenient lives."
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "科学技術の進歩によって生活が便利になり、機械や道具に頼るようになったことで、かつて自力で行っていた体の使い方や記憶力などの人間の能力が失われていると論述されているため、1が正解です。",
+          "explanation_en": "As technological progress introduced convenient tools and machines, humans came to rely on them rather than utilizing physical technique or memory, causing capabilities to diminish (Option 1)."
+        },
+        {
+          "questionId": "q-38-2",
+          "questionNumber": 2,
+          "questionText_ja": "それ とは何を指すか。",
+          "questionText_en": "What does 'that' (それ) refer to?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "機械",
+              "text_en": "Machines"
+            },
+            {
+              "id": 2,
+              "text_ja": "力のある体",
+              "text_en": "A strong body"
+            },
+            {
+              "id": 3,
+              "text_ja": "体の使い方",
+              "text_en": "How to use the body"
+            },
+            {
+              "id": 4,
+              "text_ja": "人々の協力",
+              "text_en": "Cooperation among people"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "直前の「どのように体を使えば重いものを運べるかがわかっていたので、できたのだという」を承けているため、「体の使い方」を指す3が正解です。",
+          "explanation_en": "This points back directly to the phrase 'knowing how to use the body to carry heavy loads', referring to physical bodily technique (Option 3)."
+        },
+        {
+          "questionId": "q-38-3",
+          "questionNumber": 3,
+          "questionText_ja": "この文章では科学技術の進歩について、どう言っているか。",
+          "questionText_en": "What does the passage say about scientific and technological progress?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "進歩によってよりよい生活が送れるが、人がやっていた仕事がなくなる。",
+              "text_en": "Progress allows better lives, but jobs done by people will disappear."
+            },
+            {
+              "id": 2,
+              "text_ja": "進歩はすばらしいが、それによって人と人とのつながりが失われていく。",
+              "text_en": "Progress is magnificent, but interpersonal connections are lost as a result."
+            },
+            {
+              "id": 3,
+              "text_ja": "進歩すると、機械や道具に頼って、さまざまなことが自分でできなくなる。",
+              "text_en": "As progress occurs, people rely on machines and tools, becoming unable to do various things themselves."
+            },
+            {
+              "id": 4,
+              "text_ja": "進歩するにしたがって、昔のことは伝えられず、どんどん忘れられてしまう。",
+              "text_en": "As progress advances, ancient matters are not handed down and get forgotten."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "科学技術が進歩して便利になる一方で、機械や道具に頼る結果、人間自身が持っていた身体や記憶の能力が失われ、自力でできなくなっていくことへの問題意識が述べられています。したがって、3が正解です。",
+          "explanation_en": "The author asserts that technological advances lead to over-reliance on machines and instruments, stripping humans of the personal capability to execute various tasks independently (Option 3)."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-39",
+      "pages": [
+        94,
+        95
+      ],
+      "problemNumber": 39,
+      "genre": "説明文",
+      "genre_en": "Explanatory texts",
+      "genre_zh": "解释说明文",
+      "title_ja": "コンパクトシティの取り組み",
+      "title_en": "Initiatives for Compact Cities",
+      "title_zh": "紧凑型城市的举措",
+      "preReading": {
+        "question_ja": "車が運転できなくなっても生活しやすい街とは、どのような街でしょうか。",
+        "question_en": "What kind of town would be easy to live in even if one could no longer drive a car?",
+        "question_zh": "即使不能开车也很方便生活的城市，是什么样的城市呢？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "日本では1960年代ごろから車が増加し、道路が整備されるとともに、地方都市が外側へと広がった。",
+            "ruby_html": "<ruby>日本<rt>にほん</rt></ruby>では1960<ruby>年代<rt>ねんだい</rt></ruby>ごろから<ruby>車<rt>くるま</rt></ruby>が<ruby>増加<rt>ぞうか</rt></ruby>し、<ruby>道路<rt>どうろ</rt></ruby>が<ruby>整備<rt>せいび</rt></ruby>されるとともに、<ruby>地方<rt>ちほう</rt></ruby><ruby>都市<rt>とし</rt></ruby>が<ruby>外側<rt>そとがわ</rt></ruby>へと<ruby>広<rt>ひろ</rt></ruby>がった。",
+            "text_en": "In Japan, from around the 1960s, cars increased in number, and along with the development of roads, provincial cities spread outwards."
+          },
+          {
+            "id": 2,
+            "text_ja": "郊外に住む人が増え、大きなスーパーや病院のような施設も郊外に造られるようになったのである。",
+            "ruby_html": "<ruby>郊外<rt>こうがい</rt></ruby>に<ruby>住<rt>す</rt></ruby>む<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>え、<ruby>大<rt>おお</rt></ruby>きなスーパーや<ruby>病院<rt>びょういん</rt></ruby>のような<ruby>施設<rt>しせつ</rt></ruby>も<ruby>郊外<rt>こうがい</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られるようになったのである。",
+            "text_en": "The number of people living in suburbs increased, and facilities such as large supermarkets and hospitals also came to be built in the suburbs."
+          },
+          {
+            "id": 3,
+            "text_ja": "そうした所へは歩いて行けないが、車で行けるようになった。",
+            "ruby_html": "そうした<ruby>所<rt>ところ</rt></ruby>へは<ruby>歩<rt>ある</rt></ruby>いて<ruby>行<rt>い</rt></ruby>けないが、<ruby>車<rt>くるま</rt></ruby>で<ruby>行<rt>い</rt></ruby>けるようになった。",
+            "text_en": "People could not walk to such places, but it became possible to go there by car."
+          },
+          {
+            "id": 4,
+            "text_ja": "しかし、それで困るのが高齢者である。",
+            "ruby_html": "しかし、それで<ruby>困<rt>こま</rt></ruby>るのが<ruby>高齢者<rt>こうれいしゃ</rt></ruby>である。",
+            "text_en": "However, the ones who are troubled by this are elderly people."
+          },
+          {
+            "id": 5,
+            "text_ja": "高齢者は車を運転する人が多くないため、郊外まで買い物や病院に行くのは難しい。",
+            "ruby_html": "<ruby>高齢者<rt>こうれいしゃ</rt></ruby>は<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くないため、<ruby>郊外<rt>こうがい</rt></ruby>まで<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>や<ruby>病院<rt>びょういん</rt></ruby>に<ruby>行<rt>い</rt></ruby>くのは<ruby>難<rt>むずか</rt></ruby>しい。",
+            "text_en": "Because not many elderly people drive cars, it is difficult for them to go all the way to the suburbs for shopping or hospital visits."
+          },
+          {
+            "id": 6,
+            "text_ja": "一方、街の中心部の店には客が来なくなって、閉店するところも増えてしまった。",
+            "ruby_html": "<ruby>一方<rt>いっぽう</rt></ruby>、<ruby>街<rt>まち</rt></ruby>の<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>には<ruby>客<rt>きゃく</rt></ruby>が<ruby>来<rt>こ</rt></ruby>なくなって、<ruby>閉店<rt>へいてん</rt></ruby>するところも<ruby>増<rt>ふ</rt></ruby>えてしまった。",
+            "text_en": "On the other hand, customers stopped coming to stores in city centers, and the number of places closing down also increased."
+          },
+          {
+            "id": 7,
+            "text_ja": "そこで、最近、いくつかの都市はさまざまな施設を再び街の中心に戻し、人々も中心部に集まって住めるようにしようとしている。",
+            "ruby_html": "そこで、<ruby>最近<rt>さいきん</rt></ruby>、いくつかの<ruby>都市<rt>とし</rt></ruby>はさまざまな<ruby>施設<rt>しせつ</rt></ruby>を<ruby>再<rt>ふたた</rt></ruby>び<ruby>街<rt>まち</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>し、<ruby>人々<rt>ひとびと</rt></ruby>も<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まって<ruby>住<rt>す</rt></ruby>めるようにしようとしている。",
+            "text_en": "Therefore, recently, several cities are trying to return various facilities to the city center and enable people to gather and live in the central area as well."
+          },
+          {
+            "id": 8,
+            "text_ja": "このような都市はコンパクトシティと言われており、お年寄りも気軽にいろいろな場所へ行くことができる。",
+            "ruby_html": "このような<ruby>都市<rt>とし</rt></ruby>はコンパクトシティと<ruby>言<rt>い</rt></ruby>われており、お<ruby>年寄<rt>としよ</rt></ruby>りも<ruby>気軽<rt>きがる</rt></ruby>にいろいろな<ruby>場所<rt>ばしょ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くことができる。",
+            "text_en": "Such cities are called compact cities, and elderly people can also casually travel to various locations."
+          },
+          {
+            "id": 9,
+            "text_ja": "高齢化が進み、人口が減少している現在、こうした都市が注目されている。",
+            "ruby_html": "<ruby>高齢化<rt>こうれいか</rt></ruby>が<ruby>進<rt>すす</rt></ruby>み、<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減少<rt>げんしょう</rt></ruby>している<ruby>現在<rt>げんざい</rt></ruby>、こうした<ruby>都市<rt>とし</rt></ruby>が<ruby>注目<rt>ちゅうもく</rt></ruby>されている。",
+            "text_en": "At present, as society ages and population decreases, such cities are attracting keen attention."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "整備する",
+          "reading": "せいびする",
+          "definition_ja": "使えるような状態にする",
+          "definition_en": "to equip; to maintain; to put into usable condition",
+          "definition_zh": "整备，完善：整理成可以使用的状态"
+        },
+        {
+          "index": 2,
+          "term_ja": "施設",
+          "reading": "しせつ",
+          "definition_ja": "ある目的のために造られた建物",
+          "definition_en": "facility; institution: buildings constructed for a specific purpose",
+          "definition_zh": "设施：为某种目的而建造的建筑物"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "増加する",
+          "reading": "ぞうかする",
+          "meaning": "to increase",
+          "type": "verb"
+        },
+        {
+          "term": "高齢者",
+          "reading": "こうれいしゃ",
+          "meaning": "senior citizen; elderly person",
+          "type": "noun"
+        },
+        {
+          "term": "気軽に",
+          "reading": "きがるに",
+          "meaning": "easily; casually; without hesitation",
+          "type": "adverb"
+        },
+        {
+          "term": "高齢化",
+          "reading": "こうれいか",
+          "meaning": "aging of society",
+          "type": "noun"
+        },
+        {
+          "term": "減少する",
+          "reading": "げんしょうする",
+          "meaning": "to decrease",
+          "type": "verb"
+        },
+        {
+          "term": "注目する",
+          "reading": "ちゅうもくする",
+          "meaning": "to pay attention to; to focus on",
+          "type": "verb"
+        },
+        {
+          "term": "郊外",
+          "reading": "こうがい",
+          "meaning": "suburbs; outskirts",
+          "type": "noun"
+        },
+        {
+          "term": "閉店する",
+          "reading": "へいてんする",
+          "meaning": "to close down (store)",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "dokkai-n3-p4-39-q1",
+          "questionNumber": 1,
+          "questionText_ja": "「外側へと広がった」とは、どのような意味か。",
+          "questionText_en": "What does 'spread outwards' mean?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "都市の外側に新しく別の街ができた。",
+              "text_en": "A completely separate new city was built outside the city."
+            },
+            {
+              "id": 2,
+              "text_ja": "道路が造られて、ほかの街へも行きやすくなった。",
+              "text_en": "Roads were built, making it easier to travel to other towns."
+            },
+            {
+              "id": 3,
+              "text_ja": "街の郊外にも住宅や施設ができた。",
+              "text_en": "Housing and facilities were built in the city's outskirts as well."
+            },
+            {
+              "id": 4,
+              "text_ja": "街の面積が広くなって、施設や家も広くなった。",
+              "text_en": "The area of the city expanded, and facilities and houses also became larger."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "本文直後に「郊外に住む人が増え、大きなスーパーや病院のような施設も郊外に造られるようになったのである」と説明されており、地方都市が外側へ広がったとは、都市の中心部から離れた郊外にも住宅や施設ができたことを意味します。したがって3が正解です。",
+          "explanation_en": "Right after this sentence, the passage explains that 'the number of people living in suburbs increased, and facilities such as supermarkets and hospitals came to be built in suburbs.' Thus, 'spreading outwards' means that homes and facilities were built in the outskirts. Therefore, option 3 is correct."
+        },
+        {
+          "questionId": "dokkai-n3-p4-39-q2",
+          "questionNumber": 2,
+          "questionText_ja": "コンパクトシティとは、本文によるとどのような意味か。",
+          "questionText_en": "According to the passage, what does 'compact city' mean?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "中心部の多くの店が閉店してしまう都市",
+              "text_en": "A city where many stores in the center close down"
+            },
+            {
+              "id": 2,
+              "text_ja": "お年寄りが買い物に行ったりするのが難しい都市",
+              "text_en": "A city where it is difficult for elderly people to go shopping"
+            },
+            {
+              "id": 3,
+              "text_ja": "お年寄りが車を運転して買い物などに行ける都市",
+              "text_en": "A city where elderly people can drive cars to go shopping"
+            },
+            {
+              "id": 4,
+              "text_ja": "施設などを中心部に戻し、人々もそこに住めるようにした都市",
+              "text_en": "A city that returns facilities to the center and allows people to live there"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文に「さまざまな施設を再び街の中心に戻し、人々も中心部に集まって住めるようにしようとしている。このような都市はコンパクトシティと言われており」と直接説明されています。したがって4が正解です。",
+          "explanation_en": "The text directly states: 'several cities are trying to return various facilities to the city center and enable people to gather and live in the central area as well. Such cities are called compact cities.' Therefore, option 4 is correct."
+        },
+        {
+          "questionId": "dokkai-n3-p4-39-q3",
+          "questionNumber": 3,
+          "questionText_ja": "「こうした都市が注目されている」とあるが、なぜ注目されているか。",
+          "questionText_en": "It states that 'such cities are attracting attention'; why are they attracting attention?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "車を呼ぶと、お年寄りをいろいろな店や施設に連れて行ってくれるから。",
+              "text_en": "Because if you call a car, it will take elderly people to various shops and facilities."
+            },
+            {
+              "id": 2,
+              "text_ja": "街の中心にある店や施設に、お年寄りが簡単に行けるようになるから。",
+              "text_en": "Because elderly people will be able to easily access shops and facilities located in the city center."
+            },
+            {
+              "id": 3,
+              "text_ja": "街の中心に人々が集まって、にぎやかになっているから。",
+              "text_en": "Because people gather in the city center, making it lively."
+            },
+            {
+              "id": 4,
+              "text_ja": "高齢化が進み、人口が減る中で、この街は人口が増えると思われるから。",
+              "text_en": "Because as society ages and population decreases, it is thought population will increase in this city."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文には「お年寄りも気軽にいろいろな場所へ行くことができる。高齢化が進み、人口が減少している現在、こうした都市が注目されている」とあり、車を運転しにくいお年寄りでも中心部の店や施設へ簡単に行けるようになるため注目されています。したがって2が正解です。",
+          "explanation_en": "The passage notes that 'elderly people can also casually travel to various locations. At present, as society ages and population decreases, such cities are attracting attention.' It is drawing attention because elderly people who don't drive can easily access stores and facilities in the town center. Therefore, option 2 is correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-40",
+      "pages": [
+        96,
+        97
+      ],
+      "problemNumber": 40,
+      "genre": "意見文",
+      "genre_en": "Expressions of opinion",
+      "genre_zh": "观点阐释文",
+      "title_ja": "ダジャレの効用と脳の活性化",
+      "title_en": "The Benefits of Wordplay Puns and Brain Activation",
+      "title_zh": "谐音俏皮话的功效与大脑活化",
+      "preReading": {
+        "question_ja": "言葉遊びやダジャレをしたことがありますか。どのような効果があると思いますか。",
+        "question_en": "Have you ever made wordplay or puns? What kind of effect do you think they have?",
+        "question_zh": "你玩过文字游戏或讲过俏皮话吗？你认为它们有什么效果？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "「スキーが好きです。」「この肉、食べにくい。」のように、同じ音、同じような音を使う言葉遊びをダジャレと言う。",
+            "ruby_html": "「スキーが<ruby>好<rt>す</rt></ruby>きです。」「この<ruby>肉<rt>にく</rt></ruby>、<ruby>食<rt>た</rt></ruby>べにくい。」のように、<ruby>同<rt>おな</rt></ruby>じ<ruby>音<rt>おと</rt></ruby>、<ruby>同<rt>おな</rt></ruby>じような<ruby>音<rt>おと</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う<ruby>言葉<rt>ことば</rt></ruby><ruby>遊<rt>あそ</rt></ruby>びをダジャレと<ruby>言<rt>い</rt></ruby>う。",
+            "text_en": "Wordplay that uses the same or similar-sounding words, such as 'I like skiing' (suki ga suki desu) or 'This meat is tough to eat' (kono niku, tabenikui), is called dajare (puns)."
+          },
+          {
+            "id": 2,
+            "text_ja": "日本語には似た発音でも意味が違う言葉が多いので、ダジャレを作りやすい。",
+            "ruby_html": "<ruby>日本語<rt>にほんご</rt></ruby>には<ruby>似<rt>に</rt></ruby>た<ruby>発音<rt>はつおん</rt></ruby>でも<ruby>意味<rt>いみ</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>う<ruby>言葉<rt>ことば</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いので、ダジャレを<ruby>作<rt>つく</rt></ruby>りやすい。",
+            "text_en": "Since Japanese has many words with similar pronunciation but different meanings, puns are easy to create."
+          },
+          {
+            "id": 3,
+            "text_ja": "小学生や中高年のおじさんたちなどはダジャレが大好きだ。",
+            "ruby_html": "<ruby>小学生<rt>しょうがくせい</rt></ruby>や<ruby>中高年<rt>ちゅうこうねん</rt></ruby>のおじさんたちなどはダジャレが<ruby>大好<rt>だいす</rt></ruby>きだ。",
+            "text_en": "Elementary school students and middle-aged men love puns."
+          },
+          {
+            "id": 4,
+            "text_ja": "ただ、おじさんが言うと、たいてい冷たい目で見られる。",
+            "ruby_html": "ただ、おじさんが<ruby>言<rt>い</rt></ruby>うと、たいてい<ruby>冷<rt>つめ</rt></ruby>たい<ruby>目<rt>め</rt></ruby>で<ruby>見<rt>み</rt></ruby>られる。",
+            "text_en": "However, when older men tell them, they are usually met with cold stares."
+          },
+          {
+            "id": 5,
+            "text_ja": "つまらなかったり、同じダジャレを何度も言ったりするからだ。",
+            "ruby_html": "つまらなかったり、<ruby>同<rt>おな</rt></ruby>じダジャレを<ruby>何度<rt>なんど</rt></ruby>も<ruby>言<rt>い</rt></ruby>ったりするからだ。",
+            "text_en": "That is because they are unamusing, or they repeat the same pun over and over."
+          },
+          {
+            "id": 6,
+            "text_ja": "それでも、ダジャレは役に立つこともある。",
+            "ruby_html": "それでも、ダジャレは<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つこともある。",
+            "text_en": "Even so, puns can also be useful."
+          },
+          {
+            "id": 7,
+            "text_ja": "だれにでも作れ、うまいダジャレなら人を笑わせて気持ちを明るくすることができる。",
+            "ruby_html": "だれにでも<ruby>作<rt>つく</rt></ruby>れ、うまいダジャレなら<ruby>人<rt>ひと</rt></ruby>を<ruby>笑<rt>わら</rt></ruby>わせて<ruby>気持<rt>きも</rt></ruby>ちを<ruby>明<rt>あか</rt></ruby>るくすることができる。",
+            "text_en": "Anyone can make them, and a clever pun can make people laugh and brighten their spirits."
+          },
+          {
+            "id": 8,
+            "text_ja": "また、ある脳の研究者によると、ふだんからおもしろいダジャレを作ろうとしていれば、脳を鍛えることにもなり、ボケ防止にも役立つらしい。",
+            "ruby_html": "また、ある<ruby>脳<rt>のう</rt></ruby>の<ruby>研究者<rt>けんきゅうしゃ</rt></ruby>によると、ふだんからおもしろいダジャレを<ruby>作<rt>つく</rt></ruby>ろうとしていれば、<ruby>脳<rt>のう</rt></ruby>を<ruby>鍛<rt>きた</rt></ruby>えることにもなり、ボケ<ruby>防止<rt>ぼうし</rt></ruby>にも<ruby>役立<rt>やくだ</rt></ruby>つらしい。",
+            "text_en": "Furthermore, according to a brain researcher, habitually trying to create funny puns strengthens the brain and apparently helps prevent mental decline."
+          },
+          {
+            "id": 9,
+            "text_ja": "簡単な言葉遊びで緊張がとけたり、笑い合って明るい気持ちになったり、脳のトレーニングにもなるなら、それはすばらしいことではないだろうか。",
+            "ruby_html": "<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>言葉<rt>ことば</rt></ruby><ruby>遊<rt>あそ</rt></ruby>びで<ruby>緊張<rt>きんちょう</rt></ruby>がとけたり、<ruby>笑<rt>わら</rt></ruby>い<ruby>合<rt>あ</rt></ruby>って<ruby>明<rt>あか</rt></ruby>るい<ruby>気持<rt>きも</rt></ruby>ちになったり、<ruby>脳<rt>のう</rt></ruby>のトレーニングにもなるなら、それはすばらしいことではないだろうか。",
+            "text_en": "If simple wordplay can ease tension, brighten spirits by laughing together, and serve as brain training as well, isn't that truly wonderful?"
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "鍛える",
+          "reading": "きたえる",
+          "definition_ja": "練習などを繰り返して、体や頭や技術をしっかりさせる",
+          "definition_en": "to train; to strengthen: repeatedly practice to fortify body, mind, or skills",
+          "definition_zh": "锻炼，强化：通过反复练习使身体、头脑或技能变得坚韧扎实"
+        },
+        {
+          "index": 2,
+          "term_ja": "ボケ防止",
+          "reading": "ぼけぼうし",
+          "definition_ja": "頭の働きが悪くなるのを防ぐこと",
+          "definition_en": "preventing senility; preventing cognitive decline",
+          "definition_zh": "防止老年痴呆：防止大脑功能变迟钝"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "冷たい目",
+          "reading": "つめたいめ",
+          "meaning": "cold stare; looking unfavourably upon someone",
+          "type": "noun"
+        },
+        {
+          "term": "（緊張が）とける",
+          "reading": "きんちょうがとける",
+          "meaning": "tension dissipates / eases / melts away",
+          "type": "verb"
+        },
+        {
+          "term": "笑い合う",
+          "reading": "わらいあう",
+          "meaning": "to laugh together",
+          "type": "verb"
+        },
+        {
+          "term": "中高年",
+          "reading": "ちゅうこうねん",
+          "meaning": "middle-aged and elderly",
+          "type": "noun"
+        },
+        {
+          "term": "言葉遊び",
+          "reading": "ことばあそび",
+          "meaning": "wordplay; punning",
+          "type": "noun"
+        },
+        {
+          "term": "鍛える",
+          "reading": "きたえる",
+          "meaning": "to train; to discipline; to strengthen",
+          "type": "verb"
+        },
+        {
+          "term": "ボケ防止",
+          "reading": "ぼけぼうし",
+          "meaning": "preventing mental decline / senility",
+          "type": "noun"
+        },
+        {
+          "term": "緊張",
+          "reading": "きんちょう",
+          "meaning": "tension; nervousness",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "dokkai-n3-p4-40-q1",
+          "questionNumber": 1,
+          "questionText_ja": "「冷たい目で見られる」のはだれか。",
+          "questionText_en": "Who is met with cold stares?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "ダジャレを聞いた人",
+              "text_en": "People who listened to the puns"
+            },
+            {
+              "id": 2,
+              "text_ja": "ダジャレを言ったおじさん",
+              "text_en": "Older men who told the puns"
+            },
+            {
+              "id": 3,
+              "text_ja": "ダジャレを言った小学生",
+              "text_en": "Elementary school children who told the puns"
+            },
+            {
+              "id": 4,
+              "text_ja": "この文を書いた人",
+              "text_en": "The person who wrote this text"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "本文に「ただ、おじさんが言うと、たいてい冷たい目で見られる。つまらなかったり、同じダジャレを何度も言ったりするからだ」と明記されているため、冷たい目で見られるのは「ダジャレを言ったおじさん」です。したがって2が正解です。",
+          "explanation_en": "The passage clearly states: 'However, when older men tell them, they are usually met with cold stares. That is because they are unamusing, or they repeat the same pun over and over.' Thus, the ones met with cold stares are older men who tell puns. Therefore, option 2 is correct."
+        },
+        {
+          "questionId": "dokkai-n3-p4-40-q2",
+          "questionNumber": 2,
+          "questionText_ja": "この文章によると、ダジャレのよい点は何か。",
+          "questionText_en": "According to this text, what is a positive aspect of puns?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "ダジャレを作ろうとすると、脳のトレーニングになる。",
+              "text_en": "Trying to create puns serves as brain training."
+            },
+            {
+              "id": 2,
+              "text_ja": "ダジャレを作るために、いろいろなことを調べる。",
+              "text_en": "One researches many things in order to make puns."
+            },
+            {
+              "id": 3,
+              "text_ja": "ダジャレを聞いて笑うと、脳の働きがよくなる。",
+              "text_en": "Listening to puns and laughing improves brain function."
+            },
+            {
+              "id": 4,
+              "text_ja": "ダジャレを聞くと、似たような音の言葉をたくさん覚える。",
+              "text_en": "Listening to puns helps memorize many words with similar sounds."
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "本文に「ふだんからおもしろいダジャレを作ろうとしていれば、脳を鍛えることにもなり、ボケ防止にも役立つらしい」「脳のトレーニングにもなる」と述べられており、ダジャレを作ろうとする行為が脳の活性化・トレーニングになることが挙げられています。したがって1が正解です。",
+          "explanation_en": "The text states: 'habitually trying to create funny puns strengthens the brain and apparently helps prevent mental decline' and 'serves as brain training.' Thus, attempting to create puns trains the brain. Therefore, option 1 is correct."
+        },
+        {
+          "questionId": "dokkai-n3-p4-40-q3",
+          "questionNumber": 3,
+          "questionText_ja": "この文章を書いた人が一番言いたいことはどれか。",
+          "questionText_en": "What is the main point the author wants to convey in this text?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "中高年の男性はおもしろいダジャレを言うが、まわりの人は理解できない。",
+              "text_en": "Middle-aged men tell interesting puns, but the people around them cannot understand them."
+            },
+            {
+              "id": 2,
+              "text_ja": "中高年の男性はダジャレを言う人が多く、よくみんなを楽しませている。",
+              "text_en": "Many middle-aged men tell puns and often entertain everyone."
+            },
+            {
+              "id": 3,
+              "text_ja": "ダジャレはだれにでも作れるが、まわりの人に言うのはよいことではない。",
+              "text_en": "Anyone can create puns, but telling them to people around you is not a good thing."
+            },
+            {
+              "id": 4,
+              "text_ja": "ダジャレは簡単に作れ、緊張をなくしたり、気持ちを明るくすることもできる。",
+              "text_en": "Puns are easy to make, and they can relieve tension and brighten one's mood."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "筆者は末尾で「簡単な言葉遊びで緊張がとけたり、笑い合って明るい気持ちになったり、脳のトレーニングにもなるなら、それはすばらしいことではないだろうか」と述べており、ダジャレが手軽にできて緊張を和らげ、明るい気持ちにさせてくれる素晴らしいものであると肯定的に評価しています。したがって4が正解です。",
+          "explanation_en": "At the conclusion, the author summarizes: 'If simple wordplay can ease tension, brighten spirits by laughing together, and serve as brain training as well, isn't that truly wonderful?' This conveys that puns are easy to create, alleviate nervousness, and brighten feelings. Therefore, option 4 is correct."
+        }
+      ]
+    },
+    {
+      "id": "dokkai-n3-p4-41",
+      "pages": [
+        98,
+        99
+      ],
+      "problemNumber": 41,
+      "genre": "手紙",
+      "genre_en": "Letters",
+      "genre_zh": "书信",
+      "title_ja": "ギターコンサートへの招待状",
+      "title_en": "Invitation to a Guitar Concert",
+      "title_zh": "吉他音乐会邀请函",
+      "preReading": {
+        "question_ja": "日本の手紙には「拝啓」や季節の挨拶など特別な形式があります。知っている表現はありますか。",
+        "question_en": "Japanese letters use specific formats like 'Haikei' (Dear Sir/Madam) and seasonal greetings. Are you familiar with any of these?",
+        "question_zh": "日本的书信有“拝啓”和季节问候等特定格式。你知道哪些相关表达吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "拝啓",
+            "ruby_html": "<ruby>拝啓<rt>はいけい</rt></ruby>",
+            "text_en": "Dear Sir/Madam,"
+          },
+          {
+            "id": 2,
+            "text_ja": "桜が満開になり、すっかり春らしくなりました。",
+            "ruby_html": "<ruby>桜<rt>さくら</rt></ruby>が<ruby>満開<rt>まんかい</rt></ruby>になり、すっかり<ruby>春<rt>はる</rt></ruby>らしくなりました。",
+            "text_en": "The cherry blossoms are in full bloom, and it feels entirely like spring."
+          },
+          {
+            "id": 3,
+            "text_ja": "いかがお過ごしでしょうか。",
+            "ruby_html": "いかがお<ruby>過<rt>す</rt></ruby>ごしでしょうか。",
+            "text_en": "How have you been doing?"
+          },
+          {
+            "id": 4,
+            "text_ja": "さて、このたび、私が習っているギターの先生のコンサートが六月十日に開かれることになりました。",
+            "ruby_html": "さて、このたび、<ruby>私<rt>わたし</rt></ruby>が<ruby>習<rt>なら</rt></ruby>っているギターの<ruby>先生<rt>せんせい</rt></ruby>のコンサートが<ruby>六月十日<rt>ろくがつとおか</rt></ruby>に<ruby>開<rt>ひら</rt></ruby>かれることになりました。",
+            "text_en": "Well then, a concert by the guitar teacher I am taking lessons from will be held on June 10th."
+          },
+          {
+            "id": 5,
+            "text_ja": "今回は、先生のお友達であるプロのギタリスト、南ゆかりさんが特別ゲストとして出演されます。",
+            "ruby_html": "<ruby>今回<rt>こんかい</rt></ruby>は、<ruby>先生<rt>せんせい</rt></ruby>のお<ruby>友達<rt>ともだち</rt></ruby>であるプロのギタリスト、<ruby>南<rt>みなみ</rt></ruby>ゆかりさんが<ruby>特別<rt>とくべつ</rt></ruby>ゲストとして<ruby>出演<rt>しゅつえん</rt></ruby>されます。",
+            "text_en": "This time, professional guitarist Ms. Yukari Minami, a friend of my teacher, will make an appearance as a special guest."
+          },
+          {
+            "id": 6,
+            "text_ja": "詳細は同封のチラシをごらんください。",
+            "ruby_html": "<ruby>詳細<rt>しょうさい</rt></ruby>は<ruby>同封<rt>どうふう</rt></ruby>のチラシをごらんください。",
+            "text_en": "Please refer to the enclosed flyer for details."
+          },
+          {
+            "id": 7,
+            "text_ja": "お忙しいことと思いますが、ご来場いただければ幸いです。",
+            "ruby_html": "お<ruby>忙<rt>いそが</rt></ruby>しいことと<ruby>思<rt>おも</rt></ruby>いますが、ご<ruby>来場<rt>らいじょう</rt></ruby>いただければ<ruby>幸<rt>さいわ</rt></ruby>いです。",
+            "text_en": "I know you must be busy, but I would be honored if you could attend."
+          },
+          {
+            "id": 8,
+            "text_ja": "なお、席が限られていますので、来ていただけるのでしたら、私あてに前日までにメールかお電話で人数をご連絡いただけますか。",
+            "ruby_html": "なお、<ruby>席<rt>せき</rt></ruby>が<ruby>限<rt>かぎ</rt></ruby>られていますので、<ruby>来<rt>き</rt></ruby>ていただけるのでしたら、<ruby>私<rt>わたし</rt></ruby>あてに<ruby>前日<rt>ぜんじつ</rt></ruby>までにメールかお<ruby>電話<rt>でんわ</rt></ruby>で<ruby>人数<rt>にんずう</rt></ruby>をご<ruby>連絡<rt>れんらく</rt></ruby>いただけますか。",
+            "text_en": "Furthermore, since seats are limited, if you are able to come, could you please contact me by email or phone by the day before with the number of guests?"
+          },
+          {
+            "id": 9,
+            "text_ja": "入場券を受付に用意しておきます。",
+            "ruby_html": "<ruby>入場券<rt>にゅうじょうけん</rt></ruby>を<ruby>受付<rt>うけつけ</rt></ruby>に<ruby>用意<rt>ようい</rt></ruby>しておきます。",
+            "text_en": "I will have admission tickets prepared for you at the reception."
+          },
+          {
+            "id": 10,
+            "text_ja": "代金は結構です。",
+            "ruby_html": "<ruby>代金<rt>だいきん</rt></ruby>は<ruby>結構<rt>けっこう</rt></ruby>です。",
+            "text_en": "No payment is needed."
+          },
+          {
+            "id": 11,
+            "text_ja": "まだ、気温の変化が大きい日々が続きます。",
+            "ruby_html": "まだ、<ruby>気温<rt>きおん</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きい<ruby>日々<rt>ひび</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>きます。",
+            "text_en": "Days with wide temperature fluctuations are still continuing."
+          },
+          {
+            "id": 12,
+            "text_ja": "どうぞお体に気をつけて過ごされますように。",
+            "ruby_html": "どうぞお<ruby>体<rt>からだ</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけて<ruby>過<rt>す</rt></ruby>ごされますように。",
+            "text_en": "Please take good care of your health."
+          },
+          {
+            "id": 13,
+            "text_ja": "敬具",
+            "ruby_html": "<ruby>敬具<rt>けいぐ</rt></ruby>",
+            "text_en": "Sincerely yours,"
+          },
+          {
+            "id": 14,
+            "text_ja": "二〇一三年四月三日 大山春樹",
+            "ruby_html": "<ruby>二〇一三年四月三日<rt>にせんじゅうさんねんしがつみっか</rt></ruby>　<ruby>大山<rt>おおやま</rt></ruby> <ruby>春樹<rt>はるき</rt></ruby>",
+            "text_en": "April 3, 2013 - Haruki Oyama"
+          },
+          {
+            "id": 15,
+            "text_ja": "ヘンドラ・ミラン様",
+            "ruby_html": "ヘンドラ・ミラン<ruby>様<rt>さま</rt></ruby>",
+            "text_en": "To: Mr. Hendra Milan"
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "詳細",
+          "reading": "しょうさい",
+          "definition_ja": "くわしいこと",
+          "definition_en": "details; particulars",
+          "definition_zh": "详情，详细情况"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "ゲスト",
+          "reading": "ゲスト",
+          "meaning": "guest",
+          "type": "noun"
+        },
+        {
+          "term": "出演する",
+          "reading": "しゅつえんする",
+          "meaning": "to appear; to perform (on stage)",
+          "type": "verb"
+        },
+        {
+          "term": "来場する",
+          "reading": "らいじょうする",
+          "meaning": "to attend; to visit the venue",
+          "type": "verb"
+        },
+        {
+          "term": "限られている",
+          "reading": "かぎられている",
+          "meaning": "to be limited",
+          "type": "verb"
+        },
+        {
+          "term": "同封",
+          "reading": "どうふう",
+          "meaning": "enclosure (included with a letter)",
+          "type": "noun"
+        },
+        {
+          "term": "満開",
+          "reading": "まんかい",
+          "meaning": "full bloom",
+          "type": "noun"
+        },
+        {
+          "term": "結構",
+          "reading": "けっこう",
+          "meaning": "fine; no charge needed (代金は結構です = no payment necessary)",
+          "type": "na-adjective"
+        },
+        {
+          "term": "拝啓",
+          "reading": "はいけい",
+          "meaning": "Dear Sir/Madam (opening salutation)",
+          "type": "noun"
+        },
+        {
+          "term": "敬具",
+          "reading": "けいぐ",
+          "meaning": "Sincerely yours (closing salutation)",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "dokkai-n3-p4-41-q1",
+          "questionNumber": 1,
+          "questionText_ja": "このコンサートに出演するのはだれか。",
+          "questionText_en": "Who is performing at this concert?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "大山さんと南ゆかりさん",
+              "text_en": "Mr. Oyama and Ms. Yukari Minami"
+            },
+            {
+              "id": 2,
+              "text_ja": "大山さんと先生と南ゆかりさん",
+              "text_en": "Mr. Oyama, the teacher, and Ms. Yukari Minami"
+            },
+            {
+              "id": 3,
+              "text_ja": "先生と南ゆかりさん",
+              "text_en": "The teacher and Ms. Yukari Minami"
+            },
+            {
+              "id": 4,
+              "text_ja": "南ゆかりさんと特別ゲスト",
+              "text_en": "Ms. Yukari Minami and a special guest"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "手紙の差出人である大山春樹さんは「私が習っているギターの先生のコンサートが開かれる」「先生のお友達であるプロのギタリスト、南ゆかりさんが特別ゲストとして出演されます」と書いています。大山さんは生徒で招待している側であり、出演するのは「先生と南ゆかりさん」です。したがって3が正解です。",
+          "explanation_en": "The sender of the letter, Haruki Oyama, writes: 'a concert by the guitar teacher I am taking lessons from will be held' and 'professional guitarist Ms. Yukari Minami, a friend of my teacher, will make an appearance as a special guest.' Oyama is the student sending the invitation; the actual performers are the teacher and Yukari Minami. Therefore, option 3 is correct."
+        },
+        {
+          "questionId": "dokkai-n3-p4-41-q2",
+          "questionNumber": 2,
+          "questionText_ja": "ヘンドラさんは、妻とこのコンサートに行きたい。どうしたらよいか。",
+          "questionText_en": "Mr. Hendra wants to attend this concert with his wife. What should he do?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "大山さんにメールで2人分の券をお願いする。",
+              "text_en": "Ask Mr. Oyama by email for tickets for two people."
+            },
+            {
+              "id": 2,
+              "text_ja": "大山さんにメールで2人分の券をお願いし、受付にお金を送る。",
+              "text_en": "Ask Mr. Oyama by email for tickets for two people and send money to the reception."
+            },
+            {
+              "id": 3,
+              "text_ja": "会場にメールで2人分の券をお願いする。",
+              "text_en": "Ask the venue by email for tickets for two people."
+            },
+            {
+              "id": 4,
+              "text_ja": "会場にメールで2人分の券をお願いし、当日、受付でお金を払う。",
+              "text_en": "Ask the venue by email for tickets for two people and pay money at reception on the day."
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "本文に「来ていただけるのでしたら、私（大山）あてに前日までにメールかお電話で人数をご連絡いただけますか。入場券を受付に用意しておきます。代金は結構です」とあります。連絡は大山さんあてに行い、代金は不要（無料）であるため、1が正解です。",
+          "explanation_en": "The text states: 'if you are able to come, could you please contact me (Oyama) by email or phone by the day before with the number of guests? I will have admission tickets prepared for you at the reception. No payment is needed.' Since he contacts Oyama and tickets are free, option 1 is correct."
+        },
+        {
+          "questionId": "dokkai-n3-p4-41-q3",
+          "questionNumber": 3,
+          "questionText_ja": "行く連絡は、いつまでにしなければならないか。",
+          "questionText_en": "By when must he contact them about attending?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "4月2日",
+              "text_en": "April 2nd"
+            },
+            {
+              "id": 2,
+              "text_ja": "4月3日",
+              "text_en": "April 3rd"
+            },
+            {
+              "id": 3,
+              "text_ja": "6月9日",
+              "text_en": "June 9th"
+            },
+            {
+              "id": 4,
+              "text_ja": "6月10日",
+              "text_en": "June 10th"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "本文にコンサートの日時は「六月十日」とあり、「前日までにメールかお電話で人数をご連絡いただけますか」と書かれています。開催日の前日は「6月9日」です。したがって3が正解です。",
+          "explanation_en": "The concert date is stated as June 10th ('六月十日'), and the letter requests: 'please contact me by email or phone by the day before ('前日までに').' The day before the concert is June 9th. Therefore, option 3 is correct."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3849 @@
+{
+  "metadata": {
+    "bookTitle": "新完全マスター JLPT N3 読解",
+    "bookTitleRomaji": "Shin Kanzen Master JLPT N3 Dokkai",
+    "englishTitle": "New Complete Master JLPT N3 Reading Comprehension",
+    "level": "JLPT N3 (Intermediate)",
+    "section": "実力養成編 第4部 実戦問題",
+    "subSection": "長文・情報検索 (Long Texts & Information Retrieval)",
+    "description": "Comprehensive transcription of Shin Kanzen Master JLPT N3 Dokkai Part 4: Practical Test Problems (Problems 49-64, pp. 114-145) including Long Passages (Problems 49-51) and Information Retrieval (Problems 52-64) with complete ruby furigana, comprehensive questions, and bilingual explanations.",
+    "version": "1.0.0",
+    "lastUpdated": "2026-10-12"
+  },
+  "lessons": [
+    {
+      "id": "dokkai-n3-p4-49",
+      "pages": [
+        114,
+        115
+      ],
+      "problemNumber": 49,
+      "genre": "エッセイ",
+      "genre_en": "Essay",
+      "genre_zh": "散文随笔",
+      "title_ja": "問題49 エッセイ（評論家という仕事）",
+      "title_en": "Problem 49: Essay (The Profession of a Critic)",
+      "title_zh": "问题49 散文随笔（评论家这份工作）",
+      "preReading": {
+        "question_ja": "テレビや雑誌などでどんな評論家を見たことがありますか。",
+        "question_en": "What kind of critics or commentators have you seen on TV or in magazines?",
+        "question_zh": "你在电视或杂志上见过什么样的评论家？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "評論家という仕事がある。",
+            "ruby_html": "<ruby>評論家<rt>ひょうろんか</rt></ruby>という<ruby>仕事<rt>しごと</rt></ruby>がある。",
+            "text_en": "There is a profession known as that of a critic (commentator)."
+          },
+          {
+            "id": 2,
+            "text_ja": "ある分野について深い知識を持ち、人々が参考にできるような解説や評価などをする仕事である。",
+            "ruby_html": "ある<ruby>分野<rt>ぶんや</rt></ruby>について<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち、<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>参考<rt>さんこう</rt></ruby>にできるような<ruby>解説<rt>かいせつ</rt></ruby>や<ruby>評価<rt>ひょうか</rt></ruby>などをする<ruby>仕事<rt>しごと</rt></ruby>である。",
+            "text_en": "It is a job where one has profound knowledge in a particular field, providing explanations and evaluations that people can refer to."
+          },
+          {
+            "id": 3,
+            "text_ja": "今では、政治評論家、経済評論家からラーメン評論家まで、あらゆる分野の評論家がテレビや雑誌などで活躍をしている。",
+            "ruby_html": "<ruby>今<rt>いま</rt></ruby>では、<ruby>政治評論家<rt>せいじひょうろんか</rt></ruby>、<ruby>経済評論家<rt>けいざいひょうろんか</rt></ruby>からラーメン<ruby>評論家<rt>ひょうろんか</rt></ruby>まで、あらゆる<ruby>分野<rt>ぶんや</rt></ruby>の<ruby>評論家<rt>ひょうろんか</rt></ruby>がテレビや<ruby>雑誌<rt>ざっし</rt></ruby>などで<ruby>活躍<rt>かつやく</rt></ruby>をしている。",
+            "text_en": "Nowadays, commentators in all kinds of fields—ranging from political and economic commentators to ramen critics—are actively appearing on television and in magazines."
+          },
+          {
+            "id": 4,
+            "text_ja": "しかし、医者や学校の先生のように、評論家になるための資格試験があるわけではない。",
+            "ruby_html": "しかし、<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>学校<rt>がっこう</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>のように、<ruby>評論家<rt>ひょうろんか</rt></ruby>になるための<ruby>資格試験<rt>しかくしけん</rt></ruby>があるわけではない。",
+            "text_en": "However, unlike doctors or school teachers, there is no qualification exam to become a critic."
+          },
+          {
+            "id": 5,
+            "text_ja": "彼らは一体どうやって評論家になったのだろうか。",
+            "ruby_html": "<ruby>彼<rt>かれ</rt></ruby>らは<ruby>一体<rt>いったい</rt></ruby>どうやって<ruby>評論家<rt>ひょうろんか</rt></ruby>になったのだろうか。",
+            "text_en": "How on earth did they become critics in the first place?"
+          },
+          {
+            "id": 6,
+            "text_ja": "彼らの多くは必ずしも評論をするために深い知識を得たのではない。",
+            "ruby_html": "<ruby>彼<rt>かれ</rt></ruby>らの<ruby>多<rt>おお</rt></ruby>くは<ruby>必<rt>かなら</rt></ruby>ずしも<ruby>評論<rt>ひょうろん</rt></ruby>をするために<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>を<ruby>得<rt>え</rt></ruby>たのではない。",
+            "text_en": "Most of them did not necessarily acquire their deep knowledge for the explicit purpose of offering commentary."
+          },
+          {
+            "id": 7,
+            "text_ja": "若いころからある分野に対して人並み外れた知識や興味を持っており、夢中でそれを学ぶうちに、いつの間にかそれを仕事にすることになったという人も多い。",
+            "ruby_html": "<ruby>若<rt>わか</rt></ruby>いころからある<ruby>分野<rt>ぶんや</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>人並<rt>ひとな</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた(注1)<ruby>知識<rt>ちしき</rt></ruby>や<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っており、<ruby>夢中<rt>むちゅう</rt></ruby>でそれを<ruby>学<rt>まな</rt></ruby>ぶうちに、いつの<ruby>間<rt>ま</rt></ruby>にかそれを<ruby>仕事<rt>しごと</rt></ruby>にすることになったという<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い。",
+            "text_en": "Many people possessed extraordinary knowledge and curiosity in a certain area from a young age, and while studying it passionately, before they knew it, it turned into their profession."
+          },
+          {
+            "id": 8,
+            "text_ja": "好きな分野を仕事にできるとはうらやましい話だが、ただ人並み外れた深い知識があれば評論家になれるというものでもないだろう。",
+            "ruby_html": "<ruby>好<rt>す</rt></ruby>きな<ruby>分野<rt>ぶんや</rt></ruby>を<ruby>仕事<rt>しごと</rt></ruby>にできるとはうらやましい<ruby>話<rt>はなし</rt></ruby>だが、ただ<ruby>人並<rt>ひとな</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>があれば<ruby>評論家<rt>ひょうろんか</rt></ruby>になれるというものでもないだろう。",
+            "text_en": "Being able to turn a field one loves into one's career sounds enviable, but having extraordinary, deep knowledge alone is probably not enough to become a commentator."
+          },
+          {
+            "id": 9,
+            "text_ja": "評論家として収入を得るためには、新聞や雑誌、テレビなどのマスメディアに取り上げられなければならない。",
+            "ruby_html": "<ruby>評論家<rt>ひょうろんか</rt></ruby>として<ruby>収入<rt>しゅうにゅう</rt></ruby>を<ruby>得<rt>え</rt></ruby>るためには、<ruby>新聞<rt>しんぶん</rt></ruby>や<ruby>雑誌<rt>ざっし</rt></ruby>、テレビなどのマスメディア(注2)に<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げられなければならない。",
+            "text_en": "To earn an income as a critic, one must be featured in mass media such as newspapers, magazines, or television."
+          },
+          {
+            "id": 10,
+            "text_ja": "マスメディアに取り上げられるためには、人々が納得し、話を聞きたくなるような説得力や魅力があること、さらに、マスメディアに登場するチャンスを得る運の強さも必要だろう。",
+            "ruby_html": "②マスメディアに<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げられるためには、<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>納得<rt>なっとく</rt></ruby>し、<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きたくなるような<ruby>説得力<rt>せっとくりょく</rt></ruby>や<ruby>魅力<rt>みりょく</rt></ruby>があること、さらに、マスメディアに<ruby>登場<rt>とうじょう</rt></ruby>するチャンスを<ruby>得<rt>え</rt></ruby>る<ruby>運<rt>うん</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さも<ruby>必要<rt>ひつよう</rt></ruby>だろう。",
+            "text_en": "In order to be featured by the media, one needs persuasiveness and charm that convince people and make them want to listen, as well as the strong good luck to obtain the chance to appear in mass media."
+          },
+          {
+            "id": 11,
+            "text_ja": "人並み外れた知識、人々が言うことを聞きたくなるような説得力や魅力、そしてチャンスをつかむ運がそろって初めて評論家になれるのかもしれない。",
+            "ruby_html": "<ruby>人並<rt>ひとな</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた<ruby>知識<rt>ちしき</rt></ruby>、<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>言<rt>い</rt></ruby>うことを<ruby>聞<rt>き</rt></ruby>きたくなるような<ruby>説得力<rt>せっとくりょく</rt></ruby>や<ruby>魅力<rt>みりょく</rt></ruby>、そしてチャンスをつかむ<ruby>運<rt>うん</rt></ruby>がそろって<ruby>初<rt>はじ</rt></ruby>めて<ruby>評論家<rt>ひょうろんか</rt></ruby>になれるのかもしれない。",
+            "text_en": "Perhaps only when exceptional knowledge, persuasive charm that draws an audience, and the luck to seize opportunities come together can one truly become a commentator."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "number": 1,
+          "term": "人並み外れた",
+          "meaning_ja": "他の人と比べて大きく違う",
+          "meaning_en": "Far beyond ordinary people; extraordinary"
+        },
+        {
+          "number": 2,
+          "term": "マスメディア",
+          "meaning_ja": "新聞・雑誌・テレビ・ラジオなどの大勢の人に向けての情報発信の手段",
+          "meaning_en": "Mass media (newspapers, magazines, television, radio, etc.)"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "分野",
+          "reading": "ぶんや",
+          "meaning": "field, domain / 领域",
+          "type": "noun"
+        },
+        {
+          "term": "評論家",
+          "reading": "ひょうろんか",
+          "meaning": "critic, commentator / 评论家",
+          "type": "noun"
+        },
+        {
+          "term": "評価",
+          "reading": "ひょうか",
+          "meaning": "evaluation, assessment / 评价",
+          "type": "noun"
+        },
+        {
+          "term": "資格試験",
+          "reading": "しかくしけん",
+          "meaning": "qualifying examination / 资格考试",
+          "type": "noun"
+        },
+        {
+          "term": "一体",
+          "reading": "いったい",
+          "meaning": "[how] on earth, in the world / 究竟，到底",
+          "type": "adverb"
+        },
+        {
+          "term": "人並み外れた",
+          "reading": "ひとなみはずれた",
+          "meaning": "extraordinary, out of the ordinary / 超乎常人的",
+          "type": "adjective"
+        },
+        {
+          "term": "うらやましい",
+          "reading": "うらやましい",
+          "meaning": "envious, jealous / 羡慕",
+          "type": "adjective"
+        },
+        {
+          "term": "収入を得る",
+          "reading": "しゅうにゅうをえる",
+          "meaning": "to earn an income / 获取收入",
+          "type": "verb"
+        },
+        {
+          "term": "納得する",
+          "reading": "なっとくする",
+          "meaning": "to accept, understand, agree to / 理解，接受",
+          "type": "verb"
+        },
+        {
+          "term": "説得力",
+          "reading": "せっとくりょく",
+          "meaning": "persuasiveness / 说服力",
+          "type": "noun"
+        },
+        {
+          "term": "魅力",
+          "reading": "みりょく",
+          "meaning": "charm, appeal / 魅力",
+          "type": "noun"
+        },
+        {
+          "term": "運",
+          "reading": "うん",
+          "meaning": "luck, good fortune / 运气，好运",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-49-1",
+          "questionNumber": 1,
+          "questionText_ja": "評論家と医者や先生はどこが違うと書かれているか。",
+          "questionText_en": "According to the text, what is the difference between a critic and a doctor or teacher?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "評論家はある分野について説明や評価をするが、医者や先生はそうではない。",
+              "text_en": "Critics explain and evaluate a specific field, but doctors and teachers do not."
+            },
+            {
+              "id": 2,
+              "text_ja": "評論家はある分野についての資格が必要だが、医者や先生はそうではない。",
+              "text_en": "Critics need a qualification in a particular field, but doctors and teachers do not."
+            },
+            {
+              "id": 3,
+              "text_ja": "評論家はある分野についての資格は必要ないが、医者や先生はそうではない。",
+              "text_en": "Critics do not need a qualification in a field, whereas doctors and teachers do."
+            },
+            {
+              "id": 4,
+              "text_ja": "評論家はある分野の知識が必要だが、医者や先生はそうではない。",
+              "text_en": "Critics require knowledge of a field, but doctors and teachers do not."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "第1段落に「医者や学校の先生のように、評論家になるための資格試験があるわけではない」と書かれています。つまり医者や先生には資格試験が必要ですが、評論家には必要ありません。したがって 3 が正解です。",
+          "explanation_en": "The first paragraph states: 'unlike doctors or school teachers, there is no qualification exam to become a critic.' This means doctors and teachers require qualifications/licenses, whereas critics do not. Therefore, Option 3 is correct."
+        },
+        {
+          "questionId": "q-49-2",
+          "questionNumber": 2,
+          "questionText_ja": "評論家の多くはどんなことが仕事につながったとあるか。",
+          "questionText_en": "According to the text, what led most critics to their current profession?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "評論家になるためにある分野について特別な興味を持とうとしたこと",
+              "text_en": "Trying to take a special interest in a field in order to become a critic"
+            },
+            {
+              "id": 2,
+              "text_ja": "ある分野について解説や評論をするために、一生懸命学んだこと",
+              "text_en": "Studying hard to provide commentary and reviews in a certain area"
+            },
+            {
+              "id": 3,
+              "text_ja": "若いころにある分野についての資格試験を人よりもたくさん受けたこと",
+              "text_en": "Taking more qualification exams in a field than others when they were young"
+            },
+            {
+              "id": 4,
+              "text_ja": "ずっとある分野に特別な知識を持ち、興味を持って勉強を続けたこと",
+              "text_en": "Having exceptional knowledge in a field for a long time and continuing to study with passion"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "第2段落に「若いころからある分野に対して人並み外れた知識や興味を持っており、夢中でそれを学ぶうちに、いつの間にかそれを仕事にすることになったという人も多い」とあります。評論家になるために学んだのではなく、興味を持って夢中で勉強を続けたことが仕事につながっています。したがって 4 が正解です。",
+          "explanation_en": "Paragraph 2 notes that many had extraordinary knowledge and curiosity from youth, passionately studying it until it naturally became their career. They did not study for the sake of becoming critics, but rather sustained their passion over time. Therefore, Option 4 is correct."
+        },
+        {
+          "questionId": "q-49-3",
+          "questionNumber": 3,
+          "questionText_ja": "①ただ人並み外れた深い知識があれば評論家になれるというものでもないとあるが、どういうことか。",
+          "questionText_en": "What does the statement 'having extraordinary deep knowledge alone is probably not enough to become a commentator' mean?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "深い知識を持つことが、評論家になるためのただ一つの必要なことだ。",
+              "text_en": "Having deep knowledge is the single only requirement for becoming a critic."
+            },
+            {
+              "id": 2,
+              "text_ja": "深い知識を持つことが必要ではないこともたくさんある。",
+              "text_en": "There are many cases where having deep knowledge is not necessary at all."
+            },
+            {
+              "id": 3,
+              "text_ja": "深い知識を持つことは必要だが、ほかにも必要なことがある。",
+              "text_en": "Possessing deep knowledge is necessary, but other qualities are also required."
+            },
+            {
+              "id": 4,
+              "text_ja": "深い知識を持つことは必要ではなく、ほかに必要なことがある。",
+              "text_en": "Deep knowledge is not needed, but other things are."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "「〜があれば…になれるというものでもない」は、それだけでは十分ではなく他の条件も必要であることを表します。本文でも、深い知識に加えて「説得力や魅力」「運の強さ」が必要と述べられています。したがって 3 が正解です。",
+          "explanation_en": "The grammar expression '〜というものでもない' indicates that having knowledge is not sufficient on its own—other elements are required. The passage goes on to state that persuasive charm and fortune are also essential. Therefore, Option 3 is correct."
+        },
+        {
+          "questionId": "q-49-4",
+          "questionNumber": 4,
+          "questionText_ja": "本文によると②マスメディアに取り上げられるためには何が必要か。",
+          "questionText_en": "According to the passage, what is needed to be featured in the mass media?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "新聞やテレビ関係の会社で働いてマスメディアに出た経験",
+              "text_en": "Experience working at newspaper or TV-related companies and appearing in media"
+            },
+            {
+              "id": 2,
+              "text_ja": "人々を説得しひきつける力があり、マスメディアに出る機会に恵まれる運の強さ",
+              "text_en": "The ability to persuade and attract people, along with strong luck to receive opportunities to appear in the media"
+            },
+            {
+              "id": 3,
+              "text_ja": "マスメディアに出て、人々をひきつけた経験",
+              "text_en": "Past experience of appearing in mass media and captivating an audience"
+            },
+            {
+              "id": 4,
+              "text_ja": "人並み外れた深い知識と、人々を納得させる説得力や魅力",
+              "text_en": "Extraordinary deep knowledge and the persuasive power or charm to convince people"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "下線部②の直後に「人々が納得し、話を聞きたくなるような説得力や魅力があること、さらに、マスメディアに登場するチャンスを得る運の強さも必要だろう」と明記されています。選択肢 2 がこの記述に正確に一致します。",
+          "explanation_en": "Right after underlined part ②, the text specifies: 'persuasiveness and charm that convince people and make them want to listen, as well as the strong good luck to obtain the chance to appear in mass media.' Option 2 perfectly matches this description."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆エッセイ（評論家という仕事）",
+        "text_ja": "長文読解では、論理展開（問題提起→現状分析・例外提示→必要条件の展開→結論）を正確に追うことが大切です。第1段落で資格試験がない点に触れ、第2・3段落で知識だけでは足りずメディアでの魅力と運が必要であるという結論へと導いています。",
+        "text_en": "In long passage comprehension, tracing the essay's logical progression is essential: Question raised -> Current realities -> Necessary conditions -> Conclusion. The author explains that lack of formal certification means a critic needs both deep insight, engaging communication, and good fortune.",
+        "structureLayout": [
+          {
+            "component": "導入・問題提起",
+            "detail": "あらゆる分野の評論家がいるが、資格試験はない。どうやって評論家になるのか？",
+            "en": "Introduction: Critics exist in diverse fields, yet no license exam exists."
+          },
+          {
+            "component": "経緯・必要条件",
+            "detail": "好きで学んでいるうちに仕事になる人が多いが、知識だけでは不十分。マスメディアの露出が必要。",
+            "en": "Background: Passionate study often precedes work, but knowledge alone is not enough; mass media exposure is required."
+          },
+          {
+            "component": "結論",
+            "detail": "知識、説得力・魅力、チャンスをつかむ運が揃って初めて評論家になれる。",
+            "en": "Conclusion: A critic is forged when deep knowledge, communicative charm, and lucky timing converge."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "「〜というものでもない」などの部分否定表現に注目し、何が十分条件で何が必要条件なのかを区別しましょう。",
+        "point_en": "Watch for partial negation patterns such as '〜というものでもない' to distinguish necessary conditions from sufficient conditions."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-50",
+      "pages": [
+        116,
+        117
+      ],
+      "problemNumber": 50,
+      "genre": "エッセイ",
+      "genre_en": "Essay",
+      "genre_zh": "散文随笔",
+      "title_ja": "問題50 エッセイ（作家の記念館と手書きの文字）",
+      "title_en": "Problem 50: Essay (The Author's Memorial Museum and Handwritten Words)",
+      "title_zh": "问题50 散文随笔（作家的纪念馆与手写文字）",
+      "preReading": {
+        "question_ja": "最近手書きで文字を書く機会はありますか。手書きの良さは何だと思いますか。",
+        "question_en": "Have you had opportunities to write by hand recently? What do you think is good about handwriting?",
+        "question_zh": "你最近有手写字的机会吗？你觉得手写有什么优点？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "夏休みに私はある町を旅行した。",
+            "ruby_html": "<ruby>夏休<rt>なつやす</rt></ruby>みに<ruby>私<rt>わたし</rt></ruby>はある<ruby>町<rt>まち</rt></ruby>を<ruby>旅行<rt>りょこう</rt></ruby>した。",
+            "text_en": "During summer vacation, I traveled to a certain town."
+          },
+          {
+            "id": 2,
+            "text_ja": "そこは私が学生時代に大好きだった作家が生まれ、活躍した町である。",
+            "ruby_html": "そこは<ruby>私<rt>わたし</rt></ruby>が<ruby>学生時代<rt>がくせいじだい</rt></ruby>に<ruby>大好<rt>だいす</rt></ruby>きだった<ruby>作家<rt>さっか</rt></ruby>が<ruby>生<rt>う</rt></ruby>まれ、<ruby>活躍<rt>かつやく</rt></ruby>した<ruby>町<rt>まち</rt></ruby>である。",
+            "text_en": "It was the town where an author I loved in my student days was born and flourished."
+          },
+          {
+            "id": 3,
+            "text_ja": "いつかはそこをこの目で見てみたいと思っていたのが、やっと実現したのだった。",
+            "ruby_html": "いつかはそこをこの<ruby>目<rt>め</rt></ruby>で<ruby>見<rt>み</rt></ruby>てみたいと<ruby>思<rt>おも</rt></ruby>っていたのが、やっと<ruby>実現<rt>じつげん</rt></ruby>したのだった。",
+            "text_en": "I had always wanted to see it with my own eyes one day, and that dream had finally come true."
+          },
+          {
+            "id": 4,
+            "text_ja": "もう彼が亡くなって何十年も経っているため、様子はすっかり変わってしまったはずである。",
+            "ruby_html": "もう<ruby>彼<rt>かれ</rt></ruby>が<ruby>亡<rt>な</rt></ruby>くなって<ruby>何十年<rt>なんじゅうねん</rt></ruby>も<ruby>経<rt>た</rt></ruby>っているため、<ruby>様子<rt>ようす</rt></ruby>はすっかり<ruby>変<rt>か</rt></ruby>わってしまったはずである。",
+            "text_en": "Decades had passed since he passed away, so the scenery must have completely changed."
+          },
+          {
+            "id": 5,
+            "text_ja": "それでも彼の小説の舞台となった、緑の美しい町を歩くのは楽しかった。",
+            "ruby_html": "それでも<ruby>彼<rt>かれ</rt></ruby>の<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>舞台<rt>ぶたい</rt></ruby>となった、<ruby>緑<rt>みどり</rt></ruby>の<ruby>美<rt>うつく</rt></ruby>しい<ruby>町<rt>まち</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>くのは<ruby>楽<rt>たの</rt></ruby>しかった。",
+            "text_en": "Even so, walking through the lush, beautiful town that served as the backdrop for his novels was enjoyable."
+          },
+          {
+            "id": 6,
+            "text_ja": "だが、私が社会人になってからは、彼の書いたものをほとんど読まなくなったせいか、それ以上の感激はなく、正直に言うと、少し物足りない気持ちだった。",
+            "ruby_html": "だが、<ruby>私<rt>わたし</rt></ruby>が<ruby>社会人<rt>しゃかいじん</rt></ruby>になってからは、<ruby>彼<rt>かれ</rt></ruby>の<ruby>書<rt>か</rt></ruby>いたものをほとんど<ruby>読<rt>よ</rt></ruby>まなくなったせいか、それ<ruby>以上<rt>いじょう</rt></ruby>の<ruby>感激<rt>かんげき</rt></ruby>はなく、<ruby>正直<rt>しょうじき</rt></ruby>に<ruby>言<rt>い</rt></ruby>うと、<ruby>少<rt>すこ</rt></ruby>し<ruby>物足<rt>ものた</rt></ruby>りない<ruby>気持<rt>きも</rt></ruby>ちだった。",
+            "text_en": "However, perhaps because I had rarely read his writings since entering the workforce, there was no deeper emotional impact, and to be honest, I felt a bit unsatisfied."
+          },
+          {
+            "id": 7,
+            "text_ja": "ところが、ある記念館に入ったときのことである。",
+            "ruby_html": "ところが、ある<ruby>記念館<rt>きねんかん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったときのことであ。",
+            "text_en": "However, that changed when I stepped into a memorial museum."
+          },
+          {
+            "id": 8,
+            "text_ja": "そこでは、彼の書いた原稿や手紙の展示をしていた。",
+            "ruby_html": "そこでは、<ruby>彼<rt>かれ</rt></ruby>の<ruby>書<rt>か</rt></ruby>いた<ruby>原稿<rt>げんこう</rt></ruby>(注1)や<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>展示<rt>てんじ</rt></ruby>(注2)をしていた。",
+            "text_en": "There on display were manuscripts and personal letters written in his own hand."
+          },
+          {
+            "id": 9,
+            "text_ja": "それを見ているうちに、しだいに昔読んだ小説や詩の内容が思い出されてきた。",
+            "ruby_html": "それを<ruby>見<rt>み</rt></ruby>ているうちに、しだいに<ruby>昔<rt>むかし</rt></ruby><ruby>読<rt>よ</rt></ruby>んだ<ruby>小説<rt>しょうせつ</rt></ruby>や<ruby>詩<rt>し</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>が<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>されてきた。",
+            "text_en": "As I looked at them, memories of the novels and poems I had read long ago gradually resurfaced."
+          },
+          {
+            "id": 10,
+            "text_ja": "特に、彼の妹が亡くなったときに書かれた、詩の原稿を読んだときには、彼の悲しみが痛いほど近くに感じられたのである。",
+            "ruby_html": "<ruby>特<rt>とく</rt></ruby>に、<ruby>彼<rt>かれ</rt></ruby>の<ruby>妹<rt>いもうと</rt></ruby>が<ruby>亡<rt>な</rt></ruby>くなったときに<ruby>書<rt>か</rt></ruby>かれた、<ruby>詩<rt>し</rt></ruby>の<ruby>原稿<rt>げんこう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだときには、<ruby>彼<rt>かれ</rt></ruby>の<ruby>悲<rt>かな</rt></ruby>しみが<ruby>痛<rt>いた</rt></ruby>いほど<ruby>近<rt>ちか</rt></ruby>くに<ruby>感<rt>かん</rt></ruby>じられたのである。",
+            "text_en": "In particular, when I read the manuscript of a poem written when his younger sister passed away, his sorrow felt so close that it was almost painful."
+          },
+          {
+            "id": 11,
+            "text_ja": "手書きの文字というのは、時間がどんなに流れていても、その人がどんな人だったのか、その人が何を感じていたかを強く表していることに気がついた。",
+            "ruby_html": "<ruby>手書<rt>てが</rt></ruby>きの<ruby>文字<rt>もじ</rt></ruby>というのは、<ruby>時間<rt>じかん</rt></ruby>がどんなに<ruby>流<rt>なが</rt></ruby>れていても、その<ruby>人<rt>ひと</rt></ruby>がどんな<ruby>人<rt>ひと</rt></ruby>だったのか、その<ruby>人<rt>ひと</rt></ruby>が<ruby>何<rt>なに</rt></ruby>を<ruby>感<rt>かん</rt></ruby>じていたかを<ruby>強<rt>つよ</rt></ruby>く<ruby>表<rt>あらわ</rt></ruby>していることに<ruby>気<rt>き</rt></ruby>がついた。",
+            "text_en": "I realized that handwritten characters powerfully express who a person was and what they were feeling, no matter how much time has passed."
+          },
+          {
+            "id": 12,
+            "text_ja": "字の下手な私は、できるだけパソコンを使っていた。",
+            "ruby_html": "<ruby>字<rt>じ</rt></ruby>の<ruby>下手<rt>へた</rt></ruby>な<ruby>私<rt>わたし</rt></ruby>は、できるだけパソコンを<ruby>使<rt>つか</rt></ruby>っていた。",
+            "text_en": "Having poor handwriting myself, I had avoided writing by hand and relied on a computer whenever possible."
+          },
+          {
+            "id": 13,
+            "text_ja": "だが、それ以来、時には下手でも心をこめて字を書くことで、何かが伝わるのではないかと思い始めている。",
+            "ruby_html": "だが、それ<ruby>以来<rt>いらい</rt></ruby>、<ruby>時<rt>とき</rt></ruby>には<ruby>下手<rt>へた</rt></ruby>でも<ruby>心<rt>こころ</rt></ruby>をこめて<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>くことで、<ruby>何<rt>なに</rt></ruby>かが<ruby>伝<rt>つた</rt></ruby>わるのではないかと<ruby>思<rt>おも</rt></ruby>い<ruby>始<rt>はじ</rt></ruby>めている。",
+            "text_en": "Since then, however, I have begun to feel that even if my handwriting is clumsy, writing with all my heart might convey something special."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "number": 1,
+          "term": "原稿",
+          "meaning_ja": "本を出したり、発表をしたりするために文章を書いた紙",
+          "meaning_en": "Manuscript; paper on which text was written for publication"
+        },
+        {
+          "number": 2,
+          "term": "展示",
+          "meaning_ja": "ものを並べて見せること",
+          "meaning_en": "Exhibition, public display of items"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "ある〜",
+          "reading": "ある〜",
+          "meaning": "a certain, some ~ / 某个",
+          "type": "adjective"
+        },
+        {
+          "term": "活躍する",
+          "reading": "かつやくする",
+          "meaning": "to be active, to flourish / 活跃",
+          "type": "verb"
+        },
+        {
+          "term": "実現する",
+          "reading": "じつげんする",
+          "meaning": "to come true, to realize / 实现",
+          "type": "verb"
+        },
+        {
+          "term": "舞台",
+          "reading": "ぶたい",
+          "meaning": "setting, background, stage / 舞台，背景",
+          "type": "noun"
+        },
+        {
+          "term": "感激",
+          "reading": "かんげき",
+          "meaning": "deep emotion, being deeply moved / 感动，感激",
+          "type": "noun"
+        },
+        {
+          "term": "物足りない",
+          "reading": "ものたりない",
+          "meaning": "feeling that something is missing, unsatisfactory / 美中不足，不满足",
+          "type": "adjective"
+        },
+        {
+          "term": "心をこめて",
+          "reading": "こころをこめて",
+          "meaning": "wholeheartedly, with all one's heart / 倾注心意",
+          "type": "expression"
+        },
+        {
+          "term": "伝わる",
+          "reading": "つたわる",
+          "meaning": "to be conveyed, to come across / 传达，流传",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-50-1",
+          "questionNumber": 1,
+          "questionText_ja": "この文章を書いた人はある町を歩いて、どのような気持ちになったか。",
+          "questionText_en": "How did the author feel while walking through the town?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "町に緑が多くてきれいなので、楽しく、満足していた。",
+              "text_en": "They were satisfied and delighted because the town was full of green and beautiful."
+            },
+            {
+              "id": 2,
+              "text_ja": "作家の書いた小説を次々に思い出して、満足していた。",
+              "text_en": "They were satisfied as they recalled the author's novels one after another."
+            },
+            {
+              "id": 3,
+              "text_ja": "作家の小説を読んでから時間が経ち、思ったほど感動しなかった。",
+              "text_en": "Much time had passed since reading the author's novels, so they were not as deeply moved as expected."
+            },
+            {
+              "id": 4,
+              "text_ja": "今は作家のいたころの町と大きく変わってしまい、少し不満だった。",
+              "text_en": "They were dissatisfied because the town had changed dramatically since the author lived there."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "第2段落の終わりに「社会人になってからは、彼の書いたものをほとんど読まなくなったせいか、それ以上の感激はなく、正直に言うと、少し物足りない気持ちだった」とあります。読書から時間が経っており、期待したほどの感動が得られなかったため、3 が正解です。",
+          "explanation_en": "The end of paragraph 2 explains that because the author rarely read the writer's work since entering the workforce, there was no great emotional surge, and they felt slightly unsatisfied. Thus, Option 3 is correct."
+        },
+        {
+          "questionId": "q-50-2",
+          "questionNumber": 2,
+          "questionText_ja": "この文章によると、この人は記念館で何を見たか。",
+          "questionText_en": "According to the text, what did the author see at the memorial museum?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "作家の書いた詩の本や小説の本",
+              "text_en": "Books of poetry and novels published by the author"
+            },
+            {
+              "id": 2,
+              "text_ja": "作家自身が書いた小説の原稿や手紙",
+              "text_en": "Manuscripts of novels and letters handwritten by the author himself"
+            },
+            {
+              "id": 3,
+              "text_ja": "いろいろな人がこの作家について書いた原稿や手紙",
+              "text_en": "Manuscripts and letters written about the author by various other people"
+            },
+            {
+              "id": 4,
+              "text_ja": "作家の妹が書いた詩",
+              "text_en": "Poetry composed by the author's younger sister"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "第3段落に「そこでは、彼の書いた原稿や手紙の展示をしていた」とあります。作家自身の手による直筆の原稿や手紙を見たので、2 が正解です。",
+          "explanation_en": "Paragraph 3 explicitly states: 'There on display were manuscripts and personal letters written in his own hand.' Therefore, Option 2 is correct."
+        },
+        {
+          "questionId": "q-50-3",
+          "questionNumber": 3,
+          "questionText_ja": "それ以来とあるが、どのようなことか。",
+          "questionText_en": "What does 'since then' (それ以来) refer to?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "記念館に入ったときから",
+              "text_en": "From the moment they entered the memorial museum"
+            },
+            {
+              "id": 2,
+              "text_ja": "彼の手書きの原稿を見たときから",
+              "text_en": "From the time they viewed his handwritten manuscripts"
+            },
+            {
+              "id": 3,
+              "text_ja": "作家の生まれた町に着いたときから",
+              "text_en": "From the moment they arrived in the author's hometown"
+            },
+            {
+              "id": 4,
+              "text_ja": "パソコンで字を書いていたときから",
+              "text_en": "From when they used a computer to type"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "「それ以来」の「それ」は、直前の段落で述べられている「作家の手書きの原稿を見て、文字に込められた感情の強さに気づいたこと」を指します。したがって 2 が正解です。",
+          "explanation_en": "'Since then' refers to the pivotal realization triggered by viewing the author's handwritten manuscripts and sensing his deep emotions. Therefore, Option 2 is correct."
+        },
+        {
+          "questionId": "q-50-4",
+          "questionNumber": 4,
+          "questionText_ja": "この文章を書いた人が一番伝えたいことは何か。",
+          "questionText_en": "What is the primary message the author wants to convey in this essay?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "手書きの文字から伝わるもの",
+              "text_en": "The feelings and humanity conveyed through handwritten words"
+            },
+            {
+              "id": 2,
+              "text_ja": "字をきれいに書くことの大切さ",
+              "text_en": "The importance of having neat, attractive handwriting"
+            },
+            {
+              "id": 3,
+              "text_ja": "好きな作家の文章のすばらしさ",
+              "text_en": "The brilliance of the writing of an author one loves"
+            },
+            {
+              "id": 4,
+              "text_ja": "好きな作家のいた町へ旅行する意味",
+              "text_en": "The significance of traveling to the town of an author one admires"
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "筆者は手書き文字に込められた感情の強さに心を動かされ、最終文で「時には下手でも心をこめて字を書くことで、何かが伝わるのではないか」と述べています。上手下手ではなく、手書き文字が伝えるものの価値を最も伝えたいので、1 が正解です。",
+          "explanation_en": "The author concludes that 'even if my handwriting is clumsy, writing with all my heart might convey something special.' The core takeaway is the unique personal warmth communicated through handwritten text. Hence, Option 1 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆エッセイ（作家の記念館と手書きの文字）",
+        "text_ja": "作者の心の動き（期待→物足りなさ→原稿との出会いによる強い感動→手書き文字への新たな気づき）を時系列に沿って追うエッセイです。指示語「それ以来」の指す内容や、文章全体の主眼（手書きの価値）を問う標準的な読解問題です。",
+        "text_en": "An essay charting the author's emotional trajectory: high expectations -> slight disappointment -> discovery at the museum -> renewed appreciation for the expressive power of handwriting.",
+        "structureLayout": [
+          {
+            "component": "旅行のきっかけと町の散策",
+            "detail": "好きだった作家の町を訪れたが、久しく作品を読んでいなかったため期待ほどの感激はなかった。",
+            "en": "Visit to the hometown: Beautiful streets, but mild emotional disappointment."
+          },
+          {
+            "component": "記念館での体験",
+            "detail": "直筆の原稿（特に妹への詩）を見て、作家の深い悲しみが心に刺さり、手書きの持つ力を実感する。",
+            "en": "Encounter at the museum: The handwritten manuscript conveys raw grief spanning decades."
+          },
+          {
+            "component": "結び・心境の変化",
+            "detail": "パソコンばかり使っていたが、下手でも心を込めて手書きで伝えることの大切さに気づいた。",
+            "en": "Conclusion: A personal commitment to handwrite with feeling despite imperfect penmanship."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "エッセイの設問では、筆者の「最終的な心情の変化・気づき」が正解の核になることが多いです。",
+        "point_en": "In JLPT essay reading, the concluding shift in sentiment or revelation typically answers the main-theme question."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-51",
+      "pages": [
+        118,
+        119
+      ],
+      "problemNumber": 51,
+      "genre": "本の紹介",
+      "genre_en": "Book Review",
+      "genre_zh": "书评",
+      "title_ja": "問題51 本の紹介（『花屋ダイヤリー』）",
+      "title_en": "Problem 51: Book Review ('Florist Diary')",
+      "title_zh": "问题51 书评（《花店日记》）",
+      "preReading": {
+        "question_ja": "最近誰かに本をおすすめされたことはありますか。どんな本でしたか。",
+        "question_en": "Has anyone recommended a book to you recently? What kind of book was it?",
+        "question_zh": "最近有人向你推荐过书吗？是什么样的书？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章は『花屋ダイヤリー』という小説についての紹介である。文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The following text introduces a novel titled 'Florist Diary'. Read the passage and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "『花屋ダイヤリー』は一軒の花屋が舞台の小説です。",
+            "ruby_html": "『<ruby>花屋<rt>はなや</rt></ruby>ダイヤリー』は<ruby>一軒<rt>いっけん</rt></ruby>の<ruby>花屋<rt>はなや</rt></ruby>が<ruby>舞台<rt>ぶたい</rt></ruby>の<ruby>小説<rt>しょうせつ</rt></ruby>です。",
+            "text_en": "'Florist Diary' is a novel set in a single flower shop."
+          },
+          {
+            "id": 2,
+            "text_ja": "花屋のアルバイト店員と、花を買いに来るさまざまな客との関わりが、ていねいに描かれています。",
+            "ruby_html": "<ruby>花屋<rt>はなや</rt></ruby>のアルバイト<ruby>店員<rt>てんいん</rt></ruby>と、<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>来<rt>く</rt></ruby>るさまざまな<ruby>客<rt>きゃく</rt></ruby>との<ruby>関<rt>かか</rt></ruby>わりが、ていねいに<ruby>描<rt>えが</rt></ruby>かれています。",
+            "text_en": "The relationships between a part-time florist clerk and the various customers who come to purchase flowers are delicately depicted."
+          },
+          {
+            "id": 3,
+            "text_ja": "作者の山口しずかは2012年に『一人』で小説最優秀賞を取った注目の女性作家です。",
+            "ruby_html": "<ruby>作者<rt>さくしゃ</rt></ruby>の<ruby>山口<rt>やまぐち</rt></ruby>しずかは2012<ruby>年<rt>ねん</rt></ruby>に『<ruby>一人<rt>ひとり</rt></ruby>』で<ruby>小説<rt>しょうせつ</rt></ruby><ruby>最優秀賞<rt>さいゆうしゅうしょう</rt></ruby>を<ruby>取<rt>と</rt></ruby>った<ruby>注目<rt>ちゅうもく</rt></ruby>の<ruby>女性<rt>じょせい</rt></ruby><ruby>作家<rt>さっか</rt></ruby>です。",
+            "text_en": "The author, Shizuka Yamaguchi, is a noteworthy female novelist who won the grand prize for best novel with 'Alone' in 2012."
+          },
+          {
+            "id": 4,
+            "text_ja": "若者の純粋さを、愛情を持って表現するところに人気があります。",
+            "ruby_html": "<ruby>若者<rt>わかもの</rt></ruby>の<ruby>純粋<rt>じゅんすい</rt></ruby>さを、<ruby>愛情<rt>あいじょう</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>表現<rt>ひょうげん</rt></ruby>するところに<ruby>人気<rt>にんき</rt></ruby>があります。",
+            "text_en": "She enjoys popularity for lovingly portraying the purity and earnestness of youth."
+          },
+          {
+            "id": 5,
+            "text_ja": "『花屋ダイヤリー』では、学校にも行かず仕事もしない17歳のユウが主人公です。",
+            "ruby_html": "『<ruby>花屋<rt>はなや</rt></ruby>ダイヤリー』では、<ruby>学校<rt>がっこう</rt></ruby>にも<ruby>行<rt>い</rt></ruby>かず<ruby>仕事<rt>しごと</rt></ruby>もしない17<ruby>歳<rt>さい</rt></ruby>のユウが<ruby>主人公<rt>しゅじんこう</rt></ruby>(注1)です。",
+            "text_en": "In 'Florist Diary', the protagonist is Yuu, a 17-year-old who neither attends school nor works."
+          },
+          {
+            "id": 6,
+            "text_ja": "何にも興味を持てなかったユウは、小さな花屋でアルバイトを始めます。",
+            "ruby_html": "<ruby>何<rt>なに</rt></ruby>にも<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>てなかったユウは、<ruby>小<rt>ちい</rt></ruby>さな<ruby>花屋<rt>はなや</rt></ruby>でアルバイトを<ruby>始<rt>はじ</rt></ruby>めます。",
+            "text_en": "Yuu, who lacked interest in anything, takes up a part-time job at a cozy little flower shop."
+          },
+          {
+            "id": 7,
+            "text_ja": "そこには毎日、1輪だけ花を買いに来るおばあさんや、ゲーム機と交換に花を買いたいと言う小学生など、少し変わった客が次々と現れます。",
+            "ruby_html": "そこには<ruby>毎日<rt>まいにち</rt></ruby>、1<ruby>輪<rt>りん</rt></ruby>だけ<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いに<ruby>来<rt>く</rt></ruby>るおばあさんや、ゲーム<ruby>機<rt>き</rt></ruby>と<ruby>交換<rt>こうかん</rt></ruby>に<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいと<ruby>言<rt>い</rt></ruby>う<ruby>小学生<rt>しょうがくせい</rt></ruby>など、<ruby>少<rt>すこ</rt></ruby>し<ruby>変<rt>か</rt></ruby>わった<ruby>客<rt>きゃく</rt></ruby>が<ruby>次々<rt>つぎつぎ</rt></ruby>と<ruby>現<rt>あらわ</rt></ruby>れます。",
+            "text_en": "A colorful array of quirky customers appears one after another: an elderly woman who buys just a single blossom each day, or an elementary schooler offering a video game console in trade for flowers."
+          },
+          {
+            "id": 8,
+            "text_ja": "客はみなユウに花を選んでほしいと言います。",
+            "ruby_html": "<ruby>客<rt>きゃく</rt></ruby>はみなユウに<ruby>花<rt>はな</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでほしいと<ruby>言<rt>い</rt></ruby>います。",
+            "text_en": "Every customer asks Yuu to pick out flowers for them."
+          },
+          {
+            "id": 9,
+            "text_ja": "困ったユウは、どうしてその花を買いたいのか、だれのための花なのかなど、事情を客にたずねます。",
+            "ruby_html": "<ruby>困<rt>こま</rt></ruby>ったユウは、どうしてその<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいのか、だれのための<ruby>花<rt>はな</rt></ruby>なのかなど、①<ruby>事情<rt>じじょう</rt></ruby>を<ruby>客<rt>きゃく</rt></ruby>にたずねます。",
+            "text_en": "Perplexed, Yuu inquires into their circumstances, asking why they wish to purchase flowers and for whom."
+          },
+          {
+            "id": 10,
+            "text_ja": "客と話をするうちに、ユウは人との関係の大切さや働く意味など、いろいろなことを考え、変わりはじめます。",
+            "ruby_html": "<ruby>客<rt>きゃく</rt></ruby>と<ruby>話<rt>はなし</rt></ruby>をするうちに、ユウは<ruby>人<rt>ひと</rt></ruby>との<ruby>関係<rt>かんけい</rt></ruby>の<ruby>大切<rt>たいせつ</rt></ruby>さや<ruby>働<rt>はたら</rt></ruby>く<ruby>意味<rt>いみ</rt></ruby>など、いろいろなことを<ruby>考<rt>かんが</rt></ruby>え、<ruby>変<rt>か</rt></ruby>わりはじめます。",
+            "text_en": "Engaging in conversations with customers, Yuu begins pondering the value of human connection and the true meaning of work, gradually starting to change."
+          },
+          {
+            "id": 11,
+            "text_ja": "何の喜びもない日々を送っていたユウが、働いて人の役に立つ中で明るく強くなっていく様子に、読者は元気付けられるでしょう。",
+            "ruby_html": "<ruby>何<rt>なに</rt></ruby>の<ruby>喜<rt>よろこ</rt></ruby>びもない<ruby>日々<rt>ひび</rt></ruby>を<ruby>送<rt>おく</rt></ruby>っていたユウが、<ruby>働<rt>はたら</rt></ruby>いて<ruby>人<rt>ひと</rt></ruby>の<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>中<rt>なか</rt></ruby>で<ruby>明<rt>あか</rt></ruby>るく<ruby>強<rt>つよ</rt></ruby>くなっていく<ruby>様子<rt>ようす</rt></ruby>に、<ruby>読者<rt>どくしゃ</rt></ruby>は②<ruby>元気づ<rt>げんきづ</rt></ruby>けられるでしょう。",
+            "text_en": "Readers will surely feel uplifted witnessing how Yuu, who had spent joyless days, grows cheerful and resilient through being useful to others."
+          },
+          {
+            "id": 12,
+            "text_ja": "それは作者から読者へのエールでもあります。",
+            "ruby_html": "それは<ruby>作者<rt>さくしゃ</rt></ruby>から<ruby>読者<rt>どくしゃ</rt></ruby>へのエール(注2)でもあります。",
+            "text_en": "In that sense, it serves as a cheer of encouragement from the author to the reader."
+          },
+          {
+            "id": 13,
+            "text_ja": "また、たくさんの花の名前と花言葉が紹介されているので、だれかに花を贈るときに役に立つ知識も得られます。",
+            "ruby_html": "また、たくさんの<ruby>花<rt>はな</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>と<ruby>花言葉<rt>はなことば</rt></ruby>(注3)が<ruby>紹介<rt>しょうかい</rt></ruby>されているので、だれかに<ruby>花<rt>はな</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>るときに<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>知識<rt>ちしき</rt></ruby>も<ruby>得<rt>え</rt></ruby>られます。",
+            "text_en": "Moreover, because numerous flower names and the 'language of flowers' are introduced, readers can gain practical insight useful when gifting flowers."
+          },
+          {
+            "id": 14,
+            "text_ja": "人間関係に少し疲れているときや目標が見つけられないときに読むと、人が好きになり心が元気になる一冊です。",
+            "ruby_html": "<ruby>人間関係<rt>にんげんかんけい</rt></ruby>に<ruby>少<rt>すこ</rt></ruby>し<ruby>疲<rt>つか</rt></ruby>れているときや<ruby>目標<rt>もくひょう</rt></ruby>が<ruby>見<rt>み</rt></ruby>つけられないときに<ruby>読<rt>よ</rt></ruby>むと、<ruby>人<rt>ひと</rt></ruby>が<ruby>好<rt>す</rt></ruby>きになり<ruby>心<rt>こころ</rt></ruby>が<ruby>元気<rt>げんき</rt></ruby>になる<ruby>一冊<rt>いっさつ</rt></ruby>です。",
+            "text_en": "Reading this book when fatigued by relationships or when struggling to find direction will revive one's affection for people and invigorate the spirit."
+          },
+          {
+            "id": 15,
+            "text_ja": "ユウと同年代の人にぜひ読んでほしいです。",
+            "ruby_html": "ユウと<ruby>同年代<rt>どうねんだい</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>にぜひ<ruby>読<rt>よ</rt></ruby>んでほしいです。",
+            "text_en": "I especially encourage people around Yuu's age to give it a read."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "number": 1,
+          "term": "主人公",
+          "meaning_ja": "小説などの中心人物",
+          "meaning_en": "Protagonist, central character of a story"
+        },
+        {
+          "number": 2,
+          "term": "エール",
+          "meaning_ja": "スポーツなどの試合で選手を応援するときの声・声援",
+          "meaning_en": "Cheer of support, encouragement"
+        },
+        {
+          "number": 3,
+          "term": "花言葉",
+          "meaning_ja": "一つ一つの花に意味を持たせたもの。バラは「愛」など",
+          "meaning_en": "Language of flowers (symbolic meaning assigned to each flower, e.g. roses for love)"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "関わり",
+          "reading": "かかわり",
+          "meaning": "relation, connection / 交往",
+          "type": "noun"
+        },
+        {
+          "term": "描く",
+          "reading": "えがく",
+          "meaning": "to describe, depict / 描写",
+          "type": "verb"
+        },
+        {
+          "term": "注目の",
+          "reading": "ちゅうもくの",
+          "meaning": "noteworthy, in focus / 备受瞩目的",
+          "type": "adjective"
+        },
+        {
+          "term": "純粋さ",
+          "reading": "じゅんすいさ",
+          "meaning": "purity, innocence / 纯真",
+          "type": "noun"
+        },
+        {
+          "term": "交換",
+          "reading": "こうかん",
+          "meaning": "exchange, swap / 交换",
+          "type": "noun"
+        },
+        {
+          "term": "事情",
+          "reading": "じじょう",
+          "meaning": "situation, circumstances / 事情原委",
+          "type": "noun"
+        },
+        {
+          "term": "元気づけられる",
+          "reading": "げんきづけられる",
+          "meaning": "to be encouraged, cheered up / 受到鼓舞",
+          "type": "verb"
+        },
+        {
+          "term": "人の役に立つ",
+          "reading": "ひとのやくにたつ",
+          "meaning": "to be useful/helpful to others / 对他人有帮助",
+          "type": "expression"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-51-1",
+          "questionNumber": 1,
+          "questionText_ja": "本文によると、山口しずかはどんな人だと書かれているか。",
+          "questionText_en": "According to the text, what kind of person is author Shizuka Yamaguchi?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "若い女性の作家",
+              "text_en": "A young female novelist"
+            },
+            {
+              "id": 2,
+              "text_ja": "自分のことを小説に書いた人",
+              "text_en": "A person who wrote novels about herself"
+            },
+            {
+              "id": 3,
+              "text_ja": "若者に人気がある作家",
+              "text_en": "An author who is popular among young people"
+            },
+            {
+              "id": 4,
+              "text_ja": "賞を受けたことのある人気の作家",
+              "text_en": "A popular author who has won an award"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "第2段落に「2012年に『一人』で小説最優秀賞を取った注目の女性作家です。若者の純粋さを、愛情を持って表現するところに人気があります」とあります。賞を受賞しており、人気がある作家であるため 4 が正解です。1は若者を描いているが作者自身が若いとは書かれておらず、3は若者に人気があるのではなく「若者の純粋さを表現するところに人気がある」点に注意が必要です。",
+          "explanation_en": "Paragraph 2 notes she won the grand novel award with 'Alone' in 2012 and enjoys popularity for her affectionate portrayal of youth's purity. Thus, Option 4 ('award-winning popular author') is correct."
+        },
+        {
+          "questionId": "q-51-2",
+          "questionNumber": 2,
+          "questionText_ja": "①事情を客にたずねます。とあるが、なぜか。",
+          "questionText_en": "Why does Yuu ask customers about their circumstances (①事情を客にたずねます)?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "何にも興味を持てなかったから。",
+              "text_en": "Because he was not interested in anything."
+            },
+            {
+              "id": 2,
+              "text_ja": "1輪だけ花を選ぶのは難しいから。",
+              "text_en": "Because picking out just a single flower is difficult."
+            },
+            {
+              "id": 3,
+              "text_ja": "ゲーム機と同じ値段の花がわからないから。",
+              "text_en": "Because he didn't know which flowers matched the value of a game console."
+            },
+            {
+              "id": 4,
+              "text_ja": "客がどの花がいいか選んでほしいと言うから。",
+              "text_en": "Because customers asked him to choose which flowers would be best."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "下線部①の直前に「客はみなユウに花を選んでほしいと言います。困ったユウは、どうしてその花を買いたいのか、だれのための花なのかなど、事情を客にたずねます」とあります。客から花を選んでほしいと頼まれて困ったため事情を聞いたので、4 が正解です。",
+          "explanation_en": "The text directly preceding ① states: 'Every customer asks Yuu to pick out flowers for them. Perplexed, Yuu inquires into their circumstances.' Thus, Option 4 is correct."
+        },
+        {
+          "questionId": "q-51-3",
+          "questionNumber": 3,
+          "questionText_ja": "②元気づけられるとあるが、なぜか。",
+          "questionText_en": "Why are readers cheered up and encouraged (②元気づけられる)?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "学校にも行かず仕事もしなかったユウが変わったことをしたから。",
+              "text_en": "Because Yuu, who had done neither school nor work, did something eccentric."
+            },
+            {
+              "id": 2,
+              "text_ja": "学校に行かなかったユウが学校に行くようになったから。",
+              "text_en": "Because Yuu, who hadn't attended school, began going to school again."
+            },
+            {
+              "id": 3,
+              "text_ja": "何事にも無関心だったユウが明るく強くなっていったから。",
+              "text_en": "Because Yuu, who was previously indifferent to everything, grew brighter and stronger."
+            },
+            {
+              "id": 4,
+              "text_ja": "仕事をしなかったユウがアルバイトを始めたから。",
+              "text_en": "Because Yuu, who was unemployed, started a part-time job."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "下線部②の直前に「何の喜びもない日々を送っていたユウが、働いて人の役に立つ中で明るく強くなっていく様子に、読者は元気づけられるでしょう」とあります。何事にも無関心で喜びがなかったユウの前向きな成長に励まされるため、3 が正解です。",
+          "explanation_en": "The sentence states: 'witnessing how Yuu, who had spent joyless days, grows cheerful and resilient through being useful to others, readers will surely feel uplifted.' Hence, Option 3 is correct."
+        },
+        {
+          "questionId": "q-51-4",
+          "questionNumber": 4,
+          "questionText_ja": "『花屋ダイヤリー』で作者が読者に一番伝えたいことは何か。",
+          "questionText_en": "What is the primary message the author wishes to convey to readers in 'Florist Diary'?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "人は人の中で働いて変わっていけるということ",
+              "text_en": "That people can change for the better by working among others"
+            },
+            {
+              "id": 2,
+              "text_ja": "たくさんの花には花言葉があるということ",
+              "text_en": "That countless flowers carry distinct meanings in the language of flowers"
+            },
+            {
+              "id": 3,
+              "text_ja": "ユウが何の喜びもない日々を送っていること",
+              "text_en": "That Yuu spends days devoid of any happiness"
+            },
+            {
+              "id": 4,
+              "text_ja": "だれかに花を贈るときに役に立つということ",
+              "text_en": "That it is helpful when giving flowers to someone"
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "ユウが人との関わりや労働を通して「人との関係の大切さや働く意味」を学び、変わっていく物語であり、それが「作者から読者へのエール」と位置づけられています。人間が人との触れ合いや仕事を通じて前向きに変容していけることを伝えているため、1 が正解です。",
+          "explanation_en": "The book review highlights how Yuu discovers the worth of interpersonal ties and the purpose of work through helping people. This represents an inspiring cheer from the novelist, asserting that people can grow and transform by engaging and working with others. Thus, Option 1 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆本の紹介（『花屋ダイヤリー』）",
+        "text_ja": "小説の紹介文（ブックレビュー）では、「舞台・登場人物の境遇」「主人公の葛藤・変化」「作品の魅力や読者へのメッセージ」という三部構成を把握することが重要です。設問もこのストーリーラインとテーマに沿って出題されています。",
+        "text_en": "In book reviews, track the three-part progression: setting/character backdrop -> internal conflict and transformation -> overarching thematic message. All questions follow this trajectory.",
+        "structureLayout": [
+          {
+            "component": "作品概要・作者紹介",
+            "detail": "花屋が舞台。受賞作家・山口しずかによる、若者の純粋さを描く小説。",
+            "en": "Overview: Set in a flower shop, written by award-winning novelist Shizuka Yamaguchi."
+          },
+          {
+            "component": "あらすじと主人公の成長",
+            "detail": "17歳の無気力なユウが個性的な客との対話を通じて、働く意味と人との絆を学ぶ。",
+            "en": "Plot: 17-year-old Yuu transforms from listlessness to vitality through interactions with unique patrons."
+          },
+          {
+            "component": "おすすめの言葉・メッセージ",
+            "detail": "働くことで人は変われるというエール。同世代の若者におすすめの一冊。",
+            "en": "Takeaway: An encouraging message that people can grow through interpersonal connection."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "書評・紹介文では、「作者が一番伝えたいこと」は主人公の変化のプロセスとその背後にある人間的成長のテーマに着目して選びましょう。",
+        "point_en": "When asked about the book's core message, focus on the protagonist's emotional shift and the universal lesson drawn from their growth."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-52",
+      "pages": [
+        120,
+        121
+      ],
+      "problemNumber": 52,
+      "genre": "広告",
+      "genre_en": "Advertisement",
+      "genre_zh": "广告",
+      "title_ja": "問題52 広告（Sマート 割引セール）",
+      "title_en": "Problem 52: Advertisement (S-Mart Discount Sale)",
+      "title_zh": "问题52 广告（S超市 折扣特卖）",
+      "preReading": {
+        "question_ja": "スーパーやコンビニの割引券を使ったことがありますか。",
+        "question_en": "Have you ever used discount coupons at supermarkets or convenience stores?",
+        "question_zh": "你在超市或便利店用过打折券吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "Sマート（24hオープン）は近くて便利！",
+            "ruby_html": "Sマート（24hオープン）は<ruby>近<rt>ちか</rt></ruby>くて<ruby>便利<rt>べんり</rt></ruby>！",
+            "text_en": "S-Mart (open 24 hours) is close and convenient!"
+          },
+          {
+            "id": 2,
+            "text_ja": "6月のお得な割引セール！ 18時〜24時だけ！",
+            "ruby_html": "6<ruby>月<rt>がつ</rt></ruby>のお<ruby>得<rt>とく</rt></ruby>な<ruby>割引<rt>わりびき</rt></ruby>セール！ 18<ruby>時<rt>じ</rt></ruby>〜24<ruby>時<rt>じ</rt></ruby>だけ！",
+            "text_en": "Bargain discount sale in June! From 18:00 to 24:00 only!"
+          },
+          {
+            "id": 3,
+            "text_ja": "セール期間：2014年6月2日(月)〜6月28日(土)",
+            "ruby_html": "セール<ruby>期間<rt>きかん</rt></ruby>：2014<ruby>年<rt>ねん</rt></ruby>6<ruby>月<rt>がつ</rt></ruby>2<ruby>日<rt>にち</rt></ruby>(<ruby>月<rt>げつ</rt></ruby>)〜6<ruby>月<rt>がつ</rt></ruby>28<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>)",
+            "text_en": "Sale period: Monday, June 2, 2014 to Saturday, June 28."
+          },
+          {
+            "id": 4,
+            "text_ja": "＊下の割引券は切って、かならず商品と一緒にレジにお出しください！",
+            "ruby_html": "＊<ruby>下<rt>した</rt></ruby>の<ruby>割引券<rt>わりびきけん</rt></ruby>は<ruby>切<rt>き</rt></ruby>って、かならず<ruby>商品<rt>しょうひん</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>にレジにお<ruby>出<rt>だ</rt></ruby>しください！",
+            "text_en": "* Please cut out the coupons below and be sure to present them at the register along with the products!"
+          },
+          {
+            "id": 5,
+            "text_ja": "＊この広告はお一人様1枚限りとさせていただきます。",
+            "ruby_html": "＊この<ruby>広告<rt>こうこく</rt></ruby>はお<ruby>一人様<rt>ひとりさま</rt></ruby>1<ruby>枚<rt>まい</rt></ruby><ruby>限<rt>かぎ</rt></ruby>りとさせていただきます。",
+            "text_en": "* Limit one coupon flyer per customer."
+          },
+          {
+            "id": 6,
+            "text_ja": "＊割引券1枚につき商品1個が割引となります。",
+            "ruby_html": "＊<ruby>割引券<rt>わりびきけん</rt></ruby>1<ruby>枚<rt>まい</rt></ruby>につき<ruby>商品<rt>しょうひん</rt></ruby>1<ruby>個<rt>こ</rt></ruby>が<ruby>割引<rt>わりびき</rt></ruby>となります。",
+            "text_en": "* One coupon applies a discount to one single item."
+          },
+          {
+            "id": 7,
+            "text_ja": "＊お店によっては、商品がない場合もあります。",
+            "ruby_html": "＊お<ruby>店<rt>みせ</rt></ruby>によっては、<ruby>商品<rt>しょうひん</rt></ruby>がない<ruby>場合<rt>ばあい</rt></ruby>もあります。",
+            "text_en": "* Depending on the store, some items may not be in stock."
+          },
+          {
+            "id": 8,
+            "text_ja": "＊割引券が利用できるのは、18時〜24時です。",
+            "ruby_html": "＊<ruby>割引券<rt>わりびきけん</rt></ruby>が<ruby>利用<rt>りよう</rt></ruby>できるのは、18<ruby>時<rt>じ</rt></ruby>〜24<ruby>時<rt>じ</rt></ruby>です。",
+            "text_en": "* Coupons can only be used between 18:00 and 24:00."
+          },
+          {
+            "id": 9,
+            "text_ja": "【割引券一覧】2日(月)〜14日(土)：チョコレート（書かれた価格より30円引き）、ドーナッツ（書かれた価格より20円引き）。",
+            "ruby_html": "【<ruby>割引券<rt>わりびきけん</rt></ruby><ruby>一覧<rt>いちらん</rt></ruby>】2<ruby>日<rt>にち</rt></ruby>(<ruby>月<rt>げつ</rt></ruby>)〜14<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>)：チョコレート（<ruby>書<rt>か</rt></ruby>かれた<ruby>価格<rt>かかく</rt></ruby>より30<ruby>円引<rt>えんび</rt></ruby>き）、ドーナッツ（<ruby>書<rt>か</rt></ruby>かれた<ruby>価格<rt>かかく</rt></ruby>より20<ruby>円引<rt>えんび</rt></ruby>き）。",
+            "text_en": "[Coupon List] June 2 (Mon) - 14 (Sat): Chocolate (30 yen off marked price), Doughnuts (20 yen off marked price)."
+          },
+          {
+            "id": 10,
+            "text_ja": "15日(日)〜28日(土)：アイスクリーム（書かれた価格より20円引き）、ホットコーヒー（書かれた価格より30円引き）。",
+            "ruby_html": "15<ruby>日<rt>にち</rt></ruby>(<ruby>日<rt>にち</rt></ruby>)〜28<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>)：アイスクリーム（<ruby>書<rt>か</rt></ruby>かれた<ruby>価格<rt>かかく</rt></ruby>より20<ruby>円引<rt>えんび</rt></ruby>き）、ホットコーヒー（<ruby>書<rt>か</rt></ruby>かれた<ruby>価格<rt>かかく</rt></ruby>より30<ruby>円引<rt>えんび</rt></ruby>き）。",
+            "text_en": "June 15 (Sun) - 28 (Sat): Ice cream (20 yen off marked price), Hot coffee (30 yen off marked price)."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "お得な",
+          "reading": "おとくな",
+          "meaning": "a good bargain / 合算的",
+          "type": "na-adjective"
+        },
+        {
+          "term": "セール期間",
+          "reading": "せーるきかん",
+          "meaning": "period of a sale / 折扣优惠期间",
+          "type": "noun"
+        },
+        {
+          "term": "割引券",
+          "reading": "わりびきけん",
+          "meaning": "discount coupon / 打折券",
+          "type": "noun"
+        },
+        {
+          "term": "〜限り",
+          "reading": "〜かぎり",
+          "meaning": "restricted to ~, limited to ~ / 只限用〜",
+          "type": "suffix"
+        },
+        {
+          "term": "商品",
+          "reading": "しょうひん",
+          "meaning": "product, merchandise / 商品",
+          "type": "noun"
+        },
+        {
+          "term": "価格",
+          "reading": "かかく",
+          "meaning": "price / 价格",
+          "type": "noun"
+        },
+        {
+          "term": "〜円引き",
+          "reading": "〜えんびき",
+          "meaning": "discount of ~ yen / 便宜〜日元",
+          "type": "phrase"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-52-1",
+          "questionNumber": 1,
+          "questionText_ja": "アリさんは6月18日午後10時頃、この広告を1枚持ってコンビニに行った。アイスクリームを2個買った。アイスクリームは100円と書いてあった。いくら払ったか。",
+          "questionText_en": "Around 10:00 PM on June 18, Ali went to the convenience store with one copy of this advertisement. He bought two ice creams. The price tag on the ice cream was 100 yen. How much did he pay?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "200円",
+              "text_en": "200 yen"
+            },
+            {
+              "id": 2,
+              "text_ja": "180円",
+              "text_en": "180 yen"
+            },
+            {
+              "id": 3,
+              "text_ja": "160円",
+              "text_en": "160 yen"
+            },
+            {
+              "id": 4,
+              "text_ja": "140円",
+              "text_en": "140 yen"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "6月18日はアイスクリームの割引期間（15日〜28日）内であり、午後10時（22時）は割引券が使える時間（18時〜24時）です。ただし、広告には「割引券1枚につき商品1個が割引となります」「お一人様1枚限り」と書かれているため、2個のうち割引（20円引き）されるのは1個だけです。したがって、(100 - 20) + 100 = 180円 となり、正解は 2 です。",
+          "explanation_en": "June 18 falls within the ice cream discount window (June 15–28), and 10:00 PM (22:00) is within the eligible hours (18:00–24:00). However, the rules specify that only one coupon is allowed per customer and one coupon applies to only one item. Thus, only one ice cream receives the 20-yen discount (100 - 20 = 80 yen), and the second is charged at the regular 100 yen. Total: 80 + 100 = 180 yen. Therefore, Option 2 is correct."
+        },
+        {
+          "questionId": "q-52-2",
+          "questionNumber": 2,
+          "questionText_ja": "ドーナッツを安く買いたい。この広告を持って、いつ買いに行けばよいか。",
+          "questionText_en": "You want to buy doughnuts at a discount. When should you take this advertisement and go shopping?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "6月10日 午前10時ごろ",
+              "text_en": "Around 10:00 AM on June 10"
+            },
+            {
+              "id": 2,
+              "text_ja": "6月12日 午後10時ごろ",
+              "text_en": "Around 10:00 PM on June 12"
+            },
+            {
+              "id": 3,
+              "text_ja": "6月16日 午前8時ごろ",
+              "text_en": "Around 8:00 AM on June 16"
+            },
+            {
+              "id": 4,
+              "text_ja": "6月20日 午後8時ごろ",
+              "text_en": "Around 8:00 PM on June 20"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "ドーナッツの割引期間は「2日(月)〜14日(土)」です。また、割引券が利用できる時間帯は「18時〜24時」に限られています。選択肢2「6月12日 午後10時ごろ」は期間内（2日〜14日の間）かつ時間内（22時は18時〜24時の間）であるため条件を完全に満たしています。したがって 2 が正解です。",
+          "explanation_en": "The discount period for doughnuts is June 2 (Mon) to June 14 (Sat), and the valid coupon usage hours are 18:00 to 24:00. Option 2 ('Around 10:00 PM on June 12') falls within the June 2–14 period and within the 18:00–24:00 time frame (22:00). Therefore, Option 2 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆情報検索（Sマート 割引セール）",
+        "text_ja": "情報検索問題の基本は、質問文の条件（日付・時間・対象商品・数量）を明確にし、広告の条件枠（対象期間、利用可能時間、使用制限事項）と照らし合わせることです。特に「1枚につき1個」「お一人様1枚限り」などの注記（米印・アスタリスク）を見落とさないようにしましょう。",
+        "text_en": "The key to information retrieval tasks is identifying the question's criteria (date, time, item, quantity) and checking against limitations (valid periods, hours, coupon restrictions like '1 per person' and '1 discount per coupon'). Always inspect asterisked notes carefully.",
+        "structureLayout": [
+          {
+            "component": "基本情報",
+            "detail": "セール期間：6月2日〜28日、利用可能時間：18時〜24時",
+            "en": "Basic info: Sale period June 2–28, usable 18:00–24:00."
+          },
+          {
+            "component": "利用制限",
+            "detail": "1人1枚限り、1枚につき1個割引",
+            "en": "Restrictions: Limit 1 coupon per customer, 1 item discounted per coupon."
+          },
+          {
+            "component": "商品別期間",
+            "detail": "チョコ・ドーナツ（2日〜14日）、アイス・コーヒー（15日〜28日）",
+            "en": "Item dates: Chocolate & Donuts (2nd–14th), Ice cream & Coffee (15th–28th)."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "数量と制限に注意！2個買っても割引券が1枚なら、引かれるのは1個分のみです。",
+        "point_en": "Watch quantity vs. restrictions! Buying two items with one coupon means only one item gets discounted."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-53",
+      "pages": [
+        122,
+        123
+      ],
+      "problemNumber": 53,
+      "genre": "求人広告",
+      "genre_en": "Job Recruitment Ad",
+      "genre_zh": "招聘广告",
+      "title_ja": "問題53 求人広告（すしの吉野 求人募集）",
+      "title_en": "Problem 53: Job Recruitment Ad (Sushi Yoshino Staff Wanted)",
+      "title_zh": "问题53 招聘广告（吉野寿司 招募兼职）",
+      "preReading": {
+        "question_ja": "日本でアルバイトを探すとき、どんな条件を重視しますか。",
+        "question_en": "What conditions do you focus on when looking for a part-time job in Japan?",
+        "question_zh": "在日本找兼职时，你最看重哪些条件？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章は求人募集広告である。右の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The following text is a job recruitment advertisement. Answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "一緒にすし屋で働きませんか！ アルバイト大募集！",
+            "ruby_html": "<ruby>一緒<rt>いっしょ</rt></ruby>にすし<ruby>屋<rt>や</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>きませんか！ アルバイト<ruby>大募集<rt>だいぼしゅう</rt></ruby>！",
+            "text_en": "Won't you work with us at a sushi restaurant? Hiring part-time staff now!"
+          },
+          {
+            "id": 2,
+            "text_ja": "職種：調理の手伝い",
+            "ruby_html": "<ruby>職種<rt>しょくしゅ</rt></ruby>：<ruby>調理<rt>ちょうり</rt></ruby>の<ruby>手伝<rt>てつだ</rt></ruby>い",
+            "text_en": "Job type: Cooking assistant / kitchen help."
+          },
+          {
+            "id": 3,
+            "text_ja": "勤務時間・給与：①8:00-15:00 時給900円、②15:00-24:00 時給1,000円（時給は経験を考慮）。",
+            "ruby_html": "<ruby>勤務時間<rt>きんむじかん</rt></ruby>・<ruby>給与<rt>きゅうよ</rt></ruby>：①8:00-15:00 <ruby>時給<rt>じきゅう</rt></ruby>900<ruby>円<rt>えん</rt></ruby>、②15:00-24:00 <ruby>時給<rt>じきゅう</rt></ruby>1,000<ruby>円<rt>えん</rt></ruby>（<ruby>時給<rt>じきゅう</rt></ruby>は<ruby>経験<rt>けいけん</rt></ruby>を<ruby>考慮<rt>こうりょ</rt></ruby>）。",
+            "text_en": "Working hours & wages: (1) 8:00–15:00: 900 yen/hour; (2) 15:00–24:00: 1,000 yen/hour (experience taken into consideration)."
+          },
+          {
+            "id": 4,
+            "text_ja": "＊週2日、1日5時間以上働ける方。",
+            "ruby_html": "＊<ruby>週<rt>しゅう</rt></ruby>2<ruby>日<rt>にち</rt></ruby>、1<ruby>日<rt>にち</rt></ruby>5<ruby>時間以上<rt>じかんいじょう</rt></ruby><ruby>働<rt>はたら</rt></ruby>ける<ruby>方<rt>かた</rt></ruby>。",
+            "text_en": "* Those who can work at least 2 days a week and at least 5 hours a day."
+          },
+          {
+            "id": 5,
+            "text_ja": "＊曜日、時間は相談に応じます。",
+            "ruby_html": "＊<ruby>曜日<rt>ようび</rt></ruby>、<ruby>時間<rt>じかん</rt></ruby>は<ruby>相談<rt>そうだん</rt></ruby>に<ruby>応<rt>おう</rt></ruby>じます。",
+            "text_en": "* Days and hours negotiable upon consultation."
+          },
+          {
+            "id": 6,
+            "text_ja": "＊経験のない方もOK！",
+            "ruby_html": "＊<ruby>経験<rt>けいけん</rt></ruby>のない<ruby>方<rt>かた</rt></ruby>もOK！",
+            "text_en": "* People with no experience are welcome!"
+          },
+          {
+            "id": 7,
+            "text_ja": "＊主婦・学生の方歓迎。（高校生は不可）",
+            "ruby_html": "＊<ruby>主婦<rt>しゅふ</rt></ruby>・<ruby>学生<rt>がくせい</rt></ruby>の<ruby>方歓迎<rt>かたかんげい</rt></ruby>。（<ruby>高校生<rt>こうこうせい</rt></ruby>は<ruby>不可<rt>ふか</rt></ruby>）",
+            "text_en": "* Homemakers and students welcome. (High school students not accepted)"
+          },
+          {
+            "id": 8,
+            "text_ja": "少しでも興味ある方はお電話ください！",
+            "ruby_html": "<ruby>少<rt>すこ</rt></ruby>しでも<ruby>興味<rt>きょうみ</rt></ruby>ある<ruby>方<rt>かた</rt></ruby>はお<ruby>電話<rt>でんわ</rt></ruby>ください！",
+            "text_en": "If you are interested at all, please give us a call!"
+          },
+          {
+            "id": 9,
+            "text_ja": "応募方法：お電話の上、履歴書（写真付）を持って面接にお越しください。",
+            "ruby_html": "<ruby>応募方法<rt>おうぼほうほう</rt></ruby>：お<ruby>電話<rt>でんわ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>、<ruby>履歴書<rt>りれきしょ</rt></ruby>（<ruby>写真付<rt>しゃしんつき</rt></ruby>）を<ruby>持<rt>も</rt></ruby>って<ruby>面接<rt>めんせつ</rt></ruby>にお<ruby>越<rt>こ</rt></ruby>しください。",
+            "text_en": "Application procedure: Please call first, then come for an interview bringing a resume with photo attached."
+          },
+          {
+            "id": 10,
+            "text_ja": "勤務地・連絡先：A市山田町 2-2-1 すしの吉野（山田店） TEL: 1111-3333",
+            "ruby_html": "<ruby>勤務地<rt>きんむち</rt></ruby>・<ruby>連絡先<rt>れんらくさき</rt></ruby>：A<ruby>市<rt>し</rt></ruby><ruby>山田町<rt>やまだちょう</rt></ruby> 2-2-1 すしの<ruby>吉野<rt>よしの</rt></ruby>（<ruby>山田店<rt>やまだてん</rt></ruby>） TEL: 1111-3333",
+            "text_en": "Work location & contact: 2-2-1 Yamada-cho, City A; Sushi Yoshino (Yamada Branch) TEL: 1111-3333."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "職種",
+          "meaning_ja": "職業の種類",
+          "meaning_en": "job category / type of occupation"
+        },
+        {
+          "label": "注2",
+          "term": "考慮",
+          "meaning_ja": "よく考えること",
+          "meaning_en": "taking into consideration, careful thought"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "募集",
+          "reading": "ぼしゅう",
+          "meaning": "recruitment / 招募",
+          "type": "noun"
+        },
+        {
+          "term": "勤務",
+          "reading": "きんむ",
+          "meaning": "service, duty, work / 工作",
+          "type": "noun"
+        },
+        {
+          "term": "給与",
+          "reading": "きゅうよ",
+          "meaning": "salary, pay / 薪水",
+          "type": "noun"
+        },
+        {
+          "term": "時給",
+          "reading": "じきゅう",
+          "meaning": "hourly wage / 时薪",
+          "type": "noun"
+        },
+        {
+          "term": "歓迎",
+          "reading": "かんげい",
+          "meaning": "[be] welcome / 欢迎",
+          "type": "noun"
+        },
+        {
+          "term": "応募",
+          "reading": "おうぼ",
+          "meaning": "application, applying / 应聘",
+          "type": "noun"
+        },
+        {
+          "term": "履歴書",
+          "reading": "りれきしょ",
+          "meaning": "résumé, CV / 简历",
+          "type": "noun"
+        },
+        {
+          "term": "面接",
+          "reading": "めんせつ",
+          "meaning": "interview / 面试",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-53-1",
+          "questionNumber": 1,
+          "questionText_ja": "ホンさんは、火・木・金曜日に夕方5時から夜10時まで働くことになった。1週間で給料がいくらもらえるか。",
+          "questionText_en": "Hong ended up working on Tuesdays, Thursdays, and Fridays from 5:00 PM to 10:00 PM. How much wage will he receive in one week?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "9,000円",
+              "text_en": "9,000 yen"
+            },
+            {
+              "id": 2,
+              "text_ja": "9,500円",
+              "text_en": "9,500 yen"
+            },
+            {
+              "id": 3,
+              "text_ja": "13,500円",
+              "text_en": "13,500 yen"
+            },
+            {
+              "id": 4,
+              "text_ja": "15,000円",
+              "text_en": "15,000 yen"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "夕方5時（17:00）から夜10時（22:00）までは1日あたり5時間です。この時間帯は「②15:00-24:00 時給1,000円」に該当します。1日あたり 5時間 × 1,000円 ＝ 5,000円 となります。火・木・金の週3日勤務するため、1週間で 5,000円 × 3日 ＝ 15,000円 となります。したがって 4 が正解です。",
+          "explanation_en": "From 5:00 PM (17:00) to 10:00 PM (22:00) is 5 hours per day. This falls under shift (2) 15:00–24:00 where hourly wage is 1,000 yen. Daily pay is 5 hours * 1,000 yen = 5,000 yen. Working 3 days a week (Tue, Thu, Fri), weekly pay is 5,000 yen * 3 = 15,000 yen. Therefore, Option 4 is correct."
+        },
+        {
+          "questionId": "q-53-2",
+          "questionNumber": 2,
+          "questionText_ja": "このすし屋で働ける人はだれか。",
+          "questionText_en": "Who can work at this sushi restaurant?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "経験がある主婦。月曜日と火曜日に9時から12時まで働ける。",
+              "text_en": "An experienced homemaker who can work Mondays and Tuesdays from 9:00 to 12:00."
+            },
+            {
+              "id": 2,
+              "text_ja": "経験がない大学生。水曜日に午後6時から午後11時まで働ける。",
+              "text_en": "A college student without experience who can work Wednesdays from 6:00 PM to 11:00 PM."
+            },
+            {
+              "id": 3,
+              "text_ja": "経験がある高校生。火曜日と木曜日に午後3時から午後9時まで働ける。",
+              "text_en": "An experienced high school student who can work Tuesdays and Thursdays from 3:00 PM to 9:00 PM."
+            },
+            {
+              "id": 4,
+              "text_ja": "経験がない大学生。水曜日と土曜日に午後5時から夜10時まで働ける。",
+              "text_en": "A college student without experience who can work Wednesdays and Saturdays from 5:00 PM to 10:00 PM."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "応募条件は「週2日、1日5時間以上働ける方」「経験のない方もOK」「主婦・学生の方歓迎（高校生は不可）」です。\n1: 9時から12時は3時間で、「1日5時間以上」を満たしません。\n2: 水曜日のみ（週1日）で、「週2日以上」を満たしません。\n3: 高校生は「高校生は不可」により働けません。\n4: 週2日（水・土）、1日5時間（17:00〜22:00）、大学生で未経験OKの条件をすべて満たしています。したがって 4 が正解です。",
+          "explanation_en": "The requirements are: 'at least 2 days a week, at least 5 hours a day', 'no experience necessary', and 'homemakers and students welcome (high school students not permitted)'.\nOption 1: 9:00 to 12:00 is only 3 hours (< 5 hours).\nOption 2: Wednesdays only is just 1 day (< 2 days).\nOption 3: High school students are disqualified.\nOption 4: 2 days a week (Wed/Sat), 5 hours a day (17:00–22:00), student, no experience needed—meets all criteria! Therefore, Option 4 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆求人広告（すしの吉野 求人募集）",
+        "text_ja": "求人広告では、勤務条件（日数・時間帯・時給）の掛け算計算問題と、応募資格（対象者・除外対象・経験不問など）のフィルタリング問題が頻出します。カッコ書きの「高校生は不可」のような除外条件に特に注意しましょう。",
+        "text_en": "In job advertisement problems, calculation of weekly wages based on shifts and hourly rates is common, alongside qualification verification (minimum hours/days, prohibited applicants like high schoolers). Look out for exclusions in parentheses.",
+        "structureLayout": [
+          {
+            "component": "勤務シフト",
+            "detail": "①8:00-15:00（時給900円）、②15:00-24:00（時給1,000円）",
+            "en": "Shifts: (1) 8:00–15:00 (900 yen/hr), (2) 15:00–24:00 (1,000 yen/hr)."
+          },
+          {
+            "component": "応募要件",
+            "detail": "週2日・1日5時間以上、未経験可、高校生不可",
+            "en": "Requirements: >=2 days/wk, >=5 hrs/day, unexperienced OK, no high schoolers."
+          },
+          {
+            "component": "応募手順",
+            "detail": "電話のうえ、写真付き履歴書持参で面接",
+            "en": "Procedure: Call in advance, attend interview with photo résumé."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "シフトごとの時給の違いと、1日の実働時間を正しく計算しましょう。",
+        "point_en": "Make sure to match the exact shift hour rate to the actual daily hours worked."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-54",
+      "pages": [
+        124,
+        125
+      ],
+      "problemNumber": 54,
+      "genre": "広告",
+      "genre_en": "Real Estate Listing",
+      "genre_zh": "租房广告",
+      "title_ja": "問題54 広告（アパート「マイハウスネット」）",
+      "title_en": "Problem 54: Real Estate Listing (Apartment 'My House Net')",
+      "title_zh": "问题54 租房广告（公寓“My House Net”）",
+      "preReading": {
+        "question_ja": "アパートを借りるとき、家賃以外にどんな費用がかかるか知っていますか。",
+        "question_en": "Do you know what expenses are required besides monthly rent when renting an apartment?",
+        "question_zh": "租公寓时，除了房租之外还需要哪些费用，你知道吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "アパート情報サイト「マイハウスネット」（20XX年3月現在）",
+            "ruby_html": "アパート<ruby>情報<rt>じょうほう</rt></ruby>サイト「マイハウスネット」（20XX<ruby>年<rt>ねん</rt></ruby>3<ruby>月現在<rt>がつげんざい</rt></ruby>）",
+            "text_en": "Apartment Information Website 'My House Net' (As of March 20XX)"
+          },
+          {
+            "id": 2,
+            "text_ja": "中山田駅 徒歩3分、アパート 築10年、家賃 30,000円、敷金／礼金 1か月／1か月、ワンルーム 19.84m²。",
+            "ruby_html": "<ruby>中山田駅<rt>なかやまだえき</rt></ruby> <ruby>徒歩<rt>とほ</rt></ruby>3<ruby>分<rt>ふん</rt></ruby>、アパート <ruby>築<rt>ちく</rt></ruby>10<ruby>年<rt>ねん</rt></ruby>、<ruby>家賃<rt>やちん</rt></ruby> 30,000<ruby>円<rt>えん</rt></ruby>、<ruby>敷金<rt>しききん</rt></ruby>／<ruby>礼金<rt>れいきん</rt></ruby> 1か<ruby>月<rt>げつ</rt></ruby>／1か<ruby>月<rt>げつ</rt></ruby>、ワンルーム 19.84m²。",
+            "text_en": "Nakayamada Station 3 min walk; Apartment 10 years old; Rent 30,000 yen; Security deposit / Key money: 1 month / 1 month; Studio 19.84 m²."
+          },
+          {
+            "id": 3,
+            "text_ja": "・南向き ・5階建ての2階 ・スーパーまで400m",
+            "ruby_html": "・<ruby>南向<rt>みなみむ</rt></ruby>き ・5<ruby>階建<rt>かいだ</rt></ruby>ての2<ruby>階<rt>かい</rt></ruby> ・スーパーまで400m",
+            "text_en": "- South-facing - 2nd floor of a 5-story building - 400m to supermarket"
+          },
+          {
+            "id": 4,
+            "text_ja": "・手数料無料！ 契約時には家賃1か月分と敷金・礼金各1か月分だけでOK！",
+            "ruby_html": "・<ruby>手数料無料<rt>てすうりょうむりょう</rt></ruby>！ <ruby>契約時<rt>けいやくじ</rt></ruby>には<ruby>家賃<rt>やちん</rt></ruby>1か<ruby>月分<rt>げつぶん</rt></ruby>と<ruby>敷金<rt>しききん</rt></ruby>・<ruby>礼金<rt>れいきん</rt></ruby><ruby>各<rt>かく</rt></ruby>1か<ruby>月分<rt>げつぶん</rt></ruby>だけでOK！",
+            "text_en": "- No brokerage commission! At contract signing, only 1 month's rent plus 1 month each of security deposit and key money is required!"
+          },
+          {
+            "id": 5,
+            "text_ja": "・ペットは相談可！",
+            "ruby_html": "・ペットは<ruby>相談可<rt>そうだんか</rt></ruby>！",
+            "text_en": "- Pets allowed upon consultation!"
+          },
+          {
+            "id": 6,
+            "text_ja": "間取り図：北側に玄関・浴室・トイレ、洋室19.84m²（収納あり）、南側にベランダ。",
+            "ruby_html": "<ruby>間取<rt>まと</rt></ruby>り<ruby>図<rt>ず</rt></ruby>：<ruby>北側<rt>きたがわ</rt></ruby>に<ruby>玄関<rt>げんかん</rt></ruby>・<ruby>浴室<rt>よくしつ</rt></ruby>・トイレ、<ruby>洋室<rt>ようしつ</rt></ruby>19.84m²（<ruby>収納<rt>しゅうのう</rt></ruby>あり）、<ruby>南側<rt>みなみがわ</rt></ruby>にベランダ。",
+            "text_en": "Floor layout: North side has front entrance, bath, and toilet; Western-style room 19.84 m² (with closet); South side has veranda."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "敷金",
+          "meaning_ja": "アパートを契約するときに、保証金として大家さんに預けるお金",
+          "meaning_en": "security deposit deposited with landlord when contracting an apartment"
+        },
+        {
+          "label": "注2",
+          "term": "礼金",
+          "meaning_ja": "アパートを契約するときに、お礼として大家さんに支払うお金",
+          "meaning_en": "gratuity fee (key money) paid to landlord upon contracting"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "徒歩",
+          "reading": "とほ",
+          "meaning": "on foot, walking / 徒步",
+          "type": "noun"
+        },
+        {
+          "term": "築",
+          "reading": "ちく",
+          "meaning": "built in [year], building age / 建造（年数）",
+          "type": "noun"
+        },
+        {
+          "term": "家賃",
+          "reading": "やちん",
+          "meaning": "[apartment] rent / 房租",
+          "type": "noun"
+        },
+        {
+          "term": "ワンルーム",
+          "reading": "わんるーむ",
+          "meaning": "single-room studio apartment / 单间公寓",
+          "type": "noun"
+        },
+        {
+          "term": "〜向き",
+          "reading": "〜むき",
+          "meaning": "facing ~ / 朝向〜",
+          "type": "suffix"
+        },
+        {
+          "term": "契約",
+          "reading": "けいやく",
+          "meaning": "contract, lease / 合同",
+          "type": "noun"
+        },
+        {
+          "term": "玄関",
+          "reading": "げんかん",
+          "meaning": "front entrance, doorway / 房门、玄关",
+          "type": "noun"
+        },
+        {
+          "term": "浴室",
+          "reading": "よくしつ",
+          "meaning": "washroom, bathroom / 浴室",
+          "type": "noun"
+        },
+        {
+          "term": "収納",
+          "reading": "しゅうのう",
+          "meaning": "storage area, closet / 储物间、收纳",
+          "type": "noun"
+        },
+        {
+          "term": "ベランダ",
+          "reading": "べらんだ",
+          "meaning": "veranda, balcony / 阳台",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-54-1",
+          "questionNumber": 1,
+          "questionText_ja": "契約するときにいくら必要か。",
+          "questionText_en": "How much money is required upon signing the contract?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "3万円",
+              "text_en": "30,000 yen"
+            },
+            {
+              "id": 2,
+              "text_ja": "3万5千円",
+              "text_en": "35,000 yen"
+            },
+            {
+              "id": 3,
+              "text_ja": "9万円",
+              "text_en": "90,000 yen"
+            },
+            {
+              "id": 4,
+              "text_ja": "9万5千円",
+              "text_en": "95,000 yen"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "広告に「手数料無料！ 契約時には家賃1か月分と敷金・礼金各1か月分だけでOK！」と書かれています。家賃は30,000円、敷金は1か月分（30,000円）、礼金も1か月分（30,000円）です。手数料は無料なので、合計は 30,000 ＋ 30,000 ＋ 30,000 ＝ 90,000円（9万円）となります。したがって 3 が正解です。",
+          "explanation_en": "The listing states: 'No fees! At contract signing, only 1 month of rent and 1 month each of security deposit and key money are needed!' Rent is 30,000 yen, security deposit is 1 month (30,000 yen), and key money is 1 month (30,000 yen). With no brokerage fee, the total is 30,000 + 30,000 + 30,000 = 90,000 yen (9万円). Therefore, Option 3 is correct."
+        },
+        {
+          "questionId": "q-54-2",
+          "questionNumber": 2,
+          "questionText_ja": "このアパートの説明として本文の内容と合っているものはどれか。",
+          "questionText_en": "Which statement correctly matches the content of the text as a description of this apartment?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "部屋は5階にある。",
+              "text_en": "The room is on the 5th floor."
+            },
+            {
+              "id": 2,
+              "text_ja": "ベランダは南側にある。",
+              "text_en": "The veranda is on the south side."
+            },
+            {
+              "id": 3,
+              "text_ja": "犬を飼うことはできない。",
+              "text_en": "You cannot keep a dog."
+            },
+            {
+              "id": 4,
+              "text_ja": "部屋にお風呂がない。",
+              "text_en": "There is no bathtub/bath in the apartment."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "間取り図の方位マーク（矢印が北）と部屋の南向きという記述から、ベランダは南側に位置しています。したがって 2 が正解です。\n1: 「5階建ての2階」なので、部屋は2階です。\n3: 「ペットは相談可」とあるため、飼うことができないわけではありません。\n4: 間取り図に「浴室」が明記されています。",
+          "explanation_en": "Based on the north arrow in the floor plan and the note '南向き' (south-facing), the veranda is situated on the south side. Therefore, Option 2 is correct.\nOption 1: It is on the 2nd floor of a 5-story building.\nOption 3: 'Pets negotiable' means keeping a pet may be permitted.\nOption 4: The floor plan clearly includes a bathroom (浴室)."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆広告（アパート「マイハウスネット」）",
+        "text_ja": "不動産広告の問題では、初期費用（家賃＋敷金＋礼金＋仲介手数料等）の内訳合算と、間取り図の方角（方位記号N）・設備表示を照合する読解力が試されます。",
+        "text_en": "Real estate listing questions test your ability to tally move-in initial costs (rent, deposit, key money, agency fees) and interpret floor plan orientation (North marker) and amenities.",
+        "structureLayout": [
+          {
+            "component": "物件概要",
+            "detail": "中山田駅徒歩3分、築10年、家賃3万円、5階建ての2階",
+            "en": "Property: 3 min walk to station, 10 yrs old, rent 30k yen, 2nd floor of 5."
+          },
+          {
+            "component": "初期費用",
+            "detail": "家賃1か月分＋敷金1か月分＋礼金1か月分（手数料無料）＝9万円",
+            "en": "Initial cost: 1 mo rent + 1 mo deposit + 1 mo key money (no commission) = 90k yen."
+          },
+          {
+            "component": "間取り・条件",
+            "detail": "ワンルーム19.84m²、南向きベランダ、浴室あり、ペット相談可",
+            "en": "Layout: 19.84m² studio, south veranda, bath included, pets negotiable."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "間取り図の方位記号（Nの矢印）を確認し、部屋の開口部（ベランダや窓）がどの方角を向いているか把握しましょう。",
+        "point_en": "Check the orientation compass (arrow pointing North) to determine which cardinal direction windows and verandas face."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-55",
+      "pages": [
+        126,
+        127
+      ],
+      "problemNumber": 55,
+      "genre": "パンフレット",
+      "genre_en": "Pamphlet",
+      "genre_zh": "传单",
+      "title_ja": "問題55 パンフレット（文化カフェ講座案内）",
+      "title_en": "Problem 55: Pamphlet (Culture Cafe Course Guide)",
+      "title_zh": "问题55 宣传册（文化咖啡馆讲座指南）",
+      "preReading": {
+        "question_ja": "地域の文化センターやサークルの講座に参加したことがありますか。",
+        "question_en": "Have you ever taken part in community center or club culture courses?",
+        "question_zh": "你参加过社区文化中心或社团的课程吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "右のページの文章は文化講座の案内パンフレットである。これを読んで下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The text on the right page is an information pamphlet for culture courses. Read it and answer the questions below. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "「文化カフェ」http://bunkacafe.com お茶を飲みながらいろいろな国の文化について語り合いませんか？",
+            "ruby_html": "「<ruby>文化<rt>ぶんか</rt></ruby>カフェ」http://bunkacafe.com お<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みながらいろいろな<ruby>国<rt>くに</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>について<ruby>語<rt>かた</rt></ruby>り<ruby>合<rt>あ</rt></ruby>いませんか？",
+            "text_en": "'Culture Cafe' http://bunkacafe.com Won't you talk about various world cultures while having tea?"
+          },
+          {
+            "id": 2,
+            "text_ja": "★語学クラス★ ①「日本語」毎週月曜 15:00-16:30 ②「アラビア語」毎週水曜 19:00-20:30 ③「中国語」第4週の日曜日 14:00-15:30",
+            "ruby_html": "★<ruby>語学<rt>ごがく</rt></ruby>クラス★ ①「<ruby>日本語<rt>にほんご</rt></ruby>」<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>月曜<rt>げつよう</rt></ruby> 15:00-16:30 ②「アラビア<ruby>語<rt>ご</rt></ruby>」<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>水曜<rt>すいよう</rt></ruby> 19:00-20:30 ③「<ruby>中国語<rt>ちゅうごくご</rt></ruby>」<ruby>第<rt>だい</rt></ruby>4<ruby>週<rt>しゅう</rt></ruby>の<ruby>日曜日<rt>にちようび</rt></ruby> 14:00-15:30",
+            "text_en": "Language classes: (1) Japanese: Mondays 15:00-16:30; (2) Arabic: Wednesdays 19:00-20:30; (3) Chinese: 4th Sunday 14:00-15:30."
+          },
+          {
+            "id": 3,
+            "text_ja": "★日本文化クラス★ ④「お茶クラス」…第4日曜日 15:00〜17:00 茶道を習ったり、和菓子を食べたり、お茶に関係することについて学びます。",
+            "ruby_html": "★<ruby>日本文化<rt>にほんぶんか</rt></ruby>クラス★ ④「お<ruby>茶<rt>ちゃ</rt></ruby>クラス」…<ruby>第<rt>だい</rt></ruby>4<ruby>日曜日<rt>にちようび</rt></ruby> 15:00〜17:00 <ruby>茶道<rt>さどう</rt></ruby>を<ruby>習<rt>なら</rt></ruby>ったり、<ruby>和菓子<rt>わがし</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたり、お<ruby>茶<rt>ちゃ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>することについて<ruby>学<rt>まな</rt></ruby>びます。",
+            "text_en": "Japanese culture classes: (4) Tea ceremony class: 4th Sunday 15:00-17:00 (learn tea ceremony, eat Japanese sweets, and study tea-related culture)."
+          },
+          {
+            "id": 4,
+            "text_ja": "⑤「京都クラス」…月1回程度 京都のお寺や料理、京都についての情報を交換する。",
+            "ruby_html": "⑤「<ruby>京都<rt>きょうと</rt></ruby>クラス」…<ruby>月<rt>つき</rt></ruby>1<ruby>回程度<rt>かいていど</rt></ruby> <ruby>京都<rt>きょうと</rt></ruby>のお<ruby>寺<rt>てら</rt></ruby>や<ruby>料理<rt>りょうり</rt></ruby>、<ruby>京都<rt>きょうと</rt></ruby>についての<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>交換<rt>こうかん</rt></ruby>する。",
+            "text_en": "(5) Kyoto class: About once a month (exchange information about Kyoto's temples, cuisine, and culture)."
+          },
+          {
+            "id": 5,
+            "text_ja": "⑥「日本ポップカルチャークラス」…月1回程度 日本のアニメやJ-ポップなどいろいろな日本文化について学びおしゃべりする",
+            "ruby_html": "⑥「<ruby>日本<rt>にほん</rt></ruby>ポップカルチャークラス」…<ruby>月<rt>つき</rt></ruby>1<ruby>回程度<rt>かいていど</rt></ruby> <ruby>日本<rt>にほん</rt></ruby>のアニメやJ-ポップなどいろいろな<ruby>日本文化<rt>にほんぶんか</rt></ruby>について<ruby>学<rt>まな</rt></ruby>びおしゃべりする",
+            "text_en": "(6) Japanese pop culture class: About once a month (chat and learn about Japanese pop culture like anime and J-pop)."
+          },
+          {
+            "id": 6,
+            "text_ja": "★イベント★ ⑦「世界の料理教室」…年数回 …いろいろな国の料理を一緒に作って食べます♪",
+            "ruby_html": "★イベント★ ⑦「<ruby>世界<rt>せかい</rt></ruby>の<ruby>料理教室<rt>りょうりきょうしつ</rt></ruby>」…<ruby>年数回<rt>ねんすうかい</rt></ruby> …いろいろな<ruby>国<rt>くに</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>作<rt>つく</rt></ruby>って<ruby>食<rt>た</rt></ruby>べます♪",
+            "text_en": "Events: (7) World cooking class: Several times a year (cook and eat food from various countries together)."
+          },
+          {
+            "id": 7,
+            "text_ja": "☆料金（「文化カフェ」の会員は500円割引） 語学クラス 1回 2,000円、日本文化クラス 1回 1,500円",
+            "ruby_html": "☆<ruby>料金<rt>りょうきん</rt></ruby>（「<ruby>文化<rt>ぶんか</rt></ruby>カフェ」の<ruby>会員<rt>かいいん</rt></ruby>は500<ruby>円割引<rt>えんわりびき</rt></ruby>） <ruby>語学<rt>ごがく</rt></ruby>クラス 1<ruby>回<rt>かい</rt></ruby> 2,000<ruby>円<rt>えん</rt></ruby>、<ruby>日本文化<rt>にほんぶんか</rt></ruby>クラス 1<ruby>回<rt>かい</rt></ruby> 1,500<ruby>円<rt>えん</rt></ruby>",
+            "text_en": "Fee (Culture Cafe members get a 500 yen discount): Language classes: 2,000 yen/session; Japanese culture classes: 1,500 yen/session."
+          },
+          {
+            "id": 8,
+            "text_ja": "☆定員8名（先着順） ☆申し込み 3日前までにネットで予約 →info@bunkacafe.com ☆場所 みなと市民会館（みなと駅徒歩4分）",
+            "ruby_html": "☆<ruby>定員<rt>ていいん</rt></ruby>8<ruby>名<rt>めい</rt></ruby>（<ruby>先着順<rt>せんちゃくじゅん</rt></ruby>） ☆<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>み 3<ruby>日前<rt>にちまえ</rt></ruby>までにネットで<ruby>予約<rt>よやく</rt></ruby> →info@bunkacafe.com ☆<ruby>場所<rt>ばしょ</rt></ruby> みなと<ruby>市民会館<rt>しみんかいかん</rt></ruby>（みなと<ruby>駅徒歩<rt>えきとほ</rt></ruby>4<ruby>分<rt>ふん</rt></ruby>）",
+            "text_en": "Capacity: 8 participants (first-come basis); Registration: Reserve online at least 3 days in advance (info@bunkacafe.com); Venue: Minato Community Center (4 min walk from Minato Station)."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "語学",
+          "reading": "ごがく",
+          "meaning": "study of languages / 外语（学习）",
+          "type": "noun"
+        },
+        {
+          "term": "情報",
+          "reading": "じょうほう",
+          "meaning": "information / 信息",
+          "type": "noun"
+        },
+        {
+          "term": "交換する",
+          "reading": "こうかんする",
+          "meaning": "to exchange / 交换",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-55-1",
+          "questionNumber": 1,
+          "questionText_ja": "右の文章の中の「⑤京都クラス」のクラスに、「文化カフェ」の会員が参加する場合、1回の料金はいくらか。",
+          "questionText_en": "When a member of 'Culture Cafe' attends '(5) Kyoto Class' in the text, how much is the fee per session?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "500円",
+              "text_en": "500 yen"
+            },
+            {
+              "id": 2,
+              "text_ja": "1,000円",
+              "text_en": "1,000 yen"
+            },
+            {
+              "id": 3,
+              "text_ja": "1,500円",
+              "text_en": "1,500 yen"
+            },
+            {
+              "id": 4,
+              "text_ja": "2,000円",
+              "text_en": "2,000 yen"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "「⑤京都クラス」は「日本文化クラス」に属します。日本文化クラスの通常料金は「1回 1,500円」です。「文化カフェ」の会員は「500円割引」となるため、1,500円 － 500円 ＝ 1,000円 となります。したがって 2 が正解です。",
+          "explanation_en": "'(5) Kyoto Class' belongs to the 'Japanese Culture Classes' category. The regular fee for Japanese culture classes is 1,500 yen per session. Since Culture Cafe members receive a 500-yen discount, the fee is 1,500 - 500 = 1,000 yen. Therefore, Option 2 is correct."
+        },
+        {
+          "questionId": "q-55-2",
+          "questionNumber": 2,
+          "questionText_ja": "リーさんは4月9日(水)のアラビア語クラスに参加したい。何をすればよいか。",
+          "questionText_en": "Lee wants to attend the Arabic class on Wednesday, April 9. What should he do?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "4月6日までに、電話して予約する。",
+              "text_en": "Call to make a reservation by April 6."
+            },
+            {
+              "id": 2,
+              "text_ja": "4月6日までに、ネットで予約する。",
+              "text_en": "Reserve online by April 6."
+            },
+            {
+              "id": 3,
+              "text_ja": "4月8日までに、みなと市民会館に行って予約する。",
+              "text_en": "Go to Minato Community Center to reserve by April 8."
+            },
+            {
+              "id": 4,
+              "text_ja": "4月9日に、教室に行って申し込む。",
+              "text_en": "Go to the classroom on April 9 to apply."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "申し込み規定には「3日前までにネットで予約（→info@bunkacafe.com）」と明記されています。4月9日の3日前は4月6日です。予約手段は「ネットで予約」なので、選択肢2「4月6日までに、ネットで予約する」が正解です。",
+          "explanation_en": "The registration guidelines state: 'Reserve online at least 3 days in advance (info@bunkacafe.com)'. Three days prior to April 9 is April 6, and the registration channel is via the internet. Therefore, Option 2 ('Reserve online by April 6') is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆パンフレット（文化カフェ講座案内）",
+        "text_ja": "案内パンフレットの読解では、対象講座がどのカテゴリ（語学か日本文化か）に分類されるかを特定した上で、会員割引条件を適用します。また、締切計算（〜日前）と受付方法（ネットか電話か窓口か）の組み合わせを正確に見極めましょう。",
+        "text_en": "When reading course guide pamphlets, locate the class under the correct category (Language vs. Japanese Culture) before applying member discounts. Furthermore, match deadline calculation ('3 days before') with the correct booking channel (online vs. phone).",
+        "structureLayout": [
+          {
+            "component": "講座分類",
+            "detail": "語学クラス（1回2,000円）／日本文化クラス（1回1,500円）",
+            "en": "Categories: Language classes (2,000 yen) / Japanese Culture (1,500 yen)."
+          },
+          {
+            "component": "会員特典",
+            "detail": "文化カフェ会員は各クラス500円割引",
+            "en": "Member perk: 500 yen discount for members."
+          },
+          {
+            "component": "予約条件",
+            "detail": "3日前までにメール/ネット予約、定員8名先着順",
+            "en": "Booking: Online reserve >=3 days ahead, 8 people first-come basis."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "「3日前までに」の日付計算と「ネット予約」という指定手段をセットで確認しましょう。",
+        "point_en": "Calculate '3 days prior' correctly and verify the mandated booking method (online)."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-56",
+      "pages": [
+        128,
+        129
+      ],
+      "problemNumber": 56,
+      "genre": "パンフレット",
+      "genre_en": "Pamphlet",
+      "genre_zh": "宣传册",
+      "title_ja": "問題56 パンフレット（ひがし町 レストラン案内）",
+      "title_en": "Problem 56: Pamphlet (Higashimachi Restaurant Guide)",
+      "title_zh": "问题56 宣传册（东町 餐厅指南）",
+      "preReading": {
+        "question_ja": "外食するとき、予算や営業時間、定休日はどのように調べますか。",
+        "question_en": "How do you check budget, business hours, and regular holidays when dining out?",
+        "question_zh": "外出就餐时，你通常如何查看预算、营业时间和休息日？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "右のページはレストランの案内である。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The right page is a restaurant guide. Read it and answer the questions below. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "ひがし町 レストラン案内",
+            "ruby_html": "ひがし<ruby>町<rt>ちょう</rt></ruby> レストラン<ruby>案内<rt>あんない</rt></ruby>",
+            "text_en": "Higashimachi Restaurant Guide"
+          },
+          {
+            "id": 2,
+            "text_ja": "①オリーブの風：南ヨーロッパのさまざまな国の料理が楽しめる。パーティーにもよい。[昼]800〜1,500円 [夜]2,000〜5,000円。時間：11:00〜14:00 18:00〜24:00。休み：木。",
+            "ruby_html": "①オリーブの<ruby>風<rt>かぜ</rt></ruby>：<ruby>南<rt>みなみ</rt></ruby>ヨーロッパのさまざまな<ruby>国<rt>くに</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>が<ruby>楽<rt>たの</rt></ruby>しめる。<ruby>パーティー<rt></rt></ruby>にもよい。[<ruby>昼<rt>ひる</rt></ruby>]800〜1,500<ruby>円<rt>えん</rt></ruby> [<ruby>夜<rt>よる</rt></ruby>]2,000〜5,000<ruby>円<rt>えん</rt></ruby>。<ruby>時間<rt>じかん</rt></ruby>：11:00〜14:00 18:00〜24:00。<ruby>休<rt>やす</rt></ruby>み：<ruby>木<rt>もく</rt></ruby>。",
+            "text_en": "(1) Olive Breeze: Enjoy dishes from various Southern European countries. Great for parties. [Lunch] 800-1,500 yen [Dinner] 2,000-5,000 yen. Hours: 11:00-14:00, 18:00-24:00. Closed: Thursday."
+          },
+          {
+            "id": 3,
+            "text_ja": "②山海：新鮮な魚と野菜を使った日本のふるさとの味。さしみが最高。[昼]950〜1,500円 [夜]3,500〜8,000円。時間：11:30〜14:30 18:00〜22:00。休み：火。",
+            "ruby_html": "②<ruby>山海<rt>さんかい</rt></ruby>：<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>魚<rt>さかな</rt></ruby>と<ruby>野菜<rt>やさい</rt></ruby>を<ruby>使<rt>つか</rt></ruby>った<ruby>日本<rt>にほん</rt></ruby>のふるさとの<ruby>味<rt>あじ</rt></ruby>。さしみが<ruby>最高<rt>さいこう</rt></ruby>。[<ruby>昼<rt>ひる</rt></ruby>]950〜1,500<ruby>円<rt>えん</rt></ruby> [<ruby>夜<rt>よる</rt></ruby>]3,500〜8,000<ruby>円<rt>えん</rt></ruby>。<ruby>時間<rt>じかん</rt></ruby>：11:30〜14:30 18:00〜22:00。<ruby>休<rt>やす</rt></ruby>み：<ruby>火<rt>か</rt></ruby>。",
+            "text_en": "(2) Sankai: Traditional Japanese hometown flavors using fresh fish and vegetables. Sashimi is top-notch! [Lunch] 950-1,500 yen [Dinner] 3,500-8,000 yen. Hours: 11:30-14:30, 18:00-22:00. Closed: Tuesday."
+          },
+          {
+            "id": 4,
+            "text_ja": "③よねやま：てんぷら、すしなど日本料理のメニューが豊富。個室あり。[昼]1,000〜2,300円 [夜]3,800〜8,800円。時間：12:00〜14:00 17:30〜21:30。年中無休。",
+            "ruby_html": "③よねやま：てんぷら、すしなど<ruby>日本料理<rt>にほんりょうり</rt></ruby>のメニューが<ruby>豊富<rt>ほうふ</rt></ruby>。<ruby>個室<rt>こしつ</rt></ruby>あり。[<ruby>昼<rt>ひる</rt></ruby>]1,000〜2,300<ruby>円<rt>えん</rt></ruby> [<ruby>夜<rt>よる</rt></ruby>]3,800〜8,800<ruby>円<rt>えん</rt></ruby>。<ruby>時間<rt>じかん</rt></ruby>：12:00〜14:00 17:30〜21:30。<ruby>年中無休<rt>ねんじゅうむきゅう</rt></ruby>。",
+            "text_en": "(3) Yoneyama: Abundant Japanese menu including tempura and sushi. Private dining rooms available. [Lunch] 1,000-2,300 yen [Dinner] 3,800-8,800 yen. Hours: 12:00-14:00, 17:30-21:30. Open year-round."
+          },
+          {
+            "id": 5,
+            "text_ja": "④李安：カニ料理が有名な中華料理店。食べ放題メニューもあり。[昼]1,000〜1,800円 [夜]2,500〜12,000円。時間：11:00〜14:00 17:00〜23:00。休み：火。個室あり。",
+            "ruby_html": "④<ruby>李安<rt>りあん</rt></ruby>：カニ<ruby>料理<rt>りょうり</rt></ruby>が<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>中華料理店<rt>ちゅうかりょうりてん</rt></ruby>。<ruby>食<rt>た</rt></ruby>べ<ruby>放題<rt>ほうだい</rt></ruby>メニューもあり。[<ruby>昼<rt>ひる</rt></ruby>]1,000〜1,800<ruby>円<rt>えん</rt></ruby> [<ruby>夜<rt>よる</rt></ruby>]2,500〜12,000<ruby>円<rt>えん</rt></ruby>。<ruby>時間<rt>じかん</rt></ruby>：11:00〜14:00 17:00〜23:00。<ruby>休<rt>やす</rt></ruby>み：<ruby>火<rt>か</rt></ruby>。<ruby>個室<rt>こしつ</rt></ruby>あり。",
+            "text_en": "(4) Li An: Chinese restaurant famous for crab dishes. All-you-can-eat options available. [Lunch] 1,000-1,800 yen [Dinner] 2,500-12,000 yen. Hours: 11:00-14:00, 17:00-23:00. Closed: Tuesday. Private dining rooms available."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "ふるさと",
+          "reading": "ふるさと",
+          "meaning": "hometown, native place / 故乡",
+          "type": "noun"
+        },
+        {
+          "term": "さしみ",
+          "reading": "さしみ",
+          "meaning": "raw fish, sashimi / 生鱼片",
+          "type": "noun"
+        },
+        {
+          "term": "豊富",
+          "reading": "ほうふ",
+          "meaning": "very varied, rich, abundant / 丰富",
+          "type": "na-adjective"
+        },
+        {
+          "term": "個室",
+          "reading": "こしつ",
+          "meaning": "single private room / 包间",
+          "type": "noun"
+        },
+        {
+          "term": "食べ放題",
+          "reading": "たべほうだい",
+          "meaning": "all-you-can-eat meal / 自助餐",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-56-1",
+          "questionNumber": 1,
+          "questionText_ja": "チョウさんは、友達と夕食が食べられる店を探している。予算は3,000円以内で、時間は来週の火曜日の19時からである。どの店がよいか。",
+          "questionText_en": "Cho is looking for a restaurant to eat dinner with friends. The budget is within 3,000 yen, and the time is next Tuesday starting at 19:00. Which restaurant is best?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "①",
+              "text_en": "(1) Olive Breeze"
+            },
+            {
+              "id": 2,
+              "text_ja": "②",
+              "text_en": "(2) Sankai"
+            },
+            {
+              "id": 3,
+              "text_ja": "③",
+              "text_en": "(3) Yoneyama"
+            },
+            {
+              "id": 4,
+              "text_ja": "④",
+              "text_en": "(4) Li An"
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "条件は「火曜日の19時（夜）」「予算3,000円以内」です。\n①オリーブの風：木曜定休（火曜は営業）、夜18:00〜24:00（19時OK）、夜の予算2,000〜5,000円（3,000円以内で可能）。条件を満たします。\n②山海：火曜日が定休日です。\n③よねやま：夜の予算が3,800〜8,800円で、3,000円を超えています。\n④李安：火曜日が定休日です。\nしたがって、すべての条件を満たす店は ① です。",
+          "explanation_en": "The conditions are: 'Tuesday at 19:00 (dinner)' and 'budget within 3,000 yen'.\n(1) Olive Breeze: Closed Thursday (open Tuesday), evening hours 18:00-24:00 (open at 19:00), dinner budget starts at 2,000 yen (fits <= 3,000 yen). Matches!\n(2) Sankai: Closed on Tuesdays.\n(3) Yoneyama: Dinner starts at 3,800 yen (exceeds 3,000 yen budget).\n(4) Li An: Closed on Tuesdays.\nTherefore, the only suitable restaurant is Option 1."
+        },
+        {
+          "questionId": "q-56-2",
+          "questionNumber": 2,
+          "questionText_ja": "サムさんは、木曜日の昼のできるだけ早い時間に友達と和食が食べたい。何時から食べることができるか。",
+          "questionText_en": "Sam wants to eat Japanese food with a friend on Thursday as early as possible for lunch. From what time can they eat?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "11時",
+              "text_en": "11:00"
+            },
+            {
+              "id": 2,
+              "text_ja": "11時30分",
+              "text_en": "11:30"
+            },
+            {
+              "id": 3,
+              "text_ja": "12時",
+              "text_en": "12:00"
+            },
+            {
+              "id": 4,
+              "text_ja": "12時30分",
+              "text_en": "12:30"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "木曜日の昼に和食（日本料理）が食べられる店を探します。\n和食を扱うのは ②山海（日本のふるさとの味、さしみ）と ③よねやま（日本料理）です。\n②山海：木曜営業（火曜定休）、昼の営業時間は 11:30〜14:30。\n③よねやま：年中無休、昼の営業時間は 12:00〜14:00。\nできるだけ早い時間は、11時30分です。したがって 2 が正解です。",
+          "explanation_en": "We need Japanese food (和食) for lunch on Thursday at the earliest possible time.\nRestaurants serving Japanese cuisine are:\n(2) Sankai (traditional Japanese flavors, sashimi): Open on Thursday (closed Tuesday); lunch hours begin at 11:30.\n(3) Yoneyama (Japanese cuisine): Open Thursday; lunch hours begin at 12:00.\nThe earliest time is 11:30 (at Sankai). Therefore, Option 2 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆パンフレット（ひがし町 レストラン案内）",
+        "text_ja": "複数の飲食店比較テーブルでは、曜日（定休日チェック）、時間帯（昼夜の営業時間区分）、料理ジャンル（和食・洋食・中華）、予算の4軸を素早く消去法で絞り込みます。",
+        "text_en": "In comparative restaurant guides, filter candidates systematically using a four-axis elimination process: day of the week (holidays), time frame (lunch vs dinner hours), cuisine genre (Japanese, European, Chinese), and price range.",
+        "structureLayout": [
+          {
+            "component": "①オリーブの風",
+            "detail": "南欧料理、昼800〜1,500円、夜2,000〜5,000円、木曜休",
+            "en": "Olive Breeze: S. European, lunch 800-1.5k, dinner 2k-5k, closed Thu."
+          },
+          {
+            "component": "②山海",
+            "detail": "和食（さしみ）、昼950〜1,500円（11:30〜）、火曜休",
+            "en": "Sankai: Japanese, lunch 950-1.5k (from 11:30), closed Tue."
+          },
+          {
+            "component": "③よねやま",
+            "detail": "日本料理、昼1,000〜2,300円（12:00〜）、年中無休",
+            "en": "Yoneyama: Japanese, lunch 1k-2.3k (from 12:00), open year-round."
+          },
+          {
+            "component": "④李安",
+            "detail": "中華料理、火曜休",
+            "en": "Li An: Chinese, closed Tue."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "定休日を最初にチェックすると候補を劇的に減らすことができます。",
+        "point_en": "Filtering by closing day first dramatically eliminates non-viable options quickly."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-57",
+      "pages": [
+        130,
+        131
+      ],
+      "problemNumber": 57,
+      "genre": "メニュー",
+      "genre_en": "Delivery Menu",
+      "genre_zh": "外卖菜单",
+      "title_ja": "問題57 メニュー（レストランさくら 宅配メニュー）",
+      "title_en": "Problem 57: Delivery Menu (Restaurant Sakura Delivery Menu)",
+      "title_zh": "问题57 菜单（樱花餐厅 外卖菜单）",
+      "preReading": {
+        "question_ja": "デリバリーやお弁当の宅配を頼むとき、配達料や受付時間に注意したことがありますか。",
+        "question_en": "Have you ever paid attention to delivery fees and order cutoff times when ordering food delivery?",
+        "question_zh": "点外卖或便当送餐时，你注意过配送费和接单时间吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章は宅配用のメニューである。右の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The following text is a delivery menu. Answer the questions on the right. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "レストラン さくら 宅配メニュー 年中無休",
+            "ruby_html": "レストラン さくら <ruby>宅配<rt>たくはい</rt></ruby>メニュー <ruby>年中無休<rt>ねんじゅうむきゅう</rt></ruby>",
+            "text_en": "Restaurant Sakura Delivery Menu - Open 365 days a year"
+          },
+          {
+            "id": 2,
+            "text_ja": "日替わり弁当（全て600円、みそ汁付）：月：ハンバーグ弁当、火：とんかつ弁当、水：からあげ弁当、木：コロッケ弁当、金：焼肉弁当。",
+            "ruby_html": "<ruby>日替<rt>ひが</rt></ruby>わり<ruby>弁当<rt>べんとう</rt></ruby>（<ruby>全<rt>すべ</rt></ruby>て600<ruby>円<rt>えん</rt></ruby>、みそ<ruby>汁付<rt>しるつ</rt></ruby>き）：<ruby>月<rt>げつ</rt></ruby>：ハンバーグ<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>火<rt>か</rt></ruby>：とんかつ<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>水<rt>すい</rt></ruby>：からあげ<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>木<rt>もく</rt></ruby>：コロッケ<ruby>弁当<rt>べんとう</rt></ruby>、<ruby>金<rt>きん</rt></ruby>：<ruby>焼肉弁当<rt>やきにくべんとう</rt></ruby>。",
+            "text_en": "Daily special bento (all 600 yen, includes miso soup): Mon: Hamburg bento; Tue: Tonkatsu bento; Wed: Fried chicken bento; Thu: Croquette bento; Fri: Yakiniku bento."
+          },
+          {
+            "id": 3,
+            "text_ja": "ごはん：カレーライス 550円、オムライス 600円、親子丼 720円、かつ丼 800円。",
+            "ruby_html": "ごはん：カレーライス 550<ruby>円<rt>えん</rt></ruby>、オムライス 600<ruby>円<rt>えん</rt></ruby>、<ruby>親子丼<rt>おやこどん</rt></ruby> 720<ruby>円<rt>えん</rt></ruby>、かつ<ruby>丼<rt>どん</rt></ruby> 800<ruby>円<rt>えん</rt></ruby>。",
+            "text_en": "Rice meals: Curry and rice 550 yen; Omelet rice 600 yen; Oyako-don 720 yen; Katsu-don 800 yen."
+          },
+          {
+            "id": 4,
+            "text_ja": "サラダ：コーンサラダ 200円、ポテトサラダ 230円。",
+            "ruby_html": "サラダ：コーンサラダ 200<ruby>円<rt>えん</rt></ruby>、ポテトサラダ 230<ruby>円<rt>えん</rt></ruby>。",
+            "text_en": "Salads: Corn salad 200 yen; Potato salad 230 yen."
+          },
+          {
+            "id": 5,
+            "text_ja": "飲み物：コーラ 150円、オレンジジュース 150円、緑茶 120円。★お食事と一緒のご注文の場合、お飲み物は100円！",
+            "ruby_html": "<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>：コーラ 150<ruby>円<rt>えん</rt></ruby>、オレンジジュース 150<ruby>円<rt>えん</rt></ruby>、<ruby>緑茶<rt>りょくちゃ</rt></ruby> 120<ruby>円<rt>えん</rt></ruby>。★お<ruby>食事<rt>しょくじ</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>のご<ruby>注文<rt>ちゅうもん</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>、お<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は100<ruby>円<rt>えん</rt></ruby>！",
+            "text_en": "Drinks: Cola 150 yen; Orange juice 150 yen; Green tea 120 yen. ★When ordered together with a meal, drinks are 100 yen!"
+          },
+          {
+            "id": 6,
+            "text_ja": "TEL: 5555-8888 受付時間：9:00〜20:30（土日祝は19:30で終了）。",
+            "ruby_html": "TEL: 5555-8888 <ruby>受付時間<rt>うけつけじかん</rt></ruby>：9:00〜20:30（<ruby>土日祝<rt>どにちしゅく</rt></ruby>は19:30で<ruby>終了<rt>しゅうりょう</rt></ruby>）。",
+            "text_en": "TEL: 5555-8888 Order reception: 9:00-20:30 (ends at 19:30 on weekends and holidays)."
+          },
+          {
+            "id": 7,
+            "text_ja": "配達時間：10:30〜21:00 (14:00〜17:00を除く) 土日祝は20:00で終了。",
+            "ruby_html": "<ruby>配達時間<rt>はいたつじかん</rt></ruby>：10:30〜21:00 (14:00〜17:00を<ruby>除<rt>のぞ</rt></ruby>く) <ruby>土日祝<rt>どにちしゅく</rt></ruby>は20:00で<ruby>終了<rt>しゅうりょう</rt></ruby>。",
+            "text_en": "Delivery hours: 10:30-21:00 (excluding 14:00-17:00); ends at 20:00 on weekends and holidays."
+          },
+          {
+            "id": 8,
+            "text_ja": "＊お食事お一つでも注文できます！ 1,000円未満のご注文は、1回のお届けにつき、200円いただきます。",
+            "ruby_html": "＊お<ruby>食事<rt>しょくじ</rt></ruby>お<ruby>一<rt>ひと</rt></ruby>つでも<ruby>注文<rt>ちゅうもん</rt></ruby>できます！ 1,000<ruby>円未満<rt>えんみまん</rt></ruby>のご<ruby>注文<rt>ちゅうもん</rt></ruby>は、1<ruby>回<rt>かい</rt></ruby>のお<ruby>届<rt>とど</rt></ruby>けにつき、200<ruby>円<rt>えん</rt></ruby>いただきます。",
+            "text_en": "* You can order even just a single meal! For orders under 1,000 yen, a 200 yen delivery charge applies per delivery."
+          },
+          {
+            "id": 9,
+            "text_ja": "＊10個以上の注文は前の日までにご注文ください。 ＊インターネットでも注文できます。 http://www.aaa.ccc",
+            "ruby_html": "＊10<ruby>個以上<rt>こいじょう</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>は<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>までにご<ruby>注文<rt>ちゅうもん</rt></ruby>ください。 ＊インターネットでも<ruby>注文<rt>ちゅうもん</rt></ruby>できます。 http://www.aaa.ccc",
+            "text_en": "* Orders of 10 items or more must be placed by the day before. * Online ordering is also available at http://www.aaa.ccc."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "宅配",
+          "meaning_ja": "商品を家に配達すること",
+          "meaning_en": "home delivery of goods"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "年中無休",
+          "reading": "ねんじゅうむきゅう",
+          "meaning": "[open] all-year-round / 全年不休",
+          "type": "noun"
+        },
+        {
+          "term": "日替わり",
+          "reading": "ひがわり",
+          "meaning": "daily special / 每日推荐",
+          "type": "noun"
+        },
+        {
+          "term": "〜付",
+          "reading": "〜つき",
+          "meaning": "with, accompanied by ~ / 附送〜",
+          "type": "suffix"
+        },
+        {
+          "term": "注文",
+          "reading": "ちゅうもん",
+          "meaning": "order / 订购",
+          "type": "noun"
+        },
+        {
+          "term": "受付",
+          "reading": "うけつけ",
+          "meaning": "order reception / 受理",
+          "type": "noun"
+        },
+        {
+          "term": "配達",
+          "reading": "はいたつ",
+          "meaning": "delivery / 配送",
+          "type": "noun"
+        },
+        {
+          "term": "〜未満",
+          "reading": "〜みまん",
+          "meaning": "less than ~ / 不到〜",
+          "type": "suffix"
+        },
+        {
+          "term": "〜以上",
+          "reading": "〜いじょう",
+          "meaning": "~ and above, or more / 等于或超过〜",
+          "type": "suffix"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-57-1",
+          "questionNumber": 1,
+          "questionText_ja": "シンさんはカレーライスとコーラを宅配で注文した。全部でいくら払わなければならないか。",
+          "questionText_en": "Shin ordered curry rice and cola for delivery. How much does he have to pay in total?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "550円＋100円＝650円",
+              "text_en": "550 yen + 100 yen = 650 yen"
+            },
+            {
+              "id": 2,
+              "text_ja": "550円＋150円＝700円",
+              "text_en": "550 yen + 150 yen = 700 yen"
+            },
+            {
+              "id": 3,
+              "text_ja": "550円＋100円＋200円＝850円",
+              "text_en": "550 yen + 100 yen + 200 yen = 850 yen"
+            },
+            {
+              "id": 4,
+              "text_ja": "550円＋150円＋200円＝900円",
+              "text_en": "550 yen + 150 yen + 200 yen = 900 yen"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "カレーライスの価格は550円です。食事と一緒に飲み物を注文すると100円になるため、コーラは100円です。料理の合計は 550円 ＋ 100円 ＝ 650円 となります。これは「1,000円未満のご注文」に該当するため、配達料として別途200円がかかります。合計は 550円 ＋ 100円 ＋ 200円 ＝ 850円 です。したがって 3 が正解です。",
+          "explanation_en": "Curry rice costs 550 yen. When ordered together with a meal, drinks cost 100 yen, so cola is 100 yen. Food total is 550 + 100 = 650 yen. Because 650 yen is under 1,000 yen ('1,000円未満'), a 200-yen delivery fee is added. Total payment is 550 + 100 + 200 = 850 yen. Therefore, Option 3 is correct."
+        },
+        {
+          "questionId": "q-57-2",
+          "questionNumber": 2,
+          "questionText_ja": "ホルへさんは4月13日(日)の昼12時半にお弁当が20個必要である。いつ注文すればよいか。",
+          "questionText_en": "Jorge needs 20 bentos at 12:30 PM on Sunday, April 13. When should he place the order?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "4月11日(金)の午後9時ごろ",
+              "text_en": "Around 9:00 PM on Friday, April 11"
+            },
+            {
+              "id": 2,
+              "text_ja": "4月12日(土)の午後6時ごろ",
+              "text_en": "Around 6:00 PM on Saturday, April 12"
+            },
+            {
+              "id": 3,
+              "text_ja": "4月12日(土)の午後8時ごろ",
+              "text_en": "Around 8:00 PM on Saturday, April 12"
+            },
+            {
+              "id": 4,
+              "text_ja": "4月13日(日)の午前9時ごろ",
+              "text_en": "Around 9:00 AM on Sunday, April 13"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "20個の注文は「10個以上の注文は前の日までにご注文ください」に該当するため、4月13日の前日である4月12日(土)までに注文する必要があります。また、受付時間は平日は20:30までですが、「土日祝は19:30で終了」となっています。\n1: 金曜の午後9時は平日の受付時間（20:30まで）を過ぎています。\n2: 4月12日(土)の午後6時は、前日かつ土曜受付時間（19:30まで）内なので注文可能です。\n3: 4月12日(土)の午後8時は、土曜の受付時間（19:30まで）を過ぎています。\n4: 当日の注文は10個以上ルールに違反します。\nしたがって 2 が正解です。",
+          "explanation_en": "An order of 20 bentos triggers the rule 'Orders of 10 items or more must be placed by the day before', requiring order placement by Saturday, April 12. In addition, reception hours on weekends and holidays end at 19:30 (土日祝は19:30で終了).\nOption 1: Friday 21:00 is past the weekday 20:30 cutoff.\nOption 2: Saturday 18:00 is before the Saturday 19:30 cutoff on the day before. Valid!\nOption 3: Saturday 20:00 is past the Saturday 19:30 cutoff.\nOption 4: Sunday same-day ordering violates the day-before rule for >=10 items.\nTherefore, Option 2 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メニュー（レストランさくら 宅配メニュー）",
+        "text_ja": "宅配メニューでは、セット割引（セットドリンク100円）＋追加配達料（1,000円未満は＋200円）の二重条件計算、および大量注文時（10個以上は前日締切）と曜日別営業時間（土日祝は19:30受付終了）の複合条件判定がポイントです。",
+        "text_en": "In delivery menus, look for stacked pricing rules (meal combo drink discount + minimum delivery surcharge) and compound reservation conditions (large orders >=10 by the prior day combined with weekend earlier cutoff times).",
+        "structureLayout": [
+          {
+            "component": "価格・割引",
+            "detail": "食事と一緒ならドリンク100円、1,000円未満は送料200円",
+            "en": "Pricing: Combo drinks 100 yen, delivery fee 200 yen for orders <1,000 yen."
+          },
+          {
+            "component": "受付時間",
+            "detail": "平日9:00〜20:30、土日祝は19:30終了",
+            "en": "Order reception: Weekdays until 20:30, weekends/holidays until 19:30."
+          },
+          {
+            "component": "大量注文規定",
+            "detail": "10個以上は前日までに注文必須",
+            "en": "Large orders: 10 items or more require booking by previous day."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "曜日によって受付終了時間が異なる点（平日は20:30、土日祝は19:30）を絶対に見落とさないこと！",
+        "point_en": "Never overlook divergent cutoff times by day of the week (20:30 on weekdays vs 19:30 on weekends/holidays)!"
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-58",
+      "pages": [
+        132,
+        133
+      ],
+      "problemNumber": 58,
+      "genre": "請求書",
+      "genre_en": "Bill / Invoice",
+      "genre_zh": "账单",
+      "title_ja": "問題58 請求書（NAT携帯電話料金請求書）",
+      "title_en": "Problem 58: Bill (NAT Mobile Phone Bill)",
+      "title_zh": "问题58 账单（NAT手机话费账单）",
+      "preReading": {
+        "question_ja": "毎月の公共料金や携帯代の請求書はどうやって支払っていますか。",
+        "question_en": "How do you pay your monthly utility and mobile phone bills?",
+        "question_zh": "你通常如何缴纳每月的公共事业费和手机话费账单？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "NAT携帯電話料金請求書 東京都○○市××町3-5-2 カン ヘミ様",
+            "ruby_html": "NAT<ruby>携帯電話料金請求書<rt>けいたいでんわりょうきんせいきゅうしょ</rt></ruby> <ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>××<ruby>町<rt>ちょう</rt></ruby>3-5-2 カン ヘミ<ruby>様<rt>さま</rt></ruby>",
+            "text_en": "NAT Mobile Phone Bill - To: Ms./Mr. Kang Hemi, 3-5-2 xx-cho, oo-city, Tokyo"
+          },
+          {
+            "id": 2,
+            "text_ja": "ご利用期間：2014年5月1日〜5月31日、ご請求額：7,800円、お支払い期限：2014年6月30日(月)。",
+            "ruby_html": "ご<ruby>利用期間<rt>りようきかん</rt></ruby>：2014<ruby>年<rt>ねん</rt></ruby>5<ruby>月<rt>がつ</rt></ruby>1<ruby>日<rt>にち</rt></ruby>〜5<ruby>月<rt>がつ</rt></ruby>31<ruby>日<rt>にち</rt></ruby>、ご<ruby>請求額<rt>せいきゅうがく</rt></ruby>：7,800<ruby>円<rt>えん</rt></ruby>、お<ruby>支払<rt>しはら</rt></ruby>い<ruby>期限<rt>きげん</rt></ruby>：2014<ruby>年<rt>ねん</rt></ruby>6<ruby>月<rt>がつ</rt></ruby>30<ruby>日<rt>にち</rt></ruby>(<ruby>月<rt>げつ</rt></ruby>)。",
+            "text_en": "Billing period: May 1, 2014 - May 31; Invoiced amount: 7,800 yen; Payment due date: Monday, June 30, 2014."
+          },
+          {
+            "id": 3,
+            "text_ja": "お問い合わせ先：NAT 0800-222-3333 月〜日(年中無休) 9:00-20:00、発行日：2014年6月3日。",
+            "ruby_html": "お<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせ<ruby>先<rt>さき</rt></ruby>：NAT 0800-222-3333 <ruby>月<rt>げつ</rt></ruby>〜<ruby>日<rt>にち</rt></ruby>(<ruby>年中無休<rt>ねんじゅうむきゅう</rt></ruby>) 9:00-20:00、<ruby>発行日<rt>はっこうび</rt></ruby>：2014<ruby>年<rt>ねん</rt></ruby>6<ruby>月<rt>がつ</rt></ruby>3<ruby>日<rt>にち</rt></ruby>。",
+            "text_en": "Contact inquiry: NAT 0800-222-3333 Mon-Sun (Open year-round) 9:00-20:00; Issue date: June 3, 2014."
+          },
+          {
+            "id": 4,
+            "text_ja": "お支払い方法のご案内：●現金でのお支払いの場合 「振込用紙」を切り取り、お近くのコンビニまたは銀行・郵便局でお支払いください。",
+            "ruby_html": "お<ruby>支払<rt>しはら</rt></ruby>い<ruby>方法<rt>ほうほう</rt></ruby>のご<ruby>案内<rt>あんない</rt></ruby>：●<ruby>現金<rt>げんきん</rt></ruby>でのお<ruby>支払<rt>しはら</rt></ruby>いの<ruby>場合<rt>ばあい</rt></ruby> 「<ruby>振込用紙<rt>ふりこみようし</rt></ruby>」を<ruby>切<rt>き</rt></ruby>り<ruby>取<rt>と</rt></ruby>り、お<ruby>近<rt>ちか</rt></ruby>くのコンビニまたは<ruby>銀行<rt>ぎんこう</rt></ruby>・<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>でお<ruby>支払<rt>しはら</rt></ruby>いください。",
+            "text_en": "Payment methods guide: - Paying in cash: Detach the transfer payment slip and pay at a nearby convenience store, bank, or post office."
+          },
+          {
+            "id": 5,
+            "text_ja": "●クレジットカードでのお支払いの場合 NATのウェブサイトからお支払いください。",
+            "ruby_html": "●クレジットカードでのお<ruby>支払<rt>しはら</rt></ruby>いの<ruby>場合<rt>ばあい</rt></ruby> NATのウェブサイトからお<ruby>支払<rt>しはら</rt></ruby>いください。",
+            "text_en": "- Paying by credit card: Please pay via the NAT official website."
+          },
+          {
+            "id": 6,
+            "text_ja": "●銀行口座の振替手続きをすると、毎月26日に自動的にお振替になります。",
+            "ruby_html": "●<ruby>銀行口座<rt>ぎんこうこうざ</rt></ruby>の<ruby>振替<rt>ふりかえ</rt></ruby><ruby>手続<rt>てつづ</rt></ruby>きをすると、<ruby>毎月<rt>まいつき</rt></ruby>26<ruby>日<rt>にち</rt></ruby>に<ruby>自動的<rt>じどうてき</rt></ruby>にお<ruby>振替<rt>ふりかえ</rt></ruby>になります。",
+            "text_en": "- Automatic bank account transfer: Once transfer procedures are set up, deductions occur automatically on the 26th of each month."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "切り取る",
+          "meaning_ja": "切ってその部分を取る",
+          "meaning_en": "to cut off, detach a coupon or slip"
+        },
+        {
+          "label": "注2",
+          "term": "振替",
+          "meaning_ja": "口座から自動的にお金が支払われること",
+          "meaning_en": "automatic account transfer/debit"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "携帯電話",
+          "reading": "けいたいでんわ",
+          "meaning": "cellphone, mobile phone / 手机",
+          "type": "noun"
+        },
+        {
+          "term": "請求額",
+          "reading": "せいきゅうがく",
+          "meaning": "invoiced amount / 支付金额",
+          "type": "noun"
+        },
+        {
+          "term": "支払い期限",
+          "reading": "しはらいきげん",
+          "meaning": "payment deadline / 支付截止日",
+          "type": "noun"
+        },
+        {
+          "term": "問い合わせ先",
+          "reading": "といあわせさき",
+          "meaning": "inquiries contact / 问讯处",
+          "type": "noun"
+        },
+        {
+          "term": "年中無休",
+          "reading": "ねんじゅうむきゅう",
+          "meaning": "open all year round / 全年不休",
+          "type": "noun"
+        },
+        {
+          "term": "発行",
+          "reading": "はっこう",
+          "meaning": "to issue / 发行",
+          "type": "noun"
+        },
+        {
+          "term": "現金",
+          "reading": "げんきん",
+          "meaning": "cash / 现金",
+          "type": "noun"
+        },
+        {
+          "term": "振込用紙",
+          "reading": "ふりこみようし",
+          "meaning": "transfer payment slip / 汇款单",
+          "type": "noun"
+        },
+        {
+          "term": "ウェブサイト",
+          "reading": "うぇぶさいと",
+          "meaning": "website / 网站",
+          "type": "noun"
+        },
+        {
+          "term": "銀行口座",
+          "reading": "ぎんこうこうざ",
+          "meaning": "bank account / 银行账号",
+          "type": "noun"
+        },
+        {
+          "term": "自動的に",
+          "reading": "じどうてきに",
+          "meaning": "automatically / 自动地",
+          "type": "adverb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-58-1",
+          "questionNumber": 1,
+          "questionText_ja": "カンさんは何足をしなければならないか。（カンさんは銀行の口座を作ったが、郵便局の口座はない。まだクレジットカードも持っていない。）",
+          "questionText_en": "What must Kang do? (Kang has opened a bank account, but does not have a post office account, nor does he possess a credit card yet.)",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "NATに電話をする。",
+              "text_en": "Call NAT."
+            },
+            {
+              "id": 2,
+              "text_ja": "郵便局に行って、口座を作る。",
+              "text_en": "Go to the post office and open an account."
+            },
+            {
+              "id": 3,
+              "text_ja": "コンビニに行って、クレジットカードで払う。",
+              "text_en": "Go to the convenience store and pay by credit card."
+            },
+            {
+              "id": 4,
+              "text_ja": "銀行かコンビニに行って、現金で払う。",
+              "text_en": "Go to a bank or convenience store and pay with cash."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "カンさんはクレジットカードを持っておらず、銀行口座の振替手続きもまだ済んでいません。そのため選べる方法は「現金でのお支払い」のみです。現金で支払う場合は「『振込用紙』を切り取り、お近くのコンビニまたは銀行・郵便局でお支払いください」とあるため、銀行かコンビニに行って現金で支払う必要があります。したがって 4 が正解です。",
+          "explanation_en": "Kang has no credit card, and has not completed the automatic account transfer registration. Thus, his only available option is cash payment. The cash payment instructions state: 'detach the payment slip and pay at a nearby convenience store, bank, or post office.' Therefore, Option 4 ('Go to a bank or convenience store and pay with cash') is correct."
+        },
+        {
+          "questionId": "q-58-2",
+          "questionNumber": 2,
+          "questionText_ja": "支払いはいつまでにしなければならないか。",
+          "questionText_en": "By when must the payment be made?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "5月31日",
+              "text_en": "May 31"
+            },
+            {
+              "id": 2,
+              "text_ja": "6月3日",
+              "text_en": "June 3"
+            },
+            {
+              "id": 3,
+              "text_ja": "6月26日",
+              "text_en": "June 26"
+            },
+            {
+              "id": 4,
+              "text_ja": "6月30日",
+              "text_en": "June 30"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "請求書の「お支払い期限」の欄に「2014年6月30日(月)」と明記されています。したがって 4 が正解です。（5月31日は利用期間の末日、6月3日は発行日、毎月26日は口座振替日です。）",
+          "explanation_en": "The 'Payment due date' (お支払い期限) column explicitly specifies 'June 30, 2014 (Mon)'. Therefore, Option 4 is correct. (May 31 is billing period end, June 3 is issue date, and 26th is monthly auto-debit date.)"
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆請求書（NAT携帯電話料金請求書）",
+        "text_ja": "請求書では、「利用期間」「発行日」「支払期限」「自動振替日」など複数の日付が登場します。質問が求めているのが「期日（デッドライン）」なのか「手段（支払い方法）」なのかを峻別し、人物の保有状況（クレカ有無、口座振替有無）に合わせて最適な選択肢を選びましょう。",
+        "text_en": "In utility invoices, multiple dates appear (billing period, issue date, payment deadline, auto-debit date). Distinguish clearly between deadline vs payment channel, and match the character's available means (no credit card, no auto-debit set up).",
+        "structureLayout": [
+          {
+            "component": "基本請求情報",
+            "detail": "請求額7,800円、支払期限：2014年6月30日",
+            "en": "Invoice info: 7,800 yen, payment due June 30, 2014."
+          },
+          {
+            "component": "支払方法の区分",
+            "detail": "現金（コンビニ・銀行・郵便局）、クレカ（Web）、口座振替（26日引落）",
+            "en": "Payment channels: Cash (combini/bank/post), Credit card (Web), Auto-debit (26th)."
+          },
+          {
+            "component": "人物の現状",
+            "detail": "クレカなし、口座振替未設定→現金支払いを選択",
+            "en": "Character condition: No credit card, no auto-debit setup -> Choose cash."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "日付の混同に注意！「発行日」「振替日」「支払い期限」の区別を正確につけましょう。",
+        "point_en": "Beware date confusions! Clearly distinguish issue date, monthly transfer date, and final payment deadline."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-59",
+      "pages": [
+        134,
+        135
+      ],
+      "problemNumber": 59,
+      "genre": "保証書",
+      "genre_en": "Warranty Certificate",
+      "genre_zh": "保修卡",
+      "title_ja": "問題59 保証書（テニスラケット保証書）",
+      "title_en": "Problem 59: Warranty Certificate (Tennis Racket Warranty)",
+      "title_zh": "问题59 保修单（网球拍保修单）",
+      "preReading": {
+        "question_ja": "電化製品やスポーツ用品を買ったとき、保証書の期間や条件を確認しますか。",
+        "question_en": "Do you check the warranty period and coverage conditions when purchasing electronics or sports goods?",
+        "question_zh": "购买家电或体育用品时，你会查看保修期和保修条款吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "右のページの文章は保証書である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The text on the right page is a warranty certificate. Answer the questions below. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "メイさんはテニスのラケットを買いにお店に行った。買った時、お店の人から、ラケットと一緒に右の保証書をもらった。",
+            "ruby_html": "メイさんはテニスのラケットを<ruby>買<rt>か</rt></ruby>いにお<ruby>店<rt>みせ</rt></ruby>に<ruby>行<rt>い</rt></ruby>った。<ruby>買<rt>か</rt></ruby>った<ruby>時<rt>とき</rt></ruby>、お<ruby>店<rt>みせ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>から、ラケットと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>右<rt>みぎ</rt></ruby>の<ruby>保証書<rt>ほしょうしょ</rt></ruby>をもらった。",
+            "text_en": "May went to a shop to buy a tennis racket. When she bought it, the clerk gave her this warranty certificate along with the racket."
+          },
+          {
+            "id": 2,
+            "text_ja": "【保証書】ご購入日：2014年5月1日、メーカー：プレンセス、ラケット名：ショット35、カラー：青。",
+            "ruby_html": "【<ruby>保証書<rt>ほしょうしょ</rt></ruby>】ご<ruby>購入日<rt>こうにゅうび</rt></ruby>：2014<ruby>年<rt>ねん</rt></ruby>5<ruby>月<rt>がつ</rt></ruby>1<ruby>日<rt>にち</rt></ruby>、メーカー：プレンセス、ラケット<ruby>名<rt>めい</rt></ruby>：ショット35、カラー：<ruby>青<rt>あお</rt></ruby>。",
+            "text_en": "[Warranty] Purchase date: May 1, 2014; Manufacturer: Princess; Racket name: Shot 35; Color: Blue."
+          },
+          {
+            "id": 3,
+            "text_ja": "1. 普通の使用状態において破損などがあった場合は、お買い上げ日から下に書いてある期限（保証期間）の間、無料で修理または交換します。",
+            "ruby_html": "1. <ruby>普通<rt>ふつう</rt></ruby>の<ruby>使用状態<rt>しようじょうたい</rt></ruby>において<ruby>破損<rt>はそん</rt></ruby>などがあった<ruby>場合<rt>ばあい</rt></ruby>は、お<ruby>買<rt>か</rt></ruby>い<ruby>上<rt>あ</rt></ruby>げ<ruby>日<rt>ひ</rt></ruby>から<ruby>下<rt>した</rt></ruby>に<ruby>書<rt>か</rt></ruby>いてある<ruby>期限<rt>きげん</rt></ruby>（<ruby>保証期間<rt>ほしょうきかん</rt></ruby>）の<ruby>間<rt>あいだ</rt></ruby>、<ruby>無料<rt>むりょう</rt></ruby>で<ruby>修理<rt>しゅうり</rt></ruby>または<ruby>交換<rt>こうかん</rt></ruby>します。",
+            "text_en": "1. In case of damage occurring under normal conditions of use, free repair or replacement will be provided during the warranty period starting from the date of purchase."
+          },
+          {
+            "id": 4,
+            "text_ja": "・ピンポンラケット：お買い上げの日から6か月。ただし子ども用は1年間。・バドミントンラケット：お買い上げの日から3か月、ただし子ども用は半年。・テニスラケット：お買い上げの日から9か月。＊日本国内でお買い上げのお客様に限ります。",
+            "ruby_html": "・ピンポンラケット：お<ruby>買<rt>か</rt></ruby>い<ruby>上<rt>あ</rt></ruby>げの<ruby>日<rt>ひ</rt></ruby>から6か<ruby>月<rt>げつ</rt></ruby>。ただし<ruby>子<rt>こ</rt></ruby>ども<ruby>用<rt>よう</rt></ruby>は1<ruby>年間<rt>ねんかん</rt></ruby>。・バドミントンラケット：お<ruby>買<rt>か</rt></ruby>い<ruby>上<rt>あ</rt></ruby>げの<ruby>日<rt>ひ</rt></ruby>から3か<ruby>月<rt>げつ</rt></ruby>、ただし<ruby>子<rt>こ</rt></ruby>ども<ruby>用<rt>よう</rt></ruby>は<ruby>半年<rt>はんとし</rt></ruby>。・テニスラケット：お<ruby>買<rt>か</rt></ruby>い<ruby>上<rt>あ</rt></ruby>げの<ruby>日<rt>ひ</rt></ruby>から9か<ruby>月<rt>げつ</rt></ruby>。＊<ruby>日本国内<rt>にほんこくない</rt></ruby>でお<ruby>買<rt>か</rt></ruby>い<ruby>上<rt>あ</rt></ruby>げのお<ruby>客様<rt>きゃくさま</rt></ruby>に<ruby>限<rt>かぎ</rt></ruby>ります。",
+            "text_en": "- Table tennis racket: 6 months from purchase (1 year for children's model); - Badminton racket: 3 months from purchase (half a year for children's model); - Tennis racket: 9 months from purchase. * Limited to customers who purchased within Japan."
+          },
+          {
+            "id": 5,
+            "text_ja": "2. 次の場合は保証期間中でも修理または交換ができません。・火災、地震、水害などによる破損。・次のような使用方法による破損。（ラケットの上に重い物をのせる。ラケットを投げたり物をたたいたりする。ボールや羽根を打つこと以外のために使用するなど）・次のような状態で置いておいたことによる破損。（日光の当たるところや、湿気の多いところに長時間置くなど）",
+            "ruby_html": "2. <ruby>次<rt>つぎ</rt></ruby>の<ruby>場合<rt>ばあい</rt></ruby>は<ruby>保証期間中<rt>ほしょうきかんちゅう</rt></ruby>でも<ruby>修理<rt>しゅうり</rt></ruby>または<ruby>交換<rt>こうかん</rt></ruby>ができません。・<ruby>火災<rt>かさい</rt></ruby>、<ruby>地震<rt>じしん</rt></ruby>、<ruby>水害<rt>すいがい</rt></ruby>などによる<ruby>破損<rt>はそん</rt></ruby>。・<ruby>次<rt>つぎ</rt></ruby>のような<ruby>使用方法<rt>しようほうほう</rt></ruby>による<ruby>破損<rt>はそん</rt></ruby>。（ラケットの<ruby>上<rt>うえ</rt></ruby>に<ruby>重<rt>おも</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をのせる。ラケットを<ruby>投<rt>な</rt></ruby>げたり<ruby>物<rt>もの</rt></ruby>をたたいたりする。ボールや<ruby>羽根<rt>はね</rt></ruby>を<ruby>打<rt>う</rt></ruby>つこと<ruby>以外<rt>いがい</rt></ruby>のために<ruby>使用<rt>しよう</rt></ruby>するなど）・<ruby>次<rt>つぎ</rt></ruby>のような<ruby>状態<rt>じょうたい</rt></ruby>で<ruby>置<rt>お</rt></ruby>いておいたことによる<ruby>破損<rt>はそん</rt></ruby>。（<ruby>日光<rt>にっこう</rt></ruby>の<ruby>当<rt>あ</rt></ruby>たるところや、<ruby>湿気<rt>しっけ</rt></ruby>の<ruby>多<rt>おお</rt></ruby>いところに<ruby>長時間置<rt>ちょうじかんお</rt></ruby>くなど）",
+            "text_en": "2. Under the following circumstances, repair or replacement is not available even within the warranty period: Damage from fire, earthquake, or flood; improper usage (placing heavy objects on racket, throwing or hitting non-ball items, using for purposes other than hitting balls/shuttlecocks); improper storage (leaving under direct sunlight or high humidity for long periods)."
+          },
+          {
+            "id": 6,
+            "text_ja": "3. 保証書をなくした場合は、修理または交換できないことがあります。ラケットショップ ふじ 東京都○○市××町1-2-3 Tel: 03-8888-7777",
+            "ruby_html": "3. <ruby>保証書<rt>ほしょうしょ</rt></ruby>をなくした<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>修理<rt>しゅうり</rt></ruby>または<ruby>交換<rt>こうかん</rt></ruby>できないことがあります。ラケットショップ ふじ <ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>××<ruby>町<rt>ちょう</rt></ruby>1-2-3 Tel: 03-8888-7777",
+            "text_en": "3. If the warranty card is lost, repair or replacement may not be provided. Racket Shop Fuji, 1-2-3 xx-cho, oo-city, Tokyo Tel: 03-8888-7777."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "保証書",
+          "meaning_ja": "買った品物に問題があったら、修理したり、新しいものにとりかえると書いてある紙",
+          "meaning_en": "warranty certificate / guarantee paper"
+        },
+        {
+          "label": "注2",
+          "term": "ご購入",
+          "meaning_ja": "買うこと",
+          "meaning_en": "purchase (polite)"
+        },
+        {
+          "label": "注3",
+          "term": "破損",
+          "meaning_ja": "こわれたり傷ついたりすること",
+          "meaning_en": "breakage, damage"
+        },
+        {
+          "label": "注4",
+          "term": "水害",
+          "meaning_ja": "洪水や高波によって被害を受けること",
+          "meaning_en": "flood / water damage"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "メーカー",
+          "reading": "めーかー",
+          "meaning": "maker, manufacturer / 生产厂商",
+          "type": "noun"
+        },
+        {
+          "term": "お買い上げ日",
+          "reading": "おかいあげび",
+          "meaning": "date of purchase / 购买日",
+          "type": "noun"
+        },
+        {
+          "term": "無料",
+          "reading": "むりょう",
+          "meaning": "free of charge / 免费",
+          "type": "noun"
+        },
+        {
+          "term": "修理する",
+          "reading": "しゅうりする",
+          "meaning": "to repair / 修理",
+          "type": "verb"
+        },
+        {
+          "term": "交換する",
+          "reading": "こうかんする",
+          "meaning": "to exchange, replace / 交换、更换",
+          "type": "verb"
+        },
+        {
+          "term": "限る",
+          "reading": "かぎる",
+          "meaning": "to limit, restrict / 仅限于",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-59-1",
+          "questionNumber": 1,
+          "questionText_ja": "メイさんのラケットの保証期間はいつまでか。",
+          "questionText_en": "Until when is the warranty period for May's racket?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "2014年7月31日",
+              "text_en": "July 31, 2014"
+            },
+            {
+              "id": 2,
+              "text_ja": "2014年10月30日",
+              "text_en": "October 30, 2014"
+            },
+            {
+              "id": 3,
+              "text_ja": "2015年1月31日",
+              "text_en": "January 31, 2015"
+            },
+            {
+              "id": 4,
+              "text_ja": "2015年5月31日",
+              "text_en": "May 31, 2015"
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "メイさんが購入したのは「テニスラケット」です。購入日は「2014年5月1日」です。テニスラケットの保証期間は「お買い上げの日から9か月」と書かれています。2014年5月1日から9か月後は、2015年1月31日となります。したがって 3 が正解です。",
+          "explanation_en": "May purchased a tennis racket (テニスラケット) on May 1, 2014. The warranty duration for tennis rackets is '9 months from date of purchase'. Adding 9 months to May 1, 2014 gives January 31, 2015. Therefore, Option 3 is correct."
+        },
+        {
+          "questionId": "q-59-2",
+          "questionNumber": 2,
+          "questionText_ja": "保証期間中に以下のことをしたら、ラケットがこわれた。保証してもらえるのはどれか。",
+          "questionText_en": "During the warranty period, the racket broke under one of the following circumstances. Which one will be covered under warranty?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "シャワールームに2日間置いてしまった。",
+              "text_en": "Left it in the shower room for 2 days."
+            },
+            {
+              "id": 2,
+              "text_ja": "テニスコートに忘れたら、その後大雨が降って、ぬれてしまった。",
+              "text_en": "Forgot it on the tennis court, and it got soaked in heavy rain."
+            },
+            {
+              "id": 3,
+              "text_ja": "友達がラケットの上に座ってしまった。",
+              "text_en": "A friend sat on top of the racket."
+            },
+            {
+              "id": 4,
+              "text_ja": "暑い中8時間ボールを打ち続けた。",
+              "text_en": "Kept hitting tennis balls for 8 hours in hot weather."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "第2項に保証対象外となる事例が挙げられています。\n1: 「湿気の多いところに長時間置く」に該当するため対象外。\n2: 雨による水濡れ放置は対象外。\n3: 「ラケットの上に重い物をのせる」に該当するため対象外。\n4: ボールを打つことはラケットの本来の使用目的（「普通の使用状態」）であり、長時間打ったとしても目的外使用には該当しません。したがって保証の対象となります。正解は 4 です。",
+          "explanation_en": "Clause 2 lists exclusion cases.\nOption 1: Covered under 'leaving in high humidity for long periods' (not covered).\nOption 2: Negligent exposure to flood/rain (not covered).\nOption 3: Equivalent to 'placing heavy weight on racket' (not covered).\nOption 4: Hitting balls is the normal intended usage ('普通の使用状態') of a tennis racket, and is not prohibited by the exclusion rules. Therefore, Option 4 is covered."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆保証書（テニスラケット保証書）",
+        "text_ja": "保証書では品目（テニス、卓球、バドミントン）ごとの保証月数の違い、および「通常使用による故障（無償保証）」と「不適切使用・保管ミス・天災による免責（有償または不可）」の境界を正確に読み解くことが要点です。",
+        "text_en": "In warranty agreements, differentiate between product types (tennis vs. ping-pong vs. badminton) to calculate expiration dates, and distinguish covered normal use ('普通の使用状態') from exclusions (misuse, improper storage, force majeure).",
+        "structureLayout": [
+          {
+            "component": "製品・購入日",
+            "detail": "テニスラケット、2014年5月1日購入、保証期間9か月",
+            "en": "Product: Tennis racket, bought May 1, 2014; warranty 9 months."
+          },
+          {
+            "component": "期限計算",
+            "detail": "2014年5月1日＋9か月＝2015年1月31日",
+            "en": "Deadline calculation: May 1, 2014 + 9 mo = Jan 31, 2015."
+          },
+          {
+            "component": "免責条項",
+            "detail": "湿気放置、重い物を載せる、ボール打球以外は免責",
+            "en": "Exclusions: High humidity storage, heavy load, improper use."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "品目ごとの保証期間の違い（ピンポン6か月、バドミントン3か月、テニス9か月）を正しく参照しましょう。",
+        "point_en": "Check the exact row corresponding to the sport (ping-pong 6 mo, badminton 3 mo, tennis 9 mo)."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-60",
+      "pages": [
+        136,
+        137
+      ],
+      "problemNumber": 60,
+      "genre": "映画館HP",
+      "genre_en": "Cinema Schedule",
+      "genre_zh": "电影院时刻表",
+      "title_ja": "問題60 映画館HP（シネマスケジュール案内）",
+      "title_en": "Problem 60: Cinema Website (Movie Screening Schedule)",
+      "title_zh": "问题60 电影院网页（影院放映时刻表）",
+      "preReading": {
+        "question_ja": "映画館で映画を見るとき、上映時間や映画の内容をどのように確認しますか。",
+        "question_en": "When watching a movie at a cinema, how do you verify showtimes and synopses?",
+        "question_zh": "去电影院看电影时，你通常如何确认上映时间和剧情简介？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章は、映画館のホームページである。右のページの質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The following text is from a cinema website. Answer the questions on the right. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "A≪上映時間≫ シネマ1（50席）：10:15〜12:25 大きな食卓、14:00〜16:10 大きな食卓、17:15〜19:25 大きな食卓。",
+            "ruby_html": "A≪<ruby>上映時間<rt>じょうえいじかん</rt></ruby>≫ シネマ1（50<ruby>席<rt>せき</rt></ruby>）：10:15〜12:25 <ruby>大<rt>おお</rt></ruby>きな<ruby>食卓<rt>しょくたく</rt></ruby>、14:00〜16:10 <ruby>大<rt>おお</rt></ruby>きな<ruby>食卓<rt>しょくたく</rt></ruby>、17:15〜19:25 <ruby>大<rt>おお</rt></ruby>きな<ruby>食卓<rt>しょくたく</rt></ruby>。",
+            "text_en": "A: Screening Times - Screen 1 (50 seats): 10:15-12:25 'A Big Dining Table'; 14:00-16:10 'A Big Dining Table'; 17:15-19:25 'A Big Dining Table'."
+          },
+          {
+            "id": 2,
+            "text_ja": "シネマ2（150席）：11:45〜13:30 猫と一郎、15:15〜17:00 猫と一郎、19:15〜21:35 オハナ♡。",
+            "ruby_html": "シネマ2（150<ruby>席<rt>せき</rt></ruby>）：11:45〜13:30 <ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>、15:15〜17:00 <ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>、19:15〜21:35 オハナ♡。",
+            "text_en": "Screen 2 (150 seats): 11:45-13:30 'Cat and Ichiro'; 15:15-17:00 'Cat and Ichiro'; 19:15-21:35 'Ohana (Heart)'."
+          },
+          {
+            "id": 3,
+            "text_ja": "シネマ3（300席）：11:15〜14:15 風の忍者、14:30〜17:30 風の忍者。",
+            "ruby_html": "シネマ3（300<ruby>席<rt>せき</rt></ruby>）：11:15〜14:15 <ruby>風<rt>かぜ</rt></ruby>の<ruby>忍者<rt>にんじゃ</rt></ruby>、14:30〜17:30 <ruby>風<rt>かぜ</rt></ruby>の<ruby>忍者<rt>にんじゃ</rt></ruby>。",
+            "text_en": "Screen 3 (300 seats): 11:15-14:15 'Wind Ninja'; 14:30-17:30 'Wind Ninja'."
+          },
+          {
+            "id": 4,
+            "text_ja": "B≪映画紹介≫ ＊「大きな食卓」……15人家族の日常生活。笑いと涙の3年間を追った記録映画。",
+            "ruby_html": "B≪<ruby>映画紹介<rt>えいがしょうかい</rt></ruby>≫ ＊「<ruby>大<rt>おお</rt></ruby>きな<ruby>食卓<rt>しょくたく</rt></ruby>」……15<ruby>人家族<rt>にんかぞく</rt></ruby>の<ruby>日常生活<rt>にちじょうせいかつ</rt></ruby>。<ruby>笑<rt>わら</rt></ruby>いと<ruby>涙<rt>なみだ</rt></ruby>の3<ruby>年間<rt>ねんかん</rt></ruby>を<ruby>追<rt>お</rt></ruby>った<ruby>記録映画<rt>きろくえいが</rt></ruby>。",
+            "text_en": "B: Movie Synopses - * 'A Big Dining Table': Daily life of a 15-person family; documentary chronicling 3 years of tears and laughter."
+          },
+          {
+            "id": 5,
+            "text_ja": "＊「猫と一郎」……一郎は7歳の少年。メガネをかけると猫と会話ができる！？",
+            "ruby_html": "＊「<ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>」……<ruby>一郎<rt>いちろう</rt></ruby>は7<ruby>歳<rt>さい</rt></ruby>の<ruby>少年<rt>しょうねん</rt></ruby>。メガネをかけると<ruby>猫<rt>ねこ</rt></ruby>と<ruby>会話<rt>かいわ</rt></ruby>ができる！？",
+            "text_en": "* 'Cat and Ichiro': Ichiro is a 7-year-old boy. When he puts on glasses, he can talk with cats?!"
+          },
+          {
+            "id": 6,
+            "text_ja": "＊「風の忍者」……風のように移動する忍者ハンゾー。人気マンガを映画化。",
+            "ruby_html": "＊「<ruby>風<rt>かぜ</rt></ruby>の<ruby>忍者<rt>にんじゃ</rt></ruby>」……<ruby>風<rt>かぜ</rt></ruby>のように<ruby>移動<rt>いどう</rt></ruby>する<ruby>忍者<rt>にんじゃ</rt></ruby>ハンゾー。<ruby>人気<rt>にんき</rt></ruby>マンガを<ruby>映画化<rt>えいがか</rt></ruby>。",
+            "text_en": "* 'Wind Ninja': Hanzo, a ninja who moves like the wind; movie adaptation of a hit manga."
+          },
+          {
+            "id": 7,
+            "text_ja": "＊「オハナ♡」……ダンスチームの5人が世界のトップを目指す中で、いつしか家族のような関係に。オハナとはハワイの言葉で「家族」の意味。",
+            "ruby_html": "＊「オハナ♡」……ダンスチームの5<ruby>人<rt>にん</rt></ruby>が<ruby>世界<rt>せかい</rt></ruby>のトップを<ruby>目指<rt>めざ</rt></ruby>す<ruby>中<rt>なか</rt></ruby>で、いつしか<ruby>家族<rt>かぞく</rt></ruby>のような<ruby>関係<rt>かんけい</rt></ruby>に。オハナとはハワイの<ruby>言葉<rt>ことば</rt></ruby>で「<ruby>家族<rt>かぞく</rt></ruby>」の<ruby>意味<rt>いみ</rt></ruby>。",
+            "text_en": "* 'Ohana (Heart)': Five dance team members aim for the world's top and become like family. Ohana is Hawaiian for 'family'."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "ホームページ",
+          "reading": "ほーむぺーじ",
+          "meaning": "website, web page / 网页",
+          "type": "noun"
+        },
+        {
+          "term": "〜席",
+          "reading": "〜せき",
+          "meaning": "seating for ~ / 〜座位",
+          "type": "suffix"
+        },
+        {
+          "term": "追う",
+          "reading": "おう",
+          "meaning": "to follow, chronicle / 追踪、按照顺序记录",
+          "type": "verb"
+        },
+        {
+          "term": "記録",
+          "reading": "きろく",
+          "meaning": "[film] chronicle, documentary / 记录",
+          "type": "noun"
+        },
+        {
+          "term": "目指す",
+          "reading": "めざす",
+          "meaning": "to aim for / 以为目标",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-60-1",
+          "questionNumber": 1,
+          "questionText_ja": "グエンさんは動物が出てくる映画が見たい。午前中はアルバイトがあるが、午後は時間がある。何時から始まる映画が見られるか。",
+          "questionText_en": "Nguyen wants to see a movie featuring animals. He has a part-time job in the morning, but is free in the afternoon. What time does the movie he can watch start?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "12:25",
+              "text_en": "12:25"
+            },
+            {
+              "id": 2,
+              "text_ja": "14:00",
+              "text_en": "14:00"
+            },
+            {
+              "id": 3,
+              "text_ja": "14:30",
+              "text_en": "14:30"
+            },
+            {
+              "id": 4,
+              "text_ja": "15:15",
+              "text_en": "15:15"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "「動物が出てくる映画」は映画紹介から「猫と一郎」（猫と会話ができる）であることが分かります。グエンさんは午後に見るため、午後開始の回を探します。「猫と一郎」の上映回は 11:45〜13:30（開始は午前）と 15:15〜17:00（午後開始）です。したがって午後に見られる映画の開始時刻は「15:15」です。正解は 4 です。",
+          "explanation_en": "From the movie synopsis, the film featuring animals is 'Cat and Ichiro' (猫と一郎). Nguyen is free in the afternoon (午後). Showings for 'Cat and Ichiro' are 11:45-13:30 (starts in morning) and 15:15-17:00 (starts in afternoon). Thus, the afternoon showing begins at 15:15. Therefore, Option 4 is correct."
+        },
+        {
+          "questionId": "q-60-2",
+          "questionNumber": 2,
+          "questionText_ja": "タンさんは、午後時間ができたので映画を見ることにした。映画館にいられる時間は午後3時から午後6時までの3時間だけである。今日タンさんが、初めから終わりまで見ることができる映画は次のうちどれか。",
+          "questionText_en": "Tan decided to watch a movie since he had free time in the afternoon. The time he can stay at the theater is only the 3 hours between 3:00 PM and 6:00 PM. Which movie can Tan watch today from beginning to end?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "大きな食卓",
+              "text_en": "A Big Dining Table"
+            },
+            {
+              "id": 2,
+              "text_ja": "猫と一郎",
+              "text_en": "Cat and Ichiro"
+            },
+            {
+              "id": 3,
+              "text_ja": "風の忍者",
+              "text_en": "Wind Ninja"
+            },
+            {
+              "id": 4,
+              "text_ja": "オハナ♡",
+              "text_en": "Ohana (Heart)"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "タンさんが映画館にいられるのは「15:00〜18:00」です。「初めから終わりまで見る」には、開始が15:00以降かつ終了が18:00以前である必要があります。\n・大きな食卓：14:00〜16:10（15時前開始）、17:15〜19:25（18時以降終了）。不可。\n・猫と一郎：15:15〜17:00。開始が15:00以降で終了が18:00前なので完全に収まります！\n・風の忍者：14:30〜17:30（15時前開始）。不可。\n・オハナ♡：19:15〜21:35。不可。\nしたがって 2 が正解です。",
+          "explanation_en": "Tan can be at the cinema from 15:00 to 18:00. Watching from start to finish requires start >= 15:00 and end <= 18:00.\n- 'A Big Dining Table': 14:00-16:10 (starts before 15:00), 17:15-19:25 (ends after 18:00).\n- 'Cat and Ichiro': 15:15-17:00 (starts 15:15, ends 17:00; fits completely!).\n- 'Wind Ninja': 14:30-17:30 (starts before 15:00).\n- 'Ohana': 19:15-21:35 (after 18:00).\nTherefore, Option 2 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆映画館HP（シネマスケジュール案内）",
+        "text_ja": "タイムテーブル読解では、あらすじ（映画紹介）から条件に合う作品名を特定するステップと、利用可能時間帯（開始時刻≧滞在開始、終了時刻≦滞在終了）に完全に収まるスロットを照合するステップを連動させて解きます。",
+        "text_en": "Timetable reading links synopsis matching (identifying the film title from themes) with interval verification (ensuring start >= arrival time and end <= departure time).",
+        "structureLayout": [
+          {
+            "component": "映画内容照合",
+            "detail": "動物＝「猫と一郎」",
+            "en": "Content match: Animals = 'Cat and Ichiro'."
+          },
+          {
+            "component": "時間帯照合",
+            "detail": "15:00〜18:00に完全に収まる＝「猫と一郎」（15:15〜17:00）",
+            "en": "Time match: Entirely within 15:00-18:00 = 'Cat and Ichiro' (15:15-17:00)."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "途中入場や途中退出は不可（「初めから終わりまで」）なので、開始・終了の両方が時間枠内に収まるか必ず確認しましょう。",
+        "point_en": "Verify both start and end times fall strictly within the stay window since partial viewing is prohibited."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-61",
+      "pages": [
+        138,
+        139
+      ],
+      "problemNumber": 61,
+      "genre": "メール",
+      "genre_en": "Email Notification",
+      "genre_zh": "电子邮件",
+      "title_ja": "問題61 メール（会社説明会予約完了メール）",
+      "title_en": "Problem 61: Email (Company Briefing Session Confirmation)",
+      "title_zh": "问题61 电子邮件（说明会预约完成通知邮件）",
+      "preReading": {
+        "question_ja": "就職活動や面接の案内メールで、どのような注意事項が書かれていますか。",
+        "question_en": "What precautions and instructions are typically written in job hunt or briefing confirmation emails?",
+        "question_zh": "在求职或面试的确认邮件中，通常会写明哪些注意事项？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章と右のページのメールを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and the email on the right page, and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "ウェンさんはある会社に就職したいと思い、その会社の会社説明会にホームページから申し込みをした。その後、右のページのような添付ファイルがついた確認のメールが届いた。",
+            "ruby_html": "ウェンさんはある<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>したいと<ruby>思<rt>おも</rt></ruby>い、その<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>会社説明会<rt>かいしゃせつめいかい</rt></ruby>にホームページから<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みをした。その<ruby>後<rt>ご</rt></ruby>、<ruby>右<rt>みぎ</rt></ruby>のページのような<ruby>添付<rt>てんぷ</rt></ruby>ファイルがついた<ruby>確認<rt>かくにん</rt></ruby>のメールが<ruby>届<rt>とど</rt></ruby>いた。",
+            "text_en": "Wen wanted to work at a certain company and registered for their informational briefing on the website. Afterwards, a confirmation email arrived with an attachment."
+          },
+          {
+            "id": 2,
+            "text_ja": "(株)△△社 会社説明会 予約完了メール 【開催日時】20xx年12月1日 13:00〜14:30 ウェン・モーリー様",
+            "ruby_html": "(<ruby>株<rt>かぶ</rt></ruby>)△△<ruby>社<rt>しゃ</rt></ruby> <ruby>会社説明会<rt>かいしゃせつめいかい</rt></ruby> <ruby>予約完了<rt>よやくかんりょう</rt></ruby>メール 【<ruby>開催日時<rt>かいさいにちじ</rt></ruby>】20xx<ruby>年<rt>ねん</rt></ruby>12<ruby>月<rt>がつ</rt></ruby>1<ruby>日<rt>にち</rt></ruby> 13:00〜14:30 ウェン・モーリー<ruby>様<rt>さま</rt></ruby>",
+            "text_en": "Delta Co., Ltd. Company Briefing Reservation Confirmation - Date & Time: December 1, 20XX, 13:00-14:30 - To: Wen Morley"
+          },
+          {
+            "id": 3,
+            "text_ja": "株式会社△△社、採用担当です。このたびは、説明会にお申し込みいただきありがとうございました。日時や持ち物をもう一度ご確認いただき、ご参加くださいますよう、お願いいたします。",
+            "ruby_html": "<ruby>株式会社<rt>かぶしきがいしゃ</rt></ruby>△△<ruby>社<rt>しゃ</rt></ruby>、<ruby>採用担当<rt>さいようたんとう</rt></ruby>です。このたびは、<ruby>説明会<rt>せつめいかい</rt></ruby>にお<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みいただきありがとうございました。<ruby>日時<rt>にちじ</rt></ruby>や<ruby>持<rt>も</rt></ruby>ち<ruby>物<rt>もの</rt></ruby>をもう<ruby>一度<rt>いちど</rt></ruby>ご<ruby>確認<rt>かくにん</rt></ruby>いただき、ご<ruby>参加<rt>さんか</rt></ruby>くださいますよう、お<ruby>願<rt>ねが</rt></ruby>いいたします。",
+            "text_en": "Recruitment Department, Delta Co., Ltd. Thank you very much for applying to our informational briefing. Please confirm the date, time, and required items again before attending."
+          },
+          {
+            "id": 4,
+            "text_ja": "「会社説明会」 ●持ち物：筆記用具、履歴書（写真をはってください。）、この予約完了メールをプリントアウトしたもの。 ●服装：スーツ。",
+            "ruby_html": "「<ruby>会社説明会<rt>かいしゃせつめいかい</rt></ruby>」 ●<ruby>持<rt>も</rt></ruby>ち<ruby>物<rt>もの</rt></ruby>：<ruby>筆記用具<rt>ひっきようぐ</rt></ruby>、<ruby>履歴書<rt>りれきしょ</rt></ruby>（<ruby>写真<rt>しゃしん</rt></ruby>をはってください。）、この<ruby>予約完了<rt>よやくかんりょう</rt></ruby>メールをプリントアウトしたもの。 ●<ruby>服装<rt>ふくそう</rt></ruby>：スーツ。",
+            "text_en": "Company Briefing - Items to bring: Writing utensils, résumé (please affix photo), printout of this reservation email. - Attire: Suit."
+          },
+          {
+            "id": 5,
+            "text_ja": "●会場：△△社本社 〒111-2222 東京都○○市□□2-3-4 (株)△△社第一ビル ●交通機関：JR中央線・総武線、東京メトロ東西線「○×駅」徒歩10分。",
+            "ruby_html": "●<ruby>会場<rt>かいじょう</rt></ruby>：△△<ruby>社本社<rt>しゃほんしゃ</rt></ruby> 〒111-2222 <ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>□□2-3-4 (<ruby>株<rt>かぶ</rt></ruby>)△△<ruby>社第一<rt>しゃだいいち</rt></ruby>ビル ●<ruby>交通機関<rt>こうつうきかん</rt></ruby>：JR<ruby>中央線<rt>ちゅうおうせん</rt></ruby>・<ruby>総武線<rt>そうぶせん</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>メトロ<ruby>東西線<rt>とうざいせん</rt></ruby>「○×<ruby>駅<rt>えき</rt></ruby>」<ruby>徒歩<rt>とほ</rt></ruby>10<ruby>分<rt>ふん</rt></ruby>。",
+            "text_en": "Venue: Delta Co. Headquarters, Building 1, 2-3-4 square-square, oo-city, Tokyo; Transport: JR Chuo/Sobu Line or Tokyo Metro Tozai Line, 10 min walk from 'ox Station'."
+          },
+          {
+            "id": 6,
+            "text_ja": "●受付場所：ビル1階の(株)△△社本社受付 ●受付開始時間：開始時間の10分前〜 ＊早くご来社いただいてもご案内ができません。また、開始時刻を過ぎてからの参加はできません。",
+            "ruby_html": "●<ruby>受付場所<rt>うけつけばしょ</rt></ruby>：ビル1<ruby>階<rt>かい</rt></ruby>の(<ruby>株<rt>かぶ</rt></ruby>)△△<ruby>社本社受付<rt>しゃほんしゃうけつけ</rt></ruby> ●<ruby>受付開始時間<rt>うけつけかいしじかん</rt></ruby>：<ruby>開始時間<rt>かいしじかん</rt></ruby>の10<ruby>分前<rt>ふんまえ</rt></ruby>〜 ＊<ruby>早<rt>はや</rt></ruby>くご<ruby>来社<rt>らいしゃ</rt></ruby>いただいてもご<ruby>案内<rt>あんない</rt></ruby>ができません。また、<ruby>開始時刻<rt>かいしじこく</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎてからの<ruby>参加<rt>さんか</rt></ruby>はできません。",
+            "text_en": "Reception desk: 1st floor HQ reception; Reception opens: 10 minutes prior to starting time. * Even if you arrive early, we cannot accommodate you. Furthermore, entry after starting time is not permitted."
+          },
+          {
+            "id": 7,
+            "text_ja": "＜注意事項＞ ＊当日は時間厳守でお願いいたします。 ＊前日までに参加日の変更がある場合は、当社ホームページの採用案内ページからキャンセルの手続きをして、あらためて申し込みをしてください。 ＊当日の遅刻や欠席は直接当社にご連絡ください。(採用担当: 03-4567-8901)",
+            "ruby_html": "＜<ruby>注意事項<rt>ちゅういじこう</rt></ruby>＞ ＊<ruby>当日<rt>とうじつ</rt></ruby>は<ruby>時間厳守<rt>じかんげんしゅ</rt></ruby>でお<ruby>願<rt>ねが</rt></ruby>いいたします。 ＊<ruby>前日<rt>ぜんじつ</rt></ruby>までに<ruby>参加日<rt>さんかび</rt></ruby>の<ruby>変更<rt>へんこう</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>当社<rt>とうしゃ</rt></ruby>ホームページの<ruby>採用案内<rt>さいようあんない</rt></ruby>ページからキャンセルの<ruby>手続<rt>てつづ</rt></ruby>きをして、あらためて<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みをしてください。 ＊<ruby>当日<rt>とうじつ</rt></ruby>の<ruby>遅刻<rt>ちこく</rt></ruby>や<ruby>欠席<rt>けっせき</rt></ruby>は<ruby>直接当社<rt>ちょくせつとうしゃ</rt></ruby>にご<ruby>連絡<rt>れんらく</rt></ruby>ください。(<ruby>採用担当<rt>さいようたんとう</rt></ruby>: 03-4567-8901)",
+            "text_en": "Important Notices: * Please strictly observe punctuality. * To reschedule by the day before, please cancel via our recruitment webpage and re-apply. * In case of same-day tardiness or absence, please contact us directly by phone (Recruitment Team: 03-4567-8901)."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "添付ファイル",
+          "reading": "てんぷふぁいる",
+          "meaning": "attached document, attachment / 附件",
+          "type": "noun"
+        },
+        {
+          "term": "株式会社",
+          "reading": "かぶしきがいしゃ",
+          "meaning": "joint-stock company, Co., Ltd. / 股份公司",
+          "type": "noun"
+        },
+        {
+          "term": "採用",
+          "reading": "さいよう",
+          "meaning": "hiring, recruitment / 录用",
+          "type": "noun"
+        },
+        {
+          "term": "筆記用具",
+          "reading": "ひっきようぐ",
+          "meaning": "writing instruments / 文具",
+          "type": "noun"
+        },
+        {
+          "term": "履歴書",
+          "reading": "りれきしょ",
+          "meaning": "résumé, CV / 简历",
+          "type": "noun"
+        },
+        {
+          "term": "プリントアウト",
+          "reading": "ぷりんとおうと",
+          "meaning": "printout / 打印",
+          "type": "noun"
+        },
+        {
+          "term": "徒歩",
+          "reading": "とほ",
+          "meaning": "on foot, walking / 徒步",
+          "type": "noun"
+        },
+        {
+          "term": "来社する",
+          "reading": "らいしゃする",
+          "meaning": "to visit the company / 来公司",
+          "type": "verb"
+        },
+        {
+          "term": "時間厳守",
+          "reading": "じかんげんしゅ",
+          "meaning": "strict punctuality / 严格遵守时间",
+          "type": "noun"
+        },
+        {
+          "term": "当社",
+          "reading": "とうしゃ",
+          "meaning": "our company / 我公司",
+          "type": "noun"
+        },
+        {
+          "term": "キャンセル",
+          "reading": "きゃんせる",
+          "meaning": "cancellation / 取消",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-61-1",
+          "questionNumber": 1,
+          "questionText_ja": "説明会に行く際、○×駅に何時に着くのが一番よいか。",
+          "questionText_en": "When attending the briefing, what time is best to arrive at ox Station?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "12時35分",
+              "text_en": "12:35"
+            },
+            {
+              "id": 2,
+              "text_ja": "12時50分",
+              "text_en": "12:50"
+            },
+            {
+              "id": 3,
+              "text_ja": "13時ちょうど",
+              "text_en": "Exactly 13:00"
+            },
+            {
+              "id": 4,
+              "text_ja": "14時半",
+              "text_en": "14:30"
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "説明会の開始時刻は13:00です。駅から会社までは徒歩10分かかり、受付開始は「開始時間の10分前（12:50）〜」です。また「開始時刻を過ぎてからの参加はできません」とあります。12:50に駅に着いた場合、徒歩10分で到着は13:00となり、少しでも遅れると参加できなくなります。12:35に駅に着けば、12:45頃に会社に着き、12:50の受付開始と同時に余裕をもって受付を済ませることができます。したがって 1 が正解です。",
+          "explanation_en": "The briefing begins at 13:00. It takes 10 minutes on foot from the station, and reception opens 10 minutes prior (12:50). Late arrivals after 13:00 are not permitted. Arriving at the station at 12:50 would put arrival at the building right at 13:00 with zero margin for error. Arriving at the station at 12:35 allows arrival around 12:45-12:50, entering punctually right when reception opens. Therefore, Option 1 is correct."
+        },
+        {
+          "questionId": "q-61-2",
+          "questionNumber": 2,
+          "questionText_ja": "ウェンさんは説明会の日に具合が悪くなり開始の時間に行けなくなった。どうすればよいか。",
+          "questionText_en": "Wen felt unwell on the day of the briefing and became unable to make it by starting time. What should she do?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "連絡はせず、参加もしない。",
+              "text_en": "Do not contact them and do not attend."
+            },
+            {
+              "id": 2,
+              "text_ja": "会社のホームページの採用案内ページからキャンセルをする。",
+              "text_en": "Cancel via the recruitment page on the company website."
+            },
+            {
+              "id": 3,
+              "text_ja": "連絡はせず、遅れて参加する。",
+              "text_en": "Do not contact them and join late."
+            },
+            {
+              "id": 4,
+              "text_ja": "会社の採用担当者に電話をする。",
+              "text_en": "Call the company's recruitment coordinator."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "注意事項に「前日までに参加日の変更がある場合は、当社ホームページの採用案内ページからキャンセルの手続きをして…」「当日の遅刻や欠席は直接当社にご連絡ください。(採用担当: 03-4567-8901)」と明確に区別されています。今回は「説明会の日に（＝当日）」の欠席・遅刻であるため、電話で直接採用担当者に連絡しなければなりません。したがって 4 が正解です。",
+          "explanation_en": "The instructions distinguish between: 'rescheduling by the previous day' (cancel online via webpage) and 'same-day tardiness/absence' ('contact us directly by phone at 03-4567-8901'). Since this occurred on the day of the briefing (当日), calling the recruitment coordinator directly is required. Therefore, Option 4 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メール（会社説明会予約完了メール）",
+        "text_ja": "ビジネス案内メールでは、「事前対応（前日まで・Web）」と「緊急対応（当日・電話）」の手続きの分岐を峻別することが頻出テーマです。また所要時間（駅からの徒歩時間＋受付開始時間）の逆算問題も重要です。",
+        "text_en": "Business confirmation emails often test bifurcated procedures: advance online actions (by previous day) vs. urgent telephone actions (same-day). Back-calculating departure times including walking buffers is another key task.",
+        "structureLayout": [
+          {
+            "component": "時間逆算",
+            "detail": "13:00開始、12:50受付、徒歩10分→12:35駅到着が最適",
+            "en": "Time back-calculation: 13:00 start, 12:50 reception, 10 min walk -> 12:35 at station."
+          },
+          {
+            "component": "変更・欠席対応",
+            "detail": "前日まで＝HPでキャンセル、当日＝電話で連絡",
+            "en": "Reschedule rule: By prior day = Web cancel; Same day = Call recruitment."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "「前日まで」と「当日」で連絡手段が異なる点に注目しましょう。",
+        "point_en": "Note the critical distinction between 'by previous day' (Web) and 'on the day' (Phone)."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-62",
+      "pages": [
+        140,
+        141
+      ],
+      "problemNumber": 62,
+      "genre": "メール",
+      "genre_en": "Email Newsletter",
+      "genre_zh": "电子邮件杂志",
+      "title_ja": "問題62 メール（留学生の生活応援メルマガ）",
+      "title_en": "Problem 62: Email (International Students Newsletter)",
+      "title_zh": "问题62 电子杂志（留学生生活支援电子杂志）",
+      "preReading": {
+        "question_ja": "メールマガジンで読みたい記事やイベント情報はどのように探しますか。",
+        "question_en": "How do you find interesting articles or event information in email newsletters?",
+        "question_zh": "在电子杂志中，你通常如何查找感兴趣的文章或活动信息？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章はメールマガジンである。文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "The following text is an email newsletter. Read it and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "★留学生の生活応援メールマガジン★ ★20XX年1月号★ 新年あけましておめでとうございます！",
+            "ruby_html": "★<ruby>留学生<rt>りゅうがくせい</rt></ruby>の<ruby>生活応援<rt>せいかつおうえん</rt></ruby>メールマガジン★ ★20XX<ruby>年<rt>ねん</rt></ruby>1<ruby>月号<rt>がつごう</rt></ruby>★ <ruby>新年<rt>しんねん</rt></ruby>あけましておめでとうございます！",
+            "text_en": "★ International Student Life Support Newsletter ★ ★ January Issue, 20XX ★ Happy New Year!"
+          },
+          {
+            "id": 2,
+            "text_ja": "日本のお正月はいかがですか？ 留学生の生活応援メルマガは、今年もみなさんの役に立つ情報をどんどん紹介しますので、どうぞよろしくお願いいたします！",
+            "ruby_html": "<ruby>日本<rt>にほん</rt></ruby>のお<ruby>正月<rt>しょうがつ</rt></ruby>はいかがですか？ <ruby>留学生<rt>りゅうがくせい</rt></ruby>の<ruby>生活応援<rt>せいかつおうえん</rt></ruby>メルマガは、<ruby>今年<rt>ことし</rt></ruby>もみなさんの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>情報<rt>じょうほう</rt></ruby>をどんどん<ruby>紹介<rt>しょうかい</rt></ruby>しますので、どうぞよろしくお<ruby>願<rt>ねが</rt></ruby>いいたします！",
+            "text_en": "How are you enjoying the New Year in Japan? The International Student Support Newsletter will continue sharing lots of useful tips this year, so stay tuned!"
+          },
+          {
+            "id": 3,
+            "text_ja": "目次 1. ニュース………新年会・不用品交換 2. 特集……………「みんなの節約方法」",
+            "ruby_html": "<ruby>目次<rt>もくじ</rt></ruby> 1. ニュース………<ruby>新年会<rt>しんねんかい</rt></ruby>・<ruby>不用品交換<rt>ふようひんこうかん</rt></ruby> 2. <ruby>特集<rt>とくしゅう</rt></ruby>……………「みんなの<ruby>節約方法<rt>せつやくほうほう</rt></ruby>」",
+            "text_en": "Contents: 1. News: New Year party, Unwanted goods exchange; 2. Special Feature: 'Everyone's Money-Saving Tips'."
+          },
+          {
+            "id": 4,
+            "text_ja": "◆1. ニュース 新年会 餅つき、おせち料理など、日本のお正月を楽しみましょう。日時：1月15日(土) 13:00〜17:00 場所：○○市民会館集会室 参加申し込みはこちら ①http://ryugakuoen.or.jp/shinnen.htm",
+            "ruby_html": "◆1. ニュース <ruby>新年会<rt>しんねんかい</rt></ruby> <ruby>餅<rt>もち</rt></ruby>つき、おせち<ruby>料理<rt>りょうり</rt></ruby>など、<ruby>日本<rt>にほん</rt></ruby>のお<ruby>正月<rt>しょうがつ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しみましょう。<ruby>日時<rt>にちじ</rt></ruby>：1<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>) 13:00〜17:00 <ruby>場所<rt>ばしょ</rt></ruby>：○○<ruby>市民会館集会室<rt>しみんかいかんしゅうかいしつ</rt></ruby> <ruby>参加申<rt>さんかもう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みはこちら ①http://ryugakuoen.or.jp/shinnen.htm",
+            "text_en": "1. News - New Year Party: Enjoy traditional Japanese New Year with mochi pounding and osechi food. Date: Sat, Jan 15, 13:00-17:00 at City Hall Room. Register here: (1) http://ryugakuoen.or.jp/shinnen.htm"
+          },
+          {
+            "id": 5,
+            "text_ja": "不用品交換 家具、電気製品など、欲しいものやいらないものを書いておくと、だれかと交換できるかもしれません。交換ページはこちら http://ryugakuoen.or.jp/koukan.htm",
+            "ruby_html": "<ruby>不用品交換<rt>ふようひんこうかん</rt></ruby> <ruby>家具<rt>かぐ</rt></ruby>、<ruby>電気製品<rt>でんきせいひん</rt></ruby>など、<ruby>欲<rt>ほ</rt></ruby>しいものやいらないものを<ruby>書<rt>か</rt></ruby>いておくと、だれかと<ruby>交換<rt>こうかん</rt></ruby>できるかもしれません。<ruby>交換<rt>こうかん</rt></ruby>ページはこちら http://ryugakuoen.or.jp/koukan.htm",
+            "text_en": "Unwanted items exchange: Post items you need or want to give away, such as furniture and electrical appliances! Exchange page: http://ryugakuoen.or.jp/koukan.htm"
+          },
+          {
+            "id": 6,
+            "text_ja": "◆2. 特集「みんなの節約方法」 電気代を30%カットする方法、安いお店の情報など、上手に節約しながら日本での生活を楽しむ留学生のアイディアがたくさん！ぜひ参考にしてください！ 特集ページはこちら http://ryugakuoen.or.jp/tokushu.htm",
+            "ruby_html": "◆2. <ruby>特集<rt>とくしゅう</rt></ruby>「みんなの<ruby>節約方法<rt>せつやくほうほう</rt></ruby>」 <ruby>電気代<rt>でんきだい</rt></ruby>を30%カットする<ruby>方法<rt>ほうほう</rt></ruby>、<ruby>安<rt>やす</rt></ruby>いお<ruby>店<rt>みせ</rt></ruby>の<ruby>情報<rt>じょうほう</rt></ruby>など、<ruby>上手<rt>じょうず</rt></ruby>に<ruby>節約<rt>せつやく</rt></ruby>しながら<ruby>日本<rt>にほん</rt></ruby>での<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむ<ruby>留学生<rt>りゅうがくせい</rt></ruby>のアイディアがたくさん！ぜひ<ruby>参考<rt>さんこう</rt></ruby>にしてください！ <ruby>特集<rt>とくしゅう</rt></ruby>ページはこちら http://ryugakuoen.or.jp/tokushu.htm",
+            "text_en": "2. Special Feature 'Everyone's Money-Saving Tips': Full of ideas from students who save money while enjoying life, such as cutting electricity bills by 30% and finding cheap shops! Special feature: http://ryugakuoen.or.jp/tokushu.htm"
+          },
+          {
+            "id": 7,
+            "text_ja": "◆バックナンバーはこちら http://ryugakuoen.or.jp/menu-mmag.htm ◆このメルマガは配信専用です。このアドレスに返信はできません。 ご意見、お問い合わせはこちら ②http://ryugakuoen.or.jp/ad/mail.htm ◆配信停止はこちら ③http://ryugakuoen.or.jp/mmag.resign.htm",
+            "ruby_html": "◆バックナンバーはこちら http://ryugakuoen.or.jp/menu-mmag.htm ◆このメルマガは<ruby>配信専用<rt>はいしんせんよう</rt></ruby>です。このアドレスに<ruby>返信<rt>へんしん</rt></ruby>はできません。 ご<ruby>意見<rt>いけん</rt></ruby>、お<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせはこちら ②http://ryugakuoen.or.jp/ad/mail.htm ◆<ruby>配信停止<rt>はいしんていし</rt></ruby>はこちら ③http://ryugakuoen.or.jp/mmag.resign.htm",
+            "text_en": "Back issues: http://ryugakuoen.or.jp/menu-mmag.htm; * This newsletter is send-only; you cannot reply directly. Feedback/Inquiries: (2) http://ryugakuoen.or.jp/ad/mail.htm; Unsubscribe: (3) http://ryugakuoen.or.jp/mmag.resign.htm"
+          },
+          {
+            "id": 8,
+            "text_ja": "発行人：NPO留学生の生活応援グループ 編集人：メルマガ委員会 e-mail: ④xxx@ryuugakuoen.or.jp",
+            "ruby_html": "<ruby>発行人<rt>はっこうにん</rt></ruby>：NPO<ruby>留学生<rt>りゅうがくせい</rt></ruby>の<ruby>生活応援<rt>せいかつおうえん</rt></ruby>グループ <ruby>編集人<rt>へんしゅうにん</rt></ruby>：メルマガ<ruby>委員会<rt>いいんかい</rt></ruby> e-mail: ④xxx@ryuugakuoen.or.jp",
+            "text_en": "Publisher: NPO International Student Life Support Group; Editor: Newsletter Committee; e-mail: (4) xxx@ryuugakuoen.or.jp"
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "メールマガジン",
+          "meaning_ja": "メールで送られてくる情報",
+          "meaning_en": "e-mail magazine, digital newsletter"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "不用品",
+          "reading": "ふようひん",
+          "meaning": "unneeded, unwanted article / 不使用的东西",
+          "type": "noun"
+        },
+        {
+          "term": "特集",
+          "reading": "とくしゅう",
+          "meaning": "special feature / 专题",
+          "type": "noun"
+        },
+        {
+          "term": "節約",
+          "reading": "せつやく",
+          "meaning": "saving, economizing / 节约",
+          "type": "noun"
+        },
+        {
+          "term": "餅つき",
+          "reading": "もちつき",
+          "meaning": "pounding rice into mochi / 捣年糕",
+          "type": "noun"
+        },
+        {
+          "term": "おせち料理",
+          "reading": "おせちりょうり",
+          "meaning": "traditional New Year's dishes / 年节饭",
+          "type": "noun"
+        },
+        {
+          "term": "カットする",
+          "reading": "かっとする",
+          "meaning": "to cut, reduce / 削减",
+          "type": "verb"
+        },
+        {
+          "term": "配信",
+          "reading": "はいしん",
+          "meaning": "send out, transmit / 发送",
+          "type": "noun"
+        },
+        {
+          "term": "〜専用",
+          "reading": "〜せんよう",
+          "meaning": "exclusively for ~ / 〜专用",
+          "type": "suffix"
+        },
+        {
+          "term": "返信",
+          "reading": "へんしん",
+          "meaning": "reply / 回信",
+          "type": "noun"
+        },
+        {
+          "term": "クリックする",
+          "reading": "くりっくする",
+          "meaning": "to click / 点击",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-62-1",
+          "questionNumber": 1,
+          "questionText_ja": "新年会に参加したい場合、どうすればよいと書いてあるか。",
+          "questionText_en": "What is written that one should do if one wants to participate in the New Year party?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "連絡はしないで、直接1月15日に○○市民会館集会室へ行く。",
+              "text_en": "Go directly to the City Hall meeting room on January 15 without contacting them."
+            },
+            {
+              "id": 2,
+              "text_ja": "①のURLをクリックして手続きをする。",
+              "text_en": "Click URL (1) and complete the procedure."
+            },
+            {
+              "id": 3,
+              "text_ja": "②のURLをクリックして手続きをする。",
+              "text_en": "Click URL (2) and complete the procedure."
+            },
+            {
+              "id": 4,
+              "text_ja": "④のメールアドレスにメールを送る。",
+              "text_en": "Send an email to address (4)."
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "「新年会」の案内の直下に「参加申し込みはこちら ①http://ryugakuoen.or.jp/shinnen.htm」と指定されています。したがって、①のURLをクリックして手続きをする 2 が正解です。",
+          "explanation_en": "Directly beneath the New Year Party announcement, it specifies: 'Sign up here: (1) http://ryugakuoen.or.jp/shinnen.htm'. Therefore, Option 2 ('Click URL (1) and complete the procedure') is correct."
+        },
+        {
+          "questionId": "q-62-2",
+          "questionNumber": 2,
+          "questionText_ja": "このメールマガジンをもう受け取りたくない。どうすればよいと書いてあるか。",
+          "questionText_en": "You no longer want to receive this newsletter. What does it say you should do?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "このメールマガジンに返信をして伝える。",
+              "text_en": "Inform them by replying to this email newsletter."
+            },
+            {
+              "id": 2,
+              "text_ja": "②のURLをクリックして手続きをする。",
+              "text_en": "Click URL (2) and complete the procedure."
+            },
+            {
+              "id": 3,
+              "text_ja": "③のURLをクリックして手続きをする。",
+              "text_en": "Click URL (3) and complete the procedure."
+            },
+            {
+              "id": 4,
+              "text_ja": "④のメールアドレスにメールを送る。",
+              "text_en": "Send an email to email address (4)."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "末尾のフッター部分に「◆このメルマガは配信専用です。このアドレスに返信はできません」「◆配信停止はこちら ③http://ryugakuoen.or.jp/mmag.resign.htm」と明記されています。配信停止（購読解除）をするには③のURLにアクセスする必要があります。したがって 3 が正解です。",
+          "explanation_en": "In the footer, it clearly states: 'This newsletter is send-only; you cannot reply directly' and 'Unsubscribe here: (3) http://ryugakuoen.or.jp/mmag.resign.htm'. To stop receiving it, you must click URL (3). Therefore, Option 3 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メール（留学生の生活応援メルマガ）",
+        "text_ja": "メールマガジンの問題では、本文中の各種URLリンク（申込用、問い合わせ用、配信停止用）の役割を正しく識別することが核心です。「配信専用アドレス」には返信できないというルールも頻出の確認ポイントです。",
+        "text_en": "In newsletter questions, match each URL link with its specific destination (event registration, general inquiries, unsubscription). Remember that send-only (配信専用) addresses do not accept direct replies.",
+        "structureLayout": [
+          {
+            "component": "① 参加申込",
+            "detail": "新年会参加リンク（shinnen.htm）",
+            "en": "(1) Event registration: New Year Party link."
+          },
+          {
+            "component": "② 問合せ窓口",
+            "detail": "意見・問い合わせ用リンク（mail.htm）",
+            "en": "(2) Inquiries: Feedback & question form."
+          },
+          {
+            "component": "③ 配信停止",
+            "detail": "購読解除用リンク（resign.htm）",
+            "en": "(3) Unsubscribe: Resign link."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "URLの末尾（shinnen, mail, resign）の単語からもリンクの役割を推測できます。",
+        "point_en": "Keywords at the end of URLs (shinnen, mail, resign) help confirm each link's exact purpose."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-63",
+      "pages": [
+        142,
+        143
+      ],
+      "problemNumber": 63,
+      "genre": "メール",
+      "genre_en": "Customer Service Email",
+      "genre_zh": "客服邮件",
+      "title_ja": "問題63 メール（不良品返品・返金メール）",
+      "title_en": "Problem 63: Email (Product Return & Refund Response)",
+      "title_zh": "问题63 电子邮件（残次品退货与退款回复邮件）",
+      "preReading": {
+        "question_ja": "ネットショッピングで買った商品が壊れていたとき、どのように対応しますか。",
+        "question_en": "How do you respond when a product purchased online arrives broken or defective?",
+        "question_zh": "网购的商品如果有破损或瑕疵，你通常会如何处理？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "インターネットで買った商品が不良品だったので、チンさんが返品の希望をメールで連絡したら、以下のような返事が来た。",
+            "ruby_html": "インターネットで<ruby>買<rt>か</rt></ruby>った<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>不良品<rt>ふりょうひん</rt></ruby>だったので、チンさんが<ruby>返品<rt>へんぴん</rt></ruby>の<ruby>希望<rt>きぼう</rt></ruby>をメールで<ruby>連絡<rt>れんらく</rt></ruby>したら、<ruby>以下<rt>いか</rt></ruby>のような<ruby>返事<rt>へんじ</rt></ruby>が<ruby>来<rt>き</rt></ruby>た。",
+            "text_en": "Because an item purchased online was defective, Chin emailed requesting a return, and received the following response."
+          },
+          {
+            "id": 2,
+            "text_ja": "チン・スーチー様 いつも○×ショップをご利用いただきまして、ありがとうございます。担当の木村と申します。",
+            "ruby_html": "チン・スーチー<ruby>様<rt>さま</rt></ruby> いつも○×ショップをご<ruby>利用<rt>りよう</rt></ruby>いただきまして、ありがとうございます。<ruby>担当<rt>たんとう</rt></ruby>の<ruby>木村<rt>きむら</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。",
+            "text_en": "Dear Chin Suchi: Thank you for shopping with OX Shop. My name is Kimura, customer service representative."
+          },
+          {
+            "id": 3,
+            "text_ja": "このたびは、先日ご購入いただきました商品【ABC電気ポット】に不備がございましたこと、大変申し訳ありませんでした。",
+            "ruby_html": "このたびは、<ruby>先日<rt>せんじつ</rt></ruby>ご<ruby>購入<rt>こうにゅう</rt></ruby>いただきました<ruby>商品<rt>しょうひん</rt></ruby>【ABC<ruby>電気<rt>でんき</rt></ruby>ポット】に<ruby>不備<rt>ふび</rt></ruby>がございましたこと、<ruby>大変<rt>たいへん</rt></ruby><ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんでした。",
+            "text_en": "We sincerely apologize that the product you recently purchased, [ABC Electric Pot], had a defect."
+          },
+          {
+            "id": 4,
+            "text_ja": "大変ご面倒ではございますが、商品【ABC電気ポット】を、商品着払いにて、ご返送くださいますようお願いいたします。",
+            "ruby_html": "<ruby>大変<rt>たいへん</rt></ruby>ご<ruby>面倒<rt>めんどう</rt></ruby>ではございますが、<ruby>商品<rt>しょうひん</rt></ruby>【ABC<ruby>電気<rt>でんき</rt></ruby>ポット】を、<ruby>商品着払<rt>しょうひんちゃくばら</rt></ruby>いにて、ご<ruby>返送<rt>へんそう</rt></ruby>くださいますようお<ruby>願<rt>ねが</rt></ruby>いいたします。",
+            "text_en": "We are very sorry for the inconvenience, but please return the [ABC Electric Pot] to us via cash on delivery (receiver pays postage)."
+          },
+          {
+            "id": 5,
+            "text_ja": "●ご返送先住所 〒123-4567 東京都○○区○○町1-2-3 株式会社 ○×ショップ Tel: 03-1234-5678",
+            "ruby_html": "●ご<ruby>返送先住所<rt>へんそうさきじゅうしょ</rt></ruby> 〒123-4567 <ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>区<rt>く</rt></ruby>○○<ruby>町<rt>ちょう</rt></ruby>1-2-3 <ruby>株式会社<rt>かぶしきがいしゃ</rt></ruby> ○×ショップ Tel: 03-1234-5678",
+            "text_en": "Return address: 1-2-3 oo-cho, oo-ku, Tokyo 123-4567, OX Shop Co., Ltd. Tel: 03-1234-5678"
+          },
+          {
+            "id": 6,
+            "text_ja": "商品が到着しましたら、ご返金の対応をさせていただきます。",
+            "ruby_html": "<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>到着<rt>とうちゃく</rt></ruby>しましたら、ご<ruby>返金<rt>へんきん</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby>をさせていただきます。",
+            "text_en": "Once the item arrives, we will process your refund."
+          },
+          {
+            "id": 7,
+            "text_ja": "つきましては、お客様のお振込先口座を教えていただけますでしょうか。下の項目にご入力の上、このメールにご返信いただきますようお願いいたします。",
+            "ruby_html": "つきましては、お<ruby>客様<rt>きゃくさま</rt></ruby>のお<ruby>振込先口座<rt>ふりこみさきこうざ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えていただけますでしょうか。<ruby>下<rt>した</rt></ruby>の<ruby>項目<rt>こうもく</rt></ruby>にご<ruby>入力<rt>にゅうりょく</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>、このメールにご<ruby>返信<rt>へんしん</rt></ruby>いただきますようお<ruby>願<rt>ねが</rt></ruby>いいたします。",
+            "text_en": "Accordingly, could you please provide your bank transfer account information? Please fill in the fields below and reply to this email."
+          },
+          {
+            "id": 8,
+            "text_ja": "●銀行名： ●支店名： ●口座番号： ●ご名義人様：",
+            "ruby_html": "●<ruby>銀行名<rt>ぎんこうめい</rt></ruby>： ●<ruby>支店名<rt>してんめい</rt></ruby>： ●<ruby>口座番号<rt>こうざばんごう</rt></ruby>： ●ご<ruby>名義人様<rt>めいぎにんさま</rt></ruby>：",
+            "text_en": "- Bank name: - Branch name: - Account number: - Account holder name:"
+          },
+          {
+            "id": 9,
+            "text_ja": "このたびはお客様にご迷惑をおかけしてしまい、大変申し訳ありませんでした。またのご利用を心よりお待ちしております。",
+            "ruby_html": "このたびはお<ruby>客様<rt>きゃくさま</rt></ruby>にご<ruby>迷惑<rt>めいわく</rt></ruby>をおかけしてしまい、<ruby>大変<rt>たいへん</rt></ruby><ruby>申<rt>もう</rt></ruby>し<ruby>訳<rt>わけ</rt></ruby>ありませんでした。またのご<ruby>利用<rt>りよう</rt></ruby>を<ruby>心<rt>こころ</rt></ruby>よりお<ruby>待<rt>ま</rt></ruby>ちしております。",
+            "text_en": "We truly apologize for causing you such inconvenience, and look forward to serving you again in the future."
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "label": "注1",
+          "term": "返品",
+          "meaning_ja": "買った品物を返すこと",
+          "meaning_en": "returning purchased goods"
+        },
+        {
+          "label": "注2",
+          "term": "不備",
+          "meaning_ja": "よくない、不完全なこと",
+          "meaning_en": "defect, imperfection"
+        },
+        {
+          "label": "注3",
+          "term": "着払い",
+          "meaning_ja": "配達の料金を、荷物などを受け取った方が払うこと",
+          "meaning_en": "freight collect, receiver pays shipping fee"
+        },
+        {
+          "label": "注4",
+          "term": "返金",
+          "meaning_ja": "お金を返すこと",
+          "meaning_en": "refund, return of money"
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "不良品",
+          "reading": "ふりょうひん",
+          "meaning": "defective item / 残次品",
+          "type": "noun"
+        },
+        {
+          "term": "担当",
+          "reading": "たんとう",
+          "meaning": "being in charge, representative / 负责人",
+          "type": "noun"
+        },
+        {
+          "term": "面倒な",
+          "reading": "めんどうな",
+          "meaning": "bothersome / 麻烦的",
+          "type": "na-adjective"
+        },
+        {
+          "term": "返送する",
+          "reading": "へんそうする",
+          "meaning": "to send back, return / 寄回",
+          "type": "verb"
+        },
+        {
+          "term": "到着する",
+          "reading": "とうちゃくする",
+          "meaning": "to arrive, get to / 到达",
+          "type": "verb"
+        },
+        {
+          "term": "対応をする",
+          "reading": "たいおうをする",
+          "meaning": "to handle, process / 处理",
+          "type": "phrase"
+        },
+        {
+          "term": "つきましては",
+          "reading": "つきましては",
+          "meaning": "in this connection, therefore / 因此",
+          "type": "conjunction"
+        },
+        {
+          "term": "振込先口座",
+          "reading": "ふりこみさきこうざ",
+          "meaning": "bank account for refund / 汇款账户",
+          "type": "noun"
+        },
+        {
+          "term": "項目",
+          "reading": "こうもく",
+          "meaning": "item, field / 项目",
+          "type": "noun"
+        },
+        {
+          "term": "返信する",
+          "reading": "へんしんする",
+          "meaning": "to reply / 回信",
+          "type": "verb"
+        },
+        {
+          "term": "名義",
+          "reading": "めいぎ",
+          "meaning": "name, account holder / 用户名",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-63-1",
+          "questionNumber": 1,
+          "questionText_ja": "買った商品をどうしてほしいと言っているか。",
+          "questionText_en": "What does the shop say they want done with the purchased product?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "そのまま直して使う。",
+              "text_en": "Repair it as is and use it."
+            },
+            {
+              "id": 2,
+              "text_ja": "使わないで捨てる。",
+              "text_en": "Throw it away without using it."
+            },
+            {
+              "id": 3,
+              "text_ja": "○×ショップに送り、払った送料をメールで連絡する。",
+              "text_en": "Send it to OX Shop and report the postage paid by email."
+            },
+            {
+              "id": 4,
+              "text_ja": "着払いで、○×ショップに送る。",
+              "text_en": "Send it to OX Shop via cash on delivery (freight collect)."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文に「商品【ABC電気ポット】を、商品着払いにて、ご返送くださいますようお願いいたします」と明確に書かれています。「着払い」とは受取人（ショップ側）が送料を負担して送る方法のことです。したがって 4 が正解です。",
+          "explanation_en": "The email clearly asks: 'please return the [ABC Electric Pot] via cash on delivery (着払い).' 'Cash on delivery' means the receiver (the shop) pays shipping charges. Therefore, Option 4 is correct."
+        },
+        {
+          "questionId": "q-63-2",
+          "questionNumber": 2,
+          "questionText_ja": "お金はどのように戻ってくるか。",
+          "questionText_en": "How will the money be refunded?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "商品を送り返さなくても、銀行の口座情報を教えると急にお金が振り込まれる。",
+              "text_en": "Money will be transferred immediately upon giving bank details without sending back the item."
+            },
+            {
+              "id": 2,
+              "text_ja": "商品を送ったことをメールすると、お金が振り込まれる。",
+              "text_en": "Money will be transferred when you email that you sent the product."
+            },
+            {
+              "id": 3,
+              "text_ja": "商品が○×ショップに届いたら、お金が郵便で送られてくる。",
+              "text_en": "Money will be mailed by post when the product arrives at OX Shop."
+            },
+            {
+              "id": 4,
+              "text_ja": "商品が○×ショップに届いたら、伝えておいた口座にお金が振り込まれる。",
+              "text_en": "When the product arrives at OX Shop, money will be transferred to the provided bank account."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "本文に「商品が到着しましたら、ご返金の対応をさせていただきます」「お客様のお振込先口座を教えていただけますでしょうか」とあります。つまり、メールで事前に伝えておいた口座に、返品商品がショップに到着した後に振込が行われます。したがって 4 が正解です。",
+          "explanation_en": "The email states: 'Once the item arrives, we will process your refund' and 'could you please provide your bank transfer account information?'. Thus, once the returned goods arrive at the shop, the refund is deposited into the designated account. Therefore, Option 4 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メール（不良品返品・返金メール）",
+        "text_ja": "カスタマーサービスの返信メールでは、「送料負担の区分（着払い＝受取人払い／元払い＝送り主払い）」と「返金のトリガー条件（商品到着後に指定口座へ振込）」の流れを正確に把握することが重要です。",
+        "text_en": "In customer service refund emails, understand key commercial terms like '着払い' (receiver-paid postage) vs. '元払い' (sender-paid postage), and trace the refund sequence: customer ships item + replies with account info -> item arrives -> funds transferred.",
+        "structureLayout": [
+          {
+            "component": "返品手順",
+            "detail": "電気ポットを着払い（ショップ送料負担）で返送",
+            "en": "Return step: Ship electric pot collect on delivery."
+          },
+          {
+            "component": "返金手順",
+            "detail": "口座情報を返信メールで連絡→商品到着後に振込",
+            "en": "Refund step: Reply with bank info -> refund transferred upon arrival."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "「着払い」（荷物を受け取る側が送料を払う）の意味を必ず覚えておきましょう。",
+        "point_en": "Remember that '着払い' (chakubarai) means the recipient pays the shipping charges."
+      }
+    },
+    {
+      "id": "dokkai-n3-p4-64",
+      "pages": [
+        144,
+        145
+      ],
+      "problemNumber": 64,
+      "genre": "グラフ",
+      "genre_en": "Chart / Graph Analysis",
+      "genre_zh": "图表分析",
+      "title_ja": "問題64 グラフ（好きな動物調査グラフ）",
+      "title_en": "Problem 64: Graph (Favorite Animals Survey Graph)",
+      "title_zh": "问题64 图表（最喜爱的动物调查图表）",
+      "preReading": {
+        "question_ja": "棒グラフや折れ線グラフを見るとき、年代による変化をどう比べますか。",
+        "question_en": "When looking at bar or line charts, how do you compare chronological changes over different eras?",
+        "question_zh": "查看柱状图或折线图时，你通常如何比较不同年份的变化？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章と右のページのグラフを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Look at the following text and the graph on the right page, and answer the questions below. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "右のグラフは、好きな動物について日本人3,600人を対象に行った調査の結果である。1983年と2007年の調査結果のうち、上位1位から8位までを示している。",
+            "ruby_html": "<ruby>右<rt>みぎ</rt></ruby>のグラフは、<ruby>好<rt>す</rt></ruby>きな<ruby>動物<rt>どうぶつ</rt></ruby>について<ruby>日本人<rt>にほんじん</rt></ruby>3,600<ruby>人<rt>にん</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>った<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>である。1983<ruby>年<rt>ねん</rt></ruby>と2007<ruby>年<rt>ねん</rt></ruby>の<ruby>調査結果<rt>ちょうさけっか</rt></ruby>のうち、<ruby>上位<rt>じょうい</rt></ruby>1<ruby>位<rt>い</rt></ruby>から8<ruby>位<rt>い</rt></ruby>までを<ruby>示<rt>しめ</rt></ruby>している。",
+            "text_en": "The graph on the right shows the results of a survey conducted among 3,600 Japanese people regarding their favorite animals. It displays the top 1st through 8th ranked animals in the 1983 and 2007 surveys."
+          },
+          {
+            "id": 2,
+            "text_ja": "【好きな動物 複数回答結果】（NHK放送文化研究所「日本人の好きなもの」より引用）",
+            "ruby_html": "【<ruby>好<rt>す</rt></ruby>きな<ruby>動物<rt>どうぶつ</rt></ruby> <ruby>複数回答結果<rt>ふくすうかいとうけっか</rt></ruby>】（NHK<ruby>放送文化研究所<rt>ほうそうぶんかけんきゅうじょ</rt></ruby>「<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>好<rt>す</rt></ruby>きなもの」より<ruby>引用<rt>いんよう</rt></ruby>）",
+            "text_en": "[Favorite Animals - Multiple Responses Allowed] (Source: NHK Broadcasting Culture Research Institute, 'What Japanese People Like')"
+          },
+          {
+            "id": 3,
+            "text_ja": "犬：1983年約62%、2007年約65%。猫：1983年約39%、2007年約36%。イルカ：1983年約29%、2007年約31%。",
+            "ruby_html": "<ruby>犬<rt>いぬ</rt></ruby>：1983<ruby>年約<rt>ねんやく</rt></ruby>62%、2007<ruby>年約<rt>ねんやく</rt></ruby>65%。<ruby>猫<rt>ねこ</rt></ruby>：1983<ruby>年約<rt>ねんやく</rt></ruby>39%、2007<ruby>年約<rt>ねんやく</rt></ruby>36%。イルカ：1983<ruby>年約<rt>ねんやく</rt></ruby>29%、2007<ruby>年約<rt>ねんやく</rt></ruby>31%。",
+            "text_en": "Dog: 1983 approx 62%, 2007 approx 65%. Cat: 1983 approx 39%, 2007 approx 36%. Dolphin: 1983 approx 29%, 2007 approx 31%."
+          },
+          {
+            "id": 4,
+            "text_ja": "馬：1983年約39%、2007年約28%。うさぎ：1983年約50%、2007年約27%。パンダ：1983年約58%、2007年約29%。コアラ：1983年約51%、2007年約26%。リス：1983年約50%、2007年約26%。",
+            "ruby_html": "<ruby>馬<rt>うま</rt></ruby>：1983<ruby>年約<rt>ねんやく</rt></ruby>39%、2007<ruby>年約<rt>ねんやく</rt></ruby>28%。うさぎ：1983<ruby>年約<rt>ねんやく</rt></ruby>50%、2007<ruby>年約<rt>ねんやく</rt></ruby>27%。パンダ：1983<ruby>年約<rt>ねんやく</rt></ruby>58%、2007<ruby>年約<rt>ねんやく</rt></ruby>29%。コアラ：1983<ruby>年約<rt>ねんやく</rt></ruby>51%、2007<ruby>年約<rt>ねんやく</rt></ruby>26%。リス：1983<ruby>年約<rt>ねんやく</rt></ruby>50%、2007<ruby>年約<rt>ねんやく</rt></ruby>26%。",
+            "text_en": "Horse: 1983 ~39%, 2007 ~28%. Rabbit: 1983 ~50%, 2007 ~27%. Panda: 1983 ~58%, 2007 ~29%. Koala: 1983 ~51%, 2007 ~26%. Squirrel: 1983 ~50%, 2007 ~26%."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "全国",
+          "reading": "ぜんこく",
+          "meaning": "whole country, nationwide / 全国",
+          "type": "noun"
+        },
+        {
+          "term": "対象",
+          "reading": "たいしょう",
+          "meaning": "[as] subjects, target audience / 对象",
+          "type": "noun"
+        },
+        {
+          "term": "調査",
+          "reading": "ちょうさ",
+          "meaning": "investigation, survey / 调查",
+          "type": "noun"
+        },
+        {
+          "term": "結果",
+          "reading": "けっか",
+          "meaning": "result, outcome / 结果",
+          "type": "noun"
+        },
+        {
+          "term": "上位",
+          "reading": "じょうい",
+          "meaning": "the top ~, the leading ~ / 排位靠前",
+          "type": "noun"
+        },
+        {
+          "term": "示す",
+          "reading": "しめす",
+          "meaning": "to indicate, show / 显示",
+          "type": "verb"
+        },
+        {
+          "term": "差",
+          "reading": "さ",
+          "meaning": "difference, gap / 差异",
+          "type": "noun"
+        },
+        {
+          "term": "複数回答",
+          "reading": "ふくすうかいとう",
+          "meaning": "multiple responses allowed / 多项选择题",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-64-1",
+          "questionNumber": 1,
+          "questionText_ja": "1983年と2007年で一番大きな差があらわれた動物はどれか。",
+          "questionText_en": "Which animal showed the largest difference between 1983 and 2007?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "犬",
+              "text_en": "Dog"
+            },
+            {
+              "id": 2,
+              "text_ja": "パンダ",
+              "text_en": "Panda"
+            },
+            {
+              "id": 3,
+              "text_ja": "馬",
+              "text_en": "Horse"
+            },
+            {
+              "id": 4,
+              "text_ja": "うさぎ",
+              "text_en": "Rabbit"
+            }
+          ],
+          "correctAnswer": 2,
+          "explanation_ja": "グラフの2本の棒の高さの差を比較します。\n・犬：62%と65%で差は約3%\n・パンダ：58%から29%へと約29%の減少（選択肢の中で最大の差）\n・馬：39%から28%へと約11%の差\n・うさぎ：50%から27%へと約23%の差\nしたがって、最も大きな差があらわれた動物は「パンダ」です。正解は 2 です。",
+          "explanation_en": "Compare the height differences between the two bars for each animal:\n- Dog: 62% vs 65%, diff is ~3%\n- Panda: 58% down to 29%, diff is ~29% (largest difference among options)\n- Horse: 39% down to 28%, diff is ~11%\n- Rabbit: 50% down to 27%, diff is ~23%\nTherefore, the animal exhibiting the biggest difference is the panda. Option 2 is correct."
+        },
+        {
+          "questionId": "q-64-2",
+          "questionNumber": 2,
+          "questionText_ja": "グラフについて正しく述べているのはどれか。",
+          "questionText_en": "Which statement correctly describes the graph?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "ねこは1983年と2007年で大きな差がある。",
+              "text_en": "Cats show a large difference between 1983 and 2007."
+            },
+            {
+              "id": 2,
+              "text_ja": "うさぎは2007年の調査では3位である。",
+              "text_en": "Rabbits ranked 3rd in the 2007 survey."
+            },
+            {
+              "id": 3,
+              "text_ja": "パンダは1983年の調査では1位である。",
+              "text_en": "Pandas ranked 1st in the 1983 survey."
+            },
+            {
+              "id": 4,
+              "text_ja": "コアラは2007年の調査では1983年より減少している。",
+              "text_en": "Koalas decreased in the 2007 survey compared to 1983."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "各選択肢を検討します。\n1: ねこは39%と36%で差はわずか3%であり、「大きな差がある」は不適切です。\n2: 2007年の3位はイルカ（約31%）です。うさぎ（約27%）は6位前後です。\n3: 1983年の1位は犬（約62%）です。パンダ（約58%）は2位です。\n4: コアラは1983年の約51%から2007年の約26%へと大きく減少しています。記述は完全に正しいです。\nしたがって 4 が正解です。",
+          "explanation_en": "Evaluating each option:\nOption 1: Cats only changed from 39% to 36% (~3% diff), not a large difference.\nOption 2: In 2007, 3rd was the dolphin (~31%). Rabbits (~27%) ranked around 6th.\nOption 3: In 1983, 1st was the dog (~62%), with panda in 2nd (~58%).\nOption 4: Koalas dropped substantially from ~51% in 1983 to ~26% in 2007, meaning they clearly decreased (減少している). This statement is completely accurate. Therefore, Option 4 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆グラフ（好きな動物調査グラフ）",
+        "text_ja": "グラフ・図表読解では、①凡例（どの色の棒がどの年代か）、②縦軸の単位（％）、③横軸の項目と順位、④差分（増加・減少・変化量）を素早く視覚的に照合します。「1位」「差が最大」「減少している」といったキーワードをグラフから正確に拾いましょう。",
+        "text_en": "Graph and chart questions require four verification steps: (1) Legend (which bar represents which survey year), (2) Y-axis scale (percentage), (3) Category rankings on X-axis, and (4) Direction/magnitude of change (increase, decrease, delta). Focus on keywords like '1st place', 'maximum difference', and 'decrease'.",
+        "structureLayout": [
+          {
+            "component": "凡例と軸",
+            "detail": "黒棒＝1983年、灰色棒＝2007年。縦軸＝％（0〜70）",
+            "en": "Legend: Dark = 1983, Grey = 2007. Y-axis: % (0 to 70)."
+          },
+          {
+            "component": "変化量比較",
+            "detail": "パンダが58%→29%と最大の落ち込み（差が一番大きい）",
+            "en": "Delta check: Panda dropped by ~29%, the largest gap."
+          },
+          {
+            "component": "増減の判定",
+            "detail": "コアラは51%→26%と明確に減少している",
+            "en": "Trend check: Koala decreased from ~51% to ~26%."
+          }
+        ]
+      },
+      "testAdvice": {
+        "point_ja": "1位は常に「犬」（62%／65%）です。「パンダが1位」などの引っかけに惑わされないように！",
+        "point_en": "Dogs are consistently #1 in both years (~62% and ~65%); don't be tricked by claims of other animals ranking first."
+      }
+    }
+  ]
+}

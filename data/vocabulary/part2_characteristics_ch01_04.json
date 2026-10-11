@@ -1,0 +1,3483 @@
+{
+  "metadata": {
+    "title": "新にほんご500問 N3 語彙編 (Vocabulary) - 第2部 性質別 1課〜4課",
+    "part": "part_2",
+    "chapters_range": "1-4",
+    "description": "Vocabulary data transcribed from Nihongo 500 Mon N3 Vocabulary Part 2 (Characteristics) Chapters 1-4 (和語動詞, 漢語動詞, 形容詞, 副詞) with complete ruby furigana, warming up, yattemiyou drills, and exercises.",
+    "version": "1.0.0"
+  },
+  "chapters": [
+    {
+      "metadata": {
+        "chapter": "part2_01",
+        "topic_ja": "第2部 1課：和語動詞",
+        "topic_en": "Part 2 Chapter 1: Native Japanese Verbs (Wago)",
+        "pages": [
+          98,
+          99,
+          100,
+          101
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "part2_01-1",
+          "title_ja": "自動詞",
+          "title_en": "Intransitive Verbs",
+          "page": 98,
+          "warming_up": {
+            "question_ja": "物が自然に起きる変化や動きを表す自動詞にはどのようなものがありますか。",
+            "question_en": "What intransitive verbs describe spontaneous changes or movements?"
+          },
+          "words": [
+            {
+              "id": "v2-01-001",
+              "term_ja": "生える",
+              "reading": "はえる",
+              "ruby_html": "<ruby>生<rt>は</rt></ruby>える",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Grow, emerge",
+              "meaning_zh": "长",
+              "example_ja": "歯が生える",
+              "example_en": "teeth grow in"
+            },
+            {
+              "id": "v2-01-002",
+              "term_ja": "冷める",
+              "reading": "さめる",
+              "ruby_html": "<ruby>冷<rt>さ</rt></ruby>める",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Cool down",
+              "meaning_zh": "凉了",
+              "example_ja": "スープが冷める",
+              "example_en": "soup cools down"
+            },
+            {
+              "id": "v2-01-003",
+              "term_ja": "燃える",
+              "reading": "もえる",
+              "ruby_html": "<ruby>燃<rt>も</rt></ruby>える",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Burn",
+              "meaning_zh": "燃烧",
+              "example_ja": "家が燃える",
+              "example_en": "house burns"
+            },
+            {
+              "id": "v2-01-004",
+              "term_ja": "目立つ",
+              "reading": "めだつ",
+              "ruby_html": "<ruby>目立<rt>めだ</rt></ruby>つ",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Stand out",
+              "meaning_zh": "引人注目",
+              "example_ja": "服が目立つ",
+              "example_en": "clothes stand out"
+            },
+            {
+              "id": "v2-01-005",
+              "term_ja": "輝く",
+              "reading": "かがやく",
+              "ruby_html": "<ruby>輝<rt>かがや</rt></ruby>く",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Shine, gleam, beam",
+              "meaning_zh": "耀眼，闪光",
+              "example_ja": "星が輝く",
+              "example_en": "stars shine"
+            },
+            {
+              "id": "v2-01-006",
+              "term_ja": "黙る",
+              "reading": "だまる",
+              "ruby_html": "<ruby>黙<rt>だま</rt></ruby>る",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Keep quiet, shut up",
+              "meaning_zh": "沉默",
+              "example_ja": "黙って、話を聞く",
+              "example_en": "listen silently"
+            },
+            {
+              "id": "v2-01-007",
+              "term_ja": "たまる",
+              "reading": "たまる",
+              "ruby_html": "たまる",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Build up, accumulate",
+              "meaning_zh": "积累",
+              "example_ja": "水がたまる",
+              "example_en": "water accumulates"
+            },
+            {
+              "id": "v2-01-008",
+              "term_ja": "効く",
+              "reading": "きく",
+              "ruby_html": "<ruby>効<rt>き</rt></ruby>く",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Be effective, take effect",
+              "meaning_zh": "有效，好用",
+              "example_ja": "薬がよく効く",
+              "example_en": "medicine is effective"
+            },
+            {
+              "id": "v2-01-009",
+              "term_ja": "代わる",
+              "reading": "かわる",
+              "ruby_html": "<ruby>代<rt>か</rt></ruby>わる",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Replace, take place of",
+              "meaning_zh": "更换",
+              "example_ja": "社長が代わる",
+              "example_en": "company president changes"
+            },
+            {
+              "id": "v2-01-010",
+              "term_ja": "頼る",
+              "reading": "たよる",
+              "ruby_html": "<ruby>頼<rt>たよ</rt></ruby>る",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Depend on, rely on",
+              "meaning_zh": "依赖",
+              "example_ja": "親に頼る",
+              "example_en": "rely on parents"
+            },
+            {
+              "id": "v2-01-011",
+              "term_ja": "うなずく",
+              "reading": "うなずく",
+              "ruby_html": "うなずく",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Nod (in agreement)",
+              "meaning_zh": "点头",
+              "example_ja": "彼の言葉にうなずく",
+              "example_en": "nod at his words"
+            },
+            {
+              "id": "v2-01-012",
+              "term_ja": "飽きる",
+              "reading": "あきる",
+              "ruby_html": "<ruby>飽<rt>あ</rt></ruby>きる",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Get bored with, tire of",
+              "meaning_zh": "厌倦",
+              "example_ja": "ゲームに飽きる",
+              "example_en": "get tired of playing games"
+            },
+            {
+              "id": "v2-01-013",
+              "term_ja": "叫ぶ",
+              "reading": "さけぶ",
+              "ruby_html": "<ruby>叫<rt>さけ</rt></ruby>ぶ",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Shout, call",
+              "meaning_zh": "喊叫",
+              "example_ja": "大きな声で叫ぶ",
+              "example_en": "shout in a loud voice"
+            },
+            {
+              "id": "v2-01-014",
+              "term_ja": "向かう",
+              "reading": "むかう",
+              "ruby_html": "<ruby>向<rt>む</rt></ruby>かう",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Head for, depart for",
+              "meaning_zh": "前往",
+              "example_ja": "車で空港に向かう",
+              "example_en": "head for airport by car"
+            },
+            {
+              "id": "v2-01-015",
+              "term_ja": "浮く",
+              "reading": "うく",
+              "ruby_html": "<ruby>浮<rt>う</rt></ruby>く",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Float",
+              "meaning_zh": "漂浮",
+              "example_ja": "油は水に浮く",
+              "example_en": "oil floats on water"
+            },
+            {
+              "id": "v2-01-016",
+              "term_ja": "くっつく",
+              "reading": "くっつく",
+              "ruby_html": "くっつく",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Stick to",
+              "meaning_zh": "紧贴在一起",
+              "example_ja": "ガムが靴にくっつく",
+              "example_en": "gum sticks to shoes"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "困ったときは、何でも親に（　）てはいけません。",
+              "options": [
+                "冷める",
+                "頼る",
+                "浮く",
+                "くっつく",
+                "目立つ",
+                "代わる"
+              ],
+              "answer": "頼る",
+              "explanation": "「頼る」（rely on）が文脈に合います。「親に頼ってはいけません」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "赤い服を着ている人は、遠くからでもよく（　）。",
+              "options": [
+                "冷める",
+                "頼る",
+                "浮く",
+                "くっつく",
+                "目立つ",
+                "代わる"
+              ],
+              "answer": "目立つ",
+              "explanation": "「目立つ」（stand out）が入ります。赤い服は遠くからでもよく目立ちます。"
+            },
+            {
+              "id": 3,
+              "question_ja": "早く食べないと、スープが（　）しまいますよ。",
+              "options": [
+                "冷める",
+                "頼る",
+                "浮く",
+                "くっつく",
+                "目立つ",
+                "代わる"
+              ],
+              "answer": "冷める",
+              "explanation": "温かい料理の熱が失われることを表す「冷める」（cool down）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "4月から、英語の先生が（　）ます。",
+              "options": [
+                "冷める",
+                "頼る",
+                "浮く",
+                "くっつく",
+                "目立つ",
+                "代わる"
+              ],
+              "answer": "代わる",
+              "explanation": "担当者が交代することを表す「代わる」（be replaced/change）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "磁石が冷蔵庫に（　）いる。",
+              "options": [
+                "冷める",
+                "頼る",
+                "浮く",
+                "くっつく",
+                "目立つ",
+                "代わる"
+              ],
+              "answer": "くっつく",
+              "explanation": "物と物が密着して離れなくなる「くっつく」（stick to）が入ります。"
+            },
+            {
+              "id": 6,
+              "question_ja": "木の葉が水に（　）いる。",
+              "options": [
+                "冷める",
+                "頼る",
+                "浮く",
+                "くっつく",
+                "目立つ",
+                "代わる"
+              ],
+              "answer": "浮く",
+              "explanation": "水面に浮かんでいる様子を表す「浮く」（float）が入ります。"
+            }
+          ]
+        },
+        {
+          "section_id": "part2_01-2",
+          "title_ja": "他動詞",
+          "title_en": "Transitive Verbs",
+          "page": 99,
+          "warming_up": {
+            "question_ja": "目的語（〜を）をとる他動詞にはどのようなものがありますか。",
+            "question_en": "What transitive verbs take a direct object (with を)?"
+          },
+          "words": [
+            {
+              "id": "v2-01-017",
+              "term_ja": "握る",
+              "reading": "にぎる",
+              "ruby_html": "<ruby>握<rt>にぎ</rt></ruby>る",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Grasp, hold onto",
+              "meaning_zh": "握住",
+              "example_ja": "ボールを握る",
+              "example_en": "hold a ball"
+            },
+            {
+              "id": "v2-01-018",
+              "term_ja": "重ねる",
+              "reading": "かさねる",
+              "ruby_html": "<ruby>重<rt>かさ</rt></ruby>ねる",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Pile, stack",
+              "meaning_zh": "重叠",
+              "example_ja": "皿を重ねる",
+              "example_en": "stack plates"
+            },
+            {
+              "id": "v2-01-019",
+              "term_ja": "縛る",
+              "reading": "しばる",
+              "ruby_html": "<ruby>縛<rt>しば</rt></ruby>る",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Tie, bind",
+              "meaning_zh": "束，捆",
+              "example_ja": "新聞をひもで縛る",
+              "example_en": "tie up newspapers with string"
+            },
+            {
+              "id": "v2-01-020",
+              "term_ja": "囲む",
+              "reading": "かこむ",
+              "ruby_html": "<ruby>囲<rt>かこ</rt></ruby>む",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Surround, ring",
+              "meaning_zh": "围绕",
+              "example_ja": "池を石で囲む",
+              "example_en": "surround pond with stones"
+            },
+            {
+              "id": "v2-01-021",
+              "term_ja": "追う",
+              "reading": "おう",
+              "ruby_html": "<ruby>追<rt>お</rt></ruby>う",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Chase, pursue",
+              "meaning_zh": "追逐",
+              "example_ja": "犬がボールを追う",
+              "example_en": "dog chases ball"
+            },
+            {
+              "id": "v2-01-022",
+              "term_ja": "扱う",
+              "reading": "あつかう",
+              "ruby_html": "<ruby>扱<rt>あつか</rt></ruby>う",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Handle, treat",
+              "meaning_zh": "处理，应对",
+              "example_ja": "物を大切に扱う",
+              "example_en": "handle things with care"
+            },
+            {
+              "id": "v2-01-023",
+              "term_ja": "支払う",
+              "reading": "しはらう",
+              "ruby_html": "<ruby>支払<rt>しはら</rt></ruby>う",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Pay",
+              "meaning_zh": "支付",
+              "example_ja": "電話代を支払う",
+              "example_en": "pay telephone bill"
+            },
+            {
+              "id": "v2-01-024",
+              "term_ja": "好む",
+              "reading": "このむ",
+              "ruby_html": "<ruby>好<rt>この</rt></ruby>む",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Like, be fond of",
+              "meaning_zh": "偏好",
+              "example_ja": "若い人は肉料理を好む",
+              "example_en": "young people prefer meat dishes"
+            },
+            {
+              "id": "v2-01-025",
+              "term_ja": "食う",
+              "reading": "くう",
+              "ruby_html": "<ruby>食<rt>く</rt></ruby>う",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Eat",
+              "meaning_zh": "吃",
+              "example_ja": "そばを食う",
+              "example_en": "eat soba"
+            },
+            {
+              "id": "v2-01-026",
+              "term_ja": "指す",
+              "reading": "さす",
+              "ruby_html": "<ruby>指<rt>さ</rt></ruby>す",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Show, point",
+              "meaning_zh": "指",
+              "example_ja": "人を指で指す",
+              "example_en": "point finger at someone"
+            },
+            {
+              "id": "v2-01-027",
+              "term_ja": "示す",
+              "reading": "しめす",
+              "ruby_html": "<ruby>示<rt>しめ</rt></ruby>す",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Show, indicate, represent",
+              "meaning_zh": "标明",
+              "example_ja": "地図で場所を示す",
+              "example_en": "indicate location on a map"
+            },
+            {
+              "id": "v2-01-028",
+              "term_ja": "語る",
+              "reading": "かたる",
+              "ruby_html": "<ruby>語<rt>かた</rt></ruby>る",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Relate, talk about",
+              "meaning_zh": "讲述",
+              "example_ja": "夢を語る",
+              "example_en": "talk about one's dreams"
+            },
+            {
+              "id": "v2-01-029",
+              "term_ja": "過ごす",
+              "reading": "すごす",
+              "ruby_html": "<ruby>過<rt>す</rt></ruby>ごす",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Spend, pass",
+              "meaning_zh": "过（日子，节日等）",
+              "example_ja": "楽しい時間を過ごす",
+              "example_en": "spend an enjoyable time"
+            },
+            {
+              "id": "v2-01-030",
+              "term_ja": "延ばす",
+              "reading": "のばす",
+              "ruby_html": "<ruby>延<rt>の</rt></ruby>ばす",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Extend, draw out",
+              "meaning_zh": "延长",
+              "example_ja": "出発を1日延ばす",
+              "example_en": "postpone departure by one day"
+            },
+            {
+              "id": "v2-01-031",
+              "term_ja": "目指す",
+              "reading": "めざす",
+              "ruby_html": "<ruby>目指<rt>めざ</rt></ruby>す",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Aim for",
+              "meaning_zh": "以……为目标",
+              "example_ja": "優勝を目指す",
+              "example_en": "aim for victory"
+            },
+            {
+              "id": "v2-01-032",
+              "term_ja": "求める",
+              "reading": "もとめる",
+              "ruby_html": "<ruby>求<rt>も</rt></ruby>める",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Seek, ask for",
+              "meaning_zh": "寻求",
+              "example_ja": "警察に助けを求める",
+              "example_en": "ask police for help"
+            },
+            {
+              "id": "v2-01-033",
+              "term_ja": "可愛がる",
+              "reading": "かわいがる",
+              "ruby_html": "<ruby>可愛<rt>かわい</rt></ruby>がる",
+              "part_of_speech": "動詞（グループ1）",
+              "meaning_en": "Treat with affection",
+              "meaning_zh": "疼爱",
+              "example_ja": "子供を可愛がる",
+              "example_en": "treat children with affection"
+            },
+            {
+              "id": "v2-01-034",
+              "term_ja": "いじめる",
+              "reading": "いじめる",
+              "ruby_html": "いじめる",
+              "part_of_speech": "動詞（グループ2）",
+              "meaning_en": "Bully, mistreat",
+              "meaning_zh": "欺负",
+              "example_ja": "弟をいじめる",
+              "example_en": "tease younger brother"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "出発の時間を（　）す。",
+              "options": [
+                "示す",
+                "求める",
+                "過ごす",
+                "延ばす",
+                "囲む"
+              ],
+              "answer": "延ばす",
+              "explanation": "「延ばす」（extend/postpone）が入ります。「出発の時間を延ばす」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "指で方角を（　）す。",
+              "options": [
+                "示す",
+                "求める",
+                "過ごす",
+                "延ばす",
+                "囲む"
+              ],
+              "answer": "示す",
+              "explanation": "「示す」（indicate/show）が入ります。「指で方角を示す」。"
+            },
+            {
+              "id": 3,
+              "question_ja": "テーブルを（　）んで座る。",
+              "options": [
+                "示す",
+                "求める",
+                "過ごす",
+                "延ばす",
+                "囲む"
+              ],
+              "answer": "囲む",
+              "explanation": "周りをぐるりと取り巻く「囲む」（surround）が入ります。「テーブルを囲んで座る」。"
+            },
+            {
+              "id": 4,
+              "question_ja": "助けを（　）る。",
+              "options": [
+                "示す",
+                "求める",
+                "過ごす",
+                "延ばす",
+                "囲む"
+              ],
+              "answer": "求める",
+              "explanation": "援助や支援を欲しがって要求する「求める」（seek/ask for）が入ります。「助けを求める」。"
+            },
+            {
+              "id": 5,
+              "question_ja": "家族と楽しい時間を（　）す。",
+              "options": [
+                "示す",
+                "求める",
+                "過ごす",
+                "延ばす",
+                "囲む"
+              ],
+              "answer": "過ごす",
+              "explanation": "時間を経過させる・暮らすことを表す「過ごす」（spend time）が入ります。「楽しい時間を過ごす」。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "part2_01-ex1",
+          "title_ja": "練習しよう 1: 線で結びなさい。",
+          "title_en": "Practice 1: Match the words with their corresponding collocations.",
+          "type": "matching",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 水が",
+              "answer": "たまる",
+              "explanation": "「水がたまる」（water accumulates）"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(1) ② 星が",
+              "answer": "かがやく",
+              "explanation": "「星がかがやく」（stars shine）"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(1) ③ そばを",
+              "answer": "くう",
+              "explanation": "「そばをくう」（eat soba）"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "(1) ④ 皿を",
+              "answer": "かさねる",
+              "explanation": "「皿をかさねる」（stack plates）"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "(2) ① 歯が",
+              "answer": "はえる",
+              "explanation": "「歯がはえる」（teeth grow in）"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "(2) ② 薬が",
+              "answer": "きく",
+              "explanation": "「薬がきく」（medicine takes effect）"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "(2) ③ 夢を",
+              "answer": "かたる",
+              "explanation": "「夢をかたる」（talk about dreams）"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_01-ex2",
+          "title_ja": "練習しよう 2: 適切な形を選びなさい。",
+          "title_en": "Practice 2: Choose the appropriate verb form.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "ガラスですから、大切に（あつかって／あつまって）ください。",
+              "options": [
+                "あつかって",
+                "あつまって"
+              ],
+              "answer": "あつかって",
+              "explanation": "「物を大切に扱う」ため「あつかって」となります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "怒られて、（だまって／さけんで）下を向いていた。",
+              "options": [
+                "だまって",
+                "さけんで"
+              ],
+              "answer": "だまって",
+              "explanation": "怒られて口を開かず静かにしていた様子なので「だまって」となります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "毎日同じ料理ばかりで、（あきて／あきらめて）しまった。",
+              "options": [
+                "あきて",
+                "あきらめて"
+              ],
+              "answer": "あきて",
+              "explanation": "同じものにうんざりして嫌になるのは「飽きる」なので「あきて」となります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "手を強く（にぎって／むかって）離さなかった。",
+              "options": [
+                "にぎって",
+                "むかって"
+              ],
+              "answer": "にぎって",
+              "explanation": "手首や手をぎゅっと掴むのは「握る」なので「にぎって」となります。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "火事が起きて、家が（もえて／こげて）しまった。",
+              "options": [
+                "もえて",
+                "こげて"
+              ],
+              "answer": "もえて",
+              "explanation": "家が火で焼失するのは「燃える」なので「もえて」となります。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "小さいころ、よく兄に（いじめられて／かわいがられて）泣いた。",
+              "options": [
+                "いじめられて",
+                "かわいがられて"
+              ],
+              "answer": "いじめられて",
+              "explanation": "泣かされた文脈から、嫌がらせを受けた受身「いじめられて」となります。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "プロのサッカー選手を（めざして／のばして）、練習している。",
+              "options": [
+                "めざして",
+                "のばして"
+              ],
+              "answer": "めざして",
+              "explanation": "目標に向かって努力することを表す「目指して」となります。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "日本人は魚料理を（たのしんで／このんで）食べる。",
+              "options": [
+                "たのしんで",
+                "このんで"
+              ],
+              "answer": "このんで",
+              "explanation": "好んでよく食べるという習慣・嗜好を表す「このんで」となります。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_01-ex3",
+          "title_ja": "練習しよう 3: 正しい助詞を選びなさい。",
+          "title_en": "Practice 3: Choose the correct particles.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "新聞（a. を　b. で）ひも（a. を　b. で）縛る。",
+              "options": [
+                "新聞を・ひもで",
+                "新聞で・ひもを"
+              ],
+              "answer": "新聞を・ひもで",
+              "explanation": "目的語「新聞を」と道具「ひもで」を用います。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "若い人は肉料理（a. を　b. に）好む。",
+              "options": [
+                "a. を",
+                "b. に"
+              ],
+              "answer": "a. を",
+              "explanation": "他動詞「好む」は目的語をとるので「肉料理を好む」となります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "地図（a. を　b. で）場所（a. を　b. で）示す。",
+              "options": [
+                "地図で・場所を",
+                "地図を・場所で"
+              ],
+              "answer": "地図で・場所を",
+              "explanation": "手段「地図で」と対象「場所を」の組み合わせになります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "車（a. を　b. で）空港（a. へ　b. を）向かう。",
+              "options": [
+                "車で・空港へ",
+                "車を・空港で"
+              ],
+              "answer": "車で・空港へ",
+              "explanation": "交通手段「車で」と方向「空港へ（向かう）」になります。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "池（a. を　b. で）石（a. を　b. で）囲む。",
+              "options": [
+                "池を・石で",
+                "池で・石を"
+              ],
+              "answer": "池を・石で",
+              "explanation": "対象「池を」と囲む材料「石で」となります。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "警察（a. に　b. を）助け（a. に　b. を）求める。",
+              "options": [
+                "警察に・助けを",
+                "警察を・助けに"
+              ],
+              "answer": "警察に・助けを",
+              "explanation": "相手「警察に」と求める内容「助けを」となります。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "彼の言葉（a. と　b. に）うなずく。",
+              "options": [
+                "a. と",
+                "b. に"
+              ],
+              "answer": "b. に",
+              "explanation": "対象に同意して頷くので「言葉にうなずく」となります。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "親（a. に　b. を）頼る。",
+              "options": [
+                "a. に",
+                "b. を"
+              ],
+              "answer": "a. に",
+              "explanation": "頼る対象を表す格助詞は「に」なので「親に頼る」となります。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_01-ex4",
+          "title_ja": "実力を試そう 1: （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 1: Choose the best word to fill in the blank.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "危険ですから、この機械は注意して（　）ください。",
+              "options": [
+                "1 あつかって",
+                "2 かわいがって",
+                "3 しばって",
+                "4 もとめて"
+              ],
+              "answer": "1",
+              "explanation": "物や道具を操作・管理する意味の「扱う」が適切です。「注意して扱ってください」。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "転びそうになったので、手すりをぎゅっと（　）。",
+              "options": [
+                "1 たよった",
+                "2 かこんだ",
+                "3 にぎった",
+                "4 さした"
+              ],
+              "answer": "3",
+              "explanation": "手でしっかりと掴むことを表す「握った」が適切です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "赤ちゃんに小さな歯が（　）きた。",
+              "options": [
+                "1 ういて",
+                "2 かがやいて",
+                "3 はえて",
+                "4 もえて"
+              ],
+              "answer": "3",
+              "explanation": "歯が体内から表面に出て成長することを表す「生えて」が適切です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "この仕事は面白くて、何時間やっても（　）。",
+              "options": [
+                "1 あきない",
+                "2 だまらない",
+                "3 くっつかない",
+                "4 めだたない"
+              ],
+              "answer": "1",
+              "explanation": "興味や楽しみが尽きない様子を表す「飽きない」が適切です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_01-ex5",
+          "title_ja": "実力を試そう 2: 下線部の言葉とだいたい同じ意味のものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 2: Choose the word closest in meaning to the underlined word.",
+          "type": "paraphrase",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "お風呂のお湯が「冷めて」しまった。",
+              "options": [
+                "1 なくなって",
+                "2 汚れて",
+                "3 減って",
+                "4 冷たくなって"
+              ],
+              "answer": "4",
+              "explanation": "「冷める」は温かいものの温度が下がる意味なので、「4 冷たくなって」が最も近いです。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "彼は「黙って」私の話を聞いていた。",
+              "options": [
+                "1 笑いながら",
+                "2 怒りながら",
+                "3 何も言わないで",
+                "4 うなずきながら"
+              ],
+              "answer": "3",
+              "explanation": "「黙る」は声を出さず言葉を言わないことなので、「3 何も言わないで」が同義です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_01-ex6",
+          "title_ja": "実力を試そう 3: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 3: Choose the best sentence using the given word.",
+          "type": "usage",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "重ねる",
+              "options": [
+                "1 シャツをきれいに重ねて、タンスに入れた。",
+                "2 本を机の上に重ねて並べた。",
+                "3 布団を2枚重ねても、寒くて寝られない。",
+                "4 友だちと約束の時間を重ねた。"
+              ],
+              "answer": "3",
+              "explanation": "「重ねる」は物の上にさらに同じような物を載せる意味です。布団を2枚上に重ねて掛ける「3 布団を2枚重ねても、寒くて寝られない」が正しい使い方です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "叫ぶ",
+              "options": [
+                "1 夜中に「助けて！」と叫ぶ女性の声が聞こえた。",
+                "2 先生は怒って大きな声で叫んで説明した。",
+                "3 友だちの結婚式でスピーチを叫んだ。",
+                "4 テレビを見て一人で叫んだ。"
+              ],
+              "answer": "1",
+              "explanation": "「叫ぶ」は大声を張り上げて呼んだり危険を知らせたりすることです。「1 夜中に「助けて！」と叫ぶ女性の声が聞こえた」が最も自然です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "part2_02",
+        "topic_ja": "第2部 2課：漢語動詞",
+        "topic_en": "Part 2 Chapter 2: Sino-Japanese Verbs (Kango)",
+        "pages": [
+          102,
+          103,
+          104,
+          105
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "part2_02-1",
+          "title_ja": "〜を＋動詞",
+          "title_en": "Transitive Kango Verbs (with 〜を)",
+          "page": 102,
+          "warming_up": {
+            "question_ja": "「〜を＋動詞」の形でよく使われる漢語動詞にはどのようなものがありますか。",
+            "question_en": "What Sino-Japanese verbs are commonly used in the form '〜を + verb'?"
+          },
+          "words": [
+            {
+              "id": "v2-02-001",
+              "term_ja": "発明",
+              "reading": "はつめい",
+              "ruby_html": "<ruby>発明<rt>はつめい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Invention",
+              "meaning_zh": "发明",
+              "example_ja": "新しい機械を発明する",
+              "example_en": "invent a new machine"
+            },
+            {
+              "id": "v2-02-002",
+              "term_ja": "製造",
+              "reading": "せいぞう",
+              "ruby_html": "<ruby>製造<rt>せいぞう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Manufacture, production",
+              "meaning_zh": "制造，生产",
+              "example_ja": "車を製造する",
+              "example_en": "manufacture cars"
+            },
+            {
+              "id": "v2-02-003",
+              "term_ja": "制作",
+              "reading": "せいさく",
+              "ruby_html": "<ruby>制作<rt>せいさく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Production (art, film)",
+              "meaning_zh": "制作",
+              "example_ja": "アニメを制作する",
+              "example_en": "produce an anime"
+            },
+            {
+              "id": "v2-02-004",
+              "term_ja": "印刷",
+              "reading": "いんさつ",
+              "ruby_html": "<ruby>印刷<rt>いんさつ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Printing",
+              "meaning_zh": "印刷",
+              "example_ja": "本を印刷する",
+              "example_en": "print books"
+            },
+            {
+              "id": "v2-02-005",
+              "term_ja": "出版",
+              "reading": "しゅっぱん",
+              "ruby_html": "<ruby>出版<rt>しゅっぱん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Publishing",
+              "meaning_zh": "出版",
+              "example_ja": "辞書を出版する",
+              "example_en": "publish a dictionary"
+            },
+            {
+              "id": "v2-02-006",
+              "term_ja": "回収",
+              "reading": "かいしゅう",
+              "ruby_html": "<ruby>回収<rt>かいしゅう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Collection, retrieval",
+              "meaning_zh": "回收",
+              "example_ja": "ごみを回収する",
+              "example_en": "collect garbage"
+            },
+            {
+              "id": "v2-02-007",
+              "term_ja": "想像",
+              "reading": "そうぞう",
+              "ruby_html": "<ruby>想像<rt>そうぞう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Imagination",
+              "meaning_zh": "想象",
+              "example_ja": "将来の生活を想像する",
+              "example_en": "imagine future life"
+            },
+            {
+              "id": "v2-02-008",
+              "term_ja": "反省",
+              "reading": "はんせい",
+              "ruby_html": "<ruby>反省<rt>はんせい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Reflection, self-examination",
+              "meaning_zh": "反省",
+              "example_ja": "失敗を反省する",
+              "example_en": "reflect on one's failure"
+            },
+            {
+              "id": "v2-02-009",
+              "term_ja": "判断",
+              "reading": "はんだん",
+              "ruby_html": "<ruby>判断<rt>はんだん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Judgement, decision",
+              "meaning_zh": "判断",
+              "example_ja": "状況を判断する",
+              "example_en": "judge the situation"
+            },
+            {
+              "id": "v2-02-010",
+              "term_ja": "歓迎",
+              "reading": "かんげい",
+              "ruby_html": "<ruby>歓迎<rt>かんげい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Welcome",
+              "meaning_zh": "欢迎",
+              "example_ja": "新入生を歓迎する",
+              "example_en": "welcome new students"
+            },
+            {
+              "id": "v2-02-011",
+              "term_ja": "訓練",
+              "reading": "くんれん",
+              "ruby_html": "<ruby>訓練<rt>くんれん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Training, drill",
+              "meaning_zh": "训练",
+              "example_ja": "犬を訓練する",
+              "example_en": "train a dog"
+            },
+            {
+              "id": "v2-02-012",
+              "term_ja": "選択",
+              "reading": "せんたく",
+              "ruby_html": "<ruby>選択<rt>せんたく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Choice, selection",
+              "meaning_zh": "选择",
+              "example_ja": "正しい答えを選択する",
+              "example_en": "select the correct answer"
+            },
+            {
+              "id": "v2-02-013",
+              "term_ja": "評価",
+              "reading": "ひょうか",
+              "ruby_html": "<ruby>評価<rt>ひょうか</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Evaluation, appraisal",
+              "meaning_zh": "评价",
+              "example_ja": "仕事を高く評価する",
+              "example_en": "highly evaluate work"
+            },
+            {
+              "id": "v2-02-014",
+              "term_ja": "管理",
+              "reading": "かんり",
+              "ruby_html": "<ruby>管理<rt>かんり</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Management, supervision",
+              "meaning_zh": "管理",
+              "example_ja": "ビルを管理する",
+              "example_en": "manage a building"
+            },
+            {
+              "id": "v2-02-015",
+              "term_ja": "経営",
+              "reading": "けいえい",
+              "ruby_html": "<ruby>経営<rt>けいえい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Management (business)",
+              "meaning_zh": "经营",
+              "example_ja": "レストランを経営する",
+              "example_en": "manage a restaurant"
+            },
+            {
+              "id": "v2-02-016",
+              "term_ja": "解決",
+              "reading": "かいけつ",
+              "ruby_html": "<ruby>解決<rt>かいけつ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Solution, settlement",
+              "meaning_zh": "解决",
+              "example_ja": "問題を解決する",
+              "example_en": "solve a problem"
+            },
+            {
+              "id": "v2-02-017",
+              "term_ja": "防止",
+              "reading": "ぼうし",
+              "ruby_html": "<ruby>防止<rt>ぼうし</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Prevention",
+              "meaning_zh": "防止",
+              "example_ja": "事故を防止する",
+              "example_en": "prevent accidents"
+            },
+            {
+              "id": "v2-02-018",
+              "term_ja": "訪問",
+              "reading": "ほうもん",
+              "ruby_html": "<ruby>訪問<rt>ほうもん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Visit",
+              "meaning_zh": "访问",
+              "example_ja": "友人の家を訪問する",
+              "example_en": "visit a friend's house"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "社長は彼の働きを高く（　）した。",
+              "options": [
+                "評価",
+                "印刷",
+                "製造",
+                "防止"
+              ],
+              "answer": "評価",
+              "explanation": "業績や能力の価値を見定めて認める「評価」（evaluation/appraisal）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "会議の資料を10部（　）する。",
+              "options": [
+                "評価",
+                "印刷",
+                "製造",
+                "防止"
+              ],
+              "answer": "印刷",
+              "explanation": "紙に文字や図を刷る「印刷」（print）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "新しい製品の（　）を急ぐ。",
+              "options": [
+                "評価",
+                "印刷",
+                "製造",
+                "防止"
+              ],
+              "answer": "製造",
+              "explanation": "原料から製品を作り出す「製造」（manufacture）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "犯罪を（　）するために、カメラを設置した。",
+              "options": [
+                "評価",
+                "印刷",
+                "製造",
+                "防止"
+              ],
+              "answer": "防止",
+              "explanation": "悪事や事故が起きないよう事前に防ぐ「防止」（prevention）が入ります。"
+            }
+          ]
+        },
+        {
+          "section_id": "part2_02-2",
+          "title_ja": "〜が／に＋動詞",
+          "title_en": "Intransitive Kango Verbs (with 〜が / 〜に)",
+          "page": 103,
+          "warming_up": {
+            "question_ja": "「〜が＋動詞」や「〜に＋動詞」の形でよく使われる漢語動詞にはどのようなものがありますか。",
+            "question_en": "What Sino-Japanese verbs are commonly used in the forms '〜が + verb' or '〜に + verb'?"
+          },
+          "words": [
+            {
+              "id": "v2-02-019",
+              "term_ja": "交換",
+              "reading": "こうかん",
+              "ruby_html": "<ruby>交換<rt>こうかん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Exchange, swap",
+              "meaning_zh": "交换",
+              "example_ja": "意見を交換する",
+              "example_en": "exchange opinions"
+            },
+            {
+              "id": "v2-02-020",
+              "term_ja": "翻訳",
+              "reading": "ほんやく",
+              "ruby_html": "<ruby>翻訳<rt>ほんやく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Translation",
+              "meaning_zh": "翻译",
+              "example_ja": "小説を日本語に翻訳する",
+              "example_en": "translate novel into Japanese"
+            },
+            {
+              "id": "v2-02-021",
+              "term_ja": "使用",
+              "reading": "しよう",
+              "ruby_html": "<ruby>使用<rt>しよう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Use",
+              "meaning_zh": "使用",
+              "example_ja": "パソコンを使用する",
+              "example_en": "use a PC"
+            },
+            {
+              "id": "v2-02-022",
+              "term_ja": "報告",
+              "reading": "ほうこく",
+              "ruby_html": "<ruby>報告<rt>ほうこく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Report",
+              "meaning_zh": "报告",
+              "example_ja": "事故の状況を報告する",
+              "example_en": "report accident status"
+            },
+            {
+              "id": "v2-02-023",
+              "term_ja": "主張",
+              "reading": "しゅちょう",
+              "ruby_html": "<ruby>主張<rt>しゅちょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Assertion, claim",
+              "meaning_zh": "主张",
+              "example_ja": "自分の意見を主張する",
+              "example_en": "assert one's opinion"
+            },
+            {
+              "id": "v2-02-024",
+              "term_ja": "賛成",
+              "reading": "さんせい",
+              "ruby_html": "<ruby>賛成<rt>さんせい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Agreement, approval",
+              "meaning_zh": "赞成",
+              "example_ja": "提案に賛成する",
+              "example_en": "agree with proposal"
+            },
+            {
+              "id": "v2-02-025",
+              "term_ja": "協力",
+              "reading": "きょうりょく",
+              "ruby_html": "<ruby>協力<rt>きょうりょく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Cooperation",
+              "meaning_zh": "合作，协助",
+              "example_ja": "警察に協力する",
+              "example_en": "cooperate with police"
+            },
+            {
+              "id": "v2-02-026",
+              "term_ja": "注目",
+              "reading": "ちゅうもく",
+              "ruby_html": "<ruby>注目<rt>ちゅうもく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Attention, notice",
+              "meaning_zh": "注目",
+              "example_ja": "若い選手に注目する",
+              "example_en": "pay attention to young athlete"
+            },
+            {
+              "id": "v2-02-027",
+              "term_ja": "違反",
+              "reading": "いはん",
+              "ruby_html": "<ruby>違反<rt>いはん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Violation",
+              "meaning_zh": "违反",
+              "example_ja": "法律に違反する",
+              "example_en": "violate the law"
+            },
+            {
+              "id": "v2-02-028",
+              "term_ja": "出張",
+              "reading": "しゅっちょう",
+              "ruby_html": "<ruby>出張<rt>しゅっちょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Business trip",
+              "meaning_zh": "出差",
+              "example_ja": "大阪へ出張する",
+              "example_en": "go on a business trip to Osaka"
+            },
+            {
+              "id": "v2-02-029",
+              "term_ja": "変化",
+              "reading": "へんか",
+              "ruby_html": "<ruby>変化<rt>へんか</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Change",
+              "meaning_zh": "变化",
+              "example_ja": "気温が変化する",
+              "example_en": "temperature changes"
+            },
+            {
+              "id": "v2-02-030",
+              "term_ja": "停止",
+              "reading": "ていし",
+              "ruby_html": "<ruby>停止<rt>ていし</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Stoppage, suspension",
+              "meaning_zh": "停止",
+              "example_ja": "電車が停止する",
+              "example_en": "train stops"
+            },
+            {
+              "id": "v2-02-031",
+              "term_ja": "発展",
+              "reading": "はってん",
+              "ruby_html": "<ruby>発展<rt>はってん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Development, growth",
+              "meaning_zh": "发展",
+              "example_ja": "町が発展する",
+              "example_en": "town develops"
+            },
+            {
+              "id": "v2-02-032",
+              "term_ja": "進歩",
+              "reading": "しんぽ",
+              "ruby_html": "<ruby>進歩<rt>しんぽ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Progress, advancement",
+              "meaning_zh": "进步",
+              "example_ja": "技術が進歩する",
+              "example_en": "technology progresses"
+            },
+            {
+              "id": "v2-02-033",
+              "term_ja": "存在",
+              "reading": "そんざい",
+              "ruby_html": "<ruby>存在<rt>そんざい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Existence",
+              "meaning_zh": "存在",
+              "example_ja": "神は存在すると信じる",
+              "example_en": "believe that God exists"
+            },
+            {
+              "id": "v2-02-034",
+              "term_ja": "引退",
+              "reading": "いんたい",
+              "ruby_html": "<ruby>引退<rt>いんたい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Retirement (from sports, career)",
+              "meaning_zh": "退役，隐退",
+              "example_ja": "選手を引退する",
+              "example_en": "retire as a player"
+            },
+            {
+              "id": "v2-02-035",
+              "term_ja": "行動",
+              "reading": "こうどう",
+              "ruby_html": "<ruby>行動<rt>こうどう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Action, behavior",
+              "meaning_zh": "行动",
+              "example_ja": "一人で行動する",
+              "example_en": "act alone"
+            },
+            {
+              "id": "v2-02-036",
+              "term_ja": "活動",
+              "reading": "かつどう",
+              "ruby_html": "<ruby>活動<rt>かつどう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "Activity",
+              "meaning_zh": "活动",
+              "example_ja": "ボランティア活動をする",
+              "example_en": "engage in volunteer activity"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "スピードを出しすぎて、交通規則に（　）した。",
+              "options": [
+                "違反",
+                "引退",
+                "存在",
+                "翻訳",
+                "発展"
+              ],
+              "answer": "違反",
+              "explanation": "規則や法を破る「違反」（violation）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "経済が大きく（　）した。",
+              "options": [
+                "違反",
+                "引退",
+                "存在",
+                "翻訳",
+                "発展"
+              ],
+              "answer": "発展",
+              "explanation": "社会や経済が成長して盛んになる「発展」（development/growth）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "この村には昔から幽霊が（　）するという噂がある。",
+              "options": [
+                "違反",
+                "引退",
+                "存在",
+                "翻訳",
+                "発展"
+              ],
+              "answer": "存在",
+              "explanation": "実際に居る・あることを表す「存在」（existence）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "ベテラン選手が今年限りで（　）することになった。",
+              "options": [
+                "違反",
+                "引退",
+                "存在",
+                "翻訳",
+                "発展"
+              ],
+              "answer": "引退",
+              "explanation": "現役のスポーツ選手などを退く「引退」（retirement）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "この小説を英語から日本語に（　）する。",
+              "options": [
+                "違反",
+                "引退",
+                "存在",
+                "翻訳",
+                "発展"
+              ],
+              "answer": "翻訳",
+              "explanation": "ある言語から別の言語に訳す「翻訳」（translation）が入ります。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "part2_02-ex1",
+          "title_ja": "練習しよう 1: 意味が近いものを選びなさい。",
+          "title_en": "Practice 1: Choose the word closest in meaning.",
+          "type": "matching",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 回収",
+              "answer": "あつめる",
+              "explanation": "「回収」は集めて引き取ることなので「あつめる」に近いです。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(1) ② 交換",
+              "answer": "とりかえる",
+              "explanation": "「交換」は互いの物を取り替えることなので「とりかえる」に近いです。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(1) ③ 選択",
+              "answer": "えらぶ",
+              "explanation": "「選択」はいくつかの中から選び出すことなので「えらぶ」に近いです。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "(2) ① 使用",
+              "answer": "つかう",
+              "explanation": "「使用」は物を使うことなので「つかう」に近いです。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "(2) ② 変化",
+              "answer": "かわる",
+              "explanation": "「変化」は状態が変わることなので「かわる」に近いです。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "(2) ③ 報告",
+              "answer": "しらせる",
+              "explanation": "「報告」は状況を相手に知らせることなので「しらせる」に近いです。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "(3) ① 制作",
+              "answer": "つくる",
+              "explanation": "「制作」は作品や番組などを作ることなので「つくる」に近いです。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "(3) ② 想像",
+              "answer": "かんがえる",
+              "explanation": "「想像」は心の中で思い描くことなので「かんがえる」に近いです。"
+            },
+            {
+              "item_id": 9,
+              "question_ja": "(3) ③ 停止",
+              "answer": "とめる",
+              "explanation": "「停止」は動きを止めることなので「とめる」に近いです。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_02-ex2",
+          "title_ja": "練習しよう 2: 助詞を選びなさい。",
+          "title_en": "Practice 2: Choose the correct particles.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "事故の状況（a. を　b. に）報告する。",
+              "options": [
+                "a. を",
+                "b. に"
+              ],
+              "answer": "a. を",
+              "explanation": "報告する内容を表すので「状況を報告する」となります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "彼の提案（a. を　b. に）賛成する。",
+              "options": [
+                "a. を",
+                "b. に"
+              ],
+              "answer": "b. に",
+              "explanation": "賛成の対象を表すので「提案に賛成する」となります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "警察（a. と　b. に）協力して捜査を進める。",
+              "options": [
+                "a. と",
+                "b. に"
+              ],
+              "answer": "b. に",
+              "explanation": "協力する相手を表すので「警察に協力して」となります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "自分の意見（a. を　b. に）主張する。",
+              "options": [
+                "a. を",
+                "b. に"
+              ],
+              "answer": "a. を",
+              "explanation": "主張する内容を表すので「意見を主張する」となります。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "友だち（a. と　b. に）プレゼント（a. を　b. で）交換する。",
+              "options": [
+                "友だちと・プレゼントを",
+                "友だちに・プレゼントで"
+              ],
+              "answer": "友だちと・プレゼントを",
+              "explanation": "相手「友だちと」と目的語「プレゼントを」を組み合わせます。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "交通規則（a. に　b. を）違反（a. が　b. を）する。",
+              "options": [
+                "規則に・違反を",
+                "規則を・違反が"
+              ],
+              "answer": "規則に・違反を",
+              "explanation": "規則に違反する、または「規則に違反をする」となります。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "英語（a. から　b. を）日本語（a. に　b. を）翻訳する。",
+              "options": [
+                "英語から・日本語に",
+                "英語を・日本語に"
+              ],
+              "answer": "英語を・日本語に",
+              "explanation": "原語を「英語から／英語を」、目的の言語を「日本語に」とします。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_02-ex3",
+          "title_ja": "練習しよう 3: 文に合うものをすべて選びなさい。",
+          "title_en": "Practice 3: Select all phrases that fit the context.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "歓迎を（a. 受けて　b. 取って　c. 入れて）パーティーが開かれた。",
+              "options": [
+                "a. 受けて",
+                "b. 取って",
+                "c. 入れて"
+              ],
+              "answer": "a. 受けて",
+              "explanation": "「歓迎を受ける」というコロケーションが自然です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "危険を感じて、すぐに適切な行動を（a. して　b. 取った　c. 浴びた）。",
+              "options": [
+                "a. して",
+                "b. 取った",
+                "c. 浴びた"
+              ],
+              "answer": "b. 取った",
+              "explanation": "「行動を取る」というコロケーションが使われます。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "世界中から注目を（a. 取って　b. 集めて　c. 浴びて）いる。",
+              "options": [
+                "b. 集めて",
+                "c. 浴びて",
+                "b・c 両方"
+              ],
+              "answer": "b・c 両方",
+              "explanation": "「注目を集める」「注目を浴びる」の両方が自然な日本語コロケーションです。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "話し合いをしたが、まだ問題の解決に（a. なって　b. して　c. 至って／なって）いない。",
+              "options": [
+                "a. なって",
+                "b. して",
+                "c. ならない"
+              ],
+              "answer": "c. ならない",
+              "explanation": "「解決にならない」や「解決に至っていない」という否定の文脈になります。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "医療技術に大きな進歩が（a. あった　b. 見られた　c. 行った）。",
+              "options": [
+                "a. あった",
+                "b. 見られた",
+                "a・b 両方"
+              ],
+              "answer": "a・b 両方",
+              "explanation": "「進歩があった」「進歩が見られた」の両方が用いられます。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_02-ex4",
+          "title_ja": "実力を試そう 1: （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 1: Choose the best word to fill in the blank.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "エジソンは電球を（　）したことで有名だ。",
+              "options": [
+                "1 制作",
+                "2 製造",
+                "3 発明",
+                "4 出版"
+              ],
+              "answer": "3",
+              "explanation": "これまでなかった画期的な機器を新しく創り出すのは「発明」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "父は長年勤めた会社を辞めて、自分のレストランを（　）している。",
+              "options": [
+                "1 経営",
+                "2 管理",
+                "3 発展",
+                "4 活動"
+              ],
+              "answer": "1",
+              "explanation": "店や事業を事業主として運営するのは「経営」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "このマンションは会社がしっかり（　）しているので安心だ。",
+              "options": [
+                "1 管理",
+                "2 解決",
+                "3 停止",
+                "4 訓練"
+              ],
+              "answer": "1",
+              "explanation": "建物や設備を維持・取り締まることは「管理」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "自分の目で見て確かめてから、正しく（　）してください。",
+              "options": [
+                "1 想像",
+                "2 反省",
+                "3 判断",
+                "4 評価"
+              ],
+              "answer": "3",
+              "explanation": "状況を観察して物事の真偽や方針を決めるのは「判断」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_02-ex5",
+          "title_ja": "実力を試そう 2: 下線部の言葉とだいたい同じ意味のものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 2: Choose the word closest in meaning to the underlined word.",
+          "type": "paraphrase",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "明日から3日間、大阪へ「出張する」。",
+              "options": [
+                "1 引っ越す",
+                "2 仕事で出かける",
+                "3 遊びに行く",
+                "4 留学する"
+              ],
+              "answer": "2",
+              "explanation": "「出張する」は業務・用務のために遠方へ赴くことなので、「2 仕事で出かける」が同義です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "来月、新しい辞書を「出版する」。",
+              "options": [
+                "1 だす",
+                "2 よむ",
+                "3 かく",
+                "4 うつす"
+              ],
+              "answer": "1",
+              "explanation": "「出版する」は書籍を印刷して世に出すことなので、「1 だす（本を出す）」が同義です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_02-ex6",
+          "title_ja": "実力を試そう 3: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 3: Choose the best sentence using the given word.",
+          "type": "usage",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "活動",
+              "options": [
+                "1 彼は毎日学校へ行く活動をしている。",
+                "2 部屋の掃除をする活動をした。",
+                "3 明日は友だちと映画を見る活動をする。",
+                "4 彼らは古い服を集めて、アフリカに送る活動をしている。"
+              ],
+              "answer": "4",
+              "explanation": "「活動」はある目的を持った組織的・社会的な働きを指します。「古い服を集めて送るボランティア活動」を述べる4が正しい使い方です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "反省",
+              "options": [
+                "1 今日のテストはよくできたと反省した。",
+                "2 彼は、親に酷いことを言ったことを反省していた。",
+                "3 明日の天気が良くなるように反省した。",
+                "4 映画を見てとても面白かったと反省した。"
+              ],
+              "answer": "2",
+              "explanation": "「反省」は自分の悪い行いや失敗を振り返って悔い改めることです。「親に酷いことを言ったことを反省していた」の2が適切です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "part2_03",
+        "topic_ja": "第2部 3課：形容詞",
+        "topic_en": "Part 2 Chapter 3: Adjectives",
+        "pages": [
+          106,
+          107,
+          108,
+          109
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "part2_03-1",
+          "title_ja": "い形容詞",
+          "title_en": "I-adjectives",
+          "page": 106,
+          "warming_up": {
+            "question_ja": "感情や感覚、物の性質を表す「い形容詞」にはどのようなものがありますか。",
+            "question_en": "What i-adjectives describe feelings, sensations, or physical qualities?"
+          },
+          "words": [
+            {
+              "id": "v2-03-001",
+              "term_ja": "かゆい",
+              "reading": "かゆい",
+              "ruby_html": "かゆい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Itchy",
+              "meaning_zh": "痒",
+              "example_ja": "蚊に刺されて背中がかゆい",
+              "example_en": "itchy back after mosquito bite"
+            },
+            {
+              "id": "v2-03-002",
+              "term_ja": "まぶしい",
+              "reading": "まぶしい",
+              "ruby_html": "まぶしい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Dazzling, blinding",
+              "meaning_zh": "耀眼，刺眼",
+              "example_ja": "太陽の光がまぶしい",
+              "example_en": "sunlight is dazzling"
+            },
+            {
+              "id": "v2-03-003",
+              "term_ja": "きつい",
+              "reading": "きつい",
+              "ruby_html": "きつい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Tight, tough, hard",
+              "meaning_zh": "紧，严厉，吃力",
+              "example_ja": "靴がきつい／スケジュールがきつい",
+              "example_en": "tight shoes / tight schedule"
+            },
+            {
+              "id": "v2-03-004",
+              "term_ja": "懐かしい",
+              "reading": "なつかしい",
+              "ruby_html": "<ruby>懐<rt>なつ</rt></ruby>かしい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Dear, nostalgic",
+              "meaning_zh": "怀念，令人怀念的",
+              "example_ja": "故郷の味が懐かしい",
+              "example_en": "nostalgic taste of home"
+            },
+            {
+              "id": "v2-03-005",
+              "term_ja": "悔しい",
+              "reading": "くやしい",
+              "ruby_html": "<ruby>悔<rt>くや</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Frustrating, regretful",
+              "meaning_zh": "懊悔，遗憾",
+              "example_ja": "試合に負けて悔しい",
+              "example_en": "frustrated at losing game"
+            },
+            {
+              "id": "v2-03-006",
+              "term_ja": "恐ろしい",
+              "reading": "おそろしい",
+              "ruby_html": "<ruby>恐<rt>おそろ</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Terrifying, fearful",
+              "meaning_zh": "可怕，恐惧",
+              "example_ja": "恐ろしい夢を見る",
+              "example_en": "have a terrifying dream"
+            },
+            {
+              "id": "v2-03-007",
+              "term_ja": "怪しい",
+              "reading": "あやしい",
+              "ruby_html": "<ruby>怪<rt>あや</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Suspicious, dubious",
+              "meaning_zh": "可疑，令人怀疑",
+              "example_ja": "怪しい男が立っている",
+              "example_en": "a suspicious man is standing"
+            },
+            {
+              "id": "v2-03-008",
+              "term_ja": "親しい",
+              "reading": "したしい",
+              "ruby_html": "<ruby>親<rt>した</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Close, intimate",
+              "meaning_zh": "亲近，亲密",
+              "example_ja": "親しい友人と話す",
+              "example_en": "talk with close friend"
+            },
+            {
+              "id": "v2-03-009",
+              "term_ja": "大人しい",
+              "reading": "おとなしい",
+              "ruby_html": "<ruby>大人<rt>おとな</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Quiet, gentle, well-behaved",
+              "meaning_zh": "老实，温顺",
+              "example_ja": "大人しい子ども",
+              "example_en": "a quiet/well-behaved child"
+            },
+            {
+              "id": "v2-03-010",
+              "term_ja": "詳しい",
+              "reading": "くわしい",
+              "ruby_html": "<ruby>詳<rt>くわ</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Detailed, knowledgeable",
+              "meaning_zh": "详细；熟悉",
+              "example_ja": "日本の歴史に詳しい",
+              "example_en": "knowledgeable about Japanese history"
+            },
+            {
+              "id": "v2-03-011",
+              "term_ja": "しつこい",
+              "reading": "しつこい",
+              "ruby_html": "しつこい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Persistent, greasy/heavy",
+              "meaning_zh": "执拗，纠缠不休；油腻",
+              "example_ja": "しつこく質問する",
+              "example_en": "question persistently"
+            },
+            {
+              "id": "v2-03-012",
+              "term_ja": "鋭い",
+              "reading": "するどい",
+              "ruby_html": "<ruby>鋭<rt>するど</rt></ruby>い",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Sharp, keen, acute",
+              "meaning_zh": "锋利；敏锐",
+              "example_ja": "鋭いナイフ／鋭い質問",
+              "example_en": "sharp knife / penetrating question"
+            },
+            {
+              "id": "v2-03-013",
+              "term_ja": "鈍い",
+              "reading": "にぶい",
+              "ruby_html": "<ruby>鈍<rt>にぶ</rt></ruby>い",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Dull, slow",
+              "meaning_zh": "钝；迟钝",
+              "example_ja": "動きが鈍い／頭の回転が鈍い",
+              "example_en": "slow movement / slow reaction"
+            },
+            {
+              "id": "v2-03-014",
+              "term_ja": "貧しい",
+              "reading": "まずしい",
+              "ruby_html": "<ruby>貧<rt>まず</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Poor, needy",
+              "meaning_zh": "贫穷",
+              "example_ja": "貧しい生活を送る",
+              "example_en": "lead a poor life"
+            },
+            {
+              "id": "v2-03-015",
+              "term_ja": "激しい",
+              "reading": "はげしい",
+              "ruby_html": "<ruby>激<rt>はげ</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Intense, severe, violent",
+              "meaning_zh": "激烈，剧烈",
+              "example_ja": "激しい雨が降る",
+              "example_en": "intense rain falls"
+            },
+            {
+              "id": "v2-03-016",
+              "term_ja": "もったいない",
+              "reading": "もったいない",
+              "ruby_html": "もったいない",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Wasteful",
+              "meaning_zh": "浪费，可惜",
+              "example_ja": "食べ物を捨てるのはもったいない",
+              "example_en": "wasteful to throw away food"
+            },
+            {
+              "id": "v2-03-017",
+              "term_ja": "とんでもない",
+              "reading": "とんでもない",
+              "ruby_html": "とんでもない",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Outrageous, unexpected, not at all",
+              "meaning_zh": "出乎意料；哪里的话",
+              "example_ja": "とんでもない事件が起きた",
+              "example_en": "an outrageous incident occurred"
+            },
+            {
+              "id": "v2-03-018",
+              "term_ja": "仕様がない",
+              "reading": "しょうがない",
+              "ruby_html": "<ruby>仕様<rt>しよう</rt></ruby>がない",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "Cannot be helped",
+              "meaning_zh": "无可奈何，没办法",
+              "example_ja": "失敗しても仕様がない",
+              "example_en": "cannot be helped even if it failed"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "彼はコンピューターの技術にとても（　）。",
+              "options": [
+                "詳しい",
+                "貧しい",
+                "鈍い",
+                "もったいない"
+              ],
+              "answer": "詳しい",
+              "explanation": "ある分野について深い知識を持っていることを表す「詳しい」（knowledgeable）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "昔はとても（　）暮らしをしていた。",
+              "options": [
+                "詳しい",
+                "貧しい",
+                "鈍い",
+                "もったいない"
+              ],
+              "answer": "貧しい",
+              "explanation": "お金や物が乏しい生活を表す「貧しい」（poor）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "年をとって、足腰の動きが（　）なった。",
+              "options": [
+                "詳しい",
+                "貧しい",
+                "鈍い",
+                "もったいない"
+              ],
+              "answer": "鈍い",
+              "explanation": "動作の敏捷さが失われて遅くなる「鈍い」（dull/slow）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "まだ使えるものを捨てるのは（　）。",
+              "options": [
+                "詳しい",
+                "貧しい",
+                "鈍い",
+                "もったいない"
+              ],
+              "answer": "もったいない",
+              "explanation": "物の価値が十分に活かされず惜しい様子を表す「もったいない」（wasteful）が入ります。"
+            }
+          ]
+        },
+        {
+          "section_id": "part2_03-2",
+          "title_ja": "な形容詞",
+          "title_en": "Na-adjectives",
+          "page": 107,
+          "warming_up": {
+            "question_ja": "人の性格や様子、状態を表す「な形容詞」にはどのようなものがありますか。",
+            "question_en": "What na-adjectives describe personality, states, or appearances?"
+          },
+          "words": [
+            {
+              "id": "v2-03-019",
+              "term_ja": "わがまま",
+              "reading": "わがまま",
+              "ruby_html": "わがまま",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Selfish",
+              "meaning_zh": "任性",
+              "example_ja": "わがままを言う",
+              "example_en": "act selfishly"
+            },
+            {
+              "id": "v2-03-020",
+              "term_ja": "意地悪",
+              "reading": "いじわる",
+              "ruby_html": "<ruby>意地悪<rt>いじわる</rt></ruby>",
+              "part_of_speech": "ナ形容詞・名詞",
+              "meaning_en": "Mean, spiteful",
+              "meaning_zh": "坏心眼，刁难",
+              "example_ja": "意地悪な質問をする",
+              "example_en": "ask a mean question"
+            },
+            {
+              "id": "v2-03-021",
+              "term_ja": "下品",
+              "reading": "げひん",
+              "ruby_html": "<ruby>下品<rt>げひん</rt></ruby>",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Vulgar, coarse",
+              "meaning_zh": "粗俗，下流",
+              "example_ja": "下品な笑い方",
+              "example_en": "vulgar laugh"
+            },
+            {
+              "id": "v2-03-022",
+              "term_ja": "乱暴",
+              "reading": "らんぼう",
+              "ruby_html": "<ruby>乱暴<rt>らんぼう</rt></ruby>",
+              "part_of_speech": "ナ形容詞・名詞",
+              "meaning_en": "Rough, violent, rude",
+              "meaning_zh": "粗暴，野蛮",
+              "example_ja": "乱暴な言葉を使う",
+              "example_en": "use rough language"
+            },
+            {
+              "id": "v2-03-023",
+              "term_ja": "派手",
+              "reading": "はで",
+              "ruby_html": "<ruby>派手<rt>はで</rt></ruby>",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Showy, flashy",
+              "meaning_zh": "华丽，花哨",
+              "example_ja": "派手な服を着る",
+              "example_en": "wear flashy clothes"
+            },
+            {
+              "id": "v2-03-024",
+              "term_ja": "地味",
+              "reading": "じみ",
+              "ruby_html": "<ruby>地味<rt>じみ</rt></ruby>",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Plain, sober, quiet",
+              "meaning_zh": "朴素，不起眼",
+              "example_ja": "地味な色のネクタイ",
+              "example_en": "a plain-colored necktie"
+            },
+            {
+              "id": "v2-03-025",
+              "term_ja": "おしゃれ",
+              "reading": "おしゃれ",
+              "ruby_html": "おしゃれ",
+              "part_of_speech": "ナ形容詞・名詞・する動詞",
+              "meaning_en": "Stylish, fashionable",
+              "meaning_zh": "时髦，讲究穿着",
+              "example_ja": "おしゃれな店",
+              "example_en": "fashionable shop"
+            },
+            {
+              "id": "v2-03-026",
+              "term_ja": "素敵",
+              "reading": "すてき",
+              "ruby_html": "<ruby>素敵<rt>すてき</rt></ruby>",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Wonderful, lovely",
+              "meaning_zh": "極好，漂亮",
+              "example_ja": "素敵なプレゼント",
+              "example_en": "wonderful present"
+            },
+            {
+              "id": "v2-03-027",
+              "term_ja": "楽",
+              "reading": "らく",
+              "ruby_html": "<ruby>楽<rt>らく</rt></ruby>",
+              "part_of_speech": "ナ形容詞・名詞",
+              "meaning_en": "Easy, comfortable",
+              "meaning_zh": "轻松，舒适",
+              "example_ja": "楽な仕事",
+              "example_en": "easy job"
+            },
+            {
+              "id": "v2-03-028",
+              "term_ja": "豊か",
+              "reading": "ゆたか",
+              "ruby_html": "<ruby>豊<rt>ゆた</rt></ruby>か",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Rich, abundant",
+              "meaning_zh": "丰富，富裕",
+              "example_ja": "豊かな自然／豊かな生活",
+              "example_en": "abundant nature / rich life"
+            },
+            {
+              "id": "v2-03-029",
+              "term_ja": "穏やか",
+              "reading": "おだやか",
+              "ruby_html": "<ruby>穏<rt>おだ</rt></ruby>やか",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Calm, gentle, peaceful",
+              "meaning_zh": "温和，平静",
+              "example_ja": "穏やかな海／穏やかな人",
+              "example_en": "calm sea / gentle person"
+            },
+            {
+              "id": "v2-03-030",
+              "term_ja": "夢中",
+              "reading": "むちゅう",
+              "ruby_html": "<ruby>夢中<rt>むちゅう</rt></ruby>",
+              "part_of_speech": "ナ形容詞・名詞",
+              "meaning_en": "Absorbed in, infatuated",
+              "meaning_zh": "着迷，热衷",
+              "example_ja": "ゲームに夢中になる",
+              "example_en": "absorbed in a game"
+            },
+            {
+              "id": "v2-03-031",
+              "term_ja": "無事",
+              "reading": "ぶじ",
+              "ruby_html": "<ruby>無事<rt>ぶじ</rt></ruby>",
+              "part_of_speech": "ナ形容詞・名詞",
+              "meaning_en": "Safe, without incident",
+              "meaning_zh": "平安，顺利",
+              "example_ja": "無事に到着する",
+              "example_en": "arrive safely"
+            },
+            {
+              "id": "v2-03-032",
+              "term_ja": "平気",
+              "reading": "へいき",
+              "ruby_html": "<ruby>平気<rt>へいき</rt></ruby>",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "Unconcerned, cool, fine",
+              "meaning_zh": "不在乎，冷静",
+              "example_ja": "納豆は平気で食べられる",
+              "example_en": "can eat natto with no problem"
+            },
+            {
+              "id": "v2-03-033",
+              "term_ja": "迷惑",
+              "reading": "めいわく",
+              "ruby_html": "<ruby>迷惑<rt>めいわく</rt></ruby>",
+              "part_of_speech": "ナ形容詞・名詞・する動詞",
+              "meaning_en": "Nuisance, annoyance",
+              "meaning_zh": "麻烦，打扰",
+              "example_ja": "人に迷惑をかける",
+              "example_en": "cause trouble for others"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "注射を打っても全然泣かないで、（　）な顔をしている。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "平気",
+              "explanation": "動じず落ち着いている様子を表す「平気」（unconcerned/fine）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "子どもがゲームに（　）になっている。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "夢中",
+              "explanation": "他のことを忘れて熱中する「夢中」（absorbed in）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "自分のことばかり考えて、（　）を言ってはいけません。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "わがまま",
+              "explanation": "自分の思い通りに振る舞う「わがまま」（selfishness）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "台風が通り過ぎて、家族全員（　）だった。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "無事",
+              "explanation": "事故や怪我がなく平穏な状態を表す「無事」（safe）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "夜遅くに大きな音を出すのは近所の（　）になる。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "迷惑",
+              "explanation": "周囲に不快感や負担をかける「迷惑」（nuisance）が入ります。"
+            },
+            {
+              "id": 6,
+              "question_ja": "今日着ている服、（　）ですね。よく似合っています。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "素敵",
+              "explanation": "魅力的で素晴らしい様子を褒める「素敵」（wonderful）が入ります。"
+            },
+            {
+              "id": 7,
+              "question_ja": "派手な色は好きじゃないので、（　）な色の服を選んだ。",
+              "options": [
+                "平気",
+                "夢中",
+                "わがまま",
+                "無事",
+                "迷惑",
+                "素敵",
+                "地味"
+              ],
+              "answer": "地味",
+              "explanation": "目立たず落ち着いた色合いを表す「地味」（plain/sober）が入ります。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "part2_03-ex1",
+          "title_ja": "練習しよう 1: どんな人ですか。",
+          "title_en": "Practice 1: What kind of person is this?",
+          "type": "matching",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "いつも真っ赤や黄色の明るい服ばかり着ている人",
+              "answer": "派手な人",
+              "explanation": "目立つ派手な服装を好む人を「派手な人」と言います。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "反応が遅くて、頭の回転が遅い人",
+              "answer": "鈍い人",
+              "explanation": "反応や判断が遅い人を「鈍い人」と言います。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "人が嫌がることをわざと言ったりしたりする人",
+              "answer": "意地悪な人",
+              "explanation": "嫌がらせをする人を「意地悪な人」と言います。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "警察に追われていて、様子が変な人",
+              "answer": "怪しい人",
+              "explanation": "不審で疑わしい人を「怪しい人」と言います。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_03-ex2",
+          "title_ja": "練習しよう 2: 一番合うものを選びなさい。",
+          "title_en": "Practice 2: Choose the most fitting word.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "子どものころ住んでいた町に行って、とても（　）。",
+              "options": [
+                "a. まぶしかった",
+                "b. しつこかった",
+                "c. 悔しかった",
+                "d. 懐かしかった",
+                "e. かゆかった",
+                "f. きつかった"
+              ],
+              "answer": "d. 懐かしかった",
+              "explanation": "幼少期の懐かしい思い出が蘇るため「懐かしかった」が入ります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "蚊に刺されたところが（　）たまらない。",
+              "options": [
+                "a. まぶしかった",
+                "b. しつこかった",
+                "c. 悔しかった",
+                "d. 懐かしかった",
+                "e. かゆくて",
+                "f. きつかった"
+              ],
+              "answer": "e. かゆくて",
+              "explanation": "蚊に刺されて痒くてたまらないので「かゆくて」が入ります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "一点差で試合に負けて、本当に（　）。",
+              "options": [
+                "a. まぶしかった",
+                "b. しつこかった",
+                "c. 悔しかった",
+                "d. 懐かしかった",
+                "e. かゆかった",
+                "f. きつかった"
+              ],
+              "answer": "c. 悔しかった",
+              "explanation": "僅差で負けて無念でたまらないので「悔しかった」が入ります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "靴が小さくて、（　）痛かった。",
+              "options": [
+                "a. まぶしかった",
+                "b. しつこかった",
+                "c. 悔しかった",
+                "d. 懐かしかった",
+                "e. かゆかった",
+                "f. きつくて"
+              ],
+              "answer": "f. きつくて",
+              "explanation": "サイズが小さく足を締め付けるので「きつくて」が入ります。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "何度も何度も電話をかけてきて、（　）。",
+              "options": [
+                "a. まぶしかった",
+                "b. しつこかった",
+                "c. 悔しかった",
+                "d. 懐かしかった",
+                "e. かゆかった",
+                "f. きつかった"
+              ],
+              "answer": "b. しつこかった",
+              "explanation": "執拗に繰り返される煩わしさを表す「しつこかった」が入ります。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "朝の太陽の光が（　）目を開けられなかった。",
+              "options": [
+                "a. まぶしくて",
+                "b. しつこかった",
+                "c. 悔しかった",
+                "d. 懐かしかった",
+                "e. かゆかった",
+                "f. きつかった"
+              ],
+              "answer": "a. まぶしくて",
+              "explanation": "太陽光が強烈で目が眩むため「まぶしくて」が入ります。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_03-ex3",
+          "title_ja": "練習しよう 3: 線で結びなさい。",
+          "title_en": "Practice 3: Match the adjectives with suitable modified nouns.",
+          "type": "matching",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "豊かな",
+              "answer": "社会、国、生活",
+              "explanation": "「豊かな社会／国／生活」（rich society / country / life）"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "おしゃれな",
+              "answer": "服、眼鏡、お店",
+              "explanation": "「おしゃれな服／眼鏡／お店」（stylish clothes / glasses / shop）"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "乱暴な",
+              "answer": "男、話し方、運転",
+              "explanation": "「乱暴な男／話し方／運転」（violent man / rough tone / rough driving）"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "鋭い",
+              "answer": "意見、質問、ナイフ",
+              "explanation": "「鋭い意見／質問／ナイフ」（sharp opinion / penetrating question / sharp knife）"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "穏やかな",
+              "answer": "天気、性格、人",
+              "explanation": "「穏やかな天気／性格／人」（mild weather / gentle personality / calm person）"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_03-ex4",
+          "title_ja": "実力を試そう 1: （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 1: Choose the best word to fill in the blank.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "「手伝ってくれてありがとう」「いいえ、（　）です」。",
+              "options": [
+                "1 しようがない",
+                "2 もったいない",
+                "3 悔しい",
+                "4 とんでもない"
+              ],
+              "answer": "4",
+              "explanation": "感謝に対して謙遜して返す挨拶表現は「4 とんでもない（です）」が適切です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "彼女はいつも（　）していて、大声で話したりしない。",
+              "options": [
+                "1 おとなしく",
+                "2 はげしく",
+                "3 あやしく",
+                "4 くるしく"
+              ],
+              "answer": "1",
+              "explanation": "物静かで穏やかに振る舞う様子を表す「1 おとなしく」が適切です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "この仕事は覚えることが少なくて、とても（　）だ。",
+              "options": [
+                "1 ぶじ",
+                "2 へいき",
+                "3 らく",
+                "4 むちゅう"
+              ],
+              "answer": "3",
+              "explanation": "負担や苦労が少なくて容易なことを表す「3 らく（楽）」が適切です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "今日は波もなく、（　）な海ですね。",
+              "options": [
+                "1 ゆたか",
+                "2 おだやか",
+                "3 じみ",
+                "4 したしい"
+              ],
+              "answer": "2",
+              "explanation": "風や波がなく静かで落ち着いている様子を表す「2 おだやか（穏やか）」が適切です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_03-ex5",
+          "title_ja": "実力を試そう 2: 下線部の言葉とだいたい同じ意味のものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 2: Choose the word closest in meaning to the underlined word.",
+          "type": "paraphrase",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "風が「激しく」吹いている。",
+              "options": [
+                "1 涼しく",
+                "2 弱く",
+                "3 とても強く",
+                "4 少し"
+              ],
+              "answer": "3",
+              "explanation": "「激しく」は勢いが極めて強いことなので、「3 とても強く」が同義です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "「恐ろしい」事件が起こった。",
+              "options": [
+                "1 怖い",
+                "2 面白い",
+                "3 珍しい",
+                "4 悲しい"
+              ],
+              "answer": "1",
+              "explanation": "「恐ろしい」は恐怖を感じさせることなので、「1 怖い」が同義です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_03-ex6",
+          "title_ja": "実力を試そう 3: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 3: Choose the best sentence using the given word.",
+          "type": "usage",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "しょうがない",
+              "options": [
+                "1 今日はしょうがない天気がいいですね。",
+                "2 日本に来たばかりだから、日本語が下手なのはしょうがない。",
+                "3 この本はしょうがない面白かった。",
+                "4 忙しくてしょうがないので、手伝ってください。"
+              ],
+              "answer": "2",
+              "explanation": "「しょうがない（仕様がない）」は状況から見て仕方のない、避けられないことを表します。来日直後で下手なのは無理もないという意味の2が適切です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "下品",
+              "options": [
+                "1 このリンゴは下品な味がする。",
+                "2 部屋が下品なので、片付けよう。",
+                "3 彼の仕事は下品で丁寧だ。",
+                "4 山田さんはいい人なんだけど、言葉が下品なので、困る。"
+              ],
+              "answer": "4",
+              "explanation": "「下品」は品格や品性が欠けて粗野・下世話な様子を指します。言葉遣いが下品な人を表す4が正しい使い方です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "part2_04",
+        "topic_ja": "第2部 4課：副詞",
+        "topic_en": "Part 2 Chapter 4: Adverbs",
+        "pages": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "part2_04-1",
+          "title_ja": "副詞①",
+          "title_en": "Adverbs 1",
+          "page": 110,
+          "warming_up": {
+            "question_ja": "程度や状況、話し手の態度を表す副詞にはどのようなものがありますか。",
+            "question_en": "What adverbs express degree, circumstances, or speaker attitude?"
+          },
+          "words": [
+            {
+              "id": "v2-04-001",
+              "term_ja": "およそ",
+              "reading": "およそ",
+              "ruby_html": "およそ",
+              "part_of_speech": "副詞",
+              "meaning_en": "About, approximately",
+              "meaning_zh": "大概，大约",
+              "example_ja": "およそ1時間かかる",
+              "example_en": "takes approximately 1 hour"
+            },
+            {
+              "id": "v2-04-002",
+              "term_ja": "かなり",
+              "reading": "かなり",
+              "ruby_html": "かなり",
+              "part_of_speech": "副詞",
+              "meaning_en": "Considerably, fairly",
+              "meaning_zh": "相当，颇",
+              "example_ja": "かなり難しい問題",
+              "example_en": "a considerably difficult question"
+            },
+            {
+              "id": "v2-04-003",
+              "term_ja": "多少",
+              "reading": "たしょう",
+              "ruby_html": "<ruby>多少<rt>たしょう</rt></ruby>",
+              "part_of_speech": "副詞",
+              "meaning_en": "A little, somewhat",
+              "meaning_zh": "多少，稍微",
+              "example_ja": "多少の差はある",
+              "example_en": "there is some difference"
+            },
+            {
+              "id": "v2-04-004",
+              "term_ja": "すべて",
+              "reading": "すべて",
+              "ruby_html": "すべて",
+              "part_of_speech": "副詞・名詞",
+              "meaning_en": "All, entirely",
+              "meaning_zh": "全，全部",
+              "example_ja": "すべての人が知っている",
+              "example_en": "all people know"
+            },
+            {
+              "id": "v2-04-005",
+              "term_ja": "まったく",
+              "reading": "まったく",
+              "ruby_html": "まったく",
+              "part_of_speech": "副詞",
+              "meaning_en": "Entirely, completely",
+              "meaning_zh": "完全，全然",
+              "example_ja": "まったく分からない",
+              "example_en": "do not understand at all"
+            },
+            {
+              "id": "v2-04-006",
+              "term_ja": "一度に",
+              "reading": "いちどに",
+              "ruby_html": "<ruby>一度<rt>いちど</rt></ruby>に",
+              "part_of_speech": "副詞",
+              "meaning_en": "All at once",
+              "meaning_zh": "同时，一下子",
+              "example_ja": "一度に覚えるのは無理だ",
+              "example_en": "impossible to memorize all at once"
+            },
+            {
+              "id": "v2-04-007",
+              "term_ja": "偶然",
+              "reading": "ぐうぜん",
+              "ruby_html": "<ruby>偶然<rt>ぐうぜん</rt></ruby>",
+              "part_of_speech": "副詞・名詞",
+              "meaning_en": "By chance, coincidental",
+              "meaning_zh": "偶然",
+              "example_ja": "駅で偶然会う",
+              "example_en": "meet by chance at station"
+            },
+            {
+              "id": "v2-04-008",
+              "term_ja": "たまに",
+              "reading": "たまに",
+              "ruby_html": "たまに",
+              "part_of_speech": "副詞",
+              "meaning_en": "Occasionally, once in a while",
+              "meaning_zh": "偶尔",
+              "example_ja": "たまに映画を見に行く",
+              "example_en": "occasionally go see a movie"
+            },
+            {
+              "id": "v2-04-009",
+              "term_ja": "早速",
+              "reading": "さっそく",
+              "ruby_html": "<ruby>早速<rt>さっそく</rt></ruby>",
+              "part_of_speech": "副詞",
+              "meaning_en": "Immediately, right away",
+              "meaning_zh": "立刻，马上",
+              "example_ja": "早速食べてみる",
+              "example_en": "try eating right away"
+            },
+            {
+              "id": "v2-04-010",
+              "term_ja": "実は",
+              "reading": "じつは",
+              "ruby_html": "<ruby>実<rt>じつ</rt></ruby>は",
+              "part_of_speech": "副詞",
+              "meaning_en": "Actually, to tell the truth",
+              "meaning_zh": "其实，老实说",
+              "example_ja": "実は言いたいことがある",
+              "example_en": "actually there is something I want to say"
+            },
+            {
+              "id": "v2-04-011",
+              "term_ja": "実際に",
+              "reading": "じっさいに",
+              "ruby_html": "<ruby>実際<rt>じっさい</rt></ruby>に",
+              "part_of_speech": "副詞",
+              "meaning_en": "Actually, in practice",
+              "meaning_zh": "实际上",
+              "example_ja": "実際にやってみる",
+              "example_en": "try it in practice"
+            },
+            {
+              "id": "v2-04-012",
+              "term_ja": "案外",
+              "reading": "あんがい",
+              "ruby_html": "<ruby>案外<rt>あんがい</rt></ruby>",
+              "part_of_speech": "副詞",
+              "meaning_en": "Unexpectedly, surprisingly",
+              "meaning_zh": "没想到，出乎意料",
+              "example_ja": "案外簡単だった",
+              "example_en": "unexpectedly easy"
+            },
+            {
+              "id": "v2-04-013",
+              "term_ja": "少なくとも",
+              "reading": "すくなくとも",
+              "ruby_html": "<ruby>少<rt>すく</rt></ruby>なくとも",
+              "part_of_speech": "副詞",
+              "meaning_en": "At least",
+              "meaning_zh": "至少",
+              "example_ja": "少なくとも10人は来る",
+              "example_en": "at least 10 people will come"
+            },
+            {
+              "id": "v2-04-014",
+              "term_ja": "せっかく",
+              "reading": "せっかく",
+              "ruby_html": "せっかく",
+              "part_of_speech": "副詞",
+              "meaning_en": "Specially, with much trouble",
+              "meaning_zh": "好不容易，难得",
+              "example_ja": "せっかく作った料理",
+              "example_en": "dishes made with much effort"
+            },
+            {
+              "id": "v2-04-015",
+              "term_ja": "確か",
+              "reading": "たしか",
+              "ruby_html": "<ruby>確<rt>たし</rt></ruby>か",
+              "part_of_speech": "副詞・ナ形容詞",
+              "meaning_en": "If I remember correctly, surely",
+              "meaning_zh": "大概，如果没记错的话",
+              "example_ja": "確か昨日買ったと思う",
+              "example_en": "I think I certainly bought it yesterday"
+            },
+            {
+              "id": "v2-04-016",
+              "term_ja": "ともかく",
+              "reading": "ともかく",
+              "ruby_html": "ともかく",
+              "part_of_speech": "副詞",
+              "meaning_en": "In any case, anyway",
+              "meaning_zh": "无论如何，姑且不论",
+              "example_ja": "値段はともかく、質がいい",
+              "example_en": "price aside, quality is good"
+            },
+            {
+              "id": "v2-04-017",
+              "term_ja": "思い切り",
+              "reading": "おもいきり",
+              "ruby_html": "思い切り",
+              "part_of_speech": "副詞",
+              "meaning_en": "To one's heart's content, fully",
+              "meaning_zh": "尽情地，痛快地",
+              "example_ja": "思い切り遊ぶ",
+              "example_en": "play to one's heart's content"
+            },
+            {
+              "id": "v2-04-018",
+              "term_ja": "わざと",
+              "reading": "わざと",
+              "ruby_html": "わざと",
+              "part_of_speech": "副詞",
+              "meaning_en": "On purpose, deliberately",
+              "meaning_zh": "故意",
+              "example_ja": "わざと負ける",
+              "example_en": "lose on purpose"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "忙しいが、（　）家族で外食する。",
+              "options": [
+                "たまに",
+                "ともかく",
+                "実は",
+                "確か"
+              ],
+              "answer": "たまに",
+              "explanation": "頻度が少なく時々行うことを表す「たまに」（occasionally）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "理由は（　）、彼が遅刻したのは事実だ。",
+              "options": [
+                "たまに",
+                "ともかく",
+                "実は",
+                "確か"
+              ],
+              "answer": "ともかく",
+              "explanation": "その問題は一旦別に置いておくことを表す「ともかく」（anyway/setting aside）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "（　）明日から入院することになりました。",
+              "options": [
+                "たまに",
+                "ともかく",
+                "実は",
+                "確か"
+              ],
+              "answer": "実は",
+              "explanation": "打ち明け話や隠されていた真相を述べる「実は」（actually/to tell the truth）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "あの人の名前は、（　）田中さんだったと思います。",
+              "options": [
+                "たまに",
+                "ともかく",
+                "実は",
+                "確か"
+              ],
+              "answer": "確か",
+              "explanation": "記憶が定かではないが推測されることを表す「確か」（if I recall correctly）が入ります。"
+            }
+          ]
+        },
+        {
+          "section_id": "part2_04-2",
+          "title_ja": "副詞②",
+          "title_en": "Adverbs 2",
+          "page": 111,
+          "warming_up": {
+            "question_ja": "呼応表現や時間の経過を表す副詞にはどのようなものがありますか。",
+            "question_en": "What adverbs are used in paired syntactic constructions or express the passage of time?"
+          },
+          "words": [
+            {
+              "id": "v2-04-019",
+              "term_ja": "まさか",
+              "reading": "まさか",
+              "ruby_html": "まさか",
+              "part_of_speech": "副詞",
+              "meaning_en": "By no means, don't tell me",
+              "meaning_zh": "决不，绝不会",
+              "example_ja": "まさか信じられない",
+              "example_en": "by no means could I believe it"
+            },
+            {
+              "id": "v2-04-020",
+              "term_ja": "まるで",
+              "reading": "まるで",
+              "ruby_html": "まるで",
+              "part_of_speech": "副詞",
+              "meaning_en": "Just like, as if",
+              "meaning_zh": "简直像",
+              "example_ja": "まるで夢のようだ",
+              "example_en": "just like a dream"
+            },
+            {
+              "id": "v2-04-021",
+              "term_ja": "もしかしたら",
+              "reading": "もしかしたら",
+              "ruby_html": "もしかしたら",
+              "part_of_speech": "副詞",
+              "meaning_en": "Perhaps, maybe",
+              "meaning_zh": "也许，可能",
+              "example_ja": "もしかしたら雨が降るかもしれない",
+              "example_en": "maybe it might rain"
+            },
+            {
+              "id": "v2-04-022",
+              "term_ja": "もしも",
+              "reading": "もしも",
+              "ruby_html": "もしも",
+              "part_of_speech": "副詞",
+              "meaning_en": "If, in case",
+              "meaning_zh": "如果，假如",
+              "example_ja": "もしも1億円あったら",
+              "example_en": "if I had 100 million yen"
+            },
+            {
+              "id": "v2-04-023",
+              "term_ja": "いくら",
+              "reading": "いくら",
+              "ruby_html": "いくら",
+              "part_of_speech": "副詞",
+              "meaning_en": "No matter how (much)",
+              "meaning_zh": "无论怎么……也",
+              "example_ja": "いくら頼んでもだめだ",
+              "example_en": "no matter how much you ask, it's no use"
+            },
+            {
+              "id": "v2-04-024",
+              "term_ja": "どうしても",
+              "reading": "どうしても",
+              "ruby_html": "どうしても",
+              "part_of_speech": "副詞",
+              "meaning_en": "By all means, no matter what",
+              "meaning_zh": "无论如何",
+              "example_ja": "どうしても行きたい",
+              "example_en": "want to go no matter what"
+            },
+            {
+              "id": "v2-04-025",
+              "term_ja": "別に",
+              "reading": "べつに",
+              "ruby_html": "<ruby>別<rt>べつ</rt></ruby>に",
+              "part_of_speech": "副詞",
+              "meaning_en": "(Not) particularly",
+              "meaning_zh": "(并不) 特别，无所谓",
+              "example_ja": "別に興味はない",
+              "example_en": "not particularly interested"
+            },
+            {
+              "id": "v2-04-026",
+              "term_ja": "何で",
+              "reading": "なんで",
+              "ruby_html": "<ruby>何<rt>なん</rt></ruby>で",
+              "part_of_speech": "副詞",
+              "meaning_en": "Why",
+              "meaning_zh": "为什么",
+              "example_ja": "何で来なかったの",
+              "example_en": "why didn't you come?"
+            },
+            {
+              "id": "v2-04-027",
+              "term_ja": "間もなく",
+              "reading": "まもなく",
+              "ruby_html": "<ruby>間<rt>ま</rt></ruby>もなく",
+              "part_of_speech": "副詞",
+              "meaning_en": "Soon, shortly",
+              "meaning_zh": "不久，马上",
+              "example_ja": "間もなく電車が参ります",
+              "example_en": "train will arrive shortly"
+            },
+            {
+              "id": "v2-04-028",
+              "term_ja": "いよいよ",
+              "reading": "いよいよ",
+              "ruby_html": "いよいよ",
+              "part_of_speech": "副詞",
+              "meaning_en": "Finally, at last",
+              "meaning_zh": "终于，越发",
+              "example_ja": "いよいよ明日出発だ",
+              "example_en": "finally departing tomorrow"
+            },
+            {
+              "id": "v2-04-029",
+              "term_ja": "そろそろ",
+              "reading": "そろそろ",
+              "ruby_html": "そろそろ",
+              "part_of_speech": "副詞",
+              "meaning_en": "Soon, about time to",
+              "meaning_zh": "快要，差不多该",
+              "example_ja": "そろそろ帰りましょう",
+              "example_en": "let's head home soon"
+            },
+            {
+              "id": "v2-04-030",
+              "term_ja": "さっき",
+              "reading": "さっき",
+              "ruby_html": "さっき",
+              "part_of_speech": "副詞",
+              "meaning_en": "A moment ago, just now",
+              "meaning_zh": "刚才",
+              "example_ja": "さっき電話があった",
+              "example_en": "there was a call a moment ago"
+            },
+            {
+              "id": "v2-04-031",
+              "term_ja": "しばらく",
+              "reading": "しばらく",
+              "ruby_html": "しばらく",
+              "part_of_speech": "副詞",
+              "meaning_en": "For a while, temporarily",
+              "meaning_zh": "暂时，不久",
+              "example_ja": "しばらくお待ちください",
+              "example_en": "please wait a moment"
+            },
+            {
+              "id": "v2-04-032",
+              "term_ja": "今にも",
+              "reading": "いまにも",
+              "ruby_html": "<ruby>今<rt>いま</rt></ruby>にも",
+              "part_of_speech": "副詞",
+              "meaning_en": "At any moment",
+              "meaning_zh": "眼看就要",
+              "example_ja": "今にも雨が降りそうだ",
+              "example_en": "looks like it will rain at any moment"
+            },
+            {
+              "id": "v2-04-033",
+              "term_ja": "結局",
+              "reading": "けっきょく",
+              "ruby_html": "<ruby>結局<rt>けっきょく</rt></ruby>",
+              "part_of_speech": "副詞",
+              "meaning_en": "In the end, after all",
+              "meaning_zh": "结果，到底",
+              "example_ja": "結局誰も来なかった",
+              "example_en": "after all, nobody came"
+            },
+            {
+              "id": "v2-04-034",
+              "term_ja": "とうとう",
+              "reading": "とうとう",
+              "ruby_html": "とうとう",
+              "part_of_speech": "副詞",
+              "meaning_en": "Finally, at last",
+              "meaning_zh": "终于，到底",
+              "example_ja": "とうとう壊れてしまった",
+              "example_en": "finally broke down"
+            },
+            {
+              "id": "v2-04-035",
+              "term_ja": "ようやく",
+              "reading": "ようやく",
+              "ruby_html": "ようやく",
+              "part_of_speech": "副詞",
+              "meaning_en": "Finally, at last",
+              "meaning_zh": "好不容易，终于",
+              "example_ja": "ようやく完成した",
+              "example_en": "finally completed"
+            },
+            {
+              "id": "v2-04-036",
+              "term_ja": "ついに",
+              "reading": "ついに",
+              "ruby_html": "ついに",
+              "part_of_speech": "副詞",
+              "meaning_en": "Finally, at length",
+              "meaning_zh": "终于，终究",
+              "example_ja": "ついに夢がかなった",
+              "example_en": "finally dream came true"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "（　）昨日約束の場所に来なかったの？",
+              "options": [
+                "何で",
+                "いくら",
+                "まさか"
+              ],
+              "answer": "何で",
+              "explanation": "理由を尋ねる疑問詞的副詞「何で」（why）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "（　）呼んでも返事をしてくれない。",
+              "options": [
+                "何で",
+                "いくら",
+                "まさか"
+              ],
+              "answer": "いくら",
+              "explanation": "程度を強めて「〜ても」と呼応する「いくら」（no matter how much）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "（　）彼が犯人だとは思わなかった。",
+              "options": [
+                "何で",
+                "いくら",
+                "まさか"
+              ],
+              "answer": "まさか",
+              "explanation": "到底信じられない否定的な推測と呼応する「まさか」（never imagined）が入ります。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "part2_04-ex1",
+          "title_ja": "練習しよう 1: 線で結びなさい。",
+          "title_en": "Practice 1: Match the adverbs with their corresponding collocations.",
+          "type": "matching",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① いよいよ",
+              "answer": "明日出発だ",
+              "explanation": "「いよいよ明日出発だ」（finally departing tomorrow）"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(1) ② さっき",
+              "answer": "食べたばかりだ",
+              "explanation": "「さっき食べたばかりだ」（just ate a moment ago）"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(1) ③ しばらく",
+              "answer": "休もう",
+              "explanation": "「しばらく休もう」（let's rest for a while）"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "(2) ① 今にも",
+              "answer": "雨が降りそうだ",
+              "explanation": "「今にも雨が降りそうだ」（looks like it will rain at any moment）"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "(2) ② まさか",
+              "answer": "負けるとは思わなかった",
+              "explanation": "「まさか負けるとは思わなかった」（never thought we would lose）"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "(2) ③ まるで",
+              "answer": "夢のようだ",
+              "explanation": "「まるで夢のようだ」（just like a dream）"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "(3) ① どうしても",
+              "answer": "思い出せない",
+              "explanation": "「どうしても思い出せない」（cannot recall no matter what）"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "(3) ② 別に",
+              "answer": "欲しくない",
+              "explanation": "「別に欲しくない」（not particularly desiring it）"
+            },
+            {
+              "item_id": 9,
+              "question_ja": "(3) ③ もしかしたら",
+              "answer": "病気かもしれない",
+              "explanation": "「もしかしたら病気かもしれない」（perhaps might be sick）"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_04-ex2",
+          "title_ja": "練習しよう 2: 正しいほうを選びなさい。",
+          "title_en": "Practice 2: Choose the correct word.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "いろいろ考えたが、（a. 結局　b. ついに）行かないことにした。",
+              "options": [
+                "a. 結局",
+                "b. ついに"
+              ],
+              "answer": "a. 結局",
+              "explanation": "種々の過程を経た最終的な結論を表す「結局」が入ります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "時間がないから、（a. さっき　b. そろそろ）出かけよう。",
+              "options": [
+                "a. さっき",
+                "b. そろそろ"
+              ],
+              "answer": "b. そろそろ",
+              "explanation": "行動を起こすべき頃合いを表す「そろそろ」が入ります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "この本は（a. およそ　b. 案外）300ページあります。",
+              "options": [
+                "a. およそ",
+                "b. 案外"
+              ],
+              "answer": "a. およそ",
+              "explanation": "数量の概数を示す「およそ」が入ります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "長い間使っていたパソコンが（a. とうとう　b. いよいよ）壊れた。",
+              "options": [
+                "a. とうとう",
+                "b. いよいよ"
+              ],
+              "answer": "a. とうとう",
+              "explanation": "最終的に好ましくない結果に達したことを表す「とうとう」が入ります。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "彼の言っていることは（a. かなり　b. まったく）分からない。",
+              "options": [
+                "a. かなり",
+                "b. まったく"
+              ],
+              "answer": "b. まったく",
+              "explanation": "全面否定と呼応する「まったく〜ない」が入ります。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "注文した品物が（a. 早速　b. すぐに）届いた。",
+              "options": [
+                "a. 早速",
+                "b. すぐに"
+              ],
+              "answer": "a. 早速",
+              "explanation": "期待していたものが速やかに届いたことを喜ぶ「早速」が入ります。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "彼は（a. 実に　b. わざと）負けてあげた。",
+              "options": [
+                "a. 実に",
+                "b. わざと"
+              ],
+              "answer": "b. わざと",
+              "explanation": "意図的に故意に行う「わざと」が入ります。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_04-ex3",
+          "title_ja": "練習しよう 3: 並べ替えて正しい文を作りなさい。",
+          "title_en": "Practice 3: Rearrange the words to make correct sentences.",
+          "type": "scramble",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "休みの日には、［1 歌いたい。　2 カラオケで　3 思い切り　4 好きな歌を］。",
+              "options": [
+                "3-2-4-1",
+                "2-3-4-1",
+                "3-4-2-1",
+                "4-3-2-1"
+              ],
+              "answer": "3-2-4-1",
+              "explanation": "「思い切り（3）カラオケで（2）好きな歌を（4）歌いたい（1）」となります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "15年研究を続けて、［1 開発に　2 ついに　3 成功した。　4 新薬の］。",
+              "options": [
+                "2-4-1-3",
+                "4-1-2-3",
+                "2-1-4-3",
+                "1-4-2-3"
+              ],
+              "answer": "2-4-1-3",
+              "explanation": "「ついに（2）新薬の（4）開発に（1）成功した（3）」となります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "［1 教えてくれないの？　2 本当のことを　3 なんで　4 私に］",
+              "options": [
+                "3-2-4-1",
+                "3-4-2-1",
+                "2-4-3-1",
+                "4-3-2-1"
+              ],
+              "answer": "3-2-4-1",
+              "explanation": "「なんで（3）本当のことを（2）私に（4）教えてくれないの？（1）」となります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "話を聞くだけでなく、［1 みてください。　2 実際に　3 自分の目で　4 見て］。",
+              "options": [
+                "2-3-4-1",
+                "3-2-4-1",
+                "2-4-3-1",
+                "3-4-2-1"
+              ],
+              "answer": "2-3-4-1",
+              "explanation": "「実際に（2）自分の目で（3）見て（4）みてください（1）」となります。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_04-ex4",
+          "title_ja": "実力を試そう 1: （　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 1: Choose the best word to fill in the blank.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "たくさんの荷物を（　）運ぶのは大変だ。",
+              "options": [
+                "1 たまに",
+                "2 一度に",
+                "3 早速",
+                "4 案外"
+              ],
+              "answer": "2",
+              "explanation": "一度にまとめて運ぶことを表す「2 一度に」が適切です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "この仕事を終わらせるには、（　）3日はかかる。",
+              "options": [
+                "1 およそ",
+                "2 少なくとも",
+                "3 多少",
+                "4 かなり"
+              ],
+              "answer": "2",
+              "explanation": "最低限必要な日数を表す「2 少なくとも」が適切です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "「電車は（　）発車いたします。ご注意ください」。",
+              "options": [
+                "1 さっき",
+                "2 しばらく",
+                "3 今にも",
+                "4 間もなく"
+              ],
+              "answer": "4",
+              "explanation": "少しの時間ののちに発車することを案内する「4 間もなく」が適切です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "（　）時間があったら、旅行に行きたい。",
+              "options": [
+                "1 まるで",
+                "2 まさか",
+                "3 もしも",
+                "4 どうしても"
+              ],
+              "answer": "3",
+              "explanation": "仮定条件の「〜たら」と呼応する「3 もしも」が適切です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_04-ex5",
+          "title_ja": "実力を試そう 2: 下線部の言葉とだいたい同じ意味のものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 2: Choose the word closest in meaning to the underlined word.",
+          "type": "paraphrase",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "日本語のレベルには「多少」の違いがある。",
+              "options": [
+                "1 まったく",
+                "2 少し",
+                "3 とても",
+                "4 かなり"
+              ],
+              "answer": "2",
+              "explanation": "「多少」は少しの差・程度を表すので、「2 少し」が同義です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "今日の試験は「案外」簡単だった。",
+              "options": [
+                "1 非常に",
+                "2 ぜんぜん",
+                "3 たしかに",
+                "4 思ったより"
+              ],
+              "answer": "4",
+              "explanation": "「案外」は予想とは違っていたことを表すので、「4 思ったより」が同義です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "part2_04-ex6",
+          "title_ja": "実力を試そう 3: 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Test Your Ability 3: Choose the best sentence using the given word.",
+          "type": "usage",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "せっかく",
+              "options": [
+                "1 せっかく料理を作ったのに、誰も食べてくれなかった。",
+                "2 せっかく雨が降ってきたので傘を買った。",
+                "3 せっかく遅刻して先生に怒られた。",
+                "4 今日はせっかくいい天気ですね。"
+              ],
+              "answer": "1",
+              "explanation": "「せっかく」は苦労して用意したのに無駄になったことや、貴重な機会を表します。「せっかく料理を作ったのに〜」の1が正しい使い方です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "ようやく",
+              "options": [
+                "1 3時間並んで、ようやく切符が買えた。",
+                "2 ようやく雨が降ってきたので洗濯物を入れた。",
+                "3 明日はいよいよ、ようやく試験だ。",
+                "4 ようやく電話がかかってきたので切った。"
+              ],
+              "answer": "1",
+              "explanation": "「ようやく」は長い時間や苦労の末に待ち望んでいた事態が実現したことを表します。「3時間並んでようやく買えた」の1が適切です。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
