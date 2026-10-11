@@ -1,0 +1,4965 @@
+{
+  "title": "Part 1 Topics Chapters 16-21 & Review Tests 4 & 5",
+  "part": 1,
+  "metadata": {
+    "title": "新にほんご500問 N3 語彙編 (Vocabulary) - 第1部 16課〜21課 & 実力を試そう4・5",
+    "part": "part_1",
+    "chapters_range": "16-21",
+    "description": "Vocabulary data transcribed from Nihongo 500 Mon N3 Vocabulary Chapters 16-21 and Review Tests 4 and 5 with complete ruby furigana, warming up, yattemiyou drills, and exercises.",
+    "version": "1.0.0"
+  },
+  "chapters": [
+    {
+      "metadata": {
+        "chapter": 16,
+        "part": 1,
+        "topic_ja": "社会2: 政治、経済",
+        "topic_en": "Society 2: Politics and Economy",
+        "pages": [
+          68,
+          69,
+          70,
+          71
+        ]
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "政治",
+          "title_en": "Politics",
+          "warming_up": {
+            "question_ja": "どんな社会が「いい社会」だと思いますか。"
+          },
+          "words": [
+            {
+              "term_ja": "政治",
+              "reading": "せいじ",
+              "ruby_html": "<ruby>政治<rt>せいじ</rt></ruby>",
+              "meaning_en": "politics, government",
+              "example_ja": "政治に関心を持つ",
+              "example_ruby": "<ruby>政治<rt>せいじ</rt></ruby>に<ruby>関心<rt>かんしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ"
+            },
+            {
+              "term_ja": "政府",
+              "reading": "せいふ",
+              "ruby_html": "<ruby>政府<rt>せいふ</rt></ruby>",
+              "meaning_en": "government, administration",
+              "example_ja": "政府の政策",
+              "example_ruby": "<ruby>政府<rt>せいふ</rt></ruby>の<ruby>政策<rt>せいさく</rt></ruby>"
+            },
+            {
+              "term_ja": "首相",
+              "reading": "しゅしょう",
+              "ruby_html": "<ruby>首相<rt>しゅしょう</rt></ruby>",
+              "meaning_en": "prime minister",
+              "example_ja": "日本の首相",
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>首相<rt>しゅしょう</rt></ruby>"
+            },
+            {
+              "term_ja": "大統領",
+              "reading": "だいとうりょう",
+              "ruby_html": "<ruby>大統領<rt>だいとうりょう</rt></ruby>",
+              "meaning_en": "president (of a country)",
+              "example_ja": "アメリカの大統領",
+              "example_ruby": "アメリカの<ruby>大統領<rt>だいとうりょう</rt></ruby>"
+            },
+            {
+              "term_ja": "リーダー",
+              "reading": "リーダー",
+              "ruby_html": "リーダー",
+              "meaning_en": "leader",
+              "example_ja": "チームのリーダー",
+              "example_ruby": "チームのリーダー"
+            },
+            {
+              "term_ja": "国民",
+              "reading": "こくみん",
+              "ruby_html": "<ruby>国民<rt>こくみん</rt></ruby>",
+              "meaning_en": "citizens, national people",
+              "example_ja": "国民の義務",
+              "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>"
+            },
+            {
+              "term_ja": "市民",
+              "reading": "しみん",
+              "ruby_html": "<ruby>市民<rt>しみん</rt></ruby>",
+              "meaning_en": "citizens, city residents",
+              "example_ja": "市民の声を聞く",
+              "example_ruby": "<ruby>市民<rt>しみん</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く"
+            },
+            {
+              "term_ja": "平等",
+              "reading": "びょうどう",
+              "ruby_html": "<ruby>平等<rt>びょうどう</rt></ruby>",
+              "meaning_en": "equality, equal, fair",
+              "example_ja": "平等な社会",
+              "example_ruby": "<ruby>平等<rt>びょうどう</rt></ruby>な<ruby>社会<rt>しゃかい</rt></ruby>"
+            },
+            {
+              "term_ja": "不平等",
+              "reading": "ふびょうどう",
+              "ruby_html": "<ruby>不平等<rt>ふびょうどう</rt></ruby>",
+              "meaning_en": "inequality, unfairness",
+              "example_ja": "不平等な扱い",
+              "example_ruby": "<ruby>不平等<rt>ふびょうどう</rt></ruby>な<ruby>扱<rt>あつく</rt></ruby>い"
+            },
+            {
+              "term_ja": "権利",
+              "reading": "けんり",
+              "ruby_html": "<ruby>権利<rt>けんり</rt></ruby>",
+              "meaning_en": "right, privilege",
+              "example_ja": "投票する権利",
+              "example_ruby": "<ruby>投票<rt>とうひょう</rt></ruby>する<ruby>権利<rt>けんり</rt></ruby>"
+            },
+            {
+              "term_ja": "義務",
+              "reading": "ぎむ",
+              "ruby_html": "<ruby>義務<rt>ぎむ</rt></ruby>",
+              "meaning_en": "duty, obligation",
+              "example_ja": "国民の義務を果たす",
+              "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす"
+            },
+            {
+              "term_ja": "責任",
+              "reading": "せきにん",
+              "ruby_html": "<ruby>責任<rt>せきにん</rt></ruby>",
+              "meaning_en": "responsibility, liability",
+              "example_ja": "責任を取る",
+              "example_ruby": "<ruby>責任<rt>せきにん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+            },
+            {
+              "term_ja": "選挙",
+              "reading": "せんきょ",
+              "ruby_html": "<ruby>選挙<rt>せんきょ</rt></ruby>",
+              "meaning_en": "election",
+              "example_ja": "選挙に行く",
+              "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+            },
+            {
+              "term_ja": "投票する",
+              "reading": "とうひょうする",
+              "ruby_html": "<ruby>投票<rt>とうひょう</rt></ruby>する",
+              "meaning_en": "to vote",
+              "example_ja": "選挙で投票する",
+              "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>で<ruby>投票<rt>とうひょう</rt></ruby>する"
+            },
+            {
+              "term_ja": "実現する",
+              "reading": "じつげんする",
+              "ruby_html": "<ruby>実現<rt>じつげん</rt></ruby>する",
+              "meaning_en": "to realize, materialize, come true",
+              "example_ja": "夢を実現する",
+              "example_ruby": "<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>実現<rt>じつげん</rt></ruby>する"
+            },
+            {
+              "term_ja": "信頼する",
+              "reading": "しんらいする",
+              "ruby_html": "<ruby>信頼<rt>しんらい</rt></ruby>する",
+              "meaning_en": "to trust, rely upon",
+              "example_ja": "首相を信頼する",
+              "example_ruby": "<ruby>首相<rt>しゅしょう</rt></ruby>を<ruby>信頼<rt>しんらい</rt></ruby>する"
+            },
+            {
+              "term_ja": "戦う",
+              "reading": "たたかう",
+              "ruby_html": "<ruby>戦<rt>たたか</rt></ruby>う",
+              "meaning_en": "to fight, wage war, compete",
+              "example_ja": "敵と戦う",
+              "example_ruby": "<ruby>敵<rt>てき</rt></ruby>と<ruby>戦<rt>たたか</rt></ruby>う"
+            },
+            {
+              "term_ja": "攻撃する",
+              "reading": "こうげきする",
+              "ruby_html": "<ruby>攻撃<rt>こうげき</rt></ruby>する",
+              "meaning_en": "to attack, strike",
+              "example_ja": "相手を攻撃する",
+              "example_ruby": "<ruby>相手<rt>あいて</rt></ruby>を<ruby>攻撃<rt>こうげき</rt></ruby>する"
+            },
+            {
+              "term_ja": "マスコミ",
+              "reading": "マスコミ",
+              "ruby_html": "マスコミ",
+              "meaning_en": "mass communication, mass media",
+              "example_ja": "マスコミが報道する",
+              "example_ruby": "マスコミが<ruby>報道<rt>ほうどう</rt></ruby>する"
+            },
+            {
+              "term_ja": "デモ",
+              "reading": "デモ",
+              "ruby_html": "デモ",
+              "meaning_en": "demonstration, protest rally",
+              "example_ja": "デモに参加する",
+              "example_ruby": "デモに<ruby>参加<rt>さんか</rt></ruby>する"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "自分の意見を言う（　権利　）がある。",
+              "answer": "権利",
+              "explanation": "基本的人権や自己主張する力は「権利」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "18歳になったら、選挙で（　投票　）できる。",
+              "answer": "投票",
+              "explanation": "選挙で一票を入れることは「投票する」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "リーダーとして、最後まで（　責任　）を持たなければならない。",
+              "answer": "責任",
+              "explanation": "職務や立場に対する義務や責務は「責任を持つ」と言います。"
+            },
+            {
+              "id": 4,
+              "question_ja": "男の人も女の人も、（　平等　）に働ける社会がいい。",
+              "answer": "平等",
+              "explanation": "差別や差がない様子は「平等」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "増税に反対する人たちが、（　デモ　）を行った。",
+              "answer": "デモ",
+              "explanation": "抗議集会や行進は「デモ（デモンストレーション）」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "国の未来は、（　国民　）一人ひとりの考えにかかっている。",
+              "answer": "国民",
+              "explanation": "国を構成する人々は「国民」です。"
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "title_ja": "経済",
+          "title_en": "Economy",
+          "warming_up": {
+            "question_ja": "景気がいいときと悪いとき、私たちの生活はどう変わりますか。"
+          },
+          "words": [
+            {
+              "term_ja": "経済",
+              "reading": "けいざい",
+              "ruby_html": "<ruby>経済<rt>けいざい</rt></ruby>",
+              "meaning_en": "economy, economics",
+              "example_ja": "経済が成長する",
+              "example_ruby": "<ruby>経済<rt>けいざい</rt></ruby>が<ruby>成長<rt>せいちょう</rt></ruby>する"
+            },
+            {
+              "term_ja": "景気",
+              "reading": "けいき",
+              "ruby_html": "<ruby>景気<rt>けいき</rt></ruby>",
+              "meaning_en": "business climate, economy",
+              "example_ja": "景気がいい",
+              "example_ruby": "<ruby>景気<rt>けいき</rt></ruby>がいい"
+            },
+            {
+              "term_ja": "不景気",
+              "reading": "ふけいき",
+              "ruby_html": "<ruby>不景気<rt>ふけいき</rt></ruby>",
+              "meaning_en": "recession, economic depression",
+              "example_ja": "不景気が続く",
+              "example_ruby": "<ruby>不景気<rt>ふけいき</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く"
+            },
+            {
+              "term_ja": "物価",
+              "reading": "ぶっか",
+              "ruby_html": "<ruby>物価<rt>ぶっか</rt></ruby>",
+              "meaning_en": "prices of commodities, cost of living",
+              "example_ja": "物価が上がる",
+              "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる"
+            },
+            {
+              "term_ja": "安定する",
+              "reading": "あんていする",
+              "ruby_html": "<ruby>安定<rt>あんてい</rt></ruby>する",
+              "meaning_en": "to be stable, steady",
+              "example_ja": "物価が安定する",
+              "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>安定<rt>あんてい</rt></ruby>する"
+            },
+            {
+              "term_ja": "定価",
+              "reading": "ていか",
+              "ruby_html": "<ruby>定価<rt>ていか</rt></ruby>",
+              "meaning_en": "fixed price, list price, regular price",
+              "example_ja": "定価で買う",
+              "example_ruby": "<ruby>定価<rt>ていか</rt></ruby>で<ruby>買<rt>か</rt></ruby>う"
+            },
+            {
+              "term_ja": "割引",
+              "reading": "わりびき",
+              "ruby_html": "<ruby>割引<rt>わりびき</rt></ruby>",
+              "meaning_en": "discount, price reduction",
+              "example_ja": "学生割引がある",
+              "example_ruby": "<ruby>学生割引<rt>がくせいわりびき</rt></ruby>がある"
+            },
+            {
+              "term_ja": "値下げする",
+              "reading": "ねさげする",
+              "ruby_html": "<ruby>値下げ<rt>ねさげ</rt></ruby>する",
+              "meaning_en": "to reduce the price, cut prices",
+              "example_ja": "商品を値下げする",
+              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>値下げ<rt>ねさげ</rt></ruby>する"
+            },
+            {
+              "term_ja": "得する",
+              "reading": "とくする",
+              "ruby_html": "<ruby>得<rt>とく</rt></ruby>する",
+              "meaning_en": "to gain, profit, come out ahead",
+              "example_ja": "安く買えて得した",
+              "example_ruby": "<ruby>安<rt>やす</rt></ruby>く<ruby>買<rt>か</rt></ruby>えて<ruby>得<rt>とく</rt></ruby>した"
+            },
+            {
+              "term_ja": "損する",
+              "reading": "そんする",
+              "ruby_html": "<ruby>損<rt>そん</rt></ruby>する",
+              "meaning_en": "to lose, suffer a loss",
+              "example_ja": "株で損をする",
+              "example_ruby": "<ruby>株<rt>かぶ</rt></ruby>で<ruby>損<rt>そん</rt></ruby>をする"
+            },
+            {
+              "term_ja": "つぶれる",
+              "reading": "つぶれる",
+              "ruby_html": "つぶれる",
+              "meaning_en": "to go bankrupt, collapse, get crushed",
+              "example_ja": "会社がつぶれる",
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>がつぶれる"
+            },
+            {
+              "term_ja": "税金",
+              "reading": "ぜいきん",
+              "ruby_html": "<ruby>税金<rt>ぜいきん</rt></ruby>",
+              "meaning_en": "tax, duties",
+              "example_ja": "税金を払う",
+              "example_ruby": "<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+            },
+            {
+              "term_ja": "料金",
+              "reading": "りょうきん",
+              "ruby_html": "<ruby>料金<rt>りょうきん</rt></ruby>",
+              "meaning_en": "fee, charge, fare",
+              "example_ja": "電気料金を払う",
+              "example_ruby": "<ruby>電気料金<rt>でんきりょうきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+            },
+            {
+              "term_ja": "無料",
+              "reading": "むりょう",
+              "ruby_html": "<ruby>無料<rt>むりょう</rt></ruby>",
+              "meaning_en": "free of charge, complimentary",
+              "example_ja": "入場料は無料だ",
+              "example_ruby": "<ruby>入場料<rt>にゅうじょうりょう</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>だ"
+            },
+            {
+              "term_ja": "節約する",
+              "reading": "せつやくする",
+              "ruby_html": "<ruby>節約<rt>せつやく</rt></ruby>する",
+              "meaning_en": "to economize, save",
+              "example_ja": "生活費を節約する",
+              "example_ruby": "<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>する"
+            },
+            {
+              "term_ja": "貧しい",
+              "reading": "まずしい",
+              "ruby_html": "<ruby>貧<rt>まず</rt></ruby>しい",
+              "meaning_en": "poor, impoverished, needy",
+              "example_ja": "貧しい生活を送る",
+              "example_ruby": "<ruby>貧<rt>まず</rt></ruby>しい<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る"
+            },
+            {
+              "term_ja": "借金する",
+              "reading": "しゃっきんする",
+              "ruby_html": "<ruby>借金<rt>しゃっきん</rt></ruby>する",
+              "meaning_en": "to borrow money, run into debt",
+              "example_ja": "銀行から借金する",
+              "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>から<ruby>借金<rt>しゃっきん</rt></ruby>する"
+            },
+            {
+              "term_ja": "預ける",
+              "reading": "あずける",
+              "ruby_html": "<ruby>預<rt>あず</rt></ruby>ける",
+              "meaning_en": "to deposit, entrust, leave in custody",
+              "example_ja": "銀行にお金を預ける",
+              "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける"
+            },
+            {
+              "term_ja": "預かる",
+              "reading": "あずかる",
+              "ruby_html": "<ruby>預<rt>あず</rt></ruby>かる",
+              "meaning_en": "to look after, take care of, keep",
+              "example_ja": "手荷物を預かる",
+              "example_ruby": "<ruby>手荷物<rt>てにもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>かる"
+            },
+            {
+              "term_ja": "貯金する",
+              "reading": "ちょきんする",
+              "ruby_html": "<ruby>貯金<rt>ちょきん</rt></ruby>する",
+              "meaning_en": "to save money, put money in the bank",
+              "example_ja": "毎月貯金する",
+              "example_ruby": "<ruby>毎月<rt>まいつき</rt></ruby><ruby>貯金<rt>ちょきん</rt></ruby>する"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "バスに乗るとき、（　料金　）を払った。",
+              "answer": "料金",
+              "explanation": "交通機関やサービスの対価として支払う代金は「料金」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "この美術館は、子どもの入場が（　無料　）です。",
+              "answer": "無料",
+              "explanation": "お金がかからないことは「無料（タダ）」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "子どものころは家が（　貧しかった　）が、幸せだった。",
+              "answer": "貧しかった",
+              "explanation": "お金や物資が乏しいことは「貧しい」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "電気代を（　節約　）するために、こまめに電気を消す。",
+              "answer": "節約",
+              "explanation": "無駄遣いを減らして倹約することは「節約する」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "銀行にお金を（　預けて　）おく。",
+              "answer": "預けて",
+              "explanation": "銀行にお金を保管してもらうことは「預ける」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": 1,
+          "title_ja": "正しいほうを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "今、不景気だから、ボーナスが（a いい / b 悪い）。",
+              "options": [
+                "a いい",
+                "b 悪い"
+              ],
+              "answer": "b",
+              "explanation": "「不景気」のときは業績が悪いためボーナスは「悪い（少ない）」となります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "敵の城を（a 攻撃した / b 戦った）。",
+              "options": [
+                "a 攻撃した",
+                "b 戦った"
+              ],
+              "answer": "a",
+              "explanation": "目的語「〜を」を取るのは他動詞の「攻撃した」です。「戦う」は「〜と戦う」となります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "国の方針を決めるのは（a 国民 / b 政府）だ。",
+              "options": [
+                "a 国民",
+                "b 政府"
+              ],
+              "answer": "b",
+              "explanation": "国の政策や行政の方針を主導・決定するのは「政府」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "銀行にお金を（a 預けた / b 預かった）。",
+              "options": [
+                "a 預けた",
+                "b 預かった"
+              ],
+              "answer": "a",
+              "explanation": "銀行にお金を預託する（預け入れる）側は「預けた」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "セールで20％（a 税金 / b 割引）になった。",
+              "options": [
+                "a 税金",
+                "b 割引"
+              ],
+              "answer": "b",
+              "explanation": "定価から安くなることは「20％割引」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 2,
+          "title_ja": "（　）に言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "（　マスコミ　）がこの事件について大きく報道した。",
+              "answer": "マスコミ",
+              "explanation": "新聞・テレビなどの報道機関は「マスコミ」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "最近、（　物価　）が上がって生活が苦しい。",
+              "answer": "物価",
+              "explanation": "モノの値段全般は「物価」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "友達に（　借金　）をして、新しい車を買った。",
+              "answer": "借金",
+              "explanation": "お金を借りることは「借金（をする）」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "売れないので、商品を（　値下げ　）して売ることにした。",
+              "answer": "値下げ",
+              "explanation": "値段を下げることは「値下げする」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "インターネットなら、（　無料　）で映画が見られるサイトもある。",
+              "answer": "無料",
+              "explanation": "お金がかからず0円なのは「無料」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "国を守るために、兵士たちが勇敢に（　戦って　）いる。",
+              "answer": "戦って",
+              "explanation": "敵と争い防衛することは「戦っている」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 3,
+          "title_ja": "「不〜」「無〜」を言葉の前につけて、反対の意味の言葉を作りなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "関心 → （　無関心　）",
+              "answer": "無関心",
+              "explanation": "関心がないことは「無関心」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "平等 → （　不平等　）",
+              "answer": "不平等",
+              "explanation": "平等でないことは「不平等」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "責任 → （　無責任　）",
+              "answer": "無責任",
+              "explanation": "責任感がないことは「無責任」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "景気 → （　不景気　）",
+              "answer": "不景気",
+              "explanation": "景気が悪い状態は「不景気」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "安定 → （　不安定　）",
+              "answer": "不安定",
+              "explanation": "安定していない状態は「不安定」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 4,
+          "title_ja": "言葉の組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1. 夢を（ a 選挙 / b 信頼 / c 実現 ）する",
+              "options": [
+                "a 選挙",
+                "b 信頼",
+                "c 実現"
+              ],
+              "answer": "c",
+              "explanation": "「夢を実現する」"
+            },
+            {
+              "id": 2,
+              "question_ja": "1. 国民の（ a 選挙 / b 信頼 / c 実現 ）を得る",
+              "options": [
+                "a 選挙",
+                "b 信頼",
+                "c 実現"
+              ],
+              "answer": "b",
+              "explanation": "「国民の信頼を得る」"
+            },
+            {
+              "id": 3,
+              "question_ja": "1. （ a 選挙 / b 信頼 / c 実現 ）で投票する",
+              "options": [
+                "a 選挙",
+                "b 信頼",
+                "c 実現"
+              ],
+              "answer": "a",
+              "explanation": "「選挙で投票する」"
+            },
+            {
+              "id": 4,
+              "question_ja": "2. 将来のために（ a 税金 / b 貯金 / c 定価 ）する",
+              "options": [
+                "a 税金",
+                "b 貯金",
+                "c 定価"
+              ],
+              "answer": "b",
+              "explanation": "「将来のために貯金する」"
+            },
+            {
+              "id": 5,
+              "question_ja": "2. （ a 税金 / b 貯金 / c 定価 ）で売る",
+              "options": [
+                "a 税金",
+                "b 貯金",
+                "c 定価"
+              ],
+              "answer": "c",
+              "explanation": "「定価で売る」"
+            },
+            {
+              "id": 6,
+              "question_ja": "2. （ a 税金 / b 貯金 / c 定価 ）を払う",
+              "options": [
+                "a 税金",
+                "b 貯金",
+                "c 定価"
+              ],
+              "answer": "a",
+              "explanation": "「税金を払う」"
+            }
+          ]
+        },
+        {
+          "exercise_id": 5,
+          "title_ja": "矢印の順にストーリーになるように言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "景気悪化 → モノが売れない → （①値下げ）する → 損する → 借金する → つぶれる",
+              "answer": "値下げ",
+              "explanation": "売れないため値段を下げること。"
+            },
+            {
+              "id": 2,
+              "question_ja": "景気悪化 → モノが売れない → 値下げする → （②損）する → 借金する → つぶれる",
+              "answer": "損",
+              "explanation": "利益が出ずに損をすること。"
+            },
+            {
+              "id": 3,
+              "question_ja": "景気悪化 → モノが売れない → 値下げする → 損する → （③借金）する → つぶれる",
+              "answer": "借金",
+              "explanation": "資金が足りなくなって借金をすること。"
+            },
+            {
+              "id": 4,
+              "question_ja": "景気悪化 → モノが売れない → 値下げする → 損する → 借金する → （④つぶれる）",
+              "answer": "つぶれる",
+              "explanation": "倒産して会社がつぶれること。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 17,
+        "part": 1,
+        "topic_ja": "行事と宗教",
+        "topic_en": "Events and Religion",
+        "pages": [
+          72,
+          73,
+          74,
+          75
+        ]
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "行事",
+          "title_en": "Events",
+          "warming_up": {
+            "question_ja": "どんな年中行事が好きですか。そのとき何をしますか。"
+          },
+          "words": [
+            {
+              "term_ja": "行事",
+              "reading": "ぎょうじ",
+              "ruby_html": "<ruby>行事<rt>ぎょうじ</rt></ruby>",
+              "meaning_en": "event, function, observance",
+              "example_ja": "年中行事に参加する",
+              "example_ruby": "<ruby>年中行事<rt>ねんじゅうぎょうじ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+            },
+            {
+              "term_ja": "イベント",
+              "reading": "イベント",
+              "ruby_html": "イベント",
+              "meaning_en": "event",
+              "example_ja": "イベントに参加する",
+              "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する"
+            },
+            {
+              "term_ja": "参加する",
+              "reading": "さんかする",
+              "ruby_html": "<ruby>参加<rt>さんか</rt></ruby>する",
+              "meaning_en": "to participate, take part in, join",
+              "example_ja": "祭りに参加する",
+              "example_ruby": "<ruby>祭<rt>まつ</rt></ruby>りに<ruby>参加<rt>さんか</rt></ruby>する"
+            },
+            {
+              "term_ja": "誕生する",
+              "reading": "たんじょうする",
+              "ruby_html": "<ruby>誕生<rt>たんじょう</rt></ruby>する",
+              "meaning_en": "to be born, come into the world",
+              "example_ja": "新しい命が誕生する",
+              "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>命<rt>いのち</rt></ruby>が<ruby>誕生<rt>たんじょう</rt></ruby>する"
+            },
+            {
+              "term_ja": "誕生会",
+              "reading": "たんじょうかい",
+              "ruby_html": "<ruby>誕生会<rt>たんじょうかい</rt></ruby>",
+              "meaning_en": "birthday party",
+              "example_ja": "友達の誕生会を開く",
+              "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>誕生会<rt>たんじょうかい</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>く"
+            },
+            {
+              "term_ja": "成人式",
+              "reading": "せいじんしき",
+              "ruby_html": "<ruby>成人式<rt>せいじんしき</rt></ruby>",
+              "meaning_en": "Coming-of-Age ceremony",
+              "example_ja": "成人式に出席する",
+              "example_ruby": "<ruby>成人式<rt>せいじんしき</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>する"
+            },
+            {
+              "term_ja": "式",
+              "reading": "しき",
+              "ruby_html": "<ruby>式<rt>しき</rt></ruby>",
+              "meaning_en": "ceremony, ritual",
+              "example_ja": "式を行う",
+              "example_ruby": "<ruby>式<rt>しき</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う"
+            },
+            {
+              "term_ja": "祝う",
+              "reading": "いわう",
+              "ruby_html": "<ruby>祝<rt>いわ</rt></ruby>う",
+              "meaning_en": "to celebrate, congratulate",
+              "example_ja": "卒業を祝う",
+              "example_ruby": "<ruby>卒業<rt>そつぎょう</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う"
+            },
+            {
+              "term_ja": "お祝い",
+              "reading": "おいわい",
+              "ruby_html": "お<ruby>祝<rt>いわ</rt></ruby>い",
+              "meaning_en": "celebration, congratulatory gift",
+              "example_ja": "結婚のお祝いを贈る",
+              "example_ruby": "<ruby>結婚<rt>けっこん</rt></ruby>のお<ruby>祝<rt>いわ</rt></ruby>いを<ruby>贈<rt>おく</rt></ruby>る"
+            },
+            {
+              "term_ja": "記念する",
+              "reading": "きねんする",
+              "ruby_html": "<ruby>記念<rt>きねん</rt></ruby>する",
+              "meaning_en": "to commemorate",
+              "example_ja": "創立記念日を祝う",
+              "example_ruby": "<ruby>創立記念日<rt>そうりつきねんび</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う"
+            },
+            {
+              "term_ja": "記念品",
+              "reading": "きねんひん",
+              "ruby_html": "<ruby>記念品<rt>きねんひん</rt></ruby>",
+              "meaning_en": "commemorative gift, souvenir, memento",
+              "example_ja": "記念品をもらう",
+              "example_ruby": "<ruby>記念品<rt>きねんひん</rt></ruby>をもらう"
+            },
+            {
+              "term_ja": "贈る",
+              "reading": "おくる",
+              "ruby_html": "<ruby>贈<rt>おく</rt></ruby>る",
+              "meaning_en": "to give as a gift, present",
+              "example_ja": "花束を贈る",
+              "example_ruby": "<ruby>花束<rt>はなたば</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>る"
+            },
+            {
+              "term_ja": "拍手する",
+              "reading": "はくしゅする",
+              "ruby_html": "<ruby>拍手<rt>はくしゅ</rt></ruby>する",
+              "meaning_en": "to clap hands, applaud",
+              "example_ja": "大きな拍手をする",
+              "example_ruby": "<ruby>大<rt>おお</rt></ruby>きな<ruby>拍手<rt>はくしゅ</rt></ruby>をする"
+            },
+            {
+              "term_ja": "過ごす",
+              "reading": "すごす",
+              "ruby_html": "<ruby>過<rt>す</rt></ruby>ごす",
+              "meaning_en": "to spend (time), pass (time)",
+              "example_ja": "楽しい時間を過ごす",
+              "example_ruby": "<ruby>楽<rt>たの</rt></ruby>しい<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごす"
+            },
+            {
+              "term_ja": "伝統",
+              "reading": "でんとう",
+              "ruby_html": "<ruby>伝統<rt>でんとう</rt></ruby>",
+              "meaning_en": "tradition",
+              "example_ja": "日本の伝統を守る",
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>伝統<rt>でんとう</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る"
+            },
+            {
+              "term_ja": "伝統的な",
+              "reading": "でんとうてきな",
+              "ruby_html": "<ruby>伝統的<rt>でんとうてき</rt></ruby>な",
+              "meaning_en": "traditional",
+              "example_ja": "伝統的な祭り",
+              "example_ruby": "<ruby>伝統的<rt>でんとうてき</rt></ruby>な<ruby>祭<rt>まつ</rt></ruby>り"
+            },
+            {
+              "term_ja": "伝える",
+              "reading": "つたえる",
+              "ruby_html": "<ruby>伝<rt>つた</rt></ruby>える",
+              "meaning_en": "to convey, transmit, pass down",
+              "example_ja": "次の世代に伝える",
+              "example_ruby": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>世代<rt>せだい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>える"
+            },
+            {
+              "term_ja": "シーズン",
+              "reading": "シーズン",
+              "ruby_html": "シーズン",
+              "meaning_en": "season",
+              "example_ja": "旅行のシーズン",
+              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>のシーズン"
+            },
+            {
+              "term_ja": "世紀",
+              "reading": "せいき",
+              "ruby_html": "<ruby>世紀<rt>せいき</rt></ruby>",
+              "meaning_en": "century",
+              "example_ja": "21世紀の社会",
+              "example_ruby": "21<ruby>世紀<rt>せいき</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "友達の結婚の（　お祝い　）に、花を贈った。",
+              "answer": "お祝い",
+              "explanation": "結婚や誕生などの慶事への贈り物は「お祝い」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "この地方には、昔からの（　伝統　）が残っている。",
+              "answer": "伝統",
+              "explanation": "昔から受け継がれてきた文化や風習は「伝統」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "そろそろ紅葉の（　シーズン　）だ。",
+              "answer": "シーズン",
+              "explanation": "その活動や見頃の時期・季節は「シーズン」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "素晴らしいスピーチに、みんなが（　拍手　）した。",
+              "answer": "拍手",
+              "explanation": "手を叩いて称賛することは「拍手（する）」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "卒業式で、学校から（　記念品　）をもらった。",
+              "answer": "記念品",
+              "explanation": "思い出や記念のために贈られる品は「記念品」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "正月は、家族と一緒に楽しく（　過ごした　）。",
+              "answer": "過ごした",
+              "explanation": "時間を送ることは「過ごす」です。"
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "title_ja": "宗教",
+          "title_en": "Religion",
+          "warming_up": {
+            "question_ja": "どんなときに、お祈りをしますか。何を祈りますか。"
+          },
+          "words": [
+            {
+              "term_ja": "宗教",
+              "reading": "しゅうきょう",
+              "ruby_html": "<ruby>宗教<rt>しゅうきょう</rt></ruby>",
+              "meaning_en": "religion",
+              "example_ja": "宗教を信じる",
+              "example_ruby": "<ruby>宗教<rt>しゅうきょう</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる"
+            },
+            {
+              "term_ja": "仏教",
+              "reading": "ぶっきょう",
+              "ruby_html": "<ruby>仏教<rt>ぶっきょう</rt></ruby>",
+              "meaning_en": "Buddhism",
+              "example_ja": "仏教の教え",
+              "example_ruby": "<ruby>仏教<rt>ぶっきょう</rt></ruby>の<ruby>教<rt>おし</rt></ruby>え"
+            },
+            {
+              "term_ja": "キリスト教",
+              "reading": "キリストきょう",
+              "ruby_html": "キリスト<ruby>教<rt>きょう</rt></ruby>",
+              "meaning_en": "Christianity",
+              "example_ja": "キリスト教の教会",
+              "example_ruby": "キリスト<ruby>教<rt>きょう</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>"
+            },
+            {
+              "term_ja": "イスラム教",
+              "reading": "イスラムきょう",
+              "ruby_html": "イスラム<ruby>教<rt>きょう</rt></ruby>",
+              "meaning_en": "Islam",
+              "example_ja": "イスラム教の寺院",
+              "example_ruby": "イスラム<ruby>教<rt>きょう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby>"
+            },
+            {
+              "term_ja": "神",
+              "reading": "かみ",
+              "ruby_html": "<ruby>神<rt>かみ</rt></ruby>",
+              "meaning_en": "God, deity",
+              "example_ja": "神を信じる",
+              "example_ruby": "<ruby>神<rt>かみ</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる"
+            },
+            {
+              "term_ja": "神社",
+              "reading": "じんじゃ",
+              "ruby_html": "<ruby>神社<rt>じんじゃ</rt></ruby>",
+              "meaning_en": "Shinto shrine",
+              "example_ja": "神社にお参りする",
+              "example_ruby": "<ruby>神社<rt>じんじゃ</rt></ruby>にお<ruby>参<rt>まい</rt></ruby>りする"
+            },
+            {
+              "term_ja": "寺",
+              "reading": "てら",
+              "ruby_html": "<ruby>寺<rt>てら</rt></ruby>",
+              "meaning_en": "Buddhist temple",
+              "example_ja": "古い寺を訪ねる",
+              "example_ruby": "<ruby>古<rt>ふる</rt></ruby>い<ruby>寺<rt>てら</rt></ruby>を<ruby>訪<rt>たず</rt></ruby>ねる"
+            },
+            {
+              "term_ja": "祈る",
+              "reading": "いのる",
+              "ruby_html": "<ruby>祈<rt>いの</rt></ruby>る",
+              "meaning_en": "to pray, wish",
+              "example_ja": "平和を祈る",
+              "example_ruby": "<ruby>平和<rt>へいわ</rt></ruby>を<ruby>祈<rt>いの</rt></ruby>る"
+            },
+            {
+              "term_ja": "お祈り",
+              "reading": "おいのり",
+              "ruby_html": "お<ruby>祈<rt>いの</rt></ruby>り",
+              "meaning_en": "prayer",
+              "example_ja": "毎日お祈りをする",
+              "example_ruby": "<ruby>毎日<rt>まいにち</rt></ruby>お<ruby>祈<rt>いの</rt></ruby>りをする"
+            },
+            {
+              "term_ja": "願う",
+              "reading": "ねがう",
+              "ruby_html": "<ruby>願<rt>ねが</rt></ruby>う",
+              "meaning_en": "to wish, desire, hope for",
+              "example_ja": "健康を願う",
+              "example_ruby": "<ruby>健康<rt>けんこう</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う"
+            },
+            {
+              "term_ja": "願い",
+              "reading": "ねがい",
+              "ruby_html": "<ruby>願<rt>ねが</rt></ruby>い",
+              "meaning_en": "wish, desire, request",
+              "example_ja": "願いがかなう",
+              "example_ruby": "<ruby>願<rt>ねが</rt></ruby>いがかなう"
+            },
+            {
+              "term_ja": "手を合わせる",
+              "reading": "てをあわせる",
+              "ruby_html": "<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる",
+              "meaning_en": "to put hands together in prayer",
+              "example_ja": "仏壇の前で手を合わせる",
+              "example_ruby": "<ruby>仏壇<rt>ぶつだん</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる"
+            },
+            {
+              "term_ja": "墓",
+              "reading": "はか",
+              "ruby_html": "<ruby>墓<rt>はか</rt></ruby>",
+              "meaning_en": "grave, tomb",
+              "example_ja": "墓参りに行く",
+              "example_ruby": "<ruby>墓参<rt>はかまい</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く"
+            },
+            {
+              "term_ja": "幸せ",
+              "reading": "しあわせ",
+              "ruby_html": "<ruby>幸<rt>しあわ</rt></ruby>せ",
+              "meaning_en": "happiness, happy, fortunate",
+              "example_ja": "幸せに暮らす",
+              "example_ruby": "<ruby>幸<rt>しあわ</rt></ruby>せに<ruby>暮<rt>く</rt></ruby>らす"
+            },
+            {
+              "term_ja": "幸福",
+              "reading": "こうふく",
+              "ruby_html": "<ruby>幸福<rt>こうふく</rt></ruby>",
+              "meaning_en": "happiness, felicity",
+              "example_ja": "幸福な家庭を築く",
+              "example_ruby": "<ruby>幸福<rt>こうふく</rt></ruby>な<ruby>家庭<rt>かてい</rt></ruby>を<ruby>築<rt>きず</rt></ruby>く"
+            },
+            {
+              "term_ja": "平和",
+              "reading": "へいわ",
+              "ruby_html": "<ruby>平和<rt>へいわ</rt></ruby>",
+              "meaning_en": "peace, harmony, peaceful",
+              "example_ja": "世界平和を願う",
+              "example_ruby": "<ruby>世界平和<rt>せかいへいわ</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う"
+            },
+            {
+              "term_ja": "信じる",
+              "reading": "しんじる",
+              "ruby_html": "<ruby>信<rt>しん</rt></ruby>じる",
+              "meaning_en": "to believe, trust in",
+              "example_ja": "神の存在を信じる",
+              "example_ruby": "<ruby>神<rt>かみ</rt></ruby>の<ruby>存在<rt>そんざい</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる"
+            },
+            {
+              "term_ja": "運",
+              "reading": "うん",
+              "ruby_html": "<ruby>運<rt>うん</rt></ruby>",
+              "meaning_en": "luck, fortune",
+              "example_ja": "運がいい",
+              "example_ruby": "<ruby>運<rt>うん</rt></ruby>がいい"
+            },
+            {
+              "term_ja": "占い",
+              "reading": "うらない",
+              "ruby_html": "<ruby>占<rt>うらな</rt></ruby>い",
+              "meaning_en": "fortune-telling, divination",
+              "example_ja": "星占いで運勢を見る",
+              "example_ruby": "<ruby>星占<rt>ほしうらな</rt></ruby>いで<ruby>運勢<rt>うんせい</rt></ruby>を<ruby>見<rt>み</rt></ruby>る"
+            },
+            {
+              "term_ja": "占う",
+              "reading": "うらなう",
+              "ruby_html": "<ruby>占<rt>うらな</rt></ruby>う",
+              "meaning_en": "to tell fortunes, divine",
+              "example_ja": "未来を占う",
+              "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>を<ruby>占<rt>うらな</rt></ruby>う"
+            },
+            {
+              "term_ja": "当たる",
+              "reading": "あたる",
+              "ruby_html": "<ruby>当<rt>あ</rt></ruby>たる",
+              "meaning_en": "to hit, come true, be accurate",
+              "example_ja": "占いが当たる",
+              "example_ruby": "<ruby>占<rt>うらな</rt></ruby>いが<ruby>当<rt>あ</rt></ruby>たる"
+            },
+            {
+              "term_ja": "未来",
+              "reading": "みらい",
+              "ruby_html": "<ruby>未来<rt>みらい</rt></ruby>",
+              "meaning_en": "future",
+              "example_ja": "明るい未来",
+              "example_ruby": "<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>"
+            },
+            {
+              "term_ja": "過去",
+              "reading": "かこ",
+              "ruby_html": "<ruby>過去<rt>かこ</rt></ruby>",
+              "meaning_en": "past",
+              "example_ja": "過去を振り返る",
+              "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "日本では、どんな（　宗教　）を信じている人が多いですか。",
+              "answer": "宗教",
+              "explanation": "信仰や宗派の総称は「宗教」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "初詣に行って、（　神　）様にお祈りをした。",
+              "answer": "神",
+              "explanation": "神社で祀られている対象は「神（様）」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "神社で静かに手を（　合わせ　）て祈った。",
+              "answer": "合わせ",
+              "explanation": "両手のひらを合わせる作法は「手を合わせる」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "お盆には家族でお（　墓　）参りに行く。",
+              "answer": "墓",
+              "explanation": "先祖の眠る場所へ行くことは「お墓参り」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "朝のテレビ番組の占いがよく（　当たる　）。",
+              "answer": "当たる",
+              "explanation": "予言や占いが的中することは「当たる」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "家族みんなの健康と幸せを（　祈った　）。",
+              "answer": "祈った",
+              "explanation": "心の中で幸福を求める行為は「祈る」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": 1,
+          "title_ja": "正しいほうを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "マラソン大会に（a 参加する / b 過ごす）。",
+              "options": [
+                "a 参加する",
+                "b 過ごす"
+              ],
+              "answer": "a",
+              "explanation": "催しや大会に加わるのは「参加する」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "友達の結婚式に花を（a 伝える / b 贈る）。",
+              "options": [
+                "a 伝える",
+                "b 贈る"
+              ],
+              "answer": "b",
+              "explanation": "プレゼントなどをあげる行為は「贈る」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "家族みんなが（a 幸福 / b 幸せ）に暮らしている。",
+              "options": [
+                "a 幸福",
+                "b 幸せ"
+              ],
+              "answer": "b",
+              "explanation": "「〜に暮らしている」と続く副詞的用法では「幸せに暮らしている」が最も自然です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "（a 未来 / b 過去）のことを考えても、何が起きるか分からない。",
+              "options": [
+                "a 未来",
+                "b 過去"
+              ],
+              "answer": "a",
+              "explanation": "これから起こるまだ見ぬ時は「未来」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "神社の前で静かに手を（a 合わせる / b 祈る）。",
+              "options": [
+                "a 合わせる",
+                "b 祈る"
+              ],
+              "answer": "a",
+              "explanation": "「手を〜」に続く慣用表現は「手を合わせる」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 2,
+          "title_ja": "言葉の後ろにつくものを選んでグループに分けなさい（〜会 / 〜式）。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "誕生（〜会 / 〜式）",
+              "options": [
+                "〜会",
+                "〜式"
+              ],
+              "answer": "〜会",
+              "explanation": "誕生会"
+            },
+            {
+              "id": 2,
+              "question_ja": "運動（〜会 / 〜式）",
+              "options": [
+                "〜会",
+                "〜式"
+              ],
+              "answer": "〜会",
+              "explanation": "運動会"
+            },
+            {
+              "id": 3,
+              "question_ja": "歓迎（〜会 / 〜式）",
+              "options": [
+                "〜会",
+                "〜式"
+              ],
+              "answer": "〜会",
+              "explanation": "歓迎会"
+            },
+            {
+              "id": 4,
+              "question_ja": "卒業（〜会 / 〜式）",
+              "options": [
+                "〜会",
+                "〜式"
+              ],
+              "answer": "〜式",
+              "explanation": "卒業式"
+            },
+            {
+              "id": 5,
+              "question_ja": "結婚（〜会 / 〜式）",
+              "options": [
+                "〜会",
+                "〜式"
+              ],
+              "answer": "〜式",
+              "explanation": "結婚式"
+            },
+            {
+              "id": 6,
+              "question_ja": "葬（〜会 / 〜式）",
+              "options": [
+                "〜会",
+                "〜式"
+              ],
+              "answer": "〜式",
+              "explanation": "葬式"
+            }
+          ]
+        },
+        {
+          "exercise_id": 3,
+          "title_ja": "（　）に言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "夏休みは祖父母の家でのんびり（　過ごした　）。",
+              "answer": "過ごした",
+              "explanation": "時間を送ることは「過ごす」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "友達の誕生日をみんなで（　祝う　）ことにした。",
+              "answer": "祝う",
+              "explanation": "お祝いすることは「祝う」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "テレビの星占いで今日の運勢を（　占って　）もらった。",
+              "answer": "占って",
+              "explanation": "運勢を見てもらうことは「占う」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "週末に商店街で楽しい（　イベント　）がある。",
+              "answer": "イベント",
+              "explanation": "催し物は「イベント」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "着物を着る日本の（　伝統　）を守りたい。",
+              "answer": "伝統",
+              "explanation": "古くから続く文化や様式は「伝統」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 4,
+          "title_ja": "言葉の組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1. 家族の（ a 平和 / b 幸福 / c 運 ）を願う",
+              "options": [
+                "a 平和",
+                "b 幸福",
+                "c 運"
+              ],
+              "answer": "b",
+              "explanation": "「家族の幸福を願う」"
+            },
+            {
+              "id": 2,
+              "question_ja": "1. 試験の前に（ a 平和 / b 幸福 / c 運 ）を試す",
+              "options": [
+                "a 平和",
+                "b 幸福",
+                "c 運"
+              ],
+              "answer": "c",
+              "explanation": "「運を試す」"
+            },
+            {
+              "id": 3,
+              "question_ja": "1. 世界の（ a 平和 / b 幸福 / c 運 ）を守る",
+              "options": [
+                "a 平和",
+                "b 幸福",
+                "c 運"
+              ],
+              "answer": "a",
+              "explanation": "「世界の平和を守る」"
+            },
+            {
+              "id": 4,
+              "question_ja": "2. 合格を（ a 伝える / b 信じる / c 願って ）神社へ行く",
+              "options": [
+                "a 伝える",
+                "b 信じる",
+                "c 願って"
+              ],
+              "answer": "c",
+              "explanation": "「合格を願って」"
+            },
+            {
+              "id": 5,
+              "question_ja": "2. 自分の力を（ a 伝える / b 信じる / c 願って ）",
+              "options": [
+                "a 伝える",
+                "b 信じる",
+                "c 願って"
+              ],
+              "answer": "b",
+              "explanation": "「自分の力を信じる」"
+            },
+            {
+              "id": 6,
+              "question_ja": "2. 次の世代に文化を（ a 伝える / b 信じる / c 願って ）",
+              "options": [
+                "a 伝える",
+                "b 信じる",
+                "c 願って"
+              ],
+              "answer": "a",
+              "explanation": "「文化を伝える」"
+            }
+          ]
+        },
+        {
+          "exercise_id": 5,
+          "title_ja": "文の内容が合っていれば○、違っていれば×をつけなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1月1日はお正月で、神社やお寺にお参りに行く人が多い。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "○",
+              "explanation": "初詣として神社やお寺にお参りします。"
+            },
+            {
+              "id": 2,
+              "question_ja": "成人式は、子どもが生まれたときに行う式だ。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "×",
+              "explanation": "成人式はおとな（20歳／18歳）になったことを祝う儀式です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "お盆には、先祖の霊を迎えるためにお墓参りをする。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "○",
+              "explanation": "先祖供養としてお墓参りを行う日本の伝統行事です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "クリスマスは日本の伝統的な行事である。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "×",
+              "explanation": "キリスト教発祥の西洋の年中行事です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 6,
+          "title_ja": "文章の（　）に適切な言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "日本には様々な（①宗教）がある。",
+              "answer": "宗教",
+              "explanation": "神道や仏教などを含む「宗教」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "多くの人は神道や仏教を深く（②信じ）ているわけではないが、",
+              "answer": "信じ",
+              "explanation": "信仰することを表す「信じている」。"
+            },
+            {
+              "id": 3,
+              "question_ja": "赤ちゃんの（③誕生）をお参りし、",
+              "answer": "誕生",
+              "explanation": "赤ちゃんが生まれる「誕生」。"
+            },
+            {
+              "id": 4,
+              "question_ja": "正月を（④祝う）。",
+              "answer": "祝う",
+              "explanation": "おめでたい行事を「祝う」。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 18,
+        "part": 1,
+        "topic_ja": "自然1: 季節と天気、地理",
+        "topic_en": "Nature 1: Seasons/Weather, Geography",
+        "pages": [
+          76,
+          77,
+          78,
+          79
+        ]
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "季節と天気",
+          "title_en": "Seasons and Weather",
+          "warming_up": {
+            "question_ja": "どんな季節・天気が好きですか。どうしてですか。"
+          },
+          "words": [
+            {
+              "term_ja": "四季",
+              "reading": "しき",
+              "ruby_html": "<ruby>四季<rt>しき</rt></ruby>",
+              "meaning_en": "four seasons",
+              "example_ja": "日本の四季を楽しむ",
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>四季<rt>しき</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむ"
+            },
+            {
+              "term_ja": "爽やかな",
+              "reading": "さわやかな",
+              "ruby_html": "<ruby>爽<rt>さわ</rt></ruby>やかな",
+              "meaning_en": "refreshing, brisk, pleasant",
+              "example_ja": "爽やかな風が吹く",
+              "example_ruby": "<ruby>爽<rt>さわ</rt></ruby>やかな<ruby>風<rt>かぜ</rt></ruby>が<ruby>吹<rt>ふ</rt></ruby>く"
+            },
+            {
+              "term_ja": "蒸し暑い",
+              "reading": "むしあつい",
+              "ruby_html": "<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>い",
+              "meaning_en": "humid, sultry, muggy",
+              "example_ja": "蒸し暑い夜",
+              "example_ruby": "<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>い<ruby>夜<rt>よる</rt></ruby>"
+            },
+            {
+              "term_ja": "梅雨",
+              "reading": "つゆ",
+              "ruby_html": "<ruby>梅雨<rt>つゆ</rt></ruby>",
+              "meaning_en": "rainy season",
+              "example_ja": "梅雨に入る",
+              "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+            },
+            {
+              "term_ja": "明ける",
+              "reading": "あける",
+              "ruby_html": "<ruby>明<rt>あ</rt></ruby>ける",
+              "meaning_en": "to dawn, to end (rainy season)",
+              "example_ja": "梅雨が明ける",
+              "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>が<ruby>明<rt>あ</rt></ruby>ける"
+            },
+            {
+              "term_ja": "太陽",
+              "reading": "たいよう",
+              "ruby_html": "<ruby>太陽<rt>たいよう</rt></ruby>",
+              "meaning_en": "the sun",
+              "example_ja": "太陽が昇る",
+              "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る"
+            },
+            {
+              "term_ja": "日",
+              "reading": "ひ",
+              "ruby_html": "<ruby>日<rt>ひ</rt></ruby>",
+              "meaning_en": "sun, daylight, sunlight",
+              "example_ja": "日が沈む",
+              "example_ruby": "<ruby>日<rt>ひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>む"
+            },
+            {
+              "term_ja": "沈む",
+              "reading": "しずむ",
+              "ruby_html": "<ruby>沈<rt>しず</rt></ruby>む",
+              "meaning_en": "to sink, to set (sun)",
+              "example_ja": "太陽が海に沈む",
+              "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>む"
+            },
+            {
+              "term_ja": "まぶしい",
+              "reading": "まぶしい",
+              "ruby_html": "まぶしい",
+              "meaning_en": "dazzling, radiant, blindingly bright",
+              "example_ja": "日差しがまぶしい",
+              "example_ruby": "<ruby>日差<rt>ひざ</rt></ruby>しがまぶしい"
+            },
+            {
+              "term_ja": "激しい",
+              "reading": "はげしい",
+              "ruby_html": "<ruby>激<rt>はげ</rt></ruby>しい",
+              "meaning_en": "severe, violent, intense, furious",
+              "example_ja": "激しい雨が降る",
+              "example_ruby": "<ruby>激<rt>はげ</rt></ruby>しい<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る"
+            },
+            {
+              "term_ja": "豪雨",
+              "reading": "ごうう",
+              "ruby_html": "<ruby>豪雨<rt>ごうう</rt></ruby>",
+              "meaning_en": "torrential rain, torrential downpour",
+              "example_ja": "集中豪雨に遭う",
+              "example_ruby": "<ruby>集中豪雨<rt>しゅうちゅうごうう</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う"
+            },
+            {
+              "term_ja": "雷",
+              "reading": "かみなり",
+              "ruby_html": "<ruby>雷<rt>かみなり</rt></ruby>",
+              "meaning_en": "thunder, lightning",
+              "example_ja": "雷が鳴る",
+              "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る"
+            },
+            {
+              "term_ja": "鳴る",
+              "reading": "なる",
+              "ruby_html": "<ruby>鳴<rt>な</rt></ruby>る",
+              "meaning_en": "to roar, rumble, ring",
+              "example_ja": "雷がゴロゴロ鳴る",
+              "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>がゴロゴロ<ruby>鳴<rt>な</rt></ruby>る"
+            },
+            {
+              "term_ja": "虹",
+              "reading": "にじ",
+              "ruby_html": "<ruby>虹<rt>にじ</rt></ruby>",
+              "meaning_en": "rainbow",
+              "example_ja": "雨上がりに虹が出る",
+              "example_ruby": "<ruby>雨上<rt>あめあ</rt></ruby>がりに<ruby>虹<rt>にじ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る"
+            },
+            {
+              "term_ja": "乾燥する",
+              "reading": "かんそうする",
+              "ruby_html": "<ruby>乾燥<rt>かんそう</rt></ruby>する",
+              "meaning_en": "to dry, to desiccate",
+              "example_ja": "冬は空気が乾燥する",
+              "example_ruby": "<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>空気<rt>くうき</rt></ruby>が<ruby>乾燥<rt>かんそう</rt></ruby>する"
+            },
+            {
+              "term_ja": "湿度",
+              "reading": "しつど",
+              "ruby_html": "<ruby>湿度<rt>しつど</rt></ruby>",
+              "meaning_en": "level of humidity",
+              "example_ja": "湿度が高い",
+              "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い"
+            },
+            {
+              "term_ja": "パーセント",
+              "reading": "パーセント",
+              "ruby_html": "パーセント",
+              "meaning_en": "percent",
+              "example_ja": "湿度は60パーセントだ",
+              "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>は60パーセントだ"
+            },
+            {
+              "term_ja": "気温",
+              "reading": "きおん",
+              "ruby_html": "<ruby>気温<rt>きおん</rt></ruby>",
+              "meaning_en": "air temperature",
+              "example_ja": "最高気温を記録する",
+              "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>を<ruby>記録<rt>きろく</rt></ruby>する"
+            },
+            {
+              "term_ja": "超える",
+              "reading": "こえる",
+              "ruby_html": "<ruby>超<rt>こ</rt></ruby>える",
+              "meaning_en": "to exceed, go over, pass",
+              "example_ja": "30度を超える",
+              "example_ruby": "30<ruby>度<rt>ど</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える"
+            },
+            {
+              "term_ja": "予報",
+              "reading": "よほう",
+              "ruby_html": "<ruby>予報<rt>よほう</rt></ruby>",
+              "meaning_en": "forecast, prediction",
+              "example_ja": "天気予報を見る",
+              "example_ruby": "<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>る"
+            },
+            {
+              "term_ja": "確率",
+              "reading": "かくりつ",
+              "ruby_html": "<ruby>確率<rt>かくりつ</rt></ruby>",
+              "meaning_en": "probability, likelihood",
+              "example_ja": "降水確率が80％だ",
+              "example_ruby": "<ruby>降水確率<rt>こうすいかくりつ</rt></ruby>が80％だ"
+            },
+            {
+              "term_ja": "近付く",
+              "reading": "ちかづく",
+              "ruby_html": "<ruby>近付<rt>ちかづ</rt></ruby>く",
+              "meaning_en": "to approach, draw near",
+              "example_ja": "大型の台風が近付く",
+              "example_ruby": "<ruby>大型<rt>おおがた</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近付<rt>ちかづ</rt></ruby>く"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "朝、カーテンを開けたら、太陽の光が（　まぶしかった　）。",
+              "answer": "まぶしかった",
+              "explanation": "光が強くて目を開けていられない様子は「まぶしい」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "雨がやんだ後、空にきれいな（　虹　）がかかった。",
+              "answer": "虹",
+              "explanation": "雨上がりの空に現れる七色のアーチは「虹」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "今日はとても暑くて、気温が35度を（　超えた　）。",
+              "answer": "超えた",
+              "explanation": "基準となる数値を上回ることは「超える」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "日本には春、夏、秋、冬の（　四季　）がある。",
+              "answer": "四季",
+              "explanation": "春夏秋冬の4つの季節は「四季」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "今日の降水確率は50（　パーセント　）だ。",
+              "answer": "パーセント",
+              "explanation": "割合を表す単位（％）は「パーセント」です。"
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "title_ja": "地理",
+          "title_en": "Geography",
+          "warming_up": {
+            "question_ja": "どんな場所（山、海、川など）が好きですか。"
+          },
+          "words": [
+            {
+              "term_ja": "大陸",
+              "reading": "たいりく",
+              "ruby_html": "<ruby>大陸<rt>たいりく</rt></ruby>",
+              "meaning_en": "continent",
+              "example_ja": "ユーラシア大陸",
+              "example_ruby": "ユーラシア<ruby>大陸<rt>たいりく</rt></ruby>"
+            },
+            {
+              "term_ja": "島",
+              "reading": "しま",
+              "ruby_html": "<ruby>島<rt>しま</rt></ruby>",
+              "meaning_en": "island",
+              "example_ja": "小さな島に住む",
+              "example_ruby": "<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>に<ruby>住<rt>す</rt></ruby>む"
+            },
+            {
+              "term_ja": "火山",
+              "reading": "かざん",
+              "ruby_html": "<ruby>火山<rt>かざん</rt></ruby>",
+              "meaning_en": "volcano",
+              "example_ja": "火山が噴火する",
+              "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>噴火<rt>ふんか</rt></ruby>する"
+            },
+            {
+              "term_ja": "爆発する",
+              "reading": "ばくはつする",
+              "ruby_html": "<ruby>爆発<rt>ばくはつ</rt></ruby>する",
+              "meaning_en": "to explode, erupt",
+              "example_ja": "火山が爆発する",
+              "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>爆発<rt>ばくはつ</rt></ruby>する"
+            },
+            {
+              "term_ja": "砂漠",
+              "reading": "さばく",
+              "ruby_html": "<ruby>砂漠<rt>さばく</rt></ruby>",
+              "meaning_en": "desert",
+              "example_ja": "砂漠が広がる",
+              "example_ruby": "<ruby>砂漠<rt>さばく</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる"
+            },
+            {
+              "term_ja": "湖",
+              "reading": "みずうみ",
+              "ruby_html": "<ruby>湖<rt>みずうみ</rt></ruby>",
+              "meaning_en": "lake",
+              "example_ja": "湖のほとりを歩く",
+              "example_ruby": "<ruby>湖<rt>みずうみ</rt></ruby>のほとりを<ruby>歩<rt>ある</rt></ruby>く"
+            },
+            {
+              "term_ja": "あふれる",
+              "reading": "あふれる",
+              "ruby_html": "あふれる",
+              "meaning_en": "to overflow, spill over",
+              "example_ja": "川の水があふれる",
+              "example_ruby": "<ruby>川<rt>かわ</rt></ruby>の<ruby>水<rt>みず</rt></ruby>があふれる"
+            },
+            {
+              "term_ja": "浮かぶ",
+              "reading": "うかぶ",
+              "ruby_html": "<ruby>浮<rt>う</rt></ruby>かぶ",
+              "meaning_en": "to float, surface, come to mind",
+              "example_ja": "ボートが水に浮かぶ",
+              "example_ruby": "ボートが<ruby>水<rt>みず</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ"
+            },
+            {
+              "term_ja": "地域",
+              "reading": "ちいき",
+              "ruby_html": "<ruby>地域<rt>ちいき</rt></ruby>",
+              "meaning_en": "region, local area, community",
+              "example_ja": "地域のイベント",
+              "example_ruby": "<ruby>地域<rt>ちいき</rt></ruby>のイベント"
+            },
+            {
+              "term_ja": "地方",
+              "reading": "ちほう",
+              "ruby_html": "<ruby>地方<rt>ちほう</rt></ruby>",
+              "meaning_en": "region, rural area, provincial district",
+              "example_ja": "地方都市に住む",
+              "example_ruby": "<ruby>地方都市<rt>ちほうとし</rt></ruby>に<ruby>住<rt>す</rt></ruby>む"
+            },
+            {
+              "term_ja": "都会",
+              "reading": "とかい",
+              "ruby_html": "<ruby>都会<rt>とかい</rt></ruby>",
+              "meaning_en": "big city, metropolis",
+              "example_ja": "都会の生活",
+              "example_ruby": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>"
+            },
+            {
+              "term_ja": "田舎",
+              "reading": "いなか",
+              "ruby_html": "<ruby>田舎<rt>いなか</rt></ruby>",
+              "meaning_en": "countryside, rural parts, rural hometown",
+              "example_ja": "田舎でのんびり暮らす",
+              "example_ruby": "<ruby>田舎<rt>いなか</rt></ruby>でのんびり<ruby>暮<rt>く</rt></ruby>らす"
+            },
+            {
+              "term_ja": "故郷",
+              "reading": "こきょう",
+              "ruby_html": "<ruby>故郷<rt>こきょう</rt></ruby>",
+              "meaning_en": "hometown, birthplace, home country",
+              "example_ja": "故郷を懐かしく思う",
+              "example_ruby": "<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>懐<rt>なつ</rt></ruby>かしく<ruby>思<rt>おも</rt></ruby>う"
+            },
+            {
+              "term_ja": "ふるさと",
+              "reading": "ふるさと",
+              "ruby_html": "ふるさと",
+              "meaning_en": "hometown, native place",
+              "example_ja": "ふるさとの料理",
+              "example_ruby": "ふるさとの<ruby>料理<rt>りょうり</rt></ruby>"
+            },
+            {
+              "term_ja": "懐かしい",
+              "reading": "なつかしい",
+              "ruby_html": "<ruby>懐<rt>なつ</rt></ruby>かしい",
+              "meaning_en": "dear, nostalgic, fondly remembered",
+              "example_ja": "懐かしい音楽",
+              "example_ruby": "<ruby>懐<rt>なつ</rt></ruby>かしい<ruby>音楽<rt>おんがく</rt></ruby>"
+            },
+            {
+              "term_ja": "離れる",
+              "reading": "はなれる",
+              "ruby_html": "<ruby>離<rt>はな</rt></ruby>れる",
+              "meaning_en": "to leave, get separated from, depart",
+              "example_ja": "生まれ故郷を離れる",
+              "example_ruby": "<ruby>生<rt>う</rt></ruby>まれ<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れる"
+            },
+            {
+              "term_ja": "広がる",
+              "reading": "ひろがる",
+              "ruby_html": "<ruby>広<rt>ひろ</rt></ruby>がる",
+              "meaning_en": "to spread out, extend, unfold",
+              "example_ja": "草原が広がる",
+              "example_ruby": "<ruby>草原<rt>そうげん</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる"
+            },
+            {
+              "term_ja": "眺める",
+              "reading": "ながめる",
+              "ruby_html": "<ruby>眺<rt>なが</rt></ruby>める",
+              "meaning_en": "to look at, view, gaze at",
+              "example_ja": "山頂から町を眺める",
+              "example_ruby": "<ruby>山頂<rt>さんちょう</rt></ruby>から<ruby>町<rt>まち</rt></ruby>を<ruby>眺<rt>なが</rt></ruby>める"
+            },
+            {
+              "term_ja": "眺め",
+              "reading": "ながめ",
+              "ruby_html": "<ruby>眺<rt>なが</rt></ruby>め",
+              "meaning_en": "view, outlook, landscape",
+              "example_ja": "部屋からの眺めがいい",
+              "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>からの<ruby>眺<rt>なが</rt></ruby>めがいい"
+            },
+            {
+              "term_ja": "農業",
+              "reading": "のうぎょう",
+              "ruby_html": "<ruby>農業<rt>のうぎょう</rt></ruby>",
+              "meaning_en": "agriculture, farming",
+              "example_ja": "農業に従事する",
+              "example_ruby": "<ruby>農業<rt>のうぎょう</rt></ruby>に<ruby>従事<rt>じゅうじ</rt></ruby>する"
+            },
+            {
+              "term_ja": "漁業",
+              "reading": "ぎょぎょう",
+              "ruby_html": "<ruby>漁業<rt>ぎょぎょう</rt></ruby>",
+              "meaning_en": "fishery, fishing industry",
+              "example_ja": "漁業で栄えた町",
+              "example_ruby": "<ruby>漁業<rt>ぎょぎょう</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えた<ruby>町<rt>まち</rt></ruby>"
+            },
+            {
+              "term_ja": "盛んな",
+              "reading": "さかんな",
+              "ruby_html": "<ruby>盛<rt>さかん</rt></ruby>な",
+              "meaning_en": "thriving, prosperous, active",
+              "example_ja": "観光が盛んだ",
+              "example_ruby": "<ruby>観光<rt>かんこう</rt></ruby>が<ruby>盛<rt>さかん</rt></ruby>だ"
+            },
+            {
+              "term_ja": "止む",
+              "reading": "やむ",
+              "ruby_html": "<ruby>止<rt>や</rt></ruby>む",
+              "meaning_en": "to stop, cease (rain, wind)",
+              "example_ja": "雨が止むのを待つ",
+              "example_ruby": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>止<rt>や</rt></ruby>むのを<ruby>待<rt>ま</rt></ruby>つ"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "山の上にある（　湖　）の水は、とてもきれいだ。",
+              "answer": "湖",
+              "explanation": "陸地にある大きな水たまりは「湖」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "大雨で、川の水が（　あふれた　）。",
+              "answer": "あふれた",
+              "explanation": "堤防を越えて水が外へ出ることは「あふれる」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "静かな田舎から、にぎやかな（　都会　）へ引っ越した。",
+              "answer": "都会",
+              "explanation": "人や建物が多く集まる都市は「都会」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "富士山は日本で一番有名な（　火山　）だ。",
+              "answer": "火山",
+              "explanation": "マグマや溶岩を噴出する山は「火山」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "船で旅をして、大きな（　大陸　）に着いた。",
+              "answer": "大陸",
+              "explanation": "広大な陸地は「大陸」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "この地域では、米を作る（　農業　）が盛んです。",
+              "answer": "農業",
+              "explanation": "作物を栽培する産業は「農業」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": 1,
+          "title_ja": "正しいほうを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "空に白い雲が（a 沈んで / b 浮かんで）いる。",
+              "options": [
+                "a 沈んで",
+                "b 浮かんで"
+              ],
+              "answer": "b",
+              "explanation": "空に雲が漂っているのは「浮かんでいる」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "やっと長い夜が（a 明けて / b 眺めて）、朝になった。",
+              "options": [
+                "a 明けて",
+                "b 眺めて"
+              ],
+              "answer": "a",
+              "explanation": "夜が去って朝が来ることは「夜が明ける」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "秋になって、気温が（a 超えて / b 落ちて）きた。",
+              "options": [
+                "a 超えて",
+                "b 落ちて"
+              ],
+              "answer": "b",
+              "explanation": "気温が下がることは「気温が落ちる（下がる）」と言います。"
+            },
+            {
+              "id": 4,
+              "question_ja": "風が（a 激しく / b 爽やかに）吹いて、看板が倒れた。",
+              "options": [
+                "a 激しく",
+                "b 爽やかに"
+              ],
+              "answer": "a",
+              "explanation": "看板が倒れるほどの強風は「激しく吹いて」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "雨が（a 降って / b 止んで）、外に遊びに行った。",
+              "options": [
+                "a 降って",
+                "b 止んで"
+              ],
+              "answer": "b",
+              "explanation": "雨がやんだので外へ遊びに出かけた文脈です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 2,
+          "title_ja": "（　）に言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "冬は空気が（　乾燥　）して、喉が痛くなりやすい。",
+              "answer": "乾燥",
+              "explanation": "湿気がなくなることは「乾燥（する）」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "日本の夏は湿度が高くて（　蒸し暑い　）。",
+              "answer": "蒸し暑い",
+              "explanation": "温度も湿度も高い不快な暑さは「蒸し暑い」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "台風が日本列島に（　近付い　）ている。",
+              "answer": "近付い",
+              "explanation": "距離が狭まることは「近付く」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "私の（　ふるさと　）は、山に囲まれた小さな村です。",
+              "answer": "ふるさと",
+              "explanation": "生まれ育った故郷は「ふるさと」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（　太陽　）が西の空に沈んでいく。",
+              "answer": "太陽",
+              "explanation": "日没を表すお日様は「太陽」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "秋の（　爽やか　）な風が気持ちいい。",
+              "answer": "爽やか",
+              "explanation": "心地よくすがすがしい風は「爽やかな風」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 3,
+          "title_ja": "言葉の組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1. 火山が（ a 確率 / b 爆発 / c 砂漠 ）する",
+              "options": [
+                "a 確率",
+                "b 爆発",
+                "c 砂漠"
+              ],
+              "answer": "b",
+              "explanation": "「火山が爆発する」"
+            },
+            {
+              "id": 2,
+              "question_ja": "1. （ a 確率 / b 爆発 / c 砂漠 ）を歩く",
+              "options": [
+                "a 確率",
+                "b 爆発",
+                "c 砂漠"
+              ],
+              "answer": "c",
+              "explanation": "「砂漠を歩く」"
+            },
+            {
+              "id": 3,
+              "question_ja": "1. 降水の（ a 確率 / b 爆発 / c 砂漠 ）が高い",
+              "options": [
+                "a 確率",
+                "b 爆発",
+                "c 砂漠"
+              ],
+              "answer": "a",
+              "explanation": "「降水確率が高い」"
+            },
+            {
+              "id": 4,
+              "question_ja": "2. 目の前に平野が（ a 眺めて / b 離れて / c 広がって ）いる",
+              "options": [
+                "a 眺めて",
+                "b 離れて",
+                "c 広がって"
+              ],
+              "answer": "c",
+              "explanation": "「平野が広がっている」"
+            },
+            {
+              "id": 5,
+              "question_ja": "2. 山の上から海を（ a 眺めて / b 離れて / c 広がって ）いる",
+              "options": [
+                "a 眺めて",
+                "b 離れて",
+                "c 広がって"
+              ],
+              "answer": "a",
+              "explanation": "「海を眺めている」"
+            },
+            {
+              "id": 6,
+              "question_ja": "2. 親元を（ a 眺めて / b 離れて / c 広がって ）暮らす",
+              "options": [
+                "a 眺めて",
+                "b 離れて",
+                "c 広がって"
+              ],
+              "answer": "b",
+              "explanation": "「親元を離れて暮らす」"
+            }
+          ]
+        },
+        {
+          "exercise_id": 4,
+          "title_ja": "言葉の正しい組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "川が（ a 来る / b 晴れる / c 降る / d 流れる ）",
+              "options": [
+                "a 来る",
+                "b 晴れる",
+                "c 降る",
+                "d 流れる"
+              ],
+              "answer": "d",
+              "explanation": "川が流れる"
+            },
+            {
+              "id": 2,
+              "question_ja": "雨が（ a 来る / b 晴れる / c 降る / d 流れる ）",
+              "options": [
+                "a 来る",
+                "b 晴れる",
+                "c 降る",
+                "d 流れる"
+              ],
+              "answer": "c",
+              "explanation": "雨が降る"
+            },
+            {
+              "id": 3,
+              "question_ja": "空が（ a 来る / b 晴れる / c 降る / d 流れる ）",
+              "options": [
+                "a 来る",
+                "b 晴れる",
+                "c 降る",
+                "d 流れる"
+              ],
+              "answer": "b",
+              "explanation": "空が晴れる"
+            },
+            {
+              "id": 4,
+              "question_ja": "台風が（ a 来る / b 晴れる / c 降る / d 流れる ）",
+              "options": [
+                "a 来る",
+                "b 晴れる",
+                "c 降る",
+                "d 流れる"
+              ],
+              "answer": "a",
+              "explanation": "台風が来る"
+            },
+            {
+              "id": 5,
+              "question_ja": "気温が（ a 沈む / b 吹く / c 下がる / d 落ちる ）",
+              "options": [
+                "a 沈む",
+                "b 吹く",
+                "c 下がる",
+                "d 落ちる"
+              ],
+              "answer": "c",
+              "explanation": "気温が下がる"
+            },
+            {
+              "id": 6,
+              "question_ja": "葉が（ a 沈む / b 吹く / c 下がる / d 落ちる ）",
+              "options": [
+                "a 沈む",
+                "b 吹く",
+                "c 下がる",
+                "d 落ちる"
+              ],
+              "answer": "d",
+              "explanation": "葉が落ちる"
+            },
+            {
+              "id": 7,
+              "question_ja": "風が（ a 沈む / b 吹く / c 下がる / d 落ちる ）",
+              "options": [
+                "a 沈む",
+                "b 吹く",
+                "c 下がる",
+                "d 落ちる"
+              ],
+              "answer": "b",
+              "explanation": "風が吹く"
+            },
+            {
+              "id": 8,
+              "question_ja": "太陽が（ a 沈む / b 吹く / c 下がる / d 落ちる ）",
+              "options": [
+                "a 沈む",
+                "b 吹く",
+                "c 下がる",
+                "d 落ちる"
+              ],
+              "answer": "a",
+              "explanation": "太陽が沈む"
+            },
+            {
+              "id": 9,
+              "question_ja": "雷が（ a 明ける / b あふれる / c 出る / d 鳴る ）",
+              "options": [
+                "a 明ける",
+                "b あふれる",
+                "c 出る",
+                "d 鳴る"
+              ],
+              "answer": "d",
+              "explanation": "雷が鳴る"
+            },
+            {
+              "id": 10,
+              "question_ja": "水が（ a 明ける / b あふれる / c 出る / d 鳴る ）",
+              "options": [
+                "a 明ける",
+                "b あふれる",
+                "c 出る",
+                "d 鳴る"
+              ],
+              "answer": "b",
+              "explanation": "水があふれる"
+            },
+            {
+              "id": 11,
+              "question_ja": "虹が（ a 明ける / b あふれる / c 出る / d 鳴る ）",
+              "options": [
+                "a 明ける",
+                "b あふれる",
+                "c 出る",
+                "d 鳴る"
+              ],
+              "answer": "c",
+              "explanation": "虹が出る"
+            },
+            {
+              "id": 12,
+              "question_ja": "夜が（ a 明ける / b あふれる / c 出る / d 鳴る ）",
+              "options": [
+                "a 明ける",
+                "b あふれる",
+                "c 出る",
+                "d 鳴る"
+              ],
+              "answer": "a",
+              "explanation": "夜が明ける"
+            }
+          ]
+        },
+        {
+          "exercise_id": 5,
+          "title_ja": "文章の（　）に適切な言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "私の（①故郷）は、東北地方の山の中にある。",
+              "answer": "故郷",
+              "explanation": "生まれ育った土地「故郷」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "自然豊かな（②地域）で、農業が盛んだ。",
+              "answer": "地域",
+              "explanation": "区切られた区画・コミュニティ「地域」。"
+            },
+            {
+              "id": 3,
+              "question_ja": "東北（③地方）は冬の雪がとても多い。",
+              "answer": "地方",
+              "explanation": "日本国内の行政・地理的エリア「地方」。"
+            },
+            {
+              "id": 4,
+              "question_ja": "若いころはにぎやかな（④都会）に憧れて、",
+              "answer": "都会",
+              "explanation": "都市部「都会」。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（⑤湖）のそばにある実家を離れた。",
+              "answer": "湖",
+              "explanation": "湖沼「湖」。"
+            },
+            {
+              "id": 6,
+              "question_ja": "実家を（⑥離れ）た。",
+              "answer": "離れ",
+              "explanation": "家から遠くへ行く「離れる」。"
+            },
+            {
+              "id": 7,
+              "question_ja": "今では子どものころ過ごした場所がとても（⑦懐かしい）。",
+              "answer": "懐かしい",
+              "explanation": "昔を懐かしむ「懐かしい」。"
+            },
+            {
+              "id": 8,
+              "question_ja": "青い空に白い雲が（⑧浮かぶ）様子や、",
+              "answer": "浮かぶ",
+              "explanation": "空にただよう「浮かぶ」。"
+            },
+            {
+              "id": 9,
+              "question_ja": "山に夕日が（⑨沈む）美しい眺めが忘れられない。",
+              "answer": "沈む",
+              "explanation": "日が沈む「沈む」。"
+            },
+            {
+              "id": 10,
+              "question_ja": "美しい（⑩眺め）が忘れられない。",
+              "answer": "眺め",
+              "explanation": "風景・景色を表す「眺め」。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 19,
+        "part": 1,
+        "topic_ja": "自然2: 植物、動物",
+        "topic_en": "Nature 2: Plants and Animals",
+        "pages": [
+          80,
+          81,
+          82,
+          83
+        ]
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "植物",
+          "title_en": "Plants",
+          "warming_up": {
+            "question_ja": "どんな植物を育てたことがありますか。"
+          },
+          "words": [
+            {
+              "term_ja": "植物",
+              "reading": "しょくぶつ",
+              "ruby_html": "<ruby>植物<rt>しょくぶつ</rt></ruby>",
+              "meaning_en": "plant, vegetation",
+              "example_ja": "植物を育てる",
+              "example_ruby": "<ruby>植物<rt>しょくぶつ</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+            },
+            {
+              "term_ja": "植える",
+              "reading": "うえる",
+              "ruby_html": "<ruby>植<rt>う</rt></ruby>える",
+              "meaning_en": "to plant, sow",
+              "example_ja": "庭に花の種を植える",
+              "example_ruby": "<ruby>庭<rt>にわ</rt></ruby>に<ruby>花<rt>はな</rt></ruby>の<ruby>種<rt>たね</rt></ruby>を<ruby>植<rt>う</rt></ruby>える"
+            },
+            {
+              "term_ja": "育てる",
+              "reading": "そだてる",
+              "ruby_html": "<ruby>育<rt>そだ</rt></ruby>てる",
+              "meaning_en": "to raise, bring up, grow",
+              "example_ja": "野菜を育てる",
+              "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+            },
+            {
+              "term_ja": "育つ",
+              "reading": "そだつ",
+              "ruby_html": "<ruby>育<rt>そだ</rt></ruby>つ",
+              "meaning_en": "to grow, be brought up",
+              "example_ja": "元気に育つ",
+              "example_ruby": "<ruby>元気<rt>げんき</rt></ruby>に<ruby>育<rt>そだ</rt></ruby>つ"
+            },
+            {
+              "term_ja": "芽",
+              "reading": "め",
+              "ruby_html": "<ruby>芽<rt>め</rt></ruby>",
+              "meaning_en": "sprout, shoot, bud",
+              "example_ja": "春になって芽が出る",
+              "example_ruby": "<ruby>春<rt>はる</rt></ruby>になって<ruby>芽<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>る"
+            },
+            {
+              "term_ja": "伸びる",
+              "reading": "のびる",
+              "ruby_html": "<ruby>伸<rt>の</rt></ruby>びる",
+              "meaning_en": "to grow tall, extend, stretch",
+              "example_ja": "茎がぐんぐん伸びる",
+              "example_ruby": "<ruby>茎<rt>くき</rt></ruby>がぐんぐん<ruby>伸<rt>の</rt></ruby>びる"
+            },
+            {
+              "term_ja": "枯れる",
+              "reading": "かれる",
+              "ruby_html": "<ruby>枯<rt>か</rt></ruby>れる",
+              "meaning_en": "to wither, die (of a plant)",
+              "example_ja": "水が足りなくて花が枯れる",
+              "example_ruby": "<ruby>水<rt>みず</rt></ruby>が<ruby>足<rt>た</rt></ruby>りなくて<ruby>花<rt>はな</rt></ruby>が<ruby>枯<rt>か</rt></ruby>れる"
+            },
+            {
+              "term_ja": "散る",
+              "reading": "ちる",
+              "ruby_html": "<ruby>散<rt>ち</rt></ruby>る",
+              "meaning_en": "to fall, scatter (petals/leaves)",
+              "example_ja": "桜の花が散る",
+              "example_ruby": "<ruby>桜<rt>さくら</rt></ruby>の<ruby>花<rt>はな</rt></ruby>が<ruby>散<rt>ち</rt></ruby>る"
+            },
+            {
+              "term_ja": "果実",
+              "reading": "かじつ",
+              "ruby_html": "<ruby>果実<rt>かじつ</rt></ruby>",
+              "meaning_en": "fruit, berry, nut",
+              "example_ja": "豊かな果実が実る",
+              "example_ruby": "<ruby>豊<rt>ゆた</rt></ruby>かな<ruby>果実<rt>かじつ</rt></ruby>が<ruby>実<rt>みの</rt></ruby>る"
+            },
+            {
+              "term_ja": "採る",
+              "reading": "とる",
+              "ruby_html": "<ruby>採<rt>と</rt></ruby>る",
+              "meaning_en": "to pick, harvest, gather",
+              "example_ja": "果実を採る",
+              "example_ruby": "<ruby>果実<rt>かじつ</rt></ruby>を<ruby>採<rt>と</rt></ruby>る"
+            },
+            {
+              "term_ja": "新鮮な",
+              "reading": "しんせんな",
+              "ruby_html": "<ruby>新鮮<rt>しんせん</rt></ruby>な",
+              "meaning_en": "fresh",
+              "example_ja": "新鮮な野菜と果物",
+              "example_ruby": "<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>野菜<rt>やさい</rt></ruby>と<ruby>果物<rt>くだもの</rt></ruby>"
+            },
+            {
+              "term_ja": "種類",
+              "reading": "しゅるい",
+              "ruby_html": "<ruby>種類<rt>しゅるい</rt></ruby>",
+              "meaning_en": "variety, kind, type, species",
+              "example_ja": "多くの種類の植物",
+              "example_ruby": "<ruby>多<rt>おお</rt></ruby>くの<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>植物<rt>しょくぶつ</rt></ruby>"
+            },
+            {
+              "term_ja": "豊富な",
+              "reading": "ほうふな",
+              "ruby_html": "<ruby>豊富<rt>ほうふ</rt></ruby>な",
+              "meaning_en": "abundant, plentiful, rich",
+              "example_ja": "栄養が豊富な食べ物",
+              "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>が<ruby>豊富<rt>ほうふ</rt></ruby>な<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>"
+            },
+            {
+              "term_ja": "栄養",
+              "reading": "えいよう",
+              "ruby_html": "<ruby>栄養<rt>えいよう</rt></ruby>",
+              "meaning_en": "nutrition, nourishment",
+              "example_ja": "栄養をつける",
+              "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>をつける"
+            },
+            {
+              "term_ja": "自然",
+              "reading": "しぜん",
+              "ruby_html": "<ruby>自然<rt>しぜん</rt></ruby>",
+              "meaning_en": "nature, natural",
+              "example_ja": "大自然の中で暮らす",
+              "example_ruby": "<ruby>大自然<rt>だいしぜん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす"
+            },
+            {
+              "term_ja": "太陽が当たる",
+              "reading": "たいようがあたる",
+              "ruby_html": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる",
+              "meaning_en": "the sun shines on",
+              "example_ja": "日当たりがよく太陽が当たる",
+              "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがよく<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる"
+            },
+            {
+              "term_ja": "日当たり",
+              "reading": "ひあたり",
+              "ruby_html": "<ruby>日当<rt>ひあ</rt></ruby>たり",
+              "meaning_en": "sunlight, exposure to the sun",
+              "example_ja": "日当たりがいい部屋",
+              "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがいい<ruby>部屋<rt>へや</rt></ruby>"
+            },
+            {
+              "term_ja": "種",
+              "reading": "たね",
+              "ruby_html": "<ruby>種<rt>たね</rt></ruby>",
+              "meaning_en": "seed, pip, pit",
+              "example_ja": "アサガオの種をまく",
+              "example_ruby": "アサガオの<ruby>種<rt>たね</rt></ruby>をまく"
+            },
+            {
+              "term_ja": "根",
+              "reading": "ね",
+              "ruby_html": "<ruby>根<rt>ね</rt></ruby>",
+              "meaning_en": "root",
+              "example_ja": "しっかりと根を張る",
+              "example_ruby": "しっかりと<ruby>根<rt>ね</rt></ruby>を<ruby>張<rt>は</rt></ruby>る"
+            },
+            {
+              "term_ja": "葉",
+              "reading": "は",
+              "ruby_html": "<ruby>葉<rt>は</rt></ruby>",
+              "meaning_en": "leaf, foliage",
+              "example_ja": "青い葉が茂る",
+              "example_ruby": "<ruby>青<rt>あお</rt></ruby>い<ruby>葉<rt>は</rt></ruby>が<ruby>茂<rt>しげ</rt></ruby>る"
+            },
+            {
+              "term_ja": "幹",
+              "reading": "みき",
+              "ruby_html": "<ruby>幹<rt>みき</rt></ruby>",
+              "meaning_en": "tree trunk",
+              "example_ja": "大木の太い幹",
+              "example_ruby": "<ruby>大木<rt>たいぼく</rt></ruby>の<ruby>太<rt>ふと</rt></ruby>い<ruby>幹<rt>みき</rt></ruby>"
+            },
+            {
+              "term_ja": "枝",
+              "reading": "えだ",
+              "ruby_html": "<ruby>枝<rt>えだ</rt></ruby>",
+              "meaning_en": "branch, bough, twig",
+              "example_ja": "木の枝が伸びる",
+              "example_ruby": "<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby>が<ruby>伸<rt>の</rt></ruby>びる"
+            },
+            {
+              "term_ja": "花",
+              "reading": "はな",
+              "ruby_html": "<ruby>花<rt>はな</rt></ruby>",
+              "meaning_en": "flower, blossom",
+              "example_ja": "きれいな花が咲く",
+              "example_ruby": "きれいな<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>く"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "この部屋は、南向きでよく日が（　当たる　）。",
+              "answer": "当たる",
+              "explanation": "太陽の光を受けることは「日が当たる」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "（　新鮮　）な野菜は、生で食べてもおいしい。",
+              "answer": "新鮮",
+              "explanation": "獲れたてでみずみずしい様子は「新鮮」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "木に甘い（　果実　）がたくさん実った。",
+              "answer": "果実",
+              "explanation": "木になる実や果物は「果実」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "風が吹いて、桜の花びらが（　散って　）しまった。",
+              "answer": "散って",
+              "explanation": "花びらが落ちて散らばることは「散る」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "種をまいてから一週間で、かわいい（　芽　）が出た。",
+              "answer": "芽",
+              "explanation": "植物から最初に出てくる新芽は「芽」です。"
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "title_ja": "動物など",
+          "title_en": "Animals, etc.",
+          "warming_up": {
+            "question_ja": "どんな動物を飼ったことがありますか。"
+          },
+          "words": [
+            {
+              "term_ja": "生き物",
+              "reading": "いきもの",
+              "ruby_html": "<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>",
+              "meaning_en": "living thing, creature, animal life",
+              "example_ja": "海の中の生き物",
+              "example_ruby": "<ruby>海<rt>うみ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>"
+            },
+            {
+              "term_ja": "猿",
+              "reading": "さる",
+              "ruby_html": "<ruby>猿<rt>さる</rt></ruby>",
+              "meaning_en": "monkey, ape",
+              "example_ja": "温泉に入る猿",
+              "example_ruby": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>猿<rt>さる</rt></ruby>"
+            },
+            {
+              "term_ja": "熊",
+              "reading": "くま",
+              "ruby_html": "<ruby>熊<rt>くま</rt></ruby>",
+              "meaning_en": "bear",
+              "example_ja": "山で熊に注意する",
+              "example_ruby": "<ruby>山<rt>やま</rt></ruby>で<ruby>熊<rt>くま</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する"
+            },
+            {
+              "term_ja": "牛",
+              "reading": "うし",
+              "ruby_html": "<ruby>牛<rt>うし</rt></ruby>",
+              "meaning_en": "cow, cattle, bull",
+              "example_ja": "牧場で牛を飼う",
+              "example_ruby": "<ruby>牧場<rt>ぼくじょう</rt></ruby>で<ruby>牛<rt>うし</rt></ruby>を<ruby>飼<rt>か</rt></ruby>う"
+            },
+            {
+              "term_ja": "鶏",
+              "reading": "にわとり",
+              "ruby_html": "<ruby>鶏<rt>にわとり</rt></ruby>",
+              "meaning_en": "chicken, rooster, hen",
+              "example_ja": "朝早く鶏が鳴く",
+              "example_ruby": "<ruby>朝早<rt>あさはや</rt></ruby>く<ruby>鶏<rt>にわとり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>く"
+            },
+            {
+              "term_ja": "魚",
+              "reading": "さかな",
+              "ruby_html": "<ruby>魚<rt>さかな</rt></ruby>",
+              "meaning_en": "fish",
+              "example_ja": "川で魚を釣る",
+              "example_ruby": "<ruby>川<rt>かわ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>釣<rt>つ</rt></ruby>る"
+            },
+            {
+              "term_ja": "虫",
+              "reading": "むし",
+              "ruby_html": "<ruby>虫<rt>むし</rt></ruby>",
+              "meaning_en": "insect, bug",
+              "example_ja": "夏に虫を捕まえる",
+              "example_ruby": "<ruby>夏<rt>なつ</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>を<ruby>捕<rt>つか</rt></ruby>まえる"
+            },
+            {
+              "term_ja": "蚊",
+              "reading": "か",
+              "ruby_html": "<ruby>蚊<rt>か</rt></ruby>",
+              "meaning_en": "mosquito",
+              "example_ja": "蚊に刺されてかゆい",
+              "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されてかゆい"
+            },
+            {
+              "term_ja": "ハエ",
+              "reading": "ハエ",
+              "ruby_html": "ハエ",
+              "meaning_en": "fly (insect)",
+              "example_ja": "ハエが飛んでいる",
+              "example_ruby": "ハエが<ruby>飛<rt>と</rt></ruby>んでいる"
+            },
+            {
+              "term_ja": "蜂",
+              "reading": "はち",
+              "ruby_html": "<ruby>蜂<rt>はち</rt></ruby>",
+              "meaning_en": "bee, wasp",
+              "example_ja": "蜂の巣を見つける",
+              "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>の<ruby>巣<rt>す</rt></ruby>を<ruby>見<rt>み</rt></ruby>つける"
+            },
+            {
+              "term_ja": "刺す",
+              "reading": "さす",
+              "ruby_html": "<ruby>刺<rt>さ</rt></ruby>す",
+              "meaning_en": "to sting, bite (of insects), pierce",
+              "example_ja": "蜂が刺す",
+              "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>が<ruby>刺<rt>さ</rt></ruby>す"
+            },
+            {
+              "term_ja": "刺される",
+              "reading": "さされる",
+              "ruby_html": "<ruby>刺<rt>さ</rt></ruby>される",
+              "meaning_en": "to get stung, bitten by insects",
+              "example_ja": "蚊に刺される",
+              "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>される"
+            },
+            {
+              "term_ja": "捕る",
+              "reading": "とる",
+              "ruby_html": "<ruby>捕<rt>と</rt></ruby>る",
+              "meaning_en": "to catch, take (fish/game)",
+              "example_ja": "海で魚を捕る",
+              "example_ruby": "<ruby>海<rt>うみ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>る"
+            },
+            {
+              "term_ja": "捕まえる",
+              "reading": "つかまえる",
+              "ruby_html": "<ruby>捕<rt>つか</rt></ruby>まえる",
+              "meaning_en": "to catch, capture, seize",
+              "example_ja": "トンボを捕まえる",
+              "example_ruby": "トンボを<ruby>捕<rt>つか</rt></ruby>まえる"
+            },
+            {
+              "term_ja": "逃げる",
+              "reading": "にげる",
+              "ruby_html": "<ruby>逃<rt>に</rt></ruby>げる",
+              "meaning_en": "to run away, escape, flee",
+              "example_ja": "小鳥が逃げる",
+              "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>逃<rt>に</rt></ruby>げる"
+            },
+            {
+              "term_ja": "逃がす",
+              "reading": "にがす",
+              "ruby_html": "<ruby>逃<rt>に</rt></ruby>がす",
+              "meaning_en": "to let go, release, set free",
+              "example_ja": "捕まえた魚を逃がす",
+              "example_ruby": "<ruby>捕<rt>つか</rt></ruby>まえた<ruby>魚<rt>さかな</rt></ruby>を<ruby>逃<rt>に</rt></ruby>がす"
+            },
+            {
+              "term_ja": "隠れる",
+              "reading": "かくれる",
+              "ruby_html": "<ruby>隠<rt>かく</rt></ruby>れる",
+              "meaning_en": "to hide, conceal oneself",
+              "example_ja": "物陰に隠れる",
+              "example_ruby": "<ruby>物陰<rt>ものかげ</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる"
+            },
+            {
+              "term_ja": "隠す",
+              "reading": "かくす",
+              "ruby_html": "<ruby>隠<rt>かく</rt></ruby>す",
+              "meaning_en": "to hide, conceal something",
+              "example_ja": "宝物を隠す",
+              "example_ruby": "<ruby>宝物<rt>たからもの</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す"
+            },
+            {
+              "term_ja": "観察する",
+              "reading": "かんさつする",
+              "ruby_html": "<ruby>観察<rt>かんさつ</rt></ruby>する",
+              "meaning_en": "to observe, watch closely",
+              "example_ja": "アリの巣を観察する",
+              "example_ruby": "アリの<ruby>巣<rt>す</rt></ruby>を<ruby>観察<rt>かんさつ</rt></ruby>する"
+            },
+            {
+              "term_ja": "えさ",
+              "reading": "えさ",
+              "ruby_html": "えさ",
+              "meaning_en": "feed, pet food, animal food, bait",
+              "example_ja": "犬にえさをあげる",
+              "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>にえさをあげる"
+            },
+            {
+              "term_ja": "貴重な",
+              "reading": "きちょうな",
+              "ruby_html": "<ruby>貴重<rt>きちょう</rt></ruby>な",
+              "meaning_en": "precious, valuable, rare",
+              "example_ja": "貴重な野生動物",
+              "example_ruby": "<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>野生動物<rt>やせいどうぶつ</rt></ruby>"
+            },
+            {
+              "term_ja": "減る",
+              "reading": "へる",
+              "ruby_html": "<ruby>減<rt>へ</rt></ruby>る",
+              "meaning_en": "to decrease, diminish, dwindle",
+              "example_ja": "野生の鳥が減る",
+              "example_ruby": "<ruby>野生<rt>やせい</rt></ruby>の<ruby>鳥<rt>とり</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る"
+            },
+            {
+              "term_ja": "禁止する",
+              "reading": "きんしする",
+              "ruby_html": "<ruby>禁止<rt>きんし</rt></ruby>する",
+              "meaning_en": "to forbid, prohibit, ban",
+              "example_ja": "狩猟を禁止する",
+              "example_ruby": "<ruby>狩猟<rt>しゅりょう</rt></ruby>を<ruby>禁止<rt>きんし</rt></ruby>する"
+            },
+            {
+              "term_ja": "匹",
+              "reading": "ひき",
+              "ruby_html": "<ruby>匹<rt>ひき</rt></ruby>",
+              "meaning_en": "counter for small animals, fish, insects",
+              "example_ja": "犬が二匹いる",
+              "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>二匹<rt>にひき</rt></ruby>いる"
+            },
+            {
+              "term_ja": "羽",
+              "reading": "わ",
+              "ruby_html": "<ruby>羽<rt>わ</rt></ruby>",
+              "meaning_en": "counter for birds and rabbits",
+              "example_ja": "小鳥が三羽飛んでいる",
+              "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>三羽<rt>さんわ</rt></ruby><ruby>飛<rt>と</rt></ruby>んでいる"
+            },
+            {
+              "term_ja": "頭",
+              "reading": "とう",
+              "ruby_html": "<ruby>頭<rt>とう</rt></ruby>",
+              "meaning_en": "counter for large animals (cows, horses, bears)",
+              "example_ja": "牛が一頭いる",
+              "example_ruby": "<ruby>牛<rt>うし</rt></ruby>が<ruby>一頭<rt>いっとう</rt></ruby>いる"
+            },
+            {
+              "term_ja": "猫",
+              "reading": "ねこ",
+              "ruby_html": "<ruby>猫<rt>ねこ</rt></ruby>",
+              "meaning_en": "cat",
+              "example_ja": "猫を飼っている",
+              "example_ruby": "<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っている"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "猿が3（　匹　）いる。",
+              "answer": "匹",
+              "explanation": "猿などの動物の数え方は「匹（ひき）」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "鶏が2（　羽　）いる。",
+              "answer": "羽",
+              "explanation": "鳥類の数え方は「羽（わ）」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "牛が1（　頭　）いる。",
+              "answer": "頭",
+              "explanation": "大型動物（牛、馬、象など）の数え方は「頭（とう）」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "猫が1（　匹　）いる。",
+              "answer": "匹",
+              "explanation": "猫の数え方は「匹（ひき）」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "魚が2（　匹　）いる。",
+              "answer": "匹",
+              "explanation": "魚の日常的な数え方は「匹（ひき）」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "虫が3（　匹　）いる。",
+              "answer": "匹",
+              "explanation": "昆虫・虫の数え方は「匹（ひき）」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": 1,
+          "title_ja": "正しいほうを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "海にはたくさんの（a 生き物 / b 自然）がいる。",
+              "options": [
+                "a 生き物",
+                "b 自然"
+              ],
+              "answer": "a",
+              "explanation": "「いる（居る）」は生命体を受けるため「生き物」が正解です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "水と太陽の光で植物が（a 育つ / b 育てる）。",
+              "options": [
+                "a 育つ",
+                "b 育てる"
+              ],
+              "answer": "a",
+              "explanation": "主語「植物が」に対して自動詞「育つ」を用います。"
+            },
+            {
+              "id": 3,
+              "question_ja": "捕まえた魚を海に（a 逃がした / b 逃げた）。",
+              "options": [
+                "a 逃がした",
+                "b 逃げた"
+              ],
+              "answer": "a",
+              "explanation": "他動詞「〜を逃がす」を用います。"
+            },
+            {
+              "id": 4,
+              "question_ja": "森の中で蜂に（a 刺された / b 刺した）。",
+              "options": [
+                "a 刺された",
+                "b 刺した"
+              ],
+              "answer": "a",
+              "explanation": "蜂による被害を受ける受動態「蜂に刺された」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "カメは足が（a 遅い / b 鈍い）。",
+              "options": [
+                "a 遅い",
+                "b 鈍い"
+              ],
+              "answer": "a",
+              "explanation": "歩く速度がのろいことは「足が遅い」と言います。"
+            },
+            {
+              "id": 6,
+              "question_ja": "ネコがベッドの下に（a 隠して / b 隠れて）いる。",
+              "options": [
+                "a 隠して",
+                "b 隠れて"
+              ],
+              "answer": "b",
+              "explanation": "主語が自ら身を隠している自動詞「隠れている」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 2,
+          "title_ja": "（　）に言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "髪の毛が（　伸び　）てきたので、切りに行った。",
+              "answer": "伸び",
+              "explanation": "毛や爪が長くなることは「伸びる」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "この地域では、森林が伐採されて動物の数が（　減って　）いる。",
+              "answer": "減って",
+              "explanation": "数量が少なくなることは「減る」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "この川で魚を（①捕る）ことは、（②禁止）されている。",
+              "answer": "捕る",
+              "explanation": "魚を獲る行為は「捕る」、禁じられていることは「禁止」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "果物にはビタミンが（　豊富　）に含まれている。",
+              "answer": "豊富",
+              "explanation": "栄養や資源がたっぷりある様子は「豊富」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 3,
+          "title_ja": "言葉の組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1. 体に（ a 栄養 / b 種類 / c 観察 ）をつける",
+              "options": [
+                "a 栄養",
+                "b 種類",
+                "c 観察"
+              ],
+              "answer": "a",
+              "explanation": "「体に栄養をつける」"
+            },
+            {
+              "id": 2,
+              "question_ja": "1. 動物の行動を（ a 栄養 / b 種類 / c 観察 ）する",
+              "options": [
+                "a 栄養",
+                "b 種類",
+                "c 観察"
+              ],
+              "answer": "c",
+              "explanation": "「行動を観察する」"
+            },
+            {
+              "id": 3,
+              "question_ja": "1. 色々な（ a 栄養 / b 種類 / c 観察 ）の花",
+              "options": [
+                "a 栄養",
+                "b 種類",
+                "c 観察"
+              ],
+              "answer": "b",
+              "explanation": "「色々な種類の花」"
+            },
+            {
+              "id": 4,
+              "question_ja": "2. （ a えさ / b 自然 / c 貴重 ）な体験をする",
+              "options": [
+                "a えさ",
+                "b 自然",
+                "c 貴重"
+              ],
+              "answer": "c",
+              "explanation": "「貴重な体験」"
+            },
+            {
+              "id": 5,
+              "question_ja": "2. 豊かな（ a えさ / b 自然 / c 貴重 ）を守る",
+              "options": [
+                "a えさ",
+                "b 自然",
+                "c 貴重"
+              ],
+              "answer": "b",
+              "explanation": "「豊かな自然」"
+            },
+            {
+              "id": 6,
+              "question_ja": "2. 犬に（ a えさ / b 自然 / c 貴重 ）をやる",
+              "options": [
+                "a えさ",
+                "b 自然",
+                "c 貴重"
+              ],
+              "answer": "a",
+              "explanation": "「犬にえさをやる」"
+            }
+          ]
+        },
+        {
+          "exercise_id": 4,
+          "title_ja": "昔話「さるかに合戦」の文章の（　）に適切な言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "カニがおにぎりを持って歩いていると、サルが柿の（①種）を持ってやってきた。",
+              "answer": "種",
+              "explanation": "柿の実の種「種」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "サルは「その種を庭に（②植えれば）、",
+              "answer": "植えれば",
+              "explanation": "地面に植える「植える」。"
+            },
+            {
+              "id": 3,
+              "question_ja": "おいしい柿がたくさん（③採れる）よ」と言っておにぎりと交換した。",
+              "answer": "採れる",
+              "explanation": "果実などを収穫できる「採れる」。"
+            },
+            {
+              "id": 4,
+              "question_ja": "カニは毎日水をやり、大切に（④育てた）。",
+              "answer": "育てた",
+              "explanation": "育成する「育てる」。"
+            },
+            {
+              "id": 5,
+              "question_ja": "すると地面から芽が（⑤出て）、",
+              "answer": "出て",
+              "explanation": "芽が出る「出る」。"
+            },
+            {
+              "id": 6,
+              "question_ja": "どんどん（⑥伸びて）、大きな木になった。",
+              "answer": "伸びて",
+              "explanation": "木や枝が大きく成長する「伸びる」。"
+            },
+            {
+              "id": 7,
+              "question_ja": "カニは木登りができないので、サルに柿を（⑦採って）もらうよう頼んだ。",
+              "answer": "採って",
+              "explanation": "木の実をもぐ・収穫する「採る」。"
+            },
+            {
+              "id": 8,
+              "question_ja": "しかしサルは青くて硬い柿を投げつけ、カニに（⑧当たって）大怪我をした。",
+              "answer": "当たって",
+              "explanation": "命中してぶつかる「当たる」。"
+            },
+            {
+              "id": 9,
+              "question_ja": "カニの友達が集まり、サルをこらしめる（⑨計画）を立てた。",
+              "answer": "計画",
+              "explanation": "作戦や手順を決める「計画」。"
+            },
+            {
+              "id": 10,
+              "question_ja": "サルが家に帰って囲炉裏に当たると、栗がサルの顔に（⑩当たり）、",
+              "answer": "当たり",
+              "explanation": "栗が顔にぶつかる「当たる」。"
+            },
+            {
+              "id": 11,
+              "question_ja": "びっくりしたサルは水瓶に顔を（⑪冷やそう）と飛び込んだ。",
+              "answer": "冷やそう",
+              "explanation": "冷たくしてやけどを治そうとする「冷やす」。"
+            },
+            {
+              "id": 12,
+              "question_ja": "そこに蜂がサルの鼻を（⑫刺し）、",
+              "answer": "刺し",
+              "explanation": "蜂が針で突く「刺す」。"
+            },
+            {
+              "id": 13,
+              "question_ja": "逃げようとしたサルに臼が（⑬当たった）。",
+              "answer": "当たった",
+              "explanation": "臼が落ちて命中する「当たる」。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "review_04",
+        "part": 1,
+        "type": "review_test",
+        "topic_ja": "実力を試そう (15課〜19課)",
+        "topic_en": "Review Test 4 (Lessons 15-19)",
+        "pages": [
+          84,
+          85
+        ]
+      },
+      "sections": [],
+      "exercises": [
+        {
+          "exercise_id": "review_04-part1",
+          "title_ja": "問題Ⅰ 次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 1: Choose the best option (1, 2, 3, or 4) to fill in the blank.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "雨が（　）降っている。",
+              "options": [
+                "1 きびしく",
+                "2 すずしく",
+                "3 はげしく",
+                "4 さびしく"
+              ],
+              "answer": "3",
+              "explanation": "雨や風の勢いが非常に強い様子は「激しく（はげしく）」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "植物の（　）を植える。",
+              "options": [
+                "1 種",
+                "2 根",
+                "3 芽",
+                "4 枝"
+              ],
+              "answer": "1",
+              "explanation": "土にまいて育てるものは「種（たね）」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "荷物を（　）、サインをした。",
+              "options": [
+                "1 かたづけて",
+                "2 とりだして",
+                "3 うけとって",
+                "4 あずけて"
+              ],
+              "answer": "3",
+              "explanation": "配達された品物を受領することは「受け取って（うけとって）」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "うまい話に（　）、損をした。",
+              "options": [
+                "1 たおされて",
+                "2 だまされて",
+                "3 なぐられて",
+                "4 こわされて"
+              ],
+              "answer": "2",
+              "explanation": "嘘や詐欺に引っかかることは「騙されて（だまされて）」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "不景気で、父の会社が（　）しまった。",
+              "options": [
+                "1 はずれて",
+                "2 たおれて",
+                "3 こわれて",
+                "4 つぶれて"
+              ],
+              "answer": "4",
+              "explanation": "企業や店が倒産・破綻することは「つぶれる」と言います。"
+            },
+            {
+              "id": 6,
+              "question_ja": "男女が（平等）に活躍できる社会を目指す。",
+              "options": [
+                "1 びょうとう",
+                "2 へいとう",
+                "3 びょうどう",
+                "4 へいどう"
+              ],
+              "answer": "3",
+              "explanation": "「平等」の正しい読み方は「びょうどう」です。"
+            },
+            {
+              "id": 7,
+              "question_ja": "電気代を（節約）するために、エアコンを消した。",
+              "options": [
+                "1 せつよう",
+                "2 せつゆう",
+                "3 せっちゃく",
+                "4 せつやく"
+              ],
+              "answer": "4",
+              "explanation": "「節約」の正しい読み方は「せつやく」です。"
+            },
+            {
+              "id": 8,
+              "question_ja": "バランスのよい（栄養）をとることが大切だ。",
+              "options": [
+                "1 えいよう",
+                "2 えいゆう",
+                "3 けいよう",
+                "4 きょうよう"
+              ],
+              "answer": "1",
+              "explanation": "「栄養」の正しい読み方は「えいよう」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_04-part2",
+          "title_ja": "問題Ⅱ 次の言葉の意味に最も近いものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 2: Choose the option closest in meaning to the underlined phrase.",
+          "type": "synonym",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "彼は貧しい生活を送っていた。",
+              "options": [
+                "1 お金がない生活",
+                "2 忙しい生活",
+                "3 静かな生活",
+                "4 危険な生活"
+              ],
+              "answer": "1",
+              "explanation": "「貧しい（まずしい）」は「お金や物資が乏しい、お金がない」という意味です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "この資料館は入場無料だ。",
+              "options": [
+                "1 お金がかかる",
+                "2 お金が要らない",
+                "3 人が入るのを禁止している",
+                "4 人が入れない"
+              ],
+              "answer": "2",
+              "explanation": "「無料（むりょう）」は「料金を払わなくてよい、お金が要らない（タダ）」という意味です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "鳥にえさをあげた。",
+              "options": [
+                "1 水",
+                "2 薬",
+                "3 食べ物",
+                "4 おもちゃ"
+              ],
+              "answer": "3",
+              "explanation": "「えさ」は動物や飼い鳥などの「食べ物（飼料・エサ）」のことです。"
+            },
+            {
+              "id": 4,
+              "question_ja": "庭の木が大きく育った。",
+              "options": [
+                "1 大きくなった",
+                "2 高くなった",
+                "3 太くなった",
+                "4 増えた"
+              ],
+              "answer": "1",
+              "explanation": "「育つ（そだつ）」は生物が成長して「大きくなる」ことを意味します。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_04-part3",
+          "title_ja": "問題Ⅲ 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 3: Choose the best usage of the given word.",
+          "type": "usage",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "なつかしい",
+              "options": [
+                "1 なつかしいニュースを聞いて、びっくりした。",
+                "2 小学校の友達に会って、なつかしい話をした。",
+                "3 これからなつかしい計画を立てよう。",
+                "4 今日はなつかしい天気ですね。"
+              ],
+              "answer": "2",
+              "explanation": "「なつかしい（懐かしい）」は過去の思い出を心温かく振り返る心情を表します。2の「小学校の友達と昔の思い出話を語り合った」が正解です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "ふるさと",
+              "options": [
+                "1 もう10年もふるさとに帰っていない。",
+                "2 週末にふるさとの映画を見に行った。",
+                "3 このスーパーにはふるさとの野菜が売っている。",
+                "4 ふるさとの時間に間に合わなかった。"
+              ],
+              "answer": "1",
+              "explanation": "「ふるさと（故郷）」は生まれ育った土地のことです。「ふるさとに帰る」が自然で正しいコロケーションです。"
+            },
+            {
+              "id": 3,
+              "question_ja": "イベント",
+              "options": [
+                "1 毎朝、散歩するイベントを続けている。",
+                "2 彼はイベントが上手で、みんなを笑わせる。",
+                "3 昨日のテストはイベントが難しかった。",
+                "4 雨のために、駅前の広場のイベントが中止になった。"
+              ],
+              "answer": "4",
+              "explanation": "「イベント」は催し物や行事のことです。4の「広場で行われる催し物が中止になった」が適切です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "地方",
+              "options": [
+                "1 彼の部屋はとても広くて地方がある。",
+                "2 電車のドアの地方に立たないでください。",
+                "3 東京のような都会ではなく、自然の多い地方で働きたい。",
+                "4 この時計は地方が正確ではない。"
+              ],
+              "answer": "3",
+              "explanation": "「地方（ちほう）」は大都市（都心・中央）に対する地域や田舎の地域を指します。3の「都会ではなく地方で働く」が適切です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 20,
+        "part": 1,
+        "topic_ja": "数と量",
+        "topic_en": "Numbers and Quantities",
+        "pages": [
+          86,
+          87,
+          88,
+          89
+        ]
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "数と量(1)",
+          "title_en": "Numbers and Quantities 1",
+          "warming_up": {
+            "question_ja": "どんなものを測ったり、数えたりしますか。"
+          },
+          "words": [
+            {
+              "term_ja": "数",
+              "reading": "かず",
+              "ruby_html": "<ruby>数<rt>かず</rt></ruby>",
+              "meaning_en": "number, count",
+              "example_ja": "人数を数える",
+              "example_ruby": "<ruby>人数<rt>にんずう</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える"
+            },
+            {
+              "term_ja": "量",
+              "reading": "りょう",
+              "ruby_html": "<ruby>量<rt>りょう</rt></ruby>",
+              "meaning_en": "quantity, volume, amount",
+              "example_ja": "食事の量を減らす",
+              "example_ruby": "<ruby>食事<rt>しょくじ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす"
+            },
+            {
+              "term_ja": "増やす",
+              "reading": "ふやす",
+              "ruby_html": "<ruby>増<rt>ふ</rt></ruby>やす",
+              "meaning_en": "to increase, multiply (transitive)",
+              "example_ja": "貯金を増やす",
+              "example_ruby": "<ruby>貯金<rt>ちょきん</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす"
+            },
+            {
+              "term_ja": "増す",
+              "reading": "ます",
+              "ruby_html": "<ruby>増<rt>ま</rt></ruby>す",
+              "meaning_en": "to increase, heighten, grow",
+              "example_ja": "興味が増す",
+              "example_ruby": "<ruby>興味<rt>きょうみ</rt></ruby>が<ruby>増<rt>ま</rt></ruby>す"
+            },
+            {
+              "term_ja": "減らす",
+              "reading": "へらす",
+              "ruby_html": "<ruby>減<rt>へ</rt></ruby>らす",
+              "meaning_en": "to reduce, decrease, curtail (transitive)",
+              "example_ja": "体重を減らす",
+              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす"
+            },
+            {
+              "term_ja": "増える",
+              "reading": "ふえる",
+              "ruby_html": "<ruby>増<rt>ふ</rt></ruby>える",
+              "meaning_en": "to increase, multiply (intransitive)",
+              "example_ja": "体重が増える",
+              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>える"
+            },
+            {
+              "term_ja": "減る",
+              "reading": "へる",
+              "ruby_html": "<ruby>減<rt>へ</rt></ruby>る",
+              "meaning_en": "to decrease, diminish (intransitive)",
+              "example_ja": "人口が減る",
+              "example_ruby": "<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る"
+            },
+            {
+              "term_ja": "倍",
+              "reading": "ばい",
+              "ruby_html": "<ruby>倍<rt>ばい</rt></ruby>",
+              "meaning_en": "times, -fold, double",
+              "example_ja": "2倍に増える",
+              "example_ruby": "2<ruby>倍<rt>ばい</rt></ruby>に<ruby>増<rt>ふ</rt></ruby>える"
+            },
+            {
+              "term_ja": "余る",
+              "reading": "あまる",
+              "ruby_html": "<ruby>余<rt>あま</rt></ruby>る",
+              "meaning_en": "to be left over, remain",
+              "example_ja": "料理が余る",
+              "example_ruby": "<ruby>料理<rt>りょうり</rt></ruby>が<ruby>余<rt>あま</rt></ruby>る"
+            },
+            {
+              "term_ja": "不足する",
+              "reading": "ふそくする",
+              "ruby_html": "<ruby>不足<rt>ふそく</rt></ruby>する",
+              "meaning_en": "to be insufficient, lack",
+              "example_ja": "運動が不足する",
+              "example_ruby": "<ruby>運動<rt>うんどう</rt></ruby>が<ruby>不足<rt>ふそく</rt></ruby>する"
+            },
+            {
+              "term_ja": "余裕",
+              "reading": "よゆう",
+              "ruby_html": "<ruby>余裕<rt>よゆう</rt></ruby>",
+              "meaning_en": "leeway, margin, room (time, money)",
+              "example_ja": "時間に余裕がある",
+              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>に<ruby>余裕<rt>よゆう</rt></ruby>がある"
+            },
+            {
+              "term_ja": "人数",
+              "reading": "にんずう",
+              "ruby_html": "<ruby>人数<rt>にんずう</rt></ruby>",
+              "meaning_en": "number of people",
+              "example_ja": "参加者の人数",
+              "example_ruby": "<ruby>参加者<rt>さんかしゃ</rt></ruby>の<ruby>人数<rt>にんずう</rt></ruby>"
+            },
+            {
+              "term_ja": "個数",
+              "reading": "こすう",
+              "ruby_html": "<ruby>個数<rt>こすう</rt></ruby>",
+              "meaning_en": "number of items, count of articles",
+              "example_ja": "リンゴの個数",
+              "example_ruby": "リンゴの<ruby>個数<rt>こすう</rt></ruby>"
+            },
+            {
+              "term_ja": "回数",
+              "reading": "かいすう",
+              "ruby_html": "<ruby>回数<rt>かいすう</rt></ruby>",
+              "meaning_en": "number of times, frequency",
+              "example_ja": "練習の回数を増やす",
+              "example_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>の<ruby>回数<rt>かいすう</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす"
+            },
+            {
+              "term_ja": "台数",
+              "reading": "だいすう",
+              "ruby_html": "<ruby>台数<rt>だいすう</rt></ruby>",
+              "meaning_en": "number of vehicles, machines",
+              "example_ja": "車の台数",
+              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>の<ruby>台数<rt>だいすう</rt></ruby>"
+            },
+            {
+              "term_ja": "数える",
+              "reading": "かぞえる",
+              "ruby_html": "<ruby>数<rt>かぞ</rt></ruby>える",
+              "meaning_en": "to count",
+              "example_ja": "お金を数える",
+              "example_ruby": "お<ruby>金<rt>かね</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える"
+            },
+            {
+              "term_ja": "測る",
+              "reading": "はかる",
+              "ruby_html": "<ruby>測<rt>はか</rt></ruby>る",
+              "meaning_en": "to measure (length, distance, time)",
+              "example_ja": "長さを測る",
+              "example_ruby": "<ruby>長<rt>なが</rt></ruby>さを<ruby>測<rt>はか</rt></ruby>る"
+            },
+            {
+              "term_ja": "距離",
+              "reading": "きょり",
+              "ruby_html": "<ruby>距離<rt>きょり</rt></ruby>",
+              "meaning_en": "distance, interval",
+              "example_ja": "駅までの距離",
+              "example_ruby": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>距離<rt>きょり</rt></ruby>"
+            },
+            {
+              "term_ja": "面積",
+              "reading": "めんせき",
+              "ruby_html": "<ruby>面積<rt>めんせき</rt></ruby>",
+              "meaning_en": "area, surface area",
+              "example_ja": "部屋の面積",
+              "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>の<ruby>面積<rt>めんせき</rt></ruby>"
+            },
+            {
+              "term_ja": "時間",
+              "reading": "じかん",
+              "ruby_html": "<ruby>時間<rt>じかん</rt></ruby>",
+              "meaning_en": "time, hours, duration",
+              "example_ja": "かかる時間を測る",
+              "example_ruby": "かかる<ruby>時間<rt>じかん</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る"
+            },
+            {
+              "term_ja": "重さ",
+              "reading": "おもさ",
+              "ruby_html": "<ruby>重<rt>おも</rt></ruby>さ",
+              "meaning_en": "weight, heaviness",
+              "example_ja": "荷物の重さ",
+              "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>重<rt>おも</rt></ruby>さ"
+            },
+            {
+              "term_ja": "量る",
+              "reading": "はかる",
+              "ruby_html": "<ruby>量<rt>はか</rt></ruby>る",
+              "meaning_en": "to weigh, measure quantity/volume",
+              "example_ja": "体重を量る",
+              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>量<rt>はか</rt></ruby>る"
+            },
+            {
+              "term_ja": "記録",
+              "reading": "きろく",
+              "ruby_html": "<ruby>記録<rt>きろく</rt></ruby>",
+              "meaning_en": "record, minutes, documentation",
+              "example_ja": "新記録を出す",
+              "example_ruby": "<ruby>新記録<rt>しんきろく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+            },
+            {
+              "term_ja": "取る",
+              "reading": "とる",
+              "ruby_html": "<ruby>取<rt>と</rt></ruby>る",
+              "meaning_en": "to take (notes/record)",
+              "example_ja": "記録を取る",
+              "example_ruby": "<ruby>記録<rt>きろく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "時間に（　余裕　）を持って出かけよう。",
+              "answer": "余裕",
+              "explanation": "時間的にゆとりがあることは「余裕」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "ダイエットのために、甘いものを（　減らす　）。",
+              "answer": "減らす",
+              "explanation": "量を少なくする行為は「減らす」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "最近、運動不足で体力が（　減る　）。",
+              "answer": "減る",
+              "explanation": "体力などが落ちて少なくなることは「減る」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "買いすぎて、パンが（　余る　）。",
+              "answer": "余る",
+              "explanation": "使いきれずに残ることは「余る」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "売り上げが去年の2（　倍　）になった。",
+              "answer": "倍",
+              "explanation": "掛け算の比率は「倍」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "体重計で体重を（　量る　）。",
+              "answer": "量る",
+              "explanation": "重さを測定することは「量る」です。"
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "title_ja": "数と量(2)",
+          "title_en": "Numbers and Quantities 2",
+          "warming_up": {
+            "question_ja": "どんな料理を作るのが得意ですか。材料の量はどうやって決めますか。"
+          },
+          "words": [
+            {
+              "term_ja": "大量",
+              "reading": "たいりょう",
+              "ruby_html": "<ruby>大量<rt>たいりょう</rt></ruby>",
+              "meaning_en": "large quantity, mass volume",
+              "example_ja": "大量に購入する",
+              "example_ruby": "<ruby>大量<rt>たいりょう</rt></ruby>に<ruby>購入<rt>こうにゅう</rt></ruby>する"
+            },
+            {
+              "term_ja": "少量",
+              "reading": "しょうりょう",
+              "ruby_html": "<ruby>少量<rt>しょうりょう</rt></ruby>",
+              "meaning_en": "small amount, small quantity",
+              "example_ja": "少量の水",
+              "example_ruby": "<ruby>少量<rt>しょうりょう</rt></ruby>の<ruby>水<rt>みず</rt></ruby>"
+            },
+            {
+              "term_ja": "多数",
+              "reading": "たすう",
+              "ruby_html": "<ruby>多数<rt>たすう</rt></ruby>",
+              "meaning_en": "large number, majority",
+              "example_ja": "多数の参加者",
+              "example_ruby": "<ruby>多数<rt>たすう</rt></ruby>の<ruby>参加者<rt>さんかしゃ</rt></ruby>"
+            },
+            {
+              "term_ja": "少数",
+              "reading": "しょうすう",
+              "ruby_html": "<ruby>少数<rt>しょうすう</rt></ruby>",
+              "meaning_en": "small number, minority",
+              "example_ja": "少数の意見",
+              "example_ruby": "<ruby>少数<rt>しょうすう</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>"
+            },
+            {
+              "term_ja": "マイナス",
+              "reading": "マイナス",
+              "ruby_html": "マイナス",
+              "meaning_en": "minus, negative, below zero",
+              "example_ja": "気温がマイナスになる",
+              "example_ruby": "<ruby>気温<rt>きおん</rt></ruby>がマイナスになる"
+            },
+            {
+              "term_ja": "プラス",
+              "reading": "プラス",
+              "ruby_html": "プラス",
+              "meaning_en": "plus, positive, addition",
+              "example_ja": "プラスに働く",
+              "example_ruby": "プラスに<ruby>働<rt>はたら</rt></ruby>く"
+            },
+            {
+              "term_ja": "レベル",
+              "reading": "レベル",
+              "ruby_html": "レベル",
+              "meaning_en": "level, standard",
+              "example_ja": "技術のレベル",
+              "example_ruby": "<ruby>技術<rt>ぎじゅつ</rt></ruby>のレベル"
+            },
+            {
+              "term_ja": "上がる",
+              "reading": "あがる",
+              "ruby_html": "<ruby>上<rt>あ</rt></ruby>がる",
+              "meaning_en": "to rise, go up (level/price/fever)",
+              "example_ja": "レベルが上がる",
+              "example_ruby": "レベルが<ruby>上<rt>あ</rt></ruby>がる"
+            },
+            {
+              "term_ja": "最大",
+              "reading": "さいだい",
+              "ruby_html": "<ruby>最大<rt>さいだい</rt></ruby>",
+              "meaning_en": "greatest, maximum, largest",
+              "example_ja": "最大の効果",
+              "example_ruby": "<ruby>最大<rt>さいだい</rt></ruby>の<ruby>効果<rt>こうか</rt></ruby>"
+            },
+            {
+              "term_ja": "最小",
+              "reading": "さいしょう",
+              "ruby_html": "<ruby>最小<rt>さいしょう</rt></ruby>",
+              "meaning_en": "smallest, minimum",
+              "example_ja": "被害を最小にする",
+              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>を<ruby>最小<rt>さいしょう</rt></ruby>にする"
+            },
+            {
+              "term_ja": "最高",
+              "reading": "さいこう",
+              "ruby_html": "<ruby>最高<rt>さいこう</rt></ruby>",
+              "meaning_en": "highest, supreme, maximum",
+              "example_ja": "最高気温",
+              "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>"
+            },
+            {
+              "term_ja": "最低",
+              "reading": "さいてい",
+              "ruby_html": "<ruby>最低<rt>さいてい</rt></ruby>",
+              "meaning_en": "lowest, minimum, worst",
+              "example_ja": "最低限の条件",
+              "example_ruby": "<ruby>最低限<rt>さいていげん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>"
+            },
+            {
+              "term_ja": "平均",
+              "reading": "へいきん",
+              "ruby_html": "<ruby>平均<rt>へいきん</rt></ruby>",
+              "meaning_en": "average, mean",
+              "example_ja": "平均点を計算する",
+              "example_ruby": "<ruby>平均点<rt>へいきんてん</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する"
+            },
+            {
+              "term_ja": "たっぷり",
+              "reading": "たっぷり",
+              "ruby_html": "たっぷり",
+              "meaning_en": "plenty, full, ample",
+              "example_ja": "野菜をたっぷり入れる",
+              "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>をたっぷり<ruby>入<rt>い</rt></ruby>れる"
+            },
+            {
+              "term_ja": "少々",
+              "reading": "しょうしょう",
+              "ruby_html": "<ruby>少々<rt>しょうしょう</rt></ruby>",
+              "meaning_en": "just a little, a small pinch",
+              "example_ja": "塩を少々加える",
+              "example_ruby": "<ruby>塩<rt>しお</rt></ruby>を<ruby>少々<rt>しょうしょう</rt></ruby><ruby>加<rt>くわ</rt></ruby>える"
+            },
+            {
+              "term_ja": "加える",
+              "reading": "くわえる",
+              "ruby_html": "<ruby>加<rt>くわ</rt></ruby>える",
+              "meaning_en": "to add, append, include",
+              "example_ja": "具材を加える",
+              "example_ruby": "<ruby>具材<rt>ぐざい</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>える"
+            },
+            {
+              "term_ja": "すべて",
+              "reading": "すべて",
+              "ruby_html": "すべて",
+              "meaning_en": "all, entirely, everything",
+              "example_ja": "すべての問題",
+              "example_ruby": "すべての<ruby>問題<rt>もんだい</rt></ruby>"
+            },
+            {
+              "term_ja": "全員",
+              "reading": "ぜんいん",
+              "ruby_html": "<ruby>全員<rt>ぜんいん</rt></ruby>",
+              "meaning_en": "all members, everyone",
+              "example_ja": "全員が出席する",
+              "example_ruby": "<ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>出席<rt>しゅっせき</rt></ruby>する"
+            },
+            {
+              "term_ja": "合計",
+              "reading": "ごうけい",
+              "ruby_html": "<ruby>合計<rt>ごうけい</rt></ruby>",
+              "meaning_en": "total amount, sum total",
+              "example_ja": "合計を計算する",
+              "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する"
+            },
+            {
+              "term_ja": "出す",
+              "reading": "だす",
+              "ruby_html": "<ruby>出<rt>だ</rt></ruby>す",
+              "meaning_en": "to produce, calculate, output",
+              "example_ja": "合計を出す",
+              "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+            },
+            {
+              "term_ja": "計算",
+              "reading": "けいさん",
+              "ruby_html": "<ruby>計算<rt>けいさん</rt></ruby>",
+              "meaning_en": "calculation, reckoning",
+              "example_ja": "計算が速い",
+              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>が<ruby>速<rt>はや</rt></ruby>い"
+            },
+            {
+              "term_ja": "間違える",
+              "reading": "まちがえる",
+              "ruby_html": "<ruby>間違<rt>まちが</rt></ruby>える",
+              "meaning_en": "to mistake, make an error in",
+              "example_ja": "道を間違える",
+              "example_ruby": "<ruby>道<rt>みち</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>える"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "試験で（　最低　）でも60点は取りたい。",
+              "answer": "最低",
+              "explanation": "最小限の下限を表す言葉は「最低（でも）」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "服の（　サイズ　）が合わない。",
+              "answer": "サイズ",
+              "explanation": "衣服や靴の大きさ・寸法は「サイズ」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "この会場には、（　最大　）で500人入ることができる。",
+              "answer": "最大",
+              "explanation": "上限・最も多い数値を表すのは「最大」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "買い物をした（　合計　）は3,000円だった。",
+              "answer": "合計",
+              "explanation": "合わせた総額は「合計」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "スープに塩を少し（　加えて　）味を調える。",
+              "answer": "加えて",
+              "explanation": "調味料などを足し入れることは「加える」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "電卓を使って、数字を（　計算　）する。",
+              "answer": "計算",
+              "explanation": "数値を算出することは「計算する」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": 1,
+          "title_ja": "正しいほうを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "箱の中のリンゴを（a 測った / b 数えた）。",
+              "options": [
+                "a 測った",
+                "b 数えた"
+              ],
+              "answer": "b",
+              "explanation": "個数を数える行為は「数えた」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "注文する商品の（a 人数 / b 個数）を確認した。",
+              "options": [
+                "a 人数",
+                "b 個数"
+              ],
+              "answer": "b",
+              "explanation": "商品や物品の数は「個数」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "薬は（a 少量 / b 少数）でも効果がある。",
+              "options": [
+                "a 少量",
+                "b 少数"
+              ],
+              "answer": "a",
+              "explanation": "分量が少ないことは「少量」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "被害を（a 最小 / b 最低）にとどめる。",
+              "options": [
+                "a 最小",
+                "b 最低"
+              ],
+              "answer": "a",
+              "explanation": "被害や損失を最も小さく抑えることは「最小にとどめる」と言います。"
+            },
+            {
+              "id": 5,
+              "question_ja": "勉強してテストの点数が（a 増えた / b 上がった）。",
+              "options": [
+                "a 増えた",
+                "b 上がった"
+              ],
+              "answer": "b",
+              "explanation": "点数やレベルが高くなることは「上がる」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 2,
+          "title_ja": "世界の米の生産量グラフを見て、文の内容が正しければ○、違っていれば×を書きなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "インドの米の生産量は、中国より多い。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "×",
+              "explanation": "世界1位は中国であり、インドより多いです。"
+            },
+            {
+              "id": 2,
+              "question_ja": "インドネシアの米の生産量は、中国の半分以上だ。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "×",
+              "explanation": "インドネシアの生産量は中国の半分に満たない数値です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "上位3か国（中国、インド、インドネシア）で世界の米の生産量の半分以上を占める。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "○",
+              "explanation": "上位3か国の合計は全世界生産量の過半数を占めています。"
+            },
+            {
+              "id": 4,
+              "question_ja": "日本の米の生産量は、世界5位以内に入っている。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "×",
+              "explanation": "日本の順位はトップ5に入っていません。"
+            },
+            {
+              "id": 5,
+              "question_ja": "アメリカの米の生産量は、日本の倍以上だ。",
+              "options": [
+                "○",
+                "×"
+              ],
+              "answer": "×",
+              "explanation": "グラフデータ上、倍以上ではありません。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 3,
+          "title_ja": "（　）に言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "日本の国土の（　面積　）は約38万平方キロメートルだ。",
+              "answer": "面積",
+              "explanation": "土地の広さは「面積」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "睡眠時間が（　不足している　）と、集中力が落ちる。",
+              "answer": "不足している",
+              "explanation": "足りていない状態は「不足している」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "売り上げを（　増やし　）て、利益を出したい。",
+              "answer": "増やし",
+              "explanation": "多くすることは他動詞「増やす」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "今日の気温は氷点下で、（　マイナス　）3度だ。",
+              "answer": "マイナス",
+              "explanation": "零下（氷点下）は「マイナス」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "クラスの（　全員　）が合格した。",
+              "answer": "全員",
+              "explanation": "メンバー全員を表す言葉は「全員」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 4,
+          "title_ja": "言葉の組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1. 野菜を（ a 大量 / b たっぷり / c プラス ）食べる",
+              "options": [
+                "a 大量",
+                "b たっぷり",
+                "c プラス"
+              ],
+              "answer": "b",
+              "explanation": "「たっぷりと食べる」"
+            },
+            {
+              "id": 2,
+              "question_ja": "1. ゴミを（ a 大量 / b たっぷり / c プラス ）に出す",
+              "options": [
+                "a 大量",
+                "b たっぷり",
+                "c プラス"
+              ],
+              "answer": "a",
+              "explanation": "「大量に出す」"
+            },
+            {
+              "id": 3,
+              "question_ja": "1. 経験が（ a 大量 / b たっぷり / c プラス ）になる",
+              "options": [
+                "a 大量",
+                "b たっぷり",
+                "c プラス"
+              ],
+              "answer": "c",
+              "explanation": "「プラスになる」"
+            },
+            {
+              "id": 4,
+              "question_ja": "2. （ a 記録 / b 計算 / c 平均 ）点を出す",
+              "options": [
+                "a 記録",
+                "b 計算",
+                "c 平均"
+              ],
+              "answer": "c",
+              "explanation": "「平均点を出す」"
+            },
+            {
+              "id": 5,
+              "question_ja": "2. お釣りを（ a 記録 / b 計算 / c 平均 ）する",
+              "options": [
+                "a 記録",
+                "b 計算",
+                "c 平均"
+              ],
+              "answer": "b",
+              "explanation": "「お釣りを計算する」"
+            },
+            {
+              "id": 6,
+              "question_ja": "2. ノートに（ a 記録 / b 計算 / c 平均 ）を取る",
+              "options": [
+                "a 記録",
+                "b 計算",
+                "c 平均"
+              ],
+              "answer": "a",
+              "explanation": "「記録を取る」"
+            }
+          ]
+        },
+        {
+          "exercise_id": 5,
+          "title_ja": "カレーの作り方の文章の（　）に適切な言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "具材を切って鍋に入れ、塩コショウを（①少々）振って炒める。",
+              "answer": "少々",
+              "explanation": "ほんの少しの分量は「少々」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "肉は一口（②サイズ）に切る。",
+              "answer": "サイズ",
+              "explanation": "大きさの寸法「一口サイズ」。"
+            },
+            {
+              "id": 3,
+              "question_ja": "水を（③加えて）煮込む。",
+              "answer": "加えて",
+              "explanation": "水を足し入れる「加える」。"
+            },
+            {
+              "id": 4,
+              "question_ja": "火を（④減らす）／弱める。",
+              "answer": "減らす",
+              "explanation": "火力や分量を抑える「減らす」。"
+            },
+            {
+              "id": 5,
+              "question_ja": "食べる（⑤人数）に合わせて、",
+              "answer": "人数",
+              "explanation": "人の頭数「人数」。"
+            },
+            {
+              "id": 6,
+              "question_ja": "カレールーを（⑥増やす）。",
+              "answer": "増やす",
+              "explanation": "分量を多くする「増やす」。"
+            },
+            {
+              "id": 7,
+              "question_ja": "隠し味にチョコを入れるとコクが（⑦プラス）される。",
+              "answer": "プラス",
+              "explanation": "付加価値や味が増す「プラス」。"
+            },
+            {
+              "id": 8,
+              "question_ja": "もしカレーが（⑧余った）ら、次の日はうどんにする。",
+              "answer": "余った",
+              "explanation": "残ってしまう「余る」。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 21,
+        "part": 1,
+        "topic_ja": "時間",
+        "topic_en": "Time",
+        "pages": [
+          90,
+          91,
+          92,
+          93
+        ]
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "時間(1)",
+          "title_en": "Time 1",
+          "warming_up": {
+            "question_ja": "毎日、どんなスケジュールで過ごしていますか。"
+          },
+          "words": [
+            {
+              "term_ja": "経つ",
+              "reading": "たつ",
+              "ruby_html": "<ruby>経<rt>た</rt></ruby>つ",
+              "meaning_en": "to pass, elapse (time)",
+              "example_ja": "時間が経つ",
+              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>が<ruby>経<rt>た</rt></ruby>つ"
+            },
+            {
+              "term_ja": "時刻",
+              "reading": "じこく",
+              "ruby_html": "<ruby>時刻<rt>じこく</rt></ruby>",
+              "meaning_en": "time, appointed hour, clock time",
+              "example_ja": "出発の時刻",
+              "example_ruby": "<ruby>出発<rt>しゅっぱつ</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>"
+            },
+            {
+              "term_ja": "過ぎる",
+              "reading": "すぎる",
+              "ruby_html": "<ruby>過<rt>す</rt></ruby>ぎる",
+              "meaning_en": "to pass, exceed (time)",
+              "example_ja": "約束の時間を過ぎる",
+              "example_ruby": "<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎる"
+            },
+            {
+              "term_ja": "時期",
+              "reading": "じき",
+              "ruby_html": "<ruby>時期<rt>じき</rt></ruby>",
+              "meaning_en": "season, period, time of year",
+              "example_ja": "旅行にいい時期",
+              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>にいい<ruby>時期<rt>じき</rt></ruby>"
+            },
+            {
+              "term_ja": "期間",
+              "reading": "きかん",
+              "ruby_html": "<ruby>期間<rt>きかん</rt></ruby>",
+              "meaning_en": "period, term, span of time",
+              "example_ja": "一定の期間",
+              "example_ruby": "<ruby>一定<rt>いってい</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>"
+            },
+            {
+              "term_ja": "期限",
+              "reading": "きげん",
+              "ruby_html": "<ruby>期限<rt>きげん</rt></ruby>",
+              "meaning_en": "deadline, time limit, expiration date",
+              "example_ja": "提出期限を守る",
+              "example_ruby": "<ruby>提出期限<rt>ていしゅつきげん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る"
+            },
+            {
+              "term_ja": "切れる",
+              "reading": "きれる",
+              "ruby_html": "<ruby>切<rt>き</rt></ruby>れる",
+              "meaning_en": "to expire, run out (deadline/ticket)",
+              "example_ja": "定期券の期限が切れる",
+              "example_ruby": "<ruby>定期券<rt>ていきけん</rt></ruby>の<ruby>期限<rt>きげん</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる"
+            },
+            {
+              "term_ja": "短期",
+              "reading": "たんき",
+              "ruby_html": "<ruby>短期<rt>たんき</rt></ruby>",
+              "meaning_en": "short-term",
+              "example_ja": "短期のアルバイト",
+              "example_ruby": "<ruby>短期<rt>たんき</rt></ruby>のアルバイト"
+            },
+            {
+              "term_ja": "長期",
+              "reading": "ちょうき",
+              "ruby_html": "<ruby>長期<rt>ちょうき</rt></ruby>",
+              "meaning_en": "long-term",
+              "example_ja": "長期の休みを取る",
+              "example_ruby": "<ruby>長期<rt>ちょうき</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みを<ruby>取<rt>と</rt></ruby>る"
+            },
+            {
+              "term_ja": "日中",
+              "reading": "にっちゅう",
+              "ruby_html": "<ruby>日中<rt>にっちゅう</rt></ruby>",
+              "meaning_en": "daytime, during the day",
+              "example_ja": "日中は暖かい",
+              "example_ruby": "<ruby>日中<rt>にっちゅう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かい"
+            },
+            {
+              "term_ja": "夜間",
+              "reading": "やかん",
+              "ruby_html": "<ruby>夜間<rt>やかん</rt></ruby>",
+              "meaning_en": "nighttime, at night",
+              "example_ja": "夜間の工事",
+              "example_ruby": "<ruby>夜間<rt>やかん</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>"
+            },
+            {
+              "term_ja": "日時",
+              "reading": "にちじ",
+              "ruby_html": "<ruby>日時<rt>にちじ</rt></ruby>",
+              "meaning_en": "date and time",
+              "example_ja": "会議の日時を決める",
+              "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby>を<ruby>決<rt>き</rt></ruby>める"
+            },
+            {
+              "term_ja": "日程",
+              "reading": "にってい",
+              "ruby_html": "<ruby>日程<rt>にってい</rt></ruby>",
+              "meaning_en": "itinerary, schedule, program",
+              "example_ja": "旅行の日程を立てる",
+              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる"
+            },
+            {
+              "term_ja": "年間",
+              "reading": "ねんかん",
+              "ruby_html": "<ruby>年間<rt>ねんかん</rt></ruby>",
+              "meaning_en": "annual, during the year",
+              "example_ja": "年間の売り上げ",
+              "example_ruby": "<ruby>年間<rt>ねんかん</rt></ruby>の<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ"
+            },
+            {
+              "term_ja": "延期する",
+              "reading": "えんきする",
+              "ruby_html": "<ruby>延期<rt>えんき</rt></ruby>する",
+              "meaning_en": "to postpone, put off, defer",
+              "example_ja": "試合を延期する",
+              "example_ruby": "<ruby>試合<rt>しあい</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>する"
+            },
+            {
+              "term_ja": "合わせる",
+              "reading": "あわせる",
+              "ruby_html": "<ruby>合<rt>あ</rt></ruby>わせる",
+              "meaning_en": "to adjust, synchronize (watch)",
+              "example_ja": "時計を合わせる",
+              "example_ruby": "<ruby>時計<rt>とけい</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる"
+            },
+            {
+              "term_ja": "日付",
+              "reading": "ひづけ",
+              "ruby_html": "<ruby>日付<rt>ひづけ</rt></ruby>",
+              "meaning_en": "date (on paper/calendar)",
+              "example_ja": "日付を確認する",
+              "example_ruby": "<ruby>日付<rt>ひづけ</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する"
+            },
+            {
+              "term_ja": "セットする",
+              "reading": "セットする",
+              "ruby_html": "セットする",
+              "meaning_en": "to set (timer, alarm)",
+              "example_ja": "タイマーをセットする",
+              "example_ruby": "タイマーをセットする"
+            },
+            {
+              "term_ja": "アラーム",
+              "reading": "アラーム",
+              "ruby_html": "アラーム",
+              "meaning_en": "alarm",
+              "example_ja": "アラームを止める",
+              "example_ruby": "アラームを<ruby>止<rt>と</rt></ruby>める"
+            },
+            {
+              "term_ja": "目覚まし時計",
+              "reading": "めざましどけい",
+              "ruby_html": "<ruby>目覚まし時計<rt>めざましどけい</rt></ruby>",
+              "meaning_en": "alarm clock",
+              "example_ja": "目覚まし時計をかける",
+              "example_ruby": "<ruby>目覚まし時計<rt>めざましどけい</rt></ruby>をかける"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "書類にサインと今日の（　日付　）を書いた。",
+              "answer": "日付",
+              "explanation": "年月日を記すのは「日付」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "雨天のため、運動会は来週に（　延期　）された。",
+              "answer": "延期",
+              "explanation": "日時を先に延ばすことは「延期」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "日本に来てから、あっという間に1年が（　経った　）。",
+              "answer": "経った",
+              "explanation": "時間が経過することは「経つ（経った）」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "レポートの提出（　期限　）は明日までです。",
+              "answer": "期限",
+              "explanation": "締め切りの期日は「期限」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（　日中　）は仕事があるので、夜間に勉強している。",
+              "answer": "日中",
+              "explanation": "昼間の時間帯は「日中」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "明日の朝早く起きるために、（　アラーム　）をセットした。",
+              "answer": "アラーム",
+              "explanation": "目覚ましの警報音は「アラーム」です。"
+            }
+          ]
+        },
+        {
+          "section_id": 2,
+          "title_ja": "時間(2)",
+          "title_en": "Time 2",
+          "warming_up": {
+            "question_ja": "過去・現在・未来の中で、いつが一番大切だと思いますか。"
+          },
+          "words": [
+            {
+              "term_ja": "前回",
+              "reading": "ぜんかい",
+              "ruby_html": "<ruby>前回<rt>ぜんかい</rt></ruby>",
+              "meaning_en": "last time, previous time",
+              "example_ja": "前回の復習をする",
+              "example_ruby": "<ruby>前回<rt>ぜんかい</rt></ruby>の<ruby>復習<rt>ふくしゅう</rt></ruby>をする"
+            },
+            {
+              "term_ja": "今回",
+              "reading": "こんかい",
+              "ruby_html": "<ruby>今回<rt>こんかい</rt></ruby>",
+              "meaning_en": "this time, on this occasion",
+              "example_ja": "今回は成功した",
+              "example_ruby": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>成功<rt>せいこう</rt></ruby>した"
+            },
+            {
+              "term_ja": "次回",
+              "reading": "じかい",
+              "ruby_html": "<ruby>次回<rt>じかい</rt></ruby>",
+              "meaning_en": "next time",
+              "example_ja": "次回の予定",
+              "example_ruby": "<ruby>次回<rt>じかい</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>"
+            },
+            {
+              "term_ja": "以前",
+              "reading": "いぜん",
+              "ruby_html": "<ruby>以前<rt>いぜん</rt></ruby>",
+              "meaning_en": "previously, before, formerly",
+              "example_ja": "以前会ったことがある",
+              "example_ruby": "<ruby>以前<rt>いぜん</rt></ruby><ruby>会<rt>あ</rt></ruby>ったことがある"
+            },
+            {
+              "term_ja": "以後",
+              "reading": "いご",
+              "ruby_html": "<ruby>以後<rt>いご</rt></ruby>",
+              "meaning_en": "after this, hereafter, since",
+              "example_ja": "正午以後に連絡する",
+              "example_ruby": "<ruby>正午以後<rt>しょうごいご</rt></ruby>に<ruby>連絡<rt>れんらく</rt></ruby>する"
+            },
+            {
+              "term_ja": "前後",
+              "reading": "ぜんご",
+              "ruby_html": "<ruby>前後<rt>ぜんご</rt></ruby>",
+              "meaning_en": "around, about, before and behind",
+              "example_ja": "3時前後に集まる",
+              "example_ruby": "3<ruby>時前後<rt>じぜんご</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まる"
+            },
+            {
+              "term_ja": "前日",
+              "reading": "ぜんじつ",
+              "ruby_html": "<ruby>前日<rt>ぜんじつ</rt></ruby>",
+              "meaning_en": "the previous day, the day before",
+              "example_ja": "試験の前日に早く寝る",
+              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>に<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>る"
+            },
+            {
+              "term_ja": "当日",
+              "reading": "とうじつ",
+              "ruby_html": "<ruby>当日<rt>とうじつ</rt></ruby>",
+              "meaning_en": "that day, the appointed day",
+              "example_ja": "結婚式の当日",
+              "example_ruby": "<ruby>結婚式<rt>けっこんしき</rt></ruby>の<ruby>当日<rt>とうじつ</rt></ruby>"
+            },
+            {
+              "term_ja": "翌日",
+              "reading": "よくじつ",
+              "ruby_html": "<ruby>翌日<rt>よくじつ</rt></ruby>",
+              "meaning_en": "the next day, following day",
+              "example_ja": "翌日の朝に出発する",
+              "example_ruby": "<ruby>翌日<rt>よくじつ</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>に<ruby>出発<rt>しゅっぱつ</rt></ruby>する"
+            },
+            {
+              "term_ja": "平日",
+              "reading": "へいじつ",
+              "ruby_html": "<ruby>平日<rt>へいじつ</rt></ruby>",
+              "meaning_en": "weekday, ordinary days",
+              "example_ja": "平日は会社に行く",
+              "example_ruby": "<ruby>平日<rt>へいじつ</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+            },
+            {
+              "term_ja": "週末",
+              "reading": "しゅうまつ",
+              "ruby_html": "<ruby>週末<rt>しゅうまつ</rt></ruby>",
+              "meaning_en": "weekend",
+              "example_ja": "週末にドライブする",
+              "example_ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>にドライブする"
+            },
+            {
+              "term_ja": "昨年",
+              "reading": "さくねん",
+              "ruby_html": "<ruby>昨年<rt>さくねん</rt></ruby>",
+              "meaning_en": "last year (formal)",
+              "example_ja": "昨年の業績",
+              "example_ruby": "<ruby>昨年<rt>さくねん</rt></ruby>の<ruby>業績<rt>ぎょうせき</rt></ruby>"
+            },
+            {
+              "term_ja": "翌年",
+              "reading": "よくねん",
+              "ruby_html": "<ruby>翌年<rt>よくねん</rt></ruby>",
+              "meaning_en": "the next year, the following year",
+              "example_ja": "その翌年に卒業した",
+              "example_ruby": "その<ruby>翌年<rt>よくねん</rt></ruby>に<ruby>卒業<rt>そつぎょう</rt></ruby>した"
+            },
+            {
+              "term_ja": "過去",
+              "reading": "かこ",
+              "ruby_html": "<ruby>過去<rt>かこ</rt></ruby>",
+              "meaning_en": "past, bygone days",
+              "example_ja": "過去を振り返る",
+              "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る"
+            },
+            {
+              "term_ja": "現在",
+              "reading": "げんざい",
+              "ruby_html": "<ruby>現在<rt>げんざい</rt></ruby>",
+              "meaning_en": "present, currently, now",
+              "example_ja": "現在の時刻",
+              "example_ruby": "<ruby>現在<rt>げんざい</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>"
+            },
+            {
+              "term_ja": "未来",
+              "reading": "みらい",
+              "ruby_html": "<ruby>未来<rt>みらい</rt></ruby>",
+              "meaning_en": "future",
+              "example_ja": "未来の社会を想像する",
+              "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>する"
+            },
+            {
+              "term_ja": "現代",
+              "reading": "げんだい",
+              "ruby_html": "<ruby>現代<rt>げんだい</rt></ruby>",
+              "meaning_en": "the present age, contemporary times",
+              "example_ja": "現代社会の課題",
+              "example_ruby": "<ruby>現代社会<rt>げんだいしゃかい</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>"
+            },
+            {
+              "term_ja": "間もなく",
+              "reading": "まもなく",
+              "ruby_html": "<ruby>間<rt>ま</rt></ruby>もなく",
+              "meaning_en": "soon, shortly, before long",
+              "example_ja": "間もなく列車が到着する",
+              "example_ruby": "<ruby>間<rt>ま</rt></ruby>もなく<ruby>列車<rt>れっしゃ</rt></ruby>が<ruby>到着<rt>とうちゃく</rt></ruby>する"
+            },
+            {
+              "term_ja": "突然",
+              "reading": "とつぜん",
+              "ruby_html": "<ruby>突然<rt>とつぜん</rt></ruby>",
+              "meaning_en": "suddenly, all of a sudden, abruptly",
+              "example_ja": "突然電話が鳴る",
+              "example_ruby": "<ruby>突然<rt>とつぜん</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "午後5時（　以後　）は、事務所が閉まります。",
+              "answer": "以後",
+              "explanation": "ある時点から先・以降は「以後」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "暗い夜道で、（　突然　）大きな物音がした。",
+              "answer": "突然",
+              "explanation": "不意に急に起こる様子は「突然」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "旅行の（　前日　）に、荷物の準備を終わらせた。",
+              "answer": "前日",
+              "explanation": "ある日の前の日は「前日」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "チケットは、（　当日　）会場でも買うことができます。",
+              "answer": "当日",
+              "explanation": "催しが行われるその日は「当日」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（　今回　）のテストは、前回のテストより難しかった。",
+              "answer": "今回",
+              "explanation": "いま行われた回は「今回」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": 1,
+          "title_ja": "正しいほうを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "時計の針を正しい時間に（a 合わせた / b セットした）。",
+              "options": [
+                "a 合わせた",
+                "b セットした"
+              ],
+              "answer": "a",
+              "explanation": "時計の時刻をぴったり正しく直すことは「時計を合わせる」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "夏休みという長い（a 期限 / b 期間）を利用して旅行する。",
+              "options": [
+                "a 期限",
+                "b 期間"
+              ],
+              "answer": "b",
+              "explanation": "ある始まりから終わりまでの長さは「期間」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "パーティーの（a 日程 / b 日時）は、来週の土曜日午後6時です。",
+              "options": [
+                "a 日程",
+                "b 日時"
+              ],
+              "answer": "b",
+              "explanation": "ピンポイントの日と時刻の指定は「日時」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "新幹線の出発（a 時期 / b 時刻）を調べる。",
+              "options": [
+                "a 時期",
+                "b 時刻"
+              ],
+              "answer": "b",
+              "explanation": "何時何分という時計の時間は「時刻」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（a しばらく / b まもなく）会っていないので、近いうちに会おう。",
+              "options": [
+                "a しばらく",
+                "b まもなく"
+              ],
+              "answer": "a",
+              "explanation": "過去から一定期間が空いたことは「しばらく（の間）」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 2,
+          "title_ja": "時間の対応表を完成させなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "昨日 / 今日 / （　明日　）",
+              "answer": "明日",
+              "explanation": "きのう・きょう・あした"
+            },
+            {
+              "id": 2,
+              "question_ja": "先週 / 今週 / （　来週　）",
+              "answer": "来週",
+              "explanation": "せんしゅう・こんしゅう・らいしゅう"
+            },
+            {
+              "id": 3,
+              "question_ja": "先月 / 今月 / （　来月　）",
+              "answer": "来月",
+              "explanation": "せんげつ・こんげつ・らいげつ"
+            },
+            {
+              "id": 4,
+              "question_ja": "昨年（去年） / 今年 / （　来年　）",
+              "answer": "来年",
+              "explanation": "きょねん・ことし・らいねん"
+            },
+            {
+              "id": 5,
+              "question_ja": "前回 / 今回 / （　次回　）",
+              "answer": "次回",
+              "explanation": "ぜんかい・こんかい・じかい"
+            },
+            {
+              "id": 6,
+              "question_ja": "過去 / 現在 / （　未来　）",
+              "answer": "未来",
+              "explanation": "かこ・げんざい・みらい"
+            },
+            {
+              "id": 7,
+              "question_ja": "前日 / 当日 / （　翌日　）",
+              "answer": "翌日",
+              "explanation": "ぜんじつ・とうじつ・よくじつ"
+            }
+          ]
+        },
+        {
+          "exercise_id": 3,
+          "title_ja": "（　）に言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "待ち合わせは、駅の改札口付近に午後3時（　前後　）でどうですか。",
+              "answer": "前後",
+              "explanation": "その時刻の少し前や後を表す「前後」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "誕生日の（　翌日　）に、友達からお祝いのカードが届いた。",
+              "answer": "翌日",
+              "explanation": "その日の次の日は「翌日」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "静かだった教室に（　突然　）先生が入ってきた。",
+              "answer": "突然",
+              "explanation": "予告なく急に起きる様子は「突然」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "（　間もなく　）1番線に電車がまいります。",
+              "answer": "間もなく",
+              "explanation": "まもなく（もうすぐ）電車が来ます。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（　平日　）は忙しいので、週末に掃除をする。",
+              "answer": "平日",
+              "explanation": "月曜から金曜などの平日は「平日」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "（　過去　）を振り返ることも大切だが、未来に向かって進もう。",
+              "answer": "過去",
+              "explanation": "過ぎ去った昔は「過去」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": 4,
+          "title_ja": "言葉の組み合わせを選びなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "1. （ a 現代 / b 日付 / c 年間 ）の予定を立てる",
+              "options": [
+                "a 現代",
+                "b 日付",
+                "c 年間"
+              ],
+              "answer": "c",
+              "explanation": "「年間の予定」"
+            },
+            {
+              "id": 2,
+              "question_ja": "1. 手紙に（ a 現代 / b 日付 / c 年間 ）を書く",
+              "options": [
+                "a 現代",
+                "b 日付",
+                "c 年間"
+              ],
+              "answer": "b",
+              "explanation": "「日付を書く」"
+            },
+            {
+              "id": 3,
+              "question_ja": "1. （ a 現代 / b 日付 / c 年間 ）の日本の若者",
+              "options": [
+                "a 現代",
+                "b 日付",
+                "c 年間"
+              ],
+              "answer": "a",
+              "explanation": "「現代の日本の若者」"
+            },
+            {
+              "id": 4,
+              "question_ja": "2. 桜が咲く（ a 以前 / b 時期 / c セット ）",
+              "options": [
+                "a 以前",
+                "b 時期",
+                "c セット"
+              ],
+              "answer": "b",
+              "explanation": "「桜が咲く時期」"
+            },
+            {
+              "id": 5,
+              "question_ja": "2. 目覚まし時計を（ a 以前 / b 時期 / c セット ）する",
+              "options": [
+                "a 以前",
+                "b 時期",
+                "c セット"
+              ],
+              "answer": "c",
+              "explanation": "「セットする」"
+            },
+            {
+              "id": 6,
+              "question_ja": "2. （ a 以前 / b 時期 / c セット ）ここに来たことがある",
+              "options": [
+                "a 以前",
+                "b 時期",
+                "c セット"
+              ],
+              "answer": "a",
+              "explanation": "「以前来たことがある」"
+            }
+          ]
+        },
+        {
+          "exercise_id": 5,
+          "title_ja": "レストランの求人広告の文章の（　）に適切な言葉を入れなさい。",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "（①短期）アルバイト募集！",
+              "answer": "短期",
+              "explanation": "短い期間のアルバイト「短期」。"
+            },
+            {
+              "id": 2,
+              "question_ja": "（②平日）のみの勤務も歓迎。",
+              "answer": "平日",
+              "explanation": "土日以外の週日「平日」。"
+            },
+            {
+              "id": 3,
+              "question_ja": "勤務（③日程）は相談可能。",
+              "answer": "日程",
+              "explanation": "スケジュール「日程」。"
+            },
+            {
+              "id": 4,
+              "question_ja": "（④週末）のみの勤務も可能。",
+              "answer": "週末",
+              "explanation": "土曜日・日曜日「週末」。"
+            },
+            {
+              "id": 5,
+              "question_ja": "夏休み（⑤期間）限定の特別時給。",
+              "answer": "期間",
+              "explanation": "一定の区切り「期間」。"
+            },
+            {
+              "id": 6,
+              "question_ja": "時間帯：（⑥日中）シフト（10:00〜17:00）、",
+              "answer": "日中",
+              "explanation": "昼間の時間帯「日中」。"
+            },
+            {
+              "id": 7,
+              "question_ja": "または（⑦夜間）シフト（17:00〜22:00）。",
+              "answer": "夜間",
+              "explanation": "夜の時間帯「夜間」。"
+            },
+            {
+              "id": 8,
+              "question_ja": "面接の（⑧日時）は後日連絡します。",
+              "answer": "日時",
+              "explanation": "日付と時刻「日時」。"
+            },
+            {
+              "id": 9,
+              "question_ja": "希望者は（⑨長期）勤務への変更も可能！",
+              "answer": "長期",
+              "explanation": "長い期間「長期」。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "review_05",
+        "part": 1,
+        "type": "review_test",
+        "topic_ja": "実力を試そう (20課〜21課)",
+        "topic_en": "Review Test 5 (Lessons 20-21)",
+        "pages": [
+          94,
+          95
+        ]
+      },
+      "sections": [],
+      "exercises": [
+        {
+          "exercise_id": "review_05-part1",
+          "title_ja": "問題Ⅰ 次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 1: Choose the best option (1, 2, 3, or 4) to fill in the blank.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "参加者の（　）を数える。",
+              "options": [
+                "1 量",
+                "2 数",
+                "3 回",
+                "4 席"
+              ],
+              "answer": "2",
+              "explanation": "人数や個数などのカウントは「数（かず）」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "時間が（　）ので、そろそろ帰りましょう。",
+              "options": [
+                "1 待った",
+                "2 止った",
+                "3 経った",
+                "4 過ぎった"
+              ],
+              "answer": "3",
+              "explanation": "時間が経過することは「経った（たった）」です。「過ぎる」の過去形は「過ぎた」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "売り上げが前年の2（　）になった。",
+              "options": [
+                "1 割",
+                "2 部",
+                "3 分",
+                "4 倍"
+              ],
+              "answer": "4",
+              "explanation": "元の量の2個分になることは「2倍（ばい）」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "買ったものの（　）を計算する。",
+              "options": [
+                "1 予定",
+                "2 平均",
+                "3 合計",
+                "4 記録"
+              ],
+              "answer": "3",
+              "explanation": "全てを足し合わせた総額は「合計（ごうけい）」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "朝6時に（　）が鳴るようにセットした。",
+              "options": [
+                "1 アラーム",
+                "2 ダイヤル",
+                "3 リズム",
+                "4 コース"
+              ],
+              "answer": "1",
+              "explanation": "目覚ましや時計の警告音は「アラーム」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "（現在）の時刻は、午後3時です。",
+              "options": [
+                "1 げんざい",
+                "2 げんだい",
+                "3 ぜんざい",
+                "4 ぜんだい"
+              ],
+              "answer": "1",
+              "explanation": "「現在」の正しい読み方は「げんざい」です。"
+            },
+            {
+              "id": 7,
+              "question_ja": "工事の（期間）は、来月までです。",
+              "options": [
+                "1 きかん",
+                "2 きげん",
+                "3 きごう",
+                "4 きこう"
+              ],
+              "answer": "1",
+              "explanation": "「期間」の正しい読み方は「きかん」です。"
+            },
+            {
+              "id": 8,
+              "question_ja": "無駄な出費を（減らさない）ように気をつける。",
+              "options": [
+                "1 とらさない",
+                "2 おとさない",
+                "3 へらさない",
+                "4 もらさない"
+              ],
+              "answer": "3",
+              "explanation": "「減らす」の否定形は「へらさない」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_05-part2",
+          "title_ja": "問題Ⅱ 次の言葉の意味に最も近いものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 2: Choose the option closest in meaning to the underlined phrase.",
+          "type": "synonym",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "スープに野菜がたっぷり入っている。",
+              "options": [
+                "1 ちょうど",
+                "2 少し",
+                "3 たくさん",
+                "4 きれいに"
+              ],
+              "answer": "3",
+              "explanation": "「たっぷり」は「分量が十分にたくさんある」という意味です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "すべての学生が集まった。",
+              "options": [
+                "1 大半の",
+                "2 全部の",
+                "3 多くの",
+                "4 少数の"
+              ],
+              "answer": "2",
+              "explanation": "「すべて」は「全部、残らず」という意味です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "日中は家にいません。",
+              "options": [
+                "1 昼ご飯の時間は",
+                "2 朝から夕方までは",
+                "3 夜の間は",
+                "4 毎日"
+              ],
+              "answer": "2",
+              "explanation": "「日中（にっちゅう）」は昼間、すなわち「朝から夕方まで」を指します。"
+            },
+            {
+              "id": 4,
+              "question_ja": "この部屋は広さが不足している。",
+              "options": [
+                "1 多すぎる",
+                "2 たりない",
+                "3 ちょうどいい",
+                "4 せまい"
+              ],
+              "answer": "2",
+              "explanation": "「不足している（ふそくしている）」は「足りない」という意味です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_05-part3",
+          "title_ja": "問題Ⅲ 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 3: Choose the best usage of the given word.",
+          "type": "usage",
+          "items": [
+            {
+              "id": 1,
+              "question_ja": "余る",
+              "options": [
+                "1 今日は暑くて汗がたくさん余った。",
+                "2 友達に余った本をあげた。",
+                "3 信号が赤に余ったので止まった。",
+                "4 お金が余ったら、貯金しておこう。"
+              ],
+              "answer": "4",
+              "explanation": "「余る（あまる）」は使った後に残ることを意味します。4の「お金が余ったら（余剰が出たら）貯金する」が正解です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "間もなく",
+              "options": [
+                "1 コンサートは、間もなく始まった。",
+                "2 間もなく雨が降ってきたので傘をさした。",
+                "3 昨日は間もなく寝てしまった。",
+                "4 彼は間もなく背が高い。"
+              ],
+              "answer": "1",
+              "explanation": "「間もなく（まもなく）」は「まもなく〜する / 始まってすぐ」の意です。1が自然です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "余裕",
+              "options": [
+                "1 この問題はとても余裕だ。",
+                "2 余裕な顔をして笑っていた。",
+                "3 今月は出費が多くて、新しいパソコンを買う余裕がない。",
+                "4 彼は足が速くて余裕だ。"
+              ],
+              "answer": "3",
+              "explanation": "「余裕（よゆう）」は時間や金銭などの精神的・物質的なゆとりを表します。3の「買う余裕がない」が適切です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "突然",
+              "options": [
+                "1 突然、毎朝ジョギングをしている。",
+                "2 突然な部屋ですね。",
+                "3 彼は突然に日本語が上手になった。",
+                "4 山田さんが、突然、私の家にやって来た。"
+              ],
+              "answer": "4",
+              "explanation": "「突然（とつぜん）」は予期せぬことが急に起こる様子を表す副詞です。4の「突然やって来た」が適切です。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
