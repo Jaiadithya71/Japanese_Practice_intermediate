@@ -1,15 +1,15 @@
 /* =======================================================
    NIHONGO INTERMEDIATE — home.js
-   Dashboard, Mastery Summary & Chapter Study Selection
+   5-Pillar Dashboard, Simultaneous Progress & Lesson Selection
    ======================================================= */
 
 import { state } from './state.js';
 import { getWordStatus } from './srs.js';
-import { startStudy } from './study.js';
 
 export function renderHomeView() {
-  renderLessonGrid();
   updateMasteryCounters();
+  renderLessonGrid();
+  updatePillarCards();
 }
 
 export function updateMasteryCounters() {
@@ -36,6 +36,17 @@ export function updateMasteryCounters() {
   if (elMastered) elMastered.textContent = mastered;
   if (elLearning) elLearning.textContent = learning;
   if (elHard) elHard.textContent = hard;
+}
+
+export function updatePillarCards() {
+  const vocabCount = Object.values(state.vocabDB).reduce((acc, words) => acc + words.length, 0);
+  const readingCount = Object.keys(state.readingDB).length;
+
+  const cardV = document.getElementById('pillar-vocab-count');
+  const cardR = document.getElementById('pillar-reading-count');
+
+  if (cardV) cardV.textContent = `${vocabCount} words (29 units)`;
+  if (cardR) cardR.textContent = `${readingCount} lessons (88 Qs)`;
 }
 
 export function setHomeGroup(group) {

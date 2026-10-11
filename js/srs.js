@@ -1,6 +1,6 @@
 /* =======================================================
    NIHONGO INTERMEDIATE — srs.js
-   Spaced Repetition System (SRS) & IST Routine Scheduler
+   Unified Cross-Pillar SRS Engine & IST Routine Scheduler
    ======================================================= */
 
 import {
@@ -63,15 +63,32 @@ export function snapToNextDueSlot(ms) {
   }
 }
 
-export function getWordKey(wordId, direction = 'ja-en') {
-  const rev = direction === 'en-ja' ? ':rev' : '';
-  return `W:${wordId}${rev}`;
+/**
+ * Standardized key generator for any item across the 5 pillars:
+ * Vocab: V:v2-01-001 (or V:v2-01-001:rev)
+ * Reading Question: R_Q:dokkai-n3-p4-49_q1
+ * Reading Rule: R_P:dokkai-n3-p1-01
+ * Grammar: G:bunpou-n3-01
+ * Kanji: K:kanji-n3-01
+ */
+export function formatItemKey(item) {
+  if (item.key) return item.key;
+  if (item.type === 'vocab' || item.book === 'vocab') {
+    const rev = state.studyDirection === 'en-ja' ? ':rev' : '';
+    return `V:${item.id}${rev}`;
+  }
+  if (item.type === 'reading_question' || item.question_ja) {
+    return `R_Q:${item.id || item.item_id || item.questionNumber}`;
+  }
+  if (item.type === 'reading_point') {
+    return `R_P:${item.id}`;
+  }
+  return `ITEM:${item.id}`;
 }
 
-export function getWordStats(wordId, direction = 'ja-en') {
-  const key = getWordKey(wordId, direction);
-  if (!state.stats[key]) {
-    state.stats[key] = {
+export function getItemStats(itemKey) {
+  if (!state.stats[itemKey]) {
+    state.stats[itemKey] = {
       correct: 0,
       incorrect: 0,
       weight: 1.0,
@@ -82,11 +99,11 @@ export function getWordStats(wordId, direction = 'ja-en') {
       isHard: false
     };
   }
-  return state.stats[key];
+  return state.stats[itemKey];
 }
 
-export function getWordStatus(wordId, direction = 'ja-en') {
-  const s = getWordStats(wordId, direction);
+export function getItemStatus(itemKey) {
+  const s = getItemStats(itemKey);
   if (s.isHard || (s.weight || 1.0) >= HARD_THRESHOLD) {
     return 'hard';
   }
@@ -99,20 +116,28 @@ export function getWordStatus(wordId, direction = 'ja-en') {
   return 'unseen';
 }
 
-/**
- * Grade 1 (Again), 2 (Hard), 3 (Good), 4 (Easy)
- */
-export function updateWordStats(wordId, grade, direction = 'ja-en') {
-  const s = getWordStats(wordId, direction);
+// Backwards compatibility for wordId
+export function getWordStats(wordId, direction = 'ja-en') {
+  const rev = direction === 'en-ja' ? ':rev' : '';
+  return getItemStats(`V:${wordId}${rev}`);
+}
+
+export function getWordStatus(wordId, direction = 'ja-en') {
+  const rev = direction === 'en-ja' ? ':rev' : '';
+  return getItemStatus(`V:${wordId}${rev}`);
+}
+
+export function updateItemStats(itemKey, grade) {
+  const s = getItemStats(itemKey);
   const now = Date.now();
 
-  if (grade === 1) { // Again / Wrong
+  if (grade === 1) { // Again / Missed
     s.incorrect = (s.incorrect || 0) + 1;
     s.weight = Math.min(WEIGHT_MAX, (s.weight || 1.0) * WEIGHT_WRONG);
     s.reps = 0;
-    s.interval = 1; // 1 day
+    s.interval = 1;
     s.easeFactor = Math.max(1.3, (s.easeFactor || DEFAULT_EASE_FACTOR) - 0.2);
-    s.nextDue = snapToNextDueSlot(now + 10 * 60 * 1000); // 10 mins or next slot
+    s.nextDue = snapToNextDueSlot(now + 10 * 60 * 1000);
   } else { // Correct
     s.correct = (s.correct || 0) + 1;
     s.reps = (s.reps || 0) + 1;
@@ -144,8 +169,19 @@ export function updateWordStats(wordId, grade, direction = 'ja-en') {
   updateSidebarStats();
 }
 
+// Backwards compatibility for wordId
+export function updateWordStats(wordId, grade, direction = 'ja-en') {
+  const rev = direction === 'en-ja' ? ':rev' : '';
+  updateItemStats(`V:${wordId}${rev}`, grade);
+}
+
 export function toggleWordHard(wordId, direction = 'ja-en') {
-  const s = getWordStats(wordId, direction);
+  const rev = direction === 'en-ja' ? ':rev' : '';
+  return toggleItemHard(`V:${wordId}${rev}`);
+}
+
+export function toggleItemHard(itemKey) {
+  const s = getItemStats(itemKey);
   s.isHard = !s.isHard;
   if (s.isHard) {
     s.weight = Math.max(s.weight || 1.0, HARD_THRESHOLD);
@@ -155,26 +191,108 @@ export function toggleWordHard(wordId, direction = 'ja-en') {
   return s.isHard;
 }
 
-export function getDueWordsCount() {
+// =======================================================
+// OMNI-REVIEW & MULTI-BOOK DUE ITEMS
+// =======================================================
+
+export function getDueItemsCount(pillar = 'all') {
   const now = Date.now();
   let count = 0;
-  for (const chId in state.vocabDB) {
-    for (const w of state.vocabDB[chId]) {
-      const s = getWordStats(w.id, state.studyDirection);
-      if (s.nextDue && s.nextDue <= now) {
-        count++;
+
+  // Book 1: Vocabulary
+  if (pillar === 'all' || pillar === 'vocab') {
+    for (const chId in state.vocabDB) {
+      for (const w of state.vocabDB[chId]) {
+        const key = `V:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
+        const s = state.stats[key];
+        if (s && s.nextDue && s.nextDue <= now) count++;
       }
     }
   }
+
+  // Book 2: Reading Questions & Points
+  if (pillar === 'all' || pillar === 'reading') {
+    for (const lid in state.readingDB) {
+      const lesson = state.readingDB[lid];
+      const questions = lesson.comprehensionQuestions || lesson.questions || [];
+      for (const q of questions) {
+        const qId = q.id || `${lid}_q${q.questionNumber || 1}`;
+        const key = `R_Q:${qId}`;
+        const s = state.stats[key];
+        if (s && s.nextDue && s.nextDue <= now) count++;
+      }
+    }
+  }
+
   return count;
+}
+
+export function getAllDueItems(pillar = 'all', limit = 20) {
+  const now = Date.now();
+  const pool = [];
+
+  // Book 1: Vocabulary
+  if (pillar === 'all' || pillar === 'vocab') {
+    for (const chId in state.vocabDB) {
+      for (const w of state.vocabDB[chId]) {
+        const key = `V:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
+        const s = state.stats[key];
+        if (s && s.nextDue && s.nextDue <= now) {
+          pool.push({ ...w, type: 'vocab', key, book: 'vocab' });
+        }
+      }
+    }
+  }
+
+  // Book 2: Reading Questions
+  if (pillar === 'all' || pillar === 'reading') {
+    for (const lid in state.readingDB) {
+      const lesson = state.readingDB[lid];
+      const questions = lesson.comprehensionQuestions || lesson.questions || [];
+      for (const q of questions) {
+        const qId = q.id || `${lid}_q${q.questionNumber || 1}`;
+        const key = `R_Q:${qId}`;
+        const s = state.stats[key];
+        if (s && s.nextDue && s.nextDue <= now) {
+          pool.push({
+            ...q,
+            id: qId,
+            lessonId: lid,
+            lessonTitle: lesson.title_ja || lesson.title,
+            type: 'reading_question',
+            key,
+            book: 'reading'
+          });
+        }
+      }
+    }
+  }
+
+  pool.sort(() => Math.random() - 0.5);
+  return limit === 'all' ? pool : pool.slice(0, parseInt(limit, 10));
 }
 
 export function updateSidebarStats() {
   let mastered = 0, learning = 0, hard = 0, unseen = 0;
 
+  // Track Vocabulary
   for (const chId in state.vocabDB) {
     for (const w of state.vocabDB[chId]) {
       const st = getWordStatus(w.id, state.studyDirection);
+      if (st === 'mastered') mastered++;
+      else if (st === 'hard') hard++;
+      else if (st === 'learning') learning++;
+      else unseen++;
+    }
+  }
+
+  // Track Reading Questions
+  for (const lid in state.readingDB) {
+    const lesson = state.readingDB[lid];
+    const questions = lesson.comprehensionQuestions || lesson.questions || [];
+    for (const q of questions) {
+      const qId = q.id || `${lid}_q${q.questionNumber || 1}`;
+      const st = getItemStatus(`R_Q:${qId}`);
       if (st === 'mastered') mastered++;
       else if (st === 'hard') hard++;
       else if (st === 'learning') learning++;
@@ -200,6 +318,13 @@ export function updateSidebarStats() {
 
   const dueEl = document.getElementById('due-count-num');
   if (dueEl) {
-    dueEl.textContent = getDueWordsCount();
+    dueEl.textContent = getDueItemsCount('all');
+  }
+
+  const dueVocab = getDueItemsCount('vocab');
+  const dueReading = getDueItemsCount('reading');
+  const subText = document.getElementById('due-breakdown-sub');
+  if (subText) {
+    subText.textContent = `${dueVocab} Vocab · ${dueReading} Reading Points`;
   }
 }

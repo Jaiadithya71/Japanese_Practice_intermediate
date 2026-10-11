@@ -1,10 +1,10 @@
 /* =======================================================
    NIHONGO INTERMEDIATE — study.js
-   Active Recall Flashcard Engine & Study Session Logic
+   Active Recall & Omni-Review Flashcard Engine (Multi-Pillar)
    ======================================================= */
 
 import { state } from './state.js';
-import { updateWordStats, toggleWordHard, getWordStatus, updateSidebarStats, snapToNextDueSlot } from './srs.js';
+import { updateItemStats, toggleItemHard, getItemStatus, getAllDueItems, formatItemKey } from './srs.js';
 import { showView } from './navigation.js';
 
 export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'home') {
@@ -20,18 +20,19 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
 
   for (const chId of chaptersToUse) {
     for (const w of (state.vocabDB[chId] || [])) {
+      const itemKey = `V:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
       if (isDrillHard) {
-        if (getWordStatus(w.id, state.studyDirection) === 'hard') {
-          pool.push(w);
+        if (getItemStatus(itemKey) === 'hard') {
+          pool.push({ ...w, type: 'vocab', key: itemKey, book: 'vocab' });
         }
       } else {
-        pool.push(w);
+        pool.push({ ...w, type: 'vocab', key: itemKey, book: 'vocab' });
       }
     }
   }
 
   if (pool.length === 0) {
-    alert(isDrillHard ? 'No hard words found in selected chapters!' : 'No words found in selected chapters!');
+    alert(isDrillHard ? 'No hard items found in selected chapters!' : 'No items found in selected chapters!');
     return;
   }
 
@@ -39,49 +40,41 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   pool.sort(() => Math.random() - 0.5);
 
   const batchSize = isDrillHard ? pool.length : Math.min(25, pool.length);
-  state.sessionWords = pool.slice(0, batchSize);
+  state.sessionItems = pool.slice(0, batchSize);
   state.sessionIdx = 0;
   state.sessionRight = 0;
-  state.sessionTotal = state.sessionWords.length;
+  state.sessionTotal = state.sessionItems.length;
   state.cardFlipped = false;
 
   showView('study');
   renderCard();
 }
 
-export function startDueReview() {
-  const now = Date.now();
-  const pool = [];
-
-  for (const chId in state.vocabDB) {
-    for (const w of state.vocabDB[chId]) {
-      const s = state.stats[`W:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`];
-      if (s && s.nextDue && s.nextDue <= now) {
-        pool.push(w);
-      }
-    }
-  }
+export function startDueReview(pillarFilter = 'all') {
+  state.omniDueFilter = pillarFilter;
+  const pool = getAllDueItems(pillarFilter, state.dueBatchSize);
 
   if (pool.length === 0) {
-    alert('No due words right now! Great job staying caught up.');
+    alert('No due items right now for this pillar! Great job staying caught up.');
     return;
   }
-
-  pool.sort(() => Math.random() - 0.5);
-  const limit = state.dueBatchSize === 'all' ? pool.length : parseInt(state.dueBatchSize, 10);
 
   state.studyMode = 'flashcard';
   state.studyIsDrillHard = false;
   state.isDueReviewMode = true;
   state.drillOrigin = 'home';
-  state.sessionWords = pool.slice(0, limit);
+  state.sessionItems = pool;
   state.sessionIdx = 0;
   state.sessionRight = 0;
-  state.sessionTotal = state.sessionWords.length;
+  state.sessionTotal = pool.length;
   state.cardFlipped = false;
 
   showView('study');
   renderCard();
+}
+
+export function startOmniReview() {
+  startDueReview('all');
 }
 
 export function renderCard() {
@@ -90,61 +83,102 @@ export function renderCard() {
     return;
   }
 
-  const w = state.sessionWords[state.sessionIdx];
-  const isHard = getWordStatus(w.id, state.studyDirection) === 'hard';
+  const item = state.sessionItems[state.sessionIdx];
+  const itemKey = formatItemKey(item);
+  const isHard = getItemStatus(itemKey) === 'hard';
 
-  // Update progress bar
+  // Progress Bar
   const fill = document.getElementById('study-progress-fill');
   const count = document.getElementById('study-progress-count');
   if (fill) fill.style.width = `${((state.sessionIdx) / state.sessionTotal) * 100}%`;
   if (count) count.textContent = `${state.sessionIdx + 1} / ${state.sessionTotal}`;
-
-  const meta = state.chapterMetadata[w.chapter] || {};
-  const lessonTag = document.getElementById('card-lesson-tag');
-  if (lessonTag) lessonTag.textContent = `${meta.topic_ja || w.chapter} · ${w.section_title_ja || ''}`;
 
   const flameBtn = document.getElementById('card-hard-flame');
   if (flameBtn) {
     flameBtn.className = `btn-hard-flame${isHard ? ' is-hard' : ''}`;
   }
 
+  const lessonTag = document.getElementById('card-lesson-tag');
   const termEl = document.getElementById('card-term');
   const meaningEl = document.getElementById('card-meaning');
   const exBox = document.getElementById('card-example-box');
   const exJa = document.getElementById('card-ex-ja');
   const exEn = document.getElementById('card-ex-en');
 
-  // Side A (Prompt) vs Side B (Answer)
+  // ==========================================
+  // CASE A: READING COMPREHENSION QUESTION
+  // ==========================================
+  if (item.type === 'reading_question') {
+    if (lessonTag) lessonTag.textContent = `読解 · ${item.lessonTitle || 'Passage Question'}`;
+
+    if (!state.cardFlipped) {
+      termEl.innerHTML = `<div style="font-size: 1.15rem; text-align: left; line-height: 1.6;">${item.question_ja || ''}</div>`;
+      meaningEl.innerHTML = `
+        <div style="font-size: 0.95rem; text-align: left; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem;">
+          ${(item.options || []).map((opt, i) => `<div style="color: var(--text-muted);"><strong style="color: var(--accent);">${i + 1}.</strong> ${opt}</div>`).join('')}
+        </div>
+      `;
+      if (exBox) exBox.style.display = 'none';
+      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal correct answer & rationale';
+      document.getElementById('grade-controls').style.display = 'none';
+      document.getElementById('card-controls-hint').style.display = 'block';
+    } else {
+      termEl.innerHTML = `
+        <div style="font-size: 1.15rem; text-align: left; line-height: 1.6;">
+          ${item.question_ja || ''}
+          <div style="color: var(--green); font-size: 1.05rem; margin-top: 0.5rem; font-weight: 700;">
+            <i class="fa-solid fa-circle-check"></i> Correct: Option ${item.correctAnswer} (${(item.options || [])[item.correctAnswer - 1] || ''})
+          </div>
+        </div>
+      `;
+      meaningEl.innerHTML = '';
+      if (exBox && exJa && exEn) {
+        exBox.style.display = 'block';
+        exJa.textContent = item.explanation_ja || '';
+        exEn.textContent = item.explanation_en || '';
+      }
+      document.getElementById('card-controls-hint').style.display = 'none';
+      document.getElementById('grade-controls').style.display = 'grid';
+    }
+    return;
+  }
+
+  // ==========================================
+  // CASE B: VOCABULARY TERM
+  // ==========================================
+  const meta = state.chapterMetadata[item.chapter] || {};
+  if (lessonTag) lessonTag.textContent = `${meta.topic_ja || item.chapter} · ${item.section_title_ja || ''}`;
+
   if (!state.cardFlipped) {
     if (state.studyDirection === 'ja-en') {
-      termEl.innerHTML = state.showFurigana ? (w.ruby_html || w.term_ja) : w.term_ja;
+      termEl.innerHTML = state.showFurigana ? (item.ruby_html || item.term_ja) : item.term_ja;
       meaningEl.textContent = 'Tap card to reveal meaning';
       meaningEl.style.color = 'var(--text-dim)';
       if (exBox) exBox.style.display = 'none';
     } else {
-      termEl.innerHTML = `<span style="font-size: 1.8rem;">${w.meaning_en}</span>`;
+      termEl.innerHTML = `<span style="font-size: 1.8rem;">${item.meaning_en}</span>`;
       meaningEl.textContent = 'Tap card to reveal Japanese';
       meaningEl.style.color = 'var(--text-dim)';
       if (exBox) exBox.style.display = 'none';
     }
+    document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal';
     document.getElementById('card-controls-hint').style.display = 'block';
     document.getElementById('grade-controls').style.display = 'none';
   } else {
-    // Flipped state
     if (state.studyDirection === 'ja-en') {
-      termEl.innerHTML = w.ruby_html || w.term_ja;
-      meaningEl.textContent = w.meaning_en;
+      termEl.innerHTML = item.ruby_html || item.term_ja;
+      meaningEl.textContent = item.meaning_en;
       meaningEl.style.color = 'var(--text)';
     } else {
-      termEl.innerHTML = w.ruby_html || w.term_ja;
-      meaningEl.textContent = `${w.meaning_en} ${w.meaning_zh ? `(${w.meaning_zh})` : ''}`;
+      termEl.innerHTML = item.ruby_html || item.term_ja;
+      meaningEl.textContent = `${item.meaning_en} ${item.meaning_zh ? `(${item.meaning_zh})` : ''}`;
       meaningEl.style.color = 'var(--text)';
     }
 
-    if (w.example_ja && exBox && exJa && exEn) {
+    if (item.example_ja && exBox && exJa && exEn) {
       exBox.style.display = 'block';
-      exJa.textContent = w.example_ja;
-      exEn.textContent = w.example_en || '';
+      exJa.textContent = item.example_ja;
+      exEn.textContent = item.example_en || '';
     } else if (exBox) {
       exBox.style.display = 'none';
     }
@@ -162,8 +196,9 @@ export function flipCard() {
 export function gradeCard(grade) {
   if (state.sessionIdx >= state.sessionTotal) return;
 
-  const w = state.sessionWords[state.sessionIdx];
-  updateWordStats(w.id, grade, state.studyDirection);
+  const item = state.sessionItems[state.sessionIdx];
+  const itemKey = formatItemKey(item);
+  updateItemStats(itemKey, grade);
 
   if (grade >= 3) {
     state.sessionRight++;
@@ -176,8 +211,9 @@ export function gradeCard(grade) {
 
 export function toggleCurrentCardHard() {
   if (state.sessionIdx >= state.sessionTotal) return;
-  const w = state.sessionWords[state.sessionIdx];
-  const newHard = toggleWordHard(w.id, state.studyDirection);
+  const item = state.sessionItems[state.sessionIdx];
+  const itemKey = formatItemKey(item);
+  const newHard = toggleItemHard(itemKey);
   const flameBtn = document.getElementById('card-hard-flame');
   if (flameBtn) {
     flameBtn.className = `btn-hard-flame${newHard ? ' is-hard' : ''}`;
@@ -186,8 +222,8 @@ export function toggleCurrentCardHard() {
 
 export function playCurrentCardAudio() {
   if (state.sessionIdx >= state.sessionTotal) return;
-  const w = state.sessionWords[state.sessionIdx];
-  const text = w.reading || w.term_ja;
+  const item = state.sessionItems[state.sessionIdx];
+  const text = item.reading || item.term_ja || item.question_ja;
   if ('speechSynthesis' in window && text) {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -207,7 +243,7 @@ function renderStudySummary() {
     <div class="study-summary-card">
       <i class="fa-solid fa-trophy summary-trophy"></i>
       <h2>Session Complete!</h2>
-      <p style="color: var(--text-muted);">You reviewed ${state.sessionTotal} intermediate vocabulary words.</p>
+      <p style="color: var(--text-muted);">You reviewed ${state.sessionTotal} items across your active exam prep queue.</p>
 
       <div class="summary-stats-row">
         <div class="summary-stat-box">
@@ -226,7 +262,7 @@ function renderStudySummary() {
 
       <div style="display: flex; gap: 1rem; margin-top: 1rem;">
         <button class="btn btn-primary" onclick="startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')">
-          <i class="fa-solid fa-rotate-right"></i> Study Again
+          <i class="fa-solid fa-rotate-right"></i> Review Again
         </button>
         <button class="btn btn-ghost" onclick="exitStudy()">
           <i class="fa-solid fa-arrow-left"></i> Return
@@ -240,7 +276,6 @@ function renderStudySummary() {
 
 export function exitStudy() {
   showView(state.drillOrigin || 'home');
-  // Re-inject flashcard layout if next session starts
   resetStudyViewHTML();
 }
 

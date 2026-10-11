@@ -7,6 +7,8 @@ import { state } from './state.js';
 import { renderHomeView } from './home.js';
 import { renderChapterChips, renderVocabList, updateHardWordsView } from './vocab-browser.js';
 
+import { renderReadingView } from './reader.js';
+
 export function showView(viewId) {
   state.currentView = viewId;
 
@@ -35,6 +37,8 @@ export function showView(viewId) {
   } else if (viewId === 'vocab') {
     renderChapterChips();
     renderVocabList();
+  } else if (viewId === 'reading') {
+    renderReadingView();
   } else if (viewId === 'hard-words') {
     updateHardWordsView();
   }

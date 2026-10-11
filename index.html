@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nihongo Intermediate — JLPT N3 SRS & Dokkai Trainer</title>
-  <meta name="description" content="Personal Japanese Intermediate Learning & Dokkai Trainer with Spaced Repetition for JLPT N3." />
+  <title>Nihongo Intermediate — JLPT N3 5-Pillar Exam Master Suite</title>
+  <meta name="description" content="Simultaneous 5-Pillar JLPT N3 Intermediate Mastery Suite with Cross-Pillar Spaced Repetition." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,47 +18,67 @@
   <link rel="stylesheet" href="css/navigation.css" />
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/vocab.css" />
+  <link rel="stylesheet" href="css/reader.css" />
   <link rel="stylesheet" href="css/study.css" />
   <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
-  <!-- ===== SIDEBAR NAVIGATION ===== -->
+  <!-- ===== SIDEBAR NAVIGATION (5 PILLARS) ===== -->
   <aside id="sidebar">
     <div class="sidebar-logo">
       <div class="logo-badge">N3</div>
       <div class="logo-text">
-        Nihongo<br><small>Intermediate</small>
+        Nihongo<br><small>Intermediate Suite</small>
       </div>
     </div>
 
     <nav class="sidebar-nav">
       <button class="nav-btn active" data-view="home" onclick="showView('home')">
         <i class="fa-solid fa-house"></i>
-        <span>Home</span>
+        <span>Exam Hub</span>
       </button>
 
+      <!-- Book 1 -->
       <button class="nav-btn" data-view="vocab" onclick="showView('vocab')">
         <i class="fa-solid fa-book-bookmark"></i>
-        <span>Vocabulary</span>
+        <span>1. 語彙 (Vocab)</span>
+        <span class="badge badge-green">Ready</span>
       </button>
 
-      <button class="nav-btn" data-view="hard-words" onclick="showView('hard-words')">
-        <i class="fa-solid fa-fire"></i>
-        <span>Hard Words</span>
-        <span id="hard-count-badge" class="badge badge-red hide">0</span>
-      </button>
-
-      <button class="nav-btn" data-view="reading" onclick="alert('Dokkai Reading Module is being integrated in Iteration 2!')">
+      <!-- Book 2 -->
+      <button class="nav-btn" data-view="reading" onclick="showView('reading')">
         <i class="fa-solid fa-book-open-reader"></i>
-        <span>Dokkai (Reading)</span>
-        <span class="badge badge-cyan">Soon</span>
+        <span>2. 読解 (Reading)</span>
+        <span class="badge badge-green">Ready</span>
       </button>
 
-      <button class="nav-btn" data-view="mock" onclick="alert('JLPT N3 Mock Exam Simulator is being integrated in Iteration 4!')">
-        <i class="fa-solid fa-file-signature"></i>
-        <span>Mock Exams</span>
-        <span class="badge badge-amber">Soon</span>
+      <!-- Book 3 -->
+      <button class="nav-btn" data-view="grammar" onclick="alert('Book 3: Grammar transcription in progress. Staged slot ready!')">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <span>3. 文法 (Grammar)</span>
+        <span class="badge badge-amber">Building</span>
+      </button>
+
+      <!-- Book 4 -->
+      <button class="nav-btn" data-view="kanji" onclick="alert('Book 4: Kanji transcription in progress. Staged slot ready!')">
+        <i class="fa-solid fa-shapes"></i>
+        <span>4. 漢字 (Kanji)</span>
+        <span class="badge badge-amber">Building</span>
+      </button>
+
+      <!-- Book 5 -->
+      <button class="nav-btn" data-view="listening" onclick="alert('Book 5: Listening transcription in progress. Staged slot ready!')">
+        <i class="fa-solid fa-headphones"></i>
+        <span>5. 聴解 (Listening)</span>
+        <span class="badge badge-amber">Building</span>
+      </button>
+
+      <!-- Cross-Pillar Weak Points Desk -->
+      <button class="nav-btn" data-view="hard-words" onclick="showView('hard-words')" style="margin-top: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.85rem;">
+        <i class="fa-solid fa-fire"></i>
+        <span>Weak Points</span>
+        <span id="hard-count-badge" class="badge badge-red hide">0</span>
       </button>
     </nav>
 
@@ -87,71 +107,95 @@
   <main id="main">
 
     <!-- ==============================================
-         VIEW 1: HOME DASHBOARD
+         VIEW 1: HOME DASHBOARD (EXAM HUB)
          ============================================== -->
     <section id="view-home" class="view active">
       <div class="dashboard-hero">
         <div class="hero-text">
-          <h2>JLPT N3 Intermediate Hub</h2>
-          <p>Master 1,250+ intermediate words across topic-based themes and grammatical characteristics with intelligent active recall.</p>
+          <h2>JLPT N3 Multi-Pillar Exam Suite</h2>
+          <p>Study all 5 intermediate pillars simultaneously with cross-book Spaced Repetition to guarantee long-term retention before exam day.</p>
           <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin-top: 0.5rem;"></div>
         </div>
         <div class="hero-actions">
-          <button class="btn btn-primary" id="btn-start-selected-study" onclick="startStudy('flashcard', false, 'home')">
-            <i class="fa-solid fa-play"></i> Study All Units
+          <button class="btn btn-primary" onclick="startOmniReview()">
+            <i class="fa-solid fa-bolt"></i> Daily Omni-Review
           </button>
         </div>
       </div>
 
-      <!-- Due Reviews Banner -->
+      <!-- Unified Due Reviews Banner -->
       <div class="due-banner">
         <div class="due-info">
           <div class="due-icon-box">
             <i class="fa-solid fa-clock-rotate-left"></i>
           </div>
           <div class="due-text">
-            <h3>Scheduled Due Reviews: <span id="due-count-num">0</span></h3>
-            <p>Aligned with your daily study routine (7:30 AM & 5:45 PM IST slots)</p>
+            <h3>Scheduled Exam Due Reviews: <span id="due-count-num">0</span></h3>
+            <p id="due-breakdown-sub">Aligned with daily routine (7:30 AM & 5:45 PM IST slots)</p>
           </div>
         </div>
-        <button class="btn btn-primary" onclick="startDueReview()">
-          <i class="fa-solid fa-bolt"></i> Start Due Review
-        </button>
-      </div>
-
-      <!-- Mastery Stats Grid -->
-      <div class="stats-grid">
-        <div class="stat-card">
-          <span class="stat-card-title">Total Vocabulary <i class="fa-solid fa-book"></i></span>
-          <span class="stat-card-value" id="dash-total-words">1,251</span>
-          <span class="stat-card-sub">29 Textbook Chapters</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-card-title">Mastered <i class="fa-solid fa-circle-check" style="color: var(--green);"></i></span>
-          <span class="stat-card-value" id="dash-mastered-words" style="color: var(--green);">0</span>
-          <span class="stat-card-sub">3+ Correct & low weight</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-card-title">Learning <i class="fa-solid fa-seedling" style="color: var(--amber);"></i></span>
-          <span class="stat-card-value" id="dash-learning-words" style="color: var(--amber);">0</span>
-          <span class="stat-card-sub">In active repetition</span>
-        </div>
-        <div class="stat-card">
-          <span class="stat-card-title">Struggling <i class="fa-solid fa-fire" style="color: var(--red);"></i></span>
-          <span class="stat-card-value" id="dash-hard-words" style="color: var(--red);">0</span>
-          <span class="stat-card-sub">High weight / Hard words</span>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-primary" onclick="startDueReview('all')">
+            <i class="fa-solid fa-play"></i> Omni-Review (All)
+          </button>
+          <button class="btn btn-ghost btn-sm" onclick="startDueReview('vocab')" title="Review Vocabulary items only">Vocab Only</button>
+          <button class="btn btn-ghost btn-sm" onclick="startDueReview('reading')" title="Review Reading points only">Reading Only</button>
         </div>
       </div>
 
-      <!-- Unit Selector Header -->
+      <!-- 5-PILLAR OVERVIEW CARDS -->
       <div class="view-header" style="margin-bottom: 1rem;">
         <div class="view-title-group">
-          <h3 style="font-size: 1.3rem; color: #fff;">Textbook Units & Chapters</h3>
-          <p>Select chapters to practice or drill them all together.</p>
+          <h3 style="font-size: 1.3rem; color: #fff;">The 5 JLPT N3 Pillars</h3>
+          <p>Track coverage and simultaneous mastery across all exam sections.</p>
+        </div>
+      </div>
+
+      <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr); margin-bottom: 2rem;">
+        <!-- Book 1 -->
+        <div class="stat-card" style="border-left: 3px solid var(--accent); cursor: pointer;" onclick="showView('vocab')">
+          <span class="stat-card-title">1. 語彙 (Vocab) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-vocab-count">1,251 words</span>
+          <span class="stat-card-sub">29 Textbook Units</span>
+        </div>
+        <!-- Book 2 -->
+        <div class="stat-card" style="border-left: 3px solid var(--cyan); cursor: pointer;" onclick="showView('reading')">
+          <span class="stat-card-title">2. 読解 (Reading) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-reading-count">49 lessons</span>
+          <span class="stat-card-sub">88 Exam Questions</span>
+        </div>
+        <!-- Book 3 -->
+        <div class="stat-card" style="border-left: 3px solid var(--amber); opacity: 0.85;">
+          <span class="stat-card-title">3. 文法 (Grammar) <span class="badge badge-amber" style="font-size: 0.65rem;">Building</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;">~120 items</span>
+          <span class="stat-card-sub">Connection Rules</span>
+        </div>
+        <!-- Book 4 -->
+        <div class="stat-card" style="border-left: 3px solid #ec4899; opacity: 0.85;">
+          <span class="stat-card-title">4. 漢字 (Kanji) <span class="badge badge-amber" style="font-size: 0.65rem;">Building</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;">~370 kanji</span>
+          <span class="stat-card-sub">2-Way Active Recall</span>
+        </div>
+        <!-- Book 5 -->
+        <div class="stat-card" style="border-left: 3px solid #8b5cf6; opacity: 0.85;">
+          <span class="stat-card-title">5. 聴解 (Audio) <span class="badge badge-amber" style="font-size: 0.65rem;">Building</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;">5 Tasks</span>
+          <span class="stat-card-sub">Quick Response Audio</span>
+        </div>
+      </div>
+
+      <!-- Quick Vocabulary Practice Units -->
+      <div class="view-header" style="margin-bottom: 1rem;">
+        <div class="view-title-group">
+          <h3 style="font-size: 1.3rem; color: #fff;">Vocabulary Units Practice</h3>
+          <p>Select units to drill or study them with active recall.</p>
         </div>
         <div style="display: flex; gap: 0.5rem;">
           <button class="btn btn-sm btn-ghost" onclick="selectAllChaptersInGroup()">Select All</button>
           <button class="btn btn-sm btn-ghost" onclick="clearChapterSelection()">Clear</button>
+          <button class="btn btn-sm btn-primary" id="btn-start-selected-study" onclick="startStudy('flashcard', false, 'home')">
+            <i class="fa-solid fa-play"></i> Study Selected
+          </button>
         </div>
       </div>
 
@@ -170,13 +214,13 @@
     </section>
 
     <!-- ==============================================
-         VIEW 2: VOCABULARY BROWSER
+         VIEW 2: VOCABULARY BROWSER (BOOK 1)
          ============================================== -->
     <section id="view-vocab" class="view">
       <div class="view-header">
         <div class="view-title-group">
-          <h1>Vocabulary Browser</h1>
-          <p>Explore vocabulary, inspect furigana, play pronunciation, and mark struggling terms.</p>
+          <h1>Book 1: 語彙 (Vocabulary Browser)</h1>
+          <p>Explore 1,251 intermediate words, inspect furigana, play audio, and flag hard terms.</p>
         </div>
         <div style="display: flex; gap: 0.75rem; align-items: center;">
           <button class="btn btn-sm btn-ghost" id="btn-toggle-furigana" onclick="toggleFurigana()">
@@ -197,18 +241,15 @@
           <span class="badge badge-accent" id="vocab-count-badge">0 words</span>
         </div>
 
-        <!-- Group Selector -->
         <div class="group-tabs" style="margin-bottom: 0;">
           <button class="group-tab active" id="vgroup-topic" onclick="setChapterGroup('topic')">Part 1: Topics (Ch 1–21)</button>
           <button class="group-tab" id="vgroup-char" onclick="setChapterGroup('characteristics')">Part 2: Characteristics (Ch 1–8)</button>
         </div>
 
-        <!-- Chapter Chips -->
         <div class="chapter-chips-wrap" id="chapter-chips">
           <!-- Rendered dynamically -->
         </div>
 
-        <!-- Filter Tabs -->
         <div class="vocab-filter-tabs">
           <button class="vf-tab active" id="vf-all" onclick="setVocabFilter('all')">All</button>
           <button class="vf-tab" id="vf-learning" onclick="setVocabFilter('learning')">Learning</button>
@@ -218,39 +259,78 @@
       </div>
 
       <div class="vocab-list" id="vocab-list-container">
-        <!-- Rendered dynamically by vocab-browser.js -->
+        <!-- Rendered dynamically -->
       </div>
     </section>
 
     <!-- ==============================================
-         VIEW 3: HARD WORDS REVISION
+         VIEW 3: DOKKAI READING COMPREHENSION (BOOK 2)
+         ============================================== -->
+    <section id="view-reading" class="view">
+      <!-- Section A: Lesson List & Browser -->
+      <div id="dokkai-list-section">
+        <div class="view-header">
+          <div class="view-title-group">
+            <h1>Book 2: 読解 (Reading Comprehension)</h1>
+            <p>Sentence-by-sentence reading, grammar clause parsing, and official JLPT N3 comprehension quizzes.</p>
+          </div>
+          <span class="badge badge-cyan" id="dokkai-count-badge">49 Lessons</span>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="reader-category-tabs" id="reader-category-tabs">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <div class="dokkai-grid" id="dokkai-grid-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Section B: Active Reading Workspace -->
+      <div id="dokkai-workspace-section" style="display: none;">
+        <div id="dokkai-workspace-container">
+          <!-- Rendered dynamically by reader.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         VIEW 4: UNIVERSAL EXAM WEAK POINTS DESK
          ============================================== -->
     <section id="view-hard-words" class="view">
       <div class="hard-words-header">
         <div class="hard-words-title">
           <i class="fa-solid fa-fire hard-flame-icon"></i>
           <div>
-            <h2 style="font-size: 1.5rem; color: #fff;">Hard Words Revision Desk</h2>
-            <p style="color: var(--text-muted); font-size: 0.9rem;" id="hard-words-header-count">0 Words Need Revision</p>
+            <h2 style="font-size: 1.5rem; color: #fff;">Exam Weak Points Revision Desk</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;" id="hard-words-header-count">0 Exam Weak Points Need Revision</p>
           </div>
         </div>
         <div style="display: flex; gap: 0.75rem;">
           <button class="btn btn-primary" onclick="drillAllHardWords()">
-            <i class="fa-solid fa-rotate"></i> Drill All Hard Words
+            <i class="fa-solid fa-rotate"></i> Drill All Weak Points
           </button>
           <button class="btn btn-ghost" onclick="toggleRevealHardWords()">
-            <i class="fa-solid fa-eye"></i> Toggle Meanings
+            <i class="fa-solid fa-eye"></i> Toggle Explanations
           </button>
         </div>
       </div>
 
+      <!-- Filter Tabs: All, Vocab, Reading -->
+      <div class="vocab-filter-tabs" style="margin-bottom: 1.5rem;">
+        <button class="vf-tab wp-tab active" id="wpt-all" onclick="setWeakPointsFilter('all')">All Weak Points</button>
+        <button class="vf-tab wp-tab" id="wpt-vocab" onclick="setWeakPointsFilter('vocab')">Vocabulary Words</button>
+        <button class="vf-tab wp-tab" id="wpt-reading" onclick="setWeakPointsFilter('reading')">Dokkai Questions</button>
+      </div>
+
       <div class="vocab-list" id="hard-words-list">
-        <!-- Rendered dynamically by vocab-browser.js -->
+        <!-- Rendered dynamically -->
       </div>
     </section>
 
     <!-- ==============================================
-         VIEW 4: ACTIVE RECALL STUDY SESSION
+         VIEW 5: ACTIVE RECALL STUDY SESSION (SRS)
          ============================================== -->
     <section id="view-study" class="view">
       <div class="study-header">
@@ -266,7 +346,6 @@
         <div style="width: 60px;"></div>
       </div>
 
-      <!-- Flashcard Dynamic Container -->
       <div id="study-card-container">
         <div class="flashcard-stage" onclick="flipCard()">
           <div class="flashcard" id="flashcard">
@@ -276,7 +355,7 @@
                 <button class="btn-sm btn-ghost" onclick="playCurrentCardAudio()" title="Listen to pronunciation">
                   <i class="fa-solid fa-volume-high"></i>
                 </button>
-                <button class="btn-hard-flame" id="card-hard-flame" onclick="toggleCurrentCardHard()" title="Toggle Hard Word">
+                <button class="btn-hard-flame" id="card-hard-flame" onclick="toggleCurrentCardHard()" title="Toggle Hard Item">
                   <i class="fa-solid fa-fire"></i>
                 </button>
               </div>
@@ -298,7 +377,7 @@
         </div>
       </div>
 
-      <!-- Grading Actions (Shown upon flip) -->
+      <!-- Grading Actions -->
       <div class="grade-controls" id="grade-controls" style="display: none;">
         <button class="btn-grade grade-again" onclick="gradeCard(1)">
           <span class="grade-label">Again [1]</span>
@@ -325,19 +404,23 @@
   <nav class="mobile-nav-bar">
     <button class="mobile-nav-item active" data-view="home" onclick="showView('home')">
       <i class="fa-solid fa-house"></i>
-      <span>Home</span>
+      <span>Hub</span>
     </button>
     <button class="mobile-nav-item" data-view="vocab" onclick="showView('vocab')">
       <i class="fa-solid fa-book-bookmark"></i>
       <span>Vocab</span>
     </button>
+    <button class="mobile-nav-item" data-view="reading" onclick="showView('reading')">
+      <i class="fa-solid fa-book-open-reader"></i>
+      <span>Dokkai</span>
+    </button>
     <button class="mobile-nav-item" data-view="hard-words" onclick="showView('hard-words')">
       <i class="fa-solid fa-fire"></i>
-      <span>Hard</span>
+      <span>Weak</span>
     </button>
-    <button class="mobile-nav-item" data-view="study" onclick="startStudy('flashcard', false, 'home')">
+    <button class="mobile-nav-item" data-view="study" onclick="startOmniReview()">
       <i class="fa-solid fa-play"></i>
-      <span>Study</span>
+      <span>Review</span>
     </button>
   </nav>
 

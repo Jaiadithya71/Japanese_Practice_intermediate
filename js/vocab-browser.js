@@ -194,57 +194,117 @@ export function playAudio(text) {
 }
 
 // =======================================================
-// HARD WORDS VIEW LOGIC
+// UNIVERSAL EXAM WEAK POINTS DESK
 // =======================================================
+
+export function setWeakPointsFilter(filter) {
+  state.weakPointsFilter = filter;
+  document.querySelectorAll('.wp-tab').forEach(t => t.classList.remove('active'));
+  const activeTab = document.getElementById(`wpt-${filter}`);
+  if (activeTab) activeTab.classList.add('active');
+  updateHardWordsView();
+}
 
 export function updateHardWordsView() {
   const container = document.getElementById('hard-words-list');
   if (!container) return;
   container.innerHTML = '';
 
-  const hardWords = [];
-  for (const chId in state.vocabDB) {
-    for (const w of state.vocabDB[chId]) {
-      if (getWordStatus(w.id, state.studyDirection) === 'hard') {
-        hardWords.push(w);
+  const weakItems = [];
+
+  // 1. Vocabulary Hard Words
+  if (state.weakPointsFilter === 'all' || state.weakPointsFilter === 'vocab') {
+    for (const chId in state.vocabDB) {
+      for (const w of state.vocabDB[chId]) {
+        const itemKey = `V:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
+        if (getWordStatus(w.id, state.studyDirection) === 'hard') {
+          weakItems.push({ ...w, type: 'vocab', key: itemKey, book: 'vocab' });
+        }
+      }
+    }
+  }
+
+  // 2. Reading Missed Questions
+  if (state.weakPointsFilter === 'all' || state.weakPointsFilter === 'reading') {
+    for (const lid in state.readingDB) {
+      const lesson = state.readingDB[lid];
+      const questions = lesson.comprehensionQuestions || lesson.questions || [];
+      for (const q of questions) {
+        const qId = q.id || `${lid}_q${q.questionNumber || 1}`;
+        const itemKey = `R_Q:${qId}`;
+        const s = state.stats[itemKey];
+        if (s && (s.isHard || (s.weight || 1.0) >= 1.8 || s.incorrect > 0)) {
+          weakItems.push({
+            ...q,
+            id: qId,
+            lessonId: lid,
+            lessonTitle: lesson.title_ja || lesson.title,
+            type: 'reading_question',
+            key: itemKey,
+            book: 'reading'
+          });
+        }
       }
     }
   }
 
   const hardHeaderCount = document.getElementById('hard-words-header-count');
-  if (hardHeaderCount) hardHeaderCount.textContent = `${hardWords.length} Words Need Revision`;
+  if (hardHeaderCount) {
+    hardHeaderCount.textContent = `${weakItems.length} Exam Weak Points Need Revision`;
+  }
 
-  if (hardWords.length === 0) {
+  if (weakItems.length === 0) {
     container.innerHTML = `
       <div class="empty-state">
         <i class="fa-solid fa-fire" style="color: var(--text-dim);"></i>
-        <h3>No Hard Words Flagged</h3>
-        <p>Words you miss in study sessions or flag with the 🔥 flame button appear here for targeted drill.</p>
+        <h3>No Exam Weak Points Flagged</h3>
+        <p>Words you struggle with or Dokkai questions you miss will appear here for targeted revision.</p>
       </div>`;
     return;
   }
 
-  hardWords.forEach(w => {
+  weakItems.forEach(item => {
     const card = document.createElement('div');
     card.className = 'vocab-card';
-    card.innerHTML = `
-      <div class="vocab-main">
-        <div class="vocab-term-row">
-          <span class="vocab-term font-ja">${w.ruby_html || w.term_ja}</span>
-          ${w.part_of_speech ? `<span class="vocab-pos">${w.part_of_speech}</span>` : ''}
+
+    if (item.type === 'reading_question') {
+      card.innerHTML = `
+        <div class="vocab-main">
+          <div class="vocab-term-row">
+            <span class="vocab-pos" style="background: var(--accent-light); color: var(--accent);">読解 Question</span>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">${item.lessonTitle || ''}</span>
+          </div>
+          <div style="font-size: 1.05rem; font-weight: 700; color: #fff; margin-top: 0.25rem;" class="font-ja">${item.question_ja || ''}</div>
+          <div class="vocab-meaning hard-word-def" style="margin-top: 0.4rem; color: var(--green);">
+            <strong>Correct: Option ${item.correctAnswer}</strong> — ${item.explanation_ja || ''}
+          </div>
         </div>
-        <div class="vocab-meaning hard-word-def">${w.meaning_en}</div>
-        ${w.example_ja ? `<div class="vocab-example font-ja">${w.example_ja}</div>` : ''}
-      </div>
-      <div class="vocab-actions">
-        <button class="btn-sm btn-ghost" onclick="playAudio('${w.reading || w.term_ja}')">
-          <i class="fa-solid fa-volume-high"></i>
-        </button>
-        <button class="btn-hard-flame is-hard" onclick="onToggleHard('${w.id}')" title="Unmark Hard">
-          <i class="fa-solid fa-fire"></i>
-        </button>
-      </div>
-    `;
+        <div class="vocab-actions">
+          <button class="btn-hard-flame is-hard" onclick="onToggleHard('${item.id}')" title="Unmark Weak Point">
+            <i class="fa-solid fa-fire"></i>
+          </button>
+        </div>
+      `;
+    } else {
+      card.innerHTML = `
+        <div class="vocab-main">
+          <div class="vocab-term-row">
+            <span class="vocab-term font-ja">${item.ruby_html || item.term_ja}</span>
+            ${item.part_of_speech ? `<span class="vocab-pos">${item.part_of_speech}</span>` : ''}
+          </div>
+          <div class="vocab-meaning hard-word-def">${item.meaning_en}</div>
+          ${item.example_ja ? `<div class="vocab-example font-ja">${item.example_ja}</div>` : ''}
+        </div>
+        <div class="vocab-actions">
+          <button class="btn-sm btn-ghost" onclick="playAudio('${item.reading || item.term_ja}')">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <button class="btn-hard-flame is-hard" onclick="onToggleHard('${item.id}')" title="Unmark Hard">
+            <i class="fa-solid fa-fire"></i>
+          </button>
+        </div>
+      `;
+    }
     container.appendChild(card);
   });
 }
