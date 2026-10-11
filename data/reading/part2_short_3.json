@@ -1,0 +1,1359 @@
+{
+  "metadata": {
+    "bookTitle": "新完全マスター JLPT N3 読解",
+    "bookTitleRomaji": "Shin Kanzen Master JLPT N3 Dokkai",
+    "englishTitle": "New Complete Master JLPT N3 Reading Comprehension",
+    "level": "JLPT N3 (Intermediate)",
+    "section": "実力養成編 第3部 広告・お知らせなどから情報を探そう (Part 3: Search for Information from Advertisements, Notices, etc.)",
+    "subSection": "広告・お知らせ・グラフ・メール (Advertisements, Public Notices, Graphs, and E-mails)",
+    "version": "1.0.0",
+    "lastUpdated": "2026-10-11"
+  },
+  "lessons": [
+    {
+      "id": "dokkai-n3-p3-03",
+      "pages": [
+        62,
+        63
+      ],
+      "problemNumber": 23,
+      "genre": "パンフレット",
+      "genre_en": "Pamphlet",
+      "genre_zh": "宣传册",
+      "title_ja": "3) パンフレット",
+      "title_en": "3) Pamphlet",
+      "title_zh": "3) 宣传册",
+      "preReading": {
+        "question_ja": "パンフレットを見たことがありますか。どんな情報が書いてありましたか。",
+        "question_en": "Have you ever looked at a pamphlet? What kind of information was written in it?",
+        "question_zh": "你看过宣传册吗？上面写了些什么信息？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "南みなと図書館 映画上映会",
+            "ruby_html": "<ruby>南<rt>みなみ</rt></ruby>みなと<ruby>図書館<rt>としょかん</rt></ruby> <ruby>映画<rt>えいが</rt></ruby><ruby>上映会<rt>じょうえいかい</rt></ruby>",
+            "text_en": "Minami-Minato Library Movie Screening"
+          },
+          {
+            "id": 2,
+            "text_ja": "【日時】10月13日(土)・14日(日) 10:00〜16:30、【場所】南みなと図書館 2階 視聴覚室。",
+            "ruby_html": "【<ruby>日時<rt>にちじ</rt></ruby>】10<ruby>月<rt>がつ</rt></ruby>13<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>)・14<ruby>日<rt>にち</rt></ruby>(<ruby>日<rt>にち</rt></ruby>) 10:00〜16:30、【<ruby>場所<rt>ばしょ</rt></ruby>】<ruby>南<rt>みなみ</rt></ruby>みなと<ruby>図書館<rt>としょかん</rt></ruby> 2<ruby>階<rt>かい</rt></ruby> <ruby>視聴覚室<rt>しちょうかくしつ</rt></ruby>。",
+            "text_en": "[Date/Time] Oct 13 (Sat) & 14 (Sun), 10:00-16:30, [Venue] Minami-Minato Library 2F Audiovisual Room."
+          },
+          {
+            "id": 3,
+            "text_ja": "【入場料】無料（申し込み不要、当日先着順 各回50名）。",
+            "ruby_html": "【<ruby>入場料<rt>にゅうじょうりょう</rt></ruby>】<ruby>無料<rt>むりょう</rt></ruby>（<ruby>申込<rt>もうしこ</rt></ruby>み<ruby>不要<rt>ふよう</rt></ruby>、<ruby>当日<rt>とうじつ</rt></ruby><ruby>先着順<rt>せんちゃくじゅん</rt></ruby> <ruby>各回<rt>かくかい</rt></ruby>50<ruby>名<rt>めい</rt></ruby>）。",
+            "text_en": "[Admission] Free (No application needed, first-come first-served on the day, 50 persons per screening)."
+          },
+          {
+            "id": 4,
+            "text_ja": "【上映スケジュール＆作品】① 10:00〜11:45 『ラストダンスは君と』若者の夢と情熱を描いた感動の青春ストーリー（一般向け）。",
+            "ruby_html": "【<ruby>上映<rt>じょうえい</rt></ruby>スケジュール＆<ruby>作品<rt>さくひん</rt></ruby>】① 10:00〜11:45 『ラストダンスは<ruby>君<rt>きみ</rt></ruby>と』<ruby>若者<rt>わかもの</rt></ruby>の<ruby>夢<rt>ゆめ</rt></ruby>と<ruby>情熱<rt>じょうねつ</rt></ruby>を<ruby>描<rt>えが</rt></ruby>いた<ruby>感動<rt>かんどう</rt></ruby>の<ruby>青春<rt>せいしゅん</rt></ruby>ストーリー（<ruby>一般向<rt>いっぱんむ</rt></ruby>け）。",
+            "text_en": "[Screening Schedule & Titles] 1) 10:00-11:45 'The Last Dance with You': A moving youth drama depicting the dreams and passion of young people (General audience)."
+          },
+          {
+            "id": 5,
+            "text_ja": "② 13:00〜14:15 『ドキドキマシンをさがせ』謎のロボットをめぐる大冒険アドベンチャー（小学生以上対象）。",
+            "ruby_html": "② 13:00〜14:15 『ドキドキマシンをさがせ』<ruby>謎<rt>なぞ</rt></ruby>のロボットをめぐる<ruby>大冒険<rt>だいぼうけん</rt></ruby>アドベンチャー（<ruby>小学生以上対象<rt>しょうがくせいいじょうたいしょう</rt></ruby>）。",
+            "text_en": "2) 13:00-14:15 'Find the Heart-Pounding Machine': A grand adventure revolving around a mysterious robot (Ages: Elementary school and above)."
+          },
+          {
+            "id": 6,
+            "text_ja": "③ 14:45〜16:15 『トモばあちゃんの涙』家族の絆と温もりを描いた心温まるヒューマンドラマ（一般向け）。",
+            "ruby_html": "③ 14:45〜16:15 『トモばあちゃんの<ruby>涙<rt>なみだ</rt></ruby>』<ruby>家族<rt>かぞく</rt></ruby>の<ruby>絆<rt>きずな</rt></ruby>と<ruby>温<rt>ぬく</rt></ruby>もりを<ruby>描<rt>えが</rt></ruby>いた<ruby>心温<rt>こころあたた</rt></ruby>まるヒューマンドラマ（<ruby>一般向<rt>いっぱんむ</rt></ruby>け）。",
+            "text_en": "3) 14:45-16:15 'Grandma Tomo's Tears': A heartwarming human drama depicting family bonds and warmth (General audience)."
+          },
+          {
+            "id": 7,
+            "text_ja": "④ 11:30〜12:20 『ホヨヨンと楽しいおともだち』森の妖精ホヨヨンと動物たちのほのぼのアニメ（幼児・児童および保護者対象）。",
+            "ruby_html": "④ 11:30〜12:20 『ホヨヨンと<ruby>楽<rt>たの</rt></ruby>しいおともだち』<ruby>森<rt>もり</rt></ruby>の<ruby>妖精<rt>ようせい</rt></ruby>ホヨヨンと<ruby>動物<rt>どうぶつ</rt></ruby>たちのほのぼのアニメ（<ruby>幼児<rt>ようじ</rt></ruby>・<ruby>児童<rt>じどう</rt></ruby>および<ruby>保護者対象<rt>ほごしゃたいしょう</rt></ruby>）。",
+            "text_en": "4) 11:30-12:20 'Hoyoyon and Fun Friends': A gentle heartwarming anime about the forest fairy Hoyoyon and forest animal friends (Ages: Young children, elementary children, and guardians)."
+          },
+          {
+            "id": 8,
+            "text_ja": "【注意事項】上映開始後のご入場はお断りいたします。会場内での飲食および写真・ビデオ撮影は固くお断りいたします。",
+            "ruby_html": "【<ruby>注意事項<rt>ちゅういじこう</rt></ruby>】<ruby>上映開始後<rt>じょうえいかいしご</rt></ruby>のご<ruby>入場<rt>にゅうじょう</rt></ruby>はお<ruby>断<rt>ことわ</rt></ruby>りいたします。<ruby>会場内<rt>かいじょうない</rt></ruby>での<ruby>飲食<rt>いんしょく</rt></ruby>および<ruby>写真<rt>しゃしん</rt></ruby>・ビデオ<ruby>撮影<rt>さつえい</rt></ruby>は<ruby>固<rt>かた</rt></ruby>くお<ruby>断<rt>ことわ</rt></ruby>りいたします。",
+            "text_en": "[Important Notes] Entry after screening has started is not permitted. Eating, drinking, photography, and video recording inside the hall are strictly prohibited."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "上映会",
+          "reading": "じょうえいかい",
+          "meaning": "film screening event / 电影放映会",
+          "type": "noun"
+        },
+        {
+          "term": "視聴覚室",
+          "reading": "しちょうかくしつ",
+          "meaning": "audiovisual room / 视听室",
+          "type": "noun"
+        },
+        {
+          "term": "先着順",
+          "reading": "せんちゃくじゅん",
+          "meaning": "first-come, first-served basis / 先到顺序",
+          "type": "noun"
+        },
+        {
+          "term": "対象",
+          "reading": "たいしょう",
+          "meaning": "target audience, intended for / 适用对象",
+          "type": "noun"
+        },
+        {
+          "term": "幼児",
+          "reading": "ようじ",
+          "meaning": "young child, infant (under school age) / 幼儿",
+          "type": "noun"
+        },
+        {
+          "term": "児童",
+          "reading": "じどう",
+          "meaning": "children, juveniles / 儿童",
+          "type": "noun"
+        },
+        {
+          "term": "保護者",
+          "reading": "ほごしゃ",
+          "meaning": "guardian, parent / 监护人，家长",
+          "type": "noun"
+        },
+        {
+          "term": "ほのぼの",
+          "reading": "ほのぼの",
+          "meaning": "heartwarming, peaceful and gentle / 温暖人心的",
+          "type": "adverb"
+        },
+        {
+          "term": "絆",
+          "reading": "きずな",
+          "meaning": "bonds, emotional ties / 羁绊，纽带",
+          "type": "noun"
+        },
+        {
+          "term": "固くお断りする",
+          "reading": "かたくおことわりする",
+          "meaning": "to strictly refuse/prohibit / 坚决拒绝，严禁",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-23-1",
+          "questionNumber": 1,
+          "questionText_ja": "林さんは5歳の息子と一緒に映画を見に行きたいと思っています。林さん親子が見るのに適している映画はどれですか。",
+          "questionText_en": "Mr. Hayashi wants to go see a movie together with his 5-year-old son. Which movie is suitable for Mr. Hayashi and his son to watch?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "①『ラストダンスは君と』",
+              "text_en": "1) 'The Last Dance with You'"
+            },
+            {
+              "id": 2,
+              "text_ja": "②『ドキドキマシンをさがせ』",
+              "text_en": "2) 'Find the Heart-Pounding Machine'"
+            },
+            {
+              "id": 3,
+              "text_ja": "③『トモばあちゃんの涙』",
+              "text_en": "3) 'Grandma Tomo's Tears'"
+            },
+            {
+              "id": 4,
+              "text_ja": "④『ホヨヨンと楽しいおともだち』",
+              "text_en": "4) 'Hoyoyon and Fun Friends'"
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "5歳の息子は「幼児」に該当します。作品紹介で「幼児・児童および保護者対象」と明記されているのは④『ホヨヨンと楽しいおともだち』です。②は「小学生以上対象」なので5歳児には該当せず、①と③は「一般向け」です。したがって 4 が正解です。",
+          "explanation_en": "A 5-year-old son falls into the category of 'young child' (幼児). In the program list, Film ④ 'Hoyoyon and Fun Friends' specifically lists '幼児・児童および保護者対象' (intended for young children, elementary students, and guardians). Film ② is for elementary school age and above. Therefore, Option 4 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆パンフレット（映画上映会）",
+        "text_ja": "イベントのパンフレットや案内文では、「対象年齢・対象者」「日時」「定員・料金」などの条件を素早く読み取ることが重要です。設問の登場人物（5歳の子どもと保護者）の条件に該当する項目をピンポイントで照合します。",
+        "text_en": "In event pamphlets and schedules, quickly locating eligibility, date/time, and target age criteria is crucial. Match the character's specifications (a 5-year-old child and parent) directly against the targeted audience row in the table.",
+        "text_zh": "在活动宣传册或通知中，快速抓取“对象年龄/资格”、“日期时间”、“名额/费用”等条件至关重要。将题目人物（5岁小孩与家长）的条件与宣传册中的适用对象栏精确核对即可。",
+        "structureLayout": [
+          {
+            "component": "イベント名・日時・場所",
+            "detail": "南みなと図書館 映画上映会、10月13日・14日、2階視聴覚室",
+            "en": "Event title, dates, and venue"
+          },
+          {
+            "component": "上映リスト・対象者",
+            "detail": "4作品の上映時間・内容・対象者（一般、小学生以上、幼児・児童・保護者）",
+            "en": "Movie listings with schedules and target audience qualifications"
+          },
+          {
+            "component": "利用ルール・注意事項",
+            "detail": "入場無料、当日先着順50名、途中入場不可、飲食・撮影禁止",
+            "en": "Rules: Free, first-come 50 persons, no late entry, no food/filming"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In examination questions, follow these strategic steps:",
+        "title_zh": "考试时的解题思路如下：",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "設問の人物の条件（年齢・同伴者）を確認する。",
+            "question_en": "Identify the person's profile in the question (age and companions).",
+            "question_zh": "确认题目中人物的条件（年龄与陪同人员）。",
+            "analysis_ja": "林さんは「5歳の息子（＝幼児）」と一緒に行く映画を探している。",
+            "analysis_en": "Mr. Hayashi is looking for a movie suitable for his '5-year-old son (= young child/幼児)'.",
+            "analysis_zh": "林先生正在寻找适合与“5岁儿子（=幼儿）”一起观看的电影。"
+          },
+          {
+            "step": 2,
+            "question_ja": "表の対象者欄をスキャンして合致するものを探す。",
+            "question_en": "Scan the target audience section in the table for an exact match.",
+            "question_zh": "浏览表格中的对象栏寻找符合的一项。",
+            "analysis_ja": "④が「幼児・児童および保護者対象」となっており、5歳児と親の組み合わせに合致する。",
+            "analysis_en": "Film ④ states '幼児・児童および保護者対象', exactly matching a 5-year-old child with a parent.",
+            "analysis_zh": "第④部明确注明“幼儿、儿童及保护者对象”，与5岁幼童及家长的组合完全契合。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p3-04",
+      "pages": [
+        64,
+        65
+      ],
+      "problemNumber": 24,
+      "genre": "お知らせ",
+      "genre_en": "Public notices (1)",
+      "genre_zh": "通知①",
+      "title_ja": "4) お知らせ①",
+      "title_en": "4) Public notices (1)",
+      "title_zh": "4) 通知①",
+      "preReading": {
+        "question_ja": "お知らせを読んだことがありますか。どんなことについて書かれていましたか。",
+        "question_en": "Have you ever read a public notice? What kind of things was it written about?",
+        "question_zh": "你读过通知吗？上面写的是关于什么内容的？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "ミニ・コンサートのご案内",
+            "ruby_html": "ミニ・コンサートのご<ruby>案内<rt>あんない</rt></ruby>",
+            "text_en": "Notice: Mini-Concert Invitation"
+          },
+          {
+            "id": 2,
+            "text_ja": "さくら合唱クラブの第10回定期ミニ・コンサートを下記の通り開催いたします。",
+            "ruby_html": "さくら<ruby>合唱<rt>がっしょう</rt></ruby>クラブの<ruby>第<rt>だい</rt></ruby>10<ruby>回<rt>かい</rt></ruby><ruby>定期<rt>ていき</rt></ruby>ミニ・コンサートを<ruby>下記<rt>かき</rt></ruby>の<ruby>通<rt>とお</rt></ruby>り<ruby>開催<rt>かいさい</rt></ruby>いたします。",
+            "text_en": "The Sakura Chorus Club will hold its 10th Regular Mini-Concert as described below."
+          },
+          {
+            "id": 3,
+            "text_ja": "【日時】11月20日(日) 14:00開演 (13:30開場)、【場所】市民会館 小ホール。",
+            "ruby_html": "【<ruby>日時<rt>にちじ</rt></ruby>】11<ruby>月<rt>がつ</rt></ruby>20<ruby>日<rt>にち</rt></ruby>(<ruby>日<rt>にち</rt></ruby>) 14:00<ruby>開演<rt>かいえん</rt></ruby> (13:30<ruby>開場<rt>かいじょう</rt></ruby>)、【<ruby>場所<rt>ばしょ</rt></ruby>】<ruby>市民会館<rt>しみんかいかん</rt></ruby> <ruby>小<rt>しょう</rt></ruby>ホール。",
+            "text_en": "[Date/Time] Nov 20 (Sun), 14:00 start (doors open 13:30), [Venue] Civic Hall, Small Hall."
+          },
+          {
+            "id": 4,
+            "text_ja": "【曲目】日本の四季の歌、世界の名曲選ほか、【入場料】無料（全席自由・整理券不要）。",
+            "ruby_html": "【<ruby>曲目<rt>きょくもく</rt></ruby>】<ruby>日本<rt>にほん</rt></ruby>の<ruby>四季<rt>しき</rt></ruby>の<ruby>歌<rt>うた</rt></ruby>、<ruby>世界<rt>せかい</rt></ruby>の<ruby>名曲選<rt>めいきょくせん</rt></ruby>ほか、【<ruby>入場料<rt>にゅうじょうりょう</rt></ruby>】<ruby>無料<rt>むりょう</rt></ruby>（<ruby>全席自由<rt>ぜんせきじゆう</rt></ruby>・<ruby>整理券不要<rt>せいりけんふよう</rt></ruby>）。",
+            "text_en": "[Program] Songs of Japan's Four Seasons, World Masterpieces, etc., [Admission] Free (all unreserved seats, no numbered ticket required)."
+          },
+          {
+            "id": 5,
+            "text_ja": "【ご来場のみなさまへのお願い】",
+            "ruby_html": "【ご<ruby>来場<rt>らいじょう</rt></ruby>のみなさまへのお<ruby>願<rt>ねが</rt></ruby>い】",
+            "text_en": "[Requests to All Visitors]"
+          },
+          {
+            "id": 6,
+            "text_ja": "・就学前のお子様のご入場はご遠慮ください。",
+            "ruby_html": "・<ruby>就学前<rt>しゅうがくまえ</rt></ruby>のお<ruby>子様<rt>こさま</rt></ruby>のご<ruby>入場<rt>にゅうじょう</rt></ruby>はご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。",
+            "text_en": "- Please refrain from bringing preschool children."
+          },
+          {
+            "id": 7,
+            "text_ja": "・演奏中の客席への出入り、および私語はお控えください。",
+            "ruby_html": "・<ruby>演奏中<rt>えんそうちゅう</rt></ruby>の<ruby>客席<rt>きゃくせき</rt></ruby>への<ruby>出入<rt>でい</rt></ruby>り、および<ruby>私語<rt>しご</rt></ruby>はお<ruby>控<rt>ひか</rt></ruby>えください。",
+            "text_en": "- Please refrain from entering/leaving the audience seats during performances, and refrain from whispering/chattering."
+          },
+          {
+            "id": 8,
+            "text_ja": "・ホール内では、携帯電話・スマートフォン等の電源はお切りいただくか、マナーモードではなく必ず電源をお切りください。",
+            "ruby_html": "・ホール<ruby>内<rt>ない</rt></ruby>では、<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>・スマートフォン<ruby>等<rt>とう</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>はお<ruby>切<rt>き</rt></ruby>りいただくか、マナーモードではなく<ruby>必<rt>かなら</rt></ruby>ず<ruby>電源<rt>でんげん</rt></ruby>をお<ruby>切<rt>き</rt></ruby>りください。",
+            "text_en": "- Inside the hall, please turn off the power of mobile phones/smartphones; do not just use silent mode, you must switch off the power."
+          },
+          {
+            "id": 9,
+            "text_ja": "・ホール内での飲食および写真・録音・録画撮影は禁止とさせていただきます。",
+            "ruby_html": "・ホール<ruby>内<rt>ない</rt></ruby>での<ruby>飲食<rt>いんしょく</rt></ruby>および<ruby>写真<rt>しゃしん</rt></ruby>・<ruby>録音<rt>ろくおん</rt></ruby>・<ruby>録画撮影<rt>ろくがさつえい</rt></ruby>は<ruby>禁止<rt>きんし</rt></ruby>とさせていただきます。",
+            "text_en": "- Eating, drinking, photography, audio recording, and video recording inside the hall are strictly prohibited."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "合唱",
+          "reading": "がっしょう",
+          "meaning": "chorus, choir singing / 合唱",
+          "type": "noun"
+        },
+        {
+          "term": "開演",
+          "reading": "かいえん",
+          "meaning": "curtain time, performance start / 开演",
+          "type": "noun"
+        },
+        {
+          "term": "開場",
+          "reading": "かいじょう",
+          "meaning": "doors open, hall opening / 开门进场",
+          "type": "noun"
+        },
+        {
+          "term": "就学前",
+          "reading": "しゅうがくまえ",
+          "meaning": "preschool, before entering school / 学龄前",
+          "type": "noun"
+        },
+        {
+          "term": "ご遠慮ください",
+          "reading": "ごえんりょください",
+          "meaning": "please refrain from, please do not / 请勿，请回避",
+          "type": "expression"
+        },
+        {
+          "term": "私語",
+          "reading": "しご",
+          "meaning": "whispering, private talking / 私下谈话",
+          "type": "noun"
+        },
+        {
+          "term": "お控えください",
+          "reading": "おひかえください",
+          "meaning": "please refrain from / 请勿，请克制",
+          "type": "expression"
+        },
+        {
+          "term": "電源",
+          "reading": "でんげん",
+          "meaning": "power switch, power source / 电源",
+          "type": "noun"
+        },
+        {
+          "term": "録音",
+          "reading": "ろくおん",
+          "meaning": "sound recording / 录音",
+          "type": "noun"
+        },
+        {
+          "term": "整理券",
+          "reading": "せいりけん",
+          "meaning": "numbered ticket / 整理券，号码牌",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-24-1",
+          "questionNumber": 1,
+          "questionText_ja": "このコンサートで、してはいけないことは何か。",
+          "questionText_en": "What is something that you must NOT do at this concert?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "整理券を持たずにホールに入る。",
+              "text_en": "Entering the hall without a numbered ticket."
+            },
+            {
+              "id": 2,
+              "text_ja": "小学生の子どもを連れて見に行く。",
+              "text_en": "Bringing an elementary school child to watch."
+            },
+            {
+              "id": 3,
+              "text_ja": "開演前のロビーで飲み物を飲む。",
+              "text_en": "Drinking a beverage in the lobby before the show starts."
+            },
+            {
+              "id": 4,
+              "text_ja": "客席で携帯電話を使ってメールをする。",
+              "text_en": "Using a mobile phone in the audience seats to send an email."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "お知らせの「お願い」に「携帯電話・スマートフォン等の電源はお切りいただくか、マナーモードではなく必ず電源をお切りください」とあります。電源を切らなければならないため、客席で携帯電話を使ってメールをすることは禁止されています。したがって 4 が正解です。（1は「整理券不要」なので誤り。2は「就学前（小学生未満）」が不可なので小学生は入場可能。3はホール内での飲食が禁止であり、開演前ロビー等の制限ではありません。）",
+          "explanation_en": "The notice instructs attendees to turn off the power completely ('マナーモードではなく必ず電源をお切りください'). Since phones must be turned off, sending emails on a phone during the event is forbidden. Therefore, Option 4 is correct. (1 is wrong because tickets are not required; 2 is allowed because only preschool children are barred; 3 specifies inside the hall during the event)."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆お知らせ①（コンサート案内）",
+        "text_ja": "公共のお知らせでは、「〜はご遠慮ください」「〜はお控えください」「〜は禁止とさせていただきます」などの禁止・制限表現が頻出します。「マナーモードではなく必ず電源をお切りください」という指定から、音を出さないメール送受信も不可である点を見抜く読解力が問われます。",
+        "text_en": "Public notices frequently utilize polite prohibitive phrases such as 'ご遠慮ください' (please refrain), 'お控えください' (please abstain), and '禁止とさせていただきます' (strictly prohibited). The instruction requiring full power-off precludes even silent text emailing.",
+        "text_zh": "公共通知中常使用礼貌的禁止或限制表达，如“ご遠慮ください（请勿）”、“お控えください（请克制）”、“禁止とさせていただきます（严禁）”。文中明确要求“必须关机而非静音模式”，因此即使不发声音发邮件也是被禁止的。",
+        "structureLayout": [
+          {
+            "component": "件名・趣旨",
+            "detail": "ミニ・コンサートのご案内（さくら合唱クラブ）",
+            "en": "Notice title and event overview"
+          },
+          {
+            "component": "開催概要",
+            "detail": "日時（11月20日14:00〜）、場所（市民会館小ホール）、入場無料",
+            "en": "Event details: Date/time, venue, free admission"
+          },
+          {
+            "component": "来場者へのお願い（禁止事項）",
+            "detail": "未就学児入場不可、出入り・私語禁止、電源完全OFF、飲食・撮影禁止",
+            "en": "Audience rules: No preschool children, quiet seats, power completely OFF, no filming/eating"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In examination questions, follow these strategic steps:",
+        "title_zh": "考试时的解题思路如下：",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "設問の指示「してはいけないこと」を確認する。",
+            "question_en": "Identify the question's prompt: What is prohibited?",
+            "question_zh": "确认设问要求：“不可以做的事情”。",
+            "analysis_ja": "禁止事項やお断り事項をリストからチェックする。",
+            "analysis_en": "Check all negative rules, prohibitions, and 'please refrain' clauses.",
+            "analysis_zh": "在文中列出的注意事项和禁止事项中进行排查。"
+          },
+          {
+            "step": 2,
+            "question_ja": "携帯電話のルールを照合する。",
+            "question_en": "Verify the specific mobile phone policy.",
+            "question_zh": "核对手机使用的特别规定。",
+            "analysis_ja": "「必ず電源をお切りください」とあるため、電源を入れてメールを打つ行為は明確な違反である。",
+            "analysis_en": "Because it explicitly orders 'turn power completely OFF', having it turned on to email is a clear violation.",
+            "analysis_zh": "因为明确要求“务必关闭电源”，开着手机发邮件属于明确违规。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p3-05",
+      "pages": [
+        66,
+        67
+      ],
+      "problemNumber": 25,
+      "genre": "お知らせ",
+      "genre_en": "Public notices (2)",
+      "genre_zh": "通知②",
+      "title_ja": "5) お知らせ②",
+      "title_en": "5) Public notices (2)",
+      "title_zh": "5) 通知②",
+      "preReading": {
+        "question_ja": "ビルや駅などで「お知らせ」を見たことがありますか。",
+        "question_en": "Have you ever seen public notices in buildings or train stations?",
+        "question_zh": "你在大楼或车站里看到过“通知”吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "エレベーター運転停止のお知らせ",
+            "ruby_html": "エレベーター<ruby>運転停止<rt>うんてんていし</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせ",
+            "text_en": "Notice: Elevator Service Suspension"
+          },
+          {
+            "id": 2,
+            "text_ja": "ビル設備定期点検のため、下記の日程でエレベーターの運転を一時停止いたします。",
+            "ruby_html": "ビル<ruby>設備<rt>せつび</rt></ruby><ruby>定期点検<rt>ていきてんけん</rt></ruby>のため、<ruby>下記<rt>かき</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>でエレベーターの<ruby>運転<rt>うんてん</rt></ruby>を<ruby>一時停止<rt>いちじていし</rt></ruby>いたします。",
+            "text_en": "Due to periodic building equipment inspections, elevator operation will be temporarily suspended on the following schedule."
+          },
+          {
+            "id": 3,
+            "text_ja": "【停止日程および対象エリア】",
+            "ruby_html": "【<ruby>停止日程<rt>ていしにってい</rt></ruby>および<ruby>対象<rt>たいしょう</rt></ruby>エリア】",
+            "text_en": "[Suspension Schedule & Affected Areas]"
+          },
+          {
+            "id": 4,
+            "text_ja": "・東館（1号機・2号機）：5月10日(土) 9:00〜12:00",
+            "ruby_html": "・<ruby>東館<rt>ひがしかん</rt></ruby>（1<ruby>号機<rt>ごうき</rt></ruby>・2<ruby>号機<rt>ごうき</rt></ruby>）：5<ruby>月<rt>がつ</rt></ruby>10<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>) 9:00〜12:00",
+            "text_en": "- East Wing (Elevators 1 & 2): May 10 (Sat) 9:00-12:00"
+          },
+          {
+            "id": 5,
+            "text_ja": "・西館（3号機・4号機）：5月10日(土) 13:00〜17:00",
+            "ruby_html": "・<ruby>西館<rt>にしかん</rt></ruby>（3<ruby>号機<rt>ごうき</rt></ruby>・4<ruby>号機<rt>ごうき</rt></ruby>）：5<ruby>月<rt>がつ</rt></ruby>10<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>) 13:00〜17:00",
+            "text_en": "- West Wing (Elevators 3 & 4): May 10 (Sat) 13:00-17:00"
+          },
+          {
+            "id": 6,
+            "text_ja": "・北館（5号機・6号機）：5月11日(日) 9:00〜16:00",
+            "ruby_html": "・<ruby>北館<rt>きたかん</rt></ruby>（5<ruby>号機<rt>ごうき</rt></ruby>・6<ruby>号機<rt>ごうき</rt></ruby>）：5<ruby>月<rt>がつ</rt></ruby>11<ruby>日<rt>にち</rt></ruby>(<ruby>日<rt>にち</rt></ruby>) 9:00〜16:00",
+            "text_en": "- North Wing (Elevators 5 & 6): May 11 (Sun) 9:00-16:00"
+          },
+          {
+            "id": 7,
+            "text_ja": "点検中は、エレベーターをご利用いただけません。中央エスカレーターまたは非常階段をご利用ください。",
+            "ruby_html": "<ruby>点検中<rt>てんけんちゅう</rt></ruby>は、エレベーターをご<ruby>利用<rt>りよう</rt></ruby>いただけません。<ruby>中央<rt>ちゅうおう</rt></ruby>エスカレーターまたは<ruby>非常階段<rt>ひじょうかいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください。",
+            "text_en": "During inspection, elevators cannot be used. Please use the central escalators or emergency stairs."
+          },
+          {
+            "id": 8,
+            "text_ja": "なお、作業の進捗状況により、停止時間が多少前後する場合がございますので、あらかじめご了承ください。",
+            "ruby_html": "なお、<ruby>作業<rt>さぎょう</rt></ruby>の<ruby>進捗状況<rt>しんちょくじょうきょう</rt></ruby>により、<ruby>停止時間<rt>ていしじかん</rt></ruby>が<ruby>多少前後<rt>たしょうぜんご</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>がございますので、あらかじめご<ruby>了承<rt>りょうしょう</rt></ruby>ください。",
+            "text_en": "Please note in advance that suspension hours may slightly vary depending on the progress of work."
+          },
+          {
+            "id": 9,
+            "text_ja": "【お問い合わせ】国際ビル管理部（内線：3301）",
+            "ruby_html": "【お<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせ】<ruby>国際<rt>こくさい</rt></ruby>ビル<ruby>管理部<rt>かんりぶ</rt></ruby>（<ruby>内線<rt>ないせん</rt></ruby>：3301）",
+            "text_en": "[Inquiries] Kokusai Building Management Dept. (Extension: 3301)"
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "運転停止",
+          "reading": "うんてんていし",
+          "meaning": "service suspension, shutdown / 停止运行",
+          "type": "noun"
+        },
+        {
+          "term": "定期点検",
+          "reading": "ていきてんけん",
+          "meaning": "periodic inspection / 定期检修",
+          "type": "noun"
+        },
+        {
+          "term": "東館",
+          "reading": "ひがしかん",
+          "meaning": "East Wing / 东馆",
+          "type": "noun"
+        },
+        {
+          "term": "西館",
+          "reading": "にしかん",
+          "meaning": "West Wing / 西馆",
+          "type": "noun"
+        },
+        {
+          "term": "北館",
+          "reading": "きたかん",
+          "meaning": "North Wing / 北馆",
+          "type": "noun"
+        },
+        {
+          "term": "エスカレーター",
+          "reading": "エスカレーター",
+          "meaning": "escalator / 自动扶梯",
+          "type": "noun"
+        },
+        {
+          "term": "非常階段",
+          "reading": "ひじょうかいだん",
+          "meaning": "emergency stairs / 应急楼梯",
+          "type": "noun"
+        },
+        {
+          "term": "進捗状況",
+          "reading": "しんちょくじょうきょう",
+          "meaning": "progress status / 进展情况",
+          "type": "noun"
+        },
+        {
+          "term": "多少前後する",
+          "reading": "たしょうぜんごする",
+          "meaning": "to shift/vary slightly / 略有前后变动",
+          "type": "verb"
+        },
+        {
+          "term": "内線",
+          "reading": "ないせん",
+          "meaning": "phone extension / 分机",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-25-1",
+          "questionNumber": 1,
+          "questionText_ja": "文章の内容と合っているものはどれか。",
+          "questionText_en": "Which of the following matches the contents of the text?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "5月10日は終日、東館のエレベーターが利用できない。",
+              "text_en": "Elevators in the East Wing cannot be used all day on May 10."
+            },
+            {
+              "id": 2,
+              "text_ja": "5月11日は、すべての館のエレベーターが停止する。",
+              "text_en": "Elevators in all wings are suspended on May 11."
+            },
+            {
+              "id": 3,
+              "text_ja": "エレベーター点検中も、エスカレーターや階段は利用できる。",
+              "text_en": "Even during elevator inspection, escalators and stairs can be used."
+            },
+            {
+              "id": 4,
+              "text_ja": "点検の時間が延びることは絶対にない。",
+              "text_en": "The inspection time will absolutely never be extended."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "本文に「点検中は、エレベーターをご利用いただけません。中央エスカレーターまたは非常階段をご利用ください」と書かれているため、3「エレベーター点検中も、エスカレーターや階段は利用できる」が合致し正解です。（1は東館は9:00〜12:00のみなので終日ではない。2は5月11日停止は北館のみ。4は「多少前後する場合がある」とあるため誤り。）",
+          "explanation_en": "The notice states 'Please use the central escalators or emergency stairs' during inspection, making Option 3 correct. (1 is wrong because East Wing is only stopped 9:00-12:00, not all day; 2 is wrong because only North Wing is stopped on May 11; 4 is wrong because hours may vary)."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆お知らせ②（エレベーター点検）",
+        "text_ja": "ビル設備やインフラの停止通知では、どのエリア（東館・西館・北館）が、いつ（日付・時間帯）停止するのか、および停止中の「代替手段（エスカレーター・階段）」を正確に読み取ることがポイントです。部分的な停止を「終日」や「全館」と言い換えた誤答の罠に注意しましょう。",
+        "text_en": "In maintenance suspension notices, distinguishing which wing stops at what exact time and what alternative transportation (escalator/stairs) is available is crucial. Watch out for distractors generalizing partial downtime to 'all day' or 'all buildings'.",
+        "text_zh": "在大楼设施检修通知中，准确理解哪个区域（东馆、西馆、北馆）在何时（日期与时段）停用，以及停用期间的“替代手段（自动扶梯、楼梯）”是关键。注意避开把局部停运误夸大为“全天”或“全馆”的干扰项。",
+        "structureLayout": [
+          {
+            "component": "件名・主旨",
+            "detail": "定期点検に伴うエレベーター一時停止のお知らせ",
+            "en": "Notice title & reason (regular maintenance)"
+          },
+          {
+            "component": "館別・時間別スケジュール",
+            "detail": "東館（10日午前）、西館（10日午後）、北館（11日終日近く）",
+            "en": "Detailed timeline per building wing"
+          },
+          {
+            "component": "代替手段・留意事項",
+            "detail": "中央エスカレーター・階段の利用案内、作業時間の前後の可能性",
+            "en": "Alternatives (escalators/stairs) and progress notes"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In examination questions, follow these strategic steps:",
+        "title_zh": "考试时的解题思路如下：",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "選択肢のキーワードと本文の日程・代替手段を照合する。",
+            "question_en": "Compare keywords in options with schedule details and alternatives in the text.",
+            "question_zh": "将选项关键词与文中的日程及替代方式进行对照。",
+            "analysis_ja": "「エスカレーターや階段は利用できる」という記述が「中央エスカレーターまたは非常階段をご利用ください」と完全に一致する。",
+            "analysis_en": "'Escalators and stairs can be used' matches '中央エスカレーターまたは非常階段をご利用ください'.",
+            "analysis_zh": "“可以使用自动扶梯或楼梯”与文中的“请使用中央自动扶梯或应急楼梯”完全吻合。"
+          },
+          {
+            "step": 2,
+            "question_ja": "極端な表現（終日、すべて、絶対に）を含む選択肢を検証・消去する。",
+            "question_en": "Examine and eliminate extreme wording ('all day', 'all', 'never').",
+            "question_zh": "检验并排除带有绝对化词汇（全天、全部、绝不）的选项。",
+            "analysis_ja": "1の「終日」、2の「すべて」、4の「絶対にない」はいずれも本文と食い違っている。",
+            "analysis_en": "'All day' in 1, 'all wings' in 2, and 'absolutely never' in 4 contradict the specific conditions.",
+            "analysis_zh": "选项1的“全天”、选项2的“全部”、选项4的“绝不”均与原文事实不符。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p3-06",
+      "pages": [
+        68,
+        69
+      ],
+      "problemNumber": 26,
+      "genre": "薬の飲み方",
+      "genre_en": "Instructions for taking medicine",
+      "genre_zh": "药品使用说明书",
+      "title_ja": "6) 薬の飲み方",
+      "title_en": "6) Instructions for taking medicine",
+      "title_zh": "6) 药品使用说明书",
+      "preReading": {
+        "question_ja": "病院で薬をもらったとき、どんな注意を聞きますか。",
+        "question_en": "When you receive medicine at a clinic/hospital, what cautions do you hear?",
+        "question_zh": "在医院拿药时，你会听到哪些注意事项？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "お薬の説明書（患者名：田中マリア様）",
+            "ruby_html": "お<ruby>薬<rt>くすり</rt></ruby>の<ruby>説明書<rt>せつめいしょ</rt></ruby>（<ruby>患者名<rt>かんじゃめい</rt></ruby>：<ruby>田中<rt>たなか</rt></ruby>マリア<ruby>様<rt>さま</rt></ruby>）",
+            "text_en": "Medicine Prescription Guide (Patient: Maria Tanaka)"
+          },
+          {
+            "id": 2,
+            "text_ja": "【ピンクの錠剤（胃腸薬）】1回2錠、1日2回（朝・夕の食後にお飲みください）。",
+            "ruby_html": "【ピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>（<ruby>胃腸薬<rt>いちょうやく</rt></ruby>）】1<ruby>回<rt>かい</rt></ruby>2<ruby>錠<rt>じょう</rt></ruby>、1<ruby>日<rt>にち</rt></ruby>2<ruby>回<rt>かい</rt></ruby>（<ruby>朝<rt>あさ</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>の<ruby>食後<rt>しょくご</rt></ruby>にお<ruby>飲<rt>の</rt></ruby>みください）。",
+            "text_en": "[Pink Tablets (Gastrointestinal)]: 2 tablets per dose, twice daily (take after breakfast and dinner)."
+          },
+          {
+            "id": 3,
+            "text_ja": "【白のカプセル（風邪薬）】1回1錠、1日3回（朝・昼・夕の食後にお飲みください）。",
+            "ruby_html": "【<ruby>白<rt>しろ</rt></ruby>のカプセル（<ruby>風邪薬<rt>かぜぐすり</rt></ruby>）】1<ruby>回<rt>かい</rt></ruby>1<ruby>錠<rt>じょう</rt></ruby>、1<ruby>日<rt>にち</rt></ruby>3<ruby>回<rt>かい</rt></ruby>（<ruby>朝<rt>あさ</rt></ruby>・<ruby>昼<rt>ひる</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>の<ruby>食後<rt>しょくご</rt></ruby>にお<ruby>飲<rt>の</rt></ruby>みください）。",
+            "text_en": "[White Capsules (Cold remedy)]: 1 capsule per dose, 3 times daily (take after breakfast, lunch, and dinner)."
+          },
+          {
+            "id": 4,
+            "text_ja": "【服用上の注意】",
+            "ruby_html": "【<ruby>服用上<rt>ふくようじょう</rt></ruby>の<ruby>注意<rt>ちゅうい</rt></ruby>】",
+            "text_en": "[Precautions for Taking Medicine]"
+          },
+          {
+            "id": 5,
+            "text_ja": "・コップ1杯程度の水またはぬるま湯で、噛まずにお飲みください。",
+            "ruby_html": "・コップ1<ruby>杯程度<rt>はいていど</rt></ruby>の<ruby>水<rt>みず</rt></ruby>またはぬるま<ruby>湯<rt>ゆ</rt></ruby>で、<ruby>噛<rt>か</rt></ruby>まずにお<ruby>飲<rt>の</rt></ruby>みください。",
+            "text_en": "- Swallow without chewing, accompanied by approximately one glass of water or lukewarm water."
+          },
+          {
+            "id": 6,
+            "text_ja": "・薬を飲み忘れたときは、気がついた時点ですぐに飲んでください。",
+            "ruby_html": "・<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>み<ruby>忘<rt>わす</rt></ruby>れたときは、<ruby>気<rt>き</rt></ruby>がついた<ruby>時点<rt>じてん</rt></ruby>ですぐに<ruby>飲<rt>の</rt></ruby>んでください。",
+            "text_en": "- If you forget to take your medicine, take it as soon as you remember."
+          },
+          {
+            "id": 7,
+            "text_ja": "ただし、次に飲む時間が近い場合は1回分を飛ばし、2回分を一度に飲んではいけません。",
+            "ruby_html": "ただし、<ruby>次<rt>つぎ</rt></ruby>に<ruby>飲<rt>の</rt></ruby>む<ruby>時間<rt>じかん</rt></ruby>が<ruby>近<rt>ちか</rt></ruby>い<ruby>場合<rt>ばあい</rt></ruby>は1<ruby>回分<rt>かいぶん</rt></ruby>を<ruby>飛<rt>と</rt></ruby>ばし、2<ruby>回分<rt>かいぶん</rt></ruby>を<ruby>一度<rt>いちど</rt></ruby>に<ruby>飲<rt>の</rt></ruby>んではいけません。",
+            "text_en": "However, if the next scheduled dose is close, skip that dose; never take two doses at once."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "錠剤",
+          "reading": "じょうざい",
+          "meaning": "tablet, pill / 药片",
+          "type": "noun"
+        },
+        {
+          "term": "カプセル",
+          "reading": "カプセル",
+          "meaning": "capsule / 胶囊",
+          "type": "noun"
+        },
+        {
+          "term": "食後",
+          "reading": "しょくご",
+          "meaning": "after meals / 饭后",
+          "type": "noun"
+        },
+        {
+          "term": "服用",
+          "reading": "ふくよう",
+          "meaning": "taking medicine / 服用（药物）",
+          "type": "noun"
+        },
+        {
+          "term": "ぬるま湯",
+          "reading": "ぬるまゆ",
+          "meaning": "lukewarm water / 温水",
+          "type": "noun"
+        },
+        {
+          "term": "噛む",
+          "reading": "かむ",
+          "meaning": "to chew, bite / 咀嚼，咬",
+          "type": "verb"
+        },
+        {
+          "term": "飲み忘れる",
+          "reading": "のみわすれる",
+          "meaning": "to forget to take medicine / 忘记吃药",
+          "type": "verb"
+        },
+        {
+          "term": "飛ばす",
+          "reading": "とばす",
+          "meaning": "to skip, omit / 跳过，略过",
+          "type": "verb"
+        },
+        {
+          "term": "一度に",
+          "reading": "いちどに",
+          "meaning": "at once, at one time / 一次性，同时",
+          "type": "adverb"
+        },
+        {
+          "term": "胃腸薬",
+          "reading": "いちょうやく",
+          "meaning": "gastrointestinal medicine / 肠胃药",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-26-1",
+          "questionNumber": 1,
+          "questionText_ja": "田中さんの薬の正しい飲み方はどれか。",
+          "questionText_en": "Which of the following is the correct way for Ms. Tanaka to take her medicine?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "ピンクの錠剤は朝食後・昼食後・夕食後に1錠ずつ飲む。",
+              "text_en": "Take 1 pink tablet each after breakfast, lunch, and dinner."
+            },
+            {
+              "id": 2,
+              "text_ja": "白のカプセルは朝食後と夕食後に2錠ずつ飲む。",
+              "text_en": "Take 2 white capsules each after breakfast and dinner."
+            },
+            {
+              "id": 3,
+              "text_ja": "ピンクの錠剤と白のカプセルを昼食後に2錠ずつ飲む。",
+              "text_en": "Take 2 pink tablets and 2 white capsules together after lunch."
+            },
+            {
+              "id": 4,
+              "text_ja": "ピンクの錠剤は朝・夕の食後に2錠ずつ、白のカプセルは朝・昼・夕の食後に1錠ずつ飲む。",
+              "text_en": "Take 2 pink tablets after breakfast and dinner, and 1 white capsule after breakfast, lunch, and dinner."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "説明書に「ピンクの錠剤：1回2錠、1日2回（朝・夕の食後）」「白のカプセル：1回1錠、1日3回（朝・昼・夕の食後）」と明記されています。したがって 4 が正しい組み合わせです。",
+          "explanation_en": "The instructions specify: Pink tablets = 2 tablets, twice daily (after breakfast & dinner); White capsules = 1 capsule, 3 times daily (after breakfast, lunch & dinner). Option 4 correctly reflects this."
+        },
+        {
+          "questionId": "q-26-2",
+          "questionNumber": 2,
+          "questionText_ja": "田中さんは朝食後にピンクの錠剤と白のカプセルを飲みました。次に飲むのはいつ、どの薬か。",
+          "questionText_en": "Ms. Tanaka took both the pink tablets and white capsule after breakfast. When and which medicine should she take next?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "昼食後にピンクの錠剤だけを2錠飲む。",
+              "text_en": "Take only 2 pink tablets after lunch."
+            },
+            {
+              "id": 2,
+              "text_ja": "昼食後にピンクの錠剤と白のカプセルを両方飲む。",
+              "text_en": "Take both the pink tablets and white capsule after lunch."
+            },
+            {
+              "id": 3,
+              "text_ja": "昼食後に白のカプセルだけを1錠飲む。",
+              "text_en": "Take only 1 white capsule after lunch."
+            },
+            {
+              "id": 4,
+              "text_ja": "夕食後まで何も飲まず、夕食後に両方飲む。",
+              "text_en": "Take nothing until after dinner, then take both after dinner."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "ピンクの錠剤は「朝・夕」の1日2回なので昼食後には飲みません。一方、白のカプセルは「朝・昼・夕」の1日3回なので、昼食後に1錠飲む必要があります。したがって次に飲むのは「昼食後に白のカプセルだけを1錠」の 3 が正解です。",
+          "explanation_en": "The pink tablets are only taken at breakfast and dinner (twice daily, none at lunch). The white capsules are taken at breakfast, lunch, and dinner (3 times daily). Thus, the next dose is 1 white capsule after lunch. Option 3 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆薬の飲み方（服用指示書）",
+        "text_ja": "薬の処方箋や服用説明書では、薬剤ごとの「1回あたりの分量（何錠か）」「1日の回数」「服用のタイミング（朝・昼・夕、食前・食後・食間）」をマトリクスで正確に整理することが求められます。時系列に沿って「次に飲む薬」を追跡する設問も頻出パターンです。",
+        "text_en": "In medicine prescription guides, accurately organizing dose quantities, daily frequency, and meal timings (breakfast/lunch/dinner, before/after meals) into a mental chart is key. Tracking sequential doses across time ('what to take next') is a core JLPT task.",
+        "text_zh": "在药品使用说明书中，准确梳理每种药品的“单次剂量（几粒）”、“每日次数”、“服用时机（早/中/晚、饭前/饭后/饭间）”是解题关键。按时间顺序追踪“下一次该服用的药物”也是高频考点。",
+        "structureLayout": [
+          {
+            "component": "薬剤Aの用法用量",
+            "detail": "ピンクの錠剤：1回2錠、1日2回（朝・夕食後）",
+            "en": "Medicine A: Pink tablets (2 tabs, twice daily: breakfast/dinner)"
+          },
+          {
+            "component": "薬剤Bの用法用量",
+            "detail": "白のカプセル：1回1錠、1日3回（朝・昼・夕食後）",
+            "en": "Medicine B: White capsules (1 cap, 3 times daily: breakfast/lunch/dinner)"
+          },
+          {
+            "component": "服用上の注意",
+            "detail": "水で噛まずに飲む、飲み忘れ時のルール（二重服用禁止）",
+            "en": "Cautions: Swallow with water, no double-dosing on missed doses"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In examination questions, follow these strategic steps:",
+        "title_zh": "考试时的解题思路如下：",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "薬ごとの服用タイミングを表にまとめる。",
+            "question_en": "Create a mental matrix of timings for each medicine.",
+            "question_zh": "在脑中建立每种药物的服用时间对应表。",
+            "analysis_ja": "朝：ピンク2錠＋白1カプセル、昼：白1カプセルのみ、夕：ピンク2錠＋白1カプセル。",
+            "analysis_en": "Morning: 2 pink + 1 white; Lunch: 1 white only; Evening: 2 pink + 1 white.",
+            "analysis_zh": "早：粉色2片+白色1胶囊；中：仅白色1胶囊；晚：粉色2片+白色1胶囊。"
+          },
+          {
+            "step": 2,
+            "question_ja": "時系列の質問（「朝の次に飲むのは？」）に適用する。",
+            "question_en": "Apply the matrix to the sequential timeline question.",
+            "question_zh": "将表格应用到时间轴问题上（“早饭后之后下一次服药？”）。",
+            "analysis_ja": "朝食後の次は「昼食後」であり、飲むのは「白のカプセル1錠」だけとなる。",
+            "analysis_en": "Next after breakfast is 'lunch', where only '1 white capsule' is due.",
+            "analysis_zh": "早饭后的下一个时点是“午饭后”，此时只需服用“白色胶囊1粒”。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p3-07",
+      "pages": [
+        70,
+        71
+      ],
+      "problemNumber": 27,
+      "genre": "グラフ",
+      "genre_en": "Graphs",
+      "genre_zh": "图表",
+      "title_ja": "7) グラフ",
+      "title_en": "7) Graphs",
+      "title_zh": "7) 图表",
+      "preReading": {
+        "question_ja": "グラフを見るとき、まずどこに注目しますか。",
+        "question_en": "When looking at a graph, what do you look at first?",
+        "question_zh": "看图表时，你首先会注意什么地方？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "大学生のアルバイトに関する実態調査",
+            "ruby_html": "<ruby>大学生<rt>だいがくせい</rt></ruby>のアルバイトに<ruby>関<rt>かん</rt></ruby>する<ruby>実態調査<rt>じったいちょうさ</rt></ruby>",
+            "text_en": "Survey on University Students' Part-Time Employment"
+          },
+          {
+            "id": 2,
+            "text_ja": "ある研究所が全国の大学生約2,000人を対象に実施した調査によると、全体の約8割（男子79.4%、女子83.4%）が現在アルバイトをしていると回答しました。",
+            "ruby_html": "ある<ruby>研究所<rt>けんきゅうしょ</rt></ruby>が<ruby>全国<rt>ぜんこく</rt></ruby>の<ruby>大学生<rt>だいがくせい</rt></ruby><ruby>約<rt>やく</rt></ruby>2,000<ruby>人<rt>にん</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>実施<rt>じっし</rt></ruby>した<ruby>調査<rt>ちょうさ</rt></ruby>によると、<ruby>全体<rt>ぜんたい</rt></ruby>の<ruby>約<rt>やく</rt></ruby>8<ruby>割<rt>わり</rt></ruby>（<ruby>男子<rt>だんし</rt></ruby>79.4%、<ruby>女子<rt>じょし</rt></ruby>83.4%）が<ruby>現在<rt>げんざい</rt></ruby>アルバイトをしていると<ruby>回答<rt>かいとう</rt></ruby>しました。",
+            "text_en": "According to a survey of approximately 2,000 university students nationwide conducted by a research institute, about 80% overall (males 79.4%, females 83.4%) replied that they currently work part-time jobs."
+          },
+          {
+            "id": 3,
+            "text_ja": "【アルバイトをする一番の目的（円グラフ結果）】",
+            "ruby_html": "【アルバイトをする<ruby>一番<rt>いちばん</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>（<ruby>円<rt>えん</rt></ruby>グラフ<ruby>結果<rt>けっか</rt></ruby>）】",
+            "text_en": "[Primary Purpose for Working Part-Time (Pie Chart Results)]"
+          },
+          {
+            "id": 4,
+            "text_ja": "1位：生活費を稼ぐため（32.8%）、2位：学生生活を楽しむため（サークル活動や旅行・交際費など）（32.4%）。",
+            "ruby_html": "1<ruby>位<rt>い</rt></ruby>：<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐため（32.8%）、2<ruby>位<rt>い</rt></ruby>：<ruby>学生生活<rt>がくせいせいかつ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむため（サークル<ruby>活動<rt>かつどう</rt></ruby>や<ruby>旅行<rt>りょこう</rt></ruby>・<ruby>交際費<rt>こうさいひ</rt></ruby>など）（32.4%）。",
+            "text_en": "1st place: To earn living expenses (32.8%); 2nd place: To enjoy student life (club activities, travel, social expenses, etc.) (32.4%)."
+          },
+          {
+            "id": 5,
+            "text_ja": "3位：社会経験・就職活動に役立てるため（24.2%）、4位：その他（4.5%）、5位：学費・勉学費のため（1.0%）、無回答（5.1%）。",
+            "ruby_html": "3<ruby>位<rt>い</rt></ruby>：<ruby>社会経験<rt>しゃかいけいけん</rt></ruby>・<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>てるため（24.2%）、4<ruby>位<rt>い</rt></ruby>：その他（4.5%）、5<ruby>位<rt>い</rt></ruby>：<ruby>学費<rt>がくひ</rt></ruby>・<ruby>勉学費<rt>べんがくひ</rt></ruby>のため（1.0%）、<ruby>無回答<rt>むかいとう</rt></ruby>（5.1%）。",
+            "text_en": "3rd place: For social experience and career preparation (24.2%); 4th: Other (4.5%); 5th: For tuition / study expenses (1.0%); No response (5.1%)."
+          },
+          {
+            "id": 6,
+            "text_ja": "このように、お金を稼ぐことだけでなく、学生生活の充実や将来のキャリアを見据えて働く学生も多数存在することがわかります。",
+            "ruby_html": "このように、お<ruby>金<rt>かね</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐことだけでなく、<ruby>学生生活<rt>がくせいせいかつ</rt></ruby>の<ruby>充実<rt>じゅうじつ</rt></ruby>や<ruby>将来<rt>しょうらい</rt></ruby>のキャリアを<ruby>見据<rt>みす</rt></ruby>えて<ruby>働<rt>はたら</rt></ruby>く<ruby>学生<rt>がくせい</rt></ruby>も<ruby>多数存在<rt>たすうそんざい</rt></ruby>することがわかります。",
+            "text_en": "In this way, it is evident that beyond just earning money, many students work to enrich their student life and prepare for their future careers."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "実態調査",
+          "reading": "じったいちょうさ",
+          "meaning": "fact-finding survey, empirical study / 实际情况调查",
+          "type": "noun"
+        },
+        {
+          "term": "割合",
+          "reading": "わりあい",
+          "meaning": "ratio, percentage, proportion / 比例",
+          "type": "noun"
+        },
+        {
+          "term": "生活費",
+          "reading": "せいかつひ",
+          "meaning": "living expenses / 生活费",
+          "type": "noun"
+        },
+        {
+          "term": "稼ぐ",
+          "reading": "かせぐ",
+          "meaning": "to earn (money) / 赚（钱）",
+          "type": "verb"
+        },
+        {
+          "term": "交際費",
+          "reading": "こうさいひ",
+          "meaning": "social expenses, entertainment expenses / 应酬费，交际费",
+          "type": "noun"
+        },
+        {
+          "term": "社会経験",
+          "reading": "しゃかいけいけん",
+          "meaning": "social experience, real-world experience / 社会经验",
+          "type": "noun"
+        },
+        {
+          "term": "就職活動",
+          "reading": "しゅうしょくかつどう",
+          "meaning": "job hunting / 求职活动",
+          "type": "noun"
+        },
+        {
+          "term": "役立てる",
+          "reading": "やくだてる",
+          "meaning": "to put to use, apply toward / 用于，使起作用",
+          "type": "verb"
+        },
+        {
+          "term": "見据える",
+          "reading": "みすえる",
+          "meaning": "to look ahead to, keep in view / 着眼于，看清",
+          "type": "verb"
+        },
+        {
+          "term": "占める",
+          "reading": "しめる",
+          "meaning": "to account for, occupy / 占（比例）",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-27-1",
+          "questionNumber": 1,
+          "questionText_ja": "この調査について述べているもので最も正しいものはどれか。",
+          "questionText_en": "Which statement about this survey is the most accurate?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "男子学生のほうが女子学生よりもアルバイトをしている割合が高い。",
+              "text_en": "A higher proportion of male students work part-time jobs than female students."
+            },
+            {
+              "id": 2,
+              "text_ja": "生活費を稼ぐためにアルバイトをしている学生が半数以上を占めている。",
+              "text_en": "Students working part-time to earn living expenses account for more than half."
+            },
+            {
+              "id": 3,
+              "text_ja": "アルバイトの目的は、お金を稼ぐためだけではない。",
+              "text_en": "The purpose of working part-time jobs is not solely to earn money."
+            },
+            {
+              "id": 4,
+              "text_ja": "社会経験のためにアルバイトをする学生はほとんどいない。",
+              "text_en": "There are almost no students who work part-time jobs for social experience."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "グラフおよび本文から、生活費や勉学費を稼ぐ目的だけでなく、「学生生活を楽しむため（32.4%）」や「社会経験のため（24.2%）」などお金稼ぎ以外の目的が大きな割合を占めており、本文結びにも「お金を稼ぐことだけでなく…」と述べられています。したがって 3 が正解です。（1は男子79.4%、女子83.4%で女子のほうが高いため誤り。2は生活費は32.8%であり半数（50%）以上ではないため誤り。4は社会経験目的が24.2%と約4人に1人存在するため誤り。）",
+          "explanation_en": "The chart and text show that besides earning living expenses, students work for 'enjoying student life' (32.4%) and 'social experience' (24.2%), and the text concludes that purpose is not merely earning money. Thus, Option 3 is correct. (1 is false: females 83.4% > males 79.4%; 2 is false: living expenses is 32.8%, well under half; 4 is false: 24.2% is nearly 1 in 4 students)."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆グラフ（大学生のアルバイト調査）",
+        "text_ja": "グラフ・統計読解では、「数値の大小比較（男女比較）」「過半数（50%超）かどうか」「全体の傾向・要約（お金稼ぎだけではない）」を正確に判定する力が試されます。選択肢の「半数以上」「ほとんどいない」といった限定表現を実際の割合数値（32.8%、24.2%）と照らし合わせるのが定石です。",
+        "text_en": "In chart and statistics questions, assessing comparative sizes (male vs. female), majority status (over 50%), and overall trend synthesis ('not just for money') is crucial. Cross-reference qualifying words like 'more than half' or 'almost none' directly with chart percentages.",
+        "text_zh": "图表与统计阅读题中，考察的是准确判断“数值大小比较（男女对比）”、“是否过半数（超50%）”以及“整体趋势与总结（不仅为了挣钱）”的能力。将选项中的“半数以上”、“几乎没有”等表述与实际百分比（32.8%、24.2%）仔细对照即可识破干扰。",
+        "structureLayout": [
+          {
+            "component": "調査概要・就労率",
+            "detail": "全国大学生約2,000人対象、約8割就労（男子79.4%、女子83.4%）",
+            "en": "Survey overview: ~2,000 students, ~80% working (males 79.4%, females 83.4%)"
+          },
+          {
+            "component": "円グラフ内訳（目的）",
+            "detail": "生活費（32.8%）、学生生活（32.4%）、社会経験（24.2%）、学費（1.0%）等",
+            "en": "Pie chart breakdown: Living costs 32.8%, Enjoyment 32.4%, Social exp 24.2%, Tuition 1.0%"
+          },
+          {
+            "component": "まとめ・結論",
+            "detail": "お金稼ぎにとどまらず、生活充実やキャリアを見据えた多様な目的",
+            "en": "Conclusion: Diversified motives beyond just earning money"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In examination questions, follow these strategic steps:",
+        "title_zh": "考试时的解题思路如下：",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "数値の比較（男女比・過半数）を検証する。",
+            "question_en": "Verify numerical comparisons (gender ratio and majority threshold).",
+            "question_zh": "核对数值比较（男女比例与是否过半）。",
+            "analysis_ja": "女子83.4% > 男子79.4%（選択肢1脱落）、生活費32.8% < 50%（選択肢2脱落）。",
+            "analysis_en": "Females 83.4% > Males 79.4% (Option 1 eliminated); Living costs 32.8% < 50% (Option 2 eliminated).",
+            "analysis_zh": "女生83.4% > 男生79.4%（排除选项1）；生活费32.8% < 50%（排除选项2）。"
+          },
+          {
+            "step": 2,
+            "question_ja": "グラフ全体のメッセージと合致する要約肢を選ぶ。",
+            "question_en": "Select the summary statement that reflects the broader chart findings.",
+            "question_zh": "选择体现图表整体核心发现的总结性选项。",
+            "analysis_ja": "社会経験（24.2%）や学生生活の充実（32.4%）から、「お金を稼ぐためだけではない」が真実である。",
+            "analysis_en": "With 24.2% for social experience and 32.4% for enjoyment, 'not just to earn money' is completely accurate.",
+            "analysis_zh": "由社会经验（24.2%）和享受生活（32.4%）可知，“目的不仅是为了挣钱”真实准确。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p3-08",
+      "pages": [
+        72,
+        73
+      ],
+      "problemNumber": 28,
+      "genre": "メール（ビジネス）",
+      "genre_en": "E-mail (business)",
+      "genre_zh": "邮件（商务）",
+      "title_ja": "8) メール（ビジネス）",
+      "title_en": "8) E-mail (business)",
+      "title_zh": "8) 邮件（商务）",
+      "preReading": {
+        "question_ja": "ネットショッピングで注文したとき、どんなメールが届きますか。",
+        "question_en": "When you place an order on online shopping, what kind of email do you receive?",
+        "question_zh": "网上购物下单后，你会收到什么样的邮件？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the questions. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "【○×ショップ】ご注文商品の発送完了のお知らせ",
+            "ruby_html": "【○×ショップ】ご<ruby>注文商品<rt>ちゅうもんしょうひん</rt></ruby>の<ruby>発送完了<rt>はっそうかんりょう</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせ",
+            "text_en": "[OX Shop] Notification of Order Shipment Dispatch"
+          },
+          {
+            "id": 2,
+            "text_ja": "ソウ シューイー 様",
+            "ruby_html": "ソウ シューイー <ruby>様<rt>さま</rt></ruby>",
+            "text_en": "Dear Mr./Ms. Shu-Yi Sou,"
+          },
+          {
+            "id": 3,
+            "text_ja": "このたびは「○×ショップ」をご利用いただき、誠にありがとうございます。",
+            "ruby_html": "このたびは「○×ショップ」をご<ruby>利用<rt>りよう</rt></ruby>いただき、<ruby>誠<rt>まこと</rt></ruby>にありがとうございます。",
+            "text_en": "Thank you very much for shopping with 'OX Shop'."
+          },
+          {
+            "id": 4,
+            "text_ja": "ご注文いただきました下記の商品につきまして、本日発送の手続きが完了いたしましたのでご連絡申し上げます。",
+            "ruby_html": "ご<ruby>注文<rt>ちゅうもん</rt></ruby>いただきました<ruby>下記<rt>かき</rt></ruby>の<ruby>商品<rt>しょうひん</rt></ruby>につきまして、<ruby>本日<rt>ほんじつ</rt></ruby><ruby>発送<rt>はっそう</rt></ruby>の<ruby>手続<rt>てつづ</rt></ruby>きが<ruby>完了<rt>かんりょう</rt></ruby>いたしましたのでご<ruby>連絡申<rt>れんらくもう</rt></ruby>し<ruby>上<rt>あ</rt></ruby>げます。",
+            "text_en": "We are pleased to inform you that shipment processing for your ordered item below has been completed today."
+          },
+          {
+            "id": 5,
+            "text_ja": "【ご注文内容】注文番号：MB-987654、商品名：特選高級緑茶 ギフトセット（桐箱入り）、数量：1点。",
+            "ruby_html": "【ご<ruby>注文内容<rt>ちゅうもんないよう</rt></ruby>】<ruby>注文番号<rt>ちゅうもんばんごう</rt></ruby>：MB-987654、<ruby>商品名<rt>しょうひんめい</rt></ruby>：<ruby>特選高級緑茶<rt>とくせんこうきゅうりょくちゃ</rt></ruby> ギフトセット（<ruby>桐箱入<rt>きりばこい</rt></ruby>り）、<ruby>数量<rt>すうりょう</rt></ruby>：1<ruby>点<rt>てん</rt></ruby>。",
+            "text_en": "[Order Details] Order No: MB-987654, Product: Premium Selected Green Tea Gift Set (in paulownia wooden box), Quantity: 1."
+          },
+          {
+            "id": 6,
+            "text_ja": "【お届け先】中村 健太 様、〒150-0001 東京都渋谷区神宮前1-2-3、配達希望日時：12月15日(土) 午前中。",
+            "ruby_html": "【お<ruby>届<rt>とど</rt></ruby>け<ruby>先<rt>さき</rt></ruby>】<ruby>中村<rt>なかむら</rt></ruby> <ruby>健太<rt>けんた</rt></ruby> <ruby>様<rt>さま</rt></ruby>、〒150-0001 <ruby>東京都渋谷区神宮前<rt>とうきょうとしぶやくじんぐうまえ</rt></ruby>1-2-3、<ruby>配達希望日時<rt>はいたつきぼうにちじ</rt></ruby>：12<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby>(<ruby>土<rt>ど</rt></ruby>) <ruby>午前中<rt>ごぜんちゅう</rt></ruby>。",
+            "text_en": "[Delivery Destination] Kenta Nakamura, 1-2-3 Jingumae, Shibuya-ku, Tokyo 150-0001, Desired Delivery Time: Dec 15 (Sat) Morning."
+          },
+          {
+            "id": 7,
+            "text_ja": "【お支払い方法】クレジットカード一括払い。",
+            "ruby_html": "【お<ruby>支払<rt>しはら</rt></ruby>い<ruby>方法<rt>ほうほう</rt></ruby>】クレジットカード<ruby>一括払<rt>いっかつばら</rt></ruby>い。",
+            "text_en": "[Payment Method] Credit Card (single payment)."
+          },
+          {
+            "id": 8,
+            "text_ja": "※ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます。",
+            "ruby_html": "※ご<ruby>注文<rt>ちゅうもん</rt></ruby>の<ruby>配送状況<rt>はいそうじょうきょう</rt></ruby>は、マイページの「お<ruby>客様情報<rt>きゃくさまじょうほう</rt></ruby>」よりご<ruby>確認<rt>かくにん</rt></ruby>いただけます。",
+            "text_en": "* You can check the shipping and delivery status of your order from 'Customer Information' on your My Page."
+          },
+          {
+            "id": 9,
+            "text_ja": "※お届けに関するお問い合わせは、発送伝票番号をご確認の上、担当配送会社へ直接お問い合わせください。",
+            "ruby_html": "※お<ruby>届<rt>とど</rt></ruby>けに<ruby>関<rt>かん</rt></ruby>するお<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせは、<ruby>発送伝票番号<rt>はっそうでんぴょうばんごう</rt></ruby>をご<ruby>確認<rt>かくにん</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>、<ruby>担当配送会社<rt>たんとうはいそうがいしゃ</rt></ruby>へ<ruby>直接<rt>ちょくせつ</rt></ruby>お<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせください。",
+            "text_en": "* For inquiries regarding delivery, please check the tracking slip number and contact the assigned delivery courier directly."
+          }
+        ]
+      },
+      "footnotes": [],
+      "vocabulary": [
+        {
+          "term": "発送完了",
+          "reading": "はっそうかんりょう",
+          "meaning": "shipment completed, dispatch complete / 发货完成",
+          "type": "noun"
+        },
+        {
+          "term": "手続き",
+          "reading": "てつづき",
+          "meaning": "procedure, formality / 手续",
+          "type": "noun"
+        },
+        {
+          "term": "お届け先",
+          "reading": "おとどけさき",
+          "meaning": "shipping address, delivery recipient / 收件人，送达地址",
+          "type": "noun"
+        },
+        {
+          "term": "配達希望日時",
+          "reading": "はいたつきぼうにちじ",
+          "meaning": "desired delivery date and time / 指定送达日期与时间",
+          "type": "noun"
+        },
+        {
+          "term": "一括払い",
+          "reading": "いっかつばらい",
+          "meaning": "lump-sum payment, single payment / 一次性付清",
+          "type": "noun"
+        },
+        {
+          "term": "配送状況",
+          "reading": "はいそうじょうきょう",
+          "meaning": "delivery tracking status / 配送物流状态",
+          "type": "noun"
+        },
+        {
+          "term": "お客様情報",
+          "reading": "おきゃくさまじょうほう",
+          "meaning": "Customer Information / 客户信息",
+          "type": "noun"
+        },
+        {
+          "term": "伝票番号",
+          "reading": "でんぴょうばんごう",
+          "meaning": "tracking number, slip number / 快递单号",
+          "type": "noun"
+        },
+        {
+          "term": "特選",
+          "reading": "とくせん",
+          "meaning": "specially selected / 特选，精选",
+          "type": "noun"
+        },
+        {
+          "term": "桐箱入り",
+          "reading": "きりばこいり",
+          "meaning": "in a paulownia wooden gift box / 桐木盒装",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-28-1",
+          "questionNumber": 1,
+          "questionText_ja": "品物が中村さんの家に届けられたかどうかを知りたいが、どうしたらよいか。",
+          "questionText_en": "You want to find out whether the item has been delivered to Mr. Nakamura's house. What should you do?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "中村さんに直接電話をかけて確認する。",
+              "text_en": "Call Mr. Nakamura directly to check."
+            },
+            {
+              "id": 2,
+              "text_ja": "このメールにそのまま返信してショップに問い合わせる。",
+              "text_en": "Reply directly to this email to inquire with the shop."
+            },
+            {
+              "id": 3,
+              "text_ja": "クレジットカード会社に決済状況を確認する。",
+              "text_en": "Check the settlement status with the credit card company."
+            },
+            {
+              "id": 4,
+              "text_ja": "メール画面またはマイページの「お客様情報」から配送状況を確認する。",
+              "text_en": "Check the delivery status via 'Customer Information' on the email screen or My Page."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "メール本文の注記に「※ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます」と明記されています。したがって、中村さん宅への配達完了状況を確認するには「お客様情報」から配送状況を調べる 4 が正解です。（1はギフト受取人に直接尋ねる案内はなく不適。2は配送状況確認方法として指定されていない。3は支払いに関するもので配達状況は分からない。）",
+          "explanation_en": "The note in the email explicitly specifies: '※ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます' (You can check the shipping and delivery status of your order from Customer Information on My Page). Therefore, Option 4 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メール（ビジネス：注文発送通知）",
+        "text_ja": "Eコマースの発送完了通知メールでは、注文者（ソウ様）と受取人（中村様）が異なる「ギフト配送」の構造や、配送状況を追跡するための導線（マイページ「お客様情報」や伝票番号）を正しく読み取ることがポイントです。注記（※）に書かれた実務的な操作案内を見落とさないようにしましょう。",
+        "text_en": "In e-commerce dispatch emails, identifying gift shipment distinctions (purchaser Sou vs. recipient Nakamura) and navigational cues for tracking (My Page 'Customer Information' / slip number) in asterisks (※) is key. Always scrutinize fine-print instructions.",
+        "text_zh": "在电商发货通知邮件中，准确辨认订购人（宋先生/女士）与收件人（中村先生）不同的“礼品寄送”结构，以及追踪物流状态的操作路径（个人中心“客户信息”或单号）是关键。切勿遗漏带有星号（※）的注释说明。",
+        "structureLayout": [
+          {
+            "component": "件名・挨拶",
+            "detail": "注文商品の発送完了お知らせ、ソウ シューイー様宛て",
+            "en": "Subject & Salutation: Dispatch notice to Shu-Yi Sou"
+          },
+          {
+            "component": "注文・配送明細",
+            "detail": "商品名（緑茶ギフト）、お届け先（中村健太様）、配達指定日時、決済方法",
+            "en": "Order & Shipping specs: Gift set, recipient Nakamura, delivery slot, payment"
+          },
+          {
+            "component": "追跡・問い合わせ案内（注記）",
+            "detail": "配送状況は「お客様情報」から確認可能、配送会社への照会方法",
+            "en": "Tracking guidance: Check 'Customer Information' on My Page"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In examination questions, follow these strategic steps:",
+        "title_zh": "考试时的解题思路如下：",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "設問の目的「届けられたかどうかの確認方法」を特定する。",
+            "question_en": "Identify the prompt's purpose: How to verify if delivery occurred.",
+            "question_zh": "明确设问目的：“如何确认货物是否已送达”。",
+            "analysis_ja": "「配送状況」「お届け」に関する案内箇所を探す。",
+            "analysis_en": "Locate clauses dealing with 'delivery status' (配送状況) and 'delivery' (お届け).",
+            "analysis_zh": "在文中搜寻关于“配送状况”或“送达”的指引文字。"
+          },
+          {
+            "step": 2,
+            "question_ja": "注記（※）の指示文を照合する。",
+            "question_en": "Check note directives marked with asterisks (※).",
+            "question_zh": "核对星号（※）注释的指示。",
+            "analysis_ja": "「ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます」の文面と一致する選択肢4を選ぶ。",
+            "analysis_en": "Select Option 4, which directly matches '配送状況は、マイページの「お客様情報」よりご確認いただけます'.",
+            "analysis_zh": "选取与“配送状况可从个人中心的「客户信息」处确认”直接对应的选项4。"
+          }
+        ]
+      }
+    }
+  ]
+}
