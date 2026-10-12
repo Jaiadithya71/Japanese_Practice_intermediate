@@ -67,6 +67,8 @@ export async function loadIntermediateVocabDB() {
             });
           }
         }
+        // Some units ship without word ids; derive stable ones so SRS progress is per word
+        words.forEach((w, i) => { if (!w.id) w.id = 'v' + String(chId).padStart(2, '0') + '-' + String(i + 1).padStart(3, '0'); });
         allChapters[chId] = words;
       }
     } catch (err) {
