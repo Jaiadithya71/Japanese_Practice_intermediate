@@ -34,6 +34,7 @@ export function saveStats() {
   } catch (err) {
     console.error('Failed to save stats to localStorage:', err);
   }
+  if (typeof window !== 'undefined' && window.__n3ScheduleSync) window.__n3ScheduleSync();
 }
 
 /**
@@ -130,6 +131,7 @@ export function getWordStatus(wordId, direction = 'ja-en') {
 export function updateItemStats(itemKey, grade) {
   const s = getItemStats(itemKey);
   const now = Date.now();
+  s.lastSeen = now;
 
   if (grade === 1) { // Again / Missed
     s.incorrect = (s.incorrect || 0) + 1;
@@ -183,6 +185,7 @@ export function toggleWordHard(wordId, direction = 'ja-en') {
 export function toggleItemHard(itemKey) {
   const s = getItemStats(itemKey);
   s.isHard = !s.isHard;
+  s.lastSeen = Date.now();
   if (s.isHard) {
     s.weight = Math.max(s.weight || 1.0, HARD_THRESHOLD);
   }
