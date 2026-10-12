@@ -58,6 +58,13 @@ export function setHomeGroup(group) {
   renderLessonGrid();
 }
 
+export function chapterKeysForGroup() {
+  const isChar = state.activeChapterGroup !== 'topic';
+  const keys = Object.keys(state.vocabDB).filter(k => k.startsWith('part2_') === isChar);
+  const rank = k => (k.startsWith('review_') ? 1000 + parseInt(k.slice(7), 10) : parseInt(k.replace('part2_', ''), 10));
+  return keys.sort((a, b) => rank(a) - rank(b));
+}
+
 export function toggleChapterSelection(chId) {
   if (state.selectedChapters.has(chId)) {
     state.selectedChapters.delete(chId);
@@ -69,12 +76,7 @@ export function toggleChapterSelection(chId) {
 }
 
 export function selectAllChaptersInGroup() {
-  const prefix = state.activeChapterGroup === 'topic' ? 'part1_' : 'part2_';
-  Object.keys(state.vocabDB).forEach(k => {
-    if (k.startsWith(prefix)) {
-      state.selectedChapters.add(k);
-    }
-  });
+  chapterKeysForGroup().forEach(k => state.selectedChapters.add(k));
   renderLessonGrid();
   updateStudyButtonState();
 }
@@ -98,10 +100,7 @@ export function renderLessonGrid() {
   if (!container) return;
   container.innerHTML = '';
 
-  const prefix = state.activeChapterGroup === 'topic' ? 'part1_' : 'part2_';
-  const chapterKeys = Object.keys(state.vocabDB)
-    .filter(k => k.startsWith(prefix))
-    .sort();
+  const chapterKeys = chapterKeysForGroup();
 
   chapterKeys.forEach(chId => {
     const meta = state.chapterMetadata[chId] || {};
@@ -116,7 +115,7 @@ export function renderLessonGrid() {
     });
 
     const pct = words.length > 0 ? Math.round((mastered / words.length) * 100) : 0;
-    const shortLabel = chId.replace('part1_', 'T').replace('part2_', 'C');
+    const shortLabel = chId.startsWith('part2_') ? 'C' + chId.slice(6) : chId.startsWith('review_') ? 'R' + chId.slice(7) : 'T' + chId;
 
     const card = document.createElement('div');
     card.className = `lesson-card${isSelected ? ' selected' : ''}`;
