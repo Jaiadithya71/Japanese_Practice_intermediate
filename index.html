@@ -19,7 +19,9 @@
   <link rel="stylesheet" href="css/home.css" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css" />
+  <link rel="stylesheet" href="css/kanji.css" />
   <link rel="stylesheet" href="css/study.css" />
+  <link rel="stylesheet" href="css/test.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/sync.css" />
@@ -63,10 +65,10 @@
       </button>
 
       <!-- Book 4 -->
-      <button class="nav-btn" data-view="kanji" onclick="alert('Book 4: Kanji transcription in progress. Staged slot ready!')">
+      <button class="nav-btn" data-view="kanji" onclick="showView('kanji')">
         <i class="fa-solid fa-shapes"></i>
         <span>4. 漢字 (Kanji)</span>
-        <span class="badge badge-amber">Building</span>
+        <span class="badge badge-green">Ready</span>
       </button>
 
       <!-- Book 5 -->
@@ -74,6 +76,13 @@
         <i class="fa-solid fa-headphones"></i>
         <span>5. 聴解 (Listening)</span>
         <span class="badge badge-amber">Building</span>
+      </button>
+
+      <!-- Practice Tests & Drills Hub -->
+      <button class="nav-btn" data-view="test" onclick="showView('test')">
+        <i class="fa-solid fa-file-pen"></i>
+        <span>Class Tests</span>
+        <span class="badge badge-accent" id="nav-test-count">1,338 Qs</span>
       </button>
 
       <!-- Cross-Pillar Weak Points Desk -->
@@ -143,12 +152,13 @@
             <p id="due-breakdown-sub">Aligned with daily routine (7:30 AM & 5:45 PM IST slots)</p>
           </div>
         </div>
-        <div style="display: flex; gap: 0.5rem;">
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
           <button class="btn btn-primary" onclick="startDueReview('all')">
             <i class="fa-solid fa-play"></i> Omni-Review (All)
           </button>
           <button class="btn btn-ghost btn-sm" onclick="startDueReview('vocab')" title="Review Vocabulary items only">Vocab Only</button>
           <button class="btn btn-ghost btn-sm" onclick="startDueReview('reading')" title="Review Reading points only">Reading Only</button>
+          <button class="btn btn-ghost btn-sm" onclick="startDueReview('kanji')" title="Review Kanji items only">Kanji Only</button>
         </div>
       </div>
 
@@ -180,10 +190,10 @@
           <span class="stat-card-sub">Connection Rules</span>
         </div>
         <!-- Book 4 -->
-        <div class="stat-card" style="border-left: 3px solid #ec4899; opacity: 0.85;">
-          <span class="stat-card-title">4. 漢字 (Kanji) <span class="badge badge-amber" style="font-size: 0.65rem;">Building</span></span>
-          <span class="stat-card-value" style="font-size: 1.3rem;">~370 kanji</span>
-          <span class="stat-card-sub">2-Way Active Recall</span>
+        <div class="stat-card" style="border-left: 3px solid #ec4899; cursor: pointer;" onclick="showView('kanji')">
+          <span class="stat-card-title">4. 漢字 (Kanji) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-kanji-count">654 Kanji</span>
+          <span class="stat-card-sub">443 N3 + 300 Review</span>
         </div>
         <!-- Book 5 -->
         <div class="stat-card" style="border-left: 3px solid #8b5cf6; opacity: 0.85;">
@@ -339,6 +349,121 @@
     </section>
 
     <!-- ==============================================
+         VIEW 4: KANJI MASTERY SUITE (BOOK 4)
+         ============================================== -->
+    <section id="view-kanji" class="view">
+      <div class="view-header">
+        <div class="view-title-group">
+          <h2>4. 漢字 (Kanji Master Suite)</h2>
+          <p>新完全マスター 漢字 N3 · 443 Target Characters, Lessons 01–25, Practice Drills &amp; Bessatsu 300 Review</p>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="btn btn-primary" onclick="drillKanjiLesson(state.kanjiLesson === 'all' ? 1 : state.kanjiLesson)">
+            <i class="fa-solid fa-play"></i> Drill Lesson Cards
+          </button>
+        </div>
+      </div>
+
+      <!-- Kanji Tabs -->
+      <div class="kanji-tabs">
+        <button class="kanji-tab-btn active" data-tab="target" onclick="setKanjiTab('target')">
+          <i class="fa-solid fa-shapes"></i> Target Kanji (443)
+        </button>
+        <button class="kanji-tab-btn" data-tab="exercises" onclick="setKanjiTab('exercises')">
+          <i class="fa-solid fa-pen-to-square"></i> Practice Drills (Part 1)
+        </button>
+        <button class="kanji-tab-btn" data-tab="review300" onclick="setKanjiTab('review300')">
+          <i class="fa-solid fa-list-check"></i> Review 300 (N4/N5)
+        </button>
+        <button class="kanji-tab-btn" data-tab="special" onclick="setKanjiTab('special')">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Special Readings (熟字訓)
+        </button>
+        <button class="kanji-tab-btn" data-tab="mock" onclick="setKanjiTab('mock')">
+          <i class="fa-solid fa-clipboard-check"></i> Mock Exams (実力テスト)
+        </button>
+      </div>
+
+      <!-- TAB 1: TARGET KANJI PANE -->
+      <div id="kanji-pane-target" class="kanji-view-container">
+        <!-- Control Bar -->
+        <div class="kanji-control-bar">
+          <div class="kanji-filter-group">
+            <select class="kanji-select" id="kanji-part-select" onchange="setKanjiPart(this.value)">
+              <option value="all">All Parts (1–5)</option>
+              <option value="1">Part 1 (Lessons 1–5)</option>
+              <option value="2">Part 2 (Lessons 6–10)</option>
+              <option value="3">Part 3 (Lessons 11–15)</option>
+              <option value="4">Part 4 (Lessons 16–20)</option>
+              <option value="5">Part 5 (Lessons 21–25)</option>
+            </select>
+            <select class="kanji-select" id="kanji-lesson-select" onchange="setKanjiLesson(this.value)">
+              <option value="all">All Lessons (1–25)</option>
+              <!-- Populated dynamically -->
+            </select>
+            <select class="kanji-select" id="kanji-status-select" onchange="setKanjiFilter(this.value)">
+              <option value="all">All Statuses</option>
+              <option value="mastered">Mastered</option>
+              <option value="learning">Learning</option>
+              <option value="hard">Struggling (Hard)</option>
+              <option value="unseen">Unseen</option>
+            </select>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <div class="kanji-search-box">
+              <i class="fa-solid fa-magnifying-glass" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+              <input type="text" placeholder="Search kanji, reading, meaning..." oninput="onKanjiSearch(this.value)" />
+            </div>
+            <span id="kanji-count-badge" class="badge badge-purple">443 / 443 Kanji</span>
+          </div>
+        </div>
+
+        <!-- Kanji Grid -->
+        <div id="kanji-grid" class="kanji-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 2: PRACTICE EXERCISES PANE -->
+      <div id="kanji-pane-exercises" class="kanji-view-container" style="display: none;">
+        <div id="kanji-exercises-container" class="kanji-exercise-workspace">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 3: REVIEW 300 PANE -->
+      <div id="kanji-pane-review300" class="kanji-view-container" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius); border: 1px solid var(--border);">
+          <div>
+            <h3 style="font-size: 1.1rem; color: #fff;">N4・N5 Review 300 Kanji</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Fundamental N4/N5 characters and readings from the Bessatsu supplementary booklet.</p>
+          </div>
+          <span class="badge badge-cyan">300 Kanji</span>
+        </div>
+        <div id="kanji-review300-grid" class="kanji-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 4: SPECIAL READINGS PANE -->
+      <div id="kanji-pane-special" class="kanji-view-container" style="display: none;">
+        <div style="background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.1rem; color: #fff;">特別な読み方をする漢字の言葉 (Special Readings)</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Irregular and jukujikun compound readings frequently tested in JLPT N3 Question 1.</p>
+        </div>
+        <div id="kanji-special-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 5: MOCK EXAMS PANE -->
+      <div id="kanji-pane-mock" class="kanji-view-container" style="display: none;">
+        <div id="kanji-mock-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
          VIEW 5: ACTIVE RECALL STUDY SESSION (SRS)
          ============================================== -->
     <section id="view-study" class="view">
@@ -407,6 +532,107 @@
       </div>
     </section>
 
+    <!-- ==============================================
+         VIEW 6: CLASS TESTS & PRACTICE EXAMS
+         ============================================== -->
+    <section id="view-test" class="view">
+      <!-- Screen 1: Hub & Selector -->
+      <div id="test-hub-screen">
+        <header class="view-header">
+          <div>
+            <h1 class="view-title">Intermediate Class Tests &amp; Practice Drills</h1>
+            <p class="view-subtitle">Official-format multiple-choice exercises from Shin Kanzen Master N3 with instant explanations.</p>
+          </div>
+        </header>
+
+        <!-- Stats Overview -->
+        <div class="test-hub-dashboard">
+          <div class="test-stat-card">
+            <div class="test-stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div>
+              <div class="test-stat-val" id="test-total-count">36</div>
+              <div class="test-stat-label">Total Test Modules</div>
+            </div>
+          </div>
+          <div class="test-stat-card">
+            <div class="test-stat-icon" style="color:var(--green); background:rgba(34,211,164,0.15)"><i class="fa-solid fa-list-check"></i></div>
+            <div>
+              <div class="test-stat-val" id="test-total-questions">1,338</div>
+              <div class="test-stat-label">Practice Questions</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="test-category-tabs" id="test-category-tabs">
+          <!-- Filled by test.js -->
+        </div>
+
+        <!-- Tests Grid -->
+        <div class="test-cards-grid" id="test-cards-grid">
+          <!-- Filled by test.js -->
+        </div>
+      </div>
+
+      <!-- Screen 2: Test Taking Runner -->
+      <div id="test-runner-screen" class="hide">
+        <div class="test-runner-container">
+          <div class="test-runner-header">
+            <button class="btn btn-ghost btn-sm" onclick="window.exitTestToHub()">
+              <i class="fa-solid fa-arrow-left"></i> Exit Test
+            </button>
+            <span id="tr-test-title" style="font-weight:700; font-size:0.95rem; color:var(--text);">Test Title</span>
+            <span id="tr-question-count" style="font-weight:700; color:var(--accent); font-size:0.9rem;">1 / 20</span>
+          </div>
+
+          <div class="tr-progress-bar">
+            <div id="tr-progress-fill" class="tr-progress-fill" style="width: 0%;"></div>
+          </div>
+
+          <!-- Reading Passage Box (if applicable) -->
+          <div id="tr-passage-box" style="display:none; background:var(--bg3); border:1px solid var(--border); border-radius:16px; padding:1.25rem; max-height:260px; overflow-y:auto; line-height:1.75; font-family:var(--font-japanese); font-size:1.05rem;">
+            <div id="tr-passage-text"></div>
+          </div>
+
+          <!-- Question Box -->
+          <div class="test-question-box">
+            <div id="tr-prompt">Question Prompt</div>
+            <div id="tr-options-container" class="test-options-list">
+              <!-- Rendered options -->
+            </div>
+            
+            <div id="tr-explanation-box" class="test-explanation-card" style="display:none;">
+              <div id="tr-explanation-text"></div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end;">
+            <button id="tr-next-btn" class="btn btn-primary" onclick="window.advanceTestQuestion()" style="display:none; min-height:48px; padding:0 2rem; border-radius:14px;">
+              Next Question <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 3: Results & Summary -->
+      <div id="test-results-screen" class="hide">
+        <div style="max-width:520px; margin:2rem auto; text-align:center; background:var(--bg2); border:1px solid var(--border); border-radius:24px; padding:2rem 1.5rem; box-shadow:0 12px 36px rgba(0,0,0,0.5);">
+          <div style="width:80px; height:80px; border-radius:50%; background:var(--accent-light); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:2.5rem; margin:0 auto 1.25rem;">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h2 style="font-family:var(--font-display); font-size:1.75rem; font-weight:800; margin-bottom:0.25rem;">Test Completed!</h2>
+          <div id="res-score-pct" style="font-family:var(--font-display); font-size:3.5rem; font-weight:800; color:var(--accent); line-height:1.2; margin:0.75rem 0;">0%</div>
+          <div id="res-score-detail" style="font-size:1.1rem; font-weight:700; color:var(--text-muted); margin-bottom:1rem;">0 / 0 Correct</div>
+          <p id="res-score-msg" style="font-size:0.95rem; margin-bottom:1.5rem; line-height:1.6;"></p>
+          <div style="display:flex; gap:0.75rem; justify-content:center;">
+            <button class="btn btn-primary" onclick="window.exitTestToHub()" style="padding:0.75rem 2rem; border-radius:14px;">
+              Return to Tests
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- ===== MOBILE BOTTOM NAVIGATION BAR ===== -->
@@ -419,13 +645,13 @@
       <i class="fa-solid fa-book-bookmark"></i>
       <span>Vocab</span>
     </button>
-    <button class="mobile-nav-item" data-view="reading" onclick="showView('reading')">
-      <i class="fa-solid fa-book-open-reader"></i>
-      <span>Dokkai</span>
+    <button class="mobile-nav-item" data-view="kanji" onclick="showView('kanji')">
+      <i class="fa-solid fa-shapes"></i>
+      <span>Kanji</span>
     </button>
-    <button class="mobile-nav-item" data-view="study" onclick="startOmniReview()">
-      <i class="fa-solid fa-play"></i>
-      <span>Review</span>
+    <button class="mobile-nav-item" data-view="test" onclick="showView('test')">
+      <i class="fa-solid fa-file-pen"></i>
+      <span>Tests</span>
     </button>
     <button class="mobile-nav-item" id="btn-more-menu" onclick="openMoreMenu()">
       <i class="fa-solid fa-ellipsis"></i>
@@ -435,10 +661,53 @@
   <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()">
     <div class="more-panel" onclick="event.stopPropagation()">
       <div class="more-grab"></div>
+      <button class="more-item" onclick="closeMoreMenu();showView('reading')"><i class="fa-solid fa-book-open-reader"></i> 2. 読解 (Reading)</button>
+      <button class="more-item" onclick="closeMoreMenu();startOmniReview()"><i class="fa-solid fa-bolt"></i> Daily Omni-Review</button>
       <button class="more-item" onclick="closeMoreMenu();showView('hard-words')"><i class="fa-solid fa-fire"></i> Weak points</button>
       <button class="more-item" onclick="closeMoreMenu();openSyncSetup()"><i class="fa-solid fa-cloud-arrow-up"></i> Backup &amp; sync</button>
       <button class="more-item" onclick="closeMoreMenu();toggleFurigana()"><i class="fa-solid fa-font"></i> Toggle furigana</button>
       <button class="more-item more-close" onclick="closeMoreMenu()">Close</button>
+    </div>
+  </div>
+
+  <!-- ===== KANJI DETAIL MODAL ===== -->
+  <div id="kanji-modal" class="kanji-modal-overlay" onclick="if(event.target===this)closeKanjiModal()">
+    <div class="kanji-modal-box">
+      <div class="kanji-modal-header">
+        <div class="kanji-modal-hero">
+          <div id="km-bigchar" class="kanji-modal-bigchar">字</div>
+          <div class="kanji-modal-meta-title">
+            <h2 id="km-title">Lesson 1: Kanji Title</h2>
+            <p id="km-sub">Part 1 · N3 Target Kanji</p>
+          </div>
+        </div>
+        <button class="btn-ghost btn-sm" onclick="closeKanjiModal()" style="font-size: 1.25rem; color: var(--text-dim);">&times;</button>
+      </div>
+
+      <div class="kanji-modal-body">
+        <div class="kanji-reading-table">
+          <span class="kanji-reading-label">音読み (On):</span>
+          <span id="km-onyomi" style="color: #f472b6; font-weight: 600;">—</span>
+          <span class="kanji-reading-label">訓読み (Kun):</span>
+          <span id="km-kunyomi" style="color: var(--text); font-weight: 600;">—</span>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Vocabulary &amp; Compounds</h4>
+          <div id="km-words-list" class="kanji-words-list">
+            <!-- Words rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div class="kanji-modal-footer">
+        <button id="km-hard-btn" class="btn btn-sm btn-ghost" onclick="toggleModalKanjiHard()">
+          <i class="fa-solid fa-fire"></i> Mark as Weak Point
+        </button>
+        <button class="btn btn-sm btn-primary" onclick="drillActiveModalKanji()">
+          <i class="fa-solid fa-play"></i> Drill Flashcard
+        </button>
+      </div>
     </div>
   </div>
 

@@ -1,0 +1,2144 @@
+# -*- coding: utf-8 -*-
+"""
+Builder for Shin Kanzen Master Kanji N3 - Part 1 Exercises (Lessons 01-05 + Summary 1)
+Outputs: nihongo-intermediate/data/kanji/exercises_part1.json
+"""
+import json
+import os
+import sys
+
+if sys.stdout.encoding != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
+output_path = os.path.join(
+    os.path.dirname(__file__),
+    '..', '..', 'data', 'kanji', 'exercises_part1.json'
+)
+output_path = os.path.abspath(output_path)
+
+data = {
+    "metadata": {
+        "title": "新完全マスター 漢字 N3 - 練習問題 第1部 (第1課〜第5課・まとめ問題1)",
+        "title_en": "Shin Kanzen Master Kanji N3 - Practice Exercises Part 1 (Lessons 1-5 & Review 1)",
+        "part": 1,
+        "lessons": [1, 2, 3, 4, 5],
+        "description": "Comprehensive textbook practice exercises transcribed directly from Shin Kanzen Master Kanji N3 pages 4 to 24 (Images 38-56). Features 160+ items across active recall, multiple choice, radical assembly, sentence fill, and reading/writing.",
+        "version": "1.0.0"
+    },
+    "lessons": [
+        # ==========================================
+        # LESSON 1 (pp. 4-5)
+        # ==========================================
+        {
+            "lesson_number": 1,
+            "title_ja": "第1回 訓読み：名詞",
+            "title_en": "Lesson 1: Kunyomi - Nouns",
+            "pages": [4, 5],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_01_1",
+                    "title_ja": "1. 絵を見て、読み方を書きましょう。",
+                    "title_en": "1. Look at the pictures and write the readings.",
+                    "type": "reading_recall",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_01_1_1",
+                            "kanji": "葉",
+                            "target_word": "葉",
+                            "reading": "は",
+                            "ruby_html": "<ruby>葉<rt>は</rt></ruby>",
+                            "question_ja": "木に（ 葉 ）がたくさんついている。",
+                            "options": ["1 は", "2 ね", "3 くさ", "4 えだ"],
+                            "answer": "1",
+                            "explanation": "「葉」の訓読みは「は」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_01_1_2",
+                            "kanji": "根",
+                            "target_word": "根",
+                            "reading": "ね",
+                            "ruby_html": "<ruby>根<rt>ね</rt></ruby>",
+                            "question_ja": "植物が土の中に（ 根 ）を張っている。",
+                            "options": ["1 き", "2 ね", "3 み", "4 くき"],
+                            "answer": "2",
+                            "explanation": "「根」の訓読みは「ね」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_01_1_3",
+                            "kanji": "虫",
+                            "target_word": "虫",
+                            "reading": "むし",
+                            "ruby_html": "<ruby>虫<rt>むし</rt></ruby>",
+                            "question_ja": "庭で小さな（ 虫 ）を見つけた。",
+                            "options": ["1 むし", "2 とり", "3 うま", "4 さかな"],
+                            "answer": "1",
+                            "explanation": "「虫」の訓読みは「むし」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_01_1_4",
+                            "kanji": "馬",
+                            "target_word": "馬",
+                            "reading": "うま",
+                            "ruby_html": "<ruby>馬<rt>うま</rt></ruby>",
+                            "question_ja": "牧場で（ 馬 ）に乗った。",
+                            "options": ["1 うし", "2 ぶた", "3 うま", "4 いぬ"],
+                            "answer": "3",
+                            "explanation": "「馬」の訓読みは「うま」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_01_1_5",
+                            "kanji": "草",
+                            "target_word": "草",
+                            "reading": "くさ",
+                            "ruby_html": "<ruby>草<rt>くさ</rt></ruby>",
+                            "question_ja": "庭の（ 草 ）を抜いた。",
+                            "options": ["1 はな", "2 くさ", "3 き", "4 は"],
+                            "answer": "2",
+                            "explanation": "「草」の訓読みは「くさ」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_01_1_6",
+                            "kanji": "妻",
+                            "target_word": "妻",
+                            "reading": "つま",
+                            "ruby_html": "<ruby>妻<rt>つま</rt></ruby>",
+                            "question_ja": "私の（ 妻 ）は料理が得意です。",
+                            "options": ["1 はは", "2 あね", "3 つま", "4 むすめ"],
+                            "answer": "3",
+                            "explanation": "「妻」の訓読みは「つま」です。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_01_1_7",
+                            "kanji": "命",
+                            "target_word": "命",
+                            "reading": "いのち",
+                            "ruby_html": "<ruby>命<rt>いのち</rt></ruby>",
+                            "question_ja": "すべての生き物の（ 命 ）は大切だ。",
+                            "options": ["1 こころ", "2 いのち", "3 からだ", "4 ちから"],
+                            "answer": "2",
+                            "explanation": "「命」の訓読みは「いのち」です。"
+                        },
+                        {
+                            "item_id": 8,
+                            "id": "k_ex_01_1_8",
+                            "kanji": "子",
+                            "target_word": "子供",
+                            "reading": "こども",
+                            "ruby_html": "<ruby>子供<rt>こども</rt></ruby>",
+                            "question_ja": "公園で（ 子供 ）たちが遊んでいる。",
+                            "options": ["1 おとな", "2 こども", "3 わかもの", "4 あかちゃん"],
+                            "answer": "2",
+                            "explanation": "「子供」の読み方は「こども」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_01_2",
+                    "title_ja": "2. 正しいものを選びましょう。",
+                    "title_en": "2. Choose the correct kanji/word for each context.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_01_2_1",
+                            "kanji": "辺",
+                            "target_word": "辺り",
+                            "reading": "あたり",
+                            "question_ja": "駅の（ a 辺り　b 近く ）で、友達と会った。",
+                            "options": ["1 辺り", "2 近く"],
+                            "answer": "1",
+                            "explanation": "「その周辺・付近」を表す名詞として「辺り（あたり）」が最も適しています。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_01_2_2",
+                            "kanji": "型",
+                            "target_word": "型",
+                            "reading": "かた",
+                            "question_ja": "このシャツは、古い（ a 形　b 型 ）です。",
+                            "options": ["1 形", "2 型"],
+                            "answer": "2",
+                            "explanation": "製品のモデルやタイプ・様式を表す場合は「型（かた）」を使います。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_01_2_3",
+                            "kanji": "貝",
+                            "target_word": "貝",
+                            "reading": "かい",
+                            "question_ja": "海で、きれいな（ a 貝　b 魚 ）を拾った。",
+                            "options": ["1 貝", "2 魚"],
+                            "answer": "1",
+                            "explanation": "海辺で「拾う」対象として「貝（かい）」が自然です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_01_2_4",
+                            "kanji": "玉",
+                            "target_word": "玉",
+                            "reading": "たま",
+                            "question_ja": "指輪の（ a 玉　b 石 ）が取れてしまった。",
+                            "options": ["1 玉", "2 石"],
+                            "answer": "1",
+                            "explanation": "宝石や丸い飾り玉には「玉（たま）」を用います。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_01_2_5",
+                            "kanji": "酒",
+                            "target_word": "酒",
+                            "reading": "さけ",
+                            "question_ja": "誕生日に、高級な（ a 酒　b ワイン ）をもらった。",
+                            "options": ["1 酒", "2 ワイン"],
+                            "answer": "1",
+                            "explanation": "日本の漢字「酒（さけ）」は酒類全般または日本酒を指します。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_01_2_6",
+                            "kanji": "雪",
+                            "target_word": "雪",
+                            "reading": "ゆき",
+                            "question_ja": "冬になって、山に（ a 雪　b 氷 ）が降った。",
+                            "options": ["1 雪", "2 氷"],
+                            "answer": "1",
+                            "explanation": "空から「降る」ものは「雪（ゆき）」です（「氷が降る」とは言いません）。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_01_2_7",
+                            "kanji": "寺",
+                            "target_word": "寺",
+                            "reading": "てら",
+                            "question_ja": "京都の有名な（ a 寺　b 神社 ）を見学した。",
+                            "options": ["1 寺", "2 神社"],
+                            "answer": "1",
+                            "explanation": "仏教の寺院を表す漢字は「寺（てら）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_01_3",
+                    "title_ja": "3. 漢字の部分を選んで、漢字を完成しましょう。",
+                    "title_en": "3. Assemble the radicals to form target kanji.",
+                    "type": "radical_assembly",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_01_3_1",
+                            "kanji": "雲",
+                            "target_word": "雲",
+                            "reading": "くも",
+                            "question_ja": "「雨」＋（ 云 ）＝ 空に白い（ 雲 ）が浮かんでいる。",
+                            "options": ["1 云 (雲)", "2 生 (星)", "3 白 (皆)", "4 火 (畑)"],
+                            "answer": "1",
+                            "explanation": "「雨（あめかんむり）」に「云」を合わせて「雲（くも）」になります。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_01_3_2",
+                            "kanji": "星",
+                            "target_word": "星",
+                            "reading": "ほし",
+                            "question_ja": "「日」＋（ 生 ）＝ 夜空に（ 星 ）が輝いている。",
+                            "options": ["1 生 (星)", "2 石 (岩)", "3 火 (畑)", "4 云 (雲)"],
+                            "answer": "1",
+                            "explanation": "「日（ひへん）」に「生」を合わせて「星（ほし）」になります。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_01_3_3",
+                            "kanji": "皆",
+                            "target_word": "皆",
+                            "reading": "みな",
+                            "question_ja": "「比」＋（ 白 ）＝ （ 皆 ）で一緒に歌いましょう。",
+                            "options": ["1 白 (皆)", "2 石 (岩)", "3 生 (星)", "4 云 (雲)"],
+                            "answer": "1",
+                            "explanation": "「比」に「白」を合わせて「皆（みな）」になります。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_01_3_4",
+                            "kanji": "岩",
+                            "target_word": "岩",
+                            "reading": "いわ",
+                            "question_ja": "「山」＋（ 石 ）＝ 海岸に大きな（ 岩 ）がある。",
+                            "options": ["1 石 (岩)", "2 火 (畑)", "3 白 (皆)", "4 生 (星)"],
+                            "answer": "1",
+                            "explanation": "「山」に「石」を合わせて「岩（いわ）」になります。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_01_3_5",
+                            "kanji": "畑",
+                            "target_word": "畑",
+                            "reading": "はたけ",
+                            "question_ja": "「田」＋（ 火 ）＝ おじいさんは（ 畑 ）で野菜を作っている。",
+                            "options": ["1 火 (畑)", "2 石 (岩)", "3 白 (皆)", "4 云 (雲)"],
+                            "answer": "1",
+                            "explanation": "「田」に「火」を合わせて「畑（はたけ）」になります。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_01_4",
+                    "title_ja": "4. 漢字を選んで、文を完成しましょう。[月、組、毛、米、糸]",
+                    "title_en": "4. Select the matching kanji to complete each sentence.",
+                    "type": "sentence_fill",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_01_4_1",
+                            "kanji": "月",
+                            "target_word": "毎月",
+                            "reading": "まいつき",
+                            "question_ja": "毎[　]、銀行に貯金をしている。",
+                            "options": ["1 月 (毎月)", "2 組 (毎組)", "3 毛 (毎毛)", "4 米 (毎米)"],
+                            "answer": "1",
+                            "explanation": "「毎月（まいつき）」＝ 毎月ごとに。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_01_4_2",
+                            "kanji": "組",
+                            "target_word": "番組",
+                            "reading": "ばんぐみ",
+                            "question_ja": "夜7時からのテレビの番[　]を見る。",
+                            "options": ["1 月 (番月)", "2 組 (番組)", "3 糸 (番糸)", "4 米 (番米)"],
+                            "answer": "2",
+                            "explanation": "「番組（ばんぐみ）」＝ テレビやラジオの放送プログラム。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_01_4_3",
+                            "kanji": "毛",
+                            "target_word": "毛糸",
+                            "reading": "けいと",
+                            "question_ja": "冬に向けて、あたたかい[　]糸のセーターを編む。",
+                            "options": ["1 毛 (毛糸)", "2 米 (米糸)", "3 組 (組糸)", "4 月 (月糸)"],
+                            "answer": "1",
+                            "explanation": "「毛糸（けいと）」＝ 羊毛などの紡績糸。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_01_4_4",
+                            "kanji": "米",
+                            "target_word": "米",
+                            "reading": "こめ",
+                            "question_ja": "日本人は昔から[　]を主食にしている。",
+                            "options": ["1 米 (こめ)", "2 糸 (いと)", "3 毛 (け)", "4 月 (つき)"],
+                            "answer": "1",
+                            "explanation": "「米（こめ）」＝ 稲の実・主食。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_01_4_5",
+                            "kanji": "糸",
+                            "target_word": "糸",
+                            "reading": "いと",
+                            "question_ja": "細い針の穴に[　]を通すのは難しい。",
+                            "options": ["1 糸 (いと)", "2 毛 (け)", "3 組 (くみ)", "4 米 (こめ)"],
+                            "answer": "1",
+                            "explanation": "「糸（いと）」＝ 縫い物や織物に使う繊維の筋。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_01_5",
+                    "title_ja": "5. 下線の部分の漢字・平仮名を書きましょう。",
+                    "title_en": "5. Write the reading or kanji for the underlined parts.",
+                    "type": "reading_writing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_01_5_1",
+                            "kanji": "語",
+                            "target_word": "物語",
+                            "reading": "ものがたり",
+                            "question_ja": "おばあさんが昔の<u>物語</u>を聞かせてくれた。",
+                            "options": ["1 ものがたり", "2 かたりごと", "3 はなしごと", "4 ものはなし"],
+                            "answer": "1",
+                            "explanation": "「物語」の正しい読み方は「ものがたり」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_01_5_2",
+                            "kanji": "側",
+                            "target_word": "外側",
+                            "reading": "そとがわ",
+                            "question_ja": "箱の<u>外側</u>にシールが貼ってある。",
+                            "options": ["1 そとがわ", "2 そとそば", "3 がいそく", "4 ほかそく"],
+                            "answer": "1",
+                            "explanation": "「外側」の正しい読み方は「そとがわ」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_01_5_3",
+                            "kanji": "番",
+                            "target_word": "番組",
+                            "reading": "ばんぐみ",
+                            "question_ja": "見たいテレビの<u>番組</u>を録画した。",
+                            "options": ["1 ばんぐみ", "2 ばんそしき", "3 ばんくみ", "4 つぎくみ"],
+                            "answer": "1",
+                            "explanation": "「番組」の正しい読み方は「ばんぐみ」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_01_5_4",
+                            "kanji": "市",
+                            "target_word": "市場",
+                            "reading": "いちば",
+                            "question_ja": "朝早く魚の<u>市場</u>へ見学に行った。",
+                            "options": ["1 いちば", "2 しじょう", "3 まちば", "4 いちじょう"],
+                            "answer": "1",
+                            "explanation": "魚や野菜の生鮮市場は「いちば」と訓読みします。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_01_5_5",
+                            "kanji": "型",
+                            "target_word": "大型",
+                            "reading": "おおがた",
+                            "question_ja": "部屋に<u>大型</u>のテレビを置いた。",
+                            "options": ["1 おおがた", "2 だいがた", "3 だいけい", "4 たいけい"],
+                            "answer": "1",
+                            "explanation": "「大型」の正しい読み方は「おおがた」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_01_5_6",
+                            "kanji": "昔",
+                            "target_word": "昔",
+                            "reading": "むかし",
+                            "question_ja": "<u>昔</u>の日本の暮らしについて本を読んだ。",
+                            "options": ["1 むかし", "2 いにしえ", "3 ぜんかい", "4 まえ"],
+                            "answer": "1",
+                            "explanation": "「昔」の正しい読み方は「むかし」です。"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # ==========================================
+        # LESSON 2 (pp. 6-7)
+        # ==========================================
+        {
+            "lesson_number": 2,
+            "title_ja": "第2回 訓読み：動詞 1",
+            "title_en": "Lesson 2: Kunyomi - Verbs 1",
+            "pages": [6, 7],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_02_1",
+                    "title_ja": "1. 絵を見て、読み方を書きましょう。",
+                    "title_en": "1. Look at the pictures and write the verb readings.",
+                    "type": "reading_recall",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_02_1_1",
+                            "kanji": "投",
+                            "target_word": "投げました",
+                            "reading": "なげました",
+                            "ruby_html": "<ruby>投<rt>な</rt></ruby>げました",
+                            "question_ja": "ピッチャーがボールを（ 投げました ）。",
+                            "options": ["1 なげました", "2 うけました", "3 うちました", "4 けりました"],
+                            "answer": "1",
+                            "explanation": "「投げる」の読み方は「なげる」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_02_1_2",
+                            "kanji": "打",
+                            "target_word": "打ちます",
+                            "reading": "うちます",
+                            "ruby_html": "<ruby>打<rt>う</rt></ruby>ちます",
+                            "question_ja": "金づちで壁に釘を（ 打ちます ）。",
+                            "options": ["1 うちます", "2 おします", "3 ひきます", "4 はらいます"],
+                            "answer": "1",
+                            "explanation": "「打つ」の読み方は「うつ」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_02_1_3",
+                            "kanji": "泣",
+                            "target_word": "泣いています",
+                            "reading": "ないています",
+                            "ruby_html": "<ruby>泣<rt>な</rt></ruby>いています",
+                            "question_ja": "赤ちゃんが大声で（ 泣いています ）。",
+                            "options": ["1 ないています", "2 わらっています", "3 おこっています", "4 ねています"],
+                            "answer": "1",
+                            "explanation": "「泣く」の読み方は「なく」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_02_1_4",
+                            "kanji": "笑",
+                            "target_word": "笑っています",
+                            "reading": "わらっています",
+                            "ruby_html": "<ruby>笑<rt>わら</rt></ruby>っています",
+                            "question_ja": "友達と楽しそうに（ 笑っています ）。",
+                            "options": ["1 わらっています", "2 ないています", "3 さけんでいます", "4 うたっています"],
+                            "answer": "1",
+                            "explanation": "「笑う」の読み方は「わらう」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_02_2",
+                    "title_ja": "2. 正しいものを選びましょう。",
+                    "title_en": "2. Choose the correct verb expression.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_02_2_1",
+                            "kanji": "越",
+                            "target_word": "越える",
+                            "reading": "こえる",
+                            "question_ja": "制限速度や基準を（ a 越える　b 抜ける ）。",
+                            "options": ["1 越える", "2 抜ける"],
+                            "answer": "1",
+                            "explanation": "ある基準や山・境界を超過・通過するときは「越える（こえる）」を使います。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_02_2_2",
+                            "kanji": "呼",
+                            "target_word": "呼んで",
+                            "reading": "よんで",
+                            "question_ja": "遠くにいる友達の名前を大きな声で（ a 呼んで　b 叫んで ）合図した。",
+                            "options": ["1 呼んで", "2 叫んで"],
+                            "answer": "1",
+                            "explanation": "相手を名指しして招く動作は「呼ぶ（よぶ）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_02_2_3",
+                            "kanji": "比",
+                            "target_word": "比べて",
+                            "reading": "くらべて",
+                            "question_ja": "二つの商品の値段と質を（ a 比べて　b 合わせて ）選んだ。",
+                            "options": ["1 比べて", "2 合わせて"],
+                            "answer": "1",
+                            "explanation": "複数の対象を比較対照するときは「比べる（くらべる）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_02_3",
+                    "title_ja": "3. 漢字を選んで、文を完成しましょう。[込む、殺す、越す、着く]",
+                    "title_en": "3. Fill in the sentences using the verbs.",
+                    "type": "sentence_fill",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_02_3_1",
+                            "kanji": "込",
+                            "target_word": "込んでいる",
+                            "reading": "こんでいる",
+                            "question_ja": "朝の通勤電車はいつも満員で（ 込んでいる ）。",
+                            "options": ["1 込んでいる", "2 殺している", "3 越している", "4 着いている"],
+                            "answer": "1",
+                            "explanation": "混雑する・中に入る意の「込む（こむ）」。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_02_3_2",
+                            "kanji": "殺",
+                            "target_word": "殺した",
+                            "reading": "ころした",
+                            "question_ja": "部屋に入ってきた蚊を（ 殺した ）。",
+                            "options": ["1 殺した", "2 越した", "3 込んだ", "4 着いた"],
+                            "answer": "1",
+                            "explanation": "「殺す（ころす）」＝ 命を絶つ。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_02_3_3",
+                            "kanji": "越",
+                            "target_word": "引っ越す",
+                            "reading": "ひっこす",
+                            "question_ja": "来月、新しいマンションに（ 引っ越す ）。",
+                            "options": ["1 引っ越す", "2 引っ込む", "3 引っ殺す", "4 引っ着く"],
+                            "answer": "1",
+                            "explanation": "「引っ越す（ひっこす）」＝ 住まいを移す。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_02_3_4",
+                            "kanji": "着",
+                            "target_word": "落ち着いて",
+                            "reading": "おちついて",
+                            "question_ja": "緊張しないで、（ 落ち着いて ）話してください。",
+                            "options": ["1 落ち着いて", "2 落ち越して", "3 落ち込んで", "4 落ち殺して"],
+                            "answer": "1",
+                            "explanation": "「落ち着く（おちつく）」＝ 心が静まる。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_02_4",
+                    "title_ja": "4. 漢字の部分を選んで、漢字を完成しましょう。[払、折、押]",
+                    "title_en": "4. Assemble hand-radical verbs.",
+                    "type": "radical_assembly",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_02_4_1",
+                            "kanji": "払",
+                            "target_word": "払う",
+                            "reading": "はらう",
+                            "question_ja": "レジで買い物の代金を（ 払う ）。",
+                            "options": ["1 払う (はらう)", "2 折る (おる)", "3 押す (おす)", "4 拾う (ひろう)"],
+                            "answer": "1",
+                            "explanation": "「扌（てへん）」＋「厶」＝「払う（はらう）」。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_02_4_2",
+                            "kanji": "折",
+                            "target_word": "折る",
+                            "reading": "おる",
+                            "question_ja": "風が強くて木の枝を（ 折る ）。",
+                            "options": ["1 折る (おる)", "2 払う (はらう)", "3 押す (おす)", "4 投げる (なげる)"],
+                            "answer": "1",
+                            "explanation": "「扌」＋「斤」＝「折る（おる）」。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_02_4_3",
+                            "kanji": "押",
+                            "target_word": "押す",
+                            "reading": "おす",
+                            "question_ja": "エレベーターのボタンを（ 押す ）。",
+                            "options": ["1 押す (おす)", "2 折る (おる)", "3 払う (はらう)", "4 打つ (うつ)"],
+                            "answer": "1",
+                            "explanation": "「扌」＋「甲」＝「押す（おす）」。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_02_5",
+                    "title_ja": "5. 下線の部分の漢字・平仮名を書きましょう。",
+                    "title_en": "5. Write the kanji or reading for the underlined words.",
+                    "type": "reading_writing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_02_5_1",
+                            "kanji": "並",
+                            "target_word": "並べた",
+                            "reading": "ならべた",
+                            "question_ja": "机の上に本をきれいに<u>並べた</u>。",
+                            "options": ["1 ならべた", "2 くらべた", "3 そろえた", "4 あわせた"],
+                            "answer": "1",
+                            "explanation": "「並べる」の読み方は「ならべる」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_02_5_2",
+                            "kanji": "落",
+                            "target_word": "落ちる",
+                            "reading": "おちる",
+                            "question_ja": "秋になって木から葉が<u>落ちる</u>。",
+                            "options": ["1 おちる", "2 さがる", "3 ふる", "4 こぼれる"],
+                            "answer": "1",
+                            "explanation": "「落ちる」の読み方は「おちる」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_02_5_3",
+                            "kanji": "迎",
+                            "target_word": "迎える",
+                            "reading": "むかえる",
+                            "question_ja": "空港で海外からのお客さんを<u>迎える</u>。",
+                            "options": ["1 むかえる", "2 おくる", "3 つれていく", "4 あう"],
+                            "answer": "1",
+                            "explanation": "「迎える」の読み方は「むかえる」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_02_5_4",
+                            "kanji": "渡",
+                            "target_word": "渡って",
+                            "reading": "わたって",
+                            "question_ja": "青信号を見て横断歩道を<u>渡って</u>ください。",
+                            "options": ["1 わたって", "2 とおって", "3 こえて", "4 はしって"],
+                            "answer": "1",
+                            "explanation": "「渡る」の読み方は「わたる」です。"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # ==========================================
+        # LESSON 3 (pp. 10-11)
+        # ==========================================
+        {
+            "lesson_number": 3,
+            "title_ja": "第3回 訓読み：動詞 2",
+            "title_en": "Lesson 3: Kunyomi - Verbs 2",
+            "pages": [10, 11],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_03_1",
+                    "title_ja": "1. 絵を見て、読み方を書きましょう。",
+                    "title_en": "1. Look at the pictures and write verb readings.",
+                    "type": "reading_recall",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_03_1_1",
+                            "kanji": "減",
+                            "target_word": "減ります",
+                            "reading": "へります",
+                            "ruby_html": "<ruby>減<rt>へ</rt></ruby>ります",
+                            "question_ja": "ダイエットをして体重が（ 減ります ）。",
+                            "options": ["1 へります", "2 ふえます", "3 おちます", "4 なくなります"],
+                            "answer": "1",
+                            "explanation": "「減る」の読み方は「へる」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_03_1_2",
+                            "kanji": "困",
+                            "target_word": "困ります",
+                            "reading": "こまります",
+                            "ruby_html": "<ruby>困<rt>こま</rt></ruby>ります",
+                            "question_ja": "財布を忘れて出かけて（ 困ります ）。",
+                            "options": ["1 こまります", "2 なやみます", "3 あせります", "4 おこります"],
+                            "answer": "1",
+                            "explanation": "「困る」の読み方は「こまる」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_03_1_3",
+                            "kanji": "助",
+                            "target_word": "助けます",
+                            "reading": "たすけます",
+                            "ruby_html": "<ruby>助<rt>たす</rt></ruby>けます",
+                            "question_ja": "川でおぼれそうな子供を（ 助けます ）。",
+                            "options": ["1 たすけます", "2 まもります", "3 てつだいます", "4 つかまえます"],
+                            "answer": "1",
+                            "explanation": "「助ける」の読み方は「たすける」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_03_1_4",
+                            "kanji": "喜",
+                            "target_word": "喜びます",
+                            "reading": "よろこびます",
+                            "ruby_html": "<ruby>喜<rt>よろこ</rt></ruby>びます",
+                            "question_ja": "試験に合格して家族みんなで（ 喜びます ）。",
+                            "options": ["1 よろこびます", "2 たのしみます", "3 わらいます", "4 おどろきます"],
+                            "answer": "1",
+                            "explanation": "「喜ぶ」の読み方は「よろこぶ」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_03_2",
+                    "title_ja": "2. 正しいものを選びましょう。",
+                    "title_en": "2. Choose the correct verb usage.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_03_2_1",
+                            "kanji": "近",
+                            "target_word": "近づいて",
+                            "reading": "ちかづいて",
+                            "question_ja": "目的地にだんだん（ a 近づいて　b 寄って ）きた。",
+                            "options": ["1 近づいて", "2 寄って"],
+                            "answer": "1",
+                            "explanation": "距離や時間が狭まる意は「近づく（ちかづく）」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_03_2_2",
+                            "kanji": "学",
+                            "target_word": "学んで",
+                            "reading": "まなんで",
+                            "question_ja": "大学で経済の理論を（ a 学んで　b 習って ）いる。",
+                            "options": ["1 学んで", "2 習って"],
+                            "answer": "1",
+                            "explanation": "学問体系や教養を修める意は「学ぶ（まなぶ）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_03_2_3",
+                            "kanji": "続",
+                            "target_word": "手続き",
+                            "reading": "てつづき",
+                            "question_ja": "市役所でビザ更新の（ a 手続き　b 手順 ）を行った。",
+                            "options": ["1 手続き", "2 手順"],
+                            "answer": "1",
+                            "explanation": "公式な申請事務は「手続き（てつづき）」と言います。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_03_2_4",
+                            "kanji": "効",
+                            "target_word": "効いて",
+                            "reading": "きいて",
+                            "question_ja": "風邪薬が（ a 効いて　b 利いて ）熱が下がった。",
+                            "options": ["1 効いて", "2 利いて"],
+                            "answer": "1",
+                            "explanation": "薬品などの効能が現れるときは「効く（きく）」を用います。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_03_2_5",
+                            "kanji": "逃",
+                            "target_word": "逃げた",
+                            "reading": "にげた",
+                            "question_ja": "カゴから小鳥が外へ（ a 逃げた　b 走った ）。",
+                            "options": ["1 逃げた", "2 走った"],
+                            "answer": "1",
+                            "explanation": "捕らえられていた場所から逃亡・脱出する意は「逃げる（にげる）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_03_3",
+                    "title_ja": "3. 漢字の部分を選んで、漢字を完成しましょう。[泊、付、計、晴]",
+                    "title_en": "3. Radical assembly practice.",
+                    "type": "radical_assembly",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_03_3_1",
+                            "kanji": "泊",
+                            "target_word": "泊まる",
+                            "reading": "とまる",
+                            "question_ja": "「氵（さんずい）」＋「白」＝ 温泉旅館に一晩（ 泊まる ）。",
+                            "options": ["1 泊まる (とまる)", "2 付く (つく)", "3 計る (はかる)", "4 晴れる (はれる)"],
+                            "answer": "1",
+                            "explanation": "「氵」＋「白」＝「泊まる（とまる）」。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_03_3_2",
+                            "kanji": "付",
+                            "target_word": "付ける",
+                            "reading": "つける",
+                            "question_ja": "「亻（にんべん）」＋「寸」＝ ノートに名前を（ 付ける ）。",
+                            "options": ["1 付ける (つける)", "2 泊まる (とまる)", "3 計る (はかる)", "4 続く (つづく)"],
+                            "answer": "1",
+                            "explanation": "「亻」＋「寸」＝「付ける（つける）」。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_03_3_3",
+                            "kanji": "計",
+                            "target_word": "計る",
+                            "reading": "はかる",
+                            "question_ja": "「言（ごんべん）」＋「十」＝ 時間を時計で（ 計る ）。",
+                            "options": ["1 計る (はかる)", "2 付ける (つける)", "3 申す (もうす)", "4 呼ぶ (よぶ)"],
+                            "answer": "1",
+                            "explanation": "「言」＋「十」＝「計る（はかる）」。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_03_3_4",
+                            "kanji": "晴",
+                            "target_word": "晴れる",
+                            "reading": "はれる",
+                            "question_ja": "「日（ひへん）」＋「青」＝ 明日は空がすっきりと（ 晴れる ）。",
+                            "options": ["1 晴れる (はれる)", "2 泊まる (とまる)", "3 効く (きく)", "4 助ける (たすける)"],
+                            "answer": "1",
+                            "explanation": "「日」＋「青」＝「晴れる（はれる）」。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_03_4",
+                    "title_ja": "4. 漢字を選んで、文を完成しましょう。[申す、困る、負ける、届く、続く]",
+                    "title_en": "4. Fill in the sentences with appropriate verbs.",
+                    "type": "sentence_fill",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_03_4_1",
+                            "kanji": "申",
+                            "target_word": "申します",
+                            "reading": "もうします",
+                            "question_ja": "はじめまして、田中と（ 申します ）。よろしくお願いいたします。",
+                            "options": ["1 申します", "2 困ります", "3 負けます", "4 届きます"],
+                            "answer": "1",
+                            "explanation": "「言う」の謙譲語は「申す（もうす）」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_03_4_2",
+                            "kanji": "困",
+                            "target_word": "困りました",
+                            "reading": "こまりました",
+                            "question_ja": "傘を持たずに激しい雨に降られて、（ 困りました ）。",
+                            "options": ["1 困りました", "2 申しました", "3 届きました", "4 続きました"],
+                            "answer": "1",
+                            "explanation": "処置に窮する意は「困る（こまる）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_03_4_3",
+                            "kanji": "負",
+                            "target_word": "負けて",
+                            "reading": "まけて",
+                            "question_ja": "サッカーの決勝戦で（ 負けて ）、とても悔しかった。",
+                            "options": ["1 負けて", "2 困って", "3 届いて", "4 続いて"],
+                            "answer": "1",
+                            "explanation": "勝負に敗れる意は「負ける（まける）」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_03_4_4",
+                            "kanji": "届",
+                            "target_word": "届いた",
+                            "reading": "とどいた",
+                            "question_ja": "海外の友達から送られた小包が、無事に家に（ 届いた ）。",
+                            "options": ["1 届いた", "2 続いた", "3 申した", "4 負けた"],
+                            "answer": "1",
+                            "explanation": "品物が行き着く意は「届く（とどく）」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_03_4_5",
+                            "kanji": "続",
+                            "target_word": "続くと",
+                            "reading": "つづくと",
+                            "question_ja": "明日も今日のように良い天気が（ 続くと ）いいですね。",
+                            "options": ["1 続くと", "2 届くと", "3 申すと", "4 負けると"],
+                            "answer": "1",
+                            "explanation": "状態が途切れず維持される意は「続く（つづく）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_03_5",
+                    "title_ja": "5. 下線の部分の漢字・平仮名を書きましょう。",
+                    "title_en": "5. Write the reading or kanji for the underlined items.",
+                    "type": "reading_writing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_03_5_1",
+                            "kanji": "込",
+                            "target_word": "申し込み",
+                            "reading": "もうしこみ",
+                            "question_ja": "講座の<u>もうしこみ</u>はウェブサイトからお願いします。",
+                            "options": ["1 申し込み", "2 申込み", "3 言込み", "4 請込み"],
+                            "answer": "1",
+                            "explanation": "「もうしこみ」の正字は「申し込み」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_03_5_2",
+                            "kanji": "願",
+                            "target_word": "お願いします",
+                            "reading": "おねがいします",
+                            "question_ja": "先生、こちらの書類の確認を<u>お願いします</u>。",
+                            "options": ["1 おねがいします", "2 おいのりします", "3 おもうします", "4 おたのみます"],
+                            "answer": "1",
+                            "explanation": "「願う」の読み方は「ねがう」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_03_5_3",
+                            "kanji": "減",
+                            "target_word": "減っている",
+                            "reading": "へっている",
+                            "question_ja": "少子化の影響で、学校の生徒数が<u>減っている</u>。",
+                            "options": ["1 へっている", "2 おちている", "3 すくなくなっている", "4 きえている"],
+                            "answer": "1",
+                            "explanation": "「減る」の読み方は「へる」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_03_5_4",
+                            "kanji": "付",
+                            "target_word": "日付",
+                            "reading": "ひづけ",
+                            "question_ja": "サインの横に今日の本日の<u>日付</u>を書いてください。",
+                            "options": ["1 ひづけ", "2 にっけ", "3 にちづけ", "4 ひつき"],
+                            "answer": "1",
+                            "explanation": "「日付」の読み方は「ひづけ」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_03_5_5",
+                            "kanji": "付",
+                            "target_word": "付き合う",
+                            "reading": "つきあう",
+                            "question_ja": "休日には昔からの友人と親しく<u>付き合う</u>。",
+                            "options": ["1 つきあう", "2 つけあう", "3 ふきあう", "4 まじわる"],
+                            "answer": "1",
+                            "explanation": "「付き合う」の読み方は「つきあう」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_03_5_6",
+                            "kanji": "鳴",
+                            "target_word": "鳴いて",
+                            "reading": "ないて",
+                            "question_ja": "朝早くから庭の木で小鳥が<u>鳴いて</u>いる。",
+                            "options": ["1 ないて", "2 うたって", "3 よんで", "4 さけんで"],
+                            "answer": "1",
+                            "explanation": "動物や鳥が声を出す意は「鳴く（なく）」です。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_03_5_7",
+                            "kanji": "助",
+                            "target_word": "助けて",
+                            "reading": "たすけて",
+                            "question_ja": "荷物が重くて持てないので、誰か<u>助けて</u>ください。",
+                            "options": ["1 たすけて", "2 てつだって", "3 ささえて", "4 まもって"],
+                            "answer": "1",
+                            "explanation": "「助ける」の読み方は「たすける」です。"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # ==========================================
+        # LESSON 4 (pp. 12-13)
+        # ==========================================
+        {
+            "lesson_number": 4,
+            "title_ja": "第4回 訓読み：形容詞",
+            "title_en": "Lesson 4: Kunyomi - Adjectives",
+            "pages": [12, 13],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_04_1",
+                    "title_ja": "1. 絵を見て、読み方を書きましょう。",
+                    "title_en": "1. Look at the pictures and write adjective readings.",
+                    "type": "reading_recall",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_04_1_1",
+                            "kanji": "暖",
+                            "target_word": "暖かい",
+                            "reading": "あたたかい",
+                            "ruby_html": "<ruby>暖<rt>あたた</rt></ruby>かい",
+                            "question_ja": "春になって、（ 暖かい ）日が続いています。",
+                            "options": ["1 あたたかい", "2 すずしい", "3 あつい", "4 さむい"],
+                            "answer": "1",
+                            "explanation": "気候・気温が心地よく温和な意は「暖かい（あたたかい）」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_04_1_2",
+                            "kanji": "厚",
+                            "target_word": "厚い",
+                            "reading": "あつい",
+                            "ruby_html": "<ruby>厚<rt>あつ</rt></ruby>い",
+                            "question_ja": "真冬なので、（ 厚い ）コートを着て外に出た。",
+                            "options": ["1 あつい", "2 うすい", "3 おもい", "4 ふかい"],
+                            "answer": "1",
+                            "explanation": "厚みがある意は「厚い（あつい）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_04_1_3",
+                            "kanji": "丸",
+                            "target_word": "丸い",
+                            "reading": "まるい",
+                            "ruby_html": "<ruby>丸<rt>まる</rt></ruby>い",
+                            "question_ja": "満月の夜、（ 丸い ）月が夜空に輝いている。",
+                            "options": ["1 まるい", "2 しかくい", "3 ながい", "4 ひろい"],
+                            "answer": "1",
+                            "explanation": "円形・球形を表す形容詞は「丸い（まるい）」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_04_1_4",
+                            "kanji": "難",
+                            "target_word": "難しい",
+                            "reading": "むずかしい",
+                            "ruby_html": "<ruby>難<rt>むずか</rt></ruby>しい",
+                            "question_ja": "この数学の試験問題はとても（ 難しい ）。",
+                            "options": ["1 むずかしい", "2 やさしい", "3 たのしい", "4 くるしい"],
+                            "answer": "1",
+                            "explanation": "「難しい」の読み方は「むずかしい」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_04_2",
+                    "title_ja": "2. 正しいものを選びましょう。",
+                    "title_en": "2. Choose the correct expression.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_04_2_1",
+                            "kanji": "若",
+                            "target_word": "若者たち",
+                            "reading": "わかものたち",
+                            "question_ja": "流行の街には多くの（ a 若者たち　b 青年たち ）が集まっている。",
+                            "options": ["1 若者たち", "2 青年たち"],
+                            "answer": "1",
+                            "explanation": "一般に若い世代の人々を指す自然な語は「若者たち（わかものたち）」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_04_2_2",
+                            "kanji": "暗",
+                            "target_word": "真っ暗",
+                            "reading": "まっくら",
+                            "question_ja": "停電になって、部屋の中が急に（ a 真っ暗　b 暗黒 ）になった。",
+                            "options": ["1 真っ暗", "2 暗黒"],
+                            "answer": "1",
+                            "explanation": "日常表現で「完全に暗い」状態は「真っ暗（まっくら）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_04_2_3",
+                            "kanji": "全",
+                            "target_word": "全て",
+                            "reading": "すべて",
+                            "question_ja": "旅行の準備が（ a 全て　b 全部 ）整った。",
+                            "options": ["1 全て", "2 全部"],
+                            "answer": "1",
+                            "explanation": "副詞・名詞として「すべて（全て）」を用います。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_04_2_4",
+                            "kanji": "久",
+                            "target_word": "お久しぶり",
+                            "reading": "おひさしぶり",
+                            "question_ja": "先生、（ a お久しぶり　b 長い間 ）です！お元気でしたか。",
+                            "options": ["1 お久しぶり", "2 長い間"],
+                            "answer": "1",
+                            "explanation": "再会の挨拶表現は「お久しぶり（おひさしぶり）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_04_3",
+                    "title_ja": "3. 漢字の部分を選んで、漢字を完成しましょう。[忙しい、涼しい、悲しい]",
+                    "title_en": "3. Assemble feelings/state adjectives.",
+                    "type": "radical_assembly",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_04_3_1",
+                            "kanji": "忙",
+                            "target_word": "忙しい",
+                            "reading": "いそがしい",
+                            "question_ja": "「忄（りっしんべん）」＋「亡」＝ 年末は仕事が多くて（ 忙しい ）。",
+                            "options": ["1 忙しい (いそがしい)", "2 涼しい (すずしい)", "3 悲しい (かなしい)", "4 寂しい (さびしい)"],
+                            "answer": "1",
+                            "explanation": "「忄」＋「亡」＝「忙しい（いそがしい）」。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_04_3_2",
+                            "kanji": "涼",
+                            "target_word": "涼しい",
+                            "reading": "すずしい",
+                            "question_ja": "「氵（さんずい）」＋「京」＝ 秋風が吹いて夕方は（ 涼しい ）。",
+                            "options": ["1 涼しい (すずしい)", "2 忙しい (いそがしい)", "3 悲しい (かなしい)", "4 暖かい (あたたかい)"],
+                            "answer": "1",
+                            "explanation": "「氵」＋「京」＝「涼しい（すずしい）」。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_04_3_3",
+                            "kanji": "悲",
+                            "target_word": "悲しい",
+                            "reading": "かなしい",
+                            "question_ja": "「非」＋「心」＝ 大切なペットが亡くなってとても（ 悲しい ）。",
+                            "options": ["1 悲しい (かなしい)", "2 忙しい (いそがしい)", "3 涼しい (すずしい)", "4 苦しい (くるしい)"],
+                            "answer": "1",
+                            "explanation": "「非」＋「心」＝「悲しい（かなしい）」。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_04_4",
+                    "title_ja": "4. 下線の部分の漢字・平仮名を書きましょう。",
+                    "title_en": "4. Write reading or kanji for underlined adjectives.",
+                    "type": "reading_writing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_04_4_1",
+                            "kanji": "黄",
+                            "target_word": "黄色い",
+                            "reading": "きいろい",
+                            "question_ja": "春の野原に<u>きいろい</u>花が一面に咲いている。",
+                            "options": ["1 黄色い", "2 黄ろい", "3 黄色", "4 黄いろい"],
+                            "answer": "1",
+                            "explanation": "「きいろい」の漢字表記は「黄色い」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_04_4_2",
+                            "kanji": "静",
+                            "target_word": "静か",
+                            "reading": "しずか",
+                            "question_ja": "図書館の中はとても<u>静か</u>で勉強に集中できる。",
+                            "options": ["1 しずか", "2 おだやか", "3 きよらか", "4 やすらか"],
+                            "answer": "1",
+                            "explanation": "「静か」の読み方は「しずか」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_04_4_3",
+                            "kanji": "若",
+                            "target_word": "若い",
+                            "reading": "わかい",
+                            "question_ja": "おばあちゃんはいつも気持ちが<u>若い</u>。",
+                            "options": ["1 わかい", "2 あおい", "3 幼い", "4 はやい"],
+                            "answer": "1",
+                            "explanation": "「若い」の読み方は「わかい」です。"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # ==========================================
+        # SPECIAL READINGS DRILL (pp. 14-15)
+        # ==========================================
+        {
+            "lesson_number": 4.5,
+            "title_ja": "コラム 特別な読み方 (熟字訓)",
+            "title_en": "Column: Irregular Readings & Compounds",
+            "pages": [14, 15],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_special_1",
+                    "title_ja": "特別な読み方（熟字訓・音訓の例外）の読みを選びましょう。",
+                    "title_en": "Special compound readings practice.",
+                    "type": "special_readings",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_sp_1",
+                            "kanji": "朝",
+                            "target_word": "今朝",
+                            "reading": "けさ",
+                            "ruby_html": "<ruby>今朝<rt>けさ</rt></ruby>",
+                            "question_ja": "<u>今朝</u>、7時に起きました。",
+                            "options": ["1 けさ", "2 こんあさ", "3 いまあさ", "4 きょうあさ"],
+                            "answer": "1",
+                            "explanation": "「今朝」の特別な読み方は「けさ」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_sp_2",
+                            "kanji": "日",
+                            "target_word": "今日",
+                            "reading": "きょう",
+                            "ruby_html": "<ruby>今日<rt>きょう</rt></ruby>",
+                            "question_ja": "<u>今日</u>は天気がいいですね。",
+                            "options": ["1 きょう", "2 こんにち", "3 こんじつ", "4 いまひ"],
+                            "answer": "1",
+                            "explanation": "「今日」の日常的な読み方は「きょう」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_sp_3",
+                            "kanji": "笑",
+                            "target_word": "笑顔",
+                            "reading": "えがお",
+                            "ruby_html": "<ruby>笑顔<rt>えがお</rt></ruby>",
+                            "question_ja": "彼女はいつも素敵な<u>笑顔</u>をしている。",
+                            "options": ["1 えがお", "2 わらいがお", "3 しょうがん", "4 にこがお"],
+                            "answer": "1",
+                            "explanation": "「笑顔」の読み方は「えがお」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_sp_4",
+                            "kanji": "昨",
+                            "target_word": "昨日",
+                            "reading": "きのう",
+                            "ruby_html": "<ruby>昨日<rt>きのう</rt></ruby>",
+                            "question_ja": "<u>昨日</u>、デパートへ買い物に行きました。",
+                            "options": ["1 きのう", "2 さくじつ", "3 さくひ", "4 まえひ"],
+                            "answer": "1",
+                            "explanation": "「昨日」の日常的な読み方は「きのう」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_sp_5",
+                            "kanji": "果",
+                            "target_word": "果物",
+                            "reading": "くだもの",
+                            "ruby_html": "<ruby>果物<rt>くだもの</rt></ruby>",
+                            "question_ja": "食後に甘い<u>果物</u>を食べた。",
+                            "options": ["1 くだもの", "2 かぶつ", "3 はたもの", "4 みもの"],
+                            "answer": "1",
+                            "explanation": "「果物」の読み方は「くだもの」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_sp_6",
+                            "kanji": "景",
+                            "target_word": "景色",
+                            "reading": "けしき",
+                            "ruby_html": "<ruby>景色<rt>けしき</rt></ruby>",
+                            "question_ja": "山の上からの<u>景色</u>が素晴らしい。",
+                            "options": ["1 けしき", "2 けいいろ", "3 けいしょく", "4 げしき"],
+                            "answer": "1",
+                            "explanation": "「景色」の読み方は「けしき」です。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_sp_7",
+                            "kanji": "伝",
+                            "target_word": "手伝う",
+                            "reading": "てつだう",
+                            "ruby_html": "<ruby>手伝<rt>てつだ</rt></ruby>う",
+                            "question_ja": "母の料理を<u>手伝う</u>。",
+                            "options": ["1 てつだう", "2 てでんう", "3 てづたう", "4 しゅでんう"],
+                            "answer": "1",
+                            "explanation": "「手伝う」の読み方は「てつだう」です。"
+                        },
+                        {
+                            "item_id": 8,
+                            "id": "k_ex_sp_8",
+                            "kanji": "友",
+                            "target_word": "友達",
+                            "reading": "ともだち",
+                            "ruby_html": "<ruby>友達<rt>ともだち</rt></ruby>",
+                            "question_ja": "週末に<u>友達</u>と遊ぶ約束をした。",
+                            "options": ["1 ともだち", "2 ゆうたつ", "3 ゆうだち", "4 ともたつ"],
+                            "answer": "1",
+                            "explanation": "「友達」の読み方は「ともだち」です。"
+                        },
+                        {
+                            "item_id": 9,
+                            "id": "k_ex_sp_9",
+                            "kanji": "歳",
+                            "target_word": "二十歳",
+                            "reading": "はたち",
+                            "ruby_html": "<ruby>二十歳<rt>はたち</rt></ruby>",
+                            "question_ja": "来年、弟が<u>二十歳</u>になる。",
+                            "options": ["1 はたち", "2 にじゅっさい", "3 にじっさい", "4 はたさい"],
+                            "answer": "1",
+                            "explanation": "20歳の特別な読み方は「はたち」です。"
+                        },
+                        {
+                            "item_id": 10,
+                            "id": "k_ex_sp_10",
+                            "kanji": "赤",
+                            "target_word": "真っ赤",
+                            "reading": "まっか",
+                            "ruby_html": "<ruby>真っ赤<rt>まっか</rt></ruby>",
+                            "question_ja": "夕焼けで西の空が<u>真っ赤</u>に染まった。",
+                            "options": ["1 まっか", "2 まあか", "3 しんせき", "4 まか"],
+                            "answer": "1",
+                            "explanation": "「真っ赤」の読み方は「まっか」です。"
+                        },
+                        {
+                            "item_id": 11,
+                            "id": "k_ex_sp_11",
+                            "kanji": "青",
+                            "target_word": "真っ青",
+                            "reading": "まっさお",
+                            "ruby_html": "<ruby>真っ青<rt>まっさお</rt></ruby>",
+                            "question_ja": "ショックな知らせを聞いて顔が<u>真っ青</u>になった。",
+                            "options": ["1 まっさお", "2 まあお", "3 しんせい", "4 まさお"],
+                            "answer": "1",
+                            "explanation": "「真っ青」の読み方は「まっさお」です。"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # ==========================================
+        # SUMMARY 1: MATOME MONDAI 1 (pp. 16-17)
+        # ==========================================
+        {
+            "lesson_number": "summary_1",
+            "title_ja": "まとめ問題 1 (第1部 総復習)",
+            "title_en": "Summary Test 1 (Part 1 Comprehensive Review)",
+            "pages": [16, 17],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_matome1_1",
+                    "title_ja": "1. ___のことばの読み方として最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "title_en": "1. Choose the best reading (1, 2, 3, or 4) for the underlined word.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_m1_1_1",
+                            "kanji": "型",
+                            "target_word": "大型",
+                            "reading": "おおがた",
+                            "question_ja": "デパートの前に<u>大型</u>のバスが止まった。",
+                            "options": ["1 おおがた", "2 だいがた", "3 おおかた", "4 だいけい"],
+                            "answer": "1",
+                            "explanation": "「大型」の読み方は「おおがた」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_m1_1_2",
+                            "kanji": "比",
+                            "target_word": "比べて",
+                            "reading": "くらべて",
+                            "question_ja": "去年と<u>比べて</u>、今年の夏は雨が多い。",
+                            "options": ["1 ならべて", "2 くらべて", "3 そろえて", "4 あわせて"],
+                            "answer": "2",
+                            "explanation": "「比べて」の読み方は「くらべて」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_m1_1_3",
+                            "kanji": "続",
+                            "target_word": "手続き",
+                            "reading": "てつづき",
+                            "question_ja": "銀行で口座を作るための<u>手続き</u>をした。",
+                            "options": ["1 てづつき", "2 てつづき", "3 てつぎ", "4 てづぎ"],
+                            "answer": "2",
+                            "explanation": "「手続き」の読み方は「てつづき」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_m1_1_4",
+                            "kanji": "効",
+                            "target_word": "効いて",
+                            "reading": "きいて",
+                            "question_ja": "頭痛薬がよく<u>効いて</u>、楽になった。",
+                            "options": ["1 きいて", "2 といて", "3 おいて", "4 はいて"],
+                            "answer": "1",
+                            "explanation": "「効いて」の読み方は「きいて」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_m1_1_5",
+                            "kanji": "全",
+                            "target_word": "全て",
+                            "reading": "すべて",
+                            "question_ja": "提出する書類は<u>全て</u>そろいました。",
+                            "options": ["1 すべて", "2 まったく", "3 ぜんぶ", "4 もっとも"],
+                            "answer": "1",
+                            "explanation": "「全て」の読み方は「すべて」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_matome1_2",
+                    "title_ja": "2. ___のことばを漢字で書くとき、最もよいものを、1・2・3・4から一つ選びなさい。",
+                    "title_en": "2. Choose the best kanji for the underlined hiragana.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_m1_2_1",
+                            "kanji": "忙",
+                            "target_word": "忙しい",
+                            "reading": "いそがしい",
+                            "question_ja": "父は仕事で毎日とても<u>いそがしい</u>。",
+                            "options": ["1 忙しい", "2 忘しい", "3 快しい", "4 怖しい"],
+                            "answer": "1",
+                            "explanation": "「いそがしい」の正字は「忙しい」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_m1_2_2",
+                            "kanji": "窓",
+                            "target_word": "窓口",
+                            "reading": "まどぐち",
+                            "question_ja": "切符は駅の<u>まどぐち</u>で買えます。",
+                            "options": ["1 窓口", "2 戸口", "3 門口", "4 関口"],
+                            "answer": "1",
+                            "explanation": "「まどぐち」の正字は「窓口」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_m1_2_3",
+                            "kanji": "迎",
+                            "target_word": "迎え",
+                            "reading": "むかえ",
+                            "question_ja": "駅まで車で家族を<u>むかえ</u>に行った。",
+                            "options": ["1 迎え", "2 追い", "3 送り", "4 通い"],
+                            "answer": "1",
+                            "explanation": "「むかえ」の正字は「迎え」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_m1_2_4",
+                            "kanji": "鳴",
+                            "target_word": "鳴ったら",
+                            "reading": "なったら",
+                            "question_ja": "ベルが<u>なったら</u>、授業が始まります。",
+                            "options": ["1 鳴ったら", "2 呼んだら", "3 叫んだら", "4 啼いたら"],
+                            "answer": "1",
+                            "explanation": "音が鳴る意は「鳴ったら」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_m1_2_5",
+                            "kanji": "越",
+                            "target_word": "乗り越して",
+                            "reading": "のりこして",
+                            "question_ja": "電車で寝てしまって、目的の駅を<u>のりこして</u>しまった。",
+                            "options": ["1 乗り越して", "2 乗り超して", "3 乗り過して", "4 乗り込して"],
+                            "answer": "1",
+                            "explanation": "乗り過ごす・通り越す意は「乗り越して」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_matome1_3",
+                    "title_ja": "3. 下線の言葉の読み方・漢字を答えましょう。(文脈穴埋め・表記確認)",
+                    "title_en": "3. Fill in the reading or kanji for underlined items.",
+                    "type": "reading_writing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_m1_3_1",
+                            "kanji": "気",
+                            "target_word": "気付きません",
+                            "reading": "きづきません",
+                            "question_ja": "後ろから呼ばれていたのに、全然<u>気付きません</u>でした。",
+                            "options": ["1 きづきません", "2 きつきません", "3 けづきません", "4 けつきません"],
+                            "answer": "1",
+                            "explanation": "「気付く」の読み方は「きづく」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_m1_3_2",
+                            "kanji": "皆",
+                            "target_word": "皆さん",
+                            "reading": "みなさん",
+                            "question_ja": "<u>皆さん</u>、静かに聞いてください。",
+                            "options": ["1 みなさん", "2 かいさん", "3 もろさん", "4 ともさん"],
+                            "answer": "1",
+                            "explanation": "「皆さん」の読み方は「みなさん」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_m1_3_3",
+                            "kanji": "申",
+                            "target_word": "申し上げます",
+                            "reading": "もうしあげます",
+                            "question_ja": "心よりお礼を<u>申し上げます</u>。",
+                            "options": ["1 もうしあげます", "2 いわせていただきます", "3 おっしゃりあげます", "4 のべあげます"],
+                            "answer": "1",
+                            "explanation": "「申し上げる」の読み方は「もうしあげる」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_m1_3_4",
+                            "kanji": "落",
+                            "target_word": "落とし物",
+                            "reading": "おとしもの",
+                            "question_ja": "交番に財布の<u>落とし物</u>を届けた。",
+                            "options": ["1 おとしもの", "2 おちもの", "3 らくもの", "4 らくしもの"],
+                            "answer": "1",
+                            "explanation": "「落とし物」の読み方は「おとしもの」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_m1_3_5",
+                            "kanji": "届",
+                            "target_word": "届けた",
+                            "reading": "とどけた",
+                            "question_ja": "拾った荷物を警察に<u>届けた</u>。",
+                            "options": ["1 とどけた", "2 つづけた", "3 もうけた", "4 はこんだ"],
+                            "answer": "1",
+                            "explanation": "「届ける」の読み方は「とどける」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_m1_3_6",
+                            "kanji": "組",
+                            "target_word": "番組",
+                            "reading": "ばんぐみ",
+                            "question_ja": "見たいテレビの<u>番組</u>を予約した。",
+                            "options": ["1 ばんぐみ", "2 ばんくみ", "3 ばんそしき", "4 まいぐみ"],
+                            "answer": "1",
+                            "explanation": "「番組」の読み方は「ばんぐみ」です。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_m1_3_7",
+                            "kanji": "着",
+                            "target_word": "落ち着いている",
+                            "reading": "おちついている",
+                            "question_ja": "姉はどんなときも<u>落ち着いている</u>。",
+                            "options": ["1 おちついている", "2 おちつ着ている", "3 おちついている (落着)", "4 おちつきている"],
+                            "answer": "1",
+                            "explanation": "「落ち着く」の読み方は「おちつく」です。"
+                        },
+                        {
+                            "item_id": 8,
+                            "id": "k_ex_m1_3_8",
+                            "kanji": "側",
+                            "target_word": "外側",
+                            "reading": "そとがわ",
+                            "question_ja": "旅行かばんの<u>外側</u>のポケットに入れた。",
+                            "options": ["1 そとがわ", "2 そとそば", "3 がいそく", "4 ほかそく"],
+                            "answer": "1",
+                            "explanation": "「外側」の読み方は「そとがわ」です。"
+                        },
+                        {
+                            "item_id": 9,
+                            "id": "k_ex_m1_3_9",
+                            "kanji": "型",
+                            "target_word": "小型",
+                            "reading": "こがた",
+                            "question_ja": "持ち運びに便利な<u>小型</u>のカメラを買った。",
+                            "options": ["1 こがた", "2 しょうがた", "3 しょうけい", "4 こけい"],
+                            "answer": "1",
+                            "explanation": "「小型」の読み方は「こがた」です。"
+                        },
+                        {
+                            "item_id": 10,
+                            "id": "k_ex_m1_3_10",
+                            "kanji": "暗",
+                            "target_word": "真っ暗",
+                            "reading": "まっくら",
+                            "question_ja": "電気が消えると、部屋の中は<u>真っ暗</u>になった。",
+                            "options": ["1 まっくら", "2 まあくら", "3 しんあん", "4 まくら"],
+                            "answer": "1",
+                            "explanation": "「真っ暗」の読み方は「まっくら」です。"
+                        },
+                        {
+                            "item_id": 11,
+                            "id": "k_ex_m1_3_11",
+                            "kanji": "若",
+                            "target_word": "若者",
+                            "reading": "わかもの",
+                            "question_ja": "4月なのに、その<u>若者</u>は厚いコートを着ていた。",
+                            "options": ["1 わかもの", "2 じゃくしゃ", "3 わかしゃ", "4 わかもん"],
+                            "answer": "1",
+                            "explanation": "「若者」の読み方は「わかもの」です。"
+                        },
+                        {
+                            "item_id": 12,
+                            "id": "k_ex_m1_3_12",
+                            "kanji": "厚",
+                            "target_word": "厚い",
+                            "reading": "あつい",
+                            "question_ja": "その若者は<u>厚い</u>コートを着ていた。",
+                            "options": ["1 あつい", "2 うすい", "3 おもい", "4 つよい"],
+                            "answer": "1",
+                            "explanation": "「厚い」の読み方は「あつい」です。"
+                        },
+                        {
+                            "item_id": 13,
+                            "id": "k_ex_m1_3_13",
+                            "kanji": "昔",
+                            "target_word": "昔",
+                            "reading": "むかし",
+                            "question_ja": "<u>昔</u>の物語からは、いろいろなことが学べる。",
+                            "options": ["1 むかし", "2 まえ", "3 ぜん", "4 いにしえ"],
+                            "answer": "1",
+                            "explanation": "「昔」の読み方は「むかし」です。"
+                        },
+                        {
+                            "item_id": 14,
+                            "id": "k_ex_m1_3_14",
+                            "kanji": "学",
+                            "target_word": "学べる",
+                            "reading": "まなべる",
+                            "question_ja": "昔の物語からは、いろいろなことが<u>学べる</u>。",
+                            "options": ["1 まなべる", "2 ならべる", "3 がくべる", "4 おぼえられる"],
+                            "answer": "1",
+                            "explanation": "「学べる（学ぶの可能動詞）」の読み方は「まなべる」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_matome1_4",
+                    "title_ja": "4. 「グリーンホテルご案内」の文を読んで、漢字には読み方を、平仮名には漢字を答えましょう。",
+                    "title_en": "4. Read the Green Hotel Guide and complete readings/kanji.",
+                    "type": "reading_writing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_m1_4_1",
+                            "kanji": "馬",
+                            "target_word": "馬",
+                            "reading": "うま",
+                            "question_ja": "春… a. <u>うま</u> に乗って森を散歩しましょう。",
+                            "options": ["1 馬", "2 鳥", "3 牛", "4 鹿"],
+                            "answer": "1",
+                            "explanation": "「うま」の漢字は「馬」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_m1_4_2",
+                            "kanji": "子",
+                            "target_word": "子供",
+                            "reading": "こども",
+                            "question_ja": "夏… b. <u>こども</u> さんと虫取りができます。",
+                            "options": ["1 子供", "2 小供", "3 子共", "4 小人"],
+                            "answer": "1",
+                            "explanation": "「こども」の漢字表記は「子供」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_m1_4_3",
+                            "kanji": "虫",
+                            "target_word": "虫",
+                            "reading": "むし",
+                            "question_ja": "夏… 子供さんと c. <u>むし</u> 取りができます。",
+                            "options": ["1 虫", "2 魚", "3 蝉", "4 蝶"],
+                            "answer": "1",
+                            "explanation": "「むし」の漢字は「虫」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_m1_4_4",
+                            "kanji": "星",
+                            "target_word": "星",
+                            "reading": "ほし",
+                            "question_ja": "夜はきれいな d. <u>星</u> も見られます。",
+                            "options": ["1 ほし", "2 つき", "3 ひかり", "4 そら"],
+                            "answer": "1",
+                            "explanation": "「星」の読み方は「ほし」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_m1_4_5",
+                            "kanji": "畑",
+                            "target_word": "畑",
+                            "reading": "はたけ",
+                            "question_ja": "秋…料理教室： e. <u>畑</u> の野菜を使って、デザートを作りましょう。",
+                            "options": ["1 はたけ", "2 たんぼ", "3 にわ", "4 のはら"],
+                            "answer": "1",
+                            "explanation": "「畑」の読み方は「はたけ」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_m1_4_6",
+                            "kanji": "雪",
+                            "target_word": "雪",
+                            "reading": "ゆき",
+                            "question_ja": "冬…スキー教室： f. <u>ゆき</u> で遊んだり、スキーをしたりしましょう。",
+                            "options": ["1 雪", "2 氷", "3 霜", "4 霧"],
+                            "answer": "1",
+                            "explanation": "「ゆき」の漢字は「雪」です。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_m1_4_7",
+                            "kanji": "泊",
+                            "target_word": "お泊まり",
+                            "reading": "おとまり",
+                            "question_ja": "g. <u>お泊まり</u> のご予約をお待ちしております。",
+                            "options": ["1 おとまり", "2 おやすみ", "3 おすまい", "4 おやどり"],
+                            "answer": "1",
+                            "explanation": "「お泊まり」の読み方は「おとまり」です。"
+                        },
+                        {
+                            "item_id": 8,
+                            "id": "k_ex_m1_4_8",
+                            "kanji": "込",
+                            "target_word": "申し込み",
+                            "reading": "もうしこみ",
+                            "question_ja": "お電話でのお h. <u>もうしこみ</u> は、055-xxx-xxxxまで。",
+                            "options": ["1 申し込み", "2 申込み", "3 請込み", "4 言込み"],
+                            "answer": "1",
+                            "explanation": "「もうしこみ」の漢字表記は「申し込み」です。"
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # ==========================================
+        # LESSON 5 (pp. 22-24)
+        # ==========================================
+        {
+            "lesson_number": 5,
+            "title_ja": "第5回 たくさんの言葉を作る漢字：音読み",
+            "title_en": "Lesson 5: Multi-Word Building Kanji - Onyomi",
+            "pages": [22, 23, 24],
+            "exercises": [
+                {
+                    "exercise_id": "k_ex_05_1",
+                    "title_ja": "1. 下線の部分の読み方を書きましょう。",
+                    "title_en": "1. Write the readings for the underlined words.",
+                    "type": "reading_recall",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_05_1_1",
+                            "kanji": "親",
+                            "target_word": "親友",
+                            "reading": "しんゆう",
+                            "ruby_html": "<ruby>親友<rt>しんゆう</rt></ruby>",
+                            "question_ja": "① 僕たち、a. <u>親友</u> だよ。",
+                            "options": ["1 しんゆう", "2 したゆう", "3 おやとも", "4 しんとも"],
+                            "answer": "1",
+                            "explanation": "「親友」の音読みは「しんゆう」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_05_1_2",
+                            "kanji": "友",
+                            "target_word": "友人",
+                            "reading": "ゆうじん",
+                            "ruby_html": "<ruby>友人<rt>ゆうじん</rt></ruby>",
+                            "question_ja": "何でも話せる b. <u>友人</u> は大切だね。",
+                            "options": ["1 ゆうじん", "2 ともひと", "3 ゆうにん", "4 ともびと"],
+                            "answer": "1",
+                            "explanation": "「友人」の読み方は「ゆうじん」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_05_1_3",
+                            "kanji": "全",
+                            "target_word": "全力",
+                            "reading": "ぜんりょく",
+                            "ruby_html": "<ruby>全力<rt>ぜんりょく</rt></ruby>",
+                            "question_ja": "② どんなことでも a. <u>全力</u> でやる子供に育ってほしい。",
+                            "options": ["1 ぜんりょく", "2 すべてりき", "3 ぜんりき", "4 まったくりょく"],
+                            "answer": "1",
+                            "explanation": "「全力」の読み方は「ぜんりょく」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_05_1_4",
+                            "kanji": "体",
+                            "target_word": "体力",
+                            "reading": "たいりょく",
+                            "ruby_html": "<ruby>体力<rt>たいりょく</rt></ruby>",
+                            "question_ja": "そのために、子供に b. <u>体力</u> をつけよう。",
+                            "options": ["1 たいりょく", "2 からだりょく", "3 たいりき", "4 ていりょく"],
+                            "answer": "1",
+                            "explanation": "「体力」の読み方は「たいりょく」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_05_1_5",
+                            "kanji": "感",
+                            "target_word": "感動",
+                            "reading": "かんどう",
+                            "ruby_html": "<ruby>感動<rt>かんどう</rt></ruby>",
+                            "question_ja": "③ 昨日の映画、a. <u>感動</u> しました。",
+                            "options": ["1 かんどう", "2 かんうごき", "3 かんど", "4 がんどう"],
+                            "answer": "1",
+                            "explanation": "「感動」の読み方は「かんどう」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_05_1_6",
+                            "kanji": "感",
+                            "target_word": "感じ",
+                            "reading": "かんじ",
+                            "ruby_html": "<ruby>感<rt>かん</rt></ruby>じ",
+                            "question_ja": "愛の力はすごいと b. <u>感じ</u> ました。",
+                            "options": ["1 かんじ", "2 かん", "3 おもい", "4 きづき"],
+                            "answer": "1",
+                            "explanation": "「感じる」の語幹読みは「かん（じる）」です。"
+                        },
+                        {
+                            "item_id": 7,
+                            "id": "k_ex_05_1_7",
+                            "kanji": "性",
+                            "target_word": "女性",
+                            "reading": "じょせい",
+                            "ruby_html": "<ruby>女性<rt>じょせい</rt></ruby>",
+                            "question_ja": "④ こんな a. <u>女性</u> に会えるかな。",
+                            "options": ["1 じょせい", "2 おんなせい", "3 にょせい", "4 おんなひと"],
+                            "answer": "1",
+                            "explanation": "「女性」の読み方は「じょせい」です。"
+                        },
+                        {
+                            "item_id": 8,
+                            "id": "k_ex_05_1_8",
+                            "kanji": "性",
+                            "target_word": "男性",
+                            "reading": "だんせい",
+                            "ruby_html": "<ruby>男性<rt>だんせい</rt></ruby>",
+                            "question_ja": "こんな b. <u>男性</u> に会えるかな。",
+                            "options": ["1 だんせい", "2 おとこせい", "3 なんせい", "4 おとこひと"],
+                            "answer": "1",
+                            "explanation": "「男性」の読み方は「だんせい」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_05_2",
+                    "title_ja": "2. 正しいものを選びましょう。",
+                    "title_en": "2. Choose the correct reading or kanji.",
+                    "type": "multiple_choice",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_05_2_1",
+                            "kanji": "期",
+                            "target_word": "学期",
+                            "reading": "がっき",
+                            "question_ja": "9月1日から次の学期（ a がっき　b がくき ）が始まる。",
+                            "options": ["1 がっき", "2 がくき"],
+                            "answer": "1",
+                            "explanation": "「学期」は促音化して「がっき」と読みます。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_05_2_2",
+                            "kanji": "験",
+                            "target_word": "実験",
+                            "reading": "じっけん",
+                            "question_ja": "化学の実験（ a じっけん　b じつけん　c じけん ）をした。",
+                            "options": ["1 じっけん", "2 じつけん", "3 じけん"],
+                            "answer": "1",
+                            "explanation": "「実験」は「実（じつ）」が促音化して「じっけん」と読みます。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_05_2_3",
+                            "kanji": "性",
+                            "target_word": "性質",
+                            "reading": "せいしつ",
+                            "question_ja": "金は水や空気に強いというせいしつ（ a 性質　b 生質　c 姓質 ）を持つ。",
+                            "options": ["1 性質", "2 生質", "3 姓質"],
+                            "answer": "1",
+                            "explanation": "物事の特徴や特質を表す正字は「性質」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_05_2_4",
+                            "kanji": "記",
+                            "target_word": "記事",
+                            "reading": "きじ",
+                            "question_ja": "新聞のきじ（ a 語事　b 訂事　c 記事 ）で、事件を知った。",
+                            "options": ["1 語事", "2 訂事", "3 記事"],
+                            "answer": "3",
+                            "explanation": "報道や文章の記録は「記事（きじ）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_05_3",
+                    "title_ja": "3. [貝、青、言、泉、月] の中から漢字の部分を選んで、漢字を完成しましょう。",
+                    "title_en": "3. Assemble the radicals to form target compound kanji.",
+                    "type": "radical_assembly",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_05_3_1",
+                            "kanji": "線",
+                            "target_word": "線",
+                            "reading": "せん",
+                            "question_ja": "「黄色い（ 糸＋青＝線 ）まで下がってください」という注意が聞こえた。",
+                            "options": ["1 青 (線 せん)", "2 貝 (費 かいひ)", "3 言 (信 じしん)", "4 月 (期 きかん)"],
+                            "answer": "1",
+                            "explanation": "「糸」＋「青」＝「線（せん）」。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_05_3_2",
+                            "kanji": "費",
+                            "target_word": "会費",
+                            "reading": "かいひ",
+                            "question_ja": "この会では、毎月500円の会（ 弗＋貝＝費 ）を集めて、活動に使っている。",
+                            "options": ["1 貝 (費 かいひ)", "2 青 (線 せん)", "3 言 (信 じしん)", "4 泉 (線 せん)"],
+                            "answer": "1",
+                            "explanation": "「弗」＋「貝」＝「費（会費 かいひ）」。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_05_3_3",
+                            "kanji": "信",
+                            "target_word": "自信",
+                            "reading": "じしん",
+                            "question_ja": "よく勉強したので、テストには自（ 亻＋言＝信 ）がある。",
+                            "options": ["1 言 (信 じしん)", "2 貝 (費 かいひ)", "3 青 (線 せん)", "4 月 (期 きかん)"],
+                            "answer": "1",
+                            "explanation": "「亻」＋「言」＝「信（自信 じしん）」。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_05_3_4",
+                            "kanji": "期",
+                            "target_word": "期間",
+                            "reading": "きかん",
+                            "question_ja": "このプールは、夏休みの（ 其＋月＝期 ）間だけ使うことができる。",
+                            "options": ["1 月 (期 きかん)", "2 青 (線 せん)", "3 貝 (費 かいひ)", "4 言 (信 じしん)"],
+                            "answer": "1",
+                            "explanation": "「其」＋「月」＝「期（期間 きかん）」。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_05_3_5",
+                            "kanji": "情",
+                            "target_word": "友情",
+                            "reading": "ゆうじょう",
+                            "question_ja": "遠くにいても、二人の友（ 忄＋青＝情 ）は変わらない。",
+                            "options": ["1 青 (情 ゆうじょう)", "2 貝 (費 かいひ)", "3 言 (信 じしん)", "4 月 (期 きかん)"],
+                            "answer": "1",
+                            "explanation": "「忄」＋「青」＝「情（友情 ゆうじょう）」。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_05_4",
+                    "title_ja": "4. □には同じ漢字が入ります。[報、両、具] から漢字を選んで書きましょう。",
+                    "title_en": "4. Fill in the identical kanji across the word pairs.",
+                    "type": "word_pairing",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_05_4_1",
+                            "kanji": "両",
+                            "target_word": "両親",
+                            "reading": "りょうしん",
+                            "question_ja": "私の a. [ 両 ]親 は旅行が趣味だ。",
+                            "options": ["1 両 (両親 りょうしん)", "2 報 (報親)", "3 具 (具親)", "4 電 (電親)"],
+                            "answer": "1",
+                            "explanation": "父親と母親を合わせて「両親（りょうしん）」と言います。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_05_4_2",
+                            "kanji": "両",
+                            "target_word": "両側",
+                            "reading": "りょうがわ",
+                            "question_ja": "道の b. [ 両 ]側 にきれいな花が咲いている。",
+                            "options": ["1 両 (両側 りょうがわ)", "2 報 (報側)", "3 具 (具側)", "4 電 (電側)"],
+                            "answer": "1",
+                            "explanation": "左右どちらの側も指す言葉は「両側（りょうがわ）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_05_4_3",
+                            "kanji": "具",
+                            "target_word": "道具",
+                            "reading": "どうぐ",
+                            "question_ja": "キャンプに行くので、バーベキューの a. 道[ 具 ] を買った。",
+                            "options": ["1 具 (道具 どうぐ)", "2 報 (道報)", "3 両 (道両)", "4 電 (道電)"],
+                            "answer": "1",
+                            "explanation": "器具・用具の総称は「道具（どうぐ）」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_05_4_4",
+                            "kanji": "具",
+                            "target_word": "家具",
+                            "reading": "かぐ",
+                            "question_ja": "引っ越したので、新しい b. 家[ 具 ] が欲しい。",
+                            "options": ["1 具 (家具 かぐ)", "2 報 (家報)", "3 両 (家両)", "4 電 (家電)"],
+                            "answer": "1",
+                            "explanation": "机やタンスなどの室内備品は「家具（かぐ）」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_05_4_5",
+                            "kanji": "報",
+                            "target_word": "情報",
+                            "reading": "じょうほう",
+                            "question_ja": "旅行の a. 情[ 報 ] をインターネットで調べた。",
+                            "options": ["1 報 (情報 じょうほう)", "2 具 (情具)", "3 両 (情両)", "4 電 (情電)"],
+                            "answer": "1",
+                            "explanation": "知識や案内データは「情報（じょうほう）」です。"
+                        },
+                        {
+                            "item_id": 6,
+                            "id": "k_ex_05_4_6",
+                            "kanji": "報",
+                            "target_word": "電報",
+                            "reading": "でんぽう",
+                            "question_ja": "友達の結婚式に行けないので、お祝いの b. 電[ 報 ] を出した。",
+                            "options": ["1 報 (電報 でんぽう)", "2 具 (電具)", "3 両 (電両)", "4 電 (電電)"],
+                            "answer": "1",
+                            "explanation": "祝電や急報の通信は「電報（でんぽう）」です。"
+                        }
+                    ]
+                },
+                {
+                    "exercise_id": "k_ex_05_5",
+                    "title_ja": "5. [各、副、第、的、製] の中から漢字を選んで、文を完成しましょう。",
+                    "title_en": "5. Affixes & Modifiers: Complete sentences with prefix/suffix kanji.",
+                    "type": "sentence_fill",
+                    "items": [
+                        {
+                            "item_id": 1,
+                            "id": "k_ex_05_5_1",
+                            "kanji": "副",
+                            "target_word": "副社長",
+                            "reading": "ふくしゃちょう",
+                            "question_ja": "① [ 副 ]社長は、若いが優秀な人です。次の社長は彼でしょう。",
+                            "options": ["1 副 (副社長 ふくしゃちょう)", "2 各 (各社長)", "3 第 (第社長)", "4 的 (的社長)"],
+                            "answer": "1",
+                            "explanation": "社長を補佐する役職は「副社長（ふくしゃちょう）」です。"
+                        },
+                        {
+                            "item_id": 2,
+                            "id": "k_ex_05_5_2",
+                            "kanji": "第",
+                            "target_word": "第18回",
+                            "reading": "だいじゅうはっかい",
+                            "question_ja": "② [ 第 ]18回オリンピックは、東京で行われた。",
+                            "options": ["1 第 (第18回 だい)", "2 各 (各18回)", "3 副 (副18回)", "4 製 (製18回)"],
+                            "answer": "1",
+                            "explanation": "順序・回数を表す接頭辞は「第（だい）」です。"
+                        },
+                        {
+                            "item_id": 3,
+                            "id": "k_ex_05_5_3",
+                            "kanji": "各",
+                            "target_word": "各クラス",
+                            "reading": "かくクラス",
+                            "question_ja": "③ スピーチ大会に出る人を [ 各 ]クラスから一人ずつ選んでください。",
+                            "options": ["1 各 (各クラス かく)", "2 副 (副クラス)", "3 第 (第クラス)", "4 製 (製クラス)"],
+                            "answer": "1",
+                            "explanation": "それぞれのクラスを指す接頭辞は「各（かく）」です。"
+                        },
+                        {
+                            "item_id": 4,
+                            "id": "k_ex_05_5_4",
+                            "kanji": "的",
+                            "target_word": "具体的",
+                            "reading": "ぐたいてき",
+                            "question_ja": "④ 仕事の仕方を、具体[ 的 ] に教えてください。",
+                            "options": ["1 的 (具体的 ぐたいてき)", "2 製 (具体製)", "3 各 (具体各)", "4 副 (具体副)"],
+                            "answer": "1",
+                            "explanation": "状態や性質を表す接尾辞は「的（〜てき）」です。"
+                        },
+                        {
+                            "item_id": 5,
+                            "id": "k_ex_05_5_5",
+                            "kanji": "製",
+                            "target_word": "イタリア製",
+                            "reading": "イタリアせい",
+                            "question_ja": "⑤ このきれいな靴は、イタリア[ 製 ] だ。",
+                            "options": ["1 製 (イタリア製 〜せい)", "2 的 (イタリア的)", "3 各 (イタリア各)", "4 副 (イタリア副)"],
+                            "answer": "1",
+                            "explanation": "製造国や製品を表す接尾辞は「製（〜せい）」です。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
+with open(output_path, 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated Part 1 exercises at: {output_path}")
+item_count = sum(len(ex['items']) for l in data['lessons'] for ex in l['exercises'])
+print(f"Total exercises: {sum(len(l['exercises']) for l in data['lessons'])}, Total question items: {item_count}")

@@ -1,33 +1,34 @@
 /* =============================================
    NIHONGO INTERMEDIATE — Theme Variables & Tokens
+   Faithfully matched with Nihongo Trainer (4Q/5Q)
    ============================================= */
 
 :root {
   --bg:           #0d0f14;
   --bg2:          #13161d;
   --bg3:          #191d27;
-  --surface:      rgba(255,255,255,0.04);
-  --surface-hover:rgba(255,255,255,0.07);
-  --border:       rgba(255,255,255,0.08);
-  --border-strong:rgba(255,255,255,0.15);
+  --surface:      rgba(255, 255, 255, 0.04);
+  --surface-hover:rgba(255, 255, 255, 0.07);
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-strong:rgba(255, 255, 255, 0.15);
 
-  /* Brand Colors */
-  --accent:       #6366f1; /* Intermediate Indigo */
-  --accent-light: rgba(99,102,241,0.15);
-  --accent-glow:  rgba(99,102,241,0.35);
-  --green:        #10b981;
-  --green-light:  rgba(16,185,129,0.12);
-  --red:          #ef4444;
-  --red-light:    rgba(239,68,68,0.12);
-  --amber:        #f59e0b;
-  --amber-light:  rgba(245,158,11,0.12);
-  --cyan:         #06b6d4;
-  --cyan-light:   rgba(6,182,212,0.12);
+  /* Brand Colors matching 4Q/5Q Trainer */
+  --accent:       #7c6cfa; /* Signature Trainer Violet */
+  --accent-light: rgba(124, 108, 250, 0.15);
+  --accent-glow:  rgba(124, 108, 250, 0.35);
+  --green:        #22d3a4;
+  --green-light:  rgba(34, 211, 164, 0.12);
+  --red:          #f95c5c;
+  --red-light:    rgba(249, 92, 92, 0.12);
+  --amber:        #f5a623;
+  --amber-light:  rgba(245, 166, 35, 0.12);
+  --cyan:         #38bdf8;
+  --cyan-light:   rgba(56, 189, 248, 0.12);
 
   /* Text Colors */
-  --text:         #f1f5f9;
-  --text-muted:   #94a3b8;
-  --text-dim:     #64748b;
+  --text:         #f0f2f8;
+  --text-muted:   #7a8099;
+  --text-dim:     #505570;
 
   /* Fonts */
   --font-body:    'Inter', sans-serif;
@@ -35,9 +36,9 @@
   --font-japanese:'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
 
   /* Layout */
-  --sidebar-w:    240px;
-  --sidebar-bg:   #090b10;
-  --card-radius:  14px;
+  --sidebar-w:    220px;
+  --sidebar-bg:   #0a0c11;
+  --card-radius:  16px;
 }
 
 /* Reset */

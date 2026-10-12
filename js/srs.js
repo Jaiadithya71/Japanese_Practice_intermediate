@@ -84,6 +84,12 @@ export function formatItemKey(item) {
   if (item.type === 'reading_point') {
     return `R_P:${item.id}`;
   }
+  if (item.type === 'kanji' || item.book === 'kanji') {
+    return `K:${item.kanji || item.id}`;
+  }
+  if (item.type === 'kanji_exercise' || item.book === 'kanji_exercise') {
+    return `K_EX:${item.id || item.item_id}`;
+  }
   return `ITEM:${item.id}`;
 }
 
@@ -194,6 +200,14 @@ export function toggleItemHard(itemKey) {
   return s.isHard;
 }
 
+export function getKanjiStatus(char) {
+  return getItemStatus(`K:${char}`);
+}
+
+export function toggleKanjiHard(char) {
+  return toggleItemHard(`K:${char}`);
+}
+
 // =======================================================
 // OMNI-REVIEW & MULTI-BOOK DUE ITEMS
 // =======================================================
@@ -223,6 +237,24 @@ export function getDueItemsCount(pillar = 'all') {
         const key = `R_Q:${qId}`;
         const s = state.stats[key];
         if (s && s.nextDue && s.nextDue <= now) count++;
+      }
+    }
+  }
+
+  // Book 4: Kanji Target & Exercises
+  if (pillar === 'all' || pillar === 'kanji') {
+    for (const char in state.kanjiDB) {
+      const key = `K:${char}`;
+      const s = state.stats[key];
+      if (s && s.nextDue && s.nextDue <= now) count++;
+    }
+    for (const lNum in state.kanjiExercisesDB) {
+      for (const ex of state.kanjiExercisesDB[lNum]) {
+        for (const it of (ex.items || [])) {
+          const key = `K_EX:${it.id}`;
+          const s = state.stats[key];
+          if (s && s.nextDue && s.nextDue <= now) count++;
+        }
       }
     }
   }
@@ -271,6 +303,42 @@ export function getAllDueItems(pillar = 'all', limit = 20) {
     }
   }
 
+  // Book 4: Kanji Target & Exercises
+  if (pillar === 'all' || pillar === 'kanji') {
+    for (const char in state.kanjiDB) {
+      const k = state.kanjiDB[char];
+      const key = `K:${char}`;
+      const s = state.stats[key];
+      if (s && s.nextDue && s.nextDue <= now) {
+        pool.push({
+          ...k,
+          id: char,
+          kanji: char,
+          type: 'kanji',
+          key,
+          book: 'kanji'
+        });
+      }
+    }
+    for (const lNum in state.kanjiExercisesDB) {
+      for (const ex of state.kanjiExercisesDB[lNum]) {
+        for (const it of (ex.items || [])) {
+          const key = `K_EX:${it.id}`;
+          const s = state.stats[key];
+          if (s && s.nextDue && s.nextDue <= now) {
+            pool.push({
+              ...it,
+              exercise_title: ex.title_ja,
+              type: 'kanji_exercise',
+              key,
+              book: 'kanji_exercise'
+            });
+          }
+        }
+      }
+    }
+  }
+
   pool.sort(() => Math.random() - 0.5);
   return limit === 'all' ? pool : pool.slice(0, parseInt(limit, 10));
 }
@@ -303,6 +371,15 @@ export function updateSidebarStats() {
     }
   }
 
+  // Track Kanji Target Characters
+  for (const char in state.kanjiDB) {
+    const st = getItemStatus(`K:${char}`);
+    if (st === 'mastered') mastered++;
+    else if (st === 'hard') hard++;
+    else if (st === 'learning') learning++;
+    else unseen++;
+  }
+
   const elM = document.getElementById('sb-mastered');
   const elL = document.getElementById('sb-learning');
   const elH = document.getElementById('sb-struggling');
@@ -326,8 +403,9 @@ export function updateSidebarStats() {
 
   const dueVocab = getDueItemsCount('vocab');
   const dueReading = getDueItemsCount('reading');
+  const dueKanji = getDueItemsCount('kanji');
   const subText = document.getElementById('due-breakdown-sub');
   if (subText) {
-    subText.textContent = `${dueVocab} Vocab · ${dueReading} Reading Points`;
+    subText.textContent = `${dueVocab} Vocab · ${dueReading} Reading · ${dueKanji} Kanji`;
   }
 }

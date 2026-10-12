@@ -12,8 +12,23 @@ export const state = {
   readingCategories: {}, // Categorized lesson IDs
 
   grammarDB: {},         // Book 3: Grammar (Staged)
-  kanjiDB: {},           // Book 4: Kanji (Staged)
+  kanjiDB: {},           // Book 4: Kanji Target DB (443 Kanji)
+  kanjiLessons: [],      // Book 4: Lessons List (Lessons 01-25)
+  kanjiExercisesDB: {},  // Book 4: Practice Exercises
+  kanjiReview300: [],    // Book 4: Bessatsu 300 N4/N5 Kanji
+  kanjiSpecialReadings: [], // Book 4: Bessatsu Special Readings (21 items)
+  kanjiMockTests: [],    // Book 4: Mock Tests 1 & 2
   listeningDB: {},       // Book 5: Listening (Staged)
+
+  // Book 4: Kanji Browser & Workspace State
+  kanjiActiveTab: 'target', // 'target' | 'exercises' | 'review300' | 'special' | 'mock'
+  kanjiPart: 'all',         // 'all' | 1 | 2 | 3 | 4 | 5
+  kanjiLesson: 'all',       // 'all' | 1 .. 25
+  kanjiFilter: 'all',       // 'all' | 'learning' | 'hard' | 'mastered' | 'unseen'
+  kanjiSearchQuery: '',
+  kanjiExerciseLesson: 1,   // Active exercise lesson
+  kanjiExerciseAnswers: {}, // { [itemId]: answer }
+  activeKanjiModal: null,
 
   // User Stats (Unified SRS for Vocab, Reading Questions, Grammar, etc.)
   stats: {},

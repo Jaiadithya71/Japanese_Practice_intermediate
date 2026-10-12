@@ -144,6 +144,104 @@ export function renderCard() {
   }
 
   // ==========================================
+  // CASE C: KANJI TARGET CHARACTER
+  // ==========================================
+  if (item.type === 'kanji') {
+    if (lessonTag) lessonTag.textContent = `漢字 · 第${item.lesson_number}課 ${item.lesson_title_ja || ''}`;
+
+    if (!state.cardFlipped) {
+      if (state.studyDirection === 'ja-en') {
+        termEl.innerHTML = `<span style="font-size: 4rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">${item.kanji}</span>`;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal readings &amp; vocabulary</span>`;
+      } else {
+        const onStr = (item.onyomi || []).join('、 ');
+        const kunStr = (item.kunyomi || []).join('、 ');
+        termEl.innerHTML = `
+          <div style="font-size: 1.1rem; line-height: 1.6;">
+            ${(item.words || []).map(w => w.meaning_en).filter(Boolean).slice(0, 3).join(', ') || 'Recall Kanji'}
+            <div style="font-size: 0.9rem; color: #f472b6; margin-top: 0.35rem;">音: ${onStr || '—'} · 訓: ${kunStr || '—'}</div>
+          </div>
+        `;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal Kanji</span>`;
+      }
+      if (exBox) exBox.style.display = 'none';
+      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal';
+      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('grade-controls').style.display = 'none';
+    } else {
+      const onStr = (item.onyomi || []).join('、 ');
+      const kunStr = (item.kunyomi || []).join('、 ');
+      const wordsHtml = (item.words || []).map(w => `
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 0.35rem 0; border-bottom: 1px solid rgba(255,255,255,0.06);">
+          <span style="font-family: var(--font-jp); font-weight: 600;">${w.ruby_html || w.term_ja}</span>
+          <span style="color: var(--text-muted); font-size: 0.85rem;">${w.meaning_en || ''}</span>
+        </div>
+      `).join('');
+
+      termEl.innerHTML = `
+        <div>
+          <span style="font-size: 3.8rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">${item.kanji}</span>
+          <div style="font-size: 0.95rem; margin-top: 0.5rem; display: flex; justify-content: center; gap: 1rem;">
+            <span style="color: #f472b6; font-weight: 600;">音: ${onStr || '—'}</span>
+            <span style="color: var(--text-muted); font-weight: 600;">訓: ${kunStr || '—'}</span>
+          </div>
+        </div>
+      `;
+      meaningEl.innerHTML = wordsHtml ? `<div style="text-align: left; margin-top: 0.75rem; max-width: 380px; margin-left: auto; margin-right: auto;">${wordsHtml}</div>` : '';
+      if (exBox) exBox.style.display = 'none';
+      document.getElementById('card-controls-hint').style.display = 'none';
+      document.getElementById('grade-controls').style.display = 'grid';
+    }
+    return;
+  }
+
+  // ==========================================
+  // CASE D: KANJI PRACTICE EXERCISE
+  // ==========================================
+  if (item.type === 'kanji_exercise') {
+    if (lessonTag) lessonTag.textContent = `漢字練習 · ${item.exercise_title || 'Drill'}`;
+
+    const qText = item.question_ja || item.sentence || item.target_word || '';
+    if (!state.cardFlipped) {
+      termEl.innerHTML = `<div style="font-size: 1.2rem; font-family: var(--font-jp); text-align: left; line-height: 1.6;">${qText}</div>`;
+      if (item.options && item.options.length > 0) {
+        meaningEl.innerHTML = `
+          <div style="font-size: 0.95rem; text-align: left; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.4rem;">
+            ${item.options.map((opt, i) => `<div style="color: var(--text-muted);"><strong style="color: #ec4899;">${i + 1}.</strong> ${opt}</div>`).join('')}
+          </div>
+        `;
+      } else {
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal correct reading &amp; answer</span>`;
+      }
+      if (exBox) exBox.style.display = 'none';
+      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal answer';
+      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('grade-controls').style.display = 'none';
+    } else {
+      const ans = item.answer || item.reading || (item.answers ? item.answers.join(', ') : '');
+      termEl.innerHTML = `
+        <div style="font-size: 1.2rem; font-family: var(--font-jp); text-align: left; line-height: 1.6;">
+          ${qText}
+          <div style="color: var(--green); font-size: 1.1rem; margin-top: 0.75rem; font-weight: 700;">
+            <i class="fa-solid fa-circle-check"></i> 正解: ${ans}
+          </div>
+        </div>
+      `;
+      meaningEl.innerHTML = '';
+      if (item.explanation && exBox && exJa && exEn) {
+        exBox.style.display = 'block';
+        exJa.textContent = item.explanation;
+        exEn.textContent = '';
+      } else if (exBox) {
+        exBox.style.display = 'none';
+      }
+      document.getElementById('card-controls-hint').style.display = 'none';
+      document.getElementById('grade-controls').style.display = 'grid';
+    }
+    return;
+  }
+
+  // ==========================================
   // CASE B: VOCABULARY TERM
   // ==========================================
   const meta = state.chapterMetadata[item.chapter] || {};

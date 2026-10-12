@@ -5,6 +5,14 @@
 
 import { state } from './state.js';
 import { getWordStatus } from './srs.js';
+import { startStudy } from './study.js';
+
+export function startSingleChapterStudy(chId) {
+  state.selectedChapters.clear();
+  state.selectedChapters.add(chId);
+  startStudy('flashcard', false, 'home');
+}
+window.startSingleChapterStudy = startSingleChapterStudy;
 
 export function renderHomeView() {
   updateMasteryCounters();
@@ -41,12 +49,15 @@ export function updateMasteryCounters() {
 export function updatePillarCards() {
   const vocabCount = Object.values(state.vocabDB).reduce((acc, words) => acc + words.length, 0);
   const readingCount = Object.keys(state.readingDB).length;
+  const kanjiCount = Object.keys(state.kanjiDB || {}).length;
 
   const cardV = document.getElementById('pillar-vocab-count');
   const cardR = document.getElementById('pillar-reading-count');
+  const cardK = document.getElementById('pillar-kanji-count');
 
   if (cardV) cardV.textContent = `${vocabCount} words (29 units)`;
   if (cardR) cardR.textContent = `${readingCount} lessons (88 Qs)`;
+  if (cardK) cardK.textContent = `654 Kanji (443 N3 + 300 Review)`;
 }
 
 export function setHomeGroup(group) {
@@ -134,6 +145,14 @@ export function renderLessonGrid() {
           <div class="progress-bar-fill" style="width: ${pct}%;"></div>
         </div>
         <span>${pct}%</span>
+      </div>
+      <div style="display:flex; gap:0.4rem; margin-top:0.4rem;" onclick="event.stopPropagation()">
+        <button class="btn btn-ghost btn-xs" style="flex:1; font-size:0.72rem; padding:0.25rem 0.4rem; border-radius:8px;" onclick="window.startSingleChapterStudy('${chId}')">
+          <i class="fa-solid fa-play"></i> Flashcards
+        </button>
+        <button class="btn btn-ghost btn-xs" style="flex:1; font-size:0.72rem; padding:0.25rem 0.4rem; border-radius:8px; color:var(--accent);" onclick="window.startTestSession('vocab-${chId}')">
+          <i class="fa-solid fa-file-pen"></i> Test
+        </button>
       </div>
     `;
     container.appendChild(card);

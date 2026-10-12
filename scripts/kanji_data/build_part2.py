@@ -1,0 +1,969 @@
+# Part 2: Lessons 06 to 10 data builder
+import json
+import os
+
+part2_data = {
+    "metadata": {
+        "part": 2,
+        "title_ja": "たくさんの言葉を作る漢字 & 政治・経済・社会",
+        "title_en": "Kanji Forming Many Words & Politics, Economy, Society",
+        "lessons": [6, 7, 8, 9, 10]
+    },
+    "lessons": [
+        {
+            "lesson_number": 6,
+            "title_ja": "たくさんの言葉を作る漢字：音読みと訓読み",
+            "title_en": "Kanji Forming Many Words: Onyomi & Kunyomi",
+            "page": 8,
+            "kanji": [
+                {
+                    "kanji": "案",
+                    "onyomi": ["アン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "案内", "reading": "あんない", "ruby_html": "<ruby>案内<rt>あんない</rt></ruby>", "meaning_en": "Guide, guidance", "meaning_zh": "引导，带领", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "温",
+                    "onyomi": ["オン"],
+                    "kunyomi": ["あたた・かい", "あたた・まる", "あたた・める"],
+                    "words": [
+                        {"term_ja": "温度", "reading": "おんど", "ruby_html": "<ruby>温度<rt>おんど</rt></ruby>", "meaning_en": "Temperature", "meaning_zh": "温度", "is_target": False},
+                        {"term_ja": "温度計", "reading": "おんどけい", "ruby_html": "<ruby>温度計<rt>おんどけい</rt></ruby>", "meaning_en": "Thermometer (household)", "meaning_zh": "温度计", "is_target": True},
+                        {"term_ja": "気温", "reading": "きおん", "ruby_html": "<ruby>気温<rt>きおん</rt></ruby>", "meaning_en": "(Air) temperature", "meaning_zh": "气温", "is_target": True},
+                        {"term_ja": "体温", "reading": "たいおん", "ruby_html": "<ruby>体温<rt>たいおん</rt></ruby>", "meaning_en": "(Body) temperature", "meaning_zh": "体温", "is_target": True},
+                        {"term_ja": "体温計", "reading": "たいおんけい", "ruby_html": "<ruby>体温計<rt>たいおんけい</rt></ruby>", "meaning_en": "Thermometer (medical)", "meaning_zh": "体温计", "is_target": True},
+                        {"term_ja": "温かい", "reading": "あたたかい", "ruby_html": "<ruby>温<rt>あたた</rt></ruby>かい", "meaning_en": "Warm", "meaning_zh": "温暖的", "is_target": False},
+                        {"term_ja": "温まる", "reading": "あたたまる", "ruby_html": "<ruby>温<rt>あたた</rt></ruby>まる", "meaning_en": "Be heated up", "meaning_zh": "热", "is_target": True},
+                        {"term_ja": "温める", "reading": "あたためる", "ruby_html": "<ruby>温<rt>あたた</rt></ruby>める", "meaning_en": "Heat up", "meaning_zh": "热", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "加",
+                    "onyomi": ["カ"],
+                    "kunyomi": ["くわ・える"],
+                    "words": [
+                        {"term_ja": "参加", "reading": "さんか", "ruby_html": "<ruby>参加<rt>さんか</rt></ruby>", "meaning_en": "Participate, take part in", "meaning_zh": "参加", "is_target": True},
+                        {"term_ja": "増加", "reading": "ぞうか", "ruby_html": "<ruby>増加<rt>ぞうか</rt></ruby>", "meaning_en": "Increase", "meaning_zh": "增加", "is_target": True},
+                        {"term_ja": "追加", "reading": "ついか", "ruby_html": "<ruby>追加<rt>ついか</rt></ruby>", "meaning_en": "Add", "meaning_zh": "追加", "is_target": True},
+                        {"term_ja": "加える", "reading": "くわえる", "ruby_html": "<ruby>加<rt>くわ</rt></ruby>える", "meaning_en": "Add", "meaning_zh": "加上", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "果",
+                    "onyomi": ["カ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "結果", "reading": "けっか", "ruby_html": "<ruby>結果<rt>けっか</rt></ruby>", "meaning_en": "Result, outcome", "meaning_zh": "结果", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "決",
+                    "onyomi": ["ケツ"],
+                    "kunyomi": ["き・める", "き・まる"],
+                    "words": [
+                        {"term_ja": "決して", "reading": "けっして", "ruby_html": "<ruby>決<rt>けっ</rt></ruby>して", "meaning_en": "Never, by no means", "meaning_zh": "决不", "is_target": False},
+                        {"term_ja": "決心", "reading": "けっしん", "ruby_html": "<ruby>決心<rt>けっしん</rt></ruby>", "meaning_en": "Resolve, decide", "meaning_zh": "下决心", "is_target": True},
+                        {"term_ja": "決める", "reading": "きめる", "ruby_html": "<ruby>決<rt>き</rt></ruby>める", "meaning_en": "Decide", "meaning_zh": "决定", "is_target": False},
+                        {"term_ja": "決まる", "reading": "きまる", "ruby_html": "<ruby>決<rt>き</rt></ruby>まる", "meaning_en": "Be decided", "meaning_zh": "决定", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "結",
+                    "onyomi": ["ケツ"],
+                    "kunyomi": ["むす・ぶ"],
+                    "words": [
+                        {"term_ja": "結果", "reading": "けっか", "ruby_html": "<ruby>結果<rt>けっか</rt></ruby>", "meaning_en": "Result, outcome", "meaning_zh": "结果", "is_target": True},
+                        {"term_ja": "結婚", "reading": "けっこん", "ruby_html": "<ruby>結婚<rt>けっこん</rt></ruby>", "meaning_en": "Marriage", "meaning_zh": "结婚", "is_target": False},
+                        {"term_ja": "結論", "reading": "けつろん", "ruby_html": "<ruby>結論<rt>けつろん</rt></ruby>", "meaning_en": "Conclusion", "meaning_zh": "结论", "is_target": True},
+                        {"term_ja": "結ぶ", "reading": "むすぶ", "ruby_html": "<ruby>結<rt>むす</rt></ruby>ぶ", "meaning_en": "Link, tie, conjoin", "meaning_zh": "连接", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "婚",
+                    "onyomi": ["コン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "結婚", "reading": "けっこん", "ruby_html": "<ruby>結婚<rt>けっこん</rt></ruby>", "meaning_en": "Marriage", "meaning_zh": "结婚", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "最",
+                    "onyomi": ["サイ"],
+                    "kunyomi": ["もっと・も"],
+                    "words": [
+                        {"term_ja": "最近", "reading": "さいきん", "ruby_html": "<ruby>最近<rt>さいきん</rt></ruby>", "meaning_en": "Recently", "meaning_zh": "最近", "is_target": False},
+                        {"term_ja": "最後", "reading": "さいご", "ruby_html": "<ruby>最後<rt>さいご</rt></ruby>", "meaning_en": "Last, end", "meaning_zh": "最后", "is_target": False},
+                        {"term_ja": "最高", "reading": "さいこう", "ruby_html": "<ruby>最高<rt>さいこう</rt></ruby>", "meaning_en": "Highest, best", "meaning_zh": "最好", "is_target": True},
+                        {"term_ja": "最大", "reading": "さいだい", "ruby_html": "<ruby>最大<rt>さいだい</rt></ruby>", "meaning_en": "Largest, maximum", "meaning_zh": "最大", "is_target": True},
+                        {"term_ja": "最も", "reading": "もっとも", "ruby_html": "<ruby>最<rt>もっと</rt></ruby>も", "meaning_en": "Most, extremely", "meaning_zh": "最", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "参",
+                    "onyomi": ["サン"],
+                    "kunyomi": ["まい・る"],
+                    "words": [
+                        {"term_ja": "参加", "reading": "さんか", "ruby_html": "<ruby>参加<rt>さんか</rt></ruby>", "meaning_en": "Participate, take part in", "meaning_zh": "参加", "is_target": True},
+                        {"term_ja": "参る", "reading": "まいる", "ruby_html": "<ruby>参<rt>まい</rt></ruby>る", "meaning_en": "Go, come (humble)", "meaning_zh": "去，来（谦逊语）", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "然",
+                    "onyomi": ["ゼン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "全然", "reading": "ぜんぜん", "ruby_html": "<ruby>全然<rt>ぜんぜん</rt></ruby>", "meaning_en": "Not at all, entirely", "meaning_zh": "完全，根本", "is_target": False},
+                        {"term_ja": "当然", "reading": "とうぜん", "ruby_html": "<ruby>当然<rt>とうぜん</rt></ruby>", "meaning_en": "Of course", "meaning_zh": "理所当然", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "増",
+                    "onyomi": ["ゾウ"],
+                    "kunyomi": ["ふ・える", "ふ・やす"],
+                    "words": [
+                        {"term_ja": "増加", "reading": "ぞうか", "ruby_html": "<ruby>増加<rt>ぞうか</rt></ruby>", "meaning_en": "Increase", "meaning_zh": "增加", "is_target": True},
+                        {"term_ja": "増える", "reading": "ふえる", "ruby_html": "<ruby>増<rt>ふ</rt></ruby>える", "meaning_en": "Increase (intransitive)", "meaning_zh": "增加", "is_target": False},
+                        {"term_ja": "増やす", "reading": "ふやす", "ruby_html": "<ruby>増<rt>ふ</rt></ruby>やす", "meaning_en": "Increase (transitive)", "meaning_zh": "增加", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "速",
+                    "onyomi": ["ソク"],
+                    "kunyomi": ["はや・い"],
+                    "words": [
+                        {"term_ja": "速度", "reading": "そくど", "ruby_html": "<ruby>速度<rt>そくど</rt></ruby>", "meaning_en": "Speed, rate, tempo", "meaning_zh": "速度", "is_target": True},
+                        {"term_ja": "時速", "reading": "じそく", "ruby_html": "<ruby>時速<rt>じそく</rt></ruby>", "meaning_en": "Speed (miles/kilometers per hour)", "meaning_zh": "时速", "is_target": True},
+                        {"term_ja": "風速", "reading": "ふうそく", "ruby_html": "<ruby>風速<rt>ふうそく</rt></ruby>", "meaning_en": "Wind speed", "meaning_zh": "风速", "is_target": True},
+                        {"term_ja": "速い", "reading": "はやい", "ruby_html": "<ruby>速<rt>はや</rt></ruby>い", "meaning_en": "Fast, quick", "meaning_zh": "快", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "追",
+                    "onyomi": ["ツイ"],
+                    "kunyomi": ["お・う"],
+                    "words": [
+                        {"term_ja": "追加", "reading": "ついか", "ruby_html": "<ruby>追加<rt>ついか</rt></ruby>", "meaning_en": "Add", "meaning_zh": "追加", "is_target": True},
+                        {"term_ja": "追う", "reading": "おう", "ruby_html": "<ruby>追<rt>お</rt></ruby>う", "meaning_en": "Follow, pursue", "meaning_zh": "追", "is_target": True},
+                        {"term_ja": "追い越す", "reading": "おいこす", "ruby_html": "<ruby>追<rt>お</rt></ruby>い<ruby>越<rt>こ</rt></ruby>す", "meaning_en": "Overtake, pass", "meaning_zh": "超越", "is_target": True},
+                        {"term_ja": "追いつく", "reading": "おいつく", "ruby_html": "<ruby>追<rt>お</rt></ruby>いつく", "meaning_en": "Catch up, draw level", "meaning_zh": "追上", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "当",
+                    "onyomi": ["トウ"],
+                    "kunyomi": ["あ・たる", "あ・てる"],
+                    "words": [
+                        {"term_ja": "当然", "reading": "とうぜん", "ruby_html": "<ruby>当然<rt>とうぜん</rt></ruby>", "meaning_en": "Of course", "meaning_zh": "理所当然", "is_target": True},
+                        {"term_ja": "当番", "reading": "とうばん", "ruby_html": "<ruby>当番<rt>とうばん</rt></ruby>", "meaning_en": "Turn (of duty), turn to be on call", "meaning_zh": "值日", "is_target": True},
+                        {"term_ja": "本当", "reading": "ほんとう", "ruby_html": "<ruby>本当<rt>ほんとう</rt></ruby>", "meaning_en": "True, real", "meaning_zh": "真正", "is_target": False},
+                        {"term_ja": "当たる", "reading": "あたる", "ruby_html": "<ruby>当<rt>あ</rt></ruby>たる", "meaning_en": "Hit, bump; win", "meaning_zh": "碰撞；中了", "is_target": True},
+                        {"term_ja": "日当たり", "reading": "ひあたり", "ruby_html": "<ruby>日当<rt>ひあ</rt></ruby>たり", "meaning_en": "Sunshine, daylight", "meaning_zh": "日照", "is_target": True},
+                        {"term_ja": "当てる", "reading": "あてる", "ruby_html": "<ruby>当<rt>あ</rt></ruby>てる", "meaning_en": "Hit", "meaning_zh": "射中", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "内",
+                    "onyomi": ["ナイ"],
+                    "kunyomi": ["うち"],
+                    "words": [
+                        {"term_ja": "内科", "reading": "ないか", "ruby_html": "<ruby>内科<rt>ないか</rt></ruby>", "meaning_en": "Internal medicine", "meaning_zh": "内科", "is_target": True},
+                        {"term_ja": "内容", "reading": "ないよう", "ruby_html": "<ruby>内容<rt>ないよう</rt></ruby>", "meaning_en": "Content", "meaning_zh": "内容", "is_target": True},
+                        {"term_ja": "案内", "reading": "あんない", "ruby_html": "<ruby>案内<rt>あんない</rt></ruby>", "meaning_en": "Guidance", "meaning_zh": "引导", "is_target": False},
+                        {"term_ja": "以内", "reading": "いない", "ruby_html": "<ruby>以内<rt>いない</rt></ruby>", "meaning_en": "Within", "meaning_zh": "以内", "is_target": False},
+                        {"term_ja": "家内", "reading": "かない", "ruby_html": "<ruby>家内<rt>かない</rt></ruby>", "meaning_en": "My wife", "meaning_zh": "妻子", "is_target": False},
+                        {"term_ja": "内側", "reading": "うちがわ", "ruby_html": "<ruby>内側<rt>うちがわ</rt></ruby>", "meaning_en": "Inside", "meaning_zh": "内侧", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "表",
+                    "onyomi": ["ヒョウ"],
+                    "kunyomi": ["おもて"],
+                    "words": [
+                        {"term_ja": "表", "reading": "ひょう", "ruby_html": "<ruby>表<rt>ひょう</rt></ruby>", "meaning_en": "Table, chart", "meaning_zh": "表格", "is_target": True},
+                        {"term_ja": "表面", "reading": "ひょうめん", "ruby_html": "<ruby>表面<rt>ひょうめん</rt></ruby>", "meaning_en": "Surface", "meaning_zh": "表面", "is_target": True},
+                        {"term_ja": "代表", "reading": "だいひょう", "ruby_html": "<ruby>代表<rt>だいひょう</rt></ruby>", "meaning_en": "Represent", "meaning_zh": "代表", "is_target": True},
+                        {"term_ja": "発表", "reading": "はっぴょう", "ruby_html": "<ruby>発表<rt>はっぴょう</rt></ruby>", "meaning_en": "Announce", "meaning_zh": "公布", "is_target": True},
+                        {"term_ja": "表", "reading": "おもて", "ruby_html": "<ruby>表<rt>おもて</rt></ruby>", "meaning_en": "Surface, front", "meaning_zh": "表面，正面", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "面",
+                    "onyomi": ["メン"],
+                    "kunyomi": ["おも"],
+                    "words": [
+                        {"term_ja": "正面", "reading": "しょうめん", "ruby_html": "<ruby>正面<rt>しょうめん</rt></ruby>", "meaning_en": "Face, front, facade", "meaning_zh": "正面", "is_target": True},
+                        {"term_ja": "場面", "reading": "ばめん", "ruby_html": "<ruby>場面<rt>ばめん</rt></ruby>", "meaning_en": "Scene, situation", "meaning_zh": "场景", "is_target": True},
+                        {"term_ja": "表面", "reading": "ひょうめん", "ruby_html": "<ruby>表面<rt>ひょうめん</rt></ruby>", "meaning_en": "Surface", "meaning_zh": "表面", "is_target": True},
+                        {"term_ja": "方面", "reading": "ほうめん", "ruby_html": "<ruby>方面<rt>ほうめん</rt></ruby>", "meaning_en": "Direction, quarter", "meaning_zh": "方面", "is_target": True},
+                        {"term_ja": "面白い", "reading": "おもしろい", "ruby_html": "<ruby>面白<rt>おもしろ</rt></ruby>い", "meaning_en": "Interesting", "meaning_zh": "有趣的", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "容",
+                    "onyomi": ["ヨウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "内容", "reading": "ないよう", "ruby_html": "<ruby>内容<rt>ないよう</rt></ruby>", "meaning_en": "Content", "meaning_zh": "内容", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "論",
+                    "onyomi": ["ロン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "結論", "reading": "けつろん", "ruby_html": "<ruby>結論<rt>けつろん</rt></ruby>", "meaning_en": "Conclusion", "meaning_zh": "结论", "is_target": True}
+                    ]
+                }
+            ]
+        },
+        {
+            "lesson_number": 7,
+            "title_ja": "政治・経済・社会(1)",
+            "title_en": "Politics, Economy & Society (1)",
+            "page": 9,
+            "kanji": [
+                {
+                    "kanji": "営",
+                    "onyomi": ["エイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "営業", "reading": "えいぎょう", "ruby_html": "<ruby>営業<rt>えいぎょう</rt></ruby>", "meaning_en": "Do business; be engaged in sales", "meaning_zh": "营业，销售", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "易",
+                    "onyomi": ["エキ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "貿易", "reading": "ぼうえき", "ruby_html": "<ruby>貿易<rt>ぼうえき</rt></ruby>", "meaning_en": "Foreign trade", "meaning_zh": "贸易", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "課",
+                    "onyomi": ["カ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "課長", "reading": "かちょう", "ruby_html": "<ruby>課長<rt>かちょう</rt></ruby>", "meaning_en": "Section chief", "meaning_zh": "科长", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "械",
+                    "onyomi": ["カイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "機械", "reading": "きかい", "ruby_html": "<ruby>機械<rt>きかい</rt></ruby>", "meaning_en": "Machine, machinery", "meaning_zh": "机械", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "管",
+                    "onyomi": ["カン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "管理", "reading": "かんり", "ruby_html": "<ruby>管理<rt>かんり</rt></ruby>", "meaning_en": "Manage", "meaning_zh": "管理", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "機",
+                    "onyomi": ["キ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "機会", "reading": "きかい", "ruby_html": "<ruby>機会<rt>きかい</rt></ruby>", "meaning_en": "Chance, opportunity", "meaning_zh": "机会", "is_target": False},
+                        {"term_ja": "機械", "reading": "きかい", "ruby_html": "<ruby>機械<rt>きかい</rt></ruby>", "meaning_en": "Machine", "meaning_zh": "机械", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "技",
+                    "onyomi": ["ギ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "技術", "reading": "ぎじゅつ", "ruby_html": "<ruby>技術<rt>ぎじゅつ</rt></ruby>", "meaning_en": "Technology, art, skill", "meaning_zh": "技术", "is_target": False},
+                        {"term_ja": "特技", "reading": "とくぎ", "ruby_html": "<ruby>特技<rt>とくぎ</rt></ruby>", "meaning_en": "Special skill, technique", "meaning_zh": "特长", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "建",
+                    "onyomi": ["ケン"],
+                    "kunyomi": ["た・てる", "た・つ"],
+                    "words": [
+                        {"term_ja": "建設", "reading": "けんせつ", "ruby_html": "<ruby>建設<rt>けんせつ</rt></ruby>", "meaning_en": "Construct, build", "meaning_zh": "建设", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "原",
+                    "onyomi": ["ゲン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "原料", "reading": "げんりょう", "ruby_html": "<ruby>原料<rt>げんりょう</rt></ruby>", "meaning_en": "Raw materials, ingredients", "meaning_zh": "原材料", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "広",
+                    "onyomi": ["コウ"],
+                    "kunyomi": ["ひろ・い"],
+                    "words": [
+                        {"term_ja": "広告", "reading": "こうこく", "ruby_html": "<ruby>広告<rt>こうこく</rt></ruby>", "meaning_en": "Advertise", "meaning_zh": "宣传", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "告",
+                    "onyomi": ["コク"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "広告", "reading": "こうこく", "ruby_html": "<ruby>広告<rt>こうこく</rt></ruby>", "meaning_en": "Advertise", "meaning_zh": "宣传", "is_target": True},
+                        {"term_ja": "報告", "reading": "ほうこく", "ruby_html": "<ruby>報告<rt>ほうこく</rt></ruby>", "meaning_en": "Report, brief", "meaning_zh": "报告", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "術",
+                    "onyomi": ["ジュツ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "技術", "reading": "ぎじゅつ", "ruby_html": "<ruby>技術<rt>ぎじゅつ</rt></ruby>", "meaning_en": "Skill, technology", "meaning_zh": "技术", "is_target": False},
+                        {"term_ja": "手術", "reading": "しゅじゅつ", "ruby_html": "<ruby>手術<rt>しゅじゅつ</rt></ruby>", "meaning_en": "Operate (on a patient)", "meaning_zh": "手术", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "商",
+                    "onyomi": ["ショウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "商業", "reading": "しょうぎょう", "ruby_html": "<ruby>商業<rt>しょうぎょう</rt></ruby>", "meaning_en": "Commerce, trade", "meaning_zh": "商业", "is_target": True},
+                        {"term_ja": "商店", "reading": "しょうてん", "ruby_html": "<ruby>商店<rt>しょうてん</rt></ruby>", "meaning_en": "Store, shop", "meaning_zh": "商店", "is_target": True},
+                        {"term_ja": "商品", "reading": "しょうひん", "ruby_html": "<ruby>商品<rt>しょうひん</rt></ruby>", "meaning_en": "Goods, products", "meaning_zh": "商品", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "職",
+                    "onyomi": ["ショク"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "職業", "reading": "しょくぎょう", "ruby_html": "<ruby>職業<rt>しょくぎょう</rt></ruby>", "meaning_en": "Occupation", "meaning_zh": "职业", "is_target": True},
+                        {"term_ja": "職場", "reading": "しょくば", "ruby_html": "<ruby>職場<rt>しょくば</rt></ruby>", "meaning_en": "Workplace", "meaning_zh": "职场", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "設",
+                    "onyomi": ["セツ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "建設", "reading": "けんせつ", "ruby_html": "<ruby>建設<rt>けんせつ</rt></ruby>", "meaning_en": "Construct, build", "meaning_zh": "建设", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "造",
+                    "onyomi": ["ゾウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "製造", "reading": "せいぞう", "ruby_html": "<ruby>製造<rt>せいぞう</rt></ruby>", "meaning_en": "Manufacture, produce", "meaning_zh": "制造", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "働",
+                    "onyomi": ["ドウ"],
+                    "kunyomi": ["はたら・く"],
+                    "words": [
+                        {"term_ja": "労働", "reading": "ろうどう", "ruby_html": "<ruby>労働<rt>ろうどう</rt></ruby>", "meaning_en": "Work, labor", "meaning_zh": "劳动", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "農",
+                    "onyomi": ["ノウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "農業", "reading": "のうぎょう", "ruby_html": "<ruby>農業<rt>のうぎょう</rt></ruby>", "meaning_en": "Agriculture, farming", "meaning_zh": "农业", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "貿",
+                    "onyomi": ["ボウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "貿易", "reading": "ぼうえき", "ruby_html": "<ruby>貿易<rt>ぼうえき</rt></ruby>", "meaning_en": "Trade", "meaning_zh": "贸易", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "輸",
+                    "onyomi": ["ユ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "輸出", "reading": "ゆしゅつ", "ruby_html": "<ruby>輸出<rt>ゆしゅつ</rt></ruby>", "meaning_en": "Export", "meaning_zh": "出口", "is_target": False},
+                        {"term_ja": "輸入", "reading": "ゆにゅう", "ruby_html": "<ruby>輸入<rt>ゆにゅう</rt></ruby>", "meaning_en": "Import", "meaning_zh": "进口", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "労",
+                    "onyomi": ["ロウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "労働", "reading": "ろうどう", "ruby_html": "<ruby>労働<rt>ろうどう</rt></ruby>", "meaning_en": "Work, labor", "meaning_zh": "劳动", "is_target": True}
+                    ]
+                }
+            ]
+        },
+        {
+            "lesson_number": 8,
+            "title_ja": "政治・経済・社会(2)",
+            "title_en": "Politics, Economy & Society (2)",
+            "page": 10,
+            "kanji": [
+                {
+                    "kanji": "完",
+                    "onyomi": ["カン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "完成", "reading": "かんせい", "ruby_html": "<ruby>完成<rt>かんせい</rt></ruby>", "meaning_en": "Finish, complete", "meaning_zh": "完成", "is_target": True},
+                        {"term_ja": "完全", "reading": "かんぜん", "ruby_html": "<ruby>完全<rt>かんぜん</rt></ruby>", "meaning_en": "Full, complete", "meaning_zh": "完全", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "基",
+                    "onyomi": ["キ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "基本", "reading": "きほん", "ruby_html": "<ruby>基本<rt>きほん</rt></ruby>", "meaning_en": "Basis, foundation", "meaning_zh": "基础", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "議",
+                    "onyomi": ["ギ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "会議", "reading": "かいぎ", "ruby_html": "<ruby>会議<rt>かいぎ</rt></ruby>", "meaning_en": "Meeting, conference", "meaning_zh": "会议", "is_target": False},
+                        {"term_ja": "会議室", "reading": "かいぎしつ", "ruby_html": "<ruby>会議室<rt>かいぎしつ</rt></ruby>", "meaning_en": "Conference room", "meaning_zh": "会议室", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "共",
+                    "onyomi": ["キョウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "共通", "reading": "きょうつう", "ruby_html": "<ruby>共通<rt>きょうつう</rt></ruby>", "meaning_en": "Common, joint, same", "meaning_zh": "共同", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "協",
+                    "onyomi": ["キョウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "協力", "reading": "きょうりょく", "ruby_html": "<ruby>協力<rt>きょうりょく</rt></ruby>", "meaning_en": "Cooperate", "meaning_zh": "提供帮助", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "件",
+                    "onyomi": ["ケン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "事件", "reading": "じけん", "ruby_html": "<ruby>事件<rt>じけん</rt></ruby>", "meaning_en": "Incident", "meaning_zh": "事件", "is_target": True},
+                        {"term_ja": "条件", "reading": "じょうけん", "ruby_html": "<ruby>条件<rt>じょうけん</rt></ruby>", "meaning_en": "Condition(s)", "meaning_zh": "条件", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "権",
+                    "onyomi": ["ケン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "権利", "reading": "けんり", "ruby_html": "<ruby>権利<rt>けんり</rt></ruby>", "meaning_en": "Right, entitlement", "meaning_zh": "权利", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "限",
+                    "onyomi": ["ゲン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "期限", "reading": "きげん", "ruby_html": "<ruby>期限<rt>きげん</rt></ruby>", "meaning_en": "Deadline, due date", "meaning_zh": "期限", "is_target": True},
+                        {"term_ja": "制限", "reading": "せいげん", "ruby_html": "<ruby>制限<rt>せいげん</rt></ruby>", "meaning_en": "Limit, curb, restrain", "meaning_zh": "限制", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "公",
+                    "onyomi": ["コウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "公園", "reading": "こうえん", "ruby_html": "<ruby>公園<rt>こうえん</rt></ruby>", "meaning_en": "Park", "meaning_zh": "公园", "is_target": False},
+                        {"term_ja": "公務員", "reading": "こうむいん", "ruby_html": "<ruby>公務員<rt>こうむいん</rt></ruby>", "meaning_en": "Civil servant", "meaning_zh": "公务员", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "際",
+                    "onyomi": ["サイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "交際", "reading": "こうさい", "ruby_html": "<ruby>交際<rt>こうさい</rt></ruby>", "meaning_en": "Go out with, associate with, date", "meaning_zh": "交往；谈恋爱", "is_target": True},
+                        {"term_ja": "国際", "reading": "こくさい", "ruby_html": "<ruby>国際<rt>こくさい</rt></ruby>", "meaning_en": "International", "meaning_zh": "国际", "is_target": False},
+                        {"term_ja": "国際的", "reading": "こくさいてき", "ruby_html": "<ruby>国際的<rt>こくさいてき</rt></ruby>", "meaning_en": "International", "meaning_zh": "国际性的", "is_target": True},
+                        {"term_ja": "実際", "reading": "じっさい", "ruby_html": "<ruby>実際<rt>じっさい</rt></ruby>", "meaning_en": "Fact, actuality", "meaning_zh": "实际", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "条",
+                    "onyomi": ["ジョウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "条件", "reading": "じょうけん", "ruby_html": "<ruby>条件<rt>じょうけん</rt></ruby>", "meaning_en": "Condition(s)", "meaning_zh": "条件", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "臣",
+                    "onyomi": ["ジン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "総理大臣", "reading": "そうりだいじん", "ruby_html": "<ruby>総理大臣<rt>そう理大臣</rt></ruby>".replace("そう理大臣", "そうりだいじん"), "ruby_html": "<ruby>総理大臣<rt>そうりだいじん</rt></ruby>", "meaning_en": "Prime minister, premier", "meaning_zh": "首相", "is_target": True},
+                        {"term_ja": "大臣", "reading": "だいじん", "ruby_html": "<ruby>大臣<rt>だいじん</rt></ruby>", "meaning_en": "Minister", "meaning_zh": "大臣", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "成",
+                    "onyomi": ["セイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "成人", "reading": "せいじん", "ruby_html": "<ruby>成人<rt>せいじん</rt></ruby>", "meaning_en": "Adult, grown-up", "meaning_zh": "成年人", "is_target": True},
+                        {"term_ja": "成長", "reading": "せいちょう", "ruby_html": "<ruby>成長<rt>せいちょう</rt></ruby>", "meaning_en": "Grow, increase", "meaning_zh": "成长，发展", "is_target": True},
+                        {"term_ja": "完成", "reading": "かんせい", "ruby_html": "<ruby>完成<rt>かんせい</rt></ruby>", "meaning_en": "Finish, complete", "meaning_zh": "完成", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "制",
+                    "onyomi": ["セイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "制限", "reading": "せいげん", "ruby_html": "<ruby>制限<rt>せいげん</rt></ruby>", "meaning_en": "Limit, curb, restrain", "meaning_zh": "限制", "is_target": True},
+                        {"term_ja": "制度", "reading": "せいど", "ruby_html": "<ruby>制度<rt>せいど</rt></ruby>", "meaning_en": "System", "meaning_zh": "制度", "is_target": True},
+                        {"term_ja": "制服", "reading": "せいふく", "ruby_html": "<ruby>制服<rt>せいふく</rt></ruby>", "meaning_en": "Uniform, kit", "meaning_zh": "制服", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "政",
+                    "onyomi": ["セイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "政府", "reading": "せいふ", "ruby_html": "<ruby>政府<rt>せいふ</rt></ruby>", "meaning_en": "Government", "meaning_zh": "政府", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "税",
+                    "onyomi": ["ゼイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "税金", "reading": "ぜいきん", "ruby_html": "<ruby>税金<rt>ぜいきん</rt></ruby>", "meaning_en": "Tax", "meaning_zh": "税金", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "総",
+                    "onyomi": ["ソウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "総理大臣", "reading": "そうりだいじん", "ruby_html": "<ruby>総理大臣<rt>そうりだいじん</rt></ruby>", "meaning_en": "Prime minister, premier", "meaning_zh": "首相", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "団",
+                    "onyomi": ["ダン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "団体", "reading": "だんたい", "ruby_html": "<ruby>団体<rt>だんたい</rt></ruby>", "meaning_en": "Organization, group", "meaning_zh": "团体", "is_target": True},
+                        {"term_ja": "団地", "reading": "だんち", "ruby_html": "<ruby>団地<rt>だんち</rt></ruby>", "meaning_en": "Housing complex, estate", "meaning_zh": "住宅小区", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "府",
+                    "onyomi": ["フ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "政府", "reading": "せいふ", "ruby_html": "<ruby>政府<rt>せいふ</rt></ruby>", "meaning_en": "Government", "meaning_zh": "政府", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "平",
+                    "onyomi": ["ヘイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "平和", "reading": "へいわ", "ruby_html": "<ruby>平和<rt>へいわ</rt></ruby>", "meaning_en": "Peace", "meaning_zh": "和平", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "務",
+                    "onyomi": ["ム"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "公務員", "reading": "こうむいん", "ruby_html": "<ruby>公務員<rt>こうむいん</rt></ruby>", "meaning_en": "Civil servant", "meaning_zh": "公务员", "is_target": False},
+                        {"term_ja": "事務", "reading": "じむ", "ruby_html": "<ruby>事務<rt>じむ</rt></ruby>", "meaning_en": "Clerical work, office business", "meaning_zh": "事务工作", "is_target": True},
+                        {"term_ja": "事務所", "reading": "じむしょ", "ruby_html": "<ruby>事務所<rt>じむしょ</rt></ruby>", "meaning_en": "Office", "meaning_zh": "事务所", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "役",
+                    "onyomi": ["ヤク"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "役に立つ", "reading": "やくにたつ", "ruby_html": "<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ", "meaning_en": "Help, be useful in", "meaning_zh": "起作用", "is_target": True},
+                        {"term_ja": "役所", "reading": "やくしょ", "ruby_html": "<ruby>役所<rt>やくしょ</rt></ruby>", "meaning_en": "Government office", "meaning_zh": "政府办公地", "is_target": True},
+                        {"term_ja": "役立つ", "reading": "やくだつ", "ruby_html": "<ruby>役立<rt>やくだ</rt></ruby>つ", "meaning_en": "Be helpful, be useful", "meaning_zh": "有益", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "和",
+                    "onyomi": ["ワ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "和室", "reading": "わしつ", "ruby_html": "<ruby>和室<rt>わしつ</rt></ruby>", "meaning_en": "Japanese-style room", "meaning_zh": "日式房间", "is_target": True},
+                        {"term_ja": "平和", "reading": "へいわ", "ruby_html": "<ruby>平和<rt>へいわ</rt></ruby>", "meaning_en": "Peace", "meaning_zh": "和平", "is_target": True}
+                    ]
+                }
+            ]
+        },
+        {
+            "lesson_number": 9,
+            "title_ja": "政治・経済・社会(3)",
+            "title_en": "Politics, Economy & Society (3)",
+            "page": 11,
+            "kanji": [
+                {
+                    "kanji": "価",
+                    "onyomi": ["カ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "価値", "reading": "かち", "ruby_html": "<ruby>価値<rt>かち</rt></ruby>", "meaning_en": "Value, worth", "meaning_zh": "价值", "is_target": True},
+                        {"term_ja": "物価", "reading": "ぶっか", "ruby_html": "<ruby>物価<rt>ぶっか</rt></ruby>", "meaning_en": "Price", "meaning_zh": "物价", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "経",
+                    "onyomi": ["ケイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "経営", "reading": "けいえい", "ruby_html": "<ruby>経営<rt>けいえい</rt></ruby>", "meaning_en": "Manage, run", "meaning_zh": "经营", "is_target": True},
+                        {"term_ja": "経験", "reading": "けいけん", "ruby_html": "<ruby>経験<rt>けいけん</rt></ruby>", "meaning_en": "Experience", "meaning_zh": "经验", "is_target": False},
+                        {"term_ja": "経済", "reading": "けいざい", "ruby_html": "<ruby>経済<rt>けいざい</rt></ruby>", "meaning_en": "Economy", "meaning_zh": "经济", "is_target": False},
+                        {"term_ja": "経済的", "reading": "けいざいてき", "ruby_html": "<ruby>経済的<rt>けいざいてき</rt></ruby>", "meaning_en": "Economic", "meaning_zh": "经济的", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "現",
+                    "onyomi": ["ゲン"],
+                    "kunyomi": ["あらわ・れる", "あらわ・す"],
+                    "words": [
+                        {"term_ja": "現金", "reading": "げんきん", "ruby_html": "<ruby>現金<rt>げんきん</rt></ruby>", "meaning_en": "Cash", "meaning_zh": "现金", "is_target": True},
+                        {"term_ja": "現在", "reading": "げんざい", "ruby_html": "<ruby>現在<rt>げんざい</rt></ruby>", "meaning_en": "Current, present; now", "meaning_zh": "现在", "is_target": True},
+                        {"term_ja": "現代", "reading": "げんだい", "ruby_html": "<ruby>現代<rt>げんだい</rt></ruby>", "meaning_en": "Modern, contemporary", "meaning_zh": "现代", "is_target": True},
+                        {"term_ja": "現れる", "reading": "あらわれる", "ruby_html": "<ruby>現<rt>あらわ</rt></ruby>れる", "meaning_en": "Appear", "meaning_zh": "出现", "is_target": True},
+                        {"term_ja": "現す", "reading": "あらわす", "ruby_html": "<ruby>現<rt>あらわ</rt></ruby>す", "meaning_en": "Come into view", "meaning_zh": "出现", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "済",
+                    "onyomi": ["サイ"],
+                    "kunyomi": ["す・む"],
+                    "words": [
+                        {"term_ja": "経済", "reading": "けいざい", "ruby_html": "<ruby>経済<rt>けいざい</rt></ruby>", "meaning_en": "Economy", "meaning_zh": "经济", "is_target": False},
+                        {"term_ja": "経済的", "reading": "けいざいてき", "ruby_html": "<ruby>経済的<rt>けいざいてき</rt></ruby>", "meaning_en": "Economic", "meaning_zh": "经济的", "is_target": True},
+                        {"term_ja": "済む", "reading": "すむ", "ruby_html": "<ruby>済<rt>す</rt></ruby>む", "meaning_en": "Finish, end", "meaning_zh": "完事，解决", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "在",
+                    "onyomi": ["ザイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "現在", "reading": "げんざい", "ruby_html": "<ruby>現在<rt>げんざい</rt></ruby>", "meaning_en": "Current, present; now", "meaning_zh": "现在", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "治",
+                    "onyomi": ["ジ"],
+                    "kunyomi": ["なお・る", "なお・す"],
+                    "words": [
+                        {"term_ja": "政治", "reading": "せいじ", "ruby_html": "<ruby>政治<rt>せいじ</rt></ruby>", "meaning_en": "Politics", "meaning_zh": "政治", "is_target": False},
+                        {"term_ja": "治る", "reading": "なおる", "ruby_html": "<ruby>治<rt>なお</rt></ruby>る", "meaning_en": "Heal, cure", "meaning_zh": "治愈", "is_target": True},
+                        {"term_ja": "治す", "reading": "なおす", "ruby_html": "<ruby>治<rt>なお</rt></ruby>す", "meaning_en": "Cure, heal", "meaning_zh": "医治", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "勝",
+                    "onyomi": ["ショウ"],
+                    "kunyomi": ["か・つ"],
+                    "words": [
+                        {"term_ja": "優勝", "reading": "ゆうしょう", "ruby_html": "<ruby>優勝<rt>ゆうしょう</rt></ruby>", "meaning_en": "Win (competition), claim victory", "meaning_zh": "夺冠", "is_target": True},
+                        {"term_ja": "勝つ", "reading": "かつ", "ruby_html": "<ruby>勝<rt>か</rt></ruby>つ", "meaning_en": "Win", "meaning_zh": "赢", "is_target": False},
+                        {"term_ja": "勝手", "reading": "かって", "ruby_html": "<ruby>勝手<rt>かって</rt></ruby>", "meaning_en": "(Act) selfishly, arbitrarily, without consulting anybody", "meaning_zh": "任意", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "石",
+                    "onyomi": ["セキ"],
+                    "kunyomi": ["いし"],
+                    "words": [
+                        {"term_ja": "石油", "reading": "せきゆ", "ruby_html": "<ruby>石油<rt>せきゆ</rt></ruby>", "meaning_en": "Petroleum, oil", "meaning_zh": "石油", "is_target": True},
+                        {"term_ja": "石", "reading": "いし", "ruby_html": "<ruby>石<rt>いし</rt></ruby>", "meaning_en": "Stone", "meaning_zh": "石头", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "戦",
+                    "onyomi": ["セン"],
+                    "kunyomi": ["たたか・う"],
+                    "words": [
+                        {"term_ja": "戦争", "reading": "せんそう", "ruby_html": "<ruby>戦争<rt>せんそう</rt></ruby>", "meaning_en": "War", "meaning_zh": "战争", "is_target": False},
+                        {"term_ja": "戦う", "reading": "たたかう", "ruby_html": "<ruby>戦<rt>たたか</rt></ruby>う", "meaning_en": "Fight", "meaning_zh": "战斗", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "選",
+                    "onyomi": ["セン"],
+                    "kunyomi": ["えら・ぶ"],
+                    "words": [
+                        {"term_ja": "選手", "reading": "せんしゅ", "ruby_html": "<ruby>選手<rt>せんしゅ</rt></ruby>", "meaning_en": "Player, athlete", "meaning_zh": "运动员", "is_target": True},
+                        {"term_ja": "選ぶ", "reading": "えらぶ", "ruby_html": "<ruby>選<rt>えら</rt></ruby>ぶ", "meaning_en": "Choose, pick", "meaning_zh": "选择", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "争",
+                    "onyomi": ["ソウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "戦争", "reading": "せんそう", "ruby_html": "<ruby>戦争<rt>せんそう</rt></ruby>", "meaning_en": "War", "meaning_zh": "战争", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "段",
+                    "onyomi": ["ダン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "段ボール", "reading": "だんボール", "ruby_html": "<ruby>段<rt>だん</rt></ruby>ボール", "meaning_en": "Cardboard (material), cardboard (box)", "meaning_zh": "硬纸板；纸箱", "is_target": True},
+                        {"term_ja": "値段", "reading": "ねだん", "ruby_html": "<ruby>値段<rt>ねだん</rt></ruby>", "meaning_en": "Price", "meaning_zh": "价格", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "値",
+                    "onyomi": ["チ"],
+                    "kunyomi": ["ね"],
+                    "words": [
+                        {"term_ja": "価値", "reading": "かち", "ruby_html": "<ruby>価値<rt>かち</rt></ruby>", "meaning_en": "Value, worth", "meaning_zh": "价值", "is_target": True},
+                        {"term_ja": "値上がり", "reading": "ねあがり", "ruby_html": "<ruby>値上<rt>ねあ</rt></ruby>がり", "meaning_en": "(Price) rise", "meaning_zh": "涨价", "is_target": True},
+                        {"term_ja": "値段", "reading": "ねだん", "ruby_html": "<ruby>値段<rt>ねだん</rt></ruby>", "meaning_en": "Price", "meaning_zh": "价格", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "油",
+                    "onyomi": ["ユ"],
+                    "kunyomi": ["あぶら"],
+                    "words": [
+                        {"term_ja": "しょう油", "reading": "しょうゆ", "ruby_html": "しょう<ruby>油<rt>ゆ</rt></ruby>", "meaning_en": "Soy sauce", "meaning_zh": "酱油", "is_target": False},
+                        {"term_ja": "石油", "reading": "せきゆ", "ruby_html": "<ruby>石油<rt>せきゆ</rt></ruby>", "meaning_en": "Petroleum, oil", "meaning_zh": "石油", "is_target": True},
+                        {"term_ja": "油", "reading": "あぶら", "ruby_html": "<ruby>油<rt>あぶら</rt></ruby>", "meaning_en": "Oil", "meaning_zh": "油", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "優",
+                    "onyomi": ["ユウ"],
+                    "kunyomi": ["やさ・しい"],
+                    "words": [
+                        {"term_ja": "優勝", "reading": "ゆうしょう", "ruby_html": "<ruby>優勝<rt>ゆうしょう</rt></ruby>", "meaning_en": "Win (competition), claim victory", "meaning_zh": "夺冠", "is_target": True},
+                        {"term_ja": "女優", "reading": "じょゆう", "ruby_html": "<ruby>女優<rt>じょゆう</rt></ruby>", "meaning_en": "Actress", "meaning_zh": "女演员", "is_target": True},
+                        {"term_ja": "優しい", "reading": "やさしい", "ruby_html": "<ruby>優<rt>やさ</rt></ruby>しい", "meaning_en": "Gentle, kind", "meaning_zh": "温柔的", "is_target": False}
+                    ]
+                }
+            ]
+        },
+        {
+            "lesson_number": 10,
+            "title_ja": "教育・文化・生活(1)",
+            "title_en": "Education, Culture & Daily Life (1)",
+            "page": 12,
+            "kanji": [
+                {
+                    "kanji": "解",
+                    "onyomi": ["カイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "解決", "reading": "かいけつ", "ruby_html": "<ruby>解決<rt>かいけつ</rt></ruby>", "meaning_en": "Solve, resolve", "meaning_zh": "解决", "is_target": True},
+                        {"term_ja": "解説", "reading": "かいせつ", "ruby_html": "<ruby>解説<rt>かいせつ</rt></ruby>", "meaning_en": "Explain, interpret", "meaning_zh": "解释", "is_target": True},
+                        {"term_ja": "解答", "reading": "かいとう", "ruby_html": "<ruby>解答<rt>かいとう</rt></ruby>", "meaning_en": "Answer, give answer", "meaning_zh": "解答", "is_target": True},
+                        {"term_ja": "理解", "reading": "りかい", "ruby_html": "<ruby>理解<rt>りかい</rt></ruby>", "meaning_en": "Understand", "meaning_zh": "理解", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "格",
+                    "onyomi": ["カク"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "合格", "reading": "ごうかく", "ruby_html": "<ruby>合格<rt>ごうかく</rt></ruby>", "meaning_en": "Pass, qualify", "meaning_zh": "(考试等)通过", "is_target": True},
+                        {"term_ja": "資格", "reading": "しかく", "ruby_html": "<ruby>資格<rt>しかく</rt></ruby>", "meaning_en": "Qualification", "meaning_zh": "资格", "is_target": True},
+                        {"term_ja": "性格", "reading": "せいかく", "ruby_html": "<ruby>性格<rt>せいかく</rt></ruby>", "meaning_en": "Personality, character", "meaning_zh": "性格", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "簡",
+                    "onyomi": ["カン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "簡単", "reading": "かんたん", "ruby_html": "<ruby>簡単<rt>かんたん</rt></ruby>", "meaning_en": "Simple, easy", "meaning_zh": "简单", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "芸",
+                    "onyomi": ["ゲイ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "芸術", "reading": "げいじゅつ", "ruby_html": "<ruby>芸術<rt>げいじゅつ</rt></ruby>", "meaning_en": "Art, the Arts", "meaning_zh": "艺术", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "欠",
+                    "onyomi": ["ケツ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "欠席", "reading": "けっせき", "ruby_html": "<ruby>欠席<rt>けっせき</rt></ruby>", "meaning_en": "Fail to attend, be absent", "meaning_zh": "缺席", "is_target": True},
+                        {"term_ja": "欠点", "reading": "けってん", "ruby_html": "<ruby>欠点<rt>けってん</rt></ruby>", "meaning_en": "Flaw, drawback, shortcoming", "meaning_zh": "缺点", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "雑",
+                    "onyomi": ["ザツ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "雑誌", "reading": "ざっし", "ruby_html": "<ruby>雑誌<rt>ざっし</rt></ruby>", "meaning_en": "Magazine", "meaning_zh": "杂志", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "私",
+                    "onyomi": ["シ"],
+                    "kunyomi": ["わたくし", "わたし"],
+                    "words": [
+                        {"term_ja": "私立", "reading": "しりつ", "ruby_html": "<ruby>私立<rt>しりつ</rt></ruby>", "meaning_en": "Private", "meaning_zh": "私立", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "資",
+                    "onyomi": ["シ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "資格", "reading": "しかく", "ruby_html": "<ruby>資格<rt>しかく</rt></ruby>", "meaning_en": "Qualification", "meaning_zh": "资格", "is_target": True},
+                        {"term_ja": "資料", "reading": "しりょう", "ruby_html": "<ruby>資料<rt>しりょう</rt></ruby>", "meaning_en": "Documents, information", "meaning_zh": "资料", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "誌",
+                    "onyomi": ["シ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "雑誌", "reading": "ざっし", "ruby_html": "<ruby>雑誌<rt>ざっし</rt></ruby>", "meaning_en": "Magazine", "meaning_zh": "杂志", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "辞",
+                    "onyomi": ["ジ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "辞書", "reading": "じしょ", "ruby_html": "<ruby>辞書<rt>じしょ</rt></ruby>", "meaning_en": "Dictionary", "meaning_zh": "词典", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "授",
+                    "onyomi": ["ジュ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "授業", "reading": "じゅぎょう", "ruby_html": "<ruby>授業<rt>じゅぎょう</rt></ruby>", "meaning_en": "Class, lesson", "meaning_zh": "授课", "is_target": False},
+                        {"term_ja": "教授", "reading": "きょうじゅ", "ruby_html": "<ruby>教授<rt>きょうじゅ</rt></ruby>", "meaning_en": "Professor", "meaning_zh": "教授", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "宿",
+                    "onyomi": ["シュク"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "宿題", "reading": "しゅくだい", "ruby_html": "<ruby>宿題<rt>しゅくだい</rt></ruby>", "meaning_en": "Homework", "meaning_zh": "作业", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "席",
+                    "onyomi": ["セキ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "席", "reading": "せき", "ruby_html": "<ruby>席<rt>せき</rt></ruby>", "meaning_en": "Seat", "meaning_zh": "座位", "is_target": False},
+                        {"term_ja": "欠席", "reading": "けっせき", "ruby_html": "<ruby>欠席<rt>けっせき</rt></ruby>", "meaning_en": "Fail to attend, be absent", "meaning_zh": "缺席", "is_target": True},
+                        {"term_ja": "出席", "reading": "しゅっせき", "ruby_html": "<ruby>出席<rt>しゅっせき</rt></ruby>", "meaning_en": "Attendance", "meaning_zh": "出席", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "卒",
+                    "onyomi": ["ソツ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "卒業", "reading": "そつぎょう", "ruby_html": "<ruby>卒業<rt>そつぎょう</rt></ruby>", "meaning_en": "Graduation", "meaning_zh": "毕业", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "単",
+                    "onyomi": ["タン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "単語", "reading": "たんご", "ruby_html": "<ruby>単語<rt>たんご</rt></ruby>", "meaning_en": "Word", "meaning_zh": "单词", "is_target": True},
+                        {"term_ja": "簡単", "reading": "かんたん", "ruby_html": "<ruby>簡単<rt>かんたん</rt></ruby>", "meaning_en": "Simple, easy", "meaning_zh": "简单", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "短",
+                    "onyomi": ["タン"],
+                    "kunyomi": ["みじか・い"],
+                    "words": [
+                        {"term_ja": "短期大学", "reading": "たんきだいがく", "ruby_html": "<ruby>短期大学<rt>たんきだいがく</rt></ruby>", "meaning_en": "Junior college, two-year college", "meaning_zh": "短期大学(相当于中国的大专或中专)", "is_target": True},
+                        {"term_ja": "短所", "reading": "たんしょ", "ruby_html": "<ruby>短所<rt>たんしょ</rt></ruby>", "meaning_en": "Shortcoming, defect, deficiency", "meaning_zh": "缺点", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "点",
+                    "onyomi": ["テン"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "点", "reading": "てん", "ruby_html": "<ruby>点<rt>てん</rt></ruby>", "meaning_en": "Point, dot", "meaning_zh": "点", "is_target": False},
+                        {"term_ja": "点線", "reading": "てんせん", "ruby_html": "<ruby>点線<rt>てんせん</rt></ruby>", "meaning_en": "Dotted line", "meaning_zh": "虚线", "is_target": True},
+                        {"term_ja": "欠点", "reading": "けってん", "ruby_html": "<ruby>欠点<rt>けってん</rt></ruby>", "meaning_en": "Flaw, drawback, shortcoming", "meaning_zh": "缺点", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "答",
+                    "onyomi": ["トウ"],
+                    "kunyomi": ["こた・える", "こた・え"],
+                    "words": [
+                        {"term_ja": "解答", "reading": "かいとう", "ruby_html": "<ruby>解答<rt>かいとう</rt></ruby>", "meaning_en": "Answer, give answer", "meaning_zh": "解答", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "等",
+                    "onyomi": ["トウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "高等学校", "reading": "こうとうがっこう", "ruby_html": "<ruby>高等学校<rt>こうとうがっこう</rt></ruby>", "meaning_en": "Senior high school", "meaning_zh": "高中", "is_target": False}
+                    ]
+                },
+                {
+                    "kanji": "法",
+                    "onyomi": ["ホウ"],
+                    "kunyomi": [],
+                    "words": [
+                        {"term_ja": "文法", "reading": "ぶんぽう", "ruby_html": "<ruby>文法<rt>ぶんぽう</rt></ruby>", "meaning_en": "Grammar", "meaning_zh": "语法", "is_target": False},
+                        {"term_ja": "方法", "reading": "ほうほう", "ruby_html": "<ruby>方法<rt>ほうほう</rt></ruby>", "meaning_en": "Method, way", "meaning_zh": "方法", "is_target": True}
+                    ]
+                },
+                {
+                    "kanji": "立",
+                    "onyomi": ["リツ"],
+                    "kunyomi": ["た・つ", "た・てる"],
+                    "words": [
+                        {"term_ja": "公立", "reading": "こうりつ", "ruby_html": "<ruby>公立<rt>こうりつ</rt></ruby>", "meaning_en": "Public", "meaning_zh": "公立", "is_target": True},
+                        {"term_ja": "国立", "reading": "こくりつ", "ruby_html": "<ruby>国立<rt>こくりつ</rt></ruby>", "meaning_en": "National, state-run", "meaning_zh": "国立", "is_target": True},
+                        {"term_ja": "私立", "reading": "しりつ", "ruby_html": "<ruby>私立<rt>しりつ</rt></ruby>", "meaning_en": "Private", "meaning_zh": "私立", "is_target": True}
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+output_path = os.path.join(os.path.dirname(__file__), "..", "..", "data", "kanji", "part2_lessons_06_10.json")
+output_path = os.path.abspath(output_path)
+with open(output_path, "w", encoding="utf-8") as f:
+    json.dump(part2_data, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated {output_path} with {len(part2_data['lessons'])} lessons!")

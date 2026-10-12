@@ -9,6 +9,8 @@ import { renderToday } from './today.js';
 import { renderChapterChips, renderVocabList, updateHardWordsView } from './vocab-browser.js';
 
 import { renderReadingView } from './reader.js';
+import { renderKanjiView } from './kanji.js';
+import { initTestHub } from './test.js';
 
 export function showView(viewId) {
   state.currentView = viewId;
@@ -41,6 +43,10 @@ export function showView(viewId) {
     renderVocabList();
   } else if (viewId === 'reading') {
     renderReadingView();
+  } else if (viewId === 'kanji') {
+    renderKanjiView();
+  } else if (viewId === 'test') {
+    initTestHub();
   } else if (viewId === 'hard-words') {
     updateHardWordsView();
   }

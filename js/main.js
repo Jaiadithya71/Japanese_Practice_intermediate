@@ -12,10 +12,26 @@ import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFu
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
+import {
+  renderKanjiView, setKanjiTab, setKanjiPart, setKanjiLesson, setKanjiFilter, onKanjiSearch,
+  openKanjiModal, closeKanjiModal, toggleModalKanjiHard, drillActiveModalKanji,
+  drillKanjiSingle, drillKanjiLesson, getKanjiBreakdown, setExerciseLesson,
+  selectExerciseOption, checkExerciseInput, drillExerciseItem, checkMockOption
+} from './kanji.js';
+import {
+  initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
+  exitTestToHub, filterTestCategory, getAllAvailableTests
+} from './test.js';
 
 // Expose controllers to window for HTML event handlers
 window.state = state;
 window.showView = showView;
+window.initTestHub = initTestHub;
+window.startTestSession = startTestSession;
+window.submitQuestionAnswer = submitQuestionAnswer;
+window.advanceTestQuestion = advanceTestQuestion;
+window.exitTestToHub = exitTestToHub;
+window.filterTestCategory = filterTestCategory;
 
 // Optional Gist sync
 window.__n3ScheduleSync = scheduleGistSave;
@@ -56,6 +72,26 @@ window.submitQuizAnswers = submitQuizAnswers;
 window.addMissedQuestionsToSRS = addMissedQuestionsToSRS;
 window.toggleSentenceTranslations = toggleSentenceTranslations;
 
+// Kanji (Book 4)
+window.renderKanjiView = renderKanjiView;
+window.setKanjiTab = setKanjiTab;
+window.setKanjiPart = setKanjiPart;
+window.setKanjiLesson = setKanjiLesson;
+window.setKanjiFilter = setKanjiFilter;
+window.onKanjiSearch = onKanjiSearch;
+window.openKanjiModal = openKanjiModal;
+window.closeKanjiModal = closeKanjiModal;
+window.toggleModalKanjiHard = toggleModalKanjiHard;
+window.drillActiveModalKanji = drillActiveModalKanji;
+window.drillKanjiSingle = drillKanjiSingle;
+window.drillKanjiLesson = drillKanjiLesson;
+window.getKanjiBreakdown = getKanjiBreakdown;
+window.setExerciseLesson = setExerciseLesson;
+window.selectExerciseOption = selectExerciseOption;
+window.checkExerciseInput = checkExerciseInput;
+window.drillExerciseItem = drillExerciseItem;
+window.checkMockOption = checkMockOption;
+
 // Home Dashboard
 window.setHomeGroup = setHomeGroup;
 window.toggleChapterSelection = toggleChapterSelection;
@@ -90,6 +126,12 @@ async function initApp() {
   await loadAllActiveBooks();
   
   if (loadEl) loadEl.style.display = 'none';
+
+  const testNavBadge = document.getElementById('nav-test-count');
+  if (testNavBadge) {
+    const totalQ = getAllAvailableTests().reduce((acc, t) => acc + t.questionCount, 0);
+    testNavBadge.textContent = `${totalQ} Qs`;
+  }
 
   updateSidebarStats();
   initSyncUI();
