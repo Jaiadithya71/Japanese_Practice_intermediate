@@ -84,6 +84,7 @@
       </button>
     </nav>
 
+
     <!-- Sync status pill -->
     <div id="n3sync-status" class="n3s-pill n3s-idle" onclick="openSyncSetup()" title="Sync settings">
       <i class="fa-solid fa-cloud"></i><span id="n3sync-label">Saved on this device</span>
@@ -422,15 +423,24 @@
       <i class="fa-solid fa-book-open-reader"></i>
       <span>Dokkai</span>
     </button>
-    <button class="mobile-nav-item" data-view="hard-words" onclick="showView('hard-words')">
-      <i class="fa-solid fa-fire"></i>
-      <span>Weak</span>
-    </button>
     <button class="mobile-nav-item" data-view="study" onclick="startOmniReview()">
       <i class="fa-solid fa-play"></i>
       <span>Review</span>
     </button>
+    <button class="mobile-nav-item" id="btn-more-menu" onclick="openMoreMenu()">
+      <i class="fa-solid fa-ellipsis"></i>
+      <span>More</span>
+    </button>
   </nav>
+  <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()">
+    <div class="more-panel" onclick="event.stopPropagation()">
+      <div class="more-grab"></div>
+      <button class="more-item" onclick="closeMoreMenu();showView('hard-words')"><i class="fa-solid fa-fire"></i> Weak points</button>
+      <button class="more-item" onclick="closeMoreMenu();openSyncSetup()"><i class="fa-solid fa-cloud-arrow-up"></i> Backup &amp; sync</button>
+      <button class="more-item" onclick="closeMoreMenu();toggleFurigana()"><i class="fa-solid fa-font"></i> Toggle furigana</button>
+      <button class="more-item more-close" onclick="closeMoreMenu()">Close</button>
+    </div>
+  </div>
 
   <!-- Module Entrypoint -->
   <!-- ===== N3 GIST SYNC MODAL ===== -->
