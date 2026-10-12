@@ -11,10 +11,19 @@ import { startStudy, startDueReview, startOmniReview, flipCard, gradeCard, exitS
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter } from './vocab-browser.js';
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
+import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
 
 // Expose controllers to window for HTML event handlers
 window.state = state;
 window.showView = showView;
+
+// Optional Gist sync
+window.__n3ScheduleSync = scheduleGistSave;
+window.openSyncSetup = openSyncSetup;
+window.closeSyncSetup = closeSyncSetup;
+window.connectGist = connectGist;
+window.forceSyncNow = forceSyncNow;
+window.disconnectGist = disconnectGist;
 
 // Study & Multi-Pillar Omni-Review
 window.startStudy = startStudy;
@@ -83,6 +92,7 @@ async function initApp() {
   if (loadEl) loadEl.style.display = 'none';
 
   updateSidebarStats();
+  initSyncUI();
   showView('home');
   console.log('Nihongo Intermediate initialized successfully.');
 }
