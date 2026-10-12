@@ -1,0 +1,26 @@
+#today-card{background:var(--bg-card,#14171c);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:1rem;margin-bottom:1.25rem}
+.today-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem}
+.today-kicker{font-size:1.25rem;font-weight:800;color:#fff}
+.today-sub,.today-split,.today-prog small{font-size:.8rem;color:#8b93a1}
+.today-sync{width:40px;height:40px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:transparent;color:#a5b4fc;font-size:1rem}
+.today-main{width:100%;min-height:52px;font-size:1.05rem;justify-content:center}
+.today-split{text-align:center;margin:.4rem 0 .8rem}
+.today-steps{display:flex;flex-direction:column;gap:.5rem}
+.today-step{display:flex;align-items:center;gap:.75rem;min-height:56px;padding:.5rem .75rem;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:#fff;text-align:left;cursor:pointer}
+.ts-n{width:26px;height:26px;border-radius:50%;background:rgba(99,102,241,.25);display:grid;place-items:center;font-weight:700;font-size:.8rem;flex:none}
+.ts-t{flex:1;font-weight:600;font-size:.95rem}.ts-t small{display:block;font-weight:400;color:#8b93a1;font-size:.75rem;margin-top:2px}
+.today-prog{margin-top:.8rem}.today-bar{height:6px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden;margin-bottom:.3rem}
+.today-bar span{display:block;height:100%;background:var(--accent,#6366f1)}
+@media (max-width:900px){
+ #main{padding:1rem .9rem 6rem}
+ .dashboard-hero{padding:1rem!important}.dashboard-hero h2{font-size:1.15rem}.dashboard-hero p{display:none}.hero-actions{display:none}
+ #view-home .stats-grid{display:flex!important;overflow-x:auto;gap:.6rem;scroll-snap-type:x mandatory;padding-bottom:.4rem}
+ #view-home .stats-grid .stat-card{flex:0 0 72%;scroll-snap-align:start}
+ .due-banner>div:last-child{width:100%;flex-wrap:wrap}.due-banner .btn{flex:1 1 auto;min-height:44px}
+ .reader-category-tabs{display:flex;overflow-x:auto;flex-wrap:nowrap;gap:.4rem}
+ .reader-cat-tab{flex:0 0 auto;white-space:nowrap}
+ .view-header>div:last-child{flex-wrap:wrap}
+ .btn{min-height:40px}
+ .mobile-nav-item{min-height:56px}
+}
+@media (min-width:901px){#today-card{display:none}}
