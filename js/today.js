@@ -2,6 +2,8 @@
 import { state } from './state.js';
 import { getDueItemsCount } from './srs.js';
 
+const seenIt = s => !!s && (s.reps > 0 || s.correct > 0 || s.incorrect > 0);
+
 function istDayStart() {
   const off = 330 * 60000;
   return Math.floor((Date.now() + off) / 86400000) * 86400000 - off;
@@ -11,7 +13,7 @@ function nextUnit() {
   const ids = Object.keys(state.vocabDB).sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
   for (const id of ids) {
     const words = state.vocabDB[id] || [];
-    const fresh = words.filter(w => !state.stats[`V:${w.id}`]).length;
+    const fresh = words.filter(w => !seenIt(state.stats[`V:${w.id}`])).length;
     if (fresh > 0) return { id, fresh, total: words.length };
   }
   return null;
@@ -21,7 +23,7 @@ function nextLesson() {
   for (const lid of Object.keys(state.readingDB)) {
     const lesson = state.readingDB[lid];
     const qs = lesson.comprehensionQuestions || lesson.questions || [];
-    const touched = qs.some(q => state.stats[`R_Q:${q.id || `${lid}_q${q.questionNumber || 1}`}`]);
+    const touched = qs.some(q => seenIt(state.stats[`R_Q:${q.id || `${lid}_q${q.questionNumber || 1}`}`]));
     if (!touched) return { id: lid, title: lesson.title_en || lesson.title_ja || lid };
   }
   return null;
@@ -38,7 +40,7 @@ export function renderToday() {
   }
   for (const ch in state.vocabDB) for (const w of state.vocabDB[ch]) {
     vocabTotal++;
-    if (state.stats[`V:${w.id}`]) vocabSeen++;
+    if (seenIt(state.stats[`V:${w.id}`])) vocabSeen++;
   }
   const dueV = getDueItemsCount('vocab');
   const dueR = getDueItemsCount('reading');
