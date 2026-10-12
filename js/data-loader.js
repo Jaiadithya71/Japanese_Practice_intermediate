@@ -202,13 +202,14 @@ export async function loadIntermediateKanjiDB() {
       const data = await res.json();
       const lessons = data.lessons || [];
       for (const les of lessons) {
-        const lNum = les.lesson_number;
+        const lNum = les.lesson_number || les.lesson || les.lesson_id;
         if (!exercisesMap[lNum]) exercisesMap[lNum] = [];
         for (const ex of (les.exercises || [])) {
           exercisesMap[lNum].push({
             ...ex,
             part: data.metadata ? data.metadata.part : 1,
-            lesson_number: lNum
+            lesson_number: lNum,
+            lesson_title_ja: les.title_ja || les.title || `Lesson ${lNum}`
           });
         }
       }

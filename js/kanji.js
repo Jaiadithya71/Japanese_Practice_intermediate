@@ -331,7 +331,8 @@ export function getKanjiBreakdown(text) {
 // =======================================================
 
 export function setExerciseLesson(les) {
-  state.kanjiExerciseLesson = parseInt(les, 10);
+  const num = Number(les);
+  state.kanjiExerciseLesson = (!isNaN(num) && String(num) === String(les)) ? num : les;
   renderKanjiExercises();
 }
 
@@ -341,17 +342,26 @@ export function renderKanjiExercises() {
 
   const lNum = state.kanjiExerciseLesson || 1;
   const exercises = state.kanjiExercisesDB[lNum] || [];
+  const lessonKeys = Object.keys(state.kanjiExercisesDB || {});
+  const activeTitle = (exercises[0] && exercises[0].lesson_title_ja) ? exercises[0].lesson_title_ja : `Lesson ${lNum}`;
+
+  const optionsHtml = lessonKeys.map(k => {
+    const exList = state.kanjiExercisesDB[k] || [];
+    const label = (exList[0] && exList[0].lesson_title_ja) ? exList[0].lesson_title_ja : `Lesson ${k}`;
+    const isSel = String(k) === String(lNum);
+    return `<option value="${k}" ${isSel ? 'selected' : ''}>${label}</option>`;
+  }).join('');
 
   let html = `
     <div class="exercise-header-box">
       <div>
-        <h3 style="font-size: 1.25rem; color: #fff;">Lesson ${lNum} Practice Drills</h3>
+        <h3 style="font-size: 1.25rem; color: #fff;">${activeTitle} — Practice Drills</h3>
         <p style="color: var(--text-muted); font-size: 0.85rem;">Shin Kanzen Master Kanji N3 textbook questions transcribed directly.</p>
       </div>
       <div style="display: flex; gap: 0.5rem; align-items: center;">
-        <label style="font-size: 0.85rem; color: var(--text-dim);">Lesson:</label>
+        <label style="font-size: 0.85rem; color: var(--text-dim);">Section:</label>
         <select class="kanji-select" onchange="setExerciseLesson(this.value)">
-          ${[1, 2, 3, 4, 5].map(n => `<option value="${n}" ${n === lNum ? 'selected' : ''}>Lesson ${n}</option>`).join('')}
+          ${optionsHtml}
         </select>
       </div>
     </div>

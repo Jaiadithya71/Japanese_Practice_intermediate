@@ -1,0 +1,3011 @@
+{
+  "metadata": {
+    "source": "新完全マスター漢字 日本語能力試験 N3 (Shin Kanzen Master Kanji N3)",
+    "part": 5,
+    "title_ja": "第5部 いろいろな読み方のある漢字（第21回〜第25回）",
+    "title_en": "Part 5: Kanji with Multiple Readings (Lessons 21–25)",
+    "lessons": [
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "note": "Part 5 concludes at Lesson 25 (p. 101); there is no まとめ問題 5 in the textbook (followed directly by 実力テスト 1 & 2 on pp. 103–107)."
+  },
+  "lessons": [
+    {
+      "lesson_id": 21,
+      "title_ja": "第21回 二つ以上の訓読みを覚える漢字",
+      "title_en": "Lesson 21: Kanji with Two or More Kun-readings",
+      "page_range": "90-92",
+      "target_kanji": [
+        "上",
+        "生",
+        "空",
+        "夜",
+        "彼",
+        "細",
+        "冷",
+        "汚",
+        "転",
+        "遅",
+        "閉",
+        "割",
+        "覚",
+        "降"
+      ],
+      "exercises": [
+        {
+          "exercise_id": "k_ex_21_1",
+          "type": "reading_recall",
+          "title_ja": "1. 絵を見て、読み方を書きましょう。",
+          "title_en": "1. Look at the pictures and write the readings.",
+          "items": [
+            {
+              "id": "k_ex_21_1_1",
+              "target_kanji": "降",
+              "target_word": "降りる",
+              "reading": "おりる",
+              "question_ja": "① バスを a. <u>降りる</u>。雨が降っている。",
+              "question_en": "Get off the bus. It is raining.",
+              "ruby_html": "① バスを a. <u><ruby>降<rt>お</rt></ruby>りる</u>。<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っている。",
+              "answer": "おりる",
+              "acceptable_answers": [
+                "おりる",
+                "降りる"
+              ],
+              "explanation": "「降りる（おりる）」means to get off a vehicle or descend.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_21_1_2",
+              "target_kanji": "降",
+              "target_word": "降って",
+              "reading": "ふって",
+              "question_ja": "① バスを降りる。雨が b. <u>降って</u>いる。",
+              "question_en": "Get off the bus. It is raining.",
+              "ruby_html": "① バスを<ruby>降<rt>お</rt></ruby>りる。<ruby>雨<rt>あめ</rt></ruby>が b. <u><ruby>降<rt>ふ</rt></ruby>って</u>いる。",
+              "answer": "ふって",
+              "acceptable_answers": [
+                "ふって",
+                "ふる",
+                "降って"
+              ],
+              "explanation": "「降る（ふる）」is used for precipitation falling (rain, snow).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_21_1_3",
+              "target_kanji": "細",
+              "target_word": "細い",
+              "reading": "ほそい",
+              "question_ja": "② この線は a. <u>細い</u>。細かい字だ。",
+              "question_en": "This line is thin. The characters are small/detailed.",
+              "ruby_html": "② この<ruby>線<rt>せん</rt></ruby>は a. <u><ruby>細<rt>ほそ</rt></ruby>い</u>。<ruby>細<rt>こま</rt></ruby>かい<ruby>字<rt>じ</rt></ruby>だ。",
+              "answer": "ほそい",
+              "acceptable_answers": [
+                "ほそい",
+                "細い"
+              ],
+              "explanation": "「細い（ほそい）」means thin or slender in width.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_21_1_4",
+              "target_kanji": "細",
+              "target_word": "細かい",
+              "reading": "こまかい",
+              "question_ja": "② この線は細い。b. <u>細かい</u>字だ。",
+              "question_en": "This line is thin. The characters are small/fine.",
+              "ruby_html": "② この<ruby>線<rt>せん</rt></ruby>は<ruby>細<rt>ほそ</rt></ruby>い。b. <u><ruby>細<rt>こま</rt></ruby>かい</u><ruby>字<rt>じ</rt></ruby>だ。",
+              "answer": "こまかい",
+              "acceptable_answers": [
+                "こまかい",
+                "細かい"
+              ],
+              "explanation": "「細かい（こまかい）」means fine, small, or detailed.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_21_1_5",
+              "target_kanji": "彼",
+              "target_word": "彼",
+              "reading": "かれ",
+              "question_ja": "③ a. <u>彼</u>と彼女は友達だ。",
+              "question_en": "He and she are friends.",
+              "ruby_html": "③ a. <u><ruby>彼<rt>かれ</rt></ruby></u>と<ruby>彼女<rt>かのじょ</rt></ruby>は<ruby>友達<rt>ともだち</rt></ruby>だ。",
+              "answer": "かれ",
+              "acceptable_answers": [
+                "かれ",
+                "彼"
+              ],
+              "explanation": "「彼（かれ）」means he or boyfriend.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_21_1_6",
+              "target_kanji": "彼",
+              "target_word": "彼女",
+              "reading": "かのじょ",
+              "question_ja": "③ 彼と b. <u>彼女</u>は友達だ。",
+              "question_en": "He and she are friends.",
+              "ruby_html": "③ <ruby>彼<rt>かれ</rt></ruby>と b. <u><ruby>彼女<rt>かのじょ</rt></ruby></u>は<ruby>友達<rt>ともだち</rt></ruby>だ。",
+              "answer": "かのじょ",
+              "acceptable_answers": [
+                "かのじょ",
+                "彼女"
+              ],
+              "explanation": "「彼女（かのじょ）」means she or girlfriend.",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_21_1_7",
+              "target_kanji": "冷",
+              "target_word": "冷ます",
+              "reading": "さます",
+              "question_ja": "④ お茶を a. <u>冷ます</u>。ビールを冷やす。",
+              "question_en": "Let the tea cool down. Chill the beer.",
+              "ruby_html": "④ お<ruby>茶<rt>ちゃ</rt></ruby>を a. <u><ruby>冷<rt>さ</rt></ruby>ます</u>。ビールを<ruby>冷<rt>ひ</rt></ruby>やす。",
+              "answer": "さます",
+              "acceptable_answers": [
+                "さます",
+                "冷ます"
+              ],
+              "explanation": "「冷ます（さます）」means to let something hot cool down to normal temperature.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_21_1_8",
+              "target_kanji": "冷",
+              "target_word": "冷やす",
+              "reading": "ひやす",
+              "question_ja": "④ お茶を冷ます。ビールを b. <u>冷やす</u>。",
+              "question_en": "Let the tea cool down. Chill the beer.",
+              "ruby_html": "④ お<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>冷<rt>さ</rt></ruby>ます。ビールを b. <u><ruby>冷<rt>ひ</rt></ruby>やす</u>。",
+              "answer": "ひやす",
+              "acceptable_answers": [
+                "ひやす",
+                "冷やす"
+              ],
+              "explanation": "「冷やす（ひやす）」means to chill or make cold (e.g., in a refrigerator).",
+              "item_id": 8
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_21_2",
+          "type": "multiple_choice",
+          "title_ja": "2. 正しいものを選びましょう。",
+          "title_en": "2. Choose the correct option.",
+          "items": [
+            {
+              "id": "k_ex_21_2_1",
+              "target_kanji": "細",
+              "target_word": "細長い",
+              "reading": "ほそながい",
+              "question_ja": "① プレゼントは<u>細長い</u>（ a ほそながい　b こまながい ）箱に入っていた。",
+              "question_en": "The present was in a long, thin box.",
+              "ruby_html": "① プレゼントは<u><ruby>細長<rt>ほそなが</rt></ruby>い</u><ruby>箱<rt>はこ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>っていた。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "ほそながい"
+                },
+                {
+                  "id": "2",
+                  "text": "こまながい"
+                }
+              ],
+              "answer": "1",
+              "explanation": "「細長い（ほそながい）」means long and narrow/slender.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_21_2_2",
+              "target_kanji": "閉",
+              "target_word": "閉じて",
+              "reading": "とじて",
+              "question_ja": "② 父は目を<u>閉じて</u>（ a とじて　b しめて ）考えていた。",
+              "question_en": "My father was thinking with his eyes closed.",
+              "ruby_html": "② <ruby>父<rt>ちち</rt></ruby>は<ruby>目<rt>め</rt></ruby>を<u><ruby>閉<rt>と</rt></ruby>じて</u><ruby>考<rt>かんが</rt></ruby>えていた。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "とじて"
+                },
+                {
+                  "id": "2",
+                  "text": "しめて"
+                }
+              ],
+              "answer": "1",
+              "explanation": "For eyes, books, or umbrellas, 「閉じる（とじる）」is used.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_21_2_3",
+              "target_kanji": "空",
+              "target_word": "空いて",
+              "reading": "あいて",
+              "question_ja": "③ 込んでいますね。<u>あいて</u>（ a 開いて　b 空いて ）いる席はあるでしょうか。",
+              "question_en": "It's crowded, isn't it? I wonder if there are any vacant seats.",
+              "ruby_html": "③ <ruby>込<rt>こ</rt></ruby>んでいますね。<u><ruby>空<rt>あ</rt></ruby>いて</u>いる<ruby>席<rt>せき</rt></ruby>はあるでしょうか。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "開いて"
+                },
+                {
+                  "id": "2",
+                  "text": "空いて"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「空いている（あいている）」is used for vacant seats, rooms, or free time.",
+              "item_id": 3
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_21_3",
+          "type": "radical_assembly",
+          "title_ja": "3. 漢字の部分を入れて、漢字を完成しましょう。読み方も書きましょう。",
+          "title_en": "3. Combine the parts to complete the kanji and write the reading.",
+          "items": [
+            {
+              "id": "k_ex_21_3_1",
+              "target_kanji": "遅",
+              "target_word": "遅い",
+              "reading": "おそい",
+              "question_ja": "① もう夜（ 辶 ＋ 犀 ＝ ？ ）いですから、車で送りましょうか。",
+              "question_en": "Since it's already late at night, shall I drive you home?",
+              "ruby_html": "① もう<ruby>夜<rt>よる</rt></ruby><u><ruby>遅<rt>おそ</rt></ruby></u>いですから、<ruby>車<rt>くるま</rt></ruby>で<ruby>送<rt>おく</rt></ruby>りましょうか。",
+              "answer": "遅（おそ）",
+              "acceptable_answers": [
+                "遅",
+                "おそい",
+                "おそ",
+                "遅い"
+              ],
+              "explanation": "辶 + 犀 = 遅. 「夜遅い（よるおそい）」means late at night.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_21_3_2",
+              "target_kanji": "汚",
+              "target_word": "汚い",
+              "reading": "きたない",
+              "question_ja": "② 掃除をしていないので、部屋が（ 氵 ＋ 夸 ＝ ？ ）い。",
+              "question_en": "Because I haven't cleaned, the room is dirty.",
+              "ruby_html": "② <ruby>掃除<rt>そうじ</rt></ruby>をしていないので、<ruby>部屋<rt>へや</rt></ruby>が<u><ruby>汚<rt>きたな</rt></ruby></u>い。",
+              "answer": "汚（きたな）",
+              "acceptable_answers": [
+                "汚",
+                "きたない",
+                "きたな",
+                "汚い"
+              ],
+              "explanation": "氵 + 夸 = 汚. 「汚い（きたない）」means dirty or messy.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_21_3_3",
+              "target_kanji": "転",
+              "target_word": "転がって",
+              "reading": "ころがって",
+              "question_ja": "③ 打ったボールは、彼女の方に（ 車 ＋ 云 ＝ ？ ）がっていった。",
+              "question_en": "The hit ball rolled toward her.",
+              "ruby_html": "③ <ruby>打<rt>う</rt></ruby>ったボールは、<ruby>彼女<rt>かのじょ</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>に<u><ruby>転<rt>ころ</rt></ruby></u>がっていった。",
+              "answer": "転（ころ）",
+              "acceptable_answers": [
+                "転",
+                "ころがって",
+                "ころ",
+                "転がって"
+              ],
+              "explanation": "車 + 云 = 転. 「転がる（ころがる）」means to roll.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_21_3_4",
+              "target_kanji": "閉",
+              "target_word": "閉めて",
+              "reading": "しめて",
+              "question_ja": "④ 風が強いから、窓を（ 門 ＋ 才 ＝ ？ ）めてください。",
+              "question_en": "Because the wind is strong, please close the window.",
+              "ruby_html": "④ <ruby>風<rt>かぜ</rt></ruby>が<ruby>強<rt>つよ</rt></ruby>いから、<ruby>窓<rt>まど</rt></ruby>を<u><ruby>閉<rt>し</rt></ruby></u>めてください。",
+              "answer": "閉（し）",
+              "acceptable_answers": [
+                "閉",
+                "しめて",
+                "し",
+                "閉めて"
+              ],
+              "explanation": "門 + 才 = 閉. 「窓を閉める（まどをしめる）」means to close the window.",
+              "item_id": 4
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_21_4",
+          "type": "reading_writing",
+          "title_ja": "4. 下線の部分の漢字の読み方を書きましょう。",
+          "title_en": "4. Write the readings of the underlined kanji.",
+          "items": [
+            {
+              "id": "k_ex_21_4_1",
+              "target_kanji": "夜",
+              "target_word": "今夜",
+              "reading": "こんや",
+              "question_ja": "① a. <u>今夜</u>頑張れば、仕事は明日の夜中には終わるでしょう。",
+              "question_en": "If I work hard tonight, the work will probably finish by midnight tomorrow.",
+              "ruby_html": "① a. <u><ruby>今夜<rt>こんや</rt></ruby></u><ruby>頑張<rt>がんば</rt></ruby>れば、<ruby>仕事<rt>しごと</rt></ruby>は<ruby>明日<rt>あした</rt></ruby>の<ruby>夜中<rt>よなか</rt></ruby>には<ruby>終<rt>お</rt></ruby>わるでしょう。",
+              "answer": "こんや",
+              "acceptable_answers": [
+                "こんや",
+                "今夜"
+              ],
+              "explanation": "「今夜（こんや）」uses the on-reading ヤ.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_21_4_2",
+              "target_kanji": "夜",
+              "target_word": "夜中",
+              "reading": "よなか",
+              "question_ja": "① 今夜頑張れば、仕事は明日の b. <u>夜中</u>には終わるでしょう。",
+              "question_en": "If I work hard tonight, the work will probably finish by midnight tomorrow.",
+              "ruby_html": "① <ruby>今夜<rt>こんや</rt></ruby><ruby>頑張<rt>がんば</rt></ruby>れば、<ruby>仕事<rt>しごと</rt></ruby>は<ruby>明日<rt>あした</rt></ruby>の b. <u><ruby>夜中<rt>よなか</rt></ruby></u>には<ruby>終<rt>お</rt></ruby>わるでしょう。",
+              "answer": "よなか",
+              "acceptable_answers": [
+                "よなか",
+                "夜中"
+              ],
+              "explanation": "「夜中（よなか）」uses the kun-reading よ (middle of the night).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_21_4_3",
+              "target_kanji": "上",
+              "target_word": "上がった",
+              "reading": "あがった",
+              "question_ja": "② 気温が a. <u>上がった</u>ので、上着を脱いだ。次の上りの電車は何時ですか。",
+              "question_en": "Since the temperature rose, I took off my jacket. What time is the next inbound train?",
+              "ruby_html": "② <ruby>気温<rt>きおん</rt></ruby>が a. <u><ruby>上<rt>あ</rt></ruby>がった</u>ので、<ruby>上着<rt>うわぎ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いだ。<ruby>次<rt>つぎ</rt></ruby>の<ruby>上<rt>のぼ</rt></ruby>りの<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>ですか。",
+              "answer": "あがった",
+              "acceptable_answers": [
+                "あがった",
+                "あがる",
+                "上がった"
+              ],
+              "explanation": "「上がる（あがる）」means to rise or go up.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_21_4_4",
+              "target_kanji": "上",
+              "target_word": "上着",
+              "reading": "うわぎ",
+              "question_ja": "② 気温が上がったので、b. <u>上着</u>を脱いだ。次の上りの電車は何時ですか。",
+              "question_en": "Since the temperature rose, I took off my jacket. What time is the next inbound train?",
+              "ruby_html": "② <ruby>気温<rt>きおん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がったので、b. <u><ruby>上着<rt>うわぎ</rt></ruby></u>を<ruby>脱<rt>ぬ</rt></ruby>いだ。<ruby>次<rt>つぎ</rt></ruby>の<ruby>上<rt>のぼ</rt></ruby>りの<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>ですか。",
+              "answer": "うわぎ",
+              "acceptable_answers": [
+                "うわぎ",
+                "上着"
+              ],
+              "explanation": "「上着（うわぎ）」uses the kun-reading うわ (outerwear/jacket).",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_21_4_5",
+              "target_kanji": "上",
+              "target_word": "上り",
+              "reading": "のぼり",
+              "question_ja": "② 気温が上がったので、上着を脱いだ。次の c. <u>上り</u>の電車は何時ですか。",
+              "question_en": "Since the temperature rose, I took off my jacket. What time is the next inbound train?",
+              "ruby_html": "② <ruby>気温<rt>きおん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がったので、<ruby>上着<rt>うわぎ</rt></ruby>を<ruby>脱<rt>ぬ</rt></ruby>いだ。<ruby>次<rt>つぎ</rt></ruby>の c. <u><ruby>上<rt>のぼ</rt></ruby>り</u>の<ruby>電車<rt>でんしゃ</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>ですか。",
+              "answer": "のぼり",
+              "acceptable_answers": [
+                "のぼり",
+                "上り"
+              ],
+              "explanation": "「上り（のぼり）」means going up or an inbound train heading toward the capital.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_21_4_6",
+              "target_kanji": "空",
+              "target_word": "空",
+              "reading": "そら",
+              "question_ja": "③ きれいな鳥が、a. <u>空</u>を飛んでいる。箱の中は空だった。",
+              "question_en": "A beautiful bird is flying in the sky. The inside of the box was empty.",
+              "ruby_html": "③ きれいな<ruby>鳥<rt>とり</rt></ruby>が、a. <u><ruby>空<rt>そら</rt></ruby></u>を<ruby>飛<rt>と</rt></ruby>んでいる。<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>は<ruby>空<rt>から</rt></ruby>だった。",
+              "answer": "そら",
+              "acceptable_answers": [
+                "そら",
+                "空"
+              ],
+              "explanation": "「空（そら）」means sky.",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_21_4_7",
+              "target_kanji": "空",
+              "target_word": "空",
+              "reading": "から",
+              "question_ja": "③ きれいな鳥が、空を飛んでいる。箱の中は b. <u>空</u>だった。",
+              "question_en": "A beautiful bird is flying in the sky. The inside of the box was empty.",
+              "ruby_html": "③ きれいな<ruby>鳥<rt>とり</rt></ruby>が、<ruby>空<rt>そら</rt></ruby>を<ruby>飛<rt>と</rt></ruby>んでいる。<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>は b. <u><ruby>空<rt>から</rt></ruby></u>だった。",
+              "answer": "から",
+              "acceptable_answers": [
+                "から",
+                "空"
+              ],
+              "explanation": "「空（から）」means empty.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_21_4_8",
+              "target_kanji": "生",
+              "target_word": "高校生",
+              "reading": "こうこうせい",
+              "question_ja": "④ 私は a. <u>高校生</u>になるまで、生の魚が食べられなかった。生きている魚を思い出すからだ。",
+              "question_en": "Until I became a high school student, I couldn't eat raw fish because it reminded me of living fish.",
+              "ruby_html": "④ <ruby>私<rt>わたし</rt></ruby>は a. <u><ruby>高校生<rt>こうこうせい</rt></ruby></u>になるまで、<ruby>生<rt>なま</rt></ruby>の<ruby>魚<rt>さかな</rt></ruby>が<ruby>食<rt>た</rt></ruby>べられなかった。<ruby>生<rt>い</rt></ruby>きている<ruby>魚<rt>さかな</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>すからだ。",
+              "answer": "こうこうせい",
+              "acceptable_answers": [
+                "こうこうせい",
+                "高校生"
+              ],
+              "explanation": "「高校生（こうこうせい）」uses the on-reading セイ.",
+              "item_id": 8
+            },
+            {
+              "id": "k_ex_21_4_9",
+              "target_kanji": "生",
+              "target_word": "生",
+              "reading": "なま",
+              "question_ja": "④ 私は高校生になるまで、b. <u>生</u>の魚が食べられなかった。生きている魚を思い出すからだ。",
+              "question_en": "Until I became a high school student, I couldn't eat raw fish because it reminded me of living fish.",
+              "ruby_html": "④ <ruby>私<rt>わたし</rt></ruby>は<ruby>高校生<rt>こうこうせい</rt></ruby>になるまで、b. <u><ruby>生<rt>なま</rt></ruby></u>の<ruby>魚<rt>さかな</rt></ruby>が<ruby>食<rt>た</rt></ruby>べられなかった。<ruby>生<rt>い</rt></ruby>きている<ruby>魚<rt>さかな</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>すからだ。",
+              "answer": "なま",
+              "acceptable_answers": [
+                "なま",
+                "生"
+              ],
+              "explanation": "「生（なま）」means raw or fresh.",
+              "item_id": 9
+            },
+            {
+              "id": "k_ex_21_4_10",
+              "target_kanji": "生",
+              "target_word": "生きて",
+              "reading": "いきて",
+              "question_ja": "④ 私は高校生になるまで、生の魚が食べられなかった。c. <u>生きて</u>いる魚を思い出すからだ。",
+              "question_en": "Until I became a high school student, I couldn't eat raw fish because it reminded me of living fish.",
+              "ruby_html": "④ <ruby>私<rt>わたし</rt></ruby>は<ruby>高校生<rt>こうこうせい</rt></ruby>になるまで、<ruby>生<rt>なま</rt></ruby>の<ruby>魚<rt>さかな</rt></ruby>が<ruby>食<rt>た</rt></ruby>べられなかった。c. <u><ruby>生<rt>い</rt></ruby>きて</u>いる<ruby>魚<rt>さかな</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>すからだ。",
+              "answer": "いきて",
+              "acceptable_answers": [
+                "いきて",
+                "いきる",
+                "生きて"
+              ],
+              "explanation": "「生きる（いきる）」means to live.",
+              "item_id": 10
+            },
+            {
+              "id": "k_ex_21_4_11",
+              "target_kanji": "割",
+              "target_word": "割引",
+              "reading": "わりびき",
+              "question_ja": "⑤ a. <u>割引</u>で買ったお皿が割れてしまった。",
+              "question_en": "The plate I bought at a discount broke.",
+              "ruby_html": "⑤ a. <u><ruby>割引<rt>わりびき</rt></ruby></u>で<ruby>買<rt>か</rt></ruby>ったお<ruby>皿<rt>さら</rt></ruby>が<ruby>割<rt>わ</rt></ruby>れてしまった。",
+              "answer": "わりびき",
+              "acceptable_answers": [
+                "わりびき",
+                "割引"
+              ],
+              "explanation": "「割引（わりびき）」means discount.",
+              "item_id": 11
+            },
+            {
+              "id": "k_ex_21_4_12",
+              "target_kanji": "割",
+              "target_word": "割れて",
+              "reading": "われて",
+              "question_ja": "⑤ 割引で買ったお皿が b. <u>割れて</u>しまった。",
+              "question_en": "The plate I bought at a discount broke.",
+              "ruby_html": "⑤ <ruby>割引<rt>わりびき</rt></ruby>で<ruby>買<rt>か</rt></ruby>ったお<ruby>皿<rt>さら</rt></ruby>が b. <u><ruby>割<rt>わ</rt></ruby>れて</u>しまった。",
+              "answer": "われて",
+              "acceptable_answers": [
+                "われて",
+                "われる",
+                "割れて"
+              ],
+              "explanation": "「割れる（われる）」means to break or smash.",
+              "item_id": 12
+            },
+            {
+              "id": "k_ex_21_4_13",
+              "target_kanji": "覚",
+              "target_word": "覚めても",
+              "reading": "さめても",
+              "question_ja": "⑥ 怖い夢だった。目が a. <u>覚めても</u>、はっきり覚えている。",
+              "question_en": "It was a scary dream. Even after waking up, I clearly remember it.",
+              "ruby_html": "⑥ <ruby>怖<rt>こわ</rt></ruby>い<ruby>夢<rt>ゆめ</rt></ruby>だった。<ruby>目<rt>め</rt></ruby>が a. <u><ruby>覚<rt>さ</rt></ruby>めても</u>、はっきり<ruby>覚<rt>おぼ</rt></ruby>えている。",
+              "answer": "さめても",
+              "acceptable_answers": [
+                "さめても",
+                "さめる",
+                "覚めても"
+              ],
+              "explanation": "「目が覚める（めがさめる）」means to wake up.",
+              "item_id": 13
+            },
+            {
+              "id": "k_ex_21_4_14",
+              "target_kanji": "覚",
+              "target_word": "覚えて",
+              "reading": "おぼえて",
+              "question_ja": "⑥ 怖い夢だった。目が覚めても、はっきり b. <u>覚えて</u>いる。",
+              "question_en": "It was a scary dream. Even after waking up, I clearly remember it.",
+              "ruby_html": "⑥ <ruby>怖<rt>こわ</rt></ruby>い<ruby>夢<rt>ゆめ</rt></ruby>だった。<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めても、はっきり b. <u><ruby>覚<rt>おぼ</rt></ruby>えて</u>いる。",
+              "answer": "おぼえて",
+              "acceptable_answers": [
+                "おぼえて",
+                "おぼえる",
+                "覚えて"
+              ],
+              "explanation": "「覚える（おぼえる）」means to remember or memorize.",
+              "item_id": 14
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_21_5",
+          "type": "word_pairing",
+          "title_ja": "5. □には同じ漢字が入ります。[転、遅、汚、生、冷] から、漢字を選んで書きましょう。下線の部分の読み方も書きましょう。",
+          "title_en": "5. Fill in the blanks with the same kanji from [転, 遅, 汚, 生, 冷] and write the readings.",
+          "items": [
+            {
+              "id": "k_ex_21_5_1",
+              "target_kanji": "生",
+              "target_word": "生まれた",
+              "reading": "うまれた",
+              "question_ja": "① 去年 a. <u>[ 　 ]まれた</u>赤ちゃんに、歯が生えてきた。",
+              "question_en": "Teeth have started growing in the baby born last year.",
+              "ruby_html": "① <ruby>去年<rt>きょねん</rt></ruby> a. <u><ruby>生<rt>う</rt></ruby>まれた</u><ruby>赤<rt>あか</rt></ruby>ちゃんに、<ruby>歯<rt>は</rt></ruby>が<ruby>生<rt>は</rt></ruby>えてきた。",
+              "answer": "生（うまれた）",
+              "acceptable_answers": [
+                "生",
+                "うまれた",
+                "生まれた"
+              ],
+              "explanation": "「生まれる（うまれる）」means to be born.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_21_5_2",
+              "target_kanji": "生",
+              "target_word": "生えて",
+              "reading": "はえて",
+              "question_ja": "① 去年生まれた赤ちゃんに、歯が b. <u>[ 　 ]えて</u>きた。",
+              "question_en": "Teeth have started growing in the baby born last year.",
+              "ruby_html": "① <ruby>去年<rt>きょねん</rt></ruby><ruby>生<rt>う</rt></ruby>まれた<ruby>赤<rt>あか</rt></ruby>ちゃんに、<ruby>歯<rt>は</rt></ruby>が b. <u><ruby>生<rt>は</rt></ruby>えて</u>きた。",
+              "answer": "生（はえて）",
+              "acceptable_answers": [
+                "生",
+                "はえて",
+                "生えて"
+              ],
+              "explanation": "「生える（はえる）」means to grow or sprout (teeth, hair, grass).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_21_5_3",
+              "target_kanji": "汚",
+              "target_word": "汚れて",
+              "reading": "よごれて",
+              "question_ja": "② 外で遊んで帰ってきた子供の手と足は、a. <u>[ 　 ]れて</u>汚くなっていた。",
+              "question_en": "The hands and feet of the child who came back from playing outside had gotten stained and dirty.",
+              "ruby_html": "② <ruby>外<rt>そと</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>んで<ruby>帰<rt>かえ</rt></ruby>ってきた<ruby>子供<rt>こども</rt></ruby>の<ruby>手<rt>て</rt></ruby>と<ruby>足<rt>あし</rt></ruby>は、a. <u><ruby>汚<rt>よご</rt></ruby>れて</u><ruby>汚<rt>きたな</rt></ruby>くなっていた。",
+              "answer": "汚（よごれて）",
+              "acceptable_answers": [
+                "汚",
+                "よごれて",
+                "汚れて"
+              ],
+              "explanation": "「汚れる（よごれる）」means to become dirty.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_21_5_4",
+              "target_kanji": "汚",
+              "target_word": "汚く",
+              "reading": "きたなく",
+              "question_ja": "② 外で遊んで帰ってきた子供の手と足は、汚れて b. <u>[ 　 ]く</u>なっていた。",
+              "question_en": "The hands and feet of the child who came back from playing outside had gotten stained and dirty.",
+              "ruby_html": "② <ruby>外<rt>そと</rt></ruby>で<ruby>遊<rt>あそ</rt></ruby>んで<ruby>帰<rt>かえ</rt></ruby>ってきた<ruby>子供<rt>こども</rt></ruby>の<ruby>手<rt>て</rt></ruby>と<ruby>足<rt>あし</rt></ruby>は、<ruby>汚<rt>よご</rt></ruby>れて b. <u><ruby>汚<rt>きたな</rt></ruby>く</u>なっていた。",
+              "answer": "汚（きたなく）",
+              "acceptable_answers": [
+                "汚",
+                "きたなく",
+                "汚く"
+              ],
+              "explanation": "「汚い（きたない）」adverbial form is 「汚く（きたなく）」.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_21_5_5",
+              "target_kanji": "冷",
+              "target_word": "冷たい",
+              "reading": "つめたい",
+              "question_ja": "③ この料理は a. <u>[ 　 ]たい</u>ほうがおいしいので、よく冷やしてください。",
+              "question_en": "Since this dish tastes better cold, please chill it well.",
+              "ruby_html": "③ この<ruby>料理<rt>りょうり</rt></ruby>は a. <u><ruby>冷<rt>つめ</rt></ruby>たい</u>ほうがおいしいので、よく<ruby>冷<rt>ひ</rt></ruby>やしてください。",
+              "answer": "冷（つめたい）",
+              "acceptable_answers": [
+                "冷",
+                "つめたい",
+                "冷たい"
+              ],
+              "explanation": "「冷たい（つめたい）」means cold to the touch or taste.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_21_5_6",
+              "target_kanji": "冷",
+              "target_word": "冷やして",
+              "reading": "ひやして",
+              "question_ja": "③ この料理は冷たいほうがおいしいので、よく b. <u>[ 　 ]やして</u>ください。",
+              "question_en": "Since this dish tastes better cold, please chill it well.",
+              "ruby_html": "③ この<ruby>料理<rt>りょうり</rt></ruby>は<ruby>冷<rt>つめ</rt></ruby>たいほうがおいしいので、よく b. <u><ruby>冷<rt>ひ</rt></ruby>やして</u>ください。",
+              "answer": "冷（ひやして）",
+              "acceptable_answers": [
+                "冷",
+                "ひやして",
+                "冷やして"
+              ],
+              "explanation": "「冷やす（ひやす）」means to chill.",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_21_5_7",
+              "target_kanji": "転",
+              "target_word": "自転車",
+              "reading": "じてんしゃ",
+              "question_ja": "④ a. <u>自[ 　 ]車</u>に乗っていて、転んでしまった。",
+              "question_en": "While riding a bicycle, I fell down.",
+              "ruby_html": "④ a. <u><ruby>自転車<rt>じてんしゃ</rt></ruby></u>に<ruby>乗<rt>の</rt></ruby>っていて、<ruby>転<rt>ころ</rt></ruby>んでしまった。",
+              "answer": "転（じてんしゃ）",
+              "acceptable_answers": [
+                "転",
+                "じてんしゃ",
+                "自転車"
+              ],
+              "explanation": "「自転車（じてんしゃ）」means bicycle.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_21_5_8",
+              "target_kanji": "転",
+              "target_word": "転んで",
+              "reading": "ころんで",
+              "question_ja": "④ 自転車に乗っていて、b. <u>[ 　 ]んで</u>しまった。",
+              "question_en": "While riding a bicycle, I fell down.",
+              "ruby_html": "④ <ruby>自転車<rt>じてんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>っていて、b. <u><ruby>転<rt>ころ</rt></ruby>んで</u>しまった。",
+              "answer": "転（ころんで）",
+              "acceptable_answers": [
+                "転",
+                "ころんで",
+                "転んで"
+              ],
+              "explanation": "「転ぶ（ころぶ）」means to fall down or tumble.",
+              "item_id": 8
+            },
+            {
+              "id": "k_ex_21_5_9",
+              "target_kanji": "遅",
+              "target_word": "遅い",
+              "reading": "おそい",
+              "question_ja": "⑤ A：「約束の時間を30分過ぎていますよ。山下さん、a. <u>[ 　 ]い</u>ですね。」",
+              "question_en": "A: 'It's 30 minutes past the promised time. Yamashita-san is late, isn't he?'",
+              "ruby_html": "⑤ A：「<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を30<ruby>分<rt>ぷん</rt></ruby><ruby>過<rt>す</rt></ruby>ぎていますよ。<ruby>山下<rt>やました</rt></ruby>さん、a. <u><ruby>遅<rt>おそ</rt></ruby>い</u>ですね。」",
+              "answer": "遅（おそい）",
+              "acceptable_answers": [
+                "遅",
+                "おそい",
+                "遅い"
+              ],
+              "explanation": "「遅い（おそい）」means late or slow.",
+              "item_id": 9
+            },
+            {
+              "id": "k_ex_21_5_10",
+              "target_kanji": "遅",
+              "target_word": "遅れて",
+              "reading": "おくれて",
+              "question_ja": "⑤ B：「事故で電車が b. <u>[ 　 ]れて</u>いるらしいですよ。」",
+              "question_en": "B: 'I hear the train is delayed due to an accident.'",
+              "ruby_html": "⑤ B：「<ruby>事故<rt>じこ</rt></ruby>で<ruby>電車<rt>でんしゃ</rt></ruby>が b. <u><ruby>遅<rt>おく</rt></ruby>れて</u>いるらしいですよ。」",
+              "answer": "遅（おくれて）",
+              "acceptable_answers": [
+                "遅",
+                "おくれて",
+                "遅れて"
+              ],
+              "explanation": "「遅れる（おくれる）」means to be delayed or late.",
+              "item_id": 10
+            }
+          ]
+        }
+      ],
+      "lesson_number": 21
+    },
+    {
+      "lesson_id": 22,
+      "title_ja": "第22回 二つめの音読みを覚える漢字",
+      "title_en": "Lesson 22: Kanji with a Second On-reading",
+      "page_range": "94-95",
+      "target_kanji": [
+        "日",
+        "男",
+        "自",
+        "去",
+        "工",
+        "間",
+        "文",
+        "作",
+        "物",
+        "便",
+        "楽"
+      ],
+      "exercises": [
+        {
+          "exercise_id": "k_ex_22_1",
+          "type": "reading_recall",
+          "title_ja": "1. 下線の漢字の読み方が同じものを線で結びましょう。読み方も書きましょう。",
+          "title_en": "1. Match the words with the same kanji reading and write the readings.",
+          "items": [
+            {
+              "id": "k_ex_22_1_1",
+              "target_kanji": "便",
+              "target_word": "郵便局・宅配便",
+              "reading": "ゆうびんきょく・たくはいびん",
+              "question_ja": "① a. 郵<u>便</u>局 ―― b. 宅配<u>便</u>",
+              "question_en": "Post office — Home delivery service (both read ビン)",
+              "ruby_html": "① a. <ruby>郵便局<rt>ゆうびんきょく</rt></ruby> ―― b. <ruby>宅配便<rt>たくはいびん</rt></ruby>",
+              "answer": "ゆうびんきょく・たくはいびん",
+              "acceptable_answers": [
+                "ゆうびんきょく",
+                "たくはいびん",
+                "びん",
+                "ゆうびんきょく・たくはいびん"
+              ],
+              "explanation": "When 「便」means mail or flight/service, it is read ビン.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_22_1_2",
+              "target_kanji": "便",
+              "target_word": "便利・不便",
+              "reading": "べんり・ふべん",
+              "question_ja": "① c. <u>便</u>利 ―― d. 不<u>便</u>",
+              "question_en": "Convenient — Inconvenient (both read ベン)",
+              "ruby_html": "① c. <ruby>便利<rt>べんり</rt></ruby> ―― d. <ruby>不便<rt>ふべん</rt></ruby>",
+              "answer": "べんり・ふべん",
+              "acceptable_answers": [
+                "べんり",
+                "ふべん",
+                "べん",
+                "べんり・ふべん"
+              ],
+              "explanation": "When 「便」means convenience, it is read ベン.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_22_1_3",
+              "target_kanji": "工",
+              "target_word": "工場・工業",
+              "reading": "こうじょう・こうぎょう",
+              "question_ja": "② a. <u>工</u>場 ―― d. <u>工</u>業",
+              "question_en": "Factory — Manufacturing industry (both read コウ)",
+              "ruby_html": "② a. <ruby>工場<rt>こうじょう</rt></ruby> ―― d. <ruby>工業<rt>こうぎょう</rt></ruby>",
+              "answer": "こうじょう・こうぎょう",
+              "acceptable_answers": [
+                "こうじょう",
+                "こうぎょう",
+                "こう",
+                "こうじょう・こうぎょう"
+              ],
+              "explanation": "In 「工場（こうじょう）」and 「工業（こうぎょう）」, 工 is read コウ.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_22_1_4",
+              "target_kanji": "工",
+              "target_word": "大工・工夫",
+              "reading": "だいく・くふう",
+              "question_ja": "② c. 大<u>工</u> ―― b. <u>工</u>夫",
+              "question_en": "Carpenter — Device/ingenuity (both read ク)",
+              "ruby_html": "② c. <ruby>大工<rt>だいく</rt></ruby> ―― b. <ruby>工夫<rt>くふう</rt></ruby>",
+              "answer": "だいく・くふう",
+              "acceptable_answers": [
+                "だいく",
+                "くふう",
+                "く",
+                "だいく・くふう"
+              ],
+              "explanation": "In 「大工（だいく）」and 「工夫（くふう）」, 工 is read ク.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_22_1_5",
+              "target_kanji": "日",
+              "target_word": "日曜日・日時",
+              "reading": "にちようび・にちじ",
+              "question_ja": "③ a. <u>日</u>曜日 ―― d. <u>日</u>時",
+              "question_en": "Sunday — Date and time (both read ニチ)",
+              "ruby_html": "③ a. <ruby>日曜日<rt>にちようび</rt></ruby> ―― d. <ruby>日時<rt>にちじ</rt></ruby>",
+              "answer": "にちようび・にちじ",
+              "acceptable_answers": [
+                "にちようび",
+                "にちじ",
+                "にち",
+                "にちようび・にちじ"
+              ],
+              "explanation": "In 「日曜日（にちようび）」and 「日時（にちじ）」, 日 is read ニチ.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_22_1_6",
+              "target_kanji": "日",
+              "target_word": "先日・平日",
+              "reading": "せんじつ・へいじつ",
+              "question_ja": "③ c. 先<u>日</u> ―― b. 平<u>日</u>",
+              "question_en": "The other day — Weekday (both read ジツ)",
+              "ruby_html": "③ c. <ruby>先日<rt>せんじつ</rt></ruby> ―― b. <ruby>平日<rt>へいじつ</rt></ruby>",
+              "answer": "せんじつ・へいじつ",
+              "acceptable_answers": [
+                "せんじつ",
+                "へいじつ",
+                "じつ",
+                "せんじつ・へいじつ"
+              ],
+              "explanation": "In 「先日（せんじつ）」and 「平日（へいじつ）」, 日 is read ジツ.",
+              "item_id": 6
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_22_2",
+          "type": "multiple_choice",
+          "title_ja": "2. 正しいものを選びましょう。",
+          "title_en": "2. Choose the correct reading.",
+          "items": [
+            {
+              "id": "k_ex_22_2_1",
+              "target_kanji": "日",
+              "target_word": "本日",
+              "reading": "ほんじつ",
+              "question_ja": "① <u>本日</u>（ a ほんにち　b ほんじつ ）はお忙しい中、お集まりくださいまして、ありがとうございます。",
+              "question_en": "Thank you very much for gathering today despite your busy schedules.",
+              "ruby_html": "① <u><ruby>本日<rt>ほんじつ</rt></ruby></u>はお<ruby>忙<rt>いそが</rt></ruby>しい<ruby>中<rt>なか</rt></ruby>、お<ruby>集<rt>あつ</rt></ruby>まりくださいまして、ありがとうございます。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "ほんにち"
+                },
+                {
+                  "id": "2",
+                  "text": "ほんじつ"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「本日（ほんじつ）」is formal for 'today'.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_22_2_2",
+              "target_kanji": "去",
+              "target_word": "過去",
+              "reading": "かこ",
+              "question_ja": "② <u>過去</u>（ a かきょ　b かっきょ　c かこ ）の嫌な思い出は、話したくない。",
+              "question_en": "I don't want to talk about unpleasant memories of the past.",
+              "ruby_html": "② <u><ruby>過去<rt>かこ</rt></ruby></u>の<ruby>嫌<rt>いや</rt></ruby>な<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>で</rt></ruby>は、<ruby>話<rt>はな</rt></ruby>したくない。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "かきょ"
+                },
+                {
+                  "id": "2",
+                  "text": "かっきょ"
+                },
+                {
+                  "id": "3",
+                  "text": "かこ"
+                }
+              ],
+              "answer": "3",
+              "explanation": "「過去（かこ）」means the past (去 is read コ here, unlike 去年 きょねん).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_22_2_3",
+              "target_kanji": "作",
+              "target_word": "副作用",
+              "reading": "ふくさよう",
+              "question_ja": "③ この薬は、眠くなるという<u>副作用</u>（ a ふくさくよう　b ふくさよう　c ふくっさよう ）がある。",
+              "question_en": "This medicine has a side effect of making you sleepy.",
+              "ruby_html": "③ この<ruby>薬<rt>くすり</rt></ruby>は、<ruby>眠<rt>ねむ</rt></ruby>くなるという<u><ruby>副作用<rt>ふくさよう</rt></ruby></u>がある。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "ふくさくよう"
+                },
+                {
+                  "id": "2",
+                  "text": "ふくさよう"
+                },
+                {
+                  "id": "3",
+                  "text": "ふくっさよう"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「作用（さよう）」and 「副作用（ふくさよう）」use the on-reading サ for 作.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_22_2_4",
+              "target_kanji": "男",
+              "target_word": "次男",
+              "reading": "じなん",
+              "question_ja": "④ <u>次男</u>（ a じだん　b じなん ）は野菜が嫌いだ。",
+              "question_en": "My second son dislikes vegetables.",
+              "ruby_html": "④ <u><ruby>次男<rt>じなん</rt></ruby></u>は<ruby>野菜<rt>やさい</rt></ruby>が<ruby>嫌<rt>きら</rt></ruby>いだ。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "じだん"
+                },
+                {
+                  "id": "2",
+                  "text": "じなん"
+                }
+              ],
+              "answer": "2",
+              "explanation": "In birth order words like 「長男（ちょうなん）」and 「次男（じなん）」, 男 is read ナン.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_22_2_5",
+              "target_kanji": "文",
+              "target_word": "文字",
+              "reading": "もじ",
+              "question_ja": "⑤ 日本語には、<u>文字</u>（ a もじ　b ぶんじ ）が3種類ある。",
+              "question_en": "In Japanese, there are three types of characters/scripts.",
+              "ruby_html": "⑤ <ruby>日本語<rt>にほんご</rt></ruby>には、<u><ruby>文字<rt>もじ</rt></ruby></u>が3<ruby>種類<rt>しゅるい</rt></ruby>ある。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "もじ"
+                },
+                {
+                  "id": "2",
+                  "text": "ぶんじ"
+                }
+              ],
+              "answer": "1",
+              "explanation": "「文字（もじ）」means letter or character.",
+              "item_id": 5
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_22_3",
+          "type": "word_pairing",
+          "title_ja": "3. □には同じ漢字が入ります。[文、間、自、物] から、漢字を選んで書きましょう。下線の部分の読み方も書きましょう。",
+          "title_en": "3. Fill in the blanks with the same kanji from [文, 間, 自, 物] and write the readings.",
+          "items": [
+            {
+              "id": "k_ex_22_3_1",
+              "target_kanji": "自",
+              "target_word": "自分",
+              "reading": "じぶん",
+              "question_ja": "① 他の人の考えを気にしないで、a. <u>[ 　 ]分</u>で考えることが大切だ。",
+              "question_en": "It is important to think for yourself without worrying about what others think.",
+              "ruby_html": "① <ruby>他<rt>ほか</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>の<ruby>考<rt>かんが</rt></ruby>えを<ruby>気<rt>き</rt></ruby>にしないで、a. <u><ruby>自分<rt>じぶん</rt></ruby></u>で<ruby>考<rt>かんが</rt></ruby>えることが<ruby>大切<rt>たいせつ</rt></ruby>だ。",
+              "answer": "自（じぶん）",
+              "acceptable_answers": [
+                "自",
+                "じぶん",
+                "自分"
+              ],
+              "explanation": "「自分（じぶん）」uses the on-reading ジ.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_22_3_2",
+              "target_kanji": "自",
+              "target_word": "自然",
+              "reading": "しぜん",
+              "question_ja": "① きれいな川と山を残すために、b. <u>[ 　 ]然</u>を守る運動をしている。",
+              "question_en": "In order to preserve clean rivers and mountains, we are campaigning to protect nature.",
+              "ruby_html": "① きれいな<ruby>川<rt>かわ</rt></ruby>と<ruby>山<rt>やま</rt></ruby>を<ruby>残<rt>のこ</rt></ruby>すために、b. <u><ruby>自然<rt>しぜん</rt></ruby></u>を<ruby>守<rt>まも</rt></ruby>る<ruby>運動<rt>うんどう</rt></ruby>をしている。",
+              "answer": "自（しぜん）",
+              "acceptable_answers": [
+                "自",
+                "しぜん",
+                "自然"
+              ],
+              "explanation": "「自然（しぜん）」uses the on-reading シ.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_22_3_3",
+              "target_kanji": "物",
+              "target_word": "見物",
+              "reading": "けんぶつ",
+              "question_ja": "② a. <u>見[ 　 ]</u>に行くときは、荷物が少ないほうがいいですよ。",
+              "question_en": "When going sightseeing, it's better to have less luggage.",
+              "ruby_html": "② a. <u><ruby>見物<rt>けんぶつ</rt></ruby></u>に<ruby>行<rt>い</rt></ruby>くときは、<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>少<rt>すく</rt></ruby>ないほうがいいですよ。",
+              "answer": "物（けんぶつ）",
+              "acceptable_answers": [
+                "物",
+                "けんぶつ",
+                "見物"
+              ],
+              "explanation": "「見物（けんぶつ）」uses the on-reading ブツ.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_22_3_4",
+              "target_kanji": "物",
+              "target_word": "荷物",
+              "reading": "にもつ",
+              "question_ja": "② 見物に行くときは、b. <u>荷[ 　 ]</u>が少ないほうがいいですよ。",
+              "question_en": "When going sightseeing, it's better to have less luggage.",
+              "ruby_html": "② <ruby>見物<rt>けんぶつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>くときは、b. <u><ruby>荷物<rt>にもつ</rt></ruby></u>が<ruby>少<rt>すく</rt></ruby>ないほうがいいですよ。",
+              "answer": "物（にもつ）",
+              "acceptable_answers": [
+                "物",
+                "にもつ",
+                "荷物"
+              ],
+              "explanation": "「荷物（にもつ）」uses the on-reading モツ.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_22_3_5",
+              "target_kanji": "間",
+              "target_word": "人間",
+              "reading": "にんげん",
+              "question_ja": "③ a. <u>人[ 　 ]</u>が動物と違うのは、火を使うということだ。",
+              "question_en": "What makes humans different from animals is that they use fire.",
+              "ruby_html": "③ a. <u><ruby>人間<rt>にんげん</rt></ruby></u>が<ruby>動物<rt>どうぶつ</rt></ruby>と<ruby>違<rt>ちが</rt></ruby>うのは、<ruby>火<rt>ひ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うということだ。",
+              "answer": "間（にんげん）",
+              "acceptable_answers": [
+                "間",
+                "にんげん",
+                "人間"
+              ],
+              "explanation": "「人間（にんげん）」uses the on-reading ゲン.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_22_3_6",
+              "target_kanji": "間",
+              "target_word": "期間",
+              "reading": "きかん",
+              "question_ja": "③ 工事の b. <u>期[ 　 ]</u>は、10月15日から2週間です。",
+              "question_en": "The construction period is two weeks starting from October 15.",
+              "ruby_html": "③ <ruby>工事<rt>こうじ</rt></ruby>の b. <u><ruby>期間<rt>きかん</rt></ruby></u>は、10<ruby>月<rt>がつ</rt></ruby>15<ruby>日<rt>にち</rt></ruby>から2<ruby>週間<rt>しゅうかん</rt></ruby>です。",
+              "answer": "間（きかん）",
+              "acceptable_answers": [
+                "間",
+                "きかん",
+                "期間"
+              ],
+              "explanation": "「期間（きかん）」uses the on-reading カン.",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_22_3_7",
+              "target_kanji": "文",
+              "target_word": "文化",
+              "reading": "ぶんか",
+              "question_ja": "④ a. <u>[ 　 ]化</u>が違っても、人は分かり合えると思う。",
+              "question_en": "Even if cultures differ, I think people can understand each other.",
+              "ruby_html": "④ a. <u><ruby>文化<rt>ぶんか</rt></ruby></u>が<ruby>違<rt>ちが</rt></ruby>っても、<ruby>人<rt>ひと</rt></ruby>は<ruby>分<rt>わ</rt></ruby>かり<ruby>合<rt>あ</rt></ruby>えると<ruby>思<rt>おも</rt></ruby>う。",
+              "answer": "文（ぶんか）",
+              "acceptable_answers": [
+                "文",
+                "ぶんか",
+                "文化"
+              ],
+              "explanation": "「文化（ぶんか）」uses the on-reading ブン.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_22_3_8",
+              "target_kanji": "文",
+              "target_word": "注文",
+              "reading": "ちゅうもん",
+              "question_ja": "④ この店は、b. <u>注[ 　 ]</u>を受けてから3分以内に料理を出す。",
+              "question_en": "This restaurant serves dishes within 3 minutes of receiving an order.",
+              "ruby_html": "④ この<ruby>店<rt>みせ</rt></ruby>は、b. <u><ruby>注文<rt>ちゅうもん</rt></ruby></u>を<ruby>受<rt>う</rt></ruby>けてから3<ruby>分以内<rt>ぷんいない</rt></ruby>に<ruby>料理<rt>りょうり</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す。",
+              "answer": "文（ちゅうもん）",
+              "acceptable_answers": [
+                "文",
+                "ちゅうもん",
+                "注文"
+              ],
+              "explanation": "「注文（ちゅうもん）」uses the on-reading モン.",
+              "item_id": 8
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_22_4",
+          "type": "reading_writing",
+          "title_ja": "4. 下線の部分の漢字には読み方を、平仮名には漢字を書きましょう。",
+          "title_en": "4. Write the readings for the underlined kanji and kanji for the underlined hiragana.",
+          "items": [
+            {
+              "id": "k_ex_22_4_1",
+              "target_kanji": "楽",
+              "target_word": "楽",
+              "reading": "らく",
+              "question_ja": "① 今の仕事は、決して a. <u>楽</u>ではないが、好きな仕事なので、とても楽しい。",
+              "question_en": "My current job is by no means easy, but because it's a job I like, it's very enjoyable.",
+              "ruby_html": "① <ruby>今<rt>いま</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>は、<ruby>決<rt>けっ</rt></ruby>して a. <u><ruby>楽<rt>らく</rt></ruby></u>ではないが、<ruby>好<rt>す</rt></ruby>きな<ruby>仕事<rt>しごと</rt></ruby>なので、とても<ruby>楽<rt>たの</rt></ruby>しい。",
+              "answer": "らく",
+              "acceptable_answers": [
+                "らく",
+                "楽"
+              ],
+              "explanation": "「楽（らく）」means easy or comfortable.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_22_4_2",
+              "target_kanji": "楽",
+              "target_word": "楽しい",
+              "reading": "たのしい",
+              "question_ja": "① 今の仕事は、決して楽ではないが、好きな仕事なので、とても b. <u>楽しい</u>。",
+              "question_en": "My current job is by no means easy, but because it's a job I like, it's very enjoyable.",
+              "ruby_html": "① <ruby>今<rt>いま</rt></ruby>の<ruby>仕事<rt>しごと</rt></ruby>は、<ruby>決<rt>けっ</rt></ruby>して<ruby>楽<rt>らく</rt></ruby>ではないが、<ruby>好<rt>す</rt></ruby>きな<ruby>仕事<rt>しごと</rt></ruby>なので、とても b. <u><ruby>楽<rt>たの</rt></ruby>しい</u>。",
+              "answer": "たのしい",
+              "acceptable_answers": [
+                "たのしい",
+                "楽しい"
+              ],
+              "explanation": "「楽しい（たのしい）」means fun or enjoyable.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_22_4_3",
+              "target_kanji": "作",
+              "target_word": "作品",
+              "reading": "さくひん",
+              "question_ja": "② この a. <u>作品</u>を作るのには、非常に細かい作業が必要だっただろう。",
+              "question_en": "Creating this work of art must have required extremely detailed work.",
+              "ruby_html": "② この a. <u><ruby>作品<rt>さくひん</rt></ruby></u>を<ruby>作<rt>つく</rt></ruby>るのには、<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>細<rt>こま</rt></ruby>かい<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だっただろう。",
+              "answer": "さくひん",
+              "acceptable_answers": [
+                "さくひん",
+                "作品"
+              ],
+              "explanation": "「作品（さくひん）」uses the on-reading サク.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_22_4_4",
+              "target_kanji": "作",
+              "target_word": "作業",
+              "reading": "さぎょう",
+              "question_ja": "② この作品を作るのには、非常に細かい b. <u>作業</u>が必要だっただろう。",
+              "question_en": "Creating this work of art must have required extremely detailed work.",
+              "ruby_html": "② この<ruby>作品<rt>さくひん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るのには、<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>細<rt>こま</rt></ruby>かい b. <u><ruby>作業<rt>さぎょう</rt></ruby></u>が<ruby>必要<rt>ひつよう</rt></ruby>だっただろう。",
+              "answer": "さぎょう",
+              "acceptable_answers": [
+                "さぎょう",
+                "作業"
+              ],
+              "explanation": "「作業（さぎょう）」uses the on-reading サ.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_22_4_5",
+              "target_kanji": "日",
+              "target_word": "休日",
+              "reading": "きゅうじつ",
+              "question_ja": "③ a. <u>きゅうじつ</u>は、ひあたりのいい部屋で好きな本を読む。",
+              "question_en": "On holidays, I read my favorite books in a sunny room.",
+              "ruby_html": "③ a. <u><ruby>休日<rt>きゅうじつ</rt></ruby></u>は、<ruby>日当<rt>ひあ</rt></ruby>たりのいい<ruby>部屋<rt>へや</rt></ruby>で<ruby>好<rt>す</rt></ruby>きな<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む。",
+              "answer": "休日",
+              "acceptable_answers": [
+                "休日",
+                "きゅうじつ"
+              ],
+              "explanation": "「休日（きゅうじつ）」means holiday or day off.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_22_4_6",
+              "target_kanji": "日",
+              "target_word": "日当たり",
+              "reading": "ひあたり",
+              "question_ja": "③ きゅうじつは、b. <u>ひあたり</u>のいい部屋で好きな本を読む。",
+              "question_en": "On holidays, I read my favorite books in a sunny room.",
+              "ruby_html": "③ <ruby>休日<rt>きゅうじつ</rt></ruby>は、b. <u><ruby>日当<rt>ひあ</rt></ruby>たり</u>のいい<ruby>部屋<rt>へや</rt></ruby>で<ruby>好<rt>す</rt></ruby>きな<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む。",
+              "answer": "日当たり",
+              "acceptable_answers": [
+                "日当たり",
+                "ひあたり"
+              ],
+              "explanation": "「日当たり（ひあたり）」means exposure to the sun.",
+              "item_id": 6
+            }
+          ]
+        }
+      ],
+      "lesson_number": 22
+    },
+    {
+      "lesson_id": 23,
+      "title_ja": "第23回 二つの音読みを覚える新しい漢字",
+      "title_en": "Lesson 23: New Kanji with Two On-readings",
+      "page_range": "96-97",
+      "target_kanji": [
+        "由",
+        "再",
+        "判",
+        "定",
+        "券",
+        "則",
+        "規",
+        "評"
+      ],
+      "exercises": [
+        {
+          "exercise_id": "k_ex_23_1",
+          "type": "reading_recall",
+          "title_ja": "1. 下線の部分の読み方を書きましょう。",
+          "title_en": "1. Write the readings of the underlined words.",
+          "items": [
+            {
+              "id": "k_ex_23_1_1",
+              "target_kanji": "再",
+              "target_word": "再来週",
+              "reading": "さらいしゅう",
+              "question_ja": "① テストの点が59点以下だった人は、a. <u>再来週</u>、再試験を受けてください。",
+              "question_en": "Those who scored 59 points or below on the test, please take the re-examination the week after next.",
+              "ruby_html": "① テストの<ruby>点<rt>てん</rt></ruby>が59<ruby>点以下<rt>てんいか</rt></ruby>だった<ruby>人<rt>ひと</rt></ruby>は、a. <u><ruby>再来週<rt>さらいしゅう</rt></ruby></u>、<ruby>再試験<rt>さいしけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>けてください。",
+              "answer": "さらいしゅう",
+              "acceptable_answers": [
+                "さらいしゅう",
+                "再来週"
+              ],
+              "explanation": "In 「再来週（さらいしゅう）」「再来月」「再来年」, 再 is read サ.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_23_1_2",
+              "target_kanji": "再",
+              "target_word": "再試験",
+              "reading": "さいしけん",
+              "question_ja": "① テストの点が59点以下だった人は、再来週、b. <u>再試験</u>を受けてください。",
+              "question_en": "Those who scored 59 points or below on the test, please take the re-examination the week after next.",
+              "ruby_html": "① テストの<ruby>点<rt>てん</rt></ruby>が59<ruby>点以下<rt>てんいか</rt></ruby>だった<ruby>人<rt>ひと</rt></ruby>は、<ruby>再来週<rt>さらいしゅう</rt></ruby>、b. <u><ruby>再試験<rt>さいしけん</rt></ruby></u>を<ruby>受<rt>う</rt></ruby>けてください。",
+              "answer": "さいしけん",
+              "acceptable_answers": [
+                "さいしけん",
+                "再試験"
+              ],
+              "explanation": "「再試験（さいしけん）」means re-examination (再 is read サイ).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_23_1_3",
+              "target_kanji": "判",
+              "target_word": "評判",
+              "reading": "ひょうばん",
+              "question_ja": "② お医者さんを選ぶときは、近所の a. <u>評判</u>を聞いたり、インターネットで調べたりしてから、判断するようにしている。",
+              "question_en": "When choosing a doctor, I make a judgment after hearing the neighborhood reputation and checking the internet.",
+              "ruby_html": "② お<ruby>医者<rt>いしゃ</rt></ruby>さんを<ruby>選<rt>えら</rt></ruby>ぶときは、<ruby>近所<rt>きんじょ</rt></ruby>の a. <u><ruby>評判<rt>ひょうばん</rt></ruby></u>を<ruby>聞<rt>き</rt></ruby>いたり、インターネットで<ruby>調<rt>しら</rt></ruby>べたりしてから、<ruby>判断<rt>はんだん</rt></ruby>するようにしている。",
+              "answer": "ひょうばん",
+              "acceptable_answers": [
+                "ひょうばん",
+                "評判"
+              ],
+              "explanation": "「評判（ひょうばん）」means reputation or popularity (判 is voiced as バン).",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_23_1_4",
+              "target_kanji": "判",
+              "target_word": "判断",
+              "reading": "はんだん",
+              "question_ja": "② お医者さんを選ぶときは、近所の評判を聞いたり、インターネットで調べたりしてから、b. <u>判断</u>するようにしている。",
+              "question_en": "When choosing a doctor, I make a judgment after hearing the neighborhood reputation and checking the internet.",
+              "ruby_html": "② お<ruby>医者<rt>いしゃ</rt></ruby>さんを<ruby>選<rt>えら</rt></ruby>ぶときは、<ruby>近所<rt>きんじょ</rt></ruby>の<ruby>評判<rt>ひょうばん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いたり、インターネットで<ruby>調<rt>しら</rt></ruby>べたりしてから、b. <u><ruby>判断<rt>はんだん</rt></ruby></u>するようにしている。",
+              "answer": "はんだん",
+              "acceptable_answers": [
+                "はんだん",
+                "判断"
+              ],
+              "explanation": "「判断（はんだん）」means judgment or decision.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_23_1_5",
+              "target_kanji": "由",
+              "target_word": "経由",
+              "reading": "けいゆ",
+              "question_ja": "③ 20時のパリ a. <u>経由</u>ロンドン行きの飛行機に乗ります。それまで、自由に町を観光してください。",
+              "question_en": "We will board the 20:00 flight to London via Paris. Until then, please sightsee around the town freely.",
+              "ruby_html": "③ 20<ruby>時<rt>じ</rt></ruby>のパリ a. <u><ruby>経由<rt>けいゆ</rt></ruby></u>ロンドン<ruby>行<rt>ゆ</rt></ruby>きの<ruby>飛行機<rt>ひこうき</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。それまで、<ruby>自由<rt>じゆう</rt></ruby>に<ruby>町<rt>まち</rt></ruby>を<ruby>観光<rt>かんこう</rt></ruby>してください。",
+              "answer": "けいゆ",
+              "acceptable_answers": [
+                "けいゆ",
+                "経由"
+              ],
+              "explanation": "「経由（けいゆ）」means via or by way of (short ゆ).",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_23_1_6",
+              "target_kanji": "由",
+              "target_word": "自由",
+              "reading": "じゆう",
+              "question_ja": "③ 20時のパリ経由ロンドン行きの飛行機に乗ります。それまで、b. <u>自由</u>に町を観光してください。",
+              "question_en": "We will board the 20:00 flight to London via Paris. Until then, please sightsee around the town freely.",
+              "ruby_html": "③ 20<ruby>時<rt>じ</rt></ruby>のパリ<ruby>経由<rt>けいゆ</rt></ruby>ロンドン<ruby>行<rt>ゆ</rt></ruby>きの<ruby>飛行機<rt>ひこうき</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。それまで、b. <u><ruby>自由<rt>じゆう</rt></ruby></u>に<ruby>町<rt>まち</rt></ruby>を<ruby>観光<rt>かんこう</rt></ruby>してください。",
+              "answer": "じゆう",
+              "acceptable_answers": [
+                "じゆう",
+                "自由"
+              ],
+              "explanation": "「自由（じゆう）」means freedom or freely (long ゆう).",
+              "item_id": 6
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_23_2",
+          "type": "multiple_choice",
+          "title_ja": "2. 正しいものを選びましょう。",
+          "title_en": "2. Choose the correct option.",
+          "items": [
+            {
+              "id": "k_ex_23_2_1",
+              "target_kanji": "定",
+              "target_word": "決定",
+              "reading": "けってい",
+              "question_ja": "① 会議で<u>決定</u>（ a けつてい　b けってい ）したことを、お知らせします。",
+              "question_en": "We will inform you of what was decided at the meeting.",
+              "ruby_html": "① <ruby>会議<rt>かいぎ</rt></ruby>で<u><ruby>決定<rt>けってい</rt></ruby></u>したことを、お<ruby>知<rt>し</rt></ruby>らせします。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "けつてい"
+                },
+                {
+                  "id": "2",
+                  "text": "けってい"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「決定（けってい）」has a geminate consonant (っ).",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_23_2_2",
+              "target_kanji": "規",
+              "target_word": "定規",
+              "reading": "じょうぎ",
+              "question_ja": "② 線は、<u>定規</u>（ a じょうぎ　b ていぎ　c じょうき ）を使って、きれいに引いてください。",
+              "question_en": "Please draw the lines neatly using a ruler.",
+              "ruby_html": "② <ruby>線<rt>せん</rt></ruby>は、<u><ruby>定規<rt>じょうぎ</rt></ruby></u>を<ruby>使<rt>つか</rt></ruby>って、きれいに<ruby>引<rt>ひ</rt></ruby>いてください。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "じょうぎ"
+                },
+                {
+                  "id": "2",
+                  "text": "ていぎ"
+                },
+                {
+                  "id": "3",
+                  "text": "じょうき"
+                }
+              ],
+              "answer": "1",
+              "explanation": "「定規（じょうぎ）」means ruler (定 is read ジョウ and 規 is voiced as ギ).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_23_2_3",
+              "target_kanji": "券",
+              "target_word": "定期券",
+              "reading": "ていきけん",
+              "question_ja": "③ <u>定期券</u>（ a じょうきけん　b ていきけん　c てえきけん ）を買うときに、証明書が要りますか。",
+              "question_en": "Do I need a certificate when buying a commuter pass?",
+              "ruby_html": "③ <u><ruby>定期券<rt>ていきけん</rt></ruby></u>を<ruby>買<rt>か</rt></ruby>うときに、<ruby>証明書<rt>しょうめいしょ</rt></ruby>が<ruby>要<rt>い</rt></ruby>りますか。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "じょうきけん"
+                },
+                {
+                  "id": "2",
+                  "text": "ていきけん"
+                },
+                {
+                  "id": "3",
+                  "text": "てえきけん"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「定期券（ていきけん）」means commuter pass.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_23_2_4",
+              "target_kanji": "由",
+              "target_word": "理由",
+              "reading": "りゆう",
+              "question_ja": "④ あなたが反対する<u>りゆう</u>（ a 理曲　b 理田　c 理由 ）を言ってください。",
+              "question_en": "Please state the reason why you oppose.",
+              "ruby_html": "④ あなたが<ruby>反対<rt>はんたい</rt></ruby>する<u><ruby>理由<rt>りゆう</rt></ruby></u>を<ruby>言<rt>い</rt></ruby>ってください。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "理曲"
+                },
+                {
+                  "id": "2",
+                  "text": "理田"
+                },
+                {
+                  "id": "3",
+                  "text": "理由"
+                }
+              ],
+              "answer": "3",
+              "explanation": "「理由（りゆう）」means reason.",
+              "item_id": 4
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_23_3",
+          "type": "radical_assembly",
+          "title_ja": "3. 漢字の部分を入れて、漢字を完成しましょう。読み方も書きましょう。",
+          "title_en": "3. Combine the parts to complete the kanji and write the reading.",
+          "items": [
+            {
+              "id": "k_ex_23_3_1",
+              "target_kanji": "定",
+              "target_word": "定休日",
+              "reading": "ていきゅうび",
+              "question_ja": "① あの店は、水曜日が（ 宀 ＋ 疋 ＝ ？ ）休日だから、今日はやっていないはずだ。",
+              "question_en": "Since Wednesday is that shop's regular holiday, it shouldn't be open today.",
+              "ruby_html": "① あの<ruby>店<rt>みせ</rt></ruby>は、<ruby>水曜日<rt>すいようび</rt></ruby>が<u><ruby>定休日<rt>ていきゅうび</rt></ruby></u>だから、<ruby>今日<rt>きょう</rt></ruby>はやっていないはずだ。",
+              "answer": "定（ていきゅうび）",
+              "acceptable_answers": [
+                "定",
+                "ていきゅうび",
+                "てい",
+                "定休日"
+              ],
+              "explanation": "宀 + 疋 = 定. 「定休日（ていきゅうび）」means regular closing day.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_23_3_2",
+              "target_kanji": "則",
+              "target_word": "規則",
+              "reading": "きそく",
+              "question_ja": "② このマンションは、動物を飼ってはいけない規（ 貝 ＋ 刂 ＝ ？ ）になっている。",
+              "question_en": "This apartment building has a rule that you must not keep pets.",
+              "ruby_html": "② このマンションは、<ruby>動物<rt>どうぶつ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>ってはいけない<u><ruby>規則<rt>きそく</rt></ruby></u>になっている。",
+              "answer": "則（きそく）",
+              "acceptable_answers": [
+                "則",
+                "きそく",
+                "そく",
+                "規則"
+              ],
+              "explanation": "貝 + 刂 = 則. 「規則（きそく）」means rule or regulation.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_23_3_3",
+              "target_kanji": "評",
+              "target_word": "評判",
+              "reading": "ひょうばん",
+              "question_ja": "③ 新しい製品の（ 言 ＋ 平 ＝ ？ ）判は大変よくて、よく売れています。",
+              "question_en": "The reputation of the new product is very good, and it is selling well.",
+              "ruby_html": "③ <ruby>新<rt>あたら</rt></ruby>しい<ruby>製品<rt>せいひん</rt></ruby>の<u><ruby>評判<rt>ひょうばん</rt></ruby></u>は<ruby>大変<rt>たいへん</rt></ruby>よくて、よく<ruby>売<rt>う</rt></ruby>れています。",
+              "answer": "評（ひょうばん）",
+              "acceptable_answers": [
+                "評",
+                "ひょうばん",
+                "ひょう",
+                "評判"
+              ],
+              "explanation": "言 + 平 = 評. 「評判（ひょうばん）」means reputation.",
+              "item_id": 3
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_23_4",
+          "type": "reading_writing",
+          "title_ja": "4. 下線の部分の平仮名に漢字を書きましょう。",
+          "title_en": "4. Write the underlined hiragana in kanji.",
+          "items": [
+            {
+              "id": "k_ex_23_4_1",
+              "target_kanji": "定",
+              "target_word": "定価",
+              "reading": "ていか",
+              "question_ja": "① 新しいかばんを、<u>ていか</u>の70％で買った。",
+              "question_en": "I bought a new bag at 70% of the regular price.",
+              "ruby_html": "① <ruby>新<rt>あたら</rt></ruby>しいかばんを、<u><ruby>定価<rt>ていか</rt></ruby></u>の70％で<ruby>買<rt>か</rt></ruby>った。",
+              "answer": "定価",
+              "acceptable_answers": [
+                "定価",
+                "ていか"
+              ],
+              "explanation": "「定価（ていか）」means list price or regular price.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_23_4_2",
+              "target_kanji": "券",
+              "target_word": "券",
+              "reading": "けん",
+              "question_ja": "② 映画の<u>けん</u>が2枚あります。",
+              "question_en": "I have two movie tickets.",
+              "ruby_html": "② <ruby>映画<rt>えいが</rt></ruby>の<u><ruby>券<rt>けん</rt></ruby></u>が2<ruby>枚<rt>まい</rt></ruby>あります。",
+              "answer": "券",
+              "acceptable_answers": [
+                "券",
+                "けん"
+              ],
+              "explanation": "「券（けん）」means ticket or voucher.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_23_4_3",
+              "target_kanji": "再",
+              "target_word": "再利用",
+              "reading": "さいりよう",
+              "question_ja": "③ 瓶を<u>さいりよう</u>することで、ごみが減らせます。",
+              "question_en": "By reusing bottles, we can reduce trash.",
+              "ruby_html": "③ <ruby>瓶<rt>びん</rt></ruby>を<u><ruby>再利用<rt>さいりよう</rt></ruby></u>することで、ごみが<ruby>減<rt>へ</rt></ruby>らせます。",
+              "answer": "再利用",
+              "acceptable_answers": [
+                "再利用",
+                "さいりよう"
+              ],
+              "explanation": "「再利用（さいりよう）」means reuse.",
+              "item_id": 3
+            }
+          ]
+        }
+      ],
+      "lesson_number": 23
+    },
+    {
+      "lesson_id": 24,
+      "title_ja": "第24回 三つ以上の読み方を覚える漢字 (1) 音訓",
+      "title_en": "Lesson 24: Kanji with Three or More Readings (1) On & Kun",
+      "page_range": "98-99",
+      "target_kanji": [
+        "下",
+        "子",
+        "土",
+        "外",
+        "行",
+        "言",
+        "後",
+        "重",
+        "度",
+        "伝",
+        "様",
+        "菓"
+      ],
+      "exercises": [
+        {
+          "exercise_id": "k_ex_24_1",
+          "type": "reading_recall",
+          "title_ja": "1. 絵を見て、読み方を書きましょう。",
+          "title_en": "1. Look at the pictures and write the readings.",
+          "items": [
+            {
+              "id": "k_ex_24_1_1",
+              "target_kanji": "重",
+              "target_word": "重い",
+              "reading": "おもい",
+              "question_ja": "① a. <u>重い</u>本を重ねる。",
+              "question_en": "Stack heavy books.",
+              "ruby_html": "① a. <u><ruby>重<rt>おも</rt></ruby>い</u><ruby>本<rt>ほん</rt></ruby>を<ruby>重<rt>かさ</rt></ruby>ねる。",
+              "answer": "おもい",
+              "acceptable_answers": [
+                "おもい",
+                "重い"
+              ],
+              "explanation": "「重い（おもい）」means heavy.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_24_1_2",
+              "target_kanji": "重",
+              "target_word": "重ねる",
+              "reading": "かさねる",
+              "question_ja": "① 重い本を b. <u>重ねる</u>。",
+              "question_en": "Stack heavy books.",
+              "ruby_html": "① <ruby>重<rt>おも</rt></ruby>い<ruby>本<rt>ほん</rt></ruby>を b. <u><ruby>重<rt>かさ</rt></ruby>ねる</u>。",
+              "answer": "かさねる",
+              "acceptable_answers": [
+                "かさねる",
+                "重ねる"
+              ],
+              "explanation": "「重ねる（かさねる）」means to pile up or stack.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_24_1_3",
+              "target_kanji": "子",
+              "target_word": "女の子",
+              "reading": "おんなのこ",
+              "question_ja": "② a. <u>女の子</u>の様子が変だ。",
+              "question_en": "The girl's appearance/behavior is strange.",
+              "ruby_html": "② a. <u><ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby></u>の<ruby>様子<rt>ようす</rt></ruby>が<ruby>変<rt>へん</rt></ruby>だ。",
+              "answer": "おんなのこ",
+              "acceptable_answers": [
+                "おんなのこ",
+                "こ",
+                "女の子"
+              ],
+              "explanation": "In 「女の子（おんなのこ）」, 子 is read こ.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_24_1_4",
+              "target_kanji": "子",
+              "target_word": "様子",
+              "reading": "ようす",
+              "question_ja": "② 女の子の b. <u>様子</u>が変だ。",
+              "question_en": "The girl's appearance/behavior is strange.",
+              "ruby_html": "② <ruby>女<rt>おんな</rt></ruby>の<ruby>子<rt>こ</rt></ruby>の b. <u><ruby>様子<rt>ようす</rt></ruby></u>が<ruby>変<rt>へん</rt></ruby>だ。",
+              "answer": "ようす",
+              "acceptable_answers": [
+                "ようす",
+                "様子"
+              ],
+              "explanation": "In 「様子（ようす）」, 子 is read ス.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_24_1_5",
+              "target_kanji": "行",
+              "target_word": "行事",
+              "reading": "ぎょうじ",
+              "question_ja": "③ a. <u>行事</u>が行われる。",
+              "question_en": "An event is held.",
+              "ruby_html": "③ a. <u><ruby>行事<rt>ぎょうじ</rt></ruby></u>が<ruby>行<rt>おこな</rt></ruby>われる。",
+              "answer": "ぎょうじ",
+              "acceptable_answers": [
+                "ぎょうじ",
+                "行事"
+              ],
+              "explanation": "「行事（ぎょうじ）」means event or function (on-reading ギョウ).",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_24_1_6",
+              "target_kanji": "行",
+              "target_word": "行われる",
+              "reading": "おこなわれる",
+              "question_ja": "③ 行事が b. <u>行われる</u>。",
+              "question_en": "An event is held.",
+              "ruby_html": "③ <ruby>行事<rt>ぎょうじ</rt></ruby>が b. <u><ruby>行<rt>おこな</rt></ruby>われる</u>。",
+              "answer": "おこなわれる",
+              "acceptable_answers": [
+                "おこなわれる",
+                "おこなう",
+                "行われる"
+              ],
+              "explanation": "「行われる（おこなわれる）」means to be held or carried out.",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_24_1_7",
+              "target_kanji": "土",
+              "target_word": "土地",
+              "reading": "とち",
+              "question_ja": "④ この a. <u>土地</u>は土がいい。",
+              "question_en": "This land has good soil.",
+              "ruby_html": "④ この a. <u><ruby>土地<rt>とち</rt></ruby></u>は<ruby>土<rt>つち</rt></ruby>がいい。",
+              "answer": "とち",
+              "acceptable_answers": [
+                "とち",
+                "土地"
+              ],
+              "explanation": "「土地（とち）」means land or plot of land (on-reading ト).",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_24_1_8",
+              "target_kanji": "土",
+              "target_word": "土",
+              "reading": "つち",
+              "question_ja": "④ この土地は b. <u>土</u>がいい。",
+              "question_en": "This land has good soil.",
+              "ruby_html": "④ この<ruby>土地<rt>とち</rt></ruby>は b. <u><ruby>土<rt>つち</rt></ruby></u>がいい。",
+              "answer": "つち",
+              "acceptable_answers": [
+                "つち",
+                "土"
+              ],
+              "explanation": "「土（つち）」means soil or earth.",
+              "item_id": 8
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_24_2",
+          "type": "word_pairing",
+          "title_ja": "2. 二つの言葉がだいたい同じ意味になるように、[伝、後、度、重] の中の漢字を使って、言葉を完成しましょう。読み方も書きましょう。",
+          "title_en": "2. Complete the pairs of expressions with similar meanings using [伝, 後, 度, 重] and write their readings.",
+          "items": [
+            {
+              "id": "k_ex_24_2_1",
+              "target_kanji": "伝",
+              "target_word": "伝えて・伝言して",
+              "reading": "つたえて・でんごんして",
+              "question_ja": "① 今日は休むと a. <u>[ 　 ]えて</u>ください。＝ 今日は休むと b. <u>[ 　 ]言して</u>ください。",
+              "question_en": "Please tell them / leave a message that I am taking today off.",
+              "ruby_html": "① <ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>むと a. <u><ruby>伝<rt>つた</rt></ruby>えて</u>ください。＝ <ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>むと b. <u><ruby>伝言<rt>でんごん</rt></ruby>して</u>ください。",
+              "answer": "伝（つたえて・でんごんして）",
+              "acceptable_answers": [
+                "伝",
+                "つたえて",
+                "でんごん",
+                "でんごんして",
+                "つたえて・でんごんして"
+              ],
+              "explanation": "「伝える（つたえる）」and 「伝言する（でんごんする）」both mean to convey a message.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_24_2_2",
+              "target_kanji": "度",
+              "target_word": "何度も・度々",
+              "reading": "なんども・たびたび",
+              "question_ja": "② 彼は a. <u>何[ 　 ]も</u>電話してきた。＝ 彼は b. <u>[ 　 ]々</u>電話してきた。",
+              "question_en": "He called many times. = He called repeatedly.",
+              "ruby_html": "② <ruby>彼<rt>かれ</rt></ruby>は a. <u><ruby>何度<rt>なんど</rt></ruby>も</u><ruby>電話<rt>でんわ</rt></ruby>してきた。＝ <ruby>彼<rt>かれ</rt></ruby>は b. <u><ruby>度々<rt>たびたび</rt></ruby></u><ruby>電話<rt>でんわ</rt></ruby>してきた。",
+              "answer": "度（なんども・たびたび）",
+              "acceptable_answers": [
+                "度",
+                "なんども",
+                "たびたび",
+                "なんども・たびたび"
+              ],
+              "explanation": "「何度も（なんども）」and 「度々（たびたび）」both mean many times / repeatedly.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_24_2_3",
+              "target_kanji": "後",
+              "target_word": "後ろ・後半",
+              "reading": "うしろ・こうはん",
+              "question_ja": "③ 来週の a. <u>真ん中より[ 　 ]</u>は晴れるでしょう。＝ 来週の b. <u>[ 　 ]半</u>は晴れるでしょう。",
+              "question_en": "The latter part of next week will probably be sunny. = The second half of next week will probably be sunny.",
+              "ruby_html": "③ <ruby>来週<rt>らいしゅう</rt></ruby>の a. <u><ruby>真<rt>ま</rt></ruby>ん<ruby>中<rt>なか</rt></ruby>より<ruby>後<rt>あと</rt></ruby></u>は<ruby>晴<rt>は</rt></ruby>れるでしょう。＝ <ruby>来週<rt>らいしゅう</rt></ruby>の b. <u><ruby>後半<rt>こうはん</rt></ruby></u>は<ruby>晴<rt>は</rt></ruby>れるでしょう。",
+              "answer": "後（あと・こうはん）",
+              "acceptable_answers": [
+                "後",
+                "あと",
+                "うしろ",
+                "こうはん",
+                "あと・こうはん",
+                "うしろ・こうはん"
+              ],
+              "explanation": "「後（あと／うしろ）」and 「後半（こうはん）」refer to the latter part / second half.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_24_2_4",
+              "target_kanji": "重",
+              "target_word": "重さ・体重",
+              "reading": "おもさ・たいじゅう",
+              "question_ja": "④ ここで a. <u>体の[ 　 ]さ</u>を量ります。＝ ここで b. <u>体[ 　 ]</u>を量ります。",
+              "question_en": "We measure the weight of your body here. = We measure your body weight here.",
+              "ruby_html": "④ ここで a. <u><ruby>体<rt>からだ</rt></ruby>の<ruby>重<rt>おも</rt></ruby>さ</u>を<ruby>量<rt>はか</rt></ruby>ります。＝ ここで b. <u><ruby>体重<rt>たいじゅう</rt></ruby></u>を<ruby>量<rt>はか</rt></ruby>ります。",
+              "answer": "重（おもさ・たいじゅう）",
+              "acceptable_answers": [
+                "重",
+                "おもさ",
+                "からだのおもさ",
+                "たいじゅう",
+                "おもさ・たいじゅう"
+              ],
+              "explanation": "「体の重さ（からだのおもさ）」equals 「体重（たいじゅう）」(body weight).",
+              "item_id": 4
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_24_3",
+          "type": "multiple_choice",
+          "title_ja": "3. 正しいものを選びましょう。",
+          "title_en": "3. Choose the correct option.",
+          "items": [
+            {
+              "id": "k_ex_24_3_1",
+              "target_kanji": "後",
+              "target_word": "後",
+              "reading": "のち",
+              "question_ja": "① 今日の天気は、晴れ<u>後</u>（ a ご　b あと　c のち ）曇りです。",
+              "question_en": "Today's weather is sunny, then cloudy later.",
+              "ruby_html": "① <ruby>今日<rt>きょう</rt></ruby>の<ruby>天気<rt>てんき</rt></ruby>は、<ruby>晴<rt>は</rt></ruby>れ<u><ruby>後<rt>のち</rt></ruby></u><ruby>曇<rt>くも</rt></ruby>りです。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "ご"
+                },
+                {
+                  "id": "2",
+                  "text": "あと"
+                },
+                {
+                  "id": "3",
+                  "text": "のち"
+                }
+              ],
+              "answer": "3",
+              "explanation": "In weather forecasts, 「後」is read のち (sunny, later cloudy).",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_24_3_2",
+              "target_kanji": "下",
+              "target_word": "下宿",
+              "reading": "げしゅく",
+              "question_ja": "② 学生のとき、この辺りに<u>下宿</u>（ a げっしゅく　b げしゅく　c けじゅく ）していた。",
+              "question_en": "When I was a student, I lodged in this area.",
+              "ruby_html": "② <ruby>学生<rt>がくせい</rt></ruby>のとき、この<ruby>辺<rt>あた</rt></ruby>りに<u><ruby>下宿<rt>げしゅく</rt></ruby></u>していた。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "げっしゅく"
+                },
+                {
+                  "id": "2",
+                  "text": "げしゅく"
+                },
+                {
+                  "id": "3",
+                  "text": "けじゅく"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「下宿（げしゅく）」means lodging or boarding house (on-reading ゲ).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_24_3_3",
+              "target_kanji": "度",
+              "target_word": "支度",
+              "reading": "したく",
+              "question_ja": "③ そろそろ出かける<u>支度</u>（ a したく　b しど　c したび ）をしなければなりません。",
+              "question_en": "It is about time I got ready to go out.",
+              "ruby_html": "③ そろそろ<ruby>出<rt>で</rt></ruby>かける<u><ruby>支度<rt>したく</rt></ruby></u>をしなければなりません。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "したく"
+                },
+                {
+                  "id": "2",
+                  "text": "しど"
+                },
+                {
+                  "id": "3",
+                  "text": "したび"
+                }
+              ],
+              "answer": "1",
+              "explanation": "「支度（したく）」means preparation (度 is read タク here).",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_24_3_4",
+              "target_kanji": "菓",
+              "target_word": "お菓子",
+              "reading": "おかし",
+              "question_ja": "④ <u>おかし</u>（ a お果子　b お菓子　c お菓予 ）を作るのが趣味だ。",
+              "question_en": "Making sweets is my hobby.",
+              "ruby_html": "④ <u>お<ruby>菓子<rt>かし</rt></ruby></u>を<ruby>作<rt>つく</rt></ruby>るのが<ruby>趣味<rt>しゅみ</rt></ruby>だ。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "お果子"
+                },
+                {
+                  "id": "2",
+                  "text": "お菓子"
+                },
+                {
+                  "id": "3",
+                  "text": "お菓予"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「お菓子（おかし）」means sweets or confections.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_24_3_5",
+              "target_kanji": "外",
+              "target_word": "外科",
+              "reading": "げか",
+              "question_ja": "⑤ けがをして血が止まらないので、<u>外科</u>（ a げか　b がか　c がいか ）に行った。",
+              "question_en": "Since I got injured and the bleeding wouldn't stop, I went to the surgery department.",
+              "ruby_html": "⑤ けがをして<ruby>血<rt>ち</rt></ruby>が<ruby>止<rt>と</rt></ruby>まらないので、<u><ruby>外科<rt>げか</rt></ruby></u>に<ruby>行<rt>い</rt></ruby>った。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "げか"
+                },
+                {
+                  "id": "2",
+                  "text": "がか"
+                },
+                {
+                  "id": "3",
+                  "text": "がいか"
+                }
+              ],
+              "answer": "1",
+              "explanation": "「外科（げか）」means surgery department (外 is read ゲ).",
+              "item_id": 5
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_24_4",
+          "type": "reading_recall",
+          "title_ja": "4. 下線の部分の読み方を書きましょう。",
+          "title_en": "4. Write the readings of the underlined words.",
+          "items": [
+            {
+              "id": "k_ex_24_4_1",
+              "target_kanji": "下",
+              "target_word": "下りる",
+              "reading": "おりる",
+              "question_ja": "① 駅の階段を a. <u>下りる</u>と、ちょうど下りの電車が来るところだった。",
+              "question_en": "When I went down the station stairs, the outbound train was just arriving.",
+              "ruby_html": "① <ruby>駅<rt>えき</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>を a. <u><ruby>下<rt>お</rt></ruby>りる</u>と、ちょうど<ruby>下<rt>くだ</rt></ruby>りの<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>来<rt>く</rt></ruby>るところだった。",
+              "answer": "おりる",
+              "acceptable_answers": [
+                "おりる",
+                "下りる"
+              ],
+              "explanation": "「階段を下りる（かいだんをおりる）」means to go down the stairs.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_24_4_2",
+              "target_kanji": "下",
+              "target_word": "下り",
+              "reading": "くだり",
+              "question_ja": "① 駅の階段を下りると、ちょうど b. <u>下り</u>の電車が来るところだった。",
+              "question_en": "When I went down the station stairs, the outbound train was just arriving.",
+              "ruby_html": "① <ruby>駅<rt>えき</rt></ruby>の<ruby>階段<rt>かいだん</rt></ruby>を<ruby>下<rt>お</rt></ruby>りると、ちょうど b. <u><ruby>下<rt>くだ</rt></ruby>り</u>の<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>来<rt>く</rt></ruby>るところだった。",
+              "answer": "くだり",
+              "acceptable_answers": [
+                "くだり",
+                "下り"
+              ],
+              "explanation": "「下り（くだり）」refers to an outbound train heading away from the capital.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_24_4_3",
+              "target_kanji": "下",
+              "target_word": "下がって",
+              "reading": "さがって",
+              "question_ja": "① 「線の内側に c. <u>下がって</u>ください」という駅員さんの声が聞こえた。",
+              "question_en": "I heard the station attendant's voice saying, 'Please step back behind the line.'",
+              "ruby_html": "① 「<ruby>線<rt>せん</rt></ruby>の<ruby>内側<rt>うちがわ</rt></ruby>に c. <u><ruby>下<rt>さ</rt></ruby>がって</u>ください」という<ruby>駅員<rt>えきいん</rt></ruby>さんの<ruby>声<rt>こえ</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえた。",
+              "answer": "さがって",
+              "acceptable_answers": [
+                "さがって",
+                "さがる",
+                "下がって"
+              ],
+              "explanation": "「下がる（さがる）」means to step back or move down.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_24_4_4",
+              "target_kanji": "言",
+              "target_word": "言う",
+              "reading": "いう",
+              "question_ja": "② 何を a. <u>言う</u>か、どんな言葉を使うかよく考えてから発言する。",
+              "question_en": "Think carefully about what to say and what words to use before speaking up.",
+              "ruby_html": "② <ruby>何<rt>なに</rt></ruby>を a. <u><ruby>言<rt>い</rt></ruby>う</u>か、どんな<ruby>言葉<rt>ことば</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うかよく<ruby>考<rt>かんが</rt></ruby>えてから<ruby>発言<rt>はつげん</rt></ruby>する。",
+              "answer": "いう",
+              "acceptable_answers": [
+                "いう",
+                "言う"
+              ],
+              "explanation": "「言う（いう）」means to say.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_24_4_5",
+              "target_kanji": "言",
+              "target_word": "言葉",
+              "reading": "ことば",
+              "question_ja": "② 何を言うか、どんな b. <u>言葉</u>を使うかよく考えてから発言する。",
+              "question_en": "Think carefully about what to say and what words to use before speaking up.",
+              "ruby_html": "② <ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>うか、どんな b. <u><ruby>言葉<rt>ことば</rt></ruby></u>を<ruby>使<rt>つか</rt></ruby>うかよく<ruby>考<rt>かんが</rt></ruby>えてから<ruby>発言<rt>はつげん</rt></ruby>する。",
+              "answer": "ことば",
+              "acceptable_answers": [
+                "ことば",
+                "言葉"
+              ],
+              "explanation": "「言葉（ことば）」uses the kun-reading こと.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_24_4_6",
+              "target_kanji": "言",
+              "target_word": "発言",
+              "reading": "はつげん",
+              "question_ja": "② 何を言うか、どんな言葉を使うかよく考えてから c. <u>発言</u>する。",
+              "question_en": "Think carefully about what to say and what words to use before speaking up.",
+              "ruby_html": "② <ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>うか、どんな<ruby>言葉<rt>ことば</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うかよく<ruby>考<rt>かんが</rt></ruby>えてから c. <u><ruby>発言<rt>はつげん</rt></ruby></u>する。",
+              "answer": "はつげん",
+              "acceptable_answers": [
+                "はつげん",
+                "発言"
+              ],
+              "explanation": "「発言（はつげん）」means statement or speaking out (on-reading ゲン).",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_24_4_7",
+              "target_kanji": "子",
+              "target_word": "下の子",
+              "reading": "したのこ",
+              "question_ja": "③ a. <u>下の子</u>のおなかの調子が悪い。様子を見て、あした医者に連れて行こう。",
+              "question_en": "My younger child's stomach is in bad shape. I'll watch their condition and take them to the doctor tomorrow.",
+              "ruby_html": "③ a. <u><ruby>下<rt>した</rt></ruby>の<ruby>子<rt>こ</rt></ruby></u>のおなかの<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>い。<ruby>様子<rt>ようす</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、あした<ruby>医者<rt>いしゃ</rt></ruby>に<ruby>連<rt>つ</rt></ruby>れて<ruby>行<rt>い</rt></ruby>こう。",
+              "answer": "したのこ",
+              "acceptable_answers": [
+                "したのこ",
+                "下の子"
+              ],
+              "explanation": "「下の子（したのこ）」means younger child.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_24_4_8",
+              "target_kanji": "子",
+              "target_word": "調子",
+              "reading": "ちょうし",
+              "question_ja": "③ 下の子のおなかの b. <u>調子</u>が悪い。様子を見て、あした医者に連れて行こう。",
+              "question_en": "My younger child's stomach is in bad shape. I'll watch their condition and take them to the doctor tomorrow.",
+              "ruby_html": "③ <ruby>下<rt>した</rt></ruby>の<ruby>子<rt>こ</rt></ruby>のおなかの b. <u><ruby>調子<rt>ちょうし</rt></ruby></u>が<ruby>悪<rt>わる</rt></ruby>い。<ruby>様子<rt>ようす</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、あした<ruby>医者<rt>いしゃ</rt></ruby>に<ruby>連<rt>つ</rt></ruby>れて<ruby>行<rt>い</rt></ruby>こう。",
+              "answer": "ちょうし",
+              "acceptable_answers": [
+                "ちょうし",
+                "調子"
+              ],
+              "explanation": "「調子（ちょうし）」means condition or state (on-reading シ).",
+              "item_id": 8
+            },
+            {
+              "id": "k_ex_24_4_9",
+              "target_kanji": "様",
+              "target_word": "様子",
+              "reading": "ようす",
+              "question_ja": "③ 下の子のおなかの調子が悪い。c. <u>様子</u>を見て、あした医者に連れて行こう。",
+              "question_en": "My younger child's stomach is in bad shape. I'll watch their condition and take them to the doctor tomorrow.",
+              "ruby_html": "③ <ruby>下<rt>した</rt></ruby>の<ruby>子<rt>こ</rt></ruby>のおなかの<ruby>調子<rt>ちょうし</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>い。c. <u><ruby>様子<rt>ようす</rt></ruby></u>を<ruby>見<rt>み</rt></ruby>て、あした<ruby>医者<rt>いしゃ</rt></ruby>に<ruby>連<rt>つ</rt></ruby>れて<ruby>行<rt>い</rt></ruby>こう。",
+              "answer": "ようす",
+              "acceptable_answers": [
+                "ようす",
+                "様子"
+              ],
+              "explanation": "「様子（ようす）」means state or appearance (子 is read ス).",
+              "item_id": 9
+            },
+            {
+              "id": "k_ex_24_4_10",
+              "target_kanji": "行",
+              "target_word": "行ったら",
+              "reading": "いったら",
+              "question_ja": "④ 駅へ a. <u>行ったら</u>、交通機関を利用する人の行動について、調査を行っていた。",
+              "question_en": "When I went to the station, they were conducting a survey on the behavior of public transit users.",
+              "ruby_html": "④ <ruby>駅<rt>えき</rt></ruby>へ a. <u><ruby>行<rt>い</rt></ruby>ったら</u>、<ruby>交通機関<rt>こうつうきかん</rt></ruby>を<ruby>利用<rt>りよう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>の<ruby>行動<rt>こうどう</rt></ruby>について、<ruby>調査<rt>ちょうさ</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>っていた。",
+              "answer": "いったら",
+              "acceptable_answers": [
+                "いったら",
+                "いく",
+                "行ったら"
+              ],
+              "explanation": "「行く（いく）」means to go.",
+              "item_id": 10
+            },
+            {
+              "id": "k_ex_24_4_11",
+              "target_kanji": "行",
+              "target_word": "行動",
+              "reading": "こうどう",
+              "question_ja": "④ 駅へ行ったら、交通機関を利用する人の b. <u>行動</u>について、調査を行っていた。",
+              "question_en": "When I went to the station, they were conducting a survey on the behavior of public transit users.",
+              "ruby_html": "④ <ruby>駅<rt>えき</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったら、<ruby>交通機関<rt>こうつうきかん</rt></ruby>を<ruby>利用<rt>りよう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>の b. <u><ruby>行動<rt>こうどう</rt></ruby></u>について、<ruby>調査<rt>ちょうさ</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>っていた。",
+              "answer": "こうどう",
+              "acceptable_answers": [
+                "こうどう",
+                "行動"
+              ],
+              "explanation": "「行動（こうどう）」means action or behavior (on-reading コウ).",
+              "item_id": 11
+            },
+            {
+              "id": "k_ex_24_4_12",
+              "target_kanji": "行",
+              "target_word": "行って",
+              "reading": "おこなって",
+              "question_ja": "④ 駅へ行ったら、交通機関を利用する人の行動について、調査を c. <u>行って</u>いた。",
+              "question_en": "When I went to the station, they were conducting a survey on the behavior of public transit users.",
+              "ruby_html": "④ <ruby>駅<rt>えき</rt></ruby>へ<ruby>行<rt>い</rt></ruby>ったら、<ruby>交通機関<rt>こうつうきかん</rt></ruby>を<ruby>利用<rt>りよう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>の<ruby>行動<rt>こうどう</rt></ruby>について、<ruby>調査<rt>ちょうさ</rt></ruby>を c. <u><ruby>行<rt>おこな</rt></ruby>って</u>いた。",
+              "answer": "おこなって",
+              "acceptable_answers": [
+                "おこなって",
+                "おこなう",
+                "行って"
+              ],
+              "explanation": "「調査を行う（ちょうさをおこなう）」means to conduct a survey.",
+              "item_id": 12
+            },
+            {
+              "id": "k_ex_24_4_13",
+              "target_kanji": "外",
+              "target_word": "外出",
+              "reading": "がいしゅつ",
+              "question_ja": "⑤ a. <u>外出</u>する前に天気予報を調べたのに、予報が外れて大雪になった。",
+              "question_en": "Even though I checked the weather forecast before going out, the forecast was wrong and it snowed heavily.",
+              "ruby_html": "⑤ a. <u><ruby>外出<rt>がいしゅつ</rt></ruby></u>する<ruby>前<rt>まえ</rt></ruby>に<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べたのに、<ruby>予報<rt>よほう</rt></ruby>が<ruby>外<rt>はず</rt></ruby>れて<ruby>大雪<rt>おおゆき</rt></ruby>になった。",
+              "answer": "がいしゅつ",
+              "acceptable_answers": [
+                "がいしゅつ",
+                "外出"
+              ],
+              "explanation": "「外出（がいしゅつ）」means going out (on-reading ガイ).",
+              "item_id": 13
+            },
+            {
+              "id": "k_ex_24_4_14",
+              "target_kanji": "外",
+              "target_word": "外れて",
+              "reading": "はずれて",
+              "question_ja": "⑤ 外出する前に天気予報を調べたのに、予報が b. <u>外れて</u>大雪になった。",
+              "question_en": "Even though I checked the weather forecast before going out, the forecast was wrong and it snowed heavily.",
+              "ruby_html": "⑤ <ruby>外出<rt>がいしゅつ</rt></ruby>する<ruby>前<rt>まえ</rt></ruby>に<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べたのに、<ruby>予報<rt>よほう</rt></ruby>が b. <u><ruby>外<rt>はず</rt></ruby>れて</u><ruby>大雪<rt>おおゆき</rt></ruby>になった。",
+              "answer": "はずれて",
+              "acceptable_answers": [
+                "はずれて",
+                "はずれる",
+                "外れて"
+              ],
+              "explanation": "「外れる（はずれる）」means to be off-target, miss, or come undone.",
+              "item_id": 14
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_24_5",
+          "type": "reading_writing",
+          "title_ja": "5. 下線の部分の平仮名に漢字を書きましょう。",
+          "title_en": "5. Write the underlined hiragana in kanji.",
+          "items": [
+            {
+              "id": "k_ex_24_5_1",
+              "target_kanji": "様",
+              "target_word": "お客様",
+              "reading": "おきゃくさま",
+              "question_ja": "① <u>おきゃくさま</u>がいらっしゃいました。",
+              "question_en": "A guest/customer has arrived.",
+              "ruby_html": "① <u>お<ruby>客様<rt>きゃくさま</rt></ruby></u>がいらっしゃいました。",
+              "answer": "お客様",
+              "acceptable_answers": [
+                "お客様",
+                "おきゃくさま"
+              ],
+              "explanation": "「お客様（おきゃくさま）」means guest or customer.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_24_5_2",
+              "target_kanji": "重",
+              "target_word": "重要な",
+              "reading": "じゅうような",
+              "question_ja": "② <u>じゅうような</u>問題について話し合う。",
+              "question_en": "Discuss an important issue.",
+              "ruby_html": "② <u><ruby>重要<rt>じゅうよう</rt></ruby>な</u><ruby>問題<rt>もんだい</rt></ruby>について<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>う。",
+              "answer": "重要な",
+              "acceptable_answers": [
+                "重要な",
+                "重要",
+                "じゅうような"
+              ],
+              "explanation": "「重要な（じゅうような）」means important.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_24_5_3",
+              "target_kanji": "子",
+              "target_word": "男子・女子",
+              "reading": "だんし・じょし",
+              "question_ja": "③ 体育の授業は、a. <u>だんし</u>と b. <u>じょし</u>に分かれて行います。",
+              "question_en": "Physical education classes are held separately for boys and girls.",
+              "ruby_html": "③ <ruby>体育<rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>は、a. <u><ruby>男子<rt>だんし</rt></ruby></u>と b. <u><ruby>女子<rt>じょし</rt></ruby></u>に<ruby>分<rt>わ</rt></ruby>かれて<ruby>行<rt>おこな</rt></ruby>います。",
+              "answer": "男子・女子",
+              "acceptable_answers": [
+                "男子・女子",
+                "男子",
+                "女子",
+                "だんし・じょし"
+              ],
+              "explanation": "「男子（だんし）」and 「女子（じょし）」mean boys/men and girls/women.",
+              "item_id": 3
+            }
+          ]
+        }
+      ],
+      "lesson_number": 24
+    },
+    {
+      "lesson_id": 25,
+      "title_ja": "第25回 三つ以上の読み方を覚える漢字 (2) 音訓",
+      "title_en": "Lesson 25: Kanji with Three or More Readings (2) On & Kun",
+      "page_range": "100-101",
+      "target_kanji": [
+        "守",
+        "形",
+        "苦",
+        "指",
+        "相",
+        "神",
+        "消",
+        "留",
+        "無",
+        "数"
+      ],
+      "exercises": [
+        {
+          "exercise_id": "k_ex_25_1",
+          "type": "reading_recall",
+          "title_ja": "1. 下線の部分の読み方を書きましょう。",
+          "title_en": "1. Write the readings of the underlined words.",
+          "items": [
+            {
+              "id": "k_ex_25_1_1",
+              "target_kanji": "形",
+              "target_word": "人形",
+              "reading": "にんぎょう",
+              "question_ja": "① a. <u>人形</u>",
+              "question_en": "Doll",
+              "ruby_html": "① a. <u><ruby>人形<rt>にんぎょう</rt></ruby></u>",
+              "answer": "にんぎょう",
+              "acceptable_answers": [
+                "にんぎょう",
+                "人形"
+              ],
+              "explanation": "In 「人形（にんぎょう）」, 形 is read ギョウ.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_25_1_2",
+              "target_kanji": "形",
+              "target_word": "形",
+              "reading": "かたち",
+              "question_ja": "① 魚の b. <u>形</u>の雲",
+              "question_en": "A fish-shaped cloud",
+              "ruby_html": "① <ruby>魚<rt>さかな</rt></ruby>の b. <u><ruby>形<rt>かたち</rt></ruby></u>の<ruby>雲<rt>くも</rt></ruby>",
+              "answer": "かたち",
+              "acceptable_answers": [
+                "かたち",
+                "形"
+              ],
+              "explanation": "The kun-reading of 形 is 「かたち」(shape, form).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_25_1_3",
+              "target_kanji": "形",
+              "target_word": "三角形",
+              "reading": "さんかくけい",
+              "question_ja": "① c. <u>三角形</u>",
+              "question_en": "Triangle",
+              "ruby_html": "① c. <u><ruby>三角形<rt>さんかくけい</rt></ruby></u>",
+              "answer": "さんかくけい",
+              "acceptable_answers": [
+                "さんかくけい",
+                "さんかっけい",
+                "三角形"
+              ],
+              "explanation": "In geometric shapes like 「三角形（さんかくけい）」, 形 is read ケイ.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_25_1_4",
+              "target_kanji": "数",
+              "target_word": "数字",
+              "reading": "すうじ",
+              "question_ja": "② a. <u>数字</u>",
+              "question_en": "Number / numeral",
+              "ruby_html": "② a. <u><ruby>数字<rt>すうじ</rt></ruby></u>",
+              "answer": "すうじ",
+              "acceptable_answers": [
+                "すうじ",
+                "数字"
+              ],
+              "explanation": "「数字（すうじ）」uses the on-reading スウ.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_25_1_5",
+              "target_kanji": "数",
+              "target_word": "数",
+              "reading": "かず",
+              "question_ja": "② b. <u>数</u>を数える。",
+              "question_en": "Count the number.",
+              "ruby_html": "② b. <u><ruby>数<rt>かず</rt></ruby></u>を<ruby>数<rt>かぞ</rt></ruby>える。",
+              "answer": "かず",
+              "acceptable_answers": [
+                "かず",
+                "数"
+              ],
+              "explanation": "As a standalone noun, 「数」is read かず.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_25_1_6",
+              "target_kanji": "数",
+              "target_word": "数える",
+              "reading": "かぞえる",
+              "question_ja": "② 数を c. <u>数える</u>。",
+              "question_en": "Count the number.",
+              "ruby_html": "② <ruby>数<rt>かず</rt></ruby>を c. <u><ruby>数<rt>かぞ</rt></ruby>える</u>。",
+              "answer": "かぞえる",
+              "acceptable_answers": [
+                "かぞえる",
+                "数える"
+              ],
+              "explanation": "The verb 'to count' is 「数える（かぞえる）」.",
+              "item_id": 6
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_25_2",
+          "type": "reading_recall",
+          "title_ja": "2. 下線の部分の読み方を書きましょう。",
+          "title_en": "2. Write the readings of the underlined words.",
+          "items": [
+            {
+              "id": "k_ex_25_2_1",
+              "target_kanji": "苦",
+              "target_word": "苦しい",
+              "reading": "くるしい",
+              "question_ja": "① 胸が a. <u>苦しい</u>。苦い薬を飲む。苦労をする。",
+              "question_en": "My chest feels tight/painful. Take bitter medicine. Go through hardships.",
+              "ruby_html": "① <ruby>胸<rt>むね</rt></ruby>が a. <u><ruby>苦<rt>くる</rt></ruby>しい</u>。<ruby>苦<rt>にが</rt></ruby>い<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む。<ruby>苦労<rt>くろう</rt></ruby>をする。",
+              "answer": "くるしい",
+              "acceptable_answers": [
+                "くるしい",
+                "苦しい"
+              ],
+              "explanation": "「苦しい（くるしい）」means painful, agonizing, or hard to breathe.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_25_2_2",
+              "target_kanji": "苦",
+              "target_word": "苦い",
+              "reading": "にがい",
+              "question_ja": "① 胸が苦しい。b. <u>苦い</u>薬を飲む。苦労をする。",
+              "question_en": "My chest feels tight/painful. Take bitter medicine. Go through hardships.",
+              "ruby_html": "① <ruby>胸<rt>むね</rt></ruby>が<ruby>苦<rt>くる</rt></ruby>しい。b. <u><ruby>苦<rt>にが</rt></ruby>い</u><ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む。<ruby>苦労<rt>くろう</rt></ruby>をする。",
+              "answer": "にがい",
+              "acceptable_answers": [
+                "にがい",
+                "苦い"
+              ],
+              "explanation": "「苦い（にがい）」means bitter in taste.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_25_2_3",
+              "target_kanji": "苦",
+              "target_word": "苦労",
+              "reading": "くろう",
+              "question_ja": "① 胸が苦しい。苦い薬を飲む。c. <u>苦労</u>をする。",
+              "question_en": "My chest feels tight/painful. Take bitter medicine. Go through hardships.",
+              "ruby_html": "① <ruby>胸<rt>むね</rt></ruby>が<ruby>苦<rt>くる</rt></ruby>しい。<ruby>苦<rt>にが</rt></ruby>い<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む。c. <u><ruby>苦労<rt>くろう</rt></ruby></u>をする。",
+              "answer": "くろう",
+              "acceptable_answers": [
+                "くろう",
+                "苦労"
+              ],
+              "explanation": "「苦労（くろう）」means hardship or trouble (on-reading ク).",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_25_2_4",
+              "target_kanji": "消",
+              "target_word": "消火器",
+              "reading": "しょうかき",
+              "question_ja": "② a. <u>消火器</u>で火を消す。火が消えた。",
+              "question_en": "Extinguish the fire with a fire extinguisher. The fire went out.",
+              "ruby_html": "② a. <u><ruby>消火器<rt>しょうかき</rt></ruby></u>で<ruby>火<rt>ひ</rt></ruby>を<ruby>消<rt>け</rt></ruby>す。<ruby>火<rt>ひ</rt></ruby>が<ruby>消<rt>き</rt></ruby>えた。",
+              "answer": "しょうかき",
+              "acceptable_answers": [
+                "しょうかき",
+                "消火器"
+              ],
+              "explanation": "「消火器（しょうかき）」means fire extinguisher (on-reading ショウ).",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_25_2_5",
+              "target_kanji": "消",
+              "target_word": "消す",
+              "reading": "けす",
+              "question_ja": "② 消火器で火を b. <u>消す</u>。火が消えた。",
+              "question_en": "Extinguish the fire with a fire extinguisher. The fire went out.",
+              "ruby_html": "② <ruby>消火器<rt>しょうかき</rt></ruby>で<ruby>火<rt>ひ</rt></ruby>を b. <u><ruby>消<rt>け</rt></ruby>す</u>。<ruby>火<rt>ひ</rt></ruby>が<ruby>消<rt>き</rt></ruby>えた。",
+              "answer": "けす",
+              "acceptable_answers": [
+                "けす",
+                "消す"
+              ],
+              "explanation": "「消す（けす）」is transitive (to put out / turn off).",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_25_2_6",
+              "target_kanji": "消",
+              "target_word": "消えた",
+              "reading": "きえた",
+              "question_ja": "② 消火器で火を消す。火が c. <u>消えた</u>。",
+              "question_en": "Extinguish the fire with a fire extinguisher. The fire went out.",
+              "ruby_html": "② <ruby>消火器<rt>しょうかき</rt></ruby>で<ruby>火<rt>ひ</rt></ruby>を<ruby>消<rt>け</rt></ruby>す。<ruby>火<rt>ひ</rt></ruby>が c. <u><ruby>消<rt>き</rt></ruby>えた</u>。",
+              "answer": "きえた",
+              "acceptable_answers": [
+                "きえた",
+                "きえる",
+                "消えた"
+              ],
+              "explanation": "「消える（きえる）」is intransitive (to go out / disappear).",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_25_2_7",
+              "target_kanji": "指",
+              "target_word": "指",
+              "reading": "ゆび",
+              "question_ja": "③ 欲しいものを a. <u>指</u>で指す。仕事の指示をする。",
+              "question_en": "Point at what you want with your finger. Give work instructions.",
+              "ruby_html": "③ <ruby>欲<rt>ほ</rt></ruby>しいものを a. <u><ruby>指<rt>ゆび</rt></ruby></u>で<ruby>指<rt>さ</rt></ruby>す。<ruby>仕事<rt>しごと</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>をする。",
+              "answer": "ゆび",
+              "acceptable_answers": [
+                "ゆび",
+                "指"
+              ],
+              "explanation": "「指（ゆび）」means finger or toe.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_25_2_8",
+              "target_kanji": "指",
+              "target_word": "指す",
+              "reading": "さす",
+              "question_ja": "③ 欲しいものを指で b. <u>指す</u>。仕事の指示をする。",
+              "question_en": "Point at what you want with your finger. Give work instructions.",
+              "ruby_html": "③ <ruby>欲<rt>ほ</rt></ruby>しいものを<ruby>指<rt>ゆび</rt></ruby>で b. <u><ruby>指<rt>さ</rt></ruby>す</u>。<ruby>仕事<rt>しごと</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>をする。",
+              "answer": "さす",
+              "acceptable_answers": [
+                "さす",
+                "指す"
+              ],
+              "explanation": "「指す（さす）」means to point at or indicate.",
+              "item_id": 8
+            },
+            {
+              "id": "k_ex_25_2_9",
+              "target_kanji": "指",
+              "target_word": "指示",
+              "reading": "しじ",
+              "question_ja": "③ 欲しいものを指で指す。仕事の c. <u>指示</u>をする。",
+              "question_en": "Point at what you want with your finger. Give work instructions.",
+              "ruby_html": "③ <ruby>欲<rt>ほ</rt></ruby>しいものを<ruby>指<rt>ゆび</rt></ruby>で<ruby>指<rt>さ</rt></ruby>す。<ruby>仕事<rt>しごと</rt></ruby>の c. <u><ruby>指示<rt>しじ</rt></ruby></u>をする。",
+              "answer": "しじ",
+              "acceptable_answers": [
+                "しじ",
+                "指示"
+              ],
+              "explanation": "「指示（しじ）」means instruction or direction (on-reading シ).",
+              "item_id": 9
+            },
+            {
+              "id": "k_ex_25_2_10",
+              "target_kanji": "無",
+              "target_word": "無くす",
+              "reading": "なくす",
+              "question_ja": "④ 鍵を a. <u>無くす</u>。無事だと聞いて安心した。この電話は無料で使える。",
+              "question_en": "Lose a key. I was relieved to hear they are safe. This phone can be used for free.",
+              "ruby_html": "④ <ruby>鍵<rt>かぎ</rt></ruby>を a. <u><ruby>無<rt>な</rt></ruby>くす</u>。<ruby>無事<rt>ぶじ</rt></ruby>だと<ruby>聞<rt>き</rt></ruby>いて<ruby>安心<rt>あんしん</rt></ruby>した。この<ruby>電話<rt>でんわ</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>える。",
+              "answer": "なくす",
+              "acceptable_answers": [
+                "なくす",
+                "無くす"
+              ],
+              "explanation": "「無くす（なくす）」means to lose something.",
+              "item_id": 10
+            },
+            {
+              "id": "k_ex_25_2_11",
+              "target_kanji": "無",
+              "target_word": "無事",
+              "reading": "ぶじ",
+              "question_ja": "④ 鍵を無くす。b. <u>無事</u>だと聞いて安心した。この電話は無料で使える。",
+              "question_en": "Lose a key. I was relieved to hear they are safe. This phone can be used for free.",
+              "ruby_html": "④ <ruby>鍵<rt>かぎ</rt></ruby>を<ruby>無<rt>な</rt></ruby>くす。b. <u><ruby>無事<rt>ぶじ</rt></ruby></u>だと<ruby>聞<rt>き</rt></ruby>いて<ruby>安心<rt>あんしん</rt></ruby>した。この<ruby>電話<rt>でんわ</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>える。",
+              "answer": "ぶじ",
+              "acceptable_answers": [
+                "ぶじ",
+                "無事"
+              ],
+              "explanation": "「無事（ぶじ）」means safe and sound (on-reading ブ).",
+              "item_id": 11
+            },
+            {
+              "id": "k_ex_25_2_12",
+              "target_kanji": "無",
+              "target_word": "無料",
+              "reading": "むりょう",
+              "question_ja": "④ 鍵を無くす。無事だと聞いて安心した。この電話は c. <u>無料</u>で使える。",
+              "question_en": "Lose a key. I was relieved to hear they are safe. This phone can be used for free.",
+              "ruby_html": "④ <ruby>鍵<rt>かぎ</rt></ruby>を<ruby>無<rt>な</rt></ruby>くす。<ruby>無事<rt>ぶじ</rt></ruby>だと<ruby>聞<rt>き</rt></ruby>いて<ruby>安心<rt>あんしん</rt></ruby>した。この<ruby>電話<rt>でんわ</rt></ruby>は c. <u><ruby>無料<rt>むりょう</rt></ruby></u>で<ruby>使<rt>つか</rt></ruby>える。",
+              "answer": "むりょう",
+              "acceptable_answers": [
+                "むりょう",
+                "無料"
+              ],
+              "explanation": "「無料（むりょう）」means free of charge (on-reading ム).",
+              "item_id": 12
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_25_3",
+          "type": "multiple_choice",
+          "title_ja": "3. 正しいものを選びましょう。",
+          "title_en": "3. Choose the correct option.",
+          "items": [
+            {
+              "id": "k_ex_25_3_1",
+              "target_kanji": "相",
+              "target_word": "首相",
+              "reading": "しゅしょう",
+              "question_ja": "① <u>首相</u>（ a しゅうそう　b しゅしょう ）は、ヨーロッパの国々を訪問した。",
+              "question_en": "The Prime Minister visited European countries.",
+              "ruby_html": "① <u><ruby>首相<rt>しゅしょう</rt></ruby></u>は、ヨーロッパの<ruby>国々<rt>くにぐに</rt></ruby>を<ruby>訪問<rt>ほうもん</rt></ruby>した。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "しゅうそう"
+                },
+                {
+                  "id": "2",
+                  "text": "しゅしょう"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「首相（しゅしょう）」means Prime Minister (相 is read ショウ).",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_25_3_2",
+              "target_kanji": "指",
+              "target_word": "目指して",
+              "reading": "めざして",
+              "question_ja": "② 来年の春の完成を<u>目指して</u>（ a めさして　b めざして ）、橋の建設を急いでいる。",
+              "question_en": "Aiming for completion next spring, they are hurrying the construction of the bridge.",
+              "ruby_html": "② <ruby>来年<rt>らいねん</rt></ruby>の<ruby>春<rt>はる</rt></ruby>の<ruby>完成<rt>かんせい</rt></ruby>を<u><ruby>目指<rt>めざ</rt></ruby>して</u>、<ruby>橋<rt>はし</rt></ruby>の<ruby>建設<rt>けんせつ</rt></ruby>を<ruby>急<rt>いそ</rt></ruby>いでいる。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "めさして"
+                },
+                {
+                  "id": "2",
+                  "text": "めざして"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「目指す（めざす）」has sequential voicing (ざ).",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_25_3_3",
+              "target_kanji": "留",
+              "target_word": "書留",
+              "reading": "かきとめ",
+              "question_ja": "③ 大事な手紙なので、<u>書留</u>（ a かきどめ　b かきとめ　c かきどまり ）で送った。",
+              "question_en": "Because it is an important letter, I sent it by registered mail.",
+              "ruby_html": "③ <ruby>大事<rt>だいじ</rt></ruby>な<ruby>手紙<rt>てがみ</rt></ruby>なので、<u><ruby>書留<rt>かきとめ</rt></ruby></u>で<ruby>送<rt>おく</rt></ruby>った。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "かきどめ"
+                },
+                {
+                  "id": "2",
+                  "text": "かきとめ"
+                },
+                {
+                  "id": "3",
+                  "text": "かきどまり"
+                }
+              ],
+              "answer": "2",
+              "explanation": "「書留（かきとめ）」means registered mail (unvoiced とめ).",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_25_3_4",
+              "target_kanji": "数",
+              "target_word": "数学",
+              "reading": "すうがく",
+              "question_ja": "④ 私は<u>すうがく</u>（ a 数学　b 教学　c 類学 ）が得意です。",
+              "question_en": "I am good at mathematics.",
+              "ruby_html": "④ <ruby>私<rt>わたし</rt></ruby>は<u><ruby>数学<rt>すうがく</rt></ruby></u>が<ruby>得意<rt>とくい</rt></ruby>です。",
+              "options": [
+                {
+                  "id": "1",
+                  "text": "数学"
+                },
+                {
+                  "id": "2",
+                  "text": "教学"
+                },
+                {
+                  "id": "3",
+                  "text": "類学"
+                }
+              ],
+              "answer": "1",
+              "explanation": "「数学（すうがく）」means mathematics.",
+              "item_id": 4
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_25_4",
+          "type": "radical_assembly",
+          "title_ja": "4. 漢字の部分を入れて、漢字を完成しましょう。読み方も書きましょう。",
+          "title_en": "4. Combine the parts to complete the kanji and write the reading.",
+          "items": [
+            {
+              "id": "k_ex_25_4_1",
+              "target_kanji": "守",
+              "target_word": "守る",
+              "reading": "まもる",
+              "question_ja": "① 彼は約束を必ず（ 宀 ＋ 寸 ＝ ？ ）る。",
+              "question_en": "He always keeps his promises.",
+              "ruby_html": "① <ruby>彼<rt>かれ</rt></ruby>は<ruby>約束<rt>やくそく</rt></ruby>を<ruby>必<rt>かなら</rt></ruby>ず<u><ruby>守<rt>まも</rt></ruby></u>る。",
+              "answer": "守（まも）",
+              "acceptable_answers": [
+                "守",
+                "まもる",
+                "まも",
+                "守る"
+              ],
+              "explanation": "宀 + 寸 = 守. 「約束を守る（やくそくをまもる）」means to keep a promise.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_25_4_2",
+              "target_kanji": "相",
+              "target_word": "相手",
+              "reading": "あいて",
+              "question_ja": "② 電話で話していた（ 木 ＋ 目 ＝ ？ ）手は、誰ですか。",
+              "question_en": "Who was the person you were talking with on the phone?",
+              "ruby_html": "② <ruby>電話<rt>でんわ</rt></ruby>で<ruby>話<rt>はな</rt></ruby>していた<u><ruby>相手<rt>あいて</rt></ruby></u>は、<ruby>誰<rt>だれ</rt></ruby>ですか。",
+              "answer": "相（あいて）",
+              "acceptable_answers": [
+                "相",
+                "あいて",
+                "あい",
+                "相手"
+              ],
+              "explanation": "木 + 目 = 相. 「相手（あいて）」means partner or the other party.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_25_4_3",
+              "target_kanji": "消",
+              "target_word": "消えなかった",
+              "reading": "きえなかった",
+              "question_ja": "③ 水をかけても、火はなかなか（ 氵 ＋ 肖 ＝ ？ ）えなかった。",
+              "question_en": "Even when water was poured on it, the fire did not go out easily.",
+              "ruby_html": "③ <ruby>水<rt>みず</rt></ruby>をかけても、<ruby>火<rt>ひ</rt></ruby>はなかなか<u><ruby>消<rt>き</rt></ruby></u>えなかった。",
+              "answer": "消（き）",
+              "acceptable_answers": [
+                "消",
+                "きえなかった",
+                "き",
+                "消えなかった"
+              ],
+              "explanation": "氵 + 肖 = 消. 「火が消える（ひがきえる）」means the fire goes out.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_25_4_4",
+              "target_kanji": "苦",
+              "target_word": "苦しそう",
+              "reading": "くるしそう",
+              "question_ja": "④ 弟は、高い熱が出て、（ 艹 ＋ 古 ＝ ？ ）しそうだった。",
+              "question_en": "My younger brother had a high fever and looked like he was in pain.",
+              "ruby_html": "④ <ruby>弟<rt>おとうと</rt></ruby>は、<ruby>高<rt>たか</rt></ruby>い<ruby>熱<rt>ねつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>て、<u><ruby>苦<rt>くる</rt></ruby></u>しそうだった。",
+              "answer": "苦（くる）",
+              "acceptable_answers": [
+                "苦",
+                "くるしそう",
+                "くる",
+                "苦しそう"
+              ],
+              "explanation": "艹 + 古 = 苦. 「苦しそう（くるしそう）」means seeming to suffer/be in pain.",
+              "item_id": 4
+            }
+          ]
+        },
+        {
+          "exercise_id": "k_ex_25_5",
+          "type": "word_pairing",
+          "title_ja": "5. □には同じ漢字が入ります。[数、神、留、相] から漢字を選んで書きましょう。下線の部分の読み方も書きましょう。",
+          "title_en": "5. Fill in the blanks with the same kanji from [数, 神, 留, 相] and write the readings.",
+          "items": [
+            {
+              "id": "k_ex_25_5_1",
+              "target_kanji": "相",
+              "target_word": "相談",
+              "reading": "そうだん",
+              "question_ja": "① 進学について、先生に a. <u>[ 　 ]談</u>した。",
+              "question_en": "I consulted with my teacher about going on to higher education.",
+              "ruby_html": "① <ruby>進学<rt>しんがく</rt></ruby>について、<ruby>先生<rt>せんせい</rt></ruby>に a. <u><ruby>相談<rt>そうだん</rt></ruby></u>した。",
+              "answer": "相（そうだん）",
+              "acceptable_answers": [
+                "相",
+                "そうだん",
+                "相談"
+              ],
+              "explanation": "「相談（そうだん）」uses the on-reading ソウ.",
+              "item_id": 1
+            },
+            {
+              "id": "k_ex_25_5_2",
+              "target_kanji": "相",
+              "target_word": "相手",
+              "reading": "あいて",
+              "question_ja": "① 結婚する b. <u>[ 　 ]手</u>を両親に紹介した。",
+              "question_en": "I introduced my marriage partner to my parents.",
+              "ruby_html": "① <ruby>結婚<rt>けっこん</rt></ruby>する b. <u><ruby>相手<rt>あいて</rt></ruby></u>を<ruby>両親<rt>りょうしん</rt></ruby>に<ruby>紹介<rt>しょうかい</rt></ruby>した。",
+              "answer": "相（あいて）",
+              "acceptable_answers": [
+                "相",
+                "あいて",
+                "相手"
+              ],
+              "explanation": "「相手（あいて）」uses the kun-reading あい.",
+              "item_id": 2
+            },
+            {
+              "id": "k_ex_25_5_3",
+              "target_kanji": "相",
+              "target_word": "首相",
+              "reading": "しゅしょう",
+              "question_ja": "① 新しい c. <u>首[ 　 ]</u>は、大臣の中でいちばん若い。",
+              "question_en": "The new Prime Minister is the youngest among the cabinet ministers.",
+              "ruby_html": "① <ruby>新<rt>あたら</rt></ruby>しい c. <u><ruby>首相<rt>しゅしょう</rt></ruby></u>は、<ruby>大臣<rt>だいじん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でいちばん<ruby>若<rt>わか</rt></ruby>い。",
+              "answer": "相（しゅしょう）",
+              "acceptable_answers": [
+                "相",
+                "しゅしょう",
+                "首相"
+              ],
+              "explanation": "「首相（しゅしょう）」uses the on-reading ショウ.",
+              "item_id": 3
+            },
+            {
+              "id": "k_ex_25_5_4",
+              "target_kanji": "神",
+              "target_word": "神社",
+              "reading": "じんじゃ",
+              "question_ja": "② お正月は、a. <u>[ 　 ]社</u>に行って、いい年になるようにと神様にお願いする。",
+              "question_en": "On New Year's, we go to a shrine and pray to God for a good year.",
+              "ruby_html": "② お<ruby>正月<rt>しょうがつ</rt></ruby>は、a. <u><ruby>神社<rt>じんじゃ</rt></ruby></u>に<ruby>行<rt>い</rt></ruby>って、いい<ruby>年<rt>とし</rt></ruby>になるようにと<ruby>神様<rt>かみさま</rt></ruby>にお<ruby>願<rt>ねが</rt></ruby>いする。",
+              "answer": "神（じんじゃ）",
+              "acceptable_answers": [
+                "神",
+                "じんじゃ",
+                "神社"
+              ],
+              "explanation": "「神社（じんじゃ）」uses the on-reading ジン.",
+              "item_id": 4
+            },
+            {
+              "id": "k_ex_25_5_5",
+              "target_kanji": "神",
+              "target_word": "神様",
+              "reading": "かみさま",
+              "question_ja": "② お正月は、神社に行って、いい年になるようにと b. <u>[ 　 ]様</u>にお願いする。",
+              "question_en": "On New Year's, we go to a shrine and pray to God for a good year.",
+              "ruby_html": "② お<ruby>正月<rt>しょうがつ</rt></ruby>は、<ruby>神社<rt>じんじゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>って、いい<ruby>年<rt>とし</rt></ruby>になるようにと b. <u><ruby>神様<rt>かみさま</rt></ruby></u>にお<ruby>願<rt>ねが</rt></ruby>いする。",
+              "answer": "神（かみさま）",
+              "acceptable_answers": [
+                "神",
+                "かみさま",
+                "神様"
+              ],
+              "explanation": "「神様（かみさま）」uses the kun-reading かみ.",
+              "item_id": 5
+            },
+            {
+              "id": "k_ex_25_5_6",
+              "target_kanji": "神",
+              "target_word": "神経",
+              "reading": "しんけい",
+              "question_ja": "② 痛いと感じるのは、c. <u>[ 　 ]経</u>があるからだ。",
+              "question_en": "The reason we feel pain is because we have nerves.",
+              "ruby_html": "② <ruby>痛<rt>いた</rt></ruby>いと<ruby>感<rt>かん</rt></ruby>じるのは、c. <u><ruby>神経<rt>しんけい</rt></ruby></u>があるからだ。",
+              "answer": "神（しんけい）",
+              "acceptable_answers": [
+                "神",
+                "しんけい",
+                "神経"
+              ],
+              "explanation": "「神経（しんけい）」uses the on-reading シン.",
+              "item_id": 6
+            },
+            {
+              "id": "k_ex_25_5_7",
+              "target_kanji": "留",
+              "target_word": "留学",
+              "reading": "りゅうがく",
+              "question_ja": "③ 英語の勉強のために、オーストラリアに a. <u>[ 　 ]学</u>した。",
+              "question_en": "I studied abroad in Australia to study English.",
+              "ruby_html": "③ <ruby>英語<rt>えいご</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>のために、オーストラリアに a. <u><ruby>留学<rt>りゅうがく</rt></ruby></u>した。",
+              "answer": "留（りゅうがく）",
+              "acceptable_answers": [
+                "留",
+                "りゅうがく",
+                "留学"
+              ],
+              "explanation": "「留学（りゅうがく）」uses the on-reading リュウ.",
+              "item_id": 7
+            },
+            {
+              "id": "k_ex_25_5_8",
+              "target_kanji": "留",
+              "target_word": "留守番",
+              "reading": "るすばん",
+              "question_ja": "③ 両親が旅行に出かけたので、b. <u>[ 　 ]守番</u>をしている。",
+              "question_en": "Since my parents went on a trip, I am house-sitting.",
+              "ruby_html": "③ <ruby>両親<rt>りょうしん</rt></ruby>が<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>出<rt>で</rt></ruby>かけたので、b. <u><ruby>留守番<rt>るすばん</rt></ruby></u>をしている。",
+              "answer": "留（るすばん）",
+              "acceptable_answers": [
+                "留",
+                "るすばん",
+                "留守番"
+              ],
+              "explanation": "「留守番（るすばん）」uses the on-reading ル.",
+              "item_id": 8
+            },
+            {
+              "id": "k_ex_25_5_9",
+              "target_kanji": "留",
+              "target_word": "書留",
+              "reading": "かきとめ",
+              "question_ja": "③ お金を郵便で送るときは、c. <u>書[ 　 ]</u>で送ってください。",
+              "question_en": "When sending money by mail, please send it by registered mail.",
+              "ruby_html": "③ お<ruby>金<rt>かね</rt></ruby>を<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>るときは、c. <u><ruby>書留<rt>かきとめ</rt></ruby></u>で<ruby>送<rt>おく</rt></ruby>ってください。",
+              "answer": "留（かきとめ）",
+              "acceptable_answers": [
+                "留",
+                "かきとめ",
+                "書留"
+              ],
+              "explanation": "「書留（かきとめ）」uses the kun-reading とめ.",
+              "item_id": 9
+            },
+            {
+              "id": "k_ex_25_5_10",
+              "target_kanji": "数",
+              "target_word": "数える",
+              "reading": "かぞえる",
+              "question_ja": "④ 英語で1から10まで a. <u>[ 　 ]える</u>。",
+              "question_en": "Count from 1 to 10 in English.",
+              "ruby_html": "④ <ruby>英語<rt>えいご</rt></ruby>で1から10まで a. <u><ruby>数<rt>かぞ</rt></ruby>える</u>。",
+              "answer": "数（かぞえる）",
+              "acceptable_answers": [
+                "数",
+                "かぞえる",
+                "数える"
+              ],
+              "explanation": "「数える（かぞえる）」means to count.",
+              "item_id": 10
+            },
+            {
+              "id": "k_ex_25_5_11",
+              "target_kanji": "数",
+              "target_word": "点数",
+              "reading": "てんすう",
+              "question_ja": "④ 先週の試験の b. <u>点[ 　 ]</u>が発表された。",
+              "question_en": "The scores of last week's exam were announced.",
+              "ruby_html": "④ <ruby>先週<rt>せんしゅう</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>の b. <u><ruby>点数<rt>てんすう</rt></ruby></u>が<ruby>発表<rt>はっぴょう</rt></ruby>された。",
+              "answer": "数（てんすう）",
+              "acceptable_answers": [
+                "数",
+                "てんすう",
+                "点数"
+              ],
+              "explanation": "「点数（てんすう）」uses the on-reading スウ.",
+              "item_id": 11
+            },
+            {
+              "id": "k_ex_25_5_12",
+              "target_kanji": "数",
+              "target_word": "数",
+              "reading": "かず",
+              "question_ja": "④ コップが足りません。c. <u>[ 　 ]</u>をよく確かめてください。",
+              "question_en": "There aren't enough cups. Please check the number carefully.",
+              "ruby_html": "④ コップが<ruby>足<rt>た</rt></ruby>りません。c. <u><ruby>数<rt>かず</rt></ruby></u>をよく<ruby>確<rt>たし</rt></ruby>かめてください。",
+              "answer": "数（かず）",
+              "acceptable_answers": [
+                "数",
+                "かず"
+              ],
+              "explanation": "「数（かず）」means number or quantity.",
+              "item_id": 12
+            }
+          ]
+        }
+      ],
+      "lesson_number": 25
+    }
+  ],
+  "reviews": []
+}
