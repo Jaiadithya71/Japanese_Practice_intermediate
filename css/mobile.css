@@ -24,3 +24,49 @@
  .mobile-nav-item{min-height:56px}
 }
 @media (min-width:901px){#today-card{display:none}}
+
+/* ---- Trainer-style touch and feel (matches the N5/N4 app) ---- */
+.more-sheet{display:none}
+@media (max-width:900px){
+ html,body{overscroll-behavior-y:none}
+ button,.lesson-card,.today-step{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+ button:active,.lesson-card:active,.today-step:active{transform:scale(.97)}
+ /* floating glass dock */
+ .mobile-nav-bar{left:50%;right:auto;transform:translateX(-50%);width:calc(100vw - 20px);max-width:480px;bottom:max(10px,env(safe-area-inset-bottom,10px));height:62px;border:1px solid rgba(255,255,255,.12);border-radius:24px;background:rgba(14,17,26,.88);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);box-shadow:0 12px 36px rgba(0,0,0,.6),inset 0 1px 0 rgba(255,255,255,.15);padding:0 4px;gap:4px}
+ .mobile-nav-item{height:50px;border-radius:16px;font-size:.63rem;border:1px solid transparent;transition:all .22s cubic-bezier(.175,.885,.32,1.275)}
+ .mobile-nav-item span{font-size:.62rem;line-height:1}
+ .mobile-nav-item.active{color:#818cf8;background:linear-gradient(135deg,rgba(124,108,250,.22),rgba(167,139,250,.1));border-color:rgba(124,108,250,.3)}
+ .mobile-nav-item.active i{transform:translateY(-1px) scale(1.08);filter:drop-shadow(0 0 8px rgba(129,140,248,.6))}
+ #main{padding:1.25rem 1rem calc(130px + env(safe-area-inset-bottom,0px))!important}
+ /* More sheet */
+ .more-sheet{display:block;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;opacity:0;pointer-events:none;transition:opacity .2s}
+ .more-sheet.open{opacity:1;pointer-events:auto}
+ .more-panel{position:absolute;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom,10px));background:#13161d;border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:.6rem;transform:translateY(30px);transition:transform .25s}
+ .more-sheet.open .more-panel{transform:none}
+ .more-grab{width:36px;height:4px;border-radius:2px;background:rgba(255,255,255,.2);margin:.2rem auto .6rem}
+ .more-item{display:flex;align-items:center;gap:.8rem;width:100%;min-height:52px;padding:0 1rem;border:0;border-radius:14px;background:transparent;color:#f0f2f8;font-size:1rem;font-weight:600;text-align:left}
+ .more-item i{width:22px;color:#818cf8}
+ .more-item:active{background:rgba(255,255,255,.06)}
+ .more-close{justify-content:center;color:#7a8099;margin-top:.2rem}
+ /* hub like the trainer: one hero card, then tiles */
+ .dashboard-hero,.due-banner{display:none!important}
+ #today-card{background:linear-gradient(145deg,rgba(124,108,250,.16),rgba(124,108,250,.05));border:1px solid rgba(124,108,250,.35);border-radius:20px;padding:1.1rem}
+ .today-main{border-radius:14px;box-shadow:0 6px 22px rgba(124,108,250,.35)}
+ .lesson-grid{grid-template-columns:repeat(2,1fr)!important;gap:.5rem!important}
+ .lesson-card{padding:.7rem!important;border-radius:14px!important;gap:.3rem}
+ .lesson-card-subtitle,.lesson-card-progress span{display:none}
+ .lesson-card-title{font-size:.85rem!important}
+ .group-tab{font-size:.78rem!important;padding:.5rem .4rem!important}
+ /* study session */
+ #view-study{padding:0!important}
+ .study-header{gap:.8rem;margin-bottom:1rem}
+ .study-progress-bar{height:5px;border-radius:10px}
+ .study-progress-fill{background:linear-gradient(90deg,var(--accent),#22d3a4);border-radius:10px}
+ .flashcard-stage{min-height:0;margin-bottom:1rem}
+ .flashcard{min-height:min(52vh,400px);padding:1.4rem!important;border-radius:22px!important;background:linear-gradient(145deg,#191d27,#1e2230);box-shadow:0 8px 40px rgba(0,0,0,.4)}
+ .flashcard.flipped,.flashcard.revealed{border-color:var(--accent);box-shadow:0 8px 40px var(--accent-glow)}
+ .card-term-large{font-family:var(--font-display)!important;font-weight:800}
+ .grade-controls{grid-template-columns:repeat(4,1fr)!important;gap:.5rem!important}
+ .btn-grade{padding:.8rem .2rem!important;border-radius:14px!important;min-height:60px}
+ .grade-label{font-size:.8rem!important}.grade-time{font-size:.62rem!important}
+}
