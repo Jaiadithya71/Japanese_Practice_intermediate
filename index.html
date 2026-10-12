@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/reader.css" />
   <link rel="stylesheet" href="css/study.css" />
   <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/sync.css" />
 </head>
 <body>
 
@@ -81,6 +82,11 @@
         <span id="hard-count-badge" class="badge badge-red hide">0</span>
       </button>
     </nav>
+
+    <!-- Sync status pill -->
+    <div id="n3sync-status" class="n3s-pill n3s-idle" onclick="openSyncSetup()" title="Sync settings">
+      <i class="fa-solid fa-cloud"></i><span id="n3sync-label">Saved on this device</span>
+    </div>
 
     <!-- Sidebar Stats Tracker -->
     <div class="sidebar-stats">
@@ -425,6 +431,30 @@
   </nav>
 
   <!-- Module Entrypoint -->
+  <!-- ===== N3 GIST SYNC MODAL ===== -->
+  <div id="n3s-overlay" class="n3s-hide" onclick="if(event.target===this)closeSyncSetup()">
+    <div class="n3s-modal">
+      <h2><i class="fa-brands fa-github"></i> Save &amp; Sync (N3)</h2>
+      <div id="n3s-step1">
+        <p>Progress is always saved on this device. To keep it across devices, paste a GitHub token with only the <strong>gist</strong> permission. It is stored in this browser only and goes only to GitHub. This creates a separate private Gist for N3.</p>
+        <input id="n3s-pat" type="password" placeholder="GitHub token (gist scope)" autocomplete="off" />
+        <p id="n3s-error" class="n3s-hide"></p>
+        <div class="n3s-row">
+          <button class="n3s-btn" onclick="closeSyncSetup()">Cancel</button>
+          <button class="n3s-btn n3s-primary" onclick="connectGist()">Connect</button>
+        </div>
+      </div>
+      <div id="n3s-connected" class="n3s-hide">
+        <p id="n3s-info"></p>
+        <div class="n3s-row">
+          <button class="n3s-btn" onclick="disconnectGist()">Disconnect</button>
+          <button class="n3s-btn" id="n3s-sync-now" onclick="forceSyncNow()">Sync Now</button>
+          <button class="n3s-btn n3s-primary" onclick="closeSyncSetup()">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script type="module" src="js/main.js"></script>
 </body>
 </html>
