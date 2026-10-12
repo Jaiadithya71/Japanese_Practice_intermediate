@@ -10,7 +10,8 @@ function istDayStart() {
 }
 
 function nextUnit() {
-  const ids = Object.keys(state.vocabDB).sort((a, b) => parseInt(a, 10) - parseInt(b, 10));
+  const rank = k => (k.startsWith('review_') ? 1000 + parseInt(k.slice(7), 10) : k.startsWith('part2_') ? 2000 + parseInt(k.slice(6), 10) : parseInt(k, 10));
+  const ids = Object.keys(state.vocabDB).sort((a, b) => rank(a) - rank(b));
   for (const id of ids) {
     const words = state.vocabDB[id] || [];
     const fresh = words.filter(w => !seenIt(state.stats[`V:${w.id}`])).length;
@@ -27,6 +28,12 @@ function nextLesson() {
     if (!touched) return { id: lid, title: lesson.title_en || lesson.title_ja || lid };
   }
   return null;
+}
+
+function unitLabel(id) {
+  const m = (state.chapterMetadata[id] || {}).topic_en;
+  const n = id.startsWith('review_') ? 'Review ' + id.slice(7) : id.startsWith('part2_') ? 'Characteristics ' + id.slice(6) : 'Unit ' + id;
+  return n + (m ? ' - ' + m : '');
 }
 
 export function renderToday() {
@@ -59,7 +66,7 @@ export function renderToday() {
     </button>
     <div class="today-split">${dueV} vocab &middot; ${dueR} reading</div>
     <div class="today-steps">
-      ${unit ? `<button class="today-step" onclick="state_pickUnit('${unit.id}')"><span class="ts-n">2</span><span class="ts-t">Learn new words<small>Unit ${unit.id}: ${unit.fresh} of ${unit.total} unseen</small></span><i class="fa-solid fa-chevron-right"></i></button>` : ''}
+      ${unit ? `<button class="today-step" onclick="state_pickUnit('${unit.id}')"><span class="ts-n">2</span><span class="ts-t">Learn new words<small>${unitLabel(unit.id)}: ${unit.fresh} of ${unit.total} unseen</small></span><i class="fa-solid fa-chevron-right"></i></button>` : ''}
       ${les ? `<button class="today-step" onclick="openReadingLesson('${les.id}')"><span class="ts-n">3</span><span class="ts-t">Read one lesson<small>${String(les.title).replace(/</g, '&lt;')}</small></span><i class="fa-solid fa-chevron-right"></i></button>` : ''}
     </div>
     <div class="today-prog"><div class="today-bar"><span style="width:${pct}%"></span></div><small>Vocab seen: ${vocabSeen}/${vocabTotal} (${pct}%)</small></div>`;
@@ -69,3 +76,6 @@ window.state_pickUnit = function (id) {
   state.selectedChapters = new Set([id]);
   window.startStudy('flashcard', false, 'home');
 };
+
+window.openMoreMenu = () => document.getElementById('more-sheet').classList.add('open');
+window.closeMoreMenu = () => document.getElementById('more-sheet').classList.remove('open');
