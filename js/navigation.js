@@ -5,6 +5,7 @@
 
 import { state } from './state.js';
 import { renderHomeView } from './home.js';
+import { renderToday } from './today.js';
 import { renderChapterChips, renderVocabList, updateHardWordsView } from './vocab-browser.js';
 
 import { renderReadingView } from './reader.js';
@@ -34,6 +35,7 @@ export function showView(viewId) {
   // Lifecycle updates for target view
   if (viewId === 'home') {
     renderHomeView();
+    renderToday();
   } else if (viewId === 'vocab') {
     renderChapterChips();
     renderVocabList();
