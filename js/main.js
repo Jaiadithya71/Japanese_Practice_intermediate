@@ -23,6 +23,24 @@ import {
   exitTestToHub, filterTestCategory, getAllAvailableTests
 } from './test.js';
 
+// New Foundation & Memory Engine Modules (WP-0 to WP-5)
+import './backup.js';
+import './time.js';
+import './daylog.js';
+import { buildIndexes } from './indexes.js';
+import './session.js';
+import './planner.js';
+import './kanji-words.js';
+import './kanji-runner.js';
+
+// Releases R2, R3, R4 Modules (WP-6 to WP-12)
+import './daily.js';
+import './today.js';
+import './reading-types.js';
+import './grammar-srs.js';
+import './me-tab.js';
+import './class-curriculum.js';
+
 // Expose controllers to window for HTML event handlers
 window.state = state;
 window.showView = showView;
@@ -127,6 +145,7 @@ async function initApp() {
   if (loadEl) loadEl.textContent = 'Loading intermediate datasets (Vocabulary & Dokkai Reading)...';
 
   await loadAllActiveBooks();
+  window.N3Indexes = buildIndexes(state.db);
   
   if (loadEl) loadEl.style.display = 'none';
 

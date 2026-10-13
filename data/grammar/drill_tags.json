@@ -1,0 +1,9763 @@
+{
+  "p1a:1:101": {
+    "patterns": [
+      "P1-1",
+      "P1-32",
+      "P1-33",
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:102": {
+    "patterns": [
+      "P1-19",
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:103": {
+    "patterns": [
+      "P1-1"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:104": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:105": {
+    "patterns": [
+      "P1-1",
+      "P1-2",
+      "P1-33"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:106": {
+    "patterns": [
+      "P1-1"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:107": {
+    "patterns": [
+      "P1-4",
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:108": {
+    "patterns": [
+      "P1-1",
+      "P1-2",
+      "P1-32"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:1:109": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p1a:2:201": {
+    "patterns": [
+      "P1-6",
+      "P1-20",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:202": {
+    "patterns": [
+      "P1-7",
+      "P1-8",
+      "P1-10"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:203": {
+    "patterns": [
+      "P1-2",
+      "P1-9",
+      "P1-32"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:204": {
+    "patterns": [
+      "P1-6",
+      "P1-9",
+      "P1-20",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:205": {
+    "patterns": [
+      "P1-7",
+      "P1-8",
+      "P1-10",
+      "P2-58",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:206": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:207": {
+    "patterns": [
+      "P1-6",
+      "P1-9",
+      "P1-20",
+      "P1-25",
+      "P1-32",
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:208": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:209": {
+    "patterns": [
+      "P1-7",
+      "P1-8",
+      "P1-9",
+      "P1-10"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:210": {
+    "patterns": [
+      "P1-1"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:211": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:212": {
+    "patterns": [
+      "P1-5",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:213": {
+    "patterns": [
+      "P1-8",
+      "P1-10"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:214": {
+    "patterns": [
+      "P1-2",
+      "P1-9"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:215": {
+    "patterns": [
+      "P1-2",
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:216": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:217": {
+    "patterns": [
+      "P1-3",
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:2:218": {
+    "patterns": [
+      "P1-7",
+      "P1-32"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p1a:3:301": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-12",
+      "P1-13",
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:302": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-11",
+      "P1-13"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:303": {
+    "patterns": [
+      "P1-10",
+      "P2-58"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:304": {
+    "patterns": [
+      "P1-8",
+      "P1-10"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:305": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-12",
+      "P1-13",
+      "P1-24",
+      "P1-28",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:306": {
+    "patterns": [
+      "P1-8",
+      "P1-10"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:307": {
+    "patterns": [
+      "P1-13"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-10",
+      "P1-11",
+      "P1-12",
+      "P2-58"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:308": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-12",
+      "P1-13",
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:3:309": {
+    "patterns": [
+      "P1-10",
+      "P2-58"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p1a:4:401": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:402": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-17",
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:403": {
+    "patterns": [
+      "P1-15",
+      "P1-16",
+      "P1-18"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:404": {
+    "patterns": [
+      "P1-17",
+      "P1-33"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-16",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:405": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:406": {
+    "patterns": [
+      "P1-18"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:407": {
+    "patterns": [
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-33",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:408": {
+    "patterns": [
+      "P1-17",
+      "P1-32",
+      "P1-33"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-16",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:409": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:410": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18",
+      "P1-33"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:411": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-12",
+      "P1-13",
+      "P1-24",
+      "P1-28",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:412": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-12",
+      "P1-13",
+      "P1-21",
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:413": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:414": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-11",
+      "P1-13"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:415": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:416": {
+    "patterns": [
+      "P1-17",
+      "P1-33",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-16",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:417": {
+    "patterns": [
+      "P1-8",
+      "P1-10"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:418": {
+    "patterns": [
+      "P1-10",
+      "P1-12",
+      "P1-24",
+      "P1-28",
+      "P1-32"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:451": {
+    "patterns": [
+      "P1-1",
+      "P1-33",
+      "P1-44",
+      "P2-58"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:452": {
+    "patterns": [
+      "P1-5"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:453": {
+    "patterns": [
+      "P1-10"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:454": {
+    "patterns": [
+      "P1-14",
+      "P1-15",
+      "P1-18",
+      "P1-32",
+      "P1-33",
+      "P2-69"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:455": {
+    "patterns": [
+      "P1-2",
+      "P1-8",
+      "P1-9",
+      "P1-10"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:456": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-12",
+      "P1-24",
+      "P1-28",
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:457": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-13",
+      "P1-15"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:458": {
+    "patterns": [
+      "P1-1",
+      "P1-5",
+      "P1-8",
+      "P1-9",
+      "P1-10"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:459": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:460": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-14",
+      "P1-15",
+      "P1-18"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:461": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:462": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:4:463": {
+    "patterns": [
+      "P1-5",
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p1a:5:501": {
+    "patterns": [
+      "P1-19",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:502": {
+    "patterns": [
+      "P1-19",
+      "P1-33"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:503": {
+    "patterns": [
+      "P1-21",
+      "P1-31",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:504": {
+    "patterns": [
+      "P1-6",
+      "P1-19",
+      "P1-20",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:505": {
+    "patterns": [
+      "P1-21",
+      "P1-31",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:506": {
+    "patterns": [
+      "P1-19",
+      "P1-21",
+      "P1-23"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:507": {
+    "patterns": [
+      "P1-6",
+      "P1-19",
+      "P1-20",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:508": {
+    "patterns": [
+      "P1-21",
+      "P1-31",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:5:509": {
+    "patterns": [
+      "P1-6",
+      "P1-20",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p1a:6:601": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:602": {
+    "patterns": [
+      "P1-25"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:603": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:604": {
+    "patterns": [
+      "P1-44"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-43",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:605": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:606": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:607": {
+    "patterns": [
+      "P1-24",
+      "P1-25",
+      "P1-28",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:608": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:609": {
+    "patterns": [
+      "P1-19"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:610": {
+    "patterns": [
+      "P1-21",
+      "P1-31",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:611": {
+    "patterns": [
+      "P1-19",
+      "P1-21",
+      "P1-23"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:612": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P2-71",
+      "P3-82"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-72",
+      "P3-83"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:613": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:614": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:615": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:616": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:617": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1a:6:618": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q1": {
+    "patterns": [
+      "P1-20",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q2": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q3": {
+    "patterns": [
+      "P1-30",
+      "P1-43",
+      "P2-74"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-31",
+      "P1-32",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q4": {
+    "patterns": [
+      "P1-31"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-32",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q5": {
+    "patterns": [
+      "P1-32",
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q6": {
+    "patterns": [
+      "P1-25",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q7": {
+    "patterns": [
+      "P1-30",
+      "P2-70",
+      "P2-74",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-31",
+      "P1-32",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:7:sec7_q8": {
+    "patterns": [
+      "P1-33"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q1": {
+    "patterns": [
+      "P1-21",
+      "P1-23",
+      "P1-34"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q2": {
+    "patterns": [
+      "P1-35"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-43",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q3": {
+    "patterns": [
+      "P1-25",
+      "P1-36"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q4": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-34",
+      "P1-36",
+      "P1-37",
+      "P1-39",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q5": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q6": {
+    "patterns": [
+      "P1-33",
+      "P1-34"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q7": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-35"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec8_q8": {
+    "patterns": [
+      "P1-25",
+      "P1-33",
+      "P1-37",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q1": {
+    "patterns": [
+      "P1-20",
+      "P1-21",
+      "P1-31",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q2": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q3": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-25",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q4": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-34",
+      "P1-35"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q5": {
+    "patterns": [
+      "P1-21",
+      "P1-23",
+      "P1-34"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q6": {
+    "patterns": [
+      "P1-25",
+      "P1-37",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q7": {
+    "patterns": [
+      "P1-25",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q8": {
+    "patterns": [
+      "P1-31",
+      "P1-33"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q9": {
+    "patterns": [
+      "P1-19",
+      "P1-21",
+      "P1-23",
+      "P1-34",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:sec7_8_q10": {
+    "patterns": [
+      "P1-35",
+      "P2-72",
+      "P3-83"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-43",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q1": {
+    "patterns": [
+      "P1-34",
+      "P1-49"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-43",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q2": {
+    "patterns": [
+      "P1-25",
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q3": {
+    "patterns": [
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q4": {
+    "patterns": [
+      "P1-25",
+      "P1-44"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q5": {
+    "patterns": [
+      "P1-15",
+      "P1-33"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q6": {
+    "patterns": [
+      "P1-19",
+      "P1-21",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q7": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q8": {
+    "patterns": [
+      "P1-1",
+      "P1-32",
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q9": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q10": {
+    "patterns": [
+      "P1-1",
+      "P1-2"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q11": {
+    "patterns": [
+      "P1-1",
+      "P1-32",
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q12": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-36",
+      "P1-49"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:8:matome_1_8_q13": {
+    "patterns": [
+      "P1-19",
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q1": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q2": {
+    "patterns": [
+      "P1-14",
+      "P1-21"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q3": {
+    "patterns": [
+      "P1-25",
+      "P1-39",
+      "P1-40"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q4": {
+    "patterns": [
+      "P1-39",
+      "P1-40"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-41",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q5": {
+    "patterns": [
+      "P1-32",
+      "P1-39"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q6": {
+    "patterns": [
+      "P1-14",
+      "P1-32"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q7": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-41"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:9:sec9_q8": {
+    "patterns": [
+      "P1-14"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q1": {
+    "patterns": [
+      "P1-32",
+      "P1-42"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q2": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-42"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q3": {
+    "patterns": [
+      "P1-32",
+      "P1-42",
+      "P2-72",
+      "P3-83"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q4": {
+    "patterns": [
+      "P1-20",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q5": {
+    "patterns": [
+      "P1-42",
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q6": {
+    "patterns": [
+      "P1-44"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-43",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q7": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P1-44"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q8": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-42",
+      "P1-43",
+      "P1-44"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q9": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec10_q10": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P1-43",
+      "P2-62",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q1": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P1-39",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q2": {
+    "patterns": [
+      "P1-39",
+      "P1-40"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-41",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q3": {
+    "patterns": [
+      "P1-41"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q4": {
+    "patterns": [
+      "P1-32",
+      "P1-39",
+      "P1-40",
+      "P1-41"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q5": {
+    "patterns": [
+      "P1-25",
+      "P1-28",
+      "P1-32",
+      "P1-41",
+      "P1-44",
+      "P1-45",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q6": {
+    "patterns": [
+      "P1-28",
+      "P1-39",
+      "P1-40",
+      "P1-41",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q7": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-43",
+      "P1-44"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q8": {
+    "patterns": [
+      "P1-41",
+      "P1-44"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:10:sec9_10_q9": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-41",
+      "P1-44",
+      "P2-71",
+      "P3-82"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-72",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q1": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q2": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q3": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q4": {
+    "patterns": [
+      "P1-19",
+      "P1-32",
+      "P1-47"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q5": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q6": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q7": {
+    "patterns": [
+      "P1-25",
+      "P1-33"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q8": {
+    "patterns": [
+      "P1-32",
+      "P1-49",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:11:sec11_q9": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q1": {
+    "patterns": [
+      "P1-50"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-33",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q2": {
+    "patterns": [
+      "P1-10",
+      "P1-25",
+      "P1-32",
+      "P1-50",
+      "P2-75"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q3": {
+    "patterns": [
+      "P1-50"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-33",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q4": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q5": {
+    "patterns": [
+      "P1-53"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q6": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q7": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q8": {
+    "patterns": [
+      "P1-25"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec12_q9": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q1": {
+    "patterns": [
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q2": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q3": {
+    "patterns": [
+      "P1-21",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q4": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P1-43",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q5": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q6": {
+    "patterns": [
+      "P1-43",
+      "P2-75"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q7": {
+    "patterns": [
+      "P1-25",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:sec11_12_q8": {
+    "patterns": [
+      "P1-19"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q1": {
+    "patterns": [
+      "P1-32",
+      "P1-39",
+      "P1-40",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q2": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P1-35",
+      "P1-36",
+      "P1-43",
+      "P1-47",
+      "P2-75"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q3": {
+    "patterns": [
+      "P1-21",
+      "P1-23",
+      "P1-44",
+      "P2-56"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q4": {
+    "patterns": [
+      "P1-42"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-43",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q5": {
+    "patterns": [
+      "P1-28",
+      "P1-39",
+      "P1-41",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q6": {
+    "patterns": [
+      "P1-25",
+      "P1-43",
+      "P1-44"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q7": {
+    "patterns": [
+      "P1-1",
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q8": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q9": {
+    "patterns": [
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q10": {
+    "patterns": [
+      "P1-28",
+      "P1-41",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q11": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-43",
+      "P1-44"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q12": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p1b:12:matome_1_12_q13": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-34",
+      "P1-36",
+      "P1-44"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:1:101": {
+    "patterns": [
+      "P1-21",
+      "P2-55",
+      "P2-56"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:102": {
+    "patterns": [
+      "P1-21",
+      "P2-56"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:103": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:104": {
+    "patterns": [
+      "P1-16",
+      "P1-43",
+      "P2-56",
+      "P2-57",
+      "P2-58"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:105": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:106": {
+    "patterns": [
+      "P2-56",
+      "P2-57"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:107": {
+    "patterns": [
+      "P1-43",
+      "P2-56",
+      "P2-57",
+      "P2-70",
+      "P2-75",
+      "P3-81"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:108": {
+    "patterns": [
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:109": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:110": {
+    "patterns": [
+      "P1-28",
+      "P1-43",
+      "P2-56",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-57"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:111": {
+    "patterns": [
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:112": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:113": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:114": {
+    "patterns": [
+      "P1-32",
+      "P2-55",
+      "P2-56",
+      "P2-57"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:115": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-55",
+      "P2-56",
+      "P2-57"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:116": {
+    "patterns": [
+      "P2-56",
+      "P2-57"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:117": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:118": {
+    "patterns": [
+      "P1-16",
+      "P1-21",
+      "P2-56",
+      "P2-57"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:119": {
+    "patterns": [
+      "P1-1",
+      "P2-56",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:120": {
+    "patterns": [
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:121": {
+    "patterns": [
+      "P1-43",
+      "P2-56"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:122": {
+    "patterns": [
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:123": {
+    "patterns": [
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:124": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:1:125": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p2:2:201": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:202": {
+    "patterns": [
+      "P1-21",
+      "P1-28",
+      "P1-32",
+      "P1-43",
+      "P2-62"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:203": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:204": {
+    "patterns": [
+      "P1-10",
+      "P1-32"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:205": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:206": {
+    "patterns": [
+      "P1-25",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:207": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:208": {
+    "patterns": [
+      "P1-20",
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:209": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:210": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P1-46",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:211": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:212": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:213": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:214": {
+    "patterns": [
+      "P1-32",
+      "P2-60"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:215": {
+    "patterns": [
+      "P1-21",
+      "P1-43",
+      "P1-47",
+      "P2-58"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:216": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:217": {
+    "patterns": [
+      "P1-21",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:218": {
+    "patterns": [
+      "P1-43",
+      "P2-75"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:219": {
+    "patterns": [
+      "P1-21",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:220": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:221": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:222": {
+    "patterns": [
+      "P1-47"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-41",
+      "P1-46",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:223": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P2-60"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:224": {
+    "patterns": [
+      "P1-25",
+      "P1-32",
+      "P2-60"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:225": {
+    "patterns": [
+      "P1-32",
+      "P2-60"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:226": {
+    "patterns": [
+      "P1-19",
+      "P2-75"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:227": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P2-60"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:2:228": {
+    "patterns": [
+      "P1-47",
+      "P2-58"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-41",
+      "P1-46",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p2:3:301": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:302": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:303": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P2-62",
+      "P2-75"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:304": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:305": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:306": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:307": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:308": {
+    "patterns": [
+      "P1-32",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:309": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:310": {
+    "patterns": [
+      "P1-32",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:311": {
+    "patterns": [
+      "P1-28",
+      "P1-33",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:312": {
+    "patterns": [
+      "P1-32",
+      "P1-33"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:313": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:314": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:315": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:316": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:317": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P2-75"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:318": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:319": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:320": {
+    "patterns": [
+      "P1-28",
+      "P1-43",
+      "P2-62",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:321": {
+    "patterns": [
+      "P2-70",
+      "P2-75",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:322": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:323": {
+    "patterns": [
+      "P1-28",
+      "P1-49",
+      "P2-62",
+      "P2-75"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:324": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:3:325": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P2-70",
+      "P2-75",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p2:4:401": {
+    "patterns": [
+      "P1-41"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:402": {
+    "patterns": [
+      "P2-63"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-70",
+      "P2-73",
+      "P3-80",
+      "P3-81"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:403": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-31"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:404": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:405": {
+    "patterns": [
+      "P1-21",
+      "P1-42"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:406": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:407": {
+    "patterns": [
+      "P1-28",
+      "P2-62",
+      "P2-63"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:408": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:409": {
+    "patterns": [
+      "P1-31"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-32",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:410": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:411": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:412": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:413": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:414": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:415": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:416": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:417": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:418": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:419": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P1-43",
+      "P2-62",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:420": {
+    "patterns": [
+      "P1-21",
+      "P1-23",
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:421": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:422": {
+    "patterns": [
+      "P1-31"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-32",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:423": {
+    "patterns": [
+      "P1-24",
+      "P1-25",
+      "P1-28",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:424": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:425": {
+    "patterns": [
+      "P2-63"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-70",
+      "P2-73",
+      "P3-80",
+      "P3-81"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:426": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:4:427": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p2:5:501": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P1-43",
+      "P2-69",
+      "P2-70",
+      "P3-80",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:502": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:503": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:504": {
+    "patterns": [
+      "P1-25",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:505": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:506": {
+    "patterns": [
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:507": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:508": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:509": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:510": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:511": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:512": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-39"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:513": {
+    "patterns": [
+      "P1-28",
+      "P2-62",
+      "P2-75"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:514": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:515": {
+    "patterns": [
+      "P1-2"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:516": {
+    "patterns": [
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:517": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:518": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:519": {
+    "patterns": [
+      "P1-28",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:520": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:521": {
+    "patterns": [
+      "P1-21",
+      "P1-23",
+      "P1-25"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:522": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:523": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:524": {
+    "patterns": [
+      "P1-32",
+      "P1-33"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:525": {
+    "patterns": [
+      "P1-25"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:526": {
+    "patterns": [
+      "P1-25",
+      "P1-32"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:5:527": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p2:6:601": {
+    "patterns": [
+      "P1-10",
+      "P1-24",
+      "P1-28",
+      "P2-56",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:602": {
+    "patterns": [
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:603": {
+    "patterns": [
+      "P1-24",
+      "P1-25",
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:604": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:605": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:606": {
+    "patterns": [
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-70",
+      "P2-73",
+      "P3-81"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:607": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P1-46",
+      "P1-47",
+      "P2-58"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:608": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P2-62",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:609": {
+    "patterns": [
+      "P2-56"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:610": {
+    "patterns": [
+      "P1-25"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:611": {
+    "patterns": [
+      "P1-21",
+      "P1-28",
+      "P1-32",
+      "P2-62"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:612": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P2-56"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:6:613": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p2:7:701": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:702": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P2-65",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:703": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:704": {
+    "patterns": [
+      "P1-21",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:705": {
+    "patterns": [
+      "P1-28",
+      "P1-39",
+      "P2-62",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:706": {
+    "patterns": [
+      "P2-70",
+      "P2-72",
+      "P3-81",
+      "P3-83"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:707": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:708": {
+    "patterns": [
+      "P1-21",
+      "P1-33",
+      "P2-70",
+      "P2-71",
+      "P2-72",
+      "P3-81",
+      "P3-82",
+      "P3-83"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:709": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:7:710": {
+    "patterns": [
+      "P1-21",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p2:8:801": {
+    "patterns": [
+      "P1-21",
+      "P1-28",
+      "P2-62",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:802": {
+    "patterns": [
+      "P1-7",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:803": {
+    "patterns": [
+      "P1-20",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:804": {
+    "patterns": [
+      "P2-56",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:805": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:806": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:807": {
+    "patterns": [
+      "P1-25",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:808": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:809": {
+    "patterns": [
+      "P1-32",
+      "P2-69",
+      "P2-70",
+      "P3-80",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:8:810": {
+    "patterns": [
+      "P1-21",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p2:9:901": {
+    "patterns": [
+      "P1-21",
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:902": {
+    "patterns": [
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:903": {
+    "patterns": [
+      "P1-19",
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:904": {
+    "patterns": [
+      "P1-44",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-43",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:905": {
+    "patterns": [
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:906": {
+    "patterns": [
+      "P1-2",
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:907": {
+    "patterns": [
+      "P1-32",
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:908": {
+    "patterns": [
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:909": {
+    "patterns": [
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:9:910": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p2:10:1001": {
+    "patterns": [
+      "P1-21",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1002": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1003": {
+    "patterns": [
+      "P1-21",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1004": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1005": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-21",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1006": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1007": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1008": {
+    "patterns": [
+      "P1-28",
+      "P1-43",
+      "P2-62",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1009": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:10:1010": {
+    "patterns": [
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  },
+  "p2:11:1101": {
+    "patterns": [
+      "P1-21",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1102": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1103": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1104": {
+    "patterns": [
+      "P1-49",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-41",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1105": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1106": {
+    "patterns": [
+      "P1-33",
+      "P2-69",
+      "P2-70",
+      "P3-80",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1107": {
+    "patterns": [
+      "P1-8",
+      "P1-10",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1108": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1109": {
+    "patterns": [
+      "P1-21",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1110": {
+    "patterns": [
+      "P1-21",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1111": {
+    "patterns": [
+      "P1-21",
+      "P2-65",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1112": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1113": {
+    "patterns": [
+      "P1-24",
+      "P1-28",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1114": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1115": {
+    "patterns": [
+      "P1-21",
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P2-71",
+      "P3-81",
+      "P3-82"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-72",
+      "P3-83"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1116": {
+    "patterns": [
+      "P1-32",
+      "P1-39",
+      "P1-40",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1117": {
+    "patterns": [
+      "P1-10",
+      "P1-32",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:11:1118": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "11",
+    "confidence": "auto"
+  },
+  "p2:12:1201": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-43",
+      "P2-70",
+      "P2-71",
+      "P3-81",
+      "P3-82"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-72",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1202": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1203": {
+    "patterns": [
+      "P1-21",
+      "P2-71",
+      "P3-82"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-72",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1204": {
+    "patterns": [
+      "P1-21",
+      "P1-33",
+      "P2-72",
+      "P3-83"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P3-82"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1205": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P1-43",
+      "P2-69",
+      "P2-70",
+      "P3-80",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1206": {
+    "patterns": [
+      "P1-10",
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1207": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-33"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1208": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1209": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-25",
+      "P1-28",
+      "P1-31",
+      "P1-33",
+      "P1-42",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:12:1210": {
+    "patterns": [
+      "P1-21",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "12",
+    "confidence": "auto"
+  },
+  "p2:13:1301": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1302": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1303": {
+    "patterns": [
+      "P1-21",
+      "P1-25"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1304": {
+    "patterns": [
+      "P1-19",
+      "P1-43",
+      "P2-75"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1305": {
+    "patterns": [
+      "P1-19",
+      "P1-24",
+      "P1-28",
+      "P2-75"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1306": {
+    "patterns": [
+      "P1-1",
+      "P1-19",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1307": {
+    "patterns": [
+      "P1-19",
+      "P1-32",
+      "P2-70",
+      "P2-75",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1308": {
+    "patterns": [
+      "P1-19",
+      "P1-33"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1309": {
+    "patterns": [
+      "P1-1",
+      "P1-33",
+      "P2-70",
+      "P2-75",
+      "P3-81"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1310": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1311": {
+    "patterns": [
+      "P1-32",
+      "P1-33",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1312": {
+    "patterns": [
+      "P1-25",
+      "P1-33",
+      "P2-67"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1313": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1314": {
+    "patterns": [
+      "P1-32",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:13:1315": {
+    "patterns": [
+      "P1-21",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "13",
+    "confidence": "auto"
+  },
+  "p2:14:1401": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1402": {
+    "patterns": [
+      "P1-43",
+      "P1-44"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1403": {
+    "patterns": [
+      "P1-32",
+      "P1-33",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1404": {
+    "patterns": [
+      "P1-28",
+      "P1-33",
+      "P2-62"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1405": {
+    "patterns": [
+      "P1-10",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P1-33",
+      "P1-43"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1406": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1407": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-72",
+      "P2-75",
+      "P3-83"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1408": {
+    "patterns": [
+      "P1-19",
+      "P1-20"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1409": {
+    "patterns": [
+      "P1-19"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:14:1410": {
+    "patterns": [
+      "P1-28",
+      "P2-62",
+      "P2-69"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57"
+    ],
+    "section": "14",
+    "confidence": "auto"
+  },
+  "p2:15:1501": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "15",
+    "confidence": "auto"
+  },
+  "p2:15:1502": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "15",
+    "confidence": "auto"
+  },
+  "p2:15:1503": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-75"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "15",
+    "confidence": "auto"
+  },
+  "p2:15:1504": {
+    "patterns": [
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "15",
+    "confidence": "auto"
+  },
+  "p2:15:1505": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-39"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "15",
+    "confidence": "auto"
+  },
+  "p3:1:30101": {
+    "patterns": [
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30102": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30103": {
+    "patterns": [
+      "P1-21",
+      "P2-71",
+      "P3-82"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-72",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30104": {
+    "patterns": [
+      "P1-21",
+      "P1-33",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30105": {
+    "patterns": [
+      "P1-14",
+      "P1-21",
+      "P1-43",
+      "P2-69",
+      "P2-70",
+      "P3-80",
+      "P3-81"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30106": {
+    "patterns": [
+      "P1-10",
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "degree-limit",
+    "rivals": [
+      "P1-11",
+      "P1-12",
+      "P1-13",
+      "P2-58"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30107": {
+    "patterns": [
+      "P1-21",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30108": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30109": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P1-31",
+      "P1-42",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:1:30110": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "1",
+    "confidence": "auto"
+  },
+  "p3:2:30201": {
+    "patterns": [
+      "P1-19"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30202": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30203": {
+    "patterns": [
+      "P1-21",
+      "P1-25"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30204": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30205": {
+    "patterns": [
+      "P1-24",
+      "P1-28"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-25",
+      "P1-26",
+      "P1-27",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30206": {
+    "patterns": [
+      "P1-1"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30207": {
+    "patterns": [
+      "P2-70",
+      "P2-75",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30208": {
+    "patterns": [
+      "P1-33"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:2:30209": {
+    "patterns": [
+      "P1-1",
+      "P1-21",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "2",
+    "confidence": "auto"
+  },
+  "p3:3:30301": {
+    "patterns": [
+      "P2-75"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-2",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-76"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p3:3:30302": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p3:3:30303": {
+    "patterns": [
+      "P1-32"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p3:3:30304": {
+    "patterns": [
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p3:3:30305": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-39"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "3",
+    "confidence": "auto"
+  },
+  "p3:4:30401": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P2-58"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p3:4:30402": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p3:4:30403": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P1-41",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p3:4:30404": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-33"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "4",
+    "confidence": "auto"
+  },
+  "p3:5:30501": {
+    "patterns": [
+      "P1-19",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p3:5:30502": {
+    "patterns": [
+      "P1-32",
+      "P2-55",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p3:5:30503": {
+    "patterns": [
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p3:5:30504": {
+    "patterns": [
+      "P1-19",
+      "P1-25",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "5",
+    "confidence": "auto"
+  },
+  "p3:6:30601": {
+    "patterns": [
+      "P1-32",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p3:6:30602": {
+    "patterns": [
+      "P1-2",
+      "P1-32",
+      "P1-43",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "time",
+    "rivals": [
+      "P1-1",
+      "P1-3",
+      "P1-4",
+      "P1-7",
+      "P1-9",
+      "P2-74",
+      "P2-75",
+      "P2-76"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p3:6:30603": {
+    "patterns": [
+      "P1-18",
+      "P1-39",
+      "P1-40",
+      "P1-43"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "6",
+    "confidence": "auto"
+  },
+  "p3:7:30701": {
+    "patterns": [
+      "P1-33",
+      "P2-67"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30702": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30703": {
+    "patterns": [
+      "P1-21"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30704": {
+    "patterns": [
+      "P1-43"
+    ],
+    "cluster": "inability-compulsion",
+    "rivals": [
+      "P1-34",
+      "P1-35",
+      "P1-36",
+      "P1-37",
+      "P1-42",
+      "P1-44",
+      "P1-45",
+      "P2-59"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30705": {
+    "patterns": [
+      "P1-25",
+      "P1-33",
+      "P1-36",
+      "P1-43",
+      "P2-67"
+    ],
+    "cluster": "condition",
+    "rivals": [
+      "P1-5",
+      "P1-6",
+      "P1-8",
+      "P1-24",
+      "P1-26",
+      "P1-27",
+      "P1-28",
+      "P2-56",
+      "P2-57",
+      "P2-62"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30706": {
+    "patterns": [
+      "P1-33",
+      "P1-43",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30707": {
+    "patterns": [
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "form-other",
+    "rivals": [
+      "P2-63",
+      "P2-64",
+      "P2-66",
+      "P2-67",
+      "P2-68",
+      "P2-69",
+      "P2-73",
+      "P3-80"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30708": {
+    "patterns": [
+      "P1-41",
+      "P1-43"
+    ],
+    "cluster": "purpose-intent",
+    "rivals": [
+      "P1-39",
+      "P1-40",
+      "P1-46",
+      "P1-47",
+      "P1-48",
+      "P1-49",
+      "P2-60",
+      "P2-61"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30709": {
+    "patterns": [],
+    "cluster": null,
+    "rivals": [],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:7:30710": {
+    "patterns": [
+      "P1-21",
+      "P1-33",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "7",
+    "confidence": "auto"
+  },
+  "p3:8:30801": {
+    "patterns": [
+      "P1-21",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p3:8:30802": {
+    "patterns": [
+      "P1-32",
+      "P1-43",
+      "P2-56"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-33",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "8",
+    "confidence": "auto"
+  },
+  "p3:9:30901": {
+    "patterns": [
+      "P1-16",
+      "P1-20",
+      "P1-33"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-14",
+      "P1-15",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p3:9:30902": {
+    "patterns": [
+      "P1-33"
+    ],
+    "cluster": "viewpoint-attitude",
+    "rivals": [
+      "P1-29",
+      "P1-30",
+      "P1-31",
+      "P1-32",
+      "P1-50",
+      "P1-51",
+      "P1-52",
+      "P1-53",
+      "P2-65",
+      "P2-77",
+      "P2-78",
+      "P2-79"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p3:9:30903": {
+    "patterns": [
+      "P1-21",
+      "P1-32",
+      "P1-43"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p3:9:30904": {
+    "patterns": [
+      "P1-14",
+      "P1-19",
+      "P1-20",
+      "P1-32",
+      "P2-70",
+      "P3-81"
+    ],
+    "cluster": "contrast",
+    "rivals": [
+      "P1-15",
+      "P1-16",
+      "P1-17",
+      "P1-18",
+      "P1-38",
+      "P2-54",
+      "P2-55"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p3:9:30905": {
+    "patterns": [
+      "P1-19",
+      "P1-24",
+      "P1-28",
+      "P1-32",
+      "P1-33",
+      "P1-43",
+      "P2-69",
+      "P3-80"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-20",
+      "P1-21",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "9",
+    "confidence": "auto"
+  },
+  "p3:10:31001": {
+    "patterns": [
+      "P1-21",
+      "P1-25",
+      "P1-31",
+      "P1-32",
+      "P1-43",
+      "P2-58"
+    ],
+    "cluster": "cause",
+    "rivals": [
+      "P1-19",
+      "P1-20",
+      "P1-22",
+      "P1-23",
+      "P2-71",
+      "P2-72",
+      "P3-82",
+      "P3-83"
+    ],
+    "section": "10",
+    "confidence": "auto"
+  }
+}

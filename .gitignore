@@ -38,3 +38,8 @@ scripts/print_*.py
 scripts/read_*.py
 scripts/scan_*.py
 extract_*.py
+
+# Raw scanned book photo dumps (root level only)
+/Grammar/
+/Reading_book_material/
+/vocalbury/

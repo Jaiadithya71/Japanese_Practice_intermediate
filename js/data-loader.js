@@ -85,6 +85,48 @@ export async function loadIntermediateVocabDB() {
   return allChapters;
 }
 
+export function normalizeQuestion(q, lessonId, idx) {
+  if (!q) return q;
+  return {
+    ...q,
+    id: q.questionId || q.id || `${lessonId}_q${idx + 1}`,
+    question_ja: q.questionText_ja || q.question_ja || '',
+    question_en: q.questionText_en || q.question_en || '',
+    options: (q.options || []).map(o => typeof o === 'string' ? o : (o.text_ja || '')),
+    options_en: (q.options || []).map(o => typeof o === 'string' ? '' : (o.text_en || '')),
+    correctAnswer: parseInt(q.correctAnswer, 10)
+  };
+}
+
+export function normalizeDrill(d, lessonId, idx) {
+  if (!d) return d;
+  const options = (d.options || []).map(o => typeof o === 'string' ? o : (o.text_ja || ''));
+  const options_en = (d.options || []).map(o => typeof o === 'string' ? '' : (o.text_en || ''));
+
+  let correctAnswer = d.correctAnswer !== undefined ? parseInt(d.correctAnswer, 10) : undefined;
+  if ((correctAnswer === undefined || isNaN(correctAnswer)) && d.correctKey) {
+    const optIdx = (d.options || []).findIndex(o => o.key === d.correctKey);
+    if (optIdx >= 0) {
+      correctAnswer = optIdx + 1;
+    } else if (typeof d.correctKey === 'string' && /^[a-d]$/i.test(d.correctKey)) {
+      correctAnswer = d.correctKey.toLowerCase().charCodeAt(0) - 96;
+    }
+  }
+
+  const normalized = {
+    ...d,
+    id: d.drillId || d.id || `${lessonId}_d${idx + 1}`,
+    question_ja: d.questionText_ja || d.question_ja || d.instruction_ja || d.title_ja || '',
+    question_en: d.questionText_en || d.question_en || d.instruction_en || d.title_en || '',
+    options,
+    options_en
+  };
+  if (correctAnswer !== undefined && !isNaN(correctAnswer)) {
+    normalized.correctAnswer = correctAnswer;
+  }
+  return normalized;
+}
+
 export async function loadIntermediateReadingDB() {
   const allLessons = {};
   const categories = {
@@ -123,6 +165,27 @@ export async function loadIntermediateReadingDB() {
           category: targetCat,
           sourceFile: item.file
         };
+
+        if (Array.isArray(l.comprehensionQuestions)) {
+          enrichedLesson.comprehensionQuestions = l.comprehensionQuestions.map((q, idx) => {
+            const normQ = normalizeQuestion(q, l.id, idx);
+            // Migration M4: if old key exists in state.stats and new key does not, copy it over
+            if (state && state.stats) {
+              const oldKey = `R_Q:${l.id}_q${idx + 1}`;
+              const newKey = `R_Q:${normQ.id}`;
+              if (state.stats[oldKey] && !state.stats[newKey]) {
+                state.stats[newKey] = { ...state.stats[oldKey] };
+              }
+            }
+            return normQ;
+          });
+        }
+
+        if (Array.isArray(l.drills)) {
+          enrichedLesson.drills = l.drills.map((d, idx) =>
+            normalizeDrill(d, l.id, idx)
+          );
+        }
 
         allLessons[l.id] = enrichedLesson;
         if (!categories[targetCat]) categories[targetCat] = [];
