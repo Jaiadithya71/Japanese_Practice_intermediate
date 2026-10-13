@@ -7,6 +7,12 @@ import { state } from './state.js';
 import { getWordStatus, toggleWordHard, updateSidebarStats } from './srs.js';
 import { startStudy } from './study.js';
 
+function groupKeys() {
+  const isChar = state.activeChapterGroup !== 'topic';
+  const rank = k => (k.startsWith('review_') ? 1000 + parseInt(k.slice(7), 10) : parseInt(k.replace('part2_', ''), 10));
+  return Object.keys(state.vocabDB).filter(k => k.startsWith('part2_') === isChar).sort((a, b) => rank(a) - rank(b));
+}
+
 export function renderChapterChips() {
   const container = document.getElementById('chapter-chips');
   if (!container) return;
@@ -19,10 +25,7 @@ export function renderChapterChips() {
   allBtn.onclick = () => selectChapter('all');
   container.appendChild(allBtn);
 
-  const prefix = state.activeChapterGroup === 'topic' ? 'part1_' : 'part2_';
-  const chapterKeys = Object.keys(state.vocabDB)
-    .filter(k => k.startsWith(prefix))
-    .sort();
+  const chapterKeys = groupKeys();
 
   chapterKeys.forEach(chId => {
     const meta = state.chapterMetadata[chId] || {};
@@ -49,7 +52,7 @@ export function renderChapterChips() {
       dot = '<span class="chip-dot green"></span>';
     }
 
-    const shortLabel = chId.replace('part1_', 'T').replace('part2_', 'C');
+    const shortLabel = chId.startsWith('part2_') ? 'C' + chId.slice(6) : chId.startsWith('review_') ? 'R' + chId.slice(7) : 'T' + chId;
     chip.className = cls;
     chip.innerHTML = `${shortLabel}: ${meta.topic_ja || chId}${dot}`;
     chip.onclick = () => selectChapter(chId);
@@ -104,11 +107,9 @@ export function renderVocabList() {
   container.innerHTML = '';
 
   let list = [];
-  const prefix = state.activeChapterGroup === 'topic' ? 'part1_' : 'part2_';
-  
   if (state.vocabChapter === 'all') {
-    for (const chId in state.vocabDB) {
-      if (chId.startsWith(prefix)) {
+    for (const chId of groupKeys()) {
+      {
         list.push(...state.vocabDB[chId]);
       }
     }
