@@ -72,3 +72,10 @@
 }
 /* v3 */
 /* v3 */
+#ptr{position:fixed;top:0;left:50%;transform:translate(-50%,-60px);z-index:1500;display:flex;align-items:center;gap:.5rem;padding:.55rem 1rem;border-radius:999px;background:rgba(19,22,29,.95);border:1px solid rgba(255,255,255,.12);color:#7a8099;font-size:.8rem;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .15s,transform .2s}
+#ptr.show{opacity:1}
+#ptr.ready{color:#818cf8;border-color:rgba(124,108,250,.4)}
+#ptr.ready i{transform:rotate(180deg)}
+#ptr i{transition:transform .2s}
+#ptr.loading i{animation:ptrspin .8s linear infinite}
+@keyframes ptrspin{to{transform:rotate(360deg)}}
