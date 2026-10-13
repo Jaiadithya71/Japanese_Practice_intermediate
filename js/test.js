@@ -58,7 +58,7 @@ export function getAllAvailableTests() {
 
           // If answer is text matching an option, compute 1-based index
           if (opts.length > 0 && typeof ansText === 'string') {
-            const foundIdx = opts.findIndex(o => o.trim() === ansText.trim());
+            const foundIdx = opts.findIndex(o => String(o).trim() === String(ansText).trim());
             if (foundIdx !== -1) {
               correctIdx = foundIdx + 1;
             } else if (it.correctAnswer !== undefined) {
@@ -114,7 +114,7 @@ export function getAllAvailableTests() {
           let ansText = it.answer || (it.answers ? it.answers.join(', ') : '');
           let correctIdx = 1;
           if (opts.length > 0 && ansText) {
-            const found = opts.findIndex(o => o.trim() === ansText.trim());
+            const found = opts.findIndex(o => String(o).trim() === String(ansText).trim());
             if (found !== -1) correctIdx = found + 1;
           }
 
