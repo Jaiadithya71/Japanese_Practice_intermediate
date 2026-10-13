@@ -5,8 +5,8 @@
     "pattern_ruby": "〜うちに",
     "meaning_en": "1: Do something before the current situation changes. 2: While doing X, a change occurs spontaneously.",
     "meaning_ja": "1: その状態が変わる前に、あることをする。2: 〜している間に（変化する）。",
-    "connection": "V-辞書形 / V-ない形 / V-ている + うちに ／ A-い + うちに ／ Na-な + うちに ／ N-の + うちに",
-    "section_id": "sec-1",
+    "connection": "V-辞書形 / V-ない形 / V-ている + うちに<br>A-い + うちに<br>Na-な + うちに<br>N-の + うちに",
+    "section_id": "p1-sec-1",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> 〜とき",
     "category": "Part 1: 文の文法1"
   },
@@ -16,8 +16,8 @@
     "pattern_ruby": "〜あいだ・〜あいだに",
     "meaning_en": "〜あいだ: throughout the entire duration of a continuous state/action. 〜あいだに: at some point in time during that duration.",
     "meaning_ja": "〜あいだ：その状態が続いている間ずっと。〜あいだに：その期間のある時点に。",
-    "connection": "V-辞書形 / V-ている / V-ない + あいだ（に） ／ Na-な + あいだ（に） ／ N-の + あいだ（に）",
-    "section_id": "sec-1",
+    "connection": "V-辞書形 / V-ている / V-ない + あいだ（に）<br>Na-な + あいだ（に）<br>N-の + あいだ（に）",
+    "section_id": "p1-sec-1",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> 〜とき",
     "category": "Part 1: 文の文法1"
   },
@@ -28,7 +28,7 @@
     "meaning_en": "Unless X is done first, Y cannot be done or is impossible.",
     "meaning_ja": "〜した後でなければ、あとのことができない・難しい。",
     "connection": "V-て形 + からでないと / からでなければ",
-    "section_id": "sec-1",
+    "section_id": "p1-sec-1",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> 〜とき",
     "category": "Part 1: 文の文法1"
   },
@@ -38,8 +38,8 @@
     "pattern_ruby": "〜ところだ",
     "meaning_en": "Expresses being just about to do, in the middle of doing, or having just finished doing an action.",
     "meaning_ja": "ある動作の直前・進行中・直後を表す。",
-    "connection": "V-辞書形 + ところだ（直前：これからするところ） ／ V-ている + ところだ（最中：いましているところ） ／ V-た形 + ところだ（直後：たったいま終わったところ）",
-    "section_id": "sec-1",
+    "connection": "V-辞書形 + ところだ（直前：これからするところ）<br>V-ている + ところだ（最中：いましているところ）<br>V-た形 + ところだ（直後：たったいま終わったところ）",
+    "section_id": "p1-sec-1",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> 〜とき",
     "category": "Part 1: 文の文法1"
   },
@@ -49,8 +49,8 @@
     "pattern_ruby": "〜とおりに・〜どおりに",
     "meaning_en": "Just as / in accordance with / exactly following a model, expectation, or instructions.",
     "meaning_ja": "それと同じように、その通りの状態・方法で。",
-    "connection": "V-辞書形 / V-た形 + とおり（に） ／ N-の + とおり（に） ／ N + どおり（に）",
-    "section_id": "sec-2",
+    "connection": "V-辞書形 / V-た形 + とおり（に）<br>N-の + とおり（に）<br>N + どおり（に）",
+    "section_id": "p1-sec-2",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> 〜<ruby>関係<rt>かんけい</rt></ruby>して",
     "category": "Part 1: 文の文法1"
   },
@@ -60,8 +60,8 @@
     "pattern_ruby": "〜によって・〜によっては",
     "meaning_en": "Depending on differences in X, something varies or differs. 〜によっては highlights a particular case.",
     "meaning_ja": "それぞれに応じて異なる（〜によって異なる・変わる・分かれる）。〜によっては（特定の場合には）。",
-    "connection": "N + によって / により ／ N + によっては（特定の場合）",
-    "section_id": "sec-2",
+    "connection": "N + によって / により<br>N + によっては（特定の場合）",
+    "section_id": "p1-sec-2",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> 〜<ruby>関係<rt>かんけい</rt></ruby>して",
     "category": "Part 1: 文の文法1"
   },
@@ -71,8 +71,8 @@
     "pattern_ruby": "〜たびに",
     "meaning_en": "Every time / whenever X happens, Y always happens as well.",
     "meaning_ja": "そのたびごとに、いつも同じことが起こる。",
-    "connection": "V-辞書形 + たびに ／ N-の + たびに",
-    "section_id": "sec-2",
+    "connection": "V-辞書形 + たびに<br>N-の + たびに",
+    "section_id": "p1-sec-2",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> 〜<ruby>関係<rt>かんけい</rt></ruby>して",
     "category": "Part 1: 文の文法1"
   },
@@ -82,8 +82,8 @@
     "pattern_ruby": "（〜ば）〜ほど・（〜なら）〜ほど・〜ほど",
     "meaning_en": "The more X progresses, the more Y progresses in proportion.",
     "meaning_ja": "一方の程度が進むと、それに伴ってもう一方の程度も進む。",
-    "connection": "V-ば + V-辞書形 + ほど ／ A-ければ + A-い + ほど ／ Na-なら（ば） + Na-な + ほど ／ N / Na + であるほど ／ V / A / Na / N + ほど（単独形）",
-    "section_id": "sec-2",
+    "connection": "V-ば + V-辞書形 + ほど<br>A-ければ + A-い + ほど<br>Na-なら（ば） + Na-な + ほど<br>N / Na + であるほど<br>V / A / Na / N + ほど（単独形）",
+    "section_id": "p1-sec-2",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> 〜<ruby>関係<rt>かんけい</rt></ruby>して",
     "category": "Part 1: 文の文法1"
   },
@@ -93,8 +93,8 @@
     "pattern_ruby": "〜ついでに",
     "meaning_en": "While doing a primary action, taking the opportunity to do another secondary action alongside it.",
     "meaning_ja": "ある主の行動をするときに、合間を利用して別のことも一緒に行う。",
-    "connection": "V-辞書形 / V-た形 + ついでに ／ N-の + ついでに",
-    "section_id": "sec-2",
+    "connection": "V-辞書形 / V-た形 + ついでに<br>N-の + ついでに",
+    "section_id": "p1-sec-2",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> 〜<ruby>関係<rt>かんけい</rt></ruby>して",
     "category": "Part 1: 文の文法1"
   },
@@ -104,8 +104,8 @@
     "pattern_ruby": "〜くらいだ・〜ぐらいだ・〜くらい…・〜ぐらい…・〜ほどだ・〜ほど…",
     "meaning_en": "Explains an extreme degree of something by using a vivid example or metaphor ('so ... that ...').",
     "meaning_ja": "程度が非常に高いことを、極端な例や比喩を使って説明する。",
-    "connection": "V-辞書形 / V-た形 / V-ない形 + くらい / ほど ／ A-い + くらい / ほど ／ Na-な + くらい / ほど ／ N + くらい / ほど",
-    "section_id": "sec-3",
+    "connection": "V-辞書形 / V-た形 / V-ない形 + くらい / ほど<br>A-い + くらい / ほど<br>Na-な + くらい / ほど<br>N + くらい / ほど",
+    "section_id": "p1-sec-3",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>比<rt>くら</rt></ruby>べれば…・〜がいちばん",
     "category": "Part 1: 文の文法1"
   },
@@ -115,8 +115,8 @@
     "pattern_ruby": "〜くらい…はない・〜ぐらい…はない・〜ほど…はない",
     "meaning_en": "Subjective assertion that nothing equals or surpasses X in quality or intensity ('there is nothing as ... as X').",
     "meaning_ja": "〜が最高である、それ以上のものはないという話者の主観的な強調。",
-    "connection": "N + くらい / ほど + … はない ／ V-るの + くらい / ほど + … はない",
-    "section_id": "sec-3",
+    "connection": "N + くらい / ほど + … はない<br>V-るの + くらい / ほど + … はない",
+    "section_id": "p1-sec-3",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>比<rt>くら</rt></ruby>べれば…・〜がいちばん",
     "category": "Part 1: 文の文法1"
   },
@@ -127,7 +127,7 @@
     "meaning_en": "If the alternative is doing X (which is abhorred), one would rather do Y instead.",
     "meaning_ja": "〜という最悪の事態になるくらいなら、むしろ…のほうがましだ。",
     "connection": "V-辞書形 + くらいなら / ぐらいなら",
-    "section_id": "sec-3",
+    "section_id": "p1-sec-3",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>比<rt>くら</rt></ruby>べれば…・〜がいちばん",
     "category": "Part 1: 文の文法1"
   },
@@ -137,8 +137,8 @@
     "pattern_ruby": "〜に限る",
     "meaning_en": "Asserts strongly that X is by far the best option or choice for a situation.",
     "meaning_ja": "〜が一番良い、ベストであると強く主張する。",
-    "connection": "V-辞書形 / V-ない形 + に限る ／ N + に限る",
-    "section_id": "sec-3",
+    "connection": "V-辞書形 / V-ない形 + に限る<br>N + に限る",
+    "section_id": "p1-sec-3",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>比<rt>くら</rt></ruby>べれば…・〜がいちばん",
     "category": "Part 1: 文の文法1"
   },
@@ -148,8 +148,8 @@
     "pattern_ruby": "〜に対して",
     "meaning_en": "Contrasts two opposing things or facts (whereas X, Y is ...).",
     "meaning_ja": "AとBを対比させて、その違いを際立たせる。",
-    "connection": "N + に対して ／ 普通形（Naな / Naである・Nな / Nである） + のに対して",
-    "section_id": "sec-4",
+    "connection": "N + に対して<br>普通形（Naな / Naである・Nな / Nである） + のに対して",
+    "section_id": "p1-sec-4",
     "section_title": "<ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> 〜とは<ruby>違<rt>ちが</rt></ruby>って",
     "category": "Part 1: 文の文法1"
   },
@@ -159,8 +159,8 @@
     "pattern_ruby": "〜反面",
     "meaning_en": "Presents two contrasting, double-sided aspects of the same subject ('on the one hand..., but on the flip side...').",
     "meaning_ja": "ある事柄の一面を認めた上で、その裏にある別の反対の側面を述べる。",
-    "connection": "動詞・形容詞 普通形 + 反面 ／ Naである / Naな + 反面 ／ Nである + 反面",
-    "section_id": "sec-4",
+    "connection": "動詞・形容詞 普通形 + 反面<br>Naである / Naな + 反面<br>Nである + 反面",
+    "section_id": "p1-sec-4",
     "section_title": "<ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> 〜とは<ruby>違<rt>ちが</rt></ruby>って",
     "category": "Part 1: 文の文法1"
   },
@@ -171,7 +171,7 @@
     "meaning_en": "Contrasts two concurrent aspects or trends existing simultaneously ('while..., at the same time...').",
     "meaning_ja": "一つの事柄に関して、同時に存在する二つの側面を並べて述べる。",
     "connection": "普通形（Naな / Naである・Nである） + 一方（で）",
-    "section_id": "sec-4",
+    "section_id": "p1-sec-4",
     "section_title": "<ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> 〜とは<ruby>違<rt>ちが</rt></ruby>って",
     "category": "Part 1: 文の文法1"
   },
@@ -182,7 +182,7 @@
     "meaning_en": "Suggests that description B is more accurate or fitting than description A ('rather than A, it's more like B').",
     "meaning_ja": "Aという表現よりも、Bという表現のほうが実態に合っている。",
     "connection": "普通形 / 語幹 + というより",
-    "section_id": "sec-4",
+    "section_id": "p1-sec-4",
     "section_title": "<ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> 〜とは<ruby>違<rt>ちが</rt></ruby>って",
     "category": "Part 1: 文の文法1"
   },
@@ -192,8 +192,8 @@
     "pattern_ruby": "〜かわりに",
     "meaning_en": "1: Instead of doing X, doing Y. 2: In exchange / return for X, compensating with Y.",
     "meaning_ja": "1: 〜をしないで別のことをする。2: 〜の代償・見返りとして別のことをする。",
-    "connection": "V-辞書形 + かわりに ／ N-の + かわりに",
-    "section_id": "sec-4",
+    "connection": "V-辞書形 + かわりに<br>N-の + かわりに",
+    "section_id": "p1-sec-4",
     "section_title": "<ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> 〜とは<ruby>違<rt>ちが</rt></ruby>って",
     "category": "Part 1: 文の文法1"
   },
@@ -204,7 +204,7 @@
     "meaning_en": "Expresses a formal cause or reason ('because of...', 'due to...'). Often used in news and formal writing.",
     "meaning_ja": "原因・理由を表す。改まった書き言葉に多い。",
     "connection": "普通形（Naな / Naである・Nの / Nである） + ため（に）",
-    "section_id": "sec-5",
+    "section_id": "p1-sec-5",
     "section_title": "<ruby>第<rt>だい</rt></ruby>5<ruby>課<rt>か</rt></ruby> 〜だから",
     "category": "Part 1: 文の文法1"
   },
@@ -214,8 +214,8 @@
     "pattern_ruby": "〜によって・〜による",
     "meaning_en": "Expresses cause, reason, or means. Modifies nouns in the form '〜による + Noun'.",
     "meaning_ja": "原因・理由・手段を表す。〜による＋名詞の形もある。",
-    "connection": "N + によって ／ N + による + N",
-    "section_id": "sec-5",
+    "connection": "N + によって<br>N + による + N",
+    "section_id": "p1-sec-5",
     "section_title": "<ruby>第<rt>だい</rt></ruby>5<ruby>課<rt>か</rt></ruby> 〜だから",
     "category": "Part 1: 文の文法1"
   },
@@ -225,8 +225,8 @@
     "pattern_ruby": "〜から・〜ことから",
     "meaning_en": "Expresses that a fact serves as the origin, reason for naming, or basis of judgment.",
     "meaning_ja": "〜という事実・根拠に基づいて、判断したり名前がついたりする。",
-    "connection": "普通形（Naな / Naである・Nである） + ことから ／ N + から",
-    "section_id": "sec-5",
+    "connection": "普通形（Naな / Naである・Nである） + ことから<br>N + から",
+    "section_id": "p1-sec-5",
     "section_title": "<ruby>第<rt>だい</rt></ruby>5<ruby>課<rt>か</rt></ruby> 〜だから",
     "category": "Part 1: 文の文法1"
   },
@@ -236,8 +236,8 @@
     "pattern_ruby": "〜おかげだ・〜せいだ",
     "meaning_en": "〜おかげ: expresses gratitude for a positive outcome ('thanks to...'). 〜せい: assigns blame for a negative outcome ('due to the fault of...').",
     "meaning_ja": "おかげ：良い結果をもたらした原因に感謝する。せい：悪い結果をもたらした原因を非難する。",
-    "connection": "普通形（Naな・Nの） + おかげだ / おかげで ／ 普通形（Naな・Nの） + せいだ / せいで",
-    "section_id": "sec-5",
+    "connection": "普通形（Naな・Nの） + おかげだ / おかげで<br>普通形（Naな・Nの） + せいだ / せいで",
+    "section_id": "p1-sec-5",
     "section_title": "<ruby>第<rt>だい</rt></ruby>5<ruby>課<rt>か</rt></ruby> 〜だから",
     "category": "Part 1: 文の文法1"
   },
@@ -248,7 +248,7 @@
     "meaning_en": "States a shared, obvious fact as a given premise to justify an advice, encouragement, or inevitable conclusion.",
     "meaning_ja": "相手も知っている当然の事実を理由にして、主張・催促・助言などを述べる。",
     "connection": "普通形（Naな・Nな） + のだから / んだから",
-    "section_id": "sec-5",
+    "section_id": "p1-sec-5",
     "section_title": "<ruby>第<rt>だい</rt></ruby>5<ruby>課<rt>か</rt></ruby> 〜だから",
     "category": "Part 1: 文の文法1"
   },
@@ -258,8 +258,8 @@
     "pattern_ruby": "〜（の）なら",
     "meaning_en": "Accepts a situation or the interlocutor's statement as a premise to give advice, opinion, or request ('if that's the case, then...').",
     "meaning_ja": "相手の話や状況を前提・条件として受けて、話者の判断・助言・要求を述べる。",
-    "connection": "普通形（Naなら / Naであるなら・Nなら / Nであるなら） + なら ／ 動詞・形容詞 + のなら",
-    "section_id": "sec-6",
+    "connection": "普通形（Naなら / Naであるなら・Nなら / Nであるなら） + なら<br>動詞・形容詞 + のなら",
+    "section_id": "p1-sec-6",
     "section_title": "<ruby>第<rt>だい</rt></ruby>6<ruby>課<rt>か</rt></ruby> もし、…",
     "category": "Part 1: 文の文法1"
   },
@@ -269,8 +269,8 @@
     "pattern_ruby": "〜ては・〜（の）では",
     "meaning_en": "Hypothesizes an undesirable condition or repeated action that leads to bad consequences ('if this keeps happening, it will be trouble').",
     "meaning_ja": "もしそのような状態になったら・していたら、困った結果になる。",
-    "connection": "V-て形 + は ／ A-く + ては ／ Na-で + は ／ N-で + は ／ 普通形 + のでは",
-    "section_id": "sec-6",
+    "connection": "V-て形 + は<br>A-く + ては<br>Na-で + は<br>N-で + は<br>普通形 + のでは",
+    "section_id": "p1-sec-6",
     "section_title": "<ruby>第<rt>だい</rt></ruby>6<ruby>課<rt>か</rt></ruby> もし、…",
     "category": "Part 1: 文の文法1"
   },
@@ -280,8 +280,8 @@
     "pattern_ruby": "〜さえ〜ば・〜さえ〜なら",
     "meaning_en": "Expresses that one sole, minimum condition is all that is required for success ('if only...', 'as long as...').",
     "meaning_ja": "その最低限の条件一つが成り立ちさえすれば、他は問題ない・十分だ。",
-    "connection": "N + さえ + V-ば / A-ければ / Na-なら ／ V-ます語幹 + さえすれば ／ V-て + さえいれば",
-    "section_id": "sec-6",
+    "connection": "N + さえ + V-ば / A-ければ / Na-なら<br>V-ます語幹 + さえすれば<br>V-て + さえいれば",
+    "section_id": "p1-sec-6",
     "section_title": "<ruby>第<rt>だい</rt></ruby>6<ruby>課<rt>か</rt></ruby> もし、…",
     "category": "Part 1: 文の文法1"
   },
@@ -291,8 +291,8 @@
     "pattern_ruby": "〜たとえ〜ても・〜たとえ〜でも",
     "meaning_en": "Even if an extreme hypothetical situation were to occur, the outcome or resolve remains unaltered ('even if...').",
     "meaning_ja": "仮に極端な条件が生じても、結論や決意は変わらない。",
-    "connection": "たとえ + V-て形 + も ／ たとえ + A-く + ても ／ たとえ + Na-で + も ／ たとえ + N-で + も",
-    "section_id": "sec-6",
+    "connection": "たとえ + V-て形 + も<br>たとえ + A-く + ても<br>たとえ + Na-で + も<br>たとえ + N-で + も",
+    "section_id": "p1-sec-6",
     "section_title": "<ruby>第<rt>だい</rt></ruby>6<ruby>課<rt>か</rt></ruby> もし、…",
     "category": "Part 1: 文の文法1"
   },
@@ -302,8 +302,8 @@
     "pattern_ruby": "〜ば…・〜たら…・〜なら…（事実と反対の仮定）",
     "meaning_en": "Expresses counterfactual conditionals indicating regret or relief about an unrealized past situation ('if only X had happened, Y would have...').",
     "meaning_ja": "実際はそうではなかったが、もしそうだったら…（反実仮想・後悔・残念な気持ち）。",
-    "connection": "V-ば / A-ければ / Na・N-なら + よかった（のに） ／ V-たら / A-かったら + よかった（のに）",
-    "section_id": "sec-6",
+    "connection": "V-ば / A-ければ / Na・N-なら + よかった（のに）<br>V-たら / A-かったら + よかった（のに）",
+    "section_id": "p1-sec-6",
     "section_title": "<ruby>第<rt>だい</rt></ruby>6<ruby>課<rt>か</rt></ruby> もし、…",
     "category": "Part 1: 文の文法1"
   },
@@ -314,7 +314,7 @@
     "meaning_en": "I heard that... Used to report information heard from others. Somewhat formal expression.",
     "meaning_ja": "〜だそうだ。ほかの人から聞いたことを言うときに使う。少し改まった言い方。",
     "connection": "普通形 ＋ ということだ・とのことだ",
-    "section_id": "sec-7",
+    "section_id": "p1-sec-7",
     "section_title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> 〜だそうだ",
     "category": "Part 1: 文の文法1"
   },
@@ -325,7 +325,7 @@
     "meaning_en": "It is generally said that... Used when conveying a commonly held opinion or general belief.",
     "meaning_ja": "世の中で多くの人がそのように言っている。",
     "connection": "普通形 ＋ と言われている",
-    "section_id": "sec-7",
+    "section_id": "p1-sec-7",
     "section_title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> 〜だそうだ",
     "category": "Part 1: 文の文法1"
   },
@@ -336,7 +336,7 @@
     "meaning_en": "I heard that... Used to casually pass on information or rumors that the speaker heard but is not completely sure of.",
     "meaning_ja": "〜という話を聞いた。不確かな伝聞を表す。",
     "connection": "普通形 ＋ とか",
-    "section_id": "sec-7",
+    "section_id": "p1-sec-7",
     "section_title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> 〜だそうだ",
     "category": "Part 1: 文の文法1"
   },
@@ -347,7 +347,7 @@
     "meaning_en": "They say that / Casual form of 〜そうだ or 〜と言っていた. Used in everyday conversational speech among close acquaintances.",
     "meaning_ja": "〜と言っていた、〜そうだ。親しい人との会話で使う。",
     "connection": "普通形 ＋ って",
-    "section_id": "sec-7",
+    "section_id": "p1-sec-7",
     "section_title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> 〜だそうだ",
     "category": "Part 1: 文の文法1"
   },
@@ -358,7 +358,7 @@
     "meaning_en": "It is said that... Written, formal expression commonly found in reports, historical descriptions, and news.",
     "meaning_ja": "〜だそうだ。本やニュースなど、文章でよく使われる硬い表現。",
     "connection": "普通形 ＋ という",
-    "section_id": "sec-7",
+    "section_id": "p1-sec-7",
     "section_title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> 〜だそうだ",
     "category": "Part 1: 文の文法1"
   },
@@ -369,7 +369,7 @@
     "meaning_en": "It is impossible that... / There is no way that... Speaker expresses strong certainty in negating something.",
     "meaning_ja": "絶対に〜ない。話者が強い確信を持って否定する。",
     "connection": "普通形（ナ形だ-な・名だ-の） ＋ はずがない・わけがない",
-    "section_id": "sec-8",
+    "section_id": "p1-sec-8",
     "section_title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> <ruby>絶対<rt>ぜったい</rt></ruby>〜ない・<ruby>必<rt>かなら</rt></ruby>ず〜とは<ruby>言<rt>い</rt></ruby>えない",
     "category": "Part 1: 文の文法1"
   },
@@ -380,7 +380,7 @@
     "meaning_en": "It does not necessarily mean that... / Not always. Expresses partial negation, acknowledging exceptions.",
     "meaning_ja": "いつも〜だとは言えない。例外もある（部分否定）。",
     "connection": "普通形（ナ形(だ)・名(だ)） ＋ とは限らない",
-    "section_id": "sec-8",
+    "section_id": "p1-sec-8",
     "section_title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> <ruby>絶対<rt>ぜったい</rt></ruby>〜ない・<ruby>必<rt>かなら</rt></ruby>ず〜とは<ruby>言<rt>い</rt></ruby>えない",
     "category": "Part 1: 文の文法1"
   },
@@ -390,8 +390,8 @@
     "pattern_ruby": "〜わけではない・〜というわけではない・〜のではない",
     "meaning_en": "It is not that... / It does not mean that... Partial negation softening an absolute statement.",
     "meaning_ja": "すべてが〜だというのではない。全面的に肯定するわけではない。",
-    "connection": "普通形（ナ形だ-な・名だ-の／な／である） ＋ わけではない ／ 普通形（ナ形(だ)・名(だ)） ＋ というわけではない ／ 普通形（ナ形だ-な・名だ-な） ＋ のではない",
-    "section_id": "sec-8",
+    "connection": "普通形（ナ形だ-な・名だ-の／な／である） ＋ わけではない<br>普通形（ナ形(だ)・名(だ)） ＋ というわけではない<br>普通形（ナ形だ-な・名だ-な） ＋ のではない",
+    "section_id": "p1-sec-8",
     "section_title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> <ruby>絶対<rt>ぜったい</rt></ruby>〜ない・<ruby>必<rt>かなら</rt></ruby>ず〜とは<ruby>言<rt>い</rt></ruby>えない",
     "category": "Part 1: 文の文法1"
   },
@@ -401,8 +401,8 @@
     "pattern_ruby": "〜ないことはない",
     "meaning_en": "It is not that... cannot / Could potentially... Double negation expressing reluctant or conditional affirmation.",
     "meaning_ja": "少しは〜だ。条件によっては〜できる（二重否定による消極的肯定）。",
-    "connection": "動ない形 ＋ ことはない ／ イ形いくない ＋ ことはない ／ ナ形でない ＋ ことはない",
-    "section_id": "sec-8",
+    "connection": "動ない形 ＋ ことはない<br>イ形いくない ＋ ことはない<br>ナ形でない ＋ ことはない",
+    "section_id": "p1-sec-8",
     "section_title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> <ruby>絶対<rt>ぜったい</rt></ruby>〜ない・<ruby>必<rt>かなら</rt></ruby>ず〜とは<ruby>言<rt>い</rt></ruby>えない",
     "category": "Part 1: 文の文法1"
   },
@@ -413,7 +413,7 @@
     "meaning_en": "It is indeed true that... but... Acknowledges a fact first, then adds a qualification or contrast.",
     "meaning_ja": "たしかに〜だが、しかし…。",
     "connection": "動・形・名の辞書形 ＋ ことは ＋ 同一の動・形・名 ＋ が／けれど",
-    "section_id": "sec-8",
+    "section_id": "p1-sec-8",
     "section_title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> <ruby>絶対<rt>ぜったい</rt></ruby>〜ない・<ruby>必<rt>かなら</rt></ruby>ず〜とは<ruby>言<rt>い</rt></ruby>えない",
     "category": "Part 1: 文の文法1"
   },
@@ -424,7 +424,7 @@
     "meaning_en": "I want (someone) to do... / Would like (someone) to do... Expresses speaker's wish for another person to perform an action. 〜ていただきたい is polite/respectful.",
     "meaning_ja": "相手にその行為をしてほしいという希望を表す。「〜ていただきたい」は敬語表現。",
     "connection": "動て形 / ないで ＋ もらいたい・いただきたい・ほしい",
-    "section_id": "sec-9",
+    "section_id": "p1-sec-9",
     "section_title": "<ruby>第<rt>だい</rt></ruby>9<ruby>課<rt>か</rt></ruby> 〜と<ruby>望<rt>のぞ</rt></ruby>む",
     "category": "Part 1: 文の文法1"
   },
@@ -435,7 +435,7 @@
     "meaning_en": "Please allow me to... / I would like to be permitted to do... Expresses speaker's wish for permission to do something.",
     "meaning_ja": "自分がある行為をすることを許可してほしい、させてもらいたいという希望を表す。",
     "connection": "動使役て形 ＋ もらいたい・いただきたい・ほしい",
-    "section_id": "sec-9",
+    "section_id": "p1-sec-9",
     "section_title": "<ruby>第<rt>だい</rt></ruby>9<ruby>課<rt>か</rt></ruby> 〜と<ruby>望<rt>のぞ</rt></ruby>む",
     "category": "Part 1: 文の文法1"
   },
@@ -445,8 +445,8 @@
     "pattern_ruby": "〜といい・〜ばいい・〜たらいい",
     "meaning_en": "A: I hope that / Wish that (for circumstances beyond one's control). B: It would be good to / You should (giving advice or encouragement).",
     "meaning_ja": "A: （自分ではどうにもならないことについて）そうなることを願う。B: 相手にある行為を勧める・促す。",
-    "connection": "動辞書形 / ない形 ＋ といい・ばいい・たらいい ／ イ形い / ない ＋ といい・ばいい・たらいい ／ ナ形だ / 名だ ＋ といい・ならいい・たらいい",
-    "section_id": "sec-9",
+    "connection": "動辞書形 / ない形 ＋ といい・ばいい・たらいい<br>イ形い / ない ＋ といい・ばいい・たらいい<br>ナ形だ / 名だ ＋ といい・ならいい・たらいい",
+    "section_id": "p1-sec-9",
     "section_title": "<ruby>第<rt>だい</rt></ruby>9<ruby>課<rt>か</rt></ruby> 〜と<ruby>望<rt>のぞ</rt></ruby>む",
     "category": "Part 1: 文の文法1"
   },
@@ -456,8 +456,8 @@
     "pattern_ruby": "命令（しろ）/ 禁止（〜な）",
     "meaning_en": "Imperative (しろ): strongly commands an action. Prohibitive (〜な): strongly forbids an action.",
     "meaning_ja": "命令形：強く指示・命令する。禁止形（動辞書形＋な）：強く禁止する。",
-    "connection": "動詞Ⅰ：動（え段） ／ 動詞Ⅱ：動（ろ） ／ 動詞Ⅲ：する→しろ、来る→来い（例外：くれる→くれ） ／ 禁止：動辞書形 ＋ な",
-    "section_id": "sec-10",
+    "connection": "動詞Ⅰ：動（え段）<br>動詞Ⅱ：動（ろ）<br>動詞Ⅲ：する→しろ、来る→来い（例外：くれる→くれ）<br>禁止：動辞書形 ＋ な",
+    "section_id": "p1-sec-10",
     "section_title": "<ruby>第<rt>だい</rt></ruby>10<ruby>課<rt>か</rt></ruby> 〜したほうがいい・〜なさい",
     "category": "Part 1: 文の文法1"
   },
@@ -468,7 +468,7 @@
     "meaning_en": "Must / Do not... Used in written notices, rules, and formal instructions to command or forbid actions.",
     "meaning_ja": "規則・指示・注意事項などを文書や掲示で伝えるときに使う（〜しなさい／〜してはいけない）。",
     "connection": "動辞書形 / ない形 ＋ こと",
-    "section_id": "sec-10",
+    "section_id": "p1-sec-10",
     "section_title": "<ruby>第<rt>だい</rt></ruby>10<ruby>課<rt>か</rt></ruby> 〜したほうがいい・〜なさい",
     "category": "Part 1: 文の文法1"
   },
@@ -478,8 +478,8 @@
     "pattern_ruby": "〜べきだ・〜べき／〜べきではない",
     "meaning_en": "It is a matter of course to / Should / Should not. Reflects the speaker's judgment or strong opinion. When used in past tense (〜べきだった), expresses regret.",
     "meaning_ja": "〜するのが当然だ・〜したほうがいい／〜してはいけない。話者の主張を言うときに使う。過去形は反省や後悔を表す。",
-    "connection": "動辞書形 ＋ べきだ・べきではない  ＊例外：する→するべきだ・すべきだ ／ 動辞書形 ＋ べき・べきではない ＋ 名",
-    "section_id": "sec-10",
+    "connection": "動辞書形 ＋ べきだ・べきではない  ＊例外：する→するべきだ・すべきだ<br>動辞書形 ＋ べき・べきではない ＋ 名",
+    "section_id": "p1-sec-10",
     "section_title": "<ruby>第<rt>だい</rt></ruby>10<ruby>課<rt>か</rt></ruby> 〜したほうがいい・〜なさい",
     "category": "Part 1: 文の文法1"
   },
@@ -490,7 +490,7 @@
     "meaning_en": "Why don't you...? / How about doing...? Used to give mild advice or suggestions. Can also imply gentle criticism for not doing something.",
     "meaning_ja": "〜するのがいいですよ。助言や忠告の気持ちで相手にある行為を軽く勧めるときに使う。非難の気持ちを表すこともある。",
     "connection": "動たら ＋ どうか",
-    "section_id": "sec-10",
+    "section_id": "p1-sec-10",
     "section_title": "<ruby>第<rt>だい</rt></ruby>10<ruby>課<rt>か</rt></ruby> 〜したほうがいい・〜なさい",
     "category": "Part 1: 文の文法1"
   },
@@ -500,8 +500,8 @@
     "pattern_ruby": "〜ことにする・〜ことにしている",
     "meaning_en": "I have decided to do... / Make it a personal rule to do... 〜ことにした expresses a past decision or on-the-spot resolve; 〜ことにしている expresses a sustained personal habit or principle.",
     "meaning_ja": "〜と決める。「〜ことにした」はその場の決心や決定、「〜ことにしている」は決心した習慣を続けていることを表す。",
-    "connection": "動辞書形 / ている / ない形 ＋ ことにする ／ 動辞書形 / ない形 ＋ ことにしている",
-    "section_id": "sec-11",
+    "connection": "動辞書形 / ている / ない形 ＋ ことにする<br>動辞書形 / ない形 ＋ ことにしている",
+    "section_id": "p1-sec-11",
     "section_title": "<ruby>第<rt>だい</rt></ruby>11<ruby>課<rt>か</rt></ruby> 〜（よ）うと<ruby>思<rt>おも</rt></ruby>う",
     "category": "Part 1: 文の文法1"
   },
@@ -512,7 +512,7 @@
     "meaning_en": "Make an effort to... / Make sure to... Indicates intentional commitment and sustained effort toward a goal or habit.",
     "meaning_ja": "〜する／しないことを心がける。努力を続けていることを表す。",
     "connection": "動辞書形 / ない形 ＋ ようにする・ようにしている",
-    "section_id": "sec-11",
+    "section_id": "p1-sec-11",
     "section_title": "<ruby>第<rt>だい</rt></ruby>11<ruby>課<rt>か</rt></ruby> 〜（よ）うと<ruby>思<rt>おも</rt></ruby>う",
     "category": "Part 1: 文の文法1"
   },
@@ -523,7 +523,7 @@
     "meaning_en": "Be about to do... / Attempt to do... In the negative form (〜ようとしない), expresses total refusal or complete absence of intent by a third person.",
     "meaning_ja": "〜を実現させることを試みる。または、行為の直前であることを表す。否定形（〜ようとしない）は全くその意志がないことを表す。",
     "connection": "動う・よう形 ＋ とする",
-    "section_id": "sec-11",
+    "section_id": "p1-sec-11",
     "section_title": "<ruby>第<rt>だい</rt></ruby>11<ruby>課<rt>か</rt></ruby> 〜（よ）うと<ruby>思<rt>おも</rt></ruby>う",
     "category": "Part 1: 文の文法1"
   },
@@ -534,7 +534,7 @@
     "meaning_en": "Under the impression that... / Believe that one is... In one's mind, one feels or intends it that way, even if objective reality differs. Can also imply criticism.",
     "meaning_ja": "実際はそうではないが、自分では〜の気持ちを持っている。また相手を非難する言い方にもなる。",
     "connection": "普通形（ナ形だ-な・名だ-の） ＋ つもりだ  ＊この使い方は動辞書形・ない形にはつかない",
-    "section_id": "sec-11",
+    "section_id": "p1-sec-11",
     "section_title": "<ruby>第<rt>だい</rt></ruby>11<ruby>課<rt>か</rt></ruby> 〜（よ）うと<ruby>思<rt>おも</rt></ruby>う",
     "category": "Part 1: 文の文法1"
   },
@@ -544,8 +544,8 @@
     "pattern_ruby": "尊敬語（目上の人の行為を言う）",
     "meaning_en": "Respectful language used to refer to the actions of superiors, elevating the person spoken about.",
     "meaning_ja": "目上の人の行為を言うときに使う敬語表現。相手を高める。",
-    "connection": "お ＋ 動（ます形語幹） ＋ になる ／ ご ＋ 名 ＋ になる ／ 動詞受身形（〜れる／〜られる） ／ お ＋ 動（ます形語幹） ＋ ください ／ ご ＋ 名 ＋ ください ／ 特別な尊敬語動詞（いらっしゃる、おいでになる、なさる、ご覧になる、召し上がる、おっしゃる、ご存じ）",
-    "section_id": "sec-12",
+    "connection": "お ＋ 動（ます形語幹） ＋ になる<br>ご ＋ 名 ＋ になる<br>動詞受身形（〜れる／〜られる）<br>お ＋ 動（ます形語幹） ＋ ください<br>ご ＋ 名 ＋ ください<br>特別な尊敬語動詞（いらっしゃる、おいでになる、なさる、ご覧になる、召し上がる、おっしゃる、ご存じ）",
+    "section_id": "p1-sec-12",
     "section_title": "<ruby>第<rt>だい</rt></ruby>12<ruby>課<rt>か</rt></ruby> <ruby>敬語<rt>けいご</rt></ruby>",
     "category": "Part 1: 文の文法1"
   },
@@ -555,8 +555,8 @@
     "pattern_ruby": "謙譲語1（目上の人に関係のある、自分の行為を言う）",
     "meaning_en": "Humble language used to describe the speaker's own behavior when it involves or affects a superior.",
     "meaning_ja": "目上の人に関係のある、自分の行為を言うときに使う表現。自分をへりくだることで相手を高める。",
-    "connection": "お ＋ 動（ます形語幹） ＋ する ／ ご ＋ 名 ＋ する ／ お ＋ 動（ます形語幹） ＋ できる ／ 動て形 ＋ いただく ／ 特別な謙譲語動詞（拝見する、申し上げる、伺う、お目にかかる、さしあげる）",
-    "section_id": "sec-12",
+    "connection": "お ＋ 動（ます形語幹） ＋ する<br>ご ＋ 名 ＋ する<br>お ＋ 動（ます形語幹） ＋ できる<br>動て形 ＋ いただく<br>特別な謙譲語動詞（拝見する、申し上げる、伺う、お目にかかる、さしあげる）",
+    "section_id": "p1-sec-12",
     "section_title": "<ruby>第<rt>だい</rt></ruby>12<ruby>課<rt>か</rt></ruby> <ruby>敬語<rt>けいご</rt></ruby>",
     "category": "Part 1: 文の文法1"
   },
@@ -567,7 +567,7 @@
     "meaning_en": "Courteous verb forms used to politely or modestly describe the speaker's own behavior to the listener.",
     "meaning_ja": "自分の行為を聞き手に対してていねいに言う表現。",
     "connection": "特別な丁重語動詞（参る、おる、いたす、いただく、申す、存じる、存じておる）",
-    "section_id": "sec-12",
+    "section_id": "p1-sec-12",
     "section_title": "<ruby>第<rt>だい</rt></ruby>12<ruby>課<rt>か</rt></ruby> <ruby>敬語<rt>けいご</rt></ruby>",
     "category": "Part 1: 文の文法1"
   },
@@ -577,8 +577,8 @@
     "pattern_ruby": "丁寧語（自分や相手に関係なく、ものごとをていねいに言う）",
     "meaning_en": "Polite language used to say things politely, without consideration of hierarchy of relationship.",
     "meaning_ja": "自分や相手に関係なく、ものごとをていねいに言う表現。",
-    "connection": "でございます（〜だ） ／ ございます（ある）",
-    "section_id": "sec-12",
+    "connection": "でございます（〜だ）<br>ございます（ある）",
+    "section_id": "p1-sec-12",
     "section_title": "<ruby>第<rt>だい</rt></ruby>12<ruby>課<rt>か</rt></ruby> <ruby>敬語<rt>けいご</rt></ruby>",
     "category": "Part 1: 文の文法1"
   },
@@ -632,7 +632,7 @@
     "pattern_ruby": "〜にする・〜くする vs 〜になる・〜くなる",
     "meaning_en": "suru: intentionally change a state. naru: a state changes on its own or objectively.",
     "meaning_ja": "する：人の意志で状態を変える。なる：自然に・客観的に状態が変わる。",
-    "connection": "N・Na + にする / になる ／ A-く + する / なる",
+    "connection": "N・Na + にする / になる<br>A-く + する / なる",
     "section_id": "sec-2",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>部<rt>ぶ</rt></ruby>まとめ G 「する・なる」の<ruby>整理<rt>せいり</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -665,7 +665,7 @@
     "pattern_ruby": "〜と…た・〜たら…た（発見・きっかけ）",
     "meaning_en": "Upon performing an action, noticed an unexpected situation/fact.",
     "meaning_ja": "ある動作をすることで、予想外の事実に気がついた。",
-    "connection": "V-辞書形 + と …た ／ V-たら …た",
+    "connection": "V-辞書形 + と …た<br>V-たら …た",
     "section_id": "sec-3",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>部<rt>ぶ</rt></ruby>まとめ H 「たら・ば・と・なら」の<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -687,7 +687,7 @@
     "pattern_ruby": "呼応副詞（否定・推量・比喩）",
     "meaning_en": "Adverbs paired with specific end-of-sentence structures.",
     "meaning_ja": "文頭の副詞に応じて文末に決まった形式が来る表現。",
-    "connection": "決して…ない（強い否定） ／ めったに…ない（低頻度） ／ まるで…ようだ（比喩） ／ おそらく…だろう（推量） ／ ぜひ…たい/てください（強い希望・依頼）",
+    "connection": "決して…ない（強い否定）<br>めったに…ない（低頻度）<br>まるで…ようだ（比喩）<br>おそらく…だろう（推量）<br>ぜひ…たい/てください（強い希望・依頼）",
     "section_id": "sec-4",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>部<rt>ぶ</rt></ruby>まとめ I <ruby>後<rt>あと</rt></ruby>に<ruby>決<rt>き</rt></ruby>まった<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>来<rt>く</rt></ruby>る<ruby>副詞<rt>ふくし</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -698,7 +698,7 @@
     "pattern_ruby": "動詞連用形・名詞接続の接尾表現",
     "meaning_en": "Attached to verbs or nouns to express ease, difficulty, excess, tendency, etc.",
     "meaning_ja": "動詞や名詞の後ろに付いて、容易・困難・過度・傾向などを表す。",
-    "connection": "V-ます + やすい / にくい / づらい ／ V-ます + すぎる / かける / きる / だす / 通す ／ N + だらけ / っぽい / らしい / みたいだ",
+    "connection": "V-ます + やすい / にくい / づらい<br>V-ます + すぎる / かける / きる / だす / 通す<br>N + だらけ / っぽい / らしい / みたいだ",
     "section_id": "sec-5",
     "section_title": "<ruby>第<rt>だい</rt></ruby>1<ruby>部<rt>ぶ</rt></ruby>まとめ J <ruby>動詞<rt>どうし</rt></ruby>や<ruby>名詞<rt>めいし</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>広<rt>ひろ</rt></ruby>げる<ruby>文法形式<rt>ぶんぽうけいしき</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -709,7 +709,7 @@
     "pattern_ruby": "引用の「〜と / 〜ように」",
     "meaning_en": "Assembling sentences by quoting statements, thoughts, or indirect requests.",
     "meaning_ja": "発言や思考内容を引用して文を組み立てる。",
-    "connection": "普通形 + と（言う/思う/聞く等） ／ V-辞書形/V-ない形 + ように（言う/頼む等）",
+    "connection": "普通形 + と（言う/思う/聞く等）<br>V-辞書形/V-ない形 + ように（言う/頼む等）",
     "section_id": "sec-7",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> <ruby>文<rt>ぶん</rt></ruby>の<ruby>組<rt>く</rt></ruby>みたて-1 <ruby>引用<rt>いんよう</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -731,7 +731,7 @@
     "pattern_ruby": "内容・定義・例示の「〜という / 〜といった」",
     "meaning_en": "Links clauses appositively to nouns to explain content, or introduces exemplary lists.",
     "meaning_ja": "先行する内容を名詞に同格で結びつけたり、具体例を列挙したりする。",
-    "connection": "文 + という + N ／ N1、N2 + といった + N",
+    "connection": "文 + という + N<br>N1、N2 + といった + N",
     "section_id": "sec-9",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>文<rt>ぶん</rt></ruby>の<ruby>組<rt>く</rt></ruby>みたて-3 「〜という・〜といった」",
     "category": "Part 2: 文の文法2"
@@ -742,7 +742,7 @@
     "pattern_ruby": "文法形式による定型構文",
     "meaning_en": "Sentence constructions that rely on fixed correlative pairs or formulaic grammar patterns.",
     "meaning_ja": "呼応するペアや決まった助詞・文型が組み合わさって文を作る。",
-    "connection": "〜から〜にかけて ／ 〜はもちろん〜も ／ 〜として ／ 〜ば〜ほど ／ 〜さえ〜ば",
+    "connection": "〜から〜にかけて<br>〜はもちろん〜も<br>〜として<br>〜ば〜ほど<br>〜さえ〜ば",
     "section_id": "sec-10",
     "section_title": "<ruby>第<rt>だい</rt></ruby>2<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> <ruby>文<rt>ぶん</rt></ruby>の<ruby>組<rt>く</rt></ruby>みたて-4 <ruby>決<rt>き</rt></ruby>まった<ruby>形<rt>かたち</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -764,7 +764,7 @@
     "pattern_ruby": "〜には／〜のに（は） ＋ …が必要だ／…が便利だ／…なければならない／…がかかる",
     "meaning_en": "States a purpose or requirement, followed by necessary conditions or costs.",
     "meaning_ja": "目的や用途を取り立てて、それに必要なこと・条件を述べる。",
-    "connection": "V-辞書形 + には / のに（は） ／ N + には",
+    "connection": "V-辞書形 + には / のに（は）<br>N + には",
     "section_id": "sec-12",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> <ruby>文<rt>ぶん</rt></ruby>の<ruby>始<rt>はじ</rt></ruby>めと<ruby>終<rt>お</rt></ruby>わりの<ruby>対応<rt>たいおう</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -808,7 +808,7 @@
     "pattern_ruby": "時間を表す言葉と動詞の時制（過去形・現在形・〜ている）",
     "meaning_en": "Matches verb tense with temporal adverbs and time indicators.",
     "meaning_ja": "時間を表す副詞や連用句に合わせて動詞の時制を決定する。",
-    "connection": "間もなく / もうすぐ / 来年など ＋ 現在形（辞書形） ／ 今 / 現在など ＋ 〜ている ／ 去年 / 先週 / 4月1日になど ＋ 過去形（〜た）",
+    "connection": "間もなく / もうすぐ / 来年など ＋ 現在形（辞書形）<br>今 / 現在など ＋ 〜ている<br>去年 / 先週 / 4月1日になど ＋ 過去形（〜た）",
     "section_id": "sec-13",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> <ruby>時制<rt>じせい</rt></ruby>・〜ている",
     "category": "Part 2: 文の文法2"
@@ -830,7 +830,7 @@
     "pattern_ruby": "「〜とき」や名詞修飾節における前後関係と時制",
     "meaning_en": "Determines whether relative or 'toki' clauses take non-past or past forms depending on relative event order.",
     "meaning_ja": "主節の動作より先に起こるか後に起こるかによって、従属節の動詞の形（辞書形か〜た形か）を決める。",
-    "connection": "V-る ＋ とき（主節の動作より後に起きる場合） ／ V-た ＋ とき（主節の動作より先に起きた場合）",
+    "connection": "V-る ＋ とき（主節の動作より後に起きる場合）<br>V-た ＋ とき（主節の動作より先に起きた場合）",
     "section_id": "sec-13",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> <ruby>時制<rt>じせい</rt></ruby>・〜ている",
     "category": "Part 2: 文の文法2"
@@ -841,7 +841,7 @@
     "pattern_ruby": "他動詞の文（変化を起こす動作に注目／人や物への働きかけ）",
     "meaning_en": "Expresses an action causing a change to an object, or impelling other people or things.",
     "meaning_ja": "主体が対象に対して変化を起こす動作、または人や物へ働きかける動作を表す。",
-    "connection": "N（人/物）を ＋ 他動詞 ／ N（人）に ＋ N（物）を ＋ 他動詞",
+    "connection": "N（人/物）を ＋ 他動詞<br>N（人）に ＋ N（物）を ＋ 他動詞",
     "section_id": "sec-15",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさない<ruby>手段<rt>しゅだん</rt></ruby>-1 <ruby>他動詞<rt>たどうし</rt></ruby>・<ruby>自動詞<rt>じどうし</rt></ruby>",
     "category": "Part 2: 文の文法2"
@@ -863,7 +863,7 @@
     "pattern_ruby": "視点を固定する手段（受身文・使役文への転換）",
     "meaning_en": "Uses passive or causative voice to preserve speaker perspective when no intransitive/transitive counterpart exists.",
     "meaning_ja": "対応する自動詞や他動詞がない場合、または話者の視点を変えずに文を続けるために受身文や使役文を用いる。",
-    "connection": "他動詞受身: タクシーが止められた / 子どもは先生にしかられた ／ 自動詞使役: 先生は子どもたちをいすに座らせた",
+    "connection": "他動詞受身: タクシーが止められた / 子どもは先生にしかられた<br>自動詞使役: 先生は子どもたちをいすに座らせた",
     "section_id": "sec-15",
     "section_title": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby> <ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさない<ruby>手段<rt>しゅだん</rt></ruby>-1 <ruby>他動詞<rt>たどうし</rt></ruby>・<ruby>自動詞<rt>じどうし</rt></ruby>",
     "category": "Part 2: 文の文法2"
