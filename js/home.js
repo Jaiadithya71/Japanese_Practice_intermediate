@@ -55,9 +55,13 @@ export function updatePillarCards() {
   const cardR = document.getElementById('pillar-reading-count');
   const cardK = document.getElementById('pillar-kanji-count');
 
-  if (cardV) cardV.textContent = `${vocabCount} words (29 units)`;
-  if (cardR) cardR.textContent = `${readingCount} lessons (88 Qs)`;
-  if (cardK) cardK.textContent = `654 Kanji (443 N3 + 300 Review)`;
+  if (cardV) cardV.textContent = `${vocabCount} words`;
+  if (cardR) cardR.textContent = `${readingCount} lessons`;
+  const cardG = document.getElementById('pillar-grammar-count');
+  const subK = document.getElementById('pillar-kanji-sub');
+  if (cardK) cardK.textContent = `${kanjiCount} Kanji`;
+  if (subK) subK.textContent = 'N3 target kanji + exercises';
+  if (cardG) cardG.textContent = `${(state.grammarDB.index || []).length} patterns`;
 }
 
 export function setHomeGroup(group) {
