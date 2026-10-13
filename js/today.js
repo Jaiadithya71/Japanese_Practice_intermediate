@@ -1,5 +1,6 @@
 /* Today card: daily study flow for the Hub */
 import { state } from './state.js';
+import './pull-refresh.js';
 import { getDueItemsCount } from './srs.js';
 
 const seenIt = s => !!s && (s.reps > 0 || s.correct > 0 || s.incorrect > 0);
@@ -51,8 +52,7 @@ export function renderToday() {
   }
   const dueV = getDueItemsCount('vocab');
   const dueR = getDueItemsCount('reading');
-  const dueK = getDueItemsCount('kanji');
-  const due = dueV + dueR + dueK;
+  const due = dueV + dueR;
   const unit = nextUnit();
   const les = nextLesson();
   const pct = vocabTotal ? Math.round(vocabSeen / vocabTotal * 100) : 0;
@@ -65,7 +65,7 @@ export function renderToday() {
     <button class="today-main btn btn-primary" onclick="startDueReview('all')" ${due ? '' : 'disabled'}>
       <i class="fa-solid fa-play"></i> ${due ? `Start review (${due} due)` : 'Nothing due right now'}
     </button>
-    <div class="today-split">${dueV} vocab &middot; ${dueR} reading &middot; ${dueK} kanji</div>
+    <div class="today-split">${dueV} vocab &middot; ${dueR} reading</div>
     <div class="today-steps">
       ${unit ? `<button class="today-step" onclick="state_pickUnit('${unit.id}')"><span class="ts-n">2</span><span class="ts-t">Learn new words<small>${unitLabel(unit.id)}: ${unit.fresh} of ${unit.total} unseen</small></span><i class="fa-solid fa-chevron-right"></i></button>` : ''}
       ${les ? `<button class="today-step" onclick="openReadingLesson('${les.id}')"><span class="ts-n">3</span><span class="ts-t">Read one lesson<small>${String(les.title).replace(/</g, '&lt;')}</small></span><i class="fa-solid fa-chevron-right"></i></button>` : ''}
