@@ -1,0 +1,3218 @@
+{
+  "metadata": {
+    "part": 3,
+    "title": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby> <ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>",
+    "title_en": "Part 3: Text Grammar (Passage-level Grammar & Cloze Reading)",
+    "description": "Comprehensive dataset for Shin Kanzen Master JLPT N3 Grammar Part 3 (文章の文法). Covers sentence structure, cohesion, tense/aspect, viewpoint markers, demonstratives, topic/subject particles, conjunctions, style consistency, plus 10 complete cloze reading comprehension passages with questions, answers, and explanations.",
+    "source_pages": "P116 ~ P145 (Images 118 ~ 147)",
+    "total_lessons": 10,
+    "total_review_sections": 5,
+    "total_passages": 10,
+    "total_cloze_questions": 50
+  },
+  "sections": [
+    {
+      "section_number": 1,
+      "title": "<ruby>第<rt>だい</rt></ruby>1<ruby>課<rt>か</rt></ruby> <ruby>文<rt>ぶん</rt></ruby>の<ruby>始<rt>はじ</rt></ruby>めと<ruby>終<rt>お</rt></ruby>わりの<ruby>対応<rt>たいおう</rt></ruby>",
+      "title_en": "Lesson 1: Correspondence Between the Beginning and End of a Sentence",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>にはまとまりが<ruby>必要<rt>ひつよう</rt></ruby>です。その<ruby>基本<rt>きほん</rt></ruby>は、<ruby>一<rt>ひと</rt></ruby>つ<ruby>一<rt>ひと</rt></ruby>つの<ruby>文<rt>ぶん</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>めと<ruby>終<rt>お</rt></ruby>わりが<ruby>正<rt>ただ</rt></ruby>しく<ruby>対応<rt>たいおう</rt></ruby>していることです。",
+      "theme_en": "Paragraphs and statements need to be cohesive. The basic means to achieve this is to ensure that beginning and final grammatical patterns correspond for each sentence.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>始<rt>はじ</rt></ruby>めと<ruby>終<rt>お</rt></ruby>わりの<ruby>対応<rt>たいおう</rt></ruby>にはいくつかの<ruby>型<rt>かた</rt></ruby>があります。",
+          "title_en": "There are a number of patterns for ensuring the beginning and end of a sentence correspond.",
+          "patterns": [
+            {
+              "pattern": "〜には　＋…がいる・…がある・…が<ruby>多<rt>おお</rt></ruby>い",
+              "examples": [
+                {
+                  "japanese": "<ruby>世界<rt>せかい</rt></ruby>にはいろいろな<ruby>文化<rt>ぶんか</rt></ruby>を<ruby>持<rt>も</rt></ruby>った<ruby>国<rt>くに</rt></ruby>がある。",
+                  "english": "In the world, there are countries with various cultures."
+                },
+                {
+                  "japanese": "この<ruby>計画<rt>けいかく</rt></ruby>には<ruby>問題点<rt>もんだいてん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。",
+                  "english": "There are many problematic points in this plan."
+                }
+              ]
+            },
+            {
+              "pattern": "〜には・〜のに（は）　＋…が<ruby>必要<rt>ひつよう</rt></ruby>だ・…が<ruby>便利<rt>べんり</rt></ruby>だ・…なければならない・…がかかる",
+              "reference": "第1部 C",
+              "examples": [
+                {
+                  "japanese": "この<ruby>仕事<rt>しごと</rt></ruby>をするには<ruby>車<rt>くるま</rt></ruby>の<ruby>運転<rt>うんてん</rt></ruby>ができなければならない。",
+                  "english": "In order to do this job, one must be able to drive a car."
+                },
+                {
+                  "japanese": "<ruby>外国<rt>がいこく</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くのにはパスポートが<ruby>必要<rt>ひつよう</rt></ruby>だ。",
+                  "english": "A passport is necessary to travel abroad."
+                }
+              ]
+            },
+            {
+              "pattern": "〜のは　＋…だ・…からだ・…ためだ",
+              "reference": "第1部 C",
+              "examples": [
+                {
+                  "japanese": "わたしが<ruby>祖母<rt>そば</rt></ruby>について<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>せるのは、<ruby>優<rt>やさ</rt></ruby>しい<ruby>笑顔<rt>えがお</rt></ruby>だけだ。",
+                  "english": "What I can remember about my grandmother is only her gentle smile."
+                },
+                {
+                  "japanese": "<ruby>昨夜<rt>さくや</rt></ruby><ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>れなかったのは、<ruby>急<rt>いそ</rt></ruby>ぎの<ruby>仕事<rt>しごと</rt></ruby>が<ruby>終<rt>お</rt></ruby>わらなかったからです。",
+                  "english": "The reason I could not go home last night was because urgent work did not finish."
+                }
+              ]
+            },
+            {
+              "pattern": "どうして／なぜ〜かというと　＋…からだ",
+              "reference": "第2部 1課・4",
+              "examples": [
+                {
+                  "japanese": "どうしてこの<ruby>植物<rt>しょくぶつ</rt></ruby>にあまり<ruby>水<rt>みず</rt></ruby>をやらないかというと、その<ruby>方<rt>ほう</rt></ruby>がきれいに<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>くからです。",
+                  "english": "If you ask why I don't give much water to this plant, it's because doing so makes prettier flowers bloom."
+                },
+                {
+                  "japanese": "なぜこの<ruby>仕事<rt>しごと</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んだかというと、<ruby>子<rt>こ</rt></ruby>どものときから<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きだったからだ。",
+                  "english": "If you ask why I chose this job, it's because I've loved animals since childhood."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "point_number": 2,
+          "title": "<ruby>長<rt>なが</rt></ruby>い<ruby>文<rt>ぶん</rt></ruby>では<ruby>助詞<rt>じょし</rt></ruby>と、それに<ruby>対応<rt>たいおう</rt></ruby>する<ruby>動詞<rt>どうし</rt></ruby>が<ruby>離<rt>はな</rt></ruby>れていることがあります。<ruby>受身文<rt>うけみぶん</rt></ruby>や<ruby>使役文<rt>しえきぶん</rt></ruby>などでは<ruby>助詞<rt>じょし</rt></ruby>と<ruby>動詞<rt>どうし</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>えると、<ruby>言<rt>い</rt></ruby>いたいことが<ruby>正<rt>ただ</rt></ruby>しく<ruby>伝<rt>つた</rt></ruby>えられないことがあるので<ruby>特<rt>とく</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>しましょう。",
+          "title_en": "In longer sentences, the particle and the verb that goes with it can be far apart. Pay particular attention to passive and causative sentences, ensuring correct correspondence between particle and verb.",
+          "reference": "第3部 5課",
+          "examples": [
+            {
+              "japanese": "あしたリーさんに、だれか<ruby>中国料理<rt>ちゅうごくりょうり</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてくれる<ruby>人<rt>ひと</rt></ruby>を<ruby>紹介<rt>しょうかい</rt></ruby>してもらおう。",
+              "english": "Tomorrow I will ask Mr. Lee to introduce someone who will teach me Chinese cooking."
+            },
+            {
+              "japanese": "<ruby>母親<rt>ははおや</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どもたちに、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>を<ruby>毎週<rt>まいしゅう</rt></ruby>1<ruby>回<rt>かい</rt></ruby>きれいに<ruby>片付<rt>かたづ</rt></ruby>けさせた。",
+              "english": "The mother made her children clean their rooms thoroughly once a week."
+            },
+            {
+              "japanese": "わたしは<ruby>先生<rt>せんせい</rt></ruby>に、その<ruby>文<rt>ぶん</rt></ruby>をすらすら<ruby>読<rt>よ</rt></ruby>めるようになるまで<ruby>何度<rt>なんど</rt></ruby>も<ruby>読<rt>よ</rt></ruby>まされた。",
+              "english": "I was made by the teacher to read that sentence over and over until I could read it fluently."
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30101,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>今<rt>いま</rt></ruby>、<ruby>困<rt>こま</rt></ruby>っているのは、＿＿＿。",
+          "options": [
+            "a　<ruby>お金<rt>かね</rt></ruby>のことだ。",
+            "b　<ruby>お金<rt>かね</rt></ruby>が<ruby>足<rt>た</rt></ruby>りない。"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「〜のは…だ」の文型。「困っているのは、お金のことだ」と名詞で受ける。",
+          "explanation_en": "Matches the pattern '〜のは…だ'. Must conclude with a noun predicate ('お金のことだ')."
+        },
+        {
+          "question_id": 30102,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>初<rt>はじ</rt></ruby>めて<ruby>飛行機<rt>ひこうき</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ったのは、20<ruby>年前<rt>ねんまえ</rt></ruby>に＿＿＿。",
+          "options": [
+            "a　<ruby>両親<rt>りょうしん</rt></ruby>とアメリカへ<ruby>行<rt>い</rt></ruby>った。",
+            "b　<ruby>両親<rt>りょうしん</rt></ruby>とアメリカへ<ruby>行<rt>い</rt></ruby>ったときだ。"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「〜のは…ときだ」の対応。「〜たときだ」が正しい結び。",
+          "explanation_en": "Corresponds to '〜のは…ときだ'. The predicate must describe the time ('〜たときだ')."
+        },
+        {
+          "question_id": 30103,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>今朝<rt>けさはや</rt></ruby><ruby>早<rt>はや</rt></ruby>く＿＿＿、<ruby>昨夜<rt>さくや</rt></ruby>お<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>みすぎたからだ。",
+          "options": [
+            "a　<ruby>起<rt>お</rt></ruby>きられなくて、",
+            "b　<ruby>起<rt>お</rt></ruby>きられなかったのは、"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "文末が「〜からだ」（理由）なので、文頭は「〜のは…からだ」の形をとる。",
+          "explanation_en": "Because the sentence ends with '〜からだ' (reason), the beginning must correspond with '〜のは'."
+        },
+        {
+          "question_id": 30104,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "どうしてこの<ruby>計画<rt>けいかく</rt></ruby>が<ruby>中止<rt>ちゅうし</rt></ruby>になったかというと、＿＿＿。",
+          "options": [
+            "a　<ruby>予算<rt>よさん</rt></ruby>が<ruby>足<rt>た</rt></ruby>りません。",
+            "b　<ruby>予算<rt>よさん</rt></ruby>が<ruby>足<rt>た</rt></ruby>りないからです。"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「どうして〜かというと…からだ」の定型呼応。",
+          "explanation_en": "'どうして〜かというと' corresponds with '〜からだ' at the end."
+        },
+        {
+          "question_id": 30105,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "この<ruby>地方<rt>ちほう</rt></ruby>には<ruby>昔<rt>むかし</rt></ruby>から<ruby>続<rt>つづ</rt></ruby>いている＿＿＿。",
+          "options": [
+            "a　<ruby>伝統的<rt>でんとうてき</rt></ruby>な<ruby>行事<rt>ぎょうじ</rt></ruby>がある。",
+            "b　<ruby>伝統的<rt>でんとうてき</rt></ruby>な<ruby>行事<rt>ぎょうじ</rt></ruby>を<ruby>見<rt>み</rt></ruby>ることができる。"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「この地方には…がある」の対応。「〜には」に対して「〜がある」で受ける。",
+          "explanation_en": "'この地方には' pairs with '…がある' to indicate existence in this region."
+        },
+        {
+          "question_id": 30106,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>山<rt>やま</rt></ruby>の<ruby>頂上<rt>ちょうじょう</rt></ruby>まで<ruby>行<rt>い</rt></ruby>くには、ここからさらに2<ruby>時間<rt>じかん</rt></ruby>ぐらい＿＿＿。",
+          "options": [
+            "a　<ruby>登<rt>のぼ</rt></ruby>っていこう。",
+            "b　<ruby>登<rt>のぼ</rt></ruby>らなければならない。"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「〜には…なければならない／かかる」の対応。目的達成の必要条件を表す。",
+          "explanation_en": "'〜には' pairs with '…なければならない' to state a necessary condition for reaching the destination."
+        },
+        {
+          "question_id": 30107,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "つよしは冗談を言っていつもみんなを＿＿＿。",
+          "options": [
+            "a　<ruby>笑<rt>わら</rt></ruby>わせるから、クラスの<ruby>人気者<rt>にんきもの</rt></ruby>だ。",
+            "b　<ruby>笑<rt>わら</rt></ruby>われるのは、なんだかわいそうだ。"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「つよしは…みんなを［笑わせる］」と使役が呼応する（助詞「を」に対応）。",
+          "explanation_en": "Takes 'みんなを笑わせる' (causative) corresponding to particle 'を'."
+        },
+        {
+          "question_id": 30108,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>林<rt>はやし</rt></ruby>さんはピアノが<ruby>好<rt>す</rt></ruby>きで、<ruby>子<rt>こ</rt></ruby>どもにも<ruby>小<rt>ちい</rt></ruby>さいときからずっと＿＿＿。",
+          "options": [
+            "a　<ruby>習<rt>なら</rt></ruby>っていた。",
+            "b　<ruby>習<rt>なら</rt></ruby>わせていた。"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「子どもにも…習わせていた」（使役）。「〜に…させる」の助詞と動詞の対応。",
+          "explanation_en": "'子どもにも…習わせていた' (causative) matches particle 'に'."
+        },
+        {
+          "question_id": 30109,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "この<ruby>学校<rt>がっこう</rt></ruby>ではバイクで<ruby>通学<rt>つうがく</rt></ruby>することを＿＿＿。",
+          "options": [
+            "a　10<ruby>年前<rt>ねんまえ</rt></ruby>から<ruby>校則<rt>こうそく</rt></ruby>で<ruby>禁止<rt>きんし</rt></ruby>している。",
+            "b　<ruby>生徒会<rt>せいとかい</rt></ruby>で<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>った<ruby>結果<rt>けっか</rt></ruby>、<ruby>禁止<rt>きんし</rt></ruby>された。"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「通学することを…禁止している」（他動詞・能動）。「を」と呼応するのは他動詞句。",
+          "explanation_en": "'…通学することを禁止している' (active transitive verb) corresponds to particle 'を'."
+        },
+        {
+          "question_id": 30110,
+          "category": "第3部 1課 練習",
+          "question_type": "binary_choice",
+          "prompt": "わたしは<ruby>母<rt>はは</rt></ruby>に、<ruby>寒<rt>さむ</rt></ruby>い<ruby>朝<rt>あさ</rt></ruby>でも<ruby>向<rt>む</rt></ruby>こうの<ruby>角<rt>かど</rt></ruby>の<ruby>所<rt>ところ</rt></ruby>までごみを<ruby>出<rt>だ</rt></ruby>しに＿＿＿。",
+          "options": [
+            "a　<ruby>行<rt>い</rt></ruby>かされる。",
+            "b　<ruby>行<rt>い</rt></ruby>くことになる。"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「わたしは母に…行かされる」（使役受身）。「〜は…に〜させられる」の呼応。",
+          "explanation_en": "'わたしは母に…行かされる' (causative-passive) corresponds to '〜は…に'."
+        }
+      ]
+    },
+    {
+      "section_number": 2,
+      "title": "<ruby>第<rt>だい</rt></ruby>2<ruby>課<rt>か</rt></ruby> <ruby>時制<rt>じせい</rt></ruby>・〜ている",
+      "title_en": "Lesson 2: Tense & '~te iru'",
+      "theme": "まとまりのある<ruby>文章<rt>ぶんしょう</rt></ruby>にするためには、できごとの<ruby>時間的<rt>じかんてき</rt></ruby><ruby>前後関係<rt>ぜんごかんけい</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>して<ruby>文<rt>ぶん</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けなければなりません。また、ある<ruby>時点<rt>じてん</rt></ruby>で<ruby>起<rt>お</rt></ruby>こったことか、<ruby>続<rt>つづ</rt></ruby>いている<ruby>状態<rt>じょうたい</rt></ruby>かを<ruby>確<rt>たし</rt></ruby>かめて、「〜ている」を<ruby>正<rt>ただ</rt></ruby>しく<ruby>使<rt>つか</rt></ruby>うことが<ruby>大切<rt>たいせつ</rt></ruby>です。",
+      "theme_en": "To make a cohesive statement, you have to pay attention to the timing of actions and events of preceding and following sentences. In addition, it is important to correctly use the ~te iru form for things that happened at a certain point in time, or are ongoing.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>言葉<rt>ことば</rt></ruby>と<ruby>動詞<rt>どうし</rt></ruby>の<ruby>形<rt>かたち</rt></ruby>とを<ruby>合<rt>あ</rt></ruby>わせます。",
+          "title_en": "Words that express time and verb forms must agree.",
+          "examples": [
+            {
+              "japanese": "・まもなく／もうすぐ／やがて／<ruby>来年<rt>らいねん</rt></ruby>など　＋この<ruby>子<rt>こ</rt></ruby>は5<ruby>歳<rt>さい</rt></ruby>になる。（<ruby>現在形<rt>げんざいけい</rt></ruby>）",
+              "english": "Soon / shortly / next year, etc. + This child will turn 5 years old. (Present/non-past form)"
+            },
+            {
+              "japanese": "・<ruby>今<rt>いま</rt></ruby>／<ruby>現在<rt>げんざい</rt></ruby>など　＋<ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っている。（〜ている）",
+              "english": "Now / currently, etc. + Snow is falling. (~te iru)"
+            },
+            {
+              "japanese": "・<ruby>去年<rt>きょねん</rt></ruby>／<ruby>先週<rt>せんしゅう</rt></ruby>／4<ruby>月<rt>がつ</rt></ruby>1<ruby>日<rt>ついたち</rt></ruby>になど　＋わたしは<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>た。（<ruby>過去形<rt>かこけい</rt></ruby>）",
+              "english": "Last year / last week / on April 1st, etc. + I came to Japan. (Past form)"
+            }
+          ]
+        },
+        {
+          "point_number": 2,
+          "title": "「〜ている」の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>",
+          "title_en": "Usage of '~te iru'",
+          "usage_table": [
+            {
+              "meaning": "<ruby>進行中<rt>しんこうちゅう</rt></ruby>の<ruby>動作<rt>どうさ</rt></ruby>",
+              "meaning_en": "Actions in progress",
+              "example": "わたしはそのとき<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>準備<rt>じゅんび</rt></ruby>をしていた。"
+            },
+            {
+              "meaning": "<ruby>習慣<rt>しゅうかん</rt></ruby>",
+              "meaning_en": "Custom / habitual action",
+              "example": "<ruby>弟<rt>おとうと</rt></ruby>は<ruby>毎日<rt>まいにち</rt></ruby>サッカーの<ruby>練習<rt>れんしゅう</rt></ruby>に<ruby>行<rt>い</rt></ruby>っている。"
+            },
+            {
+              "meaning": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>残<rt>のこ</rt></ruby>っている<ruby>状態<rt>じょうたい</rt></ruby>",
+              "meaning_en": "State resulting from an action continues",
+              "example": "<ruby>駅<rt>えき</rt></ruby>のホームに<ruby>財布<rt>さいふ</rt></ruby>が<ruby>落<rt>お</rt></ruby>ちていた。／<ruby>町田<rt>まちだ</rt></ruby>さんはめがねをかけている。"
+            },
+            {
+              "meaning": "<ruby>形<rt>かたち</rt></ruby>・<ruby>様子<rt>ようす</rt></ruby>",
+              "meaning_en": "Form and appearance",
+              "example": "この<ruby>道<rt>みち</rt></ruby>は<ruby>海<rt>うみ</rt></ruby>に<ruby>続<rt>つづ</rt></ruby>いている。／<ruby>弟<rt>おとうと</rt></ruby>とぼくはあまり<ruby>似<rt>に</rt></ruby>ていない。"
+            },
+            {
+              "meaning": "<ruby>完了<rt>かんりょう</rt></ruby>・<ruby>未完了<rt>みかんりょう</rt></ruby>",
+              "meaning_en": "Expresses completion or incompleteness",
+              "example": "10<ruby>年後<rt>ねんご</rt></ruby>、<ruby>彼女<rt>かのじょ</rt></ruby>も<ruby>母親<rt>ははおや</rt></ruby>になっているだろうか。／9<ruby>時<rt>じ</rt></ruby>に<ruby>会場<rt>かいじょう</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いた。もうみんな<ruby>来<rt>き</rt></ruby>ていた。／この<ruby>子<rt>こ</rt></ruby>はまだ5<ruby>歳<rt>さい</rt></ruby>になっていません。"
+            }
+          ]
+        },
+        {
+          "point_number": 3,
+          "title": "「〜とき」の<ruby>前<rt>まえ</rt></ruby>の<ruby>動詞<rt>どうし</rt></ruby>や、<ruby>名詞<rt>めいし</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>する<ruby>文<rt>ぶん</rt></ruby>の<ruby>動詞<rt>どうし</rt></ruby>の<ruby>時制<rt>じせい</rt></ruby>は、<ruby>文全体<rt>ぶんぜんたい</rt></ruby>の<ruby>最後<rt>さいご</rt></ruby>の<ruby>動詞<rt>どうし</rt></ruby>のできごとより<ruby>先<rt>さき</rt></ruby>に<ruby>起<rt>お</rt></ruby>こることか、<ruby>後<rt>あと</rt></ruby>に<ruby>起<rt>お</rt></ruby>こることかを<ruby>考<rt>かんが</rt></ruby>えて<ruby>決<rt>き</rt></ruby>めます。",
+          "title_en": "The tense of the verb coming before とき, and of the verb that modifies the noun, depends on whether the actions happen before or after the event described by the verb at the end of the sentence.",
+          "examples": [
+            {
+              "japanese": "ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたとき、「ごちそうさま」と<ruby>言<rt>い</rt></ruby>います。（<ruby>食<rt>た</rt></ruby>べる→<ruby>言<rt>い</rt></ruby>う）",
+              "english": "When we have finished eating, we say 'Gochisousama'. (eat -> say)"
+            },
+            {
+              "japanese": "ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるとき、「いただきます」と<ruby>言<rt>い</rt></ruby>います。（<ruby>言<rt>い</rt></ruby>う→<ruby>食<rt>た</rt></ruby>べる）",
+              "english": "When we are about to eat, we say 'Itadakimasu'. (say -> eat)"
+            },
+            {
+              "japanese": "いつもいちばん<ruby>早<rt>はや</rt></ruby>く<ruby>来<rt>き</rt></ruby>た<ruby>人<rt>ひと</rt></ruby>がエアコンをつけます。（<ruby>来<rt>く</rt></ruby>る→つける）",
+              "english": "The person who arrived first always turns on the air conditioner."
+            },
+            {
+              "japanese": "<ruby>新幹線<rt>しんかんせん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>飲<rt>の</rt></ruby>むお<ruby>茶<rt>ちゃ</rt></ruby>を<ruby>駅<rt>えき</rt></ruby>の<ruby>売店<rt>ばいてん</rt></ruby>で<ruby>買<rt>か</rt></ruby>った。（<ruby>買<rt>か</rt></ruby>う→<ruby>飲<rt>の</rt></ruby>む）",
+              "english": "I bought tea at the station kiosk to drink inside the Shinkansen."
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30201,
+          "category": "第3部 2課 練習1",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いておいたぼくの<ruby>大事<rt>だいじ</rt></ruby>な<ruby>本<rt>ほん</rt></ruby>はどこに（a <ruby>行<rt>い</rt></ruby>く　b <ruby>行<rt>い</rt></ruby>った）のだろう。",
+          "options": [
+            "a 行く",
+            "b 行った"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "本がなくなった過去の事実を指すため過去形「行った」が適切。",
+          "explanation_en": "Refers to the past fact that the book is gone; past tense '行った' is correct."
+        },
+        {
+          "question_id": 30202,
+          "category": "第3部 2課 練習1",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>来月<rt>らいげつ</rt></ruby>、わたしがこの5<ruby>年間<rt>ねんかん</rt></ruby>で（a <ruby>作<rt>つく</rt></ruby>る　b <ruby>作<rt>つく</rt></ruby>った）<ruby>作品<rt>さくひん</rt></ruby>の<ruby>展覧会<rt>てんらんかい</rt></ruby>が<ruby>開<rt>ひら</rt></ruby>かれます。",
+          "options": [
+            "a 作る",
+            "b 作った"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「この5年間ですでに作った作品」なので過去形修飾。",
+          "explanation_en": "Modifies works already created over the past 5 years; past form '作った'."
+        },
+        {
+          "question_id": 30203,
+          "category": "第3部 2課 練習1",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>駅<rt>えき</rt></ruby>まで<ruby>遠<rt>とお</rt></ruby>いですから、<ruby>歩<rt>ある</rt></ruby>いていくのでは（a <ruby>疲<rt>つか</rt></ruby>れますよ　b <ruby>疲<rt>つか</rt></ruby>れていますよ）。",
+          "options": [
+            "a 疲れますよ",
+            "b 疲れていますよ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "これからの動作の結果を予想して注意を促すので「疲れますよ」。",
+          "explanation_en": "Predicts a future state of getting tired; '疲れますよ'."
+        },
+        {
+          "question_id": 30204,
+          "category": "第3部 2課 練習1",
+          "question_type": "binary_choice",
+          "prompt": "きのうわたしは12<ruby>時<rt>じ</rt></ruby><ruby>過<rt>す</rt></ruby>ぎまで（a <ruby>起<rt>お</rt></ruby>きた　b <ruby>起<rt>お</rt></ruby>きていた）。",
+          "options": [
+            "a 起きた",
+            "b 起きていた"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "12時過ぎまで起きている状態が継続していたので「起きていた」。",
+          "explanation_en": "A continuous state of staying awake until past midnight; '起きていた'."
+        },
+        {
+          "question_id": 30205,
+          "category": "第3部 2課 練習1",
+          "question_type": "binary_choice",
+          "prompt": "まだ<ruby>昼<rt>ひる</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を（a <ruby>食<rt>た</rt></ruby>べない　b <ruby>食<rt>た</rt></ruby>べていない）のなら、いっしょにどうですか。",
+          "options": [
+            "a 食べない",
+            "b 食べていない"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「まだ〜ていない」（未完了）。",
+          "explanation_en": "'まだ〜ていない' indicates an action not yet completed."
+        },
+        {
+          "question_id": 30206,
+          "category": "第3部 2課 練習1",
+          "question_type": "binary_choice",
+          "prompt": "うちに（a <ruby>来<rt>く</rt></ruby>る　b <ruby>来<rt>き</rt></ruby>た）ときは、<ruby>連絡<rt>れんらく</rt></ruby>してください。<ruby>駅<rt>えき</rt></ruby>まで<ruby>迎<rt>むか</rt></ruby>えに<ruby>行<rt>い</rt></ruby>きます。",
+          "options": [
+            "a 来る",
+            "b 来た"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「うちに来る前に駅で連絡する」ので、来る前の動作として辞書形「来る」。",
+          "explanation_en": "Contact before actually arriving; dictionary form '来る'."
+        },
+        {
+          "question_id": 30207,
+          "category": "第3部 2課 練習1",
+          "question_type": "two_part_choice",
+          "prompt": "<ruby>彼<rt>かれ</rt></ruby>が<ruby>港<rt>みなと</rt></ruby>に（① a <ruby>着<rt>つ</rt></ruby>いた　b <ruby>着<rt>つ</rt></ruby>いている）ときには、<ruby>船<rt>ふね</rt></ruby>はもう（② a <ruby>出<rt>で</rt></ruby>た　b <ruby>出<rt>で</rt></ruby>ていた）。",
+          "options": [
+            "① a 着いた / ② b 出ていた",
+            "① b 着いている / ② a 出た"
+          ],
+          "correct_answer": "①a, ②b",
+          "explanation_ja": "彼が港に到着した時点で、船はすでに出航した結果の状態だった（①着いた、②出ていた）。",
+          "explanation_en": "When he arrived at the port (着いた), the ship had already departed (出ていた)."
+        },
+        {
+          "question_id": 30208,
+          "category": "第3部 2課 練習1",
+          "question_type": "two_part_choice",
+          "prompt": "あした、<ruby>林<rt>はやし</rt></ruby>さんに（① a <ruby>会<rt>あ</rt></ruby>う　b <ruby>会<rt>あ</rt></ruby>った）ときに、この<ruby>本<rt>ほん</rt></ruby>を（② a <ruby>返<rt>かえ</rt></ruby>そう　b <ruby>返<rt>かえ</rt></ruby>した）。",
+          "options": [
+            "① a 会う / ② a 返そう",
+            "① b 会った / ② b 返した"
+          ],
+          "correct_answer": "①b, ②a",
+          "explanation_ja": "「あした会ったときに返そう」（会うという事態が成立した時点で返す意向）。①b 会った、②a 返そう。",
+          "explanation_en": "At the point when I meet Hayashi tomorrow (会ったとき), I intend to return the book (返そう)."
+        },
+        {
+          "question_id": 30209,
+          "category": "第3部 2課 練習2",
+          "question_type": "cloze_conjugation",
+          "prompt": "<ruby>子<rt>こ</rt></ruby>どものころ、わたしのうちにはいろいろな<ruby>動物<rt>どうぶつ</rt></ruby>が（①いる→＿＿＿）。<ruby>犬<rt>いぬ</rt></ruby>はもちろん、うさぎ、<ruby>鳥<rt>とり</rt></ruby>、にわとりなど、みんな<ruby>母<rt>はは</rt></ruby>がどこからか（②もらう・くる→＿＿＿）が、これらの<ruby>動物<rt>どうぶつ</rt></ruby>にえさを（③やる→＿＿＿）のはわたしの<ruby>仕事<rt>しごと</rt></ruby>だった。わたしは<ruby>母<rt>はは</rt></ruby>が<ruby>入<rt>い</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>に（④入る・入れる→＿＿＿）えさを<ruby>自分<rt>じぶん</rt></ruby>の<ruby>手<rt>て</rt></ruby>で<ruby>動物<rt>どうぶつ</rt></ruby>たちに<ruby>与<rt>あた</rt></ruby>えた。<ruby>当時<rt>とうじ</rt></ruby>わたしはまだ<ruby>小学生<rt>しょうがくせい</rt></ruby>に（⑤なる→＿＿＿）が、<ruby>母<rt>はは</rt></ruby>の<ruby>影響<rt>えいきょう</rt></ruby>でいつの<ruby>間<rt>ま</rt></ruby>にか<ruby>大<rt>だい</rt></ruby>の<ruby>動物<rt>どうぶつ</rt></ruby><ruby>好<rt>す</rt></ruby>きになっていた。だから、<ruby>動物園<rt>どうぶつえん</rt></ruby>に（⑥<ruby>就職<rt>しゅうしょく</rt></ruby>できる→＿＿＿）ときは、<ruby>本当<rt>ほんとう</rt></ruby>にうれしかった。",
+          "sub_questions": [
+            {
+              "blank": "①",
+              "correct": "いた"
+            },
+            {
+              "blank": "②",
+              "correct": "もらってきた"
+            },
+            {
+              "blank": "③",
+              "correct": "持っていた / やる"
+            },
+            {
+              "blank": "④",
+              "correct": "やる / 入れた"
+            },
+            {
+              "blank": "⑤",
+              "correct": "なっていなかった"
+            },
+            {
+              "blank": "⑥",
+              "correct": "就職できた"
+            }
+          ],
+          "correct_answers": [
+            "1. いた",
+            "2. もらってきた",
+            "3. 持っていた",
+            "4. やる",
+            "5. 入れた",
+            "6. なっていなかった",
+            "7. 就職できた"
+          ],
+          "explanation_ja": "解答冊子p.6参照：1.いた 2.もらってきた 3.持っていた 4.やる 5.入れた 6.なっていなかった 7.就職できた。",
+          "explanation_en": "See Answer booklet p.6: 1.いた 2.もらってきた 3.持っていた 4.やる 5.入れた 6.なっていなかった 7.就職できた."
+        }
+      ]
+    },
+    {
+      "section_number": 2.5,
+      "title": "まとめ<ruby>問題<rt>もんだい</rt></ruby>（1<ruby>課<rt>か</rt></ruby>・2<ruby>課<rt>か</rt></ruby>）",
+      "title_en": "Review Exercises (Lessons 1 & 2)",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>の<ruby>総合練習<rt>そうごうれんしゅう</rt></ruby>（<ruby>文<rt>ぶん</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby>と<ruby>時制<rt>じせい</rt></ruby>）",
+      "theme_en": "Comprehensive text grammar review: Sentence correspondence and tense",
+      "passages": [
+        {
+          "passage_id": 301,
+          "title": "外国語の勉強",
+          "title_en": "Studying Foreign Languages",
+          "text": "わたしは<ruby>言葉<rt>ことば</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。<ruby>今<rt>いま</rt></ruby>までにいくつかの<ruby>外国語<rt>がいこくご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>したことがあります。<ruby>日本語<rt>にほんご</rt></ruby>は<ruby>国<rt>くに</rt></ruby>にいるとき1<ruby>年<rt>ねん</rt></ruby>ぐらい<ruby>勉強<rt>べんきょう</rt></ruby>しましたが、<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>てからも<ruby>続<rt>つづ</rt></ruby>けています。<ruby>今<rt>いま</rt></ruby>、<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>火曜日<rt>かようび</rt></ruby>と<ruby>木曜日<rt>もくようび</rt></ruby>の<ruby>夜<rt>よる</rt></ruby>、<ruby>市民<rt>しみん</rt></ruby>センターに<ruby>行<rt>い</rt></ruby>って、<ruby>田中<rt>たなか</rt></ruby>さんから<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教<rt>おし</rt></ruby>わっています。レッスンのときに［ 1-a ］ことは<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>予習<rt>よしゅう</rt></ruby>し、［ 1-b ］ことは<ruby>必<rt>かなら</rt></ruby>ず<ruby>復習<rt>ふくしゅう</rt></ruby>しています。\n\n<ruby>外国語<rt>がいこくご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>しようとする<ruby>人<rt>ひと</rt></ruby>にアドバイスすることが<ruby>三<rt>みっ</rt></ruby>つあります。まずするべきこととは、いい<ruby>先生<rt>せんせい</rt></ruby>を［ 2 ］。<ruby>何回<rt>なんかい</rt></ruby>かレッスンを<ruby>受<rt>う</rt></ruby>ければ、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>スタイルに<ruby>合<rt>あ</rt></ruby>う<ruby>先生<rt>せんせい</rt></ruby>かどうかわかります。どういう<ruby>教<rt>おし</rt></ruby>え<ruby>方<rt>かた</rt></ruby>をしてほしいか<ruby>先生<rt>せんせい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えてもいいと<ruby>思<rt>おも</rt></ruby>います。\nまた、<ruby>勉強<rt>べんきょう</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しくなると、なかなか<ruby>次<rt>つぎ</rt></ruby>に<ruby>進<rt>すす</rt></ruby>めなくなります。しかし、<ruby>同<rt>おな</rt></ruby>じところばかりずっと［ 3 ］、だんだんあきてきます。そういうときは<ruby>全部<rt>ぜんぶ</rt></ruby>［ 4 ］、<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>先<rt>さき</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んだほうがいいです。そして、<ruby>三<rt>みっ</rt></ruby>つ<ruby>目<rt>め</rt></ruby>は、<ruby>習<rt>なら</rt></ruby>ったことをどれぐらい<ruby>覚<rt>おぼ</rt></ruby>えているかということより、どれだけ［ 5 ］ということの<ruby>方<rt>ほう</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>だということです。<ruby>勉強<rt>べんきょう</rt></ruby>したことを<ruby>実際<rt>じっさい</rt></ruby>にどんどん<ruby>使<rt>つか</rt></ruby>ってみることが<ruby>大事<rt>だいじ</rt></ruby>です。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30101,
+              "prompt": "［ 1 ］（1-a / 1-b）に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　a 勉強する / b 勉強した",
+                "2　a 勉強した / b 勉強する",
+                "3　a 勉強している / b 勉強した",
+                "4　a 勉強していた / b 勉強する"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "これからレッスンで「勉強する」ことは前日に予習し、レッスンですでに「勉強した」ことは復習するので、1が正解。",
+              "explanation_en": "You prepare for what you 'will study' (勉強する) and review what you 'studied' (勉強した). Correct choice is 1."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30102,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　探します",
+                "2　探すことです",
+                "3　探しています",
+                "4　探していることです"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "文頭が「まずするべきこととは、…」とあるので、述語は「〜（動詞辞書形）ことだ／ことです」で受ける。2が正解。",
+              "explanation_en": "The sentence begins with 'まずするべきこととは', requiring a predicate in '〜ことです'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30103,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　やっていると",
+                "2　やっていたので",
+                "3　やってみると",
+                "4　やってみたので"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "「ずっとやっていると、だんだんあきてきます」（仮定・条件「〜と」）。継続状態を表す1が正解。",
+              "explanation_en": "'〜ていると' denotes a continuing condition resulting in getting tired of it. Choice 1 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30104,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　覚えられないと",
+                "2　覚えられなくても",
+                "3　覚えられたら",
+                "4　覚えられたので"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "「全部覚えられなくても、少しずつ先に進んだほうがいい」（逆接条件「〜ても」）。2が正解。",
+              "explanation_en": "'Even if you cannot memorize everything (覚えられなくても), it is better to move forward'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30105,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　使ってみる",
+                "2　使ってみるの",
+                "3　使っている",
+                "4　使っているか"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "「どれぐらい覚えているかということより、どれだけ［使っているか］ということの方が大切」。疑問詞「どれだけ」に呼応して「〜か」で受ける。4が正解。",
+              "explanation_en": "Corresponds with the question word 'どれだけ' taking '使っているか'. Choice 4 is correct."
+            }
+          ]
+        },
+        {
+          "passage_id": 302,
+          "title": "ありの巣の観察",
+          "title_en": "Observing an Ant Colony",
+          "text": "<ruby>先日<rt>せんじつ</rt></ruby>、<ruby>公園<rt>こうえん</rt></ruby>で、ありが<ruby>忙<rt>いそが</rt></ruby>しそうに<ruby>働<rt>はたら</rt></ruby>いているのを<ruby>見<rt>み</rt></ruby>た。<ruby>白<rt>しろ</rt></ruby>い<ruby>小<rt>ちい</rt></ruby>さなものを［ 1 ］。<ruby>行列<rt>ぎょうれつ</rt></ruby>の<ruby>先<rt>さき</rt></ruby>を<ruby>見<rt>み</rt></ruby>ると、<ruby>地面<rt>じめん</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さな<ruby>穴<rt>あな</rt></ruby>が<ruby>開<rt>ひら</rt></ruby>いていた。ありの<ruby>巣<rt>す</rt></ruby>だ。<ruby>穴<rt>あな</rt></ruby>の<ruby>周<rt>まわ</rt></ruby>りには、<ruby>穴<rt>あな</rt></ruby>を<ruby>掘<rt>ほ</rt></ruby>ったときに<ruby>出<rt>で</rt></ruby>た<ruby>土<rt>つち</rt></ruby>が<ruby>盛<rt>も</rt></ruby>られていた。この<ruby>土<rt>つち</rt></ruby>の<ruby>山<rt>やま</rt></ruby>があるので、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っても<ruby>周<rt>まわ</rt></ruby>りから<ruby>雨水<rt>あまみず</rt></ruby>が<ruby>入<rt>はい</rt></ruby>りにくくなっているようだ。<ruby>穴<rt>あな</rt></ruby>の<ruby>中<rt>なか</rt></ruby>は［ 2 ］。<ruby>自分<rt>じぶん</rt></ruby>で<ruby>中<rt>なか</rt></ruby>を<ruby>見<rt>み</rt></ruby>ることはできないので、<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ってインターネットで<ruby>調<rt>しら</rt></ruby>べてみた。\nある<ruby>専門家<rt>せんもんか</rt></ruby>のページによると、ありの<ruby>巣<rt>す</rt></ruby>は、<ruby>初<rt>はじ</rt></ruby>めは<ruby>女王<rt>じょおう</rt></ruby>ありがたった1<ruby>匹<rt>ぴき</rt></ruby>で［ 3 ］。<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>一部屋<rt>ひとへや</rt></ruby>だけで、<ruby>女王<rt>じょおう</rt></ruby>はそこで<ruby>卵<rt>たまご</rt></ruby>を<ruby>産<rt>う</rt></ruby>んで［ 4 ］。<ruby>卵<rt>たまご</rt></ruby>は1か<ruby>月<rt>げつ</rt></ruby>ぐらいで<ruby>働<rt>はたら</rt></ruby>きありに<ruby>成長<rt>せいちょう</rt></ruby>し、この<ruby>働<rt>はたら</rt></ruby>きありが<ruby>巣<rt>す</rt></ruby>を<ruby>大<rt>おお</rt></ruby>きくしていくらしい。<ruby>卵<rt>たまご</rt></ruby>を<ruby>置<rt>お</rt></ruby>いておく<ruby>部屋<rt>へや</rt></ruby>、えさを<ruby>置<rt>お</rt></ruby>いておく<ruby>部屋<rt>へや</rt></ruby>、<ruby>子<rt>こ</rt></ruby>ども<ruby>部屋<rt>べや</rt></ruby>など、<ruby>人間<rt>にんげん</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>よりも［ 5 ］。<ruby>女王<rt>じょおう</rt></ruby>ありの<ruby>部屋<rt>へや</rt></ruby>はいちばん<ruby>奥<rt>おく</rt></ruby>で、<ruby>女王<rt>じょおう</rt></ruby>はここで<ruby>出産<rt>しゅっさん</rt></ruby>と<ruby>子育<rt>こそだ</rt></ruby>てに<ruby>集中<rt>しゅうちゅう</rt></ruby>するのだそうだ。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30201,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　運んだ",
+                "2　運んでいた",
+                "3　運ばれた",
+                "4　運ばれていた"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "「白い小さなものを運んでいた」（その時進行中だった動作）。2が正解。",
+              "explanation_en": "Ants were in the process of carrying small white objects; past continuous '運んでいた'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30202,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　どうなるのだろう",
+                "2　どうしたのだろう",
+                "3　どうなっているのだろう",
+                "4　どうしていたのだろう"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "穴の中が現在どのような状態になっているかを表すので「どうなっているのだろう」。3が正解。",
+              "explanation_en": "Expresses wondering about the current state inside the hole; 'どうなっているのだろう'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30203,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　作るそうだ",
+                "2　作ったそうだ",
+                "3　作られるそうだ",
+                "4　作られたそうだ"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "専門家の説明による一般的な巣作りの習性を述べているので現在形「作るそうだ」。1が正解。",
+              "explanation_en": "Describes the general habit of queen ants starting colonies from scratch; '作るそうだ'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30204,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　育てる",
+                "2　育てた",
+                "3　育てられる",
+                "4　育てられた"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "「卵を産んで育てる」（一般的なプロセス）。1が正解。",
+              "explanation_en": "Continuous process in general explanation: '卵を産んで育てる'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30205,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　よく働く",
+                "2　子どもが多い",
+                "3　簡単に作った",
+                "4　部屋が多い"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "直前に「卵を置いておく部屋、えさを置いておく部屋、子ども部屋など」と部屋の種類が列挙されているので、「人間の家よりも部屋が多い」が文脈に適合。4が正解。",
+              "explanation_en": "Listing multiple rooms immediately before leads to '部屋が多い' (has more rooms than human houses). Choice 4 is correct."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_number": 3,
+      "title": "<ruby>第<rt>だい</rt></ruby>3<ruby>課<rt>か</rt></ruby> <ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさない<ruby>手段<rt>しゅだん</rt></ruby>-1 <ruby>他動詞<rt>たどうし</rt></ruby>・<ruby>自動詞<rt>じどうし</rt></ruby>",
+      "title_en": "Lesson 3: Keeping the Speaker's Perspective Consistent 1 - Transitive and Intransitive Verbs",
+      "theme": "まとまりのある<ruby>文章<rt>ぶんしょう</rt></ruby>にするためには、<ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさないで<ruby>文<rt>ぶん</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けなければなりません。<ruby>他動詞<rt>たどうし</rt></ruby>・<ruby>自動詞<rt>じどうし</rt></ruby>は、<ruby>何<rt>なに</rt></ruby>に<ruby>注目<rt>ちゅうもく</rt></ruby>するかによって<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けます。",
+      "theme_en": "To form a cohesive sentence, the standpoint of the speaker must remain consistent in each sentence. Depending on where the focus is, a transitive or intransitive verb is used.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>他動詞<rt>たどうし</rt></ruby>・<ruby>自動詞<rt>じどうし</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け",
+          "title_en": "Differentiating between transitive and intransitive verbs",
+          "rules": [
+            {
+              "category": "<ruby>変化<rt>へんか</rt></ruby>を<ruby>起<rt>お</rt></ruby>こす<ruby>動作<rt>どうさ</rt></ruby>／結果",
+              "transitive": "<ruby>変化<rt>へんか</rt></ruby>を<ruby>起<rt>お</rt></ruby>こす<ruby>動作<rt>どうさ</rt></ruby>に<ruby>注目<rt>ちゅうもく</rt></ruby>して<ruby>言<rt>い</rt></ruby>う（他動詞の文）: ヤンさんはタクシーを<ruby>止<rt>と</rt></ruby>めた。／わたしはろうそくの<ruby>火<rt>ひ</rt></ruby>を<ruby>消<rt>け</rt></ruby>した。／わたしはドアを<ruby>開<rt>あ</rt></ruby>けた。",
+              "intransitive": "<ruby>変化<rt>へんか</rt></ruby>を<ruby>起<rt>お</rt></ruby>こす<ruby>動作<rt>どうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>に<ruby>注目<rt>ちゅうもく</rt></ruby>して<ruby>言<rt>い</rt></ruby>う（自動詞の文）: タクシーが<ruby>止<rt>と</rt></ruby>まった。／ろうそくの<ruby>火<rt>ひ</rt></ruby>が<ruby>消<rt>き</rt></ruby>えた。／ドアが<ruby>開<rt>あ</rt></ruby>いた。（注1: 受身文でも表すことができる。例・タクシーが止められた。→第3部 5課）"
+            },
+            {
+              "category": "<ruby>自然<rt>しぜん</rt></ruby>に<ruby>起<rt>お</rt></ruby>こること",
+              "transitive": "（<ruby>対応<rt>たいおう</rt></ruby>する<ruby>他動詞<rt>たどうし</rt></ruby>がない<ruby>場合<rt>ばあい</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い）",
+              "intransitive": "<ruby>自然<rt>しぜん</rt></ruby>に<ruby>起<rt>お</rt></ruby>こることを<ruby>表<rt>あらわ</rt></ruby>す: <ruby>雪<rt>ゆき</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>った。／<ruby>庭<rt>にわ</rt></ruby>にきれいなばらの<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>いた。／<ruby>今夜<rt>こんや</rt></ruby>は<ruby>月<rt>つき</rt></ruby>が<ruby>明<rt>あか</rt></ruby>るく<ruby>輝<rt>かがや</rt></ruby>いている。"
+            },
+            {
+              "category": "<ruby>人<rt>ひと</rt></ruby>や<ruby>物<rt>もの</rt></ruby>への<ruby>働<rt>はたら</rt></ruby>きかけ",
+              "transitive": "<ruby>人<rt>ひと</rt></ruby>や<ruby>物<rt>もの</rt></ruby>への<ruby>働<rt>はたら</rt></ruby>きかけがある<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す: <ruby>先生<rt>せんせい</rt></ruby>が<ruby>子<rt>こ</rt></ruby>どもをしかった。／わたしはリーさんに<ruby>仕事<rt>しごと</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>んだ。（注2: 受身文でも表すことができる。例・子どもは先生にしかられた。→第3部 5課）",
+              "intransitive": "（<ruby>対応<rt>たいおう</rt></ruby>する<ruby>自動詞<rt>じどうし</rt></ruby>はない）"
+            },
+            {
+              "category": "<ruby>人<rt>ひと</rt></ruby>や<ruby>物<rt>もの</rt></ruby>への<ruby>働<rt>はたら</rt></ruby>きかけがない<ruby>動作<rt>どうさ</rt></ruby>",
+              "transitive": "（<ruby>対応<rt>たいおう</rt></ruby>する<ruby>他動詞<rt>たどうし</rt></ruby>はない）（注3: 使役文で表すことができる。例・先生は子どもたちをいすに座らせた。→第3部 5課）",
+              "intransitive": "<ruby>人<rt>ひと</rt></ruby>や<ruby>物<rt>もの</rt></ruby>への<ruby>働<rt>はたら</rt></ruby>きかけがない<ruby>動作<rt>どうさ</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す: <ruby>子<rt>こ</rt></ruby>どもたちはいすに<ruby>座<rt>すわ</rt></ruby>った。／<ruby>飛行機<rt>ひこうき</rt></ruby>が<ruby>空<rt>そら</rt></ruby>を<ruby>飛<rt>と</rt></ruby>んでいる。"
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30301,
+          "category": "第3部 3課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "1 <ruby>読<rt>よ</rt></ruby>み<ruby>終<rt>お</rt></ruby>わった<ruby>本<rt>ほん</rt></ruby>は、<ruby>棚<rt>たな</rt></ruby>に①＿＿＿てください。<ruby>部屋<rt>へや</rt></ruby>を<ruby>出<rt>で</rt></ruby>るときは、<ruby>電気<rt>でんき</rt></ruby>が②＿＿＿ているかどうか<ruby>確認<rt>かくにん</rt></ruby>してください。（戻る・戻す、消える・消す）",
+          "correct_answers": [
+            "① 戻し",
+            "② 消え"
+          ],
+          "explanation_ja": "①本を棚に戻す（他動詞のて形：戻して）。②電気が消えている（自動詞の結果状態：消えている）。",
+          "explanation_en": "①'戻して' (transitive). ②'消えている' (intransitive state)."
+        },
+        {
+          "question_id": 30302,
+          "category": "第3部 3課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "2 <ruby>登山靴<rt>とざんぐつ</rt></ruby>には、<ruby>丈夫<rt>じょうぶ</rt></ruby>で<ruby>簡単<rt>かんたん</rt></ruby>には①＿＿＿ひもを<ruby>使<rt>つか</rt></ruby>っています。ひもはお<ruby>客様<rt>きゃくさま</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせてちょうどいい<ruby>長<rt>なが</rt></ruby>さに②＿＿＿こともできますので、まず、はいてみてください。（切れる・切る）",
+          "correct_answers": [
+            "① 切れない",
+            "② 切る"
+          ],
+          "explanation_ja": "①簡単には切れない（自然に切れる：自動詞可能否定）。②長さに切る（他動詞）。",
+          "explanation_en": "①'切れない' (intransitive). ②'切る' (transitive)."
+        },
+        {
+          "question_id": 30303,
+          "category": "第3部 3課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "3 <ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ってびっくりした。<ruby>窓<rt>まど</rt></ruby>が①＿＿＿ていた。だれかが②＿＿＿んだそうと<ruby>思<rt>おも</rt></ruby>った。そうだった。わたしが、<ruby>家<rt>いえ</rt></ruby>を③＿＿＿とき、④＿＿＿のを<ruby>忘<rt>わす</rt></ruby>れたのだ。（開く・開ける、出る・出す、閉まる・閉める）",
+          "correct_answers": [
+            "① 開い",
+            "② 開けた",
+            "③ 出る",
+            "④ 閉める"
+          ],
+          "explanation_ja": "①窓が開いていた（自動詞）。②だれかが開けた（他動詞）。③家を出るとき（自動詞）。④閉めるのを忘れた（他動詞）。",
+          "explanation_en": "①'開いていた' (intransitive). ②'開けた' (transitive). ③'出る' (intransitive). ④'閉める' (transitive)."
+        },
+        {
+          "question_id": 30304,
+          "category": "第3部 3課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "4 わたしは1990<ruby>年<rt>ねん</rt></ruby>にある<ruby>小<rt>ちい</rt></ruby>さい<ruby>島<rt>しま</rt></ruby>で①＿＿＿。<ruby>病院<rt>びょういん</rt></ruby>も<ruby>店<rt>みせ</rt></ruby>もなく<ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>いもいない<ruby>島<rt>しま</rt></ruby>で<ruby>子<rt>こ</rt></ruby>どもを②＿＿＿ことができるだろうかと、<ruby>母<rt>はは</rt></ruby>はわたしを③＿＿＿<ruby>後<rt>あと</rt></ruby>、<ruby>悩<rt>なや</rt></ruby>んだそうだ。でも、わたしは<ruby>元気<rt>げんき</rt></ruby>に④＿＿＿て、<ruby>母<rt>はは</rt></ruby>を<ruby>安心<rt>あんしん</rt></ruby>させた。（生まれる・産む、育つ・育てる）",
+          "correct_answers": [
+            "① 生まれた",
+            "② 育てる",
+            "③ 産んだ",
+            "④ 育っ"
+          ],
+          "explanation_ja": "①小さい島で生まれた（自動詞）。②子どもを育てる（他動詞）。③わたしを産んだ後（他動詞）。④元気に育って（自動詞）。",
+          "explanation_en": "①'生まれた' (intransitive). ②'育てる' (transitive). ③'産んだ' (transitive). ④'育って' (intransitive)."
+        },
+        {
+          "question_id": 30305,
+          "category": "第3部 3課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "5 <ruby>今朝<rt>けさ</rt></ruby>は<ruby>遅刻<rt>ちこく</rt></ruby>してしまった。きのう、<ruby>遅<rt>おそ</rt></ruby>くまで①＿＿＿ていたし、<ruby>目覚<rt>めざ</rt></ruby>まし<ruby>時計<rt>どけい</rt></ruby>がいつの<ruby>間<rt>ま</rt></ruby>にか②＿＿＿ていたのだ。<ruby>電池<rt>でんち</rt></ruby>はちゃんと③＿＿＿ておいたはずなのに……。あしたは<ruby>試験<rt>しけん</rt></ruby>だから、<ruby>母<rt>はは</rt></ruby>に7<ruby>時<rt>じ</rt></ruby>に④＿＿＿てほしいと<ruby>頼<rt>たの</rt></ruby>んでおこう。（起きる・起こす、止まる・止める、入る・入れる）",
+          "correct_answers": [
+            "① 起き",
+            "② 止まっ",
+            "③ 入れ",
+            "④ 起こし"
+          ],
+          "explanation_ja": "①遅くまで起きていた（自動詞）。②時計が止まっていた（自動詞）。③電池を入れておいた（他動詞）。④母に起こしてほしい（他動詞）。",
+          "explanation_en": "①'起きていた' (intransitive). ②'止まっていた' (intransitive). ③'入れておいた' (transitive). ④'起こしてほしい' (transitive)."
+        }
+      ]
+    },
+    {
+      "section_number": 4,
+      "title": "<ruby>第<rt>だい</rt></ruby>4<ruby>課<rt>か</rt></ruby> <ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさない<ruby>手段<rt>しゅだん</rt></ruby>-2 〜てくる・〜ていく",
+      "title_en": "Lesson 4: Keeping the Speaker's Perspective Consistent 2 - '~te kuru' & '~te iku'",
+      "theme": "「〜てくる・〜ていく」を<ruby>使<rt>つか</rt></ruby>えば、<ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>・<ruby>時点<rt>じてん</rt></ruby>がはっきりします。",
+      "theme_en": "Use of ~te kuru and ~te iku forms to specify the position of the speaker and the time at which a statement is made.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "「〜てくる・〜ていく」の<ruby>整理<rt>せいり</rt></ruby>",
+          "title_en": "Organization of '~te kuru' and '~te iku'",
+          "usage_table": [
+            {
+              "meaning": "ある<ruby>動作<rt>どうさ</rt></ruby>の<ruby>後<rt>あと</rt></ruby>の<ruby>移動<rt>いどう</rt></ruby>",
+              "meaning_en": "A movement or shift occurring after an action.",
+              "te_kuru": "出かけるとき、天気予報を見てきました。／コンビニでジュースを買ってきます。（出発点に戻る）／ちょっと外でたばこを吸ってきます。",
+              "te_iku": "荷物はここに預けていこう。／空港へ行く途中でお金をおろしていこう。（出発点に戻らない）／途中の郵便局で書留を出していった。"
+            },
+            {
+              "meaning": "<ruby>移動<rt>いどう</rt></ruby>の<ruby>方向<rt>ほうこう</rt></ruby>",
+              "meaning_en": "Expresses direction of movement.",
+              "note": "移動の動詞につく (Affixed to verb of motion)",
+              "te_kuru": "川上から帽子が流れてきた。／エレベーターが1階から上がってくる。",
+              "te_iku": "飛行機が南の方へ飛んでいった。／エレベーターが上の階へ上がっていく。"
+            },
+            {
+              "meaning": "<ruby>話者<rt>わしゃ</rt></ruby>へのものごとの<ruby>接近<rt>せっきん</rt></ruby>・<ruby>到達<rt>とうたつ</rt></ruby>",
+              "meaning_en": "Means the speaker is the person affected by an action or event coming from elsewhere.",
+              "note": "「〜てくる」だけ",
+              "te_kuru": "友だちから電話がかかってきた。／どこからか鐘の音が聞こえてきた。／新しい心配ごとが出てきた。"
+            },
+            {
+              "meaning": "<ruby>変化<rt>へんか</rt></ruby>や<ruby>状態<rt>じょうたい</rt></ruby>の<ruby>持続<rt>じぞく</rt></ruby>",
+              "meaning_en": "Indicates the continuation of a process of change or of a state.",
+              "note": "変化を表す動詞・継続を表す動詞を使う",
+              "te_kuru": "この地方も交通がだんだん便利になってきた。／この村の人たちは昔からずっと村の伝統を守ってきた。",
+              "te_iku": "これからは観光客が多くなっていくと思う。／今後も守っていくだろう。"
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30401,
+          "category": "第3部 4課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "1 <ruby>最近<rt>さいきん</rt></ruby>だんだん<ruby>会社<rt>かいしゃ</rt></ruby>での<ruby>責任<rt>せきにん</rt></ruby>が<ruby>重<rt>おも</rt></ruby>くなって①＿＿＿。これからはさらに<ruby>忙<rt>いそが</rt></ruby>しくなるだろう。でも、この<ruby>仕事<rt>しごと</rt></ruby>をずっと<ruby>続<rt>つづ</rt></ruby>けて②＿＿＿よかったと<ruby>思<rt>おも</rt></ruby>う。（くる・いく）",
+          "correct_answers": [
+            "① きた",
+            "② きて"
+          ],
+          "explanation_ja": "①過去から現在への変化の進行：「重くなってきた」。②過去から現在までの継続：「続けてきてよかった」。",
+          "explanation_en": "①'重くなってきた' (continuation of change up to present). ②'続けてきて' (continuation of action up to present)."
+        },
+        {
+          "question_id": 30402,
+          "category": "第3部 4課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "2 <ruby>今夜<rt>こんや</rt></ruby>、わたしの<ruby>家<rt>いえ</rt></ruby>で<ruby>忘年会<rt>ぼうねんかい</rt></ruby>をします。わたしはケーキを<ruby>作<rt>つく</rt></ruby>ります。みきさんは<ruby>珍<rt>めずら</rt></ruby>しい<ruby>料理<rt>りょうり</rt></ruby>を<ruby>持<rt>も</rt></ruby>って①＿＿＿くれるらしいです。<ruby>山本<rt>やまもと</rt></ruby><ruby>君<rt>くん</rt></ruby>は<ruby>途中<rt>とちゅう</rt></ruby>でスーパーに<ruby>寄<rt>よ</rt></ruby>って、<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>買<rt>か</rt></ruby>って②＿＿＿ことになっています。10<ruby>年前<rt>ねんまえ</rt></ruby>から<ruby>毎年<rt>まいとし</rt></ruby><ruby>同<rt>おな</rt></ruby>じメンバーで<ruby>忘年会<rt>ぼうねんかい</rt></ruby>をして③＿＿＿ので、<ruby>今年<rt>ことし</rt></ruby>もとても<ruby>楽<rt>たの</rt></ruby>しみです。（くる・いく）",
+          "correct_answers": [
+            "① きて",
+            "② くる",
+            "③ きた"
+          ],
+          "explanation_ja": "①持ってきてくれる。②買って（家に）くることになっている。③忘年会をしてきたので（過去10年間の継続）。",
+          "explanation_en": "①'持ってきて' (bring here). ②'買ってくる' (buy and come). ③'してきた' (done continually for 10 years)."
+        },
+        {
+          "question_id": 30403,
+          "category": "第3部 4課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "3 となりに<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>して①＿＿＿<ruby>学生<rt>がくせい</rt></ruby>さんは<ruby>音楽<rt>おんがく</rt></ruby>が<ruby>専門<rt>せんもん</rt></ruby>らしい。<ruby>夜中<rt>よなか</rt></ruby>も<ruby>彼<rt>かれ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>から<ruby>音楽<rt>おんがく</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえて②＿＿＿。<ruby>今朝<rt>けさ</rt></ruby>もわたしが<ruby>外<rt>そと</rt></ruby>へごみを<ruby>出<rt>だ</rt></ruby>しに<ruby>行<rt>い</rt></ruby>くと、<ruby>大<rt>おお</rt></ruby>きな<ruby>楽器<rt>がっき</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>部屋<rt>へや</rt></ruby>から<ruby>出<rt>で</rt></ruby>て③＿＿＿、<ruby>駅<rt>えき</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>へ<ruby>歩<rt>ある</rt></ruby>いて④＿＿＿。<ruby>重<rt>おも</rt></ruby>そうな<ruby>楽器<rt>がっき</rt></ruby>だ。<ruby>学校<rt>がっこう</rt></ruby>に<ruby>置<rt>お</rt></ruby>いて⑤＿＿＿ばいいのに、と<ruby>思<rt>おも</rt></ruby>うが、<ruby>夜<rt>よる</rt></ruby>も<ruby>練習<rt>れんしゅう</rt></ruby>しなければならないのだろう。（くる・いく）",
+          "correct_answers": [
+            "① きた",
+            "② くる",
+            "③ きて",
+            "④ いった",
+            "⑤ くれ (くれ／いけ)"
+          ],
+          "explanation_ja": "解答冊子p.6参照：①きた ②くる ③きて ④いった ⑤くれ（または、おいていけば）。",
+          "explanation_en": "See Answer booklet p.6: ①きた ②くる ③きて ④いった ⑤くれ."
+        },
+        {
+          "question_id": 30404,
+          "category": "第3部 4課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "4 どこからかニャーニャーという<ruby>鳴<rt>な</rt></ruby>き<ruby>声<rt>ごえ</rt></ruby>がしたので、<ruby>家<rt>いえ</rt></ruby>の<ruby>外<rt>そと</rt></ruby>に<ruby>出<rt>で</rt></ruby>てみると、うちの<ruby>車<rt>くるま</rt></ruby>の<ruby>下<rt>した</rt></ruby>から<ruby>小<rt>ちい</rt></ruby>さいねこが<ruby>出<rt>で</rt></ruby>て①＿＿＿。とてもかわいいので、<ruby>台所<rt>だいどころ</rt></ruby>からミルクとお<ruby>皿<rt>さら</rt></ruby>を<ruby>取<rt>と</rt></ruby>って②＿＿＿、<ruby>子<rt>こ</rt></ruby>ねこの<ruby>前<rt>まえ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いた。<ruby>子<rt>こ</rt></ruby>ねこはミルクを<ruby>飲<rt>の</rt></ruby>むと、また<ruby>車<rt>くるま</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>逃<rt>に</rt></ruby>げていってしまった。それから<ruby>毎日<rt>まいにち</rt></ruby>、わたしの<ruby>姿<rt>すがた</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけると<ruby>近<rt>ちか</rt></ruby>づいて③＿＿＿ミルクを<ruby>飲<rt>の</rt></ruby>んでいたが、きのう、<ruby>飼<rt>か</rt></ruby>い<ruby>主<rt>ぬし</rt></ruby>が<ruby>現<rt>あらわ</rt></ruby>れて、<ruby>無事<rt>ぶじ</rt></ruby>に<ruby>子<rt>こ</rt></ruby>ねこを<ruby>連<rt>つ</rt></ruby>れて④＿＿＿。（くる・いく）",
+          "correct_answers": [
+            "① きた",
+            "② きて",
+            "③ きて",
+            "④ いった"
+          ],
+          "explanation_ja": "①出てきた（話者に接近）。②取ってきた（戻る移動）。③近づいてきて（話者に接近）。④連れていった（遠ざかる移動）。",
+          "explanation_en": "①'出てきた' (approach). ②'取ってきて' (fetch and return). ③'近づいてきて' (approach). ④'連れていった' (move away)."
+        }
+      ]
+    },
+    {
+      "section_number": 4.5,
+      "title": "まとめ<ruby>問題<rt>もんだい</rt></ruby>（3<ruby>課<rt>か</rt></ruby>・4<ruby>課<rt>か</rt></ruby>）",
+      "title_en": "Review Exercises (Lessons 3 & 4)",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>の<ruby>総合練習<rt>そうごうれんしゅう</rt></ruby>（<ruby>視点<rt>してん</rt></ruby>と<ruby>自動詞<rt>じどうし</rt></ruby>・<ruby>他動詞<rt>たどうし</rt></ruby>、〜てくる・〜ていく）",
+      "theme_en": "Comprehensive text grammar review: Standpoint, transitive/intransitive verbs, and te-kuru / te-iku",
+      "passages": [
+        {
+          "passage_id": 303,
+          "title": "蒸し料理用のなべ",
+          "title_en": "A Steaming Pot for Cooking",
+          "text": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしだと、どうしても<ruby>野菜不足<rt>やさいぶそく</rt></ruby>になります。<ruby>健康<rt>けんこう</rt></ruby>のために1<ruby>日<rt>にち</rt></ruby>に350グラムの<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるといいと<ruby>言<rt>い</rt></ruby>いますが、サラダだけではそんなに<ruby>食<rt>た</rt></ruby>べられません。でも、<ruby>時間<rt>じかん</rt></ruby>をかけて<ruby>野菜<rt>やさい</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るのは<ruby>面倒<rt>めんどう</rt></ruby>だし、<ruby>油<rt>あぶら</rt></ruby>や<ruby>塩<rt>しお</rt></ruby>、しょうゆを<ruby>使<rt>つか</rt></ruby>いすぎると、<ruby>別<rt>べつ</rt></ruby>の［ 1 ］。\nそこで、わたしは<ruby>考<rt>かんが</rt></ruby>えました。<ruby>栄養<rt>えいよう</rt></ruby>を<ruby>逃<rt>に</rt></ruby>がさないで、<ruby>味付<rt>あじつ</rt></ruby>けも<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>野菜料理<rt>やさいりょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るには<ruby>蒸<rt>む</rt></ruby>すのがいいと。さっそく<ruby>蒸<rt>む</rt></ruby>し<ruby>料理用<rt>りょうりよう</rt></ruby>のなべを<ruby>買<rt>か</rt></ruby>ってきました。このなべはふたが<ruby>三角帽子<rt>さんかくぼうし</rt></ruby>のような<ruby>形<rt>かたち</rt></ruby>に［ 2 ］。<ruby>野菜<rt>やさい</rt></ruby>を<ruby>入<rt>い</rt></ruby>れてふたをし、<ruby>弱火<rt>よわび</rt></ruby>で7、8<ruby>分<rt>ぷん</rt></ruby>。<ruby>火<rt>ひ</rt></ruby>を<ruby>止<rt>と</rt></ruby>めてしばらくしてからふたを<ruby>開<rt>あ</rt></ruby>けると、<ruby>野菜<rt>やさい</rt></ruby>はすっかり<ruby>軟<rt>やわ</rt></ruby>らかくなっていました。なべに<ruby>水<rt>みず</rt></ruby>を<ruby>入<rt>い</rt></ruby>れなくても、<ruby>野菜<rt>やさい</rt></ruby>から<ruby>出<rt>で</rt></ruby>た<ruby>水<rt>みず</rt></ruby>が<ruby>水蒸気<rt>すいじょうき</rt></ruby>になって<ruby>上<rt>うえ</rt></ruby>に<ruby>上<rt>あ</rt></ruby>がります。そして、ふたに<ruby>当<rt>あ</rt></ruby>たって<ruby>温度<rt>おんど</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がり、［ 3 ］というわけです。<ruby>少<rt>すこ</rt></ruby>し<ruby>塩<rt>しお</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>っただけで<ruby>十分<rt>じゅうぶん</rt></ruby>おいしくて、<ruby>野菜本来<rt>やさいほんらい</rt></ruby>の<ruby>味<rt>あじ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむことができました。<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>って、この1か<ruby>月<rt>げつ</rt></ruby><ruby>毎日<rt>まいにち</rt></ruby><ruby>蒸<rt>む</rt></ruby>し<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べ<ruby>続<rt>つづ</rt></ruby>けたら、<ruby>体<rt>からだ</rt></ruby>が［ 4 ］。なべに［ 5 ］<ruby>説明書<rt>せつめいしょ</rt></ruby>によると、できるだけいろいろな<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるのがいいそうです。ですから、これからは、<ruby>今<rt>いま</rt></ruby>まであまり<ruby>食<rt>た</rt></ruby>べなかったほかの<ruby>野菜<rt>やさい</rt></ruby>も<ruby>食<rt>た</rt></ruby>べてみようと<ruby>思<rt>おも</rt></ruby>っています。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30301,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　問題が出てきます",
+                "2　問題が出ていきます",
+                "3　問題を出してきます",
+                "4　問題を出していきます"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "油や塩を使いすぎると「別の問題が生じる（話者に降りかかる）」。自動詞＋てくる「問題が出てきます」。1が正解。",
+              "explanation_en": "A new problem arises for the speaker; intransitive + te-kuru: '問題が出てきます'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30302,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　なってきます",
+                "2　なってきました",
+                "3　なっています",
+                "4　なりました"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "鍋のふたの形状・状態を表すので「三角帽子のような形になっています」。3が正解。",
+              "explanation_en": "Describes the existing shape/state of the lid: '三角帽子のような形になっています'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30303,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　ふたの上に落ちる",
+                "2　野菜の上に落ちる",
+                "3　野菜の上から落とす",
+                "4　ふたの上に落とす"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "水蒸気がふたに当たって水滴になり、自然に「野菜の上に落ちる」（自動詞）。2が正解。",
+              "explanation_en": "The cooled water drops naturally fall onto the vegetables; '野菜の上に落ちる'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30304,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　軽くしてきました",
+                "2　軽くしていきました",
+                "3　軽くなってきました",
+                "4　軽くなっていきました"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "1か月食べ続けたら身体が自然に軽くなる変化が現在に至ったので「軽くなってきました」（自動詞変化＋てきた）。3が正解。",
+              "explanation_en": "Intransitive change continuing up to the present: '軽くなってきました'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30305,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　ついていく",
+                "2　ついてきた",
+                "3　つけてくる",
+                "4　つけていった"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "買った鍋に付属していた説明書なので、自動詞＋過去・話者への移動「ついてきた説明書」。2が正解。",
+              "explanation_en": "The instruction manual that came with the purchased pot: 'ついてきた説明書'. Choice 2 is correct."
+            }
+          ]
+        },
+        {
+          "passage_id": 304,
+          "title": "ベランダのゴーヤ栽培",
+          "title_en": "Growing Bitter Gourd on the Balcony",
+          "text": "<ruby>今年<rt>ことし</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>はベランダでゴーヤを<ruby>育<rt>そだ</rt></ruby>ててみることにした。ゴーヤというのは<ruby>大<rt>おお</rt></ruby>きいきゅうりのような［ 1 ］<ruby>野菜<rt>やさい</rt></ruby>だ。<ruby>暑<rt>あつ</rt></ruby>さに<ruby>強<rt>つよ</rt></ruby>くて、<ruby>病気<rt>びょうき</rt></ruby>や<ruby>虫<rt>むし</rt></ruby>の<ruby>心配<rt>しんぱい</rt></ruby>もあまりないという。\nまず、<ruby>種<rt>たね</rt></ruby>の<ruby>先<rt>さき</rt></ruby>を<ruby>切<rt>き</rt></ruby>り<ruby>落<rt>お</rt></ruby>とし、<ruby>水<rt>みず</rt></ruby>を<ruby>少<rt>すこ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れた<ruby>皿<rt>さら</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いて、<ruby>根<rt>ね</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくるのを<ruby>待<rt>ま</rt></ruby>った。<ruby>四日目<rt>よっかめ</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>いものが［ 2 ］。これがゴーヤの<ruby>根<rt>ね</rt></ruby>だ。<ruby>土<rt>つち</rt></ruby>を<ruby>入<rt>い</rt></ruby>れたポットにそっと<ruby>植<rt>う</rt></ruby>えた。さらに1<ruby>週間後<rt>しゅうかんご</rt></ruby>、<ruby>重<rt>おも</rt></ruby>い<ruby>土<rt>つち</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げてかわいい<ruby>芽<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>てきた。<ruby>葉<rt>は</rt></ruby>が4<ruby>枚<rt>まい</rt></ruby>になったところで、<ruby>大<rt>おお</rt></ruby>きい<ruby>植木鉢<rt>うえきばち</rt></ruby>に<ruby>植<rt>う</rt></ruby>え<ruby>替<rt>か</rt></ruby>えた。<ruby>毎日<rt>まいにち</rt></ruby>どんどん［ 3 ］、とても<ruby>楽<rt>たの</rt></ruby>しみだった。\nそのうち、つる（注）が<ruby>伸<rt>の</rt></ruby>びてきた。<ruby>棒<rt>ぼう</rt></ruby>を<ruby>立<rt>た</rt></ruby>てて、このつるを<ruby>巻<rt>ま</rt></ruby>いてやった。<ruby>折<rt>お</rt></ruby>れないように<ruby>注意<rt>ちゅうい</rt></ruby>しながら、<ruby>伸<rt>の</rt></ruby>びた<ruby>部分<rt>ぶぶん</rt></ruby>をなるべく<ruby>横<rt>よこ</rt></ruby>に［ 4 ］いいそうだ。やがて<ruby>直径<rt>ちょっけい</rt></ruby>2センチぐらいの<ruby>黄色<rt>きいろ</rt></ruby>い<ruby>花<rt>はな</rt></ruby>がたくさん<ruby>咲<rt>さ</rt></ruby>いた。1<ruby>日<rt>にち</rt></ruby>だけ<ruby>咲<rt>さ</rt></ruby>いて<ruby>落<rt>お</rt></ruby>ちてしまう<ruby>花<rt>はな</rt></ruby>もあるし、ずっと<ruby>咲<rt>さ</rt></ruby>いている<ruby>花<rt>はな</rt></ruby>もある。<ruby>見<rt>み</rt></ruby>ると、<ruby>咲<rt>さ</rt></ruby>き<ruby>続<rt>つづ</rt></ruby>けている<ruby>花<rt>はな</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さい［ 5 ］。<ruby>感動的<rt>かんどうてき</rt></ruby>な<ruby>発見<rt>はっけん</rt></ruby>だった。\n（注：つる）",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30401,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　形をする",
+                "2　形をしている",
+                "3　形をしてきた",
+                "4　形をしていく"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "形状を表す表現「〜形をしている」。名詞を修飾して「きゅうりのような形をしている野菜」。2が正解。",
+              "explanation_en": "Expresses shape/appearance: '〜形をしている野菜'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30402,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　見ている",
+                "2　見られていった",
+                "3　見えてきた",
+                "4　見えていった"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "根が成長して話者の目に次第に見えるようになったので「見えてきた」。3が正解。",
+              "explanation_en": "The white roots became visible to the speaker; '見えてきた'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30403,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　大きくしていけば",
+                "2　大きくしていくので",
+                "3　大きくなっていけば",
+                "4　大きくなっていくので"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "毎日どんどん自然に成長していく様子が楽しみだった理由を述べるので、「大きくなっていくので」。4が正解。",
+              "explanation_en": "'大きくなっていくので' expresses the reason for excitement as it grew larger day by day. Choice 4 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30404,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　広げると",
+                "2　広がると",
+                "3　広げてくると",
+                "4　広がっていくと"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "人間が意図的につるを横に広げる動作（他動詞）＋条件「〜と」。「広げるといいそうだ」。1が正解。",
+              "explanation_en": "Deliberately spreading the vines horizontally (transitive): '広げると'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30405,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　ゴーヤの実がついていた",
+                "2　ゴーヤの実がつけてあった",
+                "3　ゴーヤの実をつけてきた",
+                "4　ゴーヤの実がつけてきた"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "自然に実がなっている状態を発見したので自動詞「ゴーヤの実がついていた」。1が正解。",
+              "explanation_en": "Discovering small bitter gourd fruits naturally attached: 'ゴーヤの実がついていた'. Choice 1 is correct."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_number": 5,
+      "title": "<ruby>第<rt>だい</rt></ruby>5<ruby>課<rt>か</rt></ruby> <ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさない<ruby>手段<rt>しゅだん</rt></ruby>-3 <ruby>受身<rt>うけみ</rt></ruby>・<ruby>使役<rt>しえき</rt></ruby>・<ruby>使役受身<rt>しえきうけみ</rt></ruby>",
+      "title_en": "Lesson 5: Keeping the Speaker's Perspective Consistent 3 - Passive, Causative, Causative-Passive",
+      "theme": "<ruby>受身<rt>うけみ</rt></ruby>・<ruby>使役<rt>しえき</rt></ruby>・<ruby>使役受身<rt>しえきうけみ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>ければ、<ruby>話者<rt>わしゃ</rt></ruby>の<ruby>立場<rt>たちば</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>すことができます。",
+      "theme_en": "The standpoints of the speaker is determined depending on whether the verb is passive, causative and causative passive.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>受身<rt>うけみ</rt></ruby>・<ruby>使役<rt>しえき</rt></ruby>・<ruby>使役受身<rt>しえきうけみ</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>け",
+          "title_en": "Differentiating between Passive, Causative, and Causative-Passive",
+          "categories": [
+            {
+              "form": "<ruby>受身<rt>うけみ</rt></ruby>",
+              "form_en": "Passive",
+              "concept": "「ほかの<ruby>人<rt>ひと</rt></ruby>の<ruby>行為<rt>こうい</rt></ruby>」や「できごとの<ruby>影響<rt>えいきょう</rt></ruby>」を<ruby>受<rt>う</rt></ruby>ける",
+              "subtypes": [
+                {
+                  "subject": "<ruby>人<rt>ひと</rt></ruby>（<ruby>話者<rt>わしゃ</rt></ruby>または<ruby>心理的<rt>しんりてき</rt></ruby>に<ruby>話者<rt>わしゃ</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>）が<ruby>主語<rt>しゅご</rt></ruby>",
+                  "examples": [
+                    "うちの<ruby>子<rt>こ</rt></ruby>は<ruby>先生<rt>せんせい</rt></ruby>にしかられた。",
+                    "わたしはだれかに<ruby>肩<rt>かた</rt></ruby>をたたかれた。",
+                    "<ruby>最後<rt>さいご</rt></ruby>に<ruby>点<rt>てん</rt></ruby>を<ruby>取<rt>と</rt></ruby>られて<ruby>負<rt>ま</rt></ruby>けてしまった。",
+                    "<ruby>突然<rt>とつぜん</rt></ruby><ruby>雨<rt>あめ</rt></ruby>に<ruby>降<rt>ふ</rt></ruby>られてぬれてしまった。"
+                  ]
+                },
+                {
+                  "subject": "<ruby>物<rt>もの</rt></ruby>が<ruby>主語<rt>しゅご</rt></ruby>",
+                  "examples": [
+                    "ワインはぶどうから<ruby>作<rt>つく</rt></ruby>られる。",
+                    "この<ruby>工場<rt>こうじょう</rt></ruby>では<ruby>年間<rt>ねんかん</rt></ruby>25<ruby>万台<rt>まんだい</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>が<ruby>生産<rt>せいさん</rt></ruby>されている。"
+                  ]
+                }
+              ]
+            },
+            {
+              "form": "<ruby>使役<rt>しえき</rt></ruby>",
+              "form_en": "Causative",
+              "concept": "ほかの<ruby>人<rt>ひと</rt></ruby>の<ruby>行為<rt>こうい</rt></ruby>や<ruby>感情<rt>かんじょう</rt></ruby>を<ruby>促<rt>うなが</rt></ruby>す",
+              "subtypes": [
+                {
+                  "type": "<ruby>行為<rt>こうい</rt></ruby>を<ruby>強制<rt>きょうせい</rt></ruby>する",
+                  "examples": [
+                    "わたしは<ruby>犬<rt>いぬ</rt></ruby>にボールを<ruby>取<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>かせた。",
+                    "<ruby>親<rt>おや</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どもたちに<ruby>家事<rt>かじ</rt></ruby>を<ruby>手伝<rt>てつだ</rt></ruby>わせた。",
+                    "<ruby>田村<rt>たむら</rt></ruby>さんはいつもみんなを<ruby>待<rt>ま</rt></ruby>たせる。"
+                  ]
+                },
+                {
+                  "type": "<ruby>行為<rt>こうい</rt></ruby>を<ruby>許<rt>ゆる</rt></ruby>す",
+                  "examples": [
+                    "<ruby>母<rt>はは</rt></ruby>は<ruby>疲<rt>つか</rt></ruby>れている。あしたは<ruby>一日<rt>いちにち</rt></ruby><ruby>休<rt>やす</rt></ruby>ませてあげよう。",
+                    "<ruby>監督<rt>かんとく</rt></ruby>はぼくたちにジュースを<ruby>飲<rt>の</rt></ruby>ませてくれた。",
+                    "わたしにも<ruby>意見<rt>いけん</rt></ruby>を<ruby>言<rt>い</rt></ruby>わせてもらいたいです。"
+                  ]
+                },
+                {
+                  "type": "<ruby>感情<rt>かんじょう</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>き<ruby>出<rt>だ</rt></ruby>す",
+                  "examples": [
+                    "<ruby>弟<rt>おとうと</rt></ruby>はよく<ruby>母<rt>はは</rt></ruby>を<ruby>怒<rt>おこ</rt></ruby>らせる。",
+                    "ヤンさんはいつもみんなを<ruby>笑<rt>わら</rt></ruby>わせている。"
+                  ]
+                }
+              ]
+            },
+            {
+              "form": "<ruby>使役受身<rt>しえきうけみ</rt></ruby>",
+              "form_en": "Causative-Passive",
+              "concept": "<ruby>促<rt>うなが</rt></ruby>す<ruby>行為<rt>こうい</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける、<ruby>感情<rt>かんじょう</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
+              "subtypes": [
+                {
+                  "type": "<ruby>行為<rt>こうい</rt></ruby>の<ruby>強制<rt>きょうせい</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
+                  "examples": [
+                    "わたしは<ruby>監督<rt>かんとく</rt></ruby>にボールを<ruby>取<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>かされた。",
+                    "わたしは<ruby>親<rt>おや</rt></ruby>に<ruby>家事<rt>かじ</rt></ruby>を<ruby>手伝<rt>てつだ</rt></ruby>わされた。",
+                    "<ruby>田村<rt>たむら</rt></ruby>さんにはいつも<ruby>待<rt>ま</rt></ruby>たされる。"
+                  ]
+                },
+                {
+                  "type": "<ruby>感情<rt>かんじょう</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
+                  "examples": [
+                    "わたしは<ruby>弟<rt>おとうと</rt></ruby>によく<ruby>泣<rt>な</rt></ruby>かされる。",
+                    "その<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んで<ruby>深<rt>ふか</rt></ruby>く<ruby>考<rt>かんが</rt></ruby>えさせられた。"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30501,
+          "category": "第3部 5課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "1 <ruby>父<rt>ちち</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>がテレビで（①<ruby>紹介<rt>しょうかい</rt></ruby>する→＿＿＿）たので、<ruby>急<rt>きゅう</rt></ruby>に<ruby>客<rt>きゃく</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えた。そのため、<ruby>父<rt>ちち</rt></ruby>は<ruby>兄<rt>あに</rt></ruby>や<ruby>姉<rt>あね</rt></ruby>にも<ruby>店<rt>みせ</rt></ruby>を（②<ruby>手伝<rt>てつだ</rt></ruby>う→＿＿＿）ている。しかし、わたしには（③<ruby>手伝<rt>てつだ</rt></ruby>う→＿＿＿）つもりはないらしい。",
+          "correct_answers": [
+            "① 紹介され",
+            "② 手伝わせ",
+            "③ 手伝わせる"
+          ],
+          "explanation_ja": "①店がテレビで紹介された（受身）。②兄や姉に手伝わせている（使役）。③わたしには手伝わせるつもりはない（使役）。",
+          "explanation_en": "①'紹介され' (passive). ②'手伝わせ' (causative). ③'手伝わせる' (causative)."
+        },
+        {
+          "question_id": 30502,
+          "category": "第3部 5課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "2 サッカー<ruby>部<rt>ぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>ったが、なかなかボールに（①<ruby>触<rt>さわ</rt></ruby>る→＿＿＿）てもらえず、<ruby>先輩<rt>せんぱい</rt></ruby>に（②<ruby>走<rt>はし</rt></ruby>る→＿＿＿）てばかりいる。つまらないのでゆっくり<ruby>走<rt>はし</rt></ruby>ると、すぐに<ruby>大<rt>おお</rt></ruby>きな<ruby>声<rt>こえ</rt></ruby>で（③<ruby>注意<rt>ちゅうい</rt></ruby>する→＿＿＿）て、<ruby>練習<rt>れんしゅう</rt></ruby>の<ruby>後<rt>あと</rt></ruby>も<ruby>部屋<rt>へや</rt></ruby>の<ruby>掃除<rt>そうじ</rt></ruby>を（④する→＿＿＿）。もう<ruby>辞<rt>や</rt></ruby>めようかと<ruby>思<rt>おも</rt></ruby>った。でも、<ruby>先日<rt>せんじつ</rt></ruby><ruby>試合<rt>しあい</rt></ruby>に（⑤<ruby>出場<rt>しゅつじょう</rt></ruby>する→＿＿＿）てもらって、<ruby>先輩<rt>せんぱい</rt></ruby>によくがんばったと（⑥ほめる→＿＿＿）たので、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>続<rt>つづ</rt></ruby>けてみようと<ruby>思<rt>おも</rt></ruby>う。",
+          "correct_answers": [
+            "① 触らせ",
+            "② 走らされ",
+            "③ 注意され",
+            "④ させられる",
+            "⑤ 出場させ",
+            "⑥ ほめられ"
+          ],
+          "explanation_ja": "①触らせてもらえず（使役て形＋もらう）。②走らされて（使役受身）。③注意されて（受身）。④させられる（使役受身）。⑤出場させてもらって（使役て形＋もらう）。⑥ほめられた（受身）。",
+          "explanation_en": "①'触らせ' (causative). ②'走らされ' (causative-passive). ③'注意され' (passive). ④'させられる' (causative-passive). ⑤'出場させ' (causative). ⑥'ほめられ' (passive)."
+        },
+        {
+          "question_id": 30503,
+          "category": "第3部 5課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "3 <ruby>急<rt>きゅう</rt></ruby>に<ruby>昔<rt>むかし</rt></ruby>の<ruby>友<rt>とも</rt></ruby>だちに<ruby>会<rt>あ</rt></ruby>いたくなったので、メールを（①<ruby>送<rt>おく</rt></ruby>る→＿＿＿）た。じょうだんを<ruby>言<rt>い</rt></ruby>ってよくわたしたちを（②<ruby>笑<rt>わら</rt></ruby>う→＿＿＿）ていた<ruby>人<rt>ひと</rt></ruby>だ。<ruby>会<rt>あ</rt></ruby>って<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くと<ruby>今<rt>いま</rt></ruby>は3<ruby>人<rt>にん</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもを（③<ruby>育<rt>そだ</rt></ruby>てる→＿＿＿）ているそうだが、<ruby>明<rt>あか</rt></ruby>るさは<ruby>昔<rt>むかし</rt></ruby>と<ruby>変<rt>か</rt></ruby>わっていない。あまりきびしいことを（④<ruby>言<rt>い</rt></ruby>う→＿＿＿）ないで、<ruby>子<rt>こ</rt></ruby>どもたちを<ruby>自由<rt>じゆう</rt></ruby>に（⑤<ruby>遊<rt>あそ</rt></ruby>ぶ→＿＿＿）ているのだそうだ。<ruby>彼女<rt>かのじょ</rt></ruby>らしい（⑥<ruby>育<rt>そだ</rt></ruby>てる→＿＿＿）<ruby>方<rt>かた</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>った。",
+          "correct_answers": [
+            "① 送っ",
+            "② 笑わせ",
+            "③ 育て",
+            "④ 言わ",
+            "⑤ 遊ばせ",
+            "⑥ 育て"
+          ],
+          "explanation_ja": "①送った（能動過去）。②笑わせていた（使役）。③育てている（能動）。④言わないで（否定）。⑤遊ばせている（使役）。⑥育て方（連用形＋方）。",
+          "explanation_en": "①'送っ' (active). ②'笑わせ' (causative). ③'育て' (active). ④'言わ' (negative). ⑤'遊ばせ' (causative). ⑥'育て' (masu-stem)."
+        },
+        {
+          "question_id": 30504,
+          "category": "第3部 5課 練習",
+          "question_type": "fill_conjugation",
+          "prompt": "4 <ruby>病院<rt>びょういん</rt></ruby>や<ruby>銀行<rt>ぎんこう</rt></ruby>などでは、<ruby>順番<rt>じゅんばん</rt></ruby>を<ruby>待<rt>ま</rt></ruby>つ<ruby>人<rt>ひと</rt></ruby>に<ruby>待<rt>ま</rt></ruby>ち<ruby>時間<rt>じかん</rt></ruby>を<ruby>長<rt>なが</rt></ruby>く（①<ruby>感<rt>かん</rt></ruby>じる→＿＿＿）ないように、いろいろな<ruby>工夫<rt>くふう</rt></ruby>を（②する→＿＿＿）ている。<ruby>待合室<rt>まちあいしつ</rt></ruby>などに（③<ruby>置<rt>お</rt></ruby>く→＿＿＿）てあるテレビや<ruby>雑誌<rt>ざっし</rt></ruby>もその<ruby>一<rt>ひと</rt></ruby>つだ。<ruby>絵本<rt>えほん</rt></ruby>やおもちゃも、<ruby>親<rt>おや</rt></ruby>に<ruby>連<rt>つ</rt></ruby>れて（④くる→＿＿＿）た<ruby>子<rt>こ</rt></ruby>どもを（⑤あきる→＿＿＿）ないためのものだ。しかし、いちばんいいのは、<ruby>病院<rt>びょういん</rt></ruby>や<ruby>銀行<rt>ぎんこう</rt></ruby>が<ruby>人<rt>ひと</rt></ruby>を（⑥<ruby>待<rt>ま</rt></ruby>つ→＿＿＿）ないことだろう。",
+          "correct_answers": [
+            "① 感じさせ",
+            "② し",
+            "③ 置い",
+            "④ こられ",
+            "⑤ あきさせ",
+            "⑥ 待たせ"
+          ],
+          "explanation_ja": "①感じさせないように（使役）。②している（能動）。③置いてある（他動詞て形＋ある）。④連れてこられた（受身）。⑤あきさせない（使役）。⑥待たせない（使役）。",
+          "explanation_en": "①'感じさせ' (causative). ②'し' (active). ③'置い' (transitive + aru). ④'こられ' (passive). ⑤'あきさせ' (causative). ⑥'待たせ' (causative)."
+        }
+      ]
+    },
+    {
+      "section_number": 6,
+      "title": "<ruby>第<rt>だい</rt></ruby>6<ruby>課<rt>か</rt></ruby> <ruby>話者<rt>わしゃ</rt></ruby>が<ruby>見<rt>み</rt></ruby>る<ruby>位置<rt>いち</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かさない<ruby>手段<rt>しゅだん</rt></ruby>-4 〜てあげる・〜てもらう・〜てくれる",
+      "title_en": "Lesson 6: Keeping the Speaker's Perspective Consistent 4 - '~te ageru', '~te morau', '~te kureru'",
+      "theme": "<ruby>比<rt>くら</rt></ruby>べて<ruby>考<rt>かんが</rt></ruby>えたとき、<ruby>心理的<rt>しんりてき</rt></ruby>に<ruby>話者<rt>わしゃ</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い<ruby>方<rt>ほう</rt></ruby>の<ruby>立場<rt>たちば</rt></ruby>に<ruby>立<rt>た</rt></ruby>って<ruby>文<rt>ぶん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ります。",
+      "theme_en": "These forms express relative closeness of relationship. The speaker can choose a standpoint that identifies with a person to whom he is emotionally or personally close.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>心理的<rt>しんりてき</rt></ruby>に<ruby>話者<rt>わしゃ</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い<ruby>方<rt>ほう</rt></ruby>の<ruby>立場<rt>たちば</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ",
+          "rules": [
+            "●は○に〜てあげる: ●→○ (●: 話者／話者に近い人, ○: 話者から遠い人)",
+            "●は○に〜てもらう: ●←○",
+            "○は●に〜てくれる: ○→●",
+            "× 山川さんはわたしの母に服を作ってあげました。（山川さんより母の方が近い）",
+            "○ わたしの母は山川さんに服を作ってもらいました。"
+          ]
+        },
+        {
+          "point_number": 2,
+          "title": "いやな<ruby>気持<rt>きも</rt></ruby>ちを<ruby>表<rt>あらわ</rt></ruby>すときは、<ruby>話者<rt>わしゃ</rt></ruby>を<ruby>主語<rt>しゅご</rt></ruby>にして<ruby>受身文<rt>うけみぶん</rt></ruby>で<ruby>言<rt>い</rt></ruby>います。",
+          "reference": "第3部 5課",
+          "examples": [
+            "例・どろぼうに荷物を持っていかれた。（いやな気持ち）",
+            "・（わたしは）カンさんに荷物を外に持っていってもらった。（うれしい気持ち）",
+            "・カンさんが荷物を外に持っていってくれた。（うれしい気持ち）"
+          ]
+        },
+        {
+          "point_number": 3,
+          "title": "「〜てもらう」の<ruby>文<rt>ぶん</rt></ruby>は、いつも「〈<ruby>人<rt>ひと</rt></ruby>〉に（〜を）〜てもらう」という<ruby>形<rt>かたち</rt></ruby>になります。「〜てあげる・〜てくれる」の<ruby>文<rt>ぶん</rt></ruby>では、<ruby>動詞<rt>どうし</rt></ruby>に<ruby>合<rt>あ</rt></ruby>った<ruby>助詞<rt>じょし</rt></ruby>を<ruby>使<rt>つか</rt></ruby>います。",
+          "particle_patterns": [
+            {
+              "structure": "〈人〉を 誘う、起こす、泊める、招待する",
+              "examples": [
+                "わたしは友だちを部屋に泊めてあげた。",
+                "山口さんはわたしをパーティーに招待してくれた。"
+              ]
+            },
+            {
+              "structure": "〈人〉に〜を（注1） 貸す、教える、見せる、紹介する",
+              "note": "注1: 必ず「〈人〉に〜を」を使う動詞",
+              "examples": [
+                "母はおじにお金を貸してあげたようだ。",
+                "ヤンさんはわたしに中国語を教えてくれる。"
+              ]
+            },
+            {
+              "structure": "〈人〉に〜を（注2） 作る、買う、歌う、読む",
+              "note": "注2: 本来は「〜を」を使う動詞だが、ある人のためにその行為をするときだけ「〈人〉に〜を」を使う動詞",
+              "examples": [
+                "わたしは毎晩子どもたちに本を読んでやっている。",
+                "山川さんはわたしに指輪を買ってくれた。"
+              ]
+            },
+            {
+              "structure": "〈人〉の〜を 持つ、運ぶ、直す、手伝う",
+              "examples": [
+                "姉は高橋さんの仕事を手伝ってあげたそうだ。",
+                "ヤンさんがわたしのパソコンを直してくれた。"
+              ]
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30601,
+          "category": "第3部 6課 練習",
+          "question_type": "three_choice_cloze",
+          "prompt": "1 きのうかぜで<ruby>一日中<rt>いちにちじゅう</rt></ruby><ruby>寝<rt>ね</rt></ruby>ていた。<ruby>同<rt>おな</rt></ruby>じアパートのカンさんが、<ruby>晩<rt>ばん</rt></ruby>ご<ruby>飯<rt>はん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>って（① a あげた　b もらった　c くれた）。カンさんは<ruby>料理<rt>りょうり</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>で、ときどき<ruby>大家<rt>おおや</rt></ruby>さんにも<ruby>国<rt>くに</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>って（② a あげている　b もらっている　c くれている）。「ぼくは<ruby>大切<rt>たいせつ</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>がある<ruby>日<rt>ひ</rt></ruby>は、<ruby>大家<rt>おおや</rt></ruby>さんに<ruby>頼<rt>たの</rt></ruby>んで（③ a <ruby>起<rt>お</rt></ruby>こしてあげて　b <ruby>起<rt>お</rt></ruby>こしてもらって　c <ruby>起<rt>お</rt></ruby>こしてくれて）いるので、そのお<ruby>礼<rt>れい</rt></ruby>なんです。」とカンさんは<ruby>言<rt>い</rt></ruby>う。",
+          "correct_answers": [
+            "① c",
+            "② a",
+            "③ b"
+          ],
+          "explanation_ja": "①カンさんがわたしに「作ってくれた」（c）。②カンさんが大家さんに「作ってあげている」（a）。③大家さんに頼んで「起こしてもらっている」（b）。",
+          "explanation_en": "①'作ってくれた' (c). ②'作ってあげている' (a). ③'起こしてもらって' (b)."
+        },
+        {
+          "question_id": 30602,
+          "category": "第3部 6課 練習",
+          "question_type": "three_choice_cloze",
+          "prompt": "2 となりの<ruby>鈴木<rt>すずき</rt></ruby>さんは<ruby>親切<rt>しんせつ</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>だ。わたしは<ruby>前<rt>まえ</rt></ruby>に<ruby>鈴木<rt>すずき</rt></ruby>さんにこわれた<ruby>自転車<rt>じてんしゃ</rt></ruby>を（① a <ruby>直<rt>なお</rt></ruby>してあげた　b <ruby>直<rt>なお</rt></ruby>してもらった　c <ruby>直<rt>なお</rt></ruby>してくれた）ことがある。その<ruby>自転車<rt>じてんしゃ</rt></ruby>は、<ruby>学校<rt>がっこう</rt></ruby>の（② a <ruby>先輩<rt>せんぱい</rt></ruby>にゆずってあげた　b <ruby>先輩<rt>せんぱい</rt></ruby>にゆずってもらった　c <ruby>先輩<rt>せんぱい</rt></ruby>がゆずってあげた）<ruby>物<rt>もの</rt></ruby>だ。<ruby>鈴木<rt>すずき</rt></ruby>さんがこわれていたベルを（③ a <ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えてあげた　b <ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えてもらった　c <ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えてくれた）ので、ずっと<ruby>使<rt>つか</rt></ruby>っていたのだが、この<ruby>間<rt>あいだ</rt></ruby>、だれかにそのベルを（④ a <ruby>盗<rt>ぬす</rt></ruby>んでもらって　b <ruby>盗<rt>ぬす</rt></ruby>ませて　c <ruby>盗<rt>ぬす</rt></ruby>まれて）しまった。",
+          "correct_answers": [
+            "① b",
+            "② b",
+            "③ c",
+            "④ c"
+          ],
+          "explanation_ja": "①わたしは鈴木さんに「直してもらった」（b）。②学校の先輩に「ゆずってもらった」（b）。③鈴木さんが「取り替えてくれた」（c）。④だれかにベルを「盗まれて」（c、被害受身）。",
+          "explanation_en": "①'直してもらった' (b). ②'ゆずってもらった' (b). ③'取り替えてくれた' (c). ④'盗まれて' (c, suffering passive)."
+        },
+        {
+          "question_id": 30603,
+          "category": "第3部 6課 練習",
+          "question_type": "three_choice_cloze",
+          "prompt": "3 ある<ruby>日<rt>ひ</rt></ruby>、<ruby>宿題<rt>しゅくだい</rt></ruby>で<ruby>書<rt>か</rt></ruby>いた<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>作文<rt>さくぶん</rt></ruby>をだれかに（① a <ruby>見<rt>み</rt></ruby>てあげたい　b <ruby>見<rt>み</rt></ruby>てもらいたい　c <ruby>見<rt>み</rt></ruby>せてもらいたい）と<ruby>思<rt>おも</rt></ruby>ったので、アルバイトをしている<ruby>店<rt>みせ</rt></ruby>の<ruby>店長<rt>てんちょう</rt></ruby>に<ruby>頼<rt>たの</rt></ruby>んでみた。すると、<ruby>高校生<rt>こうこうせい</rt></ruby>の<ruby>娘<rt>むすめ</rt></ruby>さんを（② a <ruby>紹介<rt>しょうかい</rt></ruby>してあげた　b <ruby>紹介<rt>しょうかい</rt></ruby>してもらった　c <ruby>紹介<rt>しょうかい</rt></ruby>してくれた）。<ruby>娘<rt>むすめ</rt></ruby>さんは<ruby>英語<rt>えいご</rt></ruby>が<ruby>苦<rt>にが</rt></ruby><ruby>手<rt>て</rt></ruby>らしいので、わたしはときどき<ruby>日本語<rt>にほんご</rt></ruby>を（③ a <ruby>教<rt>おし</rt></ruby>えてあげる　b <ruby>教<rt>おし</rt></ruby>えてもらう　c <ruby>教<rt>おし</rt></ruby>えてくれる）かわりに、<ruby>英語<rt>えいご</rt></ruby>を（④ a <ruby>教<rt>おし</rt></ruby>えてあげる　b <ruby>教<rt>おし</rt></ruby>えてもらう　c <ruby>教<rt>おし</rt></ruby>えてくれる）ことにした。",
+          "correct_answers": [
+            "① b",
+            "② c",
+            "③ b",
+            "④ a"
+          ],
+          "explanation_ja": "①だれかに作文を「見てもらいたい」（b）。②店長が娘さんを「紹介してくれた」（c）。③わたしが日本語を「教えてもらう」（b）かわりに、英語を「教えてあげる」（a）。",
+          "explanation_en": "①'見てもらいたい' (b). ②'紹介してくれた' (c). ③'教えてもらう' (b). ④'教えてあげる' (a)."
+        }
+      ]
+    },
+    {
+      "section_number": 6.5,
+      "title": "まとめ<ruby>問題<rt>もんだい</rt></ruby>（5<ruby>課<rt>か</rt></ruby>・6<ruby>課<rt>か</rt></ruby>）",
+      "title_en": "Review Exercises (Lessons 5 & 6)",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>の<ruby>総合練習<rt>そうごうれんしゅう</rt></ruby>（<ruby>受身<rt>うけみ</rt></ruby>・<ruby>使役<rt>しえき</rt></ruby>・やりもらい）",
+      "theme_en": "Comprehensive text grammar review: Passive, causative, and benefactive expressions",
+      "passages": [
+        {
+          "passage_id": 305,
+          "title": "自転車と歩行者",
+          "title_en": "Bicycles and Pedestrians",
+          "text": "<ruby>先日<rt>せんじつ</rt></ruby>、<ruby>後<rt>うし</rt></ruby>ろから<ruby>来<rt>き</rt></ruby>た<ruby>自転車<rt>じてんしゃ</rt></ruby>に［ 1 ］しまいました。わたしは<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたのですから、<ruby>悪<rt>わる</rt></ruby>いのはもちろん<ruby>自転車<rt>じてんしゃ</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>です。\n<ruby>次<rt>つぎ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>、その<ruby>歩道<rt>ほどう</rt></ruby>で<ruby>今度<rt>こんど</rt></ruby>はわたしが<ruby>自転車<rt>じてんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>っていたときのことです。<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもを<ruby>連<rt>つ</rt></ruby>れたお<ruby>母<rt>かあ</rt></ruby>さんが<ruby>前<rt>まえ</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたので、ベルを［ 2 ］。すると、そのお<ruby>母<rt>かあ</rt></ruby>さんは「<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らないで。」と<ruby>言<rt>い</rt></ruby>いました。［ 3 ］<ruby>困<rt>こま</rt></ruby>ると<ruby>言<rt>い</rt></ruby>いたそうな<ruby>顔<rt>かお</rt></ruby>で、<ruby>彼女<rt>かのじょ</rt></ruby>はわたしをにらみました。\n<ruby>道路交通法<rt>どうろこうつうほう</rt></ruby>という<ruby>法律<rt>ほうりつ</rt></ruby>がありますが、2008<ruby>年<rt>ねん</rt></ruby>に<ruby>改正<rt>かいせい</rt></ruby>されて、<ruby>歩道<rt>ほどう</rt></ruby>の<ruby>安全<rt>あんぜん</rt></ruby>のために<ruby>自転車<rt>じてんしゃ</rt></ruby>は<ruby>基本的<rt>きほんてき</rt></ruby>に<ruby>車道<rt>しゃどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>ることになりました。けれども、<ruby>車<rt>くるま</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>場合<rt>ばあい</rt></ruby>、<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>車道<rt>しゃどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>ったら、［ 4 ］<ruby>迷惑<rt>めいわく</rt></ruby>でしょう。この<ruby>法律<rt>ほうりつ</rt></ruby>には<ruby>自転車<rt>じてんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>の<ruby>年齢<rt>ねんれい</rt></ruby>などいろいろ<ruby>条件<rt>じょうけん</rt></ruby>があるようですが、わたしは<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>危険<rt>きけん</rt></ruby>な<ruby>車道<rt>しゃどう</rt></ruby>を［ 5 ］いやです。でも、<ruby>歩<rt>ある</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>の<ruby>立場<rt>たちば</rt></ruby>になって<ruby>考<rt>かんが</rt></ruby>えると、<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>る<ruby>自転車<rt>じてんしゃ</rt></ruby>は<ruby>迷惑<rt>めいわく</rt></ruby>です。<ruby>自転車<rt>じてんしゃ</rt></ruby>のための<ruby>道<rt>みち</rt></ruby>がもっと<ruby>増<rt>ふ</rt></ruby>えればいいのに、と<ruby>思<rt>おも</rt></ruby>います。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30501,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　ぶつけて",
+                "2　ぶつけられて",
+                "3　ぶつけさせて",
+                "4　ぶつけさせられて"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "自転車にぶつかられた被害受身。「ぶつけられてしまいました」。2が正解。",
+              "explanation_en": "Suffering passive: 'ぶつけられて' (was bumped into by a bicycle). Choice 2 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30502,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　鳴らしました",
+                "2　鳴らされました",
+                "3　鳴らしてもらいました",
+                "4　鳴らしてくれました"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "自転車に乗っていた話者自身の能動動作なので「鳴らしました」。1が正解。",
+              "explanation_en": "Active action of the speaker riding the bike: '鳴らしました'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30503,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　注意させられないと",
+                "2　注意させないと",
+                "3　注意してあげないと",
+                "4　注意してくれないと"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "母親の立場での発言「（わたしに）注意してくれないと困る」。4が正解。",
+              "explanation_en": "'注意してくれないと困る' reflects the mother's sentiment toward the speaker. Choice 4 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30504,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　車の人には",
+                "2　歩く人には",
+                "3　自転車の人には",
+                "4　子どもやお年寄りには"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "車道に自転車が入ると自動車の運転手にとって迷惑となるので「車の人には迷惑でしょう」。1が正解。",
+              "explanation_en": "Bikes in the car lane cause nuisance for motorists: '車の人には'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30505,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　走れるのは",
+                "2　走らされるのは",
+                "3　走ってあげるのは",
+                "4　走ってもらうのは"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "危険な車道を走るよう強制される使役受身「走らされるのはいやです」。2が正解。",
+              "explanation_en": "Causative-passive indicating being forced to ride on dangerous car roads: '走らされるのは'. Choice 2 is correct."
+            }
+          ]
+        },
+        {
+          "passage_id": 306,
+          "title": "税金についての意識",
+          "title_en": "Awareness of Taxes",
+          "text": "わたしたちはどんなときに「<ruby>税金<rt>ぜいきん</rt></ruby>」のことを<ruby>考<rt>かんが</rt></ruby>えるでしょうか。スーパーで<ruby>肉<rt>にく</rt></ruby>や<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>うときなどは、<ruby>税金<rt>ぜいきん</rt></ruby>（<ruby>消費税<rt>しょうひぜい</rt></ruby>）を<ruby>払<rt>はら</rt></ruby>っているという<ruby>意識<rt>いしき</rt></ruby>はあまり<ruby>高<rt>たか</rt></ruby>くないかもしれません。たばこ<ruby>税<rt>ぜい</rt></ruby>や<ruby>酒税<rt>しゅぜい</rt></ruby>についても、<ruby>値段<rt>ねだん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>初<rt>はじ</rt></ruby>めから<ruby>入<rt>はい</rt></ruby>っているため、<ruby>税金<rt>ぜいきん</rt></ruby>を［ 1 ］という<ruby>意識<rt>いしき</rt></ruby>は<ruby>薄<rt>うす</rt></ruby>いでしょう。\nしかし、<ruby>例<rt>たと</rt></ruby>えば<ruby>何<rt>なに</rt></ruby>かの<ruby>修理<rt>しゅうり</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>むときなどは<ruby>意識<rt>いしき</rt></ruby>が<ruby>強<rt>つよ</rt></ruby>くなるでしょう。<ruby>修理代<rt>しゅうりだい</rt></ruby>のほかに、［ 2 ］ことがわかります。もし<ruby>税金<rt>ぜいきん</rt></ruby>が<ruby>加<rt>くわ</rt></ruby>わらなければもっと<ruby>安<rt>やす</rt></ruby>いりになあ、と<ruby>残念<rt>ざんねん</rt></ruby>な<ruby>気<rt>き</rt></ruby>がします。また、<ruby>会社<rt>かいしゃ</rt></ruby>から<ruby>給料<rt>きゅうりょう</rt></ruby>を［ 3 ］ときも<ruby>同<rt>おな</rt></ruby>じような<ruby>気持<rt>きも</rt></ruby>ちになります。<ruby>全体<rt>ぜんたい</rt></ruby>の<ruby>給料<rt>きゅうりょう</rt></ruby>から<ruby>税金<rt>ぜいきん</rt></ruby>が［ 4 ］、<ruby>実際<rt>じっさい</rt></ruby>に<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>れる<ruby>金額<rt>きんがく</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなるからです。\nこのように、わたしたちは<ruby>意識<rt>いしき</rt></ruby>してもしなくても、さまざまな<ruby>場面<rt>ばめん</rt></ruby>で<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>っています。<ruby>政府<rt>せいふ</rt></ruby>には、わたしたちから<ruby>取<rt>と</rt></ruby>る<ruby>税金<rt>ぜいきん</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>をもっとしっかり［ 5 ］。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30601,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　払わせている",
+                "2　払わされている",
+                "3　払ってもらえる",
+                "4　払ってくれる"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "税金を強制的に支払わされているという使役受身「払わされている」。2が正解。",
+              "explanation_en": "Causative-passive expressing being made to pay: '払わされている'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30602,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　税金が取られる",
+                "2　税金を取らせる",
+                "3　税金を払ってあげる",
+                "4　税金を払ってもらう"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "修理代のほかに税金が徴収される被害受身「税金が取られる」。1が正解。",
+              "explanation_en": "Passive form: '税金が取られる' (tax is taken). Choice 1 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30603,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　払った",
+                "2　あげた",
+                "3　くれた",
+                "4　もらった"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "会社から給料を「もらった」とき（受け取る動作）。4が正解。",
+              "explanation_en": "Receiving salary from the company: '給料をもらったとき'. Choice 4 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30604,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　引かれるので",
+                "2　引かれても",
+                "3　引かせるのに",
+                "4　引かせても"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "給料から税金が差し引かれる理由を述べる受身「引かれるので」。1が正解。",
+              "explanation_en": "Causal passive reason: '引かれるので' (because it is deducted). Choice 1 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30605,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　考えられます",
+                "2　考えてあげたいです",
+                "3　考えてもらいたいです",
+                "4　考えてくれます"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "政府に対して望むことなので「〜てもらいたい」。「考えてもらいたいです」。3が正解。",
+              "explanation_en": "Expressing a request/desire toward the government: '考えてもらいたいです'. Choice 3 is correct."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_number": 7,
+      "title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> こ・そ・あ",
+      "title_en": "Lesson 7: Demonstratives (Ko, So, A)",
+      "theme": "まとまりのある<ruby>文章<rt>ぶんしょう</rt></ruby>にするために、「こ・そ・あ」を<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けることが<ruby>大切<rt>たいせつ</rt></ruby>です。",
+      "theme_en": "To ensure a sentence is coherent, it is important to correctly distinguish the usage of こ, そ and あ.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>では、<ruby>前<rt>まえ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>語<rt>ご</rt></ruby>や<ruby>文<rt>ぶん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>指<rt>さ</rt></ruby>すとき、ふつう「そ」を<ruby>使<rt>つか</rt></ruby>います。ただし、<ruby>自分<rt>じぶん</rt></ruby>と<ruby>心理的<rt>しんりてき</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>いことを<ruby>示<rt>しめ</rt></ruby>したいときは「こ」を<ruby>使<rt>つか</rt></ruby>うことが<ruby>多<rt>おお</rt></ruby>いです。",
+          "examples": [
+            "書類をどこかに置き忘れた。それには大切な情報が書いてあったのだが……。",
+            "実験は安全だろうか。まずそのことを確かめてから始めたい。",
+            "新しい市長が決まった。この人はわたしの高校時代の同級生である。"
+          ]
+        },
+        {
+          "point_number": 2,
+          "title": "<ruby>個人的<rt>こじんてき</rt></ruby>な<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>している<ruby>物<rt>もの</rt></ruby>を<ruby>指<rt>さ</rt></ruby>すとき、「あ」を<ruby>使<rt>つか</rt></ruby>います。",
+          "examples": [
+            "子どものころ、近くの公園でよく遊んだ。あの公園はまだ残っているだろうか。"
+          ]
+        },
+        {
+          "point_number": 3,
+          "title": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の「こ・そ」の<ruby>形<rt>かたち</rt></ruby>",
+          "forms_table": [
+            {
+              "forms": "それ／これ",
+              "usage": "物・内容を指す",
+              "examples": "友だちから指輪をもらった。これは今、わたしの宝物である。／進学するお金がない。それが問題だ。"
+            },
+            {
+              "forms": "そこ／ここ",
+              "usage": "場所・部分を指す",
+              "examples": "港に着いて船を降りた。そこで母が待っていた。／この曲は初めのメロディがすてきだ。ここは何度聞いてもあきない。"
+            },
+            {
+              "forms": "その／この",
+              "usage": "限定する",
+              "examples": "明日、ある会社の社長に会う。その会社は大阪にある。／今年の誕生日に山に行った。この日は非常に寒かった。"
+            },
+            {
+              "forms": "そんな／こんな／そういう／こういう",
+              "usage": "状況を指す",
+              "examples": "妹は一日12時間も寝る。こんな人は珍しいのではないか。／この川では最近全く魚が釣れない。そういうことは今までなかった。"
+            },
+            {
+              "forms": "こう／そう",
+              "usage": "前の文の内容を指して副詞のように使う",
+              "examples": "困ったとき助けてくれる友だちがいる。そう思うと安心する。／忙しい、時間がない。こう言い訳するのがわたしのくせだ。／毎日朝夕5分間ずつ英語を聞く。こうすると聞き取りが上達する。"
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30701,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>友<rt>とも</rt></ruby>だちに<ruby>会<rt>あ</rt></ruby>う<ruby>約束<rt>やくそく</rt></ruby>があった。わたしは（a それ　b そこ）を<ruby>忘<rt>わす</rt></ruby>れていた。",
+          "options": [
+            "a それ",
+            "b そこ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "約束という内容・事柄を指すので「それ」。",
+          "explanation_en": "Refers to the promise/fact (thing/content): 'それ'."
+        },
+        {
+          "question_id": 30702,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>中山<rt>なかやま</rt></ruby><ruby>君<rt>くん</rt></ruby>が<ruby>不合格<rt>ふごうかく</rt></ruby>だったそうだ。（a そんな　b あんな）ことは<ruby>信<rt>しん</rt></ruby>じられない。",
+          "options": [
+            "a そんな",
+            "b あんな"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "直前に言及された他者の状況・情報を受けるので「そんな」。",
+          "explanation_en": "Refers back to mentioned information: 'そんな'."
+        },
+        {
+          "question_id": 30703,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>から<ruby>大雨<rt>おおあめ</rt></ruby>でいやだなあ。（a そういう　b こんな）<ruby>日<rt>ひ</rt></ruby>はどこへも<ruby>出<rt>で</rt></ruby>かけたくない。",
+          "options": [
+            "a そういう",
+            "b こんな"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "話し手が今まさに直面している当日の心理的に近い状況なので「こんな」。",
+          "explanation_en": "Points to today's immediately experienced rainy situation: 'こんな'."
+        },
+        {
+          "question_id": 30704,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>図書館<rt>としょかん</rt></ruby>で、<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>本<rt>ほん</rt></ruby>をほかの<ruby>人<rt>ひと</rt></ruby>が<ruby>借<rt>か</rt></ruby>りていることがあります。（a そういう　b それ）の<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>予約<rt>よやく</rt></ruby>をすることができます。",
+          "options": [
+            "a そういう",
+            "b それ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "名詞「場合」を連体修飾して状況を指すので「そういう場合」。",
+          "explanation_en": "Modifies noun '場合' pointing to the situation: 'そういう場合'."
+        },
+        {
+          "question_id": 30705,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>少子化<rt>しょうしか</rt></ruby>というのはそんなに<ruby>悪<rt>わる</rt></ruby>いことではないのではないか。（a こう　b これを）<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>いだろう。",
+          "options": [
+            "a こう",
+            "b これを"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「〜と考える」の引用副詞的に前の文の内容を受けるので「こう考える」。",
+          "explanation_en": "Acts adverbially with the verb of thinking: 'こう考える'."
+        },
+        {
+          "question_id": 30706,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>世<rt>よ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>には<ruby>自分<rt>じぶん</rt></ruby>とそっくりな<ruby>人<rt>ひと</rt></ruby>が3<ruby>人<rt>にん</rt></ruby>いるという。しかし、わたしは（a その　b そんな）<ruby>人<rt>ひと</rt></ruby>には<ruby>会<rt>あ</rt></ruby>ったことがない。",
+          "options": [
+            "a その",
+            "b そんな"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「自分とそっくりな人」というタイプ・性質の人を指すので「そんな人」。",
+          "explanation_en": "Indicates a person of such a type/nature: 'そんな人'."
+        },
+        {
+          "question_id": 30707,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "パリには<ruby>前<rt>まえ</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby><ruby>行<rt>い</rt></ruby>った。（a その　b そんな）ときわたしは<ruby>二十歳<rt>はたち</rt></ruby>だった。",
+          "options": [
+            "a その",
+            "b そんな"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "前にパリへ行ったその時点を限定して指すので「そのとき」。",
+          "explanation_en": "Specifies that particular point in time: 'そのとき'."
+        },
+        {
+          "question_id": 30708,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>眠<rt>ねむ</rt></ruby>れないときは<ruby>薬<rt>くすり</rt></ruby>を<ruby>飲<rt>の</rt></ruby>めばいいと<ruby>中川<rt>なかがわ</rt></ruby>さんは<ruby>言<rt>い</rt></ruby>うが、（a そう　b そうするの）がいいとは<ruby>思<rt>おも</rt></ruby>えない。",
+          "options": [
+            "a そう",
+            "b そうするの"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "助詞「が」の主語名詞節として「そうするの（＝そうすること）がいいとは…」で受ける。",
+          "explanation_en": "Acts as the nominalized subject before particle 'が': 'そうするの'."
+        },
+        {
+          "question_id": 30709,
+          "category": "第3部 7課 練習",
+          "question_type": "binary_choice",
+          "prompt": "<ruby>天<rt>てん</rt></ruby>ぷらは<ruby>野菜<rt>やさい</rt></ruby>などに<ruby>卵<rt>たまご</rt></ruby>と<ruby>小麦粉<rt>こむぎこ</rt></ruby>をつけて、（a それを　b その）<ruby>油<rt>あぶら</rt></ruby>で<ruby>揚<rt>あ</rt></ruby>げた<ruby>料理<rt>りょうり</rt></ruby>です。",
+          "options": [
+            "a それを",
+            "b その"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "卵と小麦粉をつけた具材を油で揚げるので、目的語として「それを」。",
+          "explanation_en": "Object marker indicating the prepared ingredients: 'それを'."
+        },
+        {
+          "question_id": 30710,
+          "category": "第3部 7課 練習",
+          "question_type": "cloze_demonstrative",
+          "prompt": "<ruby>友<rt>とも</rt></ruby>だちが<ruby>映画<rt>えいが</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をしていたが、わたしは（① a その　b あの）<ruby>映画<rt>えいが</rt></ruby>を<ruby>知<rt>し</rt></ruby>らなかった。とても<ruby>面白<rt>おもしろ</rt></ruby>いそうだ。<ruby>友<rt>とも</rt></ruby>だちが（② a そう　b そうと）<ruby>言<rt>い</rt></ruby>ったのでぜひ<ruby>見<rt>み</rt></ruby>たいと<ruby>思<rt>おも</rt></ruby>い、レンタルショップに<ruby>行<rt>い</rt></ruby>ったが、（③ a それ　b そこ）には<ruby>置<rt>お</rt></ruby>いていなかった。",
+          "correct_answers": [
+            "① a",
+            "② a",
+            "③ b"
+          ],
+          "explanation_ja": "①相手から聞いた未知の映画なので「その映画」（a）。②友だちがそう言った（a、副詞的用法）。③レンタルショップという場所を指すので「そこ」（b）。",
+          "explanation_en": "①'その' (a). ②'そう' (a). ③'そこ' (b)."
+        }
+      ]
+    },
+    {
+      "section_number": 8,
+      "title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> は・が",
+      "title_en": "Lesson 8: Particles 'wa' and 'ga'",
+      "theme": "まとまりのある<ruby>文章<rt>ぶんしょう</rt></ruby>にするために、「は・が」を<ruby>使<rt>つか</rt></ruby>い<ruby>分<rt>わ</rt></ruby>けることが<ruby>大切<rt>たいせつ</rt></ruby>です。",
+      "theme_en": "To ensure sentence cohesion, it is important to correctly distinguish between は and が.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "「が」を<ruby>使<rt>つか</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>",
+          "title_en": "When to use 'ga'",
+          "usages": [
+            {
+              "rule": "1. <ruby>初<rt>はじ</rt></ruby>めて<ruby>話題<rt>わだい</rt></ruby>に<ruby>出<rt>で</rt></ruby>たものや<ruby>特<rt>とく</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えたいことを<ruby>言<rt>い</rt></ruby>うとき",
+              "rule_en": "When describing a topic introduced for the first time or when you particularly want to emphasize something.",
+              "examples": [
+                "昔、ある村に太郎という若者が住んでいた。",
+                "明日、首相がこの市に来る。"
+              ]
+            },
+            {
+              "rule": "2. <ruby>自然現象<rt>しぜんげんしょう</rt></ruby>やその<ruby>場<rt>ば</rt></ruby>で<ruby>見<rt>み</rt></ruby>たこと・<ruby>聞<rt>き</rt></ruby>いたことを<ruby>言<rt>い</rt></ruby>うとき",
+              "rule_en": "In describing natural phenomena and things you have seen or heard in person.",
+              "examples": [
+                "久しぶりに公園を散歩した。桜がとても美しかった。",
+                "ここはいい所だ。さわやかな風が吹いて、木の上で鳥が鳴いている。"
+              ]
+            },
+            {
+              "rule": "3. <ruby>名詞<rt>めいし</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>する<ruby>文<rt>ぶん</rt></ruby>や<ruby>条件<rt>じょうけん</rt></ruby>・<ruby>時<rt>とき</rt></ruby>・<ruby>理由<rt>りゆう</rt></ruby>などを<ruby>表<rt>あらわ</rt></ruby>す<ruby>文<rt>ぶん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>主語<rt>しゅご</rt></ruby>を<ruby>言<rt>い</rt></ruby>うとき",
+              "rule_en": "When highlighting the subject in statements in which the noun is modified, or which express conditions, time or reasons.",
+              "examples": [
+                "あの作家が書いた本を一度読んでみるべきだ。",
+                "ヤンさんが来たら、この書類を見せよう。"
+              ]
+            }
+          ]
+        },
+        {
+          "point_number": 2,
+          "title": "「は」を<ruby>使<rt>つか</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>",
+          "title_en": "When to use 'wa'",
+          "usages": [
+            {
+              "rule": "1. ある<ruby>話題<rt>わだい</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げるとき、<ruby>一度<rt>いちど</rt></ruby><ruby>前<rt>まえ</rt></ruby>に<ruby>出<rt>で</rt></ruby>た<ruby>話題<rt>わだい</rt></ruby>を<ruby>言<rt>い</rt></ruby>うとき",
+              "rule_en": "When raising a topic, and when referring back to a topic mentioned before.",
+              "examples": [
+                "日本語能力試験は大勢の人が受験する。",
+                "昔、ある村に太郎という若者が住んでいた。太郎はとても貧乏だった。"
+              ]
+            },
+            {
+              "rule": "2. <ruby>特<rt>とく</rt></ruby>に<ruby>話題<rt>わだい</rt></ruby>にすること・<ruby>強調<rt>きょうちょう</rt></ruby>すること・<ruby>否定<rt>ひてい</rt></ruby>することを<ruby>言<rt>い</rt></ruby>うとき",
+              "rule_en": "When drawing attention to, emphasizing or negating a topic.",
+              "examples": [
+                "日本では車は道の左側を通ることになっています。",
+                "あの人とは結婚しようとは思わない。"
+              ]
+            },
+            {
+              "rule": "3. <ruby>二<rt>ふた</rt></ruby>つのことを<ruby>対比<rt>たいひ</rt></ruby>して<ruby>言<rt>い</rt></ruby>うとき",
+              "rule_en": "To explicitly contrast two things.",
+              "examples": [
+                "梅の花は咲いていますが、桜はまだです。",
+                "雪は降っているが、風はない。",
+                "外ではコートを着ますが、部屋の中では脱ぎます。"
+              ]
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30801,
+          "category": "第3部 8課 練習1",
+          "question_type": "fill_particles",
+          "prompt": "きのう<ruby>授業<rt>じゅぎょう</rt></ruby>①＿＿＿<ruby>終<rt>お</rt></ruby>わってから、クラスのカーンさんと<ruby>本屋<rt>ほんや</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きました。カーンさん②＿＿＿<ruby>日本語<rt>にほんご</rt></ruby>のテキストを<ruby>買<rt>か</rt></ruby>いたいと<ruby>言<rt>い</rt></ruby>ったので、いっしょに<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>くことにしたのです。カーンさん③＿＿＿、<ruby>会話<rt>かいわ</rt></ruby>④＿＿＿まあまあ<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>だけれど、<ruby>書<rt>か</rt></ruby>くのはまだ<ruby>下手<rt>へた</rt></ruby>だと<ruby>言<rt>い</rt></ruby>いました。わたしはその<ruby>反対<rt>はんたい</rt></ruby>です。<ruby>本屋<rt>ほんや</rt></ruby>⑤＿＿＿7<ruby>階<rt>かい</rt></ruby>まであります。まっすぐ5<ruby>階<rt>かい</rt></ruby>の<ruby>日本語<rt>にほんご</rt></ruby>のコーナーへ<ruby>行<rt>い</rt></ruby>きました。<ruby>日本語<rt>にほんご</rt></ruby>のテキスト⑥＿＿＿たくさん<ruby>並<rt>なら</rt></ruby>んでいました。その<ruby>中<rt>なか</rt></ruby>に<ruby>松本<rt>まつもと</rt></ruby><ruby>先生<rt>せんせい</rt></ruby>⑦＿＿＿<ruby>紹介<rt>しょうかい</rt></ruby>してくださった<ruby>本<rt>ほん</rt></ruby>⑧＿＿＿ありました。それ⑨＿＿＿<ruby>中級<rt>ちゅうきゅう</rt></ruby>のレベルの<ruby>言葉<rt>ことば</rt></ruby>⑩＿＿＿ていねいに<ruby>説明<rt>せつめい</rt></ruby>されている<ruby>本<rt>ほん</rt></ruby>です。また、カーンさん⑪＿＿＿<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>練習帳<rt>れんしゅうちょう</rt></ruby>も<ruby>必要<rt>ひつよう</rt></ruby>だと<ruby>言<rt>い</rt></ruby>って、<ruby>表紙<rt>ひょうし</rt></ruby>⑫＿＿＿とてもきれいな<ruby>漢字<rt>かんじ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びました。<ruby>買<rt>か</rt></ruby>う<ruby>本<rt>ほん</rt></ruby>⑬＿＿＿1<ruby>階<rt>かい</rt></ruby>に<ruby>持<rt>も</rt></ruby>っていって、1<ruby>階<rt>かい</rt></ruby>のカウンターでお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>いました。",
+          "correct_answers": [
+            "① が",
+            "② が",
+            "③ は",
+            "④ は",
+            "⑤ は",
+            "⑥ が",
+            "⑦ が",
+            "⑧ が",
+            "⑨ は",
+            "⑩ が",
+            "⑪ は",
+            "⑫ が",
+            "⑬ は"
+          ],
+          "explanation_ja": "解答冊子p.6参照：①が ②が ③は ④は ⑤は ⑥が ⑦が ⑧が ⑨は ⑩が ⑪は ⑫が ⑬は。",
+          "explanation_en": "See Answer booklet p.6: ①が ②が ③は ④は ⑤は ⑥が ⑦が ⑧が ⑨は ⑩が ⑪は ⑫が ⑬は."
+        },
+        {
+          "question_id": 30802,
+          "category": "第3部 8課 練習2",
+          "question_type": "fill_particles",
+          "prompt": "<ruby>日本人<rt>にほんじん</rt></ruby>①＿＿＿<ruby>発明<rt>はつめい</rt></ruby>した<ruby>物<rt>もの</rt></ruby>はいろいろあるが、<ruby>胃<rt>い</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を<ruby>写<rt>うつ</rt></ruby>す「<ruby>胃<rt>い</rt></ruby>カメラ」も<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>発明<rt>はつめい</rt></ruby>であること②＿＿＿あまり<ruby>知<rt>し</rt></ruby>られていない。<ruby>胃<rt>い</rt></ruby>カメラ<ruby>作<rt>づく</rt></ruby>り③＿＿＿<ruby>始<rt>はじ</rt></ruby>まったの④＿＿＿、<ruby>第二次<rt>だいにじ</rt></ruby><ruby>世界大戦<rt>せかいたいせん</rt></ruby>⑤＿＿＿<ruby>終<rt>お</rt></ruby>わったばかりの1949<ruby>年<rt>ねん</rt></ruby>だった。<ruby>光<rt>ひかり</rt></ruby>⑥＿＿＿ない<ruby>胃<rt>い</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>撮<rt>と</rt></ruby>ることなどできないとだれもが<ruby>考<rt>かんが</rt></ruby>えたが、<ruby>小<rt>ちい</rt></ruby>さい<ruby>電球<rt>でんきゅう</rt></ruby>の<ruby>弱<rt>よわ</rt></ruby>い<ruby>光<rt>ひかり</rt></ruby>でも<ruby>写真<rt>しゃしん</rt></ruby>⑦＿＿＿<ruby>撮<rt>と</rt></ruby>れる<ruby>方法<rt>ほうほう</rt></ruby>を<ruby>工夫<rt>くふう</rt></ruby>して、1<ruby>年後<rt>ねんご</rt></ruby><ruby>胃<rt>い</rt></ruby>カメラを<ruby>完成<rt>かんせい</rt></ruby>させた。<ruby>胃<rt>い</rt></ruby>カメラ⑧＿＿＿<ruby>胃<rt>い</rt></ruby>の<ruby>病気<rt>びょうき</rt></ruby>を<ruby>早<rt>はや</rt></ruby>く<ruby>発見<rt>はっけん</rt></ruby>するのに<ruby>役立<rt>やくだ</rt></ruby>って、<ruby>世界中<rt>せかいじゅう</rt></ruby>で<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>を<ruby>助<rt>たす</rt></ruby>けている。",
+          "correct_answers": [
+            "① が",
+            "② は",
+            "③ が",
+            "④ は",
+            "⑤ が",
+            "⑥ が",
+            "⑦ が",
+            "⑧ は"
+          ],
+          "explanation_ja": "解答冊子p.7参照：①が ②は ③が ④は ⑤が ⑥が ⑦が ⑧は。",
+          "explanation_en": "See Answer booklet p.7: ①が ②は ③が ④は ⑤が ⑥が ⑦が ⑧は."
+        }
+      ]
+    },
+    {
+      "section_number": 8.5,
+      "title": "まとめ<ruby>問題<rt>もんだい</rt></ruby>（7<ruby>課<rt>か</rt></ruby>・8<ruby>課<rt>か</rt></ruby>）",
+      "title_en": "Review Exercises (Lessons 7 & 8)",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>の<ruby>総合練習<rt>そうごうれんしゅう</rt></ruby>（指示詞と「は・が」）",
+      "theme_en": "Comprehensive text grammar review: Demonstratives and 'wa'/'ga'",
+      "passages": [
+        {
+          "passage_id": 307,
+          "title": "豚とペンギン",
+          "title_en": "The Pig and the Penguin",
+          "text": "<ruby>面白<rt>おもしろ</rt></ruby>い［ 1 ］。\nある<ruby>日<rt>ひ</rt></ruby>ある<ruby>所<rt>ところ</rt></ruby>で<ruby>豚<rt>ぶた</rt></ruby>とペンギン（注）が<ruby>出会<rt>であ</rt></ruby>った。ペンギンは<ruby>豚<rt>ぶた</rt></ruby>に「<ruby>今日<rt>きょう</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いね」と<ruby>言<rt>い</rt></ruby>った。<ruby>豚<rt>ぶた</rt></ruby>は「いや、そんなことはない。<ruby>過<rt>す</rt></ruby>ごしやすい<ruby>日<rt>ひ</rt></ruby>だよ」と<ruby>言<rt>い</rt></ruby>った。「<ruby>違<rt>ちが</rt></ruby>うよ。ほら、<ruby>温度計<rt>おんどけい</rt></ruby>を<ruby>見<rt>み</rt></ruby>ろよ。<ruby>気温<rt>きおん</rt></ruby>は<ruby>高<rt>たか</rt></ruby>いよ。25<ruby>度<rt>ど</rt></ruby>だよ」「25<ruby>度<rt>ど</rt></ruby>？ ちょうどいい<ruby>気温<rt>きおん</rt></ruby>じゃないか」ペンギンと<ruby>豚<rt>ぶた</rt></ruby>はとうとうけんかになってしまった……という<ruby>話<rt>はなし</rt></ruby>である。\nもちろん、<ruby>豚<rt>ぶた</rt></ruby>とペンギンは<ruby>一<rt>ひと</rt></ruby>つのたとえなのだが、［ 2 ］わたしたちの<ruby>日常<rt>にちじょう</rt></ruby>によくあることだ。<ruby>南極<rt>なんきょく</rt></ruby>から<ruby>来<rt>き</rt></ruby>たペンギンと<ruby>暖<rt>あたた</rt></ruby>かい<ruby>所<rt>ところ</rt></ruby>に<ruby>住<rt>す</rt></ruby>む<ruby>豚<rt>ぶた</rt></ruby>の<ruby>感<rt>かん</rt></ruby>じ<ruby>方<rt>かた</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>うように、<ruby>暑<rt>あつ</rt></ruby>さ、うるささ、<ruby>美<rt>うつく</rt></ruby>しさ、<ruby>広<rt>ひろ</rt></ruby>さ、<ruby>便利<rt>べんり</rt></ruby>さなどは、<ruby>人<rt>ひと</rt></ruby>によって<ruby>基準<rt>きじゅん</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>う。その<ruby>基準<rt>きじゅん</rt></ruby>は［ 3 ］<ruby>性格<rt>せいかく</rt></ruby>や<ruby>生<rt>う</rt></ruby>まれ<ruby>育<rt>そだ</rt></ruby>った<ruby>環境<rt>かんきょう</rt></ruby>によってできあがるのだろう。それぞれ［ 4 ］<ruby>違<rt>ちが</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まって<ruby>集団<rt>しゅうだん</rt></ruby>をつくり、<ruby>人間<rt>にんげん</rt></ruby>はその<ruby>集団<rt>しゅうだん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>生活<rt>せいかつ</rt></ruby>している。このことをよく<ruby>理解<rt>りかい</rt></ruby>しなければ、わたしたちはこの<ruby>話<rt>はなし</rt></ruby>を［ 5 ］。\n（注：ペンギン）\n参考：©小泉吉宏／メディアファクトリー",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30701,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　漫画がある",
+                "2　漫画はある",
+                "3　漫画である",
+                "4　漫画でもある"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "冒頭で新しい話題・存在を導入するので「面白い漫画がある」。1が正解。",
+              "explanation_en": "Introduces a new existence at the beginning: '面白い漫画がある'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30702,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　このことは",
+                "2　このことが",
+                "3　こういうことは",
+                "4　こういうことが"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "豚とペンギンの例のような一般的な同類の出来事を指し、主題として取り上げるので「こういうことは」。3が正解。",
+              "explanation_en": "Refers to such situations in general as a topic: 'こういうことは'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30703,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　そんな",
+                "2　そういう",
+                "3　その人の",
+                "4　そんな人の"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "直前の「人によって基準が違う」の「人」を受けて限定するので「その人の性格や…」。3が正解。",
+              "explanation_en": "Refers to the individual mentioned previously: 'その人の'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30704,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　基準は",
+                "2　基準が",
+                "3　基準でも",
+                "4　基準では"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "名詞「人」を修飾する連体修飾節の中の主語なので「基準が違う人」。2が正解。",
+              "explanation_en": "Subject inside a noun-modifying clause takes 'が': '基準が違う人'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30705,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　怒らないだろう",
+                "2　怒れないだろう",
+                "3　笑わないだろう",
+                "4　笑えないだろう"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "人間も同じ過ちを犯すため他人事として笑うことができない。「笑えないだろう」。4が正解。",
+              "explanation_en": "Cannot laugh it off because humans do the exact same thing: '笑えないだろう'. Choice 4 is correct."
+            }
+          ]
+        },
+        {
+          "passage_id": 308,
+          "title": "ペットロボット",
+          "title_en": "Pet Robots",
+          "text": "わたしはロボットに<ruby>関心<rt>かんしん</rt></ruby>があります。ロボットというのは<ruby>工場<rt>こうじょう</rt></ruby>などで<ruby>人間<rt>にんげん</rt></ruby>に<ruby>代<rt>か</rt></ruby>わっていろいろな<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>機械<rt>きかい</rt></ruby>のことだと<ruby>思<rt>おも</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いかもしれませんが、わたしが<ruby>研究<rt>けんきゅう</rt></ruby>したいのは［ 1 ］、ペットの<ruby>代<rt>か</rt></ruby>わりをするロボットなのです。つまり、［ 2 ］ロボットです。<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きな<ruby>人<rt>ひと</rt></ruby>はペットと<ruby>遊<rt>あそ</rt></ruby>ぶことで<ruby>心<rt>こころ</rt></ruby>が<ruby>明<rt>あか</rt></ruby>るくなるようです。しかし、ペットを<ruby>飼<rt>か</rt></ruby>いたくても<ruby>飼<rt>か</rt></ruby>えない<ruby>人<rt>ひと</rt></ruby>もいます。［ 3 ］ペットロボットです。\nすでに<ruby>日本<rt>にほん</rt></ruby>ではいくつかのペットロボットが<ruby>売<rt>う</rt></ruby>られています。これらの［ 4 ］<ruby>喜<rt>よろこ</rt></ruby>んだり<ruby>声<rt>こえ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>したりします。ペットロボットは<ruby>病気<rt>びょうき</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもたちやお<ruby>年寄<rt>としよ</rt></ruby>りを<ruby>元気<rt>げんき</rt></ruby>にするために<ruby>役立<rt>やくだ</rt></ruby>てられています。ある<ruby>研究所<rt>けんきゅうじょ</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby>によると、ペットロボットと<ruby>遊<rt>あそ</rt></ruby>んだ<ruby>後<rt>あと</rt></ruby>は<ruby>気分<rt>きぶん</rt></ruby>がよくなった、ほかの<ruby>人<rt>ひと</rt></ruby>との<ruby>会話<rt>かいわ</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えた、<ruby>話題<rt>わだい</rt></ruby>がペットロボットについての<ruby>明<rt>あか</rt></ruby>るい<ruby>内容<rt>ないよう</rt></ruby>に<ruby>変<rt>か</rt></ruby>わった、などのいい<ruby>効果<rt>こうか</rt></ruby>が<ruby>出<rt>で</rt></ruby>ているとのことです。\nわたしは、［ 5 ］ペットロボットの<ruby>研究<rt>けんきゅう</rt></ruby>を<ruby>一生<rt>いっしょう</rt></ruby>のテーマにしたいと<ruby>思<rt>おも</rt></ruby>っています。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30801,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　このような産業ロボットで",
+                "2　このような産業ロボットではなく",
+                "3　そういう産業ロボットで",
+                "4　あのような産業ロボットではなく"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "直前で述べた工場で使われるロボットを否定して対比するので「このような産業ロボットではなく」。2が正解。",
+              "explanation_en": "Negates and contrasts with the aforementioned factory robots: 'このような産業ロボットではなく'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30802,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　人間をかわいがる",
+                "2　人間はかわいがる",
+                "3　人間にかわいがられる",
+                "4　人間がかわいがられる"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "ペットロボットは人間によってかわいがられる対象なので受身「人間にかわいがられるロボット」。3が正解。",
+              "explanation_en": "Passive modifying noun: '人間にかわいがられるロボット' (cherished by humans). Choice 3 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30803,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　そんな人が作ったのは",
+                "2　この人のために作られたのが",
+                "3　こういう人によって作られたのは",
+                "4　そんな人のために作られたのが"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "「ペットを飼いたくても飼えない人」を受けて目的を表すので「そんな人のために作られたのが」。4が正解。",
+              "explanation_en": "Refers back to people who want pets but cannot have them: 'そんな人のために作られたのが'. Choice 4 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30804,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　ペットロボットは本物の動物のように",
+                "2　ペットロボットが本物のロボットのように",
+                "3　ペットロボットは本物の人間のように",
+                "4　ペットロボットが本物のように"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "これらのロボットの主語として取り上げ、本物の動物に似て行動することを述べるので「ペットロボットは本物の動物のように」。1が正解。",
+              "explanation_en": "'ペットロボットは本物の動物のように' (pet robots, like real animals). Choice 1 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30805,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　このような心理的効果がある",
+                "2　このような心理的効果はなくても",
+                "3　この心理的効果があって",
+                "4　その心理的効果がなくても"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "直前の段落で述べられた気分の改善などの効果を受けて「このような心理的効果があるペットロボットの…」。1が正解。",
+              "explanation_en": "'このような心理的効果がある' modifies the pet robots being researched. Choice 1 is correct."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_number": 9,
+      "title": "<ruby>第<rt>だい</rt></ruby>9<ruby>課<rt>か</rt></ruby> <ruby>接続表現<rt>せつぞくひょうげん</rt></ruby>",
+      "title_en": "Lesson 9: Conjunctions and Connectives",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>使<rt>つか</rt></ruby>うN3レベルの<ruby>接続表現<rt>せつぞくひょうげん</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>します。",
+      "theme_en": "N3-level conjunctive terms in a sentence are used as follows.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "<ruby>接続表現<rt>せつぞくひょうげん</rt></ruby>の<ruby>分類<rt>ぶんるい</rt></ruby>と<ruby>用例<rt>ようれい</rt></ruby>",
+          "title_en": "Categories and Examples of Conjunctions",
+          "categories": [
+            {
+              "category_name": "1. <ruby>加<rt>くわ</rt></ruby>えて<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "To add information",
+              "conjunctions": [
+                "また",
+                "さらに",
+                "そのうえ",
+                "しかも",
+                "それも"
+              ],
+              "examples": [
+                "ノートパソコンは<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>らない。<ruby>また<rt>また</rt></ruby>、<ruby>持<rt>も</rt></ruby>ち<ruby>運<rt>はこ</rt></ruby>びにも<ruby>便利<rt>べんり</rt></ruby>だ。",
+                "<ruby>彼<rt>かれ</rt></ruby>は<ruby>料理<rt>りょうり</rt></ruby>を<ruby>二人分<rt>ふたりぶん</rt></ruby>も<ruby>食<rt>た</rt></ruby>べた。<ruby>さらに<rt>さらに</rt></ruby>、<ruby>食後<rt>しょくご</rt></ruby>にケーキも<ruby>食<rt>た</rt></ruby>べた。",
+                "<ruby>毎日<rt>まいにち</rt></ruby><ruby>勉強<rt>べんきょう</rt></ruby>が<ruby>大変<rt>たいへん</rt></ruby>だ。<ruby>そのうえ<rt>そのうえ</rt></ruby>、アルバイトもしている。",
+                "<ruby>小川<rt>おがわ</rt></ruby>さんは<ruby>仕事<rt>しごと</rt></ruby>が<ruby>早<rt>はや</rt></ruby>い。<ruby>しかも<rt>しかも</rt></ruby>、<ruby>正確<rt>せいかく</rt></ruby>だ。",
+                "<ruby>作文<rt>さくぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>き<ruby>直<rt>なお</rt></ruby>させられた。<ruby>それも<rt>それも</rt></ruby>、3<ruby>回<rt>かい</rt></ruby>もだ。"
+              ]
+            },
+            {
+              "category_name": "2. <ruby>結果<rt>けっか</rt></ruby>・<ruby>結論<rt>けつろん</rt></ruby>を<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "To express a result or conclusion",
+              "conjunctions": [
+                "そのため",
+                "したがって",
+                "そこで",
+                "すると"
+              ],
+              "examples": [
+                "<ruby>事故<rt>じこ</rt></ruby>があった。<ruby>そのため<rt>そのため</rt></ruby>、<ruby>道<rt>みち</rt></ruby>が<ruby>込<rt>こ</rt></ruby>んでいる。",
+                "この<ruby>調査方法<rt>ちょうさほうほう</rt></ruby>には<ruby>間違<rt>まちが</rt></ruby>いがある。<ruby>したがって<rt>したがって</rt></ruby>、この<ruby>結果<rt>けっか</rt></ruby>は<ruby>正<rt>ただ</rt></ruby>しいとは<ruby>言<rt>い</rt></ruby>えない。",
+                "<ruby>部屋<rt>へや</rt></ruby>に<ruby>本<rt>ほん</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきた。<ruby>そこで<rt>そこで</rt></ruby>、<ruby>本<rt>ほん</rt></ruby>だなを<ruby>買<rt>か</rt></ruby>うことにした。",
+                "<ruby>紅茶<rt>こうちゃ</rt></ruby>にレモンを<ruby>入<rt>い</rt></ruby>れた。<ruby>すると<rt>すると</rt></ruby>、<ruby>色<rt>いろ</rt></ruby>が<ruby>変<rt>か</rt></ruby>わった。"
+              ]
+            },
+            {
+              "category_name": "3. <ruby>理由<rt>りゆう</rt></ruby>・<ruby>根拠<rt>こんきょ</rt></ruby>を<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "To express a reason or grounds for doing something",
+              "conjunctions": [
+                "なぜなら／なぜかというと…からだ"
+              ],
+              "examples": [
+                "<ruby>大学<rt>だいがく</rt></ruby>では<ruby>文学<rt>ぶんがく</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>したい。<ruby>なぜなら<rt>なぜなら</rt></ruby>／<ruby>なぜかというと<rt>なぜかというと</rt></ruby>、<ruby>作家<rt>さっか</rt></ruby>になりたいからだ。"
+              ]
+            },
+            {
+              "category_name": "4. <ruby>別<rt>べつ</rt></ruby>の<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>で<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "To indicate an alternative way of expressing something",
+              "conjunctions": [
+                "つまり"
+              ],
+              "examples": [
+                "この<ruby>仕事<rt>しごと</rt></ruby>は<ruby>土曜日<rt>どようび</rt></ruby>と<ruby>日曜日<rt>にちようび</rt></ruby>が<ruby>休<rt>やす</rt></ruby>みだ。<ruby>つまり<rt>つまり</rt></ruby>、<ruby>週休二日<rt>しゅうきゅうふつか</rt></ruby>だ。"
+              ]
+            },
+            {
+              "category_name": "5. <ruby>比<rt>くら</rt></ruby>べて<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "To compare, or express a contrast",
+              "conjunctions": [
+                "それに対して",
+                "一方"
+              ],
+              "examples": [
+                "<ruby>妹<rt>いもうと</rt></ruby>は<ruby>明<rt>あか</rt></ruby>るい。<ruby>それに対して<rt>それに対して</rt></ruby>／<ruby>一方<rt>いっぽう</rt></ruby>、<ruby>姉<rt>あね</rt></ruby>はおとなしい。"
+              ]
+            },
+            {
+              "category_name": "6. どちらかであることを<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "To choose among alternatives",
+              "conjunctions": [
+                "または"
+              ],
+              "examples": [
+                "<ruby>出欠<rt>しゅっけつ</rt></ruby>の<ruby>返事<rt>へんじ</rt></ruby>はメールで<ruby>知<rt>し</rt></ruby>らせてください。<ruby>または<rt>または</rt></ruby>、ファクスでもいいです。"
+              ]
+            },
+            {
+              "category_name": "7. <ruby>前<rt>まえ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>から<ruby>予想<rt>よそう</rt></ruby>されることと<ruby>違<rt>ちが</rt></ruby>うことを<ruby>言<rt>い</rt></ruby>う",
+              "category_en": "When an event or situation expected in a previous statement does not occur",
+              "conjunctions": [
+                "だが",
+                "ところが"
+              ],
+              "examples": [
+                "<ruby>家<rt>いえ</rt></ruby>に<ruby>電話<rt>でんわ</rt></ruby>をかけた。<ruby>だが<rt>だが</rt></ruby>、だれも<ruby>出<rt>で</rt></ruby>なかった。",
+                "<ruby>彼<rt>かれ</rt></ruby>はもう<ruby>空港<rt>くうこう</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いているはずだ。<ruby>ところが<rt>ところが</rt></ruby>、まだ<ruby>何<rt>なに</rt></ruby>も<ruby>連絡<rt>れんらく</rt></ruby>がない。"
+              ]
+            },
+            {
+              "category_name": "8. <ruby>条件<rt>じょうけん</rt></ruby>・<ruby>例外<rt>れいがい</rt></ruby>などを<ruby>加<rt>くわ</rt></ruby>える",
+              "category_en": "To express reservations or highlight a disadvantage about something, or to express conditionality or add exceptions",
+              "conjunctions": [
+                "ただ",
+                "ただし"
+              ],
+              "examples": [
+                "このアパートはとてもいい。<ruby>ただ<rt>ただ</rt></ruby>、<ruby>家賃<rt>やちん</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い。",
+                "<ruby>試験<rt>しけん</rt></ruby>に<ruby>欠席<rt>けっせき</rt></ruby>したら<ruby>不合格<rt>ふごうかく</rt></ruby>だ。<ruby>ただし<rt>ただし</rt></ruby>、<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>理由<rt>りゆう</rt></ruby>があれば<ruby>別<rt>べつ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>受<rt>う</rt></ruby>けられる。"
+              ]
+            },
+            {
+              "category_name": "9. <ruby>話題<rt>わだい</rt></ruby>を<ruby>変<rt>か</rt></ruby>える",
+              "category_en": "To change the subject",
+              "conjunctions": [
+                "ところで"
+              ],
+              "examples": [
+                "いい<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>が<ruby>決<rt>き</rt></ruby>まってよかったですね。<ruby>ところで<rt>ところで</rt></ruby>、ご<ruby>家族<rt>かぞく</rt></ruby>はお<ruby>元気<rt>げんき</rt></ruby>ですか。"
+              ]
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 30901,
+          "category": "第3部 9課 練習",
+          "question_type": "three_choice",
+          "prompt": "1 ある<ruby>調査<rt>ちょうさ</rt></ruby>によると、<ruby>女性<rt>じょせい</rt></ruby>の<ruby>半分<rt>はんぶん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>が<ruby>結婚式<rt>けっこんしき</rt></ruby>をしたいと<ruby>考<rt>かんが</rt></ruby>えているそうだ。（a <ruby>一方<rt>いっぽう</rt></ruby>　b または　c さらに）、<ruby>男性<rt>だんせい</rt></ruby>はどちらでもいいという<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>かった。",
+          "options": [
+            "a 一方",
+            "b または",
+            "c さらに"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "女性の傾向と男性の傾向を対比して述べているので「一方」（a）。",
+          "explanation_en": "Contrasts females' views with males' views: '一方' (a)."
+        },
+        {
+          "question_id": 30902,
+          "category": "第3部 9課 練習",
+          "question_type": "three_choice",
+          "prompt": "2 <ruby>何度<rt>なんど</rt></ruby>もメールをしてみましたが、<ruby>見<rt>み</rt></ruby>ていないのか、<ruby>全<rt>まった</rt></ruby>く<ruby>返事<rt>へんじ</rt></ruby>が<ruby>来<rt>き</rt></ruby>ません。（a つまり　b そこで　c そのうえ）、<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>をかけてみました。",
+          "options": [
+            "a つまり",
+            "b そこで",
+            "c そのうえ"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "返信が来ないという状況を受けて次の行動（電話）を起こすので「そこで」（b）。",
+          "explanation_en": "Initiating the next action in response to no reply: 'そこで' (b)."
+        },
+        {
+          "question_id": 30903,
+          "category": "第3部 9課 練習",
+          "question_type": "three_choice",
+          "prompt": "3 ねこにとって<ruby>目<rt>め</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせることは「<ruby>敵<rt>てき</rt></ruby>」の<ruby>感情<rt>かんじょう</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていることを<ruby>意味<rt>いみ</rt></ruby>する。（a または　b それも　c したがって）、ねこが<ruby>横<rt>よこ</rt></ruby>を<ruby>向<rt>む</rt></ruby>くのは<ruby>逆<rt>ぎゃく</rt></ruby>に<ruby>親<rt>した</rt></ruby>しみを<ruby>表<rt>あらわ</rt></ruby>すと<ruby>考<rt>かんが</rt></ruby>えられる。",
+          "options": [
+            "a または",
+            "b それも",
+            "c したがって"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "前文の前提から論理的な結論を導くので「したがって」（c）。",
+          "explanation_en": "Draws a logical conclusion from the preceding fact: 'したがって' (c)."
+        },
+        {
+          "question_id": 30904,
+          "category": "第3部 9課 練習",
+          "question_type": "two_part_choice",
+          "prompt": "4 <ruby>豆腐<rt>とうふ</rt></ruby>は<ruby>安<rt>やす</rt></ruby>くて<ruby>栄養<rt>えいよう</rt></ruby>が<ruby>豊富<rt>ほうふ</rt></ruby>です。（① a すると　b それに対して　c しかも）、いろいろな<ruby>料理<rt>りょうり</rt></ruby>に<ruby>使<rt>つか</rt></ruby>えます。（② a そのため　b ただし　c だが）、<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>食生活<rt>しょくせいかつ</rt></ruby>には<ruby>欠<rt>か</rt></ruby>かせない<ruby>食品<rt>しょくひん</rt></ruby>になっています。",
+          "correct_answers": [
+            "① c",
+            "② a"
+          ],
+          "explanation_ja": "①利点の追加：「しかも」（c）。②その理由・根拠による結果の結論：「そのため」（a）。",
+          "explanation_en": "①Adding merit: 'しかも' (c). ②Resulting consequence: 'そのため' (a)."
+        },
+        {
+          "question_id": 30905,
+          "category": "第3部 9課 練習",
+          "question_type": "three_part_choice",
+          "prompt": "5 <ruby>若者<rt>わかもの</rt></ruby>は、いろいろなことに<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち、<ruby>何<rt>なん</rt></ruby>でもやってみるというイメージがある。（① a そのため　b ところが　c なぜなら）、<ruby>最近<rt>さいきん</rt></ruby><ruby>日本<rt>にほん</rt></ruby>の<ruby>若者<rt>わかもの</rt></ruby>が<ruby>外国<rt>がいこく</rt></ruby>に<ruby>関心<rt>かんしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>たなくなったという<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く。<ruby>海外旅行<rt>かいがいりょこう</rt></ruby>や<ruby>海外留学<rt>かいがいりゅうがく</rt></ruby>をする<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っているというのだ。（② a だが　b または　c また）、<ruby>海外<rt>かいがい</rt></ruby>で<ruby>仕事<rt>しごと</rt></ruby>をしたいと<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>も<ruby>少<rt>すく</rt></ruby>なくなっているそうだ。（③ a すると　b ただ　c したがって）、<ruby>若者<rt>わかもの</rt></ruby>の<ruby>数<rt>かず</rt></ruby>そのものが<ruby>減<rt>へ</rt></ruby>っているし、<ruby>経済的<rt>けいざいてき</rt></ruby>、<ruby>社会的<rt>しゃかいてき</rt></ruby>な<ruby>問題<rt>もんだい</rt></ruby>もあると<ruby>考<rt>かんが</rt></ruby>えられるので、<ruby>単純<rt>たんじゅん</rt></ruby>に<ruby>若者<rt>わかもの</rt></ruby>の<ruby>考<rt>かんが</rt></ruby>え<ruby>方<rt>かた</rt></ruby>が<ruby>変<rt>か</rt></ruby>わったとは<ruby>言<rt>い</rt></ruby>えないかもしれない。",
+          "correct_answers": [
+            "① b",
+            "② c",
+            "③ b"
+          ],
+          "explanation_ja": "①一般的なイメージと異なる実態：「ところが」（b）。②留学減少に加えて就職希望減少を追加：「また」（c）。③条件・補足を付加して単純な結論を留保：「ただ」（b）。",
+          "explanation_en": "①Contrasts with common image: 'ところが' (b). ②Adding another declining trend: 'また' (c). ③Adding qualification/caveat: 'ただ' (b)."
+        }
+      ]
+    },
+    {
+      "section_number": 10,
+      "title": "<ruby>第<rt>だい</rt></ruby>10<ruby>課<rt>か</rt></ruby> <ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>雰囲気<rt>ふんいき</rt></ruby>の<ruby>統一<rt>とういつ</rt></ruby>",
+      "title_en": "Lesson 10: Unifying the Tone and Register of a Text",
+      "theme": "<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>を<ruby>同<rt>おな</rt></ruby>じ<ruby>雰囲気<rt>ふんいき</rt></ruby>にするために、<ruby>気楽<rt>きらく</rt></ruby>な<ruby>話<rt>はな</rt></ruby>し<ruby>言葉<rt>ことば</rt></ruby>と<ruby>硬<rt>かた</rt></ruby>い<ruby>言葉<rt>ことば</rt></ruby>をいっしょに<ruby>使<rt>つか</rt></ruby>いません。また、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>を「<ruby>丁寧体<rt>ていねいたい</rt></ruby>（です・ます）」か「<ruby>普通体<rt>ふつうたい</rt></ruby>（だ／である）」に<ruby>統一<rt>とういつ</rt></ruby>します。",
+      "theme_en": "In order to ensure a unified tone, casual and formal language are not used together. You should also adhere to a single register, whether using丁寧体 (です/ます) or 普通体 (だ/である) verb forms.",
+      "points": [
+        {
+          "point_number": 1,
+          "title": "レポートや<ruby>論文<rt>ろんぶん</rt></ruby>などの<ruby>硬<rt>かた</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>では、「<ruby>普通体<rt>ふつうたい</rt></ruby>（だ／である）」を<ruby>使<rt>つか</rt></ruby>います。また、<ruby>文<rt>ぶん</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けるとき、「て<ruby>形<rt>けい</rt></ruby>」のかわりに<ruby>連用中止形<rt>れんようちゅうしけい</rt></ruby>などを<ruby>使<rt>つか</rt></ruby>うことがあります。",
+          "examples": [
+            "<ruby>文法<rt>ぶんぽう</rt></ruby>の<ruby>説明<rt>せつめい</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み、<ruby>例文<rt>れいぶん</rt></ruby>を<ruby>見<rt>み</rt></ruby>た<ruby>後<rt>あと</rt></ruby>で<ruby>練習問題<rt>れんしゅうもんだい</rt></ruby>を<ruby>解<rt>と</rt></ruby>き、<ruby>答<rt>こた</rt></ruby>えを<ruby>確認<rt>かくにん</rt></ruby>する。",
+            "この<ruby>地方<rt>ちほう</rt></ruby>はほとんど<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>らず、<ruby>昼<rt>ひる</rt></ruby>は<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>暑<rt>あつ</rt></ruby>く、<ruby>夜<rt>よる</rt></ruby>は0<ruby>度<rt>ど</rt></ruby>まで<ruby>気温<rt>きおん</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がる。",
+            "この<ruby>家具<rt>かぐ</rt></ruby>は<ruby>機械<rt>きかい</rt></ruby>を<ruby>使用<rt>しよう</rt></ruby>せず、<ruby>人<rt>ひと</rt></ruby>の<ruby>手<rt>て</rt></ruby>だけで<ruby>作<rt>つく</rt></ruby>られており、<ruby>温<rt>あたた</rt></ruby>かみが<ruby>感<rt>かん</rt></ruby>じられる。"
+          ]
+        },
+        {
+          "point_number": 2,
+          "title": "<ruby>硬<rt>かた</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>では、ふつうくだけた<ruby>形<rt>かたち</rt></ruby>を<ruby>使<rt>つか</rt></ruby>ったり<ruby>助詞<rt>じょし</rt></ruby>を<ruby>省略<rt>しょうりゃく</rt></ruby>したりしません。",
+          "examples": [
+            "× 詳しいこと調べてみなきゃ、結論出せないんじゃない？",
+            "○ 詳しいことを調べてみなければ、結論は出せないのではないか。"
+          ]
+        },
+        {
+          "point_number": 3,
+          "title": "<ruby>硬<rt>かた</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>でよく<ruby>使<rt>つか</rt></ruby>う<ruby>表現<rt>ひょうげん</rt></ruby>と<ruby>日常会話<rt>にちじょうかいわ</rt></ruby>の<ruby>対比<rt>たいひ</rt></ruby>",
+          "register_table": [
+            {
+              "category": "副詞・形容詞",
+              "formal": "非常に・大変",
+              "casual": "すごく",
+              "example": "この計画は非常に困難だ。"
+            },
+            {
+              "category": "副詞・形容詞",
+              "formal": "多く・大勢",
+              "casual": "いっぱい",
+              "example": "この食品はビタミンCを多く含む。"
+            },
+            {
+              "category": "副詞・形容詞",
+              "formal": "少し",
+              "casual": "ちょっと",
+              "example": "言葉は少しずつ変化している。"
+            },
+            {
+              "category": "副詞・形容詞",
+              "formal": "やはり",
+              "casual": "やっぱり",
+              "example": "やはり実験は成功しなかった。"
+            },
+            {
+              "category": "副詞・形容詞",
+              "formal": "さまざまな・いろいろな",
+              "casual": "いろんな",
+              "example": "さまざまな考え方がある。"
+            },
+            {
+              "category": "動詞",
+              "formal": "述べる・話す・言う",
+              "casual": "しゃべる",
+              "example": "これからこの物質の特徴を述べる。"
+            },
+            {
+              "category": "動詞",
+              "formal": "行う",
+              "casual": "やる",
+              "example": "大統領選挙は7月に行われた。"
+            },
+            {
+              "category": "接続表現",
+              "formal": "しかし・だが",
+              "casual": "でも・だけど",
+              "example": "これは難しい。だが、挑戦しよう。"
+            },
+            {
+              "category": "疑問詞",
+              "formal": "なぜ",
+              "casual": "なんで",
+              "example": "なぜ我々は働くのだろうか。"
+            },
+            {
+              "category": "助詞",
+              "formal": "〜など",
+              "casual": "なんか",
+              "example": "金属には金や銀などがある。"
+            },
+            {
+              "category": "その他の表現",
+              "formal": "〜と・〜という・〜そうだ",
+              "casual": "〜って",
+              "example": "それは事故だという。"
+            },
+            {
+              "category": "その他の表現",
+              "formal": "〜ようだ・〜らしい",
+              "casual": "〜みたいだ",
+              "example": "彼の言葉は真実ではないようだ。"
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": 31001,
+          "category": "第3部 10課 練習",
+          "question_type": "text_correction",
+          "prompt": "<ruby>多<rt>おお</rt></ruby>くの<ruby>外国人<rt>がいこくじん</rt></ruby>にとって<ruby>東京<rt>とうきょう</rt></ruby>のイメージは、どこへ<ruby>行<rt>い</rt></ruby>っても<ruby>人<rt>ひと</rt></ruby>が①いっぱいいて、<ruby>高<rt>たか</rt></ruby>いビルが②すごく<ruby>多<rt>おお</rt></ruby>い<ruby>大都市<rt>だいとし</rt></ruby>だ。③っていうものであろう。④だけど、<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>てみると、その<ruby>考<rt>かんが</rt></ruby>えは⑤ちょっと<ruby>変<rt>か</rt></ruby>わる。<ruby>確<rt>たし</rt></ruby>かに<ruby>東京<rt>とうきょう</rt></ruby>は<ruby>大都市<rt>だいとし</rt></ruby>だが、<ruby>都会的<rt>とかいてき</rt></ruby>な<ruby>場所<rt>ばしょ</rt></ruby>だけではなく、<ruby>林<rt>はやし</rt></ruby>や<ruby>畑<rt>はたけ</rt></ruby>⑥なんか⑦の<ruby>自然<rt>しぜん</rt></ruby>も<ruby>目<rt>め</rt></ruby>にすることが⑧できます。このようなことはテレビを<ruby>見<rt>み</rt></ruby>るだけ⑨じゃわからない。⑩やっぱり<ruby>実際<rt>じっさい</rt></ruby>に<ruby>住<rt>す</rt></ruby>み、⑪いろんな<ruby>所<rt>ところ</rt></ruby>を<ruby>見<rt>み</rt></ruby>てはじめてわかること⑫なんじゃないでしょうか。",
+          "corrections": [
+            {
+              "index": "①",
+              "target": "いっぱいいて",
+              "replacement": "大勢／多く",
+              "furigana": "<ruby>大勢<rt>おおぜい</rt></ruby>／<ruby>多<rt>おお</rt></ruby>く"
+            },
+            {
+              "index": "②",
+              "target": "すごく",
+              "replacement": "非常に／大変",
+              "furigana": "<ruby>非常<rt>ひじょう</rt></ruby>に／<ruby>大変<rt>たいへん</rt></ruby>"
+            },
+            {
+              "index": "③",
+              "target": "っていう",
+              "replacement": "と"
+            },
+            {
+              "index": "④",
+              "target": "だけど",
+              "replacement": "しかし／だが"
+            },
+            {
+              "index": "⑤",
+              "target": "ちょっと",
+              "replacement": "少し",
+              "furigana": "<ruby>少<rt>すこ</rt></ruby>し"
+            },
+            {
+              "index": "⑥",
+              "target": "なんか",
+              "replacement": "など"
+            },
+            {
+              "index": "⑦",
+              "target": "できます",
+              "replacement": "できる"
+            },
+            {
+              "index": "⑧",
+              "target": "じゃ",
+              "replacement": "では"
+            },
+            {
+              "index": "⑨",
+              "target": "やっぱり",
+              "replacement": "やはり"
+            },
+            {
+              "index": "⑩",
+              "target": "いろんな",
+              "replacement": "いろいろな／さまざまな"
+            },
+            {
+              "index": "⑪",
+              "target": "なんじゃ",
+              "replacement": "なのでは"
+            },
+            {
+              "index": "⑫",
+              "target": "ないでしょうか",
+              "replacement": "ないだろうか"
+            }
+          ],
+          "explanation_ja": "解答冊子p.7参照：①大勢／多く ②非常に／大変 ③と ④しかし／だが ⑤少し ⑥など ⑦できる ⑧では ⑨やはり ⑩いろいろな／さまざまな ⑪なのでは ⑫ないだろうか。",
+          "explanation_en": "See Answer booklet p.7: Formal register replacements for colloquial/spoken words in a written essay."
+        }
+      ]
+    },
+    {
+      "section_number": 10.5,
+      "title": "まとめ<ruby>問題<rt>もんだい</rt></ruby>（9<ruby>課<rt>か</rt></ruby>・10<ruby>課<rt>か</rt></ruby>）",
+      "title_en": "Review Exercises (Lessons 9 & 10)",
+      "theme": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>の<ruby>総合練習<rt>そうごうれんしゅう</rt></ruby>（接続表現と文章の雰囲気）",
+      "theme_en": "Comprehensive text grammar review: Conjunctions and consistency of style/register",
+      "passages": [
+        {
+          "passage_id": 309,
+          "title": "家族の卵料理",
+          "title_en": "Family Egg Cooking",
+          "text": "わたしは<ruby>料理<rt>りょうり</rt></ruby>が<ruby>大好<rt>だいす</rt></ruby>きで、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>息子<rt>むすこ</rt></ruby>たちにも<ruby>小<rt>ちい</rt></ruby>さいころから<ruby>料理<rt>りょうり</rt></ruby>を［ 1 ］。ある<ruby>日<rt>ひ</rt></ruby>、<ruby>息子<rt>むすこ</rt></ruby>が<ruby>一人<rt>ひとり</rt></ruby>で<ruby>家族<rt>かぞく</rt></ruby>のために<ruby>卵<rt>たまご</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ってくれた。わたしたちは<ruby>喜<rt>よろこ</rt></ruby>んでさっそく<ruby>一口<rt>ひとくち</rt></ruby><ruby>食<rt>た</rt></ruby>べてみた。［ 2 ］、そのおいしそうな<ruby>料理<rt>りょうり</rt></ruby>は、とても<ruby>辛<rt>から</rt></ruby>かった。<ruby>息子<rt>むすこ</rt></ruby>がトマトケチャップだと<ruby>思<rt>おも</rt></ruby>って<ruby>入<rt>い</rt></ruby>れたのは、<ruby>実<rt>じつ</rt></ruby>は<ruby>辛<rt>から</rt></ruby>いソースだったのだ。<ruby>息子<rt>むすこ</rt></ruby>は<ruby>泣<rt>な</rt></ruby>きそうな<ruby>顔<rt>かお</rt></ruby>をしていた。わたしは、「この<ruby>子<rt>こ</rt></ruby>が<ruby>家族<rt>かぞく</rt></ruby>を<ruby>喜<rt>よろこ</rt></ruby>ばせようと<ruby>思<rt>おも</rt></ruby>ってしたことなのだから、その<ruby>気持<rt>きも</rt></ruby>ちは<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>無駄<rt>むだ</rt></ruby>にしたくない」と<ruby>思<rt>おも</rt></ruby>った。［ 3 ］、その<ruby>辛<rt>から</rt></ruby>い<ruby>料理<rt>りょうり</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>新<rt>あたら</rt></ruby>しい<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ることにした。「<ruby>失敗<rt>しっぱい</rt></ruby>は<ruby>悪<rt>わる</rt></ruby>いことじゃないよ。それに、これは<ruby>失敗<rt>しっぱい</rt></ruby>ではなくて、まだ<ruby>途中<rt>とちゅう</rt></ruby>なんだから」と<ruby>言<rt>い</rt></ruby>いながらスープを［ 4 ］、その<ruby>卵料理<rt>たまごりょうり</rt></ruby>を<ruby>入<rt>い</rt></ruby>れてみた。すると、ふつうのスープが<ruby>本当<rt>ほんとう</rt></ruby>においしいスープに<ruby>変<rt>か</rt></ruby>わった。<ruby>息子<rt>むすこ</rt></ruby>も［ 5 ］。\n参考：青木祐人・青木のぞ美『ゆうとくんちのしあわせごはん』宮帯出版社",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 30901,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　されている",
+                "2　させている",
+                "3　してきた",
+                "4　させられてきた"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "親が息子に料理をさせる使役「料理をさせている」。2が正解。",
+              "explanation_en": "Causative form (allowing/making children cook): 'させている'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 30902,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　ところが",
+                "2　ところで",
+                "3　つまり",
+                "4　しかも"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "喜んで一口食べた予想と異なり、辛かったという意外な展開なので「ところが」。1が正解。",
+              "explanation_en": "Contrasts with expectations of deliciousness: 'ところが'. Choice 1 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 30903,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　さらに",
+                "2　また",
+                "3　そこで",
+                "4　ただ"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "息子の気持ちを無駄にしたくないという思いから次の行動を起こすので「そこで」。3が正解。",
+              "explanation_en": "Prompting a new action in response: 'そこで'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 30904,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　作ったので",
+                "2　作ったが",
+                "3　作った",
+                "4　作り"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "文章の連用中止形（硬い・整った文体）で文をつなぐ「スープを作り、その卵料理を入れてみた」。4が正解。",
+              "explanation_en": "Formal written continuative stem (連用中止): 'スープを作り'. Choice 4 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 30905,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　笑顔になったんだ",
+                "2　笑顔になっていた",
+                "3　笑顔を見ていた",
+                "4　笑顔を見たんだ"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "客観的な記述文体（普通体過去）で結果の状態を表す「笑顔になっていた」。2が正解。",
+              "explanation_en": "Objective descriptive past result: '笑顔になっていた'. Choice 2 is correct."
+            }
+          ]
+        },
+        {
+          "passage_id": 310,
+          "title": "100年前と今",
+          "title_en": "100 Years Ago and Today",
+          "text": "100<ruby>年前<rt>ねんまえ</rt></ruby>と<ruby>今<rt>いま</rt></ruby>\nリュウ エイ\n\n100<ruby>年前<rt>ねんまえ</rt></ruby>と<ruby>今<rt>いま</rt></ruby>とを<ruby>比<rt>くら</rt></ruby>べると、いろいろなことが<ruby>変<rt>か</rt></ruby>わってきた。<ruby>今<rt>いま</rt></ruby>、わたしたちはさまざまな<ruby>技術<rt>ぎじゅつ</rt></ruby>のおかげで、<ruby>便利<rt>べんり</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>っている。［ 1 ］、<ruby>人<rt>ひと</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>も<ruby>昔<rt>むかし</rt></ruby>よりよくなったと<ruby>言<rt>い</rt></ruby>えるだろうか。\n<ruby>例<rt>たと</rt></ruby>えば、<ruby>今<rt>いま</rt></ruby>はお<ruby>金<rt>かね</rt></ruby>さえ<ruby>払<rt>はら</rt></ruby>えばいつでも<ruby>自分<rt>じぶん</rt></ruby>の<ruby>食<rt>た</rt></ruby>べたい<ruby>物<rt>もの</rt></ruby>が<ruby>買<rt>か</rt></ruby>えるので、<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>のありがたみがわからなくなってきている。［ 2 ］、<ruby>昔<rt>むかし</rt></ruby>は<ruby>今<rt>いま</rt></ruby>より<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れることが<ruby>難<rt>むずか</rt></ruby>しかった。そのため、<ruby>今<rt>いま</rt></ruby>よりもずっと<ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていたはずだ。\nまた、<ruby>今<rt>いま</rt></ruby>は、<ruby>通信手段<rt>つうしんしゅだん</rt></ruby>が<ruby>発達<rt>はったつ</rt></ruby>してきて、<ruby>人<rt>ひと</rt></ruby>と［ 3 ］コミュニケーションが<ruby>取<rt>と</rt></ruby>れるようになった。<ruby>便利<rt>べんり</rt></ruby>にはなったが、その<ruby>分<rt>ぶん</rt></ruby>、<ruby>心<rt>こころ</rt></ruby>の<ruby>距離<rt>きょり</rt></ruby>は<ruby>遠<rt>とお</rt></ruby>くなってしまった。<ruby>昔<rt>むかし</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、いつも<ruby>相手<rt>あいて</rt></ruby>と<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>会<rt>あ</rt></ruby>って［ 4 ］、<ruby>今<rt>いま</rt></ruby>よりも<ruby>親<rt>した</rt></ruby>しい<ruby>関係<rt>かんけい</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ることができていたのではないだろうか。\n<ruby>今<rt>いま</rt></ruby>のわたしたちも、<ruby>昔<rt>むかし</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>のように<ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち、もっと<ruby>人間関係<rt>にんげんかんけい</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>にすれば、100<ruby>年前<rt>ねんまえ</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じような<ruby>心豊<rt>こころゆた</rt></ruby>かな<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>送<rt>おく</rt></ruby>れるように［ 5 ］と<ruby>思<rt>おも</rt></ruby>う。",
+          "questions": [
+            {
+              "blank_number": 1,
+              "question_id": 31001,
+              "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　すると",
+                "2　それから",
+                "3　しかし",
+                "4　しかも"
+              ],
+              "correct_answer": 3,
+              "explanation_ja": "技術が便利になったことに対し、「しかし人の心も良くなったと言えるだろうか」と逆接の問題提起をする。「しかし」（3）が正解。",
+              "explanation_en": "Raises a counter-question to technological advancement: 'しかし'. Choice 3 is correct."
+            },
+            {
+              "blank_number": 2,
+              "question_id": 31002,
+              "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　または",
+                "2　一方",
+                "3　ただ",
+                "4　それに"
+              ],
+              "correct_answer": 2,
+              "explanation_ja": "現在の状況と対比して過去の状況を述べるので「一方」（2）が正解。",
+              "explanation_en": "Contrasts the present situation with the past: '一方'. Choice 2 is correct."
+            },
+            {
+              "blank_number": 3,
+              "question_id": 31003,
+              "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　会わずに",
+                "2　会えず",
+                "3　会えなく",
+                "4　会わなくなり"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "通信手段の発達により直接顔を合わせないでコミュニケーションが取れるので「会わずに」（1）が正解。",
+              "explanation_en": "'会わずに' (without meeting in person). Choice 1 is correct."
+            },
+            {
+              "blank_number": 4,
+              "question_id": 31004,
+              "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　話していたのが",
+                "2　話していたけど",
+                "3　話していたのに",
+                "4　話していたので"
+              ],
+              "correct_answer": 4,
+              "explanation_ja": "直接会って話していたことが親しい関係を築けた理由なので「話していたので」（4）が正解。",
+              "explanation_en": "Expresses the reason: '話していたので' (because they talked face-to-face). Choice 4 is correct."
+            },
+            {
+              "blank_number": 5,
+              "question_id": 31005,
+              "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　なるのではないか",
+                "2　なるのではないかな",
+                "3　なるのではないだろう",
+                "4　なるのではないでしょう"
+              ],
+              "correct_answer": 1,
+              "explanation_ja": "論説文（論文体・硬い文章）における自説の提示「〜なるのではないかと思う」。「なるのではないか」（1）が正解。",
+              "explanation_en": "Formal essay conclusion expression: 'なるのではないか'. Choice 1 is correct."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "passages": [
+    {
+      "passage_id": 301,
+      "title": "外国語の勉強",
+      "title_en": "Studying Foreign Languages",
+      "text": "わたしは<ruby>言葉<rt>ことば</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。<ruby>今<rt>いま</rt></ruby>までにいくつかの<ruby>外国語<rt>がいこくご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>したことがあります。<ruby>日本語<rt>にほんご</rt></ruby>は<ruby>国<rt>くに</rt></ruby>にいるとき1<ruby>年<rt>ねん</rt></ruby>ぐらい<ruby>勉強<rt>べんきょう</rt></ruby>しましたが、<ruby>日本<rt>にほん</rt></ruby>に<ruby>来<rt>き</rt></ruby>てからも<ruby>続<rt>つづ</rt></ruby>けています。<ruby>今<rt>いま</rt></ruby>、<ruby>毎週<rt>まいしゅう</rt></ruby><ruby>火曜日<rt>かようび</rt></ruby>と<ruby>木曜日<rt>もくようび</rt></ruby>の<ruby>夜<rt>よる</rt></ruby>、<ruby>市民<rt>しみん</rt></ruby>センターに<ruby>行<rt>い</rt></ruby>って、<ruby>田中<rt>たなか</rt></ruby>さんから<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>教<rt>おし</rt></ruby>わっています。レッスンのときに［ 1-a ］ことは<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>予習<rt>よしゅう</rt></ruby>し、［ 1-b ］ことは<ruby>必<rt>かなら</rt></ruby>ず<ruby>復習<rt>ふくしゅう</rt></ruby>しています。\n\n<ruby>外国語<rt>がいこくご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>しようとする<ruby>人<rt>ひと</rt></ruby>にアドバイスすることが<ruby>三<rt>みっ</rt></ruby>つあります。まずするべきこととは、いい<ruby>先生<rt>せんせい</rt></ruby>を［ 2 ］。<ruby>何回<rt>なんかい</rt></ruby>かレッスンを<ruby>受<rt>う</rt></ruby>ければ、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>スタイルに<ruby>合<rt>あ</rt></ruby>う<ruby>先生<rt>せんせい</rt></ruby>かどうかわかります。どういう<ruby>教<rt>おし</rt></ruby>え<ruby>方<rt>かた</rt></ruby>をしてほしいか<ruby>先生<rt>せんせい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えてもいいと<ruby>思<rt>おも</rt></ruby>います。\nまた、<ruby>勉強<rt>べんきょう</rt></ruby>が<ruby>難<rt>むずか</rt></ruby>しくなると、なかなか<ruby>次<rt>つぎ</rt></ruby>に<ruby>進<rt>すす</rt></ruby>めなくなります。しかし、<ruby>同<rt>おな</rt></ruby>じところばかりずっと［ 3 ］、だんだんあきてきます。そういうときは<ruby>全部<rt>ぜんぶ</rt></ruby>［ 4 ］、<ruby>少<rt>すこ</rt></ruby>しずつ<ruby>先<rt>さき</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んだほうがいいです。そして、<ruby>三<rt>みっ</rt></ruby>つ<ruby>目<rt>め</rt></ruby>は、<ruby>習<rt>なら</rt></ruby>ったことをどれぐらい<ruby>覚<rt>おぼ</rt></ruby>えているかということより、どれだけ［ 5 ］ということの<ruby>方<rt>ほう</rt></ruby>が<ruby>大切<rt>たいせつ</rt></ruby>だということです。<ruby>勉強<rt>べんきょう</rt></ruby>したことを<ruby>実際<rt>じっさい</rt></ruby>にどんどん<ruby>使<rt>つか</rt></ruby>ってみることが<ruby>大事<rt>だいじ</rt></ruby>です。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30101,
+          "prompt": "［ 1 ］（1-a / 1-b）に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　a 勉強する / b 勉強した",
+            "2　a 勉強した / b 勉強する",
+            "3　a 勉強している / b 勉強した",
+            "4　a 勉強していた / b 勉強する"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "これからレッスンで「勉強する」ことは前日に予習し、レッスンですでに「勉強した」ことは復習するので、1が正解。",
+          "explanation_en": "You prepare for what you 'will study' (勉強する) and review what you 'studied' (勉強した). Correct choice is 1."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30102,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　探します",
+            "2　探すことです",
+            "3　探しています",
+            "4　探していることです"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "文頭が「まずするべきこととは、…」とあるので、述語は「〜（動詞辞書形）ことだ／ことです」で受ける。2が正解。",
+          "explanation_en": "The sentence begins with 'まずするべきこととは', requiring a predicate in '〜ことです'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30103,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　やっていると",
+            "2　やっていたので",
+            "3　やってみると",
+            "4　やってみたので"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "「ずっとやっていると、だんだんあきてきます」（仮定・条件「〜と」）。継続状態を表す1が正解。",
+          "explanation_en": "'〜ていると' denotes a continuing condition resulting in getting tired of it. Choice 1 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30104,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　覚えられないと",
+            "2　覚えられなくても",
+            "3　覚えられたら",
+            "4　覚えられたので"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "「全部覚えられなくても、少しずつ先に進んだほうがいい」（逆接条件「〜ても」）。2が正解。",
+          "explanation_en": "'Even if you cannot memorize everything (覚えられなくても), it is better to move forward'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30105,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　使ってみる",
+            "2　使ってみるの",
+            "3　使っている",
+            "4　使っているか"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "「どれぐらい覚えているかということより、どれだけ［使っているか］ということの方が大切」。疑問詞「どれだけ」に呼応して「〜か」で受ける。4が正解。",
+          "explanation_en": "Corresponds with the question word 'どれだけ' taking '使っているか'. Choice 4 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 302,
+      "title": "ありの巣の観察",
+      "title_en": "Observing an Ant Colony",
+      "text": "<ruby>先日<rt>せんじつ</rt></ruby>、<ruby>公園<rt>こうえん</rt></ruby>で、ありが<ruby>忙<rt>いそが</rt></ruby>しそうに<ruby>働<rt>はたら</rt></ruby>いているのを<ruby>見<rt>み</rt></ruby>た。<ruby>白<rt>しろ</rt></ruby>い<ruby>小<rt>ちい</rt></ruby>さなものを［ 1 ］。<ruby>行列<rt>ぎょうれつ</rt></ruby>の<ruby>先<rt>さき</rt></ruby>を<ruby>見<rt>み</rt></ruby>ると、<ruby>地面<rt>じめん</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さな<ruby>穴<rt>あな</rt></ruby>が<ruby>開<rt>ひら</rt></ruby>いていた。ありの<ruby>巣<rt>す</rt></ruby>だ。<ruby>穴<rt>あな</rt></ruby>の<ruby>周<rt>まわ</rt></ruby>りには、<ruby>穴<rt>あな</rt></ruby>を<ruby>掘<rt>ほ</rt></ruby>ったときに<ruby>出<rt>で</rt></ruby>た<ruby>土<rt>つち</rt></ruby>が<ruby>盛<rt>も</rt></ruby>られていた。この<ruby>土<rt>つち</rt></ruby>の<ruby>山<rt>やま</rt></ruby>があるので、<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>っても<ruby>周<rt>まわ</rt></ruby>りから<ruby>雨水<rt>あまみず</rt></ruby>が<ruby>入<rt>はい</rt></ruby>りにくくなっているようだ。<ruby>穴<rt>あな</rt></ruby>の<ruby>中<rt>なか</rt></ruby>は［ 2 ］。<ruby>自分<rt>じぶん</rt></ruby>で<ruby>中<rt>なか</rt></ruby>を<ruby>見<rt>み</rt></ruby>ることはできないので、<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ってインターネットで<ruby>調<rt>しら</rt></ruby>べてみた。\nある<ruby>専門家<rt>せんもんか</rt></ruby>のページによると、ありの<ruby>巣<rt>す</rt></ruby>は、<ruby>初<rt>はじ</rt></ruby>めは<ruby>女王<rt>じょおう</rt></ruby>ありがたった1<ruby>匹<rt>ぴき</rt></ruby>で［ 3 ］。<ruby>最初<rt>さいしょ</rt></ruby>は<ruby>一部屋<rt>ひとへや</rt></ruby>だけで、<ruby>女王<rt>じょおう</rt></ruby>はそこで<ruby>卵<rt>たまご</rt></ruby>を<ruby>産<rt>う</rt></ruby>んで［ 4 ］。<ruby>卵<rt>たまご</rt></ruby>は1か<ruby>月<rt>げつ</rt></ruby>ぐらいで<ruby>働<rt>はたら</rt></ruby>きありに<ruby>成長<rt>せいちょう</rt></ruby>し、この<ruby>働<rt>はたら</rt></ruby>きありが<ruby>巣<rt>す</rt></ruby>を<ruby>大<rt>おお</rt></ruby>きくしていくらしい。<ruby>卵<rt>たまご</rt></ruby>を<ruby>置<rt>お</rt></ruby>いておく<ruby>部屋<rt>へや</rt></ruby>、えさを<ruby>置<rt>お</rt></ruby>いておく<ruby>部屋<rt>へや</rt></ruby>、<ruby>子<rt>こ</rt></ruby>ども<ruby>部屋<rt>べや</rt></ruby>など、<ruby>人間<rt>にんげん</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>よりも［ 5 ］。<ruby>女王<rt>じょおう</rt></ruby>ありの<ruby>部屋<rt>へや</rt></ruby>はいちばん<ruby>奥<rt>おく</rt></ruby>で、<ruby>女王<rt>じょおう</rt></ruby>はここで<ruby>出産<rt>しゅっさん</rt></ruby>と<ruby>子育<rt>こそだ</rt></ruby>てに<ruby>集中<rt>しゅうちゅう</rt></ruby>するのだそうだ。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30201,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　運んだ",
+            "2　運んでいた",
+            "3　運ばれた",
+            "4　運ばれていた"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "「白い小さなものを運んでいた」（その時進行中だった動作）。2が正解。",
+          "explanation_en": "Ants were in the process of carrying small white objects; past continuous '運んでいた'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30202,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　どうなるのだろう",
+            "2　どうしたのだろう",
+            "3　どうなっているのだろう",
+            "4　どうしていたのだろう"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "穴の中が現在どのような状態になっているかを表すので「どうなっているのだろう」。3が正解。",
+          "explanation_en": "Expresses wondering about the current state inside the hole; 'どうなっているのだろう'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30203,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　作るそうだ",
+            "2　作ったそうだ",
+            "3　作られるそうだ",
+            "4　作られたそうだ"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "専門家の説明による一般的な巣作りの習性を述べているので現在形「作るそうだ」。1が正解。",
+          "explanation_en": "Describes the general habit of queen ants starting colonies from scratch; '作るそうだ'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30204,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　育てる",
+            "2　育てた",
+            "3　育てられる",
+            "4　育てられた"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "「卵を産んで育てる」（一般的なプロセス）。1が正解。",
+          "explanation_en": "Continuous process in general explanation: '卵を産んで育てる'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30205,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　よく働く",
+            "2　子どもが多い",
+            "3　簡単に作った",
+            "4　部屋が多い"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "直前に「卵を置いておく部屋、えさを置いておく部屋、子ども部屋など」と部屋の種類が列挙されているので、「人間の家よりも部屋が多い」が文脈に適合。4が正解。",
+          "explanation_en": "Listing multiple rooms immediately before leads to '部屋が多い' (has more rooms than human houses). Choice 4 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 303,
+      "title": "蒸し料理用のなべ",
+      "title_en": "A Steaming Pot for Cooking",
+      "text": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしだと、どうしても<ruby>野菜不足<rt>やさいぶそく</rt></ruby>になります。<ruby>健康<rt>けんこう</rt></ruby>のために1<ruby>日<rt>にち</rt></ruby>に350グラムの<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるといいと<ruby>言<rt>い</rt></ruby>いますが、サラダだけではそんなに<ruby>食<rt>た</rt></ruby>べられません。でも、<ruby>時間<rt>じかん</rt></ruby>をかけて<ruby>野菜<rt>やさい</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るのは<ruby>面倒<rt>めんどう</rt></ruby>だし、<ruby>油<rt>あぶら</rt></ruby>や<ruby>塩<rt>しお</rt></ruby>、しょうゆを<ruby>使<rt>つか</rt></ruby>いすぎると、<ruby>別<rt>べつ</rt></ruby>の［ 1 ］。\nそこで、わたしは<ruby>考<rt>かんが</rt></ruby>えました。<ruby>栄養<rt>えいよう</rt></ruby>を<ruby>逃<rt>に</rt></ruby>がさないで、<ruby>味付<rt>あじつ</rt></ruby>けも<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>野菜料理<rt>やさいりょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るには<ruby>蒸<rt>む</rt></ruby>すのがいいと。さっそく<ruby>蒸<rt>む</rt></ruby>し<ruby>料理用<rt>りょうりよう</rt></ruby>のなべを<ruby>買<rt>か</rt></ruby>ってきました。このなべはふたが<ruby>三角帽子<rt>さんかくぼうし</rt></ruby>のような<ruby>形<rt>かたち</rt></ruby>に［ 2 ］。<ruby>野菜<rt>やさい</rt></ruby>を<ruby>入<rt>い</rt></ruby>れてふたをし、<ruby>弱火<rt>よわび</rt></ruby>で7、8<ruby>分<rt>ぷん</rt></ruby>。<ruby>火<rt>ひ</rt></ruby>を<ruby>止<rt>と</rt></ruby>めてしばらくしてからふたを<ruby>開<rt>あ</rt></ruby>けると、<ruby>野菜<rt>やさい</rt></ruby>はすっかり<ruby>軟<rt>やわ</rt></ruby>らかくなっていました。なべに<ruby>水<rt>みず</rt></ruby>を<ruby>入<rt>い</rt></ruby>れなくても、<ruby>野菜<rt>やさい</rt></ruby>から<ruby>出<rt>で</rt></ruby>た<ruby>水<rt>みず</rt></ruby>が<ruby>水蒸気<rt>すいじょうき</rt></ruby>になって<ruby>上<rt>うえ</rt></ruby>に<ruby>上<rt>あ</rt></ruby>がります。そして、ふたに<ruby>当<rt>あ</rt></ruby>たって<ruby>温度<rt>おんど</rt></ruby>が<ruby>下<rt>さ</rt></ruby>がり、［ 3 ］というわけです。<ruby>少<rt>すこ</rt></ruby>し<ruby>塩<rt>しお</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>っただけで<ruby>十分<rt>じゅうぶん</rt></ruby>おいしくて、<ruby>野菜本来<rt>やさいほんらい</rt></ruby>の<ruby>味<rt>あじ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむことができました。<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>って、この1か<ruby>月<rt>げつ</rt></ruby><ruby>毎日<rt>まいにち</rt></ruby><ruby>蒸<rt>む</rt></ruby>し<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べ<ruby>続<rt>つづ</rt></ruby>けたら、<ruby>体<rt>からだ</rt></ruby>が［ 4 ］。なべに［ 5 ］<ruby>説明書<rt>せつめいしょ</rt></ruby>によると、できるだけいろいろな<ruby>野菜<rt>やさい</rt></ruby>を<ruby>食<rt>た</rt></ruby>べるのがいいそうです。ですから、これからは、<ruby>今<rt>いま</rt></ruby>まであまり<ruby>食<rt>た</rt></ruby>べなかったほかの<ruby>野菜<rt>やさい</rt></ruby>も<ruby>食<rt>た</rt></ruby>べてみようと<ruby>思<rt>おも</rt></ruby>っています。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30301,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　問題が出てきます",
+            "2　問題が出ていきます",
+            "3　問題を出してきます",
+            "4　問題を出していきます"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "油や塩を使いすぎると「別の問題が生じる（話者に降りかかる）」。自動詞＋てくる「問題が出てきます」。1が正解。",
+          "explanation_en": "A new problem arises for the speaker; intransitive + te-kuru: '問題が出てきます'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30302,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　なってきます",
+            "2　なってきました",
+            "3　なっています",
+            "4　なりました"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "鍋のふたの形状・状態を表すので「三角帽子のような形になっています」。3が正解。",
+          "explanation_en": "Describes the existing shape/state of the lid: '三角帽子のような形になっています'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30303,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　ふたの上に落ちる",
+            "2　野菜の上に落ちる",
+            "3　野菜の上から落とす",
+            "4　ふたの上に落とす"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "水蒸気がふたに当たって水滴になり、自然に「野菜の上に落ちる」（自動詞）。2が正解。",
+          "explanation_en": "The cooled water drops naturally fall onto the vegetables; '野菜の上に落ちる'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30304,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　軽くしてきました",
+            "2　軽くしていきました",
+            "3　軽くなってきました",
+            "4　軽くなっていきました"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "1か月食べ続けたら身体が自然に軽くなる変化が現在に至ったので「軽くなってきました」（自動詞変化＋てきた）。3が正解。",
+          "explanation_en": "Intransitive change continuing up to the present: '軽くなってきました'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30305,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　ついていく",
+            "2　ついてきた",
+            "3　つけてくる",
+            "4　つけていった"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "買った鍋に付属していた説明書なので、自動詞＋過去・話者への移動「ついてきた説明書」。2が正解。",
+          "explanation_en": "The instruction manual that came with the purchased pot: 'ついてきた説明書'. Choice 2 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 304,
+      "title": "ベランダのゴーヤ栽培",
+      "title_en": "Growing Bitter Gourd on the Balcony",
+      "text": "<ruby>今年<rt>ことし</rt></ruby>の<ruby>夏<rt>なつ</rt></ruby>はベランダでゴーヤを<ruby>育<rt>そだ</rt></ruby>ててみることにした。ゴーヤというのは<ruby>大<rt>おお</rt></ruby>きいきゅうりのような［ 1 ］<ruby>野菜<rt>やさい</rt></ruby>だ。<ruby>暑<rt>あつ</rt></ruby>さに<ruby>強<rt>つよ</rt></ruby>くて、<ruby>病気<rt>びょうき</rt></ruby>や<ruby>虫<rt>むし</rt></ruby>の<ruby>心配<rt>しんぱい</rt></ruby>もあまりないという。\nまず、<ruby>種<rt>たね</rt></ruby>の<ruby>先<rt>さき</rt></ruby>を<ruby>切<rt>き</rt></ruby>り<ruby>落<rt>お</rt></ruby>とし、<ruby>水<rt>みず</rt></ruby>を<ruby>少<rt>すこ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れた<ruby>皿<rt>さら</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いて、<ruby>根<rt>ね</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくるのを<ruby>待<rt>ま</rt></ruby>った。<ruby>四日目<rt>よっかめ</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>いものが［ 2 ］。これがゴーヤの<ruby>根<rt>ね</rt></ruby>だ。<ruby>土<rt>つち</rt></ruby>を<ruby>入<rt>い</rt></ruby>れたポットにそっと<ruby>植<rt>う</rt></ruby>えた。さらに1<ruby>週間後<rt>しゅうかんご</rt></ruby>、<ruby>重<rt>おも</rt></ruby>い<ruby>土<rt>つち</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げてかわいい<ruby>芽<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>てきた。<ruby>葉<rt>は</rt></ruby>が4<ruby>枚<rt>まい</rt></ruby>になったところで、<ruby>大<rt>おお</rt></ruby>きい<ruby>植木鉢<rt>うえきばち</rt></ruby>に<ruby>植<rt>う</rt></ruby>え<ruby>替<rt>か</rt></ruby>えた。<ruby>毎日<rt>まいにち</rt></ruby>どんどん［ 3 ］、とても<ruby>楽<rt>たの</rt></ruby>しみだった。\nそのうち、つる（注）が<ruby>伸<rt>の</rt></ruby>びてきた。<ruby>棒<rt>ぼう</rt></ruby>を<ruby>立<rt>た</rt></ruby>てて、このつるを<ruby>巻<rt>ま</rt></ruby>いてやった。<ruby>折<rt>お</rt></ruby>れないように<ruby>注意<rt>ちゅうい</rt></ruby>しながら、<ruby>伸<rt>の</rt></ruby>びた<ruby>部分<rt>ぶぶん</rt></ruby>をなるべく<ruby>横<rt>よこ</rt></ruby>に［ 4 ］いいそうだ。やがて<ruby>直径<rt>ちょっけい</rt></ruby>2センチぐらいの<ruby>黄色<rt>きいろ</rt></ruby>い<ruby>花<rt>はな</rt></ruby>がたくさん<ruby>咲<rt>さ</rt></ruby>いた。1<ruby>日<rt>にち</rt></ruby>だけ<ruby>咲<rt>さ</rt></ruby>いて<ruby>落<rt>お</rt></ruby>ちてしまう<ruby>花<rt>はな</rt></ruby>もあるし、ずっと<ruby>咲<rt>さ</rt></ruby>いている<ruby>花<rt>はな</rt></ruby>もある。<ruby>見<rt>み</rt></ruby>ると、<ruby>咲<rt>さ</rt></ruby>き<ruby>続<rt>つづ</rt></ruby>けている<ruby>花<rt>はな</rt></ruby>の<ruby>下<rt>した</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さい［ 5 ］。<ruby>感動的<rt>かんどうてき</rt></ruby>な<ruby>発見<rt>はっけん</rt></ruby>だった。\n（注：つる）",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30401,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　形をする",
+            "2　形をしている",
+            "3　形をしてきた",
+            "4　形をしていく"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "形状を表す表現「〜形をしている」。名詞を修飾して「きゅうりのような形をしている野菜」。2が正解。",
+          "explanation_en": "Expresses shape/appearance: '〜形をしている野菜'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30402,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　見ている",
+            "2　見られていった",
+            "3　見えてきた",
+            "4　見えていった"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "根が成長して話者の目に次第に見えるようになったので「見えてきた」。3が正解。",
+          "explanation_en": "The white roots became visible to the speaker; '見えてきた'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30403,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　大きくしていけば",
+            "2　大きくしていくので",
+            "3　大きくなっていけば",
+            "4　大きくなっていくので"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "毎日どんどん自然に成長していく様子が楽しみだった理由を述べるので、「大きくなっていくので」。4が正解。",
+          "explanation_en": "'大きくなっていくので' expresses the reason for excitement as it grew larger day by day. Choice 4 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30404,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　広げると",
+            "2　広がると",
+            "3　広げてくると",
+            "4　広がっていくと"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "人間が意図的につるを横に広げる動作（他動詞）＋条件「〜と」。「広げるといいそうだ」。1が正解。",
+          "explanation_en": "Deliberately spreading the vines horizontally (transitive): '広げると'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30405,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　ゴーヤの実がついていた",
+            "2　ゴーヤの実がつけてあった",
+            "3　ゴーヤの実をつけてきた",
+            "4　ゴーヤの実がつけてきた"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "自然に実がなっている状態を発見したので自動詞「ゴーヤの実がついていた」。1が正解。",
+          "explanation_en": "Discovering small bitter gourd fruits naturally attached: 'ゴーヤの実がついていた'. Choice 1 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 305,
+      "title": "自転車と歩行者",
+      "title_en": "Bicycles and Pedestrians",
+      "text": "<ruby>先日<rt>せんじつ</rt></ruby>、<ruby>後<rt>うし</rt></ruby>ろから<ruby>来<rt>き</rt></ruby>た<ruby>自転車<rt>じてんしゃ</rt></ruby>に［ 1 ］しまいました。わたしは<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたのですから、<ruby>悪<rt>わる</rt></ruby>いのはもちろん<ruby>自転車<rt>じてんしゃ</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>です。\n<ruby>次<rt>つぎ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>、その<ruby>歩道<rt>ほどう</rt></ruby>で<ruby>今度<rt>こんど</rt></ruby>はわたしが<ruby>自転車<rt>じてんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>っていたときのことです。<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもを<ruby>連<rt>つ</rt></ruby>れたお<ruby>母<rt>かあ</rt></ruby>さんが<ruby>前<rt>まえ</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いていたので、ベルを［ 2 ］。すると、そのお<ruby>母<rt>かあ</rt></ruby>さんは「<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>らないで。」と<ruby>言<rt>い</rt></ruby>いました。［ 3 ］<ruby>困<rt>こま</rt></ruby>ると<ruby>言<rt>い</rt></ruby>いたそうな<ruby>顔<rt>かお</rt></ruby>で、<ruby>彼女<rt>かのじょ</rt></ruby>はわたしをにらみました。\n<ruby>道路交通法<rt>どうろこうつうほう</rt></ruby>という<ruby>法律<rt>ほうりつ</rt></ruby>がありますが、2008<ruby>年<rt>ねん</rt></ruby>に<ruby>改正<rt>かいせい</rt></ruby>されて、<ruby>歩道<rt>ほどう</rt></ruby>の<ruby>安全<rt>あんぜん</rt></ruby>のために<ruby>自転車<rt>じてんしゃ</rt></ruby>は<ruby>基本的<rt>きほんてき</rt></ruby>に<ruby>車道<rt>しゃどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>ることになりました。けれども、<ruby>車<rt>くるま</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>場合<rt>ばあい</rt></ruby>、<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>車道<rt>しゃどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>ったら、［ 4 ］<ruby>迷惑<rt>めいわく</rt></ruby>でしょう。この<ruby>法律<rt>ほうりつ</rt></ruby>には<ruby>自転車<rt>じてんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>る<ruby>人<rt>ひと</rt></ruby>の<ruby>年齢<rt>ねんれい</rt></ruby>などいろいろ<ruby>条件<rt>じょうけん</rt></ruby>があるようですが、わたしは<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>危険<rt>きけん</rt></ruby>な<ruby>車道<rt>しゃどう</rt></ruby>を［ 5 ］いやです。でも、<ruby>歩<rt>ある</rt></ruby>く<ruby>人<rt>ひと</rt></ruby>の<ruby>立場<rt>たちば</rt></ruby>になって<ruby>考<rt>かんが</rt></ruby>えると、<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>走<rt>はし</rt></ruby>る<ruby>自転車<rt>じてんしゃ</rt></ruby>は<ruby>迷惑<rt>めいわく</rt></ruby>です。<ruby>自転車<rt>じてんしゃ</rt></ruby>のための<ruby>道<rt>みち</rt></ruby>がもっと<ruby>増<rt>ふ</rt></ruby>えればいいのに、と<ruby>思<rt>おも</rt></ruby>います。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30501,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　ぶつけて",
+            "2　ぶつけられて",
+            "3　ぶつけさせて",
+            "4　ぶつけさせられて"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "自転車にぶつかられた被害受身。「ぶつけられてしまいました」。2が正解。",
+          "explanation_en": "Suffering passive: 'ぶつけられて' (was bumped into by a bicycle). Choice 2 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30502,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　鳴らしました",
+            "2　鳴らされました",
+            "3　鳴らしてもらいました",
+            "4　鳴らしてくれました"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "自転車に乗っていた話者自身の能動動作なので「鳴らしました」。1が正解。",
+          "explanation_en": "Active action of the speaker riding the bike: '鳴らしました'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30503,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　注意させられないと",
+            "2　注意させないと",
+            "3　注意してあげないと",
+            "4　注意してくれないと"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "母親の立場での発言「（わたしに）注意してくれないと困る」。4が正解。",
+          "explanation_en": "'注意してくれないと困る' reflects the mother's sentiment toward the speaker. Choice 4 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30504,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　車の人には",
+            "2　歩く人には",
+            "3　自転車の人には",
+            "4　子どもやお年寄りには"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "車道に自転車が入ると自動車の運転手にとって迷惑となるので「車の人には迷惑でしょう」。1が正解。",
+          "explanation_en": "Bikes in the car lane cause nuisance for motorists: '車の人には'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30505,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　走れるのは",
+            "2　走らされるのは",
+            "3　走ってあげるのは",
+            "4　走ってもらうのは"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "危険な車道を走るよう強制される使役受身「走らされるのはいやです」。2が正解。",
+          "explanation_en": "Causative-passive indicating being forced to ride on dangerous car roads: '走らされるのは'. Choice 2 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 306,
+      "title": "税金についての意識",
+      "title_en": "Awareness of Taxes",
+      "text": "わたしたちはどんなときに「<ruby>税金<rt>ぜいきん</rt></ruby>」のことを<ruby>考<rt>かんが</rt></ruby>えるでしょうか。スーパーで<ruby>肉<rt>にく</rt></ruby>や<ruby>野菜<rt>やさい</rt></ruby>を<ruby>買<rt>か</rt></ruby>うときなどは、<ruby>税金<rt>ぜいきん</rt></ruby>（<ruby>消費税<rt>しょうひぜい</rt></ruby>）を<ruby>払<rt>はら</rt></ruby>っているという<ruby>意識<rt>いしき</rt></ruby>はあまり<ruby>高<rt>たか</rt></ruby>くないかもしれません。たばこ<ruby>税<rt>ぜい</rt></ruby>や<ruby>酒税<rt>しゅぜい</rt></ruby>についても、<ruby>値段<rt>ねだん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>初<rt>はじ</rt></ruby>めから<ruby>入<rt>はい</rt></ruby>っているため、<ruby>税金<rt>ぜいきん</rt></ruby>を［ 1 ］という<ruby>意識<rt>いしき</rt></ruby>は<ruby>薄<rt>うす</rt></ruby>いでしょう。\nしかし、<ruby>例<rt>たと</rt></ruby>えば<ruby>何<rt>なに</rt></ruby>かの<ruby>修理<rt>しゅうり</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>むときなどは<ruby>意識<rt>いしき</rt></ruby>が<ruby>強<rt>つよ</rt></ruby>くなるでしょう。<ruby>修理代<rt>しゅうりだい</rt></ruby>のほかに、［ 2 ］ことがわかります。もし<ruby>税金<rt>ぜいきん</rt></ruby>が<ruby>加<rt>くわ</rt></ruby>わらなければもっと<ruby>安<rt>やす</rt></ruby>いりになあ、と<ruby>残念<rt>ざんねん</rt></ruby>な<ruby>気<rt>き</rt></ruby>がします。また、<ruby>会社<rt>かいしゃ</rt></ruby>から<ruby>給料<rt>きゅうりょう</rt></ruby>を［ 3 ］ときも<ruby>同<rt>おな</rt></ruby>じような<ruby>気持<rt>きも</rt></ruby>ちになります。<ruby>全体<rt>ぜんたい</rt></ruby>の<ruby>給料<rt>きゅうりょう</rt></ruby>から<ruby>税金<rt>ぜいきん</rt></ruby>が［ 4 ］、<ruby>実際<rt>じっさい</rt></ruby>に<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>れる<ruby>金額<rt>きんがく</rt></ruby>が<ruby>少<rt>すく</rt></ruby>なくなるからです。\nこのように、わたしたちは<ruby>意識<rt>いしき</rt></ruby>してもしなくても、さまざまな<ruby>場面<rt>ばめん</rt></ruby>で<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>っています。<ruby>政府<rt>せいふ</rt></ruby>には、わたしたちから<ruby>取<rt>と</rt></ruby>る<ruby>税金<rt>ぜいきん</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>をもっとしっかり［ 5 ］。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30601,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　払わせている",
+            "2　払わされている",
+            "3　払ってもらえる",
+            "4　払ってくれる"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "税金を強制的に支払わされているという使役受身「払わされている」。2が正解。",
+          "explanation_en": "Causative-passive expressing being made to pay: '払わされている'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30602,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　税金が取られる",
+            "2　税金を取らせる",
+            "3　税金を払ってあげる",
+            "4　税金を払ってもらう"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "修理代のほかに税金が徴収される被害受身「税金が取られる」。1が正解。",
+          "explanation_en": "Passive form: '税金が取られる' (tax is taken). Choice 1 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30603,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　払った",
+            "2　あげた",
+            "3　くれた",
+            "4　もらった"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "会社から給料を「もらった」とき（受け取る動作）。4が正解。",
+          "explanation_en": "Receiving salary from the company: '給料をもらったとき'. Choice 4 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30604,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　引かれるので",
+            "2　引かれても",
+            "3　引かせるのに",
+            "4　引かせても"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "給料から税金が差し引かれる理由を述べる受身「引かれるので」。1が正解。",
+          "explanation_en": "Causal passive reason: '引かれるので' (because it is deducted). Choice 1 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30605,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　考えられます",
+            "2　考えてあげたいです",
+            "3　考えてもらいたいです",
+            "4　考えてくれます"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "政府に対して望むことなので「〜てもらいたい」。「考えてもらいたいです」。3が正解。",
+          "explanation_en": "Expressing a request/desire toward the government: '考えてもらいたいです'. Choice 3 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 307,
+      "title": "豚とペンギン",
+      "title_en": "The Pig and the Penguin",
+      "text": "<ruby>面白<rt>おもしろ</rt></ruby>い［ 1 ］。\nある<ruby>日<rt>ひ</rt></ruby>ある<ruby>所<rt>ところ</rt></ruby>で<ruby>豚<rt>ぶた</rt></ruby>とペンギン（注）が<ruby>出会<rt>であ</rt></ruby>った。ペンギンは<ruby>豚<rt>ぶた</rt></ruby>に「<ruby>今日<rt>きょう</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>いね」と<ruby>言<rt>い</rt></ruby>った。<ruby>豚<rt>ぶた</rt></ruby>は「いや、そんなことはない。<ruby>過<rt>す</rt></ruby>ごしやすい<ruby>日<rt>ひ</rt></ruby>だよ」と<ruby>言<rt>い</rt></ruby>った。「<ruby>違<rt>ちが</rt></ruby>うよ。ほら、<ruby>温度計<rt>おんどけい</rt></ruby>を<ruby>見<rt>み</rt></ruby>ろよ。<ruby>気温<rt>きおん</rt></ruby>は<ruby>高<rt>たか</rt></ruby>いよ。25<ruby>度<rt>ど</rt></ruby>だよ」「25<ruby>度<rt>ど</rt></ruby>？ ちょうどいい<ruby>気温<rt>きおん</rt></ruby>じゃないか」ペンギンと<ruby>豚<rt>ぶた</rt></ruby>はとうとうけんかになってしまった……という<ruby>話<rt>はなし</rt></ruby>である。\nもちろん、<ruby>豚<rt>ぶた</rt></ruby>とペンギンは<ruby>一<rt>ひと</rt></ruby>つのたとえなのだが、［ 2 ］わたしたちの<ruby>日常<rt>にちじょう</rt></ruby>によくあることだ。<ruby>南極<rt>なんきょく</rt></ruby>から<ruby>来<rt>き</rt></ruby>たペンギンと<ruby>暖<rt>あたた</rt></ruby>かい<ruby>所<rt>ところ</rt></ruby>に<ruby>住<rt>す</rt></ruby>む<ruby>豚<rt>ぶた</rt></ruby>の<ruby>感<rt>かん</rt></ruby>じ<ruby>方<rt>かた</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>うように、<ruby>暑<rt>あつ</rt></ruby>さ、うるささ、<ruby>美<rt>うつく</rt></ruby>しさ、<ruby>広<rt>ひろ</rt></ruby>さ、<ruby>便利<rt>べんり</rt></ruby>さなどは、<ruby>人<rt>ひと</rt></ruby>によって<ruby>基準<rt>きじゅん</rt></ruby>が<ruby>違<rt>ちが</rt></ruby>う。その<ruby>基準<rt>きじゅん</rt></ruby>は［ 3 ］<ruby>性格<rt>せいかく</rt></ruby>や<ruby>生<rt>う</rt></ruby>まれ<ruby>育<rt>そだ</rt></ruby>った<ruby>環境<rt>かんきょう</rt></ruby>によってできあがるのだろう。それぞれ［ 4 ］<ruby>違<rt>ちが</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まって<ruby>集団<rt>しゅうだん</rt></ruby>をつくり、<ruby>人間<rt>にんげん</rt></ruby>はその<ruby>集団<rt>しゅうだん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>生活<rt>せいかつ</rt></ruby>している。このことをよく<ruby>理解<rt>りかい</rt></ruby>しなければ、わたしたちはこの<ruby>話<rt>はなし</rt></ruby>を［ 5 ］。\n（注：ペンギン）\n参考：©小泉吉宏／メディアファクトリー",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30701,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　漫画がある",
+            "2　漫画はある",
+            "3　漫画である",
+            "4　漫画でもある"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "冒頭で新しい話題・存在を導入するので「面白い漫画がある」。1が正解。",
+          "explanation_en": "Introduces a new existence at the beginning: '面白い漫画がある'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30702,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　このことは",
+            "2　このことが",
+            "3　こういうことは",
+            "4　こういうことが"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "豚とペンギンの例のような一般的な同類の出来事を指し、主題として取り上げるので「こういうことは」。3が正解。",
+          "explanation_en": "Refers to such situations in general as a topic: 'こういうことは'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30703,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　そんな",
+            "2　そういう",
+            "3　その人の",
+            "4　そんな人の"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "直前の「人によって基準が違う」の「人」を受けて限定するので「その人の性格や…」。3が正解。",
+          "explanation_en": "Refers to the individual mentioned previously: 'その人の'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30704,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　基準は",
+            "2　基準が",
+            "3　基準でも",
+            "4　基準では"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "名詞「人」を修飾する連体修飾節の中の主語なので「基準が違う人」。2が正解。",
+          "explanation_en": "Subject inside a noun-modifying clause takes 'が': '基準が違う人'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30705,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　怒らないだろう",
+            "2　怒れないだろう",
+            "3　笑わないだろう",
+            "4　笑えないだろう"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "人間も同じ過ちを犯すため他人事として笑うことができない。「笑えないだろう」。4が正解。",
+          "explanation_en": "Cannot laugh it off because humans do the exact same thing: '笑えないだろう'. Choice 4 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 308,
+      "title": "ペットロボット",
+      "title_en": "Pet Robots",
+      "text": "わたしはロボットに<ruby>関心<rt>かんしん</rt></ruby>があります。ロボットというのは<ruby>工場<rt>こうじょう</rt></ruby>などで<ruby>人間<rt>にんげん</rt></ruby>に<ruby>代<rt>か</rt></ruby>わっていろいろな<ruby>仕事<rt>しごと</rt></ruby>をする<ruby>機械<rt>きかい</rt></ruby>のことだと<ruby>思<rt>おも</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いかもしれませんが、わたしが<ruby>研究<rt>けんきゅう</rt></ruby>したいのは［ 1 ］、ペットの<ruby>代<rt>か</rt></ruby>わりをするロボットなのです。つまり、［ 2 ］ロボットです。<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きな<ruby>人<rt>ひと</rt></ruby>はペットと<ruby>遊<rt>あそ</rt></ruby>ぶことで<ruby>心<rt>こころ</rt></ruby>が<ruby>明<rt>あか</rt></ruby>るくなるようです。しかし、ペットを<ruby>飼<rt>か</rt></ruby>いたくても<ruby>飼<rt>か</rt></ruby>えない<ruby>人<rt>ひと</rt></ruby>もいます。［ 3 ］ペットロボットです。\nすでに<ruby>日本<rt>にほん</rt></ruby>ではいくつかのペットロボットが<ruby>売<rt>う</rt></ruby>られています。これらの［ 4 ］<ruby>喜<rt>よろこ</rt></ruby>んだり<ruby>声<rt>こえ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>したりします。ペットロボットは<ruby>病気<rt>びょうき</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもたちやお<ruby>年寄<rt>としよ</rt></ruby>りを<ruby>元気<rt>げんき</rt></ruby>にするために<ruby>役立<rt>やくだ</rt></ruby>てられています。ある<ruby>研究所<rt>けんきゅうじょ</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby>によると、ペットロボットと<ruby>遊<rt>あそ</rt></ruby>んだ<ruby>後<rt>あと</rt></ruby>は<ruby>気分<rt>きぶん</rt></ruby>がよくなった、ほかの<ruby>人<rt>ひと</rt></ruby>との<ruby>会話<rt>かいわ</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えた、<ruby>話題<rt>わだい</rt></ruby>がペットロボットについての<ruby>明<rt>あか</rt></ruby>るい<ruby>内容<rt>ないよう</rt></ruby>に<ruby>変<rt>か</rt></ruby>わった、などのいい<ruby>効果<rt>こうか</rt></ruby>が<ruby>出<rt>で</rt></ruby>ているとのことです。\nわたしは、［ 5 ］ペットロボットの<ruby>研究<rt>けんきゅう</rt></ruby>を<ruby>一生<rt>いっしょう</rt></ruby>のテーマにしたいと<ruby>思<rt>おも</rt></ruby>っています。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30801,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　このような産業ロボットで",
+            "2　このような産業ロボットではなく",
+            "3　そういう産業ロボットで",
+            "4　あのような産業ロボットではなく"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "直前で述べた工場で使われるロボットを否定して対比するので「このような産業ロボットではなく」。2が正解。",
+          "explanation_en": "Negates and contrasts with the aforementioned factory robots: 'このような産業ロボットではなく'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30802,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　人間をかわいがる",
+            "2　人間はかわいがる",
+            "3　人間にかわいがられる",
+            "4　人間がかわいがられる"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "ペットロボットは人間によってかわいがられる対象なので受身「人間にかわいがられるロボット」。3が正解。",
+          "explanation_en": "Passive modifying noun: '人間にかわいがられるロボット' (cherished by humans). Choice 3 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30803,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　そんな人が作ったのは",
+            "2　この人のために作られたのが",
+            "3　こういう人によって作られたのは",
+            "4　そんな人のために作られたのが"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "「ペットを飼いたくても飼えない人」を受けて目的を表すので「そんな人のために作られたのが」。4が正解。",
+          "explanation_en": "Refers back to people who want pets but cannot have them: 'そんな人のために作られたのが'. Choice 4 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30804,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　ペットロボットは本物の動物のように",
+            "2　ペットロボットが本物のロボットのように",
+            "3　ペットロボットは本物の人間のように",
+            "4　ペットロボットが本物のように"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "これらのロボットの主語として取り上げ、本物の動物に似て行動することを述べるので「ペットロボットは本物の動物のように」。1が正解。",
+          "explanation_en": "'ペットロボットは本物の動物のように' (pet robots, like real animals). Choice 1 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30805,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　このような心理的効果がある",
+            "2　このような心理的効果はなくても",
+            "3　この心理的効果があって",
+            "4　その心理的効果がなくても"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "直前の段落で述べられた気分の改善などの効果を受けて「このような心理的効果があるペットロボットの…」。1が正解。",
+          "explanation_en": "'このような心理的効果がある' modifies the pet robots being researched. Choice 1 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 309,
+      "title": "家族の卵料理",
+      "title_en": "Family Egg Cooking",
+      "text": "わたしは<ruby>料理<rt>りょうり</rt></ruby>が<ruby>大好<rt>だいす</rt></ruby>きで、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>息子<rt>むすこ</rt></ruby>たちにも<ruby>小<rt>ちい</rt></ruby>さいころから<ruby>料理<rt>りょうり</rt></ruby>を［ 1 ］。ある<ruby>日<rt>ひ</rt></ruby>、<ruby>息子<rt>むすこ</rt></ruby>が<ruby>一人<rt>ひとり</rt></ruby>で<ruby>家族<rt>かぞく</rt></ruby>のために<ruby>卵<rt>たまご</rt></ruby>の<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ってくれた。わたしたちは<ruby>喜<rt>よろこ</rt></ruby>んでさっそく<ruby>一口<rt>ひとくち</rt></ruby><ruby>食<rt>た</rt></ruby>べてみた。［ 2 ］、そのおいしそうな<ruby>料理<rt>りょうり</rt></ruby>は、とても<ruby>辛<rt>から</rt></ruby>かった。<ruby>息子<rt>むすこ</rt></ruby>がトマトケチャップだと<ruby>思<rt>おも</rt></ruby>って<ruby>入<rt>い</rt></ruby>れたのは、<ruby>実<rt>じつ</rt></ruby>は<ruby>辛<rt>から</rt></ruby>いソースだったのだ。<ruby>息子<rt>むすこ</rt></ruby>は<ruby>泣<rt>な</rt></ruby>きそうな<ruby>顔<rt>かお</rt></ruby>をしていた。わたしは、「この<ruby>子<rt>こ</rt></ruby>が<ruby>家族<rt>かぞく</rt></ruby>を<ruby>喜<rt>よろこ</rt></ruby>ばせようと<ruby>思<rt>おも</rt></ruby>ってしたことなのだから、その<ruby>気持<rt>きも</rt></ruby>ちは<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>無駄<rt>むだ</rt></ruby>にしたくない」と<ruby>思<rt>おも</rt></ruby>った。［ 3 ］、その<ruby>辛<rt>から</rt></ruby>い<ruby>料理<rt>りょうり</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>新<rt>あたら</rt></ruby>しい<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ることにした。「<ruby>失敗<rt>しっぱい</rt></ruby>は<ruby>悪<rt>わる</rt></ruby>いことじゃないよ。それに、これは<ruby>失敗<rt>しっぱい</rt></ruby>ではなくて、まだ<ruby>途中<rt>とちゅう</rt></ruby>なんだから」と<ruby>言<rt>い</rt></ruby>いながらスープを［ 4 ］、その<ruby>卵料理<rt>たまごりょうり</rt></ruby>を<ruby>入<rt>い</rt></ruby>れてみた。すると、ふつうのスープが<ruby>本当<rt>ほんとう</rt></ruby>においしいスープに<ruby>変<rt>か</rt></ruby>わった。<ruby>息子<rt>むすこ</rt></ruby>も［ 5 ］。\n参考：青木祐人・青木のぞ美『ゆうとくんちのしあわせごはん』宮帯出版社",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 30901,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　されている",
+            "2　させている",
+            "3　してきた",
+            "4　させられてきた"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "親が息子に料理をさせる使役「料理をさせている」。2が正解。",
+          "explanation_en": "Causative form (allowing/making children cook): 'させている'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 30902,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　ところが",
+            "2　ところで",
+            "3　つまり",
+            "4　しかも"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "喜んで一口食べた予想と異なり、辛かったという意外な展開なので「ところが」。1が正解。",
+          "explanation_en": "Contrasts with expectations of deliciousness: 'ところが'. Choice 1 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 30903,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　さらに",
+            "2　また",
+            "3　そこで",
+            "4　ただ"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "息子の気持ちを無駄にしたくないという思いから次の行動を起こすので「そこで」。3が正解。",
+          "explanation_en": "Prompting a new action in response: 'そこで'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 30904,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　作ったので",
+            "2　作ったが",
+            "3　作った",
+            "4　作り"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "文章の連用中止形（硬い・整った文体）で文をつなぐ「スープを作り、その卵料理を入れてみた」。4が正解。",
+          "explanation_en": "Formal written continuative stem (連用中止): 'スープを作り'. Choice 4 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 30905,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　笑顔になったんだ",
+            "2　笑顔になっていた",
+            "3　笑顔を見ていた",
+            "4　笑顔を見たんだ"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "客観的な記述文体（普通体過去）で結果の状態を表す「笑顔になっていた」。2が正解。",
+          "explanation_en": "Objective descriptive past result: '笑顔になっていた'. Choice 2 is correct."
+        }
+      ]
+    },
+    {
+      "passage_id": 310,
+      "title": "100年前と今",
+      "title_en": "100 Years Ago and Today",
+      "text": "100<ruby>年前<rt>ねんまえ</rt></ruby>と<ruby>今<rt>いま</rt></ruby>\nリュウ エイ\n\n100<ruby>年前<rt>ねんまえ</rt></ruby>と<ruby>今<rt>いま</rt></ruby>とを<ruby>比<rt>くら</rt></ruby>べると、いろいろなことが<ruby>変<rt>か</rt></ruby>わってきた。<ruby>今<rt>いま</rt></ruby>、わたしたちはさまざまな<ruby>技術<rt>ぎじゅつ</rt></ruby>のおかげで、<ruby>便利<rt>べんり</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>っている。［ 1 ］、<ruby>人<rt>ひと</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>も<ruby>昔<rt>むかし</rt></ruby>よりよくなったと<ruby>言<rt>い</rt></ruby>えるだろうか。\n<ruby>例<rt>たと</rt></ruby>えば、<ruby>今<rt>いま</rt></ruby>はお<ruby>金<rt>かね</rt></ruby>さえ<ruby>払<rt>はら</rt></ruby>えばいつでも<ruby>自分<rt>じぶん</rt></ruby>の<ruby>食<rt>た</rt></ruby>べたい<ruby>物<rt>もの</rt></ruby>が<ruby>買<rt>か</rt></ruby>えるので、<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>のありがたみがわからなくなってきている。［ 2 ］、<ruby>昔<rt>むかし</rt></ruby>は<ruby>今<rt>いま</rt></ruby>より<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れることが<ruby>難<rt>むずか</rt></ruby>しかった。そのため、<ruby>今<rt>いま</rt></ruby>よりもずっと<ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っていたはずだ。\nまた、<ruby>今<rt>いま</rt></ruby>は、<ruby>通信手段<rt>つうしんしゅだん</rt></ruby>が<ruby>発達<rt>はったつ</rt></ruby>してきて、<ruby>人<rt>ひと</rt></ruby>と［ 3 ］コミュニケーションが<ruby>取<rt>と</rt></ruby>れるようになった。<ruby>便利<rt>べんり</rt></ruby>にはなったが、その<ruby>分<rt>ぶん</rt></ruby>、<ruby>心<rt>こころ</rt></ruby>の<ruby>距離<rt>きょり</rt></ruby>は<ruby>遠<rt>とお</rt></ruby>くなってしまった。<ruby>昔<rt>むかし</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、いつも<ruby>相手<rt>あいて</rt></ruby>と<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>会<rt>あ</rt></ruby>って［ 4 ］、<ruby>今<rt>いま</rt></ruby>よりも<ruby>親<rt>した</rt></ruby>しい<ruby>関係<rt>かんけい</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ることができていたのではないだろうか。\n<ruby>今<rt>いま</rt></ruby>のわたしたちも、<ruby>昔<rt>むかし</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>のように<ruby>感謝<rt>かんしゃ</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち、もっと<ruby>人間関係<rt>にんげんかんけい</rt></ruby>を<ruby>大切<rt>たいせつ</rt></ruby>にすれば、100<ruby>年前<rt>ねんまえ</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じような<ruby>心豊<rt>こころゆた</rt></ruby>かな<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>送<rt>おく</rt></ruby>れるように［ 5 ］と<ruby>思<rt>おも</rt></ruby>う。",
+      "questions": [
+        {
+          "blank_number": 1,
+          "question_id": 31001,
+          "prompt": "［ 1 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　すると",
+            "2　それから",
+            "3　しかし",
+            "4　しかも"
+          ],
+          "correct_answer": 3,
+          "explanation_ja": "技術が便利になったことに対し、「しかし人の心も良くなったと言えるだろうか」と逆接の問題提起をする。「しかし」（3）が正解。",
+          "explanation_en": "Raises a counter-question to technological advancement: 'しかし'. Choice 3 is correct."
+        },
+        {
+          "blank_number": 2,
+          "question_id": 31002,
+          "prompt": "［ 2 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　または",
+            "2　一方",
+            "3　ただ",
+            "4　それに"
+          ],
+          "correct_answer": 2,
+          "explanation_ja": "現在の状況と対比して過去の状況を述べるので「一方」（2）が正解。",
+          "explanation_en": "Contrasts the present situation with the past: '一方'. Choice 2 is correct."
+        },
+        {
+          "blank_number": 3,
+          "question_id": 31003,
+          "prompt": "［ 3 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　会わずに",
+            "2　会えず",
+            "3　会えなく",
+            "4　会わなくなり"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "通信手段の発達により直接顔を合わせないでコミュニケーションが取れるので「会わずに」（1）が正解。",
+          "explanation_en": "'会わずに' (without meeting in person). Choice 1 is correct."
+        },
+        {
+          "blank_number": 4,
+          "question_id": 31004,
+          "prompt": "［ 4 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　話していたのが",
+            "2　話していたけど",
+            "3　話していたのに",
+            "4　話していたので"
+          ],
+          "correct_answer": 4,
+          "explanation_ja": "直接会って話していたことが親しい関係を築けた理由なので「話していたので」（4）が正解。",
+          "explanation_en": "Expresses the reason: '話していたので' (because they talked face-to-face). Choice 4 is correct."
+        },
+        {
+          "blank_number": 5,
+          "question_id": 31005,
+          "prompt": "［ 5 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+          "options": [
+            "1　なるのではないか",
+            "2　なるのではないかな",
+            "3　なるのではないだろう",
+            "4　なるのではないでしょう"
+          ],
+          "correct_answer": 1,
+          "explanation_ja": "論説文（論文体・硬い文章）における自説の提示「〜なるのではないかと思う」。「なるのではないか」（1）が正解。",
+          "explanation_en": "Formal essay conclusion expression: 'なるのではないか'. Choice 1 is correct."
+        }
+      ]
+    }
+  ]
+}

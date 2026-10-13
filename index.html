@@ -58,10 +58,10 @@
       </button>
 
       <!-- Book 3 -->
-      <button class="nav-btn" data-view="grammar" onclick="alert('Book 3: Grammar transcription in progress. Staged slot ready!')">
+      <button class="nav-btn" data-view="grammar" onclick="showView('grammar')">
         <i class="fa-solid fa-graduation-cap"></i>
         <span>3. 文法 (Grammar)</span>
-        <span class="badge badge-amber">Building</span>
+        <span class="badge badge-green">Ready</span>
       </button>
 
       <!-- Book 4 -->
@@ -458,6 +458,91 @@
       <!-- TAB 5: MOCK EXAMS PANE -->
       <div id="kanji-pane-mock" class="kanji-view-container" style="display: none;">
         <div id="kanji-mock-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         VIEW 3: BOOK 3 - SHIN KANZEN MASTER GRAMMAR N3
+         ============================================== -->
+    <section id="view-grammar" class="view">
+      <!-- Grammar Master Tab Bar -->
+      <div class="grammar-tabs-bar" style="display: flex; gap: 0.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.25rem; overflow-x: auto; padding-bottom: 0.5rem;">
+        <button class="btn btn-sm btn-ghost grammar-tab-btn active" data-tab="patterns" onclick="setGrammarTab('patterns')">
+          <i class="fa-solid fa-list-check"></i> Patterns Explorer
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="drills" onclick="setGrammarTab('drills')">
+          <i class="fa-solid fa-pen-clip"></i> Part 1 Drills
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="star" onclick="setGrammarTab('star')">
+          <i class="fa-solid fa-star"></i> Part 2 Star Blanks (★)
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="text" onclick="setGrammarTab('text')">
+          <i class="fa-solid fa-book-open"></i> Part 3 Text Passages
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="mock" onclick="setGrammarTab('mock')">
+          <i class="fa-solid fa-clipboard-check"></i> Mock Exams
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="guide" onclick="setGrammarTab('guide')">
+          <i class="fa-solid fa-circle-info"></i> Guide & Symbols
+        </button>
+      </div>
+
+      <!-- TAB 1: PATTERNS EXPLORER PANE -->
+      <div id="grammar-pane-patterns">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem; background: var(--bg-card); padding: 1rem; border-radius: var(--radius); border: 1px solid var(--border);">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('all')">All Patterns</button>
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('Part 1')">Part 1 (Meaning/Function)</button>
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('Part 2')">Part 2 (Sentence Structure)</button>
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('Part 3')">Part 3 (Text Grammar)</button>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <div class="kanji-search-box">
+              <i class="fa-solid fa-magnifying-glass" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+              <input type="text" placeholder="Search pattern, meaning, rule..." oninput="onGrammarSearch(this.value)" />
+            </div>
+            <span id="grammar-count-badge" class="badge badge-accent">83 Patterns</span>
+          </div>
+        </div>
+
+        <div id="grammar-patterns-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem;">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 2: PART 1 DRILLS PANE -->
+      <div id="grammar-pane-drills" style="display: none;">
+        <div id="grammar-drills-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 3: PART 2 STAR PROBLEMS PANE -->
+      <div id="grammar-pane-star" style="display: none;">
+        <div id="grammar-star-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 4: PART 3 TEXT PASSAGES PANE -->
+      <div id="grammar-pane-text" style="display: none;">
+        <div id="grammar-text-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 5: MOCK EXAMS PANE -->
+      <div id="grammar-pane-mock" style="display: none;">
+        <div id="grammar-mock-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 6: GUIDE & SYMBOLS PANE -->
+      <div id="grammar-pane-guide" style="display: none;">
+        <div id="grammar-guide-container">
           <!-- Populated dynamically -->
         </div>
       </div>

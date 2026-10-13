@@ -27,7 +27,9 @@ def verify_ruby_tags(text, location=""):
 def verify_grammar_data():
     grammar_dir = Path("nihongo-intermediate/data/grammar")
     if not grammar_dir.exists():
-        print(f"Error: {grammar_dir} does not exist.")
+        grammar_dir = Path("data/grammar")
+    if not grammar_dir.exists():
+        print(f"Error: grammar directory does not exist.")
         return False
         
     files = list(grammar_dir.glob("*.json"))

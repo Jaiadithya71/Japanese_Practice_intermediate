@@ -257,14 +257,42 @@ export async function loadIntermediateKanjiDB() {
   return kanjiMap;
 }
 
+// Book 3: Grammar Files Loader
+export async function loadIntermediateGrammarDB() {
+  try {
+    const [indexRes, introRes, p1_1Res, p1_2Res, p2Res, p3Res, mockRes] = await Promise.all([
+      fetch('data/grammar/grammar_index.json'),
+      fetch('data/grammar/intro_and_guide.json'),
+      fetch('data/grammar/part1_sec1_to_6.json'),
+      fetch('data/grammar/part1_sec7_to_12.json'),
+      fetch('data/grammar/part2_sentence_grammar2.json'),
+      fetch('data/grammar/part3_text_grammar.json'),
+      fetch('data/grammar/mock_test.json')
+    ]);
+
+    if (indexRes.ok) state.grammarDB.index = await indexRes.json();
+    if (introRes.ok) state.grammarDB.intro = await introRes.json();
+    if (p1_1Res.ok) state.grammarDB.part1_1_6 = await p1_1Res.json();
+    if (p1_2Res.ok) state.grammarDB.part1_7_12 = await p1_2Res.json();
+    if (p2Res.ok) state.grammarDB.part2 = await p2Res.json();
+    if (p3Res.ok) state.grammarDB.part3 = await p3Res.json();
+    if (mockRes.ok) state.grammarDB.mock = await mockRes.json();
+
+    console.log(`Loaded grammar DB: ${state.grammarDB.index.length} indexed patterns.`);
+  } catch (err) {
+    console.error('Error loading grammar DB:', err);
+  }
+}
+
 // Master All-Books Ingestion
 export async function loadAllActiveBooks() {
   await Promise.all([
     loadIntermediateVocabDB(),
     loadIntermediateReadingDB(),
+    loadIntermediateGrammarDB(),
     loadIntermediateKanjiDB()
   ]);
-  console.log(`Loaded ${Object.keys(state.vocabDB).length} vocab chapters, ${Object.keys(state.readingDB).length} reading lessons, and ${Object.keys(state.kanjiDB).length} kanji.`);
+  console.log(`Loaded ${Object.keys(state.vocabDB).length} vocab chapters, ${Object.keys(state.readingDB).length} reading lessons, ${state.grammarDB.index?.length || 0} grammar patterns, and ${Object.keys(state.kanjiDB).length} kanji.`);
 }
 
 export function getAllWords() {

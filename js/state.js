@@ -11,7 +11,21 @@ export const state = {
   readingDB: {},         // Book 2: Reading Comprehension (54 lessons, 90+ questions)
   readingCategories: {}, // Categorized lesson IDs
 
-  grammarDB: {},         // Book 3: Grammar (Staged)
+  grammarDB: {
+    index: [],
+    intro: {},
+    part1_1_6: {},
+    part1_7_12: {},
+    part2: {},
+    part3: {},
+    mock: {}
+  },
+  grammarActiveTab: 'patterns', // 'patterns' | 'drills' | 'star' | 'text' | 'mock' | 'guide'
+  grammarFilterPart: 'all',
+  grammarSearchQuery: '',
+  grammarCurrentSection: 'all',
+  grammarSelectedAnswers: {},
+  grammarShowNuances: true,
   kanjiDB: {},           // Book 4: Kanji Target DB (443 Kanji)
   kanjiLessons: [],      // Book 4: Lessons List (Lessons 01-25)
   kanjiExercisesDB: {},  // Book 4: Practice Exercises
