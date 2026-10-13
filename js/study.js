@@ -12,6 +12,8 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   state.studyIsDrillHard = isDrillHard;
   state.drillOrigin = origin;
   state.isDueReviewMode = false;
+  state.learnUnit = null;
+  state.sessionSkipped = 0;
 
   const pool = [];
   const chaptersToUse = state.selectedChapters.size > 0 
@@ -61,6 +63,8 @@ export function startDueReview(pillarFilter = 'all') {
 
   state.studyMode = 'flashcard';
   state.studyIsDrillHard = false;
+  state.learnUnit = null;
+  state.sessionSkipped = 0;
   state.isDueReviewMode = true;
   state.drillOrigin = 'home';
   state.sessionItems = pool;
@@ -71,6 +75,53 @@ export function startDueReview(pillarFilter = 'all') {
 
   showView('study');
   renderCard();
+}
+
+const seenIt = st => !!st && (st.reps > 0 || st.correct > 0 || st.incorrect > 0);
+
+// Learn new words: teach (meaning first), then quiz. Skipped words stay unseen.
+export function startLearnNew(unitId, count = 10) {
+  const words = (state.vocabDB[unitId] || []).filter(w => !seenIt(state.stats[`V:${w.id}`]));
+  if (words.length === 0) {
+    alert('No new words left in this unit.');
+    return;
+  }
+  const pool = words.slice(0, count).map(w => ({
+    ...w, type: 'vocab', book: 'vocab', key: `V:${w.id}`, learnNew: true, learned: false
+  }));
+  state.studyMode = 'flashcard';
+  state.studyIsDrillHard = false;
+  state.isDueReviewMode = false;
+  state.drillOrigin = 'home';
+  state.learnUnit = unitId;
+  state.sessionSkipped = 0;
+  state.sessionItems = pool;
+  state.sessionIdx = 0;
+  state.sessionRight = 0;
+  state.sessionTotal = pool.length;
+  state.cardFlipped = false;
+  showView('study');
+  renderCard();
+}
+
+export function learnGotIt() {
+  const item = state.sessionItems[state.sessionIdx];
+  if (!item || !item.learnNew || item.learned) return;
+  item.learned = true;
+  state.cardFlipped = false;
+  renderCard();
+}
+
+export function skipCard() {
+  if (state.sessionIdx >= state.sessionTotal) return;
+  state.sessionSkipped = (state.sessionSkipped || 0) + 1;
+  state.sessionIdx++;
+  state.cardFlipped = false;
+  renderCard();
+}
+
+function isLearnStage(item) {
+  return !!item && item.learnNew && !item.learned;
 }
 
 export function startOmniReview() {
@@ -86,6 +137,8 @@ export function renderCard() {
   const item = state.sessionItems[state.sessionIdx];
   const itemKey = formatItemKey(item);
   const isHard = getItemStatus(itemKey) === 'hard';
+  const skipRow = document.getElementById('study-skip-row');
+  if (skipRow) skipRow.style.display = 'flex';
 
   // Progress Bar
   const fill = document.getElementById('study-progress-fill');
@@ -247,6 +300,25 @@ export function renderCard() {
   const meta = state.chapterMetadata[item.chapter] || {};
   if (lessonTag) lessonTag.textContent = `${meta.topic_ja || item.chapter} · ${item.section_title_ja || ''}`;
 
+  // New word, teach stage: meaning first, then "Got it, quiz me"
+  if (isLearnStage(item)) {
+    termEl.innerHTML = item.ruby_html || item.term_ja;
+    meaningEl.innerHTML = `<span class="learn-badge">NEW WORD</span><div>${item.meaning_en || ''}</div>`;
+    meaningEl.style.color = 'var(--text)';
+    if (item.example_ja && exBox && exJa && exEn) {
+      exBox.style.display = 'block';
+      exJa.textContent = item.example_ja;
+      exEn.textContent = item.example_en || '';
+    } else if (exBox) {
+      exBox.style.display = 'none';
+    }
+    const hint = document.getElementById('card-controls-hint');
+    hint.innerHTML = '<button class="btn btn-primary learn-gotit" onclick="event.stopPropagation(); learnGotIt()"><i class="fa-solid fa-check"></i> Got it, quiz me</button>';
+    hint.style.display = 'block';
+    document.getElementById('grade-controls').style.display = 'none';
+    return;
+  }
+
   if (!state.cardFlipped) {
     if (state.studyDirection === 'ja-en') {
       termEl.innerHTML = state.showFurigana ? (item.ruby_html || item.term_ja) : item.term_ja;
@@ -287,6 +359,7 @@ export function renderCard() {
 }
 
 export function flipCard() {
+  if (isLearnStage(state.sessionItems[state.sessionIdx])) { learnGotIt(); return; }
   state.cardFlipped = !state.cardFlipped;
   renderCard();
 }
@@ -335,13 +408,21 @@ function renderStudySummary() {
   const container = document.getElementById('study-card-container');
   if (!container) return;
 
-  const pct = Math.round((state.sessionRight / state.sessionTotal) * 100);
+  const skipped = state.sessionSkipped || 0;
+  const answered = Math.max(state.sessionTotal - skipped, 0);
+  const pct = answered ? Math.round((state.sessionRight / answered) * 100) : 0;
+  const skipRow = document.getElementById('study-skip-row');
+  if (skipRow) skipRow.style.display = 'none';
+  const again = state.learnUnit
+    ? `startLearnNew('${state.learnUnit}')`
+    : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`;
+  const againLabel = state.learnUnit ? 'Learn more words' : 'Review Again';
 
   container.innerHTML = `
     <div class="study-summary-card">
       <i class="fa-solid fa-trophy summary-trophy"></i>
       <h2>Session Complete!</h2>
-      <p style="color: var(--text-muted);">You reviewed ${state.sessionTotal} items across your active exam prep queue.</p>
+      <p style="color: var(--text-muted);">You went through ${state.sessionTotal} items${skipped ? ` (${skipped} skipped, not scored)` : ''}.</p>
 
       <div class="summary-stats-row">
         <div class="summary-stat-box">
@@ -353,14 +434,14 @@ function renderStudySummary() {
           <span style="font-size: 0.8rem; color: var(--text-dim);">Accuracy</span>
         </div>
         <div class="summary-stat-box">
-          <span class="summary-stat-val" style="color: var(--red);">${state.sessionTotal - state.sessionRight}</span>
+          <span class="summary-stat-val" style="color: var(--red);">${answered - state.sessionRight}</span>
           <span style="font-size: 0.8rem; color: var(--text-dim);">Struggling</span>
         </div>
       </div>
 
       <div style="display: flex; gap: 1rem; margin-top: 1rem;">
-        <button class="btn btn-primary" onclick="startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')">
-          <i class="fa-solid fa-rotate-right"></i> Review Again
+        <button class="btn btn-primary" onclick="${again}">
+          <i class="fa-solid fa-rotate-right"></i> ${againLabel}
         </button>
         <button class="btn btn-ghost" onclick="exitStudy()">
           <i class="fa-solid fa-arrow-left"></i> Return

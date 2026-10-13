@@ -7,7 +7,7 @@ import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
 import { showView } from './navigation.js';
-import { startStudy, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js';
+import { startStudy, startLearnNew, learnGotIt, skipCard, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter } from './vocab-browser.js';
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
@@ -43,6 +43,9 @@ window.disconnectGist = disconnectGist;
 
 // Study & Multi-Pillar Omni-Review
 window.startStudy = startStudy;
+window.startLearnNew = startLearnNew;
+window.learnGotIt = learnGotIt;
+window.skipCard = skipCard;
 window.startDueReview = startDueReview;
 window.startOmniReview = startOmniReview;
 window.flipCard = flipCard;

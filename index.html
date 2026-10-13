@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/sync.css" />
+  <link rel="stylesheet" href="css/srs-home.css" />
 </head>
 <body>
 
@@ -128,45 +129,13 @@
          ============================================== -->
     <section id="view-home" class="view active">
       <div id="today-card"></div>
-      <div class="dashboard-hero">
-        <div class="hero-text">
-          <h2>JLPT N3 Multi-Pillar Exam Suite</h2>
-          <p>Study all 5 intermediate pillars simultaneously with cross-book Spaced Repetition to guarantee long-term retention before exam day.</p>
-          <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin-top: 0.5rem;"></div>
-        </div>
-        <div class="hero-actions">
-          <button class="btn btn-primary" onclick="startOmniReview()">
-            <i class="fa-solid fa-bolt"></i> Daily Omni-Review
-          </button>
-        </div>
-      </div>
-
-      <!-- Unified Due Reviews Banner -->
-      <div class="due-banner">
-        <div class="due-info">
-          <div class="due-icon-box">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-          </div>
-          <div class="due-text">
-            <h3>Scheduled Exam Due Reviews: <span id="due-count-num">0</span></h3>
-            <p id="due-breakdown-sub">Aligned with daily routine (7:30 AM & 5:45 PM IST slots)</p>
-          </div>
-        </div>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <button class="btn btn-primary" onclick="startDueReview('all')">
-            <i class="fa-solid fa-play"></i> Omni-Review (All)
-          </button>
-          <button class="btn btn-ghost btn-sm" onclick="startDueReview('vocab')" title="Review Vocabulary items only">Vocab Only</button>
-          <button class="btn btn-ghost btn-sm" onclick="startDueReview('reading')" title="Review Reading points only">Reading Only</button>
-          <button class="btn btn-ghost btn-sm" onclick="startDueReview('kanji')" title="Review Kanji items only">Kanji Only</button>
-        </div>
-      </div>
+      <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin: 0 0 0.75rem;"></div>
 
       <!-- 5-PILLAR OVERVIEW CARDS -->
       <div class="view-header" style="margin-bottom: 1rem;">
         <div class="view-title-group">
-          <h3 style="font-size: 1.3rem; color: #fff;">The 5 JLPT N3 Pillars</h3>
-          <p>Track coverage and simultaneous mastery across all exam sections.</p>
+          <h3 style="font-size: 1.3rem; color: #fff;">Browse by section</h3>
+          <p>Jump into any part of the N3 material.</p>
         </div>
       </div>
 
@@ -184,16 +153,16 @@
           <span class="stat-card-sub">88 Exam Questions</span>
         </div>
         <!-- Book 3 -->
-        <div class="stat-card" style="border-left: 3px solid var(--amber); opacity: 0.85;">
-          <span class="stat-card-title">3. 文法 (Grammar) <span class="badge badge-amber" style="font-size: 0.65rem;">Building</span></span>
-          <span class="stat-card-value" style="font-size: 1.3rem;">~120 items</span>
-          <span class="stat-card-sub">Connection Rules</span>
+        <div class="stat-card" style="border-left: 3px solid var(--amber); cursor: pointer;" onclick="showView('grammar')">
+          <span class="stat-card-title">3. 文法 (Grammar) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-grammar-count">83 patterns</span>
+          <span class="stat-card-sub">Patterns, drills &amp; mock</span>
         </div>
         <!-- Book 4 -->
         <div class="stat-card" style="border-left: 3px solid #ec4899; cursor: pointer;" onclick="showView('kanji')">
           <span class="stat-card-title">4. 漢字 (Kanji) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
           <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-kanji-count">654 Kanji</span>
-          <span class="stat-card-sub">443 N3 + 300 Review</span>
+          <span class="stat-card-sub" id="pillar-kanji-sub">N3 + review kanji</span>
         </div>
         <!-- Book 5 -->
         <div class="stat-card" style="border-left: 3px solid #8b5cf6; opacity: 0.85;">
@@ -615,6 +584,9 @@
           <span class="grade-time">Longer interval</span>
         </button>
       </div>
+      <div class="study-skip-row" id="study-skip-row" style="display: none;">
+        <button class="btn btn-ghost btn-sm" onclick="skipCard()"><i class="fa-solid fa-forward"></i> Skip (not scored)</button>
+      </div>
     </section>
 
     <!-- ==============================================
@@ -746,8 +718,9 @@
   <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()">
     <div class="more-panel" onclick="event.stopPropagation()">
       <div class="more-grab"></div>
+      <button class="more-item" onclick="closeMoreMenu();showView('grammar')"><i class="fa-solid fa-diagram-project"></i> 3. 文法 (Grammar)</button>
       <button class="more-item" onclick="closeMoreMenu();showView('reading')"><i class="fa-solid fa-book-open-reader"></i> 2. 読解 (Reading)</button>
-      <button class="more-item" onclick="closeMoreMenu();startOmniReview()"><i class="fa-solid fa-bolt"></i> Daily Omni-Review</button>
+      <button class="more-item" onclick="closeMoreMenu();startOmniReview()"><i class="fa-solid fa-bolt"></i> Review all due</button>
       <button class="more-item" onclick="closeMoreMenu();showView('hard-words')"><i class="fa-solid fa-fire"></i> Weak points</button>
       <button class="more-item" onclick="closeMoreMenu();openSyncSetup()"><i class="fa-solid fa-cloud-arrow-up"></i> Backup &amp; sync</button>
       <button class="more-item" onclick="closeMoreMenu();toggleFurigana()"><i class="fa-solid fa-font"></i> Toggle furigana</button>
