@@ -271,3 +271,131 @@
 #view-reading.active {
   display: block !important;
 }
+
+/* Study Session Score Pill in Runner Header */
+.study-session-score {
+  font-family: var(--font-display, inherit);
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.score-correct {
+  color: var(--green, #22c55e);
+  font-weight: 800;
+}
+.score-sep {
+  color: var(--text-dim, #7a8099);
+  margin: 0 1px;
+}
+.score-total {
+  color: var(--text-muted, #9ca3af);
+  font-weight: 600;
+}
+
+/* Kanji Study Direction Selector Pills */
+.kanji-dir-selector {
+  display: flex;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+}
+
+.btn-dir-pill {
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-dim, #7a8099);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-dir-pill:hover {
+  color: #fff;
+}
+
+.btn-dir-pill.active {
+  background: #ec4899;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.4);
+}
+
+/* Kanji Multi-Select Lesson Chips */
+.kanji-lesson-chips-wrap {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding: 0.4rem 0 0.6rem;
+  scrollbar-width: thin;
+}
+
+.kanji-lesson-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  color: var(--text-dim, #7a8099);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.kanji-lesson-chip:hover {
+  border-color: #ec4899;
+  color: #fff;
+}
+
+.kanji-lesson-chip.active,
+.kanji-lesson-chip.selected {
+  background: rgba(236, 72, 153, 0.18);
+  border-color: #ec4899;
+  color: #f472b6;
+  font-weight: 800;
+}
+
+.chapter-chip.selected {
+  background: rgba(124, 108, 250, 0.2);
+  border-color: var(--accent, #7c6cfa);
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Minimal Target Kanji Card Tile */
+.kanji-card.kanji-card-minimal {
+  padding: 0.9rem 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 105px;
+}
+.kanji-card.kanji-card-minimal .kanji-card-char {
+  font-size: 2.7rem;
+  margin: 0;
+  line-height: 1;
+}
+.kanji-card.kanji-card-minimal .kanji-card-sub {
+  font-size: 0.72rem;
+  color: var(--text-dim, #7a8099);
+  margin-top: 0.35rem;
+  font-weight: 600;
+}
+

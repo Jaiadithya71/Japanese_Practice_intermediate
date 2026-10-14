@@ -45,6 +45,8 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   state.sessionItems = pool.slice(0, batchSize);
   state.sessionIdx = 0;
   state.sessionRight = 0;
+  state.sessionTotalAnswered = 0;
+  state.sessionTotalInitial = state.sessionItems.length;
   state.sessionTotal = state.sessionItems.length;
   state.cardFlipped = false;
 
@@ -52,12 +54,22 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   renderCard();
 }
 
-export function startDueReview(pillarFilter = 'all') {
+export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
   state.omniDueFilter = pillarFilter;
-  const pool = getAllDueItems(pillarFilter, state.dueBatchSize);
+
+  // Use explicit chapterFilter or active selection from state
+  if (!chapterFilter) {
+    if (pillarFilter === 'vocab' && state.selectedVocabChapters && state.selectedVocabChapters.size > 0) {
+      chapterFilter = state.selectedVocabChapters;
+    } else if (pillarFilter === 'kanji' && state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0) {
+      chapterFilter = state.kanjiSelectedLessons;
+    }
+  }
+
+  const pool = getAllDueItems(pillarFilter, state.dueBatchSize, chapterFilter);
 
   if (pool.length === 0) {
-    alert('No due items right now for this pillar! Great job staying caught up.');
+    alert('No due items right now for this filter! Great job staying caught up.');
     return;
   }
 
@@ -70,6 +82,8 @@ export function startDueReview(pillarFilter = 'all') {
   state.sessionItems = pool;
   state.sessionIdx = 0;
   state.sessionRight = 0;
+  state.sessionTotalAnswered = 0;
+  state.sessionTotalInitial = pool.length;
   state.sessionTotal = pool.length;
   state.cardFlipped = false;
 
@@ -129,7 +143,7 @@ export function startOmniReview() {
 }
 
 export function renderCard() {
-  if (state.sessionIdx >= state.sessionTotal) {
+  if (state.sessionIdx >= state.sessionItems.length) {
     renderStudySummary();
     return;
   }
@@ -140,11 +154,20 @@ export function renderCard() {
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'flex';
 
-  // Progress Bar
+  // Progress Bar & Live Counters
   const fill = document.getElementById('study-progress-fill');
   const count = document.getElementById('study-progress-count');
-  if (fill) fill.style.width = `${((state.sessionIdx) / state.sessionTotal) * 100}%`;
-  if (count) count.textContent = `${state.sessionIdx + 1} / ${state.sessionTotal}`;
+  const correctEl = document.getElementById('session-correct');
+  const totalEl = document.getElementById('session-total');
+
+  const curIdx = state.sessionIdx + 1;
+  const totalCards = state.sessionItems.length;
+  const pct = Math.min(100, Math.round(((state.sessionIdx) / totalCards) * 100));
+
+  if (fill) fill.style.width = `${pct}%`;
+  if (count) count.textContent = `${Math.min(curIdx, totalCards)} / ${totalCards}`;
+  if (correctEl) correctEl.textContent = state.sessionRight || 0;
+  if (totalEl) totalEl.textContent = state.sessionTotalAnswered || 0;
 
   const flameBtn = document.getElementById('card-hard-flame');
   if (flameBtn) {
@@ -295,6 +318,99 @@ export function renderCard() {
   }
 
   // ==========================================
+  // CASE E: KANJI TARGET COMPOUND WORD (JLPT MONDAI 1 & 2 DRILL)
+  // ==========================================
+  if (item.type === 'kanji_word') {
+    const dir = item.direction || state.kanjiStudyDirection || 'ja-kana';
+    if (lessonTag) lessonTag.textContent = `漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
+
+    if (!state.cardFlipped) {
+      if (dir === 'ja-kana') {
+        // JLPT Mondai 1: Given Kanji, recall Kana reading
+        termEl.innerHTML = `
+          <div>
+            <div style="font-size: 3.4rem; font-family: var(--font-jp); font-weight: 800; color: #fff; letter-spacing: 0.05em;">
+              ${item.word}
+            </div>
+            <div style="margin-top: 0.75rem; display: flex; justify-content: center; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+              <span class="badge" style="background: rgba(236,72,153,0.18); border: 1px solid #ec4899; color: #f472b6; font-size: 0.78rem; font-weight: 700;">
+                <i class="fa-solid fa-shapes"></i> 親漢字: ${item.baseKanji || '—'}
+              </span>
+              <span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)</span>
+            </div>
+          </div>
+        `;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Recall the Hiragana reading · Tap to reveal</span>`;
+      } else if (dir === 'kana-ja') {
+        // JLPT Mondai 2: Given Kana, recall Kanji spelling
+        termEl.innerHTML = `
+          <div>
+            <div style="font-size: 3rem; font-family: var(--font-jp); font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">
+              ${item.reading}
+            </div>
+            <div style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.5rem;">
+              ${item.meaning_en || ''}
+            </div>
+            <div style="margin-top: 0.75rem;">
+              <span class="badge badge-cyan" style="font-size: 0.78rem;">表記 (Kana → Kanji)</span>
+            </div>
+          </div>
+        `;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Recall the Kanji compound · Tap to reveal</span>`;
+      } else {
+        // Meaning mode: Given Kanji, recall English
+        termEl.innerHTML = `
+          <div>
+            <div style="font-size: 3.4rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">
+              ${item.word}
+            </div>
+            <div style="color: #f472b6; font-size: 1.15rem; font-family: var(--font-jp); margin-top: 0.4rem;">
+              （${item.reading}）
+            </div>
+          </div>
+        `;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Recall English meaning · Tap to reveal</span>`;
+      }
+
+      if (exBox) exBox.style.display = 'none';
+      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal';
+      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('grade-controls').style.display = 'none';
+    } else {
+      // Detailed Back / Revealed view (Full breakdown)
+      const onStr = (item.onyomi || []).join('、 ');
+      const kunStr = (item.kunyomi || []).join('、 ');
+      termEl.innerHTML = `
+        <div>
+          <div style="font-size: 3.2rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">
+            ${item.ruby_html || item.word}
+          </div>
+          <div style="font-size: 1.6rem; color: #ec4899; font-weight: 700; margin-top: 0.35rem; font-family: var(--font-jp);">
+            ${item.reading}
+          </div>
+        </div>
+      `;
+      meaningEl.innerHTML = `
+        <div style="margin-top: 0.75rem; text-align: center;">
+          <div style="font-size: 1.15rem; color: #fff; font-weight: 600;">
+            ${item.meaning_en || ''} ${item.meaning_zh ? `<span style="color: var(--text-dim); font-size: 0.88rem;">(${item.meaning_zh})</span>` : ''}
+          </div>
+          <div style="margin-top: 0.85rem; padding: 0.65rem 0.85rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: var(--radius-sm); display: inline-flex; gap: 1rem; align-items: center; font-size: 0.82rem; text-align: left; flex-wrap: wrap; justify-content: center;">
+            <div><strong style="color: #fff;">親漢字:</strong> <span style="font-size: 1.15rem; color: #f472b6; font-weight: 800; font-family: var(--font-jp);">${item.baseKanji || '—'}</span></div>
+            <div><strong style="color: #ec4899;">音:</strong> ${onStr || '—'}</div>
+            <div><strong style="color: var(--text-muted);">訓:</strong> ${kunStr || '—'}</div>
+          </div>
+        </div>
+      `;
+
+      if (exBox) exBox.style.display = 'none';
+      document.getElementById('card-controls-hint').style.display = 'none';
+      document.getElementById('grade-controls').style.display = 'grid';
+    }
+    return;
+  }
+
+  // ==========================================
   // CASE B: VOCABULARY TERM
   // ==========================================
   const meta = state.chapterMetadata[item.chapter] || {};
@@ -365,14 +481,23 @@ export function flipCard() {
 }
 
 export function gradeCard(grade) {
-  if (state.sessionIdx >= state.sessionTotal) return;
+  if (state.sessionIdx >= state.sessionItems.length) return;
 
   const item = state.sessionItems[state.sessionIdx];
   const itemKey = formatItemKey(item);
   updateItemStats(itemKey, grade);
 
+  state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
+
   if (grade >= 3) {
-    state.sessionRight++;
+    state.sessionRight = (state.sessionRight || 0) + 1;
+  }
+
+  // Anki / Elementary app model: Re-queue failed cards (grade 1 Again) +3 positions down the deck
+  const isAgain = grade === 1;
+  if (isAgain) {
+    const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
+    state.sessionItems.splice(insertAt, 0, { ...item, _requeued: true });
   }
 
   state.sessionIdx++;
@@ -381,7 +506,7 @@ export function gradeCard(grade) {
 }
 
 export function toggleCurrentCardHard() {
-  if (state.sessionIdx >= state.sessionTotal) return;
+  if (state.sessionIdx >= state.sessionItems.length) return;
   const item = state.sessionItems[state.sessionIdx];
   const itemKey = formatItemKey(item);
   const newHard = toggleItemHard(itemKey);
@@ -392,9 +517,9 @@ export function toggleCurrentCardHard() {
 }
 
 export function playCurrentCardAudio() {
-  if (state.sessionIdx >= state.sessionTotal) return;
+  if (state.sessionIdx >= state.sessionItems.length) return;
   const item = state.sessionItems[state.sessionIdx];
-  const text = item.reading || item.term_ja || item.question_ja;
+  const text = item.reading || item.term_ja || item.word || item.question_ja;
   if ('speechSynthesis' in window && text) {
     window.speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
@@ -409,8 +534,11 @@ function renderStudySummary() {
   if (!container) return;
 
   const skipped = state.sessionSkipped || 0;
-  const answered = Math.max(state.sessionTotal - skipped, 0);
-  const pct = answered ? Math.round((state.sessionRight / answered) * 100) : 0;
+  const answered = state.sessionTotalAnswered || Math.max(state.sessionTotal - skipped, 0);
+  const correct = state.sessionRight || 0;
+  const pct = answered ? Math.round((correct / answered) * 100) : 0;
+  const initialTotal = state.sessionTotalInitial || state.sessionTotal || state.sessionItems.length;
+
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'none';
   const again = state.learnUnit
@@ -422,11 +550,11 @@ function renderStudySummary() {
     <div class="study-summary-card">
       <i class="fa-solid fa-trophy summary-trophy"></i>
       <h2>Session Complete!</h2>
-      <p style="color: var(--text-muted);">You went through ${state.sessionTotal} items${skipped ? ` (${skipped} skipped, not scored)` : ''}.</p>
+      <p style="color: var(--text-muted);">You completed all ${initialTotal} items (${answered} reviews total${skipped ? `, ${skipped} skipped` : ''}).</p>
 
       <div class="summary-stats-row">
         <div class="summary-stat-box">
-          <span class="summary-stat-val" style="color: var(--green);">${state.sessionRight}</span>
+          <span class="summary-stat-val" style="color: var(--green);">${correct}</span>
           <span style="font-size: 0.8rem; color: var(--text-dim);">Correct</span>
         </div>
         <div class="summary-stat-box">
@@ -434,8 +562,8 @@ function renderStudySummary() {
           <span style="font-size: 0.8rem; color: var(--text-dim);">Accuracy</span>
         </div>
         <div class="summary-stat-box">
-          <span class="summary-stat-val" style="color: var(--red);">${answered - state.sessionRight}</span>
-          <span style="font-size: 0.8rem; color: var(--text-dim);">Struggling</span>
+          <span class="summary-stat-val" style="color: var(--red);">${Math.max(0, answered - correct)}</span>
+          <span style="font-size: 0.8rem; color: var(--text-dim);">Again Re-queues</span>
         </div>
       </div>
 

@@ -201,9 +201,14 @@
           <h2>2. 漢字 (Kanji Master Suite)</h2>
           <p>新完全マスター 漢字 N3 · 443 Target Characters, Lessons 01–25, Practice Drills &amp; Bessatsu 300 Review</p>
         </div>
-        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-          <button class="btn btn-primary" onclick="drillKanjiLesson(state.kanjiLesson === 'all' ? 1 : state.kanjiLesson)">
-            <i class="fa-solid fa-play"></i> Drill Lesson Cards
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;">
+          <div class="kanji-dir-selector" style="display: flex; gap: 0.25rem; background: rgba(255,255,255,0.06); padding: 0.2rem; border-radius: 999px; border: 1px solid var(--border);">
+            <button class="btn-dir-pill active" id="kdir-ja-kana" onclick="setKanjiStudyDirection('ja-kana')" title="JLPT Mondai 1: Given Kanji, recall Kana reading">漢字 → かな</button>
+            <button class="btn-dir-pill" id="kdir-kana-ja" onclick="setKanjiStudyDirection('kana-ja')" title="JLPT Mondai 2: Given Kana, recall Kanji">かな → 漢字</button>
+            <button class="btn-dir-pill" id="kdir-ja-meaning" onclick="setKanjiStudyDirection('ja-meaning')" title="Compound word to English meaning">漢字 → 英語</button>
+          </div>
+          <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()">
+            <i class="fa-solid fa-play"></i> Drill Compound Cards
           </button>
         </div>
       </div>
@@ -286,6 +291,10 @@
             <span id="kanji-count-badge" class="badge badge-purple">443 / 443 Kanji</span>
           </div>
         </div>
+        <!-- Interactive Multi-Select Lesson Chips Row -->
+        <div class="chapter-chips-wrap kanji-lesson-chips-wrap" id="kanji-lesson-chips-row">
+          <!-- Populated dynamically by kanji.js -->
+        </div>
 
         <!-- Kanji Grid -->
         <div id="kanji-grid" class="kanji-grid">
@@ -344,8 +353,8 @@
           <button class="btn btn-sm btn-ghost" id="btn-toggle-furigana" onclick="toggleFurigana()">
             <i class="fa-solid fa-font"></i> Furigana: ON
           </button>
-          <button class="btn btn-primary btn-sm" onclick="startStudy('flashcard', false, 'vocab')">
-            <i class="fa-solid fa-play"></i> Drill Filtered
+          <button class="btn btn-primary btn-sm" id="btn-vocab-study-action" onclick="drillVocabSelected()">
+            <i class="fa-solid fa-play"></i> Drill Selected Words
           </button>
         </div>
       </div>
@@ -846,15 +855,19 @@
     <section id="view-study" class="view">
       <div class="study-header">
         <button class="btn btn-sm btn-ghost" onclick="exitStudy()">
-          <i class="fa-solid fa-xmark"></i> Exit
+          <i class="fa-solid fa-arrow-left"></i> Exit
         </button>
         <div class="study-progress-wrap">
+          <span class="study-progress-count" id="study-progress-count">1 / 10</span>
           <div class="study-progress-bar">
             <div class="study-progress-fill" id="study-progress-fill" style="width: 0%;"></div>
           </div>
-          <span class="study-progress-count" id="study-progress-count">0 / 0</span>
         </div>
-        <div style="width: 60px;"></div>
+        <div class="study-session-score" id="study-session-score" title="Correct / Total Answered">
+          <span class="score-correct" id="session-correct">0</span>
+          <span class="score-sep">/</span>
+          <span class="score-total" id="session-total">0</span>
+        </div>
       </div>
 
       <div id="study-card-container">

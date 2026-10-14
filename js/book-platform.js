@@ -171,18 +171,30 @@ function updateSubTabsUI(pillar, activeTab) {
 export function renderVocabSRSPane() {
   const container = document.getElementById('vocab-srs-container');
   if (!container) return;
-  const dueCount = getDueItemsCount('vocab');
+
+  const hasFilter = state.selectedVocabChapters && state.selectedVocabChapters.size > 0;
+  const filterList = hasFilter ? Array.from(state.selectedVocabChapters).sort((a, b) => a - b) : [];
+  const dueCount = hasFilter ? getDueItemsCount('vocab', state.selectedVocabChapters) : getDueItemsCount('vocab');
+  const totalDeckDue = getDueItemsCount('vocab');
   const currentBatch = activeBatches.vocab;
+
+  const filterBadgeHtml = hasFilter
+    ? `<span class="badge badge-accent" style="margin-left: 0.5rem;"><i class="fa-solid fa-filter"></i> Ch ${filterList.join(', ')}</span>`
+    : '';
+
+  const subLabel = hasFilter 
+    ? `words due in selected chapters (${totalDeckDue} due overall in deck)`
+    : `words due for review right now`;
 
   container.innerHTML = `
     <div class="pillar-srs-card">
       <div class="psc-header">
-        <div class="psc-title"><i class="fa-solid fa-bolt" style="color: var(--accent);"></i> 語彙 SRS復習 (Vocabulary Reviews)</div>
+        <div class="psc-title"><i class="fa-solid fa-bolt" style="color: var(--accent);"></i> 語彙 SRS復習 (Vocabulary Reviews) ${filterBadgeHtml}</div>
         <span class="badge ${dueCount > 0 ? 'badge-accent' : 'badge-green'}">${dueCount > 0 ? `${dueCount} Due` : 'Caught Up'}</span>
       </div>
       <div class="psc-count-box">
         <span class="psc-count">${dueCount}</span>
-        <span class="psc-count-label">words due for review right now</span>
+        <span class="psc-count-label">${subLabel}</span>
       </div>
       <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">
         Spaced repetition flashcards with bidirectional recall, audio pronunciation, and automatic interval progression.
@@ -299,18 +311,30 @@ export function renderVocabTestsPane() {
 export function renderKanjiSRSPane() {
   const container = document.getElementById('kanji-srs-container');
   if (!container) return;
-  const dueCount = getDueItemsCount('kanji');
+
+  const hasFilter = state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0;
+  const filterList = hasFilter ? Array.from(state.kanjiSelectedLessons).sort((a, b) => a - b) : [];
+  const dueCount = hasFilter ? getDueItemsCount('kanji', state.kanjiSelectedLessons) : getDueItemsCount('kanji');
+  const totalDeckDue = getDueItemsCount('kanji');
   const currentBatch = activeBatches.kanji;
+
+  const filterBadgeHtml = hasFilter
+    ? `<span class="badge badge-cyan" style="margin-left: 0.5rem;"><i class="fa-solid fa-filter"></i> Lessons ${filterList.join(', ')}</span>`
+    : '';
+
+  const subLabel = hasFilter 
+    ? `kanji items due in selected lessons (${totalDeckDue} due overall in deck)`
+    : `kanji readings &amp; characters due right now`;
 
   container.innerHTML = `
     <div class="pillar-srs-card">
       <div class="psc-header">
-        <div class="psc-title"><i class="fa-solid fa-bolt" style="color: var(--cyan);"></i> 漢字 SRS復習 (Kanji Reviews)</div>
+        <div class="psc-title"><i class="fa-solid fa-bolt" style="color: var(--cyan);"></i> 漢字 SRS復習 (Kanji Reviews) ${filterBadgeHtml}</div>
         <span class="badge ${dueCount > 0 ? 'badge-cyan' : 'badge-green'}">${dueCount > 0 ? `${dueCount} Due` : 'Caught Up'}</span>
       </div>
       <div class="psc-count-box">
         <span class="psc-count" style="color: var(--cyan);">${dueCount}</span>
-        <span class="psc-count-label">kanji readings &amp; characters due right now</span>
+        <span class="psc-count-label">${subLabel}</span>
       </div>
       <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">
         Multi-facet SRS: character recognition (K:), reading identification (KWR:), and writing recall (KWW:).
@@ -592,13 +616,20 @@ export const N3BookPlatform = {
   },
   startPillarSRS: (pillar) => {
     const limit = activeBatches[pillar] === 'all' ? 100 : parseInt(activeBatches[pillar], 10);
-    if (typeof window.startOmniReview === 'function') {
-      window.startOmniReview([pillar], limit);
+    state.dueBatchSize = limit;
+    let filter = null;
+    if (pillar === 'vocab' && state.selectedVocabChapters && state.selectedVocabChapters.size > 0) {
+      filter = state.selectedVocabChapters;
+    } else if (pillar === 'kanji' && state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0) {
+      filter = state.kanjiSelectedLessons;
+    }
+    if (typeof window.startDueReview === 'function') {
+      window.startDueReview(pillar, filter);
     }
   },
   drillHardKanji: () => {
-    if (typeof window.startOmniReview === 'function') {
-      window.startOmniReview(['kanji'], 20);
+    if (typeof window.startDueReview === 'function') {
+      window.startDueReview('kanji');
     }
   },
   renderHard: (pillar) => {

@@ -8,7 +8,7 @@ import { loadAllActiveBooks } from './data-loader.js';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
 import { showView } from './navigation.js';
 import { startStudy, startLearnNew, learnGotIt, skipCard, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js';
-import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter } from './vocab-browser.js';
+import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected } from './vocab-browser.js';
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
@@ -16,7 +16,8 @@ import {
   renderKanjiView, setKanjiTab, setKanjiPart, setKanjiLesson, setKanjiFilter, onKanjiSearch,
   openKanjiModal, closeKanjiModal, toggleModalKanjiHard, drillActiveModalKanji,
   drillKanjiSingle, drillKanjiLesson, getKanjiBreakdown, setExerciseLesson,
-  selectExerciseOption, checkExerciseInput, drillExerciseItem, checkMockOption
+  selectExerciseOption, checkExerciseInput, drillExerciseItem, checkMockOption,
+  setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected
 } from './kanji.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
@@ -84,6 +85,7 @@ window.onToggleHard = onToggleHard;
 window.drillAllHardWords = drillAllHardWords;
 window.toggleRevealHardWords = toggleRevealHardWords;
 window.setWeakPointsFilter = setWeakPointsFilter;
+window.drillVocabSelected = drillVocabSelected;
 
 // Dokkai Reading (Book 2)
 window.openReadingLesson = openReadingLesson;
@@ -113,6 +115,9 @@ window.selectExerciseOption = selectExerciseOption;
 window.checkExerciseInput = checkExerciseInput;
 window.drillExerciseItem = drillExerciseItem;
 window.checkMockOption = checkMockOption;
+window.setKanjiStudyDirection = setKanjiStudyDirection;
+window.selectKanjiLesson = selectKanjiLesson;
+window.drillKanjiSelected = drillKanjiSelected;
 
 // Home Dashboard
 window.setHomeGroup = setHomeGroup;

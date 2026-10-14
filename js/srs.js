@@ -430,19 +430,34 @@ export function getMeaningFacetKey(term) {
 // OMNI-REVIEW & MULTI-BOOK DUE ITEMS
 // =======================================================
 
-export function getDueItemsCount(pillar = 'all') {
+export function getDueItemsCount(pillar = 'all', chapterFilter = null) {
   const now = Date.now();
   let count = 0;
   if (!state.stats) return 0;
+
+  const filterSet = chapterFilter instanceof Set 
+    ? chapterFilter 
+    : (Array.isArray(chapterFilter) && chapterFilter.length > 0 ? new Set(chapterFilter) : null);
 
   for (const key in state.stats) {
     const s = state.stats[key];
     if (!s || !s.nextDue || s.nextDue > now) continue;
 
     const itemPillar = getPillarFromKey(key);
-    if (pillar === 'all' || pillar === itemPillar) {
-      count++;
+    if (pillar !== 'all' && pillar !== itemPillar) continue;
+
+    if (filterSet && filterSet.size > 0) {
+      const resolved = resolveItemForKey(key, s);
+      if (itemPillar === 'vocab') {
+        const ch = resolved.chapter;
+        if (ch && !filterSet.has(ch) && !filterSet.has(String(ch))) continue;
+      } else if (itemPillar === 'kanji') {
+        const lNum = resolved.lesson_number;
+        if (lNum && !filterSet.has(lNum) && !filterSet.has(Number(lNum))) continue;
+      }
     }
+
+    count++;
   }
 
   return count;
@@ -578,18 +593,38 @@ function resolveItemForKey(key, stats) {
 
   if (facet === 'KWR' || facet === 'KWW' || facet === 'KWM') {
     const term = key.slice(facet.length + 1);
-    const wordData = state.idx?.words?.[term] || {};
-    const typeMap = {
-      KWR: 'kanji_word_reading',
-      KWW: 'kanji_word_writing',
-      KWM: 'kanji_word_meaning'
+    let wordData = state.idx?.words?.[term] || {};
+    if (!wordData.baseKanji && state.kanjiDB) {
+      for (const char in state.kanjiDB) {
+        const k = state.kanjiDB[char];
+        const found = (k.words || []).find(w => w.term_ja === term || w.term === term);
+        if (found) {
+          wordData = { ...found, baseKanji: char, lesson_number: k.lesson_number, onyomi: k.onyomi, kunyomi: k.kunyomi };
+          break;
+        }
+      }
+    }
+    const dirMap = {
+      KWR: 'ja-kana',
+      KWW: 'kana-ja',
+      KWM: 'ja-meaning'
     };
     return {
       term,
       term_ja: term,
+      word: term,
+      reading: wordData.reading || '',
+      ruby_html: wordData.ruby_html || term,
+      meaning_en: wordData.meaning_en || '',
+      meaning_zh: wordData.meaning_zh || '',
+      baseKanji: wordData.baseKanji || '',
+      lesson_number: wordData.lesson_number || 1,
+      onyomi: wordData.onyomi || [],
+      kunyomi: wordData.kunyomi || [],
+      direction: dirMap[facet] || 'ja-kana',
       id: term,
       ...wordData,
-      type: typeMap[facet],
+      type: 'kanji_word',
       key,
       book: 'kanji',
       stats,
@@ -667,11 +702,16 @@ function resolveItemForKey(key, stats) {
 
 /**
  * Returns prioritized and interleaved due review items (doc 02 §6.1, ME-9, ME-10).
+ * Supports optional chapterFilter (Set or Array of chapter IDs or lesson numbers).
  */
-export function getAllDueItems(pillar = 'all', limit = 20) {
+export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null) {
   const now = Date.now();
   const pool = [];
   if (!state.stats) return [];
+
+  const filterSet = chapterFilter instanceof Set 
+    ? chapterFilter 
+    : (Array.isArray(chapterFilter) && chapterFilter.length > 0 ? new Set(chapterFilter) : null);
 
   for (const key in state.stats) {
     const s = state.stats[key];
@@ -681,6 +721,18 @@ export function getAllDueItems(pillar = 'all', limit = 20) {
     if (pillar !== 'all' && pillar !== itemPillar) continue;
 
     const resolved = resolveItemForKey(key, s);
+
+    // Apply chapter/lesson filter if requested
+    if (filterSet && filterSet.size > 0) {
+      if (itemPillar === 'vocab') {
+        const ch = resolved.chapter;
+        if (ch && !filterSet.has(ch) && !filterSet.has(String(ch))) continue;
+      } else if (itemPillar === 'kanji') {
+        const lNum = resolved.lesson_number;
+        if (lNum && !filterSet.has(lNum) && !filterSet.has(Number(lNum))) continue;
+      }
+    }
+
     pool.push(resolved);
   }
 

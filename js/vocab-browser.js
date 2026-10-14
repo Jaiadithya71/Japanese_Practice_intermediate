@@ -18,10 +18,16 @@ export function renderChapterChips() {
   if (!container) return;
   container.innerHTML = '';
 
+  if (!(state.selectedVocabChapters instanceof Set)) {
+    state.selectedVocabChapters = new Set();
+  }
+
+  const isAll = state.selectedVocabChapters.size === 0;
+
   // All button
   const allBtn = document.createElement('button');
-  allBtn.className = `chapter-chip${state.vocabChapter === 'all' ? ' active' : ''}`;
-  allBtn.textContent = 'All Units';
+  allBtn.className = `chapter-chip${isAll ? ' active' : ''}`;
+  allBtn.innerHTML = `${isAll ? '<i class="fa-solid fa-check"></i> ' : ''}All Units`;
   allBtn.onclick = () => selectChapter('all');
   container.appendChild(allBtn);
 
@@ -39,36 +45,93 @@ export function renderChapterChips() {
       if (st === 'mastered') masteredCount++;
     });
 
+    const isSelected = state.selectedVocabChapters.has(chId);
     const chip = document.createElement('button');
-    const isActive = state.vocabChapter === chId;
     let cls = 'chapter-chip';
-    if (isActive) cls += ' active';
+    if (isSelected) cls += ' active selected';
     else if (hardCount > 0) cls += ' has-hard';
 
     let dot = '';
-    if (!isActive && hardCount > 0) {
+    if (!isSelected && hardCount > 0) {
       dot = '<span class="chip-dot red"></span>';
-    } else if (!isActive && masteredCount === words.length && words.length > 0) {
+    } else if (!isSelected && masteredCount === words.length && words.length > 0) {
       dot = '<span class="chip-dot green"></span>';
     }
 
     const shortLabel = chId.startsWith('part2_') ? 'C' + chId.slice(6) : chId.startsWith('review_') ? 'R' + chId.slice(7) : 'T' + chId;
+    const checkIcon = isSelected ? '<i class="fa-solid fa-check"></i> ' : '';
     chip.className = cls;
-    chip.innerHTML = `${shortLabel}: ${meta.topic_ja || chId}${dot}`;
-    chip.onclick = () => selectChapter(chId);
+    chip.innerHTML = `${checkIcon}${shortLabel}: ${meta.topic_ja || chId}${dot}`;
+    chip.onclick = () => selectChapter(chId, 'toggle');
     container.appendChild(chip);
   });
+
+  updateVocabActionButtonLabels();
 }
 
-export function selectChapter(chId) {
-  state.vocabChapter = chId;
+export function selectChapter(chId, mode = 'toggle') {
+  if (!(state.selectedVocabChapters instanceof Set)) {
+    state.selectedVocabChapters = new Set();
+  }
+
+  if (chId === 'all') {
+    state.selectedVocabChapters.clear();
+    state.vocabChapter = 'all';
+  } else {
+    if (mode === 'toggle') {
+      if (state.selectedVocabChapters.has(chId)) {
+        state.selectedVocabChapters.delete(chId);
+      } else {
+        state.selectedVocabChapters.add(chId);
+      }
+    } else {
+      state.selectedVocabChapters.clear();
+      state.selectedVocabChapters.add(chId);
+    }
+    state.vocabChapter = state.selectedVocabChapters.size === 1 ? Array.from(state.selectedVocabChapters)[0] : (state.selectedVocabChapters.size === 0 ? 'all' : 'multi');
+  }
+
   renderChapterChips();
   renderVocabList();
+  updateVocabActionButtonLabels();
+  if (typeof window.renderPillarSRS === 'function' && state.vocabSubTab === 'srs') {
+    window.renderPillarSRS('vocab');
+  }
+}
+
+export function updateVocabActionButtonLabels() {
+  const btn = document.getElementById('btn-vocab-study-action');
+  if (!btn) return;
+
+  const selChapters = state.selectedVocabChapters || new Set();
+  let wordsCount = 0;
+
+  if (selChapters.size === 0) {
+    for (const chId in (state.vocabDB || {})) {
+      wordsCount += (state.vocabDB[chId] || []).length;
+    }
+    btn.innerHTML = `<i class="fa-solid fa-play"></i> Drill All Words <span class="badge" style="margin-left: 0.35rem; font-size: 0.72rem; padding: 0.15rem 0.45rem; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 999px;">${wordsCount}w</span>`;
+  } else {
+    for (const chId of selChapters) {
+      wordsCount += (state.vocabDB[chId] || []).length;
+    }
+    const label = selChapters.size === 1 ? `Unit ${Array.from(selChapters)[0]}` : `${selChapters.size} Units`;
+    btn.innerHTML = `<i class="fa-solid fa-play"></i> Drill ${label} <span class="badge" style="margin-left: 0.35rem; font-size: 0.72rem; padding: 0.15rem 0.45rem; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 999px;">${wordsCount}w</span>`;
+  }
+}
+
+export function drillVocabSelected() {
+  const selChapters = state.selectedVocabChapters || new Set();
+  state.selectedChapters = new Set(selChapters);
+  startStudy('flashcard', false, 'vocab');
 }
 
 export function setChapterGroup(group) {
   state.activeChapterGroup = group;
   state.vocabChapter = 'all';
+  if (state.selectedVocabChapters instanceof Set) {
+    state.selectedVocabChapters.clear();
+  }
 
   const tabT = document.getElementById('vgroup-topic');
   const tabC = document.getElementById('vgroup-char');
@@ -77,6 +140,7 @@ export function setChapterGroup(group) {
 
   renderChapterChips();
   renderVocabList();
+  updateVocabActionButtonLabels();
 }
 
 export function setVocabFilter(filter) {
@@ -107,14 +171,18 @@ export function renderVocabList() {
   container.innerHTML = '';
 
   let list = [];
-  if (state.vocabChapter === 'all') {
+  const selChapters = state.selectedVocabChapters || new Set();
+
+  if (selChapters.size === 0 || state.vocabChapter === 'all') {
     for (const chId of groupKeys()) {
-      {
+      list.push(...(state.vocabDB[chId] || []));
+    }
+  } else {
+    for (const chId of selChapters) {
+      if (state.vocabDB[chId]) {
         list.push(...state.vocabDB[chId]);
       }
     }
-  } else {
-    list = [...(state.vocabDB[state.vocabChapter] || [])];
   }
 
   // Filter by status tab

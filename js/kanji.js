@@ -39,7 +39,9 @@ export function renderKanjiView() {
   if (mockPane) mockPane.style.display = tab === 'mock' ? 'block' : 'none';
 
   if (tab === 'target') {
+    renderKanjiLessonChips();
     renderKanjiTargetGrid();
+    updateKanjiActionButtonLabels();
   } else if (tab === 'exercises') {
     renderKanjiExercises();
   } else if (tab === 'review300') {
@@ -57,28 +59,44 @@ export function setKanjiTab(tab) {
 }
 
 // =======================================================
-// 2. TARGET KANJI (443) BROWSER & FILTERS
+// 2. TARGET KANJI (443) BROWSER & MULTI-LESSON FILTERS
 // =======================================================
+
+export function setKanjiStudyDirection(dir) {
+  state.kanjiStudyDirection = dir;
+  ['ja-kana', 'kana-ja', 'ja-meaning'].forEach(d => {
+    const btn = document.getElementById(`kdir-${d}`);
+    if (btn) btn.classList.toggle('active', d === dir);
+  });
+  updateKanjiActionButtonLabels();
+}
 
 export function setKanjiPart(part) {
   state.kanjiPart = part === 'all' ? 'all' : parseInt(part, 10);
   populateLessonSelector();
+  renderKanjiLessonChips();
   renderKanjiTargetGrid();
+  updateKanjiActionButtonLabels();
 }
 
 export function setKanjiLesson(les) {
-  state.kanjiLesson = les === 'all' ? 'all' : parseInt(les, 10);
-  renderKanjiTargetGrid();
+  if (les === 'all') {
+    selectKanjiLesson('all');
+  } else {
+    selectKanjiLesson(parseInt(les, 10), 'replace');
+  }
 }
 
 export function setKanjiFilter(status) {
   state.kanjiFilter = status;
   renderKanjiTargetGrid();
+  updateKanjiActionButtonLabels();
 }
 
 export function onKanjiSearch(query) {
   state.kanjiSearchQuery = (query || '').trim().toLowerCase();
   renderKanjiTargetGrid();
+  updateKanjiActionButtonLabels();
 }
 
 export function populateLessonSelector() {
@@ -99,6 +117,75 @@ export function populateLessonSelector() {
   });
 }
 
+export function renderKanjiLessonChips() {
+  const container = document.getElementById('kanji-lesson-chips-row');
+  if (!container) return;
+  container.innerHTML = '';
+
+  if (!(state.kanjiSelectedLessons instanceof Set)) {
+    state.kanjiSelectedLessons = new Set();
+  }
+
+  const isAll = state.kanjiSelectedLessons.size === 0;
+
+  // "All Lessons" chip
+  const allChip = document.createElement('button');
+  allChip.className = `kanji-lesson-chip ${isAll ? 'active' : ''}`;
+  allChip.innerHTML = `${isAll ? '<i class="fa-solid fa-check"></i> ' : ''}All Lessons (1–25)`;
+  allChip.onclick = () => selectKanjiLesson('all');
+  container.appendChild(allChip);
+
+  // Lessons 1 to 25
+  for (let i = 1; i <= 25; i++) {
+    const isSel = state.kanjiSelectedLessons.has(i);
+    const chip = document.createElement('button');
+    chip.className = `kanji-lesson-chip ${isSel ? 'active selected' : ''}`;
+
+    let wordsCount = 0;
+    for (const char in (state.kanjiDB || {})) {
+      const k = state.kanjiDB[char];
+      if (k && k.lesson_number === i) {
+        wordsCount += (k.words || []).length;
+      }
+    }
+
+    chip.innerHTML = `${isSel ? '<i class="fa-solid fa-check"></i> ' : ''}L${i} <span style="font-size: 0.72rem; opacity: 0.85;">(${wordsCount}w)</span>`;
+    chip.onclick = () => selectKanjiLesson(i, 'toggle');
+    container.appendChild(chip);
+  }
+}
+
+export function selectKanjiLesson(lessonNum, mode = 'toggle') {
+  if (!(state.kanjiSelectedLessons instanceof Set)) {
+    state.kanjiSelectedLessons = new Set();
+  }
+
+  if (lessonNum === 'all') {
+    state.kanjiSelectedLessons.clear();
+    state.kanjiLesson = 'all';
+  } else {
+    const num = Number(lessonNum);
+    if (mode === 'toggle') {
+      if (state.kanjiSelectedLessons.has(num)) {
+        state.kanjiSelectedLessons.delete(num);
+      } else {
+        state.kanjiSelectedLessons.add(num);
+      }
+    } else {
+      state.kanjiSelectedLessons.clear();
+      state.kanjiSelectedLessons.add(num);
+    }
+    state.kanjiLesson = state.kanjiSelectedLessons.size === 1 ? Array.from(state.kanjiSelectedLessons)[0] : 'all';
+  }
+
+  renderKanjiLessonChips();
+  renderKanjiTargetGrid();
+  updateKanjiActionButtonLabels();
+  if (typeof window.renderPillarSRS === 'function' && state.kanjiSubTab === 'srs') {
+    window.renderPillarSRS('kanji');
+  }
+}
+
 export function renderKanjiTargetGrid() {
   const grid = document.getElementById('kanji-grid');
   const countEl = document.getElementById('kanji-count-badge');
@@ -107,6 +194,7 @@ export function renderKanjiTargetGrid() {
   grid.innerHTML = '';
   const allChars = Object.keys(state.kanjiDB || {});
   const query = state.kanjiSearchQuery || '';
+  const selLessons = state.kanjiSelectedLessons || new Set();
 
   const filtered = allChars.filter(char => {
     const k = state.kanjiDB[char];
@@ -115,8 +203,8 @@ export function renderKanjiTargetGrid() {
     // Part filter
     if (state.kanjiPart !== 'all' && k.part !== state.kanjiPart) return false;
 
-    // Lesson filter
-    if (state.kanjiLesson !== 'all' && k.lesson_number !== state.kanjiLesson) return false;
+    // Multi-Lesson selection filter
+    if (selLessons.size > 0 && !selLessons.has(k.lesson_number)) return false;
 
     // Status filter
     const status = getKanjiStatus(char);
@@ -149,20 +237,18 @@ export function renderKanjiTargetGrid() {
     const k = state.kanjiDB[char];
     const status = getKanjiStatus(char);
     const card = document.createElement('div');
-    card.className = 'kanji-card';
+    card.className = 'kanji-card kanji-card-minimal';
     card.onclick = () => openKanjiModal(char);
 
-    const onStr = (k.onyomi || []).join('、');
-    const kunStr = (k.kunyomi || []).join('、');
-    const meanStr = (k.words || []).map(w => w.meaning_en).filter(Boolean)[0] || '';
+    const primaryReading = (k.onyomi && k.onyomi[0]) || (k.kunyomi && k.kunyomi[0]) || '';
+    const wordCount = (k.words || []).length;
 
+    // Minimal card presentation on the grid (clean, prominent Kanji character)
     card.innerHTML = `
       <span class="kanji-card-lesson-tag">L${k.lesson_number}</span>
       <span class="kanji-card-status-dot ${status}" title="SRS Status: ${status}"></span>
       <div class="kanji-card-char">${char}</div>
-      <div class="kanji-card-onyomi">${onStr || '—'}</div>
-      <div class="kanji-card-kunyomi">${kunStr || '—'}</div>
-      <div class="kanji-card-meaning" title="${meanStr}">${meanStr}</div>
+      <div class="kanji-card-sub font-ja">${primaryReading || `${wordCount}w`}</div>
     `;
     grid.appendChild(card);
   });
@@ -267,28 +353,123 @@ export function drillKanjiSingle(char) {
   showView('study');
 }
 
-export function drillKanjiLesson(lessonNum) {
+export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDirection || 'ja-kana') {
+  const studyItems = [];
+  const seenWords = new Set();
+
+  kanjiList.forEach(k => {
+    if (k.words && Array.isArray(k.words) && k.words.length > 0) {
+      k.words.forEach(w => {
+        const word = (w.term_ja || w.word || k.kanji).trim();
+        const reading = (w.reading || (k.kunyomi && k.kunyomi[0]) || (k.onyomi && k.onyomi[0]) || '').trim();
+        const key = direction === 'kana-ja' ? `KWW:${word}` : (direction === 'ja-meaning' ? `KWM:${word}` : `KWR:${word}`);
+
+        if (word && !seenWords.has(word)) {
+          seenWords.add(word);
+          studyItems.push({
+            type: 'kanji_word',
+            book: 'kanji',
+            baseKanji: k.kanji,
+            lesson_number: k.lesson_number || 1,
+            word: word,
+            reading: reading,
+            ruby_html: w.ruby_html || word,
+            meaning_en: w.meaning_en || '',
+            meaning_zh: w.meaning_zh || '',
+            onyomi: k.onyomi || [],
+            kunyomi: k.kunyomi || [],
+            direction: direction,
+            key: key
+          });
+        }
+      });
+    } else {
+      // Fallback for bare kanji without mapped words
+      studyItems.push({
+        type: 'kanji',
+        book: 'kanji',
+        baseKanji: k.kanji,
+        kanji: k.kanji,
+        lesson_number: k.lesson_number || 1,
+        onyomi: k.onyomi || [],
+        kunyomi: k.kunyomi || [],
+        words: k.words || [],
+        direction: direction,
+        key: `K:${k.kanji}`
+      });
+    }
+  });
+
+  return studyItems;
+}
+
+export function updateKanjiActionButtonLabels() {
+  const btn = document.getElementById('btn-kanji-drill-action');
+  if (!btn) return;
+
+  const selLessons = state.kanjiSelectedLessons || new Set();
   const pool = [];
-  for (const char in state.kanjiDB) {
+  for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
-    if (k.lesson_number === lessonNum) {
-      pool.push({ ...k, type: 'kanji', book: 'kanji' });
+    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) {
+      pool.push(k);
     }
   }
+
+  const items = buildKanjiStudyItems(pool);
+  const wordsCount = items.length;
+
+  let scope = 'All Lessons';
+  if (selLessons.size === 1) {
+    scope = `Lesson ${Array.from(selLessons)[0]}`;
+  } else if (selLessons.size > 1 && selLessons.size <= 3) {
+    scope = `L${Array.from(selLessons).sort((a,b)=>a-b).join('+')}`;
+  } else if (selLessons.size > 3) {
+    scope = `${selLessons.size} Lessons`;
+  }
+
+  btn.innerHTML = `<i class="fa-solid fa-play"></i> Drill ${scope} <span class="badge" style="margin-left: 0.35rem; font-size: 0.72rem; padding: 0.15rem 0.45rem; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 999px;">${wordsCount}w</span>`;
+}
+
+export function drillKanjiSelected() {
+  const selLessons = state.kanjiSelectedLessons || new Set();
+  const pool = [];
+
+  for (const char in (state.kanjiDB || {})) {
+    const k = state.kanjiDB[char];
+    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) {
+      pool.push(k);
+    }
+  }
+
   if (pool.length === 0) {
-    alert(`No kanji found for Lesson ${lessonNum}!`);
+    alert('No kanji found for the selected lessons!');
     return;
   }
-  pool.sort(() => Math.random() - 0.5);
-  state.sessionItems = pool;
+
+  const studyItems = buildKanjiStudyItems(pool);
+  studyItems.sort(() => Math.random() - 0.5);
+
+  state.sessionItems = studyItems;
   state.sessionIdx = 0;
   state.sessionRight = 0;
-  state.sessionTotal = pool.length;
+  state.sessionTotalAnswered = 0;
+  state.sessionTotalInitial = studyItems.length;
+  state.sessionTotal = studyItems.length;
   state.cardFlipped = false;
   state.studyMode = 'flashcard';
   state.isDueReviewMode = false;
   state.drillOrigin = 'kanji';
+
   showView('study');
+  renderCard();
+}
+
+export function drillKanjiLesson(lessonNum) {
+  if (lessonNum !== undefined && lessonNum !== 'all') {
+    selectKanjiLesson(lessonNum, 'replace');
+  }
+  drillKanjiSelected();
 }
 
 /**
