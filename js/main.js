@@ -9,7 +9,7 @@ import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
 import { showView } from './navigation.js';
 import { startStudy, startLearnNew, learnGotIt, skipCard, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=2.4';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity } from './home.js';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
 import {
@@ -141,6 +141,11 @@ window.setHomeGroup = setHomeGroup;
 window.toggleChapterSelection = toggleChapterSelection;
 window.selectAllChaptersInGroup = selectAllChaptersInGroup;
 window.clearChapterSelection = clearChapterSelection;
+window.setHomeSessionSize = setHomeSessionSize;
+window.setHomeStudyDirection = setHomeStudyDirection;
+window.startSelectedLessonRun = startSelectedLessonRun;
+window.startNextHomeBatch = startNextHomeBatch;
+window.renderHomeActivity = renderHomeActivity;
 
 // Global Keyboard Shortcuts
 window.addEventListener('keydown', (e) => {

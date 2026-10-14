@@ -9,6 +9,8 @@ import { showView } from './navigation.js';
 import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 
 export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'home') {
+  state.homeRunQueue = [];
+  state.homeRunBatchRun = false;
   state.studyMode = mode;
   state.studyIsDrillHard = isDrillHard;
   state.drillOrigin = origin;
@@ -679,6 +681,8 @@ function renderStudySummary() {
       : (state.drillOrigin === 'kanji'
         ? 'drillKanjiSelected()'
         : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`);
+  const hasNextHomeBatch = state.homeRunBatchRun === true && state.drillOrigin === 'home' && !state.isDueReviewMode && Array.isArray(state.homeRunQueue) && state.homeRunQueue.length > 0;
+  const nextBatchButton = hasNextHomeBatch ? `<button class="btn btn-primary" onclick="startNextHomeBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.homeRunQueue.length} left)</button>` : '';
   const againLabel = state.studyMode === 'kanji_quiz'
     ? 'Quiz Again'
     : state.learnUnit
@@ -706,7 +710,8 @@ function renderStudySummary() {
         </div>
       </div>
 
-      <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+      <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap:wrap; justify-content:center;">
+        ${nextBatchButton}
         <button class="btn btn-primary" onclick="${again}">
           <i class="fa-solid fa-rotate-right"></i> ${againLabel}
         </button>

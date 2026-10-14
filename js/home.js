@@ -5,7 +5,12 @@
 
 import { state } from './state.js';
 import { getWordStatus } from './srs.js';
-import { startStudy } from './study.js';
+import { startStudy, renderCard } from './study.js';
+import { getDay, getCurrentStreak } from './daylog.js';
+import { istDateKey } from './time.js';
+import { renderHeatmapGridHtml } from './today.js';
+import { beginGistReviewSession } from './gist-sync.js';
+import { showView } from './navigation.js';
 
 export function startSingleChapterStudy(chId) {
   state.selectedChapters.clear();
@@ -15,9 +20,12 @@ export function startSingleChapterStudy(chId) {
 if (typeof window !== 'undefined') window.startSingleChapterStudy = startSingleChapterStudy;
 
 export function renderHomeView() {
+  try { state.studyDirection = localStorage.getItem('n3_home_study_direction') || state.studyDirection; } catch (_) {}
   updateMasteryCounters();
   renderLessonGrid();
+  renderHomeActivity();
   updatePillarCards();
+  updateHomeLessonControls();
 }
 
 export function updateMasteryCounters() {
@@ -70,6 +78,8 @@ export function setHomeGroup(group) {
   const tabC = document.getElementById('home-tab-char');
   if (tabT) tabT.classList.toggle('active', group === 'topic');
   if (tabC) tabC.classList.toggle('active', group === 'characteristics');
+  if (tabT) tabT.setAttribute('aria-selected', String(group === 'topic'));
+  if (tabC) tabC.setAttribute('aria-selected', String(group === 'characteristics'));
   renderLessonGrid();
 }
 
@@ -88,18 +98,21 @@ export function toggleChapterSelection(chId) {
   }
   renderLessonGrid();
   updateStudyButtonState();
+  updateHomeLessonControls();
 }
 
 export function selectAllChaptersInGroup() {
   chapterKeysForGroup().forEach(k => state.selectedChapters.add(k));
   renderLessonGrid();
   updateStudyButtonState();
+  updateHomeLessonControls();
 }
 
 export function clearChapterSelection() {
   state.selectedChapters.clear();
   renderLessonGrid();
   updateStudyButtonState();
+  updateHomeLessonControls();
 }
 
 function updateStudyButtonState() {
@@ -161,4 +174,96 @@ export function renderLessonGrid() {
     `;
     container.appendChild(card);
   });
+}
+
+
+function homeRunSize() {
+  try { return localStorage.getItem('n3_home_session_size') || '20'; } catch (_) { return '20'; }
+}
+
+export function setHomeSessionSize(value) {
+  const allowed = ['10', '20', '50', 'all'];
+  const selected = allowed.includes(String(value).toLowerCase()) ? String(value).toLowerCase() : '20';
+  try { localStorage.setItem('n3_home_session_size', selected); } catch (_) {}
+  updateHomeLessonControls();
+}
+
+export function setHomeStudyDirection(direction) {
+  if (direction !== 'ja-en' && direction !== 'en-ja') return;
+  state.studyDirection = direction;
+  try { localStorage.setItem('n3_home_study_direction', direction); } catch (_) {}
+  document.querySelectorAll('[data-home-direction]').forEach(button => button.classList.toggle('active', button.dataset.homeDirection === direction));
+  renderLessonGrid();
+}
+
+function updateHomeLessonControls() {
+  const size = homeRunSize();
+  document.querySelectorAll('[data-home-size]').forEach(button => button.classList.toggle('active', button.dataset.homeSize === size));
+  document.querySelectorAll('[data-home-direction]').forEach(button => button.classList.toggle('active', button.dataset.homeDirection === state.studyDirection));
+  const count = state.selectedChapters.size;
+  const title = document.getElementById('home-lessons-count');
+  if (title) title.textContent = count ? `${count} lesson${count === 1 ? '' : 's'} selected · next batches continue automatically` : 'No lessons selected · all vocabulary lessons will be included';
+  const btn = document.getElementById('btn-start-selected-study');
+  if (btn) btn.innerHTML = `<i class="fa-solid fa-play"></i> Start ${count ? `${count} selected lesson${count === 1 ? '' : 's'}` : 'all lessons'}`;
+}
+
+function startHomeBatch() {
+  const queue = state.homeRunQueue || [];
+  if (!queue.length) return;
+  const batchSize = state.homeRunBatchSize === 'all' ? queue.length : Number(state.homeRunBatchSize) || 20;
+  const batch = queue.splice(0, batchSize);
+  state.homeRunQueue = queue;
+  state.homeRunBatchRun = true;
+  state.studyMode = 'flashcard';
+  state.studyIsDrillHard = false;
+  state.drillOrigin = 'home';
+  state.isDueReviewMode = false;
+  state.learnUnit = null;
+  state.sessionSkipped = 0;
+  state.sessionItems = batch;
+  state.sessionIdx = 0;
+  state.sessionRight = 0;
+  state.sessionTotalAnswered = 0;
+  state.sessionTotalInitial = batch.length;
+  state.sessionTotal = batch.length;
+  state.cardFlipped = false;
+  beginGistReviewSession();
+  showView('study');
+  renderCard();
+}
+
+export function startSelectedLessonRun() {
+  const chapters = state.selectedChapters.size ? Array.from(state.selectedChapters) : Object.keys(state.vocabDB);
+  const pool = [];
+  for (const chapter of chapters) for (const word of (state.vocabDB[chapter] || [])) {
+    const key = `V:${word.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
+    pool.push({ ...word, type: 'vocab', key, book: 'vocab' });
+  }
+  if (!pool.length) { alert('No vocabulary items found in this selection.'); return; }
+  pool.sort(() => Math.random() - 0.5);
+  state.homeRunBatchSize = homeRunSize();
+  state.homeRunQueue = pool;
+  startHomeBatch();
+}
+
+export function startNextHomeBatch() {
+  if (!state.homeRunQueue || !state.homeRunQueue.length) return;
+  startHomeBatch();
+}
+
+export function renderHomeActivity() {
+  const grid = document.getElementById('home-activity-heatmap');
+  if (!grid) return;
+  const byDate = new Map(getHeatmap30().map(day => [day.date, day]));
+  const reviewsOnly = Array.from(byDate.values(), day => {
+    const reviews = getDay(day.date).reviews;
+    return { date: day.date, count: reviews, level: reviews <= 0 ? 0 : reviews < 10 ? 1 : reviews < 50 ? 2 : reviews < 200 ? 3 : reviews < 500 ? 4 : 5 };
+  });
+  // Reuse the existing 30-day layout while preserving this card's reviews-only scale.
+  const html = renderHeatmapGridHtml(reviewsOnly).replace(/: (\d+) items/g, ': $1 reviews');
+  grid.innerHTML = html + `<div class="home-heatmap-legend"><span>0</span><i class="heatmap-cell level-0"></i><i class="heatmap-cell level-1"></i><i class="heatmap-cell level-2"></i><i class="heatmap-cell level-3"></i><i class="heatmap-cell level-4"></i><i class="heatmap-cell level-5"></i><span>500+</span></div>`;
+  const streak = document.getElementById('home-review-streak');
+  const today = document.getElementById('home-reviews-today');
+  if (streak) streak.textContent = getCurrentStreak();
+  if (today) today.textContent = getDay(istDateKey()).reviews;
 }

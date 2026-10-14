@@ -11,3 +11,6 @@
 @media (min-width:901px){
   #today-card{display:block!important;background:linear-gradient(145deg,rgba(124,108,250,.14),rgba(124,108,250,.04));border:1px solid rgba(124,108,250,.3);border-radius:20px;padding:1.5rem;margin-bottom:2rem;max-width:760px}
 }
+
+/* Keep Skip physically separate from the tappable flashcard surface. */
+.study-skip-row{display:flex;justify-content:flex-end;min-height:42px;margin:0 0 .75rem;padding:.35rem .6rem;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.025)}.study-skip-row .btn{min-height:34px;padding:.3rem .65rem;color:var(--text-dim);border:1px solid rgba(255,255,255,.12);border-radius:9px}

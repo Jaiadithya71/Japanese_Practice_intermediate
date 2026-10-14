@@ -20,3 +20,5 @@
  .n3s-mobile-indicator.n3s-ok{color:#34d399;border-color:rgba(52,211,153,.45)}
  .n3s-mobile-indicator.n3s-error{color:#f87171;border-color:rgba(248,113,113,.5)}
 }
+
+@media(max-width:900px){body.in-runner #n3sync-mobile{display:none!important}}

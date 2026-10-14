@@ -232,3 +232,11 @@
   font-size: 1.8rem;
   font-weight: 800;
 }
+
+/* Kanji quiz: give the prompt the visual weight and space of a drill question. */
+#card-term.kanji-quiz-term{width:100%;display:flex;flex:1;align-items:center;justify-content:center;min-height:6.5rem}
+#card-term.kanji-quiz-term>div{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+#card-meaning.kanji-quiz-options{width:100%;flex:0 0 auto}
+.kanji-quiz-prompt{max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
+.kanji-quiz-prompt:not(:only-child){font-size:clamp(3.3rem,12vw,5rem)!important}
+@media(max-width:600px){.flashcard:has(.kanji-quiz-term){min-height:min(66vh,560px)!important;padding:1rem!important}.flashcard:has(.kanji-quiz-term) .flashcard-body{flex:1;gap:.65rem;margin:.65rem 0}.flashcard:has(.kanji-quiz-term) .flashcard-top{gap:.4rem}.flashcard:has(.kanji-quiz-term) #card-meaning{margin-top:.1rem!important}.flashcard:has(.kanji-quiz-term) .kanji-quiz-opt{padding:.55rem .75rem!important;font-size:.96rem!important}}

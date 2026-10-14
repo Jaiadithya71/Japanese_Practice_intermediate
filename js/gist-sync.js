@@ -86,6 +86,15 @@ function setStatus(kind, text) {
   }
   const info = document.getElementById('n3s-info');
   if (info) info.textContent = text;
+  const homeState = document.getElementById('home-sync-state');
+  if (homeState) {
+    homeState.className = `home-status-sync n3s-${kind}`;
+    const labels = { idle: 'Sync off', saving: 'Syncing…', ok: 'Synced', error: 'Sync error', pending: 'Pending' };
+    const icons = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation', pending: 'fa-cloud-arrow-up' };
+    homeState.title = text;
+    homeState.setAttribute('aria-label', `Gist sync: ${text}`);
+    homeState.innerHTML = `<i class="fa-solid ${icons[kind] || icons.idle}"></i><span>${labels[kind] || 'Sync'}</span>`;
+  }
 }
 
 function itemScore(s) {

@@ -1070,6 +1070,8 @@ export function renderKanjiQuizCard(item) {
   const hint = document.getElementById('card-controls-hint');
   const gradeControls = document.getElementById('grade-controls');
 
+  if (termEl) termEl.classList.toggle('kanji-quiz-term', true);
+  if (meaningEl) meaningEl.classList.toggle('kanji-quiz-options', true);
   if (exBox) exBox.style.display = 'none';
   if (gradeControls) gradeControls.style.display = 'none';
 
@@ -1085,7 +1087,7 @@ export function renderKanjiQuizCard(item) {
   if (dir === 'ja-kana') {
     termEl.innerHTML = `
       <div>
-        <div style="font-size: 3.4rem; font-family: var(--font-jp); font-weight: 800; color: #fff; letter-spacing: 0.05em;">${item.word}</div>
+        <div class="kanji-quiz-prompt" style="font-size:clamp(3.8rem,14vw,5.4rem);font-family:var(--font-jp);font-weight:800;color:#fff;letter-spacing:.04em;line-height:1.18;">${item.word}</div>
         <div style="margin-top: 0.75rem;">${dirBadge}</div>
       </div>`;
   } else if (dir === 'kana-ja') {
