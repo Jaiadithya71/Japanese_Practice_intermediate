@@ -487,10 +487,6 @@ export function renderToday() {
       <!-- 3.5 Class Track Widget -->
       ${classCardHtml}
 
-      <!-- 3.5 Class Track Widget -->
-
-      ${classCardHtml}
-
       <!-- 4. Today's Plan Checklist -->
       <div class="today-card today-plan-card">
         <div class="today-card-header">
