@@ -11,6 +11,13 @@ import { updateSidebarStats } from './srs.js';
 const GIST_FILENAME = 'nihongo-n3-stats.json';
 const PAT_KEY = 'n3_github_pat';
 const GIST_ID_KEY = 'n3_gist_id';
+const MAX_SYNC_BYTES = 1024 * 1024;
+
+function markRemoteRepairRequired(message) {
+  const error = new Error(message);
+  error.remoteStatsRepair = true;
+  return error;
+}
 const API = 'https://api.github.com';
 
 let saveTimer = null;
@@ -119,12 +126,18 @@ async function getRemoteContent(pat, gistId) {
   if (!file) throw new Error('The progress file is missing from the Gist; nothing was written.');
   let content = file.content;
   if (file.truncated && file.raw_url) {
-    const raw = await fetch(file.raw_url, { headers: headers(pat) });
+    // Public Gists can be fetched without a token. Avoid Authorization here: raw.githubusercontent.com
+    // rejects that CORS preflight, even though a top-level navigation to the URL works.
+    const raw = await fetch(file.raw_url);
     if (!raw.ok) throw new Error(`Could not read full remote progress (HTTP ${raw.status}); nothing was written.`);
     content = await raw.text();
+    if (file.truncated) throw markRemoteRepairRequired("Remote progress is truncated; use Sync Now to replace it with this device's validated stats.");
   }
   if (typeof content !== 'string' || !content.length) {
     throw new Error('The remote progress file is empty or unavailable; nothing was written.');
+  }
+  if (new TextEncoder().encode(content).length >= MAX_SYNC_BYTES) {
+    throw markRemoteRepairRequired("Remote progress exceeds the 1 MB sync limit; use Sync Now to replace it with this device's validated stats.");
   }
   return content;
 }
@@ -158,10 +171,17 @@ async function push(pat, gistId, allowCorruptRemote = false) {
       const remote = JSON.parse(remoteContent);
       if (!remote || typeof remote !== 'object' || Array.isArray(remote)) throw new Error('Remote progress is not a valid stats object.');
     } catch (e) {
-      if (!(allowCorruptRemote && e instanceof SyntaxError && e.remoteStatsParse === true)) throw e;
+      const isMalformed = e instanceof SyntaxError && e.remoteStatsParse === true;
+      if (!(allowCorruptRemote && (isMalformed || e.remoteStatsRepair === true))) throw e;
     }
   } catch (e) {
-    setStatus('error', 'Sync blocked: ' + e.message);
+    if (!(allowCorruptRemote && e.remoteStatsRepair === true)) {
+      setStatus('error', 'Sync blocked: ' + e.message);
+      return false;
+    }
+  }
+  if (new TextEncoder().encode(payload).length >= MAX_SYNC_BYTES) {
+    setStatus('error', "Local progress is still over GitHub Gist's 1 MB sync limit; nothing was written.");
     return false;
   }
   const delays = [2000, 5000, 10000];
@@ -216,8 +236,10 @@ export async function gistLoadStats(options = {}) {
     if (mergeStats(remote)) refreshViews();
     await push(pat, gistId);
   } catch (e) {
-    if (options.allowRepair && e instanceof SyntaxError && e.remoteStatsParse === true) {
-      setStatus('saving', 'Remote JSON is damaged; validating this device progress…');
+    const isMalformed = e instanceof SyntaxError && e.remoteStatsParse === true;
+    const needsRepair = e.remoteStatsRepair === true;
+    if (options.allowRepair && (isMalformed || needsRepair)) {
+      setStatus('saving', 'Remote progress is damaged or truncated; validating this device progress…');
       const ok = await push(pat, gistId, true);
       if (ok) setStatus('ok', 'Synced valid progress from this device');
       return;
