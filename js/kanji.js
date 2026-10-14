@@ -10,6 +10,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { beginGistReviewSession } from './gist-sync.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js';
 import { showView } from './navigation.js';
@@ -773,6 +774,7 @@ export function drillExerciseItem(itemId) {
   }
   if (!targetItem) return;
 
+  beginGistReviewSession();
   state.sessionItems = [{
     ...targetItem,
     exercise_title: targetEx ? targetEx.title_ja : '',
@@ -1031,6 +1033,7 @@ export function startKanjiQuickQuiz() {
     return;
   }
 
+  beginGistReviewSession();
   items.forEach(it => {
     it.options = buildKanjiQuizOptions(it, allItems);
     it.answered = false;

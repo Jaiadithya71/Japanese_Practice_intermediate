@@ -8,6 +8,7 @@
 
 import { state } from './state.js';
 import { updateItemStats, saveStats, getItemStats, updateSidebarStats } from './srs.js';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 
 let activeTestSession = null;
 let activeTestCategory = 'all';
@@ -699,6 +700,7 @@ export function startTestSession(testId, customTest = null) {
     return null;
   }
 
+  beginGistReviewSession();
   activeTestSession = {
     test: target,
     idx: 0,
@@ -1039,6 +1041,8 @@ export function showTestResults() {
       : '<i class="fa-solid fa-circle-xmark"></i> 不合格 (FAIL — Below 60%)';
   }
 
+  endGistReviewSession();
+
   if (resMsg) {
     if (pct >= 85) {
       resMsg.innerHTML = '<span style="color:var(--green); font-weight:700;">合格圏内！ Outstanding mastery.</span>';
@@ -1087,6 +1091,7 @@ export function showTestResults() {
 }
 
 export function exitTestToHub() {
+  endGistReviewSession();
   closeJumpDrawer();
   activeTestSession = null;
   state.activeTestSession = null;

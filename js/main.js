@@ -186,8 +186,8 @@ async function initApp() {
   }
 
   updateSidebarStats();
-  initSyncUI();
   showView('home');
+  initSyncUI();
   console.log('Nihongo Intermediate initialized successfully.');
 }
 

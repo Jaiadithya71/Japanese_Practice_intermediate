@@ -38,7 +38,7 @@
  .mobile-dock-item.active, .mobile-nav-item.active{color:#fff;background:linear-gradient(135deg,rgba(99,102,241,.28),rgba(168,85,247,.16));border-color:rgba(99,102,241,.35)}
  .mobile-dock-item.active i, .mobile-nav-item.active i{color:var(--accent,#6366f1);transform:translateY(-1px) scale(1.08);filter:drop-shadow(0 0 8px rgba(99,102,241,.5))}
  body.in-runner .mobile-dock, body.in-runner .mobile-nav-bar{display:none!important}
- #main{padding:1.25rem 1rem calc(84px + env(safe-area-inset-bottom,10px))!important}
+ body:not(.in-runner) #main{padding-bottom:calc(132px + env(safe-area-inset-bottom,10px))!important;scroll-padding-bottom:calc(132px + env(safe-area-inset-bottom,10px))}
  /* More sheet */
  .more-sheet{display:block;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:2000;opacity:0;pointer-events:none;transition:opacity .2s}
  .more-sheet.open{opacity:1;pointer-events:auto}

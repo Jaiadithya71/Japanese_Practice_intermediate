@@ -12,6 +12,9 @@ import { encodeStats, decodeStatsText } from './stats-codec.js';
 const GIST_FILENAME = 'nihongo-n3-stats.json';
 const PAT_KEY = 'n3_github_pat';
 const GIST_ID_KEY = 'n3_gist_id';
+const DIRTY_KEY = 'n3_gist_dirty';
+const READY_KEY = 'n3_gist_ready';
+const ACTIVE_KEY = 'n3_gist_review_active';
 const MAX_SYNC_BYTES = 1024 * 1024;
 
 function markRemoteRepairRequired(message) {
@@ -21,8 +24,14 @@ function markRemoteRepairRequired(message) {
 }
 const API = 'https://api.github.com';
 
-let saveTimer = null;
-let dirty = false;
+let dirty = localStorage.getItem(DIRTY_KEY) === '1';
+let reviewSessionActive = localStorage.getItem(ACTIVE_KEY) === '1';
+let pushPromise = null;
+let changeRevision = 0;
+
+function isReviewActive() {
+  return reviewSessionActive || localStorage.getItem(ACTIVE_KEY) === '1';
+}
 
 function sanitizeCredential(key) {
   const stored = localStorage.getItem(key);
@@ -45,14 +54,34 @@ function headers(pat, json) {
 }
 
 function setStatus(kind, text) {
+  if (typeof window !== 'undefined') window.__n3SyncStatus = { kind, text };
   const el = document.getElementById('n3sync-status');
   const label = document.getElementById('n3sync-label');
-  if (el) el.className = `n3s-pill n3s-${kind}`;
+  if (el) {
+    el.className = `n3s-pill n3s-${kind}`;
+    el.title = text;
+    el.setAttribute('aria-label', `Gist sync: ${text}`);
+  }
   if (label) label.textContent = text;
+  // The mobile Today header mirrors the desktop pill so connectivity is visible at a glance.
+  const mobileIndicators = ['n3sync-mobile'].map(id => document.getElementById(id)).filter(Boolean);
+  for (const mobile of mobileIndicators) {
+    mobile.classList.remove('n3s-idle', 'n3s-saving', 'n3s-ok', 'n3s-error', 'n3s-pending');
+    mobile.classList.add(`n3s-${kind}`);
+    mobile.title = text;
+    mobile.setAttribute('aria-label', `Gist sync: ${text}`);
+    const mobileLabel = mobile.querySelector('span');
+    const mobileIcon = mobile.querySelector('i');
+    if (mobileLabel) mobileLabel.textContent = ({ idle: 'Sync off', saving: 'Syncing…', ok: 'Synced', error: 'Sync error', pending: 'Pending' })[kind] || 'Sync';
+    if (mobileIcon) {
+      const mobileMap = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation', pending: 'fa-cloud-arrow-up' };
+      mobileIcon.className = `fa-solid ${mobileMap[kind] || 'fa-cloud'}`;
+    }
+  }
   // Icon reflects state: cloud (idle), spinning arrows (working), check (synced), warning (error)
   const icon = el && el.querySelector('i');
   if (icon) {
-    const map = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation' };
+    const map = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation', pending: 'fa-cloud-arrow-up' };
     icon.className = `fa-solid ${map[kind] || 'fa-cloud'}`;
   }
   const info = document.getElementById('n3s-info');
@@ -216,6 +245,17 @@ async function pull(pat, gistId) {
 }
 
 async function push(pat, gistId, allowCorruptRemote = false) {
+  if (pushPromise) {
+    await pushPromise;
+    if (dirty && !isReviewActive() && localStorage.getItem(READY_KEY) === '1') return push(pat, gistId, allowCorruptRemote);
+    return !dirty;
+  }
+  const revision = changeRevision;
+  pushPromise = pushOnce(pat, gistId, allowCorruptRemote, revision);
+  try { return await pushPromise; } finally { pushPromise = null; }
+}
+
+async function pushOnce(pat, gistId, allowCorruptRemote = false, revision = changeRevision) {
   let payload;
   try {
     payload = serializeStats();
@@ -243,15 +283,29 @@ async function push(pat, gistId, allowCorruptRemote = false) {
   const delays = [2000, 5000, 10000];
   for (let i = 0; i <= delays.length; i++) {
     try {
+      if (isReviewActive()) {
+        setStatus('pending', 'Review active · syncs when it ends');
+        return false;
+      }
       const res = await fetch(`${API}/gists/${gistId}`, {
         method: 'PATCH',
         headers: headers(pat, true),
         body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload } } })
       });
       if (res.ok) {
-        dirty = false;
+        if (revision === changeRevision) {
+          dirty = false;
+          localStorage.removeItem(DIRTY_KEY);
+          localStorage.removeItem(READY_KEY);
+        } else {
+          dirty = true;
+          localStorage.setItem(DIRTY_KEY, '1');
+        }
         state.lastSyncTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-        setStatus('ok', `Synced ${state.lastSyncTime}`);
+        setStatus(dirty ? 'pending' : 'ok', dirty ? 'New review changes still pending' : `Synced ${state.lastSyncTime}`);
+        if (dirty && !isReviewActive() && localStorage.getItem(READY_KEY) === '1') {
+          queueMicrotask(() => push(pat, gistId, allowCorruptRemote));
+        }
         return true;
       }
       if (res.status >= 400 && res.status < 500) {
@@ -268,19 +322,51 @@ async function push(pat, gistId, allowCorruptRemote = false) {
   return false;
 }
 
-// Called by saveStats() after every local save. Debounced upload.
+// Local review progress is queued; only an explicit review end or Sync Now writes the Gist.
 export function scheduleGistSave() {
   const { pat, gistId } = creds();
   if (!pat || !gistId) return;
   dirty = true;
-  clearTimeout(saveTimer);
-  setStatus('saving', 'Saving…');
-  saveTimer = setTimeout(() => push(pat, gistId), 15000);
+  changeRevision++;
+  localStorage.setItem(DIRTY_KEY, '1');
+  if (!navigator.onLine) setStatus('pending', 'Offline · saved on this device');
+  else if (isReviewActive()) setStatus('pending', 'Review active · syncs when it ends');
+  else setStatus('pending', 'Sync pending · ends with a review');
+}
+
+export function beginGistReviewSession() {
+  reviewSessionActive = true;
+  if (typeof window !== 'undefined') window.__n3ReviewSessionActive = true;
+  localStorage.setItem(ACTIVE_KEY, '1');
+  localStorage.removeItem(READY_KEY);
+  const { pat, gistId } = creds();
+  if (pat && gistId) setStatus('pending', navigator.onLine ? 'Review active · syncs when it ends' : 'Offline · review changes saved locally');
+}
+
+export async function endGistReviewSession() {
+  if (!reviewSessionActive) return false;
+  reviewSessionActive = false;
+  if (typeof window !== 'undefined') window.__n3ReviewSessionActive = false;
+  localStorage.removeItem(ACTIVE_KEY);
+  const { pat, gistId } = creds();
+  if (!dirty) {
+    if (pat && gistId) setStatus(navigator.onLine ? 'ok' : 'pending', navigator.onLine ? 'Connected · up to date' : 'Offline · last sync may be out of date');
+    return false;
+  }
+  if (!pat || !gistId) return false;
+  localStorage.setItem(READY_KEY, '1');
+  if (!navigator.onLine) {
+    setStatus('pending', 'Offline · sync queued');
+    return false;
+  }
+  setStatus('saving', 'Review ended · syncing…');
+  return gistLoadStats({ forcePush: true });
 }
 
 export async function gistLoadStats(options = {}) {
   const { pat, gistId } = creds();
   if (!pat || !gistId) {
+    setStatus('idle', 'Sync off · saved on this device');
     if (localStorage.getItem(PAT_KEY) === '' || localStorage.getItem(GIST_ID_KEY) === '') {
       setStatus('error', 'Sync settings need attention: re-enter your GitHub token and Gist ID.');
     }
@@ -289,8 +375,19 @@ export async function gistLoadStats(options = {}) {
   try {
     setStatus('saving', 'Syncing…');
     const remote = await pull(pat, gistId);
-    if (mergeStats(remote)) refreshViews();
-    await push(pat, gistId);
+    if (mergeStats(remote)) {
+      refreshViews();
+      dirty = true;
+      changeRevision++;
+      localStorage.setItem(DIRTY_KEY, '1');
+    }
+    if (options.forcePush || (!isReviewActive() && dirty && localStorage.getItem(READY_KEY) === '1')) {
+      await push(pat, gistId, Boolean(options.allowRepair));
+    } else if (dirty) {
+      setStatus('pending', isReviewActive() ? 'Review active · syncs when it ends' : 'Saved locally · waiting for review end');
+    } else {
+      setStatus('ok', 'Connected · up to date');
+    }
   } catch (e) {
     const isMalformed = e instanceof SyntaxError && e.remoteStatsParse === true;
     const needsRepair = e.remoteStatsRepair === true;
@@ -371,6 +468,11 @@ export function closeSyncSetup() {
 export async function connectGist() {
   const patInput = document.getElementById('n3s-pat');
   const err = document.getElementById('n3s-error');
+  if (isReviewActive()) {
+    err.textContent = 'Finish the current review before connecting sync.';
+    err.classList.remove('n3s-hide');
+    return;
+  }
   const pat = patInput.value.trim();
   err.classList.add('n3s-hide');
   if (!pat) {
@@ -422,7 +524,12 @@ export async function connectGist() {
 export async function forceSyncNow() {
   const btn = document.getElementById('n3s-sync-now');
   if (btn) btn.disabled = true;
-  await gistLoadStats({ allowRepair: true });
+  const inReview = isReviewActive();
+  if (inReview) {
+    setStatus('pending', 'Review active · syncs when it ends');
+  } else {
+    await gistLoadStats({ allowRepair: true, forcePush: true });
+  }
   if (btn) btn.disabled = false;
 }
 
@@ -430,30 +537,36 @@ export function disconnectGist() {
   if (!confirm('Disconnect sync? Progress on this device stays; nothing is deleted.')) return;
   localStorage.removeItem(PAT_KEY);
   localStorage.removeItem(GIST_ID_KEY);
-  clearTimeout(saveTimer);
-  setStatus('idle', 'Saved on this device');
+  dirty = false;
+  reviewSessionActive = false;
+  if (typeof window !== 'undefined') window.__n3ReviewSessionActive = false;
+  localStorage.removeItem(ACTIVE_KEY);
+  localStorage.removeItem(DIRTY_KEY);
+  localStorage.removeItem(READY_KEY);
+  setStatus('idle', 'Sync off · saved on this device');
   closeSyncSetup();
 }
 
 export function initSyncUI() {
   const { pat, gistId } = creds();
-  setStatus('idle', pat && gistId ? 'Tap to sync' : 'Saved on this device');
-  window.addEventListener('online', () => { if (dirty) gistLoadStats(); });
-  window.addEventListener('beforeunload', () => {
-    const c = creds();
-    if (dirty && c.pat && c.gistId) {
-      try {
-        const payload = serializeStats();
-        if (new TextEncoder().encode(payload).length >= MAX_SYNC_BYTES) {
-          console.warn('[n3-sync] beforeunload write skipped:', localStatsTooLargeMessage(payload));
-          return;
-        }
-        fetch(`${API}/gists/${c.gistId}`, {
-          method: 'PATCH', keepalive: true, headers: headers(c.pat, true),
-          body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload } } })
-        });
-      } catch (_) {}
-    }
+  setStatus(pat && gistId ? 'saving' : 'idle', pat && gistId ? 'Checking Gist…' : 'Sync off · saved on this device');
+  window.addEventListener('offline', () => {
+    if (creds().pat && creds().gistId) setStatus('pending', dirty ? 'Offline · sync queued' : 'Offline · last sync may be out of date');
   });
+  window.addEventListener('online', () => {
+    const c = creds();
+    if (!c.pat || !c.gistId) return;
+    if (isReviewActive()) { setStatus('pending', 'Review active · syncs when it ends'); return; }
+    if (dirty && localStorage.getItem(READY_KEY) === '1') gistLoadStats({ forcePush: true });
+    else gistLoadStats();
+  });
+  if (pat && gistId && reviewSessionActive) {
+    // A persisted active marker means the prior page ended mid-review; do not mistake that for completion.
+    reviewSessionActive = false;
+    if (typeof window !== 'undefined') window.__n3ReviewSessionActive = false;
+    localStorage.removeItem(ACTIVE_KEY);
+    localStorage.removeItem(READY_KEY);
+    if (dirty) setStatus('pending', 'Review interrupted · saved locally');
+  }
   if (pat && gistId) gistLoadStats();
 }

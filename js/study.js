@@ -6,6 +6,7 @@
 import { state } from './state.js';
 import { updateItemStats, toggleItemHard, getItemStatus, getAllDueItems, formatItemKey } from './srs.js';
 import { showView } from './navigation.js';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 
 export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'home') {
   state.studyMode = mode;
@@ -38,6 +39,7 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
     return;
   }
 
+  beginGistReviewSession();
   // Shuffle pool
   pool.sort(() => Math.random() - 0.5);
 
@@ -81,6 +83,7 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
     return;
   }
 
+  beginGistReviewSession();
   state.studyMode = 'flashcard';
   state.studyIsDrillHard = false;
   state.learnUnit = null;
@@ -108,6 +111,7 @@ export function startLearnNew(unitId, count = 10) {
     alert('No new words left in this unit.');
     return;
   }
+  beginGistReviewSession();
   const pool = words.slice(0, count).map(w => ({
     ...w, type: 'vocab', book: 'vocab', key: `V:${w.id}`, learnNew: true, learned: false
   }));
@@ -652,6 +656,7 @@ function celebrateStudyCompletion() {
 }
 
 function renderStudySummary() {
+  endGistReviewSession();
   const container = document.getElementById('study-card-container');
   if (!container) return;
 
@@ -719,6 +724,7 @@ function renderStudySummary() {
 }
 
 export function exitStudy() {
+  endGistReviewSession();
   showView(state.drillOrigin || 'home');
   resetStudyViewHTML();
 }

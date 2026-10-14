@@ -6,6 +6,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats } from './srs.js';
 import {
   PASSAGE_GENRES,
@@ -330,6 +331,7 @@ export function openReadingLesson(lessonId, options = {}) {
 }
 
 export function closeReadingWorkspace() {
+  endGistReviewSession();
   stopTimer();
   readerRuntime.lesson = null;
   state.activeReadingLesson = null;
@@ -473,6 +475,7 @@ function renderPreviewPhase(container) {
 }
 
 export function startReadingPassage() {
+  beginGistReviewSession();
   readerRuntime.phase = 'read';
   readerRuntime.readStartTime = Date.now();
   startTimer();
@@ -481,6 +484,7 @@ export function startReadingPassage() {
 }
 
 export function skipToQuestions() {
+  beginGistReviewSession();
   stopTimer();
   readerRuntime.phase = 'answer';
   renderWorkspace();
@@ -810,6 +814,7 @@ export function submitQuizAnswers() {
     results
   };
 
+  endGistReviewSession();
   renderWorkspace();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }

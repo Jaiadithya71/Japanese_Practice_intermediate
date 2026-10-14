@@ -12,7 +12,7 @@ if (document.body) document.body.appendChild(el);
 function ok() {
   const main = document.getElementById('main');
   if (!main || busy || window.innerWidth > 900) return false;
-  if (state.currentView === 'study') return false;
+  if (state.currentView === 'study' || window.__n3ReviewSessionActive) return false;
   const ov = document.getElementById('n3s-overlay');
   if (ov && !ov.classList.contains('n3s-hide')) return false;
   const ms = document.getElementById('more-sheet');

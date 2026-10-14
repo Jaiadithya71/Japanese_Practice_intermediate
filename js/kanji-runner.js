@@ -5,6 +5,7 @@
    ======================================================= */
 
 import { state as defaultState } from './state.js';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 import { snapToNextDueSlot } from './time.js';
 import {
   buildWordCard,
@@ -537,6 +538,7 @@ export class KanjiLessonRunner {
       if (this.queueIdx >= this.queue.length) {
         this.currentStage = 'COMPLETE';
         if (this.onSaveStats) this.onSaveStats();
+        endGistReviewSession();
         if (this.onComplete) this.onComplete(this.getSummary());
         return { stageAdvanced: true, nextStage: 'COMPLETE', isComplete: true };
       }
@@ -615,6 +617,7 @@ let activeRunner = null;
  * Launches the interactive S0–S6 Lesson Runner in the browser.
  */
 export function startKanjiRunner(lessonNumber, containerId = 'view-study') {
+  beginGistReviewSession();
   if (typeof window !== 'undefined' && window.showView) window.showView('study');
   activeRunner = createLessonRunner(lessonNumber, {
     db: defaultState,
@@ -967,6 +970,7 @@ function renderRunnerResults(summary) {
 }
 
 export function exitKanjiRunner() {
+  endGistReviewSession();
   activeRunner = null;
   const container = document.getElementById('kanji-runner-container');
   if (container) {
