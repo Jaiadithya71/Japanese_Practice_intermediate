@@ -28,7 +28,6 @@ export function renderChapterChips() {
   }
 
   const isAll = state.selectedVocabChapters.size === 0 || state.vocabChapter === 'all';
-  const isMulti = Boolean(state.vocabMultiSelectMode);
 
   // All button
   const allBtn = document.createElement('button');
@@ -36,15 +35,6 @@ export function renderChapterChips() {
   allBtn.innerHTML = `${isAll ? '<i class="fa-solid fa-check"></i> ' : ''}All`;
   allBtn.onclick = () => selectChapter('all');
   container.appendChild(allBtn);
-
-  // Multi-select toggle button
-  const multiBtn = document.createElement('button');
-  multiBtn.className = `chapter-chip${isMulti ? ' active' : ''}`;
-  multiBtn.style.borderStyle = 'dashed';
-  multiBtn.title = 'Toggle multi-chapter selection mode';
-  multiBtn.innerHTML = `<i class="fa-solid fa-layer-group"></i> Multi: ${isMulti ? 'ON' : 'OFF'}`;
-  multiBtn.onclick = () => toggleVocabMultiSelectMode();
-  container.appendChild(multiBtn);
 
   const chapterKeys = groupKeys();
 
@@ -80,13 +70,8 @@ export function renderChapterChips() {
     chip.title = `${shortLabel}: ${meta.topic_ja || chId} (${words.length} words)`;
     chip.innerHTML = `${checkIcon}${shortLabel}${dot}`;
 
-    chip.onclick = () => {
-      if (isMulti) {
-        selectChapter(chId, 'toggle');
-      } else {
-        selectChapter(chId, 'single');
-      }
-    };
+    // Same as the kanji page: tap chips to add/remove units, All clears the selection
+    chip.onclick = () => selectChapter(chId, 'toggle');
     container.appendChild(chip);
   });
 
