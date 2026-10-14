@@ -67,7 +67,7 @@
  .flashcard{min-height:min(52vh,400px);padding:1.4rem!important;border-radius:22px!important;background:linear-gradient(145deg,#191d27,#1e2230);box-shadow:0 8px 40px rgba(0,0,0,.4)}
  .flashcard.flipped,.flashcard.revealed{border-color:var(--accent);box-shadow:0 8px 40px var(--accent-glow)}
  .card-term-large{font-family:var(--font-display)!important;font-weight:800}
- .grade-controls{grid-template-columns:repeat(4,1fr)!important;gap:.5rem!important}
+ .grade-controls{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.5rem!important}
  .btn-grade{padding:.8rem .2rem!important;border-radius:14px!important;min-height:60px}
  .grade-label{font-size:.8rem!important}.grade-time{font-size:.62rem!important}
 }
