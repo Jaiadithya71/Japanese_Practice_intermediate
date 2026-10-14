@@ -657,7 +657,12 @@ function getRunnerContainer() {
     el = document.createElement('div');
     el.id = 'kanji-runner-container';
     el.className = 'kanji-runner-workspace';
-    parent.innerHTML = '';
+    // Keep the flashcard DOM mounted. The Kanji Quick Quiz reuses it after
+    // returning from this runner, and resetStudyViewHTML needs its container.
+    const header = parent.querySelector('.study-header');
+    const studyCards = document.getElementById('study-card-container');
+    if (header) header.style.display = 'none';
+    if (studyCards) studyCards.style.display = 'none';
     parent.appendChild(el);
   }
   return el;
@@ -964,7 +969,14 @@ function renderRunnerResults(summary) {
 export function exitKanjiRunner() {
   activeRunner = null;
   const container = document.getElementById('kanji-runner-container');
-  if (container) container.remove();
+  if (container) {
+    const parent = container.parentElement;
+    container.remove();
+    const header = parent?.querySelector('.study-header');
+    const studyCards = document.getElementById('study-card-container');
+    if (header) header.style.display = '';
+    if (studyCards) studyCards.style.display = '';
+  }
 
   if (typeof window !== 'undefined') {
     if (window.renderKanjiView) window.renderKanjiView();
