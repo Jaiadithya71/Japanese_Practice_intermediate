@@ -860,7 +860,6 @@ function renderS3RecallUI() {
 
       <div class="kr-prompt-area">
         <div class="kr-prompt-word font-ja">${card.term_ja}</div>
-        <div class="kr-sub-prompt" id="kr-fc-hint"><i class="fa-solid fa-hand-pointer"></i> Tap to flip</div>
       </div>
 
       <div id="kr-fc-back" class="kr-fc-back hide">
