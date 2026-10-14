@@ -78,5 +78,7 @@
 #ptr.ready{color:#818cf8;border-color:rgba(124,108,250,.4)}
 #ptr.ready i{transform:rotate(180deg)}
 #ptr i{transition:transform .2s}
-#ptr.loading i{animation:ptrspin .8s linear infinite}
+#ptr .ptr-ring{display:inline-block;width:16px;height:16px;border:2px solid rgba(129,140,248,.25);border-top-color:#818cf8;border-radius:50%;animation:ptrspin .7s linear infinite;transform:none}
+#ptr.done{color:#34d399;border-color:rgba(52,211,153,.45)}
+#ptr.done i{animation:n3spop .4s ease-out}
 @keyframes ptrspin{to{transform:rotate(360deg)}}
