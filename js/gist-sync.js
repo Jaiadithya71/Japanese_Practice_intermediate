@@ -102,12 +102,22 @@ async function getRemoteContent(pat, gistId) {
   return content;
 }
 
-async function pull(pat, gistId) {
-  const remote = JSON.parse(await getRemoteContent(pat, gistId));
+async function parseRemoteStats(content) {
+  let remote;
+  try {
+    remote = JSON.parse(content);
+  } catch (e) {
+    e.remoteStatsParse = true;
+    throw e;
+  }
   if (!remote || typeof remote !== 'object' || Array.isArray(remote)) {
     throw new Error('Remote progress is not a valid stats object.');
   }
   return remote;
+}
+
+async function pull(pat, gistId) {
+  return parseRemoteStats(await getRemoteContent(pat, gistId));
 }
 
 async function push(pat, gistId, allowCorruptRemote = false) {
@@ -174,7 +184,7 @@ export async function gistLoadStats(options = {}) {
     if (mergeStats(remote)) refreshViews();
     await push(pat, gistId);
   } catch (e) {
-    if (options.allowRepair && e instanceof SyntaxError) {
+    if (options.allowRepair && e instanceof SyntaxError && e.remoteStatsParse === true) {
       setStatus('saving', 'Remote JSON is damaged; validating this device progress…');
       const ok = await push(pat, gistId, true);
       if (ok) setStatus('ok', 'Synced valid progress from this device');
@@ -270,4 +280,5 @@ export function initSyncUI() {
   // beforeunload cannot safely validate remote state, so it never PATCHes.
   if (pat && gistId) gistLoadStats();
 }
+
 
