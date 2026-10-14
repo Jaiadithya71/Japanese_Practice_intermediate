@@ -197,7 +197,6 @@
       <div class="view-header">
         <div class="view-title-group">
           <h2>2. 漢字 (Kanji Master Suite)</h2>
-          <p>新完全マスター 漢字 N3 · 443 Target Characters, Lessons 01–25, Practice Drills &amp; Bessatsu 300 Review</p>
         </div>
         <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;">
           <div class="kanji-dir-selector" style="display: flex; gap: 0.25rem; background: rgba(255,255,255,0.06); padding: 0.2rem; border-radius: 999px; border: 1px solid var(--border);">
@@ -267,27 +266,6 @@
       <div id="kanji-pane-target" class="kanji-view-container">
         <!-- Control Bar -->
         <div class="kanji-control-bar">
-          <div class="kanji-filter-group">
-            <select class="kanji-select" id="kanji-part-select" onchange="setKanjiPart(this.value)">
-              <option value="all">All Parts (1–5)</option>
-              <option value="1">Part 1 (Lessons 1–5)</option>
-              <option value="2">Part 2 (Lessons 6–10)</option>
-              <option value="3">Part 3 (Lessons 11–15)</option>
-              <option value="4">Part 4 (Lessons 16–20)</option>
-              <option value="5">Part 5 (Lessons 21–25)</option>
-            </select>
-            <select class="kanji-select" id="kanji-lesson-select" onchange="setKanjiLesson(this.value)">
-              <option value="all">All Lessons (1–25)</option>
-              <!-- Populated dynamically -->
-            </select>
-            <select class="kanji-select" id="kanji-status-select" onchange="setKanjiFilter(this.value)">
-              <option value="all">All Statuses</option>
-              <option value="mastered">Mastered</option>
-              <option value="learning">Learning</option>
-              <option value="hard">Struggling (Hard)</option>
-              <option value="unseen">Unseen</option>
-            </select>
-          </div>
           <div style="display: flex; gap: 0.75rem; align-items: center;">
             <div class="kanji-search-box">
               <i class="fa-solid fa-magnifying-glass" style="color: var(--text-dim); font-size: 0.85rem;"></i>
@@ -461,7 +439,6 @@
       <div class="view-header">
         <div class="view-title-group">
           <h2>3. 文法 (Grammar Master Suite)</h2>
-          <p>新完全マスター 文法 N3 · 83 Grammar Patterns, Star Problems (★) &amp; Text Passages</p>
         </div>
       </div>
 
