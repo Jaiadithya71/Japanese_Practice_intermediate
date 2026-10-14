@@ -235,10 +235,40 @@ export async function gistLoadStats(options = {}) {
       Authorization: `Bearer ${pat}`,
       Accept: 'application/vnd.github.v3+json'
     });
-    const unauthenticatedGist = await probeResult(`${API}/gists/${gistId}`, {
-      Accept: 'application/vnd.github.v3+json'
-    });
-    const diag = ` [${e.name || 'Error'}: ${e.message || 'unknown'}; Gist ID set; token set; online ${navigator.onLine ? 'yes' : 'no'}; GitHub API no auth ${unauthenticatedApi}; GitHub API auth ${authorizedApi}; Gist no auth ${unauthenticatedGist}]`;
+    let unauthenticatedGist = 'unavailable';
+    let publicGistFile = 'unavailable';
+    try {
+      const publicResponse = await fetch(`${API}/gists/${gistId}`, {
+        headers: { Accept: 'application/vnd.github.v3+json' }
+      });
+      unauthenticatedGist = `HTTP ${publicResponse.status}`;
+      try {
+        const metadata = await publicResponse.json();
+        const file = metadata.files && metadata.files[GIST_FILENAME];
+        publicGistFile = file
+          ? `size ${file.size} bytes; truncated ${Boolean(file.truncated)}`
+          : 'stats file missing';
+      } catch (metadataError) {
+        publicGistFile = `metadata body read failed: ${metadataError.message || metadataError.name || 'unknown'}`;
+      }
+    } catch (publicError) {
+      unauthenticatedGist = `fetch failed (${publicError.name || 'Error'}: ${publicError.message || 'unknown'})`;
+      publicGistFile = 'unavailable';
+    }
+    let authorizedGist = 'unavailable';
+    try {
+      const response = await fetch(`${API}/gists/${gistId}?t=${Date.now()}`, { headers: headers(pat) });
+      authorizedGist = `status read ok (HTTP ${response.status})`;
+      try {
+        const body = await response.text();
+        authorizedGist += `; body read ok (${new TextEncoder().encode(body).length} bytes)`;
+      } catch (bodyError) {
+        authorizedGist += `; body read failed: ${bodyError.message || bodyError.name || 'unknown'}`;
+      }
+    } catch (requestError) {
+      authorizedGist = `request failed: ${requestError.message || requestError.name || 'unknown'}`;
+    }
+    const diag = ` [${e.name || 'Error'}: ${e.message || 'unknown'}; Gist ID set; token set; online ${navigator.onLine ? 'yes' : 'no'}; GitHub API no auth ${unauthenticatedApi}; GitHub API auth ${authorizedApi}; Gist no auth ${unauthenticatedGist}; stats file ${publicGistFile}; Gist auth ${authorizedGist}]`;
     setStatus('error', `Sync error: ${e.message}${diag}`);
   }
 }
