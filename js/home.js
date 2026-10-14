@@ -6,7 +6,7 @@
 import { state } from './state.js';
 import { getWordStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js';
-import { getDay, getCurrentStreak } from './daylog.js';
+import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
 import { renderHeatmapGridHtml } from './today.js';
 import { beginGistReviewSession } from './gist-sync.js';
