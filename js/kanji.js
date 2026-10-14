@@ -13,6 +13,7 @@ import { state } from './state.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js';
 import { showView } from './navigation.js';
+import { getKanjiBreakdownPills } from './kanji-words.js';
 
 // =======================================================
 // 1. MASTER VIEW RENDERER & TAB SWITCHING
@@ -445,6 +446,14 @@ export function drillKanjiHard() {
 }
 
 export function updateKanjiActionButtonLabels() {
+  const runnerBtn = document.getElementById('btn-kanji-runner-action');
+  const selectedLessons = state.kanjiSelectedLessons || new Set();
+  if (runnerBtn) {
+    runnerBtn.disabled = selectedLessons.size !== 1;
+    runnerBtn.title = selectedLessons.size === 1
+      ? 'Start the guided S0-S6 flow for the selected lesson'
+      : 'Select exactly one lesson chip to start the guided lesson';
+  }
   const hardBtn = document.getElementById('btn-kanji-hard-toggle');
   if (hardBtn) {
     const on = Boolean(state.kanjiHardOnly);
@@ -697,7 +706,7 @@ export function selectExerciseOption(itemId, optText) {
     fb.className = `exercise-feedback-box ${isRight ? 'correct' : 'incorrect'}`;
     fb.innerHTML = isRight 
       ? `<strong><i class="fa-solid fa-circle-check"></i> 正解！</strong> ${targetItem.explanation || ''}`
-      : `<strong><i class="fa-solid fa-circle-xmark"></i> 不正解</strong> (正解: ${correctAns}) ${targetItem.explanation || ''}`;
+      : `<strong><i class="fa-solid fa-circle-xmark"></i> 不正解</strong> <div style="margin-top:.35rem;"><b>Correct answer:</b> ${correctAns}</div>${targetItem.explanation ? `<div style="margin-top:.35rem;">${targetItem.explanation}</div>` : ''}`;
   }
 
   // Update SRS
@@ -740,7 +749,7 @@ export function checkExerciseInput(itemId) {
     fb.className = `exercise-feedback-box ${isRight ? 'correct' : 'incorrect'}`;
     fb.innerHTML = isRight 
       ? `<strong><i class="fa-solid fa-circle-check"></i> 正解！</strong> ${targetItem.explanation || ''}`
-      : `<strong><i class="fa-solid fa-circle-xmark"></i> 不正解</strong> (正解: ${correctAns}) ${targetItem.explanation || ''}`;
+      : `<strong><i class="fa-solid fa-circle-xmark"></i> 不正解</strong> <div style="margin-top:.35rem;"><b>Correct answer:</b> ${correctAns}</div>${targetItem.explanation ? `<div style="margin-top:.35rem;">${targetItem.explanation}</div>` : ''}`;
   }
 
   updateItemStats(`K_EX:${itemId}`, isRight ? 3 : 1);
@@ -1150,6 +1159,26 @@ export function answerKanjiQuizOption(idx) {
     btn.disabled = true;
     btn.style.cursor = 'default';
   });
+
+  if (!isCorrect) {
+    const review = document.createElement('div');
+    review.className = 'kanji-quiz-wrong-review';
+    review.style.cssText = 'margin-top:0.85rem;padding:0.85rem 1rem;border:1px solid rgba(239,68,68,.35);border-radius:12px;background:rgba(239,68,68,.08);text-align:left;';
+    review.innerHTML = '<strong style="color:#fca5a5;display:block;margin-bottom:.35rem;">Review this answer</strong>' +
+      '<div class="font-ja" style="font-size:1.35rem;font-weight:800;color:#fff;">' + item.word + '</div>' +
+      '<div style="color:#f472b6;font-weight:700;">' + (item.reading || '') + '</div>' +
+      '<div style="color:var(--text-muted);">' + (item.meaning_en || '') + (item.meaning_zh ? ' · ' + item.meaning_zh : '') + '</div>' +
+      '<div style="font-size:.78rem;color:var(--text-dim);margin-top:.25rem;">Correct choice: ' + item.options.correctValue + '</div>';
+    const breakdown = getKanjiBreakdownPills(item.word, state.kanjiDB);
+    if (breakdown.length) {
+      const pills = document.createElement('div');
+      pills.style.cssText = 'display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem;';
+      pills.innerHTML = breakdown.map(x => '<span style="padding:.2rem .45rem;border-radius:8px;background:rgba(255,255,255,.06);font-size:.78rem;"><b class="font-ja">' + x.kanji + '</b> ' + (x.meaning || '') + '</span>').join('');
+      review.appendChild(pills);
+    }
+    const meaningEl = document.getElementById('card-meaning');
+    if (meaningEl) meaningEl.appendChild(review);
+  }
 
   const correctEl = document.getElementById('session-correct');
   const totalEl = document.getElementById('session-total');
