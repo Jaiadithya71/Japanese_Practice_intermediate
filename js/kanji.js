@@ -10,7 +10,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { getKanjiStatus, toggleKanjiHard, updateItemStats } from './srs.js';
+import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js';
 import { showView } from './navigation.js';
 
@@ -407,7 +407,50 @@ export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDire
   return studyItems;
 }
 
+// Hard-only items: every facet (reading / writing / meaning) that is flagged hard,
+// plus the reading facet of any word whose base kanji is flagged hard (K: key).
+export function buildHardKanjiItems(kanjiList) {
+  const out = [];
+  ['ja-kana', 'kana-ja', 'ja-meaning'].forEach(dir => {
+    buildKanjiStudyItems(kanjiList, dir).forEach(it => {
+      if (it.type === 'kanji') {
+        if (dir === 'ja-kana' && getItemStatus(it.key) === 'hard') out.push(it);
+      } else if (getItemStatus(it.key) === 'hard' ||
+                 (dir === 'ja-kana' && getKanjiStatus(it.baseKanji) === 'hard')) {
+        out.push(it);
+      }
+    });
+  });
+  return out;
+}
+
+function selectedKanjiPool() {
+  const selLessons = state.kanjiSelectedLessons || new Set();
+  const pool = [];
+  for (const char in (state.kanjiDB || {})) {
+    const k = state.kanjiDB[char];
+    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) pool.push(k);
+  }
+  return pool;
+}
+
+export function toggleKanjiHardOnly() {
+  state.kanjiHardOnly = !state.kanjiHardOnly;
+  updateKanjiActionButtonLabels();
+}
+
+export function drillKanjiHard() {
+  state.kanjiHardOnly = true;
+  drillKanjiSelected();
+}
+
 export function updateKanjiActionButtonLabels() {
+  const hardBtn = document.getElementById('btn-kanji-hard-toggle');
+  if (hardBtn) {
+    const on = Boolean(state.kanjiHardOnly);
+    hardBtn.innerHTML = `<i class="fa-solid fa-fire"></i> Hard only: ${on ? 'ON' : 'OFF'}`;
+    hardBtn.style.background = on ? 'rgba(239,68,68,0.22)' : '';
+  }
   const btn = document.getElementById('btn-kanji-drill-action');
   if (!btn) return;
 
@@ -420,7 +463,7 @@ export function updateKanjiActionButtonLabels() {
     }
   }
 
-  const items = buildKanjiStudyItems(pool);
+  const items = state.kanjiHardOnly ? buildHardKanjiItems(pool) : buildKanjiStudyItems(pool);
   const wordsCount = items.length;
 
   let scope = 'All Lessons';
@@ -432,7 +475,7 @@ export function updateKanjiActionButtonLabels() {
     scope = `${selLessons.size} Lessons`;
   }
 
-  btn.innerHTML = `<i class="fa-solid fa-play"></i> Drill ${scope} <span class="badge" style="margin-left: 0.35rem; font-size: 0.72rem; padding: 0.15rem 0.45rem; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 999px;">${wordsCount}w</span>`;
+  btn.innerHTML = `<i class="fa-solid fa-play"></i> Drill ${state.kanjiHardOnly ? 'Hard · ' : ''}${scope} <span class="badge" style="margin-left: 0.35rem; font-size: 0.72rem; padding: 0.15rem 0.45rem; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 999px;">${wordsCount}w</span>`;
 }
 
 export function drillKanjiSelected() {
@@ -451,7 +494,11 @@ export function drillKanjiSelected() {
     return;
   }
 
-  const studyItems = buildKanjiStudyItems(pool);
+  const studyItems = state.kanjiHardOnly ? buildHardKanjiItems(pool) : buildKanjiStudyItems(pool);
+  if (studyItems.length === 0) {
+    alert(state.kanjiHardOnly ? 'No hard kanji in the selected lessons!' : 'No kanji found for the selected lessons!');
+    return;
+  }
   studyItems.sort(() => Math.random() - 0.5);
 
   state.sessionItems = studyItems;
@@ -903,7 +950,6 @@ export function checkMockOption(itemId, selectedIdx, correctAns, explanation) {
 // SRS writes go to the same facet keys (KWR/KWW/KWM) as flashcards.
 // =======================================================
 
-const KANJI_QUIZ_ROUND_SIZE = 25;
 
 export function toggleKanjiAutoNext(checked) {
   state.kanjiAutoNext = Boolean(checked);
@@ -960,10 +1006,18 @@ export function startKanjiQuickQuiz() {
     return;
   }
 
+  // Distractors come from the full selected pool; the round covers EVERY word (or every hard word)
   const allItems = buildKanjiStudyItems(pool).filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en);
-  const items = allItems.slice().sort(() => Math.random() - 0.5).slice(0, KANJI_QUIZ_ROUND_SIZE);
+  const roundSource = state.kanjiHardOnly
+    ? buildHardKanjiItems(pool).filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en)
+    : allItems;
+  if (state.kanjiHardOnly && roundSource.length === 0) {
+    alert('No hard kanji words in the selected lessons!');
+    return;
+  }
+  const items = roundSource.slice().sort(() => Math.random() - 0.5);
 
-  if (items.length < 2) {
+  if (items.length < (state.kanjiHardOnly ? 1 : 2)) {
     alert('Not enough compound words in this selection to quiz!');
     return;
   }
@@ -1131,4 +1185,9 @@ export function nextKanjiQuizCard() {
 function escapeAttr(str) {
   if (!str) return '';
   return str.replace(/'/g, "\\'").replace(/"/g, '&quot;');
+}
+
+if (typeof window !== 'undefined') {
+  window.toggleKanjiHardOnly = toggleKanjiHardOnly;
+  window.drillKanjiHard = drillKanjiHard;
 }
