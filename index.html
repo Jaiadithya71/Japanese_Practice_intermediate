@@ -212,6 +212,9 @@
           <button class="btn btn-primary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()" title="Fast tap-to-answer MCQ drill over the selected lessons" style="background: linear-gradient(135deg, #0ea5e9, #2563eb); border: none;">
             <i class="fa-solid fa-bolt"></i> Quick Quiz
           </button>
+          <button class="btn btn-ghost" id="btn-kanji-hard-toggle" onclick="toggleKanjiHardOnly()" title="Hard only: Drill and Quick Quiz run just the hard kanji/words in the selected lessons" style="border-color: rgba(239,68,68,0.5); color: #f87171;">
+            <i class="fa-solid fa-fire"></i> Hard only: OFF
+          </button>
         </div>
       </div>
 
@@ -356,6 +359,9 @@
           </button>
           <button class="btn btn-primary btn-sm" id="btn-vocab-study-action" onclick="drillVocabSelected()">
             <i class="fa-solid fa-play"></i> Drill Selected Words
+          </button>
+          <button class="btn btn-sm btn-ghost" id="btn-vocab-hard-action" onclick="drillVocabHard()" title="Drill only the hard words in the selected units (all units if none selected)" style="border-color: rgba(239,68,68,0.5); color: #f87171;">
+            <i class="fa-solid fa-fire"></i> Drill Hard
           </button>
         </div>
       </div>
