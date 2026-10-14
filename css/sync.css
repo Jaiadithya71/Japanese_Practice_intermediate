@@ -22,3 +22,5 @@
 }
 
 @media(max-width:900px){body.in-runner #n3sync-mobile{display:none!important}}
+
+@media(max-width:900px){body:has(#view-home.active) #n3sync-mobile{display:none!important}}
