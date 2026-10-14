@@ -799,8 +799,8 @@ export const N3BookPlatform = {
     }
   },
   drillHardKanji: () => {
-    if (typeof window.drillKanjiSelected === 'function') {
-      window.drillKanjiSelected();
+    if (typeof window.drillKanjiHard === 'function') {
+      window.drillKanjiHard();
     } else if (typeof window.startDueReview === 'function') {
       window.startDueReview('kanji');
     }
