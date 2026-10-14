@@ -11,7 +11,7 @@
 
 import { state } from './state.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats } from './srs.js';
-import { startStudy } from './study.js';
+import { startStudy, renderCard } from './study.js';
 import { showView } from './navigation.js';
 
 // =======================================================
@@ -64,7 +64,7 @@ export function setKanjiTab(tab) {
 
 export function setKanjiStudyDirection(dir) {
   state.kanjiStudyDirection = dir;
-  ['ja-kana', 'kana-ja', 'ja-meaning'].forEach(d => {
+  ['ja-kana', 'kana-ja', 'ja-meaning', 'mixed'].forEach(d => {
     const btn = document.getElementById(`kdir-${d}`);
     if (btn) btn.classList.toggle('active', d === dir);
   });
@@ -351,18 +351,22 @@ export function drillKanjiSingle(char) {
   state.isDueReviewMode = false;
   state.drillOrigin = 'kanji';
   showView('study');
+  renderCard();
 }
 
 export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDirection || 'ja-kana') {
   const studyItems = [];
   const seenWords = new Set();
+  const MIXED_DIRS = ['ja-kana', 'kana-ja', 'ja-meaning'];
 
   kanjiList.forEach(k => {
     if (k.words && Array.isArray(k.words) && k.words.length > 0) {
       k.words.forEach(w => {
         const word = (w.term_ja || w.word || k.kanji).trim();
         const reading = (w.reading || (k.kunyomi && k.kunyomi[0]) || (k.onyomi && k.onyomi[0]) || '').trim();
-        const key = direction === 'kana-ja' ? `KWW:${word}` : (direction === 'ja-meaning' ? `KWM:${word}` : `KWR:${word}`);
+        // 'mixed' picks a random direction per card, so each facet keeps its own SRS key
+        const dir = direction === 'mixed' ? MIXED_DIRS[Math.floor(Math.random() * MIXED_DIRS.length)] : direction;
+        const key = dir === 'kana-ja' ? `KWW:${word}` : (dir === 'ja-meaning' ? `KWM:${word}` : `KWR:${word}`);
 
         if (word && !seenWords.has(word)) {
           seenWords.add(word);
@@ -378,7 +382,7 @@ export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDire
             meaning_zh: w.meaning_zh || '',
             onyomi: k.onyomi || [],
             kunyomi: k.kunyomi || [],
-            direction: direction,
+            direction: dir,
             key: key
           });
         }
@@ -727,6 +731,7 @@ export function drillExerciseItem(itemId) {
   state.isDueReviewMode = false;
   state.drillOrigin = 'kanji';
   showView('study');
+  renderCard();
 }
 
 // =======================================================
@@ -889,6 +894,238 @@ export function checkMockOption(itemId, selectedIdx, correctAns, explanation) {
   }
 
   updateItemStats(`K_MOCK:${itemId}`, isRight ? 3 : 1);
+}
+
+// =======================================================
+// 8. QUICK QUIZ (MCQ FAST-REVISION DRILL)
+// Elementary-app speed pattern: tap-to-answer options,
+// auto-next on correct, mixed direction, same-lesson distractors.
+// SRS writes go to the same facet keys (KWR/KWW/KWM) as flashcards.
+// =======================================================
+
+const KANJI_QUIZ_ROUND_SIZE = 25;
+
+export function toggleKanjiAutoNext(checked) {
+  state.kanjiAutoNext = Boolean(checked);
+  try { localStorage.setItem('n3_kanji_auto_next', checked ? 'true' : 'false'); } catch (e) {}
+}
+
+function isKanjiAutoNextOn() {
+  if (typeof state.kanjiAutoNext === 'boolean') return state.kanjiAutoNext;
+  try { state.kanjiAutoNext = localStorage.getItem('n3_kanji_auto_next') === 'true'; } catch (e) { state.kanjiAutoNext = false; }
+  return state.kanjiAutoNext;
+}
+
+function quizValueOf(it, dir) {
+  if (dir === 'kana-ja') return it.word;
+  if (dir === 'ja-meaning') return it.meaning_en;
+  return it.reading;
+}
+
+function buildKanjiQuizOptions(item, allItems) {
+  const dir = item.direction;
+  const correct = quizValueOf(item, dir);
+  const seen = new Set([correct]);
+  const distractors = [];
+  const pickFrom = (list) => {
+    const cands = list.slice().sort(() => Math.random() - 0.5);
+    for (const c of cands) {
+      if (distractors.length >= 3) break;
+      const v = quizValueOf(c, dir);
+      if (v && !seen.has(v)) {
+        seen.add(v);
+        distractors.push(v);
+      }
+    }
+  };
+  // Same-lesson distractors first (harder, more plausible), then the wider pool
+  pickFrom(allItems.filter(x => x !== item && x.lesson_number === item.lesson_number));
+  pickFrom(allItems.filter(x => x !== item && x.lesson_number !== item.lesson_number));
+  const values = [correct, ...distractors].sort(() => Math.random() - 0.5);
+  return { values, correctValue: correct };
+}
+
+export function startKanjiQuickQuiz() {
+  const selLessons = state.kanjiSelectedLessons || new Set();
+  const pool = [];
+  for (const char in (state.kanjiDB || {})) {
+    const k = state.kanjiDB[char];
+    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) {
+      pool.push(k);
+    }
+  }
+
+  if (pool.length === 0) {
+    alert('No kanji found for the selected lessons!');
+    return;
+  }
+
+  const allItems = buildKanjiStudyItems(pool).filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en);
+  const items = allItems.slice().sort(() => Math.random() - 0.5).slice(0, KANJI_QUIZ_ROUND_SIZE);
+
+  if (items.length < 2) {
+    alert('Not enough compound words in this selection to quiz!');
+    return;
+  }
+
+  items.forEach(it => {
+    it.options = buildKanjiQuizOptions(it, allItems);
+    it.answered = false;
+  });
+
+  state.sessionItems = items;
+  state.sessionIdx = 0;
+  state.sessionRight = 0;
+  state.sessionTotalAnswered = 0;
+  state.sessionTotalInitial = items.length;
+  state.sessionTotal = items.length;
+  state.sessionSkipped = 0;
+  state.cardFlipped = false;
+  state.studyMode = 'kanji_quiz';
+  state.studyIsDrillHard = false;
+  state.isDueReviewMode = false;
+  state.drillOrigin = 'kanji';
+  state.learnUnit = null;
+
+  showView('study');
+  renderCard();
+}
+
+export function renderKanjiQuizCard(item) {
+  if (state._kanjiQuizTimer) {
+    clearTimeout(state._kanjiQuizTimer);
+    state._kanjiQuizTimer = null;
+  }
+
+  const lessonTag = document.getElementById('card-lesson-tag');
+  const termEl = document.getElementById('card-term');
+  const meaningEl = document.getElementById('card-meaning');
+  const exBox = document.getElementById('card-example-box');
+  const hint = document.getElementById('card-controls-hint');
+  const gradeControls = document.getElementById('grade-controls');
+
+  if (exBox) exBox.style.display = 'none';
+  if (gradeControls) gradeControls.style.display = 'none';
+
+  const dir = item.direction || 'ja-kana';
+  const dirBadge = dir === 'kana-ja'
+    ? '<span class="badge badge-cyan" style="font-size: 0.78rem;">表記 (Kana → Kanji)</span>'
+    : (dir === 'ja-meaning'
+      ? '<span class="badge" style="background: rgba(236,72,153,0.18); border: 1px solid #ec4899; color: #f472b6; font-size: 0.78rem; font-weight: 700;">意味 (Kanji → English)</span>'
+      : '<span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)</span>');
+
+  if (lessonTag) lessonTag.textContent = `Quick Quiz · 漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
+
+  if (dir === 'ja-kana') {
+    termEl.innerHTML = `
+      <div>
+        <div style="font-size: 3.4rem; font-family: var(--font-jp); font-weight: 800; color: #fff; letter-spacing: 0.05em;">${item.word}</div>
+        <div style="margin-top: 0.75rem;">${dirBadge}</div>
+      </div>`;
+  } else if (dir === 'kana-ja') {
+    termEl.innerHTML = `
+      <div>
+        <div style="font-size: 3rem; font-family: var(--font-jp); font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">${item.reading}</div>
+        <div style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.5rem;">${item.meaning_en || ''}</div>
+        <div style="margin-top: 0.75rem;">${dirBadge}</div>
+      </div>`;
+  } else {
+    termEl.innerHTML = `
+      <div>
+        <div style="font-size: 3.2rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">${item.word}</div>
+        <div style="color: #f472b6; font-size: 1.15rem; font-family: var(--font-jp); margin-top: 0.4rem;">（${item.reading}）</div>
+        <div style="margin-top: 0.75rem;">${dirBadge}</div>
+      </div>`;
+  }
+
+  const optsHtml = item.options.values.map((v, i) => `
+    <button class="kanji-quiz-opt" data-idx="${i}" onclick="event.stopPropagation(); answerKanjiQuizOption(${i})"
+      style="padding: 0.7rem 1rem; border-radius: 10px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: #fff; font-size: 1.05rem; cursor: pointer; text-align: left; width: 100%; ${dir === 'ja-meaning' ? '' : 'font-family: var(--font-jp);'}">
+      <strong style="color: var(--text-dim); margin-right: 0.5rem;">${i + 1}.</strong>${v}
+    </button>
+  `).join('');
+
+  meaningEl.innerHTML = `
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; width: 100%; max-width: 420px; margin-left: auto; margin-right: auto;">
+      ${optsHtml}
+    </div>`;
+  meaningEl.style.color = 'var(--text)';
+
+  if (hint) {
+    hint.style.display = 'block';
+    hint.innerHTML = `
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; width: 100%; padding: 0 0.25rem;" onclick="event.stopPropagation()">
+        <label style="display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.78rem; color: var(--text-dim); cursor: pointer; user-select: none;">
+          <input type="checkbox" id="kq-toggle-auto-next" ${isKanjiAutoNextOn() ? 'checked' : ''} onchange="toggleKanjiAutoNext(this.checked)" style="cursor: pointer;">
+          <span><i class="fa-solid fa-bolt"></i> Auto-next on correct</span>
+        </label>
+        <button class="btn btn-primary btn-sm" id="kq-btn-next" onclick="event.stopPropagation(); nextKanjiQuizCard()" style="visibility: hidden;">
+          Next <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>`;
+  }
+}
+
+export function answerKanjiQuizOption(idx) {
+  if (state.studyMode !== 'kanji_quiz') return;
+  const item = state.sessionItems[state.sessionIdx];
+  if (!item || item.answered || !item.options) return;
+  item.answered = true;
+
+  const chosen = item.options.values[idx];
+  const isCorrect = chosen === item.options.correctValue;
+
+  // Facet-split SRS: write to the same key the flashcard drill uses
+  updateItemStats(item.key, isCorrect ? 3 : 1);
+
+  state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
+  if (isCorrect) {
+    state.sessionRight = (state.sessionRight || 0) + 1;
+  }
+
+  document.querySelectorAll('.kanji-quiz-opt').forEach(btn => {
+    const btnIdx = Number(btn.getAttribute('data-idx'));
+    const v = item.options.values[btnIdx];
+    if (v === item.options.correctValue) {
+      btn.style.borderColor = 'var(--green)';
+      btn.style.background = 'rgba(34, 197, 94, 0.18)';
+    } else if (btnIdx === idx) {
+      btn.style.borderColor = 'var(--red)';
+      btn.style.background = 'rgba(239, 68, 68, 0.18)';
+    }
+    btn.disabled = true;
+    btn.style.cursor = 'default';
+  });
+
+  const correctEl = document.getElementById('session-correct');
+  const totalEl = document.getElementById('session-total');
+  if (correctEl) correctEl.textContent = state.sessionRight;
+  if (totalEl) totalEl.textContent = state.sessionTotalAnswered;
+
+  if (!isCorrect) {
+    // Missed cards re-queue +3 down the deck, mirroring gradeCard's Again handling
+    const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
+    state.sessionItems.splice(insertAt, 0, { ...item, answered: false });
+  }
+
+  if (isCorrect && isKanjiAutoNextOn()) {
+    if (state._kanjiQuizTimer) clearTimeout(state._kanjiQuizTimer);
+    state._kanjiQuizTimer = setTimeout(() => nextKanjiQuizCard(), 750);
+  } else {
+    const nextBtn = document.getElementById('kq-btn-next');
+    if (nextBtn) nextBtn.style.visibility = 'visible';
+  }
+}
+
+export function nextKanjiQuizCard() {
+  if (state.studyMode !== 'kanji_quiz') return;
+  if (state._kanjiQuizTimer) {
+    clearTimeout(state._kanjiQuizTimer);
+    state._kanjiQuizTimer = null;
+  }
+  state.sessionIdx++;
+  state.cardFlipped = false;
+  renderCard();
 }
 
 function escapeAttr(str) {
