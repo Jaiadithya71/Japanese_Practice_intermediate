@@ -491,8 +491,6 @@ export function renderToday() {
 
       ${classCardHtml}
 
-
-
       <!-- 4. Today's Plan Checklist -->
       <div class="today-card today-plan-card">
         <div class="today-card-header">
