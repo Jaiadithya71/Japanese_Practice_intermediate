@@ -195,9 +195,8 @@ export function renderCard() {
         </div>
       `;
       if (exBox) exBox.style.display = 'none';
-      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal correct answer & rationale';
       document.getElementById('grade-controls').style.display = 'none';
-      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('card-controls-hint').style.display = 'none';
     } else {
       termEl.innerHTML = `
         <div style="font-size: 1.15rem; text-align: left; line-height: 1.6;">
@@ -241,8 +240,7 @@ export function renderCard() {
         meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal Kanji</span>`;
       }
       if (exBox) exBox.style.display = 'none';
-      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal';
-      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('card-controls-hint').style.display = 'none';
       document.getElementById('grade-controls').style.display = 'none';
     } else {
       const onStr = (item.onyomi || []).join('、 ');
@@ -290,8 +288,7 @@ export function renderCard() {
         meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal correct reading &amp; answer</span>`;
       }
       if (exBox) exBox.style.display = 'none';
-      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal answer';
-      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('card-controls-hint').style.display = 'none';
       document.getElementById('grade-controls').style.display = 'none';
     } else {
       const ans = item.answer || item.reading || (item.answers ? item.answers.join(', ') : '');
@@ -373,8 +370,7 @@ export function renderCard() {
       }
 
       if (exBox) exBox.style.display = 'none';
-      document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal';
-      document.getElementById('card-controls-hint').style.display = 'block';
+      document.getElementById('card-controls-hint').style.display = 'none';
       document.getElementById('grade-controls').style.display = 'none';
     } else {
       // Detailed Back / Revealed view (Full breakdown)
@@ -447,8 +443,7 @@ export function renderCard() {
       meaningEl.style.color = 'var(--text-dim)';
       if (exBox) exBox.style.display = 'none';
     }
-    document.getElementById('card-controls-hint').innerHTML = '<i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal';
-    document.getElementById('card-controls-hint').style.display = 'block';
+    document.getElementById('card-controls-hint').style.display = 'none';
     document.getElementById('grade-controls').style.display = 'none';
   } else {
     if (state.studyDirection === 'ja-en') {
@@ -613,9 +608,7 @@ export function resetStudyViewHTML() {
           </div>
         </div>
 
-        <div class="flashcard-bottom" id="card-controls-hint">
-          <i class="fa-solid fa-hand-pointer"></i> Tap card or press Space to reveal
-        </div>
+        <div class="flashcard-bottom" id="card-controls-hint" style="display: none;"></div>
       </div>
     </div>
   `;
