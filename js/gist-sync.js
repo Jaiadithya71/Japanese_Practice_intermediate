@@ -16,8 +16,18 @@ const API = 'https://api.github.com';
 let saveTimer = null;
 let dirty = false;
 
+function sanitizeCredential(key) {
+  const stored = localStorage.getItem(key);
+  if (stored == null) return null;
+  // Header values must be Latin-1 and free of control characters. IDs/tokens
+  // are ASCII; strip all whitespace/control/non-ASCII characters from pasted values.
+  const cleaned = stored.replace(/[\s\x00-\x1F\x7F-\uFFFF]/g, '');
+  if (cleaned !== stored) localStorage.setItem(key, cleaned);
+  return cleaned;
+}
+
 function creds() {
-  return { pat: localStorage.getItem(PAT_KEY), gistId: localStorage.getItem(GIST_ID_KEY) };
+  return { pat: sanitizeCredential(PAT_KEY), gistId: sanitizeCredential(GIST_ID_KEY) };
 }
 
 function headers(pat, json) {
@@ -194,7 +204,12 @@ export function scheduleGistSave() {
 
 export async function gistLoadStats(options = {}) {
   const { pat, gistId } = creds();
-  if (!pat || !gistId) return;
+  if (!pat || !gistId) {
+    if (localStorage.getItem(PAT_KEY) === '' || localStorage.getItem(GIST_ID_KEY) === '') {
+      setStatus('error', 'Sync settings need attention: re-enter your GitHub token and Gist ID.');
+    }
+    return;
+  }
   try {
     setStatus('saving', 'Syncing…');
     const remote = await pull(pat, gistId);
@@ -309,7 +324,3 @@ export function initSyncUI() {
   });
   if (pat && gistId) gistLoadStats();
 }
-
-
-
-
