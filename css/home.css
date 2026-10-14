@@ -250,3 +250,4 @@
 
 .home-heatmap-legend{display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:.3rem;color:var(--text-dim);font-size:.65rem}.home-heatmap-legend .heatmap-cell{width:11px;height:11px;min-height:11px}.home-activity-heatmap .heatmap-cell.level-5,.home-heatmap-legend .level-5{background:#a3e635;box-shadow:0 0 7px rgba(163,230,53,.55)}
 @media(max-width:600px){.home-activity-heatmap .heatmap-weekdays,.home-activity-heatmap .heatmap-cells-grid{grid-template-columns:repeat(7,18px);justify-content:start;gap:4px}.home-activity-heatmap .heatmap-cell{width:18px;height:18px;min-height:0;aspect-ratio:1}}
+@media(max-width:600px){#home-activity-heatmap .heatmap-weekdays,#home-activity-heatmap .heatmap-cells-grid{display:grid!important;grid-template-columns:repeat(7,18px)!important;justify-content:start!important;gap:4px!important}#home-activity-heatmap .heatmap-cell{width:18px!important;height:18px!important;min-height:0!important;aspect-ratio:1!important}}
