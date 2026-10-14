@@ -290,7 +290,6 @@ export function renderToday() {
           <span class="badge badge-amber"><i class="fa-solid fa-calendar-check"></i> Sunday Weekly Check</span>
           <span class="weekly-title">7-Day Cumulative Test</span>
         </div>
-        <p class="weekly-sub">20 questions sampled from this week's material to test real retention beyond SRS.</p>
         <button class="btn btn-primary btn-sm" onclick="startTestSession('weekly')">Start Weekly Check (20 Qs)</button>
       </div>
     `;
@@ -488,9 +487,12 @@ export function renderToday() {
       <!-- 3.5 Class Track Widget -->
       ${classCardHtml}
 
-      <!-- 3.5 Class Track Widget -->
-      ${classCardHtml}
-
+      <!-- 3.5 Class Track Widget -->
+
+      ${classCardHtml}
+
+
+
       <!-- 4. Today's Plan Checklist -->
       <div class="today-card today-plan-card">
         <div class="today-card-header">
