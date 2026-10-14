@@ -600,8 +600,11 @@ function renderStudySummary() {
       </div>
     </div>
   `;
-  document.getElementById('grade-controls').style.display = 'none';
-  document.getElementById('card-controls-hint').style.display = 'none';
+  // card-controls-hint lives inside the container we just replaced - guard both
+  const gradeControlsEl = document.getElementById('grade-controls');
+  if (gradeControlsEl) gradeControlsEl.style.display = 'none';
+  const controlsHintEl = document.getElementById('card-controls-hint');
+  if (controlsHintEl) controlsHintEl.style.display = 'none';
 }
 
 export function exitStudy() {
