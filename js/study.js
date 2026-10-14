@@ -156,6 +156,11 @@ export function renderCard() {
     return;
   }
 
+  // After a summary screen the flashcard DOM is gone - rebuild it before rendering
+  if (!document.getElementById('card-term')) {
+    resetStudyViewHTML();
+  }
+
   const item = state.sessionItems[state.sessionIdx];
   const itemKey = formatItemKey(item);
   const isHard = getItemStatus(itemKey) === 'hard';
