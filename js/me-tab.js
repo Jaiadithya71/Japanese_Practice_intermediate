@@ -710,7 +710,6 @@ export function renderStatsSegment() {
       <div class="stats-header-group">
         <div>
           <h2 class="stats-main-title">Pillar Mastery &amp; Study Stats</h2>
-          <p class="stats-main-sub">Cross-pillar retention progress and 30-day activity tracking.</p>
         </div>
         <!-- Streak Badge -->
         <div class="streak-badge-card" title="Consecutive active study days">
@@ -968,7 +967,6 @@ export function renderSettingsSegment() {
       <!-- Section Header -->
       <div class="settings-header-group">
         <h2 class="settings-main-title">Settings &amp; Data Management</h2>
-        <p class="settings-main-sub">Target exam deadlines, daily pacing, and local data protection.</p>
       </div>
 
       <!-- 1. Exam Target Date Picker -->
@@ -1588,4 +1586,4 @@ if (typeof window !== 'undefined') {
   window.triggerImportBackup = triggerImportBackup;
   window.handleBackupFileSelected = handleBackupFileSelected;
   window.snapshotAndReset = snapshotAndReset;
-}
+      }
