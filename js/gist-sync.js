@@ -72,22 +72,78 @@ function refreshViews() {
   }
 }
 
-async function pull(pat, gistId) {
+function serializeStats() {
+  if (!state.stats || typeof state.stats !== 'object' || Array.isArray(state.stats)) {
+    throw new Error('Local progress is not a valid stats object; nothing was written.');
+  }
+  const content = JSON.stringify(state.stats, null, 2);
+  const parsed = JSON.parse(content);
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+    throw new Error('Local progress did not serialize to a valid stats object; nothing was written.');
+  }
+  return content;
+}
+
+async function getRemoteContent(pat, gistId) {
   const res = await fetch(`${API}/gists/${gistId}?t=${Date.now()}`, { headers: headers(pat) });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const gist = await res.json();
-  const content = gist.files && gist.files[GIST_FILENAME] && gist.files[GIST_FILENAME].content;
-  return content ? JSON.parse(content) : {};
+  const file = gist.files && gist.files[GIST_FILENAME];
+  if (!file) throw new Error('The progress file is missing from the Gist; nothing was written.');
+  let content = file.content;
+  if (file.truncated && file.raw_url) {
+    const raw = await fetch(file.raw_url, { headers: headers(pat) });
+    if (!raw.ok) throw new Error(`Could not read full remote progress (HTTP ${raw.status}); nothing was written.`);
+    content = await raw.text();
+  }
+  if (typeof content !== 'string' || !content.length) {
+    throw new Error('The remote progress file is empty or unavailable; nothing was written.');
+  }
+  return content;
 }
 
-async function push(pat, gistId) {
+async function parseRemoteStats(content) {
+  let remote;
+  try {
+    remote = JSON.parse(content);
+  } catch (e) {
+    e.remoteStatsParse = true;
+    throw e;
+  }
+  if (!remote || typeof remote !== 'object' || Array.isArray(remote)) {
+    throw new Error('Remote progress is not a valid stats object.');
+  }
+  return remote;
+}
+
+async function pull(pat, gistId) {
+  return parseRemoteStats(await getRemoteContent(pat, gistId));
+}
+
+async function push(pat, gistId, allowCorruptRemote = false) {
+  let payload;
+  try {
+    payload = serializeStats();
+    const wrapped = JSON.stringify({ files: { [GIST_FILENAME]: { content: payload } } });
+    JSON.parse(wrapped);
+    const remoteContent = await getRemoteContent(pat, gistId);
+    try {
+      const remote = JSON.parse(remoteContent);
+      if (!remote || typeof remote !== 'object' || Array.isArray(remote)) throw new Error('Remote progress is not a valid stats object.');
+    } catch (e) {
+      if (!(allowCorruptRemote && e instanceof SyntaxError && e.remoteStatsParse === true)) throw e;
+    }
+  } catch (e) {
+    setStatus('error', 'Sync blocked: ' + e.message);
+    return false;
+  }
   const delays = [2000, 5000, 10000];
   for (let i = 0; i <= delays.length; i++) {
     try {
       const res = await fetch(`${API}/gists/${gistId}`, {
         method: 'PATCH',
         headers: headers(pat, true),
-        body: JSON.stringify({ files: { [GIST_FILENAME]: { content: JSON.stringify(state.stats, null, 2) } } })
+        body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload } } })
       });
       if (res.ok) {
         dirty = false;
@@ -119,7 +175,7 @@ export function scheduleGistSave() {
   saveTimer = setTimeout(() => push(pat, gistId), 15000);
 }
 
-export async function gistLoadStats() {
+export async function gistLoadStats(options = {}) {
   const { pat, gistId } = creds();
   if (!pat || !gistId) return;
   try {
@@ -128,6 +184,12 @@ export async function gistLoadStats() {
     if (mergeStats(remote)) refreshViews();
     await push(pat, gistId);
   } catch (e) {
+    if (options.allowRepair && e instanceof SyntaxError && e.remoteStatsParse === true) {
+      setStatus('saving', 'Remote JSON is damaged; validating this device progress…');
+      const ok = await push(pat, gistId, true);
+      if (ok) setStatus('ok', 'Synced valid progress from this device');
+      return;
+    }
     setStatus('error', `Sync error: ${e.message}`);
   }
 }
@@ -199,7 +261,7 @@ export async function connectGist() {
 export async function forceSyncNow() {
   const btn = document.getElementById('n3s-sync-now');
   if (btn) btn.disabled = true;
-  await gistLoadStats();
+  await gistLoadStats({ allowRepair: true });
   if (btn) btn.disabled = false;
 }
 
@@ -229,4 +291,5 @@ export function initSyncUI() {
   });
   if (pat && gistId) gistLoadStats();
 }
+
 
