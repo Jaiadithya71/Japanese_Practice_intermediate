@@ -222,14 +222,23 @@ export async function gistLoadStats(options = {}) {
       if (ok) setStatus('ok', 'Synced valid progress from this device');
       return;
     }
-    let apiReachability = 'unavailable';
-    try {
-      const probe = await fetch(`${API}/rate_limit`, { headers: { Accept: 'application/vnd.github.v3+json' } });
-      apiReachability = `HTTP ${probe.status}`;
-    } catch (probeError) {
-      apiReachability = `fetch failed (${probeError.name || 'Error'})`;
-    }
-    const diag = ` [${e.name || 'Error'}; Gist ID ${localStorage.getItem(GIST_ID_KEY) ? 'set' : 'unset'}; token ${localStorage.getItem(PAT_KEY) ? 'set' : 'unset'}; online ${navigator.onLine ? 'yes' : 'no'}; GitHub API ${apiReachability}]`;
+    const probeResult = async (url, headers = {}) => {
+      try {
+        const probe = await fetch(url, { headers });
+        return `HTTP ${probe.status}`;
+      } catch (probeError) {
+        return `fetch failed (${probeError.name || 'Error'}: ${probeError.message || 'unknown'})`;
+      }
+    };
+    const unauthenticatedApi = await probeResult(`${API}/rate_limit`, { Accept: 'application/vnd.github.v3+json' });
+    const authorizedApi = await probeResult(`${API}/rate_limit`, {
+      Authorization: `Bearer ${pat}`,
+      Accept: 'application/vnd.github.v3+json'
+    });
+    const unauthenticatedGist = await probeResult(`${API}/gists/${gistId}`, {
+      Accept: 'application/vnd.github.v3+json'
+    });
+    const diag = ` [${e.name || 'Error'}: ${e.message || 'unknown'}; Gist ID set; token set; online ${navigator.onLine ? 'yes' : 'no'}; GitHub API no auth ${unauthenticatedApi}; GitHub API auth ${authorizedApi}; Gist no auth ${unauthenticatedGist}]`;
     setStatus('error', `Sync error: ${e.message}${diag}`);
   }
 }
