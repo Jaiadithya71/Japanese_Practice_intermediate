@@ -1586,4 +1586,4 @@ if (typeof window !== 'undefined') {
   window.triggerImportBackup = triggerImportBackup;
   window.handleBackupFileSelected = handleBackupFileSelected;
   window.snapshotAndReset = snapshotAndReset;
-      }
+}
