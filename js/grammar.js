@@ -164,7 +164,6 @@ export function renderGrammarDrills() {
 
       <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem;">
         <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">${currentSec.title} 練習問題</h3>
-        <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1.25rem;">Select the most appropriate option to complete each sentence.</p>
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
           ${drills.map((drill, idx) => {
@@ -244,7 +243,6 @@ export function renderGrammarStarProblems() {
     <div style="display: flex; flex-direction: column; gap: 1.5rem;">
       <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem;">
         <h3 style="font-size: 1.15rem; color: #fff; margin-bottom: 0.5rem;">第2部 文の組み立て (★に入るものはどれか)</h3>
-        <p style="color: var(--text-dim); font-size: 0.85rem; margin-bottom: 1.25rem;">Scrambled sentence composition: choose the item that correctly fills the star position (★).</p>
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
           ${sections.flatMap(s => (s.drills || [])).slice(0, 30).map((drill, idx) => {
