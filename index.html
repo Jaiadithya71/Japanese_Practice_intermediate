@@ -159,31 +159,12 @@
         </div>
       </div>
 
-      <!-- Quick Vocabulary Practice Units -->
-      <div class="view-header" style="margin-bottom: 1rem;">
-        <div class="view-title-group">
-          <h3 style="font-size: 1.3rem; color: #fff;">Vocabulary Units Practice</h3>
+      <div class="home-vocab-action" style="display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:-1rem 0 1.5rem; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:14px; background:var(--surface);">
+        <div>
+          <strong style="color:#fff;">Vocabulary</strong>
+          <div style="font-size:0.85rem; color:var(--text-dim);">Choose a unit and start studying</div>
         </div>
-        <div style="display: flex; gap: 0.5rem;">
-          <button class="btn btn-sm btn-ghost" onclick="selectAllChaptersInGroup()">Select All</button>
-          <button class="btn btn-sm btn-ghost" onclick="clearChapterSelection()">Clear</button>
-          <button class="btn btn-sm btn-primary" id="btn-start-selected-study" onclick="startStudy('flashcard', false, 'home')">
-            <i class="fa-solid fa-play"></i> Study Selected
-          </button>
-        </div>
-      </div>
-
-      <div class="group-tabs">
-        <button class="group-tab active" id="home-tab-topic" onclick="setHomeGroup('topic')">
-          <i class="fa-solid fa-layer-group"></i> Part 1: Topics (Ch 1–21)
-        </button>
-        <button class="group-tab" id="home-tab-char" onclick="setHomeGroup('characteristics')">
-          <i class="fa-solid fa-wand-magic-sparkles"></i> Part 2: Characteristics (Ch 1–8)
-        </button>
-      </div>
-
-      <div class="lesson-grid" id="home-lesson-grid">
-        <!-- Rendered dynamically by home.js -->
+        <button class="btn btn-primary" onclick="showView('vocab')"><i class="fa-solid fa-arrow-right"></i> Open units</button>
       </div>
     </section>
     </div>
