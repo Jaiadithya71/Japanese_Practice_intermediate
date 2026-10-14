@@ -904,22 +904,18 @@
       </div>
 
       <!-- Grading Actions -->
-      <div class="grade-controls" id="grade-controls" style="display: none;">
-        <button class="btn-grade grade-again" onclick="gradeCard(1)">
-          <span class="grade-label">Again [1]</span>
-          <span class="grade-time">Reset & Review</span>
+      <div class="grade-controls" id="grade-controls" style="display: none; gap: 0.5rem;">
+        <button class="btn-grade grade-again" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#f87171; border-color:#f8717155;" onclick="gradeCard(1)">
+          <span class="grade-label">Again</span>
         </button>
-        <button class="btn-grade grade-hard" onclick="gradeCard(2)">
-          <span class="grade-label">Hard [2]</span>
-          <span class="grade-time">Shorter interval</span>
+        <button class="btn-grade grade-hard" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#fbbf24; border-color:#fbbf2455;" onclick="gradeCard(2)">
+          <span class="grade-label">Hard</span>
         </button>
-        <button class="btn-grade grade-good" onclick="gradeCard(3)">
-          <span class="grade-label">Good [3]</span>
-          <span class="grade-time">Standard SM-2</span>
+        <button class="btn-grade grade-good" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#4ade80; border-color:#4ade8055;" onclick="gradeCard(3)">
+          <span class="grade-label">Good</span>
         </button>
-        <button class="btn-grade grade-easy" onclick="gradeCard(4)">
-          <span class="grade-label">Easy [4]</span>
-          <span class="grade-time">Longer interval</span>
+        <button class="btn-grade grade-easy" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#60a5fa; border-color:#60a5fa55;" onclick="gradeCard(4)">
+          <span class="grade-label">Easy</span>
         </button>
       </div>
       <div class="study-skip-row" id="study-skip-row" style="display: none;">
