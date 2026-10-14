@@ -289,7 +289,6 @@ export function renderVocabTestsPane() {
     <div class="view-header" style="margin-bottom: 1rem;">
       <div class="view-title-group">
         <h3>語彙 総合問題 (Vocab Chapter Tests)</h3>
-        <p>Official JLPT style vocabulary questions matching textbook units.</p>
       </div>
     </div>
     <div class="tests-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
@@ -571,7 +570,6 @@ export function renderReadingTestsPane() {
     <div class="view-header" style="margin-bottom: 1rem;">
       <div class="view-title-group">
         <h3>読解 実戦テスト (Reading Comprehension Tests)</h3>
-        <p>Short, medium, and long passage comprehension tests under JLPT time limits.</p>
       </div>
     </div>
     <div class="tests-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
