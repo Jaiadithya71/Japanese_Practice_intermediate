@@ -509,7 +509,7 @@ export function gradeCard(grade) {
 
   state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
 
-  if (grade >= 3) {
+  if (grade >= 2) {
     state.sessionRight = (state.sessionRight || 0) + 1;
   }
 
