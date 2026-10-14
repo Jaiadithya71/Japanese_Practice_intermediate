@@ -234,6 +234,9 @@ function renderCardContent() {
   if (correctEl) correctEl.textContent = state.sessionRight || 0;
   if (totalEl) totalEl.textContent = state.sessionTotalAnswered || 0;
 
+  const audioBtn = document.getElementById('card-audio-btn');
+  if (audioBtn) audioBtn.style.display = ['kanji_word', 'kanji', 'kanji_exercise'].includes(item.type) ? 'none' : '';
+
   const flameBtn = document.getElementById('card-hard-flame');
   if (flameBtn) {
     flameBtn.className = `btn-hard-flame${isHard ? ' is-hard' : ''}`;
@@ -298,7 +301,7 @@ function renderCardContent() {
   // CASE C: KANJI TARGET CHARACTER
   // ==========================================
   if (item.type === 'kanji') {
-    if (lessonTag) lessonTag.textContent = `漢字 · 第${item.lesson_number}課 ${item.lesson_title_ja || ''}`;
+    if (lessonTag) lessonTag.textContent = `L${item.lesson_number} · ${item.lesson_title_ja || 'Kanji'}`;
 
     if (!state.cardFlipped) {
       if (state.studyDirection === 'ja-en') {
@@ -349,7 +352,7 @@ function renderCardContent() {
   // CASE D: KANJI PRACTICE EXERCISE
   // ==========================================
   if (item.type === 'kanji_exercise') {
-    if (lessonTag) lessonTag.textContent = `漢字練習 · ${item.exercise_title || 'Drill'}`;
+    if (lessonTag) lessonTag.textContent = `Exercise · ${item.exercise_title || 'Drill'}`;
 
     const qText = item.question_ja || item.sentence || item.target_word || '';
     if (!state.cardFlipped) {
@@ -395,14 +398,14 @@ function renderCardContent() {
   // ==========================================
   if (item.type === 'kanji_word') {
     const dir = item.direction || state.kanjiStudyDirection || 'ja-kana';
-    if (lessonTag) lessonTag.textContent = `漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
+    if (lessonTag) lessonTag.textContent = `L${item.lesson_number} · ${item.baseKanji || 'Kanji'}`;
 
     if (!state.cardFlipped) {
       if (dir === 'ja-kana') {
         // JLPT Mondai 1: Given Kanji, recall Kana reading
         termEl.innerHTML = `
           <div>
-            <div style="font-size: 3.4rem; font-family: var(--font-jp); font-weight: 800; color: #fff; letter-spacing: 0.05em;">
+            <div class="n3-kanji-front-word" style="font-size: clamp(4.2rem, 11vw, 6.2rem); font-family: var(--font-jp); font-weight: 800; color: #fff; letter-spacing: 0.05em; line-height: 1.08;">
               ${item.word}
             </div>
             <div style="margin-top: 0.75rem; display: flex; justify-content: center; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
@@ -454,7 +457,7 @@ function renderCardContent() {
       const kunStr = (item.kunyomi || []).join('、 ');
       termEl.innerHTML = `
         <div>
-          <div style="font-size: 3.2rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">
+          <div style="font-size: 3.6rem; font-family: var(--font-jp); font-weight: 800; color: #fff; line-height: 1.1;">
             ${item.ruby_html || item.word}
           </div>
           <div style="font-size: 1.6rem; color: #ec4899; font-weight: 700; margin-top: 0.35rem; font-family: var(--font-jp);">
@@ -601,6 +604,53 @@ export function playCurrentCardAudio() {
   }
 }
 
+function celebrateStudyCompletion() {
+  if (state._completionConfettiActive) return;
+  state._completionConfettiActive = true;
+  const canvas = document.createElement('canvas');
+  canvas.setAttribute('aria-hidden', 'true');
+  canvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:9999;';
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = window.innerWidth * dpr;
+  canvas.height = window.innerHeight * dpr;
+  ctx.scale(dpr, dpr);
+  const colors = ['#a78bfa', '#34d399', '#fbbf24', '#f472b6', '#60a5fa'];
+  const pieces = Array.from({ length: 110 }, () => ({
+    x: Math.random() * window.innerWidth,
+    y: -Math.random() * window.innerHeight * 0.45,
+    vx: (Math.random() - 0.5) * 2.4,
+    vy: 2 + Math.random() * 3.5,
+    size: 4 + Math.random() * 6,
+    spin: Math.random() * 6,
+    color: colors[Math.floor(Math.random() * colors.length)]
+  }));
+  const startedAt = performance.now();
+  function frame(now) {
+    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+    const elapsed = now - startedAt;
+    for (const p of pieces) {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.035;
+      p.spin += 0.08;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.spin);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
+      ctx.restore();
+    }
+    if (elapsed < 2200) requestAnimationFrame(frame);
+    else {
+      canvas.remove();
+      state._completionConfettiActive = false;
+    }
+  }
+  requestAnimationFrame(frame);
+}
+
 function renderStudySummary() {
   const container = document.getElementById('study-card-container');
   if (!container) return;
@@ -610,6 +660,10 @@ function renderStudySummary() {
   const correct = state.sessionRight || 0;
   const pct = answered ? Math.round((correct / answered) * 100) : 0;
   const initialTotal = state.sessionTotalInitial || state.sessionTotal || state.sessionItems.length;
+  const hasKanjiOrVocab = state.drillOrigin === 'kanji' || state.sessionItems.some(item =>
+    item.type === 'kanji' || item.type === 'kanji_word' || item.type === 'vocab' || item.book === 'vocab'
+  );
+  if (answered > 0 && hasKanjiOrVocab) celebrateStudyCompletion();
 
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'none';
@@ -678,7 +732,7 @@ export function resetStudyViewHTML() {
         <div class="flashcard-top">
           <span class="card-lesson-tag" id="card-lesson-tag">Unit</span>
           <div style="display: flex; gap: 0.5rem; align-items: center;" onclick="event.stopPropagation()">
-            <button class="btn-sm btn-ghost" onclick="playCurrentCardAudio()" title="Listen to pronunciation">
+            <button class="btn-sm btn-ghost" id="card-audio-btn" onclick="playCurrentCardAudio()" title="Listen to pronunciation">
               <i class="fa-solid fa-volume-high"></i>
             </button>
             <button class="btn-hard-flame" id="card-hard-flame" onclick="toggleCurrentCardHard()" title="Toggle Hard Word">
