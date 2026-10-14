@@ -1,193 +1,1064 @@
-/* =======================================================
-   NIHONGO INTERMEDIATE — main.js
-   Application Entry Point & Global Bindings (5-Pillar Architecture)
-   ======================================================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nihongo Intermediate — JLPT N3 5-Pillar Exam Master Suite</title>
+  <meta name="description" content="Simultaneous 5-Pillar JLPT N3 Intermediate Mastery Suite with Cross-Pillar Spaced Repetition." />
 
-import { state } from './state.js';
-import { loadAllActiveBooks } from './data-loader.js';
-import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
-import { showView } from './navigation.js';
-import { startStudy, startLearnNew, learnGotIt, skipCard, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js';
-import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=2.4';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
-import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
-import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
-import {
-  renderKanjiView, setKanjiTab, setKanjiPart, setKanjiLesson, setKanjiFilter, onKanjiSearch,
-  openKanjiModal, closeKanjiModal, toggleModalKanjiHard, drillActiveModalKanji,
-  drillKanjiSingle, drillKanjiLesson, getKanjiBreakdown, setExerciseLesson,
-  selectExerciseOption, checkExerciseInput, drillExerciseItem, checkMockOption,
-  setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected,
-  startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
-  nextKanjiQuizCard, toggleKanjiAutoNext
-} from './kanji.js?v=2.5';
-import { startKanjiRunner } from './kanji-runner.js';
-import {
-  initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
-  exitTestToHub, filterTestCategory, getAllAvailableTests
-} from './test.js';
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-// New Foundation & Memory Engine Modules (WP-0 to WP-5)
-import './backup.js';
-import './time.js';
-import './daylog.js';
-import { buildIndexes } from './indexes.js';
-import './session.js';
-import './planner.js';
-import './kanji-words.js';
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navigation.css" />
+  <link rel="stylesheet" href="css/home.css" />
+  <link rel="stylesheet" href="css/vocab.css" />
+  <link rel="stylesheet" href="css/reader.css" />
+  <link rel="stylesheet" href="css/kanji.css" />
+  <link rel="stylesheet" href="css/study.css" />
+  <link rel="stylesheet" href="css/test.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/sync.css" />
+  <link rel="stylesheet" href="css/srs-home.css" />
+  <link rel="stylesheet" href="css/today.css" />
+  <link rel="stylesheet" href="css/grammar-star.css" />
+  <link rel="stylesheet" href="css/me-tab.css" />
+  <link rel="stylesheet" href="css/class-track.css" />
+  <link rel="stylesheet" href="css/book-platform.css" />
+</head>
+<body>
 
-// Releases R2, R3, R4 Modules (WP-6 to WP-12)
-import './daily.js';
-import './today.js';
-import './reading-types.js';
-import './grammar-srs.js';
-import './me-tab.js';
-import './class-curriculum.js';
-import './book-platform.js';
+  <!-- ===== SIDEBAR NAVIGATION (5 PILLARS) ===== -->
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-badge">N3</div>
+      <div class="logo-text">
+        Nihongo<br><small>Intermediate Suite</small>
+      </div>
+    </div>
 
-// Expose controllers to window for HTML event handlers
-window.state = state;
-window.showView = showView;
-window.initTestHub = initTestHub;
-window.startTestSession = startTestSession;
-window.submitQuestionAnswer = submitQuestionAnswer;
-window.advanceTestQuestion = advanceTestQuestion;
-window.exitTestToHub = exitTestToHub;
-window.filterTestCategory = filterTestCategory;
+    <nav class="sidebar-nav">
+      <!-- 1. Today -->
+      <button class="nav-btn active" data-view="today" data-tab="today" onclick="showView('today')">
+        <i class="fa-solid fa-calendar-day"></i>
+        <span>今日 Today</span>
+      </button>
 
-// Optional Gist sync
-window.__n3ScheduleSync = scheduleGistSave;
-window.openSyncSetup = openSyncSetup;
-window.closeSyncSetup = closeSyncSetup;
-window.connectGist = connectGist;
-window.forceSyncNow = forceSyncNow;
-window.disconnectGist = disconnectGist;
+      <!-- 2. Vocab -->
+      <button class="nav-btn" data-view="vocab" data-tab="vocab" onclick="showView('vocab')">
+        <i class="fa-solid fa-book-bookmark"></i>
+        <span>1. 語彙 (Vocab)</span>
+      </button>
 
-// Study & Multi-Pillar Omni-Review
-window.startStudy = startStudy;
-window.startLearnNew = startLearnNew;
-window.learnGotIt = learnGotIt;
-window.skipCard = skipCard;
-window.startDueReview = startDueReview;
-window.startOmniReview = startOmniReview;
-window.flipCard = flipCard;
-window.gradeCard = gradeCard;
-window.exitStudy = exitStudy;
-window.playCurrentCardAudio = playCurrentCardAudio;
-window.toggleCurrentCardHard = toggleCurrentCardHard;
+      <!-- 3. Kanji -->
+      <button class="nav-btn" data-view="kanji" data-tab="kanji" onclick="showView('kanji')">
+        <i class="fa-solid fa-shapes"></i>
+        <span>2. 漢字 (Kanji)</span>
+      </button>
 
-// Vocab Browser & Universal Weak Points
-window.setChapterGroup = setChapterGroup;
-window.selectChapter = selectChapter;
-window.setVocabFilter = setVocabFilter;
-window.onVocabSearch = onVocabSearch;
-window.toggleFurigana = toggleFurigana;
-window.playAudio = playAudio;
-window.onToggleHard = onToggleHard;
-window.drillAllHardWords = drillAllHardWords;
-window.toggleRevealHardWords = toggleRevealHardWords;
-window.setWeakPointsFilter = setWeakPointsFilter;
-window.drillVocabSelected = drillVocabSelected;
-window.toggleVocabMultiSelectMode = toggleVocabMultiSelectMode;
+      <!-- 4. Grammar -->
+      <button class="nav-btn" data-view="grammar" data-tab="grammar" onclick="showView('grammar')">
+        <i class="fa-solid fa-pen-nib"></i>
+        <span>3. 文法 (Grammar)</span>
+      </button>
 
-// Dokkai Reading (Book 2)
-window.openReadingLesson = openReadingLesson;
-window.closeReadingWorkspace = closeReadingWorkspace;
-window.setReadingCategory = setReadingCategory;
-window.selectQuizOption = selectQuizOption;
-window.submitQuizAnswers = submitQuizAnswers;
-window.addMissedQuestionsToSRS = addMissedQuestionsToSRS;
-window.toggleSentenceTranslations = toggleSentenceTranslations;
+      <!-- 5. Reading -->
+      <button class="nav-btn" data-view="reading" data-tab="reading" onclick="showView('reading')">
+        <i class="fa-solid fa-book-open"></i>
+        <span>4. 読解 (Reading)</span>
+      </button>
 
-// Kanji (Book 4)
-window.renderKanjiView = renderKanjiView;
-window.setKanjiTab = setKanjiTab;
-window.setKanjiPart = setKanjiPart;
-window.setKanjiLesson = setKanjiLesson;
-window.setKanjiFilter = setKanjiFilter;
-window.onKanjiSearch = onKanjiSearch;
-window.openKanjiModal = openKanjiModal;
-window.closeKanjiModal = closeKanjiModal;
-window.toggleModalKanjiHard = toggleModalKanjiHard;
-window.drillActiveModalKanji = drillActiveModalKanji;
-window.drillKanjiSingle = drillKanjiSingle;
-window.drillKanjiLesson = drillKanjiLesson;
-window.getKanjiBreakdown = getKanjiBreakdown;
-window.setExerciseLesson = setExerciseLesson;
-window.selectExerciseOption = selectExerciseOption;
-window.checkExerciseInput = checkExerciseInput;
-window.drillExerciseItem = drillExerciseItem;
-window.checkMockOption = checkMockOption;
-window.setKanjiStudyDirection = setKanjiStudyDirection;
-window.selectKanjiLesson = selectKanjiLesson;
-window.drillKanjiSelected = drillKanjiSelected;
-window.startKanjiQuickQuiz = startKanjiQuickQuiz;
-window.renderKanjiQuizCard = renderKanjiQuizCard;
-window.answerKanjiQuizOption = answerKanjiQuizOption;
-window.nextKanjiQuizCard = nextKanjiQuizCard;
-window.toggleKanjiAutoNext = toggleKanjiAutoNext;
-window.startKanjiRunner = startKanjiRunner;
-window.startKanjiLessonRunner = () => {
-  const selected = Array.from(state.kanjiSelectedLessons || []);
-  if (selected.length !== 1) {
-    alert('Select exactly one lesson chip to start the guided lesson.');
-    return;
-  }
-  startKanjiRunner(Number(selected[0]));
-};
+      <!-- Settings / Backup -->
+      <button class="nav-btn" data-view="settings" onclick="openSettingsDrawer()" style="margin-top: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.85rem;">
+        <i class="fa-solid fa-gear"></i>
+        <span>設定・バックアップ</span>
+      </button>
+    </nav>
 
-// Home Dashboard
-window.setHomeGroup = setHomeGroup;
-window.toggleChapterSelection = toggleChapterSelection;
-window.selectAllChaptersInGroup = selectAllChaptersInGroup;
-window.clearChapterSelection = clearChapterSelection;
 
-// Global Keyboard Shortcuts
-window.addEventListener('keydown', (e) => {
-  if (state.currentView === 'study') {
-    if (e.code === 'Space') {
-      e.preventDefault();
-      flipCard();
-    } else if (state.studyMode === 'kanji_quiz' && ['Digit1', 'Digit2', 'Digit3', 'Digit4'].includes(e.code)) {
-      e.preventDefault();
-      const idx = parseInt(e.code.replace('Digit', ''), 10) - 1;
-      answerKanjiQuizOption(idx);
-    } else if (state.cardFlipped && ['Digit1', 'Digit2', 'Digit3', 'Digit4'].includes(e.code)) {
-      e.preventDefault();
-      const grade = parseInt(e.code.replace('Digit', ''), 10);
-      gradeCard(grade);
-    } else if (e.code === 'Escape') {
-      e.preventDefault();
-      exitStudy();
-    }
-  }
-});
+    <!-- Sync status pill -->
+    <div id="n3sync-status" class="n3s-pill n3s-idle" onclick="openSyncSetup()" title="Sync settings">
+      <i class="fa-solid fa-cloud"></i><span id="n3sync-label">Saved on this device</span>
+    </div>
 
-// App Initialization
-async function initApp() {
-  console.log('Initializing Nihongo Intermediate 5-Pillar Suite...');
-  loadStats();
-  
-  const loadEl = document.getElementById('dash-loading-status');
-  if (loadEl) loadEl.textContent = 'Loading intermediate datasets (Vocabulary & Dokkai Reading)...';
+    <!-- Sidebar Stats Tracker -->
+    <div class="sidebar-stats">
+      <div class="stat-mini">
+        <span class="stat-mini-label">Mastered</span>
+        <span id="sb-mastered" class="stat-mini-val green">0</span>
+      </div>
+      <div class="stat-mini">
+        <span class="stat-mini-label">Learning</span>
+        <span id="sb-learning" class="stat-mini-val amber">0</span>
+      </div>
+      <div class="stat-mini">
+        <span class="stat-mini-label">Struggling</span>
+        <span id="sb-struggling" class="stat-mini-val red">0</span>
+      </div>
+      <div class="stat-mini">
+        <span class="stat-mini-label">Unseen</span>
+        <span id="sb-unseen" class="stat-mini-val muted">—</span>
+      </div>
+    </div>
+  </aside>
 
-  await loadAllActiveBooks();
-  window.N3Indexes = buildIndexes(state.db);
-  
-  if (loadEl) loadEl.style.display = 'none';
+  <!-- ===== MAIN CONTENT CONTAINER ===== -->
+  <main id="main">
 
-  const testNavBadge = document.getElementById('nav-test-count');
-  if (testNavBadge) {
-    const totalQ = getAllAvailableTests().reduce((acc, t) => acc + t.questionCount, 0);
-    testNavBadge.textContent = `${totalQ} Qs`;
-  }
+    <!-- ==============================================
+         TAB 1: TODAY / HOME DASHBOARD (EXAM HUB)
+         ============================================== -->
+    <div id="view-today" class="view active">
+      <section id="view-home" class="view active">
+      <div id="today-card"></div>
+      <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin: 0 0 0.75rem;"></div>
 
-  updateSidebarStats();
-  initSyncUI();
-  showView('home');
-  console.log('Nihongo Intermediate initialized successfully.');
-}
+      <!-- 5-PILLAR OVERVIEW CARDS -->
+      <div class="view-header" style="margin-bottom: 1rem;">
+        <div class="view-title-group">
+          <h3 style="font-size: 1.3rem; color: #fff;">Browse by section</h3>
+        </div>
+      </div>
 
-import './pillar-banner.js?v=1';
+      <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr); margin-bottom: 2rem;">
+        <!-- Book 1 -->
+        <div class="stat-card" style="border-left: 3px solid var(--accent); cursor: pointer;" onclick="showView('vocab')">
+          <span class="stat-card-title">1. 語彙 (Vocab) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-vocab-count">1,251 words</span>
+          <span class="stat-card-sub">29 Textbook Units</span>
+        </div>
+        <!-- Book 2 -->
+        <div class="stat-card" style="border-left: 3px solid var(--cyan); cursor: pointer;" onclick="showView('reading')">
+          <span class="stat-card-title">2. 読解 (Reading) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-reading-count">49 lessons</span>
+          <span class="stat-card-sub">88 Exam Questions</span>
+        </div>
+        <!-- Book 3 -->
+        <div class="stat-card" style="border-left: 3px solid var(--amber); cursor: pointer;" onclick="showView('grammar')">
+          <span class="stat-card-title">3. 文法 (Grammar) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-grammar-count">83 patterns</span>
+          <span class="stat-card-sub">Patterns, drills &amp; mock</span>
+        </div>
+        <!-- Book 4 -->
+        <div class="stat-card" style="border-left: 3px solid #ec4899; cursor: pointer;" onclick="showView('kanji')">
+          <span class="stat-card-title">4. 漢字 (Kanji) <span class="badge badge-green" style="font-size: 0.65rem;">Active</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;" id="pillar-kanji-count">654 Kanji</span>
+          <span class="stat-card-sub" id="pillar-kanji-sub">N3 + review kanji</span>
+        </div>
+        <!-- Book 5 -->
+        <div class="stat-card" style="border-left: 3px solid #8b5cf6; opacity: 0.85;">
+          <span class="stat-card-title">5. 聴解 (Audio) <span class="badge badge-amber" style="font-size: 0.65rem;">Building</span></span>
+          <span class="stat-card-value" style="font-size: 1.3rem;">5 Tasks</span>
+          <span class="stat-card-sub">Quick Response Audio</span>
+        </div>
+      </div>
 
-window.addEventListener('DOMContentLoaded', initApp);
+      <div class="home-vocab-action" style="display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:-1rem 0 1.5rem; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:14px; background:var(--surface);">
+        <div>
+          <strong style="color:#fff;">Vocabulary</strong>
+          <div style="font-size:0.85rem; color:var(--text-dim);">Choose a unit and start studying</div>
+        </div>
+        <button class="btn btn-primary" onclick="showView('vocab')"><i class="fa-solid fa-arrow-right"></i> Open units</button>
+      </div>
+    </section>
+    </div>
+
+    <!-- ==============================================
+         TAB 2: LEARN (KANJI, VOCAB, GRAMMAR)
+         ============================================== -->
+    
+        <!-- BOOK 2: KANJI MASTERY SUITE -->
+        <section id="view-kanji" class="view">
+      <div class="view-header">
+        <div class="view-title-group">
+          <h2>2. 漢字 (Kanji Master Suite)</h2>
+        </div>
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;">
+          <div class="kanji-dir-selector" style="display: flex; gap: 0.25rem; background: rgba(255,255,255,0.06); padding: 0.2rem; border-radius: 999px; border: 1px solid var(--border);">
+            <button class="btn-dir-pill active" id="kdir-ja-kana" onclick="setKanjiStudyDirection('ja-kana')" title="JLPT Mondai 1: Given Kanji, recall Kana reading">漢字 → かな</button>
+            <button class="btn-dir-pill" id="kdir-kana-ja" onclick="setKanjiStudyDirection('kana-ja')" title="JLPT Mondai 2: Given Kana, recall Kanji">かな → 漢字</button>
+            <button class="btn-dir-pill" id="kdir-ja-meaning" onclick="setKanjiStudyDirection('ja-meaning')" title="Compound word to English meaning">漢字 → 英語</button>
+            <button class="btn-dir-pill" id="kdir-mixed" onclick="setKanjiStudyDirection('mixed')" title="Mixed: each card picks a random direction">Mixed</button>
+          </div>
+          <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()">
+            <i class="fa-solid fa-play"></i> Drill Compound Cards
+          </button>
+          <button class="btn btn-primary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()" title="Fast tap-to-answer MCQ drill over the selected lessons" style="background: linear-gradient(135deg, #0ea5e9, #2563eb); border: none;">
+            <i class="fa-solid fa-bolt"></i> Quick Quiz
+          </button>
+          <button class="btn btn-secondary" id="btn-kanji-runner-action" onclick="startKanjiLessonRunner()" title="Guided S0-S6 lesson flow; select exactly one lesson below first" disabled>
+            <i class="fa-solid fa-route"></i> Guided Lesson
+          </button>
+          <button class="btn btn-ghost" id="btn-kanji-hard-toggle" onclick="toggleKanjiHardOnly()" title="Hard only: Drill and Quick Quiz run just the hard kanji/words in the selected lessons" style="border-color: rgba(239,68,68,0.5); color: #f87171;">
+            <i class="fa-solid fa-fire"></i> Hard only: OFF
+          </button>
+        </div>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-kanji" role="tablist">
+        <button class="pst-btn active" data-sub="target" onclick="setKanjiSubTab('target')">
+          <i class="fa-solid fa-shapes"></i> 漢字一覧 Target Kanji
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setKanjiSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 復習 Due SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setKanjiSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 苦手 Hard Kanji <span class="badge badge-red" id="subtab-kanji-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="exercises" onclick="setKanjiSubTab('exercises')">
+          <i class="fa-solid fa-pen-to-square"></i> 練習問題 Drills (833 Qs)
+        </button>
+      </div>
+
+      <!-- Sub-Pane 2: Due SRS -->
+      <div id="kanji-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="kanji-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Hard Kanji -->
+      <div id="kanji-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="kanji-hard-container"></div>
+      </div>
+
+      <!-- Kanji Tabs -->
+      <div class="kanji-tabs">
+        <button class="kanji-tab-btn active" data-tab="target" onclick="setKanjiTab('target')">
+          <i class="fa-solid fa-shapes"></i> Target Kanji (443)
+        </button>
+        <button class="kanji-tab-btn" data-tab="exercises" onclick="setKanjiTab('exercises')">
+          <i class="fa-solid fa-pen-to-square"></i> Practice Drills (833 Qs)
+        </button>
+        <button class="kanji-tab-btn" data-tab="review300" onclick="setKanjiTab('review300')">
+          <i class="fa-solid fa-list-check"></i> Review 300 (N4/N5)
+        </button>
+        <button class="kanji-tab-btn" data-tab="special" onclick="setKanjiTab('special')">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Special Readings (熟字訓)
+        </button>
+        <button class="kanji-tab-btn" data-tab="mock" onclick="setKanjiTab('mock')">
+          <i class="fa-solid fa-clipboard-check"></i> Mock Exams (実力テスト)
+        </button>
+      </div>
+
+      <!-- TAB 1: TARGET KANJI PANE -->
+      <div id="kanji-pane-target" class="kanji-view-container">
+        <!-- Control Bar -->
+        <div class="kanji-control-bar">
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <div class="kanji-search-box">
+              <i class="fa-solid fa-magnifying-glass" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+              <input type="text" placeholder="Search kanji, reading, meaning..." oninput="onKanjiSearch(this.value)" />
+            </div>
+            <span id="kanji-count-badge" class="badge badge-purple">443 / 443 Kanji</span>
+          </div>
+        </div>
+        <!-- Interactive Multi-Select Lesson Chips Row -->
+        <div class="chapter-chips-wrap kanji-lesson-chips-wrap" id="kanji-lesson-chips-row">
+          <!-- Populated dynamically by kanji.js -->
+        </div>
+
+        <!-- Kanji Grid -->
+        <div id="kanji-grid" class="kanji-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 2: PRACTICE EXERCISES PANE -->
+      <div id="kanji-pane-exercises" class="kanji-view-container" style="display: none;">
+        <div id="kanji-exercises-container" class="kanji-exercise-workspace">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 3: REVIEW 300 PANE -->
+      <div id="kanji-pane-review300" class="kanji-view-container" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius); border: 1px solid var(--border);">
+          <div>
+            <h3 style="font-size: 1.1rem; color: #fff;">N4・N5 Review 300 Kanji</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Fundamental N4/N5 characters and readings from the Bessatsu supplementary booklet.</p>
+          </div>
+          <span class="badge badge-cyan">300 Kanji</span>
+        </div>
+        <div id="kanji-review300-grid" class="kanji-grid">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 4: SPECIAL READINGS PANE -->
+      <div id="kanji-pane-special" class="kanji-view-container" style="display: none;">
+        <div style="background: var(--bg-card); padding: 0.85rem 1rem; border-radius: var(--radius); border: 1px solid var(--border);">
+          <h3 style="font-size: 1.1rem; color: #fff;">特別な読み方をする漢字の言葉 (Special Readings)</h3>
+          <p style="color: var(--text-muted); font-size: 0.85rem;">Irregular and jukujikun compound readings frequently tested in JLPT N3 Question 1.</p>
+        </div>
+        <div id="kanji-special-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 5: MOCK EXAMS PANE -->
+      <div id="kanji-pane-mock" class="kanji-view-container" style="display: none;">
+        <div id="kanji-mock-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+        <!-- BOOK 1: VOCABULARY EXPLORER -->
+        <section id="view-vocab" class="view">
+      <div class="view-header">
+        <div class="view-title-group">
+          <h1>Book 1: 語彙 (Vocabulary Browser)</h1>
+        </div>
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <button class="btn btn-sm btn-ghost" id="btn-toggle-furigana" onclick="toggleFurigana()">
+            <i class="fa-solid fa-font"></i> Furigana: ON
+          </button>
+          <button class="btn btn-primary btn-sm" id="btn-vocab-study-action" onclick="drillVocabSelected()">
+            <i class="fa-solid fa-play"></i> Drill Selected Words
+          </button>
+          <button class="btn btn-sm btn-ghost" id="btn-vocab-hard-action" onclick="drillVocabHard()" title="Drill only the hard words in the selected units (all units if none selected)" style="border-color: rgba(239,68,68,0.5); color: #f87171;">
+            <i class="fa-solid fa-fire"></i> Drill Hard
+          </button>
+        </div>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-vocab" role="tablist">
+        <button class="pst-btn active" data-sub="units" onclick="setVocabSubTab('units')">
+          <i class="fa-solid fa-list"></i> 単語一覧 Units
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setVocabSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 復習 Due SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setVocabSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 苦手 Hard Words <span class="badge badge-red" id="subtab-vocab-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="tests" onclick="setVocabSubTab('tests')">
+          <i class="fa-solid fa-pen-to-square"></i> テスト Tests
+        </button>
+      </div>
+
+      <!-- Sub-Pane 1: Units -->
+      <div id="vocab-pane-units" class="pillar-pane active">
+
+      <div class="vocab-controls">
+        <div class="vocab-search-row">
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="search-input" placeholder="Search Japanese, reading, or English meaning..." oninput="onVocabSearch(this.value)" />
+          </div>
+          <span class="badge badge-accent" id="vocab-count-badge">0 words</span>
+        </div>
+
+        <div class="group-tabs" style="margin-bottom: 0;">
+          <button class="group-tab active" id="vgroup-topic" onclick="setChapterGroup('topic')">Part 1: Topics (Ch 1–21)</button>
+          <button class="group-tab" id="vgroup-char" onclick="setChapterGroup('characteristics')">Part 2: Characteristics (Ch 1–8)</button>
+        </div>
+
+        <div class="chapter-chips-wrap" id="chapter-chips">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Active Unit Title Banner -->
+        <div id="vocab-active-unit-banner"></div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+          <div class="vocab-filter-tabs" style="margin-bottom: 0;">
+            <button class="vf-tab active" id="vf-all" onclick="setVocabFilter('all')">All</button>
+            <button class="vf-tab" id="vf-learning" onclick="setVocabFilter('learning')">Learning</button>
+            <button class="vf-tab" id="vf-hard" onclick="setVocabFilter('hard')">Hard / Struggling</button>
+            <button class="vf-tab" id="vf-mastered" onclick="setVocabFilter('mastered')">Mastered</button>
+          </div>
+          
+          <label class="study-mode-toggle">
+            <input type="checkbox" id="vocab-study-mode" onchange="renderVocabList()" />
+            <span class="toggle-slider"></span>
+            <span class="toggle-label"><i class="fa-solid fa-eye-slash"></i> Study Mode (Mask Meanings)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="vocab-stats-strip" id="vocab-stats-strip">
+        <span id="vs-showing">— words</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-hard" style="color:var(--red, #ef4444);">0 hard</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-learning" style="color:var(--amber, #f59e0b);">0 learning</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-mastered" style="color:var(--green, #10b981);">0 mastered</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-unseen" style="color:var(--text-dim, #7a8099);">0 unseen</span>
+      </div>
+
+      <div class="vocab-list" id="vocab-list-container">
+        <!-- Rendered dynamically -->
+      </div>
+      </div> <!-- /vocab-pane-units -->
+
+      <!-- Sub-Pane 2: Due SRS -->
+      <div id="vocab-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="vocab-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Hard Words -->
+      <div id="vocab-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="vocab-hard-container"></div>
+      </div>
+
+      <!-- Sub-Pane 4: Tests -->
+      <div id="vocab-pane-tests" class="pillar-pane" style="display: none;">
+        <div id="vocab-tests-container"></div>
+      </div>
+    </section>
+
+        <!-- BOOK 3: GRAMMAR MASTERY SUITE -->
+        <section id="view-grammar" class="view">
+      <div class="view-header">
+        <div class="view-title-group">
+          <h2>3. 文法 (Grammar Master Suite)</h2>
+        </div>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-grammar" role="tablist">
+        <button class="pst-btn active" data-sub="patterns" onclick="setGrammarSubTab('patterns')">
+          <i class="fa-solid fa-list-check"></i> 文型一覧 Patterns
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setGrammarSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 復習 Due SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setGrammarSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 苦手 &amp; 混同 Clusters <span class="badge badge-red" id="subtab-grammar-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="drills" onclick="setGrammarSubTab('drills')">
+          <i class="fa-solid fa-pen-clip"></i> 演習問題 Drills &amp; Mocks
+        </button>
+      </div>
+
+      <!-- Sub-Pane 2: Due SRS -->
+      <div id="grammar-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="grammar-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Hard & Clusters -->
+      <div id="grammar-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="grammar-hard-container"></div>
+      </div>
+
+      <!-- Grammar Master Tab Bar -->
+      <div class="grammar-tabs-bar" style="display: flex; gap: 0.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.25rem; overflow-x: auto; padding-bottom: 0.5rem;">
+        <button class="btn btn-sm btn-ghost grammar-tab-btn active" data-tab="patterns" onclick="setGrammarTab('patterns')">
+          <i class="fa-solid fa-list-check"></i> Patterns Explorer
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="drills" onclick="setGrammarTab('drills')">
+          <i class="fa-solid fa-pen-clip"></i> Part 1 Drills
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="star" onclick="setGrammarTab('star')">
+          <i class="fa-solid fa-star"></i> Part 2 Star Blanks (★)
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="text" onclick="setGrammarTab('text')">
+          <i class="fa-solid fa-book-open"></i> Part 3 Text Passages
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="mock" onclick="setGrammarTab('mock')">
+          <i class="fa-solid fa-clipboard-check"></i> Mock Exams
+        </button>
+        <button class="btn btn-sm btn-ghost grammar-tab-btn" data-tab="guide" onclick="setGrammarTab('guide')">
+          <i class="fa-solid fa-circle-info"></i> Guide & Symbols
+        </button>
+      </div>
+
+      <!-- TAB 1: PATTERNS EXPLORER PANE -->
+      <div id="grammar-pane-patterns">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem; background: var(--bg-card); padding: 1rem; border-radius: var(--radius); border: 1px solid var(--border);">
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('all')">All Patterns</button>
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('Part 1')">Part 1 (Meaning/Function)</button>
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('Part 2')">Part 2 (Sentence Structure)</button>
+            <button class="btn btn-sm btn-ghost" onclick="setGrammarPartFilter('Part 3')">Part 3 (Text Grammar)</button>
+          </div>
+          <div style="display: flex; gap: 0.75rem; align-items: center;">
+            <div class="kanji-search-box">
+              <i class="fa-solid fa-magnifying-glass" style="color: var(--text-dim); font-size: 0.85rem;"></i>
+              <input type="text" placeholder="Search pattern, meaning, rule..." oninput="onGrammarSearch(this.value)" />
+            </div>
+            <span id="grammar-count-badge" class="badge badge-accent">83 Patterns</span>
+          </div>
+        </div>
+
+        <div id="grammar-patterns-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1rem;">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 2: PART 1 DRILLS PANE -->
+      <div id="grammar-pane-drills" style="display: none;">
+        <div id="grammar-drills-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 3: PART 2 STAR PROBLEMS PANE -->
+      <div id="grammar-pane-star" style="display: none;">
+        <div id="grammar-star-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 4: PART 3 TEXT PASSAGES PANE -->
+      <div id="grammar-pane-text" style="display: none;">
+        <div id="grammar-text-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 5: MOCK EXAMS PANE -->
+      <div id="grammar-pane-mock" style="display: none;">
+        <div id="grammar-mock-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <!-- TAB 6: GUIDE & SYMBOLS PANE -->
+      <div id="grammar-pane-guide" style="display: none;">
+        <div id="grammar-guide-container">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+    </section>
+
+        <!-- CLASS TRACK: SYNCHRONIZED MULTI-SPEED CLASSROOM HUB -->
+        <section id="view-class-track" class="view">
+          <div id="class-track-container"></div>
+        </section>
+
+    <!-- ==============================================
+         TAB 3: READ (BOOK 2: DOKKAI READING COMPREHENSION)
+         ============================================== -->
+    <div id="view-read" class="view">
+      <section id="view-reading" class="view">
+      <!-- Section A: Lesson List & Browser -->
+      <div class="view-header">
+        <div class="view-title-group">
+          <h1>4. 読解 (Reading Comprehension Hub)</h1>
+        </div>
+        <span class="badge badge-cyan" id="dokkai-count-badge">49 Lessons</span>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-reading" role="tablist">
+        <button class="pst-btn active" data-sub="passages" onclick="setReadingSubTab('passages')">
+          <i class="fa-solid fa-book-open"></i> 読解一覧 Passages
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setReadingSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 再読復習 Re-read SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setReadingSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 誤答問題 Missed Qs <span class="badge badge-red" id="subtab-reading-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="tests" onclick="setReadingSubTab('tests')">
+          <i class="fa-solid fa-clipboard-check"></i> 総合テスト Tests
+        </button>
+      </div>
+
+      <!-- Sub-Pane 1: Passages -->
+      <div id="reading-pane-passages" class="pillar-pane active">
+      <div id="dokkai-list-section">
+
+        <!-- Category Tabs -->
+        <div class="reader-category-tabs" id="reader-category-tabs">
+          <!-- Rendered dynamically -->
+        </div>
+
+        <div class="dokkai-grid" id="dokkai-grid-container">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Section B: Active Reading Workspace -->
+      <div id="dokkai-workspace-section" style="display: none;">
+        <div id="dokkai-workspace-container">
+          <!-- Rendered dynamically by reader.js -->
+        </div>
+      </div>
+      </div> <!-- /reading-pane-passages -->
+
+      <!-- Sub-Pane 2: Re-read SRS -->
+      <div id="reading-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="reading-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Missed Questions -->
+      <div id="reading-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="reading-hard-container"></div>
+      </div>
+
+      <!-- Sub-Pane 4: Tests -->
+      <div id="reading-pane-tests" class="pillar-pane" style="display: none;">
+        <div id="reading-tests-container"></div>
+      </div>
+    </section>
+    </div>
+
+    <!-- ==============================================
+         TAB 4: TEST (JLPT N3 EXAM SIMULATOR & TEST DRILLS)
+         ============================================== -->
+    <section id="view-test" class="view">
+      <!-- Screen 1: Hub & Selector -->
+      <div id="test-hub-screen">
+        <header class="view-header">
+          <div>
+            <h1 class="view-title">Intermediate Class Tests &amp; Practice Drills</h1>
+          </div>
+        </header>
+
+        <!-- Stats Overview -->
+        <div class="test-hub-dashboard">
+          <div class="test-stat-card">
+            <div class="test-stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div>
+              <div class="test-stat-val" id="test-total-count">36</div>
+              <div class="test-stat-label">Total Test Modules</div>
+            </div>
+          </div>
+          <div class="test-stat-card">
+            <div class="test-stat-icon" style="color:var(--green); background:rgba(34,211,164,0.15)"><i class="fa-solid fa-list-check"></i></div>
+            <div>
+              <div class="test-stat-val" id="test-total-questions">1,338</div>
+              <div class="test-stat-label">Practice Questions</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="test-category-tabs" id="test-category-tabs">
+          <!-- Filled by test.js -->
+        </div>
+
+        <!-- Tests Grid -->
+        <div class="test-cards-grid" id="test-cards-grid">
+          <!-- Filled by test.js -->
+        </div>
+      </div>
+
+      <!-- Screen 2: Test Taking Runner -->
+      <div id="test-runner-screen" class="hide">
+        <div class="test-runner-container">
+          <div class="test-runner-header">
+            <button class="btn btn-ghost btn-sm" onclick="window.exitTestToHub()">
+              <i class="fa-solid fa-arrow-left"></i> Exit Test
+            </button>
+            <span id="tr-test-title" style="font-weight:700; font-size:0.95rem; color:var(--text);">Test Title</span>
+            <span id="tr-question-count" style="font-weight:700; color:var(--accent); font-size:0.9rem;">1 / 20</span>
+          </div>
+
+          <div class="tr-progress-bar">
+            <div id="tr-progress-fill" class="tr-progress-fill" style="width: 0%;"></div>
+          </div>
+
+          <!-- Reading Passage Box (if applicable) -->
+          <div id="tr-passage-box" style="display:none; background:var(--bg3); border:1px solid var(--border); border-radius:16px; padding:1.25rem; max-height:260px; overflow-y:auto; line-height:1.75; font-family:var(--font-japanese); font-size:1.05rem;">
+            <div id="tr-passage-text"></div>
+          </div>
+
+          <!-- Question Box -->
+          <div class="test-question-box">
+            <div id="tr-prompt">Question Prompt</div>
+            <div id="tr-options-container" class="test-options-list">
+              <!-- Rendered options -->
+            </div>
+            
+            <div id="tr-explanation-box" class="test-explanation-card" style="display:none;">
+              <div id="tr-explanation-text"></div>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:flex-end;">
+            <button id="tr-next-btn" class="btn btn-primary" onclick="window.advanceTestQuestion()" style="display:none; min-height:48px; padding:0 2rem; border-radius:14px;">
+              Next Question <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Screen 3: Results & Summary -->
+      <div id="test-results-screen" class="hide">
+        <div style="max-width:520px; margin:2rem auto; text-align:center; background:var(--bg2); border:1px solid var(--border); border-radius:24px; padding:2rem 1.5rem; box-shadow:0 12px 36px rgba(0,0,0,0.5);">
+          <div style="width:80px; height:80px; border-radius:50%; background:var(--accent-light); color:var(--accent); display:flex; align-items:center; justify-content:center; font-size:2.5rem; margin:0 auto 1.25rem;">
+            <i class="fa-solid fa-trophy"></i>
+          </div>
+          <h2 style="font-family:var(--font-display); font-size:1.75rem; font-weight:800; margin-bottom:0.25rem;">Test Completed!</h2>
+          <div id="res-score-pct" style="font-family:var(--font-display); font-size:3.5rem; font-weight:800; color:var(--accent); line-height:1.2; margin:0.75rem 0;">0%</div>
+          <div id="res-score-detail" style="font-size:1.1rem; font-weight:700; color:var(--text-muted); margin-bottom:1rem;">0 / 0 Correct</div>
+          <p id="res-score-msg" style="font-size:0.95rem; margin-bottom:1.5rem; line-height:1.6;"></p>
+          <div style="display:flex; gap:0.75rem; justify-content:center;">
+            <button class="btn btn-primary" onclick="window.exitTestToHub()" style="padding:0.75rem 2rem; border-radius:14px;">
+              Return to Tests
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         TAB 5: ME (WEAK POINTS, STATS, SETTINGS)
+         ============================================== -->
+    <div id="view-me" class="view">
+      <!-- Sticky segmented control -->
+      <div class="segmented-control me-segmented-control" role="tablist">
+        <button class="seg-btn active" id="seg-me-weak" data-segment="weak" onclick="switchMeSegment('weak')" role="tab">
+          <i class="fa-solid fa-fire"></i>
+          <span>Weak Points</span>
+        </button>
+        <button class="seg-btn" id="seg-me-stats" data-segment="stats" onclick="switchMeSegment('stats')" role="tab">
+          <i class="fa-solid fa-chart-simple"></i>
+          <span>Stats</span>
+        </button>
+        <button class="seg-btn" id="seg-me-settings" data-segment="settings" onclick="switchMeSegment('settings')" role="tab">
+          <i class="fa-solid fa-gear"></i>
+          <span>Settings</span>
+        </button>
+      </div>
+
+      <div class="me-segments-container">
+        <!-- Segment 1: Weak Points (hosts view-hard-words) -->
+        <div id="me-panel-weak" class="me-segment-panel active">
+          <section id="view-hard-words" class="view">
+      <div class="hard-words-header">
+        <div class="hard-words-title">
+          <i class="fa-solid fa-fire hard-flame-icon"></i>
+          <div>
+            <h2 style="font-size: 1.5rem; color: #fff;">Exam Weak Points Revision Desk</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;" id="hard-words-header-count">0 Exam Weak Points Need Revision</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 0.75rem;">
+          <button class="btn btn-primary" onclick="drillAllHardWords()">
+            <i class="fa-solid fa-rotate"></i> Drill All Weak Points
+          </button>
+          <button class="btn btn-ghost" onclick="toggleRevealHardWords()">
+            <i class="fa-solid fa-eye"></i> Toggle Explanations
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Tabs: All, Vocab, Reading -->
+      <div class="vocab-filter-tabs" style="margin-bottom: 1.5rem;">
+        <button class="vf-tab wp-tab active" id="wpt-all" onclick="setWeakPointsFilter('all')">All Weak Points</button>
+        <button class="vf-tab wp-tab" id="wpt-vocab" onclick="setWeakPointsFilter('vocab')">Vocabulary Words</button>
+        <button class="vf-tab wp-tab" id="wpt-reading" onclick="setWeakPointsFilter('reading')">Dokkai Questions</button>
+      </div>
+
+      <div class="vocab-list" id="hard-words-list">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+        </div>
+
+        <!-- Segment 2: Stats & Progress -->
+        <div id="me-panel-stats" class="me-segment-panel" style="display: none;">
+          <div class="view-header">
+            <div class="view-title-group">
+              <h2 style="font-size: 1.5rem; color: #fff;">Pillar Mastery &amp; Progress</h2>
+            </div>
+          </div>
+          <div class="stats-overview-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+            <div class="stat-card">
+              <span class="stat-card-title">Mastered Items</span>
+              <span class="stat-card-value green" id="me-stat-mastered">0</span>
+              <span class="stat-card-sub">Interval &ge; 21 days</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card-title">Learning Items</span>
+              <span class="stat-card-value amber" id="me-stat-learning">0</span>
+              <span class="stat-card-sub">Active in SRS</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card-title">Struggling / Leech</span>
+              <span class="stat-card-value red" id="me-stat-struggling">0</span>
+              <span class="stat-card-sub">High lapse count</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card-title">Unseen Items</span>
+              <span class="stat-card-value muted" id="me-stat-unseen">—</span>
+              <span class="stat-card-sub">Yet to begin</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Segment 3: Settings & Data Management -->
+        <div id="me-panel-settings" class="me-segment-panel" style="display: none;">
+          <div class="view-header">
+            <div class="view-title-group">
+              <h2 style="font-size: 1.5rem; color: #fff;">Settings &amp; Data Management</h2>
+            </div>
+          </div>
+          <div class="settings-card-group" style="display: flex; flex-direction: column; gap: 1rem; max-width: 680px;">
+            <div class="stat-card" style="padding: 1.25rem;">
+              <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-cloud-arrow-up" style="color: var(--accent); margin-right: 0.5rem;"></i>Cloud Backup &amp; Sync</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Sync progress across devices using private GitHub Gist.</p>
+              <button class="btn btn-primary btn-sm" onclick="openSyncSetup()">Configure Gist Sync</button>
+            </div>
+
+            <div class="stat-card" style="padding: 1.25rem;">
+              <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-database" style="color: #22d3a4; margin-right: 0.5rem;"></i>Data Backup &amp; Restore</h3>
+              <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 1rem;">Export your full study stats and settings to JSON, or restore from a backup.</p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <button class="btn btn-outline btn-sm" onclick="window.exportBackup ? window.exportBackup() : alert('Backup module loaded')">
+                  <i class="fa-solid fa-download"></i> Export Backup (JSON)
+                </button>
+                <button class="btn btn-outline btn-sm" onclick="window.importBackup ? window.importBackup() : alert('Import module loaded')">
+                  <i class="fa-solid fa-upload"></i> Import Backup
+                </button>
+                <button class="btn btn-ghost btn-sm" onclick="window.restoreSnapshot ? window.restoreSnapshot() : alert('Snapshot module loaded')">
+                  <i class="fa-solid fa-clock-rotate-left"></i> Restore Snapshot
+                </button>
+              </div>
+            </div>
+
+            <div class="stat-card" style="padding: 1.25rem;">
+              <h3 style="font-size: 1.1rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-sliders" style="color: #f59e0b; margin-right: 0.5rem;"></i>Study Preferences</h3>
+              <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0;">
+                <div>
+                  <div style="font-weight: 600; color: #fff; font-size: 0.95rem;">Furigana Display</div>
+                  <div style="color: var(--text-dim); font-size: 0.8rem;">Show phonetic readings above Kanji</div>
+                </div>
+                <button class="btn btn-ghost btn-sm" onclick="toggleFurigana()">Toggle Furigana</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         FULL-SCREEN RUNNER: ACTIVE RECALL / STUDY SESSION (SRS)
+         ============================================== -->
+    <section id="view-study" class="view">
+      <div class="study-header">
+        <button class="btn btn-sm btn-ghost" onclick="exitStudy()">
+          <i class="fa-solid fa-arrow-left"></i> Exit
+        </button>
+        <div class="study-progress-wrap">
+          <span class="study-progress-count" id="study-progress-count">1 / 10</span>
+          <div class="study-progress-bar">
+            <div class="study-progress-fill" id="study-progress-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="study-session-score" id="study-session-score" title="Correct / Total Answered">
+          <span class="score-correct" id="session-correct">0</span>
+          <span class="score-sep">/</span>
+          <span class="score-total" id="session-total">0</span>
+        </div>
+      </div>
+
+      <div id="study-card-container">
+        <div class="flashcard-stage" onclick="flipCard()">
+          <div class="flashcard" id="flashcard">
+            <div class="flashcard-top">
+              <span class="card-lesson-tag" id="card-lesson-tag">Unit</span>
+              <div style="display: flex; gap: 0.5rem; align-items: center;" onclick="event.stopPropagation()">
+                <button class="btn-sm btn-ghost" onclick="playCurrentCardAudio()" title="Listen to pronunciation">
+                  <i class="fa-solid fa-volume-high"></i>
+                </button>
+                <button class="btn-hard-flame" id="card-hard-flame" onclick="toggleCurrentCardHard()" title="Toggle Hard Item">
+                  <i class="fa-solid fa-fire"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="flashcard-body">
+              <div class="card-term-large font-ja" id="card-term">Loading...</div>
+              <div class="card-meaning-large" id="card-meaning">Tap to reveal</div>
+              <div class="card-example-box" id="card-example-box" style="display: none;">
+                <div class="card-example-ja font-ja" id="card-ex-ja"></div>
+                <div class="card-example-en" id="card-ex-en"></div>
+              </div>
+            </div>
+
+            <div class="flashcard-bottom" id="card-controls-hint" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grading Actions -->
+      <div class="grade-controls" id="grade-controls" style="display: none; gap: 0.5rem;">
+        <button class="btn-grade grade-again" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#f87171; border-color:#f8717155;" onclick="gradeCard(1)">
+          <span class="grade-label">Again</span>
+        </button>
+        <button class="btn-grade grade-hard" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#fbbf24; border-color:#fbbf2455;" onclick="gradeCard(2)">
+          <span class="grade-label">Hard</span>
+        </button>
+        <button class="btn-grade grade-good" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#4ade80; border-color:#4ade8055;" onclick="gradeCard(3)">
+          <span class="grade-label">Good</span>
+        </button>
+        <button class="btn-grade grade-easy" style="min-height:48px; padding:0.65rem 0.35rem !important; border-radius:8px !important; background:var(--bg2); color:#60a5fa; border-color:#60a5fa55;" onclick="gradeCard(4)">
+          <span class="grade-label">Easy</span>
+        </button>
+      </div>
+      <div class="study-skip-row" id="study-skip-row" style="display: none;">
+        <button class="btn btn-ghost btn-sm" onclick="skipCard()"><i class="fa-solid fa-forward"></i> Skip (not scored)</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 5-TAB FLOATING GLASS DOCK (BOOK-FIRST) ===== -->
+  <nav id="mobile-dock" class="mobile-dock">
+    <button class="mobile-dock-item mobile-nav-item active" data-tab="today" onclick="showView('today')">
+      <i class="fa-solid fa-calendar-day"></i>
+      <span>今日</span>
+    </button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="vocab" onclick="showView('vocab')">
+      <i class="fa-solid fa-book-bookmark"></i>
+      <span>語彙</span>
+    </button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="kanji" onclick="showView('kanji')">
+      <i class="fa-solid fa-shapes"></i>
+      <span>漢字</span>
+    </button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="grammar" onclick="showView('grammar')">
+      <i class="fa-solid fa-pen-nib"></i>
+      <span>文法</span>
+    </button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="reading" onclick="showView('reading')">
+      <i class="fa-solid fa-book-open"></i>
+      <span>読解</span>
+    </button>
+  </nav>
+  <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()">
+    <div class="more-panel" onclick="event.stopPropagation()">
+      <div class="more-grab"></div>
+      <button class="more-item" onclick="closeMoreMenu();showView('grammar')"><i class="fa-solid fa-diagram-project"></i> 3. 文法 (Grammar)</button>
+      <button class="more-item" onclick="closeMoreMenu();showView('reading')"><i class="fa-solid fa-book-open-reader"></i> 2. 読解 (Reading)</button>
+      <button class="more-item" onclick="closeMoreMenu();startOmniReview()"><i class="fa-solid fa-bolt"></i> Review all due</button>
+      <button class="more-item" onclick="closeMoreMenu();showView('hard-words')"><i class="fa-solid fa-fire"></i> Weak points</button>
+      <button class="more-item" onclick="closeMoreMenu();openSyncSetup()"><i class="fa-solid fa-cloud-arrow-up"></i> Backup &amp; sync</button>
+      <button class="more-item" onclick="closeMoreMenu();toggleFurigana()"><i class="fa-solid fa-font"></i> Toggle furigana</button>
+      <button class="more-item more-close" onclick="closeMoreMenu()">Close</button>
+    </div>
+  </div>
+
+  <!-- ===== KANJI DETAIL MODAL ===== -->
+  <div id="kanji-modal" class="kanji-modal-overlay" onclick="if(event.target===this)closeKanjiModal()">
+    <div class="kanji-modal-box">
+      <div class="kanji-modal-header">
+        <div class="kanji-modal-hero">
+          <div id="km-bigchar" class="kanji-modal-bigchar">字</div>
+          <div class="kanji-modal-meta-title">
+            <h2 id="km-title">Lesson 1: Kanji Title</h2>
+            <p id="km-sub">Part 1 · N3 Target Kanji</p>
+          </div>
+        </div>
+        <button class="btn-ghost btn-sm" onclick="closeKanjiModal()" style="font-size: 1.25rem; color: var(--text-dim);">&times;</button>
+      </div>
+
+      <div class="kanji-modal-body">
+        <div class="kanji-reading-table">
+          <span class="kanji-reading-label">音読み (On):</span>
+          <span id="km-onyomi" style="color: #f472b6; font-weight: 600;">—</span>
+          <span class="kanji-reading-label">訓読み (Kun):</span>
+          <span id="km-kunyomi" style="color: var(--text); font-weight: 600;">—</span>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em;">Vocabulary &amp; Compounds</h4>
+          <div id="km-words-list" class="kanji-words-list">
+            <!-- Words rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div class="kanji-modal-footer">
+        <button id="km-hard-btn" class="btn btn-sm btn-ghost" onclick="toggleModalKanjiHard()">
+          <i class="fa-solid fa-fire"></i> Mark as Weak Point
+        </button>
+        <button class="btn btn-sm btn-primary" onclick="drillActiveModalKanji()">
+          <i class="fa-solid fa-play"></i> Drill Flashcard
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Module Entrypoint -->
+  <!-- ===== N3 GIST SYNC MODAL ===== -->
+  <div id="n3s-overlay" class="n3s-hide" onclick="if(event.target===this)closeSyncSetup()">
+    <div class="n3s-modal">
+      <h2><i class="fa-brands fa-github"></i> Save &amp; Sync (N3)</h2>
+      <div id="n3s-step1">
+        <p>Progress is always saved on this device. To keep it across devices, paste a GitHub token with only the <strong>gist</strong> permission. It is stored in this browser only and goes only to GitHub. This creates a separate private Gist for N3.</p>
+        <input id="n3s-pat" type="password" placeholder="GitHub token (gist scope)" autocomplete="off" />
+        <p id="n3s-error" class="n3s-hide"></p>
+        <div class="n3s-row">
+          <button class="n3s-btn" onclick="closeSyncSetup()">Cancel</button>
+          <button class="n3s-btn n3s-primary" onclick="connectGist()">Connect</button>
+        </div>
+      </div>
+      <div id="n3s-connected" class="n3s-hide">
+        <p id="n3s-info"></p>
+        <div class="n3s-row">
+          <button class="n3s-btn" onclick="disconnectGist()">Disconnect</button>
+          <button class="n3s-btn" id="n3s-sync-now" onclick="forceSyncNow()">Sync Now</button>
+          <button class="n3s-btn n3s-primary" onclick="closeSyncSetup()">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js?v=2.5"></script>
+
+  <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
+  <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">
+    <div class="settings-drawer">
+      <div class="sd-header">
+        <div class="sd-title"><i class="fa-solid fa-gear" style="color: var(--accent);"></i> Settings &amp; Data Management</div>
+        <button class="sd-close" onclick="closeSettingsDrawer()">&times;</button>
+      </div>
+      <div class="sd-body">
+        <!-- 1. Cloud Backup & Sync -->
+        <div class="stat-card" style="padding: 1.25rem;">
+          <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-cloud-arrow-up" style="color: var(--accent); margin-right: 0.5rem;"></i>Cloud Backup &amp; Sync</h3>
+          <p style="color: var(--text-muted); font-size: 0.82rem; margin-bottom: 1rem;">Sync progress across devices using private GitHub Gist.</p>
+          <button class="btn btn-primary btn-sm" onclick="openSyncSetup()">Configure Gist Sync</button>
+        </div>
+
+        <!-- 2. Data Backup & Restore -->
+        <div class="stat-card" style="padding: 1.25rem;">
+          <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-database" style="color: #22d3a4; margin-right: 0.5rem;"></i>Data Backup &amp; Restore</h3>
+          <p style="color: var(--text-muted); font-size: 0.82rem; margin-bottom: 1rem;">Export your full study stats and settings to JSON, or restore from a backup.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <button class="btn btn-outline btn-sm" onclick="window.exportBackup ? window.exportBackup() : alert('Backup module loaded')">
+              <i class="fa-solid fa-download"></i> Export Backup (JSON)
+            </button>
+            <button class="btn btn-outline btn-sm" onclick="window.importBackup ? window.importBackup() : alert('Import module loaded')">
+              <i class="fa-solid fa-upload"></i> Import Backup
+            </button>
+            <button class="btn btn-ghost btn-sm" onclick="window.restoreSnapshot ? window.restoreSnapshot() : alert('Snapshot module loaded')">
+              <i class="fa-solid fa-clock-rotate-left"></i> Restore Pre-Import Snapshot
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Study Preferences -->
+        <div class="stat-card" style="padding: 1.25rem;">
+          <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-sliders" style="color: #f59e0b; margin-right: 0.5rem;"></i>Preferences</h3>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0;">
+            <div>
+              <div style="font-weight: 600; color: #fff; font-size: 0.9rem;">Furigana Display</div>
+              <div style="color: var(--text-dim); font-size: 0.78rem;">Show phonetic readings above Kanji</div>
+            </div>
+            <button class="btn btn-ghost btn-sm" onclick="toggleFurigana()">Toggle Furigana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
