@@ -21,6 +21,7 @@ import {
   startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
   nextKanjiQuizCard, toggleKanjiAutoNext
 } from './kanji.js?v=2.4';
+import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
   exitTestToHub, filterTestCategory, getAllAvailableTests
@@ -34,7 +35,6 @@ import { buildIndexes } from './indexes.js';
 import './session.js';
 import './planner.js';
 import './kanji-words.js';
-import './kanji-runner.js';
 
 // Releases R2, R3, R4 Modules (WP-6 to WP-12)
 import './daily.js';
@@ -126,6 +126,15 @@ window.renderKanjiQuizCard = renderKanjiQuizCard;
 window.answerKanjiQuizOption = answerKanjiQuizOption;
 window.nextKanjiQuizCard = nextKanjiQuizCard;
 window.toggleKanjiAutoNext = toggleKanjiAutoNext;
+window.startKanjiRunner = startKanjiRunner;
+window.startKanjiLessonRunner = () => {
+  const selected = Array.from(state.kanjiSelectedLessons || []);
+  if (selected.length !== 1) {
+    alert('Select exactly one lesson chip to start the guided lesson.');
+    return;
+  }
+  startKanjiRunner(Number(selected[0]));
+};
 
 // Home Dashboard
 window.setHomeGroup = setHomeGroup;
