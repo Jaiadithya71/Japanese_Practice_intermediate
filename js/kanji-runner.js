@@ -615,6 +615,7 @@ let activeRunner = null;
  * Launches the interactive S0–S6 Lesson Runner in the browser.
  */
 export function startKanjiRunner(lessonNumber, containerId = 'view-study') {
+  if (typeof window !== 'undefined' && window.showView) window.showView('study');
   activeRunner = createLessonRunner(lessonNumber, {
     db: defaultState,
     stats: defaultState.stats,
@@ -836,13 +837,19 @@ export function selectMCQAnswer(selectedIdx) {
     fb.className = `kr-feedback-box ${isCorrect ? 'correct' : 'incorrect'}`;
     fb.innerHTML = isCorrect
       ? `<div><strong><i class="fa-solid fa-circle-check"></i> 正解！</strong> ${card.ruby_html} · ${card.meaning_en}</div>`
-      : `<div><strong><i class="fa-solid fa-circle-xmark"></i> 不正解</strong> 正解: <span class="font-ja">${card.options[card.correctIndex]?.text}</span> (${card.meaning_en})</div>`;
+      : `<div><strong><i class="fa-solid fa-circle-xmark"></i> 不正解 - Review this answer</strong><div style="margin-top:.35rem;"><span class="font-ja" style="font-size:1.25rem;font-weight:800;">${card.term_ja}</span> · <span class="font-ja" style="color:#f472b6;">${card.reading}</span></div><div>${card.meaning_en || ''}</div><div style="margin-top:.25rem;">Correct: <span class="font-ja">${card.options[card.correctIndex]?.text}</span></div></div>`;
   }
 
-  setTimeout(() => {
+  const advance = document.createElement('button');
+  advance.className = 'btn btn-primary btn-block';
+  advance.style.marginTop = '0.85rem';
+  advance.textContent = 'Continue';
+  advance.onclick = () => {
     activeRunner.submitAnswer(selectedIdx);
     renderRunnerStage();
-  }, isCorrect ? 500 : 1200);
+  };
+  fb?.appendChild(advance);
+  if (isCorrect) setTimeout(() => advance.click(), 500);
 }
 
 function renderS3RecallUI() {
@@ -987,6 +994,14 @@ export const N3KanjiRunner = {
 
 if (typeof window !== 'undefined') {
   window.N3KanjiRunner = N3KanjiRunner;
+  window.exitKanjiRunner = exitKanjiRunner;
+  window.togglePlacementKanji = togglePlacementKanji;
+  window.confirmPlacement = confirmPlacement;
+  window.skipPlacement = skipPlacement;
+  window.advanceFromMeetUI = advanceFromMeetUI;
+  window.selectMCQAnswer = selectMCQAnswer;
+  window.flipRecallCard = flipRecallCard;
+  window.gradeRecallCard = gradeRecallCard;
 }
 
 export default N3KanjiRunner;
