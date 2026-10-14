@@ -190,6 +190,17 @@ export function renderCard() {
   const exEn = document.getElementById('card-ex-en');
 
   // ==========================================
+  // CASE 0: KANJI QUICK QUIZ (MCQ fast drill)
+  // Renderer lives in kanji.js; dispatched via window to avoid an import cycle
+  // ==========================================
+  if (state.studyMode === 'kanji_quiz') {
+    if (typeof window !== 'undefined' && typeof window.renderKanjiQuizCard === 'function') {
+      window.renderKanjiQuizCard(item);
+    }
+    return;
+  }
+
+  // ==========================================
   // CASE A: READING COMPREHENSION QUESTION
   // ==========================================
   if (item.type === 'reading_question') {
@@ -478,6 +489,7 @@ export function renderCard() {
 }
 
 export function flipCard() {
+  if (state.studyMode === 'kanji_quiz') return;
   if (isLearnStage(state.sessionItems[state.sessionIdx])) { learnGotIt(); return; }
   state.cardFlipped = !state.cardFlipped;
   renderCard();
@@ -544,10 +556,18 @@ function renderStudySummary() {
 
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'none';
-  const again = state.learnUnit
-    ? `startLearnNew('${state.learnUnit}')`
-    : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`;
-  const againLabel = state.learnUnit ? 'Learn more words' : 'Review Again';
+  const again = state.studyMode === 'kanji_quiz'
+    ? 'startKanjiQuickQuiz()'
+    : state.learnUnit
+      ? `startLearnNew('${state.learnUnit}')`
+      : (state.drillOrigin === 'kanji'
+        ? 'drillKanjiSelected()'
+        : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`);
+  const againLabel = state.studyMode === 'kanji_quiz'
+    ? 'Quiz Again'
+    : state.learnUnit
+      ? 'Learn more words'
+      : (state.drillOrigin === 'kanji' ? 'Drill Again' : 'Review Again');
 
   container.innerHTML = `
     <div class="study-summary-card">
