@@ -137,6 +137,7 @@ async function getRemoteContent(pat, gistId) {
       throw markRemoteRepairRequired(`Remote progress is truncated and the full raw file could not be read (${error.message || 'network error'}); use Sync Now to replace it with this device's validated stats.`);
     }
     content = rawContent;
+    await parseRemoteStats(rawContent);
     throw markRemoteRepairRequired("Remote progress is truncated; use Sync Now to replace it with this device's validated stats.");
   }
   if (typeof content !== 'string' || !content.length) {
