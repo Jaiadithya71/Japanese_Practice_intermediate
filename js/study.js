@@ -361,7 +361,7 @@ export function renderCard() {
             </div>
           </div>
         `;
-        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Recall the Hiragana reading · Tap to reveal</span>`;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Tap to reveal</span>`;
       } else if (dir === 'kana-ja') {
         // JLPT Mondai 2: Given Kana, recall Kanji spelling
         termEl.innerHTML = `
@@ -377,7 +377,7 @@ export function renderCard() {
             </div>
           </div>
         `;
-        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Recall the Kanji compound · Tap to reveal</span>`;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Tap to reveal</span>`;
       } else {
         // Meaning mode: Given Kanji, recall English
         termEl.innerHTML = `
@@ -390,7 +390,7 @@ export function renderCard() {
             </div>
           </div>
         `;
-        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Recall English meaning · Tap to reveal</span>`;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Tap to reveal</span>`;
       }
 
       if (exBox) exBox.style.display = 'none';
