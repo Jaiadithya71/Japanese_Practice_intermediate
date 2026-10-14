@@ -128,16 +128,19 @@ async function getRemoteContent(pat, gistId) {
   if (file.truncated && file.raw_url) {
     // Public Gists can be fetched without a token. Avoid Authorization here: raw.githubusercontent.com
     // rejects that CORS preflight, even though a top-level navigation to the URL works.
-    const raw = await fetch(file.raw_url);
-    if (!raw.ok) throw new Error(`Could not read full remote progress (HTTP ${raw.status}); nothing was written.`);
-    content = await raw.text();
-    if (file.truncated) throw markRemoteRepairRequired("Remote progress is truncated; use Sync Now to replace it with this device's validated stats.");
+    let rawContent;
+    try {
+      const raw = await fetch(file.raw_url);
+      if (!raw.ok) throw new Error(`HTTP ${raw.status}`);
+      rawContent = await raw.text();
+    } catch (error) {
+      throw markRemoteRepairRequired(`Remote progress is truncated and the full raw file could not be read (${error.message || 'network error'}); use Sync Now to replace it with this device's validated stats.`);
+    }
+    content = rawContent;
+    throw markRemoteRepairRequired("Remote progress is truncated; use Sync Now to replace it with this device's validated stats.");
   }
   if (typeof content !== 'string' || !content.length) {
     throw new Error('The remote progress file is empty or unavailable; nothing was written.');
-  }
-  if (new TextEncoder().encode(content).length >= MAX_SYNC_BYTES) {
-    throw markRemoteRepairRequired("Remote progress exceeds the 1 MB sync limit; use Sync Now to replace it with this device's validated stats.");
   }
   return content;
 }
@@ -151,7 +154,7 @@ async function parseRemoteStats(content) {
     throw e;
   }
   if (!remote || typeof remote !== 'object' || Array.isArray(remote)) {
-    throw new Error('Remote progress is not a valid stats object.');
+    throw markRemoteRepairRequired('Remote progress is malformed; use Sync Now to replace it with this device\'s validated stats.');
   }
   return remote;
 }
@@ -169,9 +172,10 @@ async function push(pat, gistId, allowCorruptRemote = false) {
     const remoteContent = await getRemoteContent(pat, gistId);
     try {
       const remote = JSON.parse(remoteContent);
-      if (!remote || typeof remote !== 'object' || Array.isArray(remote)) throw new Error('Remote progress is not a valid stats object.');
+      if (!remote || typeof remote !== 'object' || Array.isArray(remote)) throw markRemoteRepairRequired('Remote progress is malformed; use Sync Now to replace it with this device\'s validated stats.');
     } catch (e) {
-      const isMalformed = e instanceof SyntaxError && e.remoteStatsParse === true;
+      const isMalformed = e instanceof SyntaxError;
+      if (isMalformed) e.remoteStatsParse = true;
       if (!(allowCorruptRemote && (isMalformed || e.remoteStatsRepair === true))) throw e;
     }
   } catch (e) {
