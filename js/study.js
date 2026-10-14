@@ -41,7 +41,7 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   // Shuffle pool
   pool.sort(() => Math.random() - 0.5);
 
-  const batchSize = isDrillHard ? pool.length : Math.min(25, pool.length);
+  const batchSize = pool.length; // run every word in the selection
   state.sessionItems = pool.slice(0, batchSize);
   state.sessionIdx = 0;
   state.sessionRight = 0;
