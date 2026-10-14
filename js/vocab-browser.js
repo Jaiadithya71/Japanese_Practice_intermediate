@@ -507,8 +507,16 @@ export function updateHardWordsView() {
 }
 
 export function drillAllHardWords() {
+  state.selectedChapters = new Set(); // hard tab = hard words across every unit
   startStudy('flashcard', true, 'hard-words');
 }
+
+// Hard words only, limited to the units currently selected on the browser (all units if none)
+export function drillVocabHard() {
+  state.selectedChapters = new Set(state.selectedVocabChapters || []);
+  startStudy('flashcard', true, 'vocab');
+}
+if (typeof window !== 'undefined') window.drillVocabHard = drillVocabHard;
 
 export function toggleRevealHardWords() {
   const defs = document.querySelectorAll('.hard-word-def');
