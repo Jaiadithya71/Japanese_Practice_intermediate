@@ -785,12 +785,23 @@ export function updateSidebarStats() {
   }
 
   // Track Kanji Target Characters
+  // Counts every facet a kanji is drilled through (K: plus its word reading/writing/meaning keys),
+  // so flashcard, Quick Quiz and hard-only drills all move the counters.
   for (const char in (state.kanjiDB || {})) {
-    const st = getItemStatus(`K:${char}`);
-    if (st === 'mastered') mastered++;
-    else if (st === 'hard') hard++;
-    else if (st === 'learning') learning++;
-    else unseen++;
+    const keys = [`K:${char}`];
+    ((state.kanjiDB[char] && state.kanjiDB[char].words) || []).forEach(w => {
+      const word = (w.term_ja || w.word || char).trim();
+      keys.push(`KWR:${word}`, `KWW:${word}`, `KWM:${word}`);
+    });
+    const touched = keys.filter(k => {
+      const s = state.stats && state.stats[k];
+      return s && ((s.reps || 0) > 0 || (s.correct || 0) > 0 || (s.incorrect || 0) > 0 || s.isHard);
+    });
+    if (touched.length === 0) { unseen++; continue; }
+    const sts = touched.map(k => getItemStatus(k));
+    if (sts.includes('hard')) hard++;
+    else if (sts.every(x => x === 'mastered')) mastered++;
+    else learning++;
   }
 
   const elM = document.getElementById('sb-mastered');
