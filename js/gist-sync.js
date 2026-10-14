@@ -222,7 +222,14 @@ export async function gistLoadStats(options = {}) {
       if (ok) setStatus('ok', 'Synced valid progress from this device');
       return;
     }
-    const diag = ` [${e.name || 'Error'}; Gist ID ${localStorage.getItem(GIST_ID_KEY) ? 'set' : 'unset'}; token ${localStorage.getItem(PAT_KEY) ? 'set' : 'unset'}; online ${navigator.onLine ? 'yes' : 'no'}]`;
+    let apiReachability = 'unavailable';
+    try {
+      const probe = await fetch(`${API}/rate_limit`, { headers: { Accept: 'application/vnd.github.v3+json' } });
+      apiReachability = `HTTP ${probe.status}`;
+    } catch (probeError) {
+      apiReachability = `fetch failed (${probeError.name || 'Error'})`;
+    }
+    const diag = ` [${e.name || 'Error'}; Gist ID ${localStorage.getItem(GIST_ID_KEY) ? 'set' : 'unset'}; token ${localStorage.getItem(PAT_KEY) ? 'set' : 'unset'}; online ${navigator.onLine ? 'yes' : 'no'}; GitHub API ${apiReachability}]`;
     setStatus('error', `Sync error: ${e.message}${diag}`);
   }
 }
