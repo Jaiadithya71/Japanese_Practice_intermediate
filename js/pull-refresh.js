@@ -45,13 +45,25 @@ async function end() {
   if (dist >= THRESH * 0.8) {
     busy = true;
     el.classList.add('loading');
+    el.classList.remove('ready');
+    el.querySelector('i').className = 'ptr-ring';
     el.querySelector('span').textContent = 'Refreshing...';
     el.style.transform = 'translate(-50%, 24px)';
+    let synced = false;
     try {
       if (window.forceSyncNow && localStorage.getItem('n3_github_pat') && localStorage.getItem('n3_gist_id')) {
         await Promise.race([window.forceSyncNow(), new Promise(r => setTimeout(r, 4000))]);
+        const pill = document.getElementById('n3sync-status');
+        synced = !!pill && pill.classList.contains('n3s-ok');
       }
     } catch (e) { /* ignore, reload anyway */ }
+    if (synced) {
+      el.classList.remove('loading');
+      el.classList.add('done');
+      el.querySelector('i').className = 'fa-solid fa-circle-check';
+      el.querySelector('span').textContent = 'Synced';
+      await new Promise(r => setTimeout(r, 650));
+    }
     location.reload();
   } else {
     el.classList.remove('show', 'ready');
