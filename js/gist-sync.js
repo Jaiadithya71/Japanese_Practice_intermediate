@@ -31,6 +31,12 @@ function setStatus(kind, text) {
   const label = document.getElementById('n3sync-label');
   if (el) el.className = `n3s-pill n3s-${kind}`;
   if (label) label.textContent = text;
+  // Icon reflects state: cloud (idle), spinning arrows (working), check (synced), warning (error)
+  const icon = el && el.querySelector('i');
+  if (icon) {
+    const map = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation' };
+    icon.className = `fa-solid ${map[kind] || 'fa-cloud'}`;
+  }
   const info = document.getElementById('n3s-info');
   if (info) info.textContent = text;
 }
