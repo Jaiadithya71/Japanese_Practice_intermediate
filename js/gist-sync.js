@@ -207,7 +207,8 @@ export async function gistLoadStats(options = {}) {
       if (ok) setStatus('ok', 'Synced valid progress from this device');
       return;
     }
-    setStatus('error', `Sync error: ${e.message}`);
+    const diag = ` [${e.name || 'Error'}; Gist ID ${localStorage.getItem(GIST_ID_KEY) ? 'set' : 'unset'}; token ${localStorage.getItem(PAT_KEY) ? 'set' : 'unset'}; online ${navigator.onLine ? 'yes' : 'no'}]`;
+    setStatus('error', `Sync error: ${e.message}${diag}`);
   }
 }
 
@@ -308,6 +309,7 @@ export function initSyncUI() {
   });
   if (pat && gistId) gistLoadStats();
 }
+
 
 
 
