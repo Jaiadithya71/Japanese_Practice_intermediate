@@ -204,9 +204,13 @@
             <button class="btn-dir-pill active" id="kdir-ja-kana" onclick="setKanjiStudyDirection('ja-kana')" title="JLPT Mondai 1: Given Kanji, recall Kana reading">漢字 → かな</button>
             <button class="btn-dir-pill" id="kdir-kana-ja" onclick="setKanjiStudyDirection('kana-ja')" title="JLPT Mondai 2: Given Kana, recall Kanji">かな → 漢字</button>
             <button class="btn-dir-pill" id="kdir-ja-meaning" onclick="setKanjiStudyDirection('ja-meaning')" title="Compound word to English meaning">漢字 → 英語</button>
+            <button class="btn-dir-pill" id="kdir-mixed" onclick="setKanjiStudyDirection('mixed')" title="Mixed: each card picks a random direction">Mixed</button>
           </div>
           <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()">
             <i class="fa-solid fa-play"></i> Drill Compound Cards
+          </button>
+          <button class="btn btn-primary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()" title="Fast tap-to-answer MCQ drill over the selected lessons" style="background: linear-gradient(135deg, #0ea5e9, #2563eb); border: none;">
+            <i class="fa-solid fa-bolt"></i> Quick Quiz
           </button>
         </div>
       </div>
@@ -1044,7 +1048,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=2.2"></script>
+  <script type="module" src="js/main.js?v=2.3"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">
