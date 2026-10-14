@@ -150,7 +150,59 @@ export function startOmniReview() {
   startDueReview('all');
 }
 
+// Kana-based pronunciation aid. Keep ou/uu spellings explicit for learners.
+export function kanaToRomaji(reading = '') {
+  const kana = String(reading).normalize('NFKC').replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
+  const base = {
+    あ:'a',い:'i',う:'u',え:'e',お:'o',か:'ka',き:'ki',く:'ku',け:'ke',こ:'ko',
+    さ:'sa',し:'shi',す:'su',せ:'se',そ:'so',た:'ta',ち:'chi',つ:'tsu',て:'te',と:'to',
+    な:'na',に:'ni',ぬ:'nu',ね:'ne',の:'no',は:'ha',ひ:'hi',ふ:'fu',へ:'he',ほ:'ho',
+    ま:'ma',み:'mi',む:'mu',め:'me',も:'mo',や:'ya',ゆ:'yu',よ:'yo',ら:'ra',り:'ri',る:'ru',れ:'re',ろ:'ro',
+    わ:'wa',を:'o',ゐ:'i',ゑ:'e',が:'ga',ぎ:'gi',ぐ:'gu',げ:'ge',ご:'go',ざ:'za',じ:'ji',ず:'zu',ぜ:'ze',ぞ:'zo',
+    だ:'da',ぢ:'ji',づ:'zu',で:'de',ど:'do',ば:'ba',び:'bi',ぶ:'bu',べ:'be',ぼ:'bo',ぱ:'pa',ぴ:'pi',ぷ:'pu',ぺ:'pe',ぽ:'po',
+    ぁ:'a',ぃ:'i',ぅ:'u',ぇ:'e',ぉ:'o',ゃ:'ya',ゅ:'yu',ょ:'yo',ゎ:'wa',ゔ:'vu'
+  };
+  const pairs = {};
+  for (const [k, stem] of Object.entries({き:'ky',ぎ:'gy',し:'sh',じ:'j',ち:'ch',ぢ:'j',に:'ny',ひ:'hy',び:'by',ぴ:'py',み:'my',り:'ry'})) {
+    for (const [small, vowel] of Object.entries({ゃ:'a',ゅ:'u',ょ:'o'})) pairs[k + small] = stem + vowel;
+  }
+  Object.assign(pairs, {しぇ:'she',じぇ:'je',ちぇ:'che',てぃ:'ti',でぃ:'di',とぅ:'tu',どぅ:'du',てゅ:'tyu',でゅ:'dyu',
+    ふぁ:'fa',ふぃ:'fi',ふぇ:'fe',ふぉ:'fo',ふゅ:'fyu',うぃ:'wi',うぇ:'we',うぉ:'wo',ゔぁ:'va',ゔぃ:'vi',ゔぇ:'ve',ゔぉ:'vo',ゔゅ:'vyu',
+    つぁ:'tsa',つぃ:'tsi',つぇ:'tse',つぉ:'tso',くぁ:'kwa',くぃ:'kwi',くぇ:'kwe',くぉ:'kwo',ぐぁ:'gwa'});
+  let out = '', geminate = false;
+  for (let i = 0; i < kana.length; i++) {
+    const c = kana[i];
+    if (c === 'っ') { geminate = true; continue; }
+    if (c === 'ー') { out += out.match(/[aeiou](?=[^aeiou]*$)/)?.[0] || ''; continue; }
+    if (c === 'ん') { out += /^[あいうえおやゆよぁぃぅぇぉゃゅょ]/.test(kana.slice(i + 1)) ? "n'" : 'n'; continue; }
+    let syllable = pairs[kana.slice(i, i + 2)];
+    if (syllable) i++; else syllable = base[c];
+    if (!syllable) {
+      if (/[一-龯]/.test(c)) return ''; // Do not guess readings for kanji.
+      out += c; geminate = false; continue;
+    }
+    if (geminate && /^[bcdfghjklmpqrstvwxyz]/.test(syllable)) out += syllable.startsWith('ch') ? 't' : syllable[0];
+    geminate = false; out += syllable;
+  }
+  return out.trim();
+}
+
 export function renderCard() {
+  renderCardContent();
+  const item = state.sessionItems[state.sessionIdx];
+  if (!item || !state.cardFlipped || state.studyMode === 'kanji_quiz') return;
+  const reading = item.reading || (item.type === 'kanji' ? '' : item.kana);
+  const romaji = kanaToRomaji(reading || '');
+  const meaning = document.getElementById('card-meaning');
+  if (!romaji || !meaning) return;
+  const line = document.createElement('div');
+  line.className = 'card-romaji';
+  line.style.cssText = 'margin-top:0.65rem;font-size:1rem;font-weight:500;color:var(--text-muted);letter-spacing:0.03em;';
+  line.textContent = romaji;
+  meaning.appendChild(line);
+}
+
+function renderCardContent() {
   if (state.sessionIdx >= state.sessionItems.length) {
     renderStudySummary();
     return;
