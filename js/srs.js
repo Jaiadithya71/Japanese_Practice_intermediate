@@ -556,7 +556,7 @@ export function interleaveQueue(candidates, maxConsecutive = 3) {
 /**
  * Resolves or constructs a rich item object for a due item key.
  */
-function resolveItemForKey(key, stats) {
+export function resolveItemForKey(key, stats) {
   const facet = getFacetFromKey(key);
   const pillar = getPillarFromKey(key);
 
@@ -585,7 +585,7 @@ function resolveItemForKey(key, stats) {
     for (const lNum in (state.kanjiExercisesDB || {})) {
       for (const ex of (state.kanjiExercisesDB[lNum] || [])) {
         const it = (ex.items || []).find(item => item.id === exId);
-        if (it) return { ...it, exercise_title: ex.title_ja, type: 'kanji_exercise', key, book: 'kanji_exercise', stats, facet, pillar };
+        if (it) return { ...it, exercise_title: ex.title_ja, type: 'kanji_exercise', key, book: 'kanji_exercise', stats, facet, pillar, lesson_number: parseInt(lNum, 10) };
       }
     }
     return { id: exId, type: 'kanji_exercise', key, book: 'kanji_exercise', stats, facet, pillar };

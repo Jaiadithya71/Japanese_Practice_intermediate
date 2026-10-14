@@ -5,7 +5,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { getDueItemsCount, getItemStatus, getItemStats, toggleItemHard } from './srs.js';
+import { getDueItemsCount, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey } from './srs.js';
 import { startStudy, startOmniReview, startDueReview } from './study.js';
 import { exportBackup, importBackup, restoreSnapshot } from './backup.js';
 import { openSyncSetup } from './gist-sync.js';
@@ -172,19 +172,93 @@ export function renderVocabSRSPane() {
   const container = document.getElementById('vocab-srs-container');
   if (!container) return;
 
-  const hasFilter = state.selectedVocabChapters && state.selectedVocabChapters.size > 0;
-  const filterList = hasFilter ? Array.from(state.selectedVocabChapters).sort((a, b) => a - b) : [];
-  const dueCount = hasFilter ? getDueItemsCount('vocab', state.selectedVocabChapters) : getDueItemsCount('vocab');
-  const totalDeckDue = getDueItemsCount('vocab');
-  const currentBatch = activeBatches.vocab;
+  if (!(state.selectedDueVocabChapters instanceof Set)) {
+    state.selectedDueVocabChapters = new Set();
+  }
 
+  const now = Date.now();
+  const dueChaptersCount = {};
+  for (const key in (state.stats || {})) {
+    const s = state.stats[key];
+    if (!s || !s.nextDue || s.nextDue > now) continue;
+    if (getPillarFromKey(key) === 'vocab') {
+      const resolved = resolveItemForKey(key, s);
+      const ch = resolved.chapter;
+      if (ch) {
+        dueChaptersCount[ch] = (dueChaptersCount[ch] || 0) + 1;
+      }
+    }
+  }
+
+  const formatChLabel = (chId) => {
+    const s = String(chId);
+    if (s.startsWith('part2_')) return 'C' + s.slice(6);
+    if (s.startsWith('review_')) return 'R' + s.slice(7);
+    return 'T' + s.padStart(2, '0');
+  };
+
+  const sortChapters = (a, b) => {
+    const sa = String(a);
+    const sb = String(b);
+    const getScore = (s) => {
+      if (s.startsWith('part2_')) return 2000 + (parseInt(s.slice(6), 10) || 0);
+      if (s.startsWith('review_')) return 1000 + (parseInt(s.slice(7), 10) || 0);
+      return parseInt(s, 10) || 0;
+    };
+    return getScore(sa) - getScore(sb);
+  };
+
+  const dueChaptersList = Object.keys(dueChaptersCount).sort(sortChapters);
+  const totalDeckDue = getDueItemsCount('vocab');
+  const hasFilter = state.selectedDueVocabChapters.size > 0;
+  const isAllSelected = !hasFilter;
+  const dueCount = hasFilter ? getDueItemsCount('vocab', state.selectedDueVocabChapters) : totalDeckDue;
+  const currentBatch = activeBatches.vocab;
+  const effectiveBatchCount = currentBatch === 'all' ? dueCount : Math.min(dueCount, parseInt(currentBatch, 10));
+
+  const filterList = hasFilter ? Array.from(state.selectedDueVocabChapters).sort(sortChapters).map(formatChLabel).join(', ') : '';
   const filterBadgeHtml = hasFilter
-    ? `<span class="badge badge-accent" style="margin-left: 0.5rem;"><i class="fa-solid fa-filter"></i> Ch ${filterList.join(', ')}</span>`
+    ? `<span class="badge badge-accent" style="margin-left: 0.5rem;"><i class="fa-solid fa-filter"></i> ${filterList}</span>`
     : '';
 
   const subLabel = hasFilter 
     ? `words due in selected chapters (${totalDeckDue} due overall in deck)`
     : `words due for review right now`;
+
+  let filterGridHtml = '';
+  if (dueChaptersList.length > 0) {
+    const allChipHtml = `
+      <button class="due-chip ${isAllSelected ? 'selected' : ''}" onclick="window.N3BookPlatform.toggleAllVocabDueChapters()">
+        All
+        <span class="due-chip-count">${totalDeckDue}</span>
+      </button>
+    `;
+    const chapterChipsHtml = dueChaptersList.map(chId => {
+      const isSel = state.selectedDueVocabChapters.has(chId) || state.selectedDueVocabChapters.has(String(chId));
+      const lbl = formatChLabel(chId);
+      const meta = state.chapterMetadata?.[chId] || {};
+      const tooltip = `${lbl}: ${meta.topic_ja || chId} (${dueChaptersCount[chId]} due)`;
+      return `
+        <button class="due-chip ${isSel ? 'selected' : ''}" title="${tooltip}" onclick="window.N3BookPlatform.toggleVocabDueChapter('${chId}')">
+          ${lbl}
+          <span class="due-chip-count">${dueChaptersCount[chId]}</span>
+        </button>
+      `;
+    }).join('');
+
+    filterGridHtml = `
+      <div class="due-chapter-filter-section">
+        <div class="due-filter-header">
+          <span class="due-filter-title"><i class="fa-solid fa-filter"></i> Filter by Chapter:</span>
+          <span style="font-size: 0.72rem; color: var(--text-dim);">${hasFilter ? `${state.selectedDueVocabChapters.size} selected` : 'All due chapters'}</span>
+        </div>
+        <div class="due-chapter-grid">
+          ${allChipHtml}
+          ${chapterChipsHtml}
+        </div>
+      </div>
+    `;
+  }
 
   container.innerHTML = `
     <div class="pillar-srs-card">
@@ -196,7 +270,8 @@ export function renderVocabSRSPane() {
         <span class="psc-count">${dueCount}</span>
         <span class="psc-count-label">${subLabel}</span>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">
+      ${filterGridHtml}
+      <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin-top: 0.75rem;">
         Spaced repetition flashcards with bidirectional recall, audio pronunciation, and automatic interval progression.
       </p>
       <div class="today-batch-selector" style="margin-top: 1rem;">
@@ -208,7 +283,7 @@ export function renderVocabSRSPane() {
       </div>
       <div class="psc-actions">
         <button class="btn btn-primary psc-btn-launch" ${dueCount === 0 ? 'disabled' : ''} onclick="window.N3BookPlatform.startPillarSRS('vocab')">
-          <i class="fa-solid fa-play"></i> Start Vocab Flashcards (~${Math.ceil((currentBatch === 'all' ? dueCount : parseInt(currentBatch, 10)) * 0.5)} min)
+          <i class="fa-solid fa-play"></i> Start Vocab Flashcards (${dueCount} words · ~${Math.ceil(effectiveBatchCount * 0.5)} min)
         </button>
       </div>
     </div>
@@ -311,19 +386,73 @@ export function renderKanjiSRSPane() {
   const container = document.getElementById('kanji-srs-container');
   if (!container) return;
 
-  const hasFilter = state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0;
-  const filterList = hasFilter ? Array.from(state.kanjiSelectedLessons).sort((a, b) => a - b) : [];
-  const dueCount = hasFilter ? getDueItemsCount('kanji', state.kanjiSelectedLessons) : getDueItemsCount('kanji');
-  const totalDeckDue = getDueItemsCount('kanji');
-  const currentBatch = activeBatches.kanji;
+  if (!(state.selectedDueKanjiLessons instanceof Set)) {
+    state.selectedDueKanjiLessons = new Set();
+  }
 
+  const now = Date.now();
+  const dueLessonsCount = {};
+  for (const key in (state.stats || {})) {
+    const s = state.stats[key];
+    if (!s || !s.nextDue || s.nextDue > now) continue;
+    if (getPillarFromKey(key) === 'kanji') {
+      const resolved = resolveItemForKey(key, s);
+      const lNum = resolved.lesson_number;
+      if (lNum) {
+        dueLessonsCount[lNum] = (dueLessonsCount[lNum] || 0) + 1;
+      }
+    }
+  }
+
+  const dueLessonsList = Object.keys(dueLessonsCount).map(Number).sort((a, b) => a - b);
+  const totalDeckDue = getDueItemsCount('kanji');
+  const hasFilter = state.selectedDueKanjiLessons.size > 0;
+  const isAllSelected = !hasFilter;
+  const dueCount = hasFilter ? getDueItemsCount('kanji', state.selectedDueKanjiLessons) : totalDeckDue;
+  const currentBatch = activeBatches.kanji;
+  const effectiveBatchCount = currentBatch === 'all' ? dueCount : Math.min(dueCount, parseInt(currentBatch, 10));
+
+  const filterList = hasFilter ? Array.from(state.selectedDueKanjiLessons).sort((a, b) => a - b).map(l => `L${String(l).padStart(2, '0')}`).join(', ') : '';
   const filterBadgeHtml = hasFilter
-    ? `<span class="badge badge-cyan" style="margin-left: 0.5rem;"><i class="fa-solid fa-filter"></i> Lessons ${filterList.join(', ')}</span>`
+    ? `<span class="badge badge-cyan" style="margin-left: 0.5rem;"><i class="fa-solid fa-filter"></i> ${filterList}</span>`
     : '';
 
   const subLabel = hasFilter 
     ? `kanji items due in selected lessons (${totalDeckDue} due overall in deck)`
     : `kanji readings &amp; characters due right now`;
+
+  let filterGridHtml = '';
+  if (dueLessonsList.length > 0) {
+    const allChipHtml = `
+      <button class="due-chip cyan ${isAllSelected ? 'selected' : ''}" onclick="window.N3BookPlatform.toggleAllKanjiDueLessons()">
+        All
+        <span class="due-chip-count">${totalDeckDue}</span>
+      </button>
+    `;
+    const lessonChipsHtml = dueLessonsList.map(lNum => {
+      const isSel = state.selectedDueKanjiLessons.has(lNum) || state.selectedDueKanjiLessons.has(String(lNum));
+      const lbl = `L${String(lNum).padStart(2, '0')}`;
+      return `
+        <button class="due-chip cyan ${isSel ? 'selected' : ''}" title="Lesson ${lNum} (${dueLessonsCount[lNum]} due)" onclick="window.N3BookPlatform.toggleKanjiDueLesson(${lNum})">
+          ${lbl}
+          <span class="due-chip-count">${dueLessonsCount[lNum]}</span>
+        </button>
+      `;
+    }).join('');
+
+    filterGridHtml = `
+      <div class="due-chapter-filter-section">
+        <div class="due-filter-header">
+          <span class="due-filter-title" style="color: var(--cyan);"><i class="fa-solid fa-filter"></i> Filter by Lesson:</span>
+          <span style="font-size: 0.72rem; color: var(--text-dim);">${hasFilter ? `${state.selectedDueKanjiLessons.size} selected` : 'All due lessons'}</span>
+        </div>
+        <div class="due-chapter-grid">
+          ${allChipHtml}
+          ${lessonChipsHtml}
+        </div>
+      </div>
+    `;
+  }
 
   container.innerHTML = `
     <div class="pillar-srs-card">
@@ -335,7 +464,8 @@ export function renderKanjiSRSPane() {
         <span class="psc-count" style="color: var(--cyan);">${dueCount}</span>
         <span class="psc-count-label">${subLabel}</span>
       </div>
-      <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">
+      ${filterGridHtml}
+      <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5; margin-top: 0.75rem;">
         Multi-facet SRS: character recognition (K:), reading identification (KWR:), and writing recall (KWW:).
       </p>
       <div class="today-batch-selector" style="margin-top: 1rem;">
@@ -347,7 +477,7 @@ export function renderKanjiSRSPane() {
       </div>
       <div class="psc-actions">
         <button class="btn btn-primary psc-btn-launch" ${dueCount === 0 ? 'disabled' : ''} onclick="window.N3BookPlatform.startPillarSRS('kanji')">
-          <i class="fa-solid fa-play"></i> Launch Kanji Runner (~${Math.ceil((currentBatch === 'all' ? dueCount : parseInt(currentBatch, 10)) * 0.5)} min)
+          <i class="fa-solid fa-play"></i> Launch Kanji Runner (${dueCount} items · ~${Math.ceil(effectiveBatchCount * 0.5)} min)
         </button>
       </div>
     </div>
@@ -612,21 +742,66 @@ export const N3BookPlatform = {
     if (pillar === 'kanji') renderKanjiSRSPane();
     if (pillar === 'grammar') renderGrammarSRSPane();
   },
+  toggleVocabDueChapter: (chId) => {
+    if (!(state.selectedDueVocabChapters instanceof Set)) {
+      state.selectedDueVocabChapters = new Set();
+    }
+    if (state.selectedDueVocabChapters.has(chId) || state.selectedDueVocabChapters.has(String(chId))) {
+      state.selectedDueVocabChapters.delete(chId);
+      state.selectedDueVocabChapters.delete(String(chId));
+    } else {
+      state.selectedDueVocabChapters.add(chId);
+    }
+    renderVocabSRSPane();
+  },
+  toggleAllVocabDueChapters: () => {
+    if (!(state.selectedDueVocabChapters instanceof Set)) {
+      state.selectedDueVocabChapters = new Set();
+    }
+    state.selectedDueVocabChapters.clear();
+    renderVocabSRSPane();
+  },
+  toggleKanjiDueLesson: (lNum) => {
+    if (!(state.selectedDueKanjiLessons instanceof Set)) {
+      state.selectedDueKanjiLessons = new Set();
+    }
+    const num = Number(lNum);
+    if (state.selectedDueKanjiLessons.has(num) || state.selectedDueKanjiLessons.has(String(num))) {
+      state.selectedDueKanjiLessons.delete(num);
+      state.selectedDueKanjiLessons.delete(String(num));
+    } else {
+      state.selectedDueKanjiLessons.add(num);
+    }
+    renderKanjiSRSPane();
+  },
+  toggleAllKanjiDueLessons: () => {
+    if (!(state.selectedDueKanjiLessons instanceof Set)) {
+      state.selectedDueKanjiLessons = new Set();
+    }
+    state.selectedDueKanjiLessons.clear();
+    renderKanjiSRSPane();
+  },
   startPillarSRS: (pillar) => {
     const limit = activeBatches[pillar] === 'all' ? 100 : parseInt(activeBatches[pillar], 10);
     state.dueBatchSize = limit;
     let filter = null;
-    if (pillar === 'vocab' && state.selectedVocabChapters && state.selectedVocabChapters.size > 0) {
-      filter = state.selectedVocabChapters;
-    } else if (pillar === 'kanji' && state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0) {
-      filter = state.kanjiSelectedLessons;
+    if (pillar === 'vocab') {
+      if (state.selectedDueVocabChapters && state.selectedDueVocabChapters.size > 0) {
+        filter = state.selectedDueVocabChapters;
+      }
+    } else if (pillar === 'kanji') {
+      if (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0) {
+        filter = state.selectedDueKanjiLessons;
+      }
     }
     if (typeof window.startDueReview === 'function') {
       window.startDueReview(pillar, filter);
     }
   },
   drillHardKanji: () => {
-    if (typeof window.startDueReview === 'function') {
+    if (typeof window.drillKanjiSelected === 'function') {
+      window.drillKanjiSelected();
+    } else if (typeof window.startDueReview === 'function') {
       window.startDueReview('kanji');
     }
   },

@@ -59,10 +59,18 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
 
   // Use explicit chapterFilter or active selection from state
   if (!chapterFilter) {
-    if (pillarFilter === 'vocab' && state.selectedVocabChapters && state.selectedVocabChapters.size > 0) {
-      chapterFilter = state.selectedVocabChapters;
-    } else if (pillarFilter === 'kanji' && state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0) {
-      chapterFilter = state.kanjiSelectedLessons;
+    if (pillarFilter === 'vocab') {
+      if (state.selectedDueVocabChapters && state.selectedDueVocabChapters.size > 0) {
+        chapterFilter = state.selectedDueVocabChapters;
+      } else if (state.selectedVocabChapters && state.selectedVocabChapters.size > 0 && state.vocabChapter !== 'all') {
+        chapterFilter = state.selectedVocabChapters;
+      }
+    } else if (pillarFilter === 'kanji') {
+      if (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0) {
+        chapterFilter = state.selectedDueKanjiLessons;
+      } else if (state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0) {
+        chapterFilter = state.kanjiSelectedLessons;
+      }
     }
   }
 

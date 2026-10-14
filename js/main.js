@@ -8,7 +8,7 @@ import { loadAllActiveBooks } from './data-loader.js';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
 import { showView } from './navigation.js';
 import { startStudy, startLearnNew, learnGotIt, skipCard, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js';
-import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected } from './vocab-browser.js?v=2.2';
+import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=2.2';
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView } from './home.js';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
@@ -86,6 +86,7 @@ window.drillAllHardWords = drillAllHardWords;
 window.toggleRevealHardWords = toggleRevealHardWords;
 window.setWeakPointsFilter = setWeakPointsFilter;
 window.drillVocabSelected = drillVocabSelected;
+window.toggleVocabMultiSelectMode = toggleVocabMultiSelectMode;
 
 // Dokkai Reading (Book 2)
 window.openReadingLesson = openReadingLesson;

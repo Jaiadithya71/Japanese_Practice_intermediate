@@ -393,12 +393,36 @@
           <!-- Rendered dynamically -->
         </div>
 
-        <div class="vocab-filter-tabs">
-          <button class="vf-tab active" id="vf-all" onclick="setVocabFilter('all')">All</button>
-          <button class="vf-tab" id="vf-learning" onclick="setVocabFilter('learning')">Learning</button>
-          <button class="vf-tab" id="vf-hard" onclick="setVocabFilter('hard')">Hard / Struggling</button>
-          <button class="vf-tab" id="vf-mastered" onclick="setVocabFilter('mastered')">Mastered</button>
+        <!-- Active Unit Title Banner -->
+        <div id="vocab-active-unit-banner"></div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem;">
+          <div class="vocab-filter-tabs" style="margin-bottom: 0;">
+            <button class="vf-tab active" id="vf-all" onclick="setVocabFilter('all')">All</button>
+            <button class="vf-tab" id="vf-learning" onclick="setVocabFilter('learning')">Learning</button>
+            <button class="vf-tab" id="vf-hard" onclick="setVocabFilter('hard')">Hard / Struggling</button>
+            <button class="vf-tab" id="vf-mastered" onclick="setVocabFilter('mastered')">Mastered</button>
+          </div>
+          
+          <label class="study-mode-toggle">
+            <input type="checkbox" id="vocab-study-mode" onchange="renderVocabList()" />
+            <span class="toggle-slider"></span>
+            <span class="toggle-label"><i class="fa-solid fa-eye-slash"></i> Study Mode (Mask Meanings)</span>
+          </label>
         </div>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="vocab-stats-strip" id="vocab-stats-strip">
+        <span id="vs-showing">— words</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-hard" style="color:var(--red, #ef4444);">0 hard</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-learning" style="color:var(--amber, #f59e0b);">0 learning</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-mastered" style="color:var(--green, #10b981);">0 mastered</span>
+        <span class="vs-sep">·</span>
+        <span id="vs-unseen" style="color:var(--text-dim, #7a8099);">0 unseen</span>
       </div>
 
       <div class="vocab-list" id="vocab-list-container">

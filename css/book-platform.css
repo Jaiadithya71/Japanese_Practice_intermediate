@@ -399,3 +399,190 @@
   font-weight: 600;
 }
 
+/* SRS Due Chapter Filter Widget (Elementary App Parity) */
+.due-chapter-filter-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.due-filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.due-filter-title {
+  font-size: 0.78rem;
+  color: var(--text-muted, #94a3b8);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.due-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+  width: 100%;
+}
+.due-chip {
+  background: var(--bg3, #1e2230);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  color: var(--text, #e2e8f0);
+  padding: 0.45rem 0.25rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  font-family: inherit;
+  min-height: 44px;
+  box-sizing: border-box;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.due-chip:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent, #7c6cfa);
+}
+.due-chip.selected {
+  background: rgba(124, 108, 250, 0.2);
+  border-color: var(--accent, #7c6cfa);
+  color: #fff;
+}
+.due-chip.cyan.selected {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: var(--cyan, #06b6d4);
+  color: #fff;
+}
+.due-chip-count {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--text-dim, #7a8099);
+}
+.due-chip.selected .due-chip-count {
+  color: var(--accent, #7c6cfa);
+}
+.due-chip.cyan.selected .due-chip-count {
+  color: var(--cyan, #06b6d4);
+}
+
+/* Active Chapter Banner & Vocab Stats Strip */
+.active-chapter-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.vocab-stats-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-muted, #94a3b8);
+  margin-bottom: 0.75rem;
+  padding: 0 0.25rem;
+  flex-wrap: wrap;
+}
+.vs-sep {
+  color: var(--text-dim, #64748b);
+}
+
+/* In-Line Study Mode (Mask Meanings) */
+.study-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted, #94a3b8);
+}
+.study-mode-toggle input {
+  display: none;
+}
+.toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  background-color: var(--bg3, #1e2230);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.toggle-slider:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #94a3b8;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.study-mode-toggle input:checked + .toggle-slider {
+  background-color: rgba(124, 108, 250, 0.25);
+  border-color: var(--accent, #7c6cfa);
+}
+.study-mode-toggle input:checked + .toggle-slider:before {
+  transform: translateX(14px);
+  background-color: var(--accent, #7c6cfa);
+}
+
+.vw-study-cell {
+  background: var(--bg3, #1e2230);
+  border: 1px dashed var(--border, rgba(255, 255, 255, 0.15));
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.18s ease;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.35rem;
+}
+.vw-study-cell:hover {
+  background: rgba(124, 108, 250, 0.1);
+  border-color: var(--accent, #7c6cfa);
+}
+.vw-study-cell .study-cell-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim, #7a8099);
+  width: 100%;
+}
+.vw-study-cell .study-cell-content {
+  display: none;
+  width: 100%;
+}
+.vw-study-cell.show {
+  background: transparent;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.vw-study-cell.show .study-cell-hint {
+  display: none;
+}
+.vw-study-cell.show .study-cell-content {
+  display: block;
+}
+

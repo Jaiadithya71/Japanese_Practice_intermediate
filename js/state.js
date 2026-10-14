@@ -38,6 +38,8 @@ export const state = {
   kanjiActiveTab: 'target', // 'target' | 'exercises' | 'review300' | 'special' | 'mock'
   kanjiPart: 'all',         // 'all' | 1 | 2 | 3 | 4 | 5
   kanjiLesson: 'all',       // 'all' | 1 .. 25
+  kanjiSelectedLessons: new Set(),
+  selectedDueKanjiLessons: new Set(),
   kanjiFilter: 'all',       // 'all' | 'learning' | 'hard' | 'mastered' | 'unseen'
   kanjiSearchQuery: '',
   kanjiExerciseLesson: 1,   // Active exercise lesson
@@ -58,6 +60,9 @@ export const state = {
   vocabFilter: 'all', // 'all' | 'learning' | 'hard' | 'mastered'
   vocabSearchQuery: '',
   showFurigana: true,
+  selectedVocabChapters: new Set(),
+  selectedDueVocabChapters: new Set(),
+  vocabMultiSelectMode: false,
   selectedHardChapters: new Set(),
   hardWordsDirection: 'ja-en',
 
