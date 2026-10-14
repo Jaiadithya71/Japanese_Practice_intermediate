@@ -94,101 +94,6 @@ async function getRemoteContent(pat, gistId) {
   if (file.truncated && file.raw_url) {
     const raw = await fetch(file.raw_url, { headers: headers(pat) });
     if (!raw.ok) throw new Error(`Could not read full remote progress (HTTP ${raw.status}); nothing was written.`);
-   NIHONGO INTERMEDIATE - gist-sync.js
-   Optional GitHub Gist sync for N3 progress (separate Gist
-   from the N5/N4 app). Token stays in this browser only.
-   ======================================================= */
-
-import { STORAGE_KEY } from './config.js';
-import { state } from './state.js';
-import { updateSidebarStats } from './srs.js';
-
-const GIST_FILENAME = 'nihongo-n3-stats.json';
-const PAT_KEY = 'n3_github_pat';
-const GIST_ID_KEY = 'n3_gist_id';
-const API = 'https://api.github.com';
-
-let saveTimer = null;
-let dirty = false;
-
-function creds() {
-  return { pat: localStorage.getItem(PAT_KEY), gistId: localStorage.getItem(GIST_ID_KEY) };
-}
-
-function headers(pat, json) {
-  const h = { Authorization: `Bearer ${pat}`, Accept: 'application/vnd.github.v3+json' };
-  if (json) h['Content-Type'] = 'application/json';
-  return h;
-}
-
-function setStatus(kind, text) {
-  const el = document.getElementById('n3sync-status');
-  const label = document.getElementById('n3sync-label');
-  if (el) el.className = `n3s-pill n3s-${kind}`;
-  if (label) label.textContent = text;
-  // Icon reflects state: cloud (idle), spinning arrows (working), check (synced), warning (error)
-  const icon = el && el.querySelector('i');
-  if (icon) {
-    const map = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation' };
-    icon.className = `fa-solid ${map[kind] || 'fa-cloud'}`;
-  }
-  const info = document.getElementById('n3s-info');
-  if (info) info.textContent = text;
-}
-
-function itemScore(s) {
-  return (s.correct || 0) + (s.incorrect || 0);
-}
-
-// Merge remote stats into local: newer lastSeen wins; if tied, the entry with more reviews wins.
-function mergeStats(remote) {
-  let changed = false;
-  Object.entries(remote || {}).forEach(([key, rs]) => {
-    const ls = state.stats[key];
-    if (!ls) { state.stats[key] = rs; changed = true; return; }
-    const lt = ls.lastSeen || 0, rt = rs.lastSeen || 0;
-    if (rt > lt || (rt === lt && itemScore(rs) > itemScore(ls))) {
-      state.stats[key] = {
-        ...rs,
-        correct: Math.max(ls.correct || 0, rs.correct || 0),
-        incorrect: Math.max(ls.incorrect || 0, rs.incorrect || 0)
-      };
-      changed = true;
-    }
-  });
-  return changed;
-}
-
-function refreshViews() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.stats));
-  updateSidebarStats();
-  if (state.currentView && state.currentView !== 'study' && typeof window.showView === 'function') {
-    window.showView(state.currentView);
-  }
-}
-
-function serializeStats() {
-  if (!state.stats || typeof state.stats !== 'object' || Array.isArray(state.stats)) {
-    throw new Error('Local progress is not a valid stats object; nothing was written.');
-  }
-  const content = JSON.stringify(state.stats, null, 2);
-  const parsed = JSON.parse(content);
-  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
-    throw new Error('Local progress did not serialize to a valid stats object; nothing was written.');
-  }
-  return content;
-}
-
-async function getRemoteContent(pat, gistId) {
-  const res = await fetch(`${API}/gists/${gistId}?t=${Date.now()}`, { headers: headers(pat) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const gist = await res.json();
-  const file = gist.files && gist.files[GIST_FILENAME];
-  if (!file) throw new Error('The progress file is missing from the Gist; nothing was written.');
-  let content = file.content;
-  if (file.truncated && file.raw_url) {
-    const raw = await fetch(file.raw_url, { headers: headers(pat) });
-    if (!raw.ok) throw new Error(`Could not read full remote progress (HTTP ${raw.status}); nothing was written.`);
     content = await raw.text();
   }
   if (typeof content !== 'string' || !content.length) {
@@ -219,7 +124,7 @@ async function push(pat, gistId, allowCorruptRemote = false) {
       if (!(allowCorruptRemote && e instanceof SyntaxError)) throw e;
     }
   } catch (e) {
-    setStatus('error', `Sync blocked: ${e.message}`);
+    setStatus('error', 'Sync blocked: ' + e.message);
     return false;
   }
   const delays = [2000, 5000, 10000];
@@ -260,7 +165,7 @@ export function scheduleGistSave() {
   saveTimer = setTimeout(() => push(pat, gistId), 15000);
 }
 
-export async function gistLoadStats({ allowRepair = false } = {}) {
+export async function gistLoadStats(options = {}) {
   const { pat, gistId } = creds();
   if (!pat || !gistId) return;
   try {
@@ -269,13 +174,13 @@ export async function gistLoadStats({ allowRepair = false } = {}) {
     if (mergeStats(remote)) refreshViews();
     await push(pat, gistId);
   } catch (e) {
-    if (allowRepair && e instanceof SyntaxError) {
-      setStatus('saving', 'Remote JSON is damaged; validating this device’s progress…');
+    if (options.allowRepair && e instanceof SyntaxError) {
+      setStatus('saving', 'Remote JSON is damaged; validating this device progress…');
       const ok = await push(pat, gistId, true);
       if (ok) setStatus('ok', 'Synced valid progress from this device');
       return;
     }
-    setStatus('error', `Sync error: ${e.message}`);
+    setStatus('error', 'Sync error: ' + e.message);
   }
 }
 
@@ -325,7 +230,7 @@ export async function connectGist() {
         body: JSON.stringify({
           description: 'Nihongo N3 - SRS study progress (auto-managed)',
           public: false,
-          files: { [GIST_FILENAME]: { content: serializeStats() } }
+          files: { [GIST_FILENAME]: { content: JSON.stringify(state.stats, null, 2) } }
         })
       });
       if (!createRes.ok) throw new Error('Could not create the Gist. Check the token has the "gist" permission.');
@@ -365,3 +270,4 @@ export function initSyncUI() {
   // beforeunload cannot safely validate remote state, so it never PATCHes.
   if (pat && gistId) gistLoadStats();
 }
+
