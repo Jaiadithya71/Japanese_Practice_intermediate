@@ -40,6 +40,7 @@ import './reading-types.js';
 import './grammar-srs.js';
 import './me-tab.js';
 import './class-curriculum.js';
+import './book-platform.js';
 
 // Expose controllers to window for HTML event handlers
 window.state = state;

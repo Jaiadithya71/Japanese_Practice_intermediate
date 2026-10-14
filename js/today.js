@@ -426,8 +426,8 @@ export function renderToday() {
             <i class="fa-solid fa-cloud-arrow-up"></i>
             <span>Sync</span>
           </button>
-          <button class="btn-icon" onclick="openMoreMenu()" aria-label="More options">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
+          <button class="btn-icon" onclick="window.openSettingsDrawer ? window.openSettingsDrawer() : openMoreMenu()" aria-label="Settings and Backup" title="Settings">
+            <i class="fa-solid fa-gear"></i>
           </button>
         </div>
       </div>

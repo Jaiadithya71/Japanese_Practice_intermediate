@@ -32,17 +32,17 @@ if (!state.ui) {
 export const VIEW_TO_TAB = {
   today: 'today',
   home: 'today',
-  learn: 'learn',
-  kanji: 'learn',
-  vocab: 'learn',
-  grammar: 'learn',
-  class: 'learn',
-  'class-track': 'learn',
-  read: 'read',
-  reading: 'read',
-  test: 'test',
-  me: 'me',
-  'hard-words': 'me'
+  vocab: 'vocab',
+  kanji: 'kanji',
+  grammar: 'grammar',
+  reading: 'reading',
+  read: 'reading',
+  learn: 'kanji',
+  class: 'today',
+  'class-track': 'today',
+  test: 'today',
+  me: 'today',
+  'hard-words': 'today'
 };
 
 /**

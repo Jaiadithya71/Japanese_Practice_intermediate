@@ -430,9 +430,11 @@ export function renderGrammarGuide() {
 }
 
 // Window bindings for inline onclicks
-window.setGrammarTab = setGrammarTab;
-window.setGrammarPartFilter = setGrammarPartFilter;
-window.onGrammarSearch = onGrammarSearch;
-window.selectGrammarSection = selectGrammarSection;
-window.answerGrammarDrill = answerGrammarDrill;
-window.answerGrammarStar = answerGrammarStar;
+if (typeof window !== 'undefined') {
+  window.setGrammarTab = setGrammarTab;
+  window.setGrammarPartFilter = setGrammarPartFilter;
+  window.onGrammarSearch = onGrammarSearch;
+  window.selectGrammarSection = selectGrammarSection;
+  window.answerGrammarDrill = answerGrammarDrill;
+  window.answerGrammarStar = answerGrammarStar;
+}

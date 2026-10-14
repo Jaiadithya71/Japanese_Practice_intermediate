@@ -42,13 +42,13 @@ assert.ok(
 assert.ok(html.includes('id="mobile-dock"'), 'nav#mobile-dock must exist in index.html');
 assert.ok(html.includes('class="mobile-dock'), 'nav#mobile-dock must have class "mobile-dock"');
 
-// Verify the 5 dock items:
+// Verify the 5 dock items (Book-First Architecture):
 const expectedTabs = [
-  { tab: 'today', icon: 'fa-calendar-day', label: '今日 Today' },
-  { tab: 'learn', icon: 'fa-graduation-cap', label: '学習 Learn' },
-  { tab: 'read', icon: 'fa-book-open', label: '読解 Read' },
-  { tab: 'test', icon: 'fa-file-pen', label: '試験 Test' },
-  { tab: 'me', icon: 'fa-user', label: '私 Me' }
+  { tab: 'today', icon: 'fa-calendar-day', label: '今日' },
+  { tab: 'vocab', icon: 'fa-book-bookmark', label: '語彙' },
+  { tab: 'kanji', icon: 'fa-shapes', label: '漢字' },
+  { tab: 'grammar', icon: 'fa-pen-nib', label: '文法' },
+  { tab: 'reading', icon: 'fa-book-open', label: '読解' }
 ];
 
 for (const t of expectedTabs) {
@@ -70,29 +70,20 @@ for (const t of expectedTabs) {
   );
 }
 
-// Verify Container Views in index.html
+// Verify Container Views in index.html (Book-First Hubs)
 assert.ok(html.includes('id="view-today"'), 'div#view-today container must exist');
 assert.ok(html.includes('id="view-home"'), 'section#view-home must be preserved inside/alongside view-today');
-assert.ok(html.includes('id="view-learn"'), 'div#view-learn container must exist');
 assert.ok(html.includes('id="view-kanji"'), 'section#view-kanji must be preserved');
 assert.ok(html.includes('id="view-vocab"'), 'section#view-vocab must be preserved');
 assert.ok(html.includes('id="view-grammar"'), 'section#view-grammar must be preserved');
-assert.ok(html.includes('id="view-read"'), 'div#view-read container must exist');
 assert.ok(html.includes('id="view-reading"'), 'section#view-reading must be preserved');
-assert.ok(html.includes('id="view-test"'), 'section#view-test must be preserved');
-assert.ok(html.includes('id="view-me"'), 'div#view-me container must exist');
-assert.ok(html.includes('id="view-hard-words"'), 'section#view-hard-words must be preserved in Me tab');
 assert.ok(html.includes('id="view-study"'), 'section#view-study runner must be preserved');
 
-// Verify Learn segmented control
-assert.ok(html.includes('data-segment="kanji"'), 'Learn segmented control must have kanji segment');
-assert.ok(html.includes('data-segment="vocab"'), 'Learn segmented control must have vocab segment');
-assert.ok(html.includes('data-segment="grammar"'), 'Learn segmented control must have grammar segment');
-
-// Verify Me segmented control
-assert.ok(html.includes('data-segment="weak"'), 'Me segmented control must have weak segment');
-assert.ok(html.includes('data-segment="stats"'), 'Me segmented control must have stats segment');
-assert.ok(html.includes('data-segment="settings"'), 'Me segmented control must have settings segment');
+// Verify Pillar Sub-tabs
+assert.ok(html.includes('id="subtabs-vocab"'), 'Vocab must have sub-tabs');
+assert.ok(html.includes('id="subtabs-kanji"'), 'Kanji must have sub-tabs');
+assert.ok(html.includes('id="subtabs-grammar"'), 'Grammar must have sub-tabs');
+assert.ok(html.includes('id="subtabs-reading"'), 'Reading must have sub-tabs');
 
 console.log('✓ index.html structure verified successfully');
 
@@ -245,7 +236,7 @@ mainEl.scrollTop = 100;
 mockDoc.register(mainEl);
 
 // Register dock items
-const dockTabs = ['today', 'learn', 'read', 'test', 'me'];
+const dockTabs = ['today', 'vocab', 'kanji', 'grammar', 'reading'];
 dockTabs.forEach(t => {
   const el = new MockElement(`dock-${t}`, 'button', ['mobile-dock-item', 'mobile-nav-item']);
   el.setAttribute('data-tab', t);
@@ -254,11 +245,11 @@ dockTabs.forEach(t => {
 
 // Register desktop sidebar buttons
 const navBtns = [
-  { view: 'home', tab: 'today' },
-  { view: 'learn', tab: 'learn' },
-  { view: 'reading', tab: 'read' },
-  { view: 'test', tab: 'test' },
-  { view: 'me', tab: 'me' }
+  { view: 'today', tab: 'today' },
+  { view: 'vocab', tab: 'vocab' },
+  { view: 'kanji', tab: 'kanji' },
+  { view: 'grammar', tab: 'grammar' },
+  { view: 'reading', tab: 'reading' }
 ];
 navBtns.forEach(b => {
   const el = new MockElement(`nav-${b.view}`, 'button', ['nav-btn']);
@@ -316,15 +307,15 @@ const { state } = await import('../js/state.js');
 const expectedMappings = {
   today: 'today',
   home: 'today',
-  learn: 'learn',
-  kanji: 'learn',
-  vocab: 'learn',
-  grammar: 'learn',
-  read: 'read',
-  reading: 'read',
-  test: 'test',
-  me: 'me',
-  'hard-words': 'me'
+  vocab: 'vocab',
+  kanji: 'kanji',
+  grammar: 'grammar',
+  reading: 'reading',
+  read: 'reading',
+  learn: 'kanji',
+  test: 'today',
+  me: 'today',
+  'hard-words': 'today'
 };
 
 for (const [route, expectedTab] of Object.entries(expectedMappings)) {
@@ -348,7 +339,7 @@ assert.equal(state.currentView, 'today', 'state.currentView should be today');
 assert.ok(mockDoc.getElementById('view-today').classList.contains('active'), 'view-today must be active');
 assert.ok(mockDoc.getElementById('view-home').classList.contains('active'), 'view-home must be active');
 assert.ok(mockDoc.getElementById('dock-today').classList.contains('active'), 'dock today must be highlighted');
-assert.ok(!mockDoc.getElementById('dock-learn').classList.contains('active'), 'dock learn must not be active');
+assert.ok(!mockDoc.getElementById('dock-vocab').classList.contains('active'), 'dock vocab must not be active');
 
 showView('home');
 assert.equal(state.currentView, 'home', 'state.currentView should be home');
@@ -359,29 +350,30 @@ assert.ok(mockDoc.getElementById('dock-today').classList.contains('active'), 'do
 showView('learn');
 assert.equal(state.currentView, 'learn', 'state.currentView should be learn');
 assert.ok(mockDoc.getElementById('view-learn').classList.contains('active'), 'view-learn must be active');
-assert.ok(mockDoc.getElementById('dock-learn').classList.contains('active'), 'dock learn must be active');
+assert.ok(mockDoc.getElementById('dock-kanji').classList.contains('active'), 'dock kanji must be active for legacy learn route');
 assert.ok(!mockDoc.getElementById('dock-today').classList.contains('active'), 'dock today must be deactivated');
 
-// Test direct pillar routes inside Learn
+// Test direct pillar routes inside Book-First platform
 showView('kanji');
 assert.equal(state.currentView, 'kanji');
 assert.equal(state.ui.learnSegment, 'kanji');
 assert.ok(mockDoc.getElementById('view-kanji').classList.contains('active'), 'view-kanji must be active');
 assert.ok(!mockDoc.getElementById('view-vocab').classList.contains('active'), 'view-vocab must be inactive');
-assert.ok(mockDoc.getElementById('dock-learn').classList.contains('active'), 'dock learn must remain highlighted');
+assert.ok(mockDoc.getElementById('dock-kanji').classList.contains('active'), 'dock kanji must be highlighted');
 
 showView('vocab');
 assert.equal(state.currentView, 'vocab');
 assert.equal(state.ui.learnSegment, 'vocab');
 assert.ok(mockDoc.getElementById('view-vocab').classList.contains('active'), 'view-vocab must be active');
 assert.ok(!mockDoc.getElementById('view-kanji').classList.contains('active'), 'view-kanji must be inactive');
-assert.ok(mockDoc.getElementById('dock-learn').classList.contains('active'), 'dock learn must remain highlighted');
+assert.ok(mockDoc.getElementById('dock-vocab').classList.contains('active'), 'dock vocab must be highlighted');
 
 showView('grammar');
 assert.equal(state.currentView, 'grammar');
 assert.equal(state.ui.learnSegment, 'grammar');
 assert.ok(mockDoc.getElementById('view-grammar').classList.contains('active'), 'view-grammar must be active');
 assert.ok(!mockDoc.getElementById('view-vocab').classList.contains('active'), 'view-vocab must be inactive');
+assert.ok(mockDoc.getElementById('dock-grammar').classList.contains('active'), 'dock grammar must be highlighted');
 
 // Test switchLearnSegment directly
 switchLearnSegment('kanji');
@@ -394,30 +386,30 @@ assert.ok(!mockDoc.getElementById('seg-learn-vocab').classList.contains('active'
 showView('read');
 assert.equal(state.currentView, 'read');
 assert.ok(mockDoc.getElementById('view-reading').classList.contains('active'), 'view-reading must be active');
-assert.ok(mockDoc.getElementById('dock-read').classList.contains('active'), 'dock read must be highlighted');
+assert.ok(mockDoc.getElementById('dock-reading').classList.contains('active'), 'dock reading must be highlighted');
 
 showView('reading');
 assert.equal(state.currentView, 'reading');
 assert.ok(mockDoc.getElementById('view-reading').classList.contains('active'), 'view-reading must be active');
-assert.ok(mockDoc.getElementById('dock-read').classList.contains('active'), 'dock read must be highlighted');
+assert.ok(mockDoc.getElementById('dock-reading').classList.contains('active'), 'dock reading must be highlighted');
 
-// Test 4.4: showView('test')
+// Test 4.4: showView('test') (legacy test route maps to today)
 showView('test');
 assert.equal(state.currentView, 'test');
 assert.ok(mockDoc.getElementById('view-test').classList.contains('active'), 'view-test must be active');
-assert.ok(mockDoc.getElementById('dock-test').classList.contains('active'), 'dock test must be highlighted');
+assert.ok(mockDoc.getElementById('dock-today').classList.contains('active'), 'dock today must be highlighted');
 
-// Test 4.5: showView('me') & showView('hard-words')
+// Test 4.5: showView('me') & showView('hard-words') (legacy me routes map to today)
 showView('me');
 assert.equal(state.currentView, 'me');
 assert.ok(mockDoc.getElementById('view-me').classList.contains('active'), 'view-me must be active');
-assert.ok(mockDoc.getElementById('dock-me').classList.contains('active'), 'dock me must be highlighted');
+assert.ok(mockDoc.getElementById('dock-today').classList.contains('active'), 'dock today must be highlighted');
 
 showView('hard-words');
 assert.equal(state.currentView, 'hard-words');
 assert.equal(state.ui.meSegment, 'weak');
 assert.ok(mockDoc.getElementById('view-hard-words').classList.contains('active'), 'view-hard-words must be active');
-assert.ok(mockDoc.getElementById('dock-me').classList.contains('active'), 'dock me must be highlighted');
+assert.ok(mockDoc.getElementById('dock-today').classList.contains('active'), 'dock today must be highlighted');
 
 // Test switchMeSegment
 switchMeSegment('stats');
@@ -437,10 +429,10 @@ showView('study');
 assert.equal(state.currentView, 'study');
 assert.ok(mockDoc.body.classList.contains('in-runner'), 'body must have in-runner class when in study');
 assert.ok(!mockDoc.getElementById('dock-today').classList.contains('active'));
-assert.ok(!mockDoc.getElementById('dock-learn').classList.contains('active'));
-assert.ok(!mockDoc.getElementById('dock-read').classList.contains('active'));
-assert.ok(!mockDoc.getElementById('dock-test').classList.contains('active'));
-assert.ok(!mockDoc.getElementById('dock-me').classList.contains('active'));
+assert.ok(!mockDoc.getElementById('dock-vocab').classList.contains('active'));
+assert.ok(!mockDoc.getElementById('dock-kanji').classList.contains('active'));
+assert.ok(!mockDoc.getElementById('dock-grammar').classList.contains('active'));
+assert.ok(!mockDoc.getElementById('dock-reading').classList.contains('active'));
 
 // Exiting runner mode restores dock
 showView('today');

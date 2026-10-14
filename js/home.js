@@ -12,7 +12,7 @@ export function startSingleChapterStudy(chId) {
   state.selectedChapters.add(chId);
   startStudy('flashcard', false, 'home');
 }
-window.startSingleChapterStudy = startSingleChapterStudy;
+if (typeof window !== 'undefined') window.startSingleChapterStudy = startSingleChapterStudy;
 
 export function renderHomeView() {
   updateMasteryCounters();

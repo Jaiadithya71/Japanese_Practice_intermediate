@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="css/grammar-star.css" />
   <link rel="stylesheet" href="css/me-tab.css" />
   <link rel="stylesheet" href="css/class-track.css" />
+  <link rel="stylesheet" href="css/book-platform.css" />
 </head>
 <body>
 
@@ -43,54 +44,40 @@
     </div>
 
     <nav class="sidebar-nav">
-      <!-- Pillar 1: Today -->
-      <button class="nav-btn active" data-view="home" data-tab="today" onclick="showView('today')">
+      <!-- 1. Today -->
+      <button class="nav-btn active" data-view="today" data-tab="today" onclick="showView('today')">
         <i class="fa-solid fa-calendar-day"></i>
         <span>今日 Today</span>
       </button>
 
-      <!-- Pillar 2: Learn -->
-      <button class="nav-btn" data-view="learn" data-tab="learn" onclick="showView('learn')">
-        <i class="fa-solid fa-graduation-cap"></i>
-        <span>学習 Learn</span>
+      <!-- 2. Vocab -->
+      <button class="nav-btn" data-view="vocab" data-tab="vocab" onclick="showView('vocab')">
+        <i class="fa-solid fa-book-bookmark"></i>
+        <span>1. 語彙 (Vocab)</span>
       </button>
-      <div class="sidebar-subnav">
-        <button class="nav-sub-btn" data-view="kanji" onclick="showView('kanji')">
-          <i class="fa-solid fa-shapes"></i>
-          <span>4. 漢字 (Kanji)</span>
-          <span class="badge badge-green">Ready</span>
-        </button>
-        <button class="nav-sub-btn" data-view="vocab" onclick="showView('vocab')">
-          <i class="fa-solid fa-book-bookmark"></i>
-          <span>1. 語彙 (Vocab)</span>
-          <span class="badge badge-green">Ready</span>
-        </button>
-        <button class="nav-sub-btn" data-view="grammar" onclick="showView('grammar')">
-          <i class="fa-solid fa-diagram-project"></i>
-          <span>3. 文法 (Grammar)</span>
-          <span class="badge badge-green">Ready</span>
-        </button>
-      </div>
 
-      <!-- Pillar 3: Read -->
-      <button class="nav-btn" data-view="reading" data-tab="read" onclick="showView('read')">
+      <!-- 3. Kanji -->
+      <button class="nav-btn" data-view="kanji" data-tab="kanji" onclick="showView('kanji')">
+        <i class="fa-solid fa-shapes"></i>
+        <span>2. 漢字 (Kanji)</span>
+      </button>
+
+      <!-- 4. Grammar -->
+      <button class="nav-btn" data-view="grammar" data-tab="grammar" onclick="showView('grammar')">
+        <i class="fa-solid fa-pen-nib"></i>
+        <span>3. 文法 (Grammar)</span>
+      </button>
+
+      <!-- 5. Reading -->
+      <button class="nav-btn" data-view="reading" data-tab="reading" onclick="showView('reading')">
         <i class="fa-solid fa-book-open"></i>
-        <span>2. 読解 (Reading)</span>
-        <span class="badge badge-green">Ready</span>
+        <span>4. 読解 (Reading)</span>
       </button>
 
-      <!-- Pillar 4: Test -->
-      <button class="nav-btn" data-view="test" data-tab="test" onclick="showView('test')">
-        <i class="fa-solid fa-file-pen"></i>
-        <span>試験 Test</span>
-        <span class="badge badge-accent" id="nav-test-count">1,338 Qs</span>
-      </button>
-
-      <!-- Pillar 5: Me -->
-      <button class="nav-btn" data-view="me" data-tab="me" onclick="showView('me')" style="margin-top: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.85rem;">
-        <i class="fa-solid fa-user"></i>
-        <span>私 Me</span>
-        <span id="hard-count-badge" class="badge badge-red hide">0</span>
+      <!-- Settings / Backup -->
+      <button class="nav-btn" data-view="settings" onclick="openSettingsDrawer()" style="margin-top: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.85rem;">
+        <i class="fa-solid fa-gear"></i>
+        <span>設定・バックアップ</span>
       </button>
     </nav>
 
@@ -206,33 +193,12 @@
     <!-- ==============================================
          TAB 2: LEARN (KANJI, VOCAB, GRAMMAR)
          ============================================== -->
-    <div id="view-learn" class="view">
-      <!-- Sticky segmented control -->
-      <div class="segmented-control learn-segmented-control" role="tablist">
-        <button class="seg-btn active" id="seg-learn-kanji" data-segment="kanji" onclick="switchLearnSegment('kanji')" role="tab">
-          <i class="fa-solid fa-shapes"></i>
-          <span>漢字 Kanji</span>
-        </button>
-        <button class="seg-btn" id="seg-learn-vocab" data-segment="vocab" onclick="switchLearnSegment('vocab')" role="tab">
-          <i class="fa-solid fa-book-bookmark"></i>
-          <span>語彙 Vocab</span>
-        </button>
-        <button class="seg-btn" id="seg-learn-grammar" data-segment="grammar" onclick="switchLearnSegment('grammar')" role="tab">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span>文法 Grammar</span>
-        </button>
-        <button class="seg-btn" id="seg-learn-class" data-segment="class" onclick="switchLearnSegment('class')" role="tab">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <span>同期 Class Track</span>
-        </button>
-      </div>
-
-      <div class="learn-segments-container">
-        <!-- BOOK 4: KANJI MASTERY SUITE -->
+    
+        <!-- BOOK 2: KANJI MASTERY SUITE -->
         <section id="view-kanji" class="view">
       <div class="view-header">
         <div class="view-title-group">
-          <h2>4. 漢字 (Kanji Master Suite)</h2>
+          <h2>2. 漢字 (Kanji Master Suite)</h2>
           <p>新完全マスター 漢字 N3 · 443 Target Characters, Lessons 01–25, Practice Drills &amp; Bessatsu 300 Review</p>
         </div>
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
@@ -240,6 +206,32 @@
             <i class="fa-solid fa-play"></i> Drill Lesson Cards
           </button>
         </div>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-kanji" role="tablist">
+        <button class="pst-btn active" data-sub="target" onclick="setKanjiSubTab('target')">
+          <i class="fa-solid fa-shapes"></i> 漢字一覧 Target Kanji
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setKanjiSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 復習 Due SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setKanjiSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 苦手 Hard Kanji <span class="badge badge-red" id="subtab-kanji-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="exercises" onclick="setKanjiSubTab('exercises')">
+          <i class="fa-solid fa-pen-to-square"></i> 練習問題 Drills (833 Qs)
+        </button>
+      </div>
+
+      <!-- Sub-Pane 2: Due SRS -->
+      <div id="kanji-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="kanji-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Hard Kanji -->
+      <div id="kanji-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="kanji-hard-container"></div>
       </div>
 
       <!-- Kanji Tabs -->
@@ -358,6 +350,25 @@
         </div>
       </div>
 
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-vocab" role="tablist">
+        <button class="pst-btn active" data-sub="units" onclick="setVocabSubTab('units')">
+          <i class="fa-solid fa-list"></i> 単語一覧 Units
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setVocabSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 復習 Due SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setVocabSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 苦手 Hard Words <span class="badge badge-red" id="subtab-vocab-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="tests" onclick="setVocabSubTab('tests')">
+          <i class="fa-solid fa-pen-to-square"></i> テスト Tests
+        </button>
+      </div>
+
+      <!-- Sub-Pane 1: Units -->
+      <div id="vocab-pane-units" class="pillar-pane active">
+
       <div class="vocab-controls">
         <div class="vocab-search-row">
           <div class="search-box">
@@ -387,10 +398,59 @@
       <div class="vocab-list" id="vocab-list-container">
         <!-- Rendered dynamically -->
       </div>
+      </div> <!-- /vocab-pane-units -->
+
+      <!-- Sub-Pane 2: Due SRS -->
+      <div id="vocab-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="vocab-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Hard Words -->
+      <div id="vocab-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="vocab-hard-container"></div>
+      </div>
+
+      <!-- Sub-Pane 4: Tests -->
+      <div id="vocab-pane-tests" class="pillar-pane" style="display: none;">
+        <div id="vocab-tests-container"></div>
+      </div>
     </section>
 
         <!-- BOOK 3: GRAMMAR MASTERY SUITE -->
         <section id="view-grammar" class="view">
+      <div class="view-header">
+        <div class="view-title-group">
+          <h2>3. 文法 (Grammar Master Suite)</h2>
+          <p>新完全マスター 文法 N3 · 83 Grammar Patterns, Star Problems (★) &amp; Text Passages</p>
+        </div>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-grammar" role="tablist">
+        <button class="pst-btn active" data-sub="patterns" onclick="setGrammarSubTab('patterns')">
+          <i class="fa-solid fa-list-check"></i> 文型一覧 Patterns
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setGrammarSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 復習 Due SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setGrammarSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 苦手 &amp; 混同 Clusters <span class="badge badge-red" id="subtab-grammar-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="drills" onclick="setGrammarSubTab('drills')">
+          <i class="fa-solid fa-pen-clip"></i> 演習問題 Drills &amp; Mocks
+        </button>
+      </div>
+
+      <!-- Sub-Pane 2: Due SRS -->
+      <div id="grammar-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="grammar-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Hard & Clusters -->
+      <div id="grammar-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="grammar-hard-container"></div>
+      </div>
+
       <!-- Grammar Master Tab Bar -->
       <div class="grammar-tabs-bar" style="display: flex; gap: 0.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.25rem; overflow-x: auto; padding-bottom: 0.5rem;">
         <button class="btn btn-sm btn-ghost grammar-tab-btn active" data-tab="patterns" onclick="setGrammarTab('patterns')">
@@ -476,8 +536,6 @@
         <section id="view-class-track" class="view">
           <div id="class-track-container"></div>
         </section>
-      </div>
-    </div>
 
     <!-- ==============================================
          TAB 3: READ (BOOK 2: DOKKAI READING COMPREHENSION)
@@ -485,14 +543,33 @@
     <div id="view-read" class="view">
       <section id="view-reading" class="view">
       <!-- Section A: Lesson List & Browser -->
-      <div id="dokkai-list-section">
-        <div class="view-header">
-          <div class="view-title-group">
-            <h1>Book 2: 読解 (Reading Comprehension)</h1>
-            <p>Sentence-by-sentence reading, grammar clause parsing, and official JLPT N3 comprehension quizzes.</p>
-          </div>
-          <span class="badge badge-cyan" id="dokkai-count-badge">49 Lessons</span>
+      <div class="view-header">
+        <div class="view-title-group">
+          <h1>4. 読解 (Reading Comprehension Hub)</h1>
+          <p>Sentence-by-sentence reading, grammar clause parsing, and official JLPT N3 comprehension quizzes.</p>
         </div>
+        <span class="badge badge-cyan" id="dokkai-count-badge">49 Lessons</span>
+      </div>
+
+      <!-- Pillar Sub-Tabs -->
+      <div class="pillar-sub-tabs" id="subtabs-reading" role="tablist">
+        <button class="pst-btn active" data-sub="passages" onclick="setReadingSubTab('passages')">
+          <i class="fa-solid fa-book-open"></i> 読解一覧 Passages
+        </button>
+        <button class="pst-btn" data-sub="srs" onclick="setReadingSubTab('srs')">
+          <i class="fa-solid fa-bolt"></i> 再読復習 Re-read SRS
+        </button>
+        <button class="pst-btn" data-sub="hard" onclick="setReadingSubTab('hard')">
+          <i class="fa-solid fa-fire"></i> 誤答問題 Missed Qs <span class="badge badge-red" id="subtab-reading-hard-badge">0</span>
+        </button>
+        <button class="pst-btn" data-sub="tests" onclick="setReadingSubTab('tests')">
+          <i class="fa-solid fa-clipboard-check"></i> 総合テスト Tests
+        </button>
+      </div>
+
+      <!-- Sub-Pane 1: Passages -->
+      <div id="reading-pane-passages" class="pillar-pane active">
+      <div id="dokkai-list-section">
 
         <!-- Category Tabs -->
         <div class="reader-category-tabs" id="reader-category-tabs">
@@ -509,6 +586,22 @@
         <div id="dokkai-workspace-container">
           <!-- Rendered dynamically by reader.js -->
         </div>
+      </div>
+      </div> <!-- /reading-pane-passages -->
+
+      <!-- Sub-Pane 2: Re-read SRS -->
+      <div id="reading-pane-srs" class="pillar-pane" style="display: none;">
+        <div id="reading-srs-container"></div>
+      </div>
+
+      <!-- Sub-Pane 3: Missed Questions -->
+      <div id="reading-pane-hard" class="pillar-pane" style="display: none;">
+        <div id="reading-hard-container"></div>
+      </div>
+
+      <!-- Sub-Pane 4: Tests -->
+      <div id="reading-pane-tests" class="pillar-pane" style="display: none;">
+        <div id="reading-tests-container"></div>
       </div>
     </section>
     </div>
@@ -821,27 +914,27 @@
 
   </main>
 
-  <!-- ===== 5-TAB FLOATING GLASS DOCK ===== -->
+  <!-- ===== 5-TAB FLOATING GLASS DOCK (BOOK-FIRST) ===== -->
   <nav id="mobile-dock" class="mobile-dock">
     <button class="mobile-dock-item mobile-nav-item active" data-tab="today" onclick="showView('today')">
       <i class="fa-solid fa-calendar-day"></i>
-      <span>今日 Today</span>
+      <span>今日</span>
     </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="learn" onclick="showView('learn')">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <span>学習 Learn</span>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="vocab" onclick="showView('vocab')">
+      <i class="fa-solid fa-book-bookmark"></i>
+      <span>語彙</span>
     </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="read" onclick="showView('read')">
+    <button class="mobile-dock-item mobile-nav-item" data-tab="kanji" onclick="showView('kanji')">
+      <i class="fa-solid fa-shapes"></i>
+      <span>漢字</span>
+    </button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="grammar" onclick="showView('grammar')">
+      <i class="fa-solid fa-pen-nib"></i>
+      <span>文法</span>
+    </button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="reading" onclick="showView('reading')">
       <i class="fa-solid fa-book-open"></i>
-      <span>読解 Read</span>
-    </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="test" onclick="showView('test')">
-      <i class="fa-solid fa-file-pen"></i>
-      <span>試験 Test</span>
-    </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="me" onclick="showView('me')">
-      <i class="fa-solid fa-user"></i>
-      <span>私 Me</span>
+      <span>読解</span>
     </button>
   </nav>
   <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()">
@@ -924,5 +1017,53 @@
   </div>
 
   <script type="module" src="js/main.js"></script>
+
+  <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
+  <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">
+    <div class="settings-drawer">
+      <div class="sd-header">
+        <div class="sd-title"><i class="fa-solid fa-gear" style="color: var(--accent);"></i> Settings &amp; Data Management</div>
+        <button class="sd-close" onclick="closeSettingsDrawer()">&times;</button>
+      </div>
+      <div class="sd-body">
+        <!-- 1. Cloud Backup & Sync -->
+        <div class="stat-card" style="padding: 1.25rem;">
+          <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-cloud-arrow-up" style="color: var(--accent); margin-right: 0.5rem;"></i>Cloud Backup &amp; Sync</h3>
+          <p style="color: var(--text-muted); font-size: 0.82rem; margin-bottom: 1rem;">Sync progress across devices using private GitHub Gist.</p>
+          <button class="btn btn-primary btn-sm" onclick="openSyncSetup()">Configure Gist Sync</button>
+        </div>
+
+        <!-- 2. Data Backup & Restore -->
+        <div class="stat-card" style="padding: 1.25rem;">
+          <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-database" style="color: #22d3a4; margin-right: 0.5rem;"></i>Data Backup &amp; Restore</h3>
+          <p style="color: var(--text-muted); font-size: 0.82rem; margin-bottom: 1rem;">Export your full study stats and settings to JSON, or restore from a backup.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <button class="btn btn-outline btn-sm" onclick="window.exportBackup ? window.exportBackup() : alert('Backup module loaded')">
+              <i class="fa-solid fa-download"></i> Export Backup (JSON)
+            </button>
+            <button class="btn btn-outline btn-sm" onclick="window.importBackup ? window.importBackup() : alert('Import module loaded')">
+              <i class="fa-solid fa-upload"></i> Import Backup
+            </button>
+            <button class="btn btn-ghost btn-sm" onclick="window.restoreSnapshot ? window.restoreSnapshot() : alert('Snapshot module loaded')">
+              <i class="fa-solid fa-clock-rotate-left"></i> Restore Pre-Import Snapshot
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. Study Preferences -->
+        <div class="stat-card" style="padding: 1.25rem;">
+          <h3 style="font-size: 1.05rem; color: #fff; margin-bottom: 0.5rem;"><i class="fa-solid fa-sliders" style="color: #f59e0b; margin-right: 0.5rem;"></i>Preferences</h3>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding: 0.5rem 0;">
+            <div>
+              <div style="font-weight: 600; color: #fff; font-size: 0.9rem;">Furigana Display</div>
+              <div style="color: var(--text-dim); font-size: 0.78rem;">Show phonetic readings above Kanji</div>
+            </div>
+            <button class="btn btn-ghost btn-sm" onclick="toggleFurigana()">Toggle Furigana</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
