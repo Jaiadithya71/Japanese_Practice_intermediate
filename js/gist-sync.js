@@ -85,9 +85,26 @@ function serializeStats() {
 }
 
 async function getRemoteContent(pat, gistId) {
-  const res = await fetch(`${API}/gists/${gistId}?t=${Date.now()}`, { headers: headers(pat) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const gist = await res.json();
+  const delays = [2000, 5000, 10000];
+  let gist;
+  for (let attempt = 0; attempt <= delays.length; attempt++) {
+    try {
+      const res = await fetch(`${API}/gists/${gistId}?t=${Date.now()}`, { headers: headers(pat) });
+      if (!res.ok) {
+        if (res.status >= 400 && res.status < 500) throw new Error(`HTTP ${res.status}`);
+        throw new Error(`HTTP ${res.status}`);
+      }
+      gist = await res.json();
+      break;
+    } catch (e) {
+      if (e.message && /^HTTP 4\d\d$/.test(e.message)) throw e;
+      if (attempt === delays.length) throw e;
+      const attemptsLeft = delays.length - attempt;
+      setStatus('saving', `Retrying… (${attemptsLeft} left)`);
+      console.warn(`Gist pull attempt ${attempt + 1} failed (${e.message}), retrying in ${delays[attempt] / 1000}s`);
+      await new Promise(resolve => setTimeout(resolve, delays[attempt]));
+    }
+  }
   const file = gist.files && gist.files[GIST_FILENAME];
   if (!file) throw new Error('The progress file is missing from the Gist; nothing was written.');
   let content = file.content;
@@ -291,5 +308,6 @@ export function initSyncUI() {
   });
   if (pat && gistId) gistLoadStats();
 }
+
 
 
