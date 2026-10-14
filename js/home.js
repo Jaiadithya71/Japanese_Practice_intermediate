@@ -85,7 +85,7 @@ export function setHomeGroup(group) {
 
 export function chapterKeysForGroup() {
   const isChar = state.activeChapterGroup !== 'topic';
-  const keys = Object.keys(state.vocabDB).filter(k => k.startsWith('part2_') === isChar);
+  const keys = Object.keys(state.vocabDB).filter(k => k.startsWith('part2_') === isChar && !k.startsWith('review_') && !k.startsWith('part3_mock'));
   const rank = k => (k.startsWith('review_') ? 1000 + parseInt(k.slice(7), 10) : parseInt(k.replace('part2_', ''), 10));
   return keys.sort((a, b) => rank(a) - rank(b));
 }
