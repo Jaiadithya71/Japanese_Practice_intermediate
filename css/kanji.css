@@ -468,3 +468,11 @@
   #view-kanji .kanji-picker-grid { grid-template-columns:repeat(5,minmax(0,1fr)); }
   #view-kanji .view-header h2 { font-size:1.4rem; }
 }
+
+.kanji-exam-panel { margin-top:16px; padding-top:16px; border-top:1px solid rgba(183,193,218,.12); }
+.kanji-exam-heading { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.kanji-exam-heading h4 { margin:0; color:#edf0fa; font-size:.95rem; }
+.kanji-exam-heading span { font-size:.67rem; color:#c7baff; background:#302947; border-radius:8px; padding:4px 7px; }
+.kanji-exam-panel p { color:#a5acbf; font-size:.76rem; line-height:1.5; margin:8px 0 12px; }
+.kanji-exam-panel .kanji-exam-scope { font-size:.7rem; margin:10px 0; }
+.kanji-exam-panel>.btn { width:100%; justify-content:center; min-height:46px; border-radius:12px; background:#302947; border:1px solid #7968bc; }
