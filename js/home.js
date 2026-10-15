@@ -1,4 +1,4 @@
-import { renderActivityDayHtml } from './activity-detail.js?v=2';
+import { renderActivityDayHtml } from './activity-detail.js?v=3';
 import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — home.js
@@ -293,7 +293,7 @@ export function renderHomeActivity() {
     };
     cell.replaceWith(button);
   });
-  if (detail) detail.hidden = true;
+  if (detail) { detail.hidden = false; detail.innerHTML = renderActivityDayHtml(getDay(istDateKey())); }
   const hint = document.getElementById('home-activity-hint');
   if (hint) hint.hidden = false;
   const streak = document.getElementById('home-review-streak');

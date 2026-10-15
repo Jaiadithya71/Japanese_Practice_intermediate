@@ -281,3 +281,4 @@
 .activity-day-detail h4 { margin-bottom:8px; }
 .activity-day-count { margin:0; color:var(--text-muted); font-size:.85rem; }
 .activity-day-count strong { color:#e7e2ff; font-size:1.25rem; margin-right:4px; }
+#home-activity-detail .activity-inline-count { color:var(--text); font-weight:700; }
