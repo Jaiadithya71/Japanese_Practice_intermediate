@@ -1,0 +1,5045 @@
+{
+  "metadata": {
+    "title": "新にほんご500問 N3 語彙編 (Vocabulary) - 第1部 1課〜5課",
+    "part": "part_1",
+    "chapters_range": "1-5",
+    "description": "Vocabulary data transcribed from Nihongo 500 Mon N3 Vocabulary Chapters 1-5 and Review Test 1 with complete ruby furigana, warming up, yattemiyou drills, and exercises.",
+    "version": "1.0.0"
+  },
+  "chapters": [
+    {
+      "metadata": {
+        "chapter": "01",
+        "topic_ja": "人間関係1: 家族と友達、性格",
+        "topic_en": "Human Relations 1: Family, Friends, Personality",
+        "pages": [
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "01-1",
+          "title_ja": "家族と友達",
+          "title_en": "Family and Friends",
+          "page": 2,
+          "warming_up": {
+            "question_ja": "あなたは何人兄弟ですか。兄弟の中で何番目に生まれましたか。",
+            "question_en": "How many siblings do you have? Which child were you born as among your siblings?"
+          },
+          "words": [
+            {
+              "id": "v01-001",
+              "term_ja": "長男",
+              "reading": "ちょうなん",
+              "ruby_html": "<ruby>長男<rt>ちょうなん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "eldest son, elder son",
+              "meaning_zh": "长子",
+              "example_ja": "私は長男だ",
+              "example_en": "I am the eldest son."
+            },
+            {
+              "id": "v01-002",
+              "term_ja": "長女",
+              "reading": "ちょうじょ",
+              "ruby_html": "<ruby>長女<rt>ちょうじょ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "eldest daughter, elder daughter",
+              "meaning_zh": "长女",
+              "example_ja": "彼女は長女だ",
+              "example_en": "She is the eldest daughter."
+            },
+            {
+              "id": "v01-003",
+              "term_ja": "末っ子",
+              "reading": "すえっこ",
+              "ruby_html": "<ruby>末<rt>すえ</rt></ruby>っ<ruby>子<rt>こ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "youngest child",
+              "meaning_zh": "最小的孩子",
+              "example_ja": "私は末っ子だ",
+              "example_en": "I am the youngest child."
+            },
+            {
+              "id": "v01-004",
+              "term_ja": "一人っ子",
+              "reading": "ひとりっこ",
+              "ruby_html": "<ruby>一人<rt>ひとり</rt></ruby>っ<ruby>子<rt>こ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "only child",
+              "meaning_zh": "独生子女",
+              "example_ja": "彼は一人っ子だ",
+              "example_en": "He is an only child."
+            },
+            {
+              "id": "v01-005",
+              "term_ja": "いとこ",
+              "reading": "いとこ",
+              "ruby_html": "いとこ",
+              "part_of_speech": "名詞",
+              "meaning_en": "cousin",
+              "meaning_zh": "堂表兄弟姐妹",
+              "example_ja": "彼は私のいとこだ",
+              "example_en": "He is my cousin."
+            },
+            {
+              "id": "v01-006",
+              "term_ja": "孫",
+              "reading": "まご",
+              "ruby_html": "<ruby>孫<rt>まご</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "grandchild",
+              "meaning_zh": "孙子, 孙女",
+              "example_ja": "孫が生まれる",
+              "example_en": "A grandchild is born."
+            },
+            {
+              "id": "v01-007",
+              "term_ja": "そっくりな",
+              "reading": "そっくりな",
+              "ruby_html": "そっくりな",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "looking identical, spitting image",
+              "meaning_zh": "一模一样",
+              "example_ja": "そっくりな双子",
+              "example_en": "identical twins"
+            },
+            {
+              "id": "v01-008",
+              "term_ja": "双子",
+              "reading": "ふたご",
+              "ruby_html": "<ruby>双子<rt>ふたご</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "twins",
+              "meaning_zh": "双胞胎",
+              "example_ja": "双子が生まれる",
+              "example_en": "Twins are born."
+            },
+            {
+              "id": "v01-009",
+              "term_ja": "親戚",
+              "reading": "しんせき",
+              "ruby_html": "<ruby>親戚<rt>しんせき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "relatives",
+              "meaning_zh": "亲戚",
+              "example_ja": "親戚が集まる",
+              "example_en": "Relatives gather."
+            },
+            {
+              "id": "v01-010",
+              "term_ja": "仲",
+              "reading": "なか",
+              "ruby_html": "<ruby>仲<rt>なか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "relationship, relations",
+              "meaning_zh": "关系",
+              "example_ja": "仲がいい夫婦",
+              "example_en": "a happily married couple"
+            },
+            {
+              "id": "v01-011",
+              "term_ja": "夫婦",
+              "reading": "ふうふ",
+              "ruby_html": "<ruby>夫婦<rt>ふうふ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "married couple, husband and wife",
+              "meaning_zh": "夫妻",
+              "example_ja": "仲のいい夫婦",
+              "example_en": "a close married couple"
+            },
+            {
+              "id": "v01-012",
+              "term_ja": "親友",
+              "reading": "しんゆう",
+              "ruby_html": "<ruby>親友<rt>しんゆう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "best friend, close friend",
+              "meaning_zh": "好朋友, 挚友",
+              "example_ja": "彼女は私の親友だ",
+              "example_en": "She is my best friend."
+            },
+            {
+              "id": "v01-013",
+              "term_ja": "親しい",
+              "reading": "したしい",
+              "ruby_html": "<ruby>親<rt>した</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "close, intimate",
+              "meaning_zh": "亲密的",
+              "example_ja": "親しい友人",
+              "example_en": "a close friend"
+            },
+            {
+              "id": "v01-014",
+              "term_ja": "友人",
+              "reading": "ゆうじん",
+              "ruby_html": "<ruby>友人<rt>ゆうじん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "friend",
+              "meaning_zh": "朋友",
+              "example_ja": "親しい友人",
+              "example_en": "a close friend"
+            },
+            {
+              "id": "v01-015",
+              "term_ja": "恋人",
+              "reading": "こいびと",
+              "ruby_html": "<ruby>恋人<rt>こいびと</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "lover, sweetheart, boyfriend/girlfriend",
+              "meaning_zh": "恋人",
+              "example_ja": "彼女は私の恋人だ",
+              "example_en": "She is my girlfriend."
+            },
+            {
+              "id": "v01-016",
+              "term_ja": "仲間",
+              "reading": "なかま",
+              "ruby_html": "<ruby>仲間<rt>なかま</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "companion, colleague, fellow",
+              "meaning_zh": "伙伴",
+              "example_ja": "仕事の仲間と遊びに行く",
+              "example_en": "go out to play with coworkers"
+            },
+            {
+              "id": "v01-017",
+              "term_ja": "相手",
+              "reading": "あいて",
+              "ruby_html": "<ruby>相手<rt>あいて</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "partner, opponent, the other person",
+              "meaning_zh": "对象, 对方",
+              "example_ja": "結婚の相手を探す",
+              "example_en": "look for a marriage partner"
+            },
+            {
+              "id": "v01-018",
+              "term_ja": "知り合い",
+              "reading": "しりあい",
+              "ruby_html": "<ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>い",
+              "part_of_speech": "名詞",
+              "meaning_en": "acquaintance",
+              "meaning_zh": "认识的人",
+              "example_ja": "パーティーに知り合いを呼ぶ",
+              "example_en": "invite acquaintances to the party"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "私は（　）だったので、兄弟が欲しかった。",
+              "options": [
+                "一人っ子",
+                "仲",
+                "末っ子",
+                "そっくり",
+                "親しい",
+                "孫"
+              ],
+              "answer": "一人っ子",
+              "explanation": "兄弟がいなくて欲しかった文脈なので「一人っ子」（独生子女）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "田中さんと山田さんは、（　）が悪くて、いつもけんかをしている。",
+              "options": [
+                "一人っ子",
+                "仲",
+                "末っ子",
+                "そっくり",
+                "親しい",
+                "孫"
+              ],
+              "answer": "仲",
+              "explanation": "関係が悪くけんかをするコロケーションは「仲が悪い」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "私は（　）なので、兄や姉はいるが、弟や妹はいない。",
+              "options": [
+                "一人っ子",
+                "仲",
+                "末っ子",
+                "そっくり",
+                "親しい",
+                "孫"
+              ],
+              "answer": "末っ子",
+              "explanation": "一番下の子どもなので「末っ子」（最小的孩子）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "林さんのうちの兄弟は、顔が（　）だ。",
+              "options": [
+                "一人っ子",
+                "仲",
+                "末っ子",
+                "そっくり",
+                "親しい",
+                "孫"
+              ],
+              "answer": "そっくり",
+              "explanation": "顔が非常によく似ている様子を表す「そっくり」が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "山口さんと森さんは小学校のころからの友達で、とても（　）そうだ。",
+              "options": [
+                "一人っ子",
+                "仲",
+                "末っ子",
+                "そっくり",
+                "親しい",
+                "孫"
+              ],
+              "answer": "親しい",
+              "explanation": "小学校以来の友人で間柄が近い様子を表す「親しい」が入ります。"
+            },
+            {
+              "id": 6,
+              "question_ja": "田口さんは、お（　）さんには、とても優しいおじいさんだそうだ。",
+              "options": [
+                "一人っ子",
+                "仲",
+                "末っ子",
+                "そっくり",
+                "親しい",
+                "孫"
+              ],
+              "answer": "孫",
+              "explanation": "おじいさんにとっての「お孫さん」（grandchild）です。"
+            }
+          ]
+        },
+        {
+          "section_id": "01-2",
+          "title_ja": "性格",
+          "title_en": "Personality",
+          "page": 3,
+          "warming_up": {
+            "question_ja": "あなたは、優しい人ですか。真面目な人ですか。自分はどんな性格だと思いますか。",
+            "question_en": "Are you a kind person? A serious person? What kind of personality do you think you have?"
+          },
+          "words": [
+            {
+              "id": "v01-019",
+              "term_ja": "性格",
+              "reading": "せいかく",
+              "ruby_html": "<ruby>性格<rt>せいかく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "personality, character",
+              "meaning_zh": "性格",
+              "example_ja": "性格がいい人",
+              "example_en": "a person with a good personality"
+            },
+            {
+              "id": "v01-020",
+              "term_ja": "明るい",
+              "reading": "あかるい",
+              "ruby_html": "<ruby>明<rt>あか</rt></ruby>るい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "cheerful, bright",
+              "meaning_zh": "开朗",
+              "example_ja": "性格が明るい人",
+              "example_en": "a cheerful person"
+            },
+            {
+              "id": "v01-021",
+              "term_ja": "暗い",
+              "reading": "くらい",
+              "ruby_html": "<ruby>暗<rt>くら</rt></ruby>い",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "gloomy, dark",
+              "meaning_zh": "阴沉",
+              "example_ja": "性格が暗い人",
+              "example_en": "a gloomy person"
+            },
+            {
+              "id": "v01-022",
+              "term_ja": "子供っぽい",
+              "reading": "こどもっぽい",
+              "ruby_html": "<ruby>子供<rt>こども</rt></ruby>っぽい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "childish, immature",
+              "meaning_zh": "孩子气",
+              "example_ja": "子供っぽい人",
+              "example_en": "a childish person"
+            },
+            {
+              "id": "v01-023",
+              "term_ja": "男っぽい",
+              "reading": "おとこっぽい",
+              "ruby_html": "<ruby>男<rt>おとこ</rt></ruby>っぽい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "manly, tomboyish",
+              "meaning_zh": "像男人样",
+              "example_ja": "男っぽい人",
+              "example_en": "a manly person"
+            },
+            {
+              "id": "v01-024",
+              "term_ja": "大人しい",
+              "reading": "おとなしい",
+              "ruby_html": "<ruby>大人<rt>おとな</rt></ruby>しい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "quiet, meek, gentle",
+              "meaning_zh": "稳重, 文静",
+              "example_ja": "大人しい人",
+              "example_en": "a quiet/gentle person"
+            },
+            {
+              "id": "v01-025",
+              "term_ja": "だらしない",
+              "reading": "だらしない",
+              "ruby_html": "だらしない",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "sloppy, untidy, loose",
+              "meaning_zh": "邋遢, 散漫",
+              "example_ja": "だらしない人",
+              "example_en": "a sloppy person"
+            },
+            {
+              "id": "v01-026",
+              "term_ja": "冷たい",
+              "reading": "つめたい",
+              "ruby_html": "<ruby>冷<rt>つめ</rt></ruby>たい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "cold, unfeeling, unfriendly",
+              "meaning_zh": "冷淡",
+              "example_ja": "冷たい人",
+              "example_en": "a cold person"
+            },
+            {
+              "id": "v01-027",
+              "term_ja": "細かい",
+              "reading": "こまかい",
+              "ruby_html": "<ruby>細<rt>こま</rt></ruby>かい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "detail-oriented, meticulous, fussy",
+              "meaning_zh": "心细, 计较",
+              "example_ja": "細かい人",
+              "example_en": "a meticulous person"
+            },
+            {
+              "id": "v01-028",
+              "term_ja": "意地悪な",
+              "reading": "いじわるな",
+              "ruby_html": "<ruby>意地悪<rt>いじわる</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "mean, spiteful, malicious",
+              "meaning_zh": "坏心眼的",
+              "example_ja": "意地悪な人",
+              "example_en": "a spiteful person"
+            },
+            {
+              "id": "v01-029",
+              "term_ja": "素直な",
+              "reading": "すなおな",
+              "ruby_html": "<ruby>素直<rt>すなお</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "obedient, honest, accommodating",
+              "meaning_zh": "诚实, 听话",
+              "example_ja": "素直な人",
+              "example_en": "an obedient/honest person"
+            },
+            {
+              "id": "v01-030",
+              "term_ja": "正直な",
+              "reading": "しょうじきな",
+              "ruby_html": "<ruby>正直<rt>しょうじき</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "honest, frank, upright",
+              "meaning_zh": "正直, 诚实",
+              "example_ja": "正直な人",
+              "example_en": "an honest person"
+            },
+            {
+              "id": "v01-031",
+              "term_ja": "乱暴な",
+              "reading": "らんぼうな",
+              "ruby_html": "<ruby>乱暴<rt>らんぼう</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "rough, rude, violent",
+              "meaning_zh": "粗鲁, 粗暴",
+              "example_ja": "乱暴な人",
+              "example_en": "a rough/violent person"
+            },
+            {
+              "id": "v01-032",
+              "term_ja": "わがままな",
+              "reading": "わがままな",
+              "ruby_html": "わがままな",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "selfish, self-centered",
+              "meaning_zh": "任性",
+              "example_ja": "わがままな人",
+              "example_en": "a selfish person"
+            },
+            {
+              "id": "v01-033",
+              "term_ja": "積極的な",
+              "reading": "せっきょくてきな",
+              "ruby_html": "<ruby>積極的<rt>せっきょくてき</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "positive, proactive, active",
+              "meaning_zh": "积极的",
+              "example_ja": "積極的な人",
+              "example_en": "a proactive person"
+            },
+            {
+              "id": "v01-034",
+              "term_ja": "落ち着いた",
+              "reading": "おちついた",
+              "ruby_html": "<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いた",
+              "part_of_speech": "動詞・連体形",
+              "meaning_en": "calm, composed, relaxed",
+              "meaning_zh": "沉稳的",
+              "example_ja": "落ち着いた人",
+              "example_en": "a calm and composed person"
+            },
+            {
+              "id": "v01-035",
+              "term_ja": "きちんとした",
+              "reading": "きちんとした",
+              "ruby_html": "きちんとした",
+              "part_of_speech": "連体詞",
+              "meaning_en": "neat, organized, respectable",
+              "meaning_zh": "靠谱的, 整洁的",
+              "example_ja": "きちんとした人",
+              "example_en": "a neat and reliable person"
+            },
+            {
+              "id": "v01-036",
+              "term_ja": "変わった",
+              "reading": "かわった",
+              "ruby_html": "<ruby>変<rt>か</rt></ruby>わった",
+              "part_of_speech": "動詞・連体形",
+              "meaning_en": "unusual, eccentric, odd",
+              "meaning_zh": "奇特的, 特别的",
+              "example_ja": "変わった人",
+              "example_en": "an unusual person"
+            },
+            {
+              "id": "v01-037",
+              "term_ja": "思いやり",
+              "reading": "おもいやり",
+              "ruby_html": "<ruby>思<rt>おも</rt></ruby>いやり",
+              "part_of_speech": "名詞",
+              "meaning_en": "considerateness, thoughtfulness, sympathy",
+              "meaning_zh": "体贴, 同情心",
+              "example_ja": "思いやりがある",
+              "example_en": "be considerate/thoughtful"
+            },
+            {
+              "id": "v01-038",
+              "term_ja": "ユーモア",
+              "reading": "ユーモア",
+              "ruby_html": "ユーモア",
+              "part_of_speech": "名詞",
+              "meaning_en": "sense of humor",
+              "meaning_zh": "幽默",
+              "example_ja": "ユーモアがある",
+              "example_en": "have a sense of humor"
+            },
+            {
+              "id": "v01-039",
+              "term_ja": "勇気",
+              "reading": "ゆうき",
+              "ruby_html": "<ruby>勇気<rt>ゆうき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "courage, bravery",
+              "meaning_zh": "勇气",
+              "example_ja": "勇気がある",
+              "example_en": "have courage"
+            },
+            {
+              "id": "v01-040",
+              "term_ja": "冗談",
+              "reading": "じょうだん",
+              "ruby_html": "<ruby>冗談<rt>じょうだん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "joke, jest",
+              "meaning_zh": "玩笑",
+              "example_ja": "よく冗談を言う",
+              "example_en": "often tell jokes"
+            },
+            {
+              "id": "v01-041",
+              "term_ja": "自慢",
+              "reading": "じまん",
+              "ruby_html": "<ruby>自慢<rt>じまん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "boast, pride, bragging",
+              "meaning_zh": "自夸, 得意",
+              "example_ja": "自分の自慢をする",
+              "example_en": "brag about oneself"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "田中先生は、（　）のある方で、話がとても面白い。",
+              "options": [
+                "ユーモア",
+                "子供っぽい",
+                "冗談",
+                "だらしない",
+                "自慢",
+                "性格"
+              ],
+              "answer": "ユーモア",
+              "explanation": "話が面白い人にある資質は「ユーモア」（sense of humor）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "大人なのに、マンガを読んでいるのは、少し（　）と思う。",
+              "options": [
+                "ユーモア",
+                "子供っぽい",
+                "冗談",
+                "だらしない",
+                "自慢",
+                "性格"
+              ],
+              "answer": "子供っぽい",
+              "explanation": "大人なのに子どものような言動を「子供っぽい」（childish）と評します。"
+            },
+            {
+              "id": 3,
+              "question_ja": "山田部長の（　）はつまらないので、笑えない。",
+              "options": [
+                "ユーモア",
+                "子供っぽい",
+                "冗談",
+                "だらしない",
+                "自慢",
+                "性格"
+              ],
+              "answer": "冗談",
+              "explanation": "笑えない話の文脈なので「冗談」（joke）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "上田さんは、とても（　）人で、部屋がいつも汚い。",
+              "options": [
+                "ユーモア",
+                "子供っぽい",
+                "冗談",
+                "だらしない",
+                "自慢",
+                "性格"
+              ],
+              "answer": "だらしない",
+              "explanation": "部屋がいつも汚く片付けない人は「だらしない」（sloppy）人です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "自分のことをすごい、すごいとあまり（　）しないほうがいい。",
+              "options": [
+                "ユーモア",
+                "子供っぽい",
+                "冗談",
+                "だらしない",
+                "自慢",
+                "性格"
+              ],
+              "answer": "自慢",
+              "explanation": "自分を誇る行為は「自慢する」（boast/brag）です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "結婚するなら、（　）がいい人がいいなあ。",
+              "options": [
+                "ユーモア",
+                "子供っぽい",
+                "冗談",
+                "だらしない",
+                "自慢",
+                "性格"
+              ],
+              "answer": "性格",
+              "explanation": "人柄を表す「性格がいい」（good personality）が入ります。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "01-ex1",
+          "title_ja": "下線に似た意味の語を「言葉」の中から選び、必要なら形を変えて、（　）に入れなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "A: 私のうちは、男ばかりの3人兄弟で、私が一番上だったんです。\nB: 3人兄弟のご（　）だったんですね。",
+              "answer": "長男",
+              "explanation": "男兄弟の中で一番上の子は「長男」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "A: 私も結婚したら、鈴木さんのお宅のご主人と奥さんのようになりたいなあ。\nB: 本当に仲がいい、ご（　）ですよね。",
+              "answer": "夫婦",
+              "explanation": "ご主人と奥さんの2人を指す言葉は「夫婦」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "A: 島田先生は、女の人だけど、声も大きいし、ご飯もよく食べるし、ちょっと男みたいなんですよね。\nB: 少し（　）先生なんですね。",
+              "answer": "男っぽい",
+              "explanation": "男のような様子を表す形容詞は「男っぽい」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "A: 私が生まれたときには、おじいちゃんもおばあちゃんも、おじさんもおばさんもみんなが家にお祝いに来てくれたそうです。\nB: （　）の方がみんな来てくれたんですね。",
+              "answer": "親戚",
+              "explanation": "祖父母やおじ・おばなどを総称して「親戚」と言います。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "A: その子は私の母の兄弟の子供なんです。\nB: じゃあ、あなたの（　）なんですね。",
+              "answer": "いとこ",
+              "explanation": "親の兄弟の子供は「いとこ」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "01-ex2",
+          "title_ja": "どんな人ですか。合う語を下の［　］の中から選びなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "私の兄は、嘘が嫌いで、本当のことだけを話す人です。→兄は（　）です。",
+              "options": [
+                "きちんとした",
+                "素直",
+                "正直",
+                "積極的",
+                "わがまま"
+              ],
+              "answer": "正直",
+              "explanation": "嘘をつかず本当のことだけを言う性格は「正直」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "山田さんの家のお子さんは、とてもいいお子さんで、親の言うことも先生の言うことも、何でも「はい」と言って、よく聞くんですよ。→山田さんのお子さんはとても（　）で、いいお子さんです。",
+              "options": [
+                "きちんとした",
+                "素直",
+                "正直",
+                "積極的",
+                "わがまま"
+              ],
+              "answer": "素直",
+              "explanation": "言われたことを素直によく聞く性格は「素直」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "村田さんは、物を片付けるのが上手で、部屋もとてもきれいですし、真面目で、約束の時間に遅れてくるようなこともありませんね。→村田さんは（　）人です。",
+              "options": [
+                "きちんとした",
+                "素直",
+                "正直",
+                "積極的",
+                "わがまま"
+              ],
+              "answer": "きちんとした",
+              "explanation": "身の回りの整理や時間管理がしっかりしている人は「きちんとした」人です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "林くんは、授業中によく手を上げるし、自分の意見もよく言うし、勉強の仕方をよく先生に質問したりしています。→林くんは（　）な学生です。",
+              "options": [
+                "きちんとした",
+                "素直",
+                "正直",
+                "積極的",
+                "わがまま"
+              ],
+              "answer": "積極的",
+              "explanation": "能動的・意欲的に取り組む態度は「積極的」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "うちの7歳の息子は、買い物に行くと、すぐおもちゃを買ってと言うし、ちょっと歩くと、疲れたから休もうとか、お腹がすいたから、アイスを食べたいとか言うので、連れていきたくないんです。→息子は（　）です。",
+              "options": [
+                "きちんとした",
+                "素直",
+                "正直",
+                "積極的",
+                "わがまま"
+              ],
+              "answer": "わがまま",
+              "explanation": "自分の思い通りにばかりしようとする性格は「わがまま」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "01-ex3",
+          "title_ja": "正しいほうを選びなさい。",
+          "type": "binary_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "子供のころ、兄によく意地悪を（a. された　b. もらった）。",
+              "options": [
+                "a. された",
+                "b. もらった"
+              ],
+              "answer": "a",
+              "explanation": "人に嫌がらせを受ける表現は「意地悪をされる」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "旅行に行ったとき、中学生の男の子と知り合いに（a. した　b. なった）。",
+              "options": [
+                "a. した",
+                "b. なった"
+              ],
+              "answer": "b",
+              "explanation": "「知り合いになる」（become acquaintances）が正しい表現です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "その歌を聞いていたら、彼女に好きだと言う勇気が（a. して　b. 出て）きた。",
+              "options": [
+                "a. して",
+                "b. 出て"
+              ],
+              "answer": "b",
+              "explanation": "勇気がわき起こる表現は「勇気が出る」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "みんなが体の弱い人への思いやりを（a. する　b. 持つ）ようになってほしい。",
+              "options": [
+                "a. する",
+                "b. 持つ"
+              ],
+              "answer": "b",
+              "explanation": "配慮や優しさの気持ちを抱くことは「思いやりを持つ」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "私も海に遊びに行く仲間に（a. 入れて　b. 出して）ほしかった。",
+              "options": [
+                "a. 入れて",
+                "b. 出して"
+              ],
+              "answer": "a",
+              "explanation": "グループに加えることは「仲間に入れる」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "01-ex4",
+          "title_ja": "（　）に入る語を［　］の中から選びなさい。",
+          "type": "categorized_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 私たち兄弟は（　）なのに、顔が似ていないとよく言われる。\n② 金さんは日本人の（　）が出来てから、急に日本語が上手になった。\n③ まゆみさんは（　）なので、お姉さんはいませんよ。",
+              "options": [
+                "a. 恋人",
+                "b. 長女",
+                "c. 双子"
+              ],
+              "answer": "① c, ② a, ③ b",
+              "explanation": "① 双子（顔が似ていない）、② 恋人（日本語が上手に）、③ 長女（お姉さんはいない）"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 試合の（　）は、私よりずっと背が高かった。\n② 日本に来てからも、国の（　）とはときどき連絡を取っている。\n③ 親が子供に（　）をするのはよくない。",
+              "options": [
+                "a. 相手",
+                "b. 親友",
+                "c. 乱暴"
+              ],
+              "answer": "① a, ② b, ③ c",
+              "explanation": "① 試合の相手、② 国の親友、③ 乱暴をする"
+            }
+          ]
+        },
+        {
+          "exercise_id": "01-ex5",
+          "title_ja": "「言葉」の語を（　）に入れて、会話を作りなさい。最初の字はヒントです。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "森：う〜ん、大人っぽい、（①おち＿＿＿）人がいいかな。",
+              "answer": "落ち着いた",
+              "explanation": "おちついた"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "（②こ＿＿＿＿）人は、私、無理。",
+              "answer": "子供っぽい",
+              "explanation": "こどもっぽい"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "あと、（③おも＿＿＿）がある、優しい人だったら、もっといいかなあ。",
+              "answer": "思いやり",
+              "explanation": "おもいやり"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "林：へえ〜。私は（④おと＿＿＿）人より、明るくて、元気な人がいいな。",
+              "answer": "大人しい",
+              "explanation": "おとなしい"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "（⑤じょ＿＿＿）とかいつも言っているような（⑥な＿）がいい（⑦ふ＿＿）になりたいなあ。",
+              "answer": "冗談",
+              "explanation": "じょうだん"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "いつも言っているような（⑥な＿）がいい（⑦ふ＿＿）になりたいなあ。",
+              "answer": "仲",
+              "explanation": "なか"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "仲がいい（⑦ふ＿＿）になりたいなあ。",
+              "answer": "夫婦",
+              "explanation": "ふうふ"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "林：（⑧わ＿＿＿な）人は困るなあ。",
+              "answer": "わがまま",
+              "explanation": "わがまま"
+            },
+            {
+              "item_id": 9,
+              "context_ja": "森：私は（⑨だ＿＿＿＿＿）人とは一緒に住めないと思う。",
+              "answer": "だらしない",
+              "explanation": "だらしない"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "02",
+        "topic_ja": "人間関係2: 付き合い、気持ち",
+        "topic_en": "Human Relations 2: Relationships and Feelings",
+        "pages": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "02-1",
+          "title_ja": "付き合い",
+          "title_en": "Relationships",
+          "page": 6,
+          "warming_up": {
+            "question_ja": "あなたは誰かを好きになったことがありますか。好きな人と何をしましたか。",
+            "question_en": "Have you ever fallen in love with someone? What did you do with the person you liked?"
+          },
+          "words": [
+            {
+              "id": "v02-001",
+              "term_ja": "独身",
+              "reading": "どくしん",
+              "ruby_html": "<ruby>独身<rt>どくしん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "single, unmarried",
+              "meaning_zh": "单身",
+              "example_ja": "独身の男性",
+              "example_en": "an unmarried man"
+            },
+            {
+              "id": "v02-002",
+              "term_ja": "男性",
+              "reading": "だんせい",
+              "ruby_html": "<ruby>男性<rt>だんせい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "man, male",
+              "meaning_zh": "男, 男性",
+              "example_ja": "独身の男性と出会う",
+              "example_en": "meet an unmarried man"
+            },
+            {
+              "id": "v02-003",
+              "term_ja": "出会う",
+              "reading": "であう",
+              "ruby_html": "<ruby>出<rt>で</rt></ruby>会う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to meet, to encounter",
+              "meaning_zh": "遇见, 邂逅",
+              "example_ja": "独身の男性と出会う",
+              "example_en": "encounter an unmarried man"
+            },
+            {
+              "id": "v02-004",
+              "term_ja": "知り合う",
+              "reading": "しりあう",
+              "ruby_html": "<ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to get to know, to make acquaintance",
+              "meaning_zh": "结识",
+              "example_ja": "パーティーで知り合う",
+              "example_en": "get to know each other at a party"
+            },
+            {
+              "id": "v02-005",
+              "term_ja": "女性",
+              "reading": "じょせい",
+              "ruby_html": "<ruby>女性<rt>じょせい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "woman, female",
+              "meaning_zh": "女, 女性",
+              "example_ja": "女性と付き合う",
+              "example_en": "go out with a woman"
+            },
+            {
+              "id": "v02-006",
+              "term_ja": "付き合う",
+              "reading": "つきあう",
+              "ruby_html": "<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to date, to go out with, to associate with",
+              "meaning_zh": "交往",
+              "example_ja": "女性と付き合う",
+              "example_en": "date a woman"
+            },
+            {
+              "id": "v02-007",
+              "term_ja": "恋",
+              "reading": "こい",
+              "ruby_html": "<ruby>恋<rt>こい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "love, romantic love",
+              "meaning_zh": "恋爱, 恋情",
+              "example_ja": "恋をする",
+              "example_en": "fall in love"
+            },
+            {
+              "id": "v02-008",
+              "term_ja": "デート",
+              "reading": "デート",
+              "ruby_html": "デート",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "date, romantic outing",
+              "meaning_zh": "约会",
+              "example_ja": "デートに誘う",
+              "example_en": "ask someone out on a date"
+            },
+            {
+              "id": "v02-009",
+              "term_ja": "誘う",
+              "reading": "さそう",
+              "ruby_html": "<ruby>誘<rt>さそ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to invite, to ask out",
+              "meaning_zh": "邀请",
+              "example_ja": "デートに誘う",
+              "example_en": "invite on a date"
+            },
+            {
+              "id": "v02-010",
+              "term_ja": "はっきり",
+              "reading": "はっきり",
+              "ruby_html": "はっきり",
+              "part_of_speech": "副詞",
+              "meaning_en": "clearly, plainly",
+              "meaning_zh": "清楚地, 明确地",
+              "example_ja": "はっきり断る",
+              "example_en": "refuse clearly"
+            },
+            {
+              "id": "v02-011",
+              "term_ja": "断る",
+              "reading": "ことわる",
+              "ruby_html": "<ruby>断<rt>ことわ</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to refuse, to decline, to turn down",
+              "meaning_zh": "拒绝",
+              "example_ja": "はっきり断る",
+              "example_en": "flatly refuse"
+            },
+            {
+              "id": "v02-012",
+              "term_ja": "付き合い",
+              "reading": "つきあい",
+              "ruby_html": "<ruby>付<rt>つ</rt></ruby>き<ruby>合<rt>あ</rt></ruby>い",
+              "part_of_speech": "名詞",
+              "meaning_en": "relationship, dating, association",
+              "meaning_zh": "交际, 交往",
+              "example_ja": "付き合いが続く",
+              "example_en": "the relationship continues"
+            },
+            {
+              "id": "v02-013",
+              "term_ja": "続く",
+              "reading": "つづく",
+              "ruby_html": "<ruby>続<rt>つづ</rt></ruby>く",
+              "part_of_speech": "動詞",
+              "meaning_en": "to continue, to last",
+              "meaning_zh": "持续",
+              "example_ja": "付き合いが続く",
+              "example_en": "dating continues"
+            },
+            {
+              "id": "v02-014",
+              "term_ja": "愛",
+              "reading": "あい",
+              "ruby_html": "<ruby>愛<rt>あい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "love, affection",
+              "meaning_zh": "爱",
+              "example_ja": "愛を感じる",
+              "example_en": "feel love"
+            },
+            {
+              "id": "v02-015",
+              "term_ja": "感じる",
+              "reading": "かんじる",
+              "ruby_html": "<ruby>感<rt>かん</rt></ruby>じる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to feel, to sense",
+              "meaning_zh": "感受, 觉得",
+              "example_ja": "愛を感じる",
+              "example_en": "feel affection"
+            },
+            {
+              "id": "v02-016",
+              "term_ja": "約束",
+              "reading": "やくそく",
+              "ruby_html": "<ruby>約束<rt>やくそく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "promise, appointment",
+              "meaning_zh": "约定",
+              "example_ja": "約束を守る",
+              "example_en": "keep a promise"
+            },
+            {
+              "id": "v02-017",
+              "term_ja": "破る",
+              "reading": "やぶる",
+              "ruby_html": "<ruby>破<rt>やぶ</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to break, to violate",
+              "meaning_zh": "违背, 毁约",
+              "example_ja": "約束を破る",
+              "example_en": "break a promise"
+            },
+            {
+              "id": "v02-018",
+              "term_ja": "守る",
+              "reading": "まもる",
+              "ruby_html": "<ruby>守<rt>まも</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to keep, to protect, to observe",
+              "meaning_zh": "遵守",
+              "example_ja": "約束を守る",
+              "example_en": "keep a promise"
+            },
+            {
+              "id": "v02-019",
+              "term_ja": "疑う",
+              "reading": "うたがう",
+              "ruby_html": "<ruby>疑<rt>うたが</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to doubt, to suspect",
+              "meaning_zh": "怀疑",
+              "example_ja": "彼を疑う",
+              "example_en": "doubt him"
+            },
+            {
+              "id": "v02-020",
+              "term_ja": "許す",
+              "reading": "ゆるす",
+              "ruby_html": "<ruby>許<rt>ゆる</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to forgive, to permit",
+              "meaning_zh": "原谅, 宽恕",
+              "example_ja": "彼を許す",
+              "example_en": "forgive him"
+            },
+            {
+              "id": "v02-021",
+              "term_ja": "たたく",
+              "reading": "たたく",
+              "ruby_html": "たたく",
+              "part_of_speech": "動詞",
+              "meaning_en": "to hit, to slap, to strike",
+              "meaning_zh": "打, 拍",
+              "example_ja": "顔をたたく",
+              "example_en": "slap in the face"
+            },
+            {
+              "id": "v02-022",
+              "term_ja": "態度",
+              "reading": "たいど",
+              "ruby_html": "<ruby>態度<rt>たいど</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "attitude, manner",
+              "meaning_zh": "态度",
+              "example_ja": "冷たい態度を取る",
+              "example_en": "adopt a cold attitude"
+            },
+            {
+              "id": "v02-023",
+              "term_ja": "振られる",
+              "reading": "ふられる",
+              "ruby_html": "<ruby>振<rt>ふ</rt></ruby>られる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to be dumped, to be rejected",
+              "meaning_zh": "被甩",
+              "example_ja": "彼に振られる",
+              "example_en": "be dumped by him"
+            },
+            {
+              "id": "v02-024",
+              "term_ja": "夫",
+              "reading": "おっと",
+              "ruby_html": "<ruby>夫<rt>おっと</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "husband",
+              "meaning_zh": "丈夫",
+              "example_ja": "夫と離婚する",
+              "example_en": "divorce one's husband"
+            },
+            {
+              "id": "v02-025",
+              "term_ja": "離婚する",
+              "reading": "りこんする",
+              "ruby_html": "<ruby>離婚<rt>りこん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to divorce",
+              "meaning_zh": "离婚",
+              "example_ja": "夫と離婚する",
+              "example_en": "divorce one's husband"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "女の人を食事に（　）のは初めてだった。",
+              "options": [
+                "誘う",
+                "独身",
+                "たたく",
+                "離婚",
+                "態度"
+              ],
+              "answer": "誘う",
+              "explanation": "食事に声をかける動詞は「誘う」（invite）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "40歳になっても、（　）なので、親が心配している。",
+              "options": [
+                "誘う",
+                "独身",
+                "たたく",
+                "離婚",
+                "態度"
+              ],
+              "answer": "独身",
+              "explanation": "結婚していない状態を表す語は「独身」（unmarried）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "悪いのは私だけど、頭を（　）のはやめてほしい。",
+              "options": [
+                "誘う",
+                "独身",
+                "たたく",
+                "離婚",
+                "態度"
+              ],
+              "answer": "たたく",
+              "explanation": "頭を打つ動作は「たたく」（hit/strike）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "結婚して10か月で、もう（　）してしまった。",
+              "options": [
+                "誘う",
+                "独身",
+                "たたく",
+                "離婚",
+                "態度"
+              ],
+              "answer": "離婚",
+              "explanation": "夫婦関係を解消することは「離婚する」（divorce）です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "別の人を好きになったみたいで、最近、急に彼の（　）が変わった。",
+              "options": [
+                "誘う",
+                "独身",
+                "たたく",
+                "離婚",
+                "態度"
+              ],
+              "answer": "態度",
+              "explanation": "人に対する接し方や振る舞いは「態度」（attitude）です。"
+            }
+          ]
+        },
+        {
+          "section_id": "02-2",
+          "title_ja": "気持ち",
+          "title_en": "Feelings and Emotions",
+          "page": 7,
+          "warming_up": {
+            "question_ja": "いい映画を見たとき、どんな気持ちになりますか。つまらない映画のときは、どうですか。",
+            "question_en": "When you watch a good movie, what kind of feeling do you have? How about when it's a boring movie?"
+          },
+          "words": [
+            {
+              "id": "v02-026",
+              "term_ja": "悲しむ",
+              "reading": "かなしむ",
+              "ruby_html": "<ruby>悲<rt>かな</rt></ruby>しむ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to mourn, to grieve, to feel sad about",
+              "meaning_zh": "悲伤, 哀痛",
+              "example_ja": "先生の死を悲しむ",
+              "example_en": "mourn the teacher's death"
+            },
+            {
+              "id": "v02-027",
+              "term_ja": "腹が立つ",
+              "reading": "はらがたつ",
+              "ruby_html": "<ruby>腹<rt>はら</rt></ruby>が<ruby>立<rt>た</rt></ruby>つ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to get angry, to take offense",
+              "meaning_zh": "生气, 发怒",
+              "example_ja": "失礼な客に腹が立つ",
+              "example_en": "get angry at a rude customer"
+            },
+            {
+              "id": "v02-028",
+              "term_ja": "不安",
+              "reading": "ふあん",
+              "ruby_html": "<ruby>不安<rt>ふあん</rt></ruby>",
+              "part_of_speech": "名詞・ナ形容詞",
+              "meaning_en": "anxiety, unease, insecurity",
+              "meaning_zh": "不安",
+              "example_ja": "不安を感じる",
+              "example_en": "feel anxious"
+            },
+            {
+              "id": "v02-029",
+              "term_ja": "恐怖",
+              "reading": "きょうふ",
+              "ruby_html": "<ruby>恐怖<rt>きょうふ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "fear, terror, dread",
+              "meaning_zh": "恐惧",
+              "example_ja": "恐怖を感じる",
+              "example_en": "feel fear"
+            },
+            {
+              "id": "v02-030",
+              "term_ja": "不満",
+              "reading": "ふまん",
+              "ruby_html": "<ruby>不満<rt>ふまん</rt></ruby>",
+              "part_of_speech": "名詞・ナ形容詞",
+              "meaning_en": "dissatisfaction, discontent",
+              "meaning_zh": "不满",
+              "example_ja": "夫に不満を持つ",
+              "example_en": "feel dissatisfied with one's husband"
+            },
+            {
+              "id": "v02-031",
+              "term_ja": "満足する",
+              "reading": "まんぞくする",
+              "ruby_html": "<ruby>満足<rt>まんぞく</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be satisfied, to be content",
+              "meaning_zh": "满意",
+              "example_ja": "料理に満足する",
+              "example_en": "be satisfied with the food"
+            },
+            {
+              "id": "v02-032",
+              "term_ja": "がっかりする",
+              "reading": "がっかりする",
+              "ruby_html": "がっかりする",
+              "part_of_speech": "副詞・する動詞",
+              "meaning_en": "to feel disappointed, to be let down",
+              "meaning_zh": "失望, 灰心",
+              "example_ja": "試験に落ちて、がっかりする",
+              "example_en": "be disappointed at failing the exam"
+            },
+            {
+              "id": "v02-033",
+              "term_ja": "悩む",
+              "reading": "なやむ",
+              "ruby_html": "<ruby>悩<rt>なや</rt></ruby>む",
+              "part_of_speech": "動詞",
+              "meaning_en": "to worry, to be troubled",
+              "meaning_zh": "烦恼",
+              "example_ja": "病気に悩む",
+              "example_en": "be troubled by illness"
+            },
+            {
+              "id": "v02-034",
+              "term_ja": "迷う",
+              "reading": "まよう",
+              "ruby_html": "<ruby>迷<rt>まよ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to hesitate, to be puzzled, to lose one's way",
+              "meaning_zh": "犹豫不决",
+              "example_ja": "どれを買うか、迷う",
+              "example_en": "hesitate over which one to buy"
+            },
+            {
+              "id": "v02-035",
+              "term_ja": "感動する",
+              "reading": "かんどうする",
+              "ruby_html": "<ruby>感動<rt>かんどう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be moved, to be deeply touched",
+              "meaning_zh": "感动",
+              "example_ja": "音楽に感動する",
+              "example_en": "be moved by music"
+            },
+            {
+              "id": "v02-036",
+              "term_ja": "感情",
+              "reading": "かんじょう",
+              "ruby_html": "<ruby>感情<rt>かんじょう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "emotion, feeling",
+              "meaning_zh": "感情",
+              "example_ja": "感情を外に出す",
+              "example_en": "express one's feelings outwardly"
+            },
+            {
+              "id": "v02-037",
+              "term_ja": "感謝",
+              "reading": "かんしゃ",
+              "ruby_html": "<ruby>感謝<rt>かんしゃ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "gratitude, thanks",
+              "meaning_zh": "感谢",
+              "example_ja": "感謝の気持ちを持つ",
+              "example_en": "have a feeling of gratitude"
+            },
+            {
+              "id": "v02-038",
+              "term_ja": "びっくりする",
+              "reading": "びっくりする",
+              "ruby_html": "びっくりする",
+              "part_of_speech": "副詞・する動詞",
+              "meaning_en": "to be surprised, to be astonished",
+              "meaning_zh": "吃惊, 意外",
+              "example_ja": "急に起こされて、びっくりする",
+              "example_en": "be startled by being suddenly woken up"
+            },
+            {
+              "id": "v02-039",
+              "term_ja": "慌てる",
+              "reading": "あわてる",
+              "ruby_html": "<ruby>慌<rt>あわ</rt></ruby>てる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to panic, to be flustered, to rush",
+              "meaning_zh": "慌张, 匆忙",
+              "example_ja": "友達が急に家に来て、慌てる",
+              "example_en": "panic when friends suddenly come over"
+            },
+            {
+              "id": "v02-040",
+              "term_ja": "希望する",
+              "reading": "きぼうする",
+              "ruby_html": "<ruby>希望<rt>きぼう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to hope, to wish for",
+              "meaning_zh": "希望",
+              "example_ja": "日本に行くことを希望する",
+              "example_en": "hope to go to Japan"
+            },
+            {
+              "id": "v02-041",
+              "term_ja": "望む",
+              "reading": "のぞむ",
+              "ruby_html": "<ruby>望<rt>のぞ</rt></ruby>む",
+              "part_of_speech": "動詞",
+              "meaning_en": "to desire, to wish for, to look forward to",
+              "meaning_zh": "盼望, 期望",
+              "example_ja": "結婚を望む",
+              "example_en": "wish for marriage"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "大きな地震が起きるかもしれないと思うと、とても（　）だ。",
+              "options": [
+                "不安",
+                "感謝",
+                "不満",
+                "希望",
+                "満足"
+              ],
+              "answer": "不安",
+              "explanation": "地震の恐れで抱く心配な気持ちは「不安」（anxiety）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "お世話になった下田さんには（　）している。",
+              "options": [
+                "不安",
+                "感謝",
+                "不満",
+                "希望",
+                "満足"
+              ],
+              "answer": "感謝",
+              "explanation": "お世話になった相手へのありがたい思いは「感謝」（gratitude）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "私の家は、狭い家だが、特に（　）はない。",
+              "options": [
+                "不安",
+                "感謝",
+                "不満",
+                "希望",
+                "満足"
+              ],
+              "answer": "不満",
+              "explanation": "嫌だという思いや文句がない様子を表す「不満はない」（no complaints）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "何を食べたいか、みんなの（　）を聞いてから、料理を作ることにした。",
+              "options": [
+                "不安",
+                "感謝",
+                "不満",
+                "希望",
+                "満足"
+              ],
+              "answer": "希望",
+              "explanation": "相手の望みやリクエストを指す語は「希望」（wish/request）です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "とても上手なのに、山田さんは自分の絵に（　）していないようだ。",
+              "options": [
+                "不安",
+                "感謝",
+                "不満",
+                "希望",
+                "満足"
+              ],
+              "answer": "満足",
+              "explanation": "納得して十分だと思う気持ちは「満足」（satisfaction）です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "02-ex1",
+          "title_ja": "どんな気持ちになりますか。合う語を下の［　］の中から選びなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "このお店は何でもおいしいんです。そばもおいしいし、うどんもおいしいし、どれにするか決められないなあ。→このお店に来ると、いつも（　）んです。",
+              "options": [
+                "がっかり",
+                "感動",
+                "恐怖",
+                "腹が立つ",
+                "びっくり",
+                "迷う"
+              ],
+              "answer": "迷う",
+              "explanation": "どれにするか決められない気持ちは「迷う」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "掃除をしようと思っているときに、掃除をしなさいとか、宿題をやろうとしているときに、宿題をしなさいとか、うちの母はよく言うんです。→わかっているのに、言われると、（　）んです。",
+              "options": [
+                "がっかり",
+                "感動",
+                "恐怖",
+                "腹が立つ",
+                "びっくり",
+                "迷う"
+              ],
+              "answer": "腹が立つ",
+              "explanation": "イライラして怒りの気持ちがわくのは「腹が立つ」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "3か月前に別れた彼が毎朝、家の前に立っているんです。会う約束もしていないのに、町でよく彼に会います。いつも誰かに見られているような気がするんです。→私は今、（　）を感じています。",
+              "options": [
+                "がっかり",
+                "感動",
+                "恐怖",
+                "腹が立つ",
+                "びっくり",
+                "迷う"
+              ],
+              "answer": "恐怖",
+              "explanation": "恐ろしい思いを感じているので「恐怖」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "誕生日パーティーをするとは言っていなかったのに、今日、家に帰って、ドアを開けたら、家族のみんなが歌を歌ってくれて、私にプレゼントをくれました。→家族は私の誕生日を忘れていると思っていたので、（　）しました。",
+              "options": [
+                "がっかり",
+                "感動",
+                "恐怖",
+                "腹が立つ",
+                "びっくり",
+                "迷う"
+              ],
+              "answer": "びっくり",
+              "explanation": "予想外のサプライズに驚いたので「びっくり」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "今日は田中さんがうちに来ると思って、部屋を掃除して、花を買って、おいしい料理も作ったんです。楽しみにしていたのに、急に田中さんがうちに来られなくなったんです。→田中さんが来られなくなってしまって、（　）です。",
+              "options": [
+                "がっかり",
+                "感動",
+                "恐怖",
+                "腹が立つ",
+                "びっくり",
+                "迷う"
+              ],
+              "answer": "がっかり",
+              "explanation": "楽しみにしていた期待が外れて落ち込む気持ちは「がっかり」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "02-ex2",
+          "title_ja": "(1)から(9)を時間の古いほうから新しいほうへ並べなさい。",
+          "type": "chronological_ordering",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "ストーリーの順番を完成させなさい：(2)→( )→( )→( )→( )→( )→( )→( )→( )",
+              "options": [
+                "(1) 渋谷で初めてデートをする。",
+                "(2) パーティーで日本人の男性と知り合う。",
+                "(3) 3年間付き合う。",
+                "(4) 夫が若い女性と付き合っていることがわかる。",
+                "(5) 日本で結婚をする。",
+                "(6) 夫を許すことができなくなる。",
+                "(7) 夫と離婚をする。",
+                "(8) 夫が若い女性との付き合いをやめない。",
+                "(9) 夫が、毎晩、どこかに出かけるので、夫を疑うようになる。"
+              ],
+              "answer": "(2) -> (1) -> (3) -> (5) -> (9) -> (4) -> (8) -> (6) -> (7)",
+              "explanation": "知り合う(2) → 初デート(1) → 3年間交際(3) → 結婚(5) → 夫を疑う(9) → 浮気発覚(4) → 交際をやめない(8) → 許せなくなる(6) → 離婚(7)"
+            }
+          ]
+        },
+        {
+          "exercise_id": "02-ex3",
+          "title_ja": "下線に似た意味の語を「言葉」の中から選び、必要なら形を変えて、（　）に入れなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "A: 山田さん、前よりすごくきれいになっていて、驚きましたね。\nB: ホントですよね。（　）しましたね。",
+              "answer": "びっくり",
+              "explanation": "「驚く」と言い換えられる語は「びっくりする」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "A: 今日は寝坊したので、（　）ご飯を食べて、学校に来たんです。\nB: 急いで食べると、体によくないですよ。",
+              "answer": "慌てて",
+              "explanation": "急いで落ち着かない様子は「慌てて」（あわてて）です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "A: デートに誘われても、嫌だったら、はっきり嫌だと言ったほうがいいよ。\nB: （　）のは、悪いかなあと思って。",
+              "answer": "断る",
+              "explanation": "辞退・拒否することは「断る」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "A: 森さんは、親に反対されても、ジムさんと結婚したいと言っているんです。\nB: そんなに強く彼との結婚を（　）いるんですね。",
+              "answer": "望んで",
+              "explanation": "強く願う・期待することは「望む」（望んでいる）です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "02-ex4",
+          "title_ja": "（　）に一番合うものをaからcの中から選びなさい。",
+          "type": "categorized_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 恋に（　）　② 恋人に（　）　③ 映画に（　）",
+              "options": [
+                "a. 誘う",
+                "b. 振られる",
+                "c. 悩む"
+              ],
+              "answer": "① c, ② b, ③ a",
+              "explanation": "① 恋に悩む、② 恋人に振られる、③ 映画に誘う"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 愛を（　）　② 約束を（　）　③ 別れを（　）",
+              "options": [
+                "a. 悲しむ",
+                "b. 感じる",
+                "c. 守る"
+              ],
+              "answer": "① b, ② c, ③ a",
+              "explanation": "① 愛を感じる、② 約束を守る、③ 別れを悲しむ"
+            }
+          ]
+        },
+        {
+          "exercise_id": "02-ex5",
+          "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。最初の字はヒントです。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "「ぜひ日本で日本語を勉強したい」と（①き＿＿）しておりましたので、こちらの学校に入りました。",
+              "answer": "希望",
+              "explanation": "きぼう"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "日本に来るのは初めてでしたので、最初はとても（②ふ＿＿）でした。",
+              "answer": "不安",
+              "explanation": "ふあん"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "宿題もとても多かったので、少し（③びっ＿＿＿）したのですが、",
+              "answer": "びっくり",
+              "explanation": "びっくり"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "自分が（④の＿＿）で、日本に来たのだから、頑張ろうと思い、勉強をしました。",
+              "answer": "望み",
+              "explanation": "のぞみ"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "日本語の勉強は難しくて、ときどき（⑤な＿＿だ）こともありましたが、",
+              "answer": "悩ん",
+              "explanation": "なやん"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "この学校で（⑥で＿＿＿た）友人や先生方が私を助けてくださって、",
+              "answer": "出会っ",
+              "explanation": "であっ"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "先生方や友人たちには本当に（⑦か＿＿＿）したいと思います。",
+              "answer": "感謝",
+              "explanation": "かんしゃ"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "こちらの学校で勉強できたことに、今、とても（⑧ま＿＿＿）しております。",
+              "answer": "満足",
+              "explanation": "まんぞく"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "03",
+        "topic_ja": "生活1: 毎日の生活",
+        "topic_en": "Daily Life 1: Daily Routine & Housework",
+        "pages": [
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "03-1",
+          "title_ja": "家事",
+          "title_en": "Housework",
+          "page": 10,
+          "warming_up": {
+            "question_ja": "掃除や洗濯は好きですか。ほかに、毎日、どんな家の仕事をしていますか。",
+            "question_en": "Do you like cleaning and laundry? What other housework do you do every day?"
+          },
+          "words": [
+            {
+              "id": "v03-001",
+              "term_ja": "食器",
+              "reading": "しょっき",
+              "ruby_html": "<ruby>食器<rt>しょっき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "cutlery and dishes, tableware",
+              "meaning_zh": "餐具",
+              "example_ja": "食器を洗う",
+              "example_en": "wash dishes"
+            },
+            {
+              "id": "v03-002",
+              "term_ja": "洗う",
+              "reading": "あらう",
+              "ruby_html": "<ruby>洗<rt>あら</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to wash",
+              "meaning_zh": "洗",
+              "example_ja": "食器を洗う",
+              "example_en": "wash dishes"
+            },
+            {
+              "id": "v03-003",
+              "term_ja": "汚れ",
+              "reading": "よごれ",
+              "ruby_html": "<ruby>汚<rt>よご</rt></ruby>れ",
+              "part_of_speech": "名詞",
+              "meaning_en": "dirt, stain",
+              "meaning_zh": "污渍, 脏",
+              "example_ja": "汚れが落ちない",
+              "example_en": "the dirt won't come out"
+            },
+            {
+              "id": "v03-004",
+              "term_ja": "落ちる",
+              "reading": "おちる",
+              "ruby_html": "<ruby>落<rt>お</rt></ruby>ちる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to come off, to fall off",
+              "meaning_zh": "脱落, 掉下, 去除",
+              "example_ja": "汚れが落ちない",
+              "example_en": "the dirt won't come off"
+            },
+            {
+              "id": "v03-005",
+              "term_ja": "洗剤",
+              "reading": "せんざい",
+              "ruby_html": "<ruby>洗剤<rt>せんざい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "detergent, soap",
+              "meaning_zh": "洗涤剂",
+              "example_ja": "洗剤がなくなる",
+              "example_en": "run out of detergent"
+            },
+            {
+              "id": "v03-006",
+              "term_ja": "なくなる",
+              "reading": "なくなる",
+              "ruby_html": "なくなる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to run out, to be used up, to disappear",
+              "meaning_zh": "用完, 没有了",
+              "example_ja": "洗剤がなくなる",
+              "example_en": "run out of detergent"
+            },
+            {
+              "id": "v03-007",
+              "term_ja": "服",
+              "reading": "ふく",
+              "ruby_html": "<ruby>服<rt>ふく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "clothes, clothing",
+              "meaning_zh": "衣服",
+              "example_ja": "服を汚す",
+              "example_en": "get clothes dirty"
+            },
+            {
+              "id": "v03-008",
+              "term_ja": "汚す",
+              "reading": "よごす",
+              "ruby_html": "<ruby>汚<rt>よご</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to make dirty, to soil",
+              "meaning_zh": "弄脏",
+              "example_ja": "服を汚す",
+              "example_en": "get clothes dirty"
+            },
+            {
+              "id": "v03-009",
+              "term_ja": "畳む",
+              "reading": "たたむ",
+              "ruby_html": "<ruby>畳<rt>たた</rt></ruby>む",
+              "part_of_speech": "動詞",
+              "meaning_en": "to fold",
+              "meaning_zh": "折叠",
+              "example_ja": "Tシャツを畳む",
+              "example_en": "fold a T-shirt"
+            },
+            {
+              "id": "v03-010",
+              "term_ja": "靴下",
+              "reading": "くつした",
+              "ruby_html": "<ruby>靴下<rt>くつした</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "socks",
+              "meaning_zh": "袜子",
+              "example_ja": "靴下をしまう",
+              "example_en": "put away socks"
+            },
+            {
+              "id": "v03-011",
+              "term_ja": "しまう",
+              "reading": "しまう",
+              "ruby_html": "しまう",
+              "part_of_speech": "動詞",
+              "meaning_en": "to put away, to store",
+              "meaning_zh": "收起来, 存放",
+              "example_ja": "靴下をしまう",
+              "example_en": "put away socks"
+            },
+            {
+              "id": "v03-012",
+              "term_ja": "掃除機",
+              "reading": "そうじき",
+              "ruby_html": "<ruby>掃除機<rt>そうじき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "vacuum cleaner",
+              "meaning_zh": "吸尘器",
+              "example_ja": "掃除機をかける",
+              "example_en": "vacuum"
+            },
+            {
+              "id": "v03-013",
+              "term_ja": "アイロン",
+              "reading": "アイロン",
+              "ruby_html": "アイロン",
+              "part_of_speech": "名詞",
+              "meaning_en": "iron",
+              "meaning_zh": "熨斗",
+              "example_ja": "アイロンをかける",
+              "example_en": "iron clothes"
+            },
+            {
+              "id": "v03-014",
+              "term_ja": "かける",
+              "reading": "かける",
+              "ruby_html": "かける",
+              "part_of_speech": "動詞",
+              "meaning_en": "to run (vacuum), to iron, to apply",
+              "meaning_zh": "开(吸尘器), 熨(衣服)",
+              "example_ja": "掃除機をかける",
+              "example_en": "vacuum"
+            },
+            {
+              "id": "v03-015",
+              "term_ja": "家具",
+              "reading": "かぐ",
+              "ruby_html": "<ruby>家具<rt>かぐ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "furniture",
+              "meaning_zh": "家具",
+              "example_ja": "家具を動かす",
+              "example_en": "move furniture"
+            },
+            {
+              "id": "v03-016",
+              "term_ja": "動かす",
+              "reading": "うごかす",
+              "ruby_html": "<ruby>動<rt>うご</rt></ruby>かす",
+              "part_of_speech": "動詞",
+              "meaning_en": "to move, to shift",
+              "meaning_zh": "移动, 挪动",
+              "example_ja": "家具を動かす",
+              "example_en": "move furniture"
+            },
+            {
+              "id": "v03-017",
+              "term_ja": "床",
+              "reading": "ゆか",
+              "ruby_html": "<ruby>床<rt>ゆか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "floor",
+              "meaning_zh": "地板",
+              "example_ja": "床を拭く",
+              "example_en": "wipe the floor"
+            },
+            {
+              "id": "v03-018",
+              "term_ja": "拭く",
+              "reading": "ふく",
+              "ruby_html": "<ruby>拭<rt>ふ</rt></ruby>く",
+              "part_of_speech": "動詞",
+              "meaning_en": "to wipe",
+              "meaning_zh": "擦拭",
+              "example_ja": "床を拭く",
+              "example_en": "wipe the floor"
+            },
+            {
+              "id": "v03-019",
+              "term_ja": "調子",
+              "reading": "ちょうし",
+              "ruby_html": "<ruby>調子<rt>ちょうし</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "condition, shape, state",
+              "meaning_zh": "状态, 情况",
+              "example_ja": "エアコンの調子が悪い",
+              "example_en": "the air conditioner is in bad condition"
+            },
+            {
+              "id": "v03-020",
+              "term_ja": "修理に出す",
+              "reading": "しゅうりにだす",
+              "ruby_html": "<ruby>修理<rt>しゅうり</rt></ruby>に<ruby>出<rt>だ</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to send for repair",
+              "meaning_zh": "送修",
+              "example_ja": "エアコンを修理に出す",
+              "example_en": "send the air conditioner for repair"
+            },
+            {
+              "id": "v03-021",
+              "term_ja": "リサイクルに出す",
+              "reading": "リサイクルにだす",
+              "ruby_html": "リサイクルに<ruby>出<rt>だ</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to send for recycling",
+              "meaning_zh": "送去循环利用",
+              "example_ja": "古新聞をリサイクルに出す",
+              "example_en": "send old newspapers for recycling"
+            },
+            {
+              "id": "v03-022",
+              "term_ja": "家事",
+              "reading": "かじ",
+              "ruby_html": "<ruby>家事<rt>かじ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "housework, domestic chores",
+              "meaning_zh": "家务",
+              "example_ja": "家事は面倒臭い",
+              "example_en": "housework is tiresome"
+            },
+            {
+              "id": "v03-023",
+              "term_ja": "面倒臭い",
+              "reading": "めんどうくさい",
+              "ruby_html": "<ruby>面倒臭<rt>めんどうくさ</rt></ruby>い",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "bothersome, tiresome, hassle",
+              "meaning_zh": "麻烦的, 费事的",
+              "example_ja": "家事は面倒臭い",
+              "example_en": "housework is tiresome"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "シャツに（　）をかけるのを忘れたので、今日は着ていけない。",
+              "options": [
+                "アイロン",
+                "床",
+                "汚す",
+                "リサイクル",
+                "動かす",
+                "家事"
+              ],
+              "answer": "アイロン",
+              "explanation": "「アイロンをかける」（iron clothes）というコロケーションです。"
+            },
+            {
+              "id": 2,
+              "question_ja": "（　）が濡れているので、今、歩くと、靴下が濡れてしまう。",
+              "options": [
+                "アイロン",
+                "床",
+                "汚す",
+                "リサイクル",
+                "動かす",
+                "家事"
+              ],
+              "answer": "床",
+              "explanation": "歩くと靴下が濡れる場所なので「床」（floor）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "洗っても、洗っても、子供が服を（　）ので、困る。",
+              "options": [
+                "アイロン",
+                "床",
+                "汚す",
+                "リサイクル",
+                "動かす",
+                "家事"
+              ],
+              "answer": "汚す",
+              "explanation": "服を汚してしまう文脈なので「汚す」（soil/make dirty）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "新聞や雑誌は（　）に出すから、捨てないで、取っておいてください。",
+              "options": [
+                "アイロン",
+                "床",
+                "汚す",
+                "リサイクル",
+                "動かす",
+                "家事"
+              ],
+              "answer": "リサイクル",
+              "explanation": "「リサイクルに出す」（send for recycling）という表現です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "ベッドの下にお金が入っちゃったんで、ベッドを（　）のを手伝ってよ。",
+              "options": [
+                "アイロン",
+                "床",
+                "汚す",
+                "リサイクル",
+                "動かす",
+                "家事"
+              ],
+              "answer": "動かす",
+              "explanation": "ベッドの下の物を取るために位置を変える「動かす」（move）が入ります。"
+            },
+            {
+              "id": 6,
+              "question_ja": "掃除や洗濯など、（　）は夫婦で半分ずつやっている。",
+              "options": [
+                "アイロン",
+                "床",
+                "汚す",
+                "リサイクル",
+                "動かす",
+                "家事"
+              ],
+              "answer": "家事",
+              "explanation": "掃除や洗濯などの家庭内の仕事を総称して「家事」（housework）と言います。"
+            }
+          ]
+        },
+        {
+          "section_id": "03-2",
+          "title_ja": "起きてから寝るまで",
+          "title_en": "From Waking Up to Going to Bed",
+          "page": 11,
+          "warming_up": {
+            "question_ja": "朝、起きてから寝るまで、1日の間にすることを話してみましょう。",
+            "question_en": "Let's talk about what you do during the day from waking up in the morning to going to bed."
+          },
+          "words": [
+            {
+              "id": "v03-024",
+              "term_ja": "目が覚める",
+              "reading": "めがさめる",
+              "ruby_html": "<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>める",
+              "part_of_speech": "動詞",
+              "meaning_en": "to awaken, to wake up",
+              "meaning_zh": "醒来",
+              "example_ja": "朝6時に目が覚める",
+              "example_en": "wake up at 6 in the morning"
+            },
+            {
+              "id": "v03-025",
+              "term_ja": "あくび",
+              "reading": "あくび",
+              "ruby_html": "あくび",
+              "part_of_speech": "名詞",
+              "meaning_en": "yawn",
+              "meaning_zh": "哈欠",
+              "example_ja": "あくびが出る",
+              "example_en": "yawn"
+            },
+            {
+              "id": "v03-026",
+              "term_ja": "涙",
+              "reading": "なみだ",
+              "ruby_html": "<ruby>涙<rt>なみだ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "tears",
+              "meaning_zh": "眼泪",
+              "example_ja": "涙が出る",
+              "example_en": "shed tears"
+            },
+            {
+              "id": "v03-027",
+              "term_ja": "睡眠",
+              "reading": "すいみん",
+              "ruby_html": "<ruby>睡眠<rt>すいみん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "sleep",
+              "meaning_zh": "睡眠",
+              "example_ja": "睡眠が足りない",
+              "example_en": "not get enough sleep"
+            },
+            {
+              "id": "v03-028",
+              "term_ja": "足りない",
+              "reading": "たりない",
+              "ruby_html": "<ruby>足<rt>た</rt></ruby>りない",
+              "part_of_speech": "動詞",
+              "meaning_en": "to be insufficient, to lack",
+              "meaning_zh": "不够, 不足",
+              "example_ja": "睡眠が足りない",
+              "example_en": "lack sleep"
+            },
+            {
+              "id": "v03-029",
+              "term_ja": "朝食",
+              "reading": "ちょうしょく",
+              "ruby_html": "<ruby>朝食<rt>ちょうしょく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "breakfast",
+              "meaning_zh": "早饭, 早餐",
+              "example_ja": "朝食を取る",
+              "example_en": "have breakfast"
+            },
+            {
+              "id": "v03-030",
+              "term_ja": "取る",
+              "reading": "とる",
+              "ruby_html": "<ruby>取<rt>と</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to take, to have (a meal)",
+              "meaning_zh": "吃, 摄取",
+              "example_ja": "朝食を取る",
+              "example_en": "have breakfast"
+            },
+            {
+              "id": "v03-031",
+              "term_ja": "化粧",
+              "reading": "けしょう",
+              "ruby_html": "<ruby>化粧<rt>けしょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "makeup, cosmetics",
+              "meaning_zh": "化妆",
+              "example_ja": "化粧をする",
+              "example_en": "put on makeup"
+            },
+            {
+              "id": "v03-032",
+              "term_ja": "えさ",
+              "reading": "えさ",
+              "ruby_html": "えさ",
+              "part_of_speech": "名詞",
+              "meaning_en": "pet food, feed, bait",
+              "meaning_zh": "饵食, 饲料",
+              "example_ja": "ペットにえさをやる",
+              "example_en": "feed the pet"
+            },
+            {
+              "id": "v03-033",
+              "term_ja": "やる",
+              "reading": "やる",
+              "ruby_html": "やる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to give (to animals/plants), to feed",
+              "meaning_zh": "给, 喂",
+              "example_ja": "ペットにえさをやる",
+              "example_en": "feed the pet"
+            },
+            {
+              "id": "v03-034",
+              "term_ja": "可愛がる",
+              "reading": "かわいがる",
+              "ruby_html": "<ruby>可愛<rt>かわい</rt></ruby>がる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to love, to cherish, to treat with affection",
+              "meaning_zh": "疼爱, 宠爱",
+              "example_ja": "猫を可愛がる",
+              "example_en": "pet/cherish a cat"
+            },
+            {
+              "id": "v03-035",
+              "term_ja": "定期",
+              "reading": "ていき",
+              "ruby_html": "<ruby>定期<rt>ていき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "commuter pass",
+              "meaning_zh": "月票, 定期票",
+              "example_ja": "定期を忘れる",
+              "example_en": "forget the commuter pass"
+            },
+            {
+              "id": "v03-036",
+              "term_ja": "遅刻する",
+              "reading": "ちこくする",
+              "ruby_html": "<ruby>遅刻<rt>ちこく</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be late, to arrive late",
+              "meaning_zh": "迟到",
+              "example_ja": "会社に遅刻する",
+              "example_en": "be late for work"
+            },
+            {
+              "id": "v03-037",
+              "term_ja": "携帯電話",
+              "reading": "けいたいでんわ",
+              "ruby_html": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "mobile phone, cellphone",
+              "meaning_zh": "手机",
+              "example_ja": "携帯電話の電池",
+              "example_en": "mobile phone battery"
+            },
+            {
+              "id": "v03-038",
+              "term_ja": "電池",
+              "reading": "でんち",
+              "ruby_html": "<ruby>電池<rt>でんち</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "battery",
+              "meaning_zh": "电池",
+              "example_ja": "電池が切れる",
+              "example_en": "the battery runs out"
+            },
+            {
+              "id": "v03-039",
+              "term_ja": "切れる",
+              "reading": "きれる",
+              "ruby_html": "<ruby>切<rt>き</rt></ruby>れる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to run out, to expire",
+              "meaning_zh": "耗尽, 用完",
+              "example_ja": "電池が切れる",
+              "example_en": "the battery runs out"
+            },
+            {
+              "id": "v03-040",
+              "term_ja": "退屈な",
+              "reading": "たいくつな",
+              "ruby_html": "<ruby>退屈<rt>たいくつ</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "boring, tedious, dull",
+              "meaning_zh": "无聊的",
+              "example_ja": "退屈な仕事",
+              "example_en": "boring work"
+            },
+            {
+              "id": "v03-041",
+              "term_ja": "帰宅する",
+              "reading": "きたくする",
+              "ruby_html": "<ruby>帰宅<rt>きたく</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to return home, to come home",
+              "meaning_zh": "回家",
+              "example_ja": "12時に帰宅する",
+              "example_en": "return home at 12"
+            },
+            {
+              "id": "v03-042",
+              "term_ja": "文句",
+              "reading": "もんく",
+              "ruby_html": "<ruby>文句<rt>もんく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "complaint, grumbling",
+              "meaning_zh": "抱怨, 牢骚",
+              "example_ja": "妻に文句を言われる",
+              "example_en": "be complained to by one's wife"
+            },
+            {
+              "id": "v03-043",
+              "term_ja": "疲れ",
+              "reading": "つかれ",
+              "ruby_html": "<ruby>疲<rt>つか</rt></ruby>れ",
+              "part_of_speech": "名詞",
+              "meaning_en": "tiredness, fatigue",
+              "meaning_zh": "疲劳, 劳累",
+              "example_ja": "疲れが取れない",
+              "example_en": "cannot relieve fatigue"
+            },
+            {
+              "id": "v03-044",
+              "term_ja": "毛布",
+              "reading": "もうふ",
+              "ruby_html": "<ruby>毛布<rt>もうふ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "blanket",
+              "meaning_zh": "毛毯",
+              "example_ja": "毛布をかける",
+              "example_en": "cover with a blanket"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "朝、忙しかったので、猫に（　）をやるのを忘れた。",
+              "options": [
+                "えさ",
+                "あくび",
+                "帰宅",
+                "電池",
+                "涙"
+              ],
+              "answer": "えさ",
+              "explanation": "ペットにあげる食べ物を指す「えさ」（pet food）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "昨日、あまり寝ていないので、（　）が止まらない。",
+              "options": [
+                "えさ",
+                "あくび",
+                "帰宅",
+                "電池",
+                "涙"
+              ],
+              "answer": "あくび",
+              "explanation": "睡眠不足で眠いときに出る生理現象「あくび」（yawn）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "仕事がたくさんあったので、（　）が遅くなった。",
+              "options": [
+                "えさ",
+                "あくび",
+                "帰宅",
+                "電池",
+                "涙"
+              ],
+              "answer": "帰宅",
+              "explanation": "家に帰ることを意味する「帰宅」（return home）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "時計の（　）が切れてしまったので、今日は持っていかない。",
+              "options": [
+                "えさ",
+                "あくび",
+                "帰宅",
+                "電池",
+                "涙"
+              ],
+              "answer": "電池",
+              "explanation": "エネルギーがなくなって止まるのは「電池が切れる」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "目に入ったゴミが取れなくて、（　）が出てきた。",
+              "options": [
+                "えさ",
+                "あくび",
+                "帰宅",
+                "電池",
+                "涙"
+              ],
+              "answer": "涙",
+              "explanation": "目に刺激があって流れるのは「涙」（tears）です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "03-ex1",
+          "title_ja": "これから友達が来ます。絵を見て、しなければならないことを書いてください。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1)",
+              "answer": "食器を洗う",
+              "explanation": "流し台に溜まっている皿などの食器を洗う必要があります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2)",
+              "answer": "掃除機をかける",
+              "explanation": "部屋が散らかってゴミがあるため掃除機をかけます。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(3)",
+              "answer": "服を畳む",
+              "explanation": "散らかっている服や洗濯物を畳んでしまいます。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "(4)",
+              "answer": "床を拭く",
+              "explanation": "床の汚れを雑巾などで拭きます。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "(5)",
+              "answer": "毛布を畳む",
+              "explanation": "ベッドや布団の毛布を畳んで整えます。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "03-ex2",
+          "title_ja": "下線に似た意味の語を「言葉」の中から選び、必要なら形を変えて、（　）に入れなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "A: パソコンを直してくれるお店を知りませんか。\nB: ヤマダカメラに持っていけば、（　）してくれますよ。",
+              "answer": "修理",
+              "explanation": "「直す」と同じ意味の名詞は「修理」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "A: 会議が（　）で、眠くて、眠くて、大変でした。\nB: そんなにつまらない会議だったんですか。",
+              "answer": "退屈",
+              "explanation": "「つまらない」と似た意味を表す語は「退屈」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "A: 昨日は飲み過ぎちゃって、目が（　）ら、昼の12時だったよ。\nB: そんなに遅く、起きたんだ。",
+              "answer": "覚めた",
+              "explanation": "「起きる」に対応する表現は「目が覚める」の過去形「覚めた」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "A: この掃除機、よく吸わないんだけど。どこか具合が悪いのかな。\nB: 最近、（　）が悪いみたいだよ。",
+              "answer": "調子",
+              "explanation": "機械などの「具合」を表す語は「調子」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "A: いすやベッドを捨てたいときは、どうすればいいんですか。\nB: （　）を捨てたいときは、役所に一度連絡してください。",
+              "answer": "家具",
+              "explanation": "いすやベッドなどを総称する語は「家具」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "03-ex3",
+          "title_ja": "正しいほうを選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "1日に8時間は睡眠を（a. し　b. 取り）たい。",
+              "options": [
+                "a. し",
+                "b. 取り"
+              ],
+              "answer": "b",
+              "explanation": "「睡眠を取る」（get sleep）という組み合わせが適切です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "ズボンに（a. 付いた　b. 止まった）汚れがなかなか取れない。",
+              "options": [
+                "a. 付いた",
+                "b. 止まった"
+              ],
+              "answer": "a",
+              "explanation": "汚れが付着することは「汚れが付く」と言います。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "朝、起きても、まだ、疲れが（a. 止まって　b. 残って）いる。",
+              "options": [
+                "a. 止まって",
+                "b. 残って"
+              ],
+              "answer": "b",
+              "explanation": "疲労が回復せずまだあることは「疲れが残っている」と言います。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "洗剤が（a. 切って　b. 切れて）いたので、スーパーで買ってきた。",
+              "options": [
+                "a. 切って",
+                "b. 切れて"
+              ],
+              "answer": "b",
+              "explanation": "品物・消耗品が無くなる自動詞表現は「切れる（切れている）」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "テレビが面白くないので、退屈（a. して　b. にして）いた。",
+              "options": [
+                "a. して",
+                "b. にして"
+              ],
+              "answer": "a",
+              "explanation": "退屈に感じる・退屈な状態にあることは「退屈する（退屈していた）」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "03-ex4",
+          "title_ja": "（　）に入る語を［　］の中から選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① スープを作ったら、味が薄いと（　）を言われた。\n② 電車に乗ったら、電車の中で（　）をしている人がいて、驚いた。\n③ （　）を無くすのは、これで3回目だ。",
+              "options": [
+                "a. 化粧",
+                "b. 定期",
+                "c. 文句"
+              ],
+              "answer": "① c, ② a, ③ b",
+              "explanation": "① 文句を言われた、② 化粧をしている、③ 定期を無くす",
+              "sub_items": [
+                {
+                  "item_id": "1-1",
+                  "question_ja": "① スープを作ったら、味が薄いと（　）を言われた。",
+                  "options": [
+                    "a. 化粧",
+                    "b. 定期",
+                    "c. 文句"
+                  ],
+                  "answer": "c",
+                  "explanation": "「文句を言われる」（be complained to）です。"
+                },
+                {
+                  "item_id": "1-2",
+                  "question_ja": "② 電車に乗ったら、電車の中で（　）をしている人がいて、驚いた。",
+                  "options": [
+                    "a. 化粧",
+                    "b. 定期",
+                    "c. 文句"
+                  ],
+                  "answer": "a",
+                  "explanation": "「化粧をする」（put on makeup）です。"
+                },
+                {
+                  "item_id": "1-3",
+                  "question_ja": "③ （　）を無くすのは、これで3回目だ。",
+                  "options": [
+                    "a. 化粧",
+                    "b. 定期",
+                    "c. 文句"
+                  ],
+                  "answer": "b",
+                  "explanation": "定期券を紛失する「定期を無くす」です。"
+                }
+              ]
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 森田さんは、毎朝、（　）くるので、いつも先生に怒られている。\n② 料理を作るのが（　）、いつもコンビニでお弁当を買っている。\n③ 田村さんは、犬を3匹飼っていて、とても（　）いる。",
+              "options": [
+                "a. 可愛がって",
+                "b. 遅刻して",
+                "c. 面倒臭くて"
+              ],
+              "answer": "① b, ② c, ③ a",
+              "explanation": "① 遅刻してくる、② 面倒臭くて、③ 可愛がっている",
+              "sub_items": [
+                {
+                  "item_id": "2-1",
+                  "question_ja": "① 森田さんは、毎朝、（　）くるので、いつも先生に怒られている。",
+                  "options": [
+                    "a. 可愛がって",
+                    "b. 遅刻して",
+                    "c. 面倒臭くて"
+                  ],
+                  "answer": "b",
+                  "explanation": "学校に遅れて来る「遅刻してくる」です。"
+                },
+                {
+                  "item_id": "2-2",
+                  "question_ja": "② 料理を作るのが（　）、いつもコンビニでお弁当を買っている。",
+                  "options": [
+                    "a. 可愛がって",
+                    "b. 遅刻して",
+                    "c. 面倒臭くて"
+                  ],
+                  "answer": "c",
+                  "explanation": "料理が面倒で手間に感じる「面倒臭くて」です。"
+                },
+                {
+                  "item_id": "2-3",
+                  "question_ja": "③ 田村さんは、犬を3匹飼っていて、とても（　）いる。",
+                  "options": [
+                    "a. 可愛がって",
+                    "b. 遅刻して",
+                    "c. 面倒臭くて"
+                  ],
+                  "answer": "a",
+                  "explanation": "ペットを大切に愛玩する「可愛がっている」です。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "exercise_id": "03-ex5",
+          "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。最初の字はヒントです。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "今日は、朝の5時に目が（①さ　　）しまった。",
+              "hint": "さ",
+              "answer": "さめて",
+              "explanation": "「目が覚めてしまった」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "今日は、（②す　　　）が足りなくて、一日中、",
+              "hint": "す",
+              "answer": "すいみん",
+              "explanation": "「睡眠（すいみん）が足りなくて」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "一日中、（③あ　　）ばかりしていたので、下田先生に怒られてしまった。",
+              "hint": "あ",
+              "answer": "あくび",
+              "explanation": "「あくびばかりしていたので」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "寒くないように、（④も　　）を出したので、今日は早く寝よう。",
+              "hint": "も",
+              "answer": "もうふ",
+              "explanation": "「毛布（もうふ）を出したので」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "昨日は、友達と渋谷で飲んで、1時に（⑤き　　）。",
+              "hint": "き",
+              "answer": "きたく",
+              "explanation": "「1時に帰宅（きたく）」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "今朝は、学校に（⑥ち　　）しそうになったので、",
+              "hint": "ち",
+              "answer": "ちこく",
+              "explanation": "「遅刻（ちこく）しそうになったので」です。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "（⑦ちょ　　　）を取らずに、学校に行った。",
+              "hint": "ちょ",
+              "answer": "ちょうしょく",
+              "explanation": "「朝食（ちょうしょく）を取らずに」です。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "今日は一日掃除。（⑧か　）を",
+              "hint": "か",
+              "answer": "かぐ",
+              "explanation": "「家具（かぐ）を」です。"
+            },
+            {
+              "item_id": 9,
+              "question_ja": "（⑧かぐ）を（⑨う　　　）て、",
+              "hint": "う",
+              "answer": "うごかし",
+              "explanation": "「動かし（うごかし）て」です。"
+            },
+            {
+              "item_id": 10,
+              "question_ja": "（⑧家具）の下も（⑩そ　　　）をかけて、部屋がすごくきれいになった。",
+              "hint": "そ",
+              "answer": "そうじき",
+              "explanation": "「掃除機（そうじき）をかけて」です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "04",
+        "topic_ja": "生活2: 食生活",
+        "topic_en": "Daily Life 2: Food and Dining",
+        "pages": [
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "04-1",
+          "title_ja": "料理",
+          "title_en": "Cooking",
+          "page": 14,
+          "warming_up": {
+            "question_ja": "どんな料理が好きですか。それはどんな味ですか。どうやって、作りますか。",
+            "question_en": "What kind of dishes do you like? What flavor is it? How do you cook it?"
+          },
+          "words": [
+            {
+              "id": "v04-001",
+              "term_ja": "皮",
+              "reading": "かわ",
+              "ruby_html": "<ruby>皮<rt>かわ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "peel, skin, rind",
+              "meaning_zh": "皮",
+              "example_ja": "皮をむく",
+              "example_en": "peel the skin"
+            },
+            {
+              "id": "v04-002",
+              "term_ja": "むく",
+              "reading": "むく",
+              "ruby_html": "むく",
+              "part_of_speech": "動詞",
+              "meaning_en": "to peel, to skin",
+              "meaning_zh": "剥皮, 削皮",
+              "example_ja": "リンゴの皮をむく",
+              "example_en": "peel an apple"
+            },
+            {
+              "id": "v04-003",
+              "term_ja": "砂糖",
+              "reading": "さとう",
+              "ruby_html": "<ruby>砂糖<rt>さとう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "sugar",
+              "meaning_zh": "砂糖, 白糖",
+              "example_ja": "砂糖を加える",
+              "example_en": "add sugar"
+            },
+            {
+              "id": "v04-004",
+              "term_ja": "加える",
+              "reading": "くわえる",
+              "ruby_html": "<ruby>加<rt>くわ</rt></ruby>える",
+              "part_of_speech": "動詞",
+              "meaning_en": "to add",
+              "meaning_zh": "加入, 加上",
+              "example_ja": "砂糖を加える",
+              "example_en": "add sugar"
+            },
+            {
+              "id": "v04-005",
+              "term_ja": "材料",
+              "reading": "ざいりょう",
+              "ruby_html": "<ruby>材料<rt>ざいりょう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "ingredients, materials",
+              "meaning_zh": "材料, 原材料",
+              "example_ja": "材料を混ぜる",
+              "example_en": "mix ingredients"
+            },
+            {
+              "id": "v04-006",
+              "term_ja": "混ぜる",
+              "reading": "まぜる",
+              "ruby_html": "<ruby>混<rt>ま</rt></ruby>ぜる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to mix, to stir, to blend",
+              "meaning_zh": "搅拌, 混合",
+              "example_ja": "材料を混ぜる",
+              "example_en": "mix ingredients"
+            },
+            {
+              "id": "v04-007",
+              "term_ja": "鍋",
+              "reading": "なべ",
+              "ruby_html": "<ruby>鍋<rt>なべ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "pot, pan",
+              "meaning_zh": "锅",
+              "example_ja": "鍋で煮る",
+              "example_en": "simmer in a pot"
+            },
+            {
+              "id": "v04-008",
+              "term_ja": "煮る",
+              "reading": "にる",
+              "ruby_html": "<ruby>煮<rt>に</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to simmer, to boil, to stew",
+              "meaning_zh": "煮, 炖",
+              "example_ja": "鍋で煮る",
+              "example_en": "simmer in a pot"
+            },
+            {
+              "id": "v04-009",
+              "term_ja": "油",
+              "reading": "あぶら",
+              "ruby_html": "<ruby>油<rt>あぶら</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "oil, cooking oil",
+              "meaning_zh": "油, 食用油",
+              "example_ja": "油で揚げる",
+              "example_en": "deep-fry in oil"
+            },
+            {
+              "id": "v04-010",
+              "term_ja": "揚げる",
+              "reading": "あげる",
+              "ruby_html": "<ruby>揚<rt>あ</rt></ruby>げる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to deep-fry, to fry",
+              "meaning_zh": "油炸",
+              "example_ja": "油で揚げる",
+              "example_en": "deep-fry in oil"
+            },
+            {
+              "id": "v04-011",
+              "term_ja": "容器",
+              "reading": "ようき",
+              "ruby_html": "<ruby>容器<rt>ようき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "container, vessel",
+              "meaning_zh": "容器",
+              "example_ja": "容器に移す",
+              "example_en": "transfer to a container"
+            },
+            {
+              "id": "v04-012",
+              "term_ja": "移す",
+              "reading": "うつす",
+              "ruby_html": "<ruby>移<rt>うつ</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to transfer, to move",
+              "meaning_zh": "移到, 转移",
+              "example_ja": "容器に移す",
+              "example_en": "transfer to a container"
+            },
+            {
+              "id": "v04-013",
+              "term_ja": "保存する",
+              "reading": "ほぞんする",
+              "ruby_html": "<ruby>保存<rt>ほぞん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to store, to preserve, to keep",
+              "meaning_zh": "保存, 储存",
+              "example_ja": "冷蔵庫で保存する",
+              "example_en": "store in the refrigerator"
+            },
+            {
+              "id": "v04-014",
+              "term_ja": "腐る",
+              "reading": "くさる",
+              "ruby_html": "<ruby>腐<rt>くさ</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to go bad, to spoil, to rot",
+              "meaning_zh": "腐烂, 变质",
+              "example_ja": "野菜が腐る",
+              "example_en": "vegetables go bad"
+            },
+            {
+              "id": "v04-015",
+              "term_ja": "生",
+              "reading": "なま",
+              "ruby_html": "<ruby>生<rt>なま</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "raw, uncooked, fresh",
+              "meaning_zh": "生鲜, 没熟",
+              "example_ja": "生で食べる",
+              "example_en": "eat raw"
+            },
+            {
+              "id": "v04-016",
+              "term_ja": "酸っぱい",
+              "reading": "すっぱい",
+              "ruby_html": "<ruby>酸<rt>す</rt></ruby>っぱい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "sour, acidic",
+              "meaning_zh": "酸的",
+              "example_ja": "酸っぱい味",
+              "example_en": "sour taste"
+            },
+            {
+              "id": "v04-017",
+              "term_ja": "濃い",
+              "reading": "こい",
+              "ruby_html": "<ruby>濃<rt>こ</rt></ruby>い",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "rich, strong, heavy (flavor)",
+              "meaning_zh": "浓的, 醇厚的",
+              "example_ja": "濃い味",
+              "example_en": "strong flavor"
+            },
+            {
+              "id": "v04-018",
+              "term_ja": "しつこい",
+              "reading": "しつこい",
+              "ruby_html": "しつこい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "too rich, greasy, cloying",
+              "meaning_zh": "油腻的, 浓腻的",
+              "example_ja": "しつこい味",
+              "example_en": "greasy taste"
+            },
+            {
+              "id": "v04-019",
+              "term_ja": "軟らかい",
+              "reading": "やわらかい",
+              "ruby_html": "<ruby>軟<rt>やわ</rt></ruby>らかい",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "soft, tender",
+              "meaning_zh": "柔软的, 嫩的",
+              "example_ja": "肉が軟らかい",
+              "example_en": "the meat is tender"
+            },
+            {
+              "id": "v04-020",
+              "term_ja": "固い",
+              "reading": "かたい",
+              "ruby_html": "<ruby>固<rt>かた</rt></ruby>い",
+              "part_of_speech": "イ形容詞",
+              "meaning_en": "hard, tough",
+              "meaning_zh": "硬的",
+              "example_ja": "肉が固い",
+              "example_en": "the meat is tough"
+            },
+            {
+              "id": "v04-021",
+              "term_ja": "香り",
+              "reading": "かおり",
+              "ruby_html": "<ruby>香<rt>かお</rt></ruby>り",
+              "part_of_speech": "名詞",
+              "meaning_en": "aroma, fragrance, scent",
+              "meaning_zh": "香味, 香气",
+              "example_ja": "香りがいい",
+              "example_en": "pleasant aroma"
+            },
+            {
+              "id": "v04-022",
+              "term_ja": "包丁",
+              "reading": "ほうちょう",
+              "ruby_html": "<ruby>包丁<rt>ほうちょう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "kitchen knife, cleaver",
+              "meaning_zh": "菜刀",
+              "example_ja": "包丁を片付ける",
+              "example_en": "put away the kitchen knife"
+            },
+            {
+              "id": "v04-023",
+              "term_ja": "フライパン",
+              "reading": "フライパン",
+              "ruby_html": "フライパン",
+              "part_of_speech": "名詞",
+              "meaning_en": "frying pan, skillet",
+              "meaning_zh": "平底锅",
+              "example_ja": "フライパンを片付ける",
+              "example_en": "put away the frying pan"
+            },
+            {
+              "id": "v04-024",
+              "term_ja": "片付ける",
+              "reading": "かたづける",
+              "ruby_html": "<ruby>片付<rt>かたづ</rt></ruby>ける",
+              "part_of_speech": "動詞",
+              "meaning_en": "to put away, to tidy up",
+              "meaning_zh": "收拾, 整理",
+              "example_ja": "皿を片付ける",
+              "example_en": "put away the plates"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "ステーキの中が、まだ、焼けていなくて、（　）だった。",
+              "options": [
+                "生",
+                "香り",
+                "軟らかい",
+                "材料",
+                "油"
+              ],
+              "answer": "生",
+              "explanation": "まだ十分に焼けていない状態を表す「生」（raw）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "この紅茶は、飲んだとき、とても（　）がいい。",
+              "options": [
+                "生",
+                "香り",
+                "軟らかい",
+                "材料",
+                "油"
+              ],
+              "answer": "香り",
+              "explanation": "お茶や料理の心地よいにおいを表す「香り」（aroma）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "歯が痛くて、（　）ものしか食べられない。",
+              "options": [
+                "生",
+                "香り",
+                "軟らかい",
+                "材料",
+                "油"
+              ],
+              "answer": "軟らかい",
+              "explanation": "歯が痛いときに噛みやすい「軟らかい」（soft）ものが入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "カレーを作る（　）を買うために八百屋に寄った。",
+              "options": [
+                "生",
+                "香り",
+                "軟らかい",
+                "材料",
+                "油"
+              ],
+              "answer": "材料",
+              "explanation": "料理に使う原材料を指す「材料」（ingredients）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "太るから、（　）を取り過ぎないほうがいいと言われた。",
+              "options": [
+                "生",
+                "香り",
+                "軟らかい",
+                "材料",
+                "油"
+              ],
+              "answer": "油",
+              "explanation": "高カロリーで太る原因になりやすい「油」（oil/fat）が入ります。"
+            }
+          ]
+        },
+        {
+          "section_id": "04-2",
+          "title_ja": "食事",
+          "title_en": "Dining",
+          "page": 15,
+          "warming_up": {
+            "question_ja": "友達とレストランに晩御飯を食べに来ました。どんなことをしますか。",
+            "question_en": "You came to a restaurant with friends to eat dinner. What do you do?"
+          },
+          "words": [
+            {
+              "id": "v04-025",
+              "term_ja": "ぺこぺこ",
+              "reading": "ぺこぺこ",
+              "ruby_html": "ぺこぺこ",
+              "part_of_speech": "ナ形容詞・副詞",
+              "meaning_en": "famished, very hungry",
+              "meaning_zh": "饿坏了, 肚子咕咕叫",
+              "example_ja": "お腹がぺこぺこだ",
+              "example_en": "I'm starving"
+            },
+            {
+              "id": "v04-026",
+              "term_ja": "からから",
+              "reading": "からから",
+              "ruby_html": "からから",
+              "part_of_speech": "ナ形容詞・副詞",
+              "meaning_en": "parched, very thirsty",
+              "meaning_zh": "干渴, 干巴巴",
+              "example_ja": "喉がからからだ",
+              "example_en": "my throat is parched"
+            },
+            {
+              "id": "v04-027",
+              "term_ja": "高級な",
+              "reading": "こうきゅうな",
+              "ruby_html": "<ruby>高級<rt>こうきゅう</rt></ruby>な",
+              "part_of_speech": "ナ形容詞",
+              "meaning_en": "high-class, upscale, luxury",
+              "meaning_zh": "高级的",
+              "example_ja": "高級なレストランに行く",
+              "example_en": "go to an upscale restaurant"
+            },
+            {
+              "id": "v04-028",
+              "term_ja": "メニュー",
+              "reading": "メニュー",
+              "ruby_html": "メニュー",
+              "part_of_speech": "名詞",
+              "meaning_en": "menu",
+              "meaning_zh": "菜单",
+              "example_ja": "メニューから選ぶ",
+              "example_en": "choose from the menu"
+            },
+            {
+              "id": "v04-029",
+              "term_ja": "選ぶ",
+              "reading": "えらぶ",
+              "ruby_html": "<ruby>選<rt>えら</rt></ruby>ぶ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to choose, to select",
+              "meaning_zh": "选择, 挑选",
+              "example_ja": "メニューから選ぶ",
+              "example_en": "choose from the menu"
+            },
+            {
+              "id": "v04-030",
+              "term_ja": "栄養",
+              "reading": "えいよう",
+              "ruby_html": "<ruby>栄養<rt>えいよう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "nutrition, nourishment",
+              "meaning_zh": "营养",
+              "example_ja": "栄養のバランスを考える",
+              "example_en": "consider nutritional balance"
+            },
+            {
+              "id": "v04-031",
+              "term_ja": "バランス",
+              "reading": "バランス",
+              "ruby_html": "バランス",
+              "part_of_speech": "名詞",
+              "meaning_en": "balance",
+              "meaning_zh": "平衡, 均衡",
+              "example_ja": "栄養のバランスを考える",
+              "example_en": "consider nutritional balance"
+            },
+            {
+              "id": "v04-032",
+              "term_ja": "注文する",
+              "reading": "ちゅうもんする",
+              "ruby_html": "<ruby>注文<rt>ちゅうもん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to order (food/goods)",
+              "meaning_zh": "点餐, 订购",
+              "example_ja": "料理を注文する",
+              "example_en": "order dishes"
+            },
+            {
+              "id": "v04-033",
+              "term_ja": "追加",
+              "reading": "ついか",
+              "ruby_html": "<ruby>追加<rt>ついか</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "extra portion, addition",
+              "meaning_zh": "追加, 加点",
+              "example_ja": "ポテトを追加で頼む",
+              "example_en": "order extra fries"
+            },
+            {
+              "id": "v04-034",
+              "term_ja": "乾杯する",
+              "reading": "かんぱいする",
+              "ruby_html": "<ruby>乾杯<rt>かんぱい</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to toast, to cheers",
+              "meaning_zh": "干杯",
+              "example_ja": "ビールで乾杯する",
+              "example_en": "toast with beer"
+            },
+            {
+              "id": "v04-035",
+              "term_ja": "酔う",
+              "reading": "よう",
+              "ruby_html": "<ruby>酔<rt>よ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to get drunk",
+              "meaning_zh": "喝醉, 醉酒",
+              "example_ja": "お酒に酔う",
+              "example_en": "get drunk on alcohol"
+            },
+            {
+              "id": "v04-036",
+              "term_ja": "舌",
+              "reading": "した",
+              "ruby_html": "<ruby>舌<rt>した</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "tongue",
+              "meaning_zh": "舌头",
+              "example_ja": "舌を火傷する",
+              "example_en": "burn one's tongue"
+            },
+            {
+              "id": "v04-037",
+              "term_ja": "火傷する",
+              "reading": "やけどする",
+              "ruby_html": "<ruby>火傷<rt>やけど</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to burn, to scald",
+              "meaning_zh": "烧伤, 烫伤",
+              "example_ja": "舌を火傷する",
+              "example_en": "burn one's tongue"
+            },
+            {
+              "id": "v04-038",
+              "term_ja": "残す",
+              "reading": "のこす",
+              "ruby_html": "<ruby>残<rt>のこ</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to leave (uneaten), to leave behind",
+              "meaning_zh": "留下, 吃剩",
+              "example_ja": "野菜を残す",
+              "example_en": "leave vegetables uneaten"
+            },
+            {
+              "id": "v04-039",
+              "term_ja": "マナー",
+              "reading": "マナー",
+              "ruby_html": "マナー",
+              "part_of_speech": "名詞",
+              "meaning_en": "manners, etiquette",
+              "meaning_zh": "礼仪, 规矩",
+              "example_ja": "食事のマナーを教える",
+              "example_en": "teach table manners"
+            },
+            {
+              "id": "v04-040",
+              "term_ja": "支払い",
+              "reading": "しはらい",
+              "ruby_html": "<ruby>支払<rt>しはら</rt></ruby>い",
+              "part_of_speech": "名詞",
+              "meaning_en": "payment",
+              "meaning_zh": "支付, 付款",
+              "example_ja": "支払いが済む",
+              "example_en": "payment is settled"
+            },
+            {
+              "id": "v04-041",
+              "term_ja": "済む",
+              "reading": "すむ",
+              "ruby_html": "<ruby>済<rt>す</rt></ruby>む",
+              "part_of_speech": "動詞",
+              "meaning_en": "to finish, to be settled",
+              "meaning_zh": "结束, 办完",
+              "example_ja": "支払いが済む",
+              "example_en": "payment is settled"
+            },
+            {
+              "id": "v04-042",
+              "term_ja": "食費",
+              "reading": "しょくひ",
+              "ruby_html": "<ruby>食費<rt>しょくひ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "food expenses, meal costs",
+              "meaning_zh": "伙食费",
+              "example_ja": "食費がかかる",
+              "example_en": "spend on food expenses"
+            },
+            {
+              "id": "v04-043",
+              "term_ja": "おかず",
+              "reading": "おかず",
+              "ruby_html": "おかず",
+              "part_of_speech": "名詞",
+              "meaning_en": "side dish",
+              "meaning_zh": "菜肴, 配菜",
+              "example_ja": "おかずを食べる",
+              "example_en": "eat side dishes"
+            },
+            {
+              "id": "v04-044",
+              "term_ja": "おにぎり",
+              "reading": "おにぎり",
+              "ruby_html": "おにぎり",
+              "part_of_speech": "名詞",
+              "meaning_en": "rice ball",
+              "meaning_zh": "饭团",
+              "example_ja": "おにぎりを食べる",
+              "example_en": "eat a rice ball"
+            },
+            {
+              "id": "v04-045",
+              "term_ja": "お菓子",
+              "reading": "おかし",
+              "ruby_html": "お<ruby>菓子<rt>かし</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "sweets, snacks, confectionery",
+              "meaning_zh": "点心, 零食",
+              "example_ja": "お菓子を食べる",
+              "example_en": "eat snacks"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "時間がなかったので、急いで食べていたら、（　）をかんでしまった。",
+              "options": [
+                "舌",
+                "酔う",
+                "火傷",
+                "からから",
+                "食費"
+              ],
+              "answer": "舌",
+              "explanation": "急いで噛んでしまいやすい口の中の器官「舌」（tongue）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "青山さんは、お酒を飲んで、（　）と、必ず歌を歌い始める。",
+              "options": [
+                "舌",
+                "酔う",
+                "火傷",
+                "からから",
+                "食費"
+              ],
+              "answer": "酔う",
+              "explanation": "お酒を飲んでアルコールが回る「酔う」（get drunk）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "熱いフライパンに触って、手を（　）してしまった。",
+              "options": [
+                "舌",
+                "酔う",
+                "火傷",
+                "からから",
+                "食費"
+              ],
+              "answer": "火傷",
+              "explanation": "熱いものに触れて負う傷「火傷」（burn/scald）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "2時間も何も飲まないで歩いてきたので、喉が（　）だ。",
+              "options": [
+                "舌",
+                "酔う",
+                "火傷",
+                "からから",
+                "食費"
+              ],
+              "answer": "からから",
+              "explanation": "喉が非常に渇いた状態を表すオノマトペ「からから」（parched）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "外で食べないで、家で料理をしているので、（　）が前よりかからない。",
+              "options": [
+                "舌",
+                "酔う",
+                "火傷",
+                "からから",
+                "食費"
+              ],
+              "answer": "食費",
+              "explanation": "食事にかかるお金を指す「食費」（food expense）が入ります。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "04-ex1",
+          "title_ja": "「リンゴジャムの作り方」です。絵を見て、することを書いてください。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1)",
+              "answer": "リンゴの皮をむく",
+              "explanation": "リンゴの皮を包丁でむきます。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2)",
+              "answer": "砂糖を加える",
+              "explanation": "レモン汁や砂糖を加えて混ぜ合わせます。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(3)",
+              "answer": "鍋で煮る",
+              "explanation": "鍋に入れて20分ほど煮ます。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "(4)",
+              "answer": "容器に移す",
+              "explanation": "出来上がったジャムを瓶などの容器に移します。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "(5)",
+              "answer": "冷蔵庫で保存する",
+              "explanation": "冷蔵庫に入れて保存します。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "04-ex2",
+          "title_ja": "（　）に入る語を［　］の中から選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 今日のパーティーでは、水谷先生が（　）の挨拶をしてくださる。\n② ビールがなくなったので、もう3本（　）した。\n③ 晩御飯の（　）を毎日、考えるのは大変だ。",
+              "options": [
+                "a. 乾杯",
+                "b. 追加",
+                "c. メニュー"
+              ],
+              "answer": "① a, ② b, ③ c",
+              "explanation": "① 乾杯の挨拶、② 追加した、③ メニューを考える",
+              "sub_items": [
+                {
+                  "item_id": "1-1",
+                  "question_ja": "① 今日のパーティーでは、水谷先生が（　）の挨拶をしてくださる。",
+                  "options": [
+                    "a. 乾杯",
+                    "b. 追加",
+                    "c. メニュー"
+                  ],
+                  "answer": "a",
+                  "explanation": "パーティーの最初に行う「乾杯の挨拶」です。"
+                },
+                {
+                  "item_id": "1-2",
+                  "question_ja": "② ビールがなくなったので、もう3本（　）した。",
+                  "options": [
+                    "a. 乾杯",
+                    "b. 追加",
+                    "c. メニュー"
+                  ],
+                  "answer": "b",
+                  "explanation": "さらに足して注文する「追加した」です。"
+                },
+                {
+                  "item_id": "1-3",
+                  "question_ja": "③ 晩御飯の（　）を毎日、考えるのは大変だ。",
+                  "options": [
+                    "a. 乾杯",
+                    "b. 追加",
+                    "c. メニュー"
+                  ],
+                  "answer": "c",
+                  "explanation": "食事の献立を指す「メニュー」です。"
+                }
+              ]
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 納豆は、食べる前によく（　）と、おいしくなりますよ。\n② おととい買った魚、（　）前に食べたほうがいいよ。\n③ 天ぷらを（　）には、油がたくさん要ります。",
+              "options": [
+                "a. 揚げる",
+                "b. 混ぜる",
+                "c. 腐る"
+              ],
+              "answer": "① b, ② c, ③ a",
+              "explanation": "① 混ぜる、② 腐る前に、③ 揚げるには",
+              "sub_items": [
+                {
+                  "item_id": "2-1",
+                  "question_ja": "① 納豆は、食べる前によく（　）と、おいしくなりますよ。",
+                  "options": [
+                    "a. 揚げる",
+                    "b. 混ぜる",
+                    "c. 腐る"
+                  ],
+                  "answer": "b",
+                  "explanation": "かき混ぜる動作を表す「混ぜる」です。"
+                },
+                {
+                  "item_id": "2-2",
+                  "question_ja": "② おととい買った魚、（　）前に食べたほうがいいよ。",
+                  "options": [
+                    "a. 揚げる",
+                    "b. 混ぜる",
+                    "c. 腐る"
+                  ],
+                  "answer": "c",
+                  "explanation": "食材が悪くなる「腐る前に」です。"
+                },
+                {
+                  "item_id": "2-3",
+                  "question_ja": "③ 天ぷらを（　）には、油がたくさん要ります。",
+                  "options": [
+                    "a. 揚げる",
+                    "b. 混ぜる",
+                    "c. 腐る"
+                  ],
+                  "answer": "a",
+                  "explanation": "油で調理する「揚げる」です。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "exercise_id": "04-ex3",
+          "title_ja": "正しいほうを選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "病気の後だから、栄養をたくさん（a. 食べた　b. 取った）ほうがいい。",
+              "options": [
+                "a. 食べた",
+                "b. 取った"
+              ],
+              "answer": "b",
+              "explanation": "「栄養を取る」（get nourishment）というコロケーションです。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "食事のマナーを（a. し　b. 守れ）ない人には、何も食べさせません。",
+              "options": [
+                "a. し",
+                "b. 守れ"
+              ],
+              "answer": "b",
+              "explanation": "ルールやマナーに従うことは「マナーを守る」と言います。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "その店では、注文を（a. 受けて　b. 引いて）から、料理を作り始める。",
+              "options": [
+                "a. 受けて",
+                "b. 引いて"
+              ],
+              "answer": "a",
+              "explanation": "客からの注文を承ることは「注文を受ける」と言います。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "肉料理を食べるときには、サラダも頼んで、栄養のバランスを（a. する　b. 取る）ようにしている。",
+              "options": [
+                "a. する",
+                "b. 取る"
+              ],
+              "answer": "b",
+              "explanation": "均衡を保つことは「バランスを取る」と言います。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "たくさん運動をしたら、お腹がぺこぺこ（a. した　b. になった）。",
+              "options": [
+                "a. した",
+                "b. になった"
+              ],
+              "answer": "b",
+              "explanation": "空腹の状態になることは「お腹がぺこぺこになる（ぺこぺこになった）」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "04-ex4",
+          "title_ja": "（　）に一番合うものをaからeの中から選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "焼き過ぎてしまったので、肉が（　）。",
+              "options": [
+                "a. 濃くなり過ぎた",
+                "b. しつこかった",
+                "c. 固かった",
+                "d. 軟らかくなった",
+                "e. 酸っぱかった"
+              ],
+              "answer": "c",
+              "explanation": "肉を焼き過ぎると水分が抜けて「固かった」となります。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "10日前に買った牛乳を飲んでみたら、（　）。",
+              "options": [
+                "a. 濃くなり過ぎた",
+                "b. しつこかった",
+                "c. 固かった",
+                "d. 軟らかくなった",
+                "e. 酸っぱかった"
+              ],
+              "answer": "e",
+              "explanation": "古くなった牛乳は傷んで「酸っぱかった」となります。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "しょう油を入れ過ぎて、味が（　）。",
+              "options": [
+                "a. 濃くなり過ぎた",
+                "b. しつこかった",
+                "c. 固かった",
+                "d. 軟らかくなった",
+                "e. 酸っぱかった"
+              ],
+              "answer": "a",
+              "explanation": "しょうゆが多過ぎると塩分で「濃くなり過ぎた」となります。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "そのスープはバターが多過ぎて、（　）。",
+              "options": [
+                "a. 濃くなり過ぎた",
+                "b. しつこかった",
+                "c. 固かった",
+                "d. 軟らかくなった",
+                "e. 酸っぱかった"
+              ],
+              "answer": "b",
+              "explanation": "油分・バターが多過ぎて脂っこいことを「しつこかった」と表します。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "5時間も煮たので、肉がとても（　）。",
+              "options": [
+                "a. 濃くなり過ぎた",
+                "b. しつこかった",
+                "c. 固かった",
+                "d. 軟らかくなった",
+                "e. 酸っぱかった"
+              ],
+              "answer": "d",
+              "explanation": "長時間じっくり煮ると肉が「軟らかくなった」となります。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "04-ex5",
+          "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。最初の字はヒントです。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "お店の人にすしを（①ちゅ　　　）しながら、食べる店はない。",
+              "hint": "ちゅ",
+              "answer": "ちゅうもん",
+              "explanation": "「注文（ちゅうもん）しながら」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "（②な　）の魚は嫌いだという人もいるが、",
+              "hint": "な",
+              "answer": "なま",
+              "explanation": "「生（なま）の魚」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "その店は、とても（③こ　　　　）そうな店だった。",
+              "hint": "こ",
+              "answer": "こうきゅう",
+              "explanation": "「高級（こうきゅう）そうな店」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "店に入っても、どこにも（④メ　　ー）がなかった。",
+              "hint": "メ",
+              "answer": "メニュー",
+              "explanation": "「メニューがなかった」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "値段を聞かないのが（⑤マ　ー）だそうだ。",
+              "hint": "マ",
+              "answer": "マナー",
+              "explanation": "「マナーだそうだ」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "いくら払うかは（⑥し　　　）のときにならないと、わからない。",
+              "hint": "し",
+              "answer": "しはらい",
+              "explanation": "「支払い（しはらい）のとき」です。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "とても固い貝が出てきて、それだけは（⑦の　　）てしまった。",
+              "hint": "の",
+              "answer": "のこし",
+              "explanation": "「残し（のこし）てしまった」です。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "日本酒を頼んで、友達と（⑧か　　　）して、たくさん飲んだ。",
+              "hint": "か",
+              "answer": "かんぱい",
+              "explanation": "「乾杯（かんぱい）して」です。"
+            },
+            {
+              "item_id": 9,
+              "question_ja": "おいしいお酒だったので、（⑨つ　　）で2本も頼んで、",
+              "hint": "つ",
+              "answer": "ついか",
+              "explanation": "「追加（ついか）で」です。"
+            },
+            {
+              "item_id": 10,
+              "question_ja": "大分（⑩よっ　）しまった。",
+              "hint": "よっ",
+              "answer": "よって",
+              "explanation": "「酔って（よって）しまった」です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "05",
+        "topic_ja": "生活3: 家",
+        "topic_en": "Daily Life 3: Housing and Town",
+        "pages": [
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "05-1",
+          "title_ja": "家",
+          "title_en": "House and Home",
+          "page": 18,
+          "warming_up": {
+            "question_ja": "将来、どんな家に住みたいですか。部屋はどんなふうにしたいですか。",
+            "question_en": "What kind of house do you want to live in the future? What kind of room would you like it to be?"
+          },
+          "words": [
+            {
+              "id": "v05-001",
+              "term_ja": "自宅",
+              "reading": "じたく",
+              "ruby_html": "<ruby>自宅<rt>じたく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "one's home, one's house",
+              "meaning_zh": "自己家, 自宅",
+              "example_ja": "自宅を建てる",
+              "example_en": "build one's own home"
+            },
+            {
+              "id": "v05-002",
+              "term_ja": "建てる",
+              "reading": "たてる",
+              "ruby_html": "<ruby>建<rt>た</rt></ruby>てる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to build, to construct",
+              "meaning_zh": "建造, 盖",
+              "example_ja": "自宅を建てる",
+              "example_en": "build one's own home"
+            },
+            {
+              "id": "v05-003",
+              "term_ja": "設計する",
+              "reading": "せっけいする",
+              "ruby_html": "<ruby>設計<rt>せっけい</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to design, to plan",
+              "meaning_zh": "设计",
+              "example_ja": "家を設計する",
+              "example_en": "design a house"
+            },
+            {
+              "id": "v05-004",
+              "term_ja": "工事",
+              "reading": "こうじ",
+              "ruby_html": "<ruby>工事<rt>こうじ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "construction works",
+              "meaning_zh": "施工, 工程",
+              "example_ja": "工事が遅れる",
+              "example_en": "construction is delayed"
+            },
+            {
+              "id": "v05-005",
+              "term_ja": "遅れる",
+              "reading": "おくれる",
+              "ruby_html": "<ruby>遅<rt>おく</rt></ruby>れる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to be delayed, to be late",
+              "meaning_zh": "延迟, 耽误",
+              "example_ja": "工事が遅れる",
+              "example_en": "construction is delayed"
+            },
+            {
+              "id": "v05-006",
+              "term_ja": "建築中",
+              "reading": "けんちくちゅう",
+              "ruby_html": "<ruby>建築中<rt>けんちくちゅう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "under construction",
+              "meaning_zh": "建设中, 施工中",
+              "example_ja": "建築中の家",
+              "example_en": "a house under construction"
+            },
+            {
+              "id": "v05-007",
+              "term_ja": "マンション",
+              "reading": "マンション",
+              "ruby_html": "マンション",
+              "part_of_speech": "名詞",
+              "meaning_en": "apartment building, condominium",
+              "meaning_zh": "公寓, 高级公寓",
+              "example_ja": "マンションの建設が進む",
+              "example_en": "apartment construction progresses"
+            },
+            {
+              "id": "v05-008",
+              "term_ja": "建設",
+              "reading": "けんせつ",
+              "ruby_html": "<ruby>建設<rt>けんせつ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "construction, building",
+              "meaning_zh": "建设",
+              "example_ja": "マンションの建設が進む",
+              "example_en": "apartment construction progresses"
+            },
+            {
+              "id": "v05-009",
+              "term_ja": "進む",
+              "reading": "すすむ",
+              "ruby_html": "<ruby>進<rt>すす</rt></ruby>む",
+              "part_of_speech": "動詞",
+              "meaning_en": "to progress, to proceed",
+              "meaning_zh": "进展, 进行",
+              "example_ja": "マンションの建設が進む",
+              "example_en": "apartment construction progresses"
+            },
+            {
+              "id": "v05-010",
+              "term_ja": "建つ",
+              "reading": "たつ",
+              "ruby_html": "<ruby>建<rt>た</rt></ruby>つ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to be built, to go up",
+              "meaning_zh": "建成, 建立",
+              "example_ja": "家が建つ",
+              "example_en": "a house is built"
+            },
+            {
+              "id": "v05-011",
+              "term_ja": "完成する",
+              "reading": "かんせいする",
+              "ruby_html": "<ruby>完成<rt>かんせい</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be completed, to finish",
+              "meaning_zh": "完成, 竣工",
+              "example_ja": "家が完成する",
+              "example_en": "the house is completed"
+            },
+            {
+              "id": "v05-012",
+              "term_ja": "土地",
+              "reading": "とち",
+              "ruby_html": "<ruby>土地<rt>とち</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "land, plot of land",
+              "meaning_zh": "土地, 地皮",
+              "example_ja": "土地の価値が上がる",
+              "example_en": "land value rises"
+            },
+            {
+              "id": "v05-013",
+              "term_ja": "価値",
+              "reading": "かち",
+              "ruby_html": "<ruby>価値<rt>かち</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "value, worth",
+              "meaning_zh": "价值",
+              "example_ja": "土地の価値が上がる",
+              "example_en": "land value rises"
+            },
+            {
+              "id": "v05-014",
+              "term_ja": "上がる",
+              "reading": "あがる",
+              "ruby_html": "<ruby>上<rt>あ</rt></ruby>がる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to rise, to go up",
+              "meaning_zh": "上升, 上涨",
+              "example_ja": "土地の価値が上がる",
+              "example_en": "land value rises"
+            },
+            {
+              "id": "v05-015",
+              "term_ja": "地下",
+              "reading": "ちか",
+              "ruby_html": "<ruby>地下<rt>ちか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "basement, underground",
+              "meaning_zh": "地下, 地下室",
+              "example_ja": "地下に部屋を造る",
+              "example_en": "build a room underground"
+            },
+            {
+              "id": "v05-016",
+              "term_ja": "造る",
+              "reading": "つくる",
+              "ruby_html": "<ruby>造<rt>つく</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to build, to make, to construct",
+              "meaning_zh": "建造, 打造",
+              "example_ja": "地下に部屋を造る",
+              "example_en": "build a room underground"
+            },
+            {
+              "id": "v05-017",
+              "term_ja": "屋根",
+              "reading": "やね",
+              "ruby_html": "<ruby>屋根<rt>やね</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "roof",
+              "meaning_zh": "屋顶",
+              "example_ja": "屋根を直す",
+              "example_en": "repair the roof"
+            },
+            {
+              "id": "v05-018",
+              "term_ja": "直す",
+              "reading": "なおす",
+              "ruby_html": "<ruby>直<rt>なお</rt></ruby>す",
+              "part_of_speech": "動詞",
+              "meaning_en": "to repair, to fix",
+              "meaning_zh": "修理, 改造",
+              "example_ja": "屋根を直す",
+              "example_en": "repair the roof"
+            },
+            {
+              "id": "v05-019",
+              "term_ja": "インテリア",
+              "reading": "インテリア",
+              "ruby_html": "インテリア",
+              "part_of_speech": "名詞",
+              "meaning_en": "interior design, home decor",
+              "meaning_zh": "室内装饰, 内饰",
+              "example_ja": "インテリアを選ぶ",
+              "example_en": "choose interior decor"
+            },
+            {
+              "id": "v05-020",
+              "term_ja": "スペース",
+              "reading": "スペース",
+              "ruby_html": "スペース",
+              "part_of_speech": "名詞",
+              "meaning_en": "space, room",
+              "meaning_zh": "空间, 空地",
+              "example_ja": "机を置くスペースがない",
+              "example_en": "there is no space to place a desk"
+            },
+            {
+              "id": "v05-021",
+              "term_ja": "デザイン",
+              "reading": "デザイン",
+              "ruby_html": "デザイン",
+              "part_of_speech": "名詞",
+              "meaning_en": "design",
+              "meaning_zh": "设计, 样式",
+              "example_ja": "デザインがいい家具",
+              "example_en": "well-designed furniture"
+            },
+            {
+              "id": "v05-022",
+              "term_ja": "すっきりする",
+              "reading": "すっきりする",
+              "ruby_html": "すっきりする",
+              "part_of_speech": "する動詞",
+              "meaning_en": "neat, clean, refreshed",
+              "meaning_zh": "整洁, 清爽",
+              "example_ja": "部屋の中がすっきりする",
+              "example_en": "the room is tidy and refreshed"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "家の隣の（　）に、新しくビルが出来た。",
+              "options": [
+                "土地",
+                "完成",
+                "工事",
+                "デザイン",
+                "設計",
+                "地下"
+              ],
+              "answer": "土地",
+              "explanation": "建物を建てる区画・敷地を指す「土地」（land）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "家が（　）したら、みんなを招待したいと思う。",
+              "options": [
+                "土地",
+                "完成",
+                "工事",
+                "デザイン",
+                "設計",
+                "地下"
+              ],
+              "answer": "完成",
+              "explanation": "家が出来上がることを表す「完成したら」（once completed）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "明日から私の家を建てる（　）が始まる。",
+              "options": [
+                "土地",
+                "完成",
+                "工事",
+                "デザイン",
+                "設計",
+                "地下"
+              ],
+              "answer": "工事",
+              "explanation": "建物を造る作業「工事」（construction work）が入ります。"
+            },
+            {
+              "id": 4,
+              "question_ja": "（　）が可愛くないものは、部屋に置きたくない。",
+              "options": [
+                "土地",
+                "完成",
+                "工事",
+                "デザイン",
+                "設計",
+                "地下"
+              ],
+              "answer": "デザイン",
+              "explanation": "家具や物の見た目・設計を指す「デザイン」（design）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "（　）図に間違いが見つかって、工事ができなくなった。",
+              "options": [
+                "土地",
+                "完成",
+                "工事",
+                "デザイン",
+                "設計",
+                "地下"
+              ],
+              "answer": "設計",
+              "explanation": "建物の構造を描いた図面は「設計図」（blueprint）です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "玄関の横に、1階から（　）へ降りる階段がある。",
+              "options": [
+                "土地",
+                "完成",
+                "工事",
+                "デザイン",
+                "設計",
+                "地下"
+              ],
+              "answer": "地下",
+              "explanation": "階段を降りていく地面より下のフロアは「地下」（basement）です。"
+            }
+          ]
+        },
+        {
+          "section_id": "05-2",
+          "title_ja": "引っ越し",
+          "title_en": "Moving and Neighborhood",
+          "page": 19,
+          "warming_up": {
+            "question_ja": "アパートを借りるとしたら、どんな部屋に住みたいですか。",
+            "question_en": "If you were to rent an apartment, what kind of room would you like to live in?"
+          },
+          "words": [
+            {
+              "id": "v05-023",
+              "term_ja": "中心",
+              "reading": "ちゅうしん",
+              "ruby_html": "<ruby>中心<rt>ちゅうしん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "center, downtown",
+              "meaning_zh": "中心, 市中心",
+              "example_ja": "町の中心に住む",
+              "example_en": "live in the center of the town"
+            },
+            {
+              "id": "v05-024",
+              "term_ja": "商店街",
+              "reading": "しょうてんがい",
+              "ruby_html": "<ruby>商店街<rt>しょうてんがい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "shopping district, shopping arcade",
+              "meaning_zh": "商业街, 商店街",
+              "example_ja": "商店街が近い",
+              "example_en": "close to the shopping street"
+            },
+            {
+              "id": "v05-025",
+              "term_ja": "地区",
+              "reading": "ちく",
+              "ruby_html": "<ruby>地区<rt>ちく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "district, area, neighborhood",
+              "meaning_zh": "地区, 区域",
+              "example_ja": "外国人が多い地区",
+              "example_en": "a district with many foreigners"
+            },
+            {
+              "id": "v05-026",
+              "term_ja": "かなり",
+              "reading": "かなり",
+              "ruby_html": "かなり",
+              "part_of_speech": "副詞",
+              "meaning_en": "considerably, quite, fairly",
+              "meaning_zh": "相当, 颇",
+              "example_ja": "駅からかなり遠い",
+              "example_en": "quite far from the station"
+            },
+            {
+              "id": "v05-027",
+              "term_ja": "距離",
+              "reading": "きょり",
+              "ruby_html": "<ruby>距離<rt>きょり</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "distance",
+              "meaning_zh": "距离",
+              "example_ja": "駅から距離がある",
+              "example_en": "there is quite a distance from the station"
+            },
+            {
+              "id": "v05-028",
+              "term_ja": "畳",
+              "reading": "じょう",
+              "ruby_html": "<ruby>畳<rt>じょう</rt></ruby>",
+              "part_of_speech": "助数詞・名詞",
+              "meaning_en": "tatami mat unit (measuring room size)",
+              "meaning_zh": "榻榻米张数(面积单位)",
+              "example_ja": "6畳の部屋",
+              "example_en": "a 6-tatami mat room"
+            },
+            {
+              "id": "v05-029",
+              "term_ja": "当たる",
+              "reading": "あたる",
+              "ruby_html": "<ruby>当<rt>あ</rt></ruby>たる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to shine on, to catch (the sun)",
+              "meaning_zh": "照耀, 照射",
+              "example_ja": "日が当たる",
+              "example_en": "the sun shines on it"
+            },
+            {
+              "id": "v05-030",
+              "term_ja": "日当たり",
+              "reading": "ひあたり",
+              "ruby_html": "<ruby>日当<rt>ひあ</rt></ruby>たり",
+              "part_of_speech": "名詞",
+              "meaning_en": "sunlight, exposure to the sun",
+              "meaning_zh": "采光, 日照",
+              "example_ja": "日当たりがいい",
+              "example_en": "gets good sunlight"
+            },
+            {
+              "id": "v05-031",
+              "term_ja": "向き",
+              "reading": "むき",
+              "ruby_html": "<ruby>向<rt>む</rt></ruby>き",
+              "part_of_speech": "名詞・接尾辞",
+              "meaning_en": "facing, exposure, orientation",
+              "meaning_zh": "朝向, 面向",
+              "example_ja": "西向きの窓",
+              "example_en": "a west-facing window"
+            },
+            {
+              "id": "v05-032",
+              "term_ja": "影",
+              "reading": "かげ",
+              "ruby_html": "<ruby>影<rt>かげ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "shadow, shade",
+              "meaning_zh": "影子, 阴影",
+              "example_ja": "長い影が出来る",
+              "example_en": "a long shadow forms"
+            },
+            {
+              "id": "v05-033",
+              "term_ja": "出来る",
+              "reading": "できる",
+              "ruby_html": "<ruby>出来<rt>でき</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to form, to be produced, to appear",
+              "meaning_zh": "形成, 产生",
+              "example_ja": "長い影が出来る",
+              "example_en": "a long shadow forms"
+            },
+            {
+              "id": "v05-034",
+              "term_ja": "付き",
+              "reading": "つき",
+              "ruby_html": "<ruby>付<rt>つ</rt></ruby>き",
+              "part_of_speech": "接尾辞",
+              "meaning_en": "equipped with, including, with",
+              "meaning_zh": "附带, 配有",
+              "example_ja": "風呂付きのアパート",
+              "example_en": "an apartment with a bath"
+            },
+            {
+              "id": "v05-035",
+              "term_ja": "なし",
+              "reading": "なし",
+              "ruby_html": "なし",
+              "part_of_speech": "接尾辞・名詞",
+              "meaning_en": "without, not included",
+              "meaning_zh": "不附带, 无",
+              "example_ja": "風呂なしのアパート",
+              "example_en": "an apartment without a bath"
+            },
+            {
+              "id": "v05-036",
+              "term_ja": "引っ越し",
+              "reading": "ひっこし",
+              "ruby_html": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>し",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "moving (house), relocation",
+              "meaning_zh": "搬家, 迁居",
+              "example_ja": "引っ越しを手伝う",
+              "example_en": "help with moving"
+            },
+            {
+              "id": "v05-037",
+              "term_ja": "手伝う",
+              "reading": "てつだう",
+              "ruby_html": "<ruby>手伝<rt>てつだ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to help, to assist",
+              "meaning_zh": "帮忙, 协助",
+              "example_ja": "引っ越しを手伝う",
+              "example_en": "help with moving"
+            },
+            {
+              "id": "v05-038",
+              "term_ja": "傷",
+              "reading": "きず",
+              "ruby_html": "<ruby>傷<rt>きず</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "scratch, blemish, damage",
+              "meaning_zh": "伤痕, 刮痕",
+              "example_ja": "床に傷が付く",
+              "example_en": "a scratch appears on the floor"
+            },
+            {
+              "id": "v05-039",
+              "term_ja": "付く",
+              "reading": "つく",
+              "ruby_html": "<ruby>付<rt>つ</rt></ruby>く",
+              "part_of_speech": "動詞",
+              "meaning_en": "to get (scratched), to attach",
+              "meaning_zh": "附着, 产生(痕迹)",
+              "example_ja": "床に傷が付く",
+              "example_en": "a scratch appears on the floor"
+            },
+            {
+              "id": "v05-040",
+              "term_ja": "家賃",
+              "reading": "やちん",
+              "ruby_html": "<ruby>家賃<rt>やちん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "rent",
+              "meaning_zh": "房租",
+              "example_ja": "家賃を払う",
+              "example_en": "pay the rent"
+            },
+            {
+              "id": "v05-041",
+              "term_ja": "払う",
+              "reading": "はらう",
+              "ruby_html": "<ruby>払<rt>はら</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to pay",
+              "meaning_zh": "支付, 付款",
+              "example_ja": "家賃を払う",
+              "example_en": "pay the rent"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "野菜は、スーパーよりも（　）で買ったほうが安いと思う。",
+              "options": [
+                "商店街",
+                "家賃",
+                "付き",
+                "傷",
+                "当たる",
+                "影"
+              ],
+              "answer": "商店街",
+              "explanation": "青果店などが並ぶ商業エリア「商店街」（shopping street）が入ります。"
+            },
+            {
+              "id": 2,
+              "question_ja": "部屋は狭いのに、毎月6万円も（　）を払わなければならない。",
+              "options": [
+                "商店街",
+                "家賃",
+                "付き",
+                "傷",
+                "当たる",
+                "影"
+              ],
+              "answer": "家賃",
+              "explanation": "毎月支払う部屋の賃料「家賃」（rent）が入ります。"
+            },
+            {
+              "id": 3,
+              "question_ja": "家具を買っている時間がないので、家具（　）のアパートに住むことにした。",
+              "options": [
+                "商店街",
+                "家賃",
+                "付き",
+                "傷",
+                "当たる",
+                "影"
+              ],
+              "answer": "付き",
+              "explanation": "家具が備え付けられている部屋を表す接尾辞「付き」（equipped with）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "冷蔵庫を運んでいて、ドアに（　）を付けてしまった。",
+              "options": [
+                "商店街",
+                "家賃",
+                "付き",
+                "傷",
+                "当たる",
+                "影"
+              ],
+              "answer": "傷",
+              "explanation": "物をぶつけて表面に生じる損傷「傷」（scratch）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "私の部屋は、午前中はよく日が（　）ので、冬でも暖かい。",
+              "options": [
+                "商店街",
+                "家賃",
+                "付き",
+                "傷",
+                "当たる",
+                "影"
+              ],
+              "answer": "当たる",
+              "explanation": "日光が部屋に差し込むことを表す「日が当たる」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "私の家は、午後になると、隣の病院の建物の（　）に入ってしまうので、暗い。",
+              "options": [
+                "商店街",
+                "家賃",
+                "付き",
+                "傷",
+                "当たる",
+                "影"
+              ],
+              "answer": "影",
+              "explanation": "建物によって光が遮られてできる「影」（shadow）に入ります。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "05-ex1",
+          "title_ja": "部屋を借りたいと思っています。絵を見て、どんな部屋か書きなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "メゾン渋谷 506号室: ① 部屋は（　）畳　② 窓は（　）向き　③ （　）付き　④ 日当たりが（　）",
+              "answer": "① 6, ② 南, ③ 風呂, ④ いい",
+              "explanation": "① 6畳（洋6）、② 南向き（窓が南側）、③ 風呂付き（浴室あり）、④ 日当たりがいい（南向きの窓）",
+              "sub_items": [
+                {
+                  "item_id": "1-1",
+                  "question_ja": "メゾン渋谷 506号室: ① 部屋は（　）畳",
+                  "answer": "6",
+                  "explanation": "間取り図に「洋6」と記載されています。"
+                },
+                {
+                  "item_id": "1-2",
+                  "question_ja": "メゾン渋谷 506号室: ② 窓は（　）向き",
+                  "answer": "南",
+                  "explanation": "北を示す矢印が上を向いており、窓は下（南）側にあります。"
+                },
+                {
+                  "item_id": "1-3",
+                  "question_ja": "メゾン渋谷 506号室: ③ （　）付き",
+                  "answer": "風呂",
+                  "explanation": "浴室（バスタブ）が描かれています。"
+                },
+                {
+                  "item_id": "1-4",
+                  "question_ja": "メゾン渋谷 506号室: ④ 日当たりが（　）",
+                  "answer": "いい",
+                  "explanation": "南向きで窓があるため日当たりが良いです。"
+                }
+              ]
+            },
+            {
+              "item_id": 2,
+              "question_ja": "幸福荘 103号室: ① 部屋は（　）畳　② 窓は（　）向き　③ （　）　④ 日当たりが（　）",
+              "answer": "① 3, ② 北, ③ 風呂なし, ④ 悪い",
+              "explanation": "① 3畳（和3）、② 北向き（窓が北側）、③ 風呂なし（流し・トイレのみ）、④ 日当たりが悪い（北向き）",
+              "sub_items": [
+                {
+                  "item_id": "2-1",
+                  "question_ja": "幸福荘 103号室: ① （　）",
+                  "answer": "3畳",
+                  "explanation": "間取り図に「和3」と記載されています。"
+                },
+                {
+                  "item_id": "2-2",
+                  "question_ja": "幸福荘 103号室: ② （　）",
+                  "answer": "北向き",
+                  "explanation": "北側に向いています。"
+                },
+                {
+                  "item_id": "2-3",
+                  "question_ja": "幸福荘 103号室: ③ （　）",
+                  "answer": "風呂なし",
+                  "explanation": "浴室がなく、トイレや流し台のみです。"
+                },
+                {
+                  "item_id": "2-4",
+                  "question_ja": "幸福荘 103号室: ④ （　）",
+                  "answer": "日当たりが悪い",
+                  "explanation": "北向きのため日当たりが悪いです。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "exercise_id": "05-ex2",
+          "title_ja": "下線に似た意味の語を「言葉」の中から選び、必要なら形を変えて、（　）に入れなさい。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "A: 私の町は、教会が町の真ん中にあって、その周りにお店や家があります。\nB: 教会を（　）にして、町が出来ているんですね。",
+              "answer": "中心",
+              "explanation": "「真ん中」に似た語は「中心」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "A: 学校の近くで工場が（　）中で、今、すごくうるさいんです。\nB: 実は私の家の近くでも工場を建てていて、やっぱりすごくうるさいですよ。",
+              "answer": "建設",
+              "explanation": "「建てている」に対応する語は「建設」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "A: この人形は、本当は部屋の中に飾るものではなくて、家の外に置いておくものなんだそうです。\nB: そうですか。でも、（　）にもいいですね。",
+              "answer": "インテリア",
+              "explanation": "「部屋の中に飾るもの（室内装飾）」は「インテリア」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "A: 先生の家に行ったんですが、駅から大分歩きましたよ。\nB: 先生の家は駅から（　）遠いんですね。",
+              "answer": "かなり",
+              "explanation": "「大分」に似た程度の副詞は「かなり」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "A: 家族が増えたので、もっと大きい家に移ることにしたんです。\nB: そうなんですか。いつ（　）をされるんですか。",
+              "answer": "引っ越し",
+              "explanation": "「家に移る」動作は「引っ越し」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "05-ex3",
+          "title_ja": "正しいほうを選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "家具を動かして、テーブルを置くスペースを（a. 作った　b. 持った）。",
+              "options": [
+                "a. 作った",
+                "b. 持った"
+              ],
+              "answer": "a",
+              "explanation": "場所や余白を確保することは「スペースを作る」と言います。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "私の町は古くからある町なので、古い（a. 建設　b. 建築）がたくさん見られる。",
+              "options": [
+                "a. 建設",
+                "b. 建築"
+              ],
+              "answer": "b",
+              "explanation": "建造物そのものを指す場合は「建築（建築物）」が適しています。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "50年前に建てられた、壊れた家なので、家の価値は（a. 狭い　b. 低い）と思う。",
+              "options": [
+                "a. 狭い",
+                "b. 低い"
+              ],
+              "answer": "b",
+              "explanation": "価値の大小・優劣を表す形容詞は「高い・低い」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "すっきり（a. した　b. な）デザインの家具が好きだ。",
+              "options": [
+                "a. した",
+                "b. な"
+              ],
+              "answer": "a",
+              "explanation": "「すっきりした＋名詞」の形で修飾します。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "雪が多い町なので、冬になると、屋根に（a. 進んで　b. 登って）、雪を下に落とさなければならない。",
+              "options": [
+                "a. 進んで",
+                "b. 登って"
+              ],
+              "answer": "b",
+              "explanation": "高い屋根の上に上がることは「屋根に登る（登って）」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "05-ex4",
+          "title_ja": "（　）に入る語を［　］の中から選びなさい。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 私が生まれた（　）には、美術館や図書館がたくさんあった。\n② 会社から（　）が近いところに引っ越しすることにした。\n③ （　）を売って、田舎に引っ越しすることにした。",
+              "options": [
+                "a. 距離",
+                "b. 自宅",
+                "c. 地区"
+              ],
+              "answer": "① c, ② a, ③ b",
+              "explanation": "① 地区、② 距離が近い、③ 自宅を売って",
+              "sub_items": [
+                {
+                  "item_id": "1-1",
+                  "question_ja": "① 私が生まれた（　）には、美術館や図書館がたくさんあった。",
+                  "options": [
+                    "a. 距離",
+                    "b. 自宅",
+                    "c. 地区"
+                  ],
+                  "answer": "c",
+                  "explanation": "地域・エリアを表す「地区」です。"
+                },
+                {
+                  "item_id": "1-2",
+                  "question_ja": "② 会社から（　）が近いところに引っ越しすることにした。",
+                  "options": [
+                    "a. 距離",
+                    "b. 自宅",
+                    "c. 地区"
+                  ],
+                  "answer": "a",
+                  "explanation": "空間的な隔たりを表す「距離が近い」です。"
+                },
+                {
+                  "item_id": "1-3",
+                  "question_ja": "③ （　）を売って、田舎に引っ越しすることにした。",
+                  "options": [
+                    "a. 距離",
+                    "b. 自宅",
+                    "c. 地区"
+                  ],
+                  "answer": "b",
+                  "explanation": "自分が所有している住まい「自宅を売って」です。"
+                }
+              ]
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 今、新しい橋を（　）いるので、それが出来れば、駅まで近くなる。\n② アパートを出るときに、壁に汚れが（　）いると言われ、お金を取られた。\n③ 最近、この町には、新しいビルがどんどん（　）いる。",
+              "options": [
+                "a. 建って",
+                "b. 付いて",
+                "c. 造って"
+              ],
+              "answer": "① c, ② b, ③ a",
+              "explanation": "① 造っている、② 付いている、③ 建っている",
+              "sub_items": [
+                {
+                  "item_id": "2-1",
+                  "question_ja": "① 今、新しい橋を（　）いるので、それが出来れば、駅まで近くなる。",
+                  "options": [
+                    "a. 建って",
+                    "b. 付いて",
+                    "c. 造って"
+                  ],
+                  "answer": "c",
+                  "explanation": "橋や道路などを建設する動詞は「造っている」です。"
+                },
+                {
+                  "item_id": "2-2",
+                  "question_ja": "② アパートを出るときに、壁に汚れが（　）いると言われ、お金を取られた。",
+                  "options": [
+                    "a. 建って",
+                    "b. 付いて",
+                    "c. 造って"
+                  ],
+                  "answer": "b",
+                  "explanation": "汚れが付着している「付いている」です。"
+                },
+                {
+                  "item_id": "2-3",
+                  "question_ja": "③ 最近、この町には、新しいビルがどんどん（　）いる。",
+                  "options": [
+                    "a. 建って",
+                    "b. 付いて",
+                    "c. 造って"
+                  ],
+                  "answer": "a",
+                  "explanation": "ビルが建設される自動詞は「建っている」です。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "exercise_id": "05-ex5",
+          "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。最初の字はヒントです。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "国にある（①じ　　）の建物は、",
+              "hint": "じ",
+              "answer": "じたく",
+              "explanation": "「自宅（じたく）の建物」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "（②か　　）古いビルです。",
+              "hint": "か",
+              "answer": "かなり",
+              "explanation": "「かなり古いビル」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "1908年に（③か　　　）したそうなので、",
+              "hint": "か",
+              "answer": "かんせい",
+              "explanation": "「完成（かんせい）した」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "ビルが（④たっ　）からももう100年以上になります。",
+              "hint": "たっ",
+              "answer": "たって",
+              "explanation": "「建って（たって）から」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "日本語で言えば、（⑤マ　　　　）です。",
+              "hint": "マ",
+              "answer": "マンション",
+              "explanation": "「マンションです」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "このビルは、町の（⑥ちゅ　　　）に近くて、",
+              "hint": "ちゅ",
+              "answer": "ちゅうしん",
+              "explanation": "「中心（ちゅうしん）に近くて」です。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "（⑦しょ　　　　　）がある",
+              "hint": "しょ",
+              "answer": "しょうてんがい",
+              "explanation": "「商店街（しょうてんがい）がある」です。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "（⑧ち　）にあるので、生活はしやすいです。",
+              "hint": "ち",
+              "answer": "ちく",
+              "explanation": "「地区（ちく）にある」です。"
+            },
+            {
+              "item_id": 9,
+              "question_ja": "私の家はちょうど南（⑨む　）で、",
+              "hint": "む",
+              "answer": "むき",
+              "explanation": "「南向き（むき）で」です。"
+            },
+            {
+              "item_id": 10,
+              "question_ja": "とてもよく日が（⑩あ　　　）ます。",
+              "hint": "あ",
+              "answer": "あたり",
+              "explanation": "「日が当たり（あたり）ます」です。"
+            },
+            {
+              "item_id": 11,
+              "question_ja": "家の（⑪せっ　　）が古いので、",
+              "hint": "せっ",
+              "answer": "せっけい",
+              "explanation": "「設計（せっけい）が古い」です。"
+            },
+            {
+              "item_id": 12,
+              "question_ja": "シャワーはありますが、風呂（⑫な　）です。",
+              "hint": "な",
+              "answer": "なし",
+              "explanation": "「風呂なし（なし）」です。"
+            },
+            {
+              "item_id": 13,
+              "question_ja": "あと、物をしまう（⑬ス　　　）があまりないので、",
+              "hint": "ス",
+              "answer": "スペース",
+              "explanation": "「スペースがない」です。"
+            },
+            {
+              "item_id": 14,
+              "question_ja": "（⑭か　）を置いて、しまうようにしています。",
+              "hint": "か",
+              "answer": "かぐ",
+              "explanation": "「家具（かぐ）を置いて」です。"
+            },
+            {
+              "item_id": 15,
+              "question_ja": "家が古くなると、（⑮か　）が下がると聞きましたが、",
+              "hint": "か",
+              "answer": "かち",
+              "explanation": "「価値（かち）が下がる」です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "review_01",
+        "type": "review_test",
+        "topic_ja": "実力を試そう（1課〜5課）",
+        "topic_en": "Review Test 1 (Lessons 1-5)",
+        "pages": [
+          22,
+          23
+        ]
+      },
+      "sections": [],
+      "exercises": [
+        {
+          "exercise_id": "review_01-part1",
+          "title_ja": "問題Ⅰ 次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 1: Choose the best word (1, 2, 3, or 4) to fill in the parentheses.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "約束を（　）のはよくないことです。",
+              "options": [
+                "1 守る",
+                "2 壊す",
+                "3 無くす",
+                "4 破る"
+              ],
+              "answer": "4",
+              "explanation": "「約束を破る（やくそくをやぶる）」（break a promise）は慣用的な表現です。約束を反故にして守らないことは「破る」と言います。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "この部屋に赤ちゃんのベッドを置く（　）を作りましょう。",
+              "options": [
+                "1 インテリア",
+                "2 マンション",
+                "3 スペース",
+                "4 デザイン"
+              ],
+              "answer": "3",
+              "explanation": "物を置くための場所や空きスペースは「スペース」（space）と言います。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "近くの商店（　）で買い物をした。",
+              "options": [
+                "1 街",
+                "2 町",
+                "3 通り",
+                "4 道"
+              ],
+              "answer": "1",
+              "explanation": "商店が立ち並ぶ通りや地区は「商店街（しょうてんがい）」と言います。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "かまなくてもいいぐらい、肉も野菜も（　）。",
+              "options": [
+                "1 あまい",
+                "2 しつこい",
+                "3 すっぱい",
+                "4 やわらかい"
+              ],
+              "answer": "4",
+              "explanation": "噛まなくても食べられるほど柔らかい食感を表すのは「やわらかい」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "ゴミを片付けたら、部屋が（　）した。",
+              "options": [
+                "1 がっかり",
+                "2 しっかり",
+                "3 すっきり",
+                "4 はっきり"
+              ],
+              "answer": "3",
+              "explanation": "散らかっていた物が片付いて、爽快でさっぱりした状態になるのは「すっきりする」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "結婚はしたいけど、結婚する（　）がいない。",
+              "options": [
+                "1 相手",
+                "2 夫",
+                "3 主人",
+                "4 友人"
+              ],
+              "answer": "1",
+              "explanation": "結婚などの対象となるパートナーは「相手（結婚相手）」と言います。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "窓ガラスが汚れているので、これで（　）ください。",
+              "options": [
+                "1 かけて",
+                "2 せんたくして",
+                "3 ふいて",
+                "4 むいて"
+              ],
+              "answer": "3",
+              "explanation": "ガラスや机などの汚れ・水分を布でぬぐい取る動作は「拭く（ふいて）」です。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "小川さんは学校の友達との関係に（　）いた。",
+              "options": [
+                "1 かんがえて",
+                "2 くわえて",
+                "3 さそって",
+                "4 なやんで"
+              ],
+              "answer": "4",
+              "explanation": "困りごとや人間関係に苦慮して思い煩うことは「悩む（なやんで）」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_01-part2",
+          "title_ja": "問題Ⅱ 下線部の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 2: Choose the word (1, 2, 3, or 4) whose meaning is closest to the underlined word.",
+          "type": "synonym_selection",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "花子さんはお父さんに<u>そっくり</u>だ。",
+              "options": [
+                "1 慌てている",
+                "2 似ている",
+                "3 不安だ",
+                "4 満足だ"
+              ],
+              "answer": "2",
+              "explanation": "「そっくり」は非常によく似ている（瓜二つ）という意味です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "ここにある物を<u>しまって</u>ください。",
+              "options": [
+                "1 貸して",
+                "2 片付けて",
+                "3 使って",
+                "4 止めて"
+              ],
+              "answer": "2",
+              "explanation": "「しまう」は使った物などを元の場所に戻して「片付ける」という意味です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "田中さんは<u>おとなしい</u>人だった。",
+              "options": [
+                "1 元気な",
+                "2 細かい",
+                "3 静かな",
+                "4 わがままな"
+              ],
+              "answer": "3",
+              "explanation": "「おとなしい」は性格や態度が穏やかで「静かな」様子を表します。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "山田さんは前より<u>かなり</u>元気になった。",
+              "options": [
+                "1 きっと",
+                "2 少し",
+                "3 大分",
+                "4 はっきり"
+              ],
+              "answer": "3",
+              "explanation": "「かなり」は相当・普通以上に程度が進んでいることを表し、「大分（だいぶ）」と同義です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_01-part3",
+          "title_ja": "問題Ⅲ 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 3: Choose the sentence (1, 2, 3, or 4) that uses the specified word in the most natural and correct way.",
+          "type": "usage_selection",
+          "items": [
+            {
+              "item_id": 1,
+              "target": "家事",
+              "question_ja": "家事",
+              "options": [
+                "1 仕事から帰ってきてから、家事をしているので、疲れる。",
+                "2 この辺は、新しく家事をたくさんしているので、家が増えた。",
+                "3 あのうちは、家事がよくなくて、いつもけんかしている。",
+                "4 家事がみんな古くなってきたので、新しいのが欲しい。"
+              ],
+              "answer": "1",
+              "explanation": "「家事（かじ）」は料理・洗濯・掃除など家庭内の生活に必要な仕事のことです。「家事をする」と使う1が適切です。"
+            },
+            {
+              "item_id": 2,
+              "target": "あたる",
+              "question_ja": "あたる",
+              "options": [
+                "1 この部屋は窓が東にあたっている。",
+                "2 晴れた日の夜には、空にたくさん星があたる。",
+                "3 傘にあたらないと、雨で濡れてしまう。",
+                "4 山に日の光があたって、きれいだった。"
+              ],
+              "answer": "4",
+              "explanation": "「あたる（当たる）」は光や風などを身や物に受ける意味で、「日の光があたる」のように使います。"
+            },
+            {
+              "item_id": 3,
+              "target": "腹が立つ",
+              "question_ja": "腹が立つ",
+              "options": [
+                "1 古い肉を食べて、腹が立ってきたので、薬を飲んだ。",
+                "2 彼とは、腹が立って、どんなことでも話せる。",
+                "3 夫の言うことに腹が立ったので、昨日から話をしていない。",
+                "4 私の腹が立っているのは、毎日、運動をしているからだ。"
+              ],
+              "answer": "3",
+              "explanation": "「腹が立つ（はらがたつ）」は怒りを感じる・頭にくるという意味の慣用表現です。夫の言動に怒った文脈の3が適切です。"
+            },
+            {
+              "item_id": 4,
+              "target": "不満",
+              "question_ja": "不満",
+              "options": [
+                "1 鞄は、不満なので、まだ、何か入る。",
+                "2 お腹が不満で、すぐに何か食べたい。",
+                "3 自分の将来が不満で、夜も眠れない。",
+                "4 父は、何が不満で、怒っているのだろう。"
+              ],
+              "answer": "4",
+              "explanation": "「不満（ふまん）」は満足できず納得がいかない気持ちを表します。「何が不満で〜」と心情を表す4が適切です。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4874 @@
+{
+  "title": "N5・N4レベルの300字の漢字とその読み方",
+  "description": "N5/N4 level 300 kanji characters and their readings with sample vocabulary words.",
+  "source_pages": "Bessatsu pp. 28-35",
+  "total_kanji": 300,
+  "items": [
+    {
+      "id": "R001",
+      "number": 1,
+      "kanji": "悪",
+      "examples": [
+        {
+          "reading": "わるい",
+          "example": "悪い",
+          "example_reading": "わるい",
+          "example_ruby": "<ruby>悪<rt>わる</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R002",
+      "number": 2,
+      "kanji": "安",
+      "examples": [
+        {
+          "reading": "アン",
+          "example": "安心",
+          "example_reading": "あんしん",
+          "example_ruby": "<ruby>安心<rt>あんしん</rt></ruby>"
+        },
+        {
+          "reading": "やすい",
+          "example": "安い",
+          "example_reading": "やすい",
+          "example_ruby": "<ruby>安<rt>やす</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R003",
+      "number": 3,
+      "kanji": "暗",
+      "examples": [
+        {
+          "reading": "くらい",
+          "example": "暗い",
+          "example_reading": "くらい",
+          "example_ruby": "<ruby>暗<rt>くら</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R004",
+      "number": 4,
+      "kanji": "以",
+      "examples": [
+        {
+          "reading": "イ",
+          "example": "以下",
+          "example_reading": "いか",
+          "example_ruby": "<ruby>以下<rt>いか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R005",
+      "number": 5,
+      "kanji": "医",
+      "examples": [
+        {
+          "reading": "イ",
+          "example": "医者",
+          "example_reading": "いしゃ",
+          "example_ruby": "<ruby>医者<rt>いしゃ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R006",
+      "number": 6,
+      "kanji": "意",
+      "examples": [
+        {
+          "reading": "イ",
+          "example": "意見",
+          "example_reading": "いけん",
+          "example_ruby": "<ruby>意見<rt>いけん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R007",
+      "number": 7,
+      "kanji": "一",
+      "examples": [
+        {
+          "reading": "イチ",
+          "example": "一",
+          "example_reading": "いち",
+          "example_ruby": "<ruby>一<rt>いち</rt></ruby>"
+        },
+        {
+          "reading": "ひと",
+          "example": "一月",
+          "example_reading": "ひとつき",
+          "example_ruby": "<ruby>一月<rt>ひとつき</rt></ruby>"
+        },
+        {
+          "reading": "ひとつ",
+          "example": "一つ",
+          "example_reading": "ひとつ",
+          "example_ruby": "<ruby>一<rt>ひと</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R008",
+      "number": 8,
+      "kanji": "引",
+      "examples": [
+        {
+          "reading": "ひく",
+          "example": "引く",
+          "example_reading": "ひく",
+          "example_ruby": "<ruby>引<rt>ひ</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R009",
+      "number": 9,
+      "kanji": "員",
+      "examples": [
+        {
+          "reading": "イン",
+          "example": "店員",
+          "example_reading": "てんいん",
+          "example_ruby": "<ruby>店員<rt>てんいん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R010",
+      "number": 10,
+      "kanji": "院",
+      "examples": [
+        {
+          "reading": "イン",
+          "example": "病院",
+          "example_reading": "びょういん",
+          "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R011",
+      "number": 11,
+      "kanji": "飲",
+      "examples": [
+        {
+          "reading": "のむ",
+          "example": "飲む",
+          "example_reading": "のむ",
+          "example_ruby": "<ruby>飲<rt>の</rt></ruby>む"
+        }
+      ]
+    },
+    {
+      "id": "R012",
+      "number": 12,
+      "kanji": "右",
+      "examples": [
+        {
+          "reading": "みぎ",
+          "example": "右",
+          "example_reading": "みぎ",
+          "example_ruby": "<ruby>右<rt>みぎ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R013",
+      "number": 13,
+      "kanji": "雨",
+      "examples": [
+        {
+          "reading": "あめ",
+          "example": "雨",
+          "example_reading": "あめ",
+          "example_ruby": "<ruby>雨<rt>あめ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R014",
+      "number": 14,
+      "kanji": "運",
+      "examples": [
+        {
+          "reading": "ウン",
+          "example": "運動",
+          "example_reading": "うんどう",
+          "example_ruby": "<ruby>運動<rt>うんどう</rt></ruby>"
+        },
+        {
+          "reading": "はこぶ",
+          "example": "運ぶ",
+          "example_reading": "はこぶ",
+          "example_ruby": "<ruby>運<rt>はこ</rt></ruby>ぶ"
+        }
+      ]
+    },
+    {
+      "id": "R015",
+      "number": 15,
+      "kanji": "英",
+      "examples": [
+        {
+          "reading": "エイ",
+          "example": "英語",
+          "example_reading": "えいご",
+          "example_ruby": "<ruby>英語<rt>えいご</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R016",
+      "number": 16,
+      "kanji": "映",
+      "examples": [
+        {
+          "reading": "エイ",
+          "example": "映画",
+          "example_reading": "えいが",
+          "example_ruby": "<ruby>映画<rt>えいが</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R017",
+      "number": 17,
+      "kanji": "駅",
+      "examples": [
+        {
+          "reading": "エキ",
+          "example": "駅",
+          "example_reading": "えき",
+          "example_ruby": "<ruby>駅<rt>えき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R018",
+      "number": 18,
+      "kanji": "円",
+      "examples": [
+        {
+          "reading": "エン",
+          "example": "〜円",
+          "example_reading": "えん",
+          "example_ruby": "〜<ruby>円<rt>えん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R019",
+      "number": 19,
+      "kanji": "園",
+      "examples": [
+        {
+          "reading": "エン",
+          "example": "動物園",
+          "example_reading": "どうぶつえん",
+          "example_ruby": "<ruby>動物園<rt>どうぶつえん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R020",
+      "number": 20,
+      "kanji": "遠",
+      "examples": [
+        {
+          "reading": "とおい",
+          "example": "遠い",
+          "example_reading": "とおい",
+          "example_ruby": "<ruby>遠<rt>とお</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R021",
+      "number": 21,
+      "kanji": "屋",
+      "examples": [
+        {
+          "reading": "オク",
+          "example": "屋上",
+          "example_reading": "おくじょう",
+          "example_ruby": "<ruby>屋上<rt>おくじょう</rt></ruby>"
+        },
+        {
+          "reading": "や",
+          "example": "〜屋",
+          "example_reading": "や",
+          "example_ruby": "〜<ruby>屋<rt>や</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R022",
+      "number": 22,
+      "kanji": "音",
+      "examples": [
+        {
+          "reading": "オン",
+          "example": "音楽",
+          "example_reading": "おんがく",
+          "example_ruby": "<ruby>音楽<rt>おんがく</rt></ruby>"
+        },
+        {
+          "reading": "おと",
+          "example": "音",
+          "example_reading": "おと",
+          "example_ruby": "<ruby>音<rt>おと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R023",
+      "number": 23,
+      "kanji": "下",
+      "examples": [
+        {
+          "reading": "カ",
+          "example": "以下",
+          "example_reading": "いか",
+          "example_ruby": "<ruby>以下<rt>いか</rt></ruby>"
+        },
+        {
+          "reading": "した",
+          "example": "下",
+          "example_reading": "した",
+          "example_ruby": "<ruby>下<rt>した</rt></ruby>"
+        },
+        {
+          "reading": "さげる",
+          "example": "下げる",
+          "example_reading": "さげる",
+          "example_ruby": "<ruby>下<rt>さ</rt></ruby>げる"
+        },
+        {
+          "reading": "さがる",
+          "example": "下がる",
+          "example_reading": "さがる",
+          "example_ruby": "<ruby>下<rt>さ</rt></ruby>がる"
+        },
+        {
+          "reading": "くださる",
+          "example": "下さる",
+          "example_reading": "くださる",
+          "example_ruby": "<ruby>下<rt>くだ</rt></ruby>さる"
+        },
+        {
+          "reading": "おろす",
+          "example": "下ろす",
+          "example_reading": "おろす",
+          "example_ruby": "<ruby>下<rt>お</rt></ruby>ろす"
+        },
+        {
+          "reading": "おりる",
+          "example": "下りる",
+          "example_reading": "おりる",
+          "example_ruby": "<ruby>下<rt>お</rt></ruby>りる"
+        }
+      ]
+    },
+    {
+      "id": "R024",
+      "number": 24,
+      "kanji": "火",
+      "examples": [
+        {
+          "reading": "カ",
+          "example": "火事",
+          "example_reading": "かじ",
+          "example_ruby": "<ruby>火事<rt>かじ</rt></ruby>"
+        },
+        {
+          "reading": "ひ",
+          "example": "火",
+          "example_reading": "ひ",
+          "example_ruby": "<ruby>火<rt>ひ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R025",
+      "number": 25,
+      "kanji": "何",
+      "examples": [
+        {
+          "reading": "なに",
+          "example": "何",
+          "example_reading": "なに",
+          "example_ruby": "<ruby>何<rt>なに</rt></ruby>"
+        },
+        {
+          "reading": "なん",
+          "example": "何〜",
+          "example_reading": "なん",
+          "example_ruby": "<ruby>何<rt>なん</rt></ruby>〜"
+        }
+      ]
+    },
+    {
+      "id": "R026",
+      "number": 26,
+      "kanji": "花",
+      "examples": [
+        {
+          "reading": "はな",
+          "example": "花",
+          "example_reading": "はな",
+          "example_ruby": "<ruby>花<rt>はな</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R027",
+      "number": 27,
+      "kanji": "科",
+      "examples": [
+        {
+          "reading": "カ",
+          "example": "科学",
+          "example_reading": "かがく",
+          "example_ruby": "<ruby>科学<rt>かがく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R028",
+      "number": 28,
+      "kanji": "夏",
+      "examples": [
+        {
+          "reading": "なつ",
+          "example": "夏",
+          "example_reading": "なつ",
+          "example_ruby": "<ruby>夏<rt>なつ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R029",
+      "number": 29,
+      "kanji": "家",
+      "examples": [
+        {
+          "reading": "カ",
+          "example": "家族",
+          "example_reading": "かぞく",
+          "example_ruby": "<ruby>家族<rt>かぞく</rt></ruby>"
+        },
+        {
+          "reading": "いえ",
+          "example": "家",
+          "example_reading": "いえ",
+          "example_ruby": "<ruby>家<rt>いえ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R030",
+      "number": 30,
+      "kanji": "歌",
+      "examples": [
+        {
+          "reading": "うた",
+          "example": "歌",
+          "example_reading": "うた",
+          "example_ruby": "<ruby>歌<rt>うた</rt></ruby>"
+        },
+        {
+          "reading": "うたう",
+          "example": "歌う",
+          "example_reading": "うたう",
+          "example_ruby": "<ruby>歌<rt>うた</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R031",
+      "number": 31,
+      "kanji": "画",
+      "examples": [
+        {
+          "reading": "ガ",
+          "example": "映画",
+          "example_reading": "えいが",
+          "example_ruby": "<ruby>映画<rt>えいが</rt></ruby>"
+        },
+        {
+          "reading": "カク",
+          "example": "計画",
+          "example_reading": "けいかく",
+          "example_ruby": "<ruby>計画<rt>けいかく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R032",
+      "number": 32,
+      "kanji": "回",
+      "examples": [
+        {
+          "reading": "カイ",
+          "example": "〜回",
+          "example_reading": "かい",
+          "example_ruby": "〜<ruby>回<rt>かい</rt></ruby>"
+        },
+        {
+          "reading": "まわる",
+          "example": "回る",
+          "example_reading": "まわる",
+          "example_ruby": "<ruby>回<rt>まわ</rt></ruby>る"
+        },
+        {
+          "reading": "まわす",
+          "example": "回す",
+          "example_reading": "まわす",
+          "example_ruby": "<ruby>回<rt>まわ</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R033",
+      "number": 33,
+      "kanji": "会",
+      "examples": [
+        {
+          "reading": "カイ",
+          "example": "会社",
+          "example_reading": "かいしゃ",
+          "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>"
+        },
+        {
+          "reading": "あう",
+          "example": "会う",
+          "example_reading": "あう",
+          "example_ruby": "<ruby>会<rt>あ</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R034",
+      "number": 34,
+      "kanji": "海",
+      "examples": [
+        {
+          "reading": "うみ",
+          "example": "海",
+          "example_reading": "うみ",
+          "example_ruby": "<ruby>海<rt>うみ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R035",
+      "number": 35,
+      "kanji": "界",
+      "examples": [
+        {
+          "reading": "カイ",
+          "example": "世界",
+          "example_reading": "せかい",
+          "example_ruby": "<ruby>世界<rt>せかい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R036",
+      "number": 36,
+      "kanji": "開",
+      "examples": [
+        {
+          "reading": "ひらく",
+          "example": "開く",
+          "example_reading": "ひらく",
+          "example_ruby": "<ruby>開<rt>ひら</rt></ruby>く"
+        },
+        {
+          "reading": "あく",
+          "example": "開く",
+          "example_reading": "あく",
+          "example_ruby": "<ruby>開<rt>あ</rt></ruby>く"
+        },
+        {
+          "reading": "あける",
+          "example": "開ける",
+          "example_reading": "あける",
+          "example_ruby": "<ruby>開<rt>あ</rt></ruby>ける"
+        }
+      ]
+    },
+    {
+      "id": "R037",
+      "number": 37,
+      "kanji": "外",
+      "examples": [
+        {
+          "reading": "ガイ",
+          "example": "外国",
+          "example_reading": "がいこく",
+          "example_ruby": "<ruby>外国<rt>がいこく</rt></ruby>"
+        },
+        {
+          "reading": "そと",
+          "example": "外",
+          "example_reading": "そと",
+          "example_ruby": "<ruby>外<rt>そと</rt></ruby>"
+        },
+        {
+          "reading": "ほか",
+          "example": "外",
+          "example_reading": "ほか",
+          "example_ruby": "<ruby>外<rt>ほか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R038",
+      "number": 38,
+      "kanji": "学",
+      "examples": [
+        {
+          "reading": "ガク",
+          "example": "大学",
+          "example_reading": "だいがく",
+          "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R039",
+      "number": 39,
+      "kanji": "楽",
+      "examples": [
+        {
+          "reading": "ガク",
+          "example": "音楽",
+          "example_reading": "おんがく",
+          "example_ruby": "<ruby>音楽<rt>おんがく</rt></ruby>"
+        },
+        {
+          "reading": "たのしい",
+          "example": "楽しい",
+          "example_reading": "たのしい",
+          "example_ruby": "<ruby>楽<rt>たの</rt></ruby>しい"
+        }
+      ]
+    },
+    {
+      "id": "R040",
+      "number": 40,
+      "kanji": "寒",
+      "examples": [
+        {
+          "reading": "さむい",
+          "example": "寒い",
+          "example_reading": "さむい",
+          "example_ruby": "<ruby>寒<rt>さむ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R041",
+      "number": 41,
+      "kanji": "間",
+      "examples": [
+        {
+          "reading": "カン",
+          "example": "時間",
+          "example_reading": "じかん",
+          "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>"
+        },
+        {
+          "reading": "あいだ",
+          "example": "間",
+          "example_reading": "あいだ",
+          "example_ruby": "<ruby>間<rt>あいだ</rt></ruby>"
+        },
+        {
+          "reading": "ま",
+          "example": "間に合う",
+          "example_reading": "まにあう",
+          "example_ruby": "<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R042",
+      "number": 42,
+      "kanji": "漢",
+      "examples": [
+        {
+          "reading": "カン",
+          "example": "漢字",
+          "example_reading": "かんじ",
+          "example_ruby": "<ruby>漢字<rt>かんじ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R043",
+      "number": 43,
+      "kanji": "館",
+      "examples": [
+        {
+          "reading": "カン",
+          "example": "図書館",
+          "example_reading": "としょかん",
+          "example_ruby": "<ruby>図書館<rt>としょかん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R044",
+      "number": 44,
+      "kanji": "顔",
+      "examples": [
+        {
+          "reading": "かお",
+          "example": "顔",
+          "example_reading": "かお",
+          "example_ruby": "<ruby>顔<rt>かお</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R045",
+      "number": 45,
+      "kanji": "危",
+      "examples": [
+        {
+          "reading": "キ",
+          "example": "危険",
+          "example_reading": "きけん",
+          "example_ruby": "<ruby>危険<rt>きけん</rt></ruby>"
+        },
+        {
+          "reading": "あぶない",
+          "example": "危ない",
+          "example_reading": "あぶない",
+          "example_ruby": "<ruby>危<rt>あぶ</rt></ruby>ない"
+        }
+      ]
+    },
+    {
+      "id": "R046",
+      "number": 46,
+      "kanji": "気",
+      "examples": [
+        {
+          "reading": "キ",
+          "example": "元気",
+          "example_reading": "げんき",
+          "example_ruby": "<ruby>元気<rt>げんき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R047",
+      "number": 47,
+      "kanji": "起",
+      "examples": [
+        {
+          "reading": "おきる",
+          "example": "起きる",
+          "example_reading": "おきる",
+          "example_ruby": "<ruby>起<rt>お</rt></ruby>きる"
+        },
+        {
+          "reading": "おこす",
+          "example": "起こす",
+          "example_reading": "おこす",
+          "example_ruby": "<ruby>起<rt>お</rt></ruby>こす"
+        }
+      ]
+    },
+    {
+      "id": "R048",
+      "number": 48,
+      "kanji": "帰",
+      "examples": [
+        {
+          "reading": "かえる",
+          "example": "帰る",
+          "example_reading": "かえる",
+          "example_ruby": "<ruby>帰<rt>かえ</rt></ruby>る"
+        },
+        {
+          "reading": "かえす",
+          "example": "帰す",
+          "example_reading": "かえす",
+          "example_ruby": "<ruby>帰<rt>かえ</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R049",
+      "number": 49,
+      "kanji": "九",
+      "examples": [
+        {
+          "reading": "キュウ",
+          "example": "九",
+          "example_reading": "きゅう",
+          "example_ruby": "<ruby>九<rt>きゅう</rt></ruby>"
+        },
+        {
+          "reading": "ク",
+          "example": "九",
+          "example_reading": "く",
+          "example_ruby": "<ruby>九<rt>く</rt></ruby>"
+        },
+        {
+          "reading": "ここの",
+          "example": "九日",
+          "example_reading": "ここのか",
+          "example_ruby": "<ruby>九日<rt>ここのか</rt></ruby>"
+        },
+        {
+          "reading": "ここのつ",
+          "example": "九つ",
+          "example_reading": "ここのつ",
+          "example_ruby": "<ruby>九<rt>ここの</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R050",
+      "number": 50,
+      "kanji": "休",
+      "examples": [
+        {
+          "reading": "やすむ",
+          "example": "休む",
+          "example_reading": "やすむ",
+          "example_ruby": "<ruby>休<rt>やす</rt></ruby>む"
+        }
+      ]
+    },
+    {
+      "id": "R051",
+      "number": 51,
+      "kanji": "究",
+      "examples": [
+        {
+          "reading": "キュウ",
+          "example": "研究",
+          "example_reading": "けんきゅう",
+          "example_ruby": "<ruby>研究<rt>けんきゅう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R052",
+      "number": 52,
+      "kanji": "急",
+      "examples": [
+        {
+          "reading": "キュウ",
+          "example": "特急",
+          "example_reading": "とっきゅう",
+          "example_ruby": "<ruby>特急<rt>とっきゅう</rt></ruby>"
+        },
+        {
+          "reading": "いそぐ",
+          "example": "急ぐ",
+          "example_reading": "いそぐ",
+          "example_ruby": "<ruby>急<rt>いそ</rt></ruby>ぐ"
+        }
+      ]
+    },
+    {
+      "id": "R053",
+      "number": 53,
+      "kanji": "牛",
+      "examples": [
+        {
+          "reading": "ギュウ",
+          "example": "牛肉",
+          "example_reading": "ぎゅうにく",
+          "example_ruby": "<ruby>牛肉<rt>ぎゅうにく</rt></ruby>"
+        },
+        {
+          "reading": "うし",
+          "example": "牛",
+          "example_reading": "うし",
+          "example_ruby": "<ruby>牛<rt>うし</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R054",
+      "number": 54,
+      "kanji": "去",
+      "examples": [
+        {
+          "reading": "キョ",
+          "example": "去年",
+          "example_reading": "きょねん",
+          "example_ruby": "<ruby>去年<rt>きょねん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R055",
+      "number": 55,
+      "kanji": "魚",
+      "examples": [
+        {
+          "reading": "さかな",
+          "example": "魚",
+          "example_reading": "さかな",
+          "example_ruby": "<ruby>魚<rt>さかな</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R056",
+      "number": 56,
+      "kanji": "京",
+      "examples": [
+        {
+          "reading": "キョウ",
+          "example": "東京",
+          "example_reading": "とうきょう",
+          "example_ruby": "<ruby>東京<rt>とうきょう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R057",
+      "number": 57,
+      "kanji": "強",
+      "examples": [
+        {
+          "reading": "キョウ",
+          "example": "勉強",
+          "example_reading": "べんきょう",
+          "example_ruby": "<ruby>勉強<rt>べんきょう</rt></ruby>"
+        },
+        {
+          "reading": "つよい",
+          "example": "強い",
+          "example_reading": "つよい",
+          "example_ruby": "<ruby>強<rt>つよ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R058",
+      "number": 58,
+      "kanji": "教",
+      "examples": [
+        {
+          "reading": "キョウ",
+          "example": "教室",
+          "example_reading": "きょうしつ",
+          "example_ruby": "<ruby>教室<rt>きょうしつ</rt></ruby>"
+        },
+        {
+          "reading": "おしえる",
+          "example": "教える",
+          "example_reading": "おしえる",
+          "example_ruby": "<ruby>教<rt>おし</rt></ruby>える"
+        }
+      ]
+    },
+    {
+      "id": "R059",
+      "number": 59,
+      "kanji": "業",
+      "examples": [
+        {
+          "reading": "ギョウ",
+          "example": "工業",
+          "example_reading": "こうぎょう",
+          "example_ruby": "<ruby>工業<rt>こうぎょう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R060",
+      "number": 60,
+      "kanji": "近",
+      "examples": [
+        {
+          "reading": "キン",
+          "example": "近所",
+          "example_reading": "きんじょ",
+          "example_ruby": "<ruby>近所<rt>きんじょ</rt></ruby>"
+        },
+        {
+          "reading": "ちかい",
+          "example": "近い",
+          "example_reading": "ちかい",
+          "example_ruby": "<ruby>近<rt>ちか</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R061",
+      "number": 61,
+      "kanji": "金",
+      "examples": [
+        {
+          "reading": "キン",
+          "example": "金曜日",
+          "example_reading": "きんようび",
+          "example_ruby": "<ruby>金曜日<rt>きんようび</rt></ruby>"
+        },
+        {
+          "reading": "かね",
+          "example": "お金",
+          "example_reading": "おかね",
+          "example_ruby": "お<ruby>金<rt>かね</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R062",
+      "number": 62,
+      "kanji": "銀",
+      "examples": [
+        {
+          "reading": "ギン",
+          "example": "銀行",
+          "example_reading": "ぎんこう",
+          "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R063",
+      "number": 63,
+      "kanji": "区",
+      "examples": [
+        {
+          "reading": "ク",
+          "example": "〜区",
+          "example_reading": "く",
+          "example_ruby": "〜<ruby>区<rt>く</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R064",
+      "number": 64,
+      "kanji": "空",
+      "examples": [
+        {
+          "reading": "クウ",
+          "example": "空気",
+          "example_reading": "くうき",
+          "example_ruby": "<ruby>空気<rt>くうき</rt></ruby>"
+        },
+        {
+          "reading": "そら",
+          "example": "空",
+          "example_reading": "そら",
+          "example_ruby": "<ruby>空<rt>そら</rt></ruby>"
+        },
+        {
+          "reading": "あく",
+          "example": "空く",
+          "example_reading": "あく",
+          "example_ruby": "<ruby>空<rt>あ</rt></ruby>く"
+        },
+        {
+          "reading": "あける",
+          "example": "空ける",
+          "example_reading": "あける",
+          "example_ruby": "<ruby>空<rt>あ</rt></ruby>ける"
+        }
+      ]
+    },
+    {
+      "id": "R065",
+      "number": 65,
+      "kanji": "兄",
+      "examples": [
+        {
+          "reading": "キョウ",
+          "example": "兄弟",
+          "example_reading": "きょうだい",
+          "example_ruby": "<ruby>兄弟<rt>きょうだい</rt></ruby>"
+        },
+        {
+          "reading": "あに",
+          "example": "兄",
+          "example_reading": "あに",
+          "example_ruby": "<ruby>兄<rt>あに</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R066",
+      "number": 66,
+      "kanji": "計",
+      "examples": [
+        {
+          "reading": "ケイ",
+          "example": "計画",
+          "example_reading": "けいかく",
+          "example_ruby": "<ruby>計画<rt>けいかく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R067",
+      "number": 67,
+      "kanji": "軽",
+      "examples": [
+        {
+          "reading": "かるい",
+          "example": "軽い",
+          "example_reading": "かるい",
+          "example_ruby": "<ruby>軽<rt>かる</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R068",
+      "number": 68,
+      "kanji": "月",
+      "examples": [
+        {
+          "reading": "ゲツ",
+          "example": "今月",
+          "example_reading": "こんげつ",
+          "example_ruby": "<ruby>今月<rt>こんげつ</rt></ruby>"
+        },
+        {
+          "reading": "ガツ",
+          "example": "〜月",
+          "example_reading": "がつ",
+          "example_ruby": "〜<ruby>月<rt>がつ</rt></ruby>"
+        },
+        {
+          "reading": "つき",
+          "example": "毎月",
+          "example_reading": "まいつき",
+          "example_ruby": "<ruby>毎月<rt>まいつき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R069",
+      "number": 69,
+      "kanji": "犬",
+      "examples": [
+        {
+          "reading": "いぬ",
+          "example": "犬",
+          "example_reading": "いぬ",
+          "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R070",
+      "number": 70,
+      "kanji": "見",
+      "examples": [
+        {
+          "reading": "ケン",
+          "example": "見物",
+          "example_reading": "けんぶつ",
+          "example_ruby": "<ruby>見物<rt>けんぶつ</rt></ruby>"
+        },
+        {
+          "reading": "みる",
+          "example": "見る",
+          "example_reading": "みる",
+          "example_ruby": "<ruby>見<rt>み</rt></ruby>る"
+        },
+        {
+          "reading": "みえる",
+          "example": "見える",
+          "example_reading": "みえる",
+          "example_ruby": "<ruby>見<rt>み</rt></ruby>える"
+        },
+        {
+          "reading": "みせる",
+          "example": "見せる",
+          "example_reading": "みせる",
+          "example_ruby": "<ruby>見<rt>み</rt></ruby>せる"
+        }
+      ]
+    },
+    {
+      "id": "R071",
+      "number": 71,
+      "kanji": "建",
+      "examples": [
+        {
+          "reading": "たてる",
+          "example": "建物",
+          "example_reading": "たてもの",
+          "example_ruby": "<ruby>建物<rt>たてもの</rt></ruby>"
+        },
+        {
+          "reading": "たつ",
+          "example": "建つ",
+          "example_reading": "たつ",
+          "example_ruby": "<ruby>建<rt>た</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R072",
+      "number": 72,
+      "kanji": "研",
+      "examples": [
+        {
+          "reading": "ケン",
+          "example": "研究",
+          "example_reading": "けんきゅう",
+          "example_ruby": "<ruby>研究<rt>けんきゅう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R073",
+      "number": 73,
+      "kanji": "県",
+      "examples": [
+        {
+          "reading": "ケン",
+          "example": "県",
+          "example_reading": "けん",
+          "example_ruby": "<ruby>県<rt>けん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R074",
+      "number": 74,
+      "kanji": "険",
+      "examples": [
+        {
+          "reading": "ケン",
+          "example": "危険",
+          "example_reading": "きけん",
+          "example_ruby": "<ruby>危険<rt>きけん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R075",
+      "number": 75,
+      "kanji": "験",
+      "examples": [
+        {
+          "reading": "ケン",
+          "example": "試験",
+          "example_reading": "しけん",
+          "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R076",
+      "number": 76,
+      "kanji": "元",
+      "examples": [
+        {
+          "reading": "ゲン",
+          "example": "元気",
+          "example_reading": "げんき",
+          "example_ruby": "<ruby>元気<rt>げんき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R077",
+      "number": 77,
+      "kanji": "言",
+      "examples": [
+        {
+          "reading": "いう",
+          "example": "言う",
+          "example_reading": "いう",
+          "example_ruby": "<ruby>言<rt>い</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R078",
+      "number": 78,
+      "kanji": "古",
+      "examples": [
+        {
+          "reading": "ふるい",
+          "example": "古い",
+          "example_reading": "ふるい",
+          "example_ruby": "<ruby>古<rt>ふる</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R079",
+      "number": 79,
+      "kanji": "五",
+      "examples": [
+        {
+          "reading": "ゴ",
+          "example": "五",
+          "example_reading": "ご",
+          "example_ruby": "<ruby>五<rt>ご</rt></ruby>"
+        },
+        {
+          "reading": "いつ",
+          "example": "五日",
+          "example_reading": "いつか",
+          "example_ruby": "<ruby>五日<rt>いつか</rt></ruby>"
+        },
+        {
+          "reading": "いつつ",
+          "example": "五つ",
+          "example_reading": "いつつ",
+          "example_ruby": "<ruby>五<rt>いつ</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R080",
+      "number": 80,
+      "kanji": "午",
+      "examples": [
+        {
+          "reading": "ゴ",
+          "example": "午前",
+          "example_reading": "ごぜん",
+          "example_ruby": "<ruby>午前<rt>ごぜん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R081",
+      "number": 81,
+      "kanji": "後",
+      "examples": [
+        {
+          "reading": "ゴ",
+          "example": "午後",
+          "example_reading": "ごご",
+          "example_ruby": "<ruby>午後<rt>ごご</rt></ruby>"
+        },
+        {
+          "reading": "うしろ",
+          "example": "後ろ",
+          "example_reading": "うしろ",
+          "example_ruby": "<ruby>後<rt>うし</rt></ruby>ろ"
+        },
+        {
+          "reading": "あと",
+          "example": "後",
+          "example_reading": "あと",
+          "example_ruby": "<ruby>後<rt>あと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R082",
+      "number": 82,
+      "kanji": "語",
+      "examples": [
+        {
+          "reading": "ゴ",
+          "example": "英語",
+          "example_reading": "えいご",
+          "example_ruby": "<ruby>英語<rt>えいご</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R083",
+      "number": 83,
+      "kanji": "口",
+      "examples": [
+        {
+          "reading": "コウ",
+          "example": "人口",
+          "example_reading": "じんこう",
+          "example_ruby": "<ruby>人口<rt>じんこう</rt></ruby>"
+        },
+        {
+          "reading": "くち",
+          "example": "口",
+          "example_reading": "くち",
+          "example_ruby": "<ruby>口<rt>くち</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R084",
+      "number": 84,
+      "kanji": "工",
+      "examples": [
+        {
+          "reading": "コウ",
+          "example": "工業",
+          "example_reading": "こうぎょう",
+          "example_ruby": "<ruby>工業<rt>こうぎょう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R085",
+      "number": 85,
+      "kanji": "広",
+      "examples": [
+        {
+          "reading": "ひろい",
+          "example": "広い",
+          "example_reading": "ひろい",
+          "example_ruby": "<ruby>広<rt>ひろ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R086",
+      "number": 86,
+      "kanji": "交",
+      "examples": [
+        {
+          "reading": "コウ",
+          "example": "交通",
+          "example_reading": "こうつう",
+          "example_ruby": "<ruby>交通<rt>こうつう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R087",
+      "number": 87,
+      "kanji": "光",
+      "examples": [
+        {
+          "reading": "ひかる",
+          "example": "光る",
+          "example_reading": "ひかる",
+          "example_ruby": "<ruby>光<rt>ひか</rt></ruby>る"
+        },
+        {
+          "reading": "ひかり",
+          "example": "光",
+          "example_reading": "ひかり",
+          "example_ruby": "<ruby>光<rt>ひかり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R088",
+      "number": 88,
+      "kanji": "好",
+      "examples": [
+        {
+          "reading": "すき",
+          "example": "好き",
+          "example_reading": "すき",
+          "example_ruby": "<ruby>好<rt>す</rt></ruby>き"
+        }
+      ]
+    },
+    {
+      "id": "R089",
+      "number": 89,
+      "kanji": "考",
+      "examples": [
+        {
+          "reading": "かんがえる",
+          "example": "考える",
+          "example_reading": "かんがえる",
+          "example_ruby": "<ruby>考<rt>かんが</rt></ruby>える"
+        }
+      ]
+    },
+    {
+      "id": "R090",
+      "number": 90,
+      "kanji": "行",
+      "examples": [
+        {
+          "reading": "コウ",
+          "example": "旅行",
+          "example_reading": "りょこう",
+          "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>"
+        },
+        {
+          "reading": "いく",
+          "example": "行く",
+          "example_reading": "いく",
+          "example_ruby": "<ruby>行<rt>い</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R091",
+      "number": 91,
+      "kanji": "校",
+      "examples": [
+        {
+          "reading": "コウ",
+          "example": "学校",
+          "example_reading": "がっこう",
+          "example_ruby": "<ruby>学校<rt>がっこう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R092",
+      "number": 92,
+      "kanji": "高",
+      "examples": [
+        {
+          "reading": "コウ",
+          "example": "高校",
+          "example_reading": "こうこう",
+          "example_ruby": "<ruby>高校<rt>こうこう</rt></ruby>"
+        },
+        {
+          "reading": "たかい",
+          "example": "高い",
+          "example_reading": "たかい",
+          "example_ruby": "<ruby>高<rt>たか</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R093",
+      "number": 93,
+      "kanji": "号",
+      "examples": [
+        {
+          "reading": "ゴウ",
+          "example": "番号",
+          "example_reading": "ばんごう",
+          "example_ruby": "<ruby>番号<rt>ばんごう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R094",
+      "number": 94,
+      "kanji": "合",
+      "examples": [
+        {
+          "reading": "ゴウ",
+          "example": "都合",
+          "example_reading": "つごう",
+          "example_ruby": "<ruby>都合<rt>つごう</rt></ruby>"
+        },
+        {
+          "reading": "あう",
+          "example": "合う",
+          "example_reading": "あう",
+          "example_ruby": "<ruby>合<rt>あ</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R095",
+      "number": 95,
+      "kanji": "国",
+      "examples": [
+        {
+          "reading": "コク",
+          "example": "外国",
+          "example_reading": "がいこく",
+          "example_ruby": "<ruby>外国<rt>がいこく</rt></ruby>"
+        },
+        {
+          "reading": "くに",
+          "example": "国",
+          "example_reading": "くに",
+          "example_ruby": "<ruby>国<rt>くに</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R096",
+      "number": 96,
+      "kanji": "黒",
+      "examples": [
+        {
+          "reading": "くろ",
+          "example": "黒",
+          "example_reading": "くろ",
+          "example_ruby": "<ruby>黒<rt>くろ</rt></ruby>"
+        },
+        {
+          "reading": "くろい",
+          "example": "黒い",
+          "example_reading": "くろい",
+          "example_ruby": "<ruby>黒<rt>くろ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R097",
+      "number": 97,
+      "kanji": "今",
+      "examples": [
+        {
+          "reading": "コン",
+          "example": "今月",
+          "example_reading": "こんげつ",
+          "example_ruby": "<ruby>今月<rt>こんげつ</rt></ruby>"
+        },
+        {
+          "reading": "いま",
+          "example": "今",
+          "example_reading": "いま",
+          "example_ruby": "<ruby>今<rt>いま</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R098",
+      "number": 98,
+      "kanji": "左",
+      "examples": [
+        {
+          "reading": "ひだり",
+          "example": "左",
+          "example_reading": "ひだり",
+          "example_ruby": "<ruby>左<rt>ひだり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R099",
+      "number": 99,
+      "kanji": "菜",
+      "examples": [
+        {
+          "reading": "サイ",
+          "example": "野菜",
+          "example_reading": "やさい",
+          "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R100",
+      "number": 100,
+      "kanji": "作",
+      "examples": [
+        {
+          "reading": "サク",
+          "example": "作文",
+          "example_reading": "さくぶん",
+          "example_ruby": "<ruby>作文<rt>さくぶん</rt></ruby>"
+        },
+        {
+          "reading": "つくる",
+          "example": "作る",
+          "example_reading": "つくる",
+          "example_ruby": "<ruby>作<rt>つく</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R101",
+      "number": 101,
+      "kanji": "三",
+      "examples": [
+        {
+          "reading": "サン",
+          "example": "三",
+          "example_reading": "さん",
+          "example_ruby": "<ruby>三<rt>さん</rt></ruby>"
+        },
+        {
+          "reading": "みっつ",
+          "example": "三つ",
+          "example_reading": "みっつ",
+          "example_ruby": "<ruby>三<rt>みっ</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R102",
+      "number": 102,
+      "kanji": "山",
+      "examples": [
+        {
+          "reading": "やま",
+          "example": "山",
+          "example_reading": "やま",
+          "example_ruby": "<ruby>山<rt>やま</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R103",
+      "number": 103,
+      "kanji": "産",
+      "examples": [
+        {
+          "reading": "サン",
+          "example": "生産",
+          "example_reading": "せいさん",
+          "example_ruby": "<ruby>生産<rt>せいさん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R104",
+      "number": 104,
+      "kanji": "子",
+      "examples": [
+        {
+          "reading": "こ",
+          "example": "子",
+          "example_reading": "こ",
+          "example_ruby": "<ruby>子<rt>こ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R105",
+      "number": 105,
+      "kanji": "止",
+      "examples": [
+        {
+          "reading": "とまる",
+          "example": "止まる",
+          "example_reading": "とまる",
+          "example_ruby": "<ruby>止<rt>と</rt></ruby>まる"
+        },
+        {
+          "reading": "とめる",
+          "example": "止める",
+          "example_reading": "とめる",
+          "example_ruby": "<ruby>止<rt>と</rt></ruby>める"
+        }
+      ]
+    },
+    {
+      "id": "R106",
+      "number": 106,
+      "kanji": "氏",
+      "examples": [
+        {
+          "reading": "シ",
+          "example": "氏名",
+          "example_reading": "しめい",
+          "example_ruby": "<ruby>氏名<rt>しめい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R107",
+      "number": 107,
+      "kanji": "仕",
+      "examples": [
+        {
+          "reading": "シ",
+          "example": "仕事",
+          "example_reading": "しごと",
+          "example_ruby": "<ruby>仕事<rt>しごと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R108",
+      "number": 108,
+      "kanji": "四",
+      "examples": [
+        {
+          "reading": "シ",
+          "example": "四",
+          "example_reading": "し",
+          "example_ruby": "<ruby>四<rt>し</rt></ruby>"
+        },
+        {
+          "reading": "よっつ",
+          "example": "四つ",
+          "example_reading": "よっつ",
+          "example_ruby": "<ruby>四<rt>よっ</rt></ruby>つ"
+        },
+        {
+          "reading": "よん",
+          "example": "四",
+          "example_reading": "よん",
+          "example_ruby": "<ruby>四<rt>よん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R109",
+      "number": 109,
+      "kanji": "市",
+      "examples": [
+        {
+          "reading": "シ",
+          "example": "市民",
+          "example_reading": "しみん",
+          "example_ruby": "<ruby>市民<rt>しみん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R110",
+      "number": 110,
+      "kanji": "死",
+      "examples": [
+        {
+          "reading": "しぬ",
+          "example": "死ぬ",
+          "example_reading": "しぬ",
+          "example_ruby": "<ruby>死<rt>し</rt></ruby>ぬ"
+        }
+      ]
+    },
+    {
+      "id": "R111",
+      "number": 111,
+      "kanji": "私",
+      "examples": [
+        {
+          "reading": "わたくし",
+          "example": "私",
+          "example_reading": "わたくし",
+          "example_ruby": "<ruby>私<rt>わたくし</rt></ruby>"
+        },
+        {
+          "reading": "わたし",
+          "example": "私",
+          "example_reading": "わたし",
+          "example_ruby": "<ruby>私<rt>わたし</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R112",
+      "number": 112,
+      "kanji": "使",
+      "examples": [
+        {
+          "reading": "シ",
+          "example": "大使館",
+          "example_reading": "たいしかん",
+          "example_ruby": "<ruby>大使館<rt>たいしかん</rt></ruby>"
+        },
+        {
+          "reading": "つかう",
+          "example": "使う",
+          "example_reading": "つかう",
+          "example_ruby": "<ruby>使<rt>つか</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R113",
+      "number": 113,
+      "kanji": "始",
+      "examples": [
+        {
+          "reading": "はじめる",
+          "example": "始める",
+          "example_reading": "はじめる",
+          "example_ruby": "<ruby>始<rt>はじ</rt></ruby>める"
+        },
+        {
+          "reading": "はじまる",
+          "example": "始まる",
+          "example_reading": "はじまる",
+          "example_ruby": "<ruby>始<rt>はじ</rt></ruby>まる"
+        }
+      ]
+    },
+    {
+      "id": "R114",
+      "number": 114,
+      "kanji": "姉",
+      "examples": [
+        {
+          "reading": "あね",
+          "example": "姉",
+          "example_reading": "あね",
+          "example_ruby": "<ruby>姉<rt>あね</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R115",
+      "number": 115,
+      "kanji": "思",
+      "examples": [
+        {
+          "reading": "おもう",
+          "example": "思う",
+          "example_reading": "おもう",
+          "example_ruby": "<ruby>思<rt>おも</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R116",
+      "number": 116,
+      "kanji": "紙",
+      "examples": [
+        {
+          "reading": "かみ",
+          "example": "手紙",
+          "example_reading": "てがみ",
+          "example_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R117",
+      "number": 117,
+      "kanji": "試",
+      "examples": [
+        {
+          "reading": "シ",
+          "example": "試験",
+          "example_reading": "しけん",
+          "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R118",
+      "number": 118,
+      "kanji": "字",
+      "examples": [
+        {
+          "reading": "ジ",
+          "example": "漢字",
+          "example_reading": "かんじ",
+          "example_ruby": "<ruby>漢字<rt>かんじ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R119",
+      "number": 119,
+      "kanji": "次",
+      "examples": [
+        {
+          "reading": "つぎ",
+          "example": "次",
+          "example_reading": "つぎ",
+          "example_ruby": "<ruby>次<rt>つぎ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R120",
+      "number": 120,
+      "kanji": "耳",
+      "examples": [
+        {
+          "reading": "みみ",
+          "example": "耳",
+          "example_reading": "みみ",
+          "example_ruby": "<ruby>耳<rt>みみ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R121",
+      "number": 121,
+      "kanji": "自",
+      "examples": [
+        {
+          "reading": "ジ",
+          "example": "自転車",
+          "example_reading": "じてんしゃ",
+          "example_ruby": "<ruby>自転車<rt>じてんしゃ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R122",
+      "number": 122,
+      "kanji": "事",
+      "examples": [
+        {
+          "reading": "ジ",
+          "example": "食事",
+          "example_reading": "しょくじ",
+          "example_ruby": "<ruby>食事<rt>しょくじ</rt></ruby>"
+        },
+        {
+          "reading": "こと",
+          "example": "事",
+          "example_reading": "こと",
+          "example_ruby": "<ruby>事<rt>こと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R123",
+      "number": 123,
+      "kanji": "持",
+      "examples": [
+        {
+          "reading": "もつ",
+          "example": "持つ",
+          "example_reading": "もつ",
+          "example_ruby": "<ruby>持<rt>も</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R124",
+      "number": 124,
+      "kanji": "時",
+      "examples": [
+        {
+          "reading": "ジ",
+          "example": "時間",
+          "example_reading": "じかん",
+          "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>"
+        },
+        {
+          "reading": "とき",
+          "example": "時",
+          "example_reading": "とき",
+          "example_ruby": "<ruby>時<rt>とき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R125",
+      "number": 125,
+      "kanji": "七",
+      "examples": [
+        {
+          "reading": "シチ",
+          "example": "七",
+          "example_reading": "しち",
+          "example_ruby": "<ruby>七<rt>しち</rt></ruby>"
+        },
+        {
+          "reading": "ななつ",
+          "example": "七つ",
+          "example_reading": "ななつ",
+          "example_ruby": "<ruby>七<rt>なな</rt></ruby>つ"
+        },
+        {
+          "reading": "なの",
+          "example": "七日",
+          "example_reading": "なのか",
+          "example_ruby": "<ruby>七日<rt>なのか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R126",
+      "number": 126,
+      "kanji": "室",
+      "examples": [
+        {
+          "reading": "シツ",
+          "example": "教室",
+          "example_reading": "きょうしつ",
+          "example_ruby": "<ruby>教室<rt>きょうしつ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R127",
+      "number": 127,
+      "kanji": "質",
+      "examples": [
+        {
+          "reading": "シツ",
+          "example": "質問",
+          "example_reading": "しつもん",
+          "example_ruby": "<ruby>質問<rt>しつもん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R128",
+      "number": 128,
+      "kanji": "写",
+      "examples": [
+        {
+          "reading": "シャ",
+          "example": "写真",
+          "example_reading": "しゃしん",
+          "example_ruby": "<ruby>写真<rt>しゃしん</rt></ruby>"
+        },
+        {
+          "reading": "うつす",
+          "example": "写す",
+          "example_reading": "うつす",
+          "example_ruby": "<ruby>写<rt>うつ</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R129",
+      "number": 129,
+      "kanji": "社",
+      "examples": [
+        {
+          "reading": "シャ",
+          "example": "社会",
+          "example_reading": "しゃかい",
+          "example_ruby": "<ruby>社会<rt>しゃかい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R130",
+      "number": 130,
+      "kanji": "車",
+      "examples": [
+        {
+          "reading": "シャ",
+          "example": "自転車",
+          "example_reading": "じてんしゃ",
+          "example_ruby": "<ruby>自転車<rt>じてんしゃ</rt></ruby>"
+        },
+        {
+          "reading": "くるま",
+          "example": "車",
+          "example_reading": "くるま",
+          "example_ruby": "<ruby>車<rt>くるま</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R131",
+      "number": 131,
+      "kanji": "者",
+      "examples": [
+        {
+          "reading": "シャ",
+          "example": "医者",
+          "example_reading": "いしゃ",
+          "example_ruby": "<ruby>医者<rt>いしゃ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R132",
+      "number": 132,
+      "kanji": "借",
+      "examples": [
+        {
+          "reading": "かりる",
+          "example": "借りる",
+          "example_reading": "かりる",
+          "example_ruby": "<ruby>借<rt>か</rt></ruby>りる"
+        }
+      ]
+    },
+    {
+      "id": "R133",
+      "number": 133,
+      "kanji": "弱",
+      "examples": [
+        {
+          "reading": "よわい",
+          "example": "弱い",
+          "example_reading": "よわい",
+          "example_ruby": "<ruby>弱<rt>よわ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R134",
+      "number": 134,
+      "kanji": "手",
+      "examples": [
+        {
+          "reading": "シュ",
+          "example": "運転手",
+          "example_reading": "うんてんしゅ",
+          "example_ruby": "<ruby>運転手<rt>うんてんしゅ</rt></ruby>"
+        },
+        {
+          "reading": "て",
+          "example": "手",
+          "example_reading": "て",
+          "example_ruby": "<ruby>手<rt>て</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R135",
+      "number": 135,
+      "kanji": "主",
+      "examples": [
+        {
+          "reading": "シュ",
+          "example": "主人",
+          "example_reading": "しゅじん",
+          "example_ruby": "<ruby>主人<rt>しゅじん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R136",
+      "number": 136,
+      "kanji": "取",
+      "examples": [
+        {
+          "reading": "とる",
+          "example": "取る",
+          "example_reading": "とる",
+          "example_ruby": "<ruby>取<rt>と</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R137",
+      "number": 137,
+      "kanji": "首",
+      "examples": [
+        {
+          "reading": "くび",
+          "example": "首",
+          "example_reading": "くび",
+          "example_ruby": "<ruby>首<rt>くび</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R138",
+      "number": 138,
+      "kanji": "秋",
+      "examples": [
+        {
+          "reading": "あき",
+          "example": "秋",
+          "example_reading": "あき",
+          "example_ruby": "<ruby>秋<rt>あき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R139",
+      "number": 139,
+      "kanji": "終",
+      "examples": [
+        {
+          "reading": "おわる",
+          "example": "終わる",
+          "example_reading": "おわる",
+          "example_ruby": "<ruby>終<rt>お</rt></ruby>わる"
+        }
+      ]
+    },
+    {
+      "id": "R140",
+      "number": 140,
+      "kanji": "習",
+      "examples": [
+        {
+          "reading": "ならう",
+          "example": "習う",
+          "example_reading": "ならう",
+          "example_ruby": "<ruby>習<rt>なら</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R141",
+      "number": 141,
+      "kanji": "週",
+      "examples": [
+        {
+          "reading": "シュウ",
+          "example": "今週",
+          "example_reading": "こんしゅう",
+          "example_ruby": "<ruby>今週<rt>こんしゅう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R142",
+      "number": 142,
+      "kanji": "集",
+      "examples": [
+        {
+          "reading": "あつまる",
+          "example": "集まる",
+          "example_reading": "あつまる",
+          "example_ruby": "<ruby>集<rt>あつ</rt></ruby>まる"
+        },
+        {
+          "reading": "あつめる",
+          "example": "集める",
+          "example_reading": "あつめる",
+          "example_ruby": "<ruby>集<rt>あつ</rt></ruby>める"
+        }
+      ]
+    },
+    {
+      "id": "R143",
+      "number": 143,
+      "kanji": "十",
+      "examples": [
+        {
+          "reading": "ジュウ",
+          "example": "十",
+          "example_reading": "じゅう",
+          "example_ruby": "<ruby>十<rt>じゅう</rt></ruby>"
+        },
+        {
+          "reading": "とお",
+          "example": "十日",
+          "example_reading": "とおか",
+          "example_ruby": "<ruby>十日<rt>とおか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R144",
+      "number": 144,
+      "kanji": "住",
+      "examples": [
+        {
+          "reading": "ジュウ",
+          "example": "住所",
+          "example_reading": "じゅうしょ",
+          "example_ruby": "<ruby>住所<rt>じゅうしょ</rt></ruby>"
+        },
+        {
+          "reading": "すむ",
+          "example": "住む",
+          "example_reading": "すむ",
+          "example_ruby": "<ruby>住<rt>す</rt></ruby>む"
+        }
+      ]
+    },
+    {
+      "id": "R145",
+      "number": 145,
+      "kanji": "重",
+      "examples": [
+        {
+          "reading": "おもい",
+          "example": "重い",
+          "example_reading": "おもい",
+          "example_ruby": "<ruby>重<rt>おも</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R146",
+      "number": 146,
+      "kanji": "出",
+      "examples": [
+        {
+          "reading": "シュツ",
+          "example": "出発",
+          "example_reading": "しゅっぱつ",
+          "example_ruby": "<ruby>出発<rt>しゅっぱつ</rt></ruby>"
+        },
+        {
+          "reading": "でる",
+          "example": "出る",
+          "example_reading": "でる",
+          "example_ruby": "<ruby>出<rt>で</rt></ruby>る"
+        },
+        {
+          "reading": "だす",
+          "example": "思い出す",
+          "example_reading": "おもいだす",
+          "example_ruby": "<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R147",
+      "number": 147,
+      "kanji": "春",
+      "examples": [
+        {
+          "reading": "はる",
+          "example": "春",
+          "example_reading": "はる",
+          "example_ruby": "<ruby>春<rt>はる</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R148",
+      "number": 148,
+      "kanji": "所",
+      "examples": [
+        {
+          "reading": "ショ",
+          "example": "住所",
+          "example_reading": "じゅうしょ",
+          "example_ruby": "<ruby>住所<rt>じゅうしょ</rt></ruby>"
+        },
+        {
+          "reading": "ところ",
+          "example": "所",
+          "example_reading": "ところ",
+          "example_ruby": "<ruby>所<rt>ところ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R149",
+      "number": 149,
+      "kanji": "書",
+      "examples": [
+        {
+          "reading": "ショ",
+          "example": "図書館",
+          "example_reading": "としょかん",
+          "example_ruby": "<ruby>図書館<rt>としょかん</rt></ruby>"
+        },
+        {
+          "reading": "かく",
+          "example": "書く",
+          "example_reading": "かく",
+          "example_ruby": "<ruby>書<rt>か</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R150",
+      "number": 150,
+      "kanji": "暑",
+      "examples": [
+        {
+          "reading": "あつい",
+          "example": "暑い",
+          "example_reading": "あつい",
+          "example_ruby": "<ruby>暑<rt>あつ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R151",
+      "number": 151,
+      "kanji": "女",
+      "examples": [
+        {
+          "reading": "おんな",
+          "example": "女",
+          "example_reading": "おんな",
+          "example_ruby": "<ruby>女<rt>おんな</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R152",
+      "number": 152,
+      "kanji": "小",
+      "examples": [
+        {
+          "reading": "ショウ",
+          "example": "小学校",
+          "example_reading": "しょうがっこう",
+          "example_ruby": "<ruby>小学校<rt>しょうがっこう</rt></ruby>"
+        },
+        {
+          "reading": "ちいさい",
+          "example": "小さい",
+          "example_reading": "ちいさい",
+          "example_ruby": "<ruby>小<rt>ちい</rt></ruby>さい"
+        },
+        {
+          "reading": "こ",
+          "example": "小鳥",
+          "example_reading": "ことり",
+          "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R153",
+      "number": 153,
+      "kanji": "少",
+      "examples": [
+        {
+          "reading": "すくない",
+          "example": "少ない",
+          "example_reading": "すくない",
+          "example_ruby": "<ruby>少<rt>すく</rt></ruby>ない"
+        },
+        {
+          "reading": "すこし",
+          "example": "少し",
+          "example_reading": "すこし",
+          "example_ruby": "<ruby>少<rt>すこ</rt></ruby>し"
+        }
+      ]
+    },
+    {
+      "id": "R154",
+      "number": 154,
+      "kanji": "上",
+      "examples": [
+        {
+          "reading": "ジョウ",
+          "example": "屋上",
+          "example_reading": "おくじょう",
+          "example_ruby": "<ruby>屋上<rt>おくじょう</rt></ruby>"
+        },
+        {
+          "reading": "うえ",
+          "example": "上",
+          "example_reading": "うえ",
+          "example_ruby": "<ruby>上<rt>うえ</rt></ruby>"
+        },
+        {
+          "reading": "うわ",
+          "example": "上着",
+          "example_reading": "うわぎ",
+          "example_ruby": "<ruby>上着<rt>うわぎ</rt></ruby>"
+        },
+        {
+          "reading": "あげる",
+          "example": "上げる",
+          "example_reading": "あげる",
+          "example_ruby": "<ruby>上<rt>あ</rt></ruby>げる"
+        },
+        {
+          "reading": "あがる",
+          "example": "上がる",
+          "example_reading": "あがる",
+          "example_ruby": "<ruby>上<rt>あ</rt></ruby>がる"
+        }
+      ]
+    },
+    {
+      "id": "R155",
+      "number": 155,
+      "kanji": "乗",
+      "examples": [
+        {
+          "reading": "のる",
+          "example": "乗る",
+          "example_reading": "のる",
+          "example_ruby": "<ruby>乗<rt>の</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R156",
+      "number": 156,
+      "kanji": "場",
+      "examples": [
+        {
+          "reading": "ジョウ",
+          "example": "会場",
+          "example_reading": "かいじょう",
+          "example_ruby": "<ruby>会場<rt>かいじょう</rt></ruby>"
+        },
+        {
+          "reading": "ば",
+          "example": "場所",
+          "example_reading": "ばしょ",
+          "example_ruby": "<ruby>場所<rt>ばしょ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R157",
+      "number": 157,
+      "kanji": "色",
+      "examples": [
+        {
+          "reading": "いろ",
+          "example": "色",
+          "example_reading": "いろ",
+          "example_ruby": "<ruby>色<rt>いろ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R158",
+      "number": 158,
+      "kanji": "食",
+      "examples": [
+        {
+          "reading": "ショク",
+          "example": "食事",
+          "example_reading": "しょくじ",
+          "example_ruby": "<ruby>食事<rt>しょくじ</rt></ruby>"
+        },
+        {
+          "reading": "たべる",
+          "example": "食べる",
+          "example_reading": "たべる",
+          "example_ruby": "<ruby>食<rt>た</rt></ruby>べる"
+        }
+      ]
+    },
+    {
+      "id": "R159",
+      "number": 159,
+      "kanji": "心",
+      "examples": [
+        {
+          "reading": "シン",
+          "example": "心配",
+          "example_reading": "しんぱい",
+          "example_ruby": "<ruby>心配<rt>しんぱい</rt></ruby>"
+        },
+        {
+          "reading": "こころ",
+          "example": "心",
+          "example_reading": "こころ",
+          "example_ruby": "<ruby>心<rt>こころ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R160",
+      "number": 160,
+      "kanji": "真",
+      "examples": [
+        {
+          "reading": "シン",
+          "example": "写真",
+          "example_reading": "しゃしん",
+          "example_ruby": "<ruby>写真<rt>しゃしん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R161",
+      "number": 161,
+      "kanji": "進",
+      "examples": [
+        {
+          "reading": "すすむ",
+          "example": "進む",
+          "example_reading": "すすむ",
+          "example_ruby": "<ruby>進<rt>すす</rt></ruby>む"
+        },
+        {
+          "reading": "すすめる",
+          "example": "進める",
+          "example_reading": "すすめる",
+          "example_ruby": "<ruby>進<rt>すす</rt></ruby>める"
+        }
+      ]
+    },
+    {
+      "id": "R162",
+      "number": 162,
+      "kanji": "森",
+      "examples": [
+        {
+          "reading": "もり",
+          "example": "森",
+          "example_reading": "もり",
+          "example_ruby": "<ruby>森<rt>もり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R163",
+      "number": 163,
+      "kanji": "寝",
+      "examples": [
+        {
+          "reading": "ねる",
+          "example": "寝る",
+          "example_reading": "ねる",
+          "example_ruby": "<ruby>寝<rt>ね</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R164",
+      "number": 164,
+      "kanji": "新",
+      "examples": [
+        {
+          "reading": "シン",
+          "example": "新聞",
+          "example_reading": "しんぶん",
+          "example_ruby": "<ruby>新聞<rt>しんぶん</rt></ruby>"
+        },
+        {
+          "reading": "あたらしい",
+          "example": "新しい",
+          "example_reading": "あたらしい",
+          "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しい"
+        }
+      ]
+    },
+    {
+      "id": "R165",
+      "number": 165,
+      "kanji": "親",
+      "examples": [
+        {
+          "reading": "シン",
+          "example": "親切",
+          "example_reading": "しんせつ",
+          "example_ruby": "<ruby>親切<rt>しんせつ</rt></ruby>"
+        },
+        {
+          "reading": "おや",
+          "example": "親",
+          "example_reading": "おや",
+          "example_ruby": "<ruby>親<rt>おや</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R166",
+      "number": 166,
+      "kanji": "人",
+      "examples": [
+        {
+          "reading": "ジン",
+          "example": "人口",
+          "example_reading": "じんこう",
+          "example_ruby": "<ruby>人口<rt>じんこう</rt></ruby>"
+        },
+        {
+          "reading": "ニン",
+          "example": "〜人",
+          "example_reading": "にん",
+          "example_ruby": "〜<ruby>人<rt>にん</rt></ruby>"
+        },
+        {
+          "reading": "ひと",
+          "example": "人",
+          "example_reading": "ひと",
+          "example_ruby": "<ruby>人<rt>ひと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R167",
+      "number": 167,
+      "kanji": "図",
+      "examples": [
+        {
+          "reading": "ズ",
+          "example": "地図",
+          "example_reading": "ちず",
+          "example_ruby": "<ruby>地図<rt>ちず</rt></ruby>"
+        },
+        {
+          "reading": "ト",
+          "example": "図書館",
+          "example_reading": "としょかん",
+          "example_ruby": "<ruby>図書館<rt>としょかん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R168",
+      "number": 168,
+      "kanji": "水",
+      "examples": [
+        {
+          "reading": "スイ",
+          "example": "水道",
+          "example_reading": "すいどう",
+          "example_ruby": "<ruby>水道<rt>すいどう</rt></ruby>"
+        },
+        {
+          "reading": "みず",
+          "example": "水",
+          "example_reading": "みず",
+          "example_ruby": "<ruby>水<rt>みず</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R169",
+      "number": 169,
+      "kanji": "世",
+      "examples": [
+        {
+          "reading": "セ",
+          "example": "世界",
+          "example_reading": "せかい",
+          "example_ruby": "<ruby>世界<rt>せかい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R170",
+      "number": 170,
+      "kanji": "正",
+      "examples": [
+        {
+          "reading": "ショウ",
+          "example": "正月",
+          "example_reading": "しょうがつ",
+          "example_ruby": "<ruby>正月<rt>しょうがつ</rt></ruby>"
+        },
+        {
+          "reading": "ただしい",
+          "example": "正しい",
+          "example_reading": "ただしい",
+          "example_ruby": "<ruby>正<rt>ただ</rt></ruby>しい"
+        }
+      ]
+    },
+    {
+      "id": "R171",
+      "number": 171,
+      "kanji": "生",
+      "examples": [
+        {
+          "reading": "セイ",
+          "example": "学生",
+          "example_reading": "がくせい",
+          "example_ruby": "<ruby>学生<rt>がくせい</rt></ruby>"
+        },
+        {
+          "reading": "いきる",
+          "example": "生きる",
+          "example_reading": "いきる",
+          "example_ruby": "<ruby>生<rt>い</rt></ruby>きる"
+        },
+        {
+          "reading": "うまれる",
+          "example": "生まれる",
+          "example_reading": "うまれる",
+          "example_ruby": "<ruby>生<rt>う</rt></ruby>まれる"
+        }
+      ]
+    },
+    {
+      "id": "R172",
+      "number": 172,
+      "kanji": "西",
+      "examples": [
+        {
+          "reading": "セイ",
+          "example": "西洋",
+          "example_reading": "せいよう",
+          "example_ruby": "<ruby>西洋<rt>せいよう</rt></ruby>"
+        },
+        {
+          "reading": "にし",
+          "example": "西",
+          "example_reading": "にし",
+          "example_ruby": "<ruby>西<rt>にし</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R173",
+      "number": 173,
+      "kanji": "声",
+      "examples": [
+        {
+          "reading": "こえ",
+          "example": "声",
+          "example_reading": "こえ",
+          "example_ruby": "<ruby>声<rt>こえ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R174",
+      "number": 174,
+      "kanji": "青",
+      "examples": [
+        {
+          "reading": "あお",
+          "example": "青い",
+          "example_reading": "あおい",
+          "example_ruby": "<ruby>青<rt>あお</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R175",
+      "number": 175,
+      "kanji": "夕",
+      "examples": [
+        {
+          "reading": "ゆう",
+          "example": "夕方",
+          "example_reading": "ゆうがた",
+          "example_ruby": "<ruby>夕方<rt>ゆうがた</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R176",
+      "number": 176,
+      "kanji": "赤",
+      "examples": [
+        {
+          "reading": "あか",
+          "example": "赤い",
+          "example_reading": "あかい",
+          "example_ruby": "<ruby>赤<rt>あか</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R177",
+      "number": 177,
+      "kanji": "切",
+      "examples": [
+        {
+          "reading": "セツ",
+          "example": "親切",
+          "example_reading": "しんせつ",
+          "example_ruby": "<ruby>親切<rt>しんせつ</rt></ruby>"
+        },
+        {
+          "reading": "きる",
+          "example": "切る",
+          "example_reading": "きる",
+          "example_ruby": "<ruby>切<rt>き</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R178",
+      "number": 178,
+      "kanji": "説",
+      "examples": [
+        {
+          "reading": "セツ",
+          "example": "説明",
+          "example_reading": "せつめい",
+          "example_ruby": "<ruby>説明<rt>せつめい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R179",
+      "number": 179,
+      "kanji": "千",
+      "examples": [
+        {
+          "reading": "セン",
+          "example": "千",
+          "example_reading": "せん",
+          "example_ruby": "<ruby>千<rt>せん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R180",
+      "number": 180,
+      "kanji": "川",
+      "examples": [
+        {
+          "reading": "かわ",
+          "example": "川",
+          "example_reading": "かわ",
+          "example_ruby": "<ruby>川<rt>かわ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R181",
+      "number": 181,
+      "kanji": "先",
+      "examples": [
+        {
+          "reading": "セン",
+          "example": "先月",
+          "example_reading": "せんげつ",
+          "example_ruby": "<ruby>先月<rt>せんげつ</rt></ruby>"
+        },
+        {
+          "reading": "さき",
+          "example": "先",
+          "example_reading": "さき",
+          "example_ruby": "<ruby>先<rt>さき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R182",
+      "number": 182,
+      "kanji": "洗",
+      "examples": [
+        {
+          "reading": "あらう",
+          "example": "洗う",
+          "example_reading": "あらう",
+          "example_ruby": "<ruby>洗<rt>あら</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R183",
+      "number": 183,
+      "kanji": "全",
+      "examples": [
+        {
+          "reading": "ゼン",
+          "example": "全部",
+          "example_reading": "ぜんぶ",
+          "example_ruby": "<ruby>全部<rt>ぜんぶ</rt></ruby>"
+        },
+        {
+          "reading": "まったく",
+          "example": "全く",
+          "example_reading": "まったく",
+          "example_ruby": "<ruby>全<rt>まった</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R184",
+      "number": 184,
+      "kanji": "前",
+      "examples": [
+        {
+          "reading": "ゼン",
+          "example": "午前",
+          "example_reading": "ごぜん",
+          "example_ruby": "<ruby>午前<rt>ごぜん</rt></ruby>"
+        },
+        {
+          "reading": "まえ",
+          "example": "前",
+          "example_reading": "まえ",
+          "example_ruby": "<ruby>前<rt>まえ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R185",
+      "number": 185,
+      "kanji": "早",
+      "examples": [
+        {
+          "reading": "はやい",
+          "example": "早い",
+          "example_reading": "はやい",
+          "example_ruby": "<ruby>早<rt>はや</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R186",
+      "number": 186,
+      "kanji": "走",
+      "examples": [
+        {
+          "reading": "はしる",
+          "example": "走る",
+          "example_reading": "はしる",
+          "example_ruby": "<ruby>走<rt>はし</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R187",
+      "number": 187,
+      "kanji": "送",
+      "examples": [
+        {
+          "reading": "おくる",
+          "example": "送る",
+          "example_reading": "おくる",
+          "example_ruby": "<ruby>送<rt>おく</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R188",
+      "number": 188,
+      "kanji": "足",
+      "examples": [
+        {
+          "reading": "あし",
+          "example": "足",
+          "example_reading": "あし",
+          "example_ruby": "<ruby>足<rt>あし</rt></ruby>"
+        },
+        {
+          "reading": "たりる",
+          "example": "足りる",
+          "example_reading": "たりる",
+          "example_ruby": "<ruby>足<rt>た</rt></ruby>りる"
+        },
+        {
+          "reading": "たす",
+          "example": "足す",
+          "example_reading": "たす",
+          "example_ruby": "<ruby>足<rt>た</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R189",
+      "number": 189,
+      "kanji": "族",
+      "examples": [
+        {
+          "reading": "ゾク",
+          "example": "家族",
+          "example_reading": "かぞく",
+          "example_ruby": "<ruby>家族<rt>かぞく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R190",
+      "number": 190,
+      "kanji": "村",
+      "examples": [
+        {
+          "reading": "むら",
+          "example": "村",
+          "example_reading": "むら",
+          "example_ruby": "<ruby>村<rt>むら</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R191",
+      "number": 191,
+      "kanji": "多",
+      "examples": [
+        {
+          "reading": "タ",
+          "example": "多分",
+          "example_reading": "たぶん",
+          "example_ruby": "<ruby>多分<rt>たぶん</rt></ruby>"
+        },
+        {
+          "reading": "おおい",
+          "example": "多い",
+          "example_reading": "おおい",
+          "example_ruby": "<ruby>多<rt>おお</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R192",
+      "number": 192,
+      "kanji": "太",
+      "examples": [
+        {
+          "reading": "ふとい",
+          "example": "太い",
+          "example_reading": "ふとい",
+          "example_ruby": "<ruby>太<rt>ふと</rt></ruby>い"
+        },
+        {
+          "reading": "ふとる",
+          "example": "太る",
+          "example_reading": "ふとる",
+          "example_ruby": "<ruby>太<rt>ふと</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R193",
+      "number": 193,
+      "kanji": "体",
+      "examples": [
+        {
+          "reading": "タイ",
+          "example": "大体",
+          "example_reading": "だいたい",
+          "example_ruby": "<ruby>大体<rt>だいたい</rt></ruby>"
+        },
+        {
+          "reading": "からだ",
+          "example": "体",
+          "example_reading": "からだ",
+          "example_ruby": "<ruby>体<rt>からだ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R194",
+      "number": 194,
+      "kanji": "待",
+      "examples": [
+        {
+          "reading": "まつ",
+          "example": "待つ",
+          "example_reading": "まつ",
+          "example_ruby": "<ruby>待<rt>ま</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R195",
+      "number": 195,
+      "kanji": "貸",
+      "examples": [
+        {
+          "reading": "かす",
+          "example": "貸す",
+          "example_reading": "かす",
+          "example_ruby": "<ruby>貸<rt>か</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R196",
+      "number": 196,
+      "kanji": "大",
+      "examples": [
+        {
+          "reading": "ダイ",
+          "example": "大学",
+          "example_reading": "だいがく",
+          "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>"
+        },
+        {
+          "reading": "タイ",
+          "example": "大切",
+          "example_reading": "たいせつ",
+          "example_ruby": "<ruby>大切<rt>たいせつ</rt></ruby>"
+        },
+        {
+          "reading": "おおきい",
+          "example": "大きい",
+          "example_reading": "おおきい",
+          "example_ruby": "<ruby>大<rt>おお</rt></ruby>きい"
+        }
+      ]
+    },
+    {
+      "id": "R197",
+      "number": 197,
+      "kanji": "代",
+      "examples": [
+        {
+          "reading": "ダイ",
+          "example": "時代",
+          "example_reading": "じだい",
+          "example_ruby": "<ruby>時代<rt>じだい</rt></ruby>"
+        },
+        {
+          "reading": "かわる",
+          "example": "代わりに",
+          "example_reading": "かわりに",
+          "example_ruby": "<ruby>代<rt>か</rt></ruby>わりに"
+        }
+      ]
+    },
+    {
+      "id": "R198",
+      "number": 198,
+      "kanji": "台",
+      "examples": [
+        {
+          "reading": "ダイ",
+          "example": "台所",
+          "example_reading": "だいどころ",
+          "example_ruby": "<ruby>台所<rt>だいどころ</rt></ruby>"
+        },
+        {
+          "reading": "タイ",
+          "example": "台風",
+          "example_reading": "たいふう",
+          "example_ruby": "<ruby>台風<rt>たいふう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R199",
+      "number": 199,
+      "kanji": "題",
+      "examples": [
+        {
+          "reading": "ダイ",
+          "example": "問題",
+          "example_reading": "もんだい",
+          "example_ruby": "<ruby>問題<rt>もんだい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R200",
+      "number": 200,
+      "kanji": "短",
+      "examples": [
+        {
+          "reading": "みじかい",
+          "example": "短い",
+          "example_reading": "みじかい",
+          "example_ruby": "<ruby>短<rt>みじか</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R201",
+      "number": 201,
+      "kanji": "男",
+      "examples": [
+        {
+          "reading": "おとこ",
+          "example": "男",
+          "example_reading": "おとこ",
+          "example_ruby": "<ruby>男<rt>おとこ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R202",
+      "number": 202,
+      "kanji": "地",
+      "examples": [
+        {
+          "reading": "チ",
+          "example": "地図",
+          "example_reading": "ちず",
+          "example_ruby": "<ruby>地図<rt>ちず</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R203",
+      "number": 203,
+      "kanji": "池",
+      "examples": [
+        {
+          "reading": "いけ",
+          "example": "池",
+          "example_reading": "いけ",
+          "example_ruby": "<ruby>池<rt>いけ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R204",
+      "number": 204,
+      "kanji": "知",
+      "examples": [
+        {
+          "reading": "しる",
+          "example": "知る",
+          "example_reading": "しる",
+          "example_ruby": "<ruby>知<rt>し</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R205",
+      "number": 205,
+      "kanji": "茶",
+      "examples": [
+        {
+          "reading": "チャ",
+          "example": "お茶",
+          "example_reading": "おちゃ",
+          "example_ruby": "お<ruby>茶<rt>ちゃ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R206",
+      "number": 206,
+      "kanji": "着",
+      "examples": [
+        {
+          "reading": "きる",
+          "example": "着る",
+          "example_reading": "きる",
+          "example_ruby": "<ruby>着<rt>き</rt></ruby>る"
+        },
+        {
+          "reading": "つく",
+          "example": "着く",
+          "example_reading": "つく",
+          "example_ruby": "<ruby>着<rt>つ</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R207",
+      "number": 207,
+      "kanji": "中",
+      "examples": [
+        {
+          "reading": "チュウ",
+          "example": "中学校",
+          "example_reading": "ちゅうがっこう",
+          "example_ruby": "<ruby>中学校<rt>ちゅうがっこう</rt></ruby>"
+        },
+        {
+          "reading": "ジュウ",
+          "example": "〜中",
+          "example_reading": "じゅう",
+          "example_ruby": "〜<ruby>中<rt>じゅう</rt></ruby>"
+        },
+        {
+          "reading": "なか",
+          "example": "中",
+          "example_reading": "なか",
+          "example_ruby": "<ruby>中<rt>なか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R208",
+      "number": 208,
+      "kanji": "注",
+      "examples": [
+        {
+          "reading": "チュウ",
+          "example": "注意",
+          "example_reading": "ちゅうい",
+          "example_ruby": "<ruby>注意<rt>ちゅうい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R209",
+      "number": 209,
+      "kanji": "昼",
+      "examples": [
+        {
+          "reading": "ひる",
+          "example": "昼",
+          "example_reading": "ひる",
+          "example_ruby": "<ruby>昼<rt>ひる</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R210",
+      "number": 210,
+      "kanji": "町",
+      "examples": [
+        {
+          "reading": "チョウ",
+          "example": "〜町",
+          "example_reading": "ちょう",
+          "example_ruby": "〜<ruby>町<rt>ちょう</rt></ruby>"
+        },
+        {
+          "reading": "まち",
+          "example": "町",
+          "example_reading": "まち",
+          "example_ruby": "<ruby>町<rt>まち</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R211",
+      "number": 211,
+      "kanji": "長",
+      "examples": [
+        {
+          "reading": "チョウ",
+          "example": "社長",
+          "example_reading": "しゃちょう",
+          "example_ruby": "<ruby>社長<rt>しゃちょう</rt></ruby>"
+        },
+        {
+          "reading": "ながい",
+          "example": "長い",
+          "example_reading": "ながい",
+          "example_ruby": "<ruby>長<rt>なが</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R212",
+      "number": 212,
+      "kanji": "鳥",
+      "examples": [
+        {
+          "reading": "とり",
+          "example": "鳥",
+          "example_reading": "とり",
+          "example_ruby": "<ruby>鳥<rt>とり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R213",
+      "number": 213,
+      "kanji": "朝",
+      "examples": [
+        {
+          "reading": "あさ",
+          "example": "朝",
+          "example_reading": "あさ",
+          "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R214",
+      "number": 214,
+      "kanji": "通",
+      "examples": [
+        {
+          "reading": "ツウ",
+          "example": "交通",
+          "example_reading": "こうつう",
+          "example_ruby": "<ruby>交通<rt>こうつう</rt></ruby>"
+        },
+        {
+          "reading": "とおる",
+          "example": "通る",
+          "example_reading": "とおる",
+          "example_ruby": "<ruby>通<rt>とお</rt></ruby>る"
+        },
+        {
+          "reading": "かよう",
+          "example": "通う",
+          "example_reading": "かよう",
+          "example_ruby": "<ruby>通<rt>かよ</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R215",
+      "number": 215,
+      "kanji": "低",
+      "examples": [
+        {
+          "reading": "ひくい",
+          "example": "低い",
+          "example_reading": "ひくい",
+          "example_ruby": "<ruby>低<rt>ひく</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R216",
+      "number": 216,
+      "kanji": "弟",
+      "examples": [
+        {
+          "reading": "ダイ",
+          "example": "兄弟",
+          "example_reading": "きょうだい",
+          "example_ruby": "<ruby>兄弟<rt>きょうだい</rt></ruby>"
+        },
+        {
+          "reading": "おとうと",
+          "example": "弟",
+          "example_reading": "おとうと",
+          "example_ruby": "<ruby>弟<rt>おとうと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R217",
+      "number": 217,
+      "kanji": "天",
+      "examples": [
+        {
+          "reading": "テン",
+          "example": "天気",
+          "example_reading": "てんき",
+          "example_ruby": "<ruby>天気<rt>てんき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R218",
+      "number": 218,
+      "kanji": "店",
+      "examples": [
+        {
+          "reading": "テン",
+          "example": "店員",
+          "example_reading": "てんいん",
+          "example_ruby": "<ruby>店員<rt>てんいん</rt></ruby>"
+        },
+        {
+          "reading": "みせ",
+          "example": "店",
+          "example_reading": "みせ",
+          "example_ruby": "<ruby>店<rt>みせ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R219",
+      "number": 219,
+      "kanji": "転",
+      "examples": [
+        {
+          "reading": "テン",
+          "example": "運転",
+          "example_reading": "うんてん",
+          "example_ruby": "<ruby>運転<rt>うんてん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R220",
+      "number": 220,
+      "kanji": "田",
+      "examples": [
+        {
+          "reading": "た",
+          "example": "田中さん",
+          "example_reading": "たなかさん",
+          "example_ruby": "<ruby>田中<rt>たなか</rt></ruby>さん"
+        }
+      ]
+    },
+    {
+      "id": "R221",
+      "number": 221,
+      "kanji": "電",
+      "examples": [
+        {
+          "reading": "デン",
+          "example": "電気",
+          "example_reading": "でんき",
+          "example_ruby": "<ruby>電気<rt>でんき</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R222",
+      "number": 222,
+      "kanji": "都",
+      "examples": [
+        {
+          "reading": "ト",
+          "example": "〜都",
+          "example_reading": "と",
+          "example_ruby": "〜<ruby>都<rt>と</rt></ruby>"
+        },
+        {
+          "reading": "ツ",
+          "example": "都合",
+          "example_reading": "つごう",
+          "example_ruby": "<ruby>都合<rt>つごう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R223",
+      "number": 223,
+      "kanji": "土",
+      "examples": [
+        {
+          "reading": "ド",
+          "example": "土曜日",
+          "example_reading": "どようび",
+          "example_ruby": "<ruby>土曜日<rt>どようび</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R224",
+      "number": 224,
+      "kanji": "度",
+      "examples": [
+        {
+          "reading": "ド",
+          "example": "一度",
+          "example_reading": "いちど",
+          "example_ruby": "<ruby>一度<rt>いちど</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R225",
+      "number": 225,
+      "kanji": "冬",
+      "examples": [
+        {
+          "reading": "ふゆ",
+          "example": "冬",
+          "example_reading": "ふゆ",
+          "example_ruby": "<ruby>冬<rt>ふゆ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R226",
+      "number": 226,
+      "kanji": "東",
+      "examples": [
+        {
+          "reading": "ひがし",
+          "example": "東",
+          "example_reading": "ひがし",
+          "example_ruby": "<ruby>東<rt>ひがし</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R227",
+      "number": 227,
+      "kanji": "答",
+      "examples": [
+        {
+          "reading": "こたえる",
+          "example": "答える",
+          "example_reading": "こたえる",
+          "example_ruby": "<ruby>答<rt>こた</rt></ruby>える"
+        },
+        {
+          "reading": "こたえ",
+          "example": "答え",
+          "example_reading": "こたえ",
+          "example_ruby": "<ruby>答<rt>こた</rt></ruby>え"
+        }
+      ]
+    },
+    {
+      "id": "R228",
+      "number": 228,
+      "kanji": "頭",
+      "examples": [
+        {
+          "reading": "あたま",
+          "example": "頭",
+          "example_reading": "あたま",
+          "example_ruby": "<ruby>頭<rt>あたま</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R229",
+      "number": 229,
+      "kanji": "同",
+      "examples": [
+        {
+          "reading": "おなじ",
+          "example": "同じ",
+          "example_reading": "おなじ",
+          "example_ruby": "<ruby>同<rt>おな</rt></ruby>じ"
+        }
+      ]
+    },
+    {
+      "id": "R230",
+      "number": 230,
+      "kanji": "動",
+      "examples": [
+        {
+          "reading": "ドウ",
+          "example": "動物",
+          "example_reading": "どうぶつ",
+          "example_ruby": "<ruby>動物<rt>どうぶつ</rt></ruby>"
+        },
+        {
+          "reading": "うごく",
+          "example": "動く",
+          "example_reading": "うごく",
+          "example_ruby": "<ruby>動<rt>うご</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R231",
+      "number": 231,
+      "kanji": "堂",
+      "examples": [
+        {
+          "reading": "ドウ",
+          "example": "食堂",
+          "example_reading": "しょくどう",
+          "example_ruby": "<ruby>食堂<rt>しょくどう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R232",
+      "number": 232,
+      "kanji": "道",
+      "examples": [
+        {
+          "reading": "ドウ",
+          "example": "水道",
+          "example_reading": "すいどう",
+          "example_ruby": "<ruby>水道<rt>すいどう</rt></ruby>"
+        },
+        {
+          "reading": "みち",
+          "example": "道",
+          "example_reading": "みち",
+          "example_ruby": "<ruby>道<rt>みち</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R233",
+      "number": 233,
+      "kanji": "働",
+      "examples": [
+        {
+          "reading": "はたらく",
+          "example": "働く",
+          "example_reading": "はたらく",
+          "example_ruby": "<ruby>働<rt>はたら</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R234",
+      "number": 234,
+      "kanji": "特",
+      "examples": [
+        {
+          "reading": "トク",
+          "example": "特別",
+          "example_reading": "とくべつ",
+          "example_ruby": "<ruby>特別<rt>とくべつ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R235",
+      "number": 235,
+      "kanji": "読",
+      "examples": [
+        {
+          "reading": "よむ",
+          "example": "読む",
+          "example_reading": "よむ",
+          "example_ruby": "<ruby>読<rt>よ</rt></ruby>む"
+        }
+      ]
+    },
+    {
+      "id": "R236",
+      "number": 236,
+      "kanji": "南",
+      "examples": [
+        {
+          "reading": "みなみ",
+          "example": "南",
+          "example_reading": "みなみ",
+          "example_ruby": "<ruby>南<rt>みなみ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R237",
+      "number": 237,
+      "kanji": "二",
+      "examples": [
+        {
+          "reading": "ニ",
+          "example": "二",
+          "example_reading": "に",
+          "example_ruby": "<ruby>二<rt>に</rt></ruby>"
+        },
+        {
+          "reading": "ふたつ",
+          "example": "二つ",
+          "example_reading": "ふたつ",
+          "example_ruby": "<ruby>二<rt>ふた</rt></ruby>つ"
+        }
+      ]
+    },
+    {
+      "id": "R238",
+      "number": 238,
+      "kanji": "肉",
+      "examples": [
+        {
+          "reading": "ニク",
+          "example": "肉",
+          "example_reading": "にく",
+          "example_ruby": "<ruby>肉<rt>にく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R239",
+      "number": 239,
+      "kanji": "日",
+      "examples": [
+        {
+          "reading": "ニチ",
+          "example": "毎日",
+          "example_reading": "まいにち",
+          "example_ruby": "<ruby>毎日<rt>まいにち</rt></ruby>"
+        },
+        {
+          "reading": "ひ",
+          "example": "日",
+          "example_reading": "ひ",
+          "example_ruby": "<ruby>日<rt>ひ</rt></ruby>"
+        },
+        {
+          "reading": "か",
+          "example": "三日",
+          "example_reading": "みっか",
+          "example_ruby": "<ruby>三日<rt>みっか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R240",
+      "number": 240,
+      "kanji": "入",
+      "examples": [
+        {
+          "reading": "ニュウ",
+          "example": "入学",
+          "example_reading": "にゅうがく",
+          "example_ruby": "<ruby>入学<rt>にゅうがく</rt></ruby>"
+        },
+        {
+          "reading": "いる",
+          "example": "入口",
+          "example_reading": "いりぐち",
+          "example_ruby": "<ruby>入口<rt>いりぐち</rt></ruby>"
+        },
+        {
+          "reading": "いれる",
+          "example": "入れる",
+          "example_reading": "いれる",
+          "example_ruby": "<ruby>入<rt>い</rt></ruby>れる"
+        },
+        {
+          "reading": "はいる",
+          "example": "入る",
+          "example_reading": "はいる",
+          "example_ruby": "<ruby>入<rt>はい</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R241",
+      "number": 241,
+      "kanji": "年",
+      "examples": [
+        {
+          "reading": "ネン",
+          "example": "来年",
+          "example_reading": "らいねん",
+          "example_ruby": "<ruby>来年<rt>らいねん</rt></ruby>"
+        },
+        {
+          "reading": "とし",
+          "example": "年",
+          "example_reading": "とし",
+          "example_ruby": "<ruby>年<rt>とし</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R242",
+      "number": 242,
+      "kanji": "売",
+      "examples": [
+        {
+          "reading": "うる",
+          "example": "売る",
+          "example_reading": "うる",
+          "example_ruby": "<ruby>売<rt>う</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R243",
+      "number": 243,
+      "kanji": "買",
+      "examples": [
+        {
+          "reading": "かう",
+          "example": "買う",
+          "example_reading": "かう",
+          "example_ruby": "<ruby>買<rt>か</rt></ruby>う"
+        }
+      ]
+    },
+    {
+      "id": "R244",
+      "number": 244,
+      "kanji": "白",
+      "examples": [
+        {
+          "reading": "しろ",
+          "example": "白",
+          "example_reading": "しろ",
+          "example_ruby": "<ruby>白<rt>しろ</rt></ruby>"
+        },
+        {
+          "reading": "しろい",
+          "example": "白い",
+          "example_reading": "しろい",
+          "example_ruby": "<ruby>白<rt>しろ</rt></ruby>い"
+        }
+      ]
+    },
+    {
+      "id": "R245",
+      "number": 245,
+      "kanji": "八",
+      "examples": [
+        {
+          "reading": "ハチ",
+          "example": "八",
+          "example_reading": "はち",
+          "example_ruby": "<ruby>八<rt>はち</rt></ruby>"
+        },
+        {
+          "reading": "やっつ",
+          "example": "八つ",
+          "example_reading": "やっつ",
+          "example_ruby": "<ruby>八<rt>やっ</rt></ruby>つ"
+        },
+        {
+          "reading": "よう",
+          "example": "八日",
+          "example_reading": "ようか",
+          "example_ruby": "<ruby>八日<rt>ようか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R246",
+      "number": 246,
+      "kanji": "発",
+      "examples": [
+        {
+          "reading": "ハツ",
+          "example": "出発",
+          "example_reading": "しゅっぱつ",
+          "example_ruby": "<ruby>出発<rt>しゅっぱつ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R247",
+      "number": 247,
+      "kanji": "半",
+      "examples": [
+        {
+          "reading": "ハン",
+          "example": "半分",
+          "example_reading": "はんぶん",
+          "example_ruby": "<ruby>半分<rt>はんぶん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R248",
+      "number": 248,
+      "kanji": "飯",
+      "examples": [
+        {
+          "reading": "ハン",
+          "example": "夕飯",
+          "example_reading": "ゆうはん",
+          "example_ruby": "<ruby>夕飯<rt>ゆうはん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R249",
+      "number": 249,
+      "kanji": "晩",
+      "examples": [
+        {
+          "reading": "バン",
+          "example": "毎晩",
+          "example_reading": "まいばん",
+          "example_ruby": "<ruby>毎晩<rt>まいばん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R250",
+      "number": 250,
+      "kanji": "番",
+      "examples": [
+        {
+          "reading": "バン",
+          "example": "番号",
+          "example_reading": "ばんごう",
+          "example_ruby": "<ruby>番号<rt>ばんごう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R251",
+      "number": 251,
+      "kanji": "疲",
+      "examples": [
+        {
+          "reading": "つかれる",
+          "example": "疲れる",
+          "example_reading": "つかれる",
+          "example_ruby": "<ruby>疲<rt>つか</rt></ruby>れる"
+        }
+      ]
+    },
+    {
+      "id": "R252",
+      "number": 252,
+      "kanji": "百",
+      "examples": [
+        {
+          "reading": "ヒャク",
+          "example": "百",
+          "example_reading": "ひゃく",
+          "example_ruby": "<ruby>百<rt>ひゃく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R253",
+      "number": 253,
+      "kanji": "病",
+      "examples": [
+        {
+          "reading": "ビョウ",
+          "example": "病院",
+          "example_reading": "びょういん",
+          "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R254",
+      "number": 254,
+      "kanji": "品",
+      "examples": [
+        {
+          "reading": "ヒン",
+          "example": "食料品",
+          "example_reading": "しょくりょうひん",
+          "example_ruby": "<ruby>食料品<rt>しょくりょうひん</rt></ruby>"
+        },
+        {
+          "reading": "しな",
+          "example": "品物",
+          "example_reading": "しなもの",
+          "example_ruby": "<ruby>品物<rt>しなもの</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R255",
+      "number": 255,
+      "kanji": "不",
+      "examples": [
+        {
+          "reading": "フ",
+          "example": "不便",
+          "example_reading": "ふべん",
+          "example_ruby": "<ruby>不便<rt>ふべん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R256",
+      "number": 256,
+      "kanji": "父",
+      "examples": [
+        {
+          "reading": "ちち",
+          "example": "父",
+          "example_reading": "ちち",
+          "example_ruby": "<ruby>父<rt>ちち</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R257",
+      "number": 257,
+      "kanji": "部",
+      "examples": [
+        {
+          "reading": "ブ",
+          "example": "全部",
+          "example_reading": "ぜんぶ",
+          "example_ruby": "<ruby>全部<rt>ぜんぶ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R258",
+      "number": 258,
+      "kanji": "風",
+      "examples": [
+        {
+          "reading": "フウ",
+          "example": "台風",
+          "example_reading": "たいふう",
+          "example_ruby": "<ruby>台風<rt>たいふう</rt></ruby>"
+        },
+        {
+          "reading": "かぜ",
+          "example": "風",
+          "example_reading": "かぜ",
+          "example_ruby": "<ruby>風<rt>かぜ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R259",
+      "number": 259,
+      "kanji": "服",
+      "examples": [
+        {
+          "reading": "フク",
+          "example": "洋服",
+          "example_reading": "ようふく",
+          "example_ruby": "<ruby>洋服<rt>ようふく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R260",
+      "number": 260,
+      "kanji": "物",
+      "examples": [
+        {
+          "reading": "ブツ",
+          "example": "動物",
+          "example_reading": "どうぶつ",
+          "example_ruby": "<ruby>動物<rt>どうぶつ</rt></ruby>"
+        },
+        {
+          "reading": "もの",
+          "example": "買い物",
+          "example_reading": "かいもの",
+          "example_ruby": "<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R261",
+      "number": 261,
+      "kanji": "分",
+      "examples": [
+        {
+          "reading": "ブン",
+          "example": "自分",
+          "example_reading": "じぶん",
+          "example_ruby": "<ruby>自分<rt>じぶん</rt></ruby>"
+        },
+        {
+          "reading": "フン",
+          "example": "〜分",
+          "example_reading": "ふん",
+          "example_ruby": "〜<ruby>分<rt>ふん</rt></ruby>"
+        },
+        {
+          "reading": "ブ",
+          "example": "大分",
+          "example_reading": "だいぶ",
+          "example_ruby": "<ruby>大分<rt>だいぶ</rt></ruby>"
+        },
+        {
+          "reading": "わかる",
+          "example": "分かる",
+          "example_reading": "わかる",
+          "example_ruby": "<ruby>分<rt>わ</rt></ruby>かる"
+        }
+      ]
+    },
+    {
+      "id": "R262",
+      "number": 262,
+      "kanji": "文",
+      "examples": [
+        {
+          "reading": "ブン",
+          "example": "文学",
+          "example_reading": "ぶんがく",
+          "example_ruby": "<ruby>文学<rt>ぶんがく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R263",
+      "number": 263,
+      "kanji": "聞",
+      "examples": [
+        {
+          "reading": "ブン",
+          "example": "新聞",
+          "example_reading": "しんぶん",
+          "example_ruby": "<ruby>新聞<rt>しんぶん</rt></ruby>"
+        },
+        {
+          "reading": "きく",
+          "example": "聞く",
+          "example_reading": "きく",
+          "example_ruby": "<ruby>聞<rt>き</rt></ruby>く"
+        },
+        {
+          "reading": "きこえる",
+          "example": "聞こえる",
+          "example_reading": "きこえる",
+          "example_ruby": "<ruby>聞<rt>き</rt></ruby>こえる"
+        }
+      ]
+    },
+    {
+      "id": "R264",
+      "number": 264,
+      "kanji": "別",
+      "examples": [
+        {
+          "reading": "ベツ",
+          "example": "特別",
+          "example_reading": "とくべつ",
+          "example_ruby": "<ruby>特別<rt>とくべつ</rt></ruby>"
+        },
+        {
+          "reading": "わかれる",
+          "example": "別れる",
+          "example_reading": "わかれる",
+          "example_ruby": "<ruby>別<rt>わか</rt></ruby>れる"
+        }
+      ]
+    },
+    {
+      "id": "R265",
+      "number": 265,
+      "kanji": "返",
+      "examples": [
+        {
+          "reading": "ヘン",
+          "example": "返事",
+          "example_reading": "へんじ",
+          "example_ruby": "<ruby>返事<rt>へんじ</rt></ruby>"
+        },
+        {
+          "reading": "かえす",
+          "example": "返す",
+          "example_reading": "かえす",
+          "example_ruby": "<ruby>返<rt>かえ</rt></ruby>す"
+        }
+      ]
+    },
+    {
+      "id": "R266",
+      "number": 266,
+      "kanji": "便",
+      "examples": [
+        {
+          "reading": "ベン",
+          "example": "便利",
+          "example_reading": "べんり",
+          "example_ruby": "<ruby>便利<rt>べんり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R267",
+      "number": 267,
+      "kanji": "勉",
+      "examples": [
+        {
+          "reading": "ベン",
+          "example": "勉強",
+          "example_reading": "べんきょう",
+          "example_ruby": "<ruby>勉強<rt>べんきょう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R268",
+      "number": 268,
+      "kanji": "歩",
+      "examples": [
+        {
+          "reading": "あるく",
+          "example": "歩く",
+          "example_reading": "あるく",
+          "example_ruby": "<ruby>歩<rt>ある</rt></ruby>く"
+        }
+      ]
+    },
+    {
+      "id": "R269",
+      "number": 269,
+      "kanji": "母",
+      "examples": [
+        {
+          "reading": "はは",
+          "example": "母",
+          "example_reading": "はは",
+          "example_ruby": "<ruby>母<rt>はは</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R270",
+      "number": 270,
+      "kanji": "方",
+      "examples": [
+        {
+          "reading": "ホウ",
+          "example": "地方",
+          "example_reading": "ちほう",
+          "example_ruby": "<ruby>地方<rt>ちほう</rt></ruby>"
+        },
+        {
+          "reading": "かた",
+          "example": "あの方",
+          "example_reading": "あのかた",
+          "example_ruby": "あの<ruby>方<rt>かた</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R271",
+      "number": 271,
+      "kanji": "北",
+      "examples": [
+        {
+          "reading": "きた",
+          "example": "北",
+          "example_reading": "きた",
+          "example_ruby": "<ruby>北<rt>きた</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R272",
+      "number": 272,
+      "kanji": "木",
+      "examples": [
+        {
+          "reading": "モク",
+          "example": "木曜日",
+          "example_reading": "もくようび",
+          "example_ruby": "<ruby>木曜日<rt>もくようび</rt></ruby>"
+        },
+        {
+          "reading": "き",
+          "example": "木",
+          "example_reading": "き",
+          "example_ruby": "<ruby>木<rt>き</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R273",
+      "number": 273,
+      "kanji": "本",
+      "examples": [
+        {
+          "reading": "ホン",
+          "example": "本",
+          "example_reading": "ほん",
+          "example_ruby": "<ruby>本<rt>ほん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R274",
+      "number": 274,
+      "kanji": "毎",
+      "examples": [
+        {
+          "reading": "マイ",
+          "example": "毎朝",
+          "example_reading": "まいあさ",
+          "example_ruby": "<ruby>毎朝<rt>まいあさ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R275",
+      "number": 275,
+      "kanji": "妹",
+      "examples": [
+        {
+          "reading": "いもうと",
+          "example": "妹",
+          "example_reading": "いもうと",
+          "example_ruby": "<ruby>妹<rt>いもうと</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R276",
+      "number": 276,
+      "kanji": "万",
+      "examples": [
+        {
+          "reading": "マン",
+          "example": "一万",
+          "example_reading": "いちまん",
+          "example_ruby": "<ruby>一万<rt>いちまん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R277",
+      "number": 277,
+      "kanji": "味",
+      "examples": [
+        {
+          "reading": "ミ",
+          "example": "意味",
+          "example_reading": "いみ",
+          "example_ruby": "<ruby>意味<rt>いみ</rt></ruby>"
+        },
+        {
+          "reading": "あじ",
+          "example": "味",
+          "example_reading": "あじ",
+          "example_ruby": "<ruby>味<rt>あじ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R278",
+      "number": 278,
+      "kanji": "民",
+      "examples": [
+        {
+          "reading": "ミン",
+          "example": "市民",
+          "example_reading": "しみん",
+          "example_ruby": "<ruby>市民<rt>しみん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R279",
+      "number": 279,
+      "kanji": "名",
+      "examples": [
+        {
+          "reading": "メイ",
+          "example": "有名",
+          "example_reading": "ゆうめい",
+          "example_ruby": "<ruby>有名<rt>ゆうめい</rt></ruby>"
+        },
+        {
+          "reading": "な",
+          "example": "名前",
+          "example_reading": "なまえ",
+          "example_ruby": "<ruby>名前<rt>なまえ</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R280",
+      "number": 280,
+      "kanji": "明",
+      "examples": [
+        {
+          "reading": "あかるい",
+          "example": "明るい",
+          "example_reading": "あかるい",
+          "example_ruby": "<ruby>明<rt>あか</rt></ruby>るい"
+        }
+      ]
+    },
+    {
+      "id": "R281",
+      "number": 281,
+      "kanji": "目",
+      "examples": [
+        {
+          "reading": "め",
+          "example": "目",
+          "example_reading": "め",
+          "example_ruby": "<ruby>目<rt>め</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R282",
+      "number": 282,
+      "kanji": "門",
+      "examples": [
+        {
+          "reading": "モン",
+          "example": "門",
+          "example_reading": "もん",
+          "example_ruby": "<ruby>門<rt>もん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R283",
+      "number": 283,
+      "kanji": "問",
+      "examples": [
+        {
+          "reading": "モン",
+          "example": "質問",
+          "example_reading": "しつもん",
+          "example_ruby": "<ruby>質問<rt>しつもん</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R284",
+      "number": 284,
+      "kanji": "夜",
+      "examples": [
+        {
+          "reading": "ヤ",
+          "example": "今夜",
+          "example_reading": "こんや",
+          "example_ruby": "<ruby>今夜<rt>こんや</rt></ruby>"
+        },
+        {
+          "reading": "よる",
+          "example": "夜",
+          "example_reading": "よる",
+          "example_ruby": "<ruby>夜<rt>よる</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R285",
+      "number": 285,
+      "kanji": "野",
+      "examples": [
+        {
+          "reading": "ヤ",
+          "example": "野菜",
+          "example_reading": "やさい",
+          "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R286",
+      "number": 286,
+      "kanji": "薬",
+      "examples": [
+        {
+          "reading": "くすり",
+          "example": "薬",
+          "example_reading": "くすり",
+          "example_ruby": "<ruby>薬<rt>くすり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R287",
+      "number": 287,
+      "kanji": "有",
+      "examples": [
+        {
+          "reading": "ユウ",
+          "example": "有名",
+          "example_reading": "ゆうめい",
+          "example_ruby": "<ruby>有名<rt>ゆうめい</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R288",
+      "number": 288,
+      "kanji": "用",
+      "examples": [
+        {
+          "reading": "ヨウ",
+          "example": "利用",
+          "example_reading": "りよう",
+          "example_ruby": "<ruby>利用<rt>りよう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R289",
+      "number": 289,
+      "kanji": "洋",
+      "examples": [
+        {
+          "reading": "ヨウ",
+          "example": "洋服",
+          "example_reading": "ようふく",
+          "example_ruby": "<ruby>洋服<rt>ようふく</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R290",
+      "number": 290,
+      "kanji": "曜",
+      "examples": [
+        {
+          "reading": "ヨウ",
+          "example": "月曜日",
+          "example_reading": "げつようび",
+          "example_ruby": "<ruby>月曜日<rt>げつようび</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R291",
+      "number": 291,
+      "kanji": "来",
+      "examples": [
+        {
+          "reading": "ライ",
+          "example": "来月",
+          "example_reading": "らいげつ",
+          "example_ruby": "<ruby>来月<rt>らいげつ</rt></ruby>"
+        },
+        {
+          "reading": "くる",
+          "example": "来る",
+          "example_reading": "くる",
+          "example_ruby": "<ruby>来<rt>く</rt></ruby>る"
+        }
+      ]
+    },
+    {
+      "id": "R292",
+      "number": 292,
+      "kanji": "利",
+      "examples": [
+        {
+          "reading": "リ",
+          "example": "便利",
+          "example_reading": "べんり",
+          "example_ruby": "<ruby>便利<rt>べんり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R293",
+      "number": 293,
+      "kanji": "理",
+      "examples": [
+        {
+          "reading": "リ",
+          "example": "料理",
+          "example_reading": "りょうり",
+          "example_ruby": "<ruby>料理<rt>りょうり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R294",
+      "number": 294,
+      "kanji": "立",
+      "examples": [
+        {
+          "reading": "たつ",
+          "example": "立つ",
+          "example_reading": "たつ",
+          "example_ruby": "<ruby>立<rt>た</rt></ruby>つ"
+        },
+        {
+          "reading": "たてる",
+          "example": "立てる",
+          "example_reading": "たてる",
+          "example_ruby": "<ruby>立<rt>た</rt></ruby>てる"
+        }
+      ]
+    },
+    {
+      "id": "R295",
+      "number": 295,
+      "kanji": "旅",
+      "examples": [
+        {
+          "reading": "リョ",
+          "example": "旅行",
+          "example_reading": "りょこう",
+          "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R296",
+      "number": 296,
+      "kanji": "料",
+      "examples": [
+        {
+          "reading": "リョウ",
+          "example": "料理",
+          "example_reading": "りょうり",
+          "example_ruby": "<ruby>料理<rt>りょうり</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R297",
+      "number": 297,
+      "kanji": "力",
+      "examples": [
+        {
+          "reading": "ちから",
+          "example": "力",
+          "example_reading": "ちから",
+          "example_ruby": "<ruby>力<rt>ちから</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R298",
+      "number": 298,
+      "kanji": "林",
+      "examples": [
+        {
+          "reading": "はやし",
+          "example": "林",
+          "example_reading": "はやし",
+          "example_ruby": "<ruby>林<rt>はやし</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R299",
+      "number": 299,
+      "kanji": "六",
+      "examples": [
+        {
+          "reading": "ロク",
+          "example": "六",
+          "example_reading": "ろく",
+          "example_ruby": "<ruby>六<rt>ろく</rt></ruby>"
+        },
+        {
+          "reading": "むっつ",
+          "example": "六つ",
+          "example_reading": "むっつ",
+          "example_ruby": "<ruby>六<rt>むっ</rt></ruby>つ"
+        },
+        {
+          "reading": "むい",
+          "example": "六日",
+          "example_reading": "むいか",
+          "example_ruby": "<ruby>六日<rt>むいか</rt></ruby>"
+        }
+      ]
+    },
+    {
+      "id": "R300",
+      "number": 300,
+      "kanji": "話",
+      "examples": [
+        {
+          "reading": "ワ",
+          "example": "電話",
+          "example_reading": "でんわ",
+          "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>"
+        },
+        {
+          "reading": "はなす",
+          "example": "話す",
+          "example_reading": "はなす",
+          "example_ruby": "<ruby>話<rt>はな</rt></ruby>す"
+        },
+        {
+          "reading": "はなし",
+          "example": "話",
+          "example_reading": "はなし",
+          "example_ruby": "<ruby>話<rt>はなし</rt></ruby>"
+        }
+      ]
+    }
+  ]
+}

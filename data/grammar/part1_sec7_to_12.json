@@ -1,0 +1,2417 @@
+{
+  "metadata": {
+    "book_title": "<ruby>新完全<rt>しんかんぜん</rt></ruby>マスター<ruby>文法<rt>ぶんぽう</rt></ruby> <ruby>日本語能力試験<rt>にほんごのうりょくしけん</rt></ruby> N3",
+    "part_number": 1,
+    "part_name": "<ruby>実力養成編<rt>じつりょくようせいへん</rt></ruby> <ruby>第<rt>だい</rt></ruby>1<ruby>部<rt>ぶ</rt></ruby> <ruby>文<rt>ぶん</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>1",
+    "part_name_en": "Part 1: Sentence Grammar 1 (Meaning & Function)",
+    "sections_included": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "pages_covered": "p.36 - p.57 (Images 040-061)"
+  },
+  "sections": [
+    {
+      "section_number": 7,
+      "title": "<ruby>第<rt>だい</rt></ruby>7<ruby>課<rt>か</rt></ruby> 〜だそうだ",
+      "title_en": "Lesson 7: Hearsay",
+      "theme": "<ruby>伝聞<rt>でんぶん</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>",
+      "patterns": [
+        {
+          "pattern_number": 1,
+          "pattern_name": "〜ということだ・〜とのことだ",
+          "pattern_name_en": "I heard that / It is said that",
+          "meaning_ja": "〜だそうだ。ほかの人から聞いたことを言うときに使う。少し改まった言い方。",
+          "meaning_en": "I heard that... Used to report information heard from others. Somewhat formal expression.",
+          "connection_forms": [
+            "普通形 ＋ ということだ・とのことだ"
+          ],
+          "nuance_notes": "「〜によると・によれば」「〜の話では」などと一緒に使われることが多い。「とのことだ」は手紙やビジネス文書でよく使われる。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>市<rt>し</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせによれば、この<ruby>道路<rt>どうろ</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>から<ruby>工事<rt>こうじ</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まるということです。",
+              "english": "According to the city notice, construction on this road is said to start next week."
+            },
+            {
+              "japanese": "<ruby>店<rt>みせ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>では、この<ruby>地方<rt>ちほう</rt></ruby>の<ruby>米<rt>こめ</rt></ruby>はとてもおいしいということだ。",
+              "english": "According to what the shopkeeper said, the rice from this region is delicious."
+            },
+            {
+              "japanese": "さっき<ruby>川村<rt>かわむら</rt></ruby>さんから<ruby>電話<rt>でんわ</rt></ruby>がありました。<ruby>今日<rt>きょう</rt></ruby>は<ruby>社<rt>しゃ</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>れないとのことです。",
+              "english": "Kawamura called a moment ago. He said he won't be able to return to the office today."
+            },
+            {
+              "japanese": "メールによると、<ruby>林<rt>はやし</rt></ruby>さんは<ruby>来週<rt>らいしゅう</rt></ruby>はとても<ruby>忙<rt>いそが</rt></ruby>しいとのことです。",
+              "english": "According to the email, Hayashi said she will be very busy next week."
+            },
+            {
+              "japanese": "【<ruby>手紙<rt>てがみ</rt></ruby>】<ruby>新<rt>あたら</rt></ruby>しい<ruby>仕事<rt>しごと</rt></ruby>が<ruby>決<rt>き</rt></ruby>まったとのこと、おめでとうございます。",
+              "english": "[Letter] Congratulations on hearing that you've got a new job."
+            }
+          ]
+        },
+        {
+          "pattern_number": 2,
+          "pattern_name": "〜と言われている",
+          "pattern_name_en": "It is said that / People say that",
+          "meaning_ja": "世の中で多くの人がそのように言っている。",
+          "meaning_en": "It is generally said that... Used when conveying a commonly held opinion or general belief.",
+          "connection_forms": [
+            "普通形 ＋ と言われている"
+          ],
+          "nuance_notes": "特定の人ではなく、世間一般の人々がそう言っていることを表す。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>今年<rt>ことし</rt></ruby>は<ruby>黒<rt>くろ</rt></ruby>い<ruby>服<rt>ふく</rt></ruby>が<ruby>流行<rt>りゅうこう</rt></ruby>すると<ruby>言<rt>い</rt></ruby>われている。",
+              "english": "It is said that black clothes will be in fashion this year."
+            },
+            {
+              "japanese": "<ruby>納豆<rt>なっとう</rt></ruby>は<ruby>体<rt>からだ</rt></ruby>にいいと<ruby>言<rt>い</rt></ruby>われている。",
+              "english": "It is said that natto is good for health."
+            },
+            {
+              "japanese": "<ruby>今度<rt>こんど</rt></ruby>の<ruby>大会<rt>たいかい</rt></ruby>では<ruby>中川<rt>なかがわ</rt></ruby><ruby>選手<rt>せんしゅ</rt></ruby>が<ruby>優勝<rt>ゆうしょう</rt></ruby>するだろうと<ruby>言<rt>い</rt></ruby>われています。",
+              "english": "It is said that player Nakagawa will likely win the upcoming tournament."
+            }
+          ]
+        },
+        {
+          "pattern_number": 3,
+          "pattern_name": "〜とか",
+          "pattern_name_en": "I heard that... (rumor / casual)",
+          "meaning_ja": "〜という話を聞いた。不確かな伝聞を表す。",
+          "meaning_en": "I heard that... Used to casually pass on information or rumors that the speaker heard but is not completely sure of.",
+          "connection_forms": [
+            "普通形 ＋ とか"
+          ],
+          "nuance_notes": "間接的に聞いた噂や不確かな情報を伝える話し言葉。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>来月<rt>らいげつ</rt></ruby>また<ruby>出張<rt>しゅっちょう</rt></ruby>だとか。<ruby>今度<rt>こんど</rt></ruby>はどちらに<ruby>行<rt>い</rt></ruby>かれるんですか。",
+              "english": "I hear that you're going on another business trip next month. Where are you heading this time?"
+            },
+            {
+              "japanese": "お<ruby>宅<rt>たく</rt></ruby>ではいろいろな<ruby>動物<rt>どうぶつ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っているとか。にぎやかでしょうね。",
+              "english": "I heard you keep various animals at home. It must be lively."
+            },
+            {
+              "japanese": "あの<ruby>店<rt>みせ</rt></ruby>のパンはとてもおいしいとか。<ruby>今日<rt>きょう</rt></ruby>、<ruby>帰<rt>かえ</rt></ruby>りに<ruby>買<rt>か</rt></ruby>って<ruby>帰<rt>かえ</rt></ruby>ります。",
+              "english": "I heard that shop's bread is delicious. I'll buy some on my way home today."
+            }
+          ]
+        },
+        {
+          "pattern_number": 4,
+          "pattern_name": "〜って",
+          "pattern_name_en": "They say that / Casual hearsay or quote",
+          "meaning_ja": "〜と言っていた、〜そうだ。親しい人との会話で使う。",
+          "meaning_en": "They say that / Casual form of 〜そうだ or 〜と言っていた. Used in everyday conversational speech among close acquaintances.",
+          "connection_forms": [
+            "普通形 ＋ って"
+          ],
+          "nuance_notes": "「〜と言っていた」「〜そうだ」のくだけた口語表現。また「〜って」は「〜と」という引用にも使われる。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>小川<rt>おがわ</rt></ruby>さん、<ruby>今日<rt>きょう</rt></ruby>は<ruby>休<rt>やす</rt></ruby>むって<ruby>言<rt>い</rt></ruby>ってたよ。",
+              "english": "Ogawa said he's taking the day off today."
+            },
+            {
+              "japanese": "<ruby>佐藤<rt>さとう</rt></ruby>さんの<ruby>奥<rt>おく</rt></ruby>さんは<ruby>料理<rt>りょうり</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>だって。",
+              "english": "I heard Sato's wife is a cooking teacher."
+            },
+            {
+              "japanese": "<ruby>駅前<rt>えきまえ</rt></ruby>にタイ<ruby>料理<rt>りょうり</rt></ruby>のレストランができたんだって。<ruby>行<rt>い</rt></ruby>ってみようよ。",
+              "english": "I hear a Thai restaurant opened in front of the station. Let's go try it."
+            },
+            {
+              "japanese": "<ruby>山川<rt>やまかわ</rt></ruby><ruby>君<rt>くん</rt></ruby>、<ruby>先生<rt>せんせい</rt></ruby>が<ruby>教員室<rt>きょういんしつ</rt></ruby>まで<ruby>来<rt>き</rt></ruby>てくださいって。",
+              "english": "Yamakawa, the teacher said to come to the faculty room."
+            }
+          ]
+        },
+        {
+          "pattern_number": 5,
+          "pattern_name": "〜という",
+          "pattern_name_en": "It is said that / According to reports",
+          "meaning_ja": "〜だそうだ。本やニュースなど、文章でよく使われる硬い表現。",
+          "meaning_en": "It is said that... Written, formal expression commonly found in reports, historical descriptions, and news.",
+          "connection_forms": [
+            "普通形 ＋ という"
+          ],
+          "nuance_notes": "書き言葉で伝聞・伝承を表す改まった表現。「〜だそうだ」の書き言葉に相当する。",
+          "example_sentences": [
+            {
+              "japanese": "この<ruby>辺<rt>あた</rt></ruby>りは<ruby>昔<rt>むかし</rt></ruby>、<ruby>広<rt>ひろ</rt></ruby>い<ruby>野原<rt>のはら</rt></ruby>だったという。",
+              "english": "It is said that this area was a vast open field in the old days."
+            },
+            {
+              "japanese": "この<ruby>祭<rt>まつ</rt></ruby>りは<ruby>村<rt>むら</rt></ruby>で<ruby>古<rt>ふる</rt></ruby>くから<ruby>行<rt>おこな</rt></ruby>われてきたという。",
+              "english": "It is said that this festival has been held in the village since ancient times."
+            },
+            {
+              "japanese": "<ruby>豆腐<rt>とうふ</rt></ruby>は1300<ruby>年<rt>ねん</rt></ruby>ぐらい<ruby>前<rt>まえ</rt></ruby>に<ruby>中国<rt>ちゅうごく</rt></ruby>から<ruby>日本<rt>にほん</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>わったという。",
+              "english": "It is said that tofu was brought from China to Japan about 1,300 years ago."
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": "sec7_q1",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "今朝の新聞によると、昨夜東京で大きな地震が（　）。",
+          "options": [
+            "a あったということです",
+            "b あるということです",
+            "c あったことでした"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "新聞による過去の事実の伝聞なので「あったということです」が正しい。",
+          "explanation_en": "According to this morning's newspaper, an earthquake 'occurred' last night, so past tense + ということです is correct."
+        },
+        {
+          "question_id": "sec7_q2",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "先輩からのメールでは、来週の土曜日は都合が（　）とのことです。",
+          "options": [
+            "a 悪かった",
+            "b 悪い",
+            "c 悪いだろう"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "来週の土曜日の予定について「都合が悪いとのことです」と述べるのが適切。",
+          "explanation_en": "Reporting future availability: 都合が悪いとのことです is correct."
+        },
+        {
+          "question_id": "sec7_q3",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "納豆は健康に（　）と言われている。",
+          "options": [
+            "a いい",
+            "b よいこと",
+            "c よかった"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "一般的に体に良いとされているので、現在形の「いいと言われている」が適切。",
+          "explanation_en": "General statement of health benefit: いいと言われている."
+        },
+        {
+          "question_id": "sec7_q4",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "あの映画はとても（　）とか。ぜひ見に行きたいですね。",
+          "options": [
+            "a おもしろい",
+            "b おもしろかった",
+            "c おもしろいだろう"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "評判を聞いた伝聞表現で「おもしろいとか」が自然。",
+          "explanation_en": "Casual hearsay about movie's reputation: おもしろいとか."
+        },
+        {
+          "question_id": "sec7_q5",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "木村さん、明日の飲み会には（　）って。",
+          "options": [
+            "a 来られない",
+            "b 来られないだろう",
+            "c 来られなかった"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "明日の飲み会に来られないという伝聞の引用で「来られないって」が正しい。",
+          "explanation_en": "Informal hearsay about tomorrow's event: 来られないって."
+        },
+        {
+          "question_id": "sec7_q6",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "田中さんの話では、新しい店は来月オープンする（　）。",
+          "options": [
+            "a ということでした",
+            "b ということです",
+            "c とのことでした"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「〜の話では…ということです」という伝聞の定番表現。",
+          "explanation_en": "Hearsay reporting: ということです."
+        },
+        {
+          "question_id": "sec7_q7",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "緑茶にはビタミンCがたくさん含まれて（　）と言われている。",
+          "options": [
+            "a いる",
+            "b いた",
+            "c いそう"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "客観的な科学的事実・一般通念には現在形「いると言われている」を用いる。",
+          "explanation_en": "General knowledge: 含まれていると言われている."
+        },
+        {
+          "question_id": "sec7_q8",
+          "category": "section_7_practice",
+          "question_type": "multiple_choice",
+          "prompt": "このお寺は800年前に（　）という。",
+          "options": [
+            "a 建てられる",
+            "b 建てている",
+            "c 建てられた"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "800年前の過去の出来事なので、受身の過去形「建てられたという」が適切。",
+          "explanation_en": "Historical hearsay: 建てられたという."
+        }
+      ]
+    },
+    {
+      "section_number": 8,
+      "title": "<ruby>第<rt>だい</rt></ruby>8<ruby>課<rt>か</rt></ruby> <ruby>絶対<rt>ぜったい</rt></ruby>〜ない・<ruby>必<rt>かなら</rt></ruby>ず〜とは<ruby>言<rt>い</rt></ruby>えない",
+      "title_en": "Lesson 8: Absolute & Partial Negation",
+      "theme": "<ruby>否定<rt>ひてい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>",
+      "patterns": [
+        {
+          "pattern_number": 1,
+          "pattern_name": "〜はずがない・〜わけがない",
+          "pattern_name_en": "Cannot be / Impossible that",
+          "meaning_ja": "絶対に〜ない。話者が強い確信を持って否定する。",
+          "meaning_en": "It is impossible that... / There is no way that... Speaker expresses strong certainty in negating something.",
+          "connection_forms": [
+            "普通形（ナ形だ-な・名だ-の） ＋ はずがない・わけがない"
+          ],
+          "nuance_notes": "話者の確信に基づく強い否定表現。「わけがない」のほうが「道理としてあり得ない」というニュアンスが強い。",
+          "example_sentences": [
+            {
+              "japanese": "ちゃんと<ruby>鍵<rt>かぎ</rt></ruby>をかけたんだから、<ruby>泥棒<rt>どろぼう</rt></ruby>が<ruby>入<rt>はい</rt></ruby>れるはずがない。",
+              "english": "Since I locked it properly, there's no way a thief could get in."
+            },
+            {
+              "japanese": "あんなまじめな<ruby>人<rt>ひと</rt></ruby>が、<ruby>嘘<rt>うそ</rt></ruby>をつくわけがない。",
+              "english": "There is no way that such a serious person would tell a lie."
+            },
+            {
+              "japanese": "こんなに<ruby>簡単<rt>かんたん</rt></ruby>なテスト、<ruby>不合格<rt>ふごうかく</rt></ruby>になるはずがない。",
+              "english": "It's impossible to fail such an easy test."
+            }
+          ]
+        },
+        {
+          "pattern_number": 2,
+          "pattern_name": "〜とは限らない",
+          "pattern_name_en": "Not necessarily / Not always",
+          "meaning_ja": "いつも〜だとは言えない。例外もある（部分否定）。",
+          "meaning_en": "It does not necessarily mean that... / Not always. Expresses partial negation, acknowledging exceptions.",
+          "connection_forms": [
+            "普通形（ナ形(だ)・名(だ)） ＋ とは限らない"
+          ],
+          "nuance_notes": "「必ずしも」「いつも」などの副詞と一緒に使われることが多い。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>高<rt>たか</rt></ruby>いものが、<ruby>必<rt>かなら</rt></ruby>ずしもいいものだとは<ruby>限<rt>かぎ</rt></ruby>らない。",
+              "english": "Expensive things are not necessarily good things."
+            },
+            {
+              "japanese": "<ruby>日本人<rt>にほんじん</rt></ruby>だからといって、みんな<ruby>納豆<rt>なっとう</rt></ruby>が<ruby>好<rt>す</rt></ruby>きだとは<ruby>限<rt>かぎ</rt></ruby>らない。",
+              "english": "Just because someone is Japanese does not mean they necessarily like natto."
+            },
+            {
+              "japanese": "<ruby>有名<rt>ゆうめい</rt></ruby>な<ruby>大学<rt>だいがく</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>したからといって、<ruby>成功<rt>せいこう</rt></ruby>するとは<ruby>限<rt>かぎ</rt></ruby>らない。",
+              "english": "Graduating from a famous university does not guarantee success."
+            }
+          ]
+        },
+        {
+          "pattern_number": 3,
+          "pattern_name": "〜わけではない・〜というわけではない・〜のではない",
+          "pattern_name_en": "It doesn't mean that / It is not the case that",
+          "meaning_ja": "すべてが〜だというのではない。全面的に肯定するわけではない。",
+          "meaning_en": "It is not that... / It does not mean that... Partial negation softening an absolute statement.",
+          "connection_forms": [
+            "普通形（ナ形だ-な・名だ-の／な／である） ＋ わけではない",
+            "普通形（ナ形(だ)・名(だ)） ＋ というわけではない",
+            "普通形（ナ形だ-な・名だ-な） ＋ のではない"
+          ],
+          "nuance_notes": "相手の誤解を解いたり、完全な肯定を控えめに否定・弁解するときに用いる。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>甘<rt>あま</rt></ruby>いものが<ruby>嫌<rt>きら</rt></ruby>いなわけではないが、あまり<ruby>食<rt>た</rt></ruby>べない。",
+              "english": "It's not that I dislike sweets, but I don't eat them very often."
+            },
+            {
+              "japanese": "<ruby>彼<rt>かれ</rt></ruby>の<ruby>言<rt>い</rt></ruby>うことがすべて<ruby>正<rt>ただ</rt></ruby>しいというわけではない。",
+              "english": "It doesn't mean that everything he says is correct."
+            },
+            {
+              "japanese": "<ruby>行<rt>い</rt></ruby>きたくないのではない。<ruby>時間<rt>じかん</rt></ruby>がないのだ。",
+              "english": "It's not that I don't want to go. I just don't have the time."
+            }
+          ]
+        },
+        {
+          "pattern_number": 4,
+          "pattern_name": "〜ないことはない",
+          "pattern_name_en": "It's not that... not / Can if pushed",
+          "meaning_ja": "少しは〜だ。条件によっては〜できる（二重否定による消極的肯定）。",
+          "meaning_en": "It is not that... cannot / Could potentially... Double negation expressing reluctant or conditional affirmation.",
+          "connection_forms": [
+            "動ない形 ＋ ことはない",
+            "イ形いくない ＋ ことはない",
+            "ナ形でない ＋ ことはない"
+          ],
+          "nuance_notes": "「絶対に無理というわけではない」「やろうと思えばできる」という消極的な肯定を表す。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>食<rt>た</rt></ruby>べられないことはないが、あまりおいしくない。",
+              "english": "It's not that I can't eat it, but it isn't very tasty."
+            },
+            {
+              "japanese": "<ruby>走<rt>はし</rt></ruby>れば<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わないこともないが、<ruby>急<rt>いそ</rt></ruby>ごう。",
+              "english": "If we run, it's not impossible to make it in time, so let's hurry."
+            },
+            {
+              "japanese": "お<ruby>酒<rt>さけ</rt></ruby>は<ruby>飲<rt>の</rt></ruby>めないことはないが、<ruby>弱<rt>よわ</rt></ruby>いので<ruby>一杯<rt>いっぱい</rt></ruby>だけにする。",
+              "english": "It's not that I can't drink alcohol, but I have low tolerance so I'll stick to one glass."
+            }
+          ]
+        },
+        {
+          "pattern_number": 5,
+          "pattern_name": "〜ことは〜が、…",
+          "pattern_name_en": "It is true that... but...",
+          "meaning_ja": "たしかに〜だが、しかし…。",
+          "meaning_en": "It is indeed true that... but... Acknowledges a fact first, then adds a qualification or contrast.",
+          "connection_forms": [
+            "動・形・名の辞書形 ＋ ことは ＋ 同一の動・形・名 ＋ が／けれど"
+          ],
+          "nuance_notes": "同じ語を繰り返して「一応その事実は認めるが、十分ではない／問題がある」と続ける構文。",
+          "example_sentences": [
+            {
+              "japanese": "この<ruby>本<rt>ほん</rt></ruby>は<ruby>読<rt>よ</rt></ruby>んだことは<ruby>読<rt>よ</rt></ruby>んだが、あまりよく<ruby>覚<rt>おぼ</rt></ruby>えていない。",
+              "english": "I did read this book, but I don't remember it very well."
+            },
+            {
+              "japanese": "おいしいことはおいしいが、ちょっと<ruby>高<rt>たか</rt></ruby>すぎる。",
+              "english": "It is indeed delicious, but it's a bit too expensive."
+            },
+            {
+              "japanese": "パソコンを<ruby>使<rt>つか</rt></ruby>えることは<ruby>使<rt>つか</rt></ruby>えるが、メールとネットくらいしかできない。",
+              "english": "I can use a computer, but I can only do basic things like email and browsing."
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": "sec8_q1",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "あんなに一生懸命練習したのだから、負ける（　）。",
+          "options": [
+            "a はずがない",
+            "b はずだ",
+            "c わけだ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "根拠に基づく強い否定「負けるはずがない」が適切。",
+          "explanation_en": "Strong logical negation: 負けるはずがない."
+        },
+        {
+          "question_id": "sec8_q2",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "お金持ちが必ずしも幸せ（　）。",
+          "options": [
+            "a だ",
+            "b なはずだ",
+            "c だとは限らない"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "「必ずしも〜とは限らない」の部分否定表現。",
+          "explanation_en": "Partial negation paired with 必ずしも: だとは限らない."
+        },
+        {
+          "question_id": "sec8_q3",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "日本料理が好きではない（　）が、刺身は苦手だ。",
+          "options": [
+            "a わけではない",
+            "b はずではない",
+            "c のではない"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "部分否定「好きではないわけではない」が適切。",
+          "explanation_en": "Partial negation: わけではない."
+        },
+        {
+          "question_id": "sec8_q4",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "頼まれれば、手伝わない（　）が、できれば一人でやってほしい。",
+          "options": [
+            "a わけではない",
+            "b ことはない",
+            "c はずがない"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "消極的肯定「手伝わないことはない」（手伝えないこともない）の用法。",
+          "explanation_en": "Double negative showing reluctant willingness: ことはない."
+        },
+        {
+          "question_id": "sec8_q5",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "高いことは（　）が、とても便利な道具だ。",
+          "options": [
+            "a 高くない",
+            "b 高いだろう",
+            "c 高い"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "反復構文「高いことは高いが」が正しい。",
+          "explanation_en": "Repetition pattern: 高いことは高いが."
+        },
+        {
+          "question_id": "sec8_q6",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "あんなに親切な彼が、そんな意地悪をする（　）。",
+          "options": [
+            "a わけだ",
+            "b はずだ",
+            "c わけがない"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "「意地悪をするわけがない」という強い否定。",
+          "explanation_en": "Strong negation: わけがない."
+        },
+        {
+          "question_id": "sec8_q7",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "英語が話せるからといって、通訳ができる（　）。",
+          "options": [
+            "a とは限らない",
+            "b わけだ",
+            "c はずだ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「〜からといって…とは限らない」の呼応。",
+          "explanation_en": "Partial negation with からといって: とは限らない."
+        },
+        {
+          "question_id": "sec8_q8",
+          "category": "section_8_practice",
+          "question_type": "multiple_choice",
+          "prompt": "車を運転できない（　）が、あまり得意ではない。",
+          "options": [
+            "a わけだ",
+            "b はずだ",
+            "c ことはない"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "「運転できないことはない」という消極的肯定。",
+          "explanation_en": "Double negative: ことはない."
+        },
+        {
+          "question_id": "sec7_8_q1",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "天気予報によると、午後から雨が（　）。",
+          "options": [
+            "a 降るだろう",
+            "b 降るそうだ",
+            "c 降るとか"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "天気予報による確実な伝聞の結びには「降るそうだ」が適切。",
+          "explanation_en": "Weather forecast hearsay: 降るそうだ."
+        },
+        {
+          "question_id": "sec7_8_q2",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "彼女はフランスへ留学する（　）と言っていた。",
+          "options": [
+            "a 予定だ",
+            "b 予定な",
+            "c 予定の"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "普通形＋と言っていたなので「予定だ」が適切。",
+          "explanation_en": "Quotation connection: 予定だと言っていた."
+        },
+        {
+          "question_id": "sec7_8_q3",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "先生の話では、試験はそれほど（　）ということです。",
+          "options": [
+            "a 難しくない",
+            "b 難しいだろう",
+            "c 難しくなかった"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "試験の難易度についての伝聞で「難しくないということです」が自然。",
+          "explanation_en": "Hearsay: 難しくないということです."
+        },
+        {
+          "question_id": "sec7_8_q4",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "努力したからといって、必ずしも成功する（　）。",
+          "options": [
+            "a わけだ",
+            "b とは限らない",
+            "c はずがない"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「必ずしも〜とは限らない」の部分否定。",
+          "explanation_en": "Partial negation: とは限らない."
+        },
+        {
+          "question_id": "sec7_8_q5",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "あんなに練習したんだから、失敗する（　）。",
+          "options": [
+            "a はずだ",
+            "b わけだ",
+            "c はずがない"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "強い確信に基づく否定「失敗するはずがない」。",
+          "explanation_en": "Strong certainty negation: はずがない."
+        },
+        {
+          "question_id": "sec7_8_q6",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "辛いものが食べられない（　）が、あまり得意ではない。",
+          "options": [
+            "a ことはない",
+            "b わけだ",
+            "c はずだ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "消極的肯定「食べられないことはない」。",
+          "explanation_en": "Reluctant admission: 食べられないことはない."
+        },
+        {
+          "question_id": "sec7_8_q7",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "行くことは（　）が、あまり乗り気ではない。",
+          "options": [
+            "a 行った",
+            "b 行く",
+            "c 行かない"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "同一動詞の繰り返し「行くことは行くが」。",
+          "explanation_en": "Repetition pattern: 行くことは行くが."
+        },
+        {
+          "question_id": "sec7_8_q8",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "あの二人が結婚する（　）を聞いてびっくりした。",
+          "options": [
+            "a 噂",
+            "b という話",
+            "c とか"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "名詞修飾節としての「〜という話」。",
+          "explanation_en": "Noun phrase: という話."
+        },
+        {
+          "question_id": "sec7_8_q9",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "彼が犯人の（　）。その時間は私と一緒にいたのだから。",
+          "options": [
+            "a はずがない",
+            "b はずだ",
+            "c わけだ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "アリバイがあるため「犯人のはずがない」。",
+          "explanation_en": "Logical impossibility: はずがない."
+        },
+        {
+          "question_id": "sec7_8_q10",
+          "category": "section_7_8_combined",
+          "question_type": "multiple_choice",
+          "prompt": "高いものが（　）良いものだとは限らない。",
+          "options": [
+            "a 必ずしも",
+            "b ぜったい",
+            "c どうしても"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「〜とは限らない」と呼応する副詞は「必ずしも」。",
+          "explanation_en": "Paired adverb for partial negation: 必ずしも."
+        },
+        {
+          "question_id": "matome_1_8_q1",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "あのまじめな山田さんが、約束を破る（　）。",
+          "options": [
+            "1 はずだ",
+            "2 わけだ",
+            "3 つもりだ",
+            "4 わけがない"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "人柄に基づいた強い否定「破るわけがない」が正しい。",
+          "explanation_en": "Strong negation: わけがない."
+        },
+        {
+          "question_id": "matome_1_8_q2",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "勉強すれば合格できる（　）が、もっと努力が必要だ。",
+          "options": [
+            "1 わけではない",
+            "2 ことはない",
+            "3 はずがない",
+            "4 とは限らない"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "消極的肯定「合格できることはない（合格できないこともない）」文脈。",
+          "explanation_en": "Double negative / potential: ことはない."
+        },
+        {
+          "question_id": "matome_1_8_q3",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "天気予報によれば、明日は全国的に（　）ということです。",
+          "options": [
+            "1 晴れだ",
+            "2 晴れの",
+            "3 晴れ",
+            "4 晴れな"
+          ],
+          "correct_answer": "3",
+          "explanation_ja": "名詞＋ということです。名詞に直接「ということです」が接続する。",
+          "explanation_en": "Hearsay connection with noun: 晴れということです."
+        },
+        {
+          "question_id": "matome_1_8_q4",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "いくら安くても、必要のないものは（　）べきではない。",
+          "options": [
+            "1 買う",
+            "2 買う",
+            "3 買わない",
+            "4 買おう"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "動詞辞書形＋べきではない。「買うべきではない」が正しい。",
+          "explanation_en": "Connection to べきではない: 辞書形 + べきではない -> 買うべきではない."
+        },
+        {
+          "question_id": "matome_1_8_q5",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "便利である反面、使い方を誤ると（　）危険もある。",
+          "options": [
+            "1 便利な",
+            "2 便利だ",
+            "3 大きな",
+            "4 大きい"
+          ],
+          "correct_answer": "3",
+          "explanation_ja": "「〜反面、大きな危険もある」という対比文脈言及。",
+          "explanation_en": "Contrast clause: 大きな危険."
+        },
+        {
+          "question_id": "matome_1_8_q6",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "日本に来た（　）、ぜひ富士山に登ってみたい。",
+          "options": [
+            "1 からには",
+            "2 ためには",
+            "3 ように",
+            "4 のに"
+          ],
+          "correct_answer": "1",
+          "explanation_ja": "「〜からには」は強い決意・希望を表す接続。",
+          "explanation_en": "Since / Now that: からには."
+        },
+        {
+          "question_id": "matome_1_8_q7",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "熱が下がらないなら、病院へ（　）ほうがいい。",
+          "options": [
+            "1 行く",
+            "2 行かない",
+            "3 行った",
+            "4 行こう"
+          ],
+          "correct_answer": "3",
+          "explanation_ja": "助言の定番表現「〜たほうがいい」。「行ったほうがいい」が正しい。",
+          "explanation_en": "Advice: 〜たほうがいい -> 行ったほうがいい."
+        },
+        {
+          "question_id": "matome_1_8_q8",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "この薬を（　）うちに、痛みが治まってきた。",
+          "options": [
+            "1 飲んだ",
+            "2 飲んでいる",
+            "3 飲む",
+            "4 飲まない"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "進行中の状態「飲んでいるうちに」。",
+          "explanation_en": "While / during: 飲んでいるうちに."
+        },
+        {
+          "question_id": "matome_1_8_q9",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "彼が来ない（　）を先生に伝えておいた。",
+          "options": [
+            "1 わけ",
+            "2 はず",
+            "3 つもり",
+            "4 こと"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "事態の名詞化「来ないこと」。",
+          "explanation_en": "Nominalization: 来ないこと."
+        },
+        {
+          "question_id": "matome_1_8_q10",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "会議の（　）携帯電話の電源をお切りください。",
+          "options": [
+            "1 あいだ",
+            "2 あいだは",
+            "3 うちに",
+            "4 とき"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "継続期間中の規則「会議の間は」。",
+          "explanation_en": "During the continuous period: 間は."
+        },
+        {
+          "question_id": "matome_1_8_q11",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "雨が（　）うちに、洗濯物を取り込みましょう。",
+          "options": [
+            "1 降らない",
+            "2 降る",
+            "3 降った",
+            "4 降っている"
+          ],
+          "correct_answer": "1",
+          "explanation_ja": "状態が変化する前に「降らないうちに」。",
+          "explanation_en": "Before condition changes: 降らないうちに."
+        },
+        {
+          "question_id": "matome_1_8_q12",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "彼は忙しいと言っていたが、来られない（　）。",
+          "options": [
+            "1 はずだ",
+            "2 わけだ",
+            "3 つもりだ",
+            "4 わけではない"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "部分否定「来られないわけではない」。",
+          "explanation_en": "Partial negation: 来られないわけではない."
+        },
+        {
+          "question_id": "matome_1_8_q13",
+          "category": "review_test_1_to_8",
+          "question_type": "multiple_choice",
+          "prompt": "新しい技術の（　）生活が便利になった。",
+          "options": [
+            "1 おかげで",
+            "2 せいで",
+            "3 ために",
+            "4 から"
+          ],
+          "correct_answer": "1",
+          "explanation_ja": "良い結果の理由を表す「おかげで」。",
+          "explanation_en": "Thanks to (positive reason): おかげで."
+        }
+      ]
+    },
+    {
+      "section_number": 9,
+      "title": "<ruby>第<rt>だい</rt></ruby>9<ruby>課<rt>か</rt></ruby> 〜と<ruby>望<rt>のぞ</rt></ruby>む",
+      "title_en": "Lesson 9: Desires & Wishes",
+      "theme": "<ruby>希望<rt>きぼう</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>",
+      "patterns": [
+        {
+          "pattern_number": 1,
+          "pattern_name": "〜てもらいたい・〜ていただきたい・〜てほしい",
+          "pattern_name_en": "Want someone to do something",
+          "meaning_ja": "相手にその行為をしてほしいという希望を表す。「〜ていただきたい」は敬語表現。",
+          "meaning_en": "I want (someone) to do... / Would like (someone) to do... Expresses speaker's wish for another person to perform an action. 〜ていただきたい is polite/respectful.",
+          "connection_forms": [
+            "動て形 / ないで ＋ もらいたい・いただきたい・ほしい"
+          ],
+          "nuance_notes": "話者が他者に対して行動を期待・希望するときに用いる。目上の人に対して直接「〜てほしい」と言うのは失礼にあたる。",
+          "example_sentences": [
+            {
+              "japanese": "この<ruby>仕事<rt>しごと</rt></ruby>はだれにも<ruby>手伝<rt>てつだ</rt></ruby>ってもらいたくない。",
+              "english": "I don't want anyone to help me with this job."
+            },
+            {
+              "japanese": "これからは<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で<ruby>生活<rt>せいかつ</rt></ruby>していってほしい。",
+              "english": "From now on, I want you to make a living on your own strength."
+            },
+            {
+              "japanese": "<ruby>娘<rt>むすめ</rt></ruby>には、あまり<ruby>遠<rt>とお</rt></ruby>くの<ruby>町<rt>まち</rt></ruby>には<ruby>嫁<rt>よめ</rt></ruby>に<ruby>行<rt>い</rt></ruby>かないでほしい。",
+              "english": "I want my daughter not to marry someone living in a town far away."
+            },
+            {
+              "japanese": "<ruby>国<rt>くに</rt></ruby>の<ruby>両親<rt>りょうしん</rt></ruby>に、わたしの<ruby>活躍<rt>かつやく</rt></ruby>を<ruby>見<rt>み</rt></ruby>ていただきたい。",
+              "english": "I would like my parents back home to see my success."
+            },
+            {
+              "japanese": "このような<ruby>犯罪<rt>はんざい</rt></ruby>は<ruby>二度<rt>にど</rt></ruby>と<ruby>起<rt>お</rt></ruby>こってほしくない。",
+              "english": "I don't want crimes like this ever to happen again."
+            }
+          ]
+        },
+        {
+          "pattern_number": 2,
+          "pattern_name": "〜(さ)せてもらいたい・〜(さ)せていただきたい・〜(さ)せてほしい",
+          "pattern_name_en": "Let me do / I would like permission to do",
+          "meaning_ja": "自分がある行為をすることを許可してほしい、させてもらいたいという希望を表す。",
+          "meaning_en": "Please allow me to... / I would like to be permitted to do... Expresses speaker's wish for permission to do something.",
+          "connection_forms": [
+            "動使役て形 ＋ もらいたい・いただきたい・ほしい"
+          ],
+          "nuance_notes": "使役形（〜せる／〜させる）に「てほしい／てもらいたい／ていただきたい」を接続して、相手の許可や容認を求める。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>店員<rt>てんいん</rt></ruby>「<ruby>少<rt>すこ</rt></ruby>し<ruby>考<rt>かんが</rt></ruby>えさせてほしいんですが。」",
+              "english": "Clerk: 'Could you please let me think for a moment?'"
+            },
+            {
+              "japanese": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>体調<rt>たいちょう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いので、<ruby>早退<rt>そうたい</rt></ruby>させていただきたいのですが。",
+              "english": "Since I'm not feeling well today, I would like permission to leave early."
+            },
+            {
+              "japanese": "この<ruby>仕事<rt>しごと</rt></ruby>は、ぜひわたしにやらせてください。",
+              "english": "Please let me do this job by all means."
+            },
+            {
+              "japanese": "<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いてもらいたい。<ruby>少<rt>すこ</rt></ruby>し<ruby>時間<rt>じかん</rt></ruby>をくれないか。",
+              "english": "I want you to hear me out. Could you give me some time?"
+            }
+          ]
+        },
+        {
+          "pattern_number": 3,
+          "pattern_name": "〜といい・〜ばいい・〜たらいい",
+          "pattern_name_en": "I hope that... / It would be nice if... / You should...",
+          "meaning_ja": "A: （自分ではどうにもならないことについて）そうなることを願う。B: 相手にある行為を勧める・促す。",
+          "meaning_en": "A: I hope that / Wish that (for circumstances beyond one's control). B: It would be good to / You should (giving advice or encouragement).",
+          "connection_forms": [
+            "動辞書形 / ない形 ＋ といい・ばいい・たらいい",
+            "イ形い / ない ＋ といい・ばいい・たらいい",
+            "ナ形だ / 名だ ＋ といい・ならいい・たらいい"
+          ],
+          "nuance_notes": "A用法は話者の願望・祈り（「〜といいな」など）。B用法は「〜すればいい」という助言・解決策の提示。",
+          "example_sentences": [
+            {
+              "japanese": "あしたは<ruby>晴<rt>は</rt></ruby>れるといいね。",
+              "english": "I hope it will be sunny tomorrow."
+            },
+            {
+              "japanese": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>できればいいのだが。",
+              "english": "I hope I can pass the exam."
+            },
+            {
+              "japanese": "<ruby>早<rt>はや</rt></ruby>く<ruby>風邪<rt>かぜ</rt></ruby>が<ruby>治<rt>なお</rt></ruby>ったらいいですね。",
+              "english": "I hope your cold gets better soon."
+            },
+            {
+              "japanese": "<ruby>疲<rt>つか</rt></ruby>れているなら、<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>るといいよ。",
+              "english": "If you are tired, you should go to sleep early."
+            },
+            {
+              "japanese": "わからないときは、<ruby>先生<rt>せんせい</rt></ruby>に<ruby>聞<rt>き</rt></ruby>けばいい。",
+              "english": "When you don't understand, you should just ask the teacher."
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": "sec9_q1",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "ずっと（　）所に父が連れていってくれた。とても楽しかった。",
+          "options": [
+            "a 行きたかった",
+            "b 行ってほしかった",
+            "c 行ってもらいたかった"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "自分自身の願望「行きたかった所」が正しい。",
+          "explanation_en": "Speaker's own past wish: 行きたかった."
+        },
+        {
+          "question_id": "sec9_q2",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "だれかわからないけど、道にごみを（　）もらいたいなあ。",
+          "options": [
+            "a 捨てられて",
+            "b 捨てないで",
+            "c 捨てられないで"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "他者に対してゴミを捨てないでほしいので「捨てないでもらいたい」が正しい。",
+          "explanation_en": "Asking others not to litter: 捨てないでもらいたい."
+        },
+        {
+          "question_id": "sec9_q3",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "卒業式では写真を撮ったんでしょう。ぜひ（　）ほしいです。",
+          "options": [
+            "a 見て",
+            "b 見せて",
+            "c 見られて"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "相手に見せてほしいので「見せてほしい」が適切。",
+          "explanation_en": "Asking someone to show: 見せてほしい."
+        },
+        {
+          "question_id": "sec9_q4",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "今日はおなかが痛いので、アルバイトを（　）いただきたいのですが。",
+          "options": [
+            "a 休んで",
+            "b 休まれて",
+            "c 休ませて"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "自分が休む許可を求めるので使役て形「休ませていただきたい」が正しい。",
+          "explanation_en": "Asking permission to take leave: 休ませていただきたい."
+        },
+        {
+          "question_id": "sec9_q5",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "説明がよくわかりませんでした。もう一度（　）ほしいのですが。",
+          "options": [
+            "a 教えて",
+            "b 教えさせて",
+            "c 教わって"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "相手に教えてほしいので「教えてほしい」が正しい。",
+          "explanation_en": "Asking someone to explain: 教えてほしい."
+        },
+        {
+          "question_id": "sec9_q6",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "あのう、お客様、店内のガラス製品に（　）いただきたいのですが……。",
+          "options": [
+            "a 触って",
+            "b 触らせて",
+            "c 触らないで"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "客に対して触らないよう丁重にお願いするので「触らないでいただきたい」が正しい。",
+          "explanation_en": "Politely asking customer not to touch: 触らないでいただきたい."
+        },
+        {
+          "question_id": "sec9_q7",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "来週からご旅行ですか。（　）いいですね。",
+          "options": [
+            "a 天気がいいと",
+            "b 天気がいいなら",
+            "c 天気がいいのは"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "天候への願望を表す「天気がいいといいですね」が正しい。",
+          "explanation_en": "Wishing good weather: 天気がいいといいですね."
+        },
+        {
+          "question_id": "sec9_q8",
+          "category": "section_9_practice",
+          "question_type": "multiple_choice",
+          "prompt": "おめでとうございます。（　）よかったですね。",
+          "options": [
+            "a 合格できると",
+            "b 合格できて",
+            "c 合格できれば"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "すでに合格した過去の事実に対して「合格できてよかったですね」と祝う。",
+          "explanation_en": "Congratulating on achieved result: 合格できてよかったですね."
+        }
+      ]
+    },
+    {
+      "section_number": 10,
+      "title": "<ruby>第<rt>だい</rt></ruby>10<ruby>課<rt>か</rt></ruby> 〜したほうがいい・〜なさい",
+      "title_en": "Lesson 10: Suggestions, Advice & Commands",
+      "theme": "<ruby>勧誘<rt>かんゆう</rt></ruby>・<ruby>助言<rt>じょげん</rt></ruby>・<ruby>命令<rt>めいれい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>",
+      "patterns": [
+        {
+          "pattern_number": 1,
+          "pattern_name": "命令（しろ）/ 禁止（〜な）",
+          "pattern_name_en": "Imperative (command) / Prohibitive (do not)",
+          "meaning_ja": "命令形：強く指示・命令する。禁止形（動辞書形＋な）：強く禁止する。",
+          "meaning_en": "Imperative (しろ): strongly commands an action. Prohibitive (〜な): strongly forbids an action.",
+          "connection_forms": [
+            "動詞Ⅰ：動（え段）",
+            "動詞Ⅱ：動（ろ）",
+            "動詞Ⅲ：する→しろ、来る→来い（例外：くれる→くれ）",
+            "禁止：動辞書形 ＋ な"
+          ],
+          "nuance_notes": "日常会話では目上の人には使えない。標識・立て札・緊急時・男性同士の親しい会話・間接引用（〜と言われた）などで用いられる。",
+          "example_sentences": [
+            {
+              "japanese": "【<ruby>試合<rt>しあい</rt></ruby>で】<ruby>監督<rt>かんとく</rt></ruby>「<ruby>走<rt>はし</rt></ruby>れ、<ruby>走<rt>はし</rt></ruby>れ！」",
+              "english": "[At a match] Coach: 'Run, run!'"
+            },
+            {
+              "japanese": "<ruby>犬<rt>いぬ</rt></ruby>に「<ruby>降<rt>お</rt></ruby>りろ。」と<ruby>命令<rt>めいれい</rt></ruby>した。<ruby>犬<rt>いぬ</rt></ruby>は<ruby>命令<rt>めいれい</rt></ruby>に<ruby>従<rt>したが</rt></ruby>った。",
+              "english": "I commanded the dog, 'Get down.' The dog obeyed the command."
+            },
+            {
+              "japanese": "<ruby>赤信号<rt>あかしんごう</rt></ruby>は<ruby>止<rt>と</rt></ruby>まれという<ruby>意味<rt>いみ</rt></ruby>です。",
+              "english": "A red light means 'Stop'."
+            },
+            {
+              "japanese": "<ruby>引<rt>ひ</rt></ruby>っ<ruby>越<rt>こ</rt></ruby>しを<ruby>手伝<rt>てつだ</rt></ruby>ってくれと<ruby>友<rt>とも</rt></ruby>だちに<ruby>頼<rt>たの</rt></ruby>んでみよう。",
+              "english": "Let's ask a friend to please help with the move."
+            },
+            {
+              "japanese": "<ruby>立<rt>た</rt></ruby>て<ruby>札<rt>ふだ</rt></ruby>に「スピードを<ruby>出<rt>だ</rt></ruby>すな！」と<ruby>書<rt>か</rt></ruby>いてある。",
+              "english": "The signboard says, 'Do not speed!'"
+            },
+            {
+              "japanese": "<ruby>父<rt>ちち</rt></ruby>は<ruby>医者<rt>いしゃ</rt></ruby>にお<ruby>酒<rt>さけ</rt></ruby>を<ruby>飲<rt>の</rt></ruby>むなと<ruby>言<rt>い</rt></ruby>われている。",
+              "english": "My father was told by his doctor not to drink alcohol."
+            }
+          ]
+        },
+        {
+          "pattern_number": 2,
+          "pattern_name": "〜こと",
+          "pattern_name_en": "Must do / Must not do (written rules / instructions)",
+          "meaning_ja": "規則・指示・注意事項などを文書や掲示で伝えるときに使う（〜しなさい／〜してはいけない）。",
+          "meaning_en": "Must / Do not... Used in written notices, rules, and formal instructions to command or forbid actions.",
+          "connection_forms": [
+            "動辞書形 / ない形 ＋ こと"
+          ],
+          "nuance_notes": "張り紙・規則書・試験の指示文などでよく使われる書き言葉の命令表現。",
+          "example_sentences": [
+            {
+              "japanese": "【<ruby>学校<rt>がっこう</rt></ruby>で】<ruby>先生<rt>せんせい</rt></ruby>「レポートは<ruby>来週<rt>らいしゅう</rt></ruby><ruby>月曜日<rt>げつようび</rt></ruby>に<ruby>必<rt>かなら</rt></ruby>ず<ruby>出<rt>だ</rt></ruby>すこと。<ruby>遅<rt>おく</rt></ruby>れないこと。」",
+              "english": "[At school] Teacher: 'Make sure to submit your reports next Monday without fail. Do not be late.'"
+            },
+            {
+              "japanese": "<ruby>申込書<rt>もうしこみしょ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く<ruby>前<rt>まえ</rt></ruby>に<ruby>注意書<rt>ちゅういが</rt></ruby>きをよく<ruby>読<rt>よ</rt></ruby>むこと。",
+              "english": "Be sure to read the instructions carefully before filling out the application form."
+            },
+            {
+              "japanese": "【<ruby>立<rt>た</rt></ruby>て<ruby>札<rt>ふだ</rt></ruby>】<ruby>危<rt>あぶ</rt></ruby>ないからこの<ruby>川<rt>かわ</rt></ruby>で<ruby>泳<rt>およ</rt></ruby>がないこと。",
+              "english": "[Signboard] Dangerous: Do not swim in this river."
+            }
+          ]
+        },
+        {
+          "pattern_number": 3,
+          "pattern_name": "〜べきだ・〜べき／〜べきではない",
+          "pattern_name_en": "Should / Ought to / Must not",
+          "meaning_ja": "〜するのが当然だ・〜したほうがいい／〜してはいけない。話者の主張を言うときに使う。過去形は反省や後悔を表す。",
+          "meaning_en": "It is a matter of course to / Should / Should not. Reflects the speaker's judgment or strong opinion. When used in past tense (〜べきだった), expresses regret.",
+          "connection_forms": [
+            "動辞書形 ＋ べきだ・べきではない  ＊例外：する→するべきだ・すべきだ",
+            "動辞書形 ＋ べき・べきではない ＋ 名"
+          ],
+          "nuance_notes": "道徳・常識・社会的義務から見て当然そうすべきだと話者が主張する表現。目上の人に対する直接の指示には使わない。",
+          "example_sentences": [
+            {
+              "japanese": "これは<ruby>大事<rt>だいじ</rt></ruby>なことですから、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>ってから<ruby>決<rt>き</rt></ruby>めるべきだと<ruby>思<rt>おも</rt></ruby>いますよ。",
+              "english": "Since this is an important matter, I believe we should decide after discussing it a bit more."
+            },
+            {
+              "japanese": "<ruby>仕事<rt>しごと</rt></ruby>はたくさんあるが、まず、<ruby>今日中<rt>きょうじゅう</rt></ruby>にやるべきことから<ruby>始<rt>はじ</rt></ruby>めよう。",
+              "english": "There is a lot of work, but let's start with the things that should be done today."
+            },
+            {
+              "japanese": "せっかく<ruby>入<rt>はい</rt></ruby>った<ruby>会社<rt>かいしゃ</rt></ruby>なのだから、<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>辞<rt>や</rt></ruby>めるべきではない。",
+              "english": "Since it's a company you went through great efforts to enter, you shouldn't quit so easily."
+            },
+            {
+              "japanese": "<ruby>子<rt>こ</rt></ruby>どもは<ruby>夜遅<rt>よるおそ</rt></ruby>くまで<ruby>外<rt>そと</rt></ruby>にいるべきではない。",
+              "english": "Children should not stay outside late at night."
+            },
+            {
+              "japanese": "あしたまでのレポートがまだ<ruby>書<rt>か</rt></ruby>き<ruby>終<rt>お</rt></ruby>わらない。もっと<ruby>早<rt>はや</rt></ruby>くから<ruby>始<rt>はじ</rt></ruby>めるべきだった。",
+              "english": "The report due tomorrow isn't finished yet. I should have started earlier."
+            }
+          ]
+        },
+        {
+          "pattern_number": 4,
+          "pattern_name": "〜たらどうか",
+          "pattern_name_en": "Why don't you...? / How about...?",
+          "meaning_ja": "〜するのがいいですよ。助言や忠告の気持ちで相手にある行為を軽く勧めるときに使う。非難の気持ちを表すこともある。",
+          "meaning_en": "Why don't you...? / How about doing...? Used to give mild advice or suggestions. Can also imply gentle criticism for not doing something.",
+          "connection_forms": [
+            "動たら ＋ どうか"
+          ],
+          "nuance_notes": "目上の人に対して直接使うと失礼になる場合がある。親しい相手への提案・アドバイスに適する。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>体<rt>からだ</rt></ruby>のことが<ruby>心配<rt>しんぱい</rt></ruby>なら、<ruby>一度<rt>いちど</rt></ruby><ruby>健康診断<rt>けんこうしんだん</rt></ruby>を<ruby>受<rt>う</rt></ruby>けたらどうでしょうか。",
+              "english": "If you are worried about your health, why don't you get a medical checkup once?"
+            },
+            {
+              "japanese": "<ruby>疲<rt>つか</rt></ruby>れているみたいですね。<ruby>少<rt>すこ</rt></ruby>し<ruby>休<rt>やす</rt></ruby>んだらどうですか。",
+              "english": "You look tired. Why don't you rest a bit?"
+            },
+            {
+              "japanese": "<ruby>迷惑<rt>めいわく</rt></ruby>メールが<ruby>多<rt>おお</rt></ruby>いの？じゃ、アドレスを<ruby>変<rt>か</rt></ruby>えたらどう？",
+              "english": "Getting a lot of spam emails? Then why don't you change your email address?"
+            },
+            {
+              "japanese": "<ruby>悪<rt>わる</rt></ruby>いのはそっちですよ。<ruby>一言<rt>ひとこと</rt></ruby><ruby>謝<rt>あやま</rt></ruby>ったらどうですか。",
+              "english": "You're the one in the wrong. Why don't you say a word of apology?"
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": "sec10_q1",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "先生が「話を（　）。」と言っているのに、まだみんなしゃべっています。",
+          "options": [
+            "a やめ",
+            "b やめれ",
+            "c やめろ"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "グループⅡ動詞「やめる」の命令形は「やめろ」。",
+          "explanation_en": "Group 2 verb imperative form: やめろ."
+        },
+        {
+          "question_id": "sec10_q2",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "今すぐ金を（　）と言われても困ります。来週必ず払いますから、待ってください。",
+          "options": [
+            "a 払う",
+            "b 払え",
+            "c 払える"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "グループⅠ動詞「払う」の命令形「払え」。",
+          "explanation_en": "Group 1 verb imperative form: 払え."
+        },
+        {
+          "question_id": "sec10_q3",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "A「そんなに笑わないでくださいよ。」\nB「（　）と言われても、おかしくてどうしても笑ってしまいますよ。」",
+          "options": [
+            "a 笑って",
+            "b 笑え",
+            "c 笑うな"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "「笑わないで」を命令形引用で受ける禁止形「笑うな」。",
+          "explanation_en": "Prohibitive quotation form: 笑うな."
+        },
+        {
+          "question_id": "sec10_q4",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "【張り紙】部屋を出るときは電気を（　）こと。",
+          "options": [
+            "a 消す",
+            "b 消している",
+            "c 消した"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "掲示による指示・規則には辞書形＋こと。「消すこと」。",
+          "explanation_en": "Written rule/instruction: 消すこと."
+        },
+        {
+          "question_id": "sec10_q5",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "【立て札】芝生に（　）。",
+          "options": [
+            "a 入らないこと",
+            "b 入れないこと",
+            "c 入らないことだ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "禁止の規則掲示「入らないこと」。",
+          "explanation_en": "Prohibition notice: 入らないこと."
+        },
+        {
+          "question_id": "sec10_q6",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "森田君、いつも遅いね。新入社員はもっと早く会社に（　）だよ。",
+          "options": [
+            "a 来べき",
+            "b 来るべき",
+            "c 来べき"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "動詞「来る」は「来るべき（くるべき）」と接続する。",
+          "explanation_en": "Connection with べき: 来るべき."
+        },
+        {
+          "question_id": "sec10_q7",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "そんなにたくさんのお金を友だちから（　）。友だちも困るだろう。",
+          "options": [
+            "a 借りるべきではない",
+            "b 借りるべきだ",
+            "c 借りないべきだ"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "否定の義務・助言は「借りるべきではない」。",
+          "explanation_en": "Negative obligation: 借りるべきではない."
+        },
+        {
+          "question_id": "sec10_q8",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "日本の法律では、二十歳になっていない人はお酒を（　）。",
+          "options": [
+            "a 飲めません",
+            "b 飲むべきではありません",
+            "c 飲むことではありません"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "法律上の禁止・不可を表す「飲めません（飲んではいけません）」。",
+          "explanation_en": "Legal incapacity/rule: 飲めません."
+        },
+        {
+          "question_id": "sec10_q9",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "机の上が暗すぎませんか。もう少し（　）どうですか。",
+          "options": [
+            "a 明るくなったら",
+            "b 明るくしたら",
+            "c 明るかったら"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "意図的な行為の提案なので「明るくしたらどうですか」。",
+          "explanation_en": "Suggestion: 明るくしたらどうですか."
+        },
+        {
+          "question_id": "sec10_q10",
+          "category": "section_10_practice",
+          "question_type": "multiple_choice",
+          "prompt": "ちょっと調べたいことがあるんですが、このパソコンを（　）。",
+          "options": [
+            "a 使ったらどうですか",
+            "b 使うのがどうですか",
+            "c 使ってもいいですか"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "自分がパソコンを使う許可を求めているので「使ってもいいですか」が適切。",
+          "explanation_en": "Asking permission: 使ってもいいですか."
+        },
+        {
+          "question_id": "sec9_10_q1",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "わあ。ゆう子さん、着物が似合いますね。国の家族に見せたいので、写真を（　）。",
+          "options": [
+            "a 撮ってもいいですか",
+            "b 撮ったらどうですか",
+            "c 撮ってほしいのですが"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "写真を撮影する許可を求める「撮ってもいいですか」。",
+          "explanation_en": "Asking permission to take photo: 撮ってもいいですか."
+        },
+        {
+          "question_id": "sec9_10_q2",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "来月わたしたちのダンスの発表会があります。ぜひ皆さんで見に（　）です。",
+          "options": [
+            "a 来たい",
+            "b 来てほしい",
+            "c 来させてほしい"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "相手に見に来てもらいたい希望「見に来てほしい」。",
+          "explanation_en": "Wishing for audience to attend: 来てほしい."
+        },
+        {
+          "question_id": "sec9_10_q3",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "じょうだんを（　）です。わたしはまじめに話しているんです。",
+          "options": [
+            "a 言わないといい",
+            "b 言わないでもらいたい",
+            "c 言わせないでほしい"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "相手に対する要求「言わないでもらいたい」。",
+          "explanation_en": "Requesting not to joke: 言わないでもらいたい."
+        },
+        {
+          "question_id": "sec9_10_q4",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "すみません。このピアノ練習室をわたしにも（　）のですが。",
+          "options": [
+            "a 使ってもらいたい",
+            "b 使われるといい",
+            "c 使わせてほしい"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "自分が使用する許可の希望「使わせてほしい」。",
+          "explanation_en": "Asking permission for oneself: 使わせてほしい."
+        },
+        {
+          "question_id": "sec9_10_q5",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "どの学校を選ぶか、もっとよく考えて（　）と今では残念に思っている。",
+          "options": [
+            "a 決めるべきだった",
+            "b 決めるといい",
+            "c 決めたらどうか"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "過去の行動に対する後悔・反省「決めるべきだった」。",
+          "explanation_en": "Past regret: 決めるべきだった."
+        },
+        {
+          "question_id": "sec9_10_q6",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "店長、わたしたちにもう少し休みを（　）。働きすぎです。",
+          "options": [
+            "a とったらどうですか",
+            "b とればいいです",
+            "c とらせていただきたいです"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "休暇を許可してもらう謙譲の希望「とらせていただきたいです」。",
+          "explanation_en": "Polite humble request: とらせていただきたいです."
+        },
+        {
+          "question_id": "sec9_10_q7",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "彼女にあんなことを言う（　）。きっと彼女は怒っているだろう。",
+          "options": [
+            "a べきではなかった",
+            "b ことではなかった",
+            "c わけではなかった"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "言ったことに対する後悔・反省「言うべきではなかった」。",
+          "explanation_en": "Past regret for saying something hurtful: べきではなかった."
+        },
+        {
+          "question_id": "sec9_10_q8",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "入国するときも出国するときも、空港でパスポートを（　）。",
+          "options": [
+            "a 見せるべきです",
+            "b 見せるといいです",
+            "c 見せなければなりません"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "義務・法的規則「見せなければなりません」。",
+          "explanation_en": "Legal obligation: 見せなければなりません."
+        },
+        {
+          "question_id": "sec9_10_q9",
+          "category": "section_9_10_combined",
+          "question_type": "multiple_choice",
+          "prompt": "9時半か。弟の試験は9時からだと言っていたから、もう始まっている（　）。",
+          "options": [
+            "a といい",
+            "b はずだ",
+            "c べきだ"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "確実な推測・論理的帰結「始まっているはずだ」。",
+          "explanation_en": "Logical expectation: はずだ."
+        }
+      ]
+    },
+    {
+      "section_number": 11,
+      "title": "<ruby>第<rt>だい</rt></ruby>11<ruby>課<rt>か</rt></ruby> 〜（よ）うと<ruby>思<rt>おも</rt></ruby>う",
+      "title_en": "Lesson 11: Intentions & Decisions",
+      "theme": "<ruby>意図<rt>いと</rt></ruby>・<ruby>決意<rt>けつい</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>",
+      "patterns": [
+        {
+          "pattern_number": 1,
+          "pattern_name": "〜ことにする・〜ことにしている",
+          "pattern_name_en": "Decide to do / Make it a rule to do",
+          "meaning_ja": "〜と決める。「〜ことにした」はその場の決心や決定、「〜ことにしている」は決心した習慣を続けていることを表す。",
+          "meaning_en": "I have decided to do... / Make it a personal rule to do... 〜ことにした expresses a past decision or on-the-spot resolve; 〜ことにしている expresses a sustained personal habit or principle.",
+          "connection_forms": [
+            "動辞書形 / ている / ない形 ＋ ことにする",
+            "動辞書形 / ない形 ＋ ことにしている"
+          ],
+          "nuance_notes": "話者の主体的な意志による決定を表す。習慣として続けている自己のルールには「〜ことにしている」を使う。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>冷蔵庫<rt>れいぞうこ</rt></ruby>がこわれたので、<ruby>新<rt>あたら</rt></ruby>しいのを<ruby>買<rt>か</rt></ruby>うことにした。",
+              "english": "Since the refrigerator broke, I decided to buy a new one."
+            },
+            {
+              "japanese": "<ruby>口<rt>くち</rt></ruby>を<ruby>出<rt>だ</rt></ruby>すと<ruby>怒<rt>おこ</rt></ruby>られるので、<ruby>何<rt>なに</rt></ruby>も<ruby>言<rt>い</rt></ruby>わないで<ruby>黙<rt>だま</rt></ruby>っていることにした。",
+              "english": "Since interfering gets me scolded, I decided to keep quiet and say nothing."
+            },
+            {
+              "japanese": "<ruby>娘<rt>むすめ</rt></ruby>「お<ruby>父<rt>とう</rt></ruby>さん、<ruby>今度<rt>こんど</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みにディズニーランドに<ruby>連<rt>つ</rt></ruby>れていってよ。」\n<ruby>父<rt>ちち</rt></ruby>「よし、わかった。じゃ、<ruby>友<rt>とも</rt></ruby>だちとゴルフに<ruby>行<rt>い</rt></ruby>く<ruby>約束<rt>やくそく</rt></ruby>は<ruby>断<rt>ことわ</rt></ruby>ることにするよ。」",
+              "english": "Daughter: 'Dad, take me to Disneyland next holiday!' Father: 'All right, then I'll decide to cancel my golf plans with my friend.'"
+            },
+            {
+              "japanese": "<ruby>部長<rt>ぶちょう</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>はいつもとてもきびしいが、わたしは<ruby>気<rt>き</rt></ruby>にしないことにしている。",
+              "english": "The director's words are always harsh, but I make it a rule not to take them to heart."
+            }
+          ]
+        },
+        {
+          "pattern_number": 2,
+          "pattern_name": "〜ようにする・〜ようにしている",
+          "pattern_name_en": "Try to / Make an effort to",
+          "meaning_ja": "〜する／しないことを心がける。努力を続けていることを表す。",
+          "meaning_en": "Make an effort to... / Make sure to... Indicates intentional commitment and sustained effort toward a goal or habit.",
+          "connection_forms": [
+            "動辞書形 / ない形 ＋ ようにする・ようにしている"
+          ],
+          "nuance_notes": "「〜ようにしている」は現在進行中の継続的な努力・心がけを表す。意志動詞に接続する。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>水<rt>みず</rt></ruby>や<ruby>電気<rt>でんき</rt></ruby>は<ruby>大切<rt>たいせつ</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うようにしましょう。",
+              "english": "Let's make sure to use water and electricity conservatively."
+            },
+            {
+              "japanese": "<ruby>妻<rt>つま</rt></ruby>「あなたの<ruby>帰<rt>かえ</rt></ruby>りが<ruby>毎日<rt>まいにち</rt></ruby><ruby>遅<rt>おそ</rt></ruby>いから、<ruby>子<rt>こ</rt></ruby>どもたちがさびしがっているわ。」\n<ruby>夫<rt>おっと</rt></ruby>「そうか。これからはもっと<ruby>早<rt>はや</rt></ruby>く<ruby>帰<rt>かえ</rt></ruby>るようにするよ。」",
+              "english": "Wife: 'The kids feel lonely because you come home late every day.' Husband: 'I see. From now on, I will make an effort to return earlier.'"
+            },
+            {
+              "japanese": "<ruby>集合時間<rt>しゅうごうじかん</rt></ruby>に<ruby>遅<rt>おく</rt></ruby>れないようにしてください。",
+              "english": "Please make sure not to be late for the meeting time."
+            },
+            {
+              "japanese": "わたしはなるべく<ruby>自分<rt>じぶん</rt></ruby>で<ruby>料理<rt>りょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>って<ruby>食<rt>た</rt></ruby>べるようにしている。",
+              "english": "I make an effort to cook and eat my own food as much as possible."
+            }
+          ]
+        },
+        {
+          "pattern_number": 3,
+          "pattern_name": "〜(よ)うとする",
+          "pattern_name_en": "Be about to / Try to / Refuse to (in negative)",
+          "meaning_ja": "〜を実現させることを試みる。または、行為の直前であることを表す。否定形（〜ようとしない）は全くその意志がないことを表す。",
+          "meaning_en": "Be about to do... / Attempt to do... In the negative form (〜ようとしない), expresses total refusal or complete absence of intent by a third person.",
+          "connection_forms": [
+            "動う・よう形 ＋ とする"
+          ],
+          "nuance_notes": "「〜ようとしたとき／としたら」は行為直前の契機。「〜ようとしない」の主語は第三者となる。",
+          "example_sentences": [
+            {
+              "japanese": "あの<ruby>子<rt>こ</rt></ruby>は<ruby>一生<rt>いっしょう</rt></ruby>けんめい<ruby>手<rt>て</rt></ruby>を<ruby>伸<rt>の</rt></ruby>ばして、テーブルの<ruby>上<rt>うえ</rt></ruby>のおもちゃを<ruby>取<rt>と</rt></ruby>ろうとしている。",
+              "english": "That child is reaching with all his might, trying to grab the toy on the table."
+            },
+            {
+              "japanese": "きのうの<ruby>夜<rt>よる</rt></ruby>は<ruby>眠<rt>ねむ</rt></ruby>ろうとしてもなかなか<ruby>眠<rt>ねむ</rt></ruby>れなかった。",
+              "english": "Last night, even though I tried to sleep, I couldn't fall asleep easily."
+            },
+            {
+              "japanese": "<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ようとしたとき、<ruby>突然<rt>とつぜん</rt></ruby><ruby>大雨<rt>おおあめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>した。",
+              "english": "Just as I was about to leave the house, sudden heavy rain began to fall."
+            },
+            {
+              "japanese": "<ruby>重<rt>おも</rt></ruby>い<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち<ruby>上<rt>あ</rt></ruby>げようとしたら、<ruby>腰<rt>こし</rt></ruby>が<ruby>痛<rt>いた</rt></ruby>くなってしまった。",
+              "english": "Just as I tried to lift the heavy baggage, my lower back hurt."
+            },
+            {
+              "japanese": "いくら<ruby>勧<rt>すす</rt></ruby>めても<ruby>夫<rt>おっと</rt></ruby>は<ruby>病院<rt>びょういん</rt></ruby>へ<ruby>行<rt>い</rt></ruby>こうとしない。",
+              "english": "No matter how much I encourage him, my husband shows no intention of going to the hospital."
+            },
+            {
+              "japanese": "<ruby>父<rt>ちち</rt></ruby>に<ruby>事情<rt>じじょう</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>しようとしたが、<ruby>父<rt>ちち</rt></ruby>は<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>こうとはしなかった。",
+              "english": "I tried to explain the situation to my father, but he refused to listen."
+            }
+          ]
+        },
+        {
+          "pattern_number": 4,
+          "pattern_name": "〜つもりだ",
+          "pattern_name_en": "Feel as if / Believe that one has done",
+          "meaning_ja": "実際はそうではないが、自分では〜の気持ちを持っている。また相手を非難する言い方にもなる。",
+          "meaning_en": "Under the impression that... / Believe that one is... In one's mind, one feels or intends it that way, even if objective reality differs. Can also imply criticism.",
+          "connection_forms": [
+            "普通形（ナ形だ-な・名だ-の） ＋ つもりだ  ＊この使い方は動辞書形・ない形にはつかない"
+          ],
+          "nuance_notes": "自己の主観的な思い込みを表す。相手に対して「〜たつもりですか」と使うと非難・皮肉になる。",
+          "example_sentences": [
+            {
+              "japanese": "わたしは<ruby>今年<rt>ことし</rt></ruby>77<ruby>歳<rt>さい</rt></ruby>ですが、まだまだ<ruby>若<rt>わか</rt></ruby>いつもりです。",
+              "english": "I am 77 years old this year, but I still consider myself young at heart."
+            },
+            {
+              "japanese": "じょうだんで<ruby>言<rt>い</rt></ruby>ったつもりの<ruby>言葉<rt>ことば</rt></ruby>だったが、<ruby>彼<rt>かれ</rt></ruby>は<ruby>怒<rt>おこ</rt></ruby>ったような<ruby>顔<rt>かお</rt></ruby>をした。",
+              "english": "It were words meant as a joke, but he made an angry face."
+            },
+            {
+              "japanese": "<ruby>先<rt>さき</rt></ruby>に<ruby>入社<rt>にゅうしゃ</rt></ruby>した<ruby>由美<rt>ゆみ</rt></ruby>は<ruby>先輩<rt>せんぱい</rt></ruby>のつもりらしいが、<ruby>本当<rt>ほんとう</rt></ruby>はわたしの<ruby>方<rt>ほう</rt></ruby>が<ruby>年上<rt>としうえ</rt></ruby>なのだ。",
+              "english": "Yumi, who joined the company earlier, seems to consider herself my senior, but actually I am older."
+            },
+            {
+              "japanese": "こんなに<ruby>汚<rt>きたな</rt></ruby>いのに、それでも<ruby>掃除<rt>そうじ</rt></ruby>したつもりですか。",
+              "english": "It's so dirty, and yet do you really think you've cleaned it?"
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": "sec11_q1",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "今度の日曜日はどこへも行かないで家で（　）ことにした。",
+          "options": [
+            "a ゆっくりできる",
+            "b ゆっくり休む",
+            "c ゆっくり休んでいられる"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "意志的動作「休む」に接続する「休むことにした」が正しい。",
+          "explanation_en": "Volitional verb with ことにした: ゆっくり休む."
+        },
+        {
+          "question_id": "sec11_q2",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "今、週18時間もアルバイトをしている。もうこれ以上（　）ことにした。",
+          "options": [
+            "a 増えない",
+            "b 増やさない",
+            "c 増やせない"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "自分の意志でこれ以上増やさないと決めたので他動詞否定「増やさないことにした」。",
+          "explanation_en": "Volitional negative decision: 増やさないことにした."
+        },
+        {
+          "question_id": "sec11_q3",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "わたしはもう油の多い料理は（　）ようにしよう。",
+          "options": [
+            "a 食べない",
+            "b 食べられない",
+            "c 食べていない"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "心がけを表す意志的動作の否定「食べないようにしよう」。",
+          "explanation_en": "Effort/habit resolution: 食べないようにしよう."
+        },
+        {
+          "question_id": "sec11_q4",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "健康のために1日40分は（　）いる。",
+          "options": [
+            "a 歩くようにして",
+            "b 歩けるようになって",
+            "c 歩くようになって"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "心がけ・努力の継続「歩くようにしている」。",
+          "explanation_en": "Continuous habit/effort: 歩くようにしている."
+        },
+        {
+          "question_id": "sec11_q5",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "薬は好きじゃないと言って、（　）病院から出た薬を飲もうとしない。",
+          "options": [
+            "a わたしは",
+            "b 山口さんは",
+            "c わたしも夫も"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「〜ようとしない」は話者以外の第三者の拒絶を表すので「山口さんは」が正しい。",
+          "explanation_en": "Third-person refusal (〜ようとしない): 山口さんは."
+        },
+        {
+          "question_id": "sec11_q6",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "電車に乗ろうとしたら、（　）。",
+          "options": [
+            "a 電車が来た",
+            "b 電車のドアが開いた",
+            "c 電車のドアが閉まった"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "乗ろうとした直前の妨害・出来事として「ドアが閉まった」が自然。",
+          "explanation_en": "Action interruption: 電車のドアが閉まった."
+        },
+        {
+          "question_id": "sec11_q7",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "これ、ねずみに見えますか。自分ではねこを（　）つもりですが……。",
+          "options": [
+            "a かく",
+            "b かいた",
+            "c かこうという"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "完了した主観的行為「かいたつもりですが」。",
+          "explanation_en": "Subjective impression of completed action: かいたつもり."
+        },
+        {
+          "question_id": "sec11_q8",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "この靴下はていねいに（　）つもりだが、まだ完全にはきれいになっていない。",
+          "options": [
+            "a 洗濯する",
+            "b 洗濯される",
+            "c 洗濯した"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "すでに行った行為に対する「洗濯したつもりだが」。",
+          "explanation_en": "Subjective belief about past action: 洗濯したつもりだが."
+        },
+        {
+          "question_id": "sec11_q9",
+          "category": "section_11_practice",
+          "question_type": "multiple_choice",
+          "prompt": "あなたはそれでも（　）つもりですか。プロならきちんと仕事をしてください。",
+          "options": [
+            "a プロの",
+            "b プロだと思う",
+            "c プロらしい"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "名詞＋の＋つもり。「プロのつもりですか」が正しい。",
+          "explanation_en": "Noun connection: プロのつもりですか."
+        }
+      ]
+    },
+    {
+      "section_number": 12,
+      "title": "<ruby>第<rt>だい</rt></ruby>12<ruby>課<rt>か</rt></ruby> <ruby>敬語<rt>けいご</rt></ruby>",
+      "title_en": "Lesson 12: Honorific Language (Keigo)",
+      "theme": "<ruby>敬語<rt>けいご</rt></ruby>",
+      "patterns": [
+        {
+          "pattern_number": 1,
+          "pattern_name": "尊敬語（目上の人の行為を言う）",
+          "pattern_name_en": "Respectful Language (Sonkeigo)",
+          "meaning_ja": "目上の人の行為を言うときに使う敬語表現。相手を高める。",
+          "meaning_en": "Respectful language used to refer to the actions of superiors, elevating the person spoken about.",
+          "connection_forms": [
+            "お ＋ 動（ます形語幹） ＋ になる",
+            "ご ＋ 名 ＋ になる",
+            "動詞受身形（〜れる／〜られる）",
+            "お ＋ 動（ます形語幹） ＋ ください",
+            "ご ＋ 名 ＋ ください",
+            "特別な尊敬語動詞（いらっしゃる、おいでになる、なさる、ご覧になる、召し上がる、おっしゃる、ご存じ）"
+          ],
+          "nuance_notes": "相手や第三者の行為について敬意を払って述べる。自分自身の行為には使えない。",
+          "example_sentences": [
+            {
+              "japanese": "<ruby>今日<rt>きょう</rt></ruby>は<ruby>何時<rt>なんじ</rt></ruby>ごろお<ruby>帰<rt>かえ</rt></ruby>りになりますか。",
+              "english": "Around what time will you be returning home today?"
+            },
+            {
+              "japanese": "<ruby>何年<rt>なんねん</rt></ruby>に<ruby>大学<rt>だいがく</rt></ruby>をご<ruby>卒業<rt>そつぎょう</rt></ruby>になったのですか。",
+              "english": "In what year did you graduate from university?"
+            },
+            {
+              "japanese": "<ruby>明日<rt>あす</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>には<ruby>出席<rt>しゅっせき</rt></ruby>されますか。",
+              "english": "Will you attend tomorrow's meeting?"
+            },
+            {
+              "japanese": "こちらにお<ruby>名前<rt>なまえ</rt></ruby>をお<ruby>書<rt>か</rt></ruby>きください。",
+              "english": "Please write your name here."
+            },
+            {
+              "japanese": "ぜひご<ruby>連絡<rt>れんらく</rt></ruby>ください。",
+              "english": "Please be sure to contact us."
+            },
+            {
+              "japanese": "<ruby>研究会<rt>けんきゅうかい</rt></ruby>の<ruby>会長<rt>かいちょう</rt></ruby>でいらっしゃいます。",
+              "english": "He is the chairman of the research society."
+            },
+            {
+              "japanese": "お<ruby>元気<rt>げんき</rt></ruby>でいらっしゃるそうです。",
+              "english": "I hear that he is in good health."
+            },
+            {
+              "japanese": "<ruby>京都<rt>きょうと</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいらっしゃいます。",
+              "english": "He is living in Kyoto."
+            },
+            {
+              "japanese": "<ruby>何<rt>なに</rt></ruby>をお<ruby>探<rt>さが</rt></ruby>しですか。",
+              "english": "What are you looking for?"
+            },
+            {
+              "japanese": "<ruby>新<rt>しん</rt></ruby>エネルギーを<ruby>研究<rt>けんきゅう</rt></ruby>しておいでになります。",
+              "english": "He is doing research on new energy."
+            },
+            {
+              "japanese": "<ruby>推薦書<rt>すいせんしょ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いてくださいました。",
+              "english": "He kindly wrote a letter of recommendation for me."
+            },
+            {
+              "japanese": "いつわたしの<ruby>国<rt>くに</rt></ruby>へいらっしゃいましたか。",
+              "english": "When did you come to my country?"
+            },
+            {
+              "japanese": "いつわたしの<ruby>国<rt>くに</rt></ruby>へおいでになりますか。",
+              "english": "When will you come to my country?"
+            },
+            {
+              "japanese": "さきほど<ruby>見<rt>み</rt></ruby>えましたよ。",
+              "english": "He arrived just a moment ago."
+            },
+            {
+              "japanese": "<ruby>来月<rt>らいげつ</rt></ruby>アメリカへいらっしゃいます。",
+              "english": "He is going to America next month."
+            },
+            {
+              "japanese": "<ruby>来月<rt>らいげつ</rt></ruby>アメリカへおいでになるようです。",
+              "english": "It appears he is going to America next month."
+            },
+            {
+              "japanese": "<ruby>今晩<rt>こんばん</rt></ruby>はお<ruby>宅<rt>たく</rt></ruby>にいらっしゃるでしょう。",
+              "english": "He will probably be at home tonight."
+            },
+            {
+              "japanese": "<ruby>今晩<rt>こんばん</rt></ruby>はお<ruby>宅<rt>たく</rt></ruby>においでになりますか。",
+              "english": "Will you be at home tonight?"
+            },
+            {
+              "japanese": "ゴルフをなさいますか。",
+              "english": "Do you play golf?"
+            },
+            {
+              "japanese": "この<ruby>雑誌<rt>ざっし</rt></ruby>をご<ruby>覧<rt>らん</rt></ruby>になりますか。",
+              "english": "Would you like to look at this magazine?"
+            },
+            {
+              "japanese": "<ruby>和食<rt>わしょく</rt></ruby>を<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がります。お<ruby>酒<rt>さけ</rt></ruby>も<ruby>召<rt>め</rt></ruby>し<ruby>上<rt>あ</rt></ruby>がります。",
+              "english": "He eats Japanese food and also drinks sake."
+            },
+            {
+              "japanese": "お<ruby>名前<rt>なまえ</rt></ruby>は<ruby>何<rt>なん</rt></ruby>とおっしゃいますか。",
+              "english": "What is your name?"
+            },
+            {
+              "japanese": "あの<ruby>方<rt>かた</rt></ruby>をご<ruby>存<rt>ぞん</rt></ruby>じですか。",
+              "english": "Do you know that person?"
+            }
+          ]
+        },
+        {
+          "pattern_number": 2,
+          "pattern_name": "謙譲語1（目上の人に関係のある、自分の行為を言う）",
+          "pattern_name_en": "Humble Language 1 (Kenjougo I)",
+          "meaning_ja": "目上の人に関係のある、自分の行為を言うときに使う表現。自分をへりくだることで相手を高める。",
+          "meaning_en": "Humble language used to describe the speaker's own behavior when it involves or affects a superior.",
+          "connection_forms": [
+            "お ＋ 動（ます形語幹） ＋ する",
+            "ご ＋ 名 ＋ する",
+            "お ＋ 動（ます形語幹） ＋ できる",
+            "動て形 ＋ いただく",
+            "特別な謙譲語動詞（拝見する、申し上げる、伺う、お目にかかる、さしあげる）"
+          ],
+          "nuance_notes": "自分の行為の受け手（相手）が高位であるときに用いる。",
+          "example_sentences": [
+            {
+              "japanese": "（<ruby>先生<rt>せんせい</rt></ruby>の）ご<ruby>本<rt>ほん</rt></ruby>をお<ruby>借<rt>か</rt></ruby>りします。（<ruby>先生<rt>せんせい</rt></ruby>を）<ruby>会場<rt>かいじょう</rt></ruby>へご<ruby>案内<rt>あんない</rt></ruby>します。",
+              "english": "I will borrow your book. I will guide you to the hall."
+            },
+            {
+              "japanese": "<ruby>完成品<rt>かんせいひん</rt></ruby>はまだ（<ruby>先生<rt>せんせい</rt></ruby>に）お<ruby>見<rt>み</rt></ruby>せできません。",
+              "english": "I cannot show the finished product to you yet."
+            },
+            {
+              "japanese": "（<ruby>先生<rt>せんせい</rt></ruby>に）ピアノを<ruby>教<rt>おし</rt></ruby>えていただきました。",
+              "english": "I had the teacher teach me the piano."
+            },
+            {
+              "japanese": "（<ruby>先生<rt>せんせい</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>を）ちょっと<ruby>拝見<rt>はいけん</rt></ruby>します。",
+              "english": "Let me take a look at your photograph."
+            },
+            {
+              "japanese": "（<ruby>先生<rt>せんせい</rt></ruby>に）お<ruby>礼<rt>れい</rt></ruby>を<ruby>申<rt>もう</rt></ruby>し<ruby>上<rt>あ</rt></ruby>げます。",
+              "english": "I express my gratitude to you."
+            },
+            {
+              "japanese": "（<ruby>先生<rt>せんせい</rt></ruby>に）ちょっと<ruby>伺<rt>うかが</rt></ruby>いますが……。",
+              "english": "Excuse me, may I ask you something?"
+            },
+            {
+              "japanese": "あした3<ruby>時<rt>じ</rt></ruby>に（<ruby>先生<rt>せんせい</rt></ruby>の）お<ruby>宅<rt>たく</rt></ruby>に<ruby>伺<rt>うかが</rt></ruby>います。",
+              "english": "I will visit your house tomorrow at 3 o'clock."
+            },
+            {
+              "japanese": "あした3<ruby>時<rt>じ</rt></ruby>に（<ruby>先生<rt>せんせい</rt></ruby>に）お<ruby>目<rt>め</rt></ruby>にかかります。",
+              "english": "I will meet with you tomorrow at 3 o'clock."
+            },
+            {
+              "japanese": "（<ruby>先生<rt>せんせい</rt></ruby>に）<ruby>本<rt>ほん</rt></ruby>をさしあげます。",
+              "english": "I will give you a book."
+            }
+          ]
+        },
+        {
+          "pattern_number": 3,
+          "pattern_name": "謙譲語2（自分の行為をていねいに言う・丁重語）",
+          "pattern_name_en": "Humble Language 2 / Courteous Language (Teichougo)",
+          "meaning_ja": "自分の行為を聞き手に対してていねいに言う表現。",
+          "meaning_en": "Courteous verb forms used to politely or modestly describe the speaker's own behavior to the listener.",
+          "connection_forms": [
+            "特別な丁重語動詞（参る、おる、いたす、いただく、申す、存じる、存じておる）"
+          ],
+          "nuance_notes": "行為の向かう先が特定の目上でなくても、話を聞いている相手に対して丁寧に述べる際に用いる。",
+          "example_sentences": [
+            {
+              "japanese": "あした3<ruby>時<rt>じ</rt></ruby>に<ruby>参<rt>まい</rt></ruby>ります。",
+              "english": "I will come/go tomorrow at 3 o'clock."
+            },
+            {
+              "japanese": "<ruby>夜<rt>よる</rt></ruby>は<ruby>家<rt>いえ</rt></ruby>におります。",
+              "english": "I will be at home in the evening."
+            },
+            {
+              "japanese": "<ruby>片付<rt>かたづ</rt></ruby>けは<ruby>後<rt>あと</rt></ruby>でわたしがいたします。",
+              "english": "I will do the cleanup later."
+            },
+            {
+              "japanese": "<ruby>刺身<rt>さしみ</rt></ruby>も<ruby>日本酒<rt>にほんしゅ</rt></ruby>もいただきます。",
+              "english": "I eat sashimi and drink sake."
+            },
+            {
+              "japanese": "<ruby>山中<rt>やまなか</rt></ruby>と<ruby>申<rt>もう</rt></ruby>します。",
+              "english": "My name is Yamanaka."
+            },
+            {
+              "japanese": "<ruby>行<rt>い</rt></ruby>き<ruby>先<rt>さき</rt></ruby>はよく<ruby>存<rt>ぞん</rt></ruby>じております。",
+              "english": "I know the destination well."
+            },
+            {
+              "japanese": "いくつか<ruby>方法<rt>ほうほう</rt></ruby>があると<ruby>存<rt>ぞん</rt></ruby>じます。",
+              "english": "I think there are several methods."
+            }
+          ]
+        },
+        {
+          "pattern_number": 4,
+          "pattern_name": "丁寧語（自分や相手に関係なく、ものごとをていねいに言う）",
+          "pattern_name_en": "Polite Language (Teineigo)",
+          "meaning_ja": "自分や相手に関係なく、ものごとをていねいに言う表現。",
+          "meaning_en": "Polite language used to say things politely, without consideration of hierarchy of relationship.",
+          "connection_forms": [
+            "でございます（〜だ）",
+            "ございます（ある）"
+          ],
+          "nuance_notes": "日常の改まった場面や接客などで、状況や存在を丁寧に述べる。",
+          "example_sentences": [
+            {
+              "japanese": "これは<ruby>新製品<rt>しんせいひん</rt></ruby>でございます。",
+              "english": "This is a new product."
+            },
+            {
+              "japanese": "パソコン<ruby>用品<rt>ようひん</rt></ruby>は3<ruby>階<rt>かい</rt></ruby>にございます。",
+              "english": "Computer supplies are on the 3rd floor."
+            }
+          ]
+        }
+      ],
+      "drills": [
+        {
+          "question_id": "sec12_q1",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "高橋先生が先週水曜日に帰国（　）。",
+          "options": [
+            "a いたしました",
+            "b されました",
+            "c いたされました"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "高橋先生の行為に対する尊敬語は受身形「されました」。",
+          "explanation_en": "Respectful form for teacher's action: されました."
+        },
+        {
+          "question_id": "sec12_q2",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "客「あの、わたしの番はまだでしょうか。20分ぐらい待っているんですけど。」\n銀行員「何番の紙を（　）。ああ、12番ですね。では、次です。」",
+          "options": [
+            "a お持ちされますか",
+            "b お持ちですか",
+            "c お持ちしていますか"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "相手（客）の所有・状態に対する尊敬語「お持ちですか」。",
+          "explanation_en": "Respectful form towards customer: お持ちですか."
+        },
+        {
+          "question_id": "sec12_q3",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "お父様はあなたに何と（　）。",
+          "options": [
+            "a 申されましたか",
+            "b 申し上げましたか",
+            "c おっしゃいましたか"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "相手の父親の行為に対する尊敬語動詞は「おっしゃいましたか」。",
+          "explanation_en": "Respectful form for someone else's father: おっしゃいましたか."
+        },
+        {
+          "question_id": "sec12_q4",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "わたしはリーと（　）。台湾からの留学生です。",
+          "options": [
+            "a 申します",
+            "b 申し上げます",
+            "c おっしゃいます"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "自分の名前を名乗る丁重語は「申します」。",
+          "explanation_en": "Humble name introduction: 申します."
+        },
+        {
+          "question_id": "sec12_q5",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "客「すみません。牛乳はどこですか。」\n店員「あ、牛乳ですか。牛乳はあそこのパン売り場のとなりに（　）。」",
+          "options": [
+            "a いたします",
+            "b ございます",
+            "c おります"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "物の存在をていねいに言う丁寧語は「ございます」。",
+          "explanation_en": "Polite existence form for goods: ございます."
+        },
+        {
+          "question_id": "sec12_q6",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "どうぞご自由にパンフレットをお（　）ください。",
+          "options": [
+            "a お取り",
+            "b いただいて",
+            "c お持ちして"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "相手への勧め「お取りください（お＋ます語幹＋ください）」。",
+          "explanation_en": "Polite invitation to take: お取りください."
+        },
+        {
+          "question_id": "sec12_q7",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "お忙しいとは（　）が、できるだけ早くお返事をいただけますか。",
+          "options": [
+            "a ご存じます",
+            "b ご存じです",
+            "c 存じます"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "自分の判断・心情を述べる丁重語は「存じます」。",
+          "explanation_en": "Courteous mental state (think): 存じます."
+        },
+        {
+          "question_id": "sec12_q8",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "では次に、こちらのグラフを（　）。",
+          "options": [
+            "a ごらんください",
+            "b ごらんでください",
+            "c ごらんしてください"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "「見る」の尊敬表現「ごらんください」。",
+          "explanation_en": "Respectful request to look: ごらんください."
+        },
+        {
+          "question_id": "sec12_q9",
+          "category": "section_12_practice",
+          "question_type": "multiple_choice",
+          "prompt": "来月国から両親が（　）。",
+          "options": [
+            "a 見えます",
+            "b 参ります",
+            "c おいでです"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "自分の身内（両親）の行為を聞き手に言うので丁重語「参ります」。",
+          "explanation_en": "Courteous form for own family's arrival: 参ります."
+        },
+        {
+          "question_id": "sec11_12_q1",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "駅の改札を（　）したとき、切符をなくしたことに気がついた。",
+          "options": [
+            "a 出るつもりにて",
+            "b 出ようと",
+            "c 出るように"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "「〜出ようとしたとき」という行為直前の契機表現。",
+          "explanation_en": "Just as about to exit: 出ようと."
+        },
+        {
+          "question_id": "sec11_12_q2",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "あさっては大雨が降るそうだよ。ハイキングは来週（　）。",
+          "options": [
+            "a 行こうとしようよ",
+            "b 行くことにしようよ",
+            "c 行くようになろうよ"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "意志的決定を提案する「行くことにしようよ」。",
+          "explanation_en": "Joint decision: 行くことにしようよ."
+        },
+        {
+          "question_id": "sec11_12_q3",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "弟はさっきからテーブルの上に卵を（　）しているが、難しいだろう。",
+          "options": [
+            "a 立てようと",
+            "b 立てることに",
+            "c 立てたつもりに"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "試み「立てようとしている」。",
+          "explanation_en": "Attempting to do: 立てようと."
+        },
+        {
+          "question_id": "sec11_12_q4",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "教えていただいたときは（　）が、後で自分でやってみたらできませんでした。",
+          "options": [
+            "a わかろうとなさいました",
+            "b おわかりのことでした",
+            "c わかったつもりでした"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "主観的な思い込み「わかったつもりでした」。",
+          "explanation_en": "Thought I understood: わかったつもりでした."
+        },
+        {
+          "question_id": "sec11_12_q5",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "3月3日にうちでパーティーを開く（　）ので、ぜひおいでください。",
+          "options": [
+            "a ようになさいました",
+            "b ようにしておりました",
+            "c ことにいたしました"
+          ],
+          "correct_answer": "c",
+          "explanation_ja": "自分の決定を丁寧に伝える「ことにいたしました」。",
+          "explanation_en": "Humble reporting of decision: ことにいたしました."
+        },
+        {
+          "question_id": "sec11_12_q6",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "わたしはいつも必ず朝7時のニュースを（　）います。",
+          "options": [
+            "a 見るようにして",
+            "b 拝見するようにして",
+            "c ごらんになることにして"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "日頃の習慣・心がけ「見るようにしています」。",
+          "explanation_en": "Daily intentional habit: 見るようにして."
+        },
+        {
+          "question_id": "sec11_12_q7",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "では、今度は来週の月曜日に（　）しましょう。",
+          "options": [
+            "a お会いすることに",
+            "b お会いになることに",
+            "c お会いしようと"
+          ],
+          "correct_answer": "a",
+          "explanation_ja": "自分と相手の会合の取り決め「お会いすることにしましょう」。",
+          "explanation_en": "Humble arrangement to meet: お会いすることに."
+        },
+        {
+          "question_id": "sec11_12_q8",
+          "category": "section_11_12_combined",
+          "question_type": "multiple_choice",
+          "prompt": "あの、お荷物が多くて大変でしょう。一つ、（　）。",
+          "options": [
+            "a お持ちになるようにしますよ",
+            "b お持ちしますよ",
+            "c お持ちになりますよ"
+          ],
+          "correct_answer": "b",
+          "explanation_ja": "相手のために手伝う謙譲表現「お持ちしますよ」。",
+          "explanation_en": "Humble offer to carry luggage: お持ちしますよ."
+        },
+        {
+          "question_id": "matome_1_12_q1",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "課長、今度の工場見学にはわたしもいっしょに（　）んですが、いいでしょうか。",
+          "options": [
+            "1 行ってほしい",
+            "2 行っていただきたい",
+            "3 行かせたい",
+            "4 行かせていただきたい"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "自分が同行する許可を求める謙譲表現「行かせていただきたい」。",
+          "explanation_en": "Asking permission humbly: 行かせていただきたい."
+        },
+        {
+          "question_id": "matome_1_12_q2",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "日本語をたくさん話したいから、教室では自分の国の言葉を（　）。",
+          "options": [
+            "1 使うとは限らない",
+            "2 使わないようにしている",
+            "3 使うことではない",
+            "4 使わないわけではない"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "習慣・努力の心がけ「使わないようにしている」。",
+          "explanation_en": "Intentional continuous habit: 使わないようにしている."
+        },
+        {
+          "question_id": "matome_1_12_q3",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "5時ごろ空港から電話があったのだから、そろそろ家に着く（　）だ。",
+          "options": [
+            "1 ばかり",
+            "2 つもり",
+            "3 はず",
+            "4 べき"
+          ],
+          "correct_answer": "3",
+          "explanation_ja": "確実な根拠に基づく論理的推測「着くはずだ」。",
+          "explanation_en": "Logical certainty: はず."
+        },
+        {
+          "question_id": "matome_1_12_q4",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "【図書館で】あ、それは持ち出し禁止の資料ですので、（　）。",
+          "options": [
+            "1 お借りできません",
+            "2 お貸しできません",
+            "3 お借りしません",
+            "4 お貸しになりません"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "図書館側が客に貸し出す行為の謙譲可能表現「お貸しできません」。",
+          "explanation_en": "Humble inability to lend: お貸しできません."
+        },
+        {
+          "question_id": "matome_1_12_q5",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "A「すみません、ちょっとその辞書を（　）。」\nB「いいですよ。どうぞ。」",
+          "options": [
+            "1 借りてもいいですか",
+            "2 借りたらどうですか",
+            "3 借りてほしいんですが",
+            "4 借りるといいですよ"
+          ],
+          "correct_answer": "1",
+          "explanation_ja": "使用の許可を求める「借りてもいいですか」。",
+          "explanation_en": "Asking permission to borrow: 借りてもいいですか."
+        },
+        {
+          "question_id": "matome_1_12_q6",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "先生「皆さん、この書類は大切なので、絶対に（　）。わかりましたか。」",
+          "options": [
+            "1 なくすわけではありません",
+            "2 なくさないべき",
+            "3 なくすことはありません",
+            "4 なくさないこと"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "指示・規則を表す「なくさないこと」。",
+          "explanation_en": "Instruction/rule: なくさないこと."
+        },
+        {
+          "question_id": "matome_1_12_q7",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "会社を（　）、課長に呼び止められた。",
+          "options": [
+            "1 出るようにしたら",
+            "2 出ている間",
+            "3 出ようとしたら",
+            "4 出ているうちに"
+          ],
+          "correct_answer": "3",
+          "explanation_ja": "行為の直前契機「出ようとしたら」。",
+          "explanation_en": "Just as about to leave: 出ようとしたら."
+        },
+        {
+          "question_id": "matome_1_12_q8",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "A「もしもし、田中ですが、これからお宅に（　）よろしいですか。」\nB「ええ、どうぞ。お待ちしています。」",
+          "options": [
+            "1 おいでになっても",
+            "2 伺っても",
+            "3 いらっしゃっても",
+            "4 お目にかかっても"
+          ],
+          "correct_answer": "2",
+          "explanation_ja": "相手の家を訪問する謙譲表現「伺っても」。",
+          "explanation_en": "Humble visiting expression: 伺っても."
+        },
+        {
+          "question_id": "matome_1_12_q9",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "A「お宅のこうちゃん、薬飲まないの？」\nB「そうなの。あの子、（　）、いやがって口を開けないのよ。」",
+          "options": [
+            "1 飲むことにしても",
+            "2 飲むつもりでも",
+            "3 飲ませたつもりでも",
+            "4 飲ませようとしても"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "飲ませる試みをした契機「飲ませようとしても」。",
+          "explanation_en": "Trying to make child drink medicine: 飲ませようとしても."
+        },
+        {
+          "question_id": "matome_1_12_q10",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "A「あした、柔道の試合に出るんです。」\nB「そうですか。自分の力が（　）。」",
+          "options": [
+            "1 出せるといいですね",
+            "2 出せたらどうですか",
+            "3 出るといいですよ",
+            "4 出ればよかったですね"
+          ],
+          "correct_answer": "1",
+          "explanation_ja": "相手への願望・祈り「力が出せるといいですね」。",
+          "explanation_en": "Wishing success for other person: 出せるといいですね."
+        },
+        {
+          "question_id": "matome_1_12_q11",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "店に入りたかったが、もう閉店時間だった。もっと早く来る（　）だった。",
+          "options": [
+            "1 ほど",
+            "2 はず",
+            "3 こと",
+            "4 べき"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "過去の後悔「来るべきだった」。",
+          "explanation_en": "Past regret: べき."
+        },
+        {
+          "question_id": "matome_1_12_q12",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "【美術館で】あの、お客様、どちらへ（　）。この奥は関係者以外は入れませんが。",
+          "options": [
+            "1 行かれますか",
+            "2 参りますか",
+            "3 おられますか",
+            "4 見えますか"
+          ],
+          "correct_answer": "1",
+          "explanation_ja": "客の進行に対する尊敬動詞「行かれますか」。",
+          "explanation_en": "Respectful form of 行く for customer: 行かれますか."
+        },
+        {
+          "question_id": "matome_1_12_q13",
+          "category": "review_test_1_to_12",
+          "question_type": "multiple_choice",
+          "prompt": "一度失敗しただけで（　）よ。もう少しがんばって。",
+          "options": [
+            "1 あきらめたわけがない",
+            "2 あきらめたはずがない",
+            "3 あきらめるわけではない",
+            "4 あきらめるべきではない"
+          ],
+          "correct_answer": "4",
+          "explanation_ja": "忠告・助言の否定「あきらめるべきではない」。",
+          "explanation_en": "Advice / should not give up: あきらめるべきではない."
+        }
+      ]
+    }
+  ]
+}

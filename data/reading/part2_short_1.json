@@ -1,0 +1,1238 @@
+{
+  "metadata": {
+    "bookTitle": "新完全マスター JLPT N3 読解",
+    "bookTitleRomaji": "Shin Kanzen Master JLPT N3 Dokkai",
+    "englishTitle": "New Complete Master JLPT N3 Reading Comprehension",
+    "level": "JLPT N3 (Intermediate)",
+    "section": "実力養成編 第2部 いろいろな文章を読もう (Part 2: Read Various Texts)",
+    "subSection": "短文 (Short Texts)",
+    "version": "1.0.0",
+    "lastUpdated": "2026-10-11"
+  },
+  "lessons": [
+    {
+      "id": "dokkai-n3-p2-01",
+      "pages": [
+        38,
+        39
+      ],
+      "problemNumber": 14,
+      "genre": "メール（プライベート）",
+      "genre_en": "E-mail (private)",
+      "genre_zh": "邮件（私人）",
+      "title_ja": "1) メール（プライベート）",
+      "title_en": "1) E-mail (private)",
+      "title_zh": "1) 邮件（私人）",
+      "preReading": {
+        "question_ja": "仲のいい友達にどんなメールを送りますか。",
+        "question_en": "What kind of emails do you send to close friends?",
+        "question_zh": "你会给关系好的朋友发什么样的邮件？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the question. Choose the best answer from 1, 2, 3, 4.",
+        "context_ja": "これは、学生時代の友達の佐藤さんからリンさんに届いたメールである。",
+        "context_en": "This is an e-mail received by Rin-san from her friend Sato-san from their student days."
+      },
+      "passage": {
+        "header": {
+          "to": "1234abc@groups.ne.jp",
+          "subject_ja": "こんにちは！",
+          "subject_en": "Hello!",
+          "sentDate": "20XX年7月16日 13:16"
+        },
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "リンさん、久しぶり！^o^/",
+            "ruby_html": "リンさん、<ruby>久<rt>ひさ</rt></ruby>しぶり！^o^/",
+            "text_en": "Rin-san, long time no see! ^o^/"
+          },
+          {
+            "id": 2,
+            "text_ja": "元気ですか〜？ 仕事はどう？",
+            "ruby_html": "<ruby>元気<rt>げんき</rt></ruby>ですか〜？ <ruby>仕事<rt>しごと</rt></ruby>はどう？",
+            "text_en": "How are you? How is work going?"
+          },
+          {
+            "id": 3,
+            "text_ja": "こちらは何とか元気にやってます。",
+            "ruby_html": "こちらは<ruby>何<rt>なん</rt></ruby>とか<ruby>元気<rt>げんき</rt></ruby>にやってます。",
+            "text_en": "I'm managing to do well over here."
+          },
+          {
+            "id": 4,
+            "text_ja": "先週まで仕事がとても忙しかったのだけど、今週は少し時間が取れるようになりました。",
+            "ruby_html": "<ruby>先週<rt>せんしゅう</rt></ruby>まで<ruby>仕事<rt>しごと</rt></ruby>がとても<ruby>忙<rt>いそが</rt></ruby>しかったのだけど、<ruby>今週<rt>こんしゅう</rt></ruby>は<ruby>少<rt>すこ</rt></ruby>し<ruby>時間<rt>じかん</rt></ruby>が<ruby>取<rt>と</rt></ruby>れるようになりました。",
+            "text_en": "Work was very busy until last week, but this week I've managed to free up some time."
+          },
+          {
+            "id": 5,
+            "text_ja": "それで、リンさんに会いたいな、と思ってメールしてます。^^",
+            "ruby_html": "それで、リンさんに<ruby>会<rt>あ</rt></ruby>いたいな、と<ruby>思<rt>おも</rt></ruby>ってメールしてます。^^",
+            "text_en": "So, thinking that I'd like to meet up with you, I'm sending this email. ^^"
+          },
+          {
+            "id": 6,
+            "text_ja": "久しぶりに食事でもしませんか？",
+            "ruby_html": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>食事<rt>しょくじ</rt></ruby>でもしませんか？",
+            "text_en": "Would you like to have a meal together for the first time in a while?"
+          },
+          {
+            "id": 7,
+            "text_ja": "この前すごくおいしいお店を見つけたので、リンさんと一緒に行きたいと思って…。",
+            "ruby_html": "この<ruby>前<rt>まえ</rt></ruby>すごくおいしいお<ruby>店<rt>みせ</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけたので、リンさんと<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいと<ruby>思<rt>おも</rt></ruby>って…。",
+            "text_en": "I found a really delicious restaurant the other day, so I thought I'd like to go there together with you..."
+          },
+          {
+            "id": 8,
+            "text_ja": "よかったら都合のいい日、教えてください♪♪",
+            "ruby_html": "よかったら<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日<rt>ひ</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えてください♪♪",
+            "text_en": "If it's alright with you, please let me know what day suits you ♪♪"
+          },
+          {
+            "id": 9,
+            "text_ja": "時間もリンさんに合わせられます。",
+            "ruby_html": "<ruby>時間<rt>じかん</rt></ruby>もリンさんに<ruby>合<rt>あ</rt></ruby>わせられます。",
+            "text_en": "I can adjust the time to suit you as well."
+          },
+          {
+            "id": 10,
+            "text_ja": "お返事待ってますね！^o^/",
+            "ruby_html": "お<ruby>返事<rt>へんじ</rt></ruby><ruby>待<rt>ま</rt></ruby>ってますね！^o^/",
+            "text_en": "Looking forward to your reply! ^o^/"
+          },
+          {
+            "id": 11,
+            "text_ja": "佐藤",
+            "ruby_html": "<ruby>佐藤<rt>さとう</rt></ruby>",
+            "text_en": "Sato"
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "^o^/",
+          "reading": "^o^/",
+          "meaning": "笑って手を振っている様子 (waving and smiling / 笑着挥手的样子)",
+          "type": "emoticon"
+        },
+        {
+          "term": "やってます",
+          "reading": "やってます",
+          "meaning": "＝やっています (doing / getting along)",
+          "type": "spoken phrase"
+        },
+        {
+          "term": "^^",
+          "reading": "^^",
+          "meaning": "笑っている様子 (smiling / 笑着的样子)",
+          "type": "emoticon"
+        },
+        {
+          "term": "♪♪",
+          "reading": "♪♪",
+          "meaning": "嬉しい、楽しい気持ち (happy, having fun / 喜悦、快乐的心情)",
+          "type": "symbol"
+        },
+        {
+          "term": "都合のいい",
+          "reading": "つごうのいい",
+          "meaning": "convenient, suitable (for one's schedule)",
+          "type": "i-adjective"
+        },
+        {
+          "term": "合わせる",
+          "reading": "あわせる",
+          "meaning": "to adjust, adapt to (someone's schedule)",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-14-1",
+          "questionNumber": 1,
+          "questionText_ja": "このメールで一番伝えたいことは何か。",
+          "questionText_en": "What is the primary message the writer wants to convey in this email?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "自分は何とか元気にやっているが、リンさんはどうか教えてほしい。",
+              "text_en": "She wants to say she is doing well somehow, and asks how Rin-san is doing."
+            },
+            {
+              "id": 2,
+              "text_ja": "最近忙しかったが、久しぶりに少し暇になったことを伝えたい。",
+              "text_en": "She wants to tell Rin-san that while she was busy recently, she has some free time for the first time in a while."
+            },
+            {
+              "id": 3,
+              "text_ja": "一緒に食事がしたいから、都合のいい日時を連絡してほしい。",
+              "text_en": "Because she wants to have a meal together, she wants Rin-san to let her know a convenient date and time."
+            },
+            {
+              "id": 4,
+              "text_ja": "久しぶりだから、リンさんからメールがほしい。",
+              "text_en": "Because it has been a long time, she wants to receive an email from Rin-san."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "佐藤さんは「久しぶりに食事でもしませんか？」「よかったら都合のいい日、教えてください」と、リンさんを食事に誘うことがメールの主な要件（一番伝えたいこと）です。したがって、正解は 3 です。（選択肢1、2、4は近況報告や挨拶の一部にすぎず、主目的ではありません。）",
+          "explanation_en": "The main point (要件) of Sato-san's email is to invite Rin-san out for a meal ('久しぶりに食事でもしませんか？', 'よかったら都合のいい日、教えてください'). Therefore, Option 3 is correct. (Options 1, 2, and 4 are merely conversational updates and greetings rather than the primary purpose.)"
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メール",
+        "text_ja": "本文はフォーマルでない、親しい友達へのメールである。フォーマルでないメールでは、あいさつや近況報告などは省略されたり、ごく簡単にすることもある。文体の混用、縮約形などが見られ、書き言葉というより話し言葉に近い。顔文字や絵文字、「？」「！」などの記号もよく使われる。",
+        "text_en": "The main text is not formal, but is an e-mail sent to a close friend. In informal e-mails, the tendency is to simplification, sometimes with the omission of greetings, personal updates and other polite everyday phrases. The simplification can be extreme. Use of mixed writing styles and abbreviated forms is seen in the main text, and the choice of words is close to spoken Japanese. Emoticons, pictographs and symbols (?, !) are often used.",
+        "text_zh": "正文不是正式的文章，而是给好朋友的邮件。在非正式的邮件中，问候语以及自己的近况汇报等说得很极其简单，或者经常被省略。还会出现文体的混用和缩略等，不是文章体，而是更接近于口语体。还会经常使用表情符号和图画，以及“？”、“！”等。",
+        "structureLayout": [
+          {
+            "component": "あて先 / 件名 / 送信日時",
+            "en": "Recipient / Subject / Dispatch timestamp"
+          },
+          {
+            "component": "相手の名前",
+            "detail": "リンさん",
+            "en": "Recipient's name"
+          },
+          {
+            "component": "あいさつ / 近況報告",
+            "detail": "久しぶり！ / 元気ですか〜？ / こちらは何とか元気にやってます。",
+            "en": "Greeting / Personal status update"
+          },
+          {
+            "component": "要件",
+            "detail": "リンさんに会いたいな、食事でもしませんか？ 都合のいい日教えてください",
+            "en": "Main message / business"
+          },
+          {
+            "component": "あいさつ",
+            "detail": "お返事待ってますね！",
+            "en": "Closing greeting"
+          },
+          {
+            "component": "自分の名前",
+            "detail": "佐藤",
+            "en": "Sender's name"
+          }
+        ],
+        "formalExpressions": {
+          "intro_ja": "フォーマルなメールでは、以下の表現などがよく使用される。",
+          "intro_en": "In formal e-mail, the following expressions are often used.",
+          "intro_zh": "在正式邮件中，经常使用下列表达方式。",
+          "expressions": [
+            {
+              "ja": "お世話になっております。",
+              "en": "Thank you for your continued support / Hello."
+            },
+            {
+              "ja": "〜の件ですが、",
+              "en": "Regarding the matter of..."
+            },
+            {
+              "ja": "よろしくお願いいたします。",
+              "en": "Best regards / Thank you in advance."
+            },
+            {
+              "ja": "お返事お待ちしています。",
+              "en": "I look forward to hearing from you."
+            }
+          ]
+        }
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In answering examination questions, ask yourself the following:",
+        "title_zh": "考试时分析步骤如下。",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "どのような状況か。（だれからだれへ？ どんな状況？）",
+            "question_en": "What kind of situation is it? (From whom to whom? What is the state of something?)",
+            "question_zh": "什么样的状况（由谁向谁？什么状况？）",
+            "analysis_ja": "佐藤さんからリンさんへ。しばらく会っていない。",
+            "analysis_en": "From Sato-san to Rin-san. It has been a while since they last met.",
+            "analysis_zh": "由佐藤向阿林。好久没见。"
+          },
+          {
+            "step": 2,
+            "question_ja": "何を伝えたいか。",
+            "question_en": "What is the writer trying to say?",
+            "question_zh": "想传达什么。",
+            "analysis_ja": "久しぶりに食事をしたい。都合のいい日を教えてください。",
+            "analysis_en": "It's been a long time since we last met. Would you like to have a meal together? When it's convenient for you, please let me know.",
+            "analysis_zh": "久别重逢想一起吃饭，请告知哪天方便。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p2-02",
+      "pages": [
+        40,
+        41
+      ],
+      "problemNumber": 15,
+      "genre": "手紙",
+      "genre_en": "Letters",
+      "genre_zh": "书信",
+      "title_ja": "2) 手紙",
+      "title_en": "2) Letters",
+      "title_zh": "2) 书信",
+      "preReading": {
+        "question_ja": "だれかから日本語の手紙をもらったことがありますか。",
+        "question_en": "Have you ever received a letter written in Japanese from someone?",
+        "question_zh": "你收到过别人用日语写的信吗？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the question. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "header": {
+          "recipient": "チャン・ジユン様",
+          "sender": "高木まなみ",
+          "date": "二〇一四年十月二十五日"
+        },
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "拝啓",
+            "ruby_html": "<ruby>拝啓<rt>はいけい</rt></ruby>",
+            "text_en": "Dear Sir/Madam,"
+          },
+          {
+            "id": 2,
+            "text_ja": "紅葉がきれいな季節になってきました。",
+            "ruby_html": "<ruby>紅葉<rt>こうよう</rt></ruby><sup>(注1)</sup>がきれいな<ruby>季節<rt>きせつ</rt></ruby>になってきました。",
+            "text_en": "The season of beautiful autumn foliage has arrived."
+          },
+          {
+            "id": 3,
+            "text_ja": "皆さま、お元気でお過ごしのことと思います。",
+            "ruby_html": "<ruby>皆<rt>みな</rt></ruby>さま、お<ruby>元気<rt>げんき</rt></ruby>でお<ruby>過<rt>す</rt></ruby>ごしのことと<ruby>思<rt>おも</rt></ruby>います。",
+            "text_en": "I hope everyone is doing well and in good health."
+          },
+          {
+            "id": 4,
+            "text_ja": "先日は久しぶりにチャンさんにお会いすることができて、とてもうれしかったです。",
+            "ruby_html": "<ruby>先日<rt>せんじつ</rt></ruby>は<ruby>久<rt>ひさ</rt></ruby>しぶりにチャンさんにお<ruby>会<rt>あ</rt></ruby>いすることができて、とてもうれしかったです。",
+            "text_en": "I was very happy to be able to see you the other day for the first time in a long while."
+          },
+          {
+            "id": 5,
+            "text_ja": "仕事も順調に進んでいるとうかがい、安心しました。",
+            "ruby_html": "<ruby>仕事<rt>しごと</rt></ruby>も<ruby>順調<rt>じゅんちょう</rt></ruby>に<ruby>進<rt>すす</rt></ruby>んでいるとうかがい、<ruby>安心<rt>あんしん</rt></ruby>しました。",
+            "text_en": "I was relieved to hear that your work is progressing smoothly."
+          },
+          {
+            "id": 6,
+            "text_ja": "また、ソナちゃんがかわいい小学生になっていてびっくりしました。",
+            "ruby_html": "また、ソナちゃんがかわいい<ruby>小学生<rt>しょうがくせい</rt></ruby>になっていてびっくりしました。",
+            "text_en": "Also, I was delightfully surprised to see Sona-chan had grown into such a cute elementary school student."
+          },
+          {
+            "id": 7,
+            "text_ja": "さて、その時にお話しした本を別便でお送りしました。",
+            "ruby_html": "さて、その<ruby>時<rt>とき</rt></ruby>にお<ruby>話<rt>はな</rt></ruby>しした<ruby>本<rt>ほん</rt></ruby>を<ruby>別便<rt>べつびん</rt></ruby><sup>(注2)</sup>でお<ruby>送<rt>おく</rt></ruby>りしました。",
+            "text_en": "Now then, I have sent you the book we talked about that time by separate delivery."
+          },
+          {
+            "id": 8,
+            "text_ja": "これは、私にはもう必要ないので、さしあげます。",
+            "ruby_html": "これは、<ruby>私<rt>わたし</rt></ruby>にはもう<ruby>必要<rt>ひつよう</rt></ruby>ないので、さしあげます。",
+            "text_en": "I no longer need this, so I would like to give it to you."
+          },
+          {
+            "id": 9,
+            "text_ja": "どうぞ受け取ってください。",
+            "ruby_html": "どうぞ<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ってください。",
+            "text_en": "Please accept it."
+          },
+          {
+            "id": 10,
+            "text_ja": "チャンさんのお仕事の役に立てばうれしいです。",
+            "ruby_html": "チャンさんのお<ruby>仕事<rt>しごと</rt></ruby>の<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>てばうれしいです。",
+            "text_en": "I would be delighted if it proves useful for your work."
+          },
+          {
+            "id": 11,
+            "text_ja": "これから寒くなってきますが、どうぞお体に気をつけてお過ごしください。",
+            "ruby_html": "これから<ruby>寒<rt>さむ</rt></ruby>くなってきますが、どうぞお<ruby>体<rt>からだ</rt></ruby>に<ruby>気<rt>き</rt></ruby>をつけてお<ruby>過<rt>す</rt></ruby>ごしください。",
+            "text_en": "It will be getting colder from now on, so please take good care of yourself."
+          },
+          {
+            "id": 12,
+            "text_ja": "敬具",
+            "ruby_html": "<ruby>敬具<rt>けいぐ</rt></ruby>",
+            "text_en": "Sincerely yours,"
+          },
+          {
+            "id": 13,
+            "text_ja": "二〇一四年十月二十五日",
+            "ruby_html": "<ruby>二〇一四年十月二十五日<rt>にせんじゅうよねんじゅうがつにじゅうごにち</rt></ruby>",
+            "text_en": "October 25, 2014"
+          },
+          {
+            "id": 14,
+            "text_ja": "高木まなみ",
+            "ruby_html": "<ruby>高木<rt>たかぎ</rt></ruby>まなみ",
+            "text_en": "Manami Takagi"
+          },
+          {
+            "id": 15,
+            "text_ja": "チャン・ジユン様",
+            "ruby_html": "チャン・ジユン<ruby>様<rt>さま</rt></ruby>",
+            "text_en": "Mr./Ms. Chang Jiyun"
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "紅葉",
+          "reading": "こうよう",
+          "definition_ja": "秋になって木の葉が赤くなること",
+          "definition_en": "Autumn foliage: tree leaves turning red/yellow in autumn."
+        },
+        {
+          "index": 2,
+          "term_ja": "別便",
+          "reading": "べつびん",
+          "definition_ja": "別に送ったもの",
+          "definition_en": "Sent separately / by separate mail."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "(お元気で)お過ごしのことと思います",
+          "reading": "(おげんきで)おすごしのこととおもいます",
+          "meaning": "I hope things are going well for you / 您身体还好吧",
+          "type": "phrase"
+        },
+        {
+          "term": "順調に",
+          "reading": "じゅんちょうに",
+          "meaning": "smoothly, favorably / 顺利",
+          "type": "adverb"
+        },
+        {
+          "term": "さて",
+          "reading": "さて",
+          "meaning": "well..., now then (transition to main topic) / 那么",
+          "type": "conjunction"
+        },
+        {
+          "term": "(お体にお気をつけて)お過ごしください",
+          "reading": "(おからだにおきをつけて)おすごしください",
+          "meaning": "Take care, look after yourself / 请您多保重",
+          "type": "phrase"
+        },
+        {
+          "term": "さしあげる",
+          "reading": "さしあげる",
+          "meaning": "to give (humble/polite expression for あげる)",
+          "type": "verb"
+        },
+        {
+          "term": "役に立つ",
+          "reading": "やくにたつ",
+          "meaning": "to be helpful, to be useful",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-15-1",
+          "questionNumber": 1,
+          "questionText_ja": "この手紙の内容について、正しいのはどれか。",
+          "questionText_en": "Which of the following is correct regarding the content of this letter?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "高木さんはチャンさんに、自分の本をあげると言っている。",
+              "text_en": "Takagi-san says she will give her own book to Chang-san."
+            },
+            {
+              "id": 2,
+              "text_ja": "高木さんはチャンさんに、自分の本を貸してあげると言っている。",
+              "text_en": "Takagi-san says she will lend her own book to Chang-san."
+            },
+            {
+              "id": 3,
+              "text_ja": "高木さんはチャンさんの子どもに、本を受け取ってほしいと言っている。",
+              "text_en": "Takagi-san says she wants Chang-san's child to accept the book."
+            },
+            {
+              "id": 4,
+              "text_ja": "高木さんはチャンさんに、本を受け取りに来てほしいと言っている。",
+              "text_en": "Takagi-san says she wants Chang-san to come pick up the book."
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "手紙の本文に「私にはもう必要ないので、さしあげます。どうぞ受け取ってください」とあります。「さしあげる」は「あげる」の謙譲表現（丁寧な言い方）であり、貸すのではなく譲り渡すことを意味します。したがって、正しいのは 1 です。（選択肢2の「貸す」、3の「子どもに」、4の「取りに来てほしい」はいずれも本文と一致しません。）",
+          "explanation_en": "In the letter, Takagi-san states: '私にはもう必要ないので、さしあげます。どうぞ受け取ってください' (I no longer need this, so I will give it to you. Please accept it). 'さしあげる' is the humble form of 'あげる' (to give), meaning it is a gift that does not need to be returned. Therefore, Option 1 is correct. (Option 2 claims lending, Option 3 says it is for the child, and Option 4 asks to pick it up in person when it was actually dispatched separately by mail.)"
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆手紙",
+        "text_ja": "敬語を多く使い、です・ます体で書くことが多い。親しい関係でも、少していねいな表現になることが多い。プライベートの手紙の文は次のような構成になっている。",
+        "text_en": "Honorifics are often used, and です・ます forms likewise. Even in dealing with intimates, you often use slightly polite expressions. Private letters are structured as follows.",
+        "text_zh": "多使用敬语，多使用「です・ます」体书写。即使关系亲密，用词也要稍微礼貌一些。私人信件包含以下内容。",
+        "letterStructure": [
+          {
+            "step": 1,
+            "name_ja": "「拝啓」・「前略（→②③は省略する）」……はじめの言葉",
+            "name_en": "Introductory expressions ('拝啓' / '前略')",
+            "name_zh": "信件开头问候语"
+          },
+          {
+            "step": 2,
+            "name_ja": "季節のあいさつ……天候（暖かくなった、寒さがきびしいなど）や自然（桜が咲いたなど）の四季の変化について書く←この部分はわからなくてもいい",
+            "name_en": "Seasonal greetings: changes in weather/nature ← You do not need to understand these exactly.",
+            "name_zh": "季节问候：写天气以及大自然的四季变化等←这部分读不懂也没关系"
+          },
+          {
+            "step": 3,
+            "name_ja": "相手（と家族）の健康などについて聞く",
+            "name_en": "Inquiring about the health of your partner (and family)",
+            "name_zh": "询问对方（和家人）的健康情况"
+          },
+          {
+            "step": 4,
+            "name_ja": "本題（この手紙の用事）←ここが重要！",
+            "name_en": "The main topic (the point of the letter) ← This is important.",
+            "name_zh": "正文（写信要说的事）←这部分重要！"
+          },
+          {
+            "step": 5,
+            "name_ja": "終わりに書くお礼・おわびなど",
+            "name_en": "Closing phrases, apologies, etc.",
+            "name_zh": "篇尾的致谢、道歉等"
+          },
+          {
+            "step": 6,
+            "name_ja": "相手（と家族）の健康を祈る",
+            "name_en": "Praying for the health of the partner, or other person, and his or her family",
+            "name_zh": "祝福对方（和家人）健康"
+          },
+          {
+            "step": 7,
+            "name_ja": "「敬具」・「草々」……終わりの言葉",
+            "name_en": "Closing phrases: 敬具, 草々",
+            "name_zh": "「敬具」・「草々」等结束语"
+          },
+          {
+            "step": 8,
+            "name_ja": "手紙を出した日",
+            "name_en": "Date of dispatch of the letter",
+            "name_zh": "写信日期"
+          },
+          {
+            "step": 9,
+            "name_ja": "手紙を出した人の名前",
+            "name_en": "Name of the person sending the letter",
+            "name_zh": "写信人名字"
+          },
+          {
+            "step": 10,
+            "name_ja": "手紙の相手の名前",
+            "name_en": "Name of the recipient of the letter",
+            "name_zh": "收信人名字"
+          },
+          {
+            "step": 11,
+            "name_ja": "追伸……手紙の最後に、追加のこと、または目立たせたいことを書く←あれば、ここも重要",
+            "name_en": "Postscript: additional material at the end to emphasize a point ← If present, this is also important.",
+            "name_zh": "补充：信的最后追加的事，或者特别提醒的事←有的话这里也很重要"
+          }
+        ]
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In answering examination questions, ask yourself the following:",
+        "title_zh": "考试时分析步骤如下。",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "どのような状況か。（だれからだれへ？ どんな状況？）",
+            "question_en": "What kind of situation is it? (From whom to whom? What is the state of something?)",
+            "question_zh": "什么样的状况（由谁向谁？什么状况？）",
+            "analysis_ja": "高木まなみさんからチャン・ジユンさんへ。この前、久しぶりに会った。",
+            "analysis_en": "From Takagi-san to Chang Jiyun. We recently met for the first time in a long while.",
+            "analysis_zh": "由高木真奈美向张志胤。前段时间，久别重逢。"
+          },
+          {
+            "step": 2,
+            "question_ja": "何を伝えたいか。",
+            "question_en": "What is being said?",
+            "question_zh": "想传达什么。",
+            "analysis_ja": "高木さんがチャンさんに本を送る。あげるので、返さなくていい。",
+            "analysis_en": "Takagi-san gives Chang-san a book. She does not need to return it, as it is a gift.",
+            "analysis_zh": "高木把书送给小张。因为是给他的所以不用还。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p2-03",
+      "pages": [
+        42,
+        43
+      ],
+      "problemNumber": 16,
+      "genre": "メモ",
+      "genre_en": "Memos",
+      "genre_zh": "提示便条",
+      "title_ja": "3) メモ",
+      "title_en": "3) Memos",
+      "title_zh": "3) 提示便条",
+      "preReading": {
+        "question_ja": "コピー機が故障していたら、どうしますか。",
+        "question_en": "What do you do if a copy machine is broken down?",
+        "question_zh": "如果复印机坏了，你会怎么办？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the question. Choose the best answer from 1, 2, 3, 4.",
+        "context_ja": "職場でコピーを取ろうとしたら、コピー機に以下のようなメモが貼ってあった。",
+        "context_en": "When somebody was about to make photocopies at work, the following note was posted on the photocopier."
+      },
+      "passage": {
+        "header": {
+          "heading_ja": "このコピー機は故障中です。",
+          "heading_en": "This copy machine is currently out of order."
+        },
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "このコピー機は故障中です。",
+            "ruby_html": "このコピー<ruby>機<rt>き</rt></ruby>は<ruby>故障中<rt>こしょうちゅう</rt></ruby>です。",
+            "text_en": "This photocopier is currently out of order."
+          },
+          {
+            "id": 2,
+            "text_ja": "修理の人が11時ごろ来ます。",
+            "ruby_html": "<ruby>修理<rt>しゅうり</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>が11<ruby>時<rt>じ</rt></ruby>ごろ<ruby>来<rt>き</rt></ruby>ます。",
+            "text_en": "The repair person will come around 11:00."
+          },
+          {
+            "id": 3,
+            "text_ja": "修理が問題なく終われば、午後から使えるようになります。",
+            "ruby_html": "<ruby>修理<rt>しゅうり</rt></ruby>が<ruby>問題<rt>もんだい</rt></ruby>なく<ruby>終<rt>お</rt></ruby>われば、<ruby>午後<rt>ごご</rt></ruby>から<ruby>使<rt>つか</rt></ruby>えるようになります。",
+            "text_en": "If the repair finishes without problems, it will become usable starting in the afternoon."
+          },
+          {
+            "id": 4,
+            "text_ja": "お急ぎの方は、5階の第一事務室か、5階の第二事務室か、4階の資料準備室のものをお使いください。",
+            "ruby_html": "お<ruby>急<rt>いそ</rt></ruby>ぎの<ruby>方<rt>かた</rt></ruby>は、5<ruby>階<rt>かい</rt></ruby>の<ruby>第一事務室<rt>だいいちじむしつ</rt></ruby>か、5<ruby>階<rt>かい</rt></ruby>の<ruby>第二事務室<rt>だいにじむしつ</rt></ruby>か、4<ruby>階<rt>かい</rt></ruby>の<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>のものをお<ruby>使<rt>つか</rt></ruby>いください。",
+            "text_en": "Those in a hurry, please use the machines in the 1st Office on the 5th floor, the 2nd Office on the 5th floor, or the Document Preparation Room on the 4th floor."
+          },
+          {
+            "id": 5,
+            "text_ja": "ただし、5階の第一事務室は、混んでいるので、20枚以上のコピーはご遠慮ください。",
+            "ruby_html": "ただし、5<ruby>階<rt>かい</rt></ruby>の<ruby>第一事務室<rt>だいいちじむしつ</rt></ruby>は、<ruby>混<rt>こ</rt></ruby>んでいるので、20<ruby>枚<rt>まい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>のコピーはご<ruby>遠慮<rt>えんりょ</rt></ruby>ください。",
+            "text_en": "However, since the 1st Office on the 5th floor is crowded, please refrain from making 20 or more copies."
+          },
+          {
+            "id": 6,
+            "text_ja": "第二事務室のコピー機はA3サイズが取れません。",
+            "ruby_html": "<ruby>第二事務室<rt>だいにじむしつ</rt></ruby>のコピー<ruby>機<rt>き</rt></ruby>はA3サイズが<ruby>取<rt>と</rt></ruby>れません。",
+            "text_en": "The photocopier in the 2nd Office cannot produce A3 size copies."
+          },
+          {
+            "id": 7,
+            "text_ja": "また、4階の資料準備室はカギがかかっていますので、となりの資料管理室でカギを借りてください。",
+            "ruby_html": "また、4<ruby>階<rt>かい</rt></ruby>の<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>はカギがかかっていますので、となりの<ruby>資料管理室<rt>しりょうかんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>りてください。",
+            "text_en": "Additionally, the Document Preparation Room on the 4th floor is locked, so please borrow the key from the adjacent Document Management Room."
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "ご遠慮ください",
+          "reading": "ごえんりょください",
+          "meaning": "Please do not / Please refrain from / 请不要",
+          "type": "phrase"
+        },
+        {
+          "term": "故障中",
+          "reading": "こしょうちゅう",
+          "meaning": "out of order, broken down",
+          "type": "noun"
+        },
+        {
+          "term": "修理",
+          "reading": "しゅうり",
+          "meaning": "repair, servicing",
+          "type": "noun/suru-verb"
+        },
+        {
+          "term": "事務室",
+          "reading": "じむしつ",
+          "meaning": "office room",
+          "type": "noun"
+        },
+        {
+          "term": "資料準備室",
+          "reading": "しりょうじゅんびしつ",
+          "meaning": "document preparation room",
+          "type": "noun"
+        },
+        {
+          "term": "資料管理室",
+          "reading": "しりょうかんりしつ",
+          "meaning": "document management room",
+          "type": "noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-16-1",
+          "questionNumber": 1,
+          "questionText_ja": "今、9時45分で、10時の会議のためにA3サイズのコピーを40枚取りたい。間に合うようにコピーを取るには、どうすれば一番よいか。",
+          "questionText_en": "It is currently 9:45, and somebody wishes to make 40 copies in A3 size for a meeting at 10:00. To ensure the copies are made in time, what would be the best thing to do?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "5階の第一事務室に行き、コピーを取る。",
+              "text_en": "Go to the 1st Office on the 5th floor and make copies."
+            },
+            {
+              "id": 2,
+              "text_ja": "5階の第二事務室に行き、コピーを取る。",
+              "text_en": "Go to the 2nd Office on the 5th floor and make copies."
+            },
+            {
+              "id": 3,
+              "text_ja": "4階の資料管理室でカギを借り、資料準備室でコピーを取る。",
+              "text_en": "Borrow the key at the Document Management Room on the 4th floor, and make copies in the Document Preparation Room."
+            },
+            {
+              "id": 4,
+              "text_ja": "修理の後、このコピー機を使う。",
+              "text_en": "Use this copy machine after it is repaired."
+            }
+          ],
+          "correctAnswer": 3,
+          "explanation_ja": "現在の時刻は9時45分で、10時の会議まであと15分しかありません。修理が完了するのは午後なので、このコピー機は間に合いません（選択肢4は誤り）。5階の第一事務室は「20枚以上のコピーはご遠慮ください」とあるため40枚は取れません（選択肢1は誤り）。5階の第二事務室は「A3サイズが取れません」とあるためA3のコピーができません（選択肢2は誤り）。残る選択肢は4階の資料準備室ですが、カギがかかっているため隣の資料管理室でカギを借りる必要があります。したがって、正解は 3 です。",
+          "explanation_en": "It is currently 9:45, leaving only 15 minutes before the 10:00 meeting. The broken machine will not be ready until afternoon (Option 4 is eliminated). The 1st Office on the 5th floor requests that users refrain from making 20 or more copies, but 40 copies are required (Option 1 is eliminated). The 2nd Office machine cannot handle A3 size (Option 2 is eliminated). The remaining option is the Document Preparation Room on the 4th floor, which is locked and requires borrowing the key from the adjacent Document Management Room. Therefore, Option 3 is correct."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆メモ",
+        "text_ja": "メモには、以下のようなものがある。\nA: だれか一人のためのもの（不在時の連絡など。目上の人には丁寧体を使う。）\nB: 多くの人のためのメモ（注意書きなど）\n箇条書き（1、2…のような形）がよく使われる。",
+        "text_en": "In a memo, you find the following:\nA: Something for just one person (contacts during absence, etc. The polite style is used in addressing a social superior.)\nB: Memo for a large number of people (notice etc)\nBulleted paragraphs are often used (similar to the numbering used in lists).",
+        "text_zh": "便条包括以下几种：\nA: 写给某个人的（用于对方不在时的联系等。对于上司要用礼貌体用语。）\nB: 写给多数人的便条（提示等）\n经常分条写（1，2…的格式）。"
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In answering examination questions, ask yourself the following:",
+        "title_zh": "考试时分析步骤如下。",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "上のAかBのどちらなのか気をつける。",
+            "question_en": "Check carefully whether it is (1) or (2) above.",
+            "question_zh": "要注意是上文的①还是②。",
+            "analysis_ja": "多くの人のためのメモ",
+            "analysis_en": "This is a memo for many people.",
+            "analysis_zh": "写给多数人的便条。"
+          },
+          {
+            "step": 2,
+            "question_ja": "メモの内容だけでなく、本文の前後や問いの内容から、メモを読んだ人の状況も読み取る。",
+            "question_en": "You can get an idea of the state of the person who read the memo, not only from the content of the memo, but from the context and the nature of the questions.",
+            "question_zh": "不只是便条的内容，从正文的前后文以及提问也可以读取阅读便条人的状况。",
+            "analysis_ja": "メモを読んだ人の状況：職場でコピーを取ろうとしたら、コピー機に故障中のメモが貼ってあった。今、9時45分で、10時の会議のためにA3サイズのコピーを40枚取りたい。間に合うようにコピーを取るには、どうすれば一番よいか。",
+            "analysis_en": "State of the people who read the memo: For those wishing to make copies at work, a note was posted on a photocopier saying that it had broken down. Somebody wishes to make 40 A3 size copies at 9.45, for a meeting at 10.00. What would be the best thing to do to ensure that copies are made in time?",
+            "analysis_zh": "阅读便条人的状况：在上班处想要复印，但复印机上贴着“不能使用”的便条。现在是9点45，需要为10点的会议准备A3大小的复印文件40页。为了赶上会议的使用应该怎么办。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p2-04",
+      "pages": [
+        44,
+        45
+      ],
+      "problemNumber": 17,
+      "genre": "指示文",
+      "genre_en": "Instruction texts",
+      "genre_zh": "指示说明",
+      "title_ja": "4) 指示文",
+      "title_en": "4) Instruction texts",
+      "title_zh": "4) 指示说明",
+      "preReading": {
+        "question_ja": "日本料理を作ったことがありますか。どんなものを作りましたか。",
+        "question_en": "Have you ever made Japanese food? What kind of dish did you make?",
+        "question_zh": "你做过日本料理吗？做过什么样的菜？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the question below. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "header": {
+          "recipeTitle_ja": "親子丼の作り方",
+          "recipeTitle_en": "How to make Oyakodon",
+          "recipeTitle_zh": "鸡蛋鸡肉盖饭的做法",
+          "servings_ja": "材料（2人分）",
+          "servings_en": "Ingredients (Serves 2)",
+          "ingredients": [
+            {
+              "name_ja": "ごはん",
+              "amount_ja": "どんぶり2杯分",
+              "name_en": "Cooked rice",
+              "amount_en": "2 bowls"
+            },
+            {
+              "name_ja": "とり肉",
+              "amount_ja": "1枚（約150g）",
+              "name_en": "Chicken",
+              "amount_en": "1 thigh/fillet (approx. 150g)"
+            },
+            {
+              "name_ja": "たまご",
+              "amount_ja": "4コ",
+              "name_en": "Eggs",
+              "amount_en": "4"
+            },
+            {
+              "name_ja": "たまねぎ",
+              "amount_ja": "1/4コ",
+              "name_en": "Onion",
+              "amount_en": "1/4"
+            },
+            {
+              "name_ja": "だし汁",
+              "amount_ja": "カップ1杯（200cc）",
+              "name_en": "Dashi soup stock",
+              "amount_en": "1 cup (200cc)"
+            }
+          ],
+          "seasonings": [
+            {
+              "name_ja": "みりん",
+              "amount_ja": "大さじ2",
+              "name_en": "Mirin (sweet rice wine)",
+              "amount_en": "2 tbsp"
+            },
+            {
+              "name_ja": "酒",
+              "amount_ja": "大さじ1",
+              "name_en": "Sake (cooking wine)",
+              "amount_en": "1 tbsp"
+            },
+            {
+              "name_ja": "しょうゆ",
+              "amount_ja": "大さじ2",
+              "name_en": "Soy sauce",
+              "amount_en": "2 tbsp"
+            },
+            {
+              "name_ja": "さとう",
+              "amount_ja": "大さじ1",
+              "name_en": "Sugar",
+              "amount_en": "1 tbsp"
+            }
+          ]
+        },
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "まず、とり肉を一口大に切り、たまねぎをうす切りにします。",
+            "ruby_html": "まず、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>一口大<rt>ひとくちだい</rt></ruby><sup>(注1)</sup>に<ruby>切<rt>き</rt></ruby>り、たまねぎをうす<ruby>切<rt>ぎ</rt></ruby>りにします。",
+            "text_en": "First, cut the chicken into bite-sized pieces and thinly slice the onion."
+          },
+          {
+            "id": 2,
+            "text_ja": "ボールにたまごを割って混ぜておきます。",
+            "ruby_html": "ボールにたまごを<ruby>割<rt>わ</rt></ruby>って<ruby>混<rt>ま</rt></ruby>ぜておきます。",
+            "text_en": "Crack the eggs into a bowl and mix them."
+          },
+          {
+            "id": 3,
+            "text_ja": "なべにだし汁、みりん、酒、しょうゆ、さとうを入れて火にかけます。",
+            "ruby_html": "なべにだし<ruby>汁<rt>じる</rt></ruby><sup>(注2)</sup>、みりん、<ruby>酒<rt>さけ</rt></ruby>、しょうゆ、さとうを<ruby>入<rt>い</rt></ruby>れて<ruby>火<rt>ひ</rt></ruby>にかけます。",
+            "text_en": "Put the dashi broth, mirin, sake, soy sauce, and sugar in a pot and heat it on the stove."
+          },
+          {
+            "id": 4,
+            "text_ja": "沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます。",
+            "ruby_html": "<ruby>沸騰<rt>ふっとう</rt></ruby>したら、たまねぎ、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて、<ruby>中火<rt>ちゅうび</rt></ruby>〜<ruby>弱火<rt>よわび</rt></ruby>で<ruby>煮<rt>に</rt></ruby>ます。",
+            "text_en": "Once boiling, add the onion and chicken, and simmer over medium to low heat."
+          },
+          {
+            "id": 5,
+            "text_ja": "とり肉が煮えたら、たまごを回し入れます。",
+            "ruby_html": "とり<ruby>肉<rt>にく</rt></ruby>が<ruby>煮<rt>に</rt></ruby>えたら、たまごを<ruby>回<rt>まわ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れます<sup>(注3)</sup>。",
+            "text_en": "When the chicken is cooked through, pour in the egg in a circular motion."
+          },
+          {
+            "id": 6,
+            "text_ja": "固まり始めたら、火をとめます。",
+            "ruby_html": "<ruby>固<rt>かた</rt></ruby>まり<ruby>始<rt>はじ</rt></ruby>めたら、<ruby>火<rt>ひ</rt></ruby>をとめます。",
+            "text_en": "Once it begins to solidify, turn off the heat."
+          },
+          {
+            "id": 7,
+            "text_ja": "ごはんの上にのせて、出来あがり！",
+            "ruby_html": "ごはんの<ruby>上<rt>うえ</rt></ruby>にのせて、<ruby>出来<rt>でき</rt></ruby>あがり！",
+            "text_en": "Place it on top of the cooked rice, and it's done!"
+          }
+        ],
+        "attentionBox": {
+          "heading_ja": "ここに注意！",
+          "heading_en": "Caution / Pay attention here!",
+          "text_ja": "最後にたまごを入れたら、あまり混ぜないこと。そして長く煮ないこと。",
+          "ruby_html": "<ruby>最後<rt>さいご</rt></ruby>にたまごを<ruby>入<rt>い</rt></ruby>れたら、あまり<ruby>混<rt>ま</rt></ruby>ぜないこと。そして<ruby>長<rt>なが</rt></ruby>く<ruby>煮<rt>に</rt></ruby>ないこと。",
+          "text_en": "After adding the egg at the end, do not stir it too much. And do not simmer it for too long."
+        }
+      },
+      "footnotes": [
+        {
+          "index": 1,
+          "term_ja": "一口大",
+          "reading": "ひとくちだい",
+          "definition_ja": "口に入るくらいの大きさ",
+          "definition_en": "Bite-sized: a size convenient to put into one's mouth."
+        },
+        {
+          "index": 2,
+          "term_ja": "だし汁",
+          "reading": "だしじる",
+          "definition_ja": "こんぶやかつおぶしで作ったスープ",
+          "definition_en": "Dashi broth: traditional Japanese soup stock made from kelp and bonito flakes."
+        },
+        {
+          "index": 3,
+          "term_ja": "回し入れる",
+          "reading": "まわしいれる",
+          "definition_ja": "まるをかくようにして入れる",
+          "definition_en": "To pour in in circles: adding liquid by moving in circular motions."
+        }
+      ],
+      "vocabulary": [
+        {
+          "term": "材料",
+          "reading": "ざいりょう",
+          "meaning": "ingredients / 原材料",
+          "type": "noun"
+        },
+        {
+          "term": "調味料",
+          "reading": "ちょうみりょう",
+          "meaning": "seasoning / 调味料",
+          "type": "noun"
+        },
+        {
+          "term": "大さじ、小さじ",
+          "reading": "おおさじ、こさじ",
+          "meaning": "tablespoon, teaspoon / 大勺、小勺",
+          "type": "noun"
+        },
+        {
+          "term": "切る",
+          "reading": "きる",
+          "meaning": "to cut / 切",
+          "type": "verb"
+        },
+        {
+          "term": "混ぜる",
+          "reading": "まぜる",
+          "meaning": "to mix / 搅拌",
+          "type": "verb"
+        },
+        {
+          "term": "火にかける",
+          "reading": "ひにかける",
+          "meaning": "to cook on a stove, put over heat / 开火加热",
+          "type": "phrase/verb"
+        },
+        {
+          "term": "強火、中火、弱火",
+          "reading": "つよび、ちゅうび、よわび",
+          "meaning": "high heat, medium heat, low heat / 大火、中火、小火",
+          "type": "noun"
+        },
+        {
+          "term": "煮る／煮える",
+          "reading": "にる／にえる",
+          "meaning": "boil / be boiled (simmer / be simmered) / 煮/炖",
+          "type": "verb"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-17-1",
+          "questionNumber": 1,
+          "questionText_ja": "親子丼の作り方の順番で、正しいものはどれか。",
+          "questionText_en": "Which of the following is the correct order of procedure for making Oyakodon?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "なべにだし汁、とり肉、たまねぎ、たまごを入れてから火にかける。",
+              "text_en": "Put dashi, chicken, onion, and eggs into the pot, then place it on the stove."
+            },
+            {
+              "id": 2,
+              "text_ja": "なべにだし汁、調味料、とり肉を入れ、沸騰したら、たまねぎとたまごを入れる。",
+              "text_en": "Put dashi, seasonings, and chicken into the pot, and once boiling, add onion and eggs."
+            },
+            {
+              "id": 3,
+              "text_ja": "なべにだし汁、調味料を入れ、沸騰したら、はじめにたまごを入れる。",
+              "text_en": "Put dashi and seasonings into the pot, and once boiling, add eggs first."
+            },
+            {
+              "id": 4,
+              "text_ja": "なべにだし汁、調味料を入れ、沸騰したら、とり肉とたまねぎを入れる。",
+              "text_en": "Put dashi and seasonings into the pot, and once boiling, add chicken and onion."
+            }
+          ],
+          "correctAnswer": 4,
+          "explanation_ja": "手順2では「なべにだし汁、みりん、酒、しょうゆ、さとう（＝調味料）を入れて火にかけます」、手順3では「沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます」、そして手順4で「とり肉が煮えたら、たまごを回し入れます」とあります。したがって、正しい順番を述べているのは 4 です。（選択肢1は煮る前にたまごまで入れている、2は沸騰前からとり肉を入れている、3は沸騰直後にたまごを入れているため、いずれも誤りです。）",
+          "explanation_en": "Step 2 states: 'なべにだし汁、みりん、酒、しょうゆ、さとう（＝調味料）を入れて火にかけます' (put dashi and seasonings into the pot and put on heat). Step 3 states: '沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます' (once boiling, add onion and chicken and simmer). Eggs are added later in Step 4 once the chicken is cooked through. Therefore, Option 4 accurately captures the correct sequence."
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆指示文",
+        "text_ja": "何かのやり方を指示する文章で、どのような順番で何をするかが書かれている。以下のような表現が多い。\n<手順> Procedure 操作步骤\n・1. 〜、2. 〜、3. 〜\n・まず〜、つぎに、そして、最後に〜\n・〜たら〜。 〜てから〜。など\n<注意点> Points to note 注意事项\n〜する（こと）。〜しない（こと）。〜なければならない。など",
+        "text_en": "The text gives instructions on how to do something, and describes what actions are to be taken, in what sequence. The following expressions are common:\n<Procedure>\n・1. ~, 2. ~, 3. ~\n・First ~, next, then, finally ~\n・~tara ~, ~te kara ~, etc.\n<Points to note>\n・~ suru (koto), ~ shinai (koto), ~ nakereba naranai, etc.",
+        "text_zh": "讲解某种做法的文章，一般会写到以什么样的顺序做什么。多用下列词语：\n<操作步骤>\n・1. 〜、2. 〜、3. 〜\n・首先〜，接着，然后，最后〜\n・〜たら〜。 〜てから〜。等\n<注意事项>\n〜する（こと）。〜しない（こと）。〜なければならない。等"
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In answering examination questions, ask yourself the following:",
+        "title_zh": "考试时分析步骤如下。",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "何のやり方を説明しているか。",
+            "question_en": "What method does the explanation relate to?",
+            "question_zh": "在说明什么东西的做法。",
+            "analysis_ja": "親子丼の作り方",
+            "analysis_en": "How to make oyakodon (bowl of rice topped with chicken and eggs)",
+            "analysis_zh": "鸡蛋鸡肉盖饭的做法"
+          },
+          {
+            "step": 2,
+            "question_ja": "必要な情報はどこにあるか。",
+            "question_en": "Where is the necessary information?",
+            "question_zh": "所要找的信息在哪里。",
+            "analysis_ja": "材料、作り方、注意することが別々に書かれている。[作り方] のところを見る。",
+            "analysis_en": "The ingredients, method of preparation and points to bear in mind are discussed separately. Please see 作り方 (method of preparation).",
+            "analysis_zh": "分别写明了原材料、做法和注意事项。阅读做法处。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dokkai-n3-p2-05",
+      "pages": [
+        46,
+        47
+      ],
+      "problemNumber": 18,
+      "genre": "意見文",
+      "genre_en": "Expressions of opinion",
+      "genre_zh": "观点阐释文",
+      "title_ja": "5) 意見文",
+      "title_en": "5) Expressions of opinion",
+      "title_zh": "5) 观点阐释文",
+      "preReading": {
+        "question_ja": "電車の中で化粧をする人についてどう思いますか。",
+        "question_en": "What do you think about people who apply makeup on the train?",
+        "question_zh": "关于在电车里化妆的人，你是怎么看的？"
+      },
+      "passageInstructions": {
+        "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
+        "instruction_en": "Read the following text and answer the question. Choose the best answer from 1, 2, 3, 4."
+      },
+      "passage": {
+        "sentences": [
+          {
+            "id": 1,
+            "text_ja": "電車に乗ると、化粧をしている女性をときどき見かける。",
+            "ruby_html": "<ruby>電車<rt>でんしゃ</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ると、<ruby>化粧<rt>けしょう</rt></ruby>をしている<ruby>女性<rt>じょせい</rt></ruby>をときどき<ruby>見<rt>み</rt></ruby>かける。",
+            "text_en": "When I ride the train, I occasionally see women applying makeup."
+          },
+          {
+            "id": 2,
+            "text_ja": "彼女たちは、「時間がないんだし、他人に迷惑をかけているわけじゃないんだから、別にいいでしょ」と思っているらしい。",
+            "ruby_html": "<ruby>彼女<rt>かのじょ</rt></ruby>たちは、「<ruby>時間<rt>じかん</rt></ruby>がないんだし、<ruby>他人<rt>たにん</rt></ruby>に<ruby>迷惑<rt>めいわく</rt></ruby>をかけているわけじゃないんだから、<ruby>別<rt>べつ</rt></ruby>にいいでしょ」と<ruby>思<rt>おも</rt></ruby>っているらしい。",
+            "text_en": "They seem to think, 'I don't have time, and it's not like I'm troubling anyone else, so what's wrong with it?'"
+          },
+          {
+            "id": 3,
+            "text_ja": "確かに忙しい毎日の中、少しでも時間を節約したい気持ちもわかるが、私はそれを見ると、不快な気持ちになる。",
+            "ruby_html": "<ruby>確<rt>たし</rt></ruby>かに<ruby>忙<rt>いそが</rt></ruby>しい<ruby>毎日<rt>まいにち</rt></ruby>の<ruby>中<rt>なか</rt></ruby>、<ruby>少<rt>すこ</rt></ruby>しでも<ruby>時間<rt>じかん</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>したい<ruby>気持<rt>きも</rt></ruby>ちもわかるが、<ruby>私<rt>わたし</rt></ruby>はそれを<ruby>見<rt>み</rt></ruby>ると、<ruby>不快<rt>ふかい</rt></ruby>な<ruby>気持<rt>きも</rt></ruby>ちになる。",
+            "text_en": "To be sure, during busy daily life, I understand the desire to save even a little time, but when I see it, I feel uncomfortable."
+          },
+          {
+            "id": 4,
+            "text_ja": "化粧は人に会うための準備なので、家でするものであり、電車ですべきではない。",
+            "ruby_html": "<ruby>化粧<rt>けしょう</rt></ruby>は<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>うための<ruby>準備<rt>じゅんび</rt></ruby>なので、<ruby>家<rt>いえ</rt></ruby>でするものであり、<ruby>電車<rt>でんしゃ</rt></ruby>ですべきではない。",
+            "text_en": "Makeup is preparation for meeting other people, so it is something to be done at home and should not be done on the train."
+          },
+          {
+            "id": 5,
+            "text_ja": "電車で化粧をする人たちに、これから会う人の前でもそうやって化粧をするのかと聞くと、しないと言う。",
+            "ruby_html": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>化粧<rt>けしょう</rt></ruby>をする<ruby>人<rt>ひと</rt></ruby>たちに、これから<ruby>会<rt>あ</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>でもそうやって<ruby>化粧<rt>けしょう</rt></ruby>をするのかと<ruby>聞<rt>き</rt></ruby>くと、しないと<ruby>言<rt>い</rt></ruby>う。",
+            "text_en": "When asking people who apply makeup on trains whether they would put on makeup in front of the people they are about to meet, they say they would not."
+          },
+          {
+            "id": 6,
+            "text_ja": "一方、自分とは全然関係ない周りの乗客には、化粧する姿を見られても別に構わないと言う。",
+            "ruby_html": "<ruby>一方<rt>いっぽう</rt></ruby>、<ruby>自分<rt>じぶん</rt></ruby>とは<ruby>全然<rt>ぜんぜん</rt></ruby><ruby>関係<rt>かんけい</rt></ruby>ない<ruby>周<rt>まわ</rt></ruby>りの<ruby>乗客<rt>じょうきゃく</rt></ruby>には、<ruby>化粧<rt>けしょう</rt></ruby>する<ruby>姿<rt>すがた</rt></ruby>を<ruby>見<rt>み</rt></ruby>られても<ruby>別<rt>べつ</rt></ruby>に<ruby>構<rt>かま</rt></ruby>わないと<ruby>言<rt>い</rt></ruby>う。",
+            "text_en": "On the other hand, they say they don't mind at all if fellow passengers around them who have nothing to do with them see them putting on makeup."
+          },
+          {
+            "id": 7,
+            "text_ja": "これは、彼女たちが周りの人たちを風景の一部、壁や座席などと同じだと考えているように私には感じられる。",
+            "ruby_html": "これは、<ruby>彼女<rt>かのじょ</rt></ruby>たちが<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>たちを<ruby>風景<rt>ふうけい</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>、<ruby>壁<rt>かべ</rt></ruby>や<ruby>座席<rt>ざせき</rt></ruby>などと<ruby>同<rt>おな</rt></ruby>じだと<ruby>考<rt>かんが</rt></ruby>えているように<ruby>私<rt>わたし</rt></ruby>には<ruby>感<rt>かん</rt></ruby>じられる。",
+            "text_en": "To me, this feels as if they consider the people around them as part of the scenery, the same as walls or seats."
+          },
+          {
+            "id": 8,
+            "text_ja": "これは大変失礼ではないだろうか。",
+            "ruby_html": "これは<ruby>大変<rt>たいへん</rt></ruby><ruby>失礼<rt>しつれい</rt></ruby>ではないだろうか。",
+            "text_en": "Isn't this extremely rude?"
+          },
+          {
+            "id": 9,
+            "text_ja": "電車で化粧をするということは、そういう印象を周りの人に与えていることに気づいてほしい。",
+            "ruby_html": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>化粧<rt>けしょう</rt></ruby>をするということは、そういう<ruby>印象<rt>いんしょう</rt></ruby>を<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>に<ruby>与<rt>あた</rt></ruby>えていることに<ruby>気<rt>き</rt></ruby>づいてほしい。",
+            "text_en": "I want them to realize that applying makeup on the train gives that kind of impression to the people around them."
+          }
+        ]
+      },
+      "vocabulary": [
+        {
+          "term": "迷惑をかける",
+          "reading": "めいわくをかける",
+          "meaning": "To cause inconvenience / 添麻烦",
+          "type": "phrase"
+        },
+        {
+          "term": "す(る)べきではない",
+          "reading": "す(る)べきではない",
+          "meaning": "Should not do / 不应该做",
+          "type": "phrase"
+        },
+        {
+          "term": "不快な",
+          "reading": "ふかいな",
+          "meaning": "Unpleasant, disagreeable / 不高兴、不快",
+          "type": "na-adjective"
+        },
+        {
+          "term": "印象を与える",
+          "reading": "いんしょうをあたえる",
+          "meaning": "To create an impression / 留下印象",
+          "type": "phrase"
+        },
+        {
+          "term": "節約する",
+          "reading": "せつやくする",
+          "meaning": "to economize, save (time or money)",
+          "type": "noun/suru-verb"
+        },
+        {
+          "term": "乗客",
+          "reading": "じょうきゃく",
+          "meaning": "passenger",
+          "type": "noun"
+        },
+        {
+          "term": "風景",
+          "reading": "ふうけい",
+          "meaning": "scenery, landscape",
+          "type": "noun"
+        },
+        {
+          "term": "失礼",
+          "reading": "しつれい",
+          "meaning": "rude, impolite, disrespectful",
+          "type": "na-adjective/noun"
+        }
+      ],
+      "comprehensionQuestions": [
+        {
+          "questionId": "q-18-1",
+          "questionNumber": 1,
+          "questionText_ja": "この文章を書いた人は電車の中で化粧をすべきではないと言っているが、その理由は何か。",
+          "questionText_en": "The author says people should not apply makeup on the train, but what is the reason for this?",
+          "options": [
+            {
+              "id": 1,
+              "text_ja": "周りの人が人として見られていないように感じるから。",
+              "text_en": "Because it makes people around feel like they are not being seen as human beings."
+            },
+            {
+              "id": 2,
+              "text_ja": "化粧をするのは周りの人に迷惑をかける行動だから。",
+              "text_en": "Because applying makeup is an action that inconveniences the people around."
+            },
+            {
+              "id": 3,
+              "text_ja": "これから会う人に対して大変失礼なことだから。",
+              "text_en": "Because it is extremely disrespectful toward the people one is going to meet."
+            },
+            {
+              "id": 4,
+              "text_ja": "化粧する時間を節約するのは女性としてはずかしいことだから。",
+              "text_en": "Because saving time on makeup is shameful for a woman."
+            }
+          ],
+          "correctAnswer": 1,
+          "explanation_ja": "筆者は、電車で化粧をする人たちが「見られても別に構わない」とする態度に対し、「周りの人たちを風景の一部、壁や座席などと同じだと考えているように私には感じられる。これは大変失礼ではないだろうか」と述べています。つまり、周りの人間を人として見なさず物のように扱う印象を与えるため失礼である、と論じています。したがって、正解は 1 です。（選択肢2は化粧する側の主張「迷惑をかけていない」に対する反論の本質ではなく、3は「周りの乗客」に対する失礼さであり、4は本文にない記述です。）",
+          "explanation_en": "The author argues that people applying makeup on the train treat fellow passengers as if they were 'part of the scenery, the same as walls or seats'—in other words, not seeing them as fellow humans, which is extremely disrespectful. Therefore, Option 1 is correct. (Option 2 is not the author's primary reason; Option 3 misidentifies who is disrespected; Option 4 is nowhere in the text.)"
+        }
+      ],
+      "commentary": {
+        "title_ja": "解説 ◆意見文",
+        "text_ja": "意見を言っている文は、以下のような文末の文が多い。\n・〜べきである／〜べきではない\n・〜（する）必要がある\n・〜なければならない など",
+        "text_en": "In sentences expressing an opinion, the following kind of sentence ending is common:\n・~ beki de aru / ~ beki de wa nai\n・~ (suru) hitsuyou ga aru\n・~ nakereba naranai, etc.",
+        "text_zh": "阐述观点的句子常见句尾如下：\n・〜べきである／〜べきではない\n・〜（する）必要がある\n・〜なければならない 等"
+      },
+      "testAdvice": {
+        "title_ja": "試験問題では、次のように考えよう。",
+        "title_en": "In answering examination questions, ask yourself the following:",
+        "title_zh": "考试时分析步骤如下。",
+        "analysisSteps": [
+          {
+            "step": 1,
+            "question_ja": "何について書かれたものか。",
+            "question_en": "What is the text about?",
+            "question_zh": "文章论述的问题是什么。",
+            "analysis_ja": "電車での女性の化粧について",
+            "analysis_en": "About women applying makeup in the train",
+            "analysis_zh": "关于电车中女性的化妆"
+          },
+          {
+            "step": 2,
+            "question_ja": "筆者の主張は何か。",
+            "question_en": "What claim is the writer making?",
+            "question_zh": "作者的观点是什么。",
+            "analysis_ja": "化粧は電車でするべきではない。",
+            "analysis_en": "You should not apply makeup in the train.",
+            "analysis_zh": "不应该在电车中化妆。"
+          },
+          {
+            "step": 3,
+            "question_ja": "主張の理由は何か。",
+            "question_en": "What is the reason for the claim?",
+            "question_zh": "观点的依据是什么。",
+            "analysis_ja": "化粧する人は「自分と関係ない他人にみられてもかまわない」と言う。\n↓\n周りの人を無視し、人として考えていない。\n↓\n失礼だ。このような印象を周りに与えていることに気づいてほしい。",
+            "analysis_en": "People who apply makeup in this way say that they do not mind if they are watched by other people they have no connection with.\n↓\nIgnoring people around them, not seeing them as fellow humans.\n↓\nIt's rude. I hope they realize what kind of impression they are making on the people around them.",
+            "analysis_zh": "化妆的人说“即使被与自己无关的其他人看到也不在乎”。\n↓\n无视周围人的存在，不把别人当人看待。\n↓\n没有礼貌。希望他们意识到会给别人留下这种印象。"
+          }
+        ]
+      }
+    }
+  ]
+}

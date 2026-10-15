@@ -1,0 +1,127 @@
+.home-phase-row { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:12px; color:#b8c2d5; font-size:.85rem; }
+.home-phase-hint { color:#94a2ba; font-size:.76rem; margin:7px 0 14px; }
+/* Phase choice is available on every flashcard without changing review stats. */
+#view-study .study-skip-row { justify-content:flex-end; align-items:center; gap:12px; }
+.review-phase-switch { display:inline-flex; padding:3px; gap:3px; background:#111722; border:1px solid #30394b; border-radius:12px; }
+.review-phase-switch[hidden], .review-phase-label[hidden] { display:none; }
+.review-phase-switch button { min-height:38px; min-width:76px; padding:7px 14px; border:0; border-radius:8px; background:transparent; color:#9eabc1; font:inherit; font-size:.85rem; font-weight:650; cursor:pointer; }
+.review-phase-switch button[data-phase="learn"][aria-pressed="true"] { background:#183c38; color:#85e4c6; }
+.review-phase-switch button[data-phase="test"][aria-pressed="true"] { background:#39305b; color:#d4c2ff; }
+.review-phase-switch button:focus-visible { outline:2px solid #d4c2ff; outline-offset:2px; }
+.review-phase-label { margin-top:14px; color:#c4b0ff; font-size:.67rem; font-weight:700; letter-spacing:.08em; }
+#view-study .flashcard.review-learning { border-color:#39766a; }
+.review-learning .review-phase-label { color:#85e4c6; }
+body.hide-furigana #view-study .review-learning rt { visibility:visible; }
+/* Use the live mobile viewport, not a fixed card followed by an empty screen. */
+@media (max-width: 600px) {
+  body.in-runner #main { padding:15px 14px calc(15px + env(safe-area-inset-bottom,0px))!important; }
+  body.in-runner #view-study.active { display:flex; flex-direction:column; gap:12px; height:calc(100dvh - 30px - env(safe-area-inset-bottom,0px)); min-height:560px; }
+  #view-study .study-header { gap:10px; margin:0; flex:none; }
+  #view-study .study-header .btn { min-height:42px; border-radius:12px; border-color:rgba(181,193,220,.12); }
+  #view-study .study-progress-wrap { min-width:0; gap:10px; }
+  #view-study .study-progress-count { color:#b7bfd0; white-space:nowrap; }
+  #view-study .study-skip-row { flex:none; min-height:38px; padding:0; margin:0; background:none; border:0; }
+  #view-study .study-skip-row .btn { color:#9eabc1; min-height:36px; border-radius:10px; font-size:.73rem; }
+  #view-study #study-card-container { flex:1; min-height:0; display:flex; flex-direction:column; justify-content:center; }
+  #view-study .flashcard-stage { display:flex; flex:1; width:100%; min-height:0; max-height:min(56dvh,480px); margin:0; }
+  #view-study .flashcard { flex:1; height:auto; min-height:300px; padding:18px!important; border-radius:24px!important; border-color:rgba(184,193,216,.16); background:linear-gradient(150deg,#1c2230,#171c28); }
+  #view-study .flashcard-top { flex:none; align-items:flex-start; gap:10px; }
+  #view-study .card-lesson-tag { max-width:100%; color:#bdadff; font-size:.73rem; font-weight:600; padding:6px 9px; line-height:1.6; border-radius:9px; overflow-wrap:anywhere; }
+  #view-study .flashcard-top>div { flex:none; }
+  #view-study .flashcard-body { flex:1; gap:18px; margin:22px 0; }
+  #view-study .card-term-large { font-size:clamp(2.3rem,10vw,3.2rem); }
+  #view-study #card-meaning { font-size:1.08rem; line-height:1.55; max-width:100%; }
+  #view-study #card-meaning[style*="var(--text-dim)"] { color:#95a0b7!important; font-size:.94rem; font-weight:450; }
+  #view-study .card-example-box { padding:12px; margin-top:0; border-radius:12px; }
+  #view-study .grade-controls { flex:none; margin:0; gap:8px!important; }
+  #view-study .btn-grade { min-height:82px!important; border-radius:13px!important; }
+  #view-study .grade-label { font-size:1.05rem!important; font-weight:700; }
+}
+@media (max-height: 650px) and (max-width:600px) {
+  body.in-runner #view-study.active { height:auto; min-height:calc(100dvh - 30px); }
+  #view-study .flashcard { min-height:330px; }
+}
+
+/* Learning action stays in easy reach, outside the content card. */
+#view-study .study-skip-row.has-learn-action { justify-content:space-between; }
+#view-study .study-learn-action { min-height:52px; min-width:170px; padding:12px 22px; font-size:1rem; border-radius:13px; color:#fff; }
+#view-study .study-learn-action[hidden] { display:none; }
+#view-study .card-example-box { box-sizing:border-box; min-width:0; width:100%; max-width:100%; overflow-wrap:anywhere; flex-shrink:0; }
+#view-study .card-example-ja, #view-study .card-example-en { overflow-wrap:anywhere; line-height:1.55; }
+@media (max-width:600px) {
+  #view-study .study-skip-row .study-learn-action { min-height:52px; font-size:1rem; color:#fff; }
+  #view-study #study-card-container:has(.review-learning) { justify-content:flex-start; padding-top:10px; }
+  #view-study .flashcard-stage:has(.review-learning) { flex:none; min-height: min(56dvh,480px); max-height:none; }
+  #view-study .review-learning { min-height:min(56dvh,480px); height:auto; }
+  #view-study .review-learning .flashcard-body { flex:none; min-height:0; gap:16px; margin:24px 0 6px; }
+  #view-study .review-learning .card-term-large { line-height:1.5; }
+}
+
+/* Next belongs just below the card, not at the bottom of the viewport. */
+#view-study #study-card-container.has-learn-action { justify-content:flex-start; gap:16px; }
+#view-study #study-card-container .study-learn-action { align-self:center; flex:none; margin:0 0 12px; min-height:52px; min-width:190px; font-size:1rem; color:#fff; }
+
+.vocab-kanji-breakdown { width:100%; text-align:left; flex:none; }
+.vocab-kanji-heading { color:#96a4bb; font-size:.68rem; margin-bottom:5px; }
+.vocab-kanji-chips { display:flex; flex-wrap:wrap; gap:5px; }
+.vocab-kanji-chip { display:inline-flex; align-items:baseline; gap:5px; padding:4px 7px; background:rgba(158,170,198,.07); border:1px solid rgba(158,170,198,.13); border-radius:8px; color:#bbc6d9; font-size:.75rem; line-height:1.4; overflow-wrap:anywhere; max-width:100%; }
+.vocab-kanji-chip b { color:#e0d8fa; font-size:1rem; }
+.vocab-kanji-source { display:block; width:max-content; margin-top:4px; color:#8290a7; font-size:.58rem; text-decoration:none; }
+@media (max-width:600px) {
+  #view-study .flashcard:has(#vocab-kanji-breakdown) .flashcard-body { min-height:0; gap:12px; margin:16px 0 6px; }
+  #view-study .flashcard-stage:has(#vocab-kanji-breakdown) { max-height:none; flex:none; }
+  #view-study .flashcard:has(#vocab-kanji-breakdown) { height:auto; min-height: min(56dvh,480px); }
+  #view-study #study-card-container:has(#vocab-kanji-breakdown) { justify-content:flex-start; }
+  #view-study .flashcard:has(#vocab-kanji-breakdown) .card-term-large { line-height:1.5; }
+}
+
+/* Keep every grade action outside the card's bounds, even on short phones. */
+@media (max-width:600px) {
+  body.in-runner #view-study.active { height:calc(100dvh - 30px - env(safe-area-inset-bottom,0px)); min-height:0; }
+  #view-study #study-card-container:has(.review-testing) { flex:1; min-height:0; justify-content:flex-start; overflow:hidden; }
+  #view-study .flashcard-stage:has(.review-testing) { flex:1!important; min-height:0!important; max-height:none!important; height:100%!important; }
+  #view-study .flashcard.review-testing { min-height:0!important; height:100%!important; max-height:100%!important; overflow:hidden; }
+  #view-study .review-testing .flashcard-body { min-height:0; flex:1; overflow-y:auto; overflow-x:hidden; justify-content:safe center; overscroll-behavior:contain; padding:10px 2px; margin:10px 0 0; scrollbar-width:thin; }
+  #view-study .review-testing .flashcard-body > * { flex-shrink:0; }
+  #view-study .grade-controls { position:relative; z-index:1; flex:none; background:var(--bg); padding-top:2px; }
+}
+@media (max-width:600px) {
+  #view-study .review-testing .flashcard-body { gap:8px!important; padding:7px 2px; margin:7px 0 0!important; }
+  #view-study .review-testing .card-term-large { font-size:clamp(1.9rem,8vw,2.5rem); line-height:1.45; }
+  #view-study .review-testing #card-meaning { font-size:.97rem; line-height:1.4; }
+  #view-study .review-testing .card-romaji { margin-top:.3rem!important; font-size:.82rem!important; }
+  #view-study .review-testing .review-phase-label { margin-top:8px; font-size:.62rem; }
+  #view-study .review-testing .card-example-box { padding:9px 10px; }
+  #view-study .review-testing .card-example-ja { font-size:.95rem; }
+  #view-study .review-testing .card-example-en { font-size:.79rem; margin-top:.2rem; }
+  #view-study .review-testing .vocab-kanji-chip { padding:3px 6px; font-size:.69rem; }
+  #view-study .review-testing .vocab-kanji-chip b { font-size:.9rem; }
+}
+#view-study .study-skip-row { justify-content:space-between; gap:8px; flex:none; }
+#view-study .study-skip-row button[hidden] { display:none; }
+#view-study .study-skip-row button:disabled { opacity:.38; cursor:default; }
+#view-study .study-skip-row button { min-height:36px; }
+/* Keep frequent navigation beside the card actions, in thumb reach. */
+#view-study .study-skip-row { display:flex; width:100%; align-items:center; gap:8px; }
+#view-study .study-skip-row .btn { flex:1; min-height:48px; font-size:.82rem; }
+#view-study .study-skip-row.has-learn-action { display:grid!important; grid-template-columns:1fr 1.7fr; }
+#view-study .study-skip-row .study-learn-action { min-width:0; width:100%; min-height:52px; margin:0; padding:10px 12px; }
+@media(max-width:600px) {
+  #view-study #study-card-container.has-learn-action { flex:1; gap:0; padding-top:0; overflow:hidden; }
+  #view-study #study-card-container:has(.review-learning) { min-height:0; }
+  #view-study .flashcard-stage:has(.review-learning) { flex:1!important; min-height:0!important; height:100%!important; }
+  #view-study .flashcard.review-learning { min-height:0!important; height:100%!important; overflow:hidden; }
+  #view-study .review-learning .flashcard-body { flex:1; min-height:0; overflow-y:auto; justify-content:safe center; overscroll-behavior:contain; }
+  #view-study .review-learning .flashcard-body > * { flex-shrink:0; }
+}
+/* Test: content-sized card, large grade area, stable bottom navigation. */
+@media(max-width:600px) {
+  #view-study.test-action-layout #study-card-container { flex:0 1 auto!important; min-height:0; max-height:52dvh; overflow:hidden; }
+  #view-study.test-action-layout .flashcard-stage:has(.review-testing) { flex:0 1 auto!important; height:auto!important; max-height:52dvh!important; }
+  #view-study.test-action-layout .flashcard.review-testing { flex:none; height:auto!important; min-height:0!important; max-height:52dvh!important; width:100%; }
+  #view-study.test-action-layout .review-testing .flashcard-body { flex:0 1 auto; margin-bottom:0!important; justify-content:flex-start; }
+  #view-study.test-action-layout .grade-controls { order:3; display:grid!important; flex:1 1 0%; min-height:164px; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); }
+  #view-study.test-action-layout .btn-grade { height:100%; min-height:0!important; }
+  #view-study.test-action-layout .btn-grade:disabled { opacity:.4; cursor:default; }
+  #view-study.test-action-layout .study-skip-row { order:4; flex:none; }
+}

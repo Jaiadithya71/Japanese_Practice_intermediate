@@ -1,0 +1,16 @@
+/* SRS-first Hub additions */
+.due-chips{display:flex;gap:.5rem;margin:.6rem 0 .8rem;flex-wrap:wrap}
+.due-chip{flex:1 1 0;min-height:40px;padding:.35rem .6rem;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#c7cbe0;font-size:.82rem;cursor:pointer}
+.due-chip b{color:#fff;font-size:1rem;margin-right:.2rem}
+.due-chip:disabled{opacity:.45;cursor:default}
+.today-main:disabled{opacity:.6}
+.today-steps .ts-n i{font-size:.8rem}
+.study-skip-row{display:flex;justify-content:center;margin-top:.9rem}
+.learn-badge{display:inline-block;font-size:.65rem;font-weight:800;letter-spacing:.08em;color:#22d3a4;border:1px solid rgba(34,211,164,.4);border-radius:999px;padding:.15rem .6rem;margin-bottom:.5rem}
+.learn-gotit{min-height:48px;padding:0 1.6rem;font-size:1rem;margin-top:.4rem}
+@media (min-width:901px){
+  #today-card{display:block!important;background:linear-gradient(145deg,rgba(124,108,250,.14),rgba(124,108,250,.04));border:1px solid rgba(124,108,250,.3);border-radius:20px;padding:1.5rem;margin-bottom:2rem;max-width:760px}
+}
+
+/* Keep Skip physically separate from the tappable flashcard surface. */
+.study-skip-row{display:flex;justify-content:flex-end;min-height:42px;margin:0 0 .75rem;padding:.35rem .6rem;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.025)}.study-skip-row .btn{min-height:34px;padding:.3rem .65rem;color:var(--text-dim);border:1px solid rgba(255,255,255,.12);border-radius:9px}

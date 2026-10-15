@@ -1,0 +1,1839 @@
+{
+  "metadata": {
+    "title": "<ruby>模擬試験<rt>もぎしけん</rt></ruby>",
+    "title_en": "JLPT N3 Grammar Mock Tests (Full Practice Exams 1 & 2)",
+    "description": "Complete mock tests for JLPT N3 Grammar from Shin Kanzen Master. Features Test 1 and Test 2, each with 23 exam-formatted questions across Mondai 1 (Grammar Form Judgment), Mondai 2 (Sentence Arrangement / Star Questions), and Mondai 3 (Passage Cloze Reading), complete with answers, full reconstructed sentences, and explanations.",
+    "total_mock_tests": 2,
+    "total_questions": 46,
+    "test_1_questions": 23,
+    "test_2_questions": 23,
+    "source_pages": "P148 ~ P155 (Images 148 ~ 156)"
+  },
+  "mock_tests": [
+    {
+      "test_number": 1,
+      "title": "<ruby>模擬試験<rt>もぎしけん</rt></ruby> <ruby>第<rt>だい</rt></ruby>1<ruby>回<rt>かい</rt></ruby>",
+      "title_en": "JLPT N3 Grammar Mock Test 1",
+      "source_pages": "P148 ~ P151 (Images 149 ~ 152)",
+      "total_questions": 23,
+      "sections": [
+        {
+          "section_number": 1,
+          "section_name": "<ruby>問題<rt>もんだい</rt></ruby>1",
+          "section_title": "<ruby>文法形式<rt>ぶんぽうけいしき</rt></ruby>の<ruby>判断<rt>はんだん</rt></ruby>",
+          "section_title_en": "Grammar Form Judgment",
+          "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の（　）に<ruby>入<rt>はい</rt></ruby>るものとして<ruby>最<rt>もっと</rt></ruby>もよいものを、1・2・3・4から<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+          "questions": [
+            {
+              "question_id": 1001,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>一度<rt>いちど</rt></ruby>（　）<ruby>会<rt>あ</rt></ruby>ったことがあれば、<ruby>友<rt>とも</rt></ruby>だちだと<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>もいる。",
+              "options": [
+                "1　も",
+                "2　でも",
+                "3　さえ",
+                "4　こそ"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "<ruby>一度<rt>いちど</rt></ruby>でも<ruby>会<rt>あ</rt></ruby>ったことがあれば、<ruby>友<rt>とも</rt></ruby>だちだと<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>もいる。",
+              "full_sentence_en": "Some people consider someone a friend if they have met even once.",
+              "explanation_ja": "「〜でも」は最小限の例を挙げて「たとえ〜だけでも」という意味を表す。2が正解。",
+              "explanation_en": "'~demo' is used with a minimal condition to mean 'even if only once'. Choice 2 is correct."
+            },
+            {
+              "question_id": 1002,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "ここにたくさんのびんがあります。<ruby>大<rt>おお</rt></ruby>きさ（　）<ruby>三<rt>みっ</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>けてください。",
+              "options": [
+                "1　に<ruby>比<rt>くら</rt></ruby>べて",
+                "2　について",
+                "3　によって",
+                "4　に<ruby>対<rt>たい</rt></ruby>して"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "ここにたくさんのびんがあります。<ruby>大<rt>おお</rt></ruby>きさによって<ruby>三<rt>みっ</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>けてください。",
+              "full_sentence_en": "There are many bottles here. Please sort them into three groups according to their size.",
+              "explanation_ja": "「〜によって」は基準や区分を表す。「大きさに応じて・基準として」。3が正解。",
+              "explanation_en": "'~ni yotte' indicates a standard or criterion ('according to'). Choice 3 is correct."
+            },
+            {
+              "question_id": 1003,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "A「この<ruby>本<rt>ほん</rt></ruby>、<ruby>面白<rt>おもしろ</rt></ruby>かったですよ。」\nB「じゃ、わたしにも（　）ほしいです。お<ruby>借<rt>か</rt></ruby>りしてもいいですか。」",
+              "options": [
+                "1　<ruby>読<rt>よ</rt></ruby>んで",
+                "2　<ruby>読<rt>よ</rt></ruby>まれて",
+                "3　<ruby>読<rt>よ</rt></ruby>ませて",
+                "4　<ruby>読<rt>よ</rt></ruby>むのが"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "B「じゃ、わたしにも<ruby>読<rt>よ</rt></ruby>ませてほしいです。お<ruby>借<rt>か</rt></ruby>りしてもいいですか。」",
+              "full_sentence_en": "B: 'Well then, I'd like you to let me read it too. May I borrow it?'",
+              "explanation_ja": "「〜（使役て形）てほしい」で自分に許可を求める表現。「読ませてほしい」。3が正解。",
+              "explanation_en": "Causative te-form + hoshii expresses asking permission for oneself: '読ませてほしい'. Choice 3 is correct."
+            },
+            {
+              "question_id": 1004,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>日本<rt>にほん</rt></ruby>では、<ruby>秋<rt>あき</rt></ruby>は（　）とてもいい<ruby>季節<rt>きせつ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>われている。",
+              "options": [
+                "1　<ruby>読書<rt>どくしょ</rt></ruby>するのに",
+                "2　<ruby>読書<rt>どくしょ</rt></ruby>することで",
+                "3　<ruby>読書<rt>どくしょ</rt></ruby>できるように",
+                "4　<ruby>読書<rt>どくしょ</rt></ruby>できるうちに"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "<ruby>日本<rt>にほん</rt></ruby>では、<ruby>秋<rt>あき</rt></ruby>は<ruby>読書<rt>どくしょ</rt></ruby>するのにとてもいい<ruby>季節<rt>きせつ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>われている。",
+              "full_sentence_en": "In Japan, autumn is said to be a very pleasant season for reading.",
+              "explanation_ja": "「〜するのにいい／便利だ」は用途や目的・評価の基準を表す。1が正解。",
+              "explanation_en": "'~no ni' expresses purpose or standard of evaluation ('for reading'). Choice 1 is correct."
+            },
+            {
+              "question_id": 1005,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "きのうの<ruby>試験<rt>しけん</rt></ruby>で<ruby>自分<rt>じぶん</rt></ruby>では<ruby>正<rt>ただ</rt></ruby>しい<ruby>答<rt>こた</rt></ruby>えを（　）が、わたしの<ruby>答<rt>こた</rt></ruby>えは<ruby>間違<rt>まちが</rt></ruby>いだった。",
+              "options": [
+                "1　<ruby>書<rt>か</rt></ruby>くつもりになった",
+                "2　<ruby>書<rt>か</rt></ruby>いたつもりだった",
+                "3　<ruby>書<rt>か</rt></ruby>くことになった",
+                "4　<ruby>書<rt>か</rt></ruby>いたことだった"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "きのうの<ruby>試験<rt>しけん</rt></ruby>で<ruby>自分<rt>じぶん</rt></ruby>では<ruby>正<rt>ただ</rt></ruby>しい<ruby>答<rt>こた</rt></ruby>えを<ruby>書<rt>か</rt></ruby>いたつもりだったが、わたしの<ruby>答<rt>こた</rt></ruby>えは<ruby>間違<rt>まちが</rt></ruby>いだった。",
+              "full_sentence_en": "In yesterday's exam, I believed I had written the correct answer, but my answer was wrong.",
+              "explanation_ja": "「〜たつもりだった」は実際とは違って自分ではそう思っていたことを表す。2が正解。",
+              "explanation_en": "'~ta tsumori datta' indicates holding a belief that turned out contrary to fact. Choice 2 is correct."
+            },
+            {
+              "question_id": 1006,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>後輩<rt>こうはい</rt></ruby>「それ、<ruby>何<rt>なん</rt></ruby>ですか。」\n<ruby>先輩<rt>せんぱい</rt></ruby>「<ruby>京都<rt>きょうと</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>だよ。」\n<ruby>後輩<rt>こうはい</rt></ruby>「あ、<ruby>京都<rt>きょうと</rt></ruby>へ（　）んですか。<ruby>桜<rt>さくら</rt></ruby>がきれいであったでしょう。」",
+              "options": [
+                "1　<ruby>参<rt>まい</rt></ruby>られた",
+                "2　いられた",
+                "3　<ruby>伺<rt>うかが</rt></ruby>われた",
+                "4　<ruby>行<rt>い</rt></ruby>かれた"
+              ],
+              "correct_answer": "4",
+              "full_sentence": "<ruby>後輩<rt>こうはい</rt></ruby>「あ、<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>かれたんですか。<ruby>桜<rt>さくら</rt></ruby>がきれいであったでしょう。」",
+              "full_sentence_en": "Junior: 'Ah, did you go to Kyoto? The cherry blossoms must have been lovely.'",
+              "explanation_ja": "先輩の動作に対する尊敬表現。動詞「行く」の尊敬形（受身形）「行かれた」。4が正解。",
+              "explanation_en": "Honorific form of '行く' directed at a senior: '行かれた'. Choice 4 is correct."
+            },
+            {
+              "question_id": 1007,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "そんなに<ruby>仕事<rt>しごと</rt></ruby>を（　）、<ruby>体<rt>からだ</rt></ruby>をこわしますよ。",
+              "options": [
+                "1　したばかりだと",
+                "2　してばかりいると",
+                "3　したところでは",
+                "4　したところだと"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "そんなに<ruby>仕事<rt>しごと</rt></ruby>をしてばかりいると、<ruby>体<rt>からだ</rt></ruby>をこわしますよ。",
+              "full_sentence_en": "If you do nothing but work like that, you will ruin your health.",
+              "explanation_ja": "「〜てばかりいる」はその行為だけを過度に繰り返すことを表す。2が正解。",
+              "explanation_en": "'~te bakari iru' means doing only that action constantly. Choice 2 is correct."
+            },
+            {
+              "question_id": 1008,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>球技<rt>きゅうぎ</rt></ruby>というのは、ボールを<ruby>使<rt>つか</rt></ruby>うスポーツ（　）。",
+              "options": [
+                "1　というのだ",
+                "2　というものだ",
+                "3　という",
+                "4　のことだ"
+              ],
+              "correct_answer": "4",
+              "full_sentence": "<ruby>球技<rt>きゅうぎ</rt></ruby>というのは、ボールを<ruby>使<rt>つか</rt></ruby>うスポーツのことだ。",
+              "full_sentence_en": "Ball games mean sports that use a ball.",
+              "explanation_ja": "「〜というのは…のことだ」は言葉の定義や意味を説明する基本文型。4が正解。",
+              "explanation_en": "'~to iu no wa ... no koto da' explains the definition of a term. Choice 4 is correct."
+            },
+            {
+              "question_id": 1009,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "わたしがこの<ruby>町<rt>まち</rt></ruby>のことをよく<ruby>知<rt>し</rt></ruby>っているのは、<ruby>前<rt>まえ</rt></ruby>に（　）。",
+              "options": [
+                "1　<ruby>住<rt>す</rt></ruby>んでいたんですから",
+                "2　<ruby>住<rt>す</rt></ruby>んでいたからなんです",
+                "3　<ruby>住<rt>す</rt></ruby>んでいたんです",
+                "4　<ruby>住<rt>す</rt></ruby>んでいました"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "わたしがこの<ruby>町<rt>まち</rt></ruby>のことをよく<ruby>知<rt>し</rt></ruby>っているのは、<ruby>前<rt>まえ</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいたからなんです。",
+              "full_sentence_en": "The reason I know this town well is because I used to live here before.",
+              "explanation_ja": "「〜のは…からだ／からなんです」という理由の呼応表現。2が正解。",
+              "explanation_en": "Corresponds to '〜のは…からなんです' to give a reason. Choice 2 is correct."
+            },
+            {
+              "question_id": 1010,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>報告書<rt>ほうこくしょ</rt></ruby>はこのような<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>では（　）と<ruby>思<rt>おも</rt></ruby>います。",
+              "options": [
+                "1　わかりやすかった",
+                "2　わかってもらいたい",
+                "3　わかってもらえない",
+                "4　わかりそうだ"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "<ruby>報告書<rt>ほうこくしょ</rt></ruby>はこのような<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>ではわかってもらえないと<ruby>思<rt>おも</rt></ruby>います。",
+              "full_sentence_en": "I think that with this way of writing, the report won't be understood by readers.",
+              "explanation_ja": "「このような書き方では（読み手に）わかってもらえない」（可能否定）。3が正解。",
+              "explanation_en": "Potential negative benefactive: 'わかってもらえない'. Choice 3 is correct."
+            },
+            {
+              "question_id": 1011,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>店長<rt>てんちょう</rt></ruby>「あれ、<ruby>田中<rt>たなか</rt></ruby><ruby>君<rt>くん</rt></ruby>は？」\n<ruby>店員<rt>てんいん</rt></ruby>「さっき<ruby>電話<rt>でんわ</rt></ruby>があって、<ruby>少<rt>すこ</rt></ruby>し（　）。」",
+              "options": [
+                "1　<ruby>遅<rt>おく</rt></ruby>れることです",
+                "2　<ruby>遅<rt>おく</rt></ruby>れるとのことです",
+                "3　<ruby>遅<rt>おく</rt></ruby>れようとしています",
+                "4　<ruby>遅<rt>おく</rt></ruby>れようと<ruby>言<rt>い</rt></ruby>っています"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "<ruby>店員<rt>てんいん</rt></ruby>「さっき<ruby>電話<rt>でんわ</rt></ruby>があって、<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れるとのことです。」",
+              "full_sentence_en": "Staff: 'He called earlier and says he will be a little late.'",
+              "explanation_ja": "「〜とのことです」は他者からの伝言・伝聞を丁寧に報告する表現。2が正解。",
+              "explanation_en": "'~to no koto desu' politely conveys a message received from someone. Choice 2 is correct."
+            },
+            {
+              "question_id": 1012,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "わたしは<ruby>疲<rt>つか</rt></ruby>れたら<ruby>無理<rt>むり</rt></ruby>をしないで<ruby>十分<rt>じゅうぶん</rt></ruby>（　）。",
+              "options": [
+                "1　<ruby>寝<rt>ね</rt></ruby>るようにしている",
+                "2　<ruby>寝<rt>ね</rt></ruby>るようになっている",
+                "3　<ruby>寝<rt>ね</rt></ruby>るということだ",
+                "4　<ruby>寝<rt>ね</rt></ruby>るというところだ"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "わたしは<ruby>疲<rt>つか</rt></ruby>れたら<ruby>無理<rt>むり</rt></ruby>をしないで<ruby>十分<rt>じゅうぶん</rt></ruby><ruby>寝<rt>ね</rt></ruby>るようにしている。",
+              "full_sentence_en": "Whenever I am tired, I make it a habit not to overwork and get plenty of sleep.",
+              "explanation_ja": "「〜ようにしている」は意識的な習慣や努力を表す。1が正解。",
+              "explanation_en": "'~you ni shite iru' indicates a conscious, ongoing effort or rule for oneself. Choice 1 is correct."
+            },
+            {
+              "question_id": 1013,
+              "category": "第1回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "A「<ruby>今度<rt>こんど</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>、<ruby>受<rt>う</rt></ruby>けないんですか。」\nB「ええ。でも、<ruby>合格<rt>ごうかく</rt></ruby>を（　）。<ruby>次回<rt>じかい</rt></ruby><ruby>受<rt>う</rt></ruby>けます。」",
+              "options": [
+                "1　あきらめたわけではありません",
+                "2　あきらめたつもりではありません",
+                "3　あきらめないわけにはいきません",
+                "4　あきらめないのではないでしょう"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "B「ええ。でも、<ruby>合格<rt>ごうかく</rt></ruby>をあきらめたわけではありません。<ruby>次回<rt>じかい</rt></ruby><ruby>受<rt>う</rt></ruby>けます。」",
+              "full_sentence_en": "B: 'Yes. But it's not that I've given up on passing. I will take it next time.'",
+              "explanation_ja": "「〜わけではない」は一部否定を表す。「合格をあきらめたわけではない」。1が正解。",
+              "explanation_en": "'~wake dewa nai' means 'it doesn't mean that...'. Choice 1 is correct."
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "section_name": "<ruby>問題<rt>もんだい</rt></ruby>2",
+          "section_title": "<ruby>文<rt>ぶん</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て",
+          "section_title_en": "Sentence Composition (Star Arrangement)",
+          "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の★に<ruby>入<rt>はい</rt></ruby>る<ruby>最<rt>もっと</rt></ruby>もよいものを、1・2・3・4から<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+          "questions": [
+            {
+              "question_id": 1014,
+              "category": "第1回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>子<rt>こ</rt></ruby>どものころから、　＿＿＿　＿＿＿　＿★＿　＿＿＿　と<ruby>言<rt>い</rt></ruby>われてきた。",
+              "options": [
+                "1　<ruby>考<rt>かんが</rt></ruby>えて",
+                "2　<ruby>行動<rt>こうどう</rt></ruby>する",
+                "3　<ruby>周<rt>まわ</rt></ruby>りのことを",
+                "4　ように"
+              ],
+              "correct_order": [
+                3,
+                1,
+                2,
+                4
+              ],
+              "star_position": 3,
+              "correct_answer": 2,
+              "full_sentence": "<ruby>子<rt>こ</rt></ruby>どものころから、<ruby>周<rt>まわ</rt></ruby>りのことを<ruby>考<rt>かんが</rt></ruby>えて<ruby>行動<rt>こうどう</rt></ruby>するようにと<ruby>言<rt>い</rt></ruby>われてきた。",
+              "full_sentence_en": "Since childhood, I have been told to consider those around me before acting.",
+              "explanation_ja": "「周りのことを（3）考えて（1）行動する（2）ように（4）」。★には2が入る。",
+              "explanation_en": "Order is 3-1-2-4. Star position is 2. Choice 2 is correct."
+            },
+            {
+              "question_id": 1015,
+              "category": "第1回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "わたしは　＿＿＿　＿＿＿　＿★＿　＿＿＿　<ruby>必<rt>かなら</rt></ruby>ず<ruby>答<rt>こた</rt></ruby>えはあると<ruby>思<rt>おも</rt></ruby>う。",
+              "options": [
+                "1　<ruby>難<rt>むずか</rt></ruby>しい",
+                "2　どんなに",
+                "3　たとえ",
+                "4　<ruby>問題<rt>もんだい</rt></ruby>でも"
+              ],
+              "correct_order": [
+                3,
+                2,
+                1,
+                4
+              ],
+              "star_position": 3,
+              "correct_answer": 1,
+              "full_sentence": "わたしはたとえどんなに<ruby>難<rt>むずか</rt></ruby>しい<ruby>問題<rt>もんだい</rt></ruby>でも<ruby>必<rt>かなら</rt></ruby>ず<ruby>答<rt>こた</rt></ruby>えはあると<ruby>思<rt>おも</rt></ruby>う。",
+              "full_sentence_en": "I believe that no matter how difficult a problem may be, there is always an answer.",
+              "explanation_ja": "「たとえ（3）どんなに（2）難しい（1）問題でも（4）」。★には1が入る。",
+              "explanation_en": "Order is 3-2-1-4. Star position is 1. Choice 1 is correct."
+            },
+            {
+              "question_id": 1016,
+              "category": "第1回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>会<rt>あ</rt></ruby>う<ruby>約束<rt>やくそく</rt></ruby>をした<ruby>友<rt>とも</rt></ruby>だちから　＿＿＿　＿＿＿　＿★＿　＿＿＿　メールが<ruby>来<rt>き</rt></ruby>た。",
+              "options": [
+                "1　<ruby>電車<rt>でんしゃ</rt></ruby>が",
+                "2　<ruby>乗<rt>の</rt></ruby>っている",
+                "3　という",
+                "4　<ruby>止<rt>と</rt></ruby>まっている"
+              ],
+              "correct_order": [
+                2,
+                1,
+                4,
+                3
+              ],
+              "star_position": 3,
+              "correct_answer": 4,
+              "full_sentence": "<ruby>会<rt>あ</rt></ruby>う<ruby>約束<rt>やくそく</rt></ruby>をした<ruby>友<rt>とも</rt></ruby>だちから<ruby>乗<rt>の</rt></ruby>っている<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっているというメールが<ruby>来<rt>き</rt></ruby>た。",
+              "full_sentence_en": "I received an email from the friend I had promised to meet, saying that the train they were riding had stopped.",
+              "explanation_ja": "「乗っている（2）電車が（1）止まっている（4）という（3）メール」。★には4が入る。",
+              "explanation_en": "Order is 2-1-4-3. Star position is 4. Choice 4 is correct."
+            },
+            {
+              "question_id": 1017,
+              "category": "第1回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>古<rt>ふる</rt></ruby>くなった<ruby>歯<rt>は</rt></ruby>ブラシを<ruby>掃除用具<rt>そうじようぐ</rt></ruby>　＿＿＿　＿＿＿　＿★＿　＿＿＿　した。",
+              "options": [
+                "1　<ruby>使<rt>つか</rt></ruby>う",
+                "2　として",
+                "3　に",
+                "4　こと"
+              ],
+              "correct_order": [
+                2,
+                1,
+                4,
+                3
+              ],
+              "star_position": 3,
+              "correct_answer": 4,
+              "full_sentence": "<ruby>古<rt>ふる</rt></ruby>くなった<ruby>歯<rt>は</rt></ruby>ブラシを<ruby>掃除用具<rt>そうじようぐ</rt></ruby>として<ruby>使<rt>つか</rt></ruby>うことにした。",
+              "full_sentence_en": "I decided to use an old toothbrush as a cleaning tool.",
+              "explanation_ja": "「掃除用具として（2）使う（1）こと（4）に（3）した」。★には4が入る。",
+              "explanation_en": "Order is 2-1-4-3. Star position is 4. Choice 4 is correct."
+            },
+            {
+              "question_id": 1018,
+              "category": "第1回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>学生<rt>がくせい</rt></ruby>「<ruby>先生<rt>せんせい</rt></ruby>、スピーチではわたしの<ruby>家族<rt>かぞく</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をしたいんですが……。」\n<ruby>先生<rt>せんせい</rt></ruby>「うーん。スピーチのテーマは<ruby>何<rt>なん</rt></ruby>でも　＿＿＿　＿＿＿　＿★＿　＿＿＿　ことだけです。」",
+              "options": [
+                "1　わけではなく",
+                "2　に<ruby>関<rt>かん</rt></ruby>する",
+                "3　<ruby>日本文化<rt>にほんぶんか</rt></ruby>",
+                "4　いいという"
+              ],
+              "correct_order": [
+                4,
+                1,
+                3,
+                2
+              ],
+              "star_position": 3,
+              "correct_answer": 3,
+              "full_sentence": "<ruby>先生<rt>せんせい</rt></ruby>「うーん。スピーチのテーマは<ruby>何<rt>なん</rt></ruby>でもいいというわけではなく<ruby>日本文化<rt>にほんぶんか</rt></ruby>に<ruby>関<rt>かん</rt></ruby>することだけです。」",
+              "full_sentence_en": "Teacher: 'Well, it's not that any speech topic is fine; it must strictly relate to Japanese culture.'",
+              "explanation_ja": "「何でもいいという（4）わけではなく（1）日本文化（3）に関する（2）ことだけです」。★には3が入る。",
+              "explanation_en": "Order is 4-1-3-2. Star position is 3. Choice 3 is correct."
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "section_name": "<ruby>問題<rt>もんだい</rt></ruby>3",
+          "section_title": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>",
+          "section_title_en": "Text Grammar (Passage Cloze)",
+          "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んで、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えて、［ 19 ］から［ 23 ］の<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>最<rt>もっと</rt></ruby>もよいものを、1・2・3・4から<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+          "passage_title": "<ruby>米<rt>こめ</rt></ruby>",
+          "passage_author": "リー リサ",
+          "passage_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。",
+          "questions": [
+            {
+              "question_id": 1019,
+              "category": "第1回 問題3",
+              "passage_title": "米",
+              "passage_author": "リー リサ",
+              "question_type": "cloze_passage",
+              "blank_number": 19,
+              "prompt": "［ 19 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　いろいろなことを知っています",
+                "2　いろいろなことが知られています",
+                "3　いろいろなことを考えます",
+                "4　いろいろなことが考えられます"
+              ],
+              "correct_answer": "3",
+              "explanation_ja": "おにぎりを食べながら、話者自身が米についてあれこれ思考を巡らせるので「いろいろなことを考えます」。3が正解。",
+              "explanation_en": "The speaker personally reflects on rice while eating onigiri: '考えます'. Choice 3 is correct.",
+              "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+            },
+            {
+              "question_id": 1020,
+              "category": "第1回 問題3",
+              "passage_title": "米",
+              "passage_author": "リー リサ",
+              "question_type": "cloze_passage",
+              "blank_number": 20,
+              "prompt": "［ 20 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　アジアの人たちの主食が",
+                "2　アジアの人たちが主食で",
+                "3　アジアの人たちが主食として",
+                "4　アジアの人たちの主食として"
+              ],
+              "correct_answer": "4",
+              "explanation_ja": "米は「アジアの人たちの主食として食べられています」。「〜として」で資格・位置づけを表す。4が正解。",
+              "explanation_en": "Rice is eaten 'as the staple food of Asian people': '主食として'. Choice 4 is correct.",
+              "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+            },
+            {
+              "question_id": 1021,
+              "category": "第1回 問題3",
+              "passage_title": "米",
+              "passage_author": "リー リサ",
+              "question_type": "cloze_passage",
+              "blank_number": 21,
+              "prompt": "［ 21 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　つまり",
+                "2　ところが",
+                "3　または",
+                "4　しかも"
+              ],
+              "correct_answer": "2",
+              "explanation_ja": "米が主食であるという前の記述に対し、「ところが、今、日本では若い人たちを中心に米を食べる人が減っている」と逆接・意外な現状を提示する。2が正解。",
+              "explanation_en": "Introduces the surprising contrary fact that consumption is dropping: 'ところが'. Choice 2 is correct.",
+              "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+            },
+            {
+              "question_id": 1022,
+              "category": "第1回 問題3",
+              "passage_title": "米",
+              "passage_author": "リー リサ",
+              "question_type": "cloze_passage",
+              "blank_number": 22,
+              "prompt": "［ 22 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　見直されたからいい",
+                "2　見直されたらいいのに",
+                "3　見直せるからいい",
+                "4　見直してあればどうか"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと<ruby>見直<rt>みななお</rt></ruby>されたらいいのにと<ruby>思<rt>おも</rt></ruby>います。",
+              "explanation_ja": "現状への願望「もっと〜たらいいのにと思う」。「見直されたらいいのに」（2）が正解。",
+              "explanation_en": "Expresses a wish for a better situation: '見直されたらいいのに'. Choice 2 is correct.",
+              "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+            },
+            {
+              "question_id": 1023,
+              "category": "第1回 問題3",
+              "passage_title": "米",
+              "passage_author": "リー リサ",
+              "question_type": "cloze_passage",
+              "blank_number": 23,
+              "prompt": "［ 23 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　なのではないでしょうか",
+                "2　だと言えるのでしょうか",
+                "3　なのではないでしょう",
+                "4　のわけではないでしょう"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "そういった<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとっていちばん<ruby>健康手<rt>けんこうて</rt></ruby>きな<ruby>食品<rt>しょくひん</rt></ruby>なのではないでしょうか。",
+              "explanation_ja": "文章の結論として読者に問いかけつつ自説を述べる「〜なのではないでしょうか」。1が正解。",
+              "explanation_en": "Rhetorical concluding opinion: 'なのではないでしょうか'. Choice 1 is correct.",
+              "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "test_number": 2,
+      "title": "<ruby>模擬試験<rt>もぎしけん</rt></ruby> <ruby>第<rt>だい</rt></ruby>2<ruby>回<rt>かい</rt></ruby>",
+      "title_en": "JLPT N3 Grammar Mock Test 2",
+      "source_pages": "P152 ~ P155 (Images 153 ~ 156)",
+      "total_questions": 23,
+      "sections": [
+        {
+          "section_number": 1,
+          "section_name": "<ruby>問題<rt>もんだい</rt></ruby>1",
+          "section_title": "<ruby>文法形式<rt>ぶんぽうけいしき</rt></ruby>の<ruby>判断<rt>はんだん</rt></ruby>",
+          "section_title_en": "Grammar Form Judgment",
+          "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の（　）に<ruby>入<rt>はい</rt></ruby>るものとして<ruby>最<rt>もっと</rt></ruby>もよいものを、1・2・3・4から<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+          "questions": [
+            {
+              "question_id": 2001,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>最後<rt>さいご</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>の<ruby>答<rt>こた</rt></ruby>えを<ruby>書<rt>か</rt></ruby>いた（　）、<ruby>試験<rt>しけん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりのベルが<ruby>鳴<rt>な</rt></ruby>った。",
+              "options": [
+                "1　ばかりで",
+                "2　ままで",
+                "3　ところで",
+                "4　とおりで"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "<ruby>最後<rt>さいご</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>の<ruby>答<rt>こた</rt></ruby>えを<ruby>書<rt>か</rt></ruby>いたところで、<ruby>試験<rt>しけん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりのベルが<ruby>鳴<rt>な</rt></ruby>った。",
+              "full_sentence_en": "Right when I had finished writing the answer to the last question, the bell signaling the end of the exam rang.",
+              "explanation_ja": "「〜たところで」は直前の動作がちょうど完了した瞬間に次の事態が起こることを表す。3が正解。",
+              "explanation_en": "'~ta tokoro de' indicates that another event occurred just as an action concluded. Choice 3 is correct."
+            },
+            {
+              "question_id": 2002,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>虫<rt>むし</rt></ruby>がいたので（　）、どこかに<ruby>逃<rt>に</rt></ruby>げられてしまった。",
+              "options": [
+                "1　<ruby>捕<rt>つか</rt></ruby>まえるようにしたら",
+                "2　<ruby>捕<rt>つか</rt></ruby>まえようとしたが",
+                "3　<ruby>捕<rt>つか</rt></ruby>まえることにして",
+                "4　<ruby>捕<rt>つか</rt></ruby>まえるようになって"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "<ruby>虫<rt>むし</rt></ruby>がいたので<ruby>捕<rt>つか</rt></ruby>まえようとしたが、どこかに<ruby>逃<rt>に</rt></ruby>げられてしまった。",
+              "full_sentence_en": "There was a bug, so I tried to catch it, but it got away somewhere.",
+              "explanation_ja": "「〜ようとしたが」は意図した行動を試みたが結果が伴わなかったことを表す。2が正解。",
+              "explanation_en": "'~you to shita ga' expresses attempting an action that ultimately failed. Choice 2 is correct."
+            },
+            {
+              "question_id": 2003,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "A「<ruby>昼<rt>ひる</rt></ruby>ごはん、もう<ruby>食<rt>た</rt></ruby>べた？」\nB「うん、（　）けど、まだ、おなかがすいている。」",
+              "options": [
+                "1　<ruby>食<rt>た</rt></ruby>べるようにした",
+                "2　<ruby>食<rt>た</rt></ruby>べようとした",
+                "3　<ruby>食<rt>た</rt></ruby>べることにした",
+                "4　<ruby>食<rt>た</rt></ruby>べたことは<ruby>食<rt>た</rt></ruby>べた"
+              ],
+              "correct_answer": "4",
+              "full_sentence": "B「うん、<ruby>食<rt>た</rt></ruby>べたことは<ruby>食<rt>た</rt></ruby>べたけど、まだ、おなかがすいている。」",
+              "full_sentence_en": "B: 'Yeah, I did eat, but I'm still hungry.'",
+              "explanation_ja": "「〜たことは〜たが」は一応その事実を認めるが十分ではないことを表す。4が正解。",
+              "explanation_en": "'~ta koto wa ~ta ga' acknowledges that an action took place, but qualifies it. Choice 4 is correct."
+            },
+            {
+              "question_id": 2004,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>皆<rt>みな</rt></ruby>さんご<ruby>存<rt>ぞん</rt></ruby>じ（　）、この<ruby>学校<rt>がっこう</rt></ruby>ができてから<ruby>来年<rt>らいねん</rt></ruby>で60<ruby>年<rt>ねん</rt></ruby>になります。",
+              "options": [
+                "1　によれば",
+                "2　によって",
+                "3　のように",
+                "4　のことに"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "<ruby>皆<rt>みな</rt></ruby>さんご<ruby>存<rt>ぞん</rt></ruby>じのように、この<ruby>学校<rt>がっこう</rt></ruby>ができてから<ruby>来年<rt>らいねん</rt></ruby>で60<ruby>年<rt>ねん</rt></ruby>になります。",
+              "full_sentence_en": "As you all know, next year marks 60 years since this school was founded.",
+              "explanation_ja": "「ご存じのように」は周知の事実を導入する定型表現。3が正解。",
+              "explanation_en": "'ご存じのように' is a standard phrase meaning 'as you all know'. Choice 3 is correct."
+            },
+            {
+              "question_id": 2005,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "A「<ruby>突然<rt>とつぜん</rt></ruby>おじゃまして、すみませんでした。」\nB「こちらこそ、せっかく（　）、<ruby>時間<rt>じかん</rt></ruby>がなくてすみませんでした。」",
+              "options": [
+                "1　<ruby>来<rt>き</rt></ruby>てくれて",
+                "2　<ruby>来<rt>き</rt></ruby>てくれたのに",
+                "3　<ruby>来<rt>き</rt></ruby>てくれたら",
+                "4　<ruby>来<rt>き</rt></ruby>てくれたなら"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "B「こちらこそ、せっかく<ruby>来<rt>き</rt></ruby>てくれたのに、<ruby>時間<rt>じかん</rt></ruby>がなくてすみませんでした。」",
+              "full_sentence_en": "B: 'Not at all, even though you went out of your way to visit, I'm sorry I didn't have much time.'",
+              "explanation_ja": "「せっかく〜てくれたのに」は相手の好意に対して期待に添えなかった遺憾の意を表す。2が正解。",
+              "explanation_en": "'せっかく〜てくれたのに' expresses regret that someone's kindness was not properly reciprocated. Choice 2 is correct."
+            },
+            {
+              "question_id": 2006,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>虫<rt>むし</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されたところが<ruby>赤<rt>あか</rt></ruby>くなって、かゆい（　）<ruby>痛<rt>いた</rt></ruby>くなった。",
+              "options": [
+                "1　というので",
+                "2　というより",
+                "3　といって",
+                "4　というほど"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "<ruby>虫<rt>むし</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されたところが<ruby>赤<rt>あか</rt></ruby>くなって、かゆいというより<ruby>痛<rt>いた</rt></ruby>くなった。",
+              "full_sentence_en": "Where the insect bit me turned red, and it felt painful rather than itchy.",
+              "explanation_ja": "「〜というより…」は前者の表現よりも後者のほうがより適切であることを表す。2が正解。",
+              "explanation_en": "'~to iu yori' means 'rather than ~' to describe reality more accurately. Choice 2 is correct."
+            },
+            {
+              "question_id": 2007,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "あのとき<ruby>君<rt>きみ</rt></ruby>に（　）、ぼくの<ruby>人生<rt>じんせい</rt></ruby>はきっと<ruby>全然違<rt>ぜんぜんちが</rt></ruby>っていただろう。",
+              "options": [
+                "1　<ruby>会<rt>あ</rt></ruby>っていなければ",
+                "2　<ruby>会<rt>あ</rt></ruby>ってからでなければ",
+                "3　<ruby>会<rt>あ</rt></ruby>ったことから",
+                "4　<ruby>会<rt>あ</rt></ruby>ったのだから"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "あのとき<ruby>君<rt>きみ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>っていなければ、ぼくの<ruby>人生<rt>じんせい</rt></ruby>はきっと<ruby>全然違<rt>ぜんぜんちが</rt></ruby>っていただろう。",
+              "full_sentence_en": "If I hadn't met you back then, my life surely would have been completely different.",
+              "explanation_ja": "過去の反実仮想（もし〜ていなければ…だろう）。1が正解。",
+              "explanation_en": "Counterfactual conditional expressing what would have been: '会っていなければ'. Choice 1 is correct."
+            },
+            {
+              "question_id": 2008,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "A「ああ、どうしよう。あしたのスピーチ、うまくできるかなあ。」\nB「（　）よ。お<ruby>客<rt>きゃく</rt></ruby>さんはみんな<ruby>知<rt>し</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>たちばかりだから。」",
+              "options": [
+                "1　<ruby>心配<rt>しんぱい</rt></ruby>することはない",
+                "2　<ruby>心配<rt>しんぱい</rt></ruby>するわけではない",
+                "3　<ruby>心配<rt>しんぱい</rt></ruby>しないことがある",
+                "4　<ruby>心配<rt>しんぱい</rt></ruby>しないわけだよ"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "B「<ruby>心配<rt>しんぱい</rt></ruby>することはないよ。お<ruby>客<rt>きゃく</rt></ruby>さんはみんな<ruby>知<rt>し</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>たちばかりだから。」",
+              "full_sentence_en": "B: 'There is no need to worry! The audience will be only people you know.'",
+              "explanation_ja": "「〜ことはない」は「〜する必要はない」という意味。1が正解。",
+              "explanation_en": "'~koto wa nai' means 'there is no need to ~'. Choice 1 is correct."
+            },
+            {
+              "question_id": 2009,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>だが、わたしの<ruby>国<rt>くに</rt></ruby>と<ruby>時差<rt>じさ</rt></ruby>が5<ruby>時間<rt>じかん</rt></ruby>あるから、<ruby>母<rt>はは</rt></ruby>はまだ<ruby>寝<rt>ね</rt></ruby>ている（　）。",
+              "options": [
+                "1　べきだ",
+                "2　ことだ",
+                "3　つもりだ",
+                "4　はずだ"
+              ],
+              "correct_answer": "4",
+              "full_sentence": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>だが、わたしの<ruby>国<rt>くに</rt></ruby>と<ruby>時差<rt>じさ</rt></ruby>が5<ruby>時間<rt>じかん</rt></ruby>あるから、<ruby>母<rt>はは</rt></ruby>はまだ<ruby>寝<rt>ね</rt></ruby>ているはずだ。",
+              "full_sentence_en": "It's morning in Japan, but because of the 5-hour time difference with my home country, my mother should still be asleep.",
+              "explanation_ja": "「〜はずだ」は根拠に基づく確信的な推測を表す。4が正解。",
+              "explanation_en": "'~hazu da' expresses a confident expectation based on reason. Choice 4 is correct."
+            },
+            {
+              "question_id": 2010,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>を（　）、その<ruby>日<rt>ひ</rt></ruby><ruby>行<rt>い</rt></ruby>けるかどうかお<ruby>返事<rt>へんじ</rt></ruby>できません。",
+              "options": [
+                "1　<ruby>確認<rt>かくにん</rt></ruby>するのでは",
+                "2　<ruby>確認<rt>かくにん</rt></ruby>するなら",
+                "3　<ruby>確認<rt>かくにん</rt></ruby>しようとしてから",
+                "4　<ruby>確認<rt>かくにん</rt></ruby>してからでなければ"
+              ],
+              "correct_answer": "4",
+              "full_sentence": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>してからでなければ、その<ruby>日<rt>ひ</rt></ruby><ruby>行<rt>い</rt></ruby>けるかどうかお<ruby>返事<rt>へんじ</rt></ruby>できません。",
+              "full_sentence_en": "Unless I check next week's schedule first, I cannot give you an answer on whether I can go that day.",
+              "explanation_ja": "「〜てからでなければ…できない」は前者が必須条件であることを表す。4が正解。",
+              "explanation_en": "'~te kara de nakereba' means 'unless doing ~ first, ... cannot be done'. Choice 4 is correct."
+            },
+            {
+              "question_id": 2011,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>時間<rt>じかん</rt></ruby>があればわたしにも<ruby>意見<rt>いけん</rt></ruby>を（　）です。<ruby>言<rt>い</rt></ruby>いたいことがあったんです。",
+              "options": [
+                "1　<ruby>言<rt>い</rt></ruby>わせてもらいたかった",
+                "2　<ruby>言<rt>い</rt></ruby>ってもらいたかった",
+                "3　<ruby>言<rt>い</rt></ruby>ってくれたらよかった",
+                "4　<ruby>言<rt>い</rt></ruby>わせたかった"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "<ruby>時間<rt>じかん</rt></ruby>があればわたしにも<ruby>意見<rt>いけん</rt></ruby>を<ruby>言<rt>い</rt></ruby>わせてもらいたかったです。<ruby>言<rt>い</rt></ruby>いたいことがあったんです。",
+              "full_sentence_en": "If there had been time, I would have liked to be allowed to express my opinion. There was something I wanted to say.",
+              "explanation_ja": "「（わたしに）言わせてもらいたい」の過去形「言わせてもらいたかった」。1が正解。",
+              "explanation_en": "Expresses wanting permission to speak for oneself in the past: '言わせてもらいたかった'. Choice 1 is correct."
+            },
+            {
+              "question_id": 2012,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "<ruby>病院<rt>びょういん</rt></ruby>に<ruby>来<rt>き</rt></ruby>た<ruby>人<rt>ひと</rt></ruby>「あのう、<ruby>診察<rt>しんさつ</rt></ruby>の<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みはどうすればいいんでしょうか。」\n<ruby>病院<rt>びょういん</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>「あ、<ruby>初<rt>はじ</rt></ruby>めてなんですね。では、あそこの<ruby>窓口<rt>まどぐち</rt></ruby>で（　）。」",
+              "options": [
+                "1　お<ruby>参<rt>まい</rt></ruby>りください",
+                "2　<ruby>伺<rt>うかが</rt></ruby>いませんか",
+                "3　おたずねください",
+                "4　お<ruby>聞<rt>き</rt></ruby>きしませんか"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>「あ、<ruby>初<rt>はじ</rt></ruby>めてなんですね。では、あそこの<ruby>窓口<rt>まどぐち</rt></ruby>でおたずねください。」",
+              "full_sentence_en": "Hospital staff: 'Ah, it's your first time. In that case, please inquire at the window over there.'",
+              "explanation_ja": "相手に質問するよう勧める尊敬表現「おたずねください（お尋ねください）」。3が正解。",
+              "explanation_en": "Polite honorific request to inquire: 'おたずねください'. Choice 3 is correct."
+            },
+            {
+              "question_id": 2013,
+              "category": "第2回 問題1",
+              "question_type": "multiple_choice",
+              "prompt": "ぼくがいいかげんな<ruby>気持<rt>きも</rt></ruby>ちだったら、<ruby>親<rt>おや</rt></ruby>がこの<ruby>結婚<rt>けっこん</rt></ruby>に<ruby>賛成<rt>さんせい</rt></ruby>して（　）。",
+              "options": [
+                "1　くれるわけがない",
+                "2　あげるわけにはいかない",
+                "3　くれないわけがない",
+                "4　あげないわけにはいかない"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "ぼくがいいかげんな<ruby>気持<rt>きも</rt></ruby>ちだったら、<ruby>親<rt>おや</rt></ruby>がこの<ruby>結婚<rt>けっこん</rt></ruby>に<ruby>賛成<rt>さんせい</rt></ruby>してくれるわけがない。",
+              "full_sentence_en": "If I had a half-hearted attitude, there's no way my parents would approve of this marriage.",
+              "explanation_ja": "「賛成してくれる」＋強い否定「〜わけがない」。「賛成してくれるわけがない」。1が正解。",
+              "explanation_en": "'~wake ga nai' denotes strong conviction that something is impossible. Choice 1 is correct."
+            }
+          ]
+        },
+        {
+          "section_number": 2,
+          "section_name": "<ruby>問題<rt>もんだい</rt></ruby>2",
+          "section_title": "<ruby>文<rt>ぶん</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て",
+          "section_title_en": "Sentence Composition (Star Arrangement)",
+          "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の★に<ruby>入<rt>はい</rt></ruby>る<ruby>最<rt>もっと</rt></ruby>もよいものを、1・2・3・4から<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+          "questions": [
+            {
+              "question_id": 2014,
+              "category": "第2回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どもの　＿＿＿　＿＿＿　＿★＿　＿＿＿　わたしにくれた。",
+              "options": [
+                "1　<ruby>時計<rt>とけい</rt></ruby>を",
+                "2　<ruby>大切<rt>たいせつ</rt></ruby>に",
+                "3　ときから",
+                "4　していた"
+              ],
+              "correct_order": [
+                3,
+                2,
+                4,
+                1
+              ],
+              "star_position": 3,
+              "correct_answer": 4,
+              "full_sentence": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どものときから<ruby>大切<rt>たいせつ</rt></ruby>にしていた<ruby>時計<rt>とけい</rt></ruby>をわたしにくれた。",
+              "full_sentence_en": "My grandfather gave me the watch he had treasured since he was a child.",
+              "explanation_ja": "「子どものときから（3）大切に（2）していた（4）時計を（1）」。★には4が入る。",
+              "explanation_en": "Order is 3-2-4-1. Star position is 4. Choice 4 is correct."
+            },
+            {
+              "question_id": 2015,
+              "category": "第2回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高<rt>たか</rt></ruby>ければ　＿＿＿　＿＿＿　＿★＿　＿＿＿　というわけではない。",
+              "options": [
+                "1　いい",
+                "2　<ruby>高<rt>たか</rt></ruby>い",
+                "3　<ruby>品質<rt>ひんしつ</rt></ruby>が",
+                "4　ほど"
+              ],
+              "correct_order": [
+                2,
+                4,
+                3,
+                1
+              ],
+              "star_position": 3,
+              "correct_answer": 3,
+              "full_sentence": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高<rt>たか</rt></ruby>ければ<ruby>高<rt>たか</rt></ruby>いほど<ruby>品質<rt>ひんしつ</rt></ruby>がいいというわけではない。",
+              "full_sentence_en": "It is not necessarily true that the higher the price, the better the quality.",
+              "explanation_ja": "「高ければ高い（2）ほど（4）品質が（3）いい（1）」。★には3が入る。",
+              "explanation_en": "Order is 2-4-3-1. Star position is 3. Choice 3 is correct."
+            },
+            {
+              "question_id": 2016,
+              "category": "第2回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>先生<rt>せんせい</rt></ruby>「<ruby>君<rt>きみ</rt></ruby>は、　＿＿＿　＿＿＿　＿★＿　＿＿＿　やることも<ruby>考<rt>かんが</rt></ruby>えなさい。」\n<ruby>生徒<rt>せいと</rt></ruby>「はい、わかりました。」",
+              "options": [
+                "1　<ruby>手伝<rt>てつだ</rt></ruby>ってもらう",
+                "2　<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で",
+                "3　ほかの<ruby>人<rt>ひと</rt></ruby>に",
+                "4　ばかりでなく"
+              ],
+              "correct_order": [
+                3,
+                1,
+                4,
+                2
+              ],
+              "star_position": 3,
+              "correct_answer": 4,
+              "full_sentence": "<ruby>先生<rt>せんせい</rt></ruby>「<ruby>君<rt>きみ</rt></ruby>は、ほかの<ruby>人<rt>ひと</rt></ruby>に<ruby>手伝<rt>てつだ</rt></ruby>ってもらうばかりでなく<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>でやることも<ruby>考<rt>かんが</rt></ruby>えなさい。」",
+              "full_sentence_en": "Teacher: 'You should consider not only having other people help you, but also doing things by your own effort.'",
+              "explanation_ja": "「ほかの人に（3）手伝ってもらう（1）ばかりでなく（4）自分の力で（2）」。★には4が入る。",
+              "explanation_en": "Order is 3-1-4-2. Star position is 4. Choice 4 is correct."
+            },
+            {
+              "question_id": 2017,
+              "category": "第2回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "この<ruby>図書館<rt>としょかん</rt></ruby>で　＿＿＿　＿＿＿　＿★＿　＿＿＿　ようになっている。",
+              "options": [
+                "1　<ruby>本<rt>ほん</rt></ruby>は",
+                "2　コンビニでも",
+                "3　<ruby>返<rt>かえ</rt></ruby>せる",
+                "4　<ruby>借<rt>か</rt></ruby>りた"
+              ],
+              "correct_order": [
+                4,
+                1,
+                2,
+                3
+              ],
+              "star_position": 3,
+              "correct_answer": 2,
+              "full_sentence": "この<ruby>図書館<rt>としょかん</rt></ruby>で<ruby>借<rt>か</rt></ruby>りた<ruby>本<rt>ほん</rt></ruby>はコンビニでも<ruby>返<rt>かえ</rt></ruby>せるようになっている。",
+              "full_sentence_en": "Books borrowed from this library are set up so that they can be returned even at convenience stores.",
+              "explanation_ja": "「借りた（4）本は（1）コンビニでも（2）返せる（3）」。★には2が入る。",
+              "explanation_en": "Order is 4-1-2-3. Star position is 2. Choice 2 is correct."
+            },
+            {
+              "question_id": 2018,
+              "category": "第2回 問題2",
+              "question_type": "star_arrangement",
+              "prompt": "<ruby>彼<rt>かれ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>って<ruby>直接<rt>ちょくせつ</rt></ruby>　＿＿＿　＿＿＿　＿★＿　＿＿＿　<ruby>断<rt>ことわ</rt></ruby>られた。",
+              "options": [
+                "1　<ruby>会<rt>あ</rt></ruby>いたくない",
+                "2　<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>おう",
+                "3　と<ruby>言<rt>い</rt></ruby>って",
+                "4　としたが"
+              ],
+              "correct_order": [
+                2,
+                4,
+                1,
+                3
+              ],
+              "star_position": 3,
+              "correct_answer": 1,
+              "full_sentence": "<ruby>彼<rt>かれ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>って<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>おうとしたが<ruby>会<rt>あ</rt></ruby>いたくないと<ruby>言<rt>い</rt></ruby>って<ruby>断<rt>ことわ</rt></ruby>られた。",
+              "full_sentence_en": "I tried to meet him to talk things over directly, but I was turned down, with him saying he didn't want to meet.",
+              "explanation_ja": "「話し合おう（2）としたが（4）会いたくない（1）と言って（3）」。★には1が入る。",
+              "explanation_en": "Order is 2-4-1-3. Star position is 1. Choice 1 is correct."
+            }
+          ]
+        },
+        {
+          "section_number": 3,
+          "section_name": "<ruby>問題<rt>もんだい</rt></ruby>3",
+          "section_title": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>文法<rt>ぶんぽう</rt></ruby>",
+          "section_title_en": "Text Grammar (Passage Cloze)",
+          "instruction": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んで、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えて、［ 19 ］から［ 23 ］の<ruby>中<rt>なか</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>最<rt>もっと</rt></ruby>もよいものを、1・2・3・4から<ruby>一<rt>ひと</rt></ruby>つ<ruby>選<rt>えら</rt></ruby>びなさい。",
+          "passage_title": "「わたしが<ruby>生<rt>う</rt></ruby>まれた<ruby>町<rt>まち</rt></ruby>」",
+          "passage_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。",
+          "questions": [
+            {
+              "question_id": 2019,
+              "category": "第2回 問題3",
+              "passage_title": "わたしが生まれた町",
+              "question_type": "cloze_passage",
+              "blank_number": 19,
+              "prompt": "［ 19 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　町です",
+                "2　町があります",
+                "3　町にあります",
+                "4　町で生まれました"
+              ],
+              "correct_answer": "1",
+              "full_sentence": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>です。",
+              "explanation_ja": "「〜のは、…町です」（〜のは…だ文型）。1が正解。",
+              "explanation_en": "Corresponds to the '〜のは…だ' pattern: '町です'. Choice 1 is correct.",
+              "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+            },
+            {
+              "question_id": 2020,
+              "category": "第2回 問題3",
+              "passage_title": "わたしが生まれた町",
+              "question_type": "cloze_passage",
+              "blank_number": 20,
+              "prompt": "［ 20 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　わたしもそれでした",
+                "2　わたしもそうでした",
+                "3　みんなもそうでした",
+                "4　みんなもその人たちでした"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "大人になると、みんな町を出ていってしまいます。わたしもそうでした。",
+              "explanation_ja": "前文の「大人になるとみんな町を出ていってしまう」を受けて話者自身も同様であったことを述べるので「わたしもそうでした」。2が正解。",
+              "explanation_en": "The speaker confirms having done the same as others: 'わたしもそうでした'. Choice 2 is correct.",
+              "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+            },
+            {
+              "question_id": 2021,
+              "category": "第2回 問題3",
+              "passage_title": "わたしが生まれた町",
+              "question_type": "cloze_passage",
+              "blank_number": 21,
+              "prompt": "［ 21 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　そこで",
+                "2　そのうえ",
+                "3　一方",
+                "4　けれども"
+              ],
+              "correct_answer": "4",
+              "explanation_ja": "子どものころ寂しい町だと思っていた過去の認識に対し、大人になって考えが変わった逆接なので「けれども」。4が正解。",
+              "explanation_en": "Contrasts childhood feelings with changed mature views: 'けれども'. Choice 4 is correct.",
+              "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+            },
+            {
+              "question_id": 2022,
+              "category": "第2回 問題3",
+              "passage_title": "わたしが生まれた町",
+              "question_type": "cloze_passage",
+              "blank_number": 22,
+              "prompt": "［ 22 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　聞かれて",
+                "2　聞かせて",
+                "3　聞かされて",
+                "4　聞いていって"
+              ],
+              "correct_answer": "3",
+              "full_sentence": "<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>かされて<ruby>育<rt>そだ</rt></ruby>つからです。",
+              "explanation_ja": "周りの大人たちから自然と海の体験談を聞かされながら育った使役受身「聞かされて育つ」。3が正解。",
+              "explanation_en": "Causative-passive indicating growing up having been told stories by adults: '聞かされて'. Choice 3 is correct.",
+              "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+            },
+            {
+              "question_id": 2023,
+              "category": "第2回 問題3",
+              "passage_title": "わたしが生まれた町",
+              "question_type": "cloze_passage",
+              "blank_number": 23,
+              "prompt": "［ 23 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+              "options": [
+                "1　つながったのです",
+                "2　つながっているのです",
+                "3　つながるのでしょうか",
+                "4　つながったのでしょうか"
+              ],
+              "correct_answer": "2",
+              "full_sentence": "どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と<ruby>繋<rt>つな</rt></ruby>がっているのです。",
+              "explanation_ja": "現在も海を通じて世界と接続している恒常的な状態を説明する「つながっているのです」。2が正解。",
+              "explanation_en": "Continuous present state of connection with the world across the ocean: 'つながっているのです'. Choice 2 is correct.",
+              "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question_id": 1001,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>一度<rt>いちど</rt></ruby>（　）<ruby>会<rt>あ</rt></ruby>ったことがあれば、<ruby>友<rt>とも</rt></ruby>だちだと<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>もいる。",
+      "options": [
+        "1　も",
+        "2　でも",
+        "3　さえ",
+        "4　こそ"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "<ruby>一度<rt>いちど</rt></ruby>でも<ruby>会<rt>あ</rt></ruby>ったことがあれば、<ruby>友<rt>とも</rt></ruby>だちだと<ruby>考<rt>かんが</rt></ruby>える<ruby>人<rt>ひと</rt></ruby>もいる。",
+      "full_sentence_en": "Some people consider someone a friend if they have met even once.",
+      "explanation_ja": "「〜でも」は最小限の例を挙げて「たとえ〜だけでも」という意味を表す。2が正解。",
+      "explanation_en": "'~demo' is used with a minimal condition to mean 'even if only once'. Choice 2 is correct."
+    },
+    {
+      "question_id": 1002,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "ここにたくさんのびんがあります。<ruby>大<rt>おお</rt></ruby>きさ（　）<ruby>三<rt>みっ</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>けてください。",
+      "options": [
+        "1　に<ruby>比<rt>くら</rt></ruby>べて",
+        "2　について",
+        "3　によって",
+        "4　に<ruby>対<rt>たい</rt></ruby>して"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "ここにたくさんのびんがあります。<ruby>大<rt>おお</rt></ruby>きさによって<ruby>三<rt>みっ</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>けてください。",
+      "full_sentence_en": "There are many bottles here. Please sort them into three groups according to their size.",
+      "explanation_ja": "「〜によって」は基準や区分を表す。「大きさに応じて・基準として」。3が正解。",
+      "explanation_en": "'~ni yotte' indicates a standard or criterion ('according to'). Choice 3 is correct."
+    },
+    {
+      "question_id": 1003,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "A「この<ruby>本<rt>ほん</rt></ruby>、<ruby>面白<rt>おもしろ</rt></ruby>かったですよ。」\nB「じゃ、わたしにも（　）ほしいです。お<ruby>借<rt>か</rt></ruby>りしてもいいですか。」",
+      "options": [
+        "1　<ruby>読<rt>よ</rt></ruby>んで",
+        "2　<ruby>読<rt>よ</rt></ruby>まれて",
+        "3　<ruby>読<rt>よ</rt></ruby>ませて",
+        "4　<ruby>読<rt>よ</rt></ruby>むのが"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "B「じゃ、わたしにも<ruby>読<rt>よ</rt></ruby>ませてほしいです。お<ruby>借<rt>か</rt></ruby>りしてもいいですか。」",
+      "full_sentence_en": "B: 'Well then, I'd like you to let me read it too. May I borrow it?'",
+      "explanation_ja": "「〜（使役て形）てほしい」で自分に許可を求める表現。「読ませてほしい」。3が正解。",
+      "explanation_en": "Causative te-form + hoshii expresses asking permission for oneself: '読ませてほしい'. Choice 3 is correct."
+    },
+    {
+      "question_id": 1004,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>日本<rt>にほん</rt></ruby>では、<ruby>秋<rt>あき</rt></ruby>は（　）とてもいい<ruby>季節<rt>きせつ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>われている。",
+      "options": [
+        "1　<ruby>読書<rt>どくしょ</rt></ruby>するのに",
+        "2　<ruby>読書<rt>どくしょ</rt></ruby>することで",
+        "3　<ruby>読書<rt>どくしょ</rt></ruby>できるように",
+        "4　<ruby>読書<rt>どくしょ</rt></ruby>できるうちに"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "<ruby>日本<rt>にほん</rt></ruby>では、<ruby>秋<rt>あき</rt></ruby>は<ruby>読書<rt>どくしょ</rt></ruby>するのにとてもいい<ruby>季節<rt>きせつ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>われている。",
+      "full_sentence_en": "In Japan, autumn is said to be a very pleasant season for reading.",
+      "explanation_ja": "「〜するのにいい／便利だ」は用途や目的・評価の基準を表す。1が正解。",
+      "explanation_en": "'~no ni' expresses purpose or standard of evaluation ('for reading'). Choice 1 is correct."
+    },
+    {
+      "question_id": 1005,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "きのうの<ruby>試験<rt>しけん</rt></ruby>で<ruby>自分<rt>じぶん</rt></ruby>では<ruby>正<rt>ただ</rt></ruby>しい<ruby>答<rt>こた</rt></ruby>えを（　）が、わたしの<ruby>答<rt>こた</rt></ruby>えは<ruby>間違<rt>まちが</rt></ruby>いだった。",
+      "options": [
+        "1　<ruby>書<rt>か</rt></ruby>くつもりになった",
+        "2　<ruby>書<rt>か</rt></ruby>いたつもりだった",
+        "3　<ruby>書<rt>か</rt></ruby>くことになった",
+        "4　<ruby>書<rt>か</rt></ruby>いたことだった"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "きのうの<ruby>試験<rt>しけん</rt></ruby>で<ruby>自分<rt>じぶん</rt></ruby>では<ruby>正<rt>ただ</rt></ruby>しい<ruby>答<rt>こた</rt></ruby>えを<ruby>書<rt>か</rt></ruby>いたつもりだったが、わたしの<ruby>答<rt>こた</rt></ruby>えは<ruby>間違<rt>まちが</rt></ruby>いだった。",
+      "full_sentence_en": "In yesterday's exam, I believed I had written the correct answer, but my answer was wrong.",
+      "explanation_ja": "「〜たつもりだった」は実際とは違って自分ではそう思っていたことを表す。2が正解。",
+      "explanation_en": "'~ta tsumori datta' indicates holding a belief that turned out contrary to fact. Choice 2 is correct."
+    },
+    {
+      "question_id": 1006,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>後輩<rt>こうはい</rt></ruby>「それ、<ruby>何<rt>なん</rt></ruby>ですか。」\n<ruby>先輩<rt>せんぱい</rt></ruby>「<ruby>京都<rt>きょうと</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>だよ。」\n<ruby>後輩<rt>こうはい</rt></ruby>「あ、<ruby>京都<rt>きょうと</rt></ruby>へ（　）んですか。<ruby>桜<rt>さくら</rt></ruby>がきれいであったでしょう。」",
+      "options": [
+        "1　<ruby>参<rt>まい</rt></ruby>られた",
+        "2　いられた",
+        "3　<ruby>伺<rt>うかが</rt></ruby>われた",
+        "4　<ruby>行<rt>い</rt></ruby>かれた"
+      ],
+      "correct_answer": "4",
+      "full_sentence": "<ruby>後輩<rt>こうはい</rt></ruby>「あ、<ruby>京都<rt>きょうと</rt></ruby>へ<ruby>行<rt>い</rt></ruby>かれたんですか。<ruby>桜<rt>さくら</rt></ruby>がきれいであったでしょう。」",
+      "full_sentence_en": "Junior: 'Ah, did you go to Kyoto? The cherry blossoms must have been lovely.'",
+      "explanation_ja": "先輩の動作に対する尊敬表現。動詞「行く」の尊敬形（受身形）「行かれた」。4が正解。",
+      "explanation_en": "Honorific form of '行く' directed at a senior: '行かれた'. Choice 4 is correct."
+    },
+    {
+      "question_id": 1007,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "そんなに<ruby>仕事<rt>しごと</rt></ruby>を（　）、<ruby>体<rt>からだ</rt></ruby>をこわしますよ。",
+      "options": [
+        "1　したばかりだと",
+        "2　してばかりいると",
+        "3　したところでは",
+        "4　したところだと"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "そんなに<ruby>仕事<rt>しごと</rt></ruby>をしてばかりいると、<ruby>体<rt>からだ</rt></ruby>をこわしますよ。",
+      "full_sentence_en": "If you do nothing but work like that, you will ruin your health.",
+      "explanation_ja": "「〜てばかりいる」はその行為だけを過度に繰り返すことを表す。2が正解。",
+      "explanation_en": "'~te bakari iru' means doing only that action constantly. Choice 2 is correct."
+    },
+    {
+      "question_id": 1008,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>球技<rt>きゅうぎ</rt></ruby>というのは、ボールを<ruby>使<rt>つか</rt></ruby>うスポーツ（　）。",
+      "options": [
+        "1　というのだ",
+        "2　というものだ",
+        "3　という",
+        "4　のことだ"
+      ],
+      "correct_answer": "4",
+      "full_sentence": "<ruby>球技<rt>きゅうぎ</rt></ruby>というのは、ボールを<ruby>使<rt>つか</rt></ruby>うスポーツのことだ。",
+      "full_sentence_en": "Ball games mean sports that use a ball.",
+      "explanation_ja": "「〜というのは…のことだ」は言葉の定義や意味を説明する基本文型。4が正解。",
+      "explanation_en": "'~to iu no wa ... no koto da' explains the definition of a term. Choice 4 is correct."
+    },
+    {
+      "question_id": 1009,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "わたしがこの<ruby>町<rt>まち</rt></ruby>のことをよく<ruby>知<rt>し</rt></ruby>っているのは、<ruby>前<rt>まえ</rt></ruby>に（　）。",
+      "options": [
+        "1　<ruby>住<rt>す</rt></ruby>んでいたんですから",
+        "2　<ruby>住<rt>す</rt></ruby>んでいたからなんです",
+        "3　<ruby>住<rt>す</rt></ruby>んでいたんです",
+        "4　<ruby>住<rt>す</rt></ruby>んでいました"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "わたしがこの<ruby>町<rt>まち</rt></ruby>のことをよく<ruby>知<rt>し</rt></ruby>っているのは、<ruby>前<rt>まえ</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいたからなんです。",
+      "full_sentence_en": "The reason I know this town well is because I used to live here before.",
+      "explanation_ja": "「〜のは…からだ／からなんです」という理由の呼応表現。2が正解。",
+      "explanation_en": "Corresponds to '〜のは…からなんです' to give a reason. Choice 2 is correct."
+    },
+    {
+      "question_id": 1010,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>報告書<rt>ほうこくしょ</rt></ruby>はこのような<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>では（　）と<ruby>思<rt>おも</rt></ruby>います。",
+      "options": [
+        "1　わかりやすかった",
+        "2　わかってもらいたい",
+        "3　わかってもらえない",
+        "4　わかりそうだ"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "<ruby>報告書<rt>ほうこくしょ</rt></ruby>はこのような<ruby>書<rt>か</rt></ruby>き<ruby>方<rt>かた</rt></ruby>ではわかってもらえないと<ruby>思<rt>おも</rt></ruby>います。",
+      "full_sentence_en": "I think that with this way of writing, the report won't be understood by readers.",
+      "explanation_ja": "「このような書き方では（読み手に）わかってもらえない」（可能否定）。3が正解。",
+      "explanation_en": "Potential negative benefactive: 'わかってもらえない'. Choice 3 is correct."
+    },
+    {
+      "question_id": 1011,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>店長<rt>てんちょう</rt></ruby>「あれ、<ruby>田中<rt>たなか</rt></ruby><ruby>君<rt>くん</rt></ruby>は？」\n<ruby>店員<rt>てんいん</rt></ruby>「さっき<ruby>電話<rt>でんわ</rt></ruby>があって、<ruby>少<rt>すこ</rt></ruby>し（　）。」",
+      "options": [
+        "1　<ruby>遅<rt>おく</rt></ruby>れることです",
+        "2　<ruby>遅<rt>おく</rt></ruby>れるとのことです",
+        "3　<ruby>遅<rt>おく</rt></ruby>れようとしています",
+        "4　<ruby>遅<rt>おく</rt></ruby>れようと<ruby>言<rt>い</rt></ruby>っています"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "<ruby>店員<rt>てんいん</rt></ruby>「さっき<ruby>電話<rt>でんわ</rt></ruby>があって、<ruby>少<rt>すこ</rt></ruby>し<ruby>遅<rt>おく</rt></ruby>れるとのことです。」",
+      "full_sentence_en": "Staff: 'He called earlier and says he will be a little late.'",
+      "explanation_ja": "「〜とのことです」は他者からの伝言・伝聞を丁寧に報告する表現。2が正解。",
+      "explanation_en": "'~to no koto desu' politely conveys a message received from someone. Choice 2 is correct."
+    },
+    {
+      "question_id": 1012,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "わたしは<ruby>疲<rt>つか</rt></ruby>れたら<ruby>無理<rt>むり</rt></ruby>をしないで<ruby>十分<rt>じゅうぶん</rt></ruby>（　）。",
+      "options": [
+        "1　<ruby>寝<rt>ね</rt></ruby>るようにしている",
+        "2　<ruby>寝<rt>ね</rt></ruby>るようになっている",
+        "3　<ruby>寝<rt>ね</rt></ruby>るということだ",
+        "4　<ruby>寝<rt>ね</rt></ruby>るというところだ"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "わたしは<ruby>疲<rt>つか</rt></ruby>れたら<ruby>無理<rt>むり</rt></ruby>をしないで<ruby>十分<rt>じゅうぶん</rt></ruby><ruby>寝<rt>ね</rt></ruby>るようにしている。",
+      "full_sentence_en": "Whenever I am tired, I make it a habit not to overwork and get plenty of sleep.",
+      "explanation_ja": "「〜ようにしている」は意識的な習慣や努力を表す。1が正解。",
+      "explanation_en": "'~you ni shite iru' indicates a conscious, ongoing effort or rule for oneself. Choice 1 is correct."
+    },
+    {
+      "question_id": 1013,
+      "category": "第1回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "A「<ruby>今度<rt>こんど</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>、<ruby>受<rt>う</rt></ruby>けないんですか。」\nB「ええ。でも、<ruby>合格<rt>ごうかく</rt></ruby>を（　）。<ruby>次回<rt>じかい</rt></ruby><ruby>受<rt>う</rt></ruby>けます。」",
+      "options": [
+        "1　あきらめたわけではありません",
+        "2　あきらめたつもりではありません",
+        "3　あきらめないわけにはいきません",
+        "4　あきらめないのではないでしょう"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "B「ええ。でも、<ruby>合格<rt>ごうかく</rt></ruby>をあきらめたわけではありません。<ruby>次回<rt>じかい</rt></ruby><ruby>受<rt>う</rt></ruby>けます。」",
+      "full_sentence_en": "B: 'Yes. But it's not that I've given up on passing. I will take it next time.'",
+      "explanation_ja": "「〜わけではない」は一部否定を表す。「合格をあきらめたわけではない」。1が正解。",
+      "explanation_en": "'~wake dewa nai' means 'it doesn't mean that...'. Choice 1 is correct."
+    },
+    {
+      "question_id": 1014,
+      "category": "第1回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>子<rt>こ</rt></ruby>どものころから、　＿＿＿　＿＿＿　＿★＿　＿＿＿　と<ruby>言<rt>い</rt></ruby>われてきた。",
+      "options": [
+        "1　<ruby>考<rt>かんが</rt></ruby>えて",
+        "2　<ruby>行動<rt>こうどう</rt></ruby>する",
+        "3　<ruby>周<rt>まわ</rt></ruby>りのことを",
+        "4　ように"
+      ],
+      "correct_order": [
+        3,
+        1,
+        2,
+        4
+      ],
+      "star_position": 3,
+      "correct_answer": 2,
+      "full_sentence": "<ruby>子<rt>こ</rt></ruby>どものころから、<ruby>周<rt>まわ</rt></ruby>りのことを<ruby>考<rt>かんが</rt></ruby>えて<ruby>行動<rt>こうどう</rt></ruby>するようにと<ruby>言<rt>い</rt></ruby>われてきた。",
+      "full_sentence_en": "Since childhood, I have been told to consider those around me before acting.",
+      "explanation_ja": "「周りのことを（3）考えて（1）行動する（2）ように（4）」。★には2が入る。",
+      "explanation_en": "Order is 3-1-2-4. Star position is 2. Choice 2 is correct."
+    },
+    {
+      "question_id": 1015,
+      "category": "第1回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "わたしは　＿＿＿　＿＿＿　＿★＿　＿＿＿　<ruby>必<rt>かなら</rt></ruby>ず<ruby>答<rt>こた</rt></ruby>えはあると<ruby>思<rt>おも</rt></ruby>う。",
+      "options": [
+        "1　<ruby>難<rt>むずか</rt></ruby>しい",
+        "2　どんなに",
+        "3　たとえ",
+        "4　<ruby>問題<rt>もんだい</rt></ruby>でも"
+      ],
+      "correct_order": [
+        3,
+        2,
+        1,
+        4
+      ],
+      "star_position": 3,
+      "correct_answer": 1,
+      "full_sentence": "わたしはたとえどんなに<ruby>難<rt>むずか</rt></ruby>しい<ruby>問題<rt>もんだい</rt></ruby>でも<ruby>必<rt>かなら</rt></ruby>ず<ruby>答<rt>こた</rt></ruby>えはあると<ruby>思<rt>おも</rt></ruby>う。",
+      "full_sentence_en": "I believe that no matter how difficult a problem may be, there is always an answer.",
+      "explanation_ja": "「たとえ（3）どんなに（2）難しい（1）問題でも（4）」。★には1が入る。",
+      "explanation_en": "Order is 3-2-1-4. Star position is 1. Choice 1 is correct."
+    },
+    {
+      "question_id": 1016,
+      "category": "第1回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>会<rt>あ</rt></ruby>う<ruby>約束<rt>やくそく</rt></ruby>をした<ruby>友<rt>とも</rt></ruby>だちから　＿＿＿　＿＿＿　＿★＿　＿＿＿　メールが<ruby>来<rt>き</rt></ruby>た。",
+      "options": [
+        "1　<ruby>電車<rt>でんしゃ</rt></ruby>が",
+        "2　<ruby>乗<rt>の</rt></ruby>っている",
+        "3　という",
+        "4　<ruby>止<rt>と</rt></ruby>まっている"
+      ],
+      "correct_order": [
+        2,
+        1,
+        4,
+        3
+      ],
+      "star_position": 3,
+      "correct_answer": 4,
+      "full_sentence": "<ruby>会<rt>あ</rt></ruby>う<ruby>約束<rt>やくそく</rt></ruby>をした<ruby>友<rt>とも</rt></ruby>だちから<ruby>乗<rt>の</rt></ruby>っている<ruby>電車<rt>でんしゃ</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっているというメールが<ruby>来<rt>き</rt></ruby>た。",
+      "full_sentence_en": "I received an email from the friend I had promised to meet, saying that the train they were riding had stopped.",
+      "explanation_ja": "「乗っている（2）電車が（1）止まっている（4）という（3）メール」。★には4が入る。",
+      "explanation_en": "Order is 2-1-4-3. Star position is 4. Choice 4 is correct."
+    },
+    {
+      "question_id": 1017,
+      "category": "第1回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>古<rt>ふる</rt></ruby>くなった<ruby>歯<rt>は</rt></ruby>ブラシを<ruby>掃除用具<rt>そうじようぐ</rt></ruby>　＿＿＿　＿＿＿　＿★＿　＿＿＿　した。",
+      "options": [
+        "1　<ruby>使<rt>つか</rt></ruby>う",
+        "2　として",
+        "3　に",
+        "4　こと"
+      ],
+      "correct_order": [
+        2,
+        1,
+        4,
+        3
+      ],
+      "star_position": 3,
+      "correct_answer": 4,
+      "full_sentence": "<ruby>古<rt>ふる</rt></ruby>くなった<ruby>歯<rt>は</rt></ruby>ブラシを<ruby>掃除用具<rt>そうじようぐ</rt></ruby>として<ruby>使<rt>つか</rt></ruby>うことにした。",
+      "full_sentence_en": "I decided to use an old toothbrush as a cleaning tool.",
+      "explanation_ja": "「掃除用具として（2）使う（1）こと（4）に（3）した」。★には4が入る。",
+      "explanation_en": "Order is 2-1-4-3. Star position is 4. Choice 4 is correct."
+    },
+    {
+      "question_id": 1018,
+      "category": "第1回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>学生<rt>がくせい</rt></ruby>「<ruby>先生<rt>せんせい</rt></ruby>、スピーチではわたしの<ruby>家族<rt>かぞく</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をしたいんですが……。」\n<ruby>先生<rt>せんせい</rt></ruby>「うーん。スピーチのテーマは<ruby>何<rt>なん</rt></ruby>でも　＿＿＿　＿＿＿　＿★＿　＿＿＿　ことだけです。」",
+      "options": [
+        "1　わけではなく",
+        "2　に<ruby>関<rt>かん</rt></ruby>する",
+        "3　<ruby>日本文化<rt>にほんぶんか</rt></ruby>",
+        "4　いいという"
+      ],
+      "correct_order": [
+        4,
+        1,
+        3,
+        2
+      ],
+      "star_position": 3,
+      "correct_answer": 3,
+      "full_sentence": "<ruby>先生<rt>せんせい</rt></ruby>「うーん。スピーチのテーマは<ruby>何<rt>なん</rt></ruby>でもいいというわけではなく<ruby>日本文化<rt>にほんぶんか</rt></ruby>に<ruby>関<rt>かん</rt></ruby>することだけです。」",
+      "full_sentence_en": "Teacher: 'Well, it's not that any speech topic is fine; it must strictly relate to Japanese culture.'",
+      "explanation_ja": "「何でもいいという（4）わけではなく（1）日本文化（3）に関する（2）ことだけです」。★には3が入る。",
+      "explanation_en": "Order is 4-1-3-2. Star position is 3. Choice 3 is correct."
+    },
+    {
+      "question_id": 1019,
+      "category": "第1回 問題3",
+      "passage_title": "米",
+      "passage_author": "リー リサ",
+      "question_type": "cloze_passage",
+      "blank_number": 19,
+      "prompt": "［ 19 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　いろいろなことを知っています",
+        "2　いろいろなことが知られています",
+        "3　いろいろなことを考えます",
+        "4　いろいろなことが考えられます"
+      ],
+      "correct_answer": "3",
+      "explanation_ja": "おにぎりを食べながら、話者自身が米についてあれこれ思考を巡らせるので「いろいろなことを考えます」。3が正解。",
+      "explanation_en": "The speaker personally reflects on rice while eating onigiri: '考えます'. Choice 3 is correct.",
+      "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+    },
+    {
+      "question_id": 1020,
+      "category": "第1回 問題3",
+      "passage_title": "米",
+      "passage_author": "リー リサ",
+      "question_type": "cloze_passage",
+      "blank_number": 20,
+      "prompt": "［ 20 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　アジアの人たちの主食が",
+        "2　アジアの人たちが主食で",
+        "3　アジアの人たちが主食として",
+        "4　アジアの人たちの主食として"
+      ],
+      "correct_answer": "4",
+      "explanation_ja": "米は「アジアの人たちの主食として食べられています」。「〜として」で資格・位置づけを表す。4が正解。",
+      "explanation_en": "Rice is eaten 'as the staple food of Asian people': '主食として'. Choice 4 is correct.",
+      "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+    },
+    {
+      "question_id": 1021,
+      "category": "第1回 問題3",
+      "passage_title": "米",
+      "passage_author": "リー リサ",
+      "question_type": "cloze_passage",
+      "blank_number": 21,
+      "prompt": "［ 21 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　つまり",
+        "2　ところが",
+        "3　または",
+        "4　しかも"
+      ],
+      "correct_answer": "2",
+      "explanation_ja": "米が主食であるという前の記述に対し、「ところが、今、日本では若い人たちを中心に米を食べる人が減っている」と逆接・意外な現状を提示する。2が正解。",
+      "explanation_en": "Introduces the surprising contrary fact that consumption is dropping: 'ところが'. Choice 2 is correct.",
+      "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+    },
+    {
+      "question_id": 1022,
+      "category": "第1回 問題3",
+      "passage_title": "米",
+      "passage_author": "リー リサ",
+      "question_type": "cloze_passage",
+      "blank_number": 22,
+      "prompt": "［ 22 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　見直されたからいい",
+        "2　見直されたらいいのに",
+        "3　見直せるからいい",
+        "4　見直してあればどうか"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと<ruby>見直<rt>みななお</rt></ruby>されたらいいのにと<ruby>思<rt>おも</rt></ruby>います。",
+      "explanation_ja": "現状への願望「もっと〜たらいいのにと思う」。「見直されたらいいのに」（2）が正解。",
+      "explanation_en": "Expresses a wish for a better situation: '見直されたらいいのに'. Choice 2 is correct.",
+      "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+    },
+    {
+      "question_id": 1023,
+      "category": "第1回 問題3",
+      "passage_title": "米",
+      "passage_author": "リー リサ",
+      "question_type": "cloze_passage",
+      "blank_number": 23,
+      "prompt": "［ 23 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　なのではないでしょうか",
+        "2　だと言えるのでしょうか",
+        "3　なのではないでしょう",
+        "4　のわけではないでしょう"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "そういった<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとっていちばん<ruby>健康手<rt>けんこうて</rt></ruby>きな<ruby>食品<rt>しょくひん</rt></ruby>なのではないでしょうか。",
+      "explanation_ja": "文章の結論として読者に問いかけつつ自説を述べる「〜なのではないでしょうか」。1が正解。",
+      "explanation_en": "Rhetorical concluding opinion: 'なのではないでしょうか'. Choice 1 is correct.",
+      "passage_full_text": "わたしは<ruby>毎日<rt>まいにち</rt></ruby><ruby>昼<rt>ひる</rt></ruby>ごはんにはおにぎりを<ruby>食<rt>た</rt></ruby>べます。おにぎりを<ruby>食<rt>た</rt></ruby>べると、<ruby>元気<rt>げんき</rt></ruby>が<ruby>出<rt>で</rt></ruby>るような<ruby>気<rt>き</rt></ruby>がします。おにぎりを<ruby>食<rt>た</rt></ruby>べながら、<ruby>米<rt>こめ</rt></ruby>について［ 19 ］。\n\n<ruby>米作<rt>こめづく</rt></ruby>りは<ruby>大昔<rt>おおむかし</rt></ruby>、アジアの<ruby>暖<rt>あたた</rt></ruby>かい<ruby>地方<rt>ちほう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まったと<ruby>考<rt>かんが</rt></ruby>えられています。そして、<ruby>今<rt>いま</rt></ruby>、<ruby>米<rt>こめ</rt></ruby>は［ 20 ］<ruby>食<rt>た</rt></ruby>べられています。エネルギーの<ruby>素<rt>もと</rt></ruby>になり、また、<ruby>栄養<rt>えいよう</rt></ruby>のバランスがいいということも<ruby>主食<rt>しゅしょく</rt></ruby>になっている<ruby>理由<rt>りゆう</rt></ruby>の<ruby>一<rt>ひと</rt></ruby>つだと<ruby>思<rt>おも</rt></ruby>います。\n\n［ 21 ］<ruby>今<rt>いま</rt></ruby>、<ruby>日本<rt>にほん</rt></ruby>では、<ruby>若<rt>わか</rt></ruby>い<ruby>人<rt>ひと</rt></ruby>たちを<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる<ruby>人<rt>ひと</rt></ruby>が<ruby>減<rt>へ</rt></ruby>っていると<ruby>聞<rt>き</rt></ruby>きました。ご<ruby>飯<rt>はん</rt></ruby>を<ruby>炊<rt>た</rt></ruby>いておかずを<ruby>作<rt>つく</rt></ruby>るより、パン、うどん、ラーメンなどの<ruby>方<rt>ほう</rt></ruby>が<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるからでしょう。もちろんいろいろな<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>食事<rt>しょくじ</rt></ruby>ができることはとても<ruby>楽<rt>たの</rt></ruby>しいことですが、わたしは<ruby>米<rt>こめ</rt></ruby>のよさがもっと［ 22 ］と<ruby>思<rt>おも</rt></ruby>います。<ruby>日本<rt>にほん</rt></ruby>の<ruby>気候<rt>きこう</rt></ruby>は<ruby>米作<rt>こめづく</rt></ruby>りに<ruby>合<rt>あ</rt></ruby>っているので、<ruby>国内<rt>こくない</rt></ruby>でおいしい<ruby>米<rt>こめ</rt></ruby>ができます。わたしはその<ruby>土地<rt>とち</rt></ruby>で<ruby>昔<rt>むかし</rt></ruby>から<ruby>作<rt>つく</rt></ruby>られてきたものを<ruby>食<rt>た</rt></ruby>べるのがいちばん<ruby>体<rt>からだ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>っていて<ruby>健康的<rt>けんこうてき</rt></ruby>だと<ruby>考<rt>かんが</rt></ruby>えています。そういう<ruby>意味<rt>いみ</rt></ruby>で、<ruby>米<rt>こめ</rt></ruby>は<ruby>日本人<rt>にほんじん</rt></ruby>にとって<ruby>最<rt>もっと</rt></ruby>も<ruby>健康的<rt>けんこうてき</rt></ruby>な<ruby>食品<rt>しょくひん</rt></ruby>［ 23 ］。"
+    },
+    {
+      "question_id": 2001,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>最後<rt>さいご</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>の<ruby>答<rt>こた</rt></ruby>えを<ruby>書<rt>か</rt></ruby>いた（　）、<ruby>試験<rt>しけん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりのベルが<ruby>鳴<rt>な</rt></ruby>った。",
+      "options": [
+        "1　ばかりで",
+        "2　ままで",
+        "3　ところで",
+        "4　とおりで"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "<ruby>最後<rt>さいご</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>の<ruby>答<rt>こた</rt></ruby>えを<ruby>書<rt>か</rt></ruby>いたところで、<ruby>試験<rt>しけん</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりのベルが<ruby>鳴<rt>な</rt></ruby>った。",
+      "full_sentence_en": "Right when I had finished writing the answer to the last question, the bell signaling the end of the exam rang.",
+      "explanation_ja": "「〜たところで」は直前の動作がちょうど完了した瞬間に次の事態が起こることを表す。3が正解。",
+      "explanation_en": "'~ta tokoro de' indicates that another event occurred just as an action concluded. Choice 3 is correct."
+    },
+    {
+      "question_id": 2002,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>虫<rt>むし</rt></ruby>がいたので（　）、どこかに<ruby>逃<rt>に</rt></ruby>げられてしまった。",
+      "options": [
+        "1　<ruby>捕<rt>つか</rt></ruby>まえるようにしたら",
+        "2　<ruby>捕<rt>つか</rt></ruby>まえようとしたが",
+        "3　<ruby>捕<rt>つか</rt></ruby>まえることにして",
+        "4　<ruby>捕<rt>つか</rt></ruby>まえるようになって"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "<ruby>虫<rt>むし</rt></ruby>がいたので<ruby>捕<rt>つか</rt></ruby>まえようとしたが、どこかに<ruby>逃<rt>に</rt></ruby>げられてしまった。",
+      "full_sentence_en": "There was a bug, so I tried to catch it, but it got away somewhere.",
+      "explanation_ja": "「〜ようとしたが」は意図した行動を試みたが結果が伴わなかったことを表す。2が正解。",
+      "explanation_en": "'~you to shita ga' expresses attempting an action that ultimately failed. Choice 2 is correct."
+    },
+    {
+      "question_id": 2003,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "A「<ruby>昼<rt>ひる</rt></ruby>ごはん、もう<ruby>食<rt>た</rt></ruby>べた？」\nB「うん、（　）けど、まだ、おなかがすいている。」",
+      "options": [
+        "1　<ruby>食<rt>た</rt></ruby>べるようにした",
+        "2　<ruby>食<rt>た</rt></ruby>べようとした",
+        "3　<ruby>食<rt>た</rt></ruby>べることにした",
+        "4　<ruby>食<rt>た</rt></ruby>べたことは<ruby>食<rt>た</rt></ruby>べた"
+      ],
+      "correct_answer": "4",
+      "full_sentence": "B「うん、<ruby>食<rt>た</rt></ruby>べたことは<ruby>食<rt>た</rt></ruby>べたけど、まだ、おなかがすいている。」",
+      "full_sentence_en": "B: 'Yeah, I did eat, but I'm still hungry.'",
+      "explanation_ja": "「〜たことは〜たが」は一応その事実を認めるが十分ではないことを表す。4が正解。",
+      "explanation_en": "'~ta koto wa ~ta ga' acknowledges that an action took place, but qualifies it. Choice 4 is correct."
+    },
+    {
+      "question_id": 2004,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>皆<rt>みな</rt></ruby>さんご<ruby>存<rt>ぞん</rt></ruby>じ（　）、この<ruby>学校<rt>がっこう</rt></ruby>ができてから<ruby>来年<rt>らいねん</rt></ruby>で60<ruby>年<rt>ねん</rt></ruby>になります。",
+      "options": [
+        "1　によれば",
+        "2　によって",
+        "3　のように",
+        "4　のことに"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "<ruby>皆<rt>みな</rt></ruby>さんご<ruby>存<rt>ぞん</rt></ruby>じのように、この<ruby>学校<rt>がっこう</rt></ruby>ができてから<ruby>来年<rt>らいねん</rt></ruby>で60<ruby>年<rt>ねん</rt></ruby>になります。",
+      "full_sentence_en": "As you all know, next year marks 60 years since this school was founded.",
+      "explanation_ja": "「ご存じのように」は周知の事実を導入する定型表現。3が正解。",
+      "explanation_en": "'ご存じのように' is a standard phrase meaning 'as you all know'. Choice 3 is correct."
+    },
+    {
+      "question_id": 2005,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "A「<ruby>突然<rt>とつぜん</rt></ruby>おじゃまして、すみませんでした。」\nB「こちらこそ、せっかく（　）、<ruby>時間<rt>じかん</rt></ruby>がなくてすみませんでした。」",
+      "options": [
+        "1　<ruby>来<rt>き</rt></ruby>てくれて",
+        "2　<ruby>来<rt>き</rt></ruby>てくれたのに",
+        "3　<ruby>来<rt>き</rt></ruby>てくれたら",
+        "4　<ruby>来<rt>き</rt></ruby>てくれたなら"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "B「こちらこそ、せっかく<ruby>来<rt>き</rt></ruby>てくれたのに、<ruby>時間<rt>じかん</rt></ruby>がなくてすみませんでした。」",
+      "full_sentence_en": "B: 'Not at all, even though you went out of your way to visit, I'm sorry I didn't have much time.'",
+      "explanation_ja": "「せっかく〜てくれたのに」は相手の好意に対して期待に添えなかった遺憾の意を表す。2が正解。",
+      "explanation_en": "'せっかく〜てくれたのに' expresses regret that someone's kindness was not properly reciprocated. Choice 2 is correct."
+    },
+    {
+      "question_id": 2006,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>虫<rt>むし</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されたところが<ruby>赤<rt>あか</rt></ruby>くなって、かゆい（　）<ruby>痛<rt>いた</rt></ruby>くなった。",
+      "options": [
+        "1　というので",
+        "2　というより",
+        "3　といって",
+        "4　というほど"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "<ruby>虫<rt>むし</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されたところが<ruby>赤<rt>あか</rt></ruby>くなって、かゆいというより<ruby>痛<rt>いた</rt></ruby>くなった。",
+      "full_sentence_en": "Where the insect bit me turned red, and it felt painful rather than itchy.",
+      "explanation_ja": "「〜というより…」は前者の表現よりも後者のほうがより適切であることを表す。2が正解。",
+      "explanation_en": "'~to iu yori' means 'rather than ~' to describe reality more accurately. Choice 2 is correct."
+    },
+    {
+      "question_id": 2007,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "あのとき<ruby>君<rt>きみ</rt></ruby>に（　）、ぼくの<ruby>人生<rt>じんせい</rt></ruby>はきっと<ruby>全然違<rt>ぜんぜんちが</rt></ruby>っていただろう。",
+      "options": [
+        "1　<ruby>会<rt>あ</rt></ruby>っていなければ",
+        "2　<ruby>会<rt>あ</rt></ruby>ってからでなければ",
+        "3　<ruby>会<rt>あ</rt></ruby>ったことから",
+        "4　<ruby>会<rt>あ</rt></ruby>ったのだから"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "あのとき<ruby>君<rt>きみ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>っていなければ、ぼくの<ruby>人生<rt>じんせい</rt></ruby>はきっと<ruby>全然違<rt>ぜんぜんちが</rt></ruby>っていただろう。",
+      "full_sentence_en": "If I hadn't met you back then, my life surely would have been completely different.",
+      "explanation_ja": "過去の反実仮想（もし〜ていなければ…だろう）。1が正解。",
+      "explanation_en": "Counterfactual conditional expressing what would have been: '会っていなければ'. Choice 1 is correct."
+    },
+    {
+      "question_id": 2008,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "A「ああ、どうしよう。あしたのスピーチ、うまくできるかなあ。」\nB「（　）よ。お<ruby>客<rt>きゃく</rt></ruby>さんはみんな<ruby>知<rt>し</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>たちばかりだから。」",
+      "options": [
+        "1　<ruby>心配<rt>しんぱい</rt></ruby>することはない",
+        "2　<ruby>心配<rt>しんぱい</rt></ruby>するわけではない",
+        "3　<ruby>心配<rt>しんぱい</rt></ruby>しないことがある",
+        "4　<ruby>心配<rt>しんぱい</rt></ruby>しないわけだよ"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "B「<ruby>心配<rt>しんぱい</rt></ruby>することはないよ。お<ruby>客<rt>きゃく</rt></ruby>さんはみんな<ruby>知<rt>し</rt></ruby>っている<ruby>人<rt>ひと</rt></ruby>たちばかりだから。」",
+      "full_sentence_en": "B: 'There is no need to worry! The audience will be only people you know.'",
+      "explanation_ja": "「〜ことはない」は「〜する必要はない」という意味。1が正解。",
+      "explanation_en": "'~koto wa nai' means 'there is no need to ~'. Choice 1 is correct."
+    },
+    {
+      "question_id": 2009,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>だが、わたしの<ruby>国<rt>くに</rt></ruby>と<ruby>時差<rt>じさ</rt></ruby>が5<ruby>時間<rt>じかん</rt></ruby>あるから、<ruby>母<rt>はは</rt></ruby>はまだ<ruby>寝<rt>ね</rt></ruby>ている（　）。",
+      "options": [
+        "1　べきだ",
+        "2　ことだ",
+        "3　つもりだ",
+        "4　はずだ"
+      ],
+      "correct_answer": "4",
+      "full_sentence": "<ruby>日本<rt>にほん</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>だが、わたしの<ruby>国<rt>くに</rt></ruby>と<ruby>時差<rt>じさ</rt></ruby>が5<ruby>時間<rt>じかん</rt></ruby>あるから、<ruby>母<rt>はは</rt></ruby>はまだ<ruby>寝<rt>ね</rt></ruby>ているはずだ。",
+      "full_sentence_en": "It's morning in Japan, but because of the 5-hour time difference with my home country, my mother should still be asleep.",
+      "explanation_ja": "「〜はずだ」は根拠に基づく確信的な推測を表す。4が正解。",
+      "explanation_en": "'~hazu da' expresses a confident expectation based on reason. Choice 4 is correct."
+    },
+    {
+      "question_id": 2010,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>を（　）、その<ruby>日<rt>ひ</rt></ruby><ruby>行<rt>い</rt></ruby>けるかどうかお<ruby>返事<rt>へんじ</rt></ruby>できません。",
+      "options": [
+        "1　<ruby>確認<rt>かくにん</rt></ruby>するのでは",
+        "2　<ruby>確認<rt>かくにん</rt></ruby>するなら",
+        "3　<ruby>確認<rt>かくにん</rt></ruby>しようとしてから",
+        "4　<ruby>確認<rt>かくにん</rt></ruby>してからでなければ"
+      ],
+      "correct_answer": "4",
+      "full_sentence": "<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>してからでなければ、その<ruby>日<rt>ひ</rt></ruby><ruby>行<rt>い</rt></ruby>けるかどうかお<ruby>返事<rt>へんじ</rt></ruby>できません。",
+      "full_sentence_en": "Unless I check next week's schedule first, I cannot give you an answer on whether I can go that day.",
+      "explanation_ja": "「〜てからでなければ…できない」は前者が必須条件であることを表す。4が正解。",
+      "explanation_en": "'~te kara de nakereba' means 'unless doing ~ first, ... cannot be done'. Choice 4 is correct."
+    },
+    {
+      "question_id": 2011,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>時間<rt>じかん</rt></ruby>があればわたしにも<ruby>意見<rt>いけん</rt></ruby>を（　）です。<ruby>言<rt>い</rt></ruby>いたいことがあったんです。",
+      "options": [
+        "1　<ruby>言<rt>い</rt></ruby>わせてもらいたかった",
+        "2　<ruby>言<rt>い</rt></ruby>ってもらいたかった",
+        "3　<ruby>言<rt>い</rt></ruby>ってくれたらよかった",
+        "4　<ruby>言<rt>い</rt></ruby>わせたかった"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "<ruby>時間<rt>じかん</rt></ruby>があればわたしにも<ruby>意見<rt>いけん</rt></ruby>を<ruby>言<rt>い</rt></ruby>わせてもらいたかったです。<ruby>言<rt>い</rt></ruby>いたいことがあったんです。",
+      "full_sentence_en": "If there had been time, I would have liked to be allowed to express my opinion. There was something I wanted to say.",
+      "explanation_ja": "「（わたしに）言わせてもらいたい」の過去形「言わせてもらいたかった」。1が正解。",
+      "explanation_en": "Expresses wanting permission to speak for oneself in the past: '言わせてもらいたかった'. Choice 1 is correct."
+    },
+    {
+      "question_id": 2012,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "<ruby>病院<rt>びょういん</rt></ruby>に<ruby>来<rt>き</rt></ruby>た<ruby>人<rt>ひと</rt></ruby>「あのう、<ruby>診察<rt>しんさつ</rt></ruby>の<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みはどうすればいいんでしょうか。」\n<ruby>病院<rt>びょういん</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>「あ、<ruby>初<rt>はじ</rt></ruby>めてなんですね。では、あそこの<ruby>窓口<rt>まどぐち</rt></ruby>で（　）。」",
+      "options": [
+        "1　お<ruby>参<rt>まい</rt></ruby>りください",
+        "2　<ruby>伺<rt>うかが</rt></ruby>いませんか",
+        "3　おたずねください",
+        "4　お<ruby>聞<rt>き</rt></ruby>きしませんか"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>「あ、<ruby>初<rt>はじ</rt></ruby>めてなんですね。では、あそこの<ruby>窓口<rt>まどぐち</rt></ruby>でおたずねください。」",
+      "full_sentence_en": "Hospital staff: 'Ah, it's your first time. In that case, please inquire at the window over there.'",
+      "explanation_ja": "相手に質問するよう勧める尊敬表現「おたずねください（お尋ねください）」。3が正解。",
+      "explanation_en": "Polite honorific request to inquire: 'おたずねください'. Choice 3 is correct."
+    },
+    {
+      "question_id": 2013,
+      "category": "第2回 問題1",
+      "question_type": "multiple_choice",
+      "prompt": "ぼくがいいかげんな<ruby>気持<rt>きも</rt></ruby>ちだったら、<ruby>親<rt>おや</rt></ruby>がこの<ruby>結婚<rt>けっこん</rt></ruby>に<ruby>賛成<rt>さんせい</rt></ruby>して（　）。",
+      "options": [
+        "1　くれるわけがない",
+        "2　あげるわけにはいかない",
+        "3　くれないわけがない",
+        "4　あげないわけにはいかない"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "ぼくがいいかげんな<ruby>気持<rt>きも</rt></ruby>ちだったら、<ruby>親<rt>おや</rt></ruby>がこの<ruby>結婚<rt>けっこん</rt></ruby>に<ruby>賛成<rt>さんせい</rt></ruby>してくれるわけがない。",
+      "full_sentence_en": "If I had a half-hearted attitude, there's no way my parents would approve of this marriage.",
+      "explanation_ja": "「賛成してくれる」＋強い否定「〜わけがない」。「賛成してくれるわけがない」。1が正解。",
+      "explanation_en": "'~wake ga nai' denotes strong conviction that something is impossible. Choice 1 is correct."
+    },
+    {
+      "question_id": 2014,
+      "category": "第2回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どもの　＿＿＿　＿＿＿　＿★＿　＿＿＿　わたしにくれた。",
+      "options": [
+        "1　<ruby>時計<rt>とけい</rt></ruby>を",
+        "2　<ruby>大切<rt>たいせつ</rt></ruby>に",
+        "3　ときから",
+        "4　していた"
+      ],
+      "correct_order": [
+        3,
+        2,
+        4,
+        1
+      ],
+      "star_position": 3,
+      "correct_answer": 4,
+      "full_sentence": "<ruby>祖父<rt>そふ</rt></ruby>は<ruby>子<rt>こ</rt></ruby>どものときから<ruby>大切<rt>たいせつ</rt></ruby>にしていた<ruby>時計<rt>とけい</rt></ruby>をわたしにくれた。",
+      "full_sentence_en": "My grandfather gave me the watch he had treasured since he was a child.",
+      "explanation_ja": "「子どものときから（3）大切に（2）していた（4）時計を（1）」。★には4が入る。",
+      "explanation_en": "Order is 3-2-4-1. Star position is 4. Choice 4 is correct."
+    },
+    {
+      "question_id": 2015,
+      "category": "第2回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高<rt>たか</rt></ruby>ければ　＿＿＿　＿＿＿　＿★＿　＿＿＿　というわけではない。",
+      "options": [
+        "1　いい",
+        "2　<ruby>高<rt>たか</rt></ruby>い",
+        "3　<ruby>品質<rt>ひんしつ</rt></ruby>が",
+        "4　ほど"
+      ],
+      "correct_order": [
+        2,
+        4,
+        3,
+        1
+      ],
+      "star_position": 3,
+      "correct_answer": 3,
+      "full_sentence": "<ruby>値段<rt>ねだん</rt></ruby>が<ruby>高<rt>たか</rt></ruby>ければ<ruby>高<rt>たか</rt></ruby>いほど<ruby>品質<rt>ひんしつ</rt></ruby>がいいというわけではない。",
+      "full_sentence_en": "It is not necessarily true that the higher the price, the better the quality.",
+      "explanation_ja": "「高ければ高い（2）ほど（4）品質が（3）いい（1）」。★には3が入る。",
+      "explanation_en": "Order is 2-4-3-1. Star position is 3. Choice 3 is correct."
+    },
+    {
+      "question_id": 2016,
+      "category": "第2回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>先生<rt>せんせい</rt></ruby>「<ruby>君<rt>きみ</rt></ruby>は、　＿＿＿　＿＿＿　＿★＿　＿＿＿　やることも<ruby>考<rt>かんが</rt></ruby>えなさい。」\n<ruby>生徒<rt>せいと</rt></ruby>「はい、わかりました。」",
+      "options": [
+        "1　<ruby>手伝<rt>てつだ</rt></ruby>ってもらう",
+        "2　<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>で",
+        "3　ほかの<ruby>人<rt>ひと</rt></ruby>に",
+        "4　ばかりでなく"
+      ],
+      "correct_order": [
+        3,
+        1,
+        4,
+        2
+      ],
+      "star_position": 3,
+      "correct_answer": 4,
+      "full_sentence": "<ruby>先生<rt>せんせい</rt></ruby>「<ruby>君<rt>きみ</rt></ruby>は、ほかの<ruby>人<rt>ひと</rt></ruby>に<ruby>手伝<rt>てつだ</rt></ruby>ってもらうばかりでなく<ruby>自分<rt>じぶん</rt></ruby>の<ruby>力<rt>ちから</rt></ruby>でやることも<ruby>考<rt>かんが</rt></ruby>えなさい。」",
+      "full_sentence_en": "Teacher: 'You should consider not only having other people help you, but also doing things by your own effort.'",
+      "explanation_ja": "「ほかの人に（3）手伝ってもらう（1）ばかりでなく（4）自分の力で（2）」。★には4が入る。",
+      "explanation_en": "Order is 3-1-4-2. Star position is 4. Choice 4 is correct."
+    },
+    {
+      "question_id": 2017,
+      "category": "第2回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "この<ruby>図書館<rt>としょかん</rt></ruby>で　＿＿＿　＿＿＿　＿★＿　＿＿＿　ようになっている。",
+      "options": [
+        "1　<ruby>本<rt>ほん</rt></ruby>は",
+        "2　コンビニでも",
+        "3　<ruby>返<rt>かえ</rt></ruby>せる",
+        "4　<ruby>借<rt>か</rt></ruby>りた"
+      ],
+      "correct_order": [
+        4,
+        1,
+        2,
+        3
+      ],
+      "star_position": 3,
+      "correct_answer": 2,
+      "full_sentence": "この<ruby>図書館<rt>としょかん</rt></ruby>で<ruby>借<rt>か</rt></ruby>りた<ruby>本<rt>ほん</rt></ruby>はコンビニでも<ruby>返<rt>かえ</rt></ruby>せるようになっている。",
+      "full_sentence_en": "Books borrowed from this library are set up so that they can be returned even at convenience stores.",
+      "explanation_ja": "「借りた（4）本は（1）コンビニでも（2）返せる（3）」。★には2が入る。",
+      "explanation_en": "Order is 4-1-2-3. Star position is 2. Choice 2 is correct."
+    },
+    {
+      "question_id": 2018,
+      "category": "第2回 問題2",
+      "question_type": "star_arrangement",
+      "prompt": "<ruby>彼<rt>かれ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>って<ruby>直接<rt>ちょくせつ</rt></ruby>　＿＿＿　＿＿＿　＿★＿　＿＿＿　<ruby>断<rt>ことわ</rt></ruby>られた。",
+      "options": [
+        "1　<ruby>会<rt>あ</rt></ruby>いたくない",
+        "2　<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>おう",
+        "3　と<ruby>言<rt>い</rt></ruby>って",
+        "4　としたが"
+      ],
+      "correct_order": [
+        2,
+        4,
+        1,
+        3
+      ],
+      "star_position": 3,
+      "correct_answer": 1,
+      "full_sentence": "<ruby>彼<rt>かれ</rt></ruby>に<ruby>会<rt>あ</rt></ruby>って<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>おうとしたが<ruby>会<rt>あ</rt></ruby>いたくないと<ruby>言<rt>い</rt></ruby>って<ruby>断<rt>ことわ</rt></ruby>られた。",
+      "full_sentence_en": "I tried to meet him to talk things over directly, but I was turned down, with him saying he didn't want to meet.",
+      "explanation_ja": "「話し合おう（2）としたが（4）会いたくない（1）と言って（3）」。★には1が入る。",
+      "explanation_en": "Order is 2-4-1-3. Star position is 1. Choice 1 is correct."
+    },
+    {
+      "question_id": 2019,
+      "category": "第2回 問題3",
+      "passage_title": "わたしが生まれた町",
+      "question_type": "cloze_passage",
+      "blank_number": 19,
+      "prompt": "［ 19 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　町です",
+        "2　町があります",
+        "3　町にあります",
+        "4　町で生まれました"
+      ],
+      "correct_answer": "1",
+      "full_sentence": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>です。",
+      "explanation_ja": "「〜のは、…町です」（〜のは…だ文型）。1が正解。",
+      "explanation_en": "Corresponds to the '〜のは…だ' pattern: '町です'. Choice 1 is correct.",
+      "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+    },
+    {
+      "question_id": 2020,
+      "category": "第2回 問題3",
+      "passage_title": "わたしが生まれた町",
+      "question_type": "cloze_passage",
+      "blank_number": 20,
+      "prompt": "［ 20 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　わたしもそれでした",
+        "2　わたしもそうでした",
+        "3　みんなもそうでした",
+        "4　みんなもその人たちでした"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "大人になると、みんな町を出ていってしまいます。わたしもそうでした。",
+      "explanation_ja": "前文の「大人になるとみんな町を出ていってしまう」を受けて話者自身も同様であったことを述べるので「わたしもそうでした」。2が正解。",
+      "explanation_en": "The speaker confirms having done the same as others: 'わたしもそうでした'. Choice 2 is correct.",
+      "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+    },
+    {
+      "question_id": 2021,
+      "category": "第2回 問題3",
+      "passage_title": "わたしが生まれた町",
+      "question_type": "cloze_passage",
+      "blank_number": 21,
+      "prompt": "［ 21 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　そこで",
+        "2　そのうえ",
+        "3　一方",
+        "4　けれども"
+      ],
+      "correct_answer": "4",
+      "explanation_ja": "子どものころ寂しい町だと思っていた過去の認識に対し、大人になって考えが変わった逆接なので「けれども」。4が正解。",
+      "explanation_en": "Contrasts childhood feelings with changed mature views: 'けれども'. Choice 4 is correct.",
+      "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+    },
+    {
+      "question_id": 2022,
+      "category": "第2回 問題3",
+      "passage_title": "わたしが生まれた町",
+      "question_type": "cloze_passage",
+      "blank_number": 22,
+      "prompt": "［ 22 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　聞かれて",
+        "2　聞かせて",
+        "3　聞かされて",
+        "4　聞いていって"
+      ],
+      "correct_answer": "3",
+      "full_sentence": "<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>かされて<ruby>育<rt>そだ</rt></ruby>つからです。",
+      "explanation_ja": "周りの大人たちから自然と海の体験談を聞かされながら育った使役受身「聞かされて育つ」。3が正解。",
+      "explanation_en": "Causative-passive indicating growing up having been told stories by adults: '聞かされて'. Choice 3 is correct.",
+      "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+    },
+    {
+      "question_id": 2023,
+      "category": "第2回 問題3",
+      "passage_title": "わたしが生まれた町",
+      "question_type": "cloze_passage",
+      "blank_number": 23,
+      "prompt": "［ 23 ］に<ruby>入<rt>はい</rt></ruby>るもの",
+      "options": [
+        "1　つながったのです",
+        "2　つながっているのです",
+        "3　つながるのでしょうか",
+        "4　つながったのでしょうか"
+      ],
+      "correct_answer": "2",
+      "full_sentence": "どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と<ruby>繋<rt>つな</rt></ruby>がっているのです。",
+      "explanation_ja": "現在も海を通じて世界と接続している恒常的な状態を説明する「つながっているのです」。2が正解。",
+      "explanation_en": "Continuous present state of connection with the world across the ocean: 'つながっているのです'. Choice 2 is correct.",
+      "passage_full_text": "わたしが<ruby>生<rt>う</rt></ruby>まれたのは、<ruby>海<rt>うみ</rt></ruby>のそばの<ruby>小<rt>ちい</rt></ruby>さな［ 19 ］。<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>はだいたい<ruby>海<rt>うみ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>がある<ruby>仕事<rt>しごと</rt></ruby>をしています。わたしの<ruby>父<rt>ちち</rt></ruby>と<ruby>祖父<rt>そふ</rt></ruby>は<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>って<ruby>遠<rt>とお</rt></ruby>くの<ruby>海<rt>うみ</rt></ruby>まで<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>りに<ruby>行<rt>い</rt></ruby>っていますし、<ruby>母<rt>はは</rt></ruby>は<ruby>港<rt>みなと</rt></ruby>の<ruby>近<rt>ちか</rt></ruby>くの<ruby>工場<rt>こうじょう</rt></ruby>で<ruby>貝<rt>かい</rt></ruby>をむいています。<ruby>小<rt>ちい</rt></ruby>さな<ruby>町<rt>まち</rt></ruby>なので、<ruby>大<rt>おお</rt></ruby>きい<ruby>病院<rt>びょういん</rt></ruby>やデパートなどはありません。<ruby>必要<rt>ひつよう</rt></ruby>なときは<ruby>車<rt>くるま</rt></ruby>で<ruby>遠<rt>とお</rt></ruby>くまで<ruby>行<rt>い</rt></ruby>かなければなりません。ですから、<ruby>大人<rt>おとな</rt></ruby>になると、みんな<ruby>町<rt>まち</rt></ruby>を<ruby>出<rt>で</rt></ruby>ていってしまいます。［ 20 ］。\n\n<ruby>子<rt>こ</rt></ruby>どものころは、わたしの<ruby>町<rt>まち</rt></ruby>はどの<ruby>都市<rt>とし</rt></ruby>からも<ruby>遠<rt>とお</rt></ruby>くて、どこにも<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けないさびしい<ruby>町<rt>まち</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>っていました。［ 21 ］、<ruby>今<rt>いま</rt></ruby>では<ruby>考<rt>かんが</rt></ruby>えが<ruby>変<rt>か</rt></ruby>わりました。この<ruby>町<rt>まち</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>は、<ruby>小<rt>ちい</rt></ruby>さい<ruby>子<rt>こ</rt></ruby>どもでも、<ruby>世界<rt>せかい</rt></ruby>のいろいろな<ruby>港<rt>みなと</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>やそこでどんなものが<ruby>捕<rt>と</rt></ruby>れるかをよく<ruby>知<rt>し</rt></ruby>っています。<ruby>子<rt>こ</rt></ruby>どものときから、<ruby>周<rt>まわ</rt></ruby>りの<ruby>大人<rt>おとな</rt></ruby>に<ruby>世界中<rt>せかいじゅう</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を［ 22 ］<ruby>育<rt>そだ</rt></ruby>つからです。わたしたちは<ruby>海<rt>うみ</rt></ruby>の<ruby>様子<rt>ようす</rt></ruby>や<ruby>捕<rt>と</rt></ruby>れた<ruby>魚<rt>さかな</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>地球<rt>ちきゅう</rt></ruby>の<ruby>反対側<rt>はんたいがわ</rt></ruby>の<ruby>海<rt>うみ</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>や、<ruby>海水<rt>かいすい</rt></ruby>の<ruby>流<rt>なが</rt></ruby>れなどを<ruby>想像<rt>そうぞう</rt></ruby>することができます。どこからも<ruby>離<rt>はな</rt></ruby>れていると<ruby>思<rt>おも</rt></ruby>っていたわたしの<ruby>町<rt>まち</rt></ruby>は、<ruby>実<rt>じつ</rt></ruby>は、<ruby>海<rt>うみ</rt></ruby>の<ruby>向<rt>む</rt></ruby>こうの<ruby>世界<rt>せかい</rt></ruby>と［ 23 ］。"
+    }
+  ]
+}

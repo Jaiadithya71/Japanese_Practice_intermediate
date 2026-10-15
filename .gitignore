@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor & IDE configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary scratch and extraction dumps
+scratch_*.txt
+step_*.txt
+full_step*.txt
+summary_step*.txt
+scripts/*.txt
+scripts/pages/
+scripts/booklet/
+scripts/*.jpg
+scripts/check_*.py
+scripts/find_*.py
+scripts/dump_*.py
+scripts/inspect_*.py
+scripts/list_*.py
+scripts/print_*.py
+scripts/read_*.py
+scripts/scan_*.py
+extract_*.py
+
+# Raw scanned book photo dumps (root level only)
+/Grammar/
+/Reading_book_material/
+/vocalbury/

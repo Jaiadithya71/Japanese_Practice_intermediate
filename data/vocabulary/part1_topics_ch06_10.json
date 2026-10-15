@@ -1,0 +1,5032 @@
+{
+  "metadata": {
+    "title": "新にほんご500問 N3 語彙編 (Vocabulary) - 第1部 6課〜10課",
+    "part": "part_1",
+    "chapters_range": "6-10",
+    "description": "Vocabulary data transcribed from Nihongo 500 Mon N3 Vocabulary Chapters 6-10 and Review Test 2 with complete ruby furigana, warming up, yattemiyou drills, and exercises.",
+    "version": "1.0.0"
+  },
+  "chapters": [
+    {
+      "metadata": {
+        "chapter": "06",
+        "topic_ja": "美容と健康",
+        "topic_en": "Beauty and Health",
+        "pages": [
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "06-1",
+          "title_ja": "美容",
+          "title_en": "Beauty",
+          "page": 24,
+          "warming_up": {
+            "question_ja": "自分をもっと素敵に見せるために、どんなことをしていますか。",
+            "question_en": "What do you do to make yourself look more attractive and nice?"
+          },
+          "words": [
+            {
+              "id": "v06-001",
+              "term_ja": "伸ばす",
+              "reading": "のばす",
+              "ruby_html": "<ruby>伸<rt>の</rt></ruby>ばす",
+              "part_of_speech": "動詞",
+              "meaning_en": "to grow, to lengthen, to let grow long",
+              "example_ja": "髪を伸ばす",
+              "example_en": "grow one's hair long"
+            },
+            {
+              "id": "v06-002",
+              "term_ja": "結ぶ",
+              "reading": "むすぶ",
+              "ruby_html": "<ruby>結<rt>むす</rt></ruby>ぶ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to tie, to tie up",
+              "example_ja": "髪を結ぶ",
+              "example_en": "tie one's hair up"
+            },
+            {
+              "id": "v06-003",
+              "term_ja": "美容院",
+              "reading": "びよういん",
+              "ruby_html": "<ruby>美容院<rt>びよういん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "beauty salon, hairdresser's",
+              "example_ja": "美容院へ行く",
+              "example_en": "go to a beauty salon"
+            },
+            {
+              "id": "v06-004",
+              "term_ja": "雰囲気",
+              "reading": "ふんいき",
+              "ruby_html": "<ruby>雰囲気<rt>ふんいき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "atmosphere, vibe, look",
+              "example_ja": "雰囲気を変える",
+              "example_en": "change one's look/atmosphere"
+            },
+            {
+              "id": "v06-005",
+              "term_ja": "しわ",
+              "reading": "しわ",
+              "ruby_html": "しわ",
+              "part_of_speech": "名詞",
+              "meaning_en": "wrinkle, creases",
+              "example_ja": "しわが増える",
+              "example_en": "wrinkles increase"
+            },
+            {
+              "id": "v06-006",
+              "term_ja": "肌",
+              "reading": "はだ",
+              "ruby_html": "<ruby>肌<rt>はだ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "skin, complexion",
+              "example_ja": "肌の調子がいい",
+              "example_en": "one's skin is in good condition"
+            },
+            {
+              "id": "v06-007",
+              "term_ja": "クリーム",
+              "reading": "クリーム",
+              "ruby_html": "クリーム",
+              "part_of_speech": "名詞",
+              "meaning_en": "cream, lotion",
+              "example_ja": "肌にクリームを塗る",
+              "example_en": "apply cream to skin"
+            },
+            {
+              "id": "v06-008",
+              "term_ja": "塗る",
+              "reading": "ぬる",
+              "ruby_html": "<ruby>塗<rt>ぬ</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to apply, to rub in, to spread",
+              "example_ja": "クリームを塗る",
+              "example_en": "apply cream"
+            },
+            {
+              "id": "v06-009",
+              "term_ja": "まったく",
+              "reading": "まったく",
+              "ruby_html": "まったく",
+              "part_of_speech": "副詞",
+              "meaning_en": "entirely, completely; (with neg.) not at all",
+              "example_ja": "まったく変わらない",
+              "example_en": "doesn't change at all"
+            },
+            {
+              "id": "v06-010",
+              "term_ja": "効果",
+              "reading": "こうか",
+              "ruby_html": "<ruby>効果<rt>こうか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "effect, effectiveness, result",
+              "example_ja": "効果がない",
+              "example_en": "has no effect"
+            },
+            {
+              "id": "v06-011",
+              "term_ja": "化粧",
+              "reading": "けしょう",
+              "ruby_html": "<ruby>化粧<rt>けしょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "makeup, cosmetics",
+              "example_ja": "化粧が濃い",
+              "example_en": "makeup is heavy"
+            },
+            {
+              "id": "v06-012",
+              "term_ja": "濃い",
+              "reading": "こい",
+              "ruby_html": "<ruby>濃<rt>こ</rt></ruby>い",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "thick, heavy, deep (color)",
+              "example_ja": "化粧が濃い",
+              "example_en": "heavy makeup"
+            },
+            {
+              "id": "v06-013",
+              "term_ja": "スタイル",
+              "reading": "スタイル",
+              "ruby_html": "スタイル",
+              "part_of_speech": "名詞",
+              "meaning_en": "body shape, figure, style",
+              "example_ja": "スタイルがいい",
+              "example_en": "have a good figure"
+            },
+            {
+              "id": "v06-014",
+              "term_ja": "自信",
+              "reading": "じしん",
+              "ruby_html": "<ruby>自信<rt>じしん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "self-confidence",
+              "example_ja": "自信を持つ",
+              "example_en": "have self-confidence"
+            },
+            {
+              "id": "v06-015",
+              "term_ja": "姿勢",
+              "reading": "しせい",
+              "ruby_html": "<ruby>姿勢<rt>しせい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "posture, carriage",
+              "example_ja": "姿勢がいい",
+              "example_en": "have good posture"
+            },
+            {
+              "id": "v06-016",
+              "term_ja": "みっともない",
+              "reading": "みっともない",
+              "ruby_html": "みっともない",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "shameful, disgraceful, unsightly",
+              "example_ja": "みっともない格好",
+              "example_en": "disgraceful / unsightly appearance"
+            },
+            {
+              "id": "v06-017",
+              "term_ja": "格好",
+              "reading": "かっこう",
+              "ruby_html": "<ruby>格好<rt>かっこう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "appearance, outfit, posture",
+              "example_ja": "みっともない格好",
+              "example_en": "shameful appearance"
+            },
+            {
+              "id": "v06-018",
+              "term_ja": "量",
+              "reading": "りょう",
+              "ruby_html": "<ruby>量<rt>りょう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "amount, quantity, portion",
+              "example_ja": "食事の量を制限する",
+              "example_en": "limit the amount of food"
+            },
+            {
+              "id": "v06-019",
+              "term_ja": "制限する",
+              "reading": "せいげんする",
+              "ruby_html": "<ruby>制限<rt>せいげん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to restrict, to limit",
+              "example_ja": "食事の量を制限する",
+              "example_en": "limit food intake"
+            },
+            {
+              "id": "v06-020",
+              "term_ja": "外食",
+              "reading": "がいしょく",
+              "ruby_html": "<ruby>外食<rt>がいしょく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "eating out, dining out",
+              "example_ja": "外食が多い",
+              "example_en": "eat out often"
+            },
+            {
+              "id": "v06-021",
+              "term_ja": "カロリー",
+              "reading": "カロリー",
+              "ruby_html": "カロリー",
+              "part_of_speech": "名詞",
+              "meaning_en": "calorie",
+              "example_ja": "カロリーが高い",
+              "example_en": "high in calories"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "年を取って、目の周りに（　）が増えた。",
+              "options": [
+                "しわ",
+                "クリーム",
+                "外食",
+                "美容院",
+                "まったく"
+              ],
+              "answer": "しわ",
+              "explanation": "目の周りに増えるのは「しわ」（wrinkles）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "乾燥しているので、手にていねいに（　）を塗った。",
+              "options": [
+                "しわ",
+                "クリーム",
+                "外食",
+                "美容院",
+                "まったく"
+              ],
+              "answer": "クリーム",
+              "explanation": "「塗る」と組み合わせるのは「クリーム」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "一人暮らしを始めてから、（　）が増えた。",
+              "options": [
+                "しわ",
+                "クリーム",
+                "外食",
+                "美容院",
+                "まったく"
+              ],
+              "answer": "外食",
+              "explanation": "一人暮らしで増える食事形態は「外食」（dining out）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "明日は友達の結婚式なので、（　）へ行って髪をきれいにしてもらった。",
+              "options": [
+                "しわ",
+                "クリーム",
+                "外食",
+                "美容院",
+                "まったく"
+              ],
+              "answer": "美容院",
+              "explanation": "髪をきれいにしてもらう場所は「美容院」（beauty salon）です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "薬を飲んだが、（　）効果がなかった。",
+              "options": [
+                "しわ",
+                "クリーム",
+                "外食",
+                "美容院",
+                "まったく"
+              ],
+              "answer": "まったく",
+              "explanation": "否定の「効果がなかった」と呼応して「まったく」（not at all）を使います。"
+            }
+          ]
+        },
+        {
+          "section_id": "06-2",
+          "title_ja": "健康",
+          "title_en": "Health",
+          "page": 25,
+          "warming_up": {
+            "question_ja": "健康のために、気をつけていることは何ですか。",
+            "question_en": "What do you pay attention to for your health?"
+          },
+          "words": [
+            {
+              "id": "v06-022",
+              "term_ja": "体力",
+              "reading": "たいりょく",
+              "ruby_html": "<ruby>体力<rt>たいりょく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "physical strength, stamina",
+              "example_ja": "体力をつける",
+              "example_en": "build up physical strength"
+            },
+            {
+              "id": "v06-023",
+              "term_ja": "体操",
+              "reading": "たいそう",
+              "ruby_html": "<ruby>体操<rt>たいそう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "gymnastics, physical exercises, calisthenics",
+              "example_ja": "毎朝、体操をする",
+              "example_en": "do exercises every morning"
+            },
+            {
+              "id": "v06-024",
+              "term_ja": "全身",
+              "reading": "ぜんしん",
+              "ruby_html": "<ruby>全身<rt>ぜんしん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "whole body, all over the body",
+              "example_ja": "全身の筋肉を使う",
+              "example_en": "use muscles of the entire body"
+            },
+            {
+              "id": "v06-025",
+              "term_ja": "筋肉",
+              "reading": "きんにく",
+              "ruby_html": "<ruby>筋肉<rt>きんにく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "muscle",
+              "example_ja": "筋肉を使う",
+              "example_en": "use muscles"
+            },
+            {
+              "id": "v06-026",
+              "term_ja": "汗",
+              "reading": "あせ",
+              "ruby_html": "<ruby>汗<rt>あせ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "sweat, perspiration",
+              "example_ja": "汗をかく",
+              "example_en": "sweat, perspire"
+            },
+            {
+              "id": "v06-027",
+              "term_ja": "息",
+              "reading": "いき",
+              "ruby_html": "<ruby>息<rt>いき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "breath, breathing",
+              "example_ja": "息が苦しくなる",
+              "example_en": "become hard to breathe / breathless"
+            },
+            {
+              "id": "v06-028",
+              "term_ja": "苦しい",
+              "reading": "くるしい",
+              "ruby_html": "<ruby>苦<rt>くる</rt></ruby>しい",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "painful, hard, suffocating",
+              "example_ja": "息が苦しい",
+              "example_en": "painful/difficult to breathe"
+            },
+            {
+              "id": "v06-029",
+              "term_ja": "中年",
+              "reading": "ちゅうねん",
+              "ruby_html": "<ruby>中年<rt>ちゅうねん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "middle age, middle-aged",
+              "example_ja": "中年になる",
+              "example_en": "become middle-aged"
+            },
+            {
+              "id": "v06-030",
+              "term_ja": "普段",
+              "reading": "ふだん",
+              "ruby_html": "<ruby>普段<rt>ふだん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "usual, ordinary, normal times",
+              "example_ja": "普段から運動する",
+              "example_en": "exercise regularly / on a daily basis"
+            },
+            {
+              "id": "v06-031",
+              "term_ja": "健康",
+              "reading": "けんこう",
+              "ruby_html": "<ruby>健康<rt>けんこう</rt></ruby>",
+              "part_of_speech": "名詞・な形容詞",
+              "meaning_en": "health, healthy",
+              "example_ja": "健康のために",
+              "example_en": "for one's health"
+            },
+            {
+              "id": "v06-032",
+              "term_ja": "禁煙",
+              "reading": "きんえん",
+              "ruby_html": "<ruby>禁煙<rt>きんえん</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "quitting smoking, no smoking",
+              "example_ja": "禁煙を始める",
+              "example_en": "start quitting smoking"
+            },
+            {
+              "id": "v06-033",
+              "term_ja": "内緒",
+              "reading": "ないしょ",
+              "ruby_html": "<ruby>内緒<rt>ないしょ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "secret, secrecy",
+              "example_ja": "内緒でタバコを吸う",
+              "example_en": "smoke in secret"
+            },
+            {
+              "id": "v06-034",
+              "term_ja": "無駄",
+              "reading": "むだ",
+              "ruby_html": "<ruby>無駄<rt>むだ</rt></ruby>",
+              "part_of_speech": "な形容詞・名詞",
+              "meaning_en": "waste, useless, futility",
+              "example_ja": "禁煙が無駄になる",
+              "example_en": "quitting smoking becomes useless"
+            },
+            {
+              "id": "v06-035",
+              "term_ja": "意志",
+              "reading": "いし",
+              "ruby_html": "<ruby>意志<rt>いし</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "will, willpower, determination",
+              "example_ja": "意志が弱い",
+              "example_en": "have weak willpower"
+            },
+            {
+              "id": "v06-036",
+              "term_ja": "影響",
+              "reading": "えいきょう",
+              "ruby_html": "<ruby>影響<rt>えいきょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "influence, effect",
+              "example_ja": "体に悪い影響を与える",
+              "example_en": "have a bad effect on one's body"
+            },
+            {
+              "id": "v06-037",
+              "term_ja": "与える",
+              "reading": "あたえる",
+              "ruby_html": "<ruby>与<rt>あた</rt></ruby>える",
+              "part_of_speech": "動詞",
+              "meaning_en": "to give, to inflict, to exert",
+              "example_ja": "影響を与える",
+              "example_en": "exert an influence"
+            },
+            {
+              "id": "v06-038",
+              "term_ja": "ヨガ",
+              "reading": "ヨガ",
+              "ruby_html": "ヨガ",
+              "part_of_speech": "名詞",
+              "meaning_en": "yoga",
+              "example_ja": "ヨガを習う",
+              "example_en": "learn yoga"
+            },
+            {
+              "id": "v06-039",
+              "term_ja": "ジョギング",
+              "reading": "ジョギング",
+              "ruby_html": "ジョギング",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "jogging",
+              "example_ja": "ジョギングをする",
+              "example_en": "go jogging"
+            },
+            {
+              "id": "v06-040",
+              "term_ja": "ダイエット",
+              "reading": "ダイエット",
+              "ruby_html": "ダイエット",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "diet, dieting",
+              "example_ja": "ダイエットをする",
+              "example_en": "go on a diet"
+            },
+            {
+              "id": "v06-041",
+              "term_ja": "ジム",
+              "reading": "ジム",
+              "ruby_html": "ジム",
+              "part_of_speech": "名詞",
+              "meaning_en": "gym, fitness club",
+              "example_ja": "ジムに通う",
+              "example_en": "go to the gym regularly"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "運動をしたら、（　）が痛くなった。",
+              "options": [
+                "筋肉",
+                "体操",
+                "息",
+                "普段",
+                "禁煙"
+              ],
+              "answer": "筋肉",
+              "explanation": "運動後に痛くなるのは「筋肉」（muscles）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "毎朝、（　）をしてから出かける。",
+              "options": [
+                "筋肉",
+                "体操",
+                "息",
+                "普段",
+                "禁煙"
+              ],
+              "answer": "体操",
+              "explanation": "「〜をしてから」と自然に結びつくのは「体操」（gymnastics/calisthenics）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "階段を急いで上がったので、（　）が苦しくなった。",
+              "options": [
+                "筋肉",
+                "体操",
+                "息",
+                "普段",
+                "禁煙"
+              ],
+              "answer": "息",
+              "explanation": "息切れの状態を表すのは「息が苦しくなった」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "（　）はあまり運動をしないが、休みの日は走っている。",
+              "options": [
+                "筋肉",
+                "体操",
+                "息",
+                "普段",
+                "禁煙"
+              ],
+              "answer": "普段",
+              "explanation": "「休みの日は」と対比して日常を表す「普段」（normally/usually）が入ります。"
+            },
+            {
+              "id": 5,
+              "question_ja": "医者に言われて、（　）を始めた。",
+              "options": [
+                "筋肉",
+                "体操",
+                "息",
+                "普段",
+                "禁煙"
+              ],
+              "answer": "禁煙",
+              "explanation": "医師の指示で始めるのは「禁煙」（quitting smoking）です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "06-ex1",
+          "title_ja": "意味が似ている言葉を選んで、文を完成させましょう。",
+          "type": "fill_in_the_blank",
+          "items": [
+            {
+              "item_id": 1,
+              "sentence_ja": "背中が曲がっていると、［みっともない／姿勢］が悪く見える。",
+              "answer": "姿勢",
+              "explanation": "「姿勢が悪く見える」が自然なコロケーションです。"
+            },
+            {
+              "item_id": 2,
+              "sentence_ja": "おでこに［しわ／肌］が増えてきた。",
+              "answer": "しわ",
+              "explanation": "おでこに「増える」のは「しわ」です。"
+            },
+            {
+              "item_id": 3,
+              "sentence_ja": "そんな［みっともない／濃い］格好で出かけるのはやめなさい。",
+              "answer": "みっともない",
+              "explanation": "見苦しい格好を注意する文脈なので「みっともない」です。"
+            },
+            {
+              "item_id": 4,
+              "sentence_ja": "髪型を変えたら、全体の［雰囲気／姿勢］が［まったく／濃く］変わった。",
+              "answer": "雰囲気 / まったく",
+              "explanation": "髪型で変わるのは全体の「雰囲気」で、ガラリと変わる様子を「まったく」で表します。"
+            },
+            {
+              "item_id": 5,
+              "sentence_ja": "［髪／肌］をきれいに伸ばしたい。",
+              "answer": "髪",
+              "explanation": "「伸ばす」とコロケーションを成すのは「髪」です。"
+            },
+            {
+              "item_id": 6,
+              "sentence_ja": "冬は乾燥して［肌／しわ］が荒れやすい。",
+              "answer": "肌",
+              "explanation": "乾燥して荒れるのは「肌」です。"
+            },
+            {
+              "item_id": 7,
+              "sentence_ja": "彼女は背が高くて、［スタイル／雰囲気］がいい。",
+              "answer": "スタイル",
+              "explanation": "背が高く体型が良いことを表すのは「スタイルがいい」です。"
+            },
+            {
+              "item_id": 8,
+              "sentence_ja": "彼女はいつも［濃い／みっともない］化粧をしている。",
+              "answer": "濃い",
+              "explanation": "化粧の度合いを表すのは「濃い化粧」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "06-ex2",
+          "title_ja": "（　）に入れるのに最もよいものを、a・b・cから一つ選びましょう。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "少し髪を（　）て、雰囲気を変えようと思う。",
+              "options": [
+                "a. 結ん",
+                "b. 伸ばし",
+                "c. 塗っ"
+              ],
+              "answer": "b",
+              "explanation": "「髪を伸ばして」（grow hair out）雰囲気を変える文脈です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "いくら言っても聞かないから、話すだけ（　）だ。",
+              "options": [
+                "a. 無駄",
+                "b. 内緒",
+                "c. 自信"
+              ],
+              "answer": "a",
+              "explanation": "言っても聞かないので「話すだけ無駄」（pointless / a waste of time）です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "あの人は（　）が強くて、一度決めたことはやり遂げる。",
+              "options": [
+                "a. 体力",
+                "b. 意志",
+                "c. 姿勢"
+              ],
+              "answer": "b",
+              "explanation": "決めたことを貫く力は「意志が強い」（strong-willed）です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "水泳は（　）の筋肉を使うので、良い運動になる。",
+              "options": [
+                "a. 中年",
+                "b. 普段",
+                "c. 全身"
+              ],
+              "answer": "c",
+              "explanation": "体全体の筋肉を使うので「全身の筋肉」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "（　）になってから、お腹が出てきた。",
+              "options": [
+                "a. 中年",
+                "b. 健康",
+                "c. 格好"
+              ],
+              "answer": "a",
+              "explanation": "年齢期を表す「中年になってから」が適切です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "06-ex3",
+          "title_ja": "どちらが正しいですか。正しいほうを選びましょう。",
+          "type": "binary_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "運動不足を解消するために、週に2回［a. ジムに通う / b. ヨガを塗る］ことにした。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "運動不足解消のために「ジムに通う」が正しい表現です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "夏は少し動いただけでも［a. 汗をかきやすい / b. 息をかきやすい］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "「汗をかく」（sweat）が正しい連語です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "家族に［a. 無駄で / b. 内緒で］高い買い物をした。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "人に隠れて行うことは「内緒で」（in secret）です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "健康診断で太りすぎだと言われ、［a. 食事の量を制限して / b. 普段を制限して］いる。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "食事の量を減らすことは「食事の量を制限する」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "タバコは吸う本人だけでなく、周りの人にも［a. 効果を与える / b. 影響を与える］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "周囲に及ぼす作用は「影響を与える」（have an impact/influence）です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "06-ex4",
+          "title_ja": "（　）に入れるのに最もよい言葉を、下のa・b・cから選んで記号を書きましょう。",
+          "type": "categorized_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 毎朝30分［　］をして汗を流す。② ラジオ［　］は誰でも手軽にできる。③ 呼吸を整えながら［　］のポーズをとる。",
+              "options": [
+                "a. ジョギング",
+                "b. ヨガ",
+                "c. 体操"
+              ],
+              "answer": "① a, ② c, ③ b",
+              "explanation": "① ジョギングをして汗を流す、② ラジオ体操、③ ヨガのポーズ"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① パジャマのまま外に出るのはみっともない［　］だ。② 彼女はいつもきれいに［　］をしている。③ 乾燥を防ぐために顔に［　］を塗る。",
+              "options": [
+                "a. 化粧",
+                "b. 格好",
+                "c. クリーム"
+              ],
+              "answer": "① b, ② a, ③ c",
+              "explanation": "① みっともない格好、② 化粧をしている、③ クリームを塗る"
+            }
+          ]
+        },
+        {
+          "exercise_id": "06-ex5",
+          "title_ja": "次の文章を読んで、（①）〜（⑮）に入る言葉を下の枠から選んで書きましょう。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "階段を上がると（①）が苦しくなる。",
+              "answer": "息",
+              "explanation": "息が苦しくなる"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "少し動くだけで（②）が噴き出る。",
+              "answer": "汗",
+              "explanation": "汗が噴き出る"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "年齢とともに（③）が落ちてきたと感じる。",
+              "answer": "体力",
+              "explanation": "体力が落ちる"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "ダイエットをしようと思っても、（④）が弱くて続かない。",
+              "answer": "意志",
+              "explanation": "意志が弱い"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "外見にも（⑤）が持てなくなってきた。",
+              "answer": "自信",
+              "explanation": "自信が持てない"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "高価な化粧品を使っても、あまり（⑥）がない。",
+              "answer": "効果",
+              "explanation": "効果がない"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "鏡を見ると、猫背で（⑦）が悪い。",
+              "answer": "姿勢",
+              "explanation": "姿勢が悪い"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "運動して（⑧）をつける必要がある。",
+              "answer": "筋肉",
+              "explanation": "筋肉をつける"
+            },
+            {
+              "item_id": 9,
+              "context_ja": "（⑨）を良くして服を着こなしたい。",
+              "answer": "スタイル",
+              "explanation": "スタイルを良くする"
+            },
+            {
+              "item_id": 10,
+              "context_ja": "（⑩）から歩くように心がける。",
+              "answer": "普段",
+              "explanation": "普段から"
+            },
+            {
+              "item_id": 11,
+              "context_ja": "（⑪）を減らして自炊をする。",
+              "answer": "外食",
+              "explanation": "外食を減らす"
+            },
+            {
+              "item_id": 12,
+              "context_ja": "（⑫）が高いものは控える。",
+              "answer": "カロリー",
+              "explanation": "カロリーが高い"
+            },
+            {
+              "item_id": 13,
+              "context_ja": "（⑬）的な生活習慣を身につける。",
+              "answer": "健康",
+              "explanation": "健康的な生活習慣"
+            },
+            {
+              "item_id": 14,
+              "context_ja": "すると、（⑭）の調子も良くなってきた。",
+              "answer": "肌",
+              "explanation": "肌の調子"
+            },
+            {
+              "item_id": 15,
+              "context_ja": "明るい（⑮）が出てきたと言われた。",
+              "answer": "雰囲気",
+              "explanation": "明るい雰囲気"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "07",
+        "topic_ja": "病院",
+        "topic_en": "Hospital",
+        "pages": [
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "07-1",
+          "title_ja": "病気と怪我",
+          "title_en": "Illness and Injury",
+          "page": 28,
+          "warming_up": {
+            "question_ja": "最近、いつ病気をしましたか。どんな病気でしたか。",
+            "question_en": "When were you sick recently? What kind of illness was it?"
+          },
+          "words": [
+            {
+              "id": "v07-001",
+              "term_ja": "体調",
+              "reading": "たいちょう",
+              "ruby_html": "<ruby>体調<rt>たいちょう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "physical condition, health condition",
+              "example_ja": "体調が悪い",
+              "example_en": "be in bad physical condition"
+            },
+            {
+              "id": "v07-002",
+              "term_ja": "食欲",
+              "reading": "しょくよく",
+              "ruby_html": "<ruby>食欲<rt>しょくよく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "appetite",
+              "example_ja": "食欲がない",
+              "example_en": "have no appetite"
+            },
+            {
+              "id": "v07-003",
+              "term_ja": "感じ",
+              "reading": "かんじ",
+              "ruby_html": "<ruby>感<rt>かん</rt></ruby>じ",
+              "part_of_speech": "名詞",
+              "meaning_en": "feeling, sensation, impression",
+              "example_ja": "吐き気がする感じだ",
+              "example_en": "feel like throwing up"
+            },
+            {
+              "id": "v07-004",
+              "term_ja": "体温",
+              "reading": "たいおん",
+              "ruby_html": "<ruby>体温<rt>たいおん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "body temperature",
+              "example_ja": "体温を測る",
+              "example_en": "take one's temperature"
+            },
+            {
+              "id": "v07-005",
+              "term_ja": "測る",
+              "reading": "はかる",
+              "ruby_html": "<ruby>測<rt>はか</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to measure, to take (temperature)",
+              "example_ja": "熱を測る",
+              "example_en": "take temperature"
+            },
+            {
+              "id": "v07-006",
+              "term_ja": "順番",
+              "reading": "じゅんばん",
+              "ruby_html": "<ruby>順番<rt>じゅんばん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "turn, order, sequence",
+              "example_ja": "順番を待つ",
+              "example_en": "wait for one's turn"
+            },
+            {
+              "id": "v07-007",
+              "term_ja": "冷やす",
+              "reading": "ひやす",
+              "ruby_html": "<ruby>冷<rt>ひ</rt></ruby>やす",
+              "part_of_speech": "動詞",
+              "meaning_en": "to cool down, to chill, to apply cold to",
+              "example_ja": "患部を冷やす",
+              "example_en": "cool the affected area"
+            },
+            {
+              "id": "v07-008",
+              "term_ja": "温める",
+              "reading": "あたためる",
+              "ruby_html": "<ruby>温<rt>あたた</rt></ruby>める",
+              "part_of_speech": "動詞",
+              "meaning_en": "to warm up, to heat",
+              "example_ja": "体を温める",
+              "example_en": "warm one's body"
+            },
+            {
+              "id": "v07-009",
+              "term_ja": "傷",
+              "reading": "きず",
+              "ruby_html": "<ruby>傷<rt>きず</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "wound, injury, cut",
+              "example_ja": "深い傷を負う",
+              "example_en": "suffer a deep wound"
+            },
+            {
+              "id": "v07-010",
+              "term_ja": "深い",
+              "reading": "ふかい",
+              "ruby_html": "<ruby>深<rt>ふか</rt></ruby>い",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "deep",
+              "example_ja": "傷が深い",
+              "example_en": "the wound is deep"
+            },
+            {
+              "id": "v07-011",
+              "term_ja": "火傷",
+              "reading": "やけど",
+              "ruby_html": "<ruby>火傷<rt>やけど</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "burn, scald",
+              "example_ja": "火傷をする",
+              "example_en": "get burned"
+            },
+            {
+              "id": "v07-012",
+              "term_ja": "削る",
+              "reading": "けずる",
+              "ruby_html": "<ruby>削<rt>けず</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to shave, to scrape, to drill (tooth)",
+              "example_ja": "虫歯を削る",
+              "example_en": "drill/shave a decayed tooth"
+            },
+            {
+              "id": "v07-013",
+              "term_ja": "抜く",
+              "reading": "ぬく",
+              "ruby_html": "<ruby>抜<rt>ぬ</rt></ruby>く",
+              "part_of_speech": "動詞",
+              "meaning_en": "to pull out, to extract",
+              "example_ja": "歯を抜く",
+              "example_en": "extract a tooth"
+            },
+            {
+              "id": "v07-014",
+              "term_ja": "防ぐ",
+              "reading": "ふせぐ",
+              "ruby_html": "<ruby>防<rt>ふせ</rt></ruby>ぐ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to prevent, to ward off, to protect against",
+              "example_ja": "病気を防ぐ",
+              "example_en": "prevent illness"
+            },
+            {
+              "id": "v07-015",
+              "term_ja": "清潔",
+              "reading": "せいけつ",
+              "ruby_html": "<ruby>清潔<rt>せいけつ</rt></ruby>",
+              "part_of_speech": "な形容詞・名詞",
+              "meaning_en": "clean, hygienic, sanitary",
+              "example_ja": "傷口を清潔にする",
+              "example_en": "keep the wound clean"
+            },
+            {
+              "id": "v07-016",
+              "term_ja": "薬局",
+              "reading": "やっきょく",
+              "ruby_html": "<ruby>薬局<rt>やっきょく</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "pharmacy, drugstore",
+              "example_ja": "薬局で薬をもらう",
+              "example_en": "get medicine at the pharmacy"
+            },
+            {
+              "id": "v07-017",
+              "term_ja": "マスク",
+              "reading": "マスク",
+              "ruby_html": "マスク",
+              "part_of_speech": "名詞",
+              "meaning_en": "face mask, surgical mask",
+              "example_ja": "マスクをつける",
+              "example_en": "wear a mask"
+            },
+            {
+              "id": "v07-018",
+              "term_ja": "胃",
+              "reading": "い",
+              "ruby_html": "<ruby>胃<rt>い</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "stomach",
+              "example_ja": "胃が痛い",
+              "example_en": "my stomach hurts"
+            },
+            {
+              "id": "v07-019",
+              "term_ja": "肩",
+              "reading": "かた",
+              "ruby_html": "<ruby>肩<rt>かた</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "shoulder",
+              "example_ja": "肩がこる",
+              "example_en": "have stiff shoulders"
+            },
+            {
+              "id": "v07-020",
+              "term_ja": "腰",
+              "reading": "こし",
+              "ruby_html": "<ruby>腰<rt>こし</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "lower back, waist, hips",
+              "example_ja": "腰が痛む",
+              "example_en": "have lower back pain"
+            },
+            {
+              "id": "v07-021",
+              "term_ja": "膝",
+              "reading": "ひざ",
+              "ruby_html": "<ruby>膝<rt>ひざ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "knee, lap",
+              "example_ja": "膝を曲げる",
+              "example_en": "bend one's knee"
+            },
+            {
+              "id": "v07-022",
+              "term_ja": "胸",
+              "reading": "むね",
+              "ruby_html": "<ruby>胸<rt>むね</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "chest, breast",
+              "example_ja": "胸が苦しい",
+              "example_en": "feel tightness in one's chest"
+            },
+            {
+              "id": "v07-023",
+              "term_ja": "心臓",
+              "reading": "しんぞう",
+              "ruby_html": "<ruby>心臓<rt>しんぞう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "heart (organ)",
+              "example_ja": "心臓がドキドキする",
+              "example_en": "one's heart is pounding"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "体温計で熱を（　）。",
+              "options": [
+                "測る",
+                "冷やす",
+                "薬局",
+                "火傷",
+                "マスク"
+              ],
+              "answer": "測る",
+              "explanation": "熱（体温）を調べる動詞は「測る」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "やけどをしたので、すぐに水で（　）。",
+              "options": [
+                "測る",
+                "冷やす",
+                "薬局",
+                "火傷",
+                "マスク"
+              ],
+              "answer": "冷やす",
+              "explanation": "火傷の手当ては水で「冷やす」ことです。"
+            },
+            {
+              "id": 3,
+              "question_ja": "処方箋を持って、（　）へ薬を取りに行った。",
+              "options": [
+                "測る",
+                "冷やす",
+                "薬局",
+                "火傷",
+                "マスク"
+              ],
+              "answer": "薬局",
+              "explanation": "処方薬を受け取る場所は「薬局」（pharmacy）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "料理中に油がはねて、（　）をした。",
+              "options": [
+                "測る",
+                "冷やす",
+                "薬局",
+                "火傷",
+                "マスク"
+              ],
+              "answer": "火傷",
+              "explanation": "熱い油で負う傷は「火傷」（burn）です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "風邪の予防のために、（　）をつけている。",
+              "options": [
+                "測る",
+                "冷やす",
+                "薬局",
+                "火傷",
+                "マスク"
+              ],
+              "answer": "マスク",
+              "explanation": "感染症予防に着用するのは「マスク」です。"
+            }
+          ]
+        },
+        {
+          "section_id": "07-2",
+          "title_ja": "入院",
+          "title_en": "Hospitalization",
+          "page": 29,
+          "warming_up": {
+            "question_ja": "入院したことがありますか。どんな生活でしたか。",
+            "question_en": "Have you ever been hospitalized? What was life like there?"
+          },
+          "words": [
+            {
+              "id": "v07-024",
+              "term_ja": "かかる",
+              "reading": "かかる",
+              "ruby_html": "かかる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to contract, to fall ill with",
+              "example_ja": "インフルエンザにかかる",
+              "example_en": "catch influenza"
+            },
+            {
+              "id": "v07-025",
+              "term_ja": "検査",
+              "reading": "けんさ",
+              "ruby_html": "<ruby>検査<rt>けんさ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "examination, medical inspection, test",
+              "example_ja": "血液検査を受ける",
+              "example_en": "undergo a blood test"
+            },
+            {
+              "id": "v07-026",
+              "term_ja": "発見する",
+              "reading": "はっけんする",
+              "ruby_html": "<ruby>発見<rt>はっけん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to discover, to detect",
+              "example_ja": "病気を早期に発見する",
+              "example_en": "detect a disease early"
+            },
+            {
+              "id": "v07-027",
+              "term_ja": "異常",
+              "reading": "いじょう",
+              "ruby_html": "<ruby>異常<rt>いじょう</rt></ruby>",
+              "part_of_speech": "名詞・な形容詞",
+              "meaning_en": "abnormality, disorder, unusual",
+              "example_ja": "異常が見つかる",
+              "example_en": "an abnormality is found"
+            },
+            {
+              "id": "v07-028",
+              "term_ja": "ガン",
+              "reading": "ガン",
+              "ruby_html": "ガン",
+              "part_of_speech": "名詞",
+              "meaning_en": "cancer",
+              "example_ja": "ガンが見つかる",
+              "example_en": "cancer is found"
+            },
+            {
+              "id": "v07-029",
+              "term_ja": "痛み",
+              "reading": "いたみ",
+              "ruby_html": "<ruby>痛<rt>いた</rt></ruby>み",
+              "part_of_speech": "名詞",
+              "meaning_en": "pain, ache",
+              "example_ja": "強い痛みを感じる",
+              "example_en": "feel intense pain"
+            },
+            {
+              "id": "v07-030",
+              "term_ja": "我慢する",
+              "reading": "がまんする",
+              "ruby_html": "<ruby>我慢<rt>がまん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to bear, to endure, to tolerate",
+              "example_ja": "痛みを我慢する",
+              "example_en": "endure the pain"
+            },
+            {
+              "id": "v07-031",
+              "term_ja": "苦しむ",
+              "reading": "くるしむ",
+              "ruby_html": "<ruby>苦<rt>くる</rt></ruby>しむ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to suffer, to agonize",
+              "example_ja": "病気に苦しむ",
+              "example_en": "suffer from an illness"
+            },
+            {
+              "id": "v07-032",
+              "term_ja": "状態",
+              "reading": "じょうたい",
+              "ruby_html": "<ruby>状態<rt>じょうたい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "condition, state",
+              "example_ja": "重い状態が続く",
+              "example_en": "remain in serious condition"
+            },
+            {
+              "id": "v07-033",
+              "term_ja": "手術",
+              "reading": "しゅじゅつ",
+              "ruby_html": "<ruby>手術<rt>しゅじゅつ</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "surgery, operation",
+              "example_ja": "手術を受ける",
+              "example_en": "undergo surgery"
+            },
+            {
+              "id": "v07-034",
+              "term_ja": "成功する",
+              "reading": "せいこうする",
+              "ruby_html": "<ruby>成功<rt>せいこう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to succeed, to be successful",
+              "example_ja": "手術が成功する",
+              "example_en": "surgery succeeds"
+            },
+            {
+              "id": "v07-035",
+              "term_ja": "回復",
+              "reading": "かいふく",
+              "ruby_html": "<ruby>回復<rt>かいふく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "recovery, recuperation",
+              "example_ja": "健康を回復する",
+              "example_en": "recover one's health"
+            },
+            {
+              "id": "v07-036",
+              "term_ja": "ほぼ",
+              "reading": "ほぼ",
+              "ruby_html": "ほぼ",
+              "part_of_speech": "副詞",
+              "meaning_en": "almost, nearly, practically",
+              "example_ja": "ほぼ治った",
+              "example_en": "almost completely recovered"
+            },
+            {
+              "id": "v07-037",
+              "term_ja": "完全に",
+              "reading": "かんぜんに",
+              "ruby_html": "<ruby>完全<rt>かんぜん</rt></ruby>に",
+              "part_of_speech": "副詞",
+              "meaning_en": "completely, entirely, fully",
+              "example_ja": "完全に治る",
+              "example_en": "heal completely"
+            },
+            {
+              "id": "v07-038",
+              "term_ja": "命",
+              "reading": "いのち",
+              "ruby_html": "<ruby>命<rt>いのち</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "life",
+              "example_ja": "命を救う",
+              "example_en": "save a life"
+            },
+            {
+              "id": "v07-039",
+              "term_ja": "助ける",
+              "reading": "たすける",
+              "ruby_html": "<ruby>助<rt>たす</rt></ruby>ける",
+              "part_of_speech": "動詞",
+              "meaning_en": "to help, to save, to rescue",
+              "example_ja": "人を助ける",
+              "example_en": "help / rescue a person"
+            },
+            {
+              "id": "v07-040",
+              "term_ja": "救う",
+              "reading": "すくう",
+              "ruby_html": "<ruby>救<rt>すく</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to rescue, to save (a life)",
+              "example_ja": "命を救う",
+              "example_en": "save someone's life"
+            },
+            {
+              "id": "v07-041",
+              "term_ja": "落とす",
+              "reading": "おとす",
+              "ruby_html": "<ruby>落<rt>お</rt></ruby>とす",
+              "part_of_speech": "動詞",
+              "meaning_en": "to lose (life), to drop",
+              "example_ja": "命を落とす",
+              "example_en": "lose one's life"
+            },
+            {
+              "id": "v07-042",
+              "term_ja": "助かる",
+              "reading": "たすかる",
+              "ruby_html": "<ruby>助<rt>たす</rt></ruby>かる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to be saved, to survive",
+              "example_ja": "命が助かる",
+              "example_en": "one's life is saved / survive"
+            },
+            {
+              "id": "v07-043",
+              "term_ja": "お見舞い",
+              "reading": "おみまい",
+              "ruby_html": "お<ruby>見舞<rt>みま</rt></ruby>い",
+              "part_of_speech": "名詞",
+              "meaning_en": "visiting someone who is ill, get-well visit",
+              "example_ja": "お見舞いに行く",
+              "example_en": "go visit a sick person"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "手術の後、順調に（　）している。",
+              "options": [
+                "回復",
+                "お見舞い",
+                "ガン",
+                "助かる",
+                "異常"
+              ],
+              "answer": "回復",
+              "explanation": "術後の体調が良くなっていくのは「回復」（recovery）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "入院中の友達の（　）に行った。",
+              "options": [
+                "回復",
+                "お見舞い",
+                "ガン",
+                "助かる",
+                "異常"
+              ],
+              "answer": "お見舞い",
+              "explanation": "入院中の人を見舞うことは「お見舞い」（hospital visit）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "早期発見のおかげで、（　）が完治した。",
+              "options": [
+                "回復",
+                "お見舞い",
+                "ガン",
+                "助かる",
+                "異常"
+              ],
+              "answer": "ガン",
+              "explanation": "病名として入るのは「ガン」（cancer）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "事故に遭ったが、シートベルトをしていたので命が（　）。",
+              "options": [
+                "回復",
+                "お見舞い",
+                "ガン",
+                "助かる",
+                "異常"
+              ],
+              "answer": "助かる",
+              "explanation": "命が生き延びることは「命が助かる」（survive）です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "検査の結果、体に特に（　）は見つからなかった。",
+              "options": [
+                "回復",
+                "お見舞い",
+                "ガン",
+                "助かる",
+                "異常"
+              ],
+              "answer": "異常",
+              "explanation": "悪い兆候や問題がないことを表すのは「異常」（abnormality）です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "07-ex1",
+          "title_ja": "どちらが正しいですか。正しいほうを選びましょう。",
+          "type": "binary_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "薬を飲んだら、すぐに［a. 痛みが落ちた / b. 痛みが取れた］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "痛みが治まる表現は「痛みが取れた」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "来週、大きな［a. 手術を受ける / b. 手術をつける］ことになった。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "手術を施される場合は「手術を受ける」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "風邪をひいて、全然［a. 食欲が出ない / b. 体温が出ない］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "食べる意欲がわかないことは「食欲が出ない」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "最近、ずっと［a. 順番が悪い / b. 体調が悪い］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "体の具合がすぐれないことは「体調が悪い」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "大けがをして、［a. 命が危ない / b. 命が深い］と言われた。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "生命の危険がある状態は「命が危ない」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "弟が［a. インフルエンザにかかった / b. インフルエンザに救った］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "病気を発症することは「〜にかかる」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "07-ex2",
+          "title_ja": "（　）に入れるのに最もよいものを、a・b・cから一つ選びましょう。",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 病気は［　］に治った。② 手術は［　］した。③ 呼ばれるまで［　］を待った。",
+              "options": [
+                "a. 完全",
+                "b. 順番",
+                "c. 成功"
+              ],
+              "answer": "① a, ② c, ③ b",
+              "explanation": "① 完全に治った、② 成功した、③ 順番を待った"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 事故で命を［　］。② 虫歯を［　］。③ 医師が多くの命を［　］。",
+              "options": [
+                "a. 削る",
+                "b. 救う",
+                "c. 落とす"
+              ],
+              "answer": "① c, ② a, ③ b",
+              "explanation": "① 命を落とす、② 虫歯を削る、③ 命を救う"
+            }
+          ]
+        },
+        {
+          "exercise_id": "07-ex3",
+          "title_ja": "（　）の言葉を適切な形に変えて、文を完成させましょう。",
+          "type": "form_change",
+          "items": [
+            {
+              "item_id": 1,
+              "sentence_ja": "薬を塗ったら、（痛い）が和らいだ。",
+              "answer": "痛み",
+              "explanation": "「痛い」の名詞形「痛み」が入ります。"
+            },
+            {
+              "item_id": 2,
+              "sentence_ja": "彼は長い間、病気に（苦しい）んでいる。",
+              "answer": "苦しむ",
+              "explanation": "動詞「苦しむ」のて形に連なる「苦しんでいる」です。"
+            },
+            {
+              "item_id": 3,
+              "sentence_ja": "お風呂に入って、体をよく（温かい）た。",
+              "answer": "温める",
+              "explanation": "動詞「温める」のた形「温めた」です。"
+            },
+            {
+              "item_id": 4,
+              "sentence_ja": "胃のあたりに、変な（感じる）がする。",
+              "answer": "感じ",
+              "explanation": "名詞「感じ」が入ります。"
+            },
+            {
+              "item_id": 5,
+              "sentence_ja": "倒れている人を（助かる）けた。",
+              "answer": "助ける",
+              "explanation": "他動詞「助ける」のた形「助けた」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "07-ex4",
+          "title_ja": "（　）に入れるのに最もよい言葉を、枠から選んで書きましょう。",
+          "type": "box_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "詳しく（　）をしたが、異常は見つからなかった。",
+              "options": [
+                "検査",
+                "発見",
+                "清潔",
+                "ほぼ"
+              ],
+              "answer": "検査",
+              "explanation": "病院で詳しく調べるのは「検査」（medical test）です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "病気は早期に（　）することが大切だ。",
+              "options": [
+                "検査",
+                "発見",
+                "清潔",
+                "ほぼ"
+              ],
+              "answer": "発見",
+              "explanation": "早く見つけることは「早期に発見する」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "傷口は水で洗って、（　）にしておかなければならない。",
+              "options": [
+                "検査",
+                "発見",
+                "清潔",
+                "ほぼ"
+              ],
+              "answer": "清潔",
+              "explanation": "感染を防ぐため衛生的に保つのは「清潔にする」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "怪我は（　）治ったので、もう心配はいりません。",
+              "options": [
+                "検査",
+                "発見",
+                "清潔",
+                "ほぼ"
+              ],
+              "answer": "ほぼ",
+              "explanation": "だいたい治った状態を表す副詞は「ほぼ」（almost）です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "07-ex5",
+          "title_ja": "次の症状と、適切な対処法の組み合わせを選びましょう。",
+          "type": "matching",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "火傷",
+              "options": [
+                "a. 水で洗う",
+                "b. 歯を削る/抜く",
+                "c. 注射をする",
+                "d. 薬を飲む",
+                "e. 水で冷やす"
+              ],
+              "answer": "e",
+              "explanation": "火傷はすぐに水で冷やします。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "注射（病気になるのを防ぐ）",
+              "options": [
+                "a. 水で洗う",
+                "b. 歯を削る/抜く",
+                "c. 注射をする",
+                "d. 薬を飲む",
+                "e. 水で冷やす"
+              ],
+              "answer": "c",
+              "explanation": "予防接種で病気を防ぎます。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "小さな傷",
+              "options": [
+                "a. 水で洗う",
+                "b. 歯を削る/抜く",
+                "c. 注射をする",
+                "d. 薬を飲む",
+                "e. 水で冷やす"
+              ],
+              "answer": "a",
+              "explanation": "小さな傷は水で清潔に洗います。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "虫歯",
+              "options": [
+                "a. 水で洗う",
+                "b. 歯を削る/抜く",
+                "c. 注射をする",
+                "d. 薬を飲む",
+                "e. 水で冷やす"
+              ],
+              "answer": "b",
+              "explanation": "虫歯は歯科医院で削ったり抜いたりします。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "頭痛",
+              "options": [
+                "a. 水で洗う",
+                "b. 歯を削る/抜く",
+                "c. 注射をする",
+                "d. 薬を飲む",
+                "e. 水で冷やす"
+              ],
+              "answer": "d",
+              "explanation": "頭痛には薬を飲みます。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "07-ex6",
+          "title_ja": "次の文章を読んで、（①）〜（⑧）に入る言葉を下の枠から選んで適切な形にして書きましょう。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "朝起きると頭が痛かったので、（①）を測ってみた。",
+              "answer": "体温",
+              "explanation": "熱の度合いを表す名詞は「体温」です。"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "体温を（②）てみると、38度もあった。",
+              "answer": "測り",
+              "explanation": "動詞「測る」のて形に連なる「測ってみると」です。"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "体の（③）が良くないので、近くの病院へ行った。",
+              "answer": "状態",
+              "explanation": "体のコンディションは「状態」です。"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "病院で詳しい（④）を受けた。",
+              "answer": "検査",
+              "explanation": "病院で受けるのは「検査」です。"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "のどの（⑤）がひどかった。",
+              "answer": "痛み",
+              "explanation": "のどの痛む感覚は「痛み」です。"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "痛みを（⑥）できずに薬を飲んだ。",
+              "answer": "我慢",
+              "explanation": "こらえることは「我慢できずに」です。"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "インフルエンザに（⑦）ていたことがわかった。",
+              "answer": "かかっ",
+              "explanation": "病気にかかるの促音便「かかっていた」です。"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "数日安静にしていたら、無事に（⑧）した。",
+              "answer": "回復",
+              "explanation": "健康が元に戻るのは「回復した」です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "08",
+        "topic_ja": "趣味と旅行1: スポーツと芸術",
+        "topic_en": "Hobbies and Travel 1: Sports and Arts",
+        "pages": [
+          32,
+          33,
+          34,
+          35
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "08-1",
+          "title_ja": "スポーツ",
+          "title_en": "Sports",
+          "page": 32,
+          "warming_up": {
+            "question_ja": "スポーツをするのと見るのと、どちらが好きですか。",
+            "question_en": "Do you prefer playing sports or watching them?"
+          },
+          "words": [
+            {
+              "id": "v08-001",
+              "term_ja": "開始",
+              "reading": "かいし",
+              "ruby_html": "<ruby>開始<rt>かいし</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "start, commencement, kickoff",
+              "example_ja": "試合の開始",
+              "example_en": "start of a match"
+            },
+            {
+              "id": "v08-002",
+              "term_ja": "選手",
+              "reading": "せんしゅ",
+              "ruby_html": "<ruby>選手<rt>せんしゅ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "athlete, player",
+              "example_ja": "プロのサッカー選手",
+              "example_en": "professional soccer player"
+            },
+            {
+              "id": "v08-003",
+              "term_ja": "活躍",
+              "reading": "かつやく",
+              "ruby_html": "<ruby>活躍<rt>かつやく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "playing an active part, great activity",
+              "example_ja": "試合で活躍する",
+              "example_en": "play an active part in a game"
+            },
+            {
+              "id": "v08-004",
+              "term_ja": "期待する",
+              "reading": "きたいする",
+              "ruby_html": "<ruby>期待<rt>きたい</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to expect, to place hopes on",
+              "example_ja": "活躍を期待する",
+              "example_en": "have high expectations for someone's success"
+            },
+            {
+              "id": "v08-005",
+              "term_ja": "チーム",
+              "reading": "チーム",
+              "ruby_html": "チーム",
+              "part_of_speech": "名詞",
+              "meaning_en": "team",
+              "example_ja": "地元のチームを応援する",
+              "example_en": "root for the local team"
+            },
+            {
+              "id": "v08-006",
+              "term_ja": "応援する",
+              "reading": "おうえんする",
+              "ruby_html": "<ruby>応援<rt>おうえん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to cheer for, to support, to root for",
+              "example_ja": "チームを応援する",
+              "example_en": "cheer for the team"
+            },
+            {
+              "id": "v08-007",
+              "term_ja": "出場する",
+              "reading": "しゅつじょうする",
+              "ruby_html": "<ruby>出場<rt>しゅつじょう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to participate in, to compete in",
+              "example_ja": "大会に出場する",
+              "example_en": "participate in the tournament"
+            },
+            {
+              "id": "v08-008",
+              "term_ja": "ボール",
+              "reading": "ボール",
+              "ruby_html": "ボール",
+              "part_of_speech": "名詞",
+              "meaning_en": "ball",
+              "example_ja": "ボールを投げる",
+              "example_en": "throw a ball"
+            },
+            {
+              "id": "v08-009",
+              "term_ja": "投げる",
+              "reading": "なげる",
+              "ruby_html": "<ruby>投<rt>な</rt></ruby>げる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to throw, to pitch",
+              "example_ja": "ボールを投げる",
+              "example_en": "throw a ball"
+            },
+            {
+              "id": "v08-010",
+              "term_ja": "打つ",
+              "reading": "うつ",
+              "ruby_html": "<ruby>打<rt>う</rt></ruby>つ",
+              "part_of_speech": "動詞",
+              "meaning_en": "to hit, to strike, to bat",
+              "example_ja": "ボールを打つ",
+              "example_en": "hit a ball"
+            },
+            {
+              "id": "v08-011",
+              "term_ja": "蹴る",
+              "reading": "ける",
+              "ruby_html": "<ruby>蹴<rt>け</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to kick",
+              "example_ja": "ボールを蹴る",
+              "example_en": "kick a ball"
+            },
+            {
+              "id": "v08-012",
+              "term_ja": "優勝",
+              "reading": "ゆうしょう",
+              "ruby_html": "<ruby>優勝<rt>ゆうしょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "victory, championship, winning",
+              "example_ja": "大会で優勝する",
+              "example_en": "win the championship in the tournament"
+            },
+            {
+              "id": "v08-013",
+              "term_ja": "争う",
+              "reading": "あらそう",
+              "ruby_html": "<ruby>争<rt>あらそ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to compete, to contest, to battle for",
+              "example_ja": "優勝を争う",
+              "example_en": "compete for first place"
+            },
+            {
+              "id": "v08-014",
+              "term_ja": "悔しい",
+              "reading": "くやしい",
+              "ruby_html": "<ruby>悔<rt>くや</rt></ruby>しい",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "frustrating, vexing, regretful",
+              "example_ja": "負けて悔しい",
+              "example_en": "frustrated to have lost"
+            },
+            {
+              "id": "v08-015",
+              "term_ja": "代表",
+              "reading": "だいひょう",
+              "ruby_html": "<ruby>代表<rt>だいひょう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "representative, national team",
+              "example_ja": "国の代表に選ばれる",
+              "example_en": "be chosen as a national representative"
+            },
+            {
+              "id": "v08-016",
+              "term_ja": "トレーニング",
+              "reading": "トレーニング",
+              "ruby_html": "トレーニング",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "training, workout",
+              "example_ja": "筋力トレーニングをする",
+              "example_en": "do strength training"
+            },
+            {
+              "id": "v08-017",
+              "term_ja": "コース",
+              "reading": "コース",
+              "ruby_html": "コース",
+              "part_of_speech": "名詞",
+              "meaning_en": "course, route",
+              "example_ja": "マラソンコースを走る",
+              "example_en": "run the marathon course"
+            },
+            {
+              "id": "v08-018",
+              "term_ja": "トップ",
+              "reading": "トップ",
+              "ruby_html": "トップ",
+              "part_of_speech": "名詞",
+              "meaning_en": "top, first place, leader",
+              "example_ja": "トップで走る",
+              "example_en": "run in first place"
+            },
+            {
+              "id": "v08-019",
+              "term_ja": "ゴールする",
+              "reading": "ゴールする",
+              "ruby_html": "ゴールする",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to cross the finish line, reach the goal",
+              "example_ja": "笑顔でゴールする",
+              "example_en": "cross the finish line with a smile"
+            },
+            {
+              "id": "v08-020",
+              "term_ja": "あきらめる",
+              "reading": "あきらめる",
+              "ruby_html": "あきらめる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to give up, to abandon hope",
+              "example_ja": "途中で諦めない",
+              "example_en": "not give up along the way"
+            },
+            {
+              "id": "v08-021",
+              "term_ja": "記録",
+              "reading": "きろく",
+              "ruby_html": "<ruby>記録<rt>きろく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "record (sports), score",
+              "example_ja": "世界記録を出す",
+              "example_en": "set a world record"
+            },
+            {
+              "id": "v08-022",
+              "term_ja": "破る",
+              "reading": "やぶる",
+              "ruby_html": "<ruby>破<rt>やぶ</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to break (a record), to tear",
+              "example_ja": "新記録を破る",
+              "example_en": "break a new record"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "サッカーの（　）を蹴る。",
+              "options": [
+                "ボール",
+                "チーム",
+                "トレーニング",
+                "トップ",
+                "ゴール",
+                "コース"
+              ],
+              "answer": "ボール",
+              "explanation": "「蹴る」対象は「ボール」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "好きな（　）を応援する。",
+              "options": [
+                "ボール",
+                "チーム",
+                "トレーニング",
+                "トップ",
+                "ゴール",
+                "コース"
+              ],
+              "answer": "チーム",
+              "explanation": "「応援する」対象は「チーム」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "毎日の（　）を欠かさない。",
+              "options": [
+                "ボール",
+                "チーム",
+                "トレーニング",
+                "トップ",
+                "ゴール",
+                "コース"
+              ],
+              "answer": "トレーニング",
+              "explanation": "鍛錬を欠かさないことは「トレーニングを欠かさない」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "マラソンで（　）を走る。",
+              "options": [
+                "ボール",
+                "チーム",
+                "トレーニング",
+                "トップ",
+                "ゴール",
+                "コース"
+              ],
+              "answer": "トップ",
+              "explanation": "先頭を走ることは「トップを走る」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "最後まで諦めずに（　）した。",
+              "options": [
+                "ボール",
+                "チーム",
+                "トレーニング",
+                "トップ",
+                "ゴール",
+                "コース"
+              ],
+              "answer": "ゴール",
+              "explanation": "決勝点に到達することは「ゴールした」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "険しいマラソン（　）を走る。",
+              "options": [
+                "ボール",
+                "チーム",
+                "トレーニング",
+                "トップ",
+                "ゴール",
+                "コース"
+              ],
+              "answer": "コース",
+              "explanation": "走路を表す言葉は「コース」です。"
+            }
+          ]
+        },
+        {
+          "section_id": "08-2",
+          "title_ja": "芸術",
+          "title_en": "The Arts",
+          "page": 33,
+          "warming_up": {
+            "question_ja": "日本の映画を見たことがありますか。",
+            "question_en": "Have you ever watched a Japanese movie?"
+          },
+          "words": [
+            {
+              "id": "v08-023",
+              "term_ja": "芸術",
+              "reading": "げいじゅつ",
+              "ruby_html": "<ruby>芸術<rt>げいじゅつ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "art, the arts",
+              "example_ja": "現代の芸術",
+              "example_en": "contemporary art"
+            },
+            {
+              "id": "v08-024",
+              "term_ja": "一流",
+              "reading": "いちりゅう",
+              "ruby_html": "<ruby>一流<rt>いちりゅう</rt></ruby>",
+              "part_of_speech": "名詞・の形容詞",
+              "meaning_en": "first-class, top-ranking",
+              "example_ja": "一流の芸術家",
+              "example_en": "first-rate artist"
+            },
+            {
+              "id": "v08-025",
+              "term_ja": "作家",
+              "reading": "さっか",
+              "ruby_html": "<ruby>作家<rt>さっか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "writer, author, novelist, creator",
+              "example_ja": "人気作家の小説",
+              "example_en": "novel by a popular writer"
+            },
+            {
+              "id": "v08-026",
+              "term_ja": "画家",
+              "reading": "がか",
+              "ruby_html": "<ruby>画家<rt>がか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "painter, artist",
+              "example_ja": "有名な画家の絵",
+              "example_en": "painting by a famous painter"
+            },
+            {
+              "id": "v08-027",
+              "term_ja": "音楽家",
+              "reading": "おんがくか",
+              "ruby_html": "<ruby>音楽家<rt>おんがくか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "musician",
+              "example_ja": "才能ある音楽家",
+              "example_en": "talented musician"
+            },
+            {
+              "id": "v08-028",
+              "term_ja": "才能",
+              "reading": "さいのう",
+              "ruby_html": "<ruby>才能<rt>さいのう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "talent, gift, genius",
+              "example_ja": "音楽の才能がある",
+              "example_en": "have a talent for music"
+            },
+            {
+              "id": "v08-029",
+              "term_ja": "監督",
+              "reading": "かんとく",
+              "ruby_html": "<ruby>監督<rt>かんとく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "film director, manager, supervisor",
+              "example_ja": "映画の監督",
+              "example_en": "movie director"
+            },
+            {
+              "id": "v08-030",
+              "term_ja": "人気",
+              "reading": "にんき",
+              "ruby_html": "<ruby>人気<rt>にんき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "popularity",
+              "example_ja": "若者に人気がある",
+              "example_en": "popular among young people"
+            },
+            {
+              "id": "v08-031",
+              "term_ja": "俳優",
+              "reading": "はいゆう",
+              "ruby_html": "<ruby>俳優<rt>はいゆう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "actor",
+              "example_ja": "実力派の俳優",
+              "example_en": "capable actor"
+            },
+            {
+              "id": "v08-032",
+              "term_ja": "女優",
+              "reading": "じょゆう",
+              "ruby_html": "<ruby>女優<rt>じょゆう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "actress",
+              "example_ja": "主演の女優",
+              "example_en": "lead actress"
+            },
+            {
+              "id": "v08-033",
+              "term_ja": "お勧め",
+              "reading": "おすすめ",
+              "ruby_html": "お<ruby>勧<rt>すす</rt></ruby>め",
+              "part_of_speech": "名詞",
+              "meaning_en": "recommendation",
+              "example_ja": "お勧めの映画",
+              "example_en": "recommended movie"
+            },
+            {
+              "id": "v08-034",
+              "term_ja": "作品",
+              "reading": "さくひん",
+              "ruby_html": "<ruby>作品<rt>さくひん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "work (of art), piece, production",
+              "example_ja": "素晴らしい作品",
+              "example_en": "wonderful work"
+            },
+            {
+              "id": "v08-035",
+              "term_ja": "ストーリー",
+              "reading": "ストーリー",
+              "ruby_html": "ストーリー",
+              "part_of_speech": "名詞",
+              "meaning_en": "story, plot",
+              "example_ja": "ストーリーが面白い",
+              "example_en": "the story is interesting"
+            },
+            {
+              "id": "v08-036",
+              "term_ja": "単純",
+              "reading": "たんじゅん",
+              "ruby_html": "<ruby>単純<rt>たんじゅん</rt></ruby>",
+              "part_of_speech": "な形容詞・名詞",
+              "meaning_en": "simple, straightforward, uncomplicated",
+              "example_ja": "単純な構造",
+              "example_en": "simple structure"
+            },
+            {
+              "id": "v08-037",
+              "term_ja": "表現する",
+              "reading": "ひょうげんする",
+              "ruby_html": "<ruby>表現<rt>ひょうげん</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to express, to represent",
+              "example_ja": "感情を絵で表現する",
+              "example_en": "express emotions through paintings"
+            },
+            {
+              "id": "v08-038",
+              "term_ja": "喜び",
+              "reading": "よろこび",
+              "ruby_html": "<ruby>喜<rt>よろこ</rt></ruby>び",
+              "part_of_speech": "名詞",
+              "meaning_en": "joy, delight, pleasure",
+              "example_ja": "合格の喜び",
+              "example_en": "joy of passing"
+            },
+            {
+              "id": "v08-039",
+              "term_ja": "悲しみ",
+              "reading": "かなしみ",
+              "ruby_html": "<ruby>悲<rt>かな</rt></ruby>しみ",
+              "part_of_speech": "名詞",
+              "meaning_en": "sadness, grief, sorrow",
+              "example_ja": "深い悲しみ",
+              "example_en": "deep sadness"
+            },
+            {
+              "id": "v08-040",
+              "term_ja": "感情",
+              "reading": "かんじょう",
+              "ruby_html": "<ruby>感情<rt>かんじょう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "emotion, feelings",
+              "example_ja": "感情を表に出す",
+              "example_en": "show emotions outwardly"
+            },
+            {
+              "id": "v08-041",
+              "term_ja": "楽器",
+              "reading": "がっき",
+              "ruby_html": "<ruby>楽器<rt>がっき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "musical instrument",
+              "example_ja": "楽器を演奏する",
+              "example_en": "play a musical instrument"
+            },
+            {
+              "id": "v08-042",
+              "term_ja": "弾く",
+              "reading": "ひく",
+              "ruby_html": "<ruby>弾<rt>ひ</rt></ruby>く",
+              "part_of_speech": "動詞",
+              "meaning_en": "to play (stringed/keyboard instrument)",
+              "example_ja": "ピアノを弾く",
+              "example_en": "play the piano"
+            },
+            {
+              "id": "v08-043",
+              "term_ja": "プロ",
+              "reading": "プロ",
+              "ruby_html": "プロ",
+              "part_of_speech": "名詞",
+              "meaning_en": "professional, pro",
+              "example_ja": "プロの音楽家",
+              "example_en": "professional musician"
+            },
+            {
+              "id": "v08-044",
+              "term_ja": "演奏",
+              "reading": "えんそう",
+              "ruby_html": "<ruby>演奏<rt>えんそう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "musical performance",
+              "example_ja": "オーケストラの演奏",
+              "example_en": "orchestra performance"
+            },
+            {
+              "id": "v08-045",
+              "term_ja": "感想",
+              "reading": "かんそう",
+              "ruby_html": "<ruby>感想<rt>かんそう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "impressions, thoughts, reaction",
+              "example_ja": "映画の感想を語る",
+              "example_en": "share impressions of a movie"
+            },
+            {
+              "id": "v08-046",
+              "term_ja": "コンクール",
+              "reading": "コンクール",
+              "ruby_html": "コンクール",
+              "part_of_speech": "名詞",
+              "meaning_en": "contest, competition (music/art)",
+              "example_ja": "ピアノコンクール",
+              "example_en": "piano contest"
+            },
+            {
+              "id": "v08-047",
+              "term_ja": "演劇",
+              "reading": "えんげき",
+              "ruby_html": "<ruby>演劇<rt>えんげき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "theater, theatrical play, drama",
+              "example_ja": "演劇を観に行く",
+              "example_en": "go to see a theatrical play"
+            },
+            {
+              "id": "v08-048",
+              "term_ja": "絵画",
+              "reading": "かいが",
+              "ruby_html": "<ruby>絵画<rt>かいが</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "painting, picture",
+              "example_ja": "絵画展",
+              "example_en": "painting exhibition"
+            },
+            {
+              "id": "v08-049",
+              "term_ja": "アニメ",
+              "reading": "アニメ",
+              "ruby_html": "アニメ",
+              "part_of_speech": "名詞",
+              "meaning_en": "anime, animated cartoon",
+              "example_ja": "日本のアニメ",
+              "example_en": "Japanese anime"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "ピアノなどの（　）を弾く。",
+              "options": [
+                "楽器",
+                "表現",
+                "才能",
+                "感想",
+                "絵画",
+                "ストーリー"
+              ],
+              "answer": "楽器",
+              "explanation": "ピアノやギターなどの総称は「楽器」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "自分の気持ちを言葉で（　）する。",
+              "options": [
+                "楽器",
+                "表現",
+                "才能",
+                "感想",
+                "絵画",
+                "ストーリー"
+              ],
+              "answer": "表現",
+              "explanation": "気持ちを外に表すのは「表現する」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "幼い頃から絵の（　）があった。",
+              "options": [
+                "楽器",
+                "表現",
+                "才能",
+                "感想",
+                "絵画",
+                "ストーリー"
+              ],
+              "answer": "才能",
+              "explanation": "生まれ持った能力は「才能」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "映画を見た（　）を書く。",
+              "options": [
+                "楽器",
+                "表現",
+                "才能",
+                "感想",
+                "絵画",
+                "ストーリー"
+              ],
+              "answer": "感想",
+              "explanation": "作品を見て心に感じたことは「感想」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "美術館で有名な（　）を鑑賞した。",
+              "options": [
+                "楽器",
+                "表現",
+                "才能",
+                "感想",
+                "絵画",
+                "ストーリー"
+              ],
+              "answer": "絵画",
+              "explanation": "美術館で鑑賞する絵は「絵画」です。"
+            },
+            {
+              "id": 6,
+              "question_ja": "この小説の（　）はとても面白い。",
+              "options": [
+                "楽器",
+                "表現",
+                "才能",
+                "感想",
+                "絵画",
+                "ストーリー"
+              ],
+              "answer": "ストーリー",
+              "explanation": "小説の筋書きは「ストーリー」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "08-ex1",
+          "title_ja": "どちらが正しいですか。正しいほうを選びましょう。",
+          "type": "binary_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "あの歌手は、最近若者の間で［a. 人気になってきた / b. 人気が出てきた］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "人気が高まる表現は「人気が出てきた」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "努力が実を結び、優勝したときの［a. 喜びが大きい / b. 悲しみが大きい］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "優勝して味わう感情は「喜び」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "怪我をしてしまい、［a. 試合で活躍できなかった / b. 試合で開始できなかった］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "本領を発揮できなかったことは「活躍できなかった」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "大会で素晴らしい［a. チームが出た / b. 記録が出た］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "数字や成果が出ることは「記録が出た」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "祖父は伝統的な［a. 日本人形の選手 / b. 日本人形の作家］だ。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "伝統工芸品を制作する人は「作家」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "08-ex2",
+          "title_ja": "（　）に入れるのに最もよいものを、枠から選んで書きましょう。",
+          "type": "box_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "バイオリンの（　）に多くの観客が感動した。",
+              "options": [
+                "演奏",
+                "優勝",
+                "開始",
+                "感情",
+                "出場",
+                "トレーニング"
+              ],
+              "answer": "演奏",
+              "explanation": "楽器を弾く行為は「演奏」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "決勝戦で勝って、（　）旗を手にした。",
+              "options": [
+                "演奏",
+                "優勝",
+                "開始",
+                "感情",
+                "出場",
+                "トレーニング"
+              ],
+              "answer": "優勝",
+              "explanation": "勝者に贈られる旗は「優勝旗」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "式典の（　）は午後2時を予定しています。",
+              "options": [
+                "演奏",
+                "優勝",
+                "開始",
+                "感情",
+                "出場",
+                "トレーニング"
+              ],
+              "answer": "開始",
+              "explanation": "始まる時刻は「開始」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "絵の中に画家の豊かな（　）が込められている。",
+              "options": [
+                "演奏",
+                "優勝",
+                "開始",
+                "感情",
+                "出場",
+                "トレーニング"
+              ],
+              "answer": "感情",
+              "explanation": "心の内にある思いは「感情」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "予選を勝ち抜いて、全国大会への（　）を決めた。",
+              "options": [
+                "演奏",
+                "優勝",
+                "開始",
+                "感情",
+                "出場",
+                "トレーニング"
+              ],
+              "answer": "出場",
+              "explanation": "大会に出ることは「出場」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "日々の（　）が強靭な肉体を作る。",
+              "options": [
+                "演奏",
+                "優勝",
+                "開始",
+                "感情",
+                "出場",
+                "トレーニング"
+              ],
+              "answer": "トレーニング",
+              "explanation": "鍛錬は「トレーニング」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "08-ex3",
+          "title_ja": "意味が最も近い組み合わせを選びましょう。",
+          "type": "matching_phrases",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "才能がある",
+              "options": [
+                "a. 単純な",
+                "b. プロの",
+                "c. 期待する",
+                "d. 才能のある"
+              ],
+              "answer": "d",
+              "explanation": "「才能がある」と同義は「才能のある」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "指導する",
+              "options": [
+                "a. 単純な",
+                "b. プロの",
+                "c. 監督する",
+                "d. 才能のある"
+              ],
+              "answer": "c",
+              "explanation": "チームなどを導くのは「監督する」に近いです。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "わかりやすい・シンプル",
+              "options": [
+                "a. 単純な",
+                "b. プロの",
+                "c. 監督する",
+                "d. 才能のある"
+              ],
+              "answer": "a",
+              "explanation": "「単純な」はわかりやすい・シンプルな様子を表します。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "多くの人に好かれている",
+              "options": [
+                "a. 単純な",
+                "b. プロの",
+                "c. 期待する",
+                "d. 人気のある"
+              ],
+              "answer": "d",
+              "explanation": "多くの人に愛されているのは「人気のある」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "それを仕事にしている",
+              "options": [
+                "a. 単純な",
+                "b. プロの",
+                "c. 期待する",
+                "d. 才能のある"
+              ],
+              "answer": "b",
+              "explanation": "本職として行うのは「プロの」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "活躍を信じて楽しみに待つ",
+              "options": [
+                "a. 単純な",
+                "b. プロの",
+                "c. 期待する",
+                "d. 才能のある"
+              ],
+              "answer": "c",
+              "explanation": "良い結果を待ち望むのは「期待する」です。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "トップレベルの",
+              "options": [
+                "a. 単純な",
+                "b. 一流の",
+                "c. 期待する",
+                "d. 才能のある"
+              ],
+              "answer": "b",
+              "explanation": "最高水準のものは「一流の」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "08-ex4",
+          "title_ja": "（　）に入れるのに最もよい言葉を、下のa・b・cから選んで記号を書きましょう。",
+          "type": "categorized_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① ボールを思い切り［　］。② 優勝を［　］。③ 大会記録を［　］。",
+              "options": [
+                "a. 争って",
+                "b. 蹴って",
+                "c. 破って"
+              ],
+              "answer": "① b, ② a, ③ c",
+              "explanation": "① ボールを蹴って、② 優勝を争って、③ 記録を破って"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① スタジアムで選手を［　］する。② 国の［　］として戦う。③ 素晴らしい［　］作品に触れる。",
+              "options": [
+                "a. 応援",
+                "b. 芸術",
+                "c. 代表"
+              ],
+              "answer": "① a, ② c, ③ b",
+              "explanation": "① 選手を応援する、② 国の代表として、③ 芸術作品"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(3) ① 試合に負けて本当に［　］。② 途中で［　］ずに最後まで走る。③ 大切な人を失った［　］に沈む。",
+              "options": [
+                "a. あきらめる",
+                "b. 悲しみ",
+                "c. 悔しい"
+              ],
+              "answer": "① c, ② a, ③ b",
+              "explanation": "① 負けて悔しい、② あきらめずに、③ 悲しみに沈む"
+            }
+          ]
+        },
+        {
+          "exercise_id": "08-ex5",
+          "title_ja": "次の文章を読んで、（①）〜（⑭）に入る言葉を下の枠から選んで書きましょう。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "友人から（①）の映画を聞いた。",
+              "answer": "お勧め",
+              "explanation": "お勧めの映画"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "（②）豊かな若手監督の映画だ。",
+              "answer": "才能",
+              "explanation": "才能豊かな"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "若手（③）の作品だ。",
+              "answer": "監督",
+              "explanation": "若手監督"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "現在、大変（④）を集めている。",
+              "answer": "人気",
+              "explanation": "人気を集める"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "主演の（⑤）と",
+              "answer": "俳優",
+              "explanation": "主演の俳優"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "（⑥）の演技が素晴らしい。",
+              "answer": "女優",
+              "explanation": "女優の演技"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "激しい（⑦）を重ねて",
+              "answer": "トレーニング",
+              "explanation": "トレーニングを重ねる"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "国の（⑧）に選ばれ、",
+              "answer": "代表",
+              "explanation": "国の代表"
+            },
+            {
+              "item_id": 9,
+              "context_ja": "国際大会に（⑨）し、",
+              "answer": "出場",
+              "explanation": "大会に出場する"
+            },
+            {
+              "item_id": 10,
+              "context_ja": "見事に（⑩）を果たすという",
+              "answer": "優勝",
+              "explanation": "優勝を果たす"
+            },
+            {
+              "item_id": 11,
+              "context_ja": "（⑪）である。",
+              "answer": "ストーリー",
+              "explanation": "ストーリーである"
+            },
+            {
+              "item_id": 12,
+              "context_ja": "劇中で流れる（⑫）の",
+              "answer": "楽器",
+              "explanation": "楽器の音色"
+            },
+            {
+              "item_id": 13,
+              "context_ja": "（⑬）も美しく、",
+              "answer": "演奏",
+              "explanation": "美しい演奏"
+            },
+            {
+              "item_id": 14,
+              "context_ja": "心に残る名（⑭）だった。",
+              "answer": "作品",
+              "explanation": "名作品"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "09",
+        "topic_ja": "趣味と旅行2: ファッション",
+        "topic_en": "Hobbies and Travel 2: Fashion",
+        "pages": [
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "09-1",
+          "title_ja": "ファッション(1)",
+          "title_en": "Fashion (1)",
+          "page": 36,
+          "warming_up": {
+            "question_ja": "最近どんな服を買いましたか。服を買ったとき、お店の人と何か話しましたか。",
+            "question_en": "What kind of clothes did you buy recently? Did you speak with the shop staff when you bought them?"
+          },
+          "words": [
+            {
+              "id": "v09-001",
+              "term_ja": "最新",
+              "reading": "さいしん",
+              "ruby_html": "<ruby>最新<rt>さいしん</rt></ruby>",
+              "part_of_speech": "名詞・の形容詞",
+              "meaning_en": "latest, newest",
+              "example_ja": "最新のファッション",
+              "example_en": "the latest fashion"
+            },
+            {
+              "id": "v09-002",
+              "term_ja": "ファッション",
+              "reading": "ファッション",
+              "ruby_html": "ファッション",
+              "part_of_speech": "名詞",
+              "meaning_en": "fashion",
+              "example_ja": "春のファッション",
+              "example_en": "spring fashion"
+            },
+            {
+              "id": "v09-003",
+              "term_ja": "流行",
+              "reading": "りゅうこう",
+              "ruby_html": "<ruby>流行<rt>りゅうこう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "trend, fashion, craze",
+              "example_ja": "流行の服",
+              "example_en": "trendy clothes"
+            },
+            {
+              "id": "v09-004",
+              "term_ja": "スタイル",
+              "reading": "スタイル",
+              "ruby_html": "スタイル",
+              "part_of_speech": "名詞",
+              "meaning_en": "style, personal look",
+              "example_ja": "自分に合うスタイル",
+              "example_en": "a style that suits oneself"
+            },
+            {
+              "id": "v09-005",
+              "term_ja": "デザイン",
+              "reading": "デザイン",
+              "ruby_html": "デザイン",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "design",
+              "example_ja": "服のデザイン",
+              "example_en": "clothing design"
+            },
+            {
+              "id": "v09-006",
+              "term_ja": "おしゃれ",
+              "reading": "おしゃれ",
+              "ruby_html": "おしゃれ",
+              "part_of_speech": "名詞・な形容詞・する動詞",
+              "meaning_en": "fashionable, stylish, smartly dressed",
+              "example_ja": "おしゃれなカフェ",
+              "example_en": "stylish cafe"
+            },
+            {
+              "id": "v09-007",
+              "term_ja": "眼鏡",
+              "reading": "めがね",
+              "ruby_html": "<ruby>眼鏡<rt>めがね</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "glasses, spectacles",
+              "example_ja": "眼鏡をかける",
+              "example_en": "wear glasses"
+            },
+            {
+              "id": "v09-008",
+              "term_ja": "試着する",
+              "reading": "しちゃくする",
+              "ruby_html": "<ruby>試着<rt>しちゃく</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to try on (clothes)",
+              "example_ja": "試着室で試着する",
+              "example_en": "try on clothes in the fitting room"
+            },
+            {
+              "id": "v09-009",
+              "term_ja": "着替える",
+              "reading": "きがえる",
+              "ruby_html": "<ruby>着替<rt>きが</rt></ruby>える",
+              "part_of_speech": "動詞",
+              "meaning_en": "to change clothes",
+              "example_ja": "部屋着に着替える",
+              "example_en": "change into loungewear"
+            },
+            {
+              "id": "v09-010",
+              "term_ja": "きつい",
+              "reading": "きつい",
+              "ruby_html": "きつい",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "tight, cramped",
+              "example_ja": "靴がきつい",
+              "example_en": "shoes are tight"
+            },
+            {
+              "id": "v09-011",
+              "term_ja": "緩い",
+              "reading": "ゆるい",
+              "ruby_html": "<ruby>緩<rt>ゆる</rt></ruby>い",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "loose, slack",
+              "example_ja": "ズボンが緩い",
+              "example_en": "trousers are loose"
+            },
+            {
+              "id": "v09-012",
+              "term_ja": "袖",
+              "reading": "そで",
+              "ruby_html": "<ruby>袖<rt>そで</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "sleeve",
+              "example_ja": "袖が長い",
+              "example_en": "sleeves are long"
+            },
+            {
+              "id": "v09-013",
+              "term_ja": "サイズ",
+              "reading": "サイズ",
+              "ruby_html": "サイズ",
+              "part_of_speech": "名詞",
+              "meaning_en": "size",
+              "example_ja": "サイズが合う",
+              "example_en": "the size fits"
+            },
+            {
+              "id": "v09-014",
+              "term_ja": "合う",
+              "reading": "あう",
+              "ruby_html": "<ruby>合<rt>あ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to fit, to match, to suit",
+              "example_ja": "サイズが合う",
+              "example_en": "size fits"
+            },
+            {
+              "id": "v09-015",
+              "term_ja": "ぴったり",
+              "reading": "ぴったり",
+              "ruby_html": "ぴったり",
+              "part_of_speech": "副詞・な形容詞",
+              "meaning_en": "perfect fit, exactly right",
+              "example_ja": "ぴったり合う",
+              "example_en": "fit perfectly"
+            },
+            {
+              "id": "v09-016",
+              "term_ja": "気に入る",
+              "reading": "きにいる",
+              "ruby_html": "<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>る",
+              "part_of_speech": "動詞",
+              "meaning_en": "to like, to be fond of, to take a fancy to",
+              "example_ja": "この服が気に入る",
+              "example_en": "like this piece of clothing"
+            },
+            {
+              "id": "v09-017",
+              "term_ja": "スーツ",
+              "reading": "スーツ",
+              "ruby_html": "スーツ",
+              "part_of_speech": "名詞",
+              "meaning_en": "suit (business)",
+              "example_ja": "スーツを着る",
+              "example_en": "wear a suit"
+            },
+            {
+              "id": "v09-018",
+              "term_ja": "似合う",
+              "reading": "にあう",
+              "ruby_html": "<ruby>似合<rt>にあ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to look good on, to suit, to become",
+              "example_ja": "服がよく似合う",
+              "example_en": "the clothes suit someone very well"
+            },
+            {
+              "id": "v09-019",
+              "term_ja": "関心",
+              "reading": "かんしん",
+              "ruby_html": "<ruby>関心<rt>かんしん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "interest, concern",
+              "example_ja": "ファッションに関心を持つ",
+              "example_en": "have an interest in fashion"
+            },
+            {
+              "id": "v09-020",
+              "term_ja": "パジャマ",
+              "reading": "パジャマ",
+              "ruby_html": "パジャマ",
+              "part_of_speech": "名詞",
+              "meaning_en": "pajamas, sleepwear",
+              "example_ja": "パジャマを着て寝る",
+              "example_en": "wear pajamas and go to sleep"
+            },
+            {
+              "id": "v09-021",
+              "term_ja": "ワンピース",
+              "reading": "ワンピース",
+              "ruby_html": "ワンピース",
+              "part_of_speech": "名詞",
+              "meaning_en": "one-piece dress",
+              "example_ja": "花柄のワンピース",
+              "example_en": "floral one-piece dress"
+            },
+            {
+              "id": "v09-022",
+              "term_ja": "浴衣",
+              "reading": "ゆかた",
+              "ruby_html": "<ruby>浴衣<rt>ゆかた</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "yukata (summer cotton kimono)",
+              "example_ja": "祭りで浴衣を着る",
+              "example_en": "wear a yukata at a festival"
+            },
+            {
+              "id": "v09-023",
+              "term_ja": "水着",
+              "reading": "みずぎ",
+              "ruby_html": "<ruby>水着<rt>みずぎ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "swimsuit, swimwear",
+              "example_ja": "海で水着を着る",
+              "example_en": "wear swimwear at the beach"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "靴が（　）ので、足が痛い。",
+              "options": [
+                "きつい",
+                "試着",
+                "袖",
+                "着替える",
+                "デザイン"
+              ],
+              "answer": "きつい",
+              "explanation": "サイズが小さくて痛い状態は「きつい」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "買う前に、サイズが合うか（　）してみた。",
+              "options": [
+                "きつい",
+                "試着",
+                "袖",
+                "着替える",
+                "デザイン"
+              ],
+              "answer": "試着",
+              "explanation": "服のサイズを試す行為は「試着」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "シャツの（　）が長すぎるので、短くした。",
+              "options": [
+                "きつい",
+                "試着",
+                "袖",
+                "着替える",
+                "デザイン"
+              ],
+              "answer": "袖",
+              "explanation": "腕を覆う部分は「袖」（sleeve）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "汚れた服を脱いで、新しい服に（　）。",
+              "options": [
+                "きつい",
+                "試着",
+                "袖",
+                "着替える",
+                "デザイン"
+              ],
+              "answer": "着替える",
+              "explanation": "別の服に着替える動詞は「着替える」です。"
+            },
+            {
+              "id": 5,
+              "question_ja": "この服は色も（　）も素晴らしい。",
+              "options": [
+                "きつい",
+                "試着",
+                "袖",
+                "着替える",
+                "デザイン"
+              ],
+              "answer": "デザイン",
+              "explanation": "形や意匠を表す言葉は「デザイン」です。"
+            }
+          ]
+        },
+        {
+          "section_id": "09-2",
+          "title_ja": "ファッション(2)",
+          "title_en": "Fashion (2)",
+          "page": 37,
+          "warming_up": {
+            "question_ja": "今日はどんな服を着ていますか。説明してください。",
+            "question_en": "What kind of clothes are you wearing today? Please describe them."
+          },
+          "words": [
+            {
+              "id": "v09-024",
+              "term_ja": "きちんとした",
+              "reading": "きちんとした",
+              "ruby_html": "きちんとした",
+              "part_of_speech": "連体詞",
+              "meaning_en": "neat, tidy, respectable, proper",
+              "example_ja": "きちんとした服装",
+              "example_en": "proper/neat attire"
+            },
+            {
+              "id": "v09-025",
+              "term_ja": "高級",
+              "reading": "こうきゅう",
+              "ruby_html": "<ruby>高級<rt>こうきゅう</rt></ruby>",
+              "part_of_speech": "名詞・な形容詞",
+              "meaning_en": "high-class, high-grade, luxury",
+              "example_ja": "高級な服",
+              "example_en": "high-end clothes"
+            },
+            {
+              "id": "v09-026",
+              "term_ja": "上品",
+              "reading": "じょうひん",
+              "ruby_html": "<ruby>上品<rt>じょうひん</rt></ruby>",
+              "part_of_speech": "な形容詞・名詞",
+              "meaning_en": "elegant, refined, graceful",
+              "example_ja": "上品なデザイン",
+              "example_en": "elegant design"
+            },
+            {
+              "id": "v09-027",
+              "term_ja": "シンプル",
+              "reading": "シンプル",
+              "ruby_html": "シンプル",
+              "part_of_speech": "な形容詞",
+              "meaning_en": "simple, plain, minimalist",
+              "example_ja": "シンプルなデザイン",
+              "example_en": "simple design"
+            },
+            {
+              "id": "v09-028",
+              "term_ja": "服装",
+              "reading": "ふくそう",
+              "ruby_html": "<ruby>服装<rt>ふくそう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "clothing, attire, garments",
+              "example_ja": "フォーマルな服装",
+              "example_en": "formal attire"
+            },
+            {
+              "id": "v09-029",
+              "term_ja": "派手",
+              "reading": "はで",
+              "ruby_html": "<ruby>派手<rt>はで</rt></ruby>",
+              "part_of_speech": "な形容詞・名詞",
+              "meaning_en": "showy, flashy, loud",
+              "example_ja": "派手な色のシャツ",
+              "example_en": "loud-colored shirt"
+            },
+            {
+              "id": "v09-030",
+              "term_ja": "地味",
+              "reading": "じみ",
+              "ruby_html": "<ruby>地味<rt>じみ</rt></ruby>",
+              "part_of_speech": "な形容詞・名詞",
+              "meaning_en": "plain, quiet, subdued, sober",
+              "example_ja": "地味な色の服",
+              "example_en": "sober-colored clothes"
+            },
+            {
+              "id": "v09-031",
+              "term_ja": "かっこいい",
+              "reading": "かっこいい",
+              "ruby_html": "かっこいい",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "cool, stylish, attractive",
+              "example_ja": "かっこいいジャケット",
+              "example_en": "cool jacket"
+            },
+            {
+              "id": "v09-032",
+              "term_ja": "かっこ悪い",
+              "reading": "かっこわるい",
+              "ruby_html": "かっこ<ruby>悪<rt>わる</rt></ruby>い",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "uncool, unsightly, awkward",
+              "example_ja": "かっこ悪い姿勢",
+              "example_en": "uncool posture"
+            },
+            {
+              "id": "v09-033",
+              "term_ja": "素敵",
+              "reading": "すてき",
+              "ruby_html": "<ruby>素敵<rt>すてき</rt></ruby>",
+              "part_of_speech": "な形容詞",
+              "meaning_en": "lovely, wonderful, splendid",
+              "example_ja": "素敵なドレス",
+              "example_en": "lovely dress"
+            },
+            {
+              "id": "v09-034",
+              "term_ja": "ドレス",
+              "reading": "ドレス",
+              "ruby_html": "ドレス",
+              "part_of_speech": "名詞",
+              "meaning_en": "formal dress, gown",
+              "example_ja": "ウェディングドレス",
+              "example_en": "wedding dress"
+            },
+            {
+              "id": "v09-035",
+              "term_ja": "真っ赤",
+              "reading": "まっか",
+              "ruby_html": "<ruby>真<rt>ま</rt></ruby>っ<ruby>赤<rt>か</rt></ruby>",
+              "part_of_speech": "名詞・な形容詞",
+              "meaning_en": "bright red, deep red",
+              "example_ja": "真っ赤なバラ",
+              "example_en": "bright red rose"
+            },
+            {
+              "id": "v09-036",
+              "term_ja": "真っ白",
+              "reading": "まっしろ",
+              "ruby_html": "<ruby>真<rt>ま</rt></ruby>っ<ruby>白<rt>しろ</rt></ruby>",
+              "part_of_speech": "名詞・な形容詞",
+              "meaning_en": "pure white, snow white",
+              "example_ja": "真っ白なシャツ",
+              "example_en": "pure white shirt"
+            },
+            {
+              "id": "v09-037",
+              "term_ja": "真っ黒",
+              "reading": "まっくろ",
+              "ruby_html": "<ruby>真<rt>ま</rt></ruby>っ<ruby>黒<rt>くろ</rt></ruby>",
+              "part_of_speech": "名詞・な形容詞",
+              "meaning_en": "pitch black, jet black",
+              "example_ja": "真っ黒な髪",
+              "example_en": "jet black hair"
+            },
+            {
+              "id": "v09-038",
+              "term_ja": "オレンジ",
+              "reading": "オレンジ",
+              "ruby_html": "オレンジ",
+              "part_of_speech": "名詞",
+              "meaning_en": "orange (color)",
+              "example_ja": "オレンジ色のセーター",
+              "example_en": "orange sweater"
+            },
+            {
+              "id": "v09-039",
+              "term_ja": "ピンク",
+              "reading": "ピンク",
+              "ruby_html": "ピンク",
+              "part_of_speech": "名詞",
+              "meaning_en": "pink (color)",
+              "example_ja": "ピンクのスカート",
+              "example_en": "pink skirt"
+            },
+            {
+              "id": "v09-040",
+              "term_ja": "紫",
+              "reading": "むらさき",
+              "ruby_html": "<ruby>紫<rt>むらさき</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "purple, violet",
+              "example_ja": "紫色の花",
+              "example_en": "purple flowers"
+            },
+            {
+              "id": "v09-041",
+              "term_ja": "灰色",
+              "reading": "はいいろ",
+              "ruby_html": "<ruby>灰色<rt>はいいろ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "gray, ash color",
+              "example_ja": "灰色のスーツ",
+              "example_en": "gray suit"
+            },
+            {
+              "id": "v09-042",
+              "term_ja": "濃い",
+              "reading": "こい",
+              "ruby_html": "<ruby>濃<rt>こ</rt></ruby>い",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "deep, dark (color)",
+              "example_ja": "濃い青",
+              "example_en": "dark blue"
+            },
+            {
+              "id": "v09-043",
+              "term_ja": "緑色",
+              "reading": "みどりいろ",
+              "ruby_html": "<ruby>緑色<rt>みどりいろ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "green color",
+              "example_ja": "鮮やかな緑色",
+              "example_en": "vivid green color"
+            },
+            {
+              "id": "v09-044",
+              "term_ja": "合わせる",
+              "reading": "あわせる",
+              "ruby_html": "<ruby>合<rt>あ</rt></ruby>わせる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to match, to coordinate, to pair with",
+              "example_ja": "靴とバッグの色を合わせる",
+              "example_en": "match the colors of shoes and bag"
+            },
+            {
+              "id": "v09-045",
+              "term_ja": "模様",
+              "reading": "もよう",
+              "ruby_html": "<ruby>模様<rt>もよう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "pattern, design",
+              "example_ja": "チェックの模様",
+              "example_en": "plaid pattern"
+            },
+            {
+              "id": "v09-046",
+              "term_ja": "ハンカチ",
+              "reading": "ハンカチ",
+              "ruby_html": "ハンカチ",
+              "part_of_speech": "名詞",
+              "meaning_en": "handkerchief",
+              "example_ja": "ハンカチを持つ",
+              "example_en": "carry a handkerchief"
+            },
+            {
+              "id": "v09-047",
+              "term_ja": "無地",
+              "reading": "むじ",
+              "ruby_html": "<ruby>無地<rt>むじ</rt></ruby>",
+              "part_of_speech": "名詞・の形容詞",
+              "meaning_en": "plain, solid color (unpatterned)",
+              "example_ja": "無地のシャツ",
+              "example_en": "plain shirt"
+            },
+            {
+              "id": "v09-048",
+              "term_ja": "着物",
+              "reading": "きもの",
+              "ruby_html": "<ruby>着物<rt>きもの</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "kimono",
+              "example_ja": "着物を着る",
+              "example_en": "wear a kimono"
+            },
+            {
+              "id": "v09-049",
+              "term_ja": "ウール",
+              "reading": "ウール",
+              "ruby_html": "ウール",
+              "part_of_speech": "名詞",
+              "meaning_en": "wool",
+              "example_ja": "ウールのセーター",
+              "example_en": "wool sweater"
+            },
+            {
+              "id": "v09-050",
+              "term_ja": "綿",
+              "reading": "めん",
+              "ruby_html": "<ruby>綿<rt>めん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "cotton",
+              "example_ja": "綿100パーセント",
+              "example_en": "100% cotton"
+            },
+            {
+              "id": "v09-051",
+              "term_ja": "革",
+              "reading": "かわ",
+              "ruby_html": "<ruby>革<rt>かわ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "leather",
+              "example_ja": "本革の靴",
+              "example_en": "genuine leather shoes"
+            },
+            {
+              "id": "v09-052",
+              "term_ja": "コート",
+              "reading": "コート",
+              "ruby_html": "コート",
+              "part_of_speech": "名詞",
+              "meaning_en": "coat, overcoat",
+              "example_ja": "冬用のコート",
+              "example_en": "winter coat"
+            },
+            {
+              "id": "v09-053",
+              "term_ja": "はく",
+              "reading": "はく",
+              "ruby_html": "はく",
+              "part_of_speech": "動詞",
+              "meaning_en": "to wear / put on (pants, shoes, skirt)",
+              "example_ja": "ズボンをはく",
+              "example_en": "put on trousers"
+            },
+            {
+              "id": "v09-054",
+              "term_ja": "パンツ",
+              "reading": "パンツ",
+              "ruby_html": "パンツ",
+              "part_of_speech": "名詞",
+              "meaning_en": "pants, trousers, underpants",
+              "example_ja": "黒のパンツ",
+              "example_en": "black trousers"
+            },
+            {
+              "id": "v09-055",
+              "term_ja": "ストッキング",
+              "reading": "ストッキング",
+              "ruby_html": "ストッキング",
+              "part_of_speech": "名詞",
+              "meaning_en": "stockings, pantyhose",
+              "example_ja": "ストッキングをはく",
+              "example_en": "put on stockings"
+            },
+            {
+              "id": "v09-056",
+              "term_ja": "ジーンズ",
+              "reading": "ジーンズ",
+              "ruby_html": "ジーンズ",
+              "part_of_speech": "名詞",
+              "meaning_en": "jeans",
+              "example_ja": "青いジーンズ",
+              "example_en": "blue jeans"
+            },
+            {
+              "id": "v09-057",
+              "term_ja": "サンダル",
+              "reading": "サンダル",
+              "ruby_html": "サンダル",
+              "part_of_speech": "名詞",
+              "meaning_en": "sandals",
+              "example_ja": "夏用のサンダル",
+              "example_en": "summer sandals"
+            },
+            {
+              "id": "v09-058",
+              "term_ja": "ブーツ",
+              "reading": "ブーツ",
+              "ruby_html": "ブーツ",
+              "part_of_speech": "名詞",
+              "meaning_en": "boots",
+              "example_ja": "革のブーツ",
+              "example_en": "leather boots"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "パーティーにふさわしい（　）をしていく。",
+              "options": [
+                "服装",
+                "真っ赤",
+                "模様",
+                "地味"
+              ],
+              "answer": "服装",
+              "explanation": "身なり・着ている服を表す言葉は「服装」です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "夕焼けで空が（　）に染まった。",
+              "options": [
+                "服装",
+                "真っ赤",
+                "模様",
+                "地味"
+              ],
+              "answer": "真っ赤",
+              "explanation": "一面に赤く染まる様子は「真っ赤」です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "花の（　）が入ったかわいらしいスカート。",
+              "options": [
+                "服装",
+                "真っ赤",
+                "模様",
+                "地味"
+              ],
+              "answer": "模様",
+              "explanation": "絵柄や図案を表すのは「模様」です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "派手な色よりも、（　）な色の服が落ち着く。",
+              "options": [
+                "服装",
+                "真っ赤",
+                "模様",
+                "地味"
+              ],
+              "answer": "地味",
+              "explanation": "「派手」の対義語として落ち着いた色は「地味」です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "09-ex1",
+          "title_ja": "どちらが正しいですか。正しいほうを選びましょう。",
+          "type": "binary_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "このワンピースがとても［a. 気に入って / b. 似合って］、即決で買った。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "自分で好きになって購入した場合は「気に入って」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "若い頃は、ファッションにあまり［a. 流行を持たなかった / b. 関心を持たなかった］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "興味を抱く表現は「関心を持つ」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "今、若者の間でとても［a. 流行している / b. スタイルしている］デザインだ。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "世間で流行っていることは「流行している」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "面接には［a. 派手な服 / b. きちんとした服］で行かなければならない。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "面接など礼儀が求められる場には「きちんとした服」を着ます。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "足のサイズに［a. 似合わない靴 / b. 合わない靴］を履くと痛くなる。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "寸法・大きさが一致しない場合は「合わない靴」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "09-ex2",
+          "title_ja": "（　）に入れるのに最もよいものを、枠から選んで書きましょう。",
+          "type": "box_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "私の体型に（　）のサイズが見つかった。",
+              "options": [
+                "ぴったり",
+                "無地",
+                "合わせる",
+                "緩い",
+                "最新",
+                "関心"
+              ],
+              "answer": "ぴったり",
+              "explanation": "サイズが寸分の狂いもなく合う状態は「ぴったり」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "柄のある服より、（　）のシンプルなTシャツが好きだ。",
+              "options": [
+                "ぴったり",
+                "無地",
+                "合わせる",
+                "緩い",
+                "最新",
+                "関心"
+              ],
+              "answer": "無地",
+              "explanation": "模様がない生地は「無地」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "トップスの色に合わせて、靴の色も（　）。",
+              "options": [
+                "ぴったり",
+                "無地",
+                "合わせる",
+                "緩い",
+                "最新",
+                "関心"
+              ],
+              "answer": "合わせる",
+              "explanation": "コーディネートして調和させるのは「合わせる」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "ベルトをしないと、ズボンが（　）て落ちてしまう。",
+              "options": [
+                "ぴったり",
+                "無地",
+                "合わせる",
+                "緩い",
+                "最新",
+                "関心"
+              ],
+              "answer": "緩い",
+              "explanation": "大きすぎてゆとりがありすぎる状態は「緩い」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "（　）のトレンドを取り入れた着こなし。",
+              "options": [
+                "ぴったり",
+                "無地",
+                "合わせる",
+                "緩い",
+                "最新",
+                "関心"
+              ],
+              "answer": "最新",
+              "explanation": "最も新しい流行は「最新」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "環境問題にも高い（　）を寄せている。",
+              "options": [
+                "ぴったり",
+                "無地",
+                "合わせる",
+                "緩い",
+                "最新",
+                "関心"
+              ],
+              "answer": "関心",
+              "explanation": "興味や関心を寄せるのは「関心」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "09-ex3",
+          "title_ja": "（　）に入れるのに最もよい言葉を、下のa・b・cから選んで記号を書きましょう。",
+          "type": "categorized_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 雪のように［　］ドレス。② いつも服のセンスが良くて［　］だ。③ 赤と青を混ぜると［　］になる。",
+              "options": [
+                "a. おしゃれ",
+                "b. 真っ白",
+                "c. 紫"
+              ],
+              "answer": "① b, ② a, ③ c",
+              "explanation": "① 真っ白なドレス、② おしゃれ、③ 紫"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① だらしない格好は［　］。② ［　］緑色の葉。③ 流行の［　］誌を読む。",
+              "options": [
+                "a. かっこ悪い",
+                "b. 濃い",
+                "c. ファッション"
+              ],
+              "answer": "① a, ② b, ③ c",
+              "explanation": "① かっこ悪い、② 濃い緑色、③ ファッション誌"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(3) ① その青いシャツ、よく［　］ね。② とても［　］な花束をもらった。③ 彼女はモデルのように［　］が良い。",
+              "options": [
+                "a. スタイル",
+                "b. 素敵",
+                "c. 似合う"
+              ],
+              "answer": "① c, ② b, ③ a",
+              "explanation": "① よく似合う、② 素敵な花束、③ スタイルが良い"
+            }
+          ]
+        },
+        {
+          "exercise_id": "09-ex4",
+          "title_ja": "文の意味が正しいものには○、正しくないものには×をつけましょう。",
+          "type": "true_false",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "結婚式に招待されたので、真っ黒なドレスを着て出席した。",
+              "answer": "×",
+              "explanation": "日本の結婚式でゲストが真っ黒一色のドレスを着るのは不適切（喪服を連想させるため）です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "着物の模様には、それぞれ縁起の良い意味が込められている。",
+              "answer": "○",
+              "explanation": "伝統的な着物の模様（柄）には様々な意味や願いが込められています。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "派手な人とは、いつも目立たない地味な服装を好む人のことだ。",
+              "answer": "×",
+              "explanation": "派手な人は目立つ華やかな服装を好む人です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "下着のような露出の多い服を着ることは、とても上品だとされる。",
+              "answer": "×",
+              "explanation": "上品（refined/elegant）の定義とは逆です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "着物は帯を結ぶ必要がなく、シンプルで簡単に着られる。",
+              "answer": "×",
+              "explanation": "着物は帯を結ぶなどの着付けが必要で、複雑です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "高級な服の店では、安価なセール品ばかりが大量に並んでいる。",
+              "answer": "×",
+              "explanation": "高級店には高価で質の高い商品が並びます。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "09-ex5",
+          "title_ja": "次の文章を読んで、（①）〜（⑧）に入る言葉を下の枠から選んで適切な形にして書きましょう。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "デパートで気に入った服を見つけたので、（①）してみた。",
+              "answer": "試着",
+              "explanation": "試着してみた"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "しかし（②）が合わなかった。",
+              "answer": "サイズ",
+              "explanation": "サイズが合わない"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "ウエスト周りが少し（③）て、",
+              "answer": "きつく",
+              "explanation": "きつくて"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "（④）も少し長かった。",
+              "answer": "袖",
+              "explanation": "袖が長い"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "色は明るい（⑤）や",
+              "answer": "オレンジ",
+              "explanation": "オレンジ色"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "（⑥）などがあったが、",
+              "answer": "ピンク",
+              "explanation": "ピンク色"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "自分には少し（⑦）すぎる気がした。",
+              "answer": "派手",
+              "explanation": "派手すぎる"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "店員に相談して、自分に（⑧）の服を選んでもらった。",
+              "answer": "ぴったり",
+              "explanation": "ぴったりの服"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "10",
+        "topic_ja": "趣味と旅行3: 旅行",
+        "topic_en": "Hobbies and Travel 3: Travel",
+        "pages": [
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "sections": [
+        {
+          "section_id": "10-1",
+          "title_ja": "旅行",
+          "title_en": "Travel",
+          "page": 40,
+          "warming_up": {
+            "question_ja": "最近、いつ旅行へ行きましたか。そこで何をしましたか。",
+            "question_en": "When did you travel recently? What did you do there?"
+          },
+          "words": [
+            {
+              "id": "v10-001",
+              "term_ja": "休暇",
+              "reading": "きゅうか",
+              "ruby_html": "<ruby>休暇<rt>きゅうか</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "vacation, holiday, time off",
+              "example_ja": "有給休暇を取る",
+              "example_en": "take paid vacation"
+            },
+            {
+              "id": "v10-002",
+              "term_ja": "休憩",
+              "reading": "きゅうけい",
+              "ruby_html": "<ruby>休憩<rt>きゅうけい</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "rest, break, intermission",
+              "example_ja": "途中で休憩を取る",
+              "example_en": "take a break along the way"
+            },
+            {
+              "id": "v10-003",
+              "term_ja": "ツアー",
+              "reading": "ツアー",
+              "ruby_html": "ツアー",
+              "part_of_speech": "名詞",
+              "meaning_en": "tour, package tour",
+              "example_ja": "観光ツアー",
+              "example_en": "sightseeing tour"
+            },
+            {
+              "id": "v10-004",
+              "term_ja": "申し込む",
+              "reading": "もうしこむ",
+              "ruby_html": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>む",
+              "part_of_speech": "動詞",
+              "meaning_en": "to apply for, to book, to sign up for",
+              "example_ja": "ツアーに申し込む",
+              "example_en": "apply for a package tour"
+            },
+            {
+              "id": "v10-005",
+              "term_ja": "予算",
+              "reading": "よさん",
+              "ruby_html": "<ruby>予算<rt>よさん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "budget, estimated cost",
+              "example_ja": "旅行の予算を決める",
+              "example_en": "decide travel budget"
+            },
+            {
+              "id": "v10-006",
+              "term_ja": "キャンセルする",
+              "reading": "キャンセルする",
+              "ruby_html": "キャンセルする",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to cancel",
+              "example_ja": "予約をキャンセルする",
+              "example_en": "cancel a reservation"
+            },
+            {
+              "id": "v10-007",
+              "term_ja": "ガイド",
+              "reading": "ガイド",
+              "ruby_html": "ガイド",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "guide, tour guide",
+              "example_ja": "観光ガイド",
+              "example_en": "tour guide"
+            },
+            {
+              "id": "v10-008",
+              "term_ja": "観光",
+              "reading": "かんこう",
+              "ruby_html": "<ruby>観光<rt>かんこう</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "sightseeing, tourism",
+              "example_ja": "市内を観光する",
+              "example_en": "go sightseeing around the city"
+            },
+            {
+              "id": "v10-009",
+              "term_ja": "詳しい",
+              "reading": "くわしい",
+              "ruby_html": "<ruby>詳<rt>くわ</rt></ruby>しい",
+              "part_of_speech": "い形容詞",
+              "meaning_en": "detailed, knowledgeable, well-informed",
+              "example_ja": "道に詳しい",
+              "example_en": "know the streets well"
+            },
+            {
+              "id": "v10-010",
+              "term_ja": "迷う",
+              "reading": "まよう",
+              "ruby_html": "<ruby>迷<rt>まよ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to lose one's way, to be lost, to hesitate",
+              "example_ja": "道に迷う",
+              "example_en": "lose one's way"
+            },
+            {
+              "id": "v10-011",
+              "term_ja": "両替する",
+              "reading": "りょうがえする",
+              "ruby_html": "<ruby>両替<rt>りょうがえ</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to exchange money, money exchange",
+              "example_ja": "円をドルに両替する",
+              "example_en": "exchange yen into dollars"
+            },
+            {
+              "id": "v10-012",
+              "term_ja": "お土産",
+              "reading": "おみやげ",
+              "ruby_html": "お<ruby>土産<rt>みやげ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "souvenir, local gift",
+              "example_ja": "お土産を買う",
+              "example_en": "buy souvenirs"
+            },
+            {
+              "id": "v10-013",
+              "term_ja": "名物",
+              "reading": "めいぶつ",
+              "ruby_html": "<ruby>名物<rt>めいぶつ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "famous local product, specialty",
+              "example_ja": "京都の名物",
+              "example_en": "Kyoto's local specialty"
+            },
+            {
+              "id": "v10-014",
+              "term_ja": "風景",
+              "reading": "ふうけい",
+              "ruby_html": "<ruby>風景<rt>ふうけい</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "scenery, landscape, view",
+              "example_ja": "美しい風景",
+              "example_en": "beautiful scenery"
+            },
+            {
+              "id": "v10-015",
+              "term_ja": "感動する",
+              "reading": "かんどうする",
+              "ruby_html": "<ruby>感動<rt>かんどう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be deeply moved, touched",
+              "example_ja": "景色に感動する",
+              "example_en": "be moved by the scenery"
+            },
+            {
+              "id": "v10-016",
+              "term_ja": "温泉",
+              "reading": "おんせん",
+              "ruby_html": "<ruby>温泉<rt>おんせん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "hot spring, onsen",
+              "example_ja": "温泉に入る",
+              "example_en": "bathe in a hot spring"
+            },
+            {
+              "id": "v10-017",
+              "term_ja": "のんびりする",
+              "reading": "のんびりする",
+              "ruby_html": "のんびりする",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to take it easy, to relax leisurely",
+              "example_ja": "温泉でのんびりする",
+              "example_en": "relax leisurely at a hot spring"
+            },
+            {
+              "id": "v10-018",
+              "term_ja": "リラックスする",
+              "reading": "リラックスする",
+              "ruby_html": "リラックスする",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to relax, to unwind",
+              "example_ja": "心身ともにリラックスする",
+              "example_en": "relax both body and mind"
+            },
+            {
+              "id": "v10-019",
+              "term_ja": "思い出",
+              "reading": "おもいで",
+              "ruby_html": "<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>で</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "memory, cherished recollection",
+              "example_ja": "楽しい思い出",
+              "example_en": "fun memories"
+            },
+            {
+              "id": "v10-020",
+              "term_ja": "記憶",
+              "reading": "きおく",
+              "ruby_html": "<ruby>記憶<rt>きおく</rt></ruby>",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "memory, recall, recollection",
+              "example_ja": "記憶に残る",
+              "example_en": "remain in one's memory"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "現地の観光（　）さんに名所を案内してもらった。",
+              "options": [
+                "ガイド",
+                "予算",
+                "休憩",
+                "キャンセル"
+              ],
+              "answer": "ガイド",
+              "explanation": "名所を案内してくれる人は「ガイド」（guide）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "旅行の（　）は1人5万円以内におさめたい。",
+              "options": [
+                "ガイド",
+                "予算",
+                "休憩",
+                "キャンセル"
+              ],
+              "answer": "予算",
+              "explanation": "費用計画は「予算」（budget）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "長時間運転したので、サービスエリアで（　）を取った。",
+              "options": [
+                "ガイド",
+                "予算",
+                "休憩",
+                "キャンセル"
+              ],
+              "answer": "休憩",
+              "explanation": "運転途中の休止は「休憩」（rest break）です。"
+            },
+            {
+              "id": 4,
+              "question_ja": "急な用事ができて、ホテルの予約を（　）した。",
+              "options": [
+                "ガイド",
+                "予算",
+                "休憩",
+                "キャンセル"
+              ],
+              "answer": "キャンセル",
+              "explanation": "予約を取り消すのは「キャンセル」です。"
+            }
+          ]
+        },
+        {
+          "section_id": "10-2",
+          "title_ja": "移動",
+          "title_en": "Transportation and Transit",
+          "page": 41,
+          "warming_up": {
+            "question_ja": "旅行へ行ったとき、どうやって行きましたか。すぐに着きましたか。",
+            "question_en": "When you traveled, how did you get there? Did you arrive quickly?"
+          },
+          "words": [
+            {
+              "id": "v10-021",
+              "term_ja": "集合する",
+              "reading": "しゅうごうする",
+              "ruby_html": "<ruby>集合<rt>しゅうごう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to gather, to assemble, to meet up",
+              "example_ja": "駅前に集合する",
+              "example_en": "gather in front of the station"
+            },
+            {
+              "id": "v10-022",
+              "term_ja": "移動する",
+              "reading": "いどうする",
+              "ruby_html": "<ruby>移動<rt>いどう</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to move, to travel, to transit",
+              "example_ja": "バスで移動する",
+              "example_en": "travel by bus"
+            },
+            {
+              "id": "v10-023",
+              "term_ja": "空港",
+              "reading": "くうこう",
+              "ruby_html": "<ruby>空港<rt>くうこう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "airport",
+              "example_ja": "空港に到着する",
+              "example_en": "arrive at the airport"
+            },
+            {
+              "id": "v10-024",
+              "term_ja": "チェックインする",
+              "reading": "チェックインする",
+              "ruby_html": "チェックインする",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to check in (flight/hotel)",
+              "example_ja": "搭乗手続き（チェックイン）をする",
+              "example_en": "check in for the flight"
+            },
+            {
+              "id": "v10-025",
+              "term_ja": "荷物",
+              "reading": "にもつ",
+              "ruby_html": "<ruby>荷物<rt>にもつ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "luggage, baggage",
+              "example_ja": "荷物を預ける",
+              "example_en": "check in one's luggage"
+            },
+            {
+              "id": "v10-026",
+              "term_ja": "検査する",
+              "reading": "けんさする",
+              "ruby_html": "<ruby>検査<rt>けんさ</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to inspect, to screen (security check)",
+              "example_ja": "手荷物検査を受ける",
+              "example_en": "undergo baggage inspection"
+            },
+            {
+              "id": "v10-027",
+              "term_ja": "乗り換える",
+              "reading": "のりかえる",
+              "ruby_html": "<ruby>乗<rt>の</rt></ruby>り<ruby>換<rt>か</rt></ruby>える",
+              "part_of_speech": "動詞",
+              "meaning_en": "to transfer, to change (trains/flights)",
+              "example_ja": "次の駅で乗り換える",
+              "example_en": "transfer at the next station"
+            },
+            {
+              "id": "v10-028",
+              "term_ja": "国内線",
+              "reading": "こくないせん",
+              "ruby_html": "<ruby>国内線<rt>こくないせん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "domestic airline flight / terminal",
+              "example_ja": "国内線に乗り換える",
+              "example_en": "transfer to a domestic flight"
+            },
+            {
+              "id": "v10-029",
+              "term_ja": "国際線",
+              "reading": "こくさいせん",
+              "ruby_html": "<ruby>国際線<rt>こくさいせん</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "international flight / terminal",
+              "example_ja": "国際線ターミナル",
+              "example_en": "international terminal"
+            },
+            {
+              "id": "v10-030",
+              "term_ja": "満員",
+              "reading": "まんいん",
+              "ruby_html": "<ruby>満員<rt>まんいん</rt></ruby>",
+              "part_of_speech": "名詞・の形容詞",
+              "meaning_en": "full house, packed, crowded to capacity",
+              "example_ja": "満員電車",
+              "example_en": "packed train"
+            },
+            {
+              "id": "v10-031",
+              "term_ja": "ドライブ",
+              "reading": "ドライブ",
+              "ruby_html": "ドライブ",
+              "part_of_speech": "名詞・する動詞",
+              "meaning_en": "drive, road trip",
+              "example_ja": "海辺をドライブする",
+              "example_en": "take a drive along the coast"
+            },
+            {
+              "id": "v10-032",
+              "term_ja": "道路",
+              "reading": "どうろ",
+              "ruby_html": "<ruby>道路<rt>どうろ</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "road, highway, street",
+              "example_ja": "混んでいる道路",
+              "example_en": "congested road"
+            },
+            {
+              "id": "v10-033",
+              "term_ja": "混雑する",
+              "reading": "こんざつする",
+              "ruby_html": "<ruby>混雑<rt>こんざつ</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be crowded, congested",
+              "example_ja": "駅が混雑する",
+              "example_en": "the station is crowded"
+            },
+            {
+              "id": "v10-034",
+              "term_ja": "渋滞する",
+              "reading": "じゅうたいする",
+              "ruby_html": "<ruby>渋滞<rt>じゅうたい</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to be tied up (traffic jam)",
+              "example_ja": "高速道路が渋滞する",
+              "example_en": "the highway is congested"
+            },
+            {
+              "id": "v10-035",
+              "term_ja": "すく",
+              "reading": "すく",
+              "ruby_html": "すく",
+              "part_of_speech": "動詞",
+              "meaning_en": "to become uncrowded, to empty out",
+              "example_ja": "電車がすく",
+              "example_en": "the train clears out / is uncrowded"
+            },
+            {
+              "id": "v10-036",
+              "term_ja": "スピード",
+              "reading": "スピード",
+              "ruby_html": "スピード",
+              "part_of_speech": "名詞",
+              "meaning_en": "speed",
+              "example_ja": "スピードを出す",
+              "example_en": "speed up"
+            },
+            {
+              "id": "v10-037",
+              "term_ja": "速度",
+              "reading": "そくど",
+              "ruby_html": "<ruby>速度<rt>そくど</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "speed, velocity",
+              "example_ja": "制限速度",
+              "example_en": "speed limit"
+            },
+            {
+              "id": "v10-038",
+              "term_ja": "のろのろ",
+              "reading": "のろのろ",
+              "ruby_html": "のろのろ",
+              "part_of_speech": "副詞・する動詞",
+              "meaning_en": "sluggishly, slowly, at a snail's pace",
+              "example_ja": "のろのろ走る",
+              "example_en": "crawl along slowly"
+            },
+            {
+              "id": "v10-039",
+              "term_ja": "信号",
+              "reading": "しんごう",
+              "ruby_html": "<ruby>信号<rt>しんごう</rt></ruby>",
+              "part_of_speech": "名詞",
+              "meaning_en": "traffic light, signal",
+              "example_ja": "赤信号で止まる",
+              "example_en": "stop at a red light"
+            },
+            {
+              "id": "v10-040",
+              "term_ja": "酔う",
+              "reading": "よう",
+              "ruby_html": "<ruby>酔<rt>よ</rt></ruby>う",
+              "part_of_speech": "動詞",
+              "meaning_en": "to get carsick / seasick / drunk",
+              "example_ja": "車に酔う",
+              "example_en": "get carsick"
+            },
+            {
+              "id": "v10-041",
+              "term_ja": "くたびれる",
+              "reading": "くたびれる",
+              "ruby_html": "くたびれる",
+              "part_of_speech": "動詞",
+              "meaning_en": "to get tired, exhausted, worn out",
+              "example_ja": "歩き疲れてくたびれる",
+              "example_en": "get completely exhausted from walking"
+            },
+            {
+              "id": "v10-042",
+              "term_ja": "無事に",
+              "reading": "ぶじに",
+              "ruby_html": "<ruby>無事<rt>ぶじ</rt></ruby>に",
+              "part_of_speech": "副詞",
+              "meaning_en": "safely, without accident",
+              "example_ja": "無事に帰宅する",
+              "example_en": "arrive home safely"
+            },
+            {
+              "id": "v10-043",
+              "term_ja": "到着する",
+              "reading": "とうちゃくする",
+              "ruby_html": "<ruby>到着<rt>とうちゃく</rt></ruby>する",
+              "part_of_speech": "する動詞",
+              "meaning_en": "to arrive",
+              "example_ja": "目的地に到着する",
+              "example_en": "arrive at the destination"
+            },
+            {
+              "id": "v10-044",
+              "term_ja": "チケット",
+              "reading": "チケット",
+              "ruby_html": "チケット",
+              "part_of_speech": "名詞",
+              "meaning_en": "ticket",
+              "example_ja": "航空券（チケット）",
+              "example_en": "airline ticket"
+            },
+            {
+              "id": "v10-045",
+              "term_ja": "パスポート",
+              "reading": "パスポート",
+              "ruby_html": "パスポート",
+              "part_of_speech": "名詞",
+              "meaning_en": "passport",
+              "example_ja": "パスポートを見せる",
+              "example_en": "show one's passport"
+            },
+            {
+              "id": "v10-046",
+              "term_ja": "シートベルト",
+              "reading": "シートベルト",
+              "ruby_html": "シートベルト",
+              "part_of_speech": "名詞",
+              "meaning_en": "seatbelt",
+              "example_ja": "シートベルトを締める",
+              "example_en": "fasten one's seatbelt"
+            },
+            {
+              "id": "v10-047",
+              "term_ja": "締める",
+              "reading": "しめる",
+              "ruby_html": "<ruby>締<rt>し</rt></ruby>める",
+              "part_of_speech": "動詞",
+              "meaning_en": "to fasten, to tighten",
+              "example_ja": "ベルトを締める",
+              "example_en": "fasten a belt"
+            }
+          ],
+          "yattemiyou": [
+            {
+              "id": 1,
+              "question_ja": "通勤ラッシュで電車は（　）だった。",
+              "options": [
+                "満員",
+                "無事",
+                "国内線"
+              ],
+              "answer": "満員",
+              "explanation": "電車が客で一杯な状態は「満員」（full capacity）です。"
+            },
+            {
+              "id": 2,
+              "question_ja": "事故もなく、（　）に家に帰ることができた。",
+              "options": [
+                "満員",
+                "無事",
+                "国内線"
+              ],
+              "answer": "無事",
+              "explanation": "何事もなく平穏な様子は「無事に」（safely）です。"
+            },
+            {
+              "id": 3,
+              "question_ja": "羽田空港から福岡空港への（　）を利用した。",
+              "options": [
+                "満員",
+                "無事",
+                "国内線"
+              ],
+              "answer": "国内線",
+              "explanation": "日本国内を結ぶ航空便は「国内線」（domestic flight）です。"
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "exercise_id": "10-ex1",
+          "title_ja": "どちらが正しいですか。正しいほうを選びましょう。",
+          "type": "binary_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "週末は温泉に入って、［a. のろのろ / b. のんびり］過ごしたい。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "ゆったりとくつろぐ様子は「のんびり」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "急いでいたので、車のスピードを［a. 上げた / b. 締めた］。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "速度を速くすることは「スピードを上げる」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "連休中のテーマパークは大変［a. 渋滞 / b. 混雑］していた。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "b",
+              "explanation": "場所や施設が人混みで混み合うのは「混雑」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "来週から1週間の［a. 休暇 / b. 休憩］をもらって旅行に行く。",
+              "options": [
+                "a",
+                "b"
+              ],
+              "answer": "a",
+              "explanation": "まとまった休業期間は「休暇」（vacation）です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "10-ex2",
+          "title_ja": "（　）に入れるのに最もよいものを、枠から選んで書きましょう。",
+          "type": "box_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "飛行機に乗る前に、厳しい手荷物（　）があった。",
+              "options": [
+                "検査",
+                "ドライブ",
+                "集合",
+                "くたびれた",
+                "風景",
+                "到着"
+              ],
+              "answer": "検査",
+              "explanation": "セキュリティチェックは手荷物「検査」です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "天気がいいので、海岸沿いを（　）した。",
+              "options": [
+                "検査",
+                "ドライブ",
+                "集合",
+                "くたびれた",
+                "風景",
+                "到着"
+              ],
+              "answer": "ドライブ",
+              "explanation": "車を走らせて楽しむのは「ドライブ」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "明日の朝8時にロビーに（　）してください。",
+              "options": [
+                "検査",
+                "ドライブ",
+                "集合",
+                "くたびれた",
+                "風景",
+                "到着"
+              ],
+              "answer": "集合",
+              "explanation": "一か所に集まる指示は「集合してください」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "一日中歩き回って、すっかり（　）。",
+              "options": [
+                "検査",
+                "ドライブ",
+                "集合",
+                "くたびれた",
+                "風景",
+                "到着"
+              ],
+              "answer": "くたびれた",
+              "explanation": "疲れ果てた様子は「くたびれた」です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "山頂からの素晴らしい（　）に見とれた。",
+              "options": [
+                "検査",
+                "ドライブ",
+                "集合",
+                "くたびれた",
+                "風景",
+                "到着"
+              ],
+              "answer": "風景",
+              "explanation": "眺めや景色は「風景」です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "定刻通りに成田空港に（　）した。",
+              "options": [
+                "検査",
+                "ドライブ",
+                "集合",
+                "くたびれた",
+                "風景",
+                "到着"
+              ],
+              "answer": "到着",
+              "explanation": "目的地に着くことは「到着した」です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "10-ex3",
+          "title_ja": "意味がよく合う組み合わせを選びましょう。",
+          "type": "matching_collocations",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 道に［　］② 乗り物に［　］③ ツアーに［　］④ 日本に［　］",
+              "options": [
+                "a. 酔う",
+                "b. 申し込む",
+                "c. 到着する",
+                "d. 迷う"
+              ],
+              "answer": "① d, ② a, ③ b, ④ c",
+              "explanation": "① 道に迷う, ② 乗り物に酔う, ③ ツアーに申し込む, ④ 日本に到着する"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 体と心が［　］② 道路が［　］③ スピードが［　］④ 説明が［　］",
+              "options": [
+                "a. 渋滞する",
+                "b. リラックスする",
+                "c. 詳しい",
+                "d. 出る"
+              ],
+              "answer": "① b, ② a, ③ d, ④ c",
+              "explanation": "① 心身がリラックスする, ② 道路が渋滞する, ③ スピードが出る, ④ 説明が詳しい"
+            }
+          ]
+        },
+        {
+          "exercise_id": "10-ex4",
+          "title_ja": "（　）に入れるのに最もよい言葉を、下のa・b・cから選んで記号を書きましょう。",
+          "type": "categorized_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "(1) ① 露天［　］に入る。② 旅先の名産品や［　］を食べる。③ 旅の楽しい［　］ができる。",
+              "options": [
+                "a. 思い出",
+                "b. 温泉",
+                "c. 名物"
+              ],
+              "answer": "① b, ② c, ③ a",
+              "explanation": "① 露天温泉, ② 名物, ③ 思い出"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "(2) ① 幼い頃の［　］がよみがえる。② 次の観光地へ［　］する。③ 大自然の迫力に［　］する。",
+              "options": [
+                "a. 移動",
+                "b. 感動",
+                "c. 記憶"
+              ],
+              "answer": "① c, ② a, ③ b",
+              "explanation": "① 幼い頃の記憶, ② 次の観光地へ移動する, ③ 大自然に感動する"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "(3) ① ホテルのフロントで［　］する。② ［　］が青に変わって車が発進した。③ 空港のカウンターで外貨を［　］する。",
+              "options": [
+                "a. 両替",
+                "b. 信号",
+                "c. チェックイン"
+              ],
+              "answer": "① c, ② b, ③ a",
+              "explanation": "① チェックイン, ② 信号, ③ 両替"
+            }
+          ]
+        },
+        {
+          "exercise_id": "10-ex5",
+          "title_ja": "次の文章を読んで、（①）〜（⑫）に入る言葉を下の枠から選んで適切な形にして書きましょう。",
+          "type": "passage_fill_in",
+          "items": [
+            {
+              "item_id": 1,
+              "context_ja": "飛行機は予定通り（①）飛び立ち、",
+              "answer": "無事に",
+              "explanation": "無事に飛び立ち"
+            },
+            {
+              "item_id": 2,
+              "context_ja": "目的地に（②）した。",
+              "answer": "到着",
+              "explanation": "到着した"
+            },
+            {
+              "item_id": 3,
+              "context_ja": "長旅で少し（③）たが、",
+              "answer": "くたびれ",
+              "explanation": "くたびれたが"
+            },
+            {
+              "item_id": 4,
+              "context_ja": "レンタカーを借りて次の場所へ（④）した。",
+              "answer": "移動",
+              "explanation": "移動した"
+            },
+            {
+              "item_id": 5,
+              "context_ja": "しかし（⑤）が混んでいて、",
+              "answer": "道路",
+              "explanation": "道路が混む"
+            },
+            {
+              "item_id": 6,
+              "context_ja": "ひどい（⑥）に巻き込まれた。",
+              "answer": "渋滞",
+              "explanation": "渋滞に巻き込まれる"
+            },
+            {
+              "item_id": 7,
+              "context_ja": "車は（⑦）進むだけで、",
+              "answer": "のろのろ",
+              "explanation": "のろのろ進む"
+            },
+            {
+              "item_id": 8,
+              "context_ja": "車に（⑧）そうになった。",
+              "answer": "酔って",
+              "explanation": "酔いそうになった（酔って）"
+            },
+            {
+              "item_id": 9,
+              "context_ja": "途中のカフェで（⑨）を取り、",
+              "answer": "休憩",
+              "explanation": "休憩を取る"
+            },
+            {
+              "item_id": 10,
+              "context_ja": "午後は名所を（⑩）した。",
+              "answer": "観光",
+              "explanation": "観光した"
+            },
+            {
+              "item_id": 11,
+              "context_ja": "とても良い（⑪）になり、",
+              "answer": "思い出",
+              "explanation": "良い思い出"
+            },
+            {
+              "item_id": 12,
+              "context_ja": "家族にたくさんの（⑫）を買って帰った。",
+              "answer": "お土産",
+              "explanation": "お土産を買う"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": "review_02",
+        "type": "review_test",
+        "topic_ja": "実力を試そう（6課〜10課）",
+        "topic_en": "Review Test 2 (Lessons 6-10)",
+        "pages": [
+          44,
+          45
+        ]
+      },
+      "sections": [],
+      "exercises": [
+        {
+          "exercise_id": "review_02-part1",
+          "title_ja": "問題Ⅰ 次の文の（　）に入れるのに最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 1: Choose the best word (1, 2, 3, or 4) to fill in the parentheses.",
+          "type": "multiple_choice",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "久しぶりに国に帰って、（　）することができた。",
+              "options": [
+                "1 あきらめ",
+                "2 くたびれ",
+                "3 のんびり",
+                "4 リラックス"
+              ],
+              "answer": "3",
+              "explanation": "「のんびりする」（take it easy, relax leisurely）が最も自然です。リラックスは通常「リラックスすることができた」のように名詞形＋するの形で使われますが、この文脈では「のんびりする」がぴったりです。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "このマンガ家はとても（　）がある。",
+              "options": [
+                "1 感情",
+                "2 才能",
+                "3 人気",
+                "4 記録"
+              ],
+              "answer": "3",
+              "explanation": "世間や読者から支持されていることを表すのは「人気がある」です。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "ここで、10分（　）にしましょう。",
+              "options": [
+                "1 休暇",
+                "2 休憩",
+                "3 禁煙",
+                "4 予防"
+              ],
+              "answer": "2",
+              "explanation": "作業や授業の途中で取る短い休みは「休憩」です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "試合で一番になれなくて、（　）。",
+              "options": [
+                "1 くやしい",
+                "2 苦しい",
+                "3 みっともない",
+                "4 かっこ悪い"
+              ],
+              "answer": "1",
+              "explanation": "勝てずに無念で心残りな気持ちを表すのは「くやしい」（frustrating, regretful）です。"
+            },
+            {
+              "item_id": 5,
+              "question_ja": "二人はトップを（　）、走っていた。",
+              "options": [
+                "1 あたためて",
+                "2 あきらめて",
+                "3 かさねて",
+                "4 あらそって"
+              ],
+              "answer": "4",
+              "explanation": "先頭の座を競い合うのは「トップを争って」（competing for the top spot）です。"
+            },
+            {
+              "item_id": 6,
+              "question_ja": "どんなことでも最後まで（　）続けることが大切だ。",
+              "options": [
+                "1 あきらめないで",
+                "2 くたびれないで",
+                "3 こまらないで",
+                "4 たすからないで"
+              ],
+              "answer": "1",
+              "explanation": "途中で投げ出さずに継続することを表すのは「あきらめないで」（without giving up）です。"
+            },
+            {
+              "item_id": 7,
+              "question_ja": "お正月だったので、空港はとても（　）していた。",
+              "options": [
+                "1 混雑",
+                "2 集合",
+                "3 渋滞",
+                "4 満員"
+              ],
+              "answer": "1",
+              "explanation": "空港や駅などの場所が人混みで混雑している様子は「混雑していた」です。"
+            },
+            {
+              "item_id": 8,
+              "question_ja": "山本さんは、（　）の音楽家だ。",
+              "options": [
+                "1 一流",
+                "2 上品",
+                "3 単純",
+                "4 清潔"
+              ],
+              "answer": "1",
+              "explanation": "最高水準の実力を持つプロを修飾するのは「一流の〜」（top-notch, first-rate）です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_02-part2",
+          "title_ja": "問題Ⅱ 次の下線部の言葉に意味が最も近いものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 2: Choose the word (1, 2, 3, or 4) whose meaning is closest to the underlined word.",
+          "type": "synonym_selection",
+          "items": [
+            {
+              "item_id": 1,
+              "question_ja": "この服、とても<u>気に入っている</u>んです。",
+              "options": [
+                "1 好きな",
+                "2 似合う",
+                "3 高い",
+                "4 新しい"
+              ],
+              "answer": "1",
+              "explanation": "「気に入っている」は「好きである・好んでいる」という意味です。"
+            },
+            {
+              "item_id": 2,
+              "question_ja": "空港で<u>両替</u>した。",
+              "options": [
+                "1 お金を替えて",
+                "2 荷物を預けて",
+                "3 チケットを買って",
+                "4 席を予約して"
+              ],
+              "answer": "1",
+              "explanation": "「両替」はある通貨を別の通貨に替える（お金を替える）ことです。"
+            },
+            {
+              "item_id": 3,
+              "question_ja": "彼の話は、<u>まったく</u>理解できなかった。",
+              "options": [
+                "1 少し",
+                "2 だいたい",
+                "3 全然",
+                "4 ほぼ"
+              ],
+              "answer": "3",
+              "explanation": "否定の文脈で用いられる「まったく」は「全然」（not at all）と同義です。"
+            },
+            {
+              "item_id": 4,
+              "question_ja": "祖父の病気が<u>回復</u>した。",
+              "options": [
+                "1 悪くなる",
+                "2 変わる",
+                "3 始まる",
+                "4 なおる"
+              ],
+              "answer": "4",
+              "explanation": "病気が元通り良くなることは「なおる」（heal, recover）です。"
+            }
+          ]
+        },
+        {
+          "exercise_id": "review_02-part3",
+          "title_ja": "問題Ⅲ 次の言葉の使い方として最もよいものを、1・2・3・4から一つ選びなさい。",
+          "title_en": "Problem 3: Choose the sentence (1, 2, 3, or 4) that uses the specified word in the most natural and correct way.",
+          "type": "usage_selection",
+          "items": [
+            {
+              "item_id": 1,
+              "target": "防ぐ",
+              "question_ja": "防ぐ",
+              "options": [
+                "1 階段を急いで上ったので、息を防いだ。",
+                "2 寒さを防ぐために、エアコンの温度を下げた。",
+                "3 交通ルールを防ぐことは大切だ。",
+                "4 この薬は、目の病気を防ぐのに使われる。"
+              ],
+              "answer": "4",
+              "explanation": "「病気を防ぐ」（prevent disease）という使い方が正しいです。"
+            },
+            {
+              "item_id": 2,
+              "target": "内緒",
+              "question_ja": "内緒",
+              "options": [
+                "1 山田さんは、恋人と映画に行くことを内緒にしていた。",
+                "2 この部屋は内緒だから、入ってはいけない。",
+                "3 昨日は内緒な仕事がたくさんあった。",
+                "4 彼女は内緒な性格で、あまり話さない。"
+              ],
+              "answer": "1",
+              "explanation": "秘密にして隠しておくことは「〜を内緒にしていた」です。"
+            },
+            {
+              "item_id": 3,
+              "target": "シンプル",
+              "question_ja": "シンプル",
+              "options": [
+                "1 彼の部屋はシンプルで、ゴミがたくさんある。",
+                "2 この小説のストーリーはとてもシンプルで、難しくて理解できない。",
+                "3 彼が作る料理は、時間がかからないシンプルなものばかりだ。",
+                "4 彼女はいつもシンプルで派手な服を着ている。"
+              ],
+              "answer": "3",
+              "explanation": "無駄なものがなく簡素・手軽な料理を指す「シンプルなもの」が自然です。"
+            },
+            {
+              "item_id": 4,
+              "target": "みっともない",
+              "question_ja": "みっともない",
+              "options": [
+                "1 彼の部屋はいつもきれいに片づいていて、みっともない。",
+                "2 一生懸命練習したのに、みっともない結果になった。",
+                "3 試合で、子供に負けてしまい、みっともなかった。",
+                "4 この絵は有名な画家が描いたもので、みっともない。"
+              ],
+              "answer": "3",
+              "explanation": "大人が子供に負けて格好がつかず恥ずかしい・見苦しい様子を表す「みっともなかった」が最も自然です。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+/* =======================================================
+   NIHONGO INTERMEDIATE — class-curriculum.css
+   High-contrast Obsidian styles for Class Track Steppers
+   Optimized for Poco M7 Thumb Zone & 48px Touch Targets
+   ======================================================= */
+
+/* Today Tab Class Sync Widget */
+.today-class-card {
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.12));
+  border-radius: 16px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 1.25rem;
+}
+
+.tcc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.tcc-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--accent, #7c6cfa);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tcc-view-btn {
+  background: none;
+  border: none;
+  color: var(--cyan, #38bdf8);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0;
+}
+
+.tcc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.tcc-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+
+.tcc-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted, #7a8099);
+}
+
+.tcc-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg3, #191d27);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 8px;
+  width: 100%;
+  padding: 0.15rem;
+}
+
+.tcc-stepper button {
+  background: var(--surface, rgba(255, 255, 255, 0.05));
+  border: none;
+  color: var(--text, #fff);
+  width: 26px;
+  height: 28px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tcc-val {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--cyan, #38bdf8);
+  font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 480px) {
+  .tcc-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+  }
+}
+
+.class-track-card {
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.12));
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.class-track-header {
+  margin-bottom: 1.25rem;
+}
+
+.class-track-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(124, 108, 250, 0.15);
+  border: 1px solid var(--accent, #7c6cfa);
+  color: var(--accent, #7c6cfa);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.class-track-sub {
+  color: var(--text-muted, #7a8099);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Steppers Grid */
+.class-steppers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.class-pillar-box {
+  background: var(--surface, rgba(255, 255, 255, 0.04));
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: all 0.2s ease;
+}
+
+.class-pillar-box:hover {
+  border-color: var(--accent-light, rgba(124, 108, 250, 0.3));
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cpb-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text, #f0f2f8);
+}
+
+.cpb-icon {
+  color: var(--accent, #7c6cfa);
+}
+
+/* Stepper Controls */
+.cpb-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg3, #191d27);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+  padding: 0.25rem 0.4rem;
+  min-height: 48px;
+}
+
+.cpb-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  background: var(--surface, rgba(255, 255, 255, 0.05));
+  color: var(--text, #f0f2f8);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  transition: all 0.15s ease;
+}
+
+.cpb-btn:active {
+  transform: scale(0.92);
+  background: var(--accent-light, rgba(124, 108, 250, 0.2));
+}
+
+.cpb-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--cyan, #38bdf8);
+}
+
+.cpb-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted, #7a8099);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cpb-span-ctrl {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  border-radius: 10px;
+  padding: 0.35rem 0.6rem;
+}
+
+.cpb-span-btn {
+  background: var(--surface, rgba(255, 255, 255, 0.08));
+  border: 1px solid var(--border);
+  color: var(--cyan, #38bdf8);
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cpb-span-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.cpb-span-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.cpb-actions .btn {
+  width: 100%;
+  min-height: 42px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* Footer & Launch Button */
+.class-track-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.class-summary-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.class-summary-pill strong {
+  color: var(--green, #22d3a4);
+}
+
+.class-launch-btn {
+  min-height: 48px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 0.92rem;
+  flex: 1 1 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .class-steppers-grid {
+    grid-template-columns: 1fr;
+  }
+}

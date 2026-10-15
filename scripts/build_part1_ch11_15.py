@@ -1,0 +1,3483 @@
+# -*- coding: utf-8 -*-
+"""
+Build Chapter 11-15 and Review Test 3 vocabulary data.
+"""
+import json
+import os
+
+data_dir = r"c:\Users\jaiad\Personal_Work_Related\Japanese Learning\nihongo-intermediate\data\vocabulary"
+os.makedirs(data_dir, exist_ok=True)
+out_file = os.path.join(data_dir, "part1_topics_ch11_15.json")
+
+# -------------------------------------------------------------
+# CHAPTER 11
+# -------------------------------------------------------------
+ch11 = {
+    "metadata": {
+        "chapter": 11,
+        "part": 1,
+        "topic_ja": "教育1: 学校生活 (小中高)",
+        "topic_en": "Education 1: School Life (Elementary, Junior & Senior High School)",
+        "pages": [46, 47, 48, 49]
+    },
+    "sections": [
+        {
+            "section_id": 1,
+            "title_ja": "学校生活",
+            "title_en": "School Life",
+            "warming_up": {
+                "question_ja": "小学生、中学生、高校生のとき、学校で何をするのが一番好きでしたか。"
+            },
+            "words": [
+                {
+                    "term_ja": "学年",
+                    "reading": "がくねん",
+                    "ruby_html": "<ruby>学年<rt>がくねん</rt></ruby>",
+                    "meaning_en": "School year, grade",
+                    "meaning_zh": "学年",
+                    "example_ja": "学年が上がる",
+                    "example_ruby": "<ruby>学年<rt>がくねん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる"
+                },
+                {
+                    "term_ja": "学期",
+                    "reading": "がっき",
+                    "ruby_html": "<ruby>学期<rt>がっき</rt></ruby>",
+                    "meaning_en": "School term, semester",
+                    "meaning_zh": "学期",
+                    "example_ja": "学期が始まる",
+                    "example_ruby": "<ruby>学期<rt>がっき</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まる"
+                },
+                {
+                    "term_ja": "通学する",
+                    "reading": "つうがくする",
+                    "ruby_html": "<ruby>通学<rt>つうがく</rt></ruby>する",
+                    "meaning_en": "Attending school; commute to school",
+                    "meaning_zh": "上学",
+                    "example_ja": "電車で通学する",
+                    "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通学<rt>つうがく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "遅刻する",
+                    "reading": "ちこくする",
+                    "ruby_html": "<ruby>遅刻<rt>ちこく</rt></ruby>する",
+                    "meaning_en": "Be late, tardy",
+                    "meaning_zh": "迟到",
+                    "example_ja": "学校に遅刻する",
+                    "example_ruby": "<ruby>学校<rt>がっこう</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "欠席する",
+                    "reading": "けっせきする",
+                    "ruby_html": "<ruby>欠席<rt>けっせき</rt></ruby>する",
+                    "meaning_en": "Absence; be absent",
+                    "meaning_zh": "缺席",
+                    "example_ja": "授業を欠席する",
+                    "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>を<ruby>欠席<rt>けっせき</rt></ruby>する"
+                },
+                {
+                    "term_ja": "配る",
+                    "reading": "くばる",
+                    "ruby_html": "<ruby>配<rt>くば</rt></ruby>る",
+                    "meaning_en": "Distribute, hand out",
+                    "meaning_zh": "分发",
+                    "example_ja": "プリントを配る",
+                    "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る"
+                },
+                {
+                    "term_ja": "プリント",
+                    "reading": "プリント",
+                    "ruby_html": "プリント",
+                    "meaning_en": "Handout, worksheet",
+                    "meaning_zh": "印刷品，讲义",
+                    "example_ja": "プリントを配る",
+                    "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る"
+                },
+                {
+                    "term_ja": "得意",
+                    "reading": "とくい",
+                    "ruby_html": "<ruby>得意<rt>とくい</rt></ruby>",
+                    "meaning_en": "Good at, strong in",
+                    "meaning_zh": "拿手，擅长",
+                    "example_ja": "英語が得意だ",
+                    "example_ruby": "<ruby>英語<rt>えいご</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>だ"
+                },
+                {
+                    "term_ja": "苦手",
+                    "reading": "にがて",
+                    "ruby_html": "<ruby>苦手<rt>にがて</rt></ruby>",
+                    "meaning_en": "Bad at, weak in",
+                    "meaning_zh": "不擅长",
+                    "example_ja": "数学が苦手だ",
+                    "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>が<ruby>苦手<rt>にがて</rt></ruby>だ"
+                },
+                {
+                    "term_ja": "おしゃべり",
+                    "reading": "おしゃべり",
+                    "ruby_html": "おしゃべり",
+                    "meaning_en": "Chatting, talkative",
+                    "meaning_zh": "闲聊",
+                    "example_ja": "授業中におしゃべりする",
+                    "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>におしゃべりする"
+                },
+                {
+                    "term_ja": "居眠り",
+                    "reading": "いねむり",
+                    "ruby_html": "<ruby>居眠<rt>いねむ</rt></ruby>り",
+                    "meaning_en": "Doze off, nodding off",
+                    "meaning_zh": "打瞌睡",
+                    "example_ja": "授業中に居眠りする",
+                    "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>に<ruby>居眠<rt>いねむ</rt></ruby>りする"
+                },
+                {
+                    "term_ja": "給食",
+                    "reading": "きゅうしょく",
+                    "ruby_html": "<ruby>給食<rt>きゅうしょく</rt></ruby>",
+                    "meaning_en": "School lunch",
+                    "meaning_zh": "给食，供给膳食",
+                    "example_ja": "給食を食べる",
+                    "example_ruby": "<ruby>給食<rt>きゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "お弁当",
+                    "reading": "おべんとう",
+                    "ruby_html": "お<ruby>弁当<rt>べんとう</rt></ruby>",
+                    "meaning_en": "Box lunch, bento",
+                    "meaning_zh": "便当",
+                    "example_ja": "お弁当を食べる",
+                    "example_ruby": "お<ruby>弁当<rt>べんとう</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "クラブ",
+                    "reading": "クラブ",
+                    "ruby_html": "クラブ",
+                    "meaning_en": "School club, activity club",
+                    "meaning_zh": "俱乐部",
+                    "example_ja": "クラブに入る",
+                    "example_ruby": "クラブに<ruby>入<rt>はい</rt></ruby>る"
+                },
+                {
+                    "term_ja": "部",
+                    "reading": "ぶ",
+                    "ruby_html": "<ruby>部<rt>ぶ</rt></ruby>",
+                    "meaning_en": "Club, school team (suffix)",
+                    "meaning_zh": "部",
+                    "example_ja": "サッカー部に入る",
+                    "example_ruby": "サッカー<ruby>部<rt>ぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+                },
+                {
+                    "term_ja": "大会",
+                    "reading": "たいかい",
+                    "ruby_html": "<ruby>大会<rt>たいかい</rt></ruby>",
+                    "meaning_en": "Tournament, mass meeting",
+                    "meaning_zh": "大赛，大会",
+                    "example_ja": "クラブの大会に出る",
+                    "example_ruby": "クラブの<ruby>大会<rt>たいかい</rt></ruby>に<ruby>出<rt>で</rt></ruby>る"
+                },
+                {
+                    "term_ja": "遠足",
+                    "reading": "えんそく",
+                    "ruby_html": "<ruby>遠足<rt>えんそく</rt></ruby>",
+                    "meaning_en": "School excursion, outing",
+                    "meaning_zh": "远足，郊游",
+                    "example_ja": "遠足に行く",
+                    "example_ruby": "<ruby>遠足<rt>えんそく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+                },
+                {
+                    "term_ja": "修学旅行",
+                    "reading": "しゅうがくりょこう",
+                    "ruby_html": "<ruby>修学旅行<rt>しゅうがくりょこう</rt></ruby>",
+                    "meaning_en": "School trip, educational trip",
+                    "meaning_zh": "修学旅行",
+                    "example_ja": "修学旅行に行く",
+                    "example_ruby": "<ruby>修学旅行<rt>しゅうがくりょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+                },
+                {
+                    "term_ja": "運動会",
+                    "reading": "うんどうかい",
+                    "ruby_html": "<ruby>運動会<rt>うんどうかい</rt></ruby>",
+                    "meaning_en": "Sports festival, athletic meet",
+                    "meaning_zh": "运动会",
+                    "example_ja": "運動会に参加する",
+                    "example_ruby": "<ruby>運動会<rt>うんどうかい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+                },
+                {
+                    "term_ja": "体育祭",
+                    "reading": "たいいくさい",
+                    "ruby_html": "<ruby>体育祭<rt>たいいくさい</rt></ruby>",
+                    "meaning_en": "Sports festival (junior/high school)",
+                    "meaning_zh": "体育节",
+                    "example_ja": "体育祭に参加する",
+                    "example_ruby": "<ruby>体育祭<rt>たいいくさい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+                },
+                {
+                    "term_ja": "文化祭",
+                    "reading": "ぶんかさい",
+                    "ruby_html": "<ruby>文化祭<rt>ぶんかさい</rt></ruby>",
+                    "meaning_en": "School cultural festival",
+                    "meaning_zh": "文化节",
+                    "example_ja": "文化祭で発表する",
+                    "example_ruby": "<ruby>文化祭<rt>ぶんかさい</rt></ruby>で<ruby>発表<rt>はっぴょう</rt></ruby>する"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "きのう、徹夜をしたので、授業中に（　居眠り　）をしてしまった。",
+                    "answer": "居眠り",
+                    "explanation": "授業中に眠ってしまうことは「居眠り」と言います。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "日本では、4月に新しい（　学期　）が始まります。",
+                    "answer": "学期",
+                    "explanation": "4月に新学期が始まります。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "先生が（　プリント　）を配ったので、みんなで読んだ。",
+                    "answer": "プリント",
+                    "explanation": "授業で配られる紙や教材は「プリント」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "中学校に入ったら、サッカー（　部　）に入りたいです。",
+                    "answer": "部",
+                    "explanation": "学校の課外活動グループは「サッカー部」のように「部」をつけます。"
+                }
+            ]
+        },
+        {
+            "section_id": 2,
+            "title_ja": "勉強",
+            "title_en": "Studying",
+            "warming_up": {
+                "question_ja": "どんな科目を勉強するのが好きでしたか。どうしてですか。"
+            },
+            "words": [
+                {
+                    "term_ja": "学ぶ",
+                    "reading": "まなぶ",
+                    "ruby_html": "<ruby>学<rt>まな</rt></ruby>ぶ",
+                    "meaning_en": "Learn, study",
+                    "meaning_zh": "学，学习",
+                    "example_ja": "日本語を学ぶ",
+                    "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶ"
+                },
+                {
+                    "term_ja": "学習する",
+                    "reading": "がくしゅうする",
+                    "ruby_html": "<ruby>学習<rt>がくしゅう</rt></ruby>する",
+                    "meaning_en": "Study, learn",
+                    "meaning_zh": "学习",
+                    "example_ja": "言葉を学習する",
+                    "example_ruby": "<ruby>言葉<rt>ことば</rt></ruby>を<ruby>学習<rt>がくしゅう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "基礎",
+                    "reading": "きそ",
+                    "ruby_html": "<ruby>基礎<rt>きそ</rt></ruby>",
+                    "meaning_en": "Basics, foundation",
+                    "meaning_zh": "基础",
+                    "example_ja": "勉強の基礎",
+                    "example_ruby": "<ruby>勉強<rt>べんきょう</rt></ruby>の<ruby>基礎<rt>きそ</rt></ruby>"
+                },
+                {
+                    "term_ja": "習う",
+                    "reading": "ならう",
+                    "ruby_html": "<ruby>習<rt>なら</rt></ruby>う",
+                    "meaning_en": "Learn, take lessons",
+                    "meaning_zh": "学，练习",
+                    "example_ja": "先生に習う",
+                    "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>習<rt>なら</rt></ruby>う"
+                },
+                {
+                    "term_ja": "教わる",
+                    "reading": "おそわる",
+                    "ruby_html": "<ruby>教<rt>おそ</rt></ruby>わる",
+                    "meaning_en": "Be taught, learn from",
+                    "meaning_zh": "受教，学习",
+                    "example_ja": "先生に教わる",
+                    "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>教<rt>おそ</rt></ruby>わる"
+                },
+                {
+                    "term_ja": "知識",
+                    "reading": "ちしき",
+                    "ruby_html": "<ruby>知識<rt>ちしき</rt></ruby>",
+                    "meaning_en": "Knowledge",
+                    "meaning_zh": "知识",
+                    "example_ja": "知識を深める",
+                    "example_ruby": "<ruby>知識<rt>ちしき</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>める"
+                },
+                {
+                    "term_ja": "疑問",
+                    "reading": "ぎもん",
+                    "ruby_html": "<ruby>疑問<rt>ぎもん</rt></ruby>",
+                    "meaning_en": "Question, doubt",
+                    "meaning_zh": "疑问",
+                    "example_ja": "疑問を持つ",
+                    "example_ruby": "<ruby>疑問<rt>ぎもん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ"
+                },
+                {
+                    "term_ja": "実力",
+                    "reading": "じつりょく",
+                    "ruby_html": "<ruby>実力<rt>じつりょく</rt></ruby>",
+                    "meaning_en": "Ability, real capability",
+                    "meaning_zh": "实力",
+                    "example_ja": "実力を試す",
+                    "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す"
+                },
+                {
+                    "term_ja": "付ける",
+                    "reading": "つける",
+                    "ruby_html": "<ruby>付<rt>つ</rt></ruby>ける",
+                    "meaning_en": "Acquire, gain (ability)",
+                    "meaning_zh": "掌握，培养",
+                    "example_ja": "実力を付ける",
+                    "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける"
+                },
+                {
+                    "term_ja": "試す",
+                    "reading": "ためす",
+                    "ruby_html": "<ruby>試<rt>ため</rt></ruby>す",
+                    "meaning_en": "Try out, test",
+                    "meaning_zh": "试验，尝试",
+                    "example_ja": "実力を試す",
+                    "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す"
+                },
+                {
+                    "term_ja": "出す",
+                    "reading": "だす",
+                    "ruby_html": "<ruby>出<rt>だ</rt></ruby>す",
+                    "meaning_en": "Demonstrate, show (ability)",
+                    "meaning_zh": "发挥",
+                    "example_ja": "実力を出す",
+                    "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "満点",
+                    "reading": "まんてん",
+                    "ruby_html": "<ruby>満点<rt>まんてん</rt></ruby>",
+                    "meaning_en": "Full marks, perfect score",
+                    "meaning_zh": "满分",
+                    "example_ja": "テストで満点を取る",
+                    "example_ruby": "テストで<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+                },
+                {
+                    "term_ja": "成績",
+                    "reading": "せいせき",
+                    "ruby_html": "<ruby>成績<rt>せいせき</rt></ruby>",
+                    "meaning_en": "Grades, marks",
+                    "meaning_zh": "成绩",
+                    "example_ja": "成績がいい",
+                    "example_ruby": "<ruby>成績<rt>せいせき</rt></ruby>がいい"
+                },
+                {
+                    "term_ja": "単語",
+                    "reading": "たんご",
+                    "ruby_html": "<ruby>単語<rt>たんご</rt></ruby>",
+                    "meaning_en": "Word, vocabulary",
+                    "meaning_zh": "单词",
+                    "example_ja": "単語を暗記する",
+                    "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する"
+                },
+                {
+                    "term_ja": "暗記する",
+                    "reading": "あんきする",
+                    "ruby_html": "<ruby>暗記<rt>あんき</rt></ruby>する",
+                    "meaning_en": "Memorize, learn by heart",
+                    "meaning_zh": "熟记，背诵",
+                    "example_ja": "単語を暗記する",
+                    "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する"
+                },
+                {
+                    "term_ja": "内容",
+                    "reading": "ないよう",
+                    "ruby_html": "<ruby>内容<rt>ないよう</rt></ruby>",
+                    "meaning_en": "Content, subject matter",
+                    "meaning_zh": "内容",
+                    "example_ja": "授業の内容を理解する",
+                    "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する"
+                },
+                {
+                    "term_ja": "理解する",
+                    "reading": "りかいする",
+                    "ruby_html": "<ruby>理解<rt>りかい</rt></ruby>する",
+                    "meaning_en": "Understand, comprehend",
+                    "meaning_zh": "理解",
+                    "example_ja": "内容を理解する",
+                    "example_ruby": "<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する"
+                },
+                {
+                    "term_ja": "スピーチする",
+                    "reading": "スピーチする",
+                    "ruby_html": "スピーチする",
+                    "meaning_en": "Make a speech",
+                    "meaning_zh": "演讲",
+                    "example_ja": "クラスでスピーチする",
+                    "example_ruby": "クラスでスピーチする"
+                },
+                {
+                    "term_ja": "レベル",
+                    "reading": "レベル",
+                    "ruby_html": "レベル",
+                    "meaning_en": "Level",
+                    "meaning_zh": "水平，级别",
+                    "example_ja": "日本語のレベル",
+                    "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>のレベル"
+                },
+                {
+                    "term_ja": "初級",
+                    "reading": "しょきゅう",
+                    "ruby_html": "<ruby>初級<rt>しょきゅう</rt></ruby>",
+                    "meaning_en": "Beginner level, elementary",
+                    "meaning_zh": "初级",
+                    "example_ja": "初級のクラス",
+                    "example_ruby": "<ruby>初級<rt>しょきゅう</rt></ruby>のクラス"
+                },
+                {
+                    "term_ja": "中級",
+                    "reading": "ちゅうきゅう",
+                    "ruby_html": "<ruby>中級<rt>ちゅうきゅう</rt></ruby>",
+                    "meaning_en": "Intermediate level",
+                    "meaning_zh": "中级",
+                    "example_ja": "中級のクラス",
+                    "example_ruby": "<ruby>中級<rt>ちゅうきゅう</rt></ruby>のクラス"
+                },
+                {
+                    "term_ja": "上級",
+                    "reading": "じょうきゅう",
+                    "ruby_html": "<ruby>上級<rt>じょうきゅう</rt></ruby>",
+                    "meaning_en": "Advanced level",
+                    "meaning_zh": "高级",
+                    "example_ja": "上級のクラス",
+                    "example_ruby": "<ruby>上級<rt>じょうきゅう</rt></ruby>のクラス"
+                },
+                {
+                    "term_ja": "国語",
+                    "reading": "こくご",
+                    "ruby_html": "<ruby>国語<rt>こくご</rt></ruby>",
+                    "meaning_en": "National language, Japanese",
+                    "meaning_zh": "语文，国语",
+                    "example_ja": "国語の教科書",
+                    "example_ruby": "<ruby>国語<rt>こくご</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>"
+                },
+                {
+                    "term_ja": "理科",
+                    "reading": "りか",
+                    "ruby_html": "<ruby>理科<rt>りか</rt></ruby>",
+                    "meaning_en": "Science (elementary/middle school)",
+                    "meaning_zh": "理科",
+                    "example_ja": "理科の実験",
+                    "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>"
+                },
+                {
+                    "term_ja": "体育",
+                    "reading": "たいいく",
+                    "ruby_html": "<ruby>体育<rt>たいいく</rt></ruby>",
+                    "meaning_en": "Physical education, PE",
+                    "meaning_zh": "体育",
+                    "example_ja": "体育の授業",
+                    "example_ruby": "<ruby>体育<rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>"
+                },
+                {
+                    "term_ja": "数学",
+                    "reading": "すうがく",
+                    "ruby_html": "<ruby>数学<rt>すうがく</rt></ruby>",
+                    "meaning_en": "Mathematics, math",
+                    "meaning_zh": "数学",
+                    "example_ja": "数学の問題",
+                    "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>"
+                },
+                {
+                    "term_ja": "社会",
+                    "reading": "しゃかい",
+                    "ruby_html": "<ruby>社会<rt>しゃかい</rt></ruby>",
+                    "meaning_en": "Social studies; society",
+                    "meaning_zh": "社会科",
+                    "example_ja": "社会の勉強",
+                    "example_ruby": "<ruby>社会<rt>しゃかい</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>"
+                },
+                {
+                    "term_ja": "音楽",
+                    "reading": "おんがく",
+                    "ruby_html": "<ruby>音楽<rt>おんがく</rt></ruby>",
+                    "meaning_en": "Music",
+                    "meaning_zh": "音乐",
+                    "example_ja": "音楽の時間",
+                    "example_ruby": "<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "一生懸命勉強したから、テストで（　満点　）が取れた。",
+                    "answer": "満点",
+                    "explanation": "100点満点のことです。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "大勢の人の前で（　スピーチ　）をするのは、緊張する。",
+                    "answer": "スピーチ",
+                    "explanation": "大勢の前で話すことは「スピーチ」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "知らない（　単語　）は、辞書で調べて覚えるようにしている。",
+                    "answer": "単語",
+                    "explanation": "言葉の単位、ボキャブラリーは「単語」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "この本は難しいけれど、（　内容　）はとても面白い。",
+                    "answer": "内容",
+                    "explanation": "本や話の中に書かれている事柄は「内容」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "日本語の勉強を始めたばかりなので、まだ（　初級　）のクラスです。",
+                    "answer": "初級",
+                    "explanation": "始めたばかりのレベルは「初級」です。"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "exercise_id": 1,
+            "title_ja": "正しいほうを選びなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "新しい学期になって、学年が (a. 上がった　b. 高くなった)。",
+                    "options": ["a. 上がった", "b. 高くなった"],
+                    "answer": "a",
+                    "explanation": "「学年が上がる」と言います。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "先生の質問に答えられなかった。勉強が足り (a. 弱い　b. ない) からだ。",
+                    "options": ["a. 弱い", "b. ない"],
+                    "answer": "b",
+                    "explanation": "「足りない」と言います。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "歴史について、(a. 深い　b. 重い) 知識を持っている。",
+                    "options": ["a. 深い", "b. 重い"],
+                    "answer": "a",
+                    "explanation": "「知識が深い」「知識を深める」と言います。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "先生の説明を聞いて、(a. 疑問　b. 質問) を持った。",
+                    "options": ["a. 疑問", "b. 質問"],
+                    "answer": "a",
+                    "explanation": "「疑問を持つ」と言います。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "このクラスは、日本語のレベルが (a. 上がる　b. 高い) です。",
+                    "options": ["a. 上がる", "b. 高い"],
+                    "answer": "b",
+                    "explanation": "述語として「レベルが高い」と言います。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 2,
+            "title_ja": "（　）に入る言葉を書きなさい。最初の字がヒントです。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "毎日、バスと電車で（　つ____　）している。",
+                    "answer": "通学",
+                    "explanation": "学校に通うことは「通学（つうがく）」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "ピアノを始めたばかりなので、先生に基礎を（　な____／お____　）ている。",
+                    "answer": "習っ",
+                    "explanation": "「習っている」または「教わっている」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "新しい漢字を毎日10個ずつ（　あ____　）している。",
+                    "answer": "暗記",
+                    "explanation": "覚えて覚えることは「暗記（あんき）」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "授業中に友達と（　お____　）をして、怒られた。",
+                    "answer": "おしゃべり",
+                    "explanation": "話すことは「おしゃべり」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "朝、起きられなくて、学校に（　ち____　）した。",
+                    "answer": "遅刻",
+                    "explanation": "時間に遅れることは「遅刻（ちこく）」です。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "この文章の意味がよく（　り____　）できない。",
+                    "answer": "理解",
+                    "explanation": "わかることは「理解（りかい）」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 3,
+            "title_ja": "（　）に入る語を [ ] の中から選びなさい。",
+            "items": [
+                {
+                    "id": "1-1",
+                    "question_ja": "世界中の学生と一緒に（　学ぶ　）。",
+                    "options": ["学ぶ", "試す", "配る"],
+                    "answer": "学ぶ",
+                    "explanation": "勉強する意味です。"
+                },
+                {
+                    "id": "1-2",
+                    "question_ja": "試験を受けて、自分の実力を（　試す　）。",
+                    "options": ["学ぶ", "試す", "配る"],
+                    "answer": "試す",
+                    "explanation": "「実力を試す」と言います。"
+                },
+                {
+                    "id": "1-3",
+                    "question_ja": "先生の代わりにプリントを（　配る　）。",
+                    "options": ["学ぶ", "試す", "配る"],
+                    "answer": "配る",
+                    "explanation": "「プリントを配る」と言います。"
+                },
+                {
+                    "id": "2-1",
+                    "question_ja": "勉強もスポーツも（　基礎　）が大切だ。",
+                    "options": ["基礎", "学習", "苦手"],
+                    "answer": "基礎",
+                    "explanation": "基本・土台は「基礎」です。"
+                },
+                {
+                    "id": "2-2",
+                    "question_ja": "自分に合った（　学習　）の方法を見つける。",
+                    "options": ["基礎", "学習", "苦手"],
+                    "answer": "学習",
+                    "explanation": "学ぶ方法は「学習の方法」です。"
+                },
+                {
+                    "id": "2-3",
+                    "question_ja": "漢字を書くのが（　苦手　）で、時間がかかる。",
+                    "options": ["基礎", "学習", "苦手"],
+                    "answer": "苦手",
+                    "explanation": "得意でないことは「苦手」です。"
+                },
+                {
+                    "id": "3-1",
+                    "question_ja": "小学校の（　給食　）は、毎日とてもおいしかった。",
+                    "options": ["給食", "クラブ", "大会"],
+                    "answer": "給食",
+                    "explanation": "学校で出される昼食は「給食」です。"
+                },
+                {
+                    "id": "3-2",
+                    "question_ja": "テニスの（　クラブ　）に入って、練習している。",
+                    "options": ["給食", "クラブ", "大会"],
+                    "answer": "クラブ",
+                    "explanation": "課外グループは「クラブ」です。"
+                },
+                {
+                    "id": "3-3",
+                    "question_ja": "全国（　大会　）で優勝するのが夢だ。",
+                    "options": ["給食", "クラブ", "大会"],
+                    "answer": "大会",
+                    "explanation": "大きな競技会は「大会」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 4,
+            "title_ja": "正しい助詞を選びなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "学校（　に　）通学する。",
+                    "answer": "に",
+                    "explanation": "通学の目的地には「に」を使います。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "プリント（　を　）配る。",
+                    "answer": "を",
+                    "explanation": "配る対象には「を」を使います。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "学校（　に　）遅刻する。",
+                    "answer": "に",
+                    "explanation": "「学校に遅刻する」と言います。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "クラブ（　に　）入る。",
+                    "answer": "に",
+                    "explanation": "所属する対象には「に」を使います。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "先生（　に　）習う。",
+                    "answer": "に",
+                    "explanation": "教わる相手には「に」を使います。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "テスト（　で　）満点を取る。",
+                    "answer": "で",
+                    "explanation": "状況や場所には「で」を使います。"
+                },
+                {
+                    "id": 7,
+                    "question_ja": "疑問（　を　）持つ。",
+                    "answer": "を",
+                    "explanation": "持つ対象には「を」を使います。"
+                },
+                {
+                    "id": 8,
+                    "question_ja": "友達（　と　）おしゃべりする。",
+                    "answer": "と",
+                    "explanation": "相手には「と」を使います。"
+                },
+                {
+                    "id": 9,
+                    "question_ja": "クラス（　で　）スピーチする。",
+                    "answer": "で",
+                    "explanation": "場所や場には「で」を使います。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 5,
+            "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "高校生のころ、私は毎日自転車で学校に（①____）していた。",
+                    "answer": "通学",
+                    "explanation": "学校に通うこと。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "朝寝坊をして（②____）しそうになることもあったが、一度も（③____）しなかった。",
+                    "answer": "遅刻",
+                    "explanation": "時間に遅れること。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "朝寝坊をして遅刻しそうになることもあったが、一度も（③____）しなかった。",
+                    "answer": "欠席",
+                    "explanation": "休むこと。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "数学が（④____）で、英語が（⑤____）だった。",
+                    "answer": "得意",
+                    "explanation": "じょうずなこと。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "数学が得意で、英語が（⑤____）だった。",
+                    "answer": "苦手",
+                    "explanation": "へたなこと。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "でも、一生懸命勉強したので、全体の（⑥____）は悪くなかった。",
+                    "answer": "成績",
+                    "explanation": "勉強の結果・点数のこと。"
+                },
+                {
+                    "id": 7,
+                    "question_ja": "（⑦____）が上がって3年生になると、放課後は（⑧____）の練習に集中した。",
+                    "answer": "学年",
+                    "explanation": "学年のこと。"
+                },
+                {
+                    "id": 8,
+                    "question_ja": "学年が上がって3年生になると、放課後は（⑧____）の練習に集中した。",
+                    "answer": "クラブ",
+                    "explanation": "部活動のこと。"
+                },
+                {
+                    "id": 9,
+                    "question_ja": "先生に熱心に（⑨____）たおかげで、最後のテストでは（⑩____）を取ることができた。",
+                    "answer": "教わっ",
+                    "explanation": "教わるの過去形。"
+                },
+                {
+                    "id": 10,
+                    "question_ja": "先生に熱心に教わったおかげで、最後のテストでは（⑩____）を取ることができた。",
+                    "answer": "満点",
+                    "explanation": "100点満点のこと。"
+                },
+                {
+                    "id": 11,
+                    "question_ja": "難しい（⑪____）も、しっかり（⑫____）することができた。",
+                    "answer": "内容",
+                    "explanation": "教材の内容。"
+                },
+                {
+                    "id": 12,
+                    "question_ja": "難しい内容も、しっかり（⑫____）することができた。",
+                    "answer": "理解",
+                    "explanation": "わかること。"
+                },
+                {
+                    "id": 13,
+                    "question_ja": "疲れて授業中に（⑬____）してしまうこともあったが、楽しい学校生活だった。",
+                    "answer": "居眠り",
+                    "explanation": "居眠りすること。"
+                }
+            ]
+        }
+    ]
+}
+
+print("Chapter 11 structured successfully.")
+
+# -------------------------------------------------------------
+# CHAPTER 12
+# -------------------------------------------------------------
+ch12 = {
+    "metadata": {
+        "chapter": 12,
+        "part": 1,
+        "topic_ja": "教育2: 学校生活 (大学)",
+        "topic_en": "Education 2: School Life (University)",
+        "pages": [50, 51, 52, 53]
+    },
+    "sections": [
+        {
+            "section_id": 1,
+            "title_ja": "受験勉強・試験",
+            "title_en": "Entrance Exam Study & Exams",
+            "warming_up": {
+                "question_ja": "大学や専門学校の試験を受けたことがありますか。どんな試験でしたか。"
+            },
+            "words": [
+                {
+                    "term_ja": "受験する",
+                    "reading": "じゅけんする",
+                    "ruby_html": "<ruby>受験<rt>じゅけん</rt></ruby>する",
+                    "meaning_en": "Taking entrance exams; take an exam",
+                    "meaning_zh": "投考，应试",
+                    "example_ja": "大学を受験する",
+                    "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>受験<rt>じゅけん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "私立",
+                    "reading": "しりつ",
+                    "ruby_html": "<ruby>私立<rt>しりつ</rt></ruby>",
+                    "meaning_en": "Private (institution)",
+                    "meaning_zh": "私立",
+                    "example_ja": "私立大学",
+                    "example_ruby": "<ruby>私立大学<rt>しりつだいがく</rt></ruby>"
+                },
+                {
+                    "term_ja": "国立",
+                    "reading": "こくりつ",
+                    "ruby_html": "<ruby>国立<rt>こくりつ</rt></ruby>",
+                    "meaning_en": "National (institution)",
+                    "meaning_zh": "国立",
+                    "example_ja": "国立大学",
+                    "example_ruby": "<ruby>国立大学<rt>こくりつだいがく</rt></ruby>"
+                },
+                {
+                    "term_ja": "大学院",
+                    "reading": "だいがくいん",
+                    "ruby_html": "<ruby>大学院<rt>だいがくいん</rt></ruby>",
+                    "meaning_en": "Graduate school",
+                    "meaning_zh": "研究生院",
+                    "example_ja": "大学院に進学する",
+                    "example_ruby": "<ruby>大学院<rt>だいがくいん</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "進学する",
+                    "reading": "しんがくする",
+                    "ruby_html": "<ruby>進学<rt>しんがく</rt></ruby>する",
+                    "meaning_en": "Entering higher education; enter higher school",
+                    "meaning_zh": "升学",
+                    "example_ja": "大学に進学する",
+                    "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "徹夜",
+                    "reading": "てつや",
+                    "ruby_html": "<ruby>徹夜<rt>てつや</rt></ruby>",
+                    "meaning_en": "All-nighter; stay up all night",
+                    "meaning_zh": "熬夜，通宵",
+                    "example_ja": "徹夜で勉強する",
+                    "example_ruby": "<ruby>徹夜<rt>てつや</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "努力する",
+                    "reading": "どりょくする",
+                    "ruby_html": "<ruby>努力<rt>どりょく</rt></ruby>する",
+                    "meaning_en": "Effort; make an effort",
+                    "meaning_zh": "努力",
+                    "example_ja": "合格のために努力する",
+                    "example_ruby": "<ruby>合格<rt>ごうかく</rt></ruby>のために<ruby>努力<rt>どりょく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "ミス",
+                    "reading": "ミス",
+                    "ruby_html": "ミス",
+                    "meaning_en": "Mistake, error",
+                    "meaning_zh": "差错，失误",
+                    "example_ja": "計算のミスをする",
+                    "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>のミスをする"
+                },
+                {
+                    "term_ja": "確かめる",
+                    "reading": "たしかめる",
+                    "ruby_html": "<ruby>確<rt>たし</rt></ruby>かめる",
+                    "meaning_en": "Check, make sure",
+                    "meaning_zh": "弄清，确认",
+                    "example_ja": "答えを確かめる",
+                    "example_ruby": "<ruby>答<rt>こた</rt></ruby>えを<ruby>確<rt>たし</rt></ruby>かめる"
+                },
+                {
+                    "term_ja": "確認する",
+                    "reading": "かくにんする",
+                    "ruby_html": "<ruby>確認<rt>かくにん</rt></ruby>する",
+                    "meaning_en": "Confirmation; confirm",
+                    "meaning_zh": "确认",
+                    "example_ja": "時間を確認する",
+                    "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "解答",
+                    "reading": "かいとう",
+                    "ruby_html": "<ruby>解答<rt>かいとう</rt></ruby>",
+                    "meaning_en": "Answer, solution",
+                    "meaning_zh": "解答",
+                    "example_ja": "解答を見直す",
+                    "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す"
+                },
+                {
+                    "term_ja": "見直す",
+                    "reading": "みなおす",
+                    "ruby_html": "<ruby>見直<rt>みなお</rt></ruby>す",
+                    "meaning_en": "Review, look over again",
+                    "meaning_zh": "重新看，重温",
+                    "example_ja": "解答を見直す",
+                    "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す"
+                },
+                {
+                    "term_ja": "計算",
+                    "reading": "けいさん",
+                    "ruby_html": "<ruby>計算<rt>けいさん</rt></ruby>",
+                    "meaning_en": "Calculation; calculate",
+                    "meaning_zh": "计算",
+                    "example_ja": "計算を間違う",
+                    "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う"
+                },
+                {
+                    "term_ja": "間違う",
+                    "reading": "まちがう",
+                    "ruby_html": "<ruby>間違<rt>まちが</rt></ruby>う",
+                    "meaning_en": "Make a mistake, be mistaken",
+                    "meaning_zh": "弄错",
+                    "example_ja": "計算を間違う",
+                    "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う"
+                },
+                {
+                    "term_ja": "結果",
+                    "reading": "けっか",
+                    "ruby_html": "<ruby>結果<rt>けっか</rt></ruby>",
+                    "meaning_en": "Result, outcome",
+                    "meaning_zh": "结果",
+                    "example_ja": "結果が発表される",
+                    "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される"
+                },
+                {
+                    "term_ja": "発表される",
+                    "reading": "はっぴょうされる",
+                    "ruby_html": "<ruby>発表<rt>はっぴょう</rt></ruby>される",
+                    "meaning_en": "Be announced, published",
+                    "meaning_zh": "公布",
+                    "example_ja": "結果が発表される",
+                    "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される"
+                },
+                {
+                    "term_ja": "通る",
+                    "reading": "とおる",
+                    "ruby_html": "<ruby>通<rt>とお</rt></ruby>る",
+                    "meaning_en": "Pass (an examination)",
+                    "meaning_zh": "通过",
+                    "example_ja": "試験に通る",
+                    "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>通<rt>とお</rt></ruby>る"
+                },
+                {
+                    "term_ja": "合格する",
+                    "reading": "ごうかくする",
+                    "ruby_html": "<ruby>合格<rt>ごうかく</rt></ruby>する",
+                    "meaning_en": "Pass an examination",
+                    "meaning_zh": "及格，合格",
+                    "example_ja": "試験に合格する",
+                    "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "パスする",
+                    "reading": "パスする",
+                    "ruby_html": "パスする",
+                    "meaning_en": "Pass (exam)",
+                    "meaning_zh": "通过",
+                    "example_ja": "試験をパスする",
+                    "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>をパスする"
+                },
+                {
+                    "term_ja": "落ちる",
+                    "reading": "おちる",
+                    "ruby_html": "<ruby>落<rt>お</rt></ruby>ちる",
+                    "meaning_en": "Fail (an exam)",
+                    "meaning_zh": "落榜，不及格",
+                    "example_ja": "試験に落ちる",
+                    "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる"
+                },
+                {
+                    "term_ja": "不合格",
+                    "reading": "ふごうかく",
+                    "ruby_html": "<ruby>不合格<rt>ふごうかく</rt></ruby>",
+                    "meaning_en": "Failure, rejection",
+                    "meaning_zh": "不及格，不合格",
+                    "example_ja": "不合格になる",
+                    "example_ruby": "<ruby>不合格<rt>ふごうかく</rt></ruby>になる"
+                },
+                {
+                    "term_ja": "教科書",
+                    "reading": "きょうかしょ",
+                    "ruby_html": "<ruby>教科書<rt>きょうかしょ</rt></ruby>",
+                    "meaning_en": "Textbook",
+                    "meaning_zh": "教科书",
+                    "example_ja": "教科書を読む",
+                    "example_ruby": "<ruby>教科書<rt>きょうかしょ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む"
+                },
+                {
+                    "term_ja": "参考書",
+                    "reading": "さんこうしょ",
+                    "ruby_html": "<ruby>参考書<rt>さんこうしょ</rt></ruby>",
+                    "meaning_en": "Reference book",
+                    "meaning_zh": "参考书",
+                    "example_ja": "参考書で調べる",
+                    "example_ruby": "<ruby>参考書<rt>さんこうしょ</rt></ruby>で<ruby>調<rt>しら</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "問題集",
+                    "reading": "もんだいしゅう",
+                    "ruby_html": "<ruby>問題集<rt>もんだいしゅう</rt></ruby>",
+                    "meaning_en": "Collection of problems, workbook",
+                    "meaning_zh": "练习册",
+                    "example_ja": "問題集を解く",
+                    "example_ruby": "<ruby>問題集<rt>もんだいしゅう</rt></ruby>を<ruby>解<rt>と</rt></ruby>く"
+                },
+                {
+                    "term_ja": "医学部",
+                    "reading": "いがくぶ",
+                    "ruby_html": "<ruby>医学部<rt>いがくぶ</rt></ruby>",
+                    "meaning_en": "School / faculty of medicine",
+                    "meaning_zh": "医学系",
+                    "example_ja": "医学部を目指す",
+                    "example_ruby": "<ruby>医学部<rt>いがくぶ</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "理工学部",
+                    "reading": "りこうがくぶ",
+                    "ruby_html": "<ruby>理工学部<rt>りこうがくぶ</rt></ruby>",
+                    "meaning_en": "Faculty of science and engineering",
+                    "meaning_zh": "理工学系",
+                    "example_ja": "理工学部に入る",
+                    "example_ruby": "<ruby>理工学部<rt>りこうがくぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+                },
+                {
+                    "term_ja": "文学部",
+                    "reading": "ぶんがくぶ",
+                    "ruby_html": "<ruby>文学部<rt>ぶんがくぶ</rt></ruby>",
+                    "meaning_en": "Faculty of letters, humanities",
+                    "meaning_zh": "文学系",
+                    "example_ja": "文学部で学ぶ",
+                    "example_ruby": "<ruby>文学部<rt>ぶんがくぶ</rt></ruby>で<ruby>学<rt>まな</rt></ruby>ぶ"
+                },
+                {
+                    "term_ja": "法学部",
+                    "reading": "ほうがくぶ",
+                    "ruby_html": "<ruby>法学部<rt>ほうがくぶ</rt></ruby>",
+                    "meaning_en": "Faculty of law",
+                    "meaning_zh": "法学系",
+                    "example_ja": "法学部の学生",
+                    "example_ruby": "<ruby>法学部<rt>ほうがくぶ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>"
+                },
+                {
+                    "term_ja": "経済学部",
+                    "reading": "けいざいがくぶ",
+                    "ruby_html": "<ruby>経済学部<rt>けいざいがくぶ</rt></ruby>",
+                    "meaning_en": "Faculty of economics",
+                    "meaning_zh": "经济学系",
+                    "example_ja": "経済学部を卒業する",
+                    "example_ruby": "<ruby>経済学部<rt>けいざいがくぶ</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "社会学部",
+                    "reading": "しゃかいがくぶ",
+                    "ruby_html": "<ruby>社会学部<rt>しゃかいがくぶ</rt></ruby>",
+                    "meaning_en": "Faculty of sociology / social sciences",
+                    "meaning_zh": "社会学系",
+                    "example_ja": "社会学部に通う",
+                    "example_ruby": "<ruby>社会学部<rt>しゃかいがくぶ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "日本では、（　国立　）大学より私立大学のほうが学費が高い。",
+                    "answer": "国立",
+                    "explanation": "国が運営する大学は「国立」大学です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "一生懸命勉強したが、試験の結果は（　不合格　）だった。",
+                    "answer": "不合格",
+                    "explanation": "合格しなかった結果は「不合格」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "来週、大学院の試験の（　結果　）が発表される。",
+                    "answer": "結果",
+                    "explanation": "試験の合否などの判定は「結果」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "鉛筆で書いた（　解答　）を消しゴムで消して、書き直した。",
+                    "answer": "解答",
+                    "explanation": "問題に対する答えは「解答」です。"
+                }
+            ]
+        },
+        {
+            "section_id": 2,
+            "title_ja": "大学生活",
+            "title_en": "University Life",
+            "warming_up": {
+                "question_ja": "日本の大学生活についてどんなことを知っていますか。"
+            },
+            "words": [
+                {
+                    "term_ja": "講義",
+                    "reading": "こうぎ",
+                    "ruby_html": "<ruby>講義<rt>こうぎ</rt></ruby>",
+                    "meaning_en": "Lecture",
+                    "meaning_zh": "讲课，讲义",
+                    "example_ja": "講義を聴く",
+                    "example_ruby": "<ruby>講義<rt>こうぎ</rt></ruby>を<ruby>聴<rt>き</rt></ruby>く"
+                },
+                {
+                    "term_ja": "ゼミ",
+                    "reading": "ゼミ",
+                    "ruby_html": "ゼミ",
+                    "meaning_en": "Seminar",
+                    "meaning_zh": "研讨会",
+                    "example_ja": "ゼミに参加する",
+                    "example_ruby": "ゼミに<ruby>参加<rt>さんか</rt></ruby>する"
+                },
+                {
+                    "term_ja": "教授",
+                    "reading": "きょうじゅ",
+                    "ruby_html": "<ruby>教授<rt>きょうじゅ</rt></ruby>",
+                    "meaning_en": "Professor",
+                    "meaning_zh": "教授",
+                    "example_ja": "大学の教授",
+                    "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>の<ruby>教授<rt>きょうじゅ</rt></ruby>"
+                },
+                {
+                    "term_ja": "指導",
+                    "reading": "しどう",
+                    "ruby_html": "<ruby>指導<rt>しどう</rt></ruby>",
+                    "meaning_en": "Guidance, instruction",
+                    "meaning_zh": "指导",
+                    "example_ja": "教授の指導を受ける",
+                    "example_ruby": "<ruby>教授<rt>きょうじゅ</rt></ruby>の<ruby>指導<rt>しどう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける"
+                },
+                {
+                    "term_ja": "先輩",
+                    "reading": "せんぱい",
+                    "ruby_html": "<ruby>先輩<rt>せんぱい</rt></ruby>",
+                    "meaning_en": "Senior (student / colleague)",
+                    "meaning_zh": "前辈，学长",
+                    "example_ja": "先輩に相談する",
+                    "example_ruby": "<ruby>先輩<rt>せんぱい</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "アドバイス",
+                    "reading": "アドバイス",
+                    "ruby_html": "アドバイス",
+                    "meaning_en": "Advice",
+                    "meaning_zh": "建议，劝告",
+                    "example_ja": "アドバイスをもらう",
+                    "example_ruby": "アドバイスをもらう"
+                },
+                {
+                    "term_ja": "コメント",
+                    "reading": "コメント",
+                    "ruby_html": "コメント",
+                    "meaning_en": "Comment",
+                    "meaning_zh": "评论，评语",
+                    "example_ja": "コメントをもらう",
+                    "example_ruby": "コメントをもらう"
+                },
+                {
+                    "term_ja": "授業",
+                    "reading": "じゅぎょう",
+                    "ruby_html": "<ruby>授業<rt>じゅぎょう</rt></ruby>",
+                    "meaning_en": "Class, lecture",
+                    "meaning_zh": "上课",
+                    "example_ja": "授業に出る",
+                    "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>に<ruby>出<rt>で</rt></ruby>る"
+                },
+                {
+                    "term_ja": "研究",
+                    "reading": "けんきゅう",
+                    "ruby_html": "<ruby>研究<rt>けんきゅう</rt></ruby>",
+                    "meaning_en": "Research; do research",
+                    "meaning_zh": "研究",
+                    "example_ja": "日本の歴史を研究する",
+                    "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>を<ruby>研究<rt>けんきゅう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "実験",
+                    "reading": "じっけん",
+                    "ruby_html": "<ruby>実験<rt>じっけん</rt></ruby>",
+                    "meaning_en": "Experiment; do experiments",
+                    "meaning_zh": "实验",
+                    "example_ja": "理科の実験をする",
+                    "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>をする"
+                },
+                {
+                    "term_ja": "提出する",
+                    "reading": "ていしゅつする",
+                    "ruby_html": "<ruby>提出<rt>ていしゅつ</rt></ruby>する",
+                    "meaning_en": "Submit, turn in",
+                    "meaning_zh": "提出，提交",
+                    "example_ja": "レポートを提出する",
+                    "example_ruby": "レポートを<ruby>提出<rt>ていしゅつ</rt></ruby>する"
+                },
+                {
+                    "term_ja": "レポート",
+                    "reading": "レポート",
+                    "ruby_html": "レポート",
+                    "meaning_en": "Report, term paper",
+                    "meaning_zh": "报告",
+                    "example_ja": "レポートを書く",
+                    "example_ruby": "レポートを<ruby>書<rt>か</rt></ruby>く"
+                },
+                {
+                    "term_ja": "課題",
+                    "reading": "かだい",
+                    "ruby_html": "<ruby>課題<rt>かだい</rt></ruby>",
+                    "meaning_en": "Assignment, task",
+                    "meaning_zh": "课题，作业",
+                    "example_ja": "課題を出す",
+                    "example_ruby": "<ruby>課題<rt>かだい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "卒業論文",
+                    "reading": "そつぎょうろんぶん",
+                    "ruby_html": "<ruby>卒業論文<rt>そつぎょうろんぶん</rt></ruby>",
+                    "meaning_en": "Graduation thesis",
+                    "meaning_zh": "毕业论文",
+                    "example_ja": "卒業論文を書く",
+                    "example_ruby": "<ruby>卒業論文<rt>そつぎょうろんぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+                },
+                {
+                    "term_ja": "卒論",
+                    "reading": "そつろん",
+                    "ruby_html": "<ruby>卒論<rt>そつろん</rt></ruby>",
+                    "meaning_en": "Graduation thesis (abbreviation)",
+                    "meaning_zh": "毕业论文（简称）",
+                    "example_ja": "卒論のテーマ",
+                    "example_ruby": "<ruby>卒論<rt>そつろん</rt></ruby>のテーマ"
+                },
+                {
+                    "term_ja": "授業料",
+                    "reading": "じゅぎょうりょう",
+                    "ruby_html": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>",
+                    "meaning_en": "Tuition, class fee",
+                    "meaning_zh": "学费",
+                    "example_ja": "授業料を払う",
+                    "example_ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+                },
+                {
+                    "term_ja": "学費",
+                    "reading": "がくひ",
+                    "ruby_html": "<ruby>学費<rt>がくひ</rt></ruby>",
+                    "meaning_en": "Tuition fees, academic expenses",
+                    "meaning_zh": "学费",
+                    "example_ja": "学費を払う",
+                    "example_ruby": "<ruby>学費<rt>がくひ</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+                },
+                {
+                    "term_ja": "寮",
+                    "reading": "りょう",
+                    "ruby_html": "<ruby>寮<rt>りょう</rt></ruby>",
+                    "meaning_en": "Dormitory",
+                    "meaning_zh": "宿舍",
+                    "example_ja": "学生寮に住む",
+                    "example_ruby": "<ruby>学生寮<rt>がくせいりょう</rt></ruby>に<ruby>住<rt>す</rt></ruby>む"
+                },
+                {
+                    "term_ja": "暮らす",
+                    "reading": "くらす",
+                    "ruby_html": "<ruby>暮<rt>く</rt></ruby>らす",
+                    "meaning_en": "Live, make a living",
+                    "meaning_zh": "生活",
+                    "example_ja": "一人で暮らす",
+                    "example_ruby": "<ruby>一人<rt>ひとり</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす"
+                },
+                {
+                    "term_ja": "一人暮らし",
+                    "reading": "ひとりぐらし",
+                    "ruby_html": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らし",
+                    "meaning_en": "Living alone",
+                    "meaning_zh": "一个人生活",
+                    "example_ja": "一人暮らしを始める",
+                    "example_ruby": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>める"
+                },
+                {
+                    "term_ja": "サークル",
+                    "reading": "サークル",
+                    "ruby_html": "サークル",
+                    "meaning_en": "Club, student circle",
+                    "meaning_zh": "(同好会) 团体",
+                    "example_ja": "サークルに入る",
+                    "example_ruby": "サークルに<ruby>入<rt>はい</rt></ruby>る"
+                },
+                {
+                    "term_ja": "飲み会",
+                    "reading": "のみかい",
+                    "ruby_html": "<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>",
+                    "meaning_en": "Drinking party",
+                    "meaning_zh": "酒会",
+                    "example_ja": "飲み会に参加する",
+                    "example_ruby": "<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+                },
+                {
+                    "term_ja": "合宿",
+                    "reading": "がっしゅく",
+                    "ruby_html": "<ruby>合宿<rt>がっしゅく</rt></ruby>",
+                    "meaning_en": "Training camp, group retreat",
+                    "meaning_zh": "集中合练",
+                    "example_ja": "夏休みに合宿に行く",
+                    "example_ruby": "<ruby>夏休み<rt>なつやすみ</rt></ruby>に<ruby>合宿<rt>がっしゅく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+                },
+                {
+                    "term_ja": "後輩",
+                    "reading": "こうはい",
+                    "ruby_html": "<ruby>後輩<rt>こうはい</rt></ruby>",
+                    "meaning_en": "Junior (student / colleague)",
+                    "meaning_zh": "后辈，学弟",
+                    "example_ja": "後輩を育てる",
+                    "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+                },
+                {
+                    "term_ja": "育てる",
+                    "reading": "そだてる",
+                    "ruby_html": "<ruby>育<rt>そだ</rt></ruby>てる",
+                    "meaning_en": "Bring up, train, foster",
+                    "meaning_zh": "培养",
+                    "example_ja": "後輩を育てる",
+                    "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+                },
+                {
+                    "term_ja": "学園祭",
+                    "reading": "がくえんさい",
+                    "ruby_html": "<ruby>学園祭<rt>がくえんさい</rt></ruby>",
+                    "meaning_en": "Campus festival, school festival",
+                    "meaning_zh": "校园祭",
+                    "example_ja": "学園祭に行く",
+                    "example_ruby": "<ruby>学園祭<rt>がくえんさい</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+                },
+                {
+                    "term_ja": "参加する",
+                    "reading": "さんかする",
+                    "ruby_html": "<ruby>参加<rt>さんか</rt></ruby>する",
+                    "meaning_en": "Participation; participate",
+                    "meaning_zh": "参加",
+                    "example_ja": "イベントに参加する",
+                    "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する"
+                },
+                {
+                    "term_ja": "留学する",
+                    "reading": "りゅうがくする",
+                    "ruby_html": "<ruby>留学<rt>りゅうがく</rt></ruby>する",
+                    "meaning_en": "Study abroad",
+                    "meaning_zh": "留学",
+                    "example_ja": "日本に留学する",
+                    "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>留学<rt>りゅうがく</rt></ruby>する"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "明日の午後5時までに、レポートを（　提出　）しなければならない。",
+                    "answer": "提出",
+                    "explanation": "レポートや書類を出すことは「提出」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "日本の大学に（　留学　）して、日本の経済について研究したい。",
+                    "answer": "留学",
+                    "explanation": "外国で学ぶことは「留学」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "テニスの（　サークル　）に入って、週末に練習している。",
+                    "answer": "サークル",
+                    "explanation": "大学の同好会・クラブは「サークル」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "大学4年生は、（　卒業論文　）を書かなければ卒業できない。",
+                    "answer": "卒業論文",
+                    "explanation": "卒業時にまとめる研究論文は「卒業論文」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "就職活動について、先輩からいろいろな（　アドバイス　）をもらった。",
+                    "answer": "アドバイス",
+                    "explanation": "助言・意見をもらうことは「アドバイス」です。"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "exercise_id": 1,
+            "title_ja": "正しいほうを選びなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "先生から役に立つアドバイスを (a. 取った　b. もらった)。",
+                    "options": ["a. 取った", "b. もらった"],
+                    "answer": "b",
+                    "explanation": "「アドバイスをもらう」と言います。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "毎日、徹夜を (a. 作って　b. して) 勉強した。",
+                    "options": ["a. 作って", "b. して"],
+                    "answer": "b",
+                    "explanation": "「徹夜をする」と言います。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "計算の (a. ミス　b. 質問) に気がついた。",
+                    "options": ["a. ミス", "b. 質問"],
+                    "answer": "a",
+                    "explanation": "計算の間違いは「計算のミス」と言います。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "一人でアパートに (a. 住んで　b. 暮らして) いる。",
+                    "options": ["a. 住んで", "b. 暮らして"],
+                    "answer": "b",
+                    "explanation": "生活することを表すときは「一人で暮らしている」と言います。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "兄は試験に落ちたので、来年また (a. 受験　b. 入学) するつもりだ。",
+                    "options": ["a. 受験", "b. 入学"],
+                    "answer": "a",
+                    "explanation": "再度試験を受けることは「再受験」「受験する」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 2,
+            "title_ja": "（　）に入る言葉を書きなさい。最初の字がヒントです。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "家族と離れて、アパートで（　ひ____　）を始めた。",
+                    "answer": "一人暮らし",
+                    "explanation": "一人で生活することは「一人暮らし」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "毎日（　ど____　）すれば、きっと夢が叶う。",
+                    "answer": "努力",
+                    "explanation": "頑張ることは「努力」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "試験の前日に（　て____　）して、体調を崩した。",
+                    "answer": "徹夜",
+                    "explanation": "夜寝ないで起きていることは「徹夜」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "行きたい大学を（　じゅ____　）する。",
+                    "answer": "受験",
+                    "explanation": "入試を受けることは「受験」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "時間の（　か____　）をする。",
+                    "answer": "確認",
+                    "explanation": "確かめることは「確認」です。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "先生に出された（　か____　）をやる。",
+                    "answer": "課題",
+                    "explanation": "宿題やレポートなどのタスクは「課題」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 3,
+            "title_ja": "（　）に入る語を [ ] の中から選びなさい。",
+            "items": [
+                {
+                    "id": "1-1",
+                    "question_ja": "サークルの（　後輩　）にテニスを教えてあげた。",
+                    "options": ["後輩", "学費", "寮"],
+                    "answer": "後輩",
+                    "explanation": "下の学年の人は「後輩」です。"
+                },
+                {
+                    "id": "1-2",
+                    "question_ja": "アルバイトをして、自分で（　学費　）を払っている。",
+                    "options": ["後輩", "学費", "寮"],
+                    "answer": "学費",
+                    "explanation": "大学に支払う費用は「学費」です。"
+                },
+                {
+                    "id": "1-3",
+                    "question_ja": "大学の（　寮　）に入れば、家賃が安くて助かる。",
+                    "options": ["後輩", "学費", "寮"],
+                    "answer": "寮",
+                    "explanation": "学生が住む施設は「寮」です。"
+                },
+                {
+                    "id": "2-1",
+                    "question_ja": "スーパーのレジで（　計算　）をしてもらう。",
+                    "options": ["計算", "発表", "確認"],
+                    "answer": "計算",
+                    "explanation": "金額を出すことは「計算」です。"
+                },
+                {
+                    "id": "2-2",
+                    "question_ja": "明日、試験の結果が（　発表　）される。",
+                    "options": ["計算", "発表", "確認"],
+                    "answer": "発表",
+                    "explanation": "結果を知らせることは「発表」です。"
+                },
+                {
+                    "id": "2-3",
+                    "question_ja": "飛行機の出発時間をもう一度（　確認　）する。",
+                    "options": ["計算", "発表", "確認"],
+                    "answer": "確認",
+                    "explanation": "確かめることは「確認」です。"
+                },
+                {
+                    "id": "3-1",
+                    "question_ja": "夏休みにサークルの（　合宿　）で長野県へ行った。",
+                    "options": ["合宿", "参加", "実験"],
+                    "answer": "合宿",
+                    "explanation": "合宿に行くこと。"
+                },
+                {
+                    "id": "3-2",
+                    "question_ja": "ボランティア活動に（　参加　）した。",
+                    "options": ["合宿", "参加", "実験"],
+                    "answer": "参加",
+                    "explanation": "加わることは「参加」です。"
+                },
+                {
+                    "id": "3-3",
+                    "question_ja": "研究室で新しい薬の（　実験　）を続けている。",
+                    "options": ["合宿", "参加", "実験"],
+                    "answer": "実験",
+                    "explanation": "科学的なテストは「実験」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 4,
+            "title_ja": "線で結んで言葉を完成させなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "研究 ＋ [ a. 祭 / b. 者 / c. 生 / d. 費 / e. 料 ]",
+                    "options": ["a. 祭", "b. 者", "c. 生", "d. 費", "e. 料"],
+                    "answer": "b",
+                    "explanation": "研究者（けんきゅうしゃ）"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "学 ＋ [ a. 祭 / b. 者 / c. 生 / d. 費 / e. 料 ]",
+                    "options": ["a. 祭", "b. 者", "c. 生", "d. 費", "e. 料"],
+                    "answer": "d",
+                    "explanation": "学費（がくひ）"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "授業 ＋ [ a. 祭 / b. 者 / c. 生 / d. 費 / e. 料 ]",
+                    "options": ["a. 祭", "b. 者", "c. 生", "d. 費", "e. 料"],
+                    "answer": "e",
+                    "explanation": "授業料（じゅぎょうりょう）"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "学園 ＋ [ a. 祭 / b. 者 / c. 生 / d. 費 / e. 料 ]",
+                    "options": ["a. 祭", "b. 者", "c. 生", "d. 費", "e. 料"],
+                    "answer": "a",
+                    "explanation": "学園祭（がくえんさい）"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "留学 ＋ [ a. 祭 / b. 者 / c. 生 / d. 費 / e. 料 ]",
+                    "options": ["a. 祭", "b. 者", "c. 生", "d. 費", "e. 料"],
+                    "answer": "c",
+                    "explanation": "留学生（りゅうがくせい）"
+                }
+            ]
+        },
+        {
+            "exercise_id": 5,
+            "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "私は将来、日本に（①____）したいと考えていた。",
+                    "answer": "留学",
+                    "explanation": "外国で学ぶこと。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "大学の入試を（②____）するために、毎日遅くまで勉強した。",
+                    "answer": "受験",
+                    "explanation": "試験を受けること。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "試験の前日には（③____）をして最後の復習をした。",
+                    "answer": "徹夜",
+                    "explanation": "夜通し起きていること。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "本番では、慌てて計算を（④____）てしまい、簡単な（⑤____）をしてしまった。",
+                    "answer": "間違え",
+                    "explanation": "間違うの連用形。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "簡単な（⑤____）をしてしまった。",
+                    "answer": "ミス",
+                    "explanation": "誤り、ミスのこと。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "でも、無事に第一志望の大学に（⑥____）することができた。",
+                    "answer": "合格",
+                    "explanation": "試験に受かること。"
+                },
+                {
+                    "id": 7,
+                    "question_ja": "先輩から「大学選びの（⑦____）」をもらっていたのがとても役に立った。",
+                    "answer": "アドバイス",
+                    "explanation": "助言のこと。"
+                },
+                {
+                    "id": 8,
+                    "question_ja": "学費が安い（⑧____）大学に行きたかったが、受かったのは（⑨____）大学だった。",
+                    "answer": "国立",
+                    "explanation": "国が設置する大学。"
+                },
+                {
+                    "id": 9,
+                    "question_ja": "受かったのは（⑨____）大学だった。",
+                    "answer": "私立",
+                    "explanation": "民間が設置する大学。"
+                },
+                {
+                    "id": 10,
+                    "question_ja": "（⑩____）は少し高いけれど、奨学金をもらいながら（⑪____）に入って生活している。",
+                    "answer": "学費",
+                    "explanation": "学費のこと。"
+                },
+                {
+                    "id": 11,
+                    "question_ja": "奨学金をもらいながら（⑪____）に入って生活している。",
+                    "answer": "寮",
+                    "explanation": "学生寮のこと。"
+                }
+            ]
+        }
+    ]
+}
+
+print("Chapter 12 structured successfully.")
+
+# -------------------------------------------------------------
+# CHAPTER 13
+# -------------------------------------------------------------
+ch13 = {
+    "metadata": {
+        "chapter": 13,
+        "part": 1,
+        "topic_ja": "仕事1: 仕事",
+        "topic_en": "Work 1: Jobs & Work",
+        "pages": [54, 55, 56, 57]
+    },
+    "sections": [
+        {
+            "section_id": 1,
+            "title_ja": "就職する",
+            "title_en": "Finding Employment",
+            "warming_up": {
+                "question_ja": "今、どんな仕事をしていますか。または、将来どんな仕事がしたいですか。"
+            },
+            "words": [
+                {
+                    "term_ja": "募集する",
+                    "reading": "ぼしゅうする",
+                    "ruby_html": "<ruby>募集<rt>ぼしゅう</rt></ruby>する",
+                    "meaning_en": "Recruitment; recruit, advertise for",
+                    "meaning_zh": "招募，征聘",
+                    "example_ja": "社員を募集する",
+                    "example_ruby": "<ruby>社員<rt>しゃいん</rt></ruby>を<ruby>募集<rt>ぼしゅう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "スタッフ",
+                    "reading": "スタッフ",
+                    "ruby_html": "スタッフ",
+                    "meaning_en": "Staff, employee",
+                    "meaning_zh": "员工",
+                    "example_ja": "店のスタッフ",
+                    "example_ruby": "<ruby>店<rt>みせ</rt></ruby>のスタッフ"
+                },
+                {
+                    "term_ja": "社員",
+                    "reading": "しゃいん",
+                    "ruby_html": "<ruby>社員<rt>しゃいん</rt></ruby>",
+                    "meaning_en": "Employee, company member",
+                    "meaning_zh": "公司职员",
+                    "example_ja": "会社の社員",
+                    "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>社員<rt>しゃいん</rt></ruby>"
+                },
+                {
+                    "term_ja": "アルバイト",
+                    "reading": "アルバイト",
+                    "ruby_html": "アルバイト",
+                    "meaning_en": "Part-time job",
+                    "meaning_zh": "打工",
+                    "example_ja": "アルバイトを探す",
+                    "example_ruby": "アルバイトを<ruby>探<rt>さが</rt></ruby>す"
+                },
+                {
+                    "term_ja": "バイト",
+                    "reading": "バイト",
+                    "ruby_html": "バイト",
+                    "meaning_en": "Part-time job (abbreviation)",
+                    "meaning_zh": "打工（简称）",
+                    "example_ja": "バイトをする",
+                    "example_ruby": "バイトをする"
+                },
+                {
+                    "term_ja": "履歴書",
+                    "reading": "りれきしょ",
+                    "ruby_html": "<ruby>履歴書<rt>りれきしょ</rt></ruby>",
+                    "meaning_en": "Curriculum vitae, resume",
+                    "meaning_zh": "简历",
+                    "example_ja": "履歴書を書く",
+                    "example_ruby": "<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+                },
+                {
+                    "term_ja": "面接",
+                    "reading": "めんせつ",
+                    "ruby_html": "<ruby>面接<rt>めんせつ</rt></ruby>",
+                    "meaning_en": "Interview",
+                    "meaning_zh": "面试",
+                    "example_ja": "面接を受ける",
+                    "example_ruby": "<ruby>面接<rt>めんせつ</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける"
+                },
+                {
+                    "term_ja": "入社試験",
+                    "reading": "にゅうしゃしけん",
+                    "ruby_html": "<ruby>入社試験<rt>にゅうしゃしけん</rt></ruby>",
+                    "meaning_en": "Company entrance examination",
+                    "meaning_zh": "进社考试",
+                    "example_ja": "入社試験を受ける",
+                    "example_ruby": "<ruby>入社試験<rt>にゅうしゃしけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける"
+                },
+                {
+                    "term_ja": "生年月日",
+                    "reading": "せいねんがっぴ",
+                    "ruby_html": "<ruby>生年月日<rt>せいねんがっぴ</rt></ruby>",
+                    "meaning_en": "Date of birth",
+                    "meaning_zh": "出生年月日",
+                    "example_ja": "生年月日を書く",
+                    "example_ruby": "<ruby>生年月日<rt>せいねんがっぴ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+                },
+                {
+                    "term_ja": "資格",
+                    "reading": "しかく",
+                    "ruby_html": "<ruby>資格<rt>しかく</rt></ruby>",
+                    "meaning_en": "Qualification, certification",
+                    "meaning_zh": "资格",
+                    "example_ja": "資格を取る",
+                    "example_ruby": "<ruby>資格<rt>しかく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+                },
+                {
+                    "term_ja": "免許",
+                    "reading": "めんきょ",
+                    "ruby_html": "<ruby>免許<rt>めんきょ</rt></ruby>",
+                    "meaning_en": "License, permit",
+                    "meaning_zh": "执照",
+                    "example_ja": "運転免許を取る",
+                    "example_ruby": "<ruby>運転免許<rt>うんてんめんきょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+                },
+                {
+                    "term_ja": "職業",
+                    "reading": "しょくぎょう",
+                    "ruby_html": "<ruby>職業<rt>しょくぎょう</rt></ruby>",
+                    "meaning_en": "Occupation, vocation",
+                    "meaning_zh": "职业",
+                    "example_ja": "職業に就く",
+                    "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く"
+                },
+                {
+                    "term_ja": "就く",
+                    "reading": "つく",
+                    "ruby_html": "<ruby>就<rt>つ</rt></ruby>く",
+                    "meaning_en": "Take up (a post), get (a job)",
+                    "meaning_zh": "就职",
+                    "example_ja": "職業に就く",
+                    "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く"
+                },
+                {
+                    "term_ja": "企業",
+                    "reading": "きぎょう",
+                    "ruby_html": "<ruby>企業<rt>きぎょう</rt></ruby>",
+                    "meaning_en": "Enterprise, corporation",
+                    "meaning_zh": "企业",
+                    "example_ja": "有名企業に入る",
+                    "example_ruby": "<ruby>有名企業<rt>ゆうめいきぎょう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+                },
+                {
+                    "term_ja": "就職する",
+                    "reading": "しゅうしょくする",
+                    "ruby_html": "<ruby>就職<rt>しゅうしょく</rt></ruby>する",
+                    "meaning_en": "Finding employment; get a job",
+                    "meaning_zh": "就职",
+                    "example_ja": "会社に就職する",
+                    "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "入る",
+                    "reading": "はいる",
+                    "ruby_html": "<ruby>入<rt>はい</rt></ruby>る",
+                    "meaning_en": "Join, enter (a company)",
+                    "meaning_zh": "进入",
+                    "example_ja": "会社に入る",
+                    "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+                },
+                {
+                    "term_ja": "辞める",
+                    "reading": "やめる",
+                    "ruby_html": "<ruby>辞<rt>や</rt></ruby>める",
+                    "meaning_en": "Resign, quit (a job)",
+                    "meaning_zh": "辞去",
+                    "example_ja": "会社を辞める",
+                    "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>辞<rt>や</rt></ruby>める"
+                },
+                {
+                    "term_ja": "首になる",
+                    "reading": "くびになる",
+                    "ruby_html": "<ruby>首<rt>くび</rt></ruby>になる",
+                    "meaning_en": "Be fired, dismissed",
+                    "meaning_zh": "被解雇",
+                    "example_ja": "会社を首になる",
+                    "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>首<rt>くび</rt></ruby>になる"
+                },
+                {
+                    "term_ja": "失う",
+                    "reading": "うしなう",
+                    "ruby_html": "<ruby>失<rt>うしな</rt></ruby>う",
+                    "meaning_en": "Lose (a job)",
+                    "meaning_zh": "失去",
+                    "example_ja": "職を失う",
+                    "example_ruby": "<ruby>職<rt>しょく</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う"
+                },
+                {
+                    "term_ja": "会社員",
+                    "reading": "かいしゃいん",
+                    "ruby_html": "<ruby>会社員<rt>かいしゃいん</rt></ruby>",
+                    "meaning_en": "Company employee",
+                    "meaning_zh": "公司职员",
+                    "example_ja": "会社員として働く",
+                    "example_ruby": "<ruby>会社員<rt>かいしゃいん</rt></ruby>として<ruby>働<rt>はたら</rt></ruby>く"
+                },
+                {
+                    "term_ja": "公務員",
+                    "reading": "こうむいん",
+                    "ruby_html": "<ruby>公務員<rt>こうむいん</rt></ruby>",
+                    "meaning_en": "Civil servant, public official",
+                    "meaning_zh": "公务员",
+                    "example_ja": "公務員になる",
+                    "example_ruby": "<ruby>公務員<rt>こうむいん</rt></ruby>になる"
+                },
+                {
+                    "term_ja": "職人",
+                    "reading": "しょくにん",
+                    "ruby_html": "<ruby>職人<rt>しょくにん</rt></ruby>",
+                    "meaning_en": "Craftsman, artisan",
+                    "meaning_zh": "手艺人，工匠",
+                    "example_ja": "伝統の職人",
+                    "example_ruby": "<ruby>伝統<rt>でんとう</rt></ruby>の<ruby>職人<rt>しょくにん</rt></ruby>"
+                },
+                {
+                    "term_ja": "モデル",
+                    "reading": "モデル",
+                    "ruby_html": "モデル",
+                    "meaning_en": "Fashion model",
+                    "meaning_zh": "模特",
+                    "example_ja": "ファッションモデル",
+                    "example_ruby": "ファッションモデル"
+                },
+                {
+                    "term_ja": "記者",
+                    "reading": "きしゃ",
+                    "ruby_html": "<ruby>記者<rt>きしゃ</rt></ruby>",
+                    "meaning_en": "Reporter, journalist",
+                    "meaning_zh": "记者",
+                    "example_ja": "新聞記者",
+                    "example_ruby": "<ruby>新聞記者<rt>しんぶんきしゃ</rt></ruby>"
+                },
+                {
+                    "term_ja": "パイロット",
+                    "reading": "パイロット",
+                    "ruby_html": "パイロット",
+                    "meaning_en": "Pilot",
+                    "meaning_zh": "飞行员",
+                    "example_ja": "飛行機のパイロット",
+                    "example_ruby": "<ruby>飛行機<rt>ひこうき</rt></ruby>のパイロット"
+                },
+                {
+                    "term_ja": "教師",
+                    "reading": "きょうし",
+                    "ruby_html": "<ruby>教師<rt>きょうし</rt></ruby>",
+                    "meaning_en": "Teacher, instructor",
+                    "meaning_zh": "教师",
+                    "example_ja": "高校の教師",
+                    "example_ruby": "<ruby>高校<rt>こうこう</rt></ruby>の<ruby>教師<rt>きょうし</rt></ruby>"
+                },
+                {
+                    "term_ja": "医師",
+                    "reading": "いし",
+                    "ruby_html": "<ruby>医師<rt>いし</rt></ruby>",
+                    "meaning_en": "Doctor, physician",
+                    "meaning_zh": "医生",
+                    "example_ja": "病院の医師",
+                    "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>医師<rt>いし</rt></ruby>"
+                },
+                {
+                    "term_ja": "看護師",
+                    "reading": "かんごし",
+                    "ruby_html": "<ruby>看護師<rt>かんごし</rt></ruby>",
+                    "meaning_en": "Nurse",
+                    "meaning_zh": "护士",
+                    "example_ja": "病院の看護師",
+                    "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>看護師<rt>かんごし</rt></ruby>"
+                },
+                {
+                    "term_ja": "弁護士",
+                    "reading": "べんごし",
+                    "ruby_html": "<ruby>弁護士<rt>べんごし</rt></ruby>",
+                    "meaning_en": "Lawyer, attorney",
+                    "meaning_zh": "律师",
+                    "example_ja": "弁護士に依頼する",
+                    "example_ruby": "<ruby>弁護士<rt>べんごし</rt></ruby>に<ruby>依頼<rt>いらい</rt></ruby>する"
+                },
+                {
+                    "term_ja": "政治家",
+                    "reading": "せいじか",
+                    "ruby_html": "<ruby>政治家<rt>せいじか</rt></ruby>",
+                    "meaning_en": "Politician",
+                    "meaning_zh": "政治家",
+                    "example_ja": "政治家を目指す",
+                    "example_ruby": "<ruby>政治家<rt>せいじか</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "履歴書に（　生年月日　）と学歴を書く。",
+                    "answer": "生年月日",
+                    "explanation": "生まれた年月日のことです。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "この店では新しいアルバイトを（　募集　）している。",
+                    "answer": "募集",
+                    "explanation": "人を集めることは「募集」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "運転（　免許　）を取るために自動車学校に通う。",
+                    "answer": "免許",
+                    "explanation": "資格証・許可証は「免許」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "面接の前に（　履歴書　）を送らなければならない。",
+                    "answer": "履歴書",
+                    "explanation": "経歴を書いた書類は「履歴書」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "大学を卒業したら、日本のIT企業に（　就職　）したい。",
+                    "answer": "就職",
+                    "explanation": "会社などで職に就くことは「就職」です。"
+                }
+            ]
+        },
+        {
+            "section_id": 2,
+            "title_ja": "仕事をする",
+            "title_en": "Doing Work",
+            "warming_up": {
+                "question_ja": "仕事で大変なことは何だと思いますか。"
+            },
+            "words": [
+                {
+                    "term_ja": "ミーティング",
+                    "reading": "ミーティング",
+                    "ruby_html": "ミーティング",
+                    "meaning_en": "Meeting",
+                    "meaning_zh": "会议",
+                    "example_ja": "朝のミーティング",
+                    "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>のミーティング"
+                },
+                {
+                    "term_ja": "資料",
+                    "reading": "しりょう",
+                    "ruby_html": "<ruby>資料<rt>しりょう</rt></ruby>",
+                    "meaning_en": "Materials, document, data",
+                    "meaning_zh": "资料",
+                    "example_ja": "会議の資料を配る",
+                    "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る"
+                },
+                {
+                    "term_ja": "配る",
+                    "reading": "くばる",
+                    "ruby_html": "<ruby>配<rt>くば</rt></ruby>る",
+                    "meaning_en": "Distribute, hand out",
+                    "meaning_zh": "分发",
+                    "example_ja": "資料を配る",
+                    "example_ruby": "<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る"
+                },
+                {
+                    "term_ja": "スケジュール",
+                    "reading": "スケジュール",
+                    "ruby_html": "スケジュール",
+                    "meaning_en": "Schedule",
+                    "meaning_zh": "日程表",
+                    "example_ja": "スケジュールを立てる",
+                    "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる"
+                },
+                {
+                    "term_ja": "立てる",
+                    "reading": "たてる",
+                    "ruby_html": "<ruby>立<rt>た</rt></ruby>てる",
+                    "meaning_en": "Set up, make (plans/schedule)",
+                    "meaning_zh": "制定",
+                    "example_ja": "スケジュールを立てる",
+                    "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる"
+                },
+                {
+                    "term_ja": "アイデア",
+                    "reading": "アイデア",
+                    "ruby_html": "アイデア",
+                    "meaning_en": "Idea",
+                    "meaning_zh": "想法，主意",
+                    "example_ja": "アイデアを出す",
+                    "example_ruby": "アイデアを<ruby>出<rt>だ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "部長",
+                    "reading": "ぶちょう",
+                    "ruby_html": "<ruby>部長<rt>ぶちょう</rt></ruby>",
+                    "meaning_en": "Department manager, director",
+                    "meaning_zh": "部长",
+                    "example_ja": "部長の指示",
+                    "example_ruby": "<ruby>部長<rt>ぶちょう</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>"
+                },
+                {
+                    "term_ja": "指示",
+                    "reading": "しじ",
+                    "ruby_html": "<ruby>指示<rt>しじ</rt></ruby>",
+                    "meaning_en": "Instructions, directions",
+                    "meaning_zh": "指示",
+                    "example_ja": "指示を出す",
+                    "example_ruby": "<ruby>指示<rt>しじ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "作業",
+                    "reading": "さぎょう",
+                    "ruby_html": "<ruby>作業<rt>さぎょう</rt></ruby>",
+                    "meaning_en": "Work, operation, task",
+                    "meaning_zh": "操作，工作",
+                    "example_ja": "作業が進む",
+                    "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む"
+                },
+                {
+                    "term_ja": "進む",
+                    "reading": "すすむ",
+                    "ruby_html": "<ruby>進<rt>すす</rt></ruby>む",
+                    "meaning_en": "Make progress, advance",
+                    "meaning_zh": "进展",
+                    "example_ja": "作業が進む",
+                    "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む"
+                },
+                {
+                    "term_ja": "書類",
+                    "reading": "しょるい",
+                    "ruby_html": "<ruby>書類<rt>しょるい</rt></ruby>",
+                    "meaning_en": "Documents, papers",
+                    "meaning_zh": "文件",
+                    "example_ja": "書類を整理する",
+                    "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する"
+                },
+                {
+                    "term_ja": "整理する",
+                    "reading": "せいりする",
+                    "ruby_html": "<ruby>整理<rt>せいり</rt></ruby>する",
+                    "meaning_en": "Arranging; organize, tidy up",
+                    "meaning_zh": "整理",
+                    "example_ja": "書類を整理する",
+                    "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する"
+                },
+                {
+                    "term_ja": "契約",
+                    "reading": "けいやく",
+                    "ruby_html": "<ruby>契約<rt>けいやく</rt></ruby>",
+                    "meaning_en": "Contract, agreement",
+                    "meaning_zh": "契约，合同",
+                    "example_ja": "契約を結ぶ",
+                    "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ"
+                },
+                {
+                    "term_ja": "結ぶ",
+                    "reading": "むすぶ",
+                    "ruby_html": "<ruby>結<rt>むす</rt></ruby>ぶ",
+                    "meaning_en": "Conclude, sign (a contract)",
+                    "meaning_zh": "缔结",
+                    "example_ja": "契約を結ぶ",
+                    "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ"
+                },
+                {
+                    "term_ja": "商品",
+                    "reading": "しょうひん",
+                    "ruby_html": "<ruby>商品<rt>しょうひん</rt></ruby>",
+                    "meaning_en": "Goods, merchandise, product",
+                    "meaning_zh": "商品",
+                    "example_ja": "商品を販売する",
+                    "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する"
+                },
+                {
+                    "term_ja": "販売する",
+                    "reading": "はんばいする",
+                    "ruby_html": "<ruby>販売<rt>はんばい</rt></ruby>する",
+                    "meaning_en": "Sale; sell",
+                    "meaning_zh": "销售",
+                    "example_ja": "商品を販売する",
+                    "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する"
+                },
+                {
+                    "term_ja": "通う",
+                    "reading": "かよう",
+                    "ruby_html": "<ruby>通<rt>かよ</rt></ruby>う",
+                    "meaning_en": "Commute, go back and forth",
+                    "meaning_zh": "通勤，往来",
+                    "example_ja": "会社に通う",
+                    "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う"
+                },
+                {
+                    "term_ja": "通勤する",
+                    "reading": "つうきんする",
+                    "ruby_html": "<ruby>通勤<rt>つうきん</rt></ruby>する",
+                    "meaning_en": "Commute to work",
+                    "meaning_zh": "上下班",
+                    "example_ja": "電車で通勤する",
+                    "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "出勤する",
+                    "reading": "しゅっきんする",
+                    "ruby_html": "<ruby>出勤<rt>しゅっきん</rt></ruby>する",
+                    "meaning_en": "Going to work; report for work",
+                    "meaning_zh": "出勤",
+                    "example_ja": "朝9時に出勤する",
+                    "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>9<ruby>時<rt>じ</rt></ruby>に<ruby>出勤<rt>しゅっきん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "事務所",
+                    "reading": "じむしょ",
+                    "ruby_html": "<ruby>事務所<rt>じむしょ</rt></ruby>",
+                    "meaning_en": "Office",
+                    "meaning_zh": "办公室",
+                    "example_ja": "事務所で働く",
+                    "example_ruby": "<ruby>事務所<rt>じむしょ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>く"
+                },
+                {
+                    "term_ja": "オフィス",
+                    "reading": "オフィス",
+                    "ruby_html": "オフィス",
+                    "meaning_en": "Office",
+                    "meaning_zh": "办公室",
+                    "example_ja": "新しいオフィス",
+                    "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しいオフィス"
+                },
+                {
+                    "term_ja": "本社",
+                    "reading": "ほんしゃ",
+                    "ruby_html": "<ruby>本社<rt>ほんしゃ</rt></ruby>",
+                    "meaning_en": "Headquarters, head office",
+                    "meaning_zh": "总公司",
+                    "example_ja": "本社に転勤する",
+                    "example_ruby": "<ruby>本社<rt>ほんしゃ</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "深夜",
+                    "reading": "しんや",
+                    "ruby_html": "<ruby>深夜<rt>しんや</rt></ruby>",
+                    "meaning_en": "Late at night, midnight",
+                    "meaning_zh": "深夜",
+                    "example_ja": "深夜まで働く",
+                    "example_ruby": "<ruby>深夜<rt>しんや</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>く"
+                },
+                {
+                    "term_ja": "残業する",
+                    "reading": "ざんぎょうする",
+                    "ruby_html": "<ruby>残業<rt>ざんぎょう</rt></ruby>する",
+                    "meaning_en": "Overtime work; work overtime",
+                    "meaning_zh": "加班",
+                    "example_ja": "残業する日が多い",
+                    "example_ruby": "<ruby>残業<rt>ざんぎょう</rt></ruby>する<ruby>日<rt>ひ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い"
+                },
+                {
+                    "term_ja": "きつい",
+                    "reading": "きつい",
+                    "ruby_html": "きつい",
+                    "meaning_en": "Tough, hard, strenuous",
+                    "meaning_zh": "吃力，辛苦",
+                    "example_ja": "仕事がきつい",
+                    "example_ruby": "<ruby>仕事<rt>しごと</rt></ruby>がきつい"
+                },
+                {
+                    "term_ja": "楽な",
+                    "reading": "らくな",
+                    "ruby_html": "<ruby>楽<rt>らく</rt></ruby>な",
+                    "meaning_en": "Easy, comfortable",
+                    "meaning_zh": "轻松的",
+                    "example_ja": "楽な仕事",
+                    "example_ruby": "<ruby>楽<rt>らく</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>"
+                },
+                {
+                    "term_ja": "時給",
+                    "reading": "じきゅう",
+                    "ruby_html": "<ruby>時給<rt>じきゅう</rt></ruby>",
+                    "meaning_en": "Hourly wage",
+                    "meaning_zh": "时薪",
+                    "example_ja": "時給が高い",
+                    "example_ruby": "<ruby>時給<rt>じきゅう</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い"
+                },
+                {
+                    "term_ja": "給料",
+                    "reading": "きゅうりょう",
+                    "ruby_html": "<ruby>給料<rt>きゅうりょう</rt></ruby>",
+                    "meaning_en": "Salary, wage",
+                    "meaning_zh": "工资",
+                    "example_ja": "給料をもらう",
+                    "example_ruby": "<ruby>給料<rt>きゅうりょう</rt></ruby>をもらう"
+                },
+                {
+                    "term_ja": "ボーナス",
+                    "reading": "ボーナス",
+                    "ruby_html": "ボーナス",
+                    "meaning_en": "Bonus",
+                    "meaning_zh": "奖金",
+                    "example_ja": "ボーナスが出る",
+                    "example_ruby": "ボーナスが<ruby>出<rt>で</rt></ruby>る"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "毎朝、満員電車で（　通勤　）するのは大変だ。",
+                    "answer": "通勤",
+                    "explanation": "会社に通うことは「通勤」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "夏と冬に会社から（　ボーナス　）が出る。",
+                    "answer": "ボーナス",
+                    "explanation": "特別手当・賞与は「ボーナス」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "働いた時間に合わせて（　給料　）が支払われる。",
+                    "answer": "給料",
+                    "explanation": "働いた報酬は「給料」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "インターネットで手作りの小物を（　販売　）している。",
+                    "answer": "販売",
+                    "explanation": "売ることは「販売」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "このアルバイトは（　時給　）が1,200円だ。",
+                    "answer": "時給",
+                    "explanation": "1時間あたりの賃金は「時給」です。"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "exercise_id": 1,
+            "title_ja": "正しいほうを選びなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "ずっと希望していた職業に (a. なか　b. 就か) なかった。",
+                    "options": ["a. なか", "b. 就か"],
+                    "answer": "b",
+                    "explanation": "「職業に就く（つく）」と言います。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "新しいアイデアを (a. 出して　b. 立てて) 提案した。",
+                    "options": ["a. 出して", "b. 立てて"],
+                    "answer": "a",
+                    "explanation": "「アイデアを出す」と言います。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "入社試験で緊張しながら (a. 募集　b. 面接) を受けた。",
+                    "options": ["a. 募集", "b. 面接"],
+                    "answer": "b",
+                    "explanation": "「面接を受ける」と言います。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "毎朝、電車に揺られて会社に (a. 通って　b. 入って) いる。",
+                    "options": ["a. 通って", "b. 入って"],
+                    "answer": "a",
+                    "explanation": "通勤して通うことは「通っている」です。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "残業が多くて疲れたので、仕事を (a. 失う　b. 辞める) ことにした。",
+                    "options": ["a. 失う", "b. 辞める"],
+                    "answer": "b",
+                    "explanation": "自ら退職することは「辞める」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 2,
+            "title_ja": "次の説明に合う職業を「言葉」から選んで書きなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "新聞や雑誌の記事を書く人",
+                    "answer": "記者",
+                    "explanation": "新聞・雑誌の取材・記事作成を行う人。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "ファッションショーや雑誌で服を見せる人",
+                    "answer": "モデル",
+                    "explanation": "衣服や商品を身につけて見せる人。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "病院で患者の世話をする人",
+                    "answer": "看護師",
+                    "explanation": "看護を行う専門職。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "市役所や区役所などで働く人",
+                    "answer": "公務員",
+                    "explanation": "国や地方公共団体に勤務する人。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "国や地域の政治を行う人",
+                    "answer": "政治家",
+                    "explanation": "政治活動を行う人。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "伝統的な技術を使って物を作る人",
+                    "answer": "職人",
+                    "explanation": "熟練の技術を持つ工芸・製造職。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 3,
+            "title_ja": "（　）に入る言葉を [ ] の中から選びなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "忙しくて毎日遅くまで（　残業　）している。",
+                    "options": ["残業", "きつい", "スケジュール", "出勤", "深夜"],
+                    "answer": "残業",
+                    "explanation": "勤務時間外の仕事は「残業」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "体を使う仕事なので、体力的にはかなり（　きつい　）。",
+                    "options": ["残業", "きつい", "スケジュール", "出勤", "深夜"],
+                    "answer": "きつい",
+                    "explanation": "過酷・大変なことは「きつい」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "来週の（　スケジュール　）をカレンダーに書き込んだ。",
+                    "options": ["残業", "きつい", "スケジュール", "出勤", "深夜"],
+                    "answer": "スケジュール",
+                    "explanation": "日程・予定は「スケジュール」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "毎朝8時半までに会社に（　出勤　）する。",
+                    "options": ["残業", "きつい", "スケジュール", "出勤", "深夜"],
+                    "answer": "出勤",
+                    "explanation": "出勤すること。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "（　深夜　）まで働いて、終電を逃してしまった。",
+                    "options": ["残業", "きつい", "スケジュール", "出勤", "深夜"],
+                    "answer": "深夜",
+                    "explanation": "夜遅い時間は「深夜」です。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 4,
+            "title_ja": "（　）に入る語を [ ] の中から選びなさい。",
+            "items": [
+                {
+                    "id": "1-1",
+                    "question_ja": "来年の4月に新しい会社への（　入社　）が決まった。",
+                    "options": ["入社", "作業", "契約"],
+                    "answer": "入社",
+                    "explanation": "会社に入ること。"
+                },
+                {
+                    "id": "1-2",
+                    "question_ja": "工場での（　作業　）は安全第一で行われる。",
+                    "options": ["入社", "作業", "契約"],
+                    "answer": "作業",
+                    "explanation": "仕事・作業のこと。"
+                },
+                {
+                    "id": "1-3",
+                    "question_ja": "取引先と新しい（　契約　）を結んだ。",
+                    "options": ["入社", "作業", "契約"],
+                    "answer": "契約",
+                    "explanation": "「契約を結ぶ」と言います。"
+                },
+                {
+                    "id": "2-1",
+                    "question_ja": "駅の近くに新しい（　オフィス　）を借りた。",
+                    "options": ["オフィス", "アイデア", "ミーティング"],
+                    "answer": "オフィス",
+                    "explanation": "事務所・オフィス。"
+                },
+                {
+                    "id": "2-2",
+                    "question_ja": "みんなで（　アイデア　）を出し合って解決策を考えた。",
+                    "options": ["オフィス", "アイデア", "ミーティング"],
+                    "answer": "アイデア",
+                    "explanation": "考え・アイデア。"
+                },
+                {
+                    "id": "2-3",
+                    "question_ja": "毎朝10分間の（　ミーティング　）を行っている。",
+                    "options": ["オフィス", "アイデア", "ミーティング"],
+                    "answer": "ミーティング",
+                    "explanation": "簡単な打ち合わせ・会議。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 5,
+            "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "大学を卒業して、貿易会社に（①____）した。",
+                    "answer": "就職",
+                    "explanation": "就職すること。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "会社が新しい（②____）を（③____）していたのを見て、",
+                    "answer": "スタッフ",
+                    "explanation": "社員・スタッフのこと。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "新しいスタッフを（③____）していたのを見て、",
+                    "answer": "募集",
+                    "explanation": "募集すること。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "（④____）を送って（⑤____）を受けた。",
+                    "answer": "履歴書",
+                    "explanation": "履歴書のこと。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "履歴書を送って（⑤____）を受けた。",
+                    "answer": "面接",
+                    "explanation": "面接のこと。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "運転（⑥____）や英語の（⑦____）を持っていたのが評価されたらしい。",
+                    "answer": "免許",
+                    "explanation": "免許証のこと。"
+                },
+                {
+                    "id": 7,
+                    "question_ja": "英語の（⑦____）を持っていたのが評価されたらしい。",
+                    "answer": "資格",
+                    "explanation": "資格のこと。"
+                },
+                {
+                    "id": 8,
+                    "question_ja": "最初は（⑧____）や（⑨____）の（⑩____）など、簡単な仕事が多かったが、",
+                    "answer": "書類",
+                    "explanation": "書類のこと。"
+                },
+                {
+                    "id": 9,
+                    "question_ja": "資料の（⑩____）など、簡単な仕事が多かったが、",
+                    "answer": "資料",
+                    "explanation": "資料のこと。"
+                },
+                {
+                    "id": 10,
+                    "question_ja": "資料の（⑩____）など、簡単な仕事が多かったが、",
+                    "answer": "整理",
+                    "explanation": "整理すること。"
+                },
+                {
+                    "id": 11,
+                    "question_ja": "途中で（⑪____）ることもなく、真面目に（⑫____）を続けた。",
+                    "answer": "辞め",
+                    "explanation": "辞めること。"
+                },
+                {
+                    "id": 12,
+                    "question_ja": "真面目に（⑫____）を続けた。",
+                    "answer": "作業",
+                    "explanation": "作業のこと。"
+                },
+                {
+                    "id": 13,
+                    "question_ja": "部長の（⑬____）をよく聞いて仕事をした結果、大きなプロジェクトに（⑭____）くことができた。",
+                    "answer": "指示",
+                    "explanation": "指示のこと。"
+                },
+                {
+                    "id": 14,
+                    "question_ja": "大きなプロジェクトに（⑭____）くことができた。",
+                    "answer": "就い",
+                    "explanation": "就くこと。"
+                }
+            ]
+        }
+    ]
+}
+
+print("Chapter 13 structured successfully.")
+
+# -------------------------------------------------------------
+# CHAPTER 14
+# -------------------------------------------------------------
+ch14 = {
+    "metadata": {
+        "chapter": 14,
+        "part": 1,
+        "topic_ja": "仕事2: コンピューター、郵便、電話など",
+        "topic_en": "Work 2: Computers, Mail, Phone, etc.",
+        "pages": [58, 59, 60, 61]
+    },
+    "sections": [
+        {
+            "section_id": 1,
+            "title_ja": "コンピューター",
+            "title_en": "Computers",
+            "warming_up": {
+                "question_ja": "どんなときにコンピューターを使いますか。"
+            },
+            "words": [
+                {
+                    "term_ja": "パソコン",
+                    "reading": "パソコン",
+                    "ruby_html": "パソコン",
+                    "meaning_en": "Personal computer, PC",
+                    "meaning_zh": "个人电脑",
+                    "example_ja": "パソコンを使う",
+                    "example_ruby": "パソコンを<ruby>使<rt>つか</rt></ruby>う"
+                },
+                {
+                    "term_ja": "スイッチ",
+                    "reading": "スイッチ",
+                    "ruby_html": "スイッチ",
+                    "meaning_en": "Switch",
+                    "meaning_zh": "开关",
+                    "example_ja": "スイッチを入れる",
+                    "example_ruby": "スイッチを<ruby>入<rt>い</rt></ruby>れる"
+                },
+                {
+                    "term_ja": "クリックする",
+                    "reading": "クリックする",
+                    "ruby_html": "クリックする",
+                    "meaning_en": "Click (mouse)",
+                    "meaning_zh": "点击",
+                    "example_ja": "ボタンをクリックする",
+                    "example_ruby": "ボタンをクリックする"
+                },
+                {
+                    "term_ja": "マウス",
+                    "reading": "マウス",
+                    "ruby_html": "マウス",
+                    "meaning_en": "Mouse",
+                    "meaning_zh": "鼠标",
+                    "example_ja": "マウスを動かす",
+                    "example_ruby": "マウスを<ruby>動<rt>うご</rt></ruby>かす"
+                },
+                {
+                    "term_ja": "ボタン",
+                    "reading": "ボタン",
+                    "ruby_html": "ボタン",
+                    "meaning_en": "Button",
+                    "meaning_zh": "按钮",
+                    "example_ja": "ボタンを押す",
+                    "example_ruby": "ボタンを<ruby>押<rt>お</rt></ruby>す"
+                },
+                {
+                    "term_ja": "ファイル",
+                    "reading": "ファイル",
+                    "ruby_html": "ファイル",
+                    "meaning_en": "File",
+                    "meaning_zh": "文件",
+                    "example_ja": "ファイルを開く",
+                    "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く"
+                },
+                {
+                    "term_ja": "開く",
+                    "reading": "ひらく",
+                    "ruby_html": "<ruby>開<rt>ひら</rt></ruby>く",
+                    "meaning_en": "Open (a file)",
+                    "meaning_zh": "打开",
+                    "example_ja": "ファイルを開く",
+                    "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く"
+                },
+                {
+                    "term_ja": "閉じる",
+                    "reading": "とじる",
+                    "ruby_html": "<ruby>閉<rt>と</rt></ruby>じる",
+                    "meaning_en": "Close (a file)",
+                    "meaning_zh": "关闭",
+                    "example_ja": "ファイルを閉じる",
+                    "example_ruby": "ファイルを<ruby>閉<rt>と</rt></ruby>じる"
+                },
+                {
+                    "term_ja": "画面",
+                    "reading": "がめん",
+                    "ruby_html": "<ruby>画面<rt>がめん</rt></ruby>",
+                    "meaning_en": "Screen",
+                    "meaning_zh": "画面，屏幕",
+                    "example_ja": "画面を見る",
+                    "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>を<ruby>見<rt>み</rt></ruby>る"
+                },
+                {
+                    "term_ja": "表示する",
+                    "reading": "ひょうじする",
+                    "ruby_html": "<ruby>表示<rt>ひょうじ</rt></ruby>する",
+                    "meaning_en": "Display, show",
+                    "meaning_zh": "显示",
+                    "example_ja": "画面に表示する",
+                    "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>する"
+                },
+                {
+                    "term_ja": "入力する",
+                    "reading": "にゅうりょくする",
+                    "ruby_html": "<ruby>入力<rt>にゅうりょく</rt></ruby>する",
+                    "meaning_en": "Input, enter (data)",
+                    "meaning_zh": "输入",
+                    "example_ja": "文字を入力する",
+                    "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "文字",
+                    "reading": "もじ",
+                    "ruby_html": "<ruby>文字<rt>もじ</rt></ruby>",
+                    "meaning_en": "Character, letter",
+                    "meaning_zh": "文字",
+                    "example_ja": "文字を入力する",
+                    "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "数字",
+                    "reading": "すうじ",
+                    "ruby_html": "<ruby>数字<rt>すうじ</rt></ruby>",
+                    "meaning_en": "Number, figure",
+                    "meaning_zh": "数字",
+                    "example_ja": "数字を入力する",
+                    "example_ruby": "<ruby>数字<rt>すうじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "パスワード",
+                    "reading": "パスワード",
+                    "ruby_html": "パスワード",
+                    "meaning_en": "Password",
+                    "meaning_zh": "密码",
+                    "example_ja": "パスワードを入力する",
+                    "example_ruby": "パスワードを<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+                },
+                {
+                    "term_ja": "確認する",
+                    "reading": "かくにんする",
+                    "ruby_html": "<ruby>確認<rt>かくにん</rt></ruby>する",
+                    "meaning_en": "Confirm, check",
+                    "meaning_zh": "确认",
+                    "example_ja": "パスワードを確認する",
+                    "example_ruby": "パスワードを<ruby>確認<rt>かくにん</rt></ruby>する"
+                },
+                {
+                    "term_ja": "メール",
+                    "reading": "メール",
+                    "ruby_html": "メール",
+                    "meaning_en": "Email, mail",
+                    "meaning_zh": "邮件",
+                    "example_ja": "メールをチェックする",
+                    "example_ruby": "メールをチェックする"
+                },
+                {
+                    "term_ja": "チェックする",
+                    "reading": "チェックする",
+                    "ruby_html": "チェックする",
+                    "meaning_en": "Check",
+                    "meaning_zh": "检查，查收",
+                    "example_ja": "メールをチェックする",
+                    "example_ruby": "メールをチェックする"
+                },
+                {
+                    "term_ja": "ウェブサイト",
+                    "reading": "ウェブサイト",
+                    "ruby_html": "ウェブサイト",
+                    "meaning_en": "Website",
+                    "meaning_zh": "网站",
+                    "example_ja": "ウェブサイトを見る",
+                    "example_ruby": "ウェブサイトを<ruby>見<rt>み</rt></ruby>る"
+                },
+                {
+                    "term_ja": "サイト",
+                    "reading": "サイト",
+                    "ruby_html": "サイト",
+                    "meaning_en": "Site, website",
+                    "meaning_zh": "网站",
+                    "example_ja": "サイトで調べる",
+                    "example_ruby": "サイトで<ruby>調<rt>しら</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "ホームページ",
+                    "reading": "ホームページ",
+                    "ruby_html": "ホームページ",
+                    "meaning_en": "Homepage, website",
+                    "meaning_zh": "网页，主页",
+                    "example_ja": "ホームページを見る",
+                    "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る"
+                },
+                {
+                    "term_ja": "見る",
+                    "reading": "みる",
+                    "ruby_html": "<ruby>見<rt>み</rt></ruby>る",
+                    "meaning_en": "Look at, browse",
+                    "meaning_zh": "看，浏览",
+                    "example_ja": "ホームページを見る",
+                    "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る"
+                },
+                {
+                    "term_ja": "インターネット",
+                    "reading": "インターネット",
+                    "ruby_html": "インターネット",
+                    "meaning_en": "Internet",
+                    "meaning_zh": "因特网",
+                    "example_ja": "インターネットで調べる",
+                    "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "調べる",
+                    "reading": "しらべる",
+                    "ruby_html": "<ruby>調<rt>しら</rt></ruby>べる",
+                    "meaning_en": "Search, look up",
+                    "meaning_zh": "调查，查询",
+                    "example_ja": "インターネットで調べる",
+                    "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "サービス",
+                    "reading": "サービス",
+                    "ruby_html": "サービス",
+                    "meaning_en": "Service",
+                    "meaning_zh": "服务",
+                    "example_ja": "オンラインサービスを利用する",
+                    "example_ruby": "オンラインサービスを<ruby>利用<rt>りよう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "利用する",
+                    "reading": "りようする",
+                    "ruby_html": "<ruby>利用<rt>りよう</rt></ruby>する",
+                    "meaning_en": "Use, utilize",
+                    "meaning_zh": "利用",
+                    "example_ja": "サービスを利用する",
+                    "example_ruby": "サービスを<ruby>利用<rt>りよう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "文章",
+                    "reading": "ぶんしょう",
+                    "ruby_html": "<ruby>文章<rt>ぶんしょう</rt></ruby>",
+                    "meaning_en": "Sentence, text, writing",
+                    "meaning_zh": "文章",
+                    "example_ja": "文章をまとめる",
+                    "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる"
+                },
+                {
+                    "term_ja": "まとめる",
+                    "reading": "まとめる",
+                    "ruby_html": "まとめる",
+                    "meaning_en": "Summarize, gather together",
+                    "meaning_zh": "归纳，整理",
+                    "example_ja": "文章をまとめる",
+                    "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる"
+                },
+                {
+                    "term_ja": "基本",
+                    "reading": "きほん",
+                    "ruby_html": "<ruby>基本<rt>きほん</rt></ruby>",
+                    "meaning_en": "Basics, foundation",
+                    "meaning_zh": "基础",
+                    "example_ja": "パソコンの基本",
+                    "example_ruby": "パソコンの<ruby>基本<rt>きほん</rt></ruby>"
+                },
+                {
+                    "term_ja": "マスターする",
+                    "reading": "マスターする",
+                    "ruby_html": "マスターする",
+                    "meaning_en": "Master, learn thoroughly",
+                    "meaning_zh": "掌握",
+                    "example_ja": "基本をマスターする",
+                    "example_ruby": "<ruby>基本<rt>きほん</rt></ruby>をマスターする"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "（　インターネット　）でホテルの予約をする。",
+                    "answer": "インターネット",
+                    "explanation": "ネット通信網は「インターネット」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "パソコンの（　スイッチ　）を入れる。",
+                    "answer": "スイッチ",
+                    "explanation": "電源の入れ口は「スイッチ」です。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "マウスのボタンを（　クリック　）する。",
+                    "answer": "クリック",
+                    "explanation": "マウスを押す動作は「クリック」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "大学の（　ホームページ　）を見る。",
+                    "answer": "ホームページ",
+                    "explanation": "ウェブサイト・ウェブページのこと。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "オンライン（　サービス　）を利用する。",
+                    "answer": "サービス",
+                    "explanation": "提供される便益・サービス。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "ログインするために（　パスワード　）を入力する。",
+                    "answer": "パスワード",
+                    "explanation": "秘密の文字列は「パスワード」です。"
+                }
+            ]
+        },
+        {
+            "section_id": 2,
+            "title_ja": "郵便、電話など",
+            "title_en": "Mail, Telephone, etc.",
+            "warming_up": {
+                "question_ja": "国の家族や友達に何か送ったことがありますか。どんな方法で何を送りましたか。"
+            },
+            "words": [
+                {
+                    "term_ja": "書類",
+                    "reading": "しょるい",
+                    "ruby_html": "<ruby>書類<rt>しょるい</rt></ruby>",
+                    "meaning_en": "Document, papers",
+                    "meaning_zh": "文件",
+                    "example_ja": "書類を郵送する",
+                    "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "郵送する",
+                    "reading": "ゆうそうする",
+                    "ruby_html": "<ruby>郵送<rt>ゆうそう</rt></ruby>する",
+                    "meaning_en": "Mail (v); send by post",
+                    "meaning_zh": "邮寄",
+                    "example_ja": "書類を郵送する",
+                    "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する"
+                },
+                {
+                    "term_ja": "速達",
+                    "reading": "そくたつ",
+                    "ruby_html": "<ruby>速達<rt>そくたつ</rt></ruby>",
+                    "meaning_en": "Express mail, special delivery",
+                    "meaning_zh": "快递",
+                    "example_ja": "速達で手紙を出す",
+                    "example_ruby": "<ruby>速達<rt>そくたつ</rt></ruby>で<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "配達する",
+                    "reading": "はいたつする",
+                    "ruby_html": "<ruby>配達<rt>はいたつ</rt></ruby>する",
+                    "meaning_en": "Delivery; deliver",
+                    "meaning_zh": "投递",
+                    "example_ja": "手紙を配達する",
+                    "example_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>配達<rt>はいたつ</rt></ruby>する"
+                },
+                {
+                    "term_ja": "郵便",
+                    "reading": "ゆうびん",
+                    "ruby_html": "<ruby>郵便<rt>ゆうびん</rt></ruby>",
+                    "meaning_en": "Post, mail service",
+                    "meaning_zh": "邮政",
+                    "example_ja": "郵便で荷物が届く",
+                    "example_ruby": "<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く"
+                },
+                {
+                    "term_ja": "届く",
+                    "reading": "とどく",
+                    "ruby_html": "<ruby>届<rt>とど</rt></ruby>く",
+                    "meaning_en": "Arrive, be delivered",
+                    "meaning_zh": "寄到",
+                    "example_ja": "荷物が届く",
+                    "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く"
+                },
+                {
+                    "term_ja": "つながる",
+                    "reading": "つながる",
+                    "ruby_html": "つながる",
+                    "meaning_en": "Be connected (phone/line)",
+                    "meaning_zh": "(电话) 接通",
+                    "example_ja": "電話がつながる",
+                    "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>がつながる"
+                },
+                {
+                    "term_ja": "切れる",
+                    "reading": "きれる",
+                    "ruby_html": "<ruby>切<rt>き</rt></ruby>れる",
+                    "meaning_en": "Be disconnected, hang up",
+                    "meaning_zh": "(电话) 挂断",
+                    "example_ja": "電話が切れる",
+                    "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる"
+                },
+                {
+                    "term_ja": "しゃべる",
+                    "reading": "しゃべる",
+                    "ruby_html": "しゃべる",
+                    "meaning_en": "Chat, talk",
+                    "meaning_zh": "说话",
+                    "example_ja": "友達と電話でしゃべる",
+                    "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>電話<rt>でんわ</rt></ruby>でしゃべる"
+                },
+                {
+                    "term_ja": "連絡を取る",
+                    "reading": "れんらくをとる",
+                    "ruby_html": "<ruby>連絡<rt>れんらく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+                    "meaning_en": "Get in touch, contact",
+                    "meaning_zh": "联系",
+                    "example_ja": "先生と連絡を取る",
+                    "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>と<ruby>連絡<rt>れんらく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+                },
+                {
+                    "term_ja": "携帯電話",
+                    "reading": "けいたいでんわ",
+                    "ruby_html": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>",
+                    "meaning_en": "Mobile phone, cellphone",
+                    "meaning_zh": "手机",
+                    "example_ja": "携帯電話の電源を切る",
+                    "example_ruby": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る"
+                },
+                {
+                    "term_ja": "電源",
+                    "reading": "でんげん",
+                    "ruby_html": "<ruby>電源<rt>でんげん</rt></ruby>",
+                    "meaning_en": "Power source, power switch",
+                    "meaning_zh": "电源",
+                    "example_ja": "電源を切る",
+                    "example_ruby": "<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る"
+                },
+                {
+                    "term_ja": "マナー",
+                    "reading": "マナー",
+                    "ruby_html": "マナー",
+                    "meaning_en": "Manners, etiquette",
+                    "meaning_zh": "礼仪",
+                    "example_ja": "マナーを守る",
+                    "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る"
+                },
+                {
+                    "term_ja": "守る",
+                    "reading": "まもる",
+                    "ruby_html": "<ruby>守<rt>まも</rt></ruby>る",
+                    "meaning_en": "Keep, observe, protect",
+                    "meaning_zh": "遵守",
+                    "example_ja": "マナーを守る",
+                    "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る"
+                },
+                {
+                    "term_ja": "メッセージ",
+                    "reading": "メッセージ",
+                    "ruby_html": "メッセージ",
+                    "meaning_en": "Message",
+                    "meaning_zh": "信息，留言",
+                    "example_ja": "メッセージを送る",
+                    "example_ruby": "メッセージを<ruby>送<rt>おく</rt></ruby>る"
+                },
+                {
+                    "term_ja": "残す",
+                    "reading": "のこす",
+                    "ruby_html": "<ruby>残<rt>のこ</rt></ruby>す",
+                    "meaning_en": "Leave (a message)",
+                    "meaning_zh": "留下",
+                    "example_ja": "メッセージを残す",
+                    "example_ruby": "メッセージを<ruby>残<rt>のこ</rt></ruby>す"
+                },
+                {
+                    "term_ja": "再生する",
+                    "reading": "さいせいする",
+                    "ruby_html": "<ruby>再生<rt>さいせい</rt></ruby>する",
+                    "meaning_en": "Play back, replay",
+                    "meaning_zh": "播放 (音乐等)",
+                    "example_ja": "メッセージを再生する",
+                    "example_ruby": "メッセージを<ruby>再生<rt>さいせい</rt></ruby>する"
+                },
+                {
+                    "term_ja": "ファックス",
+                    "reading": "ファックス",
+                    "ruby_html": "ファックス",
+                    "meaning_en": "Fax, facsimile",
+                    "meaning_zh": "传真",
+                    "example_ja": "ファックスで送る",
+                    "example_ruby": "ファックスで<ruby>送<rt>おく</rt></ruby>る"
+                },
+                {
+                    "term_ja": "郵便番号",
+                    "reading": "ゆうびんばんごう",
+                    "ruby_html": "<ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>",
+                    "meaning_en": "Postal code, zip code",
+                    "meaning_zh": "邮政编码",
+                    "example_ja": "郵便番号を調べる",
+                    "example_ruby": "<ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "送料",
+                    "reading": "そうりょう",
+                    "ruby_html": "<ruby>送料<rt>そうりょう</rt></ruby>",
+                    "meaning_en": "Postage, shipping fee",
+                    "meaning_zh": "邮费",
+                    "example_ja": "送料を調べる",
+                    "example_ruby": "<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる"
+                },
+                {
+                    "term_ja": "宅配便",
+                    "reading": "たくはいびん",
+                    "ruby_html": "<ruby>宅配便<rt>たくはいびん</rt></ruby>",
+                    "meaning_en": "Home delivery service, courier",
+                    "meaning_zh": "宅急送",
+                    "example_ja": "宅配便で荷物を送る",
+                    "example_ruby": "<ruby>宅配便<rt>たくはいびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る"
+                },
+                {
+                    "term_ja": "航空便",
+                    "reading": "こうくうびん",
+                    "ruby_html": "<ruby>航空便<rt>こうくうびん</rt></ruby>",
+                    "meaning_en": "Airmail",
+                    "meaning_zh": "航空邮件",
+                    "example_ja": "航空便で送る",
+                    "example_ruby": "<ruby>航空便<rt>こうくうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る"
+                },
+                {
+                    "term_ja": "船便",
+                    "reading": "ふなびん",
+                    "ruby_html": "<ruby>船便<rt>ふなびん</rt></ruby>",
+                    "meaning_en": "Surface mail, sea mail",
+                    "meaning_zh": "水陆路邮件",
+                    "example_ja": "船便で送る",
+                    "example_ruby": "<ruby>船便<rt>ふなびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る"
+                }
+            ],
+            "yattemiyou": [
+                {
+                    "id": 1,
+                    "question_ja": "今日の午後、母が送ってくれた荷物が家に（　届く　）予定だ。",
+                    "answer": "届く",
+                    "explanation": "荷物が届くこと。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "（　マナー　）を守って、電車の中で携帯電話を使うのはやめましょう。",
+                    "answer": "マナー",
+                    "explanation": "公共の礼儀・マナー。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "新聞屋さんが毎朝6時ごろに新聞を（　配達　）してくれる。",
+                    "answer": "配達",
+                    "explanation": "届けて配ることは「配達」です。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "ボタンを押すと、電話に残された（　メッセージ　）が再生される。",
+                    "answer": "メッセージ",
+                    "explanation": "伝言・メッセージ。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "タクシーの中で電話をかけていると、電話が（　切れる　）ことがある。",
+                    "answer": "切れる",
+                    "explanation": "通信が切れること。"
+                }
+            ]
+        }
+    ],
+    "exercises": [
+        {
+            "exercise_id": 1,
+            "title_ja": "正しいほうを選びなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "クラスで友達に旅行のお土産を (a. 配達した　b. 配った)。",
+                    "options": ["a. 配達した", "b. 配った"],
+                    "answer": "b",
+                    "explanation": "みんなに分け与えるときは「配った」です。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "このボタンを (a. 入れる　b. 押す) と、テレビがつきます。",
+                    "options": ["a. 入れる", "b. 押す"],
+                    "answer": "b",
+                    "explanation": "「ボタンを押す」と言います。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "メールを (a. チェック　b. スイッチ) した。",
+                    "options": ["a. チェック", "b. スイッチ"],
+                    "answer": "a",
+                    "explanation": "「メールをチェックする」と言います。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "最近、田中さんと連絡を (a. して　b. 取って) いない。",
+                    "options": ["a. して", "b. 取って"],
+                    "answer": "b",
+                    "explanation": "「連絡を取る」と言います。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "パソコンの電源を切る前に、ファイルを (a. 閉めて　b. 閉じて) ください。",
+                    "options": ["a. 閉めて", "b. 閉じて"],
+                    "answer": "b",
+                    "explanation": "ファイルを終了することは「閉じる」と言います。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 2,
+            "title_ja": "（　）に入る語を [ ] の中から選びなさい。",
+            "items": [
+                {
+                    "id": "1-1",
+                    "question_ja": "ここにパスワードを（　入力　）すると、ファイルが開きます。",
+                    "options": ["入力", "表示", "再生"],
+                    "answer": "入力",
+                    "explanation": "パスワードを入れること。"
+                },
+                {
+                    "id": "1-2",
+                    "question_ja": "コンピューターで音楽を（　再生　）して聞く。",
+                    "options": ["入力", "表示", "再生"],
+                    "answer": "再生",
+                    "explanation": "音や映像を再生すること。"
+                },
+                {
+                    "id": "1-3",
+                    "question_ja": "古いパソコンなので画面を（　表示　）するスピードが遅い。",
+                    "options": ["入力", "表示", "再生"],
+                    "answer": "表示",
+                    "explanation": "画面に映し出すこと。"
+                },
+                {
+                    "id": "2-1",
+                    "question_ja": "今日中にこの（　書類　）に必要なことを書いて、送らなければならない。",
+                    "options": ["文字", "基本", "書類"],
+                    "answer": "書類",
+                    "explanation": "提出用文書のこと。"
+                },
+                {
+                    "id": "2-2",
+                    "question_ja": "このファイルは壊れていて、開くと、変な（　文字　）がいっぱい出てくる。",
+                    "options": ["文字", "基本", "書類"],
+                    "answer": "文字",
+                    "explanation": "文字化けのこと。"
+                },
+                {
+                    "id": "2-3",
+                    "question_ja": "パソコンが苦手なので、（　基本　）的なところから勉強したい。",
+                    "options": ["文字", "基本", "書類"],
+                    "answer": "基本",
+                    "explanation": "基本のこと。"
+                },
+                {
+                    "id": "3-1",
+                    "question_ja": "母が（　残した　）メモには「5時に帰ります」と書いてあった。",
+                    "options": ["残した", "マスターした", "まとめた"],
+                    "answer": "残した",
+                    "explanation": "置いておくこと。"
+                },
+                {
+                    "id": "3-2",
+                    "question_ja": "彼は英語の次に中国語を（　マスターした　）。",
+                    "options": ["残した", "マスターした", "まとめた"],
+                    "answer": "マスターした",
+                    "explanation": "習得すること。"
+                },
+                {
+                    "id": "3-3",
+                    "question_ja": "言いたいことを一つに（　まとめた　）ほうが、発表がわかりやすくなるよ。",
+                    "options": ["残した", "マスターした", "まとめた"],
+                    "answer": "まとめた",
+                    "explanation": "要約・整理すること。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 3,
+            "title_ja": "次の説明に合う語を「言葉」から選んで書きなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "あなただけしか知らない、パソコンに入力する特別な文字や数字",
+                    "answer": "パスワード",
+                    "explanation": "秘密の符号・パスワード。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "電話がつながるところに、紙に書いたものをそのまま送る機械",
+                    "answer": "ファックス",
+                    "explanation": "紙文書を送るファックス。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "食事や運転など人が生活するときに、守らなければならないルール",
+                    "answer": "マナー",
+                    "explanation": "生活のマナー・礼儀。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "動物の名前のついた、パソコンを使うときに使うもの",
+                    "answer": "マウス",
+                    "explanation": "ネズミに似たマウス。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 4,
+            "title_ja": "似た意味の語を「言葉」の中から選び、必要なら形を変えて、（　）に入れなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "A: 郵便で送ってもいいですか。　B: はい、（　郵送　）でもかまいません。",
+                    "answer": "郵送",
+                    "explanation": "「郵便で送る」ことの同義語。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "A: おかしいな。電話がかからない。　B: ここは地下だから、携帯電話が（　つながり　）にくいのかもしれないよ。",
+                    "answer": "つながり",
+                    "explanation": "「電話がかかる」と「つながる」。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "A: メールより電話で（　しゃべった　）ほうが早いこともあるよね。　B: そうですね。電話で話したほうが、書くより早いですからね。",
+                    "answer": "しゃべった",
+                    "explanation": "「話す」と「しゃべる」。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "A: 帰るときに、コピー機の（　電源　）も切ってくださいね。　B: すみません。このコピー機のスイッチはどこにあるんでしょうか。",
+                    "answer": "電源",
+                    "explanation": "スイッチ・電源。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 5,
+            "title_ja": "正しいものには〇、正しくないものには×を書きなさい。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "知らない人からメールでファイルが届いたときは、開けないほうがいい。",
+                    "answer": "〇",
+                    "explanation": "ウイルスなどの恐れがあるため正しい。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "電話で頼むと、配達してくれるすし屋が日本にはある。",
+                    "answer": "〇",
+                    "explanation": "出前・デリバリーがあるため正しい。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "キーボードを使わなければ、パソコンに文字を入力することはできない。",
+                    "answer": "×",
+                    "explanation": "音声入力や画面上ソフトキーボードもある。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "速達で手紙を出せば、日本中どこでも大体1日で手紙が届く。",
+                    "answer": "〇",
+                    "explanation": "速達はおおむね翌日届くため正しい。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "マウスのボタンをクリックすると、ファイルを選ぶことができる。",
+                    "answer": "〇",
+                    "explanation": "ファイルを選択できるため正しい。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "パスワードと電話番号は同じにしたほうがいい。",
+                    "answer": "×",
+                    "explanation": "セキュリティ上非常に危険。"
+                }
+            ]
+        },
+        {
+            "exercise_id": 6,
+            "title_ja": "「言葉」の語を（　）に入れて、文章を作りなさい。最初の字はヒントです。",
+            "items": [
+                {
+                    "id": 1,
+                    "question_ja": "私は毎朝、会社に来ると、まず、メールを (①チェ____) している。",
+                    "answer": "チェック",
+                    "explanation": "メールをチェックすること。"
+                },
+                {
+                    "id": 2,
+                    "question_ja": "今朝もパソコンの (②ス____) を入れてメールを見てみた。",
+                    "answer": "スイッチ",
+                    "explanation": "スイッチを入れること。"
+                },
+                {
+                    "id": 3,
+                    "question_ja": "すると、お客さんから今日の会議についてのメールが来ていた。(③ファ____) が付いていたので、開こうとしたが、なぜか開かなかった。",
+                    "answer": "ファイル",
+                    "explanation": "添付ファイルのこと。"
+                },
+                {
+                    "id": 4,
+                    "question_ja": "会議は今日の午後なので、できれば午前中に何が書いてあるのか (④か____) したい。",
+                    "answer": "確認",
+                    "explanation": "確かめること。"
+                },
+                {
+                    "id": 5,
+                    "question_ja": "お客さんと早く (⑤れ____) が取りたかったので、お客さんの会社に電話をしてみたが、留守だった。",
+                    "answer": "連絡",
+                    "explanation": "連絡を取ること。"
+                },
+                {
+                    "id": 6,
+                    "question_ja": "お客さんの (⑥け____) にも電話をしてみたが、電話に出なかった。",
+                    "answer": "携帯電話",
+                    "explanation": "携帯電話のこと。"
+                },
+                {
+                    "id": 7,
+                    "question_ja": "留守番電話に (⑦メ____) を残すことにした。",
+                    "answer": "メッセージ",
+                    "explanation": "メッセージのこと。"
+                },
+                {
+                    "id": 8,
+                    "question_ja": "留守番電話にメッセージを (⑧の____) ことにした。",
+                    "answer": "残す",
+                    "explanation": "残すこと。"
+                }
+            ]
+        }
+    ]
+}
+
+print("Chapter 14 structured successfully.")
+
+from vocab_data.review_03 import review_03
+from vocab_data.ch15 import ch15
+
+all_chapters = [ch11, ch12, ch13, ch14, review_03, ch15]
+
+output_data = {
+    "title": "Part 1 Topics Chapters 11-15 & Review Test 3",
+    "part": 1,
+    "chapters": all_chapters
+}
+
+with open(out_file, "w", encoding="utf-8") as f:
+    json.dump(output_data, f, ensure_ascii=False, indent=2)
+
+print(f"Successfully generated {out_file} with {len(all_chapters)} units.")

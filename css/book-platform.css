@@ -1,0 +1,588 @@
+/* =======================================================
+   NIHONGO INTERMEDIATE — book-platform.css
+   Self-Contained Book Platform Styles (Option 1)
+   Pillar Sub-Tabs, Pillar SRS & Hard Panes, Settings Drawer
+   ======================================================= */
+
+/* Sticky Pillar Sub-Tabs Bar */
+.pillar-sub-tabs {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 14px;
+  padding: 0.35rem;
+  margin-bottom: 1.25rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pillar-sub-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.pst-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.85rem;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: var(--text-dim, #7a8099);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  min-height: 42px;
+  touch-action: manipulation;
+}
+
+.pst-btn i {
+  font-size: 0.95rem;
+}
+
+.pst-btn:hover {
+  color: var(--text, #f0f2f8);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.pst-btn.active {
+  background: var(--accent, #7c6cfa);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(124, 108, 250, 0.35);
+}
+
+.pst-btn .badge {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+}
+
+/* Pillar Panes */
+.pillar-pane {
+  display: none;
+  animation: fadeIn 0.2s ease forwards;
+}
+
+.pillar-pane.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Pillar SRS Review Card */
+.pillar-srs-card {
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.12));
+  border-radius: 18px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.psc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.psc-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text, #fff);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.psc-count-box {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.psc-count {
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--accent, #7c6cfa);
+}
+
+.psc-count-label {
+  color: var(--text-muted, #7a8099);
+  font-size: 0.9rem;
+}
+
+.psc-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1.25rem;
+}
+
+.psc-btn-launch {
+  width: 100%;
+  min-height: 48px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Pillar Hard / Weak Points Card */
+.pillar-hard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.phh-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.phh-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phh-sub {
+  color: var(--text-muted, #7a8099);
+  font-size: 0.82rem;
+}
+
+.phh-drill-btn {
+  min-height: 44px;
+}
+
+/* Slide-Over Settings Drawer */
+.settings-drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.settings-drawer-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.settings-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(440px, 92vw);
+  background: var(--bg1, #0c0e14);
+  border-left: 1px solid var(--border-strong, rgba(255, 255, 255, 0.12));
+  box-shadow: -8px 0 32px rgba(0, 0, 0, 0.6);
+  z-index: 2001;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-drawer-overlay.active .settings-drawer {
+  transform: translateX(0);
+}
+
+.sd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+}
+
+.sd-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sd-close {
+  background: none;
+  border: none;
+  color: var(--text-dim, #7a8099);
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.sd-close:hover {
+  color: #fff;
+}
+
+.sd-body {
+  padding: 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sd-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sd-section-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--accent, #7c6cfa);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Top-Level Pillar Views Visibility */
+#view-today.active,
+#view-vocab.active,
+#view-kanji.active,
+#view-grammar.active,
+#view-reading.active {
+  display: block !important;
+}
+
+/* Study Session Score Pill in Runner Header */
+.study-session-score {
+  font-family: var(--font-display, inherit);
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.score-correct {
+  color: var(--green, #22c55e);
+  font-weight: 800;
+}
+.score-sep {
+  color: var(--text-dim, #7a8099);
+  margin: 0 1px;
+}
+.score-total {
+  color: var(--text-muted, #9ca3af);
+  font-weight: 600;
+}
+
+/* Kanji Study Direction Selector Pills */
+.kanji-dir-selector {
+  display: flex;
+  gap: 0.25rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+}
+
+.btn-dir-pill {
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-dim, #7a8099);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-dir-pill:hover {
+  color: #fff;
+}
+
+.btn-dir-pill.active {
+  background: #ec4899;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.4);
+}
+
+/* Kanji Multi-Select Lesson Chips */
+.kanji-lesson-chips-wrap {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding: 0.4rem 0 0.6rem;
+  scrollbar-width: thin;
+}
+
+.kanji-lesson-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--bg2, #13161d);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  color: var(--text-dim, #7a8099);
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.kanji-lesson-chip:hover {
+  border-color: #ec4899;
+  color: #fff;
+}
+
+.kanji-lesson-chip.active,
+.kanji-lesson-chip.selected {
+  background: rgba(236, 72, 153, 0.18);
+  border-color: #ec4899;
+  color: #f472b6;
+  font-weight: 800;
+}
+
+.chapter-chip.selected {
+  background: rgba(124, 108, 250, 0.2);
+  border-color: var(--accent, #7c6cfa);
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Minimal Target Kanji Card Tile */
+.kanji-card.kanji-card-minimal {
+  padding: 0.9rem 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 105px;
+}
+.kanji-card.kanji-card-minimal .kanji-card-char {
+  font-size: 2.7rem;
+  margin: 0;
+  line-height: 1;
+}
+.kanji-card.kanji-card-minimal .kanji-card-sub {
+  font-size: 0.72rem;
+  color: var(--text-dim, #7a8099);
+  margin-top: 0.35rem;
+  font-weight: 600;
+}
+
+/* SRS Due Chapter Filter Widget (Elementary App Parity) */
+.due-chapter-filter-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.due-filter-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+.due-filter-title {
+  font-size: 0.78rem;
+  color: var(--text-muted, #94a3b8);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.due-chapter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+  gap: 0.45rem;
+  margin-top: 0.35rem;
+  width: 100%;
+}
+.due-chip {
+  background: var(--bg3, #1e2230);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  color: var(--text, #e2e8f0);
+  padding: 0.45rem 0.25rem;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  font-family: inherit;
+  min-height: 44px;
+  box-sizing: border-box;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+.due-chip:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent, #7c6cfa);
+}
+.due-chip.selected {
+  background: rgba(124, 108, 250, 0.2);
+  border-color: var(--accent, #7c6cfa);
+  color: #fff;
+}
+.due-chip.cyan.selected {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: var(--cyan, #06b6d4);
+  color: #fff;
+}
+.due-chip-count {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--text-dim, #7a8099);
+}
+.due-chip.selected .due-chip-count {
+  color: var(--accent, #7c6cfa);
+}
+.due-chip.cyan.selected .due-chip-count {
+  color: var(--cyan, #06b6d4);
+}
+
+/* Active Chapter Banner & Vocab Stats Strip */
+.active-chapter-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: #fff;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.vocab-stats-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--text-muted, #94a3b8);
+  margin-bottom: 0.75rem;
+  padding: 0 0.25rem;
+  flex-wrap: wrap;
+}
+.vs-sep {
+  color: var(--text-dim, #64748b);
+}
+
+/* In-Line Study Mode (Mask Meanings) */
+.study-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted, #94a3b8);
+}
+.study-mode-toggle input {
+  display: none;
+}
+.toggle-slider {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 18px;
+  background-color: var(--bg3, #1e2230);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+.toggle-slider:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #94a3b8;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.study-mode-toggle input:checked + .toggle-slider {
+  background-color: rgba(124, 108, 250, 0.25);
+  border-color: var(--accent, #7c6cfa);
+}
+.study-mode-toggle input:checked + .toggle-slider:before {
+  transform: translateX(14px);
+  background-color: var(--accent, #7c6cfa);
+}
+
+.vw-study-cell {
+  background: var(--bg3, #1e2230);
+  border: 1px dashed var(--border, rgba(255, 255, 255, 0.15));
+  border-radius: 8px;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.18s ease;
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  margin-top: 0.35rem;
+}
+.vw-study-cell:hover {
+  background: rgba(124, 108, 250, 0.1);
+  border-color: var(--accent, #7c6cfa);
+}
+.vw-study-cell .study-cell-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-dim, #7a8099);
+  width: 100%;
+}
+.vw-study-cell .study-cell-content {
+  display: none;
+  width: 100%;
+}
+.vw-study-cell.show {
+  background: transparent;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.vw-study-cell.show .study-cell-hint {
+  display: none;
+}
+.vw-study-cell.show .study-cell-content {
+  display: block;
+}
+
