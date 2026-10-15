@@ -278,3 +278,6 @@
 .activity-day-pillars dd { margin:0; color:var(--text); }
 .activity-day-empty { font-size:.77rem; color:var(--text-muted); margin:14px 0 0; }
 .activity-day-note { color:var(--text-dim); font-size:.66rem; line-height:1.5; margin:12px 0 0; }
+.activity-day-detail h4 { margin-bottom:8px; }
+.activity-day-count { margin:0; color:var(--text-muted); font-size:.85rem; }
+.activity-day-count strong { color:#e7e2ff; font-size:1.25rem; margin-right:4px; }

@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navigation.css" />
-  <link rel="stylesheet" href="css/home.css?v=activity-3.0" />
+  <link rel="stylesheet" href="css/home.css?v=activity-3.1" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css" />
   <link rel="stylesheet" href="css/kanji.css" />
@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="css/class-track.css" />
   <link rel="stylesheet" href="css/book-platform.css" />
   <link rel="stylesheet" href="css/home-mobile.css?v=1" />
-  <link rel="stylesheet" href="css/study-mobile.css?v=9" />
+  <link rel="stylesheet" href="css/study-mobile.css?v=10" />
 </head>
 <body>
 
@@ -900,7 +900,9 @@
       </div>
 
       <div class="study-skip-row" id="study-skip-row" style="display: none;">
-        <button class="btn btn-ghost btn-sm" onclick="skipCard()"><i class="fa-solid fa-forward"></i> Skip</button>
+        <button id="study-previous" class="btn btn-ghost btn-sm" onclick="previousStudyCard()" disabled>← Previous</button>
+        <button id="study-next" class="btn btn-ghost btn-sm" onclick="nextStudyCard()">Next →</button>
+        <button id="study-skip" class="btn btn-ghost btn-sm" onclick="skipCard()"><i class="fa-solid fa-forward"></i> Skip</button>
       </div>
       <div id="study-card-container">
         <div class="flashcard-stage" onclick="flipCard()">
@@ -1042,7 +1044,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=3.2"></script>
+  <script type="module" src="js/main.js?v=3.3"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

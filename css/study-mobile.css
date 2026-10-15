@@ -97,3 +97,7 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study .review-testing .vocab-kanji-chip { padding:3px 6px; font-size:.69rem; }
   #view-study .review-testing .vocab-kanji-chip b { font-size:.9rem; }
 }
+#view-study .study-skip-row { justify-content:space-between; gap:8px; flex:none; }
+#view-study .study-skip-row button[hidden] { display:none; }
+#view-study .study-skip-row button:disabled { opacity:.38; cursor:default; }
+#view-study .study-skip-row button { min-height:36px; }

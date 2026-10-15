@@ -1,18 +1,15 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { renderActivityDayHtml } from '../js/activity-detail.js';
-const empty = renderActivityDayHtml({date:'2026-10-15',reviews:0,newCards:0,minutes:0,pillars:{}});
-assert.match(empty,/15 October 2026/);
-assert.match(empty,/No study activity recorded/);
-assert.doesNotMatch(empty,/Wrong attempts/);
-const active = renderActivityDayHtml({date:'2026-10-14',reviews:126,newCards:9,minutes:18.36,pillars:{vocab:100,kanji:35},wrong:7});
-assert.match(active,/>126<|>126<\/strong>/);
-assert.match(active,/>18.4</);
-assert.match(active,/Wrong attempts recorded: 7/);
-assert.doesNotMatch(active,/No study activity|accuracy/i);
+for (const count of [0,1,126]) {
+ const html=renderActivityDayHtml({date:'2026-10-15',reviews:count,newCards:9,minutes:18,pillars:{vocab:100},wrong:7});
+ assert.match(html,/15 October 2026/);
+ assert.ok(html.includes(`<strong>${count}</strong> ${count === 1 ? 'review' : 'reviews'}`));
+ assert.doesNotMatch(html,/New cards|Minutes|Vocabulary|Wrong attempts|accuracy/);
+}
 const source=fs.readFileSync('js/home.js','utf8');
-const detail=source.slice(source.indexOf('const detail ='),source.indexOf("const streak ="));
+const detail=source.slice(source.indexOf('const detail ='),source.indexOf('const streak ='));
 assert.match(detail,/createElement\('button'\)/);
 assert.match(detail,/getDay\(button.dataset.date\)/);
 assert.doesNotMatch(detail,/logActivity|saveDaylog|localStorage.setItem/);
-console.log('Day detail: date, recorded metrics, empty day, optional wrong count, keyboard-native buttons and read-only rendering passed.');
+console.log('Day click: date and reviews only, pluralisation, keyboard-native buttons and read-only rendering passed.');

@@ -1,3 +1,4 @@
+import { createStudyHistory } from './study-history.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — study.js
    Active Recall & Omni-Review Flashcard Engine (Multi-Pillar)
@@ -7,6 +8,7 @@ import { state } from './state.js';
 import { renderVocabularyKanjiBreakdown } from './vocab-kanji-breakdown.js';
 import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
 
+const studyHistory = createStudyHistory();
 let reviewPhase = 'test';
 let phaseItem = null;
 let phaseIndex = -1;
@@ -181,9 +183,28 @@ export function learnGotIt() {
   renderCard();
 }
 
+export function previousStudyCard() {
+  if (state.studyMode === 'kanji_quiz' || state.sessionIdx <= 0 || state.sessionIdx >= state.sessionItems.length) return;
+  state.sessionIdx--;
+  state.cardFlipped = false;
+  renderCard();
+}
+
+export function nextStudyCard() {
+  // Browsing never grades, skips, completes a session or changes SRS.
+  if (state.studyMode === 'kanji_quiz' || state.sessionIdx >= state.sessionItems.length - 1) return;
+  state.sessionIdx++;
+  state.cardFlipped = false;
+  renderCard();
+}
+
 export function skipCard() {
-  if (state.sessionIdx >= state.sessionTotal) return;
-  state.sessionSkipped = (state.sessionSkipped || 0) + 1;
+  if (state.sessionIdx >= state.sessionItems.length) return;
+  const item = state.sessionItems[state.sessionIdx];
+  if (!studyHistory.get(state.sessionItems, item)) {
+    studyHistory.set(state.sessionItems, item, { skipped: true });
+    state.sessionSkipped = (state.sessionSkipped || 0) + 1;
+  }
   state.sessionIdx++;
   state.cardFlipped = false;
   renderCard();
@@ -237,6 +258,8 @@ export function kanaToRomaji(reading = '') {
 export function renderCard() {
   if (state.sessionIdx < state.sessionItems.length && !document.getElementById('card-term')) resetStudyViewHTML();
   renderReviewPhase();
+  const priorOutcome = studyHistory.get(state.sessionItems, state.sessionItems[state.sessionIdx]);
+  if (priorOutcome?.grade) state.cardFlipped = true;
   if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') state.cardFlipped = true;
   renderCardContent();
   renderVocabularyKanjiBreakdown(state.sessionItems[state.sessionIdx], state.cardFlipped);
@@ -262,6 +285,19 @@ export function renderCard() {
     if (controls) controls.style.display = 'none';
     const hint = document.getElementById('card-controls-hint');
     if (hint) { hint.innerHTML = ''; hint.style.display = 'none'; }
+  }
+  const previous = document.getElementById('study-previous');
+  const next = document.getElementById('study-next');
+  const skip = document.getElementById('study-skip');
+  const navigationEnabled = state.studyMode !== 'kanji_quiz';
+  if (previous) { previous.hidden = !navigationEnabled; previous.disabled = state.sessionIdx <= 0; }
+  if (next) { next.hidden = !navigationEnabled || learning; next.disabled = state.sessionIdx >= state.sessionItems.length - 1; }
+  if (skip) skip.hidden = navigationEnabled && (learning || !!priorOutcome);
+  if (priorOutcome?.grade) {
+    const controls = document.getElementById('grade-controls');
+    if (controls) controls.style.display = 'none';
+    const label = document.getElementById('review-phase-label');
+    if (label) label.textContent = `TEST · Already graded: ${['', 'Again', 'Hard', 'Good', 'Easy'][priorOutcome.grade]}`;
   }
   const item = state.sessionItems[state.sessionIdx];
   if (!item || !state.cardFlipped || state.studyMode === 'kanji_quiz') return;
@@ -634,8 +670,12 @@ export function gradeCard(grade) {
   if (state.sessionIdx >= state.sessionItems.length) return;
 
   const item = state.sessionItems[state.sessionIdx];
+  if (studyHistory.get(state.sessionItems, item)?.grade) return;
   const itemKey = formatItemKey(item);
   updateItemStats(itemKey, grade);
+  const previousOutcome = studyHistory.get(state.sessionItems, item);
+  if (previousOutcome?.skipped) state.sessionSkipped = Math.max(0, (state.sessionSkipped || 0) - 1);
+  studyHistory.set(state.sessionItems, item, { grade });
 
   state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
 
@@ -732,7 +772,7 @@ function renderStudySummary() {
   if (!container) return;
 
   const skipped = state.sessionSkipped || 0;
-  const answered = state.sessionTotalAnswered || Math.max(state.sessionTotal - skipped, 0);
+  const answered = state.sessionTotalAnswered || 0;
   const correct = state.sessionRight || 0;
   const pct = answered ? Math.round((correct / answered) * 100) : 0;
   const initialTotal = state.sessionTotalInitial || state.sessionTotal || state.sessionItems.length;
