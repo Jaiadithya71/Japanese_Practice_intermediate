@@ -1,4 +1,4 @@
-import { renderActivityDayHtml } from './activity-detail.js?v=3';
+import { renderActivityDayHtml } from './activity-detail.js?v=4';
 import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — home.js
