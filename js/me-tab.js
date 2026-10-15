@@ -28,7 +28,7 @@ import {
   createSnapshot
 } from './backup.js';
 import { showView } from './navigation.js';
-import { renderCard } from './study.js?v=3.7';
+import { renderCard } from './study.js?v=3.8';
 
 // Storage Keys
 export const SETTINGS_STORAGE_KEY = 'nihongo_intermediate_settings_v1';
@@ -651,7 +651,6 @@ function startWeakDrillSession(items) {
   state.drillOrigin = 'me';
   state.isDueReviewMode = false;
   state.learnUnit = null;
-  state.sessionSkipped = 0;
 
   state.sessionItems = items.map(item => ({
     ...item,
