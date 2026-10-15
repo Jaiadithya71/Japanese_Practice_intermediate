@@ -10,6 +10,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { startTestSession } from './test.js';
 import { beginGistReviewSession } from './gist-sync.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js?v=4.0';
@@ -488,6 +489,10 @@ export function updateKanjiActionButtonLabels() {
   if (hard) hard.checked = Boolean(state.kanjiHardOnly);
   btn.innerHTML = '<i class="fa-solid fa-clone"></i> Flashcards';
   btn.disabled = wordsCount === 0;
+  const exam = document.getElementById('btn-kanji-exam-action');
+  if (exam) exam.disabled = wordsCount === 0;
+  const scope = document.getElementById('kanji-exam-scope');
+  if (scope) scope.textContent = lessonCount === 0 ? 'Select at least one lesson.' : (lessonCount === 25 ? 'All lessons: up to 25 questions per section.' : 'Every compound word in your selected lessons, once per section.');
   const quiz = document.getElementById('btn-kanji-quiz-action');
   if (quiz) quiz.disabled = wordsCount === 0;
 
@@ -1007,6 +1012,56 @@ function buildKanjiQuizOptions(item, allItems) {
   return { values, correctValue: correct };
 }
 
+// Elementary-style test: writing then reading, no meaning hints before answering.
+export function startKanjiExamPractice() {
+  const mode = document.getElementById('kanji-exam-mode')?.value || 'mixed';
+  const pool = selectedKanjiPool();
+  const all = buildKanjiStudyItems(Object.values(state.kanjiDB || {}), 'ja-kana')
+    .filter(it => it.type === 'kanji_word' && it.word && it.reading);
+  const scope = buildKanjiStudyItems(pool, 'ja-kana')
+    .filter(it => it.type === 'kanji_word' && it.word && it.reading);
+  const specific = (state.kanjiSelectedLessons?.size || 0) > 0;
+  const shuffle = list => list.slice().sort(() => Math.random() - 0.5);
+  const section = direction => {
+    const facet = direction === 'kana-ja' ? 'KWW:' : 'KWR:';
+    const source = scope.filter(it => !state.kanjiHardOnly ||
+      getItemStatus(facet + it.word) === 'hard' || getKanjiStatus(it.baseKanji) === 'hard');
+    const questions = shuffle(source).map(it => {
+      const correct = direction === 'kana-ja' ? it.word : it.reading;
+      const value = candidate => direction === 'kana-ja' ? candidate.word : candidate.reading;
+      const candidates = all.filter(candidate => candidate.word !== it.word &&
+        candidate.reading !== it.reading && value(candidate) !== correct);
+      const distractors = [], seen = new Set([correct]);
+      const sorted = [...shuffle(candidates.filter(x => x.lesson_number === it.lesson_number)),
+        ...shuffle(candidates.filter(x => x.lesson_number !== it.lesson_number))];
+      for (const candidate of sorted) {
+        const v = value(candidate);
+        if (!seen.has(v)) { seen.add(v); distractors.push(v); }
+        if (distractors.length === 3) break;
+      }
+      if (distractors.length < 3) return null;
+      const options = shuffle([correct, ...distractors]);
+      return {
+        id: `kanji-exam-${direction}-${it.word}`, category: 'kanji', chapter: it.lesson_number,
+        type: 'multiple_choice', key: facet + it.word,
+        question: `${direction === 'kana-ja' ? 'Writing · Choose the kanji' : 'Reading · Choose the reading'}<br><br><span style="font-size:2.4rem;line-height:1.4">${direction === 'kana-ja' ? it.reading : it.word}</span>`,
+        options, correct: options.indexOf(correct) + 1, correctAnswerText: correct,
+        explanation: `${it.word} (${it.reading})${it.meaning_en ? ' · ' + it.meaning_en : ''}`
+      };
+    }).filter(Boolean);
+    return specific ? questions : questions.slice(0, 25);
+  };
+  const questions = [...(mode !== 'reading' ? section('kana-ja') : []),
+    ...(mode !== 'writing' ? section('ja-kana') : [])];
+  if (!questions.length) { alert('No matching Kanji Test questions. Select lessons or turn off hard-only.'); return; }
+  showView('test');
+  return startTestSession('kanji-exam-practice', {
+    id: 'kanji-exam-practice', category: 'kanji', pillar: 'kanji',
+    title: 'Kanji Test', subTitle: mode === 'mixed' ? 'Writing + Reading' : mode === 'reading' ? 'Reading' : 'Writing',
+    questionCount: questions.length, questions
+  });
+}
+
 export function startKanjiQuickQuiz() {
   const selLessons = state.kanjiSelectedLessons || new Set();
   const pool = [];
@@ -1226,6 +1281,7 @@ function escapeAttr(str) {
 }
 
 if (typeof window !== 'undefined') {
+  window.startKanjiExamPractice = startKanjiExamPractice;
   window.toggleKanjiHardOnly = toggleKanjiHardOnly;
   window.drillKanjiHard = drillKanjiHard;
      }
