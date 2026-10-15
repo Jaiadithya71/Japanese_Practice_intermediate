@@ -30,3 +30,6 @@ assert.ok(html.indexOf('id="study-skip-row"') > html.indexOf('id="study-card-con
 assert.ok(html.indexOf('id="study-skip-row"') < html.indexOf('id="grade-controls"'));
 assert.match(source,/getElementById\('study-skip-row'\)\?\.append\(topAction\)/);
 console.log('Previous/Next and Learn action share the bottom action area before grading.');
+assert.match(source,/button.disabled = !state.cardFlipped \|\| !!priorOutcome\?\.grade/);
+assert.match(source,/classList.toggle\('test-action-layout', testLayout\)/);
+console.log('Test grade controls stay visible and are disabled before reveal or after prior grading.');
