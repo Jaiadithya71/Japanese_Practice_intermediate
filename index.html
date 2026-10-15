@@ -215,31 +215,26 @@
     
         <!-- BOOK 2: KANJI MASTERY SUITE -->
         <section id="view-kanji" class="view">
-      <div class="view-header">
-        <div class="view-title-group">
-          <h2>2. 漢字 (Kanji Master Suite)</h2>
+      <div class="view-header"><div class="view-title-group"><h2>Kanji practice</h2></div></div>
+      <section class="kanji-picker-card" aria-labelledby="kanji-picker-title">
+        <div class="kanji-picker-heading"><h3 id="kanji-picker-title">Select lessons</h3><span>25 lessons</span></div>
+        <div class="kanji-picker-tools">
+          <button type="button" id="kanji-select-all">Select All</button>
+          <button type="button" id="kanji-clear-selection">Clear</button>
         </div>
-        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center;">
-          <div class="kanji-dir-selector" style="display: flex; gap: 0.25rem; background: rgba(255,255,255,0.06); padding: 0.2rem; border-radius: 999px; border: 1px solid var(--border);">
-            <button class="btn-dir-pill active" id="kdir-ja-kana" onclick="setKanjiStudyDirection('ja-kana')" title="JLPT Mondai 1: Given Kanji, recall Kana reading">漢字 → かな</button>
-            <button class="btn-dir-pill" id="kdir-kana-ja" onclick="setKanjiStudyDirection('kana-ja')" title="JLPT Mondai 2: Given Kana, recall Kanji">かな → 漢字</button>
-            <button class="btn-dir-pill" id="kdir-ja-meaning" onclick="setKanjiStudyDirection('ja-meaning')" title="Compound word to English meaning">漢字 → 英語</button>
-            <button class="btn-dir-pill" id="kdir-mixed" onclick="setKanjiStudyDirection('mixed')" title="Mixed: each card picks a random direction">Mixed</button>
-          </div>
-          <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()">
-            <i class="fa-solid fa-play"></i> Drill Compound Cards
-          </button>
-          <button class="btn btn-primary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()" title="Fast tap-to-answer MCQ drill over the selected lessons" style="background: linear-gradient(135deg, #0ea5e9, #2563eb); border: none;">
-            <i class="fa-solid fa-bolt"></i> Quick Quiz
-          </button>
-          <button class="btn btn-secondary" id="btn-kanji-runner-action" onclick="startKanjiLessonRunner()" title="Guided S0-S6 lesson flow; select exactly one lesson below first" disabled>
-            <i class="fa-solid fa-route"></i> Guided Lesson
-          </button>
-          <button class="btn btn-ghost" id="btn-kanji-hard-toggle" onclick="toggleKanjiHardOnly()" title="Hard only: Drill and Quick Quiz run just the hard kanji/words in the selected lessons" style="border-color: rgba(239,68,68,0.5); color: #f87171;">
-            <i class="fa-solid fa-fire"></i> Hard only: OFF
-          </button>
+        <div id="kanji-lesson-chips-row" class="kanji-picker-grid" aria-label="Kanji lessons"></div>
+        <p id="kanji-picker-summary" class="kanji-picker-summary" aria-live="polite"></p>
+        <label class="kanji-picker-direction"><span>Direction</span><select id="kanji-picker-direction" onchange="setKanjiStudyDirection(this.value)">
+          <option value="ja-kana">Kanji → kana</option><option value="kana-ja">Kana → kanji</option>
+          <option value="ja-meaning">Kanji → English</option><option value="mixed">Mixed</option>
+        </select></label>
+        <label class="kanji-picker-hard"><input id="kanji-picker-hard" type="checkbox" onchange="toggleKanjiHardOnly()"> Drill hard words only</label>
+        <div class="kanji-picker-launches">
+          <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()"><i class="fa-solid fa-clone"></i> Flashcards</button>
+          <button class="btn btn-secondary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()"><i class="fa-solid fa-bolt"></i> Quick Quiz</button>
         </div>
-      </div>
+        <details class="kanji-picker-guided"><summary>Guided lesson</summary><p>Choose one lesson for the step-by-step lesson flow.</p><button class="btn btn-secondary" id="btn-kanji-runner-action" onclick="startKanjiLessonRunner()" disabled>Start guided lesson</button></details>
+      </section>
 
       <!-- Pillar Sub-Tabs -->
       <div class="pillar-sub-tabs" id="subtabs-kanji" role="tablist">
@@ -297,10 +292,6 @@
             </div>
             <span id="kanji-count-badge" class="badge badge-purple">443 / 443 Kanji</span>
           </div>
-        </div>
-        <!-- Interactive Multi-Select Lesson Chips Row -->
-        <div class="chapter-chips-wrap kanji-lesson-chips-wrap" id="kanji-lesson-chips-row">
-          <!-- Populated dynamically by kanji.js -->
         </div>
 
         <!-- Kanji Grid -->
