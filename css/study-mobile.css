@@ -56,3 +56,7 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study .review-learning .flashcard-body { flex:none; min-height:0; gap:16px; margin:24px 0 6px; }
   #view-study .review-learning .card-term-large { line-height:1.5; }
 }
+
+/* Next belongs just below the card, not at the bottom of the viewport. */
+#view-study #study-card-container.has-learn-action { justify-content:flex-start; gap:16px; }
+#view-study #study-card-container .study-learn-action { align-self:center; flex:none; margin:0 0 12px; min-height:52px; min-width:190px; font-size:1rem; color:#fff; }

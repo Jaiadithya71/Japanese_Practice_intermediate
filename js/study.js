@@ -240,14 +240,14 @@ export function renderCard() {
   renderCardContent();
   const learning = reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz';
   let topAction = document.getElementById('study-learn-action');
-  const actionRow = document.getElementById('study-skip-row');
+  const actionRow = document.getElementById('study-card-container');
   if (!topAction && actionRow) {
     topAction = document.createElement('button');
     topAction.id = 'study-learn-action';
     topAction.className = 'btn btn-primary study-learn-action';
     topAction.type = 'button';
     topAction.addEventListener('click', learnGotIt);
-    actionRow.prepend(topAction);
+    actionRow.append(topAction);
   }
   if (topAction) {
     const item = state.sessionItems[state.sessionIdx];
