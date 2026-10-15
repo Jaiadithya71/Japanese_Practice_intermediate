@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navigation.css" />
-  <link rel="stylesheet" href="css/home.css?v=2.9" />
+  <link rel="stylesheet" href="css/home.css?v=3.0" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css" />
   <link rel="stylesheet" href="css/kanji.css" />
@@ -62,22 +62,10 @@
         <span>2. 漢字 (Kanji)</span>
       </button>
 
-      <!-- 4. Grammar -->
-      <button class="nav-btn" data-view="grammar" data-tab="grammar" onclick="showView('grammar')">
-        <i class="fa-solid fa-pen-nib"></i>
-        <span>3. 文法 (Grammar)</span>
-      </button>
-
-      <!-- 5. Reading -->
-      <button class="nav-btn" data-view="reading" data-tab="reading" onclick="showView('reading')">
-        <i class="fa-solid fa-book-open"></i>
-        <span>4. 読解 (Reading)</span>
-      </button>
-
-      <!-- Settings / Backup -->
-      <button class="nav-btn" data-view="settings" onclick="openSettingsDrawer()" style="margin-top: 0.5rem; border-top: 1px solid var(--border); padding-top: 0.85rem;">
-        <i class="fa-solid fa-gear"></i>
-        <span>設定・バックアップ</span>
+      <!-- Less-used study areas are grouped in the More sheet. -->
+      <button class="nav-btn" data-view="more" data-tab="more" onclick="openMoreMenu()">
+        <i class="fa-solid fa-ellipsis"></i>
+        <span>More</span>
       </button>
     </nav>
 
@@ -124,13 +112,52 @@
       <div id="today-card"></div>
       <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin: 0 0 0.75rem;"></div>
 
-      <!-- 5-PILLAR OVERVIEW CARDS -->
-      <div class="view-header" style="margin-bottom: 1rem;">
-        <div class="view-title-group">
-          <h3 style="font-size: 1.3rem; color: #fff;">Browse by section</h3>
+      <section class="home-lessons-card" aria-labelledby="home-lessons-title">
+        <div class="home-picker-heading">
+          <h3 id="home-lessons-title">Select lessons</h3>
+          <div class="home-lesson-tabs" role="tablist" aria-label="Vocabulary lesson groups">
+            <button id="home-tab-topic" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="window.setHomeGroup('topic')">Topics · 21</button>
+            <button id="home-tab-char" class="home-lesson-tab" role="tab" aria-selected="false" onclick="window.setHomeGroup('characteristics')">Characteristics · 8</button>
+          </div>
         </div>
-      </div>
+        <div class="home-picker-tools">
+          <button class="home-picker-action" onclick="window.selectAllChaptersInGroup()"><i class="fa-solid fa-check-double"></i> Select All</button>
+          <button class="home-picker-action" onclick="window.clearChapterSelection()"><i class="fa-solid fa-square-minus"></i> Clear</button>
+        </div>
+        <div id="home-lesson-grid" class="home-lesson-grid" aria-label="Vocabulary lessons"></div>
+        <p id="home-lessons-count" class="home-picker-summary">1 lesson selected · 41 words in pool</p>
+        <div class="home-run-settings">
+          <label class="home-run-setting"><span>Session size</span><select aria-label="Session size" onchange="window.setHomeSessionSize(this.value)">
+            <option value="10">10 words</option><option value="20" selected>20 words</option><option value="50">50 words</option><option value="all">All words</option>
+          </select></label>
+          <label class="home-run-setting"><span>Direction</span><select aria-label="Study direction" onchange="window.setHomeStudyDirection(this.value)">
+            <option value="ja-en" selected>Japanese → English</option><option value="en-ja">English → Japanese</option>
+          </select></label>
+          <label class="home-run-check"><input id="home-hard-only" type="checkbox"> Drill hard words only</label>
+        </div>
+        <div class="home-picker-buttons">
+          <button id="btn-start-selected-study" class="btn btn-primary" onclick="window.startSelectedLessonRun()"><i class="fa-solid fa-clone"></i> Flashcards</button>
+          <button id="btn-start-selected-test" class="btn btn-secondary" onclick="window.startSelectedLessonTestRun()"><i class="fa-solid fa-list-check"></i> Multiple Choice</button>
+        </div>
+      </section>
 
+
+
+      <section class="home-activity-card" aria-labelledby="home-activity-title">
+        <div class="home-activity-head">
+          <div>
+            <h3 id="home-activity-title">Study activity</h3>
+            <p>Reviews over the last 30 days</p>
+          </div>
+          <div class="home-activity-summary"><strong id="home-review-streak">0</strong><span>day streak</span></div>
+        </div>
+        <div id="home-activity-heatmap" class="home-activity-heatmap"></div>
+        <div class="home-activity-today"><span id="home-reviews-today">0</span> reviews today <span class="home-goal-copy">· goal 500</span></div>
+      </section>
+
+      <details class="home-secondary-details">
+        <summary>Progress &amp; all study sections <i class="fa-solid fa-chevron-down"></i></summary>
+        <div class="home-secondary-content">
       <div class="stats-grid" style="grid-template-columns: repeat(5, 1fr); margin-bottom: 2rem;">
         <!-- Book 1 -->
         <div class="stat-card" style="border-left: 3px solid var(--accent); cursor: pointer;" onclick="showView('vocab')">
@@ -164,53 +191,10 @@
         </div>
       </div>
 
-      <section class="home-activity-card" aria-labelledby="home-activity-title">
-        <div class="home-activity-head">
-          <div>
-            <h3 id="home-activity-title">Study activity</h3>
-            <p>Reviews over the last 30 days</p>
-          </div>
-          <div class="home-activity-summary"><strong id="home-review-streak">0</strong><span>day streak</span></div>
-        </div>
-        <div id="home-activity-heatmap" class="home-activity-heatmap"></div>
-        <div class="home-activity-today"><span id="home-reviews-today">0</span> reviews today <span class="home-goal-copy">· goal 500</span></div>
-      </section>
 
-      <section class="home-lessons-card" aria-labelledby="home-lessons-title">
-        <div class="home-lessons-head">
-          <div><h3 id="home-lessons-title">Select vocabulary lessons</h3><p id="home-lessons-count">Choose the units for your run</p></div>
-          <div class="home-lesson-actions">
-            <button class="btn btn-ghost btn-sm" onclick="window.selectAllChaptersInGroup()">Select All</button>
-            <button class="btn btn-ghost btn-sm" onclick="window.clearChapterSelection()">Clear</button>
-          </div>
-        </div>
-        <div class="home-lesson-tabs" role="tablist" aria-label="Vocabulary lesson groups">
-          <button id="home-tab-topic" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="window.setHomeGroup('topic')">Topics</button>
-          <button id="home-tab-char" class="home-lesson-tab" role="tab" aria-selected="false" onclick="window.setHomeGroup('characteristics')">Characteristics</button>
-        </div>
-        <div class="home-run-settings">
-          <div class="home-run-setting"><span>Session size</span><div class="home-option-group" role="group" aria-label="Session size">
-            <button class="home-option" data-home-size="10" onclick="window.setHomeSessionSize('10')">10</button>
-            <button class="home-option active" data-home-size="20" onclick="window.setHomeSessionSize('20')">20</button>
-            <button class="home-option" data-home-size="50" onclick="window.setHomeSessionSize('50')">50</button>
-            <button class="home-option" data-home-size="all" onclick="window.setHomeSessionSize('all')">All</button>
-          </div></div>
-          <div class="home-run-setting"><span>Direction</span><div class="home-option-group" role="group" aria-label="Study direction">
-            <button class="home-option active" data-home-direction="ja-en" onclick="window.setHomeStudyDirection('ja-en')">JA → EN</button>
-            <button class="home-option" data-home-direction="en-ja" onclick="window.setHomeStudyDirection('en-ja')">EN → JA</button>
-          </div></div>
-        </div>
-        <div id="home-lesson-grid" class="lesson-grid" aria-label="Vocabulary lessons"></div>
-        <button id="btn-start-selected-study" class="btn btn-primary home-start-selected" onclick="window.startSelectedLessonRun()"><i class="fa-solid fa-play"></i> Start selected lessons</button>
-      </section>
 
-      <div class="home-vocab-action" style="display:flex; align-items:center; justify-content:space-between; gap:1rem; margin:-1rem 0 1.5rem; padding:1rem 1.2rem; border:1px solid var(--border); border-radius:14px; background:var(--surface);">
-        <div>
-          <strong style="color:#fff;">Vocabulary</strong>
-          <div style="font-size:0.85rem; color:var(--text-dim);">Choose a unit and start studying</div>
         </div>
-        <button class="btn btn-primary" onclick="showView('vocab')"><i class="fa-solid fa-arrow-right"></i> Open units</button>
-      </div>
+      </details>
     </section>
     </div>
 
@@ -954,38 +938,24 @@
 
   </main>
 
-  <!-- ===== 5-TAB FLOATING GLASS DOCK (BOOK-FIRST) ===== -->
-  <nav id="mobile-dock" class="mobile-dock">
-    <button class="mobile-dock-item mobile-nav-item active" data-tab="today" onclick="showView('today')">
-      <i class="fa-solid fa-calendar-day"></i>
-      <span>今日</span>
-    </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="vocab" onclick="showView('vocab')">
-      <i class="fa-solid fa-book-bookmark"></i>
-      <span>語彙</span>
-    </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="kanji" onclick="showView('kanji')">
-      <i class="fa-solid fa-shapes"></i>
-      <span>漢字</span>
-    </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="grammar" onclick="showView('grammar')">
-      <i class="fa-solid fa-pen-nib"></i>
-      <span>文法</span>
-    </button>
-    <button class="mobile-dock-item mobile-nav-item" data-tab="reading" onclick="showView('reading')">
-      <i class="fa-solid fa-book-open"></i>
-      <span>読解</span>
-    </button>
+  <!-- ===== PRIMARY MOBILE DOCK ===== -->
+  <nav id="mobile-dock" class="mobile-dock" aria-label="Primary navigation">
+    <button class="mobile-dock-item mobile-nav-item active" data-tab="today" onclick="showView('today')"><i class="fa-solid fa-house"></i><span>Home</span></button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="vocab" onclick="showView('vocab')"><i class="fa-solid fa-book-bookmark"></i><span>Vocab</span></button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="kanji" onclick="showView('kanji')"><i class="fa-solid fa-shapes"></i><span>Kanji</span></button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="more" onclick="openMoreMenu()"><i class="fa-solid fa-ellipsis"></i><span>More</span></button>
   </nav>
-  <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()">
+  <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()" aria-label="More study tools">
     <div class="more-panel" onclick="event.stopPropagation()">
       <div class="more-grab"></div>
-      <button class="more-item" onclick="closeMoreMenu();showView('grammar')"><i class="fa-solid fa-diagram-project"></i> 3. 文法 (Grammar)</button>
-      <button class="more-item" onclick="closeMoreMenu();showView('reading')"><i class="fa-solid fa-book-open-reader"></i> 2. 読解 (Reading)</button>
-      <button class="more-item" onclick="closeMoreMenu();startOmniReview()"><i class="fa-solid fa-bolt"></i> Review all due</button>
-      <button class="more-item" onclick="closeMoreMenu();showView('hard-words')"><i class="fa-solid fa-fire"></i> Weak points</button>
-      <button class="more-item" onclick="closeMoreMenu();openSyncSetup()"><i class="fa-solid fa-cloud-arrow-up"></i> Backup &amp; sync</button>
-      <button class="more-item" onclick="closeMoreMenu();toggleFurigana()"><i class="fa-solid fa-font"></i> Toggle furigana</button>
+      <div class="more-title">More</div>
+      <button class="more-item" onclick="closeMoreMenu();showView('grammar')"><i class="fa-solid fa-pen-nib"></i><span>Grammar</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
+      <button class="more-item" onclick="closeMoreMenu();showView('reading')"><i class="fa-solid fa-book-open-reader"></i><span>Reading</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
+      <button class="more-item" onclick="closeMoreMenu();showView('test')"><i class="fa-solid fa-list-check"></i><span>Tests &amp; mocks</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
+      <button class="more-item" onclick="closeMoreMenu();startOmniReview()"><i class="fa-solid fa-bolt"></i><span>Review all due</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
+      <button class="more-item" onclick="closeMoreMenu();showView('hard-words')"><i class="fa-solid fa-fire"></i><span>Weak points</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
+      <button class="more-item" onclick="closeMoreMenu();showView('class-track')"><i class="fa-solid fa-graduation-cap"></i><span>Class progress</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
+      <button class="more-item" onclick="closeMoreMenu();openSettingsDrawer()"><i class="fa-solid fa-gear"></i><span>Settings &amp; data</span><i class="fa-solid fa-chevron-right more-arrow"></i></button>
       <button class="more-item more-close" onclick="closeMoreMenu()">Close</button>
     </div>
   </div>
@@ -1060,7 +1030,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=2.6"></script>
+  <script type="module" src="js/main.js?v=3.0"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

@@ -245,6 +245,14 @@ export function updateItemStats(itemKey, grade, opts = {}) {
   if (s.hist.length > HIST_LEN) {
     s.hist = s.hist.slice(-HIST_LEN);
   }
+  try {
+    if (localStorage.getItem('n3_gist_review_active') === '1') {
+      const active = JSON.parse(localStorage.getItem('n3_day_session_item_keys') || '[]');
+      if (!active.includes(itemKey)) active.push(itemKey);
+      localStorage.setItem('n3_day_session_item_keys', JSON.stringify(active));
+      localStorage.setItem('n3_day_session_review_count', String((Number(localStorage.getItem('n3_day_session_review_count')) || 0) + 1));
+    }
+  } catch { /* optional session summary cache */ }
 
   // Clamp ease factor on read: heals old 1.3 values (doc 02 §4.2, ME-8)
   s.easeFactor = Math.max(EASE_FLOOR, Number(s.easeFactor) || DEFAULT_EASE_FACTOR);

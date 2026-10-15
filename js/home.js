@@ -6,6 +6,7 @@
 import { state } from './state.js';
 import { getWordStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js';
+import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
 import { renderHeatmapGridHtml } from './today.js';
@@ -22,6 +23,10 @@ if (typeof window !== 'undefined') window.startSingleChapterStudy = startSingleC
 export function renderHomeView() {
   try { state.studyDirection = localStorage.getItem('n3_home_study_direction') || state.studyDirection; } catch (_) {}
   updateMasteryCounters();
+  if (!state.homePickerInitialized) {
+    if (!state.selectedChapters.size && state.vocabDB['01']) state.selectedChapters.add('01');
+    state.homePickerInitialized = true;
+  }
   renderLessonGrid();
   renderHomeActivity();
   updatePillarCards();
@@ -81,6 +86,7 @@ export function setHomeGroup(group) {
   if (tabT) tabT.setAttribute('aria-selected', String(group === 'topic'));
   if (tabC) tabC.setAttribute('aria-selected', String(group === 'characteristics'));
   renderLessonGrid();
+  updateHomeLessonControls();
 }
 
 export function chapterKeysForGroup() {
@@ -91,91 +97,53 @@ export function chapterKeysForGroup() {
 }
 
 export function toggleChapterSelection(chId) {
-  if (state.selectedChapters.has(chId)) {
-    state.selectedChapters.delete(chId);
-  } else {
-    state.selectedChapters.add(chId);
-  }
+  if (state.selectedChapters.has(chId)) state.selectedChapters.delete(chId);
+  else state.selectedChapters.add(chId);
   renderLessonGrid();
-  updateStudyButtonState();
   updateHomeLessonControls();
 }
 
 export function selectAllChaptersInGroup() {
   chapterKeysForGroup().forEach(k => state.selectedChapters.add(k));
   renderLessonGrid();
-  updateStudyButtonState();
   updateHomeLessonControls();
 }
 
 export function clearChapterSelection() {
   state.selectedChapters.clear();
   renderLessonGrid();
-  updateStudyButtonState();
   updateHomeLessonControls();
 }
 
-function updateStudyButtonState() {
-  const btn = document.getElementById('btn-start-selected-study');
-  const count = state.selectedChapters.size;
-  if (btn) {
-    btn.innerHTML = `<i class="fa-solid fa-play"></i> Study Selected (${count > 0 ? count : 'All'})`;
-  }
+function textbookChapterKeys() {
+  return Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k) || k.startsWith('part2_'));
+}
+function homeSelectedChapterKeys() {
+  return state.selectedChapters.size ? Array.from(state.selectedChapters) : textbookChapterKeys();
 }
 
 export function renderLessonGrid() {
   const container = document.getElementById('home-lesson-grid');
   if (!container) return;
   container.innerHTML = '';
-
-  const chapterKeys = chapterKeysForGroup();
-
-  chapterKeys.forEach(chId => {
+  chapterKeysForGroup().forEach(chId => {
     const meta = state.chapterMetadata[chId] || {};
     const words = state.vocabDB[chId] || [];
-    const isSelected = state.selectedChapters.has(chId);
-
-    let mastered = 0;
-    words.forEach(w => {
-      if (getWordStatus(w.id, state.studyDirection) === 'mastered') {
-        mastered++;
-      }
-    });
-
-    const pct = words.length > 0 ? Math.round((mastered / words.length) * 100) : 0;
-    const shortLabel = chId.startsWith('part2_') ? 'C' + chId.slice(6) : chId.startsWith('review_') ? 'R' + chId.slice(7) : 'T' + chId;
-
-    const card = document.createElement('div');
-    card.className = `lesson-card${isSelected ? ' selected' : ''}`;
-    card.onclick = () => toggleChapterSelection(chId);
-    card.innerHTML = `
-      <div class="lesson-card-header">
-        <span class="lesson-badge">${shortLabel}</span>
-        <span style="font-size: 0.8rem; color: var(--text-dim); font-weight: 600;">${words.length} words</span>
-      </div>
-      <div>
-        <div class="lesson-card-title font-ja">${meta.topic_ja || chId}</div>
-        <div class="lesson-card-subtitle">${meta.topic_en || ''}</div>
-      </div>
-      <div class="lesson-card-progress">
-        <div class="progress-bar-track">
-          <div class="progress-bar-fill" style="width: ${pct}%;"></div>
-        </div>
-        <span>${pct}%</span>
-      </div>
-      <div style="display:flex; gap:0.4rem; margin-top:0.4rem;" onclick="event.stopPropagation()">
-        <button class="btn btn-ghost btn-xs" style="flex:1; font-size:0.72rem; padding:0.25rem 0.4rem; border-radius:8px;" onclick="window.startSingleChapterStudy('${chId}')">
-          <i class="fa-solid fa-play"></i> Flashcards
-        </button>
-        <button class="btn btn-ghost btn-xs" style="flex:1; font-size:0.72rem; padding:0.25rem 0.4rem; border-radius:8px; color:var(--accent);" onclick="window.startTestSession('vocab-${chId}')">
-          <i class="fa-solid fa-file-pen"></i> Test
-        </button>
-      </div>
-    `;
-    container.appendChild(card);
+    const selected = state.selectedChapters.has(chId);
+    const mastered = words.filter(w => getWordStatus(w.id, state.studyDirection) === 'mastered').length;
+    const hasHard = words.some(w => getWordStatus(w.id, state.studyDirection) === 'hard');
+    const label = String(Number(chId.startsWith('part2_') ? chId.slice(6) : chId));
+    const tile = document.createElement('button');
+    tile.type = 'button';
+    tile.className = `home-lesson-tile${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${mastered === words.length && words.length ? ' all-done' : ''}`;
+    tile.setAttribute('aria-pressed', String(selected));
+    tile.title = `${meta.topic_en || meta.topic_ja || label} · ${words.length} words · ${mastered} mastered`;
+    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${words.length}w</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
+    tile.onclick = () => toggleChapterSelection(chId);
+    container.appendChild(tile);
   });
+  updateHomeLessonControls();
 }
-
 
 function homeRunSize() {
   try { return localStorage.getItem('n3_home_session_size') || '20'; } catch (_) { return '20'; }
@@ -192,19 +160,37 @@ export function setHomeStudyDirection(direction) {
   if (direction !== 'ja-en' && direction !== 'en-ja') return;
   state.studyDirection = direction;
   try { localStorage.setItem('n3_home_study_direction', direction); } catch (_) {}
-  document.querySelectorAll('[data-home-direction]').forEach(button => button.classList.toggle('active', button.dataset.homeDirection === direction));
   renderLessonGrid();
 }
 
 function updateHomeLessonControls() {
-  const size = homeRunSize();
-  document.querySelectorAll('[data-home-size]').forEach(button => button.classList.toggle('active', button.dataset.homeSize === size));
-  document.querySelectorAll('[data-home-direction]').forEach(button => button.classList.toggle('active', button.dataset.homeDirection === state.studyDirection));
-  const count = state.selectedChapters.size;
-  const title = document.getElementById('home-lessons-count');
-  if (title) title.textContent = count ? `${count} lesson${count === 1 ? '' : 's'} selected · next batches continue automatically` : 'No lessons selected · all vocabulary lessons will be included';
-  const btn = document.getElementById('btn-start-selected-study');
-  if (btn) btn.innerHTML = `<i class="fa-solid fa-play"></i> Start ${count ? `${count} selected lesson${count === 1 ? '' : 's'}` : 'all lessons'}`;
+  const chapters = homeSelectedChapterKeys();
+  const wordCount = chapters.reduce((sum, id) => sum + (state.vocabDB[id] || []).length, 0);
+  const summary = document.getElementById('home-lessons-count');
+  if (summary) summary.textContent = state.selectedChapters.size
+    ? `${state.selectedChapters.size} lesson${state.selectedChapters.size === 1 ? '' : 's'} selected · ${wordCount.toLocaleString()} words in pool`
+    : '0 lessons selected';
+  const size = document.querySelector('[aria-label="Session size"]');
+  if (size) size.value = homeRunSize();
+  const direction = document.querySelector('[aria-label="Study direction"]');
+  if (direction) direction.value = state.studyDirection;
+  const topic = document.getElementById('home-tab-topic');
+  const characteristic = document.getElementById('home-tab-char');
+  if (topic) topic.textContent = `Topics · ${Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k)).length || 21}`;
+  if (characteristic) characteristic.textContent = `Characteristics · ${Object.keys(state.vocabDB).filter(k => k.startsWith('part2_')).length || 8}`;
+  const canStart = state.selectedChapters.size > 0;
+  const flashcards = document.getElementById('btn-start-selected-study');
+  const tests = document.getElementById('btn-start-selected-test');
+  if (flashcards) flashcards.disabled = !canStart;
+  if (tests) tests.disabled = !canStart;
+}
+
+export function startSelectedLessonTestRun() {
+  const selected = new Set(state.selectedChapters);
+  const tests = getAllAvailableTests().filter(test => test.pillar === 'vocab' && test.category !== 'vocab_reviews' && test.category !== 'mock_exams' && selected.has(String(test.id).replace(/^vocab-/, '')));
+  const questions = tests.flatMap(test => test.questions || []);
+  if (!questions.length) { alert('No multiple-choice tests are available for these lessons.'); return null; }
+  return startTestSession('home-vocab-selected', { id: 'home-vocab-selected', category: 'vocab_topics', catLabel: 'Vocabulary Lessons', badgeClass: 'badge-n4', title: `${selected.size} selected lessons`, subTitle: 'Selected textbook lessons', pillar: 'vocab', questionCount: questions.length, questions });
 }
 
 function startHomeBatch() {
@@ -233,9 +219,11 @@ function startHomeBatch() {
 }
 
 export function startSelectedLessonRun() {
-  const chapters = state.selectedChapters.size ? Array.from(state.selectedChapters) : Object.keys(state.vocabDB);
+  if (!state.selectedChapters.size) { alert('Select at least one lesson first.'); return; }
+  const chapters = Array.from(state.selectedChapters);
   const pool = [];
   for (const chapter of chapters) for (const word of (state.vocabDB[chapter] || [])) {
+    if (document.getElementById('home-hard-only')?.checked && getWordStatus(word.id, state.studyDirection) !== 'hard') continue;
     const key = `V:${word.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
     pool.push({ ...word, type: 'vocab', key, book: 'vocab' });
   }

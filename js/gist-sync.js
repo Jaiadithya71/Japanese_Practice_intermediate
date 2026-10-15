@@ -8,6 +8,7 @@ import { STORAGE_KEY } from './config.js';
 import { state } from './state.js';
 import { updateSidebarStats } from './srs.js';
 import { encodeStats, decodeStatsText } from './stats-codec.js';
+import { getDay } from './daylog.js';
 
 const GIST_FILENAME = 'nihongo-n3-stats.json';
 const PAT_KEY = 'n3_github_pat';
@@ -15,6 +16,10 @@ const GIST_ID_KEY = 'n3_gist_id';
 const DIRTY_KEY = 'n3_gist_dirty';
 const READY_KEY = 'n3_gist_ready';
 const ACTIVE_KEY = 'n3_gist_review_active';
+const DAILY_SUMMARY_KEY = 'n3_day_summary_v1';
+const SESSION_STARTED_KEY = 'n3_day_session_started';
+const SESSION_ITEM_KEYS = 'n3_day_session_item_keys';
+const SESSION_REVIEW_COUNT = 'n3_day_session_review_count';
 const MAX_SYNC_BYTES = 1024 * 1024;
 
 function markRemoteRepairRequired(message) {
@@ -343,8 +348,98 @@ export function scheduleGistSave() {
   else setStatus('pending', 'Sync pending · ends with a review');
 }
 
+function istDateKeyFor(timestamp = Date.now()) {
+  const d = new Date(timestamp);
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+}
+
+function daySessionTotals(date, elapsedMs) {
+  const prior = (() => { try { return JSON.parse(localStorage.getItem(DAILY_SUMMARY_KEY) || '{}'); } catch (_) { return {}; } })();
+  const row = prior[date] || { sessions: 0, elapsedMs: 0 };
+  row.sessions = Math.min(1000, (row.sessions || 0) + 1);
+  row.elapsedMs = Math.min(600 * 60 * 1000, (row.elapsedMs || 0) + Math.max(0, elapsedMs));
+  prior[date] = row;
+  try { localStorage.setItem(DAILY_SUMMARY_KEY, JSON.stringify(prior)); } catch (_) {}
+  return row;
+}
+
+function buildDailySummary(date) {
+  const touched = new Set();
+  const chapters = new Set();
+  const units = new Set();
+  const wordChapter = new Map();
+  for (const [chapterId, words] of Object.entries(state.vocabDB || {})) {
+    for (const word of words || []) wordChapter.set(word.id, chapterId);
+  }
+  for (const [key, stats] of Object.entries(state.stats || {})) {
+    if (!stats || istDateKeyFor(Number(stats.lastSeen || 0)) !== date) continue;
+    // SRS history distinguishes reviewed items from test-mistake lastSeen updates.
+    const reviewedToday = Array.isArray(stats.hist) && stats.hist.some(entry => Array.isArray(entry) && istDateKeyFor(Number(entry[0] || 0)) === date);
+    if (!reviewedToday) continue;
+    touched.add(key);
+    if (!key.startsWith('V:')) continue;
+    const wordId = key.slice(2).replace(/:rev$/, '');
+    const chapterId = wordChapter.get(wordId);
+    if (!chapterId) continue;
+    const meta = state.chapterMetadata?.[chapterId] || {};
+    const part = chapterId.startsWith('part2_') ? 'Part 2: Characteristics' : 'Part 1: Topics';
+    chapters.add(part);
+    const chapterNum = chapterId.startsWith('part2_') ? `C${chapterId.slice(6)}` : `T${chapterId}`;
+    units.add(`${chapterNum}: ${meta.topic_en || meta.topic_ja || chapterNum}`);
+  }
+  const allDaily = (() => { try { return JSON.parse(localStorage.getItem(DAILY_SUMMARY_KEY) || '{}'); } catch (_) { return {}; } })();
+  const local = allDaily[date] || {};
+  const reviewsDone = date === istDateKeyFor() ? Math.max(Number(getDay(date).reviews) || 0, Number(local.reviewedFallback) || 0) : Number(getDay(date).reviews) || 0;
+  const dailyItems = new Set(Array.isArray(local.itemKeys) ? local.itemKeys : [...touched]);
+  for (const key of touched) dailyItems.add(key);
+  const dailyUnits = new Set(units);
+  const dailyChapters = new Set(chapters);
+  for (const key of dailyItems) {
+    if (typeof key !== 'string' || !key.startsWith('V:')) continue;
+    const wordId = key.slice(2).replace(/:rev$/, '');
+    const chapterId = wordChapter.get(wordId);
+    if (!chapterId) continue;
+    const meta = state.chapterMetadata?.[chapterId] || {};
+    dailyChapters.add(chapterId.startsWith('part2_') ? 'Part 2: Characteristics' : 'Part 1: Topics');
+    const chapterNum = chapterId.startsWith('part2_') ? `C${chapterId.slice(6)}` : `T${chapterId}`;
+    dailyUnits.add(`${chapterNum}: ${meta.topic_en || meta.topic_ja || chapterNum}`);
+  }
+  return {
+    date,
+    reviewsDone: Math.min(10000, reviewsDone),
+    uniqueItems: Math.min(10000, dailyItems.size),
+    sessions: Math.min(1000, Number(local.sessions) || 0),
+    minutes: Math.min(600, Math.round((Number(local.elapsedMs) || 0) / 60000)),
+    chapters: [...dailyChapters].sort(), units: [...dailyUnits].sort()
+  };
+}
+
+async function syncDailySummary(date) {
+  const summary = buildDailySummary(date);
+  if (!navigator.onLine) {
+    setStatus('pending', 'Offline · daily summary queued');
+    return false;
+  }
+  try {
+    const response = await fetch('/api/day', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(summary)
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const result = await response.json().catch(() => ({}));
+    if (result.error) throw new Error(result.error);
+    return true;
+  } catch (error) {
+    console.warn('[n3-sync] Daily accountability summary not delivered:', error.message);
+    setStatus('pending', 'Daily summary pending · saved on this device');
+    return false;
+  }
+}
+
 export function beginGistReviewSession() {
+  if (reviewSessionActive) return;
   reviewSessionActive = true;
+  try { localStorage.setItem(SESSION_STARTED_KEY, JSON.stringify({ date: istDateKeyFor(), startedAt: Date.now() })); localStorage.setItem(SESSION_ITEM_KEYS, '[]'); localStorage.setItem(SESSION_REVIEW_COUNT, '0'); } catch (_) {}
   if (typeof window !== 'undefined') window.__n3ReviewSessionActive = true;
   localStorage.setItem(ACTIVE_KEY, '1');
   localStorage.removeItem(READY_KEY);
@@ -357,6 +452,19 @@ export async function endGistReviewSession() {
   reviewSessionActive = false;
   if (typeof window !== 'undefined') window.__n3ReviewSessionActive = false;
   localStorage.removeItem(ACTIVE_KEY);
+  let session = null;
+  try { session = JSON.parse(localStorage.getItem(SESSION_STARTED_KEY) || 'null'); localStorage.removeItem(SESSION_STARTED_KEY); } catch (_) {}
+  if (session && session.date && Number.isFinite(session.startedAt)) {
+    const elapsed = Math.max(0, Date.now() - session.startedAt);
+    const totals = daySessionTotals(session.date, elapsed);
+    const sessionReviews = (() => { try { return Number(localStorage.getItem(SESSION_REVIEW_COUNT)) || 0; } catch (_) { return 0; } })();
+    try { localStorage.removeItem(SESSION_REVIEW_COUNT); } catch (_) {}
+    if (session.date === istDateKeyFor()) totals.reviewedFallback = Math.max(0, Number(totals.reviewedFallback) || 0) + sessionReviews;
+    const sessionKeys = (() => { try { return JSON.parse(localStorage.getItem(SESSION_ITEM_KEYS) || '[]'); } catch (_) { return []; } })();
+    totals.itemKeys = [...new Set([...(totals.itemKeys || []), ...sessionKeys])];
+    try { const all = JSON.parse(localStorage.getItem(DAILY_SUMMARY_KEY) || '{}'); all[session.date] = totals; localStorage.setItem(DAILY_SUMMARY_KEY, JSON.stringify(all)); localStorage.removeItem(SESSION_ITEM_KEYS); } catch (_) {}
+    await syncDailySummary(session.date);
+  }
   const { pat, gistId } = creds();
   if (!dirty) {
     if (pat && gistId) setStatus(navigator.onLine ? 'ok' : 'pending', navigator.onLine ? 'Connected · up to date' : 'Offline · last sync may be out of date');
