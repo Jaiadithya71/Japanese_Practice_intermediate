@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navigation.css" />
-  <link rel="stylesheet" href="css/home.css?v=3.0" />
+  <link rel="stylesheet" href="css/home.css?v=activity-3.0" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css" />
   <link rel="stylesheet" href="css/kanji.css" />
@@ -161,6 +161,8 @@
           <div class="home-activity-summary"><strong id="home-review-streak">0</strong><span>day streak</span></div>
         </div>
         <div id="home-activity-heatmap" class="home-activity-heatmap"></div>
+        <p id="home-activity-hint" class="activity-day-hint">Tap a day to see its study details.</p>
+        <div id="home-activity-detail" class="activity-day-detail" aria-live="polite" hidden></div>
         <div class="home-activity-today"><span id="home-reviews-today">0</span> reviews today <span class="home-goal-copy">· goal 500</span></div>
       </section>
 
@@ -1040,7 +1042,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=3.1"></script>
+  <script type="module" src="js/main.js?v=3.2"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

@@ -1,3 +1,4 @@
+import { renderActivityDayHtml } from './activity-detail.js';
 import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — home.js
@@ -271,6 +272,30 @@ export function renderHomeActivity() {
   // Reuse the existing 30-day layout while preserving this card's reviews-only scale.
   const html = renderHeatmapGridHtml(reviewsOnly).replace(/: (\d+) items/g, ': $1 reviews');
   grid.innerHTML = html + `<div class="home-heatmap-legend"><span>0</span><i class="heatmap-cell level-0"></i><i class="heatmap-cell level-1"></i><i class="heatmap-cell level-2"></i><i class="heatmap-cell level-3"></i><i class="heatmap-cell level-4"></i><i class="heatmap-cell level-5"></i><span>500+</span></div>`;
+  const detail = document.getElementById('home-activity-detail');
+  grid.querySelectorAll('.heatmap-cell[data-date]').forEach(cell => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = cell.className;
+    button.dataset.date = cell.dataset.date;
+    button.title = cell.title;
+    button.setAttribute('aria-label', `${cell.dataset.date}: ${cell.dataset.count} reviews. View day details`);
+    button.setAttribute('aria-controls', 'home-activity-detail');
+    button.setAttribute('aria-pressed', 'false');
+    button.onclick = () => {
+      grid.querySelectorAll('button[data-date]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      if (detail) {
+        detail.hidden = false;
+        detail.innerHTML = renderActivityDayHtml(getDay(button.dataset.date));
+      }
+      const hint = document.getElementById('home-activity-hint');
+      if (hint) hint.hidden = true;
+    };
+    cell.replaceWith(button);
+  });
+  if (detail) detail.hidden = true;
+  const hint = document.getElementById('home-activity-hint');
+  if (hint) hint.hidden = false;
   const streak = document.getElementById('home-review-streak');
   const today = document.getElementById('home-reviews-today');
   if (streak) streak.textContent = getCurrentStreak();
