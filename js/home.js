@@ -210,7 +210,9 @@ function updateHomeLessonControls() {
 export function startSelectedLessonTestRun() {
   const selected = new Set(state.selectedChapters);
   const tests = getAllAvailableTests().filter(test => test.pillar === 'vocab' && test.category !== 'vocab_reviews' && test.category !== 'mock_exams' && selected.has(String(test.id).replace(/^vocab-/, '')));
-  const questions = tests.flatMap(test => test.questions || []);
+  const questions = tests.flatMap(test => test.questions || []).filter(question =>
+    Array.isArray(question.options) && question.options.length >= 2 &&
+    Number.isInteger(question.correct) && question.correct >= 1 && question.correct <= question.options.length);
   if (!questions.length) { alert('No multiple-choice tests are available for these lessons.'); return null; }
   // The test runner is inside the Test view, not the Home lesson picker.
   showView('test');
