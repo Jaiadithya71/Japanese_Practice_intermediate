@@ -66,6 +66,8 @@ export function setKanjiTab(tab) {
 
 export function setKanjiStudyDirection(dir) {
   state.kanjiStudyDirection = dir;
+  const picker = document.getElementById('kanji-picker-direction');
+  if (picker) picker.value = dir;
   ['ja-kana', 'kana-ja', 'ja-meaning', 'mixed'].forEach(d => {
     const btn = document.getElementById(`kdir-${d}`);
     if (btn) btn.classList.toggle('active', d === dir);
@@ -123,38 +125,36 @@ export function renderKanjiLessonChips() {
   const container = document.getElementById('kanji-lesson-chips-row');
   if (!container) return;
   container.innerHTML = '';
-
-  if (!(state.kanjiSelectedLessons instanceof Set)) {
-    state.kanjiSelectedLessons = new Set();
-  }
-
-  const isAll = state.kanjiSelectedLessons.size === 0;
-
-  // "All Lessons" chip
-  const allChip = document.createElement('button');
-  allChip.className = `kanji-lesson-chip ${isAll ? 'active' : ''}`;
-  allChip.innerHTML = `${isAll ? '<i class="fa-solid fa-check"></i> ' : ''}All Lessons (1–25)`;
-  allChip.onclick = () => selectKanjiLesson('all');
-  container.appendChild(allChip);
-
-  // Lessons 1 to 25
+  if (!(state.kanjiSelectedLessons instanceof Set)) state.kanjiSelectedLessons = new Set();
+  if (state.kanjiSelectedLessons.size > 0) state.kanjiSelectionEmpty = false;
+  const banner = document.getElementById('pb-kanji');
+  const picker = document.querySelector('#view-kanji .kanji-picker-card');
+  if (banner && picker && picker.nextElementSibling !== banner) picker.after(banner);
+  const isAll = !state.kanjiSelectionEmpty && state.kanjiSelectedLessons.size === 0;
   for (let i = 1; i <= 25; i++) {
-    const isSel = state.kanjiSelectedLessons.has(i);
-    const chip = document.createElement('button');
-    chip.className = `kanji-lesson-chip ${isSel ? 'active selected' : ''}`;
-
-    let wordsCount = 0;
-    for (const char in (state.kanjiDB || {})) {
-      const k = state.kanjiDB[char];
-      if (k && k.lesson_number === i) {
-        wordsCount += (k.words || []).length;
-      }
-    }
-
-    chip.innerHTML = `${isSel ? '<i class="fa-solid fa-check"></i> ' : ''}L${i} <span style="font-size: 0.72rem; opacity: 0.85;">(${wordsCount}w)</span>`;
-    chip.onclick = () => selectKanjiLesson(i, 'toggle');
-    container.appendChild(chip);
+    const selected = isAll || state.kanjiSelectedLessons.has(i);
+    const lesson = (state.kanjiLessons || []).find(l => l.lesson_number === i);
+    const kanji = Object.values(state.kanjiDB || {}).filter(k => k.lesson_number === i);
+    const words = kanji.reduce((n, k) => n + (k.words || []).length, 0);
+    const tile = document.createElement('button');
+    tile.type = 'button';
+    tile.className = `kanji-picker-tile${selected ? ' selected' : ''}`;
+    tile.setAttribute('aria-pressed', String(selected));
+    tile.setAttribute('aria-label', `Lesson ${i}, ${kanji.length} kanji, ${words} words${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`);
+    tile.title = lesson?.title_ja || `Lesson ${i}`;
+    tile.innerHTML = `<span class="kanji-picker-num">${i}</span><span class="kanji-picker-count">${words}w</span><span class="kanji-picker-dot" aria-hidden="true"></span>`;
+    tile.onclick = () => selectKanjiLesson(i, 'toggle');
+    container.appendChild(tile);
   }
+  document.getElementById('kanji-select-all').onclick = () => selectKanjiLesson('all');
+  document.getElementById('kanji-clear-selection').onclick = () => {
+    state.kanjiSelectedLessons.clear();
+    state.kanjiSelectionEmpty = true;
+    state.kanjiLesson = 'all';
+    renderKanjiLessonChips();
+    renderKanjiTargetGrid();
+    updateKanjiActionButtonLabels();
+  };
 }
 
 export function selectKanjiLesson(lessonNum, mode = 'toggle') {
@@ -163,6 +163,7 @@ export function selectKanjiLesson(lessonNum, mode = 'toggle') {
   }
 
   if (lessonNum === 'all') {
+    state.kanjiSelectionEmpty = false;
     state.kanjiSelectedLessons.clear();
     state.kanjiLesson = 'all';
   } else {
@@ -177,6 +178,7 @@ export function selectKanjiLesson(lessonNum, mode = 'toggle') {
       state.kanjiSelectedLessons.clear();
       state.kanjiSelectedLessons.add(num);
     }
+    state.kanjiSelectionEmpty = state.kanjiSelectedLessons.size === 0;
     state.kanjiLesson = state.kanjiSelectedLessons.size === 1 ? Array.from(state.kanjiSelectedLessons)[0] : 'all';
   }
 
@@ -205,6 +207,7 @@ export function renderKanjiTargetGrid() {
     // Part filter
     if (state.kanjiPart !== 'all' && k.part !== state.kanjiPart) return false;
 
+    if (state.kanjiSelectionEmpty) return false;
     // Multi-Lesson selection filter
     if (selLessons.size > 0 && !selLessons.has(k.lesson_number)) return false;
 
@@ -431,7 +434,7 @@ function selectedKanjiPool() {
   const pool = [];
   for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
-    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) pool.push(k);
+    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) pool.push(k);
   }
   return pool;
 }
@@ -468,7 +471,7 @@ export function updateKanjiActionButtonLabels() {
   const pool = [];
   for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
-    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) {
+    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) {
       pool.push(k);
     }
   }
@@ -476,16 +479,18 @@ export function updateKanjiActionButtonLabels() {
   const items = state.kanjiHardOnly ? buildHardKanjiItems(pool) : buildKanjiStudyItems(pool);
   const wordsCount = items.length;
 
-  let scope = 'All Lessons';
-  if (selLessons.size === 1) {
-    scope = `Lesson ${Array.from(selLessons)[0]}`;
-  } else if (selLessons.size > 1 && selLessons.size <= 3) {
-    scope = `L${Array.from(selLessons).sort((a,b)=>a-b).join('+')}`;
-  } else if (selLessons.size > 3) {
-    scope = `${selLessons.size} Lessons`;
-  }
+  const lessonCount = state.kanjiSelectionEmpty ? 0 : selLessons.size || 25;
+  const summary = document.getElementById('kanji-picker-summary');
+  if (summary) summary.textContent = `${lessonCount} ${lessonCount === 1 ? 'lesson' : 'lessons'} selected · ${pool.length} kanji · ${wordsCount} cards${state.kanjiHardOnly ? ' · hard only' : ''}`;
+  const direction = document.getElementById('kanji-picker-direction');
+  if (direction) direction.value = state.kanjiStudyDirection || 'ja-kana';
+  const hard = document.getElementById('kanji-picker-hard');
+  if (hard) hard.checked = Boolean(state.kanjiHardOnly);
+  btn.innerHTML = '<i class="fa-solid fa-clone"></i> Flashcards';
+  btn.disabled = wordsCount === 0;
+  const quiz = document.getElementById('btn-kanji-quiz-action');
+  if (quiz) quiz.disabled = wordsCount === 0;
 
-  btn.innerHTML = `<i class="fa-solid fa-play"></i> Drill ${state.kanjiHardOnly ? 'Hard · ' : ''}${scope} <span class="badge" style="margin-left: 0.35rem; font-size: 0.72rem; padding: 0.15rem 0.45rem; background: rgba(255, 255, 255, 0.2); color: #fff; border-radius: 999px;">${wordsCount}w</span>`;
 }
 
 export function drillKanjiSelected() {
@@ -494,7 +499,7 @@ export function drillKanjiSelected() {
 
   for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
-    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) {
+    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) {
       pool.push(k);
     }
   }
@@ -1007,7 +1012,7 @@ export function startKanjiQuickQuiz() {
   const pool = [];
   for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
-    if (selLessons.size === 0 || selLessons.has(k.lesson_number)) {
+    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) {
       pool.push(k);
     }
   }
@@ -1223,4 +1228,4 @@ function escapeAttr(str) {
 if (typeof window !== 'undefined') {
   window.toggleKanjiHardOnly = toggleKanjiHardOnly;
   window.drillKanjiHard = drillKanjiHard;
-}
+     }
