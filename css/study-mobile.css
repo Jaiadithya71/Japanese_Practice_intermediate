@@ -79,14 +79,14 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
 @media (max-width:600px) {
   body.in-runner #view-study.active { height:calc(100dvh - 30px - env(safe-area-inset-bottom,0px)); min-height:0; }
   #view-study #study-card-container:has(.review-testing) { flex:1; min-height:0; justify-content:flex-start; overflow:hidden; }
-  #view-study .flashcard-stage:has(.review-testing) { flex:1; min-height:0; max-height:none; height:100%; }
-  #view-study .flashcard.review-testing { min-height:0; height:100%; max-height:100%; overflow:hidden; }
+  #view-study .flashcard-stage:has(.review-testing) { flex:1!important; min-height:0!important; max-height:none!important; height:100%!important; }
+  #view-study .flashcard.review-testing { min-height:0!important; height:100%!important; max-height:100%!important; overflow:hidden; }
   #view-study .review-testing .flashcard-body { min-height:0; flex:1; overflow-y:auto; overflow-x:hidden; justify-content:safe center; overscroll-behavior:contain; padding:10px 2px; margin:10px 0 0; scrollbar-width:thin; }
   #view-study .review-testing .flashcard-body > * { flex-shrink:0; }
   #view-study .grade-controls { position:relative; z-index:1; flex:none; background:var(--bg); padding-top:2px; }
 }
 @media (max-width:600px) {
-  #view-study .review-testing .flashcard-body { gap:8px; padding:7px 2px; margin:7px 0 0; }
+  #view-study .review-testing .flashcard-body { gap:8px!important; padding:7px 2px; margin:7px 0 0!important; }
   #view-study .review-testing .card-term-large { font-size:clamp(1.9rem,8vw,2.5rem); line-height:1.45; }
   #view-study .review-testing #card-meaning { font-size:.97rem; line-height:1.4; }
   #view-study .review-testing .card-romaji { margin-top:.3rem!important; font-size:.82rem!important; }
