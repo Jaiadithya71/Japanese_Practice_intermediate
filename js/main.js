@@ -1,4 +1,4 @@
-import { setHomeReviewPhase } from './home.js?v=3.8';
+import { setHomeReviewPhase } from './home.js?v=3.9';
 window.setHomeReviewPhase = setHomeReviewPhase;
 /* =======================================================
    NIHONGO INTERMEDIATE — main.js
@@ -9,9 +9,9 @@ import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
 import { showView } from './navigation.js';
-import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=3.8';
+import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=3.9';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=2.4';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=3.8';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=3.9';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
 import {

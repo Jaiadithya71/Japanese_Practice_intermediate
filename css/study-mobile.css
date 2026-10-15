@@ -125,3 +125,4 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study.test-action-layout .btn-grade:disabled { opacity:.4; cursor:default; }
   #view-study.test-action-layout .study-skip-row { order:4; flex:none; }
 }
+#view-study.test-action-layout .grade-controls.awaiting-reveal { visibility:hidden; pointer-events:none; }

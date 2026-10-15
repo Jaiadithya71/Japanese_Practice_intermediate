@@ -277,11 +277,17 @@ export function renderCard() {
   const gradeControls = document.getElementById('grade-controls');
   if (testLayout && gradeControls) {
     gradeControls.style.display = 'grid';
+    gradeControls.classList.toggle('awaiting-reveal', !state.cardFlipped);
+    gradeControls.setAttribute('aria-hidden', String(!state.cardFlipped));
     gradeControls.querySelectorAll('button').forEach(button => {
       button.disabled = !state.cardFlipped || !!priorOutcome?.grade;
       button.title = priorOutcome?.grade ? 'Already graded' : !state.cardFlipped ? 'Reveal the card first' : '';
     });
-  } else if (gradeControls) gradeControls.querySelectorAll('button').forEach(button => { button.disabled = false; });
+  } else if (gradeControls) {
+    gradeControls.classList.remove('awaiting-reveal');
+    gradeControls.removeAttribute('aria-hidden');
+    gradeControls.querySelectorAll('button').forEach(button => { button.disabled = false; });
+  }
   const previous = document.getElementById('study-previous');
   const next = document.getElementById('study-next');
   const navigationEnabled = state.studyMode !== 'kanji_quiz';

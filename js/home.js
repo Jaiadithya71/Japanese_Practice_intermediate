@@ -7,7 +7,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 
 import { state } from './state.js';
 import { getWordStatus } from './srs.js';
-import { startStudy, renderCard } from './study.js?v=3.8';
+import { startStudy, renderCard } from './study.js?v=3.9';
 import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
