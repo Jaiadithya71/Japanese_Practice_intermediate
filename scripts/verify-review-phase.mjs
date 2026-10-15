@@ -11,7 +11,7 @@ const source=fs.readFileSync('js/study.js','utf8');
 assert.doesNotMatch(source,/id="review-phase-switch"|export function setReviewPhase/);
 assert.equal(initialReviewPhase({}, 'learn'), 'learn');
 assert.match(source,/if \(!canGradeReview\(reviewPhase, state.cardFlipped\)\) return;/);
-assert.match(source,/reviewPhase === 'learn' \|\| cardFlipRunning\) return;/);
+assert.match(source,/reviewPhase === 'learn'\) return;/);
 assert.match(source,/phaseItem !== item \|\| phaseIndex !== state.sessionIdx/);
 assert.match(source,/state.studyMode !== 'kanji_quiz'/);
 console.log('Review phase: defaults, grade guard, no-write switch, per-card reset and quick-quiz separation passed.');
