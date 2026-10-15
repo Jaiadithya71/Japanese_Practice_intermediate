@@ -287,6 +287,16 @@ export function renderCard() {
     const hint = document.getElementById('card-controls-hint');
     if (hint) { hint.innerHTML = ''; hint.style.display = 'none'; }
   }
+  const testLayout = !learning && state.studyMode !== 'kanji_quiz' && state.sessionIdx < state.sessionItems.length;
+  document.getElementById('view-study')?.classList.toggle('test-action-layout', testLayout);
+  const gradeControls = document.getElementById('grade-controls');
+  if (testLayout && gradeControls) {
+    gradeControls.style.display = 'grid';
+    gradeControls.querySelectorAll('button').forEach(button => {
+      button.disabled = !state.cardFlipped || !!priorOutcome?.grade;
+      button.title = priorOutcome?.grade ? 'Already graded' : !state.cardFlipped ? 'Reveal the card first' : '';
+    });
+  } else if (gradeControls) gradeControls.querySelectorAll('button').forEach(button => { button.disabled = false; });
   const previous = document.getElementById('study-previous');
   const next = document.getElementById('study-next');
   const skip = document.getElementById('study-skip');
@@ -296,7 +306,7 @@ export function renderCard() {
   if (skip) skip.hidden = navigationEnabled && (learning || !!priorOutcome);
   if (priorOutcome?.grade) {
     const controls = document.getElementById('grade-controls');
-    if (controls) controls.style.display = 'none';
+    if (controls && !testLayout) controls.style.display = 'none';
     const label = document.getElementById('review-phase-label');
     if (label) label.textContent = `TEST · Already graded: ${['', 'Again', 'Hard', 'Good', 'Easy'][priorOutcome.grade]}`;
   }

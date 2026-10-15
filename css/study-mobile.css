@@ -114,3 +114,14 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study .review-learning .flashcard-body { flex:1; min-height:0; overflow-y:auto; justify-content:safe center; overscroll-behavior:contain; }
   #view-study .review-learning .flashcard-body > * { flex-shrink:0; }
 }
+/* Test: content-sized card, large grade area, stable bottom navigation. */
+@media(max-width:600px) {
+  #view-study.test-action-layout #study-card-container { flex:0 1 auto!important; min-height:0; max-height:52dvh; overflow:hidden; }
+  #view-study.test-action-layout .flashcard-stage:has(.review-testing) { flex:0 1 auto!important; height:auto!important; max-height:52dvh!important; }
+  #view-study.test-action-layout .flashcard.review-testing { flex:none; height:auto!important; min-height:0!important; max-height:52dvh!important; width:100%; }
+  #view-study.test-action-layout .review-testing .flashcard-body { flex:0 1 auto; margin-bottom:0!important; justify-content:flex-start; }
+  #view-study.test-action-layout .grade-controls { order:3; display:grid!important; flex:1 1 0%; min-height:164px; grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); }
+  #view-study.test-action-layout .btn-grade { height:100%; min-height:0!important; }
+  #view-study.test-action-layout .btn-grade:disabled { opacity:.4; cursor:default; }
+  #view-study.test-action-layout .study-skip-row { order:4; flex:none; }
+}

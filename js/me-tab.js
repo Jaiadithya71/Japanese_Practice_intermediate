@@ -28,7 +28,7 @@ import {
   createSnapshot
 } from './backup.js';
 import { showView } from './navigation.js';
-import { renderCard } from './study.js?v=3.4';
+import { renderCard } from './study.js?v=3.7';
 
 // Storage Keys
 export const SETTINGS_STORAGE_KEY = 'nihongo_intermediate_settings_v1';
