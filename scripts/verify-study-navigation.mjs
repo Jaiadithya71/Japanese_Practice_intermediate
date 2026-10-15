@@ -25,3 +25,8 @@ state.sessionItems=[{key:'a'}];state.sessionIdx=0;state.cardFlipped=true;run('gr
 assert.match(source,/Already graded:/);
 assert.match(source,/if \(previous\).*previous.disabled = state.sessionIdx <= 0/);
 console.log('Navigation: browse no writes, first/last bounds, no duplicate grading/skips, skipped-to-graded correction, Again new attempt, fresh-session reset passed.');
+const html=fs.readFileSync('index.html','utf8');
+assert.ok(html.indexOf('id="study-skip-row"') > html.indexOf('id="study-card-container"'));
+assert.ok(html.indexOf('id="study-skip-row"') < html.indexOf('id="grade-controls"'));
+assert.match(source,/getElementById\('study-skip-row'\)\?\.append\(topAction\)/);
+console.log('Previous/Next and Learn action share the bottom action area before grading.');
