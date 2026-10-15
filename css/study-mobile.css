@@ -126,3 +126,10 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study.test-action-layout .study-skip-row { order:4; flex:none; }
 }
 #view-study.test-action-layout .grade-controls.awaiting-reveal { visibility:hidden; pointer-events:none; }
+@media(max-width:600px) {
+  #view-study.test-action-layout.test-front-layout #study-card-container { flex:1 1 0%!important; max-height:none!important; }
+  #view-study.test-front-layout .flashcard-stage:has(.review-testing) { flex:1!important; height:100%!important; max-height:none!important; cursor:pointer; }
+  #view-study.test-front-layout .flashcard.review-testing { flex:1; height:100%!important; max-height:100%!important; }
+  #view-study.test-front-layout .review-testing .flashcard-body { flex:1; justify-content:center; }
+  #view-study.test-front-layout .grade-controls.awaiting-reveal { display:none!important; }
+}

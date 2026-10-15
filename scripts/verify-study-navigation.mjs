@@ -38,3 +38,6 @@ console.log('Skip control, tally and behavior removed.');
 
 assert.match(source,/classList.toggle\('awaiting-reveal', !state.cardFlipped\)/);
 console.log('Front grade area is visually hidden without moving pinned navigation.');
+
+assert.match(source,/classList.toggle\('test-front-layout', testLayout && !state.cardFlipped\)/);
+console.log('Front uses an expanded reveal target; revealed card stays content-sized.');

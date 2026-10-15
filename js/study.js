@@ -274,6 +274,7 @@ export function renderCard() {
   }
   const testLayout = !learning && state.studyMode !== 'kanji_quiz' && state.sessionIdx < state.sessionItems.length;
   document.getElementById('view-study')?.classList.toggle('test-action-layout', testLayout);
+  document.getElementById('view-study')?.classList.toggle('test-front-layout', testLayout && !state.cardFlipped);
   const gradeControls = document.getElementById('grade-controls');
   if (testLayout && gradeControls) {
     gradeControls.style.display = 'grid';
