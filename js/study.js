@@ -4,6 +4,57 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { initialReviewPhase, canGradeReview } from './review-phase.js';
+
+let reviewPhase = 'test';
+let phaseItem = null;
+let phaseIndex = -1;
+
+export function setReviewPhase(phase) {
+  if (!['learn', 'test'].includes(phase)) return;
+  reviewPhase = phase;
+  state.cardFlipped = phase === 'learn';
+  renderCard();
+}
+
+function renderReviewPhase() {
+  const item = state.sessionItems[state.sessionIdx];
+  if (!item) return;
+  if (phaseItem !== item || phaseIndex !== state.sessionIdx) {
+    phaseItem = item;
+    phaseIndex = state.sessionIdx;
+    reviewPhase = initialReviewPhase(item);
+    if (reviewPhase === 'learn') state.cardFlipped = true;
+  }
+  const row = document.getElementById('study-skip-row');
+  if (row && !document.getElementById('review-phase-switch')) {
+    row.insertAdjacentHTML('afterbegin', `<div class="review-phase-switch" id="review-phase-switch" role="group" aria-label="Review phase">
+      <button type="button" data-phase="learn" onclick="setReviewPhase('learn')">Learn</button>
+      <button type="button" data-phase="test" onclick="setReviewPhase('test')">Test</button>
+    </div>`);
+  }
+  const enabled = state.studyMode !== 'kanji_quiz';
+  const control = document.getElementById('review-phase-switch');
+  if (control) {
+    control.hidden = !enabled;
+    control.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.phase === reviewPhase)));
+  }
+  const card = document.getElementById('flashcard');
+  if (card) {
+    card.classList.toggle('review-learning', enabled && reviewPhase === 'learn');
+    card.classList.toggle('review-testing', enabled && reviewPhase === 'test');
+    let label = document.getElementById('review-phase-label');
+    if (!label) {
+      label = document.createElement('div');
+      label.id = 'review-phase-label';
+      label.className = 'review-phase-label';
+      card.querySelector('.flashcard-top')?.after(label);
+    }
+    label.hidden = !enabled;
+    label.textContent = reviewPhase === 'learn' ? 'LEARNING · Not graded' : (state.cardFlipped ? 'TEST · Answer revealed' : 'TEST · Recall first');
+  }
+}
+
 import { vocabularyLessonLabel } from './study-labels.js';
 import { updateItemStats, toggleItemHard, getItemStatus, getAllDueItems, formatItemKey } from './srs.js';
 import { showView } from './navigation.js';
@@ -135,10 +186,9 @@ export function startLearnNew(unitId, count = 10) {
 
 export function learnGotIt() {
   const item = state.sessionItems[state.sessionIdx];
-  if (!item || !item.learnNew || item.learned) return;
-  item.learned = true;
-  state.cardFlipped = false;
-  renderCard();
+  if (!item) return;
+  if (item.learnNew) item.learned = true;
+  setReviewPhase('test');
 }
 
 export function skipCard() {
@@ -150,7 +200,7 @@ export function skipCard() {
 }
 
 function isLearnStage(item) {
-  return !!item && item.learnNew && !item.learned;
+  return !!item && reviewPhase === 'learn';
 }
 
 export function startOmniReview() {
@@ -195,7 +245,14 @@ export function kanaToRomaji(reading = '') {
 }
 
 export function renderCard() {
+  if (state.sessionIdx < state.sessionItems.length && !document.getElementById('card-term')) resetStudyViewHTML();
+  renderReviewPhase();
+  if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') state.cardFlipped = true;
   renderCardContent();
+  if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') {
+    const controls = document.getElementById('grade-controls');
+    if (controls) controls.style.display = 'none';
+  }
   const item = state.sessionItems[state.sessionIdx];
   if (!item || !state.cardFlipped || state.studyMode === 'kanji_quiz') return;
   const reading = item.reading || (item.type === 'kanji' ? '' : item.kana);
@@ -501,7 +558,7 @@ function renderCardContent() {
   // New word, teach stage: meaning first, then "Got it, quiz me"
   if (isLearnStage(item)) {
     termEl.innerHTML = item.ruby_html || item.term_ja;
-    meaningEl.innerHTML = `<span class="learn-badge">NEW WORD</span><div>${item.meaning_en || ''}</div>`;
+    meaningEl.innerHTML = `<span class="learn-badge">${item.learnNew && !item.learned ? 'NEW WORD' : 'LEARN'}</span><div>${item.meaning_en || ''}</div>`;
     meaningEl.style.color = 'var(--text)';
     if (item.example_ja && exBox && exJa && exEn) {
       exBox.style.display = 'block';
@@ -558,12 +615,13 @@ function renderCardContent() {
 
 export function flipCard() {
   if (state.studyMode === 'kanji_quiz') return;
-  if (isLearnStage(state.sessionItems[state.sessionIdx])) { learnGotIt(); return; }
+  if (reviewPhase === 'learn') return;
   state.cardFlipped = !state.cardFlipped;
   renderCard();
 }
 
 export function gradeCard(grade) {
+  if (!canGradeReview(reviewPhase, state.cardFlipped)) return;
   if (state.sessionIdx >= state.sessionItems.length) return;
 
   const item = state.sessionItems[state.sessionIdx];

@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import { initialReviewPhase, canGradeReview } from '../js/review-phase.js';
+assert.equal(initialReviewPhase({}), 'test');
+assert.equal(initialReviewPhase({learnNew:true,learned:false}), 'learn');
+assert.equal(initialReviewPhase({learnNew:true,learned:true}), 'test');
+for (const revealed of [false,true]) assert.equal(canGradeReview('learn',revealed), false);
+assert.equal(canGradeReview('test',false),false);
+assert.equal(canGradeReview('test',true),true);
+const source=fs.readFileSync('js/study.js','utf8');
+const setter=source.slice(source.indexOf('export function setReviewPhase'),source.indexOf('function renderReviewPhase'));
+assert.doesNotMatch(setter,/updateItemStats|sessionIdx\+|sessionTotalAnswered|endGistReviewSession/);
+assert.match(source,/if \(!canGradeReview\(reviewPhase, state.cardFlipped\)\) return;/);
+assert.match(source,/if \(reviewPhase === 'learn'\) return;/);
+assert.match(source,/phaseItem !== item \|\| phaseIndex !== state.sessionIdx/);
+assert.match(source,/state.studyMode !== 'kanji_quiz'/);
+console.log('Review phase: defaults, grade guard, no-write switch, per-card reset and quick-quiz separation passed.');
