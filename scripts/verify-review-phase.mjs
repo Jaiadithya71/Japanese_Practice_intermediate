@@ -30,3 +30,8 @@ assert.match(home,/id="home-review-phase"/);
 const learning=source.slice(source.indexOf('export function learnGotIt()'),source.indexOf('export function skipCard()'));
 assert.doesNotMatch(learning,/updateItemStats|sessionSkipped|sessionTotalAnswered/);
 console.log('Home mode persistence, validation, and ungraded Next word passed.');
+
+assert.match(source,/actionRow.prepend\(topAction\)/);
+assert.match(source,/topAction.addEventListener\('click', learnGotIt\)/);
+assert.match(source,/hint.innerHTML = ''; hint.style.display = 'none'/);
+console.log('Learn action in top row; in-card footer removed.');

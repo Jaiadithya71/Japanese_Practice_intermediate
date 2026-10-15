@@ -238,15 +238,28 @@ export function renderCard() {
   renderReviewPhase();
   if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') state.cardFlipped = true;
   renderCardContent();
-  if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') {
+  const learning = reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz';
+  let topAction = document.getElementById('study-learn-action');
+  const actionRow = document.getElementById('study-skip-row');
+  if (!topAction && actionRow) {
+    topAction = document.createElement('button');
+    topAction.id = 'study-learn-action';
+    topAction.className = 'btn btn-primary study-learn-action';
+    topAction.type = 'button';
+    topAction.addEventListener('click', learnGotIt);
+    actionRow.prepend(topAction);
+  }
+  if (topAction) {
+    const item = state.sessionItems[state.sessionIdx];
+    topAction.hidden = !learning || !item;
+    topAction.textContent = item?.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word';
+  }
+  actionRow?.classList.toggle('has-learn-action', learning);
+  if (learning) {
     const controls = document.getElementById('grade-controls');
     if (controls) controls.style.display = 'none';
-    const item = state.sessionItems[state.sessionIdx];
     const hint = document.getElementById('card-controls-hint');
-    if (item && hint) {
-      hint.style.display = 'block';
-      hint.innerHTML = `<button class="btn btn-primary learn-gotit" onclick="event.stopPropagation(); learnGotIt()">${item.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word'}</button>`;
-    }
+    if (hint) { hint.innerHTML = ''; hint.style.display = 'none'; }
   }
   const item = state.sessionItems[state.sessionIdx];
   if (!item || !state.cardFlipped || state.studyMode === 'kanji_quiz') return;

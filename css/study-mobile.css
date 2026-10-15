@@ -41,3 +41,18 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   body.in-runner #view-study.active { height:auto; min-height:calc(100dvh - 30px); }
   #view-study .flashcard { min-height:330px; }
 }
+
+/* Learning action stays in easy reach, outside the content card. */
+#view-study .study-skip-row.has-learn-action { justify-content:space-between; }
+#view-study .study-learn-action { min-height:52px; min-width:170px; padding:12px 22px; font-size:1rem; border-radius:13px; color:#fff; }
+#view-study .study-learn-action[hidden] { display:none; }
+#view-study .card-example-box { box-sizing:border-box; min-width:0; width:100%; max-width:100%; overflow-wrap:anywhere; flex-shrink:0; }
+#view-study .card-example-ja, #view-study .card-example-en { overflow-wrap:anywhere; line-height:1.55; }
+@media (max-width:600px) {
+  #view-study .study-skip-row .study-learn-action { min-height:52px; font-size:1rem; color:#fff; }
+  #view-study #study-card-container:has(.review-learning) { justify-content:flex-start; padding-top:10px; }
+  #view-study .flashcard-stage:has(.review-learning) { flex:none; min-height: min(56dvh,480px); max-height:none; }
+  #view-study .review-learning { min-height:min(56dvh,480px); height:auto; }
+  #view-study .review-learning .flashcard-body { flex:none; min-height:0; gap:16px; margin:24px 0 6px; }
+  #view-study .review-learning .card-term-large { line-height:1.5; }
+}
