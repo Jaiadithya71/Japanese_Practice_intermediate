@@ -18,3 +18,23 @@ assert.equal(vocabularyKanjiMeanings('時々').length,1);
 assert.equal(vocabularyKanjiMeanings('人人').length,1);
 assert.equal(metadata.license,'CC BY-SA 4.0');
 console.log(`${characters.size} kanji covered in ${words} kanji-bearing words; source ${metadata.database_date}, kana-only hidden, repeated characters deduplicated.`);
+// Exercise the actual renderer, including its DOM branch and safe text handling.
+const {renderVocabularyKanjiBreakdown}=await import('../js/vocab-kanji-breakdown.js');
+class Element {
+  constructor(tag) {this.tag=tag;this.children=[];}
+  append(...children) {this.children.push(...children);}
+  setAttribute() {}
+  addEventListener() {}
+  before(row) {this.inserted=row;}
+}
+const example=new Element('example');
+globalThis.document={getElementById:id=>id==='card-example-box'?example:null,createElement:tag=>new Element(tag),createTextNode:text=>({text})};
+renderVocabularyKanjiBreakdown({type:'vocab',term_ja:'夫婦'},true);
+assert.equal(example.inserted.children[1].children.length,2);
+assert.equal(example.inserted.children[1].children[0].children[0].textContent,'夫');
+example.inserted=null;
+renderVocabularyKanjiBreakdown({type:'vocab',term_ja:'夫婦'},false);
+assert.equal(example.inserted,null);
+renderVocabularyKanjiBreakdown({type:'vocab',term_ja:'いとこ'},true);
+assert.equal(example.inserted,null);
+console.log('Actual renderer: revealed chips, front hidden, kana-only hidden passed.');
