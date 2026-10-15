@@ -233,6 +233,13 @@
           <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()"><i class="fa-solid fa-clone"></i> Flashcards</button>
           <button class="btn btn-secondary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()"><i class="fa-solid fa-bolt"></i> Quick Quiz</button>
         </div>
+        <div class="kanji-exam-panel">
+          <div class="kanji-exam-heading"><h4>Kanji Test</h4><span>4-choice practice</span></div>
+          <p>Reading and writing, like the elementary app. No English hints until you answer.</p>
+          <label class="kanji-picker-direction"><span>Test type</span><select id="kanji-exam-mode"><option value="mixed">Both sections</option><option value="reading">Reading: kanji → kana</option><option value="writing">Writing: kana → kanji</option></select></label>
+          <p class="kanji-exam-scope" id="kanji-exam-scope"></p>
+          <button class="btn btn-secondary" id="btn-kanji-exam-action" onclick="startKanjiExamPractice()"><i class="fa-solid fa-file-pen"></i> Start Kanji Test</button>
+        </div>
         <details class="kanji-picker-guided"><summary>Guided lesson</summary><p>Choose one lesson for the step-by-step lesson flow.</p><button class="btn btn-secondary" id="btn-kanji-runner-action" onclick="startKanjiLessonRunner()" disabled>Start guided lesson</button></details>
       </section>
 
@@ -1084,4 +1091,4 @@
   </div>
 
 </body>
-</html>
+        </html>
