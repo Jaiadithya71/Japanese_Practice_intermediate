@@ -129,7 +129,7 @@
         <p id="home-lessons-count" class="home-picker-summary">1 lesson selected · 41 words in pool</p>
         <div class="home-run-settings">
           <label class="home-run-setting"><span>Session size</span><select aria-label="Session size" onchange="window.setHomeSessionSize(this.value)">
-            <option value="10">10 words</option><option value="20" selected>20 words</option><option value="50">50 words</option><option value="all">All words</option>
+            <option value="10">10 words</option><option value="20">20 words</option><option value="50">50 words</option><option value="all" selected>All words</option>
           </select></label>
           <label class="home-run-setting"><span>Direction</span><select aria-label="Study direction" onchange="window.setHomeStudyDirection(this.value)">
             <option value="ja-en" selected>Japanese → English</option><option value="en-ja">English → Japanese</option>
@@ -1040,7 +1040,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=3.0"></script>
+  <script type="module" src="js/main.js?v=3.1"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

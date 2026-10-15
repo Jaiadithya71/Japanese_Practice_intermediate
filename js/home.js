@@ -147,12 +147,20 @@ export function renderLessonGrid() {
 }
 
 function homeRunSize() {
-  try { return localStorage.getItem('n3_home_session_size') || '20'; } catch (_) { return '20'; }
+  try {
+    // Apply the new default once on existing devices, then keep later choices.
+    if (localStorage.getItem('n3_home_session_size_default_v2') !== 'all') {
+      localStorage.setItem('n3_home_session_size', 'all');
+      localStorage.setItem('n3_home_session_size_default_v2', 'all');
+    }
+    const size = localStorage.getItem('n3_home_session_size');
+    return ['10', '20', '50', 'all'].includes(size) ? size : 'all';
+  } catch (_) { return 'all'; }
 }
 
 export function setHomeSessionSize(value) {
   const allowed = ['10', '20', '50', 'all'];
-  const selected = allowed.includes(String(value).toLowerCase()) ? String(value).toLowerCase() : '20';
+  const selected = allowed.includes(String(value).toLowerCase()) ? String(value).toLowerCase() : 'all';
   try { localStorage.setItem('n3_home_session_size', selected); } catch (_) {}
   updateHomeLessonControls();
 }
