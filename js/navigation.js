@@ -12,6 +12,7 @@ import { renderReadingView } from './reader.js';
 import { renderGrammarView } from './grammar.js';
 import { renderKanjiView } from './kanji.js';
 import { initTestHub } from './test.js';
+import { renderClassTrackHTML } from './class-curriculum.js';
 
 // Safe UI state initialization
 if (!state.ui) {
@@ -236,6 +237,8 @@ export function showView(viewId) {
     renderReadingView();
   } else if (viewId === 'test') {
     initTestHub();
+  } else if (viewId === 'class-track' || viewId === 'class') {
+    renderClassTrackHTML();
   }
 }
 
