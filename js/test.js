@@ -36,6 +36,10 @@ function ensureStylesInjected() {
   const style = document.createElement('style');
   style.id = 'test-upgrades-styles';
   style.textContent = `
+    /* Each test screen uses hide to switch between hub, runner and results. */
+    #test-hub-screen.hide, #test-runner-screen.hide, #test-results-screen.hide {
+      display: none !important;
+    }
     /* Header Action Buttons */
     .tr-header-actions {
       display: flex;
