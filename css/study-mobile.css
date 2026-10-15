@@ -60,3 +60,17 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
 /* Next belongs just below the card, not at the bottom of the viewport. */
 #view-study #study-card-container.has-learn-action { justify-content:flex-start; gap:16px; }
 #view-study #study-card-container .study-learn-action { align-self:center; flex:none; margin:0 0 12px; min-height:52px; min-width:190px; font-size:1rem; color:#fff; }
+
+.vocab-kanji-breakdown { width:100%; text-align:left; flex:none; }
+.vocab-kanji-heading { color:#96a4bb; font-size:.68rem; margin-bottom:5px; }
+.vocab-kanji-chips { display:flex; flex-wrap:wrap; gap:5px; }
+.vocab-kanji-chip { display:inline-flex; align-items:baseline; gap:5px; padding:4px 7px; background:rgba(158,170,198,.07); border:1px solid rgba(158,170,198,.13); border-radius:8px; color:#bbc6d9; font-size:.75rem; line-height:1.4; overflow-wrap:anywhere; max-width:100%; }
+.vocab-kanji-chip b { color:#e0d8fa; font-size:1rem; }
+.vocab-kanji-source { display:block; width:max-content; margin-top:4px; color:#8290a7; font-size:.58rem; text-decoration:none; }
+@media (max-width:600px) {
+  #view-study .flashcard:has(#vocab-kanji-breakdown) .flashcard-body { min-height:0; gap:12px; margin:16px 0 6px; }
+  #view-study .flashcard-stage:has(#vocab-kanji-breakdown) { max-height:none; flex:none; }
+  #view-study .flashcard:has(#vocab-kanji-breakdown) { height:auto; min-height: min(56dvh,480px); }
+  #view-study #study-card-container:has(#vocab-kanji-breakdown) { justify-content:flex-start; }
+  #view-study .flashcard:has(#vocab-kanji-breakdown) .card-term-large { line-height:1.5; }
+}

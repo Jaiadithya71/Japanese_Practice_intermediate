@@ -4,6 +4,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { renderVocabularyKanjiBreakdown } from './vocab-kanji-breakdown.js';
 import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
 
 let reviewPhase = 'test';
@@ -238,6 +239,7 @@ export function renderCard() {
   renderReviewPhase();
   if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') state.cardFlipped = true;
   renderCardContent();
+  renderVocabularyKanjiBreakdown(state.sessionItems[state.sessionIdx], state.cardFlipped);
   const learning = reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz';
   let topAction = document.getElementById('study-learn-action');
   const actionRow = document.getElementById('study-card-container');
