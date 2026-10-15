@@ -4,6 +4,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { vocabularyLessonLabel } from './study-labels.js';
 import { updateItemStats, toggleItemHard, getItemStatus, getAllDueItems, formatItemKey } from './srs.js';
 import { showView } from './navigation.js';
 import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
@@ -495,7 +496,7 @@ function renderCardContent() {
   // CASE B: VOCABULARY TERM
   // ==========================================
   const meta = state.chapterMetadata[item.chapter] || {};
-  if (lessonTag) lessonTag.textContent = `${meta.topic_ja || item.chapter} · ${item.section_title_ja || ''}`;
+  if (lessonTag) lessonTag.textContent = vocabularyLessonLabel(meta.topic_ja, item.section_title_ja, item.chapter);
 
   // New word, teach stage: meaning first, then "Got it, quiz me"
   if (isLearnStage(item)) {

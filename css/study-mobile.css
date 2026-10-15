@@ -1,0 +1,29 @@
+/* Use the live mobile viewport, not a fixed card followed by an empty screen. */
+@media (max-width: 600px) {
+  body.in-runner #main { padding:15px 14px calc(15px + env(safe-area-inset-bottom,0px))!important; }
+  body.in-runner #view-study.active { display:flex; flex-direction:column; gap:12px; height:calc(100dvh - 30px - env(safe-area-inset-bottom,0px)); min-height:560px; }
+  #view-study .study-header { gap:10px; margin:0; flex:none; }
+  #view-study .study-header .btn { min-height:42px; border-radius:12px; border-color:rgba(181,193,220,.12); }
+  #view-study .study-progress-wrap { min-width:0; gap:10px; }
+  #view-study .study-progress-count { color:#b7bfd0; white-space:nowrap; }
+  #view-study .study-skip-row { flex:none; min-height:38px; padding:0; margin:0; background:none; border:0; }
+  #view-study .study-skip-row .btn { color:#9eabc1; min-height:36px; border-radius:10px; font-size:.73rem; }
+  #view-study #study-card-container { flex:1; min-height:0; display:flex; flex-direction:column; }
+  #view-study .flashcard-stage { display:flex; flex:1; min-height:0; margin:0; }
+  #view-study .flashcard { flex:1; height:auto; min-height:320px; padding:18px!important; border-radius:24px!important; border-color:rgba(184,193,216,.16); background:linear-gradient(150deg,#1c2230,#171c28); }
+  #view-study .flashcard-top { flex:none; align-items:flex-start; gap:10px; }
+  #view-study .card-lesson-tag { max-width:100%; color:#bdadff; font-size:.73rem; font-weight:600; padding:6px 9px; line-height:1.6; border-radius:9px; overflow-wrap:anywhere; }
+  #view-study .flashcard-top>div { flex:none; }
+  #view-study .flashcard-body { flex:1; gap:18px; margin:22px 0; }
+  #view-study .card-term-large { font-size:clamp(2.3rem,10vw,3.2rem); }
+  #view-study #card-meaning { font-size:1.08rem; line-height:1.55; max-width:100%; }
+  #view-study #card-meaning[style*="var(--text-dim)"] { color:#95a0b7!important; font-size:.94rem; font-weight:450; }
+  #view-study .card-example-box { padding:12px; margin-top:0; border-radius:12px; }
+  #view-study .grade-controls { flex:none; margin:0; gap:8px!important; }
+  #view-study .btn-grade { min-height:54px!important; border-radius:13px!important; }
+  #view-study .grade-label { font-size:.88rem; }
+}
+@media (max-height: 650px) and (max-width:600px) {
+  body.in-runner #view-study.active { height:auto; min-height:calc(100dvh - 30px); }
+  #view-study .flashcard { min-height:330px; }
+}
