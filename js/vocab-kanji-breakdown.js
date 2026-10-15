@@ -9,9 +9,9 @@ export function vocabularyKanjiMeanings(word = '') {
 export function renderVocabularyKanjiBreakdown(item, revealed) {
   document.getElementById('vocab-kanji-breakdown')?.remove();
   if (!item || item.type !== 'vocab' || !revealed) return;
-  const meanings = vocabularyKanjiMeanings(item.term_ja);
+  const parts = vocabularyKanjiMeanings(item.term_ja);
   const example = document.getElementById('card-example-box');
-  if (!meanings.length || !example) return;
+  if (!parts.length || !example) return;
   const row = document.createElement('div');
   row.id = 'vocab-kanji-breakdown';
   row.className = 'vocab-kanji-breakdown';
@@ -23,7 +23,7 @@ export function renderVocabularyKanjiBreakdown(item, revealed) {
   row.append(heading);
   const chips = document.createElement('div');
   chips.className = 'vocab-kanji-chips';
-  for (const {kanji, meanings} of meanings) {
+  for (const {kanji, meanings} of parts) {
     const chip = document.createElement('span');
     chip.className = 'vocab-kanji-chip';
     chip.title = `${kanji}: ${meanings.join(', ')}`;
