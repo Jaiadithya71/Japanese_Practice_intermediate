@@ -8,8 +8,8 @@ for (const revealed of [false,true]) assert.equal(canGradeReview('learn',reveale
 assert.equal(canGradeReview('test',false),false);
 assert.equal(canGradeReview('test',true),true);
 const source=fs.readFileSync('js/study.js','utf8');
-const setter=source.slice(source.indexOf('export function setReviewPhase'),source.indexOf('function renderReviewPhase'));
-assert.doesNotMatch(setter,/updateItemStats|sessionIdx\+|sessionTotalAnswered|endGistReviewSession/);
+assert.doesNotMatch(source,/id="review-phase-switch"|export function setReviewPhase/);
+assert.equal(initialReviewPhase({}, 'learn'), 'learn');
 assert.match(source,/if \(!canGradeReview\(reviewPhase, state.cardFlipped\)\) return;/);
 assert.match(source,/if \(reviewPhase === 'learn'\) return;/);
 assert.match(source,/phaseItem !== item \|\| phaseIndex !== state.sessionIdx/);

@@ -4,18 +4,11 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { initialReviewPhase, canGradeReview } from './review-phase.js';
+import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
 
 let reviewPhase = 'test';
 let phaseItem = null;
 let phaseIndex = -1;
-
-export function setReviewPhase(phase) {
-  if (!['learn', 'test'].includes(phase)) return;
-  reviewPhase = phase;
-  state.cardFlipped = phase === 'learn';
-  renderCard();
-}
 
 function renderReviewPhase() {
   const item = state.sessionItems[state.sessionIdx];
@@ -23,22 +16,10 @@ function renderReviewPhase() {
   if (phaseItem !== item || phaseIndex !== state.sessionIdx) {
     phaseItem = item;
     phaseIndex = state.sessionIdx;
-    reviewPhase = initialReviewPhase(item);
+    reviewPhase = initialReviewPhase(item, getReviewPhase());
     if (reviewPhase === 'learn') state.cardFlipped = true;
   }
-  const row = document.getElementById('study-skip-row');
-  if (row && !document.getElementById('review-phase-switch')) {
-    row.insertAdjacentHTML('afterbegin', `<div class="review-phase-switch" id="review-phase-switch" role="group" aria-label="Review phase">
-      <button type="button" data-phase="learn" onclick="setReviewPhase('learn')">Learn</button>
-      <button type="button" data-phase="test" onclick="setReviewPhase('test')">Test</button>
-    </div>`);
-  }
   const enabled = state.studyMode !== 'kanji_quiz';
-  const control = document.getElementById('review-phase-switch');
-  if (control) {
-    control.hidden = !enabled;
-    control.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.phase === reviewPhase)));
-  }
   const card = document.getElementById('flashcard');
   if (card) {
     card.classList.toggle('review-learning', enabled && reviewPhase === 'learn');
@@ -187,8 +168,16 @@ export function startLearnNew(unitId, count = 10) {
 export function learnGotIt() {
   const item = state.sessionItems[state.sessionIdx];
   if (!item) return;
-  if (item.learnNew) item.learned = true;
-  setReviewPhase('test');
+  if (item.learnNew && !item.learned) {
+    item.learned = true;
+    reviewPhase = 'test';
+    state.cardFlipped = false;
+  } else {
+    // A learning session advances without grading or marking the word skipped.
+    state.sessionIdx++;
+    state.cardFlipped = false;
+  }
+  renderCard();
 }
 
 export function skipCard() {
@@ -252,6 +241,12 @@ export function renderCard() {
   if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') {
     const controls = document.getElementById('grade-controls');
     if (controls) controls.style.display = 'none';
+    const item = state.sessionItems[state.sessionIdx];
+    const hint = document.getElementById('card-controls-hint');
+    if (item && hint) {
+      hint.style.display = 'block';
+      hint.innerHTML = `<button class="btn btn-primary learn-gotit" onclick="event.stopPropagation(); learnGotIt()">${item.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word'}</button>`;
+    }
   }
   const item = state.sessionItems[state.sessionIdx];
   if (!item || !state.cardFlipped || state.studyMode === 'kanji_quiz') return;
@@ -568,7 +563,7 @@ function renderCardContent() {
       exBox.style.display = 'none';
     }
     const hint = document.getElementById('card-controls-hint');
-    hint.innerHTML = '<button class="btn btn-primary learn-gotit" onclick="event.stopPropagation(); learnGotIt()"><i class="fa-solid fa-check"></i> Got it, quiz me</button>';
+    hint.innerHTML = `<button class="btn btn-primary learn-gotit" onclick="event.stopPropagation(); learnGotIt()"><i class="fa-solid fa-check"></i> ${item.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word'}</button>`;
     hint.style.display = 'block';
     document.getElementById('grade-controls').style.display = 'none';
     return;

@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="css/class-track.css" />
   <link rel="stylesheet" href="css/book-platform.css" />
   <link rel="stylesheet" href="css/home-mobile.css?v=1" />
-  <link rel="stylesheet" href="css/study-mobile.css?v=3" />
+  <link rel="stylesheet" href="css/study-mobile.css?v=4" />
 </head>
 <body>
 
@@ -136,6 +136,14 @@
           </select></label>
           <label class="home-run-check"><input id="home-hard-only" type="checkbox"> Drill hard words only</label>
         </div>
+        <div class="home-phase-row">
+          <span>Flashcard mode</span>
+          <div class="review-phase-switch" id="home-review-phase" role="group" aria-label="Flashcard mode">
+            <button type="button" data-phase="learn" aria-pressed="false" onclick="window.setHomeReviewPhase('learn')">Learn</button>
+            <button type="button" data-phase="test" aria-pressed="true" onclick="window.setHomeReviewPhase('test')">Test</button>
+          </div>
+        </div>
+        <p id="home-review-phase-hint" class="home-phase-hint">Recall first, then reveal and grade.</p>
         <div class="home-picker-buttons">
           <button id="btn-start-selected-study" class="btn btn-primary" onclick="window.startSelectedLessonRun()"><i class="fa-solid fa-clone"></i> Flashcards</button>
           <button id="btn-start-selected-test" class="btn btn-secondary" onclick="window.startSelectedLessonTestRun()"><i class="fa-solid fa-list-check"></i> Multiple Choice</button>

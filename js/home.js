@@ -1,3 +1,4 @@
+import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — home.js
    5-Pillar Dashboard, Simultaneous Progress & Lesson Selection
@@ -163,7 +164,19 @@ export function setHomeStudyDirection(direction) {
   renderLessonGrid();
 }
 
+export function setHomeReviewPhase(phase) {
+  setReviewPhasePreference(phase);
+  updateHomeLessonControls();
+}
+
 function updateHomeLessonControls() {
+  const phase = getReviewPhase();
+  document.querySelectorAll('#home-review-phase button').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.dataset.phase === phase));
+  });
+  const phaseHint = document.getElementById('home-review-phase-hint');
+  if (phaseHint) phaseHint.textContent = phase === 'learn' ? 'Reading, meaning & examples. No grading.' : 'Recall first, then reveal and grade.';
+
   const chapters = homeSelectedChapterKeys();
   const wordCount = chapters.reduce((sum, id) => sum + (state.vocabDB[id] || []).length, 0);
   const summary = document.getElementById('home-lessons-count');

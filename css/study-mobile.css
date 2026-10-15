@@ -1,11 +1,13 @@
+.home-phase-row { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:12px; color:#b8c2d5; font-size:.85rem; }
+.home-phase-hint { color:#94a2ba; font-size:.76rem; margin:7px 0 14px; }
 /* Phase choice is available on every flashcard without changing review stats. */
-#view-study .study-skip-row { justify-content:space-between; align-items:center; gap:12px; }
+#view-study .study-skip-row { justify-content:flex-end; align-items:center; gap:12px; }
 .review-phase-switch { display:inline-flex; padding:3px; gap:3px; background:#111722; border:1px solid #30394b; border-radius:12px; }
 .review-phase-switch[hidden], .review-phase-label[hidden] { display:none; }
-#view-study .review-phase-switch button { min-height:38px; min-width:76px; padding:7px 14px; border:0; border-radius:8px; background:transparent; color:#9eabc1; font:inherit; font-size:.85rem; font-weight:650; cursor:pointer; }
-#view-study .review-phase-switch button[data-phase="learn"][aria-pressed="true"] { background:#183c38; color:#85e4c6; }
-#view-study .review-phase-switch button[data-phase="test"][aria-pressed="true"] { background:#39305b; color:#d4c2ff; }
-#view-study .review-phase-switch button:focus-visible { outline:2px solid #d4c2ff; outline-offset:2px; }
+.review-phase-switch button { min-height:38px; min-width:76px; padding:7px 14px; border:0; border-radius:8px; background:transparent; color:#9eabc1; font:inherit; font-size:.85rem; font-weight:650; cursor:pointer; }
+.review-phase-switch button[data-phase="learn"][aria-pressed="true"] { background:#183c38; color:#85e4c6; }
+.review-phase-switch button[data-phase="test"][aria-pressed="true"] { background:#39305b; color:#d4c2ff; }
+.review-phase-switch button:focus-visible { outline:2px solid #d4c2ff; outline-offset:2px; }
 .review-phase-label { margin-top:14px; color:#c4b0ff; font-size:.67rem; font-weight:700; letter-spacing:.08em; }
 #view-study .flashcard.review-learning { border-color:#39766a; }
 .review-learning .review-phase-label { color:#85e4c6; }
