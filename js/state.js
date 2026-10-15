@@ -83,7 +83,6 @@ export const state = {
   sessionRight: 0,
   sessionTotal: 0,
   cardFlipped: false,
-  sessionSkipped: 0,
   learnUnit: null,
   studyDirection: 'ja-en',
   isDueReviewMode: false,

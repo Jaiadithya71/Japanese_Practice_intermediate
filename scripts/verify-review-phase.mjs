@@ -27,7 +27,7 @@ setReviewPhasePreference('test');
 assert.equal(getReviewPhase(), 'test');
 const home=fs.readFileSync('index.html','utf8');
 assert.match(home,/id="home-review-phase"/);
-const learning=source.slice(source.indexOf('export function learnGotIt()'),source.indexOf('export function skipCard()'));
+const learning=source.slice(source.indexOf('export function learnGotIt()'),source.indexOf('export function previousStudyCard()'));
 assert.doesNotMatch(learning,/updateItemStats|sessionSkipped|sessionTotalAnswered/);
 console.log('Home mode persistence, validation, and ungraded Next word passed.');
 

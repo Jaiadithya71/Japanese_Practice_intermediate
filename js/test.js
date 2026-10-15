@@ -1172,7 +1172,6 @@ export function reviewMissedTestQuestions() {
   state.isDueReviewMode = false;
   state.drillOrigin = 'test';
   state.learnUnit = null;
-  state.sessionSkipped = 0;
   state.sessionItems = missed.map(q => ({
     ...q,
     type: q.category === 'kanji' ? 'kanji_exercise' : 'reading_question',

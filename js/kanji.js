@@ -12,7 +12,7 @@
 import { state } from './state.js';
 import { beginGistReviewSession } from './gist-sync.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
-import { startStudy, renderCard } from './study.js?v=3.7';
+import { startStudy, renderCard } from './study.js?v=3.8';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills } from './kanji-words.js';
 
@@ -1045,7 +1045,6 @@ export function startKanjiQuickQuiz() {
   state.sessionTotalAnswered = 0;
   state.sessionTotalInitial = items.length;
   state.sessionTotal = items.length;
-  state.sessionSkipped = 0;
   state.cardFlipped = false;
   state.studyMode = 'kanji_quiz';
   state.studyIsDrillHard = false;

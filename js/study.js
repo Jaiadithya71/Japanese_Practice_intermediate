@@ -52,7 +52,6 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   state.drillOrigin = origin;
   state.isDueReviewMode = false;
   state.learnUnit = null;
-  state.sessionSkipped = 0;
 
   const pool = [];
   const chaptersToUse = state.selectedChapters.size > 0 
@@ -125,7 +124,6 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
   state.studyMode = 'flashcard';
   state.studyIsDrillHard = false;
   state.learnUnit = null;
-  state.sessionSkipped = 0;
   state.isDueReviewMode = true;
   state.drillOrigin = 'home';
   state.sessionItems = pool;
@@ -158,7 +156,6 @@ export function startLearnNew(unitId, count = 10) {
   state.isDueReviewMode = false;
   state.drillOrigin = 'home';
   state.learnUnit = unitId;
-  state.sessionSkipped = 0;
   state.sessionItems = pool;
   state.sessionIdx = 0;
   state.sessionRight = 0;
@@ -193,18 +190,6 @@ export function previousStudyCard() {
 export function nextStudyCard() {
   // Browsing never grades, skips, completes a session or changes SRS.
   if (state.studyMode === 'kanji_quiz' || state.sessionIdx >= state.sessionItems.length - 1) return;
-  state.sessionIdx++;
-  state.cardFlipped = false;
-  renderCard();
-}
-
-export function skipCard() {
-  if (state.sessionIdx >= state.sessionItems.length) return;
-  const item = state.sessionItems[state.sessionIdx];
-  if (!studyHistory.get(state.sessionItems, item)) {
-    studyHistory.set(state.sessionItems, item, { skipped: true });
-    state.sessionSkipped = (state.sessionSkipped || 0) + 1;
-  }
   state.sessionIdx++;
   state.cardFlipped = false;
   renderCard();
@@ -299,11 +284,9 @@ export function renderCard() {
   } else if (gradeControls) gradeControls.querySelectorAll('button').forEach(button => { button.disabled = false; });
   const previous = document.getElementById('study-previous');
   const next = document.getElementById('study-next');
-  const skip = document.getElementById('study-skip');
   const navigationEnabled = state.studyMode !== 'kanji_quiz';
   if (previous) { previous.hidden = !navigationEnabled; previous.disabled = state.sessionIdx <= 0; }
   if (next) { next.hidden = !navigationEnabled || learning; next.disabled = state.sessionIdx >= state.sessionItems.length - 1; }
-  if (skip) skip.hidden = navigationEnabled && (learning || !!priorOutcome);
   if (priorOutcome?.grade) {
     const controls = document.getElementById('grade-controls');
     if (controls && !testLayout) controls.style.display = 'none';
@@ -684,8 +667,6 @@ export function gradeCard(grade) {
   if (studyHistory.get(state.sessionItems, item)?.grade) return;
   const itemKey = formatItemKey(item);
   updateItemStats(itemKey, grade);
-  const previousOutcome = studyHistory.get(state.sessionItems, item);
-  if (previousOutcome?.skipped) state.sessionSkipped = Math.max(0, (state.sessionSkipped || 0) - 1);
   studyHistory.set(state.sessionItems, item, { grade });
 
   state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
@@ -782,7 +763,6 @@ function renderStudySummary() {
   const container = document.getElementById('study-card-container');
   if (!container) return;
 
-  const skipped = state.sessionSkipped || 0;
   const answered = state.sessionTotalAnswered || 0;
   const correct = state.sessionRight || 0;
   const pct = answered ? Math.round((correct / answered) * 100) : 0;
@@ -813,7 +793,7 @@ function renderStudySummary() {
     <div class="study-summary-card">
       <i class="fa-solid fa-trophy summary-trophy"></i>
       <h2>Session Complete!</h2>
-      <p style="color: var(--text-muted);">You completed all ${initialTotal} items (${answered} reviews total${skipped ? `, ${skipped} skipped` : ''}).</p>
+      <p style="color: var(--text-muted);">You completed all ${initialTotal} items (${answered} reviews total).</p>
 
       <div class="summary-stats-row">
         <div class="summary-stat-box">
