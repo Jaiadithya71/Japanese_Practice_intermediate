@@ -4,6 +4,8 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { animateCardFlip } from './card-flip.js';
+let cardFlipRunning = false;
 import { renderVocabularyKanjiBreakdown } from './vocab-kanji-breakdown.js';
 import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
 
@@ -623,14 +625,29 @@ function renderCardContent() {
   }
 }
 
-export function flipCard() {
-  if (state.studyMode === 'kanji_quiz') return;
-  if (reviewPhase === 'learn') return;
-  state.cardFlipped = !state.cardFlipped;
-  renderCard();
+export async function flipCard() {
+  if (state.studyMode === 'kanji_quiz' || reviewPhase === 'learn' || cardFlipRunning) return;
+  const card = document.getElementById('flashcard');
+  if (!card || state.sessionIdx >= state.sessionItems.length) return;
+  const item = state.sessionItems[state.sessionIdx];
+  const index = state.sessionIdx;
+  cardFlipRunning = true;
+  card.classList.add('card-flip-running');
+  const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+  try {
+    await animateCardFlip(card, () => {
+      if (state.currentView !== 'study' || state.sessionIdx !== index || state.sessionItems[index] !== item) return;
+      state.cardFlipped = !state.cardFlipped;
+      renderCard();
+    }, reduced);
+  } finally {
+    cardFlipRunning = false;
+    card.classList.remove('card-flip-running');
+  }
 }
 
 export function gradeCard(grade) {
+  if (cardFlipRunning) return;
   if (!canGradeReview(reviewPhase, state.cardFlipped)) return;
   if (state.sessionIdx >= state.sessionItems.length) return;
 

@@ -74,3 +74,7 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study #study-card-container:has(#vocab-kanji-breakdown) { justify-content:flex-start; }
   #view-study .flashcard:has(#vocab-kanji-breakdown) .card-term-large { line-height:1.5; }
 }
+
+/* Same depth and horizontal turn as the elementary flashcards. */
+#view-study .flashcard-stage { perspective:1200px; }
+#view-study .card-flip-running { will-change:transform; backface-visibility:hidden; transition:none; }

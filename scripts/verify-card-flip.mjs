@@ -1,0 +1,20 @@
+import assert from 'node:assert/strict';
+import { animateCardFlip, FLIP_DURATION } from '../js/card-flip.js';
+assert.equal(FLIP_DURATION,650);
+let order=[],animations=[];
+const card={animate:(frames,options)=>{
+ order.push(frames[0].transform);
+ animations.push({frames,options});
+ return {finished:Promise.resolve(),cancel:()=>order.push('cancel')};
+}};
+await animateCardFlip(card,()=>order.push('reveal'));
+assert.deepEqual(order,['rotateY(0deg)','reveal','rotateY(-90deg)','cancel','cancel']);
+assert.equal(animations[0].options.duration,325);
+assert.equal(animations[1].options.duration,325);
+order=[];
+await animateCardFlip(card,()=>order.push('reveal'),true);
+assert.deepEqual(order,['reveal']);
+order=[];
+await animateCardFlip(null,()=>order.push('reveal'));
+assert.deepEqual(order,['reveal']);
+console.log('Flip:650ms, content swapped edge-on, cleanup, reduced-motion and no-animation fallback passed.');
