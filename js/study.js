@@ -519,7 +519,8 @@ function renderCardContent() {
 
   if (!state.cardFlipped) {
     if (state.studyDirection === 'ja-en') {
-      termEl.innerHTML = state.showFurigana ? (item.ruby_html || item.term_ja) : item.term_ja;
+      // Recall front uses the written word only. Reading stays on the revealed side.
+      termEl.textContent = item.term_ja || item.reading || '';
       meaningEl.textContent = 'Tap card to reveal meaning';
       meaningEl.style.color = 'var(--text-dim)';
       if (exBox) exBox.style.display = 'none';
