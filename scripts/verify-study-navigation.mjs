@@ -30,8 +30,11 @@ assert.match(source,/getElementById\('study-skip-row'\)\?\.append\(topAction\)/)
 console.log('Previous/Next and Learn action share the bottom action area before grading.');
 assert.match(source,/button.disabled = !state.cardFlipped \|\| !!priorOutcome\?\.grade/);
 assert.match(source,/classList.toggle\('test-action-layout', testLayout\)/);
-console.log('Test grade controls stay visible and are disabled before reveal or after prior grading.');
+console.log('Test grades are guarded before reveal and after prior grading.');
 
 assert.doesNotMatch(source,/skipCard|sessionSkipped/);
 assert.doesNotMatch(html,/id="study-skip"|onclick="skipCard/);
 console.log('Skip control, tally and behavior removed.');
+
+assert.match(source,/classList.toggle\('awaiting-reveal', !state.cardFlipped\)/);
+console.log('Front grade area is visually hidden without moving pinned navigation.');
