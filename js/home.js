@@ -212,6 +212,8 @@ export function startSelectedLessonTestRun() {
   const tests = getAllAvailableTests().filter(test => test.pillar === 'vocab' && test.category !== 'vocab_reviews' && test.category !== 'mock_exams' && selected.has(String(test.id).replace(/^vocab-/, '')));
   const questions = tests.flatMap(test => test.questions || []);
   if (!questions.length) { alert('No multiple-choice tests are available for these lessons.'); return null; }
+  // The test runner is inside the Test view, not the Home lesson picker.
+  showView('test');
   return startTestSession('home-vocab-selected', { id: 'home-vocab-selected', category: 'vocab_topics', catLabel: 'Vocabulary Lessons', badgeClass: 'badge-n4', title: `${selected.size} selected lessons`, subTitle: 'Selected textbook lessons', pillar: 'vocab', questionCount: questions.length, questions });
 }
 
