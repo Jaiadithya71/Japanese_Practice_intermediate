@@ -719,44 +719,54 @@ export function playCurrentCardAudio() {
 }
 
 function celebrateStudyCompletion() {
-  if (state._completionConfettiActive) return;
+  if (state._completionConfettiActive || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   state._completionConfettiActive = true;
   const canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
   canvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:9999;';
   document.body.appendChild(canvas);
   const ctx = canvas.getContext('2d');
+  if (!ctx) { canvas.remove(); state._completionConfettiActive = false; return; }
+  const width = window.innerWidth;
+  const height = window.innerHeight;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  canvas.width = window.innerWidth * dpr;
-  canvas.height = window.innerHeight * dpr;
+  canvas.width = width * dpr;
+  canvas.height = height * dpr;
   ctx.scale(dpr, dpr);
   const colors = ['#a78bfa', '#34d399', '#fbbf24', '#f472b6', '#60a5fa'];
   const pieces = Array.from({ length: 110 }, () => ({
-    x: Math.random() * window.innerWidth,
-    y: -Math.random() * window.innerHeight * 0.45,
-    vx: (Math.random() - 0.5) * 2.4,
-    vy: 2 + Math.random() * 3.5,
+    x: Math.random() * width,
+    y: -Math.random() * height * 0.45,
+    vx: (Math.random() - 0.5) * 144,
+    vy: 120 + Math.random() * 210,
     size: 4 + Math.random() * 6,
     spin: Math.random() * 6,
     color: colors[Math.floor(Math.random() * colors.length)]
   }));
-  const startedAt = performance.now();
+  let previous = performance.now();
   function frame(now) {
-    ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
-    const elapsed = now - startedAt;
+    // Integrate elapsed seconds, so low-refresh screens get the same full fall.
+    const dt = Math.max(0, (now - previous) / 1000);
+    previous = now;
+    ctx.clearRect(0, 0, width, height);
+    let remaining = 0;
     for (const p of pieces) {
-      p.x += p.vx;
-      p.y += p.vy;
-      p.vy += 0.035;
-      p.spin += 0.08;
+      p.x += p.vx * dt;
+      p.y += p.vy * dt + 63 * dt * dt;
+      p.vy += 126 * dt;
+      p.spin += 4.8 * dt;
+      if (p.y - p.size > height) continue;
+      remaining++;
       ctx.save();
+      ctx.globalAlpha = Math.max(0, Math.min(1, (height + p.size - p.y) / 100));
       ctx.translate(p.x, p.y);
       ctx.rotate(p.spin);
       ctx.fillStyle = p.color;
       ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
       ctx.restore();
     }
-    if (elapsed < 2200) requestAnimationFrame(frame);
+    // Clean up only after the last particle has fallen below the viewport.
+    if (remaining) requestAnimationFrame(frame);
     else {
       canvas.remove();
       state._completionConfettiActive = false;
@@ -872,4 +882,4 @@ export function resetStudyViewHTML() {
       </div>
     </div>
   `;
-}
+          }
