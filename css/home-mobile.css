@@ -21,9 +21,9 @@
   #view-home .home-lesson-tile.selected .home-lesson-tile-count { color:#d0c6f5; }
   #view-home .home-picker-summary { margin:12px 0 0; padding-bottom:12px; border-bottom:1px solid var(--home-border); color:#bbc4d5; font-size:.78rem; }
   #view-home .home-run-settings { display:flex; flex-direction:column; gap:9px; margin:12px 0; }
-  #view-home .home-run-setting { flex-wrap:nowrap; width:100%; min-height:44px; gap:10px; font-size:.79rem; color:#b6bfd0; }
+  #view-home .home-run-setting { display:grid; grid-template-columns:88px minmax(0,1fr); align-items:center; flex-wrap:nowrap; width:100%; min-height:44px; gap:10px; font-size:.79rem; color:#b6bfd0; }
   #view-home .home-run-setting>span { flex:0 0 88px; }
-  #view-home .home-run-setting select { flex:1; width:0; min-width:0; max-width:none; min-height:44px; border-radius:12px; padding:9px 12px; background:#212735; color:#edf0fa; border-color:rgba(181,193,220,.15); font-size:.81rem; color-scheme:dark; }
+  #view-home .home-run-setting select { flex:1; width:100%; min-width:0; max-width:none; min-height:44px; border-radius:12px; padding:9px 12px; background:#212735; color:#edf0fa; border-color:rgba(181,193,220,.15); font-size:.81rem; color-scheme:dark; }
   #view-home .home-run-check { gap:10px; min-height:40px; color:#b6bfd0; font-size:.79rem; }
   #view-home .home-run-check input { width:19px; height:19px; accent-color:#9581ff; flex:none; }
   #view-home .home-picker-buttons { gap:8px; }
