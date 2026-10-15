@@ -31,7 +31,7 @@ const learning=source.slice(source.indexOf('export function learnGotIt()'),sourc
 assert.doesNotMatch(learning,/updateItemStats|sessionSkipped|sessionTotalAnswered/);
 console.log('Home mode persistence, validation, and ungraded Next word passed.');
 
-assert.match(source,/actionRow.append\(topAction\)/);
+assert.match(source,/getElementById\('study-skip-row'\)\?\.append\(topAction\)/);
 assert.match(source,/topAction.addEventListener\('click', learnGotIt\)/);
 assert.match(source,/hint.innerHTML = ''; hint.style.display = 'none'/);
-console.log('Learn action below card; in-card footer removed.');
+console.log('Learn action in bottom navigation; in-card footer removed.');

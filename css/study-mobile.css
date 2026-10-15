@@ -101,3 +101,16 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
 #view-study .study-skip-row button[hidden] { display:none; }
 #view-study .study-skip-row button:disabled { opacity:.38; cursor:default; }
 #view-study .study-skip-row button { min-height:36px; }
+/* Keep frequent navigation beside the card actions, in thumb reach. */
+#view-study .study-skip-row { display:flex; width:100%; align-items:center; gap:8px; }
+#view-study .study-skip-row .btn { flex:1; min-height:48px; font-size:.82rem; }
+#view-study .study-skip-row.has-learn-action { display:grid!important; grid-template-columns:1fr 1.7fr; }
+#view-study .study-skip-row .study-learn-action { min-width:0; width:100%; min-height:52px; margin:0; padding:10px 12px; }
+@media(max-width:600px) {
+  #view-study #study-card-container.has-learn-action { flex:1; gap:0; padding-top:0; overflow:hidden; }
+  #view-study #study-card-container:has(.review-learning) { min-height:0; }
+  #view-study .flashcard-stage:has(.review-learning) { flex:1!important; min-height:0!important; height:100%!important; }
+  #view-study .flashcard.review-learning { min-height:0!important; height:100%!important; overflow:hidden; }
+  #view-study .review-learning .flashcard-body { flex:1; min-height:0; overflow-y:auto; justify-content:safe center; overscroll-behavior:contain; }
+  #view-study .review-learning .flashcard-body > * { flex-shrink:0; }
+}

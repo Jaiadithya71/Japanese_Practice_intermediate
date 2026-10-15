@@ -272,7 +272,7 @@ export function renderCard() {
     topAction.className = 'btn btn-primary study-learn-action';
     topAction.type = 'button';
     topAction.addEventListener('click', learnGotIt);
-    actionRow.append(topAction);
+    document.getElementById('study-skip-row')?.append(topAction);
   }
   if (topAction) {
     const item = state.sessionItems[state.sessionIdx];
@@ -280,6 +280,7 @@ export function renderCard() {
     topAction.textContent = item?.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word';
   }
   actionRow?.classList.toggle('has-learn-action', learning);
+  document.getElementById('study-skip-row')?.classList.toggle('has-learn-action', learning);
   if (learning) {
     const controls = document.getElementById('grade-controls');
     if (controls) controls.style.display = 'none';
