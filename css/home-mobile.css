@@ -1,0 +1,61 @@
+/* Mobile home: one spacing system, legible tiles and a balanced activity card. */
+@media (max-width: 600px) {
+  #view-home { --home-muted: #a5acbf; --home-border: rgba(183,193,218,.12); }
+  #view-home .home-status-strip { margin-bottom:14px; padding:12px 14px; border-color:var(--home-border); background:#141821; border-radius:18px; }
+  #view-home .home-status-saved { color:#9ca6bb; font-size:.72rem; }
+  #view-home .home-lessons-card,
+  #view-home .home-activity-card { padding:16px; margin-bottom:14px; border-color:var(--home-border); border-radius:22px; background:linear-gradient(150deg,#171c27,#12161e); box-shadow:0 8px 24px rgba(0,0,0,.12); }
+  #view-home .home-picker-heading { gap:12px; }
+  #view-home .home-picker-heading h3 { font-size:1.08rem; font-weight:750; letter-spacing:-.025em; text-transform:none; }
+  #view-home .home-lesson-tabs { padding:4px; gap:4px; border-radius:13px; background:#0f131b; border:1px solid rgba(255,255,255,.05); }
+  #view-home .home-lesson-tab { min-height:36px; border-radius:9px; border:0; background:transparent; color:var(--home-muted); font-size:.75rem; }
+  #view-home .home-lesson-tab.active { background:#353057; color:#eeeaff; box-shadow:inset 0 0 0 1px rgba(157,144,255,.28); }
+  #view-home .home-picker-tools { margin:10px 0; gap:6px; }
+  #view-home .home-picker-action { min-height:38px; padding:7px 10px; color:#b7bfd0; background:#1d2330; border-color:var(--home-border); font-size:.73rem; }
+  #view-home .home-lesson-grid { gap:7px; }
+  #view-home .home-lesson-tile { border-radius:12px; background:#1b212c; border-color:rgba(180,190,215,.09); gap:1px; }
+  #view-home .home-lesson-tile-num { color:#d0d7e7; font-size:1.05rem; font-weight:700; }
+  #view-home .home-lesson-tile-count { color:#98a3b9; font-size:.65rem; }
+  #view-home .home-lesson-tile.selected { background:linear-gradient(145deg,#4a3d87,#302947); border-color:#9c8aff; box-shadow:inset 0 0 0 1px rgba(156,138,255,.2); }
+  #view-home .home-lesson-tile.selected .home-lesson-tile-num { color:#fff; }
+  #view-home .home-lesson-tile.selected .home-lesson-tile-count { color:#d0c6f5; }
+  #view-home .home-picker-summary { margin:12px 0 0; padding-bottom:12px; border-bottom:1px solid var(--home-border); color:#bbc4d5; font-size:.78rem; }
+  #view-home .home-run-settings { display:flex; flex-direction:column; gap:9px; margin:12px 0; }
+  #view-home .home-run-setting { flex-wrap:nowrap; width:100%; min-height:44px; gap:10px; font-size:.79rem; color:#b6bfd0; }
+  #view-home .home-run-setting>span { flex:0 0 88px; }
+  #view-home .home-run-setting select { flex:1; width:0; min-width:0; max-width:none; min-height:44px; border-radius:12px; padding:9px 12px; background:#212735; color:#edf0fa; border-color:rgba(181,193,220,.15); font-size:.81rem; color-scheme:dark; }
+  #view-home .home-run-check { gap:10px; min-height:40px; color:#b6bfd0; font-size:.79rem; }
+  #view-home .home-run-check input { width:19px; height:19px; accent-color:#9581ff; flex:none; }
+  #view-home .home-picker-buttons { gap:8px; }
+  #view-home .home-picker-buttons .btn { min-height:48px; border-radius:14px; font-size:.76rem; font-weight:650; padding:10px 5px; gap:7px; }
+  #view-home .home-picker-buttons .btn-primary { background:linear-gradient(135deg,#9380ff,#7661e9); box-shadow:0 5px 16px rgba(110,85,229,.2); }
+  #view-home .home-picker-buttons .btn-secondary { background:#222a38; color:#dce3f2; border:1px solid var(--home-border); }
+  #view-home .home-activity-head { align-items:center; gap:10px; }
+  #view-home .home-activity-head h3 { font-size:1.07rem; letter-spacing:-.025em; font-weight:750; }
+  #view-home .home-activity-head p { font-size:.74rem; color:var(--home-muted); margin-top:3px; }
+  #view-home .home-activity-summary { padding:7px 10px; border-radius:12px; gap:4px; background:rgba(48,205,160,.1); border:1px solid rgba(48,205,160,.14); white-space:nowrap; font-size:.67rem; color:#63dfbb; }
+  #view-home .home-activity-summary strong { font-size:1.03rem; }
+  #view-home #home-activity-heatmap { margin-top:16px; overflow:visible; }
+  #home-activity-heatmap .heatmap-grid-inner { min-width:0; width:100%; gap:8px; }
+  #view-home #home-activity-heatmap .heatmap-weekdays,
+  #view-home #home-activity-heatmap .heatmap-cells-grid { display:grid!important; width:100%; grid-template-columns:repeat(7,minmax(0,1fr))!important; justify-content:stretch!important; gap:6px!important; }
+  #view-home #home-activity-heatmap .heatmap-col-head { font-size:.67rem; color:#929eb4; }
+  #view-home #home-activity-heatmap .heatmap-cells-grid .heatmap-cell { width:100%!important; height:27px!important; min-height:0!important; aspect-ratio:auto!important; border-radius:6px; }
+  #view-home #home-activity-heatmap .heatmap-cells-grid .level-0 { background:#242c39; box-shadow:inset 0 0 0 1px rgba(183,193,218,.07); }
+  #view-home #home-activity-heatmap .heatmap-cell.is-today { outline-color:#b09cff; outline-offset:1px; }
+  #view-home .home-heatmap-legend { margin-top:11px; font-size:.65rem; color:#a0abc0; gap:5px; }
+  #view-home #home-activity-heatmap .home-heatmap-legend .heatmap-cell { width:12px!important; height:12px!important; min-height:0!important; border-radius:3px; }
+  #view-home .home-activity-today { margin-top:14px; padding-top:12px; border-top:1px solid var(--home-border); color:#bbc4d5; font-size:.78rem; }
+  #view-home #home-reviews-today { font-size:1.04rem; font-weight:750; margin-right:3px; }
+  #view-home .home-goal-copy { color:#909cb3; }
+  #view-home .home-secondary-details { border-color:var(--home-border); border-radius:18px; background:#151a23; }
+  #view-home .home-secondary-details>summary { color:#b8c3d7; padding:15px 16px; min-height:56px; font-size:.81rem; font-weight:600; }
+  #view-home .home-secondary-details>summary i { color:#8997b0; font-size:.75rem; }
+  #view-home button:focus-visible,#view-home select:focus-visible { outline:2px solid #b6a5ff; outline-offset:3px; }
+}
+@media (max-width: 360px) {
+  #view-home .home-lessons-card,#view-home .home-activity-card { padding:13px; }
+  #view-home .home-lesson-grid { gap:5px; }
+  #view-home .home-run-setting>span { flex-basis:78px; }
+  #view-home .home-picker-buttons .btn { font-size:.7rem; }
+}
