@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import { initialReviewPhase, canGradeReview } from '../js/review-phase.js';
+import { initialReviewPhase, canGradeReview, getReviewPhase, setReviewPhasePreference } from '../js/review-phase.js';
 assert.equal(initialReviewPhase({}), 'test');
 assert.equal(initialReviewPhase({learnNew:true,learned:false}), 'learn');
 assert.equal(initialReviewPhase({learnNew:true,learned:true}), 'test');
@@ -15,3 +15,18 @@ assert.match(source,/if \(reviewPhase === 'learn'\) return;/);
 assert.match(source,/phaseItem !== item \|\| phaseIndex !== state.sessionIdx/);
 assert.match(source,/state.studyMode !== 'kanji_quiz'/);
 console.log('Review phase: defaults, grade guard, no-write switch, per-card reset and quick-quiz separation passed.');
+
+const values = new Map();
+globalThis.localStorage = {getItem:key=>values.get(key),setItem:(key,value)=>values.set(key,value)};
+assert.equal(getReviewPhase(), 'test');
+setReviewPhasePreference('learn');
+assert.equal(getReviewPhase(), 'learn');
+setReviewPhasePreference('other');
+assert.equal(getReviewPhase(), 'learn');
+setReviewPhasePreference('test');
+assert.equal(getReviewPhase(), 'test');
+const home=fs.readFileSync('index.html','utf8');
+assert.match(home,/id="home-review-phase"/);
+const learning=source.slice(source.indexOf('export function learnGotIt()'),source.indexOf('export function skipCard()'));
+assert.doesNotMatch(learning,/updateItemStats|sessionSkipped|sessionTotalAnswered/);
+console.log('Home mode persistence, validation, and ungraded Next word passed.');
