@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   const change = {
     action: 'training', track: 'japanese', entryDate: date,
     status: reviewsDone > 0 ? 'done' : 'partial', reviewsDone, minutes,
-    source: 'N3 app session-end daily aggregate',
+    source: `N3 app daily aggregate, ${date}`,
     dayStats: { uniqueItems, sessions, chapters: tidy(chapters), units: tidy(units) }
   };
   const payload = JSON.stringify({ date: todayIST(), validateOnly: false, changes: [change] });

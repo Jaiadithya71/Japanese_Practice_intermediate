@@ -184,14 +184,12 @@ export function renderForecastBarsHtml(forecastData = []) {
 
 /**
  * Main dashboard render entry point.
- * Targets document.getElementById('view-today') or 'today-card' or 'view-home'.
+ * Targets only the dedicated card, never the view container.
  */
 export function renderToday() {
   if (typeof document === 'undefined') return;
 
-  const container = document.getElementById('view-today')
-    || document.getElementById('today-card')
-    || document.getElementById('view-home');
+  const container = document.getElementById('today-card');
   if (!container) return;
 
   const st = defaultState;

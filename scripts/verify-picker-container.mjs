@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const today=fs.readFileSync('js/today.js','utf8');
+const body=today.split('export function renderToday() {')[1].split('const st =')[0];
+assert.match(body,/const container = document.getElementById\('today-card'\);/);
+assert.doesNotMatch(body,/getElementById\('view-(today|home)'\)/);
+const html=fs.readFileSync('index.html','utf8');
+assert.equal((html.match(/id="today-card"/g)||[]).length,1);
+assert.ok(html.indexOf('id="home-lesson-grid"')<html.indexOf('id="today-card"'));
+assert.ok(html.indexOf('class="home-secondary-content"')<html.indexOf('id="today-card"'));
+console.log('Picker container and collapsed dashboard checks passed');
