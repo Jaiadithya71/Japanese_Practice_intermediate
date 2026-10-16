@@ -133,3 +133,6 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study.test-front-layout .review-testing .flashcard-body { flex:1; justify-content:center; }
   #view-study.test-front-layout .grade-controls.awaiting-reveal { display:none!important; }
 }
+
+/* Kanji quiz: stage grows with the card so the wrong-answer review stays inside */
+#view-study .flashcard-stage:has(.kanji-quiz-term) { flex:none; max-height:none!important; height:auto!important; }

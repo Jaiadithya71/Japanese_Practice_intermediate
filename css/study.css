@@ -240,3 +240,7 @@
 .kanji-quiz-prompt{max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
 .kanji-quiz-prompt:not(:only-child){font-size:clamp(3.3rem,12vw,5rem)!important}
 @media(max-width:600px){.flashcard:has(.kanji-quiz-term){min-height:min(66vh,560px)!important;padding:1rem!important}.flashcard:has(.kanji-quiz-term) .flashcard-body{flex:1;gap:.65rem;margin:.65rem 0}.flashcard:has(.kanji-quiz-term) .flashcard-top{gap:.4rem}.flashcard:has(.kanji-quiz-term) #card-meaning{margin-top:.1rem!important}.flashcard:has(.kanji-quiz-term) .kanji-quiz-opt{padding:.55rem .75rem!important;font-size:.96rem!important}}
+
+/* Kanji quiz: let the card grow so the wrong-answer review stays inside it */
+.flashcard:has(.kanji-quiz-term){height:auto!important;overflow:visible}
+.kanji-quiz-wrong-review{margin-bottom:.25rem}
