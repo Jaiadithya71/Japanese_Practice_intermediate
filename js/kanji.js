@@ -488,7 +488,7 @@ export function updateKanjiActionButtonLabels() {
   if (direction) direction.value = state.kanjiStudyDirection || 'ja-kana';
   const hard = document.getElementById('kanji-picker-hard');
   if (hard) hard.checked = Boolean(state.kanjiHardOnly);
-  btn.innerHTML = '<i class="fa-solid fa-clone"></i> Flashcards';
+  btn.innerHTML = '<i class="fa-solid fa-play"></i> Practice';
   btn.disabled = wordsCount === 0;
   const exam = document.getElementById('btn-kanji-exam-action');
   if (exam) exam.disabled = wordsCount === 0;
