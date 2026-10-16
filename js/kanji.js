@@ -15,7 +15,7 @@ import { beginGistReviewSession } from './gist-sync.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js?v=4.0';
 import { showView } from './navigation.js';
-import { getKanjiBreakdownPills } from './kanji-words.js';
+import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
 
 // =======================================================
 // 1. MASTER VIEW RENDERER & TAB SWITCHING
@@ -500,6 +500,12 @@ export function updateKanjiActionButtonLabels() {
 }
 
 export function drillKanjiSelected() {
+  // Kanji <-> kana recall is tested as exam-style multiple choice (like the elementary app), never as flips.
+  // Only Kanji -> English stays a flip-card drill.
+  const _dir = state.kanjiStudyDirection || 'ja-kana';
+  if (_dir === 'mixed' || _dir === 'ja-kana' || _dir === 'kana-ja') {
+    return startKanjiQuickQuiz();
+  }
   const selLessons = state.kanjiSelectedLessons || new Set();
   const pool = [];
 
@@ -1006,6 +1012,22 @@ function buildKanjiQuizOptions(item, allItems) {
       }
     }
   };
+  // Exam-style confusable options first (okurigana / length / shared-kanji rules), then lesson, then wider pool
+  if (dir === 'ja-kana' || dir === 'kana-ja') {
+    try {
+      const universe = allItems.map(x => ({ term_ja: x.word, reading: x.reading, lesson: x.lesson_number, meaning_en: x.meaning_en }));
+      const smart = generateDistractors(
+        { term_ja: item.word, reading: item.reading, lesson: item.lesson_number },
+        dir === 'kana-ja' ? 'KWW' : 'KWR',
+        universe.filter(x => x.lesson === item.lesson_number),
+        universe
+      );
+      for (const v of smart) {
+        if (distractors.length >= 3) break;
+        if (v && !seen.has(v)) { seen.add(v); distractors.push(v); }
+      }
+    } catch (e) { /* fall through to pool picks */ }
+  }
   // Same-lesson distractors first (harder, more plausible), then the wider pool
   pickFrom(allItems.filter(x => x !== item && x.lesson_number === item.lesson_number));
   pickFrom(allItems.filter(x => x !== item && x.lesson_number !== item.lesson_number));
@@ -1079,10 +1101,16 @@ export function startKanjiQuickQuiz() {
   }
 
   // Distractors come from the full selected pool; the round covers EVERY word (or every hard word)
-  const allItems = buildKanjiStudyItems(pool, 'ja-kana').filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en);
+  const quizDir = state.kanjiStudyDirection || 'ja-kana';
+  const okItem = it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en;
+  const allItems = buildKanjiStudyItems(pool, 'ja-kana').filter(okItem);
+  // Mixed = every word twice as multiple choice: kanji -> kana and kana -> kanji (no English before answering)
+  const dirItems = buildKanjiStudyItems(pool, quizDir).filter(okItem);
+  // Distractors come from every kanji word in the book, so small lesson picks still get look-alike options
+  const distractorUniverse = buildKanjiStudyItems(Object.values(state.kanjiDB || {}), 'ja-kana').filter(okItem);
   const roundSource = state.kanjiHardOnly
-    ? buildHardKanjiItems(pool).filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en)
-    : allItems;
+    ? buildHardKanjiItems(pool).filter(okItem).filter(it => quizDir === 'mixed' ? (it.direction === 'ja-kana' || it.direction === 'kana-ja') : it.direction === quizDir)
+    : dirItems;
   if (state.kanjiHardOnly && roundSource.length === 0) {
     alert('No hard kanji words in the selected lessons!');
     return;
@@ -1096,7 +1124,7 @@ export function startKanjiQuickQuiz() {
 
   beginGistReviewSession();
   items.forEach(it => {
-    it.options = buildKanjiQuizOptions(it, allItems);
+    it.options = buildKanjiQuizOptions(it, distractorUniverse);
     it.answered = false;
   });
 
@@ -1154,7 +1182,6 @@ export function renderKanjiQuizCard(item) {
     termEl.innerHTML = `
       <div>
         <div style="font-size: 3rem; font-family: var(--font-jp); font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">${item.reading}</div>
-        <div style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.5rem;">${item.meaning_en || ''}</div>
         <div style="margin-top: 0.75rem;">${dirBadge}</div>
       </div>`;
   } else {
