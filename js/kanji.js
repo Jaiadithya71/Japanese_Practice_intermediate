@@ -370,12 +370,12 @@ export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDire
       k.words.forEach(w => {
         const word = (w.term_ja || w.word || k.kanji).trim();
         const reading = (w.reading || (k.kunyomi && k.kunyomi[0]) || (k.onyomi && k.onyomi[0]) || '').trim();
-        // 'mixed' picks a random direction per card, so each facet keeps its own SRS key
-        const dir = direction === 'mixed' ? MIXED_DIRS[Math.floor(Math.random() * MIXED_DIRS.length)] : direction;
-        const key = dir === 'kana-ja' ? `KWW:${word}` : (dir === 'ja-meaning' ? `KWM:${word}` : `KWR:${word}`);
-
-        if (word && !seenWords.has(word)) {
-          seenWords.add(word);
+        if (!word || seenWords.has(word)) return;
+        seenWords.add(word);
+        // 'mixed' covers every word in all three directions (one card per direction, each with its own SRS facet key)
+        const dirs = direction === 'mixed' ? MIXED_DIRS : [direction];
+        dirs.forEach(dir => {
+          const key = dir === 'kana-ja' ? `KWW:${word}` : (dir === 'ja-meaning' ? `KWM:${word}` : `KWR:${word}`);
           studyItems.push({
             type: 'kanji_word',
             book: 'kanji',
@@ -391,7 +391,7 @@ export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDire
             direction: dir,
             key: key
           });
-        }
+        });
       });
     } else {
       // Fallback for bare kanji without mapped words
@@ -1078,7 +1078,7 @@ export function startKanjiQuickQuiz() {
   }
 
   // Distractors come from the full selected pool; the round covers EVERY word (or every hard word)
-  const allItems = buildKanjiStudyItems(pool).filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en);
+  const allItems = buildKanjiStudyItems(pool, 'ja-kana').filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en);
   const roundSource = state.kanjiHardOnly
     ? buildHardKanjiItems(pool).filter(it => it.type === 'kanji_word' && it.word && it.reading && it.meaning_en)
     : allItems;
