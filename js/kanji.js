@@ -363,7 +363,7 @@ export function drillKanjiSingle(char) {
 export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDirection || 'ja-kana') {
   const studyItems = [];
   const seenWords = new Set();
-  const MIXED_DIRS = ['ja-kana', 'kana-ja', 'ja-meaning'];
+  const MIXED_DIRS = ['ja-kana', 'kana-ja'];
 
   kanjiList.forEach(k => {
     if (k.words && Array.isArray(k.words) && k.words.length > 0) {
@@ -372,7 +372,7 @@ export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDire
         const reading = (w.reading || (k.kunyomi && k.kunyomi[0]) || (k.onyomi && k.onyomi[0]) || '').trim();
         if (!word || seenWords.has(word)) return;
         seenWords.add(word);
-        // 'mixed' covers every word in all three directions (one card per direction, each with its own SRS facet key)
+        // 'mixed' covers every word in both directions (kanji -> kana+English, kana -> kanji+English); English is on the reveal side only. Each direction keeps its own SRS facet key (KWR:/KWW:)
         const dirs = direction === 'mixed' ? MIXED_DIRS : [direction];
         dirs.forEach(dir => {
           const key = dir === 'kana-ja' ? `KWW:${word}` : (dir === 'ja-meaning' ? `KWM:${word}` : `KWR:${word}`);
@@ -389,6 +389,7 @@ export function buildKanjiStudyItems(kanjiList, direction = state.kanjiStudyDire
             onyomi: k.onyomi || [],
             kunyomi: k.kunyomi || [],
             direction: dir,
+            hideMeaningFront: direction === 'mixed',
             key: key
           });
         });

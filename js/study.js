@@ -536,7 +536,7 @@ function renderCardContent() {
               ${item.reading}
             </div>
             <div style="color: var(--text-muted); font-size: 1.05rem; margin-top: 0.5rem;">
-              ${item.meaning_en || ''}
+              ${item.hideMeaningFront ? '' : (item.meaning_en || '')}
             </div>
             <div style="margin-top: 0.75rem;">
               <span class="badge badge-cyan" style="font-size: 0.78rem;">表記 (Kana → Kanji)</span>
