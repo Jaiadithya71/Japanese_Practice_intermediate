@@ -16,6 +16,7 @@ import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from 
 import { startStudy, renderCard } from './study.js?v=4.0';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
+import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 
 // =======================================================
 // 1. MASTER VIEW RENDERER & TAB SWITCHING
@@ -1108,6 +1109,7 @@ export function startKanjiQuickQuiz() {
   const dirItems = buildKanjiStudyItems(pool, quizDir).filter(okItem);
   // Distractors come from every kanji word in the book, so small lesson picks still get look-alike options
   const distractorUniverse = buildKanjiStudyItems(Object.values(state.kanjiDB || {}), 'ja-kana').filter(okItem);
+  state._kanjiQuizUniverse = distractorUniverse;
   const roundSource = state.kanjiHardOnly
     ? buildHardKanjiItems(pool).filter(okItem).filter(it => quizDir === 'mixed' ? (it.direction === 'ja-kana' || it.direction === 'kana-ja') : it.direction === quizDir)
     : dirItems;
@@ -1221,6 +1223,52 @@ export function renderKanjiQuizCard(item) {
   }
 }
 
+
+function esc(t) { return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+// Compact, self-contained explanation shown after a wrong answer
+function buildKanjiQuizReviewHtml(item, chosen) {
+  const dir = item.direction || 'ja-kana';
+  const dim = 'color:#a5b4c8;';
+  const universe = state._kanjiQuizUniverse || [];
+  const fmtWord = w => '<b class="font-ja">' + esc(w.word) + '</b> <span class="font-ja" style="color:#f472b6;">' + esc(w.reading) + '</span>' + (w.meaning_en ? ' <span style="' + dim + '">' + esc(w.meaning_en) + '</span>' : '');
+  const kanjiOf = word => [...new Set([...(word || '')].filter(c => /[\u4e00-\u9fff]/.test(c)))];
+  const kanjiRows = word => {
+    const meanings = {};
+    vocabularyKanjiMeanings(word).forEach(x => { meanings[x.kanji] = x.meanings; });
+    return kanjiOf(word).map(ch => {
+      const e = (state.kanjiDB || {})[ch] || {};
+      const mean = (meanings[ch] && meanings[ch].slice(0, 3).join(', ')) || (e.meanings && e.meanings[0]) || e.meaning_en || '';
+      const on = (e.onyomi || []).join('・'), kun = (e.kunyomi || []).join('・');
+      return '<div style="display:flex;gap:.4rem;align-items:baseline;"><b class="font-ja" style="font-size:1rem;min-width:1.1rem;">' + esc(ch) + '</b><span>' + esc(mean) +
+        (on ? ' <span style="' + dim + '">音 </span><span class="font-ja" style="color:#38bdf8;">' + esc(on) + '</span>' : '') +
+        (kun ? ' <span style="' + dim + '">訓 </span><span class="font-ja" style="color:#a78bfa;">' + esc(kun) + '</span>' : '') + '</span></div>';
+    }).join('');
+  };
+  // What the tapped option actually is
+  let why = '';
+  const hit = dir === 'ja-kana'
+    ? universe.filter(w => w.reading === chosen && w.word !== item.word)
+    : (dir === 'kana-ja' ? universe.filter(w => w.word === chosen && w.word !== item.word)
+      : universe.filter(w => w.meaning_en === chosen && w.word !== item.word));
+  if (hit.length) {
+    why = hit.slice(0, 2).map(fmtWord).join('<br>');
+    why = (dir === 'ja-kana' ? 'That reading belongs to ' : (dir === 'kana-ja' ? 'That is the word ' : 'That meaning belongs to ')) + '<br>' + why;
+  } else if (dir === 'kana-ja') {
+    const rows = kanjiRows(chosen);
+    why = 'No such word in this book.' + (rows ? '<div style="margin-top:.2rem;">' + rows + '</div>' : '');
+  } else {
+    why = dir === 'ja-kana' ? 'Not the reading of any word in this book; it only looks similar.' : 'A different word\'s meaning.';
+  }
+  const correctLabel = dir === 'ja-kana' ? 'Reading' : (dir === 'kana-ja' ? 'Kanji' : 'Meaning');
+  return '<div style="display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;"><strong style="color:#fca5a5;">Review this answer</strong><span style="' + dim + 'font-size:.72rem;">L' + esc(item.lesson_number) + ' · 親 <span class="font-ja">' + esc(item.baseKanji || '') + '</span></span></div>' +
+    '<div style="margin-top:.2rem;"><b class="font-ja" style="font-size:1.25rem;color:#fff;">' + esc(item.word) + '</b> <span class="font-ja" style="color:#f472b6;font-weight:700;">' + esc(item.reading) + '</span></div>' +
+    '<div style="color:var(--text);">' + esc(item.meaning_en) + (item.meaning_zh ? ' <span style="' + dim + '">· ' + esc(item.meaning_zh) + '</span>' : '') + '</div>' +
+    '<div style="margin-top:.3rem;"><span style="color:#86efac;">&#10003; ' + correctLabel + ':</span> <b class="font-ja">' + esc(item.options.correctValue) + '</b></div>' +
+    '<div style="margin-top:.15rem;"><span style="color:#fca5a5;">&#10007; You chose:</span> <b class="font-ja">' + esc(chosen) + '</b><div style="' + dim + '">' + why + '</div></div>' +
+    '<div style="margin-top:.35rem;padding-top:.3rem;border-top:1px solid rgba(255,255,255,.1);">' + kanjiRows(item.word) + '</div>';
+}
+
 export function answerKanjiQuizOption(idx) {
   if (state.studyMode !== 'kanji_quiz') return;
   const item = state.sessionItems[state.sessionIdx];
@@ -1255,19 +1303,9 @@ export function answerKanjiQuizOption(idx) {
   if (!isCorrect) {
     const review = document.createElement('div');
     review.className = 'kanji-quiz-wrong-review';
-    review.style.cssText = 'margin-top:0.85rem;padding:0.85rem 1rem;border:1px solid rgba(239,68,68,.35);border-radius:12px;background:rgba(239,68,68,.08);text-align:left;';
-    review.innerHTML = '<strong style="color:#fca5a5;display:block;margin-bottom:.35rem;">Review this answer</strong>' +
-      '<div class="font-ja" style="font-size:1.35rem;font-weight:800;color:#fff;">' + item.word + '</div>' +
-      '<div style="color:#f472b6;font-weight:700;">' + (item.reading || '') + '</div>' +
-      '<div style="color:var(--text-muted);">' + (item.meaning_en || '') + (item.meaning_zh ? ' · ' + item.meaning_zh : '') + '</div>' +
-      '<div style="font-size:.78rem;color:var(--text-dim);margin-top:.25rem;">Correct choice: ' + item.options.correctValue + '</div>';
-    const breakdown = getKanjiBreakdownPills(item.word, state.kanjiDB);
-    if (breakdown.length) {
-      const pills = document.createElement('div');
-      pills.style.cssText = 'display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.5rem;';
-      pills.innerHTML = breakdown.map(x => '<span style="padding:.2rem .45rem;border-radius:8px;background:rgba(255,255,255,.06);font-size:.78rem;"><b class="font-ja">' + x.kanji + '</b> ' + (x.meaning || '') + '</span>').join('');
-      review.appendChild(pills);
-    }
+    review.style.cssText = 'margin-top:0.7rem;padding:0.6rem 0.7rem;border:1px solid rgba(239,68,68,.35);border-radius:12px;background:rgba(239,68,68,.08);text-align:left;font-size:.8rem;line-height:1.35;';
+    review.innerHTML = buildKanjiQuizReviewHtml(item, chosen);
+    review.addEventListener('click', e => e.stopPropagation());
     const meaningEl = document.getElementById('card-meaning');
     if (meaningEl) meaningEl.appendChild(review);
   }
