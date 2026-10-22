@@ -136,3 +136,10 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
 
 /* Kanji quiz: stage grows with the card so the wrong-answer review stays inside */
 #view-study .flashcard-stage:has(.kanji-quiz-term) { flex:none; max-height:none!important; height:auto!important; }
+
+/* Results screen: the summary card scrolls inside the session column so its
+   action buttons stay reachable above the bottom navigation on small phones. */
+@media (max-width:600px) {
+  #view-study #study-card-container:has(.study-summary-card) { justify-content:flex-start; overflow-y:auto; overscroll-behavior:contain; }
+  #view-study .study-summary-card { flex:none; margin:auto 0; }
+}
