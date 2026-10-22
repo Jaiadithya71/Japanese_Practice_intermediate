@@ -286,5 +286,3 @@
 .flashcard:has(.kanji-quiz-term){height:auto!important;overflow:visible}
 .kanji-quiz-wrong-review{margin-bottom:.25rem}
 
-.kq-meaning-hint{align-self:flex-start;width:fit-content;margin-top:.55rem;padding:.2rem .75rem;border-radius:999px;border:1px solid rgba(212,175,106,.35);background:rgba(212,175,106,.08);color:#e6c98a;font-size:.9rem;font-weight:600;letter-spacing:.01em;max-width:92%;text-align:center;line-height:1.3}
-.kanji-quiz-term .kq-meaning-hint{align-self:center}
