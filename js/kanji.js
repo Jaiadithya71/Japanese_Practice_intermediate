@@ -16,7 +16,7 @@ import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from 
 import { startStudy, renderCard } from './study.js?v=4.2';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
-import { pickDistractors } from './distractors.js?v=20261022-shapes';
+import { pickDistractors } from './distractors.js?v=20261022-meaning';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
@@ -1263,18 +1263,24 @@ export function renderKanjiQuizCard(item) {
       ? '<span class="badge" style="background: rgba(236,72,153,0.18); border: 1px solid #ec4899; color: #f472b6; font-size: 0.78rem; font-weight: 700;">意味 (Kanji → English)</span>'
       : '<span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)</span>');
 
+  // Meaning hint under the prompt: safe for reading and writing questions (never the answer).
+  const meaningHint = (dir !== 'ja-meaning' && item.meaning_en)
+    ? `<div class="kq-meaning-hint">${esc(item.meaning_en)}</div>` : '';
+
   if (lessonTag) lessonTag.textContent = `Quick Quiz · 漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
 
   if (dir === 'ja-kana') {
     termEl.innerHTML = `
       <div>
         <div class="kanji-quiz-prompt" style="font-size:clamp(3.8rem,14vw,5.4rem);font-family:var(--font-jp);font-weight:800;color:#fff;letter-spacing:.04em;line-height:1.18;">${item.word}</div>
+        ${meaningHint}
         <div style="margin-top: 0.75rem;">${dirBadge}</div>
       </div>`;
   } else if (dir === 'kana-ja') {
     termEl.innerHTML = `
       <div>
         <div style="font-size: 3rem; font-family: var(--font-jp); font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">${item.reading}</div>
+        ${meaningHint}
         <div style="margin-top: 0.75rem;">${dirBadge}</div>
       </div>`;
   } else {

@@ -240,6 +240,7 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
         const d = Math.abs(len(v) - len(R));
         if (d === 0) s += 6; else if (d === 1) s += 2; else s -= 4 * (d - 1);
         s += 8 * dice(v, R) + 1.5 * commonPrefix(v, R) + 1.5 * commonSuffix(v, R);
+        if (!Array.from(v).some(ch => R.includes(ch))) s -= 5;  // no shared kana at all: not a sound-alike
         const wKanji = kanjiChars(w.term);
         const shared = wKanji.filter(k => tKanji.includes(k)).length;
         s += 4 * shared;                                     // same kanji, other reading
@@ -254,7 +255,7 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
     for (const m of readingMutations(R, tOkuri)) {
       if (tEnd && !m.endsWith(tEnd)) continue;
       const d = Math.abs(len(m) - len(R));
-      push(m, 6 + (d === 0 ? 1 : 0), 'mutation');
+      push(m, 9 + (d === 0 ? 1 : 0), 'mutation');
     }
   } else if (kind === 'writing') {
     forbidden.add(t.term);
