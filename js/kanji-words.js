@@ -6,6 +6,7 @@
 
 import { state as defaultState } from './state.js';
 import { snapToNextDueSlot } from './time.js';
+import { pickDistractors } from './distractors.js';
 
 // Facet Constants
 export const FACET_READING = 'KWR';
@@ -239,6 +240,39 @@ function generateReadingMutations(reading, reqOkurigana) {
 }
 
 /**
+ * Exam-style distractors (see distractors.js). Same signature as before.
+ * Reading: same okurigana + length, shared-kanji and near-identical readings.
+ * Writing: same length, shared / look-alike / sound-family kanji.
+ * The legacy staged engine is only a last resort if the scorer returns fewer than 3.
+ */
+export function generateDistractors(targetTerm, facet, pool = [], allWords = []) {
+  const f = (facet || 'KWR').toUpperCase();
+  const kind = (f === 'KWW' || f === 'WRITING') ? 'writing' : (f === 'KWR' || f === 'READING') ? 'reading' : null;
+  if (!kind) return [];
+  const poolList = normalizeWordList(pool);
+  const allList = normalizeWordList(allWords);
+  const universe = allList.length ? allList
+    : (poolList.length ? poolList
+      : ((typeof defaultState !== 'undefined' && defaultState?.idx?.words) ? normalizeWordList(defaultState.idx.words) : []));
+  let target = targetTerm;
+  if (typeof targetTerm !== 'object' || targetTerm === null) {
+    const term = String(targetTerm || '').trim();
+    const m = universe.find(w => w.term_ja === term);
+    target = { term_ja: term, reading: m?.reading || '', lesson: m?.lesson };
+  } else if (!(targetTerm.reading || targetTerm.kana)) {
+    const term = (targetTerm.term_ja || targetTerm.term || targetTerm.word || '').trim();
+    const m = universe.find(w => w.term_ja === term);
+    target = { ...targetTerm, reading: m?.reading || '' };
+  }
+  const picked = pickDistractors(target, kind, universe, { pool: poolList, count: 3 });
+  if (picked.length >= 3) return picked;
+  const legacy = generateDistractorsLegacy(targetTerm, facet, pool, allWords);
+  const seen = new Set(picked);
+  for (const v of legacy) { if (picked.length >= 3) break; if (v && !seen.has(v)) { seen.add(v); picked.push(v); } }
+  return picked;
+}
+
+/**
  * Generates 3 high-quality distractors for Reading (KWR) or Writing (KWW).
  * doc 02 §2.4:
  * For Reading:
@@ -253,7 +287,7 @@ function generateReadingMutations(reading, reqOkurigana) {
  *   2. Words with same kana length from same lesson.
  *   3. Any target word.
  */
-export function generateDistractors(targetTerm, facet, pool = [], allWords = []) {
+function generateDistractorsLegacy(targetTerm, facet, pool = [], allWords = []) {
   const normalizedFacet = (facet || 'KWR').toUpperCase();
   const isReading = normalizedFacet === 'KWR' || normalizedFacet === 'READING';
   const isWriting = normalizedFacet === 'KWW' || normalizedFacet === 'WRITING';

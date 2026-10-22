@@ -16,6 +16,7 @@ import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from 
 import { startStudy, renderCard } from './study.js?v=4.2';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
+import { pickDistractors } from './distractors.js';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import { getDay, getHeatmap30 } from './daylog.js';
 import { istDateKey, istDayStart } from './time.js';
@@ -1158,22 +1159,20 @@ function buildKanjiQuizOptions(item, allItems) {
       }
     }
   };
-  // Exam-style confusable options first (okurigana / length / shared-kanji rules), then lesson, then wider pool
-  if (dir === 'ja-kana' || dir === 'kana-ja') {
-    try {
-      const universe = allItems.map(x => ({ term_ja: x.word, reading: x.reading, lesson: x.lesson_number, meaning_en: x.meaning_en }));
-      const smart = generateDistractors(
-        { term_ja: item.word, reading: item.reading, lesson: item.lesson_number },
-        dir === 'kana-ja' ? 'KWW' : 'KWR',
-        universe.filter(x => x.lesson === item.lesson_number),
-        universe
-      );
-      for (const v of smart) {
-        if (distractors.length >= 3) break;
-        if (v && !seen.has(v)) { seen.add(v); distractors.push(v); }
-      }
-    } catch (e) { /* fall through to pool picks */ }
-  }
+  // Exam-style confusable options (okurigana / length / shared kanji / look-alike kanji / near-identical readings).
+  // Deterministic scorer from distractors.js; random pool picks below are only a last resort.
+  try {
+    const universe = allItems.map(x => ({ term_ja: x.word, reading: x.reading, lesson: x.lesson_number, meaning_en: x.meaning_en }));
+    const kind = dir === 'kana-ja' ? 'writing' : dir === 'ja-meaning' ? 'meaning' : 'reading';
+    const smart = pickDistractors(
+      { term_ja: item.word, reading: item.reading, lesson: item.lesson_number, meaning_en: item.meaning_en },
+      kind, universe, { pool: universe.filter(x => x.lesson === item.lesson_number) }
+    );
+    for (const v of smart) {
+      if (distractors.length >= 3) break;
+      if (v && !seen.has(v)) { seen.add(v); distractors.push(v); }
+    }
+  } catch (e) { /* fall through to pool picks */ }
   // Same-lesson distractors first (harder, more plausible), then the wider pool
   pickFrom(allItems.filter(x => x !== item && x.lesson_number === item.lesson_number));
   pickFrom(allItems.filter(x => x !== item && x.lesson_number !== item.lesson_number));
@@ -1197,17 +1196,13 @@ export function startKanjiExamPractice() {
       getItemStatus(facet + it.word) === 'hard' || getKanjiStatus(it.baseKanji) === 'hard');
     const questions = shuffle(source).map(it => {
       const correct = direction === 'kana-ja' ? it.word : it.reading;
-      const value = candidate => direction === 'kana-ja' ? candidate.word : candidate.reading;
-      const candidates = all.filter(candidate => candidate.word !== it.word &&
-        candidate.reading !== it.reading && value(candidate) !== correct);
-      const distractors = [], seen = new Set([correct]);
-      const sorted = [...shuffle(candidates.filter(x => x.lesson_number === it.lesson_number)),
-        ...shuffle(candidates.filter(x => x.lesson_number !== it.lesson_number))];
-      for (const candidate of sorted) {
-        const v = value(candidate);
-        if (!seen.has(v)) { seen.add(v); distractors.push(v); }
-        if (distractors.length === 3) break;
-      }
+      // Exam-style confusable options, never a correct alternative (homophone / other reading)
+      const distractors = pickDistractors(
+        { term_ja: it.word, reading: it.reading, lesson: it.lesson_number },
+        direction === 'kana-ja' ? 'writing' : 'reading',
+        all.map(x => ({ term_ja: x.word, reading: x.reading, lesson: x.lesson_number })),
+        { pool: all.filter(x => x.lesson_number === it.lesson_number).map(x => ({ term_ja: x.word })) }
+      ).filter(v => v !== correct);
       if (distractors.length < 3) return null;
       const options = shuffle([correct, ...distractors]);
       return {
