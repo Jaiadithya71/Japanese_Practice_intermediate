@@ -8,14 +8,14 @@
 .n3s-modal input{width:100%;padding:.6rem .75rem;border-radius:8px;border:1px solid var(--border,#2a2f3a);background:rgba(255,255,255,.04);color:inherit;margin:.5rem 0}
 .n3s-row{display:flex;gap:.5rem;justify-content:flex-end;margin-top:.5rem;flex-wrap:wrap}
 .n3s-btn{padding:.5rem .9rem;border-radius:8px;border:1px solid var(--border,#2a2f3a);background:transparent;color:inherit;cursor:pointer;font-weight:600}
-.n3s-btn.n3s-primary{background:#6366f1;border-color:#6366f1;color:#fff}
+.n3s-btn.n3s-primary{background:#d4af6a;border-color:#d4af6a;color:#fff}
 #n3s-error{color:#f87171;font-size:.8rem}
 
 .btn-sync-pill.n3s-idle{color:#9aa3b2;border-color:rgba(154,163,178,.35)}.btn-sync-pill.n3s-saving,.btn-sync-pill.n3s-pending{color:#fbbf24;border-color:rgba(251,191,36,.4)}.btn-sync-pill.n3s-ok{color:#34d399;border-color:rgba(52,211,153,.4)}.btn-sync-pill.n3s-error{color:#f87171;border-color:rgba(248,113,113,.45)}
 
 .n3s-mobile-indicator{display:none}
 @media (max-width:900px){
- .n3s-mobile-indicator{position:fixed;display:flex;align-items:center;gap:.42rem;top:max(8px,env(safe-area-inset-top,8px));right:12px;z-index:1400;min-height:34px;padding:.35rem .7rem;border-radius:999px;background:rgba(19,22,29,.94);border:1px solid rgba(154,163,178,.35);color:#9aa3b2;font-size:.72rem;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+ .n3s-mobile-indicator{position:fixed;display:flex;align-items:center;gap:.42rem;top:max(8px,env(safe-area-inset-top,8px));right:12px;z-index:1400;min-height:34px;padding:.35rem .7rem;border-radius:999px;background:rgba(17,22,35,.94);border:1px solid rgba(154,163,178,.35);color:#9aa3b2;font-size:.72rem;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.3);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
  .n3s-mobile-indicator.n3s-saving,.n3s-mobile-indicator.n3s-pending{color:#fbbf24;border-color:rgba(251,191,36,.45)}
  .n3s-mobile-indicator.n3s-ok{color:#34d399;border-color:rgba(52,211,153,.45)}
  .n3s-mobile-indicator.n3s-error{color:#f87171;border-color:rgba(248,113,113,.5)}

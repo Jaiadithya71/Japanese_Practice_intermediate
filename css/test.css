@@ -138,7 +138,7 @@
 }
 
 .badge-n5 { background: rgba(34, 211, 164, 0.15); color: var(--green); border: 1px solid rgba(34, 211, 164, 0.3); }
-.badge-n4 { background: rgba(124, 108, 250, 0.15); color: #818cf8; border: 1px solid rgba(124, 108, 250, 0.3); }
+.badge-n4 { background: rgba(212,175,106, 0.15); color: #e3c88f; border: 1px solid rgba(212,175,106, 0.3); }
 .badge-qb { background: rgba(245, 166, 35, 0.15); color: var(--amber); border: 1px solid rgba(245, 166, 35, 0.3); }
 .badge-try { background: rgba(56, 189, 248, 0.15); color: var(--cyan); border: 1px solid rgba(56, 189, 248, 0.3); }
 .badge-red { background: rgba(249, 92, 92, 0.15); color: var(--red); border: 1px solid rgba(249, 92, 92, 0.3); }
@@ -291,7 +291,7 @@
 
 .test-opt-btn.opt-correct .test-opt-badge {
   background: var(--green) !important;
-  color: #0d0f14 !important;
+  color: #0b0e17 !important;
 }
 
 .test-opt-btn.opt-wrong {
@@ -309,8 +309,8 @@
   margin-top: 1rem;
   padding: 1rem 1.25rem;
   border-radius: 16px;
-  background: rgba(124, 108, 250, 0.08);
-  border: 1px solid rgba(124, 108, 250, 0.25);
+  background: rgba(212,175,106, 0.08);
+  border: 1px solid rgba(212,175,106, 0.25);
   font-size: 0.92rem;
   line-height: 1.6;
 }

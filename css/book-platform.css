@@ -8,7 +8,7 @@
 .pillar-sub-tabs {
   display: flex;
   gap: 0.5rem;
-  background: var(--bg2, #13161d);
+  background: var(--bg2, #111623);
   border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
   border-radius: 14px;
   padding: 0.35rem;
@@ -49,9 +49,9 @@
 }
 
 .pst-btn.active {
-  background: var(--accent, #7c6cfa);
+  background: var(--accent, #d4af6a);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(124, 108, 250, 0.35);
+  box-shadow: 0 4px 14px rgba(212,175,106, 0.35);
 }
 
 .pst-btn .badge {
@@ -77,7 +77,7 @@
 
 /* Pillar SRS Review Card */
 .pillar-srs-card {
-  background: var(--bg2, #13161d);
+  background: var(--bg2, #111623);
   border: 1px solid var(--border-strong, rgba(255, 255, 255, 0.12));
   border-radius: 18px;
   padding: 1.5rem;
@@ -112,7 +112,7 @@
   font-size: 2.2rem;
   font-weight: 800;
   font-family: 'Outfit', sans-serif;
-  color: var(--accent, #7c6cfa);
+  color: var(--accent, #d4af6a);
 }
 
 .psc-count-label {
@@ -139,7 +139,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg2, #13161d);
+  background: var(--bg2, #111623);
   border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
   border-radius: 16px;
   padding: 1rem 1.25rem;
@@ -255,7 +255,7 @@
 .sd-section-title {
   font-size: 0.85rem;
   font-weight: 800;
-  color: var(--accent, #7c6cfa);
+  color: var(--accent, #d4af6a);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   display: flex;
@@ -345,7 +345,7 @@
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  background: var(--bg2, #13161d);
+  background: var(--bg2, #111623);
   border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
   border-radius: 999px;
   padding: 0.35rem 0.75rem;
@@ -372,8 +372,8 @@
 }
 
 .chapter-chip.selected {
-  background: rgba(124, 108, 250, 0.2);
-  border-color: var(--accent, #7c6cfa);
+  background: rgba(212,175,106, 0.2);
+  border-color: var(--accent, #d4af6a);
   color: #fff;
   font-weight: 800;
 }
@@ -448,11 +448,11 @@
 }
 .due-chip:hover {
   background: rgba(255, 255, 255, 0.08);
-  border-color: var(--accent, #7c6cfa);
+  border-color: var(--accent, #d4af6a);
 }
 .due-chip.selected {
-  background: rgba(124, 108, 250, 0.2);
-  border-color: var(--accent, #7c6cfa);
+  background: rgba(212,175,106, 0.2);
+  border-color: var(--accent, #d4af6a);
   color: #fff;
 }
 .due-chip.cyan.selected {
@@ -466,7 +466,7 @@
   color: var(--text-dim, #7a8099);
 }
 .due-chip.selected .due-chip-count {
-  color: var(--accent, #7c6cfa);
+  color: var(--accent, #d4af6a);
 }
 .due-chip.cyan.selected .due-chip-count {
   color: var(--cyan, #06b6d4);
@@ -536,12 +536,12 @@
   transition: all 0.2s ease;
 }
 .study-mode-toggle input:checked + .toggle-slider {
-  background-color: rgba(124, 108, 250, 0.25);
-  border-color: var(--accent, #7c6cfa);
+  background-color: rgba(212,175,106, 0.25);
+  border-color: var(--accent, #d4af6a);
 }
 .study-mode-toggle input:checked + .toggle-slider:before {
   transform: translateX(14px);
-  background-color: var(--accent, #7c6cfa);
+  background-color: var(--accent, #d4af6a);
 }
 
 .vw-study-cell {
@@ -558,8 +558,8 @@
   margin-top: 0.35rem;
 }
 .vw-study-cell:hover {
-  background: rgba(124, 108, 250, 0.1);
-  border-color: var(--accent, #7c6cfa);
+  background: rgba(212,175,106, 0.1);
+  border-color: var(--accent, #d4af6a);
 }
 .vw-study-cell .study-cell-hint {
   display: flex;

@@ -1,0 +1,6 @@
+/* Premium champagne-gold theme: dark text on gold surfaces for contrast */
+.btn-primary,.pst-btn.active,.group-tab.active,.home-option.active,.btn-grade.is-chosen-grade.grade-good,
+.batch-chip.active,.chapter-chip.active,.star-btn-check,.wp-chip.active,.fixit-step-chip.active,
+.reader-cat-tab.active,.seg-btn.active,.n3s-btn.n3s-primary,.logo-badge,.home-status-n3{color:#17120a !important}
+.star-tile:hover .star-tile-num{color:#17120a}
+.logo-badge,.home-status-n3{background:linear-gradient(135deg,#e6cd94,#b48a3c) !important}

@@ -89,7 +89,7 @@
 }
 
 .resume-banner {
-  background: rgba(124, 108, 250, 0.12);
+  background: rgba(212,175,106, 0.12);
   border: 1px solid var(--accent);
   color: #fff;
 }
@@ -140,9 +140,9 @@
 
 /* 3. Primary Hero Card (nextBestAction) */
 .today-hero-card {
-  background: linear-gradient(135deg, rgba(124, 108, 250, 0.18) 0%, rgba(19, 22, 29, 0.95) 100%);
-  border: 1px solid rgba(124, 108, 250, 0.35);
-  box-shadow: 0 8px 32px rgba(124, 108, 250, 0.15);
+  background: linear-gradient(135deg, rgba(212,175,106, 0.18) 0%, rgba(17,22,35, 0.95) 100%);
+  border: 1px solid rgba(212,175,106, 0.35);
+  box-shadow: 0 8px 32px rgba(212,175,106, 0.15);
   border-radius: var(--card-radius);
   padding: 1.4rem;
   display: flex;
@@ -284,7 +284,7 @@
   line-height: 1.2;
 }
 
-.vocab-pill { border-color: rgba(124, 108, 250, 0.35); }
+.vocab-pill { border-color: rgba(212,175,106, 0.35); }
 .kanji-pill { border-color: rgba(56, 189, 248, 0.35); }
 .grammar-pill { border-color: rgba(245, 166, 35, 0.35); }
 .reading-pill { border-color: rgba(34, 211, 164, 0.35); }
@@ -399,7 +399,7 @@
 
 /* 7. Sunday Weekly Check Card */
 .today-card-weekly {
-  background: linear-gradient(135deg, rgba(245, 166, 35, 0.14) 0%, rgba(19, 22, 29, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(245, 166, 35, 0.14) 0%, rgba(17,22,35, 0.95) 100%);
   border: 1px solid rgba(245, 166, 35, 0.35);
   border-radius: var(--card-radius);
   padding: 1.15rem;

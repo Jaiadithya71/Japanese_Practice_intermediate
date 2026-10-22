@@ -190,7 +190,7 @@
 .btn-grade.grade-hard { color: var(--amber); border-color: rgba(245,158,11,0.25); }
 .btn-grade.grade-hard:hover { background: var(--amber-light); }
 
-.btn-grade.grade-good { color: var(--accent); border-color: rgba(99,102,241,0.25); }
+.btn-grade.grade-good { color: var(--accent); border-color: rgba(212,175,106,0.25); }
 .btn-grade.grade-good:hover { background: var(--accent-light); }
 
 .btn-grade.grade-easy { color: var(--green); border-color: rgba(16,185,129,0.25); }
