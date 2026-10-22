@@ -1171,9 +1171,14 @@ export function startKanjiExamPractice() {
       return {
         id: `kanji-exam-${direction}-${it.word}`, category: 'kanji', chapter: it.lesson_number,
         type: 'multiple_choice', key: facet + it.word,
-        question: `${direction === 'kana-ja' ? 'Writing · Choose the kanji' : 'Reading · Choose the reading'}<br><br><span style="font-size:2.4rem;line-height:1.4">${direction === 'kana-ja' ? it.reading : it.word}</span>${it.meaning_en ? `<div class="kq-meaning-hint" style="margin:.6rem 0 0">${esc(it.meaning_en)}</div>` : ''}`,
+        question: `${direction === 'kana-ja' ? 'Writing · Choose the kanji' : 'Reading · Choose the reading'}<br><br><span style="font-size:2.4rem;line-height:1.4">${direction === 'kana-ja' ? it.reading : it.word}</span>`,
         options, correct: options.indexOf(correct) + 1, correctAnswerText: correct,
-        explanation: `${it.word} (${it.reading})${it.meaning_en ? ' · ' + it.meaning_en : ''}`
+        explanation: `${it.word} (${it.reading})${it.meaning_en ? ' · ' + it.meaning_en : ''}`,
+        reviewFn: chosen => buildKanjiQuizReviewHtml({
+          direction: direction === 'kana-ja' ? 'kana-ja' : 'ja-kana', word: it.word, reading: it.reading,
+          meaning_en: it.meaning_en, meaning_zh: it.meaning_zh, lesson_number: it.lesson_number,
+          baseKanji: it.baseKanji, options: { correctValue: correct }
+        }, chosen, all)
       };
     }).filter(Boolean);
     return specific ? questions : questions.slice(0, 25);
@@ -1263,24 +1268,18 @@ export function renderKanjiQuizCard(item) {
       ? '<span class="badge" style="background: rgba(236,72,153,0.18); border: 1px solid #ec4899; color: #f472b6; font-size: 0.78rem; font-weight: 700;">意味 (Kanji → English)</span>'
       : '<span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)</span>');
 
-  // Meaning hint under the prompt: safe for reading and writing questions (never the answer).
-  const meaningHint = (dir !== 'ja-meaning' && item.meaning_en)
-    ? `<div class="kq-meaning-hint">${esc(item.meaning_en)}</div>` : '';
-
   if (lessonTag) lessonTag.textContent = `Quick Quiz · 漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
 
   if (dir === 'ja-kana') {
     termEl.innerHTML = `
       <div>
         <div class="kanji-quiz-prompt" style="font-size:clamp(3.8rem,14vw,5.4rem);font-family:var(--font-jp);font-weight:800;color:#fff;letter-spacing:.04em;line-height:1.18;">${item.word}</div>
-        ${meaningHint}
         <div style="margin-top: 0.75rem;">${dirBadge}</div>
       </div>`;
   } else if (dir === 'kana-ja') {
     termEl.innerHTML = `
       <div>
         <div style="font-size: 3rem; font-family: var(--font-jp); font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">${item.reading}</div>
-        ${meaningHint}
         <div style="margin-top: 0.75rem;">${dirBadge}</div>
       </div>`;
   } else {
@@ -1324,10 +1323,11 @@ export function renderKanjiQuizCard(item) {
 function esc(t) { return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 // Compact, self-contained explanation shown after a wrong answer
-function buildKanjiQuizReviewHtml(item, chosen) {
+function buildKanjiQuizReviewHtml(item, chosen, universeOverride) {
   const dir = item.direction || 'ja-kana';
   const dim = 'color:#a5b4c8;';
-  const universe = state._kanjiQuizUniverse || [];
+  const universe = universeOverride || state._kanjiQuizUniverse || [];
+  const isCorrect = chosen === item.options.correctValue;
   const fmtWord = w => '<b class="font-ja">' + esc(w.word) + '</b> <span class="font-ja" style="color:#f472b6;">' + esc(w.reading) + '</span>' + (w.meaning_en ? ' <span style="' + dim + '">' + esc(w.meaning_en) + '</span>' : '');
   const kanjiOf = word => [...new Set([...(word || '')].filter(c => /[\u4e00-\u9fff]/.test(c)))];
   const kanjiRows = word => {
@@ -1342,6 +1342,14 @@ function buildKanjiQuizReviewHtml(item, chosen) {
         (kun ? ' <span style="' + dim + '">訓 </span><span class="font-ja" style="color:#a78bfa;">' + esc(kun) + '</span>' : '') + '</span></div>';
     }).join('');
   };
+  if (isCorrect) {
+    const lbl = dir === 'ja-kana' ? 'Reading' : (dir === 'kana-ja' ? 'Kanji' : 'Meaning');
+    return '<div style="display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;"><strong style="color:#86efac;">&#10003; Correct</strong><span style="' + dim + 'font-size:.72rem;">L' + esc(item.lesson_number) + ' · 親 <span class="font-ja">' + esc(item.baseKanji || '') + '</span></span></div>' +
+      '<div style="margin-top:.2rem;"><b class="font-ja" style="font-size:1.25rem;color:#fff;">' + esc(item.word) + '</b> <span class="font-ja" style="color:#f472b6;font-weight:700;">' + esc(item.reading) + '</span></div>' +
+      '<div style="color:var(--text);">' + esc(item.meaning_en) + (item.meaning_zh ? ' <span style="' + dim + '">· ' + esc(item.meaning_zh) + '</span>' : '') + '</div>' +
+      '<div style="margin-top:.3rem;"><span style="color:#86efac;">&#10003; ' + lbl + ':</span> <b class="font-ja">' + esc(item.options.correctValue) + '</b></div>' +
+      '<div style="margin-top:.35rem;padding-top:.3rem;border-top:1px solid rgba(255,255,255,.1);">' + kanjiRows(item.word) + '</div>';
+  }
   // What the tapped option actually is
   let why = '';
   const hit = dir === 'ja-kana'
@@ -1397,10 +1405,10 @@ export function answerKanjiQuizOption(idx) {
     btn.style.cursor = 'default';
   });
 
-  if (!isCorrect) {
+  {
     const review = document.createElement('div');
     review.className = 'kanji-quiz-wrong-review';
-    review.style.cssText = 'margin-top:0.7rem;padding:0.6rem 0.7rem;border:1px solid rgba(239,68,68,.35);border-radius:12px;background:rgba(239,68,68,.08);text-align:left;font-size:.8rem;line-height:1.35;';
+    review.style.cssText = 'margin-top:0.7rem;padding:0.6rem 0.7rem;border:1px solid ' + (isCorrect ? 'rgba(34,197,94,.35)' : 'rgba(239,68,68,.35)') + ';border-radius:12px;background:' + (isCorrect ? 'rgba(34,197,94,.08)' : 'rgba(239,68,68,.08)') + ';text-align:left;font-size:.8rem;line-height:1.35;';
     review.innerHTML = buildKanjiQuizReviewHtml(item, chosen);
     review.addEventListener('click', e => e.stopPropagation());
     const meaningEl = document.getElementById('card-meaning');
@@ -1420,7 +1428,7 @@ export function answerKanjiQuizOption(idx) {
 
   if (isCorrect && isKanjiAutoNextOn()) {
     if (state._kanjiQuizTimer) clearTimeout(state._kanjiQuizTimer);
-    state._kanjiQuizTimer = setTimeout(() => nextKanjiQuizCard(), 750);
+    state._kanjiQuizTimer = setTimeout(() => nextKanjiQuizCard(), 2600);
   } else {
     const nextBtn = document.getElementById('kq-btn-next');
     if (nextBtn) nextBtn.style.visibility = 'visible';

@@ -828,7 +828,11 @@ export function renderTestQuestion() {
     const explText = document.getElementById('tr-explanation-text');
     if (explanationEl && explText) {
       explanationEl.style.display = 'block';
-      explText.innerHTML = `
+      let rich = '';
+      try { if (typeof q.reviewFn === 'function') rich = q.reviewFn(q.options[currentAnswer.selected - 1]); } catch (e) { rich = ''; }
+      if (rich) {
+        explText.innerHTML = `<div style="text-align:left;font-size:.85rem;line-height:1.4;">${rich}</div>`;
+      } else explText.innerHTML = `
         <strong>${currentAnswer.wasCorrect ? '正解！ (Correct)' : '不正解 (Incorrect)'}</strong> — 
         正解は「${q.correctAnswerText || (q.options || [])[q.correct - 1] || ''}」です。<br>
         ${q.explanation ? `<div style="margin-top:0.4rem; color:var(--text-muted); font-size:0.85rem;">${q.explanation}</div>` : ''}
