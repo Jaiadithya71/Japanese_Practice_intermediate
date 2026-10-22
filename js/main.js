@@ -9,7 +9,7 @@ import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
 import { showView } from './navigation.js';
-import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=4.1';
+import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=4.2';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=2.4';
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=4.2';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
@@ -22,7 +22,7 @@ import {
   setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected,
   startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
   nextKanjiQuizCard, toggleKanjiAutoNext
-} from './kanji.js?v=2.5';
+} from './kanji.js?v=2.6';
 import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,

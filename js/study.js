@@ -875,7 +875,10 @@ function renderStudySummary() {
         ? 'drillKanjiSelected()'
         : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`);
   const hasNextHomeBatch = state.homeRunBatchRun === true && state.drillOrigin === 'home' && !state.isDueReviewMode && Array.isArray(state.homeRunQueue) && state.homeRunQueue.length > 0;
-  const nextBatchButton = hasNextHomeBatch ? `<button class="btn btn-primary" onclick="startNextHomeBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.homeRunQueue.length} left)</button>` : '';
+  const hasNextKanjiBatch = state.kanjiRunBatchRun === true && state.drillOrigin === 'kanji' && !state.isDueReviewMode && Array.isArray(state.kanjiRunQueue) && state.kanjiRunQueue.length > 0;
+  const nextBatchButton = hasNextHomeBatch
+    ? `<button class="btn btn-primary" onclick="startNextHomeBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.homeRunQueue.length} left)</button>`
+    : (hasNextKanjiBatch ? `<button class="btn btn-primary" onclick="startNextKanjiBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.kanjiRunQueue.length} left)</button>` : '');
   const againLabel = state.studyMode === 'kanji_quiz'
     ? 'Quiz Again'
     : state.learnUnit

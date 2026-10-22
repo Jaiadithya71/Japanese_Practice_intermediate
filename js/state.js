@@ -39,6 +39,10 @@ export const state = {
   kanjiPart: 'all',         // 'all' | 1 | 2 | 3 | 4 | 5
   kanjiLesson: 'all',       // 'all' | 1 .. 25
   kanjiSelectedLessons: new Set(),
+  kanjiRunQueue: [],        // Batched kanji run: remaining cards
+  kanjiRunBatchSize: 'all', // 'all' | '10' | '20' | '50'
+  kanjiRunBatchRun: false,
+  kanjiRunMode: 'flashcard',// 'flashcard' | 'kanji_quiz'
   selectedDueKanjiLessons: new Set(),
   kanjiFilter: 'all',       // 'all' | 'learning' | 'hard' | 'mastered' | 'unseen'
   kanjiSearchQuery: '',
