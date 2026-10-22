@@ -8,9 +8,11 @@ import { STORAGE_KEY } from './config.js';
 import { state } from './state.js';
 import { updateSidebarStats } from './srs.js';
 import { encodeStats, decodeStatsText } from './stats-codec.js';
-import { getDay } from './daylog.js';
+import { getDay, loadDaylog, saveDaylog } from './daylog.js';
 
 const GIST_FILENAME = 'nihongo-n3-stats.json';
+const DAYLOG_FILENAME = 'nihongo-n3-daylog.json';
+const PRESYNC_BACKUP_KEY = 'n3_presync_backup_done_v1';
 const PAT_KEY = 'n3_github_pat';
 const GIST_ID_KEY = 'n3_gist_id';
 const DIRTY_KEY = 'n3_gist_dirty';
@@ -32,6 +34,7 @@ const API = 'https://api.github.com';
 let dirty = localStorage.getItem(DIRTY_KEY) === '1';
 let reviewSessionActive = localStorage.getItem(ACTIVE_KEY) === '1';
 let pushPromise = null;
+let lastRemoteDaylog = null;
 let changeRevision = 0;
 
 function isReviewActive() {
@@ -125,6 +128,38 @@ function mergeStats(remote) {
   return changed;
 }
 
+// Per-day activity (heatmap, streak, daily review counts) lives in its own Gist file and merges by max,
+// so a device never lowers a day's count and nothing is lost when two devices have diverged.
+function mergeDaylogMax(remoteText) {
+  if (!remoteText) return false;
+  let remote;
+  try { remote = JSON.parse(remoteText); } catch (_) { return false; }
+  if (!remote || typeof remote !== 'object' || Array.isArray(remote)) return false;
+  const local = loadDaylog();
+  let changed = false;
+  const mx = (a, b) => Math.max(Number(a) || 0, Number(b) || 0);
+  for (const [date, r] of Object.entries(remote)) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date) || !r || typeof r !== 'object') continue;
+    const l = local[date];
+    if (!l) { local[date] = r; changed = true; continue; }
+    const merged = { ...l, date, reviews: mx(l.reviews, r.reviews), newCards: mx(l.newCards ?? l.new, r.newCards ?? r.new), minutes: mx(l.minutes, r.minutes),
+      pillars: { vocab: mx(l.pillars?.vocab, r.pillars?.vocab), kanji: mx(l.pillars?.kanji, r.pillars?.kanji), grammar: mx(l.pillars?.grammar, r.pillars?.grammar), reading: mx(l.pillars?.reading, r.pillars?.reading) } };
+    if (l.wrong !== undefined || r.wrong !== undefined) merged.wrong = mx(l.wrong, r.wrong);
+    if (JSON.stringify(merged) !== JSON.stringify(l)) { local[date] = merged; changed = true; }
+  }
+  if (changed) saveDaylog(local);
+  return changed;
+}
+
+async function backupBeforeFirstDaylogMerge() {
+  if (localStorage.getItem(PRESYNC_BACKUP_KEY) === '1') return;
+  try {
+    const { createSnapshot } = await import('./backup.js');
+    createSnapshot('presync_daylog');
+    localStorage.setItem(PRESYNC_BACKUP_KEY, '1');
+  } catch (e) { console.warn('[n3-sync] pre-sync backup failed:', e.message); }
+}
+
 function refreshViews() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state.stats));
   updateSidebarStats();
@@ -215,6 +250,8 @@ async function getRemoteContent(pat, gistId) {
       await new Promise(resolve => setTimeout(resolve, delays[attempt]));
     }
   }
+  const dayFile = gist.files && gist.files[DAYLOG_FILENAME];
+  lastRemoteDaylog = dayFile && typeof dayFile.content === 'string' && !dayFile.truncated ? dayFile.content : null;
   const file = gist.files && gist.files[GIST_FILENAME];
   if (!file) throw new Error('The progress file is missing from the Gist; nothing was written.');
   let content = file.content;
@@ -282,6 +319,8 @@ async function pushOnce(pat, gistId, allowCorruptRemote = false, revision = chan
     const wrapped = JSON.stringify({ files: { [GIST_FILENAME]: { content: payload } } });
     JSON.parse(wrapped);
     const remoteContent = await getRemoteContent(pat, gistId);
+    await backupBeforeFirstDaylogMerge();
+    mergeDaylogMax(lastRemoteDaylog);
     try {
       await parseRemoteStats(remoteContent);
     } catch (e) {
@@ -304,7 +343,7 @@ async function pushOnce(pat, gistId, allowCorruptRemote = false, revision = chan
       const res = await fetch(`${API}/gists/${gistId}`, {
         method: 'PATCH',
         headers: headers(pat, true),
-        body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload } } })
+        body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload }, [DAYLOG_FILENAME]: { content: JSON.stringify(loadDaylog()) } } })
       });
       if (res.ok) {
         if (revision === changeRevision) {
@@ -492,7 +531,9 @@ export async function gistLoadStats(options = {}) {
   try {
     setStatus('saving', 'Syncing…');
     const remote = await pull(pat, gistId);
-    if (mergeStats(remote)) {
+    await backupBeforeFirstDaylogMerge();
+    const dayChanged = mergeDaylogMax(lastRemoteDaylog);
+    if (mergeStats(remote) || dayChanged) {
       refreshViews();
       dirty = true;
       changeRevision++;
@@ -677,6 +718,18 @@ export function initSyncUI() {
     if (dirty && localStorage.getItem(READY_KEY) === '1') gistLoadStats({ forcePush: true });
     else gistLoadStats();
   });
+  if (typeof document !== 'undefined' && document.addEventListener) {
+    // Installed app or tab left open in the background: sync again whenever it comes back to the screen.
+    let lastVisibleSync = Date.now();
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState !== 'visible') return;
+      const c = creds();
+      if (!c.pat || !c.gistId || isReviewActive()) return;
+      if (Date.now() - lastVisibleSync < 20000) return;
+      lastVisibleSync = Date.now();
+      gistLoadStats();
+    });
+  }
   if (pat && gistId && reviewSessionActive) {
     // A persisted active marker means the prior page ended mid-review; do not mistake that for completion.
     reviewSessionActive = false;
