@@ -281,13 +281,24 @@ export function renderCard() {
     gradeControls.classList.toggle('awaiting-reveal', !state.cardFlipped);
     gradeControls.setAttribute('aria-hidden', String(!state.cardFlipped));
     gradeControls.querySelectorAll('button').forEach(button => {
-      button.disabled = !state.cardFlipped || !!priorOutcome?.grade;
-      button.title = priorOutcome?.grade ? 'Already graded' : !state.cardFlipped ? 'Reveal the card first' : '';
+      const btnGrade = Number(button.getAttribute('data-grade'));
+      const isChosen = !!priorOutcome?.grade && btnGrade === priorOutcome.grade;
+      // Graded cards keep live buttons: the chosen grade stays highlighted and
+      // tapping a different one changes the grade (see regradeCard).
+      button.disabled = !state.cardFlipped;
+      button.classList.toggle('is-chosen-grade', isChosen);
+      button.classList.toggle('is-dimmed-grade', !!priorOutcome?.grade && !isChosen);
+      button.title = priorOutcome?.grade
+        ? (isChosen ? `You graded ${GRADE_NAMES[priorOutcome.grade]} - tap another grade to change it` : `Change grade to ${GRADE_NAMES[btnGrade]}`)
+        : !state.cardFlipped ? 'Reveal the card first' : '';
     });
   } else if (gradeControls) {
     gradeControls.classList.remove('awaiting-reveal');
     gradeControls.removeAttribute('aria-hidden');
-    gradeControls.querySelectorAll('button').forEach(button => { button.disabled = false; });
+    gradeControls.querySelectorAll('button').forEach(button => {
+      button.disabled = false;
+      button.classList.remove('is-chosen-grade', 'is-dimmed-grade');
+    });
   }
   const previous = document.getElementById('study-previous');
   const next = document.getElementById('study-next');
@@ -298,7 +309,7 @@ export function renderCard() {
     const controls = document.getElementById('grade-controls');
     if (controls && !testLayout) controls.style.display = 'none';
     const label = document.getElementById('review-phase-label');
-    if (label) label.textContent = `TEST · Already graded: ${['', 'Again', 'Hard', 'Good', 'Easy'][priorOutcome.grade]}`;
+    if (label) label.textContent = `TEST · Graded: ${GRADE_NAMES[priorOutcome.grade]} · tap another grade to change`;
   }
   const item = state.sessionItems[state.sessionIdx];
   if (!item || !state.cardFlipped || state.studyMode === 'kanji_quiz') return;
@@ -671,10 +682,20 @@ export function gradeCard(grade) {
   if (state.sessionIdx >= state.sessionItems.length) return;
 
   const item = state.sessionItems[state.sessionIdx];
-  if (studyHistory.get(state.sessionItems, item)?.grade) return;
+  const prior = studyHistory.get(state.sessionItems, item);
+  if (prior?.grade) {
+    // Card was already graded: treat the tap as changing that grade, not a new review.
+    regradeCard(item, prior, grade);
+    return;
+  }
   const itemKey = formatItemKey(item);
+  // Snapshot the SRS record before grading so a later grade change can restore it
+  // exactly (the new grade then replaces the old one instead of double-counting).
+  const prevStats = state.stats && state.stats[itemKey]
+    ? JSON.parse(JSON.stringify(state.stats[itemKey]))
+    : null;
   updateItemStats(itemKey, grade);
-  studyHistory.set(state.sessionItems, item, { grade });
+  const entry = { grade, prevStats, requeueNode: null };
 
   state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
 
@@ -686,11 +707,66 @@ export function gradeCard(grade) {
   const isAgain = grade === 1;
   if (isAgain) {
     const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
-    state.sessionItems.splice(insertAt, 0, { ...item, _requeued: true });
+    const copy = { ...item, _requeued: true };
+    state.sessionItems.splice(insertAt, 0, copy);
+    entry.requeueNode = copy;
   }
+  studyHistory.set(state.sessionItems, item, entry);
 
   state.sessionIdx++;
   state.cardFlipped = false;
+  renderCard();
+}
+
+const GRADE_NAMES = ['', 'Again', 'Hard', 'Good', 'Easy'];
+
+// Change the grade given to a card earlier in this session (go back, tap a
+// different grade). The first grade's effect is rolled back from its snapshot,
+// then the new grade is applied once - stats, counters and re-queues end up
+// exactly as if the new grade had been the only one.
+function regradeCard(item, entry, newGrade) {
+  if (entry.grade === newGrade) { renderCard(); return; }
+  const itemKey = formatItemKey(item);
+
+  // 1. Restore the SRS record to its pre-grade state.
+  if (entry.prevStats) {
+    state.stats[itemKey] = JSON.parse(JSON.stringify(entry.prevStats));
+  } else if (state.stats) {
+    delete state.stats[itemKey];
+  }
+
+  // 2. Roll back the session counters the old grade added.
+  state.sessionTotalAnswered = Math.max(0, (state.sessionTotalAnswered || 0) - 1);
+  if (entry.grade >= 2) state.sessionRight = Math.max(0, (state.sessionRight || 0) - 1);
+  try {
+    if (localStorage.getItem('n3_gist_review_active') === '1') {
+      const n = Math.max(0, (Number(localStorage.getItem('n3_day_session_review_count')) || 0) - 1);
+      localStorage.setItem('n3_day_session_review_count', String(n));
+    }
+  } catch { /* optional session summary cache */ }
+
+  // 3. Drop the Again re-queue copy the old grade created while it is still pending.
+  if (entry.requeueNode) {
+    const qi = state.sessionItems.indexOf(entry.requeueNode);
+    if (qi > state.sessionIdx && !studyHistory.get(state.sessionItems, entry.requeueNode)?.grade) {
+      state.sessionItems.splice(qi, 1);
+    }
+    entry.requeueNode = null;
+  }
+
+  // 4. Apply the new grade once, on the restored record.
+  updateItemStats(itemKey, newGrade);
+  state.sessionTotalAnswered = (state.sessionTotalAnswered || 0) + 1;
+  if (newGrade >= 2) state.sessionRight = (state.sessionRight || 0) + 1;
+  entry.grade = newGrade;
+  if (newGrade === 1) {
+    const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
+    const copy = { ...item, _requeued: true };
+    state.sessionItems.splice(insertAt, 0, copy);
+    entry.requeueNode = copy;
+  }
+
+  // Stay on the card so the changed grade is visible; renderCard re-marks it.
   renderCard();
 }
 
@@ -806,11 +882,17 @@ function renderStudySummary() {
       ? 'Learn more words'
       : (state.drillOrigin === 'kanji' ? 'Drill Again' : 'Review Again');
 
+  const summaryIcon = pct >= 90 ? 'fa-trophy' : pct >= 70 ? 'fa-award' : pct >= 50 ? 'fa-circle-check' : 'fa-book-open';
+  const summaryTitle = pct >= 90 ? 'Excellent!' : pct >= 70 ? 'Well done!' : pct >= 50 ? 'Keep going!' : 'Keep practising!';
   container.innerHTML = `
     <div class="study-summary-card">
-      <i class="fa-solid fa-trophy summary-trophy"></i>
-      <h2>Session Complete!</h2>
-      <p style="color: var(--text-muted);">You completed all ${initialTotal} items (${answered} reviews total).</p>
+      <i class="fa-solid ${summaryIcon} summary-trophy"></i>
+      <h2>${summaryTitle}</h2>
+      <div class="summary-score-ring">
+        <span class="summary-ring-pct">${pct}%</span>
+        <span class="summary-ring-label">accuracy</span>
+      </div>
+      <p style="color: var(--text-muted); margin: 0;">You completed all ${initialTotal} items (${answered} reviews total).</p>
 
       <div class="summary-stats-row">
         <div class="summary-stat-box">
@@ -818,12 +900,12 @@ function renderStudySummary() {
           <span style="font-size: 0.8rem; color: var(--text-dim);">Correct</span>
         </div>
         <div class="summary-stat-box">
-          <span class="summary-stat-val" style="color: var(--accent);">${pct}%</span>
-          <span style="font-size: 0.8rem; color: var(--text-dim);">Accuracy</span>
-        </div>
-        <div class="summary-stat-box">
           <span class="summary-stat-val" style="color: var(--red);">${Math.max(0, answered - correct)}</span>
           <span style="font-size: 0.8rem; color: var(--text-dim);">Again Re-queues</span>
+        </div>
+        <div class="summary-stat-box">
+          <span class="summary-stat-val" style="color: var(--text-muted);">${answered}</span>
+          <span style="font-size: 0.8rem; color: var(--text-dim);">Reviews</span>
         </div>
       </div>
 

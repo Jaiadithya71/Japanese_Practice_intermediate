@@ -233,6 +233,47 @@
   font-weight: 800;
 }
 
+
+/* Summary score ring (elementary-style): the success rate as the centerpiece */
+.summary-score-ring {
+  background: var(--bg3);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.summary-ring-pct {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+.summary-ring-label {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+/* Re-grading: the grade chosen earlier stays visible when browsing back */
+.btn-grade.is-chosen-grade {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+.btn-grade.is-chosen-grade .grade-label::after { content: " \2713"; }
+.btn-grade.is-chosen-grade.grade-again { background: var(--red) !important; color: #fff !important; border-color: var(--red) !important; }
+.btn-grade.is-chosen-grade.grade-hard { background: var(--amber) !important; color: #241a05 !important; border-color: var(--amber) !important; }
+.btn-grade.is-chosen-grade.grade-good { background: var(--accent) !important; color: #fff !important; border-color: var(--accent) !important; }
+.btn-grade.is-chosen-grade.grade-easy { background: var(--green) !important; color: #06281c !important; border-color: var(--green) !important; }
+.btn-grade.is-dimmed-grade { opacity: 0.45; }
+
 /* Kanji quiz: give the prompt the visual weight and space of a drill question. */
 #card-term.kanji-quiz-term{width:100%;display:flex;flex:1;align-items:center;justify-content:center;min-height:6.5rem}
 #card-term.kanji-quiz-term>div{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center}

@@ -5,7 +5,7 @@
 
 import { state } from './state.js';
 import { getWordStatus, toggleWordHard, updateSidebarStats } from './srs.js';
-import { startStudy } from './study.js?v=4.0';
+import { startStudy } from './study.js?v=4.1';
 
 function groupKeys() {
   const isChar = state.activeChapterGroup !== 'topic';
