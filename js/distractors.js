@@ -1,3 +1,4 @@
+import { characterShapes } from '../data/kanji/character_shapes.js';
 /* =======================================================
    NIHONGO INTERMEDIATE - js/distractors.js
    Exam-style confusable options for kanji-word multiple choice.
@@ -40,7 +41,7 @@ export const SOUND_FAMILIES = [
 
 // Visually confusable kanji (shape, not sound)
 export const LOOKALIKE_GROUPS = [
-  ['未', '末', '朱'], ['土', '士', '工'], ['日', '曰', '目', '白'], ['己', '已', '巳'],
+  ['毛','手','乞','七'], ['未', '末', '朱'], ['土', '士', '工'], ['日', '曰', '目', '白'], ['己', '已', '巳'],
   ['大', '太', '犬', '天', '夫'], ['午', '牛', '干', '千'], ['万', '方', '力', '刀'],
   ['待', '持', '特', '侍'], ['貝', '見', '員'], ['休', '体', '林'], ['人', '入', '八'],
   ['雨', '雪', '雲'], ['困', '因', '囚'], ['矢', '失', '夫'], ['王', '玉', '主'],
@@ -64,6 +65,37 @@ function buildGroupMap(groups) {
     }
   }
   return m;
+}
+
+// Rank actual glyph families, with dictionary radical and stroke data covering every Joyo character.
+const RADICAL_MAP = new Map();
+for (const [ch, info] of Object.entries(characterShapes)) {
+  if (!RADICAL_MAP.has(info.radical)) RADICAL_MAP.set(info.radical, []);
+  RADICAL_MAP.get(info.radical).push(ch);
+}
+const hira = s => String(s || '').replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).replace(/[-.]/g, '');
+export function shapeSimilarity(a, b) {
+  if (a === b) return 0;
+  const x = characterShapes[a], y = characterShapes[b];
+  let score = SHAPE_MAP.get(a)?.has(b) ? 20 : 0;
+  if (SOUND_MAP.get(a)?.has(b)) score = Math.max(score, 15);
+  if (x && y && x.radical === y.radical) score = Math.max(score, 12 + Math.max(0, 6 - Math.abs(x.strokes - y.strokes)));
+  if (!score && x && y && Math.abs(x.strokes-y.strokes) <= 1) score = 2 - Math.abs(x.strokes-y.strokes);
+  return score;
+}
+const SHAPE_CANDIDATES = new Map();
+function shapeCandidates(ch) {
+  if (!SHAPE_CANDIDATES.has(ch)) {
+    const list = new Set([...(SHAPE_MAP.get(ch) || []), ...(SOUND_MAP.get(ch) || []), ...(RADICAL_MAP.get(characterShapes[ch]?.radical) || [])]);
+    // Rare radicals may have fewer than three Joyo members. Fill by nearest stroke count,
+    // never by random same-lesson words. Strong radical/component matches always outrank this tier.
+    if (list.size < 6) for (const [candidate, info] of Object.entries(characterShapes)) {
+      if (Math.abs(info.strokes - (characterShapes[ch]?.strokes || 0)) <= 1) list.add(candidate);
+    }
+    list.delete(ch);
+    SHAPE_CANDIDATES.set(ch, [...list].sort((a,b) => shapeSimilarity(ch,b)-shapeSimilarity(ch,a) || a.localeCompare(b)).slice(0,16));
+  }
+  return SHAPE_CANDIDATES.get(ch);
 }
 
 const KANJI_RE = /[\u3400-\u9fff々]/;
@@ -226,23 +258,30 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
     }
   } else if (kind === 'writing') {
     forbidden.add(t.term);
-    const tRead = readingVariants(t.reading);
+    const tRead = readingVariants(t.reading).map(hira);
+    if (len(t.term) === 1) {
+      for (const [ch, info] of Object.entries(characterShapes)) if (info.readings.some(r => tRead.includes(hira(r)))) forbidden.add(ch);
+    }
     // homophones are valid answers for a kana prompt
-    for (const w of words) if (readingVariants(w.reading).some(v => tRead.includes(v))) forbidden.add(w.term);
+    for (const w of words) if (readingVariants(w.reading).some(v => tRead.includes(hira(v)))) forbidden.add(w.term);
     const tLen = len(t.term);
     for (const w of words) {
       if (forbidden.has(w.term)) continue;
       let s = 0;
       const d = Math.abs(len(w.term) - tLen);
-      if (d === 0) s += 6; else if (d === 1) s += 1; else s -= 4 * d;
+      if (d === 0) s += 16; else s -= 12 * d;
+      if (tLen === 1 && len(w.term) !== 1) s -= 100;
       const wKanji = kanjiChars(w.term);
       const shared = wKanji.filter(k => tKanji.includes(k)).length;
-      s += 5 * shared;
+      s += 12 * shared;
       const aligned = Array.from(w.term).filter((c, i) => Array.from(t.term)[i] === c && isKanji(c)).length;
-      s += 2 * aligned;
+      s += 16 * aligned;
       let sim = 0;
-      for (const k of wKanji) for (const tk of tKanji) if (SOUND_MAP.get(tk)?.has(k) || SHAPE_MAP.get(tk)?.has(k)) sim++;
-      s += 3 * sim;
+      for (let i = 0; i < Math.min(len(w.term),tLen); i++) {
+        const a = Array.from(t.term)[i], b = Array.from(w.term)[i];
+        if (a !== b && isKanji(a) && isKanji(b)) sim += shapeSimilarity(a,b);
+      }
+      s += 2 * sim;
       if (okuriganaOf(w.term) === tOkuri) s += tOkuri ? 3 : 0.5; else if (tOkuri) s -= 3;
       s += 3 * dice(w.term, t.term) + commonPrefix(w.term, t.term) + commonSuffix(w.term, t.term);
       s += 3 * dice(w.reading, t.reading);                    // sounds similar too
@@ -253,13 +292,13 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
     const chars = Array.from(t.term);
     chars.forEach((c, i) => {
       if (!isKanji(c)) return;
-      const subs = new Set([...(SHAPE_MAP.get(c) || []), ...(SOUND_MAP.get(c) || [])]);
+      const subs = shapeCandidates(c);
       for (const p of subs) {
         const a = chars.slice(); a[i] = p;
         const cand = a.join('');
         if (cand === t.term) continue;
         const real = words.some(w => w.term === cand);
-        push(cand, 10 + (SHAPE_MAP.get(c)?.has(p) ? 1 : 0) + (real ? 1 : 0), 'swap');
+        push(cand, 16 + 28 * (tKanji.length - 1) + 2 * shapeSimilarity(c,p) + (real ? 2 : 0), 'shape');
       }
     });
   } else {
@@ -283,7 +322,7 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
   let synthetic = 0;
   for (const c of scored) {
     if (seen.has(c.value) || forbidden.has(c.value)) continue;
-    if (c.source !== 'word') { if (synthetic >= 2) continue; synthetic++; }
+    if (kind !== 'writing' && c.source !== 'word') { if (synthetic >= 2) continue; synthetic++; }
     seen.add(c.value);
     out.push(c.value);
     if (out.length >= count) break;

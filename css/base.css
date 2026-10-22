@@ -212,3 +212,8 @@ body.hide-furigana rt {
   color: var(--text);
   margin-bottom: 0.5rem;
 }
+
+/* Native Android tap highlights cover entire nested quiz cards. Keep feedback local. */
+*{-webkit-tap-highlight-color:transparent}
+button:active,.btn:active{filter:brightness(.9)}
+button:focus-visible,a:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--accent,#d4af6a);outline-offset:3px}
