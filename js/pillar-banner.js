@@ -137,15 +137,15 @@ function pillarData(p) {
   return { ...info, due: getDueItemsCount(p) };
 }
 
-function streakChip() {
+function streakChip(pillar = null) {
   let streak = 0, today = 0;
   try {
-    streak = getCurrentStreak();
+    streak = getCurrentStreak(undefined, pillar);
     const d = getDay(istDateKey(Date.now()));
-    today = (d.reviews || 0) + (d.newCards || 0);
+    today = pillar ? (d.pillars?.[pillar] || 0) : (d.reviews || 0) + (d.newCards || 0);
   } catch (e) { /* ignore */ }
   const hot = today > 0;
-  return `<span class="pb-streak ${hot ? 'hot' : ''}"><i class="fa-solid fa-fire"></i> ${streak} day streak${hot ? '' : streak > 0 ? ' · study today to keep it' : ''}</span>`;
+  return `<span class="pb-streak ${hot ? 'hot' : ''}"><i class="fa-solid fa-fire"></i> ${streak} day streak${hot || pillar ? '' : streak > 0 ? ' · study today to keep it' : ''}</span>`;
 }
 
 function bannerHtml(p, d, compact) {
@@ -153,19 +153,19 @@ function bannerHtml(p, d, compact) {
   const pct = c.total ? Math.round((c.mastered / c.total) * 100) : 0;
   const meta = PILLARS[p];
   const nextRow = d.nextLabel
-    ? `<div class="pb-next"><div><span class="pb-k">Next lesson</span><span class="pb-v">${d.nextLabel}</span></div>${compact ? '' : `<button class="pb-btn" onclick="window.__pbNext('${p}')">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></button>`}</div>`
+    ? `<div class="pb-next"><div><span class="pb-k">Next lesson</span><span class="pb-v">${d.nextLabel}</span></div>${compact || p === 'kanji' ? '' : `<button class="pb-btn" onclick="window.__pbNext('${p}')">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></button>`}</div>`
     : `<div class="pb-next"><div><span class="pb-k">Next lesson</span><span class="pb-v">Everything started - keep reviewing</span></div></div>`;
   return `
     <div class="pb-top">
-      ${compact ? `<span class="pb-title" style="color:${meta.color}">${meta.label}</span>` : streakChip()}
+      ${compact ? `<span class="pb-title" style="color:${meta.color}">${meta.label}</span>` : streakChip(p === 'kanji' ? 'kanji' : null)}
       <span class="pb-due ${d.due > 0 ? 'has' : ''}">${d.due > 0 ? d.due + ' due' : 'Caught up'}</span>
     </div>
     <div class="pb-stats">
       <span><b class="g">${c.mastered}</b> mastered</span><span><b class="a">${c.learning}</b> learning</span><span><b class="r">${c.hard}</b> hard</span><span><b class="m">${c.unseen}</b> new</span>
     </div>
-    <div class="pb-bar"><div style="width:${pct}%;background:${meta.color}"></div></div>
+    ${p === 'kanji' ? `<div class="pb-bar pb-segments" role="img" aria-label="${c.mastered} mastered, ${c.learning} learning, ${c.hard} hard, ${c.unseen} new">${[['mastered',c.mastered],['learning',c.learning],['hard',c.hard],['new',c.unseen]].filter(([,n]) => n > 0).map(([status,n]) => `<span class="pb-segment-${status}" style="width:${c.total ? n/c.total*100 : 0}%"></span>`).join('')}</div>` : `<div class="pb-bar"><div style="width:${pct}%;background:${meta.color}"></div></div>`}
     ${nextRow}
-    ${compact ? '' : `<div class="pb-actions"><button class="pb-btn ghost" ${d.due > 0 ? '' : 'disabled'} onclick="window.__pbDue('${p}')"><i class="fa-solid fa-bolt"></i> Review ${d.due} due</button></div>`}`;
+    ${compact ? '' : `<div class="pb-actions">${p === 'kanji' && d.nextLabel ? `<button class="pb-btn" onclick="window.__pbNext('kanji')">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></button>` : ''}<button class="pb-btn ghost" ${d.due > 0 ? '' : 'disabled'} onclick="window.__pbDue('${p}')"><i class="fa-solid fa-bolt"></i> Review ${d.due} due</button></div>`}`;
 }
 
 function injectStyle() {
@@ -190,6 +190,21 @@ function injectStyle() {
 .pb-overview{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin:0 0 1.25rem}
 .pb-overview .pb-card{margin:0;cursor:pointer}
 .pb-overview-head{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}
+#pb-kanji{gap:.65rem;padding:1rem;border-color:rgba(212,175,106,.2);background:linear-gradient(135deg,rgba(212,175,106,.045),transparent 65%),var(--bg-card,#141821)}
+#pb-kanji .pb-streak.hot{color:var(--accent,#d4af6a)}
+#pb-kanji .pb-due.has{background:var(--accent-light);color:var(--accent)}
+#pb-kanji .pb-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.35rem}
+#pb-kanji .pb-stats span{display:flex;flex-direction:column;gap:.12rem;font-size:.68rem}
+#pb-kanji .pb-stats b{font-size:1.05rem;line-height:1.2;margin:0;font-variant-numeric:tabular-nums}
+#pb-kanji .pb-stats .a{color:var(--accent)}
+#pb-kanji .pb-segments{display:flex;height:5px;gap:2px;background:transparent;margin:0 0 .1rem}
+#pb-kanji .pb-segments span{height:100%;flex-shrink:1}
+.pb-segment-mastered{background:#34d399}.pb-segment-learning{background:var(--accent,#d4af6a)}.pb-segment-hard{background:#f87171}.pb-segment-new{background:#424d61}
+#pb-kanji .pb-next{display:block;padding-top:.65rem}
+#pb-kanji .pb-v{font-size:.8rem;line-height:1.5;margin:.2rem 0 .6rem;color:var(--text)}
+#pb-kanji .pb-btn{min-height:42px;background:linear-gradient(135deg,#e6cb91,#c49c52);color:#171d2b;width:100%}
+#pb-kanji .pb-btn.ghost{background:transparent;border-color:rgba(212,175,106,.28);color:var(--accent)}
+#pb-kanji .pb-actions{margin-top:-.2rem}#pb-kanji .pb-actions .pb-btn{flex:1;min-width:0;width:auto;padding:.5rem .45rem;font-size:.74rem}
 @media(min-width:900px){.pb-overview{grid-template-columns:repeat(4,1fr)}}
 `;
   document.head.appendChild(s);
@@ -217,6 +232,10 @@ export function renderPillarBanners() {
       else view.prepend(el);
     }
     el.innerHTML = bannerHtml(p, dataByP[p], false);
+    if (p === 'kanji') {
+      const picker = view.querySelector('.home-lessons-card');
+      if (picker && picker.nextElementSibling !== el) picker.after(el);
+    }
   });
 
   // Landing overview

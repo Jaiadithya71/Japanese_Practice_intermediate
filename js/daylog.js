@@ -225,9 +225,11 @@ export function logActivity(options = {}) {
  * Counts consecutive active days (days with reviews > 0 or newCards > 0) ending today or yesterday.
  *
  * @param {string|number|Date} [referenceDate] - Optional reference date (defaults to today IST)
+ * @param {string|null} [pillar] - Optional subject filter; uses the same IST day boundaries.
  * @returns {number} Consecutive active streak count
  */
-export function getCurrentStreak(referenceDate) {
+export function getCurrentStreak(referenceDate, pillar = null) {
+  const active = day => pillar ? (day.pillars?.[pillar] || 0) > 0 : (day.reviews > 0 || day.newCards > 0);
   const refStart = istDayStart(referenceDate || Date.now());
   const todayKey = istDateKey(refStart);
   const yesterdayKey = istDateKey(refStart - 86400000);
@@ -235,8 +237,8 @@ export function getCurrentStreak(referenceDate) {
   const todayLog = getDay(todayKey);
   const yesterdayLog = getDay(yesterdayKey);
 
-  const isTodayActive = (todayLog.reviews > 0 || todayLog.newCards > 0);
-  const isYesterdayActive = (yesterdayLog.reviews > 0 || yesterdayLog.newCards > 0);
+  const isTodayActive = active(todayLog);
+  const isYesterdayActive = active(yesterdayLog);
 
   let startMs;
   if (isTodayActive) {
@@ -252,7 +254,7 @@ export function getCurrentStreak(referenceDate) {
   for (let i = 0; i < 400; i++) {
     const key = istDateKey(currMs);
     const day = getDay(key);
-    if (day.reviews > 0 || day.newCards > 0) {
+    if (active(day)) {
       streak++;
       currMs -= 86400000;
     } else {

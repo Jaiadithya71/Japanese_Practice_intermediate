@@ -39,6 +39,7 @@ export const state = {
   kanjiPart: 'all',         // 'all' | 1 | 2 | 3 | 4 | 5
   kanjiLesson: 'all',       // 'all' | 1 .. 25
   kanjiSelectedLessons: new Set(),
+  kanjiSelectionEmpty: true, // None until a lesson or Select All is chosen.
   kanjiRunQueue: [],        // Batched kanji run: remaining cards
   kanjiRunBatchSize: 'all', // 'all' | '10' | '20' | '50'
   kanjiRunBatchRun: false,
