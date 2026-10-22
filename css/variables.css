@@ -4,18 +4,18 @@
    ============================================= */
 
 :root {
-  --bg:           #0d0f14;
-  --bg2:          #13161d;
-  --bg3:          #191d27;
+  --bg:           #0b0e17;
+  --bg2:          #111623;
+  --bg3:          #171c2b;
   --surface:      rgba(255, 255, 255, 0.04);
   --surface-hover:rgba(255, 255, 255, 0.07);
   --border:       rgba(255, 255, 255, 0.08);
   --border-strong:rgba(255, 255, 255, 0.15);
 
   /* Brand Colors matching 4Q/5Q Trainer */
-  --accent:       #7c6cfa; /* Signature Trainer Violet */
-  --accent-light: rgba(124, 108, 250, 0.15);
-  --accent-glow:  rgba(124, 108, 250, 0.35);
+  --accent:       #d4af6a; /* Signature Trainer Violet */
+  --accent-light: rgba(212,175,106, 0.15);
+  --accent-glow:  rgba(212,175,106, 0.35);
   --green:        #22d3a4;
   --green-light:  rgba(34, 211, 164, 0.12);
   --red:          #f95c5c;
@@ -37,7 +37,7 @@
 
   /* Layout */
   --sidebar-w:    220px;
-  --sidebar-bg:   #0a0c11;
+  --sidebar-bg:   #080a12;
   --card-radius:  16px;
 }
 

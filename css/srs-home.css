@@ -9,7 +9,7 @@
 .learn-badge{display:inline-block;font-size:.65rem;font-weight:800;letter-spacing:.08em;color:#22d3a4;border:1px solid rgba(34,211,164,.4);border-radius:999px;padding:.15rem .6rem;margin-bottom:.5rem}
 .learn-gotit{min-height:48px;padding:0 1.6rem;font-size:1rem;margin-top:.4rem}
 @media (min-width:901px){
-  #today-card{display:block!important;background:linear-gradient(145deg,rgba(124,108,250,.14),rgba(124,108,250,.04));border:1px solid rgba(124,108,250,.3);border-radius:20px;padding:1.5rem;margin-bottom:2rem;max-width:760px}
+  #today-card{display:block!important;background:linear-gradient(145deg,rgba(212,175,106,.14),rgba(212,175,106,.04));border:1px solid rgba(212,175,106,.3);border-radius:20px;padding:1.5rem;margin-bottom:2rem;max-width:760px}
 }
 
 /* Keep Skip physically separate from the tappable flashcard surface. */
