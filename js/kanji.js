@@ -1171,7 +1171,7 @@ export function startKanjiExamPractice() {
       return {
         id: `kanji-exam-${direction}-${it.word}`, category: 'kanji', chapter: it.lesson_number,
         type: 'multiple_choice', key: facet + it.word,
-        question: `${direction === 'kana-ja' ? 'Writing · Choose the kanji' : 'Reading · Choose the reading'}<br><br><span style="font-size:2.4rem;line-height:1.4">${direction === 'kana-ja' ? it.reading : it.word}</span>`,
+        question: `${direction === 'kana-ja' ? 'Writing · Choose the kanji' : 'Reading · Choose the reading'}<br><br><span style="font-size:2.4rem;line-height:1.4">${direction === 'kana-ja' ? it.reading : it.word}</span>${it.meaning_en ? `<div class="kq-meaning-hint" style="margin:.6rem 0 0">${esc(it.meaning_en)}</div>` : ''}`,
         options, correct: options.indexOf(correct) + 1, correctAnswerText: correct,
         explanation: `${it.word} (${it.reading})${it.meaning_en ? ' · ' + it.meaning_en : ''}`
       };
