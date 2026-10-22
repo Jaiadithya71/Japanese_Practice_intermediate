@@ -248,15 +248,15 @@
 .home-run-settings{display:flex;gap:1rem;flex-wrap:wrap;margin:.75rem 0}.home-run-setting{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;color:var(--text-muted);font-size:.75rem}.home-option-group{display:flex;gap:.22rem;padding:.18rem;border:1px solid var(--border);border-radius:999px}.home-option{padding:.35rem .55rem;border:0;border-radius:999px;background:transparent;color:var(--text-dim);font-size:.7rem;font-weight:700;white-space:nowrap}.home-option.active{background:var(--accent);color:#fff}.home-start-selected{width:100%;margin-top:.85rem;min-height:46px}
 @media(max-width:600px){.home-status-strip{gap:.45rem}.home-status-brand{flex:1}.home-status-saved{order:3;width:100%;font-size:.7rem}.home-activity-card,.home-lessons-card{padding:.8rem}.home-activity-heatmap .heatmap-grid-inner{min-width:0}.home-activity-heatmap .heatmap-cell{min-width:0}.home-lessons-head{align-items:flex-start}.home-run-settings{gap:.5rem}.home-run-setting{width:100%;justify-content:space-between}.home-lesson-actions{flex-shrink:0}}
 
-.home-heatmap-legend{display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:.3rem;color:var(--text-dim);font-size:.65rem}.home-heatmap-legend .heatmap-cell{width:11px;height:11px;min-height:11px}/* Home Study-activity ramp: 9 steps (0, 1-49, 50-99, 100-149, 150-199, 200-299, 300-399, 400-499, 500+); teal builds to lime at the 500/day goal. Scoped to beat today.css globals. */
-.home-activity-heatmap .heatmap-cell.level-1,.home-heatmap-legend .heatmap-cell.level-1{background:rgba(34,211,164,.15)}
-.home-activity-heatmap .heatmap-cell.level-2,.home-heatmap-legend .heatmap-cell.level-2{background:rgba(34,211,164,.28)}
-.home-activity-heatmap .heatmap-cell.level-3,.home-heatmap-legend .heatmap-cell.level-3{background:rgba(34,211,164,.42)}
-.home-activity-heatmap .heatmap-cell.level-4,.home-heatmap-legend .heatmap-cell.level-4{background:rgba(34,211,164,.56)}
-.home-activity-heatmap .heatmap-cell.level-5,.home-heatmap-legend .heatmap-cell.level-5{background:rgba(34,211,164,.70)}
-.home-activity-heatmap .heatmap-cell.level-6,.home-heatmap-legend .heatmap-cell.level-6{background:rgba(34,211,164,.85)}
-.home-activity-heatmap .heatmap-cell.level-7,.home-heatmap-legend .heatmap-cell.level-7{background:#22d3a4}
-.home-activity-heatmap .heatmap-cell.level-8,.home-heatmap-legend .heatmap-cell.level-8{background:#a3e635;box-shadow:0 0 7px rgba(163,230,53,.55)}
+.home-heatmap-legend{display:flex;align-items:center;justify-content:flex-end;gap:4px;margin-top:.3rem;color:var(--text-dim);font-size:.65rem}.home-heatmap-legend .heatmap-cell{width:11px;height:11px;min-height:11px}/* Home Study-activity ramp: 9 steps (0, 1-49, 50-99, 100-149, 150-199, 200-299, 300-399, 400-499, 500+); solid teal-to-lime steps for clear phone contrast; lime glow = 500/day goal. Scoped to beat today.css globals. */
+.home-activity-heatmap .heatmap-cell.level-1,.home-heatmap-legend .heatmap-cell.level-1{background:#0c3b32}
+.home-activity-heatmap .heatmap-cell.level-2,.home-heatmap-legend .heatmap-cell.level-2{background:#125e4a}
+.home-activity-heatmap .heatmap-cell.level-3,.home-heatmap-legend .heatmap-cell.level-3{background:#178262}
+.home-activity-heatmap .heatmap-cell.level-4,.home-heatmap-legend .heatmap-cell.level-4{background:#1ba774}
+.home-activity-heatmap .heatmap-cell.level-5,.home-heatmap-legend .heatmap-cell.level-5{background:#1dd37e}
+.home-activity-heatmap .heatmap-cell.level-6,.home-heatmap-legend .heatmap-cell.level-6{background:#2de15a}
+.home-activity-heatmap .heatmap-cell.level-7,.home-heatmap-legend .heatmap-cell.level-7{background:#62e740}
+.home-activity-heatmap .heatmap-cell.level-8,.home-heatmap-legend .heatmap-cell.level-8{background:#abf33f;box-shadow:0 0 7px rgba(163,230,53,.55)}
 @media(max-width:600px){.home-activity-heatmap .heatmap-weekdays,.home-activity-heatmap .heatmap-cells-grid{grid-template-columns:repeat(7,18px);justify-content:start;gap:4px}.home-activity-heatmap .heatmap-cell{width:18px;height:18px;min-height:0;aspect-ratio:1}}
 @media(max-width:600px){#home-activity-heatmap .heatmap-weekdays,#home-activity-heatmap .heatmap-cells-grid{display:grid!important;grid-template-columns:repeat(7,18px)!important;justify-content:start!important;gap:4px!important}#home-activity-heatmap .heatmap-cell{width:18px!important;height:18px!important;min-height:0!important;aspect-ratio:1!important}}
 .home-status-strip .home-status-sync{cursor:default;pointer-events:none}
