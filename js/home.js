@@ -270,11 +270,11 @@ export function renderHomeActivity() {
   const byDate = new Map(getHeatmap30().map(day => [day.date, day]));
   const reviewsOnly = Array.from(byDate.values(), day => {
     const reviews = getDay(day.date).reviews;
-    return { date: day.date, count: reviews, level: reviews <= 0 ? 0 : reviews < 10 ? 1 : reviews < 50 ? 2 : reviews < 200 ? 3 : reviews < 500 ? 4 : 5 };
+    return { date: day.date, count: reviews, level: reviews <= 0 ? 0 : reviews < 50 ? 1 : reviews < 150 ? 2 : reviews < 300 ? 3 : reviews < 500 ? 4 : 5 };
   });
   // Reuse the existing 30-day layout while preserving this card's reviews-only scale.
   const html = renderHeatmapGridHtml(reviewsOnly).replace(/: (\d+) items/g, ': $1 reviews');
-  grid.innerHTML = html + `<div class="home-heatmap-legend"><span>0</span><i class="heatmap-cell level-0"></i><i class="heatmap-cell level-1"></i><i class="heatmap-cell level-2"></i><i class="heatmap-cell level-3"></i><i class="heatmap-cell level-4"></i><i class="heatmap-cell level-5"></i><span>500+</span></div>`;
+  grid.innerHTML = html + `<div class="home-heatmap-legend"><span>0</span><i class="heatmap-cell level-0" title="0 reviews"></i><i class="heatmap-cell level-1" title="1-49 reviews"></i><i class="heatmap-cell level-2" title="50-149 reviews"></i><i class="heatmap-cell level-3" title="150-299 reviews"></i><i class="heatmap-cell level-4" title="300-499 reviews"></i><i class="heatmap-cell level-5" title="500+ reviews"></i><span>500+</span></div>`;
   const detail = document.getElementById('home-activity-detail');
   grid.querySelectorAll('.heatmap-cell[data-date]').forEach(cell => {
     const button = document.createElement('button');
