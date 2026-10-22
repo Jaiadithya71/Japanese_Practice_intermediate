@@ -270,11 +270,12 @@ export function renderHomeActivity() {
   const byDate = new Map(getHeatmap30().map(day => [day.date, day]));
   const reviewsOnly = Array.from(byDate.values(), day => {
     const reviews = getDay(day.date).reviews;
-    return { date: day.date, count: reviews, level: reviews <= 0 ? 0 : reviews < 50 ? 1 : reviews < 150 ? 2 : reviews < 300 ? 3 : reviews < 500 ? 4 : 5 };
+    const level = reviews <= 0 ? 0 : reviews < 50 ? 1 : reviews < 100 ? 2 : reviews < 150 ? 3 : reviews < 200 ? 4 : reviews < 300 ? 5 : reviews < 400 ? 6 : reviews < 500 ? 7 : 8;
+    return { date: day.date, count: reviews, level };
   });
   // Reuse the existing 30-day layout while preserving this card's reviews-only scale.
   const html = renderHeatmapGridHtml(reviewsOnly).replace(/: (\d+) items/g, ': $1 reviews');
-  grid.innerHTML = html + `<div class="home-heatmap-legend"><span>0</span><i class="heatmap-cell level-0" title="0 reviews"></i><i class="heatmap-cell level-1" title="1-49 reviews"></i><i class="heatmap-cell level-2" title="50-149 reviews"></i><i class="heatmap-cell level-3" title="150-299 reviews"></i><i class="heatmap-cell level-4" title="300-499 reviews"></i><i class="heatmap-cell level-5" title="500+ reviews"></i><span>500+</span></div>`;
+  grid.innerHTML = html + `<div class="home-heatmap-legend"><span>0</span><i class="heatmap-cell level-0" title="0 reviews"></i><i class="heatmap-cell level-1" title="1-49 reviews"></i><i class="heatmap-cell level-2" title="50-99 reviews"></i><i class="heatmap-cell level-3" title="100-149 reviews"></i><i class="heatmap-cell level-4" title="150-199 reviews"></i><i class="heatmap-cell level-5" title="200-299 reviews"></i><i class="heatmap-cell level-6" title="300-399 reviews"></i><i class="heatmap-cell level-7" title="400-499 reviews"></i><i class="heatmap-cell level-8" title="500+ reviews"></i><span>500+</span></div>`;
   const detail = document.getElementById('home-activity-detail');
   grid.querySelectorAll('.heatmap-cell[data-date]').forEach(cell => {
     const button = document.createElement('button');
