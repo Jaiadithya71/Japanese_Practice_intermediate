@@ -248,7 +248,7 @@ export function renderCard() {
   if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') state.cardFlipped = true;
   renderCardContent();
   renderVocabularyKanjiBreakdown(state.sessionItems[state.sessionIdx], state.cardFlipped);
-  const learning = reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz';
+  const learning = reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz' && state.sessionIdx < state.sessionItems.length;
   let topAction = document.getElementById('study-learn-action');
   const actionRow = document.getElementById('study-card-container');
   if (!topAction && actionRow) {
@@ -865,6 +865,12 @@ function renderStudySummary() {
   );
   if (answered > 0 && hasKanjiOrVocab) celebrateStudyCompletion();
 
+  // The header score chip lags the final grade - refresh it on the end screen.
+  const chipCorrect = document.getElementById('session-correct');
+  const chipTotal = document.getElementById('session-total');
+  if (chipCorrect) chipCorrect.textContent = correct;
+  if (chipTotal) chipTotal.textContent = answered;
+
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'none';
   const again = state.studyMode === 'kanji_quiz'
@@ -885,18 +891,29 @@ function renderStudySummary() {
       ? 'Learn more words'
       : (state.drillOrigin === 'kanji' ? 'Drill Again' : 'Review Again');
 
-  const summaryIcon = pct >= 90 ? 'fa-trophy' : pct >= 70 ? 'fa-award' : pct >= 50 ? 'fa-circle-check' : 'fa-book-open';
-  const summaryTitle = pct >= 90 ? 'Excellent!' : pct >= 70 ? 'Well done!' : pct >= 50 ? 'Keep going!' : 'Keep practising!';
-  container.innerHTML = `
-    <div class="study-summary-card">
-      <i class="fa-solid ${summaryIcon} summary-trophy"></i>
-      <h2>${summaryTitle}</h2>
+  // A session with no graded cards (Learn-mode browsing) is not a test:
+  // skip the accuracy framing and report what was actually viewed.
+  const browsedOnly = answered === 0;
+  const summaryIcon = browsedOnly ? 'fa-circle-check'
+    : pct >= 90 ? 'fa-trophy' : pct >= 70 ? 'fa-award' : pct >= 50 ? 'fa-circle-check' : 'fa-book-open';
+  const summaryTitle = browsedOnly ? 'All cards viewed!'
+    : pct >= 90 ? 'Excellent!' : pct >= 70 ? 'Well done!' : pct >= 50 ? 'Keep going!' : 'Keep practising!';
+  const scoreRing = browsedOnly ? '' : `
       <div class="summary-score-ring">
         <span class="summary-ring-pct">${pct}%</span>
         <span class="summary-ring-label">accuracy</span>
+      </div>`;
+  const summaryLine = browsedOnly
+    ? `You viewed all ${initialTotal} items. Nothing was graded, so your scores are unchanged.`
+    : `You completed all ${initialTotal} items (${answered} reviews total).`;
+  const statsRow = browsedOnly ? `
+      <div class="summary-stats-row">
+        <div class="summary-stat-box">
+          <span class="summary-stat-val" style="color: var(--green);">${initialTotal}</span>
+          <span style="font-size: 0.8rem; color: var(--text-dim);">Cards viewed</span>
+        </div>
       </div>
-      <p style="color: var(--text-muted); margin: 0;">You completed all ${initialTotal} items (${answered} reviews total).</p>
-
+` : `
       <div class="summary-stats-row">
         <div class="summary-stat-box">
           <span class="summary-stat-val" style="color: var(--green);">${correct}</span>
@@ -911,6 +928,13 @@ function renderStudySummary() {
           <span style="font-size: 0.8rem; color: var(--text-dim);">Reviews</span>
         </div>
       </div>
+`;
+  container.innerHTML = `
+    <div class="study-summary-card">
+      <i class="fa-solid ${summaryIcon} summary-trophy"></i>
+      <h2>${summaryTitle}</h2>${scoreRing}
+      <p style="color: var(--text-muted); margin: 0;">${summaryLine}</p>
+${statsRow}
 
       <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap:wrap; justify-content:center;">
         ${nextBatchButton}
