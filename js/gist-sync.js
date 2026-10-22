@@ -72,7 +72,7 @@ function setStatus(kind, text) {
   }
   if (label) label.textContent = text;
   // The mobile Today header mirrors the desktop pill so connectivity is visible at a glance.
-  const mobileIndicators = ['n3sync-mobile'].map(id => document.getElementById(id)).filter(Boolean);
+  const mobileIndicators = ['n3sync-mobile', 'n3sync-kanji'].map(id => document.getElementById(id)).filter(Boolean);
   for (const mobile of mobileIndicators) {
     mobile.classList.remove('n3s-idle', 'n3s-saving', 'n3s-ok', 'n3s-error', 'n3s-pending');
     mobile.classList.add(`n3s-${kind}`);

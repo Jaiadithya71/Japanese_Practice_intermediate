@@ -18,8 +18,8 @@ import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
 import { pickDistractors } from './distractors.js';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
-import { getDay, getHeatmap30 } from './daylog.js';
-import { istDateKey, istDayStart } from './time.js';
+import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
+import { istDateKey } from './time.js';
 import { renderHeatmapGridHtml } from './today.js';
 import { renderActivityDayHtml } from './activity-detail.js';
 import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
@@ -575,20 +575,7 @@ export function renderKanjiActivity() {
   if (detail) { detail.hidden = false; detail.innerHTML = renderActivityDayHtml(kanjiDay(istDateKey())); }
   const hint = document.getElementById('kanji-activity-hint');
   if (hint) hint.hidden = false;
-  // Kanji-only streak: consecutive active days (today or yesterday anchored), like the home streak
-  const active = key => (getDay(key).pillars.kanji || 0) > 0;
-  const refStart = istDayStart(Date.now());
-  let startMs = null;
-  if (active(istDateKey(refStart))) startMs = refStart;
-  else if (active(istDateKey(refStart - 86400000))) startMs = refStart - 86400000;
-  let streak = 0;
-  if (startMs !== null) {
-    let curr = startMs;
-    for (let i = 0; i < 400; i++) {
-      if (active(istDateKey(curr))) { streak++; curr -= 86400000; }
-      else break;
-    }
-  }
+  const streak = getCurrentStreak(undefined, 'kanji');
   const streakEl = document.getElementById('kanji-review-streak');
   const todayEl = document.getElementById('kanji-reviews-today');
   if (streakEl) streakEl.textContent = streak;
@@ -628,7 +615,7 @@ export function updateKanjiActionButtonLabels() {
   const lessonCount = state.kanjiSelectionEmpty ? 0 : selLessons.size || 25;
   const summary = document.getElementById('kanji-picker-summary');
   if (summary) summary.textContent = state.kanjiSelectionEmpty
-    ? '0 lessons selected'
+    ? 'Choose a lesson to begin'
     : `${lessonCount} ${lessonCount === 1 ? 'lesson' : 'lessons'} selected · ${pool.length} kanji · ${wordsCount} cards${state.kanjiHardOnly ? ' · hard only' : ''}`;
   const meta = document.getElementById('kanji-picker-heading-meta');
   if (meta) meta.textContent = `25 lessons · ${Object.keys(state.kanjiDB || {}).length} kanji`;
