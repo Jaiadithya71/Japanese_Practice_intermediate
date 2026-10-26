@@ -451,6 +451,10 @@ export function getDueItemsCount(pillar = 'all', chapterFilter = null) {
     const s = state.stats[key];
     if (!s || !s.nextDue || s.nextDue > now) continue;
 
+    // KWM (Kanji -> English) is no longer served in review; keep the count in
+    // step with getAllDueItems so "N due" matches the cards actually shown.
+    if (key.startsWith('KWM:')) continue;
+
     const itemPillar = getPillarFromKey(key);
     if (pillar !== 'all' && pillar !== itemPillar) continue;
 
@@ -725,6 +729,11 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null)
     const s = state.stats[key];
     if (!s || !s.nextDue || s.nextDue > now) continue;
 
+    // Kanji -> English (KWM) is no longer a study direction (user ask
+    // 2026-10-26: keep only kana <-> kanji, matching the Quick Quiz picker).
+    // The stats records are kept untouched; the facet is just not served.
+    if (key.startsWith('KWM:')) continue;
+
     const itemPillar = getPillarFromKey(key);
     if (pillar !== 'all' && pillar !== itemPillar) continue;
 
@@ -749,8 +758,18 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null)
   // 1. Priority sort
   pool.sort((a, b) => compareDueCandidates(a, b, now, catchUp));
 
-  // 2. Interleave facets (never more than 3 consecutive)
-  const interleaved = interleaveQueue(pool, 3);
+  // 2. Kanji-only review runs as two separate sub-sections, matching the Quick
+  //    Quiz "Mixed" order (user ask 2026-10-26): kana -> kanji (writing) cards
+  //    first, then kanji -> kana (reading). Each section keeps the due-priority
+  //    order within itself; cards are not shuffled so the SRS backlog order is
+  //    preserved. Mixed-pillar review keeps the facet interleave.
+  const interleaved = pillar === 'kanji'
+    ? [
+        ...pool.filter(i => i.facet === 'KWW'),
+        ...pool.filter(i => i.facet === 'KWR'),
+        ...pool.filter(i => i.facet !== 'KWW' && i.facet !== 'KWR')
+      ]
+    : interleaveQueue(pool, 3);
 
   // 3. Batch sizing & Catch-up mode per-session cap (40 cards)
   if (limit === 'all') {
