@@ -21,8 +21,8 @@ import {
   selectExerciseOption, checkExerciseInput, drillExerciseItem, checkMockOption,
   setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected,
   startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
-  nextKanjiQuizCard, toggleKanjiAutoNext
-} from './kanji.js?v=3.0';
+  nextKanjiQuizCard, prevKanjiQuizCard, toggleKanjiAutoNext
+} from './kanji.js?v=3.1';
 import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
@@ -128,6 +128,7 @@ window.startKanjiQuickQuiz = startKanjiQuickQuiz;
 window.renderKanjiQuizCard = renderKanjiQuizCard;
 window.answerKanjiQuizOption = answerKanjiQuizOption;
 window.nextKanjiQuizCard = nextKanjiQuizCard;
+window.prevKanjiQuizCard = prevKanjiQuizCard;
 window.toggleKanjiAutoNext = toggleKanjiAutoNext;
 window.startKanjiRunner = startKanjiRunner;
 window.startKanjiLessonRunner = () => {

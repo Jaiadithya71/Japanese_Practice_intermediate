@@ -1113,6 +1113,10 @@ export function checkMockOption(itemId, selectedIdx, correctAns, explanation) {
 // =======================================================
 
 
+// Quick Quiz auto-next delay after a correct answer. 2026-10-26: user asked for
+// quick advance (was 2600ms, felt too long); 700ms leaves a readable green flash.
+const KANJI_QUIZ_AUTO_NEXT_MS = 700;
+
 export function toggleKanjiAutoNext(checked) {
   state.kanjiAutoNext = Boolean(checked);
   try { localStorage.setItem('n3_kanji_auto_next', checked ? 'true' : 'false'); } catch (e) {}
@@ -1291,12 +1295,28 @@ export function renderKanjiQuizCard(item) {
       </div>`;
   }
 
-  const optsHtml = item.options.values.map((v, i) => `
-    <button class="kanji-quiz-opt" data-idx="${i}" onclick="event.stopPropagation(); answerKanjiQuizOption(${i})"
-      style="padding: 0.7rem 1rem; border-radius: 10px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: #fff; font-size: 1.05rem; cursor: pointer; text-align: left; width: 100%; ${dir === 'ja-meaning' ? '' : 'font-family: var(--font-jp);'}">
+  // Re-rendered answered cards (Previous review) show the recorded outcome:
+  // correct option in green, the chosen option in red when it was a miss. No
+  // SRS writes happen here - answering is still the only writer.
+  const optsHtml = item.options.values.map((v, i) => {
+    let extra = '';
+    let dis = '';
+    if (item.answered) {
+      dis = ' disabled';
+      if (v === item.options.correctValue) {
+        extra = ' border-color: var(--green); background: rgba(34, 197, 94, 0.18); cursor: default;';
+      } else if (v === item.chosenValue) {
+        extra = ' border-color: var(--red); background: rgba(239, 68, 68, 0.18); cursor: default;';
+      } else {
+        extra = ' cursor: default;';
+      }
+    }
+    return `
+    <button class="kanji-quiz-opt" data-idx="${i}" onclick="event.stopPropagation(); answerKanjiQuizOption(${i})"${dis}
+      style="padding: 0.7rem 1rem; border-radius: 10px; border: 1px solid var(--border); background: rgba(255,255,255,0.05); color: #fff; font-size: 1.05rem; cursor: pointer; text-align: left; width: 100%; ${dir === 'ja-meaning' ? '' : 'font-family: var(--font-jp);'}${extra}">
       <strong style="color: var(--text-dim); margin-right: 0.5rem;">${i + 1}.</strong>${v}
-    </button>
-  `).join('');
+    </button>`;
+  }).join('');
 
   meaningEl.innerHTML = `
     <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; width: 100%; max-width: 420px; margin-left: auto; margin-right: auto;">
@@ -1312,15 +1332,35 @@ export function renderKanjiQuizCard(item) {
           <input type="checkbox" id="kq-toggle-auto-next" ${isKanjiAutoNextOn() ? 'checked' : ''} onchange="toggleKanjiAutoNext(this.checked)" style="cursor: pointer;">
           <span><i class="fa-solid fa-bolt"></i> Auto-next on correct</span>
         </label>
-        <button class="btn btn-primary btn-sm" id="kq-btn-next" onclick="event.stopPropagation(); nextKanjiQuizCard()" style="visibility: hidden;">
-          Next <i class="fa-solid fa-chevron-right"></i>
-        </button>
+        <span style="display: inline-flex; gap: 0.4rem;">
+          <button class="btn btn-ghost btn-sm" id="kq-btn-prev" onclick="event.stopPropagation(); prevKanjiQuizCard()" style="visibility: ${state.sessionIdx > 0 ? 'visible' : 'hidden'};" title="Review the previous answer (does not change score)">
+            <i class="fa-solid fa-chevron-left"></i> Previous
+          </button>
+          <button class="btn btn-primary btn-sm" id="kq-btn-next" onclick="event.stopPropagation(); nextKanjiQuizCard()" style="visibility: ${item.answered ? 'visible' : 'hidden'};">
+            Next <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </span>
       </div>`;
   }
+
+  if (item.answered && item.chosenValue != null) mountKanjiQuizReview(item);
 }
 
 
 function esc(t) { return String(t == null ? '' : t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+
+// Mounts the post-answer review panel for an answered quiz card. Used both right
+// after answering and when an answered card is re-rendered via Previous.
+function mountKanjiQuizReview(item) {
+  const isCorrect = item.chosenValue === item.options.correctValue;
+  const review = document.createElement('div');
+  review.className = 'kanji-quiz-wrong-review';
+  review.style.cssText = 'margin-top:0.7rem;padding:0.6rem 0.7rem;border:1px solid ' + (isCorrect ? 'rgba(34,197,94,.35)' : 'rgba(239,68,68,.35)') + ';border-radius:12px;background:' + (isCorrect ? 'rgba(34,197,94,.08)' : 'rgba(239,68,68,.08)') + ';text-align:left;font-size:.8rem;line-height:1.35;';
+  review.innerHTML = buildKanjiQuizReviewHtml(item, item.chosenValue);
+  review.addEventListener('click', e => e.stopPropagation());
+  const meaningEl = document.getElementById('card-meaning');
+  if (meaningEl) meaningEl.appendChild(review);
+}
 
 // Compact, self-contained explanation shown after a wrong answer
 function buildKanjiQuizReviewHtml(item, chosen, universeOverride) {
@@ -1382,6 +1422,7 @@ export function answerKanjiQuizOption(idx) {
 
   const chosen = item.options.values[idx];
   const isCorrect = chosen === item.options.correctValue;
+  item.chosenValue = chosen;
 
   // Facet-split SRS: write to the same key the flashcard drill uses
   updateItemStats(item.key, isCorrect ? 3 : 1);
@@ -1405,15 +1446,7 @@ export function answerKanjiQuizOption(idx) {
     btn.style.cursor = 'default';
   });
 
-  {
-    const review = document.createElement('div');
-    review.className = 'kanji-quiz-wrong-review';
-    review.style.cssText = 'margin-top:0.7rem;padding:0.6rem 0.7rem;border:1px solid ' + (isCorrect ? 'rgba(34,197,94,.35)' : 'rgba(239,68,68,.35)') + ';border-radius:12px;background:' + (isCorrect ? 'rgba(34,197,94,.08)' : 'rgba(239,68,68,.08)') + ';text-align:left;font-size:.8rem;line-height:1.35;';
-    review.innerHTML = buildKanjiQuizReviewHtml(item, chosen);
-    review.addEventListener('click', e => e.stopPropagation());
-    const meaningEl = document.getElementById('card-meaning');
-    if (meaningEl) meaningEl.appendChild(review);
-  }
+  mountKanjiQuizReview(item);
 
   const correctEl = document.getElementById('session-correct');
   const totalEl = document.getElementById('session-total');
@@ -1428,11 +1461,25 @@ export function answerKanjiQuizOption(idx) {
 
   if (isCorrect && isKanjiAutoNextOn()) {
     if (state._kanjiQuizTimer) clearTimeout(state._kanjiQuizTimer);
-    state._kanjiQuizTimer = setTimeout(() => nextKanjiQuizCard(), 2600);
+    state._kanjiQuizTimer = setTimeout(() => nextKanjiQuizCard(), KANJI_QUIZ_AUTO_NEXT_MS);
   } else {
     const nextBtn = document.getElementById('kq-btn-next');
     if (nextBtn) nextBtn.style.visibility = 'visible';
   }
+}
+
+// Previous = pure review navigation: no grading, no SRS writes, no score change.
+// The re-rendered answered card shows the chosen option and the correct one.
+export function prevKanjiQuizCard() {
+  if (state.studyMode !== 'kanji_quiz') return;
+  if (state.sessionIdx <= 0) return;
+  if (state._kanjiQuizTimer) {
+    clearTimeout(state._kanjiQuizTimer);
+    state._kanjiQuizTimer = null;
+  }
+  state.sessionIdx--;
+  state.cardFlipped = false;
+  renderCard();
 }
 
 export function nextKanjiQuizCard() {
