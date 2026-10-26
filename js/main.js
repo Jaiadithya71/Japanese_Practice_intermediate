@@ -174,6 +174,8 @@ window.addEventListener('keydown', (e) => {
 });
 
 // App Initialization
+window.__n3CurrentView = () => state.currentView;
+
 async function initApp() {
   console.log('Initializing Nihongo Intermediate 5-Pillar Suite...');
   loadStats();
@@ -196,7 +198,22 @@ async function initApp() {
   }
 
   updateSidebarStats();
-  showView('home');
+  // Keep the current tab across any reload (pull-to-refresh, browser refresh); fresh opens start at Home.
+  let restore = null;
+  try {
+    const nav = performance.getEntriesByType('navigation')[0];
+    const last = sessionStorage.getItem('n3_last_view');
+    const scroll = parseInt(sessionStorage.getItem('n3_ptr_scroll') || '0', 10);
+    sessionStorage.removeItem('n3_ptr_scroll');
+    if (nav && nav.type === 'reload' && last) restore = { view: last, scroll };
+  } catch (e) { restore = null; }
+  if (restore && document.getElementById('view-' + restore.view)) {
+    showView(restore.view);
+    const m = document.getElementById('main');
+    if (m && restore.scroll) requestAnimationFrame(() => { m.scrollTop = restore.scroll; });
+  } else {
+    showView('home');
+  }
   initSyncUI();
   console.log('Nihongo Intermediate initialized successfully.');
 }

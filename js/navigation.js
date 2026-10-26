@@ -152,6 +152,9 @@ function updateMeStats() {
  */
 export function showView(viewId) {
   state.currentView = viewId;
+  try {
+    if (viewId !== 'study') sessionStorage.setItem('n3_last_view', viewId);
+  } catch (e) { /* storage unavailable */ }
 
   // Full-screen study runner mode: toggle .in-runner class on body
   if (viewId === 'study') {

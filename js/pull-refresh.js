@@ -64,6 +64,10 @@ async function end() {
       el.querySelector('span').textContent = 'Synced';
       await new Promise(r => setTimeout(r, 650));
     }
+    try {
+      const m = document.getElementById('main');
+      sessionStorage.setItem('n3_ptr_scroll', String(m ? m.scrollTop : 0));
+    } catch (e) { /* ignore */ }
     location.reload();
   } else {
     el.classList.remove('show', 'ready');
