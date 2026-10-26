@@ -1147,6 +1147,23 @@ function buildKanjiQuizOptions(item, allItems) {
   return { values, correctValue: correct };
 }
 
+// A retry attempt gets a new option order so the answer, not its position, is
+// what gets memorized (user ask 2026-10-26). Re-shuffles until the order
+// actually differs from the previous attempt's; the correct answer's identity
+// never changes. The original answered card keeps its own order for an
+// accurate Previous review.
+function reshuffleKanjiQuizOptions(options) {
+  const values = options.values.slice();
+  let guard = 0;
+  do {
+    for (let i = values.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [values[i], values[j]] = [values[j], values[i]];
+    }
+  } while (values.every((v, i) => v === options.values[i]) && ++guard < 10);
+  return { values, correctValue: options.correctValue };
+}
+
 // Elementary-style test: writing then reading, no meaning hints before answering.
 export function startKanjiExamPractice() {
   const mode = document.getElementById('kanji-exam-mode')?.value || 'mixed';
@@ -1229,7 +1246,22 @@ export function startKanjiQuickQuiz() {
     alert('No hard kanji words in the selected lessons!');
     return;
   }
-  const items = roundSource.slice().sort(() => Math.random() - 0.5);
+  // Mixed runs as two separate sub-sections instead of interleaving directions
+  // (user ask 2026-10-26): kana -> kanji (choose the kanji) first, then
+  // kanji -> kana (choose the reading), each shuffled within itself. Same
+  // section order as the Kanji Test's "Both sections" (writing, then reading).
+  let items;
+  if (quizDir === 'mixed') {
+    const shuffled = list => list.slice().sort(() => Math.random() - 0.5);
+    const writing = shuffled(roundSource.filter(it => it.direction === 'kana-ja'));
+    const reading = shuffled(roundSource.filter(it => it.direction === 'ja-kana'));
+    const sectionCount = (writing.length ? 1 : 0) + (reading.length ? 1 : 0);
+    writing.forEach(it => { it.quizSection = 1; it.quizSectionCount = sectionCount; });
+    reading.forEach(it => { it.quizSection = sectionCount === 2 ? 2 : 1; it.quizSectionCount = sectionCount; });
+    items = writing.concat(reading);
+  } else {
+    items = roundSource.slice().sort(() => Math.random() - 0.5);
+  }
 
   if (items.length < (state.kanjiHardOnly ? 1 : 2)) {
     alert('Not enough compound words in this selection to quiz!');
@@ -1245,6 +1277,7 @@ export function startKanjiQuickQuiz() {
   state.kanjiRunQueue = items;
   state.kanjiRunMode = 'kanji_quiz';
   startKanjiBatch();
+  scrollKanjiQuizToTop();
 }
 
 export function renderKanjiQuizCard(item) {
@@ -1266,11 +1299,12 @@ export function renderKanjiQuizCard(item) {
   if (gradeControls) gradeControls.style.display = 'none';
 
   const dir = item.direction || 'ja-kana';
+  const sectionNote = item.quizSectionCount > 1 ? ` · Part ${item.quizSection}/${item.quizSectionCount}` : '';
   const dirBadge = dir === 'kana-ja'
-    ? '<span class="badge badge-cyan" style="font-size: 0.78rem;">表記 (Kana → Kanji)</span>'
+    ? `<span class="badge badge-cyan" style="font-size: 0.78rem;">表記 (Kana → Kanji)${sectionNote}</span>`
     : (dir === 'ja-meaning'
       ? '<span class="badge" style="background: rgba(236,72,153,0.18); border: 1px solid #ec4899; color: #f472b6; font-size: 0.78rem; font-weight: 700;">意味 (Kanji → English)</span>'
-      : '<span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)</span>');
+      : `<span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)${sectionNote}</span>`);
 
   if (lessonTag) lessonTag.textContent = `Quick Quiz · 漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
 
@@ -1454,9 +1488,13 @@ export function answerKanjiQuizOption(idx) {
   if (totalEl) totalEl.textContent = state.sessionTotalAnswered;
 
   if (!isCorrect) {
-    // Missed cards re-queue +3 down the deck, mirroring gradeCard's Again handling
+    // Missed cards re-queue +3 down the deck, mirroring gradeCard's Again handling.
+    // The retry is a fresh attempt with reshuffled options; the original answered
+    // card keeps its recorded order and outcome for Previous review.
+    const retry = { ...item, answered: false, chosenValue: null };
+    retry.options = reshuffleKanjiQuizOptions(item.options);
     const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
-    state.sessionItems.splice(insertAt, 0, { ...item, answered: false });
+    state.sessionItems.splice(insertAt, 0, retry);
   }
 
   if (isCorrect && isKanjiAutoNextOn()) {
@@ -1466,6 +1504,15 @@ export function answerKanjiQuizOption(idx) {
     const nextBtn = document.getElementById('kq-btn-next');
     if (nextBtn) nextBtn.style.visibility = 'visible';
   }
+}
+
+// The quiz page scrolls on small screens; every card change starts at the top.
+function scrollKanjiQuizToTop() {
+  try {
+    const main = document.getElementById('main');
+    if (main) main.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    window.scrollTo(0, 0);
+  } catch (e) {}
 }
 
 // Previous = pure review navigation: no grading, no SRS writes, no score change.
@@ -1479,6 +1526,7 @@ export function prevKanjiQuizCard() {
   }
   state.sessionIdx--;
   state.cardFlipped = false;
+  scrollKanjiQuizToTop();
   renderCard();
 }
 
@@ -1490,6 +1538,7 @@ export function nextKanjiQuizCard() {
   }
   state.sessionIdx++;
   state.cardFlipped = false;
+  scrollKanjiQuizToTop();
   renderCard();
 }
 
