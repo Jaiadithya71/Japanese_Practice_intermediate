@@ -459,3 +459,30 @@
 #view-kanji .kanji-advanced-body { display: flex; flex-direction: column; gap: 9px; padding: .1rem 0 .6rem; }
 #view-kanji .kanji-advanced-body .btn { width: 100%; }
 #view-kanji .kanji-advanced-divider { margin-top: .55rem; padding-top: .6rem; border-top: 1px solid var(--border); color: var(--text-muted); font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
+
+/* Kanji activity card on mobile: match the homepage Study activity block
+   (full-width heatmap, same card chrome/typography/legend/today row).
+   Home gets this via #view-home rules in css/home-mobile.css; this mirrors
+   the same look for #view-kanji. Data, streak, level scale and labels unchanged. */
+@media (max-width: 600px) {
+  #view-kanji .home-activity-card { padding:16px; margin-bottom:14px; border-color:rgba(183,193,218,.12); border-radius:22px; background:linear-gradient(150deg,#171c27,#12161e); box-shadow:0 8px 24px rgba(0,0,0,.12); }
+  #view-kanji .home-activity-head { align-items:center; gap:10px; }
+  #view-kanji .home-activity-head h3 { font-size:1.07rem; letter-spacing:-.025em; font-weight:750; }
+  #view-kanji .home-activity-head p { font-size:.74rem; color:#a5acbf; margin-top:3px; }
+  #view-kanji .home-activity-summary { padding:7px 10px; border-radius:12px; gap:4px; background:rgba(48,205,160,.1); border:1px solid rgba(48,205,160,.14); white-space:nowrap; font-size:.67rem; color:#63dfbb; }
+  #view-kanji .home-activity-summary strong { font-size:1.03rem; }
+  #view-kanji #kanji-activity-heatmap { margin-top:16px; overflow:visible; }
+  #kanji-activity-heatmap .heatmap-grid-inner { min-width:0; width:100%; gap:8px; }
+  #view-kanji #kanji-activity-heatmap .heatmap-weekdays,
+  #view-kanji #kanji-activity-heatmap .heatmap-cells-grid { display:grid!important; width:100%; grid-template-columns:repeat(7,minmax(0,1fr))!important; justify-content:stretch!important; gap:6px!important; }
+  #view-kanji #kanji-activity-heatmap .heatmap-col-head { font-size:.67rem; color:#929eb4; }
+  #view-kanji #kanji-activity-heatmap .heatmap-cells-grid .heatmap-cell { width:100%!important; height:27px!important; min-height:0!important; aspect-ratio:auto!important; border-radius:6px; }
+  #view-kanji #kanji-activity-heatmap .heatmap-cells-grid .level-0 { background:#242c39; box-shadow:inset 0 0 0 1px rgba(183,193,218,.07); }
+  #view-kanji .home-heatmap-legend { margin-top:11px; font-size:.65rem; color:#a0abc0; gap:5px; }
+  #view-kanji #kanji-activity-heatmap .home-heatmap-legend .heatmap-cell { width:12px!important; height:12px!important; min-height:0!important; border-radius:3px; }
+  #view-kanji .home-activity-today { margin-top:14px; padding-top:12px; border-top:1px solid rgba(183,193,218,.12); color:#bbc4d5; font-size:.78rem; }
+  #view-kanji #kanji-reviews-today { font-size:1.04rem; font-weight:750; margin-right:3px; }
+}
+@media (max-width: 360px) {
+  #view-kanji .home-activity-card { padding:13px; }
+}
