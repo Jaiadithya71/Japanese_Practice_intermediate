@@ -75,6 +75,7 @@ export function setKanjiTab(tab) {
 
 export function setKanjiStudyDirection(dir) {
   state.kanjiStudyDirection = dir;
+  updateKanjiStartHint();
   const picker = document.getElementById('kanji-picker-direction');
   if (picker) picker.value = dir;
   ['ja-kana', 'kana-ja', 'ja-meaning', 'mixed'].forEach(d => {
@@ -484,6 +485,32 @@ export function setKanjiReviewPhase(phase) {
   updateKanjiActionButtonLabels();
 }
 
+// Main Kanji-tab flow (user ask 2026-10-27): one obvious Start button. It runs the
+// multiple-choice practice quiz over the whole selected chapter - default both
+// directions sequentially: first kanji -> kana, then kana -> kanji, every word.
+// Direction/session-size/hard-only subsets stay under Advanced options.
+function updateKanjiStartHint() {
+  const hint = document.getElementById('kanji-start-hint');
+  if (!hint) return;
+  const dir = state.kanjiStudyDirection || 'mixed';
+  hint.textContent = dir === 'mixed'
+    ? 'Multiple choice, every word in the selected lessons: first kanji \u2192 kana, then kana \u2192 kanji.'
+    : dir === 'kana-ja'
+      ? 'Multiple choice, every word in the selected lessons: kana \u2192 kanji.'
+      : 'Multiple choice, every word in the selected lessons: kanji \u2192 kana.';
+}
+
+export function startKanjiActivity() {
+  setReviewPhasePreference('test');
+  if (!state.kanjiStudyDirection) state.kanjiStudyDirection = 'mixed';
+  startKanjiQuickQuiz();
+}
+
+export function startKanjiLearn() {
+  setReviewPhasePreference('learn');
+  drillKanjiSelected();
+}
+
 function startKanjiBatch() {
   const queue = state.kanjiRunQueue || [];
   if (!queue.length) return;
@@ -597,7 +624,7 @@ export function updateKanjiActionButtonLabels() {
     hardBtn.innerHTML = `<i class="fa-solid fa-fire"></i> Hard only: ${on ? 'ON' : 'OFF'}`;
     hardBtn.style.background = on ? 'rgba(239,68,68,0.22)' : '';
   }
-  const btn = document.getElementById('btn-kanji-drill-action');
+  const btn = document.getElementById('btn-kanji-start');
   if (!btn) return;
 
   const selLessons = state.kanjiSelectedLessons || new Set();
@@ -620,24 +647,17 @@ export function updateKanjiActionButtonLabels() {
   const meta = document.getElementById('kanji-picker-heading-meta');
   if (meta) meta.textContent = `25 lessons · ${Object.keys(state.kanjiDB || {}).length} kanji`;
   const direction = document.getElementById('kanji-picker-direction');
-  if (direction) direction.value = state.kanjiStudyDirection || 'ja-kana';
+  if (direction) direction.value = state.kanjiStudyDirection || 'mixed';
   const hard = document.getElementById('kanji-picker-hard');
   if (hard) hard.checked = Boolean(state.kanjiHardOnly);
   const sizeSel = document.getElementById('kanji-session-size');
   if (sizeSel) sizeSel.value = kanjiRunSize();
-  const phase = getReviewPhase();
-  document.querySelectorAll('#kanji-review-phase button').forEach(button => {
-    button.setAttribute('aria-pressed', String(button.dataset.phase === phase));
-  });
-  const phaseHint = document.getElementById('kanji-review-phase-hint');
-  if (phaseHint) phaseHint.textContent = phase === 'learn'
-    ? 'Reading, meaning & examples. No grading.'
-    : ((state.kanjiStudyDirection || 'ja-kana') === 'ja-meaning' ? 'Recall first, then reveal and grade.' : 'Kanji ↔ kana runs as multiple choice.');
+  updateKanjiStartHint();
   btn.disabled = wordsCount === 0;
-  const exam = document.getElementById('btn-kanji-exam-action');
+  const learn = document.getElementById('btn-kanji-learn');
+  if (learn) learn.disabled = wordsCount === 0;
+  const exam = document.getElementById('btn-kanji-exam');
   if (exam) exam.disabled = wordsCount === 0;
-  const quiz = document.getElementById('btn-kanji-quiz-action');
-  if (quiz) quiz.disabled = wordsCount === 0;
   updateKanjiProgress();
 }
 
@@ -1204,13 +1224,13 @@ export function startKanjiExamPractice() {
     }).filter(Boolean);
     return specific ? questions : questions.slice(0, 25);
   };
-  const questions = [...(mode !== 'reading' ? section('kana-ja') : []),
-    ...(mode !== 'writing' ? section('ja-kana') : [])];
+  const questions = [...(mode !== 'writing' ? section('ja-kana') : []),
+    ...(mode !== 'reading' ? section('kana-ja') : [])];
   if (!questions.length) { alert('No matching Kanji Test questions. Select lessons or turn off hard-only.'); return; }
   showView('test');
   return startTestSession('kanji-exam-practice', {
     id: 'kanji-exam-practice', category: 'kanji', pillar: 'kanji',
-    title: 'Kanji Test', subTitle: mode === 'mixed' ? 'Writing + Reading' : mode === 'reading' ? 'Reading' : 'Writing',
+    title: 'Kanji Test', subTitle: mode === 'mixed' ? 'Reading + Writing' : mode === 'reading' ? 'Reading' : 'Writing',
     questionCount: questions.length, questions
   });
 }
@@ -1247,18 +1267,18 @@ export function startKanjiQuickQuiz() {
     return;
   }
   // Mixed runs as two separate sub-sections instead of interleaving directions
-  // (user ask 2026-10-26): kana -> kanji (choose the kanji) first, then
-  // kanji -> kana (choose the reading), each shuffled within itself. Same
-  // section order as the Kanji Test's "Both sections" (writing, then reading).
+  // (user ask 2026-10-27): kanji -> kana (choose the reading) first, then
+  // kana -> kanji (choose the kanji), each shuffled within itself, covering
+  // every word in the selected lessons.
   let items;
   if (quizDir === 'mixed') {
     const shuffled = list => list.slice().sort(() => Math.random() - 0.5);
-    const writing = shuffled(roundSource.filter(it => it.direction === 'kana-ja'));
     const reading = shuffled(roundSource.filter(it => it.direction === 'ja-kana'));
+    const writing = shuffled(roundSource.filter(it => it.direction === 'kana-ja'));
     const sectionCount = (writing.length ? 1 : 0) + (reading.length ? 1 : 0);
-    writing.forEach(it => { it.quizSection = 1; it.quizSectionCount = sectionCount; });
-    reading.forEach(it => { it.quizSection = sectionCount === 2 ? 2 : 1; it.quizSectionCount = sectionCount; });
-    items = writing.concat(reading);
+    reading.forEach(it => { it.quizSection = 1; it.quizSectionCount = sectionCount; });
+    writing.forEach(it => { it.quizSection = sectionCount === 2 ? 2 : 1; it.quizSectionCount = sectionCount; });
+    items = reading.concat(writing);
   } else {
     items = roundSource.slice().sort(() => Math.random() - 0.5);
   }
@@ -1549,6 +1569,8 @@ function escapeAttr(str) {
 
 if (typeof window !== 'undefined') {
   window.startKanjiExamPractice = startKanjiExamPractice;
+  window.startKanjiActivity = startKanjiActivity;
+  window.startKanjiLearn = startKanjiLearn;
   window.setKanjiSessionSize = setKanjiSessionSize;
   window.setKanjiReviewPhase = setKanjiReviewPhase;
   window.startNextKanjiBatch = startNextKanjiBatch;

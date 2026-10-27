@@ -232,35 +232,27 @@
         </div>
         <div id="kanji-lesson-chips-row" class="home-lesson-grid" aria-label="Kanji lessons"></div>
         <p id="kanji-picker-summary" class="home-picker-summary" aria-live="polite"></p>
-        <div class="home-run-settings">
-          <label class="home-run-setting"><span>Session size</span><select id="kanji-session-size" aria-label="Kanji session size" onchange="setKanjiSessionSize(this.value)">
-            <option value="10">10 cards</option><option value="20">20 cards</option><option value="50">50 cards</option><option value="all" selected>All cards</option>
-          </select></label>
-          <label class="home-run-setting"><span>Direction</span><select id="kanji-picker-direction" aria-label="Kanji study direction" onchange="setKanjiStudyDirection(this.value)">
-            <option value="ja-kana">Kanji &rarr; kana</option><option value="kana-ja">Kana &rarr; kanji</option>
-            <option value="mixed">Mixed</option>
-          </select></label>
-          <label class="home-run-setting"><span>Test type</span><select id="kanji-exam-mode" aria-label="Kanji test type">
-            <option value="mixed">Both sections</option><option value="reading">Reading: kanji &rarr; kana</option><option value="writing">Writing: kana &rarr; kanji</option>
-          </select></label>
-          <label class="home-run-check"><input id="kanji-picker-hard" type="checkbox" onchange="toggleKanjiHardOnly()"> Drill hard words only</label>
+        <div class="home-picker-buttons kanji-start-buttons">
+          <button class="btn btn-primary" id="btn-kanji-start" onclick="startKanjiActivity()"><i class="fa-solid fa-play"></i> Start practice</button>
         </div>
-        <div class="home-phase-row">
-          <span>Flashcard mode</span>
-          <div class="review-phase-switch" id="kanji-review-phase" role="group" aria-label="Flashcard mode">
-            <button type="button" data-phase="learn" aria-pressed="false" onclick="setKanjiReviewPhase('learn')">Learn</button>
-            <button type="button" data-phase="test" aria-pressed="true" onclick="setKanjiReviewPhase('test')">Test</button>
-          </div>
-        </div>
-        <p id="kanji-review-phase-hint" class="home-phase-hint">Recall first, then reveal and grade.</p>
-        <div class="home-picker-buttons">
-          <button class="btn btn-primary" id="btn-kanji-drill-action" onclick="drillKanjiSelected()"><i class="fa-solid fa-clone"></i> Flashcards</button>
-          <button class="btn btn-secondary" id="btn-kanji-exam-action" onclick="startKanjiExamPractice()"><i class="fa-solid fa-list-check"></i> Multiple Choice</button>
-        </div>
-        <details class="kanji-more-drills">
-          <summary>More kanji drills <i class="fa-solid fa-chevron-down"></i></summary>
-          <div class="kanji-more-drills-body">
-            <button class="btn btn-secondary" id="btn-kanji-quiz-action" onclick="startKanjiQuickQuiz()"><i class="fa-solid fa-bolt"></i> Quick Quiz (re-queues misses)</button>
+        <p id="kanji-start-hint" class="kanji-start-hint"></p>
+        <details class="kanji-advanced">
+          <summary>Advanced options <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="kanji-advanced-body">
+            <label class="home-run-setting" id="kanji-setting-direction"><span>Direction</span><select id="kanji-picker-direction" aria-label="Kanji study direction" onchange="setKanjiStudyDirection(this.value)">
+              <option value="mixed">Both: kanji &rarr; kana, then kana &rarr; kanji</option>
+              <option value="ja-kana">Kanji &rarr; kana only</option><option value="kana-ja">Kana &rarr; kanji only</option>
+            </select></label>
+            <label class="home-run-setting" id="kanji-setting-size"><span>Session size</span><select id="kanji-session-size" aria-label="Kanji session size" onchange="setKanjiSessionSize(this.value)">
+              <option value="10">10 cards</option><option value="20">20 cards</option><option value="50">50 cards</option><option value="all" selected>All cards (whole chapter)</option>
+            </select></label>
+            <label class="home-run-check"><input id="kanji-picker-hard" type="checkbox" onchange="toggleKanjiHardOnly()"> Drill hard words only</label>
+            <div class="kanji-advanced-divider">Other ways to study</div>
+            <button class="btn btn-secondary" id="btn-kanji-learn" onclick="startKanjiLearn()"><i class="fa-solid fa-clone"></i> Learn: flip cards, no grading</button>
+            <label class="home-run-setting" id="kanji-setting-exam"><span>Test sections</span><select id="kanji-exam-mode" aria-label="Kanji test sections">
+              <option value="mixed">Both: reading, then writing</option><option value="reading">Reading only (kanji &rarr; kana)</option><option value="writing">Writing only (kana &rarr; kanji)</option>
+            </select></label>
+            <button class="btn btn-secondary" id="btn-kanji-exam" onclick="startKanjiExamPractice()"><i class="fa-solid fa-list-check"></i> Kanji test: exam-style, review at the end</button>
             <div class="kanji-guided-row">
               <p>Guided lesson: step-by-step flow. Choose exactly one lesson above.</p>
               <button class="btn btn-secondary" id="btn-kanji-runner-action" onclick="startKanjiLessonRunner()" disabled>Start guided lesson</button>
