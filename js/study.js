@@ -247,7 +247,7 @@ export function renderCard() {
   if (priorOutcome?.grade) state.cardFlipped = true;
   if (reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz') state.cardFlipped = true;
   renderCardContent();
-  renderVocabularyKanjiBreakdown(state.sessionItems[state.sessionIdx], state.cardFlipped);
+  renderVocabularyKanjiBreakdown(state.sessionItems[state.sessionIdx], state.cardFlipped && state.studyMode !== 'kanji_quiz');
   const learning = reviewPhase === 'learn' && state.studyMode !== 'kanji_quiz' && state.sessionIdx < state.sessionItems.length;
   let topAction = document.getElementById('study-learn-action');
   const actionRow = document.getElementById('study-card-container');
