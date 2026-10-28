@@ -8,7 +8,7 @@ import { state } from './state.js';
 import { getDueItemsCount, getItemStatus } from './srs.js';
 import { getCurrentStreak, getDay } from './daylog.js';
 import { istDateKey } from './time.js';
-import { startDueReview, startLearnNew } from './study.js?v=4.2';
+import { startDueReview, startLearnNew } from './study.js?v=4.4';
 import { showView } from './navigation.js';
 
 const PILLARS = {
