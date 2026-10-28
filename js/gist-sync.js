@@ -22,6 +22,9 @@ const DAILY_SUMMARY_KEY = 'n3_day_summary_v1';
 const SESSION_STARTED_KEY = 'n3_day_session_started';
 const SESSION_ITEM_KEYS = 'n3_day_session_item_keys';
 const SESSION_REVIEW_COUNT = 'n3_day_session_review_count';
+const DAILY_SUMMARY_QUEUE_KEY = 'n3_day_summary_queue_v1';
+const DAILY_SUMMARY_MAX_ATTEMPTS = 8;
+const DAILY_SUMMARY_RETRY_DELAYS_MS = [60 * 1000, 5 * 60 * 1000, 15 * 60 * 1000, 60 * 60 * 1000];
 const MAX_SYNC_BYTES = 1024 * 1024;
 
 function markRemoteRepairRequired(message) {
@@ -402,6 +405,97 @@ function daySessionTotals(date, elapsedMs) {
   return row;
 }
 
+// Daily accountability summaries POST to /api/day, which is best-effort:
+// the northstar dashboard stores the last POST it receives. Failed or offline
+// summaries persist here and retry with backoff until delivered, permanently
+// rejected (4xx), or attempts run out. Study records themselves live in the
+// Gist daylog, which merges by max and is never affected by this queue.
+function readDailySummaryQueue() {
+  try {
+    const queue = JSON.parse(localStorage.getItem(DAILY_SUMMARY_QUEUE_KEY) || '[]');
+    return Array.isArray(queue) ? queue : [];
+  } catch (_) { return []; }
+}
+
+function writeDailySummaryQueue(queue) {
+  try {
+    if (queue.length) localStorage.setItem(DAILY_SUMMARY_QUEUE_KEY, JSON.stringify(queue));
+    else localStorage.removeItem(DAILY_SUMMARY_QUEUE_KEY);
+  } catch (_) {}
+}
+
+function enqueueDailySummary(summary) {
+  const queue = readDailySummaryQueue().filter(entry => entry && entry.summary && entry.summary.date !== summary.date);
+  queue.push({ summary, attempts: 0, nextRetryAt: Date.now() + DAILY_SUMMARY_RETRY_DELAYS_MS[0] });
+  writeDailySummaryQueue(queue);
+}
+
+async function postDailySummary(summary) {
+  const response = await fetch('/api/day', {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(summary)
+  });
+  if (!response.ok) {
+    const error = new Error(`HTTP ${response.status}`);
+    error.status = response.status;
+    throw error;
+  }
+  const result = await response.json().catch(() => ({}));
+  if (result.error) {
+    const error = new Error(result.error);
+    error.status = response.status;
+    throw error;
+  }
+}
+
+export async function flushDailySummaryQueue() {
+  const queue = readDailySummaryQueue();
+  if (!queue.length || !navigator.onLine) return false;
+  const remaining = [];
+  let delivered = 0;
+  for (const entry of queue) {
+    if (!entry || !entry.summary) continue;
+    if (Date.now() < (entry.nextRetryAt || 0)) { remaining.push(entry); continue; }
+    try {
+      await postDailySummary(entry.summary);
+      delivered++;
+    } catch (error) {
+      const status = Number(error.status) || 0;
+      const attempts = (entry.attempts || 0) + 1;
+      // 4xx means the proxy will never accept this summary (e.g. the date is
+      // too old); retrying cannot help, and the Gist daylog still holds the day.
+      if ((status >= 400 && status < 500) || attempts >= DAILY_SUMMARY_MAX_ATTEMPTS) {
+        console.warn(`[n3-sync] Daily summary for ${entry.summary.date} not deliverable (${error.message}); dropped from retry queue.`);
+        continue;
+      }
+      const delay = DAILY_SUMMARY_RETRY_DELAYS_MS[Math.min(attempts - 1, DAILY_SUMMARY_RETRY_DELAYS_MS.length - 1)];
+      remaining.push({ ...entry, attempts, nextRetryAt: Date.now() + delay });
+    }
+  }
+  writeDailySummaryQueue(remaining);
+  return delivered > 0 || remaining.length === 0;
+}
+
+// Read only the shared daylog file from the Gist. Best-effort: any failure
+// returns null and the summary falls back to this device's local totals.
+async function pullRemoteDaylog(pat, gistId) {
+  try {
+    const res = await fetch(`${API}/gists/${gistId}?t=${Date.now()}`, { headers: headers(pat) });
+    if (!res.ok) return null;
+    const gist = await res.json();
+    const dayFile = gist.files && gist.files[DAYLOG_FILENAME];
+    if (!dayFile) return null;
+    if (dayFile.truncated && dayFile.raw_url) {
+      try {
+        const raw = await fetch(dayFile.raw_url);
+        if (raw.ok) return await raw.text();
+      } catch (_) {}
+      return null;
+    }
+    return typeof dayFile.content === 'string' ? dayFile.content : null;
+  } catch (_) { return null; }
+}
+
 function buildDailySummary(date) {
   const touched = new Set();
   const chapters = new Set();
@@ -448,29 +542,40 @@ function buildDailySummary(date) {
     reviewsDone: Math.min(10000, reviewsDone),
     uniqueItems: Math.min(10000, dailyItems.size),
     sessions: Math.min(1000, Number(local.sessions) || 0),
-    minutes: Math.min(600, Math.round((Number(local.elapsedMs) || 0) / 60000)),
+    // Minutes come from this device's session timer and the shared daylog
+    // (merged by max), so a lower local value never reports over a higher one.
+    minutes: Math.min(600, Math.max(Math.round((Number(local.elapsedMs) || 0) / 60000), Number(getDay(date).minutes) || 0)),
     chapters: [...dailyChapters].sort(), units: [...dailyUnits].sort()
   };
 }
 
 async function syncDailySummary(date) {
-  const summary = buildDailySummary(date);
+  const { pat, gistId } = creds();
   if (!navigator.onLine) {
+    enqueueDailySummary(buildDailySummary(date));
     setStatus('pending', 'Offline · daily summary queued');
     return false;
   }
+  // Merge the shared Gist daylog before building the summary. The dashboard
+  // keeps the last POST it receives, so posting this device's local totals
+  // before merging could overwrite a higher total another device recorded.
+  if (pat && gistId) {
+    mergeDaylogMax(await pullRemoteDaylog(pat, gistId));
+  }
+  const summary = buildDailySummary(date);
   try {
-    const response = await fetch('/api/day', {
-      method: 'POST', headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(summary)
-    });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const result = await response.json().catch(() => ({}));
-    if (result.error) throw new Error(result.error);
+    await postDailySummary(summary);
+    flushDailySummaryQueue();
     return true;
   } catch (error) {
+    const status = Number(error.status) || 0;
+    if (status >= 400 && status < 500) {
+      console.warn(`[n3-sync] Daily accountability summary rejected (${error.message}); not queued for retry.`);
+      return false;
+    }
     console.warn('[n3-sync] Daily accountability summary not delivered:', error.message);
-    setStatus('pending', 'Daily summary pending · saved on this device');
+    enqueueDailySummary(summary);
+    setStatus('pending', 'Daily summary queued · will retry');
     return false;
   }
 }
@@ -706,12 +811,19 @@ export function disconnectGist() {
 }
 
 export function initSyncUI() {
+  flushDailySummaryQueue();
+  if (typeof window !== 'undefined' && !window.__n3DailySummaryTimer) {
+    const timer = setInterval(() => { flushDailySummaryQueue(); }, 5 * 60 * 1000);
+    if (timer && typeof timer.unref === 'function') timer.unref();
+    window.__n3DailySummaryTimer = timer;
+  }
   const { pat, gistId } = creds();
   setStatus(pat && gistId ? 'saving' : 'idle', pat && gistId ? 'Checking Gist…' : 'Sync off · saved on this device');
   window.addEventListener('offline', () => {
     if (creds().pat && creds().gistId) setStatus('pending', dirty ? 'Offline · sync queued' : 'Offline · last sync may be out of date');
   });
   window.addEventListener('online', () => {
+    flushDailySummaryQueue();
     const c = creds();
     if (!c.pat || !c.gistId) return;
     if (isReviewActive()) { setStatus('pending', 'Review active · syncs when it ends'); return; }
