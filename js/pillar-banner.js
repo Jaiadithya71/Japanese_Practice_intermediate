@@ -50,7 +50,8 @@ function vocabInfo() {
     counts: c,
     nextLabel: next ? `Unit ${next.unit} · ${next.fresh} new word${next.fresh === 1 ? '' : 's'}` : null,
     nextAction: next ? () => startLearnNew(next.unit, 10) : null,
-    nextBtn: next ? 'Learn 10 new' : null
+    nextBtn: next ? 'Learn 10 new' : null,
+    nextSub: next ? `${next.fresh} new in this unit` : ''
   };
 }
 
@@ -102,7 +103,8 @@ function grammarInfo() {
     counts: statusCounts(all),
     nextLabel: ns ? `${map[ns].title} · ${map[ns].fresh} new pattern${map[ns].fresh === 1 ? '' : 's'}` : null,
     nextAction: ns ? () => showView('grammar') : null,
-    nextBtn: ns ? 'Open Grammar' : null
+    nextBtn: ns ? 'Open Grammar' : null,
+    nextSub: ns ? `${map[ns].fresh} new pattern${map[ns].fresh === 1 ? '' : 's'}` : ''
   };
 }
 
@@ -125,7 +127,8 @@ function readingInfo() {
     counts: statusCounts(all),
     nextLabel: next ? `${next.title} · ${next.fresh} new question${next.fresh === 1 ? '' : 's'}` : null,
     nextAction: next ? () => showView('reading') : null,
-    nextBtn: next ? 'Open Reading' : null
+    nextBtn: next ? 'Open Reading' : null,
+    nextSub: next ? `${next.fresh} new question${next.fresh === 1 ? '' : 's'}` : ''
   };
 }
 
@@ -157,6 +160,20 @@ function dueScope(p) {
   const total = getDueItemsCount(p);
   const req = parseInt(state.dueBatchSize, 10) || 20;
   const batchCap = isCatchUpMode() ? Math.min(req, 40) : req;
+  if (p === 'vocab') {
+    const vs = (state.selectedDueVocabChapters && state.selectedDueVocabChapters.size > 0)
+      ? state.selectedDueVocabChapters
+      : (state.selectedVocabChapters && state.selectedVocabChapters.size > 0 && state.vocabChapter !== 'all' ? state.selectedVocabChapters : null);
+    let n = 0;
+    for (const key in (state.stats || {})) {
+      const st = state.stats[key];
+      if (!st || !st.nextDue || st.nextDue > now || key.startsWith('KWM:') || getPillarFromKey(key) !== 'vocab') continue;
+      const ch = resolveItemForKey(key, st).chapter;
+      if (vs && ch && !vs.has(ch) && !vs.has(String(ch))) continue;
+      n++;
+    }
+    return { total, inScope: vs ? n : total, batch: Math.min(batchCap, vs ? n : total), scoped: !!vs };
+  }
   if (p !== 'kanji') return { total, inScope: total, batch: Math.min(batchCap, total), scoped: false };
   const sel = (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0)
     ? state.selectedDueKanjiLessons
@@ -192,13 +209,14 @@ function kanjiDueNote(d) {
   return `<p class="pb-note">${order} ${scope}</p>
     <details class="pb-more"><summary>What is due</summary>
       <div class="pb-split"><span>Kana \u2192 kanji <b>${sc.f.KWW}</b></span><span>Kanji \u2192 kana <b>${sc.f.KWR}</b></span>${sc.f.other ? `<span>Single kanji <b>${sc.f.other}</b></span>` : ''}</div>
+      <dl class="pb-guide"><dt>Drill Lesson</dt><dd>first pass over the next lesson's new kanji</dd><dt>Review</dt><dd>cards scheduled for today, from any lesson</dd><dt>Start practice</dt><dd>every word in the lessons you pick above, any time; answers still count toward your schedule</dd></dl>
       ${rows ? `<div class="pb-lrow" aria-label="Most due lessons">${rows}</div>` : ''}
     </details>`;
 }
 
 function reviewBtn(p, d) {
   const sc = dueScope(p);
-  const n = p === 'kanji' ? sc.inScope : d.due;
+  const n = sc.inScope;
   if (!n) return `<button class="pb-btn ghost pb-two" disabled><span class="pb-t"><i class="fa-solid fa-bolt"></i> Review</span><span class="pb-s">Nothing due</span></button>`;
   return `<button class="pb-btn ghost pb-two" onclick="window.__pbDue('${p}')" aria-label="Review ${sc.batch} of ${n} due cards now"><span class="pb-t"><i class="fa-solid fa-bolt"></i> Review ${sc.batch} now</span><span class="pb-s">of ${n} due${sc.scoped ? ' in picked lessons' : ''}</span></button>`;
 }
@@ -208,7 +226,7 @@ function bannerHtml(p, d, compact) {
   const pct = c.total ? Math.round((c.mastered / c.total) * 100) : 0;
   const meta = PILLARS[p];
   const nextRow = d.nextLabel
-    ? `<div class="pb-next"><div><span class="pb-k">Next lesson</span><span class="pb-v">${d.nextLabel}</span></div>${compact || p === 'kanji' ? '' : `<button class="pb-btn" onclick="window.__pbNext('${p}')">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></button>`}</div>`
+    ? `<div class="pb-next"><div><span class="pb-k">Next lesson</span><span class="pb-v">${d.nextLabel}</span></div></div>`
     : `<div class="pb-next"><div><span class="pb-k">Next lesson</span><span class="pb-v">Everything started - keep reviewing</span></div></div>`;
   return `
     <div class="pb-top">
@@ -220,7 +238,7 @@ function bannerHtml(p, d, compact) {
     </div>
     ${p === 'kanji' ? `<div class="pb-bar pb-segments" role="img" aria-label="${c.mastered} mastered, ${c.learning} learning, ${c.hard} hard, ${c.unseen} new">${[['mastered',c.mastered],['learning',c.learning],['hard',c.hard],['new',c.unseen]].filter(([,n]) => n > 0).map(([status,n]) => `<span class="pb-segment-${status}" style="width:${c.total ? n/c.total*100 : 0}%"></span>`).join('')}</div>` : `<div class="pb-bar"><div style="width:${pct}%;background:${meta.color}"></div></div>`}
     ${nextRow}
-    ${compact ? '' : `<div class="pb-actions">${p === 'kanji' && d.nextLabel ? `<button class="pb-btn pb-two" onclick="window.__pbNext('kanji')"><span class="pb-t">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></span><span class="pb-s">${d.nextSub}</span></button>` : ''}${reviewBtn(p, d)}</div>${p === 'kanji' ? kanjiDueNote(d) : ''}`}`;
+    ${compact ? '' : `<div class="pb-actions">${d.nextLabel ? `<button class="pb-btn pb-two" onclick="window.__pbNext('${p}')"><span class="pb-t">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></span><span class="pb-s">${d.nextSub}</span></button>` : ''}${reviewBtn(p, d)}</div>${p === 'kanji' ? kanjiDueNote(d) : ''}`}`;
 }
 
 function injectStyle() {
@@ -260,10 +278,10 @@ function injectStyle() {
 #pb-kanji .pb-btn{min-height:42px;background:linear-gradient(135deg,#e6cb91,#c49c52);color:#171d2b;width:100%}
 #pb-kanji .pb-btn.ghost{background:transparent;border-color:rgba(212,175,106,.28);color:var(--accent)}
 #pb-kanji .pb-actions{margin-top:-.2rem}#pb-kanji .pb-actions .pb-btn{flex:1;min-width:0;width:auto;padding:.5rem .45rem;font-size:.74rem}
-#pb-kanji .pb-two{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;min-height:48px;line-height:1.2}
-#pb-kanji .pb-t{font-size:.8rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-#pb-kanji .pb-s{font-size:.68rem;font-weight:600;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
-#pb-kanji .pb-btn.ghost .pb-s{color:var(--text-muted)}
+body .pb-card .pb-two{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;min-height:48px;line-height:1.2}
+body .pb-card .pb-t{font-size:.8rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+body .pb-card .pb-s{font-size:.68rem;font-weight:600;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+body .pb-card .pb-btn.ghost .pb-s{color:var(--text-muted)}
 #pb-kanji .pb-note{margin:.1rem 0 0;font-size:.72rem;line-height:1.45;color:var(--text-muted)}
 #pb-kanji .pb-more{margin-top:-.15rem;border-top:1px solid rgba(255,255,255,.06);padding-top:.1rem}
 #pb-kanji .pb-more summary{cursor:pointer;list-style:none;min-height:36px;display:flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;color:var(--text-muted)}
@@ -275,6 +293,9 @@ function injectStyle() {
 #pb-kanji .pb-split b,#pb-kanji .pb-lchip b{color:var(--text);font-variant-numeric:tabular-nums}
 #pb-kanji .pb-lrow{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 .2rem;font-size:.72rem;color:var(--text-muted)}
 #pb-kanji .pb-lchip{gap:.5rem}
+.pb-actions .pb-btn.pb-two{flex:1;min-width:0}
+#pb-kanji .pb-guide{display:grid;grid-template-columns:auto 1fr;gap:.25rem .75rem;margin:.5rem 0 .2rem;font-size:.72rem;line-height:1.4;color:var(--text-muted)}
+#pb-kanji .pb-guide dt{font-weight:800;color:var(--text);white-space:nowrap}#pb-kanji .pb-guide dd{margin:0}
 @media(min-width:900px){.pb-overview{grid-template-columns:repeat(4,1fr)}}
 `;
   document.head.appendChild(s);
