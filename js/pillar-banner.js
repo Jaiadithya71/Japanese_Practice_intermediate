@@ -5,7 +5,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { getDueItemsCount, getItemStatus } from './srs.js';
+import { getDueItemsCount, getItemStatus, getPillarFromKey, getFacetFromKey, resolveItemForKey, isCatchUpMode } from './srs.js';
 import { getCurrentStreak, getDay } from './daylog.js';
 import { istDateKey } from './time.js';
 import { startDueReview, startLearnNew } from './study.js?v=4.4';
@@ -82,7 +82,8 @@ function kanjiInfo() {
       state.kanjiHardOnly = false;
       if (typeof window.drillKanjiSelected === 'function') window.drillKanjiSelected();
     } : null,
-    nextBtn: nl ? `Drill Lesson ${nl}` : null
+    nextBtn: nl ? `Drill Lesson ${nl}` : null,
+    nextSub: nl ? `${byLesson[nl].fresh} new kanji` : ''
   };
 }
 
@@ -148,6 +149,60 @@ function streakChip(pillar = null) {
   return `<span class="pb-streak ${hot ? 'hot' : ''}"><i class="fa-solid fa-fire"></i> ${streak} day streak${hot || pillar ? '' : streak > 0 ? ' · study today to keep it' : ''}</span>`;
 }
 
+
+// What "Review N due" will actually run. Mirrors startDueReview/getAllDueItems:
+// the same lesson scope, the same batch cap, and the same section order.
+function dueScope(p) {
+  const now = Date.now();
+  const total = getDueItemsCount(p);
+  const req = parseInt(state.dueBatchSize, 10) || 20;
+  const batchCap = isCatchUpMode() ? Math.min(req, 40) : req;
+  if (p !== 'kanji') return { total, inScope: total, batch: Math.min(batchCap, total), scoped: false };
+  const sel = (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0)
+    ? state.selectedDueKanjiLessons
+    : (state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0 ? state.kanjiSelectedLessons : null);
+  const f = { KWW: 0, KWR: 0, other: 0 };
+  const byLesson = {};
+  let inScope = 0;
+  for (const key in (state.stats || {})) {
+    const st = state.stats[key];
+    if (!st || !st.nextDue || st.nextDue > now || key.startsWith('KWM:')) continue;
+    if (getPillarFromKey(key) !== 'kanji') continue;
+    const l = resolveItemForKey(key, st).lesson_number;
+    if (sel && l && !sel.has(l) && !sel.has(Number(l)) && !sel.has(String(l))) continue;
+    inScope++;
+    const fc = getFacetFromKey(key);
+    if (fc === 'KWW' || fc === 'KWR') f[fc]++; else f.other++;
+    if (l) byLesson[l] = (byLesson[l] || 0) + 1;
+  }
+  const lessons = Object.keys(byLesson).map(Number).sort((a, b) => byLesson[b] - byLesson[a] || a - b);
+  return { total, inScope, batch: Math.min(batchCap, inScope), scoped: !!sel, selSize: sel ? sel.size : 0, f, byLesson, lessons };
+}
+
+function kanjiDueNote(d) {
+  const sc = dueScope('kanji');
+  if (!sc.inScope) return '';
+  // getAllDueItems orders every kana -> kanji card first, then kanji -> kana, then the rest, and cuts the batch from the top.
+  const w = Math.min(sc.batch, sc.f.KWW), r = Math.min(sc.batch - w, sc.f.KWR), o = sc.batch - w - r;
+  const parts = [w && `${w} kana \u2192 kanji`, r && `${r} kanji \u2192 kana`, o && `${o} single kanji`].filter(Boolean).join(' + ');
+  const left = sc.inScope - sc.batch;
+  const scope = `${sc.scoped ? `Only the ${sc.selSize} lesson${sc.selSize === 1 ? '' : 's'} picked above. ` : ''}${left > 0 ? `${left} more wait for the next round.` : 'That clears everything due.'}`;
+  const order = `This round: ${parts}.`;
+  const rows = sc.lessons.slice(0, 6).map(l => `<span class="pb-lchip">L${l}<b>${sc.byLesson[l]}</b></span>`).join('');
+  return `<p class="pb-note">${order} ${scope}</p>
+    <details class="pb-more"><summary>What is due</summary>
+      <div class="pb-split"><span>Kana \u2192 kanji <b>${sc.f.KWW}</b></span><span>Kanji \u2192 kana <b>${sc.f.KWR}</b></span>${sc.f.other ? `<span>Single kanji <b>${sc.f.other}</b></span>` : ''}</div>
+      ${rows ? `<div class="pb-lrow" aria-label="Most due lessons">${rows}</div>` : ''}
+    </details>`;
+}
+
+function reviewBtn(p, d) {
+  const sc = dueScope(p);
+  const n = p === 'kanji' ? sc.inScope : d.due;
+  if (!n) return `<button class="pb-btn ghost pb-two" disabled><span class="pb-t"><i class="fa-solid fa-bolt"></i> Review</span><span class="pb-s">Nothing due</span></button>`;
+  return `<button class="pb-btn ghost pb-two" onclick="window.__pbDue('${p}')" aria-label="Review ${sc.batch} of ${n} due cards now"><span class="pb-t"><i class="fa-solid fa-bolt"></i> Review ${sc.batch} now</span><span class="pb-s">of ${n} due${sc.scoped ? ' in picked lessons' : ''}</span></button>`;
+}
+
 function bannerHtml(p, d, compact) {
   const c = d.counts;
   const pct = c.total ? Math.round((c.mastered / c.total) * 100) : 0;
@@ -165,7 +220,7 @@ function bannerHtml(p, d, compact) {
     </div>
     ${p === 'kanji' ? `<div class="pb-bar pb-segments" role="img" aria-label="${c.mastered} mastered, ${c.learning} learning, ${c.hard} hard, ${c.unseen} new">${[['mastered',c.mastered],['learning',c.learning],['hard',c.hard],['new',c.unseen]].filter(([,n]) => n > 0).map(([status,n]) => `<span class="pb-segment-${status}" style="width:${c.total ? n/c.total*100 : 0}%"></span>`).join('')}</div>` : `<div class="pb-bar"><div style="width:${pct}%;background:${meta.color}"></div></div>`}
     ${nextRow}
-    ${compact ? '' : `<div class="pb-actions">${p === 'kanji' && d.nextLabel ? `<button class="pb-btn" onclick="window.__pbNext('kanji')">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></button>` : ''}<button class="pb-btn ghost" ${d.due > 0 ? '' : 'disabled'} onclick="window.__pbDue('${p}')"><i class="fa-solid fa-bolt"></i> Review ${d.due} due</button></div>`}`;
+    ${compact ? '' : `<div class="pb-actions">${p === 'kanji' && d.nextLabel ? `<button class="pb-btn pb-two" onclick="window.__pbNext('kanji')"><span class="pb-t">${d.nextBtn} <i class="fa-solid fa-arrow-right"></i></span><span class="pb-s">${d.nextSub}</span></button>` : ''}${reviewBtn(p, d)}</div>${p === 'kanji' ? kanjiDueNote(d) : ''}`}`;
 }
 
 function injectStyle() {
@@ -205,6 +260,21 @@ function injectStyle() {
 #pb-kanji .pb-btn{min-height:42px;background:linear-gradient(135deg,#e6cb91,#c49c52);color:#171d2b;width:100%}
 #pb-kanji .pb-btn.ghost{background:transparent;border-color:rgba(212,175,106,.28);color:var(--accent)}
 #pb-kanji .pb-actions{margin-top:-.2rem}#pb-kanji .pb-actions .pb-btn{flex:1;min-width:0;width:auto;padding:.5rem .45rem;font-size:.74rem}
+#pb-kanji .pb-two{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;min-height:48px;line-height:1.2}
+#pb-kanji .pb-t{font-size:.8rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+#pb-kanji .pb-s{font-size:.68rem;font-weight:600;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+#pb-kanji .pb-btn.ghost .pb-s{color:var(--text-muted)}
+#pb-kanji .pb-note{margin:.1rem 0 0;font-size:.72rem;line-height:1.45;color:var(--text-muted)}
+#pb-kanji .pb-more{margin-top:-.15rem;border-top:1px solid rgba(255,255,255,.06);padding-top:.1rem}
+#pb-kanji .pb-more summary{cursor:pointer;list-style:none;min-height:36px;display:flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;color:var(--text-muted)}
+#pb-kanji .pb-more summary::-webkit-details-marker{display:none}
+#pb-kanji .pb-more summary::after{content:'\\25BE';margin-left:auto;transition:transform .2s}
+#pb-kanji .pb-more[open] summary::after{transform:rotate(180deg)}
+#pb-kanji .pb-split{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:.4rem;font-size:.72rem;color:var(--text-muted)}
+#pb-kanji .pb-split span,#pb-kanji .pb-lchip{display:flex;justify-content:space-between;gap:.4rem;padding:.35rem .55rem;border-radius:8px;background:rgba(255,255,255,.04);white-space:nowrap}
+#pb-kanji .pb-split b,#pb-kanji .pb-lchip b{color:var(--text);font-variant-numeric:tabular-nums}
+#pb-kanji .pb-lrow{display:flex;flex-wrap:wrap;gap:.35rem;margin:.4rem 0 .2rem;font-size:.72rem;color:var(--text-muted)}
+#pb-kanji .pb-lchip{gap:.5rem}
 @media(min-width:900px){.pb-overview{grid-template-columns:repeat(4,1fr)}}
 `;
   document.head.appendChild(s);
