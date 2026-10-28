@@ -17,6 +17,17 @@ assert.equal(vocabularyKanjiMeanings('いろいろ').length,0);
 assert.equal(vocabularyKanjiMeanings('時々').length,1);
 assert.equal(vocabularyKanjiMeanings('人人').length,1);
 assert.equal(metadata.license,'CC BY-SA 4.0');
+// Kanji book: every target kanji and compound character must have meanings.
+let kanjiBookChars=new Set();
+for (const file of fs.readdirSync('data/kanji').filter(f=>/^part\d+_lessons_.*\.json$/.test(f))) {
+  const data=JSON.parse(fs.readFileSync(`data/kanji/${file}`));
+  for(const lesson of data.lessons||[]) for(const k of lesson.kanji||[]) {
+    if(/^[\u4e00-\u9fff]$/.test(k.kanji||'')) kanjiBookChars.add(k.kanji);
+    for(const w of k.words||[]) for(const c of w.term_ja||'') if(/[\u4e00-\u9fff]/.test(c)) kanjiBookChars.add(c);
+  }
+}
+for(const c of kanjiBookChars) assert.ok(entries[c]?.every(s=>typeof s==='string'&&s.length),c);
+console.log(`${kanjiBookChars.size} kanji-book characters covered.`);
 console.log(`${characters.size} kanji covered in ${words} kanji-bearing words; source ${metadata.database_date}, kana-only hidden, repeated characters deduplicated.`);
 // Exercise the actual renderer, including its DOM branch and safe text handling.
 const {renderVocabularyKanjiBreakdown}=await import('../js/vocab-kanji-breakdown.js');

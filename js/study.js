@@ -582,9 +582,9 @@ function renderCardContent() {
           <div style="font-size: 3.6rem; font-family: var(--font-jp); font-weight: 800; color: #fff; line-height: 1.1;">
             ${item.ruby_html || item.word}
           </div>
-          <div style="font-size: 1.6rem; color: #ec4899; font-weight: 700; margin-top: 0.35rem; font-family: var(--font-jp);">
+          ${/<rt[\s>]/.test(item.ruby_html || '') ? '' : `<div style="font-size: 1.6rem; color: #ec4899; font-weight: 700; margin-top: 0.35rem; font-family: var(--font-jp);">
             ${item.reading}
-          </div>
+          </div>`}
         </div>
       `;
       meaningEl.innerHTML = `

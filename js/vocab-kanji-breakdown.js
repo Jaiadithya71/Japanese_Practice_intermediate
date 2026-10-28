@@ -8,8 +8,9 @@ export function vocabularyKanjiMeanings(word = '') {
 
 export function renderVocabularyKanjiBreakdown(item, revealed) {
   document.getElementById('vocab-kanji-breakdown')?.remove();
-  if (!item || item.type !== 'vocab' || !revealed) return;
-  const parts = vocabularyKanjiMeanings(item.term_ja);
+  const word = !item ? '' : item.type === 'vocab' ? item.term_ja : item.type === 'kanji_word' ? item.word : '';
+  if (!word || !revealed) return;
+  const parts = vocabularyKanjiMeanings(word);
   const example = document.getElementById('card-example-box');
   if (!parts.length || !example) return;
   const row = document.createElement('div');
