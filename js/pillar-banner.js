@@ -209,7 +209,7 @@ function kanjiDueNote(d) {
   return `<p class="pb-note">${order} ${scope}</p>
     <details class="pb-more"><summary>What is due</summary>
       <div class="pb-split"><span>Kana \u2192 kanji <b>${sc.f.KWW}</b></span><span>Kanji \u2192 kana <b>${sc.f.KWR}</b></span>${sc.f.other ? `<span>Single kanji <b>${sc.f.other}</b></span>` : ''}</div>
-      <dl class="pb-guide"><dt>Drill Lesson</dt><dd>first pass over the next lesson's new kanji</dd><dt>Review</dt><dd>cards scheduled for today, from any lesson</dd><dt>Start practice</dt><dd>every word in the lessons you pick above, any time; answers still count toward your schedule</dd></dl>
+      <dl class="pb-guide"><dt>Drill Lesson</dt><dd>first pass over the next lesson's new kanji</dd><dt>Review</dt><dd>${sc.scoped ? 'cards due today, only from the lessons picked above' : 'cards due today, from every lesson'}</dd><dt>Start practice</dt><dd>every word in the lessons picked above, any time. Each answer updates your schedule; Learn does not</dd></dl>
       ${rows ? `<div class="pb-lrow" aria-label="Most due lessons">${rows}</div>` : ''}
     </details>`;
 }
