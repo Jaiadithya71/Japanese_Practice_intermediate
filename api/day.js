@@ -25,7 +25,10 @@ export default async function handler(req, res) {
     source: `N3 app daily aggregate, ${date}`,
     dayStats: { uniqueItems, sessions, chapters: tidy(chapters), units: tidy(units) }
   };
-  const payload = JSON.stringify({ date, validateOnly: false, changes: [change] });
+  // Northstar's envelope date must be its current IST day; the posted summary
+  // date travels in change.entryDate, which Northstar accepts for any day from
+  // tracker start through today (this is what a cross-midnight session needs).
+  const payload = JSON.stringify({ date: istDateKey(0), validateOnly: false, changes: [change] });
   if (new TextEncoder().encode(payload).byteLength > 8000) return fail(res, 413, 'Daily summary exceeds 8 KB');
   try {
     const response = await fetch(NORTHSTAR_DAY_API, { method: 'POST', headers: { 'content-type': 'application/json', accept: 'application/json' }, body: payload });
