@@ -281,6 +281,7 @@ body .pb-card .pb-btn.ghost:not(:disabled){background:transparent;border-color:r
 body .pb-card .pb-two{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;min-height:48px;line-height:1.2}
 body .pb-card .pb-t{font-size:.8rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 body .pb-card .pb-s{font-size:.68rem;font-weight:600;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+body .pb-card .pb-btn.ghost:disabled{background:rgba(255,255,255,.05);color:var(--text-muted)}
 body .pb-card .pb-btn.ghost .pb-s{color:var(--text-muted)}
 #pb-kanji .pb-note{margin:.1rem 0 0;font-size:.72rem;line-height:1.45;color:var(--text-muted)}
 #pb-kanji .pb-more{margin-top:-.15rem;border-top:1px solid rgba(255,255,255,.06);padding-top:.1rem}
