@@ -218,6 +218,6 @@ async function initApp() {
   console.log('Nihongo Intermediate initialized successfully.');
 }
 
-import './pillar-banner.js?v=5';
+import './pillar-banner.js?v=6';
 
 window.addEventListener('DOMContentLoaded', initApp);

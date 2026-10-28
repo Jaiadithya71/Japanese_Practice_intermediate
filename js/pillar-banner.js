@@ -265,7 +265,7 @@ function injectStyle() {
 .pb-overview-head{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}
 #pb-kanji{gap:.65rem;padding:1rem;border-color:rgba(212,175,106,.2);background:linear-gradient(135deg,rgba(212,175,106,.045),transparent 65%),var(--bg-card,#141821)}
 #pb-kanji .pb-streak.hot{color:var(--accent,#d4af6a)}
-#pb-kanji .pb-due.has{background:var(--accent-light);color:var(--accent)}
+body .pb-card .pb-due.has{background:var(--accent-light);color:var(--accent)}
 #pb-kanji .pb-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.35rem}
 #pb-kanji .pb-stats span{display:flex;flex-direction:column;gap:.12rem;font-size:.68rem}
 #pb-kanji .pb-stats b{font-size:1.05rem;line-height:1.2;margin:0;font-variant-numeric:tabular-nums}
@@ -275,9 +275,9 @@ function injectStyle() {
 .pb-segment-mastered{background:#34d399}.pb-segment-learning{background:var(--accent,#d4af6a)}.pb-segment-hard{background:#f87171}.pb-segment-new{background:#424d61}
 #pb-kanji .pb-next{display:block;padding-top:.65rem}
 #pb-kanji .pb-v{font-size:.8rem;line-height:1.5;margin:.2rem 0 .6rem;color:var(--text)}
-#pb-kanji .pb-btn{min-height:42px;background:linear-gradient(135deg,#e6cb91,#c49c52);color:#171d2b;width:100%}
-#pb-kanji .pb-btn.ghost{background:transparent;border-color:rgba(212,175,106,.28);color:var(--accent)}
-#pb-kanji .pb-actions{margin-top:-.2rem}#pb-kanji .pb-actions .pb-btn{flex:1;min-width:0;width:auto;padding:.5rem .45rem;font-size:.74rem}
+body .pb-card .pb-btn{min-height:42px;background:linear-gradient(135deg,#e6cb91,#c49c52);color:#171d2b;width:100%}
+body .pb-card .pb-btn.ghost:not(:disabled){background:transparent;border-color:rgba(212,175,106,.28);color:var(--accent)}
+#pb-kanji .pb-actions{margin-top:-.2rem}body .pb-card .pb-actions .pb-btn{flex:1;min-width:0;width:auto;padding:.5rem .45rem;font-size:.74rem}
 body .pb-card .pb-two{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.1rem;min-height:48px;line-height:1.2}
 body .pb-card .pb-t{font-size:.8rem;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
 body .pb-card .pb-s{font-size:.68rem;font-weight:600;opacity:.78;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
