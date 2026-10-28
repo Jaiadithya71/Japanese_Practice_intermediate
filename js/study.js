@@ -520,7 +520,8 @@ function renderCardContent() {
   // ==========================================
   if (item.type === 'kanji_word') {
     const dir = item.direction || state.kanjiStudyDirection || 'ja-kana';
-    if (lessonTag) lessonTag.textContent = `L${item.lesson_number} · ${item.baseKanji || 'Kanji'}`;
+    if (lessonTag) lessonTag.textContent = state.cardFlipped
+      ? `L${item.lesson_number} · ${item.baseKanji || 'Kanji'}` : 'Kanji practice';
 
     if (!state.cardFlipped) {
       if (dir === 'ja-kana') {

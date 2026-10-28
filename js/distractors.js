@@ -211,6 +211,10 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
   const t = norm(target);
   const words = (universe || []).map(norm).filter(w => w.term && !/[^\u3041-\u3096\u30a0-\u30ff\u3400-\u9fff々ー]/.test(w.term));
   const poolTerms = new Set((opts.pool || []).map(w => norm(w).term));
+  // Curriculum occurrence is a familiarity proxy, not a general-Japanese
+  // frequency claim. It prevents exotic glyph swaps outranking known words.
+  const familiar = new Map();
+  for (const w of words) for (const ch of kanjiChars(w.term)) familiar.set(ch, (familiar.get(ch) || 0) + 1);
   const tKanji = kanjiChars(t.term);
   const tOkuri = okuriganaOf(t.term);
   const tEnd = tOkuri ? Array.from(tOkuri).pop() : ''; // hard rule: same final okurigana kana; longer shared endings score higher
@@ -287,19 +291,29 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
       s += 3 * dice(w.term, t.term) + commonPrefix(w.term, t.term) + commonSuffix(w.term, t.term);
       s += 3 * dice(w.reading, t.reading);                    // sounds similar too
       if (poolTerms.has(w.term) || (t.lesson != null && w.lesson === t.lesson)) s += 1;
+      // For multi-character spellings, prefer actual vocabulary over invented
+      // strings. Keep the final inflection kana when the target has one.
+      if (tLen > 1 && tEnd && !w.term.endsWith(tEnd)) continue;
+      if (tLen > 1) s += 250 + 100 * shared + (okuriganaOf(w.term) === tOkuri ? 140 : 0);
       push(w.term, s, 'word');
     }
     // synthetic look-alike / sound-family swaps, as the real exam uses near-miss characters
     const chars = Array.from(t.term);
     chars.forEach((c, i) => {
       if (!isKanji(c)) return;
-      const subs = shapeCandidates(c);
+      // Single-kanji choices remain real kanji; multi-character mutation is
+      // only a last-resort fallback, and uses characters seen in this book.
+      const subs = tLen === 1 ? shapeCandidates(c) : [...new Set([
+        ...shapeCandidates(c).filter(p => familiar.has(p)),
+        ...[...familiar.keys()].filter(p => p !== c).sort((a,b) =>
+          shapeSimilarity(c,b)-shapeSimilarity(c,a) || (familiar.get(b)-familiar.get(a)) || a.localeCompare(b)).slice(0,16)
+      ])];
       for (const p of subs) {
         const a = chars.slice(); a[i] = p;
         const cand = a.join('');
         if (cand === t.term) continue;
         const real = words.some(w => w.term === cand);
-        push(cand, 16 + 28 * (tKanji.length - 1) + 2 * shapeSimilarity(c,p) + (real ? 2 : 0), 'shape');
+        push(cand, 16 + 28 * (tKanji.length - 1) + 2 * shapeSimilarity(c,p) + (real ? 250 : 0), 'shape');
       }
     });
   } else {

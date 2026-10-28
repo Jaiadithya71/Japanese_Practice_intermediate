@@ -16,7 +16,7 @@ import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from 
 import { startStudy, renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
-import { pickDistractors } from './distractors.js?v=20261022-meaning';
+import { pickDistractors } from './distractors.js?v=20261029-options';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
@@ -1326,7 +1326,10 @@ export function renderKanjiQuizCard(item) {
       ? '<span class="badge" style="background: rgba(236,72,153,0.18); border: 1px solid #ec4899; color: #f472b6; font-size: 0.78rem; font-weight: 700;">意味 (Kanji → English)</span>'
       : `<span class="badge badge-purple" style="font-size: 0.78rem;">漢字読み (Kanji → Kana)${sectionNote}</span>`);
 
-  if (lessonTag) lessonTag.textContent = `Quick Quiz · 漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`;
+  // Lesson and parent-kanji are teaching metadata, not pre-answer hints.
+  if (lessonTag) lessonTag.textContent = item.answered
+    ? `Quick Quiz · 漢字第${item.lesson_number}課 · 親漢字「${item.baseKanji || '漢字'}」`
+    : 'Quick Quiz';
 
   if (dir === 'ja-kana') {
     termEl.innerHTML = `
