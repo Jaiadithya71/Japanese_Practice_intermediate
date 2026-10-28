@@ -448,8 +448,12 @@
 #kanji-activity-detail .activity-inline-count { color: var(--text); font-weight: 700; }
 #view-kanji .kanji-guided-row p { margin: 0 0 .35rem; color: var(--text-dim); font-size: .75rem; }
 
-/* Kanji setup simplification (2026-10-27): one obvious Start, subsets under Advanced */
-#view-kanji .kanji-start-buttons { grid-template-columns: 1fr; margin-top: 12px; }
+/* Kanji setup simplification (2026-10-27): one obvious Start, subsets under Advanced.
+   2026-10-28: Learn (flip cards, no grading) promoted next to Start practice at his ask. */
+#view-kanji .kanji-start-buttons { grid-template-columns: 1fr 1fr; margin-top: 12px; }
+@media (max-width: 600px) {
+  #view-kanji .kanji-start-buttons .btn { font-size: .78rem; padding: .5rem .3rem; gap: .35rem; }
+}
 #view-kanji .kanji-start-hint { color: var(--text-muted); font-size: .76rem; margin: 6px 0 8px; min-height: 1.1em; }
 #view-kanji .home-run-setting[hidden] { display: none; }
 #view-kanji .kanji-advanced { margin-top: 6px; border-top: 1px solid var(--border); }

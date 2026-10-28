@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="css/home.css?v=gold-1" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css" />
-  <link rel="stylesheet" href="css/kanji.css?v=20261027-heatmap" />
+  <link rel="stylesheet" href="css/kanji.css?v=20261028-learnbtn" />
   <link rel="stylesheet" href="css/study.css?v=3.1" />
   <link rel="stylesheet" href="css/test.css" />
   <link rel="stylesheet" href="css/responsive.css" />
@@ -234,6 +234,7 @@
         <p id="kanji-picker-summary" class="home-picker-summary" aria-live="polite"></p>
         <div class="home-picker-buttons kanji-start-buttons">
           <button class="btn btn-primary" id="btn-kanji-start" onclick="startKanjiActivity()"><i class="fa-solid fa-play"></i> Start practice</button>
+          <button class="btn btn-secondary" id="btn-kanji-learn" onclick="startKanjiLearn()"><i class="fa-solid fa-clone"></i> Learn: flip cards, no grading</button>
         </div>
         <p id="kanji-start-hint" class="kanji-start-hint"></p>
         <details class="kanji-advanced">
@@ -248,7 +249,6 @@
             </select></label>
             <label class="home-run-check"><input id="kanji-picker-hard" type="checkbox" onchange="toggleKanjiHardOnly()"> Drill hard words only</label>
             <div class="kanji-advanced-divider">Other ways to study</div>
-            <button class="btn btn-secondary" id="btn-kanji-learn" onclick="startKanjiLearn()"><i class="fa-solid fa-clone"></i> Learn: flip cards, no grading</button>
             <label class="home-run-setting" id="kanji-setting-exam"><span>Test sections</span><select id="kanji-exam-mode" aria-label="Kanji test sections">
               <option value="mixed">Both: reading, then writing</option><option value="reading">Reading only (kanji &rarr; kana)</option><option value="writing">Writing only (kana &rarr; kanji)</option>
             </select></label>
