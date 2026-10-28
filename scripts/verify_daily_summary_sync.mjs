@@ -96,6 +96,26 @@ assert.equal(values.has(QUEUE_KEY), false, '4xx rejection is not queued for retr
 postBehavior.mode = 'ok';
 console.log('3 passed: permanent rejections are dropped, not retried');
 
+// 3b. Retry exhaustion: after the attempt cap the entry is dropped (the Gist
+// daylog still holds the day), and the next session end recovers cleanly.
+postBehavior.mode = 'fail';
+sync.beginGistReviewSession();
+await sync.endGistReviewSession();
+for (let i = 0; i < 10; i++) {
+  const q = JSON.parse(values.get(QUEUE_KEY) || '[]');
+  if (!q.length) break;
+  q[0].nextRetryAt = 0;
+  values.set(QUEUE_KEY, JSON.stringify(q));
+  await sync.flushDailySummaryQueue();
+}
+assert.equal(values.has(QUEUE_KEY), false, 'entry is dropped after the attempt cap');
+postBehavior.mode = 'ok';
+sync.beginGistReviewSession();
+await sync.endGistReviewSession();
+assert.equal(postBehavior.bodies.at(-1).reviewsDone, 102, 'recovery: the next session posts the merged total again');
+assert.equal(values.has(QUEUE_KEY), false, 'queue is healthy after recovery');
+console.log('3b passed: retry exhaustion drops cleanly; the next session recovers');
+
 // 4. Proxy accepts today and yesterday IST and forwards the posted date;
 //    older dates are rejected.
 const dayHandler = (await import('../api/day.js')).default;
