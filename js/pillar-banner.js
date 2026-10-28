@@ -5,6 +5,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { kanjiReviewPlan } from './kanji-review-options.js';
 import { getDueItemsCount, getItemStatus, getPillarFromKey, getFacetFromKey, resolveItemForKey, isCatchUpMode } from './srs.js';
 import { getCurrentStreak, getDay } from './daylog.js';
 import { istDateKey } from './time.js';
@@ -175,43 +176,26 @@ function dueScope(p) {
     return { total, inScope: vs ? n : total, batch: Math.min(batchCap, vs ? n : total), scoped: !!vs };
   }
   if (p !== 'kanji') return { total, inScope: total, batch: Math.min(batchCap, total), scoped: false };
-  const sel = (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0)
-    ? state.selectedDueKanjiLessons
-    : (state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0 ? state.kanjiSelectedLessons : null);
-  const f = { KWW: 0, KWR: 0, other: 0 };
-  const byLesson = {};
-  let inScope = 0;
-  for (const key in (state.stats || {})) {
-    const st = state.stats[key];
-    if (!st || !st.nextDue || st.nextDue > now || key.startsWith('KWM:')) continue;
-    if (getPillarFromKey(key) !== 'kanji') continue;
-    const l = resolveItemForKey(key, st).lesson_number;
-    if (sel && l && !sel.has(l) && !sel.has(Number(l)) && !sel.has(String(l))) continue;
-    inScope++;
-    const fc = getFacetFromKey(key);
-    if (fc === 'KWW' || fc === 'KWR') f[fc]++; else f.other++;
-    if (l) byLesson[l] = (byLesson[l] || 0) + 1;
-  }
-  const lessons = Object.keys(byLesson).map(Number).sort((a, b) => byLesson[b] - byLesson[a] || a - b);
-  return { total, inScope, batch: Math.min(batchCap, inScope), scoped: !!sel, selSize: sel ? sel.size : 0, f, byLesson, lessons };
+  const plan = kanjiReviewPlan();
+  return { total, inScope: plan.pool.length, batch: plan.items.length, scoped: plan.scoped };
 }
 
-function kanjiDueNote(d) {
-  const sc = dueScope('kanji');
-  if (!sc.inScope) return '';
-  // getAllDueItems orders every kana -> kanji card first, then kanji -> kana, then the rest, and cuts the batch from the top.
-  const w = Math.min(sc.batch, sc.f.KWW), r = Math.min(sc.batch - w, sc.f.KWR), o = sc.batch - w - r;
-  const parts = [w && `${w} kana \u2192 kanji`, r && `${r} kanji \u2192 kana`, o && `${o} single kanji`].filter(Boolean).join(' + ');
-  const left = sc.inScope - sc.batch;
-  const scope = `${sc.scoped ? `Only the ${sc.selSize} lesson${sc.selSize === 1 ? '' : 's'} picked above. ` : ''}${left > 0 ? `${left} more wait for the next round.` : 'That clears everything due.'}`;
-  const order = `This round: ${parts}.`;
-  const rows = sc.lessons.slice(0, 6).map(l => `<span class="pb-lchip">L${l}<b>${sc.byLesson[l]}</b></span>`).join('');
-  return `<p class="pb-note">${order} ${scope}</p>
-    <details class="pb-more"><summary>What is due</summary>
-      <div class="pb-split"><span>Kana \u2192 kanji <b>${sc.f.KWW}</b></span><span>Kanji \u2192 kana <b>${sc.f.KWR}</b></span>${sc.f.other ? `<span>Single kanji <b>${sc.f.other}</b></span>` : ''}</div>
-      <dl class="pb-guide"><dt>Drill Lesson</dt><dd>first pass over the next lesson's new kanji</dd><dt>Review</dt><dd>${sc.scoped ? 'cards due today, only from the lessons picked above' : 'cards due today, from every lesson'}</dd><dt>Start practice</dt><dd>every word in the lessons picked above, any time. Each answer updates your schedule; Learn does not</dd></dl>
-      ${rows ? `<div class="pb-lrow" aria-label="Most due lessons">${rows}</div>` : ''}
-    </details>`;
+let reviewOptionsOpen = false;
+const optionButton = (label, selected, action) => `<button type="button" class="pb-option ${selected ? 'selected' : ''}" aria-pressed="${selected}" onclick="${action}">${label}</button>`;
+function kanjiDueNote() {
+  const plan = kanjiReviewPlan();
+  const n = plan.items.length;
+  const parts = [plan.round.writing && `${plan.round.writing} writing`, plan.round.reading && `${plan.round.reading} reading`, plan.round.single && `${plan.round.single} single kanji`].filter(Boolean).join(' + ');
+  const sel = state.selectedDueKanjiLessons || new Set();
+  const lessons = [...new Set([...Object.keys(plan.byLesson).map(Number), ...sel].map(Number))].sort((a,b) => a-b);
+  return `<p class="pb-note" aria-live="polite">${n ? `This round: ${parts}. ${plan.pool.length - n} more in this selection.` : 'Nothing due for these options. Try another direction or lesson.'}</p>
+  <details class="pb-more pb-options" ${reviewOptionsOpen ? 'open' : ''} ontoggle="window.__pbOptionsOpen(this.open)"><summary>Review options <span>${state.dueBatchSize === 'all' ? 'All' : (state.dueBatchSize || 20)} · ${state.kanjiDueDirection || 'both'}${sel.size ? ` · ${sel.size} lesson${sel.size === 1 ? '' : 's'}` : ' · all lessons'}</span></summary>
+    <div class="pb-control"><span class="pb-control-label">Round size</span><div class="pb-choice">${[10,20,40,'all'].map(v => optionButton(v === 'all' ? 'All' : v, String(state.dueBatchSize || 20) === String(v), `window.__pbOption('batch','${v}')`)).join('')}</div></div>
+    <p class="pb-note">${plan.catchUp ? 'Catch-up active: maximum 40 cards per round, even with All.' : 'All runs every selected due card. Catch-up rounds are capped at 40.'}</p>
+    <div class="pb-control"><span class="pb-control-label">Word direction</span><div class="pb-choice">${[['reading','Reading'],['writing','Writing'],['both','Both']].map(([v,label]) => optionButton(label, (state.kanjiDueDirection || 'both') === v, `window.__pbOption('direction','${v}')`)).join('')}</div><p class="pb-note">Reading: kanji → kana. Writing: kana → kanji. Both keeps writing first, then reading.</p></div>
+    <label class="pb-single"><input type="checkbox" ${state.kanjiDueSingle !== false ? 'checked' : ''} onchange="window.__pbOption('single',this.checked)"> Include single-kanji cards <span>${plan.available.filter(i=>i.facet==='K').length} due</span></label>
+    <div class="pb-control"><span class="pb-control-label">Due lessons <small>Separate from practice</small></span><div class="pb-choice pb-lessons">${optionButton('All due lessons', !sel.size, "window.__pbOption('allLessons',true)")}${lessons.map(l => optionButton(`L${l} <b>${plan.byLesson[l] || 0}</b>`, sel.has(l) || sel.has(String(l)), `window.__pbOption('lesson',${l})`)).join('')}</div><p class="pb-note">${lessons.length ? 'Counts match the directions above. Tap lessons to select more than one; All clears the filter.' : 'No lessons due right now.'}</p></div>
+  </details>`;
 }
 
 function reviewBtn(p, d) {
@@ -297,6 +281,14 @@ body .pb-card .pb-btn.ghost .pb-s{color:var(--text-muted)}
 .pb-actions .pb-btn.pb-two{flex:1;min-width:0}
 #pb-kanji .pb-guide{display:grid;grid-template-columns:auto 1fr;gap:.25rem .75rem;margin:.5rem 0 .2rem;font-size:.72rem;line-height:1.4;color:var(--text-muted)}
 #pb-kanji .pb-guide dt{font-weight:800;color:var(--text);white-space:nowrap}#pb-kanji .pb-guide dd{margin:0}
+#pb-kanji .pb-options summary{min-height:44px;flex-wrap:wrap;color:var(--text)}
+#pb-kanji .pb-options summary span{font-size:.65rem;color:var(--text-muted);font-weight:500}
+#pb-kanji .pb-control{margin:.65rem 0}.pb-control-label{display:block;font-size:.75rem;font-weight:700;margin-bottom:.35rem}.pb-control-label small{font-weight:400;color:var(--text-muted);margin-left:.4rem}
+#pb-kanji .pb-choice{display:flex;flex-wrap:wrap;gap:.35rem}
+#pb-kanji .pb-option{min-height:44px;padding:.45rem .7rem;border:1px solid var(--border,#2a2f3a);border-radius:9px;background:transparent;color:var(--text-muted);font:inherit;font-size:.75rem;cursor:pointer}
+#pb-kanji .pb-option.selected{border-color:var(--accent,#d4af6a);background:rgba(212,175,106,.14);color:var(--accent,#d4af6a);font-weight:700}
+#pb-kanji .pb-option b{margin-left:.4rem;font-size:.7rem;opacity:.8}
+#pb-kanji .pb-single{display:flex;align-items:center;flex-wrap:wrap;gap:.4rem;min-height:44px;font-size:.75rem;cursor:pointer}#pb-kanji .pb-single input{width:20px;height:20px;accent-color:var(--accent,#d4af6a)}#pb-kanji .pb-single span{color:var(--text-muted);font-size:.68rem}
 @media(min-width:900px){.pb-overview{grid-template-columns:repeat(4,1fr)}}
 `;
   document.head.appendChild(s);
@@ -323,6 +315,7 @@ export function renderPillarBanners() {
       if (header && header.nextSibling) header.parentNode.insertBefore(el, header.nextSibling);
       else view.prepend(el);
     }
+    if (p === 'kanji' && el.querySelector('.pb-options')) reviewOptionsOpen = el.querySelector('.pb-options').open;
     el.innerHTML = bannerHtml(p, dataByP[p], false);
     if (p === 'kanji') {
       const picker = view.querySelector('.home-lessons-card');
@@ -352,10 +345,24 @@ function signature() {
   const n = state.stats ? Object.keys(state.stats).length : 0;
   let sum = 0;
   if (state.stats) for (const k in state.stats) { const s = state.stats[k]; sum += (s.reps || 0) + (s.correct || 0) + (s.incorrect || 0); }
-  return `${state.currentView}|${n}|${sum}|${Object.keys(state.vocabDB || {}).length}|${Object.keys(state.kanjiDB || {}).length}`;
+  return `${state.currentView}|${n}|${sum}|${Object.keys(state.vocabDB || {}).length}|${Object.keys(state.kanjiDB || {}).length}|${state.dueBatchSize}|${state.kanjiDueDirection}|${state.kanjiDueSingle}|${[...(state.selectedDueKanjiLessons || [])].join(',')}`;
 }
 
 if (typeof window !== 'undefined') {
+  window.__pbOptionsOpen = open => { reviewOptionsOpen = open; };
+  window.__pbOption = (kind, value) => {
+    if (kind === 'batch') state.dueBatchSize = value;
+    if (kind === 'direction') state.kanjiDueDirection = value;
+    if (kind === 'single') state.kanjiDueSingle = value;
+    if (!(state.selectedDueKanjiLessons instanceof Set)) state.selectedDueKanjiLessons = new Set();
+    if (kind === 'allLessons') state.selectedDueKanjiLessons.clear();
+    if (kind === 'lesson') {
+      const set = state.selectedDueKanjiLessons;
+      if (set.has(value) || set.has(String(value))) { set.delete(value); set.delete(String(value)); }
+      else set.add(value);
+    }
+    renderPillarBanners();
+  };
   window.__pbNext = p => { const a = actions[p]; if (a && a.nextAction) a.nextAction(); };
   window.__pbDue = p => startDueReview(p);
   window.renderPillarBanners = renderPillarBanners;

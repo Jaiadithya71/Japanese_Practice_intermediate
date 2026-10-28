@@ -45,6 +45,8 @@ export const state = {
   kanjiRunBatchRun: false,
   kanjiRunMode: 'flashcard',// 'flashcard' | 'kanji_quiz'
   selectedDueKanjiLessons: new Set(),
+  kanjiDueDirection: 'both', // Independent due-review direction
+  kanjiDueSingle: true,     // Include due single-character cards
   kanjiFilter: 'all',       // 'all' | 'learning' | 'hard' | 'mastered' | 'unseen'
   kanjiSearchQuery: '',
   kanjiExerciseLesson: 1,   // Active exercise lesson

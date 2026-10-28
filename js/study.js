@@ -5,6 +5,7 @@ import { createStudyHistory } from './study-history.js';
    ======================================================= */
 
 import { state } from './state.js';
+import { kanjiReviewPlan } from './kanji-review-options.js';
 import { renderVocabularyKanjiBreakdown } from './vocab-kanji-breakdown.js';
 import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
 
@@ -107,13 +108,11 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
     } else if (pillarFilter === 'kanji') {
       if (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0) {
         chapterFilter = state.selectedDueKanjiLessons;
-      } else if (state.kanjiSelectedLessons && state.kanjiSelectedLessons.size > 0) {
-        chapterFilter = state.kanjiSelectedLessons;
       }
     }
   }
 
-  const pool = getAllDueItems(pillarFilter, state.dueBatchSize, chapterFilter);
+  const pool = pillarFilter === 'kanji' ? kanjiReviewPlan(chapterFilter || state.selectedDueKanjiLessons).items : getAllDueItems(pillarFilter, state.dueBatchSize, chapterFilter);
 
   if (pool.length === 0) {
     alert('No due items right now for this filter! Great job staying caught up.');

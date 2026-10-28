@@ -716,7 +716,7 @@ export function resolveItemForKey(key, stats) {
  * Returns prioritized and interleaved due review items (doc 02 §6.1, ME-9, ME-10).
  * Supports optional chapterFilter (Set or Array of chapter IDs or lesson numbers).
  */
-export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null) {
+export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null, options = {}) {
   const now = Date.now();
   const pool = [];
   if (!state.stats) return [];
@@ -734,6 +734,7 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null)
     // The stats records are kept untouched; the facet is just not served.
     if (key.startsWith('KWM:')) continue;
 
+    if (options.facets && !options.facets.has(getFacetFromKey(key))) continue;
     const itemPillar = getPillarFromKey(key);
     if (pillar !== 'all' && pillar !== itemPillar) continue;
 
@@ -770,6 +771,8 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null)
         ...pool.filter(i => i.facet !== 'KWW' && i.facet !== 'KWR')
       ]
     : interleaveQueue(pool, 3);
+
+  if (options.uncapped) return interleaved;
 
   // 3. Batch sizing & Catch-up mode per-session cap (40 cards)
   if (limit === 'all') {
