@@ -9,7 +9,8 @@ export function kanjiReviewPlan(lessons = state.selectedDueKanjiLessons) {
   const pool = getAllDueItems('kanji', 'all', lessons, { facets, uncapped: true });
   const catchUp = isCatchUpMode();
   const requested = state.dueBatchSize === 'all' ? Infinity : (parseInt(state.dueBatchSize, 10) || 20);
-  const cap = catchUp ? Math.min(requested, 40) : requested;
+  // Explicit All is an opt-in to the entire selection, even during catch-up.
+  const cap = state.dueBatchSize === 'all' ? Infinity : (catchUp ? Math.min(requested, 40) : requested);
   const items = pool.slice(0, cap);
   const count = rows => ({ writing: rows.filter(i => i.facet === 'KWW').length, reading: rows.filter(i => i.facet === 'KWR').length, single: rows.filter(i => i.facet === 'K').length });
   const byLesson = {};

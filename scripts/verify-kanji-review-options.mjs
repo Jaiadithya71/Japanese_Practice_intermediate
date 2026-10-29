@@ -7,7 +7,7 @@ for(let l=1;l<=3;l++) for(let n=0;n<50;n++) {const word=`word-${l}-${n}`;state.k
 const original=JSON.stringify(state.stats);
 for(const direction of ['reading','writing','both']) for(const single of [false,true]) for(const batch of [10,20,40,'all']) for(const lessons of [[],[1],[1,2]]){
 state.kanjiDueDirection=direction;state.kanjiDueSingle=single;state.dueBatchSize=batch;state.selectedDueKanjiLessons=new Set(lessons);
-const p=kanjiReviewPlan();assert(p.items.length<=40);assert.equal(p.items.length,batch==='all'?40:batch);
+const p=kanjiReviewPlan();if(batch!=='all')assert(p.items.length<=40);assert.equal(p.items.length,batch==='all'?p.pool.length:batch);
 assert(p.items.every(i=>i.facet!=='KWM'));if(!single)assert(p.items.every(i=>i.facet!=='K'));
 if(direction==='reading')assert(p.items.every(i=>i.facet==='KWR'||i.facet==='K'));
 if(direction==='writing')assert(p.items.every(i=>i.facet==='KWW'||i.facet==='K'));
@@ -19,4 +19,4 @@ state.stats={};state.dueBatchSize='all';assert.equal(kanjiReviewPlan().items.len
 state.kanjiDB={a:{lesson_number:1,words:[{term_ja:'a'}]}};state.stats={'KWR:a':{nextDue:Date.now()-1000}};state.selectedDueKanjiLessons=new Set();state.kanjiDueDirection='reading';state.kanjiDueSingle=false;assert.equal(kanjiReviewPlan().items.length,1);assert.equal(kanjiReviewPlan().catchUp,false);
 state.stats={};for(let n=0;n<50;n++)state.stats[`KWR:a${n}`]={nextDue:Date.now()-1000};assert.equal(kanjiReviewPlan().items.length,50);
 const source=fs.readFileSync('js/study.js','utf8').split('export function startDueReview')[1].split('const seenIt')[0];assert(source.includes('kanjiReviewPlan(chapterFilter || state.selectedDueKanjiLessons).items'));assert(!source.includes('kanjiSelectedLessons'));
-console.log('72 option combinations: facets, lessons, batches,40 cap, empty/non-catch-up and shared launch plan pass. No records written.');
+console.log('72 option combinations: facets, lessons, batches,numeric40 cap,uncapped All, empty/non-catch-up and shared launch plan pass. No records written.');

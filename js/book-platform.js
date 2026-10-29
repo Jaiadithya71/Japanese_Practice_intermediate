@@ -782,7 +782,7 @@ export const N3BookPlatform = {
     renderKanjiSRSPane();
   },
   startPillarSRS: (pillar) => {
-    const limit = activeBatches[pillar] === 'all' ? 100 : parseInt(activeBatches[pillar], 10);
+    const limit = activeBatches[pillar] === 'all' ? (pillar === 'kanji' ? 'all' : 100) : parseInt(activeBatches[pillar], 10);
     state.dueBatchSize = limit;
     let filter = null;
     if (pillar === 'vocab') {
