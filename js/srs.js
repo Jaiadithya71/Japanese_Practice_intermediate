@@ -434,6 +434,91 @@ export function getMeaningFacetKey(term) {
   return `KWM:${term}`;
 }
 
+
+function kataToHira(s) {
+  return String(s || '').replace(/[\u30a1-\u30f6]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60));
+}
+function cleanKana(s) {
+  return kataToHira(s).replace(/[()\uff08\uff09\u301c~\u3001\s]/g, '');
+}
+function readingCore(rd) {
+  return cleanKana(String(rd || '').split('\u30fb')[0].split('.')[0]);
+}
+function readingFull(rd) {
+  return cleanKana(String(rd || '').replace(/\u30fb/g, ''));
+}
+const RENDAKU = { '\u304b': '\u304c', '\u304d': '\u304e', '\u304f': '\u3050', '\u3051': '\u3052', '\u3053': '\u3054', '\u3055': '\u3056', '\u3057': '\u3058', '\u3059': '\u305a', '\u305b': '\u305c', '\u305d': '\u305e', '\u305f': '\u3060', '\u3061': '\u3062', '\u3064': '\u3065', '\u3066': '\u3067', '\u3068': '\u3069', '\u306f': '\u3070', '\u3072': '\u3073', '\u3075': '\u3076', '\u3078': '\u3079', '\u307b': '\u307c' };
+function rendakuForm(s) {
+  return s ? (RENDAKU[s[0]] || s[0]) + s.slice(1) : s;
+}
+const isKanjiChar = c => c >= '\u4e00' && c <= '\u9fff';
+
+/**
+ * Does one recorded word demonstrably exercise one listed reading of its kanji?
+ * Validated against the book's explicit per-kanji ruby annotations; never a
+ * bare substring claim - rendaku, okurigana and inflection variants make that
+ * assign a reading to the wrong kanji or form:
+ * - Listing with okurigana (\u304a\u30fb\u3059): the word must BE that inflected form -
+ *   exact reading match for a single-kanji word (honorific \u304a/\u3054 prefix
+ *   allowed), or the full form (or its rendaku variant, \u4e57\u308a\u8d8a\u3059 \u2283 \u3053\u3059)
+ *   contained in a compound. \u62bc\u3059 must not cover \u304a\u30fb\u3055\u3048\u308b.
+ * - Plain listing (\u30b7, \u304b\u305f): the reading is a morpheme; containment in the
+ *   word's reading is the match (\u5e02\u5834 \u2283 \u3044\u3061).
+ */
+function wordCoversReading(wordReading, term, char, listing) {
+  const wr = cleanKana(wordReading || '');
+  const core = readingCore(listing);
+  const full = readingFull(listing);
+  if (!core || !wr) return false;
+  const kanjiChars = [...term].filter(isKanjiChar);
+  const single = kanjiChars.length === 1 && kanjiChars[0] === char;
+  if (full !== core) {
+    if (single) {
+      const variants = (wr.startsWith('\u304a') || wr.startsWith('\u3054')) ? [wr, wr.slice(1)] : [wr];
+      return variants.some(v => v === full);
+    }
+    return wr.includes(full) || wr.includes(rendakuForm(full));
+  }
+  return wr.includes(core);
+}
+
+/**
+ * Coverage-aware single-kanji serving dedup (user ask 2026-11-01: a practiced
+ * lesson must not come back as a separate single-kanji pass).
+ *
+ * A standalone single-kanji card (K:<char>) asks recall of the kanji's whole
+ * on/kun reading inventory - the same readings the word cards already train
+ * in context. The K: card is held back from review serving only when every
+ * listed on/kun reading is demonstrably exercised by at least one recorded
+ * KWR (kanji -> kana) word card containing the kanji:
+ * - Reading-direction answers only. A kana -> kanji (KWW) answer shows the
+ *   kanji can be produced from a given reading; it does not demonstrate
+ *   recalling the reading itself, so it is not coverage evidence.
+ * - Any recorded KWR outcome counts: a missed word stays in the SRS loop and
+ *   keeps training that reading. This is serving dedup, NOT a mastery claim -
+ *   no K: record is created, marked, or modified (same treatment as the
+ *   retired KWM facet below).
+ * - One answered word never retires a whole inventory: each listed reading
+ *   needs its own covering word (\u5e02 needs both \u3044\u3061 via \u5e02\u5834 AND \u30b7 via \u5e02\u6c11).
+ *   A kanji with any listed reading no recorded word exercises keeps its
+ *   standalone card, so readings only the standalone card teaches are
+ *   preserved.
+ */
+export function isKanjiReadingCovered(char, stats = state.stats) {
+  const k = (state.kanjiDB || {})[char];
+  if (!k || !Array.isArray(k.words)) return false;
+  const recorded = k.words.filter(w => {
+    const term = (w.term_ja || w.word || '').trim();
+    if (!term || !term.includes(char)) return false;
+    const s = stats && stats[`KWR:${term}`];
+    return s && ((s.reps || 0) > 0 || (s.correct || 0) > 0 || (s.incorrect || 0) > 0);
+  });
+  if (!recorded.length) return false;
+  const inventory = [...(k.onyomi || []), ...(k.kunyomi || [])].filter(r => readingCore(r));
+  return inventory.every(rd =>
+    recorded.some(w => wordCoversReading(w.reading, (w.term_ja || w.word || '').trim(), char, rd)));
+}
+
 // =======================================================
 // OMNI-REVIEW & MULTI-BOOK DUE ITEMS
 // =======================================================
@@ -454,6 +539,10 @@ export function getDueItemsCount(pillar = 'all', chapterFilter = null) {
     // KWM (Kanji -> English) is no longer served in review; keep the count in
     // step with getAllDueItems so "N due" matches the cards actually shown.
     if (key.startsWith('KWM:')) continue;
+
+    // Coverage-aware single-kanji guard: see isKanjiReadingCovered. Records
+    // untouched; kanji with readings no recorded word exercises stay served.
+    if (key.startsWith('K:') && isKanjiReadingCovered(key.slice(2))) continue;
 
     const itemPillar = getPillarFromKey(key);
     if (pillar !== 'all' && pillar !== itemPillar) continue;
@@ -733,6 +822,10 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null,
     // 2026-10-26: keep only kana <-> kanji, matching the Quick Quiz picker).
     // The stats records are kept untouched; the facet is just not served.
     if (key.startsWith('KWM:')) continue;
+
+    // Coverage-aware single-kanji guard: see isKanjiReadingCovered. Records
+    // untouched; kanji with readings no recorded word exercises stay served.
+    if (key.startsWith('K:') && isKanjiReadingCovered(key.slice(2))) continue;
 
     if (options.facets && !options.facets.has(getFacetFromKey(key))) continue;
     const itemPillar = getPillarFromKey(key);

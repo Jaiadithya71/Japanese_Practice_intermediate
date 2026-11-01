@@ -5,7 +5,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { getDueItemsCount, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey } from './srs.js';
+import { getDueItemsCount, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey, isKanjiReadingCovered } from './srs.js';
 import { startStudy, startOmniReview, startDueReview } from './study.js?v=4.4';
 import { exportBackup, importBackup, restoreSnapshot } from './backup.js';
 import { openSyncSetup } from './gist-sync.js';
@@ -395,6 +395,10 @@ export function renderKanjiSRSPane() {
   for (const key in (state.stats || {})) {
     const s = state.stats[key];
     if (!s || !s.nextDue || s.nextDue > now) continue;
+    // Match srs.getDueItemsCount: single-kanji cards whose listed readings
+    // are all exercised by recorded word cards are not double-counted
+    // (records untouched; uncovered readings keep the standalone card).
+    if (key.startsWith('K:') && isKanjiReadingCovered(key.slice(2))) continue;
     if (getPillarFromKey(key) === 'kanji') {
       const resolved = resolveItemForKey(key, s);
       const lNum = resolved.lesson_number;
