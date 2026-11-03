@@ -654,6 +654,7 @@ export function closeReadingWorkspace() {
   if (listSection) listSection.style.display = 'block';
   if (workspaceSection) workspaceSection.style.display = 'none';
 
+  renderReadingLessonChips();
   renderLessonList();
 }
 
