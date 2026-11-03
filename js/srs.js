@@ -91,7 +91,7 @@ export function getPillarFromKey(key) {
   if (key.startsWith('V:') || key.startsWith('VC:')) return 'vocab';
   if (key.startsWith('K:') || key.startsWith('K_EX:') || key.startsWith('KWR:') || key.startsWith('KWW:') || key.startsWith('KWM:')) return 'kanji';
   if (key.startsWith('G:') || key.startsWith('GD:') || key.startsWith('GS:') || key.startsWith('GT:') || key.startsWith('GC:')) return 'grammar';
-  if (key.startsWith('R_Q:') || key.startsWith('R_P:') || key.startsWith('RP:')) return 'reading';
+  if (key.startsWith('R_Q:') || key.startsWith('R_P:') || key.startsWith('RP:') || key.startsWith('RW:')) return 'reading';
   return 'other';
 }
 
@@ -211,6 +211,16 @@ export function getItemStatus(itemKey) {
     return 'learning';
   }
   return 'unseen';
+}
+
+/**
+ * Non-mutating getItemStatus: identical answer for existing records, 'unseen'
+ * for keys not yet in state.stats. Use in pickers/badges/filters so merely
+ * displaying an item never materializes an empty SRS record.
+ */
+export function peekItemStatus(itemKey) {
+  if (!state.stats || !state.stats[itemKey]) return 'unseen';
+  return getItemStatus(itemKey);
 }
 
 // Backwards compatibility for wordId
@@ -776,6 +786,33 @@ export function resolveItemForKey(key, stats) {
 
   if (facet === 'R_P') {
     return { id: key.replace(/^R_P:/, ''), type: 'reading_point', key, book: 'reading', stats, facet, pillar };
+  }
+
+  if (facet === 'RW') {
+    // Reading-passage word. Term/reading/meaning live on the stats record
+    // (reader.js addWordToMyWords / reading word drill); resolve fresh from
+    // the reading lessons when a match exists so edits propagate.
+    const term = key.replace(/^RW:/, '');
+    let found = null;
+    for (const lid in (state.readingDB || {})) {
+      const v = ((state.readingDB[lid] || {}).vocabulary || []).find(item => item.term === term);
+      if (v) { found = v; break; }
+    }
+    const reading = found?.reading || stats?.reading || '';
+    const meaning = found?.meaning || stats?.meaning || '';
+    return {
+      id: key,
+      key,
+      term_ja: term,
+      ruby_html: reading && reading !== term ? `<ruby>${term}<rt>${reading}</rt></ruby>` : term,
+      reading,
+      meaning_en: meaning,
+      type: 'vocab',
+      book: 'reading',
+      stats,
+      facet,
+      pillar
+    };
   }
 
   if (facet === 'GD') {

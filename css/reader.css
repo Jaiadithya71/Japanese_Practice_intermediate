@@ -278,3 +278,171 @@
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/* =======================================================
+   LESSON PICKER + BOOK MODE (2026-11-03)
+   Mirrors the Vocabulary Home / Kanji picker; book mode
+   browses passages and informative sections with no timer.
+   ======================================================= */
+
+.reading-start-hint {
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  margin: 6px 0 8px;
+  min-height: 1.1em;
+}
+
+#view-reading .home-lessons-card {
+  margin-bottom: 0.75rem;
+}
+
+#view-reading .reader-category-tabs {
+  margin: 0.25rem 0 0.1rem;
+}
+
+#view-reading #reading-card-browser {
+  margin-top: 0.25rem;
+}
+
+#view-reading #reading-card-browser .dokkai-grid {
+  padding-top: 0.5rem;
+}
+
+/* Book mode: jump row between lessons */
+.book-jump-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.book-jump-row .btn {
+  flex: 0 0 auto;
+}
+
+.book-jump-select {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 40px;
+  padding: 0.45rem 0.65rem;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-family: var(--font-jp), inherit;
+}
+
+/* Book mode: labelled content sections */
+.book-section {
+  margin-bottom: 1.25rem;
+}
+
+.book-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.55rem;
+}
+
+.book-keypoints {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.book-keypoint {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.7rem 0.85rem;
+}
+
+.book-drill-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.book-drill-title {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.book-drill-sub {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+.book-drill-sentence {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.book-drill-answer {
+  margin-top: 0.45rem;
+}
+
+.book-drill-answer > summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  list-style: none;
+}
+
+.book-drill-answer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.book-drill-answer > summary::before {
+  content: "\25B8  ";
+}
+
+.book-drill-answer[open] > summary::before {
+  content: "\25BE  ";
+}
+
+.book-advice-steps {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.book-footer-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.25rem 0 5.5rem; /* keep clear of the sticky toolbar */
+}
+
+/* Book mode keeps the passage pane open-ended instead of capped */
+.book-section .passage-scroll-pane {
+  max-height: none;
+  overflow-y: visible;
+}
+
+@media (max-width: 600px) {
+  .book-jump-row {
+    flex-wrap: wrap;
+  }
+  .book-jump-select {
+    order: -1;
+    flex: 1 1 100%;
+  }
+  .book-jump-row .btn {
+    flex: 1 1 0;
+  }
+}

@@ -669,14 +669,44 @@
       <div id="reading-pane-passages" class="pillar-pane active">
       <div id="dokkai-list-section">
 
-        <!-- Category Tabs -->
-        <div class="reader-category-tabs" id="reader-category-tabs">
-          <!-- Rendered dynamically -->
-        </div>
+        <!-- Lesson picker (mirrors Vocabulary Home / Kanji tab) -->
+        <section class="home-lessons-card" aria-labelledby="reading-picker-title">
+          <div class="home-picker-heading">
+            <h3 id="reading-picker-title">Select lessons</h3>
+            <span id="reading-picker-heading-meta" class="kanji-picker-heading-meta">54 lessons</span>
+          </div>
 
-        <div class="dokkai-grid" id="dokkai-grid-container">
-          <!-- Rendered dynamically -->
-        </div>
+          <!-- Category Tabs (chapter groups) -->
+          <div class="reader-category-tabs" id="reader-category-tabs">
+            <!-- Rendered dynamically -->
+          </div>
+
+          <div class="home-picker-tools">
+            <button type="button" class="home-picker-action" id="reading-select-all"><i class="fa-solid fa-check-double"></i> Select All</button>
+            <button type="button" class="home-picker-action" id="reading-clear-selection"><i class="fa-solid fa-square-minus"></i> Clear</button>
+          </div>
+          <div id="reading-lesson-chips-row" class="home-lesson-grid" aria-label="Reading lessons"></div>
+          <p id="reading-picker-summary" class="home-picker-summary" aria-live="polite"></p>
+          <div class="home-picker-buttons">
+            <button class="btn btn-secondary" id="btn-reading-book" onclick="startReadingBook()"><i class="fa-solid fa-book-open"></i> Read as book</button>
+            <button class="btn btn-primary" id="btn-reading-practice" onclick="startReadingPractice()"><i class="fa-solid fa-play"></i> Start practice</button>
+          </div>
+          <div class="home-picker-buttons" style="margin-top: 0.5rem;">
+            <button class="btn btn-secondary" id="btn-reading-word-drill" onclick="startReadingWordDrill(false)"><i class="fa-solid fa-clone"></i> Word drill</button>
+            <button class="btn btn-secondary" id="btn-reading-hard-drill" onclick="startReadingWordDrill(true)"><i class="fa-solid fa-fire"></i> Hard word drill <span class="badge badge-red" id="reading-hard-count-badge" style="display:none;">0</span></button>
+          </div>
+          <p id="reading-start-hint" class="reading-start-hint"></p>
+        </section>
+
+        <!-- Classic lesson cards (status, best scores) -->
+        <details class="home-secondary-details" id="reading-card-browser">
+          <summary>Lesson cards: status &amp; best scores <i class="fa-solid fa-chevron-down"></i></summary>
+          <div class="home-secondary-content">
+            <div class="dokkai-grid" id="dokkai-grid-container">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </details>
       </div>
 
       <!-- Section B: Active Reading Workspace -->

@@ -75,6 +75,8 @@ export const state = {
 
   // Dokkai Reading State (Book 2)
   readingCategory: 'all', // 'all' | 'foundation' | 'strategy' | 'real_short' | 'real_medium' | 'real_long' | 'info'
+  readingSelectedLessons: new Set(),
+  readingSelectionEmpty: true, // None until a lesson or Select All is chosen (mirrors kanji picker).
   activeReadingLesson: null,
   showSentenceTranslations: false,
   readingAnswers: {},    // { [questionId]: selectedOption }

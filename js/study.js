@@ -877,9 +877,11 @@ function renderStudySummary() {
     ? 'startKanjiQuickQuiz()'
     : state.learnUnit
       ? `startLearnNew('${state.learnUnit}')`
-      : (state.drillOrigin === 'kanji'
-        ? 'drillKanjiSelected()'
-        : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`);
+      : (state.drillOrigin === 'reading'
+        ? 'restartReadingWordDrill()'
+        : (state.drillOrigin === 'kanji'
+          ? 'drillKanjiSelected()'
+          : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`));
   const hasNextHomeBatch = state.homeRunBatchRun === true && state.drillOrigin === 'home' && !state.isDueReviewMode && Array.isArray(state.homeRunQueue) && state.homeRunQueue.length > 0;
   const hasNextKanjiBatch = state.kanjiRunBatchRun === true && state.drillOrigin === 'kanji' && !state.isDueReviewMode && Array.isArray(state.kanjiRunQueue) && state.kanjiRunQueue.length > 0;
   const nextBatchButton = hasNextHomeBatch
@@ -889,7 +891,7 @@ function renderStudySummary() {
     ? 'Quiz Again'
     : state.learnUnit
       ? 'Learn more words'
-      : (state.drillOrigin === 'kanji' ? 'Drill Again' : 'Review Again');
+      : (state.drillOrigin === 'kanji' || state.drillOrigin === 'reading' ? 'Drill Again' : 'Review Again');
 
   // A session with no graded cards (Learn-mode browsing) is not a test:
   // skip the accuracy framing and report what was actually viewed.
