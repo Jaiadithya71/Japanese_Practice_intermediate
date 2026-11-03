@@ -4,6 +4,8 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { STORAGE_KEY } from './config.js';
+import { countPassageChars } from './reading-types.js';
 
 // Book 1: Vocabulary Files
 const VOCAB_FILES = [
@@ -193,6 +195,35 @@ export async function loadIntermediateReadingDB() {
       }
     } catch (err) {
       console.error(`Error loading reading file ${item.file}:`, err);
+    }
+  }
+
+  // Migration M5: delete Layer A re-read records (RP:*) written for lessons
+  // that have no passage and no questions (e.g. the strategy page
+  // dokkai-n3-l03). Empty sessions used to be scored as 100% passes and could
+  // reach "Mastered"; such records are always false progress. Records for
+  // lessons with real passages are kept untouched.
+  if (state && state.stats) {
+    let removedFalseRp = 0;
+    for (const key of Object.keys(state.stats)) {
+      if (!key.startsWith('RP:')) continue;
+      const lesson = allLessons[key.slice(3)];
+      const chars = lesson ? countPassageChars(lesson.passage || lesson) : 0;
+      const qCount = lesson ? (lesson.comprehensionQuestions || lesson.questions || []).length : 0;
+      if (!lesson || (chars === 0 && qCount === 0)) {
+        delete state.stats[key];
+        removedFalseRp++;
+      }
+    }
+    if (removedFalseRp > 0) {
+      console.log(`Migration M5: removed ${removedFalseRp} false reading re-read record(s) from empty sessions.`);
+      try {
+        if (typeof localStorage !== 'undefined') {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state.stats));
+        }
+      } catch (err) {
+        console.warn('Migration M5: could not persist stats cleanup:', err);
+      }
     }
   }
 

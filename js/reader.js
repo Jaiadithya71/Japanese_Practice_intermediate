@@ -49,7 +49,8 @@ function loadReaderSettings() {
         fontScale: typeof parsed.fontScale === 'number' ? parsed.fontScale : 1.0,
         showFurigana: parsed.showFurigana !== false,
         showTranslations: Boolean(parsed.showTranslations),
-        chunkMode: Boolean(parsed.chunkMode)
+        chunkMode: Boolean(parsed.chunkMode),
+        showStrategyFurigana: Boolean(parsed.showStrategyFurigana)
       };
     }
   } catch {}
@@ -57,7 +58,8 @@ function loadReaderSettings() {
     fontScale: 1.0,
     showFurigana: true,
     showTranslations: false,
-    chunkMode: false
+    chunkMode: false,
+    showStrategyFurigana: false
   };
 }
 
@@ -332,6 +334,16 @@ function selectedReadingLessons() {
   return all.filter(l => state.readingSelectedLessons.has(l.id));
 }
 
+// A lesson is gradable only when it has both a timed passage and at least one
+// comprehension question. Strategy/drill-only pages (e.g. 長い文に慣れる) have
+// neither; scoring or re-read scheduling them records false progress.
+export function isGradableReadingLesson(lesson) {
+  if (!lesson) return false;
+  const chars = countPassageChars(lesson.passage || lesson);
+  const qCount = (lesson.comprehensionQuestions || lesson.questions || []).length;
+  return chars > 0 && qCount > 0;
+}
+
 export function renderReadingLessonChips() {
   const container = document.getElementById('reading-lesson-chips-row');
   if (!container) return;
@@ -473,7 +485,20 @@ export function startReadingPractice() {
     flashReadingHint('Select one or more lessons first.');
     return;
   }
-  const ids = lessons.map(l => l.id);
+  // Timed practice needs a passage and questions to grade; strategy/drill-only
+  // pages open in the book instead of faking a 0/0 pass.
+  const gradable = lessons.filter(isGradableReadingLesson);
+  const skipped = lessons.length - gradable.length;
+  if (gradable.length === 0) {
+    flashReadingHint(skipped > 0
+      ? 'The selected lesson(s) are strategy pages with no timed passage or questions - open them with Read as book instead.'
+      : 'Select one or more lessons first.');
+    return;
+  }
+  if (skipped > 0) {
+    flashReadingHint(`${skipped} strategy-only lesson${skipped === 1 ? '' : 's'} skipped (no passage/questions to grade) - read them with Read as book.`);
+  }
+  const ids = gradable.map(l => l.id);
   openReadingLesson(ids[0], { practiceQueue: ids, practiceIndex: 0 });
 }
 
@@ -573,6 +598,13 @@ export function openReadingLesson(lessonId, options = {}) {
   }
 
   stopTimer();
+
+  // Strategy/drill-only pages have no passage or questions to time or grade.
+  // Any non-book entry (Start practice, Home/Daily shortcuts) opens them in
+  // the book instead, where their strategy and drill sections render.
+  if (options.startPhase !== 'book' && !isGradableReadingLesson(lesson)) {
+    options = { ...options, startPhase: 'book' };
+  }
 
   const rpKey = `RP:${lessonId}`;
   const rp = state.stats?.[rpKey];
@@ -713,7 +745,9 @@ function getBookSections(lesson) {
   if (lesson.preReading) sections.push({ id: 'prereading', ja: '読む前に', en: 'Before Reading', icon: 'fa-lightbulb' });
   if (sentences.length > 0) sections.push({ id: 'passage', ja: '本文', en: 'Passage', icon: 'fa-book-open-reader' });
   if (drills.length > 0) sections.push({ id: 'drills', ja: '練習', en: `Drills (${drills.length})`, icon: 'fa-pen-to-square' });
-  if (vocabulary.length > 0) sections.push({ id: 'vocab', ja: '重要語彙', en: `Key Vocabulary (${vocabulary.length})`, icon: 'fa-book-bookmark' });
+  // Key Vocabulary section removed at his ask (2026-11-03): every lesson word
+  // is drilled from the Reading home word drills, so the in-book list was
+  // duplicate navigation. Vocabulary data itself is untouched.
   if (vocabulary.length > 0) sections.push({ id: 'tough', ja: '苦手な言葉', en: 'Tough words', icon: 'fa-fire' });
   if (lesson.testAdvice) sections.push({ id: 'advice', ja: '試験のコツ', en: 'Test Advice', icon: 'fa-compass' });
   if (commentary && commentaryJa) sections.push({ id: 'commentary', ja: '本文の解説', en: 'Commentary', icon: 'fa-diagram-project' });
@@ -832,18 +866,25 @@ function renderBookPhase(container) {
   let bodyHtml = '';
 
   if (section.id === 'strategy' && strategy) {
+    const showRuby = readerRuntime.settings.showStrategyFurigana;
+    const ruleJa = showRuby ? (strategy.rule_ja_ruby || strategy.rule_ja || '') : (strategy.rule_ja || '');
     bodyHtml = `
       <div class="book-section">
-        <div class="book-section-label"><i class="fa-solid fa-chess"></i> 読解ストラテジー Strategy</div>
+        <div class="book-section-label" style="display: flex; align-items: center; gap: 0.5rem;">
+          <span><i class="fa-solid fa-chess"></i> 読解ストラテジー Strategy</span>
+          <button class="t-btn-toggle${showRuby ? ' active' : ''}" style="margin-left: auto;"
+                  onclick="toggleStrategyFurigana()"
+                  title="${showRuby ? 'Hide furigana' : 'Show furigana'}">ふりがな</button>
+        </div>
         <div class="strategy-display-card">
-          <p style="line-height: 1.8;">${strategy.rule_ja || ''}</p>
+          <p style="line-height: 1.8;" class="font-ja">${ruleJa}</p>
           ${strategy.rule_en ? `<p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 0.35rem;">${strategy.rule_en}</p>` : ''}
         </div>
         ${(strategy.keyPoints || []).length > 0 ? `
           <div class="book-keypoints">
             ${strategy.keyPoints.map(kp => `
               <div class="book-keypoint">
-                <div class="font-ja" style="font-weight: 700;">${kp.point_ja || ''}</div>
+                <div class="font-ja" style="font-weight: 700;">${showRuby ? (kp.point_ja_ruby || kp.point_ja || '') : (kp.point_ja || '')}</div>
                 ${kp.point_en ? `<div style="color: var(--text-muted); font-size: 0.85rem;">${kp.point_en}</div>` : ''}
                 ${kp.explanation_en ? `<div style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${kp.explanation_en}</div>` : ''}
               </div>`).join('')}
@@ -891,14 +932,6 @@ function renderBookPhase(container) {
                 ${d.explanation_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${d.explanation_en}</p>` : ''}
               </details>` : ''}
           </div>`).join('')}
-      </div>`;
-  } else if (section.id === 'vocab') {
-    bodyHtml = `
-      <div class="book-section">
-        <div class="book-section-label"><i class="fa-solid fa-book-bookmark"></i> 重要語彙 Key Vocabulary (${vocabulary.length})</div>
-        <div class="preview-vocab-chips">
-          ${vocabulary.map(v => bookVocabChipHtml(v)).join('')}
-        </div>
       </div>`;
   } else if (section.id === 'tough') {
     const tough = getLessonToughWords(lesson);
@@ -1131,6 +1164,14 @@ function renderPreviewPhase(container) {
       </div>
     </div>
   `;
+}
+
+// Optional furigana for book-mode strategy text. Off by default so the
+// strategy can be attempted unaided first; the choice persists.
+export function toggleStrategyFurigana() {
+  readerRuntime.settings.showStrategyFurigana = !readerRuntime.settings.showStrategyFurigana;
+  saveReaderSettings(readerRuntime.settings);
+  renderWorkspace();
 }
 
 export function startReadingPassage() {
@@ -1428,6 +1469,25 @@ export function submitQuizAnswers() {
 
   const lesson = readerRuntime.lesson;
   const questions = readerRuntime.shuffledQuestions;
+
+  // Safety net: a session with no passage or no questions is ungradable.
+  // Never score it, never schedule a re-read, never claim a pass or mastery.
+  if (questions.length === 0 || readerRuntime.charCount === 0) {
+    readerRuntime.phase = 'review';
+    readerRuntime.lastResults = {
+      ungraded: true,
+      correctCount: 0,
+      totalQuestions: 0,
+      accuracy: 0,
+      cpm: 0,
+      results: []
+    };
+    endGistReviewSession();
+    renderWorkspace();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+
   let correctCount = 0;
   const results = [];
 
@@ -1453,7 +1513,7 @@ export function submitQuizAnswers() {
     });
   });
 
-  const accuracy = questions.length > 0 ? (correctCount / questions.length) : 1;
+  const accuracy = questions.length > 0 ? (correctCount / questions.length) : 0; // unreachable for empty sessions (guarded above); never pass vacuously
   const cpm = calculateCpm(readerRuntime.charCount, readerRuntime.elapsedSeconds);
 
   // Layer A Re-read Loop: RP:<lessonId> in state.stats
@@ -1521,6 +1581,35 @@ function renderReviewPhase(container) {
   const lesson = readerRuntime.lesson;
   const resultsData = readerRuntime.lastResults;
   if (!resultsData) return;
+
+  if (resultsData.ungraded) {
+    const missing = readerRuntime.charCount === 0 ? 'timed passage' : 'comprehension questions';
+    container.innerHTML = `
+    <div class="reading-workspace-shell">
+      <div class="reading-nav-bar">
+        <button class="btn btn-sm btn-ghost" onclick="closeReadingWorkspace()">
+          <i class="fa-solid fa-arrow-left"></i> Return to All Passages
+        </button>
+        <span class="dokkai-flow-badge"><i class="fa-solid fa-flag-checkered"></i> Step 4: Review</span>
+      </div>
+      <div class="reading-result-summary-card">
+        <h2 style="margin-bottom: 0.5rem;">Nothing to grade here</h2>
+        <p style="color: var(--text-dim); line-height: 1.6;">
+          <span class="font-ja">${lesson.title_ja || lesson.title || 'This lesson'}</span> has no ${missing},
+          so no score, pass or re-read step was recorded.
+        </p>
+        <div class="review-bottom-actions">
+          <button class="btn btn-primary" onclick="openReadingLesson('${lesson.id}', { startPhase: 'book' })">
+            <i class="fa-solid fa-book-open"></i> Open in the Book
+          </button>
+          <button class="btn btn-ghost" onclick="closeReadingWorkspace()">
+            <i class="fa-solid fa-list-check"></i> Back to Passages List
+          </button>
+        </div>
+      </div>
+    </div>`;
+    return;
+  }
 
   const { correctCount, totalQuestions, accuracy, cpm, results } = resultsData;
   const targetCpm = DEFAULT_READING_CPM;
@@ -2538,6 +2627,7 @@ if (typeof window !== 'undefined') {
   window.togglePassageFurigana = togglePassageFurigana;
   window.togglePassageTranslations = togglePassageTranslations;
   window.togglePassageChunks = togglePassageChunks;
+  window.toggleStrategyFurigana = toggleStrategyFurigana;
   window.adjustFontScale = adjustFontScale;
   window.toggleSingleSentenceTrans = toggleSingleSentenceTrans;
   window.showWordGloss = showWordGloss;

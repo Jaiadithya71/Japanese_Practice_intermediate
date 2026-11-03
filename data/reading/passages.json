@@ -12,7 +12,9 @@
   "lessons": [
     {
       "id": "dokkai-n3-l03",
-      "pages": [19],
+      "pages": [
+        19
+      ],
       "skillNumber": 3,
       "skillCode": "reading_speed_3",
       "title_ja": "長い文に慣れる",
@@ -26,14 +28,17 @@
           {
             "point_ja": "Ⅰ. 長い文の切れ目",
             "point_en": "I. Break points in long sentences",
-            "explanation_en": "Look for connecting conjunction particles (~が, ~ので, ~から, ~と, ~ば, ~たら, etc.) to divide complex sentences into manageable thought units."
+            "explanation_en": "Look for connecting conjunction particles (~が, ~ので, ~から, ~と, ~ば, ~たら, etc.) to divide complex sentences into manageable thought units.",
+            "point_ja_ruby": "Ⅰ. <ruby>長い<rt>ながい</rt></ruby><ruby>文<rt>ぶん</rt></ruby>の<ruby>切れ目<rt>きれめ</rt></ruby>"
           },
           {
             "point_ja": "Ⅱ. 名詞をくわしく説明する部分（連体修飾節）",
             "point_en": "II. Clauses that modify and describe nouns (Noun-modifying relative clauses)",
-            "explanation_en": "In Japanese, modifying clauses always precede the noun they modify. Recognizing the boundaries of the modifying clause [ ... ] allows you to see the core noun and grasp the sentence structure immediately."
+            "explanation_en": "In Japanese, modifying clauses always precede the noun they modify. Recognizing the boundaries of the modifying clause [ ... ] allows you to see the core noun and grasp the sentence structure immediately.",
+            "point_ja_ruby": "Ⅱ. <ruby>名詞<rt>めいし</rt></ruby>をくわしく<ruby>説明<rt>せつめい</rt></ruby>する<ruby>部分<rt>ぶぶん</rt></ruby>（<ruby>連体修飾節<rt>れんたいしゅうしょくせつ</rt></ruby>）"
           }
-        ]
+        ],
+        "rule_ja_ruby": "<ruby>長い<rt>ながい</rt></ruby><ruby>文<rt>ぶん</rt></ruby>は<ruby>区切って<rt>くぎって</rt></ruby>みよう。読みやすくなる。「〜が、〜ので、〜から、〜と、〜ば、〜たら、〜なら、〜ても、〜のに」などのあとも、<ruby>文<rt>ぶん</rt></ruby>の<ruby>区切り<rt>くぎり</rt></ruby>になる。「、」のある<ruby>場所<rt>ばしょ</rt></ruby>も、<ruby>切れ目<rt>きれめ</rt></ruby>のヒントになるが、いつもそこで<ruby>区切れる<rt>くぎれる</rt></ruby>とは<ruby>限らない<rt>かぎらない</rt></ruby>。"
       },
       "drills": [
         {
@@ -47,7 +52,10 @@
           "originalSentence_en": "Therefore, in 1981 Japan designated 1,945 kanji characters for everyday use, and referred to these as Joyo Kanji (regular-use kanji).",
           "solution": "そこで、日本では1981年にふだん使う漢字を1945字に決め、／ これを常用漢字と呼んでいた。",
           "divisionIndex": 35,
-          "splitWords": ["決め、", "これを"],
+          "splitWords": [
+            "決め、",
+            "これを"
+          ],
           "explanation_en": "The conjunction connective form '決め、' (stem form of 決めて) finishes the first action (deciding on the 1,945 kanji) before introducing 'これを...' (calling them Joyo Kanji)."
         },
         {
@@ -83,7 +91,10 @@
     },
     {
       "id": "dokkai-n3-l04",
-      "pages": [20, 21],
+      "pages": [
+        20,
+        21
+      ],
       "skillNumber": 4,
       "skillCode": "reading_speed_4",
       "problemNumber": 8,
@@ -97,7 +108,8 @@
       "readingStrategy": {
         "rule_ja": "知らない言葉があっても、前後関係からだいたいの意味を考えられることがある。また、その説明がどこかに書かれていることもある。どうしてもわからなかったら、無視して先を読む。",
         "rule_en": "Even if you encounter words you don't know, you can often deduce their approximate meaning from the surrounding context. Additionally, an explanation or restatement may be provided right in the text. If you still cannot figure it out, do not halt—simply ignore it and keep reading.",
-        "rule_zh": "即使有不认识的词汇，也可以从上下文关系中推测出大致含义。此外，有时文章的其他部分也会对此进行解释。如果无论如何都无法理解，可以跳过接着读下去。"
+        "rule_zh": "即使有不认识的词汇，也可以从上下文关系中推测出大致含义。此外，有时文章的其他部分也会对此进行解释。如果无论如何都无法理解，可以跳过接着读下去。",
+        "rule_ja_ruby": "<ruby>知らない<rt>しらない</rt></ruby><ruby>言葉<rt>ことば</rt></ruby>があっても、<ruby>前後関係<rt>ぜんごかんけい</rt></ruby>からだいたいの<ruby>意味<rt>いみ</rt></ruby>を<ruby>考えられる<rt>かんがえられる</rt></ruby>ことがある。また、その<ruby>説明<rt>せつめい</rt></ruby>がどこかに<ruby>書かれている<rt>かかれている</rt></ruby>こともある。どうしてもわからなかったら、<ruby>無視<rt>むし</rt></ruby>して<ruby>先<rt>さき</rt></ruby>を<ruby>読む<rt>よむ</rt></ruby>。"
       },
       "preReading": {
         "question_ja": "「不要なものをたくさん捨てたら、爽快な気持ちになり、仕事もうまくいくようになった。」この文の「爽快な」とはどのような意味でしょうか。辞書を使わずに考えてください。",
@@ -187,13 +199,48 @@
         }
       ],
       "vocabulary": [
-        { "term": "片づく", "reading": "かたづく", "meaning": "to be put in order, to be tidied up", "type": "intransitive verb" },
-        { "term": "悩まされる", "reading": "なやまされる", "meaning": "to be troubled by, to be plagued with", "type": "passive verb" },
-        { "term": "整理", "reading": "せいり", "meaning": "sorting out, discarding unnecessary items", "type": "noun/suru-verb" },
-        { "term": "整頓", "reading": "せいとん", "meaning": "neat arrangement, organizing items for easy access", "type": "noun/suru-verb" },
-        { "term": "配置する", "reading": "はいちする", "meaning": "to place, arrange, deploy in position", "type": "noun/suru-verb" },
-        { "term": "徹底的", "reading": "てっていてき", "meaning": "thorough, exhaustive", "type": "na-adjective" },
-        { "term": "終了する", "reading": "しゅうりょうする", "meaning": "to conclude, to be completed", "type": "noun/suru-verb" }
+        {
+          "term": "片づく",
+          "reading": "かたづく",
+          "meaning": "to be put in order, to be tidied up",
+          "type": "intransitive verb"
+        },
+        {
+          "term": "悩まされる",
+          "reading": "なやまされる",
+          "meaning": "to be troubled by, to be plagued with",
+          "type": "passive verb"
+        },
+        {
+          "term": "整理",
+          "reading": "せいり",
+          "meaning": "sorting out, discarding unnecessary items",
+          "type": "noun/suru-verb"
+        },
+        {
+          "term": "整頓",
+          "reading": "せいとん",
+          "meaning": "neat arrangement, organizing items for easy access",
+          "type": "noun/suru-verb"
+        },
+        {
+          "term": "配置する",
+          "reading": "はいちする",
+          "meaning": "to place, arrange, deploy in position",
+          "type": "noun/suru-verb"
+        },
+        {
+          "term": "徹底的",
+          "reading": "てっていてき",
+          "meaning": "thorough, exhaustive",
+          "type": "na-adjective"
+        },
+        {
+          "term": "終了する",
+          "reading": "しゅうりょうする",
+          "meaning": "to conclude, to be completed",
+          "type": "noun/suru-verb"
+        }
       ],
       "comprehensionQuestions": [
         {
@@ -202,10 +249,26 @@
           "questionText_ja": "この文章を書いた人は、片づけをするのに何が一番大切だと言っているか。",
           "questionText_en": "According to the author of this text, what is the most important factor when tidying up?",
           "options": [
-            { "id": 1, "text_ja": "引き出しをきれいにしておくこと", "text_en": "Keeping drawers neat and clean" },
-            { "id": 2, "text_ja": "使ったものを元の場所にしまうこと", "text_en": "Putting used things back where they were" },
-            { "id": 3, "text_ja": "いらないものを減らすこと", "text_en": "Reducing unnecessary items" },
-            { "id": 4, "text_ja": "ものを使いやすいように置くこと", "text_en": "Placing things so that they are easy to use" }
+            {
+              "id": 1,
+              "text_ja": "引き出しをきれいにしておくこと",
+              "text_en": "Keeping drawers neat and clean"
+            },
+            {
+              "id": 2,
+              "text_ja": "使ったものを元の場所にしまうこと",
+              "text_en": "Putting used things back where they were"
+            },
+            {
+              "id": 3,
+              "text_ja": "いらないものを減らすこと",
+              "text_en": "Reducing unnecessary items"
+            },
+            {
+              "id": 4,
+              "text_ja": "ものを使いやすいように置くこと",
+              "text_en": "Placing things so that they are easy to use"
+            }
           ],
           "correctAnswer": 3,
           "explanation_ja": "筆者は片づけを「整理8割、整頓2割」と述べており、「整理」に徹底的に取り組めば8割が終了すると言っています。そして「整理」とは「いらないものを捨てること（＝減らすこと）」と定義されています。したがって、「いらないものを減らすこと」が一番大切であり、正解は 3 です。（選択肢4は「整頓（2割）」の説明であり、選択肢1と2は一部の個別動作にすぎません。）",
@@ -270,7 +333,10 @@
     },
     {
       "id": "dokkai-n3-l05",
-      "pages": [22, 23],
+      "pages": [
+        22,
+        23
+      ],
       "skillNumber": 5,
       "skillCode": "reading_speed_5",
       "problemNumber": 9,
@@ -289,7 +355,8 @@
           "authorMainPoint_ja": "筆者が言いたいことは B。",
           "authorMainPoint_en": "What the author actually wants to emphasize is B (after the contrastive conjunction 'しかし').",
           "explanation_en": "The author first concessions the prevailing assumption (A/A') with '確かに' (indeed/certainly), making the argument sound fair and balanced, before introducing the true thesis with 'しかし' (however, B)."
-        }
+        },
+        "rule_ja_ruby": "あとにどのような<ruby>内容<rt>ないよう</rt></ruby>が<ruby>続く<rt>つづく</rt></ruby>か<ruby>予測<rt>よそく</rt></ruby>しながら<ruby>読む<rt>よむ</rt></ruby>と、<ruby>読みやすくなる<rt>よみやすくなる</rt></ruby>。<ruby>次<rt>つぎ</rt></ruby>のようなパターンは、<ruby>筆者<rt>ひっしゃ</rt></ruby>が<ruby>言いたい<rt>いいたい</rt></ruby>ことを<ruby>述べる<rt>のべる</rt></ruby>とき、よく<ruby>使われる<rt>つかわれる</rt></ruby>。"
       },
       "preReading": {
         "question_ja": "「確かに、欲しいものが買えたら幸せかもしれませんが。しかし…」という文のあとには、どのような内容が来ると思いますか。",
@@ -366,15 +433,60 @@
         }
       ],
       "vocabulary": [
-        { "term": "品物", "reading": "しなもの", "meaning": "goods, article, product", "type": "noun" },
-        { "term": "満足させる", "reading": "まんぞくさせる", "meaning": "to satisfy, bring satisfaction to", "type": "causative verb" },
-        { "term": "要素", "reading": "ようそ", "meaning": "factor, essential element", "type": "noun" },
-        { "term": "間違いない", "reading": "まちがいない", "meaning": "undoubtedly, certain", "type": "i-adjective phrase" },
-        { "term": "売り上げ", "reading": "うりあげ", "meaning": "sales, proceeds", "type": "noun" },
-        { "term": "組織", "reading": "そしき", "meaning": "organization", "type": "noun" },
-        { "term": "困る", "reading": "こまる", "meaning": "to be troubled, in difficulty", "type": "intransitive verb" },
-        { "term": "助けになる", "reading": "たすけになる", "meaning": "to be helpful, to assist", "type": "phrase" },
-        { "term": "手に入る", "reading": "てにはいる", "meaning": "to obtain, come into possession of", "type": "idiom" }
+        {
+          "term": "品物",
+          "reading": "しなもの",
+          "meaning": "goods, article, product",
+          "type": "noun"
+        },
+        {
+          "term": "満足させる",
+          "reading": "まんぞくさせる",
+          "meaning": "to satisfy, bring satisfaction to",
+          "type": "causative verb"
+        },
+        {
+          "term": "要素",
+          "reading": "ようそ",
+          "meaning": "factor, essential element",
+          "type": "noun"
+        },
+        {
+          "term": "間違いない",
+          "reading": "まちがいない",
+          "meaning": "undoubtedly, certain",
+          "type": "i-adjective phrase"
+        },
+        {
+          "term": "売り上げ",
+          "reading": "うりあげ",
+          "meaning": "sales, proceeds",
+          "type": "noun"
+        },
+        {
+          "term": "組織",
+          "reading": "そしき",
+          "meaning": "organization",
+          "type": "noun"
+        },
+        {
+          "term": "困る",
+          "reading": "こまる",
+          "meaning": "to be troubled, in difficulty",
+          "type": "intransitive verb"
+        },
+        {
+          "term": "助けになる",
+          "reading": "たすけになる",
+          "meaning": "to be helpful, to assist",
+          "type": "phrase"
+        },
+        {
+          "term": "手に入る",
+          "reading": "てにはいる",
+          "meaning": "to obtain, come into possession of",
+          "type": "idiom"
+        }
       ],
       "comprehensionQuestions": [
         {
@@ -383,10 +495,26 @@
           "questionText_ja": "この文章で一番言いたいことは何か。",
           "questionText_en": "What is the author's primary argument in this passage?",
           "options": [
-            { "id": 1, "text_ja": "安くてよいものを買ったときだけ、よい買い物をしたと思える。", "text_en": "Only when buying something cheap and good can one feel they made a good purchase." },
-            { "id": 2, "text_ja": "品物がよかったときだけ、よい買い物をしたと思える。", "text_en": "Only when the product is high quality can one feel they made a good purchase." },
-            { "id": 3, "text_ja": "安くなくてもだれかの役に立つと、よい買い物をしたと思える。", "text_en": "Even if it is not cheap, if it helps someone, one can feel they made a good purchase." },
-            { "id": 4, "text_ja": "品物が悪くてもだれかの役に立つと、よい買い物をしたと思える。", "text_en": "Even if the product is inferior, if it helps someone, one can feel they made a good purchase." }
+            {
+              "id": 1,
+              "text_ja": "安くてよいものを買ったときだけ、よい買い物をしたと思える。",
+              "text_en": "Only when buying something cheap and good can one feel they made a good purchase."
+            },
+            {
+              "id": 2,
+              "text_ja": "品物がよかったときだけ、よい買い物をしたと思える。",
+              "text_en": "Only when the product is high quality can one feel they made a good purchase."
+            },
+            {
+              "id": 3,
+              "text_ja": "安くなくてもだれかの役に立つと、よい買い物をしたと思える。",
+              "text_en": "Even if it is not cheap, if it helps someone, one can feel they made a good purchase."
+            },
+            {
+              "id": 4,
+              "text_ja": "品物が悪くてもだれかの役に立つと、よい買い物をしたと思える。",
+              "text_en": "Even if the product is inferior, if it helps someone, one can feel they made a good purchase."
+            }
           ],
           "correctAnswer": 3,
           "explanation_ja": "文章の型は「確かに〜（安さ・よさも大切）。しかし〜（それ以外に、寄付つき商品のように値段は安くなくても誰かの助けになる商品を買うときも、よい買い物をしたと思える）」となっています。筆者が最も主張したい核心は「しかし」のあとに述べられているため、正解は 3 です。（選択肢1と2は「〜だけ」と限定しており筆者の主張と反します。選択肢4は「品物が悪くても」とありますが、本文では「自分の好きなものが手に入り」とあり品物が悪いとは書かれていません。）",
@@ -405,8 +533,16 @@
               "prompt_ja": "「失敗をするより、失敗をしないほうがいい、と思う人が多いかもしれません。確かに…」\nこのあと、次に来る文は a、b どちらだと予測できるか。",
               "prompt_en": "After: 'Many people might think that not failing is better than failing. Certainly...', which sentence (a or b) is predicted to follow?",
               "options": [
-                { "key": "a", "text_ja": "失敗をすることのよい点や失敗をしないことの悪い点。", "text_en": "The good points of failing or the bad points of not failing." },
-                { "key": "b", "text_ja": "失敗をすることの悪い点や失敗をしないことのよい点。", "text_en": "The bad points of failing or the good points of not failing." }
+                {
+                  "key": "a",
+                  "text_ja": "失敗をすることのよい点や失敗をしないことの悪い点。",
+                  "text_en": "The good points of failing or the bad points of not failing."
+                },
+                {
+                  "key": "b",
+                  "text_ja": "失敗をすることの悪い点や失敗をしないことのよい点。",
+                  "text_en": "The bad points of failing or the good points of not failing."
+                }
               ],
               "correctKey": "b",
               "explanation_en": "'確かに' (certainly) concedes the conventional thought just mentioned (that failing is bad/avoiding failure is good)."
@@ -416,8 +552,16 @@
               "prompt_ja": "「確かに、失敗をするとやる気がなくなったり、次の挑戦が怖くなることもあるでしょう。」\nこのあと、次に来る言葉は a、b どちらだと予測できるか。",
               "prompt_en": "After: 'Certainly, when you fail, you might lose motivation or become fearful of the next challenge.' Which transition word is predicted next?",
               "options": [
-                { "key": "a", "text_ja": "だから", "text_en": "Therefore (Dakara)" },
-                { "key": "b", "text_ja": "しかし", "text_en": "However (Shikashi)" }
+                {
+                  "key": "a",
+                  "text_ja": "だから",
+                  "text_en": "Therefore (Dakara)"
+                },
+                {
+                  "key": "b",
+                  "text_ja": "しかし",
+                  "text_en": "However (Shikashi)"
+                }
               ],
               "correctKey": "b",
               "explanation_en": "Following the concession '確かに...', the author prepares to introduce their counter-argument with the adversative transition 'しかし'."
@@ -427,8 +571,16 @@
               "prompt_ja": "「しかし、失敗することで、今の課題や自分の得意なこと不得意なことなど、いろいろなことがわかるものです。」\n筆者が一番言いたいことは a、b どちらの内容だと予測できるか。",
               "prompt_en": "After: 'However, by failing, one discovers many things, such as current issues and one's strengths and weaknesses.' What is the author's primary takeaway?",
               "options": [
-                { "key": "a", "text_ja": "失敗することにもよい点があるのだから恐れずに挑戦することが大切だ。", "text_en": "Since there are benefits to failing as well, it is important to take on challenges without fear." },
-                { "key": "b", "text_ja": "しっかりと準備をしてなるべく失敗をしないようにすることが大切だ。", "text_en": "It is important to prepare thoroughly to avoid failure as much as possible." }
+                {
+                  "key": "a",
+                  "text_ja": "失敗することにもよい点があるのだから恐れずに挑戦することが大切だ。",
+                  "text_en": "Since there are benefits to failing as well, it is important to take on challenges without fear."
+                },
+                {
+                  "key": "b",
+                  "text_ja": "しっかりと準備をしてなるべく失敗をしないようにすることが大切だ。",
+                  "text_en": "It is important to prepare thoroughly to avoid failure as much as possible."
+                }
               ],
               "correctKey": "a",
               "explanation_en": "The author's true message follows 'しかし': failure brings valuable self-knowledge, so one should boldly challenge oneself."
@@ -439,7 +591,10 @@
     },
     {
       "id": "dokkai-n3-l06",
-      "pages": [24, 25],
+      "pages": [
+        24,
+        25
+      ],
       "skillNumber": 6,
       "skillCode": "reading_speed_6",
       "problemNumber": 10,
@@ -468,7 +623,8 @@
             "expectedOutcome": "[今はそうではない] (such is no longer the case)",
             "meaning_en": "Contrast between past state and present reality"
           }
-        ]
+        ],
+        "rule_ja_ruby": "<ruby>接続詞<rt>せつぞくし</rt></ruby>・<ruby>副詞<rt>ふくし</rt></ruby>・<ruby>文末<rt>ぶんまつ</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>などは、あとの<ruby>内容<rt>ないよう</rt></ruby>の<ruby>予測<rt>よそく</rt></ruby>のヒントになる。"
       },
       "preReading": {
         "question_ja": "「父の部屋には古い時計があるのですが、ずっと動かしていませんでした。でも、…」という文のあとには、AとBのどちらが来ると思いますか。\nA 時計は動いていました。\nB 時計は動いていませんでした。",
@@ -601,16 +757,66 @@
         }
       ],
       "vocabulary": [
-        { "term": "地震", "reading": "じしん", "meaning": "earthquake", "type": "noun" },
-        { "term": "外出する", "reading": "がいしゅつする", "meaning": "to go out, to be away from home", "type": "noun/suru-verb" },
-        { "term": "夜中", "reading": "よなか", "meaning": "middle of the night, dead of night", "type": "noun" },
-        { "term": "鳴る", "reading": "なる", "meaning": "to ring, chime, sound", "type": "intransitive verb" },
-        { "term": "亡くなる", "reading": "なくなる", "meaning": "to pass away, die (euphemistic)", "type": "intransitive verb" },
-        { "term": "不思議", "reading": "ふしぎ", "meaning": "mysterious, strange, wonder", "type": "na-adjective/noun" },
-        { "term": "揺れる", "reading": "ゆれる", "meaning": "to shake, sway, tremor", "type": "intransitive verb" },
-        { "term": "自然に", "reading": "しぜんに", "meaning": "spontaneously, naturally", "type": "adverb" },
-        { "term": "伝える", "reading": "つたえる", "meaning": "to convey, communicate, tell", "type": "transitive verb" },
-        { "term": "喜ぶ", "reading": "よろこぶ", "meaning": "to be glad, pleased, rejoice", "type": "intransitive/transitive verb" }
+        {
+          "term": "地震",
+          "reading": "じしん",
+          "meaning": "earthquake",
+          "type": "noun"
+        },
+        {
+          "term": "外出する",
+          "reading": "がいしゅつする",
+          "meaning": "to go out, to be away from home",
+          "type": "noun/suru-verb"
+        },
+        {
+          "term": "夜中",
+          "reading": "よなか",
+          "meaning": "middle of the night, dead of night",
+          "type": "noun"
+        },
+        {
+          "term": "鳴る",
+          "reading": "なる",
+          "meaning": "to ring, chime, sound",
+          "type": "intransitive verb"
+        },
+        {
+          "term": "亡くなる",
+          "reading": "なくなる",
+          "meaning": "to pass away, die (euphemistic)",
+          "type": "intransitive verb"
+        },
+        {
+          "term": "不思議",
+          "reading": "ふしぎ",
+          "meaning": "mysterious, strange, wonder",
+          "type": "na-adjective/noun"
+        },
+        {
+          "term": "揺れる",
+          "reading": "ゆれる",
+          "meaning": "to shake, sway, tremor",
+          "type": "intransitive verb"
+        },
+        {
+          "term": "自然に",
+          "reading": "しぜんに",
+          "meaning": "spontaneously, naturally",
+          "type": "adverb"
+        },
+        {
+          "term": "伝える",
+          "reading": "つたえる",
+          "meaning": "to convey, communicate, tell",
+          "type": "transitive verb"
+        },
+        {
+          "term": "喜ぶ",
+          "reading": "よろこぶ",
+          "meaning": "to be glad, pleased, rejoice",
+          "type": "intransitive/transitive verb"
+        }
       ],
       "comprehensionQuestions": [
         {
@@ -619,10 +825,26 @@
           "questionText_ja": "「私は不思議に思いました。」とあるが、なぜか。",
           "questionText_en": "The passage says 'I found this strange/mysterious.' Why did the narrator feel that way?",
           "options": [
-            { "id": 1, "text_ja": "動いていないはずの時計の音が聞こえたから。", "text_en": "Because they heard the chime of a clock that was supposed to not be running." },
-            { "id": 2, "text_ja": "別の部屋にいた母がラジオの時計の音を聞いていたから。", "text_en": "Because the mother in the other room heard the radio clock sound." },
-            { "id": 3, "text_ja": "母が父の使っていた時計を動かしていたから。", "text_en": "Because the mother had wound up and started the father's clock." },
-            { "id": 4, "text_ja": "亡くなった父の時計が止まっていたから。", "text_en": "Because the late father's clock had stopped." }
+            {
+              "id": 1,
+              "text_ja": "動いていないはずの時計の音が聞こえたから。",
+              "text_en": "Because they heard the chime of a clock that was supposed to not be running."
+            },
+            {
+              "id": 2,
+              "text_ja": "別の部屋にいた母がラジオの時計の音を聞いていたから。",
+              "text_en": "Because the mother in the other room heard the radio clock sound."
+            },
+            {
+              "id": 3,
+              "text_ja": "母が父の使っていた時計を動かしていたから。",
+              "text_en": "Because the mother had wound up and started the father's clock."
+            },
+            {
+              "id": 4,
+              "text_ja": "亡くなった父の時計が止まっていたから。",
+              "text_en": "Because the late father's clock had stopped."
+            }
           ],
           "correctAnswer": 1,
           "explanation_ja": "主人公は「うちのは何年も使っていないんだもの。鳴るはずがないよ」と考えていました。しかし、自分だけでなく別の部屋の母も夜中に時計の音を聞いていたため、「動いていないはずなのに、なぜ音が聞こえたのか」という疑問から「不思議に思いました」。したがって正解は 1 です。（母は時計を動かしておらず、ラジオの音を聞いていたわけでもありません。また時計が止まっていたこと自体ではなく、止まっていたはずの時計から音が聞こえたことが不思議の理由です。）",
@@ -643,8 +865,16 @@
               "term": "ところが",
               "reading": "ところが",
               "options": [
-                { "key": "a", "text_ja": "意外なこと", "text_en": "Something unexpected / contrary to anticipation" },
-                { "key": "b", "text_ja": "前の部分の結果", "text_en": "A logical consequence of the preceding part" }
+                {
+                  "key": "a",
+                  "text_ja": "意外なこと",
+                  "text_en": "Something unexpected / contrary to anticipation"
+                },
+                {
+                  "key": "b",
+                  "text_ja": "前の部分の結果",
+                  "text_en": "A logical consequence of the preceding part"
+                }
               ],
               "correctKey": "a",
               "explanation_en": "'ところが' indicates an unexpected contrast or surprising development contrary to what was expected from the prior situation."
@@ -654,8 +884,16 @@
               "term": "まさか",
               "reading": "まさか",
               "options": [
-                { "key": "a", "text_ja": "予想通りのこと", "text_en": "Something strictly according to expectation" },
-                { "key": "b", "text_ja": "実現しそうもないこと", "text_en": "Something highly improbable / inconceivable" }
+                {
+                  "key": "a",
+                  "text_ja": "予想通りのこと",
+                  "text_en": "Something strictly according to expectation"
+                },
+                {
+                  "key": "b",
+                  "text_ja": "実現しそうもないこと",
+                  "text_en": "Something highly improbable / inconceivable"
+                }
               ],
               "correctKey": "b",
               "explanation_en": "'まさか' introduces a scenario that the speaker considers unthinkable or completely unlikely to occur (often pairing with 〜ない or 〜はずがない)."
@@ -665,8 +903,16 @@
               "term": "そこで",
               "reading": "そこで",
               "options": [
-                { "key": "a", "text_ja": "前のことをもとに、何かをする", "text_en": "Taking an action based on what happened before" },
-                { "key": "b", "text_ja": "前のことの理由", "text_en": "The root cause/reason for what came before" }
+                {
+                  "key": "a",
+                  "text_ja": "前のことをもとに、何かをする",
+                  "text_en": "Taking an action based on what happened before"
+                },
+                {
+                  "key": "b",
+                  "text_ja": "前のことの理由",
+                  "text_en": "The root cause/reason for what came before"
+                }
               ],
               "correctKey": "a",
               "explanation_en": "'そこで' signals: 'in light of the preceding situation / upon that basis, the actor took the following action'."

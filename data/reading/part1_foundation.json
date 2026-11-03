@@ -30,14 +30,17 @@
           {
             "point_ja": "Ⅰ. 長い文の切れ目",
             "point_en": "I. Break points in long sentences",
-            "explanation_en": "Look for connecting conjunction particles (~が, ~ので, ~から, ~と, ~ば, ~たら, etc.) to divide complex sentences into manageable thought units."
+            "explanation_en": "Look for connecting conjunction particles (~が, ~ので, ~から, ~と, ~ば, ~たら, etc.) to divide complex sentences into manageable thought units.",
+            "point_ja_ruby": "Ⅰ. <ruby>長い<rt>ながい</rt></ruby><ruby>文<rt>ぶん</rt></ruby>の<ruby>切れ目<rt>きれめ</rt></ruby>"
           },
           {
             "point_ja": "Ⅱ. 名詞をくわしく説明する部分（連体修飾節）",
             "point_en": "II. Clauses that modify and describe nouns (Noun-modifying relative clauses)",
-            "explanation_en": "In Japanese, modifying clauses always precede the noun they modify. Recognizing the boundaries of the modifying clause [ ... ] allows you to see the core noun and grasp the sentence structure immediately."
+            "explanation_en": "In Japanese, modifying clauses always precede the noun they modify. Recognizing the boundaries of the modifying clause [ ... ] allows you to see the core noun and grasp the sentence structure immediately.",
+            "point_ja_ruby": "Ⅱ. <ruby>名詞<rt>めいし</rt></ruby>をくわしく<ruby>説明<rt>せつめい</rt></ruby>する<ruby>部分<rt>ぶぶん</rt></ruby>（<ruby>連体修飾節<rt>れんたいしゅうしょくせつ</rt></ruby>）"
           }
-        ]
+        ],
+        "rule_ja_ruby": "<ruby>長い<rt>ながい</rt></ruby><ruby>文<rt>ぶん</rt></ruby>は<ruby>区切って<rt>くぎって</rt></ruby>みよう。読みやすくなる。「〜が、〜ので、〜から、〜と、〜ば、〜たら、〜なら、〜ても、〜のに」などのあとも、<ruby>文<rt>ぶん</rt></ruby>の<ruby>区切り<rt>くぎり</rt></ruby>になる。「、」のある<ruby>場所<rt>ばしょ</rt></ruby>も、<ruby>切れ目<rt>きれめ</rt></ruby>のヒントになるが、いつもそこで<ruby>区切れる<rt>くぎれる</rt></ruby>とは<ruby>限らない<rt>かぎらない</rt></ruby>。"
       },
       "drills": [
         {
@@ -107,7 +110,8 @@
       "readingStrategy": {
         "rule_ja": "知らない言葉があっても、前後関係からだいたいの意味を考えられることがある。また、その説明がどこかに書かれていることもある。どうしてもわからなかったら、無視して先を読む。",
         "rule_en": "Even if you encounter words you don't know, you can often deduce their approximate meaning from the surrounding context. Additionally, an explanation or restatement may be provided right in the text. If you still cannot figure it out, do not halt—simply ignore it and keep reading.",
-        "rule_zh": "即使有不认识的词汇，也可以从上下文关系中推测出大致含义。此外，有时文章的其他部分也会对此进行解释。如果无论如何都无法理解，可以跳过接着读下去。"
+        "rule_zh": "即使有不认识的词汇，也可以从上下文关系中推测出大致含义。此外，有时文章的其他部分也会对此进行解释。如果无论如何都无法理解，可以跳过接着读下去。",
+        "rule_ja_ruby": "<ruby>知らない<rt>しらない</rt></ruby><ruby>言葉<rt>ことば</rt></ruby>があっても、<ruby>前後関係<rt>ぜんごかんけい</rt></ruby>からだいたいの<ruby>意味<rt>いみ</rt></ruby>を<ruby>考えられる<rt>かんがえられる</rt></ruby>ことがある。また、その<ruby>説明<rt>せつめい</rt></ruby>がどこかに<ruby>書かれている<rt>かかれている</rt></ruby>こともある。どうしてもわからなかったら、<ruby>無視<rt>むし</rt></ruby>して<ruby>先<rt>さき</rt></ruby>を<ruby>読む<rt>よむ</rt></ruby>。"
       },
       "preReading": {
         "question_ja": "「不要なものをたくさん捨てたら、爽快な気持ちになり、仕事もうまくいくようになった。」この文の「爽快な」とはどのような意味でしょうか。辞書を使わずに考えてください。",
@@ -353,7 +357,8 @@
           "authorMainPoint_ja": "筆者が言いたいことは B。",
           "authorMainPoint_en": "What the author actually wants to emphasize is B (after the contrastive conjunction 'しかし').",
           "explanation_en": "The author first concessions the prevailing assumption (A/A') with '確かに' (indeed/certainly), making the argument sound fair and balanced, before introducing the true thesis with 'しかし' (however, B)."
-        }
+        },
+        "rule_ja_ruby": "あとにどのような<ruby>内容<rt>ないよう</rt></ruby>が<ruby>続く<rt>つづく</rt></ruby>か<ruby>予測<rt>よそく</rt></ruby>しながら<ruby>読む<rt>よむ</rt></ruby>と、<ruby>読みやすくなる<rt>よみやすくなる</rt></ruby>。<ruby>次<rt>つぎ</rt></ruby>のようなパターンは、<ruby>筆者<rt>ひっしゃ</rt></ruby>が<ruby>言いたい<rt>いいたい</rt></ruby>ことを<ruby>述べる<rt>のべる</rt></ruby>とき、よく<ruby>使われる<rt>つかわれる</rt></ruby>。"
       },
       "preReading": {
         "question_ja": "「確かに、欲しいものが買えたら幸せかもしれませんが。しかし…」という文のあとには、どのような内容が来ると思いますか。",
@@ -620,7 +625,8 @@
             "expectedOutcome": "[今はそうではない] (such is no longer the case)",
             "meaning_en": "Contrast between past state and present reality"
           }
-        ]
+        ],
+        "rule_ja_ruby": "<ruby>接続詞<rt>せつぞくし</rt></ruby>・<ruby>副詞<rt>ふくし</rt></ruby>・<ruby>文末<rt>ぶんまつ</rt></ruby>の<ruby>表現<rt>ひょうげん</rt></ruby>などは、あとの<ruby>内容<rt>ないよう</rt></ruby>の<ruby>予測<rt>よそく</rt></ruby>のヒントになる。"
       },
       "preReading": {
         "question_ja": "「父の部屋には古い時計があるのですが、ずっと動かしていませんでした。でも、…」という文のあとには、AとBのどちらが来ると思いますか。\nA 時計は動いていました。\nB 時計は動いていませんでした。",
@@ -940,15 +946,18 @@
             "point_ja": "Ⅰ. 直前の内容を指す指示語",
             "point_en": "I. Demonstratives pointing to preceding content",
             "example_ja": "朝一杯のコーヒー。 ↑ 私は「これ」がないと目が覚めない。",
-            "example_en": "A cup of coffee in the morning. ↑ Without 'this', I cannot wake up."
+            "example_en": "A cup of coffee in the morning. ↑ Without 'this', I cannot wake up.",
+            "point_ja_ruby": "Ⅰ. <ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>指す<rt>さす</rt></ruby><ruby>指示語<rt>しじご</rt></ruby>"
           },
           {
             "point_ja": "Ⅱ. 後ろの内容を指す指示語（こ系列）",
             "point_en": "II. Demonstratives pointing forward to following content (Ko-series)",
             "example_ja": "その仕組みは、「こう」である。 ↓ 太陽の光にあたると、人間の体内で「活性酸素」と呼ばれる物質ができる…。",
-            "example_en": "The mechanism is 'as follows': ↓ When exposed to sunlight, a substance called 'active oxygen' is produced inside the human body..."
+            "example_en": "The mechanism is 'as follows': ↓ When exposed to sunlight, a substance called 'active oxygen' is produced inside the human body...",
+            "point_ja_ruby": "Ⅱ. <ruby>後ろ<rt>うしろ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>指す<rt>さす</rt></ruby><ruby>指示語<rt>しじご</rt></ruby>（こ<ruby>系列<rt>けいれつ</rt></ruby>）"
           }
-        ]
+        ],
+        "rule_ja_ruby": "<ruby><ruby>文<rt>ぶん</rt></ruby>章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>指示語<rt>しじご</rt></ruby> ⇒「これ・それ・あれ／この・その・あの／…」すぐ<ruby>前<rt>まえ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>に<ruby>書かれている<rt>かかれている</rt></ruby>ことを<ruby>指す<rt>さす</rt></ruby>ことが<ruby>多い<rt>おおい</rt></ruby>が、<ruby>後ろ<rt>うしろ</rt></ruby>にあるものを<ruby>指す<rt>さす</rt></ruby>こともある。その<ruby>場合<rt>ばあい</rt></ruby>は「こ（これ・この〜など）」が<ruby>使われる<rt>つかわれる</rt></ruby>ことが<ruby>多い<rt>おおい</rt></ruby>。"
       },
       "preReading": {
         "question_ja": "「朝一杯のコーヒー。私はこれがないと目が覚めない。」の「これ」は何をさしますか。",
@@ -1212,9 +1221,11 @@
                 "name_en": "Summary / Conclusion",
                 "name_zh": "总结"
               }
-            ]
+            ],
+            "point_ja_ruby": "<ruby>段落<rt>だんらく</rt></ruby>の4つの<ruby>典型的<rt>てんけいてき</rt></ruby>な<ruby>役割<rt>やくわり</rt></ruby>"
           }
-        ]
+        ],
+        "rule_ja_ruby": "それぞれの<ruby>段落<rt>だんらく</rt></ruby>には<ruby>役割<rt>やくわり</rt></ruby>がある。それぞれの<ruby>段落<rt>だんらく</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>言いたい<rt>いいたい</rt></ruby>ことを<ruby>見つけ<rt>みつけ</rt></ruby>、<ruby>段落<rt>だんらく</rt></ruby>の<ruby>役割<rt>やくわり</rt></ruby>を<ruby>考えよう<rt>かんがえよう</rt></ruby>。<ruby>段落<rt>だんらく</rt></ruby>の<ruby>役割<rt>やくわり</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>すると、<ruby><ruby>段落<rt>だんらく</rt></ruby>同士<rt>だんらくどうし</rt></ruby>の<ruby>関係<rt>かんけい</rt></ruby>がわかり、その<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>構造<rt>こうぞう</rt></ruby>が<ruby>理解<rt>りかい</rt></ruby>できる。"
       },
       "preReading": {
         "question_ja": "「第1段落が『冷房は素晴らしい技術だ』という内容で始まる文章があります。その次の段落が『しかし』で始まっていたら、その文章全体の内容はどんなものだと考えられますか。\nA 冷房のよい点だけを述べる。\nB 冷房のよくない点も述べる。」",
@@ -1563,7 +1574,8 @@
               "よく食べる",
               "Aさんが来てくれた。・（私は）Aさんに来てもらった。",
               "Aさんが歌を聞かせてくれた。・（私は）Aさんの歌を聞かせてもらった。"
-            ]
+            ],
+            "point_ja_ruby": "よい<ruby>評価<rt>ひょうか</rt></ruby>（＋）の<ruby>言葉<rt>ことば</rt></ruby>や<ruby>表現<rt>ひょうげん</rt></ruby>"
           },
           {
             "point_ja": "悪い評価（−）の言葉や表現",
@@ -1574,9 +1586,11 @@
               "食べすぎる",
               "Aさんに来られた。",
               "Aさんに歌を聞かせられた／聞かされた。"
-            ]
+            ],
+            "point_ja_ruby": "<ruby>悪い<rt>わるい</rt></ruby><ruby>評価<rt>ひょうか</rt></ruby>（−）の<ruby>言葉<rt>ことば</rt></ruby>や<ruby>表現<rt>ひょうげん</rt></ruby>"
           }
-        ]
+        ],
+        "rule_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>気持ち<rt>きもち</rt></ruby>が<ruby>表れる<rt>あらわれる</rt></ruby><ruby>言葉<rt>ことば</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>しよう。<ruby>筆者<rt>ひっしゃ</rt></ruby>のよい<ruby>評価<rt>ひょうか</rt></ruby>（＋）や<ruby>悪い<rt>わるい</rt></ruby><ruby>評価<rt>ひょうか</rt></ruby>（−）を<ruby>表す<rt>あらわす</rt></ruby><ruby>言葉<rt>ことば</rt></ruby>や<ruby>表現<rt>ひょうげん</rt></ruby>を<ruby>覚えよう<rt>おぼえよう</rt></ruby>。"
       },
       "preReading": {
         "question_ja": "「筆者がいいパーティーだったと思っているのはどちらですか。\nA そのパーティーはにぎやかだった。\nB そのパーティーはうるさかった。」",
