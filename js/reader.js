@@ -87,6 +87,7 @@ const readerRuntime = {
   settings: loadReaderSettings(),
   bookQueue: [],       // Book mode: ordered lesson ids being browsed
   bookIndex: -1,
+  bookSectionIndex: 0, // Book mode: current section within the lesson
   practiceQueue: [],   // Practice chaining: ordered lesson ids from the picker
   practiceIndex: -1,
   lastDrillHardOnly: false
@@ -590,6 +591,7 @@ export function openReadingLesson(lessonId, options = {}) {
   readerRuntime.practiceIndex = options.practiceIndex !== undefined
     ? options.practiceIndex
     : (options.practiceQueue ? 0 : -1);
+  readerRuntime.bookSectionIndex = options.bookSectionIndex ?? 0;
 
   const questions = lesson.comprehensionQuestions || lesson.questions || [];
 
@@ -633,7 +635,8 @@ export function openReadingLesson(lessonId, options = {}) {
   if (workspaceSection) workspaceSection.style.display = 'block';
 
   renderWorkspace();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (readerRuntime.phase === 'book') scrollBookIntoView();
+  else window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 export function closeReadingWorkspace() {
@@ -683,8 +686,104 @@ export function renderWorkspace() {
 }
 
 // =======================================================
-// BOOK PHASE: the whole lesson as a readable page, no timer
+// BOOK PHASE: section-by-section reading, no timer
+// One labelled section per page with Back/Next paging that
+// flows across the selected lessons like a book.
 // =======================================================
+
+function getBookSections(lesson) {
+  const sentences = lesson.passage ? (lesson.passage.sentences || []) : [];
+  const drills = lesson.drills || [];
+  const vocabulary = lesson.vocabulary || [];
+  const commentary = lesson.commentary;
+  const commentaryJa = commentary ? (commentary.text_ja || commentary.summary_ja || commentary.logicFlow || '') : '';
+  const sections = [];
+  if (lesson.readingStrategy) sections.push({ id: 'strategy', ja: '読解ストラテジー', en: 'Strategy', icon: 'fa-chess' });
+  if (lesson.preReading) sections.push({ id: 'prereading', ja: '読む前に', en: 'Before Reading', icon: 'fa-lightbulb' });
+  if (sentences.length > 0) sections.push({ id: 'passage', ja: '本文', en: 'Passage', icon: 'fa-book-open-reader' });
+  if (drills.length > 0) sections.push({ id: 'drills', ja: '練習', en: `Drills (${drills.length})`, icon: 'fa-pen-to-square' });
+  if (vocabulary.length > 0) sections.push({ id: 'vocab', ja: '重要語彙', en: `Key Vocabulary (${vocabulary.length})`, icon: 'fa-book-bookmark' });
+  if (vocabulary.length > 0) sections.push({ id: 'tough', ja: '苦手な言葉', en: 'Tough words', icon: 'fa-fire' });
+  if (lesson.testAdvice) sections.push({ id: 'advice', ja: '試験のコツ', en: 'Test Advice', icon: 'fa-compass' });
+  if (commentary && commentaryJa) sections.push({ id: 'commentary', ja: '本文の解説', en: 'Commentary', icon: 'fa-diagram-project' });
+  if (sections.length === 0) sections.push({ id: 'overview', ja: '概要', en: 'Overview', icon: 'fa-circle-info' });
+  return sections;
+}
+
+function scrollBookIntoView() {
+  const ws = document.getElementById('dokkai-workspace-section');
+  if (ws) ws.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  else window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+export function bookNavSection(delta) {
+  const lesson = readerRuntime.lesson;
+  if (!lesson) return;
+  const q = readerRuntime.bookQueue || [];
+  const sections = getBookSections(lesson);
+  const cur = readerRuntime.bookSectionIndex ?? 0;
+  const next = cur + delta;
+  if (next >= 0 && next < sections.length) {
+    readerRuntime.bookSectionIndex = next;
+    renderWorkspace();
+    scrollBookIntoView();
+    return;
+  }
+  // Spill over into the neighbouring lesson, book-style.
+  const idx = readerRuntime.bookIndex ?? 0;
+  if (delta > 0 && idx < q.length - 1) {
+    readerRuntime.bookIndex = idx + 1;
+    openReadingLesson(q[idx + 1], { startPhase: 'book', bookSectionIndex: 0 });
+  } else if (delta < 0 && idx > 0) {
+    const prevId = q[idx - 1];
+    const prevLesson = state.readingDB?.[prevId];
+    readerRuntime.bookIndex = idx - 1;
+    openReadingLesson(prevId, { startPhase: 'book', bookSectionIndex: prevLesson ? getBookSections(prevLesson).length - 1 : 0 });
+  }
+}
+
+export function jumpReadingBookSection(i) {
+  const lesson = readerRuntime.lesson;
+  if (!lesson) return;
+  const sections = getBookSections(lesson);
+  const n = Number(i);
+  if (!Number.isInteger(n) || n < 0 || n >= sections.length) return;
+  readerRuntime.bookSectionIndex = n;
+  renderWorkspace();
+  scrollBookIntoView();
+}
+
+function bookVocabChipHtml(v) {
+  const term = (v.term || '').replace(/'/g, "\\'");
+  const reading = (v.reading || '').replace(/'/g, "\\'");
+  const meaning = (v.meaning || '').replace(/'/g, "\\'");
+  return `
+    <div class="vocab-preview-chip">
+      <div class="vocab-preview-text">
+        <span class="font-ja vocab-chip-term">${v.term}</span>
+        <span class="vocab-chip-reading">${v.reading || ''}</span>
+        <span class="vocab-chip-meaning">${v.meaning || ''}</span>
+      </div>
+      <button class="btn btn-xs btn-ghost btn-chip-add" onclick="event.stopPropagation(); addWordFromPreview('${term}', '${reading}', '${meaning}', this)">
+        + Add
+      </button>
+    </div>`;
+}
+
+// Words of this lesson flagged tough: flame-marked or weight past the hard
+// threshold. Non-mutating peek - browsing never creates SRS records.
+function getLessonToughWords(lesson) {
+  const out = [];
+  const seen = new Set();
+  for (const v of (lesson.vocabulary || [])) {
+    const term = (v.term || '').trim();
+    if (!term || seen.has(term)) continue;
+    seen.add(term);
+    const key = readingWordKey(term);
+    if (key && peekItemStatus(key) === 'hard') out.push(v);
+  }
+  return out;
+}
 
 function renderBookPhase(container) {
   const lesson = readerRuntime.lesson;
@@ -692,7 +791,6 @@ function renderBookPhase(container) {
   const idx = readerRuntime.bookIndex ?? 0;
   const ordered = getOrderedReadingLessons();
   const numById = new Map(ordered.map((l, i) => [l.id, i + 1]));
-  const num = numById.get(lesson.id) || '?';
   const genre = categorizePassage(lesson);
   const genreMeta = GENRE_METADATA[genre] || GENRE_METADATA.other;
   const sentences = lesson.passage ? (lesson.passage.sentences || []) : [];
@@ -703,33 +801,115 @@ function renderBookPhase(container) {
   const strategy = lesson.readingStrategy;
   const vocabulary = lesson.vocabulary || [];
 
+  const sections = getBookSections(lesson);
+  let sIdx = readerRuntime.bookSectionIndex ?? 0;
+  if (sIdx < 0 || sIdx >= sections.length) sIdx = 0;
+  readerRuntime.bookSectionIndex = sIdx;
+  const section = sections[sIdx];
+  const isLastSection = sIdx === sections.length - 1;
+
   const jumpOptions = q.map((id, i) => {
     const l = state.readingDB?.[id];
     const t = l ? (l.title_ja || l.title || id) : id;
     return `<option value="${id}"${i === idx ? ' selected' : ''}>${numById.get(id) || i + 1}. ${t}</option>`;
   }).join('');
 
-  const strategyHtml = strategy ? `
-    <div class="book-section">
-      <div class="book-section-label"><i class="fa-solid fa-chess"></i> 読解ストラテジー Strategy</div>
-      <div class="strategy-display-card">
-        <p style="line-height: 1.8;">${strategy.rule_ja || ''}</p>
-        ${strategy.rule_en ? `<p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 0.35rem;">${strategy.rule_en}</p>` : ''}
-      </div>
-      ${(strategy.keyPoints || []).length > 0 ? `
-        <div class="book-keypoints">
-          ${strategy.keyPoints.map(kp => `
-            <div class="book-keypoint">
-              <div class="font-ja" style="font-weight: 700;">${kp.point_ja || ''}</div>
-              ${kp.point_en ? `<div style="color: var(--text-muted); font-size: 0.85rem;">${kp.point_en}</div>` : ''}
-              ${kp.explanation_en ? `<div style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${kp.explanation_en}</div>` : ''}
-            </div>`).join('')}
-        </div>` : ''}
-    </div>` : '';
+  const sectionOptions = sections.map((s, i) =>
+    `<option value="${i}"${i === sIdx ? ' selected' : ''}>${i + 1}/${sections.length} · ${s.ja} ${s.en}</option>`).join('');
 
-  const advice = lesson.testAdvice;
-  let adviceBody = '';
-  if (advice) {
+  // ---------- per-section bodies ----------
+  let bodyHtml = '';
+
+  if (section.id === 'strategy' && strategy) {
+    bodyHtml = `
+      <div class="book-section">
+        <div class="book-section-label"><i class="fa-solid fa-chess"></i> 読解ストラテジー Strategy</div>
+        <div class="strategy-display-card">
+          <p style="line-height: 1.8;">${strategy.rule_ja || ''}</p>
+          ${strategy.rule_en ? `<p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 0.35rem;">${strategy.rule_en}</p>` : ''}
+        </div>
+        ${(strategy.keyPoints || []).length > 0 ? `
+          <div class="book-keypoints">
+            ${strategy.keyPoints.map(kp => `
+              <div class="book-keypoint">
+                <div class="font-ja" style="font-weight: 700;">${kp.point_ja || ''}</div>
+                ${kp.point_en ? `<div style="color: var(--text-muted); font-size: 0.85rem;">${kp.point_en}</div>` : ''}
+                ${kp.explanation_en ? `<div style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${kp.explanation_en}</div>` : ''}
+              </div>`).join('')}
+          </div>` : ''}
+      </div>`;
+  } else if (section.id === 'prereading' && lesson.preReading) {
+    bodyHtml = `
+      <div class="book-section">
+        <div class="book-section-label"><i class="fa-solid fa-lightbulb"></i> 読む前に Before Reading</div>
+        <div class="pre-reading-box">
+          <p class="font-ja pre-reading-text">${lesson.preReading.question_ja || lesson.preReading.question || ''}</p>
+          ${lesson.preReading.question_en ? `<p class="pre-reading-sub">${lesson.preReading.question_en}</p>` : ''}
+        </div>
+      </div>`;
+  } else if (section.id === 'passage') {
+    bodyHtml = `
+      <div class="book-section">
+        <div class="book-section-label"><i class="fa-solid fa-book-open-reader"></i> 本文 Passage</div>
+        ${lesson.passageInstructions ? `
+          <div class="reading-instructions-box font-ja" style="margin-bottom: 0.6rem;">
+            <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
+            <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
+          </div>` : ''}
+        <div class="passage-view-card">
+          <div class="passage-scroll-pane font-ja" id="passage-content-area" style="font-size: ${1.2 * readerRuntime.settings.fontScale}rem; max-height: none;">
+            ${sentences.map(sn => renderPassageSentenceHTML(sn, vocabMap, footnotes)).join('')}
+          </div>
+        </div>
+      </div>`;
+  } else if (section.id === 'drills') {
+    bodyHtml = `
+      <div class="book-section">
+        <div class="book-section-label"><i class="fa-solid fa-pen-to-square"></i> 練習 Drills (${drills.length})</div>
+        ${drills.map(d => `
+          <div class="book-drill-card">
+            <div class="book-drill-title font-ja">${d.title_ja || ''}</div>
+            ${d.title_en ? `<div class="book-drill-sub">${d.title_en}</div>` : ''}
+            ${d.instruction_ja ? `<p class="font-ja" style="margin: 0.4rem 0 0.2rem;">${d.instruction_ja}</p>` : ''}
+            ${d.instruction_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.instruction_en}</p>` : ''}
+            ${d.originalSentence_ruby || d.originalSentence_ja ? `<p class="font-ja book-drill-sentence">${d.originalSentence_ruby || d.originalSentence_ja}</p>` : ''}
+            ${d.originalSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.originalSentence_en}</p>` : ''}
+            ${d.solution ? `
+              <details class="book-drill-answer"><summary>Show answer</summary>
+                <p class="font-ja" style="margin-top: 0.35rem;">${d.solution}</p>
+                ${d.explanation_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${d.explanation_en}</p>` : ''}
+              </details>` : ''}
+          </div>`).join('')}
+      </div>`;
+  } else if (section.id === 'vocab') {
+    bodyHtml = `
+      <div class="book-section">
+        <div class="book-section-label"><i class="fa-solid fa-book-bookmark"></i> 重要語彙 Key Vocabulary (${vocabulary.length})</div>
+        <div class="preview-vocab-chips">
+          ${vocabulary.map(v => bookVocabChipHtml(v)).join('')}
+        </div>
+      </div>`;
+  } else if (section.id === 'tough') {
+    const tough = getLessonToughWords(lesson);
+    bodyHtml = `
+      <div class="book-section">
+        <div class="book-section-label"><i class="fa-solid fa-fire"></i> 苦手な言葉 Tough Words (${tough.length})</div>
+        ${tough.length > 0 ? `
+          <p class="book-tough-hint">Words you flagged tough in drills. Tap + Add to put them into My Words for revision.</p>
+          <div class="preview-vocab-chips">
+            ${tough.map(v => bookVocabChipHtml(v)).join('')}
+          </div>
+          <div class="book-tough-actions">
+            <button class="btn btn-sm btn-secondary" onclick="startReadingWordDrill(true)"><i class="fa-solid fa-fire"></i> Drill tough words</button>
+          </div>` : `
+          <div class="book-tough-empty">
+            <p>No tough words in this lesson yet.</p>
+            <p>Words you flame-mark or grade <strong>Hard</strong>/<strong>Again</strong> in word drills are flagged tough and listed here, ready to add for revision. Any word can also be added from the Key Vocabulary section.</p>
+          </div>`}
+      </div>`;
+  } else if (section.id === 'advice' && lesson.testAdvice) {
+    const advice = lesson.testAdvice;
+    let adviceBody = '';
     if (advice.advice_ja || advice.traps) {
       adviceBody = `<p style="margin-top: 0.6rem; line-height: 1.8;">${advice.advice_ja || advice.traps || ''}</p>
         ${advice.advice_en ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${advice.advice_en}</p>` : ''}`;
@@ -743,11 +923,34 @@ function renderBookPhase(container) {
           </li>`).join('')}
       </ol>`;
     }
+    bodyHtml = `
+      <div class="test-advice-card font-ja">
+        <h3><i class="fa-solid fa-compass" style="color: var(--amber);"></i> 試験のコツ (Test Advice)</h3>
+        ${adviceBody}
+      </div>`;
+  } else if (section.id === 'commentary' && lesson.commentary) {
+    const commentary = lesson.commentary;
+    const commentaryJa = commentary.text_ja || commentary.summary_ja || commentary.logicFlow || '';
+    const commentaryEn = commentary.text_en || commentary.summary_en || '';
+    bodyHtml = `
+      <div class="commentary-card font-ja">
+        <h3><i class="fa-solid fa-diagram-project" style="color: var(--cyan);"></i> ${commentary.title_ja || '本文の解説 (Commentary)'}</h3>
+        <p style="margin-top: 0.6rem; line-height: 1.8;">${commentaryJa}</p>
+        ${commentaryEn ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${commentaryEn}</p>` : ''}
+      </div>`;
+  } else {
+    // overview fallback: lesson has no content sections beyond the title
+    bodyHtml = lesson.passageInstructions ? `
+      <div class="book-section">
+        <div class="reading-instructions-box font-ja">
+          <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
+          <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
+        </div>
+      </div>` : '';
   }
 
-  const commentary = lesson.commentary;
-  const commentaryJa = commentary ? (commentary.text_ja || commentary.summary_ja || commentary.logicFlow || '') : '';
-  const commentaryEn = commentary ? (commentary.text_en || commentary.summary_en || '') : '';
+  const atStart = sIdx <= 0 && idx <= 0;
+  const atEnd = isLastSection && idx >= q.length - 1;
 
   container.innerHTML = `
     <div class="reading-workspace-shell">
@@ -759,11 +962,15 @@ function renderBookPhase(container) {
       </div>
 
       ${q.length > 1 ? `
-        <div class="book-jump-row">
-          <button class="btn btn-sm btn-secondary" onclick="bookNavReading(-1)" ${idx <= 0 ? 'disabled' : ''}><i class="fa-solid fa-chevron-left"></i> Prev</button>
+        <div class="book-lesson-jump">
           <select class="book-jump-select" onchange="jumpReadingBookLesson(this.value)" aria-label="Jump to lesson">${jumpOptions}</select>
-          <button class="btn btn-sm btn-secondary" onclick="bookNavReading(1)" ${idx >= q.length - 1 ? 'disabled' : ''}>Next <i class="fa-solid fa-chevron-right"></i></button>
         </div>` : ''}
+
+      <div class="book-jump-row book-section-pager">
+        <button class="btn btn-sm btn-secondary" onclick="bookNavSection(-1)" ${atStart ? 'disabled' : ''}><i class="fa-solid fa-chevron-left"></i> Back</button>
+        <select class="book-jump-select book-section-select" onchange="jumpReadingBookSection(this.value)" aria-label="Jump to section">${sectionOptions}</select>
+        <button class="btn btn-sm btn-secondary" onclick="bookNavSection(1)" ${atEnd ? 'disabled' : ''}>Next <i class="fa-solid fa-chevron-right"></i></button>
+      </div>
 
       <div class="passage-view-card">
         <div class="dokkai-card-top" style="margin-bottom: 0.5rem;">
@@ -772,101 +979,24 @@ function renderBookPhase(container) {
         </div>
         <h1 class="reading-title-large font-ja">${lesson.title_ja || lesson.title}</h1>
         <p class="reading-subtitle">${lesson.title_en || ''}</p>
-
-        ${lesson.passageInstructions ? `
-          <div class="reading-instructions-box font-ja" style="margin-top: 0.75rem;">
-            <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
-            <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
-          </div>` : ''}
       </div>
 
-      ${strategyHtml}
+      ${bodyHtml}
 
-      ${lesson.preReading ? `
-        <div class="book-section">
-          <div class="book-section-label"><i class="fa-solid fa-lightbulb"></i> 読む前に Before Reading</div>
-          <div class="pre-reading-box">
-            <p class="font-ja pre-reading-text">${lesson.preReading.question_ja || lesson.preReading.question || ''}</p>
-            ${lesson.preReading.question_en ? `<p class="pre-reading-sub">${lesson.preReading.question_en}</p>` : ''}
-          </div>
+      ${isLastSection && (sentences.length > 0 || questions.length > 0) ? `
+        <div class="book-footer-actions">
+          ${(sentences.length > 0 || questions.length > 0) ? `
+            <button class="btn btn-primary" onclick="startReadingPassage()">
+              <i class="fa-solid fa-play"></i> Timed practice
+            </button>` : ''}
+          ${questions.length > 0 ? `
+            <button class="btn btn-ghost" onclick="skipToQuestions()">
+              Questions (${questions.length}) <i class="fa-solid fa-forward"></i>
+            </button>` : ''}
         </div>` : ''}
-
-      ${sentences.length > 0 ? `
-        <div class="book-section">
-          <div class="book-section-label"><i class="fa-solid fa-book-open-reader"></i> 本文 Passage</div>
-          <div class="passage-view-card">
-            <div class="passage-scroll-pane font-ja" id="passage-content-area" style="font-size: ${1.2 * readerRuntime.settings.fontScale}rem; max-height: none;">
-              ${sentences.map(sn => renderPassageSentenceHTML(sn, vocabMap, footnotes)).join('')}
-            </div>
-          </div>
-        </div>` : ''}
-
-      ${drills.length > 0 ? `
-        <div class="book-section">
-          <div class="book-section-label"><i class="fa-solid fa-pen-to-square"></i> 練習 Drills (${drills.length})</div>
-          ${drills.map(d => `
-            <div class="book-drill-card">
-              <div class="book-drill-title font-ja">${d.title_ja || ''}</div>
-              ${d.title_en ? `<div class="book-drill-sub">${d.title_en}</div>` : ''}
-              ${d.instruction_ja ? `<p class="font-ja" style="margin: 0.4rem 0 0.2rem;">${d.instruction_ja}</p>` : ''}
-              ${d.instruction_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.instruction_en}</p>` : ''}
-              ${d.originalSentence_ruby || d.originalSentence_ja ? `<p class="font-ja book-drill-sentence">${d.originalSentence_ruby || d.originalSentence_ja}</p>` : ''}
-              ${d.originalSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.originalSentence_en}</p>` : ''}
-              ${d.solution ? `
-                <details class="book-drill-answer"><summary>Show answer</summary>
-                  <p class="font-ja" style="margin-top: 0.35rem;">${d.solution}</p>
-                  ${d.explanation_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${d.explanation_en}</p>` : ''}
-                </details>` : ''}
-            </div>`).join('')}
-        </div>` : ''}
-
-      ${vocabulary.length > 0 ? `
-        <div class="book-section">
-          <div class="book-section-label"><i class="fa-solid fa-book-bookmark"></i> 重要語彙 Key Vocabulary (${vocabulary.length})</div>
-          <div class="preview-vocab-chips">
-            ${vocabulary.map(v => `
-              <div class="vocab-preview-chip">
-                <div class="vocab-preview-text">
-                  <span class="font-ja vocab-chip-term">${v.term}</span>
-                  <span class="vocab-chip-reading">${v.reading || ''}</span>
-                  <span class="vocab-chip-meaning">${v.meaning || ''}</span>
-                </div>
-                <button class="btn btn-xs btn-ghost btn-chip-add" onclick="event.stopPropagation(); addWordFromPreview('${v.term.replace(/'/g, "\'")}', '${(v.reading||'').replace(/'/g, "\'")}', '${(v.meaning||'').replace(/'/g, "\'")}', this)">
-                  + Add
-                </button>
-              </div>`).join('')}
-          </div>
-        </div>` : ''}
-
-      ${advice ? `
-        <div class="test-advice-card font-ja">
-          <h3><i class="fa-solid fa-compass" style="color: var(--amber);"></i> 試験のコツ (Test Advice)</h3>
-          ${adviceBody}
-        </div>` : ''}
-
-      ${commentary && commentaryJa ? `
-        <div class="commentary-card font-ja">
-          <h3><i class="fa-solid fa-diagram-project" style="color: var(--cyan);"></i> ${commentary.title_ja || '本文の解説 (Commentary)'}</h3>
-          <p style="margin-top: 0.6rem; line-height: 1.8;">${commentaryJa}</p>
-          ${commentaryEn ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${commentaryEn}</p>` : ''}
-        </div>` : ''}
-
-      <div class="book-footer-actions">
-        ${(sentences.length > 0 || questions.length > 0) ? `
-          <button class="btn btn-primary" onclick="startReadingPassage()">
-            <i class="fa-solid fa-play"></i> Timed practice
-          </button>` : ''}
-        ${questions.length > 0 ? `
-          <button class="btn btn-ghost" onclick="skipToQuestions()">
-            Questions (${questions.length}) <i class="fa-solid fa-forward"></i>
-          </button>` : ''}
-        ${q.length > 1 && idx < q.length - 1 ? `
-          <button class="btn btn-secondary" onclick="bookNavReading(1)">
-            Next lesson <i class="fa-solid fa-chevron-right"></i>
-          </button>` : ''}
-      </div>
     </div>
 
+    ${section.id === 'passage' ? `
     <!-- Reading display toolbar (no timer in book mode) -->
     <div class="reading-sticky-toolbar">
       <div class="toolbar-pill-group">
@@ -879,12 +1009,13 @@ function renderBookPhase(container) {
         <button class="t-btn-toggle${readerRuntime.settings.showTranslations ? ' active' : ''}" onclick="togglePassageTranslations()" title="Toggle Translations">訳</button>
         <button class="t-btn-toggle${readerRuntime.settings.chunkMode ? ' active' : ''}" onclick="togglePassageChunks()" title="区切り Chunk Mode">区切り</button>
       </div>
-    </div>
+    </div>` : ''}
 
     <!-- Gloss Mini Sheet Container -->
     <div id="word-gloss-sheet-container"></div>
   `;
 }
+
 
 // =======================================================
 // FLOW PHASE 1: PREVIEW (15-30 s, skippable)
@@ -2403,6 +2534,8 @@ if (typeof window !== 'undefined') {
   window.startReadingBook = startReadingBook;
   window.bookNavReading = bookNavReading;
   window.jumpReadingBookLesson = jumpReadingBookLesson;
+  window.bookNavSection = bookNavSection;
+  window.jumpReadingBookSection = jumpReadingBookSection;
   window.startReadingPractice = startReadingPractice;
   window.practiceNextReadingLesson = practiceNextReadingLesson;
   window.startReadingWordDrill = startReadingWordDrill;

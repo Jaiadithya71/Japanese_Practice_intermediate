@@ -446,3 +446,52 @@
     flex: 1 1 0;
   }
 }
+
+/* Book mode: lesson jump row + section pager */
+.book-lesson-jump {
+  margin-bottom: 0.5rem;
+}
+
+.book-lesson-jump .book-jump-select {
+  width: 100%;
+}
+
+.book-section-pager {
+  position: sticky;
+  top: 0.35rem;
+  z-index: 20;
+  background: var(--bg);
+  padding: 0.2rem 0 0.4rem;
+}
+
+.book-section-select {
+  text-align: center;
+  font-size: 0.82rem;
+}
+
+/* Book mode: tough words section */
+.book-tough-hint {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+  margin: 0 0 0.6rem;
+}
+
+.book-tough-empty {
+  background: var(--bg2);
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.book-tough-empty p {
+  margin: 0 0 0.35rem;
+}
+
+.book-tough-actions {
+  margin-top: 0.7rem;
+  display: flex;
+  justify-content: center;
+}
