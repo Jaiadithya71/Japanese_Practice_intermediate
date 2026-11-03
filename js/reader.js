@@ -634,6 +634,12 @@ export function openReadingLesson(lessonId, options = {}) {
   if (listSection) listSection.style.display = 'none';
   if (workspaceSection) workspaceSection.style.display = 'block';
 
+  // Focused reading: hide the hub chrome (hub title, stats banner, sub-tabs)
+  // and the floating dock/sync pill while a lesson workspace is open.
+  const readingView = document.getElementById('view-reading');
+  if (readingView) readingView.classList.add('reading-focus');
+  document.body.classList.add('reading-focus');
+
   renderWorkspace();
   if (readerRuntime.phase === 'book') scrollBookIntoView();
   else window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -653,6 +659,10 @@ export function closeReadingWorkspace() {
   const workspaceSection = document.getElementById('dokkai-workspace-section');
   if (listSection) listSection.style.display = 'block';
   if (workspaceSection) workspaceSection.style.display = 'none';
+
+  const readingView = document.getElementById('view-reading');
+  if (readingView) readingView.classList.remove('reading-focus');
+  document.body.classList.remove('reading-focus');
 
   renderReadingLessonChips();
   renderLessonList();
@@ -2018,6 +2028,17 @@ function ensureReaderStyles() {
   const style = document.createElement('style');
   style.id = 'dokkai-reader-injected-styles';
   style.textContent = `
+    /* Focused reading: hub chrome and global dock/sync pill stay hidden
+       while a lesson workspace is open; restored on close. */
+    #view-reading.reading-focus > .view-header,
+    #view-reading.reading-focus > #pb-reading,
+    #view-reading.reading-focus > .pillar-sub-tabs {
+      display: none !important;
+    }
+    body.reading-focus #mobile-dock,
+    body.reading-focus #n3sync-mobile {
+      display: none !important;
+    }
     .reading-workspace-shell {
       max-width: 900px;
       margin: 0 auto;
