@@ -495,3 +495,18 @@
   display: flex;
   justify-content: center;
 }
+
+/* Section pager stays a single compact row on all widths */
+.book-jump-row.book-section-pager {
+  flex-wrap: nowrap;
+}
+
+.book-jump-row.book-section-pager .btn {
+  flex: 0 0 auto;
+}
+
+.book-jump-row.book-section-pager .book-section-select {
+  order: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+}
