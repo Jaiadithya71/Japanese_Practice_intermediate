@@ -7,8 +7,10 @@ import { characterShapes } from '../data/kanji/character_shapes.js';
    Reading (kanji -> kana): same okurigana ending, same kana count,
      overlapping kana, near-identical readings (voicing, long vowel,
      small tsu), readings of words that share a kanji.
-   Writing (kana -> kanji): same character count, same ending,
-     words sharing a kanji, and look-alike / sound-family kanji swaps.
+   Writing (kana -> kanji): certification-exam pattern (2026-11-04 benchmark,
+     docs/kanji-mcq-quality-benchmark.md) - fake but plausible compounds with
+     each kanji swapped for a glyph look-alike from the full Joyo set, plus at
+     most one real near-miss word per question. Single kanji stay real kanji.
    Selection is deterministic: the same word always gets the same
    distractors (ties broken by a stable hash, never Math.random).
    A distractor is never a correct answer: any other word with the
@@ -222,9 +224,9 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
   // Everything that is a correct answer for this prompt must never appear as a distractor.
   const forbidden = new Set();
   let scored = [];
-  const push = (value, score, source) => {
+  const push = (value, score, source, meta) => {
     if (!value || forbidden.has(value)) return;
-    scored.push({ value, score, tie: stableHash(t.term + '|' + value), source });
+    scored.push({ value, score, tie: stableHash(t.term + '|' + value), source, meta });
   };
 
   if (kind === 'reading') {
@@ -291,31 +293,63 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
       s += 3 * dice(w.term, t.term) + commonPrefix(w.term, t.term) + commonSuffix(w.term, t.term);
       s += 3 * dice(w.reading, t.reading);                    // sounds similar too
       if (poolTerms.has(w.term) || (t.lesson != null && w.lesson === t.lesson)) s += 1;
-      // For multi-character spellings, prefer actual vocabulary over invented
-      // strings. Keep the final inflection kana when the target has one.
+      // 2026-11-04 exam-quality benchmark (docs/kanji-mcq-quality-benchmark.md):
+      // real vocabulary is guessable by recognition, so for multi-character
+      // spellings a book word qualifies only as the question's single near-miss
+      // slot: same length AND an aligned or shared kanji (市役所 vs 区役所).
+      // Anything else sinks to a scarcity fallback. Keep the final inflection
+      // kana when the target has one.
       if (tLen > 1 && tEnd && !w.term.endsWith(tEnd)) continue;
-      if (tLen > 1) s += 250 + 100 * shared + (okuriganaOf(w.term) === tOkuri ? 140 : 0);
+      if (tLen > 1) {
+        const examGrade = d === 0 && (aligned > 0 || shared > 0);
+        if (examGrade) s += 30 + 16 * aligned + 6 * shared;
+        else s -= 40;
+      }
       push(w.term, s, 'word');
     }
-    // synthetic look-alike / sound-family swaps, as the real exam uses near-miss characters
+    // Exam-style near-miss characters. Multi-character spellings follow the
+    // certification-exam pattern from the 2026-11-04 benchmark: fake but
+    // plausible compounds built by swapping each kanji for a glyph look-alike
+    // from the full Joyo set (困体 / 国地 for 団体; 医投所 / 匡股所 for 区役所).
+    // These force recall of the exact spelling instead of word recognition, so
+    // they are the primary distractors; single-kanji choices remain real kanji.
     const chars = Array.from(t.term);
-    chars.forEach((c, i) => {
-      if (!isKanji(c)) return;
-      // Single-kanji choices remain real kanji; multi-character mutation is
-      // only a last-resort fallback, and uses characters seen in this book.
-      const subs = tLen === 1 ? shapeCandidates(c) : [...new Set([
-        ...shapeCandidates(c).filter(p => familiar.has(p)),
-        ...[...familiar.keys()].filter(p => p !== c).sort((a,b) =>
-          shapeSimilarity(c,b)-shapeSimilarity(c,a) || (familiar.get(b)-familiar.get(a)) || a.localeCompare(b)).slice(0,16)
-      ])];
-      for (const p of subs) {
-        const a = chars.slice(); a[i] = p;
-        const cand = a.join('');
-        if (cand === t.term) continue;
-        const real = words.some(w => w.term === cand);
-        push(cand, 16 + 28 * (tKanji.length - 1) + 2 * shapeSimilarity(c,p) + (real ? 250 : 0), 'shape');
+    const termSet = new Set(words.map(w => w.term));
+    if (tLen === 1) {
+      chars.forEach((c, i) => {
+        if (!isKanji(c)) return;
+        for (const p of shapeCandidates(c)) {
+          if (p === t.term) continue;
+          const real = termSet.has(p);
+          push(p, 16 + 2 * shapeSimilarity(c, p) + (real ? 250 : 0), 'shape');
+        }
+      });
+    } else {
+      const pos = chars.map((c, i) => isKanji(c) ? i : -1).filter(i => i >= 0);
+      // A substitution needs a genuine visual link (look-alike, sound-family or
+      // same-radical match), not just a near stroke count.
+      const subsAt = pos.map(i => shapeCandidates(chars[i]).filter(p => shapeSimilarity(chars[i], p) >= 2).slice(0, 8));
+      // one kanji swapped (団体 -> 困体): the anchor kind, ranked highest
+      pos.forEach((cp, k) => {
+        for (const p of subsAt[k]) {
+          const a = chars.slice(); a[cp] = p;
+          const cand = a.join('');
+          if (cand === t.term || termSet.has(cand)) continue;
+          push(cand, 70 + 3 * shapeSimilarity(chars[cp], p), 'shape', { swaps: [[cp, p]] });
+        }
+      });
+      // two kanji swapped (団体 -> 困休, 区役所 -> 匡股所): fills the row when
+      // single swaps run out or score low
+      for (let a = 0; a < pos.length; a++) for (let b = a + 1; b < pos.length; b++) {
+        const i = pos[a], j = pos[b];
+        for (const p1 of subsAt[a].slice(0, 4)) for (const p2 of subsAt[b].slice(0, 4)) {
+          const arr = chars.slice(); arr[i] = p1; arr[j] = p2;
+          const cand = arr.join('');
+          if (cand === t.term || termSet.has(cand)) continue;
+          push(cand, 45 + 2 * (shapeSimilarity(chars[i], p1) + shapeSimilarity(chars[j], p2)), 'shape', { swaps: [[i, p1], [j, p2]] });
+        }
       }
-    });
+    }
   } else {
     // meaning: English glosses of confusable words
     const tm = t.meaning.toLowerCase();
@@ -334,12 +368,41 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
 
   scored.sort((a, b) => b.score - a.score || a.tie - b.tie || (a.value < b.value ? -1 : 1));
   const out = [], seen = new Set();
-  let synthetic = 0;
-  for (const c of scored) {
-    if (seen.has(c.value) || forbidden.has(c.value)) continue;
-    if (kind !== 'writing' && c.source !== 'word') { if (synthetic >= 2) continue; synthetic++; }
-    seen.add(c.value);
-    out.push(c.value);
+  let synthetic = 0, wordPicks = 0;
+  const swapUse = new Map(); // "pos|char" -> times picked, for the diversity cap
+  // Multi-character writing: at most one real-word near-miss per question (the
+  // exam's 市役所 slot); look-alike compounds fill the rest. The second pass
+  // runs only when the capped pass could not fill the option row.
+  const capWord = kind === 'writing' && len(t.term) > 1;
+  for (const pass of [true, false]) {
+    for (const c of scored) {
+      if (seen.has(c.value) || forbidden.has(c.value)) continue;
+      if (kind !== 'writing' && c.source !== 'word') { if (synthetic >= 2) continue; synthetic++; }
+      if (pass && capWord) {
+        if (c.source === 'word') { if (wordPicks >= 1) continue; wordPicks++; }
+        if (c.meta && c.meta.swaps) {
+          // positional variety: a single-position swap may be used twice at
+          // most, so the row cannot all differ from the answer in one place
+          if (c.meta.swaps.length === 1) {
+            const sp = c.meta.swaps[0][0];
+            if ((swapUse.get(sp + '|') || 0) >= 2) continue;
+          }
+          let crowded = false;
+          for (const [sp, sc] of c.meta.swaps) {
+            if ((swapUse.get(sp + '|' + sc) || 0) >= 2) { crowded = true; break; }
+          }
+          if (crowded) continue;
+          if (c.meta.swaps.length === 1) {
+            const sp = c.meta.swaps[0][0];
+            swapUse.set(sp + '|', (swapUse.get(sp + '|') || 0) + 1);
+          }
+          for (const [sp, sc] of c.meta.swaps) swapUse.set(sp + '|' + sc, (swapUse.get(sp + '|' + sc) || 0) + 1);
+        }
+      }
+      seen.add(c.value);
+      out.push(c.value);
+      if (out.length >= count) break;
+    }
     if (out.length >= count) break;
   }
   return out;
