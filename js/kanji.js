@@ -16,7 +16,7 @@ import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from 
 import { startStudy, renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
-import { pickDistractors } from './distractors.js?v=20261029-options';
+import { pickDistractors } from './distractors.js?v=20261104-options';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
