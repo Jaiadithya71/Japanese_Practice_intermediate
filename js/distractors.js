@@ -17,6 +17,26 @@ import { characterShapes } from '../data/kanji/character_shapes.js';
    same reading (writing) or the same spelling (reading) is excluded.
    ======================================================= */
 
+// 2026-11-04 audit against JMdict (rev 1.09): a synthetic glyph-swap can
+// coincide with an attested word or alternate spelling that is readable
+// exactly like the prompt - then it is an alternate correct answer, not a
+// trap. These four target -> distractor collisions were found across all 971
+// kanji words and are excluded at generation time:
+//   越える(こえる) -> 超える   (same JMdict entry, alternate spelling)
+//   少女(しょうじょ) -> 小女   (archaic alternate spelling, same entry)
+//   少々(しょうしょう) -> 小々 (variant spelling, same entry)
+//   受験(じゅけん) -> 受検     (distinct real word, same reading)
+const JM_AUDIT_EXCLUSIONS = new Map([
+  ['越える', new Set(['超える'])],
+  ['少女', new Set(['小女'])],
+  ['少々', new Set(['小々'])],
+  ['受験', new Set(['受検'])],
+]);
+const isJmAuditExcluded = (term, cand) => {
+  const s = JM_AUDIT_EXCLUSIONS.get(term);
+  return s ? s.has(cand) : false;
+};
+
 export const SOUND_FAMILIES = [
   ['反', '坂', '板', '返', '飯', '販'], ['寺', '持', '待', '時', '特', '詩'],
   ['方', '訪', '房', '防', '妨', '放'], ['兆', '挑', '逃', '跳', '眺', '桃'],
@@ -335,6 +355,7 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
           const a = chars.slice(); a[cp] = p;
           const cand = a.join('');
           if (cand === t.term || termSet.has(cand)) continue;
+          if (isJmAuditExcluded(t.term, cand)) continue;
           push(cand, 70 + 3 * shapeSimilarity(chars[cp], p), 'shape', { swaps: [[cp, p]] });
         }
       });
@@ -346,6 +367,7 @@ export function pickDistractors(target, kind, universe = [], opts = {}) {
           const arr = chars.slice(); arr[i] = p1; arr[j] = p2;
           const cand = arr.join('');
           if (cand === t.term || termSet.has(cand)) continue;
+          if (isJmAuditExcluded(t.term, cand)) continue;
           push(cand, 45 + 2 * (shapeSimilarity(chars[i], p1) + shapeSimilarity(chars[j], p2)), 'shape', { swaps: [[i, p1], [j, p2]] });
         }
       }
