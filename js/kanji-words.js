@@ -6,7 +6,7 @@
 
 import { state as defaultState } from './state.js';
 import { snapToNextDueSlot } from './time.js';
-import { pickDistractors } from './distractors.js?v=20261029-options';
+import { pickDistractors } from './distractors.js?v=20261104-options';
 
 // Facet Constants
 export const FACET_READING = 'KWR';
