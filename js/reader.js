@@ -1391,10 +1391,14 @@ function getGlossIndex(lesson) {
   return glossCache;
 }
 
-// Wrap dictionary terms found in html text nodes with tappable gloss spans.
+// Wrap dictionary terms found in html text nodes with tappable gloss spans,
+// then wrap every remaining kanji word (e.g. 以外) with a fallback lookup that
+// uses the passage furigana as its reading plus per-kanji meaning hints.
 // Skips content inside <rt> (furigana readings) and <sup> (footnote markers).
+const KANJI_RUN_REGEX = /[\u4e00-\u9faf\u3005\u3033-\u3035\u30f6]{2,}/g;
+
 function wrapGlossTerms(html, gloss) {
-  if (!html || !gloss || !gloss.regex) return html;
+  if (!html) return html;
   const parts = html.split(/(<[^>]+>)/g);
   let skipDepth = 0;
   for (let i = 0; i < parts.length; i++) {
@@ -1406,8 +1410,28 @@ function wrapGlossTerms(html, gloss) {
       continue;
     }
     if (skipDepth > 0) continue;
-    parts[i] = p.replace(gloss.regex, m =>
-      `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}', this)">${m}</span>`);
+    // 1) curated dictionary terms
+    let seg = (gloss && gloss.regex) ? p.replace(gloss.regex, m =>
+      `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}', this)">${m}</span>`) : p;
+    // 2) fallback: remaining kanji words; reading from the enclosing <rt> when present
+    const rtOpen = parts[i + 1] || '';
+    const rubyReading = (parts[i - 1] === '<ruby>' && /^<rt>$/.test(rtOpen) && (parts[i + 2] || '')[0] !== '<')
+      ? (parts[i + 2] || '') : '';
+    const sub = seg.split(/(<[^>]+>)/g);
+    let glossDepth = 0;
+    for (let k = 0; k < sub.length; k++) {
+      const q = sub[k];
+      if (!q) continue;
+      if (q[0] === '<') {
+        if (/^<span[^>]*gloss-term/.test(q)) glossDepth++;
+        else if (/^<\/span>/.test(q) && glossDepth > 0) glossDepth--;
+        continue;
+      }
+      if (glossDepth > 0) continue;
+      sub[k] = q.replace(KANJI_RUN_REGEX, m =>
+        `<span class="gloss-term gloss-term-fallback" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m}', this${rubyReading ? `, '${rubyReading}'` : ''})">${m}</span>`);
+    }
+    parts[i] = sub.join('');
   }
   return parts.join('');
 }
@@ -2030,15 +2054,19 @@ export function returnToPassageReading() {
 // WORD GLOSS MINI-SHEET & VOCABULARY ENGINE INTEGRATION (§8)
 // =======================================================
 
-export function showWordGloss(term, anchorEl) {
+export function showWordGloss(term, anchorEl, reading) {
   const lesson = readerRuntime.lesson;
   if (!lesson) return;
 
   let vocab = (lesson.vocabulary || []).find(v => v.term === term);
   if (!vocab) vocab = getGlossIndex(lesson).map.get(term);
-  if (!vocab) return;
+  if (!vocab) {
+    // Fallback for words outside the app's dictionary: never invent a meaning.
+    // Show the furigana reading plus labeled per-kanji hints instead.
+    vocab = { term, reading: reading || '', meaning: '', type: '', fallback: true };
+  }
 
-  readerRuntime.activeGlossWord = vocab;
+  readerRuntime.activeGlossWord = vocab.fallback ? null : vocab;
   const container = document.getElementById('word-gloss-sheet-container');
   if (!container) return;
 
@@ -2054,7 +2082,10 @@ export function showWordGloss(term, anchorEl) {
         </div>
         <button class="btn btn-xs btn-ghost" onclick="closeWordGloss()"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      <div class="gloss-meaning-text">${vocab.meaning || ''}</div>
+      ${vocab.meaning ? `<div class="gloss-meaning-text">${vocab.meaning}</div>` : `
+        <div class="gloss-meaning-text" style="color: var(--text-dim); font-size: 0.85rem;">
+          Not in the app's word list yet. ${vocab.reading ? 'Reading from the passage furigana; ' : ''}Kanji-by-kanji hints below (not a literal translation).
+        </div>`}
       ${kanjiParts.length ? `
         <div class="vocab-kanji-breakdown gloss-kanji-breakdown">
           <div class="vocab-kanji-heading">Kanji meanings</div>
@@ -2063,11 +2094,12 @@ export function showWordGloss(term, anchorEl) {
               <span class="vocab-kanji-chip" title="${kanji}: ${meanings.join(', ')}"><b class="font-ja">${kanji}</b> ${meanings.slice(0, 2).join(' / ')}</span>`).join('')}
           </div>
         </div>` : ''}
-      <div class="gloss-actions">
-        <button class="btn btn-sm btn-primary" onclick="addActiveWordToMyWords()">
-          <i class="fa-solid fa-plus"></i> Add to My Words
-        </button>
-      </div>
+      ${vocab.fallback ? '' : `
+        <div class="gloss-actions">
+          <button class="btn btn-sm btn-primary" onclick="addActiveWordToMyWords()">
+            <i class="fa-solid fa-plus"></i> Add to My Words
+          </button>
+        </div>`}
     </div>
   `;
 
@@ -2606,6 +2638,10 @@ function ensureReaderStyles() {
     }
     .gloss-term:hover {
       color: var(--accent);
+    }
+    .gloss-term-fallback {
+      border-bottom-style: dotted;
+      color: var(--text-dim);
     }
     .reading-sticky-toolbar {
       position: sticky;
