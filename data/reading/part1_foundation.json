@@ -58,7 +58,9 @@
             "決め、",
             "これを"
           ],
-          "explanation_en": "The conjunction connective form '決め、' (stem form of 決めて) finishes the first action (deciding on the 1,945 kanji) before introducing 'これを...' (calling them Joyo Kanji)."
+          "explanation_en": "The conjunction connective form '決め、' (stem form of 決めて) finishes the first action (deciding on the 1,945 kanji) before introducing 'これを...' (calling them Joyo Kanji).",
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>1：<ruby>長<rt>なが</rt></ruby>い<ruby>文<rt>ぶん</rt></ruby>の<ruby>切<rt>き</rt></ruby>れ<ruby>目<rt>め</rt></ruby>",
+          "instruction_ja_ruby": "<ruby>下<rt>した</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>の<ruby>切<rt>き</rt></ruby>れ<ruby>目<rt>め</rt></ruby>に／を<ruby>一<rt>ひと</rt></ruby>つ<ruby>入<rt>い</rt></ruby>れて、<ruby>二<rt>ふた</rt></ruby>つに<ruby>分<rt>わ</rt></ruby>けなさい。"
         },
         {
           "drillId": "drill-19-2",
@@ -87,7 +89,9 @@
               "modifyingClause_en": "that regular-use kanji should be reduced",
               "explanation_en": "'常用漢字を減らすべきだという' defines the content of the noun '意見' (opinion). It answers: *what* opinion? -> The opinion that Joyo Kanji should be reduced."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>2：<ruby>名詞<rt>めいし</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>している<ruby>部分<rt>ぶぶん</rt></ruby>",
+          "instruction_ja_ruby": "<ruby>本文中<rt>ほんぶんちゅう</rt></ruby>の<ruby>下線部<rt>かせんぶ</rt></ruby>の<ruby>名詞<rt>めいし</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>している<ruby>部分<rt>ぶぶん</rt></ruby>を [ ] で<ruby>示<rt>しめ</rt></ruby>しなさい。"
         }
       ]
     },
@@ -117,7 +121,8 @@
         "question_ja": "「不要なものをたくさん捨てたら、爽快な気持ちになり、仕事もうまくいくようになった。」この文の「爽快な」とはどのような意味でしょうか。辞書を使わずに考えてください。",
         "question_en": "In the sentence 'After throwing away lots of unnecessary items, I felt 爽快 (soukai) and my work started going well too', what does '爽快な' mean? Try to deduce it without looking in a dictionary.",
         "answer_ja": "あとに「仕事もうまくいくようになった。」とあるので、「爽快」はすっきりとしたよい気持ちだとわかる。",
-        "answer_en": "Because it is followed by 'work started going well too' after throwing away junk, we can deduce that '爽快' represents a refreshed, positive, pleasant feeling."
+        "answer_en": "Because it is followed by 'work started going well too' after throwing away junk, we can deduce that '爽快' represents a refreshed, positive, pleasant feeling.",
+        "question_ja_ruby": "「<ruby>不要<rt>ふよう</rt></ruby>なものをたくさん<ruby>捨<rt>す</rt></ruby>てたら、<ruby>爽快<rt>そうかい</rt></ruby>な<ruby>気持<rt>きも</rt></ruby>ちになり、<ruby>仕事<rt>しごと</rt></ruby>もうまくいくようになった。」この<ruby>文<rt>ぶん</rt></ruby>の「<ruby>爽快<rt>そうかい</rt></ruby>な」とはどのような<ruby>意味<rt>いみ</rt></ruby>でしょうか。<ruby>辞書<rt>じしょ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>わずに<ruby>考<rt>かんが</rt></ruby>えてください。"
       },
       "passage": {
         "sentences": [
@@ -159,7 +164,7 @@
           },
           {
             "id": 7,
-            "text_ja": "さらに、必要ではないものを処分し「減らす」。",
+            "text_ja": "さらに、必要ではないものを処分(注1)し「減らす」。",
             "ruby_html": "さらに、<ruby>必要<rt>ひつよう</rt></ruby>ではないものを<ruby>処分<rt>しょぶん</rt></ruby><sup>(注1)</sup>し「<ruby>減<rt>へ</rt></ruby>らす」。",
             "text_en": "Furthermore, you dispose of what is unnecessary and 'reduce' your possessions."
           },
@@ -171,7 +176,7 @@
           },
           {
             "id": 9,
-            "text_ja": "片づけは「整理8割、整頓2割」。「整理」に徹底的に取り組めば、8割が終了していると言えます。",
+            "text_ja": "片づけは「整理8割(注2)、整頓2割」。「整理」に徹底的に取り組めば(注3)、8割が終了していると言えます。",
             "ruby_html": "<ruby>片<rt>かた</rt></ruby>づけは「<ruby>整理<rt>せいり</rt></ruby>8<ruby>割<rt>わり</rt></ruby><sup>(注2)</sup>、<ruby>整頓<rt>せいとん</rt></ruby>2<ruby>割<rt>わり</rt></ruby>」。「<ruby>整理<rt>せいり</rt></ruby>」に<ruby>徹底的<rt>てっていてき</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>めば<sup>(注3)</sup>、8<ruby>割<rt>わり</rt></ruby>が<span class=\"vocab-marker\" data-ref=\"E\">[E]<ruby>終了<rt>しゅうりょう</rt></ruby>している</span>と<ruby>言<rt>い</rt></ruby>えます。",
             "text_en": "Tidying up is '80% sorting, 20% arranging'. If you thoroughly tackle 'sorting', you can say 80% of the job is finished."
           }
@@ -329,7 +334,8 @@
               "meaning_ja": "物事が終わること、完了すること。",
               "meaning_en": "To conclude / finish: bringing a process to completion."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>：<ruby>言葉<rt>ことば</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>しなさい"
         }
       ]
     },
@@ -364,7 +370,8 @@
         "question_ja": "「確かに、欲しいものが買えたら幸せかもしれませんが。しかし…」という文のあとには、どのような内容が来ると思いますか。",
         "question_en": "Following the sentence 'Certainly, one might be happy if they can buy what they want. However...', what kind of content do you anticipate next?",
         "answer_ja": "「欲しいものが買えたら幸せ」とは反対の意見。（例：「欲しいものが買えなくても幸せだ。」「物を買うこと以外にも大切な幸せがある。」など）",
-        "answer_en": "An opinion countering 'you are happy if you can buy what you want' (e.g., 'One can be happy even without buying what one wants', or other forms of fulfillment)."
+        "answer_en": "An opinion countering 'you are happy if you can buy what you want' (e.g., 'One can be happy even without buying what one wants', or other forms of fulfillment).",
+        "question_ja_ruby": "「<ruby>確<rt>たし</rt></ruby>かに、<ruby>欲<rt>ほ</rt></ruby>しいものが<ruby>買<rt>か</rt></ruby>えたら<ruby>幸<rt>しあわ</rt></ruby>せかもしれませんが。しかし…」という<ruby>文<rt>ぶん</rt></ruby>のあとには、どのような<ruby>内容<rt>ないよう</rt></ruby>が<ruby>来<rt>く</rt></ruby>ると<ruby>思<rt>おも</rt></ruby>いますか。"
       },
       "passage": {
         "sentences": [
@@ -400,7 +407,7 @@
           },
           {
             "id": 6,
-            "text_ja": "寄付つきの商品といって、その売り上げの一部がボランティア組織などへ寄付されるというものです。",
+            "text_ja": "寄付(注1)つきの商品といって、その売り上げの一部がボランティア(注2)組織などへ寄付されるというものです。",
             "ruby_html": "<ruby>寄付<rt>きふ</rt></ruby><sup>(注1)</sup>つきの<ruby>商品<rt>しょうひん</rt></ruby>といって、その<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げの<ruby>一部<rt>いちぶ</rt></ruby>がボランティア<sup>(注2)</sup><ruby>組織<rt>そしき</rt></ruby>などへ<ruby>寄付<rt>きふ</rt></ruby>されるというものです。",
             "text_en": "These are charity-linked products, where a portion of the sales proceeds is donated to volunteer organizations."
           },
@@ -587,7 +594,8 @@
               "correctKey": "a",
               "explanation_en": "The author's true message follows 'しかし': failure brings valuable self-knowledge, so one should boldly challenge oneself."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>：あとの<ruby>内容<rt>ないよう</rt></ruby>を<ruby>予測<rt>よそく</rt></ruby>する"
         }
       ]
     },
@@ -633,7 +641,8 @@
         "question_en": "After the sentence: 'There was an old clock in my father's room, but it hadn't been running for ages. But... (でも、...)', which would you expect?\nA: The clock was running.\nB: The clock was not running.",
         "answer": "A",
         "explanation_ja": "「ずっと動かしていませんでした（止まっていた）」のあとに逆接の接続詞「でも」が来ているため、止まっていた状態と反対の「動いていた」が続きます。",
-        "explanation_en": "'でも' (however/but) signals a reversal of state from the prior clause ('hadn't been running for a long time'). Therefore, it must be followed by A ('the clock was running')."
+        "explanation_en": "'でも' (however/but) signals a reversal of state from the prior clause ('hadn't been running for a long time'). Therefore, it must be followed by A ('the clock was running').",
+        "question_ja_ruby": "「<ruby>父<rt>ちち</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>には<ruby>古<rt>ふる</rt></ruby>い<ruby>時計<rt>とけい</rt></ruby>があるのですが、ずっと<ruby>動<rt>うご</rt></ruby>かしていませんでした。でも、…」という<ruby>文<rt>ぶん</rt></ruby>のあとには、AとBのどちらが<ruby>来<rt>く</rt></ruby>ると<ruby>思<rt>おも</rt></ruby>いますか。\nA <ruby>時計<rt>とけい</rt></ruby>は<ruby>動<rt>うご</rt></ruby>いていました。\nB <ruby>時計<rt>とけい</rt></ruby>は<ruby>動<rt>うご</rt></ruby>いていませんでした。"
       },
       "passage": {
         "sentences": [
@@ -657,13 +666,13 @@
           },
           {
             "id": 4,
-            "text_ja": "私は何だかよく眠れなくて、ベッドでラジオを小さい音で聞きながらうとうとしていました。",
+            "text_ja": "私は何だかよく眠れなくて、ベッドでラジオを小さい音で聞きながらうとうと(注1)していました。",
             "ruby_html": "<ruby>私<rt>わたし</rt></ruby>は<ruby>何<rt>なん</rt></ruby>だかよく<ruby>眠<rt>ねむ</rt></ruby>れなくて、ベッドでラジオを<ruby>小<rt>ちい</rt></ruby>さい<ruby>音<rt>おと</rt></ruby>で<ruby>聞<rt>き</rt></ruby>きながらうとうと<sup>(注1)</sup>していました。",
             "text_en": "Somehow I couldn't sleep well, and was dozing lightly in bed while listening to the radio at a low volume."
           },
           {
             "id": 5,
-            "text_ja": "夜中に何回か古い柱時計が鳴るのを聞いたように思いました。",
+            "text_ja": "夜中に何回か古い柱時計(注2)が鳴るのを聞いたように思いました。",
             "ruby_html": "<ruby>夜中<rt>よなか</rt></ruby>に<ruby>何回<rt>なんかい</rt></ruby>か<ruby>古<rt>ふる</rt></ruby>い<ruby>柱時計<rt>はしらどけい</rt></ruby><sup>(注2)</sup>が<ruby>鳴<rt>な</rt></ruby>るのを<ruby>聞<rt>き</rt></ruby>いたように<ruby>思<rt>おも</rt></ruby>いました。",
             "text_en": "In the middle of the night, I thought I heard the old pendulum clock chime several times."
           },
@@ -717,7 +726,7 @@
           },
           {
             "id": 14,
-            "text_ja": "前の日の地震で家が揺れたとき、時計のふりこも揺れ、自然に動き出して、時計が鳴ったのです。",
+            "text_ja": "前の日の地震で家が揺れたとき、時計のふりこ(注3)も揺れ、自然に動き出して、時計が鳴ったのです。",
             "ruby_html": "<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>の<ruby>地震<rt>じしん</rt></ruby>で<ruby>家<rt>いえ</rt></ruby>が<ruby>揺<rt>ゆ</rt></ruby>れたとき、<ruby>時計<rt>とけい</rt></ruby>のふりこ<sup>(注3)</sup>も<ruby>揺<rt>ゆ</rt></ruby>れ、<ruby>自然<rt>しぜん</rt></ruby>に<ruby>動<rt>うご</rt></ruby>き<ruby>出<rt>だ</rt></ruby>して、<ruby>時計<rt>とけい</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>ったのです。",
             "text_en": "When the house shook during the earthquake the previous day, the pendulum had swayed along with it, spontaneously setting itself in motion, causing the clock to chime."
           },
@@ -919,7 +928,9 @@
               "correctKey": "a",
               "explanation_en": "'そこで' signals: 'in light of the preceding situation / upon that basis, the actor took the following action'."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>：<ruby>接続詞<rt>せつぞくし</rt></ruby>・<ruby>副詞<rt>ふくし</rt></ruby>のあとの<ruby>予測<rt>よそく</rt></ruby>",
+          "instruction_ja_ruby": "<ruby>以下<rt>いか</rt></ruby>の<ruby>語句<rt>ごく</rt></ruby>のあとには a、b のどちらが<ruby>続<rt>つづ</rt></ruby>くか。<ruby>適当<rt>てきとう</rt></ruby>なものを<ruby>選<rt>えら</rt></ruby>びなさい。"
         }
       ]
     },
@@ -965,13 +976,14 @@
         "answer_ja": "朝一杯のコーヒー",
         "answer_en": "A cup of coffee in the morning",
         "note_ja": "答えはこのページの下にあります。（答え：朝一杯のコーヒー）",
-        "note_en": "The answer is at the bottom of the page. (Answer: A cup of coffee in the morning)"
+        "note_en": "The answer is at the bottom of the page. (Answer: A cup of coffee in the morning)",
+        "question_ja_ruby": "「<ruby>朝一杯<rt>あさいっぱい</rt></ruby>のコーヒー。<ruby>私<rt>わたし</rt></ruby>はこれがないと<ruby>目<rt>め</rt></ruby>が<ruby>覚<rt>さ</rt></ruby>めない。」の「これ」は<ruby>何<rt>なに</rt></ruby>をさしますか。"
       },
       "passage": {
         "sentences": [
           {
             "id": 1,
-            "text_ja": "コーヒーを多く飲む人ほど、肌のしみができにくいという研究結果がある。",
+            "text_ja": "コーヒーを多く飲む人ほど、肌のしみ(注1)ができにくいという研究結果がある。",
             "ruby_html": "コーヒーを<ruby>多<rt>おお</rt></ruby>く<ruby>飲<rt>の</rt></ruby>む<ruby>人<rt>ひと</rt></ruby>ほど、<ruby>肌<rt>はだ</rt></ruby>のしみ<sup>(注1)</sup>ができにくいという<ruby>研究結果<rt>けんきゅうけっか</rt></ruby>がある。",
             "text_en": "Research results show that the more coffee people drink, the less likely they are to develop skin blemishes."
           },
@@ -1174,7 +1186,9 @@
               "direction": "forward",
               "explanation_en": "'こう' is a forward-pointing demonstrative pointing directly to the quoted statement that immediately follows: '地球は青かった'."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>：<ruby>指示語<rt>しじご</rt></ruby>が<ruby>何<rt>なに</rt></ruby>を<ruby>指<rt>さ</rt></ruby>すか<ruby>書<rt>か</rt></ruby>きなさい",
+          "instruction_ja_ruby": "<ruby>下<rt>した</rt></ruby>の [ ] の<ruby>指示語<rt>しじご</rt></ruby>が<ruby>何<rt>なに</rt></ruby>を<ruby>指<rt>さ</rt></ruby>すか<ruby>書<rt>か</rt></ruby>きなさい。"
         }
       ]
     },
@@ -1232,7 +1246,8 @@
         "question_en": "There is an article whose first paragraph begins with 'Air conditioning is a wonderful technology.' If the next paragraph starts with 'However' (しかし), what do you expect the overall content of the text to be?\nA: Discusses only the positive points of air conditioning.\nB: Also discusses the negative points of air conditioning.",
         "answer": "B",
         "explanation_ja": "「しかし」は逆接の接続詞なので、前の段落で述べたよい点とは反対の「よくない点」も取り上げられます。（答え：B）",
-        "explanation_en": "Because 'しかし' (however) is a contrastive conjunction, the text will introduce negative aspects in contrast to the merits discussed earlier. (Answer: B)"
+        "explanation_en": "Because 'しかし' (however) is a contrastive conjunction, the text will introduce negative aspects in contrast to the merits discussed earlier. (Answer: B)",
+        "question_ja_ruby": "「<ruby>第<rt>だい</rt></ruby>1<ruby>段落<rt>だんらく</rt></ruby>が『<ruby>冷房<rt>れいぼう</rt></ruby>は<ruby>素晴<rt>すば</rt></ruby>らしい<ruby>技術<rt>ぎじゅつ</rt></ruby>だ』という<ruby>内容<rt>ないよう</rt></ruby>で<ruby>始<rt>はじ</rt></ruby>まる<ruby>文章<rt>ぶんしょう</rt></ruby>があります。その<ruby>次<rt>つぎ</rt></ruby>の<ruby>段落<rt>だんらく</rt></ruby>が『しかし』で<ruby>始<rt>はじ</rt></ruby>まっていたら、その<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>はどんなものだと<ruby>考<rt>かんが</rt></ruby>えられますか。\nA <ruby>冷房<rt>れいぼう</rt></ruby>のよい<ruby>点<rt>てん</rt></ruby>だけを<ruby>述<rt>の</rt></ruby>べる。\nB <ruby>冷房<rt>れいぼう</rt></ruby>のよくない<ruby>点<rt>てん</rt></ruby>も<ruby>述<rt>の</rt></ruby>べる。」"
       },
       "passage": {
         "sentences": [
@@ -1511,7 +1526,9 @@
               "correctKey": "b",
               "explanation_en": "Paragraph D states: '大事なことは、その技術を上手に使うということだろう' (The vital point is using the technology skillfully)."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>1：<ruby>段落<rt>だんらく</rt></ruby>の<ruby>要点<rt>ようてん</rt></ruby><ruby>把握<rt>はあく</rt></ruby>",
+          "instruction_ja_ruby": "<ruby>左<rt>ひだり</rt></ruby>の<ruby>文章<rt>ぶんしょう</rt></ruby>のA、B、C、Dの<ruby>段落<rt>だんらく</rt></ruby>でそれぞれ<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か、a、bから<ruby>選<rt>えら</rt></ruby>びなさい。"
         },
         {
           "drillId": "drill-29-2",
@@ -1542,7 +1559,9 @@
             }
           ],
           "correctKey": "d",
-          "explanation_en": "Paragraph A introduces the topic of AC merits (話題の提出). Paragraph B counters with the negative impact on temperature-regulating nerves (Aへの反対). Paragraph C provides additional information on how this deterioration escalates and lingers (Bへの追加情報). Paragraph D wraps up the conclusion that AC should be used skillfully (まとめ). Therefore, sequence 'd' is correct."
+          "explanation_en": "Paragraph A introduces the topic of AC merits (話題の提出). Paragraph B counters with the negative impact on temperature-regulating nerves (Aへの反対). Paragraph C provides additional information on how this deterioration escalates and lingers (Bへの追加情報). Paragraph D wraps up the conclusion that AC should be used skillfully (まとめ). Therefore, sequence 'd' is correct.",
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>2：<ruby>段落<rt>だんらく</rt></ruby>の<ruby>役割<rt>やくわり</rt></ruby>と<ruby>文章<rt>ぶんしょう</rt></ruby><ruby>構造<rt>こうぞう</rt></ruby>",
+          "instruction_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>段落<rt>だんらく</rt></ruby>A、B、C、Dの<ruby>役割<rt>やくわり</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>え、<ruby>下<rt>した</rt></ruby>のa〜dから<ruby>選<rt>えら</rt></ruby>びなさい。"
         }
       ]
     },
@@ -1597,7 +1616,8 @@
         "question_en": "Which of the following indicates that the writer thought it was a good party?\nA: The party was lively (にぎやかだった).\nB: The party was noisy/annoying (うるさかった).",
         "answer": "A",
         "explanation_ja": "「にぎやか」は楽しく活気があるというプラス（＋）の評価、「うるさい」は騒がしくて不快というマイナス（−）の評価を表します。（答え：A）",
-        "explanation_en": "'にぎやか' conveys positive vitality (+), whereas 'うるさい' conveys annoying noise (-). (Answer: A)"
+        "explanation_en": "'にぎやか' conveys positive vitality (+), whereas 'うるさい' conveys annoying noise (-). (Answer: A)",
+        "question_ja_ruby": "「<ruby>筆者<rt>ひっしゃ</rt></ruby>がいいパーティーだったと<ruby>思<rt>おも</rt></ruby>っているのはどちらですか。\nA そのパーティーはにぎやかだった。\nB そのパーティーはうるさかった。」"
       },
       "passage": {
         "sentences": [
@@ -1859,7 +1879,9 @@
               "evaluation": "+",
               "explanation_en": "'恵まれた' indicates being blessed or endowed with advantages (+)."
             }
-          ]
+          ],
+          "title_ja_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>：プラス<ruby>評価<rt>ひょうか</rt></ruby>（＋）とマイナス<ruby>評価<rt>ひょうか</rt></ruby>（−）",
+          "instruction_ja_ruby": "<ruby>下線<rt>かせん</rt></ruby>の<ruby>部分<rt>ぶぶん</rt></ruby>を<ruby>筆者<rt>ひっしゃ</rt></ruby>はよいことだと<ruby>思<rt>おも</rt></ruby>っている（＋）か、<ruby>悪<rt>わる</rt></ruby>いことだと<ruby>思<rt>おも</rt></ruby>っている（−）か。○をつけなさい。"
         }
       ]
     },

@@ -10,6 +10,8 @@ import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js';
 import { renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
+import { getAllWords } from './data-loader.js';
+import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import {
   PASSAGE_GENRES,
   GENRE_METADATA,
@@ -748,7 +750,11 @@ function getBookSections(lesson) {
   // Key Vocabulary section removed at his ask (2026-11-03): every lesson word
   // is drilled from the Reading home word drills, so the in-book list was
   // duplicate navigation. Vocabulary data itself is untouched.
-  if (vocabulary.length > 0) sections.push({ id: 'tough', ja: '苦手な言葉', en: 'Tough words', icon: 'fa-fire' });
+  // Tough words only appears when it has content (his ask 2026-11-05): an empty
+  // flagged-words page in the reading sequence is a dead tap. Word revision stays
+  // available from the Reading home word drills either way.
+  const toughWords = getLessonToughWords(lesson);
+  if (toughWords.length > 0) sections.push({ id: 'tough', ja: '苦手な言葉', en: `Tough words (${toughWords.length})`, icon: 'fa-fire' });
   if (lesson.testAdvice) sections.push({ id: 'advice', ja: '試験のコツ', en: 'Test Advice', icon: 'fa-compass' });
   if (commentary && commentaryJa) sections.push({ id: 'commentary', ja: '本文の解説', en: 'Commentary', icon: 'fa-diagram-project' });
   if (sections.length === 0) sections.push({ id: 'overview', ja: '概要', en: 'Overview', icon: 'fa-circle-info' });
@@ -830,6 +836,60 @@ function getLessonToughWords(lesson) {
   return out;
 }
 
+
+
+function renderBookDrillCard(d) {
+  const titleJa = bookJaText(d.title_ja, d.title_ja_ruby);
+  const instrJa = glossifyBookText(bookJaText(d.instruction_ja, d.instruction_ja_ruby));
+  const sentenceJa = glossifyBookText(bookJaText(d.originalSentence_ja, d.originalSentence_ruby));
+  return `
+    <div class="book-drill-card">
+      <div class="book-drill-title font-ja">${titleJa}</div>
+      ${d.title_en ? `<div class="book-drill-sub">${d.title_en}</div>` : ''}
+      ${d.instruction_ja ? `<p class="font-ja" style="margin: 0.4rem 0 0.2rem;">${instrJa}</p>` : ''}
+      ${d.instruction_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.instruction_en}</p>` : ''}
+      ${sentenceJa ? `<p class="font-ja book-drill-sentence">${sentenceJa}</p>` : ''}
+      ${d.originalSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.originalSentence_en}</p>` : ''}
+      ${(d.items || []).length ? `
+        <div class="book-drill-items">
+          ${d.items.map(it => `
+            <details class="book-drill-answer book-drill-item">
+              <summary><span class="font-ja drill-item-term">${it.marker ? `${it.marker}. ` : ''}${it.term_ja || ''}${it.reading && it.reading !== it.term_ja ? `（${it.reading}）` : ''}</span></summary>
+              ${it.hint_ja ? `<p class="font-ja" style="margin-top: 0.3rem;">${glossifyBookText(it.hint_ja)}</p>` : ''}
+              ${it.hint_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.hint_en}</p>` : ''}
+              ${it.meaning_ja ? `<p class="font-ja" style="margin-top: 0.25rem; font-weight: 600;">${it.meaning_ja}</p>` : ''}
+              ${it.meaning_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.meaning_en}</p>` : ''}
+            </details>`).join('')}
+        </div>` : ''}
+      ${(d.options || []).length ? `
+        <div class="book-drill-items">
+          ${d.options.map(o => `
+            <div class="book-drill-option">
+              <span class="drill-option-key">${o.key}</span>
+              <span class="font-ja">${o.text_ja || ''}</span>
+              ${o.text_en ? `<div style="color: var(--text-dim); font-size: 0.8rem; margin-left: 1.5rem;">${o.text_en}</div>` : ''}
+            </div>`).join('')}
+        </div>
+        ${d.correctKey ? `
+          <details class="book-drill-answer"><summary>Show answer</summary>
+            <p style="margin-top: 0.35rem;">Answer: <strong>${d.correctKey}</strong></p>
+            ${d.explanation_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${d.explanation_en}</p>` : ''}
+          </details>` : ''}` : ''}
+      ${d.solution ? `
+        <details class="book-drill-answer"><summary>Show answer</summary>
+          <p class="font-ja" style="margin-top: 0.35rem;">${d.solution}</p>
+          ${d.explanation_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${d.explanation_en}</p>` : ''}
+        </details>` : ''}
+    </div>`;
+}
+
+function bookFuriganaToggleBtn() {
+  const on = readerRuntime.settings.showFurigana;
+  return `<button class="t-btn-toggle${on ? ' active' : ''}" style="margin-left: auto;"
+                  onclick="togglePassageFurigana()"
+                  title="${on ? 'Hide furigana' : 'Show furigana'}">ふりがな</button>`;
+}
+
 function renderBookPhase(container) {
   const lesson = readerRuntime.lesson;
   const q = readerRuntime.bookQueue || [];
@@ -877,25 +937,29 @@ function renderBookPhase(container) {
                   title="${showRuby ? 'Hide furigana' : 'Show furigana'}">ふりがな</button>
         </div>
         <div class="strategy-display-card">
-          <p style="line-height: 1.8;" class="font-ja">${ruleJa}</p>
+          <p style="line-height: 1.8;" class="font-ja">${glossifyBookText(ruleJa)}</p>
           ${strategy.rule_en ? `<p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 0.35rem;">${strategy.rule_en}</p>` : ''}
         </div>
         ${(strategy.keyPoints || []).length > 0 ? `
           <div class="book-keypoints">
             ${strategy.keyPoints.map(kp => `
               <div class="book-keypoint">
-                <div class="font-ja" style="font-weight: 700;">${showRuby ? (kp.point_ja_ruby || kp.point_ja || '') : (kp.point_ja || '')}</div>
+                <div class="font-ja" style="font-weight: 700;">${glossifyBookText(showRuby ? (kp.point_ja_ruby || kp.point_ja || '') : (kp.point_ja || ''))}</div>
                 ${kp.point_en ? `<div style="color: var(--text-muted); font-size: 0.85rem;">${kp.point_en}</div>` : ''}
                 ${kp.explanation_en ? `<div style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${kp.explanation_en}</div>` : ''}
               </div>`).join('')}
           </div>` : ''}
       </div>`;
   } else if (section.id === 'prereading' && lesson.preReading) {
+    const preJa = bookJaText(lesson.preReading.question_ja || lesson.preReading.question || '', lesson.preReading.question_ja_ruby);
     bodyHtml = `
       <div class="book-section">
-        <div class="book-section-label"><i class="fa-solid fa-lightbulb"></i> 読む前に Before Reading</div>
+        <div class="book-section-label" style="display: flex; align-items: center; gap: 0.5rem;">
+          <span><i class="fa-solid fa-lightbulb"></i> 読む前に Before Reading</span>
+          ${bookFuriganaToggleBtn()}
+        </div>
         <div class="pre-reading-box">
-          <p class="font-ja pre-reading-text">${lesson.preReading.question_ja || lesson.preReading.question || ''}</p>
+          <p class="font-ja pre-reading-text">${glossifyBookText(preJa)}</p>
           ${lesson.preReading.question_en ? `<p class="pre-reading-sub">${lesson.preReading.question_en}</p>` : ''}
         </div>
       </div>`;
@@ -912,26 +976,17 @@ function renderBookPhase(container) {
           <div class="passage-scroll-pane font-ja" id="passage-content-area" style="font-size: ${1.2 * readerRuntime.settings.fontScale}rem; max-height: none;">
             ${sentences.map(sn => renderPassageSentenceHTML(sn, vocabMap, footnotes)).join('')}
           </div>
+          ${renderFootnotesBlock(footnotes)}
         </div>
       </div>`;
   } else if (section.id === 'drills') {
     bodyHtml = `
       <div class="book-section">
-        <div class="book-section-label"><i class="fa-solid fa-pen-to-square"></i> 練習 Drills (${drills.length})</div>
-        ${drills.map(d => `
-          <div class="book-drill-card">
-            <div class="book-drill-title font-ja">${d.title_ja || ''}</div>
-            ${d.title_en ? `<div class="book-drill-sub">${d.title_en}</div>` : ''}
-            ${d.instruction_ja ? `<p class="font-ja" style="margin: 0.4rem 0 0.2rem;">${d.instruction_ja}</p>` : ''}
-            ${d.instruction_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.instruction_en}</p>` : ''}
-            ${d.originalSentence_ruby || d.originalSentence_ja ? `<p class="font-ja book-drill-sentence">${d.originalSentence_ruby || d.originalSentence_ja}</p>` : ''}
-            ${d.originalSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.originalSentence_en}</p>` : ''}
-            ${d.solution ? `
-              <details class="book-drill-answer"><summary>Show answer</summary>
-                <p class="font-ja" style="margin-top: 0.35rem;">${d.solution}</p>
-                ${d.explanation_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${d.explanation_en}</p>` : ''}
-              </details>` : ''}
-          </div>`).join('')}
+        <div class="book-section-label" style="display: flex; align-items: center; gap: 0.5rem;">
+          <span><i class="fa-solid fa-pen-to-square"></i> 練習 Drills (${drills.length})</span>
+          ${bookFuriganaToggleBtn()}
+        </div>
+        ${drills.map(d => renderBookDrillCard(d)).join('')}
       </div>`;
   } else if (section.id === 'tough') {
     const tough = getLessonToughWords(lesson);
@@ -955,31 +1010,38 @@ function renderBookPhase(container) {
     const advice = lesson.testAdvice;
     let adviceBody = '';
     if (advice.advice_ja || advice.traps) {
-      adviceBody = `<p style="margin-top: 0.6rem; line-height: 1.8;">${advice.advice_ja || advice.traps || ''}</p>
+      adviceBody = `<p style="margin-top: 0.6rem; line-height: 1.8;">${glossifyBookText(bookJaText(advice.advice_ja || advice.traps || '', advice.advice_ja_ruby))}</p>
         ${advice.advice_en ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${advice.advice_en}</p>` : ''}`;
     } else if (Array.isArray(advice.analysisSteps)) {
       adviceBody = `<ol class="book-advice-steps">
         ${advice.analysisSteps.map(st => `
           <li>
-            <div class="font-ja" style="font-weight: 700;">${st.question_ja || ''}</div>
-            ${st.analysis_ja ? `<div class="font-ja" style="font-size: 0.88rem; color: var(--text-muted);">${st.analysis_ja}</div>` : ''}
+            <div class="font-ja" style="font-weight: 700;">${glossifyBookText(bookJaText(st.question_ja || '', st.question_ja_ruby))}</div>
+            ${(st.analysis_ja || st.analysis_ja_ruby) ? `<div class="font-ja" style="font-size: 0.88rem; color: var(--text-muted);">${glossifyBookText(bookJaText(st.analysis_ja, st.analysis_ja_ruby))}</div>` : ''}
             ${st.analysis_en ? `<div style="font-size: 0.8rem; color: var(--text-dim);">${st.analysis_en}</div>` : ''}
           </li>`).join('')}
       </ol>`;
     }
     bodyHtml = `
       <div class="test-advice-card font-ja">
-        <h3><i class="fa-solid fa-compass" style="color: var(--amber);"></i> 試験のコツ (Test Advice)</h3>
+        <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+          <span><i class="fa-solid fa-compass" style="color: var(--amber);"></i> 試験のコツ (Test Advice)</span>
+          ${bookFuriganaToggleBtn()}
+        </h3>
         ${adviceBody}
       </div>`;
   } else if (section.id === 'commentary' && lesson.commentary) {
     const commentary = lesson.commentary;
-    const commentaryJa = commentary.text_ja || commentary.summary_ja || commentary.logicFlow || '';
+    const commentaryJaPlain = commentary.text_ja || commentary.summary_ja || commentary.logicFlow || '';
+    const commentaryJaRuby = commentary.text_ja_ruby || commentary.summary_ja_ruby || '';
     const commentaryEn = commentary.text_en || commentary.summary_en || '';
     bodyHtml = `
       <div class="commentary-card font-ja">
-        <h3><i class="fa-solid fa-diagram-project" style="color: var(--cyan);"></i> ${commentary.title_ja || '本文の解説 (Commentary)'}</h3>
-        <p style="margin-top: 0.6rem; line-height: 1.8;">${commentaryJa}</p>
+        <h3 style="display: flex; align-items: center; gap: 0.5rem;">
+          <span><i class="fa-solid fa-diagram-project" style="color: var(--cyan);"></i> ${commentary.title_ja || '本文の解説 (Commentary)'}</span>
+          ${bookFuriganaToggleBtn()}
+        </h3>
+        <p style="margin-top: 0.6rem; line-height: 1.8;">${glossifyBookText(bookJaText(commentaryJaPlain, commentaryJaRuby))}</p>
         ${commentaryEn ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${commentaryEn}</p>` : ''}
       </div>`;
   } else {
@@ -1123,7 +1185,7 @@ function renderPreviewPhase(container) {
         ${lesson.preReading ? `
           <div class="pre-reading-box">
             <div class="pre-reading-header"><i class="fa-solid fa-lightbulb"></i> Think First (Pre-Reading Prompt)</div>
-            <p class="font-ja pre-reading-text">${lesson.preReading.question_ja || lesson.preReading.question || ''}</p>
+            <p class="font-ja pre-reading-text">${glossifyBookText(bookJaText(lesson.preReading.question_ja || lesson.preReading.question || '', lesson.preReading.question_ja_ruby))}</p>
             ${lesson.preReading.question_en ? `<p class="pre-reading-sub">${lesson.preReading.question_en}</p>` : ''}
           </div>
         ` : ''}
@@ -1234,6 +1296,7 @@ function renderReadPhase(container) {
         <div class="passage-scroll-pane font-ja" id="passage-content-area" style="font-size: ${1.2 * readerRuntime.settings.fontScale}rem;">
           ${sentences.length > 0 ? sentences.map(s => renderPassageSentenceHTML(s, vocabMap, footnotes)).join('') : renderSkillsOrDrillFallback(lesson)}
         </div>
+        ${renderFootnotesBlock(footnotes)}
       </div>
 
       <!-- Sticky Reading Toolbar -->
@@ -1282,6 +1345,116 @@ function renderReadPhase(container) {
   updateTimerPill();
 }
 
+
+// =======================================================
+// GLOBAL PASSAGE GLOSSARY + FOOTNOTE MARKERS
+// Lesson vocabulary is extended with the full dictionary so any
+// word in a passage (or book-section text) is tappable for its
+// reading and English meaning, with per-kanji meanings in the sheet.
+// =======================================================
+
+let glossCache = { lessonId: null, regex: null, map: new Map() };
+
+function getGlossIndex(lesson) {
+  const id = lesson ? lesson.id : null;
+  if (glossCache.lessonId === id && glossCache.map.size > 0) return glossCache;
+  const map = new Map();
+  for (const v of ((lesson && lesson.vocabulary) || [])) {
+    if (v.term && !map.has(v.term)) {
+      map.set(v.term, { term: v.term, reading: v.reading || '', meaning: v.meaning || '', type: v.type || '' });
+    }
+  }
+  try {
+    for (const w of getAllWords()) {
+      const term = (w.term_ja || '').trim();
+      if (!term || map.has(term)) continue;
+      map.set(term, { term, reading: w.reading || '', meaning: w.meaning_en || '', type: w.part_of_speech || '' });
+    }
+  } catch {}
+  const terms = [...map.keys()]
+    .filter(t => t.length >= 2)
+    .sort((a, b) => b.length - a.length);
+  const regex = terms.length ? new RegExp(terms.map(escapeRegExp).join('|'), 'g') : null;
+  glossCache = { lessonId: id, regex, map };
+  return glossCache;
+}
+
+// Wrap dictionary terms found in html text nodes with tappable gloss spans.
+// Skips content inside <rt> (furigana readings) and <sup> (footnote markers).
+function wrapGlossTerms(html, gloss) {
+  if (!html || !gloss || !gloss.regex) return html;
+  const parts = html.split(/(<[^>]+>)/g);
+  let skipDepth = 0;
+  for (let i = 0; i < parts.length; i++) {
+    const p = parts[i];
+    if (!p) continue;
+    if (p[0] === '<') {
+      if (/^<(rt|sup)[\s>]/.test(p)) skipDepth++;
+      else if (/^<\/(rt|sup)>/.test(p)) skipDepth = Math.max(0, skipDepth - 1);
+      continue;
+    }
+    if (skipDepth > 0) continue;
+    parts[i] = p.replace(gloss.regex, m =>
+      `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}')">${m}</span>`);
+  }
+  return parts.join('');
+}
+
+// Make (注N) footnote markers tappable in both ruby (<sup>) and plain text.
+function wrapFootnoteMarkers(html) {
+  if (!html || html.indexOf('注') === -1) return html;
+  html = html.replace(/<sup>\s*\(?（?注(\d+)\)?）?\s*<\/sup>/g,
+    (m, n) => `<sup class="footnote-marker" onclick="event.stopPropagation(); scrollToFootnote(${n})">(注${n})</sup>`);
+  html = html.replace(/(?<!>)（注(\d+)）|(?<!>)\(注(\d+)\)/g,
+    (m, a, b) => `<sup class="footnote-marker" onclick="event.stopPropagation(); scrollToFootnote(${a || b})">(注${a || b})</sup>`);
+  return html;
+}
+
+function glossifyBookText(html, lesson) {
+  return wrapGlossTerms(html, getGlossIndex(lesson || readerRuntime.lesson));
+}
+
+function bookJaText(plain, ruby) {
+  const showRuby = readerRuntime.settings.showFurigana;
+  return showRuby ? (ruby || plain || '') : (plain || '');
+}
+
+function normalizeFootnote(fn, i) {
+  const rawNum = fn.index !== undefined ? fn.index : (fn.number !== undefined ? fn.number : (fn.label !== undefined ? fn.label : i + 1));
+  const num = String(rawNum).replace(/[^0-9]/g, '') || String(i + 1);
+  return {
+    num,
+    term: fn.term_ja || fn.term || '',
+    reading: fn.reading || '',
+    defJa: fn.definition_ja || fn.meaning_ja || '',
+    defEn: fn.definition_en || fn.meaning_en || ''
+  };
+}
+
+function renderFootnotesBlock(footnotes) {
+  if (!footnotes || !footnotes.length) return '';
+  const items = footnotes.map(normalizeFootnote).sort((a, b) => Number(a.num) - Number(b.num));
+  return `
+    <div class="passage-footnotes">
+      <div class="passage-footnotes-title"><i class="fa-solid fa-note-sticky"></i> 注 Notes</div>
+      ${items.map(f => `
+        <div class="passage-footnote" id="footnote-${f.num}">
+          <span class="footnote-num">(注${f.num})</span>
+          <span class="font-ja footnote-term">${f.term}${f.reading && f.reading !== f.term ? `【${f.reading}】` : ''}</span>
+          ${f.defJa ? `<span class="font-ja footnote-def-ja">${f.defJa}</span>` : ''}
+          ${f.defEn ? `<span class="footnote-def-en">${f.defEn}</span>` : ''}
+        </div>`).join('')}
+    </div>`;
+}
+
+export function scrollToFootnote(n) {
+  const el = document.getElementById(`footnote-${n}`);
+  if (!el) return;
+  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  el.classList.add('footnote-flash');
+  setTimeout(() => el.classList.remove('footnote-flash'), 1600);
+}
+
 function renderPassageSentenceHTML(sentence, vocabMap, footnotes) {
   const isSecondPass = readerRuntime.isSecondPass;
   const showFurigana = !isSecondPass && readerRuntime.settings.showFurigana;
@@ -1296,15 +1469,9 @@ function renderPassageSentenceHTML(sentence, vocabMap, footnotes) {
     textJa = insertChunkDividers(textJa);
   }
 
-  // Wrap glossary terms
-  if (vocabMap && vocabMap.size > 0) {
-    for (const term of vocabMap.keys()) {
-      if (textJa.includes(term) && !textJa.includes(`data-gloss="${term}"`)) {
-        const regex = new RegExp(escapeRegExp(term), 'g');
-        textJa = textJa.replace(regex, `<span class="gloss-term" data-gloss="${term}" onclick="event.stopPropagation(); showWordGloss('${term.replace(/'/g, "\\'")}')">${term}</span>`);
-      }
-    }
-  }
+  // Footnote markers, then glossary terms (lesson vocab + full dictionary)
+  textJa = wrapFootnoteMarkers(textJa);
+  textJa = wrapGlossTerms(textJa, getGlossIndex(readerRuntime.lesson));
 
   return `
     <div class="passage-sentence-row${showThisTrans ? ' trans-active' : ''}" onclick="toggleSingleSentenceTrans('${sentence.id}')">
@@ -1853,12 +2020,15 @@ export function showWordGloss(term) {
   const lesson = readerRuntime.lesson;
   if (!lesson) return;
 
-  const vocab = (lesson.vocabulary || []).find(v => v.term === term);
+  let vocab = (lesson.vocabulary || []).find(v => v.term === term);
+  if (!vocab) vocab = getGlossIndex(lesson).map.get(term);
   if (!vocab) return;
 
   readerRuntime.activeGlossWord = vocab;
   const container = document.getElementById('word-gloss-sheet-container');
   if (!container) return;
+
+  const kanjiParts = vocabularyKanjiMeanings(vocab.term);
 
   container.innerHTML = `
     <div class="word-gloss-modal-sheet">
@@ -1871,6 +2041,14 @@ export function showWordGloss(term) {
         <button class="btn btn-xs btn-ghost" onclick="closeWordGloss()"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div class="gloss-meaning-text">${vocab.meaning || ''}</div>
+      ${kanjiParts.length ? `
+        <div class="vocab-kanji-breakdown gloss-kanji-breakdown">
+          <div class="vocab-kanji-heading">Kanji meanings</div>
+          <div class="vocab-kanji-chips">
+            ${kanjiParts.map(({ kanji, meanings }) => `
+              <span class="vocab-kanji-chip" title="${kanji}: ${meanings.join(', ')}"><b class="font-ja">${kanji}</b> ${meanings.slice(0, 2).join(' / ')}</span>`).join('')}
+          </div>
+        </div>` : ''}
       <div class="gloss-actions">
         <button class="btn btn-sm btn-primary" onclick="addActiveWordToMyWords()">
           <i class="fa-solid fa-plus"></i> Add to My Words
@@ -2290,6 +2468,75 @@ function ensureReaderStyles() {
       margin-top: 0.35rem;
       line-height: 1.45;
     }
+    .footnote-marker {
+      color: var(--cyan);
+      cursor: pointer;
+    }
+    .passage-footnotes {
+      margin-top: 0.9rem;
+      border-top: 1px dashed var(--border);
+      padding: 0.6rem 0.75rem 0.25rem;
+    }
+    .passage-footnotes-title {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      margin-bottom: 0.4rem;
+    }
+    .passage-footnote {
+      font-size: 0.85rem;
+      line-height: 1.65;
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+      margin-bottom: 0.15rem;
+      transition: background 0.3s ease;
+    }
+    .passage-footnote .footnote-num {
+      color: var(--cyan);
+      font-weight: 700;
+      margin-right: 0.3rem;
+    }
+    .passage-footnote .footnote-term {
+      font-weight: 600;
+      margin-right: 0.35rem;
+    }
+    .passage-footnote .footnote-def-ja {
+      color: var(--text-muted);
+      margin-right: 0.35rem;
+    }
+    .passage-footnote .footnote-def-en {
+      color: var(--text-dim);
+    }
+    .passage-footnote.footnote-flash {
+      background: var(--surface);
+      outline: 1px solid var(--cyan);
+    }
+    .book-drill-items {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .book-drill-item summary {
+      cursor: pointer;
+    }
+    .book-drill-item .drill-item-term {
+      font-weight: 600;
+    }
+    .book-drill-option {
+      display: flex;
+      gap: 0.5rem;
+      align-items: baseline;
+      font-size: 0.9rem;
+    }
+    .book-drill-option .drill-option-key {
+      font-weight: 700;
+      color: var(--cyan);
+      min-width: 1rem;
+    }
+    .gloss-kanji-breakdown {
+      margin-top: 0.6rem;
+    }
     .gloss-term {
       border-bottom: 1px dashed var(--accent);
       color: #fff;
@@ -2631,6 +2878,7 @@ if (typeof window !== 'undefined') {
   window.adjustFontScale = adjustFontScale;
   window.toggleSingleSentenceTrans = toggleSingleSentenceTrans;
   window.showWordGloss = showWordGloss;
+  window.scrollToFootnote = scrollToFootnote;
   window.closeWordGloss = closeWordGloss;
   window.addActiveWordToMyWords = addActiveWordToMyWords;
   window.addWordFromPreview = addWordFromPreview;

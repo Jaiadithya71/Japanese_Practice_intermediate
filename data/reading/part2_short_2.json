@@ -26,7 +26,8 @@
       "preReading": {
         "question_ja": "あなたの国では避難訓練(注)をしますか。どんなことをしますか。",
         "question_en": "Do you have evacuation drills in your country? What kind of things do you do?",
-        "question_zh": "在你的国家会进行避难训练吗？都会做些什么呢？"
+        "question_zh": "在你的国家会进行避难训练吗？都会做些什么呢？",
+        "question_ja_ruby": "あなたの<ruby>国<rt>くに</rt></ruby>では<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>(<ruby>注<rt>ちゅう</rt></ruby>)をしますか。どんなことをしますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -42,7 +43,7 @@
           },
           {
             "id": 2,
-            "text_ja": "「おかしも」とは、「押さない、駆けない、しゃべらない、戻らない」の頭文字をとった言葉で、災害が起きたときに安全に避難するための約束です。",
+            "text_ja": "「おかしも」とは、「押さない、駆けない(注2)、しゃべらない(注3)、戻らない」の頭文字をとった言葉で、災害(注1)が起きたときに安全に避難するための約束です。",
             "ruby_html": "「おかしも」とは、「<ruby>押<rt>お</rt></ruby>さない、<ruby>駆<rt>か</rt></ruby>けない<sup>(注2)</sup>、しゃべらない<sup>(注3)</sup>、<ruby>戻<rt>もど</rt></ruby>らない」の<ruby>頭文字<rt>かしらもじ</rt></ruby>をとった<ruby>言葉<rt>ことば</rt></ruby>で、<ruby>災害<rt>さいがい</rt></ruby><sup>(注1)</sup>が<ruby>起<rt>お</rt></ruby>きたときに<ruby>安全<rt>あんぜん</rt></ruby>に<ruby>避難<rt>ひなん</rt></ruby>するための<ruby>約束<rt>やくそく</rt></ruby>です。",
             "text_en": "'Okashimo' is an acronym formed from the first letters of 'Don't push, Don't run, Don't talk, Don't go back', and is a rule for safely evacuating when a disaster occurs."
           },
@@ -251,7 +252,8 @@
             "detail": "訓練のたびに習うため全員知っている / 素早さより安全が大切",
             "en": "Background of familiarity and conclusion"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>説明文<rt>せつめいぶん</rt></ruby>は、ある<ruby>事柄<rt>ことがら</rt></ruby>やルール、<ruby>仕組<rt>しく</rt></ruby>み、<ruby>客観的事実<rt>きゃっかんてきじじつ</rt></ruby>などを<ruby>読者<rt>どくしゃ</rt></ruby>にわかりやすく<ruby>解説<rt>かいせつ</rt></ruby>する<ruby>文章<rt>ぶんしょう</rt></ruby>です。「〜とは〜ということだ」「〜は〜を<ruby>意味<rt>いみ</rt></ruby>する」などの<ruby>定義<rt>ていぎ</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>や、「〜のために〜」「〜ので〜」などの<ruby>理由<rt>りゆう</rt></ruby>・<ruby>因果関係<rt>いんがかんけい</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>す<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く<ruby>使<rt>つか</rt></ruby>われます。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -265,7 +267,9 @@
             "question_zh": "说明的内容是什么？",
             "analysis_ja": "避難するときの約束である「おかしも」という言葉とその意味。",
             "analysis_en": "The word 'Okashimo' and its meaning as an evacuation safety rule.",
-            "analysis_zh": "关于避难时的约定“おかしも”这个词语及其含义。"
+            "analysis_zh": "关于避难时的约定“おかしも”这个词语及其含义。",
+            "question_ja_ruby": "<ruby>何<rt>なに</rt></ruby>について<ruby>説明<rt>せつめい</rt></ruby>されているか。",
+            "analysis_ja_ruby": "<ruby>避難<rt>ひなん</rt></ruby>するときの<ruby>約束<rt>やくそく</rt></ruby>である「おかしも」という<ruby>言葉<rt>ことば</rt></ruby>とその<ruby>意味<rt>いみ</rt></ruby>。"
           },
           {
             "step": 2,
@@ -274,7 +278,9 @@
             "question_zh": "是如何说明的（理由与因果关系）？",
             "analysis_ja": "それぞれの行動が求められる理由（転ぶのを防ぐ、指示を聞く等）と、訓練のたびに聞かされるため全員が身につけていることが説明されている。",
             "analysis_en": "The reasons behind each caution (prevent falling, hear instructions, etc.) and why all children know it due to recurring drills are explained.",
-            "analysis_zh": "解释了每个要求的理由（防止跌倒、听从指示等），以及每次训练都会反复强调因而人尽皆知。"
+            "analysis_zh": "解释了每个要求的理由（防止跌倒、听从指示等），以及每次训练都会反复强调因而人尽皆知。",
+            "question_ja_ruby": "どのように<ruby>説明<rt>せつめい</rt></ruby>されているか（<ruby>理由<rt>りゆう</rt></ruby>や<ruby>因果関係<rt>いんがかんけい</rt></ruby>）。",
+            "analysis_ja_ruby": "それぞれの<ruby>行動<rt>こうどう</rt></ruby>が<ruby>求<rt>もと</rt></ruby>められる<ruby>理由<rt>りゆう</rt></ruby>（<ruby>転<rt>ころ</rt></ruby>ぶのを<ruby>防<rt>ふせ</rt></ruby>ぐ、<ruby>指示<rt>しじ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く<ruby>等<rt>など</rt></ruby>）と、<ruby>訓練<rt>くんれん</rt></ruby>のたびに<ruby>聞<rt>き</rt></ruby>かされるため<ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>身<rt>み</rt></ruby>につけていることが<ruby>説明<rt>せつめい</rt></ruby>されている。"
           }
         ]
       }
@@ -295,7 +301,8 @@
       "preReading": {
         "question_ja": "和菓子を食べたことがありますか。どの季節にどんな和菓子を食べましたか。",
         "question_en": "Have you ever eaten Japanese sweets (wagashi)? In which season and what kind did you eat?",
-        "question_zh": "你吃过日式点心（和果子）吗？在什么季节吃过什么样的点心？"
+        "question_zh": "你吃过日式点心（和果子）吗？在什么季节吃过什么样的点心？",
+        "question_ja_ruby": "<ruby>和菓子<rt>わがし</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたことがありますか。どの<ruby>季節<rt>きせつ</rt></ruby>にどんな<ruby>和菓子<rt>わがし</rt></ruby>を<ruby>食<rt>た</rt></ruby>べましたか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -613,7 +620,8 @@
             "detail": "季節を敏感に感じ取り形にして楽しむ日本人の美意識",
             "en": "Author's realization and conclusion (Aesthetic of seasonal appreciation)"
           }
-        ]
+        ],
+        "text_ja_ruby": "エッセイ（<ruby>随筆<rt>ずいひつ</rt></ruby>）は、<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>個人的<rt>こじんてき</rt></ruby>な<ruby>体験<rt>たいけん</rt></ruby>や<ruby>日々<rt>ひび</rt></ruby>の<ruby>観察<rt>かんさつ</rt></ruby>を<ruby>通<rt>つう</rt></ruby>じて、<ruby>感<rt>かん</rt></ruby>じたこと・<ruby>考<rt>かんが</rt></ruby>えたこと（<ruby>主観的<rt>しゅかんてき</rt></ruby>な<ruby>感想<rt>かんそう</rt></ruby>や<ruby>発見<rt>はっけん</rt></ruby>）を<ruby>自由<rt>じゆう</rt></ruby>に<ruby>綴<rt>つづ</rt></ruby>る<ruby>文章<rt>ぶんしょう</rt></ruby>です。<ruby>客観的事実<rt>きゃっかんてきじじつ</rt></ruby>だけでなく、<ruby>心情<rt>しんじょう</rt></ruby>の<ruby>移<rt>うつ</rt></ruby>り<ruby>変<rt>か</rt></ruby>わり、<ruby>比喩的<rt>ひゆてき</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>、<ruby>状況描写<rt>じょうきょうびょうしゃ</rt></ruby>が<ruby>豊<rt>ゆた</rt></ruby>かに<ruby>用<rt>もち</rt></ruby>いられます。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -627,7 +635,9 @@
             "question_zh": "作者经历了怎样的事情？",
             "analysis_ja": "和菓子屋で寒椿のお菓子をもう一度買おうとしたが、まだ寒いのに既に桜のお菓子に変わっていた体験。",
             "analysis_en": "Attempting to buy camellia wagashi again, but discovering that the store had already switched to cherry blossom sweets despite the lingering cold.",
-            "analysis_zh": "想再次购买山茶花和果子，却发现虽然天气尚冷，店里却早已换上了樱花果子。"
+            "analysis_zh": "想再次购买山茶花和果子，却发现虽然天气尚冷，店里却早已换上了樱花果子。",
+            "question_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>はどんな<ruby>体験<rt>たいけん</rt></ruby>をしたか。",
+            "analysis_ja_ruby": "<ruby>和菓子屋<rt>わがしや</rt></ruby>で<ruby>寒椿<rt>かんつばき</rt></ruby>のお<ruby>菓子<rt>かし</rt></ruby>をもう<ruby>一度<rt>いちど</rt></ruby><ruby>買<rt>か</rt></ruby>おうとしたが、まだ<ruby>寒<rt>さむ</rt></ruby>いのに<ruby>既<rt>すで</rt></ruby>に<ruby>桜<rt>さくら</rt></ruby>のお<ruby>菓子<rt>かし</rt></ruby>に<ruby>変<rt>か</rt></ruby>わっていた<ruby>体験<rt>たいけん</rt></ruby>。"
           },
           {
             "step": 2,
@@ -636,7 +646,9 @@
             "question_zh": "通过这次经历，作者领悟并感受到了什么？",
             "analysis_ja": "和菓子屋が季節を先取りして人々に届けていることに気づき、季節の訪れを敏感に捉えて楽しむ日本人の文化に深く感激した。",
             "analysis_en": "Realizing that wagashi anticipatorily delivers upcoming seasons to people, leading to deep admiration for the Japanese culture of sensitive seasonal enjoyment.",
-            "analysis_zh": "意识到和果子店是在抢先感知季节并送达给人们，进而对日本人敏锐感受季节并享受其中的文化深表赞赏。"
+            "analysis_zh": "意识到和果子店是在抢先感知季节并送达给人们，进而对日本人敏锐感受季节并享受其中的文化深表赞赏。",
+            "question_ja_ruby": "<ruby>体験<rt>たいけん</rt></ruby>を<ruby>通<rt>とう</rt></ruby>して<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>何<rt>なに</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>え、<ruby>感<rt>かん</rt></ruby>じたか。",
+            "analysis_ja_ruby": "<ruby>和菓子屋<rt>わがしや</rt></ruby>が<ruby>季節<rt>きせつ</rt></ruby>を<ruby>先取<rt>さきど</rt></ruby>りして<ruby>人々<rt>ひとびと</rt></ruby>に<ruby>届<rt>とど</rt></ruby>けていることに<ruby>気<rt>き</rt></ruby>づき、<ruby>季節<rt>きせつ</rt></ruby>の<ruby>訪<rt>おとず</rt></ruby>れを<ruby>敏感<rt>びんかん</rt></ruby>に<ruby>捉<rt>とら</rt></ruby>えて<ruby>楽<rt>たの</rt></ruby>しむ<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>に<ruby>深<rt>ふか</rt></ruby>く<ruby>感激<rt>かんげき</rt></ruby>した。"
           }
         ]
       }
@@ -657,7 +669,8 @@
       "preReading": {
         "question_ja": "駅やお店のチラシや案内を見て、知りたい情報を探したことがありますか。",
         "question_en": "Have you ever looked at flyers or notices at stations or shops to find information you needed?",
-        "question_zh": "你曾看过车站或商店的传单或通知来寻找想要的信息吗？"
+        "question_zh": "你曾看过车站或商店的传单或通知来寻找想要的信息吗？",
+        "question_ja_ruby": "<ruby>駅<rt>えき</rt></ruby>やお<ruby>店<rt>みせ</rt></ruby>のチラシや<ruby>案内<rt>あんない</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>知<rt>し</rt></ruby>りたい<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>探<rt>さが</rt></ruby>したことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "第3部「情報検索」の特徴と解き方のポイントを読み、練習問題に備えましょう。",
@@ -824,7 +837,8 @@
             "detail": "選択肢と照らし合わせ、正解を絞り込む",
             "en": "Step 5: Compare findings with options to select the answer"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>実用<rt>じつよう</rt></ruby><ruby>文<rt>ぶん</rt></ruby>（チラシ、<ruby>広告<rt>こうこく</rt></ruby>、<ruby>案内<rt>あんない</rt></ruby>、お<ruby>知<rt>し</rt></ruby>らせなど）は、<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>情報<rt>じょうほう</rt></ruby>を<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>がすぐに<ruby>見<rt>み</rt></ruby>つけられるようにデザインされています。そのため、タイトルや<ruby>太字<rt>ふとじ</rt></ruby>、<ruby>囲<rt>かこ</rt></ruby>み<ruby>枠<rt>わく</rt></ruby>、<ruby>箇条書<rt>かじょうが</rt></ruby>き、<ruby>表<rt>ひょう</rt></ruby>などの<ruby>視覚的<rt>しかくてき</rt></ruby>レイアウトを<ruby>把握<rt>はあく</rt></ruby>することが<ruby>鍵<rt>かぎ</rt></ruby>となります。"
       },
       "testAdvice": {
         "title_ja": "実力養成のポイント",
@@ -838,7 +852,9 @@
             "question_zh": "是否试图通读全部文字？",
             "analysis_ja": "制限時間内に解くためには、質問に関係のない詳細を読み込まず、必要な情報だけを拾い読みする技術が必要です。",
             "analysis_en": "To finish within time, avoid getting bogged down in unrelated details and practice selective scanning.",
-            "analysis_zh": "为了在限定时间内完成，切忌通读无关细节，需掌握精准抓取关键信息的扫读技巧。"
+            "analysis_zh": "为了在限定时间内完成，切忌通读无关细节，需掌握精准抓取关键信息的扫读技巧。",
+            "question_ja_ruby": "<ruby>全部<rt>ぜんぶ</rt></ruby><ruby>読<rt>よ</rt></ruby>もうとしていないか。",
+            "analysis_ja_ruby": "<ruby>制限時間<rt>せいげんじかん</rt></ruby><ruby>内<rt>ない</rt></ruby>に<ruby>解<rt>と</rt></ruby>くためには、<ruby>質問<rt>しつもん</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>のない<ruby>詳細<rt>しょうさい</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み<ruby>込<rt>こ</rt></ruby>まず、<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>情報<rt>じょうほう</rt></ruby>だけを<ruby>拾<rt>ひろ</rt></ruby>い<ruby>読<rt>よ</rt></ruby>みする<ruby>技術<rt>ぎじゅつ</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。"
           },
           {
             "step": 2,
@@ -847,7 +863,9 @@
             "question_zh": "是否漏看了注释、米字符号（※）、括号内的补充条件？",
             "analysis_ja": "「〜を除く」「〜の場合は別途費用」「〜歳未満不可」などの例外条件は、しばしば小さい文字で下部に書かれます。必ずチェックしましょう。",
             "analysis_en": "Exceptions like 'excluding...', 'additional fee applies for...', or 'under age X not eligible' are often placed in fine print. Always inspect them.",
-            "analysis_zh": "诸如“除……外”、“……的情况需另收费”、“未满……岁不得参加”等例外条款往往以小字置于底部，务必重点检查。"
+            "analysis_zh": "诸如“除……外”、“……的情况需另收费”、“未满……岁不得参加”等例外条款往往以小字置于底部，务必重点检查。",
+            "question_ja_ruby": "<ruby>注釈<rt>ちゅうしゃく</rt></ruby>や<ruby>米印<rt>こめじるし</rt></ruby>（※）、<ruby>括弧<rt>かっこ</rt></ruby><ruby>書<rt>か</rt></ruby>きなどの<ruby>細<rt>こま</rt></ruby>かい<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>見落<rt>みお</rt></ruby>としていないか。",
+            "analysis_ja_ruby": "「〜を<ruby>除<rt>のぞ</rt></ruby>く」「〜の<ruby>場合<rt>ばあい</rt></ruby>は<ruby>別途<rt>べっと</rt></ruby><ruby>費用<rt>ひよう</rt></ruby>」「〜<ruby>歳<rt>さい</rt></ruby><ruby>未満<rt>みまん</rt></ruby><ruby>不可<rt>ふか</rt></ruby>」などの<ruby>例外<rt>れいがい</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>は、しばしば<ruby>小<rt>ちい</rt></ruby>さい<ruby>文字<rt>もじ</rt></ruby>で<ruby>下部<rt>かぶ</rt></ruby>に<ruby>書<rt>か</rt></ruby>かれます。<ruby>必<rt>かなら</rt></ruby>ずチェックしましょう。"
           }
         ]
       }
@@ -868,7 +886,8 @@
       "preReading": {
         "question_ja": "割引の広告を見て、何かを買ったことがありますか。それはどんなものですか。",
         "question_en": "Have you ever bought something after seeing a discount advertisement? What kind of thing was it?",
-        "question_zh": "你曾看过打折广告并买过东西吗？那是怎样的东西呢？"
+        "question_zh": "你曾看过打折广告并买过东西吗？那是怎样的东西呢？",
+        "question_ja_ruby": "<ruby>割引<rt>わりびき</rt></ruby>の<ruby>広告<rt>こうこく</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>何<rt>なに</rt></ruby>かを<ruby>買<rt>か</rt></ruby>ったことがありますか。それはどんなものですか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの広告を見て、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1052,7 +1071,8 @@
             "detail": "○○市観光課（電話番号）",
             "en": "Contact information"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>広告<rt>こうこく</rt></ruby>では、キャッチコピーや<ruby>目立<rt>めだ</rt></ruby>つ<ruby>大<rt>おお</rt></ruby>きな<ruby>数字<rt>すうじ</rt></ruby>で「お<ruby>得<rt>とく</rt></ruby>なポイント（<ruby>割引<rt>わりびき</rt></ruby>・セット<ruby>価格<rt>かかく</rt></ruby>）」が<ruby>上部<rt>じょうぶ</rt></ruby>に<ruby>強調<rt>きょうちょう</rt></ruby>されます。<ruby>一方<rt>いっぽう</rt></ruby>、<ruby>利用条件<rt>りようじょうけん</rt></ruby>、<ruby>発売<rt>はつばい</rt></ruby><ruby>場所<rt>ばしょ</rt></ruby>、<ruby>有効<rt>ゆうこう</rt></ruby><ruby>期間<rt>きかん</rt></ruby>、<ruby>除外日<rt>じょがいび</rt></ruby>などの<ruby>細<rt>こま</rt></ruby>かい<ruby>条件<rt>じょうけん</rt></ruby>は、<ruby>下部<rt>かぶ</rt></ruby>や<ruby>注釈<rt>ちゅうしゃく</rt></ruby>に<ruby>小<rt>ちい</rt></ruby>さく<ruby>記載<rt>きさい</rt></ruby>されます。<ruby>設問<rt>せつもん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>と<ruby>広告<rt>こうこく</rt></ruby>の<ruby>詳細<rt>しょうさい</rt></ruby>を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>照合<rt>しょうごう</rt></ruby>することが<ruby>重要<rt>じゅうよう</rt></ruby>です。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -1066,7 +1086,9 @@
             "question_zh": "提问者希望满足的条件是什么？",
             "analysis_ja": "市バス1日乗車券、歴史博物館、現代美術館の3つをすべて安く利用したい。",
             "analysis_en": "Wants to use all three: City Bus 1-day pass, History Museum, and Modern Art Museum at lowest price.",
-            "analysis_zh": "希望以最便宜的价格同时利用市营巴士1日券、历史博物馆、现代美术馆这三项。"
+            "analysis_zh": "希望以最便宜的价格同时利用市营巴士1日券、历史博物馆、现代美术馆这三项。",
+            "question_ja_ruby": "<ruby>質問者<rt>しつもんしゃ</rt></ruby>の<ruby>希望<rt>きぼう</rt></ruby>する<ruby>条件<rt>じょうけん</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か。",
+            "analysis_ja_ruby": "<ruby>市<rt>し</rt></ruby>バス1<ruby>日<rt>にち</rt></ruby><ruby>乗車券<rt>じょうしゃけん</rt></ruby>、<ruby>歴史<rt>れきし</rt></ruby><ruby>博物館<rt>はくぶつかん</rt></ruby>、<ruby>現代美術<rt>げんだいびじゅつ</rt></ruby><ruby>館<rt>かん</rt></ruby>の3つをすべて<ruby>安<rt>やす</rt></ruby>く<ruby>利用<rt>りよう</rt></ruby>したい。"
           },
           {
             "step": 2,
@@ -1075,7 +1097,9 @@
             "question_zh": "广告中符合该条件的套票、价格与购买地点在哪里？",
             "analysis_ja": "3つがセットになった割引チケットは2,200円。バス切符売り場または博物館・美術館の窓口で購入可能。",
             "analysis_en": "The bundle ticket covering all three is 2,200 yen. It can be purchased at the bus ticket booth or the museum counters.",
-            "analysis_zh": "包含三者的优惠套票为2,200日元。可在巴士售票处或博物馆/美术馆窗口购得。"
+            "analysis_zh": "包含三者的优惠套票为2,200日元。可在巴士售票处或博物馆/美术馆窗口购得。",
+            "question_ja_ruby": "<ruby>広告<rt>こうこく</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で、その<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>該当<rt>がいとう</rt></ruby>するセットと<ruby>価格<rt>かかく</rt></ruby>・<ruby>発売<rt>はつばい</rt></ruby><ruby>場所<rt>ばしょ</rt></ruby>はどこか。",
+            "analysis_ja_ruby": "3つがセットになった<ruby>割引<rt>わりびき</rt></ruby>チケットは2,200<ruby>円<rt>えん</rt></ruby>。バス<ruby>切符<rt>きっぷ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>または<ruby>博物館<rt>はくぶつかん</rt></ruby>・<ruby>美術館<rt>びじゅつかん</rt></ruby>の<ruby>窓口<rt>まどぐち</rt></ruby>で<ruby>購入可能<rt>こうにゅうかのう</rt></ruby>。"
           }
         ]
       }
@@ -1096,7 +1120,8 @@
       "preReading": {
         "question_ja": "今、習いたいことがありますか。それはどんなことですか。",
         "question_en": "Is there anything you would like to learn right now? What kind of thing is it?",
-        "question_zh": "你现在有什么想学的东西吗？那是怎样的内容？"
+        "question_zh": "你现在有什么想学的东西吗？那是怎样的内容？",
+        "question_ja_ruby": "<ruby>今<rt>いま</rt></ruby>、<ruby>習<rt>なら</rt></ruby>いたいことがありますか。それはどんなことですか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの広告を見て、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1123,7 +1148,7 @@
           },
           {
             "id": 3,
-            "text_ja": "【対象】20歳以上で、A市に在住・在勤・在学の方。",
+            "text_ja": "【対象】20歳以上で、A市に在住・在勤(注1)・在学(注2)の方。",
             "ruby_html": "【<ruby>対象<rt>たいしょう</rt></ruby>】20<ruby>歳以上<rt>さいいじょう</rt></ruby>で、A<ruby>市<rt>し</rt></ruby>に<ruby>在住<rt>ざいじゅう</rt></ruby>・<ruby>在勤<rt>ざいきん</rt></ruby><sup>(注1)</sup>・<ruby>在学<rt>ざいがく</rt></ruby><sup>(注2)</sup>の<ruby>方<rt>かた</rt></ruby>。",
             "text_en": "[Eligibility] Persons aged 20 or over who live, work, or study in City A."
           },
@@ -1347,7 +1372,8 @@
             "detail": "往復はがき（1人1枚）、必要事項、2月15日必着",
             "en": "Application procedure & hard deadline"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>募集広告<rt>ぼしゅうこうこく</rt></ruby>では、「<ruby>対象<rt>たいしょう</rt></ruby><ruby>資格<rt>しかく</rt></ruby>（<ruby>年齢<rt>ねんれい</rt></ruby>、<ruby>居住<rt>きょじゅう</rt></ruby>・<ruby>勤務<rt>きんむ</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>、<ruby>経験<rt>けいけん</rt></ruby>レベル）」「<ruby>日程<rt>にってい</rt></ruby>・<ruby>時間帯<rt>じかんたい</rt></ruby>」「<ruby>費用<rt>ひよう</rt></ruby>・<ruby>定員<rt>ていいん</rt></ruby>」「<ruby>申込方法<rt>もうしこみほうほう</rt></ruby>・<ruby>締切日<rt>しめきりび</rt></ruby>」などの<ruby>諸条件<rt>しょじょうけん</rt></ruby>を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>把握<rt>はあく</rt></ruby>することが<ruby>求<rt>もと</rt></ruby>められます。<ruby>設問<rt>せつもん</rt></ruby>に<ruby>登場<rt>とうじょう</rt></ruby>する<ruby>人物<rt>じんぶつ</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>（<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>曜日<rt>ようび</rt></ruby>、<ruby>時間<rt>じかん</rt></ruby>、レベルなど）と<ruby>照<rt>て</rt></ruby>らし<ruby>合<rt>あ</rt></ruby>わせ、<ruby>不適切<rt>ふてきせつ</rt></ruby>な<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>消去法<rt>しょうきょほう</rt></ruby>で<ruby>絞<rt>しぼ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>みます。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -1361,7 +1387,9 @@
             "question_zh": "列出人物的具体条件（水平、空闲时间、居住地）。",
             "analysis_ja": "ローラさんは「初心者（初級のみ）」、「月・水・木の9:30〜16:00は学校」。",
             "analysis_en": "Laura is a 'beginner (elementary only)', and busy with school on 'Mon/Wed/Thu 9:30-16:00'.",
-            "analysis_zh": "劳拉是“初学者（仅限初级）”，且“周一、三、四的9:30〜16:00有课”。"
+            "analysis_zh": "劳拉是“初学者（仅限初级）”，且“周一、三、四的9:30〜16:00有课”。",
+            "question_ja_ruby": "<ruby>人物<rt>じんぶつ</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>（レベル・<ruby>空<rt>あ</rt></ruby>き<ruby>時間<rt>じかん</rt></ruby>・<ruby>居住地<rt>きょじゅうち</rt></ruby>）をリストアップする。",
+            "analysis_ja_ruby": "ローラさんは「<ruby>初心者<rt>しょしんしゃ</rt></ruby>（<ruby>初級<rt>しょきゅう</rt></ruby>のみ）」、「<ruby>月<rt>げつ</rt></ruby>・<ruby>水<rt>すい</rt></ruby>・<ruby>木<rt>もく</rt></ruby>の9:30〜16:00は<ruby>学校<rt>がっこう</rt></ruby>」。"
           },
           {
             "step": 2,
@@ -1370,7 +1398,9 @@
             "question_zh": "从课程列表中找出符合条件的班级。",
             "analysis_ja": "初級クラス（a, d, e, f）のうち、木曜夜のdと土曜午前のfが該当する。",
             "analysis_en": "Among beginner classes (a, d, e, f), Thursday night 'd' and Saturday morning 'f' fit.",
-            "analysis_zh": "在初级班（a, d, e, f）中，周四晚间的d和周六上午的f符合要求。"
+            "analysis_zh": "在初级班（a, d, e, f）中，周四晚间的d和周六上午的f符合要求。",
+            "question_ja_ruby": "クラス<ruby>一覧表<rt>いちらんひょう</rt></ruby>から<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>合致<rt>がっち</rt></ruby>するものを<ruby>特定<rt>とくてい</rt></ruby>する。",
+            "analysis_ja_ruby": "<ruby>初級<rt>しょきゅう</rt></ruby>クラス（a, d, e, f）のうち、<ruby>木曜<rt>もくよう</rt></ruby><ruby>夜<rt>よる</rt></ruby>のdと<ruby>土曜<rt>どよう</rt></ruby><ruby>午前<rt>ごぜん</rt></ruby>のfが<ruby>該当<rt>がいとう</rt></ruby>する。"
           },
           {
             "step": 3,
@@ -1379,7 +1409,9 @@
             "question_zh": "核对报名的特别注意事项与限制。",
             "analysis_ja": "「1枚で1名のみ」「往復はがき」「締切日必着」などのルールを確認する。",
             "analysis_en": "Check strict rules like '1 applicant per postcard', 'round-trip postcard', and 'arrival deadline'.",
-            "analysis_zh": "确认“1张限1人”、“往返明信片”、“截止日必达”等规则。"
+            "analysis_zh": "确认“1张限1人”、“往返明信片”、“截止日必达”等规则。",
+            "question_ja_ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みルールの<ruby>特記事項<rt>とくきじこう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する。",
+            "analysis_ja_ruby": "「1<ruby>枚<rt>まい</rt></ruby>で1<ruby>名<rt>めい</rt></ruby>のみ」「<ruby>往復<rt>おうふく</rt></ruby>はがき」「<ruby>締切日<rt>しめきりび</rt></ruby><ruby>必着<rt>ひっちゃく</rt></ruby>」などのルールを<ruby>確認<rt>かくにん</rt></ruby>する。"
           }
         ]
       }

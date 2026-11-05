@@ -27,7 +27,8 @@
       "preReading": {
         "question_ja": "実際のJLPT N3読解試験では、どんな形式や長さの文章が出題されるか知っていますか。",
         "question_en": "Do you know what formats and lengths of reading passages appear on the actual JLPT N3 exam?",
-        "question_zh": "你知道实际JLPT N3读解考试中会考查哪些形式和长度的文章吗？"
+        "question_zh": "你知道实际JLPT N3读解考试中会考查哪些形式和长度的文章吗？",
+        "question_ja_ruby": "<ruby>実際<rt>じっさい</rt></ruby>のJLPT N3<ruby>読解<rt>どくかい</rt></ruby><ruby>試験<rt>しけん</rt></ruby>では、どんな<ruby>形式<rt>けいしき</rt></ruby>や<ruby>長<rt>なが</rt></ruby>さの<ruby>文章<rt>ぶんしょう</rt></ruby>が<ruby>出題<rt>しゅつだい</rt></ruby>されるか<ruby>知<rt>し</rt></ruby>っていますか。"
       },
       "passageInstructions": {
         "instruction_ja": "第4部「実戦問題」の構成と解き方のポイントを読み、本番形式の読解練習に備えましょう。",
@@ -142,7 +143,8 @@
       "preReading": {
         "question_ja": "おにぎりを作ったことがありますか。美味しくにぎるコツは何だと思いますか。",
         "question_en": "Have you ever made onigiri? What do you think is the trick to shaping it deliciously?",
-        "question_zh": "你做过饭团吗？你认为捏出美味饭团的诀窍是什么？"
+        "question_zh": "你做过饭团吗？你认为捏出美味饭团的诀窍是什么？",
+        "question_ja_ruby": "おにぎりを<ruby>作<rt>つく</rt></ruby>ったことがありますか。<ruby>美味<rt>おい</rt></ruby>しくにぎるコツは<ruby>何<rt>なん</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>いますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -152,7 +154,7 @@
         "sentences": [
           {
             "id": 1,
-            "text_ja": "おにぎりは簡単に食べられるので、とても人気がある。",
+            "text_ja": "おにぎり(注1)は簡単に食べられるので、とても人気がある。",
             "ruby_html": "おにぎり<sup>(注1)</sup>は<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>食<rt>た</rt></ruby>べられるので、とても<ruby>人気<rt>にんき</rt></ruby>がある。",
             "text_en": "Because onigiri can be eaten easily, it is very popular."
           },
@@ -176,7 +178,7 @@
           },
           {
             "id": 5,
-            "text_ja": "食べるときにお米と具の味が混ざるように、ふわふわと、でも、くずれない程度に力を込めてにぎらなければならない。",
+            "text_ja": "食べるときにお米と具(注2)の味が混ざるように、ふわふわと、でも、くずれない程度に力を込めてにぎらなければならない。",
             "ruby_html": "<ruby>食<rt>た</rt></ruby>べるときにお<ruby>米<rt>こめ</rt></ruby>と<ruby>具<rt>ぐ</rt></ruby><sup>(注2)</sup>の<ruby>味<rt>あじ</rt></ruby>が<ruby>混<rt>ま</rt></ruby>ざるように、ふわふわと、でも、くずれない<ruby>程度<rt>ていど</rt></ruby>に<ruby>力<rt>ちから</rt></ruby>を<ruby>込<rt>こ</rt></ruby>めてにぎらなければならない。",
             "text_en": "You must shape it with just enough firmness so it does not fall apart, yet keeping it fluffy so that the flavor of the rice and filling blend together when eaten."
           },
@@ -293,7 +295,8 @@
       "preReading": {
         "question_ja": "「集団主義」と聞いてどんな行動を思い浮かべますか。",
         "question_en": "What actions come to mind when you hear 'collectivism'?",
-        "question_zh": "听到“集体主义”时，你会联想到怎样的行为？"
+        "question_zh": "听到“集体主义”时，你会联想到怎样的行为？",
+        "question_ja_ruby": "「<ruby>集団<rt>しゅうだん</rt></ruby><ruby>主義<rt>しゅぎ</rt></ruby>」と<ruby>聞<rt>き</rt></ruby>いてどんな<ruby>行動<rt>こうどう</rt></ruby>を<ruby>思<rt>おも</rt></ruby>い<ruby>浮<rt>う</rt></ruby>かべますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -315,7 +318,7 @@
           },
           {
             "id": 3,
-            "text_ja": "それにはさまざまな原因があるが、その一つに日本人が昔から「稲作」を行ってきたことがあると言われている。",
+            "text_ja": "それにはさまざまな原因があるが、その一つに日本人が昔から「稲作」(注1)を行ってきたことがあると言われている。",
             "ruby_html": "それにはさまざまな<ruby>原因<rt>げんいん</rt></ruby>があるが、その<ruby>一<rt>ひと</rt></ruby>つに<ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>昔<rt>むかし</rt></ruby>から「<ruby>稲作<rt>いなさく</rt></ruby>」<sup>(注1)</sup>を<ruby>行<rt>おこな</rt></ruby>ってきたことがあると<ruby>言<rt>い</rt></ruby>われている。",
             "text_en": "There are various causes for this, but one of them is said to be that Japanese people have engaged in wet-rice cultivation since ancient times."
           },
@@ -436,7 +439,8 @@
       "preReading": {
         "question_ja": "電池がなくても使える防災用の手動ライトを見たことがありますか。",
         "question_en": "Have you ever seen an emergency hand-crank light that can be used without batteries?",
-        "question_zh": "你见过无需电池即可使用的防灾用手摇手电筒吗？"
+        "question_zh": "你见过无需电池即可使用的防灾用手摇手电筒吗？",
+        "question_ja_ruby": "<ruby>電池<rt>でんち</rt></ruby>がなくても<ruby>使<rt>つか</rt></ruby>える<ruby>防災<rt>ぼうさい</rt></ruby><ruby>用<rt>よう</rt></ruby>の<ruby>手動<rt>しゅどう</rt></ruby>ライトを<ruby>見<rt>み</rt></ruby>たことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章は手動発電式ライトの説明書である。本文を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -476,7 +480,7 @@
           },
           {
             "id": 6,
-            "text_ja": "④ライトスイッチを押してから、白いボタンを押すと、ライトを点滅させることができます。",
+            "text_ja": "④ライトスイッチを押してから、白いボタンを押すと、ライトを点滅(注1)させることができます。",
             "ruby_html": "④ライトスイッチを<ruby>押<rt>お</rt></ruby>してから、<ruby>白<rt>しろ</rt></ruby>いボタンを<ruby>押<rt>お</rt></ruby>すと、ライトを<ruby>点滅<rt>てんめつ</rt></ruby><sup>(注1)</sup>させることができます。",
             "text_en": "4. Pressing the white button after pressing the light switch allows the light to flash."
           },
@@ -603,7 +607,8 @@
       "preReading": {
         "question_ja": "教授や先生と面談の約束を変更するとき、どのようなメールを書きますか。",
         "question_en": "When rescheduling an appointment with a professor or teacher, what kind of email do you write?",
-        "question_zh": "与教授或老师更改会面约定时，你会写怎样的邮件？"
+        "question_zh": "与教授或老师更改会面约定时，你会写怎样的邮件？",
+        "question_ja_ruby": "<ruby>教授<rt>きょうじゅ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>と<ruby>面談<rt>めんだん</rt></ruby>の<ruby>約束<rt>やくそく</rt></ruby>を<ruby>変更<rt>へんこう</rt></ruby>するとき、どのようなメールを<ruby>書<rt>か</rt></ruby>きますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -743,7 +748,8 @@
       "preReading": {
         "question_ja": "もし宝くじで大金が当たったら、あなたはどうしますか。",
         "question_en": "If you won a huge sum in the lottery, what would you do?",
-        "question_zh": "如果你彩票中了巨奖，你会怎么做？"
+        "question_zh": "如果你彩票中了巨奖，你会怎么做？",
+        "question_ja_ruby": "もし<ruby>宝<rt>たから</rt></ruby>くじで<ruby>大金<rt>たいきん</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たったら、あなたはどうしますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -753,7 +759,7 @@
         "sentences": [
           {
             "id": 1,
-            "text_ja": "3億円が当たる宝くじがある。",
+            "text_ja": "3億円が当たる宝くじ(注1)がある。",
             "ruby_html": "3<ruby>億円<rt>おくえん</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる<ruby>宝<rt>たから</rt></ruby>くじ<sup>(注1)</sup>がある。",
             "text_en": "There is a lottery in which one can win 300 million yen."
           },
@@ -973,7 +979,8 @@
       "preReading": {
         "question_ja": "日常の小さなストレスをそのままにしていませんか。",
         "question_en": "Do you leave small everyday stresses as they are?",
-        "question_zh": "你会对日常的小压力听之任之吗？"
+        "question_zh": "你会对日常的小压力听之任之吗？",
+        "question_ja_ruby": "<ruby>日常<rt>にちじょう</rt></ruby>の<ruby>小<rt>ちい</rt></ruby>さなストレスをそのままにしていませんか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1187,7 +1194,8 @@
       "preReading": {
         "question_ja": "一度絶滅した生物を元に戻すことについて、どのように思いますか。",
         "question_en": "What do you think about restoring creatures that once went extinct?",
-        "question_zh": "你对恢复一度灭绝的生物有何看法？"
+        "question_zh": "你对恢复一度灭绝的生物有何看法？",
+        "question_ja_ruby": "<ruby>一度<rt>いちど</rt></ruby><ruby>絶滅<rt>ぜつめつ</rt></ruby>した<ruby>生物<rt>せいぶつ</rt></ruby>を<ruby>元<rt>もと</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>すことについて、どのように<ruby>思<rt>おも</rt></ruby>いますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1233,7 +1241,7 @@
           },
           {
             "id": 7,
-            "text_ja": "そして1981年、ついに日本のトキは絶滅した。",
+            "text_ja": "そして1981年、ついに日本のトキは絶滅(注1)した。",
             "ruby_html": "そして1981<ruby>年<rt>ねん</rt></ruby>、ついに<ruby>日本<rt>にほん</rt></ruby>のトキは<ruby>絶滅<rt>ぜつめつ</rt></ruby><sup>(注1)</sup>した。",
             "text_en": "Then in 1981, Japan's native crested ibis finally went extinct."
           },
@@ -1251,7 +1259,7 @@
           },
           {
             "id": 10,
-            "text_ja": "トキを復活させるため、多くの金を使い、多くの人々が努力している。",
+            "text_ja": "トキを復活(注2)させるため、多くのお金を使い、多くの人々が努力している。",
             "ruby_html": "トキを<ruby>復活<rt>ふっかつ</rt></ruby><sup>(注2)</sup>させるため、<ruby>多<rt>おお</rt></ruby>くのお<ruby>金<rt>かね</rt></ruby>を<ruby>使<rt>つか</rt></ruby>い、<ruby>多<rt>おお</rt></ruby>くの<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>努力<rt>どりょく</rt></ruby>している。",
             "text_en": "In order to revive the crested ibis, great sums of money are spent, and many people are making tremendous efforts."
           },
@@ -1431,7 +1439,8 @@
       "preReading": {
         "question_ja": "夜間に街中で光る自動販売機を見て、電気代や環境について考えたことがありますか。",
         "question_en": "Have you ever thought about electricity bills and the environment upon seeing vending machines glowing on the street at night?",
-        "question_zh": "看到夜间街头通体明亮的自动售货机时，你曾考虑过电费与环保问题吗？"
+        "question_zh": "看到夜间街头通体明亮的自动售货机时，你曾考虑过电费与环保问题吗？",
+        "question_ja_ruby": "<ruby>夜間<rt>やかん</rt></ruby>に<ruby>街中<rt>まちなか</rt></ruby>で<ruby>光<rt>ひか</rt></ruby>る<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>電気代<rt>でんきだい</rt></ruby>や<ruby>環境<rt>かんきょう</rt></ruby>について<ruby>考<rt>かんが</rt></ruby>えたことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1639,7 +1648,8 @@
       "preReading": {
         "question_ja": "日本語で会議やディスカッションに参加するとき、どのように相づちを打ちますか。",
         "question_en": "When participating in a meeting or discussion in Japanese, how do you give conversational responses?",
-        "question_zh": "用日语参加会议或讨论时，你会如何随声附和？"
+        "question_zh": "用日语参加会议或讨论时，你会如何随声附和？",
+        "question_ja_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>で<ruby>会議<rt>かいぎ</rt></ruby>やディスカッションに<ruby>参加<rt>さんか</rt></ruby>するとき、どのように<ruby>相<rt>あい</rt></ruby>づちを<ruby>打<rt>う</rt></ruby>ちますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1697,7 +1707,7 @@
           },
           {
             "id": 9,
-            "text_ja": "さらに、共感できるところで「本当にそうですね」と言うことが大切である。",
+            "text_ja": "さらに、共感(注1)できるところで「本当にそうですね」と言うことが大切である。",
             "ruby_html": "さらに、<ruby>共感<rt>きょうかん</rt></ruby><sup>(注1)</sup>できるところで「<ruby>本当<rt>ほんとう</rt></ruby>にそうですね」と<ruby>言<rt>い</rt></ruby>うことが<ruby>大切<rt>たいせつ</rt></ruby>である。",
             "text_en": "Furthermore, saying 'That really is so' whenever you genuinely empathize is important."
           },
@@ -1869,7 +1879,8 @@
       "preReading": {
         "question_ja": "便利な機械やスマートフォンが普及したことで、使わなくなった能力はありますか。",
         "question_en": "Are there abilities you stopped using due to the spread of convenient machines and smartphones?",
-        "question_zh": "由于便利的机器和智能手机的普及，你是否有不再使用的能力？"
+        "question_zh": "由于便利的机器和智能手机的普及，你是否有不再使用的能力？",
+        "question_ja_ruby": "<ruby>便利<rt>べんり</rt></ruby>な<ruby>機械<rt>きかい</rt></ruby>やスマートフォンが<ruby>普及<rt>ふきゅう</rt></ruby>したことで、<ruby>使<rt>つか</rt></ruby>わなくなった<ruby>能力<rt>のうりょく</rt></ruby>はありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1897,7 +1908,7 @@
           },
           {
             "id": 4,
-            "text_ja": "昔の武道を研究している人の話によると、これはそのころの人が今よりずっと力があったというわけではなく、どのように体を使えば重いものを運べるかがわかっていたので、できたのだという。",
+            "text_ja": "昔の武道(注1)を研究している人の話によると、これはそのころの人が今よりずっと力があったというわけではなく、どのように体を使えば重いものを運べるかがわかっていたので、できたのだという。",
             "ruby_html": "<ruby>昔<rt>むかし</rt></ruby>の<ruby>武道<rt>ぶどう</rt></ruby><sup>(注1)</sup>を<ruby>研究<rt>けんきゅう</rt></ruby>している<ruby>人<rt>ひと</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>によると、これはそのころの<ruby>人<rt>ひと</rt></ruby>が<ruby>今<rt>いま</rt></ruby>よりずっと<ruby>力<rt>ちから</rt></ruby>があったというわけではなく、どのように<ruby>体<rt>からだ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>えば<ruby>重<rt>おも</rt></ruby>いものを<ruby>運<rt>はこ</rt></ruby>べるかがわかっていたので、できたのだという。",
             "text_en": "According to a researcher studying ancient martial arts, this was not because people back then possessed far greater brute strength than today, but rather because they understood how to use their bodies to carry heavy objects."
           },
@@ -2087,7 +2098,8 @@
       "preReading": {
         "question_ja": "車が運転できなくなっても生活しやすい街とは、どのような街でしょうか。",
         "question_en": "What kind of town would be easy to live in even if one could no longer drive a car?",
-        "question_zh": "即使不能开车也很方便生活的城市，是什么样的城市呢？"
+        "question_zh": "即使不能开车也很方便生活的城市，是什么样的城市呢？",
+        "question_ja_ruby": "<ruby>車<rt>くるま</rt></ruby>が<ruby>運転<rt>うんてん</rt></ruby>できなくなっても<ruby>生活<rt>せいかつ</rt></ruby>しやすい<ruby>街<rt>まち</rt></ruby>とは、どのような<ruby>街<rt>まち</rt></ruby>でしょうか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2331,7 +2343,8 @@
       "preReading": {
         "question_ja": "言葉遊びやダジャレをしたことがありますか。どのような効果があると思いますか。",
         "question_en": "Have you ever made wordplay or puns? What kind of effect do you think they have?",
-        "question_zh": "你玩过文字游戏或讲过俏皮话吗？你认为它们有什么效果？"
+        "question_zh": "你玩过文字游戏或讲过俏皮话吗？你认为它们有什么效果？",
+        "question_ja_ruby": "<ruby>言葉遊<rt>ことばあそ</rt></ruby>びやダジャレをしたことがありますか。どのような<ruby>効果<rt>こうか</rt></ruby>があると<ruby>思<rt>おも</rt></ruby>いますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2575,7 +2588,8 @@
       "preReading": {
         "question_ja": "日本の手紙には「拝啓」や季節の挨拶など特別な形式があります。知っている表現はありますか。",
         "question_en": "Japanese letters use specific formats like 'Haikei' (Dear Sir/Madam) and seasonal greetings. Are you familiar with any of these?",
-        "question_zh": "日本的书信有“拝啓”和季节问候等特定格式。你知道哪些相关表达吗？"
+        "question_zh": "日本的书信有“拝啓”和季节问候等特定格式。你知道哪些相关表达吗？",
+        "question_ja_ruby": "<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>手紙<rt>てがみ</rt></ruby>には「<ruby>拝啓<rt>はいけい</rt></ruby>」や<ruby>季節<rt>きせつ</rt></ruby>の<ruby>挨拶<rt>あいさつ</rt></ruby>など<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>形式<rt>けいしき</rt></ruby>があります。<ruby>知<rt>し</rt></ruby>っている<ruby>表現<rt>ひょうげん</rt></ruby>はありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",

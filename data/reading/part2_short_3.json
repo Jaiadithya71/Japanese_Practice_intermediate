@@ -26,7 +26,8 @@
       "preReading": {
         "question_ja": "パンフレットを見たことがありますか。どんな情報が書いてありましたか。",
         "question_en": "Have you ever looked at a pamphlet? What kind of information was written in it?",
-        "question_zh": "你看过宣传册吗？上面写了些什么信息？"
+        "question_zh": "你看过宣传册吗？上面写了些什么信息？",
+        "question_ja_ruby": "パンフレットを<ruby>見<rt>み</rt></ruby>たことがありますか。どんな<ruby>情報<rt>じょうほう</rt></ruby>が<ruby>書<rt>か</rt></ruby>いてありましたか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -201,7 +202,8 @@
             "detail": "入場無料、当日先着順50名、途中入場不可、飲食・撮影禁止",
             "en": "Rules: Free, first-come 50 persons, no late entry, no food/filming"
           }
-        ]
+        ],
+        "text_ja_ruby": "イベントのパンフレットや<ruby>案内文<rt>あんないぶん</rt></ruby>では、「<ruby>対象年齢<rt>たいしょうねんれい</rt></ruby>・<ruby>対象者<rt>たいしょうしゃ</rt></ruby>」「<ruby>日時<rt>にちじ</rt></ruby>」「<ruby>定員<rt>ていいん</rt></ruby>・<ruby>料金<rt>りょうきん</rt></ruby>」などの<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>素早<rt>すばや</rt></ruby>く<ruby>読<rt>よ</rt></ruby>み<ruby>取<rt>と</rt></ruby>ることが<ruby>重要<rt>じゅうよう</rt></ruby>です。<ruby>設問<rt>せつもん</rt></ruby>の<ruby>登場人物<rt>とうじょうじんぶつ</rt></ruby>（5<ruby>歳<rt>さい</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもと<ruby>保護者<rt>ほごしゃ</rt></ruby>）の<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>該当<rt>がいとう</rt></ruby>する<ruby>項目<rt>こうもく</rt></ruby>をピンポイントで<ruby>照合<rt>しょうごう</rt></ruby>します。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -215,7 +217,9 @@
             "question_zh": "确认题目中人物的条件（年龄与陪同人员）。",
             "analysis_ja": "林さんは「5歳の息子（＝幼児）」と一緒に行く映画を探している。",
             "analysis_en": "Mr. Hayashi is looking for a movie suitable for his '5-year-old son (= young child/幼児)'.",
-            "analysis_zh": "林先生正在寻找适合与“5岁儿子（=幼儿）”一起观看的电影。"
+            "analysis_zh": "林先生正在寻找适合与“5岁儿子（=幼儿）”一起观看的电影。",
+            "question_ja_ruby": "<ruby>設問<rt>せつもん</rt></ruby>の<ruby>人物<rt>じんぶつ</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>（<ruby>年齢<rt>ねんれい</rt></ruby>・<ruby>同伴者<rt>どうはんしゃ</rt></ruby>）を<ruby>確認<rt>かくにん</rt></ruby>する。",
+            "analysis_ja_ruby": "<ruby>林<rt>はやし</rt></ruby>さんは「5<ruby>歳<rt>さい</rt></ruby>の<ruby>息子<rt>むすこ</rt></ruby>（＝<ruby>幼児<rt>ようじ</rt></ruby>）」と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>映画<rt>えいが</rt></ruby>を<ruby>探<rt>さが</rt></ruby>している。"
           },
           {
             "step": 2,
@@ -224,7 +228,9 @@
             "question_zh": "浏览表格中的对象栏寻找符合的一项。",
             "analysis_ja": "④が「幼児・児童および保護者対象」となっており、5歳児と親の組み合わせに合致する。",
             "analysis_en": "Film ④ states '幼児・児童および保護者対象', exactly matching a 5-year-old child with a parent.",
-            "analysis_zh": "第④部明确注明“幼儿、儿童及保护者对象”，与5岁幼童及家长的组合完全契合。"
+            "analysis_zh": "第④部明确注明“幼儿、儿童及保护者对象”，与5岁幼童及家长的组合完全契合。",
+            "question_ja_ruby": "<ruby>表<rt>ひょう</rt></ruby>の<ruby>対象者<rt>たいしょうしゃ</rt></ruby><ruby>欄<rt>らん</rt></ruby>をスキャンして<ruby>合致<rt>がっち</rt></ruby>するものを<ruby>探<rt>さが</rt></ruby>す。",
+            "analysis_ja_ruby": "④が「<ruby>幼児<rt>ようじ</rt></ruby>・<ruby>児童<rt>じどう</rt></ruby>および<ruby>保護者<rt>ほごしゃ</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>」となっており、5<ruby>歳<rt>さい</rt></ruby><ruby>児<rt>じ</rt></ruby>と<ruby>親<rt>おや</rt></ruby>の<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせに<ruby>合致<rt>がっち</rt></ruby>する。"
           }
         ]
       }
@@ -245,7 +251,8 @@
       "preReading": {
         "question_ja": "お知らせを読んだことがありますか。どんなことについて書かれていましたか。",
         "question_en": "Have you ever read a public notice? What kind of things was it written about?",
-        "question_zh": "你读过通知吗？上面写的是关于什么内容的？"
+        "question_zh": "你读过通知吗？上面写的是关于什么内容的？",
+        "question_ja_ruby": "お<ruby>知<rt>し</rt></ruby>らせを<ruby>読<rt>よ</rt></ruby>んだことがありますか。どんなことについて<ruby>書<rt>か</rt></ruby>かれていましたか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -426,7 +433,8 @@
             "detail": "未就学児入場不可、出入り・私語禁止、電源完全OFF、飲食・撮影禁止",
             "en": "Audience rules: No preschool children, quiet seats, power completely OFF, no filming/eating"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>公共<rt>こうきょう</rt></ruby>のお<ruby>知<rt>し</rt></ruby>らせでは、「〜はご<ruby>遠慮<rt>えんりょ</rt></ruby>ください」「〜はお<ruby>控<rt>ひか</rt></ruby>えください」「〜は<ruby>禁止<rt>きんし</rt></ruby>とさせていただきます」などの<ruby>禁止<rt>きんし</rt></ruby>・<ruby>制限<rt>せいげん</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>頻出<rt>ひんしゅつ</rt></ruby>します。「マナーモードではなく<ruby>必<rt>かなら</rt></ruby>ず<ruby>電源<rt>でんげん</rt></ruby>をお<ruby>切<rt>き</rt></ruby>りください」という<ruby>指定<rt>してい</rt></ruby>から、<ruby>音<rt>おと</rt></ruby>を<ruby>出<rt>だ</rt></ruby>さないメール<ruby>送受信<rt>そうじゅしん</rt></ruby>も<ruby>不可<rt>ふか</rt></ruby>である<ruby>点<rt>てん</rt></ruby>を<ruby>見抜<rt>みぬ</rt></ruby>く<ruby>読解力<rt>どっかいりょく</rt></ruby>が<ruby>問<rt>と</rt></ruby>われます。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -440,7 +448,9 @@
             "question_zh": "确认设问要求：“不可以做的事情”。",
             "analysis_ja": "禁止事項やお断り事項をリストからチェックする。",
             "analysis_en": "Check all negative rules, prohibitions, and 'please refrain' clauses.",
-            "analysis_zh": "在文中列出的注意事项和禁止事项中进行排查。"
+            "analysis_zh": "在文中列出的注意事项和禁止事项中进行排查。",
+            "question_ja_ruby": "<ruby>設問<rt>せつもん</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>「してはいけないこと」を<ruby>確認<rt>かくにん</rt></ruby>する。",
+            "analysis_ja_ruby": "<ruby>禁止事項<rt>きんしじこう</rt></ruby>やお<ruby>断<rt>ことわ</rt></ruby>り<ruby>事項<rt>じこう</rt></ruby>をリストからチェックする。"
           },
           {
             "step": 2,
@@ -449,7 +459,9 @@
             "question_zh": "核对手机使用的特别规定。",
             "analysis_ja": "「必ず電源をお切りください」とあるため、電源を入れてメールを打つ行為は明確な違反である。",
             "analysis_en": "Because it explicitly orders 'turn power completely OFF', having it turned on to email is a clear violation.",
-            "analysis_zh": "因为明确要求“务必关闭电源”，开着手机发邮件属于明确违规。"
+            "analysis_zh": "因为明确要求“务必关闭电源”，开着手机发邮件属于明确违规。",
+            "question_ja_ruby": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>のルールを<ruby>照合<rt>しょうごう</rt></ruby>する。",
+            "analysis_ja_ruby": "「<ruby>必<rt>かなら</rt></ruby>ず<ruby>電源<rt>でんげん</rt></ruby>をお<ruby>切<rt>き</rt></ruby>りください」とあるため、<ruby>電源<rt>でんげん</rt></ruby>を<ruby>入<rt>い</rt></ruby>れてメールを<ruby>打<rt>う</rt></ruby>つ<ruby>行為<rt>こうい</rt></ruby>は<ruby>明確<rt>めいかく</rt></ruby>な<ruby>違反<rt>いはん</rt></ruby>である。"
           }
         ]
       }
@@ -470,7 +482,8 @@
       "preReading": {
         "question_ja": "ビルや駅などで「お知らせ」を見たことがありますか。",
         "question_en": "Have you ever seen public notices in buildings or train stations?",
-        "question_zh": "你在大楼或车站里看到过“通知”吗？"
+        "question_zh": "你在大楼或车站里看到过“通知”吗？",
+        "question_ja_ruby": "ビルや<ruby>駅<rt>えき</rt></ruby>などで「お<ruby>知<rt>し</rt></ruby>らせ」を<ruby>見<rt>み</rt></ruby>たことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -651,7 +664,8 @@
             "detail": "中央エスカレーター・階段の利用案内、作業時間の前後の可能性",
             "en": "Alternatives (escalators/stairs) and progress notes"
           }
-        ]
+        ],
+        "text_ja_ruby": "ビル<ruby>設備<rt>せつび</rt></ruby>やインフラの<ruby>停止<rt>ていし</rt></ruby><ruby>通知<rt>つうち</rt></ruby>では、どのエリア（<ruby>東館<rt>ひがしかん</rt></ruby>・<ruby>西館<rt>にしかん</rt></ruby>・<ruby>北館<rt>きたかん</rt></ruby>）が、いつ（<ruby>日付<rt>ひづけ</rt></ruby>・<ruby>時間帯<rt>じかんたい</rt></ruby>）<ruby>停止<rt>ていし</rt></ruby>するのか、および<ruby>停止中<rt>ていしちゅう</rt></ruby>の「<ruby>代替手段<rt>だいたいしゅだん</rt></ruby>（エスカレーター・<ruby>階段<rt>かいだん</rt></ruby>）」を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>読<rt>よ</rt></ruby>み<ruby>取<rt>と</rt></ruby>ることがポイントです。<ruby>部分的<rt>ぶぶんてき</rt></ruby>な<ruby>停止<rt>ていし</rt></ruby>を「<ruby>終日<rt>しゅうじつ</rt></ruby>」や「<ruby>全館<rt>ぜんかん</rt></ruby>」と<ruby>言<rt>い</rt></ruby>い<ruby>換<rt>か</rt></ruby>えた<ruby>誤答<rt>ごとう</rt></ruby>の<ruby>罠<rt>わな</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>しましょう。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -665,7 +679,9 @@
             "question_zh": "将选项关键词与文中的日程及替代方式进行对照。",
             "analysis_ja": "「エスカレーターや階段は利用できる」という記述が「中央エスカレーターまたは非常階段をご利用ください」と完全に一致する。",
             "analysis_en": "'Escalators and stairs can be used' matches '中央エスカレーターまたは非常階段をご利用ください'.",
-            "analysis_zh": "“可以使用自动扶梯或楼梯”与文中的“请使用中央自动扶梯或应急楼梯”完全吻合。"
+            "analysis_zh": "“可以使用自动扶梯或楼梯”与文中的“请使用中央自动扶梯或应急楼梯”完全吻合。",
+            "question_ja_ruby": "<ruby>選択肢<rt>せんたくし</rt></ruby>のキーワードと<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>・<ruby>代替手段<rt>だいたいしゅだん</rt></ruby>を<ruby>照合<rt>しょうごう</rt></ruby>する。",
+            "analysis_ja_ruby": "「エスカレーターや<ruby>階段<rt>かいだん</rt></ruby>は<ruby>利用<rt>りよう</rt></ruby>できる」という<ruby>記述<rt>きじゅつ</rt></ruby>が「<ruby>中央<rt>ちゅうおう</rt></ruby>エスカレーターまたは<ruby>非常階段<rt>ひじょうかいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください」と<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>一致<rt>いっち</rt></ruby>する。"
           },
           {
             "step": 2,
@@ -674,7 +690,9 @@
             "question_zh": "检验并排除带有绝对化词汇（全天、全部、绝不）的选项。",
             "analysis_ja": "1の「終日」、2の「すべて」、4の「絶対にない」はいずれも本文と食い違っている。",
             "analysis_en": "'All day' in 1, 'all wings' in 2, and 'absolutely never' in 4 contradict the specific conditions.",
-            "analysis_zh": "选项1的“全天”、选项2的“全部”、选项4的“绝不”均与原文事实不符。"
+            "analysis_zh": "选项1的“全天”、选项2的“全部”、选项4的“绝不”均与原文事实不符。",
+            "question_ja_ruby": "<ruby>極端<rt>きょくたん</rt></ruby>な<ruby>表現<rt>ひょうげん</rt></ruby>（<ruby>終日<rt>しゅうじつ</rt></ruby>、すべて、<ruby>絶対<rt>ぜったい</rt></ruby>に）を<ruby>含<rt>ふく</rt></ruby>む<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>検証<rt>けんしょう</rt></ruby>・<ruby>消去<rt>しょうきょ</rt></ruby>する。",
+            "analysis_ja_ruby": "1の「<ruby>終日<rt>しゅうじつ</rt></ruby>」、2の「すべて」、4の「<ruby>絶対<rt>ぜったい</rt></ruby>にない」はいずれも<ruby>本文<rt>ほんぶん</rt></ruby>と<ruby>食<rt>く</rt></ruby>い<ruby>違<rt>ちが</rt></ruby>っている。"
           }
         ]
       }
@@ -695,7 +713,8 @@
       "preReading": {
         "question_ja": "病院で薬をもらったとき、どんな注意を聞きますか。",
         "question_en": "When you receive medicine at a clinic/hospital, what cautions do you hear?",
-        "question_zh": "在医院拿药时，你会听到哪些注意事项？"
+        "question_zh": "在医院拿药时，你会听到哪些注意事项？",
+        "question_ja_ruby": "<ruby>病院<rt>びょういん</rt></ruby>で<ruby>薬<rt>くすり</rt></ruby>をもらったとき、どんな<ruby>注意<rt>ちゅうい</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -895,7 +914,8 @@
             "detail": "水で噛まずに飲む、飲み忘れ時のルール（二重服用禁止）",
             "en": "Cautions: Swallow with water, no double-dosing on missed doses"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>薬<rt>くすり</rt></ruby>の<ruby>処方箋<rt>しょほうせん</rt></ruby>や<ruby>服用<rt>ふくよう</rt></ruby><ruby>説明書<rt>せつめいしょ</rt></ruby>では、<ruby>薬剤<rt>やくざい</rt></ruby>ごとの「1<ruby>回<rt>かい</rt></ruby>あたりの<ruby>分量<rt>ぶんりょう</rt></ruby>（<ruby>何<rt>なに</rt></ruby><ruby>錠<rt>じょう</rt></ruby>か）」「1<ruby>日<rt>にち</rt></ruby>の<ruby>回数<rt>かいすう</rt></ruby>」「<ruby>服用<rt>ふくよう</rt></ruby>のタイミング（<ruby>朝<rt>あさ</rt></ruby>・<ruby>昼<rt>ひる</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>、<ruby>食前<rt>しょくぜん</rt></ruby>・<ruby>食後<rt>しょくご</rt></ruby>・<ruby>食間<rt>しょっかん</rt></ruby>）」をマトリクスで<ruby>正確<rt>せいかく</rt></ruby>に<ruby>整理<rt>せいり</rt></ruby>することが<ruby>求<rt>もと</rt></ruby>められます。<ruby>時系列<rt>じけいれつ</rt></ruby>に<ruby>沿<rt>そ</rt></ruby>って「<ruby>次<rt>つぎ</rt></ruby>に<ruby>飲<rt>の</rt></ruby>む<ruby>薬<rt>くすり</rt></ruby>」を<ruby>追跡<rt>ついせき</rt></ruby>する<ruby>設問<rt>せつもん</rt></ruby>も<ruby>頻出<rt>ひんしゅつ</rt></ruby>パターンです。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -909,7 +929,9 @@
             "question_zh": "在脑中建立每种药物的服用时间对应表。",
             "analysis_ja": "朝：ピンク2錠＋白1カプセル、昼：白1カプセルのみ、夕：ピンク2錠＋白1カプセル。",
             "analysis_en": "Morning: 2 pink + 1 white; Lunch: 1 white only; Evening: 2 pink + 1 white.",
-            "analysis_zh": "早：粉色2片+白色1胶囊；中：仅白色1胶囊；晚：粉色2片+白色1胶囊。"
+            "analysis_zh": "早：粉色2片+白色1胶囊；中：仅白色1胶囊；晚：粉色2片+白色1胶囊。",
+            "question_ja_ruby": "<ruby>薬<rt>くすり</rt></ruby>ごとの<ruby>服用<rt>ふくよう</rt></ruby>タイミングを<ruby>表<rt>ひょう</rt></ruby>にまとめる。",
+            "analysis_ja_ruby": "<ruby>朝<rt>あさ</rt></ruby>：ピンク2<ruby>錠<rt>じょう</rt></ruby>＋<ruby>白<rt>しろ</rt></ruby>1カプセル、<ruby>昼<rt>ひる</rt></ruby>：<ruby>白<rt>しろ</rt></ruby>1カプセルのみ、<ruby>夕<rt>ゆう</rt></ruby>：ピンク2<ruby>錠<rt>じょう</rt></ruby>＋<ruby>白<rt>しろ</rt></ruby>1カプセル。"
           },
           {
             "step": 2,
@@ -918,7 +940,9 @@
             "question_zh": "将表格应用到时间轴问题上（“早饭后之后下一次服药？”）。",
             "analysis_ja": "朝食後の次は「昼食後」であり、飲むのは「白のカプセル1錠」だけとなる。",
             "analysis_en": "Next after breakfast is 'lunch', where only '1 white capsule' is due.",
-            "analysis_zh": "早饭后的下一个时点是“午饭后”，此时只需服用“白色胶囊1粒”。"
+            "analysis_zh": "早饭后的下一个时点是“午饭后”，此时只需服用“白色胶囊1粒”。",
+            "question_ja_ruby": "<ruby>時系列<rt>じけいれつ</rt></ruby>の<ruby>質問<rt>しつもん</rt></ruby>（「<ruby>朝<rt>あさ</rt></ruby>の<ruby>次<rt>つぎ</rt></ruby>に<ruby>飲<rt>の</rt></ruby>むのは？」）に<ruby>適用<rt>てきよう</rt></ruby>する。",
+            "analysis_ja_ruby": "<ruby>朝食後<rt>ちょうしょくご</rt></ruby>の<ruby>次<rt>つぎ</rt></ruby>は「<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>」であり、<ruby>飲<rt>の</rt></ruby>むのは「<ruby>白<rt>しろ</rt></ruby>のカプセル1<ruby>錠<rt>じょう</rt></ruby>」だけとなる。"
           }
         ]
       }
@@ -939,7 +963,8 @@
       "preReading": {
         "question_ja": "グラフを見るとき、まずどこに注目しますか。",
         "question_en": "When looking at a graph, what do you look at first?",
-        "question_zh": "看图表时，你首先会注意什么地方？"
+        "question_zh": "看图表时，你首先会注意什么地方？",
+        "question_ja_ruby": "グラフを<ruby>見<rt>み</rt></ruby>るとき、まずどこに<ruby>注目<rt>ちゅうもく</rt></ruby>しますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -968,13 +993,13 @@
           {
             "id": 4,
             "text_ja": "1位：生活費を稼ぐため（32.8%）、2位：学生生活を楽しむため（サークル活動や旅行・交際費など）（32.4%）。",
-            "ruby_html": "1<ruby>位<rt>い</rt></ruby>：<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐため（32.8%）、2<ruby>位<rt>い</rt></ruby>：<ruby>学生生活<rt>がくせいせいかつ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむため（サークル<ruby>活動<rt>かつどう</rt></ruby>や<ruby>旅行<rt>りょこう</rt></ruby>・<ruby>交際費<rt>こうさいひ</rt></ruby>など）（32.4%）。",
+            "ruby_html": "<ruby>1位<rt>いちい</rt></ruby>：<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐため（32.8%）、<ruby>2位<rt>にい</rt></ruby>：<ruby>学生生活<rt>がくせいせいかつ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむため（サークル<ruby>活動<rt>かつどう</rt></ruby>や<ruby>旅行<rt>りょこう</rt></ruby>・<ruby>交際費<rt>こうさいひ</rt></ruby>など）（32.4%）。",
             "text_en": "1st place: To earn living expenses (32.8%); 2nd place: To enjoy student life (club activities, travel, social expenses, etc.) (32.4%)."
           },
           {
             "id": 5,
             "text_ja": "3位：社会経験・就職活動に役立てるため（24.2%）、4位：その他（4.5%）、5位：学費・勉学費のため（1.0%）、無回答（5.1%）。",
-            "ruby_html": "3<ruby>位<rt>い</rt></ruby>：<ruby>社会経験<rt>しゃかいけいけん</rt></ruby>・<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>てるため（24.2%）、4<ruby>位<rt>い</rt></ruby>：その他（4.5%）、5<ruby>位<rt>い</rt></ruby>：<ruby>学費<rt>がくひ</rt></ruby>・<ruby>勉学費<rt>べんがくひ</rt></ruby>のため（1.0%）、<ruby>無回答<rt>むかいとう</rt></ruby>（5.1%）。",
+            "ruby_html": "<ruby>3位<rt>さんい</rt></ruby>：<ruby>社会経験<rt>しゃかいけいけん</rt></ruby>・<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>に<ruby>役立<rt>やくだ</rt></ruby>てるため（24.2%）、<ruby>4位<rt>よんい</rt></ruby>：その他（4.5%）、<ruby>5位<rt>ごい</rt></ruby>：<ruby>学費<rt>がくひ</rt></ruby>・<ruby>勉学費<rt>べんがくひ</rt></ruby>のため（1.0%）、<ruby>無回答<rt>むかいとう</rt></ruby>（5.1%）。",
             "text_en": "3rd place: For social experience and career preparation (24.2%); 4th: Other (4.5%); 5th: For tuition / study expenses (1.0%); No response (5.1%)."
           },
           {
@@ -1102,7 +1127,8 @@
             "detail": "お金稼ぎにとどまらず、生活充実やキャリアを見据えた多様な目的",
             "en": "Conclusion: Diversified motives beyond just earning money"
           }
-        ]
+        ],
+        "text_ja_ruby": "グラフ・<ruby>統計<rt>とうけい</rt></ruby><ruby>読解<rt>どくかい</rt></ruby>では、「<ruby>数値<rt>すうち</rt></ruby>の<ruby>大小比較<rt>だいしょうひかく</rt></ruby>（<ruby>男女比<rt>だんじょひ</rt></ruby><ruby>較<rt>かく</rt></ruby>）」「<ruby>過半数<rt>かはんすう</rt></ruby>（50%<ruby>超<rt>ちょう</rt></ruby>）かどうか」「<ruby>全体<rt>ぜんたい</rt></ruby>の<ruby>傾向<rt>けいこう</rt></ruby>・<ruby>要約<rt>ようやく</rt></ruby>（お<ruby>金<rt>かね</rt></ruby><ruby>稼<rt>かせ</rt></ruby>ぎだけではない）」を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>判定<rt>はんてい</rt></ruby>する<ruby>力<rt>ちから</rt></ruby>が<ruby>試<rt>ため</rt></ruby>されます。<ruby>選択肢<rt>せんたくし</rt></ruby>の「<ruby>半数以上<rt>はんすういじょう</rt></ruby>」「ほとんどいない」といった<ruby>限定<rt>げんてい</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>を<ruby>実際<rt>じっさい</rt></ruby>の<ruby>割合<rt>わりあい</rt></ruby><ruby>数値<rt>すうち</rt></ruby>（32.8%、24.2%）と<ruby>照<rt>て</rt></ruby>らし<ruby>合<rt>あ</rt></ruby>わせるのが<ruby>定石<rt>じょうせき</rt></ruby>です。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -1116,7 +1142,9 @@
             "question_zh": "核对数值比较（男女比例与是否过半）。",
             "analysis_ja": "女子83.4% > 男子79.4%（選択肢1脱落）、生活費32.8% < 50%（選択肢2脱落）。",
             "analysis_en": "Females 83.4% > Males 79.4% (Option 1 eliminated); Living costs 32.8% < 50% (Option 2 eliminated).",
-            "analysis_zh": "女生83.4% > 男生79.4%（排除选项1）；生活费32.8% < 50%（排除选项2）。"
+            "analysis_zh": "女生83.4% > 男生79.4%（排除选项1）；生活费32.8% < 50%（排除选项2）。",
+            "question_ja_ruby": "<ruby>数値<rt>すうち</rt></ruby>の<ruby>比較<rt>ひかく</rt></ruby>（<ruby>男女比<rt>だんじょひ</rt></ruby>・<ruby>過半数<rt>かはんすう</rt></ruby>）を<ruby>検証<rt>けんしょう</rt></ruby>する。",
+            "analysis_ja_ruby": "<ruby>女子<rt>じょし</rt></ruby>83.4% > <ruby>男子<rt>だんし</rt></ruby>79.4%（<ruby>選択肢<rt>せんたくし</rt></ruby>1<ruby>脱落<rt>だつらく</rt></ruby>）、<ruby>生活費<rt>せいかつひ</rt></ruby>32.8% < 50%（<ruby>選択肢<rt>せんたくし</rt></ruby>2<ruby>脱落<rt>だつらく</rt></ruby>）。"
           },
           {
             "step": 2,
@@ -1125,7 +1153,9 @@
             "question_zh": "选择体现图表整体核心发现的总结性选项。",
             "analysis_ja": "社会経験（24.2%）や学生生活の充実（32.4%）から、「お金を稼ぐためだけではない」が真実である。",
             "analysis_en": "With 24.2% for social experience and 32.4% for enjoyment, 'not just to earn money' is completely accurate.",
-            "analysis_zh": "由社会经验（24.2%）和享受生活（32.4%）可知，“目的不仅是为了挣钱”真实准确。"
+            "analysis_zh": "由社会经验（24.2%）和享受生活（32.4%）可知，“目的不仅是为了挣钱”真实准确。",
+            "question_ja_ruby": "グラフ<ruby>全体<rt>ぜんたい</rt></ruby>のメッセージと<ruby>合致<rt>がっち</rt></ruby>する<ruby>要約<rt>ようやく</rt></ruby><ruby>肢<rt>し</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ。",
+            "analysis_ja_ruby": "<ruby>社会<rt>しゃかい</rt></ruby><ruby>経験<rt>けいけん</rt></ruby>（24.2%）や<ruby>学生生活<rt>がくせいせいかつ</rt></ruby>の<ruby>充実<rt>じゅうじつ</rt></ruby>（32.4%）から、「お<ruby>金<rt>かね</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐためだけではない」が<ruby>真実<rt>しんじつ</rt></ruby>である。"
           }
         ]
       }
@@ -1146,7 +1176,8 @@
       "preReading": {
         "question_ja": "ネットショッピングで注文したとき、どんなメールが届きますか。",
         "question_en": "When you place an order on online shopping, what kind of email do you receive?",
-        "question_zh": "网上购物下单后，你会收到什么样的邮件？"
+        "question_zh": "网上购物下单后，你会收到什么样的邮件？",
+        "question_ja_ruby": "ネットショッピングで<ruby>注文<rt>ちゅうもん</rt></ruby>したとき、どんなメールが<ruby>届<rt>とど</rt></ruby>きますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1327,7 +1358,8 @@
             "detail": "配送状況は「お客様情報」から確認可能、配送会社への照会方法",
             "en": "Tracking guidance: Check 'Customer Information' on My Page"
           }
-        ]
+        ],
+        "text_ja_ruby": "Eコマースの<ruby>発送<rt>はっそう</rt></ruby><ruby>完了<rt>かんりょう</rt></ruby><ruby>通知<rt>つうち</rt></ruby>メールでは、<ruby>注文者<rt>ちゅうもんしゃ</rt></ruby>（ソウ<ruby>様<rt>さま</rt></ruby>）と<ruby>受取人<rt>うけとりにん</rt></ruby>（<ruby>中村<rt>なかむら</rt></ruby><ruby>様<rt>さま</rt></ruby>）が<ruby>異<rt>こと</rt></ruby>なる「ギフト<ruby>配送<rt>はいそう</rt></ruby>」の<ruby>構造<rt>こうぞう</rt></ruby>や、<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>を<ruby>追跡<rt>ついせき</rt></ruby>するための<ruby>導線<rt>どうせん</rt></ruby>（マイページ「お<ruby>客様<rt>きゃくさま</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>」や<ruby>伝票<rt>でんぴょう</rt></ruby><ruby>番号<rt>ばんごう</rt></ruby>）を<ruby>正<rt>ただ</rt></ruby>しく<ruby>読<rt>よ</rt></ruby>み<ruby>取<rt>と</rt></ruby>ることがポイントです。<ruby>注記<rt>ちゅうき</rt></ruby>（※）に<ruby>書<rt>か</rt></ruby>かれた<ruby>実務的<rt>じつむてき</rt></ruby>な<ruby>操作<rt>そうさ</rt></ruby><ruby>案内<rt>あんない</rt></ruby>を<ruby>見落<rt>みお</rt></ruby>とさないようにしましょう。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -1341,7 +1373,9 @@
             "question_zh": "明确设问目的：“如何确认货物是否已送达”。",
             "analysis_ja": "「配送状況」「お届け」に関する案内箇所を探す。",
             "analysis_en": "Locate clauses dealing with 'delivery status' (配送状況) and 'delivery' (お届け).",
-            "analysis_zh": "在文中搜寻关于“配送状况”或“送达”的指引文字。"
+            "analysis_zh": "在文中搜寻关于“配送状况”或“送达”的指引文字。",
+            "question_ja_ruby": "<ruby>設問<rt>せつもん</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>「<ruby>届<rt>とど</rt></ruby>けられたかどうかの<ruby>確認<rt>かくにん</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>」を<ruby>特定<rt>とくてい</rt></ruby>する。",
+            "analysis_ja_ruby": "「<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>」「お<ruby>届<rt>とど</rt></ruby>け」に<ruby>関<rt>かん</rt></ruby>する<ruby>案内<rt>あんない</rt></ruby><ruby>箇所<rt>かしょ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>す。"
           },
           {
             "step": 2,
@@ -1350,7 +1384,9 @@
             "question_zh": "核对星号（※）注释的指示。",
             "analysis_ja": "「ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます」の文面と一致する選択肢4を選ぶ。",
             "analysis_en": "Select Option 4, which directly matches '配送状況は、マイページの「お客様情報」よりご確認いただけます'.",
-            "analysis_zh": "选取与“配送状况可从个人中心的「客户信息」处确认”直接对应的选项4。"
+            "analysis_zh": "选取与“配送状况可从个人中心的「客户信息」处确认”直接对应的选项4。",
+            "question_ja_ruby": "<ruby>注記<rt>ちゅうき</rt></ruby>（※）の<ruby>指示<rt>しじ</rt></ruby><ruby>文<rt>ぶん</rt></ruby>を<ruby>照合<rt>しょうごう</rt></ruby>する。",
+            "analysis_ja_ruby": "「ご<ruby>注文<rt>ちゅうもん</rt></ruby>の<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>は、マイページの「お<ruby>客様<rt>きゃくさま</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>」よりご<ruby>確認<rt>かくにん</rt></ruby>いただけます」の<ruby>文面<rt>ぶんめん</rt></ruby>と<ruby>一致<rt>いっち</rt></ruby>する<ruby>選択肢<rt>せんたくし</rt></ruby>4を<ruby>選<rt>えら</rt></ruby>ぶ。"
           }
         ]
       }

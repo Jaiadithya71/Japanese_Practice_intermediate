@@ -26,7 +26,8 @@
       "preReading": {
         "question_ja": "仲のいい友達にどんなメールを送りますか。",
         "question_en": "What kind of emails do you send to close friends?",
-        "question_zh": "你会给关系好的朋友发什么样的邮件？"
+        "question_zh": "你会给关系好的朋友发什么样的邮件？",
+        "question_ja_ruby": "<ruby>仲<rt>なか</rt></ruby>のいい<ruby>友達<rt>ともだち</rt></ruby>にどんなメールを<ruby>送<rt>おく</rt></ruby>りますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -239,7 +240,8 @@
               "en": "I look forward to hearing from you."
             }
           ]
-        }
+        },
+        "text_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>はフォーマルでない、<ruby>親<rt>した</rt></ruby>しい<ruby>友達<rt>ともだち</rt></ruby>へのメールである。フォーマルでないメールでは、あいさつや<ruby>近況報告<rt>きんきょうほうこく</rt></ruby>などは<ruby>省略<rt>しょうりゃく</rt></ruby>されたり、ごく<ruby>簡単<rt>かんたん</rt></ruby>にすることもある。<ruby>文体<rt>ぶんたい</rt></ruby>の<ruby>混用<rt>こんよう</rt></ruby>、<ruby>縮約<rt>しゅくやく</rt></ruby><ruby>形<rt>かたち</rt></ruby>などが<ruby>見<rt>み</rt></ruby>られ、<ruby>書<rt>か</rt></ruby>き<ruby>言葉<rt>ことば</rt></ruby>というより<ruby>話<rt>はな</rt></ruby>し<ruby>言葉<rt>ことば</rt></ruby>に<ruby>近<rt>ちか</rt></ruby>い。<ruby>顔<rt>かお</rt></ruby><ruby>文字<rt>もじ</rt></ruby>や<ruby>絵文字<rt>えもじ</rt></ruby>、「？」「！」などの<ruby>記号<rt>きごう</rt></ruby>もよく<ruby>使<rt>つか</rt></ruby>われる。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -253,7 +255,9 @@
             "question_zh": "什么样的状况（由谁向谁？什么状况？）",
             "analysis_ja": "佐藤さんからリンさんへ。しばらく会っていない。",
             "analysis_en": "From Sato-san to Rin-san. It has been a while since they last met.",
-            "analysis_zh": "由佐藤向阿林。好久没见。"
+            "analysis_zh": "由佐藤向阿林。好久没见。",
+            "question_ja_ruby": "どのような<ruby>状況<rt>じょうきょう</rt></ruby>か。（だれからだれへ？ どんな<ruby>状況<rt>じょうきょう</rt></ruby>？）",
+            "analysis_ja_ruby": "<ruby>佐藤<rt>さとう</rt></ruby>さんからリンさんへ。しばらく<ruby>会<rt>あ</rt></ruby>っていない。"
           },
           {
             "step": 2,
@@ -262,7 +266,9 @@
             "question_zh": "想传达什么。",
             "analysis_ja": "久しぶりに食事をしたい。都合のいい日を教えてください。",
             "analysis_en": "It's been a long time since we last met. Would you like to have a meal together? When it's convenient for you, please let me know.",
-            "analysis_zh": "久别重逢想一起吃饭，请告知哪天方便。"
+            "analysis_zh": "久别重逢想一起吃饭，请告知哪天方便。",
+            "question_ja_ruby": "<ruby>何<rt>なに</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えたいか。",
+            "analysis_ja_ruby": "<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>食事<rt>しょくじ</rt></ruby>をしたい。<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日<rt>ひ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください。"
           }
         ]
       }
@@ -283,7 +289,8 @@
       "preReading": {
         "question_ja": "だれかから日本語の手紙をもらったことがありますか。",
         "question_en": "Have you ever received a letter written in Japanese from someone?",
-        "question_zh": "你收到过别人用日语写的信吗？"
+        "question_zh": "你收到过别人用日语写的信吗？",
+        "question_ja_ruby": "だれかから<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>手紙<rt>てがみ</rt></ruby>をもらったことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -304,7 +311,7 @@
           },
           {
             "id": 2,
-            "text_ja": "紅葉がきれいな季節になってきました。",
+            "text_ja": "紅葉(注1)がきれいな季節になってきました。",
             "ruby_html": "<ruby>紅葉<rt>こうよう</rt></ruby><sup>(注1)</sup>がきれいな<ruby>季節<rt>きせつ</rt></ruby>になってきました。",
             "text_en": "The season of beautiful autumn foliage has arrived."
           },
@@ -334,7 +341,7 @@
           },
           {
             "id": 7,
-            "text_ja": "さて、その時にお話しした本を別便でお送りしました。",
+            "text_ja": "さて、その時にお話しした本を別便(注2)でお送りしました。",
             "ruby_html": "さて、その<ruby>時<rt>とき</rt></ruby>にお<ruby>話<rt>はな</rt></ruby>しした<ruby>本<rt>ほん</rt></ruby>を<ruby>別便<rt>べつびん</rt></ruby><sup>(注2)</sup>でお<ruby>送<rt>おく</rt></ruby>りしました。",
             "text_en": "Now then, I have sent you the book we talked about that time by separate delivery."
           },
@@ -547,7 +554,8 @@
             "name_en": "Postscript: additional material at the end to emphasize a point ← If present, this is also important.",
             "name_zh": "补充：信的最后追加的事，或者特别提醒的事←有的话这里也很重要"
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>敬語<rt>けいご</rt></ruby>を<ruby>多<rt>おお</rt></ruby>く<ruby>使<rt>つか</rt></ruby>い、です・ます<ruby>体<rt>てい</rt></ruby>で<ruby>書<rt>か</rt></ruby>くことが<ruby>多<rt>おお</rt></ruby>い。<ruby>親<rt>した</rt></ruby>しい<ruby>関係<rt>かんけい</rt></ruby>でも、<ruby>少<rt>すこ</rt></ruby>していねいな<ruby>表現<rt>ひょうげん</rt></ruby>になることが<ruby>多<rt>おお</rt></ruby>い。プライベートの<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>は<ruby>次<rt>つぎ</rt></ruby>のような<ruby>構成<rt>こうせい</rt></ruby>になっている。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -561,7 +569,9 @@
             "question_zh": "什么样的状况（由谁向谁？什么状况？）",
             "analysis_ja": "高木まなみさんからチャン・ジユンさんへ。この前、久しぶりに会った。",
             "analysis_en": "From Takagi-san to Chang Jiyun. We recently met for the first time in a long while.",
-            "analysis_zh": "由高木真奈美向张志胤。前段时间，久别重逢。"
+            "analysis_zh": "由高木真奈美向张志胤。前段时间，久别重逢。",
+            "question_ja_ruby": "どのような<ruby>状況<rt>じょうきょう</rt></ruby>か。（だれからだれへ？ どんな<ruby>状況<rt>じょうきょう</rt></ruby>？）",
+            "analysis_ja_ruby": "<ruby>高木<rt>たかぎ</rt></ruby>まなみさんからチャン・ジユンさんへ。この<ruby>前<rt>まえ</rt></ruby>、<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>会<rt>あ</rt></ruby>った。"
           },
           {
             "step": 2,
@@ -570,7 +580,9 @@
             "question_zh": "想传达什么。",
             "analysis_ja": "高木さんがチャンさんに本を送る。あげるので、返さなくていい。",
             "analysis_en": "Takagi-san gives Chang-san a book. She does not need to return it, as it is a gift.",
-            "analysis_zh": "高木把书送给小张。因为是给他的所以不用还。"
+            "analysis_zh": "高木把书送给小张。因为是给他的所以不用还。",
+            "question_ja_ruby": "<ruby>何<rt>なに</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えたいか。",
+            "analysis_ja_ruby": "<ruby>高木<rt>たかぎ</rt></ruby>さんがチャンさんに<ruby>本<rt>ほん</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る。あげるので、<ruby>返<rt>かえ</rt></ruby>さなくていい。"
           }
         ]
       }
@@ -591,7 +603,8 @@
       "preReading": {
         "question_ja": "コピー機が故障していたら、どうしますか。",
         "question_en": "What do you do if a copy machine is broken down?",
-        "question_zh": "如果复印机坏了，你会怎么办？"
+        "question_zh": "如果复印机坏了，你会怎么办？",
+        "question_ja_ruby": "コピー<ruby>機<rt>き</rt></ruby>が<ruby>故障<rt>こしょう</rt></ruby>していたら、どうしますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -724,7 +737,8 @@
         "title_ja": "解説 ◆メモ",
         "text_ja": "メモには、以下のようなものがある。\nA: だれか一人のためのもの（不在時の連絡など。目上の人には丁寧体を使う。）\nB: 多くの人のためのメモ（注意書きなど）\n箇条書き（1、2…のような形）がよく使われる。",
         "text_en": "In a memo, you find the following:\nA: Something for just one person (contacts during absence, etc. The polite style is used in addressing a social superior.)\nB: Memo for a large number of people (notice etc)\nBulleted paragraphs are often used (similar to the numbering used in lists).",
-        "text_zh": "便条包括以下几种：\nA: 写给某个人的（用于对方不在时的联系等。对于上司要用礼貌体用语。）\nB: 写给多数人的便条（提示等）\n经常分条写（1，2…的格式）。"
+        "text_zh": "便条包括以下几种：\nA: 写给某个人的（用于对方不在时的联系等。对于上司要用礼貌体用语。）\nB: 写给多数人的便条（提示等）\n经常分条写（1，2…的格式）。",
+        "text_ja_ruby": "メモには、<ruby>以下<rt>いか</rt></ruby>のようなものがある。\nA: だれか<ruby>一人<rt>ひとり</rt></ruby>のためのもの（<ruby>不在時<rt>ふざいじ</rt></ruby>の<ruby>連絡<rt>れんらく</rt></ruby>など。<ruby>目上<rt>めうえ</rt></ruby>の<ruby>人<rt>ひと</rt></ruby>には<ruby>丁寧<rt>ていねい</rt></ruby><ruby>体<rt>てい</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う。）\nB: <ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>のためのメモ（<ruby>注意書<rt>ちゅういが</rt></ruby>きなど）\n<ruby>箇条書<rt>かじょうが</rt></ruby>き（1、2…のような<ruby>形<rt>かたち</rt></ruby>）がよく<ruby>使<rt>つか</rt></ruby>われる。"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -738,7 +752,9 @@
             "question_zh": "要注意是上文的①还是②。",
             "analysis_ja": "多くの人のためのメモ",
             "analysis_en": "This is a memo for many people.",
-            "analysis_zh": "写给多数人的便条。"
+            "analysis_zh": "写给多数人的便条。",
+            "question_ja_ruby": "<ruby>上<rt>うえ</rt></ruby>のAかBのどちらなのか<ruby>気<rt>き</rt></ruby>をつける。",
+            "analysis_ja_ruby": "<ruby>多<rt>おお</rt></ruby>くの<ruby>人<rt>ひと</rt></ruby>のためのメモ"
           },
           {
             "step": 2,
@@ -747,7 +763,9 @@
             "question_zh": "不只是便条的内容，从正文的前后文以及提问也可以读取阅读便条人的状况。",
             "analysis_ja": "メモを読んだ人の状況：職場でコピーを取ろうとしたら、コピー機に故障中のメモが貼ってあった。今、9時45分で、10時の会議のためにA3サイズのコピーを40枚取りたい。間に合うようにコピーを取るには、どうすれば一番よいか。",
             "analysis_en": "State of the people who read the memo: For those wishing to make copies at work, a note was posted on a photocopier saying that it had broken down. Somebody wishes to make 40 A3 size copies at 9.45, for a meeting at 10.00. What would be the best thing to do to ensure that copies are made in time?",
-            "analysis_zh": "阅读便条人的状况：在上班处想要复印，但复印机上贴着“不能使用”的便条。现在是9点45，需要为10点的会议准备A3大小的复印文件40页。为了赶上会议的使用应该怎么办。"
+            "analysis_zh": "阅读便条人的状况：在上班处想要复印，但复印机上贴着“不能使用”的便条。现在是9点45，需要为10点的会议准备A3大小的复印文件40页。为了赶上会议的使用应该怎么办。",
+            "question_ja_ruby": "メモの<ruby>内容<rt>ないよう</rt></ruby>だけでなく、<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>前後<rt>ぜんご</rt></ruby>や<ruby>問<rt>と</rt></ruby>いの<ruby>内容<rt>ないよう</rt></ruby>から、メモを<ruby>読<rt>よ</rt></ruby>んだ<ruby>人<rt>ひと</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>も<ruby>読<rt>よ</rt></ruby>み<ruby>取<rt>と</rt></ruby>る。",
+            "analysis_ja_ruby": "メモを<ruby>読<rt>よ</rt></ruby>んだ<ruby>人<rt>ひと</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>：<ruby>職場<rt>しょくば</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>ろうとしたら、コピー<ruby>機<rt>き</rt></ruby>に<ruby>故障中<rt>こしょうちゅう</rt></ruby>のメモが<ruby>貼<rt>は</rt></ruby>ってあった。<ruby>今<rt>いま</rt></ruby>、9<ruby>時<rt>くじ</rt></ruby>45<ruby>分<rt>ふん</rt></ruby>で、10<ruby>時<rt>じゅうじ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>のためにA3サイズのコピーを40<ruby>枚<rt>まい</rt></ruby><ruby>取<rt>と</rt></ruby>りたい。<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うようにコピーを<ruby>取<rt>と</rt></ruby>るには、どうすれば<ruby>一番<rt>いちばん</rt></ruby>よいか。"
           }
         ]
       }
@@ -768,7 +786,8 @@
       "preReading": {
         "question_ja": "日本料理を作ったことがありますか。どんなものを作りましたか。",
         "question_en": "Have you ever made Japanese food? What kind of dish did you make?",
-        "question_zh": "你做过日本料理吗？做过什么样的菜？"
+        "question_zh": "你做过日本料理吗？做过什么样的菜？",
+        "question_ja_ruby": "<ruby>日本料理<rt>にほんりょうり</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったことがありますか。どんなものを<ruby>作<rt>つく</rt></ruby>りましたか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -843,7 +862,7 @@
         "sentences": [
           {
             "id": 1,
-            "text_ja": "まず、とり肉を一口大に切り、たまねぎをうす切りにします。",
+            "text_ja": "まず、とり肉を一口大(注1)に切り、たまねぎをうす切りにします。",
             "ruby_html": "まず、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>一口大<rt>ひとくちだい</rt></ruby><sup>(注1)</sup>に<ruby>切<rt>き</rt></ruby>り、たまねぎをうす<ruby>切<rt>ぎ</rt></ruby>りにします。",
             "text_en": "First, cut the chicken into bite-sized pieces and thinly slice the onion."
           },
@@ -855,7 +874,7 @@
           },
           {
             "id": 3,
-            "text_ja": "なべにだし汁、みりん、酒、しょうゆ、さとうを入れて火にかけます。",
+            "text_ja": "なべにだし汁(注2)、みりん、酒、しょうゆ、さとうを入れて火にかけます。",
             "ruby_html": "なべにだし<ruby>汁<rt>じる</rt></ruby><sup>(注2)</sup>、みりん、<ruby>酒<rt>さけ</rt></ruby>、しょうゆ、さとうを<ruby>入<rt>い</rt></ruby>れて<ruby>火<rt>ひ</rt></ruby>にかけます。",
             "text_en": "Put the dashi broth, mirin, sake, soy sauce, and sugar in a pot and heat it on the stove."
           },
@@ -867,7 +886,7 @@
           },
           {
             "id": 5,
-            "text_ja": "とり肉が煮えたら、たまごを回し入れます。",
+            "text_ja": "とり肉が煮えたら、たまごを回し入れます(注3)。",
             "ruby_html": "とり<ruby>肉<rt>にく</rt></ruby>が<ruby>煮<rt>に</rt></ruby>えたら、たまごを<ruby>回<rt>まわ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れます<sup>(注3)</sup>。",
             "text_en": "When the chicken is cooked through, pour in the egg in a circular motion."
           },
@@ -1002,7 +1021,8 @@
         "title_ja": "解説 ◆指示文",
         "text_ja": "何かのやり方を指示する文章で、どのような順番で何をするかが書かれている。以下のような表現が多い。\n<手順> Procedure 操作步骤\n・1. 〜、2. 〜、3. 〜\n・まず〜、つぎに、そして、最後に〜\n・〜たら〜。 〜てから〜。など\n<注意点> Points to note 注意事项\n〜する（こと）。〜しない（こと）。〜なければならない。など",
         "text_en": "The text gives instructions on how to do something, and describes what actions are to be taken, in what sequence. The following expressions are common:\n<Procedure>\n・1. ~, 2. ~, 3. ~\n・First ~, next, then, finally ~\n・~tara ~, ~te kara ~, etc.\n<Points to note>\n・~ suru (koto), ~ shinai (koto), ~ nakereba naranai, etc.",
-        "text_zh": "讲解某种做法的文章，一般会写到以什么样的顺序做什么。多用下列词语：\n<操作步骤>\n・1. 〜、2. 〜、3. 〜\n・首先〜，接着，然后，最后〜\n・〜たら〜。 〜てから〜。等\n<注意事项>\n〜する（こと）。〜しない（こと）。〜なければならない。等"
+        "text_zh": "讲解某种做法的文章，一般会写到以什么样的顺序做什么。多用下列词语：\n<操作步骤>\n・1. 〜、2. 〜、3. 〜\n・首先〜，接着，然后，最后〜\n・〜たら〜。 〜てから〜。等\n<注意事项>\n〜する（こと）。〜しない（こと）。〜なければならない。等",
+        "text_ja_ruby": "<ruby>何<rt>なに</rt></ruby>かのやり<ruby>方<rt>かた</rt></ruby>を<ruby>指示<rt>しじ</rt></ruby>する<ruby>文章<rt>ぶんしょう</rt></ruby>で、どのような<ruby>順番<rt>じゅんばん</rt></ruby>で<ruby>何<rt>なに</rt></ruby>をするかが<ruby>書<rt>か</rt></ruby>かれている。<ruby>以下<rt>いか</rt></ruby>のような<ruby>表現<rt>ひょうげん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。\n<<ruby>手順<rt>てじゅん</rt></ruby>> Procedure <ruby>操作<rt>そうさ</rt></ruby><ruby>步<rt></rt></ruby>\n・1. 〜、2. 〜、3. 〜\n・まず〜、つぎに、そして、<ruby>最後<rt>さいご</rt></ruby>に〜\n・〜たら〜。 〜てから〜。など\n<<ruby>注意点<rt>ちゅういてん</rt></ruby>> Points to note <ruby>注意<rt>ちゅうい</rt></ruby><ruby>事<rt>こと</rt></ruby><ruby>项<rt></rt></ruby>\n〜する（こと）。〜しない（こと）。〜なければならない。など"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -1016,7 +1036,9 @@
             "question_zh": "在说明什么东西的做法。",
             "analysis_ja": "親子丼の作り方",
             "analysis_en": "How to make oyakodon (bowl of rice topped with chicken and eggs)",
-            "analysis_zh": "鸡蛋鸡肉盖饭的做法"
+            "analysis_zh": "鸡蛋鸡肉盖饭的做法",
+            "question_ja_ruby": "<ruby>何<rt>なん</rt></ruby>のやり<ruby>方<rt>かた</rt></ruby>を<ruby>説明<rt>せつめい</rt></ruby>しているか。",
+            "analysis_ja_ruby": "<ruby>親子丼<rt>おやこどん</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>"
           },
           {
             "step": 2,
@@ -1025,7 +1047,9 @@
             "question_zh": "所要找的信息在哪里。",
             "analysis_ja": "材料、作り方、注意することが別々に書かれている。[作り方] のところを見る。",
             "analysis_en": "The ingredients, method of preparation and points to bear in mind are discussed separately. Please see 作り方 (method of preparation).",
-            "analysis_zh": "分别写明了原材料、做法和注意事项。阅读做法处。"
+            "analysis_zh": "分别写明了原材料、做法和注意事项。阅读做法处。",
+            "question_ja_ruby": "<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>情報<rt>じょうほう</rt></ruby>はどこにあるか。",
+            "analysis_ja_ruby": "<ruby>材料<rt>ざいりょう</rt></ruby>、<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>、<ruby>注意<rt>ちゅうい</rt></ruby>することが<ruby>別々<rt>べつべつ</rt></ruby>に<ruby>書<rt>か</rt></ruby>かれている。[<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>] のところを<ruby>見<rt>み</rt></ruby>る。"
           }
         ]
       }
@@ -1046,7 +1070,8 @@
       "preReading": {
         "question_ja": "電車の中で化粧をする人についてどう思いますか。",
         "question_en": "What do you think about people who apply makeup on the train?",
-        "question_zh": "关于在电车里化妆的人，你是怎么看的？"
+        "question_zh": "关于在电车里化妆的人，你是怎么看的？",
+        "question_ja_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>化粧<rt>けしょう</rt></ruby>をする<ruby>人<rt>ひと</rt></ruby>についてどう<ruby>思<rt>おも</rt></ruby>いますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1197,7 +1222,8 @@
         "title_ja": "解説 ◆意見文",
         "text_ja": "意見を言っている文は、以下のような文末の文が多い。\n・〜べきである／〜べきではない\n・〜（する）必要がある\n・〜なければならない など",
         "text_en": "In sentences expressing an opinion, the following kind of sentence ending is common:\n・~ beki de aru / ~ beki de wa nai\n・~ (suru) hitsuyou ga aru\n・~ nakereba naranai, etc.",
-        "text_zh": "阐述观点的句子常见句尾如下：\n・〜べきである／〜べきではない\n・〜（する）必要がある\n・〜なければならない 等"
+        "text_zh": "阐述观点的句子常见句尾如下：\n・〜べきである／〜べきではない\n・〜（する）必要がある\n・〜なければならない 等",
+        "text_ja_ruby": "<ruby>意見<rt>いけん</rt></ruby>を<ruby>言<rt>い</rt></ruby>っている<ruby>文<rt>ぶん</rt></ruby>は、<ruby>以下<rt>いか</rt></ruby>のような<ruby>文末<rt>ぶんまつ</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い。\n・〜べきである／〜べきではない\n・〜（する）<ruby>必要<rt>ひつよう</rt></ruby>がある\n・〜なければならない など"
       },
       "testAdvice": {
         "title_ja": "試験問題では、次のように考えよう。",
@@ -1211,7 +1237,9 @@
             "question_zh": "文章论述的问题是什么。",
             "analysis_ja": "電車での女性の化粧について",
             "analysis_en": "About women applying makeup in the train",
-            "analysis_zh": "关于电车中女性的化妆"
+            "analysis_zh": "关于电车中女性的化妆",
+            "question_ja_ruby": "<ruby>何<rt>なに</rt></ruby>について<ruby>書<rt>か</rt></ruby>かれたものか。",
+            "analysis_ja_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>での<ruby>女性<rt>じょせい</rt></ruby>の<ruby>化粧<rt>けしょう</rt></ruby>について"
           },
           {
             "step": 2,
@@ -1220,7 +1248,9 @@
             "question_zh": "作者的观点是什么。",
             "analysis_ja": "化粧は電車でするべきではない。",
             "analysis_en": "You should not apply makeup in the train.",
-            "analysis_zh": "不应该在电车中化妆。"
+            "analysis_zh": "不应该在电车中化妆。",
+            "question_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か。",
+            "analysis_ja_ruby": "<ruby>化粧<rt>けしょう</rt></ruby>は<ruby>電車<rt>でんしゃ</rt></ruby>でするべきではない。"
           },
           {
             "step": 3,
@@ -1229,7 +1259,9 @@
             "question_zh": "观点的依据是什么。",
             "analysis_ja": "化粧する人は「自分と関係ない他人にみられてもかまわない」と言う。\n↓\n周りの人を無視し、人として考えていない。\n↓\n失礼だ。このような印象を周りに与えていることに気づいてほしい。",
             "analysis_en": "People who apply makeup in this way say that they do not mind if they are watched by other people they have no connection with.\n↓\nIgnoring people around them, not seeing them as fellow humans.\n↓\nIt's rude. I hope they realize what kind of impression they are making on the people around them.",
-            "analysis_zh": "化妆的人说“即使被与自己无关的其他人看到也不在乎”。\n↓\n无视周围人的存在，不把别人当人看待。\n↓\n没有礼貌。希望他们意识到会给别人留下这种印象。"
+            "analysis_zh": "化妆的人说“即使被与自己无关的其他人看到也不在乎”。\n↓\n无视周围人的存在，不把别人当人看待。\n↓\n没有礼貌。希望他们意识到会给别人留下这种印象。",
+            "question_ja_ruby": "<ruby>主張<rt>しゅちょう</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か。",
+            "analysis_ja_ruby": "<ruby>化粧<rt>けしょう</rt></ruby>する<ruby>人<rt>ひと</rt></ruby>は「<ruby>自分<rt>じぶん</rt></ruby>と<ruby>関係<rt>かんけい</rt></ruby>ない<ruby>他人<rt>たにん</rt></ruby>にみられてもかまわない」と<ruby>言<rt>い</rt></ruby>う。\n↓\n<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>し、<ruby>人<rt>ひと</rt></ruby>として<ruby>考<rt>かんが</rt></ruby>えていない。\n↓\n<ruby>失礼<rt>しつれい</rt></ruby>だ。このような<ruby>印象<rt>いんしょう</rt></ruby>を<ruby>周<rt>まわ</rt></ruby>りに<ruby>与<rt>あた</rt></ruby>えていることに<ruby>気<rt>き</rt></ruby>づいてほしい。"
           }
         ]
       }

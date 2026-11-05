@@ -27,7 +27,8 @@
       "preReading": {
         "question_ja": "テレビや雑誌などでどんな評論家を見たことがありますか。",
         "question_en": "What kind of critics or commentators have you seen on TV or in magazines?",
-        "question_zh": "你在电视或杂志上见过什么样的评论家？"
+        "question_zh": "你在电视或杂志上见过什么样的评论家？",
+        "question_ja_ruby": "テレビや<ruby>雑誌<rt>ざっし</rt></ruby>などでどんな<ruby>評論家<rt>ひょうろんか</rt></ruby>を<ruby>見<rt>み</rt></ruby>たことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -73,7 +74,7 @@
           },
           {
             "id": 7,
-            "text_ja": "若いころからある分野に対して人並み外れた知識や興味を持っており、夢中でそれを学ぶうちに、いつの間にかそれを仕事にすることになったという人も多い。",
+            "text_ja": "若いころからある分野に対して人並み外れた(注1)知識や興味を持っており、夢中でそれを学ぶうちに、いつの間にかそれを仕事にすることになったという人も多い。",
             "ruby_html": "<ruby>若<rt>わか</rt></ruby>いころからある<ruby>分野<rt>ぶんや</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>人並<rt>ひとな</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた(注1)<ruby>知識<rt>ちしき</rt></ruby>や<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っており、<ruby>夢中<rt>むちゅう</rt></ruby>でそれを<ruby>学<rt>まな</rt></ruby>ぶうちに、いつの<ruby>間<rt>ま</rt></ruby>にかそれを<ruby>仕事<rt>しごと</rt></ruby>にすることになったという<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い。",
             "text_en": "Many people possessed extraordinary knowledge and curiosity in a certain area from a young age, and while studying it passionately, before they knew it, it turned into their profession."
           },
@@ -85,7 +86,7 @@
           },
           {
             "id": 9,
-            "text_ja": "評論家として収入を得るためには、新聞や雑誌、テレビなどのマスメディアに取り上げられなければならない。",
+            "text_ja": "評論家として収入を得るためには、新聞や雑誌、テレビなどのマスメディア(注2)に取り上げられなければならない。",
             "ruby_html": "<ruby>評論家<rt>ひょうろんか</rt></ruby>として<ruby>収入<rt>しゅうにゅう</rt></ruby>を<ruby>得<rt>え</rt></ruby>るためには、<ruby>新聞<rt>しんぶん</rt></ruby>や<ruby>雑誌<rt>ざっし</rt></ruby>、テレビなどのマスメディア(注2)に<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げられなければならない。",
             "text_en": "To earn an income as a critic, one must be featured in mass media such as newspapers, magazines, or television."
           },
@@ -337,7 +338,8 @@
             "detail": "知識、説得力・魅力、チャンスをつかむ運が揃って初めて評論家になれる。",
             "en": "Conclusion: A critic is forged when deep knowledge, communicative charm, and lucky timing converge."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>長文<rt>ちょうぶん</rt></ruby><ruby>読解<rt>どくかい</rt></ruby>では、<ruby>論理展開<rt>ろんりてんかい</rt></ruby>（<ruby>問題提起<rt>もんだいていき</rt></ruby>→<ruby>現状分析<rt>げんじょうぶんせき</rt></ruby>・<ruby>例外<rt>れいがい</rt></ruby><ruby>提示<rt>ていじ</rt></ruby>→<ruby>必要条件<rt>ひつようじょうけん</rt></ruby>の<ruby>展開<rt>てんかい</rt></ruby>→<ruby>結論<rt>けつろん</rt></ruby>）を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>追<rt>お</rt></ruby>うことが<ruby>大切<rt>たいせつ</rt></ruby>です。<ruby>第<rt>だい</rt></ruby>1<ruby>段落<rt>だんらく</rt></ruby>で<ruby>資格<rt>しかく</rt></ruby><ruby>試験<rt>しけん</rt></ruby>がない<ruby>点<rt>てん</rt></ruby>に<ruby>触<rt>ふ</rt></ruby>れ、<ruby>第<rt>だい</rt></ruby>2・3<ruby>段落<rt>だんらく</rt></ruby>で<ruby>知識<rt>ちしき</rt></ruby>だけでは<ruby>足<rt>た</rt></ruby>りずメディアでの<ruby>魅力<rt>みりょく</rt></ruby>と<ruby>運<rt>うん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>であるという<ruby>結論<rt>けつろん</rt></ruby>へと<ruby>導<rt>みちび</rt></ruby>いています。"
       },
       "testAdvice": {
         "point_ja": "「〜というものでもない」などの部分否定表現に注目し、何が十分条件で何が必要条件なのかを区別しましょう。",
@@ -360,7 +362,8 @@
       "preReading": {
         "question_ja": "最近手書きで文字を書く機会はありますか。手書きの良さは何だと思いますか。",
         "question_en": "Have you had opportunities to write by hand recently? What do you think is good about handwriting?",
-        "question_zh": "你最近有手写字的机会吗？你觉得手写有什么优点？"
+        "question_zh": "你最近有手写字的机会吗？你觉得手写有什么优点？",
+        "question_ja_ruby": "<ruby>最近<rt>さいきん</rt></ruby><ruby>手書<rt>てが</rt></ruby>きで<ruby>文字<rt>もじ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く<ruby>機会<rt>きかい</rt></ruby>はありますか。<ruby>手書<rt>てが</rt></ruby>きの<ruby>良<rt>よ</rt></ruby>さは<ruby>何<rt>なん</rt></ruby>だと<ruby>思<rt>おも</rt></ruby>いますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -412,7 +415,7 @@
           },
           {
             "id": 8,
-            "text_ja": "そこでは、彼の書いた原稿や手紙の展示をしていた。",
+            "text_ja": "そこでは、彼の書いた原稿(注1)や手紙の展示(注2)をしていた。",
             "ruby_html": "そこでは、<ruby>彼<rt>かれ</rt></ruby>の<ruby>書<rt>か</rt></ruby>いた<ruby>原稿<rt>げんこう</rt></ruby>(注1)や<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>展示<rt>てんじ</rt></ruby>(注2)をしていた。",
             "text_en": "There on display were manuscripts and personal letters written in his own hand."
           },
@@ -658,7 +661,8 @@
             "detail": "パソコンばかり使っていたが、下手でも心を込めて手書きで伝えることの大切さに気づいた。",
             "en": "Conclusion: A personal commitment to handwrite with feeling despite imperfect penmanship."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>作者<rt>さくしゃ</rt></ruby>の<ruby>心<rt>こころ</rt></ruby>の<ruby>動<rt>うご</rt></ruby>き（<ruby>期待<rt>きたい</rt></ruby>→<ruby>物足<rt>ものた</rt></ruby>りなさ→<ruby>原稿<rt>げんこう</rt></ruby>との<ruby>出会<rt>であ</rt></ruby>いによる<ruby>強<rt>つよ</rt></ruby>い<ruby>感動<rt>かんどう</rt></ruby>→<ruby>手書<rt>てが</rt></ruby>き<ruby>文字<rt>もじ</rt></ruby>への<ruby>新<rt>あら</rt></ruby>たな<ruby>気<rt>き</rt></ruby>づき）を<ruby>時系列<rt>じけいれつ</rt></ruby>に<ruby>沿<rt>そ</rt></ruby>って<ruby>追<rt>お</rt></ruby>うエッセイです。<ruby>指示語<rt>しじご</rt></ruby>「それ<ruby>以来<rt>いらい</rt></ruby>」の<ruby>指<rt>さ</rt></ruby>す<ruby>内容<rt>ないよう</rt></ruby>や、<ruby>文章全体<rt>ぶんしょうぜんたい</rt></ruby>の<ruby>主眼<rt>しゅがん</rt></ruby>（<ruby>手書<rt>てが</rt></ruby>きの<ruby>価値<rt>かち</rt></ruby>）を<ruby>問<rt>と</rt></ruby>う<ruby>標準的<rt>ひょうじゅんてき</rt></ruby>な<ruby>読解<rt>どくかい</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>です。"
       },
       "testAdvice": {
         "point_ja": "エッセイの設問では、筆者の「最終的な心情の変化・気づき」が正解の核になることが多いです。",
@@ -681,7 +685,8 @@
       "preReading": {
         "question_ja": "最近誰かに本をおすすめされたことはありますか。どんな本でしたか。",
         "question_en": "Has anyone recommended a book to you recently? What kind of book was it?",
-        "question_zh": "最近有人向你推荐过书吗？是什么样的书？"
+        "question_zh": "最近有人向你推荐过书吗？是什么样的书？",
+        "question_ja_ruby": "<ruby>最近<rt>さいきん</rt></ruby><ruby>誰<rt>だれ</rt></ruby>かに<ruby>本<rt>ほん</rt></ruby>をおすすめされたことはありますか。どんな<ruby>本<rt>ほん</rt></ruby>でしたか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章は『花屋ダイヤリー』という小説についての紹介である。文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -715,7 +720,7 @@
           },
           {
             "id": 5,
-            "text_ja": "『花屋ダイヤリー』では、学校にも行かず仕事もしない17歳のユウが主人公です。",
+            "text_ja": "『花屋ダイヤリー』では、学校にも行かず仕事もしない17歳のユウが主人公(注1)です。",
             "ruby_html": "『<ruby>花屋<rt>はなや</rt></ruby>ダイヤリー』では、<ruby>学校<rt>がっこう</rt></ruby>にも<ruby>行<rt>い</rt></ruby>かず<ruby>仕事<rt>しごと</rt></ruby>もしない17<ruby>歳<rt>さい</rt></ruby>のユウが<ruby>主人公<rt>しゅじんこう</rt></ruby>(注1)です。",
             "text_en": "In 'Florist Diary', the protagonist is Yuu, a 17-year-old who neither attends school nor works."
           },
@@ -757,13 +762,13 @@
           },
           {
             "id": 12,
-            "text_ja": "それは作者から読者へのエールでもあります。",
+            "text_ja": "それは作者から読者へのエール(注2)でもあります。",
             "ruby_html": "それは<ruby>作者<rt>さくしゃ</rt></ruby>から<ruby>読者<rt>どくしゃ</rt></ruby>へのエール(注2)でもあります。",
             "text_en": "In that sense, it serves as a cheer of encouragement from the author to the reader."
           },
           {
             "id": 13,
-            "text_ja": "また、たくさんの花の名前と花言葉が紹介されているので、だれかに花を贈るときに役に立つ知識も得られます。",
+            "text_ja": "また、たくさんの花の名前と花言葉(注3)が紹介されているので、だれかに花を贈るときに役に立つ知識も得られます。",
             "ruby_html": "また、たくさんの<ruby>花<rt>はな</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>と<ruby>花言葉<rt>はなことば</rt></ruby>(注3)が<ruby>紹介<rt>しょうかい</rt></ruby>されているので、だれかに<ruby>花<rt>はな</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>るときに<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>知識<rt>ちしき</rt></ruby>も<ruby>得<rt>え</rt></ruby>られます。",
             "text_en": "Moreover, because numerous flower names and the 'language of flowers' are introduced, readers can gain practical insight useful when gifting flowers."
           },
@@ -997,7 +1002,8 @@
             "detail": "働くことで人は変われるというエール。同世代の若者におすすめの一冊。",
             "en": "Takeaway: An encouraging message that people can grow through interpersonal connection."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>紹介文<rt>しょうかいぶん</rt></ruby>（ブックレビュー）では、「<ruby>舞台<rt>ぶたい</rt></ruby>・<ruby>登場人物<rt>とうじょうじんぶつ</rt></ruby>の<ruby>境遇<rt>きょうぐう</rt></ruby>」「<ruby>主人公<rt>しゅじんこう</rt></ruby>の<ruby>葛藤<rt>かっとう</rt></ruby>・<ruby>変化<rt>へんか</rt></ruby>」「<ruby>作品<rt>さくひん</rt></ruby>の<ruby>魅力<rt>みりょく</rt></ruby>や<ruby>読者<rt>どくしゃ</rt></ruby>へのメッセージ」という<ruby>三部<rt>さんぶ</rt></ruby><ruby>構成<rt>こうせい</rt></ruby>を<ruby>把握<rt>はあく</rt></ruby>することが<ruby>重要<rt>じゅうよう</rt></ruby>です。<ruby>設問<rt>せつもん</rt></ruby>もこのストーリーラインとテーマに<ruby>沿<rt>そ</rt></ruby>って<ruby>出題<rt>しゅつだい</rt></ruby>されています。"
       },
       "testAdvice": {
         "point_ja": "書評・紹介文では、「作者が一番伝えたいこと」は主人公の変化のプロセスとその背後にある人間的成長のテーマに着目して選びましょう。",
@@ -1020,7 +1026,8 @@
       "preReading": {
         "question_ja": "スーパーやコンビニの割引券を使ったことがありますか。",
         "question_en": "Have you ever used discount coupons at supermarkets or convenience stores?",
-        "question_zh": "你在超市或便利店用过打折券吗？"
+        "question_zh": "你在超市或便利店用过打折券吗？",
+        "question_ja_ruby": "スーパーやコンビニの<ruby>割引券<rt>わりびきけん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>ったことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1219,7 +1226,8 @@
             "detail": "チョコ・ドーナツ（2日〜14日）、アイス・コーヒー（15日〜28日）",
             "en": "Item dates: Chocolate & Donuts (2nd–14th), Ice cream & Coffee (15th–28th)."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>情報検索<rt>じょうほうけんさく</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>の<ruby>基本<rt>きほん</rt></ruby>は、<ruby>質問<rt>しつもん</rt></ruby><ruby>文<rt>ぶん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>（<ruby>日付<rt>ひづけ</rt></ruby>・<ruby>時間<rt>じかん</rt></ruby>・<ruby>対象<rt>たいしょう</rt></ruby><ruby>商品<rt>しょうひん</rt></ruby>・<ruby>数量<rt>すうりょう</rt></ruby>）を<ruby>明確<rt>めいかく</rt></ruby>にし、<ruby>広告<rt>こうこく</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby><ruby>枠<rt>わく</rt></ruby>（<ruby>対象期間<rt>たいしょうきかん</rt></ruby>、<ruby>利用可能<rt>りようかのう</rt></ruby><ruby>時間<rt>じかん</rt></ruby>、<ruby>使用制限<rt>しようせいげん</rt></ruby><ruby>事項<rt>じこう</rt></ruby>）と<ruby>照<rt>て</rt></ruby>らし<ruby>合<rt>あ</rt></ruby>わせることです。<ruby>特<rt>とく</rt></ruby>に「1<ruby>枚<rt>まい</rt></ruby>につき1<ruby>個<rt>こ</rt></ruby>」「お<ruby>一人<rt>ひとり</rt></ruby><ruby>様<rt>さま</rt></ruby>1<ruby>枚<rt>まい</rt></ruby><ruby>限<rt>かぎ</rt></ruby>り」などの<ruby>注記<rt>ちゅうき</rt></ruby>（<ruby>米印<rt>こめじるし</rt></ruby>・アスタリスク）を<ruby>見落<rt>みお</rt></ruby>とさないようにしましょう。"
       },
       "testAdvice": {
         "point_ja": "数量と制限に注意！2個買っても割引券が1枚なら、引かれるのは1個分のみです。",
@@ -1242,7 +1250,8 @@
       "preReading": {
         "question_ja": "日本でアルバイトを探すとき、どんな条件を重視しますか。",
         "question_en": "What conditions do you focus on when looking for a part-time job in Japan?",
-        "question_zh": "在日本找兼职时，你最看重哪些条件？"
+        "question_zh": "在日本找兼职时，你最看重哪些条件？",
+        "question_ja_ruby": "<ruby>日本<rt>にっぽん</rt></ruby>でアルバイトを<ruby>探<rt>さが</rt></ruby>すとき、どんな<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>重視<rt>じゅうし</rt></ruby>しますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章は求人募集広告である。右の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1460,7 +1469,8 @@
             "detail": "電話のうえ、写真付き履歴書持参で面接",
             "en": "Procedure: Call in advance, attend interview with photo résumé."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>求人広告<rt>きゅうじんこうこく</rt></ruby>では、<ruby>勤務<rt>きんむ</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>（<ruby>日数<rt>にっすう</rt></ruby>・<ruby>時間帯<rt>じかんたい</rt></ruby>・<ruby>時給<rt>じきゅう</rt></ruby>）の<ruby>掛<rt>か</rt></ruby>け<ruby>算<rt>ざん</rt></ruby><ruby>計算問題<rt>けいさんもんだい</rt></ruby>と、<ruby>応募資格<rt>おうぼしかく</rt></ruby>（<ruby>対象者<rt>たいしょうしゃ</rt></ruby>・<ruby>除外<rt>じょがい</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>・<ruby>経験<rt>けいけん</rt></ruby><ruby>不問<rt>ふもん</rt></ruby>など）のフィルタリング<ruby>問題<rt>もんだい</rt></ruby>が<ruby>頻出<rt>ひんしゅつ</rt></ruby>します。カッコ<ruby>書<rt>か</rt></ruby>きの「<ruby>高校生<rt>こうこうせい</rt></ruby>は<ruby>不可<rt>ふか</rt></ruby>」のような<ruby>除外<rt>じょがい</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>に<ruby>特<rt>とく</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>しましょう。"
       },
       "testAdvice": {
         "point_ja": "シフトごとの時給の違いと、1日の実働時間を正しく計算しましょう。",
@@ -1483,7 +1493,8 @@
       "preReading": {
         "question_ja": "アパートを借りるとき、家賃以外にどんな費用がかかるか知っていますか。",
         "question_en": "Do you know what expenses are required besides monthly rent when renting an apartment?",
-        "question_zh": "租公寓时，除了房租之外还需要哪些费用，你知道吗？"
+        "question_zh": "租公寓时，除了房租之外还需要哪些费用，你知道吗？",
+        "question_ja_ruby": "アパートを<ruby>借<rt>か</rt></ruby>りるとき、<ruby>家賃<rt>やちん</rt></ruby><ruby>以外<rt>いがい</rt></ruby>にどんな<ruby>費用<rt>ひよう</rt></ruby>がかかるか<ruby>知<rt>し</rt></ruby>っていますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1689,7 +1700,8 @@
             "detail": "ワンルーム19.84m²、南向きベランダ、浴室あり、ペット相談可",
             "en": "Layout: 19.84m² studio, south veranda, bath included, pets negotiable."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>不動産<rt>ふどうさん</rt></ruby><ruby>広告<rt>こうこく</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>では、<ruby>初期<rt>しょき</rt></ruby><ruby>費用<rt>ひよう</rt></ruby>（<ruby>家賃<rt>やちん</rt></ruby>＋<ruby>敷金<rt>しききん</rt></ruby>＋<ruby>礼金<rt>れいきん</rt></ruby>＋<ruby>仲介手数料<rt>ちゅうかいてすうりょう</rt></ruby><ruby>等<rt>など</rt></ruby>）の<ruby>内訳<rt>うちわけ</rt></ruby><ruby>合算<rt>がっさん</rt></ruby>と、<ruby>間取<rt>まど</rt></ruby>り<ruby>図<rt>ず</rt></ruby>の<ruby>方角<rt>ほうがく</rt></ruby>（<ruby>方位<rt>ほうい</rt></ruby><ruby>記号<rt>きごう</rt></ruby>N）・<ruby>設備<rt>せつび</rt></ruby><ruby>表示<rt>ひょうじ</rt></ruby>を<ruby>照合<rt>しょうごう</rt></ruby>する<ruby>読解力<rt>どっかいりょく</rt></ruby>が<ruby>試<rt>ため</rt></ruby>されます。"
       },
       "testAdvice": {
         "point_ja": "間取り図の方位記号（Nの矢印）を確認し、部屋の開口部（ベランダや窓）がどの方角を向いているか把握しましょう。",
@@ -1712,7 +1724,8 @@
       "preReading": {
         "question_ja": "地域の文化センターやサークルの講座に参加したことがありますか。",
         "question_en": "Have you ever taken part in community center or club culture courses?",
-        "question_zh": "你参加过社区文化中心或社团的课程吗？"
+        "question_zh": "你参加过社区文化中心或社团的课程吗？",
+        "question_ja_ruby": "<ruby>地域<rt>ちいき</rt></ruby>の<ruby>文化<rt>ぶんか</rt></ruby>センターやサークルの<ruby>講座<rt>こうざ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>したことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "右のページの文章は文化講座の案内パンフレットである。これを読んで下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -1875,7 +1888,8 @@
             "detail": "3日前までにメール/ネット予約、定員8名先着順",
             "en": "Booking: Online reserve >=3 days ahead, 8 people first-come basis."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>案内<rt>あんない</rt></ruby>パンフレットの<ruby>読解<rt>どくかい</rt></ruby>では、<ruby>対象<rt>たいしょう</rt></ruby><ruby>講座<rt>こうざ</rt></ruby>がどのカテゴリ（<ruby>語学<rt>ごがく</rt></ruby>か<ruby>日本文化<rt>にほんぶんか</rt></ruby>か）に<ruby>分類<rt>ぶんるい</rt></ruby>されるかを<ruby>特定<rt>とくてい</rt></ruby>した<ruby>上<rt>うえ</rt></ruby>で、<ruby>会員割引<rt>かいいんわりびき</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>を<ruby>適用<rt>てきよう</rt></ruby>します。また、<ruby>締切<rt>しめきり</rt></ruby><ruby>計算<rt>けいさん</rt></ruby>（〜<ruby>日前<rt>にちまえ</rt></ruby>）と<ruby>受付<rt>うけつけ</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>（ネットか<ruby>電話<rt>でんわ</rt></ruby>か<ruby>窓口<rt>まどぐち</rt></ruby>か）の<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせを<ruby>正確<rt>せいかく</rt></ruby>に<ruby>見極<rt>みきわ</rt></ruby>めましょう。"
       },
       "testAdvice": {
         "point_ja": "「3日前までに」の日付計算と「ネット予約」という指定手段をセットで確認しましょう。",
@@ -1898,7 +1912,8 @@
       "preReading": {
         "question_ja": "外食するとき、予算や営業時間、定休日はどのように調べますか。",
         "question_en": "How do you check budget, business hours, and regular holidays when dining out?",
-        "question_zh": "外出就餐时，你通常如何查看预算、营业时间和休息日？"
+        "question_zh": "外出就餐时，你通常如何查看预算、营业时间和休息日？",
+        "question_ja_ruby": "<ruby>外食<rt>がいしょく</rt></ruby>するとき、<ruby>予算<rt>よさん</rt></ruby>や<ruby>営業時間<rt>えいぎょうじかん</rt></ruby>、<ruby>定休日<rt>ていきゅうび</rt></ruby>はどのように<ruby>調<rt>しら</rt></ruby>べますか。"
       },
       "passageInstructions": {
         "instruction_ja": "右のページはレストランの案内である。これを読んで、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2060,7 +2075,8 @@
             "detail": "中華料理、火曜休",
             "en": "Li An: Chinese, closed Tue."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>飲食店<rt>いんしょくてん</rt></ruby><ruby>比較<rt>ひかく</rt></ruby>テーブルでは、<ruby>曜日<rt>ようび</rt></ruby>（<ruby>定休日<rt>ていきゅうび</rt></ruby>チェック）、<ruby>時間帯<rt>じかんたい</rt></ruby>（<ruby>昼夜<rt>ちゅうや</rt></ruby>の<ruby>営業時間<rt>えいぎょうじかん</rt></ruby><ruby>区分<rt>くぶん</rt></ruby>）、<ruby>料理<rt>りょうり</rt></ruby>ジャンル（<ruby>和食<rt>わしょく</rt></ruby>・<ruby>洋食<rt>ようしょく</rt></ruby>・<ruby>中華<rt>ちゅうか</rt></ruby>）、<ruby>予算<rt>よさん</rt></ruby>の4<ruby>軸<rt>じく</rt></ruby>を<ruby>素早<rt>すばや</rt></ruby>く<ruby>消去法<rt>しょうきょほう</rt></ruby>で<ruby>絞<rt>しぼ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>みます。"
       },
       "testAdvice": {
         "point_ja": "定休日を最初にチェックすると候補を劇的に減らすことができます。",
@@ -2083,7 +2099,8 @@
       "preReading": {
         "question_ja": "デリバリーやお弁当の宅配を頼むとき、配達料や受付時間に注意したことがありますか。",
         "question_en": "Have you ever paid attention to delivery fees and order cutoff times when ordering food delivery?",
-        "question_zh": "点外卖或便当送餐时，你注意过配送费和接单时间吗？"
+        "question_zh": "点外卖或便当送餐时，你注意过配送费和接单时间吗？",
+        "question_ja_ruby": "デリバリーやお<ruby>弁当<rt>べんとう</rt></ruby>の<ruby>宅配<rt>たくはい</rt></ruby>を<ruby>頼<rt>たの</rt></ruby>むとき、<ruby>配達<rt>はいたつ</rt></ruby><ruby>料<rt>りょう</rt></ruby>や<ruby>受付時間<rt>うけつけじかん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>したことがありますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章は宅配用のメニューである。右の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2289,7 +2306,8 @@
             "detail": "10個以上は前日までに注文必須",
             "en": "Large orders: 10 items or more require booking by previous day."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>宅配<rt>たくはい</rt></ruby>メニューでは、セット<ruby>割引<rt>わりびき</rt></ruby>（セットドリンク100<ruby>円<rt>えん</rt></ruby>）＋<ruby>追加<rt>ついか</rt></ruby><ruby>配達<rt>はいたつ</rt></ruby><ruby>料<rt>りょう</rt></ruby>（1,000<ruby>円<rt>えん</rt></ruby><ruby>未満<rt>みまん</rt></ruby>は＋200<ruby>円<rt>えん</rt></ruby>）の<ruby>二重<rt>にじゅう</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby><ruby>計算<rt>けいさん</rt></ruby>、および<ruby>大量<rt>たいりょう</rt></ruby><ruby>注文時<rt>ちゅうもんじ</rt></ruby>（10<ruby>個<rt>こ</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>は<ruby>前日<rt>ぜんじつ</rt></ruby><ruby>締切<rt>しめきり</rt></ruby>）と<ruby>曜日別<rt>ようびべつ</rt></ruby><ruby>営業時間<rt>えいぎょうじかん</rt></ruby>（<ruby>土日<rt>どにち</rt></ruby><ruby>祝<rt>しゅく</rt></ruby>は19:30<ruby>受付<rt>うけつけ</rt></ruby><ruby>終了<rt>しゅうりょう</rt></ruby>）の<ruby>複合<rt>ふくごう</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby><ruby>判定<rt>はんてい</rt></ruby>がポイントです。"
       },
       "testAdvice": {
         "point_ja": "曜日によって受付終了時間が異なる点（平日は20:30、土日祝は19:30）を絶対に見落とさないこと！",
@@ -2312,7 +2330,8 @@
       "preReading": {
         "question_ja": "毎月の公共料金や携帯代の請求書はどうやって支払っていますか。",
         "question_en": "How do you pay your monthly utility and mobile phone bills?",
-        "question_zh": "你通常如何缴纳每月的公共事业费和手机话费账单？"
+        "question_zh": "你通常如何缴纳每月的公共事业费和手机话费账单？",
+        "question_ja_ruby": "<ruby>毎月<rt>まいつき</rt></ruby>の<ruby>公共<rt>こうきょう</rt></ruby><ruby>料金<rt>りょうきん</rt></ruby>や<ruby>携帯<rt>けいたい</rt></ruby><ruby>代<rt>だい</rt></ruby>の<ruby>請求書<rt>せいきゅうしょ</rt></ruby>はどうやって<ruby>支払<rt>しはら</rt></ruby>っていますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2524,7 +2543,8 @@
             "detail": "クレカなし、口座振替未設定→現金支払いを選択",
             "en": "Character condition: No credit card, no auto-debit setup -> Choose cash."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>請求書<rt>せいきゅうしょ</rt></ruby>では、「<ruby>利用期間<rt>りようきかん</rt></ruby>」「<ruby>発行日<rt>はっこうび</rt></ruby>」「<ruby>支払<rt>しはらい</rt></ruby><ruby>期限<rt>きげん</rt></ruby>」「<ruby>自動<rt>じどう</rt></ruby><ruby>振替日<rt>ふりかえび</rt></ruby>」など<ruby>複数<rt>ふくすう</rt></ruby>の<ruby>日付<rt>ひづけ</rt></ruby>が<ruby>登場<rt>とうじょう</rt></ruby>します。<ruby>質問<rt>しつもん</rt></ruby>が<ruby>求<rt>もと</rt></ruby>めているのが「<ruby>期日<rt>きじつ</rt></ruby>（デッドライン）」なのか「<ruby>手段<rt>しゅだん</rt></ruby>（<ruby>支払<rt>しはら</rt></ruby>い<ruby>方法<rt>ほうほう</rt></ruby>）」なのかを<ruby>峻別<rt>しゅんべつ</rt></ruby>し、<ruby>人物<rt>じんぶつ</rt></ruby>の<ruby>保有<rt>ほゆう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>（クレカ<ruby>有無<rt>うむ</rt></ruby>、<ruby>口座振替<rt>こうざふりかえ</rt></ruby><ruby>有無<rt>うむ</rt></ruby>）に<ruby>合<rt>あ</rt></ruby>わせて<ruby>最適<rt>さいてき</rt></ruby>な<ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>選<rt>えら</rt></ruby>びましょう。"
       },
       "testAdvice": {
         "point_ja": "日付の混同に注意！「発行日」「振替日」「支払い期限」の区別を正確につけましょう。",
@@ -2547,7 +2567,8 @@
       "preReading": {
         "question_ja": "電化製品やスポーツ用品を買ったとき、保証書の期間や条件を確認しますか。",
         "question_en": "Do you check the warranty period and coverage conditions when purchasing electronics or sports goods?",
-        "question_zh": "购买家电或体育用品时，你会查看保修期和保修条款吗？"
+        "question_zh": "购买家电或体育用品时，你会查看保修期和保修条款吗？",
+        "question_ja_ruby": "<ruby>電化製品<rt>でんかせいひん</rt></ruby>やスポーツ<ruby>用品<rt>ようひん</rt></ruby>を<ruby>買<rt>か</rt></ruby>ったとき、<ruby>保証書<rt>ほしょうしょ</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>や<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>しますか。"
       },
       "passageInstructions": {
         "instruction_ja": "右のページの文章は保証書である。下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2741,7 +2762,8 @@
             "detail": "湿気放置、重い物を載せる、ボール打球以外は免責",
             "en": "Exclusions: High humidity storage, heavy load, improper use."
           }
-        ]
+        ],
+        "text_ja_ruby": "<ruby>保証書<rt>ほしょうしょ</rt></ruby>では<ruby>品目<rt>ひんもく</rt></ruby>（テニス、<ruby>卓球<rt>たっきゅう</rt></ruby>、バドミントン）ごとの<ruby>保証<rt>ほしょう</rt></ruby><ruby>月数<rt>げっすう</rt></ruby>の<ruby>違<rt>ちが</rt></ruby>い、および「<ruby>通常使用<rt>つうじょうしよう</rt></ruby>による<ruby>故障<rt>こしょう</rt></ruby>（<ruby>無償<rt>むしょう</rt></ruby><ruby>保証<rt>ほしょう</rt></ruby>）」と「<ruby>不適切<rt>ふてきせつ</rt></ruby><ruby>使用<rt>しよう</rt></ruby>・<ruby>保管<rt>ほかん</rt></ruby>ミス・<ruby>天災<rt>てんさい</rt></ruby>による<ruby>免責<rt>めんせき</rt></ruby>（<ruby>有償<rt>ゆうしょう</rt></ruby>または<ruby>不可<rt>ふか</rt></ruby>）」の<ruby>境界<rt>きょうかい</rt></ruby>を<ruby>正確<rt>せいかく</rt></ruby>に<ruby>読<rt>よ</rt></ruby>み<ruby>解<rt>と</rt></ruby>くことが<ruby>要点<rt>ようてん</rt></ruby>です。"
       },
       "testAdvice": {
         "point_ja": "品目ごとの保証期間の違い（ピンポン6か月、バドミントン3か月、テニス9か月）を正しく参照しましょう。",
@@ -2764,7 +2786,8 @@
       "preReading": {
         "question_ja": "映画館で映画を見るとき、上映時間や映画の内容をどのように確認しますか。",
         "question_en": "When watching a movie at a cinema, how do you verify showtimes and synopses?",
-        "question_zh": "去电影院看电影时，你通常如何确认上映时间和剧情简介？"
+        "question_zh": "去电影院看电影时，你通常如何确认上映时间和剧情简介？",
+        "question_ja_ruby": "<ruby>映画館<rt>えいがかん</rt></ruby>で<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>るとき、<ruby>上映時間<rt>じょうえいじかん</rt></ruby>や<ruby>映画<rt>えいが</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>をどのように<ruby>確認<rt>かくにん</rt></ruby>しますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章は、映画館のホームページである。右のページの質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -2928,7 +2951,8 @@
             "detail": "15:00〜18:00に完全に収まる＝「猫と一郎」（15:15〜17:00）",
             "en": "Time match: Entirely within 15:00-18:00 = 'Cat and Ichiro' (15:15-17:00)."
           }
-        ]
+        ],
+        "text_ja_ruby": "タイムテーブル<ruby>読解<rt>どくかい</rt></ruby>では、あらすじ（<ruby>映画<rt>えいが</rt></ruby><ruby>紹介<rt>しょうかい</rt></ruby>）から<ruby>条件<rt>じょうけん</rt></ruby>に<ruby>合<rt>あ</rt></ruby>う<ruby>作品名<rt>さくひんめい</rt></ruby>を<ruby>特定<rt>とくてい</rt></ruby>するステップと、<ruby>利用可能<rt>りようかのう</rt></ruby><ruby>時間帯<rt>じかんたい</rt></ruby>（<ruby>開始時刻<rt>かいしじこく</rt></ruby>≧<ruby>滞在<rt>たいざい</rt></ruby><ruby>開始<rt>かいし</rt></ruby>、<ruby>終了時刻<rt>しゅうりょうじこく</rt></ruby>≦<ruby>滞在<rt>たいざい</rt></ruby><ruby>終了<rt>しゅうりょう</rt></ruby>）に<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>収<rt>おさ</rt></ruby>まるスロットを<ruby>照合<rt>しょうごう</rt></ruby>するステップを<ruby>連動<rt>れんどう</rt></ruby>させて<ruby>解<rt>と</rt></ruby>きます。"
       },
       "testAdvice": {
         "point_ja": "途中入場や途中退出は不可（「初めから終わりまで」）なので、開始・終了の両方が時間枠内に収まるか必ず確認しましょう。",
@@ -2951,7 +2975,8 @@
       "preReading": {
         "question_ja": "就職活動や面接の案内メールで、どのような注意事項が書かれていますか。",
         "question_en": "What precautions and instructions are typically written in job hunt or briefing confirmation emails?",
-        "question_zh": "在求职或面试的确认邮件中，通常会写明哪些注意事项？"
+        "question_zh": "在求职或面试的确认邮件中，通常会写明哪些注意事项？",
+        "question_ja_ruby": "<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>や<ruby>面接<rt>めんせつ</rt></ruby>の<ruby>案内<rt>あんない</rt></ruby>メールで、どのような<ruby>注意事項<rt>ちゅういじこう</rt></ruby>が<ruby>書<rt>か</rt></ruby>かれていますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章と右のページのメールを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -3151,7 +3176,8 @@
             "detail": "前日まで＝HPでキャンセル、当日＝電話で連絡",
             "en": "Reschedule rule: By prior day = Web cancel; Same day = Call recruitment."
           }
-        ]
+        ],
+        "text_ja_ruby": "ビジネス<ruby>案内<rt>あんない</rt></ruby>メールでは、「<ruby>事前<rt>じぜん</rt></ruby><ruby>対応<rt>たいおう</rt></ruby>（<ruby>前日<rt>ぜんじつ</rt></ruby>まで・Web）」と「<ruby>緊急<rt>きんきゅう</rt></ruby><ruby>対応<rt>たいおう</rt></ruby>（<ruby>当日<rt>とうじつ</rt></ruby>・<ruby>電話<rt>でんわ</rt></ruby>）」の<ruby>手続<rt>てつづ</rt></ruby>きの<ruby>分岐<rt>ぶんき</rt></ruby>を<ruby>峻別<rt>しゅんべつ</rt></ruby>することが<ruby>頻出<rt>ひんしゅつ</rt></ruby>テーマです。また<ruby>所要時間<rt>しょようじかん</rt></ruby>（<ruby>駅<rt>えき</rt></ruby>からの<ruby>徒歩<rt>とほ</rt></ruby><ruby>時間<rt>じかん</rt></ruby>＋<ruby>受付開始<rt>うけつけかいし</rt></ruby><ruby>時間<rt>じかん</rt></ruby>）の<ruby>逆算<rt>ぎゃくさん</rt></ruby><ruby>問題<rt>もんだい</rt></ruby>も<ruby>重要<rt>じゅうよう</rt></ruby>です。"
       },
       "testAdvice": {
         "point_ja": "「前日まで」と「当日」で連絡手段が異なる点に注目しましょう。",
@@ -3174,7 +3200,8 @@
       "preReading": {
         "question_ja": "メールマガジンで読みたい記事やイベント情報はどのように探しますか。",
         "question_en": "How do you find interesting articles or event information in email newsletters?",
-        "question_zh": "在电子杂志中，你通常如何查找感兴趣的文章或活动信息？"
+        "question_zh": "在电子杂志中，你通常如何查找感兴趣的文章或活动信息？",
+        "question_ja_ruby": "メールマガジンで<ruby>読<rt>よ</rt></ruby>みたい<ruby>記事<rt>きじ</rt></ruby>やイベント<ruby>情報<rt>じょうほう</rt></ruby>はどのように<ruby>探<rt>さが</rt></ruby>しますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章はメールマガジンである。文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -3386,7 +3413,8 @@
             "detail": "購読解除用リンク（resign.htm）",
             "en": "(3) Unsubscribe: Resign link."
           }
-        ]
+        ],
+        "text_ja_ruby": "メールマガジンの<ruby>問題<rt>もんだい</rt></ruby>では、<ruby>本文中<rt>ほんぶんちゅう</rt></ruby>の<ruby>各種<rt>かくしゅ</rt></ruby>URLリンク（<ruby>申込<rt>もうしこみ</rt></ruby><ruby>用<rt>よう</rt></ruby>、<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせ<ruby>用<rt>よう</rt></ruby>、<ruby>配信<rt>はいしん</rt></ruby><ruby>停止<rt>ていし</rt></ruby><ruby>用<rt>よう</rt></ruby>）の<ruby>役割<rt>やくわり</rt></ruby>を<ruby>正<rt>ただ</rt></ruby>しく<ruby>識別<rt>しきべつ</rt></ruby>することが<ruby>核心<rt>かくしん</rt></ruby>です。「<ruby>配信<rt>はいしん</rt></ruby><ruby>専用<rt>せんよう</rt></ruby>アドレス」には<ruby>返信<rt>へんしん</rt></ruby>できないというルールも<ruby>頻出<rt>ひんしゅつ</rt></ruby>の<ruby>確認<rt>かくにん</rt></ruby>ポイントです。"
       },
       "testAdvice": {
         "point_ja": "URLの末尾（shinnen, mail, resign）の単語からもリンクの役割を推測できます。",
@@ -3409,7 +3437,8 @@
       "preReading": {
         "question_ja": "ネットショッピングで買った商品が壊れていたとき、どのように対応しますか。",
         "question_en": "How do you respond when a product purchased online arrives broken or defective?",
-        "question_zh": "网购的商品如果有破损或瑕疵，你通常会如何处理？"
+        "question_zh": "网购的商品如果有破损或瑕疵，你通常会如何处理？",
+        "question_ja_ruby": "ネットショッピングで<ruby>買<rt>か</rt></ruby>った<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>壊<rt>こわ</rt></ruby>れていたとき、どのように<ruby>対応<rt>たいおう</rt></ruby>しますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章を読んで、質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -3646,7 +3675,8 @@
             "detail": "口座情報を返信メールで連絡→商品到着後に振込",
             "en": "Refund step: Reply with bank info -> refund transferred upon arrival."
           }
-        ]
+        ],
+        "text_ja_ruby": "カスタマーサービスの<ruby>返信<rt>へんしん</rt></ruby>メールでは、「<ruby>送料負担<rt>そうりょうふたん</rt></ruby>の<ruby>区分<rt>くぶん</rt></ruby>（<ruby>着払<rt>ちゃくばら</rt></ruby>い＝<ruby>受取人<rt>うけとりにん</rt></ruby><ruby>払<rt>はら</rt></ruby>い／<ruby>元<rt>もと</rt></ruby><ruby>払<rt>はら</rt></ruby>い＝<ruby>送<rt>おく</rt></ruby>り<ruby>主<rt>ぬし</rt></ruby><ruby>払<rt>はら</rt></ruby>い）」と「<ruby>返金<rt>へんきん</rt></ruby>のトリガー<ruby>条件<rt>じょうけん</rt></ruby>（<ruby>商品<rt>しょうひん</rt></ruby><ruby>到着後<rt>とうちゃくご</rt></ruby>に<ruby>指定口座<rt>していこうざ</rt></ruby>へ<ruby>振込<rt>ふりこみ</rt></ruby>）」の<ruby>流<rt>なが</rt></ruby>れを<ruby>正確<rt>せいかく</rt></ruby>に<ruby>把握<rt>はあく</rt></ruby>することが<ruby>重要<rt>じゅうよう</rt></ruby>です。"
       },
       "testAdvice": {
         "point_ja": "「着払い」（荷物を受け取る側が送料を払う）の意味を必ず覚えておきましょう。",
@@ -3669,7 +3699,8 @@
       "preReading": {
         "question_ja": "棒グラフや折れ線グラフを見るとき、年代による変化をどう比べますか。",
         "question_en": "When looking at bar or line charts, how do you compare chronological changes over different eras?",
-        "question_zh": "查看柱状图或折线图时，你通常如何比较不同年份的变化？"
+        "question_zh": "查看柱状图或折线图时，你通常如何比较不同年份的变化？",
+        "question_ja_ruby": "<ruby>棒<rt>ぼう</rt></ruby>グラフや<ruby>折<rt>お</rt></ruby>れ<ruby>線<rt>せん</rt></ruby>グラフを<ruby>見<rt>み</rt></ruby>るとき、<ruby>年代<rt>ねんだい</rt></ruby>による<ruby>変化<rt>へんか</rt></ruby>をどう<ruby>比<rt>くら</rt></ruby>べますか。"
       },
       "passageInstructions": {
         "instruction_ja": "つぎの文章と右のページのグラフを見て、下の質問に答えなさい。答えは、1・2・3・4から最もよいものを一つえらびなさい。",
@@ -3680,7 +3711,7 @@
           {
             "id": 1,
             "text_ja": "右のグラフは、好きな動物について日本人3,600人を対象に行った調査の結果である。1983年と2007年の調査結果のうち、上位1位から8位までを示している。",
-            "ruby_html": "<ruby>右<rt>みぎ</rt></ruby>のグラフは、<ruby>好<rt>す</rt></ruby>きな<ruby>動物<rt>どうぶつ</rt></ruby>について<ruby>日本人<rt>にほんじん</rt></ruby>3,600<ruby>人<rt>にん</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>った<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>である。1983<ruby>年<rt>ねん</rt></ruby>と2007<ruby>年<rt>ねん</rt></ruby>の<ruby>調査結果<rt>ちょうさけっか</rt></ruby>のうち、<ruby>上位<rt>じょうい</rt></ruby>1<ruby>位<rt>い</rt></ruby>から8<ruby>位<rt>い</rt></ruby>までを<ruby>示<rt>しめ</rt></ruby>している。",
+            "ruby_html": "<ruby>右<rt>みぎ</rt></ruby>のグラフは、<ruby>好<rt>す</rt></ruby>きな<ruby>動物<rt>どうぶつ</rt></ruby>について<ruby>日本人<rt>にほんじん</rt></ruby>3,600<ruby>人<rt>にん</rt></ruby>を<ruby>対象<rt>たいしょう</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>った<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>結果<rt>けっか</rt></ruby>である。1983<ruby>年<rt>ねん</rt></ruby>と2007<ruby>年<rt>ねん</rt></ruby>の<ruby>調査結果<rt>ちょうさけっか</rt></ruby>のうち、<ruby>上位<rt>じょうい</rt></ruby><ruby>1位<rt>いちい</rt></ruby>から<ruby>8位<rt>はちい</rt></ruby>までを<ruby>示<rt>しめ</rt></ruby>している。",
             "text_en": "The graph on the right shows the results of a survey conducted among 3,600 Japanese people regarding their favorite animals. It displays the top 1st through 8th ranked animals in the 1983 and 2007 surveys."
           },
           {
@@ -3838,7 +3869,8 @@
             "detail": "コアラは51%→26%と明確に減少している",
             "en": "Trend check: Koala decreased from ~51% to ~26%."
           }
-        ]
+        ],
+        "text_ja_ruby": "グラフ・<ruby>図表<rt>ずひょう</rt></ruby><ruby>読解<rt>どくかい</rt></ruby>では、①<ruby>凡例<rt>はんれい</rt></ruby>（どの<ruby>色<rt>いろ</rt></ruby>の<ruby>棒<rt>ぼう</rt></ruby>がどの<ruby>年代<rt>ねんだい</rt></ruby>か）、②<ruby>縦軸<rt>たてじく</rt></ruby>の<ruby>単位<rt>たんい</rt></ruby>（％）、③<ruby>横軸<rt>よこじく</rt></ruby>の<ruby>項目<rt>こうもく</rt></ruby>と<ruby>順位<rt>じゅんい</rt></ruby>、④<ruby>差分<rt>さぶん</rt></ruby>（<ruby>増加<rt>ぞうか</rt></ruby>・<ruby>減少<rt>げんしょう</rt></ruby>・<ruby>変化量<rt>へんかりょう</rt></ruby>）を<ruby>素早<rt>すばや</rt></ruby>く<ruby>視覚的<rt>しかくてき</rt></ruby>に<ruby>照合<rt>しょうごう</rt></ruby>します。「<ruby>1位<rt>いちい</rt></ruby>」「<ruby>差<rt>さ</rt></ruby>が<ruby>最大<rt>さいだい</rt></ruby>」「<ruby>減少<rt>げんしょう</rt></ruby>している」といったキーワードをグラフから<ruby>正確<rt>せいかく</rt></ruby>に<ruby>拾<rt>ひろ</rt></ruby>いましょう。"
       },
       "testAdvice": {
         "point_ja": "1位は常に「犬」（62%／65%）です。「パンダが1位」などの引っかけに惑わされないように！",
