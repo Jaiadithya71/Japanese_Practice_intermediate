@@ -2145,7 +2145,7 @@ export function showWordGloss(term, anchorEl, reading) {
               <span class="vocab-kanji-chip" title="${kanji}: ${meanings.join(', ')}"><b class="font-ja">${kanji}</b> ${meanings.slice(0, 2).join(' / ')}</span>`).join('')}
           </div>
         </div>` : ''}
-      ${vocab.fallback ? '' : `
+      ${(vocab.fallback || vocab.extended) ? '' : `
         <div class="gloss-actions">
           <button class="btn btn-sm btn-primary" onclick="addActiveWordToMyWords()">
             <i class="fa-solid fa-plus"></i> Add to My Words
