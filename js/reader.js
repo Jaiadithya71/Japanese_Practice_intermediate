@@ -1239,6 +1239,17 @@ export function toggleStrategyFurigana() {
 
 export function startReadingPassage() {
   beginGistReviewSession();
+  if (readerRuntime.submitted) {
+    // Fresh attempt inside the same session (e.g. Timed practice from the
+    // book after Questions were graded): clear the graded state so the new
+    // run can be answered and scored, like Re-read Passage Now does.
+    readerRuntime.selectedAnswers = {};
+    state.readingAnswers = {};
+    readerRuntime.submitted = false;
+    state.readingQuizSubmitted = false;
+    readerRuntime.lastResults = null;
+    readerRuntime.elapsedSeconds = 0;
+  }
   readerRuntime.phase = 'read';
   readerRuntime.readStartTime = Date.now();
   startTimer();
@@ -1249,7 +1260,9 @@ export function startReadingPassage() {
 export function skipToQuestions() {
   beginGistReviewSession();
   stopTimer();
-  readerRuntime.phase = 'answer';
+  // Already graded this session: reopen the graded feedback instead of a
+  // locked answer sheet whose Check button can no longer fire.
+  readerRuntime.phase = (readerRuntime.submitted && readerRuntime.lastResults) ? 'review' : 'answer';
   renderWorkspace();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -1269,9 +1282,13 @@ function renderReadPhase(container) {
   container.innerHTML = `
     <div class="reading-workspace-shell">
       <div class="reading-nav-bar">
+        ${(readerRuntime.bookQueue || []).length ? `
+        <button class="btn btn-sm btn-ghost" onclick="returnToBook()">
+          <i class="fa-solid fa-book-open"></i> Back to Book
+        </button>` : `
         <button class="btn btn-sm btn-ghost" onclick="closeReadingWorkspace()">
           <i class="fa-solid fa-arrow-left"></i> Exit Passage
-        </button>
+        </button>`}
         <span class="dokkai-flow-badge"><i class="fa-solid fa-book-open"></i> Step 2: Read Passage</span>
       </div>
 
@@ -1596,9 +1613,13 @@ function renderAnswerPhase(container) {
   container.innerHTML = `
     <div class="reading-workspace-shell">
       <div class="reading-nav-bar">
+        ${(readerRuntime.bookQueue || []).length ? `
+        <button class="btn btn-sm btn-ghost" onclick="returnToBook()">
+          <i class="fa-solid fa-book-open"></i> Back to Book
+        </button>` : `
         <button class="btn btn-sm btn-ghost" onclick="returnToPassageReading()">
           <i class="fa-solid fa-book-open"></i> Read Passage Again
-        </button>
+        </button>`}
         <span class="dokkai-flow-badge"><i class="fa-solid fa-pen"></i> Step 3: Answer</span>
       </div>
 
@@ -1837,9 +1858,13 @@ function renderReviewPhase(container) {
     container.innerHTML = `
     <div class="reading-workspace-shell">
       <div class="reading-nav-bar">
+        ${(readerRuntime.bookQueue || []).length ? `
+        <button class="btn btn-sm btn-ghost" onclick="returnToBook()">
+          <i class="fa-solid fa-book-open"></i> Back to Book
+        </button>` : `
         <button class="btn btn-sm btn-ghost" onclick="closeReadingWorkspace()">
           <i class="fa-solid fa-arrow-left"></i> Return to All Passages
-        </button>
+        </button>`}
         <span class="dokkai-flow-badge"><i class="fa-solid fa-flag-checkered"></i> Step 4: Review</span>
       </div>
       <div class="reading-result-summary-card">
@@ -1871,9 +1896,13 @@ function renderReviewPhase(container) {
   container.innerHTML = `
     <div class="reading-workspace-shell">
       <div class="reading-nav-bar">
+        ${(readerRuntime.bookQueue || []).length ? `
+        <button class="btn btn-sm btn-ghost" onclick="returnToBook()">
+          <i class="fa-solid fa-book-open"></i> Back to Book
+        </button>` : `
         <button class="btn btn-sm btn-ghost" onclick="closeReadingWorkspace()">
           <i class="fa-solid fa-arrow-left"></i> Return to All Passages
-        </button>
+        </button>`}
         <span class="dokkai-flow-badge"><i class="fa-solid fa-flag-checkered"></i> Step 4: Review</span>
       </div>
 
@@ -1952,6 +1981,10 @@ function renderReviewPhase(container) {
       ` : ''}
 
       <div class="review-bottom-actions">
+        ${(readerRuntime.bookQueue || []).length ? `
+        <button class="btn btn-primary" onclick="returnToBook()">
+          <i class="fa-solid fa-book-open"></i> Back to Book (${(readerRuntime.bookIndex ?? 0) + 1}/${readerRuntime.bookQueue.length})
+        </button>` : ''}
         ${(readerRuntime.practiceIndex ?? -1) >= 0 && readerRuntime.practiceIndex < (readerRuntime.practiceQueue || []).length - 1 ? `
         <button class="btn btn-primary" onclick="practiceNextReadingLesson()">
           <i class="fa-solid fa-forward-step"></i> Next Lesson (${readerRuntime.practiceIndex + 2}/${readerRuntime.practiceQueue.length})
@@ -2021,8 +2054,15 @@ function renderReviewQuestionHTML(res, idx) {
 }
 
 export function resetReadingLesson() {
-  if (readerRuntime.lesson) {
-    openReadingLesson(readerRuntime.lesson.id);
+  if (!readerRuntime.lesson) return;
+  // openReadingLesson resets per-lesson state and would drop the multi-lesson
+  // book queue; a re-read must not eject the reader from their book session.
+  const bq = readerRuntime.bookQueue || [];
+  const bi = readerRuntime.bookIndex ?? -1;
+  openReadingLesson(readerRuntime.lesson.id);
+  if (bq.length) {
+    readerRuntime.bookQueue = bq;
+    readerRuntime.bookIndex = bi;
   }
 }
 
@@ -2104,6 +2144,19 @@ export function toggleOptionEnglish() {
 export function returnToPassageReading() {
   readerRuntime.phase = 'read';
   renderWorkspace();
+}
+
+// Back to the multi-lesson book exactly where it was left: same chapter and
+// section, queue intact, quiz selections/grade untouched. Questions and Timed
+// practice entered from the book return here instead of ejecting to the
+// Reading home (his report, 2026-11-05).
+export function returnToBook() {
+  if (!(readerRuntime.bookQueue || []).length) { closeReadingWorkspace(); return; }
+  stopTimer();
+  endGistReviewSession();
+  readerRuntime.phase = 'book';
+  renderWorkspace();
+  scrollBookIntoView();
 }
 
 // =======================================================
@@ -3067,6 +3120,7 @@ if (typeof window !== 'undefined') {
   window.toggleAnswerFurigana = toggleAnswerFurigana;
   window.toggleOptionEnglish = toggleOptionEnglish;
   window.returnToPassageReading = returnToPassageReading;
+  window.returnToBook = returnToBook;
   window.resetReadingLesson = resetReadingLesson;
 
   // Lesson picker, book mode, practice chaining, word drill
