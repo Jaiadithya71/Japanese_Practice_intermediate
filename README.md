@@ -66,3 +66,14 @@ The validation suite verifies:
 - Strict JSON schema adherence.
 - Symmetrical HTML `<ruby>` / `<rt>` markup with 0 malformed tags.
 - 100% presence of Japanese terms, kana readings, English meanings, and quiz solutions.
+
+
+## Dictionary credits
+
+`data/dict-extended.json` is derived from JMdict (Japanese-Multilingual Dictionary),
+a project of the Electronic Dictionary Research and Development Group (EDRG),
+used under the Creative Commons Attribution-ShareAlike 4.0 licence / EDRDG licence:
+https://www.edrdg.org/jmdict/j_jmdict.html
+It is filtered to common-priority entries whose kanji form appears in this app's
+reading lessons, and provides whole-word meanings for words outside the
+textbook's own word list.

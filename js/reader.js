@@ -588,6 +588,7 @@ export function restartReadingWordDrill() {
 // =======================================================
 
 export function openReadingLesson(lessonId, options = {}) {
+  ensureExtendedDict();
   const lesson = state.readingDB?.[lessonId];
   if (!lesson) {
     console.warn(`Reading lesson ${lessonId} not found in readingDB.`);
@@ -1353,7 +1354,25 @@ function renderReadPhase(container) {
 // reading and English meaning, with per-kanji meanings in the sheet.
 // =======================================================
 
-let glossCache = { lessonId: null, globalCount: -1, regex: null, map: new Map() };
+let glossCache = { lessonId: null, globalCount: -1, regex: null, map: new Map(), protected: new Set() };
+
+// Words a lesson asks the learner to deduce from context (e.g. 爽快 in
+// dokkai-n3-l04's "辞書を使わずに考えてください" Before Reading) must not be
+// glossed anywhere in that lesson: a tap-to-meaning popup would hand over the
+// answer. Furigana stays - the question itself prints the reading.
+function getDeduceProtectedTerms(lesson) {
+  const out = new Set();
+  const pre = lesson && lesson.preReading;
+  if (!pre) return out;
+  const q = String(pre.question_ja || '');
+  if (!/辞書を使わず|推測/.test(q)) return out;
+  const m = q.match(/この文の「([^」]+)」/);
+  if (!m) return out;
+  out.add(m[1]);
+  const stem = m[1].replace(/(な|い|だ|です)+$/, '');
+  if (stem && stem.length >= 2 && stem !== m[1]) out.add(stem);
+  return out;
+}
 
 function getGlossIndex(lesson) {
   const id = lesson ? lesson.id : null;
@@ -1361,6 +1380,7 @@ function getGlossIndex(lesson) {
   let globalCount = -1;
   try { globalCount = getAllWords().length + getAllReadingLessons().length; } catch {}
   if (glossCache.lessonId === id && glossCache.globalCount === globalCount && glossCache.map.size > 0) return glossCache;
+  const protectedTerms = getDeduceProtectedTerms(lesson);
   const map = new Map();
   for (const v of ((lesson && lesson.vocabulary) || [])) {
     if (v.term && !map.has(v.term)) {
@@ -1387,8 +1407,28 @@ function getGlossIndex(lesson) {
     .filter(t => t.length >= 2)
     .sort((a, b) => b.length - a.length);
   const regex = terms.length ? new RegExp(terms.map(escapeRegExp).join('|'), 'g') : null;
-  glossCache = { lessonId: id, globalCount, regex, map };
+  glossCache = { lessonId: id, globalCount, regex, map, protected: protectedTerms };
   return glossCache;
+}
+
+// General-dictionary backstop (JMdict-derived, data/dict-extended.json):
+// whole-word meanings for common words the textbook list does not cover
+// (以外, 必要, 部屋, ...). Loaded lazily; tap results stay honest when it is
+// absent by falling back to reading + kanji hints.
+const extendedDict = { status: 'idle', map: new Map() };
+
+function ensureExtendedDict() {
+  if (extendedDict.status !== 'idle') return;
+  extendedDict.status = 'loading';
+  fetch('data/dict-extended.json')
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(d => {
+      for (const [term, pair] of Object.entries((d && d.words) || {})) {
+        extendedDict.map.set(term, { term, reading: pair[0] || '', meaning: pair[1] || '' });
+      }
+      extendedDict.status = 'ready';
+    })
+    .catch(() => { extendedDict.status = 'error'; });
 }
 
 // Wrap dictionary terms found in html text nodes with tappable gloss spans,
@@ -1411,7 +1451,9 @@ function wrapGlossTerms(html, gloss) {
     }
     if (skipDepth > 0) continue;
     // 1) curated dictionary terms
+    const prot = gloss && gloss.protected;
     let seg = (gloss && gloss.regex) ? p.replace(gloss.regex, m =>
+      (prot && prot.has(m)) ? m :
       `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}', this)">${m}</span>`) : p;
     // 2) fallback: remaining kanji words; reading from the enclosing <rt> when present
     const rtOpen = parts[i + 1] || '';
@@ -1429,6 +1471,7 @@ function wrapGlossTerms(html, gloss) {
       }
       if (glossDepth > 0) continue;
       sub[k] = q.replace(KANJI_RUN_REGEX, m =>
+        (prot && prot.has(m)) ? m :
         `<span class="gloss-term gloss-term-fallback" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m}', this${rubyReading ? `, '${rubyReading}'` : ''})">${m}</span>`);
     }
     parts[i] = sub.join('');
@@ -2061,12 +2104,19 @@ export function showWordGloss(term, anchorEl, reading) {
   let vocab = (lesson.vocabulary || []).find(v => v.term === term);
   if (!vocab) vocab = getGlossIndex(lesson).map.get(term);
   if (!vocab) {
-    // Fallback for words outside the app's dictionary: never invent a meaning.
-    // Show the furigana reading plus labeled per-kanji hints instead.
-    vocab = { term, reading: reading || '', meaning: '', type: '', fallback: true };
+    ensureExtendedDict();
+    const ext = extendedDict.map.get(term);
+    if (ext) {
+      // Whole-word meaning from the general dictionary (not the textbook list).
+      vocab = { term: ext.term, reading: ext.reading || reading || '', meaning: ext.meaning, type: '', extended: true };
+    } else {
+      // Fallback for words outside every dictionary we ship: never invent a
+      // meaning. Show the furigana reading plus labeled per-kanji hints.
+      vocab = { term, reading: reading || '', meaning: '', type: '', fallback: true };
+    }
   }
 
-  readerRuntime.activeGlossWord = vocab.fallback ? null : vocab;
+  readerRuntime.activeGlossWord = (vocab.fallback || vocab.extended) ? null : vocab;
   const container = document.getElementById('word-gloss-sheet-container');
   if (!container) return;
 
@@ -2082,6 +2132,7 @@ export function showWordGloss(term, anchorEl, reading) {
         </div>
         <button class="btn btn-xs btn-ghost" onclick="closeWordGloss()"><i class="fa-solid fa-xmark"></i></button>
       </div>
+      ${vocab.extended ? `<div class="gloss-source-note" style="color: var(--text-dim); font-size: 0.75rem; margin-bottom: 0.25rem;">General dictionary meaning, not from this textbook's word list.</div>` : ''}
       ${vocab.meaning ? `<div class="gloss-meaning-text">${vocab.meaning}</div>` : `
         <div class="gloss-meaning-text" style="color: var(--text-dim); font-size: 0.85rem;">
           Not in the app's word list yet. ${vocab.reading ? 'Reading from the passage furigana; ' : ''}Kanji-by-kanji hints below (not a literal translation).
