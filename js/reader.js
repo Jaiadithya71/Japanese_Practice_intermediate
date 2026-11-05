@@ -10,7 +10,7 @@ import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js';
 import { renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
-import { getAllWords } from './data-loader.js';
+import { getAllWords, getAllReadingLessons } from './data-loader.js';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import {
   PASSAGE_GENRES,
@@ -1359,7 +1359,7 @@ function getGlossIndex(lesson) {
   const id = lesson ? lesson.id : null;
   // Rebuild when the global dictionary finishes loading after first render.
   let globalCount = -1;
-  try { globalCount = getAllWords().length; } catch {}
+  try { globalCount = getAllWords().length + getAllReadingLessons().length; } catch {}
   if (glossCache.lessonId === id && glossCache.globalCount === globalCount && glossCache.map.size > 0) return glossCache;
   const map = new Map();
   for (const v of ((lesson && lesson.vocabulary) || [])) {
@@ -1372,6 +1372,15 @@ function getGlossIndex(lesson) {
       const term = (w.term_ja || '').trim();
       if (!term || map.has(term)) continue;
       map.set(term, { term, reading: w.reading || '', meaning: w.meaning_en || '', type: w.part_of_speech || '' });
+    }
+  } catch {}
+  try {
+    for (const other of getAllReadingLessons()) {
+      for (const v of (other.vocabulary || [])) {
+        const term = (v.term || '').trim();
+        if (!term || map.has(term)) continue;
+        map.set(term, { term, reading: v.reading || '', meaning: v.meaning || '', type: v.type || '' });
+      }
     }
   } catch {}
   const terms = [...map.keys()]
