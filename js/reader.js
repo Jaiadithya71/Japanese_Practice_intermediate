@@ -1610,11 +1610,14 @@ function renderAnswerPhase(container) {
         <button class="btn btn-sm btn-ghost" onclick="toggleOptionEnglish()">
           <i class="fa-solid fa-language"></i> EN Translations: ${readerRuntime.showOptionEn ? 'ON' : 'OFF'}
         </button>
+        <button class="btn btn-sm btn-ghost" onclick="toggleAnswerFurigana()">
+          ふりがな: ${readerRuntime.settings.showFurigana ? 'ON' : 'OFF'}
+        </button>
       </div>
 
       <div id="answer-peek-pane" style="display: ${readerRuntime.showPassageInAnswer ? 'block' : 'none'}; margin-bottom: 1.5rem;" class="passage-view-card">
         <div class="font-ja" style="line-height: 1.85; max-height: 240px; overflow-y: auto; padding: 0.75rem;">
-          ${(lesson.passage?.sentences || []).map(s => `<div>${s.text_ja}</div>`).join('')}
+          ${(lesson.passage?.sentences || []).map(s => `<div>${bookJaText(s.text_ja, s.ruby_html)}</div>`).join('')}
         </div>
       </div>
 
@@ -1981,7 +1984,7 @@ function renderReviewQuestionHTML(res, idx) {
       </div>
 
       <div class="question-prompt-text font-ja" style="margin-top: 0.5rem;">
-        ${idx + 1}. ${q.question_ja || ''}
+        ${idx + 1}. ${glossifyBookText(bookJaText(q.question_ja || '', q.questionText_ja_ruby || q.question_ja_ruby))}
       </div>
       ${q.question_en ? `<div class="question-prompt-sub">${q.question_en}</div>` : ''}
 
@@ -2081,6 +2084,16 @@ export function togglePassagePeek() {
   if (pane) {
     pane.style.display = readerRuntime.showPassageInAnswer ? 'block' : 'none';
   }
+}
+
+// Answer-phase furigana toggle. Stays available on a second pass (the
+// read-phase lock keeps re-reads unaided, but question readings are his
+// explicit choice from this screen). Persists like the other reader settings.
+export function toggleAnswerFurigana() {
+  readerRuntime.settings.showFurigana = !readerRuntime.settings.showFurigana;
+  state.showFurigana = readerRuntime.settings.showFurigana;
+  saveReaderSettings(readerRuntime.settings);
+  renderWorkspace();
 }
 
 export function toggleOptionEnglish() {
@@ -3051,6 +3064,7 @@ if (typeof window !== 'undefined') {
   window.addWordFromPreview = addWordFromPreview;
   window.addAllPassageWordsToMyWords = addAllPassageWordsToMyWords;
   window.togglePassagePeek = togglePassagePeek;
+  window.toggleAnswerFurigana = toggleAnswerFurigana;
   window.toggleOptionEnglish = toggleOptionEnglish;
   window.returnToPassageReading = returnToPassageReading;
   window.resetReadingLesson = resetReadingLesson;
