@@ -1407,7 +1407,7 @@ function wrapGlossTerms(html, gloss) {
     }
     if (skipDepth > 0) continue;
     parts[i] = p.replace(gloss.regex, m =>
-      `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}')">${m}</span>`);
+      `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}', this)">${m}</span>`);
   }
   return parts.join('');
 }
@@ -2030,7 +2030,7 @@ export function returnToPassageReading() {
 // WORD GLOSS MINI-SHEET & VOCABULARY ENGINE INTEGRATION (§8)
 // =======================================================
 
-export function showWordGloss(term) {
+export function showWordGloss(term, anchorEl) {
   const lesson = readerRuntime.lesson;
   if (!lesson) return;
 
@@ -2045,7 +2045,7 @@ export function showWordGloss(term) {
   const kanjiParts = vocabularyKanjiMeanings(vocab.term);
 
   container.innerHTML = `
-    <div class="word-gloss-modal-sheet">
+    <div class="word-gloss-popup" role="dialog" aria-label="Word meaning">
       <div class="gloss-sheet-header">
         <div>
           <span class="font-ja gloss-term-title">${vocab.term}</span>
@@ -2070,10 +2070,58 @@ export function showWordGloss(term) {
       </div>
     </div>
   `;
+
+  // Anchor the popup beside the tapped word without moving the page.
+  // Mounted on <body>: an ancestor with transform/filter would otherwise trap
+  // position:fixed and pin the sheet to the document bottom.
+  const popup = container.querySelector('.word-gloss-popup');
+  if (popup) document.body.appendChild(popup);
+  if (popup && anchorEl && anchorEl.getBoundingClientRect) {
+    const rect = anchorEl.getBoundingClientRect();
+    popup.style.visibility = 'hidden';
+    popup.style.left = '0px';
+    popup.style.top = '0px';
+    const pw = popup.offsetWidth;
+    const ph = popup.offsetHeight;
+    const margin = 8;
+    let left = Math.min(Math.max(rect.left, margin), Math.max(margin, window.innerWidth - pw - margin));
+    let top = rect.bottom + 6;
+    if (top + ph > window.innerHeight - margin) {
+      top = rect.top - ph - 6;
+      if (top < margin) top = Math.max(margin, Math.min(window.innerHeight - ph - margin, rect.bottom + 6));
+    }
+    popup.style.left = `${Math.round(left)}px`;
+    popup.style.top = `${Math.round(top)}px`;
+    popup.style.visibility = 'visible';
+  }
+
+  // Dismiss on outside tap, scroll, or Escape; keep the reading position.
+  const dismiss = (ev) => {
+    if (popup && ev && ev.target && popup.contains(ev.target)) return;
+    closeWordGloss();
+  };
+  readerRuntime.glossDismissHandlers = {
+    pointerdown: (ev) => dismiss(ev),
+    scroll: () => closeWordGloss(),
+    keydown: (ev) => { if (ev.key === 'Escape') closeWordGloss(); }
+  };
+  setTimeout(() => {
+    if (!readerRuntime.glossDismissHandlers) return;
+    document.addEventListener('pointerdown', readerRuntime.glossDismissHandlers.pointerdown, true);
+    window.addEventListener('scroll', readerRuntime.glossDismissHandlers.scroll, true);
+    document.addEventListener('keydown', readerRuntime.glossDismissHandlers.keydown, true);
+  }, 0);
 }
 
 export function closeWordGloss() {
   readerRuntime.activeGlossWord = null;
+  if (readerRuntime.glossDismissHandlers) {
+    document.removeEventListener('pointerdown', readerRuntime.glossDismissHandlers.pointerdown, true);
+    window.removeEventListener('scroll', readerRuntime.glossDismissHandlers.scroll, true);
+    document.removeEventListener('keydown', readerRuntime.glossDismissHandlers.keydown, true);
+    readerRuntime.glossDismissHandlers = null;
+  }
+  document.querySelectorAll('body > .word-gloss-popup').forEach(el => el.remove());
   const container = document.getElementById('word-gloss-sheet-container');
   if (container) container.innerHTML = '';
 }
@@ -2735,6 +2783,24 @@ function ensureReaderStyles() {
       padding: 0.35rem 0.6rem;
       border-radius: 6px;
       width: fit-content;
+    }
+    .word-gloss-popup {
+      position: fixed;
+      z-index: 9999;
+      width: max-content;
+      max-width: min(340px, calc(100vw - 1rem));
+      background: #181d29;
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 0.8rem 0.9rem;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+      font-size: 0.9rem;
+    }
+    .word-gloss-popup .gloss-sheet-header {
+      gap: 0.75rem;
+    }
+    .word-gloss-popup .gloss-actions {
+      margin-top: 0.6rem;
     }
     .word-gloss-modal-sheet {
       position: fixed;
