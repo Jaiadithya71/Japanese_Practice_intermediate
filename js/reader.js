@@ -1353,11 +1353,14 @@ function renderReadPhase(container) {
 // reading and English meaning, with per-kanji meanings in the sheet.
 // =======================================================
 
-let glossCache = { lessonId: null, regex: null, map: new Map() };
+let glossCache = { lessonId: null, globalCount: -1, regex: null, map: new Map() };
 
 function getGlossIndex(lesson) {
   const id = lesson ? lesson.id : null;
-  if (glossCache.lessonId === id && glossCache.map.size > 0) return glossCache;
+  // Rebuild when the global dictionary finishes loading after first render.
+  let globalCount = -1;
+  try { globalCount = getAllWords().length; } catch {}
+  if (glossCache.lessonId === id && glossCache.globalCount === globalCount && glossCache.map.size > 0) return glossCache;
   const map = new Map();
   for (const v of ((lesson && lesson.vocabulary) || [])) {
     if (v.term && !map.has(v.term)) {
@@ -1375,7 +1378,7 @@ function getGlossIndex(lesson) {
     .filter(t => t.length >= 2)
     .sort((a, b) => b.length - a.length);
   const regex = terms.length ? new RegExp(terms.map(escapeRegExp).join('|'), 'g') : null;
-  glossCache = { lessonId: id, regex, map };
+  glossCache = { lessonId: id, globalCount, regex, map };
   return glossCache;
 }
 
