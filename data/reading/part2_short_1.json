@@ -159,27 +159,33 @@
             {
               "id": 1,
               "text_ja": "自分は何とか元気にやっているが、リンさんはどうか教えてほしい。",
-              "text_en": "She wants to say she is doing well somehow, and asks how Rin-san is doing."
+              "text_en": "She wants to say she is doing well somehow, and asks how Rin-san is doing.",
+              "text_ja_ruby": "<ruby>自分<rt>じぶん</rt></ruby>は<ruby>何<rt>なん</rt></ruby>とか<ruby>元気<rt>げんき</rt></ruby>にやっているが、リンさんはどうか<ruby>教<rt>おし</rt></ruby>えてほしい。"
             },
             {
               "id": 2,
               "text_ja": "最近忙しかったが、久しぶりに少し暇になったことを伝えたい。",
-              "text_en": "She wants to tell Rin-san that while she was busy recently, she has some free time for the first time in a while."
+              "text_en": "She wants to tell Rin-san that while she was busy recently, she has some free time for the first time in a while.",
+              "text_ja_ruby": "<ruby>最近忙<rt>さいきんいそが</rt></ruby>しかったが、<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>少<rt>すこ</rt></ruby>し<ruby>暇<rt>ひま</rt></ruby>になったことを<ruby>伝<rt>つた</rt></ruby>えたい。"
             },
             {
               "id": 3,
               "text_ja": "一緒に食事がしたいから、都合のいい日時を連絡してほしい。",
-              "text_en": "Because she wants to have a meal together, she wants Rin-san to let her know a convenient date and time."
+              "text_en": "Because she wants to have a meal together, she wants Rin-san to let her know a convenient date and time.",
+              "text_ja_ruby": "<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>食事<rt>しょくじ</rt></ruby>がしたいから、<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日時<rt>にちじ</rt></ruby>を<ruby>連絡<rt>れんらく</rt></ruby>してほしい。"
             },
             {
               "id": 4,
               "text_ja": "久しぶりだから、リンさんからメールがほしい。",
-              "text_en": "Because it has been a long time, she wants to receive an email from Rin-san."
+              "text_en": "Because it has been a long time, she wants to receive an email from Rin-san.",
+              "text_ja_ruby": "<ruby>久<rt>ひさ</rt></ruby>しぶりだから、リンさんからメールがほしい。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "佐藤さんは「久しぶりに食事でもしませんか？」「よかったら都合のいい日、教えてください」と、リンさんを食事に誘うことがメールの主な要件（一番伝えたいこと）です。したがって、正解は 3 です。（選択肢1、2、4は近況報告や挨拶の一部にすぎず、主目的ではありません。）",
-          "explanation_en": "The main point (要件) of Sato-san's email is to invite Rin-san out for a meal ('久しぶりに食事でもしませんか？', 'よかったら都合のいい日、教えてください'). Therefore, Option 3 is correct. (Options 1, 2, and 4 are merely conversational updates and greetings rather than the primary purpose.)"
+          "explanation_en": "The main point (要件) of Sato-san's email is to invite Rin-san out for a meal ('久しぶりに食事でもしませんか？', 'よかったら都合のいい日、教えてください'). Therefore, Option 3 is correct. (Options 1, 2, and 4 are merely conversational updates and greetings rather than the primary purpose.)",
+          "questionText_ja_ruby": "このメールで<ruby>一番<rt>いちばん</rt></ruby><ruby>伝<rt>つた</rt></ruby>えたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>佐藤<rt>さとう</rt></ruby>さんは「<ruby>久<rt>ひさ</rt></ruby>しぶりに<ruby>食事<rt>しょくじ</rt></ruby>でもしませんか？」「よかったら<ruby>都合<rt>つごう</rt></ruby>のいい<ruby>日<rt>ひ</rt></ruby>、<ruby>教<rt>おし</rt></ruby>えてください」と、リンさんを<ruby>食事<rt>しょくじ</rt></ruby>に<ruby>誘<rt>さそ</rt></ruby>うことがメールの<ruby>主<rt>おも</rt></ruby>な<ruby>要件<rt>ようけん</rt></ruby>（<ruby>一番<rt>いちばん</rt></ruby><ruby>伝<rt>つた</rt></ruby>えたいこと）です。したがって、<ruby>正解<rt>せいかい</rt></ruby>は 3 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>1、2、4は<ruby>近況報告<rt>きんきょうほうこく</rt></ruby>や<ruby>挨拶<rt>あいさつ</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>にすぎず、<ruby>主目的<rt>しゅもくてき</rt></ruby>ではありません。）"
         }
       ],
       "commentary": {
@@ -459,27 +465,33 @@
             {
               "id": 1,
               "text_ja": "高木さんはチャンさんに、自分の本をあげると言っている。",
-              "text_en": "Takagi-san says she will give her own book to Chang-san."
+              "text_en": "Takagi-san says she will give her own book to Chang-san.",
+              "text_ja_ruby": "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>をあげると<ruby>言<rt>い</rt></ruby>っている。"
             },
             {
               "id": 2,
               "text_ja": "高木さんはチャンさんに、自分の本を貸してあげると言っている。",
-              "text_en": "Takagi-san says she will lend her own book to Chang-san."
+              "text_en": "Takagi-san says she will lend her own book to Chang-san.",
+              "text_ja_ruby": "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>自分<rt>じぶん</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>を<ruby>貸<rt>か</rt></ruby>してあげると<ruby>言<rt>い</rt></ruby>っている。"
             },
             {
               "id": 3,
               "text_ja": "高木さんはチャンさんの子どもに、本を受け取ってほしいと言っている。",
-              "text_en": "Takagi-san says she wants Chang-san's child to accept the book."
+              "text_en": "Takagi-san says she wants Chang-san's child to accept the book.",
+              "text_ja_ruby": "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんの<ruby>子<rt>こ</rt></ruby>どもに、<ruby>本<rt>ほん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ってほしいと<ruby>言<rt>い</rt></ruby>っている。"
             },
             {
               "id": 4,
               "text_ja": "高木さんはチャンさんに、本を受け取りに来てほしいと言っている。",
-              "text_en": "Takagi-san says she wants Chang-san to come pick up the book."
+              "text_en": "Takagi-san says she wants Chang-san to come pick up the book.",
+              "text_ja_ruby": "<ruby>高木<rt>たかぎ</rt></ruby>さんはチャンさんに、<ruby>本<rt>ほん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りに<ruby>来<rt>き</rt></ruby>てほしいと<ruby>言<rt>い</rt></ruby>っている。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "手紙の本文に「私にはもう必要ないので、さしあげます。どうぞ受け取ってください」とあります。「さしあげる」は「あげる」の謙譲表現（丁寧な言い方）であり、貸すのではなく譲り渡すことを意味します。したがって、正しいのは 1 です。（選択肢2の「貸す」、3の「子どもに」、4の「取りに来てほしい」はいずれも本文と一致しません。）",
-          "explanation_en": "In the letter, Takagi-san states: '私にはもう必要ないので、さしあげます。どうぞ受け取ってください' (I no longer need this, so I will give it to you. Please accept it). 'さしあげる' is the humble form of 'あげる' (to give), meaning it is a gift that does not need to be returned. Therefore, Option 1 is correct. (Option 2 claims lending, Option 3 says it is for the child, and Option 4 asks to pick it up in person when it was actually dispatched separately by mail.)"
+          "explanation_en": "In the letter, Takagi-san states: '私にはもう必要ないので、さしあげます。どうぞ受け取ってください' (I no longer need this, so I will give it to you. Please accept it). 'さしあげる' is the humble form of 'あげる' (to give), meaning it is a gift that does not need to be returned. Therefore, Option 1 is correct. (Option 2 claims lending, Option 3 says it is for the child, and Option 4 asks to pick it up in person when it was actually dispatched separately by mail.)",
+          "questionText_ja_ruby": "この<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>について、<ruby>正<rt>ただ</rt></ruby>しいのはどれか。",
+          "explanation_ja_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>私<rt>わたし</rt></ruby>にはもう<ruby>必要<rt>ひつよう</rt></ruby>ないので、さしあげます。どうぞ<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ってください」とあります。「さしあげる」は「あげる」の<ruby>謙譲<rt>けんじょう</rt></ruby><ruby>表現<rt>ひょうげん</rt></ruby>（<ruby>丁寧<rt>ていねい</rt></ruby>な<ruby>言<rt>い</rt></ruby>い<ruby>方<rt>かた</rt></ruby>）であり、<ruby>貸<rt>か</rt></ruby>すのではなく<ruby>譲<rt>ゆず</rt></ruby>り<ruby>渡<rt>わた</rt></ruby>すことを<ruby>意味<rt>いみ</rt></ruby>します。したがって、<ruby>正<rt>ただ</rt></ruby>しいのは 1 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>2の「<ruby>貸<rt>か</rt></ruby>す」、3の「<ruby>子<rt>こ</rt></ruby>どもに」、4の「<ruby>取<rt>と</rt></ruby>りに<ruby>来<rt>き</rt></ruby>てほしい」はいずれも<ruby>本文<rt>ほんぶん</rt></ruby>と<ruby>一致<rt>いっち</rt></ruby>しません。）"
         }
       ],
       "commentary": {
@@ -710,27 +722,33 @@
             {
               "id": 1,
               "text_ja": "5階の第一事務室に行き、コピーを取る。",
-              "text_en": "Go to the 1st Office on the 5th floor and make copies."
+              "text_en": "Go to the 1st Office on the 5th floor and make copies.",
+              "text_ja_ruby": "5<ruby>階<rt>かい</rt></ruby>の<ruby>第一<rt>だいいち</rt></ruby><ruby>事務室<rt>じむしつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>き、コピーを<ruby>取<rt>と</rt></ruby>る。"
             },
             {
               "id": 2,
               "text_ja": "5階の第二事務室に行き、コピーを取る。",
-              "text_en": "Go to the 2nd Office on the 5th floor and make copies."
+              "text_en": "Go to the 2nd Office on the 5th floor and make copies.",
+              "text_ja_ruby": "5<ruby>階<rt>かい</rt></ruby>の<ruby>第二<rt>だいに</rt></ruby><ruby>事務室<rt>じむしつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>き、コピーを<ruby>取<rt>と</rt></ruby>る。"
             },
             {
               "id": 3,
               "text_ja": "4階の資料管理室でカギを借り、資料準備室でコピーを取る。",
-              "text_en": "Borrow the key at the Document Management Room on the 4th floor, and make copies in the Document Preparation Room."
+              "text_en": "Borrow the key at the Document Management Room on the 4th floor, and make copies in the Document Preparation Room.",
+              "text_ja_ruby": "4<ruby>階<rt>かい</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby><ruby>管理室<rt>かんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>り、<ruby>資料<rt>しりょう</rt></ruby><ruby>準備室<rt>じゅんびしつ</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>る。"
             },
             {
               "id": 4,
               "text_ja": "修理の後、このコピー機を使う。",
-              "text_en": "Use this copy machine after it is repaired."
+              "text_en": "Use this copy machine after it is repaired.",
+              "text_ja_ruby": "<ruby>修理<rt>しゅうり</rt></ruby>の<ruby>後<rt>あと</rt></ruby>、このコピー<ruby>機<rt>き</rt></ruby>を<ruby>使<rt>つか</rt></ruby>う。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "現在の時刻は9時45分で、10時の会議まであと15分しかありません。修理が完了するのは午後なので、このコピー機は間に合いません（選択肢4は誤り）。5階の第一事務室は「20枚以上のコピーはご遠慮ください」とあるため40枚は取れません（選択肢1は誤り）。5階の第二事務室は「A3サイズが取れません」とあるためA3のコピーができません（選択肢2は誤り）。残る選択肢は4階の資料準備室ですが、カギがかかっているため隣の資料管理室でカギを借りる必要があります。したがって、正解は 3 です。",
-          "explanation_en": "It is currently 9:45, leaving only 15 minutes before the 10:00 meeting. The broken machine will not be ready until afternoon (Option 4 is eliminated). The 1st Office on the 5th floor requests that users refrain from making 20 or more copies, but 40 copies are required (Option 1 is eliminated). The 2nd Office machine cannot handle A3 size (Option 2 is eliminated). The remaining option is the Document Preparation Room on the 4th floor, which is locked and requires borrowing the key from the adjacent Document Management Room. Therefore, Option 3 is correct."
+          "explanation_en": "It is currently 9:45, leaving only 15 minutes before the 10:00 meeting. The broken machine will not be ready until afternoon (Option 4 is eliminated). The 1st Office on the 5th floor requests that users refrain from making 20 or more copies, but 40 copies are required (Option 1 is eliminated). The 2nd Office machine cannot handle A3 size (Option 2 is eliminated). The remaining option is the Document Preparation Room on the 4th floor, which is locked and requires borrowing the key from the adjacent Document Management Room. Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>今<rt>いま</rt></ruby>、9<ruby>時<rt>くじ</rt></ruby><ruby>45分<rt>よんじゅうごふん</rt></ruby>で、10<ruby>時<rt>じゅうじ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>のためにA3サイズのコピーを40<ruby>枚<rt>まい</rt></ruby><ruby>取<rt>と</rt></ruby>りたい。<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うようにコピーを<ruby>取<rt>と</rt></ruby>るには、どうすれば<ruby>一番<rt>いちばん</rt></ruby>よいか。",
+          "explanation_ja_ruby": "<ruby>現在<rt>げんざい</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>は9<ruby>時<rt>くじ</rt></ruby><ruby>45分<rt>よんじゅうごふん</rt></ruby>で、10<ruby>時<rt>じゅうじ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>まであと<ruby>15分<rt>じゅうごふん</rt></ruby>しかありません。<ruby>修理<rt>しゅうり</rt></ruby>が<ruby>完了<rt>かんりょう</rt></ruby>するのは<ruby>午後<rt>ごご</rt></ruby>なので、このコピー<ruby>機<rt>き</rt></ruby>は<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いません（<ruby>選択肢<rt>せんたくし</rt></ruby>4は<ruby>誤<rt>あやま</rt></ruby>り）。5<ruby>階<rt>かい</rt></ruby>の<ruby>第一<rt>だいいち</rt></ruby><ruby>事務室<rt>じむしつ</rt></ruby>は「20<ruby>枚<rt>まい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>のコピーはご<ruby>遠慮<rt>えんりょ</rt></ruby>ください」とあるため40<ruby>枚<rt>まい</rt></ruby>は<ruby>取<rt>と</rt></ruby>れません（<ruby>選択肢<rt>せんたくし</rt></ruby>1は<ruby>誤<rt>あやま</rt></ruby>り）。5<ruby>階<rt>かい</rt></ruby>の<ruby>第二<rt>だいに</rt></ruby><ruby>事務室<rt>じむしつ</rt></ruby>は「A3サイズが<ruby>取<rt>と</rt></ruby>れません」とあるためA3のコピーができません（<ruby>選択肢<rt>せんたくし</rt></ruby>2は<ruby>誤<rt>あやま</rt></ruby>り）。<ruby>残<rt>のこ</rt></ruby>る<ruby>選択肢<rt>せんたくし</rt></ruby>は4<ruby>階<rt>かい</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby><ruby>準備室<rt>じゅんびしつ</rt></ruby>ですが、カギがかかっているため<ruby>隣<rt>となり</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby><ruby>管理室<rt>かんりしつ</rt></ruby>でカギを<ruby>借<rt>か</rt></ruby>りる<ruby>必要<rt>ひつよう</rt></ruby>があります。したがって、<ruby>正解<rt>せいかい</rt></ruby>は 3 です。"
         }
       ],
       "commentary": {
@@ -765,7 +783,7 @@
             "analysis_en": "State of the people who read the memo: For those wishing to make copies at work, a note was posted on a photocopier saying that it had broken down. Somebody wishes to make 40 A3 size copies at 9.45, for a meeting at 10.00. What would be the best thing to do to ensure that copies are made in time?",
             "analysis_zh": "阅读便条人的状况：在上班处想要复印，但复印机上贴着“不能使用”的便条。现在是9点45，需要为10点的会议准备A3大小的复印文件40页。为了赶上会议的使用应该怎么办。",
             "question_ja_ruby": "メモの<ruby>内容<rt>ないよう</rt></ruby>だけでなく、<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>前後<rt>ぜんご</rt></ruby>や<ruby>問<rt>と</rt></ruby>いの<ruby>内容<rt>ないよう</rt></ruby>から、メモを<ruby>読<rt>よ</rt></ruby>んだ<ruby>人<rt>ひと</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>も<ruby>読<rt>よ</rt></ruby>み<ruby>取<rt>と</rt></ruby>る。",
-            "analysis_ja_ruby": "メモを<ruby>読<rt>よ</rt></ruby>んだ<ruby>人<rt>ひと</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>：<ruby>職場<rt>しょくば</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>ろうとしたら、コピー<ruby>機<rt>き</rt></ruby>に<ruby>故障中<rt>こしょうちゅう</rt></ruby>のメモが<ruby>貼<rt>は</rt></ruby>ってあった。<ruby>今<rt>いま</rt></ruby>、9<ruby>時<rt>くじ</rt></ruby>45<ruby>分<rt>ふん</rt></ruby>で、10<ruby>時<rt>じゅうじ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>のためにA3サイズのコピーを40<ruby>枚<rt>まい</rt></ruby><ruby>取<rt>と</rt></ruby>りたい。<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うようにコピーを<ruby>取<rt>と</rt></ruby>るには、どうすれば<ruby>一番<rt>いちばん</rt></ruby>よいか。"
+            "analysis_ja_ruby": "メモを<ruby>読<rt>よ</rt></ruby>んだ<ruby>人<rt>ひと</rt></ruby>の<ruby>状況<rt>じょうきょう</rt></ruby>：<ruby>職場<rt>しょくば</rt></ruby>でコピーを<ruby>取<rt>と</rt></ruby>ろうとしたら、コピー<ruby>機<rt>き</rt></ruby>に<ruby>故障中<rt>こしょうちゅう</rt></ruby>のメモが<ruby>貼<rt>は</rt></ruby>ってあった。<ruby>今<rt>いま</rt></ruby>、9<ruby>時<rt>くじ</rt></ruby><ruby>45分<rt>よんじゅうごふん</rt></ruby>で、10<ruby>時<rt>じゅうじ</rt></ruby>の<ruby>会議<rt>かいぎ</rt></ruby>のためにA3サイズのコピーを40<ruby>枚<rt>まい</rt></ruby><ruby>取<rt>と</rt></ruby>りたい。<ruby>間<rt>ま</rt></ruby>に<ruby>合<rt>あ</rt></ruby>うようにコピーを<ruby>取<rt>と</rt></ruby>るには、どうすれば<ruby>一番<rt>いちばん</rt></ruby>よいか。"
           }
         ]
       }
@@ -994,27 +1012,33 @@
             {
               "id": 1,
               "text_ja": "なべにだし汁、とり肉、たまねぎ、たまごを入れてから火にかける。",
-              "text_en": "Put dashi, chicken, onion, and eggs into the pot, then place it on the stove."
+              "text_en": "Put dashi, chicken, onion, and eggs into the pot, then place it on the stove.",
+              "text_ja_ruby": "なべにだし<ruby>汁<rt>しる</rt></ruby>、とり<ruby>肉<rt>にく</rt></ruby>、たまねぎ、たまごを<ruby>入<rt>い</rt></ruby>れてから<ruby>火<rt>ひ</rt></ruby>にかける。"
             },
             {
               "id": 2,
               "text_ja": "なべにだし汁、調味料、とり肉を入れ、沸騰したら、たまねぎとたまごを入れる。",
-              "text_en": "Put dashi, seasonings, and chicken into the pot, and once boiling, add onion and eggs."
+              "text_en": "Put dashi, seasonings, and chicken into the pot, and once boiling, add onion and eggs.",
+              "text_ja_ruby": "なべにだし<ruby>汁<rt>しる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>入<rt>い</rt></ruby>れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、たまねぎとたまごを<ruby>入<rt>い</rt></ruby>れる。"
             },
             {
               "id": 3,
               "text_ja": "なべにだし汁、調味料を入れ、沸騰したら、はじめにたまごを入れる。",
-              "text_en": "Put dashi and seasonings into the pot, and once boiling, add eggs first."
+              "text_en": "Put dashi and seasonings into the pot, and once boiling, add eggs first.",
+              "text_ja_ruby": "なべにだし<ruby>汁<rt>しる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、はじめにたまごを<ruby>入<rt>い</rt></ruby>れる。"
             },
             {
               "id": 4,
               "text_ja": "なべにだし汁、調味料を入れ、沸騰したら、とり肉とたまねぎを入れる。",
-              "text_en": "Put dashi and seasonings into the pot, and once boiling, add chicken and onion."
+              "text_en": "Put dashi and seasonings into the pot, and once boiling, add chicken and onion.",
+              "text_ja_ruby": "なべにだし<ruby>汁<rt>しる</rt></ruby>、<ruby>調味料<rt>ちょうみりょう</rt></ruby>を<ruby>入<rt>い</rt></ruby>れ、<ruby>沸騰<rt>ふっとう</rt></ruby>したら、とり<ruby>肉<rt>にく</rt></ruby>とたまねぎを<ruby>入<rt>い</rt></ruby>れる。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "手順2では「なべにだし汁、みりん、酒、しょうゆ、さとう（＝調味料）を入れて火にかけます」、手順3では「沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます」、そして手順4で「とり肉が煮えたら、たまごを回し入れます」とあります。したがって、正しい順番を述べているのは 4 です。（選択肢1は煮る前にたまごまで入れている、2は沸騰前からとり肉を入れている、3は沸騰直後にたまごを入れているため、いずれも誤りです。）",
-          "explanation_en": "Step 2 states: 'なべにだし汁、みりん、酒、しょうゆ、さとう（＝調味料）を入れて火にかけます' (put dashi and seasonings into the pot and put on heat). Step 3 states: '沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます' (once boiling, add onion and chicken and simmer). Eggs are added later in Step 4 once the chicken is cooked through. Therefore, Option 4 accurately captures the correct sequence."
+          "explanation_en": "Step 2 states: 'なべにだし汁、みりん、酒、しょうゆ、さとう（＝調味料）を入れて火にかけます' (put dashi and seasonings into the pot and put on heat). Step 3 states: '沸騰したら、たまねぎ、とり肉を入れて、中火〜弱火で煮ます' (once boiling, add onion and chicken and simmer). Eggs are added later in Step 4 once the chicken is cooked through. Therefore, Option 4 accurately captures the correct sequence.",
+          "questionText_ja_ruby": "<ruby>親子丼<rt>おやこどん</rt></ruby>の<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>の<ruby>順番<rt>じゅんばん</rt></ruby>で、<ruby>正<rt>ただ</rt></ruby>しいものはどれか。",
+          "explanation_ja_ruby": "<ruby>手順<rt>てじゅん</rt></ruby>2では「なべにだし<ruby>汁<rt>しる</rt></ruby>、みりん、<ruby>酒<rt>さけ</rt></ruby>、しょうゆ、さとう（＝<ruby>調味料<rt>ちょうみりょう</rt></ruby>）を<ruby>入<rt>い</rt></ruby>れて<ruby>火<rt>ひ</rt></ruby>にかけます」、<ruby>手順<rt>てじゅん</rt></ruby>3では「<ruby>沸騰<rt>ふっとう</rt></ruby>したら、たまねぎ、とり<ruby>肉<rt>にく</rt></ruby>を<ruby>入<rt>い</rt></ruby>れて、<ruby>中火<rt>ちゅうび</rt></ruby>〜<ruby>弱火<rt>よわび</rt></ruby>で<ruby>煮<rt>に</rt></ruby>ます」、そして<ruby>手順<rt>てじゅん</rt></ruby>4で「とり<ruby>肉<rt>にく</rt></ruby>が<ruby>煮<rt>に</rt></ruby>えたら、たまごを<ruby>回<rt>まわ</rt></ruby>し<ruby>入<rt>い</rt></ruby>れます」とあります。したがって、<ruby>正<rt>ただ</rt></ruby>しい<ruby>順番<rt>じゅんばん</rt></ruby>を<ruby>述<rt>の</rt></ruby>べているのは 4 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>1は<ruby>煮<rt>に</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>にたまごまで<ruby>入<rt>い</rt></ruby>れている、2は<ruby>沸騰<rt>ふっとう</rt></ruby><ruby>前<rt>ぜん</rt></ruby>からとり<ruby>肉<rt>にく</rt></ruby>を<ruby>入<rt>い</rt></ruby>れている、3は<ruby>沸騰<rt>ふっとう</rt></ruby><ruby>直後<rt>ちょくご</rt></ruby>にたまごを<ruby>入<rt>い</rt></ruby>れているため、いずれも<ruby>誤<rt>あやま</rt></ruby>りです。）"
         }
       ],
       "commentary": {
@@ -1195,27 +1219,33 @@
             {
               "id": 1,
               "text_ja": "周りの人が人として見られていないように感じるから。",
-              "text_en": "Because it makes people around feel like they are not being seen as human beings."
+              "text_en": "Because it makes people around feel like they are not being seen as human beings.",
+              "text_ja_ruby": "<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>が<ruby>人<rt>ひと</rt></ruby>として<ruby>見<rt>み</rt></ruby>られていないように<ruby>感<rt>かん</rt></ruby>じるから。"
             },
             {
               "id": 2,
               "text_ja": "化粧をするのは周りの人に迷惑をかける行動だから。",
-              "text_en": "Because applying makeup is an action that inconveniences the people around."
+              "text_en": "Because applying makeup is an action that inconveniences the people around.",
+              "text_ja_ruby": "<ruby>化粧<rt>けしょう</rt></ruby>をするのは<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>に<ruby>迷惑<rt>めいわく</rt></ruby>をかける<ruby>行動<rt>こうどう</rt></ruby>だから。"
             },
             {
               "id": 3,
               "text_ja": "これから会う人に対して大変失礼なことだから。",
-              "text_en": "Because it is extremely disrespectful toward the people one is going to meet."
+              "text_en": "Because it is extremely disrespectful toward the people one is going to meet.",
+              "text_ja_ruby": "これから<ruby>会<rt>あ</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>大変失礼<rt>たいへんしつれい</rt></ruby>なことだから。"
             },
             {
               "id": 4,
               "text_ja": "化粧する時間を節約するのは女性としてはずかしいことだから。",
-              "text_en": "Because saving time on makeup is shameful for a woman."
+              "text_en": "Because saving time on makeup is shameful for a woman.",
+              "text_ja_ruby": "<ruby>化粧<rt>けしょう</rt></ruby>する<ruby>時間<rt>じかん</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>するのは<ruby>女性<rt>じょせい</rt></ruby>としてはずかしいことだから。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "筆者は、電車で化粧をする人たちが「見られても別に構わない」とする態度に対し、「周りの人たちを風景の一部、壁や座席などと同じだと考えているように私には感じられる。これは大変失礼ではないだろうか」と述べています。つまり、周りの人間を人として見なさず物のように扱う印象を与えるため失礼である、と論じています。したがって、正解は 1 です。（選択肢2は化粧する側の主張「迷惑をかけていない」に対する反論の本質ではなく、3は「周りの乗客」に対する失礼さであり、4は本文にない記述です。）",
-          "explanation_en": "The author argues that people applying makeup on the train treat fellow passengers as if they were 'part of the scenery, the same as walls or seats'—in other words, not seeing them as fellow humans, which is extremely disrespectful. Therefore, Option 1 is correct. (Option 2 is not the author's primary reason; Option 3 misidentifies who is disrespected; Option 4 is nowhere in the text.)"
+          "explanation_en": "The author argues that people applying makeup on the train treat fellow passengers as if they were 'part of the scenery, the same as walls or seats'—in other words, not seeing them as fellow humans, which is extremely disrespectful. Therefore, Option 1 is correct. (Option 2 is not the author's primary reason; Option 3 misidentifies who is disrespected; Option 4 is nowhere in the text.)",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>は<ruby>電車<rt>でんしゃ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>化粧<rt>けしょう</rt></ruby>をすべきではないと<ruby>言<rt>い</rt></ruby>っているが、その<ruby>理由<rt>りゆう</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は、<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>化粧<rt>けしょう</rt></ruby>をする<ruby>人<rt>ひと</rt></ruby>たちが「<ruby>見<rt>み</rt></ruby>られても<ruby>別<rt>べつ</rt></ruby>に<ruby>構<rt>かま</rt></ruby>わない」とする<ruby>態度<rt>たいど</rt></ruby>に<ruby>対<rt>たい</rt></ruby>し、「<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>たちを<ruby>風景<rt>ふうけい</rt></ruby>の<ruby>一部<rt>いちぶ</rt></ruby>、<ruby>壁<rt>かべ</rt></ruby>や<ruby>座席<rt>ざせき</rt></ruby>などと<ruby>同<rt>おな</rt></ruby>じだと<ruby>考<rt>かんが</rt></ruby>えているように<ruby>私<rt>わたし</rt></ruby>には<ruby>感<rt>かん</rt></ruby>じられる。これは<ruby>大変失礼<rt>たいへんしつれい</rt></ruby>ではないだろうか」と<ruby>述<rt>の</rt></ruby>べています。つまり、<ruby>周<rt>まわ</rt></ruby>りの<ruby>人間<rt>にんげん</rt></ruby>を<ruby>人<rt>ひと</rt></ruby>として<ruby>見<rt>み</rt></ruby>なさず<ruby>物<rt>もの</rt></ruby>のように<ruby>扱<rt>あつか</rt></ruby>う<ruby>印象<rt>いんしょう</rt></ruby>を<ruby>与<rt>あた</rt></ruby>えるため<ruby>失礼<rt>しつれい</rt></ruby>である、と<ruby>論<rt>ろん</rt></ruby>じています。したがって、<ruby>正解<rt>せいかい</rt></ruby>は 1 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>2は<ruby>化粧<rt>けしょう</rt></ruby>する<ruby>側<rt>がわ</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>「<ruby>迷惑<rt>めいわく</rt></ruby>をかけていない」に<ruby>対<rt>たい</rt></ruby>する<ruby>反論<rt>はんろん</rt></ruby>の<ruby>本質<rt>ほんしつ</rt></ruby>ではなく、3は「<ruby>周<rt>まわ</rt></ruby>りの<ruby>乗客<rt>じょうきゃく</rt></ruby>」に<ruby>対<rt>たい</rt></ruby>する<ruby>失礼<rt>しつれい</rt></ruby>さであり、4は<ruby>本文<rt>ほんぶん</rt></ruby>にない<ruby>記述<rt>きじゅつ</rt></ruby>です。）"
         }
       ],
       "commentary": {

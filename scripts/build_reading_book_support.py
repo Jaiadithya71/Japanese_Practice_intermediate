@@ -107,7 +107,38 @@ def rubyize_line(text, vocab_readings, overrides):
     res = ''.join(out)
     for pat, rep in FIXUPS:
         res = res.replace(pat, rep)
-    return res
+    return post_fix(res)
+
+NUM_HIRA = {'1':'いち','2':'に','3':'さん','4':'よん','5':'ご','6':'ろく','7':'なな','8':'はち','9':'きゅう'}
+CLOCK = {1:'いちじ',2:'にじ',3:'さんじ',4:'よじ',5:'ごじ',6:'ろくじ',7:'しちじ',8:'はちじ',
+         9:'くじ',10:'じゅうじ',11:'じゅういちじ',12:'じゅうにじ',13:'じゅうさんじ',14:'じゅうよじ',
+         15:'じゅうごじ',16:'じゅうろくじ',17:'じゅうしちじ',18:'じゅうはちじ',19:'じゅうくじ',
+         20:'にじゅうじ',21:'にじゅういちじ',22:'にじゅうにじ',23:'にじゅうさんじ',24:'にじゅうよじ',0:'れいじ'}
+MIN_UNIT = {1:'いっぷん',2:'にふん',3:'さんぷん',4:'よんぷん',5:'ごふん',6:'ろっぷん',7:'ななふん',8:'はっぷん',9:'きゅうふん'}
+MIN_TENS = {1:'じゅっぷん',2:'にじゅっぷん',3:'さんじゅっぷん',4:'よんじゅっぷん',5:'ごじゅっぷん'}
+MIN_TENS_PART = {0:'',1:'じゅう',2:'にじゅう',3:'さんじゅう',4:'よんじゅう',5:'ごじゅう'}
+def minutes_reading(n):
+    if n % 10 == 0:
+        return MIN_TENS.get(n // 10)
+    t, u = divmod(n, 10)
+    part = MIN_TENS_PART.get(t)
+    return part + MIN_UNIT[u] if part is not None else None
+
+def post_fix(html):
+    html = re.sub(r'(\d)<ruby>位<rt>(?:い|くらい)</rt></ruby>',
+                  lambda m: f'<ruby>{m.group(1)}位<rt>{NUM_HIRA[m.group(1)]}い</rt></ruby>', html)
+    html = re.sub(r'(\d{1,2})<ruby>時<rt>とき</rt></ruby>',
+                  lambda m: f'<ruby>{m.group(1)}時<rt>{CLOCK[int(m.group(1))]}</rt></ruby>' if int(m.group(1)) in CLOCK else m.group(0), html)
+    html = re.sub(r'(\d{1,2})<ruby>分<rt>ふん</rt></ruby>',
+                  lambda m: (f'<ruby>{m.group(1)}分<rt>{r}</rt></ruby>' if (r := minutes_reading(int(m.group(1)))) else m.group(0)), html)
+    html = html.replace('<ruby>注文<rt>ちゅうもん</rt></ruby><ruby>時<rt>とき</rt></ruby>',
+                        '<ruby>注文時<rt>ちゅうもんじ</rt></ruby>')
+    html = html.replace('<ruby>避難<rt>ひなん</rt></ruby><ruby>時<rt>とき</rt></ruby>',
+                        '<ruby>避難時<rt>ひなんじ</rt></ruby>')
+    html = html.replace('<ruby>夕食<rt>ゆうしょく</rt></ruby><ruby>後<rt>のち</rt></ruby>',
+                        '<ruby>夕食後<rt>ゆうしょくご</rt></ruby>')
+    html = html.replace('<ruby>後<rt>のち</rt></ruby>', '<ruby>後<rt>あと</rt></ruby>')
+    return html
 
 def rubyize(text, vocab_readings, overrides):
     if not text or not has_kanji(text): return text
@@ -161,6 +192,17 @@ def main():
                     do(st, 'question_ja'); do(st, 'analysis_ja')
             for dr in (l.get('drills') or []):
                 do(dr, 'title_ja'); do(dr, 'instruction_ja')
+            for q in (l.get('comprehensionQuestions') or l.get('questions') or []):
+                do(q, 'questionText_ja'); do(q, 'explanation_ja')
+                for o in (q.get('options') or []):
+                    if isinstance(o, dict): do(o, 'text_ja')
+            # apply the same reviewed reading fixes to pre-existing passage ruby
+            for s in ((l.get('passage') or {}).get('sentences') or []):
+                r = s.get('ruby_html')
+                if r:
+                    r2 = post_fix(r)
+                    if r2 != r:
+                        s['ruby_html'] = r2; changed = True
             # keep (注N) markers visible with furigana off: they live only in
             # ruby_html, so derive the plain text from the ruby when it carries
             # markers the plain text lacks.

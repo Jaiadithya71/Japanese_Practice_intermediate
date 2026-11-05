@@ -104,27 +104,33 @@
             {
               "id": 1,
               "text_ja": "新しい文法用語だけを覚えること",
-              "text_en": "Memorizing new grammatical terms only"
+              "text_en": "Memorizing new grammatical terms only",
+              "text_ja_ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>文法用語<rt>ぶんぽうようご</rt></ruby>だけを<ruby>覚<rt>おぼ</rt></ruby>えること"
             },
             {
               "id": 2,
               "text_ja": "実際の試験と同じ形式で多くの文章を読み、実力を高めること",
-              "text_en": "Reading many texts in the same format as the real examination to improve practical reading competence"
+              "text_en": "Reading many texts in the same format as the real examination to improve practical reading competence",
+              "text_ja_ruby": "<ruby>実際<rt>じっさい</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>形式<rt>けいしき</rt></ruby>で<ruby>多<rt>おお</rt></ruby>くの<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>読<rt>よ</rt></ruby>み、<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めること"
             },
             {
               "id": 3,
               "text_ja": "辞書を引かずに短い文章だけを速く読むこと",
-              "text_en": "Reading only short passages quickly without consulting a dictionary"
+              "text_en": "Reading only short passages quickly without consulting a dictionary",
+              "text_ja_ruby": "<ruby>辞書<rt>じしょ</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>かずに<ruby>短<rt>みじか</rt></ruby>い<ruby>文章<rt>ぶんしょう</rt></ruby>だけを<ruby>速<rt>はや</rt></ruby>く<ruby>読<rt>よ</rt></ruby>むこと"
             },
             {
               "id": 4,
               "text_ja": "試験の解答をすべて暗記すること",
-              "text_en": "Memorizing all answers to the examination questions"
+              "text_en": "Memorizing all answers to the examination questions",
+              "text_ja_ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>解答<rt>かいとう</rt></ruby>をすべて<ruby>暗記<rt>あんき</rt></ruby>すること"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "案内文にある通り、第4部では実際の試験と同じ形式の問題を繰り返し練習し、確かな実力を養うことを目的としています。したがって、2が正解です。",
-          "explanation_en": "As described in the introductory guide, Part 4 provides practice using the same formats as the real examination to develop practical comprehension proficiency. Therefore, Option 2 is correct."
+          "explanation_en": "As described in the introductory guide, Part 4 provides practice using the same formats as the real examination to develop practical comprehension proficiency. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "<ruby>第<rt>だい</rt></ruby>4<ruby>部<rt>ぶ</rt></ruby>の<ruby>学習<rt>がくしゅう</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>として<ruby>最<rt>もっと</rt></ruby>も<ruby>適切<rt>てきせつ</rt></ruby>なものはどれか。",
+          "explanation_ja_ruby": "<ruby>案内文<rt>あんないぶん</rt></ruby>にある<ruby>通<rt>とう</rt></ruby>り、<ruby>第<rt>だい</rt></ruby>4<ruby>部<rt>ぶ</rt></ruby>では<ruby>実際<rt>じっさい</rt></ruby>の<ruby>試験<rt>しけん</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>形式<rt>けいしき</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>を<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>し<ruby>練習<rt>れんしゅう</rt></ruby>し、<ruby>確<rt>たし</rt></ruby>かな<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>養<rt>やしな</rt></ruby>うことを<ruby>目的<rt>もくてき</rt></ruby>としています。したがって、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -256,27 +262,33 @@
             {
               "id": 1,
               "text_ja": "食べるときにこわれてしまわないようにご飯を固くまとめる。",
-              "text_en": "Bind the rice firmly so that it does not break when eaten."
+              "text_en": "Bind the rice firmly so that it does not break when eaten.",
+              "text_ja_ruby": "<ruby>食<rt>た</rt></ruby>べるときにこわれてしまわないようにご<ruby>飯<rt>めし</rt></ruby>を<ruby>固<rt>かた</rt></ruby>くまとめる。"
             },
             {
               "id": 2,
               "text_ja": "形が丸くなるように力を込めて何度もにぎる。",
-              "text_en": "Press repeatedly with force so that its shape becomes round."
+              "text_en": "Press repeatedly with force so that its shape becomes round.",
+              "text_ja_ruby": "<ruby>形<rt>かたち</rt></ruby>が<ruby>丸<rt>まる</rt></ruby>くなるように<ruby>力<rt>ちから</rt></ruby>を<ruby>込<rt>こ</rt></ruby>めて<ruby>何度<rt>なんど</rt></ruby>もにぎる。"
             },
             {
               "id": 3,
               "text_ja": "食べるときに形がこわれるぐらいやわらかくにぎる。",
-              "text_en": "Shape it softly to the extent that it breaks apart when eating."
+              "text_en": "Shape it softly to the extent that it breaks apart when eating.",
+              "text_ja_ruby": "<ruby>食<rt>た</rt></ruby>べるときに<ruby>形<rt>かたち</rt></ruby>がこわれるぐらいやわらかくにぎる。"
             },
             {
               "id": 4,
               "text_ja": "くずれないけれども食べるときにはやわらかいと感じるようににぎる。",
-              "text_en": "Shape it so that it will not crumble apart, yet feels tender and soft upon eating."
+              "text_en": "Shape it so that it will not crumble apart, yet feels tender and soft upon eating.",
+              "text_ja_ruby": "くずれないけれども<ruby>食<rt>た</rt></ruby>べるときにはやわらかいと<ruby>感<rt>かん</rt></ruby>じるようににぎる。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文に「食べるときにお米と具の味が混ざるように、ふわふわと、でも、くずれない程度に力を込めてにぎらなければならない」とあります。形が崩れない硬さを保ちながら、口の中でふんわりと柔らかく感じられる程度に握るのが正しいため、4が正解です。",
-          "explanation_en": "The author explains: 'You must shape it with just enough firmness so it does not fall apart, yet keeping it fluffy so that the flavor of the rice and filling blend together when eaten.' Thus, Option 4 is correct."
+          "explanation_en": "The author explains: 'You must shape it with just enough firmness so it does not fall apart, yet keeping it fluffy so that the flavor of the rice and filling blend together when eaten.' Thus, Option 4 is correct.",
+          "questionText_ja_ruby": "<ruby>上手<rt>じょうず</rt></ruby>なおにぎりの<ruby>作<rt>つく</rt></ruby>り<ruby>方<rt>かた</rt></ruby>として<ruby>正<rt>ただ</rt></ruby>しいのはどれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>食<rt>た</rt></ruby>べるときにお<ruby>米<rt>こめ</rt></ruby>と<ruby>具<rt>ぐ</rt></ruby>の<ruby>味<rt>あじ</rt></ruby>が<ruby>混<rt>ま</rt></ruby>ざるように、ふわふわと、でも、くずれない<ruby>程度<rt>ていど</rt></ruby>に<ruby>力<rt>ちから</rt></ruby>を<ruby>込<rt>こ</rt></ruby>めてにぎらなければならない」とあります。<ruby>形<rt>かたち</rt></ruby>が<ruby>崩<rt>くず</rt></ruby>れない<ruby>硬<rt>がた</rt></ruby>さを<ruby>保<rt>たも</rt></ruby>ちながら、<ruby>口<rt>くち</rt></ruby>の<ruby>中<rt>なか</rt></ruby>でふんわりと<ruby>柔<rt>やわ</rt></ruby>らかく<ruby>感<rt>かん</rt></ruby>じられる<ruby>程度<rt>ていど</rt></ruby>に<ruby>握<rt>にぎ</rt></ruby>るのが<ruby>正<rt>ただ</rt></ruby>しいため、4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -400,27 +412,33 @@
             {
               "id": 1,
               "text_ja": "何千年も米を食べ続けているから。",
-              "text_en": "Because they have continued to eat rice for thousands of years."
+              "text_en": "Because they have continued to eat rice for thousands of years.",
+              "text_ja_ruby": "<ruby>何千<rt>なんぜん</rt></ruby><ruby>年<rt>ねん</rt></ruby>も<ruby>米<rt>こめ</rt></ruby>を<ruby>食<rt>た</rt></ruby>べ<ruby>続<rt>つづ</rt></ruby>けているから。"
             },
             {
               "id": 2,
               "text_ja": "昔から協力して飲み水を管理してきたから。",
-              "text_en": "Because they have cooperatively managed drinking water since ancient times."
+              "text_en": "Because they have cooperatively managed drinking water since ancient times.",
+              "text_ja_ruby": "<ruby>昔<rt>むかし</rt></ruby>から<ruby>協力<rt>きょうりょく</rt></ruby>して<ruby>飲<rt>の</rt></ruby>み<ruby>水<rt>みず</rt></ruby>を<ruby>管理<rt>かんり</rt></ruby>してきたから。"
             },
             {
               "id": 3,
               "text_ja": "自分の田んぼで上手に稲を作ろうと競争してきたから。",
-              "text_en": "Because they competed to grow rice skillfully in their own paddies."
+              "text_en": "Because they competed to grow rice skillfully in their own paddies.",
+              "text_ja_ruby": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>田<rt>た</rt></ruby>んぼで<ruby>上手<rt>じょうず</rt></ruby>に<ruby>稲<rt>いね</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ろうと<ruby>競争<rt>きょうそう</rt></ruby>してきたから。"
             },
             {
               "id": 4,
               "text_ja": "みんなでする作業が多い稲作を続けてきたから。",
-              "text_en": "Because they continued rice farming, which involves many group tasks."
+              "text_en": "Because they continued rice farming, which involves many group tasks.",
+              "text_ja_ruby": "みんなでする<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>稲作<rt>いなさく</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けてきたから。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文に「稲作では田植えや収穫など、みんなで一度に行う作業が多い」「稲作で使う水を個人の田んぼだけではなく、地域全体を考えて管理する必要がある」「このような稲作を何千年も続ける中で、日本社会では『みんな』がとても重要な基準になっていった」と書かれています。全員で協力する作業が多い稲作を長期にわたって行ってきたことが理由であるため、4が正解です。",
-          "explanation_en": "The text states that rice farming required many collective tasks such as planting and harvesting, as well as community-wide water management, which shaped collective awareness over millennia. Hence, Option 4 is correct."
+          "explanation_en": "The text states that rice farming required many collective tasks such as planting and harvesting, as well as community-wide water management, which shaped collective awareness over millennia. Hence, Option 4 is correct.",
+          "questionText_ja_ruby": "どうして<ruby>日本人<rt>にほんじん</rt></ruby>は<ruby>集団<rt>しゅうだん</rt></ruby><ruby>主義<rt>しゅぎ</rt></ruby>になったと<ruby>書<rt>か</rt></ruby>かれているか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>稲作<rt>いなさく</rt></ruby>では<ruby>田植<rt>たう</rt></ruby>えや<ruby>収穫<rt>しゅうかく</rt></ruby>など、みんなで<ruby>一度<rt>いちど</rt></ruby>に<ruby>行<rt>おこな</rt></ruby>う<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い」「<ruby>稲作<rt>いなさく</rt></ruby>で<ruby>使<rt>つか</rt></ruby>う<ruby>水<rt>みず</rt></ruby>を<ruby>個人<rt>こじん</rt></ruby>の<ruby>田<rt>た</rt></ruby>んぼだけではなく、<ruby>地域<rt>ちいき</rt></ruby><ruby>全体<rt>ぜんたい</rt></ruby>を<ruby>考<rt>かんが</rt></ruby>えて<ruby>管理<rt>かんり</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>がある」「このような<ruby>稲作<rt>いなさく</rt></ruby>を<ruby>何千<rt>なんぜん</rt></ruby><ruby>年<rt>ねん</rt></ruby>も<ruby>続<rt>つづ</rt></ruby>ける<ruby>中<rt>なか</rt></ruby>で、<ruby>日本社会<rt>にほんしゃかい</rt></ruby>では『みんな』がとても<ruby>重要<rt>じゅうよう</rt></ruby>な<ruby>基準<rt>きじゅん</rt></ruby>になっていった」と<ruby>書<rt>か</rt></ruby>かれています。<ruby>全員<rt>ぜんいん</rt></ruby>で<ruby>協力<rt>きょうりょく</rt></ruby>する<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い<ruby>稲作<rt>いなさく</rt></ruby>を<ruby>長期<rt>ちょうき</rt></ruby>にわたって<ruby>行<rt>い</rt></ruby>ってきたことが<ruby>理由<rt>りゆう</rt></ruby>であるため、4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -568,27 +586,33 @@
             {
               "id": 1,
               "text_ja": "ライトがつかなくなったら、電池を取り替えればよい。",
-              "text_en": "If the light stops turning on, you should replace the batteries."
+              "text_en": "If the light stops turning on, you should replace the batteries.",
+              "text_ja_ruby": "ライトがつかなくなったら、<ruby>電池<rt>でんち</rt></ruby>を<ruby>取<rt>と</rt></ruby>り<ruby>替<rt>か</rt></ruby>えればよい。"
             },
             {
               "id": 2,
               "text_ja": "ライトが暗くなったら、ハンドルを回して発電すればよい。",
-              "text_en": "If the light becomes dim, you should turn the handle to generate power."
+              "text_en": "If the light becomes dim, you should turn the handle to generate power.",
+              "text_ja_ruby": "ライトが<ruby>暗<rt>くら</rt></ruby>くなったら、ハンドルを<ruby>回<rt>まわ</rt></ruby>して<ruby>発電<rt>はつでん</rt></ruby>すればよい。"
             },
             {
               "id": 3,
               "text_ja": "ライトスイッチを押せば、ライトを点滅させることができる。",
-              "text_en": "If you press the light switch, you can make the light flash."
+              "text_en": "If you press the light switch, you can make the light flash.",
+              "text_ja_ruby": "ライトスイッチを<ruby>押<rt>お</rt></ruby>せば、ライトを<ruby>点滅<rt>てんめつ</rt></ruby>させることができる。"
             },
             {
               "id": 4,
               "text_ja": "長時間使うとライトが暗くなるので、短い時間だけ使うようにする。",
-              "text_en": "Because using it for a long time dims the light, you should only use it for brief intervals."
+              "text_en": "Because using it for a long time dims the light, you should only use it for brief intervals.",
+              "text_ja_ruby": "<ruby>長時間<rt>ちょうじかん</rt></ruby><ruby>使<rt>つか</rt></ruby>うとライトが<ruby>暗<rt>くら</rt></ruby>くなるので、<ruby>短<rt>みじか</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>だけ<ruby>使<rt>つか</rt></ruby>うようにする。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "「使用上の注意」に「暗くなりましたら、発電用ハンドルを回してください」と明記されているため、2が正解です。手動発電式のため電池交換は不要で、点滅にはスイッチに加えて白いボタンを押す必要があります。",
-          "explanation_en": "The precautions explicitly state: 'If it dims, please turn the power generation handle.' Thus, Option 2 is correct. Since it is hand-crank powered, no batteries are replaced, and flashing requires pressing the white button after the main switch."
+          "explanation_en": "The precautions explicitly state: 'If it dims, please turn the power generation handle.' Thus, Option 2 is correct. Since it is hand-crank powered, no batteries are replaced, and flashing requires pressing the white button after the main switch.",
+          "questionText_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "explanation_ja_ruby": "「<ruby>使用上<rt>しようじょう</rt></ruby>の<ruby>注意<rt>ちゅうい</rt></ruby>」に「<ruby>暗<rt>くら</rt></ruby>くなりましたら、<ruby>発電用<rt>はつでんよう</rt></ruby>ハンドルを<ruby>回<rt>まわ</rt></ruby>してください」と<ruby>明記<rt>めいき</rt></ruby>されているため、2が<ruby>正解<rt>せいかい</rt></ruby>です。<ruby>手動<rt>しゅどう</rt></ruby><ruby>発電<rt>はつでん</rt></ruby><ruby>式<rt>しき</rt></ruby>のため<ruby>電池交換<rt>でんちこうかん</rt></ruby>は<ruby>不要<rt>ふよう</rt></ruby>で、<ruby>点滅<rt>てんめつ</rt></ruby>にはスイッチに<ruby>加<rt>くわ</rt></ruby>えて<ruby>白<rt>しろ</rt></ruby>いボタンを<ruby>押<rt>お</rt></ruby>す<ruby>必要<rt>ひつよう</rt></ruby>があります。"
         }
       ]
     },
@@ -708,27 +732,33 @@
             {
               "id": 1,
               "text_ja": "もう一度先生の都合を聞くメール",
-              "text_en": "An email asking about the professor's schedule once again"
+              "text_en": "An email asking about the professor's schedule once again",
+              "text_ja_ruby": "もう<ruby>一度<rt>いちど</rt></ruby><ruby>先生<rt>せんせい</rt></ruby>の<ruby>都合<rt>つごう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くメール"
             },
             {
               "id": 2,
               "text_ja": "自分の都合を教えるメール",
-              "text_en": "An email informing the professor of her own availability"
+              "text_en": "An email informing the professor of her own availability",
+              "text_ja_ruby": "<ruby>自分<rt>じぶん</rt></ruby>の<ruby>都合<rt>つごう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えるメール"
             },
             {
               "id": 3,
               "text_ja": "約束を延期したことをあやまるメール",
-              "text_en": "An email apologizing for having postponed the appointment"
+              "text_en": "An email apologizing for having postponed the appointment",
+              "text_ja_ruby": "<ruby>約束<rt>やくそく</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>したことをあやまるメール"
             },
             {
               "id": 4,
               "text_ja": "都合が悪くなったことをあやまるメール",
-              "text_en": "An email apologizing for her schedule having conflicted"
+              "text_en": "An email apologizing for her schedule having conflicted",
+              "text_ja_ruby": "<ruby>都合<rt>つごう</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなったことをあやまるメール"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "山田先生から代替の日程候補が具体的に提示されており、文末で「サラさんの都合を教えてください」と依頼されています。したがって、サラさんは提示された候補の中から自分の都合を伝えるメールを返信するのが適切であり、2が正解です。",
-          "explanation_en": "Professor Yamada offered specific alternate dates and concluded by asking Sarah to inform her of her schedule ('サラさんの都合を教えてください'). Therefore, Sarah should send an email indicating her availability, making Option 2 correct."
+          "explanation_en": "Professor Yamada offered specific alternate dates and concluded by asking Sarah to inform her of her schedule ('サラさんの都合を教えてください'). Therefore, Sarah should send an email indicating her availability, making Option 2 correct.",
+          "questionText_ja_ruby": "このメールを<ruby>読<rt>よ</rt></ruby>んだ<ruby>後<rt>あと</rt></ruby>、サラさんは<ruby>山田<rt>やまだ</rt></ruby><ruby>先生<rt>せんせい</rt></ruby>にどんなメールを<ruby>出<rt>だ</rt></ruby>せばよいか。",
+          "explanation_ja_ruby": "<ruby>山田<rt>やまだ</rt></ruby><ruby>先生<rt>せんせい</rt></ruby>から<ruby>代替<rt>だいたい</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby><ruby>候補<rt>こうほ</rt></ruby>が<ruby>具体的<rt>ぐたいてき</rt></ruby>に<ruby>提示<rt>ていじ</rt></ruby>されており、<ruby>文末<rt>ぶんまつ</rt></ruby>で「サラさんの<ruby>都合<rt>つごう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えてください」と<ruby>依頼<rt>いらい</rt></ruby>されています。したがって、サラさんは<ruby>提示<rt>ていじ</rt></ruby>された<ruby>候補<rt>こうほ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>から<ruby>自分<rt>じぶん</rt></ruby>の<ruby>都合<rt>つごう</rt></ruby>を<ruby>伝<rt>つた</rt></ruby>えるメールを<ruby>返信<rt>へんしん</rt></ruby>するのが<ruby>適切<rt>てきせつ</rt></ruby>であり、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -877,27 +907,33 @@
             {
               "id": 1,
               "text_ja": "3億円を何かに使う夢を見たかったから。",
-              "text_en": "Because he wanted to dream of using 300 million yen for something."
+              "text_en": "Because he wanted to dream of using 300 million yen for something.",
+              "text_ja_ruby": "3<ruby>億円<rt>おくえん</rt></ruby>を<ruby>何<rt>なに</rt></ruby>かに<ruby>使<rt>つか</rt></ruby>う<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>見<rt>み</rt></ruby>たかったから。"
             },
             {
               "id": 2,
               "text_ja": "亡くなった妻が宝くじが好きだったから。",
-              "text_en": "Because his deceased wife loved the lottery."
+              "text_en": "Because his deceased wife loved the lottery.",
+              "text_ja_ruby": "<ruby>亡<rt>な</rt></ruby>くなった<ruby>妻<rt>つま</rt></ruby>が<ruby>宝<rt>たから</rt></ruby>くじが<ruby>好<rt>す</rt></ruby>きだったから。"
             },
             {
               "id": 3,
               "text_ja": "お金が欲しいと思ったから。",
-              "text_en": "Because he wanted money."
+              "text_en": "Because he wanted money.",
+              "text_ja_ruby": "お<ruby>金<rt>かね</rt></ruby>が<ruby>欲<rt>ほ</rt></ruby>しいと<ruby>思<rt>おも</rt></ruby>ったから。"
             },
             {
               "id": 4,
               "text_ja": "楽しいことがあると思ったから。",
-              "text_en": "Because he thought something fun would happen."
+              "text_en": "Because he thought something fun would happen.",
+              "text_ja_ruby": "<ruby>楽<rt>たの</rt></ruby>しいことがあると<ruby>思<rt>おも</rt></ruby>ったから。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文に「彼が宝くじを買ったのは、亡くなった妻が宝くじを楽しんでいたためで、お金が欲しいからではなかった」と明確に書かれているため、2が正解です。",
-          "explanation_en": "The passage directly explains: 'He had bought the lottery ticket because his late wife used to enjoy the lottery, not because he wanted money.' Therefore, Option 2 is correct."
+          "explanation_en": "The passage directly explains: 'He had bought the lottery ticket because his late wife used to enjoy the lottery, not because he wanted money.' Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "<ruby>彼<rt>かれ</rt></ruby>はどうして3<ruby>億円<rt>おくえん</rt></ruby>の<ruby>宝<rt>たから</rt></ruby>くじを<ruby>買<rt>か</rt></ruby>ったのか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>彼<rt>かれ</rt></ruby>が<ruby>宝<rt>たから</rt></ruby>くじを<ruby>買<rt>か</rt></ruby>ったのは、<ruby>亡<rt>な</rt></ruby>くなった<ruby>妻<rt>つま</rt></ruby>が<ruby>宝<rt>たから</rt></ruby>くじを<ruby>楽<rt>たの</rt></ruby>しんでいたためで、お<ruby>金<rt>かね</rt></ruby>が<ruby>欲<rt>ほ</rt></ruby>しいからではなかった」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>書<rt>か</rt></ruby>かれているため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-33-2",
@@ -908,27 +944,33 @@
             {
               "id": 1,
               "text_ja": "子どもや親せきと分けようと思った。",
-              "text_en": "He thought about dividing it with children or relatives."
+              "text_en": "He thought about dividing it with children or relatives.",
+              "text_ja_ruby": "<ruby>子<rt>こ</rt></ruby>どもや<ruby>親<rt>した</rt></ruby>せきと<ruby>分<rt>わ</rt></ruby>けようと<ruby>思<rt>おも</rt></ruby>った。"
             },
             {
               "id": 2,
               "text_ja": "高級車を買おうと思った。",
-              "text_en": "He thought about buying a luxury car."
+              "text_en": "He thought about buying a luxury car.",
+              "text_ja_ruby": "<ruby>高級車<rt>こうきゅうしゃ</rt></ruby>を<ruby>買<rt>か</rt></ruby>おうと<ruby>思<rt>おも</rt></ruby>った。"
             },
             {
               "id": 3,
               "text_ja": "大きな家を買おうと思った。",
-              "text_en": "He thought about buying a large house."
+              "text_en": "He thought about buying a large house.",
+              "text_ja_ruby": "<ruby>大<rt>おお</rt></ruby>きな<ruby>家<rt>いえ</rt></ruby>を<ruby>買<rt>か</rt></ruby>おうと<ruby>思<rt>おも</rt></ruby>った。"
             },
             {
               "id": 4,
               "text_ja": "受け取らないことにしようと思った。",
-              "text_en": "He decided not to receive the prize money."
+              "text_en": "He decided not to receive the prize money.",
+              "text_ja_ruby": "<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らないことにしようと<ruby>思<rt>おも</rt></ruby>った。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文冒頭に「それが当たったのにお金を受け取らなかった人がいる」「受け取らない理由は『どう使えばいいかわからないから。』だそうだ」とある通り、彼は当選金を受け取らないことに決めました。したがって、4が正解です。",
-          "explanation_en": "As stated in the text, he won the jackpot yet did not take the money because he didn't know how to use it, choosing not to collect it. Hence, Option 4 is correct."
+          "explanation_en": "As stated in the text, he won the jackpot yet did not take the money because he didn't know how to use it, choosing not to collect it. Hence, Option 4 is correct.",
+          "questionText_ja_ruby": "3<ruby>億円<rt>おくえん</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たった<ruby>後<rt>あと</rt></ruby>で<ruby>彼<rt>かれ</rt></ruby>はどうしようと<ruby>思<rt>おも</rt></ruby>ったか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby><ruby>冒頭<rt>ぼうとう</rt></ruby>に「それが<ruby>当<rt>あ</rt></ruby>たったのにお<ruby>金<rt>かね</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らなかった<ruby>人<rt>ひと</rt></ruby>がいる」「<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らない<ruby>理由<rt>りゆう</rt></ruby>は『どう<ruby>使<rt>つか</rt></ruby>えばいいかわからないから。』だそうだ」とある<ruby>通<rt>とう</rt></ruby>り、<ruby>彼<rt>かれ</rt></ruby>は<ruby>当選<rt>とうせん</rt></ruby><ruby>金<rt>かね</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らないことに<ruby>決<rt>き</rt></ruby>めました。したがって、4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-33-3",
@@ -939,27 +981,33 @@
             {
               "id": 1,
               "text_ja": "何人もの人に相談して意見を聞いたから。",
-              "text_en": "Because he consulted multiple people and listened to their opinions."
+              "text_en": "Because he consulted multiple people and listened to their opinions.",
+              "text_ja_ruby": "<ruby>何人<rt>なんにん</rt></ruby>もの<ruby>人<rt>ひと</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>して<ruby>意見<rt>いけん</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いたから。"
             },
             {
               "id": 2,
               "text_ja": "面倒な問題が起きる可能性がなくなったから。",
-              "text_en": "Because the possibility of troublesome problems arising was eliminated."
+              "text_en": "Because the possibility of troublesome problems arising was eliminated.",
+              "text_ja_ruby": "<ruby>面倒<rt>めんどう</rt></ruby>な<ruby>問題<rt>もんだい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる<ruby>可能性<rt>かのうせい</rt></ruby>がなくなったから。"
             },
             {
               "id": 3,
               "text_ja": "お金を役立つように使おうとしたから。",
-              "text_en": "Because he tried to use the money helpfully."
+              "text_en": "Because he tried to use the money helpfully.",
+              "text_ja_ruby": "お<ruby>金<rt>かね</rt></ruby>を<ruby>役立<rt>やくた</rt></ruby>つように<ruby>使<rt>つか</rt></ruby>おうとしたから。"
             },
             {
               "id": 4,
               "text_ja": "車や家を買って周りの人にあげようと思ったから。",
-              "text_en": "Because he thought about buying cars or houses to give to people around him."
+              "text_en": "Because he thought about buying cars or houses to give to people around him.",
+              "text_ja_ruby": "<ruby>車<rt>くるま</rt></ruby>や<ruby>家<rt>いえ</rt></ruby>を<ruby>買<rt>か</rt></ruby>って<ruby>周<rt>まわ</rt></ruby>りの<ruby>人<rt>ひと</rt></ruby>にあげようと<ruby>思<rt>おも</rt></ruby>ったから。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文に「もし3億円を受け取ったら、その金を目的に人が寄ってきていろいろな問題が起きるかもしれない。楽しい事より大変な事が多いと考えたのだろう」とあります。受け取らないことでそうした面倒なトラブルを避けることができたため、「かしこい判断」と評されています。したがって、2が正解です。",
-          "explanation_en": "The author notes that taking the money could cause people to gather seeking it, bringing about various troubles. Declining the prize eliminated these troublesome risks, making Option 2 correct."
+          "explanation_en": "The author notes that taking the money could cause people to gather seeking it, bringing about various troubles. Declining the prize eliminated these troublesome risks, making Option 2 correct.",
+          "questionText_ja_ruby": "<ruby>彼<rt>かれ</rt></ruby>がかしこい<ruby>判断<rt>はんだん</rt></ruby>をしたのかもしれない。とあるが、それはなぜか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「もし3<ruby>億円<rt>おくえん</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>ったら、その<ruby>金<rt>かね</rt></ruby>を<ruby>目的<rt>もくてき</rt></ruby>に<ruby>人<rt>ひと</rt></ruby>が<ruby>寄<rt>よ</rt></ruby>ってきていろいろな<ruby>問題<rt>もんだい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きるかもしれない。<ruby>楽<rt>たの</rt></ruby>しい<ruby>事<rt>こと</rt></ruby>より<ruby>大変<rt>たいへん</rt></ruby>な<ruby>事<rt>こと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いと<ruby>考<rt>かんが</rt></ruby>えたのだろう」とあります。<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>らないことでそうした<ruby>面倒<rt>めんどう</rt></ruby>なトラブルを<ruby>避<rt>さ</rt></ruby>けることができたため、「かしこい<ruby>判断<rt>はんだん</rt></ruby>」と<ruby>評<rt>ひょう</rt></ruby>されています。したがって、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -1092,27 +1140,33 @@
             {
               "id": 1,
               "text_ja": "人間関係や勉強や仕事のことなどがストレスになる。",
-              "text_en": "Things like interpersonal relations, studies, and work become stress."
+              "text_en": "Things like interpersonal relations, studies, and work become stress.",
+              "text_ja_ruby": "<ruby>人間関係<rt>にんげんかんけい</rt></ruby>や<ruby>勉強<rt>べんきょう</rt></ruby>や<ruby>仕事<rt>しごと</rt></ruby>のことなどがストレスになる。"
             },
             {
               "id": 2,
               "text_ja": "ストレスが原因で体をこわすこともある。",
-              "text_en": "Stress can sometimes cause one's health to break down."
+              "text_en": "Stress can sometimes cause one's health to break down.",
+              "text_ja_ruby": "ストレスが<ruby>原因<rt>げんいん</rt></ruby>で<ruby>体<rt>てい</rt></ruby>をこわすこともある。"
             },
             {
               "id": 3,
               "text_ja": "小さなストレスが一番困る。",
-              "text_en": "Small, bearable stress is the most problematic."
+              "text_en": "Small, bearable stress is the most problematic.",
+              "text_ja_ruby": "<ruby>小<rt>ちい</rt></ruby>さなストレスが<ruby>一番<rt>いちばん</rt></ruby><ruby>困<rt>こま</rt></ruby>る。"
             },
             {
               "id": 4,
               "text_ja": "ストレスが全くない生活をするべきだ。",
-              "text_en": "One should live a life completely free of stress."
+              "text_en": "One should live a life completely free of stress.",
+              "text_ja_ruby": "ストレスが<ruby>全<rt>まった</rt></ruby>くない<ruby>生活<rt>せいかつ</rt></ruby>をするべきだ。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "本文に「専門家に言わせると、このがまんできるぐらいのストレスが一番問題なのだという」と明確に述べられています。がまんできる小さなストレスこそが最も問題であるため、3が正解です。",
-          "explanation_en": "The author explains: 'According to specialists, this bearable level of stress is actually the most problematic.' Thus, Option 3 is correct."
+          "explanation_en": "The author explains: 'According to specialists, this bearable level of stress is actually the most problematic.' Thus, Option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>専門家<rt>せんもんか</rt></ruby>はストレスについてどう<ruby>言<rt>い</rt></ruby>っているか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>専門家<rt>せんもんか</rt></ruby>に<ruby>言<rt>い</rt></ruby>わせると、このがまんできるぐらいのストレスが<ruby>一番問題<rt>いちばんもんだい</rt></ruby>なのだという」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>述<rt>の</rt></ruby>べられています。がまんできる<ruby>小<rt>ちい</rt></ruby>さなストレスこそが<ruby>最<rt>もっと</rt></ruby>も<ruby>問題<rt>もんだい</rt></ruby>であるため、3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-34-2",
@@ -1123,27 +1177,33 @@
             {
               "id": 1,
               "text_ja": "大きなストレスをがまんしているうちに",
-              "text_en": "While enduring large stresses"
+              "text_en": "While enduring large stresses",
+              "text_ja_ruby": "<ruby>大<rt>おお</rt></ruby>きなストレスをがまんしているうちに"
             },
             {
               "id": 2,
               "text_ja": "大きなストレスを解決しようとしているうちに",
-              "text_en": "While trying to resolve large stresses"
+              "text_en": "While trying to resolve large stresses",
+              "text_ja_ruby": "<ruby>大<rt>おお</rt></ruby>きなストレスを<ruby>解決<rt>かいけつ</rt></ruby>しようとしているうちに"
             },
             {
               "id": 3,
               "text_ja": "小さなストレスをそのままにしているうちに",
-              "text_en": "While leaving small stresses as they are without resolving them"
+              "text_en": "While leaving small stresses as they are without resolving them",
+              "text_ja_ruby": "<ruby>小<rt>ちい</rt></ruby>さなストレスをそのままにしているうちに"
             },
             {
               "id": 4,
               "text_ja": "ストレスが全然ない生活をしているうちに",
-              "text_en": "While living a life with zero stress"
+              "text_en": "While living a life with zero stress",
+              "text_ja_ruby": "ストレスが<ruby>全然<rt>ぜんぜん</rt></ruby>ない<ruby>生活<rt>せいかつ</rt></ruby>をしているうちに"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "直前の文「受けたストレスをがまんできると思うと、人はそれを解決せずそのままにしてしまうからだ」を承けており、がまんできる小さなストレスを未解決のまま放置している状態を指しています。したがって、3が正解です。",
-          "explanation_en": "This refers directly to the previous sentence stating that people leave bearable stress unresolved as it is without addressing it, making Option 3 correct."
+          "explanation_en": "This refers directly to the previous sentence stating that people leave bearable stress unresolved as it is without addressing it, making Option 3 correct.",
+          "questionText_ja_ruby": "そうしているうちに とあるが、これは<ruby>何<rt>なに</rt></ruby>を<ruby>指<rt>さ</rt></ruby>しているのか。",
+          "explanation_ja_ruby": "<ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>「<ruby>受<rt>う</rt></ruby>けたストレスをがまんできると<ruby>思<rt>おも</rt></ruby>うと、<ruby>人<rt>ひと</rt></ruby>はそれを<ruby>解決<rt>かいけつ</rt></ruby>せずそのままにしてしまうからだ」を<ruby>承<rt>しょう</rt></ruby>けており、がまんできる<ruby>小<rt>ちい</rt></ruby>さなストレスを<ruby>未解決<rt>みかいけつ</rt></ruby>のまま<ruby>放置<rt>ほうち</rt></ruby>している<ruby>状態<rt>じょうたい</rt></ruby>を<ruby>指<rt>さ</rt></ruby>しています。したがって、3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-34-3",
@@ -1154,27 +1214,33 @@
             {
               "id": 1,
               "text_ja": "小さくてがまんできるストレスならば何も心配いらない。",
-              "text_en": "If it is small and bearable stress, there is no need to worry at all."
+              "text_en": "If it is small and bearable stress, there is no need to worry at all.",
+              "text_ja_ruby": "<ruby>小<rt>ちい</rt></ruby>さくてがまんできるストレスならば<ruby>何<rt>なに</rt></ruby>も<ruby>心配<rt>しんぱい</rt></ruby>いらない。"
             },
             {
               "id": 2,
               "text_ja": "ストレスが大きいと必ず心や体をこわしてしまう。",
-              "text_en": "If stress is large, it will always ruin mind and body."
+              "text_en": "If stress is large, it will always ruin mind and body.",
+              "text_ja_ruby": "ストレスが<ruby>大<rt>おお</rt></ruby>きいと<ruby>必<rt>かなら</rt></ruby>ず<ruby>心<rt>こころ</rt></ruby>や<ruby>体<rt>てい</rt></ruby>をこわしてしまう。"
             },
             {
               "id": 3,
               "text_ja": "小さなストレスでも解決しなければ心や体をこわす原因になる。",
-              "text_en": "Even small stresses will become the cause of breaking mind and body if not resolved."
+              "text_en": "Even small stresses will become the cause of breaking mind and body if not resolved.",
+              "text_ja_ruby": "<ruby>小<rt>ちい</rt></ruby>さなストレスでも<ruby>解決<rt>かいけつ</rt></ruby>しなければ<ruby>心<rt>こころ</rt></ruby>や<ruby>体<rt>てい</rt></ruby>をこわす<ruby>原因<rt>げんいん</rt></ruby>になる。"
             },
             {
               "id": 4,
               "text_ja": "大きなストレスは成長するきっかけになるから辛くない。",
-              "text_en": "Large stress is not painful because it becomes a chance to grow."
+              "text_en": "Large stress is not painful because it becomes a chance to grow.",
+              "text_ja_ruby": "<ruby>大<rt>おお</rt></ruby>きなストレスは<ruby>成長<rt>せいちょう</rt></ruby>するきっかけになるから<ruby>辛<rt>つら</rt></ruby>くない。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "本文では、がまんできる小さなストレスであっても解決せずに放置していると、やがて心や体を壊す原因になると説明されています。したがって、3が正解です。",
-          "explanation_en": "The passage explains that leaving even tolerable small stresses unaddressed will eventually break down one's body and mind, making Option 3 correct."
+          "explanation_en": "The passage explains that leaving even tolerable small stresses unaddressed will eventually break down one's body and mind, making Option 3 correct.",
+          "questionText_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>では、がまんできる<ruby>小<rt>ちい</rt></ruby>さなストレスであっても<ruby>解決<rt>かいけつ</rt></ruby>せずに<ruby>放置<rt>ほうち</rt></ruby>していると、やがて<ruby>心<rt>こころ</rt></ruby>や<ruby>体<rt>てい</rt></ruby>を<ruby>壊<rt>こわ</rt></ruby>す<ruby>原因<rt>げんいん</rt></ruby>になると<ruby>説明<rt>せつめい</rt></ruby>されています。したがって、3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -1337,27 +1403,33 @@
             {
               "id": 1,
               "text_ja": "昔は日本中にいたが、数を減らし、今は佐渡に数羽いるだけである。",
-              "text_en": "Formerly they lived throughout Japan, but declined and now only several birds remain on Sado."
+              "text_en": "Formerly they lived throughout Japan, but declined and now only several birds remain on Sado.",
+              "text_ja_ruby": "<ruby>昔<rt>むかし</rt></ruby>は<ruby>日本中<rt>にほんじゅう</rt></ruby>にいたが、<ruby>数<rt>かず</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らし、<ruby>今<rt>いま</rt></ruby>は<ruby>佐渡<rt>さど</rt></ruby>に<ruby>数<rt>かず</rt></ruby><ruby>羽<rt>はね</rt></ruby>いるだけである。"
             },
             {
               "id": 2,
               "text_ja": "日本各地の田んぼや森にいたが、絶滅し、今は輸入されたトキを育てている。",
-              "text_en": "They used to live in paddies and forests across Japan but went extinct, and now imported ones are being bred."
+              "text_en": "They used to live in paddies and forests across Japan but went extinct, and now imported ones are being bred.",
+              "text_ja_ruby": "<ruby>日本各地<rt>にほんかくち</rt></ruby>の<ruby>田<rt>た</rt></ruby>んぼや<ruby>森<rt>もり</rt></ruby>にいたが、<ruby>絶滅<rt>ぜつめつ</rt></ruby>し、<ruby>今<rt>いま</rt></ruby>は<ruby>輸入<rt>ゆにゅう</rt></ruby>されたトキを<ruby>育<rt>そだ</rt></ruby>てている。"
             },
             {
               "id": 3,
               "text_ja": "工業化が進むにしたがって数が減ってしまったが、現在はまた増えている。",
-              "text_en": "Numbers declined as industrialization progressed, but are now naturally increasing again."
+              "text_en": "Numbers declined as industrialization progressed, but are now naturally increasing again.",
+              "text_ja_ruby": "<ruby>工業<rt>こうぎょう</rt></ruby><ruby>化<rt>か</rt></ruby>が<ruby>進<rt>すす</rt></ruby>むにしたがって<ruby>数<rt>かず</rt></ruby>が<ruby>減<rt>へ</rt></ruby>ってしまったが、<ruby>現在<rt>げんざい</rt></ruby>はまた<ruby>増<rt>ふ</rt></ruby>えている。"
             },
             {
               "id": 4,
               "text_ja": "絶滅してしまったため、トキに似た中国の鳥を輸入し、育てている。",
-              "text_en": "Because they went extinct, birds from China resembling toki were imported and raised."
+              "text_en": "Because they went extinct, birds from China resembling toki were imported and raised.",
+              "text_ja_ruby": "<ruby>絶滅<rt>ぜつめつ</rt></ruby>してしまったため、トキに<ruby>似<rt>に</rt></ruby>た<ruby>中国<rt>ちゅうごく</rt></ruby>の<ruby>鳥<rt>とり</rt></ruby>を<ruby>輸入<rt>ゆにゅう</rt></ruby>し、<ruby>育<rt>そだ</rt></ruby>てている。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文に「1981年、ついに日本のトキは絶滅した」「現在は、中国にいた同じ種類のトキを輸入し、佐渡という島で育てている」と書かれています。日本固有の群れは絶滅し、現在は中国から輸入された同種のトキを飼育しているため、2が正解です。",
-          "explanation_en": "The passage confirms that Japan's native toki went extinct in 1981, and that individuals of the identical species imported from China are currently bred on Sado Island. Thus, Option 2 is correct."
+          "explanation_en": "The passage confirms that Japan's native toki went extinct in 1981, and that individuals of the identical species imported from China are currently bred on Sado Island. Thus, Option 2 is correct.",
+          "questionText_ja_ruby": "<ruby>日本<rt>にっぽん</rt></ruby>のトキの<ruby>説明<rt>せつめい</rt></ruby>について、<ruby>本文<rt>ほんぶん</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「1981<ruby>年<rt>ねん</rt></ruby>、ついに<ruby>日本<rt>にっぽん</rt></ruby>のトキは<ruby>絶滅<rt>ぜつめつ</rt></ruby>した」「<ruby>現在<rt>げんざい</rt></ruby>は、<ruby>中国<rt>ちゅうごく</rt></ruby>にいた<ruby>同<rt>おな</rt></ruby>じ<ruby>種類<rt>しゅるい</rt></ruby>のトキを<ruby>輸入<rt>ゆにゅう</rt></ruby>し、<ruby>佐渡<rt>さど</rt></ruby>という<ruby>島<rt>しま</rt></ruby>で<ruby>育<rt>そだ</rt></ruby>てている」と<ruby>書<rt>か</rt></ruby>かれています。<ruby>日本固有<rt>にほんこゆう</rt></ruby>の<ruby>群<rt>む</rt></ruby>れは<ruby>絶滅<rt>ぜつめつ</rt></ruby>し、<ruby>現在<rt>げんざい</rt></ruby>は<ruby>中国<rt>ちゅうごく</rt></ruby>から<ruby>輸入<rt>ゆにゅう</rt></ruby>された<ruby>同種<rt>どうしゅ</rt></ruby>のトキを<ruby>飼育<rt>しいく</rt></ruby>しているため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-35-2",
@@ -1368,27 +1440,33 @@
             {
               "id": 1,
               "text_ja": "トキが田んぼや森の生き物を食べすぎて、捕まえられたから。",
-              "text_en": "Because toki ate too many creatures in paddies and forests and were captured."
+              "text_en": "Because toki ate too many creatures in paddies and forests and were captured.",
+              "text_ja_ruby": "トキが<ruby>田<rt>た</rt></ruby>んぼや<ruby>森<rt>もり</rt></ruby>の<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>を<ruby>食<rt>た</rt></ruby>べすぎて、<ruby>捕<rt>つか</rt></ruby>まえられたから。"
             },
             {
               "id": 2,
               "text_ja": "捕まえられた上に、トキの住む環境も悪化したから。",
-              "text_en": "Because in addition to being hunted, the environment where they lived degraded."
+              "text_en": "Because in addition to being hunted, the environment where they lived degraded.",
+              "text_ja_ruby": "<ruby>捕<rt>つか</rt></ruby>まえられた<ruby>上<rt>うえ</rt></ruby>に、トキの<ruby>住<rt>す</rt></ruby>む<ruby>環境<rt>かんきょう</rt></ruby>も<ruby>悪化<rt>あっか</rt></ruby>したから。"
             },
             {
               "id": 3,
               "text_ja": "トキの生きられる場所が減り、中国などの国に行ってしまったから。",
-              "text_en": "Because places where toki could live decreased and they migrated to China."
+              "text_en": "Because places where toki could live decreased and they migrated to China.",
+              "text_ja_ruby": "トキの<ruby>生<rt>い</rt></ruby>きられる<ruby>場所<rt>ばしょ</rt></ruby>が<ruby>減<rt>へ</rt></ruby>り、<ruby>中国<rt>ちゅうごく</rt></ruby>などの<ruby>国<rt>くに</rt></ruby>に<ruby>行<rt>い</rt></ruby>ってしまったから。"
             },
             {
               "id": 4,
               "text_ja": "きれいなトキを飼いたいと思った人が多く、捕まえられたから。",
-              "text_en": "Because many people wanted to keep pretty toki as pets and caught them."
+              "text_en": "Because many people wanted to keep pretty toki as pets and caught them.",
+              "text_ja_ruby": "きれいなトキを<ruby>飼<rt>か</rt></ruby>いたいと<ruby>思<rt>おも</rt></ruby>った<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、<ruby>捕<rt>つか</rt></ruby>まえられたから。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "羽を取るために乱獲されたことに加え、工業化によって生息地である田んぼや森が減り、環境汚染が進んだことが原因と書かれています。捕獲と環境悪化の両方が要因であるため、2が正解です。",
-          "explanation_en": "Hunting for feathers combined with environmental destruction (habitat loss and pollution due to industrialization) caused the population decline, making Option 2 correct."
+          "explanation_en": "Hunting for feathers combined with environmental destruction (habitat loss and pollution due to industrialization) caused the population decline, making Option 2 correct.",
+          "questionText_ja_ruby": "<ruby>日本<rt>にっぽん</rt></ruby>のトキはなぜ、<ruby>数<rt>かず</rt></ruby>が<ruby>減<rt>へ</rt></ruby>ったのか。",
+          "explanation_ja_ruby": "<ruby>羽<rt>はね</rt></ruby>を<ruby>取<rt>と</rt></ruby>るために<ruby>乱獲<rt>らんかく</rt></ruby>されたことに<ruby>加<rt>くわ</rt></ruby>え、<ruby>工業<rt>こうぎょう</rt></ruby><ruby>化<rt>か</rt></ruby>によって<ruby>生息地<rt>せいそくち</rt></ruby>である<ruby>田<rt>た</rt></ruby>んぼや<ruby>森<rt>もり</rt></ruby>が<ruby>減<rt>へ</rt></ruby>り、<ruby>環境汚染<rt>かんきょうおせん</rt></ruby>が<ruby>進<rt>すす</rt></ruby>んだことが<ruby>原因<rt>げんいん</rt></ruby>と<ruby>書<rt>か</rt></ruby>かれています。<ruby>捕獲<rt>ほかく</rt></ruby>と<ruby>環境悪化<rt>かんきょうあっか</rt></ruby>の<ruby>両方<rt>りょうほう</rt></ruby>が<ruby>要因<rt>よういん</rt></ruby>であるため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-35-3",
@@ -1399,27 +1477,33 @@
             {
               "id": 1,
               "text_ja": "非常にきれいな日本のトキが絶滅してしまったのは残念なことだ。",
-              "text_en": "It is unfortunate that the extremely beautiful Japanese toki went extinct."
+              "text_en": "It is unfortunate that the extremely beautiful Japanese toki went extinct.",
+              "text_ja_ruby": "<ruby>非常<rt>ひじょう</rt></ruby>にきれいな<ruby>日本<rt>にっぽん</rt></ruby>のトキが<ruby>絶滅<rt>ぜつめつ</rt></ruby>してしまったのは<ruby>残念<rt>ざんねん</rt></ruby>なことだ。"
             },
             {
               "id": 2,
               "text_ja": "美しい生き物は、経済的に大変でも、再び増やして自然に返したほうがいい。",
-              "text_en": "Beautiful creatures should be restored and returned to nature even if costly."
+              "text_en": "Beautiful creatures should be restored and returned to nature even if costly.",
+              "text_ja_ruby": "<ruby>美<rt>うつく</rt></ruby>しい<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>は、<ruby>経済的<rt>けいざいてき</rt></ruby>に<ruby>大変<rt>たいへん</rt></ruby>でも、<ruby>再<rt>ふたた</rt></ruby>び<ruby>増<rt>ふ</rt></ruby>やして<ruby>自然<rt>しぜん</rt></ruby>に<ruby>返<rt>かえ</rt></ruby>したほうがいい。"
             },
             {
               "id": 3,
               "text_ja": "自然は、復活させるのが非常に難しいので、大切にしなければならない。",
-              "text_en": "Because reviving nature is extremely difficult once lost, it must be cherished."
+              "text_en": "Because reviving nature is extremely difficult once lost, it must be cherished.",
+              "text_ja_ruby": "<ruby>自然<rt>しぜん</rt></ruby>は、<ruby>復活<rt>ふっかつ</rt></ruby>させるのが<ruby>非常<rt>ひじょう</rt></ruby>に<ruby>難<rt>むずか</rt></ruby>しいので、<ruby>大切<rt>たいせつ</rt></ruby>にしなければならない。"
             },
             {
               "id": 4,
               "text_ja": "自然が失われかけても、さまざまな方法により復活させることができる。",
-              "text_en": "Even if nature is about to be lost, it can be revived through various methods."
+              "text_en": "Even if nature is about to be lost, it can be revived through various methods.",
+              "text_ja_ruby": "<ruby>自然<rt>しぜん</rt></ruby>が<ruby>失<rt>うしな</rt></ruby>われかけても、さまざまな<ruby>方法<rt>ほうほう</rt></ruby>により<ruby>復活<rt>ふっかつ</rt></ruby>させることができる。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "本文最後の文「自然は簡単に失われるが、一度失われたら元に戻すのは簡単ではない」が筆者の言いたい中心的な主張です。自然の再生には膨大な資金と労力がかかり極めて難しいため、失われる前に大切に守らなければならないという3が正解です。",
-          "explanation_en": "The final sentence conveys the core theme: 'Nature is easily lost, but once lost, restoring it to its original state is not easy at all.' Reviving nature requires immense resources and is hard, so it must be preserved carefully (Option 3)."
+          "explanation_en": "The final sentence conveys the core theme: 'Nature is easily lost, but once lost, restoring it to its original state is not easy at all.' Reviving nature requires immense resources and is hard, so it must be preserved carefully (Option 3).",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>が<ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby><ruby>最後<rt>さいご</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>「<ruby>自然<rt>しぜん</rt></ruby>は<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>失<rt>うしな</rt></ruby>われるが、<ruby>一度<rt>いちど</rt></ruby><ruby>失<rt>うしな</rt></ruby>われたら<ruby>元<rt>もと</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>すのは<ruby>簡単<rt>かんたん</rt></ruby>ではない」が<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>言<rt>い</rt></ruby>いたい<ruby>中心的<rt>ちゅうしんてき</rt></ruby>な<ruby>主張<rt>しゅちょう</rt></ruby>です。<ruby>自然<rt>しぜん</rt></ruby>の<ruby>再生<rt>さいせい</rt></ruby>には<ruby>膨大<rt>ぼうだい</rt></ruby>な<ruby>資金<rt>しきん</rt></ruby>と<ruby>労力<rt>ろうりょく</rt></ruby>がかかり<ruby>極<rt>きわ</rt></ruby>めて<ruby>難<rt>むずか</rt></ruby>しいため、<ruby>失<rt>うしな</rt></ruby>われる<ruby>前<rt>まえ</rt></ruby>に<ruby>大切<rt>たいせつ</rt></ruby>に<ruby>守<rt>まも</rt></ruby>らなければならないという3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -1546,27 +1630,33 @@
             {
               "id": 1,
               "text_ja": "自動販売機のエネルギーを節約する技術がなかなか進まないから。",
-              "text_en": "Because energy-saving technology for vending machines barely progresses."
+              "text_en": "Because energy-saving technology for vending machines barely progresses.",
+              "text_ja_ruby": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>のエネルギーを<ruby>節約<rt>せつやく</rt></ruby>する<ruby>技術<rt>ぎじゅつ</rt></ruby>がなかなか<ruby>進<rt>すす</rt></ruby>まないから。"
             },
             {
               "id": 2,
               "text_ja": "だれも使っていないときも、明かりがついているから。",
-              "text_en": "Because their lights stay illuminated even when nobody is using them."
+              "text_en": "Because their lights stay illuminated even when nobody is using them.",
+              "text_ja_ruby": "だれも<ruby>使<rt>つか</rt></ruby>っていないときも、<ruby>明<rt>あ</rt></ruby>かりがついているから。"
             },
             {
               "id": 3,
               "text_ja": "昼だけでなく、夜になっても使う人がいるから。",
-              "text_en": "Because there are people who use them during the night as well as the daytime."
+              "text_en": "Because there are people who use them during the night as well as the daytime.",
+              "text_ja_ruby": "<ruby>昼<rt>ひる</rt></ruby>だけでなく、<ruby>夜<rt>よる</rt></ruby>になっても<ruby>使<rt>つか</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>がいるから。"
             },
             {
               "id": 4,
               "text_ja": "町やビルなどさまざまな場所にたくさん置いてあるから。",
-              "text_en": "Because so many of them are installed in diverse places like towns and buildings."
+              "text_en": "Because so many of them are installed in diverse places like towns and buildings.",
+              "text_ja_ruby": "<ruby>町<rt>まち</rt></ruby>やビルなどさまざまな<ruby>場所<rt>ばしょ</rt></ruby>にたくさん<ruby>置<rt>お</rt></ruby>いてあるから。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文冒頭に「夜、だれも使っていないのに、明かりがついているのを見ると、電気代をむだ使いしているように感じられる」と述べられているため、2が正解です。",
-          "explanation_en": "The author notes that seeing the lights staying on at night even when no one uses the machine creates the impression that electricity is being wasted, matching Option 2."
+          "explanation_en": "The author notes that seeing the lights staying on at night even when no one uses the machine creates the impression that electricity is being wasted, matching Option 2.",
+          "questionText_ja_ruby": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>が<ruby>電気<rt>でんき</rt></ruby>をむだ<ruby>使<rt>つか</rt></ruby>いしているように<ruby>見<rt>み</rt></ruby>えるのはなぜか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby><ruby>冒頭<rt>ぼうとう</rt></ruby>に「<ruby>夜<rt>よる</rt></ruby>、だれも<ruby>使<rt>つか</rt></ruby>っていないのに、<ruby>明<rt>あ</rt></ruby>かりがついているのを<ruby>見<rt>み</rt></ruby>ると、<ruby>電気代<rt>でんきだい</rt></ruby>をむだ<ruby>使<rt>つか</rt></ruby>いしているように<ruby>感<rt>かん</rt></ruby>じられる」と<ruby>述<rt>の</rt></ruby>べられているため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-36-2",
@@ -1577,27 +1667,33 @@
             {
               "id": 1,
               "text_ja": "急に冷やすのではなく、コンピューターで管理しながらゆっくり冷やす。",
-              "text_en": "Rather than sudden cooling, they are cooled slowly under computer management."
+              "text_en": "Rather than sudden cooling, they are cooled slowly under computer management.",
+              "text_ja_ruby": "<ruby>急<rt>きゅう</rt></ruby>に<ruby>冷<rt>ひ</rt></ruby>やすのではなく、コンピューターで<ruby>管理<rt>かんり</rt></ruby>しながらゆっくり<ruby>冷<rt>ひ</rt></ruby>やす。"
             },
             {
               "id": 2,
               "text_ja": "コンピューターによって、売る直前に短い時間で冷やす。",
-              "text_en": "They are cooled in a short time right before being sold by the computer."
+              "text_en": "They are cooled in a short time right before being sold by the computer.",
+              "text_ja_ruby": "コンピューターによって、<ruby>売<rt>う</rt></ruby>る<ruby>直前<rt>ちょくぜん</rt></ruby>に<ruby>短<rt>みじか</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>で<ruby>冷<rt>ひ</rt></ruby>やす。"
             },
             {
               "id": 3,
               "text_ja": "コンピューターが外の温度の変化を調べて、冷やす。",
-              "text_en": "The computer investigates changes in outside temperature to cool them."
+              "text_en": "The computer investigates changes in outside temperature to cool them.",
+              "text_ja_ruby": "コンピューターが<ruby>外<rt>そと</rt></ruby>の<ruby>温度<rt>おんど</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べて、<ruby>冷<rt>ひ</rt></ruby>やす。"
             },
             {
               "id": 4,
               "text_ja": "コンピューターでいつどのぐらい売れるかがわかるので、その分だけ冷やす。",
-              "text_en": "Because the computer detects when and how much will sell, only that amount is cooled."
+              "text_en": "Because the computer detects when and how much will sell, only that amount is cooled.",
+              "text_ja_ruby": "コンピューターでいつどのぐらい<ruby>売<rt>う</rt></ruby>れるかがわかるので、その<ruby>分<rt>ふん</rt></ruby>だけ<ruby>冷<rt>ひ</rt></ruby>やす。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文に「自動販売機の中にあるコンピューターが、曜日や時間による売れ方の変化を見て、最小限の数だけを冷やすのである」とある通り、販売予測に合わせて必要最小限の分だけを冷やしているため、4が正解です。",
-          "explanation_en": "The text explains that the internal computer tracks sales patterns by day and time to cool only the necessary minimum amount of cans, making Option 4 correct."
+          "explanation_en": "The text explains that the internal computer tracks sales patterns by day and time to cool only the necessary minimum amount of cans, making Option 4 correct.",
+          "questionText_ja_ruby": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>の<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>の<ruby>冷<rt>ひ</rt></ruby>やし<ruby>方<rt>かた</rt></ruby>として、<ruby>正<rt>ただ</rt></ruby>しいものはどれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>の<ruby>中<rt>なか</rt></ruby>にあるコンピューターが、<ruby>曜日<rt>ようび</rt></ruby>や<ruby>時間<rt>じかん</rt></ruby>による<ruby>売<rt>う</rt></ruby>れ<ruby>方<rt>かた</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>最小限<rt>さいしょうげん</rt></ruby>の<ruby>数<rt>かず</rt></ruby>だけを<ruby>冷<rt>ひ</rt></ruby>やすのである」とある<ruby>通<rt>とう</rt></ruby>り、<ruby>販売<rt>はんばい</rt></ruby><ruby>予測<rt>よそく</rt></ruby>に<ruby>合<rt>あ</rt></ruby>わせて<ruby>必要最小限<rt>ひつようさいしょうげん</rt></ruby>の<ruby>分<rt>ふん</rt></ruby>だけを<ruby>冷<rt>ひ</rt></ruby>やしているため、4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-36-3",
@@ -1608,27 +1704,33 @@
             {
               "id": 1,
               "text_ja": "冷たい飲み物を冷やすと熱が出るので、それで温かい飲み物を温める。",
-              "text_en": "Because heat is produced when cooling cold drinks, it is used to warm hot drinks."
+              "text_en": "Because heat is produced when cooling cold drinks, it is used to warm hot drinks.",
+              "text_ja_ruby": "<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>冷<rt>ひ</rt></ruby>やすと<ruby>熱<rt>ねつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>るので、それで<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>める。"
             },
             {
               "id": 2,
               "text_ja": "温かい飲み物から出た熱を利用して、冷たい飲み物を冷やす。",
-              "text_en": "Using heat produced from hot drinks to cool down cold drinks."
+              "text_en": "Using heat produced from hot drinks to cool down cold drinks.",
+              "text_ja_ruby": "<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>から<ruby>出<rt>で</rt></ruby>た<ruby>熱<rt>ねつ</rt></ruby>を<ruby>利用<rt>りよう</rt></ruby>して、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>冷<rt>ひ</rt></ruby>やす。"
             },
             {
               "id": 3,
               "text_ja": "温かい飲み物は、冷たい飲み物と同じ自動販売機で売らない。",
-              "text_en": "Hot drinks are not sold in the same vending machines as cold drinks."
+              "text_en": "Hot drinks are not sold in the same vending machines as cold drinks.",
+              "text_ja_ruby": "<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>で<ruby>売<rt>う</rt></ruby>らない。"
             },
             {
               "id": 4,
               "text_ja": "温かい飲み物は自動販売機の明かりの熱で温める。",
-              "text_en": "Hot drinks are warmed using the heat of the vending machine's lighting."
+              "text_en": "Hot drinks are warmed using the heat of the vending machine's lighting.",
+              "text_ja_ruby": "<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>は<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>の<ruby>明<rt>あ</rt></ruby>かりの<ruby>熱<rt>ねつ</rt></ruby>で<ruby>温<rt>あたた</rt></ruby>める。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "本文に「冷たい飲み物を冷やしたときに出る熱を使って、温かい飲み物を温めることができるようになっている」と明確に説明されているため、1が正解です。",
-          "explanation_en": "The passage states that the heat exhausted during the cooling of cold drinks is repurposed to heat hot drinks, making Option 1 correct."
+          "explanation_en": "The passage states that the heat exhausted during the cooling of cold drinks is repurposed to heat hot drinks, making Option 1 correct.",
+          "questionText_ja_ruby": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>のエネルギーの<ruby>節約方法<rt>せつやくほうほう</rt></ruby>として、<ruby>正<rt>ただ</rt></ruby>しいものはどれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>冷<rt>つめ</rt></ruby>たい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>冷<rt>ひ</rt></ruby>やしたときに<ruby>出<rt>で</rt></ruby>る<ruby>熱<rt>ねつ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って、<ruby>温<rt>あたた</rt></ruby>かい<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>温<rt>あたた</rt></ruby>めることができるようになっている」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>説明<rt>せつめい</rt></ruby>されているため、1が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -1777,27 +1879,32 @@
             {
               "id": 1,
               "text_ja": "相手に「あなたの話を聞いています」と言う。",
-              "text_en": "Saying to the other person: 'I am listening to your talk.'"
+              "text_en": "Saying to the other person: 'I am listening to your talk.'",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>に「あなたの<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いています」と<ruby>言<rt>い</rt></ruby>う。"
             },
             {
               "id": 2,
               "text_ja": "相手の意見に同意できるときにだけ、首を縦に振る。",
-              "text_en": "Shaking one's head vertically only when agreeing with their opinion."
+              "text_en": "Shaking one's head vertically only when agreeing with their opinion.",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>できるときにだけ、<ruby>首<rt>くび</rt></ruby>を<ruby>縦<rt>たて</rt></ruby>に<ruby>振<rt>ふ</rt></ruby>る。"
             },
             {
               "id": 3,
               "text_ja": "相手が話しているときは、何もしないでじっとしている。",
-              "text_en": "Staying completely still doing nothing while the person is speaking."
+              "text_en": "Staying completely still doing nothing while the person is speaking.",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>が<ruby>話<rt>はな</rt></ruby>しているときは、<ruby>何<rt>なに</rt></ruby>もしないでじっとしている。"
             },
             {
               "id": 4,
               "text_ja": "相手の意見に同意できるときもできないときも首を縦に振る。",
-              "text_en": "Shaking one's head vertically whether agreeing or disagreeing with their opinion."
+              "text_en": "Shaking one's head vertically whether agreeing or disagreeing with their opinion.",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>できるときもできないときも<ruby>首<rt>くび</rt></ruby>を<ruby>縦<rt>たて</rt></ruby>に<ruby>振<rt>ふ</rt></ruby>る。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "直前の文に「うなずきは、相手の意見に同意するときだけでなく、同意できないときでも『あなたの話を聞いています』という合図なので、小さくうなずくだけで話し合いに参加できていることになる」とあり、「首を縦に振る（うなずく）」ことを指しています。したがって、4が正解です。",
-          "explanation_en": "The immediately preceding sentence explains that nodding (shaking head vertically) conveys 'I am listening' regardless of whether one agrees or disagrees. Thus, Option 4 is correct."
+          "explanation_en": "The immediately preceding sentence explains that nodding (shaking head vertically) conveys 'I am listening' regardless of whether one agrees or disagrees. Thus, Option 4 is correct.",
+          "explanation_ja_ruby": "<ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>に「うなずきは、<ruby>相手<rt>あいて</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>同意<rt>どうい</rt></ruby>するときだけでなく、<ruby>同意<rt>どうい</rt></ruby>できないときでも『あなたの<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いています』という<ruby>合図<rt>あいず</rt></ruby>なので、<ruby>小<rt>ちい</rt></ruby>さくうなずくだけで<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いに<ruby>参加<rt>さんか</rt></ruby>できていることになる」とあり、「<ruby>首<rt>くび</rt></ruby>を<ruby>縦<rt>たて</rt></ruby>に<ruby>振<rt>ふ</rt></ruby>る（うなずく）」ことを<ruby>指<rt>さ</rt></ruby>しています。したがって、4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-37-2",
@@ -1808,27 +1915,33 @@
             {
               "id": 1,
               "text_ja": "相手の話を早く先に進ませる役割",
-              "text_en": "The role of making the other's talk proceed faster"
+              "text_en": "The role of making the other's talk proceed faster",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>早<rt>はや</rt></ruby>く<ruby>先<rt>さき</rt></ruby>に<ruby>進<rt>すす</rt></ruby>ませる<ruby>役割<rt>やくわり</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "相手の話を聞いていることを示す役割",
-              "text_en": "The role of showing that you are listening to what they say"
+              "text_en": "The role of showing that you are listening to what they say",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いていることを<ruby>示<rt>しめ</rt></ruby>す<ruby>役割<rt>やくわり</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "相手の意見に共感していることを伝える役割",
-              "text_en": "The role of conveying empathy with their opinion"
+              "text_en": "The role of conveying empathy with their opinion",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>に<ruby>共感<rt>きょうかん</rt></ruby>していることを<ruby>伝<rt>つた</rt></ruby>える<ruby>役割<rt>やくわり</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "自分がこれから話し始めたいことを表す役割",
-              "text_en": "The role of expressing that you want to start speaking now"
+              "text_en": "The role of expressing that you want to start speaking now",
+              "text_ja_ruby": "<ruby>自分<rt>じぶん</rt></ruby>がこれから<ruby>話<rt>はな</rt></ruby>し<ruby>始<rt>はじ</rt></ruby>めたいことを<ruby>表<rt>あらわ</rt></ruby>す<ruby>役割<rt>やくわり</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文に「同意できないときでも『あなたの話を聞いています』という合図なので」と明確に書かれています。相手の話をきちんと聞いているサインとしての役割を持つため、2が正解です。",
-          "explanation_en": "The author clearly states that nodding acts as a sign meaning 'I am listening to your talk', making Option 2 correct."
+          "explanation_en": "The author clearly states that nodding acts as a sign meaning 'I am listening to your talk', making Option 2 correct.",
+          "questionText_ja_ruby": "うなずくことは、どのような<ruby>役割<rt>やくわり</rt></ruby>があるか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>同意<rt>どうい</rt></ruby>できないときでも『あなたの<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いています』という<ruby>合図<rt>あいず</rt></ruby>なので」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>書<rt>か</rt></ruby>かれています。<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>をきちんと<ruby>聞<rt>き</rt></ruby>いているサインとしての<ruby>役割<rt>やくわり</rt></ruby>を<ruby>持<rt>も</rt></ruby>つため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-37-3",
@@ -1839,27 +1952,33 @@
             {
               "id": 1,
               "text_ja": "1対1の話し合いではうなずくこと、大勢では相づちを打つこと",
-              "text_en": "Nodding in one-on-one talks, and chiming in with aizuchi in large groups"
+              "text_en": "Nodding in one-on-one talks, and chiming in with aizuchi in large groups",
+              "text_ja_ruby": "1<ruby>対<rt>つい</rt></ruby>1の<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いではうなずくこと、<ruby>大勢<rt>おおぜい</rt></ruby>では<ruby>相<rt>あい</rt></ruby>づちを<ruby>打<rt>う</rt></ruby>つこと"
             },
             {
               "id": 2,
               "text_ja": "だれかが話しているときにうなずいたり、相づちを打ったりすること",
-              "text_en": "Nodding and providing aizuchi while someone else is speaking"
+              "text_en": "Nodding and providing aizuchi while someone else is speaking",
+              "text_ja_ruby": "だれかが<ruby>話<rt>はな</rt></ruby>しているときにうなずいたり、<ruby>相<rt>あい</rt></ruby>づちを<ruby>打<rt>う</rt></ruby>ったりすること"
             },
             {
               "id": 3,
               "text_ja": "相手が話している間はじっと聞き、終わってから「そうですね」と言うこと",
-              "text_en": "Listening motionless while the other speaks, and saying 'I see' after they finish"
+              "text_en": "Listening motionless while the other speaks, and saying 'I see' after they finish",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>が<ruby>話<rt>はな</rt></ruby>している<ruby>間<rt>かん</rt></ruby>はじっと<ruby>聞<rt>き</rt></ruby>き、<ruby>終<rt>お</rt></ruby>わってから「そうですね」と<ruby>言<rt>い</rt></ruby>うこと"
             },
             {
               "id": 4,
               "text_ja": "相手の話に共感できなくても、「本当にそうですね」と相づちを打つこと",
-              "text_en": "Saying 'That really is so' even if you cannot empathize with their talk"
+              "text_en": "Saying 'That really is so' even if you cannot empathize with their talk",
+              "text_ja_ruby": "<ruby>相手<rt>あいて</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>に<ruby>共感<rt>きょうかん</rt></ruby>できなくても、「<ruby>本当<rt>ほんとう</rt></ruby>にそうですね」と<ruby>相<rt>あい</rt></ruby>づちを<ruby>打<rt>う</rt></ruby>つこと"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文では、だれかが話している最中にうなずいたり、「はい」「そうですね」と相づちを打ったり共感を示したりすることで、話し合いに入りやすくなると説明されています。したがって、2が正解です。",
-          "explanation_en": "The text explains that nodding and chiming in with verbal acknowledgments while someone is speaking facilitates entering the conversation smoothly, matching Option 2."
+          "explanation_en": "The text explains that nodding and chiming in with verbal acknowledgments while someone is speaking facilitates entering the conversation smoothly, matching Option 2.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>では、どうすれば<ruby>上手<rt>じょうず</rt></ruby>に<ruby>話<rt>はなし</rt></ruby>を<ruby>始<rt>はじ</rt></ruby>められると<ruby>言<rt>い</rt></ruby>っているか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>では、だれかが<ruby>話<rt>はな</rt></ruby>している<ruby>最中<rt>さいちゅう</rt></ruby>にうなずいたり、「はい」「そうですね」と<ruby>相<rt>あい</rt></ruby>づちを<ruby>打<rt>う</rt></ruby>ったり<ruby>共感<rt>きょうかん</rt></ruby>を<ruby>示<rt>しめ</rt></ruby>したりすることで、<ruby>話<rt>はな</rt></ruby>し<ruby>合<rt>あ</rt></ruby>いに<ruby>入<rt>い</rt></ruby>りやすくなると<ruby>説明<rt>せつめい</rt></ruby>されています。したがって、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -1996,27 +2115,33 @@
             {
               "id": 1,
               "text_ja": "今は、昔よりも生活に役立つ機械や道具が増えてきたから。",
-              "text_en": "Because machines and tools useful for daily life have multiplied compared to ancient times."
+              "text_en": "Because machines and tools useful for daily life have multiplied compared to ancient times.",
+              "text_ja_ruby": "<ruby>今<rt>いま</rt></ruby>は、<ruby>昔<rt>むかし</rt></ruby>よりも<ruby>生活<rt>せいかつ</rt></ruby>に<ruby>役立<rt>やくた</rt></ruby>つ<ruby>機械<rt>きかい</rt></ruby>や<ruby>道具<rt>どうぐ</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えてきたから。"
             },
             {
               "id": 2,
               "text_ja": "今の人々は昔のことを思い出そうとしなくなったから。",
-              "text_en": "Because modern people have stopped trying to recall the past."
+              "text_en": "Because modern people have stopped trying to recall the past.",
+              "text_ja_ruby": "<ruby>今<rt>いま</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>は<ruby>昔<rt>むかし</rt></ruby>のことを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>そうとしなくなったから。"
             },
             {
               "id": 3,
               "text_ja": "昔の人々はいつも能力を高めようとしていたが、今はしないから。",
-              "text_en": "Because ancient people constantly sought to heighten abilities, but modern people do not."
+              "text_en": "Because ancient people constantly sought to heighten abilities, but modern people do not.",
+              "text_ja_ruby": "<ruby>昔<rt>むかし</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>はいつも<ruby>能力<rt>のうりょく</rt></ruby>を<ruby>高<rt>たか</rt></ruby>めようとしていたが、<ruby>今<rt>いま</rt></ruby>はしないから。"
             },
             {
               "id": 4,
               "text_ja": "昔と違い、今の人々は快適で便利な生活を求めなくなったから。",
-              "text_en": "Because unlike the past, modern people no longer seek comfortable and convenient lives."
+              "text_en": "Because unlike the past, modern people no longer seek comfortable and convenient lives.",
+              "text_ja_ruby": "<ruby>昔<rt>むかし</rt></ruby>と<ruby>違<rt>ちが</rt></ruby>い、<ruby>今<rt>いま</rt></ruby>の<ruby>人々<rt>ひとびと</rt></ruby>は<ruby>快適<rt>かいてき</rt></ruby>で<ruby>便利<rt>べんり</rt></ruby>な<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>求<rt>もと</rt></ruby>めなくなったから。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "科学技術の進歩によって生活が便利になり、機械や道具に頼るようになったことで、かつて自力で行っていた体の使い方や記憶力などの人間の能力が失われていると論述されているため、1が正解です。",
-          "explanation_en": "As technological progress introduced convenient tools and machines, humans came to rely on them rather than utilizing physical technique or memory, causing capabilities to diminish (Option 1)."
+          "explanation_en": "As technological progress introduced convenient tools and machines, humans came to rely on them rather than utilizing physical technique or memory, causing capabilities to diminish (Option 1).",
+          "questionText_ja_ruby": "なぜ、<ruby>人間<rt>にんげん</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>が<ruby>失<rt>うしな</rt></ruby>われる のか。",
+          "explanation_ja_ruby": "<ruby>科学技術<rt>かがくぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>によって<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>便利<rt>べんり</rt></ruby>になり、<ruby>機械<rt>きかい</rt></ruby>や<ruby>道具<rt>どうぐ</rt></ruby>に<ruby>頼<rt>たよ</rt></ruby>るようになったことで、かつて<ruby>自力<rt>じりき</rt></ruby>で<ruby>行<rt>い</rt></ruby>っていた<ruby>体<rt>てい</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>や<ruby>記憶力<rt>きおくりょく</rt></ruby>などの<ruby>人間<rt>にんげん</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>が<ruby>失<rt>うしな</rt></ruby>われていると<ruby>論述<rt>ろんじゅつ</rt></ruby>されているため、1が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-38-2",
@@ -2027,27 +2152,33 @@
             {
               "id": 1,
               "text_ja": "機械",
-              "text_en": "Machines"
+              "text_en": "Machines",
+              "text_ja_ruby": "<ruby>機械<rt>きかい</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "力のある体",
-              "text_en": "A strong body"
+              "text_en": "A strong body",
+              "text_ja_ruby": "<ruby>力<rt>ちから</rt></ruby>のある<ruby>体<rt>てい</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "体の使い方",
-              "text_en": "How to use the body"
+              "text_en": "How to use the body",
+              "text_ja_ruby": "<ruby>体<rt>てい</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "人々の協力",
-              "text_en": "Cooperation among people"
+              "text_en": "Cooperation among people",
+              "text_ja_ruby": "<ruby>人々<rt>ひとびと</rt></ruby>の<ruby>協力<rt>きょうりょく</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "直前の「どのように体を使えば重いものを運べるかがわかっていたので、できたのだという」を承けているため、「体の使い方」を指す3が正解です。",
-          "explanation_en": "This points back directly to the phrase 'knowing how to use the body to carry heavy loads', referring to physical bodily technique (Option 3)."
+          "explanation_en": "This points back directly to the phrase 'knowing how to use the body to carry heavy loads', referring to physical bodily technique (Option 3).",
+          "questionText_ja_ruby": "それ とは<ruby>何<rt>なに</rt></ruby>を<ruby>指<rt>さ</rt></ruby>すか。",
+          "explanation_ja_ruby": "<ruby>直前<rt>ちょくぜん</rt></ruby>の「どのように<ruby>体<rt>てい</rt></ruby>を<ruby>使<rt>つか</rt></ruby>えば<ruby>重<rt>おも</rt></ruby>いものを<ruby>運<rt>はこ</rt></ruby>べるかがわかっていたので、できたのだという」を<ruby>承<rt>しょう</rt></ruby>けているため、「<ruby>体<rt>てい</rt></ruby>の<ruby>使<rt>つか</rt></ruby>い<ruby>方<rt>かた</rt></ruby>」を<ruby>指<rt>さ</rt></ruby>す3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-38-3",
@@ -2058,27 +2189,33 @@
             {
               "id": 1,
               "text_ja": "進歩によってよりよい生活が送れるが、人がやっていた仕事がなくなる。",
-              "text_en": "Progress allows better lives, but jobs done by people will disappear."
+              "text_en": "Progress allows better lives, but jobs done by people will disappear.",
+              "text_ja_ruby": "<ruby>進歩<rt>しんぽ</rt></ruby>によってよりよい<ruby>生活<rt>せいかつ</rt></ruby>が<ruby>送<rt>おく</rt></ruby>れるが、<ruby>人<rt>ひと</rt></ruby>がやっていた<ruby>仕事<rt>しごと</rt></ruby>がなくなる。"
             },
             {
               "id": 2,
               "text_ja": "進歩はすばらしいが、それによって人と人とのつながりが失われていく。",
-              "text_en": "Progress is magnificent, but interpersonal connections are lost as a result."
+              "text_en": "Progress is magnificent, but interpersonal connections are lost as a result.",
+              "text_ja_ruby": "<ruby>進歩<rt>しんぽ</rt></ruby>はすばらしいが、それによって<ruby>人<rt>ひと</rt></ruby>と<ruby>人<rt>ひと</rt></ruby>とのつながりが<ruby>失<rt>うしな</rt></ruby>われていく。"
             },
             {
               "id": 3,
               "text_ja": "進歩すると、機械や道具に頼って、さまざまなことが自分でできなくなる。",
-              "text_en": "As progress occurs, people rely on machines and tools, becoming unable to do various things themselves."
+              "text_en": "As progress occurs, people rely on machines and tools, becoming unable to do various things themselves.",
+              "text_ja_ruby": "<ruby>進歩<rt>しんぽ</rt></ruby>すると、<ruby>機械<rt>きかい</rt></ruby>や<ruby>道具<rt>どうぐ</rt></ruby>に<ruby>頼<rt>たよ</rt></ruby>って、さまざまなことが<ruby>自分<rt>じぶん</rt></ruby>でできなくなる。"
             },
             {
               "id": 4,
               "text_ja": "進歩するにしたがって、昔のことは伝えられず、どんどん忘れられてしまう。",
-              "text_en": "As progress advances, ancient matters are not handed down and get forgotten."
+              "text_en": "As progress advances, ancient matters are not handed down and get forgotten.",
+              "text_ja_ruby": "<ruby>進歩<rt>しんぽ</rt></ruby>するにしたがって、<ruby>昔<rt>むかし</rt></ruby>のことは<ruby>伝<rt>つた</rt></ruby>えられず、どんどん<ruby>忘<rt>わす</rt></ruby>れられてしまう。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "科学技術が進歩して便利になる一方で、機械や道具に頼る結果、人間自身が持っていた身体や記憶の能力が失われ、自力でできなくなっていくことへの問題意識が述べられています。したがって、3が正解です。",
-          "explanation_en": "The author asserts that technological advances lead to over-reliance on machines and instruments, stripping humans of the personal capability to execute various tasks independently (Option 3)."
+          "explanation_en": "The author asserts that technological advances lead to over-reliance on machines and instruments, stripping humans of the personal capability to execute various tasks independently (Option 3).",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>では<ruby>科学技術<rt>かがくぎじゅつ</rt></ruby>の<ruby>進歩<rt>しんぽ</rt></ruby>について、どう<ruby>言<rt>い</rt></ruby>っているか。",
+          "explanation_ja_ruby": "<ruby>科学技術<rt>かがくぎじゅつ</rt></ruby>が<ruby>進歩<rt>しんぽ</rt></ruby>して<ruby>便利<rt>べんり</rt></ruby>になる<ruby>一方<rt>いっぽう</rt></ruby>で、<ruby>機械<rt>きかい</rt></ruby>や<ruby>道具<rt>どうぐ</rt></ruby>に<ruby>頼<rt>たよ</rt></ruby>る<ruby>結果<rt>けっか</rt></ruby>、<ruby>人間自身<rt>にんげんじしん</rt></ruby>が<ruby>持<rt>も</rt></ruby>っていた<ruby>身体<rt>しんたい</rt></ruby>や<ruby>記憶<rt>きおく</rt></ruby>の<ruby>能力<rt>のうりょく</rt></ruby>が<ruby>失<rt>うしな</rt></ruby>われ、<ruby>自力<rt>じりき</rt></ruby>でできなくなっていくことへの<ruby>問題意識<rt>もんだいいしき</rt></ruby>が<ruby>述<rt>の</rt></ruby>べられています。したがって、3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -2241,27 +2378,33 @@
             {
               "id": 1,
               "text_ja": "都市の外側に新しく別の街ができた。",
-              "text_en": "A completely separate new city was built outside the city."
+              "text_en": "A completely separate new city was built outside the city.",
+              "text_ja_ruby": "<ruby>都市<rt>とし</rt></ruby>の<ruby>外側<rt>そとがわ</rt></ruby>に<ruby>新<rt>あたら</rt></ruby>しく<ruby>別<rt>べつ</rt></ruby>の<ruby>街<rt>まち</rt></ruby>ができた。"
             },
             {
               "id": 2,
               "text_ja": "道路が造られて、ほかの街へも行きやすくなった。",
-              "text_en": "Roads were built, making it easier to travel to other towns."
+              "text_en": "Roads were built, making it easier to travel to other towns.",
+              "text_ja_ruby": "<ruby>道路<rt>どうろ</rt></ruby>が<ruby>造<rt>つく</rt></ruby>られて、ほかの<ruby>街<rt>まち</rt></ruby>へも<ruby>行<rt>い</rt></ruby>きやすくなった。"
             },
             {
               "id": 3,
               "text_ja": "街の郊外にも住宅や施設ができた。",
-              "text_en": "Housing and facilities were built in the city's outskirts as well."
+              "text_en": "Housing and facilities were built in the city's outskirts as well.",
+              "text_ja_ruby": "<ruby>街<rt>まち</rt></ruby>の<ruby>郊外<rt>こうがい</rt></ruby>にも<ruby>住宅<rt>じゅうたく</rt></ruby>や<ruby>施設<rt>しせつ</rt></ruby>ができた。"
             },
             {
               "id": 4,
               "text_ja": "街の面積が広くなって、施設や家も広くなった。",
-              "text_en": "The area of the city expanded, and facilities and houses also became larger."
+              "text_en": "The area of the city expanded, and facilities and houses also became larger.",
+              "text_ja_ruby": "<ruby>街<rt>まち</rt></ruby>の<ruby>面積<rt>めんせき</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>くなって、<ruby>施設<rt>しせつ</rt></ruby>や<ruby>家<rt>いえ</rt></ruby>も<ruby>広<rt>ひろ</rt></ruby>くなった。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "本文直後に「郊外に住む人が増え、大きなスーパーや病院のような施設も郊外に造られるようになったのである」と説明されており、地方都市が外側へ広がったとは、都市の中心部から離れた郊外にも住宅や施設ができたことを意味します。したがって3が正解です。",
-          "explanation_en": "Right after this sentence, the passage explains that 'the number of people living in suburbs increased, and facilities such as supermarkets and hospitals came to be built in suburbs.' Thus, 'spreading outwards' means that homes and facilities were built in the outskirts. Therefore, option 3 is correct."
+          "explanation_en": "Right after this sentence, the passage explains that 'the number of people living in suburbs increased, and facilities such as supermarkets and hospitals came to be built in suburbs.' Thus, 'spreading outwards' means that homes and facilities were built in the outskirts. Therefore, option 3 is correct.",
+          "questionText_ja_ruby": "「<ruby>外側<rt>そとがわ</rt></ruby>へと<ruby>広<rt>ひろ</rt></ruby>がった」とは、どのような<ruby>意味<rt>いみ</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby><ruby>直後<rt>ちょくご</rt></ruby>に「<ruby>郊外<rt>こうがい</rt></ruby>に<ruby>住<rt>す</rt></ruby>む<ruby>人<rt>ひと</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>え、<ruby>大<rt>おお</rt></ruby>きなスーパーや<ruby>病院<rt>びょういん</rt></ruby>のような<ruby>施設<rt>しせつ</rt></ruby>も<ruby>郊外<rt>こうがい</rt></ruby>に<ruby>造<rt>つく</rt></ruby>られるようになったのである」と<ruby>説明<rt>せつめい</rt></ruby>されており、<ruby>地方都市<rt>ちほうとし</rt></ruby>が<ruby>外側<rt>そとがわ</rt></ruby>へ<ruby>広<rt>ひろ</rt></ruby>がったとは、<ruby>都市<rt>とし</rt></ruby>の<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>から<ruby>離<rt>はな</rt></ruby>れた<ruby>郊外<rt>こうがい</rt></ruby>にも<ruby>住宅<rt>じゅうたく</rt></ruby>や<ruby>施設<rt>しせつ</rt></ruby>ができたことを<ruby>意味<rt>いみ</rt></ruby>します。したがって3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "dokkai-n3-p4-39-q2",
@@ -2272,27 +2415,33 @@
             {
               "id": 1,
               "text_ja": "中心部の多くの店が閉店してしまう都市",
-              "text_en": "A city where many stores in the center close down"
+              "text_en": "A city where many stores in the center close down",
+              "text_ja_ruby": "<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くの<ruby>店<rt>みせ</rt></ruby>が<ruby>閉店<rt>へいてん</rt></ruby>してしまう<ruby>都市<rt>とし</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "お年寄りが買い物に行ったりするのが難しい都市",
-              "text_en": "A city where it is difficult for elderly people to go shopping"
+              "text_en": "A city where it is difficult for elderly people to go shopping",
+              "text_ja_ruby": "お<ruby>年寄<rt>としよ</rt></ruby>りが<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>に<ruby>行<rt>い</rt></ruby>ったりするのが<ruby>難<rt>むずか</rt></ruby>しい<ruby>都市<rt>とし</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "お年寄りが車を運転して買い物などに行ける都市",
-              "text_en": "A city where elderly people can drive cars to go shopping"
+              "text_en": "A city where elderly people can drive cars to go shopping",
+              "text_ja_ruby": "お<ruby>年寄<rt>としよ</rt></ruby>りが<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>して<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>などに<ruby>行<rt>い</rt></ruby>ける<ruby>都市<rt>とし</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "施設などを中心部に戻し、人々もそこに住めるようにした都市",
-              "text_en": "A city that returns facilities to the center and allows people to live there"
+              "text_en": "A city that returns facilities to the center and allows people to live there",
+              "text_ja_ruby": "<ruby>施設<rt>しせつ</rt></ruby>などを<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>し、<ruby>人々<rt>ひとびと</rt></ruby>もそこに<ruby>住<rt>す</rt></ruby>めるようにした<ruby>都市<rt>とし</rt></ruby>"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文に「さまざまな施設を再び街の中心に戻し、人々も中心部に集まって住めるようにしようとしている。このような都市はコンパクトシティと言われており」と直接説明されています。したがって4が正解です。",
-          "explanation_en": "The text directly states: 'several cities are trying to return various facilities to the city center and enable people to gather and live in the central area as well. Such cities are called compact cities.' Therefore, option 4 is correct."
+          "explanation_en": "The text directly states: 'several cities are trying to return various facilities to the city center and enable people to gather and live in the central area as well. Such cities are called compact cities.' Therefore, option 4 is correct.",
+          "questionText_ja_ruby": "コンパクトシティとは、<ruby>本文<rt>ほんぶん</rt></ruby>によるとどのような<ruby>意味<rt>いみ</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「さまざまな<ruby>施設<rt>しせつ</rt></ruby>を<ruby>再<rt>ふたた</rt></ruby>び<ruby>街<rt>まち</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>し、<ruby>人々<rt>ひとびと</rt></ruby>も<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まって<ruby>住<rt>す</rt></ruby>めるようにしようとしている。このような<ruby>都市<rt>とし</rt></ruby>はコンパクトシティと<ruby>言<rt>い</rt></ruby>われており」と<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>説明<rt>せつめい</rt></ruby>されています。したがって4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "dokkai-n3-p4-39-q3",
@@ -2303,27 +2452,33 @@
             {
               "id": 1,
               "text_ja": "車を呼ぶと、お年寄りをいろいろな店や施設に連れて行ってくれるから。",
-              "text_en": "Because if you call a car, it will take elderly people to various shops and facilities."
+              "text_en": "Because if you call a car, it will take elderly people to various shops and facilities.",
+              "text_ja_ruby": "<ruby>車<rt>くるま</rt></ruby>を<ruby>呼<rt>よ</rt></ruby>ぶと、お<ruby>年寄<rt>としよ</rt></ruby>りをいろいろな<ruby>店<rt>みせ</rt></ruby>や<ruby>施設<rt>しせつ</rt></ruby>に<ruby>連<rt>つ</rt></ruby>れて<ruby>行<rt>い</rt></ruby>ってくれるから。"
             },
             {
               "id": 2,
               "text_ja": "街の中心にある店や施設に、お年寄りが簡単に行けるようになるから。",
-              "text_en": "Because elderly people will be able to easily access shops and facilities located in the city center."
+              "text_en": "Because elderly people will be able to easily access shops and facilities located in the city center.",
+              "text_ja_ruby": "<ruby>街<rt>まち</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>にある<ruby>店<rt>みせ</rt></ruby>や<ruby>施設<rt>しせつ</rt></ruby>に、お<ruby>年寄<rt>としよ</rt></ruby>りが<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けるようになるから。"
             },
             {
               "id": 3,
               "text_ja": "街の中心に人々が集まって、にぎやかになっているから。",
-              "text_en": "Because people gather in the city center, making it lively."
+              "text_en": "Because people gather in the city center, making it lively.",
+              "text_ja_ruby": "<ruby>街<rt>まち</rt></ruby>の<ruby>中心<rt>ちゅうしん</rt></ruby>に<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>集<rt>あつ</rt></ruby>まって、にぎやかになっているから。"
             },
             {
               "id": 4,
               "text_ja": "高齢化が進み、人口が減る中で、この街は人口が増えると思われるから。",
-              "text_en": "Because as society ages and population decreases, it is thought population will increase in this city."
+              "text_en": "Because as society ages and population decreases, it is thought population will increase in this city.",
+              "text_ja_ruby": "<ruby>高齢化<rt>こうれいか</rt></ruby>が<ruby>進<rt>すす</rt></ruby>み、<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る<ruby>中<rt>なか</rt></ruby>で、この<ruby>街<rt>まち</rt></ruby>は<ruby>人口<rt>じんこう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>えると<ruby>思<rt>おも</rt></ruby>われるから。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文には「お年寄りも気軽にいろいろな場所へ行くことができる。高齢化が進み、人口が減少している現在、こうした都市が注目されている」とあり、車を運転しにくいお年寄りでも中心部の店や施設へ簡単に行けるようになるため注目されています。したがって2が正解です。",
-          "explanation_en": "The passage notes that 'elderly people can also casually travel to various locations. At present, as society ages and population decreases, such cities are attracting attention.' It is drawing attention because elderly people who don't drive can easily access stores and facilities in the town center. Therefore, option 2 is correct."
+          "explanation_en": "The passage notes that 'elderly people can also casually travel to various locations. At present, as society ages and population decreases, such cities are attracting attention.' It is drawing attention because elderly people who don't drive can easily access stores and facilities in the town center. Therefore, option 2 is correct.",
+          "questionText_ja_ruby": "「こうした<ruby>都市<rt>とし</rt></ruby>が<ruby>注目<rt>ちゅうもく</rt></ruby>されている」とあるが、なぜ<ruby>注目<rt>ちゅうもく</rt></ruby>されているか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>には「お<ruby>年寄<rt>としよ</rt></ruby>りも<ruby>気軽<rt>きがる</rt></ruby>にいろいろな<ruby>場所<rt>ばしょ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>くことができる。<ruby>高齢化<rt>こうれいか</rt></ruby>が<ruby>進<rt>すす</rt></ruby>み、<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減少<rt>げんしょう</rt></ruby>している<ruby>現在<rt>げんざい</rt></ruby>、こうした<ruby>都市<rt>とし</rt></ruby>が<ruby>注目<rt>ちゅうもく</rt></ruby>されている」とあり、<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>しにくいお<ruby>年寄<rt>としよ</rt></ruby>りでも<ruby>中心部<rt>ちゅうしんぶ</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>や<ruby>施設<rt>しせつ</rt></ruby>へ<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けるようになるため<ruby>注目<rt>ちゅうもく</rt></ruby>されています。したがって2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -2486,27 +2641,33 @@
             {
               "id": 1,
               "text_ja": "ダジャレを聞いた人",
-              "text_en": "People who listened to the puns"
+              "text_en": "People who listened to the puns",
+              "text_ja_ruby": "ダジャレを<ruby>聞<rt>き</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "ダジャレを言ったおじさん",
-              "text_en": "Older men who told the puns"
+              "text_en": "Older men who told the puns",
+              "text_ja_ruby": "ダジャレを<ruby>言<rt>い</rt></ruby>ったおじさん"
             },
             {
               "id": 3,
               "text_ja": "ダジャレを言った小学生",
-              "text_en": "Elementary school children who told the puns"
+              "text_en": "Elementary school children who told the puns",
+              "text_ja_ruby": "ダジャレを<ruby>言<rt>い</rt></ruby>った<ruby>小学生<rt>しょうがくせい</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "この文を書いた人",
-              "text_en": "The person who wrote this text"
+              "text_en": "The person who wrote this text",
+              "text_ja_ruby": "この<ruby>文<rt>ぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文に「ただ、おじさんが言うと、たいてい冷たい目で見られる。つまらなかったり、同じダジャレを何度も言ったりするからだ」と明記されているため、冷たい目で見られるのは「ダジャレを言ったおじさん」です。したがって2が正解です。",
-          "explanation_en": "The passage clearly states: 'However, when older men tell them, they are usually met with cold stares. That is because they are unamusing, or they repeat the same pun over and over.' Thus, the ones met with cold stares are older men who tell puns. Therefore, option 2 is correct."
+          "explanation_en": "The passage clearly states: 'However, when older men tell them, they are usually met with cold stares. That is because they are unamusing, or they repeat the same pun over and over.' Thus, the ones met with cold stares are older men who tell puns. Therefore, option 2 is correct.",
+          "questionText_ja_ruby": "「<ruby>冷<rt>つめ</rt></ruby>たい<ruby>目<rt>め</rt></ruby>で<ruby>見<rt>み</rt></ruby>られる」のはだれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「ただ、おじさんが<ruby>言<rt>い</rt></ruby>うと、たいてい<ruby>冷<rt>つめ</rt></ruby>たい<ruby>目<rt>め</rt></ruby>で<ruby>見<rt>み</rt></ruby>られる。つまらなかったり、<ruby>同<rt>おな</rt></ruby>じダジャレを<ruby>何度<rt>なんど</rt></ruby>も<ruby>言<rt>い</rt></ruby>ったりするからだ」と<ruby>明記<rt>めいき</rt></ruby>されているため、<ruby>冷<rt>つめ</rt></ruby>たい<ruby>目<rt>め</rt></ruby>で<ruby>見<rt>み</rt></ruby>られるのは「ダジャレを<ruby>言<rt>い</rt></ruby>ったおじさん」です。したがって2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "dokkai-n3-p4-40-q2",
@@ -2517,27 +2678,33 @@
             {
               "id": 1,
               "text_ja": "ダジャレを作ろうとすると、脳のトレーニングになる。",
-              "text_en": "Trying to create puns serves as brain training."
+              "text_en": "Trying to create puns serves as brain training.",
+              "text_ja_ruby": "ダジャレを<ruby>作<rt>つく</rt></ruby>ろうとすると、<ruby>脳<rt>のう</rt></ruby>のトレーニングになる。"
             },
             {
               "id": 2,
               "text_ja": "ダジャレを作るために、いろいろなことを調べる。",
-              "text_en": "One researches many things in order to make puns."
+              "text_en": "One researches many things in order to make puns.",
+              "text_ja_ruby": "ダジャレを<ruby>作<rt>つく</rt></ruby>るために、いろいろなことを<ruby>調<rt>しら</rt></ruby>べる。"
             },
             {
               "id": 3,
               "text_ja": "ダジャレを聞いて笑うと、脳の働きがよくなる。",
-              "text_en": "Listening to puns and laughing improves brain function."
+              "text_en": "Listening to puns and laughing improves brain function.",
+              "text_ja_ruby": "ダジャレを<ruby>聞<rt>き</rt></ruby>いて<ruby>笑<rt>わら</rt></ruby>うと、<ruby>脳<rt>のう</rt></ruby>の<ruby>働<rt>はたら</rt></ruby>きがよくなる。"
             },
             {
               "id": 4,
               "text_ja": "ダジャレを聞くと、似たような音の言葉をたくさん覚える。",
-              "text_en": "Listening to puns helps memorize many words with similar sounds."
+              "text_en": "Listening to puns helps memorize many words with similar sounds.",
+              "text_ja_ruby": "ダジャレを<ruby>聞<rt>き</rt></ruby>くと、<ruby>似<rt>に</rt></ruby>たような<ruby>音<rt>おと</rt></ruby>の<ruby>言葉<rt>ことば</rt></ruby>をたくさん<ruby>覚<rt>おぼ</rt></ruby>える。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "本文に「ふだんからおもしろいダジャレを作ろうとしていれば、脳を鍛えることにもなり、ボケ防止にも役立つらしい」「脳のトレーニングにもなる」と述べられており、ダジャレを作ろうとする行為が脳の活性化・トレーニングになることが挙げられています。したがって1が正解です。",
-          "explanation_en": "The text states: 'habitually trying to create funny puns strengthens the brain and apparently helps prevent mental decline' and 'serves as brain training.' Thus, attempting to create puns trains the brain. Therefore, option 1 is correct."
+          "explanation_en": "The text states: 'habitually trying to create funny puns strengthens the brain and apparently helps prevent mental decline' and 'serves as brain training.' Thus, attempting to create puns trains the brain. Therefore, option 1 is correct.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>によると、ダジャレのよい<ruby>点<rt>てん</rt></ruby>は<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「ふだんからおもしろいダジャレを<ruby>作<rt>つく</rt></ruby>ろうとしていれば、<ruby>脳<rt>のう</rt></ruby>を<ruby>鍛<rt>きた</rt></ruby>えることにもなり、ボケ<ruby>防止<rt>ぼうし</rt></ruby>にも<ruby>役立<rt>やくた</rt></ruby>つらしい」「<ruby>脳<rt>のう</rt></ruby>のトレーニングにもなる」と<ruby>述<rt>の</rt></ruby>べられており、ダジャレを<ruby>作<rt>つく</rt></ruby>ろうとする<ruby>行為<rt>こうい</rt></ruby>が<ruby>脳<rt>のう</rt></ruby>の<ruby>活性化<rt>かっせいか</rt></ruby>・トレーニングになることが<ruby>挙<rt>あ</rt></ruby>げられています。したがって1が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "dokkai-n3-p4-40-q3",
@@ -2548,27 +2715,33 @@
             {
               "id": 1,
               "text_ja": "中高年の男性はおもしろいダジャレを言うが、まわりの人は理解できない。",
-              "text_en": "Middle-aged men tell interesting puns, but the people around them cannot understand them."
+              "text_en": "Middle-aged men tell interesting puns, but the people around them cannot understand them.",
+              "text_ja_ruby": "<ruby>中高年<rt>ちゅうこうねん</rt></ruby>の<ruby>男性<rt>だんせい</rt></ruby>はおもしろいダジャレを<ruby>言<rt>い</rt></ruby>うが、まわりの<ruby>人<rt>ひと</rt></ruby>は<ruby>理解<rt>りかい</rt></ruby>できない。"
             },
             {
               "id": 2,
               "text_ja": "中高年の男性はダジャレを言う人が多く、よくみんなを楽しませている。",
-              "text_en": "Many middle-aged men tell puns and often entertain everyone."
+              "text_en": "Many middle-aged men tell puns and often entertain everyone.",
+              "text_ja_ruby": "<ruby>中高年<rt>ちゅうこうねん</rt></ruby>の<ruby>男性<rt>だんせい</rt></ruby>はダジャレを<ruby>言<rt>い</rt></ruby>う<ruby>人<rt>ひと</rt></ruby>が<ruby>多<rt>おお</rt></ruby>く、よくみんなを<ruby>楽<rt>たの</rt></ruby>しませている。"
             },
             {
               "id": 3,
               "text_ja": "ダジャレはだれにでも作れるが、まわりの人に言うのはよいことではない。",
-              "text_en": "Anyone can create puns, but telling them to people around you is not a good thing."
+              "text_en": "Anyone can create puns, but telling them to people around you is not a good thing.",
+              "text_ja_ruby": "ダジャレはだれにでも<ruby>作<rt>つく</rt></ruby>れるが、まわりの<ruby>人<rt>ひと</rt></ruby>に<ruby>言<rt>い</rt></ruby>うのはよいことではない。"
             },
             {
               "id": 4,
               "text_ja": "ダジャレは簡単に作れ、緊張をなくしたり、気持ちを明るくすることもできる。",
-              "text_en": "Puns are easy to make, and they can relieve tension and brighten one's mood."
+              "text_en": "Puns are easy to make, and they can relieve tension and brighten one's mood.",
+              "text_ja_ruby": "ダジャレは<ruby>簡単<rt>かんたん</rt></ruby>に<ruby>作<rt>つく</rt></ruby>れ、<ruby>緊張<rt>きんちょう</rt></ruby>をなくしたり、<ruby>気持<rt>きも</rt></ruby>ちを<ruby>明<rt>あか</rt></ruby>るくすることもできる。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "筆者は末尾で「簡単な言葉遊びで緊張がとけたり、笑い合って明るい気持ちになったり、脳のトレーニングにもなるなら、それはすばらしいことではないだろうか」と述べており、ダジャレが手軽にできて緊張を和らげ、明るい気持ちにさせてくれる素晴らしいものであると肯定的に評価しています。したがって4が正解です。",
-          "explanation_en": "At the conclusion, the author summarizes: 'If simple wordplay can ease tension, brighten spirits by laughing together, and serve as brain training as well, isn't that truly wonderful?' This conveys that puns are easy to create, alleviate nervousness, and brighten feelings. Therefore, option 4 is correct."
+          "explanation_en": "At the conclusion, the author summarizes: 'If simple wordplay can ease tension, brighten spirits by laughing together, and serve as brain training as well, isn't that truly wonderful?' This conveys that puns are easy to create, alleviate nervousness, and brighten feelings. Therefore, option 4 is correct.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことはどれか。",
+          "explanation_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>末尾<rt>まつび</rt></ruby>で「<ruby>簡単<rt>かんたん</rt></ruby>な<ruby>言葉遊<rt>ことばあそ</rt></ruby>びで<ruby>緊張<rt>きんちょう</rt></ruby>がとけたり、<ruby>笑<rt>わら</rt></ruby>い<ruby>合<rt>あ</rt></ruby>って<ruby>明<rt>あか</rt></ruby>るい<ruby>気持<rt>きも</rt></ruby>ちになったり、<ruby>脳<rt>のう</rt></ruby>のトレーニングにもなるなら、それはすばらしいことではないだろうか」と<ruby>述<rt>の</rt></ruby>べており、ダジャレが<ruby>手軽<rt>てがる</rt></ruby>にできて<ruby>緊張<rt>きんちょう</rt></ruby>を<ruby>和<rt>やわ</rt></ruby>らげ、<ruby>明<rt>あか</rt></ruby>るい<ruby>気持<rt>きも</rt></ruby>ちにさせてくれる<ruby>素晴<rt>すば</rt></ruby>らしいものであると<ruby>肯定的<rt>こうていてき</rt></ruby>に<ruby>評価<rt>ひょうか</rt></ruby>しています。したがって4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     },
@@ -2765,27 +2938,33 @@
             {
               "id": 1,
               "text_ja": "大山さんと南ゆかりさん",
-              "text_en": "Mr. Oyama and Ms. Yukari Minami"
+              "text_en": "Mr. Oyama and Ms. Yukari Minami",
+              "text_ja_ruby": "<ruby>大山<rt>おおやま</rt></ruby>さんと<ruby>南<rt>みなみ</rt></ruby>ゆかりさん"
             },
             {
               "id": 2,
               "text_ja": "大山さんと先生と南ゆかりさん",
-              "text_en": "Mr. Oyama, the teacher, and Ms. Yukari Minami"
+              "text_en": "Mr. Oyama, the teacher, and Ms. Yukari Minami",
+              "text_ja_ruby": "<ruby>大山<rt>おおやま</rt></ruby>さんと<ruby>先生<rt>せんせい</rt></ruby>と<ruby>南<rt>みなみ</rt></ruby>ゆかりさん"
             },
             {
               "id": 3,
               "text_ja": "先生と南ゆかりさん",
-              "text_en": "The teacher and Ms. Yukari Minami"
+              "text_en": "The teacher and Ms. Yukari Minami",
+              "text_ja_ruby": "<ruby>先生<rt>せんせい</rt></ruby>と<ruby>南<rt>みなみ</rt></ruby>ゆかりさん"
             },
             {
               "id": 4,
               "text_ja": "南ゆかりさんと特別ゲスト",
-              "text_en": "Ms. Yukari Minami and a special guest"
+              "text_en": "Ms. Yukari Minami and a special guest",
+              "text_ja_ruby": "<ruby>南<rt>みなみ</rt></ruby>ゆかりさんと<ruby>特別<rt>とくべつ</rt></ruby>ゲスト"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "手紙の差出人である大山春樹さんは「私が習っているギターの先生のコンサートが開かれる」「先生のお友達であるプロのギタリスト、南ゆかりさんが特別ゲストとして出演されます」と書いています。大山さんは生徒で招待している側であり、出演するのは「先生と南ゆかりさん」です。したがって3が正解です。",
-          "explanation_en": "The sender of the letter, Haruki Oyama, writes: 'a concert by the guitar teacher I am taking lessons from will be held' and 'professional guitarist Ms. Yukari Minami, a friend of my teacher, will make an appearance as a special guest.' Oyama is the student sending the invitation; the actual performers are the teacher and Yukari Minami. Therefore, option 3 is correct."
+          "explanation_en": "The sender of the letter, Haruki Oyama, writes: 'a concert by the guitar teacher I am taking lessons from will be held' and 'professional guitarist Ms. Yukari Minami, a friend of my teacher, will make an appearance as a special guest.' Oyama is the student sending the invitation; the actual performers are the teacher and Yukari Minami. Therefore, option 3 is correct.",
+          "questionText_ja_ruby": "このコンサートに<ruby>出演<rt>しゅつえん</rt></ruby>するのはだれか。",
+          "explanation_ja_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>差出人<rt>さしだしにん</rt></ruby>である<ruby>大山<rt>おおやま</rt></ruby><ruby>春樹<rt>はるき</rt></ruby>さんは「<ruby>私<rt>わたし</rt></ruby>が<ruby>習<rt>なら</rt></ruby>っているギターの<ruby>先生<rt>せんせい</rt></ruby>のコンサートが<ruby>開<rt>ひら</rt></ruby>かれる」「<ruby>先生<rt>せんせい</rt></ruby>のお<ruby>友達<rt>ともだち</rt></ruby>であるプロのギタリスト、<ruby>南<rt>みなみ</rt></ruby>ゆかりさんが<ruby>特別<rt>とくべつ</rt></ruby>ゲストとして<ruby>出演<rt>しゅつえん</rt></ruby>されます」と<ruby>書<rt>か</rt></ruby>いています。<ruby>大山<rt>おおやま</rt></ruby>さんは<ruby>生徒<rt>せいと</rt></ruby>で<ruby>招待<rt>しょうたい</rt></ruby>している<ruby>側<rt>がわ</rt></ruby>であり、<ruby>出演<rt>しゅつえん</rt></ruby>するのは「<ruby>先生<rt>せんせい</rt></ruby>と<ruby>南<rt>みなみ</rt></ruby>ゆかりさん」です。したがって3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "dokkai-n3-p4-41-q2",
@@ -2796,27 +2975,33 @@
             {
               "id": 1,
               "text_ja": "大山さんにメールで2人分の券をお願いする。",
-              "text_en": "Ask Mr. Oyama by email for tickets for two people."
+              "text_en": "Ask Mr. Oyama by email for tickets for two people.",
+              "text_ja_ruby": "<ruby>大山<rt>おおやま</rt></ruby>さんにメールで2<ruby>人分<rt>にんぶん</rt></ruby>の<ruby>券<rt>けん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いする。"
             },
             {
               "id": 2,
               "text_ja": "大山さんにメールで2人分の券をお願いし、受付にお金を送る。",
-              "text_en": "Ask Mr. Oyama by email for tickets for two people and send money to the reception."
+              "text_en": "Ask Mr. Oyama by email for tickets for two people and send money to the reception.",
+              "text_ja_ruby": "<ruby>大山<rt>おおやま</rt></ruby>さんにメールで2<ruby>人分<rt>にんぶん</rt></ruby>の<ruby>券<rt>けん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いし、<ruby>受付<rt>うけつけ</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る。"
             },
             {
               "id": 3,
               "text_ja": "会場にメールで2人分の券をお願いする。",
-              "text_en": "Ask the venue by email for tickets for two people."
+              "text_en": "Ask the venue by email for tickets for two people.",
+              "text_ja_ruby": "<ruby>会場<rt>かいじょう</rt></ruby>にメールで2<ruby>人分<rt>にんぶん</rt></ruby>の<ruby>券<rt>けん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いする。"
             },
             {
               "id": 4,
               "text_ja": "会場にメールで2人分の券をお願いし、当日、受付でお金を払う。",
-              "text_en": "Ask the venue by email for tickets for two people and pay money at reception on the day."
+              "text_en": "Ask the venue by email for tickets for two people and pay money at reception on the day.",
+              "text_ja_ruby": "<ruby>会場<rt>かいじょう</rt></ruby>にメールで2<ruby>人分<rt>にんぶん</rt></ruby>の<ruby>券<rt>けん</rt></ruby>をお<ruby>願<rt>ねが</rt></ruby>いし、<ruby>当日<rt>とうじつ</rt></ruby>、<ruby>受付<rt>うけつけ</rt></ruby>でお<ruby>金<rt>かね</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "本文に「来ていただけるのでしたら、私（大山）あてに前日までにメールかお電話で人数をご連絡いただけますか。入場券を受付に用意しておきます。代金は結構です」とあります。連絡は大山さんあてに行い、代金は不要（無料）であるため、1が正解です。",
-          "explanation_en": "The text states: 'if you are able to come, could you please contact me (Oyama) by email or phone by the day before with the number of guests? I will have admission tickets prepared for you at the reception. No payment is needed.' Since he contacts Oyama and tickets are free, option 1 is correct."
+          "explanation_en": "The text states: 'if you are able to come, could you please contact me (Oyama) by email or phone by the day before with the number of guests? I will have admission tickets prepared for you at the reception. No payment is needed.' Since he contacts Oyama and tickets are free, option 1 is correct.",
+          "questionText_ja_ruby": "ヘンドラさんは、<ruby>妻<rt>つま</rt></ruby>とこのコンサートに<ruby>行<rt>い</rt></ruby>きたい。どうしたらよいか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>来<rt>き</rt></ruby>ていただけるのでしたら、<ruby>私<rt>わたし</rt></ruby>（<ruby>大山<rt>おおやま</rt></ruby>）あてに<ruby>前日<rt>ぜんじつ</rt></ruby>までにメールかお<ruby>電話<rt>でんわ</rt></ruby>で<ruby>人数<rt>にんずう</rt></ruby>をご<ruby>連絡<rt>れんらく</rt></ruby>いただけますか。<ruby>入場券<rt>にゅうじょうけん</rt></ruby>を<ruby>受付<rt>うけつけ</rt></ruby>に<ruby>用意<rt>ようい</rt></ruby>しておきます。<ruby>代金<rt>だいきん</rt></ruby>は<ruby>結構<rt>けっこう</rt></ruby>です」とあります。<ruby>連絡<rt>れんらく</rt></ruby>は<ruby>大山<rt>おおやま</rt></ruby>さんあてに<ruby>行<rt>おこな</rt></ruby>い、<ruby>代金<rt>だいきん</rt></ruby>は<ruby>不要<rt>ふよう</rt></ruby>（<ruby>無料<rt>むりょう</rt></ruby>）であるため、1が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "dokkai-n3-p4-41-q3",
@@ -2827,27 +3012,33 @@
             {
               "id": 1,
               "text_ja": "4月2日",
-              "text_en": "April 2nd"
+              "text_en": "April 2nd",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>2<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "4月3日",
-              "text_en": "April 3rd"
+              "text_en": "April 3rd",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>3<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "6月9日",
-              "text_en": "June 9th"
+              "text_en": "June 9th",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>9<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "6月10日",
-              "text_en": "June 10th"
+              "text_en": "June 10th",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>10<ruby>日<rt>ひ</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "本文にコンサートの日時は「六月十日」とあり、「前日までにメールかお電話で人数をご連絡いただけますか」と書かれています。開催日の前日は「6月9日」です。したがって3が正解です。",
-          "explanation_en": "The concert date is stated as June 10th ('六月十日'), and the letter requests: 'please contact me by email or phone by the day before ('前日までに').' The day before the concert is June 9th. Therefore, option 3 is correct."
+          "explanation_en": "The concert date is stated as June 10th ('六月十日'), and the letter requests: 'please contact me by email or phone by the day before ('前日までに').' The day before the concert is June 9th. Therefore, option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>行<rt>い</rt></ruby>く<ruby>連絡<rt>れんらく</rt></ruby>は、いつまでにしなければならないか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>にコンサートの<ruby>日時<rt>にちじ</rt></ruby>は「<ruby>六月<rt>ろくがつ</rt></ruby><ruby>十日<rt>とうか</rt></ruby>」とあり、「<ruby>前日<rt>ぜんじつ</rt></ruby>までにメールかお<ruby>電話<rt>でんわ</rt></ruby>で<ruby>人数<rt>にんずう</rt></ruby>をご<ruby>連絡<rt>れんらく</rt></ruby>いただけますか」と<ruby>書<rt>か</rt></ruby>かれています。<ruby>開催日<rt>かいさいび</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>は「6<ruby>月<rt>げつ</rt></ruby>9<ruby>日<rt>ひ</rt></ruby>」です。したがって3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ]
     }

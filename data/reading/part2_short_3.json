@@ -158,7 +158,8 @@
             {
               "id": 1,
               "text_ja": "①『ラストダンスは君と』",
-              "text_en": "1) 'The Last Dance with You'"
+              "text_en": "1) 'The Last Dance with You'",
+              "text_ja_ruby": "①『ラストダンスは<ruby>君<rt>くん</rt></ruby>と』"
             },
             {
               "id": 2,
@@ -168,17 +169,21 @@
             {
               "id": 3,
               "text_ja": "③『トモばあちゃんの涙』",
-              "text_en": "3) 'Grandma Tomo's Tears'"
+              "text_en": "3) 'Grandma Tomo's Tears'",
+              "text_ja_ruby": "③『トモばあちゃんの<ruby>涙<rt>なみだ</rt></ruby>』"
             },
             {
               "id": 4,
               "text_ja": "④『ホヨヨンと楽しいおともだち』",
-              "text_en": "4) 'Hoyoyon and Fun Friends'"
+              "text_en": "4) 'Hoyoyon and Fun Friends'",
+              "text_ja_ruby": "④『ホヨヨンと<ruby>楽<rt>たの</rt></ruby>しいおともだち』"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "5歳の息子は「幼児」に該当します。作品紹介で「幼児・児童および保護者対象」と明記されているのは④『ホヨヨンと楽しいおともだち』です。②は「小学生以上対象」なので5歳児には該当せず、①と③は「一般向け」です。したがって 4 が正解です。",
-          "explanation_en": "A 5-year-old son falls into the category of 'young child' (幼児). In the program list, Film ④ 'Hoyoyon and Fun Friends' specifically lists '幼児・児童および保護者対象' (intended for young children, elementary students, and guardians). Film ② is for elementary school age and above. Therefore, Option 4 is correct."
+          "explanation_en": "A 5-year-old son falls into the category of 'young child' (幼児). In the program list, Film ④ 'Hoyoyon and Fun Friends' specifically lists '幼児・児童および保護者対象' (intended for young children, elementary students, and guardians). Film ② is for elementary school age and above. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "<ruby>林<rt>はやし</rt></ruby>さんは5<ruby>歳<rt>さい</rt></ruby>の<ruby>息子<rt>むすこ</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>きたいと<ruby>思<rt>おも</rt></ruby>っています。<ruby>林<rt>はやし</rt></ruby>さん<ruby>親子<rt>おやこ</rt></ruby>が<ruby>見<rt>み</rt></ruby>るのに<ruby>適<rt>てき</rt></ruby>している<ruby>映画<rt>えいが</rt></ruby>はどれですか。",
+          "explanation_ja_ruby": "5<ruby>歳<rt>さい</rt></ruby>の<ruby>息子<rt>むすこ</rt></ruby>は「<ruby>幼児<rt>ようじ</rt></ruby>」に<ruby>該当<rt>がいとう</rt></ruby>します。<ruby>作品紹介<rt>さくひんしょうかい</rt></ruby>で「<ruby>幼児<rt>ようじ</rt></ruby>・<ruby>児童<rt>じどう</rt></ruby>および<ruby>保護者<rt>ほごしゃ</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>」と<ruby>明記<rt>めいき</rt></ruby>されているのは④『ホヨヨンと<ruby>楽<rt>たの</rt></ruby>しいおともだち』です。②は「<ruby>小学生<rt>しょうがくせい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby><ruby>対象<rt>たいしょう</rt></ruby>」なので5<ruby>歳<rt>さい</rt></ruby><ruby>児<rt>じ</rt></ruby>には<ruby>該当<rt>がいとう</rt></ruby>せず、①と③は「<ruby>一般向<rt>いっぱんむき</rt></ruby>け」です。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -389,27 +394,33 @@
             {
               "id": 1,
               "text_ja": "整理券を持たずにホールに入る。",
-              "text_en": "Entering the hall without a numbered ticket."
+              "text_en": "Entering the hall without a numbered ticket.",
+              "text_ja_ruby": "<ruby>整理券<rt>せいりけん</rt></ruby>を<ruby>持<rt>も</rt></ruby>たずにホールに<ruby>入<rt>はい</rt></ruby>る。"
             },
             {
               "id": 2,
               "text_ja": "小学生の子どもを連れて見に行く。",
-              "text_en": "Bringing an elementary school child to watch."
+              "text_en": "Bringing an elementary school child to watch.",
+              "text_ja_ruby": "<ruby>小学生<rt>しょうがくせい</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもを<ruby>連<rt>つ</rt></ruby>れて<ruby>見<rt>み</rt></ruby>に<ruby>行<rt>い</rt></ruby>く。"
             },
             {
               "id": 3,
               "text_ja": "開演前のロビーで飲み物を飲む。",
-              "text_en": "Drinking a beverage in the lobby before the show starts."
+              "text_en": "Drinking a beverage in the lobby before the show starts.",
+              "text_ja_ruby": "<ruby>開演前<rt>かいえんまえ</rt></ruby>のロビーで<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 4,
               "text_ja": "客席で携帯電話を使ってメールをする。",
-              "text_en": "Using a mobile phone in the audience seats to send an email."
+              "text_en": "Using a mobile phone in the audience seats to send an email.",
+              "text_ja_ruby": "<ruby>客席<rt>きゃくせき</rt></ruby>で<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>ってメールをする。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "お知らせの「お願い」に「携帯電話・スマートフォン等の電源はお切りいただくか、マナーモードではなく必ず電源をお切りください」とあります。電源を切らなければならないため、客席で携帯電話を使ってメールをすることは禁止されています。したがって 4 が正解です。（1は「整理券不要」なので誤り。2は「就学前（小学生未満）」が不可なので小学生は入場可能。3はホール内での飲食が禁止であり、開演前ロビー等の制限ではありません。）",
-          "explanation_en": "The notice instructs attendees to turn off the power completely ('マナーモードではなく必ず電源をお切りください'). Since phones must be turned off, sending emails on a phone during the event is forbidden. Therefore, Option 4 is correct. (1 is wrong because tickets are not required; 2 is allowed because only preschool children are barred; 3 specifies inside the hall during the event)."
+          "explanation_en": "The notice instructs attendees to turn off the power completely ('マナーモードではなく必ず電源をお切りください'). Since phones must be turned off, sending emails on a phone during the event is forbidden. Therefore, Option 4 is correct. (1 is wrong because tickets are not required; 2 is allowed because only preschool children are barred; 3 specifies inside the hall during the event).",
+          "questionText_ja_ruby": "このコンサートで、してはいけないことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "お<ruby>知<rt>し</rt></ruby>らせの「お<ruby>願<rt>ねが</rt></ruby>い」に「<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>・スマートフォン<ruby>等<rt>など</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>はお<ruby>切<rt>き</rt></ruby>りいただくか、マナーモードではなく<ruby>必<rt>かなら</rt></ruby>ず<ruby>電源<rt>でんげん</rt></ruby>をお<ruby>切<rt>き</rt></ruby>りください」とあります。<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>らなければならないため、<ruby>客席<rt>きゃくせき</rt></ruby>で<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>を<ruby>使<rt>つか</rt></ruby>ってメールをすることは<ruby>禁止<rt>きんし</rt></ruby>されています。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。（1は「<ruby>整理券<rt>せいりけん</rt></ruby><ruby>不要<rt>ふよう</rt></ruby>」なので<ruby>誤<rt>あやま</rt></ruby>り。2は「<ruby>就学前<rt>しゅうがくまえ</rt></ruby>（<ruby>小学生未満<rt>しょうがくせいみまん</rt></ruby>）」が<ruby>不可<rt>ふか</rt></ruby>なので<ruby>小学生<rt>しょうがくせい</rt></ruby>は<ruby>入場<rt>にゅうじょう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>。3はホール<ruby>内<rt>ない</rt></ruby>での<ruby>飲食<rt>いんしょく</rt></ruby>が<ruby>禁止<rt>きんし</rt></ruby>であり、<ruby>開演前<rt>かいえんまえ</rt></ruby>ロビー<ruby>等<rt>など</rt></ruby>の<ruby>制限<rt>せいげん</rt></ruby>ではありません。）"
         }
       ],
       "commentary": {
@@ -620,27 +631,33 @@
             {
               "id": 1,
               "text_ja": "5月10日は終日、東館のエレベーターが利用できない。",
-              "text_en": "Elevators in the East Wing cannot be used all day on May 10."
+              "text_en": "Elevators in the East Wing cannot be used all day on May 10.",
+              "text_ja_ruby": "5<ruby>月<rt>げつ</rt></ruby>10<ruby>日<rt>ひ</rt></ruby>は<ruby>終日<rt>しゅうじつ</rt></ruby>、<ruby>東館<rt>ひがしかん</rt></ruby>のエレベーターが<ruby>利用<rt>りよう</rt></ruby>できない。"
             },
             {
               "id": 2,
               "text_ja": "5月11日は、すべての館のエレベーターが停止する。",
-              "text_en": "Elevators in all wings are suspended on May 11."
+              "text_en": "Elevators in all wings are suspended on May 11.",
+              "text_ja_ruby": "5<ruby>月<rt>げつ</rt></ruby>11<ruby>日<rt>ひ</rt></ruby>は、すべての<ruby>館<rt>かん</rt></ruby>のエレベーターが<ruby>停止<rt>ていし</rt></ruby>する。"
             },
             {
               "id": 3,
               "text_ja": "エレベーター点検中も、エスカレーターや階段は利用できる。",
-              "text_en": "Even during elevator inspection, escalators and stairs can be used."
+              "text_en": "Even during elevator inspection, escalators and stairs can be used.",
+              "text_ja_ruby": "エレベーター<ruby>点検<rt>てんけん</rt></ruby><ruby>中<rt>なか</rt></ruby>も、エスカレーターや<ruby>階段<rt>かいだん</rt></ruby>は<ruby>利用<rt>りよう</rt></ruby>できる。"
             },
             {
               "id": 4,
               "text_ja": "点検の時間が延びることは絶対にない。",
-              "text_en": "The inspection time will absolutely never be extended."
+              "text_en": "The inspection time will absolutely never be extended.",
+              "text_ja_ruby": "<ruby>点検<rt>てんけん</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>が<ruby>延<rt>の</rt></ruby>びることは<ruby>絶対<rt>ぜったい</rt></ruby>にない。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "本文に「点検中は、エレベーターをご利用いただけません。中央エスカレーターまたは非常階段をご利用ください」と書かれているため、3「エレベーター点検中も、エスカレーターや階段は利用できる」が合致し正解です。（1は東館は9:00〜12:00のみなので終日ではない。2は5月11日停止は北館のみ。4は「多少前後する場合がある」とあるため誤り。）",
-          "explanation_en": "The notice states 'Please use the central escalators or emergency stairs' during inspection, making Option 3 correct. (1 is wrong because East Wing is only stopped 9:00-12:00, not all day; 2 is wrong because only North Wing is stopped on May 11; 4 is wrong because hours may vary)."
+          "explanation_en": "The notice states 'Please use the central escalators or emergency stairs' during inspection, making Option 3 correct. (1 is wrong because East Wing is only stopped 9:00-12:00, not all day; 2 is wrong because only North Wing is stopped on May 11; 4 is wrong because hours may vary).",
+          "questionText_ja_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>点検<rt>てんけん</rt></ruby><ruby>中<rt>なか</rt></ruby>は、エレベーターをご<ruby>利用<rt>りよう</rt></ruby>いただけません。<ruby>中央<rt>ちゅうおう</rt></ruby>エスカレーターまたは<ruby>非常階段<rt>ひじょうかいだん</rt></ruby>をご<ruby>利用<rt>りよう</rt></ruby>ください」と<ruby>書<rt>か</rt></ruby>かれているため、3「エレベーター<ruby>点検<rt>てんけん</rt></ruby><ruby>中<rt>なか</rt></ruby>も、エスカレーターや<ruby>階段<rt>かいだん</rt></ruby>は<ruby>利用<rt>りよう</rt></ruby>できる」が<ruby>合致<rt>がっち</rt></ruby>し<ruby>正解<rt>せいかい</rt></ruby>です。（1は<ruby>東館<rt>ひがしかん</rt></ruby>は9:00〜12:00のみなので<ruby>終日<rt>しゅうじつ</rt></ruby>ではない。2は5<ruby>月<rt>げつ</rt></ruby>11<ruby>日<rt>ひ</rt></ruby><ruby>停止<rt>ていし</rt></ruby>は<ruby>北館<rt>きたかん</rt></ruby>のみ。4は「<ruby>多少<rt>たしょう</rt></ruby><ruby>前後<rt>ぜんご</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>がある」とあるため<ruby>誤<rt>あやま</rt></ruby>り。）"
         }
       ],
       "commentary": {
@@ -839,27 +856,33 @@
             {
               "id": 1,
               "text_ja": "ピンクの錠剤は朝食後・昼食後・夕食後に1錠ずつ飲む。",
-              "text_en": "Take 1 pink tablet each after breakfast, lunch, and dinner."
+              "text_en": "Take 1 pink tablet each after breakfast, lunch, and dinner.",
+              "text_ja_ruby": "ピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>は<ruby>朝食後<rt>ちょうしょくご</rt></ruby>・<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>・<ruby>夕食後<rt>ゆうしょくご</rt></ruby>に1<ruby>錠<rt>じょう</rt></ruby>ずつ<ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 2,
               "text_ja": "白のカプセルは朝食後と夕食後に2錠ずつ飲む。",
-              "text_en": "Take 2 white capsules each after breakfast and dinner."
+              "text_en": "Take 2 white capsules each after breakfast and dinner.",
+              "text_ja_ruby": "<ruby>白<rt>しろ</rt></ruby>のカプセルは<ruby>朝食後<rt>ちょうしょくご</rt></ruby>と<ruby>夕食後<rt>ゆうしょくご</rt></ruby>に2<ruby>錠<rt>じょう</rt></ruby>ずつ<ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 3,
               "text_ja": "ピンクの錠剤と白のカプセルを昼食後に2錠ずつ飲む。",
-              "text_en": "Take 2 pink tablets and 2 white capsules together after lunch."
+              "text_en": "Take 2 pink tablets and 2 white capsules together after lunch.",
+              "text_ja_ruby": "ピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>のカプセルを<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>に2<ruby>錠<rt>じょう</rt></ruby>ずつ<ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 4,
               "text_ja": "ピンクの錠剤は朝・夕の食後に2錠ずつ、白のカプセルは朝・昼・夕の食後に1錠ずつ飲む。",
-              "text_en": "Take 2 pink tablets after breakfast and dinner, and 1 white capsule after breakfast, lunch, and dinner."
+              "text_en": "Take 2 pink tablets after breakfast and dinner, and 1 white capsule after breakfast, lunch, and dinner.",
+              "text_ja_ruby": "ピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>は<ruby>朝<rt>あさ</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>の<ruby>食後<rt>しょくご</rt></ruby>に2<ruby>錠<rt>じょう</rt></ruby>ずつ、<ruby>白<rt>しろ</rt></ruby>のカプセルは<ruby>朝<rt>あさ</rt></ruby>・<ruby>昼<rt>ひる</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>の<ruby>食後<rt>しょくご</rt></ruby>に1<ruby>錠<rt>じょう</rt></ruby>ずつ<ruby>飲<rt>の</rt></ruby>む。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "説明書に「ピンクの錠剤：1回2錠、1日2回（朝・夕の食後）」「白のカプセル：1回1錠、1日3回（朝・昼・夕の食後）」と明記されています。したがって 4 が正しい組み合わせです。",
-          "explanation_en": "The instructions specify: Pink tablets = 2 tablets, twice daily (after breakfast & dinner); White capsules = 1 capsule, 3 times daily (after breakfast, lunch & dinner). Option 4 correctly reflects this."
+          "explanation_en": "The instructions specify: Pink tablets = 2 tablets, twice daily (after breakfast & dinner); White capsules = 1 capsule, 3 times daily (after breakfast, lunch & dinner). Option 4 correctly reflects this.",
+          "questionText_ja_ruby": "<ruby>田中<rt>たなか</rt></ruby>さんの<ruby>薬<rt>くすり</rt></ruby>の<ruby>正<rt>ただ</rt></ruby>しい<ruby>飲<rt>の</rt></ruby>み<ruby>方<rt>かた</rt></ruby>はどれか。",
+          "explanation_ja_ruby": "<ruby>説明書<rt>せつめいしょ</rt></ruby>に「ピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>：1<ruby>回<rt>かい</rt></ruby>2<ruby>錠<rt>じょう</rt></ruby>、1<ruby>日<rt>ひ</rt></ruby>2<ruby>回<rt>かい</rt></ruby>（<ruby>朝<rt>あさ</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>の<ruby>食後<rt>しょくご</rt></ruby>）」「<ruby>白<rt>しろ</rt></ruby>のカプセル：1<ruby>回<rt>かい</rt></ruby>1<ruby>錠<rt>じょう</rt></ruby>、1<ruby>日<rt>ひ</rt></ruby>3<ruby>回<rt>かい</rt></ruby>（<ruby>朝<rt>あさ</rt></ruby>・<ruby>昼<rt>ひる</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>の<ruby>食後<rt>しょくご</rt></ruby>）」と<ruby>明記<rt>めいき</rt></ruby>されています。したがって 4 が<ruby>正<rt>ただ</rt></ruby>しい<ruby>組<rt>く</rt></ruby>み<ruby>合<rt>あ</rt></ruby>わせです。"
         },
         {
           "questionId": "q-26-2",
@@ -870,27 +893,33 @@
             {
               "id": 1,
               "text_ja": "昼食後にピンクの錠剤だけを2錠飲む。",
-              "text_en": "Take only 2 pink tablets after lunch."
+              "text_en": "Take only 2 pink tablets after lunch.",
+              "text_ja_ruby": "<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>にピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>だけを2<ruby>錠<rt>じょう</rt></ruby><ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 2,
               "text_ja": "昼食後にピンクの錠剤と白のカプセルを両方飲む。",
-              "text_en": "Take both the pink tablets and white capsule after lunch."
+              "text_en": "Take both the pink tablets and white capsule after lunch.",
+              "text_ja_ruby": "<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>にピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>のカプセルを<ruby>両方<rt>りょうほう</rt></ruby><ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 3,
               "text_ja": "昼食後に白のカプセルだけを1錠飲む。",
-              "text_en": "Take only 1 white capsule after lunch."
+              "text_en": "Take only 1 white capsule after lunch.",
+              "text_ja_ruby": "<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>のカプセルだけを1<ruby>錠<rt>じょう</rt></ruby><ruby>飲<rt>の</rt></ruby>む。"
             },
             {
               "id": 4,
               "text_ja": "夕食後まで何も飲まず、夕食後に両方飲む。",
-              "text_en": "Take nothing until after dinner, then take both after dinner."
+              "text_en": "Take nothing until after dinner, then take both after dinner.",
+              "text_ja_ruby": "<ruby>夕食後<rt>ゆうしょくご</rt></ruby>まで<ruby>何<rt>なに</rt></ruby>も<ruby>飲<rt>の</rt></ruby>まず、<ruby>夕食後<rt>ゆうしょくご</rt></ruby>に<ruby>両方<rt>りょうほう</rt></ruby><ruby>飲<rt>の</rt></ruby>む。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "ピンクの錠剤は「朝・夕」の1日2回なので昼食後には飲みません。一方、白のカプセルは「朝・昼・夕」の1日3回なので、昼食後に1錠飲む必要があります。したがって次に飲むのは「昼食後に白のカプセルだけを1錠」の 3 が正解です。",
-          "explanation_en": "The pink tablets are only taken at breakfast and dinner (twice daily, none at lunch). The white capsules are taken at breakfast, lunch, and dinner (3 times daily). Thus, the next dose is 1 white capsule after lunch. Option 3 is correct."
+          "explanation_en": "The pink tablets are only taken at breakfast and dinner (twice daily, none at lunch). The white capsules are taken at breakfast, lunch, and dinner (3 times daily). Thus, the next dose is 1 white capsule after lunch. Option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>田中<rt>たなか</rt></ruby>さんは<ruby>朝食後<rt>ちょうしょくご</rt></ruby>にピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>と<ruby>白<rt>しろ</rt></ruby>のカプセルを<ruby>飲<rt>の</rt></ruby>みました。<ruby>次<rt>つぎ</rt></ruby>に<ruby>飲<rt>の</rt></ruby>むのはいつ、どの<ruby>薬<rt>くすり</rt></ruby>か。",
+          "explanation_ja_ruby": "ピンクの<ruby>錠剤<rt>じょうざい</rt></ruby>は「<ruby>朝<rt>あさ</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>」の1<ruby>日<rt>ひ</rt></ruby>2<ruby>回<rt>かい</rt></ruby>なので<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>には<ruby>飲<rt>の</rt></ruby>みません。<ruby>一方<rt>いっぽう</rt></ruby>、<ruby>白<rt>しろ</rt></ruby>のカプセルは「<ruby>朝<rt>あさ</rt></ruby>・<ruby>昼<rt>ひる</rt></ruby>・<ruby>夕<rt>ゆう</rt></ruby>」の1<ruby>日<rt>ひ</rt></ruby>3<ruby>回<rt>かい</rt></ruby>なので、<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>に1<ruby>錠<rt>じょう</rt></ruby><ruby>飲<rt>の</rt></ruby>む<ruby>必要<rt>ひつよう</rt></ruby>があります。したがって<ruby>次<rt>つぎ</rt></ruby>に<ruby>飲<rt>の</rt></ruby>むのは「<ruby>昼食後<rt>ちゅうしょくご</rt></ruby>に<ruby>白<rt>しろ</rt></ruby>のカプセルだけを1<ruby>錠<rt>じょう</rt></ruby>」の 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -1083,27 +1112,33 @@
             {
               "id": 1,
               "text_ja": "男子学生のほうが女子学生よりもアルバイトをしている割合が高い。",
-              "text_en": "A higher proportion of male students work part-time jobs than female students."
+              "text_en": "A higher proportion of male students work part-time jobs than female students.",
+              "text_ja_ruby": "<ruby>男子学生<rt>だんしがくせい</rt></ruby>のほうが<ruby>女子学生<rt>じょしがくせい</rt></ruby>よりもアルバイトをしている<ruby>割合<rt>わりあい</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い。"
             },
             {
               "id": 2,
               "text_ja": "生活費を稼ぐためにアルバイトをしている学生が半数以上を占めている。",
-              "text_en": "Students working part-time to earn living expenses account for more than half."
+              "text_en": "Students working part-time to earn living expenses account for more than half.",
+              "text_ja_ruby": "<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐためにアルバイトをしている<ruby>学生<rt>がくせい</rt></ruby>が<ruby>半数以上<rt>はんすういじょう</rt></ruby>を<ruby>占<rt>し</rt></ruby>めている。"
             },
             {
               "id": 3,
               "text_ja": "アルバイトの目的は、お金を稼ぐためだけではない。",
-              "text_en": "The purpose of working part-time jobs is not solely to earn money."
+              "text_en": "The purpose of working part-time jobs is not solely to earn money.",
+              "text_ja_ruby": "アルバイトの<ruby>目的<rt>もくてき</rt></ruby>は、お<ruby>金<rt>かね</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐためだけではない。"
             },
             {
               "id": 4,
               "text_ja": "社会経験のためにアルバイトをする学生はほとんどいない。",
-              "text_en": "There are almost no students who work part-time jobs for social experience."
+              "text_en": "There are almost no students who work part-time jobs for social experience.",
+              "text_ja_ruby": "<ruby>社会<rt>しゃかい</rt></ruby><ruby>経験<rt>けいけん</rt></ruby>のためにアルバイトをする<ruby>学生<rt>がくせい</rt></ruby>はほとんどいない。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "グラフおよび本文から、生活費や勉学費を稼ぐ目的だけでなく、「学生生活を楽しむため（32.4%）」や「社会経験のため（24.2%）」などお金稼ぎ以外の目的が大きな割合を占めており、本文結びにも「お金を稼ぐことだけでなく…」と述べられています。したがって 3 が正解です。（1は男子79.4%、女子83.4%で女子のほうが高いため誤り。2は生活費は32.8%であり半数（50%）以上ではないため誤り。4は社会経験目的が24.2%と約4人に1人存在するため誤り。）",
-          "explanation_en": "The chart and text show that besides earning living expenses, students work for 'enjoying student life' (32.4%) and 'social experience' (24.2%), and the text concludes that purpose is not merely earning money. Thus, Option 3 is correct. (1 is false: females 83.4% > males 79.4%; 2 is false: living expenses is 32.8%, well under half; 4 is false: 24.2% is nearly 1 in 4 students)."
+          "explanation_en": "The chart and text show that besides earning living expenses, students work for 'enjoying student life' (32.4%) and 'social experience' (24.2%), and the text concludes that purpose is not merely earning money. Thus, Option 3 is correct. (1 is false: females 83.4% > males 79.4%; 2 is false: living expenses is 32.8%, well under half; 4 is false: 24.2% is nearly 1 in 4 students).",
+          "questionText_ja_ruby": "この<ruby>調査<rt>ちょうさ</rt></ruby>について<ruby>述<rt>の</rt></ruby>べているもので<ruby>最<rt>もっと</rt></ruby>も<ruby>正<rt>ただ</rt></ruby>しいものはどれか。",
+          "explanation_ja_ruby": "グラフおよび<ruby>本文<rt>ほんぶん</rt></ruby>から、<ruby>生活費<rt>せいかつひ</rt></ruby>や<ruby>勉学<rt>べんがく</rt></ruby><ruby>費<rt>ひ</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐ<ruby>目的<rt>もくてき</rt></ruby>だけでなく、「<ruby>学生生活<rt>がくせいせいかつ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむため（32.4%）」や「<ruby>社会<rt>しゃかい</rt></ruby><ruby>経験<rt>けいけん</rt></ruby>のため（24.2%）」などお<ruby>金<rt>かね</rt></ruby><ruby>稼<rt>かせ</rt></ruby>ぎ<ruby>以外<rt>いがい</rt></ruby>の<ruby>目的<rt>もくてき</rt></ruby>が<ruby>大<rt>おお</rt></ruby>きな<ruby>割合<rt>わりあい</rt></ruby>を<ruby>占<rt>し</rt></ruby>めており、<ruby>本文<rt>ほんぶん</rt></ruby><ruby>結<rt>むす</rt></ruby>びにも「お<ruby>金<rt>かね</rt></ruby>を<ruby>稼<rt>かせ</rt></ruby>ぐことだけでなく…」と<ruby>述<rt>の</rt></ruby>べられています。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。（1は<ruby>男子<rt>だんし</rt></ruby>79.4%、<ruby>女子<rt>じょし</rt></ruby>83.4%で<ruby>女子<rt>じょし</rt></ruby>のほうが<ruby>高<rt>たか</rt></ruby>いため<ruby>誤<rt>あやま</rt></ruby>り。2は<ruby>生活費<rt>せいかつひ</rt></ruby>は32.8%であり<ruby>半数<rt>はんすう</rt></ruby>（50%）<ruby>以上<rt>いじょう</rt></ruby>ではないため<ruby>誤<rt>あやま</rt></ruby>り。4は<ruby>社会<rt>しゃかい</rt></ruby><ruby>経験<rt>けいけん</rt></ruby><ruby>目的<rt>もくてき</rt></ruby>が24.2%と<ruby>約<rt>やく</rt></ruby>4<ruby>人<rt>ひと</rt></ruby>に1<ruby>人<rt>ひと</rt></ruby><ruby>存在<rt>そんざい</rt></ruby>するため<ruby>誤<rt>あやま</rt></ruby>り。）"
         }
       ],
       "commentary": {
@@ -1314,27 +1349,33 @@
             {
               "id": 1,
               "text_ja": "中村さんに直接電話をかけて確認する。",
-              "text_en": "Call Mr. Nakamura directly to check."
+              "text_en": "Call Mr. Nakamura directly to check.",
+              "text_ja_ruby": "<ruby>中村<rt>なかむら</rt></ruby>さんに<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>をかけて<ruby>確認<rt>かくにん</rt></ruby>する。"
             },
             {
               "id": 2,
               "text_ja": "このメールにそのまま返信してショップに問い合わせる。",
-              "text_en": "Reply directly to this email to inquire with the shop."
+              "text_en": "Reply directly to this email to inquire with the shop.",
+              "text_ja_ruby": "このメールにそのまま<ruby>返信<rt>へんしん</rt></ruby>してショップに<ruby>問<rt>と</rt></ruby>い<ruby>合<rt>あ</rt></ruby>わせる。"
             },
             {
               "id": 3,
               "text_ja": "クレジットカード会社に決済状況を確認する。",
-              "text_en": "Check the settlement status with the credit card company."
+              "text_en": "Check the settlement status with the credit card company.",
+              "text_ja_ruby": "クレジットカード<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>決済<rt>けっさい</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する。"
             },
             {
               "id": 4,
               "text_ja": "メール画面またはマイページの「お客様情報」から配送状況を確認する。",
-              "text_en": "Check the delivery status via 'Customer Information' on the email screen or My Page."
+              "text_en": "Check the delivery status via 'Customer Information' on the email screen or My Page.",
+              "text_ja_ruby": "メール<ruby>画面<rt>がめん</rt></ruby>またはマイページの「お<ruby>客様<rt>きゃくさま</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>」から<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "メール本文の注記に「※ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます」と明記されています。したがって、中村さん宅への配達完了状況を確認するには「お客様情報」から配送状況を調べる 4 が正解です。（1はギフト受取人に直接尋ねる案内はなく不適。2は配送状況確認方法として指定されていない。3は支払いに関するもので配達状況は分からない。）",
-          "explanation_en": "The note in the email explicitly specifies: '※ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます' (You can check the shipping and delivery status of your order from Customer Information on My Page). Therefore, Option 4 is correct."
+          "explanation_en": "The note in the email explicitly specifies: '※ご注文の配送状況は、マイページの「お客様情報」よりご確認いただけます' (You can check the shipping and delivery status of your order from Customer Information on My Page). Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "<ruby>品物<rt>しなもの</rt></ruby>が<ruby>中村<rt>なかむら</rt></ruby>さんの<ruby>家<rt>いえ</rt></ruby>に<ruby>届<rt>とど</rt></ruby>けられたかどうかを<ruby>知<rt>し</rt></ruby>りたいが、どうしたらよいか。",
+          "explanation_ja_ruby": "メール<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>注記<rt>ちゅうき</rt></ruby>に「※ご<ruby>注文<rt>ちゅうもん</rt></ruby>の<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>は、マイページの「お<ruby>客様<rt>きゃくさま</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>」よりご<ruby>確認<rt>かくにん</rt></ruby>いただけます」と<ruby>明記<rt>めいき</rt></ruby>されています。したがって、<ruby>中村<rt>なかむら</rt></ruby>さん<ruby>宅<rt>たく</rt></ruby>への<ruby>配達<rt>はいたつ</rt></ruby><ruby>完了<rt>かんりょう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>するには「お<ruby>客様<rt>きゃくさま</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>」から<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる 4 が<ruby>正解<rt>せいかい</rt></ruby>です。（1はギフト<ruby>受取人<rt>うけとりにん</rt></ruby>に<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>尋<rt>たず</rt></ruby>ねる<ruby>案内<rt>あんない</rt></ruby>はなく<ruby>不適<rt>ふてき</rt></ruby>。2は<ruby>配送<rt>はいそう</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby><ruby>確認<rt>かくにん</rt></ruby><ruby>方法<rt>ほうほう</rt></ruby>として<ruby>指定<rt>してい</rt></ruby>されていない。3は<ruby>支払<rt>しはら</rt></ruby>いに<ruby>関<rt>かん</rt></ruby>するもので<ruby>配達<rt>はいたつ</rt></ruby><ruby>状況<rt>じょうきょう</rt></ruby>は<ruby>分<rt>わ</rt></ruby>からない。）"
         }
       ],
       "commentary": {

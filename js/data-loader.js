@@ -96,6 +96,7 @@ export function normalizeQuestion(q, lessonId, idx) {
     question_en: q.questionText_en || q.question_en || '',
     options: (q.options || []).map(o => typeof o === 'string' ? o : (o.text_ja || '')),
     options_en: (q.options || []).map(o => typeof o === 'string' ? '' : (o.text_en || '')),
+    options_ruby: (q.options || []).map(o => typeof o === 'string' ? '' : (o.text_ja_ruby || '')),
     correctAnswer: parseInt(q.correctAnswer, 10)
   };
 }

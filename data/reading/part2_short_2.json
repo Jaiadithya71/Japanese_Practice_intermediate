@@ -177,27 +177,33 @@
             {
               "id": 1,
               "text_ja": "幼稚園や小学校で習う歌の題名",
-              "text_en": "The title of a song taught in kindergartens and elementary schools"
+              "text_en": "The title of a song taught in kindergartens and elementary schools",
+              "text_ja_ruby": "<ruby>幼稚園<rt>ようちえん</rt></ruby>や<ruby>小学校<rt>しょうがっこう</rt></ruby>で<ruby>習<rt>なら</rt></ruby>う<ruby>歌<rt>うた</rt></ruby>の<ruby>題名<rt>だいめい</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "避難するときの注意を短くした言葉",
-              "text_en": "A shortened acronym summing up rules for evacuation"
+              "text_en": "A shortened acronym summing up rules for evacuation",
+              "text_ja_ruby": "<ruby>避難<rt>ひなん</rt></ruby>するときの<ruby>注意<rt>ちゅうい</rt></ruby>を<ruby>短<rt>みじか</rt></ruby>くした<ruby>言葉<rt>ことば</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "災害が起きたときに使う道具の名前",
-              "text_en": "The name of a tool used when a disaster strikes"
+              "text_en": "The name of a tool used when a disaster strikes",
+              "text_ja_ruby": "<ruby>災害<rt>さいがい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きたときに<ruby>使<rt>つか</rt></ruby>う<ruby>道具<rt>どうぐ</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "安全に避難した子どもにあげる約束のごほうび",
-              "text_en": "A reward promised to children who evacuate safely"
+              "text_en": "A reward promised to children who evacuate safely",
+              "text_ja_ruby": "<ruby>安全<rt>あんぜん</rt></ruby>に<ruby>避難<rt>ひなん</rt></ruby>した<ruby>子<rt>こ</rt></ruby>どもにあげる<ruby>約束<rt>やくそく</rt></ruby>のごほうび"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文に「『おかしも』とは、『押さない、駆けない、しゃべらない、戻らない』の頭文字をとった言葉で、災害が起きたときに安全に避難するための約束です」と書かれています。避難時の注意事項を短くした言葉であるため、2が正解です。",
-          "explanation_en": "The text explains that 'Okashimo' is an acronym formed from the first letters of 'Don't push, Don't run, Don't talk, Don't go back', acting as rules for safe evacuation. Therefore, Option 2 is correct."
+          "explanation_en": "The text explains that 'Okashimo' is an acronym formed from the first letters of 'Don't push, Don't run, Don't talk, Don't go back', acting as rules for safe evacuation. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "「おかしも」とは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「『おかしも』とは、『<ruby>押<rt>お</rt></ruby>さない、<ruby>駆<rt>か</rt></ruby>けない、しゃべらない、<ruby>戻<rt>もど</rt></ruby>らない』の<ruby>頭文字<rt>かしらもじ</rt></ruby>をとった<ruby>言葉<rt>ことば</rt></ruby>で、<ruby>災害<rt>さいがい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きたときに<ruby>安全<rt>あんぜん</rt></ruby>に<ruby>避難<rt>ひなん</rt></ruby>するための<ruby>約束<rt>やくそく</rt></ruby>です」と<ruby>書<rt>か</rt></ruby>かれています。<ruby>避難時<rt>ひなんじ</rt></ruby>の<ruby>注意事項<rt>ちゅういじこう</rt></ruby>を<ruby>短<rt>みじか</rt></ruby>くした<ruby>言葉<rt>ことば</rt></ruby>であるため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-19-2",
@@ -208,27 +214,33 @@
             {
               "id": 1,
               "text_ja": "災害が起きて実際に走って逃げた経験があるから。",
-              "text_en": "Because they have actual experience running away during a disaster."
+              "text_en": "Because they have actual experience running away during a disaster.",
+              "text_ja_ruby": "<ruby>災害<rt>さいがい</rt></ruby>が<ruby>起<rt>お</rt></ruby>きて<ruby>実際<rt>じっさい</rt></ruby>に<ruby>走<rt>はし</rt></ruby>って<ruby>逃<rt>に</rt></ruby>げた<ruby>経験<rt>けいけん</rt></ruby>があるから。"
             },
             {
               "id": 2,
               "text_ja": "避難訓練をするときにはいつもその言葉を聞くから。",
-              "text_en": "Because they hear that word every time they have an evacuation drill."
+              "text_en": "Because they hear that word every time they have an evacuation drill.",
+              "text_ja_ruby": "<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>をするときにはいつもその<ruby>言葉<rt>ことば</rt></ruby>を<ruby>聞<rt>き</rt></ruby>くから。"
             },
             {
               "id": 3,
               "text_ja": "教室に戻って忘れ物を取ってはいけないと叱られたから。",
-              "text_en": "Because they were scolded for returning to the classroom to get forgotten items."
+              "text_en": "Because they were scolded for returning to the classroom to get forgotten items.",
+              "text_ja_ruby": "<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>って<ruby>忘<rt>わす</rt></ruby>れ<ruby>物<rt>もの</rt></ruby>を<ruby>取<rt>と</rt></ruby>ってはいけないと<ruby>叱<rt>しか</rt></ruby>られたから。"
             },
             {
               "id": 4,
               "text_ja": "素早く走って避難することがとても大切だと教えられたから。",
-              "text_en": "Because they were taught that running quickly to evacuate is very important."
+              "text_en": "Because they were taught that running quickly to evacuate is very important.",
+              "text_ja_ruby": "<ruby>素早<rt>すばや</rt></ruby>く<ruby>走<rt>はし</rt></ruby>って<ruby>避難<rt>ひなん</rt></ruby>することがとても<ruby>大切<rt>たいせつ</rt></ruby>だと<ruby>教<rt>おし</rt></ruby>えられたから。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "本文で「避難訓練のたびに先生から聞かされるので、日本の子どもたちで『おかしも』の意味を知らない子どもはいないほどです」と理由（〜ので）が明確に述べられています。「訓練のたびに聞かされる＝いつも聞く」ため、2が正解です。",
-          "explanation_en": "The passage clearly connects the cause and effect: 'Because they are told by teachers every time they have an evacuation drill (...no tabi ni), there are almost no Japanese children who do not know the meaning of Okashimo.' Therefore, Option 2 is correct."
+          "explanation_en": "The passage clearly connects the cause and effect: 'Because they are told by teachers every time they have an evacuation drill (...no tabi ni), there are almost no Japanese children who do not know the meaning of Okashimo.' Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "「<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもたちで「おかしも」の<ruby>意味<rt>いみ</rt></ruby>を<ruby>知<rt>し</rt></ruby>らない<ruby>子<rt>こ</rt></ruby>どもはいないほどです。」とあるが、それはなぜか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>で「<ruby>避難訓練<rt>ひなんくんれん</rt></ruby>のたびに<ruby>先生<rt>せんせい</rt></ruby>から<ruby>聞<rt>き</rt></ruby>かされるので、<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>子<rt>こ</rt></ruby>どもたちで『おかしも』の<ruby>意味<rt>いみ</rt></ruby>を<ruby>知<rt>し</rt></ruby>らない<ruby>子<rt>こ</rt></ruby>どもはいないほどです」と<ruby>理由<rt>りゆう</rt></ruby>（〜ので）が<ruby>明確<rt>めいかく</rt></ruby>に<ruby>述<rt>の</rt></ruby>べられています。「<ruby>訓練<rt>くんれん</rt></ruby>のたびに<ruby>聞<rt>き</rt></ruby>かされる＝いつも<ruby>聞<rt>き</rt></ruby>く」ため、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -514,27 +526,33 @@
             {
               "id": 1,
               "text_ja": "外国から来た人々が日本の生活に慣れていくこと",
-              "text_en": "That foreigners coming to Japan gradually adjust to life here"
+              "text_en": "That foreigners coming to Japan gradually adjust to life here",
+              "text_ja_ruby": "<ruby>外国<rt>がいこく</rt></ruby>から<ruby>来<rt>き</rt></ruby>た<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>に<ruby>慣<rt>な</rt></ruby>れていくこと"
             },
             {
               "id": 2,
               "text_ja": "冬の初めのころに和菓子屋を訪ねること",
-              "text_en": "Visiting a wagashi confectionery shop around the beginning of winter"
+              "text_en": "Visiting a wagashi confectionery shop around the beginning of winter",
+              "text_ja_ruby": "<ruby>冬<rt>ふゆ</rt></ruby>の<ruby>初<rt>はじ</rt></ruby>めのころに<ruby>和菓子屋<rt>わがしや</rt></ruby>を<ruby>訪<rt>たず</rt></ruby>ねること"
             },
             {
               "id": 3,
               "text_ja": "日本の生活には季節が表されたものがたくさんあること",
-              "text_en": "That there are many things in Japanese daily life representing the seasons"
+              "text_en": "That there are many things in Japanese daily life representing the seasons",
+              "text_ja_ruby": "<ruby>日本<rt>にっぽん</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>には<ruby>季節<rt>きせつ</rt></ruby>が<ruby>表<rt>あらわ</rt></ruby>されたものがたくさんあること"
             },
             {
               "id": 4,
               "text_ja": "日本人が季節の変化をあまり気にしないで生活していること",
-              "text_en": "That Japanese people live without minding seasonal changes very much"
+              "text_en": "That Japanese people live without minding seasonal changes very much",
+              "text_ja_ruby": "<ruby>日本人<rt>にほんじん</rt></ruby>が<ruby>季節<rt>きせつ</rt></ruby>の<ruby>変化<rt>へんか</rt></ruby>をあまり<ruby>気<rt>き</rt></ruby>にしないで<ruby>生活<rt>せいかつ</rt></ruby>していること"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "直前の文に「日本では季節が生活のいろいろな面に影響している。外国から来た自分にとってそれはとてもおもしろい」とあります。生活の随所に季節が表現され、影響を及ぼしていることを指しているため、3が正解です。",
-          "explanation_en": "The author immediately precedes this by stating: 'In Japan, the seasons influence many aspects of daily life. To me coming from abroad, that is very fascinating.' Thus, Option 3 is correct."
+          "explanation_en": "The author immediately precedes this by stating: 'In Japan, the seasons influence many aspects of daily life. To me coming from abroad, that is very fascinating.' Thus, Option 3 is correct.",
+          "questionText_ja_ruby": "①おもしろいとあるが、<ruby>何<rt>なに</rt></ruby>がおもしろいのか。",
+          "explanation_ja_ruby": "<ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>に「<ruby>日本<rt>にっぽん</rt></ruby>では<ruby>季節<rt>きせつ</rt></ruby>が<ruby>生活<rt>せいかつ</rt></ruby>のいろいろな<ruby>面<rt>めん</rt></ruby>に<ruby>影響<rt>えいきょう</rt></ruby>している。<ruby>外国<rt>がいこく</rt></ruby>から<ruby>来<rt>き</rt></ruby>た<ruby>自分<rt>じぶん</rt></ruby>にとってそれはとてもおもしろい」とあります。<ruby>生活<rt>せいかつ</rt></ruby>の<ruby>随所<rt>ずいしょ</rt></ruby>に<ruby>季節<rt>きせつ</rt></ruby>が<ruby>表現<rt>ひょうげん</rt></ruby>され、<ruby>影響<rt>えいきょう</rt></ruby>を<ruby>及<rt>およ</rt></ruby>ぼしていることを<ruby>指<rt>さ</rt></ruby>しているため、3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-20-2",
@@ -545,27 +563,33 @@
             {
               "id": 1,
               "text_ja": "庭に咲いていた本物の寒椿",
-              "text_en": "A real winter camellia flower that bloomed in the garden"
+              "text_en": "A real winter camellia flower that bloomed in the garden",
+              "text_ja_ruby": "<ruby>庭<rt>にわ</rt></ruby>に<ruby>咲<rt>さ</rt></ruby>いていた<ruby>本物<rt>ほんもの</rt></ruby>の<ruby>寒椿<rt>かんつばき</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "寒椿という和菓子",
-              "text_en": "A Japanese wagashi sweet fashioned as a winter camellia"
+              "text_en": "A Japanese wagashi sweet fashioned as a winter camellia",
+              "text_ja_ruby": "<ruby>寒椿<rt>かんつばき</rt></ruby>という<ruby>和菓子<rt>わがし</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "店の前に飾ってあった桜の造花",
-              "text_en": "Artificial cherry blossom flowers decorated outside the store"
+              "text_en": "Artificial cherry blossom flowers decorated outside the store",
+              "text_ja_ruby": "<ruby>店<rt>みせ</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>に<ruby>飾<rt>かざ</rt></ruby>ってあった<ruby>桜<rt>さくら</rt></ruby>の<ruby>造花<rt>ぞうか</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "和菓子屋の店員がくれた桜のお菓子",
-              "text_en": "A cherry blossom sweet given by the confectionery clerk"
+              "text_en": "A cherry blossom sweet given by the confectionery clerk",
+              "text_ja_ruby": "<ruby>和菓子屋<rt>わがしや</rt></ruby>の<ruby>店員<rt>てんいん</rt></ruby>がくれた<ruby>桜<rt>さくら</rt></ruby>のお<ruby>菓子<rt>かし</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "筆者は和菓子屋のガラスケースの中で見つけて買った「寒椿」という和菓子のことをもう一度買いたくて訪ねています。したがって、2（寒椿という和菓子）が正解です。",
-          "explanation_en": "The author is referring to the wagashi sweet modeled on a winter camellia that they had previously purchased from the shop's display case. Therefore, Option 2 is correct."
+          "explanation_en": "The author is referring to the wagashi sweet modeled on a winter camellia that they had previously purchased from the shop's display case. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "②あの<ruby>赤<rt>あか</rt></ruby>い<ruby>花<rt>はな</rt></ruby>とは、<ruby>何<rt>なに</rt></ruby>を<ruby>指<rt>さ</rt></ruby>しているか。",
+          "explanation_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>和菓子屋<rt>わがしや</rt></ruby>のガラスケースの<ruby>中<rt>なか</rt></ruby>で<ruby>見<rt>み</rt></ruby>つけて<ruby>買<rt>か</rt></ruby>った「<ruby>寒椿<rt>かんつばき</rt></ruby>」という<ruby>和菓子<rt>わがし</rt></ruby>のことをもう<ruby>一度<rt>いちど</rt></ruby><ruby>買<rt>か</rt></ruby>いたくて<ruby>訪<rt>たず</rt></ruby>ねています。したがって、2（<ruby>寒椿<rt>かんつばき</rt></ruby>という<ruby>和菓子<rt>わがし</rt></ruby>）が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-20-3",
@@ -576,27 +600,33 @@
             {
               "id": 1,
               "text_ja": "季節が変わるたびに遠くへ旅行に出かける。",
-              "text_en": "Going on long journeys every time the season changes."
+              "text_en": "Going on long journeys every time the season changes.",
+              "text_ja_ruby": "<ruby>季節<rt>きせつ</rt></ruby>が<ruby>変<rt>か</rt></ruby>わるたびに<ruby>遠<rt>とお</rt></ruby>くへ<ruby>旅行<rt>りょこう</rt></ruby>に<ruby>出<rt>で</rt></ruby>かける。"
             },
             {
               "id": 2,
               "text_ja": "寒い冬の間はずっと家の中で過ごす。",
-              "text_en": "Staying inside home all through the cold winter."
+              "text_en": "Staying inside home all through the cold winter.",
+              "text_ja_ruby": "<ruby>寒<rt>さむ</rt></ruby>い<ruby>冬<rt>ふゆ</rt></ruby>の<ruby>間<rt>かん</rt></ruby>はずっと<ruby>家<rt>いえ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>過<rt>す</rt></ruby>ごす。"
             },
             {
               "id": 3,
               "text_ja": "季節に関係なく、いつでも好きな花のお菓子を食べる。",
-              "text_en": "Eating sweets shaped like one's favorite flowers regardless of the season."
+              "text_en": "Eating sweets shaped like one's favorite flowers regardless of the season.",
+              "text_ja_ruby": "<ruby>季節<rt>きせつ</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>なく、いつでも<ruby>好<rt>す</rt></ruby>きな<ruby>花<rt>はな</rt></ruby>のお<ruby>菓子<rt>かし</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる。"
             },
             {
               "id": 4,
               "text_ja": "季節の訪れを敏感に感じ取り、季節に合ったものを楽しむ。",
-              "text_en": "Sensitively feeling the arrival of seasons and enjoying things suited to them."
+              "text_en": "Sensitively feeling the arrival of seasons and enjoying things suited to them.",
+              "text_ja_ruby": "<ruby>季節<rt>きせつ</rt></ruby>の<ruby>訪<rt>おとず</rt></ruby>れを<ruby>敏感<rt>びんかん</rt></ruby>に<ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>り、<ruby>季節<rt>きせつ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>ったものを<ruby>楽<rt>たの</rt></ruby>しむ。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "直前の文に「季節の訪れを敏感に感じ取り、それを形にして楽しむ。これこそが、日本人の季節の楽しみ方なのだと知った」と明確に書かれています。季節を先取りし、その季節にふさわしい形（和菓子など）を味わって楽しむことなので、4が正解です。",
-          "explanation_en": "The text directly states: 'Sensitively perceiving the coming of seasons and shaping it into form to enjoy. I realized that this is indeed how Japanese people enjoy the seasons.' Therefore, Option 4 is correct."
+          "explanation_en": "The text directly states: 'Sensitively perceiving the coming of seasons and shaping it into form to enjoy. I realized that this is indeed how Japanese people enjoy the seasons.' Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "③<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>の<ruby>楽<rt>たの</rt></ruby>しみ<ruby>方<rt>かた</rt></ruby>とはどんなことか。",
+          "explanation_ja_ruby": "<ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>文<rt>ぶん</rt></ruby>に「<ruby>季節<rt>きせつ</rt></ruby>の<ruby>訪<rt>おとず</rt></ruby>れを<ruby>敏感<rt>びんかん</rt></ruby>に<ruby>感<rt>かん</rt></ruby>じ<ruby>取<rt>と</rt></ruby>り、それを<ruby>形<rt>かたち</rt></ruby>にして<ruby>楽<rt>たの</rt></ruby>しむ。これこそが、<ruby>日本人<rt>にほんじん</rt></ruby>の<ruby>季節<rt>きせつ</rt></ruby>の<ruby>楽<rt>たの</rt></ruby>しみ<ruby>方<rt>かた</rt></ruby>なのだと<ruby>知<rt>し</rt></ruby>った」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>書<rt>か</rt></ruby>かれています。<ruby>季節<rt>きせつ</rt></ruby>を<ruby>先取<rt>さきど</rt></ruby>りし、その<ruby>季節<rt>きせつ</rt></ruby>にふさわしい<ruby>形<rt>かたち</rt></ruby>（<ruby>和菓子<rt>わがし</rt></ruby>など）を<ruby>味<rt>あじ</rt></ruby>わって<ruby>楽<rt>たの</rt></ruby>しむことなので、4が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -752,27 +782,33 @@
             {
               "id": 1,
               "text_ja": "本文の最初から最後まで、すべての言葉を一言一句ていねいに読む。",
-              "text_en": "Reading every single word carefully from beginning to end."
+              "text_en": "Reading every single word carefully from beginning to end.",
+              "text_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>最初<rt>さいしょ</rt></ruby>から<ruby>最後<rt>さいご</rt></ruby>まで、すべての<ruby>言葉<rt>ことば</rt></ruby>を<ruby>一言<rt>ひとこと</rt></ruby><ruby>一句<rt>いっく</rt></ruby>ていねいに<ruby>読<rt>よ</rt></ruby>む。"
             },
             {
               "id": 2,
               "text_ja": "質問を先に読み、必要な情報や条件を把握してから本文の該当箇所を探す。",
-              "text_en": "Reading the question first to grasp the needed conditions, then scanning for the relevant section in the text."
+              "text_en": "Reading the question first to grasp the needed conditions, then scanning for the relevant section in the text.",
+              "text_ja_ruby": "<ruby>質問<rt>しつもん</rt></ruby>を<ruby>先<rt>さき</rt></ruby>に<ruby>読<rt>よ</rt></ruby>み、<ruby>必要<rt>ひつよう</rt></ruby>な<ruby>情報<rt>じょうほう</rt></ruby>や<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>把握<rt>はあく</rt></ruby>してから<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>該当<rt>がいとう</rt></ruby><ruby>箇所<rt>かしょ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>す。"
             },
             {
               "id": 3,
               "text_ja": "本文だけを読み、質問は見ないで大体の意味を想像する。",
-              "text_en": "Reading only the text without looking at the question and guessing the overall meaning."
+              "text_en": "Reading only the text without looking at the question and guessing the overall meaning.",
+              "text_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>だけを<ruby>読<rt>よ</rt></ruby>み、<ruby>質問<rt>しつもん</rt></ruby>は<ruby>見<rt>み</rt></ruby>ないで<ruby>大体<rt>だいたい</rt></ruby>の<ruby>意味<rt>いみ</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>する。"
             },
             {
               "id": 4,
               "text_ja": "選択肢の中で一番文章が長いものを必ず正解として選ぶ。",
-              "text_en": "Always choosing the option with the longest text as the correct answer."
+              "text_en": "Always choosing the option with the longest text as the correct answer.",
+              "text_ja_ruby": "<ruby>選択肢<rt>せんたくし</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>文章<rt>ぶんしょう</rt></ruby>が<ruby>長<rt>なが</rt></ruby>いものを<ruby>必<rt>かなら</rt></ruby>ず<ruby>正解<rt>せいかい</rt></ruby>として<ruby>選<rt>えら</rt></ruby>ぶ。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "情報検索では、全文を最初から熟読するのではなく、「質問を先に読んで求められている条件を明確にし、該当する箇所を素早く探す」解法が推奨されます。したがって、2が正解です。",
-          "explanation_en": "In information retrieval tasks, scanning for the required conditions after reading the question first is the optimal technique. Therefore, Option 2 is correct."
+          "explanation_en": "In information retrieval tasks, scanning for the required conditions after reading the question first is the optimal technique. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby>の「<ruby>情報検索<rt>じょうほうけんさく</rt></ruby>」の<ruby>問題<rt>もんだい</rt></ruby>を<ruby>解<rt>と</rt></ruby>くとき、<ruby>最<rt>もっと</rt></ruby>も<ruby>効果的<rt>こうかてき</rt></ruby>な<ruby>方法<rt>ほうほう</rt></ruby>はどれか。",
+          "explanation_ja_ruby": "<ruby>情報検索<rt>じょうほうけんさく</rt></ruby>では、<ruby>全文<rt>ぜんぶん</rt></ruby>を<ruby>最初<rt>さいしょ</rt></ruby>から<ruby>熟読<rt>じゅくどく</rt></ruby>するのではなく、「<ruby>質問<rt>しつもん</rt></ruby>を<ruby>先<rt>さき</rt></ruby>に<ruby>読<rt>よ</rt></ruby>んで<ruby>求<rt>もと</rt></ruby>められている<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>明確<rt>めいかく</rt></ruby>にし、<ruby>該当<rt>がいとう</rt></ruby>する<ruby>箇所<rt>かしょ</rt></ruby>を<ruby>素早<rt>すばや</rt></ruby>く<ruby>探<rt>さが</rt></ruby>す」<ruby>解法<rt>かいほう</rt></ruby>が<ruby>推奨<rt>すいしょう</rt></ruby>されます。したがって、2が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-p3-intro-2",
@@ -783,27 +819,33 @@
             {
               "id": 1,
               "text_ja": "商品の広告や割引チケットの案内",
-              "text_en": "Product advertisements and discount ticket announcements"
+              "text_en": "Product advertisements and discount ticket announcements",
+              "text_ja_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>の<ruby>広告<rt>こうこく</rt></ruby>や<ruby>割引<rt>わりびき</rt></ruby>チケットの<ruby>案内<rt>あんない</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "習い事やボランティアの募集広告",
-              "text_en": "Enrolment advertisements for lessons or volunteer programs"
+              "text_en": "Enrolment advertisements for lessons or volunteer programs",
+              "text_ja_ruby": "<ruby>習<rt>なら</rt></ruby>い<ruby>事<rt>ごと</rt></ruby>やボランティアの<ruby>募集広告<rt>ぼしゅうこうこく</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "長編の恋愛小説や古典文学の詩",
-              "text_en": "Full-length romance novels and classical poetry"
+              "text_en": "Full-length romance novels and classical poetry",
+              "text_ja_ruby": "<ruby>長編<rt>ちょうへん</rt></ruby>の<ruby>恋愛<rt>れんあい</rt></ruby><ruby>小説<rt>しょうせつ</rt></ruby>や<ruby>古典<rt>こてん</rt></ruby><ruby>文学<rt>ぶんがく</rt></ruby>の<ruby>詩<rt>し</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "店舗や公共施設の利用案内",
-              "text_en": "User guides for shops and public facilities"
+              "text_en": "User guides for shops and public facilities",
+              "text_ja_ruby": "<ruby>店舗<rt>てんぽ</rt></ruby>や<ruby>公共施設<rt>こうきょうしせつ</rt></ruby>の<ruby>利用案内<rt>りようあんない</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "第3部は実用的な日常文書（広告、案内文、お知らせなど）を扱っており、長編小説や古典文学の詩は対象外です。したがって、3が正解です。",
-          "explanation_en": "Part 3 specifically focuses on functional everyday texts like ads and notices, not classical poetry or novels. Thus, Option 3 is correct."
+          "explanation_en": "Part 3 specifically focuses on functional everyday texts like ads and notices, not classical poetry or novels. Thus, Option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby>で<ruby>扱<rt>あつか</rt></ruby>われる<ruby>実用<rt>じつよう</rt></ruby><ruby>文<rt>ぶん</rt></ruby>の<ruby>種類<rt>しゅるい</rt></ruby>として、<ruby>適切<rt>てきせつ</rt></ruby>でないものはどれか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>3<ruby>部<rt>ぶ</rt></ruby>は<ruby>実用的<rt>じつようてき</rt></ruby>な<ruby>日常<rt>にちじょう</rt></ruby><ruby>文書<rt>ぶんしょ</rt></ruby>（<ruby>広告<rt>こうこく</rt></ruby>、<ruby>案内文<rt>あんないぶん</rt></ruby>、お<ruby>知<rt>し</rt></ruby>らせなど）を<ruby>扱<rt>あつか</rt></ruby>っており、<ruby>長編小説<rt>ちょうへんしょうせつ</rt></ruby>や<ruby>古典<rt>こてん</rt></ruby><ruby>文学<rt>ぶんがく</rt></ruby>の<ruby>詩<rt>し</rt></ruby>は<ruby>対象外<rt>たいしょうがい</rt></ruby>です。したがって、3が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -1022,27 +1064,33 @@
             {
               "id": 1,
               "text_ja": "バスの切符売り場で 2,600円",
-              "text_en": "At the bus ticket counter for 2,600 yen"
+              "text_en": "At the bus ticket counter for 2,600 yen",
+              "text_ja_ruby": "バスの<ruby>切符<rt>きっぷ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>で 2,600<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "歴史博物館の窓口で 1,900円",
-              "text_en": "At the History Museum ticket window for 1,900 yen"
+              "text_en": "At the History Museum ticket window for 1,900 yen",
+              "text_ja_ruby": "<ruby>歴史<rt>れきし</rt></ruby><ruby>博物館<rt>はくぶつかん</rt></ruby>の<ruby>窓口<rt>まどぐち</rt></ruby>で 1,900<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "バスの切符売り場で 2,200円",
-              "text_en": "At the bus ticket counter for 2,200 yen"
+              "text_en": "At the bus ticket counter for 2,200 yen",
+              "text_ja_ruby": "バスの<ruby>切符<rt>きっぷ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>で 2,200<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "現代美術館の窓口で 2,600円",
-              "text_en": "At the Modern Art Museum ticket window for 2,600 yen"
+              "text_en": "At the Modern Art Museum ticket window for 2,600 yen",
+              "text_ja_ruby": "<ruby>現代美術<rt>げんだいびじゅつ</rt></ruby><ruby>館<rt>かん</rt></ruby>の<ruby>窓口<rt>まどぐち</rt></ruby>で 2,600<ruby>円<rt>えん</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "アンさんが利用したい「市バス1日乗車券＋歴史博物館＋現代美術館」は、通常2,600円ですが、セット券なら2,200円で購入できます。発売場所は「市バス切符売り場、歴史博物館・現代美術館窓口」です。選択肢の中で「2,200円」かつ正しい場所を挙げているのは 3（バスの切符売り場で 2,200円）です。",
-          "explanation_en": "The set combining the 1-day bus pass, History Museum, and Modern Art Museum costs 2,200 yen (regular 2,600 yen). It can be bought at the bus ticket counter or museum counters. Only Option 3 matches 2,200 yen and a valid purchase location."
+          "explanation_en": "The set combining the 1-day bus pass, History Museum, and Modern Art Museum costs 2,200 yen (regular 2,600 yen). It can be bought at the bus ticket counter or museum counters. Only Option 3 matches 2,200 yen and a valid purchase location.",
+          "questionText_ja_ruby": "アンさんは○○<ruby>市<rt>し</rt></ruby>でバス1<ruby>日<rt>にち</rt></ruby><ruby>乗車券<rt>じょうしゃけん</rt></ruby>を<ruby>使<rt>つか</rt></ruby>って<ruby>歴史<rt>れきし</rt></ruby><ruby>博物館<rt>はくぶつかん</rt></ruby>と<ruby>現代美術<rt>げんだいびじゅつ</rt></ruby><ruby>館<rt>かん</rt></ruby>を<ruby>見<rt>み</rt></ruby>たい。<ruby>安<rt>やす</rt></ruby>く<ruby>見<rt>み</rt></ruby>るにはどこでいくらの<ruby>券<rt>けん</rt></ruby>を<ruby>買<rt>か</rt></ruby>えばよいか。",
+          "explanation_ja_ruby": "アンさんが<ruby>利用<rt>りよう</rt></ruby>したい「<ruby>市<rt>し</rt></ruby>バス1<ruby>日<rt>にち</rt></ruby><ruby>乗車券<rt>じょうしゃけん</rt></ruby>＋<ruby>歴史<rt>れきし</rt></ruby><ruby>博物館<rt>はくぶつかん</rt></ruby>＋<ruby>現代美術<rt>げんだいびじゅつ</rt></ruby><ruby>館<rt>かん</rt></ruby>」は、<ruby>通常<rt>つうじょう</rt></ruby>2,600<ruby>円<rt>えん</rt></ruby>ですが、セット<ruby>券<rt>けん</rt></ruby>なら2,200<ruby>円<rt>えん</rt></ruby>で<ruby>購入<rt>こうにゅう</rt></ruby>できます。<ruby>発売<rt>はつばい</rt></ruby><ruby>場所<rt>ばしょ</rt></ruby>は「<ruby>市<rt>し</rt></ruby>バス<ruby>切符<rt>きっぷ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>、<ruby>歴史<rt>れきし</rt></ruby><ruby>博物館<rt>はくぶつかん</rt></ruby>・<ruby>現代美術<rt>げんだいびじゅつ</rt></ruby><ruby>館<rt>かん</rt></ruby><ruby>窓口<rt>まどぐち</rt></ruby>」です。<ruby>選択肢<rt>せんたくし</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で「2,200<ruby>円<rt>えん</rt></ruby>」かつ<ruby>正<rt>ただ</rt></ruby>しい<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>挙<rt>あ</rt></ruby>げているのは 3（バスの<ruby>切符<rt>きっぷ</rt></ruby><ruby>売<rt>う</rt></ruby>り<ruby>場<rt>ば</rt></ruby>で 2,200<ruby>円<rt>えん</rt></ruby>）です。"
         }
       ],
       "commentary": {
@@ -1312,7 +1360,9 @@
           ],
           "correctAnswer": 3,
           "explanation_ja": "ローラさんは「初心者」なので、初級クラス（a, d, e, f）のみが対象です（中級のb, cは不可）。また月・水・木の9:30〜16:00は学校に通っているため、平日の昼間（火曜のa、金曜のeなど）は都合がつかず（あるいは条件設定上）、木曜夜の「d（18:30〜20:00）」と土曜午前の「f（10:00〜11:30）」が受講可能となります。したがって「d と f」の 3 が正解です。",
-          "explanation_en": "Since Laura is a beginner, she only qualifies for beginner classes (a, d, e, f). Between school commitments, Thursday evening 'd' (18:30-20:00) and Saturday morning 'f' (10:00-11:30) match her schedule. Therefore, Option 3 (d and f) is correct."
+          "explanation_en": "Since Laura is a beginner, she only qualifies for beginner classes (a, d, e, f). Between school commitments, Thursday evening 'd' (18:30-20:00) and Saturday morning 'f' (10:00-11:30) match her schedule. Therefore, Option 3 (d and f) is correct.",
+          "questionText_ja_ruby": "ローラさんがとることができるクラスはどれか。（※ローラさんはテニス<ruby>初心者<rt>しょしんしゃ</rt></ruby>。<ruby>月<rt>げつ</rt></ruby>・<ruby>水<rt>すい</rt></ruby>・<ruby>木<rt>もく</rt></ruby>の9:30〜16:00は<ruby>日本語学<rt>にほんごがく</rt></ruby><ruby>校<rt>こう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>している。）",
+          "explanation_ja_ruby": "ローラさんは「<ruby>初心者<rt>しょしんしゃ</rt></ruby>」なので、<ruby>初級<rt>しょきゅう</rt></ruby>クラス（a, d, e, f）のみが<ruby>対象<rt>たいしょう</rt></ruby>です（<ruby>中級<rt>ちゅうきゅう</rt></ruby>のb, cは<ruby>不可<rt>ふか</rt></ruby>）。また<ruby>月<rt>げつ</rt></ruby>・<ruby>水<rt>すい</rt></ruby>・<ruby>木<rt>もく</rt></ruby>の9:30〜16:00は<ruby>学校<rt>がっこう</rt></ruby>に<ruby>通<rt>とお</rt></ruby>っているため、<ruby>平日<rt>へいじつ</rt></ruby>の<ruby>昼間<rt>ひるま</rt></ruby>（<ruby>火曜<rt>かよう</rt></ruby>のa、<ruby>金曜<rt>きんよう</rt></ruby>のeなど）は<ruby>都合<rt>つごう</rt></ruby>がつかず（あるいは<ruby>条件設定<rt>じょうけんせってい</rt></ruby><ruby>上<rt>うえ</rt></ruby>）、<ruby>木曜<rt>もくよう</rt></ruby><ruby>夜<rt>よる</rt></ruby>の「d（18:30〜20:00）」と<ruby>土曜<rt>どよう</rt></ruby><ruby>午前<rt>ごぜん</rt></ruby>の「f（10:00〜11:30）」が<ruby>受講<rt>じゅこう</rt></ruby><ruby>可能<rt>かのう</rt></ruby>となります。したがって「d と f」の 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-22-2",
@@ -1323,27 +1373,33 @@
             {
               "id": 1,
               "text_ja": "1枚の往復はがきで友達と一緒に申し込んでもよい。",
-              "text_en": "You may apply together with a friend using a single postcard."
+              "text_en": "You may apply together with a friend using a single postcard.",
+              "text_ja_ruby": "1<ruby>枚<rt>まい</rt></ruby>の<ruby>往復<rt>おうふく</rt></ruby>はがきで<ruby>友達<rt>ともだち</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>んでもよい。"
             },
             {
               "id": 2,
               "text_ja": "電話で希望のクラスを予約してから、はがきを送る。",
-              "text_en": "Reserve the class by phone first before sending the postcard."
+              "text_en": "Reserve the class by phone first before sending the postcard.",
+              "text_ja_ruby": "<ruby>電話<rt>でんわ</rt></ruby>で<ruby>希望<rt>きぼう</rt></ruby>のクラスを<ruby>予約<rt>よやく</rt></ruby>してから、はがきを<ruby>送<rt>おく</rt></ruby>る。"
             },
             {
               "id": 3,
               "text_ja": "返信用のはがきには何も書かずに送る。",
-              "text_en": "Send the reply postcard blank without writing anything."
+              "text_en": "Send the reply postcard blank without writing anything.",
+              "text_ja_ruby": "<ruby>返信用<rt>へんしんよう</rt></ruby>のはがきには<ruby>何<rt>なに</rt></ruby>も<ruby>書<rt>か</rt></ruby>かずに<ruby>送<rt>おく</rt></ruby>る。"
             },
             {
               "id": 4,
               "text_ja": "兄弟で入りたい場合もそれぞれ往復はがきを送らなければならない。",
-              "text_en": "Even if siblings want to enrol, each person must send a separate round-trip postcard."
+              "text_en": "Even if siblings want to enrol, each person must send a separate round-trip postcard.",
+              "text_ja_ruby": "<ruby>兄弟<rt>きょうだい</rt></ruby>で<ruby>入<rt>い</rt></ruby>りたい<ruby>場合<rt>ばあい</rt></ruby>もそれぞれ<ruby>往復<rt>おうふく</rt></ruby>はがきを<ruby>送<rt>おく</rt></ruby>らなければならない。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "申し込み方法に「1枚のはがきで1名のみの申し込みとなります」と明記されているため、兄弟や家族・友人であっても1人1枚ずつ往復はがきを用意して送る必要があります。したがって 4 が正解です。（1は1枚で複数名申し込めないため誤り。2は電話予約不要。3は返信面に自分の宛先を書く必要があるため誤り。）",
-          "explanation_en": "The advert clearly states 'Only 1 applicant per postcard is accepted', meaning even siblings must each submit an individual postcard. Therefore, Option 4 is correct."
+          "explanation_en": "The advert clearly states 'Only 1 applicant per postcard is accepted', meaning even siblings must each submit an individual postcard. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みについて、<ruby>正<rt>ただ</rt></ruby>しいものはどれか。",
+          "explanation_ja_ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>み<ruby>方法<rt>ほうほう</rt></ruby>に「1<ruby>枚<rt>まい</rt></ruby>のはがきで1<ruby>名<rt>めい</rt></ruby>のみの<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みとなります」と<ruby>明記<rt>めいき</rt></ruby>されているため、<ruby>兄弟<rt>きょうだい</rt></ruby>や<ruby>家族<rt>かぞく</rt></ruby>・<ruby>友人<rt>ゆうじん</rt></ruby>であっても1<ruby>人<rt>ひと</rt></ruby>1<ruby>枚<rt>まい</rt></ruby>ずつ<ruby>往復<rt>おうふく</rt></ruby>はがきを<ruby>用意<rt>ようい</rt></ruby>して<ruby>送<rt>おく</rt></ruby>る<ruby>必要<rt>ひつよう</rt></ruby>があります。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。（1は1<ruby>枚<rt>まい</rt></ruby>で<ruby>複数名<rt>ふくすうめい</rt></ruby><ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>めないため<ruby>誤<rt>あやま</rt></ruby>り。2は<ruby>電話予約<rt>でんわよやく</rt></ruby><ruby>不要<rt>ふよう</rt></ruby>。3は<ruby>返信<rt>へんしん</rt></ruby><ruby>面<rt>めん</rt></ruby>に<ruby>自分<rt>じぶん</rt></ruby>の<ruby>宛先<rt>あてさき</rt></ruby>を<ruby>書<rt>か</rt></ruby>く<ruby>必要<rt>ひつよう</rt></ruby>があるため<ruby>誤<rt>あやま</rt></ruby>り。）"
         }
       ],
       "commentary": {

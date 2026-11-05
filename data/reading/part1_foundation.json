@@ -259,28 +259,34 @@
             {
               "id": 1,
               "text_ja": "引き出しをきれいにしておくこと",
-              "text_en": "Keeping drawers neat and clean"
+              "text_en": "Keeping drawers neat and clean",
+              "text_ja_ruby": "<ruby>引<rt>ひ</rt></ruby>き<ruby>出<rt>だ</rt></ruby>しをきれいにしておくこと"
             },
             {
               "id": 2,
               "text_ja": "使ったものを元の場所にしまうこと",
-              "text_en": "Putting used things back where they were"
+              "text_en": "Putting used things back where they were",
+              "text_ja_ruby": "<ruby>使<rt>つか</rt></ruby>ったものを<ruby>元<rt>もと</rt></ruby>の<ruby>場所<rt>ばしょ</rt></ruby>にしまうこと"
             },
             {
               "id": 3,
               "text_ja": "いらないものを減らすこと",
-              "text_en": "Reducing unnecessary items"
+              "text_en": "Reducing unnecessary items",
+              "text_ja_ruby": "いらないものを<ruby>減<rt>へ</rt></ruby>らすこと"
             },
             {
               "id": 4,
               "text_ja": "ものを使いやすいように置くこと",
-              "text_en": "Placing things so that they are easy to use"
+              "text_en": "Placing things so that they are easy to use",
+              "text_ja_ruby": "ものを<ruby>使<rt>つか</rt></ruby>いやすいように<ruby>置<rt>お</rt></ruby>くこと"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "筆者は片づけを「整理8割、整頓2割」と述べており、「整理」に徹底的に取り組めば8割が終了すると言っています。そして「整理」とは「いらないものを捨てること（＝減らすこと）」と定義されています。したがって、「いらないものを減らすこと」が一番大切であり、正解は 3 です。（選択肢4は「整頓（2割）」の説明であり、選択肢1と2は一部の個別動作にすぎません。）",
           "explanation_en": "The author asserts that tidying up is '80% sorting (整理) and 20% arranging (整頓)', and that thoroughly tackling '整理' completes 80% of the entire task. '整理' is explicitly defined as discarding unneeded items ('いらないものを捨てること' / reducing them). Therefore, 'reducing unnecessary items' is the most vital step (Option 3). Option 4 describes '整頓' (only 20%), while Options 1 and 2 describe minor individual actions.",
-          "techniqueFocus": "Inferring main emphasis: Connect key statistics ('8割') to the core definition ('整理 ＝ いらないものを捨てる/減らす')."
+          "techniqueFocus": "Inferring main emphasis: Connect key statistics ('8割') to the core definition ('整理 ＝ いらないものを捨てる/減らす').",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>は、<ruby>片<rt>かた</rt></ruby>づけをするのに<ruby>何<rt>なに</rt></ruby>が<ruby>一番大切<rt>いちばんたいせつ</rt></ruby>だと<ruby>言<rt>い</rt></ruby>っているか。",
+          "explanation_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>片<rt>かた</rt></ruby>づけを「<ruby>整理<rt>せいり</rt></ruby>8<ruby>割<rt>わり</rt></ruby>、<ruby>整頓<rt>せいとん</rt></ruby>2<ruby>割<rt>わり</rt></ruby>」と<ruby>述<rt>の</rt></ruby>べており、「<ruby>整理<rt>せいり</rt></ruby>」に<ruby>徹底的<rt>てっていてき</rt></ruby>に<ruby>取<rt>と</rt></ruby>り<ruby>組<rt>く</rt></ruby>めば8<ruby>割<rt>わり</rt></ruby>が<ruby>終了<rt>しゅうりょう</rt></ruby>すると<ruby>言<rt>い</rt></ruby>っています。そして「<ruby>整理<rt>せいり</rt></ruby>」とは「いらないものを<ruby>捨<rt>す</rt></ruby>てること（＝<ruby>減<rt>へ</rt></ruby>らすこと）」と<ruby>定義<rt>ていぎ</rt></ruby>されています。したがって、「いらないものを<ruby>減<rt>へ</rt></ruby>らすこと」が<ruby>一番大切<rt>いちばんたいせつ</rt></ruby>であり、<ruby>正解<rt>せいかい</rt></ruby>は 3 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>4は「<ruby>整頓<rt>せいとん</rt></ruby>（2<ruby>割<rt>わり</rt></ruby>）」の<ruby>説明<rt>せつめい</rt></ruby>であり、<ruby>選択肢<rt>せんたくし</rt></ruby>1と2は<ruby>一部<rt>いちぶ</rt></ruby>の<ruby>個別<rt>こべつ</rt></ruby><ruby>動作<rt>どうさ</rt></ruby>にすぎません。）"
         }
       ],
       "drills": [
@@ -507,28 +513,34 @@
             {
               "id": 1,
               "text_ja": "安くてよいものを買ったときだけ、よい買い物をしたと思える。",
-              "text_en": "Only when buying something cheap and good can one feel they made a good purchase."
+              "text_en": "Only when buying something cheap and good can one feel they made a good purchase.",
+              "text_ja_ruby": "<ruby>安<rt>やす</rt></ruby>くてよいものを<ruby>買<rt>か</rt></ruby>ったときだけ、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。"
             },
             {
               "id": 2,
               "text_ja": "品物がよかったときだけ、よい買い物をしたと思える。",
-              "text_en": "Only when the product is high quality can one feel they made a good purchase."
+              "text_en": "Only when the product is high quality can one feel they made a good purchase.",
+              "text_ja_ruby": "<ruby>品物<rt>しなもの</rt></ruby>がよかったときだけ、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。"
             },
             {
               "id": 3,
               "text_ja": "安くなくてもだれかの役に立つと、よい買い物をしたと思える。",
-              "text_en": "Even if it is not cheap, if it helps someone, one can feel they made a good purchase."
+              "text_en": "Even if it is not cheap, if it helps someone, one can feel they made a good purchase.",
+              "text_ja_ruby": "<ruby>安<rt>やす</rt></ruby>くなくてもだれかの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つと、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。"
             },
             {
               "id": 4,
               "text_ja": "品物が悪くてもだれかの役に立つと、よい買い物をしたと思える。",
-              "text_en": "Even if the product is inferior, if it helps someone, one can feel they made a good purchase."
+              "text_en": "Even if the product is inferior, if it helps someone, one can feel they made a good purchase.",
+              "text_ja_ruby": "<ruby>品物<rt>しなもの</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くてもだれかの<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つと、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "文章の型は「確かに〜（安さ・よさも大切）。しかし〜（それ以外に、寄付つき商品のように値段は安くなくても誰かの助けになる商品を買うときも、よい買い物をしたと思える）」となっています。筆者が最も主張したい核心は「しかし」のあとに述べられているため、正解は 3 です。（選択肢1と2は「〜だけ」と限定しており筆者の主張と反します。選択肢4は「品物が悪くても」とありますが、本文では「自分の好きなものが手に入り」とあり品物が悪いとは書かれていません。）",
           "explanation_en": "The passage adheres to the '確かに A (cheapness & quality matter). しかし B (even if not cheap, buying charity-linked goods that help people also constitutes a good purchase)' structure. The core message resides after 'しかし'. Thus Option 3 is correct. Options 1 & 2 assert restrictive 'only' (〜だけ), which contradicts the text. Option 4 claims 'even if the product is poor', which is contradicted by 'getting something you like'.",
-          "techniqueFocus": "Discourse pattern recognition: Identify the shift from concession ('確かに...') to author's real thesis ('しかし...') to instantly dismiss distractor options."
+          "techniqueFocus": "Discourse pattern recognition: Identify the shift from concession ('確かに...') to author's real thesis ('しかし...') to instantly dismiss distractor options.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>型<rt>かた</rt></ruby>は「<ruby>確<rt>たし</rt></ruby>かに〜（<ruby>安<rt>やす</rt></ruby>さ・よさも<ruby>大切<rt>たいせつ</rt></ruby>）。しかし〜（それ<ruby>以外<rt>いがい</rt></ruby>に、<ruby>寄付<rt>きふ</rt></ruby>つき<ruby>商品<rt>しょうひん</rt></ruby>のように<ruby>値段<rt>ねだん</rt></ruby>は<ruby>安<rt>やす</rt></ruby>くなくても<ruby>誰<rt>だれ</rt></ruby>かの<ruby>助<rt>たす</rt></ruby>けになる<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>買<rt>か</rt></ruby>うときも、よい<ruby>買<rt>か</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をしたと<ruby>思<rt>おも</rt></ruby>える）」となっています。<ruby>筆者<rt>ひっしゃ</rt></ruby>が<ruby>最<rt>もっと</rt></ruby>も<ruby>主張<rt>しゅちょう</rt></ruby>したい<ruby>核心<rt>かくしん</rt></ruby>は「しかし」のあとに<ruby>述<rt>の</rt></ruby>べられているため、<ruby>正解<rt>せいかい</rt></ruby>は 3 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>1と2は「〜だけ」と<ruby>限定<rt>げんてい</rt></ruby>しており<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>と<ruby>反<rt>はん</rt></ruby>します。<ruby>選択肢<rt>せんたくし</rt></ruby>4は「<ruby>品物<rt>しなもの</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くても」とありますが、<ruby>本文<rt>ほんぶん</rt></ruby>では「<ruby>自分<rt>じぶん</rt></ruby>の<ruby>好<rt>す</rt></ruby>きなものが<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>り」とあり<ruby>品物<rt>しなもの</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>いとは<ruby>書<rt>か</rt></ruby>かれていません。）"
         }
       ],
       "drills": [
@@ -839,28 +851,34 @@
             {
               "id": 1,
               "text_ja": "動いていないはずの時計の音が聞こえたから。",
-              "text_en": "Because they heard the chime of a clock that was supposed to not be running."
+              "text_en": "Because they heard the chime of a clock that was supposed to not be running.",
+              "text_ja_ruby": "<ruby>動<rt>うご</rt></ruby>いていないはずの<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえたから。"
             },
             {
               "id": 2,
               "text_ja": "別の部屋にいた母がラジオの時計の音を聞いていたから。",
-              "text_en": "Because the mother in the other room heard the radio clock sound."
+              "text_en": "Because the mother in the other room heard the radio clock sound.",
+              "text_ja_ruby": "<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>にいた<ruby>母<rt>はは</rt></ruby>がラジオの<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いていたから。"
             },
             {
               "id": 3,
               "text_ja": "母が父の使っていた時計を動かしていたから。",
-              "text_en": "Because the mother had wound up and started the father's clock."
+              "text_en": "Because the mother had wound up and started the father's clock.",
+              "text_ja_ruby": "<ruby>母<rt>はは</rt></ruby>が<ruby>父<rt>ちち</rt></ruby>の<ruby>使<rt>つか</rt></ruby>っていた<ruby>時計<rt>とけい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしていたから。"
             },
             {
               "id": 4,
               "text_ja": "亡くなった父の時計が止まっていたから。",
-              "text_en": "Because the late father's clock had stopped."
+              "text_en": "Because the late father's clock had stopped.",
+              "text_ja_ruby": "<ruby>亡<rt>な</rt></ruby>くなった<ruby>父<rt>ちち</rt></ruby>の<ruby>時計<rt>とけい</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっていたから。"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "主人公は「うちのは何年も使っていないんだもの。鳴るはずがないよ」と考えていました。しかし、自分だけでなく別の部屋の母も夜中に時計の音を聞いていたため、「動いていないはずなのに、なぜ音が聞こえたのか」という疑問から「不思議に思いました」。したがって正解は 1 です。（母は時計を動かしておらず、ラジオの音を聞いていたわけでもありません。また時計が止まっていたこと自体ではなく、止まっていたはずの時計から音が聞こえたことが不思議の理由です。）",
           "explanation_en": "The protagonist thought: 'Ours hasn't been used for years; it couldn't possibly chime.' Yet both the narrator and the mother in another room heard the chimes. Hearing sound from a clock that was assumed to be completely inert is why the narrator felt it was strange/mysterious (不思議). Hence Option 1 is correct.",
-          "techniqueFocus": "Inferring internal state causes: Trace the reason for an emotion directly to the contrast between logical expectation ('鳴るはずがない') and reported occurrence ('母も音を聞いた')."
+          "techniqueFocus": "Inferring internal state causes: Trace the reason for an emotion directly to the contrast between logical expectation ('鳴るはずがない') and reported occurrence ('母も音を聞いた').",
+          "questionText_ja_ruby": "「<ruby>私<rt>わたし</rt></ruby>は<ruby>不思議<rt>ふしぎ</rt></ruby>に<ruby>思<rt>おも</rt></ruby>いました。」とあるが、なぜか。",
+          "explanation_ja_ruby": "<ruby>主人公<rt>しゅじんこう</rt></ruby>は「うちのは<ruby>何年<rt>なんねん</rt></ruby>も<ruby>使<rt>つか</rt></ruby>っていないんだもの。<ruby>鳴<rt>な</rt></ruby>るはずがないよ」と<ruby>考<rt>かんが</rt></ruby>えていました。しかし、<ruby>自分<rt>じぶん</rt></ruby>だけでなく<ruby>別<rt>べつ</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>の<ruby>母<rt>はは</rt></ruby>も<ruby>夜中<rt>よなか</rt></ruby>に<ruby>時計<rt>とけい</rt></ruby>の<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いていたため、「<ruby>動<rt>うご</rt></ruby>いていないはずなのに、なぜ<ruby>音<rt>おと</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえたのか」という<ruby>疑問<rt>ぎもん</rt></ruby>から「<ruby>不思議<rt>ふしぎ</rt></ruby>に<ruby>思<rt>おも</rt></ruby>いました」。したがって<ruby>正解<rt>せいかい</rt></ruby>は 1 です。（<ruby>母<rt>はは</rt></ruby>は<ruby>時計<rt>とけい</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かしておらず、ラジオの<ruby>音<rt>おと</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いていたわけでもありません。また<ruby>時計<rt>とけい</rt></ruby>が<ruby>止<rt>と</rt></ruby>まっていたこと<ruby>自体<rt>じたい</rt></ruby>ではなく、<ruby>止<rt>と</rt></ruby>まっていたはずの<ruby>時計<rt>とけい</rt></ruby>から<ruby>音<rt>おと</rt></ruby>が<ruby>聞<rt>き</rt></ruby>こえたことが<ruby>不思議<rt>ふしぎ</rt></ruby>の<ruby>理由<rt>りゆう</rt></ruby>です。）"
         }
       ],
       "drills": [
@@ -1118,28 +1136,34 @@
             {
               "id": 1,
               "text_ja": "しみをできにくくする物質",
-              "text_en": "A substance that prevents blemishes from forming"
+              "text_en": "A substance that prevents blemishes from forming",
+              "text_ja_ruby": "しみをできにくくする<ruby>物質<rt>ぶっしつ</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "ポリフェノールを増やす物質",
-              "text_en": "A substance that increases polyphenols"
+              "text_en": "A substance that increases polyphenols",
+              "text_ja_ruby": "ポリフェノールを<ruby>増<rt>ふ</rt></ruby>やす<ruby>物質<rt>ぶっしつ</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "メラニンを増やす物質",
-              "text_en": "A substance that increases melanin"
+              "text_en": "A substance that increases melanin",
+              "text_ja_ruby": "メラニンを<ruby>増<rt>ふ</rt></ruby>やす<ruby>物質<rt>ぶっしつ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "コーヒーの中に多く含まれる物質",
-              "text_en": "A substance contained in large amounts in coffee"
+              "text_en": "A substance contained in large amounts in coffee",
+              "text_ja_ruby": "コーヒーの<ruby>中<rt>なか</rt></ruby>に<ruby>多<rt>おお</rt></ruby>く<ruby>含<rt>ふく</rt></ruby>まれる<ruby>物質<rt>ぶっしつ</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "第2段落に「太陽の光にあたると、人間の体内で『活性酸素』と呼ばれる物質ができる。これは、しみの原因となる物質『メラニン』を増やしてしまう。」と書かれています。指示語「これ」は活性酸素を指しており、メラニンを増やす物質であることが説明されています。したがって正解は 3 です。（選択肢1はポリフェノール、選択肢2は本文に記述がなく、選択肢4はポリフェノールの説明です。）",
           "explanation_en": "Paragraph 2 states: 'When exposed to sunlight, a substance called active oxygen is produced inside the human body. This (これ) increases melanin, which causes blemishes.' The demonstrative 'これ' refers back to 'active oxygen', confirming that it increases melanin. Therefore, Option 3 is correct. (Option 1 describes polyphenols; Option 2 is unmentioned; Option 4 describes polyphenols in coffee.)",
-          "techniqueFocus": "Demonstrative tracking: Identify that 'これ' refers to '活性酸素' in the preceding sentence, and connect it directly to the predicate 'メラニンを増やしてしまう'."
+          "techniqueFocus": "Demonstrative tracking: Identify that 'これ' refers to '活性酸素' in the preceding sentence, and connect it directly to the predicate 'メラニンを増やしてしまう'.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>によると、<ruby>活性<rt>かっせい</rt></ruby><ruby>酸素<rt>さんそ</rt></ruby>とはどんな<ruby>物質<rt>ぶっしつ</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>2<ruby>段落<rt>だんらく</rt></ruby>に「<ruby>太陽<rt>たいよう</rt></ruby>の<ruby>光<rt>ひかり</rt></ruby>にあたると、<ruby>人間<rt>にんげん</rt></ruby>の<ruby>体内<rt>たいない</rt></ruby>で『<ruby>活性<rt>かっせい</rt></ruby><ruby>酸素<rt>さんそ</rt></ruby>』と<ruby>呼<rt>よ</rt></ruby>ばれる<ruby>物質<rt>ぶっしつ</rt></ruby>ができる。これは、しみの<ruby>原因<rt>げんいん</rt></ruby>となる<ruby>物質<rt>ぶっしつ</rt></ruby>『メラニン』を<ruby>増<rt>ふ</rt></ruby>やしてしまう。」と<ruby>書<rt>か</rt></ruby>かれています。<ruby>指示語<rt>しじご</rt></ruby>「これ」は<ruby>活性<rt>かっせい</rt></ruby><ruby>酸素<rt>さんそ</rt></ruby>を<ruby>指<rt>さ</rt></ruby>しており、メラニンを<ruby>増<rt>ふ</rt></ruby>やす<ruby>物質<rt>ぶっしつ</rt></ruby>であることが<ruby>説明<rt>せつめい</rt></ruby>されています。したがって<ruby>正解<rt>せいかい</rt></ruby>は 3 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>1はポリフェノール、<ruby>選択肢<rt>せんたくし</rt></ruby>2は<ruby>本文<rt>ほんぶん</rt></ruby>に<ruby>記述<rt>きじゅつ</rt></ruby>がなく、<ruby>選択肢<rt>せんたくし</rt></ruby>4はポリフェノールの<ruby>説明<rt>せつめい</rt></ruby>です。）"
         }
       ],
       "drills": [
@@ -1426,28 +1450,34 @@
             {
               "id": 1,
               "text_ja": "冷房は素晴らしい技術なのでどんどん使用するべきだ。",
-              "text_en": "Air conditioning is a wonderful technology, so it should be used extensively."
+              "text_en": "Air conditioning is a wonderful technology, so it should be used extensively.",
+              "text_ja_ruby": "<ruby>冷房<rt>れいぼう</rt></ruby>は<ruby>素晴<rt>すば</rt></ruby>らしい<ruby>技術<rt>ぎじゅつ</rt></ruby>なのでどんどん<ruby>使用<rt>しよう</rt></ruby>するべきだ。"
             },
             {
               "id": 2,
               "text_ja": "室外と室内の温度差が10℃以上あると、快適でほっとする。",
-              "text_en": "When the temperature difference between inside and outside is 10°C or more, it is comfortable and relieving."
+              "text_en": "When the temperature difference between inside and outside is 10°C or more, it is comfortable and relieving.",
+              "text_ja_ruby": "<ruby>室外<rt>しつがい</rt></ruby>と<ruby>室内<rt>しつない</rt></ruby>の<ruby>温度差<rt>おんどさ</rt></ruby>が10℃<ruby>以上<rt>いじょう</rt></ruby>あると、<ruby>快適<rt>かいてき</rt></ruby>でほっとする。"
             },
             {
               "id": 3,
               "text_ja": "冷房で体をこわしてしまうこともあるので、うまく使う必要がある。",
-              "text_en": "Because air conditioning can also harm health, it is necessary to use it skillfully."
+              "text_en": "Because air conditioning can also harm health, it is necessary to use it skillfully.",
+              "text_ja_ruby": "<ruby>冷房<rt>れいぼう</rt></ruby>で<ruby>体<rt>てい</rt></ruby>をこわしてしまうこともあるので、うまく<ruby>使<rt>つか</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>がある。"
             },
             {
               "id": 4,
               "text_ja": "冷房を使うと体温を調節することができなくなるので、使わないほうがいい。",
-              "text_en": "Because air conditioning prevents body temperature regulation, it is better not to use it at all."
+              "text_en": "Because air conditioning prevents body temperature regulation, it is better not to use it at all.",
+              "text_ja_ruby": "<ruby>冷房<rt>れいぼう</rt></ruby>を<ruby>使<rt>つか</rt></ruby>うと<ruby>体温<rt>たいおん</rt></ruby>を<ruby>調節<rt>ちょうせつ</rt></ruby>することができなくなるので、<ruby>使<rt>つか</rt></ruby>わないほうがいい。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "最後の段落Dで筆者は「冷房は暑い夏を快適に過ごすための優れた技術ではあるが、思わぬ体調不良の原因にもなりうる。冷房の技術はありがたいものだが、大事なことは、その技術を上手に使うということだろう。」と述べています。冷房のメリットと健康被害のリスクの両面を挙げたうえで「上手に使う必要がある」と結論づけているため、正解は 3 です。（選択肢1はデメリットを無視しており、選択肢2は10℃以上の温度差が体調不良を招く本文と矛盾し、選択肢4は冷房の全面否定となり筆者の主張と異なります。）",
           "explanation_en": "In the concluding paragraph D, the author summarizes: 'While air conditioning is an outstanding technology for spending hot summers comfortably, it can also cause unexpected poor health... What is vital is using that technology skillfully.' This directly corresponds to Option 3. Option 1 ignores negative consequences, Option 2 misconstrues temperature difference, and Option 4 erroneously advises not using AC at all.",
-          "techniqueFocus": "Discourse structure analysis: Paragraph D begins with 'このように' (In this way), presenting the concluding synthesis that AC must be used skillfully."
+          "techniqueFocus": "Discourse structure analysis: Paragraph D begins with 'このように' (In this way), presenting the concluding synthesis that AC must be used skillfully.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>言<rt>い</rt></ruby>いたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>最後<rt>さいご</rt></ruby>の<ruby>段落<rt>だんらく</rt></ruby>Dで<ruby>筆者<rt>ひっしゃ</rt></ruby>は「<ruby>冷房<rt>れいぼう</rt></ruby>は<ruby>暑<rt>あつ</rt></ruby>い<ruby>夏<rt>なつ</rt></ruby>を<ruby>快適<rt>かいてき</rt></ruby>に<ruby>過<rt>す</rt></ruby>ごすための<ruby>優<rt>まさ</rt></ruby>れた<ruby>技術<rt>ぎじゅつ</rt></ruby>ではあるが、<ruby>思<rt>おも</rt></ruby>わぬ<ruby>体調不良<rt>たいちょうふりょう</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>にもなりうる。<ruby>冷房<rt>れいぼう</rt></ruby>の<ruby>技術<rt>ぎじゅつ</rt></ruby>はありがたいものだが、<ruby>大事<rt>だいじ</rt></ruby>なことは、その<ruby>技術<rt>ぎじゅつ</rt></ruby>を<ruby>上手<rt>じょうず</rt></ruby>に<ruby>使<rt>つか</rt></ruby>うということだろう。」と<ruby>述<rt>の</rt></ruby>べています。<ruby>冷房<rt>れいぼう</rt></ruby>のメリットと<ruby>健康被害<rt>けんこうひがい</rt></ruby>のリスクの<ruby>両面<rt>りょうめん</rt></ruby>を<ruby>挙<rt>あ</rt></ruby>げたうえで「<ruby>上手<rt>じょうず</rt></ruby>に<ruby>使<rt>つか</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>がある」と<ruby>結論<rt>けつろん</rt></ruby>づけているため、<ruby>正解<rt>せいかい</rt></ruby>は 3 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>1はデメリットを<ruby>無視<rt>むし</rt></ruby>しており、<ruby>選択肢<rt>せんたくし</rt></ruby>2は10℃<ruby>以上<rt>いじょう</rt></ruby>の<ruby>温度差<rt>おんどさ</rt></ruby>が<ruby>体調不良<rt>たいちょうふりょう</rt></ruby>を<ruby>招<rt>まね</rt></ruby>く<ruby>本文<rt>ほんぶん</rt></ruby>と<ruby>矛盾<rt>むじゅん</rt></ruby>し、<ruby>選択肢<rt>せんたくし</rt></ruby>4は<ruby>冷房<rt>れいぼう</rt></ruby>の<ruby>全面<rt>ぜんめん</rt></ruby><ruby>否定<rt>ひてい</rt></ruby>となり<ruby>筆者<rt>ひっしゃ</rt></ruby>の<ruby>主張<rt>しゅちょう</rt></ruby>と<ruby>異<rt>こと</rt></ruby>なります。）"
         }
       ],
       "drills": [
@@ -1791,28 +1821,34 @@
             {
               "id": 1,
               "text_ja": "レストランはきれいだし、料理がおいしかったので満足している。",
-              "text_en": "Satisfied because the restaurant was clean and the food was delicious."
+              "text_en": "Satisfied because the restaurant was clean and the food was delicious.",
+              "text_ja_ruby": "レストランはきれいだし、<ruby>料理<rt>りょうり</rt></ruby>がおいしかったので<ruby>満足<rt>まんぞく</rt></ruby>している。"
             },
             {
               "id": 2,
               "text_ja": "集団のせいでなかなか料理を食べられなかったので、楽しめなかった。",
-              "text_en": "Could not enjoy it because the group delayed the meal and ruined the experience."
+              "text_en": "Could not enjoy it because the group delayed the meal and ruined the experience.",
+              "text_ja_ruby": "<ruby>集団<rt>しゅうだん</rt></ruby>のせいでなかなか<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べられなかったので、<ruby>楽<rt>たの</rt></ruby>しめなかった。"
             },
             {
               "id": 3,
               "text_ja": "レストランはかざりがなくてよくなかったが、集団の話は楽しめた。",
-              "text_en": "The restaurant was not good because it lacked decoration, but enjoyed the group's conversation."
+              "text_en": "The restaurant was not good because it lacked decoration, but enjoyed the group's conversation.",
+              "text_ja_ruby": "レストランはかざりがなくてよくなかったが、<ruby>集団<rt>しゅうだん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>は<ruby>楽<rt>たの</rt></ruby>しめた。"
             },
             {
               "id": 4,
               "text_ja": "集団と話をしながら料理を食べたので、料理の味はどうでもよかった。",
-              "text_en": "Because they ate while talking with the group, the flavor didn't matter."
+              "text_en": "Because they ate while talking with the group, the flavor didn't matter.",
+              "text_ja_ruby": "<ruby>集団<rt>しゅうだん</rt></ruby>と<ruby>話<rt>はなし</rt></ruby>をしながら<ruby>料理<rt>りょうり</rt></ruby>を<ruby>食<rt>た</rt></ruby>べたので、<ruby>料理<rt>りょうり</rt></ruby>の<ruby>味<rt>あじ</rt></ruby>はどうでもよかった。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "筆者は最初、落ち着いた雰囲気の店に期待していましたが、後から入ってきた集団に先に注文され、大声で話すのを聞かされながら長く待たされたため、料理が届いたときには「もう疲れてしまい、味はどうでもよくなってしまった」と述べています。集団のせいで食事を楽しめなかった心情を表しているため、正解は 2 です。（選択肢1は満足しておらず、選択肢3は店の雰囲気を好意的に捉えており集団の話は不快でした。選択肢4は筆者は集団と会話していません。）",
           "explanation_en": "Although the author initially had high expectations in the calm restaurant, a later-arriving group ordered first, causing a long wait while loudly talking. When the food finally arrived, the author was exhausted and no longer cared about the taste. Thus Option 2 is correct. Options 1, 3, and 4 contradict the narrative details.",
-          "techniqueFocus": "Tracking psychological changes: Follow the shift from positive expectation ('期待がふくらんだ') to negative experience caused by suffering passive ('先に注文された') and causative-passive ('聞かされた')."
+          "techniqueFocus": "Tracking psychological changes: Follow the shift from positive expectation ('期待がふくらんだ') to negative experience caused by suffering passive ('先に注文された') and causative-passive ('聞かされた').",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちを<ruby>説明<rt>せつめい</rt></ruby>しているのはどれか。",
+          "explanation_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>最初<rt>さいしょ</rt></ruby>、<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いた<ruby>雰囲気<rt>ふんいき</rt></ruby>の<ruby>店<rt>みせ</rt></ruby>に<ruby>期待<rt>きたい</rt></ruby>していましたが、<ruby>後<rt>あと</rt></ruby>から<ruby>入<rt>いっ</rt></ruby>ってきた<ruby>集団<rt>しゅうだん</rt></ruby>に<ruby>先<rt>さき</rt></ruby>に<ruby>注文<rt>ちゅうもん</rt></ruby>され、<ruby>大声<rt>おおごえ</rt></ruby>で<ruby>話<rt>はな</rt></ruby>すのを<ruby>聞<rt>き</rt></ruby>かされながら<ruby>長<rt>なが</rt></ruby>く<ruby>待<rt>ま</rt></ruby>たされたため、<ruby>料理<rt>りょうり</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いたときには「もう<ruby>疲<rt>つか</rt></ruby>れてしまい、<ruby>味<rt>あじ</rt></ruby>はどうでもよくなってしまった」と<ruby>述<rt>の</rt></ruby>べています。<ruby>集団<rt>しゅうだん</rt></ruby>のせいで<ruby>食事<rt>しょくじ</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しめなかった<ruby>心情<rt>しんじょう</rt></ruby>を<ruby>表<rt>あらわ</rt></ruby>しているため、<ruby>正解<rt>せいかい</rt></ruby>は 2 です。（<ruby>選択肢<rt>せんたくし</rt></ruby>1は<ruby>満足<rt>まんぞく</rt></ruby>しておらず、<ruby>選択肢<rt>せんたくし</rt></ruby>3は<ruby>店<rt>みせ</rt></ruby>の<ruby>雰囲気<rt>ふんいき</rt></ruby>を<ruby>好意的<rt>こういてき</rt></ruby>に<ruby>捉<rt>とら</rt></ruby>えており<ruby>集団<rt>しゅうだん</rt></ruby>の<ruby>話<rt>はなし</rt></ruby>は<ruby>不快<rt>ふかい</rt></ruby>でした。<ruby>選択肢<rt>せんたくし</rt></ruby>4は<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>集団<rt>しゅうだん</rt></ruby>と<ruby>会話<rt>かいわ</rt></ruby>していません。）"
         }
       ],
       "drills": [

@@ -202,27 +202,33 @@
             {
               "id": 1,
               "text_ja": "評論家はある分野について説明や評価をするが、医者や先生はそうではない。",
-              "text_en": "Critics explain and evaluate a specific field, but doctors and teachers do not."
+              "text_en": "Critics explain and evaluate a specific field, but doctors and teachers do not.",
+              "text_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>はある<ruby>分野<rt>ぶんや</rt></ruby>について<ruby>説明<rt>せつめい</rt></ruby>や<ruby>評価<rt>ひょうか</rt></ruby>をするが、<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>はそうではない。"
             },
             {
               "id": 2,
               "text_ja": "評論家はある分野についての資格が必要だが、医者や先生はそうではない。",
-              "text_en": "Critics need a qualification in a particular field, but doctors and teachers do not."
+              "text_en": "Critics need a qualification in a particular field, but doctors and teachers do not.",
+              "text_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>はある<ruby>分野<rt>ぶんや</rt></ruby>についての<ruby>資格<rt>しかく</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だが、<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>はそうではない。"
             },
             {
               "id": 3,
               "text_ja": "評論家はある分野についての資格は必要ないが、医者や先生はそうではない。",
-              "text_en": "Critics do not need a qualification in a field, whereas doctors and teachers do."
+              "text_en": "Critics do not need a qualification in a field, whereas doctors and teachers do.",
+              "text_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>はある<ruby>分野<rt>ぶんや</rt></ruby>についての<ruby>資格<rt>しかく</rt></ruby>は<ruby>必要<rt>ひつよう</rt></ruby>ないが、<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>はそうではない。"
             },
             {
               "id": 4,
               "text_ja": "評論家はある分野の知識が必要だが、医者や先生はそうではない。",
-              "text_en": "Critics require knowledge of a field, but doctors and teachers do not."
+              "text_en": "Critics require knowledge of a field, but doctors and teachers do not.",
+              "text_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>はある<ruby>分野<rt>ぶんや</rt></ruby>の<ruby>知識<rt>ちしき</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>だが、<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>はそうではない。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "第1段落に「医者や学校の先生のように、評論家になるための資格試験があるわけではない」と書かれています。つまり医者や先生には資格試験が必要ですが、評論家には必要ありません。したがって 3 が正解です。",
-          "explanation_en": "The first paragraph states: 'unlike doctors or school teachers, there is no qualification exam to become a critic.' This means doctors and teachers require qualifications/licenses, whereas critics do not. Therefore, Option 3 is correct."
+          "explanation_en": "The first paragraph states: 'unlike doctors or school teachers, there is no qualification exam to become a critic.' This means doctors and teachers require qualifications/licenses, whereas critics do not. Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>と<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>はどこが<ruby>違<rt>ちが</rt></ruby>うと<ruby>書<rt>か</rt></ruby>かれているか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>1<ruby>段落<rt>だんらく</rt></ruby>に「<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>学校<rt>がっこう</rt></ruby>の<ruby>先生<rt>せんせい</rt></ruby>のように、<ruby>評論家<rt>ひょうろんか</rt></ruby>になるための<ruby>資格<rt>しかく</rt></ruby><ruby>試験<rt>しけん</rt></ruby>があるわけではない」と<ruby>書<rt>か</rt></ruby>かれています。つまり<ruby>医者<rt>いしゃ</rt></ruby>や<ruby>先生<rt>せんせい</rt></ruby>には<ruby>資格<rt>しかく</rt></ruby><ruby>試験<rt>しけん</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>ですが、<ruby>評論家<rt>ひょうろんか</rt></ruby>には<ruby>必要<rt>ひつよう</rt></ruby>ありません。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-49-2",
@@ -233,27 +239,33 @@
             {
               "id": 1,
               "text_ja": "評論家になるためにある分野について特別な興味を持とうとしたこと",
-              "text_en": "Trying to take a special interest in a field in order to become a critic"
+              "text_en": "Trying to take a special interest in a field in order to become a critic",
+              "text_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>になるためにある<ruby>分野<rt>ぶんや</rt></ruby>について<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>とうとしたこと"
             },
             {
               "id": 2,
               "text_ja": "ある分野について解説や評論をするために、一生懸命学んだこと",
-              "text_en": "Studying hard to provide commentary and reviews in a certain area"
+              "text_en": "Studying hard to provide commentary and reviews in a certain area",
+              "text_ja_ruby": "ある<ruby>分野<rt>ぶんや</rt></ruby>について<ruby>解説<rt>かいせつ</rt></ruby>や<ruby>評論<rt>ひょうろん</rt></ruby>をするために、<ruby>一生懸命<rt>いっしょうけんめい</rt></ruby><ruby>学<rt>まな</rt></ruby>んだこと"
             },
             {
               "id": 3,
               "text_ja": "若いころにある分野についての資格試験を人よりもたくさん受けたこと",
-              "text_en": "Taking more qualification exams in a field than others when they were young"
+              "text_en": "Taking more qualification exams in a field than others when they were young",
+              "text_ja_ruby": "<ruby>若<rt>わか</rt></ruby>いころにある<ruby>分野<rt>ぶんや</rt></ruby>についての<ruby>資格<rt>しかく</rt></ruby><ruby>試験<rt>しけん</rt></ruby>を<ruby>人<rt>ひと</rt></ruby>よりもたくさん<ruby>受<rt>う</rt></ruby>けたこと"
             },
             {
               "id": 4,
               "text_ja": "ずっとある分野に特別な知識を持ち、興味を持って勉強を続けたこと",
-              "text_en": "Having exceptional knowledge in a field for a long time and continuing to study with passion"
+              "text_en": "Having exceptional knowledge in a field for a long time and continuing to study with passion",
+              "text_ja_ruby": "ずっとある<ruby>分野<rt>ぶんや</rt></ruby>に<ruby>特別<rt>とくべつ</rt></ruby>な<ruby>知識<rt>ちしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>ち、<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>勉強<rt>べんきょう</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けたこと"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "第2段落に「若いころからある分野に対して人並み外れた知識や興味を持っており、夢中でそれを学ぶうちに、いつの間にかそれを仕事にすることになったという人も多い」とあります。評論家になるために学んだのではなく、興味を持って夢中で勉強を続けたことが仕事につながっています。したがって 4 が正解です。",
-          "explanation_en": "Paragraph 2 notes that many had extraordinary knowledge and curiosity from youth, passionately studying it until it naturally became their career. They did not study for the sake of becoming critics, but rather sustained their passion over time. Therefore, Option 4 is correct."
+          "explanation_en": "Paragraph 2 notes that many had extraordinary knowledge and curiosity from youth, passionately studying it until it naturally became their career. They did not study for the sake of becoming critics, but rather sustained their passion over time. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "<ruby>評論家<rt>ひょうろんか</rt></ruby>の<ruby>多<rt>おお</rt></ruby>くはどんなことが<ruby>仕事<rt>しごと</rt></ruby>につながったとあるか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>2<ruby>段落<rt>だんらく</rt></ruby>に「<ruby>若<rt>わか</rt></ruby>いころからある<ruby>分野<rt>ぶんや</rt></ruby>に<ruby>対<rt>たい</rt></ruby>して<ruby>人並<rt>ひとなみ</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた<ruby>知識<rt>ちしき</rt></ruby>や<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>っており、<ruby>夢中<rt>むちゅう</rt></ruby>でそれを<ruby>学<rt>まな</rt></ruby>ぶうちに、いつの<ruby>間<rt>ま</rt></ruby>にかそれを<ruby>仕事<rt>しごと</rt></ruby>にすることになったという<ruby>人<rt>ひと</rt></ruby>も<ruby>多<rt>おお</rt></ruby>い」とあります。<ruby>評論家<rt>ひょうろんか</rt></ruby>になるために<ruby>学<rt>まな</rt></ruby>んだのではなく、<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>夢中<rt>むちゅう</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>を<ruby>続<rt>つづ</rt></ruby>けたことが<ruby>仕事<rt>しごと</rt></ruby>につながっています。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-49-3",
@@ -264,27 +276,33 @@
             {
               "id": 1,
               "text_ja": "深い知識を持つことが、評論家になるためのただ一つの必要なことだ。",
-              "text_en": "Having deep knowledge is the single only requirement for becoming a critic."
+              "text_en": "Having deep knowledge is the single only requirement for becoming a critic.",
+              "text_ja_ruby": "<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>つことが、<ruby>評論家<rt>ひょうろんか</rt></ruby>になるためのただ<ruby>一<rt>ひと</rt></ruby>つの<ruby>必要<rt>ひつよう</rt></ruby>なことだ。"
             },
             {
               "id": 2,
               "text_ja": "深い知識を持つことが必要ではないこともたくさんある。",
-              "text_en": "There are many cases where having deep knowledge is not necessary at all."
+              "text_en": "There are many cases where having deep knowledge is not necessary at all.",
+              "text_ja_ruby": "<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>つことが<ruby>必要<rt>ひつよう</rt></ruby>ではないこともたくさんある。"
             },
             {
               "id": 3,
               "text_ja": "深い知識を持つことは必要だが、ほかにも必要なことがある。",
-              "text_en": "Possessing deep knowledge is necessary, but other qualities are also required."
+              "text_en": "Possessing deep knowledge is necessary, but other qualities are also required.",
+              "text_ja_ruby": "<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>つことは<ruby>必要<rt>ひつよう</rt></ruby>だが、ほかにも<ruby>必要<rt>ひつよう</rt></ruby>なことがある。"
             },
             {
               "id": 4,
               "text_ja": "深い知識を持つことは必要ではなく、ほかに必要なことがある。",
-              "text_en": "Deep knowledge is not needed, but other things are."
+              "text_en": "Deep knowledge is not needed, but other things are.",
+              "text_ja_ruby": "<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>を<ruby>持<rt>も</rt></ruby>つことは<ruby>必要<rt>ひつよう</rt></ruby>ではなく、ほかに<ruby>必要<rt>ひつよう</rt></ruby>なことがある。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "「〜があれば…になれるというものでもない」は、それだけでは十分ではなく他の条件も必要であることを表します。本文でも、深い知識に加えて「説得力や魅力」「運の強さ」が必要と述べられています。したがって 3 が正解です。",
-          "explanation_en": "The grammar expression '〜というものでもない' indicates that having knowledge is not sufficient on its own—other elements are required. The passage goes on to state that persuasive charm and fortune are also essential. Therefore, Option 3 is correct."
+          "explanation_en": "The grammar expression '〜というものでもない' indicates that having knowledge is not sufficient on its own—other elements are required. The passage goes on to state that persuasive charm and fortune are also essential. Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "①ただ<ruby>人並<rt>ひとなみ</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>があれば<ruby>評論家<rt>ひょうろんか</rt></ruby>になれるというものでもないとあるが、どういうことか。",
+          "explanation_ja_ruby": "「〜があれば…になれるというものでもない」は、それだけでは<ruby>十分<rt>じゅうぶん</rt></ruby>ではなく<ruby>他<rt>ほか</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>も<ruby>必要<rt>ひつよう</rt></ruby>であることを<ruby>表<rt>あらわ</rt></ruby>します。<ruby>本文<rt>ほんぶん</rt></ruby>でも、<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>に<ruby>加<rt>くわ</rt></ruby>えて「<ruby>説得力<rt>せっとくりょく</rt></ruby>や<ruby>魅力<rt>みりょく</rt></ruby>」「<ruby>運<rt>はこ</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さ」が<ruby>必要<rt>ひつよう</rt></ruby>と<ruby>述<rt>の</rt></ruby>べられています。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-49-4",
@@ -295,27 +313,33 @@
             {
               "id": 1,
               "text_ja": "新聞やテレビ関係の会社で働いてマスメディアに出た経験",
-              "text_en": "Experience working at newspaper or TV-related companies and appearing in media"
+              "text_en": "Experience working at newspaper or TV-related companies and appearing in media",
+              "text_ja_ruby": "<ruby>新聞<rt>しんぶん</rt></ruby>やテレビ<ruby>関係<rt>かんけい</rt></ruby>の<ruby>会社<rt>かいしゃ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いてマスメディアに<ruby>出<rt>で</rt></ruby>た<ruby>経験<rt>けいけん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "人々を説得しひきつける力があり、マスメディアに出る機会に恵まれる運の強さ",
-              "text_en": "The ability to persuade and attract people, along with strong luck to receive opportunities to appear in the media"
+              "text_en": "The ability to persuade and attract people, along with strong luck to receive opportunities to appear in the media",
+              "text_ja_ruby": "<ruby>人々<rt>ひとびと</rt></ruby>を<ruby>説得<rt>せっとく</rt></ruby>しひきつける<ruby>力<rt>ちから</rt></ruby>があり、マスメディアに<ruby>出<rt>で</rt></ruby>る<ruby>機会<rt>きかい</rt></ruby>に<ruby>恵<rt>めぐ</rt></ruby>まれる<ruby>運<rt>はこ</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さ"
             },
             {
               "id": 3,
               "text_ja": "マスメディアに出て、人々をひきつけた経験",
-              "text_en": "Past experience of appearing in mass media and captivating an audience"
+              "text_en": "Past experience of appearing in mass media and captivating an audience",
+              "text_ja_ruby": "マスメディアに<ruby>出<rt>で</rt></ruby>て、<ruby>人々<rt>ひとびと</rt></ruby>をひきつけた<ruby>経験<rt>けいけん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "人並み外れた深い知識と、人々を納得させる説得力や魅力",
-              "text_en": "Extraordinary deep knowledge and the persuasive power or charm to convince people"
+              "text_en": "Extraordinary deep knowledge and the persuasive power or charm to convince people",
+              "text_ja_ruby": "<ruby>人並<rt>ひとなみ</rt></ruby>み<ruby>外<rt>はず</rt></ruby>れた<ruby>深<rt>ふか</rt></ruby>い<ruby>知識<rt>ちしき</rt></ruby>と、<ruby>人々<rt>ひとびと</rt></ruby>を<ruby>納得<rt>なっとく</rt></ruby>させる<ruby>説得力<rt>せっとくりょく</rt></ruby>や<ruby>魅力<rt>みりょく</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "下線部②の直後に「人々が納得し、話を聞きたくなるような説得力や魅力があること、さらに、マスメディアに登場するチャンスを得る運の強さも必要だろう」と明記されています。選択肢 2 がこの記述に正確に一致します。",
-          "explanation_en": "Right after underlined part ②, the text specifies: 'persuasiveness and charm that convince people and make them want to listen, as well as the strong good luck to obtain the chance to appear in mass media.' Option 2 perfectly matches this description."
+          "explanation_en": "Right after underlined part ②, the text specifies: 'persuasiveness and charm that convince people and make them want to listen, as well as the strong good luck to obtain the chance to appear in mass media.' Option 2 perfectly matches this description.",
+          "questionText_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>によると②マスメディアに<ruby>取<rt>と</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げられるためには<ruby>何<rt>なに</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>下線部<rt>かせんぶ</rt></ruby>②の<ruby>直後<rt>ちょくご</rt></ruby>に「<ruby>人々<rt>ひとびと</rt></ruby>が<ruby>納得<rt>なっとく</rt></ruby>し、<ruby>話<rt>はなし</rt></ruby>を<ruby>聞<rt>き</rt></ruby>きたくなるような<ruby>説得力<rt>せっとくりょく</rt></ruby>や<ruby>魅力<rt>みりょく</rt></ruby>があること、さらに、マスメディアに<ruby>登場<rt>とうじょう</rt></ruby>するチャンスを<ruby>得<rt>とく</rt></ruby>る<ruby>運<rt>はこ</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さも<ruby>必要<rt>ひつよう</rt></ruby>だろう」と<ruby>明記<rt>めいき</rt></ruby>されています。<ruby>選択肢<rt>せんたくし</rt></ruby> 2 がこの<ruby>記述<rt>きじゅつ</rt></ruby>に<ruby>正確<rt>せいかく</rt></ruby>に<ruby>一致<rt>いっち</rt></ruby>します。"
         }
       ],
       "commentary": {
@@ -525,27 +549,33 @@
             {
               "id": 1,
               "text_ja": "町に緑が多くてきれいなので、楽しく、満足していた。",
-              "text_en": "They were satisfied and delighted because the town was full of green and beautiful."
+              "text_en": "They were satisfied and delighted because the town was full of green and beautiful.",
+              "text_ja_ruby": "<ruby>町<rt>まち</rt></ruby>に<ruby>緑<rt>みどり</rt></ruby>が<ruby>多<rt>おお</rt></ruby>くてきれいなので、<ruby>楽<rt>たの</rt></ruby>しく、<ruby>満足<rt>まんぞく</rt></ruby>していた。"
             },
             {
               "id": 2,
               "text_ja": "作家の書いた小説を次々に思い出して、満足していた。",
-              "text_en": "They were satisfied as they recalled the author's novels one after another."
+              "text_en": "They were satisfied as they recalled the author's novels one after another.",
+              "text_ja_ruby": "<ruby>作家<rt>さっか</rt></ruby>の<ruby>書<rt>か</rt></ruby>いた<ruby>小説<rt>しょうせつ</rt></ruby>を<ruby>次々<rt>つぎつぎ</rt></ruby>に<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>して、<ruby>満足<rt>まんぞく</rt></ruby>していた。"
             },
             {
               "id": 3,
               "text_ja": "作家の小説を読んでから時間が経ち、思ったほど感動しなかった。",
-              "text_en": "Much time had passed since reading the author's novels, so they were not as deeply moved as expected."
+              "text_en": "Much time had passed since reading the author's novels, so they were not as deeply moved as expected.",
+              "text_ja_ruby": "<ruby>作家<rt>さっか</rt></ruby>の<ruby>小説<rt>しょうせつ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んでから<ruby>時間<rt>じかん</rt></ruby>が<ruby>経<rt>へ</rt></ruby>ち、<ruby>思<rt>おも</rt></ruby>ったほど<ruby>感動<rt>かんどう</rt></ruby>しなかった。"
             },
             {
               "id": 4,
               "text_ja": "今は作家のいたころの町と大きく変わってしまい、少し不満だった。",
-              "text_en": "They were dissatisfied because the town had changed dramatically since the author lived there."
+              "text_en": "They were dissatisfied because the town had changed dramatically since the author lived there.",
+              "text_ja_ruby": "<ruby>今<rt>いま</rt></ruby>は<ruby>作家<rt>さっか</rt></ruby>のいたころの<ruby>町<rt>まち</rt></ruby>と<ruby>大<rt>おお</rt></ruby>きく<ruby>変<rt>か</rt></ruby>わってしまい、<ruby>少<rt>すこ</rt></ruby>し<ruby>不満<rt>ふまん</rt></ruby>だった。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "第2段落の終わりに「社会人になってからは、彼の書いたものをほとんど読まなくなったせいか、それ以上の感激はなく、正直に言うと、少し物足りない気持ちだった」とあります。読書から時間が経っており、期待したほどの感動が得られなかったため、3 が正解です。",
-          "explanation_en": "The end of paragraph 2 explains that because the author rarely read the writer's work since entering the workforce, there was no great emotional surge, and they felt slightly unsatisfied. Thus, Option 3 is correct."
+          "explanation_en": "The end of paragraph 2 explains that because the author rarely read the writer's work since entering the workforce, there was no great emotional surge, and they felt slightly unsatisfied. Thus, Option 3 is correct.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>はある<ruby>町<rt>まち</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いて、どのような<ruby>気持<rt>きも</rt></ruby>ちになったか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>2<ruby>段落<rt>だんらく</rt></ruby>の<ruby>終<rt>お</rt></ruby>わりに「<ruby>社会人<rt>しゃかいじん</rt></ruby>になってからは、<ruby>彼<rt>か</rt></ruby>の<ruby>書<rt>か</rt></ruby>いたものをほとんど<ruby>読<rt>よ</rt></ruby>まなくなったせいか、それ<ruby>以上<rt>いじょう</rt></ruby>の<ruby>感激<rt>かんげき</rt></ruby>はなく、<ruby>正直<rt>しょうじき</rt></ruby>に<ruby>言<rt>い</rt></ruby>うと、<ruby>少<rt>すこ</rt></ruby>し<ruby>物足<rt>ものた</rt></ruby>りない<ruby>気持<rt>きも</rt></ruby>ちだった」とあります。<ruby>読書<rt>どくしょ</rt></ruby>から<ruby>時間<rt>じかん</rt></ruby>が<ruby>経<rt>へ</rt></ruby>っており、<ruby>期待<rt>きたい</rt></ruby>したほどの<ruby>感動<rt>かんどう</rt></ruby>が<ruby>得<rt>とく</rt></ruby>られなかったため、3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-50-2",
@@ -556,27 +586,33 @@
             {
               "id": 1,
               "text_ja": "作家の書いた詩の本や小説の本",
-              "text_en": "Books of poetry and novels published by the author"
+              "text_en": "Books of poetry and novels published by the author",
+              "text_ja_ruby": "<ruby>作家<rt>さっか</rt></ruby>の<ruby>書<rt>か</rt></ruby>いた<ruby>詩<rt>し</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>や<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>本<rt>ほん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "作家自身が書いた小説の原稿や手紙",
-              "text_en": "Manuscripts of novels and letters handwritten by the author himself"
+              "text_en": "Manuscripts of novels and letters handwritten by the author himself",
+              "text_ja_ruby": "<ruby>作家<rt>さっか</rt></ruby><ruby>自身<rt>じしん</rt></ruby>が<ruby>書<rt>か</rt></ruby>いた<ruby>小説<rt>しょうせつ</rt></ruby>の<ruby>原稿<rt>げんこう</rt></ruby>や<ruby>手紙<rt>てがみ</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "いろいろな人がこの作家について書いた原稿や手紙",
-              "text_en": "Manuscripts and letters written about the author by various other people"
+              "text_en": "Manuscripts and letters written about the author by various other people",
+              "text_ja_ruby": "いろいろな<ruby>人<rt>ひと</rt></ruby>がこの<ruby>作家<rt>さっか</rt></ruby>について<ruby>書<rt>か</rt></ruby>いた<ruby>原稿<rt>げんこう</rt></ruby>や<ruby>手紙<rt>てがみ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "作家の妹が書いた詩",
-              "text_en": "Poetry composed by the author's younger sister"
+              "text_en": "Poetry composed by the author's younger sister",
+              "text_ja_ruby": "<ruby>作家<rt>さっか</rt></ruby>の<ruby>妹<rt>いもうと</rt></ruby>が<ruby>書<rt>か</rt></ruby>いた<ruby>詩<rt>し</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "第3段落に「そこでは、彼の書いた原稿や手紙の展示をしていた」とあります。作家自身の手による直筆の原稿や手紙を見たので、2 が正解です。",
-          "explanation_en": "Paragraph 3 explicitly states: 'There on display were manuscripts and personal letters written in his own hand.' Therefore, Option 2 is correct."
+          "explanation_en": "Paragraph 3 explicitly states: 'There on display were manuscripts and personal letters written in his own hand.' Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>によると、この<ruby>人<rt>ひと</rt></ruby>は<ruby>記念館<rt>きねんかん</rt></ruby>で<ruby>何<rt>なに</rt></ruby>を<ruby>見<rt>み</rt></ruby>たか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>3<ruby>段落<rt>だんらく</rt></ruby>に「そこでは、<ruby>彼<rt>か</rt></ruby>の<ruby>書<rt>か</rt></ruby>いた<ruby>原稿<rt>げんこう</rt></ruby>や<ruby>手紙<rt>てがみ</rt></ruby>の<ruby>展示<rt>てんじ</rt></ruby>をしていた」とあります。<ruby>作家<rt>さっか</rt></ruby><ruby>自身<rt>じしん</rt></ruby>の<ruby>手<rt>て</rt></ruby>による<ruby>直筆<rt>じきひつ</rt></ruby>の<ruby>原稿<rt>げんこう</rt></ruby>や<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>見<rt>み</rt></ruby>たので、2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-50-3",
@@ -587,27 +623,33 @@
             {
               "id": 1,
               "text_ja": "記念館に入ったときから",
-              "text_en": "From the moment they entered the memorial museum"
+              "text_en": "From the moment they entered the memorial museum",
+              "text_ja_ruby": "<ruby>記念館<rt>きねんかん</rt></ruby>に<ruby>入<rt>いっ</rt></ruby>ったときから"
             },
             {
               "id": 2,
               "text_ja": "彼の手書きの原稿を見たときから",
-              "text_en": "From the time they viewed his handwritten manuscripts"
+              "text_en": "From the time they viewed his handwritten manuscripts",
+              "text_ja_ruby": "<ruby>彼<rt>か</rt></ruby>の<ruby>手書<rt>てが</rt></ruby>きの<ruby>原稿<rt>げんこう</rt></ruby>を<ruby>見<rt>み</rt></ruby>たときから"
             },
             {
               "id": 3,
               "text_ja": "作家の生まれた町に着いたときから",
-              "text_en": "From the moment they arrived in the author's hometown"
+              "text_en": "From the moment they arrived in the author's hometown",
+              "text_ja_ruby": "<ruby>作家<rt>さっか</rt></ruby>の<ruby>生<rt>う</rt></ruby>まれた<ruby>町<rt>まち</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いたときから"
             },
             {
               "id": 4,
               "text_ja": "パソコンで字を書いていたときから",
-              "text_en": "From when they used a computer to type"
+              "text_en": "From when they used a computer to type",
+              "text_ja_ruby": "パソコンで<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>いていたときから"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "「それ以来」の「それ」は、直前の段落で述べられている「作家の手書きの原稿を見て、文字に込められた感情の強さに気づいたこと」を指します。したがって 2 が正解です。",
-          "explanation_en": "'Since then' refers to the pivotal realization triggered by viewing the author's handwritten manuscripts and sensing his deep emotions. Therefore, Option 2 is correct."
+          "explanation_en": "'Since then' refers to the pivotal realization triggered by viewing the author's handwritten manuscripts and sensing his deep emotions. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "それ<ruby>以来<rt>いらい</rt></ruby>とあるが、どのようなことか。",
+          "explanation_ja_ruby": "「それ<ruby>以来<rt>いらい</rt></ruby>」の「それ」は、<ruby>直前<rt>ちょくぜん</rt></ruby>の<ruby>段落<rt>だんらく</rt></ruby>で<ruby>述<rt>の</rt></ruby>べられている「<ruby>作家<rt>さっか</rt></ruby>の<ruby>手書<rt>てが</rt></ruby>きの<ruby>原稿<rt>げんこう</rt></ruby>を<ruby>見<rt>み</rt></ruby>て、<ruby>文字<rt>もじ</rt></ruby>に<ruby>込<rt>こ</rt></ruby>められた<ruby>感情<rt>かんじょう</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さに<ruby>気<rt>き</rt></ruby>づいたこと」を<ruby>指<rt>さ</rt></ruby>します。したがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-50-4",
@@ -618,27 +660,33 @@
             {
               "id": 1,
               "text_ja": "手書きの文字から伝わるもの",
-              "text_en": "The feelings and humanity conveyed through handwritten words"
+              "text_en": "The feelings and humanity conveyed through handwritten words",
+              "text_ja_ruby": "<ruby>手書<rt>てが</rt></ruby>きの<ruby>文字<rt>もじ</rt></ruby>から<ruby>伝<rt>つた</rt></ruby>わるもの"
             },
             {
               "id": 2,
               "text_ja": "字をきれいに書くことの大切さ",
-              "text_en": "The importance of having neat, attractive handwriting"
+              "text_en": "The importance of having neat, attractive handwriting",
+              "text_ja_ruby": "<ruby>字<rt>じ</rt></ruby>をきれいに<ruby>書<rt>か</rt></ruby>くことの<ruby>大切<rt>たいせつ</rt></ruby>さ"
             },
             {
               "id": 3,
               "text_ja": "好きな作家の文章のすばらしさ",
-              "text_en": "The brilliance of the writing of an author one loves"
+              "text_en": "The brilliance of the writing of an author one loves",
+              "text_ja_ruby": "<ruby>好<rt>す</rt></ruby>きな<ruby>作家<rt>さっか</rt></ruby>の<ruby>文章<rt>ぶんしょう</rt></ruby>のすばらしさ"
             },
             {
               "id": 4,
               "text_ja": "好きな作家のいた町へ旅行する意味",
-              "text_en": "The significance of traveling to the town of an author one admires"
+              "text_en": "The significance of traveling to the town of an author one admires",
+              "text_ja_ruby": "<ruby>好<rt>す</rt></ruby>きな<ruby>作家<rt>さっか</rt></ruby>のいた<ruby>町<rt>まち</rt></ruby>へ<ruby>旅行<rt>りょこう</rt></ruby>する<ruby>意味<rt>いみ</rt></ruby>"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "筆者は手書き文字に込められた感情の強さに心を動かされ、最終文で「時には下手でも心をこめて字を書くことで、何かが伝わるのではないか」と述べています。上手下手ではなく、手書き文字が伝えるものの価値を最も伝えたいので、1 が正解です。",
-          "explanation_en": "The author concludes that 'even if my handwriting is clumsy, writing with all my heart might convey something special.' The core takeaway is the unique personal warmth communicated through handwritten text. Hence, Option 1 is correct."
+          "explanation_en": "The author concludes that 'even if my handwriting is clumsy, writing with all my heart might convey something special.' The core takeaway is the unique personal warmth communicated through handwritten text. Hence, Option 1 is correct.",
+          "questionText_ja_ruby": "この<ruby>文章<rt>ぶんしょう</rt></ruby>を<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>が<ruby>一番<rt>いちばん</rt></ruby><ruby>伝<rt>つた</rt></ruby>えたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>筆者<rt>ひっしゃ</rt></ruby>は<ruby>手書<rt>てが</rt></ruby>き<ruby>文字<rt>もじ</rt></ruby>に<ruby>込<rt>こ</rt></ruby>められた<ruby>感情<rt>かんじょう</rt></ruby>の<ruby>強<rt>つよ</rt></ruby>さに<ruby>心<rt>こころ</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かされ、<ruby>最終<rt>さいしゅう</rt></ruby><ruby>文<rt>ぶん</rt></ruby>で「<ruby>時<rt>とき</rt></ruby>には<ruby>下手<rt>へた</rt></ruby>でも<ruby>心<rt>こころ</rt></ruby>をこめて<ruby>字<rt>じ</rt></ruby>を<ruby>書<rt>か</rt></ruby>くことで、<ruby>何<rt>なに</rt></ruby>かが<ruby>伝<rt>つた</rt></ruby>わるのではないか」と<ruby>述<rt>の</rt></ruby>べています。<ruby>上手下手<rt>じょうずへた</rt></ruby>ではなく、<ruby>手書<rt>てが</rt></ruby>き<ruby>文字<rt>もじ</rt></ruby>が<ruby>伝<rt>つた</rt></ruby>えるものの<ruby>価値<rt>かち</rt></ruby>を<ruby>最<rt>もっと</rt></ruby>も<ruby>伝<rt>つた</rt></ruby>えたいので、1 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -866,27 +914,33 @@
             {
               "id": 1,
               "text_ja": "若い女性の作家",
-              "text_en": "A young female novelist"
+              "text_en": "A young female novelist",
+              "text_ja_ruby": "<ruby>若<rt>わか</rt></ruby>い<ruby>女性<rt>じょせい</rt></ruby>の<ruby>作家<rt>さっか</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "自分のことを小説に書いた人",
-              "text_en": "A person who wrote novels about herself"
+              "text_en": "A person who wrote novels about herself",
+              "text_ja_ruby": "<ruby>自分<rt>じぶん</rt></ruby>のことを<ruby>小説<rt>しょうせつ</rt></ruby>に<ruby>書<rt>か</rt></ruby>いた<ruby>人<rt>ひと</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "若者に人気がある作家",
-              "text_en": "An author who is popular among young people"
+              "text_en": "An author who is popular among young people",
+              "text_ja_ruby": "<ruby>若者<rt>わかもの</rt></ruby>に<ruby>人気<rt>にんき</rt></ruby>がある<ruby>作家<rt>さっか</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "賞を受けたことのある人気の作家",
-              "text_en": "A popular author who has won an award"
+              "text_en": "A popular author who has won an award",
+              "text_ja_ruby": "<ruby>賞<rt>しょう</rt></ruby>を<ruby>受<rt>う</rt></ruby>けたことのある<ruby>人気<rt>にんき</rt></ruby>の<ruby>作家<rt>さっか</rt></ruby>"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "第2段落に「2012年に『一人』で小説最優秀賞を取った注目の女性作家です。若者の純粋さを、愛情を持って表現するところに人気があります」とあります。賞を受賞しており、人気がある作家であるため 4 が正解です。1は若者を描いているが作者自身が若いとは書かれておらず、3は若者に人気があるのではなく「若者の純粋さを表現するところに人気がある」点に注意が必要です。",
-          "explanation_en": "Paragraph 2 notes she won the grand novel award with 'Alone' in 2012 and enjoys popularity for her affectionate portrayal of youth's purity. Thus, Option 4 ('award-winning popular author') is correct."
+          "explanation_en": "Paragraph 2 notes she won the grand novel award with 'Alone' in 2012 and enjoys popularity for her affectionate portrayal of youth's purity. Thus, Option 4 ('award-winning popular author') is correct.",
+          "questionText_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>によると、<ruby>山口<rt>やまぐち</rt></ruby>しずかはどんな<ruby>人<rt>ひと</rt></ruby>だと<ruby>書<rt>か</rt></ruby>かれているか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>2<ruby>段落<rt>だんらく</rt></ruby>に「2012<ruby>年<rt>ねん</rt></ruby>に『<ruby>一人<rt>ひとり</rt></ruby>』で<ruby>小説<rt>しょうせつ</rt></ruby><ruby>最優秀賞<rt>さいゆうしゅうしょう</rt></ruby>を<ruby>取<rt>と</rt></ruby>った<ruby>注目<rt>ちゅうもく</rt></ruby>の<ruby>女性作家<rt>じょせいさっか</rt></ruby>です。<ruby>若者<rt>わかもの</rt></ruby>の<ruby>純粋<rt>じゅんすい</rt></ruby>さを、<ruby>愛情<rt>あいじょう</rt></ruby>を<ruby>持<rt>も</rt></ruby>って<ruby>表現<rt>ひょうげん</rt></ruby>するところに<ruby>人気<rt>にんき</rt></ruby>があります」とあります。<ruby>賞<rt>しょう</rt></ruby>を<ruby>受賞<rt>じゅしょう</rt></ruby>しており、<ruby>人気<rt>にんき</rt></ruby>がある<ruby>作家<rt>さっか</rt></ruby>であるため 4 が<ruby>正解<rt>せいかい</rt></ruby>です。1は<ruby>若者<rt>わかもの</rt></ruby>を<ruby>描<rt>えが</rt></ruby>いているが<ruby>作者自身<rt>さくしゃじしん</rt></ruby>が<ruby>若<rt>わか</rt></ruby>いとは<ruby>書<rt>か</rt></ruby>かれておらず、3は<ruby>若者<rt>わかもの</rt></ruby>に<ruby>人気<rt>にんき</rt></ruby>があるのではなく「<ruby>若者<rt>わかもの</rt></ruby>の<ruby>純粋<rt>じゅんすい</rt></ruby>さを<ruby>表現<rt>ひょうげん</rt></ruby>するところに<ruby>人気<rt>にんき</rt></ruby>がある」<ruby>点<rt>てん</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>が<ruby>必要<rt>ひつよう</rt></ruby>です。"
         },
         {
           "questionId": "q-51-2",
@@ -897,27 +951,33 @@
             {
               "id": 1,
               "text_ja": "何にも興味を持てなかったから。",
-              "text_en": "Because he was not interested in anything."
+              "text_en": "Because he was not interested in anything.",
+              "text_ja_ruby": "<ruby>何<rt>なに</rt></ruby>にも<ruby>興味<rt>きょうみ</rt></ruby>を<ruby>持<rt>も</rt></ruby>てなかったから。"
             },
             {
               "id": 2,
               "text_ja": "1輪だけ花を選ぶのは難しいから。",
-              "text_en": "Because picking out just a single flower is difficult."
+              "text_en": "Because picking out just a single flower is difficult.",
+              "text_ja_ruby": "1<ruby>輪<rt>わ</rt></ruby>だけ<ruby>花<rt>はな</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶのは<ruby>難<rt>むずか</rt></ruby>しいから。"
             },
             {
               "id": 3,
               "text_ja": "ゲーム機と同じ値段の花がわからないから。",
-              "text_en": "Because he didn't know which flowers matched the value of a game console."
+              "text_en": "Because he didn't know which flowers matched the value of a game console.",
+              "text_ja_ruby": "ゲーム<ruby>機<rt>き</rt></ruby>と<ruby>同<rt>おな</rt></ruby>じ<ruby>値段<rt>ねだん</rt></ruby>の<ruby>花<rt>はな</rt></ruby>がわからないから。"
             },
             {
               "id": 4,
               "text_ja": "客がどの花がいいか選んでほしいと言うから。",
-              "text_en": "Because customers asked him to choose which flowers would be best."
+              "text_en": "Because customers asked him to choose which flowers would be best.",
+              "text_ja_ruby": "<ruby>客<rt>きゃく</rt></ruby>がどの<ruby>花<rt>はな</rt></ruby>がいいか<ruby>選<rt>えら</rt></ruby>んでほしいと<ruby>言<rt>い</rt></ruby>うから。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "下線部①の直前に「客はみなユウに花を選んでほしいと言います。困ったユウは、どうしてその花を買いたいのか、だれのための花なのかなど、事情を客にたずねます」とあります。客から花を選んでほしいと頼まれて困ったため事情を聞いたので、4 が正解です。",
-          "explanation_en": "The text directly preceding ① states: 'Every customer asks Yuu to pick out flowers for them. Perplexed, Yuu inquires into their circumstances.' Thus, Option 4 is correct."
+          "explanation_en": "The text directly preceding ① states: 'Every customer asks Yuu to pick out flowers for them. Perplexed, Yuu inquires into their circumstances.' Thus, Option 4 is correct.",
+          "questionText_ja_ruby": "①<ruby>事情<rt>じじょう</rt></ruby>を<ruby>客<rt>きゃく</rt></ruby>にたずねます。とあるが、なぜか。",
+          "explanation_ja_ruby": "<ruby>下線部<rt>かせんぶ</rt></ruby>①の<ruby>直前<rt>ちょくぜん</rt></ruby>に「<ruby>客<rt>きゃく</rt></ruby>はみなユウに<ruby>花<rt>はな</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでほしいと<ruby>言<rt>い</rt></ruby>います。<ruby>困<rt>こま</rt></ruby>ったユウは、どうしてその<ruby>花<rt>はな</rt></ruby>を<ruby>買<rt>か</rt></ruby>いたいのか、だれのための<ruby>花<rt>はな</rt></ruby>なのかなど、<ruby>事情<rt>じじょう</rt></ruby>を<ruby>客<rt>きゃく</rt></ruby>にたずねます」とあります。<ruby>客<rt>きゃく</rt></ruby>から<ruby>花<rt>はな</rt></ruby>を<ruby>選<rt>えら</rt></ruby>んでほしいと<ruby>頼<rt>たの</rt></ruby>まれて<ruby>困<rt>こま</rt></ruby>ったため<ruby>事情<rt>じじょう</rt></ruby>を<ruby>聞<rt>き</rt></ruby>いたので、4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-51-3",
@@ -928,27 +988,33 @@
             {
               "id": 1,
               "text_ja": "学校にも行かず仕事もしなかったユウが変わったことをしたから。",
-              "text_en": "Because Yuu, who had done neither school nor work, did something eccentric."
+              "text_en": "Because Yuu, who had done neither school nor work, did something eccentric.",
+              "text_ja_ruby": "<ruby>学校<rt>がっこう</rt></ruby>にも<ruby>行<rt>い</rt></ruby>かず<ruby>仕事<rt>しごと</rt></ruby>もしなかったユウが<ruby>変<rt>か</rt></ruby>わったことをしたから。"
             },
             {
               "id": 2,
               "text_ja": "学校に行かなかったユウが学校に行くようになったから。",
-              "text_en": "Because Yuu, who hadn't attended school, began going to school again."
+              "text_en": "Because Yuu, who hadn't attended school, began going to school again.",
+              "text_ja_ruby": "<ruby>学校<rt>がっこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>かなかったユウが<ruby>学校<rt>がっこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>くようになったから。"
             },
             {
               "id": 3,
               "text_ja": "何事にも無関心だったユウが明るく強くなっていったから。",
-              "text_en": "Because Yuu, who was previously indifferent to everything, grew brighter and stronger."
+              "text_en": "Because Yuu, who was previously indifferent to everything, grew brighter and stronger.",
+              "text_ja_ruby": "<ruby>何事<rt>なにごと</rt></ruby>にも<ruby>無関心<rt>むかんしん</rt></ruby>だったユウが<ruby>明<rt>あか</rt></ruby>るく<ruby>強<rt>つよ</rt></ruby>くなっていったから。"
             },
             {
               "id": 4,
               "text_ja": "仕事をしなかったユウがアルバイトを始めたから。",
-              "text_en": "Because Yuu, who was unemployed, started a part-time job."
+              "text_en": "Because Yuu, who was unemployed, started a part-time job.",
+              "text_ja_ruby": "<ruby>仕事<rt>しごと</rt></ruby>をしなかったユウがアルバイトを<ruby>始<rt>はじ</rt></ruby>めたから。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "下線部②の直前に「何の喜びもない日々を送っていたユウが、働いて人の役に立つ中で明るく強くなっていく様子に、読者は元気づけられるでしょう」とあります。何事にも無関心で喜びがなかったユウの前向きな成長に励まされるため、3 が正解です。",
-          "explanation_en": "The sentence states: 'witnessing how Yuu, who had spent joyless days, grows cheerful and resilient through being useful to others, readers will surely feel uplifted.' Hence, Option 3 is correct."
+          "explanation_en": "The sentence states: 'witnessing how Yuu, who had spent joyless days, grows cheerful and resilient through being useful to others, readers will surely feel uplifted.' Hence, Option 3 is correct.",
+          "questionText_ja_ruby": "②<ruby>元気<rt>げんき</rt></ruby>づけられるとあるが、なぜか。",
+          "explanation_ja_ruby": "<ruby>下線部<rt>かせんぶ</rt></ruby>②の<ruby>直前<rt>ちょくぜん</rt></ruby>に「<ruby>何<rt>なん</rt></ruby>の<ruby>喜<rt>よろこ</rt></ruby>びもない<ruby>日々<rt>ひび</rt></ruby>を<ruby>送<rt>おく</rt></ruby>っていたユウが、<ruby>働<rt>はたら</rt></ruby>いて<ruby>人<rt>ひと</rt></ruby>の<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つ<ruby>中<rt>なか</rt></ruby>で<ruby>明<rt>あか</rt></ruby>るく<ruby>強<rt>つよ</rt></ruby>くなっていく<ruby>様子<rt>ようす</rt></ruby>に、<ruby>読者<rt>どくしゃ</rt></ruby>は<ruby>元気<rt>げんき</rt></ruby>づけられるでしょう」とあります。<ruby>何事<rt>なにごと</rt></ruby>にも<ruby>無関心<rt>むかんしん</rt></ruby>で<ruby>喜<rt>よろこ</rt></ruby>びがなかったユウの<ruby>前向<rt>まえむ</rt></ruby>きな<ruby>成長<rt>せいちょう</rt></ruby>に<ruby>励<rt>はげ</rt></ruby>まされるため、3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-51-4",
@@ -959,27 +1025,33 @@
             {
               "id": 1,
               "text_ja": "人は人の中で働いて変わっていけるということ",
-              "text_en": "That people can change for the better by working among others"
+              "text_en": "That people can change for the better by working among others",
+              "text_ja_ruby": "<ruby>人<rt>ひと</rt></ruby>は<ruby>人<rt>ひと</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>いて<ruby>変<rt>か</rt></ruby>わっていけるということ"
             },
             {
               "id": 2,
               "text_ja": "たくさんの花には花言葉があるということ",
-              "text_en": "That countless flowers carry distinct meanings in the language of flowers"
+              "text_en": "That countless flowers carry distinct meanings in the language of flowers",
+              "text_ja_ruby": "たくさんの<ruby>花<rt>はな</rt></ruby>には<ruby>花言葉<rt>はなことば</rt></ruby>があるということ"
             },
             {
               "id": 3,
               "text_ja": "ユウが何の喜びもない日々を送っていること",
-              "text_en": "That Yuu spends days devoid of any happiness"
+              "text_en": "That Yuu spends days devoid of any happiness",
+              "text_ja_ruby": "ユウが<ruby>何<rt>なん</rt></ruby>の<ruby>喜<rt>よろこ</rt></ruby>びもない<ruby>日々<rt>ひび</rt></ruby>を<ruby>送<rt>おく</rt></ruby>っていること"
             },
             {
               "id": 4,
               "text_ja": "だれかに花を贈るときに役に立つということ",
-              "text_en": "That it is helpful when giving flowers to someone"
+              "text_en": "That it is helpful when giving flowers to someone",
+              "text_ja_ruby": "だれかに<ruby>花<rt>はな</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>るときに<ruby>役<rt>やく</rt></ruby>に<ruby>立<rt>た</rt></ruby>つということ"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "ユウが人との関わりや労働を通して「人との関係の大切さや働く意味」を学び、変わっていく物語であり、それが「作者から読者へのエール」と位置づけられています。人間が人との触れ合いや仕事を通じて前向きに変容していけることを伝えているため、1 が正解です。",
-          "explanation_en": "The book review highlights how Yuu discovers the worth of interpersonal ties and the purpose of work through helping people. This represents an inspiring cheer from the novelist, asserting that people can grow and transform by engaging and working with others. Thus, Option 1 is correct."
+          "explanation_en": "The book review highlights how Yuu discovers the worth of interpersonal ties and the purpose of work through helping people. This represents an inspiring cheer from the novelist, asserting that people can grow and transform by engaging and working with others. Thus, Option 1 is correct.",
+          "questionText_ja_ruby": "『<ruby>花屋<rt>はなや</rt></ruby>ダイヤリー』で<ruby>作者<rt>さくしゃ</rt></ruby>が<ruby>読者<rt>どくしゃ</rt></ruby>に<ruby>一番<rt>いちばん</rt></ruby><ruby>伝<rt>つた</rt></ruby>えたいことは<ruby>何<rt>なに</rt></ruby>か。",
+          "explanation_ja_ruby": "ユウが<ruby>人<rt>ひと</rt></ruby>との<ruby>関<rt>かか</rt></ruby>わりや<ruby>労働<rt>ろうどう</rt></ruby>を<ruby>通<rt>とう</rt></ruby>して「<ruby>人<rt>ひと</rt></ruby>との<ruby>関係<rt>かんけい</rt></ruby>の<ruby>大切<rt>たいせつ</rt></ruby>さや<ruby>働<rt>はたら</rt></ruby>く<ruby>意味<rt>いみ</rt></ruby>」を<ruby>学<rt>まな</rt></ruby>び、<ruby>変<rt>か</rt></ruby>わっていく<ruby>物語<rt>ものがたり</rt></ruby>であり、それが「<ruby>作者<rt>さくしゃ</rt></ruby>から<ruby>読者<rt>どくしゃ</rt></ruby>へのエール」と<ruby>位置<rt>いち</rt></ruby>づけられています。<ruby>人間<rt>にんげん</rt></ruby>が<ruby>人<rt>ひと</rt></ruby>との<ruby>触<rt>ふ</rt></ruby>れ<ruby>合<rt>あ</rt></ruby>いや<ruby>仕事<rt>しごと</rt></ruby>を<ruby>通<rt>つう</rt></ruby>じて<ruby>前向<rt>まえむ</rt></ruby>きに<ruby>変容<rt>へんよう</rt></ruby>していけることを<ruby>伝<rt>つた</rt></ruby>えているため、1 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -1152,27 +1224,33 @@
             {
               "id": 1,
               "text_ja": "200円",
-              "text_en": "200 yen"
+              "text_en": "200 yen",
+              "text_ja_ruby": "200<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "180円",
-              "text_en": "180 yen"
+              "text_en": "180 yen",
+              "text_ja_ruby": "180<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "160円",
-              "text_en": "160 yen"
+              "text_en": "160 yen",
+              "text_ja_ruby": "160<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "140円",
-              "text_en": "140 yen"
+              "text_en": "140 yen",
+              "text_ja_ruby": "140<ruby>円<rt>えん</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "6月18日はアイスクリームの割引期間（15日〜28日）内であり、午後10時（22時）は割引券が使える時間（18時〜24時）です。ただし、広告には「割引券1枚につき商品1個が割引となります」「お一人様1枚限り」と書かれているため、2個のうち割引（20円引き）されるのは1個だけです。したがって、(100 - 20) + 100 = 180円 となり、正解は 2 です。",
-          "explanation_en": "June 18 falls within the ice cream discount window (June 15–28), and 10:00 PM (22:00) is within the eligible hours (18:00–24:00). However, the rules specify that only one coupon is allowed per customer and one coupon applies to only one item. Thus, only one ice cream receives the 20-yen discount (100 - 20 = 80 yen), and the second is charged at the regular 100 yen. Total: 80 + 100 = 180 yen. Therefore, Option 2 is correct."
+          "explanation_en": "June 18 falls within the ice cream discount window (June 15–28), and 10:00 PM (22:00) is within the eligible hours (18:00–24:00). However, the rules specify that only one coupon is allowed per customer and one coupon applies to only one item. Thus, only one ice cream receives the 20-yen discount (100 - 20 = 80 yen), and the second is charged at the regular 100 yen. Total: 80 + 100 = 180 yen. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "アリさんは6<ruby>月<rt>げつ</rt></ruby>18<ruby>日<rt>ひ</rt></ruby><ruby>午後<rt>ごご</rt></ruby>10<ruby>時頃<rt>じころ</rt></ruby>、この<ruby>広告<rt>こうこく</rt></ruby>を1<ruby>枚<rt>まい</rt></ruby><ruby>持<rt>も</rt></ruby>ってコンビニに<ruby>行<rt>い</rt></ruby>った。アイスクリームを2<ruby>個<rt>こ</rt></ruby><ruby>買<rt>か</rt></ruby>った。アイスクリームは100<ruby>円<rt>えん</rt></ruby>と<ruby>書<rt>か</rt></ruby>いてあった。いくら<ruby>払<rt>はら</rt></ruby>ったか。",
+          "explanation_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>18<ruby>日<rt>ひ</rt></ruby>はアイスクリームの<ruby>割引<rt>わりびき</rt></ruby><ruby>期間<rt>きかん</rt></ruby>（15<ruby>日<rt>ひ</rt></ruby>〜28<ruby>日<rt>ひ</rt></ruby>）<ruby>内<rt>ない</rt></ruby>であり、<ruby>午後<rt>ごご</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>（<ruby>22時<rt>にじゅうにじ</rt></ruby>）は<ruby>割引券<rt>わりびきけん</rt></ruby>が<ruby>使<rt>つか</rt></ruby>える<ruby>時間<rt>じかん</rt></ruby>（<ruby>18時<rt>じゅうはちじ</rt></ruby>〜<ruby>24時<rt>にじゅうよじ</rt></ruby>）です。ただし、<ruby>広告<rt>こうこく</rt></ruby>には「<ruby>割引券<rt>わりびきけん</rt></ruby>1<ruby>枚<rt>まい</rt></ruby>につき<ruby>商品<rt>しょうひん</rt></ruby>1<ruby>個<rt>こ</rt></ruby>が<ruby>割引<rt>わりびき</rt></ruby>となります」「お<ruby>一人<rt>ひとり</rt></ruby><ruby>様<rt>さま</rt></ruby>1<ruby>枚<rt>まい</rt></ruby><ruby>限<rt>かぎ</rt></ruby>り」と<ruby>書<rt>か</rt></ruby>かれているため、2<ruby>個<rt>こ</rt></ruby>のうち<ruby>割引<rt>わりびき</rt></ruby>（20<ruby>円<rt>えん</rt></ruby><ruby>引<rt>ひ</rt></ruby>き）されるのは1<ruby>個<rt>こ</rt></ruby>だけです。したがって、(100 - 20) + 100 = 180<ruby>円<rt>えん</rt></ruby> となり、<ruby>正解<rt>せいかい</rt></ruby>は 2 です。"
         },
         {
           "questionId": "q-52-2",
@@ -1183,27 +1261,33 @@
             {
               "id": 1,
               "text_ja": "6月10日 午前10時ごろ",
-              "text_en": "Around 10:00 AM on June 10"
+              "text_en": "Around 10:00 AM on June 10",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>10<ruby>日<rt>ひ</rt></ruby> <ruby>午前<rt>ごぜん</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>ごろ"
             },
             {
               "id": 2,
               "text_ja": "6月12日 午後10時ごろ",
-              "text_en": "Around 10:00 PM on June 12"
+              "text_en": "Around 10:00 PM on June 12",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby> <ruby>午後<rt>ごご</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>ごろ"
             },
             {
               "id": 3,
               "text_ja": "6月16日 午前8時ごろ",
-              "text_en": "Around 8:00 AM on June 16"
+              "text_en": "Around 8:00 AM on June 16",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>16<ruby>日<rt>ひ</rt></ruby> <ruby>午前<rt>ごぜん</rt></ruby><ruby>8時<rt>はちじ</rt></ruby>ごろ"
             },
             {
               "id": 4,
               "text_ja": "6月20日 午後8時ごろ",
-              "text_en": "Around 8:00 PM on June 20"
+              "text_en": "Around 8:00 PM on June 20",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>20<ruby>日<rt>ひ</rt></ruby> <ruby>午後<rt>ごご</rt></ruby><ruby>8時<rt>はちじ</rt></ruby>ごろ"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "ドーナッツの割引期間は「2日(月)〜14日(土)」です。また、割引券が利用できる時間帯は「18時〜24時」に限られています。選択肢2「6月12日 午後10時ごろ」は期間内（2日〜14日の間）かつ時間内（22時は18時〜24時の間）であるため条件を完全に満たしています。したがって 2 が正解です。",
-          "explanation_en": "The discount period for doughnuts is June 2 (Mon) to June 14 (Sat), and the valid coupon usage hours are 18:00 to 24:00. Option 2 ('Around 10:00 PM on June 12') falls within the June 2–14 period and within the 18:00–24:00 time frame (22:00). Therefore, Option 2 is correct."
+          "explanation_en": "The discount period for doughnuts is June 2 (Mon) to June 14 (Sat), and the valid coupon usage hours are 18:00 to 24:00. Option 2 ('Around 10:00 PM on June 12') falls within the June 2–14 period and within the 18:00–24:00 time frame (22:00). Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "ドーナッツを<ruby>安<rt>やす</rt></ruby>く<ruby>買<rt>か</rt></ruby>いたい。この<ruby>広告<rt>こうこく</rt></ruby>を<ruby>持<rt>も</rt></ruby>って、いつ<ruby>買<rt>か</rt></ruby>いに<ruby>行<rt>い</rt></ruby>けばよいか。",
+          "explanation_ja_ruby": "ドーナッツの<ruby>割引<rt>わりびき</rt></ruby><ruby>期間<rt>きかん</rt></ruby>は「2<ruby>日<rt>ひ</rt></ruby>(<ruby>月<rt>げつ</rt></ruby>)〜14<ruby>日<rt>ひ</rt></ruby>(<ruby>土<rt>つち</rt></ruby>)」です。また、<ruby>割引券<rt>わりびきけん</rt></ruby>が<ruby>利用<rt>りよう</rt></ruby>できる<ruby>時間帯<rt>じかんたい</rt></ruby>は「<ruby>18時<rt>じゅうはちじ</rt></ruby>〜<ruby>24時<rt>にじゅうよじ</rt></ruby>」に<ruby>限<rt>かぎ</rt></ruby>られています。<ruby>選択肢<rt>せんたくし</rt></ruby>2「6<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby> <ruby>午後<rt>ごご</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>ごろ」は<ruby>期間内<rt>きかんない</rt></ruby>（2<ruby>日<rt>ひ</rt></ruby>〜14<ruby>日<rt>ひ</rt></ruby>の<ruby>間<rt>かん</rt></ruby>）かつ<ruby>時間内<rt>じかんない</rt></ruby>（<ruby>22時<rt>にじゅうにじ</rt></ruby>は<ruby>18時<rt>じゅうはちじ</rt></ruby>〜<ruby>24時<rt>にじゅうよじ</rt></ruby>の<ruby>間<rt>かん</rt></ruby>）であるため<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>満<rt>み</rt></ruby>たしています。したがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -1395,27 +1479,33 @@
             {
               "id": 1,
               "text_ja": "9,000円",
-              "text_en": "9,000 yen"
+              "text_en": "9,000 yen",
+              "text_ja_ruby": "9,000<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "9,500円",
-              "text_en": "9,500 yen"
+              "text_en": "9,500 yen",
+              "text_ja_ruby": "9,500<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "13,500円",
-              "text_en": "13,500 yen"
+              "text_en": "13,500 yen",
+              "text_ja_ruby": "13,500<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "15,000円",
-              "text_en": "15,000 yen"
+              "text_en": "15,000 yen",
+              "text_ja_ruby": "15,000<ruby>円<rt>えん</rt></ruby>"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "夕方5時（17:00）から夜10時（22:00）までは1日あたり5時間です。この時間帯は「②15:00-24:00 時給1,000円」に該当します。1日あたり 5時間 × 1,000円 ＝ 5,000円 となります。火・木・金の週3日勤務するため、1週間で 5,000円 × 3日 ＝ 15,000円 となります。したがって 4 が正解です。",
-          "explanation_en": "From 5:00 PM (17:00) to 10:00 PM (22:00) is 5 hours per day. This falls under shift (2) 15:00–24:00 where hourly wage is 1,000 yen. Daily pay is 5 hours * 1,000 yen = 5,000 yen. Working 3 days a week (Tue, Thu, Fri), weekly pay is 5,000 yen * 3 = 15,000 yen. Therefore, Option 4 is correct."
+          "explanation_en": "From 5:00 PM (17:00) to 10:00 PM (22:00) is 5 hours per day. This falls under shift (2) 15:00–24:00 where hourly wage is 1,000 yen. Daily pay is 5 hours * 1,000 yen = 5,000 yen. Working 3 days a week (Tue, Thu, Fri), weekly pay is 5,000 yen * 3 = 15,000 yen. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "ホンさんは、<ruby>火<rt>ひ</rt></ruby>・<ruby>木<rt>き</rt></ruby>・<ruby>金曜日<rt>きんようび</rt></ruby>に<ruby>夕方<rt>ゆうがた</rt></ruby><ruby>5時<rt>ごじ</rt></ruby>から<ruby>夜<rt>よる</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>くことになった。1<ruby>週間<rt>しゅうかん</rt></ruby>で<ruby>給料<rt>きゅうりょう</rt></ruby>がいくらもらえるか。",
+          "explanation_ja_ruby": "<ruby>夕方<rt>ゆうがた</rt></ruby><ruby>5時<rt>ごじ</rt></ruby>（17:00）から<ruby>夜<rt>よる</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>（22:00）までは1<ruby>日<rt>ひ</rt></ruby>あたり5<ruby>時間<rt>じかん</rt></ruby>です。この<ruby>時間帯<rt>じかんたい</rt></ruby>は「②15:00-24:00 <ruby>時給<rt>じきゅう</rt></ruby>1,000<ruby>円<rt>えん</rt></ruby>」に<ruby>該当<rt>がいとう</rt></ruby>します。1<ruby>日<rt>ひ</rt></ruby>あたり 5<ruby>時間<rt>じかん</rt></ruby> × 1,000<ruby>円<rt>えん</rt></ruby> ＝ 5,000<ruby>円<rt>えん</rt></ruby> となります。<ruby>火<rt>ひ</rt></ruby>・<ruby>木<rt>き</rt></ruby>・<ruby>金<rt>かね</rt></ruby>の<ruby>週<rt>しゅう</rt></ruby>3<ruby>日勤<rt>にっきん</rt></ruby><ruby>務<rt>つとむ</rt></ruby>するため、1<ruby>週間<rt>しゅうかん</rt></ruby>で 5,000<ruby>円<rt>えん</rt></ruby> × 3<ruby>日<rt>ひ</rt></ruby> ＝ 15,000<ruby>円<rt>えん</rt></ruby> となります。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-53-2",
@@ -1426,27 +1516,33 @@
             {
               "id": 1,
               "text_ja": "経験がある主婦。月曜日と火曜日に9時から12時まで働ける。",
-              "text_en": "An experienced homemaker who can work Mondays and Tuesdays from 9:00 to 12:00."
+              "text_en": "An experienced homemaker who can work Mondays and Tuesdays from 9:00 to 12:00.",
+              "text_ja_ruby": "<ruby>経験<rt>けいけん</rt></ruby>がある<ruby>主婦<rt>しゅふ</rt></ruby>。<ruby>月曜日<rt>げつようび</rt></ruby>と<ruby>火曜日<rt>かようび</rt></ruby>に9<ruby>時<rt>くじ</rt></ruby>から<ruby>12時<rt>じゅうにじ</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>ける。"
             },
             {
               "id": 2,
               "text_ja": "経験がない大学生。水曜日に午後6時から午後11時まで働ける。",
-              "text_en": "A college student without experience who can work Wednesdays from 6:00 PM to 11:00 PM."
+              "text_en": "A college student without experience who can work Wednesdays from 6:00 PM to 11:00 PM.",
+              "text_ja_ruby": "<ruby>経験<rt>けいけん</rt></ruby>がない<ruby>大学生<rt>だいがくせい</rt></ruby>。<ruby>水曜日<rt>すいようび</rt></ruby>に<ruby>午後<rt>ごご</rt></ruby><ruby>6時<rt>ろくじ</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby><ruby>11時<rt>じゅういちじ</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>ける。"
             },
             {
               "id": 3,
               "text_ja": "経験がある高校生。火曜日と木曜日に午後3時から午後9時まで働ける。",
-              "text_en": "An experienced high school student who can work Tuesdays and Thursdays from 3:00 PM to 9:00 PM."
+              "text_en": "An experienced high school student who can work Tuesdays and Thursdays from 3:00 PM to 9:00 PM.",
+              "text_ja_ruby": "<ruby>経験<rt>けいけん</rt></ruby>がある<ruby>高校生<rt>こうこうせい</rt></ruby>。<ruby>火曜日<rt>かようび</rt></ruby>と<ruby>木曜日<rt>もくようび</rt></ruby>に<ruby>午後<rt>ごご</rt></ruby><ruby>3時<rt>さんじ</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby>9<ruby>時<rt>くじ</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>ける。"
             },
             {
               "id": 4,
               "text_ja": "経験がない大学生。水曜日と土曜日に午後5時から夜10時まで働ける。",
-              "text_en": "A college student without experience who can work Wednesdays and Saturdays from 5:00 PM to 10:00 PM."
+              "text_en": "A college student without experience who can work Wednesdays and Saturdays from 5:00 PM to 10:00 PM.",
+              "text_ja_ruby": "<ruby>経験<rt>けいけん</rt></ruby>がない<ruby>大学生<rt>だいがくせい</rt></ruby>。<ruby>水曜日<rt>すいようび</rt></ruby>と<ruby>土曜日<rt>どようび</rt></ruby>に<ruby>午後<rt>ごご</rt></ruby><ruby>5時<rt>ごじ</rt></ruby>から<ruby>夜<rt>よる</rt></ruby>10<ruby>時<rt>じゅうじ</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>ける。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "応募条件は「週2日、1日5時間以上働ける方」「経験のない方もOK」「主婦・学生の方歓迎（高校生は不可）」です。\n1: 9時から12時は3時間で、「1日5時間以上」を満たしません。\n2: 水曜日のみ（週1日）で、「週2日以上」を満たしません。\n3: 高校生は「高校生は不可」により働けません。\n4: 週2日（水・土）、1日5時間（17:00〜22:00）、大学生で未経験OKの条件をすべて満たしています。したがって 4 が正解です。",
-          "explanation_en": "The requirements are: 'at least 2 days a week, at least 5 hours a day', 'no experience necessary', and 'homemakers and students welcome (high school students not permitted)'.\nOption 1: 9:00 to 12:00 is only 3 hours (< 5 hours).\nOption 2: Wednesdays only is just 1 day (< 2 days).\nOption 3: High school students are disqualified.\nOption 4: 2 days a week (Wed/Sat), 5 hours a day (17:00–22:00), student, no experience needed—meets all criteria! Therefore, Option 4 is correct."
+          "explanation_en": "The requirements are: 'at least 2 days a week, at least 5 hours a day', 'no experience necessary', and 'homemakers and students welcome (high school students not permitted)'.\nOption 1: 9:00 to 12:00 is only 3 hours (< 5 hours).\nOption 2: Wednesdays only is just 1 day (< 2 days).\nOption 3: High school students are disqualified.\nOption 4: 2 days a week (Wed/Sat), 5 hours a day (17:00–22:00), student, no experience needed—meets all criteria! Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "このすし<ruby>屋<rt>や</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>ける<ruby>人<rt>ひと</rt></ruby>はだれか。",
+          "explanation_ja_ruby": "<ruby>応募<rt>おうぼ</rt></ruby><ruby>条件<rt>じょうけん</rt></ruby>は「<ruby>週<rt>しゅう</rt></ruby>2<ruby>日<rt>ひ</rt></ruby>、1<ruby>日<rt>ひ</rt></ruby>5<ruby>時間<rt>じかん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby><ruby>働<rt>はたら</rt></ruby>ける<ruby>方<rt>かた</rt></ruby>」「<ruby>経験<rt>けいけん</rt></ruby>のない<ruby>方<rt>かた</rt></ruby>もOK」「<ruby>主婦<rt>しゅふ</rt></ruby>・<ruby>学生<rt>がくせい</rt></ruby>の<ruby>方<rt>かた</rt></ruby><ruby>歓迎<rt>かんげい</rt></ruby>（<ruby>高校生<rt>こうこうせい</rt></ruby>は<ruby>不可<rt>ふか</rt></ruby>）」です。\n1: 9<ruby>時<rt>くじ</rt></ruby>から<ruby>12時<rt>じゅうにじ</rt></ruby>は3<ruby>時間<rt>じかん</rt></ruby>で、「1<ruby>日<rt>ひ</rt></ruby>5<ruby>時間<rt>じかん</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>」を<ruby>満<rt>み</rt></ruby>たしません。\n2: <ruby>水曜日<rt>すいようび</rt></ruby>のみ（<ruby>週<rt>しゅう</rt></ruby>1<ruby>日<rt>ひ</rt></ruby>）で、「<ruby>週<rt>しゅう</rt></ruby>2<ruby>日<rt>ひ</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>」を<ruby>満<rt>み</rt></ruby>たしません。\n3: <ruby>高校生<rt>こうこうせい</rt></ruby>は「<ruby>高校生<rt>こうこうせい</rt></ruby>は<ruby>不可<rt>ふか</rt></ruby>」により<ruby>働<rt>はたら</rt></ruby>けません。\n4: <ruby>週<rt>しゅう</rt></ruby>2<ruby>日<rt>ひ</rt></ruby>（<ruby>水<rt>みず</rt></ruby>・<ruby>土<rt>つち</rt></ruby>）、1<ruby>日<rt>ひ</rt></ruby>5<ruby>時間<rt>じかん</rt></ruby>（17:00〜22:00）、<ruby>大学生<rt>だいがくせい</rt></ruby>で<ruby>未経験<rt>みけいけん</rt></ruby>OKの<ruby>条件<rt>じょうけん</rt></ruby>をすべて<ruby>満<rt>み</rt></ruby>たしています。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -1511,7 +1607,7 @@
           {
             "id": 2,
             "text_ja": "中山田駅 徒歩3分、アパート 築10年、家賃 30,000円、敷金／礼金 1か月／1か月、ワンルーム 19.84m²。",
-            "ruby_html": "<ruby>中山田駅<rt>なかやまだえき</rt></ruby> <ruby>徒歩<rt>とほ</rt></ruby>3<ruby>分<rt>ふん</rt></ruby>、アパート <ruby>築<rt>ちく</rt></ruby>10<ruby>年<rt>ねん</rt></ruby>、<ruby>家賃<rt>やちん</rt></ruby> 30,000<ruby>円<rt>えん</rt></ruby>、<ruby>敷金<rt>しききん</rt></ruby>／<ruby>礼金<rt>れいきん</rt></ruby> 1か<ruby>月<rt>げつ</rt></ruby>／1か<ruby>月<rt>げつ</rt></ruby>、ワンルーム 19.84m²。",
+            "ruby_html": "<ruby>中山田駅<rt>なかやまだえき</rt></ruby> <ruby>徒歩<rt>とほ</rt></ruby><ruby>3分<rt>さんぷん</rt></ruby>、アパート <ruby>築<rt>ちく</rt></ruby>10<ruby>年<rt>ねん</rt></ruby>、<ruby>家賃<rt>やちん</rt></ruby> 30,000<ruby>円<rt>えん</rt></ruby>、<ruby>敷金<rt>しききん</rt></ruby>／<ruby>礼金<rt>れいきん</rt></ruby> 1か<ruby>月<rt>げつ</rt></ruby>／1か<ruby>月<rt>げつ</rt></ruby>、ワンルーム 19.84m²。",
             "text_en": "Nakayamada Station 3 min walk; Apartment 10 years old; Rent 30,000 yen; Security deposit / Key money: 1 month / 1 month; Studio 19.84 m²."
           },
           {
@@ -1626,27 +1722,33 @@
             {
               "id": 1,
               "text_ja": "3万円",
-              "text_en": "30,000 yen"
+              "text_en": "30,000 yen",
+              "text_ja_ruby": "3<ruby>万円<rt>まんえん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "3万5千円",
-              "text_en": "35,000 yen"
+              "text_en": "35,000 yen",
+              "text_ja_ruby": "3<ruby>万<rt>まん</rt></ruby>5<ruby>千円<rt>せんえん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "9万円",
-              "text_en": "90,000 yen"
+              "text_en": "90,000 yen",
+              "text_ja_ruby": "9<ruby>万円<rt>まんえん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "9万5千円",
-              "text_en": "95,000 yen"
+              "text_en": "95,000 yen",
+              "text_ja_ruby": "9<ruby>万<rt>まん</rt></ruby>5<ruby>千円<rt>せんえん</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "広告に「手数料無料！ 契約時には家賃1か月分と敷金・礼金各1か月分だけでOK！」と書かれています。家賃は30,000円、敷金は1か月分（30,000円）、礼金も1か月分（30,000円）です。手数料は無料なので、合計は 30,000 ＋ 30,000 ＋ 30,000 ＝ 90,000円（9万円）となります。したがって 3 が正解です。",
-          "explanation_en": "The listing states: 'No fees! At contract signing, only 1 month of rent and 1 month each of security deposit and key money are needed!' Rent is 30,000 yen, security deposit is 1 month (30,000 yen), and key money is 1 month (30,000 yen). With no brokerage fee, the total is 30,000 + 30,000 + 30,000 = 90,000 yen (9万円). Therefore, Option 3 is correct."
+          "explanation_en": "The listing states: 'No fees! At contract signing, only 1 month of rent and 1 month each of security deposit and key money are needed!' Rent is 30,000 yen, security deposit is 1 month (30,000 yen), and key money is 1 month (30,000 yen). With no brokerage fee, the total is 30,000 + 30,000 + 30,000 = 90,000 yen (9万円). Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "<ruby>契約<rt>けいやく</rt></ruby>するときにいくら<ruby>必要<rt>ひつよう</rt></ruby>か。",
+          "explanation_ja_ruby": "<ruby>広告<rt>こうこく</rt></ruby>に「<ruby>手数料<rt>てすうりょう</rt></ruby><ruby>無料<rt>むりょう</rt></ruby>！ <ruby>契約時<rt>けいやくじ</rt></ruby>には<ruby>家賃<rt>やちん</rt></ruby>1か<ruby>月分<rt>がつぶん</rt></ruby>と<ruby>敷金<rt>しききん</rt></ruby>・<ruby>礼金<rt>れいきん</rt></ruby><ruby>各<rt>かく</rt></ruby>1か<ruby>月分<rt>がつぶん</rt></ruby>だけでOK！」と<ruby>書<rt>か</rt></ruby>かれています。<ruby>家賃<rt>やちん</rt></ruby>は30,000<ruby>円<rt>えん</rt></ruby>、<ruby>敷金<rt>しききん</rt></ruby>は1か<ruby>月分<rt>がつぶん</rt></ruby>（30,000<ruby>円<rt>えん</rt></ruby>）、<ruby>礼金<rt>れいきん</rt></ruby>も1か<ruby>月分<rt>がつぶん</rt></ruby>（30,000<ruby>円<rt>えん</rt></ruby>）です。<ruby>手数料<rt>てすうりょう</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>なので、<ruby>合計<rt>ごうけい</rt></ruby>は 30,000 ＋ 30,000 ＋ 30,000 ＝ 90,000<ruby>円<rt>えん</rt></ruby>（9<ruby>万円<rt>まんえん</rt></ruby>）となります。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-54-2",
@@ -1657,27 +1759,33 @@
             {
               "id": 1,
               "text_ja": "部屋は5階にある。",
-              "text_en": "The room is on the 5th floor."
+              "text_en": "The room is on the 5th floor.",
+              "text_ja_ruby": "<ruby>部屋<rt>へや</rt></ruby>は5<ruby>階<rt>かい</rt></ruby>にある。"
             },
             {
               "id": 2,
               "text_ja": "ベランダは南側にある。",
-              "text_en": "The veranda is on the south side."
+              "text_en": "The veranda is on the south side.",
+              "text_ja_ruby": "ベランダは<ruby>南側<rt>みなみがわ</rt></ruby>にある。"
             },
             {
               "id": 3,
               "text_ja": "犬を飼うことはできない。",
-              "text_en": "You cannot keep a dog."
+              "text_en": "You cannot keep a dog.",
+              "text_ja_ruby": "<ruby>犬<rt>いぬ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>うことはできない。"
             },
             {
               "id": 4,
               "text_ja": "部屋にお風呂がない。",
-              "text_en": "There is no bathtub/bath in the apartment."
+              "text_en": "There is no bathtub/bath in the apartment.",
+              "text_ja_ruby": "<ruby>部屋<rt>へや</rt></ruby>にお<ruby>風呂<rt>ふろ</rt></ruby>がない。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "間取り図の方位マーク（矢印が北）と部屋の南向きという記述から、ベランダは南側に位置しています。したがって 2 が正解です。\n1: 「5階建ての2階」なので、部屋は2階です。\n3: 「ペットは相談可」とあるため、飼うことができないわけではありません。\n4: 間取り図に「浴室」が明記されています。",
-          "explanation_en": "Based on the north arrow in the floor plan and the note '南向き' (south-facing), the veranda is situated on the south side. Therefore, Option 2 is correct.\nOption 1: It is on the 2nd floor of a 5-story building.\nOption 3: 'Pets negotiable' means keeping a pet may be permitted.\nOption 4: The floor plan clearly includes a bathroom (浴室)."
+          "explanation_en": "Based on the north arrow in the floor plan and the note '南向き' (south-facing), the veranda is situated on the south side. Therefore, Option 2 is correct.\nOption 1: It is on the 2nd floor of a 5-story building.\nOption 3: 'Pets negotiable' means keeping a pet may be permitted.\nOption 4: The floor plan clearly includes a bathroom (浴室).",
+          "questionText_ja_ruby": "このアパートの<ruby>説明<rt>せつめい</rt></ruby>として<ruby>本文<rt>ほんぶん</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>と<ruby>合<rt>あ</rt></ruby>っているものはどれか。",
+          "explanation_ja_ruby": "<ruby>間取<rt>まど</rt></ruby>り<ruby>図<rt>ず</rt></ruby>の<ruby>方位<rt>ほうい</rt></ruby>マーク（<ruby>矢印<rt>やじるし</rt></ruby>が<ruby>北<rt>きた</rt></ruby>）と<ruby>部屋<rt>へや</rt></ruby>の<ruby>南向<rt>みなみむ</rt></ruby>きという<ruby>記述<rt>きじゅつ</rt></ruby>から、ベランダは<ruby>南側<rt>みなみがわ</rt></ruby>に<ruby>位置<rt>いち</rt></ruby>しています。したがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。\n1: 「5<ruby>階建<rt>かいだて</rt></ruby>ての2<ruby>階<rt>かい</rt></ruby>」なので、<ruby>部屋<rt>へや</rt></ruby>は2<ruby>階<rt>かい</rt></ruby>です。\n3: 「ペットは<ruby>相談可<rt>そうだんか</rt></ruby>」とあるため、<ruby>飼<rt>か</rt></ruby>うことができないわけではありません。\n4: <ruby>間取<rt>まど</rt></ruby>り<ruby>図<rt>ず</rt></ruby>に「<ruby>浴室<rt>よくしつ</rt></ruby>」が<ruby>明記<rt>めいき</rt></ruby>されています。"
         }
       ],
       "commentary": {
@@ -1778,7 +1886,7 @@
           {
             "id": 8,
             "text_ja": "☆定員8名（先着順） ☆申し込み 3日前までにネットで予約 →info@bunkacafe.com ☆場所 みなと市民会館（みなと駅徒歩4分）",
-            "ruby_html": "☆<ruby>定員<rt>ていいん</rt></ruby>8<ruby>名<rt>めい</rt></ruby>（<ruby>先着順<rt>せんちゃくじゅん</rt></ruby>） ☆<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>み 3<ruby>日前<rt>にちまえ</rt></ruby>までにネットで<ruby>予約<rt>よやく</rt></ruby> →info@bunkacafe.com ☆<ruby>場所<rt>ばしょ</rt></ruby> みなと<ruby>市民会館<rt>しみんかいかん</rt></ruby>（みなと<ruby>駅徒歩<rt>えきとほ</rt></ruby>4<ruby>分<rt>ふん</rt></ruby>）",
+            "ruby_html": "☆<ruby>定員<rt>ていいん</rt></ruby>8<ruby>名<rt>めい</rt></ruby>（<ruby>先着順<rt>せんちゃくじゅん</rt></ruby>） ☆<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>み 3<ruby>日前<rt>にちまえ</rt></ruby>までにネットで<ruby>予約<rt>よやく</rt></ruby> →info@bunkacafe.com ☆<ruby>場所<rt>ばしょ</rt></ruby> みなと<ruby>市民会館<rt>しみんかいかん</rt></ruby>（みなと<ruby>駅徒歩<rt>えきとほ</rt></ruby><ruby>4分<rt>よんぷん</rt></ruby>）",
             "text_en": "Capacity: 8 participants (first-come basis); Registration: Reserve online at least 3 days in advance (info@bunkacafe.com); Venue: Minato Community Center (4 min walk from Minato Station)."
           }
         ]
@@ -1814,27 +1922,33 @@
             {
               "id": 1,
               "text_ja": "500円",
-              "text_en": "500 yen"
+              "text_en": "500 yen",
+              "text_ja_ruby": "500<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "1,000円",
-              "text_en": "1,000 yen"
+              "text_en": "1,000 yen",
+              "text_ja_ruby": "1,000<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "1,500円",
-              "text_en": "1,500 yen"
+              "text_en": "1,500 yen",
+              "text_ja_ruby": "1,500<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "2,000円",
-              "text_en": "2,000 yen"
+              "text_en": "2,000 yen",
+              "text_ja_ruby": "2,000<ruby>円<rt>えん</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "「⑤京都クラス」は「日本文化クラス」に属します。日本文化クラスの通常料金は「1回 1,500円」です。「文化カフェ」の会員は「500円割引」となるため、1,500円 － 500円 ＝ 1,000円 となります。したがって 2 が正解です。",
-          "explanation_en": "'(5) Kyoto Class' belongs to the 'Japanese Culture Classes' category. The regular fee for Japanese culture classes is 1,500 yen per session. Since Culture Cafe members receive a 500-yen discount, the fee is 1,500 - 500 = 1,000 yen. Therefore, Option 2 is correct."
+          "explanation_en": "'(5) Kyoto Class' belongs to the 'Japanese Culture Classes' category. The regular fee for Japanese culture classes is 1,500 yen per session. Since Culture Cafe members receive a 500-yen discount, the fee is 1,500 - 500 = 1,000 yen. Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "<ruby>右<rt>みぎ</rt></ruby>の<ruby>文章<rt>ぶんしょう</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の「⑤<ruby>京都<rt>きょうと</rt></ruby>クラス」のクラスに、「<ruby>文化<rt>ぶんか</rt></ruby>カフェ」の<ruby>会員<rt>かいいん</rt></ruby>が<ruby>参加<rt>さんか</rt></ruby>する<ruby>場合<rt>ばあい</rt></ruby>、1<ruby>回<rt>かい</rt></ruby>の<ruby>料金<rt>りょうきん</rt></ruby>はいくらか。",
+          "explanation_ja_ruby": "「⑤<ruby>京都<rt>きょうと</rt></ruby>クラス」は「<ruby>日本文化<rt>にほんぶんか</rt></ruby>クラス」に<ruby>属<rt>ぞく</rt></ruby>します。<ruby>日本文化<rt>にほんぶんか</rt></ruby>クラスの<ruby>通常<rt>つうじょう</rt></ruby><ruby>料金<rt>りょうきん</rt></ruby>は「1<ruby>回<rt>かい</rt></ruby> 1,500<ruby>円<rt>えん</rt></ruby>」です。「<ruby>文化<rt>ぶんか</rt></ruby>カフェ」の<ruby>会員<rt>かいいん</rt></ruby>は「500<ruby>円<rt>えん</rt></ruby><ruby>割引<rt>わりびき</rt></ruby>」となるため、1,500<ruby>円<rt>えん</rt></ruby> － 500<ruby>円<rt>えん</rt></ruby> ＝ 1,000<ruby>円<rt>えん</rt></ruby> となります。したがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-55-2",
@@ -1845,27 +1959,33 @@
             {
               "id": 1,
               "text_ja": "4月6日までに、電話して予約する。",
-              "text_en": "Call to make a reservation by April 6."
+              "text_en": "Call to make a reservation by April 6.",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>6<ruby>日<rt>ひ</rt></ruby>までに、<ruby>電話<rt>でんわ</rt></ruby>して<ruby>予約<rt>よやく</rt></ruby>する。"
             },
             {
               "id": 2,
               "text_ja": "4月6日までに、ネットで予約する。",
-              "text_en": "Reserve online by April 6."
+              "text_en": "Reserve online by April 6.",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>6<ruby>日<rt>ひ</rt></ruby>までに、ネットで<ruby>予約<rt>よやく</rt></ruby>する。"
             },
             {
               "id": 3,
               "text_ja": "4月8日までに、みなと市民会館に行って予約する。",
-              "text_en": "Go to Minato Community Center to reserve by April 8."
+              "text_en": "Go to Minato Community Center to reserve by April 8.",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>8<ruby>日<rt>ひ</rt></ruby>までに、みなと<ruby>市民会館<rt>しみんかいかん</rt></ruby>に<ruby>行<rt>い</rt></ruby>って<ruby>予約<rt>よやく</rt></ruby>する。"
             },
             {
               "id": 4,
               "text_ja": "4月9日に、教室に行って申し込む。",
-              "text_en": "Go to the classroom on April 9 to apply."
+              "text_en": "Go to the classroom on April 9 to apply.",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>9<ruby>日<rt>ひ</rt></ruby>に、<ruby>教室<rt>きょうしつ</rt></ruby>に<ruby>行<rt>い</rt></ruby>って<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>む。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "申し込み規定には「3日前までにネットで予約（→info@bunkacafe.com）」と明記されています。4月9日の3日前は4月6日です。予約手段は「ネットで予約」なので、選択肢2「4月6日までに、ネットで予約する」が正解です。",
-          "explanation_en": "The registration guidelines state: 'Reserve online at least 3 days in advance (info@bunkacafe.com)'. Three days prior to April 9 is April 6, and the registration channel is via the internet. Therefore, Option 2 ('Reserve online by April 6') is correct."
+          "explanation_en": "The registration guidelines state: 'Reserve online at least 3 days in advance (info@bunkacafe.com)'. Three days prior to April 9 is April 6, and the registration channel is via the internet. Therefore, Option 2 ('Reserve online by April 6') is correct.",
+          "questionText_ja_ruby": "リーさんは4<ruby>月<rt>げつ</rt></ruby>9<ruby>日<rt>ひ</rt></ruby>(<ruby>水<rt>みず</rt></ruby>)のアラビア<ruby>語<rt>ご</rt></ruby>クラスに<ruby>参加<rt>さんか</rt></ruby>したい。<ruby>何<rt>なに</rt></ruby>をすればよいか。",
+          "explanation_ja_ruby": "<ruby>申<rt>もう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>み<ruby>規定<rt>きてい</rt></ruby>には「3<ruby>日前<rt>にちまえ</rt></ruby>までにネットで<ruby>予約<rt>よやく</rt></ruby>（→info@bunkacafe.com）」と<ruby>明記<rt>めいき</rt></ruby>されています。4<ruby>月<rt>げつ</rt></ruby>9<ruby>日<rt>ひ</rt></ruby>の3<ruby>日前<rt>にちまえ</rt></ruby>は4<ruby>月<rt>げつ</rt></ruby>6<ruby>日<rt>ひ</rt></ruby>です。<ruby>予約<rt>よやく</rt></ruby><ruby>手段<rt>しゅだん</rt></ruby>は「ネットで<ruby>予約<rt>よやく</rt></ruby>」なので、<ruby>選択肢<rt>せんたくし</rt></ruby>2「4<ruby>月<rt>げつ</rt></ruby>6<ruby>日<rt>ひ</rt></ruby>までに、ネットで<ruby>予約<rt>よやく</rt></ruby>する」が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -2016,7 +2136,9 @@
           ],
           "correctAnswer": 1,
           "explanation_ja": "条件は「火曜日の19時（夜）」「予算3,000円以内」です。\n①オリーブの風：木曜定休（火曜は営業）、夜18:00〜24:00（19時OK）、夜の予算2,000〜5,000円（3,000円以内で可能）。条件を満たします。\n②山海：火曜日が定休日です。\n③よねやま：夜の予算が3,800〜8,800円で、3,000円を超えています。\n④李安：火曜日が定休日です。\nしたがって、すべての条件を満たす店は ① です。",
-          "explanation_en": "The conditions are: 'Tuesday at 19:00 (dinner)' and 'budget within 3,000 yen'.\n(1) Olive Breeze: Closed Thursday (open Tuesday), evening hours 18:00-24:00 (open at 19:00), dinner budget starts at 2,000 yen (fits <= 3,000 yen). Matches!\n(2) Sankai: Closed on Tuesdays.\n(3) Yoneyama: Dinner starts at 3,800 yen (exceeds 3,000 yen budget).\n(4) Li An: Closed on Tuesdays.\nTherefore, the only suitable restaurant is Option 1."
+          "explanation_en": "The conditions are: 'Tuesday at 19:00 (dinner)' and 'budget within 3,000 yen'.\n(1) Olive Breeze: Closed Thursday (open Tuesday), evening hours 18:00-24:00 (open at 19:00), dinner budget starts at 2,000 yen (fits <= 3,000 yen). Matches!\n(2) Sankai: Closed on Tuesdays.\n(3) Yoneyama: Dinner starts at 3,800 yen (exceeds 3,000 yen budget).\n(4) Li An: Closed on Tuesdays.\nTherefore, the only suitable restaurant is Option 1.",
+          "questionText_ja_ruby": "チョウさんは、<ruby>友達<rt>ともだち</rt></ruby>と<ruby>夕食<rt>ゆうしょく</rt></ruby>が<ruby>食<rt>た</rt></ruby>べられる<ruby>店<rt>みせ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>している。<ruby>予算<rt>よさん</rt></ruby>は3,000<ruby>円<rt>えん</rt></ruby><ruby>以内<rt>いない</rt></ruby>で、<ruby>時間<rt>じかん</rt></ruby>は<ruby>来週<rt>らいしゅう</rt></ruby>の<ruby>火曜日<rt>かようび</rt></ruby>の19<ruby>時<rt>くじ</rt></ruby>からである。どの<ruby>店<rt>みせ</rt></ruby>がよいか。",
+          "explanation_ja_ruby": "<ruby>条件<rt>じょうけん</rt></ruby>は「<ruby>火曜日<rt>かようび</rt></ruby>の19<ruby>時<rt>くじ</rt></ruby>（<ruby>夜<rt>よる</rt></ruby>）」「<ruby>予算<rt>よさん</rt></ruby>3,000<ruby>円<rt>えん</rt></ruby><ruby>以内<rt>いない</rt></ruby>」です。\n①オリーブの<ruby>風<rt>かぜ</rt></ruby>：<ruby>木曜<rt>もくよう</rt></ruby><ruby>定休<rt>ていきゅう</rt></ruby>（<ruby>火曜<rt>かよう</rt></ruby>は<ruby>営業<rt>えいぎょう</rt></ruby>）、<ruby>夜<rt>よる</rt></ruby>18:00〜24:00（19<ruby>時<rt>くじ</rt></ruby>OK）、<ruby>夜<rt>よる</rt></ruby>の<ruby>予算<rt>よさん</rt></ruby>2,000〜5,000<ruby>円<rt>えん</rt></ruby>（3,000<ruby>円<rt>えん</rt></ruby><ruby>以内<rt>いない</rt></ruby>で<ruby>可能<rt>かのう</rt></ruby>）。<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>満<rt>み</rt></ruby>たします。\n②<ruby>山海<rt>さんかい</rt></ruby>：<ruby>火曜日<rt>かようび</rt></ruby>が<ruby>定休日<rt>ていきゅうび</rt></ruby>です。\n③よねやま：<ruby>夜<rt>よる</rt></ruby>の<ruby>予算<rt>よさん</rt></ruby>が3,800〜8,800<ruby>円<rt>えん</rt></ruby>で、3,000<ruby>円<rt>えん</rt></ruby>を<ruby>超<rt>こ</rt></ruby>えています。\n④<ruby>李<rt>すもも</rt></ruby><ruby>安<rt>あん</rt></ruby>：<ruby>火曜日<rt>かようび</rt></ruby>が<ruby>定休日<rt>ていきゅうび</rt></ruby>です。\nしたがって、すべての<ruby>条件<rt>じょうけん</rt></ruby>を<ruby>満<rt>み</rt></ruby>たす<ruby>店<rt>みせ</rt></ruby>は ① です。"
         },
         {
           "questionId": "q-56-2",
@@ -2027,27 +2149,33 @@
             {
               "id": 1,
               "text_ja": "11時",
-              "text_en": "11:00"
+              "text_en": "11:00",
+              "text_ja_ruby": "<ruby>11時<rt>じゅういちじ</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "11時30分",
-              "text_en": "11:30"
+              "text_en": "11:30",
+              "text_ja_ruby": "<ruby>11時<rt>じゅういちじ</rt></ruby><ruby>30分<rt>さんじゅっぷん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "12時",
-              "text_en": "12:00"
+              "text_en": "12:00",
+              "text_ja_ruby": "<ruby>12時<rt>じゅうにじ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "12時30分",
-              "text_en": "12:30"
+              "text_en": "12:30",
+              "text_ja_ruby": "<ruby>12時<rt>じゅうにじ</rt></ruby><ruby>30分<rt>さんじゅっぷん</rt></ruby>"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "木曜日の昼に和食（日本料理）が食べられる店を探します。\n和食を扱うのは ②山海（日本のふるさとの味、さしみ）と ③よねやま（日本料理）です。\n②山海：木曜営業（火曜定休）、昼の営業時間は 11:30〜14:30。\n③よねやま：年中無休、昼の営業時間は 12:00〜14:00。\nできるだけ早い時間は、11時30分です。したがって 2 が正解です。",
-          "explanation_en": "We need Japanese food (和食) for lunch on Thursday at the earliest possible time.\nRestaurants serving Japanese cuisine are:\n(2) Sankai (traditional Japanese flavors, sashimi): Open on Thursday (closed Tuesday); lunch hours begin at 11:30.\n(3) Yoneyama (Japanese cuisine): Open Thursday; lunch hours begin at 12:00.\nThe earliest time is 11:30 (at Sankai). Therefore, Option 2 is correct."
+          "explanation_en": "We need Japanese food (和食) for lunch on Thursday at the earliest possible time.\nRestaurants serving Japanese cuisine are:\n(2) Sankai (traditional Japanese flavors, sashimi): Open on Thursday (closed Tuesday); lunch hours begin at 11:30.\n(3) Yoneyama (Japanese cuisine): Open Thursday; lunch hours begin at 12:00.\nThe earliest time is 11:30 (at Sankai). Therefore, Option 2 is correct.",
+          "questionText_ja_ruby": "サムさんは、<ruby>木曜日<rt>もくようび</rt></ruby>の<ruby>昼<rt>ひる</rt></ruby>のできるだけ<ruby>早<rt>はや</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>に<ruby>友達<rt>ともだち</rt></ruby>と<ruby>和食<rt>わしょく</rt></ruby>が<ruby>食<rt>た</rt></ruby>べたい。<ruby>何時<rt>なんじ</rt></ruby>から<ruby>食<rt>た</rt></ruby>べることができるか。",
+          "explanation_ja_ruby": "<ruby>木曜日<rt>もくようび</rt></ruby>の<ruby>昼<rt>ひる</rt></ruby>に<ruby>和食<rt>わしょく</rt></ruby>（<ruby>日本料理<rt>にほんりょうり</rt></ruby>）が<ruby>食<rt>た</rt></ruby>べられる<ruby>店<rt>みせ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>します。\n<ruby>和食<rt>わしょく</rt></ruby>を<ruby>扱<rt>あつか</rt></ruby>うのは ②<ruby>山海<rt>さんかい</rt></ruby>（<ruby>日本<rt>にっぽん</rt></ruby>のふるさとの<ruby>味<rt>あじ</rt></ruby>、さしみ）と ③よねやま（<ruby>日本料理<rt>にほんりょうり</rt></ruby>）です。\n②<ruby>山海<rt>さんかい</rt></ruby>：<ruby>木曜<rt>もくよう</rt></ruby><ruby>営業<rt>えいぎょう</rt></ruby>（<ruby>火曜<rt>かよう</rt></ruby><ruby>定休<rt>ていきゅう</rt></ruby>）、<ruby>昼<rt>ひる</rt></ruby>の<ruby>営業時間<rt>えいぎょうじかん</rt></ruby>は 11:30〜14:30。\n③よねやま：<ruby>年中無休<rt>ねんじゅうむきゅう</rt></ruby>、<ruby>昼<rt>ひる</rt></ruby>の<ruby>営業時間<rt>えいぎょうじかん</rt></ruby>は 12:00〜14:00。\nできるだけ<ruby>早<rt>はや</rt></ruby>い<ruby>時間<rt>じかん</rt></ruby>は、<ruby>11時<rt>じゅういちじ</rt></ruby><ruby>30分<rt>さんじゅっぷん</rt></ruby>です。したがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -2232,27 +2360,33 @@
             {
               "id": 1,
               "text_ja": "550円＋100円＝650円",
-              "text_en": "550 yen + 100 yen = 650 yen"
+              "text_en": "550 yen + 100 yen = 650 yen",
+              "text_ja_ruby": "550<ruby>円<rt>えん</rt></ruby>＋100<ruby>円<rt>えん</rt></ruby>＝650<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "550円＋150円＝700円",
-              "text_en": "550 yen + 150 yen = 700 yen"
+              "text_en": "550 yen + 150 yen = 700 yen",
+              "text_ja_ruby": "550<ruby>円<rt>えん</rt></ruby>＋150<ruby>円<rt>えん</rt></ruby>＝700<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "550円＋100円＋200円＝850円",
-              "text_en": "550 yen + 100 yen + 200 yen = 850 yen"
+              "text_en": "550 yen + 100 yen + 200 yen = 850 yen",
+              "text_ja_ruby": "550<ruby>円<rt>えん</rt></ruby>＋100<ruby>円<rt>えん</rt></ruby>＋200<ruby>円<rt>えん</rt></ruby>＝850<ruby>円<rt>えん</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "550円＋150円＋200円＝900円",
-              "text_en": "550 yen + 150 yen + 200 yen = 900 yen"
+              "text_en": "550 yen + 150 yen + 200 yen = 900 yen",
+              "text_ja_ruby": "550<ruby>円<rt>えん</rt></ruby>＋150<ruby>円<rt>えん</rt></ruby>＋200<ruby>円<rt>えん</rt></ruby>＝900<ruby>円<rt>えん</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "カレーライスの価格は550円です。食事と一緒に飲み物を注文すると100円になるため、コーラは100円です。料理の合計は 550円 ＋ 100円 ＝ 650円 となります。これは「1,000円未満のご注文」に該当するため、配達料として別途200円がかかります。合計は 550円 ＋ 100円 ＋ 200円 ＝ 850円 です。したがって 3 が正解です。",
-          "explanation_en": "Curry rice costs 550 yen. When ordered together with a meal, drinks cost 100 yen, so cola is 100 yen. Food total is 550 + 100 = 650 yen. Because 650 yen is under 1,000 yen ('1,000円未満'), a 200-yen delivery fee is added. Total payment is 550 + 100 + 200 = 850 yen. Therefore, Option 3 is correct."
+          "explanation_en": "Curry rice costs 550 yen. When ordered together with a meal, drinks cost 100 yen, so cola is 100 yen. Food total is 550 + 100 = 650 yen. Because 650 yen is under 1,000 yen ('1,000円未満'), a 200-yen delivery fee is added. Total payment is 550 + 100 + 200 = 850 yen. Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "シンさんはカレーライスとコーラを<ruby>宅配<rt>たくはい</rt></ruby>で<ruby>注文<rt>ちゅうもん</rt></ruby>した。<ruby>全部<rt>ぜんぶ</rt></ruby>でいくら<ruby>払<rt>はら</rt></ruby>わなければならないか。",
+          "explanation_ja_ruby": "カレーライスの<ruby>価格<rt>かかく</rt></ruby>は550<ruby>円<rt>えん</rt></ruby>です。<ruby>食事<rt>しょくじ</rt></ruby>と<ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>を<ruby>注文<rt>ちゅうもん</rt></ruby>すると100<ruby>円<rt>えん</rt></ruby>になるため、コーラは100<ruby>円<rt>えん</rt></ruby>です。<ruby>料理<rt>りょうり</rt></ruby>の<ruby>合計<rt>ごうけい</rt></ruby>は 550<ruby>円<rt>えん</rt></ruby> ＋ 100<ruby>円<rt>えん</rt></ruby> ＝ 650<ruby>円<rt>えん</rt></ruby> となります。これは「1,000<ruby>円<rt>えん</rt></ruby><ruby>未満<rt>みまん</rt></ruby>のご<ruby>注文<rt>ちゅうもん</rt></ruby>」に<ruby>該当<rt>がいとう</rt></ruby>するため、<ruby>配達<rt>はいたつ</rt></ruby><ruby>料<rt>りょう</rt></ruby>として<ruby>別途<rt>べっと</rt></ruby>200<ruby>円<rt>えん</rt></ruby>がかかります。<ruby>合計<rt>ごうけい</rt></ruby>は 550<ruby>円<rt>えん</rt></ruby> ＋ 100<ruby>円<rt>えん</rt></ruby> ＋ 200<ruby>円<rt>えん</rt></ruby> ＝ 850<ruby>円<rt>えん</rt></ruby> です。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-57-2",
@@ -2263,27 +2397,33 @@
             {
               "id": 1,
               "text_ja": "4月11日(金)の午後9時ごろ",
-              "text_en": "Around 9:00 PM on Friday, April 11"
+              "text_en": "Around 9:00 PM on Friday, April 11",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>11<ruby>日<rt>ひ</rt></ruby>(<ruby>金<rt>かね</rt></ruby>)の<ruby>午後<rt>ごご</rt></ruby>9<ruby>時<rt>くじ</rt></ruby>ごろ"
             },
             {
               "id": 2,
               "text_ja": "4月12日(土)の午後6時ごろ",
-              "text_en": "Around 6:00 PM on Saturday, April 12"
+              "text_en": "Around 6:00 PM on Saturday, April 12",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby>(<ruby>土<rt>つち</rt></ruby>)の<ruby>午後<rt>ごご</rt></ruby><ruby>6時<rt>ろくじ</rt></ruby>ごろ"
             },
             {
               "id": 3,
               "text_ja": "4月12日(土)の午後8時ごろ",
-              "text_en": "Around 8:00 PM on Saturday, April 12"
+              "text_en": "Around 8:00 PM on Saturday, April 12",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby>(<ruby>土<rt>つち</rt></ruby>)の<ruby>午後<rt>ごご</rt></ruby><ruby>8時<rt>はちじ</rt></ruby>ごろ"
             },
             {
               "id": 4,
               "text_ja": "4月13日(日)の午前9時ごろ",
-              "text_en": "Around 9:00 AM on Sunday, April 13"
+              "text_en": "Around 9:00 AM on Sunday, April 13",
+              "text_ja_ruby": "4<ruby>月<rt>げつ</rt></ruby>13<ruby>日<rt>ひ</rt></ruby>(<ruby>日<rt>ひ</rt></ruby>)の<ruby>午前<rt>ごぜん</rt></ruby>9<ruby>時<rt>くじ</rt></ruby>ごろ"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "20個の注文は「10個以上の注文は前の日までにご注文ください」に該当するため、4月13日の前日である4月12日(土)までに注文する必要があります。また、受付時間は平日は20:30までですが、「土日祝は19:30で終了」となっています。\n1: 金曜の午後9時は平日の受付時間（20:30まで）を過ぎています。\n2: 4月12日(土)の午後6時は、前日かつ土曜受付時間（19:30まで）内なので注文可能です。\n3: 4月12日(土)の午後8時は、土曜の受付時間（19:30まで）を過ぎています。\n4: 当日の注文は10個以上ルールに違反します。\nしたがって 2 が正解です。",
-          "explanation_en": "An order of 20 bentos triggers the rule 'Orders of 10 items or more must be placed by the day before', requiring order placement by Saturday, April 12. In addition, reception hours on weekends and holidays end at 19:30 (土日祝は19:30で終了).\nOption 1: Friday 21:00 is past the weekday 20:30 cutoff.\nOption 2: Saturday 18:00 is before the Saturday 19:30 cutoff on the day before. Valid!\nOption 3: Saturday 20:00 is past the Saturday 19:30 cutoff.\nOption 4: Sunday same-day ordering violates the day-before rule for >=10 items.\nTherefore, Option 2 is correct."
+          "explanation_en": "An order of 20 bentos triggers the rule 'Orders of 10 items or more must be placed by the day before', requiring order placement by Saturday, April 12. In addition, reception hours on weekends and holidays end at 19:30 (土日祝は19:30で終了).\nOption 1: Friday 21:00 is past the weekday 20:30 cutoff.\nOption 2: Saturday 18:00 is before the Saturday 19:30 cutoff on the day before. Valid!\nOption 3: Saturday 20:00 is past the Saturday 19:30 cutoff.\nOption 4: Sunday same-day ordering violates the day-before rule for >=10 items.\nTherefore, Option 2 is correct.",
+          "questionText_ja_ruby": "ホルへさんは4<ruby>月<rt>げつ</rt></ruby>13<ruby>日<rt>ひ</rt></ruby>(<ruby>日<rt>ひ</rt></ruby>)の<ruby>昼<rt>ひる</rt></ruby>12<ruby>時半<rt>じはん</rt></ruby>にお<ruby>弁当<rt>べんとう</rt></ruby>が20<ruby>個<rt>こ</rt></ruby><ruby>必要<rt>ひつよう</rt></ruby>である。いつ<ruby>注文<rt>ちゅうもん</rt></ruby>すればよいか。",
+          "explanation_ja_ruby": "20<ruby>個<rt>こ</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>は「10<ruby>個<rt>こ</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>は<ruby>前<rt>まえ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>までにご<ruby>注文<rt>ちゅうもん</rt></ruby>ください」に<ruby>該当<rt>がいとう</rt></ruby>するため、4<ruby>月<rt>げつ</rt></ruby>13<ruby>日<rt>ひ</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>である4<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby>(<ruby>土<rt>つち</rt></ruby>)までに<ruby>注文<rt>ちゅうもん</rt></ruby>する<ruby>必要<rt>ひつよう</rt></ruby>があります。また、<ruby>受付時間<rt>うけつけじかん</rt></ruby>は<ruby>平日<rt>へいじつ</rt></ruby>は20:30までですが、「<ruby>土日<rt>どにち</rt></ruby><ruby>祝<rt>しゅく</rt></ruby>は19:30で<ruby>終了<rt>しゅうりょう</rt></ruby>」となっています。\n1: <ruby>金曜<rt>きんよう</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>9<ruby>時<rt>くじ</rt></ruby>は<ruby>平日<rt>へいじつ</rt></ruby>の<ruby>受付時間<rt>うけつけじかん</rt></ruby>（20:30まで）を<ruby>過<rt>す</rt></ruby>ぎています。\n2: 4<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby>(<ruby>土<rt>つち</rt></ruby>)の<ruby>午後<rt>ごご</rt></ruby><ruby>6時<rt>ろくじ</rt></ruby>は、<ruby>前日<rt>ぜんじつ</rt></ruby>かつ<ruby>土曜<rt>どよう</rt></ruby><ruby>受付時間<rt>うけつけじかん</rt></ruby>（19:30まで）<ruby>内<rt>ない</rt></ruby>なので<ruby>注文可能<rt>ちゅうもんかのう</rt></ruby>です。\n3: 4<ruby>月<rt>げつ</rt></ruby>12<ruby>日<rt>ひ</rt></ruby>(<ruby>土<rt>つち</rt></ruby>)の<ruby>午後<rt>ごご</rt></ruby><ruby>8時<rt>はちじ</rt></ruby>は、<ruby>土曜<rt>どよう</rt></ruby>の<ruby>受付時間<rt>うけつけじかん</rt></ruby>（19:30まで）を<ruby>過<rt>す</rt></ruby>ぎています。\n4: <ruby>当日<rt>とうじつ</rt></ruby>の<ruby>注文<rt>ちゅうもん</rt></ruby>は10<ruby>個<rt>こ</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>ルールに<ruby>違反<rt>いはん</rt></ruby>します。\nしたがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -2469,27 +2609,33 @@
             {
               "id": 1,
               "text_ja": "NATに電話をする。",
-              "text_en": "Call NAT."
+              "text_en": "Call NAT.",
+              "text_ja_ruby": "NATに<ruby>電話<rt>でんわ</rt></ruby>をする。"
             },
             {
               "id": 2,
               "text_ja": "郵便局に行って、口座を作る。",
-              "text_en": "Go to the post office and open an account."
+              "text_en": "Go to the post office and open an account.",
+              "text_ja_ruby": "<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>に<ruby>行<rt>い</rt></ruby>って、<ruby>口座<rt>こうざ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>る。"
             },
             {
               "id": 3,
               "text_ja": "コンビニに行って、クレジットカードで払う。",
-              "text_en": "Go to the convenience store and pay by credit card."
+              "text_en": "Go to the convenience store and pay by credit card.",
+              "text_ja_ruby": "コンビニに<ruby>行<rt>い</rt></ruby>って、クレジットカードで<ruby>払<rt>はら</rt></ruby>う。"
             },
             {
               "id": 4,
               "text_ja": "銀行かコンビニに行って、現金で払う。",
-              "text_en": "Go to a bank or convenience store and pay with cash."
+              "text_en": "Go to a bank or convenience store and pay with cash.",
+              "text_ja_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>かコンビニに<ruby>行<rt>い</rt></ruby>って、<ruby>現金<rt>げんきん</rt></ruby>で<ruby>払<rt>はら</rt></ruby>う。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "カンさんはクレジットカードを持っておらず、銀行口座の振替手続きもまだ済んでいません。そのため選べる方法は「現金でのお支払い」のみです。現金で支払う場合は「『振込用紙』を切り取り、お近くのコンビニまたは銀行・郵便局でお支払いください」とあるため、銀行かコンビニに行って現金で支払う必要があります。したがって 4 が正解です。",
-          "explanation_en": "Kang has no credit card, and has not completed the automatic account transfer registration. Thus, his only available option is cash payment. The cash payment instructions state: 'detach the payment slip and pay at a nearby convenience store, bank, or post office.' Therefore, Option 4 ('Go to a bank or convenience store and pay with cash') is correct."
+          "explanation_en": "Kang has no credit card, and has not completed the automatic account transfer registration. Thus, his only available option is cash payment. The cash payment instructions state: 'detach the payment slip and pay at a nearby convenience store, bank, or post office.' Therefore, Option 4 ('Go to a bank or convenience store and pay with cash') is correct.",
+          "questionText_ja_ruby": "カンさんは<ruby>何足<rt>なんそく</rt></ruby>をしなければならないか。（カンさんは<ruby>銀行<rt>ぎんこう</rt></ruby>の<ruby>口座<rt>こうざ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったが、<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>の<ruby>口座<rt>こうざ</rt></ruby>はない。まだクレジットカードも<ruby>持<rt>も</rt></ruby>っていない。）",
+          "explanation_ja_ruby": "カンさんはクレジットカードを<ruby>持<rt>も</rt></ruby>っておらず、<ruby>銀行口座<rt>ぎんこうこうざ</rt></ruby>の<ruby>振替<rt>ふりかえ</rt></ruby><ruby>手続<rt>てつづ</rt></ruby>きもまだ<ruby>済<rt>す</rt></ruby>んでいません。そのため<ruby>選<rt>えら</rt></ruby>べる<ruby>方法<rt>ほうほう</rt></ruby>は「<ruby>現金<rt>げんきん</rt></ruby>でのお<ruby>支払<rt>しはら</rt></ruby>い」のみです。<ruby>現金<rt>げんきん</rt></ruby>で<ruby>支払<rt>しはら</rt></ruby>う<ruby>場合<rt>ばあい</rt></ruby>は「『<ruby>振込用紙<rt>ふりこみようし</rt></ruby>』を<ruby>切<rt>き</rt></ruby>り<ruby>取<rt>と</rt></ruby>り、お<ruby>近<rt>ちか</rt></ruby>くのコンビニまたは<ruby>銀行<rt>ぎんこう</rt></ruby>・<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>でお<ruby>支払<rt>しはら</rt></ruby>いください」とあるため、<ruby>銀行<rt>ぎんこう</rt></ruby>かコンビニに<ruby>行<rt>い</rt></ruby>って<ruby>現金<rt>げんきん</rt></ruby>で<ruby>支払<rt>しはら</rt></ruby>う<ruby>必要<rt>ひつよう</rt></ruby>があります。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-58-2",
@@ -2500,27 +2646,33 @@
             {
               "id": 1,
               "text_ja": "5月31日",
-              "text_en": "May 31"
+              "text_en": "May 31",
+              "text_ja_ruby": "5<ruby>月<rt>げつ</rt></ruby>31<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "6月3日",
-              "text_en": "June 3"
+              "text_en": "June 3",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>3<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "6月26日",
-              "text_en": "June 26"
+              "text_en": "June 26",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>26<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "6月30日",
-              "text_en": "June 30"
+              "text_en": "June 30",
+              "text_ja_ruby": "6<ruby>月<rt>げつ</rt></ruby>30<ruby>日<rt>ひ</rt></ruby>"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "請求書の「お支払い期限」の欄に「2014年6月30日(月)」と明記されています。したがって 4 が正解です。（5月31日は利用期間の末日、6月3日は発行日、毎月26日は口座振替日です。）",
-          "explanation_en": "The 'Payment due date' (お支払い期限) column explicitly specifies 'June 30, 2014 (Mon)'. Therefore, Option 4 is correct. (May 31 is billing period end, June 3 is issue date, and 26th is monthly auto-debit date.)"
+          "explanation_en": "The 'Payment due date' (お支払い期限) column explicitly specifies 'June 30, 2014 (Mon)'. Therefore, Option 4 is correct. (May 31 is billing period end, June 3 is issue date, and 26th is monthly auto-debit date.)",
+          "questionText_ja_ruby": "<ruby>支払<rt>しはら</rt></ruby>いはいつまでにしなければならないか。",
+          "explanation_ja_ruby": "<ruby>請求書<rt>せいきゅうしょ</rt></ruby>の「お<ruby>支払<rt>しはら</rt></ruby>い<ruby>期限<rt>きげん</rt></ruby>」の<ruby>欄<rt>らん</rt></ruby>に「2014<ruby>年<rt>ねん</rt></ruby>6<ruby>月<rt>げつ</rt></ruby>30<ruby>日<rt>ひ</rt></ruby>(<ruby>月<rt>げつ</rt></ruby>)」と<ruby>明記<rt>めいき</rt></ruby>されています。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。（5<ruby>月<rt>げつ</rt></ruby>31<ruby>日<rt>ひ</rt></ruby>は<ruby>利用期間<rt>りようきかん</rt></ruby>の<ruby>末日<rt>まつじつ</rt></ruby>、6<ruby>月<rt>げつ</rt></ruby>3<ruby>日<rt>ひ</rt></ruby>は<ruby>発行日<rt>はっこうび</rt></ruby>、<ruby>毎月<rt>まいつき</rt></ruby>26<ruby>日<rt>ひ</rt></ruby>は<ruby>口座振替<rt>こうざふりかえ</rt></ruby><ruby>日<rt>ひ</rt></ruby>です。）"
         }
       ],
       "commentary": {
@@ -2688,27 +2840,33 @@
             {
               "id": 1,
               "text_ja": "2014年7月31日",
-              "text_en": "July 31, 2014"
+              "text_en": "July 31, 2014",
+              "text_ja_ruby": "2014<ruby>年<rt>ねん</rt></ruby>7<ruby>月<rt>げつ</rt></ruby>31<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "2014年10月30日",
-              "text_en": "October 30, 2014"
+              "text_en": "October 30, 2014",
+              "text_ja_ruby": "2014<ruby>年<rt>ねん</rt></ruby>10<ruby>月<rt>げつ</rt></ruby>30<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "2015年1月31日",
-              "text_en": "January 31, 2015"
+              "text_en": "January 31, 2015",
+              "text_ja_ruby": "2015<ruby>年<rt>ねん</rt></ruby>1<ruby>月<rt>げつ</rt></ruby>31<ruby>日<rt>ひ</rt></ruby>"
             },
             {
               "id": 4,
               "text_ja": "2015年5月31日",
-              "text_en": "May 31, 2015"
+              "text_en": "May 31, 2015",
+              "text_ja_ruby": "2015<ruby>年<rt>ねん</rt></ruby>5<ruby>月<rt>げつ</rt></ruby>31<ruby>日<rt>ひ</rt></ruby>"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "メイさんが購入したのは「テニスラケット」です。購入日は「2014年5月1日」です。テニスラケットの保証期間は「お買い上げの日から9か月」と書かれています。2014年5月1日から9か月後は、2015年1月31日となります。したがって 3 が正解です。",
-          "explanation_en": "May purchased a tennis racket (テニスラケット) on May 1, 2014. The warranty duration for tennis rackets is '9 months from date of purchase'. Adding 9 months to May 1, 2014 gives January 31, 2015. Therefore, Option 3 is correct."
+          "explanation_en": "May purchased a tennis racket (テニスラケット) on May 1, 2014. The warranty duration for tennis rackets is '9 months from date of purchase'. Adding 9 months to May 1, 2014 gives January 31, 2015. Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "メイさんのラケットの<ruby>保証期間<rt>ほしょうきかん</rt></ruby>はいつまでか。",
+          "explanation_ja_ruby": "メイさんが<ruby>購入<rt>こうにゅう</rt></ruby>したのは「テニスラケット」です。<ruby>購入日<rt>こうにゅうび</rt></ruby>は「2014<ruby>年<rt>ねん</rt></ruby>5<ruby>月<rt>げつ</rt></ruby>1<ruby>日<rt>ひ</rt></ruby>」です。テニスラケットの<ruby>保証期間<rt>ほしょうきかん</rt></ruby>は「お<ruby>買<rt>か</rt></ruby>い<ruby>上<rt>あ</rt></ruby>げの<ruby>日<rt>ひ</rt></ruby>から9か<ruby>月<rt>げつ</rt></ruby>」と<ruby>書<rt>か</rt></ruby>かれています。2014<ruby>年<rt>ねん</rt></ruby>5<ruby>月<rt>げつ</rt></ruby>1<ruby>日<rt>ひ</rt></ruby>から9か<ruby>月後<rt>げつご</rt></ruby>は、2015<ruby>年<rt>ねん</rt></ruby>1<ruby>月<rt>げつ</rt></ruby>31<ruby>日<rt>ひ</rt></ruby>となります。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-59-2",
@@ -2719,27 +2877,33 @@
             {
               "id": 1,
               "text_ja": "シャワールームに2日間置いてしまった。",
-              "text_en": "Left it in the shower room for 2 days."
+              "text_en": "Left it in the shower room for 2 days.",
+              "text_ja_ruby": "シャワールームに2<ruby>日間<rt>にちかん</rt></ruby><ruby>置<rt>お</rt></ruby>いてしまった。"
             },
             {
               "id": 2,
               "text_ja": "テニスコートに忘れたら、その後大雨が降って、ぬれてしまった。",
-              "text_en": "Forgot it on the tennis court, and it got soaked in heavy rain."
+              "text_en": "Forgot it on the tennis court, and it got soaked in heavy rain.",
+              "text_ja_ruby": "テニスコートに<ruby>忘<rt>わす</rt></ruby>れたら、その<ruby>後<rt>あと</rt></ruby><ruby>大雨<rt>おおあめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>って、ぬれてしまった。"
             },
             {
               "id": 3,
               "text_ja": "友達がラケットの上に座ってしまった。",
-              "text_en": "A friend sat on top of the racket."
+              "text_en": "A friend sat on top of the racket.",
+              "text_ja_ruby": "<ruby>友達<rt>ともだち</rt></ruby>がラケットの<ruby>上<rt>うえ</rt></ruby>に<ruby>座<rt>すわ</rt></ruby>ってしまった。"
             },
             {
               "id": 4,
               "text_ja": "暑い中8時間ボールを打ち続けた。",
-              "text_en": "Kept hitting tennis balls for 8 hours in hot weather."
+              "text_en": "Kept hitting tennis balls for 8 hours in hot weather.",
+              "text_ja_ruby": "<ruby>暑<rt>あつ</rt></ruby>い<ruby>中<rt>なか</rt></ruby>8<ruby>時間<rt>じかん</rt></ruby>ボールを<ruby>打<rt>う</rt></ruby>ち<ruby>続<rt>つづ</rt></ruby>けた。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "第2項に保証対象外となる事例が挙げられています。\n1: 「湿気の多いところに長時間置く」に該当するため対象外。\n2: 雨による水濡れ放置は対象外。\n3: 「ラケットの上に重い物をのせる」に該当するため対象外。\n4: ボールを打つことはラケットの本来の使用目的（「普通の使用状態」）であり、長時間打ったとしても目的外使用には該当しません。したがって保証の対象となります。正解は 4 です。",
-          "explanation_en": "Clause 2 lists exclusion cases.\nOption 1: Covered under 'leaving in high humidity for long periods' (not covered).\nOption 2: Negligent exposure to flood/rain (not covered).\nOption 3: Equivalent to 'placing heavy weight on racket' (not covered).\nOption 4: Hitting balls is the normal intended usage ('普通の使用状態') of a tennis racket, and is not prohibited by the exclusion rules. Therefore, Option 4 is covered."
+          "explanation_en": "Clause 2 lists exclusion cases.\nOption 1: Covered under 'leaving in high humidity for long periods' (not covered).\nOption 2: Negligent exposure to flood/rain (not covered).\nOption 3: Equivalent to 'placing heavy weight on racket' (not covered).\nOption 4: Hitting balls is the normal intended usage ('普通の使用状態') of a tennis racket, and is not prohibited by the exclusion rules. Therefore, Option 4 is covered.",
+          "questionText_ja_ruby": "<ruby>保証期間<rt>ほしょうきかん</rt></ruby><ruby>中<rt>なか</rt></ruby>に<ruby>以下<rt>いか</rt></ruby>のことをしたら、ラケットがこわれた。<ruby>保証<rt>ほしょう</rt></ruby>してもらえるのはどれか。",
+          "explanation_ja_ruby": "<ruby>第<rt>だい</rt></ruby>2<ruby>項<rt>こう</rt></ruby>に<ruby>保証<rt>ほしょう</rt></ruby><ruby>対象外<rt>たいしょうがい</rt></ruby>となる<ruby>事例<rt>じれい</rt></ruby>が<ruby>挙<rt>あ</rt></ruby>げられています。\n1: 「<ruby>湿気<rt>しっけ</rt></ruby>の<ruby>多<rt>おお</rt></ruby>いところに<ruby>長時間<rt>ちょうじかん</rt></ruby><ruby>置<rt>お</rt></ruby>く」に<ruby>該当<rt>がいとう</rt></ruby>するため<ruby>対象外<rt>たいしょうがい</rt></ruby>。\n2: <ruby>雨<rt>あめ</rt></ruby>による<ruby>水<rt>みず</rt></ruby><ruby>濡<rt>ぬ</rt></ruby>れ<ruby>放置<rt>ほうち</rt></ruby>は<ruby>対象外<rt>たいしょうがい</rt></ruby>。\n3: 「ラケットの<ruby>上<rt>うえ</rt></ruby>に<ruby>重<rt>おも</rt></ruby>い<ruby>物<rt>もの</rt></ruby>をのせる」に<ruby>該当<rt>がいとう</rt></ruby>するため<ruby>対象外<rt>たいしょうがい</rt></ruby>。\n4: ボールを<ruby>打<rt>う</rt></ruby>つことはラケットの<ruby>本来<rt>ほんらい</rt></ruby>の<ruby>使用目的<rt>しようもくてき</rt></ruby>（「<ruby>普通<rt>ふつう</rt></ruby>の<ruby>使用<rt>しよう</rt></ruby><ruby>状態<rt>じょうたい</rt></ruby>」）であり、<ruby>長時間<rt>ちょうじかん</rt></ruby><ruby>打<rt>う</rt></ruby>ったとしても<ruby>目的外使用<rt>もくてきがいしよう</rt></ruby>には<ruby>該当<rt>がいとう</rt></ruby>しません。したがって<ruby>保証<rt>ほしょう</rt></ruby>の<ruby>対象<rt>たいしょう</rt></ruby>となります。<ruby>正解<rt>せいかい</rt></ruby>は 4 です。"
         }
       ],
       "commentary": {
@@ -2902,7 +3066,9 @@
           ],
           "correctAnswer": 4,
           "explanation_ja": "「動物が出てくる映画」は映画紹介から「猫と一郎」（猫と会話ができる）であることが分かります。グエンさんは午後に見るため、午後開始の回を探します。「猫と一郎」の上映回は 11:45〜13:30（開始は午前）と 15:15〜17:00（午後開始）です。したがって午後に見られる映画の開始時刻は「15:15」です。正解は 4 です。",
-          "explanation_en": "From the movie synopsis, the film featuring animals is 'Cat and Ichiro' (猫と一郎). Nguyen is free in the afternoon (午後). Showings for 'Cat and Ichiro' are 11:45-13:30 (starts in morning) and 15:15-17:00 (starts in afternoon). Thus, the afternoon showing begins at 15:15. Therefore, Option 4 is correct."
+          "explanation_en": "From the movie synopsis, the film featuring animals is 'Cat and Ichiro' (猫と一郎). Nguyen is free in the afternoon (午後). Showings for 'Cat and Ichiro' are 11:45-13:30 (starts in morning) and 15:15-17:00 (starts in afternoon). Thus, the afternoon showing begins at 15:15. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "グエンさんは<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくる<ruby>映画<rt>えいが</rt></ruby>が<ruby>見<rt>み</rt></ruby>たい。<ruby>午前中<rt>ごぜんちゅう</rt></ruby>はアルバイトがあるが、<ruby>午後<rt>ごご</rt></ruby>は<ruby>時間<rt>じかん</rt></ruby>がある。<ruby>何時<rt>なんじ</rt></ruby>から<ruby>始<rt>はじ</rt></ruby>まる<ruby>映画<rt>えいが</rt></ruby>が<ruby>見<rt>み</rt></ruby>られるか。",
+          "explanation_ja_ruby": "「<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>出<rt>で</rt></ruby>てくる<ruby>映画<rt>えいが</rt></ruby>」は<ruby>映画<rt>えいが</rt></ruby><ruby>紹介<rt>しょうかい</rt></ruby>から「<ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>」（<ruby>猫<rt>ねこ</rt></ruby>と<ruby>会話<rt>かいわ</rt></ruby>ができる）であることが<ruby>分<rt>わ</rt></ruby>かります。グエンさんは<ruby>午後<rt>ごご</rt></ruby>に<ruby>見<rt>み</rt></ruby>るため、<ruby>午後<rt>ごご</rt></ruby><ruby>開始<rt>かいし</rt></ruby>の<ruby>回<rt>かい</rt></ruby>を<ruby>探<rt>さが</rt></ruby>します。「<ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>」の<ruby>上映<rt>じょうえい</rt></ruby><ruby>回<rt>かい</rt></ruby>は 11:45〜13:30（<ruby>開始<rt>かいし</rt></ruby>は<ruby>午前<rt>ごぜん</rt></ruby>）と 15:15〜17:00（<ruby>午後<rt>ごご</rt></ruby><ruby>開始<rt>かいし</rt></ruby>）です。したがって<ruby>午後<rt>ごご</rt></ruby>に<ruby>見<rt>み</rt></ruby>られる<ruby>映画<rt>えいが</rt></ruby>の<ruby>開始時刻<rt>かいしじこく</rt></ruby>は「15:15」です。<ruby>正解<rt>せいかい</rt></ruby>は 4 です。"
         },
         {
           "questionId": "q-60-2",
@@ -2913,17 +3079,20 @@
             {
               "id": 1,
               "text_ja": "大きな食卓",
-              "text_en": "A Big Dining Table"
+              "text_en": "A Big Dining Table",
+              "text_ja_ruby": "<ruby>大<rt>おお</rt></ruby>きな<ruby>食卓<rt>しょくたく</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "猫と一郎",
-              "text_en": "Cat and Ichiro"
+              "text_en": "Cat and Ichiro",
+              "text_ja_ruby": "<ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "風の忍者",
-              "text_en": "Wind Ninja"
+              "text_en": "Wind Ninja",
+              "text_ja_ruby": "<ruby>風<rt>かぜ</rt></ruby>の<ruby>忍者<rt>にんじゃ</rt></ruby>"
             },
             {
               "id": 4,
@@ -2933,7 +3102,9 @@
           ],
           "correctAnswer": 2,
           "explanation_ja": "タンさんが映画館にいられるのは「15:00〜18:00」です。「初めから終わりまで見る」には、開始が15:00以降かつ終了が18:00以前である必要があります。\n・大きな食卓：14:00〜16:10（15時前開始）、17:15〜19:25（18時以降終了）。不可。\n・猫と一郎：15:15〜17:00。開始が15:00以降で終了が18:00前なので完全に収まります！\n・風の忍者：14:30〜17:30（15時前開始）。不可。\n・オハナ♡：19:15〜21:35。不可。\nしたがって 2 が正解です。",
-          "explanation_en": "Tan can be at the cinema from 15:00 to 18:00. Watching from start to finish requires start >= 15:00 and end <= 18:00.\n- 'A Big Dining Table': 14:00-16:10 (starts before 15:00), 17:15-19:25 (ends after 18:00).\n- 'Cat and Ichiro': 15:15-17:00 (starts 15:15, ends 17:00; fits completely!).\n- 'Wind Ninja': 14:30-17:30 (starts before 15:00).\n- 'Ohana': 19:15-21:35 (after 18:00).\nTherefore, Option 2 is correct."
+          "explanation_en": "Tan can be at the cinema from 15:00 to 18:00. Watching from start to finish requires start >= 15:00 and end <= 18:00.\n- 'A Big Dining Table': 14:00-16:10 (starts before 15:00), 17:15-19:25 (ends after 18:00).\n- 'Cat and Ichiro': 15:15-17:00 (starts 15:15, ends 17:00; fits completely!).\n- 'Wind Ninja': 14:30-17:30 (starts before 15:00).\n- 'Ohana': 19:15-21:35 (after 18:00).\nTherefore, Option 2 is correct.",
+          "questionText_ja_ruby": "タンさんは、<ruby>午後<rt>ごご</rt></ruby><ruby>時間<rt>じかん</rt></ruby>ができたので<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>ることにした。<ruby>映画館<rt>えいがかん</rt></ruby>にいられる<ruby>時間<rt>じかん</rt></ruby>は<ruby>午後<rt>ごご</rt></ruby><ruby>3時<rt>さんじ</rt></ruby>から<ruby>午後<rt>ごご</rt></ruby><ruby>6時<rt>ろくじ</rt></ruby>までの3<ruby>時間<rt>じかん</rt></ruby>だけである。<ruby>今日<rt>きょう</rt></ruby>タンさんが、<ruby>初<rt>はじ</rt></ruby>めから<ruby>終<rt>お</rt></ruby>わりまで<ruby>見<rt>み</rt></ruby>ることができる<ruby>映画<rt>えいが</rt></ruby>は<ruby>次<rt>つぎ</rt></ruby>のうちどれか。",
+          "explanation_ja_ruby": "タンさんが<ruby>映画館<rt>えいがかん</rt></ruby>にいられるのは「15:00〜18:00」です。「<ruby>初<rt>はじ</rt></ruby>めから<ruby>終<rt>お</rt></ruby>わりまで<ruby>見<rt>み</rt></ruby>る」には、<ruby>開始<rt>かいし</rt></ruby>が15:00<ruby>以降<rt>いこう</rt></ruby>かつ<ruby>終了<rt>しゅうりょう</rt></ruby>が18:00<ruby>以前<rt>いぜん</rt></ruby>である<ruby>必要<rt>ひつよう</rt></ruby>があります。\n・<ruby>大<rt>おお</rt></ruby>きな<ruby>食卓<rt>しょくたく</rt></ruby>：14:00〜16:10（15<ruby>時前<rt>じまえ</rt></ruby><ruby>開始<rt>かいし</rt></ruby>）、17:15〜19:25（18<ruby>時以降<rt>じいこう</rt></ruby><ruby>終了<rt>しゅうりょう</rt></ruby>）。<ruby>不可<rt>ふか</rt></ruby>。\n・<ruby>猫<rt>ねこ</rt></ruby>と<ruby>一郎<rt>いちろう</rt></ruby>：15:15〜17:00。<ruby>開始<rt>かいし</rt></ruby>が15:00<ruby>以降<rt>いこう</rt></ruby>で<ruby>終了<rt>しゅうりょう</rt></ruby>が18:00<ruby>前<rt>まえ</rt></ruby>なので<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>収<rt>おさ</rt></ruby>まります！\n・<ruby>風<rt>かぜ</rt></ruby>の<ruby>忍者<rt>にんじゃ</rt></ruby>：14:30〜17:30（15<ruby>時前<rt>じまえ</rt></ruby><ruby>開始<rt>かいし</rt></ruby>）。<ruby>不可<rt>ふか</rt></ruby>。\n・オハナ♡：19:15〜21:35。<ruby>不可<rt>ふか</rt></ruby>。\nしたがって 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -3011,7 +3182,7 @@
           {
             "id": 5,
             "text_ja": "●会場：△△社本社 〒111-2222 東京都○○市□□2-3-4 (株)△△社第一ビル ●交通機関：JR中央線・総武線、東京メトロ東西線「○×駅」徒歩10分。",
-            "ruby_html": "●<ruby>会場<rt>かいじょう</rt></ruby>：△△<ruby>社本社<rt>しゃほんしゃ</rt></ruby> 〒111-2222 <ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>□□2-3-4 (<ruby>株<rt>かぶ</rt></ruby>)△△<ruby>社第一<rt>しゃだいいち</rt></ruby>ビル ●<ruby>交通機関<rt>こうつうきかん</rt></ruby>：JR<ruby>中央線<rt>ちゅうおうせん</rt></ruby>・<ruby>総武線<rt>そうぶせん</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>メトロ<ruby>東西線<rt>とうざいせん</rt></ruby>「○×<ruby>駅<rt>えき</rt></ruby>」<ruby>徒歩<rt>とほ</rt></ruby>10<ruby>分<rt>ふん</rt></ruby>。",
+            "ruby_html": "●<ruby>会場<rt>かいじょう</rt></ruby>：△△<ruby>社本社<rt>しゃほんしゃ</rt></ruby> 〒111-2222 <ruby>東京都<rt>とうきょうと</rt></ruby>○○<ruby>市<rt>し</rt></ruby>□□2-3-4 (<ruby>株<rt>かぶ</rt></ruby>)△△<ruby>社第一<rt>しゃだいいち</rt></ruby>ビル ●<ruby>交通機関<rt>こうつうきかん</rt></ruby>：JR<ruby>中央線<rt>ちゅうおうせん</rt></ruby>・<ruby>総武線<rt>そうぶせん</rt></ruby>、<ruby>東京<rt>とうきょう</rt></ruby>メトロ<ruby>東西線<rt>とうざいせん</rt></ruby>「○×<ruby>駅<rt>えき</rt></ruby>」<ruby>徒歩<rt>とほ</rt></ruby><ruby>10分<rt>じゅっぷん</rt></ruby>。",
             "text_en": "Venue: Delta Co. Headquarters, Building 1, 2-3-4 square-square, oo-city, Tokyo; Transport: JR Chuo/Sobu Line or Tokyo Metro Tozai Line, 10 min walk from 'ox Station'."
           },
           {
@@ -3107,27 +3278,33 @@
             {
               "id": 1,
               "text_ja": "12時35分",
-              "text_en": "12:35"
+              "text_en": "12:35",
+              "text_ja_ruby": "<ruby>12時<rt>じゅうにじ</rt></ruby><ruby>35分<rt>さんじゅうごふん</rt></ruby>"
             },
             {
               "id": 2,
               "text_ja": "12時50分",
-              "text_en": "12:50"
+              "text_en": "12:50",
+              "text_ja_ruby": "<ruby>12時<rt>じゅうにじ</rt></ruby><ruby>50分<rt>ごじゅっぷん</rt></ruby>"
             },
             {
               "id": 3,
               "text_ja": "13時ちょうど",
-              "text_en": "Exactly 13:00"
+              "text_en": "Exactly 13:00",
+              "text_ja_ruby": "<ruby>13時<rt>じゅうさんじ</rt></ruby>ちょうど"
             },
             {
               "id": 4,
               "text_ja": "14時半",
-              "text_en": "14:30"
+              "text_en": "14:30",
+              "text_ja_ruby": "14<ruby>時半<rt>じはん</rt></ruby>"
             }
           ],
           "correctAnswer": 1,
           "explanation_ja": "説明会の開始時刻は13:00です。駅から会社までは徒歩10分かかり、受付開始は「開始時間の10分前（12:50）〜」です。また「開始時刻を過ぎてからの参加はできません」とあります。12:50に駅に着いた場合、徒歩10分で到着は13:00となり、少しでも遅れると参加できなくなります。12:35に駅に着けば、12:45頃に会社に着き、12:50の受付開始と同時に余裕をもって受付を済ませることができます。したがって 1 が正解です。",
-          "explanation_en": "The briefing begins at 13:00. It takes 10 minutes on foot from the station, and reception opens 10 minutes prior (12:50). Late arrivals after 13:00 are not permitted. Arriving at the station at 12:50 would put arrival at the building right at 13:00 with zero margin for error. Arriving at the station at 12:35 allows arrival around 12:45-12:50, entering punctually right when reception opens. Therefore, Option 1 is correct."
+          "explanation_en": "The briefing begins at 13:00. It takes 10 minutes on foot from the station, and reception opens 10 minutes prior (12:50). Late arrivals after 13:00 are not permitted. Arriving at the station at 12:50 would put arrival at the building right at 13:00 with zero margin for error. Arriving at the station at 12:35 allows arrival around 12:45-12:50, entering punctually right when reception opens. Therefore, Option 1 is correct.",
+          "questionText_ja_ruby": "<ruby>説明会<rt>せつめいかい</rt></ruby>に<ruby>行<rt>い</rt></ruby>く<ruby>際<rt>きわ</rt></ruby>、○×<ruby>駅<rt>えき</rt></ruby>に<ruby>何時<rt>なんじ</rt></ruby>に<ruby>着<rt>つ</rt></ruby>くのが<ruby>一番<rt>いちばん</rt></ruby>よいか。",
+          "explanation_ja_ruby": "<ruby>説明会<rt>せつめいかい</rt></ruby>の<ruby>開始時刻<rt>かいしじこく</rt></ruby>は13:00です。<ruby>駅<rt>えき</rt></ruby>から<ruby>会社<rt>かいしゃ</rt></ruby>までは<ruby>徒歩<rt>とほ</rt></ruby>10<ruby>分<rt>わ</rt></ruby>かかり、<ruby>受付開始<rt>うけつけかいし</rt></ruby>は「<ruby>開始時間<rt>かいしじかん</rt></ruby>の10<ruby>分前<rt>ふんまえ</rt></ruby>（12:50）〜」です。また「<ruby>開始時刻<rt>かいしじこく</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎてからの<ruby>参加<rt>さんか</rt></ruby>はできません」とあります。12:50に<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>いた<ruby>場合<rt>ばあい</rt></ruby>、<ruby>徒歩<rt>とほ</rt></ruby><ruby>10分<rt>じゅっぷん</rt></ruby>で<ruby>到着<rt>とうちゃく</rt></ruby>は13:00となり、<ruby>少<rt>すこ</rt></ruby>しでも<ruby>遅<rt>おく</rt></ruby>れると<ruby>参加<rt>さんか</rt></ruby>できなくなります。12:35に<ruby>駅<rt>えき</rt></ruby>に<ruby>着<rt>つ</rt></ruby>けば、12:45<ruby>頃<rt>ごろ</rt></ruby>に<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>着<rt>つ</rt></ruby>き、12:50の<ruby>受付開始<rt>うけつけかいし</rt></ruby>と<ruby>同時<rt>どうじ</rt></ruby>に<ruby>余裕<rt>よゆう</rt></ruby>をもって<ruby>受付<rt>うけつけ</rt></ruby>を<ruby>済<rt>す</rt></ruby>ませることができます。したがって 1 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-61-2",
@@ -3138,27 +3315,33 @@
             {
               "id": 1,
               "text_ja": "連絡はせず、参加もしない。",
-              "text_en": "Do not contact them and do not attend."
+              "text_en": "Do not contact them and do not attend.",
+              "text_ja_ruby": "<ruby>連絡<rt>れんらく</rt></ruby>はせず、<ruby>参加<rt>さんか</rt></ruby>もしない。"
             },
             {
               "id": 2,
               "text_ja": "会社のホームページの採用案内ページからキャンセルをする。",
-              "text_en": "Cancel via the recruitment page on the company website."
+              "text_en": "Cancel via the recruitment page on the company website.",
+              "text_ja_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>のホームページの<ruby>採用<rt>さいよう</rt></ruby><ruby>案内<rt>あんない</rt></ruby>ページからキャンセルをする。"
             },
             {
               "id": 3,
               "text_ja": "連絡はせず、遅れて参加する。",
-              "text_en": "Do not contact them and join late."
+              "text_en": "Do not contact them and join late.",
+              "text_ja_ruby": "<ruby>連絡<rt>れんらく</rt></ruby>はせず、<ruby>遅<rt>おく</rt></ruby>れて<ruby>参加<rt>さんか</rt></ruby>する。"
             },
             {
               "id": 4,
               "text_ja": "会社の採用担当者に電話をする。",
-              "text_en": "Call the company's recruitment coordinator."
+              "text_en": "Call the company's recruitment coordinator.",
+              "text_ja_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>採用担当<rt>さいようたんとう</rt></ruby><ruby>者<rt>もの</rt></ruby>に<ruby>電話<rt>でんわ</rt></ruby>をする。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "注意事項に「前日までに参加日の変更がある場合は、当社ホームページの採用案内ページからキャンセルの手続きをして…」「当日の遅刻や欠席は直接当社にご連絡ください。(採用担当: 03-4567-8901)」と明確に区別されています。今回は「説明会の日に（＝当日）」の欠席・遅刻であるため、電話で直接採用担当者に連絡しなければなりません。したがって 4 が正解です。",
-          "explanation_en": "The instructions distinguish between: 'rescheduling by the previous day' (cancel online via webpage) and 'same-day tardiness/absence' ('contact us directly by phone at 03-4567-8901'). Since this occurred on the day of the briefing (当日), calling the recruitment coordinator directly is required. Therefore, Option 4 is correct."
+          "explanation_en": "The instructions distinguish between: 'rescheduling by the previous day' (cancel online via webpage) and 'same-day tardiness/absence' ('contact us directly by phone at 03-4567-8901'). Since this occurred on the day of the briefing (当日), calling the recruitment coordinator directly is required. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "ウェンさんは<ruby>説明会<rt>せつめいかい</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に<ruby>具合<rt>ぐあい</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くなり<ruby>開始<rt>かいし</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>に<ruby>行<rt>い</rt></ruby>けなくなった。どうすればよいか。",
+          "explanation_ja_ruby": "<ruby>注意事項<rt>ちゅういじこう</rt></ruby>に「<ruby>前日<rt>ぜんじつ</rt></ruby>までに<ruby>参加日<rt>さんかび</rt></ruby>の<ruby>変更<rt>へんこう</rt></ruby>がある<ruby>場合<rt>ばあい</rt></ruby>は、<ruby>当社<rt>とうしゃ</rt></ruby>ホームページの<ruby>採用<rt>さいよう</rt></ruby><ruby>案内<rt>あんない</rt></ruby>ページからキャンセルの<ruby>手続<rt>てつづ</rt></ruby>きをして…」「<ruby>当日<rt>とうじつ</rt></ruby>の<ruby>遅刻<rt>ちこく</rt></ruby>や<ruby>欠席<rt>けっせき</rt></ruby>は<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>当社<rt>とうしゃ</rt></ruby>にご<ruby>連絡<rt>れんらく</rt></ruby>ください。(<ruby>採用担当<rt>さいようたんとう</rt></ruby>: 03-4567-8901)」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>区別<rt>くべつ</rt></ruby>されています。<ruby>今回<rt>こんかい</rt></ruby>は「<ruby>説明会<rt>せつめいかい</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に（＝<ruby>当日<rt>とうじつ</rt></ruby>）」の<ruby>欠席<rt>けっせき</rt></ruby>・<ruby>遅刻<rt>ちこく</rt></ruby>であるため、<ruby>電話<rt>でんわ</rt></ruby>で<ruby>直接<rt>ちょくせつ</rt></ruby><ruby>採用担当<rt>さいようたんとう</rt></ruby><ruby>者<rt>もの</rt></ruby>に<ruby>連絡<rt>れんらく</rt></ruby>しなければなりません。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -3339,27 +3522,33 @@
             {
               "id": 1,
               "text_ja": "連絡はしないで、直接1月15日に○○市民会館集会室へ行く。",
-              "text_en": "Go directly to the City Hall meeting room on January 15 without contacting them."
+              "text_en": "Go directly to the City Hall meeting room on January 15 without contacting them.",
+              "text_ja_ruby": "<ruby>連絡<rt>れんらく</rt></ruby>はしないで、<ruby>直接<rt>ちょくせつ</rt></ruby>1<ruby>月<rt>げつ</rt></ruby>15<ruby>日<rt>ひ</rt></ruby>に○○<ruby>市民会館<rt>しみんかいかん</rt></ruby><ruby>集会室<rt>しゅうかいしつ</rt></ruby>へ<ruby>行<rt>い</rt></ruby>く。"
             },
             {
               "id": 2,
               "text_ja": "①のURLをクリックして手続きをする。",
-              "text_en": "Click URL (1) and complete the procedure."
+              "text_en": "Click URL (1) and complete the procedure.",
+              "text_ja_ruby": "①のURLをクリックして<ruby>手続<rt>てつづ</rt></ruby>きをする。"
             },
             {
               "id": 3,
               "text_ja": "②のURLをクリックして手続きをする。",
-              "text_en": "Click URL (2) and complete the procedure."
+              "text_en": "Click URL (2) and complete the procedure.",
+              "text_ja_ruby": "②のURLをクリックして<ruby>手続<rt>てつづ</rt></ruby>きをする。"
             },
             {
               "id": 4,
               "text_ja": "④のメールアドレスにメールを送る。",
-              "text_en": "Send an email to address (4)."
+              "text_en": "Send an email to address (4).",
+              "text_ja_ruby": "④のメールアドレスにメールを<ruby>送<rt>おく</rt></ruby>る。"
             }
           ],
           "correctAnswer": 2,
           "explanation_ja": "「新年会」の案内の直下に「参加申し込みはこちら ①http://ryugakuoen.or.jp/shinnen.htm」と指定されています。したがって、①のURLをクリックして手続きをする 2 が正解です。",
-          "explanation_en": "Directly beneath the New Year Party announcement, it specifies: 'Sign up here: (1) http://ryugakuoen.or.jp/shinnen.htm'. Therefore, Option 2 ('Click URL (1) and complete the procedure') is correct."
+          "explanation_en": "Directly beneath the New Year Party announcement, it specifies: 'Sign up here: (1) http://ryugakuoen.or.jp/shinnen.htm'. Therefore, Option 2 ('Click URL (1) and complete the procedure') is correct.",
+          "questionText_ja_ruby": "<ruby>新年会<rt>しんねんかい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>したい<ruby>場合<rt>ばあい</rt></ruby>、どうすればよいと<ruby>書<rt>か</rt></ruby>いてあるか。",
+          "explanation_ja_ruby": "「<ruby>新年会<rt>しんねんかい</rt></ruby>」の<ruby>案内<rt>あんない</rt></ruby>の<ruby>直下<rt>ちょくか</rt></ruby>に「<ruby>参加申<rt>さんかもう</rt></ruby>し<ruby>込<rt>こ</rt></ruby>みはこちら ①http://ryugakuoen.or.jp/shinnen.htm」と<ruby>指定<rt>してい</rt></ruby>されています。したがって、①のURLをクリックして<ruby>手続<rt>てつづ</rt></ruby>きをする 2 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-62-2",
@@ -3370,27 +3559,33 @@
             {
               "id": 1,
               "text_ja": "このメールマガジンに返信をして伝える。",
-              "text_en": "Inform them by replying to this email newsletter."
+              "text_en": "Inform them by replying to this email newsletter.",
+              "text_ja_ruby": "このメールマガジンに<ruby>返信<rt>へんしん</rt></ruby>をして<ruby>伝<rt>つた</rt></ruby>える。"
             },
             {
               "id": 2,
               "text_ja": "②のURLをクリックして手続きをする。",
-              "text_en": "Click URL (2) and complete the procedure."
+              "text_en": "Click URL (2) and complete the procedure.",
+              "text_ja_ruby": "②のURLをクリックして<ruby>手続<rt>てつづ</rt></ruby>きをする。"
             },
             {
               "id": 3,
               "text_ja": "③のURLをクリックして手続きをする。",
-              "text_en": "Click URL (3) and complete the procedure."
+              "text_en": "Click URL (3) and complete the procedure.",
+              "text_ja_ruby": "③のURLをクリックして<ruby>手続<rt>てつづ</rt></ruby>きをする。"
             },
             {
               "id": 4,
               "text_ja": "④のメールアドレスにメールを送る。",
-              "text_en": "Send an email to email address (4)."
+              "text_en": "Send an email to email address (4).",
+              "text_ja_ruby": "④のメールアドレスにメールを<ruby>送<rt>おく</rt></ruby>る。"
             }
           ],
           "correctAnswer": 3,
           "explanation_ja": "末尾のフッター部分に「◆このメルマガは配信専用です。このアドレスに返信はできません」「◆配信停止はこちら ③http://ryugakuoen.or.jp/mmag.resign.htm」と明記されています。配信停止（購読解除）をするには③のURLにアクセスする必要があります。したがって 3 が正解です。",
-          "explanation_en": "In the footer, it clearly states: 'This newsletter is send-only; you cannot reply directly' and 'Unsubscribe here: (3) http://ryugakuoen.or.jp/mmag.resign.htm'. To stop receiving it, you must click URL (3). Therefore, Option 3 is correct."
+          "explanation_en": "In the footer, it clearly states: 'This newsletter is send-only; you cannot reply directly' and 'Unsubscribe here: (3) http://ryugakuoen.or.jp/mmag.resign.htm'. To stop receiving it, you must click URL (3). Therefore, Option 3 is correct.",
+          "questionText_ja_ruby": "このメールマガジンをもう<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>りたくない。どうすればよいと<ruby>書<rt>か</rt></ruby>いてあるか。",
+          "explanation_ja_ruby": "<ruby>末尾<rt>まつび</rt></ruby>のフッター<ruby>部分<rt>ぶぶん</rt></ruby>に「◆このメルマガは<ruby>配信<rt>はいしん</rt></ruby><ruby>専用<rt>せんよう</rt></ruby>です。このアドレスに<ruby>返信<rt>へんしん</rt></ruby>はできません」「◆<ruby>配信<rt>はいしん</rt></ruby><ruby>停止<rt>ていし</rt></ruby>はこちら ③http://ryugakuoen.or.jp/mmag.resign.htm」と<ruby>明記<rt>めいき</rt></ruby>されています。<ruby>配信<rt>はいしん</rt></ruby><ruby>停止<rt>ていし</rt></ruby>（<ruby>購読<rt>こうどく</rt></ruby><ruby>解除<rt>かいじょ</rt></ruby>）をするには③のURLにアクセスする<ruby>必要<rt>ひつよう</rt></ruby>があります。したがって 3 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -3606,27 +3801,33 @@
             {
               "id": 1,
               "text_ja": "そのまま直して使う。",
-              "text_en": "Repair it as is and use it."
+              "text_en": "Repair it as is and use it.",
+              "text_ja_ruby": "そのまま<ruby>直<rt>なお</rt></ruby>して<ruby>使<rt>つか</rt></ruby>う。"
             },
             {
               "id": 2,
               "text_ja": "使わないで捨てる。",
-              "text_en": "Throw it away without using it."
+              "text_en": "Throw it away without using it.",
+              "text_ja_ruby": "<ruby>使<rt>つか</rt></ruby>わないで<ruby>捨<rt>す</rt></ruby>てる。"
             },
             {
               "id": 3,
               "text_ja": "○×ショップに送り、払った送料をメールで連絡する。",
-              "text_en": "Send it to OX Shop and report the postage paid by email."
+              "text_en": "Send it to OX Shop and report the postage paid by email.",
+              "text_ja_ruby": "○×ショップに<ruby>送<rt>おく</rt></ruby>り、<ruby>払<rt>はら</rt></ruby>った<ruby>送料<rt>そうりょう</rt></ruby>をメールで<ruby>連絡<rt>れんらく</rt></ruby>する。"
             },
             {
               "id": 4,
               "text_ja": "着払いで、○×ショップに送る。",
-              "text_en": "Send it to OX Shop via cash on delivery (freight collect)."
+              "text_en": "Send it to OX Shop via cash on delivery (freight collect).",
+              "text_ja_ruby": "<ruby>着払<rt>ちゃくばら</rt></ruby>いで、○×ショップに<ruby>送<rt>おく</rt></ruby>る。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文に「商品【ABC電気ポット】を、商品着払いにて、ご返送くださいますようお願いいたします」と明確に書かれています。「着払い」とは受取人（ショップ側）が送料を負担して送る方法のことです。したがって 4 が正解です。",
-          "explanation_en": "The email clearly asks: 'please return the [ABC Electric Pot] via cash on delivery (着払い).' 'Cash on delivery' means the receiver (the shop) pays shipping charges. Therefore, Option 4 is correct."
+          "explanation_en": "The email clearly asks: 'please return the [ABC Electric Pot] via cash on delivery (着払い).' 'Cash on delivery' means the receiver (the shop) pays shipping charges. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "<ruby>買<rt>か</rt></ruby>った<ruby>商品<rt>しょうひん</rt></ruby>をどうしてほしいと<ruby>言<rt>い</rt></ruby>っているか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>商品<rt>しょうひん</rt></ruby>【ABC<ruby>電気<rt>でんき</rt></ruby>ポット】を、<ruby>商品<rt>しょうひん</rt></ruby><ruby>着払<rt>ちゃくばら</rt></ruby>いにて、ご<ruby>返送<rt>へんそう</rt></ruby>くださいますようお<ruby>願<rt>ねが</rt></ruby>いいたします」と<ruby>明確<rt>めいかく</rt></ruby>に<ruby>書<rt>か</rt></ruby>かれています。「<ruby>着払<rt>ちゃくばら</rt></ruby>い」とは<ruby>受取人<rt>うけとりにん</rt></ruby>（ショップ<ruby>側<rt>がわ</rt></ruby>）が<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>負担<rt>ふたん</rt></ruby>して<ruby>送<rt>おく</rt></ruby>る<ruby>方法<rt>ほうほう</rt></ruby>のことです。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         },
         {
           "questionId": "q-63-2",
@@ -3637,27 +3838,33 @@
             {
               "id": 1,
               "text_ja": "商品を送り返さなくても、銀行の口座情報を教えると急にお金が振り込まれる。",
-              "text_en": "Money will be transferred immediately upon giving bank details without sending back the item."
+              "text_en": "Money will be transferred immediately upon giving bank details without sending back the item.",
+              "text_ja_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>送<rt>おく</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>さなくても、<ruby>銀行<rt>ぎんこう</rt></ruby>の<ruby>口座<rt>こうざ</rt></ruby><ruby>情報<rt>じょうほう</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えると<ruby>急<rt>きゅう</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>が<ruby>振<rt>ふ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まれる。"
             },
             {
               "id": 2,
               "text_ja": "商品を送ったことをメールすると、お金が振り込まれる。",
-              "text_en": "Money will be transferred when you email that you sent the product."
+              "text_en": "Money will be transferred when you email that you sent the product.",
+              "text_ja_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>送<rt>おく</rt></ruby>ったことをメールすると、お<ruby>金<rt>かね</rt></ruby>が<ruby>振<rt>ふ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まれる。"
             },
             {
               "id": 3,
               "text_ja": "商品が○×ショップに届いたら、お金が郵便で送られてくる。",
-              "text_en": "Money will be mailed by post when the product arrives at OX Shop."
+              "text_en": "Money will be mailed by post when the product arrives at OX Shop.",
+              "text_ja_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>が○×ショップに<ruby>届<rt>とど</rt></ruby>いたら、お<ruby>金<rt>かね</rt></ruby>が<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>られてくる。"
             },
             {
               "id": 4,
               "text_ja": "商品が○×ショップに届いたら、伝えておいた口座にお金が振り込まれる。",
-              "text_en": "When the product arrives at OX Shop, money will be transferred to the provided bank account."
+              "text_en": "When the product arrives at OX Shop, money will be transferred to the provided bank account.",
+              "text_ja_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>が○×ショップに<ruby>届<rt>とど</rt></ruby>いたら、<ruby>伝<rt>つた</rt></ruby>えておいた<ruby>口座<rt>こうざ</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>が<ruby>振<rt>ふ</rt></ruby>り<ruby>込<rt>こ</rt></ruby>まれる。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "本文に「商品が到着しましたら、ご返金の対応をさせていただきます」「お客様のお振込先口座を教えていただけますでしょうか」とあります。つまり、メールで事前に伝えておいた口座に、返品商品がショップに到着した後に振込が行われます。したがって 4 が正解です。",
-          "explanation_en": "The email states: 'Once the item arrives, we will process your refund' and 'could you please provide your bank transfer account information?'. Thus, once the returned goods arrive at the shop, the refund is deposited into the designated account. Therefore, Option 4 is correct."
+          "explanation_en": "The email states: 'Once the item arrives, we will process your refund' and 'could you please provide your bank transfer account information?'. Thus, once the returned goods arrive at the shop, the refund is deposited into the designated account. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "お<ruby>金<rt>かね</rt></ruby>はどのように<ruby>戻<rt>もど</rt></ruby>ってくるか。",
+          "explanation_ja_ruby": "<ruby>本文<rt>ほんぶん</rt></ruby>に「<ruby>商品<rt>しょうひん</rt></ruby>が<ruby>到着<rt>とうちゃく</rt></ruby>しましたら、ご<ruby>返金<rt>へんきん</rt></ruby>の<ruby>対応<rt>たいおう</rt></ruby>をさせていただきます」「お<ruby>客様<rt>きゃくさま</rt></ruby>のお<ruby>振込先<rt>ふりこみさき</rt></ruby><ruby>口座<rt>こうざ</rt></ruby>を<ruby>教<rt>おし</rt></ruby>えていただけますでしょうか」とあります。つまり、メールで<ruby>事前<rt>じぜん</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>えておいた<ruby>口座<rt>こうざ</rt></ruby>に、<ruby>返品<rt>へんぴん</rt></ruby><ruby>商品<rt>しょうひん</rt></ruby>がショップに<ruby>到着<rt>とうちゃく</rt></ruby>した<ruby>後<rt>あと</rt></ruby>に<ruby>振込<rt>ふりこみ</rt></ruby>が<ruby>行<rt>おこな</rt></ruby>われます。したがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {
@@ -3795,7 +4002,8 @@
             {
               "id": 1,
               "text_ja": "犬",
-              "text_en": "Dog"
+              "text_en": "Dog",
+              "text_ja_ruby": "<ruby>犬<rt>いぬ</rt></ruby>"
             },
             {
               "id": 2,
@@ -3805,7 +4013,8 @@
             {
               "id": 3,
               "text_ja": "馬",
-              "text_en": "Horse"
+              "text_en": "Horse",
+              "text_ja_ruby": "<ruby>馬<rt>うま</rt></ruby>"
             },
             {
               "id": 4,
@@ -3815,7 +4024,9 @@
           ],
           "correctAnswer": 2,
           "explanation_ja": "グラフの2本の棒の高さの差を比較します。\n・犬：62%と65%で差は約3%\n・パンダ：58%から29%へと約29%の減少（選択肢の中で最大の差）\n・馬：39%から28%へと約11%の差\n・うさぎ：50%から27%へと約23%の差\nしたがって、最も大きな差があらわれた動物は「パンダ」です。正解は 2 です。",
-          "explanation_en": "Compare the height differences between the two bars for each animal:\n- Dog: 62% vs 65%, diff is ~3%\n- Panda: 58% down to 29%, diff is ~29% (largest difference among options)\n- Horse: 39% down to 28%, diff is ~11%\n- Rabbit: 50% down to 27%, diff is ~23%\nTherefore, the animal exhibiting the biggest difference is the panda. Option 2 is correct."
+          "explanation_en": "Compare the height differences between the two bars for each animal:\n- Dog: 62% vs 65%, diff is ~3%\n- Panda: 58% down to 29%, diff is ~29% (largest difference among options)\n- Horse: 39% down to 28%, diff is ~11%\n- Rabbit: 50% down to 27%, diff is ~23%\nTherefore, the animal exhibiting the biggest difference is the panda. Option 2 is correct.",
+          "questionText_ja_ruby": "1983<ruby>年<rt>ねん</rt></ruby>と2007<ruby>年<rt>ねん</rt></ruby>で<ruby>一番<rt>いちばん</rt></ruby><ruby>大<rt>おお</rt></ruby>きな<ruby>差<rt>さ</rt></ruby>があらわれた<ruby>動物<rt>どうぶつ</rt></ruby>はどれか。",
+          "explanation_ja_ruby": "グラフの2<ruby>本<rt>ほん</rt></ruby>の<ruby>棒<rt>ぼう</rt></ruby>の<ruby>高<rt>たか</rt></ruby>さの<ruby>差<rt>さ</rt></ruby>を<ruby>比較<rt>ひかく</rt></ruby>します。\n・<ruby>犬<rt>いぬ</rt></ruby>：62%と65%で<ruby>差<rt>さ</rt></ruby>は<ruby>約<rt>やく</rt></ruby>3%\n・パンダ：58%から29%へと<ruby>約<rt>やく</rt></ruby>29%の<ruby>減少<rt>げんしょう</rt></ruby>（<ruby>選択肢<rt>せんたくし</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>最大<rt>さいだい</rt></ruby>の<ruby>差<rt>さ</rt></ruby>）\n・<ruby>馬<rt>うま</rt></ruby>：39%から28%へと<ruby>約<rt>やく</rt></ruby>11%の<ruby>差<rt>さ</rt></ruby>\n・うさぎ：50%から27%へと<ruby>約<rt>やく</rt></ruby>23%の<ruby>差<rt>さ</rt></ruby>\nしたがって、<ruby>最<rt>もっと</rt></ruby>も<ruby>大<rt>おお</rt></ruby>きな<ruby>差<rt>さ</rt></ruby>があらわれた<ruby>動物<rt>どうぶつ</rt></ruby>は「パンダ」です。<ruby>正解<rt>せいかい</rt></ruby>は 2 です。"
         },
         {
           "questionId": "q-64-2",
@@ -3826,27 +4037,33 @@
             {
               "id": 1,
               "text_ja": "ねこは1983年と2007年で大きな差がある。",
-              "text_en": "Cats show a large difference between 1983 and 2007."
+              "text_en": "Cats show a large difference between 1983 and 2007.",
+              "text_ja_ruby": "ねこは1983<ruby>年<rt>ねん</rt></ruby>と2007<ruby>年<rt>ねん</rt></ruby>で<ruby>大<rt>おお</rt></ruby>きな<ruby>差<rt>さ</rt></ruby>がある。"
             },
             {
               "id": 2,
               "text_ja": "うさぎは2007年の調査では3位である。",
-              "text_en": "Rabbits ranked 3rd in the 2007 survey."
+              "text_en": "Rabbits ranked 3rd in the 2007 survey.",
+              "text_ja_ruby": "うさぎは2007<ruby>年<rt>ねん</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby>では<ruby>3位<rt>さんい</rt></ruby>である。"
             },
             {
               "id": 3,
               "text_ja": "パンダは1983年の調査では1位である。",
-              "text_en": "Pandas ranked 1st in the 1983 survey."
+              "text_en": "Pandas ranked 1st in the 1983 survey.",
+              "text_ja_ruby": "パンダは1983<ruby>年<rt>ねん</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby>では<ruby>1位<rt>いちい</rt></ruby>である。"
             },
             {
               "id": 4,
               "text_ja": "コアラは2007年の調査では1983年より減少している。",
-              "text_en": "Koalas decreased in the 2007 survey compared to 1983."
+              "text_en": "Koalas decreased in the 2007 survey compared to 1983.",
+              "text_ja_ruby": "コアラは2007<ruby>年<rt>ねん</rt></ruby>の<ruby>調査<rt>ちょうさ</rt></ruby>では1983<ruby>年<rt>ねん</rt></ruby>より<ruby>減少<rt>げんしょう</rt></ruby>している。"
             }
           ],
           "correctAnswer": 4,
           "explanation_ja": "各選択肢を検討します。\n1: ねこは39%と36%で差はわずか3%であり、「大きな差がある」は不適切です。\n2: 2007年の3位はイルカ（約31%）です。うさぎ（約27%）は6位前後です。\n3: 1983年の1位は犬（約62%）です。パンダ（約58%）は2位です。\n4: コアラは1983年の約51%から2007年の約26%へと大きく減少しています。記述は完全に正しいです。\nしたがって 4 が正解です。",
-          "explanation_en": "Evaluating each option:\nOption 1: Cats only changed from 39% to 36% (~3% diff), not a large difference.\nOption 2: In 2007, 3rd was the dolphin (~31%). Rabbits (~27%) ranked around 6th.\nOption 3: In 1983, 1st was the dog (~62%), with panda in 2nd (~58%).\nOption 4: Koalas dropped substantially from ~51% in 1983 to ~26% in 2007, meaning they clearly decreased (減少している). This statement is completely accurate. Therefore, Option 4 is correct."
+          "explanation_en": "Evaluating each option:\nOption 1: Cats only changed from 39% to 36% (~3% diff), not a large difference.\nOption 2: In 2007, 3rd was the dolphin (~31%). Rabbits (~27%) ranked around 6th.\nOption 3: In 1983, 1st was the dog (~62%), with panda in 2nd (~58%).\nOption 4: Koalas dropped substantially from ~51% in 1983 to ~26% in 2007, meaning they clearly decreased (減少している). This statement is completely accurate. Therefore, Option 4 is correct.",
+          "questionText_ja_ruby": "グラフについて<ruby>正<rt>ただ</rt></ruby>しく<ruby>述<rt>の</rt></ruby>べているのはどれか。",
+          "explanation_ja_ruby": "<ruby>各<rt>かく</rt></ruby><ruby>選択肢<rt>せんたくし</rt></ruby>を<ruby>検討<rt>けんとう</rt></ruby>します。\n1: ねこは39%と36%で<ruby>差<rt>さ</rt></ruby>はわずか3%であり、「<ruby>大<rt>おお</rt></ruby>きな<ruby>差<rt>さ</rt></ruby>がある」は<ruby>不適切<rt>ふてきせつ</rt></ruby>です。\n2: 2007<ruby>年<rt>ねん</rt></ruby>の<ruby>3位<rt>さんい</rt></ruby>はイルカ（<ruby>約<rt>やく</rt></ruby>31%）です。うさぎ（<ruby>約<rt>やく</rt></ruby>27%）は<ruby>6位<rt>ろくい</rt></ruby><ruby>前後<rt>ぜんご</rt></ruby>です。\n3: 1983<ruby>年<rt>ねん</rt></ruby>の<ruby>1位<rt>いちい</rt></ruby>は<ruby>犬<rt>いぬ</rt></ruby>（<ruby>約<rt>やく</rt></ruby>62%）です。パンダ（<ruby>約<rt>やく</rt></ruby>58%）は<ruby>2位<rt>にい</rt></ruby>です。\n4: コアラは1983<ruby>年<rt>ねん</rt></ruby>の<ruby>約<rt>やく</rt></ruby>51%から2007<ruby>年<rt>ねん</rt></ruby>の<ruby>約<rt>やく</rt></ruby>26%へと<ruby>大<rt>おお</rt></ruby>きく<ruby>減少<rt>げんしょう</rt></ruby>しています。<ruby>記述<rt>きじゅつ</rt></ruby>は<ruby>完全<rt>かんぜん</rt></ruby>に<ruby>正<rt>ただ</rt></ruby>しいです。\nしたがって 4 が<ruby>正解<rt>せいかい</rt></ruby>です。"
         }
       ],
       "commentary": {

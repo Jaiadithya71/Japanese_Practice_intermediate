@@ -1566,6 +1566,7 @@ function renderQuestionCardHTML(q, idx, isSingle) {
   const qId = q.id || `q_${idx + 1}`;
   const options = q.options || [];
   const optionsEn = q.options_en || [];
+  const optionsRuby = q.options_ruby || [];
   const qType = getQuestionType(q);
   const selectedOpt = readerRuntime.selectedAnswers[qId];
 
@@ -1577,7 +1578,7 @@ function renderQuestionCardHTML(q, idx, isSingle) {
       </div>
 
       <div class="question-prompt-text font-ja">
-        ${q.question_ja || q.instruction_ja || ''}
+        ${glossifyBookText(bookJaText(q.question_ja || q.instruction_ja || '', q.questionText_ja_ruby || q.question_ja_ruby))}
       </div>
       ${readerRuntime.showOptionEn && q.question_en ? `
         <div class="question-prompt-sub">${q.question_en}</div>
@@ -1596,7 +1597,7 @@ function renderQuestionCardHTML(q, idx, isSingle) {
                     onclick="selectQuizOption('${qId}', ${optVal})">
               <span class="opt-num-badge">${optVal}</span>
               <div class="opt-text-wrap">
-                <span class="opt-text-ja">${opt}</span>
+                <span class="opt-text-ja">${bookJaText(opt, optionsRuby[optIdx])}</span>
                 ${readerRuntime.showOptionEn && optEn ? `<span class="opt-text-en">${optEn}</span>` : ''}
               </div>
             </button>
@@ -1889,6 +1890,7 @@ function renderReviewQuestionHTML(res, idx) {
   const isCorrect = evaluation.isCorrect;
   const qType = getQuestionType(q);
   const options = q.options || [];
+  const optionsRuby = q.options_ruby || [];
 
   return `
     <div class="review-question-card ${isCorrect ? 'card-correct' : 'card-incorrect'}">
@@ -1917,7 +1919,7 @@ function renderReviewQuestionHTML(res, idx) {
           return `
             <div class="review-option-row ${optClass} font-ja">
               <span class="badge">${optVal}</span>
-              <span>${opt}</span>
+              <span>${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
               ${isThisCorrect ? '<span class="status-tag correct"><i class="fa-solid fa-check"></i> Answer</span>' : ''}
               ${isUserPick && !isThisCorrect ? '<span class="status-tag incorrect"><i class="fa-solid fa-xmark"></i> Your pick</span>' : ''}
             </div>
@@ -1927,7 +1929,7 @@ function renderReviewQuestionHTML(res, idx) {
 
       <div class="quiz-explanation-box">
         <strong style="color: var(--green);"><i class="fa-solid fa-circle-check"></i> 正解: Option ${correctAnswer}</strong>
-        <p class="font-ja" style="margin-top: 0.4rem; line-height: 1.7;">${q.explanation_ja || ''}</p>
+        <p class="font-ja" style="margin-top: 0.4rem; line-height: 1.7;">${glossifyBookText(bookJaText(q.explanation_ja || '', q.explanation_ja_ruby))}</p>
         ${q.explanation_en ? `
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">${q.explanation_en}</p>
         ` : ''}

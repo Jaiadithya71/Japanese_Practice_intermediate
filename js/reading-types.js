@@ -424,6 +424,7 @@ export function shuffleQuestionOptions(question, rng = Math.random) {
 
   const originalOptions = question.options;
   const originalOptionsEn = question.options_en || [];
+  const originalOptionsRuby = question.options_ruby || [];
   const originalCorrect = parseInt(question.correctAnswer, 10);
 
   // Array of 0-based indices [0, 1, 2, ...]
@@ -441,6 +442,9 @@ export function shuffleQuestionOptions(question, rng = Math.random) {
   const shuffledOptionsEn = originalOptionsEn.length === originalOptions.length
     ? indices.map(i => originalOptionsEn[i])
     : [];
+  const shuffledOptionsRuby = originalOptionsRuby.length === originalOptions.length
+    ? indices.map(i => originalOptionsRuby[i])
+    : [];
 
   const originalCorrectIdx = originalCorrect - 1;
   const newCorrectIdx = indices.indexOf(originalCorrectIdx);
@@ -450,6 +454,7 @@ export function shuffleQuestionOptions(question, rng = Math.random) {
     ...question,
     options: shuffledOptions,
     options_en: shuffledOptionsEn,
+    options_ruby: shuffledOptionsRuby,
     correctAnswer: newCorrectAnswer,
     _originalOptions: originalOptions,
     _originalCorrectAnswer: originalCorrect,
