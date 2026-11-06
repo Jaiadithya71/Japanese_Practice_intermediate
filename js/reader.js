@@ -1598,6 +1598,23 @@ function ensureExtendedDict() {
     .catch(() => { extendedDict.status = 'error'; });
 }
 
+// Text ruby bases sometimes stop before okurigana (注意書<rt>ちゅういが</rt>き),
+// so the tapped span is the truncated kanji run. Resolve it to the full
+// JMdict form when the only difference is trailing kana (注意書き, 役立つ).
+// Exact matches always win; the shortest kana-extended form is the match.
+let extendedKeysCache = null;
+function extendedDictPrefixLookup(term) {
+  if (extendedDict.status !== 'ready' || !extendedDict.map.size) return null;
+  if (!extendedKeysCache) extendedKeysCache = [...extendedDict.map.keys()];
+  let bestKey = null;
+  for (const key of extendedKeysCache) {
+    if (key.length <= term.length || !key.startsWith(term)) continue;
+    if (!/^[\u3040-\u309f\u30fc]+$/.test(key.slice(term.length))) continue;
+    if (!bestKey || key.length < bestKey.length) bestKey = key;
+  }
+  return bestKey ? extendedDict.map.get(bestKey) : null;
+}
+
 // Wrap dictionary terms found in html text nodes with tappable gloss spans,
 // then wrap every remaining kanji word (e.g. 以外) with a fallback lookup that
 // uses the passage furigana as its reading plus per-kanji meaning hints.
@@ -2344,7 +2361,12 @@ export function showWordGloss(term, anchorEl, reading) {
   if (!vocab) vocab = getGlossIndex(lesson).map.get(term);
   if (!vocab) {
     ensureExtendedDict();
-    const ext = extendedDict.map.get(term);
+    let ext = extendedDict.map.get(term);
+    if (!ext) ext = extendedDictPrefixLookup(term);
+    // A deduce target must stay unknown even when the general dictionary
+    // covers it (a ruby-truncated span like 注意書 could otherwise leak 注意書き).
+    const prot = getGlossIndex(lesson).protected;
+    if (ext && prot && (prot.has(term) || prot.has(ext.term))) ext = null;
     if (ext) {
       // Whole-word meaning from the general dictionary (not the textbook list).
       vocab = { term: ext.term, reading: ext.reading || reading || '', meaning: ext.meaning, type: '', extended: true };
