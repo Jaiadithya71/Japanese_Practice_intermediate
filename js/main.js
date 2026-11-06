@@ -34,6 +34,7 @@ import './backup.js';
 import './time.js';
 import './daylog.js';
 import { buildIndexes } from './indexes.js';
+import { initUpdateCheck } from './update-check.js?v=20261106-1';
 import './session.js';
 import './planner.js';
 import './kanji-words.js';
@@ -215,6 +216,7 @@ async function initApp() {
     showView('home');
   }
   initSyncUI();
+  initUpdateCheck();
   console.log('Nihongo Intermediate initialized successfully.');
 }
 
