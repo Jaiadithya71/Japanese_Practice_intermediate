@@ -1644,17 +1644,24 @@ export function renderProgressSegment() {
       else if (latest.s < prev.s) delta = `<span class="prog-delta good">${progFmtSecs(prev.s - latest.s)} faster than previous</span>`;
       else if (latest.s > prev.s) delta = `<span class="prog-delta slow">${progFmtSecs(latest.s - prev.s)} slower than previous</span>`;
       else delta = '<span class="prog-delta muted">same as previous</span>';
+      const rereadTag = list.length > 1 ? `<span class="prog-reread-tag">reread #${list.length}</span>` : '';
       return `<div class="prog-passage-row">
         <div class="prog-passage-main">
-          <span class="prog-passage-title">${escapeHtml(progLessonTitle(lesson))}</span>
+          <span class="prog-passage-title">${escapeHtml(progLessonTitle(lesson))}${rereadTag}</span>
           ${delta}
         </div>
         <span class="prog-passage-time">${progFmtSecs(latest.s)} · ${latest.cpm} CPM</span>
       </div>`;
     }).join('');
 
+  // First reads vs rereads stay distinct: a reread builds familiarity with
+  // a known passage and must not read as speed growth on unseen text.
+  const totalReads = speedAttempts.length;
+  const firstReads = byLesson.size;
+  const rereads = totalReads - firstReads;
   const speedSection = speedAttempts.length
     ? `${speedChart}
+       <div class="prog-note">${firstReads} passage${firstReads === 1 ? '' : 's'} timed · ${totalReads} measured read${totalReads === 1 ? '' : 's'}${rereads > 0 ? ` (${rereads} reread${rereads === 1 ? '' : 's'})` : ''}. Rereads build familiarity; first reads show speed on unseen text.</div>
        <div class="prog-subhead">Latest per passage</div>
        <div class="prog-passage-list">${passageRows}</div>`
     : `<div class="prog-empty">

@@ -90,6 +90,19 @@ export function addAttempt({ lessonId, seconds, chars, source, accuracy }) {
   return { attempt, previous };
 }
 
+// Attaches a later test score to an existing saved attempt on the same
+// passage, so a read saved with Stop & Save and a test completed right
+// after appear as one measured read with its comprehension score.
+export function attachAccuracy(lessonId, attemptId, accuracy) {
+  if (!lessonId || !attemptId || !Number.isFinite(accuracy) || accuracy < 0 || accuracy > 1) return false;
+  const list = loadAttempts();
+  const target = list.find(a => a.id === attemptId && a.lesson === lessonId);
+  if (!target) return false;
+  target.acc = Math.round(accuracy * 100) / 100;
+  saveAttempts(list);
+  return true;
+}
+
 // Union-merge remote attempts by id; neither side loses history.
 export function mergeAttempts(remote) {
   if (!Array.isArray(remote)) return false;

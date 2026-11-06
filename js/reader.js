@@ -7,7 +7,7 @@
 
 import { state } from './state.js';
 import { beginGistReviewSession, endGistReviewSession, scheduleGistSave } from './gist-sync.js';
-import { addAttempt, MIN_ATTEMPT_SECONDS } from './reading-times.js';
+import { addAttempt, attachAccuracy, MIN_ATTEMPT_SECONDS } from './reading-times.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js';
 import { renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
@@ -1090,6 +1090,12 @@ function renderBookPhase(container) {
           </div>
           ${renderFootnotesBlock(footnotes)}
         </div>
+        ${questions.length > 0 ? `
+          <div class="book-passage-actions">
+            <button class="btn btn-primary" onclick="bookGoToQuestions()">
+              <i class="fa-solid fa-pen-to-square"></i> Answer questions (${questions.length})
+            </button>
+          </div>` : ''}
       </div>`;
   } else if (section.id === 'drills') {
     bodyHtml = `
@@ -1926,13 +1932,22 @@ export function submitQuizAnswers() {
   });
 
   // Also log the measured attempt itself so Progress can show real trends.
-  addAttempt({
+  const recorded = addAttempt({
     lessonId: lesson.id,
     seconds: readerRuntime.elapsedSeconds,
     chars: readerRuntime.charCount,
     source: 'practice',
     accuracy
   });
+  if (!recorded
+      && readerRuntime.lastSavedAttemptLesson === lesson.id
+      && readerRuntime.lastSavedAttemptId) {
+    // The reading time was already captured by Stop & Save on the passage;
+    // link this test's score to that attempt instead of a duplicate record.
+    attachAccuracy(lesson.id, readerRuntime.lastSavedAttemptId, accuracy);
+  }
+  readerRuntime.lastSavedAttemptId = null;
+  readerRuntime.lastSavedAttemptLesson = null;
 
   readerRuntime.phase = 'review';
   readerRuntime.lastResults = {
@@ -2676,6 +2691,31 @@ function updateBookTimerChip() {
   if (saveBtn) saveBtn.disabled = t.elapsed < MIN_ATTEMPT_SECONDS;
 }
 
+// Direct route from the book passage to its questions (his ask 2026-11-06):
+// the timing happens on the passage itself and the test follows right there,
+// not only at the end of the lesson. When the passage self-timer measured a
+// real read, those active seconds carry into the graded session so the
+// recorded attempt links the test score to the actual reading time. When
+// nothing was measured the session stays untimed and no time record is
+// invented (the attempt store rejects sub-threshold seconds).
+export function bookGoToQuestions() {
+  if (readerRuntime.phase !== 'book' || !readerRuntime.lesson) return;
+  const t = bookTimerState();
+  const carried = t.elapsed >= MIN_ATTEMPT_SECONDS ? t.elapsed : 0;
+  resetBookTimer();
+  stopTimer();
+  beginGistReviewSession();
+  if (carried > 0) {
+    readerRuntime.elapsedSeconds = carried;
+    readerRuntime.readStartTime = Date.now() - carried * 1000;
+  }
+  // Already graded this session: reopen the graded feedback instead of a
+  // locked answer sheet whose Check button can no longer fire.
+  readerRuntime.phase = (readerRuntime.submitted && readerRuntime.lastResults) ? 'review' : 'answer';
+  renderWorkspace();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 export function bookTimerToggle() {
   const t = bookTimerState();
   if (t.running) {
@@ -2689,8 +2729,9 @@ export function bookTimerToggle() {
         return;
       }
       t.elapsed = Math.max(1, Math.round((Date.now() - t.startedAt) / 1000));
-      const timeEl = document.getElementById('book-timer-time');
-      if (timeEl) timeEl.textContent = formatTime(t.elapsed);
+      // Refresh the whole chip each tick, not just the time text: the Stop &
+      // Save button must unlock as soon as the read becomes measurable.
+      updateBookTimerChip();
     }, 1000);
   }
   updateBookTimerChip();
@@ -2715,6 +2756,10 @@ export function bookTimerStopSave() {
   t.elapsed = 0;
   updateBookTimerChip();
   if (!saved) return;
+  // Remember this saved read: if he answers this passage's questions next,
+  // the score attaches to this attempt instead of a second time record.
+  readerRuntime.lastSavedAttemptId = saved.attempt.id;
+  readerRuntime.lastSavedAttemptLesson = lesson.id;
   scheduleGistSave();
   flashBookTimerSaved(saved.attempt, saved.previous);
 }
@@ -3401,5 +3446,6 @@ if (typeof window !== 'undefined') {
   window.restartReadingWordDrill = restartReadingWordDrill;
   window.bookTimerToggle = bookTimerToggle;
   window.bookTimerStopSave = bookTimerStopSave;
+  window.bookGoToQuestions = bookGoToQuestions;
   window.bookTimerReset = bookTimerReset;
 }

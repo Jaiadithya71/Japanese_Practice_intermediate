@@ -1611,3 +1611,14 @@
   .prog-cov-label { width: 6.2rem; font-size: 0.8rem; }
   .prog-passage-time { font-size: 0.78rem; }
 }
+
+.prog-reread-tag {
+  margin-left: 0.45rem;
+  padding: 0.08rem 0.4rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  border: 1px solid var(--border, rgba(255,255,255,0.14));
+  vertical-align: middle;
+}
