@@ -771,10 +771,7 @@ export function renderStatsSegment() {
         <div class="cpm-header-row">
           <div class="cpm-title-group">
             <i class="fa-solid fa-gauge-high" style="color: #38bdf8;"></i>
-            <h3>Reading CPM Speed Benchmarks</h3>
-          </div>
-          <div class="cpm-target-tag">
-            Target: ${cpmData.targetCpm} Chars/Min (JLPT N3)
+            <h3>Reading Speed (measured)</h3>
           </div>
         </div>
 
@@ -847,25 +844,12 @@ function renderCpmChart(cpmData) {
     return `
       <div class="cpm-empty-note">
         <i class="fa-solid fa-book-reader"></i>
-        <p>No Dokkai passages recorded yet. Read passages in the <strong>Read tab</strong> to automatically track characters-per-minute speed against the 330 CPM benchmark.</p>
+        <p>No Dokkai passages recorded yet. Timed reads (Stop &amp; Save or a finished practice) build your real characters-per-minute history here.</p>
       </div>
     `;
   }
 
-  const target = cpmData.targetCpm || 330;
-  const pct = Math.min(100, Math.round((cpmData.avgCpm / target) * 100));
-
   return `
-    <div class="cpm-progress-wrap">
-      <div class="cpm-bar-header">
-        <span>Average Pace vs 330 CPM Standard</span>
-        <span class="cpm-pct-label ${pct >= 100 ? 'cpm-good' : ''}">${pct}% Target</span>
-      </div>
-      <div class="cpm-progress-track">
-        <div class="cpm-progress-fill ${pct >= 100 ? 'cpm-good' : ''}" style="width: ${pct}%;"></div>
-        <div class="cpm-target-pin" title="330 CPM Standard"></div>
-      </div>
-    </div>
     ${cpmData.recentPassages.length > 0 ? `
       <div class="cpm-recent-list">
         <div class="cpm-recent-title">Recent Passages Read:</div>
@@ -929,7 +913,6 @@ function computeReadingCpmStats() {
   const bestCpm = passagesRead > 0 ? Math.max(...cpms) : 0;
 
   return {
-    targetCpm: 330,
     avgCpm,
     bestCpm,
     passagesRead,
@@ -1597,15 +1580,25 @@ function progLessonTitle(lessonId) {
 function progBars(values, { max, target, targetLabel, suffix, goodAtOrAbove }) {
   if (!values.length) return '';
   const scaleMax = Math.max(max, target || 0, 1);
+  const showLabels = values.length <= 10;
   return `<div class="prog-bars" role="img" aria-label="${values.length} measurements, latest last">
     ${target ? `<div class="prog-target-line" style="bottom: ${Math.min(100, Math.round(target / scaleMax * 100))}%;" title="${targetLabel || 'Target'} ${target}${suffix}"></div>` : ''}
     ${values.map(v => {
       const h = Math.max(4, Math.round(v.value / scaleMax * 100));
       const good = goodAtOrAbove !== undefined && v.value >= goodAtOrAbove;
-      return `<div class="prog-bar${good ? ' prog-bar-good' : ''}" style="height: ${h}%;" title="${escapeAttr(v.title)}"></div>`;
+      return `<div class="prog-bar${good ? ' prog-bar-good' : ''}" style="height: ${h}%;" title="${escapeAttr(v.title)}">${showLabels ? `<span class="prog-bar-val">${v.value}${suffix || ''}</span>` : ''}</div>`;
     }).join('')}
   </div>
   <div class="prog-bars-axis"><span>${escapeHtml(values[0].axis)}</span><span>${escapeHtml(values[values.length - 1].axis)}</span></div>`;
+}
+
+// Sparse data is listed, not charted: a filled chart over one or two
+// same-day samples pretends a trend that does not exist yet.
+function progSparseList(values, unitNote) {
+  return `<div class="prog-sparse-list">
+    ${values.map(v => `<div class="prog-sparse-row"><span class="prog-sparse-val">${escapeHtml(v.label)}</span><span class="prog-sparse-meta">${escapeHtml(v.meta)}</span></div>`).join('')}
+  </div>
+  <div class="prog-note">A trend chart appears once you have ${unitNote} across different days. So far every measurement is from ${escapeHtml(values[0].axis)}.</div>`;
 }
 
 export function renderProgressSegment() {
@@ -1621,13 +1614,17 @@ export function renderProgressSegment() {
   const recent = speedAttempts.slice(-24);
   const sortedCpms = recent.map(a => a.cpm).sort((x, y) => x - y);
   const medianCpm = sortedCpms.length ? sortedCpms[Math.floor(sortedCpms.length / 2)] : 0;
-  const speedChart = recent.length
-    ? progBars(recent.map(a => ({
-        value: a.cpm,
-        axis: progDayLabel(a.ts),
-        title: `${progLessonTitle(a.lesson)} · ${a.cpm} CPM · ${progFmtSecs(a.s)} · ${progDayLabel(a.ts)}${a.src === 'practice' ? ' · timed practice' : ''}`
-      })), { max: Math.max(...recent.map(a => a.cpm)), target: medianCpm, targetLabel: 'Your median', suffix: ' CPM' })
-    : '';
+  const speedPoints = recent.map(a => ({
+    value: a.cpm,
+    axis: progDayLabel(a.ts),
+    label: `${a.cpm} CPM · ${progFmtSecs(a.s)}`,
+    meta: `${progLessonTitle(a.lesson)} · ${progDayLabel(a.ts)}${a.src === 'practice' ? ' · timed practice' : ''}`,
+    title: `${progLessonTitle(a.lesson)} · ${a.cpm} CPM · ${progFmtSecs(a.s)} · ${progDayLabel(a.ts)}${a.src === 'practice' ? ' · timed practice' : ''}`
+  }));
+  const speedDistinctDays = new Set(recent.map(a => new Date(a.ts).toDateString())).size;
+  const speedChart = (recent.length >= 3 && speedDistinctDays >= 2)
+    ? progBars(speedPoints, { max: Math.max(...recent.map(a => a.cpm)), target: medianCpm, targetLabel: 'Your median', suffix: ' CPM' })
+    : (recent.length ? progSparseList(speedPoints, 'timed reads') : '');
 
   // Latest attempt per passage with honest previous comparison.
   const byLesson = new Map();
@@ -1675,13 +1672,17 @@ export function renderProgressSegment() {
   // ---- B. Comprehension accuracy ----
   const accAttempts = attempts.filter(a => typeof a.acc === 'number');
   const accRecent = accAttempts.slice(-24);
-  const accChart = accRecent.length
-    ? progBars(accRecent.map(a => ({
-        value: Math.round(a.acc * 100),
-        axis: progDayLabel(a.ts),
-        title: `${progLessonTitle(a.lesson)} · ${Math.round(a.acc * 100)}% · ${progDayLabel(a.ts)}`
-      })), { max: 100, target: 80, suffix: '%', goodAtOrAbove: 80 })
-    : '';
+  const accPoints = accRecent.map(a => ({
+    value: Math.round(a.acc * 100),
+    axis: progDayLabel(a.ts),
+    label: `${Math.round(a.acc * 100)}%`,
+    meta: `${progLessonTitle(a.lesson)} · ${progDayLabel(a.ts)}`,
+    title: `${progLessonTitle(a.lesson)} · ${Math.round(a.acc * 100)}% · ${progDayLabel(a.ts)}`
+  }));
+  const accDistinctDays = new Set(accRecent.map(a => new Date(a.ts).toDateString())).size;
+  const accChart = (accRecent.length >= 3 && accDistinctDays >= 2)
+    ? progBars(accPoints, { max: 100, target: 80, suffix: '%', goodAtOrAbove: 80 })
+    : (accRecent.length ? progSparseList(accPoints, 'graded practices') : '');
   let qAnswered = 0, qCorrect = 0;
   for (const key in stats) {
     if (!key.startsWith('R_Q:')) continue;
@@ -1772,7 +1773,7 @@ export function renderProgressSegment() {
       </div>
 
       <div class="stat-card prog-card">
-        <div class="prog-card-head"><i class="fa-solid fa-gauge-high" style="color: #38bdf8;"></i><h3>Reading speed</h3>${recent.length ? `<span class="prog-target-tag">median ${medianCpm} CPM</span>` : ''}</div>
+        <div class="prog-card-head"><i class="fa-solid fa-gauge-high" style="color: #38bdf8;"></i><h3>Reading speed</h3>${(recent.length >= 3 && speedDistinctDays >= 2) ? `<span class="prog-target-tag">median ${medianCpm} CPM</span>` : ''}</div>
         ${speedSection}
       </div>
 

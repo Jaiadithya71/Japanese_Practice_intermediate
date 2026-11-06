@@ -1622,3 +1622,49 @@
   border: 1px solid var(--border, rgba(255,255,255,0.14));
   vertical-align: middle;
 }
+
+/* Sticky More tabs must fully cover content scrolling beneath them */
+.me-segmented-control {
+  background: #111623;
+}
+
+.prog-bar {
+  position: relative;
+}
+.prog-bar-val {
+  position: absolute;
+  top: -1.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.prog-bars {
+  padding-top: 1.15rem;
+}
+.prog-sparse-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.prog-sparse-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 8px;
+}
+.prog-sparse-val {
+  font-weight: 700;
+  white-space: nowrap;
+}
+.prog-sparse-meta {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  text-align: right;
+}

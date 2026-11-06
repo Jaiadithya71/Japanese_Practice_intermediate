@@ -747,6 +747,7 @@ export function renderWorkspace() {
 
 function getBookSections(lesson) {
   const sentences = lesson.passage ? (lesson.passage.sentences || []) : [];
+  const questions = lesson.comprehensionQuestions || lesson.questions || [];
   const drills = lesson.drills || [];
   const vocabulary = lesson.vocabulary || [];
   const commentary = lesson.commentary;
@@ -755,6 +756,9 @@ function getBookSections(lesson) {
   if (lesson.readingStrategy) sections.push({ id: 'strategy', ja: '読解ストラテジー', en: 'Strategy', icon: 'fa-chess' });
   if (lesson.preReading) sections.push({ id: 'prereading', ja: '読む前に', en: 'Before Reading', icon: 'fa-lightbulb' });
   if (sentences.length > 0) sections.push({ id: 'passage', ja: '本文', en: 'Passage', icon: 'fa-book-open-reader' });
+  // Questions are the next page of the book, not a separate experience
+  // (his ask 2026-11-06): Passage -> Next -> Questions -> Drills...
+  if (questions.length > 0) sections.push({ id: 'questions', ja: '質問', en: `Questions (${questions.length})`, icon: 'fa-circle-question' });
   if (drills.length > 0) sections.push({ id: 'drills', ja: '練習', en: `Drills (${drills.length})`, icon: 'fa-pen-to-square' });
   // Key Vocabulary section removed at his ask (2026-11-03): every lesson word
   // is drilled from the Reading home word drills, so the in-book list was
@@ -784,6 +788,7 @@ export function bookNavSection(delta) {
   const cur = readerRuntime.bookSectionIndex ?? 0;
   const next = cur + delta;
   if (next >= 0 && next < sections.length) {
+    if (sections[next].id === 'questions') carryBookTimerToElapsed();
     readerRuntime.bookSectionIndex = next;
     renderWorkspace();
     scrollBookIntoView();
@@ -808,6 +813,7 @@ export function jumpReadingBookSection(i) {
   const sections = getBookSections(lesson);
   const n = Number(i);
   if (!Number.isInteger(n) || n < 0 || n >= sections.length) return;
+  if (sections[n].id === 'questions') carryBookTimerToElapsed();
   readerRuntime.bookSectionIndex = n;
   renderWorkspace();
   scrollBookIntoView();
@@ -1084,6 +1090,12 @@ function renderBookPhase(container) {
             <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
             <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
           </div>` : ''}
+        ${questions.length > 0 ? `
+          <div class="book-passage-actions book-passage-actions-top">
+            <button class="btn btn-sm btn-secondary" onclick="bookGoToQuestions()">
+              <i class="fa-solid fa-circle-question"></i> Questions (${questions.length}) <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>` : ''}
         <div class="passage-view-card">
           <div class="passage-scroll-pane font-ja" id="passage-content-area" style="font-size: ${1.2 * readerRuntime.settings.fontScale}rem; max-height: none;">
             ${sentences.map(sn => renderPassageSentenceHTML(sn, vocabMap, footnotes)).join('')}
@@ -1097,6 +1109,8 @@ function renderBookPhase(container) {
             </button>
           </div>` : ''}
       </div>`;
+  } else if (section.id === 'questions') {
+    bodyHtml = renderBookQuestionsSection(lesson, questions);
   } else if (section.id === 'drills') {
     bodyHtml = `
       <div class="book-section">
@@ -1221,7 +1235,7 @@ function renderBookPhase(container) {
               <i class="fa-solid fa-play"></i> Timed practice
             </button>` : ''}
           ${questions.length > 0 ? `
-            <button class="btn btn-ghost" onclick="skipToQuestions()">
+            <button class="btn btn-ghost" onclick="bookGoToQuestions()">
               Questions (${questions.length}) <i class="fa-solid fa-forward"></i>
             </button>` : ''}
           ${atEnd ? `
@@ -1239,7 +1253,7 @@ function renderBookPhase(container) {
           <button class="t-btn" id="book-timer-toggle" onclick="bookTimerToggle()" title="${bookTimerState().running ? 'Pause timer' : 'Start timer'}"><i class="fa-solid ${bookTimerState().running ? 'fa-pause' : 'fa-play'}"></i></button>
           <span class="t-label book-timer-time" id="book-timer-time">${formatTime(bookTimerState().elapsed)}</span>
           <button class="t-btn" id="book-timer-reset" onclick="bookTimerReset()" title="Reset timer"${(bookTimerState().elapsed === 0 && !bookTimerState().running) ? ' disabled' : ''}><i class="fa-solid fa-rotate-left"></i></button>
-          <button class="t-btn book-timer-save" id="book-timer-save" onclick="bookTimerStopSave()" title="Stop and save this reading time"${bookTimerState().elapsed < MIN_ATTEMPT_SECONDS ? ' disabled' : ''}><i class="fa-solid fa-stop"></i></button>
+          <button class="t-btn book-timer-save" id="book-timer-save" onclick="bookTimerStopSave()" title="Stop and save this reading time"${bookTimerState().elapsed < MIN_ATTEMPT_SECONDS ? ' disabled' : ''}><i class="fa-solid fa-stop"></i><span class="book-timer-save-label">Save</span></button>
         </div>
         <div class="toolbar-btn-group">
           <button class="t-btn" title="Decrease font size" onclick="adjustFontScale(-0.1)">A−</button>
@@ -1836,7 +1850,7 @@ function renderQuestionCardHTML(q, idx, isSingle) {
                     onclick="selectQuizOption('${qId}', ${optVal})">
               <span class="opt-num-badge">${optVal}</span>
               <div class="opt-text-wrap">
-                <span class="opt-text-ja">${bookJaText(opt, optionsRuby[optIdx])}</span>
+                <span class="opt-text-ja">${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
                 ${readerRuntime.showOptionEn && optEn ? `<span class="opt-text-en">${optEn}</span>` : ''}
               </div>
             </button>
@@ -1859,9 +1873,11 @@ export function selectQuizOption(qId, optVal) {
     if (target) target.classList.add('selected');
   }
 
-  // Single question locks immediately (doc 04 §4.3)
+  // Single question locks immediately (doc 04 §4.3); inside a book the
+  // grading stays in the book sequence instead of leaving for a review page.
   if (readerRuntime.shuffledQuestions.length === 1) {
-    submitQuizAnswers();
+    if (readerRuntime.phase === 'book') gradeBookQuestions();
+    else submitQuizAnswers();
   }
 }
 
@@ -2070,8 +2086,7 @@ function renderReviewPhase(container) {
           <div>
             <h2>${accuracy >= 0.8 ? '🎉 Great Job!' : '📚 Keep Practicing!'}</h2>
             <p style="color: var(--text-dim); margin-top: 0.25rem;">
-              Read ${readerRuntime.charCount} characters in ${formatTime(readerRuntime.elapsedSeconds)} 
-              (Target: ${formatTime(readerRuntime.targetSeconds)}).
+              Read ${readerRuntime.charCount} characters in ${formatTime(readerRuntime.elapsedSeconds)}.
             </p>
           </div>
         </div>
@@ -2079,13 +2094,13 @@ function renderReviewPhase(container) {
         <div class="reading-stat-grid" style="margin-top: 1.5rem;">
           <div class="reading-stat-box">
             <span class="stat-label"><i class="fa-solid fa-gauge-high"></i> Reading Pace</span>
-            <span class="stat-val ${cpm >= targetCpm ? 'cpm-good' : ''}">${cpm} CPM</span>
-            <small style="color: var(--text-dim);">Target: ${targetCpm} CPM</small>
+            <span class="stat-val">${cpm} CPM</span>
+            <small style="color: var(--text-dim);">measured pace</small>
           </div>
           <div class="reading-stat-box">
             <span class="stat-label"><i class="fa-solid fa-stopwatch"></i> Elapsed Time</span>
             <span class="stat-val">${formatTime(readerRuntime.elapsedSeconds)}</span>
-            <small style="color: var(--text-dim);">${readerRuntime.elapsedSeconds <= readerRuntime.targetSeconds ? 'Under target' : 'Over target'}</small>
+            <small style="color: var(--text-dim);">active reading time</small>
           </div>
           <div class="reading-stat-box">
             <span class="stat-label"><i class="fa-solid fa-rotate"></i> Layer A Re-read</span>
@@ -2337,8 +2352,14 @@ export function showWordGloss(term, anchorEl, reading) {
   }
 
   readerRuntime.activeGlossWord = (vocab.fallback || vocab.extended) ? null : vocab;
-  const container = document.getElementById('word-gloss-sheet-container');
-  if (!container) return;
+  let container = document.getElementById('word-gloss-sheet-container');
+  if (!container) {
+    // Some phases (answers, review) never rendered the container, which made
+    // underlined-word taps silently dead there. Create it on demand instead.
+    container = document.createElement('div');
+    container.id = 'word-gloss-sheet-container';
+    document.body.appendChild(container);
+  }
 
   const kanjiParts = vocabularyKanjiMeanings(vocab.term);
 
@@ -2694,29 +2715,183 @@ function updateBookTimerChip() {
   if (saveBtn) saveBtn.disabled = t.elapsed < MIN_ATTEMPT_SECONDS;
 }
 
-// Direct route from the book passage to its questions (his ask 2026-11-06):
-// the timing happens on the passage itself and the test follows right there,
-// not only at the end of the lesson. When the passage self-timer measured a
-// real read, those active seconds carry into the graded session so the
-// recorded attempt links the test score to the actual reading time. When
-// nothing was measured the session stays untimed and no time record is
+// Questions live inside the book sequence (his ask 2026-11-06), right after
+// the passage. When the passage self-timer measured a real read, those active
+// seconds are carried over ONCE so grading can link the score to the actual
+// reading time; the timer stops so question-answering time never inflates it.
+// When nothing was measured the session stays untimed and no record is
 // invented (the attempt store rejects sub-threshold seconds).
-export function bookGoToQuestions() {
-  if (readerRuntime.phase !== 'book' || !readerRuntime.lesson) return;
+function carryBookTimerToElapsed() {
   const t = bookTimerState();
   const carried = t.elapsed >= MIN_ATTEMPT_SECONDS ? t.elapsed : 0;
-  resetBookTimer();
-  stopTimer();
-  beginGistReviewSession();
+  stopBookTimer();
   if (carried > 0) {
     readerRuntime.elapsedSeconds = carried;
     readerRuntime.readStartTime = Date.now() - carried * 1000;
   }
-  // Already graded this session: reopen the graded feedback instead of a
-  // locked answer sheet whose Check button can no longer fire.
-  readerRuntime.phase = (readerRuntime.submitted && readerRuntime.lastResults) ? 'review' : 'answer';
+}
+
+// Jump straight to this lesson's questions section from the passage.
+export function bookGoToQuestions() {
+  if (readerRuntime.phase !== 'book' || !readerRuntime.lesson) return;
+  const sections = getBookSections(readerRuntime.lesson);
+  const qIdx = sections.findIndex(s => s.id === 'questions');
+  if (qIdx < 0) return;
+  carryBookTimerToElapsed();
+  readerRuntime.bookSectionIndex = qIdx;
   renderWorkspace();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  scrollBookIntoView();
+}
+
+function renderBookQuestionsSection(lesson, questions) {
+  const sentences = lesson.passage ? (lesson.passage.sentences || []) : [];
+  const graded = readerRuntime.submitted && readerRuntime.lastResults && !readerRuntime.lastResults.ungraded;
+  let inner = '';
+  if (!graded) {
+    const peek = readerRuntime.showPassageInAnswer;
+    inner = `
+      <div class="peek-passage-toggle-row" style="margin-bottom: 0.6rem;">
+        <button class="btn btn-sm btn-ghost" onclick="togglePassagePeek()">
+          <i class="fa-solid fa-book"></i> ${peek ? 'Hide Passage' : 'Peek Passage'}
+        </button>
+        <button class="btn btn-sm btn-ghost" onclick="toggleOptionEnglish()">
+          <i class="fa-solid fa-language"></i> EN Translations: ${readerRuntime.showOptionEn ? 'ON' : 'OFF'}
+        </button>
+        ${bookFuriganaToggleBtn()}
+      </div>
+      ${peek ? `
+        <div class="passage-view-card" style="margin-bottom: 0.8rem;">
+          <div class="font-ja" style="line-height: 1.85; max-height: 240px; overflow-y: auto; padding: 0.75rem;">
+            ${sentences.map(s => `<div>${bookJaText(s.text_ja, s.ruby_html)}</div>`).join('')}
+          </div>
+        </div>` : ''}
+      <div class="questions-list">
+        ${questions.map((q, idx) => renderQuestionCardHTML(q, idx, questions.length === 1)).join('')}
+      </div>
+      ${questions.length > 1 ? `
+        <div class="questions-sheet-actions" style="margin-top: 0.8rem;">
+          <button class="btn btn-primary" onclick="gradeBookQuestions()">
+            <i class="fa-solid fa-check"></i> Check Answers
+          </button>
+        </div>` : ''}
+      <p class="book-questions-hint">Tapping an underlined word shows its meaning; it never selects an answer.${readerRuntime.elapsedSeconds > 0 ? ` Your measured reading time (${formatTime(readerRuntime.elapsedSeconds)}) is saved with your score.` : ''}</p>`;
+  } else {
+    const r = readerRuntime.lastResults;
+    inner = `
+      <div class="book-q-result-summary">
+        <span class="book-q-result-score">${r.correctCount}/${r.totalQuestions} · ${Math.round(r.accuracy * 100)}%</span>
+        <span class="book-q-result-meta">${readerRuntime.elapsedSeconds > 0 ? `reading time ${formatTime(readerRuntime.elapsedSeconds)} saved with this score` : 'score saved'}</span>
+      </div>
+      <div class="questions-list">
+        ${questions.map((q, idx) => renderBookQuestionResult(q, idx)).join('')}
+      </div>`;
+  }
+  return `
+    <div class="book-section">
+      <div class="book-section-label"><i class="fa-solid fa-circle-question"></i> 質問 Questions (${questions.length})</div>
+      ${inner}
+    </div>`;
+}
+
+function renderBookQuestionResult(q, idx) {
+  const qId = q.id || `q_${idx + 1}`;
+  const userChoice = readerRuntime.selectedAnswers[qId];
+  const evaluation = evaluateQuestionAnswer(q, userChoice);
+  const correctAnswer = evaluation.correctAnswer;
+  const isCorrect = evaluation.isCorrect;
+  const qType = getQuestionType(q);
+  const options = q.options || [];
+  const optionsRuby = q.options_ruby || [];
+  return `
+    <div class="review-question-card ${isCorrect ? 'card-correct' : 'card-incorrect'}">
+      <div class="review-q-header">
+        <span class="q-verdict ${isCorrect ? 'verdict-correct' : 'verdict-incorrect'}">
+          <i class="fa-solid ${isCorrect ? 'fa-check' : 'fa-xmark'}"></i> ${isCorrect ? 'Correct' : 'Incorrect'}
+        </span>
+        <span class="dokkai-genre-pill">${qType.label_ja}</span>
+      </div>
+      <div class="question-prompt-text font-ja" style="margin-top: 0.5rem;">
+        ${idx + 1}. ${glossifyBookText(bookJaText(q.question_ja || '', q.questionText_ja_ruby || q.question_ja_ruby))}
+      </div>
+      ${q.question_en ? `<div class="question-prompt-sub">${q.question_en}</div>` : ''}
+      <div class="review-options-display">
+        ${options.map((opt, optIdx) => {
+          const optVal = optIdx + 1;
+          const isThisCorrect = optVal === correctAnswer;
+          const isUserPick = optVal === userChoice;
+          let optClass = 'opt-neutral';
+          if (isThisCorrect) optClass = 'opt-is-correct';
+          else if (isUserPick) optClass = 'opt-is-wrong';
+          return `
+            <div class="review-option-row ${optClass} font-ja">
+              <span class="badge">${optVal}</span>
+              <span>${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
+              ${isThisCorrect ? '<span class="status-tag correct"><i class="fa-solid fa-check"></i> Answer</span>' : ''}
+              ${isUserPick && !isThisCorrect ? '<span class="status-tag incorrect"><i class="fa-solid fa-xmark"></i> Your pick</span>' : ''}
+            </div>`;
+        }).join('')}
+      </div>
+      <div class="quiz-explanation-box">
+        <strong style="color: var(--green);"><i class="fa-solid fa-circle-check"></i> 正解: Option ${correctAnswer}</strong>
+        <p class="font-ja" style="margin-top: 0.4rem; line-height: 1.7;">${glossifyBookText(bookJaText(q.explanation_ja || '', q.explanation_ja_ruby))}</p>
+        ${q.explanation_en ? `<p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">${q.explanation_en}</p>` : ''}
+      </div>
+    </div>`;
+}
+
+// Grade inside the book sequence: same scoring, stats, and attempt linking as
+// the timed-practice flow, but the reader stays in the book.
+export function gradeBookQuestions() {
+  if (!readerRuntime.lesson || readerRuntime.submitted) return;
+  const lesson = readerRuntime.lesson;
+  const questions = readerRuntime.shuffledQuestions;
+  if (questions.length === 0 || readerRuntime.charCount === 0) return;
+  readerRuntime.submitted = true;
+  state.readingQuizSubmitted = true;
+
+  let correctCount = 0;
+  const results = [];
+  questions.forEach((q, idx) => {
+    const qId = q.id || `q_${idx + 1}`;
+    const userChoice = readerRuntime.selectedAnswers[qId];
+    const evaluation = evaluateQuestionAnswer(q, userChoice);
+    const srsKey = `R_Q:${qId}`;
+    if (evaluation.isCorrect) {
+      correctCount++;
+      updateItemStats(srsKey, 3);
+    } else {
+      updateItemStats(srsKey, 1);
+      toggleItemHard(srsKey);
+    }
+    results.push({ question: q, evaluation, userChoice, correctAnswer: evaluation.correctAnswer });
+  });
+
+  const accuracy = questions.length > 0 ? (correctCount / questions.length) : 0;
+  const cpm = calculateCpm(readerRuntime.charCount, readerRuntime.elapsedSeconds);
+  updateLayerARereadPassage(lesson.id, {
+    accuracy,
+    cpm,
+    elapsedSeconds: readerRuntime.elapsedSeconds,
+    targetSeconds: readerRuntime.targetSeconds
+  });
+  const recorded = addAttempt({
+    lessonId: lesson.id,
+    seconds: readerRuntime.elapsedSeconds,
+    chars: readerRuntime.charCount,
+    source: 'practice',
+    accuracy
+  });
+  if (!recorded
+      && readerRuntime.lastSavedAttemptLesson === lesson.id
+      && readerRuntime.lastSavedAttemptId) {
+    attachAccuracy(lesson.id, readerRuntime.lastSavedAttemptId, accuracy);
+  }
+  readerRuntime.lastSavedAttemptId = null;
+  readerRuntime.lastSavedAttemptLesson = null;
+  readerRuntime.lastResults = { correctCount, totalQuestions: questions.length, accuracy, cpm, results };
+  endGistReviewSession();
+  renderWorkspace();
+  scrollBookIntoView();
 }
 
 export function bookTimerToggle() {

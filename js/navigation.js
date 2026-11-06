@@ -42,7 +42,7 @@ export const VIEW_TO_TAB = {
   class: 'today',
   'class-track': 'today',
   test: 'today',
-  me: 'today',
+  me: 'more',
   'hard-words': 'today'
 };
 

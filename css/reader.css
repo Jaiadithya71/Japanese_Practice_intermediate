@@ -584,3 +584,35 @@
   padding: 0.55rem 1.1rem;
   font-size: 0.92rem;
 }
+
+/* Questions as a page of the book */
+.book-passage-actions-top {
+  margin: 0 0 0.6rem;
+  justify-content: flex-end;
+}
+.book-timer-save-label {
+  margin-left: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.book-questions-hint {
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  text-align: center;
+}
+.book-q-result-summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+.book-q-result-score {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+.book-q-result-meta {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
