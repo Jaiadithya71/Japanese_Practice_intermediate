@@ -253,3 +253,28 @@
   align-items: center;
   margin-bottom: 1.5rem;
 }
+
+/* Weak Points header: wrap title and actions on phones so nothing clips */
+@media (max-width: 600px) {
+  .hard-words-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .hard-words-title h2 {
+    font-size: 1.15rem !important;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+  }
+  .hard-words-header > div[style*="display: flex"] {
+    flex-wrap: wrap;
+  }
+  .hard-words-header .btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    white-space: normal;
+    text-align: center;
+  }
+}

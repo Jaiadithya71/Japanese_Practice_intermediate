@@ -1253,7 +1253,7 @@ function renderBookPhase(container) {
           <button class="t-btn" id="book-timer-toggle" onclick="bookTimerToggle()" title="${bookTimerState().running ? 'Pause timer' : 'Start timer'}"><i class="fa-solid ${bookTimerState().running ? 'fa-pause' : 'fa-play'}"></i></button>
           <span class="t-label book-timer-time" id="book-timer-time">${formatTime(bookTimerState().elapsed)}</span>
           <button class="t-btn" id="book-timer-reset" onclick="bookTimerReset()" title="Reset timer"${(bookTimerState().elapsed === 0 && !bookTimerState().running) ? ' disabled' : ''}><i class="fa-solid fa-rotate-left"></i></button>
-          <button class="t-btn book-timer-save" id="book-timer-save" onclick="bookTimerStopSave()" title="Stop and save this reading time"${bookTimerState().elapsed < MIN_ATTEMPT_SECONDS ? ' disabled' : ''}><i class="fa-solid fa-stop"></i><span class="book-timer-save-label">Save</span></button>
+          <button class="t-btn book-timer-save" id="book-timer-save" onclick="bookTimerStopSave()" title="Stop and save this reading time" aria-label="Stop and save this reading time"${bookTimerState().elapsed < MIN_ATTEMPT_SECONDS ? ' disabled' : ''}><i class="fa-solid fa-stop"></i><span class="book-timer-save-label">Stop &amp; Save</span></button>
         </div>
         <div class="toolbar-btn-group">
           <button class="t-btn" title="Decrease font size" onclick="adjustFontScale(-0.1)">A−</button>
@@ -2200,10 +2200,14 @@ function renderReviewQuestionHTML(res, idx) {
           if (isThisCorrect) optClass = 'opt-is-correct';
           else if (isUserPick) optClass = 'opt-is-wrong';
 
+          const optEn = (q.options_en || [])[optIdx] || '';
           return `
             <div class="review-option-row ${optClass} font-ja">
               <span class="badge">${optVal}</span>
-              <span>${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
+              <span class="review-option-texts">
+                <span>${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
+                ${optEn ? `<span class="review-option-en">${optEn}</span>` : ''}
+              </span>
               ${isThisCorrect ? '<span class="status-tag correct"><i class="fa-solid fa-check"></i> Answer</span>' : ''}
               ${isUserPick && !isThisCorrect ? '<span class="status-tag incorrect"><i class="fa-solid fa-xmark"></i> Your pick</span>' : ''}
             </div>
@@ -2822,10 +2826,14 @@ function renderBookQuestionResult(q, idx) {
           let optClass = 'opt-neutral';
           if (isThisCorrect) optClass = 'opt-is-correct';
           else if (isUserPick) optClass = 'opt-is-wrong';
+          const optEn = (q.options_en || [])[optIdx] || '';
           return `
             <div class="review-option-row ${optClass} font-ja">
               <span class="badge">${optVal}</span>
-              <span>${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
+              <span class="review-option-texts">
+                <span>${glossifyBookText(bookJaText(opt, optionsRuby[optIdx]))}</span>
+                ${optEn ? `<span class="review-option-en">${optEn}</span>` : ''}
+              </span>
               ${isThisCorrect ? '<span class="status-tag correct"><i class="fa-solid fa-check"></i> Answer</span>' : ''}
               ${isUserPick && !isThisCorrect ? '<span class="status-tag incorrect"><i class="fa-solid fa-xmark"></i> Your pick</span>' : ''}
             </div>`;

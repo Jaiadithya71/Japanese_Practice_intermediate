@@ -631,3 +631,17 @@
   font-size: 0.82rem;
   color: var(--text-dim);
 }
+
+/* Graded cards: per-option English translation under the Japanese text */
+.review-option-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+  flex: 1;
+}
+.review-option-en {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.4;
+}
