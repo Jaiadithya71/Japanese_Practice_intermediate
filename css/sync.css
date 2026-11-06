@@ -31,3 +31,7 @@
 .n3s-kanji-indicator.n3s-error{color:#f87171}.n3s-kanji-indicator.n3s-ok{color:#34d399}
 #view-kanji>.view-header{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:.5rem;text-align:left}#view-kanji>.view-header .view-title-group{align-items:flex-start;text-align:left}
 @media(max-width:900px){body:has(#view-kanji.active) #n3sync-mobile{display:none!important}}
+
+/* Me view has its own Configure Gist Sync entry in Settings; the floating pill
+   overlaps the sticky Settings tab at phone widths, so it stays hidden there. */
+@media(max-width:900px){body:has(#view-me.active) #n3sync-mobile{display:none!important}}

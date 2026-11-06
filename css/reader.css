@@ -616,3 +616,18 @@
   font-size: 0.8rem;
   color: var(--text-dim);
 }
+
+/* Graded cards: explanation stays available but closed by default */
+.quiz-why-box summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--green);
+  list-style: none;
+}
+.quiz-why-box summary::-webkit-details-marker { display: none; }
+.quiz-why-box summary .quiz-why-answer-tag {
+  margin-left: 0.4rem;
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+}

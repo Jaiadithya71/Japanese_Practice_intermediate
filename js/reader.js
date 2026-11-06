@@ -2211,13 +2211,13 @@ function renderReviewQuestionHTML(res, idx) {
         }).join('')}
       </div>
 
-      <div class="quiz-explanation-box">
-        <strong style="color: var(--green);"><i class="fa-solid fa-circle-check"></i> 正解: Option ${correctAnswer}</strong>
+      <details class="quiz-explanation-box quiz-why-box">
+        <summary><i class="fa-solid fa-circle-question"></i> Why? <span class="quiz-why-answer-tag">正解: Option ${correctAnswer}</span></summary>
         <p class="font-ja" style="margin-top: 0.4rem; line-height: 1.7;">${glossifyBookText(bookJaText(q.explanation_ja || '', q.explanation_ja_ruby))}</p>
         ${q.explanation_en ? `
           <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">${q.explanation_en}</p>
         ` : ''}
-      </div>
+      </details>
     </div>
   `;
 }
@@ -2831,11 +2831,11 @@ function renderBookQuestionResult(q, idx) {
             </div>`;
         }).join('')}
       </div>
-      <div class="quiz-explanation-box">
-        <strong style="color: var(--green);"><i class="fa-solid fa-circle-check"></i> 正解: Option ${correctAnswer}</strong>
+      <details class="quiz-explanation-box quiz-why-box">
+        <summary><i class="fa-solid fa-circle-question"></i> Why? <span class="quiz-why-answer-tag">正解: Option ${correctAnswer}</span></summary>
         <p class="font-ja" style="margin-top: 0.4rem; line-height: 1.7;">${glossifyBookText(bookJaText(q.explanation_ja || '', q.explanation_ja_ruby))}</p>
         ${q.explanation_en ? `<p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.35rem;">${q.explanation_en}</p>` : ''}
-      </div>
+      </details>
     </div>`;
 }
 
