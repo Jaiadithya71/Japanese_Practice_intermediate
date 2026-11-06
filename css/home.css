@@ -335,3 +335,13 @@
 .home-lesson-ab-seg.has-hard .home-lesson-ab-dot { background: #ef4444; }
 .home-lesson-ab-seg.all-done:not(.selected) .home-lesson-ab-dot { background: #10b981; }
 
+
+.home-vocab-status{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:.7rem .85rem;margin:0 0 1rem}
+.home-vocab-status h3{margin:0 0 .5rem;color:#fff;font-size:.9rem}
+.hvs-row{display:flex;gap:.6rem;align-items:center}.hvs-row+.hvs-row{margin-top:.6rem}
+.hvs-label{flex:0 0 3.6rem;font-size:.7rem;font-weight:700;color:var(--text-muted);line-height:1.2}
+.hvs-main{flex:1;min-width:0}
+.hvs-bar{display:flex;height:6px;border-radius:99px;overflow:hidden;background:rgba(255,255,255,.08)}
+.hvs-seg.hvs-mastered{background:#34d399}.hvs-seg.hvs-learning{background:#fbbf24}.hvs-seg.hvs-hard{background:#f87171}
+.hvs-counts{display:flex;flex-wrap:wrap;gap:.1rem .6rem;margin-top:.3rem;font-size:.68rem;color:var(--text-muted)}
+.hvs-counts b{font-size:.82rem}.hvs-counts .hvs-mastered b{color:#34d399}.hvs-counts .hvs-learning b{color:#fbbf24}.hvs-counts .hvs-hard b{color:#f87171}.hvs-counts .hvs-unseen b{color:#cbd5e1}

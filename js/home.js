@@ -30,6 +30,7 @@ export function renderHomeView() {
     state.homePickerInitialized = true;
   }
   renderLessonGrid();
+  renderHomeVocabStatus();
   renderHomeActivity();
   updatePillarCards();
   updateHomeLessonControls();
@@ -326,4 +327,29 @@ export function renderHomeActivity() {
   const today = document.getElementById('home-reviews-today');
   if (streak) streak.textContent = getCurrentStreak();
   if (today) today.textContent = getDay(istDateKey()).reviews;
+}
+
+
+/* Compact vocab status above Study activity. A (meaning/kanji front) and B (kana front,
+   :kana keys) are counted separately per word; nothing is merged or written. */
+export function renderHomeVocabStatus() {
+  const el = document.getElementById('hvs-rows');
+  if (!el) return;
+  const tracks = [['A', state.studyDirection, 'Part A'], ['B', 'kana-en', 'Part B \u00b7 kana']];
+  el.innerHTML = tracks.map(([id, dir, label]) => {
+    const c = { mastered: 0, learning: 0, hard: 0, unseen: 0 };
+    let total = 0;
+    for (const chId in state.vocabDB) for (const w of state.vocabDB[chId]) {
+      total++;
+      const st = getWordStatus(w.id, dir);
+      c[st === 'mastered' || st === 'hard' || st === 'learning' ? st : 'unseen']++;
+    }
+    const pct = n => (total ? (n / total) * 100 : 0).toFixed(2);
+    const seg = k => `<span class="hvs-seg hvs-${k}" style="width:${pct(c[k])}%"></span>`;
+    return `<div class="hvs-row" aria-label="${label}: ${c.mastered} mastered, ${c.learning} learning, ${c.hard} hard, ${c.unseen} new of ${total}">
+      <div class="hvs-label">${label}</div>
+      <div class="hvs-main"><div class="hvs-bar">${seg('mastered')}${seg('learning')}${seg('hard')}</div>
+      <div class="hvs-counts"><span class="hvs-mastered"><b>${c.mastered}</b> mastered</span><span class="hvs-learning"><b>${c.learning}</b> learning</span><span class="hvs-hard"><b>${c.hard}</b> hard</span><span class="hvs-unseen"><b>${c.unseen}</b> new</span></div></div>
+    </div>`;
+  }).join('');
 }
