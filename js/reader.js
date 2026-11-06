@@ -2198,7 +2198,6 @@ export function showWordGloss(term, anchorEl, reading) {
         </div>
         <button class="btn btn-xs btn-ghost" onclick="closeWordGloss()"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      ${vocab.extended ? `<div class="gloss-source-note" style="color: var(--text-dim); font-size: 0.75rem; margin-bottom: 0.25rem;">General dictionary meaning, not from this textbook's word list.</div>` : ''}
       ${vocab.meaning ? `<div class="gloss-meaning-text">${vocab.meaning}</div>` : `
         <div class="gloss-meaning-text" style="color: var(--text-dim); font-size: 0.85rem;">
           Not in the app's word list yet. ${vocab.reading ? 'Reading from the passage furigana; ' : ''}Kanji-by-kanji hints below (not a literal translation).
@@ -2758,7 +2757,6 @@ function ensureReaderStyles() {
     }
     .gloss-term-fallback {
       border-bottom-style: dotted;
-      color: var(--text-dim);
     }
     .reading-sticky-toolbar {
       position: sticky;
