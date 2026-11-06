@@ -1572,7 +1572,7 @@ function escapeAttr(str) {
 // history exists yet the panel says so instead of inventing it.
 // =======================================================
 
-const PROGRESS_TARGET_CPM = 330;
+// No external speed benchmark: his own median is the only baseline shown.
 
 function progFmtSecs(s) {
   if (!Number.isFinite(s)) return '-';
@@ -1594,11 +1594,11 @@ function progLessonTitle(lessonId) {
   return lesson?.title_en || lesson?.title_ja || lesson?.title || lessonId;
 }
 
-function progBars(values, { max, target, suffix, goodAtOrAbove }) {
+function progBars(values, { max, target, targetLabel, suffix, goodAtOrAbove }) {
   if (!values.length) return '';
   const scaleMax = Math.max(max, target || 0, 1);
   return `<div class="prog-bars" role="img" aria-label="${values.length} measurements, latest last">
-    ${target ? `<div class="prog-target-line" style="bottom: ${Math.min(100, Math.round(target / scaleMax * 100))}%;" title="Target ${target}${suffix}"></div>` : ''}
+    ${target ? `<div class="prog-target-line" style="bottom: ${Math.min(100, Math.round(target / scaleMax * 100))}%;" title="${targetLabel || 'Target'} ${target}${suffix}"></div>` : ''}
     ${values.map(v => {
       const h = Math.max(4, Math.round(v.value / scaleMax * 100));
       const good = goodAtOrAbove !== undefined && v.value >= goodAtOrAbove;
@@ -1619,12 +1619,14 @@ export function renderProgressSegment() {
   // ---- A. Reading speed over time (measured attempts only) ----
   const speedAttempts = attempts.filter(a => a.cpm > 0);
   const recent = speedAttempts.slice(-24);
+  const sortedCpms = recent.map(a => a.cpm).sort((x, y) => x - y);
+  const medianCpm = sortedCpms.length ? sortedCpms[Math.floor(sortedCpms.length / 2)] : 0;
   const speedChart = recent.length
     ? progBars(recent.map(a => ({
         value: a.cpm,
         axis: progDayLabel(a.ts),
         title: `${progLessonTitle(a.lesson)} · ${a.cpm} CPM · ${progFmtSecs(a.s)} · ${progDayLabel(a.ts)}${a.src === 'practice' ? ' · timed practice' : ''}`
-      })), { max: Math.max(...recent.map(a => a.cpm)), target: PROGRESS_TARGET_CPM, suffix: ' CPM', goodAtOrAbove: PROGRESS_TARGET_CPM })
+      })), { max: Math.max(...recent.map(a => a.cpm)), target: medianCpm, targetLabel: 'Your median', suffix: ' CPM' })
     : '';
 
   // Latest attempt per passage with honest previous comparison.
@@ -1640,11 +1642,11 @@ export function renderProgressSegment() {
     .map(({ lesson, list, latest }) => {
       const prev = list.length > 1 ? list[list.length - 2] : null;
       let delta;
-      if (!prev) delta = '<span class="prog-delta muted">first timed read</span>';
+      if (!prev) delta = '<span class="prog-delta muted">first recorded attempt</span>';
       else if (latest.s < prev.s) delta = `<span class="prog-delta good">${progFmtSecs(prev.s - latest.s)} faster than previous</span>`;
       else if (latest.s > prev.s) delta = `<span class="prog-delta slow">${progFmtSecs(latest.s - prev.s)} slower than previous</span>`;
       else delta = '<span class="prog-delta muted">same as previous</span>';
-      const rereadTag = list.length > 1 ? `<span class="prog-reread-tag">reread #${list.length}</span>` : '';
+      const rereadTag = list.length > 1 ? `<span class="prog-reread-tag">recorded read #${list.length}</span>` : '';
       return `<div class="prog-passage-row">
         <div class="prog-passage-main">
           <span class="prog-passage-title">${escapeHtml(progLessonTitle(lesson))}${rereadTag}</span>
@@ -1654,14 +1656,15 @@ export function renderProgressSegment() {
       </div>`;
     }).join('');
 
-  // First reads vs rereads stay distinct: a reread builds familiarity with
-  // a known passage and must not read as speed growth on unseen text.
+  // First recorded attempts and repeats stay distinct: a repeat re-reads a
+  // known passage, so it cannot be compared with a passage's first recorded
+  // read as if both were the same task.
   const totalReads = speedAttempts.length;
   const firstReads = byLesson.size;
   const rereads = totalReads - firstReads;
   const speedSection = speedAttempts.length
     ? `${speedChart}
-       <div class="prog-note">${firstReads} passage${firstReads === 1 ? '' : 's'} timed · ${totalReads} measured read${totalReads === 1 ? '' : 's'}${rereads > 0 ? ` (${rereads} reread${rereads === 1 ? '' : 's'})` : ''}. Rereads build familiarity; first reads show speed on unseen text.</div>
+       <div class="prog-note">${firstReads} passage${firstReads === 1 ? '' : 's'} timed · ${totalReads} measured read${totalReads === 1 ? '' : 's'}${rereads > 0 ? ` (${rereads} repeat${rereads === 1 ? '' : 's'})` : ''}. Repeats re-read a known passage; compare like for like, not against a first recorded read.</div>
        <div class="prog-subhead">Latest per passage</div>
        <div class="prog-passage-list">${passageRows}</div>`
     : `<div class="prog-empty">
@@ -1769,7 +1772,7 @@ export function renderProgressSegment() {
       </div>
 
       <div class="stat-card prog-card">
-        <div class="prog-card-head"><i class="fa-solid fa-gauge-high" style="color: #38bdf8;"></i><h3>Reading speed</h3><span class="prog-target-tag">Target ${PROGRESS_TARGET_CPM} CPM</span></div>
+        <div class="prog-card-head"><i class="fa-solid fa-gauge-high" style="color: #38bdf8;"></i><h3>Reading speed</h3>${recent.length ? `<span class="prog-target-tag">median ${medianCpm} CPM</span>` : ''}</div>
         ${speedSection}
       </div>
 

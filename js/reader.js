@@ -2681,7 +2681,10 @@ function updateBookTimerChip() {
   const timeEl = document.getElementById('book-timer-time');
   if (timeEl) timeEl.textContent = formatTime(t.elapsed);
   const toggleBtn = document.getElementById('book-timer-toggle');
-  if (toggleBtn) {
+  if (toggleBtn && toggleBtn.dataset.running !== String(t.running)) {
+    // Only touch the icon when the state actually flips; rewriting it every
+    // tick could swallow a tap landing on the same frame.
+    toggleBtn.dataset.running = String(t.running);
     toggleBtn.innerHTML = `<i class="fa-solid ${t.running ? 'fa-pause' : 'fa-play'}"></i>`;
     toggleBtn.title = t.running ? 'Pause timer' : 'Start timer';
   }
