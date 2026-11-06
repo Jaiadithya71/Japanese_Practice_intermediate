@@ -90,7 +90,7 @@ export function switchLearnSegment(segment) {
  * Switch segment inside Me tab ('weak' | 'stats' | 'settings')
  */
 export function switchMeSegment(segment) {
-  if (!['weak', 'stats', 'settings'].includes(segment)) {
+  if (!['weak', 'stats', 'progress', 'settings'].includes(segment)) {
     segment = 'weak';
   }
   state.ui = state.ui || {};
@@ -102,7 +102,7 @@ export function switchMeSegment(segment) {
   });
 
   // Toggle me segment panels
-  const segments = ['weak', 'stats', 'settings'];
+  const segments = ['weak', 'stats', 'progress', 'settings'];
   segments.forEach(s => {
     const panel = document.getElementById(`me-panel-${s}`);
     if (panel) {
@@ -122,6 +122,8 @@ export function switchMeSegment(segment) {
     updateHardWordsView();
   } else if (segment === 'stats') {
     updateMeStats();
+  } else if (segment === 'progress' && typeof window !== 'undefined' && typeof window.renderProgressSegment === 'function') {
+    window.renderProgressSegment();
   }
 }
 

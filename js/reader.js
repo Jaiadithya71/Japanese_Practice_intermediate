@@ -6,7 +6,8 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
+import { beginGistReviewSession, endGistReviewSession, scheduleGistSave } from './gist-sync.js';
+import { addAttempt, MIN_ATTEMPT_SECONDS } from './reading-times.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js';
 import { renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
@@ -357,7 +358,6 @@ export function renderReadingLessonChips() {
   const ordered = getOrderedReadingLessons();
   const numById = new Map(ordered.map((l, i) => [l.id, i + 1]));
   const list = filterReadingByCategory(ordered);
-  const isAll = !state.readingSelectionEmpty && state.readingSelectedLessons.size === 0;
 
   list.forEach(l => {
     const vocab = l.vocabulary || [];
@@ -368,7 +368,7 @@ export function renderReadingLessonChips() {
     });
     const rp = state.stats?.[`RP:${l.id}`];
     const allDone = Boolean(rp?.mastered);
-    const selected = isAll || state.readingSelectedLessons.has(l.id);
+    const selected = state.readingSelectedLessons.has(l.id);
     const qCount = (l.comprehensionQuestions || l.questions || l.drills || []).length;
     const num = numById.get(l.id);
 
@@ -401,12 +401,17 @@ export function renderReadingLessonChips() {
 export function selectReadingLesson(id, mode = 'toggle') {
   if (!(state.readingSelectedLessons instanceof Set)) state.readingSelectedLessons = new Set();
   if (id === 'all') {
-    state.readingSelectedLessons.clear();
+    // Explicit membership, like the Vocabulary tab's Select All: re-tapping a
+    // tile afterwards deselects just that lesson instead of flipping to all.
+    state.readingSelectedLessons = new Set(getOrderedReadingLessons().map(l => l.id));
     state.readingSelectionEmpty = false;
   } else {
-    state.readingSelectionEmpty = false;
-    if (state.readingSelectedLessons.has(id)) state.readingSelectedLessons.delete(id);
-    else state.readingSelectedLessons.add(id);
+    if (state.readingSelectedLessons.has(id)) {
+      state.readingSelectedLessons.delete(id);
+    } else {
+      state.readingSelectedLessons.add(id);
+      state.readingSelectionEmpty = false;
+    }
   }
   renderReadingLessonChips();
 }
@@ -1182,7 +1187,9 @@ function renderBookPhase(container) {
       <div class="book-jump-row book-section-pager">
         <button class="btn btn-sm btn-secondary" onclick="bookNavSection(-1)" ${atStart ? 'disabled' : ''}><i class="fa-solid fa-chevron-left"></i> Back</button>
         <select class="book-jump-select book-section-select" onchange="jumpReadingBookSection(this.value)" aria-label="Jump to section">${sectionOptions}</select>
-        <button class="btn btn-sm btn-secondary" onclick="bookNavSection(1)" ${atEnd ? 'disabled' : ''}>Next <i class="fa-solid fa-chevron-right"></i></button>
+        ${atEnd
+          ? `<button class="btn btn-sm btn-primary" onclick="bookFinish()"><i class="fa-solid fa-flag-checkered"></i> Finish</button>`
+          : `<button class="btn btn-sm btn-secondary" onclick="bookNavSection(1)">Next <i class="fa-solid fa-chevron-right"></i></button>`}
       </div>
 
       <div class="passage-view-card">
@@ -1196,8 +1203,13 @@ function renderBookPhase(container) {
 
       ${bodyHtml}
 
-      ${isLastSection && (sentences.length > 0 || questions.length > 0) ? `
+      ${isLastSection ? `
         <div class="book-footer-actions">
+          ${atEnd ? `
+            <div class="book-end-note">
+              <i class="fa-solid fa-flag-checkered"></i>
+              <span>End of your selected lessons${q.length > 1 ? ` (${idx + 1}/${q.length})` : ''}.</span>
+            </div>` : ''}
           ${(sentences.length > 0 || questions.length > 0) ? `
             <button class="btn btn-primary" onclick="startReadingPassage()">
               <i class="fa-solid fa-play"></i> Timed practice
@@ -1205,6 +1217,10 @@ function renderBookPhase(container) {
           ${questions.length > 0 ? `
             <button class="btn btn-ghost" onclick="skipToQuestions()">
               Questions (${questions.length}) <i class="fa-solid fa-forward"></i>
+            </button>` : ''}
+          ${atEnd ? `
+            <button class="btn btn-ghost" onclick="closeReadingWorkspace()">
+              <i class="fa-solid fa-arrow-left"></i> Back to Lessons
             </button>` : ''}
         </div>` : ''}
     </div>
@@ -1217,6 +1233,7 @@ function renderBookPhase(container) {
           <button class="t-btn" id="book-timer-toggle" onclick="bookTimerToggle()" title="${bookTimerState().running ? 'Pause timer' : 'Start timer'}"><i class="fa-solid ${bookTimerState().running ? 'fa-pause' : 'fa-play'}"></i></button>
           <span class="t-label book-timer-time" id="book-timer-time">${formatTime(bookTimerState().elapsed)}</span>
           <button class="t-btn" id="book-timer-reset" onclick="bookTimerReset()" title="Reset timer"${(bookTimerState().elapsed === 0 && !bookTimerState().running) ? ' disabled' : ''}><i class="fa-solid fa-rotate-left"></i></button>
+          <button class="t-btn book-timer-save" id="book-timer-save" onclick="bookTimerStopSave()" title="Stop and save this reading time"${bookTimerState().elapsed < MIN_ATTEMPT_SECONDS ? ' disabled' : ''}><i class="fa-solid fa-stop"></i></button>
         </div>
         <div class="toolbar-btn-group">
           <button class="t-btn" title="Decrease font size" onclick="adjustFontScale(-0.1)">A−</button>
@@ -1906,6 +1923,15 @@ export function submitQuizAnswers() {
     cpm,
     elapsedSeconds: readerRuntime.elapsedSeconds,
     targetSeconds: readerRuntime.targetSeconds
+  });
+
+  // Also log the measured attempt itself so Progress can show real trends.
+  addAttempt({
+    lessonId: lesson.id,
+    seconds: readerRuntime.elapsedSeconds,
+    chars: readerRuntime.charCount,
+    source: 'practice',
+    accuracy
   });
 
   readerRuntime.phase = 'review';
@@ -2646,6 +2672,8 @@ function updateBookTimerChip() {
   }
   const resetBtn = document.getElementById('book-timer-reset');
   if (resetBtn) resetBtn.disabled = (t.elapsed === 0 && !t.running);
+  const saveBtn = document.getElementById('book-timer-save');
+  if (saveBtn) saveBtn.disabled = t.elapsed < MIN_ATTEMPT_SECONDS;
 }
 
 export function bookTimerToggle() {
@@ -2666,6 +2694,62 @@ export function bookTimerToggle() {
     }, 1000);
   }
   updateBookTimerChip();
+}
+
+// Stop & Save: records the active (unpaused) seconds as a measured attempt
+// for THIS passage, then flashes an honest comparison with the previous
+// attempt for the same passage. Never mixes different passages.
+export function bookTimerStopSave() {
+  const t = bookTimerState();
+  if (readerRuntime.phase !== 'book' || t.elapsed < MIN_ATTEMPT_SECONDS) return;
+  const lesson = readerRuntime.lesson;
+  if (!lesson) return;
+  const seconds = t.elapsed;
+  const saved = addAttempt({
+    lessonId: lesson.id,
+    seconds,
+    chars: readerRuntime.charCount,
+    source: 'self'
+  });
+  stopBookTimer();
+  t.elapsed = 0;
+  updateBookTimerChip();
+  if (!saved) return;
+  scheduleGistSave();
+  flashBookTimerSaved(saved.attempt, saved.previous);
+}
+
+function flashBookTimerSaved(attempt, previous) {
+  const timeEl = document.getElementById('book-timer-time');
+  if (!timeEl) return;
+  const note = previous
+    ? `prev ${formatTime(previous.s)} (${attempt.s < previous.s ? `${formatTime(previous.s - attempt.s)} faster` : attempt.s > previous.s ? `${formatTime(attempt.s - previous.s)} slower` : 'same'})`
+    : 'first saved time';
+  timeEl.innerHTML = `<i class="fa-solid fa-check"></i> ${formatTime(attempt.s)}${previous ? ` · prev ${formatTime(previous.s)}` : ''}`;
+  timeEl.classList.add('book-timer-saved');
+  timeEl.title = `Saved ${formatTime(attempt.s)} for this passage · ${note}`;
+  const group = timeEl.closest('.book-timer-group');
+  if (group) group.title = `Saved ${formatTime(attempt.s)} · ${note}`;
+  setTimeout(() => {
+    timeEl.classList.remove('book-timer-saved');
+    timeEl.title = '';
+    if (group) group.title = 'Time how fast you read this passage';
+    updateBookTimerChip();
+  }, 5000);
+}
+
+// End of the selected lessons: the top Next button becomes Finish and brings
+// the reader to the end-of-book actions instead of going dead.
+export function bookFinish() {
+  const footer = document.querySelector('.book-footer-actions');
+  if (footer) {
+    footer.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    footer.classList.remove('book-end-flash');
+    void footer.offsetWidth; // restart the highlight animation
+    footer.classList.add('book-end-flash');
+  } else {
+    closeReadingWorkspace();
+  }
 }
 
 export function bookTimerReset() {
@@ -3309,11 +3393,13 @@ if (typeof window !== 'undefined') {
   window.bookNavReading = bookNavReading;
   window.jumpReadingBookLesson = jumpReadingBookLesson;
   window.bookNavSection = bookNavSection;
+  window.bookFinish = bookFinish;
   window.jumpReadingBookSection = jumpReadingBookSection;
   window.startReadingPractice = startReadingPractice;
   window.practiceNextReadingLesson = practiceNextReadingLesson;
   window.startReadingWordDrill = startReadingWordDrill;
   window.restartReadingWordDrill = restartReadingWordDrill;
   window.bookTimerToggle = bookTimerToggle;
+  window.bookTimerStopSave = bookTimerStopSave;
   window.bookTimerReset = bookTimerReset;
 }

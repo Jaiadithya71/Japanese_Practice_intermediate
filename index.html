@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="css/navigation.css" />
   <link rel="stylesheet" href="css/home.css?v=gold-1" />
   <link rel="stylesheet" href="css/vocab.css" />
-  <link rel="stylesheet" href="css/reader.css" />
+  <link rel="stylesheet" href="css/reader.css?v=20261106-update2" />
   <link rel="stylesheet" href="css/kanji.css?v=20261028-learnbtn" />
   <link rel="stylesheet" href="css/study.css?v=3.1" />
   <link rel="stylesheet" href="css/test.css" />
@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="css/srs-home.css?v=gold-1" />
   <link rel="stylesheet" href="css/today.css" />
   <link rel="stylesheet" href="css/grammar-star.css" />
-  <link rel="stylesheet" href="css/me-tab.css" />
+  <link rel="stylesheet" href="css/me-tab.css?v=20261106-update2" />
   <link rel="stylesheet" href="css/class-track.css" />
   <link rel="stylesheet" href="css/book-platform.css" />
   <link rel="stylesheet" href="css/home-mobile.css?v=1" />
@@ -848,6 +848,10 @@
           <i class="fa-solid fa-chart-simple"></i>
           <span>Stats</span>
         </button>
+        <button class="seg-btn" id="seg-me-progress" data-segment="progress" onclick="switchMeSegment('progress')" role="tab">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>Progress</span>
+        </button>
         <button class="seg-btn" id="seg-me-settings" data-segment="settings" onclick="switchMeSegment('settings')" role="tab">
           <i class="fa-solid fa-gear"></i>
           <span>Settings</span>
@@ -920,7 +924,10 @@
           </div>
         </div>
 
-        <!-- Segment 3: Settings & Data Management -->
+        <!-- Segment 3: Progress over time -->
+        <div id="me-panel-progress" class="me-segment-panel" style="display: none;"></div>
+
+        <!-- Segment 4: Settings & Data Management -->
         <div id="me-panel-settings" class="me-segment-panel" style="display: none;">
           <div class="view-header">
             <div class="view-title-group">
@@ -1131,7 +1138,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=20261106-update1"></script>
+  <script type="module" src="js/main.js?v=20261106-update2"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

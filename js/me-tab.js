@@ -20,7 +20,8 @@ import {
   saveStats,
   updateSidebarStats
 } from './srs.js';
-import { getHeatmap30, getCurrentStreak } from './daylog.js';
+import { getHeatmap30, getCurrentStreak, loadDaylog } from './daylog.js';
+import { loadAttempts } from './reading-times.js';
 import {
   downloadBackupFile,
   exportBackup,
@@ -411,7 +412,7 @@ export function getWeakPoints(filter = 'all', statsObj = null) {
  * @param {string} segment
  */
 export function switchMeTabSegment(segment) {
-  if (!['weak', 'stats', 'settings'].includes(segment)) {
+  if (!['weak', 'stats', 'progress', 'settings'].includes(segment)) {
     segment = 'weak';
   }
 
@@ -427,7 +428,7 @@ export function switchMeTabSegment(segment) {
   });
 
   // Toggle me segment panels
-  const segments = ['weak', 'stats', 'settings'];
+  const segments = ['weak', 'stats', 'progress', 'settings'];
   segments.forEach(s => {
     const panel = document.getElementById(`me-panel-${s}`);
     if (panel) {
@@ -441,6 +442,8 @@ export function switchMeTabSegment(segment) {
     renderWeakPointsSegment();
   } else if (segment === 'stats') {
     renderStatsSegment();
+  } else if (segment === 'progress') {
+    renderProgressSegment();
   } else if (segment === 'settings') {
     renderSettingsSegment();
   }
@@ -1561,11 +1564,241 @@ function escapeAttr(str) {
 }
 
 // =======================================================
+// 8b. PROGRESS SEGMENT - growth over time, from real records
+// Only measured data is shown: timed attempts (Stop & Save and
+// graded timed practice), question results, coverage of the
+// books and the SRS state as a current snapshot. Review counts
+// are labelled activity, not proof of learning; where no
+// history exists yet the panel says so instead of inventing it.
+// =======================================================
+
+const PROGRESS_TARGET_CPM = 330;
+
+function progFmtSecs(s) {
+  if (!Number.isFinite(s)) return '-';
+  const m = Math.floor(s / 60);
+  const r = Math.round(s % 60);
+  return `${m}:${String(r).padStart(2, '0')}`;
+}
+
+function progDayLabel(ts) {
+  try {
+    return new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Kolkata', day: 'numeric', month: 'short' }).format(new Date(ts));
+  } catch (_) {
+    return new Date(ts).toLocaleDateString();
+  }
+}
+
+function progLessonTitle(lessonId) {
+  const lesson = state.readingDB?.[lessonId];
+  return lesson?.title_en || lesson?.title_ja || lesson?.title || lessonId;
+}
+
+function progBars(values, { max, target, suffix, goodAtOrAbove }) {
+  if (!values.length) return '';
+  const scaleMax = Math.max(max, target || 0, 1);
+  return `<div class="prog-bars" role="img" aria-label="${values.length} measurements, latest last">
+    ${target ? `<div class="prog-target-line" style="bottom: ${Math.min(100, Math.round(target / scaleMax * 100))}%;" title="Target ${target}${suffix}"></div>` : ''}
+    ${values.map(v => {
+      const h = Math.max(4, Math.round(v.value / scaleMax * 100));
+      const good = goodAtOrAbove !== undefined && v.value >= goodAtOrAbove;
+      return `<div class="prog-bar${good ? ' prog-bar-good' : ''}" style="height: ${h}%;" title="${escapeAttr(v.title)}"></div>`;
+    }).join('')}
+  </div>
+  <div class="prog-bars-axis"><span>${escapeHtml(values[0].axis)}</span><span>${escapeHtml(values[values.length - 1].axis)}</span></div>`;
+}
+
+export function renderProgressSegment() {
+  if (typeof document === 'undefined') return;
+  const panel = document.getElementById('me-panel-progress');
+  if (!panel) return;
+
+  const attempts = loadAttempts();
+  const stats = state.stats || {};
+
+  // ---- A. Reading speed over time (measured attempts only) ----
+  const speedAttempts = attempts.filter(a => a.cpm > 0);
+  const recent = speedAttempts.slice(-24);
+  const speedChart = recent.length
+    ? progBars(recent.map(a => ({
+        value: a.cpm,
+        axis: progDayLabel(a.ts),
+        title: `${progLessonTitle(a.lesson)} · ${a.cpm} CPM · ${progFmtSecs(a.s)} · ${progDayLabel(a.ts)}${a.src === 'practice' ? ' · timed practice' : ''}`
+      })), { max: Math.max(...recent.map(a => a.cpm)), target: PROGRESS_TARGET_CPM, suffix: ' CPM', goodAtOrAbove: PROGRESS_TARGET_CPM })
+    : '';
+
+  // Latest attempt per passage with honest previous comparison.
+  const byLesson = new Map();
+  for (const a of speedAttempts) {
+    if (!byLesson.has(a.lesson)) byLesson.set(a.lesson, []);
+    byLesson.get(a.lesson).push(a);
+  }
+  const passageRows = [...byLesson.entries()]
+    .map(([lesson, list]) => ({ lesson, list, latest: list[list.length - 1] }))
+    .sort((x, y) => y.latest.ts - x.latest.ts)
+    .slice(0, 5)
+    .map(({ lesson, list, latest }) => {
+      const prev = list.length > 1 ? list[list.length - 2] : null;
+      let delta;
+      if (!prev) delta = '<span class="prog-delta muted">first timed read</span>';
+      else if (latest.s < prev.s) delta = `<span class="prog-delta good">${progFmtSecs(prev.s - latest.s)} faster than previous</span>`;
+      else if (latest.s > prev.s) delta = `<span class="prog-delta slow">${progFmtSecs(latest.s - prev.s)} slower than previous</span>`;
+      else delta = '<span class="prog-delta muted">same as previous</span>';
+      return `<div class="prog-passage-row">
+        <div class="prog-passage-main">
+          <span class="prog-passage-title">${escapeHtml(progLessonTitle(lesson))}</span>
+          ${delta}
+        </div>
+        <span class="prog-passage-time">${progFmtSecs(latest.s)} · ${latest.cpm} CPM</span>
+      </div>`;
+    }).join('');
+
+  const speedSection = speedAttempts.length
+    ? `${speedChart}
+       <div class="prog-subhead">Latest per passage</div>
+       <div class="prog-passage-list">${passageRows}</div>`
+    : `<div class="prog-empty">
+        <i class="fa-solid fa-stopwatch"></i>
+        <p>No timed reading saved yet. In a book passage, start the timer chip and tap <strong>Stop</strong> when you finish reading; finishing a <strong>timed practice</strong> also records here. Your speed trend builds from those real measurements.</p>
+      </div>`;
+
+  // ---- B. Comprehension accuracy ----
+  const accAttempts = attempts.filter(a => typeof a.acc === 'number');
+  const accRecent = accAttempts.slice(-24);
+  const accChart = accRecent.length
+    ? progBars(accRecent.map(a => ({
+        value: Math.round(a.acc * 100),
+        axis: progDayLabel(a.ts),
+        title: `${progLessonTitle(a.lesson)} · ${Math.round(a.acc * 100)}% · ${progDayLabel(a.ts)}`
+      })), { max: 100, target: 80, suffix: '%', goodAtOrAbove: 80 })
+    : '';
+  let qAnswered = 0, qCorrect = 0;
+  for (const key in stats) {
+    if (!key.startsWith('R_Q:')) continue;
+    const s = stats[key];
+    qCorrect += s.correct || 0;
+    qAnswered += (s.correct || 0) + (s.incorrect || 0);
+  }
+  const accSection = (accAttempts.length || qAnswered > 0)
+    ? `${accChart}
+       <div class="prog-note">${accAttempts.length
+          ? `Graded timed practices, newest last. Pass mark: 80%.`
+          : 'Accuracy per practice appears once you finish a graded timed practice.'}</div>
+       ${qAnswered > 0 ? `<div class="prog-note">All-time question record: <strong>${qCorrect}/${qAnswered}</strong> correct (${Math.round(qCorrect / qAnswered * 100)}%) across every graded attempt.</div>` : ''}`
+    : `<div class="prog-empty">
+        <i class="fa-solid fa-circle-check"></i>
+        <p>No comprehension results yet. Finish a timed practice with questions and your accuracy trend starts here.</p>
+      </div>`;
+
+  // ---- C. Coverage of the books ----
+  const startedByPillar = { vocab: 0, kanji: 0, grammar: 0, reading: 0 };
+  for (const key in stats) {
+    const pillar = getPillarFromKey(key);
+    if (!startedByPillar.hasOwnProperty(pillar)) continue;
+    const s = stats[key];
+    if (key.startsWith('RP:')) {
+      if ((s.reads || 0) > 0) startedByPillar.reading++;
+    } else if ((s.correct || 0) + (s.incorrect || 0) > 0) {
+      startedByPillar[pillar]++;
+    }
+  }
+  const vocabTotal = Object.values(state.vocabDB || {}).reduce((n, words) => n + (Array.isArray(words) ? words.length : 0), 0);
+  const kanjiTotal = Object.keys(state.kanjiDB || {}).length;
+  const grammarTotal = Array.isArray(state.grammarDB?.index) ? state.grammarDB.index.length : 0;
+  const readingTotal = Object.keys(state.readingDB || {}).length;
+  const coverage = [
+    { label: 'Vocabulary', icon: 'fa-book', color: '#8b5cf6', started: startedByPillar.vocab, total: vocabTotal },
+    { label: 'Kanji', icon: 'fa-shapes', color: '#22d3a4', started: startedByPillar.kanji, total: kanjiTotal },
+    { label: 'Grammar', icon: 'fa-diagram-project', color: '#38bdf8', started: startedByPillar.grammar, total: grammarTotal },
+    { label: 'Reading lessons', icon: 'fa-book-open', color: '#f59e0b', started: startedByPillar.reading, total: readingTotal }
+  ];
+  const coverageSection = coverage.map(c => {
+    const pct = c.total > 0 ? Math.round(c.started / c.total * 100) : 0;
+    return `<div class="prog-cov-row">
+      <span class="prog-cov-label"><i class="fa-solid ${c.icon}" style="color: ${c.color};"></i> ${c.label}</span>
+      <div class="prog-cov-track"><div class="prog-cov-fill" style="width: ${pct}%; background: ${c.color};"></div></div>
+      <span class="prog-cov-num">${c.started}/${c.total} · ${pct}%</span>
+    </div>`;
+  }).join('');
+
+  // ---- D. Current SRS state snapshot (not a trend) ----
+  const mastery = computePillarMasteryCounts();
+  const masterySection = [
+    ['Vocabulary', mastery.vocab], ['Kanji', mastery.kanji], ['Grammar', mastery.grammar], ['Reading', mastery.reading]
+  ].map(([label, d]) => `
+    <div class="prog-mastery-row">
+      <span class="prog-mastery-label">${label}</span>
+      <span class="prog-mastery-nums"><b class="green">${d.mastered}</b> mastered · <b class="amber">${d.learning}</b> learning · <b class="red">${d.struggling}</b> struggling</span>
+    </div>`).join('');
+
+  // ---- E. Activity (reviews done, not learning proof) ----
+  const daylog = loadDaylog();
+  const days = [];
+  for (let i = 13; i >= 0; i--) {
+    const d = new Date(Date.now() - i * 86400000);
+    let key;
+    try {
+      key = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+    } catch (_) {
+      key = d.toISOString().slice(0, 10);
+    }
+    days.push({ key, count: Number(daylog[key]?.reviews) || 0 });
+  }
+  const maxDay = Math.max(...days.map(d => d.count), 1);
+  const activityChart = progBars(days.map(d => ({
+    value: d.count,
+    axis: progDayLabel(new Date(d.key + 'T12:00:00+05:30').getTime()),
+    title: `${d.key}: ${d.count} reviews`
+  })), { max: maxDay });
+  const totalTwoWeeks = days.reduce((a, d) => a + d.count, 0);
+
+  panel.innerHTML = `
+    <div class="stats-segment-wrap prog-wrap">
+      <div class="stats-header-group">
+        <div>
+          <h2 class="stats-main-title">Progress Over Time</h2>
+          <p class="prog-subtitle">Built only from measured records on this device and synced attempts.</p>
+        </div>
+      </div>
+
+      <div class="stat-card prog-card">
+        <div class="prog-card-head"><i class="fa-solid fa-gauge-high" style="color: #38bdf8;"></i><h3>Reading speed</h3><span class="prog-target-tag">Target ${PROGRESS_TARGET_CPM} CPM</span></div>
+        ${speedSection}
+      </div>
+
+      <div class="stat-card prog-card">
+        <div class="prog-card-head"><i class="fa-solid fa-circle-check" style="color: #22d3a4;"></i><h3>Comprehension accuracy</h3></div>
+        ${accSection}
+      </div>
+
+      <div class="stat-card prog-card">
+        <div class="prog-card-head"><i class="fa-solid fa-book-open" style="color: #f59e0b;"></i><h3>Coverage of the books</h3></div>
+        ${coverageSection}
+        <div class="prog-note">Items with at least one graded review or completed read, out of everything in the books.</div>
+      </div>
+
+      <div class="stat-card prog-card">
+        <div class="prog-card-head"><i class="fa-solid fa-layer-group" style="color: #8b5cf6;"></i><h3>Memory state right now</h3></div>
+        ${masterySection}
+        <div class="prog-note">A snapshot of where items sit in review scheduling today, not a trend and not test scores.</div>
+      </div>
+
+      <div class="stat-card prog-card">
+        <div class="prog-card-head"><i class="fa-solid fa-calendar-check" style="color: var(--text-dim);"></i><h3>Activity, last 14 days</h3><span class="prog-target-tag">${totalTwoWeeks} reviews</span></div>
+        ${activityChart}
+        <div class="prog-note">Reviews done per day. Activity shows effort, not learning by itself.</div>
+      </div>
+    </div>
+  `;
+}
+
+// =======================================================
 // 9. WINDOW BINDINGS (Seamless Event Integration)
 // =======================================================
 
 if (typeof window !== 'undefined') {
   window.renderMeTab = renderMeTab;
+  window.renderProgressSegment = renderProgressSegment;
   window.switchMeTabSegment = switchMeTabSegment;
   window.switchMeSegment = switchMeTabSegment; // Backwards compatibility for HTML buttons
   window.setMeWeakFilter = setMeWeakFilter;

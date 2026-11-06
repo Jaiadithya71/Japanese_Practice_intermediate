@@ -134,6 +134,7 @@ export function createSnapshot(tag) {
     stats,
     settings,
     daylog,
+    readingTimes: loadAttempts(),
     meta
   };
 
@@ -196,6 +197,10 @@ export function restoreSnapshot(tag) {
   if (snapshot.daylog && typeof snapshot.daylog === 'object' && !Array.isArray(snapshot.daylog)) {
     setStorageItem(STORAGE_KEYS.DAYLOG, JSON.stringify(snapshot.daylog));
     if (typeof state !== 'undefined' && state) state.daylog = snapshot.daylog;
+  }
+
+  if (Array.isArray(snapshot.readingTimes)) {
+    mergeAttempts(snapshot.readingTimes);
   }
 
   if (snapshot.meta && typeof snapshot.meta === 'object' && !Array.isArray(snapshot.meta)) {
@@ -292,6 +297,12 @@ export function importBackup(jsonString, options = { merge: true }) {
         finalStats[key].leech = true;
       }
     }
+  }
+
+  // Timed reading history merges by union on attempt id - an import never
+  // deletes attempts this device already holds.
+  if (Array.isArray(data.readingTimes)) {
+    mergeAttempts(data.readingTimes);
   }
 
   // Update storage & state

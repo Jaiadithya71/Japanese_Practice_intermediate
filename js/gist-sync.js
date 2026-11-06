@@ -9,9 +9,11 @@ import { state } from './state.js';
 import { updateSidebarStats } from './srs.js';
 import { encodeStats, decodeStatsText } from './stats-codec.js';
 import { getDay, loadDaylog, saveDaylog } from './daylog.js';
+import { loadAttempts, mergeAttempts, parseAttemptsText } from './reading-times.js';
 
 const GIST_FILENAME = 'nihongo-n3-stats.json';
 const DAYLOG_FILENAME = 'nihongo-n3-daylog.json';
+const READING_TIMES_FILENAME = 'nihongo-n3-reading-times.json';
 const PRESYNC_BACKUP_KEY = 'n3_presync_backup_done_v1';
 const PAT_KEY = 'n3_github_pat';
 const GIST_ID_KEY = 'n3_gist_id';
@@ -38,6 +40,7 @@ let dirty = localStorage.getItem(DIRTY_KEY) === '1';
 let reviewSessionActive = localStorage.getItem(ACTIVE_KEY) === '1';
 let pushPromise = null;
 let lastRemoteDaylog = null;
+let lastRemoteReadingTimes = null;
 let changeRevision = 0;
 
 function isReviewActive() {
@@ -255,6 +258,8 @@ async function getRemoteContent(pat, gistId) {
   }
   const dayFile = gist.files && gist.files[DAYLOG_FILENAME];
   lastRemoteDaylog = dayFile && typeof dayFile.content === 'string' && !dayFile.truncated ? dayFile.content : null;
+  const rtFile = gist.files && gist.files[READING_TIMES_FILENAME];
+  lastRemoteReadingTimes = rtFile && typeof rtFile.content === 'string' && !rtFile.truncated ? rtFile.content : null;
   const file = gist.files && gist.files[GIST_FILENAME];
   if (!file) throw new Error('The progress file is missing from the Gist; nothing was written.');
   let content = file.content;
@@ -324,6 +329,7 @@ async function pushOnce(pat, gistId, allowCorruptRemote = false, revision = chan
     const remoteContent = await getRemoteContent(pat, gistId);
     await backupBeforeFirstDaylogMerge();
     mergeDaylogMax(lastRemoteDaylog);
+    mergeAttempts(parseAttemptsText(lastRemoteReadingTimes));
     try {
       await parseRemoteStats(remoteContent);
     } catch (e) {
@@ -346,7 +352,7 @@ async function pushOnce(pat, gistId, allowCorruptRemote = false, revision = chan
       const res = await fetch(`${API}/gists/${gistId}`, {
         method: 'PATCH',
         headers: headers(pat, true),
-        body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload }, [DAYLOG_FILENAME]: { content: JSON.stringify(loadDaylog()) } } })
+        body: JSON.stringify({ files: { [GIST_FILENAME]: { content: payload }, [DAYLOG_FILENAME]: { content: JSON.stringify(loadDaylog()) }, [READING_TIMES_FILENAME]: { content: JSON.stringify(loadAttempts()) } } })
       });
       if (res.ok) {
         if (revision === changeRevision) {
@@ -638,7 +644,8 @@ export async function gistLoadStats(options = {}) {
     const remote = await pull(pat, gistId);
     await backupBeforeFirstDaylogMerge();
     const dayChanged = mergeDaylogMax(lastRemoteDaylog);
-    if (mergeStats(remote) || dayChanged) {
+    const timesChanged = mergeAttempts(parseAttemptsText(lastRemoteReadingTimes));
+    if (mergeStats(remote) || dayChanged || timesChanged) {
       refreshViews();
       dirty = true;
       changeRevision++;
