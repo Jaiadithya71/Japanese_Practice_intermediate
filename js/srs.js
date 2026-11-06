@@ -386,9 +386,6 @@ export function toggleItemHard(itemKey) {
   const s = getItemStats(itemKey);
   s.isHard = !s.isHard;
   s.lastSeen = Date.now();
-  if (s.isHard) {
-    s.weight = Math.max(s.weight || 1.0, HARD_THRESHOLD);
-  }
   saveStats();
   updateSidebarStats();
   return s.isHard;
