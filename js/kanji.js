@@ -478,7 +478,7 @@ function selectedKanjiPoolsAB() {
   for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
     if (isAll || a.has(k.lesson_number)) poolA.push(k);
-    else if (b.has(k.lesson_number)) poolB.push(k);
+    if (b.has(k.lesson_number)) poolB.push(k);
   }
   return { poolA, poolB };
 }
@@ -579,6 +579,10 @@ export function setKanjiReviewPhase(phase) {
 function updateKanjiStartHint() {
   const hint = document.getElementById('kanji-start-hint');
   if (!hint) return;
+  if (kanjiSelectedParts().b.size > 0) {
+    hint.textContent = 'Flashcards: part A uses the current kanji-first cards; part B shows kana first. Reveal the same answer details, then grade each track separately.';
+    return;
+  }
   const dir = state.kanjiStudyDirection || 'mixed';
   hint.textContent = dir === 'mixed'
     ? 'Multiple choice, every word in the selected lessons: first kanji \u2192 kana, then kana \u2192 kanji.'
