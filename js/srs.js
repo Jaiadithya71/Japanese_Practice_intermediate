@@ -89,7 +89,7 @@ export function snapToNextDueSlot(ms) {
 export function getPillarFromKey(key) {
   if (!key || typeof key !== 'string') return 'other';
   if (key.startsWith('V:') || key.startsWith('VC:')) return 'vocab';
-  if (key.startsWith('K:') || key.startsWith('K_EX:') || key.startsWith('KWR:') || key.startsWith('KWW:') || key.startsWith('KWM:')) return 'kanji';
+  if (key.startsWith('K:') || key.startsWith('K_EX:') || key.startsWith('KWR:') || key.startsWith('KWW:') || key.startsWith('KWM:') || key.startsWith('KWK:')) return 'kanji';
   if (key.startsWith('G:') || key.startsWith('GD:') || key.startsWith('GS:') || key.startsWith('GT:') || key.startsWith('GC:')) return 'grammar';
   if (key.startsWith('R_Q:') || key.startsWith('R_P:') || key.startsWith('RP:') || key.startsWith('RW:')) return 'reading';
   return 'other';
@@ -125,6 +125,7 @@ export function formatItemKey(item) {
   if (item.key) return item.key;
 
   if (item.type === 'vocab' || item.book === 'vocab') {
+    if (item.kanaFirst) return `V:${item.id}:kana`;
     const rev = state.studyDirection === 'en-ja' ? ':rev' : '';
     return `V:${item.id}${rev}`;
   }
@@ -230,7 +231,8 @@ export function getWordStats(wordId, direction = 'ja-en') {
 }
 
 export function getWordStatus(wordId, direction = 'ja-en') {
-  const rev = direction === 'en-ja' ? ':rev' : '';
+  // 'kana-en' is the kana-first (part B) track, kept separate from A mastery.
+  const rev = direction === 'en-ja' ? ':rev' : (direction === 'kana-en' ? ':kana' : '');
   return getItemStatus(`V:${wordId}${rev}`);
 }
 
@@ -672,12 +674,13 @@ export function resolveItemForKey(key, stats) {
   const pillar = getPillarFromKey(key);
 
   if (facet === 'V') {
-    const id = key.replace(/^V:/, '').replace(/:rev$/, '');
+    const kanaFirst = key.endsWith(':kana');
+    const id = key.replace(/^V:/, '').replace(/:rev$/, '').replace(/:kana$/, '');
     for (const chId in (state.vocabDB || {})) {
       const w = (state.vocabDB[chId] || []).find(item => item.id === id);
-      if (w) return { ...w, type: 'vocab', key, book: 'vocab', stats, facet, pillar };
+      if (w) return { ...w, type: 'vocab', key, book: 'vocab', stats, facet, pillar, kanaFirst };
     }
-    return { id, key, type: 'vocab', book: 'vocab', stats, facet, pillar };
+    return { id, key, type: 'vocab', book: 'vocab', stats, facet, pillar, kanaFirst };
   }
 
   if (facet === 'VC') {
@@ -685,10 +688,11 @@ export function resolveItemForKey(key, stats) {
   }
 
   if (facet === 'K') {
-    const char = key.replace(/^K:/, '');
+    const kanaFirst = key.endsWith(':kana');
+    const char = key.replace(/^K:/, '').replace(/:kana$/, '');
     const k = state.kanjiDB?.[char];
-    if (k) return { ...k, id: char, kanji: char, type: 'kanji', key, book: 'kanji', stats, facet, pillar };
-    return { id: char, kanji: char, type: 'kanji', key, book: 'kanji', stats, facet, pillar };
+    if (k) return { ...k, id: char, kanji: char, type: 'kanji', key, book: 'kanji', stats, facet, pillar, kanaFirst, direction: kanaFirst ? 'kana-meaning' : undefined };
+    return { id: char, kanji: char, type: 'kanji', key, book: 'kanji', stats, facet, pillar, kanaFirst, direction: kanaFirst ? 'kana-meaning' : undefined };
   }
 
   if (facet === 'K_EX') {
@@ -702,7 +706,7 @@ export function resolveItemForKey(key, stats) {
     return { id: exId, type: 'kanji_exercise', key, book: 'kanji_exercise', stats, facet, pillar };
   }
 
-  if (facet === 'KWR' || facet === 'KWW' || facet === 'KWM') {
+  if (facet === 'KWR' || facet === 'KWW' || facet === 'KWM' || facet === 'KWK') {
     const term = key.slice(facet.length + 1);
     let wordData = state.idx?.words?.[term] || {};
     if (!wordData.baseKanji && state.kanjiDB) {
@@ -718,7 +722,8 @@ export function resolveItemForKey(key, stats) {
     const dirMap = {
       KWR: 'ja-kana',
       KWW: 'kana-ja',
-      KWM: 'ja-meaning'
+      KWM: 'ja-meaning',
+      KWK: 'kana-meaning'
     };
     return {
       term,

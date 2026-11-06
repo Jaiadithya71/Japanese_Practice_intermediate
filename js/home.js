@@ -121,7 +121,11 @@ function textbookChapterKeys() {
   return Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k) || k.startsWith('part2_'));
 }
 function homeSelectedChapterKeys() {
-  return state.selectedChapters.size ? Array.from(state.selectedChapters) : textbookChapterKeys();
+  // Selection entries are `chId` (part A) or `chId|B` (kana-first part B);
+  // the word pool is the same chapters either way.
+  return state.selectedChapters.size
+    ? [...new Set(Array.from(state.selectedChapters, k => k.split('|')[0]))]
+    : textbookChapterKeys();
 }
 
 export function renderLessonGrid() {
@@ -131,18 +135,26 @@ export function renderLessonGrid() {
   chapterKeysForGroup().forEach(chId => {
     const meta = state.chapterMetadata[chId] || {};
     const words = state.vocabDB[chId] || [];
-    const selected = state.selectedChapters.has(chId);
-    const mastered = words.filter(w => getWordStatus(w.id, state.studyDirection) === 'mastered').length;
-    const hasHard = words.some(w => getWordStatus(w.id, state.studyDirection) === 'hard');
     const label = String(Number(chId.startsWith('part2_') ? chId.slice(6) : chId));
-    const tile = document.createElement('button');
-    tile.type = 'button';
-    tile.className = `home-lesson-tile${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${mastered === words.length && words.length ? ' all-done' : ''}`;
-    tile.setAttribute('aria-pressed', String(selected));
-    tile.title = `${meta.topic_en || meta.topic_ja || label} · ${words.length} words · ${mastered} mastered`;
-    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${words.length}w</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
-    tile.onclick = () => toggleChapterSelection(chId);
-    container.appendChild(tile);
+    // Part A: kanji-first (the existing track). Part B: kana-first - the same
+    // words shown by their kana reading, tracked separately from A mastery.
+    const parts = [
+      { selKey: chId, suffix: 'A', direction: state.studyDirection, partLabel: 'kanji front', tileClass: '' },
+      { selKey: `${chId}|B`, suffix: 'B', direction: 'kana-en', partLabel: 'かな kana front', tileClass: ' home-lesson-tile-b' }
+    ];
+    for (const part of parts) {
+      const selected = state.selectedChapters.has(part.selKey);
+      const mastered = words.filter(w => getWordStatus(w.id, part.direction) === 'mastered').length;
+      const hasHard = words.some(w => getWordStatus(w.id, part.direction) === 'hard');
+      const tile = document.createElement('button');
+      tile.type = 'button';
+      tile.className = `home-lesson-tile${part.tileClass}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${mastered === words.length && words.length ? ' all-done' : ''}`;
+      tile.setAttribute('aria-pressed', String(selected));
+      tile.title = `${meta.topic_en || meta.topic_ja || label} part ${part.suffix} (${part.partLabel}) · ${words.length} words · ${mastered} mastered`;
+      tile.innerHTML = `<span class="home-lesson-tile-num">${label}<span class="home-lesson-tile-part">${part.suffix}</span></span><span class="home-lesson-tile-count">${part.suffix === 'B' ? 'かな' : `${words.length}w`}</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
+      tile.onclick = () => toggleChapterSelection(part.selKey);
+      container.appendChild(tile);
+    }
   });
   updateHomeLessonControls();
 }
@@ -209,7 +221,8 @@ function updateHomeLessonControls() {
 
 export function startSelectedLessonTestRun() {
   const selected = new Set(state.selectedChapters);
-  const tests = getAllAvailableTests().filter(test => test.pillar === 'vocab' && test.category !== 'vocab_reviews' && test.category !== 'mock_exams' && selected.has(String(test.id).replace(/^vocab-/, '')));
+  const baseIds = new Set(Array.from(selected, k => String(k).split('|')[0]));
+  const tests = getAllAvailableTests().filter(test => test.pillar === 'vocab' && test.category !== 'vocab_reviews' && test.category !== 'mock_exams' && baseIds.has(String(test.id).replace(/^vocab-/, '')));
   const questions = tests.flatMap(test => test.questions || []).filter(question =>
     Array.isArray(question.options) && question.options.length >= 2 &&
     Number.isInteger(question.correct) && question.correct >= 1 && question.correct <= question.options.length);
@@ -247,10 +260,14 @@ export function startSelectedLessonRun() {
   if (!state.selectedChapters.size) { alert('Select at least one lesson first.'); return; }
   const chapters = Array.from(state.selectedChapters);
   const pool = [];
-  for (const chapter of chapters) for (const word of (state.vocabDB[chapter] || [])) {
-    if (document.getElementById('home-hard-only')?.checked && getWordStatus(word.id, state.studyDirection) !== 'hard') continue;
-    const key = `V:${word.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
-    pool.push({ ...word, type: 'vocab', key, book: 'vocab' });
+  for (const selKey of chapters) {
+    const kanaFirst = selKey.endsWith('|B');
+    const chapter = kanaFirst ? selKey.slice(0, -2) : selKey;
+    for (const word of (state.vocabDB[chapter] || [])) {
+      if (document.getElementById('home-hard-only')?.checked && getWordStatus(word.id, kanaFirst ? 'kana-en' : state.studyDirection) !== 'hard') continue;
+      const key = kanaFirst ? `V:${word.id}:kana` : `V:${word.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
+      pool.push({ ...word, type: 'vocab', key, book: 'vocab', kanaFirst });
+    }
   }
   if (!pool.length) { alert('No vocabulary items found in this selection.'); return; }
   pool.sort(() => Math.random() - 0.5);

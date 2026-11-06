@@ -142,26 +142,34 @@ export function renderKanjiLessonChips() {
   if (banner && picker && picker.nextElementSibling !== banner) picker.after(banner);
   const isAll = !state.kanjiSelectionEmpty && state.kanjiSelectedLessons.size === 0;
   for (let i = 1; i <= 25; i++) {
-    const selected = isAll || state.kanjiSelectedLessons.has(i);
     const lesson = (state.kanjiLessons || []).find(l => l.lesson_number === i);
     const kanji = Object.values(state.kanjiDB || {}).filter(k => k.lesson_number === i);
     const lessonWords = new Set();
     kanji.forEach(k => (k.words || []).forEach(w => { const t = (w.term_ja || w.word || '').trim(); if (t) lessonWords.add(t); }));
-    let hasHard = false, allMastered = lessonWords.size > 0;
-    lessonWords.forEach(w => {
-      const st = getItemStatus(`KWR:${w}`);
-      if (st === 'hard') hasHard = true;
-      if (st !== 'mastered') allMastered = false;
-    });
-    const tile = document.createElement('button');
-    tile.type = 'button';
-    tile.className = `home-lesson-tile${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}`;
-    tile.setAttribute('aria-pressed', String(selected));
-    tile.setAttribute('aria-label', `Lesson ${i}, ${kanji.length} kanji, ${lessonWords.size} words${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`);
-    tile.title = `${lesson?.title_ja || `Lesson ${i}`} · ${lessonWords.size} words`;
-    tile.innerHTML = `<span class="home-lesson-tile-num">${i}</span><span class="home-lesson-tile-count">${lessonWords.size}w</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
-    tile.onclick = () => selectKanjiLesson(i, 'toggle');
-    container.appendChild(tile);
+    // Part A: kanji-first (existing track, KWR:/KWW: facets). Part B: kana-first
+    // (kana on top, meaning on the reveal), tracked separately under KWK:/K::kana.
+    const parts = [
+      { selKey: i, suffix: 'A', facet: 'KWR', tileClass: '', partLabel: 'kanji front' },
+      { selKey: `${i}|B`, suffix: 'B', facet: 'KWK', tileClass: ' home-lesson-tile-b', partLabel: 'かな kana front' }
+    ];
+    for (const part of parts) {
+      const selected = (part.suffix === 'A' && isAll) || state.kanjiSelectedLessons.has(part.selKey);
+      let hasHard = false, allMastered = lessonWords.size > 0;
+      lessonWords.forEach(w => {
+        const st = getItemStatus(`${part.facet}:${w}`);
+        if (st === 'hard') hasHard = true;
+        if (st !== 'mastered') allMastered = false;
+      });
+      const tile = document.createElement('button');
+      tile.type = 'button';
+      tile.className = `home-lesson-tile${part.tileClass}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}`;
+      tile.setAttribute('aria-pressed', String(selected));
+      tile.setAttribute('aria-label', `Lesson ${i} part ${part.suffix} (${part.partLabel}), ${kanji.length} kanji, ${lessonWords.size} words${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`);
+      tile.title = `${lesson?.title_ja || `Lesson ${i}`} part ${part.suffix} (${part.partLabel}) · ${lessonWords.size} words`;
+      tile.innerHTML = `<span class="home-lesson-tile-num">${i}<span class="home-lesson-tile-part">${part.suffix}</span></span><span class="home-lesson-tile-count">${part.suffix === 'B' ? 'かな' : `${lessonWords.size}w`}</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
+      tile.onclick = () => selectKanjiLesson(part.selKey, 'toggle');
+      container.appendChild(tile);
+    }
   }
   document.getElementById('kanji-select-all').onclick = () => selectKanjiLesson('all');
   document.getElementById('kanji-clear-selection').onclick = () => {
@@ -184,16 +192,16 @@ export function selectKanjiLesson(lessonNum, mode = 'toggle') {
     state.kanjiSelectedLessons.clear();
     state.kanjiLesson = 'all';
   } else {
-    const num = Number(lessonNum);
+    const key = String(lessonNum).endsWith('|B') ? String(lessonNum) : Number(lessonNum);
     if (mode === 'toggle') {
-      if (state.kanjiSelectedLessons.has(num)) {
-        state.kanjiSelectedLessons.delete(num);
+      if (state.kanjiSelectedLessons.has(key)) {
+        state.kanjiSelectedLessons.delete(key);
       } else {
-        state.kanjiSelectedLessons.add(num);
+        state.kanjiSelectedLessons.add(key);
       }
     } else {
       state.kanjiSelectedLessons.clear();
-      state.kanjiSelectedLessons.add(num);
+      state.kanjiSelectedLessons.add(key);
     }
     state.kanjiSelectionEmpty = state.kanjiSelectedLessons.size === 0;
     state.kanjiLesson = state.kanjiSelectedLessons.size === 1 ? Array.from(state.kanjiSelectedLessons)[0] : 'all';
@@ -226,7 +234,8 @@ export function renderKanjiTargetGrid() {
 
     if (state.kanjiSelectionEmpty) return false;
     // Multi-Lesson selection filter
-    if (selLessons.size > 0 && !selLessons.has(k.lesson_number)) return false;
+    const _parts = kanjiSelectedParts();
+    if (selLessons.size > 0 && !_parts.a.has(k.lesson_number) && !_parts.b.has(k.lesson_number)) return false;
 
     // Status filter
     const status = getKanjiStatus(char);
@@ -447,12 +456,90 @@ export function buildHardKanjiItems(kanjiList) {
   return out;
 }
 
-function selectedKanjiPool() {
-  const selLessons = state.kanjiSelectedLessons || new Set();
-  const pool = [];
+// Selection entries are lesson numbers (part A, kanji-first) or `n|B` strings
+// (part B, kana-first). Empty set + not explicitly cleared means every lesson as A.
+function kanjiSelectedParts() {
+  const sel = state.kanjiSelectedLessons || new Set();
+  const a = new Set();
+  const b = new Set();
+  sel.forEach(key => {
+    if (typeof key === 'string' && key.endsWith('|B')) b.add(Number(key.slice(0, -2)));
+    else a.add(Number(key));
+  });
+  const isAll = !state.kanjiSelectionEmpty && sel.size === 0;
+  return { a, b, isAll };
+}
+
+function selectedKanjiPoolsAB() {
+  const { a, b, isAll } = kanjiSelectedParts();
+  const poolA = [];
+  const poolB = [];
+  if (state.kanjiSelectionEmpty) return { poolA, poolB };
   for (const char in (state.kanjiDB || {})) {
     const k = state.kanjiDB[char];
-    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) pool.push(k);
+    if (isAll || a.has(k.lesson_number)) poolA.push(k);
+    else if (b.has(k.lesson_number)) poolB.push(k);
+  }
+  return { poolA, poolB };
+}
+
+// Part B items: kana on top, English meaning on the reveal. Tracked on their own
+// facet keys (KWK: kana->meaning; K:<kanji>:kana for bare kanji), never mixing
+// with the kanji-first A tracks.
+export function buildKanjiKanaFirstItems(kanjiList) {
+  const studyItems = [];
+  const seenWords = new Set();
+  kanjiList.forEach(k => {
+    if (k.words && Array.isArray(k.words) && k.words.length > 0) {
+      k.words.forEach(w => {
+        const word = (w.term_ja || w.word || k.kanji).trim();
+        const reading = (w.reading || (k.kunyomi && k.kunyomi[0]) || (k.onyomi && k.onyomi[0]) || '').trim();
+        if (!word || !reading || seenWords.has(word)) return;
+        seenWords.add(word);
+        studyItems.push({
+          type: 'kanji_word',
+          book: 'kanji',
+          baseKanji: k.kanji,
+          lesson_number: k.lesson_number || 1,
+          word: word,
+          reading: reading,
+          ruby_html: w.ruby_html || word,
+          meaning_en: w.meaning_en || '',
+          meaning_zh: w.meaning_zh || '',
+          onyomi: k.onyomi || [],
+          kunyomi: k.kunyomi || [],
+          direction: 'kana-meaning',
+          kanaFirst: true,
+          key: `KWK:${word}`
+        });
+      });
+    } else {
+      studyItems.push({
+        type: 'kanji',
+        book: 'kanji',
+        baseKanji: k.kanji,
+        kanji: k.kanji,
+        lesson_number: k.lesson_number || 1,
+        onyomi: k.onyomi || [],
+        kunyomi: k.kunyomi || [],
+        words: k.words || [],
+        direction: 'kana-meaning',
+        kanaFirst: true,
+        key: `K:${k.kanji}:kana`
+      });
+    }
+  });
+  return studyItems;
+}
+
+function selectedKanjiPool() {
+  // A-semantics pool: every selected base lesson (used by MCQ quiz + target grid).
+  const { a, b, isAll } = kanjiSelectedParts();
+  const pool = [];
+  if (state.kanjiSelectionEmpty) return pool;
+  for (const char in (state.kanjiDB || {})) {
+    const k = state.kanjiDB[char];
+    if (isAll || a.has(k.lesson_number) || b.has(k.lesson_number)) pool.push(k);
   }
   return pool;
 }
@@ -627,19 +714,16 @@ export function updateKanjiActionButtonLabels() {
   const btn = document.getElementById('btn-kanji-start');
   if (!btn) return;
 
-  const selLessons = state.kanjiSelectedLessons || new Set();
-  const pool = [];
-  for (const char in (state.kanjiDB || {})) {
-    const k = state.kanjiDB[char];
-    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) {
-      pool.push(k);
-    }
-  }
+  const { poolA, poolB } = selectedKanjiPoolsAB();
+  const pool = poolA.concat(poolB);
 
-  const items = state.kanjiHardOnly ? buildHardKanjiItems(pool) : buildKanjiStudyItems(pool);
+  const items = state.kanjiHardOnly
+    ? buildHardKanjiItems(poolA).concat(buildKanjiKanaFirstItems(poolB))
+    : buildKanjiStudyItems(poolA).concat(buildKanjiKanaFirstItems(poolB));
   const wordsCount = items.length;
 
-  const lessonCount = state.kanjiSelectionEmpty ? 0 : selLessons.size || 25;
+  const _partsAB = kanjiSelectedParts();
+  const lessonCount = state.kanjiSelectionEmpty ? 0 : ((_partsAB.isAll ? 25 : 0) + _partsAB.a.size + _partsAB.b.size);
   const summary = document.getElementById('kanji-picker-summary');
   if (summary) summary.textContent = state.kanjiSelectionEmpty
     ? 'Choose a lesson to begin'
@@ -666,25 +750,21 @@ export function drillKanjiSelected() {
   // Only Kanji -> English stays a flip-card drill.
   // Learn phase browses full card info ungraded, so it always runs as flip cards.
   const _dir = state.kanjiStudyDirection || 'ja-kana';
-  if (getReviewPhase() !== 'learn' && (_dir === 'mixed' || _dir === 'ja-kana' || _dir === 'kana-ja')) {
+  const _hasB = kanjiSelectedParts().b.size > 0;
+  if (!_hasB && getReviewPhase() !== 'learn' && (_dir === 'mixed' || _dir === 'ja-kana' || _dir === 'kana-ja')) {
     return startKanjiQuickQuiz();
   }
-  const selLessons = state.kanjiSelectedLessons || new Set();
-  const pool = [];
-
-  for (const char in (state.kanjiDB || {})) {
-    const k = state.kanjiDB[char];
-    if (!(state.kanjiSelectionEmpty && selLessons.size === 0) && (selLessons.size === 0 || selLessons.has(k.lesson_number))) {
-      pool.push(k);
-    }
-  }
+  const { poolA, poolB } = selectedKanjiPoolsAB();
+  const pool = poolA.concat(poolB);
 
   if (pool.length === 0) {
     alert('No kanji found for the selected lessons!');
     return;
   }
 
-  const studyItems = state.kanjiHardOnly ? buildHardKanjiItems(pool) : buildKanjiStudyItems(pool);
+  const studyItems = (state.kanjiHardOnly
+    ? buildHardKanjiItems(poolA).concat(buildKanjiKanaFirstItems(poolB))
+    : buildKanjiStudyItems(poolA).concat(buildKanjiKanaFirstItems(poolB)));
   if (studyItems.length === 0) {
     alert(state.kanjiHardOnly ? 'No hard kanji in the selected lessons!' : 'No kanji found for the selected lessons!');
     return;

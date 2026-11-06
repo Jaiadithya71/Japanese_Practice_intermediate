@@ -55,8 +55,8 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   state.learnUnit = null;
 
   const pool = [];
-  const chaptersToUse = state.selectedChapters.size > 0 
-    ? Array.from(state.selectedChapters) 
+  const chaptersToUse = state.selectedChapters.size > 0
+    ? [...new Set(Array.from(state.selectedChapters, k => String(k).split('|')[0]))]
     : Object.keys(state.vocabDB);
 
   for (const chId of chaptersToUse) {
@@ -425,7 +425,18 @@ function renderCardContent() {
     if (lessonTag) lessonTag.textContent = `L${item.lesson_number} · ${item.lesson_title_ja || 'Kanji'}`;
 
     if (!state.cardFlipped) {
-      if (state.studyDirection === 'ja-en') {
+      if (item.kanaFirst) {
+        // Part B: the kanji's kana readings on top; the reveal is the same card.
+        const onStr = (item.onyomi || []).join('、 ');
+        const kunStr = (item.kunyomi || []).join('、 ');
+        termEl.innerHTML = `
+          <div style="font-family: var(--font-jp);">
+            <div style="font-size: 2.4rem; font-weight: 700; color: #38bdf8;">${kunStr || onStr || '—'}</div>
+            ${kunStr && onStr ? `<div style="font-size: 1.6rem; color: #f472b6; margin-top: 0.4rem;">${onStr}</div>` : ''}
+          </div>
+        `;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal kanji &amp; vocabulary</span>`;
+      } else if (state.studyDirection === 'ja-en') {
         termEl.innerHTML = `<span style="font-size: 4rem; font-family: var(--font-jp); font-weight: 800; color: #fff;">${item.kanji}</span>`;
         meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 1rem;">Tap card to reveal readings &amp; vocabulary</span>`;
       } else {
@@ -539,6 +550,20 @@ function renderCardContent() {
           </div>
         `;
         meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Tap to reveal</span>`;
+      } else if (dir === 'kana-meaning') {
+        // Part B: kana on top (what you would hear); recall the English meaning.
+        // The reveal below carries the same word details as part A.
+        termEl.innerHTML = `
+          <div>
+            <div style="font-size: 3rem; font-family: var(--font-jp); font-weight: 800; color: #38bdf8; letter-spacing: 0.05em;">
+              ${item.reading}
+            </div>
+            <div style="margin-top: 0.75rem;">
+              <span class="badge badge-cyan" style="font-size: 0.78rem;">かな → English</span>
+            </div>
+          </div>
+        `;
+        meaningEl.innerHTML = `<span style="color: var(--text-dim); font-size: 0.95rem;">Tap to reveal</span>`;
       } else if (dir === 'kana-ja') {
         // JLPT Mondai 2: Given Kana, recall Kanji spelling
         termEl.innerHTML = `
@@ -615,7 +640,10 @@ function renderCardContent() {
 
   // New word, teach stage: meaning first, then "Got it, quiz me"
   if (isLearnStage(item)) {
-    termEl.innerHTML = item.ruby_html || item.term_ja;
+    // Part B (kana-first) teaches from the kana reading, matching its track.
+    termEl.innerHTML = item.kanaFirst
+      ? `<span style="font-family: var(--font-jp);">${item.reading || item.term_ja}</span>`
+      : (item.ruby_html || item.term_ja);
     meaningEl.innerHTML = `<span class="learn-badge">${item.learnNew && !item.learned ? 'NEW WORD' : 'LEARN'}</span><div>${item.meaning_en || ''}</div>`;
     meaningEl.style.color = 'var(--text)';
     if (item.example_ja && exBox && exJa && exEn) {
@@ -633,7 +661,13 @@ function renderCardContent() {
   }
 
   if (!state.cardFlipped) {
-    if (state.studyDirection === 'ja-en') {
+    if (item.kanaFirst) {
+      // Part B: kana on top (what you would hear); the reveal below is the same.
+      termEl.innerHTML = `<span style="font-family: var(--font-jp); font-size: 2.6rem; font-weight: 700;">${item.reading || item.term_ja || ''}</span>`;
+      meaningEl.textContent = 'Tap card to reveal meaning';
+      meaningEl.style.color = 'var(--text-dim)';
+      if (exBox) exBox.style.display = 'none';
+    } else if (state.studyDirection === 'ja-en') {
       // Recall front uses the written word only. Reading stays on the revealed side.
       termEl.textContent = item.term_ja || item.reading || '';
       meaningEl.textContent = 'Tap card to reveal meaning';
