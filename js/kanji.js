@@ -590,6 +590,12 @@ function updateKanjiStartHint() {
 export function startKanjiActivity() {
   setReviewPhasePreference('test');
   if (!state.kanjiStudyDirection) state.kanjiStudyDirection = 'mixed';
+  // B (kana-first) selections must not run the kanji<->kana MCQ on base (A) material:
+  // route through drillKanjiSelected, which serves kana-first flip cards for B parts.
+  if (kanjiSelectedParts().b.size > 0) {
+    drillKanjiSelected();
+    return;
+  }
   startKanjiQuickQuiz();
 }
 
