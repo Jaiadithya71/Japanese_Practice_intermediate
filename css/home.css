@@ -300,3 +300,38 @@
 }
 .home-lesson-tile-b .home-lesson-tile-part { color: var(--accent); }
 .home-lesson-tile-b .home-lesson-tile-count { color: var(--accent); opacity: 0.75; }
+
+/* Compact lesson tile: one tile per lesson with small A/B track selectors */
+.home-lesson-tile-ab { padding: 4px 4px 5px; }
+.home-lesson-tile-ab .home-lesson-tile-num { line-height: 1.1; }
+.home-lesson-ab { display: flex; gap: 4px; width: 100%; margin-top: 1px; }
+.home-lesson-ab-seg {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 22px;
+  padding: 0 2px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-dim);
+  font-size: 0.62rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+.home-lesson-ab-seg-b { color: var(--accent); opacity: 0.8; }
+.home-lesson-ab-seg.selected {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+  opacity: 1;
+}
+.home-lesson-ab-dot { width: 5px; height: 5px; border-radius: 50%; background: transparent; flex: none; }
+.home-lesson-ab-seg.has-hard .home-lesson-ab-dot { background: #ef4444; }
+.home-lesson-ab-seg.all-done:not(.selected) .home-lesson-ab-dot { background: #10b981; }
+

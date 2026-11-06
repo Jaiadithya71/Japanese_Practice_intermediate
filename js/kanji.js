@@ -146,12 +146,18 @@ export function renderKanjiLessonChips() {
     const kanji = Object.values(state.kanjiDB || {}).filter(k => k.lesson_number === i);
     const lessonWords = new Set();
     kanji.forEach(k => (k.words || []).forEach(w => { const t = (w.term_ja || w.word || '').trim(); if (t) lessonWords.add(t); }));
-    // Part A: kanji-first (existing track, KWR:/KWW: facets). Part B: kana-first
-    // (kana on top, meaning on the reveal), tracked separately under KWK:/K::kana.
+    // One compact tile per lesson with small A/B selectors inside, so the
+    // picker stays short. Part A: kanji-first (existing track, KWR:/KWW:
+    // facets). Part B: kana-first (kana on top, meaning on the reveal),
+    // tracked separately under KWK:/K::kana.
     const parts = [
-      { selKey: i, suffix: 'A', facet: 'KWR', tileClass: '', partLabel: 'kanji front' },
-      { selKey: `${i}|B`, suffix: 'B', facet: 'KWK', tileClass: ' home-lesson-tile-b', partLabel: 'かな kana front' }
+      { selKey: i, suffix: 'A', facet: 'KWR', partLabel: 'kanji front' },
+      { selKey: `${i}|B`, suffix: 'B', facet: 'KWK', partLabel: 'かな kana front', segClass: ' home-lesson-ab-seg-b' }
     ];
+    const tile = document.createElement('div');
+    tile.className = 'home-lesson-tile home-lesson-tile-ab';
+    if (parts.some(part => (part.suffix === 'A' && isAll) || state.kanjiSelectedLessons.has(part.selKey))) tile.classList.add('selected');
+    const segHtml = [];
     for (const part of parts) {
       const selected = (part.suffix === 'A' && isAll) || state.kanjiSelectedLessons.has(part.selKey);
       let hasHard = false, allMastered = lessonWords.size > 0;
@@ -160,16 +166,15 @@ export function renderKanjiLessonChips() {
         if (st === 'hard') hasHard = true;
         if (st !== 'mastered') allMastered = false;
       });
-      const tile = document.createElement('button');
-      tile.type = 'button';
-      tile.className = `home-lesson-tile${part.tileClass}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}`;
-      tile.setAttribute('aria-pressed', String(selected));
-      tile.setAttribute('aria-label', `Lesson ${i} part ${part.suffix} (${part.partLabel}), ${kanji.length} kanji, ${lessonWords.size} words${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`);
-      tile.title = `${lesson?.title_ja || `Lesson ${i}`} part ${part.suffix} (${part.partLabel}) · ${lessonWords.size} words`;
-      tile.innerHTML = `<span class="home-lesson-tile-num">${i}<span class="home-lesson-tile-part">${part.suffix}</span></span><span class="home-lesson-tile-count">${part.suffix === 'B' ? 'かな' : `${lessonWords.size}w`}</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
-      tile.onclick = () => selectKanjiLesson(part.selKey, 'toggle');
-      container.appendChild(tile);
+      const title = `${lesson?.title_ja || `Lesson ${i}`} part ${part.suffix} (${part.partLabel}) · ${lessonWords.size} words`;
+      const aria = `Lesson ${i} part ${part.suffix} (${part.partLabel}), ${kanji.length} kanji, ${lessonWords.size} words${selected ? ', selected' : ''}${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`;
+      segHtml.push(`<button type="button" class="home-lesson-ab-seg${part.segClass || ''}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}" aria-pressed="${selected}" aria-label="${aria}" title="${title}" data-selkey="${part.selKey}">${part.suffix}<span class="home-lesson-ab-dot" aria-hidden="true"></span></button>`);
     }
+    tile.innerHTML = `<span class="home-lesson-tile-num">${i}</span><span class="home-lesson-tile-count">${lessonWords.size}w</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
+    tile.querySelectorAll('.home-lesson-ab-seg').forEach(seg => {
+      seg.onclick = () => selectKanjiLesson(seg.dataset.selkey, 'toggle');
+    });
+    container.appendChild(tile);
   }
   document.getElementById('kanji-select-all').onclick = () => selectKanjiLesson('all');
   document.getElementById('kanji-clear-selection').onclick = () => {

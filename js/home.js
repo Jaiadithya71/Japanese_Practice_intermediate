@@ -136,25 +136,30 @@ export function renderLessonGrid() {
     const meta = state.chapterMetadata[chId] || {};
     const words = state.vocabDB[chId] || [];
     const label = String(Number(chId.startsWith('part2_') ? chId.slice(6) : chId));
-    // Part A: kanji-first (the existing track). Part B: kana-first - the same
-    // words shown by their kana reading, tracked separately from A mastery.
+    // One compact tile per lesson with small A/B selectors inside, so the
+    // list stays short. A: kanji-first (the existing track). B: kana-first -
+    // the same words shown by their kana reading, tracked separately from A.
     const parts = [
-      { selKey: chId, suffix: 'A', direction: state.studyDirection, partLabel: 'kanji front', tileClass: '' },
-      { selKey: `${chId}|B`, suffix: 'B', direction: 'kana-en', partLabel: 'かな kana front', tileClass: ' home-lesson-tile-b' }
+      { selKey: chId, suffix: 'A', direction: state.studyDirection, partLabel: 'kanji front' },
+      { selKey: `${chId}|B`, suffix: 'B', direction: 'kana-en', partLabel: 'かな kana front', segClass: ' home-lesson-ab-seg-b' }
     ];
+    const topic = meta.topic_en || meta.topic_ja || label;
+    const tile = document.createElement('div');
+    tile.className = 'home-lesson-tile home-lesson-tile-ab';
+    if (parts.some(part => state.selectedChapters.has(part.selKey))) tile.classList.add('selected');
+    const segHtml = [];
     for (const part of parts) {
       const selected = state.selectedChapters.has(part.selKey);
       const mastered = words.filter(w => getWordStatus(w.id, part.direction) === 'mastered').length;
       const hasHard = words.some(w => getWordStatus(w.id, part.direction) === 'hard');
-      const tile = document.createElement('button');
-      tile.type = 'button';
-      tile.className = `home-lesson-tile${part.tileClass}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${mastered === words.length && words.length ? ' all-done' : ''}`;
-      tile.setAttribute('aria-pressed', String(selected));
-      tile.title = `${meta.topic_en || meta.topic_ja || label} part ${part.suffix} (${part.partLabel}) · ${words.length} words · ${mastered} mastered`;
-      tile.innerHTML = `<span class="home-lesson-tile-num">${label}<span class="home-lesson-tile-part">${part.suffix}</span></span><span class="home-lesson-tile-count">${part.suffix === 'B' ? 'かな' : `${words.length}w`}</span><span class="home-lesson-tile-dot" aria-hidden="true"></span>`;
-      tile.onclick = () => toggleChapterSelection(part.selKey);
-      container.appendChild(tile);
+      const allDone = mastered === words.length && words.length;
+      segHtml.push(`<button type="button" class="home-lesson-ab-seg${part.segClass || ''}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allDone ? ' all-done' : ''}" aria-pressed="${selected}" aria-label="Lesson ${label} part ${part.suffix} (${part.partLabel})${selected ? ', selected' : ''}" title="${topic} part ${part.suffix} (${part.partLabel}) · ${words.length} words · ${mastered} mastered" data-selkey="${part.selKey}">${part.suffix}<span class="home-lesson-ab-dot" aria-hidden="true"></span></button>`);
     }
+    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${words.length}w</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
+    tile.querySelectorAll('.home-lesson-ab-seg').forEach(seg => {
+      seg.onclick = () => toggleChapterSelection(seg.dataset.selkey);
+    });
+    container.appendChild(tile);
   });
   updateHomeLessonControls();
 }
