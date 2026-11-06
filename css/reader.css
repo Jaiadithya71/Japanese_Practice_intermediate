@@ -412,6 +412,37 @@
   content: "\25BE  ";
 }
 
+.book-drill-item {
+  margin-top: 0.55rem;
+}
+
+.drill-item-term {
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.drill-item-sentence {
+  font-size: 1rem;
+  line-height: 1.9;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.book-drill-eval {
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+
+.book-timer-group .book-timer-time {
+  min-width: 2.6rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.t-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
 .book-advice-steps {
   margin: 0.6rem 0 0;
   padding-left: 1.2rem;

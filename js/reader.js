@@ -94,7 +94,8 @@ const readerRuntime = {
   bookSectionIndex: 0, // Book mode: current section within the lesson
   practiceQueue: [],   // Practice chaining: ordered lesson ids from the picker
   practiceIndex: -1,
-  lastDrillHardOnly: false
+  lastDrillHardOnly: false,
+  bookTimer: null     // optional self-timer for book-mode passage reading
 };
 
 // Sync initial settings into state
@@ -601,6 +602,7 @@ export function openReadingLesson(lessonId, options = {}) {
   }
 
   stopTimer();
+  resetBookTimer();
 
   // Strategy/drill-only pages have no passage or questions to time or grade.
   // Any non-book entry (Start practice, Home/Daily shortcuts) opens them in
@@ -683,6 +685,7 @@ export function openReadingLesson(lessonId, options = {}) {
 export function closeReadingWorkspace() {
   endGistReviewSession();
   stopTimer();
+  resetBookTimer();
   readerRuntime.lesson = null;
   state.activeReadingLesson = null;
   readerRuntime.bookQueue = [];
@@ -839,6 +842,116 @@ function getLessonToughWords(lesson) {
 
 
 
+
+// Drill items arrive in several shapes across the reading data (term/hint,
+// evaluation +/-, prediction MC, connector MC, paragraph MC, modifying-clause,
+// demonstrative). Render each shape with its question visible and only the
+// answer behind a disclosure - before 2026-11-06 only the term/hint shape
+// rendered, every other item came out as an empty box.
+function drillOptionsHtml(options) {
+  return `<div class="book-drill-items">
+    ${options.map(o => `
+      <div class="book-drill-option">
+        <span class="drill-option-key">${o.key}</span>
+        <span class="font-ja">${o.text_ja || ''}</span>
+        ${o.text_en ? `<div style="color: var(--text-dim); font-size: 0.8rem; margin-left: 1.5rem;">${o.text_en}</div>` : ''}
+      </div>`).join('')}
+  </div>`;
+}
+
+function drillExplanationHtml(text) {
+  return text ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${text}</p>` : '';
+}
+
+function drillAnswerDetails(innerHtml) {
+  return `<details class="book-drill-answer"><summary>Show answer</summary>${innerHtml}</details>`;
+}
+
+function renderBookDrillItem(it) {
+  // Multiple-choice item (prediction / connector / paragraph drills): the
+  // prompt and choices stay visible, only the key hides behind the disclosure.
+  if (Array.isArray(it.options) && it.options.length) {
+    const marker = it.marker ? `${it.marker}. ` : '';
+    const promptJa = it.prompt_ja
+      || (it.term ? `${marker}${it.term}${it.reading && it.reading !== it.term ? `（${it.reading}）` : ''}` : '')
+      || (it.paragraph ? `Paragraph ${it.paragraph}` : '');
+    return `
+      <div class="book-drill-item">
+        ${promptJa ? `<p class="font-ja drill-item-term" style="white-space: pre-line;">${promptJa}</p>` : ''}
+        ${it.prompt_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; white-space: pre-line;">${it.prompt_en}</p>` : ''}
+        ${drillOptionsHtml(it.options)}
+        ${it.correctKey ? drillAnswerDetails(`
+          <p style="margin-top: 0.35rem;">Answer: <strong>${it.correctKey}</strong></p>
+          ${drillExplanationHtml(it.explanation_en)}`) : ''}
+      </div>`;
+  }
+
+  // +/- evaluation drill: phrase visible, the writer's judgment is the answer.
+  if (it.evaluation) {
+    return `
+      <div class="book-drill-item">
+        <p class="font-ja drill-item-term">${it.text_ja || ''}</p>
+        ${it.text_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.text_en}</p>` : ''}
+        ${drillAnswerDetails(`
+          <p style="margin-top: 0.35rem;">Answer: <strong class="book-drill-eval">${it.evaluation}</strong></p>
+          ${drillExplanationHtml(it.explanation_en)}`)}
+      </div>`;
+  }
+
+  // Modifying-clause drill: sentence visible, the clause that modifies the
+  // bracketed noun is the answer.
+  if (it.targetNoun) {
+    const sentence = glossifyBookText(bookJaText(it.fullSentence_ja, it.fullSentence_ruby));
+    return `
+      <div class="book-drill-item">
+        <p class="font-ja drill-item-sentence">${sentence}</p>
+        ${it.fullSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.fullSentence_en}</p>` : ''}
+        ${drillAnswerDetails(`
+          <p class="font-ja" style="margin-top: 0.35rem; font-weight: 600;">${it.modifyingClause_ja || ''}</p>
+          ${it.modifyingClause_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.modifyingClause_en}</p>` : ''}
+          ${drillExplanationHtml(it.explanation_en)}`)}
+      </div>`;
+  }
+
+  // Demonstrative drill: sentence visible, what the demonstrative points to is
+  // the answer.
+  if (it.demonstrative) {
+    const sentence = glossifyBookText(bookJaText(it.fullSentence_ja, it.fullSentence_ruby));
+    return `
+      <div class="book-drill-item">
+        <p class="font-ja drill-item-sentence">${sentence}</p>
+        ${it.fullSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.fullSentence_en}</p>` : ''}
+        ${drillAnswerDetails(`
+          <p class="font-ja" style="margin-top: 0.35rem; font-weight: 600;">${it.demonstrative} = ${it.targetReferent_ja || ''}</p>
+          ${it.completedSentence_ja ? `<p class="font-ja" style="margin-top: 0.25rem;">${it.completedSentence_ja}</p>` : ''}
+          ${it.completedSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.completedSentence_en}</p>` : ''}
+          ${drillExplanationHtml(it.explanation_en)}`)}
+      </div>`;
+  }
+
+  // Term/hint item (original shape): term in the disclosure header, hints and
+  // meanings inside.
+  if (it.term_ja || it.text_ja) {
+    return `
+      <details class="book-drill-answer book-drill-item">
+        <summary><span class="font-ja drill-item-term">${it.marker ? `${it.marker}. ` : ''}${it.term_ja || it.text_ja || ''}${it.reading && it.reading !== it.term_ja ? `（${it.reading}）` : ''}</span></summary>
+        ${it.text_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${it.text_en}</p>` : ''}
+        ${it.hint_ja ? `<p class="font-ja" style="margin-top: 0.3rem;">${glossifyBookText(it.hint_ja)}</p>` : ''}
+        ${it.hint_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.hint_en}</p>` : ''}
+        ${it.meaning_ja ? `<p class="font-ja" style="margin-top: 0.25rem; font-weight: 600;">${it.meaning_ja}</p>` : ''}
+        ${it.meaning_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.meaning_en}</p>` : ''}
+      </details>`;
+  }
+
+  // Unknown shape: show whatever text exists rather than an empty box.
+  const fallback = it.prompt_ja || it.fullSentence_ja || it.term || '';
+  return fallback ? `
+    <div class="book-drill-item">
+      <p class="font-ja drill-item-term" style="white-space: pre-line;">${fallback}</p>
+      ${drillExplanationHtml(it.explanation_en)}
+    </div>` : '';
+}
+
 function renderBookDrillCard(d) {
   const titleJa = bookJaText(d.title_ja, d.title_ja_ruby);
   const instrJa = glossifyBookText(bookJaText(d.instruction_ja, d.instruction_ja_ruby));
@@ -853,14 +966,7 @@ function renderBookDrillCard(d) {
       ${d.originalSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${d.originalSentence_en}</p>` : ''}
       ${(d.items || []).length ? `
         <div class="book-drill-items">
-          ${d.items.map(it => `
-            <details class="book-drill-answer book-drill-item">
-              <summary><span class="font-ja drill-item-term">${it.marker ? `${it.marker}. ` : ''}${it.term_ja || ''}${it.reading && it.reading !== it.term_ja ? `（${it.reading}）` : ''}</span></summary>
-              ${it.hint_ja ? `<p class="font-ja" style="margin-top: 0.3rem;">${glossifyBookText(it.hint_ja)}</p>` : ''}
-              ${it.hint_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.hint_en}</p>` : ''}
-              ${it.meaning_ja ? `<p class="font-ja" style="margin-top: 0.25rem; font-weight: 600;">${it.meaning_ja}</p>` : ''}
-              ${it.meaning_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.meaning_en}</p>` : ''}
-            </details>`).join('')}
+          ${d.items.map(it => renderBookDrillItem(it)).join('')}
         </div>` : ''}
       ${(d.options || []).length ? `
         <div class="book-drill-items">
@@ -1104,9 +1210,14 @@ function renderBookPhase(container) {
     </div>
 
     ${section.id === 'passage' ? `
-    <!-- Reading display toolbar (no timer in book mode) -->
+    <!-- Reading display toolbar + optional passage self-timer (ungraded) -->
     <div class="reading-sticky-toolbar">
       <div class="toolbar-pill-group">
+        <div class="toolbar-btn-group book-timer-group" title="Time how fast you read this passage">
+          <button class="t-btn" id="book-timer-toggle" onclick="bookTimerToggle()" title="${bookTimerState().running ? 'Pause timer' : 'Start timer'}"><i class="fa-solid ${bookTimerState().running ? 'fa-pause' : 'fa-play'}"></i></button>
+          <span class="t-label book-timer-time" id="book-timer-time">${formatTime(bookTimerState().elapsed)}</span>
+          <button class="t-btn" id="book-timer-reset" onclick="bookTimerReset()" title="Reset timer"${(bookTimerState().elapsed === 0 && !bookTimerState().running) ? ' disabled' : ''}><i class="fa-solid fa-rotate-left"></i></button>
+        </div>
         <div class="toolbar-btn-group">
           <button class="t-btn" title="Decrease font size" onclick="adjustFontScale(-0.1)">A−</button>
           <span class="t-label">${Math.round(readerRuntime.settings.fontScale * 100)}%</span>
@@ -1251,6 +1362,7 @@ export function startReadingPassage() {
     readerRuntime.elapsedSeconds = 0;
   }
   readerRuntime.phase = 'read';
+  resetBookTimer();
   readerRuntime.readStartTime = Date.now();
   startTimer();
   renderWorkspace();
@@ -1260,6 +1372,7 @@ export function startReadingPassage() {
 export function skipToQuestions() {
   beginGistReviewSession();
   stopTimer();
+  stopBookTimer();
   // Already graded this session: reopen the graded feedback instead of a
   // locked answer sheet whose Check button can no longer fire.
   readerRuntime.phase = (readerRuntime.submitted && readerRuntime.lastResults) ? 'review' : 'answer';
@@ -2492,6 +2605,74 @@ function updateTimerPill() {
   }
 }
 
+
+// =======================================================
+// OPTIONAL BOOK PASSAGE TIMER (his ask 2026-11-06)
+// Relaxed self-timing in book mode only: a compact chip in the passage
+// toolbar with manual start/pause/reset. Never auto-starts, nothing is
+// recorded to study stats or sync, and it is separate from the graded
+// timed-practice timer above.
+// =======================================================
+
+function bookTimerState() {
+  if (!readerRuntime.bookTimer) {
+    readerRuntime.bookTimer = { elapsed: 0, running: false, startedAt: 0, interval: null };
+  }
+  return readerRuntime.bookTimer;
+}
+
+function stopBookTimer() {
+  const t = bookTimerState();
+  if (t.interval) {
+    clearInterval(t.interval);
+    t.interval = null;
+  }
+  t.running = false;
+}
+
+function resetBookTimer() {
+  stopBookTimer();
+  bookTimerState().elapsed = 0;
+}
+
+function updateBookTimerChip() {
+  const t = bookTimerState();
+  const timeEl = document.getElementById('book-timer-time');
+  if (timeEl) timeEl.textContent = formatTime(t.elapsed);
+  const toggleBtn = document.getElementById('book-timer-toggle');
+  if (toggleBtn) {
+    toggleBtn.innerHTML = `<i class="fa-solid ${t.running ? 'fa-pause' : 'fa-play'}"></i>`;
+    toggleBtn.title = t.running ? 'Pause timer' : 'Start timer';
+  }
+  const resetBtn = document.getElementById('book-timer-reset');
+  if (resetBtn) resetBtn.disabled = (t.elapsed === 0 && !t.running);
+}
+
+export function bookTimerToggle() {
+  const t = bookTimerState();
+  if (t.running) {
+    stopBookTimer();
+  } else {
+    t.startedAt = Date.now() - (t.elapsed * 1000);
+    t.running = true;
+    t.interval = setInterval(() => {
+      if (readerRuntime.phase !== 'book') {
+        resetBookTimer();
+        return;
+      }
+      t.elapsed = Math.max(1, Math.round((Date.now() - t.startedAt) / 1000));
+      const timeEl = document.getElementById('book-timer-time');
+      if (timeEl) timeEl.textContent = formatTime(t.elapsed);
+    }, 1000);
+  }
+  updateBookTimerChip();
+}
+
+export function bookTimerReset() {
+  resetBookTimer();
+  updateBookTimerChip();
+}
+
 function escapeRegExp(string) {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
@@ -3133,4 +3314,6 @@ if (typeof window !== 'undefined') {
   window.practiceNextReadingLesson = practiceNextReadingLesson;
   window.startReadingWordDrill = startReadingWordDrill;
   window.restartReadingWordDrill = restartReadingWordDrill;
+  window.bookTimerToggle = bookTimerToggle;
+  window.bookTimerReset = bookTimerReset;
 }
