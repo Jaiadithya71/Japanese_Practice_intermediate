@@ -139,7 +139,7 @@
           <label class="home-run-setting"><span>Direction</span><select aria-label="Study direction" onchange="window.setHomeStudyDirection(this.value)">
             <option value="ja-en" selected>Japanese → English</option><option value="en-ja">English → Japanese</option>
           </select></label>
-          <label class="home-run-check"><input id="home-hard-only" type="checkbox"> Drill hard words only</label>
+          <label class="home-run-check"><input id="home-hard-only" type="checkbox" onchange="window.toggleHomeHardOnly()"> Drill hard words only</label>
         </div>
         <div class="home-phase-row">
           <span>Flashcard mode</span>
@@ -1143,7 +1143,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=20261106-flamefix"></script>
+  <script type="module" src="js/main.js?v=20261107-hardcount"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

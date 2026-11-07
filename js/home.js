@@ -6,7 +6,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
    ======================================================= */
 
 import { state } from './state.js';
-import { getWordStatus } from './srs.js';
+import { getWordStatus, peekItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js?v=4.4';
 import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
@@ -129,6 +129,28 @@ function homeSelectedChapterKeys() {
     : textbookChapterKeys();
 }
 
+
+function homeWordStatusKey(wordId, direction) {
+  // Mirrors getWordStatus keying, but non-mutating (peek) for display counts.
+  return `V:${wordId}${direction === 'en-ja' ? ':rev' : (direction === 'kana-en' ? ':kana' : '')}`;
+}
+
+function homeHardWordCount(words, direction) {
+  let n = 0;
+  for (const w of words) if (peekItemStatus(homeWordStatusKey(w.id, direction)) === 'hard') n++;
+  return n;
+}
+
+function homeHardOnlyChecked() {
+  return Boolean(document.getElementById('home-hard-only')?.checked);
+}
+
+export function toggleHomeHardOnly() {
+  renderLessonGrid();
+  updateHomeLessonControls();
+}
+if (typeof window !== 'undefined') window.toggleHomeHardOnly = toggleHomeHardOnly;
+
 export function renderLessonGrid() {
   const container = document.getElementById('home-lesson-grid');
   if (!container) return;
@@ -156,7 +178,17 @@ export function renderLessonGrid() {
       const allDone = mastered === words.length && words.length;
       segHtml.push(`<button type="button" class="home-lesson-ab-seg${part.segClass || ''}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allDone ? ' all-done' : ''}" aria-pressed="${selected}" aria-label="Lesson ${label} part ${part.suffix} (${part.partLabel})${selected ? ', selected' : ''}" title="${topic} part ${part.suffix} (${part.partLabel}) · ${words.length} words · ${mastered} mastered" data-selkey="${part.selKey}">${part.suffix}<span class="home-lesson-ab-dot" aria-hidden="true"></span></button>`);
     }
-    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${words.length}w</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
+    // With "Drill hard words only" on, the tile count shows how many words the
+    // drill would actually draw from this lesson (per selected A/B part, like
+    // the pool); unselected lessons show the count for the current direction.
+    let tileCount = words.length;
+    if (homeHardOnlyChecked()) {
+      const picked = parts.filter(part => state.selectedChapters.has(part.selKey));
+      tileCount = picked.length
+        ? picked.reduce((sum, part) => sum + homeHardWordCount(words, part.direction), 0)
+        : homeHardWordCount(words, state.studyDirection);
+    }
+    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${tileCount}w</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
     tile.querySelectorAll('.home-lesson-ab-seg').forEach(seg => {
       seg.onclick = () => toggleChapterSelection(seg.dataset.selkey);
     });
@@ -205,7 +237,20 @@ function updateHomeLessonControls() {
   if (phaseHint) phaseHint.textContent = phase === 'learn' ? 'Reading, meaning & examples. No grading.' : 'Recall first, then reveal and grade.';
 
   const chapters = homeSelectedChapterKeys();
-  const wordCount = chapters.reduce((sum, id) => sum + (state.vocabDB[id] || []).length, 0);
+  // With "Drill hard words only" on, the pool is just the hard words the drill
+  // will draw (same per-part filter as startSelectedLessonRun); otherwise the
+  // normal full count.
+  let wordCount;
+  if (homeHardOnlyChecked()) {
+    wordCount = 0;
+    for (const selKey of state.selectedChapters) {
+      const kanaFirst = selKey.endsWith('|B');
+      const chapter = kanaFirst ? selKey.slice(0, -2) : selKey;
+      wordCount += homeHardWordCount(state.vocabDB[chapter] || [], kanaFirst ? 'kana-en' : state.studyDirection);
+    }
+  } else {
+    wordCount = chapters.reduce((sum, id) => sum + (state.vocabDB[id] || []).length, 0);
+  }
   const summary = document.getElementById('home-lessons-count');
   if (summary) summary.textContent = state.selectedChapters.size
     ? `${state.selectedChapters.size} lesson${state.selectedChapters.size === 1 ? '' : 's'} selected · ${wordCount.toLocaleString()} words in pool`
