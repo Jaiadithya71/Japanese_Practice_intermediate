@@ -12,7 +12,7 @@
 import { state } from './state.js';
 import { startTestSession } from './test.js';
 import { beginGistReviewSession } from './gist-sync.js';
-import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus } from './srs.js';
+import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus, peekItemStatus } from './srs.js';
 import { startStudy, renderCard } from './study.js?v=4.4';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
@@ -49,6 +49,7 @@ export function renderKanjiView() {
   if (mockPane) mockPane.style.display = tab === 'mock' ? 'block' : 'none';
 
   renderKanjiActivity();
+  renderKanjiStatus();
   if (tab === 'target') {
     renderKanjiLessonChips();
     renderKanjiTargetGrid();
@@ -640,6 +641,38 @@ function startKanjiBatch() {
 export function startNextKanjiBatch() {
   if (!state.kanjiRunQueue || !state.kanjiRunQueue.length) return;
   startKanjiBatch();
+}
+
+/* Compact kanji status above Kanji study activity, mirroring Home's Vocab status.
+   Part A counts the reading facet (KWR:, kanji front); Part B counts the kana
+   facet (KWK:, kana front) - the same facets the lesson tiles' A/B parts use.
+   Counts use non-mutating peeks, so displaying never creates SRS records. */
+export function renderKanjiStatus() {
+  const el = document.getElementById('kst-rows');
+  if (!el) return;
+  const words = new Set();
+  for (const char in (state.kanjiDB || {})) {
+    for (const w of (state.kanjiDB[char].words || [])) {
+      const t = (w.term_ja || w.word || '').trim();
+      if (t) words.add(t);
+    }
+  }
+  const total = words.size;
+  const tracks = [['KWR', 'Part A'], ['KWK', 'Part B \u00b7 kana']];
+  el.innerHTML = tracks.map(([facet, label]) => {
+    const c = { mastered: 0, learning: 0, hard: 0, unseen: 0 };
+    words.forEach(w => {
+      const st = peekItemStatus(`${facet}:${w}`);
+      c[st === 'mastered' || st === 'hard' || st === 'learning' ? st : 'unseen']++;
+    });
+    const pct = n => (total ? (n / total) * 100 : 0).toFixed(2);
+    const seg = k => `<span class="hvs-seg hvs-${k}" style="width:${pct(c[k])}%"></span>`;
+    return `<div class="hvs-row" aria-label="${label}: ${c.mastered} mastered, ${c.learning} learning, ${c.hard} hard, ${c.unseen} new of ${total}">
+      <div class="hvs-label">${label}</div>
+      <div class="hvs-main"><div class="hvs-bar">${seg('mastered')}${seg('learning')}${seg('hard')}</div>
+      <div class="hvs-counts"><span class="hvs-mastered"><b>${c.mastered}</b> mastered</span><span class="hvs-learning"><b>${c.learning}</b> learning</span><span class="hvs-hard"><b>${c.hard}</b> hard</span><span class="hvs-unseen"><b>${c.unseen}</b> new</span></div></div>
+    </div>`;
+  }).join('');
 }
 
 export function updateKanjiProgress() {
@@ -1673,6 +1706,7 @@ if (typeof window !== 'undefined') {
   window.setKanjiReviewPhase = setKanjiReviewPhase;
   window.startNextKanjiBatch = startNextKanjiBatch;
   window.renderKanjiActivity = renderKanjiActivity;
+  window.renderKanjiStatus = renderKanjiStatus;
   window.toggleKanjiHardOnly = toggleKanjiHardOnly;
   window.drillKanjiHard = drillKanjiHard;
      }
