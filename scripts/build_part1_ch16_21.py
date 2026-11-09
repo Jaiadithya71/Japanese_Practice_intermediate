@@ -55,6 +55,10 @@ def build():
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+    # Source modules ship these chapters without English example sentences.
+    from apply_example_translations import apply_to_file
+    apply_to_file(out_file)
+
     print(f"Successfully generated: {out_file}")
     print(f"File size: {os.path.getsize(out_file):,} bytes")
     print(f"Total units included: {len(data['chapters'])}")

@@ -3481,3 +3481,9 @@ with open(out_file, "w", encoding="utf-8") as f:
     json.dump(output_data, f, ensure_ascii=False, indent=2)
 
 print(f"Successfully generated {out_file} with {len(all_chapters)} units.")
+
+# Source modules ship these chapters without English example sentences.
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from apply_example_translations import apply_to_file
+apply_to_file(out_file)

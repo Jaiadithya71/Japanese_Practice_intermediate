@@ -150,7 +150,7 @@ def load_kanji_exercises():
                     clean_q = strip_html(q_raw)
                     clean_m = strip_html(m_raw)
                     if not clean_m:
-                        clean_m = ex_tr.get(f"kanji_ex:{qid}", '')
+                        clean_m = ex_tr.get(f"kanji_ex:{qid}", "")
                     # A context card must show an English line: skip untranslated
                     # fill-in-the-blank stems so the next source is used instead.
                     if clean_q and clean_m:

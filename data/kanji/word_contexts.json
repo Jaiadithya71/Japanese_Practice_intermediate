@@ -121,12 +121,22 @@
   ],
   "丸": [
     {
-      "sentence_ja": "このおにぎり、ただご飯を丸くしただけのように見えるが、上手に作るのは簡単ではない。",
-      "meaning": "This onigiri looks like nothing more than simply rounded cooked rice, but making it well is not easy.",
-      "source": "reading:dokkai-n3-p4-29",
-      "ja": "このおにぎり、ただご飯を丸くしただけのように見えるが、上手に作るのは簡単ではない。",
-      "en": "This onigiri looks like nothing more than simply rounded cooked rice, but making it well is not easy.",
-      "src": "reading:dokkai-n3-p4-29"
+      "sentence_ja": "満月の夜、（ 丸い ）月が夜空に輝いている。",
+      "meaning": "On a full-moon night, the round moon shines in the night sky.",
+      "source": "kanji_ex:k_ex_04_1_3",
+      "ja": "満月の夜、（ 丸い ）月が夜空に輝いている。",
+      "en": "On a full-moon night, the round moon shines in the night sky.",
+      "src": "kanji_ex:k_ex_04_1_3"
+    }
+  ],
+  "丸い": [
+    {
+      "sentence_ja": "満月の夜、（ 丸い ）月が夜空に輝いている。",
+      "meaning": "On a full-moon night, the round moon shines in the night sky.",
+      "source": "kanji_ex:k_ex_04_1_3",
+      "ja": "満月の夜、（ 丸い ）月が夜空に輝いている。",
+      "en": "On a full-moon night, the round moon shines in the night sky.",
+      "src": "kanji_ex:k_ex_04_1_3"
     }
   ],
   "主婦": [
@@ -189,6 +199,16 @@
       "src": "kanji_ex:k_ex_m1_3_6"
     }
   ],
+  "予防": [
+    {
+      "sentence_ja": "病気びょうきの予防よぼうには、正ただしい生活せいかつ【習□】も大事だいじだ。",
+      "meaning": "For preventing illness, healthy living habits are also important.",
+      "source": "kanji_ex:k_ex_matome7_3_3",
+      "ja": "病気びょうきの予防よぼうには、正ただしい生活せいかつ【習□】も大事だいじだ。",
+      "en": "For preventing illness, healthy living habits are also important.",
+      "src": "kanji_ex:k_ex_matome7_3_3"
+    }
+  ],
   "事件": [
     {
       "sentence_ja": "事件が起きる",
@@ -237,6 +257,16 @@
       "ja": "④a 事故の ［ ］因を調査した。",
       "en": "We investigated the cause of the accident.",
       "src": "kanji_ex:k_ex_12_3_7"
+    }
+  ],
+  "交差点": [
+    {
+      "sentence_ja": "病院びょういんは、次つぎの a【かど】を右みぎに曲まがって最初さいしょの交差点こうさてんを渡わたると、すぐです。",
+      "meaning": "The hospital is right there: turn right at the next corner, cross the first intersection, and you are there.",
+      "source": "kanji_ex:k_ex_16_4_7a",
+      "ja": "病院びょういんは、次つぎの a【かど】を右みぎに曲まがって最初さいしょの交差点こうさてんを渡わたると、すぐです。",
+      "en": "The hospital is right there: turn right at the next corner, cross the first intersection, and you are there.",
+      "src": "kanji_ex:k_ex_16_4_7a"
     }
   ],
   "交通事故": [
@@ -371,12 +401,12 @@
   ],
   "会議": [
     {
-      "sentence_ja": "②a 会議で、社長から、「田中［ ］、君はどう思う？」と意見を聞かれた。",
-      "meaning": "At the meeting, the president asked for my opinion: 'Tanaka-kun, what do you think?'",
-      "source": "kanji_ex:k_ex_14_3_3",
-      "ja": "②a 会議で、社長から、「田中［ ］、君はどう思う？」と意見を聞かれた。",
-      "en": "At the meeting, the president asked for my opinion: 'Tanaka-kun, what do you think?'",
-      "src": "kanji_ex:k_ex_14_3_3"
+      "sentence_ja": "大阪でボランティア f. 団体が g. 会議。",
+      "meaning": "A volunteer group is holding a meeting in Osaka.",
+      "source": "kanji_ex:k_ex_08_1_6",
+      "ja": "大阪でボランティア f. 団体が g. 会議。",
+      "en": "A volunteer group is holding a meeting in Osaka.",
+      "src": "kanji_ex:k_ex_08_1_6"
     }
   ],
   "伝える": [
@@ -437,6 +467,16 @@
       "ja": "体育の授業",
       "en": "A PE class.",
       "src": "vocab:v11-046"
+    }
+  ],
+  "体重": [
+    {
+      "sentence_ja": "ダイエットをして体重が（ 減ります ）。",
+      "meaning": "I went on a diet, and my weight went down.",
+      "source": "kanji_ex:k_ex_03_1_1",
+      "ja": "ダイエットをして体重が（ 減ります ）。",
+      "en": "I went on a diet, and my weight went down.",
+      "src": "kanji_ex:k_ex_03_1_1"
     }
   ],
   "作業": [
@@ -579,24 +619,44 @@
       "src": "vocab:v20-008"
     }
   ],
+  "値上がり": [
+    {
+      "sentence_ja": "① 原料（a げんりょう b げんりょ c けんりょう）が値上がりしたので、製品の値段が上がった。",
+      "meaning": "Because the price of raw materials went up, the price of the product rose.",
+      "source": "kanji_ex:k_ex_07_2_1",
+      "ja": "① 原料（a げんりょう b げんりょ c けんりょう）が値上がりしたので、製品の値段が上がった。",
+      "en": "Because the price of raw materials went up, the price of the product rose.",
+      "src": "kanji_ex:k_ex_07_2_1"
+    }
+  ],
   "値段": [
     {
-      "sentence_ja": "値段は安くはないですが、それを買うことで「困っている人の助けになる」ことができます。",
-      "meaning": "Although the price is not cheap, by buying them, one can 'be of help to people in need'.",
-      "source": "reading:dokkai-n3-l05",
-      "ja": "値段は安くはないですが、それを買うことで「困っている人の助けになる」ことができます。",
-      "en": "Although the price is not cheap, by buying them, one can 'be of help to people in need'.",
-      "src": "reading:dokkai-n3-l05"
+      "sentence_ja": "① 原料（a げんりょう b げんりょ c けんりょう）が値上がりしたので、製品の値段が上がった。",
+      "meaning": "Because the price of raw materials went up, the price of the product rose.",
+      "source": "kanji_ex:k_ex_07_2_1",
+      "ja": "① 原料（a げんりょう b げんりょ c けんりょう）が値上がりしたので、製品の値段が上がった。",
+      "en": "Because the price of raw materials went up, the price of the product rose.",
+      "src": "kanji_ex:k_ex_07_2_1"
     }
   ],
   "億": [
     {
-      "sentence_ja": "3億円が当たる宝くじ(注1)がある。",
-      "meaning": "There is a lottery in which one can win 300 million yen.",
-      "source": "reading:dokkai-n3-p4-33",
-      "ja": "3億円が当たる宝くじ(注1)がある。",
-      "en": "There is a lottery in which one can win 300 million yen.",
-      "src": "reading:dokkai-n3-p4-33"
+      "sentence_ja": "⑤ 男は1億円のげんきん（a 現金 b 理金 c 児金）を持って逃げた。",
+      "meaning": "The man ran away with 100 million yen in cash.",
+      "source": "kanji_ex:k_ex_09_2_5",
+      "ja": "⑤ 男は1億円のげんきん（a 現金 b 理金 c 児金）を持って逃げた。",
+      "en": "The man ran away with 100 million yen in cash.",
+      "src": "kanji_ex:k_ex_09_2_5"
+    }
+  ],
+  "優しい": [
+    {
+      "sentence_ja": "ファンは、「山川さんの e. 優しい笑顔が、忘れられません。」と話していました……。",
+      "meaning": "The fan said, \"I can't forget Ms. Yamakawa's kind smile.\"",
+      "source": "kanji_ex:k_ex_09_4_5",
+      "ja": "ファンは、「山川さんの e. 優しい笑顔が、忘れられません。」と話していました……。",
+      "en": "The fan said, \"I can't forget Ms. Yamakawa's kind smile.\"",
+      "src": "kanji_ex:k_ex_09_4_5"
     }
   ],
   "優勝": [
@@ -629,6 +689,16 @@
       "src": "kanji_ex:k_ex_m1_1_5"
     }
   ],
+  "全力": [
+    {
+      "sentence_ja": "② どんなことでも a. 全力 でやる子供に育ってほしい。",
+      "meaning": "I want my child to grow up giving their all in everything.",
+      "source": "kanji_ex:k_ex_05_1_3",
+      "ja": "② どんなことでも a. 全力 でやる子供に育ってほしい。",
+      "en": "I want my child to grow up giving their all in everything.",
+      "src": "kanji_ex:k_ex_05_1_3"
+    }
+  ],
   "全然": [
     {
       "sentence_ja": "後ろから呼ばれていたのに、全然気付きませんでした。",
@@ -647,6 +717,16 @@
       "ja": "公務員になる",
       "en": "Become a civil servant.",
       "src": "vocab:v13-021"
+    }
+  ],
+  "公園": [
+    {
+      "sentence_ja": "公園で（ 子供 ）たちが遊んでいる。",
+      "meaning": "Children are playing in the park.",
+      "source": "kanji_ex:k_ex_01_1_8",
+      "ja": "公園で（ 子供 ）たちが遊んでいる。",
+      "en": "Children are playing in the park.",
+      "src": "kanji_ex:k_ex_01_1_8"
     }
   ],
   "共通": [
@@ -829,14 +909,24 @@
       "src": "vocab:v2-02-009"
     }
   ],
+  "制服": [
+    {
+      "sentence_ja": "③ この高校の制服は、とてもすてきだと思う。",
+      "meaning": "I think the uniform at this high school is really nice.",
+      "source": "kanji_ex:k_ex_matome3_1_3",
+      "ja": "③ この高校の制服は、とてもすてきだと思う。",
+      "en": "I think the uniform at this high school is really nice.",
+      "src": "kanji_ex:k_ex_matome3_1_3"
+    }
+  ],
   "制限": [
     {
-      "sentence_ja": "食事の量を制限する",
-      "meaning": "limit the amount of food",
-      "source": "vocab:v06-018",
-      "ja": "食事の量を制限する",
-      "en": "limit the amount of food",
-      "src": "vocab:v06-018"
+      "sentence_ja": "制限速度や基準を（ a 越える b 抜ける ）。",
+      "meaning": "Exceed the speed limit and the standards.",
+      "source": "kanji_ex:k_ex_02_2_1",
+      "ja": "制限速度や基準を（ a 越える b 抜ける ）。",
+      "en": "Exceed the speed limit and the standards.",
+      "src": "kanji_ex:k_ex_02_2_1"
     }
   ],
   "券": [
@@ -909,6 +999,16 @@
       "src": "vocab:v07-039"
     }
   ],
+  "労働": [
+    {
+      "sentence_ja": "② 会社に労働 a. 条［ ］を守るように、要求した。",
+      "meaning": "They demanded that the company observe the working conditions.",
+      "source": "kanji_ex:k_ex_08_3_3",
+      "ja": "② 会社に労働 a. 条［ ］を守るように、要求した。",
+      "en": "They demanded that the company observe the working conditions.",
+      "src": "kanji_ex:k_ex_08_3_3"
+    }
+  ],
   "効く": [
     {
       "sentence_ja": "薬がよく効く",
@@ -971,12 +1071,12 @@
   ],
   "卒業": [
     {
-      "sentence_ja": "何年なんねんに大学だいがくをご卒業そつぎょうになったのですか。",
-      "meaning": "In what year did you graduate from university?",
-      "source": "grammar:grammar",
-      "ja": "何年なんねんに大学だいがくをご卒業そつぎょうになったのですか。",
-      "en": "In what year did you graduate from university?",
-      "src": "grammar:grammar"
+      "sentence_ja": "注意！ a. 欠席が多いと b. 卒業できません。",
+      "meaning": "Caution! If you are absent a lot, you will not be able to graduate.",
+      "source": "kanji_ex:k_ex_10_1_1",
+      "ja": "注意！ a. 欠席が多いと b. 卒業できません。",
+      "en": "Caution! If you are absent a lot, you will not be able to graduate.",
+      "src": "kanji_ex:k_ex_10_1_1"
     }
   ],
   "協力": [
@@ -1017,6 +1117,16 @@
       "ja": "事故の原因を調査する",
       "en": "Investigate the cause of the accident.",
       "src": "vocab:v15-025"
+    }
+  ],
+  "原料": [
+    {
+      "sentence_ja": "① 原料（a げんりょう b げんりょ c けんりょう）が値上がりしたので、製品の値段が上がった。",
+      "meaning": "Because the price of raw materials went up, the price of the product rose.",
+      "source": "kanji_ex:k_ex_07_2_1",
+      "ja": "① 原料（a げんりょう b げんりょ c けんりょう）が値上がりしたので、製品の値段が上がった。",
+      "en": "Because the price of raw materials went up, the price of the product rose.",
+      "src": "kanji_ex:k_ex_07_2_1"
     }
   ],
   "参加": [
@@ -1109,6 +1219,16 @@
       "src": "reading:dokkai-n3-p4-41"
     }
   ],
+  "受験": [
+    {
+      "sentence_ja": "a【受験】の案内あんないを b【受け取った】。",
+      "meaning": "I received the notice about the entrance exam.",
+      "source": "kanji_ex:k_ex_matome7_4_1a",
+      "ja": "a【受験】の案内あんないを b【受け取った】。",
+      "en": "I received the notice about the entrance exam.",
+      "src": "kanji_ex:k_ex_matome7_4_1a"
+    }
+  ],
   "司会": [
     {
       "sentence_ja": "c. 司会（古田）",
@@ -1169,6 +1289,16 @@
       "src": "vocab:v05-031"
     }
   ],
+  "向こう": [
+    {
+      "sentence_ja": "ガイド：空港くうこうを10時じに出発しゅっぱつして、g【向こう】の空港くうこうに着つくのは12時じの予定よていです。",
+      "meaning": "Guide: We leave the airport at 10:00 and are scheduled to arrive at the airport on the other side at 12:00.",
+      "source": "kanji_ex:k_ex_16_1_g",
+      "ja": "ガイド：空港くうこうを10時じに出発しゅっぱつして、g【向こう】の空港くうこうに着つくのは12時じの予定よていです。",
+      "en": "Guide: We leave the airport at 10:00 and are scheduled to arrive at the airport on the other side at 12:00.",
+      "src": "kanji_ex:k_ex_16_1_g"
+    }
+  ],
   "君": [
     {
       "sentence_ja": "②a 会議で、社長から、「田中［ ］、君はどう思う？」と意見を聞かれた。",
@@ -1199,6 +1329,16 @@
       "src": "vocab:v07-038"
     }
   ],
+  "和室": [
+    {
+      "sentence_ja": "団地の中央にある管理 b. じむしょには、c. かいぎしつのほか、d. 和室も作られています。",
+      "meaning": "In the management office in the middle of the housing complex, a meeting room and a Japanese-style room have also been built.",
+      "source": "kanji_ex:k_ex_08_4_2",
+      "ja": "団地の中央にある管理 b. じむしょには、c. かいぎしつのほか、d. 和室も作られています。",
+      "en": "In the management office in the middle of the housing complex, a meeting room and a Japanese-style room have also been built.",
+      "src": "kanji_ex:k_ex_08_4_2"
+    }
+  ],
   "商品": [
     {
       "sentence_ja": "商品を販売する",
@@ -1207,6 +1347,56 @@
       "ja": "商品を販売する",
       "en": "Sell a product.",
       "src": "vocab:v13-045"
+    }
+  ],
+  "商店": [
+    {
+      "sentence_ja": "① 人口が減って、駅の前の商店も閉めるところが増えた。",
+      "meaning": "As the population has fallen, more shops in front of the station are closing.",
+      "source": "kanji_ex:k_ex_07_3_1",
+      "ja": "① 人口が減って、駅の前の商店も閉めるところが増えた。",
+      "en": "As the population has fallen, more shops in front of the station are closing.",
+      "src": "kanji_ex:k_ex_07_3_1"
+    }
+  ],
+  "営業": [
+    {
+      "sentence_ja": "川田：山本さんは b. 営業部にいらっしゃるんですね。",
+      "meaning": "Kawada: So you are in the sales department, Mr. Yamamoto.",
+      "source": "kanji_ex:k_ex_07_1_2",
+      "ja": "川田：山本さんは b. 営業部にいらっしゃるんですね。",
+      "en": "Kawada: So you are in the sales department, Mr. Yamamoto.",
+      "src": "kanji_ex:k_ex_07_1_2"
+    }
+  ],
+  "四角い": [
+    {
+      "sentence_ja": "その【四角い】箱はこに、おもちゃの電車でんしゃが入はいっている。",
+      "meaning": "A toy train is inside that square box.",
+      "source": "kanji_ex:k_ex_16_4_4",
+      "ja": "その【四角い】箱はこに、おもちゃの電車でんしゃが入はいっている。",
+      "en": "A toy train is inside that square box.",
+      "src": "kanji_ex:k_ex_16_4_4"
+    }
+  ],
+  "団体": [
+    {
+      "sentence_ja": "大阪でボランティア f. 団体が g. 会議。",
+      "meaning": "A volunteer group is holding a meeting in Osaka.",
+      "source": "kanji_ex:k_ex_08_1_6",
+      "ja": "大阪でボランティア f. 団体が g. 会議。",
+      "en": "A volunteer group is holding a meeting in Osaka.",
+      "src": "kanji_ex:k_ex_08_1_6"
+    }
+  ],
+  "団地": [
+    {
+      "sentence_ja": "団地の中央にある管理 b. じむしょには、c. かいぎしつのほか、d. 和室も作られています。",
+      "meaning": "In the management office in the middle of the housing complex, a meeting room and a Japanese-style room have also been built.",
+      "source": "kanji_ex:k_ex_08_4_2",
+      "ja": "団地の中央にある管理 b. じむしょには、c. かいぎしつのほか、d. 和室も作られています。",
+      "en": "In the management office in the middle of the housing complex, a meeting room and a Japanese-style room have also been built.",
+      "src": "kanji_ex:k_ex_08_4_2"
     }
   ],
   "困る": [
@@ -1231,12 +1421,12 @@
   ],
   "国際": [
     {
-      "sentence_ja": "【お問い合わせ】国際ビル管理部（内線：3301）",
-      "meaning": "[Inquiries] Kokusai Building Management Dept. (Extension: 3301)",
-      "source": "reading:dokkai-n3-p3-05",
-      "ja": "【お問い合わせ】国際ビル管理部（内線：3301）",
-      "en": "[Inquiries] Kokusai Building Management Dept. (Extension: 3301)",
-      "src": "reading:dokkai-n3-p3-05"
+      "sentence_ja": "⑤ 地球の環境を守るためには、国際［ ］力が必要だ。",
+      "meaning": "To protect the global environment, international cooperation is necessary.",
+      "source": "kanji_ex:k_ex_matome3_4_5",
+      "ja": "⑤ 地球の環境を守るためには、国際［ ］力が必要だ。",
+      "en": "To protect the global environment, international cooperation is necessary.",
+      "src": "kanji_ex:k_ex_matome3_4_5"
     }
   ],
   "土": [
@@ -1277,6 +1467,16 @@
       "ja": "地味な色の服",
       "en": "sober-colored clothes",
       "src": "vocab:v09-030"
+    }
+  ],
+  "地球": [
+    {
+      "sentence_ja": "⑤ 地球の環境を守るためには、国際［ ］力が必要だ。",
+      "meaning": "To protect the global environment, international cooperation is necessary.",
+      "source": "kanji_ex:k_ex_matome3_4_5",
+      "ja": "⑤ 地球の環境を守るためには、国際［ ］力が必要だ。",
+      "en": "To protect the global environment, international cooperation is necessary.",
+      "src": "kanji_ex:k_ex_matome3_4_5"
     }
   ],
   "地震": [
@@ -1367,6 +1567,16 @@
       "ja": "② a. 女の子の様子が変だ。",
       "en": "The girl's appearance/behavior is strange.",
       "src": "kanji_ex:k_ex_24_1_3"
+    }
+  ],
+  "変える": [
+    {
+      "sentence_ja": "④ 老人が増えたため、健康保険の b. ［ ］度を変える必要がある。",
+      "meaning": "With more elderly people, the health insurance system needs to be changed.",
+      "source": "kanji_ex:k_ex_08_3_8",
+      "ja": "④ 老人が増えたため、健康保険の b. ［ ］度を変える必要がある。",
+      "en": "With more elderly people, the health insurance system needs to be changed.",
+      "src": "kanji_ex:k_ex_08_3_8"
     }
   ],
   "変化": [
@@ -1779,6 +1989,16 @@
       "src": "kanji_ex:k_ex_13_4_6"
     }
   ],
+  "宿題": [
+    {
+      "sentence_ja": "h. 宿題のレポート 7月5日までに提出。",
+      "meaning": "Homework report: hand it in by July 5.",
+      "source": "kanji_ex:k_ex_10_1_8",
+      "ja": "h. 宿題のレポート 7月5日までに提出。",
+      "en": "Homework report: hand it in by July 5.",
+      "src": "kanji_ex:k_ex_10_1_8"
+    }
+  ],
   "寝室": [
     {
       "sentence_ja": "寝室に、大おおきなベッドが置おいてある。",
@@ -1879,6 +2099,16 @@
       "src": "kanji_ex:k_ex_15_1_7"
     }
   ],
+  "岩": [
+    {
+      "sentence_ja": "「山」＋（ 石 ）＝ 海岸に大きな（ 岩 ）がある。",
+      "meaning": "There is a large rock on the coast.",
+      "source": "kanji_ex:k_ex_01_3_4",
+      "ja": "「山」＋（ 石 ）＝ 海岸に大きな（ 岩 ）がある。",
+      "en": "There is a large rock on the coast.",
+      "src": "kanji_ex:k_ex_01_3_4"
+    }
+  ],
   "島": [
     {
       "sentence_ja": "小さな島に住む",
@@ -1959,6 +2189,16 @@
       "src": "vocab:v21-030"
     }
   ],
+  "平熱": [
+    {
+      "sentence_ja": "薬くすりを飲のんだら、やっと【平熱】に下さがった。",
+      "meaning": "After taking the medicine, my temperature finally came down to normal.",
+      "source": "kanji_ex:k_ex_20_5_1",
+      "ja": "薬くすりを飲のんだら、やっと【平熱】に下さがった。",
+      "en": "After taking the medicine, my temperature finally came down to normal.",
+      "src": "kanji_ex:k_ex_20_5_1"
+    }
+  ],
   "広告": [
     {
       "sentence_ja": "＊この広告はお一人様1枚限りとさせていただきます。",
@@ -2029,6 +2269,16 @@
       "src": "vocab:v05-036"
     }
   ],
+  "引っ越す": [
+    {
+      "sentence_ja": "来月、新しいマンションに（ 引っ越す ）。",
+      "meaning": "Next month I will move into a new apartment.",
+      "source": "kanji_ex:k_ex_02_3_3",
+      "ja": "来月、新しいマンションに（ 引っ越す ）。",
+      "en": "Next month I will move into a new apartment.",
+      "src": "kanji_ex:k_ex_02_3_3"
+    }
+  ],
   "当たる": [
     {
       "sentence_ja": "日が当たる",
@@ -2087,6 +2337,16 @@
       "ja": "午後は市役所へ d. 書類 を出しに行きました。",
       "en": "In the afternoon I went to city hall to submit documents.",
       "src": "kanji_ex:k_ex_11_4_4"
+    }
+  ],
+  "役立つ": [
+    {
+      "sentence_ja": "④ 社会に出てから役立つことを学びたい。",
+      "meaning": "I want to learn things that will be useful after I enter society.",
+      "source": "kanji_ex:k_ex_matome3_1_4",
+      "ja": "④ 社会に出てから役立つことを学びたい。",
+      "en": "I want to learn things that will be useful after I enter society.",
+      "src": "kanji_ex:k_ex_matome3_1_4"
     }
   ],
   "彼": [
@@ -2199,14 +2459,34 @@
       "src": "vocab:v01-019"
     }
   ],
+  "性質": [
+    {
+      "sentence_ja": "金は水や空気に強いというせいしつ（ a 性質 b 生質 c 姓質 ）を持つ。",
+      "meaning": "Gold has the property of being resistant to water and air.",
+      "source": "kanji_ex:k_ex_05_2_3",
+      "ja": "金は水や空気に強いというせいしつ（ a 性質 b 生質 c 姓質 ）を持つ。",
+      "en": "Gold has the property of being resistant to water and air.",
+      "src": "kanji_ex:k_ex_05_2_3"
+    }
+  ],
+  "悲しい": [
+    {
+      "sentence_ja": "「非」＋「心」＝ 大切なペットが亡くなってとても（ 悲しい ）。",
+      "meaning": "I am very sad that my beloved pet died.",
+      "source": "kanji_ex:k_ex_04_3_3",
+      "ja": "「非」＋「心」＝ 大切なペットが亡くなってとても（ 悲しい ）。",
+      "en": "I am very sad that my beloved pet died.",
+      "src": "kanji_ex:k_ex_04_3_3"
+    }
+  ],
   "情報": [
     {
-      "sentence_ja": "アパート情報サイト「マイハウスネット」（20XX年3月現在）",
-      "meaning": "Apartment Information Website 'My House Net' (As of March 20XX)",
-      "source": "reading:dokkai-n3-p4-54",
-      "ja": "アパート情報サイト「マイハウスネット」（20XX年3月現在）",
-      "en": "Apartment Information Website 'My House Net' (As of March 20XX)",
-      "src": "reading:dokkai-n3-p4-54"
+      "sentence_ja": "本当ほんとうに a【確実な】情報じょうほうかどうか b【確かめます】。",
+      "meaning": "I will check whether this is truly reliable information.",
+      "source": "kanji_ex:k_ex_20_1_2a",
+      "ja": "本当ほんとうに a【確実な】情報じょうほうかどうか b【確かめます】。",
+      "en": "I will check whether this is truly reliable information.",
+      "src": "kanji_ex:k_ex_20_1_2a"
     }
   ],
   "愛": [
@@ -2237,6 +2517,16 @@
       "ja": "愛を感じる",
       "en": "feel affection",
       "src": "vocab:v02-015"
+    }
+  ],
+  "感動": [
+    {
+      "sentence_ja": "③ 昨日の映画、a. 感動 しました。",
+      "meaning": "I was moved by the movie yesterday.",
+      "source": "kanji_ex:k_ex_05_1_5",
+      "ja": "③ 昨日の映画、a. 感動 しました。",
+      "en": "I was moved by the movie yesterday.",
+      "src": "kanji_ex:k_ex_05_1_5"
     }
   ],
   "感情": [
@@ -2297,6 +2587,16 @@
       "ja": "敵と戦う",
       "en": "Fight an enemy.",
       "src": "vocab:v16-017"
+    }
+  ],
+  "戦争": [
+    {
+      "sentence_ja": "③ どうしたら戦争が無くせるかを話し合うために、世界中から平和［ ］体が集まった。",
+      "meaning": "Peace groups gathered from around the world to discuss how to end war.",
+      "source": "kanji_ex:k_ex_matome3_4_3",
+      "ja": "③ どうしたら戦争が無くせるかを話し合うために、世界中から平和［ ］体が集まった。",
+      "en": "Peace groups gathered from around the world to discuss how to end war.",
+      "src": "kanji_ex:k_ex_matome3_4_3"
     }
   ],
   "手続き": [
@@ -2391,12 +2691,12 @@
   ],
   "指": [
     {
-      "sentence_ja": "③ 欲しいものを a. 指で指す。仕事の指示をする。",
-      "meaning": "Point at what you want with your finger. Give work instructions.",
-      "source": "kanji_ex:k_ex_25_2_7",
-      "ja": "③ 欲しいものを a. 指で指す。仕事の指示をする。",
-      "en": "Point at what you want with your finger. Give work instructions.",
-      "src": "kanji_ex:k_ex_25_2_7"
+      "sentence_ja": "指輪の（ a 玉 b 石 ）が取れてしまった。",
+      "meaning": "The jewel of the ring has come off.",
+      "source": "kanji_ex:k_ex_01_2_4",
+      "ja": "指輪の（ a 玉 b 石 ）が取れてしまった。",
+      "en": "The jewel of the ring has come off.",
+      "src": "kanji_ex:k_ex_01_2_4"
     }
   ],
   "指す": [
@@ -2639,6 +2939,16 @@
       "src": "kanji_ex:k_ex_16_2_1"
     }
   ],
+  "方面": [
+    {
+      "sentence_ja": "② 東京方面にいらっしゃる方は、次の駅でお乗り換えください。",
+      "meaning": "Passengers heading toward Tokyo, please change trains at the next station.",
+      "source": "kanji_ex:k_ex_06_6_2",
+      "ja": "② 東京方面にいらっしゃる方は、次の駅でお乗り換えください。",
+      "en": "Passengers heading toward Tokyo, please change trains at the next station.",
+      "src": "kanji_ex:k_ex_06_6_2"
+    }
+  ],
   "日付": [
     {
       "sentence_ja": "日付を確認する",
@@ -2681,12 +2991,12 @@
   ],
   "星": [
     {
-      "sentence_ja": "星がきらきら光る",
-      "meaning": "stars sparkle brightly",
-      "source": "vocab:v2-05-032",
-      "ja": "星がきらきら光る",
-      "en": "stars sparkle brightly",
-      "src": "vocab:v2-05-032"
+      "sentence_ja": "川田：五つ星 a. 貿易の川田です。",
+      "meaning": "Kawada: This is Kawada of Five Star Trading.",
+      "source": "kanji_ex:k_ex_07_1_1",
+      "ja": "川田：五つ星 a. 貿易の川田です。",
+      "en": "Kawada: This is Kawada of Five Star Trading.",
+      "src": "kanji_ex:k_ex_07_1_1"
     }
   ],
   "時期": [
@@ -2697,6 +3007,16 @@
       "ja": "旅行にいい時期",
       "en": "A good time of year to travel.",
       "src": "vocab:v21-004"
+    }
+  ],
+  "時速": [
+    {
+      "sentence_ja": "③ すごく a. 速いね。b. 時速何キロだろう。",
+      "meaning": "That's really fast! I wonder how many kilometers an hour it is.",
+      "source": "kanji_ex:k_ex_06_1_5",
+      "ja": "③ すごく a. 速いね。b. 時速何キロだろう。",
+      "en": "That's really fast! I wonder how many kilometers an hour it is.",
+      "src": "kanji_ex:k_ex_06_1_5"
     }
   ],
   "普通": [
@@ -2727,6 +3047,16 @@
       "ja": "③天気よほうによると、明日は晴れるそうだ。",
       "en": "According to the weather forecast, it will be sunny tomorrow.",
       "src": "kanji_ex:k_ex_sum3_2_3"
+    }
+  ],
+  "暖かい": [
+    {
+      "sentence_ja": "春になって、（ 暖かい ）日が続いています。",
+      "meaning": "It is spring, and warm days continue.",
+      "source": "kanji_ex:k_ex_04_1_1",
+      "ja": "春になって、（ 暖かい ）日が続いています。",
+      "en": "It is spring, and warm days continue.",
+      "src": "kanji_ex:k_ex_04_1_1"
     }
   ],
   "曲": [
@@ -2769,6 +3099,16 @@
       "src": "vocab:v13-041"
     }
   ],
+  "最も": [
+    {
+      "sentence_ja": "① a. 最近の出来事で、b. 最も興味を持ったことは何ですか。",
+      "meaning": "What is the thing you have been most interested in among recent events?",
+      "source": "kanji_ex:k_ex_06_1_1",
+      "ja": "① a. 最近の出来事で、b. 最も興味を持ったことは何ですか。",
+      "en": "What is the thing you have been most interested in among recent events?",
+      "src": "kanji_ex:k_ex_06_1_1"
+    }
+  ],
   "最低": [
     {
       "sentence_ja": "最低限の条件",
@@ -2781,12 +3121,12 @@
   ],
   "最初": [
     {
-      "sentence_ja": "こうした実用文は最初から最後まで全部読む必要はなく、質問を先に読んでから探すのが効果的です。",
-      "meaning": "There is no need to read these practical texts from beginning to end in full; reading the question first before scanning is effective.",
-      "source": "reading:dokkai-n3-p3-intro",
-      "ja": "こうした実用文は最初から最後まで全部読む必要はなく、質問を先に読んでから探すのが効果的です。",
-      "en": "There is no need to read these practical texts from beginning to end in full; reading the question first before scanning is effective.",
-      "src": "reading:dokkai-n3-p3-intro"
+      "sentence_ja": "病院びょういんは、次つぎの a【かど】を右みぎに曲まがって最初さいしょの交差点こうさてんを渡わたると、すぐです。",
+      "meaning": "The hospital is right there: turn right at the next corner, cross the first intersection, and you are there.",
+      "source": "kanji_ex:k_ex_16_4_7a",
+      "ja": "病院びょういんは、次つぎの a【かど】を右みぎに曲まがって最初さいしょの交差点こうさてんを渡わたると、すぐです。",
+      "en": "The hospital is right there: turn right at the next corner, cross the first intersection, and you are there.",
+      "src": "kanji_ex:k_ex_16_4_7a"
     }
   ],
   "最大": [
@@ -2811,12 +3151,12 @@
   ],
   "最近": [
     {
-      "sentence_ja": "そこで、最近、いくつかの都市はさまざまな施設を再び街の中心に戻し、人々も中心部に集まって住めるようにしようとしている。",
-      "meaning": "Therefore, recently, several cities are trying to return various facilities to the city center and enable people to gather and live in the central area as well.",
-      "source": "reading:dokkai-n3-p4-39",
-      "ja": "そこで、最近、いくつかの都市はさまざまな施設を再び街の中心に戻し、人々も中心部に集まって住めるようにしようとしている。",
-      "en": "Therefore, recently, several cities are trying to return various facilities to the city center and enable people to gather and live in the central area as well.",
-      "src": "reading:dokkai-n3-p4-39"
+      "sentence_ja": "① a. 最近の出来事で、b. 最も興味を持ったことは何ですか。",
+      "meaning": "What is the thing you have been most interested in among recent events?",
+      "source": "kanji_ex:k_ex_06_1_1",
+      "ja": "① a. 最近の出来事で、b. 最も興味を持ったことは何ですか。",
+      "en": "What is the thing you have been most interested in among recent events?",
+      "src": "kanji_ex:k_ex_06_1_1"
     }
   ],
   "最高": [
@@ -3029,6 +3369,16 @@
       "src": "kanji_ex:k_ex_20_2_5"
     }
   ],
+  "機会": [
+    {
+      "sentence_ja": "② 機会があれば、海外で働いてみたい。",
+      "meaning": "If I get the chance, I would like to try working overseas.",
+      "source": "kanji_ex:k_ex_07_3_2",
+      "ja": "② 機会があれば、海外で働いてみたい。",
+      "en": "If I get the chance, I would like to try working overseas.",
+      "src": "kanji_ex:k_ex_07_3_2"
+    }
+  ],
   "機械": [
     {
       "sentence_ja": "たとえば、重いものを持ち上げて運ぶとき、機械がなかった時代には人が行っていた。",
@@ -3037,6 +3387,16 @@
       "ja": "たとえば、重いものを持ち上げて運ぶとき、機械がなかった時代には人が行っていた。",
       "en": "For instance, lifting and carrying heavy loads was performed by humans in eras when machines did not exist.",
       "src": "reading:dokkai-n3-p4-38"
+    }
+  ],
+  "欠席": [
+    {
+      "sentence_ja": "注意！ a. 欠席が多いと b. 卒業できません。",
+      "meaning": "Caution! If you are absent a lot, you will not be able to graduate.",
+      "source": "kanji_ex:k_ex_10_1_1",
+      "ja": "注意！ a. 欠席が多いと b. 卒業できません。",
+      "en": "Caution! If you are absent a lot, you will not be able to graduate.",
+      "src": "kanji_ex:k_ex_10_1_1"
     }
   ],
   "欠点": [
@@ -3049,6 +3409,16 @@
       "src": "vocab:v2-07-014"
     }
   ],
+  "次女": [
+    {
+      "sentence_ja": "長女ちょうじょはしっかりしているが、【次女】はのんびりしている。",
+      "meaning": "The eldest daughter is dependable, but the second daughter is easygoing.",
+      "source": "kanji_ex:k_ex_18_4_1",
+      "ja": "長女ちょうじょはしっかりしているが、【次女】はのんびりしている。",
+      "en": "The eldest daughter is dependable, but the second daughter is easygoing.",
+      "src": "kanji_ex:k_ex_18_4_1"
+    }
+  ],
   "次男": [
     {
       "sentence_ja": "④ 次男（ a じだん b じなん ）は野菜が嫌いだ。",
@@ -3057,6 +3427,16 @@
       "ja": "④ 次男（ a じだん b じなん ）は野菜が嫌いだ。",
       "en": "My second son dislikes vegetables.",
       "src": "kanji_ex:k_ex_22_2_4"
+    }
+  ],
+  "歌手": [
+    {
+      "sentence_ja": "⑤ 歌手が現れると、みんな立ち上がって拍手した。",
+      "meaning": "When the singer appeared, everyone stood up and applauded.",
+      "source": "kanji_ex:k_ex_matome3_1_5",
+      "ja": "⑤ 歌手が現れると、みんな立ち上がって拍手した。",
+      "en": "When the singer appeared, everyone stood up and applauded.",
+      "src": "kanji_ex:k_ex_matome3_1_5"
     }
   ],
   "正確": [
@@ -3159,6 +3539,16 @@
       "src": "vocab:v18-018"
     }
   ],
+  "水泳": [
+    {
+      "sentence_ja": "今日きょうは a【波】が高たかいので、水泳すいえいはできません。",
+      "meaning": "The waves are high today, so we can't swim.",
+      "source": "kanji_ex:k_ex_16_4_5a",
+      "ja": "今日きょうは a【波】が高たかいので、水泳すいえいはできません。",
+      "en": "The waves are high today, so we can't swim.",
+      "src": "kanji_ex:k_ex_16_4_5a"
+    }
+  ],
   "汚す": [
     {
       "sentence_ja": "服を汚す",
@@ -3209,6 +3599,16 @@
       "src": "kanji_ex:k_ex_23_2_1"
     }
   ],
+  "決心": [
+    {
+      "sentence_ja": "④ 留学しようと決心した。",
+      "meaning": "I made up my mind to study abroad.",
+      "source": "kanji_ex:k_ex_matome2_1_4",
+      "ja": "④ 留学しようと決心した。",
+      "en": "I made up my mind to study abroad.",
+      "src": "kanji_ex:k_ex_matome2_1_4"
+    }
+  ],
   "油": [
     {
       "sentence_ja": "油で揚げる",
@@ -3217,6 +3617,16 @@
       "ja": "油で揚げる",
       "en": "deep-fry in oil",
       "src": "vocab:v04-009"
+    }
+  ],
+  "泊まる": [
+    {
+      "sentence_ja": "「氵（さんずい）」＋「白」＝ 温泉旅館に一晩（ 泊まる ）。",
+      "meaning": "We stayed one night at a hot-spring inn.",
+      "source": "kanji_ex:k_ex_03_3_1",
+      "ja": "「氵（さんずい）」＋「白」＝ 温泉旅館に一晩（ 泊まる ）。",
+      "en": "We stayed one night at a hot-spring inn.",
+      "src": "kanji_ex:k_ex_03_3_1"
     }
   ],
   "波": [
@@ -3247,6 +3657,16 @@
       "ja": "若い選手に注目する",
       "en": "pay attention to young athlete",
       "src": "vocab:v2-02-026"
+    }
+  ],
+  "洗面所": [
+    {
+      "sentence_ja": "早はやく a【洗面所】で手てを洗あらってきなさい。",
+      "meaning": "Go quickly and wash your hands at the washroom.",
+      "source": "kanji_ex:k_ex_17_1_3a",
+      "ja": "早はやく a【洗面所】で手てを洗あらってきなさい。",
+      "en": "Go quickly and wash your hands at the washroom.",
+      "src": "kanji_ex:k_ex_17_1_3a"
     }
   ],
   "活動": [
@@ -3379,6 +3799,16 @@
       "src": "vocab:v19-045"
     }
   ],
+  "温かい": [
+    {
+      "sentence_ja": "⑤ 寒かったので、温かいスープを飲んだ。",
+      "meaning": "It was cold, so I had some warm soup.",
+      "source": "kanji_ex:k_ex_matome2_1_5",
+      "ja": "⑤ 寒かったので、温かいスープを飲んだ。",
+      "en": "It was cold, so I had some warm soup.",
+      "src": "kanji_ex:k_ex_matome2_1_5"
+    }
+  ],
   "温まる": [
     {
       "sentence_ja": "③ 14:45〜16:15 『トモばあちゃんの涙』家族の絆と温もりを描いた心温まるヒューマンドラマ（一般向け）。",
@@ -3471,12 +3901,22 @@
   ],
   "熱": [
     {
-      "sentence_ja": "④ 弟は、高い熱が出て、（ 艹 ＋ 古 ＝ ？ ）しそうだった。",
-      "meaning": "My younger brother had a high fever and looked like he was in pain.",
-      "source": "kanji_ex:k_ex_25_4_4",
-      "ja": "④ 弟は、高い熱が出て、（ 艹 ＋ 古 ＝ ？ ）しそうだった。",
-      "en": "My younger brother had a high fever and looked like he was in pain.",
-      "src": "kanji_ex:k_ex_25_4_4"
+      "sentence_ja": "薬くすりを飲のんだら、やっと【平熱】に下さがった。",
+      "meaning": "After taking the medicine, my temperature finally came down to normal.",
+      "source": "kanji_ex:k_ex_20_5_1",
+      "ja": "薬くすりを飲のんだら、やっと【平熱】に下さがった。",
+      "en": "After taking the medicine, my temperature finally came down to normal.",
+      "src": "kanji_ex:k_ex_20_5_1"
+    }
+  ],
+  "熱い": [
+    {
+      "sentence_ja": "体からだが a【熱い】。b【熱】があるかもしれない。",
+      "meaning": "My body feels hot. I might have a fever.",
+      "source": "kanji_ex:k_ex_20_1_1a",
+      "ja": "体からだが a【熱い】。b【熱】があるかもしれない。",
+      "en": "My body feels hot. I might have a fever.",
+      "src": "kanji_ex:k_ex_20_1_1a"
     }
   ],
   "熱心": [
@@ -3487,6 +3927,16 @@
       "ja": "毎晩まいばん遅おそくまで熱心に漢字かんじの勉強べんきょうをしている。",
       "en": "Every night I study kanji eagerly until late.",
       "src": "kanji_ex:k_ex_20_2_3"
+    }
+  ],
+  "父母": [
+    {
+      "sentence_ja": "a【父母】から来きた手紙てがみによると、b【父】も c【母】も元気げんきなようだ。",
+      "meaning": "According to the letter from my parents, both Father and Mother seem to be well.",
+      "source": "kanji_ex:k_ex_18_1_3a",
+      "ja": "a【父母】から来きた手紙てがみによると、b【父】も c【母】も元気げんきなようだ。",
+      "en": "According to the letter from my parents, both Father and Mother seem to be well.",
+      "src": "kanji_ex:k_ex_18_1_3a"
     }
   ],
   "物価": [
@@ -3519,6 +3969,16 @@
       "src": "kanji_ex:k_ex_matome6_1_5"
     }
   ],
+  "玉": [
+    {
+      "sentence_ja": "指輪の（ a 玉 b 石 ）が取れてしまった。",
+      "meaning": "The jewel of the ring has come off.",
+      "source": "kanji_ex:k_ex_01_2_4",
+      "ja": "指輪の（ a 玉 b 石 ）が取れてしまった。",
+      "en": "The jewel of the ring has come off.",
+      "src": "kanji_ex:k_ex_01_2_4"
+    }
+  ],
   "現す": [
     {
       "sentence_ja": "若者の純粋さを、愛情を持って表現するところに人気があります。",
@@ -3527,6 +3987,16 @@
       "ja": "若者の純粋さを、愛情を持って表現するところに人気があります。",
       "en": "She enjoys popularity for lovingly portraying the purity and earnestness of youth.",
       "src": "reading:dokkai-n3-p4-51"
+    }
+  ],
+  "現れる": [
+    {
+      "sentence_ja": "⑤ 歌手が現れると、みんな立ち上がって拍手した。",
+      "meaning": "When the singer appeared, everyone stood up and applauded.",
+      "source": "kanji_ex:k_ex_matome3_1_5",
+      "ja": "⑤ 歌手が現れると、みんな立ち上がって拍手した。",
+      "en": "When the singer appeared, everyone stood up and applauded.",
+      "src": "kanji_ex:k_ex_matome3_1_5"
     }
   ],
   "現代": [
@@ -3547,6 +4017,16 @@
       "ja": "現在の時刻",
       "en": "The current time.",
       "src": "vocab:v21-035"
+    }
+  ],
+  "現金": [
+    {
+      "sentence_ja": "⑤ 男は1億円のげんきん（a 現金 b 理金 c 児金）を持って逃げた。",
+      "meaning": "The man ran away with 100 million yen in cash.",
+      "source": "kanji_ex:k_ex_09_2_5",
+      "ja": "⑤ 男は1億円のげんきん（a 現金 b 理金 c 児金）を持って逃げた。",
+      "en": "The man ran away with 100 million yen in cash.",
+      "src": "kanji_ex:k_ex_09_2_5"
     }
   ],
   "理想": [
@@ -3619,6 +4099,16 @@
       "src": "kanji_ex:k_ex_12_4_1"
     }
   ],
+  "用紙": [
+    {
+      "sentence_ja": "② 答えは解答用紙に書いてください。",
+      "meaning": "Please write your answers on the answer sheet.",
+      "source": "kanji_ex:k_ex_10_3_2",
+      "ja": "② 答えは解答用紙に書いてください。",
+      "en": "Please write your answers on the answer sheet.",
+      "src": "kanji_ex:k_ex_10_3_2"
+    }
+  ],
   "申し込み": [
     {
       "sentence_ja": "【入場料】無料（申し込み不要、当日先着順 各回50名）。",
@@ -3649,14 +4139,24 @@
       "src": "vocab:v02-002"
     }
   ],
+  "畑": [
+    {
+      "sentence_ja": "「田」＋（ 火 ）＝ おじいさんは（ 畑 ）で野菜を作っている。",
+      "meaning": "My grandfather grows vegetables in his field.",
+      "source": "kanji_ex:k_ex_01_3_5",
+      "ja": "「田」＋（ 火 ）＝ おじいさんは（ 畑 ）で野菜を作っている。",
+      "en": "My grandfather grows vegetables in his field.",
+      "src": "kanji_ex:k_ex_01_3_5"
+    }
+  ],
   "留学": [
     {
-      "sentence_ja": "留学生りゅうがくせいのこうりゅうパーティーに参加さんかした。",
-      "meaning": "I took part in the exchange party for international students.",
-      "source": "kanji_ex:k_ex_matome7_2_4",
-      "ja": "留学生りゅうがくせいのこうりゅうパーティーに参加さんかした。",
-      "en": "I took part in the exchange party for international students.",
-      "src": "kanji_ex:k_ex_matome7_2_4"
+      "sentence_ja": "④ 留学しようと決心した。",
+      "meaning": "I made up my mind to study abroad.",
+      "source": "kanji_ex:k_ex_matome2_1_4",
+      "ja": "④ 留学しようと決心した。",
+      "en": "I made up my mind to study abroad.",
+      "src": "kanji_ex:k_ex_matome2_1_4"
     }
   ],
   "留学生": [
@@ -3757,6 +4257,16 @@
       "ja": "科学が発達した国",
       "en": "a scientifically developed country",
       "src": "vocab:v2-06-012"
+    }
+  ],
+  "登山": [
+    {
+      "sentence_ja": "ご希望きぼうの方かたはd【美術館】見学けんがく、登山とざんなどもできます。",
+      "meaning": "If you wish, you can also visit the art museum and go mountain climbing.",
+      "source": "kanji_ex:k_ex_16_1_d",
+      "ja": "ご希望きぼうの方かたはd【美術館】見学けんがく、登山とざんなどもできます。",
+      "en": "If you wish, you can also visit the art museum and go mountain climbing.",
+      "src": "kanji_ex:k_ex_16_1_d"
     }
   ],
   "皆": [
@@ -3871,12 +4381,12 @@
   ],
   "石": [
     {
-      "sentence_ja": "④b 石油はプラスチック製品の ［ ］料になる。",
-      "meaning": "Petroleum serves as the raw material for plastic products.",
-      "source": "kanji_ex:k_ex_12_3_8",
-      "ja": "④b 石油はプラスチック製品の ［ ］料になる。",
-      "en": "Petroleum serves as the raw material for plastic products.",
-      "src": "kanji_ex:k_ex_12_3_8"
+      "sentence_ja": "指輪の（ a 玉 b 石 ）が取れてしまった。",
+      "meaning": "The jewel of the ring has come off.",
+      "source": "kanji_ex:k_ex_01_2_4",
+      "ja": "指輪の（ a 玉 b 石 ）が取れてしまった。",
+      "en": "The jewel of the ring has come off.",
+      "src": "kanji_ex:k_ex_01_2_4"
     }
   ],
   "石油": [
@@ -3907,6 +4417,16 @@
       "ja": "答えを確かめる",
       "en": "Check one's answer.",
       "src": "vocab:v12-009"
+    }
+  ],
+  "確実": [
+    {
+      "sentence_ja": "本当ほんとうに a【確実な】情報じょうほうかどうか b【確かめます】。",
+      "meaning": "I will check whether this is truly reliable information.",
+      "source": "kanji_ex:k_ex_20_1_2a",
+      "ja": "本当ほんとうに a【確実な】情報じょうほうかどうか b【確かめます】。",
+      "en": "I will check whether this is truly reliable information.",
+      "src": "kanji_ex:k_ex_20_1_2a"
     }
   ],
   "神": [
@@ -4089,6 +4609,16 @@
       "src": "reading:dokkai-n3-p4-29"
     }
   ],
+  "糸": [
+    {
+      "sentence_ja": "④ 靴のひもを固く （糸＋吉＝結）んだ。",
+      "meaning": "I tied my shoelaces tightly.",
+      "source": "kanji_ex:k_ex_06_4_4",
+      "ja": "④ 靴のひもを固く （糸＋吉＝結）んだ。",
+      "en": "I tied my shoelaces tightly.",
+      "src": "kanji_ex:k_ex_06_4_4"
+    }
+  ],
   "約": [
     {
       "sentence_ja": "週末に友達と遊ぶ約束をした。",
@@ -4179,6 +4709,16 @@
       "src": "vocab:v16-021"
     }
   ],
+  "経済的": [
+    {
+      "sentence_ja": "① A国はB国に対して、経済的な b. 協［ ］を約束した。",
+      "meaning": "Country A promised economic cooperation with Country B.",
+      "source": "kanji_ex:k_ex_08_3_2",
+      "ja": "① A国はB国に対して、経済的な b. 協［ ］を約束した。",
+      "en": "Country A promised economic cooperation with Country B.",
+      "src": "kanji_ex:k_ex_08_3_2"
+    }
+  ],
   "経由": [
     {
       "sentence_ja": "③ 20時のパリ経由ロンドン行きの飛行機に乗ります。それまで、b. 自由に町を観光してください。",
@@ -4237,6 +4777,16 @@
       "ja": "結果が発表される",
       "en": "The results are announced.",
       "src": "vocab:v12-015"
+    }
+  ],
+  "結論": [
+    {
+      "sentence_ja": "⑤ 何度も話し合って、けつろん（a 決輪 b 結論 c 結倫）を出した。",
+      "meaning": "After talking it over many times, we reached a conclusion.",
+      "source": "kanji_ex:k_ex_06_2_5",
+      "ja": "⑤ 何度も話し合って、けつろん（a 決輪 b 結論 c 結倫）を出した。",
+      "en": "After talking it over many times, we reached a conclusion.",
+      "src": "kanji_ex:k_ex_06_2_5"
     }
   ],
   "給料": [
@@ -4309,6 +4859,16 @@
       "src": "reading:dokkai-n3-p4-30"
     }
   ],
+  "総理大臣": [
+    {
+      "sentence_ja": "② 総理大臣（a そうりだいしん b そりたいじん c そうりだいじん）は、S国を訪問するために出発した。",
+      "meaning": "The prime minister left to visit Country S.",
+      "source": "kanji_ex:k_ex_08_2_2",
+      "ja": "② 総理大臣（a そうりだいしん b そりたいじん c そうりだいじん）は、S国を訪問するために出発した。",
+      "en": "The prime minister left to visit Country S.",
+      "src": "kanji_ex:k_ex_08_2_2"
+    }
+  ],
   "線": [
     {
       "sentence_ja": "② この線は細い。b. 細かい字だ。",
@@ -4361,22 +4921,22 @@
   ],
   "美術": [
     {
-      "sentence_ja": "発売場所は、市バス切符売り場、歴史博物館窓口、現代美術館窓口です。",
-      "meaning": "Locations: City Bus Ticket Office, History Museum ticket window, Modern Art Museum ticket window.",
-      "source": "reading:dokkai-n3-p3-01",
-      "ja": "発売場所は、市バス切符売り場、歴史博物館窓口、現代美術館窓口です。",
-      "en": "Locations: City Bus Ticket Office, History Museum ticket window, Modern Art Museum ticket window.",
-      "src": "reading:dokkai-n3-p3-01"
+      "sentence_ja": "ご希望きぼうの方かたはd【美術館】見学けんがく、登山とざんなどもできます。",
+      "meaning": "If you wish, you can also visit the art museum and go mountain climbing.",
+      "source": "kanji_ex:k_ex_16_1_d",
+      "ja": "ご希望きぼうの方かたはd【美術館】見学けんがく、登山とざんなどもできます。",
+      "en": "If you wish, you can also visit the art museum and go mountain climbing.",
+      "src": "kanji_ex:k_ex_16_1_d"
     }
   ],
   "美術館": [
     {
-      "sentence_ja": "発売場所は、市バス切符売り場、歴史博物館窓口、現代美術館窓口です。",
-      "meaning": "Locations: City Bus Ticket Office, History Museum ticket window, Modern Art Museum ticket window.",
-      "source": "reading:dokkai-n3-p3-01",
-      "ja": "発売場所は、市バス切符売り場、歴史博物館窓口、現代美術館窓口です。",
-      "en": "Locations: City Bus Ticket Office, History Museum ticket window, Modern Art Museum ticket window.",
-      "src": "reading:dokkai-n3-p3-01"
+      "sentence_ja": "ご希望きぼうの方かたはd【美術館】見学けんがく、登山とざんなどもできます。",
+      "meaning": "If you wish, you can also visit the art museum and go mountain climbing.",
+      "source": "kanji_ex:k_ex_16_1_d",
+      "ja": "ご希望きぼうの方かたはd【美術館】見学けんがく、登山とざんなどもできます。",
+      "en": "If you wish, you can also visit the art museum and go mountain climbing.",
+      "src": "kanji_ex:k_ex_16_1_d"
     }
   ],
   "習慣": [
@@ -4387,6 +4947,16 @@
       "ja": "国くにによって習慣しゅうかんが違ちがいます。",
       "en": "Customs differ depending on the country.",
       "src": "grammar:grammar"
+    }
+  ],
+  "老人": [
+    {
+      "sentence_ja": "④ 老人が増えたため、健康保険の b. ［ ］度を変える必要がある。",
+      "meaning": "With more elderly people, the health insurance system needs to be changed.",
+      "source": "kanji_ex:k_ex_08_3_8",
+      "ja": "④ 老人が増えたため、健康保険の b. ［ ］度を変える必要がある。",
+      "en": "With more elderly people, the health insurance system needs to be changed.",
+      "src": "kanji_ex:k_ex_08_3_8"
     }
   ],
   "職場": [
@@ -4457,6 +5027,16 @@
       "ja": "②航空機の写真を壁に張った。",
       "en": "I put up a photo of an aircraft on the wall.",
       "src": "kanji_ex:k_ex_15_2_2"
+    }
+  ],
+  "船": [
+    {
+      "sentence_ja": "赤あかや黄色きいろの a【風船】が、空そらに飛とんでいった。",
+      "meaning": "Red and yellow balloons flew off into the sky.",
+      "source": "kanji_ex:k_ex_16_4_1a",
+      "ja": "赤あかや黄色きいろの a【風船】が、空そらに飛とんでいった。",
+      "en": "Red and yellow balloons flew off into the sky.",
+      "src": "kanji_ex:k_ex_16_4_1a"
     }
   ],
   "芸術": [
@@ -4689,6 +5269,16 @@
       "src": "vocab:v2-02-002"
     }
   ],
+  "要求": [
+    {
+      "sentence_ja": "② 会社に労働 a. 条［ ］を守るように、要求した。",
+      "meaning": "They demanded that the company observe the working conditions.",
+      "source": "kanji_ex:k_ex_08_3_3",
+      "ja": "② 会社に労働 a. 条［ ］を守るように、要求した。",
+      "en": "They demanded that the company observe the working conditions.",
+      "src": "kanji_ex:k_ex_08_3_3"
+    }
+  ],
   "見直す": [
     {
       "sentence_ja": "解答を見直す",
@@ -4799,6 +5389,16 @@
       "src": "kanji_ex:k_ex_12_3_2"
     }
   ],
+  "計る": [
+    {
+      "sentence_ja": "「言（ごんべん）」＋「十」＝ 時間を時計で（ 計る ）。",
+      "meaning": "I measured the time with a clock.",
+      "source": "kanji_ex:k_ex_03_3_3",
+      "ja": "「言（ごんべん）」＋「十」＝ 時間を時計で（ 計る ）。",
+      "en": "I measured the time with a clock.",
+      "src": "kanji_ex:k_ex_03_3_3"
+    }
+  ],
   "計算": [
     {
       "sentence_ja": "計算を間違う",
@@ -4807,6 +5407,16 @@
       "ja": "計算を間違う",
       "en": "Get a calculation wrong.",
       "src": "vocab:v12-013"
+    }
+  ],
+  "記事": [
+    {
+      "sentence_ja": "新聞のきじ（ a 語事 b 訂事 c 記事 ）で、事件を知った。",
+      "meaning": "I learned about the incident from a newspaper article.",
+      "source": "kanji_ex:k_ex_05_2_4",
+      "ja": "新聞のきじ（ a 語事 b 訂事 c 記事 ）で、事件を知った。",
+      "en": "I learned about the incident from a newspaper article.",
+      "src": "kanji_ex:k_ex_05_2_4"
     }
   ],
   "記入": [
@@ -4889,6 +5499,16 @@
       "src": "kanji_ex:k_ex_13_1_6"
     }
   ],
+  "課長": [
+    {
+      "sentence_ja": "③ 父は、コンピューター関係の会社のかちょう（a 課長 b 科長 c 菓長）だ。",
+      "meaning": "My father is a section chief at a computer-related company.",
+      "source": "kanji_ex:k_ex_07_2_3",
+      "ja": "③ 父は、コンピューター関係の会社のかちょう（a 課長 b 科長 c 菓長）だ。",
+      "en": "My father is a section chief at a computer-related company.",
+      "src": "kanji_ex:k_ex_07_2_3"
+    }
+  ],
   "調べる": [
     {
       "sentence_ja": "インターネットで調べる",
@@ -4949,6 +5569,16 @@
       "src": "reading:dokkai-n3-p3-02"
     }
   ],
+  "貿易": [
+    {
+      "sentence_ja": "川田：五つ星 a. 貿易の川田です。",
+      "meaning": "Kawada: This is Kawada of Five Star Trading.",
+      "source": "kanji_ex:k_ex_07_1_1",
+      "ja": "川田：五つ星 a. 貿易の川田です。",
+      "en": "Kawada: This is Kawada of Five Star Trading.",
+      "src": "kanji_ex:k_ex_07_1_1"
+    }
+  ],
   "資料": [
     {
       "sentence_ja": "会議の資料を配る",
@@ -4969,6 +5599,16 @@
       "src": "vocab:v13-010"
     }
   ],
+  "越える": [
+    {
+      "sentence_ja": "制限速度や基準を（ a 越える b 抜ける ）。",
+      "meaning": "Exceed the speed limit and the standards.",
+      "source": "kanji_ex:k_ex_02_2_1",
+      "ja": "制限速度や基準を（ a 越える b 抜ける ）。",
+      "en": "Exceed the speed limit and the standards.",
+      "src": "kanji_ex:k_ex_02_2_1"
+    }
+  ],
   "転ぶ": [
     {
       "sentence_ja": "自転車で転ぶ",
@@ -4987,6 +5627,16 @@
       "ja": "現在は、中国にいた同じ種類のトキを輸入し、佐渡という島で育てている。",
       "en": "Currently, the same species of crested ibis from China has been imported and is being bred on the island of Sado.",
       "src": "reading:dokkai-n3-p4-35"
+    }
+  ],
+  "辞書": [
+    {
+      "sentence_ja": "① 読めない漢字を辞書で調べた。",
+      "meaning": "I looked up the kanji I couldn't read in a dictionary.",
+      "source": "kanji_ex:k_ex_10_3_1",
+      "ja": "① 読めない漢字を辞書で調べた。",
+      "en": "I looked up the kanji I couldn't read in a dictionary.",
+      "src": "kanji_ex:k_ex_10_3_1"
     }
   ],
   "農業": [
@@ -5121,12 +5771,12 @@
   ],
   "速い": [
     {
-      "sentence_ja": "⑤タクシーは速いですが、お金が電車の4［ ］も高くかかりますよ。",
-      "meaning": "A taxi is fast, but it costs four times as much money as the train.",
-      "source": "kanji_ex:k_ex_15_3_5",
-      "ja": "⑤タクシーは速いですが、お金が電車の4［ ］も高くかかりますよ。",
-      "en": "A taxi is fast, but it costs four times as much money as the train.",
-      "src": "kanji_ex:k_ex_15_3_5"
+      "sentence_ja": "③ すごく a. 速いね。b. 時速何キロだろう。",
+      "meaning": "That's really fast! I wonder how many kilometers an hour it is.",
+      "source": "kanji_ex:k_ex_06_1_5",
+      "ja": "③ すごく a. 速いね。b. 時速何キロだろう。",
+      "en": "That's really fast! I wonder how many kilometers an hour it is.",
+      "src": "kanji_ex:k_ex_06_1_5"
     }
   ],
   "速度": [
@@ -5461,12 +6111,12 @@
   ],
   "閉める": [
     {
-      "sentence_ja": "そっとドアを閉める",
-      "meaning": "close the door quietly",
-      "source": "vocab:v2-05-008",
-      "ja": "そっとドアを閉める",
-      "en": "close the door quietly",
-      "src": "vocab:v2-05-008"
+      "sentence_ja": "① 人口が減って、駅の前の商店も閉めるところが増えた。",
+      "meaning": "As the population has fallen, more shops in front of the station are closing.",
+      "source": "kanji_ex:k_ex_07_3_1",
+      "ja": "① 人口が減って、駅の前の商店も閉めるところが増えた。",
+      "en": "As the population has fallen, more shops in front of the station are closing.",
+      "src": "kanji_ex:k_ex_07_3_1"
     }
   ],
   "開始": [
@@ -5511,12 +6161,12 @@
   ],
   "関係": [
     {
-      "sentence_ja": "アメリカで a. 通勤 時間と幸福だと感じる程度の関係について、調査が行われた。",
-      "meaning": "In the US, a survey was conducted on the relationship between commuting time and the degree of feeling happy.",
-      "source": "kanji_ex:k_ex_14_6_1",
-      "ja": "アメリカで a. 通勤 時間と幸福だと感じる程度の関係について、調査が行われた。",
-      "en": "In the US, a survey was conducted on the relationship between commuting time and the degree of feeling happy.",
-      "src": "kanji_ex:k_ex_14_6_1"
+      "sentence_ja": "③ 父は、コンピューター関係の会社のかちょう（a 課長 b 科長 c 菓長）だ。",
+      "meaning": "My father is a section chief at a computer-related company.",
+      "source": "kanji_ex:k_ex_07_2_3",
+      "ja": "③ 父は、コンピューター関係の会社のかちょう（a 課長 b 科長 c 菓長）だ。",
+      "en": "My father is a section chief at a computer-related company.",
+      "src": "kanji_ex:k_ex_07_2_3"
     }
   ],
   "関心": [
@@ -5659,6 +6309,16 @@
       "src": "kanji_ex:k_ex_16_2_2"
     }
   ],
+  "青年": [
+    {
+      "sentence_ja": "親切しんせつな【青年】が、私わたしの荷物にもつを持もってくれた。",
+      "meaning": "A kind young man carried my luggage for me.",
+      "source": "kanji_ex:k_ex_18_4_4",
+      "ja": "親切しんせつな【青年】が、私わたしの荷物にもつを持もってくれた。",
+      "en": "A kind young man carried my luggage for me.",
+      "src": "kanji_ex:k_ex_18_4_4"
+    }
+  ],
   "非常に": [
     {
       "sentence_ja": "②c この問題の解決は、c. 非常に 難しい。",
@@ -5749,6 +6409,16 @@
       "src": "vocab:v17-029"
     }
   ],
+  "風船": [
+    {
+      "sentence_ja": "赤あかや黄色きいろの a【風船】が、空そらに飛とんでいった。",
+      "meaning": "Red and yellow balloons flew off into the sky.",
+      "source": "kanji_ex:k_ex_16_4_1a",
+      "ja": "赤あかや黄色きいろの a【風船】が、空そらに飛とんでいった。",
+      "en": "Red and yellow balloons flew off into the sky.",
+      "src": "kanji_ex:k_ex_16_4_1a"
+    }
+  ],
   "飛行機": [
     {
       "sentence_ja": "③飛行機の中には、荷物を何［ ］持って入れますか。",
@@ -5799,6 +6469,26 @@
       "src": "kanji_ex:k_ex_14_2_1"
     }
   ],
+  "馬": [
+    {
+      "sentence_ja": "牧場で（ 馬 ）に乗った。",
+      "meaning": "I rode a horse at the ranch.",
+      "source": "kanji_ex:k_ex_01_1_4",
+      "ja": "牧場で（ 馬 ）に乗った。",
+      "en": "I rode a horse at the ranch.",
+      "src": "kanji_ex:k_ex_01_1_4"
+    }
+  ],
+  "高等学校": [
+    {
+      "sentence_ja": "④ 妹は高等学校の3年生です。",
+      "meaning": "My younger sister is in the third year of high school.",
+      "source": "kanji_ex:k_ex_10_3_4",
+      "ja": "④ 妹は高等学校の3年生です。",
+      "en": "My younger sister is in the third year of high school.",
+      "src": "kanji_ex:k_ex_10_3_4"
+    }
+  ],
   "高速道路": [
     {
       "sentence_ja": "高速道路が渋滞する",
@@ -5817,6 +6507,26 @@
       "ja": "雷がゴロゴロ鳴る",
       "en": "Thunder rumbles.",
       "src": "vocab:v18-013"
+    }
+  ],
+  "黄色": [
+    {
+      "sentence_ja": "赤あかや黄色きいろの a【風船】が、空そらに飛とんでいった。",
+      "meaning": "Red and yellow balloons flew off into the sky.",
+      "source": "kanji_ex:k_ex_16_4_1a",
+      "ja": "赤あかや黄色きいろの a【風船】が、空そらに飛とんでいった。",
+      "en": "Red and yellow balloons flew off into the sky.",
+      "src": "kanji_ex:k_ex_16_4_1a"
+    }
+  ],
+  "黄色い": [
+    {
+      "sentence_ja": "「黄色い（ 糸＋青＝線 ）まで下がってください」という注意が聞こえた。",
+      "meaning": "I heard the announcement, \"Please stand behind the yellow line.\"",
+      "source": "kanji_ex:k_ex_05_3_1",
+      "ja": "「黄色い（ 糸＋青＝線 ）まで下がってください」という注意が聞こえた。",
+      "en": "I heard the announcement, \"Please stand behind the yellow line.\"",
+      "src": "kanji_ex:k_ex_05_3_1"
     }
   ]
 }
