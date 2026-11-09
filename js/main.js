@@ -22,7 +22,7 @@ import {
   setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected,
   startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
   nextKanjiQuizCard, prevKanjiQuizCard, toggleKanjiAutoNext
-} from './kanji.js?v=20261109-kanjistatus2';
+} from './kanji.js?v=20261109-kanjiheatmap1';
 import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,

@@ -709,11 +709,11 @@ export function renderKanjiActivity() {
   if (!grid) return;
   const days = getHeatmap30().map(day => {
     const reviews = getDay(day.date).pillars.kanji || 0;
-    const level = reviews <= 0 ? 0 : reviews < 10 ? 1 : reviews < 20 ? 2 : reviews < 30 ? 3 : reviews < 50 ? 4 : reviews < 75 ? 5 : reviews < 100 ? 6 : reviews < 150 ? 7 : 8;
+    const level = reviews <= 0 ? 0 : reviews < 50 ? 1 : reviews < 100 ? 2 : reviews < 150 ? 3 : reviews < 200 ? 4 : reviews < 300 ? 5 : reviews < 400 ? 6 : reviews < 500 ? 7 : 8;
     return { date: day.date, count: reviews, level };
   });
-  const legendSteps = [[0, '0'], [1, '1-9'], [2, '10-19'], [3, '20-29'], [4, '30-49'], [5, '50-74'], [6, '75-99'], [7, '100-149'], [8, '150+']];
-  const legend = `<div class="home-heatmap-legend"><span>0</span>${legendSteps.map(([l, t]) => `<i class="heatmap-cell level-${l}" title="${t} kanji reviews"></i>`).join('')}<span>150+</span></div>`;
+  const legendSteps = [[0, '0'], [1, '1-49'], [2, '50-99'], [3, '100-149'], [4, '150-199'], [5, '200-299'], [6, '300-399'], [7, '400-499'], [8, '500+']];
+  const legend = `<div class="home-heatmap-legend"><span>0</span>${legendSteps.map(([l, t]) => `<i class="heatmap-cell level-${l}" title="${t} kanji reviews"></i>`).join('')}<span>500+</span></div>`;
   grid.innerHTML = renderHeatmapGridHtml(days).replace(/: (\d+) items/g, ': $1 kanji reviews') + legend;
   const detail = document.getElementById('kanji-activity-detail');
   const kanjiDay = date => { const d = getDay(date); return { ...d, reviews: d.pillars.kanji || 0 }; };
