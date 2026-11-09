@@ -5879,6 +5879,16 @@
       "src": "kanji_ex:k_ex_sp_8"
     }
   ],
+  "遊園地": [
+    {
+      "sentence_ja": "遊園地 ・ 遊んだ",
+      "meaning": "Amusement park / played (word pair from a kanji exercise, not a full sentence)",
+      "source": "kanji_ex:k_ex_16_3_4",
+      "ja": "遊園地 ・ 遊んだ",
+      "en": "Amusement park / played (word pair from a kanji exercise, not a full sentence)",
+      "src": "kanji_ex:k_ex_16_3_4"
+    }
+  ],
   "過ぎる": [
     {
       "sentence_ja": "約束の時間を過ぎる",
