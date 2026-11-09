@@ -5621,7 +5621,8 @@
     "example_ruby": "<ruby>学年<rt>がくねん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-001"
+    "id": "v11-001",
+    "example_en": "Move up a school year."
   },
   {
     "term_ja": "学期",
@@ -5633,7 +5634,8 @@
     "example_ruby": "<ruby>学期<rt>がっき</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まる",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-002"
+    "id": "v11-002",
+    "example_en": "The school term begins."
   },
   {
     "term_ja": "通学する",
@@ -5645,7 +5647,8 @@
     "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通学<rt>つうがく</rt></ruby>する",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-003"
+    "id": "v11-003",
+    "example_en": "Commute to school by train."
   },
   {
     "term_ja": "遅刻する",
@@ -5657,7 +5660,8 @@
     "example_ruby": "<ruby>学校<rt>がっこう</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>する",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-004"
+    "id": "v11-004",
+    "example_en": "Be late for school."
   },
   {
     "term_ja": "欠席する",
@@ -5669,7 +5673,8 @@
     "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>を<ruby>欠席<rt>けっせき</rt></ruby>する",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-005"
+    "id": "v11-005",
+    "example_en": "Be absent from class."
   },
   {
     "term_ja": "配る",
@@ -5681,7 +5686,8 @@
     "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-006"
+    "id": "v11-006",
+    "example_en": "Hand out worksheets."
   },
   {
     "term_ja": "プリント",
@@ -5693,7 +5699,8 @@
     "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-007"
+    "id": "v11-007",
+    "example_en": "Hand out worksheets."
   },
   {
     "term_ja": "得意",
@@ -5705,7 +5712,8 @@
     "example_ruby": "<ruby>英語<rt>えいご</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>だ",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-008"
+    "id": "v11-008",
+    "example_en": "I'm good at English."
   },
   {
     "term_ja": "苦手",
@@ -5717,7 +5725,8 @@
     "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>が<ruby>苦手<rt>にがて</rt></ruby>だ",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-009"
+    "id": "v11-009",
+    "example_en": "I'm bad at math."
   },
   {
     "term_ja": "おしゃべり",
@@ -5729,7 +5738,8 @@
     "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>におしゃべりする",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-010"
+    "id": "v11-010",
+    "example_en": "Chat during class."
   },
   {
     "term_ja": "居眠り",
@@ -5741,7 +5751,8 @@
     "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>に<ruby>居眠<rt>いねむ</rt></ruby>りする",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-011"
+    "id": "v11-011",
+    "example_en": "Doze off during class."
   },
   {
     "term_ja": "給食",
@@ -5753,7 +5764,8 @@
     "example_ruby": "<ruby>給食<rt>きゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-012"
+    "id": "v11-012",
+    "example_en": "Eat the school lunch."
   },
   {
     "term_ja": "お弁当",
@@ -5765,7 +5777,8 @@
     "example_ruby": "お<ruby>弁当<rt>べんとう</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-013"
+    "id": "v11-013",
+    "example_en": "Eat a boxed lunch."
   },
   {
     "term_ja": "クラブ",
@@ -5777,7 +5790,8 @@
     "example_ruby": "クラブに<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-014"
+    "id": "v11-014",
+    "example_en": "Join a club."
   },
   {
     "term_ja": "部",
@@ -5789,7 +5803,8 @@
     "example_ruby": "サッカー<ruby>部<rt>ぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-015"
+    "id": "v11-015",
+    "example_en": "Join the soccer club."
   },
   {
     "term_ja": "大会",
@@ -5801,7 +5816,8 @@
     "example_ruby": "クラブの<ruby>大会<rt>たいかい</rt></ruby>に<ruby>出<rt>で</rt></ruby>る",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-016"
+    "id": "v11-016",
+    "example_en": "Take part in the club tournament."
   },
   {
     "term_ja": "遠足",
@@ -5813,7 +5829,8 @@
     "example_ruby": "<ruby>遠足<rt>えんそく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-017"
+    "id": "v11-017",
+    "example_en": "Go on a school excursion."
   },
   {
     "term_ja": "修学旅行",
@@ -5825,7 +5842,8 @@
     "example_ruby": "<ruby>修学旅行<rt>しゅうがくりょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-018"
+    "id": "v11-018",
+    "example_en": "Go on a school trip."
   },
   {
     "term_ja": "運動会",
@@ -5837,7 +5855,8 @@
     "example_ruby": "<ruby>運動会<rt>うんどうかい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-019"
+    "id": "v11-019",
+    "example_en": "Take part in the sports festival."
   },
   {
     "term_ja": "体育祭",
@@ -5849,7 +5868,8 @@
     "example_ruby": "<ruby>体育祭<rt>たいいくさい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-020"
+    "id": "v11-020",
+    "example_en": "Take part in the sports festival."
   },
   {
     "term_ja": "文化祭",
@@ -5861,7 +5881,8 @@
     "example_ruby": "<ruby>文化祭<rt>ぶんかさい</rt></ruby>で<ruby>発表<rt>はっぴょう</rt></ruby>する",
     "chapter": 11,
     "section_id": 1,
-    "id": "v11-021"
+    "id": "v11-021",
+    "example_en": "Give a presentation at the cultural festival."
   },
   {
     "term_ja": "学ぶ",
@@ -5873,7 +5894,8 @@
     "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶ",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-022"
+    "id": "v11-022",
+    "example_en": "Learn Japanese."
   },
   {
     "term_ja": "学習する",
@@ -5885,7 +5907,8 @@
     "example_ruby": "<ruby>言葉<rt>ことば</rt></ruby>を<ruby>学習<rt>がくしゅう</rt></ruby>する",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-023"
+    "id": "v11-023",
+    "example_en": "Study vocabulary."
   },
   {
     "term_ja": "基礎",
@@ -5897,7 +5920,8 @@
     "example_ruby": "<ruby>勉強<rt>べんきょう</rt></ruby>の<ruby>基礎<rt>きそ</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-024"
+    "id": "v11-024",
+    "example_en": "The basics of studying."
   },
   {
     "term_ja": "習う",
@@ -5909,7 +5933,8 @@
     "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>習<rt>なら</rt></ruby>う",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-025"
+    "id": "v11-025",
+    "example_en": "Learn from a teacher."
   },
   {
     "term_ja": "教わる",
@@ -5921,7 +5946,8 @@
     "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>教<rt>おそ</rt></ruby>わる",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-026"
+    "id": "v11-026",
+    "example_en": "Be taught by a teacher."
   },
   {
     "term_ja": "知識",
@@ -5933,7 +5959,8 @@
     "example_ruby": "<ruby>知識<rt>ちしき</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>める",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-027"
+    "id": "v11-027",
+    "example_en": "Deepen one's knowledge."
   },
   {
     "term_ja": "疑問",
@@ -5945,7 +5972,8 @@
     "example_ruby": "<ruby>疑問<rt>ぎもん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-028"
+    "id": "v11-028",
+    "example_en": "Have a question."
   },
   {
     "term_ja": "実力",
@@ -5957,7 +5985,8 @@
     "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-029"
+    "id": "v11-029",
+    "example_en": "Test one's real ability."
   },
   {
     "term_ja": "付ける",
@@ -5969,7 +5998,8 @@
     "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-030"
+    "id": "v11-030",
+    "example_en": "Build up real ability."
   },
   {
     "term_ja": "試す",
@@ -5981,7 +6011,8 @@
     "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-031"
+    "id": "v11-031",
+    "example_en": "Test one's real ability."
   },
   {
     "term_ja": "出す",
@@ -5993,7 +6024,8 @@
     "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-032"
+    "id": "v11-032",
+    "example_en": "Show one's real ability."
   },
   {
     "term_ja": "満点",
@@ -6005,7 +6037,8 @@
     "example_ruby": "テストで<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-033"
+    "id": "v11-033",
+    "example_en": "Get full marks on a test."
   },
   {
     "term_ja": "成績",
@@ -6017,7 +6050,8 @@
     "example_ruby": "<ruby>成績<rt>せいせき</rt></ruby>がいい",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-034"
+    "id": "v11-034",
+    "example_en": "Have good grades."
   },
   {
     "term_ja": "単語",
@@ -6029,7 +6063,8 @@
     "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-035"
+    "id": "v11-035",
+    "example_en": "Memorize vocabulary."
   },
   {
     "term_ja": "暗記する",
@@ -6041,7 +6076,8 @@
     "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-036"
+    "id": "v11-036",
+    "example_en": "Memorize vocabulary."
   },
   {
     "term_ja": "内容",
@@ -6053,7 +6089,8 @@
     "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-037"
+    "id": "v11-037",
+    "example_en": "Understand the content of the class."
   },
   {
     "term_ja": "理解する",
@@ -6065,7 +6102,8 @@
     "example_ruby": "<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-038"
+    "id": "v11-038",
+    "example_en": "Understand the content."
   },
   {
     "term_ja": "スピーチする",
@@ -6077,7 +6115,8 @@
     "example_ruby": "クラスでスピーチする",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-039"
+    "id": "v11-039",
+    "example_en": "Give a speech in class."
   },
   {
     "term_ja": "レベル",
@@ -6089,7 +6128,8 @@
     "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>のレベル",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-040"
+    "id": "v11-040",
+    "example_en": "Japanese level."
   },
   {
     "term_ja": "初級",
@@ -6101,7 +6141,8 @@
     "example_ruby": "<ruby>初級<rt>しょきゅう</rt></ruby>のクラス",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-041"
+    "id": "v11-041",
+    "example_en": "A beginner-level class."
   },
   {
     "term_ja": "中級",
@@ -6113,7 +6154,8 @@
     "example_ruby": "<ruby>中級<rt>ちゅうきゅう</rt></ruby>のクラス",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-042"
+    "id": "v11-042",
+    "example_en": "An intermediate-level class."
   },
   {
     "term_ja": "上級",
@@ -6125,7 +6167,8 @@
     "example_ruby": "<ruby>上級<rt>じょうきゅう</rt></ruby>のクラス",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-043"
+    "id": "v11-043",
+    "example_en": "An advanced-level class."
   },
   {
     "term_ja": "国語",
@@ -6137,7 +6180,8 @@
     "example_ruby": "<ruby>国語<rt>こくご</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-044"
+    "id": "v11-044",
+    "example_en": "A Japanese-language textbook."
   },
   {
     "term_ja": "理科",
@@ -6149,7 +6193,8 @@
     "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-045"
+    "id": "v11-045",
+    "example_en": "A science experiment."
   },
   {
     "term_ja": "体育",
@@ -6161,7 +6206,8 @@
     "example_ruby": "<ruby>体育<rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-046"
+    "id": "v11-046",
+    "example_en": "A PE class."
   },
   {
     "term_ja": "数学",
@@ -6173,7 +6219,8 @@
     "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-047"
+    "id": "v11-047",
+    "example_en": "A math problem."
   },
   {
     "term_ja": "社会",
@@ -6185,7 +6232,8 @@
     "example_ruby": "<ruby>社会<rt>しゃかい</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-048"
+    "id": "v11-048",
+    "example_en": "Studying social studies."
   },
   {
     "term_ja": "音楽",
@@ -6197,7 +6245,8 @@
     "example_ruby": "<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>",
     "chapter": 11,
     "section_id": 2,
-    "id": "v11-049"
+    "id": "v11-049",
+    "example_en": "Music period."
   },
   {
     "term_ja": "受験する",
@@ -6209,7 +6258,8 @@
     "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>受験<rt>じゅけん</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-001"
+    "id": "v12-001",
+    "example_en": "Take the entrance exam for a university."
   },
   {
     "term_ja": "私立",
@@ -6221,7 +6271,8 @@
     "example_ruby": "<ruby>私立大学<rt>しりつだいがく</rt></ruby>",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-002"
+    "id": "v12-002",
+    "example_en": "A private university."
   },
   {
     "term_ja": "国立",
@@ -6233,7 +6284,8 @@
     "example_ruby": "<ruby>国立大学<rt>こくりつだいがく</rt></ruby>",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-003"
+    "id": "v12-003",
+    "example_en": "A national university."
   },
   {
     "term_ja": "大学院",
@@ -6245,7 +6297,8 @@
     "example_ruby": "<ruby>大学院<rt>だいがくいん</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-004"
+    "id": "v12-004",
+    "example_en": "Go on to graduate school."
   },
   {
     "term_ja": "進学する",
@@ -6257,7 +6310,8 @@
     "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-005"
+    "id": "v12-005",
+    "example_en": "Go on to university."
   },
   {
     "term_ja": "徹夜",
@@ -6269,7 +6323,8 @@
     "example_ruby": "<ruby>徹夜<rt>てつや</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-006"
+    "id": "v12-006",
+    "example_en": "Stay up all night studying."
   },
   {
     "term_ja": "努力する",
@@ -6281,7 +6336,8 @@
     "example_ruby": "<ruby>合格<rt>ごうかく</rt></ruby>のために<ruby>努力<rt>どりょく</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-007"
+    "id": "v12-007",
+    "example_en": "Make an effort to pass."
   },
   {
     "term_ja": "ミス",
@@ -6293,7 +6349,8 @@
     "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>のミスをする",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-008"
+    "id": "v12-008",
+    "example_en": "Make a calculation error."
   },
   {
     "term_ja": "確かめる",
@@ -6305,7 +6362,8 @@
     "example_ruby": "<ruby>答<rt>こた</rt></ruby>えを<ruby>確<rt>たし</rt></ruby>かめる",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-009"
+    "id": "v12-009",
+    "example_en": "Check one's answer."
   },
   {
     "term_ja": "確認する",
@@ -6317,7 +6375,8 @@
     "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-010"
+    "id": "v12-010",
+    "example_en": "Check the time."
   },
   {
     "term_ja": "解答",
@@ -6329,7 +6388,8 @@
     "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-011"
+    "id": "v12-011",
+    "example_en": "Look over one's answers again."
   },
   {
     "term_ja": "見直す",
@@ -6341,7 +6401,8 @@
     "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-012"
+    "id": "v12-012",
+    "example_en": "Look over one's answers again."
   },
   {
     "term_ja": "計算",
@@ -6353,7 +6414,8 @@
     "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-013"
+    "id": "v12-013",
+    "example_en": "Get a calculation wrong."
   },
   {
     "term_ja": "間違う",
@@ -6365,7 +6427,8 @@
     "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-014"
+    "id": "v12-014",
+    "example_en": "Get a calculation wrong."
   },
   {
     "term_ja": "結果",
@@ -6377,7 +6440,8 @@
     "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-015"
+    "id": "v12-015",
+    "example_en": "The results are announced."
   },
   {
     "term_ja": "発表される",
@@ -6389,7 +6453,8 @@
     "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-016"
+    "id": "v12-016",
+    "example_en": "The results are announced."
   },
   {
     "term_ja": "通る",
@@ -6401,7 +6466,8 @@
     "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>通<rt>とお</rt></ruby>る",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-017"
+    "id": "v12-017",
+    "example_en": "Pass an exam."
   },
   {
     "term_ja": "合格する",
@@ -6413,7 +6479,8 @@
     "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-018"
+    "id": "v12-018",
+    "example_en": "Pass an exam."
   },
   {
     "term_ja": "パスする",
@@ -6425,7 +6492,8 @@
     "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>をパスする",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-019"
+    "id": "v12-019",
+    "example_en": "Pass an exam."
   },
   {
     "term_ja": "落ちる",
@@ -6437,7 +6505,8 @@
     "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-020"
+    "id": "v12-020",
+    "example_en": "Fail an exam."
   },
   {
     "term_ja": "不合格",
@@ -6449,7 +6518,8 @@
     "example_ruby": "<ruby>不合格<rt>ふごうかく</rt></ruby>になる",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-021"
+    "id": "v12-021",
+    "example_en": "Fail (be rejected)."
   },
   {
     "term_ja": "教科書",
@@ -6461,7 +6531,8 @@
     "example_ruby": "<ruby>教科書<rt>きょうかしょ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-022"
+    "id": "v12-022",
+    "example_en": "Read a textbook."
   },
   {
     "term_ja": "参考書",
@@ -6473,7 +6544,8 @@
     "example_ruby": "<ruby>参考書<rt>さんこうしょ</rt></ruby>で<ruby>調<rt>しら</rt></ruby>べる",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-023"
+    "id": "v12-023",
+    "example_en": "Look something up in a reference book."
   },
   {
     "term_ja": "問題集",
@@ -6485,7 +6557,8 @@
     "example_ruby": "<ruby>問題集<rt>もんだいしゅう</rt></ruby>を<ruby>解<rt>と</rt></ruby>く",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-024"
+    "id": "v12-024",
+    "example_en": "Work through a workbook."
   },
   {
     "term_ja": "医学部",
@@ -6497,7 +6570,8 @@
     "example_ruby": "<ruby>医学部<rt>いがくぶ</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-025"
+    "id": "v12-025",
+    "example_en": "Aim for medical school."
   },
   {
     "term_ja": "理工学部",
@@ -6509,7 +6583,8 @@
     "example_ruby": "<ruby>理工学部<rt>りこうがくぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-026"
+    "id": "v12-026",
+    "example_en": "Enter the faculty of science and engineering."
   },
   {
     "term_ja": "文学部",
@@ -6521,7 +6596,8 @@
     "example_ruby": "<ruby>文学部<rt>ぶんがくぶ</rt></ruby>で<ruby>学<rt>まな</rt></ruby>ぶ",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-027"
+    "id": "v12-027",
+    "example_en": "Study in the faculty of letters."
   },
   {
     "term_ja": "法学部",
@@ -6533,7 +6609,8 @@
     "example_ruby": "<ruby>法学部<rt>ほうがくぶ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-028"
+    "id": "v12-028",
+    "example_en": "A student in the faculty of law."
   },
   {
     "term_ja": "経済学部",
@@ -6545,7 +6622,8 @@
     "example_ruby": "<ruby>経済学部<rt>けいざいがくぶ</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>する",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-029"
+    "id": "v12-029",
+    "example_en": "Graduate from the faculty of economics."
   },
   {
     "term_ja": "社会学部",
@@ -6557,7 +6635,8 @@
     "example_ruby": "<ruby>社会学部<rt>しゃかいがくぶ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う",
     "chapter": 12,
     "section_id": 1,
-    "id": "v12-030"
+    "id": "v12-030",
+    "example_en": "Attend the faculty of sociology."
   },
   {
     "term_ja": "講義",
@@ -6569,7 +6648,8 @@
     "example_ruby": "<ruby>講義<rt>こうぎ</rt></ruby>を<ruby>聴<rt>き</rt></ruby>く",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-031"
+    "id": "v12-031",
+    "example_en": "Listen to a lecture."
   },
   {
     "term_ja": "ゼミ",
@@ -6581,7 +6661,8 @@
     "example_ruby": "ゼミに<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-032"
+    "id": "v12-032",
+    "example_en": "Take part in a seminar."
   },
   {
     "term_ja": "教授",
@@ -6593,7 +6674,8 @@
     "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>の<ruby>教授<rt>きょうじゅ</rt></ruby>",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-033"
+    "id": "v12-033",
+    "example_en": "A university professor."
   },
   {
     "term_ja": "指導",
@@ -6605,7 +6687,8 @@
     "example_ruby": "<ruby>教授<rt>きょうじゅ</rt></ruby>の<ruby>指導<rt>しどう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-034"
+    "id": "v12-034",
+    "example_en": "Receive a professor's guidance."
   },
   {
     "term_ja": "先輩",
@@ -6617,7 +6700,8 @@
     "example_ruby": "<ruby>先輩<rt>せんぱい</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-035"
+    "id": "v12-035",
+    "example_en": "Consult a senior."
   },
   {
     "term_ja": "アドバイス",
@@ -6629,7 +6713,8 @@
     "example_ruby": "アドバイスをもらう",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-036"
+    "id": "v12-036",
+    "example_en": "Get advice."
   },
   {
     "term_ja": "コメント",
@@ -6641,7 +6726,8 @@
     "example_ruby": "コメントをもらう",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-037"
+    "id": "v12-037",
+    "example_en": "Receive comments."
   },
   {
     "term_ja": "授業",
@@ -6653,7 +6739,8 @@
     "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>に<ruby>出<rt>で</rt></ruby>る",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-038"
+    "id": "v12-038",
+    "example_en": "Attend class."
   },
   {
     "term_ja": "研究",
@@ -6665,7 +6752,8 @@
     "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>を<ruby>研究<rt>けんきゅう</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-039"
+    "id": "v12-039",
+    "example_en": "Research Japanese history."
   },
   {
     "term_ja": "実験",
@@ -6677,7 +6765,8 @@
     "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>をする",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-040"
+    "id": "v12-040",
+    "example_en": "Do a science experiment."
   },
   {
     "term_ja": "提出する",
@@ -6689,7 +6778,8 @@
     "example_ruby": "レポートを<ruby>提出<rt>ていしゅつ</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-041"
+    "id": "v12-041",
+    "example_en": "Submit a report."
   },
   {
     "term_ja": "レポート",
@@ -6701,7 +6791,8 @@
     "example_ruby": "レポートを<ruby>書<rt>か</rt></ruby>く",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-042"
+    "id": "v12-042",
+    "example_en": "Write a report."
   },
   {
     "term_ja": "課題",
@@ -6713,7 +6804,8 @@
     "example_ruby": "<ruby>課題<rt>かだい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-043"
+    "id": "v12-043",
+    "example_en": "Assign homework."
   },
   {
     "term_ja": "卒業論文",
@@ -6725,7 +6817,8 @@
     "example_ruby": "<ruby>卒業論文<rt>そつぎょうろんぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-044"
+    "id": "v12-044",
+    "example_en": "Write a graduation thesis."
   },
   {
     "term_ja": "卒論",
@@ -6737,7 +6830,8 @@
     "example_ruby": "<ruby>卒論<rt>そつろん</rt></ruby>のテーマ",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-045"
+    "id": "v12-045",
+    "example_en": "The topic of a graduation thesis."
   },
   {
     "term_ja": "授業料",
@@ -6749,7 +6843,8 @@
     "example_ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-046"
+    "id": "v12-046",
+    "example_en": "Pay tuition."
   },
   {
     "term_ja": "学費",
@@ -6761,7 +6856,8 @@
     "example_ruby": "<ruby>学費<rt>がくひ</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-047"
+    "id": "v12-047",
+    "example_en": "Pay school fees."
   },
   {
     "term_ja": "寮",
@@ -6773,7 +6869,8 @@
     "example_ruby": "<ruby>学生寮<rt>がくせいりょう</rt></ruby>に<ruby>住<rt>す</rt></ruby>む",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-048"
+    "id": "v12-048",
+    "example_en": "Live in a student dormitory."
   },
   {
     "term_ja": "暮らす",
@@ -6785,7 +6882,8 @@
     "example_ruby": "<ruby>一人<rt>ひとり</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-049"
+    "id": "v12-049",
+    "example_en": "Live alone."
   },
   {
     "term_ja": "一人暮らし",
@@ -6797,7 +6895,8 @@
     "example_ruby": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>める",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-050"
+    "id": "v12-050",
+    "example_en": "Start living alone."
   },
   {
     "term_ja": "サークル",
@@ -6809,7 +6908,8 @@
     "example_ruby": "サークルに<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-051"
+    "id": "v12-051",
+    "example_en": "Join a club (student circle)."
   },
   {
     "term_ja": "飲み会",
@@ -6821,7 +6921,8 @@
     "example_ruby": "<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-052"
+    "id": "v12-052",
+    "example_en": "Take part in a drinking party."
   },
   {
     "term_ja": "合宿",
@@ -6833,7 +6934,8 @@
     "example_ruby": "<ruby>夏休み<rt>なつやすみ</rt></ruby>に<ruby>合宿<rt>がっしゅく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-053"
+    "id": "v12-053",
+    "example_en": "Go to a training camp in the summer vacation."
   },
   {
     "term_ja": "後輩",
@@ -6845,7 +6947,8 @@
     "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-054"
+    "id": "v12-054",
+    "example_en": "Train a junior member."
   },
   {
     "term_ja": "育てる",
@@ -6857,7 +6960,8 @@
     "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-055"
+    "id": "v12-055",
+    "example_en": "Train a junior member."
   },
   {
     "term_ja": "学園祭",
@@ -6869,7 +6973,8 @@
     "example_ruby": "<ruby>学園祭<rt>がくえんさい</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-056"
+    "id": "v12-056",
+    "example_en": "Go to the campus festival."
   },
   {
     "term_ja": "参加する",
@@ -6881,7 +6986,8 @@
     "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-057"
+    "id": "v12-057",
+    "example_en": "Take part in an event."
   },
   {
     "term_ja": "留学する",
@@ -6893,7 +6999,8 @@
     "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>留学<rt>りゅうがく</rt></ruby>する",
     "chapter": 12,
     "section_id": 2,
-    "id": "v12-058"
+    "id": "v12-058",
+    "example_en": "Study abroad in Japan."
   },
   {
     "term_ja": "募集する",
@@ -6905,7 +7012,8 @@
     "example_ruby": "<ruby>社員<rt>しゃいん</rt></ruby>を<ruby>募集<rt>ぼしゅう</rt></ruby>する",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-001"
+    "id": "v13-001",
+    "example_en": "Recruit employees."
   },
   {
     "term_ja": "スタッフ",
@@ -6917,7 +7025,8 @@
     "example_ruby": "<ruby>店<rt>みせ</rt></ruby>のスタッフ",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-002"
+    "id": "v13-002",
+    "example_en": "The shop's staff."
   },
   {
     "term_ja": "社員",
@@ -6929,7 +7038,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>社員<rt>しゃいん</rt></ruby>",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-003"
+    "id": "v13-003",
+    "example_en": "A company employee."
   },
   {
     "term_ja": "アルバイト",
@@ -6941,7 +7051,8 @@
     "example_ruby": "アルバイトを<ruby>探<rt>さが</rt></ruby>す",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-004"
+    "id": "v13-004",
+    "example_en": "Look for a part-time job."
   },
   {
     "term_ja": "バイト",
@@ -6953,7 +7064,8 @@
     "example_ruby": "バイトをする",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-005"
+    "id": "v13-005",
+    "example_en": "Work a part-time job."
   },
   {
     "term_ja": "履歴書",
@@ -6965,7 +7077,8 @@
     "example_ruby": "<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-006"
+    "id": "v13-006",
+    "example_en": "Write a resume."
   },
   {
     "term_ja": "面接",
@@ -6977,7 +7090,8 @@
     "example_ruby": "<ruby>面接<rt>めんせつ</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-007"
+    "id": "v13-007",
+    "example_en": "Have an interview."
   },
   {
     "term_ja": "入社試験",
@@ -6989,7 +7103,8 @@
     "example_ruby": "<ruby>入社試験<rt>にゅうしゃしけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-008"
+    "id": "v13-008",
+    "example_en": "Take a company entrance exam."
   },
   {
     "term_ja": "生年月日",
@@ -7001,7 +7116,8 @@
     "example_ruby": "<ruby>生年月日<rt>せいねんがっぴ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-009"
+    "id": "v13-009",
+    "example_en": "Write one's date of birth."
   },
   {
     "term_ja": "資格",
@@ -7013,7 +7129,8 @@
     "example_ruby": "<ruby>資格<rt>しかく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-010"
+    "id": "v13-010",
+    "example_en": "Get a qualification."
   },
   {
     "term_ja": "免許",
@@ -7025,7 +7142,8 @@
     "example_ruby": "<ruby>運転免許<rt>うんてんめんきょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-011"
+    "id": "v13-011",
+    "example_en": "Get a driver's license."
   },
   {
     "term_ja": "職業",
@@ -7037,7 +7155,8 @@
     "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-012"
+    "id": "v13-012",
+    "example_en": "Take up an occupation."
   },
   {
     "term_ja": "就く",
@@ -7049,7 +7168,8 @@
     "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-013"
+    "id": "v13-013",
+    "example_en": "Take up an occupation."
   },
   {
     "term_ja": "企業",
@@ -7061,7 +7181,8 @@
     "example_ruby": "<ruby>有名企業<rt>ゆうめいきぎょう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-014"
+    "id": "v13-014",
+    "example_en": "Join a well-known company."
   },
   {
     "term_ja": "就職する",
@@ -7073,7 +7194,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>する",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-015"
+    "id": "v13-015",
+    "example_en": "Get a job at a company."
   },
   {
     "term_ja": "入る",
@@ -7085,7 +7207,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-016"
+    "id": "v13-016",
+    "example_en": "Join a company."
   },
   {
     "term_ja": "辞める",
@@ -7097,7 +7220,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>辞<rt>や</rt></ruby>める",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-017"
+    "id": "v13-017",
+    "example_en": "Quit a company."
   },
   {
     "term_ja": "首になる",
@@ -7109,7 +7233,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>首<rt>くび</rt></ruby>になる",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-018"
+    "id": "v13-018",
+    "example_en": "Be fired from a company."
   },
   {
     "term_ja": "失う",
@@ -7121,7 +7246,8 @@
     "example_ruby": "<ruby>職<rt>しょく</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-019"
+    "id": "v13-019",
+    "example_en": "Lose one's job."
   },
   {
     "term_ja": "会社員",
@@ -7133,7 +7259,8 @@
     "example_ruby": "<ruby>会社員<rt>かいしゃいん</rt></ruby>として<ruby>働<rt>はたら</rt></ruby>く",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-020"
+    "id": "v13-020",
+    "example_en": "Work as a company employee."
   },
   {
     "term_ja": "公務員",
@@ -7145,7 +7272,8 @@
     "example_ruby": "<ruby>公務員<rt>こうむいん</rt></ruby>になる",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-021"
+    "id": "v13-021",
+    "example_en": "Become a civil servant."
   },
   {
     "term_ja": "職人",
@@ -7157,7 +7285,8 @@
     "example_ruby": "<ruby>伝統<rt>でんとう</rt></ruby>の<ruby>職人<rt>しょくにん</rt></ruby>",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-022"
+    "id": "v13-022",
+    "example_en": "A traditional craftsman."
   },
   {
     "term_ja": "モデル",
@@ -7169,7 +7298,8 @@
     "example_ruby": "ファッションモデル",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-023"
+    "id": "v13-023",
+    "example_en": "A fashion model."
   },
   {
     "term_ja": "記者",
@@ -7181,7 +7311,8 @@
     "example_ruby": "<ruby>新聞記者<rt>しんぶんきしゃ</rt></ruby>",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-024"
+    "id": "v13-024",
+    "example_en": "A newspaper reporter."
   },
   {
     "term_ja": "パイロット",
@@ -7193,7 +7324,8 @@
     "example_ruby": "<ruby>飛行機<rt>ひこうき</rt></ruby>のパイロット",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-025"
+    "id": "v13-025",
+    "example_en": "An airplane pilot."
   },
   {
     "term_ja": "教師",
@@ -7205,7 +7337,8 @@
     "example_ruby": "<ruby>高校<rt>こうこう</rt></ruby>の<ruby>教師<rt>きょうし</rt></ruby>",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-026"
+    "id": "v13-026",
+    "example_en": "A high school teacher."
   },
   {
     "term_ja": "医師",
@@ -7217,7 +7350,8 @@
     "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>医師<rt>いし</rt></ruby>",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-027"
+    "id": "v13-027",
+    "example_en": "A hospital doctor."
   },
   {
     "term_ja": "看護師",
@@ -7229,7 +7363,8 @@
     "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>看護師<rt>かんごし</rt></ruby>",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-028"
+    "id": "v13-028",
+    "example_en": "A hospital nurse."
   },
   {
     "term_ja": "弁護士",
@@ -7241,7 +7376,8 @@
     "example_ruby": "<ruby>弁護士<rt>べんごし</rt></ruby>に<ruby>依頼<rt>いらい</rt></ruby>する",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-029"
+    "id": "v13-029",
+    "example_en": "Hire a lawyer."
   },
   {
     "term_ja": "政治家",
@@ -7253,7 +7389,8 @@
     "example_ruby": "<ruby>政治家<rt>せいじか</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す",
     "chapter": 13,
     "section_id": 1,
-    "id": "v13-030"
+    "id": "v13-030",
+    "example_en": "Aim to become a politician."
   },
   {
     "term_ja": "ミーティング",
@@ -7265,7 +7402,8 @@
     "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>のミーティング",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-031"
+    "id": "v13-031",
+    "example_en": "The morning meeting."
   },
   {
     "term_ja": "資料",
@@ -7277,7 +7415,8 @@
     "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-032"
+    "id": "v13-032",
+    "example_en": "Hand out the meeting materials."
   },
   {
     "term_ja": "配る",
@@ -7289,7 +7428,8 @@
     "example_ruby": "<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-033"
+    "id": "v13-033",
+    "example_en": "Hand out the materials."
   },
   {
     "term_ja": "スケジュール",
@@ -7301,7 +7441,8 @@
     "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-034"
+    "id": "v13-034",
+    "example_en": "Make a schedule."
   },
   {
     "term_ja": "立てる",
@@ -7313,7 +7454,8 @@
     "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-035"
+    "id": "v13-035",
+    "example_en": "Make a schedule."
   },
   {
     "term_ja": "アイデア",
@@ -7325,7 +7467,8 @@
     "example_ruby": "アイデアを<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-036"
+    "id": "v13-036",
+    "example_en": "Come up with an idea."
   },
   {
     "term_ja": "部長",
@@ -7337,7 +7480,8 @@
     "example_ruby": "<ruby>部長<rt>ぶちょう</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-037"
+    "id": "v13-037",
+    "example_en": "The department manager's instructions."
   },
   {
     "term_ja": "指示",
@@ -7349,7 +7493,8 @@
     "example_ruby": "<ruby>指示<rt>しじ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-038"
+    "id": "v13-038",
+    "example_en": "Give instructions."
   },
   {
     "term_ja": "作業",
@@ -7361,7 +7506,8 @@
     "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-039"
+    "id": "v13-039",
+    "example_en": "The work is progressing."
   },
   {
     "term_ja": "進む",
@@ -7373,7 +7519,8 @@
     "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-040"
+    "id": "v13-040",
+    "example_en": "The work is progressing."
   },
   {
     "term_ja": "書類",
@@ -7385,7 +7532,8 @@
     "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-041"
+    "id": "v13-041",
+    "example_en": "Organize the documents."
   },
   {
     "term_ja": "整理する",
@@ -7397,7 +7545,8 @@
     "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-042"
+    "id": "v13-042",
+    "example_en": "Organize the documents."
   },
   {
     "term_ja": "契約",
@@ -7409,7 +7558,8 @@
     "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-043"
+    "id": "v13-043",
+    "example_en": "Sign a contract."
   },
   {
     "term_ja": "結ぶ",
@@ -7421,7 +7571,8 @@
     "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-044"
+    "id": "v13-044",
+    "example_en": "Sign a contract."
   },
   {
     "term_ja": "商品",
@@ -7433,7 +7584,8 @@
     "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-045"
+    "id": "v13-045",
+    "example_en": "Sell a product."
   },
   {
     "term_ja": "販売する",
@@ -7445,7 +7597,8 @@
     "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-046"
+    "id": "v13-046",
+    "example_en": "Sell a product."
   },
   {
     "term_ja": "通う",
@@ -7457,7 +7610,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-047"
+    "id": "v13-047",
+    "example_en": "Commute to the company."
   },
   {
     "term_ja": "通勤する",
@@ -7469,7 +7623,8 @@
     "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-048"
+    "id": "v13-048",
+    "example_en": "Commute to work by train."
   },
   {
     "term_ja": "出勤する",
@@ -7481,7 +7636,8 @@
     "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>9<ruby>時<rt>じ</rt></ruby>に<ruby>出勤<rt>しゅっきん</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-049"
+    "id": "v13-049",
+    "example_en": "Report for work at 9 a.m."
   },
   {
     "term_ja": "事務所",
@@ -7493,7 +7649,8 @@
     "example_ruby": "<ruby>事務所<rt>じむしょ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>く",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-050"
+    "id": "v13-050",
+    "example_en": "Work at an office."
   },
   {
     "term_ja": "オフィス",
@@ -7505,7 +7662,8 @@
     "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しいオフィス",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-051"
+    "id": "v13-051",
+    "example_en": "A new office."
   },
   {
     "term_ja": "本社",
@@ -7517,7 +7675,8 @@
     "example_ruby": "<ruby>本社<rt>ほんしゃ</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>する",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-052"
+    "id": "v13-052",
+    "example_en": "Be transferred to the head office."
   },
   {
     "term_ja": "深夜",
@@ -7529,7 +7688,8 @@
     "example_ruby": "<ruby>深夜<rt>しんや</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>く",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-053"
+    "id": "v13-053",
+    "example_en": "Work until late at night."
   },
   {
     "term_ja": "残業する",
@@ -7541,7 +7701,8 @@
     "example_ruby": "<ruby>残業<rt>ざんぎょう</rt></ruby>する<ruby>日<rt>ひ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-054"
+    "id": "v13-054",
+    "example_en": "There are many days when I work overtime."
   },
   {
     "term_ja": "きつい",
@@ -7553,7 +7714,8 @@
     "example_ruby": "<ruby>仕事<rt>しごと</rt></ruby>がきつい",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-055"
+    "id": "v13-055",
+    "example_en": "The work is tough."
   },
   {
     "term_ja": "楽な",
@@ -7565,7 +7727,8 @@
     "example_ruby": "<ruby>楽<rt>らく</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-056"
+    "id": "v13-056",
+    "example_en": "An easy job."
   },
   {
     "term_ja": "時給",
@@ -7577,7 +7740,8 @@
     "example_ruby": "<ruby>時給<rt>じきゅう</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-057"
+    "id": "v13-057",
+    "example_en": "The hourly wage is high."
   },
   {
     "term_ja": "給料",
@@ -7589,7 +7753,8 @@
     "example_ruby": "<ruby>給料<rt>きゅうりょう</rt></ruby>をもらう",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-058"
+    "id": "v13-058",
+    "example_en": "Receive a salary."
   },
   {
     "term_ja": "ボーナス",
@@ -7601,7 +7766,8 @@
     "example_ruby": "ボーナスが<ruby>出<rt>で</rt></ruby>る",
     "chapter": 13,
     "section_id": 2,
-    "id": "v13-059"
+    "id": "v13-059",
+    "example_en": "A bonus is paid."
   },
   {
     "term_ja": "パソコン",
@@ -7613,7 +7779,8 @@
     "example_ruby": "パソコンを<ruby>使<rt>つか</rt></ruby>う",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-001"
+    "id": "v14-001",
+    "example_en": "Use a computer."
   },
   {
     "term_ja": "スイッチ",
@@ -7625,7 +7792,8 @@
     "example_ruby": "スイッチを<ruby>入<rt>い</rt></ruby>れる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-002"
+    "id": "v14-002",
+    "example_en": "Turn on the switch."
   },
   {
     "term_ja": "クリックする",
@@ -7637,7 +7805,8 @@
     "example_ruby": "ボタンをクリックする",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-003"
+    "id": "v14-003",
+    "example_en": "Click the button."
   },
   {
     "term_ja": "マウス",
@@ -7649,7 +7818,8 @@
     "example_ruby": "マウスを<ruby>動<rt>うご</rt></ruby>かす",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-004"
+    "id": "v14-004",
+    "example_en": "Move the mouse."
   },
   {
     "term_ja": "ボタン",
@@ -7661,7 +7831,8 @@
     "example_ruby": "ボタンを<ruby>押<rt>お</rt></ruby>す",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-005"
+    "id": "v14-005",
+    "example_en": "Press the button."
   },
   {
     "term_ja": "ファイル",
@@ -7673,7 +7844,8 @@
     "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-006"
+    "id": "v14-006",
+    "example_en": "Open a file."
   },
   {
     "term_ja": "開く",
@@ -7685,7 +7857,8 @@
     "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-007"
+    "id": "v14-007",
+    "example_en": "Open a file."
   },
   {
     "term_ja": "閉じる",
@@ -7697,7 +7870,8 @@
     "example_ruby": "ファイルを<ruby>閉<rt>と</rt></ruby>じる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-008"
+    "id": "v14-008",
+    "example_en": "Close a file."
   },
   {
     "term_ja": "画面",
@@ -7709,7 +7883,8 @@
     "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-009"
+    "id": "v14-009",
+    "example_en": "Look at the screen."
   },
   {
     "term_ja": "表示する",
@@ -7721,7 +7896,8 @@
     "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-010"
+    "id": "v14-010",
+    "example_en": "Display on the screen."
   },
   {
     "term_ja": "入力する",
@@ -7733,7 +7909,8 @@
     "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-011"
+    "id": "v14-011",
+    "example_en": "Enter characters."
   },
   {
     "term_ja": "文字",
@@ -7745,7 +7922,8 @@
     "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-012"
+    "id": "v14-012",
+    "example_en": "Enter characters."
   },
   {
     "term_ja": "数字",
@@ -7757,7 +7935,8 @@
     "example_ruby": "<ruby>数字<rt>すうじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-013"
+    "id": "v14-013",
+    "example_en": "Enter numbers."
   },
   {
     "term_ja": "パスワード",
@@ -7769,7 +7948,8 @@
     "example_ruby": "パスワードを<ruby>入力<rt>にゅうりょく</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-014"
+    "id": "v14-014",
+    "example_en": "Enter a password."
   },
   {
     "term_ja": "確認する",
@@ -7781,7 +7961,8 @@
     "example_ruby": "パスワードを<ruby>確認<rt>かくにん</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-015"
+    "id": "v14-015",
+    "example_en": "Confirm the password."
   },
   {
     "term_ja": "メール",
@@ -7793,7 +7974,8 @@
     "example_ruby": "メールをチェックする",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-016"
+    "id": "v14-016",
+    "example_en": "Check email."
   },
   {
     "term_ja": "チェックする",
@@ -7805,7 +7987,8 @@
     "example_ruby": "メールをチェックする",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-017"
+    "id": "v14-017",
+    "example_en": "Check email."
   },
   {
     "term_ja": "ウェブサイト",
@@ -7817,7 +8000,8 @@
     "example_ruby": "ウェブサイトを<ruby>見<rt>み</rt></ruby>る",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-018"
+    "id": "v14-018",
+    "example_en": "Look at a website."
   },
   {
     "term_ja": "サイト",
@@ -7829,7 +8013,8 @@
     "example_ruby": "サイトで<ruby>調<rt>しら</rt></ruby>べる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-019"
+    "id": "v14-019",
+    "example_en": "Look something up on a site."
   },
   {
     "term_ja": "ホームページ",
@@ -7841,7 +8026,8 @@
     "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-020"
+    "id": "v14-020",
+    "example_en": "Look at a homepage."
   },
   {
     "term_ja": "見る",
@@ -7853,7 +8039,8 @@
     "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-021"
+    "id": "v14-021",
+    "example_en": "Look at a homepage."
   },
   {
     "term_ja": "インターネット",
@@ -7865,7 +8052,8 @@
     "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-022"
+    "id": "v14-022",
+    "example_en": "Look something up on the internet."
   },
   {
     "term_ja": "調べる",
@@ -7877,7 +8065,8 @@
     "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-023"
+    "id": "v14-023",
+    "example_en": "Look something up on the internet."
   },
   {
     "term_ja": "サービス",
@@ -7889,7 +8078,8 @@
     "example_ruby": "オンラインサービスを<ruby>利用<rt>りよう</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-024"
+    "id": "v14-024",
+    "example_en": "Use an online service."
   },
   {
     "term_ja": "利用する",
@@ -7901,7 +8091,8 @@
     "example_ruby": "サービスを<ruby>利用<rt>りよう</rt></ruby>する",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-025"
+    "id": "v14-025",
+    "example_en": "Use a service."
   },
   {
     "term_ja": "文章",
@@ -7913,7 +8104,8 @@
     "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-026"
+    "id": "v14-026",
+    "example_en": "Put a text together."
   },
   {
     "term_ja": "まとめる",
@@ -7925,7 +8117,8 @@
     "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-027"
+    "id": "v14-027",
+    "example_en": "Put a text together."
   },
   {
     "term_ja": "基本",
@@ -7937,7 +8130,8 @@
     "example_ruby": "パソコンの<ruby>基本<rt>きほん</rt></ruby>",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-028"
+    "id": "v14-028",
+    "example_en": "The basics of using a computer."
   },
   {
     "term_ja": "マスターする",
@@ -7949,7 +8143,8 @@
     "example_ruby": "<ruby>基本<rt>きほん</rt></ruby>をマスターする",
     "chapter": 14,
     "section_id": 1,
-    "id": "v14-029"
+    "id": "v14-029",
+    "example_en": "Master the basics."
   },
   {
     "term_ja": "書類",
@@ -7961,7 +8156,8 @@
     "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-030"
+    "id": "v14-030",
+    "example_en": "Mail the documents."
   },
   {
     "term_ja": "郵送する",
@@ -7973,7 +8169,8 @@
     "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-031"
+    "id": "v14-031",
+    "example_en": "Mail the documents."
   },
   {
     "term_ja": "速達",
@@ -7985,7 +8182,8 @@
     "example_ruby": "<ruby>速達<rt>そくたつ</rt></ruby>で<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-032"
+    "id": "v14-032",
+    "example_en": "Send a letter by express mail."
   },
   {
     "term_ja": "配達する",
@@ -7997,7 +8195,8 @@
     "example_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>配達<rt>はいたつ</rt></ruby>する",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-033"
+    "id": "v14-033",
+    "example_en": "Deliver a letter."
   },
   {
     "term_ja": "郵便",
@@ -8009,7 +8208,8 @@
     "example_ruby": "<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-034"
+    "id": "v14-034",
+    "example_en": "A package arrives by mail."
   },
   {
     "term_ja": "届く",
@@ -8021,7 +8221,8 @@
     "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-035"
+    "id": "v14-035",
+    "example_en": "A package arrives."
   },
   {
     "term_ja": "つながる",
@@ -8033,7 +8234,8 @@
     "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>がつながる",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-036"
+    "id": "v14-036",
+    "example_en": "The phone call connects."
   },
   {
     "term_ja": "切れる",
@@ -8045,7 +8247,8 @@
     "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-037"
+    "id": "v14-037",
+    "example_en": "The phone call gets cut off."
   },
   {
     "term_ja": "しゃべる",
@@ -8057,7 +8260,8 @@
     "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>電話<rt>でんわ</rt></ruby>でしゃべる",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-038"
+    "id": "v14-038",
+    "example_en": "Chat with a friend on the phone."
   },
   {
     "term_ja": "連絡を取る",
@@ -8069,7 +8273,8 @@
     "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>と<ruby>連絡<rt>れんらく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-039"
+    "id": "v14-039",
+    "example_en": "Get in touch with a teacher."
   },
   {
     "term_ja": "携帯電話",
@@ -8081,7 +8286,8 @@
     "example_ruby": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-040"
+    "id": "v14-040",
+    "example_en": "Turn off a mobile phone."
   },
   {
     "term_ja": "電源",
@@ -8093,7 +8299,8 @@
     "example_ruby": "<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-041"
+    "id": "v14-041",
+    "example_en": "Turn off the power."
   },
   {
     "term_ja": "マナー",
@@ -8105,7 +8312,8 @@
     "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-042"
+    "id": "v14-042",
+    "example_en": "Observe good manners."
   },
   {
     "term_ja": "守る",
@@ -8117,7 +8325,8 @@
     "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-043"
+    "id": "v14-043",
+    "example_en": "Observe good manners."
   },
   {
     "term_ja": "メッセージ",
@@ -8129,7 +8338,8 @@
     "example_ruby": "メッセージを<ruby>送<rt>おく</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-044"
+    "id": "v14-044",
+    "example_en": "Send a message."
   },
   {
     "term_ja": "残す",
@@ -8141,7 +8351,8 @@
     "example_ruby": "メッセージを<ruby>残<rt>のこ</rt></ruby>す",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-045"
+    "id": "v14-045",
+    "example_en": "Leave a message."
   },
   {
     "term_ja": "再生する",
@@ -8153,7 +8364,8 @@
     "example_ruby": "メッセージを<ruby>再生<rt>さいせい</rt></ruby>する",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-046"
+    "id": "v14-046",
+    "example_en": "Play back a message."
   },
   {
     "term_ja": "ファックス",
@@ -8165,7 +8377,8 @@
     "example_ruby": "ファックスで<ruby>送<rt>おく</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-047"
+    "id": "v14-047",
+    "example_en": "Send by fax."
   },
   {
     "term_ja": "郵便番号",
@@ -8177,7 +8390,8 @@
     "example_ruby": "<ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-048"
+    "id": "v14-048",
+    "example_en": "Look up a postal code."
   },
   {
     "term_ja": "送料",
@@ -8189,7 +8403,8 @@
     "example_ruby": "<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-049"
+    "id": "v14-049",
+    "example_en": "Check the shipping fee."
   },
   {
     "term_ja": "宅配便",
@@ -8201,7 +8416,8 @@
     "example_ruby": "<ruby>宅配便<rt>たくはいびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-050"
+    "id": "v14-050",
+    "example_en": "Send a package by courier."
   },
   {
     "term_ja": "航空便",
@@ -8213,7 +8429,8 @@
     "example_ruby": "<ruby>航空便<rt>こうくうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-051"
+    "id": "v14-051",
+    "example_en": "Send by airmail."
   },
   {
     "term_ja": "船便",
@@ -8225,7 +8442,8 @@
     "example_ruby": "<ruby>船便<rt>ふなびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る",
     "chapter": 14,
     "section_id": 2,
-    "id": "v14-052"
+    "id": "v14-052",
+    "example_en": "Send by sea mail."
   },
   {
     "term_ja": "事件",
@@ -8237,7 +8455,8 @@
     "example_ruby": "<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-001"
+    "id": "v15-001",
+    "example_en": "An incident occurs."
   },
   {
     "term_ja": "恐ろしい",
@@ -8249,7 +8468,8 @@
     "example_ruby": "<ruby>恐<rt>おそ</rt></ruby>ろしい<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-002"
+    "id": "v15-002",
+    "example_en": "A terrible incident occurs."
   },
   {
     "term_ja": "重大な",
@@ -8261,7 +8481,8 @@
     "example_ruby": "<ruby>重大<rt>じゅうだい</rt></ruby>な<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-003"
+    "id": "v15-003",
+    "example_en": "A serious incident occurs."
   },
   {
     "term_ja": "トラブル",
@@ -8273,7 +8494,8 @@
     "example_ruby": "トラブルを<ruby>起<rt>お</rt></ruby>こす",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-004"
+    "id": "v15-004",
+    "example_en": "Cause trouble."
   },
   {
     "term_ja": "だます",
@@ -8285,7 +8507,8 @@
     "example_ruby": "<ruby>人<rt>ひと</rt></ruby>をだます",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-005"
+    "id": "v15-005",
+    "example_en": "Deceive people."
   },
   {
     "term_ja": "殴る",
@@ -8297,7 +8520,8 @@
     "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>殴<rt>なぐ</rt></ruby>る",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-006"
+    "id": "v15-006",
+    "example_en": "Hit a person."
   },
   {
     "term_ja": "撃つ",
@@ -8309,7 +8533,8 @@
     "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>撃<rt>う</rt></ruby>つ",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-007"
+    "id": "v15-007",
+    "example_en": "Shoot a person."
   },
   {
     "term_ja": "殺す",
@@ -8321,7 +8546,8 @@
     "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>す",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-008"
+    "id": "v15-008",
+    "example_en": "Kill a person."
   },
   {
     "term_ja": "受け取る",
@@ -8333,7 +8559,8 @@
     "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>る",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-009"
+    "id": "v15-009",
+    "example_en": "Receive money."
   },
   {
     "term_ja": "奪う",
@@ -8345,7 +8572,8 @@
     "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>奪<rt>うば</rt></ruby>う",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-010"
+    "id": "v15-010",
+    "example_en": "Seize money."
   },
   {
     "term_ja": "隠す",
@@ -8357,7 +8585,8 @@
     "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-011"
+    "id": "v15-011",
+    "example_en": "Hide money."
   },
   {
     "term_ja": "怪しい",
@@ -8369,7 +8598,8 @@
     "example_ruby": "<ruby>怪<rt>あや</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>がいる",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-012"
+    "id": "v15-012",
+    "example_en": "There is a suspicious man."
   },
   {
     "term_ja": "様子",
@@ -8381,7 +8611,8 @@
     "example_ruby": "<ruby>様子<rt>ようす</rt></ruby>がおかしい",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-013"
+    "id": "v15-013",
+    "example_en": "Something seems off."
   },
   {
     "term_ja": "被害",
@@ -8393,7 +8624,8 @@
     "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-014"
+    "id": "v15-014",
+    "example_en": "Suffer damage."
   },
   {
     "term_ja": "遭う",
@@ -8405,7 +8637,8 @@
     "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-015"
+    "id": "v15-015",
+    "example_en": "Suffer damage."
   },
   {
     "term_ja": "警察",
@@ -8417,7 +8650,8 @@
     "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-016"
+    "id": "v15-016",
+    "example_en": "The police arrest the criminal."
   },
   {
     "term_ja": "犯人",
@@ -8429,7 +8663,8 @@
     "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-017"
+    "id": "v15-017",
+    "example_en": "The police arrest the criminal."
   },
   {
     "term_ja": "逮捕する",
@@ -8441,7 +8676,8 @@
     "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-018"
+    "id": "v15-018",
+    "example_en": "The police arrest the criminal."
   },
   {
     "term_ja": "罪",
@@ -8453,7 +8689,8 @@
     "example_ruby": "<ruby>罪<rt>つみ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>める",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-019"
+    "id": "v15-019",
+    "example_en": "Admit guilt."
   },
   {
     "term_ja": "認める",
@@ -8465,7 +8702,8 @@
     "example_ruby": "<ruby>罪<rt>つみ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>める",
     "chapter": 15,
     "section_id": 1,
-    "id": "v15-020"
+    "id": "v15-020",
+    "example_en": "Admit guilt."
   },
   {
     "term_ja": "交通事故",
@@ -8477,7 +8715,8 @@
     "example_ruby": "<ruby>交通事故<rt>こうつうじこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-021"
+    "id": "v15-021",
+    "example_en": "A traffic accident happens."
   },
   {
     "term_ja": "起こる",
@@ -8489,7 +8728,8 @@
     "example_ruby": "<ruby>交通事故<rt>こうつうじこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-022"
+    "id": "v15-022",
+    "example_en": "A traffic accident happens."
   },
   {
     "term_ja": "ぶつかる",
@@ -8501,7 +8741,8 @@
     "example_ruby": "<ruby>車<rt>くるま</rt></ruby>とバイクがぶつかる",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-023"
+    "id": "v15-023",
+    "example_en": "A car and a motorcycle collide."
   },
   {
     "term_ja": "ひかれる",
@@ -8513,7 +8754,8 @@
     "example_ruby": "<ruby>車<rt>くるま</rt></ruby>にひかれる",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-024"
+    "id": "v15-024",
+    "example_en": "Be run over by a car."
   },
   {
     "term_ja": "原因",
@@ -8525,7 +8767,8 @@
     "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>する",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-025"
+    "id": "v15-025",
+    "example_en": "Investigate the cause of the accident."
   },
   {
     "term_ja": "調査する",
@@ -8537,7 +8780,8 @@
     "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>する",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-026"
+    "id": "v15-026",
+    "example_en": "Investigate the cause of the accident."
   },
   {
     "term_ja": "信号",
@@ -8549,7 +8793,8 @@
     "example_ruby": "<ruby>信号<rt>しんごう</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-027"
+    "id": "v15-027",
+    "example_en": "Ignore a traffic light."
   },
   {
     "term_ja": "無視する",
@@ -8561,7 +8806,8 @@
     "example_ruby": "<ruby>信号<rt>しんごう</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-028"
+    "id": "v15-028",
+    "example_en": "Ignore a traffic light."
   },
   {
     "term_ja": "歩道",
@@ -8573,7 +8819,8 @@
     "example_ruby": "<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-029"
+    "id": "v15-029",
+    "example_en": "Walk on the sidewalk."
   },
   {
     "term_ja": "道路",
@@ -8585,7 +8832,8 @@
     "example_ruby": "<ruby>道路<rt>どうろ</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-030"
+    "id": "v15-030",
+    "example_en": "Rush out into the road."
   },
   {
     "term_ja": "飛び出す",
@@ -8597,7 +8845,8 @@
     "example_ruby": "<ruby>道路<rt>どうろ</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-031"
+    "id": "v15-031",
+    "example_en": "Rush out into the road."
   },
   {
     "term_ja": "スピード",
@@ -8609,7 +8858,8 @@
     "example_ruby": "スピードを<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-032"
+    "id": "v15-032",
+    "example_en": "Pick up speed."
   },
   {
     "term_ja": "ブレーキ",
@@ -8621,7 +8871,8 @@
     "example_ruby": "ブレーキを<ruby>踏<rt>ふ</rt></ruby>む",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-033"
+    "id": "v15-033",
+    "example_en": "Step on the brakes."
   },
   {
     "term_ja": "踏む",
@@ -8633,7 +8884,8 @@
     "example_ruby": "ブレーキを<ruby>踏<rt>ふ</rt></ruby>む",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-034"
+    "id": "v15-034",
+    "example_en": "Step on the brakes."
   },
   {
     "term_ja": "転ぶ",
@@ -8645,7 +8897,8 @@
     "example_ruby": "<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>転<rt>ころ</rt></ruby>ぶ",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-035"
+    "id": "v15-035",
+    "example_en": "Fall off a bicycle."
   },
   {
     "term_ja": "骨",
@@ -8657,7 +8910,8 @@
     "example_ruby": "<ruby>足<rt>あし</rt></ruby>の<ruby>骨<rt>ほね</rt></ruby>を<ruby>折<rt>お</rt></ruby>る",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-036"
+    "id": "v15-036",
+    "example_en": "Break a bone in one's leg."
   },
   {
     "term_ja": "折る",
@@ -8669,7 +8923,8 @@
     "example_ruby": "<ruby>足<rt>あし</rt></ruby>の<ruby>骨<rt>ほね</rt></ruby>を<ruby>折<rt>お</rt></ruby>る",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-037"
+    "id": "v15-037",
+    "example_en": "Break a bone in one's leg."
   },
   {
     "term_ja": "骨折する",
@@ -8681,7 +8936,8 @@
     "example_ruby": "<ruby>足<rt>あし</rt></ruby>を<ruby>骨折<rt>こっせつ</rt></ruby>する",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-038"
+    "id": "v15-038",
+    "example_en": "Fracture one's leg."
   },
   {
     "term_ja": "気を付ける",
@@ -8693,7 +8949,8 @@
     "example_ruby": "<ruby>車<rt>くるま</rt></ruby>に<ruby>気<rt>き</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-039"
+    "id": "v15-039",
+    "example_en": "Watch out for cars."
   },
   {
     "term_ja": "防ぐ",
@@ -8705,7 +8962,8 @@
     "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐ",
     "chapter": 15,
     "section_id": 2,
-    "id": "v15-040"
+    "id": "v15-040",
+    "example_en": "Prevent an accident."
   },
   {
     "term_ja": "政治",
@@ -8716,7 +8974,8 @@
     "example_ruby": "<ruby>政治<rt>せいじ</rt></ruby>に<ruby>関心<rt>かんしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-001"
+    "id": "v16-001",
+    "example_en": "Take an interest in politics."
   },
   {
     "term_ja": "政府",
@@ -8727,7 +8986,8 @@
     "example_ruby": "<ruby>政府<rt>せいふ</rt></ruby>の<ruby>政策<rt>せいさく</rt></ruby>",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-002"
+    "id": "v16-002",
+    "example_en": "The government's policy."
   },
   {
     "term_ja": "首相",
@@ -8738,7 +8998,8 @@
     "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>首相<rt>しゅしょう</rt></ruby>",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-003"
+    "id": "v16-003",
+    "example_en": "The prime minister of Japan."
   },
   {
     "term_ja": "大統領",
@@ -8749,7 +9010,8 @@
     "example_ruby": "アメリカの<ruby>大統領<rt>だいとうりょう</rt></ruby>",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-004"
+    "id": "v16-004",
+    "example_en": "The president of the United States."
   },
   {
     "term_ja": "リーダー",
@@ -8760,7 +9022,8 @@
     "example_ruby": "チームのリーダー",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-005"
+    "id": "v16-005",
+    "example_en": "The team leader."
   },
   {
     "term_ja": "国民",
@@ -8771,7 +9034,8 @@
     "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-006"
+    "id": "v16-006",
+    "example_en": "The duties of citizens."
   },
   {
     "term_ja": "市民",
@@ -8782,7 +9046,8 @@
     "example_ruby": "<ruby>市民<rt>しみん</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-007"
+    "id": "v16-007",
+    "example_en": "Listen to the voices of the citizens."
   },
   {
     "term_ja": "平等",
@@ -8793,7 +9058,8 @@
     "example_ruby": "<ruby>平等<rt>びょうどう</rt></ruby>な<ruby>社会<rt>しゃかい</rt></ruby>",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-008"
+    "id": "v16-008",
+    "example_en": "An equal society."
   },
   {
     "term_ja": "不平等",
@@ -8804,7 +9070,8 @@
     "example_ruby": "<ruby>不平等<rt>ふびょうどう</rt></ruby>な<ruby>扱<rt>あつく</rt></ruby>い",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-009"
+    "id": "v16-009",
+    "example_en": "Unfair treatment."
   },
   {
     "term_ja": "権利",
@@ -8815,7 +9082,8 @@
     "example_ruby": "<ruby>投票<rt>とうひょう</rt></ruby>する<ruby>権利<rt>けんり</rt></ruby>",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-010"
+    "id": "v16-010",
+    "example_en": "The right to vote."
   },
   {
     "term_ja": "義務",
@@ -8826,7 +9094,8 @@
     "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-011"
+    "id": "v16-011",
+    "example_en": "Fulfill one's duties as a citizen."
   },
   {
     "term_ja": "責任",
@@ -8837,7 +9106,8 @@
     "example_ruby": "<ruby>責任<rt>せきにん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-012"
+    "id": "v16-012",
+    "example_en": "Take responsibility."
   },
   {
     "term_ja": "選挙",
@@ -8848,7 +9118,8 @@
     "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-013"
+    "id": "v16-013",
+    "example_en": "Go to vote in an election."
   },
   {
     "term_ja": "投票する",
@@ -8859,7 +9130,8 @@
     "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>で<ruby>投票<rt>とうひょう</rt></ruby>する",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-014"
+    "id": "v16-014",
+    "example_en": "Vote in an election."
   },
   {
     "term_ja": "実現する",
@@ -8870,7 +9142,8 @@
     "example_ruby": "<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>実現<rt>じつげん</rt></ruby>する",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-015"
+    "id": "v16-015",
+    "example_en": "Make a dream come true."
   },
   {
     "term_ja": "信頼する",
@@ -8881,7 +9154,8 @@
     "example_ruby": "<ruby>首相<rt>しゅしょう</rt></ruby>を<ruby>信頼<rt>しんらい</rt></ruby>する",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-016"
+    "id": "v16-016",
+    "example_en": "Trust the prime minister."
   },
   {
     "term_ja": "戦う",
@@ -8892,7 +9166,8 @@
     "example_ruby": "<ruby>敵<rt>てき</rt></ruby>と<ruby>戦<rt>たたか</rt></ruby>う",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-017"
+    "id": "v16-017",
+    "example_en": "Fight an enemy."
   },
   {
     "term_ja": "攻撃する",
@@ -8903,7 +9178,8 @@
     "example_ruby": "<ruby>相手<rt>あいて</rt></ruby>を<ruby>攻撃<rt>こうげき</rt></ruby>する",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-018"
+    "id": "v16-018",
+    "example_en": "Attack an opponent."
   },
   {
     "term_ja": "マスコミ",
@@ -8914,7 +9190,8 @@
     "example_ruby": "マスコミが<ruby>報道<rt>ほうどう</rt></ruby>する",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-019"
+    "id": "v16-019",
+    "example_en": "The media reports it."
   },
   {
     "term_ja": "デモ",
@@ -8925,7 +9202,8 @@
     "example_ruby": "デモに<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 16,
     "section_id": 1,
-    "id": "v16-020"
+    "id": "v16-020",
+    "example_en": "Take part in a demonstration."
   },
   {
     "term_ja": "経済",
@@ -8936,7 +9214,8 @@
     "example_ruby": "<ruby>経済<rt>けいざい</rt></ruby>が<ruby>成長<rt>せいちょう</rt></ruby>する",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-021"
+    "id": "v16-021",
+    "example_en": "The economy grows."
   },
   {
     "term_ja": "景気",
@@ -8947,7 +9226,8 @@
     "example_ruby": "<ruby>景気<rt>けいき</rt></ruby>がいい",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-022"
+    "id": "v16-022",
+    "example_en": "The economy is good."
   },
   {
     "term_ja": "不景気",
@@ -8958,7 +9238,8 @@
     "example_ruby": "<ruby>不景気<rt>ふけいき</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-023"
+    "id": "v16-023",
+    "example_en": "The recession continues."
   },
   {
     "term_ja": "物価",
@@ -8969,7 +9250,8 @@
     "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-024"
+    "id": "v16-024",
+    "example_en": "Prices rise."
   },
   {
     "term_ja": "安定する",
@@ -8980,7 +9262,8 @@
     "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>安定<rt>あんてい</rt></ruby>する",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-025"
+    "id": "v16-025",
+    "example_en": "Prices are stable."
   },
   {
     "term_ja": "定価",
@@ -8991,7 +9274,8 @@
     "example_ruby": "<ruby>定価<rt>ていか</rt></ruby>で<ruby>買<rt>か</rt></ruby>う",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-026"
+    "id": "v16-026",
+    "example_en": "Buy at the list price."
   },
   {
     "term_ja": "割引",
@@ -9002,7 +9286,8 @@
     "example_ruby": "<ruby>学生割引<rt>がくせいわりびき</rt></ruby>がある",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-027"
+    "id": "v16-027",
+    "example_en": "There is a student discount."
   },
   {
     "term_ja": "値下げする",
@@ -9013,7 +9298,8 @@
     "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>値下げ<rt>ねさげ</rt></ruby>する",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-028"
+    "id": "v16-028",
+    "example_en": "Lower the price of a product."
   },
   {
     "term_ja": "得する",
@@ -9024,7 +9310,8 @@
     "example_ruby": "<ruby>安<rt>やす</rt></ruby>く<ruby>買<rt>か</rt></ruby>えて<ruby>得<rt>とく</rt></ruby>した",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-029"
+    "id": "v16-029",
+    "example_en": "I came out ahead by buying it cheaply."
   },
   {
     "term_ja": "損する",
@@ -9035,7 +9322,8 @@
     "example_ruby": "<ruby>株<rt>かぶ</rt></ruby>で<ruby>損<rt>そん</rt></ruby>をする",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-030"
+    "id": "v16-030",
+    "example_en": "Lose money on stocks."
   },
   {
     "term_ja": "つぶれる",
@@ -9046,7 +9334,8 @@
     "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>がつぶれる",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-031"
+    "id": "v16-031",
+    "example_en": "A company goes bankrupt."
   },
   {
     "term_ja": "税金",
@@ -9057,7 +9346,8 @@
     "example_ruby": "<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-032"
+    "id": "v16-032",
+    "example_en": "Pay taxes."
   },
   {
     "term_ja": "料金",
@@ -9068,7 +9358,8 @@
     "example_ruby": "<ruby>電気料金<rt>でんきりょうきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-033"
+    "id": "v16-033",
+    "example_en": "Pay the electricity bill."
   },
   {
     "term_ja": "無料",
@@ -9079,7 +9370,8 @@
     "example_ruby": "<ruby>入場料<rt>にゅうじょうりょう</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>だ",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-034"
+    "id": "v16-034",
+    "example_en": "Admission is free."
   },
   {
     "term_ja": "節約する",
@@ -9090,7 +9382,8 @@
     "example_ruby": "<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>する",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-035"
+    "id": "v16-035",
+    "example_en": "Save on living expenses."
   },
   {
     "term_ja": "貧しい",
@@ -9101,7 +9394,8 @@
     "example_ruby": "<ruby>貧<rt>まず</rt></ruby>しい<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-036"
+    "id": "v16-036",
+    "example_en": "Live in poverty."
   },
   {
     "term_ja": "借金する",
@@ -9112,7 +9406,8 @@
     "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>から<ruby>借金<rt>しゃっきん</rt></ruby>する",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-037"
+    "id": "v16-037",
+    "example_en": "Borrow money from a bank."
   },
   {
     "term_ja": "預ける",
@@ -9123,7 +9418,8 @@
     "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-038"
+    "id": "v16-038",
+    "example_en": "Deposit money in a bank."
   },
   {
     "term_ja": "預かる",
@@ -9134,7 +9430,8 @@
     "example_ruby": "<ruby>手荷物<rt>てにもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>かる",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-039"
+    "id": "v16-039",
+    "example_en": "Look after carry-on luggage."
   },
   {
     "term_ja": "貯金する",
@@ -9145,7 +9442,8 @@
     "example_ruby": "<ruby>毎月<rt>まいつき</rt></ruby><ruby>貯金<rt>ちょきん</rt></ruby>する",
     "chapter": 16,
     "section_id": 2,
-    "id": "v16-040"
+    "id": "v16-040",
+    "example_en": "Save money every month."
   },
   {
     "term_ja": "行事",
@@ -9156,7 +9454,8 @@
     "example_ruby": "<ruby>年中行事<rt>ねんじゅうぎょうじ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-001"
+    "id": "v17-001",
+    "example_en": "Take part in an annual event."
   },
   {
     "term_ja": "イベント",
@@ -9167,7 +9466,8 @@
     "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-002"
+    "id": "v17-002",
+    "example_en": "Take part in an event."
   },
   {
     "term_ja": "参加する",
@@ -9178,7 +9478,8 @@
     "example_ruby": "<ruby>祭<rt>まつ</rt></ruby>りに<ruby>参加<rt>さんか</rt></ruby>する",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-003"
+    "id": "v17-003",
+    "example_en": "Take part in a festival."
   },
   {
     "term_ja": "誕生する",
@@ -9189,7 +9490,8 @@
     "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>命<rt>いのち</rt></ruby>が<ruby>誕生<rt>たんじょう</rt></ruby>する",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-004"
+    "id": "v17-004",
+    "example_en": "A new life is born."
   },
   {
     "term_ja": "誕生会",
@@ -9200,7 +9502,8 @@
     "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>誕生会<rt>たんじょうかい</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>く",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-005"
+    "id": "v17-005",
+    "example_en": "Hold a birthday party for a friend."
   },
   {
     "term_ja": "成人式",
@@ -9211,7 +9514,8 @@
     "example_ruby": "<ruby>成人式<rt>せいじんしき</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>する",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-006"
+    "id": "v17-006",
+    "example_en": "Attend a Coming-of-Age ceremony."
   },
   {
     "term_ja": "式",
@@ -9222,7 +9526,8 @@
     "example_ruby": "<ruby>式<rt>しき</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-007"
+    "id": "v17-007",
+    "example_en": "Hold a ceremony."
   },
   {
     "term_ja": "祝う",
@@ -9233,7 +9538,8 @@
     "example_ruby": "<ruby>卒業<rt>そつぎょう</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-008"
+    "id": "v17-008",
+    "example_en": "Celebrate a graduation."
   },
   {
     "term_ja": "お祝い",
@@ -9244,7 +9550,8 @@
     "example_ruby": "<ruby>結婚<rt>けっこん</rt></ruby>のお<ruby>祝<rt>いわ</rt></ruby>いを<ruby>贈<rt>おく</rt></ruby>る",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-009"
+    "id": "v17-009",
+    "example_en": "Give a wedding gift."
   },
   {
     "term_ja": "記念する",
@@ -9255,7 +9562,8 @@
     "example_ruby": "<ruby>創立記念日<rt>そうりつきねんび</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-010"
+    "id": "v17-010",
+    "example_en": "Celebrate the founding anniversary."
   },
   {
     "term_ja": "記念品",
@@ -9266,7 +9574,8 @@
     "example_ruby": "<ruby>記念品<rt>きねんひん</rt></ruby>をもらう",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-011"
+    "id": "v17-011",
+    "example_en": "Receive a commemorative gift."
   },
   {
     "term_ja": "贈る",
@@ -9277,7 +9586,8 @@
     "example_ruby": "<ruby>花束<rt>はなたば</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>る",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-012"
+    "id": "v17-012",
+    "example_en": "Give a bouquet of flowers."
   },
   {
     "term_ja": "拍手する",
@@ -9288,7 +9598,8 @@
     "example_ruby": "<ruby>大<rt>おお</rt></ruby>きな<ruby>拍手<rt>はくしゅ</rt></ruby>をする",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-013"
+    "id": "v17-013",
+    "example_en": "Give a big round of applause."
   },
   {
     "term_ja": "過ごす",
@@ -9299,7 +9610,8 @@
     "example_ruby": "<ruby>楽<rt>たの</rt></ruby>しい<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごす",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-014"
+    "id": "v17-014",
+    "example_en": "Spend an enjoyable time."
   },
   {
     "term_ja": "伝統",
@@ -9310,7 +9622,8 @@
     "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>伝統<rt>でんとう</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-015"
+    "id": "v17-015",
+    "example_en": "Preserve Japanese traditions."
   },
   {
     "term_ja": "伝統的な",
@@ -9321,7 +9634,8 @@
     "example_ruby": "<ruby>伝統的<rt>でんとうてき</rt></ruby>な<ruby>祭<rt>まつ</rt></ruby>り",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-016"
+    "id": "v17-016",
+    "example_en": "A traditional festival."
   },
   {
     "term_ja": "伝える",
@@ -9332,7 +9646,8 @@
     "example_ruby": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>世代<rt>せだい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>える",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-017"
+    "id": "v17-017",
+    "example_en": "Pass it on to the next generation."
   },
   {
     "term_ja": "シーズン",
@@ -9343,7 +9658,8 @@
     "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>のシーズン",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-018"
+    "id": "v17-018",
+    "example_en": "The travel season."
   },
   {
     "term_ja": "世紀",
@@ -9354,7 +9670,8 @@
     "example_ruby": "21<ruby>世紀<rt>せいき</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>",
     "chapter": 17,
     "section_id": 1,
-    "id": "v17-019"
+    "id": "v17-019",
+    "example_en": "Society in the 21st century."
   },
   {
     "term_ja": "宗教",
@@ -9365,7 +9682,8 @@
     "example_ruby": "<ruby>宗教<rt>しゅうきょう</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-020"
+    "id": "v17-020",
+    "example_en": "Believe in a religion."
   },
   {
     "term_ja": "仏教",
@@ -9376,7 +9694,8 @@
     "example_ruby": "<ruby>仏教<rt>ぶっきょう</rt></ruby>の<ruby>教<rt>おし</rt></ruby>え",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-021"
+    "id": "v17-021",
+    "example_en": "The teachings of Buddhism."
   },
   {
     "term_ja": "キリスト教",
@@ -9387,7 +9706,8 @@
     "example_ruby": "キリスト<ruby>教<rt>きょう</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-022"
+    "id": "v17-022",
+    "example_en": "A Christian church."
   },
   {
     "term_ja": "イスラム教",
@@ -9398,7 +9718,8 @@
     "example_ruby": "イスラム<ruby>教<rt>きょう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby>",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-023"
+    "id": "v17-023",
+    "example_en": "An Islamic temple (mosque)."
   },
   {
     "term_ja": "神",
@@ -9409,7 +9730,8 @@
     "example_ruby": "<ruby>神<rt>かみ</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-024"
+    "id": "v17-024",
+    "example_en": "Believe in God."
   },
   {
     "term_ja": "神社",
@@ -9420,7 +9742,8 @@
     "example_ruby": "<ruby>神社<rt>じんじゃ</rt></ruby>にお<ruby>参<rt>まい</rt></ruby>りする",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-025"
+    "id": "v17-025",
+    "example_en": "Pay a visit to a shrine."
   },
   {
     "term_ja": "寺",
@@ -9431,7 +9754,8 @@
     "example_ruby": "<ruby>古<rt>ふる</rt></ruby>い<ruby>寺<rt>てら</rt></ruby>を<ruby>訪<rt>たず</rt></ruby>ねる",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-026"
+    "id": "v17-026",
+    "example_en": "Visit an old temple."
   },
   {
     "term_ja": "祈る",
@@ -9442,7 +9766,8 @@
     "example_ruby": "<ruby>平和<rt>へいわ</rt></ruby>を<ruby>祈<rt>いの</rt></ruby>る",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-027"
+    "id": "v17-027",
+    "example_en": "Pray for peace."
   },
   {
     "term_ja": "お祈り",
@@ -9453,7 +9778,8 @@
     "example_ruby": "<ruby>毎日<rt>まいにち</rt></ruby>お<ruby>祈<rt>いの</rt></ruby>りをする",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-028"
+    "id": "v17-028",
+    "example_en": "Say prayers every day."
   },
   {
     "term_ja": "願う",
@@ -9464,7 +9790,8 @@
     "example_ruby": "<ruby>健康<rt>けんこう</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-029"
+    "id": "v17-029",
+    "example_en": "Wish for good health."
   },
   {
     "term_ja": "願い",
@@ -9475,7 +9802,8 @@
     "example_ruby": "<ruby>願<rt>ねが</rt></ruby>いがかなう",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-030"
+    "id": "v17-030",
+    "example_en": "One's wish comes true."
   },
   {
     "term_ja": "手を合わせる",
@@ -9486,7 +9814,8 @@
     "example_ruby": "<ruby>仏壇<rt>ぶつだん</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-031"
+    "id": "v17-031",
+    "example_en": "Put one's hands together in front of the household altar."
   },
   {
     "term_ja": "墓",
@@ -9497,7 +9826,8 @@
     "example_ruby": "<ruby>墓参<rt>はかまい</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-032"
+    "id": "v17-032",
+    "example_en": "Go to visit a grave."
   },
   {
     "term_ja": "幸せ",
@@ -9508,7 +9838,8 @@
     "example_ruby": "<ruby>幸<rt>しあわ</rt></ruby>せに<ruby>暮<rt>く</rt></ruby>らす",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-033"
+    "id": "v17-033",
+    "example_en": "Live happily."
   },
   {
     "term_ja": "幸福",
@@ -9519,7 +9850,8 @@
     "example_ruby": "<ruby>幸福<rt>こうふく</rt></ruby>な<ruby>家庭<rt>かてい</rt></ruby>を<ruby>築<rt>きず</rt></ruby>く",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-034"
+    "id": "v17-034",
+    "example_en": "Build a happy family."
   },
   {
     "term_ja": "平和",
@@ -9530,7 +9862,8 @@
     "example_ruby": "<ruby>世界平和<rt>せかいへいわ</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-035"
+    "id": "v17-035",
+    "example_en": "Wish for world peace."
   },
   {
     "term_ja": "信じる",
@@ -9541,7 +9874,8 @@
     "example_ruby": "<ruby>神<rt>かみ</rt></ruby>の<ruby>存在<rt>そんざい</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-036"
+    "id": "v17-036",
+    "example_en": "Believe in the existence of God."
   },
   {
     "term_ja": "運",
@@ -9552,7 +9886,8 @@
     "example_ruby": "<ruby>運<rt>うん</rt></ruby>がいい",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-037"
+    "id": "v17-037",
+    "example_en": "I'm lucky."
   },
   {
     "term_ja": "占い",
@@ -9563,7 +9898,8 @@
     "example_ruby": "<ruby>星占<rt>ほしうらな</rt></ruby>いで<ruby>運勢<rt>うんせい</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-038"
+    "id": "v17-038",
+    "example_en": "Check one's fortune with a horoscope."
   },
   {
     "term_ja": "占う",
@@ -9574,7 +9910,8 @@
     "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>を<ruby>占<rt>うらな</rt></ruby>う",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-039"
+    "id": "v17-039",
+    "example_en": "Tell fortunes about the future."
   },
   {
     "term_ja": "当たる",
@@ -9585,7 +9922,8 @@
     "example_ruby": "<ruby>占<rt>うらな</rt></ruby>いが<ruby>当<rt>あ</rt></ruby>たる",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-040"
+    "id": "v17-040",
+    "example_en": "The fortune-telling comes true."
   },
   {
     "term_ja": "未来",
@@ -9596,7 +9934,8 @@
     "example_ruby": "<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-041"
+    "id": "v17-041",
+    "example_en": "A bright future."
   },
   {
     "term_ja": "過去",
@@ -9607,7 +9946,8 @@
     "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る",
     "chapter": 17,
     "section_id": 2,
-    "id": "v17-042"
+    "id": "v17-042",
+    "example_en": "Look back on the past."
   },
   {
     "term_ja": "四季",
@@ -9618,7 +9958,8 @@
     "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>四季<rt>しき</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむ",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-001"
+    "id": "v18-001",
+    "example_en": "Enjoy Japan's four seasons."
   },
   {
     "term_ja": "爽やかな",
@@ -9629,7 +9970,8 @@
     "example_ruby": "<ruby>爽<rt>さわ</rt></ruby>やかな<ruby>風<rt>かぜ</rt></ruby>が<ruby>吹<rt>ふ</rt></ruby>く",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-002"
+    "id": "v18-002",
+    "example_en": "A refreshing breeze blows."
   },
   {
     "term_ja": "蒸し暑い",
@@ -9640,7 +9982,8 @@
     "example_ruby": "<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>い<ruby>夜<rt>よる</rt></ruby>",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-003"
+    "id": "v18-003",
+    "example_en": "A humid night."
   },
   {
     "term_ja": "梅雨",
@@ -9651,7 +9994,8 @@
     "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-004"
+    "id": "v18-004",
+    "example_en": "The rainy season begins."
   },
   {
     "term_ja": "明ける",
@@ -9662,7 +10006,8 @@
     "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>が<ruby>明<rt>あ</rt></ruby>ける",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-005"
+    "id": "v18-005",
+    "example_en": "The rainy season ends."
   },
   {
     "term_ja": "太陽",
@@ -9673,7 +10018,8 @@
     "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-006"
+    "id": "v18-006",
+    "example_en": "The sun rises."
   },
   {
     "term_ja": "日",
@@ -9684,7 +10030,8 @@
     "example_ruby": "<ruby>日<rt>ひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>む",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-007"
+    "id": "v18-007",
+    "example_en": "The sun sets."
   },
   {
     "term_ja": "沈む",
@@ -9695,7 +10042,8 @@
     "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>む",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-008"
+    "id": "v18-008",
+    "example_en": "The sun sinks into the sea."
   },
   {
     "term_ja": "まぶしい",
@@ -9706,7 +10054,8 @@
     "example_ruby": "<ruby>日差<rt>ひざ</rt></ruby>しがまぶしい",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-009"
+    "id": "v18-009",
+    "example_en": "The sunlight is dazzling."
   },
   {
     "term_ja": "激しい",
@@ -9717,7 +10066,8 @@
     "example_ruby": "<ruby>激<rt>はげ</rt></ruby>しい<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-010"
+    "id": "v18-010",
+    "example_en": "Heavy rain falls."
   },
   {
     "term_ja": "豪雨",
@@ -9728,7 +10078,8 @@
     "example_ruby": "<ruby>集中豪雨<rt>しゅうちゅうごうう</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-011"
+    "id": "v18-011",
+    "example_en": "Get caught in a localized torrential downpour."
   },
   {
     "term_ja": "雷",
@@ -9739,7 +10090,8 @@
     "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-012"
+    "id": "v18-012",
+    "example_en": "Thunder rumbles."
   },
   {
     "term_ja": "鳴る",
@@ -9750,7 +10102,8 @@
     "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>がゴロゴロ<ruby>鳴<rt>な</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-013"
+    "id": "v18-013",
+    "example_en": "Thunder rumbles."
   },
   {
     "term_ja": "虹",
@@ -9761,7 +10114,8 @@
     "example_ruby": "<ruby>雨上<rt>あめあ</rt></ruby>がりに<ruby>虹<rt>にじ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-014"
+    "id": "v18-014",
+    "example_en": "A rainbow appears after the rain."
   },
   {
     "term_ja": "乾燥する",
@@ -9772,7 +10126,8 @@
     "example_ruby": "<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>空気<rt>くうき</rt></ruby>が<ruby>乾燥<rt>かんそう</rt></ruby>する",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-015"
+    "id": "v18-015",
+    "example_en": "The air gets dry in winter."
   },
   {
     "term_ja": "湿度",
@@ -9783,7 +10138,8 @@
     "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-016"
+    "id": "v18-016",
+    "example_en": "The humidity is high."
   },
   {
     "term_ja": "パーセント",
@@ -9794,7 +10150,8 @@
     "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>は60パーセントだ",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-017"
+    "id": "v18-017",
+    "example_en": "The humidity is 60 percent."
   },
   {
     "term_ja": "気温",
@@ -9805,7 +10162,8 @@
     "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>を<ruby>記録<rt>きろく</rt></ruby>する",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-018"
+    "id": "v18-018",
+    "example_en": "Record the highest temperature."
   },
   {
     "term_ja": "超える",
@@ -9816,7 +10174,8 @@
     "example_ruby": "30<ruby>度<rt>ど</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-019"
+    "id": "v18-019",
+    "example_en": "Exceed 30 degrees."
   },
   {
     "term_ja": "予報",
@@ -9827,7 +10186,8 @@
     "example_ruby": "<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-020"
+    "id": "v18-020",
+    "example_en": "Check the weather forecast."
   },
   {
     "term_ja": "確率",
@@ -9838,7 +10198,8 @@
     "example_ruby": "<ruby>降水確率<rt>こうすいかくりつ</rt></ruby>が80％だ",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-021"
+    "id": "v18-021",
+    "example_en": "The chance of rain is 80 percent."
   },
   {
     "term_ja": "近付く",
@@ -9849,7 +10210,8 @@
     "example_ruby": "<ruby>大型<rt>おおがた</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近付<rt>ちかづ</rt></ruby>く",
     "chapter": 18,
     "section_id": 1,
-    "id": "v18-022"
+    "id": "v18-022",
+    "example_en": "A large typhoon approaches."
   },
   {
     "term_ja": "大陸",
@@ -9860,7 +10222,8 @@
     "example_ruby": "ユーラシア<ruby>大陸<rt>たいりく</rt></ruby>",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-023"
+    "id": "v18-023",
+    "example_en": "The Eurasian continent."
   },
   {
     "term_ja": "島",
@@ -9871,7 +10234,8 @@
     "example_ruby": "<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>に<ruby>住<rt>す</rt></ruby>む",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-024"
+    "id": "v18-024",
+    "example_en": "Live on a small island."
   },
   {
     "term_ja": "火山",
@@ -9882,7 +10246,8 @@
     "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>噴火<rt>ふんか</rt></ruby>する",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-025"
+    "id": "v18-025",
+    "example_en": "A volcano erupts."
   },
   {
     "term_ja": "爆発する",
@@ -9893,7 +10258,8 @@
     "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>爆発<rt>ばくはつ</rt></ruby>する",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-026"
+    "id": "v18-026",
+    "example_en": "A volcano erupts."
   },
   {
     "term_ja": "砂漠",
@@ -9904,7 +10270,8 @@
     "example_ruby": "<ruby>砂漠<rt>さばく</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-027"
+    "id": "v18-027",
+    "example_en": "The desert stretches out."
   },
   {
     "term_ja": "湖",
@@ -9915,7 +10282,8 @@
     "example_ruby": "<ruby>湖<rt>みずうみ</rt></ruby>のほとりを<ruby>歩<rt>ある</rt></ruby>く",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-028"
+    "id": "v18-028",
+    "example_en": "Walk along the lakeshore."
   },
   {
     "term_ja": "あふれる",
@@ -9926,7 +10294,8 @@
     "example_ruby": "<ruby>川<rt>かわ</rt></ruby>の<ruby>水<rt>みず</rt></ruby>があふれる",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-029"
+    "id": "v18-029",
+    "example_en": "The river water overflows."
   },
   {
     "term_ja": "浮かぶ",
@@ -9937,7 +10306,8 @@
     "example_ruby": "ボートが<ruby>水<rt>みず</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-030"
+    "id": "v18-030",
+    "example_en": "A boat floats on the water."
   },
   {
     "term_ja": "地域",
@@ -9948,7 +10318,8 @@
     "example_ruby": "<ruby>地域<rt>ちいき</rt></ruby>のイベント",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-031"
+    "id": "v18-031",
+    "example_en": "A local community event."
   },
   {
     "term_ja": "地方",
@@ -9959,7 +10330,8 @@
     "example_ruby": "<ruby>地方都市<rt>ちほうとし</rt></ruby>に<ruby>住<rt>す</rt></ruby>む",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-032"
+    "id": "v18-032",
+    "example_en": "Live in a regional city."
   },
   {
     "term_ja": "都会",
@@ -9970,7 +10342,8 @@
     "example_ruby": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-033"
+    "id": "v18-033",
+    "example_en": "City life."
   },
   {
     "term_ja": "田舎",
@@ -9981,7 +10354,8 @@
     "example_ruby": "<ruby>田舎<rt>いなか</rt></ruby>でのんびり<ruby>暮<rt>く</rt></ruby>らす",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-034"
+    "id": "v18-034",
+    "example_en": "Live a relaxed life in the countryside."
   },
   {
     "term_ja": "故郷",
@@ -9992,7 +10366,8 @@
     "example_ruby": "<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>懐<rt>なつ</rt></ruby>かしく<ruby>思<rt>おも</rt></ruby>う",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-035"
+    "id": "v18-035",
+    "example_en": "Think fondly of one's hometown."
   },
   {
     "term_ja": "ふるさと",
@@ -10003,7 +10378,8 @@
     "example_ruby": "ふるさとの<ruby>料理<rt>りょうり</rt></ruby>",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-036"
+    "id": "v18-036",
+    "example_en": "Food from one's hometown."
   },
   {
     "term_ja": "懐かしい",
@@ -10014,7 +10390,8 @@
     "example_ruby": "<ruby>懐<rt>なつ</rt></ruby>かしい<ruby>音楽<rt>おんがく</rt></ruby>",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-037"
+    "id": "v18-037",
+    "example_en": "Nostalgic music."
   },
   {
     "term_ja": "離れる",
@@ -10025,7 +10402,8 @@
     "example_ruby": "<ruby>生<rt>う</rt></ruby>まれ<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れる",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-038"
+    "id": "v18-038",
+    "example_en": "Leave one's hometown."
   },
   {
     "term_ja": "広がる",
@@ -10036,7 +10414,8 @@
     "example_ruby": "<ruby>草原<rt>そうげん</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-039"
+    "id": "v18-039",
+    "example_en": "A meadow stretches out."
   },
   {
     "term_ja": "眺める",
@@ -10047,7 +10426,8 @@
     "example_ruby": "<ruby>山頂<rt>さんちょう</rt></ruby>から<ruby>町<rt>まち</rt></ruby>を<ruby>眺<rt>なが</rt></ruby>める",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-040"
+    "id": "v18-040",
+    "example_en": "Look out over the town from the summit."
   },
   {
     "term_ja": "眺め",
@@ -10058,7 +10438,8 @@
     "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>からの<ruby>眺<rt>なが</rt></ruby>めがいい",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-041"
+    "id": "v18-041",
+    "example_en": "The view from the room is good."
   },
   {
     "term_ja": "農業",
@@ -10069,7 +10450,8 @@
     "example_ruby": "<ruby>農業<rt>のうぎょう</rt></ruby>に<ruby>従事<rt>じゅうじ</rt></ruby>する",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-042"
+    "id": "v18-042",
+    "example_en": "Work in agriculture."
   },
   {
     "term_ja": "漁業",
@@ -10080,7 +10462,8 @@
     "example_ruby": "<ruby>漁業<rt>ぎょぎょう</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えた<ruby>町<rt>まち</rt></ruby>",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-043"
+    "id": "v18-043",
+    "example_en": "A town that prospered through fishing."
   },
   {
     "term_ja": "盛んな",
@@ -10091,7 +10474,8 @@
     "example_ruby": "<ruby>観光<rt>かんこう</rt></ruby>が<ruby>盛<rt>さかん</rt></ruby>だ",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-044"
+    "id": "v18-044",
+    "example_en": "Tourism is thriving."
   },
   {
     "term_ja": "止む",
@@ -10102,7 +10486,8 @@
     "example_ruby": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>止<rt>や</rt></ruby>むのを<ruby>待<rt>ま</rt></ruby>つ",
     "chapter": 18,
     "section_id": 2,
-    "id": "v18-045"
+    "id": "v18-045",
+    "example_en": "Wait for the rain to stop."
   },
   {
     "term_ja": "植物",
@@ -10113,7 +10498,8 @@
     "example_ruby": "<ruby>植物<rt>しょくぶつ</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-001"
+    "id": "v19-001",
+    "example_en": "Grow plants."
   },
   {
     "term_ja": "植える",
@@ -10124,7 +10510,8 @@
     "example_ruby": "<ruby>庭<rt>にわ</rt></ruby>に<ruby>花<rt>はな</rt></ruby>の<ruby>種<rt>たね</rt></ruby>を<ruby>植<rt>う</rt></ruby>える",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-002"
+    "id": "v19-002",
+    "example_en": "Plant flower seeds in the garden."
   },
   {
     "term_ja": "育てる",
@@ -10135,7 +10522,8 @@
     "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-003"
+    "id": "v19-003",
+    "example_en": "Grow vegetables."
   },
   {
     "term_ja": "育つ",
@@ -10146,7 +10534,8 @@
     "example_ruby": "<ruby>元気<rt>げんき</rt></ruby>に<ruby>育<rt>そだ</rt></ruby>つ",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-004"
+    "id": "v19-004",
+    "example_en": "Grow up healthy."
   },
   {
     "term_ja": "芽",
@@ -10157,7 +10546,8 @@
     "example_ruby": "<ruby>春<rt>はる</rt></ruby>になって<ruby>芽<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>る",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-005"
+    "id": "v19-005",
+    "example_en": "Sprouts come out in spring."
   },
   {
     "term_ja": "伸びる",
@@ -10168,7 +10558,8 @@
     "example_ruby": "<ruby>茎<rt>くき</rt></ruby>がぐんぐん<ruby>伸<rt>の</rt></ruby>びる",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-006"
+    "id": "v19-006",
+    "example_en": "The stems grow quickly."
   },
   {
     "term_ja": "枯れる",
@@ -10179,7 +10570,8 @@
     "example_ruby": "<ruby>水<rt>みず</rt></ruby>が<ruby>足<rt>た</rt></ruby>りなくて<ruby>花<rt>はな</rt></ruby>が<ruby>枯<rt>か</rt></ruby>れる",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-007"
+    "id": "v19-007",
+    "example_en": "The flowers wither from lack of water."
   },
   {
     "term_ja": "散る",
@@ -10190,7 +10582,8 @@
     "example_ruby": "<ruby>桜<rt>さくら</rt></ruby>の<ruby>花<rt>はな</rt></ruby>が<ruby>散<rt>ち</rt></ruby>る",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-008"
+    "id": "v19-008",
+    "example_en": "The cherry blossoms scatter."
   },
   {
     "term_ja": "果実",
@@ -10201,7 +10594,8 @@
     "example_ruby": "<ruby>豊<rt>ゆた</rt></ruby>かな<ruby>果実<rt>かじつ</rt></ruby>が<ruby>実<rt>みの</rt></ruby>る",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-009"
+    "id": "v19-009",
+    "example_en": "Rich fruit ripens."
   },
   {
     "term_ja": "採る",
@@ -10212,7 +10606,8 @@
     "example_ruby": "<ruby>果実<rt>かじつ</rt></ruby>を<ruby>採<rt>と</rt></ruby>る",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-010"
+    "id": "v19-010",
+    "example_en": "Pick the fruit."
   },
   {
     "term_ja": "新鮮な",
@@ -10223,7 +10618,8 @@
     "example_ruby": "<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>野菜<rt>やさい</rt></ruby>と<ruby>果物<rt>くだもの</rt></ruby>",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-011"
+    "id": "v19-011",
+    "example_en": "Fresh vegetables and fruit."
   },
   {
     "term_ja": "種類",
@@ -10234,7 +10630,8 @@
     "example_ruby": "<ruby>多<rt>おお</rt></ruby>くの<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>植物<rt>しょくぶつ</rt></ruby>",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-012"
+    "id": "v19-012",
+    "example_en": "Many kinds of plants."
   },
   {
     "term_ja": "豊富な",
@@ -10245,7 +10642,8 @@
     "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>が<ruby>豊富<rt>ほうふ</rt></ruby>な<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-013"
+    "id": "v19-013",
+    "example_en": "Food rich in nutrition."
   },
   {
     "term_ja": "栄養",
@@ -10256,7 +10654,8 @@
     "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>をつける",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-014"
+    "id": "v19-014",
+    "example_en": "Build up one's strength with nutrition."
   },
   {
     "term_ja": "自然",
@@ -10267,7 +10666,8 @@
     "example_ruby": "<ruby>大自然<rt>だいしぜん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-015"
+    "id": "v19-015",
+    "example_en": "Live in the midst of nature."
   },
   {
     "term_ja": "太陽が当たる",
@@ -10278,7 +10678,8 @@
     "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがよく<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-016"
+    "id": "v19-016",
+    "example_en": "It gets plenty of sunlight."
   },
   {
     "term_ja": "日当たり",
@@ -10289,7 +10690,8 @@
     "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがいい<ruby>部屋<rt>へや</rt></ruby>",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-017"
+    "id": "v19-017",
+    "example_en": "A room with good sunlight."
   },
   {
     "term_ja": "種",
@@ -10300,7 +10702,8 @@
     "example_ruby": "アサガオの<ruby>種<rt>たね</rt></ruby>をまく",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-018"
+    "id": "v19-018",
+    "example_en": "Sow morning glory seeds."
   },
   {
     "term_ja": "根",
@@ -10311,7 +10714,8 @@
     "example_ruby": "しっかりと<ruby>根<rt>ね</rt></ruby>を<ruby>張<rt>は</rt></ruby>る",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-019"
+    "id": "v19-019",
+    "example_en": "Take firm root."
   },
   {
     "term_ja": "葉",
@@ -10322,7 +10726,8 @@
     "example_ruby": "<ruby>青<rt>あお</rt></ruby>い<ruby>葉<rt>は</rt></ruby>が<ruby>茂<rt>しげ</rt></ruby>る",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-020"
+    "id": "v19-020",
+    "example_en": "Green leaves grow thick."
   },
   {
     "term_ja": "幹",
@@ -10333,7 +10738,8 @@
     "example_ruby": "<ruby>大木<rt>たいぼく</rt></ruby>の<ruby>太<rt>ふと</rt></ruby>い<ruby>幹<rt>みき</rt></ruby>",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-021"
+    "id": "v19-021",
+    "example_en": "The thick trunk of a big tree."
   },
   {
     "term_ja": "枝",
@@ -10344,7 +10750,8 @@
     "example_ruby": "<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby>が<ruby>伸<rt>の</rt></ruby>びる",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-022"
+    "id": "v19-022",
+    "example_en": "The tree's branches grow."
   },
   {
     "term_ja": "花",
@@ -10355,7 +10762,8 @@
     "example_ruby": "きれいな<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>く",
     "chapter": 19,
     "section_id": 1,
-    "id": "v19-023"
+    "id": "v19-023",
+    "example_en": "Pretty flowers bloom."
   },
   {
     "term_ja": "生き物",
@@ -10366,7 +10774,8 @@
     "example_ruby": "<ruby>海<rt>うみ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-024"
+    "id": "v19-024",
+    "example_en": "Creatures in the sea."
   },
   {
     "term_ja": "猿",
@@ -10377,7 +10786,8 @@
     "example_ruby": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>猿<rt>さる</rt></ruby>",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-025"
+    "id": "v19-025",
+    "example_en": "A monkey bathing in a hot spring."
   },
   {
     "term_ja": "熊",
@@ -10388,7 +10798,8 @@
     "example_ruby": "<ruby>山<rt>やま</rt></ruby>で<ruby>熊<rt>くま</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-026"
+    "id": "v19-026",
+    "example_en": "Watch out for bears in the mountains."
   },
   {
     "term_ja": "牛",
@@ -10399,7 +10810,8 @@
     "example_ruby": "<ruby>牧場<rt>ぼくじょう</rt></ruby>で<ruby>牛<rt>うし</rt></ruby>を<ruby>飼<rt>か</rt></ruby>う",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-027"
+    "id": "v19-027",
+    "example_en": "Raise cows on a ranch."
   },
   {
     "term_ja": "鶏",
@@ -10410,7 +10822,8 @@
     "example_ruby": "<ruby>朝早<rt>あさはや</rt></ruby>く<ruby>鶏<rt>にわとり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>く",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-028"
+    "id": "v19-028",
+    "example_en": "A rooster crows early in the morning."
   },
   {
     "term_ja": "魚",
@@ -10421,7 +10834,8 @@
     "example_ruby": "<ruby>川<rt>かわ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>釣<rt>つ</rt></ruby>る",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-029"
+    "id": "v19-029",
+    "example_en": "Catch fish in a river."
   },
   {
     "term_ja": "虫",
@@ -10432,7 +10846,8 @@
     "example_ruby": "<ruby>夏<rt>なつ</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>を<ruby>捕<rt>つか</rt></ruby>まえる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-030"
+    "id": "v19-030",
+    "example_en": "Catch insects in summer."
   },
   {
     "term_ja": "蚊",
@@ -10443,7 +10858,8 @@
     "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されてかゆい",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-031"
+    "id": "v19-031",
+    "example_en": "I got bitten by a mosquito and it itches."
   },
   {
     "term_ja": "ハエ",
@@ -10454,7 +10870,8 @@
     "example_ruby": "ハエが<ruby>飛<rt>と</rt></ruby>んでいる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-032"
+    "id": "v19-032",
+    "example_en": "A fly is flying around."
   },
   {
     "term_ja": "蜂",
@@ -10465,7 +10882,8 @@
     "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>の<ruby>巣<rt>す</rt></ruby>を<ruby>見<rt>み</rt></ruby>つける",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-033"
+    "id": "v19-033",
+    "example_en": "Find a bees' nest."
   },
   {
     "term_ja": "刺す",
@@ -10476,7 +10894,8 @@
     "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>が<ruby>刺<rt>さ</rt></ruby>す",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-034"
+    "id": "v19-034",
+    "example_en": "A bee stings."
   },
   {
     "term_ja": "刺される",
@@ -10487,7 +10906,8 @@
     "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>される",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-035"
+    "id": "v19-035",
+    "example_en": "Get bitten by a mosquito."
   },
   {
     "term_ja": "捕る",
@@ -10498,7 +10918,8 @@
     "example_ruby": "<ruby>海<rt>うみ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>る",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-036"
+    "id": "v19-036",
+    "example_en": "Catch fish in the sea."
   },
   {
     "term_ja": "捕まえる",
@@ -10509,7 +10930,8 @@
     "example_ruby": "トンボを<ruby>捕<rt>つか</rt></ruby>まえる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-037"
+    "id": "v19-037",
+    "example_en": "Catch a dragonfly."
   },
   {
     "term_ja": "逃げる",
@@ -10520,7 +10942,8 @@
     "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>逃<rt>に</rt></ruby>げる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-038"
+    "id": "v19-038",
+    "example_en": "A small bird escapes."
   },
   {
     "term_ja": "逃がす",
@@ -10531,7 +10954,8 @@
     "example_ruby": "<ruby>捕<rt>つか</rt></ruby>まえた<ruby>魚<rt>さかな</rt></ruby>を<ruby>逃<rt>に</rt></ruby>がす",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-039"
+    "id": "v19-039",
+    "example_en": "Release a fish one has caught."
   },
   {
     "term_ja": "隠れる",
@@ -10542,7 +10966,8 @@
     "example_ruby": "<ruby>物陰<rt>ものかげ</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-040"
+    "id": "v19-040",
+    "example_en": "Hide in the shadows."
   },
   {
     "term_ja": "隠す",
@@ -10553,7 +10978,8 @@
     "example_ruby": "<ruby>宝物<rt>たからもの</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-041"
+    "id": "v19-041",
+    "example_en": "Hide a treasure."
   },
   {
     "term_ja": "観察する",
@@ -10564,7 +10990,8 @@
     "example_ruby": "アリの<ruby>巣<rt>す</rt></ruby>を<ruby>観察<rt>かんさつ</rt></ruby>する",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-042"
+    "id": "v19-042",
+    "example_en": "Observe an ant nest."
   },
   {
     "term_ja": "えさ",
@@ -10575,7 +11002,8 @@
     "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>にえさをあげる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-043"
+    "id": "v19-043",
+    "example_en": "Give food to a dog."
   },
   {
     "term_ja": "貴重な",
@@ -10586,7 +11014,8 @@
     "example_ruby": "<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>野生動物<rt>やせいどうぶつ</rt></ruby>",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-044"
+    "id": "v19-044",
+    "example_en": "Precious wild animals."
   },
   {
     "term_ja": "減る",
@@ -10597,7 +11026,8 @@
     "example_ruby": "<ruby>野生<rt>やせい</rt></ruby>の<ruby>鳥<rt>とり</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-045"
+    "id": "v19-045",
+    "example_en": "The number of wild birds is decreasing."
   },
   {
     "term_ja": "禁止する",
@@ -10608,7 +11038,8 @@
     "example_ruby": "<ruby>狩猟<rt>しゅりょう</rt></ruby>を<ruby>禁止<rt>きんし</rt></ruby>する",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-046"
+    "id": "v19-046",
+    "example_en": "Ban hunting."
   },
   {
     "term_ja": "匹",
@@ -10619,7 +11050,8 @@
     "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>二匹<rt>にひき</rt></ruby>いる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-047"
+    "id": "v19-047",
+    "example_en": "There are two dogs."
   },
   {
     "term_ja": "羽",
@@ -10630,7 +11062,8 @@
     "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>三羽<rt>さんわ</rt></ruby><ruby>飛<rt>と</rt></ruby>んでいる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-048"
+    "id": "v19-048",
+    "example_en": "Three small birds are flying."
   },
   {
     "term_ja": "頭",
@@ -10641,7 +11074,8 @@
     "example_ruby": "<ruby>牛<rt>うし</rt></ruby>が<ruby>一頭<rt>いっとう</rt></ruby>いる",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-049"
+    "id": "v19-049",
+    "example_en": "There is one cow."
   },
   {
     "term_ja": "猫",
@@ -10652,7 +11086,8 @@
     "example_ruby": "<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っている",
     "chapter": 19,
     "section_id": 2,
-    "id": "v19-050"
+    "id": "v19-050",
+    "example_en": "I have a cat."
   },
   {
     "term_ja": "数",
@@ -10663,7 +11098,8 @@
     "example_ruby": "<ruby>人数<rt>にんずう</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-001"
+    "id": "v20-001",
+    "example_en": "Count the number of people."
   },
   {
     "term_ja": "量",
@@ -10674,7 +11110,8 @@
     "example_ruby": "<ruby>食事<rt>しょくじ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-002"
+    "id": "v20-002",
+    "example_en": "Reduce the amount of food."
   },
   {
     "term_ja": "増やす",
@@ -10685,7 +11122,8 @@
     "example_ruby": "<ruby>貯金<rt>ちょきん</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-003"
+    "id": "v20-003",
+    "example_en": "Increase one's savings."
   },
   {
     "term_ja": "増す",
@@ -10696,7 +11134,8 @@
     "example_ruby": "<ruby>興味<rt>きょうみ</rt></ruby>が<ruby>増<rt>ま</rt></ruby>す",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-004"
+    "id": "v20-004",
+    "example_en": "Interest grows."
   },
   {
     "term_ja": "減らす",
@@ -10707,7 +11146,8 @@
     "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-005"
+    "id": "v20-005",
+    "example_en": "Lose weight."
   },
   {
     "term_ja": "増える",
@@ -10718,7 +11158,8 @@
     "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>える",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-006"
+    "id": "v20-006",
+    "example_en": "One's weight goes up."
   },
   {
     "term_ja": "減る",
@@ -10729,7 +11170,8 @@
     "example_ruby": "<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-007"
+    "id": "v20-007",
+    "example_en": "The population decreases."
   },
   {
     "term_ja": "倍",
@@ -10740,7 +11182,8 @@
     "example_ruby": "2<ruby>倍<rt>ばい</rt></ruby>に<ruby>増<rt>ふ</rt></ruby>える",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-008"
+    "id": "v20-008",
+    "example_en": "Increase to double."
   },
   {
     "term_ja": "余る",
@@ -10751,7 +11194,8 @@
     "example_ruby": "<ruby>料理<rt>りょうり</rt></ruby>が<ruby>余<rt>あま</rt></ruby>る",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-009"
+    "id": "v20-009",
+    "example_en": "There is leftover food."
   },
   {
     "term_ja": "不足する",
@@ -10762,7 +11206,8 @@
     "example_ruby": "<ruby>運動<rt>うんどう</rt></ruby>が<ruby>不足<rt>ふそく</rt></ruby>する",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-010"
+    "id": "v20-010",
+    "example_en": "Not get enough exercise."
   },
   {
     "term_ja": "余裕",
@@ -10773,7 +11218,8 @@
     "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>に<ruby>余裕<rt>よゆう</rt></ruby>がある",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-011"
+    "id": "v20-011",
+    "example_en": "Have time to spare."
   },
   {
     "term_ja": "人数",
@@ -10784,7 +11230,8 @@
     "example_ruby": "<ruby>参加者<rt>さんかしゃ</rt></ruby>の<ruby>人数<rt>にんずう</rt></ruby>",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-012"
+    "id": "v20-012",
+    "example_en": "The number of participants."
   },
   {
     "term_ja": "個数",
@@ -10795,7 +11242,8 @@
     "example_ruby": "リンゴの<ruby>個数<rt>こすう</rt></ruby>",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-013"
+    "id": "v20-013",
+    "example_en": "The number of apples."
   },
   {
     "term_ja": "回数",
@@ -10806,7 +11254,8 @@
     "example_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>の<ruby>回数<rt>かいすう</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-014"
+    "id": "v20-014",
+    "example_en": "Increase the number of practice sessions."
   },
   {
     "term_ja": "台数",
@@ -10817,7 +11266,8 @@
     "example_ruby": "<ruby>車<rt>くるま</rt></ruby>の<ruby>台数<rt>だいすう</rt></ruby>",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-015"
+    "id": "v20-015",
+    "example_en": "The number of cars."
   },
   {
     "term_ja": "数える",
@@ -10828,7 +11278,8 @@
     "example_ruby": "お<ruby>金<rt>かね</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-016"
+    "id": "v20-016",
+    "example_en": "Count money."
   },
   {
     "term_ja": "測る",
@@ -10839,7 +11290,8 @@
     "example_ruby": "<ruby>長<rt>なが</rt></ruby>さを<ruby>測<rt>はか</rt></ruby>る",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-017"
+    "id": "v20-017",
+    "example_en": "Measure the length."
   },
   {
     "term_ja": "距離",
@@ -10850,7 +11302,8 @@
     "example_ruby": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>距離<rt>きょり</rt></ruby>",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-018"
+    "id": "v20-018",
+    "example_en": "The distance to the station."
   },
   {
     "term_ja": "面積",
@@ -10861,7 +11314,8 @@
     "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>の<ruby>面積<rt>めんせき</rt></ruby>",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-019"
+    "id": "v20-019",
+    "example_en": "The floor area of a room."
   },
   {
     "term_ja": "時間",
@@ -10872,7 +11326,8 @@
     "example_ruby": "かかる<ruby>時間<rt>じかん</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-020"
+    "id": "v20-020",
+    "example_en": "Measure the time it takes."
   },
   {
     "term_ja": "重さ",
@@ -10883,7 +11338,8 @@
     "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>重<rt>おも</rt></ruby>さ",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-021"
+    "id": "v20-021",
+    "example_en": "The weight of the luggage."
   },
   {
     "term_ja": "量る",
@@ -10894,7 +11350,8 @@
     "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>量<rt>はか</rt></ruby>る",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-022"
+    "id": "v20-022",
+    "example_en": "Weigh oneself."
   },
   {
     "term_ja": "記録",
@@ -10905,7 +11362,8 @@
     "example_ruby": "<ruby>新記録<rt>しんきろく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-023"
+    "id": "v20-023",
+    "example_en": "Set a new record."
   },
   {
     "term_ja": "取る",
@@ -10916,7 +11374,8 @@
     "example_ruby": "<ruby>記録<rt>きろく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
     "chapter": 20,
     "section_id": 1,
-    "id": "v20-024"
+    "id": "v20-024",
+    "example_en": "Keep a record."
   },
   {
     "term_ja": "大量",
@@ -10927,7 +11386,8 @@
     "example_ruby": "<ruby>大量<rt>たいりょう</rt></ruby>に<ruby>購入<rt>こうにゅう</rt></ruby>する",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-025"
+    "id": "v20-025",
+    "example_en": "Buy in large quantities."
   },
   {
     "term_ja": "少量",
@@ -10938,7 +11398,8 @@
     "example_ruby": "<ruby>少量<rt>しょうりょう</rt></ruby>の<ruby>水<rt>みず</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-026"
+    "id": "v20-026",
+    "example_en": "A small amount of water."
   },
   {
     "term_ja": "多数",
@@ -10949,7 +11410,8 @@
     "example_ruby": "<ruby>多数<rt>たすう</rt></ruby>の<ruby>参加者<rt>さんかしゃ</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-027"
+    "id": "v20-027",
+    "example_en": "A large number of participants."
   },
   {
     "term_ja": "少数",
@@ -10960,7 +11422,8 @@
     "example_ruby": "<ruby>少数<rt>しょうすう</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-028"
+    "id": "v20-028",
+    "example_en": "A minority opinion."
   },
   {
     "term_ja": "マイナス",
@@ -10971,7 +11434,8 @@
     "example_ruby": "<ruby>気温<rt>きおん</rt></ruby>がマイナスになる",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-029"
+    "id": "v20-029",
+    "example_en": "The temperature goes below zero."
   },
   {
     "term_ja": "プラス",
@@ -10982,7 +11446,8 @@
     "example_ruby": "プラスに<ruby>働<rt>はたら</rt></ruby>く",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-030"
+    "id": "v20-030",
+    "example_en": "It works in one's favor."
   },
   {
     "term_ja": "レベル",
@@ -10993,7 +11458,8 @@
     "example_ruby": "<ruby>技術<rt>ぎじゅつ</rt></ruby>のレベル",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-031"
+    "id": "v20-031",
+    "example_en": "The level of skill."
   },
   {
     "term_ja": "上がる",
@@ -11004,7 +11470,8 @@
     "example_ruby": "レベルが<ruby>上<rt>あ</rt></ruby>がる",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-032"
+    "id": "v20-032",
+    "example_en": "The level goes up."
   },
   {
     "term_ja": "最大",
@@ -11015,7 +11482,8 @@
     "example_ruby": "<ruby>最大<rt>さいだい</rt></ruby>の<ruby>効果<rt>こうか</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-033"
+    "id": "v20-033",
+    "example_en": "The greatest effect."
   },
   {
     "term_ja": "最小",
@@ -11026,7 +11494,8 @@
     "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>を<ruby>最小<rt>さいしょう</rt></ruby>にする",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-034"
+    "id": "v20-034",
+    "example_en": "Minimize the damage."
   },
   {
     "term_ja": "最高",
@@ -11037,7 +11506,8 @@
     "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-035"
+    "id": "v20-035",
+    "example_en": "The highest temperature."
   },
   {
     "term_ja": "最低",
@@ -11048,7 +11518,8 @@
     "example_ruby": "<ruby>最低限<rt>さいていげん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-036"
+    "id": "v20-036",
+    "example_en": "The minimum conditions."
   },
   {
     "term_ja": "平均",
@@ -11059,7 +11530,8 @@
     "example_ruby": "<ruby>平均点<rt>へいきんてん</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-037"
+    "id": "v20-037",
+    "example_en": "Calculate the average score."
   },
   {
     "term_ja": "たっぷり",
@@ -11070,7 +11542,8 @@
     "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>をたっぷり<ruby>入<rt>い</rt></ruby>れる",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-038"
+    "id": "v20-038",
+    "example_en": "Put in plenty of vegetables."
   },
   {
     "term_ja": "少々",
@@ -11081,7 +11554,8 @@
     "example_ruby": "<ruby>塩<rt>しお</rt></ruby>を<ruby>少々<rt>しょうしょう</rt></ruby><ruby>加<rt>くわ</rt></ruby>える",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-039"
+    "id": "v20-039",
+    "example_en": "Add a little salt."
   },
   {
     "term_ja": "加える",
@@ -11092,7 +11566,8 @@
     "example_ruby": "<ruby>具材<rt>ぐざい</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>える",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-040"
+    "id": "v20-040",
+    "example_en": "Add the ingredients."
   },
   {
     "term_ja": "すべて",
@@ -11103,7 +11578,8 @@
     "example_ruby": "すべての<ruby>問題<rt>もんだい</rt></ruby>",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-041"
+    "id": "v20-041",
+    "example_en": "All the questions."
   },
   {
     "term_ja": "全員",
@@ -11114,7 +11590,8 @@
     "example_ruby": "<ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>出席<rt>しゅっせき</rt></ruby>する",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-042"
+    "id": "v20-042",
+    "example_en": "Everyone attends."
   },
   {
     "term_ja": "合計",
@@ -11125,7 +11602,8 @@
     "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-043"
+    "id": "v20-043",
+    "example_en": "Calculate the total."
   },
   {
     "term_ja": "出す",
@@ -11136,7 +11614,8 @@
     "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-044"
+    "id": "v20-044",
+    "example_en": "Work out the total."
   },
   {
     "term_ja": "計算",
@@ -11147,7 +11626,8 @@
     "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>が<ruby>速<rt>はや</rt></ruby>い",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-045"
+    "id": "v20-045",
+    "example_en": "Be quick at calculating."
   },
   {
     "term_ja": "間違える",
@@ -11158,7 +11638,8 @@
     "example_ruby": "<ruby>道<rt>みち</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>える",
     "chapter": 20,
     "section_id": 2,
-    "id": "v20-046"
+    "id": "v20-046",
+    "example_en": "Take the wrong road."
   },
   {
     "term_ja": "経つ",
@@ -11169,7 +11650,8 @@
     "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>が<ruby>経<rt>た</rt></ruby>つ",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-001"
+    "id": "v21-001",
+    "example_en": "Time passes."
   },
   {
     "term_ja": "時刻",
@@ -11180,7 +11662,8 @@
     "example_ruby": "<ruby>出発<rt>しゅっぱつ</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-002"
+    "id": "v21-002",
+    "example_en": "The departure time."
   },
   {
     "term_ja": "過ぎる",
@@ -11191,7 +11674,8 @@
     "example_ruby": "<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎる",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-003"
+    "id": "v21-003",
+    "example_en": "Go past the appointed time."
   },
   {
     "term_ja": "時期",
@@ -11202,7 +11686,8 @@
     "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>にいい<ruby>時期<rt>じき</rt></ruby>",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-004"
+    "id": "v21-004",
+    "example_en": "A good time of year to travel."
   },
   {
     "term_ja": "期間",
@@ -11213,7 +11698,8 @@
     "example_ruby": "<ruby>一定<rt>いってい</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-005"
+    "id": "v21-005",
+    "example_en": "A fixed period of time."
   },
   {
     "term_ja": "期限",
@@ -11224,7 +11710,8 @@
     "example_ruby": "<ruby>提出期限<rt>ていしゅつきげん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-006"
+    "id": "v21-006",
+    "example_en": "Keep to the submission deadline."
   },
   {
     "term_ja": "切れる",
@@ -11235,7 +11722,8 @@
     "example_ruby": "<ruby>定期券<rt>ていきけん</rt></ruby>の<ruby>期限<rt>きげん</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-007"
+    "id": "v21-007",
+    "example_en": "The commuter pass has expired."
   },
   {
     "term_ja": "短期",
@@ -11246,7 +11734,8 @@
     "example_ruby": "<ruby>短期<rt>たんき</rt></ruby>のアルバイト",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-008"
+    "id": "v21-008",
+    "example_en": "A short-term part-time job."
   },
   {
     "term_ja": "長期",
@@ -11257,7 +11746,8 @@
     "example_ruby": "<ruby>長期<rt>ちょうき</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みを<ruby>取<rt>と</rt></ruby>る",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-009"
+    "id": "v21-009",
+    "example_en": "Take a long vacation."
   },
   {
     "term_ja": "日中",
@@ -11268,7 +11758,8 @@
     "example_ruby": "<ruby>日中<rt>にっちゅう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かい",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-010"
+    "id": "v21-010",
+    "example_en": "It's warm during the day."
   },
   {
     "term_ja": "夜間",
@@ -11279,7 +11770,8 @@
     "example_ruby": "<ruby>夜間<rt>やかん</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-011"
+    "id": "v21-011",
+    "example_en": "Nighttime construction work."
   },
   {
     "term_ja": "日時",
@@ -11290,7 +11782,8 @@
     "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby>を<ruby>決<rt>き</rt></ruby>める",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-012"
+    "id": "v21-012",
+    "example_en": "Decide the date and time of the meeting."
   },
   {
     "term_ja": "日程",
@@ -11301,7 +11794,8 @@
     "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-013"
+    "id": "v21-013",
+    "example_en": "Make a travel itinerary."
   },
   {
     "term_ja": "年間",
@@ -11312,7 +11806,8 @@
     "example_ruby": "<ruby>年間<rt>ねんかん</rt></ruby>の<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-014"
+    "id": "v21-014",
+    "example_en": "Annual sales."
   },
   {
     "term_ja": "延期する",
@@ -11323,7 +11818,8 @@
     "example_ruby": "<ruby>試合<rt>しあい</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>する",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-015"
+    "id": "v21-015",
+    "example_en": "Postpone the game."
   },
   {
     "term_ja": "合わせる",
@@ -11334,7 +11830,8 @@
     "example_ruby": "<ruby>時計<rt>とけい</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-016"
+    "id": "v21-016",
+    "example_en": "Set a clock to the right time."
   },
   {
     "term_ja": "日付",
@@ -11345,7 +11842,8 @@
     "example_ruby": "<ruby>日付<rt>ひづけ</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-017"
+    "id": "v21-017",
+    "example_en": "Check the date."
   },
   {
     "term_ja": "セットする",
@@ -11356,7 +11854,8 @@
     "example_ruby": "タイマーをセットする",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-018"
+    "id": "v21-018",
+    "example_en": "Set the timer."
   },
   {
     "term_ja": "アラーム",
@@ -11367,7 +11866,8 @@
     "example_ruby": "アラームを<ruby>止<rt>と</rt></ruby>める",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-019"
+    "id": "v21-019",
+    "example_en": "Turn off the alarm."
   },
   {
     "term_ja": "目覚まし時計",
@@ -11378,7 +11878,8 @@
     "example_ruby": "<ruby>目覚まし時計<rt>めざましどけい</rt></ruby>をかける",
     "chapter": 21,
     "section_id": 1,
-    "id": "v21-020"
+    "id": "v21-020",
+    "example_en": "Set the alarm clock."
   },
   {
     "term_ja": "前回",
@@ -11389,7 +11890,8 @@
     "example_ruby": "<ruby>前回<rt>ぜんかい</rt></ruby>の<ruby>復習<rt>ふくしゅう</rt></ruby>をする",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-021"
+    "id": "v21-021",
+    "example_en": "Review the last lesson."
   },
   {
     "term_ja": "今回",
@@ -11400,7 +11902,8 @@
     "example_ruby": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>成功<rt>せいこう</rt></ruby>した",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-022"
+    "id": "v21-022",
+    "example_en": "It succeeded this time."
   },
   {
     "term_ja": "次回",
@@ -11411,7 +11914,8 @@
     "example_ruby": "<ruby>次回<rt>じかい</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-023"
+    "id": "v21-023",
+    "example_en": "The next schedule."
   },
   {
     "term_ja": "以前",
@@ -11422,7 +11926,8 @@
     "example_ruby": "<ruby>以前<rt>いぜん</rt></ruby><ruby>会<rt>あ</rt></ruby>ったことがある",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-024"
+    "id": "v21-024",
+    "example_en": "I have met him before."
   },
   {
     "term_ja": "以後",
@@ -11433,7 +11938,8 @@
     "example_ruby": "<ruby>正午以後<rt>しょうごいご</rt></ruby>に<ruby>連絡<rt>れんらく</rt></ruby>する",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-025"
+    "id": "v21-025",
+    "example_en": "Contact me after noon."
   },
   {
     "term_ja": "前後",
@@ -11444,7 +11950,8 @@
     "example_ruby": "3<ruby>時前後<rt>じぜんご</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まる",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-026"
+    "id": "v21-026",
+    "example_en": "Gather at around three o'clock."
   },
   {
     "term_ja": "前日",
@@ -11455,7 +11962,8 @@
     "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>に<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>る",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-027"
+    "id": "v21-027",
+    "example_en": "Go to bed early the day before the exam."
   },
   {
     "term_ja": "当日",
@@ -11466,7 +11974,8 @@
     "example_ruby": "<ruby>結婚式<rt>けっこんしき</rt></ruby>の<ruby>当日<rt>とうじつ</rt></ruby>",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-028"
+    "id": "v21-028",
+    "example_en": "The day of the wedding."
   },
   {
     "term_ja": "翌日",
@@ -11477,7 +11986,8 @@
     "example_ruby": "<ruby>翌日<rt>よくじつ</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>に<ruby>出発<rt>しゅっぱつ</rt></ruby>する",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-029"
+    "id": "v21-029",
+    "example_en": "Leave the next morning."
   },
   {
     "term_ja": "平日",
@@ -11488,7 +11998,8 @@
     "example_ruby": "<ruby>平日<rt>へいじつ</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-030"
+    "id": "v21-030",
+    "example_en": "Go to the company on weekdays."
   },
   {
     "term_ja": "週末",
@@ -11499,7 +12010,8 @@
     "example_ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>にドライブする",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-031"
+    "id": "v21-031",
+    "example_en": "Go for a drive on the weekend."
   },
   {
     "term_ja": "昨年",
@@ -11510,7 +12022,8 @@
     "example_ruby": "<ruby>昨年<rt>さくねん</rt></ruby>の<ruby>業績<rt>ぎょうせき</rt></ruby>",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-032"
+    "id": "v21-032",
+    "example_en": "Last year's business results."
   },
   {
     "term_ja": "翌年",
@@ -11521,7 +12034,8 @@
     "example_ruby": "その<ruby>翌年<rt>よくねん</rt></ruby>に<ruby>卒業<rt>そつぎょう</rt></ruby>した",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-033"
+    "id": "v21-033",
+    "example_en": "I graduated the following year."
   },
   {
     "term_ja": "過去",
@@ -11532,7 +12046,8 @@
     "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-034"
+    "id": "v21-034",
+    "example_en": "Look back on the past."
   },
   {
     "term_ja": "現在",
@@ -11543,7 +12058,8 @@
     "example_ruby": "<ruby>現在<rt>げんざい</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-035"
+    "id": "v21-035",
+    "example_en": "The current time."
   },
   {
     "term_ja": "未来",
@@ -11554,7 +12070,8 @@
     "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>する",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-036"
+    "id": "v21-036",
+    "example_en": "Imagine the society of the future."
   },
   {
     "term_ja": "現代",
@@ -11565,7 +12082,8 @@
     "example_ruby": "<ruby>現代社会<rt>げんだいしゃかい</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-037"
+    "id": "v21-037",
+    "example_en": "Issues in contemporary society."
   },
   {
     "term_ja": "間もなく",
@@ -11576,7 +12094,8 @@
     "example_ruby": "<ruby>間<rt>ま</rt></ruby>もなく<ruby>列車<rt>れっしゃ</rt></ruby>が<ruby>到着<rt>とうちゃく</rt></ruby>する",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-038"
+    "id": "v21-038",
+    "example_en": "The train will arrive shortly."
   },
   {
     "term_ja": "突然",
@@ -11587,7 +12106,8 @@
     "example_ruby": "<ruby>突然<rt>とつぜん</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る",
     "chapter": 21,
     "section_id": 2,
-    "id": "v21-039"
+    "id": "v21-039",
+    "example_en": "The phone suddenly rings."
   },
   {
     "id": "v2-01-001",

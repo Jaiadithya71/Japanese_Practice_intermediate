@@ -37,7 +37,8 @@
               "ruby_html": "<ruby>政治<rt>せいじ</rt></ruby>",
               "meaning_en": "politics, government",
               "example_ja": "政治に関心を持つ",
-              "example_ruby": "<ruby>政治<rt>せいじ</rt></ruby>に<ruby>関心<rt>かんしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ"
+              "example_ruby": "<ruby>政治<rt>せいじ</rt></ruby>に<ruby>関心<rt>かんしん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ",
+              "example_en": "Take an interest in politics."
             },
             {
               "term_ja": "政府",
@@ -45,7 +46,8 @@
               "ruby_html": "<ruby>政府<rt>せいふ</rt></ruby>",
               "meaning_en": "government, administration",
               "example_ja": "政府の政策",
-              "example_ruby": "<ruby>政府<rt>せいふ</rt></ruby>の<ruby>政策<rt>せいさく</rt></ruby>"
+              "example_ruby": "<ruby>政府<rt>せいふ</rt></ruby>の<ruby>政策<rt>せいさく</rt></ruby>",
+              "example_en": "The government's policy."
             },
             {
               "term_ja": "首相",
@@ -53,7 +55,8 @@
               "ruby_html": "<ruby>首相<rt>しゅしょう</rt></ruby>",
               "meaning_en": "prime minister",
               "example_ja": "日本の首相",
-              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>首相<rt>しゅしょう</rt></ruby>"
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>首相<rt>しゅしょう</rt></ruby>",
+              "example_en": "The prime minister of Japan."
             },
             {
               "term_ja": "大統領",
@@ -61,7 +64,8 @@
               "ruby_html": "<ruby>大統領<rt>だいとうりょう</rt></ruby>",
               "meaning_en": "president (of a country)",
               "example_ja": "アメリカの大統領",
-              "example_ruby": "アメリカの<ruby>大統領<rt>だいとうりょう</rt></ruby>"
+              "example_ruby": "アメリカの<ruby>大統領<rt>だいとうりょう</rt></ruby>",
+              "example_en": "The president of the United States."
             },
             {
               "term_ja": "リーダー",
@@ -69,7 +73,8 @@
               "ruby_html": "リーダー",
               "meaning_en": "leader",
               "example_ja": "チームのリーダー",
-              "example_ruby": "チームのリーダー"
+              "example_ruby": "チームのリーダー",
+              "example_en": "The team leader."
             },
             {
               "term_ja": "国民",
@@ -77,7 +82,8 @@
               "ruby_html": "<ruby>国民<rt>こくみん</rt></ruby>",
               "meaning_en": "citizens, national people",
               "example_ja": "国民の義務",
-              "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>"
+              "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>",
+              "example_en": "The duties of citizens."
             },
             {
               "term_ja": "市民",
@@ -85,7 +91,8 @@
               "ruby_html": "<ruby>市民<rt>しみん</rt></ruby>",
               "meaning_en": "citizens, city residents",
               "example_ja": "市民の声を聞く",
-              "example_ruby": "<ruby>市民<rt>しみん</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く"
+              "example_ruby": "<ruby>市民<rt>しみん</rt></ruby>の<ruby>声<rt>こえ</rt></ruby>を<ruby>聞<rt>き</rt></ruby>く",
+              "example_en": "Listen to the voices of the citizens."
             },
             {
               "term_ja": "平等",
@@ -93,7 +100,8 @@
               "ruby_html": "<ruby>平等<rt>びょうどう</rt></ruby>",
               "meaning_en": "equality, equal, fair",
               "example_ja": "平等な社会",
-              "example_ruby": "<ruby>平等<rt>びょうどう</rt></ruby>な<ruby>社会<rt>しゃかい</rt></ruby>"
+              "example_ruby": "<ruby>平等<rt>びょうどう</rt></ruby>な<ruby>社会<rt>しゃかい</rt></ruby>",
+              "example_en": "An equal society."
             },
             {
               "term_ja": "不平等",
@@ -101,7 +109,8 @@
               "ruby_html": "<ruby>不平等<rt>ふびょうどう</rt></ruby>",
               "meaning_en": "inequality, unfairness",
               "example_ja": "不平等な扱い",
-              "example_ruby": "<ruby>不平等<rt>ふびょうどう</rt></ruby>な<ruby>扱<rt>あつく</rt></ruby>い"
+              "example_ruby": "<ruby>不平等<rt>ふびょうどう</rt></ruby>な<ruby>扱<rt>あつく</rt></ruby>い",
+              "example_en": "Unfair treatment."
             },
             {
               "term_ja": "権利",
@@ -109,7 +118,8 @@
               "ruby_html": "<ruby>権利<rt>けんり</rt></ruby>",
               "meaning_en": "right, privilege",
               "example_ja": "投票する権利",
-              "example_ruby": "<ruby>投票<rt>とうひょう</rt></ruby>する<ruby>権利<rt>けんり</rt></ruby>"
+              "example_ruby": "<ruby>投票<rt>とうひょう</rt></ruby>する<ruby>権利<rt>けんり</rt></ruby>",
+              "example_en": "The right to vote."
             },
             {
               "term_ja": "義務",
@@ -117,7 +127,8 @@
               "ruby_html": "<ruby>義務<rt>ぎむ</rt></ruby>",
               "meaning_en": "duty, obligation",
               "example_ja": "国民の義務を果たす",
-              "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす"
+              "example_ruby": "<ruby>国民<rt>こくみん</rt></ruby>の<ruby>義務<rt>ぎむ</rt></ruby>を<ruby>果<rt>は</rt></ruby>たす",
+              "example_en": "Fulfill one's duties as a citizen."
             },
             {
               "term_ja": "責任",
@@ -125,7 +136,8 @@
               "ruby_html": "<ruby>責任<rt>せきにん</rt></ruby>",
               "meaning_en": "responsibility, liability",
               "example_ja": "責任を取る",
-              "example_ruby": "<ruby>責任<rt>せきにん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>責任<rt>せきにん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Take responsibility."
             },
             {
               "term_ja": "選挙",
@@ -133,7 +145,8 @@
               "ruby_html": "<ruby>選挙<rt>せんきょ</rt></ruby>",
               "meaning_en": "election",
               "example_ja": "選挙に行く",
-              "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go to vote in an election."
             },
             {
               "term_ja": "投票する",
@@ -141,7 +154,8 @@
               "ruby_html": "<ruby>投票<rt>とうひょう</rt></ruby>する",
               "meaning_en": "to vote",
               "example_ja": "選挙で投票する",
-              "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>で<ruby>投票<rt>とうひょう</rt></ruby>する"
+              "example_ruby": "<ruby>選挙<rt>せんきょ</rt></ruby>で<ruby>投票<rt>とうひょう</rt></ruby>する",
+              "example_en": "Vote in an election."
             },
             {
               "term_ja": "実現する",
@@ -149,7 +163,8 @@
               "ruby_html": "<ruby>実現<rt>じつげん</rt></ruby>する",
               "meaning_en": "to realize, materialize, come true",
               "example_ja": "夢を実現する",
-              "example_ruby": "<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>実現<rt>じつげん</rt></ruby>する"
+              "example_ruby": "<ruby>夢<rt>ゆめ</rt></ruby>を<ruby>実現<rt>じつげん</rt></ruby>する",
+              "example_en": "Make a dream come true."
             },
             {
               "term_ja": "信頼する",
@@ -157,7 +172,8 @@
               "ruby_html": "<ruby>信頼<rt>しんらい</rt></ruby>する",
               "meaning_en": "to trust, rely upon",
               "example_ja": "首相を信頼する",
-              "example_ruby": "<ruby>首相<rt>しゅしょう</rt></ruby>を<ruby>信頼<rt>しんらい</rt></ruby>する"
+              "example_ruby": "<ruby>首相<rt>しゅしょう</rt></ruby>を<ruby>信頼<rt>しんらい</rt></ruby>する",
+              "example_en": "Trust the prime minister."
             },
             {
               "term_ja": "戦う",
@@ -165,7 +181,8 @@
               "ruby_html": "<ruby>戦<rt>たたか</rt></ruby>う",
               "meaning_en": "to fight, wage war, compete",
               "example_ja": "敵と戦う",
-              "example_ruby": "<ruby>敵<rt>てき</rt></ruby>と<ruby>戦<rt>たたか</rt></ruby>う"
+              "example_ruby": "<ruby>敵<rt>てき</rt></ruby>と<ruby>戦<rt>たたか</rt></ruby>う",
+              "example_en": "Fight an enemy."
             },
             {
               "term_ja": "攻撃する",
@@ -173,7 +190,8 @@
               "ruby_html": "<ruby>攻撃<rt>こうげき</rt></ruby>する",
               "meaning_en": "to attack, strike",
               "example_ja": "相手を攻撃する",
-              "example_ruby": "<ruby>相手<rt>あいて</rt></ruby>を<ruby>攻撃<rt>こうげき</rt></ruby>する"
+              "example_ruby": "<ruby>相手<rt>あいて</rt></ruby>を<ruby>攻撃<rt>こうげき</rt></ruby>する",
+              "example_en": "Attack an opponent."
             },
             {
               "term_ja": "マスコミ",
@@ -181,7 +199,8 @@
               "ruby_html": "マスコミ",
               "meaning_en": "mass communication, mass media",
               "example_ja": "マスコミが報道する",
-              "example_ruby": "マスコミが<ruby>報道<rt>ほうどう</rt></ruby>する"
+              "example_ruby": "マスコミが<ruby>報道<rt>ほうどう</rt></ruby>する",
+              "example_en": "The media reports it."
             },
             {
               "term_ja": "デモ",
@@ -189,7 +208,8 @@
               "ruby_html": "デモ",
               "meaning_en": "demonstration, protest rally",
               "example_ja": "デモに参加する",
-              "example_ruby": "デモに<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "デモに<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in a demonstration."
             }
           ],
           "yattemiyou": [
@@ -245,7 +265,8 @@
               "ruby_html": "<ruby>経済<rt>けいざい</rt></ruby>",
               "meaning_en": "economy, economics",
               "example_ja": "経済が成長する",
-              "example_ruby": "<ruby>経済<rt>けいざい</rt></ruby>が<ruby>成長<rt>せいちょう</rt></ruby>する"
+              "example_ruby": "<ruby>経済<rt>けいざい</rt></ruby>が<ruby>成長<rt>せいちょう</rt></ruby>する",
+              "example_en": "The economy grows."
             },
             {
               "term_ja": "景気",
@@ -253,7 +274,8 @@
               "ruby_html": "<ruby>景気<rt>けいき</rt></ruby>",
               "meaning_en": "business climate, economy",
               "example_ja": "景気がいい",
-              "example_ruby": "<ruby>景気<rt>けいき</rt></ruby>がいい"
+              "example_ruby": "<ruby>景気<rt>けいき</rt></ruby>がいい",
+              "example_en": "The economy is good."
             },
             {
               "term_ja": "不景気",
@@ -261,7 +283,8 @@
               "ruby_html": "<ruby>不景気<rt>ふけいき</rt></ruby>",
               "meaning_en": "recession, economic depression",
               "example_ja": "不景気が続く",
-              "example_ruby": "<ruby>不景気<rt>ふけいき</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く"
+              "example_ruby": "<ruby>不景気<rt>ふけいき</rt></ruby>が<ruby>続<rt>つづ</rt></ruby>く",
+              "example_en": "The recession continues."
             },
             {
               "term_ja": "物価",
@@ -269,7 +292,8 @@
               "ruby_html": "<ruby>物価<rt>ぶっか</rt></ruby>",
               "meaning_en": "prices of commodities, cost of living",
               "example_ja": "物価が上がる",
-              "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる"
+              "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる",
+              "example_en": "Prices rise."
             },
             {
               "term_ja": "安定する",
@@ -277,7 +301,8 @@
               "ruby_html": "<ruby>安定<rt>あんてい</rt></ruby>する",
               "meaning_en": "to be stable, steady",
               "example_ja": "物価が安定する",
-              "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>安定<rt>あんてい</rt></ruby>する"
+              "example_ruby": "<ruby>物価<rt>ぶっか</rt></ruby>が<ruby>安定<rt>あんてい</rt></ruby>する",
+              "example_en": "Prices are stable."
             },
             {
               "term_ja": "定価",
@@ -285,7 +310,8 @@
               "ruby_html": "<ruby>定価<rt>ていか</rt></ruby>",
               "meaning_en": "fixed price, list price, regular price",
               "example_ja": "定価で買う",
-              "example_ruby": "<ruby>定価<rt>ていか</rt></ruby>で<ruby>買<rt>か</rt></ruby>う"
+              "example_ruby": "<ruby>定価<rt>ていか</rt></ruby>で<ruby>買<rt>か</rt></ruby>う",
+              "example_en": "Buy at the list price."
             },
             {
               "term_ja": "割引",
@@ -293,7 +319,8 @@
               "ruby_html": "<ruby>割引<rt>わりびき</rt></ruby>",
               "meaning_en": "discount, price reduction",
               "example_ja": "学生割引がある",
-              "example_ruby": "<ruby>学生割引<rt>がくせいわりびき</rt></ruby>がある"
+              "example_ruby": "<ruby>学生割引<rt>がくせいわりびき</rt></ruby>がある",
+              "example_en": "There is a student discount."
             },
             {
               "term_ja": "値下げする",
@@ -301,7 +328,8 @@
               "ruby_html": "<ruby>値下げ<rt>ねさげ</rt></ruby>する",
               "meaning_en": "to reduce the price, cut prices",
               "example_ja": "商品を値下げする",
-              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>値下げ<rt>ねさげ</rt></ruby>する"
+              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>値下げ<rt>ねさげ</rt></ruby>する",
+              "example_en": "Lower the price of a product."
             },
             {
               "term_ja": "得する",
@@ -309,7 +337,8 @@
               "ruby_html": "<ruby>得<rt>とく</rt></ruby>する",
               "meaning_en": "to gain, profit, come out ahead",
               "example_ja": "安く買えて得した",
-              "example_ruby": "<ruby>安<rt>やす</rt></ruby>く<ruby>買<rt>か</rt></ruby>えて<ruby>得<rt>とく</rt></ruby>した"
+              "example_ruby": "<ruby>安<rt>やす</rt></ruby>く<ruby>買<rt>か</rt></ruby>えて<ruby>得<rt>とく</rt></ruby>した",
+              "example_en": "I came out ahead by buying it cheaply."
             },
             {
               "term_ja": "損する",
@@ -317,7 +346,8 @@
               "ruby_html": "<ruby>損<rt>そん</rt></ruby>する",
               "meaning_en": "to lose, suffer a loss",
               "example_ja": "株で損をする",
-              "example_ruby": "<ruby>株<rt>かぶ</rt></ruby>で<ruby>損<rt>そん</rt></ruby>をする"
+              "example_ruby": "<ruby>株<rt>かぶ</rt></ruby>で<ruby>損<rt>そん</rt></ruby>をする",
+              "example_en": "Lose money on stocks."
             },
             {
               "term_ja": "つぶれる",
@@ -325,7 +355,8 @@
               "ruby_html": "つぶれる",
               "meaning_en": "to go bankrupt, collapse, get crushed",
               "example_ja": "会社がつぶれる",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>がつぶれる"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>がつぶれる",
+              "example_en": "A company goes bankrupt."
             },
             {
               "term_ja": "税金",
@@ -333,7 +364,8 @@
               "ruby_html": "<ruby>税金<rt>ぜいきん</rt></ruby>",
               "meaning_en": "tax, duties",
               "example_ja": "税金を払う",
-              "example_ruby": "<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+              "example_ruby": "<ruby>税金<rt>ぜいきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
+              "example_en": "Pay taxes."
             },
             {
               "term_ja": "料金",
@@ -341,7 +373,8 @@
               "ruby_html": "<ruby>料金<rt>りょうきん</rt></ruby>",
               "meaning_en": "fee, charge, fare",
               "example_ja": "電気料金を払う",
-              "example_ruby": "<ruby>電気料金<rt>でんきりょうきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+              "example_ruby": "<ruby>電気料金<rt>でんきりょうきん</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
+              "example_en": "Pay the electricity bill."
             },
             {
               "term_ja": "無料",
@@ -349,7 +382,8 @@
               "ruby_html": "<ruby>無料<rt>むりょう</rt></ruby>",
               "meaning_en": "free of charge, complimentary",
               "example_ja": "入場料は無料だ",
-              "example_ruby": "<ruby>入場料<rt>にゅうじょうりょう</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>だ"
+              "example_ruby": "<ruby>入場料<rt>にゅうじょうりょう</rt></ruby>は<ruby>無料<rt>むりょう</rt></ruby>だ",
+              "example_en": "Admission is free."
             },
             {
               "term_ja": "節約する",
@@ -357,7 +391,8 @@
               "ruby_html": "<ruby>節約<rt>せつやく</rt></ruby>する",
               "meaning_en": "to economize, save",
               "example_ja": "生活費を節約する",
-              "example_ruby": "<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>する"
+              "example_ruby": "<ruby>生活費<rt>せいかつひ</rt></ruby>を<ruby>節約<rt>せつやく</rt></ruby>する",
+              "example_en": "Save on living expenses."
             },
             {
               "term_ja": "貧しい",
@@ -365,7 +400,8 @@
               "ruby_html": "<ruby>貧<rt>まず</rt></ruby>しい",
               "meaning_en": "poor, impoverished, needy",
               "example_ja": "貧しい生活を送る",
-              "example_ruby": "<ruby>貧<rt>まず</rt></ruby>しい<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る"
+              "example_ruby": "<ruby>貧<rt>まず</rt></ruby>しい<ruby>生活<rt>せいかつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る",
+              "example_en": "Live in poverty."
             },
             {
               "term_ja": "借金する",
@@ -373,7 +409,8 @@
               "ruby_html": "<ruby>借金<rt>しゃっきん</rt></ruby>する",
               "meaning_en": "to borrow money, run into debt",
               "example_ja": "銀行から借金する",
-              "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>から<ruby>借金<rt>しゃっきん</rt></ruby>する"
+              "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>から<ruby>借金<rt>しゃっきん</rt></ruby>する",
+              "example_en": "Borrow money from a bank."
             },
             {
               "term_ja": "預ける",
@@ -381,7 +418,8 @@
               "ruby_html": "<ruby>預<rt>あず</rt></ruby>ける",
               "meaning_en": "to deposit, entrust, leave in custody",
               "example_ja": "銀行にお金を預ける",
-              "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける"
+              "example_ruby": "<ruby>銀行<rt>ぎんこう</rt></ruby>にお<ruby>金<rt>かね</rt></ruby>を<ruby>預<rt>あず</rt></ruby>ける",
+              "example_en": "Deposit money in a bank."
             },
             {
               "term_ja": "預かる",
@@ -389,7 +427,8 @@
               "ruby_html": "<ruby>預<rt>あず</rt></ruby>かる",
               "meaning_en": "to look after, take care of, keep",
               "example_ja": "手荷物を預かる",
-              "example_ruby": "<ruby>手荷物<rt>てにもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>かる"
+              "example_ruby": "<ruby>手荷物<rt>てにもつ</rt></ruby>を<ruby>預<rt>あず</rt></ruby>かる",
+              "example_en": "Look after carry-on luggage."
             },
             {
               "term_ja": "貯金する",
@@ -397,7 +436,8 @@
               "ruby_html": "<ruby>貯金<rt>ちょきん</rt></ruby>する",
               "meaning_en": "to save money, put money in the bank",
               "example_ja": "毎月貯金する",
-              "example_ruby": "<ruby>毎月<rt>まいつき</rt></ruby><ruby>貯金<rt>ちょきん</rt></ruby>する"
+              "example_ruby": "<ruby>毎月<rt>まいつき</rt></ruby><ruby>貯金<rt>ちょきん</rt></ruby>する",
+              "example_en": "Save money every month."
             }
           ],
           "yattemiyou": [
@@ -701,7 +741,8 @@
               "ruby_html": "<ruby>行事<rt>ぎょうじ</rt></ruby>",
               "meaning_en": "event, function, observance",
               "example_ja": "年中行事に参加する",
-              "example_ruby": "<ruby>年中行事<rt>ねんじゅうぎょうじ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "<ruby>年中行事<rt>ねんじゅうぎょうじ</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in an annual event."
             },
             {
               "term_ja": "イベント",
@@ -709,7 +750,8 @@
               "ruby_html": "イベント",
               "meaning_en": "event",
               "example_ja": "イベントに参加する",
-              "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in an event."
             },
             {
               "term_ja": "参加する",
@@ -717,7 +759,8 @@
               "ruby_html": "<ruby>参加<rt>さんか</rt></ruby>する",
               "meaning_en": "to participate, take part in, join",
               "example_ja": "祭りに参加する",
-              "example_ruby": "<ruby>祭<rt>まつ</rt></ruby>りに<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "<ruby>祭<rt>まつ</rt></ruby>りに<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in a festival."
             },
             {
               "term_ja": "誕生する",
@@ -725,7 +768,8 @@
               "ruby_html": "<ruby>誕生<rt>たんじょう</rt></ruby>する",
               "meaning_en": "to be born, come into the world",
               "example_ja": "新しい命が誕生する",
-              "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>命<rt>いのち</rt></ruby>が<ruby>誕生<rt>たんじょう</rt></ruby>する"
+              "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>命<rt>いのち</rt></ruby>が<ruby>誕生<rt>たんじょう</rt></ruby>する",
+              "example_en": "A new life is born."
             },
             {
               "term_ja": "誕生会",
@@ -733,7 +777,8 @@
               "ruby_html": "<ruby>誕生会<rt>たんじょうかい</rt></ruby>",
               "meaning_en": "birthday party",
               "example_ja": "友達の誕生会を開く",
-              "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>誕生会<rt>たんじょうかい</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>く"
+              "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>の<ruby>誕生会<rt>たんじょうかい</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>く",
+              "example_en": "Hold a birthday party for a friend."
             },
             {
               "term_ja": "成人式",
@@ -741,7 +786,8 @@
               "ruby_html": "<ruby>成人式<rt>せいじんしき</rt></ruby>",
               "meaning_en": "Coming-of-Age ceremony",
               "example_ja": "成人式に出席する",
-              "example_ruby": "<ruby>成人式<rt>せいじんしき</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>する"
+              "example_ruby": "<ruby>成人式<rt>せいじんしき</rt></ruby>に<ruby>出席<rt>しゅっせき</rt></ruby>する",
+              "example_en": "Attend a Coming-of-Age ceremony."
             },
             {
               "term_ja": "式",
@@ -749,7 +795,8 @@
               "ruby_html": "<ruby>式<rt>しき</rt></ruby>",
               "meaning_en": "ceremony, ritual",
               "example_ja": "式を行う",
-              "example_ruby": "<ruby>式<rt>しき</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う"
+              "example_ruby": "<ruby>式<rt>しき</rt></ruby>を<ruby>行<rt>おこな</rt></ruby>う",
+              "example_en": "Hold a ceremony."
             },
             {
               "term_ja": "祝う",
@@ -757,7 +804,8 @@
               "ruby_html": "<ruby>祝<rt>いわ</rt></ruby>う",
               "meaning_en": "to celebrate, congratulate",
               "example_ja": "卒業を祝う",
-              "example_ruby": "<ruby>卒業<rt>そつぎょう</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う"
+              "example_ruby": "<ruby>卒業<rt>そつぎょう</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う",
+              "example_en": "Celebrate a graduation."
             },
             {
               "term_ja": "お祝い",
@@ -765,7 +813,8 @@
               "ruby_html": "お<ruby>祝<rt>いわ</rt></ruby>い",
               "meaning_en": "celebration, congratulatory gift",
               "example_ja": "結婚のお祝いを贈る",
-              "example_ruby": "<ruby>結婚<rt>けっこん</rt></ruby>のお<ruby>祝<rt>いわ</rt></ruby>いを<ruby>贈<rt>おく</rt></ruby>る"
+              "example_ruby": "<ruby>結婚<rt>けっこん</rt></ruby>のお<ruby>祝<rt>いわ</rt></ruby>いを<ruby>贈<rt>おく</rt></ruby>る",
+              "example_en": "Give a wedding gift."
             },
             {
               "term_ja": "記念する",
@@ -773,7 +822,8 @@
               "ruby_html": "<ruby>記念<rt>きねん</rt></ruby>する",
               "meaning_en": "to commemorate",
               "example_ja": "創立記念日を祝う",
-              "example_ruby": "<ruby>創立記念日<rt>そうりつきねんび</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う"
+              "example_ruby": "<ruby>創立記念日<rt>そうりつきねんび</rt></ruby>を<ruby>祝<rt>いわ</rt></ruby>う",
+              "example_en": "Celebrate the founding anniversary."
             },
             {
               "term_ja": "記念品",
@@ -781,7 +831,8 @@
               "ruby_html": "<ruby>記念品<rt>きねんひん</rt></ruby>",
               "meaning_en": "commemorative gift, souvenir, memento",
               "example_ja": "記念品をもらう",
-              "example_ruby": "<ruby>記念品<rt>きねんひん</rt></ruby>をもらう"
+              "example_ruby": "<ruby>記念品<rt>きねんひん</rt></ruby>をもらう",
+              "example_en": "Receive a commemorative gift."
             },
             {
               "term_ja": "贈る",
@@ -789,7 +840,8 @@
               "ruby_html": "<ruby>贈<rt>おく</rt></ruby>る",
               "meaning_en": "to give as a gift, present",
               "example_ja": "花束を贈る",
-              "example_ruby": "<ruby>花束<rt>はなたば</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>る"
+              "example_ruby": "<ruby>花束<rt>はなたば</rt></ruby>を<ruby>贈<rt>おく</rt></ruby>る",
+              "example_en": "Give a bouquet of flowers."
             },
             {
               "term_ja": "拍手する",
@@ -797,7 +849,8 @@
               "ruby_html": "<ruby>拍手<rt>はくしゅ</rt></ruby>する",
               "meaning_en": "to clap hands, applaud",
               "example_ja": "大きな拍手をする",
-              "example_ruby": "<ruby>大<rt>おお</rt></ruby>きな<ruby>拍手<rt>はくしゅ</rt></ruby>をする"
+              "example_ruby": "<ruby>大<rt>おお</rt></ruby>きな<ruby>拍手<rt>はくしゅ</rt></ruby>をする",
+              "example_en": "Give a big round of applause."
             },
             {
               "term_ja": "過ごす",
@@ -805,7 +858,8 @@
               "ruby_html": "<ruby>過<rt>す</rt></ruby>ごす",
               "meaning_en": "to spend (time), pass (time)",
               "example_ja": "楽しい時間を過ごす",
-              "example_ruby": "<ruby>楽<rt>たの</rt></ruby>しい<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごす"
+              "example_ruby": "<ruby>楽<rt>たの</rt></ruby>しい<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごす",
+              "example_en": "Spend an enjoyable time."
             },
             {
               "term_ja": "伝統",
@@ -813,7 +867,8 @@
               "ruby_html": "<ruby>伝統<rt>でんとう</rt></ruby>",
               "meaning_en": "tradition",
               "example_ja": "日本の伝統を守る",
-              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>伝統<rt>でんとう</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る"
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>伝統<rt>でんとう</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る",
+              "example_en": "Preserve Japanese traditions."
             },
             {
               "term_ja": "伝統的な",
@@ -821,7 +876,8 @@
               "ruby_html": "<ruby>伝統的<rt>でんとうてき</rt></ruby>な",
               "meaning_en": "traditional",
               "example_ja": "伝統的な祭り",
-              "example_ruby": "<ruby>伝統的<rt>でんとうてき</rt></ruby>な<ruby>祭<rt>まつ</rt></ruby>り"
+              "example_ruby": "<ruby>伝統的<rt>でんとうてき</rt></ruby>な<ruby>祭<rt>まつ</rt></ruby>り",
+              "example_en": "A traditional festival."
             },
             {
               "term_ja": "伝える",
@@ -829,7 +885,8 @@
               "ruby_html": "<ruby>伝<rt>つた</rt></ruby>える",
               "meaning_en": "to convey, transmit, pass down",
               "example_ja": "次の世代に伝える",
-              "example_ruby": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>世代<rt>せだい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>える"
+              "example_ruby": "<ruby>次<rt>つぎ</rt></ruby>の<ruby>世代<rt>せだい</rt></ruby>に<ruby>伝<rt>つた</rt></ruby>える",
+              "example_en": "Pass it on to the next generation."
             },
             {
               "term_ja": "シーズン",
@@ -837,7 +894,8 @@
               "ruby_html": "シーズン",
               "meaning_en": "season",
               "example_ja": "旅行のシーズン",
-              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>のシーズン"
+              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>のシーズン",
+              "example_en": "The travel season."
             },
             {
               "term_ja": "世紀",
@@ -845,7 +903,8 @@
               "ruby_html": "<ruby>世紀<rt>せいき</rt></ruby>",
               "meaning_en": "century",
               "example_ja": "21世紀の社会",
-              "example_ruby": "21<ruby>世紀<rt>せいき</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>"
+              "example_ruby": "21<ruby>世紀<rt>せいき</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>",
+              "example_en": "Society in the 21st century."
             }
           ],
           "yattemiyou": [
@@ -901,7 +960,8 @@
               "ruby_html": "<ruby>宗教<rt>しゅうきょう</rt></ruby>",
               "meaning_en": "religion",
               "example_ja": "宗教を信じる",
-              "example_ruby": "<ruby>宗教<rt>しゅうきょう</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる"
+              "example_ruby": "<ruby>宗教<rt>しゅうきょう</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる",
+              "example_en": "Believe in a religion."
             },
             {
               "term_ja": "仏教",
@@ -909,7 +969,8 @@
               "ruby_html": "<ruby>仏教<rt>ぶっきょう</rt></ruby>",
               "meaning_en": "Buddhism",
               "example_ja": "仏教の教え",
-              "example_ruby": "<ruby>仏教<rt>ぶっきょう</rt></ruby>の<ruby>教<rt>おし</rt></ruby>え"
+              "example_ruby": "<ruby>仏教<rt>ぶっきょう</rt></ruby>の<ruby>教<rt>おし</rt></ruby>え",
+              "example_en": "The teachings of Buddhism."
             },
             {
               "term_ja": "キリスト教",
@@ -917,7 +978,8 @@
               "ruby_html": "キリスト<ruby>教<rt>きょう</rt></ruby>",
               "meaning_en": "Christianity",
               "example_ja": "キリスト教の教会",
-              "example_ruby": "キリスト<ruby>教<rt>きょう</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>"
+              "example_ruby": "キリスト<ruby>教<rt>きょう</rt></ruby>の<ruby>教会<rt>きょうかい</rt></ruby>",
+              "example_en": "A Christian church."
             },
             {
               "term_ja": "イスラム教",
@@ -925,7 +987,8 @@
               "ruby_html": "イスラム<ruby>教<rt>きょう</rt></ruby>",
               "meaning_en": "Islam",
               "example_ja": "イスラム教の寺院",
-              "example_ruby": "イスラム<ruby>教<rt>きょう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby>"
+              "example_ruby": "イスラム<ruby>教<rt>きょう</rt></ruby>の<ruby>寺院<rt>じいん</rt></ruby>",
+              "example_en": "An Islamic temple (mosque)."
             },
             {
               "term_ja": "神",
@@ -933,7 +996,8 @@
               "ruby_html": "<ruby>神<rt>かみ</rt></ruby>",
               "meaning_en": "God, deity",
               "example_ja": "神を信じる",
-              "example_ruby": "<ruby>神<rt>かみ</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる"
+              "example_ruby": "<ruby>神<rt>かみ</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる",
+              "example_en": "Believe in God."
             },
             {
               "term_ja": "神社",
@@ -941,7 +1005,8 @@
               "ruby_html": "<ruby>神社<rt>じんじゃ</rt></ruby>",
               "meaning_en": "Shinto shrine",
               "example_ja": "神社にお参りする",
-              "example_ruby": "<ruby>神社<rt>じんじゃ</rt></ruby>にお<ruby>参<rt>まい</rt></ruby>りする"
+              "example_ruby": "<ruby>神社<rt>じんじゃ</rt></ruby>にお<ruby>参<rt>まい</rt></ruby>りする",
+              "example_en": "Pay a visit to a shrine."
             },
             {
               "term_ja": "寺",
@@ -949,7 +1014,8 @@
               "ruby_html": "<ruby>寺<rt>てら</rt></ruby>",
               "meaning_en": "Buddhist temple",
               "example_ja": "古い寺を訪ねる",
-              "example_ruby": "<ruby>古<rt>ふる</rt></ruby>い<ruby>寺<rt>てら</rt></ruby>を<ruby>訪<rt>たず</rt></ruby>ねる"
+              "example_ruby": "<ruby>古<rt>ふる</rt></ruby>い<ruby>寺<rt>てら</rt></ruby>を<ruby>訪<rt>たず</rt></ruby>ねる",
+              "example_en": "Visit an old temple."
             },
             {
               "term_ja": "祈る",
@@ -957,7 +1023,8 @@
               "ruby_html": "<ruby>祈<rt>いの</rt></ruby>る",
               "meaning_en": "to pray, wish",
               "example_ja": "平和を祈る",
-              "example_ruby": "<ruby>平和<rt>へいわ</rt></ruby>を<ruby>祈<rt>いの</rt></ruby>る"
+              "example_ruby": "<ruby>平和<rt>へいわ</rt></ruby>を<ruby>祈<rt>いの</rt></ruby>る",
+              "example_en": "Pray for peace."
             },
             {
               "term_ja": "お祈り",
@@ -965,7 +1032,8 @@
               "ruby_html": "お<ruby>祈<rt>いの</rt></ruby>り",
               "meaning_en": "prayer",
               "example_ja": "毎日お祈りをする",
-              "example_ruby": "<ruby>毎日<rt>まいにち</rt></ruby>お<ruby>祈<rt>いの</rt></ruby>りをする"
+              "example_ruby": "<ruby>毎日<rt>まいにち</rt></ruby>お<ruby>祈<rt>いの</rt></ruby>りをする",
+              "example_en": "Say prayers every day."
             },
             {
               "term_ja": "願う",
@@ -973,7 +1041,8 @@
               "ruby_html": "<ruby>願<rt>ねが</rt></ruby>う",
               "meaning_en": "to wish, desire, hope for",
               "example_ja": "健康を願う",
-              "example_ruby": "<ruby>健康<rt>けんこう</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う"
+              "example_ruby": "<ruby>健康<rt>けんこう</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う",
+              "example_en": "Wish for good health."
             },
             {
               "term_ja": "願い",
@@ -981,7 +1050,8 @@
               "ruby_html": "<ruby>願<rt>ねが</rt></ruby>い",
               "meaning_en": "wish, desire, request",
               "example_ja": "願いがかなう",
-              "example_ruby": "<ruby>願<rt>ねが</rt></ruby>いがかなう"
+              "example_ruby": "<ruby>願<rt>ねが</rt></ruby>いがかなう",
+              "example_en": "One's wish comes true."
             },
             {
               "term_ja": "手を合わせる",
@@ -989,7 +1059,8 @@
               "ruby_html": "<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる",
               "meaning_en": "to put hands together in prayer",
               "example_ja": "仏壇の前で手を合わせる",
-              "example_ruby": "<ruby>仏壇<rt>ぶつだん</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる"
+              "example_ruby": "<ruby>仏壇<rt>ぶつだん</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>で<ruby>手<rt>て</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる",
+              "example_en": "Put one's hands together in front of the household altar."
             },
             {
               "term_ja": "墓",
@@ -997,7 +1068,8 @@
               "ruby_html": "<ruby>墓<rt>はか</rt></ruby>",
               "meaning_en": "grave, tomb",
               "example_ja": "墓参りに行く",
-              "example_ruby": "<ruby>墓参<rt>はかまい</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>墓参<rt>はかまい</rt></ruby>りに<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go to visit a grave."
             },
             {
               "term_ja": "幸せ",
@@ -1005,7 +1077,8 @@
               "ruby_html": "<ruby>幸<rt>しあわ</rt></ruby>せ",
               "meaning_en": "happiness, happy, fortunate",
               "example_ja": "幸せに暮らす",
-              "example_ruby": "<ruby>幸<rt>しあわ</rt></ruby>せに<ruby>暮<rt>く</rt></ruby>らす"
+              "example_ruby": "<ruby>幸<rt>しあわ</rt></ruby>せに<ruby>暮<rt>く</rt></ruby>らす",
+              "example_en": "Live happily."
             },
             {
               "term_ja": "幸福",
@@ -1013,7 +1086,8 @@
               "ruby_html": "<ruby>幸福<rt>こうふく</rt></ruby>",
               "meaning_en": "happiness, felicity",
               "example_ja": "幸福な家庭を築く",
-              "example_ruby": "<ruby>幸福<rt>こうふく</rt></ruby>な<ruby>家庭<rt>かてい</rt></ruby>を<ruby>築<rt>きず</rt></ruby>く"
+              "example_ruby": "<ruby>幸福<rt>こうふく</rt></ruby>な<ruby>家庭<rt>かてい</rt></ruby>を<ruby>築<rt>きず</rt></ruby>く",
+              "example_en": "Build a happy family."
             },
             {
               "term_ja": "平和",
@@ -1021,7 +1095,8 @@
               "ruby_html": "<ruby>平和<rt>へいわ</rt></ruby>",
               "meaning_en": "peace, harmony, peaceful",
               "example_ja": "世界平和を願う",
-              "example_ruby": "<ruby>世界平和<rt>せかいへいわ</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う"
+              "example_ruby": "<ruby>世界平和<rt>せかいへいわ</rt></ruby>を<ruby>願<rt>ねが</rt></ruby>う",
+              "example_en": "Wish for world peace."
             },
             {
               "term_ja": "信じる",
@@ -1029,7 +1104,8 @@
               "ruby_html": "<ruby>信<rt>しん</rt></ruby>じる",
               "meaning_en": "to believe, trust in",
               "example_ja": "神の存在を信じる",
-              "example_ruby": "<ruby>神<rt>かみ</rt></ruby>の<ruby>存在<rt>そんざい</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる"
+              "example_ruby": "<ruby>神<rt>かみ</rt></ruby>の<ruby>存在<rt>そんざい</rt></ruby>を<ruby>信<rt>しん</rt></ruby>じる",
+              "example_en": "Believe in the existence of God."
             },
             {
               "term_ja": "運",
@@ -1037,7 +1113,8 @@
               "ruby_html": "<ruby>運<rt>うん</rt></ruby>",
               "meaning_en": "luck, fortune",
               "example_ja": "運がいい",
-              "example_ruby": "<ruby>運<rt>うん</rt></ruby>がいい"
+              "example_ruby": "<ruby>運<rt>うん</rt></ruby>がいい",
+              "example_en": "I'm lucky."
             },
             {
               "term_ja": "占い",
@@ -1045,7 +1122,8 @@
               "ruby_html": "<ruby>占<rt>うらな</rt></ruby>い",
               "meaning_en": "fortune-telling, divination",
               "example_ja": "星占いで運勢を見る",
-              "example_ruby": "<ruby>星占<rt>ほしうらな</rt></ruby>いで<ruby>運勢<rt>うんせい</rt></ruby>を<ruby>見<rt>み</rt></ruby>る"
+              "example_ruby": "<ruby>星占<rt>ほしうらな</rt></ruby>いで<ruby>運勢<rt>うんせい</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
+              "example_en": "Check one's fortune with a horoscope."
             },
             {
               "term_ja": "占う",
@@ -1053,7 +1131,8 @@
               "ruby_html": "<ruby>占<rt>うらな</rt></ruby>う",
               "meaning_en": "to tell fortunes, divine",
               "example_ja": "未来を占う",
-              "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>を<ruby>占<rt>うらな</rt></ruby>う"
+              "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>を<ruby>占<rt>うらな</rt></ruby>う",
+              "example_en": "Tell fortunes about the future."
             },
             {
               "term_ja": "当たる",
@@ -1061,7 +1140,8 @@
               "ruby_html": "<ruby>当<rt>あ</rt></ruby>たる",
               "meaning_en": "to hit, come true, be accurate",
               "example_ja": "占いが当たる",
-              "example_ruby": "<ruby>占<rt>うらな</rt></ruby>いが<ruby>当<rt>あ</rt></ruby>たる"
+              "example_ruby": "<ruby>占<rt>うらな</rt></ruby>いが<ruby>当<rt>あ</rt></ruby>たる",
+              "example_en": "The fortune-telling comes true."
             },
             {
               "term_ja": "未来",
@@ -1069,7 +1149,8 @@
               "ruby_html": "<ruby>未来<rt>みらい</rt></ruby>",
               "meaning_en": "future",
               "example_ja": "明るい未来",
-              "example_ruby": "<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>"
+              "example_ruby": "<ruby>明<rt>あか</rt></ruby>るい<ruby>未来<rt>みらい</rt></ruby>",
+              "example_en": "A bright future."
             },
             {
               "term_ja": "過去",
@@ -1077,7 +1158,8 @@
               "ruby_html": "<ruby>過去<rt>かこ</rt></ruby>",
               "meaning_en": "past",
               "example_ja": "過去を振り返る",
-              "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る"
+              "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る",
+              "example_en": "Look back on the past."
             }
           ],
           "yattemiyou": [
@@ -1457,7 +1539,8 @@
               "ruby_html": "<ruby>四季<rt>しき</rt></ruby>",
               "meaning_en": "four seasons",
               "example_ja": "日本の四季を楽しむ",
-              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>四季<rt>しき</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむ"
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>四季<rt>しき</rt></ruby>を<ruby>楽<rt>たの</rt></ruby>しむ",
+              "example_en": "Enjoy Japan's four seasons."
             },
             {
               "term_ja": "爽やかな",
@@ -1465,7 +1548,8 @@
               "ruby_html": "<ruby>爽<rt>さわ</rt></ruby>やかな",
               "meaning_en": "refreshing, brisk, pleasant",
               "example_ja": "爽やかな風が吹く",
-              "example_ruby": "<ruby>爽<rt>さわ</rt></ruby>やかな<ruby>風<rt>かぜ</rt></ruby>が<ruby>吹<rt>ふ</rt></ruby>く"
+              "example_ruby": "<ruby>爽<rt>さわ</rt></ruby>やかな<ruby>風<rt>かぜ</rt></ruby>が<ruby>吹<rt>ふ</rt></ruby>く",
+              "example_en": "A refreshing breeze blows."
             },
             {
               "term_ja": "蒸し暑い",
@@ -1473,7 +1557,8 @@
               "ruby_html": "<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>い",
               "meaning_en": "humid, sultry, muggy",
               "example_ja": "蒸し暑い夜",
-              "example_ruby": "<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>い<ruby>夜<rt>よる</rt></ruby>"
+              "example_ruby": "<ruby>蒸<rt>む</rt></ruby>し<ruby>暑<rt>あつ</rt></ruby>い<ruby>夜<rt>よる</rt></ruby>",
+              "example_en": "A humid night."
             },
             {
               "term_ja": "梅雨",
@@ -1481,7 +1566,8 @@
               "ruby_html": "<ruby>梅雨<rt>つゆ</rt></ruby>",
               "meaning_en": "rainy season",
               "example_ja": "梅雨に入る",
-              "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "The rainy season begins."
             },
             {
               "term_ja": "明ける",
@@ -1489,7 +1575,8 @@
               "ruby_html": "<ruby>明<rt>あ</rt></ruby>ける",
               "meaning_en": "to dawn, to end (rainy season)",
               "example_ja": "梅雨が明ける",
-              "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>が<ruby>明<rt>あ</rt></ruby>ける"
+              "example_ruby": "<ruby>梅雨<rt>つゆ</rt></ruby>が<ruby>明<rt>あ</rt></ruby>ける",
+              "example_en": "The rainy season ends."
             },
             {
               "term_ja": "太陽",
@@ -1497,7 +1584,8 @@
               "ruby_html": "<ruby>太陽<rt>たいよう</rt></ruby>",
               "meaning_en": "the sun",
               "example_ja": "太陽が昇る",
-              "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る"
+              "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>昇<rt>のぼ</rt></ruby>る",
+              "example_en": "The sun rises."
             },
             {
               "term_ja": "日",
@@ -1505,7 +1593,8 @@
               "ruby_html": "<ruby>日<rt>ひ</rt></ruby>",
               "meaning_en": "sun, daylight, sunlight",
               "example_ja": "日が沈む",
-              "example_ruby": "<ruby>日<rt>ひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>む"
+              "example_ruby": "<ruby>日<rt>ひ</rt></ruby>が<ruby>沈<rt>しず</rt></ruby>む",
+              "example_en": "The sun sets."
             },
             {
               "term_ja": "沈む",
@@ -1513,7 +1602,8 @@
               "ruby_html": "<ruby>沈<rt>しず</rt></ruby>む",
               "meaning_en": "to sink, to set (sun)",
               "example_ja": "太陽が海に沈む",
-              "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>む"
+              "example_ruby": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>海<rt>うみ</rt></ruby>に<ruby>沈<rt>しず</rt></ruby>む",
+              "example_en": "The sun sinks into the sea."
             },
             {
               "term_ja": "まぶしい",
@@ -1521,7 +1611,8 @@
               "ruby_html": "まぶしい",
               "meaning_en": "dazzling, radiant, blindingly bright",
               "example_ja": "日差しがまぶしい",
-              "example_ruby": "<ruby>日差<rt>ひざ</rt></ruby>しがまぶしい"
+              "example_ruby": "<ruby>日差<rt>ひざ</rt></ruby>しがまぶしい",
+              "example_en": "The sunlight is dazzling."
             },
             {
               "term_ja": "激しい",
@@ -1529,7 +1620,8 @@
               "ruby_html": "<ruby>激<rt>はげ</rt></ruby>しい",
               "meaning_en": "severe, violent, intense, furious",
               "example_ja": "激しい雨が降る",
-              "example_ruby": "<ruby>激<rt>はげ</rt></ruby>しい<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る"
+              "example_ruby": "<ruby>激<rt>はげ</rt></ruby>しい<ruby>雨<rt>あめ</rt></ruby>が<ruby>降<rt>ふ</rt></ruby>る",
+              "example_en": "Heavy rain falls."
             },
             {
               "term_ja": "豪雨",
@@ -1537,7 +1629,8 @@
               "ruby_html": "<ruby>豪雨<rt>ごうう</rt></ruby>",
               "meaning_en": "torrential rain, torrential downpour",
               "example_ja": "集中豪雨に遭う",
-              "example_ruby": "<ruby>集中豪雨<rt>しゅうちゅうごうう</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う"
+              "example_ruby": "<ruby>集中豪雨<rt>しゅうちゅうごうう</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う",
+              "example_en": "Get caught in a localized torrential downpour."
             },
             {
               "term_ja": "雷",
@@ -1545,7 +1638,8 @@
               "ruby_html": "<ruby>雷<rt>かみなり</rt></ruby>",
               "meaning_en": "thunder, lightning",
               "example_ja": "雷が鳴る",
-              "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る"
+              "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る",
+              "example_en": "Thunder rumbles."
             },
             {
               "term_ja": "鳴る",
@@ -1553,7 +1647,8 @@
               "ruby_html": "<ruby>鳴<rt>な</rt></ruby>る",
               "meaning_en": "to roar, rumble, ring",
               "example_ja": "雷がゴロゴロ鳴る",
-              "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>がゴロゴロ<ruby>鳴<rt>な</rt></ruby>る"
+              "example_ruby": "<ruby>雷<rt>かみなり</rt></ruby>がゴロゴロ<ruby>鳴<rt>な</rt></ruby>る",
+              "example_en": "Thunder rumbles."
             },
             {
               "term_ja": "虹",
@@ -1561,7 +1656,8 @@
               "ruby_html": "<ruby>虹<rt>にじ</rt></ruby>",
               "meaning_en": "rainbow",
               "example_ja": "雨上がりに虹が出る",
-              "example_ruby": "<ruby>雨上<rt>あめあ</rt></ruby>がりに<ruby>虹<rt>にじ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る"
+              "example_ruby": "<ruby>雨上<rt>あめあ</rt></ruby>がりに<ruby>虹<rt>にじ</rt></ruby>が<ruby>出<rt>で</rt></ruby>る",
+              "example_en": "A rainbow appears after the rain."
             },
             {
               "term_ja": "乾燥する",
@@ -1569,7 +1665,8 @@
               "ruby_html": "<ruby>乾燥<rt>かんそう</rt></ruby>する",
               "meaning_en": "to dry, to desiccate",
               "example_ja": "冬は空気が乾燥する",
-              "example_ruby": "<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>空気<rt>くうき</rt></ruby>が<ruby>乾燥<rt>かんそう</rt></ruby>する"
+              "example_ruby": "<ruby>冬<rt>ふゆ</rt></ruby>は<ruby>空気<rt>くうき</rt></ruby>が<ruby>乾燥<rt>かんそう</rt></ruby>する",
+              "example_en": "The air gets dry in winter."
             },
             {
               "term_ja": "湿度",
@@ -1577,7 +1674,8 @@
               "ruby_html": "<ruby>湿度<rt>しつど</rt></ruby>",
               "meaning_en": "level of humidity",
               "example_ja": "湿度が高い",
-              "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い"
+              "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い",
+              "example_en": "The humidity is high."
             },
             {
               "term_ja": "パーセント",
@@ -1585,7 +1683,8 @@
               "ruby_html": "パーセント",
               "meaning_en": "percent",
               "example_ja": "湿度は60パーセントだ",
-              "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>は60パーセントだ"
+              "example_ruby": "<ruby>湿度<rt>しつど</rt></ruby>は60パーセントだ",
+              "example_en": "The humidity is 60 percent."
             },
             {
               "term_ja": "気温",
@@ -1593,7 +1692,8 @@
               "ruby_html": "<ruby>気温<rt>きおん</rt></ruby>",
               "meaning_en": "air temperature",
               "example_ja": "最高気温を記録する",
-              "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>を<ruby>記録<rt>きろく</rt></ruby>する"
+              "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>を<ruby>記録<rt>きろく</rt></ruby>する",
+              "example_en": "Record the highest temperature."
             },
             {
               "term_ja": "超える",
@@ -1601,7 +1701,8 @@
               "ruby_html": "<ruby>超<rt>こ</rt></ruby>える",
               "meaning_en": "to exceed, go over, pass",
               "example_ja": "30度を超える",
-              "example_ruby": "30<ruby>度<rt>ど</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える"
+              "example_ruby": "30<ruby>度<rt>ど</rt></ruby>を<ruby>超<rt>こ</rt></ruby>える",
+              "example_en": "Exceed 30 degrees."
             },
             {
               "term_ja": "予報",
@@ -1609,7 +1710,8 @@
               "ruby_html": "<ruby>予報<rt>よほう</rt></ruby>",
               "meaning_en": "forecast, prediction",
               "example_ja": "天気予報を見る",
-              "example_ruby": "<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>る"
+              "example_ruby": "<ruby>天気予報<rt>てんきよほう</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
+              "example_en": "Check the weather forecast."
             },
             {
               "term_ja": "確率",
@@ -1617,7 +1719,8 @@
               "ruby_html": "<ruby>確率<rt>かくりつ</rt></ruby>",
               "meaning_en": "probability, likelihood",
               "example_ja": "降水確率が80％だ",
-              "example_ruby": "<ruby>降水確率<rt>こうすいかくりつ</rt></ruby>が80％だ"
+              "example_ruby": "<ruby>降水確率<rt>こうすいかくりつ</rt></ruby>が80％だ",
+              "example_en": "The chance of rain is 80 percent."
             },
             {
               "term_ja": "近付く",
@@ -1625,7 +1728,8 @@
               "ruby_html": "<ruby>近付<rt>ちかづ</rt></ruby>く",
               "meaning_en": "to approach, draw near",
               "example_ja": "大型の台風が近付く",
-              "example_ruby": "<ruby>大型<rt>おおがた</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近付<rt>ちかづ</rt></ruby>く"
+              "example_ruby": "<ruby>大型<rt>おおがた</rt></ruby>の<ruby>台風<rt>たいふう</rt></ruby>が<ruby>近付<rt>ちかづ</rt></ruby>く",
+              "example_en": "A large typhoon approaches."
             }
           ],
           "yattemiyou": [
@@ -1675,7 +1779,8 @@
               "ruby_html": "<ruby>大陸<rt>たいりく</rt></ruby>",
               "meaning_en": "continent",
               "example_ja": "ユーラシア大陸",
-              "example_ruby": "ユーラシア<ruby>大陸<rt>たいりく</rt></ruby>"
+              "example_ruby": "ユーラシア<ruby>大陸<rt>たいりく</rt></ruby>",
+              "example_en": "The Eurasian continent."
             },
             {
               "term_ja": "島",
@@ -1683,7 +1788,8 @@
               "ruby_html": "<ruby>島<rt>しま</rt></ruby>",
               "meaning_en": "island",
               "example_ja": "小さな島に住む",
-              "example_ruby": "<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>に<ruby>住<rt>す</rt></ruby>む"
+              "example_ruby": "<ruby>小<rt>ちい</rt></ruby>さな<ruby>島<rt>しま</rt></ruby>に<ruby>住<rt>す</rt></ruby>む",
+              "example_en": "Live on a small island."
             },
             {
               "term_ja": "火山",
@@ -1691,7 +1797,8 @@
               "ruby_html": "<ruby>火山<rt>かざん</rt></ruby>",
               "meaning_en": "volcano",
               "example_ja": "火山が噴火する",
-              "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>噴火<rt>ふんか</rt></ruby>する"
+              "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>噴火<rt>ふんか</rt></ruby>する",
+              "example_en": "A volcano erupts."
             },
             {
               "term_ja": "爆発する",
@@ -1699,7 +1806,8 @@
               "ruby_html": "<ruby>爆発<rt>ばくはつ</rt></ruby>する",
               "meaning_en": "to explode, erupt",
               "example_ja": "火山が爆発する",
-              "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>爆発<rt>ばくはつ</rt></ruby>する"
+              "example_ruby": "<ruby>火山<rt>かざん</rt></ruby>が<ruby>爆発<rt>ばくはつ</rt></ruby>する",
+              "example_en": "A volcano erupts."
             },
             {
               "term_ja": "砂漠",
@@ -1707,7 +1815,8 @@
               "ruby_html": "<ruby>砂漠<rt>さばく</rt></ruby>",
               "meaning_en": "desert",
               "example_ja": "砂漠が広がる",
-              "example_ruby": "<ruby>砂漠<rt>さばく</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる"
+              "example_ruby": "<ruby>砂漠<rt>さばく</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる",
+              "example_en": "The desert stretches out."
             },
             {
               "term_ja": "湖",
@@ -1715,7 +1824,8 @@
               "ruby_html": "<ruby>湖<rt>みずうみ</rt></ruby>",
               "meaning_en": "lake",
               "example_ja": "湖のほとりを歩く",
-              "example_ruby": "<ruby>湖<rt>みずうみ</rt></ruby>のほとりを<ruby>歩<rt>ある</rt></ruby>く"
+              "example_ruby": "<ruby>湖<rt>みずうみ</rt></ruby>のほとりを<ruby>歩<rt>ある</rt></ruby>く",
+              "example_en": "Walk along the lakeshore."
             },
             {
               "term_ja": "あふれる",
@@ -1723,7 +1833,8 @@
               "ruby_html": "あふれる",
               "meaning_en": "to overflow, spill over",
               "example_ja": "川の水があふれる",
-              "example_ruby": "<ruby>川<rt>かわ</rt></ruby>の<ruby>水<rt>みず</rt></ruby>があふれる"
+              "example_ruby": "<ruby>川<rt>かわ</rt></ruby>の<ruby>水<rt>みず</rt></ruby>があふれる",
+              "example_en": "The river water overflows."
             },
             {
               "term_ja": "浮かぶ",
@@ -1731,7 +1842,8 @@
               "ruby_html": "<ruby>浮<rt>う</rt></ruby>かぶ",
               "meaning_en": "to float, surface, come to mind",
               "example_ja": "ボートが水に浮かぶ",
-              "example_ruby": "ボートが<ruby>水<rt>みず</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ"
+              "example_ruby": "ボートが<ruby>水<rt>みず</rt></ruby>に<ruby>浮<rt>う</rt></ruby>かぶ",
+              "example_en": "A boat floats on the water."
             },
             {
               "term_ja": "地域",
@@ -1739,7 +1851,8 @@
               "ruby_html": "<ruby>地域<rt>ちいき</rt></ruby>",
               "meaning_en": "region, local area, community",
               "example_ja": "地域のイベント",
-              "example_ruby": "<ruby>地域<rt>ちいき</rt></ruby>のイベント"
+              "example_ruby": "<ruby>地域<rt>ちいき</rt></ruby>のイベント",
+              "example_en": "A local community event."
             },
             {
               "term_ja": "地方",
@@ -1747,7 +1860,8 @@
               "ruby_html": "<ruby>地方<rt>ちほう</rt></ruby>",
               "meaning_en": "region, rural area, provincial district",
               "example_ja": "地方都市に住む",
-              "example_ruby": "<ruby>地方都市<rt>ちほうとし</rt></ruby>に<ruby>住<rt>す</rt></ruby>む"
+              "example_ruby": "<ruby>地方都市<rt>ちほうとし</rt></ruby>に<ruby>住<rt>す</rt></ruby>む",
+              "example_en": "Live in a regional city."
             },
             {
               "term_ja": "都会",
@@ -1755,7 +1869,8 @@
               "ruby_html": "<ruby>都会<rt>とかい</rt></ruby>",
               "meaning_en": "big city, metropolis",
               "example_ja": "都会の生活",
-              "example_ruby": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>"
+              "example_ruby": "<ruby>都会<rt>とかい</rt></ruby>の<ruby>生活<rt>せいかつ</rt></ruby>",
+              "example_en": "City life."
             },
             {
               "term_ja": "田舎",
@@ -1763,7 +1878,8 @@
               "ruby_html": "<ruby>田舎<rt>いなか</rt></ruby>",
               "meaning_en": "countryside, rural parts, rural hometown",
               "example_ja": "田舎でのんびり暮らす",
-              "example_ruby": "<ruby>田舎<rt>いなか</rt></ruby>でのんびり<ruby>暮<rt>く</rt></ruby>らす"
+              "example_ruby": "<ruby>田舎<rt>いなか</rt></ruby>でのんびり<ruby>暮<rt>く</rt></ruby>らす",
+              "example_en": "Live a relaxed life in the countryside."
             },
             {
               "term_ja": "故郷",
@@ -1771,7 +1887,8 @@
               "ruby_html": "<ruby>故郷<rt>こきょう</rt></ruby>",
               "meaning_en": "hometown, birthplace, home country",
               "example_ja": "故郷を懐かしく思う",
-              "example_ruby": "<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>懐<rt>なつ</rt></ruby>かしく<ruby>思<rt>おも</rt></ruby>う"
+              "example_ruby": "<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>懐<rt>なつ</rt></ruby>かしく<ruby>思<rt>おも</rt></ruby>う",
+              "example_en": "Think fondly of one's hometown."
             },
             {
               "term_ja": "ふるさと",
@@ -1779,7 +1896,8 @@
               "ruby_html": "ふるさと",
               "meaning_en": "hometown, native place",
               "example_ja": "ふるさとの料理",
-              "example_ruby": "ふるさとの<ruby>料理<rt>りょうり</rt></ruby>"
+              "example_ruby": "ふるさとの<ruby>料理<rt>りょうり</rt></ruby>",
+              "example_en": "Food from one's hometown."
             },
             {
               "term_ja": "懐かしい",
@@ -1787,7 +1905,8 @@
               "ruby_html": "<ruby>懐<rt>なつ</rt></ruby>かしい",
               "meaning_en": "dear, nostalgic, fondly remembered",
               "example_ja": "懐かしい音楽",
-              "example_ruby": "<ruby>懐<rt>なつ</rt></ruby>かしい<ruby>音楽<rt>おんがく</rt></ruby>"
+              "example_ruby": "<ruby>懐<rt>なつ</rt></ruby>かしい<ruby>音楽<rt>おんがく</rt></ruby>",
+              "example_en": "Nostalgic music."
             },
             {
               "term_ja": "離れる",
@@ -1795,7 +1914,8 @@
               "ruby_html": "<ruby>離<rt>はな</rt></ruby>れる",
               "meaning_en": "to leave, get separated from, depart",
               "example_ja": "生まれ故郷を離れる",
-              "example_ruby": "<ruby>生<rt>う</rt></ruby>まれ<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れる"
+              "example_ruby": "<ruby>生<rt>う</rt></ruby>まれ<ruby>故郷<rt>こきょう</rt></ruby>を<ruby>離<rt>はな</rt></ruby>れる",
+              "example_en": "Leave one's hometown."
             },
             {
               "term_ja": "広がる",
@@ -1803,7 +1923,8 @@
               "ruby_html": "<ruby>広<rt>ひろ</rt></ruby>がる",
               "meaning_en": "to spread out, extend, unfold",
               "example_ja": "草原が広がる",
-              "example_ruby": "<ruby>草原<rt>そうげん</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる"
+              "example_ruby": "<ruby>草原<rt>そうげん</rt></ruby>が<ruby>広<rt>ひろ</rt></ruby>がる",
+              "example_en": "A meadow stretches out."
             },
             {
               "term_ja": "眺める",
@@ -1811,7 +1932,8 @@
               "ruby_html": "<ruby>眺<rt>なが</rt></ruby>める",
               "meaning_en": "to look at, view, gaze at",
               "example_ja": "山頂から町を眺める",
-              "example_ruby": "<ruby>山頂<rt>さんちょう</rt></ruby>から<ruby>町<rt>まち</rt></ruby>を<ruby>眺<rt>なが</rt></ruby>める"
+              "example_ruby": "<ruby>山頂<rt>さんちょう</rt></ruby>から<ruby>町<rt>まち</rt></ruby>を<ruby>眺<rt>なが</rt></ruby>める",
+              "example_en": "Look out over the town from the summit."
             },
             {
               "term_ja": "眺め",
@@ -1819,7 +1941,8 @@
               "ruby_html": "<ruby>眺<rt>なが</rt></ruby>め",
               "meaning_en": "view, outlook, landscape",
               "example_ja": "部屋からの眺めがいい",
-              "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>からの<ruby>眺<rt>なが</rt></ruby>めがいい"
+              "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>からの<ruby>眺<rt>なが</rt></ruby>めがいい",
+              "example_en": "The view from the room is good."
             },
             {
               "term_ja": "農業",
@@ -1827,7 +1950,8 @@
               "ruby_html": "<ruby>農業<rt>のうぎょう</rt></ruby>",
               "meaning_en": "agriculture, farming",
               "example_ja": "農業に従事する",
-              "example_ruby": "<ruby>農業<rt>のうぎょう</rt></ruby>に<ruby>従事<rt>じゅうじ</rt></ruby>する"
+              "example_ruby": "<ruby>農業<rt>のうぎょう</rt></ruby>に<ruby>従事<rt>じゅうじ</rt></ruby>する",
+              "example_en": "Work in agriculture."
             },
             {
               "term_ja": "漁業",
@@ -1835,7 +1959,8 @@
               "ruby_html": "<ruby>漁業<rt>ぎょぎょう</rt></ruby>",
               "meaning_en": "fishery, fishing industry",
               "example_ja": "漁業で栄えた町",
-              "example_ruby": "<ruby>漁業<rt>ぎょぎょう</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えた<ruby>町<rt>まち</rt></ruby>"
+              "example_ruby": "<ruby>漁業<rt>ぎょぎょう</rt></ruby>で<ruby>栄<rt>さか</rt></ruby>えた<ruby>町<rt>まち</rt></ruby>",
+              "example_en": "A town that prospered through fishing."
             },
             {
               "term_ja": "盛んな",
@@ -1843,7 +1968,8 @@
               "ruby_html": "<ruby>盛<rt>さかん</rt></ruby>な",
               "meaning_en": "thriving, prosperous, active",
               "example_ja": "観光が盛んだ",
-              "example_ruby": "<ruby>観光<rt>かんこう</rt></ruby>が<ruby>盛<rt>さかん</rt></ruby>だ"
+              "example_ruby": "<ruby>観光<rt>かんこう</rt></ruby>が<ruby>盛<rt>さかん</rt></ruby>だ",
+              "example_en": "Tourism is thriving."
             },
             {
               "term_ja": "止む",
@@ -1851,7 +1977,8 @@
               "ruby_html": "<ruby>止<rt>や</rt></ruby>む",
               "meaning_en": "to stop, cease (rain, wind)",
               "example_ja": "雨が止むのを待つ",
-              "example_ruby": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>止<rt>や</rt></ruby>むのを<ruby>待<rt>ま</rt></ruby>つ"
+              "example_ruby": "<ruby>雨<rt>あめ</rt></ruby>が<ruby>止<rt>や</rt></ruby>むのを<ruby>待<rt>ま</rt></ruby>つ",
+              "example_en": "Wait for the rain to stop."
             }
           ],
           "yattemiyou": [
@@ -2311,7 +2438,8 @@
               "ruby_html": "<ruby>植物<rt>しょくぶつ</rt></ruby>",
               "meaning_en": "plant, vegetation",
               "example_ja": "植物を育てる",
-              "example_ruby": "<ruby>植物<rt>しょくぶつ</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+              "example_ruby": "<ruby>植物<rt>しょくぶつ</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
+              "example_en": "Grow plants."
             },
             {
               "term_ja": "植える",
@@ -2319,7 +2447,8 @@
               "ruby_html": "<ruby>植<rt>う</rt></ruby>える",
               "meaning_en": "to plant, sow",
               "example_ja": "庭に花の種を植える",
-              "example_ruby": "<ruby>庭<rt>にわ</rt></ruby>に<ruby>花<rt>はな</rt></ruby>の<ruby>種<rt>たね</rt></ruby>を<ruby>植<rt>う</rt></ruby>える"
+              "example_ruby": "<ruby>庭<rt>にわ</rt></ruby>に<ruby>花<rt>はな</rt></ruby>の<ruby>種<rt>たね</rt></ruby>を<ruby>植<rt>う</rt></ruby>える",
+              "example_en": "Plant flower seeds in the garden."
             },
             {
               "term_ja": "育てる",
@@ -2327,7 +2456,8 @@
               "ruby_html": "<ruby>育<rt>そだ</rt></ruby>てる",
               "meaning_en": "to raise, bring up, grow",
               "example_ja": "野菜を育てる",
-              "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+              "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
+              "example_en": "Grow vegetables."
             },
             {
               "term_ja": "育つ",
@@ -2335,7 +2465,8 @@
               "ruby_html": "<ruby>育<rt>そだ</rt></ruby>つ",
               "meaning_en": "to grow, be brought up",
               "example_ja": "元気に育つ",
-              "example_ruby": "<ruby>元気<rt>げんき</rt></ruby>に<ruby>育<rt>そだ</rt></ruby>つ"
+              "example_ruby": "<ruby>元気<rt>げんき</rt></ruby>に<ruby>育<rt>そだ</rt></ruby>つ",
+              "example_en": "Grow up healthy."
             },
             {
               "term_ja": "芽",
@@ -2343,7 +2474,8 @@
               "ruby_html": "<ruby>芽<rt>め</rt></ruby>",
               "meaning_en": "sprout, shoot, bud",
               "example_ja": "春になって芽が出る",
-              "example_ruby": "<ruby>春<rt>はる</rt></ruby>になって<ruby>芽<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>る"
+              "example_ruby": "<ruby>春<rt>はる</rt></ruby>になって<ruby>芽<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>る",
+              "example_en": "Sprouts come out in spring."
             },
             {
               "term_ja": "伸びる",
@@ -2351,7 +2483,8 @@
               "ruby_html": "<ruby>伸<rt>の</rt></ruby>びる",
               "meaning_en": "to grow tall, extend, stretch",
               "example_ja": "茎がぐんぐん伸びる",
-              "example_ruby": "<ruby>茎<rt>くき</rt></ruby>がぐんぐん<ruby>伸<rt>の</rt></ruby>びる"
+              "example_ruby": "<ruby>茎<rt>くき</rt></ruby>がぐんぐん<ruby>伸<rt>の</rt></ruby>びる",
+              "example_en": "The stems grow quickly."
             },
             {
               "term_ja": "枯れる",
@@ -2359,7 +2492,8 @@
               "ruby_html": "<ruby>枯<rt>か</rt></ruby>れる",
               "meaning_en": "to wither, die (of a plant)",
               "example_ja": "水が足りなくて花が枯れる",
-              "example_ruby": "<ruby>水<rt>みず</rt></ruby>が<ruby>足<rt>た</rt></ruby>りなくて<ruby>花<rt>はな</rt></ruby>が<ruby>枯<rt>か</rt></ruby>れる"
+              "example_ruby": "<ruby>水<rt>みず</rt></ruby>が<ruby>足<rt>た</rt></ruby>りなくて<ruby>花<rt>はな</rt></ruby>が<ruby>枯<rt>か</rt></ruby>れる",
+              "example_en": "The flowers wither from lack of water."
             },
             {
               "term_ja": "散る",
@@ -2367,7 +2501,8 @@
               "ruby_html": "<ruby>散<rt>ち</rt></ruby>る",
               "meaning_en": "to fall, scatter (petals/leaves)",
               "example_ja": "桜の花が散る",
-              "example_ruby": "<ruby>桜<rt>さくら</rt></ruby>の<ruby>花<rt>はな</rt></ruby>が<ruby>散<rt>ち</rt></ruby>る"
+              "example_ruby": "<ruby>桜<rt>さくら</rt></ruby>の<ruby>花<rt>はな</rt></ruby>が<ruby>散<rt>ち</rt></ruby>る",
+              "example_en": "The cherry blossoms scatter."
             },
             {
               "term_ja": "果実",
@@ -2375,7 +2510,8 @@
               "ruby_html": "<ruby>果実<rt>かじつ</rt></ruby>",
               "meaning_en": "fruit, berry, nut",
               "example_ja": "豊かな果実が実る",
-              "example_ruby": "<ruby>豊<rt>ゆた</rt></ruby>かな<ruby>果実<rt>かじつ</rt></ruby>が<ruby>実<rt>みの</rt></ruby>る"
+              "example_ruby": "<ruby>豊<rt>ゆた</rt></ruby>かな<ruby>果実<rt>かじつ</rt></ruby>が<ruby>実<rt>みの</rt></ruby>る",
+              "example_en": "Rich fruit ripens."
             },
             {
               "term_ja": "採る",
@@ -2383,7 +2519,8 @@
               "ruby_html": "<ruby>採<rt>と</rt></ruby>る",
               "meaning_en": "to pick, harvest, gather",
               "example_ja": "果実を採る",
-              "example_ruby": "<ruby>果実<rt>かじつ</rt></ruby>を<ruby>採<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>果実<rt>かじつ</rt></ruby>を<ruby>採<rt>と</rt></ruby>る",
+              "example_en": "Pick the fruit."
             },
             {
               "term_ja": "新鮮な",
@@ -2391,7 +2528,8 @@
               "ruby_html": "<ruby>新鮮<rt>しんせん</rt></ruby>な",
               "meaning_en": "fresh",
               "example_ja": "新鮮な野菜と果物",
-              "example_ruby": "<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>野菜<rt>やさい</rt></ruby>と<ruby>果物<rt>くだもの</rt></ruby>"
+              "example_ruby": "<ruby>新鮮<rt>しんせん</rt></ruby>な<ruby>野菜<rt>やさい</rt></ruby>と<ruby>果物<rt>くだもの</rt></ruby>",
+              "example_en": "Fresh vegetables and fruit."
             },
             {
               "term_ja": "種類",
@@ -2399,7 +2537,8 @@
               "ruby_html": "<ruby>種類<rt>しゅるい</rt></ruby>",
               "meaning_en": "variety, kind, type, species",
               "example_ja": "多くの種類の植物",
-              "example_ruby": "<ruby>多<rt>おお</rt></ruby>くの<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>植物<rt>しょくぶつ</rt></ruby>"
+              "example_ruby": "<ruby>多<rt>おお</rt></ruby>くの<ruby>種類<rt>しゅるい</rt></ruby>の<ruby>植物<rt>しょくぶつ</rt></ruby>",
+              "example_en": "Many kinds of plants."
             },
             {
               "term_ja": "豊富な",
@@ -2407,7 +2546,8 @@
               "ruby_html": "<ruby>豊富<rt>ほうふ</rt></ruby>な",
               "meaning_en": "abundant, plentiful, rich",
               "example_ja": "栄養が豊富な食べ物",
-              "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>が<ruby>豊富<rt>ほうふ</rt></ruby>な<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>"
+              "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>が<ruby>豊富<rt>ほうふ</rt></ruby>な<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>",
+              "example_en": "Food rich in nutrition."
             },
             {
               "term_ja": "栄養",
@@ -2415,7 +2555,8 @@
               "ruby_html": "<ruby>栄養<rt>えいよう</rt></ruby>",
               "meaning_en": "nutrition, nourishment",
               "example_ja": "栄養をつける",
-              "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>をつける"
+              "example_ruby": "<ruby>栄養<rt>えいよう</rt></ruby>をつける",
+              "example_en": "Build up one's strength with nutrition."
             },
             {
               "term_ja": "自然",
@@ -2423,7 +2564,8 @@
               "ruby_html": "<ruby>自然<rt>しぜん</rt></ruby>",
               "meaning_en": "nature, natural",
               "example_ja": "大自然の中で暮らす",
-              "example_ruby": "<ruby>大自然<rt>だいしぜん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす"
+              "example_ruby": "<ruby>大自然<rt>だいしぜん</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす",
+              "example_en": "Live in the midst of nature."
             },
             {
               "term_ja": "太陽が当たる",
@@ -2431,7 +2573,8 @@
               "ruby_html": "<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる",
               "meaning_en": "the sun shines on",
               "example_ja": "日当たりがよく太陽が当たる",
-              "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがよく<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる"
+              "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがよく<ruby>太陽<rt>たいよう</rt></ruby>が<ruby>当<rt>あ</rt></ruby>たる",
+              "example_en": "It gets plenty of sunlight."
             },
             {
               "term_ja": "日当たり",
@@ -2439,7 +2582,8 @@
               "ruby_html": "<ruby>日当<rt>ひあ</rt></ruby>たり",
               "meaning_en": "sunlight, exposure to the sun",
               "example_ja": "日当たりがいい部屋",
-              "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがいい<ruby>部屋<rt>へや</rt></ruby>"
+              "example_ruby": "<ruby>日当<rt>ひあ</rt></ruby>たりがいい<ruby>部屋<rt>へや</rt></ruby>",
+              "example_en": "A room with good sunlight."
             },
             {
               "term_ja": "種",
@@ -2447,7 +2591,8 @@
               "ruby_html": "<ruby>種<rt>たね</rt></ruby>",
               "meaning_en": "seed, pip, pit",
               "example_ja": "アサガオの種をまく",
-              "example_ruby": "アサガオの<ruby>種<rt>たね</rt></ruby>をまく"
+              "example_ruby": "アサガオの<ruby>種<rt>たね</rt></ruby>をまく",
+              "example_en": "Sow morning glory seeds."
             },
             {
               "term_ja": "根",
@@ -2455,7 +2600,8 @@
               "ruby_html": "<ruby>根<rt>ね</rt></ruby>",
               "meaning_en": "root",
               "example_ja": "しっかりと根を張る",
-              "example_ruby": "しっかりと<ruby>根<rt>ね</rt></ruby>を<ruby>張<rt>は</rt></ruby>る"
+              "example_ruby": "しっかりと<ruby>根<rt>ね</rt></ruby>を<ruby>張<rt>は</rt></ruby>る",
+              "example_en": "Take firm root."
             },
             {
               "term_ja": "葉",
@@ -2463,7 +2609,8 @@
               "ruby_html": "<ruby>葉<rt>は</rt></ruby>",
               "meaning_en": "leaf, foliage",
               "example_ja": "青い葉が茂る",
-              "example_ruby": "<ruby>青<rt>あお</rt></ruby>い<ruby>葉<rt>は</rt></ruby>が<ruby>茂<rt>しげ</rt></ruby>る"
+              "example_ruby": "<ruby>青<rt>あお</rt></ruby>い<ruby>葉<rt>は</rt></ruby>が<ruby>茂<rt>しげ</rt></ruby>る",
+              "example_en": "Green leaves grow thick."
             },
             {
               "term_ja": "幹",
@@ -2471,7 +2618,8 @@
               "ruby_html": "<ruby>幹<rt>みき</rt></ruby>",
               "meaning_en": "tree trunk",
               "example_ja": "大木の太い幹",
-              "example_ruby": "<ruby>大木<rt>たいぼく</rt></ruby>の<ruby>太<rt>ふと</rt></ruby>い<ruby>幹<rt>みき</rt></ruby>"
+              "example_ruby": "<ruby>大木<rt>たいぼく</rt></ruby>の<ruby>太<rt>ふと</rt></ruby>い<ruby>幹<rt>みき</rt></ruby>",
+              "example_en": "The thick trunk of a big tree."
             },
             {
               "term_ja": "枝",
@@ -2479,7 +2627,8 @@
               "ruby_html": "<ruby>枝<rt>えだ</rt></ruby>",
               "meaning_en": "branch, bough, twig",
               "example_ja": "木の枝が伸びる",
-              "example_ruby": "<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby>が<ruby>伸<rt>の</rt></ruby>びる"
+              "example_ruby": "<ruby>木<rt>き</rt></ruby>の<ruby>枝<rt>えだ</rt></ruby>が<ruby>伸<rt>の</rt></ruby>びる",
+              "example_en": "The tree's branches grow."
             },
             {
               "term_ja": "花",
@@ -2487,7 +2636,8 @@
               "ruby_html": "<ruby>花<rt>はな</rt></ruby>",
               "meaning_en": "flower, blossom",
               "example_ja": "きれいな花が咲く",
-              "example_ruby": "きれいな<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>く"
+              "example_ruby": "きれいな<ruby>花<rt>はな</rt></ruby>が<ruby>咲<rt>さ</rt></ruby>く",
+              "example_en": "Pretty flowers bloom."
             }
           ],
           "yattemiyou": [
@@ -2537,7 +2687,8 @@
               "ruby_html": "<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>",
               "meaning_en": "living thing, creature, animal life",
               "example_ja": "海の中の生き物",
-              "example_ruby": "<ruby>海<rt>うみ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>"
+              "example_ruby": "<ruby>海<rt>うみ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>の<ruby>生<rt>い</rt></ruby>き<ruby>物<rt>もの</rt></ruby>",
+              "example_en": "Creatures in the sea."
             },
             {
               "term_ja": "猿",
@@ -2545,7 +2696,8 @@
               "ruby_html": "<ruby>猿<rt>さる</rt></ruby>",
               "meaning_en": "monkey, ape",
               "example_ja": "温泉に入る猿",
-              "example_ruby": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>猿<rt>さる</rt></ruby>"
+              "example_ruby": "<ruby>温泉<rt>おんせん</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る<ruby>猿<rt>さる</rt></ruby>",
+              "example_en": "A monkey bathing in a hot spring."
             },
             {
               "term_ja": "熊",
@@ -2553,7 +2705,8 @@
               "ruby_html": "<ruby>熊<rt>くま</rt></ruby>",
               "meaning_en": "bear",
               "example_ja": "山で熊に注意する",
-              "example_ruby": "<ruby>山<rt>やま</rt></ruby>で<ruby>熊<rt>くま</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する"
+              "example_ruby": "<ruby>山<rt>やま</rt></ruby>で<ruby>熊<rt>くま</rt></ruby>に<ruby>注意<rt>ちゅうい</rt></ruby>する",
+              "example_en": "Watch out for bears in the mountains."
             },
             {
               "term_ja": "牛",
@@ -2561,7 +2714,8 @@
               "ruby_html": "<ruby>牛<rt>うし</rt></ruby>",
               "meaning_en": "cow, cattle, bull",
               "example_ja": "牧場で牛を飼う",
-              "example_ruby": "<ruby>牧場<rt>ぼくじょう</rt></ruby>で<ruby>牛<rt>うし</rt></ruby>を<ruby>飼<rt>か</rt></ruby>う"
+              "example_ruby": "<ruby>牧場<rt>ぼくじょう</rt></ruby>で<ruby>牛<rt>うし</rt></ruby>を<ruby>飼<rt>か</rt></ruby>う",
+              "example_en": "Raise cows on a ranch."
             },
             {
               "term_ja": "鶏",
@@ -2569,7 +2723,8 @@
               "ruby_html": "<ruby>鶏<rt>にわとり</rt></ruby>",
               "meaning_en": "chicken, rooster, hen",
               "example_ja": "朝早く鶏が鳴く",
-              "example_ruby": "<ruby>朝早<rt>あさはや</rt></ruby>く<ruby>鶏<rt>にわとり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>く"
+              "example_ruby": "<ruby>朝早<rt>あさはや</rt></ruby>く<ruby>鶏<rt>にわとり</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>く",
+              "example_en": "A rooster crows early in the morning."
             },
             {
               "term_ja": "魚",
@@ -2577,7 +2732,8 @@
               "ruby_html": "<ruby>魚<rt>さかな</rt></ruby>",
               "meaning_en": "fish",
               "example_ja": "川で魚を釣る",
-              "example_ruby": "<ruby>川<rt>かわ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>釣<rt>つ</rt></ruby>る"
+              "example_ruby": "<ruby>川<rt>かわ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>釣<rt>つ</rt></ruby>る",
+              "example_en": "Catch fish in a river."
             },
             {
               "term_ja": "虫",
@@ -2585,7 +2741,8 @@
               "ruby_html": "<ruby>虫<rt>むし</rt></ruby>",
               "meaning_en": "insect, bug",
               "example_ja": "夏に虫を捕まえる",
-              "example_ruby": "<ruby>夏<rt>なつ</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>を<ruby>捕<rt>つか</rt></ruby>まえる"
+              "example_ruby": "<ruby>夏<rt>なつ</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>を<ruby>捕<rt>つか</rt></ruby>まえる",
+              "example_en": "Catch insects in summer."
             },
             {
               "term_ja": "蚊",
@@ -2593,7 +2750,8 @@
               "ruby_html": "<ruby>蚊<rt>か</rt></ruby>",
               "meaning_en": "mosquito",
               "example_ja": "蚊に刺されてかゆい",
-              "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されてかゆい"
+              "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>されてかゆい",
+              "example_en": "I got bitten by a mosquito and it itches."
             },
             {
               "term_ja": "ハエ",
@@ -2601,7 +2759,8 @@
               "ruby_html": "ハエ",
               "meaning_en": "fly (insect)",
               "example_ja": "ハエが飛んでいる",
-              "example_ruby": "ハエが<ruby>飛<rt>と</rt></ruby>んでいる"
+              "example_ruby": "ハエが<ruby>飛<rt>と</rt></ruby>んでいる",
+              "example_en": "A fly is flying around."
             },
             {
               "term_ja": "蜂",
@@ -2609,7 +2768,8 @@
               "ruby_html": "<ruby>蜂<rt>はち</rt></ruby>",
               "meaning_en": "bee, wasp",
               "example_ja": "蜂の巣を見つける",
-              "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>の<ruby>巣<rt>す</rt></ruby>を<ruby>見<rt>み</rt></ruby>つける"
+              "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>の<ruby>巣<rt>す</rt></ruby>を<ruby>見<rt>み</rt></ruby>つける",
+              "example_en": "Find a bees' nest."
             },
             {
               "term_ja": "刺す",
@@ -2617,7 +2777,8 @@
               "ruby_html": "<ruby>刺<rt>さ</rt></ruby>す",
               "meaning_en": "to sting, bite (of insects), pierce",
               "example_ja": "蜂が刺す",
-              "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>が<ruby>刺<rt>さ</rt></ruby>す"
+              "example_ruby": "<ruby>蜂<rt>はち</rt></ruby>が<ruby>刺<rt>さ</rt></ruby>す",
+              "example_en": "A bee stings."
             },
             {
               "term_ja": "刺される",
@@ -2625,7 +2786,8 @@
               "ruby_html": "<ruby>刺<rt>さ</rt></ruby>される",
               "meaning_en": "to get stung, bitten by insects",
               "example_ja": "蚊に刺される",
-              "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>される"
+              "example_ruby": "<ruby>蚊<rt>か</rt></ruby>に<ruby>刺<rt>さ</rt></ruby>される",
+              "example_en": "Get bitten by a mosquito."
             },
             {
               "term_ja": "捕る",
@@ -2633,7 +2795,8 @@
               "ruby_html": "<ruby>捕<rt>と</rt></ruby>る",
               "meaning_en": "to catch, take (fish/game)",
               "example_ja": "海で魚を捕る",
-              "example_ruby": "<ruby>海<rt>うみ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>海<rt>うみ</rt></ruby>で<ruby>魚<rt>さかな</rt></ruby>を<ruby>捕<rt>と</rt></ruby>る",
+              "example_en": "Catch fish in the sea."
             },
             {
               "term_ja": "捕まえる",
@@ -2641,7 +2804,8 @@
               "ruby_html": "<ruby>捕<rt>つか</rt></ruby>まえる",
               "meaning_en": "to catch, capture, seize",
               "example_ja": "トンボを捕まえる",
-              "example_ruby": "トンボを<ruby>捕<rt>つか</rt></ruby>まえる"
+              "example_ruby": "トンボを<ruby>捕<rt>つか</rt></ruby>まえる",
+              "example_en": "Catch a dragonfly."
             },
             {
               "term_ja": "逃げる",
@@ -2649,7 +2813,8 @@
               "ruby_html": "<ruby>逃<rt>に</rt></ruby>げる",
               "meaning_en": "to run away, escape, flee",
               "example_ja": "小鳥が逃げる",
-              "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>逃<rt>に</rt></ruby>げる"
+              "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>逃<rt>に</rt></ruby>げる",
+              "example_en": "A small bird escapes."
             },
             {
               "term_ja": "逃がす",
@@ -2657,7 +2822,8 @@
               "ruby_html": "<ruby>逃<rt>に</rt></ruby>がす",
               "meaning_en": "to let go, release, set free",
               "example_ja": "捕まえた魚を逃がす",
-              "example_ruby": "<ruby>捕<rt>つか</rt></ruby>まえた<ruby>魚<rt>さかな</rt></ruby>を<ruby>逃<rt>に</rt></ruby>がす"
+              "example_ruby": "<ruby>捕<rt>つか</rt></ruby>まえた<ruby>魚<rt>さかな</rt></ruby>を<ruby>逃<rt>に</rt></ruby>がす",
+              "example_en": "Release a fish one has caught."
             },
             {
               "term_ja": "隠れる",
@@ -2665,7 +2831,8 @@
               "ruby_html": "<ruby>隠<rt>かく</rt></ruby>れる",
               "meaning_en": "to hide, conceal oneself",
               "example_ja": "物陰に隠れる",
-              "example_ruby": "<ruby>物陰<rt>ものかげ</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる"
+              "example_ruby": "<ruby>物陰<rt>ものかげ</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>れる",
+              "example_en": "Hide in the shadows."
             },
             {
               "term_ja": "隠す",
@@ -2673,7 +2840,8 @@
               "ruby_html": "<ruby>隠<rt>かく</rt></ruby>す",
               "meaning_en": "to hide, conceal something",
               "example_ja": "宝物を隠す",
-              "example_ruby": "<ruby>宝物<rt>たからもの</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す"
+              "example_ruby": "<ruby>宝物<rt>たからもの</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す",
+              "example_en": "Hide a treasure."
             },
             {
               "term_ja": "観察する",
@@ -2681,7 +2849,8 @@
               "ruby_html": "<ruby>観察<rt>かんさつ</rt></ruby>する",
               "meaning_en": "to observe, watch closely",
               "example_ja": "アリの巣を観察する",
-              "example_ruby": "アリの<ruby>巣<rt>す</rt></ruby>を<ruby>観察<rt>かんさつ</rt></ruby>する"
+              "example_ruby": "アリの<ruby>巣<rt>す</rt></ruby>を<ruby>観察<rt>かんさつ</rt></ruby>する",
+              "example_en": "Observe an ant nest."
             },
             {
               "term_ja": "えさ",
@@ -2689,7 +2858,8 @@
               "ruby_html": "えさ",
               "meaning_en": "feed, pet food, animal food, bait",
               "example_ja": "犬にえさをあげる",
-              "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>にえさをあげる"
+              "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>にえさをあげる",
+              "example_en": "Give food to a dog."
             },
             {
               "term_ja": "貴重な",
@@ -2697,7 +2867,8 @@
               "ruby_html": "<ruby>貴重<rt>きちょう</rt></ruby>な",
               "meaning_en": "precious, valuable, rare",
               "example_ja": "貴重な野生動物",
-              "example_ruby": "<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>野生動物<rt>やせいどうぶつ</rt></ruby>"
+              "example_ruby": "<ruby>貴重<rt>きちょう</rt></ruby>な<ruby>野生動物<rt>やせいどうぶつ</rt></ruby>",
+              "example_en": "Precious wild animals."
             },
             {
               "term_ja": "減る",
@@ -2705,7 +2876,8 @@
               "ruby_html": "<ruby>減<rt>へ</rt></ruby>る",
               "meaning_en": "to decrease, diminish, dwindle",
               "example_ja": "野生の鳥が減る",
-              "example_ruby": "<ruby>野生<rt>やせい</rt></ruby>の<ruby>鳥<rt>とり</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る"
+              "example_ruby": "<ruby>野生<rt>やせい</rt></ruby>の<ruby>鳥<rt>とり</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る",
+              "example_en": "The number of wild birds is decreasing."
             },
             {
               "term_ja": "禁止する",
@@ -2713,7 +2885,8 @@
               "ruby_html": "<ruby>禁止<rt>きんし</rt></ruby>する",
               "meaning_en": "to forbid, prohibit, ban",
               "example_ja": "狩猟を禁止する",
-              "example_ruby": "<ruby>狩猟<rt>しゅりょう</rt></ruby>を<ruby>禁止<rt>きんし</rt></ruby>する"
+              "example_ruby": "<ruby>狩猟<rt>しゅりょう</rt></ruby>を<ruby>禁止<rt>きんし</rt></ruby>する",
+              "example_en": "Ban hunting."
             },
             {
               "term_ja": "匹",
@@ -2721,7 +2894,8 @@
               "ruby_html": "<ruby>匹<rt>ひき</rt></ruby>",
               "meaning_en": "counter for small animals, fish, insects",
               "example_ja": "犬が二匹いる",
-              "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>二匹<rt>にひき</rt></ruby>いる"
+              "example_ruby": "<ruby>犬<rt>いぬ</rt></ruby>が<ruby>二匹<rt>にひき</rt></ruby>いる",
+              "example_en": "There are two dogs."
             },
             {
               "term_ja": "羽",
@@ -2729,7 +2903,8 @@
               "ruby_html": "<ruby>羽<rt>わ</rt></ruby>",
               "meaning_en": "counter for birds and rabbits",
               "example_ja": "小鳥が三羽飛んでいる",
-              "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>三羽<rt>さんわ</rt></ruby><ruby>飛<rt>と</rt></ruby>んでいる"
+              "example_ruby": "<ruby>小鳥<rt>ことり</rt></ruby>が<ruby>三羽<rt>さんわ</rt></ruby><ruby>飛<rt>と</rt></ruby>んでいる",
+              "example_en": "Three small birds are flying."
             },
             {
               "term_ja": "頭",
@@ -2737,7 +2912,8 @@
               "ruby_html": "<ruby>頭<rt>とう</rt></ruby>",
               "meaning_en": "counter for large animals (cows, horses, bears)",
               "example_ja": "牛が一頭いる",
-              "example_ruby": "<ruby>牛<rt>うし</rt></ruby>が<ruby>一頭<rt>いっとう</rt></ruby>いる"
+              "example_ruby": "<ruby>牛<rt>うし</rt></ruby>が<ruby>一頭<rt>いっとう</rt></ruby>いる",
+              "example_en": "There is one cow."
             },
             {
               "term_ja": "猫",
@@ -2745,7 +2921,8 @@
               "ruby_html": "<ruby>猫<rt>ねこ</rt></ruby>",
               "meaning_en": "cat",
               "example_ja": "猫を飼っている",
-              "example_ruby": "<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っている"
+              "example_ruby": "<ruby>猫<rt>ねこ</rt></ruby>を<ruby>飼<rt>か</rt></ruby>っている",
+              "example_en": "I have a cat."
             }
           ],
           "yattemiyou": [
@@ -3303,7 +3480,8 @@
               "ruby_html": "<ruby>数<rt>かず</rt></ruby>",
               "meaning_en": "number, count",
               "example_ja": "人数を数える",
-              "example_ruby": "<ruby>人数<rt>にんずう</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える"
+              "example_ruby": "<ruby>人数<rt>にんずう</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える",
+              "example_en": "Count the number of people."
             },
             {
               "term_ja": "量",
@@ -3311,7 +3489,8 @@
               "ruby_html": "<ruby>量<rt>りょう</rt></ruby>",
               "meaning_en": "quantity, volume, amount",
               "example_ja": "食事の量を減らす",
-              "example_ruby": "<ruby>食事<rt>しょくじ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす"
+              "example_ruby": "<ruby>食事<rt>しょくじ</rt></ruby>の<ruby>量<rt>りょう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす",
+              "example_en": "Reduce the amount of food."
             },
             {
               "term_ja": "増やす",
@@ -3319,7 +3498,8 @@
               "ruby_html": "<ruby>増<rt>ふ</rt></ruby>やす",
               "meaning_en": "to increase, multiply (transitive)",
               "example_ja": "貯金を増やす",
-              "example_ruby": "<ruby>貯金<rt>ちょきん</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす"
+              "example_ruby": "<ruby>貯金<rt>ちょきん</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす",
+              "example_en": "Increase one's savings."
             },
             {
               "term_ja": "増す",
@@ -3327,7 +3507,8 @@
               "ruby_html": "<ruby>増<rt>ま</rt></ruby>す",
               "meaning_en": "to increase, heighten, grow",
               "example_ja": "興味が増す",
-              "example_ruby": "<ruby>興味<rt>きょうみ</rt></ruby>が<ruby>増<rt>ま</rt></ruby>す"
+              "example_ruby": "<ruby>興味<rt>きょうみ</rt></ruby>が<ruby>増<rt>ま</rt></ruby>す",
+              "example_en": "Interest grows."
             },
             {
               "term_ja": "減らす",
@@ -3335,7 +3516,8 @@
               "ruby_html": "<ruby>減<rt>へ</rt></ruby>らす",
               "meaning_en": "to reduce, decrease, curtail (transitive)",
               "example_ja": "体重を減らす",
-              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす"
+              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>減<rt>へ</rt></ruby>らす",
+              "example_en": "Lose weight."
             },
             {
               "term_ja": "増える",
@@ -3343,7 +3525,8 @@
               "ruby_html": "<ruby>増<rt>ふ</rt></ruby>える",
               "meaning_en": "to increase, multiply (intransitive)",
               "example_ja": "体重が増える",
-              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>える"
+              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>が<ruby>増<rt>ふ</rt></ruby>える",
+              "example_en": "One's weight goes up."
             },
             {
               "term_ja": "減る",
@@ -3351,7 +3534,8 @@
               "ruby_html": "<ruby>減<rt>へ</rt></ruby>る",
               "meaning_en": "to decrease, diminish (intransitive)",
               "example_ja": "人口が減る",
-              "example_ruby": "<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る"
+              "example_ruby": "<ruby>人口<rt>じんこう</rt></ruby>が<ruby>減<rt>へ</rt></ruby>る",
+              "example_en": "The population decreases."
             },
             {
               "term_ja": "倍",
@@ -3359,7 +3543,8 @@
               "ruby_html": "<ruby>倍<rt>ばい</rt></ruby>",
               "meaning_en": "times, -fold, double",
               "example_ja": "2倍に増える",
-              "example_ruby": "2<ruby>倍<rt>ばい</rt></ruby>に<ruby>増<rt>ふ</rt></ruby>える"
+              "example_ruby": "2<ruby>倍<rt>ばい</rt></ruby>に<ruby>増<rt>ふ</rt></ruby>える",
+              "example_en": "Increase to double."
             },
             {
               "term_ja": "余る",
@@ -3367,7 +3552,8 @@
               "ruby_html": "<ruby>余<rt>あま</rt></ruby>る",
               "meaning_en": "to be left over, remain",
               "example_ja": "料理が余る",
-              "example_ruby": "<ruby>料理<rt>りょうり</rt></ruby>が<ruby>余<rt>あま</rt></ruby>る"
+              "example_ruby": "<ruby>料理<rt>りょうり</rt></ruby>が<ruby>余<rt>あま</rt></ruby>る",
+              "example_en": "There is leftover food."
             },
             {
               "term_ja": "不足する",
@@ -3375,7 +3561,8 @@
               "ruby_html": "<ruby>不足<rt>ふそく</rt></ruby>する",
               "meaning_en": "to be insufficient, lack",
               "example_ja": "運動が不足する",
-              "example_ruby": "<ruby>運動<rt>うんどう</rt></ruby>が<ruby>不足<rt>ふそく</rt></ruby>する"
+              "example_ruby": "<ruby>運動<rt>うんどう</rt></ruby>が<ruby>不足<rt>ふそく</rt></ruby>する",
+              "example_en": "Not get enough exercise."
             },
             {
               "term_ja": "余裕",
@@ -3383,7 +3570,8 @@
               "ruby_html": "<ruby>余裕<rt>よゆう</rt></ruby>",
               "meaning_en": "leeway, margin, room (time, money)",
               "example_ja": "時間に余裕がある",
-              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>に<ruby>余裕<rt>よゆう</rt></ruby>がある"
+              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>に<ruby>余裕<rt>よゆう</rt></ruby>がある",
+              "example_en": "Have time to spare."
             },
             {
               "term_ja": "人数",
@@ -3391,7 +3579,8 @@
               "ruby_html": "<ruby>人数<rt>にんずう</rt></ruby>",
               "meaning_en": "number of people",
               "example_ja": "参加者の人数",
-              "example_ruby": "<ruby>参加者<rt>さんかしゃ</rt></ruby>の<ruby>人数<rt>にんずう</rt></ruby>"
+              "example_ruby": "<ruby>参加者<rt>さんかしゃ</rt></ruby>の<ruby>人数<rt>にんずう</rt></ruby>",
+              "example_en": "The number of participants."
             },
             {
               "term_ja": "個数",
@@ -3399,7 +3588,8 @@
               "ruby_html": "<ruby>個数<rt>こすう</rt></ruby>",
               "meaning_en": "number of items, count of articles",
               "example_ja": "リンゴの個数",
-              "example_ruby": "リンゴの<ruby>個数<rt>こすう</rt></ruby>"
+              "example_ruby": "リンゴの<ruby>個数<rt>こすう</rt></ruby>",
+              "example_en": "The number of apples."
             },
             {
               "term_ja": "回数",
@@ -3407,7 +3597,8 @@
               "ruby_html": "<ruby>回数<rt>かいすう</rt></ruby>",
               "meaning_en": "number of times, frequency",
               "example_ja": "練習の回数を増やす",
-              "example_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>の<ruby>回数<rt>かいすう</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす"
+              "example_ruby": "<ruby>練習<rt>れんしゅう</rt></ruby>の<ruby>回数<rt>かいすう</rt></ruby>を<ruby>増<rt>ふ</rt></ruby>やす",
+              "example_en": "Increase the number of practice sessions."
             },
             {
               "term_ja": "台数",
@@ -3415,7 +3606,8 @@
               "ruby_html": "<ruby>台数<rt>だいすう</rt></ruby>",
               "meaning_en": "number of vehicles, machines",
               "example_ja": "車の台数",
-              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>の<ruby>台数<rt>だいすう</rt></ruby>"
+              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>の<ruby>台数<rt>だいすう</rt></ruby>",
+              "example_en": "The number of cars."
             },
             {
               "term_ja": "数える",
@@ -3423,7 +3615,8 @@
               "ruby_html": "<ruby>数<rt>かぞ</rt></ruby>える",
               "meaning_en": "to count",
               "example_ja": "お金を数える",
-              "example_ruby": "お<ruby>金<rt>かね</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える"
+              "example_ruby": "お<ruby>金<rt>かね</rt></ruby>を<ruby>数<rt>かぞ</rt></ruby>える",
+              "example_en": "Count money."
             },
             {
               "term_ja": "測る",
@@ -3431,7 +3624,8 @@
               "ruby_html": "<ruby>測<rt>はか</rt></ruby>る",
               "meaning_en": "to measure (length, distance, time)",
               "example_ja": "長さを測る",
-              "example_ruby": "<ruby>長<rt>なが</rt></ruby>さを<ruby>測<rt>はか</rt></ruby>る"
+              "example_ruby": "<ruby>長<rt>なが</rt></ruby>さを<ruby>測<rt>はか</rt></ruby>る",
+              "example_en": "Measure the length."
             },
             {
               "term_ja": "距離",
@@ -3439,7 +3633,8 @@
               "ruby_html": "<ruby>距離<rt>きょり</rt></ruby>",
               "meaning_en": "distance, interval",
               "example_ja": "駅までの距離",
-              "example_ruby": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>距離<rt>きょり</rt></ruby>"
+              "example_ruby": "<ruby>駅<rt>えき</rt></ruby>までの<ruby>距離<rt>きょり</rt></ruby>",
+              "example_en": "The distance to the station."
             },
             {
               "term_ja": "面積",
@@ -3447,7 +3642,8 @@
               "ruby_html": "<ruby>面積<rt>めんせき</rt></ruby>",
               "meaning_en": "area, surface area",
               "example_ja": "部屋の面積",
-              "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>の<ruby>面積<rt>めんせき</rt></ruby>"
+              "example_ruby": "<ruby>部屋<rt>へや</rt></ruby>の<ruby>面積<rt>めんせき</rt></ruby>",
+              "example_en": "The floor area of a room."
             },
             {
               "term_ja": "時間",
@@ -3455,7 +3651,8 @@
               "ruby_html": "<ruby>時間<rt>じかん</rt></ruby>",
               "meaning_en": "time, hours, duration",
               "example_ja": "かかる時間を測る",
-              "example_ruby": "かかる<ruby>時間<rt>じかん</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る"
+              "example_ruby": "かかる<ruby>時間<rt>じかん</rt></ruby>を<ruby>測<rt>はか</rt></ruby>る",
+              "example_en": "Measure the time it takes."
             },
             {
               "term_ja": "重さ",
@@ -3463,7 +3660,8 @@
               "ruby_html": "<ruby>重<rt>おも</rt></ruby>さ",
               "meaning_en": "weight, heaviness",
               "example_ja": "荷物の重さ",
-              "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>重<rt>おも</rt></ruby>さ"
+              "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>の<ruby>重<rt>おも</rt></ruby>さ",
+              "example_en": "The weight of the luggage."
             },
             {
               "term_ja": "量る",
@@ -3471,7 +3669,8 @@
               "ruby_html": "<ruby>量<rt>はか</rt></ruby>る",
               "meaning_en": "to weigh, measure quantity/volume",
               "example_ja": "体重を量る",
-              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>量<rt>はか</rt></ruby>る"
+              "example_ruby": "<ruby>体重<rt>たいじゅう</rt></ruby>を<ruby>量<rt>はか</rt></ruby>る",
+              "example_en": "Weigh oneself."
             },
             {
               "term_ja": "記録",
@@ -3479,7 +3678,8 @@
               "ruby_html": "<ruby>記録<rt>きろく</rt></ruby>",
               "meaning_en": "record, minutes, documentation",
               "example_ja": "新記録を出す",
-              "example_ruby": "<ruby>新記録<rt>しんきろく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>新記録<rt>しんきろく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Set a new record."
             },
             {
               "term_ja": "取る",
@@ -3487,7 +3687,8 @@
               "ruby_html": "<ruby>取<rt>と</rt></ruby>る",
               "meaning_en": "to take (notes/record)",
               "example_ja": "記録を取る",
-              "example_ruby": "<ruby>記録<rt>きろく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>記録<rt>きろく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Keep a record."
             }
           ],
           "yattemiyou": [
@@ -3543,7 +3744,8 @@
               "ruby_html": "<ruby>大量<rt>たいりょう</rt></ruby>",
               "meaning_en": "large quantity, mass volume",
               "example_ja": "大量に購入する",
-              "example_ruby": "<ruby>大量<rt>たいりょう</rt></ruby>に<ruby>購入<rt>こうにゅう</rt></ruby>する"
+              "example_ruby": "<ruby>大量<rt>たいりょう</rt></ruby>に<ruby>購入<rt>こうにゅう</rt></ruby>する",
+              "example_en": "Buy in large quantities."
             },
             {
               "term_ja": "少量",
@@ -3551,7 +3753,8 @@
               "ruby_html": "<ruby>少量<rt>しょうりょう</rt></ruby>",
               "meaning_en": "small amount, small quantity",
               "example_ja": "少量の水",
-              "example_ruby": "<ruby>少量<rt>しょうりょう</rt></ruby>の<ruby>水<rt>みず</rt></ruby>"
+              "example_ruby": "<ruby>少量<rt>しょうりょう</rt></ruby>の<ruby>水<rt>みず</rt></ruby>",
+              "example_en": "A small amount of water."
             },
             {
               "term_ja": "多数",
@@ -3559,7 +3762,8 @@
               "ruby_html": "<ruby>多数<rt>たすう</rt></ruby>",
               "meaning_en": "large number, majority",
               "example_ja": "多数の参加者",
-              "example_ruby": "<ruby>多数<rt>たすう</rt></ruby>の<ruby>参加者<rt>さんかしゃ</rt></ruby>"
+              "example_ruby": "<ruby>多数<rt>たすう</rt></ruby>の<ruby>参加者<rt>さんかしゃ</rt></ruby>",
+              "example_en": "A large number of participants."
             },
             {
               "term_ja": "少数",
@@ -3567,7 +3771,8 @@
               "ruby_html": "<ruby>少数<rt>しょうすう</rt></ruby>",
               "meaning_en": "small number, minority",
               "example_ja": "少数の意見",
-              "example_ruby": "<ruby>少数<rt>しょうすう</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>"
+              "example_ruby": "<ruby>少数<rt>しょうすう</rt></ruby>の<ruby>意見<rt>いけん</rt></ruby>",
+              "example_en": "A minority opinion."
             },
             {
               "term_ja": "マイナス",
@@ -3575,7 +3780,8 @@
               "ruby_html": "マイナス",
               "meaning_en": "minus, negative, below zero",
               "example_ja": "気温がマイナスになる",
-              "example_ruby": "<ruby>気温<rt>きおん</rt></ruby>がマイナスになる"
+              "example_ruby": "<ruby>気温<rt>きおん</rt></ruby>がマイナスになる",
+              "example_en": "The temperature goes below zero."
             },
             {
               "term_ja": "プラス",
@@ -3583,7 +3789,8 @@
               "ruby_html": "プラス",
               "meaning_en": "plus, positive, addition",
               "example_ja": "プラスに働く",
-              "example_ruby": "プラスに<ruby>働<rt>はたら</rt></ruby>く"
+              "example_ruby": "プラスに<ruby>働<rt>はたら</rt></ruby>く",
+              "example_en": "It works in one's favor."
             },
             {
               "term_ja": "レベル",
@@ -3591,7 +3798,8 @@
               "ruby_html": "レベル",
               "meaning_en": "level, standard",
               "example_ja": "技術のレベル",
-              "example_ruby": "<ruby>技術<rt>ぎじゅつ</rt></ruby>のレベル"
+              "example_ruby": "<ruby>技術<rt>ぎじゅつ</rt></ruby>のレベル",
+              "example_en": "The level of skill."
             },
             {
               "term_ja": "上がる",
@@ -3599,7 +3807,8 @@
               "ruby_html": "<ruby>上<rt>あ</rt></ruby>がる",
               "meaning_en": "to rise, go up (level/price/fever)",
               "example_ja": "レベルが上がる",
-              "example_ruby": "レベルが<ruby>上<rt>あ</rt></ruby>がる"
+              "example_ruby": "レベルが<ruby>上<rt>あ</rt></ruby>がる",
+              "example_en": "The level goes up."
             },
             {
               "term_ja": "最大",
@@ -3607,7 +3816,8 @@
               "ruby_html": "<ruby>最大<rt>さいだい</rt></ruby>",
               "meaning_en": "greatest, maximum, largest",
               "example_ja": "最大の効果",
-              "example_ruby": "<ruby>最大<rt>さいだい</rt></ruby>の<ruby>効果<rt>こうか</rt></ruby>"
+              "example_ruby": "<ruby>最大<rt>さいだい</rt></ruby>の<ruby>効果<rt>こうか</rt></ruby>",
+              "example_en": "The greatest effect."
             },
             {
               "term_ja": "最小",
@@ -3615,7 +3825,8 @@
               "ruby_html": "<ruby>最小<rt>さいしょう</rt></ruby>",
               "meaning_en": "smallest, minimum",
               "example_ja": "被害を最小にする",
-              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>を<ruby>最小<rt>さいしょう</rt></ruby>にする"
+              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>を<ruby>最小<rt>さいしょう</rt></ruby>にする",
+              "example_en": "Minimize the damage."
             },
             {
               "term_ja": "最高",
@@ -3623,7 +3834,8 @@
               "ruby_html": "<ruby>最高<rt>さいこう</rt></ruby>",
               "meaning_en": "highest, supreme, maximum",
               "example_ja": "最高気温",
-              "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>"
+              "example_ruby": "<ruby>最高気温<rt>さいこうきおん</rt></ruby>",
+              "example_en": "The highest temperature."
             },
             {
               "term_ja": "最低",
@@ -3631,7 +3843,8 @@
               "ruby_html": "<ruby>最低<rt>さいてい</rt></ruby>",
               "meaning_en": "lowest, minimum, worst",
               "example_ja": "最低限の条件",
-              "example_ruby": "<ruby>最低限<rt>さいていげん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>"
+              "example_ruby": "<ruby>最低限<rt>さいていげん</rt></ruby>の<ruby>条件<rt>じょうけん</rt></ruby>",
+              "example_en": "The minimum conditions."
             },
             {
               "term_ja": "平均",
@@ -3639,7 +3852,8 @@
               "ruby_html": "<ruby>平均<rt>へいきん</rt></ruby>",
               "meaning_en": "average, mean",
               "example_ja": "平均点を計算する",
-              "example_ruby": "<ruby>平均点<rt>へいきんてん</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する"
+              "example_ruby": "<ruby>平均点<rt>へいきんてん</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する",
+              "example_en": "Calculate the average score."
             },
             {
               "term_ja": "たっぷり",
@@ -3647,7 +3861,8 @@
               "ruby_html": "たっぷり",
               "meaning_en": "plenty, full, ample",
               "example_ja": "野菜をたっぷり入れる",
-              "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>をたっぷり<ruby>入<rt>い</rt></ruby>れる"
+              "example_ruby": "<ruby>野菜<rt>やさい</rt></ruby>をたっぷり<ruby>入<rt>い</rt></ruby>れる",
+              "example_en": "Put in plenty of vegetables."
             },
             {
               "term_ja": "少々",
@@ -3655,7 +3870,8 @@
               "ruby_html": "<ruby>少々<rt>しょうしょう</rt></ruby>",
               "meaning_en": "just a little, a small pinch",
               "example_ja": "塩を少々加える",
-              "example_ruby": "<ruby>塩<rt>しお</rt></ruby>を<ruby>少々<rt>しょうしょう</rt></ruby><ruby>加<rt>くわ</rt></ruby>える"
+              "example_ruby": "<ruby>塩<rt>しお</rt></ruby>を<ruby>少々<rt>しょうしょう</rt></ruby><ruby>加<rt>くわ</rt></ruby>える",
+              "example_en": "Add a little salt."
             },
             {
               "term_ja": "加える",
@@ -3663,7 +3879,8 @@
               "ruby_html": "<ruby>加<rt>くわ</rt></ruby>える",
               "meaning_en": "to add, append, include",
               "example_ja": "具材を加える",
-              "example_ruby": "<ruby>具材<rt>ぐざい</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>える"
+              "example_ruby": "<ruby>具材<rt>ぐざい</rt></ruby>を<ruby>加<rt>くわ</rt></ruby>える",
+              "example_en": "Add the ingredients."
             },
             {
               "term_ja": "すべて",
@@ -3671,7 +3888,8 @@
               "ruby_html": "すべて",
               "meaning_en": "all, entirely, everything",
               "example_ja": "すべての問題",
-              "example_ruby": "すべての<ruby>問題<rt>もんだい</rt></ruby>"
+              "example_ruby": "すべての<ruby>問題<rt>もんだい</rt></ruby>",
+              "example_en": "All the questions."
             },
             {
               "term_ja": "全員",
@@ -3679,7 +3897,8 @@
               "ruby_html": "<ruby>全員<rt>ぜんいん</rt></ruby>",
               "meaning_en": "all members, everyone",
               "example_ja": "全員が出席する",
-              "example_ruby": "<ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>出席<rt>しゅっせき</rt></ruby>する"
+              "example_ruby": "<ruby>全員<rt>ぜんいん</rt></ruby>が<ruby>出席<rt>しゅっせき</rt></ruby>する",
+              "example_en": "Everyone attends."
             },
             {
               "term_ja": "合計",
@@ -3687,7 +3906,8 @@
               "ruby_html": "<ruby>合計<rt>ごうけい</rt></ruby>",
               "meaning_en": "total amount, sum total",
               "example_ja": "合計を計算する",
-              "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する"
+              "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>計算<rt>けいさん</rt></ruby>する",
+              "example_en": "Calculate the total."
             },
             {
               "term_ja": "出す",
@@ -3695,7 +3915,8 @@
               "ruby_html": "<ruby>出<rt>だ</rt></ruby>す",
               "meaning_en": "to produce, calculate, output",
               "example_ja": "合計を出す",
-              "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>合計<rt>ごうけい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Work out the total."
             },
             {
               "term_ja": "計算",
@@ -3703,7 +3924,8 @@
               "ruby_html": "<ruby>計算<rt>けいさん</rt></ruby>",
               "meaning_en": "calculation, reckoning",
               "example_ja": "計算が速い",
-              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>が<ruby>速<rt>はや</rt></ruby>い"
+              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>が<ruby>速<rt>はや</rt></ruby>い",
+              "example_en": "Be quick at calculating."
             },
             {
               "term_ja": "間違える",
@@ -3711,7 +3933,8 @@
               "ruby_html": "<ruby>間違<rt>まちが</rt></ruby>える",
               "meaning_en": "to mistake, make an error in",
               "example_ja": "道を間違える",
-              "example_ruby": "<ruby>道<rt>みち</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>える"
+              "example_ruby": "<ruby>道<rt>みち</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>える",
+              "example_en": "Take the wrong road."
             }
           ],
           "yattemiyou": [
@@ -4059,7 +4282,8 @@
               "ruby_html": "<ruby>経<rt>た</rt></ruby>つ",
               "meaning_en": "to pass, elapse (time)",
               "example_ja": "時間が経つ",
-              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>が<ruby>経<rt>た</rt></ruby>つ"
+              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>が<ruby>経<rt>た</rt></ruby>つ",
+              "example_en": "Time passes."
             },
             {
               "term_ja": "時刻",
@@ -4067,7 +4291,8 @@
               "ruby_html": "<ruby>時刻<rt>じこく</rt></ruby>",
               "meaning_en": "time, appointed hour, clock time",
               "example_ja": "出発の時刻",
-              "example_ruby": "<ruby>出発<rt>しゅっぱつ</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>"
+              "example_ruby": "<ruby>出発<rt>しゅっぱつ</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>",
+              "example_en": "The departure time."
             },
             {
               "term_ja": "過ぎる",
@@ -4075,7 +4300,8 @@
               "ruby_html": "<ruby>過<rt>す</rt></ruby>ぎる",
               "meaning_en": "to pass, exceed (time)",
               "example_ja": "約束の時間を過ぎる",
-              "example_ruby": "<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎる"
+              "example_ruby": "<ruby>約束<rt>やくそく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>を<ruby>過<rt>す</rt></ruby>ぎる",
+              "example_en": "Go past the appointed time."
             },
             {
               "term_ja": "時期",
@@ -4083,7 +4309,8 @@
               "ruby_html": "<ruby>時期<rt>じき</rt></ruby>",
               "meaning_en": "season, period, time of year",
               "example_ja": "旅行にいい時期",
-              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>にいい<ruby>時期<rt>じき</rt></ruby>"
+              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>にいい<ruby>時期<rt>じき</rt></ruby>",
+              "example_en": "A good time of year to travel."
             },
             {
               "term_ja": "期間",
@@ -4091,7 +4318,8 @@
               "ruby_html": "<ruby>期間<rt>きかん</rt></ruby>",
               "meaning_en": "period, term, span of time",
               "example_ja": "一定の期間",
-              "example_ruby": "<ruby>一定<rt>いってい</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>"
+              "example_ruby": "<ruby>一定<rt>いってい</rt></ruby>の<ruby>期間<rt>きかん</rt></ruby>",
+              "example_en": "A fixed period of time."
             },
             {
               "term_ja": "期限",
@@ -4099,7 +4327,8 @@
               "ruby_html": "<ruby>期限<rt>きげん</rt></ruby>",
               "meaning_en": "deadline, time limit, expiration date",
               "example_ja": "提出期限を守る",
-              "example_ruby": "<ruby>提出期限<rt>ていしゅつきげん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る"
+              "example_ruby": "<ruby>提出期限<rt>ていしゅつきげん</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る",
+              "example_en": "Keep to the submission deadline."
             },
             {
               "term_ja": "切れる",
@@ -4107,7 +4336,8 @@
               "ruby_html": "<ruby>切<rt>き</rt></ruby>れる",
               "meaning_en": "to expire, run out (deadline/ticket)",
               "example_ja": "定期券の期限が切れる",
-              "example_ruby": "<ruby>定期券<rt>ていきけん</rt></ruby>の<ruby>期限<rt>きげん</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる"
+              "example_ruby": "<ruby>定期券<rt>ていきけん</rt></ruby>の<ruby>期限<rt>きげん</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる",
+              "example_en": "The commuter pass has expired."
             },
             {
               "term_ja": "短期",
@@ -4115,7 +4345,8 @@
               "ruby_html": "<ruby>短期<rt>たんき</rt></ruby>",
               "meaning_en": "short-term",
               "example_ja": "短期のアルバイト",
-              "example_ruby": "<ruby>短期<rt>たんき</rt></ruby>のアルバイト"
+              "example_ruby": "<ruby>短期<rt>たんき</rt></ruby>のアルバイト",
+              "example_en": "A short-term part-time job."
             },
             {
               "term_ja": "長期",
@@ -4123,7 +4354,8 @@
               "ruby_html": "<ruby>長期<rt>ちょうき</rt></ruby>",
               "meaning_en": "long-term",
               "example_ja": "長期の休みを取る",
-              "example_ruby": "<ruby>長期<rt>ちょうき</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みを<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>長期<rt>ちょうき</rt></ruby>の<ruby>休<rt>やす</rt></ruby>みを<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Take a long vacation."
             },
             {
               "term_ja": "日中",
@@ -4131,7 +4363,8 @@
               "ruby_html": "<ruby>日中<rt>にっちゅう</rt></ruby>",
               "meaning_en": "daytime, during the day",
               "example_ja": "日中は暖かい",
-              "example_ruby": "<ruby>日中<rt>にっちゅう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かい"
+              "example_ruby": "<ruby>日中<rt>にっちゅう</rt></ruby>は<ruby>暖<rt>あたた</rt></ruby>かい",
+              "example_en": "It's warm during the day."
             },
             {
               "term_ja": "夜間",
@@ -4139,7 +4372,8 @@
               "ruby_html": "<ruby>夜間<rt>やかん</rt></ruby>",
               "meaning_en": "nighttime, at night",
               "example_ja": "夜間の工事",
-              "example_ruby": "<ruby>夜間<rt>やかん</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>"
+              "example_ruby": "<ruby>夜間<rt>やかん</rt></ruby>の<ruby>工事<rt>こうじ</rt></ruby>",
+              "example_en": "Nighttime construction work."
             },
             {
               "term_ja": "日時",
@@ -4147,7 +4381,8 @@
               "ruby_html": "<ruby>日時<rt>にちじ</rt></ruby>",
               "meaning_en": "date and time",
               "example_ja": "会議の日時を決める",
-              "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby>を<ruby>決<rt>き</rt></ruby>める"
+              "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>日時<rt>にちじ</rt></ruby>を<ruby>決<rt>き</rt></ruby>める",
+              "example_en": "Decide the date and time of the meeting."
             },
             {
               "term_ja": "日程",
@@ -4155,7 +4390,8 @@
               "ruby_html": "<ruby>日程<rt>にってい</rt></ruby>",
               "meaning_en": "itinerary, schedule, program",
               "example_ja": "旅行の日程を立てる",
-              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる"
+              "example_ruby": "<ruby>旅行<rt>りょこう</rt></ruby>の<ruby>日程<rt>にってい</rt></ruby>を<ruby>立<rt>た</rt></ruby>てる",
+              "example_en": "Make a travel itinerary."
             },
             {
               "term_ja": "年間",
@@ -4163,7 +4399,8 @@
               "ruby_html": "<ruby>年間<rt>ねんかん</rt></ruby>",
               "meaning_en": "annual, during the year",
               "example_ja": "年間の売り上げ",
-              "example_ruby": "<ruby>年間<rt>ねんかん</rt></ruby>の<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ"
+              "example_ruby": "<ruby>年間<rt>ねんかん</rt></ruby>の<ruby>売<rt>う</rt></ruby>り<ruby>上<rt>あ</rt></ruby>げ",
+              "example_en": "Annual sales."
             },
             {
               "term_ja": "延期する",
@@ -4171,7 +4408,8 @@
               "ruby_html": "<ruby>延期<rt>えんき</rt></ruby>する",
               "meaning_en": "to postpone, put off, defer",
               "example_ja": "試合を延期する",
-              "example_ruby": "<ruby>試合<rt>しあい</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>する"
+              "example_ruby": "<ruby>試合<rt>しあい</rt></ruby>を<ruby>延期<rt>えんき</rt></ruby>する",
+              "example_en": "Postpone the game."
             },
             {
               "term_ja": "合わせる",
@@ -4179,7 +4417,8 @@
               "ruby_html": "<ruby>合<rt>あ</rt></ruby>わせる",
               "meaning_en": "to adjust, synchronize (watch)",
               "example_ja": "時計を合わせる",
-              "example_ruby": "<ruby>時計<rt>とけい</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる"
+              "example_ruby": "<ruby>時計<rt>とけい</rt></ruby>を<ruby>合<rt>あ</rt></ruby>わせる",
+              "example_en": "Set a clock to the right time."
             },
             {
               "term_ja": "日付",
@@ -4187,7 +4426,8 @@
               "ruby_html": "<ruby>日付<rt>ひづけ</rt></ruby>",
               "meaning_en": "date (on paper/calendar)",
               "example_ja": "日付を確認する",
-              "example_ruby": "<ruby>日付<rt>ひづけ</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する"
+              "example_ruby": "<ruby>日付<rt>ひづけ</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する",
+              "example_en": "Check the date."
             },
             {
               "term_ja": "セットする",
@@ -4195,7 +4435,8 @@
               "ruby_html": "セットする",
               "meaning_en": "to set (timer, alarm)",
               "example_ja": "タイマーをセットする",
-              "example_ruby": "タイマーをセットする"
+              "example_ruby": "タイマーをセットする",
+              "example_en": "Set the timer."
             },
             {
               "term_ja": "アラーム",
@@ -4203,7 +4444,8 @@
               "ruby_html": "アラーム",
               "meaning_en": "alarm",
               "example_ja": "アラームを止める",
-              "example_ruby": "アラームを<ruby>止<rt>と</rt></ruby>める"
+              "example_ruby": "アラームを<ruby>止<rt>と</rt></ruby>める",
+              "example_en": "Turn off the alarm."
             },
             {
               "term_ja": "目覚まし時計",
@@ -4211,7 +4453,8 @@
               "ruby_html": "<ruby>目覚まし時計<rt>めざましどけい</rt></ruby>",
               "meaning_en": "alarm clock",
               "example_ja": "目覚まし時計をかける",
-              "example_ruby": "<ruby>目覚まし時計<rt>めざましどけい</rt></ruby>をかける"
+              "example_ruby": "<ruby>目覚まし時計<rt>めざましどけい</rt></ruby>をかける",
+              "example_en": "Set the alarm clock."
             }
           ],
           "yattemiyou": [
@@ -4267,7 +4510,8 @@
               "ruby_html": "<ruby>前回<rt>ぜんかい</rt></ruby>",
               "meaning_en": "last time, previous time",
               "example_ja": "前回の復習をする",
-              "example_ruby": "<ruby>前回<rt>ぜんかい</rt></ruby>の<ruby>復習<rt>ふくしゅう</rt></ruby>をする"
+              "example_ruby": "<ruby>前回<rt>ぜんかい</rt></ruby>の<ruby>復習<rt>ふくしゅう</rt></ruby>をする",
+              "example_en": "Review the last lesson."
             },
             {
               "term_ja": "今回",
@@ -4275,7 +4519,8 @@
               "ruby_html": "<ruby>今回<rt>こんかい</rt></ruby>",
               "meaning_en": "this time, on this occasion",
               "example_ja": "今回は成功した",
-              "example_ruby": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>成功<rt>せいこう</rt></ruby>した"
+              "example_ruby": "<ruby>今回<rt>こんかい</rt></ruby>は<ruby>成功<rt>せいこう</rt></ruby>した",
+              "example_en": "It succeeded this time."
             },
             {
               "term_ja": "次回",
@@ -4283,7 +4528,8 @@
               "ruby_html": "<ruby>次回<rt>じかい</rt></ruby>",
               "meaning_en": "next time",
               "example_ja": "次回の予定",
-              "example_ruby": "<ruby>次回<rt>じかい</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>"
+              "example_ruby": "<ruby>次回<rt>じかい</rt></ruby>の<ruby>予定<rt>よてい</rt></ruby>",
+              "example_en": "The next schedule."
             },
             {
               "term_ja": "以前",
@@ -4291,7 +4537,8 @@
               "ruby_html": "<ruby>以前<rt>いぜん</rt></ruby>",
               "meaning_en": "previously, before, formerly",
               "example_ja": "以前会ったことがある",
-              "example_ruby": "<ruby>以前<rt>いぜん</rt></ruby><ruby>会<rt>あ</rt></ruby>ったことがある"
+              "example_ruby": "<ruby>以前<rt>いぜん</rt></ruby><ruby>会<rt>あ</rt></ruby>ったことがある",
+              "example_en": "I have met him before."
             },
             {
               "term_ja": "以後",
@@ -4299,7 +4546,8 @@
               "ruby_html": "<ruby>以後<rt>いご</rt></ruby>",
               "meaning_en": "after this, hereafter, since",
               "example_ja": "正午以後に連絡する",
-              "example_ruby": "<ruby>正午以後<rt>しょうごいご</rt></ruby>に<ruby>連絡<rt>れんらく</rt></ruby>する"
+              "example_ruby": "<ruby>正午以後<rt>しょうごいご</rt></ruby>に<ruby>連絡<rt>れんらく</rt></ruby>する",
+              "example_en": "Contact me after noon."
             },
             {
               "term_ja": "前後",
@@ -4307,7 +4555,8 @@
               "ruby_html": "<ruby>前後<rt>ぜんご</rt></ruby>",
               "meaning_en": "around, about, before and behind",
               "example_ja": "3時前後に集まる",
-              "example_ruby": "3<ruby>時前後<rt>じぜんご</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まる"
+              "example_ruby": "3<ruby>時前後<rt>じぜんご</rt></ruby>に<ruby>集<rt>あつ</rt></ruby>まる",
+              "example_en": "Gather at around three o'clock."
             },
             {
               "term_ja": "前日",
@@ -4315,7 +4564,8 @@
               "ruby_html": "<ruby>前日<rt>ぜんじつ</rt></ruby>",
               "meaning_en": "the previous day, the day before",
               "example_ja": "試験の前日に早く寝る",
-              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>に<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>る"
+              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>の<ruby>前日<rt>ぜんじつ</rt></ruby>に<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>る",
+              "example_en": "Go to bed early the day before the exam."
             },
             {
               "term_ja": "当日",
@@ -4323,7 +4573,8 @@
               "ruby_html": "<ruby>当日<rt>とうじつ</rt></ruby>",
               "meaning_en": "that day, the appointed day",
               "example_ja": "結婚式の当日",
-              "example_ruby": "<ruby>結婚式<rt>けっこんしき</rt></ruby>の<ruby>当日<rt>とうじつ</rt></ruby>"
+              "example_ruby": "<ruby>結婚式<rt>けっこんしき</rt></ruby>の<ruby>当日<rt>とうじつ</rt></ruby>",
+              "example_en": "The day of the wedding."
             },
             {
               "term_ja": "翌日",
@@ -4331,7 +4582,8 @@
               "ruby_html": "<ruby>翌日<rt>よくじつ</rt></ruby>",
               "meaning_en": "the next day, following day",
               "example_ja": "翌日の朝に出発する",
-              "example_ruby": "<ruby>翌日<rt>よくじつ</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>に<ruby>出発<rt>しゅっぱつ</rt></ruby>する"
+              "example_ruby": "<ruby>翌日<rt>よくじつ</rt></ruby>の<ruby>朝<rt>あさ</rt></ruby>に<ruby>出発<rt>しゅっぱつ</rt></ruby>する",
+              "example_en": "Leave the next morning."
             },
             {
               "term_ja": "平日",
@@ -4339,7 +4591,8 @@
               "ruby_html": "<ruby>平日<rt>へいじつ</rt></ruby>",
               "meaning_en": "weekday, ordinary days",
               "example_ja": "平日は会社に行く",
-              "example_ruby": "<ruby>平日<rt>へいじつ</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>平日<rt>へいじつ</rt></ruby>は<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go to the company on weekdays."
             },
             {
               "term_ja": "週末",
@@ -4347,7 +4600,8 @@
               "ruby_html": "<ruby>週末<rt>しゅうまつ</rt></ruby>",
               "meaning_en": "weekend",
               "example_ja": "週末にドライブする",
-              "example_ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>にドライブする"
+              "example_ruby": "<ruby>週末<rt>しゅうまつ</rt></ruby>にドライブする",
+              "example_en": "Go for a drive on the weekend."
             },
             {
               "term_ja": "昨年",
@@ -4355,7 +4609,8 @@
               "ruby_html": "<ruby>昨年<rt>さくねん</rt></ruby>",
               "meaning_en": "last year (formal)",
               "example_ja": "昨年の業績",
-              "example_ruby": "<ruby>昨年<rt>さくねん</rt></ruby>の<ruby>業績<rt>ぎょうせき</rt></ruby>"
+              "example_ruby": "<ruby>昨年<rt>さくねん</rt></ruby>の<ruby>業績<rt>ぎょうせき</rt></ruby>",
+              "example_en": "Last year's business results."
             },
             {
               "term_ja": "翌年",
@@ -4363,7 +4618,8 @@
               "ruby_html": "<ruby>翌年<rt>よくねん</rt></ruby>",
               "meaning_en": "the next year, the following year",
               "example_ja": "その翌年に卒業した",
-              "example_ruby": "その<ruby>翌年<rt>よくねん</rt></ruby>に<ruby>卒業<rt>そつぎょう</rt></ruby>した"
+              "example_ruby": "その<ruby>翌年<rt>よくねん</rt></ruby>に<ruby>卒業<rt>そつぎょう</rt></ruby>した",
+              "example_en": "I graduated the following year."
             },
             {
               "term_ja": "過去",
@@ -4371,7 +4627,8 @@
               "ruby_html": "<ruby>過去<rt>かこ</rt></ruby>",
               "meaning_en": "past, bygone days",
               "example_ja": "過去を振り返る",
-              "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る"
+              "example_ruby": "<ruby>過去<rt>かこ</rt></ruby>を<ruby>振<rt>ふ</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>る",
+              "example_en": "Look back on the past."
             },
             {
               "term_ja": "現在",
@@ -4379,7 +4636,8 @@
               "ruby_html": "<ruby>現在<rt>げんざい</rt></ruby>",
               "meaning_en": "present, currently, now",
               "example_ja": "現在の時刻",
-              "example_ruby": "<ruby>現在<rt>げんざい</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>"
+              "example_ruby": "<ruby>現在<rt>げんざい</rt></ruby>の<ruby>時刻<rt>じこく</rt></ruby>",
+              "example_en": "The current time."
             },
             {
               "term_ja": "未来",
@@ -4387,7 +4645,8 @@
               "ruby_html": "<ruby>未来<rt>みらい</rt></ruby>",
               "meaning_en": "future",
               "example_ja": "未来の社会を想像する",
-              "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>する"
+              "example_ruby": "<ruby>未来<rt>みらい</rt></ruby>の<ruby>社会<rt>しゃかい</rt></ruby>を<ruby>想像<rt>そうぞう</rt></ruby>する",
+              "example_en": "Imagine the society of the future."
             },
             {
               "term_ja": "現代",
@@ -4395,7 +4654,8 @@
               "ruby_html": "<ruby>現代<rt>げんだい</rt></ruby>",
               "meaning_en": "the present age, contemporary times",
               "example_ja": "現代社会の課題",
-              "example_ruby": "<ruby>現代社会<rt>げんだいしゃかい</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>"
+              "example_ruby": "<ruby>現代社会<rt>げんだいしゃかい</rt></ruby>の<ruby>課題<rt>かだい</rt></ruby>",
+              "example_en": "Issues in contemporary society."
             },
             {
               "term_ja": "間もなく",
@@ -4403,7 +4663,8 @@
               "ruby_html": "<ruby>間<rt>ま</rt></ruby>もなく",
               "meaning_en": "soon, shortly, before long",
               "example_ja": "間もなく列車が到着する",
-              "example_ruby": "<ruby>間<rt>ま</rt></ruby>もなく<ruby>列車<rt>れっしゃ</rt></ruby>が<ruby>到着<rt>とうちゃく</rt></ruby>する"
+              "example_ruby": "<ruby>間<rt>ま</rt></ruby>もなく<ruby>列車<rt>れっしゃ</rt></ruby>が<ruby>到着<rt>とうちゃく</rt></ruby>する",
+              "example_en": "The train will arrive shortly."
             },
             {
               "term_ja": "突然",
@@ -4411,7 +4672,8 @@
               "ruby_html": "<ruby>突然<rt>とつぜん</rt></ruby>",
               "meaning_en": "suddenly, all of a sudden, abruptly",
               "example_ja": "突然電話が鳴る",
-              "example_ruby": "<ruby>突然<rt>とつぜん</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る"
+              "example_ruby": "<ruby>突然<rt>とつぜん</rt></ruby><ruby>電話<rt>でんわ</rt></ruby>が<ruby>鳴<rt>な</rt></ruby>る",
+              "example_en": "The phone suddenly rings."
             }
           ],
           "yattemiyou": [

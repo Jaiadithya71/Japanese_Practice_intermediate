@@ -31,7 +31,8 @@
               "meaning_en": "School year, grade",
               "meaning_zh": "学年",
               "example_ja": "学年が上がる",
-              "example_ruby": "<ruby>学年<rt>がくねん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる"
+              "example_ruby": "<ruby>学年<rt>がくねん</rt></ruby>が<ruby>上<rt>あ</rt></ruby>がる",
+              "example_en": "Move up a school year."
             },
             {
               "term_ja": "学期",
@@ -40,7 +41,8 @@
               "meaning_en": "School term, semester",
               "meaning_zh": "学期",
               "example_ja": "学期が始まる",
-              "example_ruby": "<ruby>学期<rt>がっき</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まる"
+              "example_ruby": "<ruby>学期<rt>がっき</rt></ruby>が<ruby>始<rt>はじ</rt></ruby>まる",
+              "example_en": "The school term begins."
             },
             {
               "term_ja": "通学する",
@@ -49,7 +51,8 @@
               "meaning_en": "Attending school; commute to school",
               "meaning_zh": "上学",
               "example_ja": "電車で通学する",
-              "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通学<rt>つうがく</rt></ruby>する"
+              "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通学<rt>つうがく</rt></ruby>する",
+              "example_en": "Commute to school by train."
             },
             {
               "term_ja": "遅刻する",
@@ -58,7 +61,8 @@
               "meaning_en": "Be late, tardy",
               "meaning_zh": "迟到",
               "example_ja": "学校に遅刻する",
-              "example_ruby": "<ruby>学校<rt>がっこう</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>する"
+              "example_ruby": "<ruby>学校<rt>がっこう</rt></ruby>に<ruby>遅刻<rt>ちこく</rt></ruby>する",
+              "example_en": "Be late for school."
             },
             {
               "term_ja": "欠席する",
@@ -67,7 +71,8 @@
               "meaning_en": "Absence; be absent",
               "meaning_zh": "缺席",
               "example_ja": "授業を欠席する",
-              "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>を<ruby>欠席<rt>けっせき</rt></ruby>する"
+              "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>を<ruby>欠席<rt>けっせき</rt></ruby>する",
+              "example_en": "Be absent from class."
             },
             {
               "term_ja": "配る",
@@ -76,7 +81,8 @@
               "meaning_en": "Distribute, hand out",
               "meaning_zh": "分发",
               "example_ja": "プリントを配る",
-              "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る"
+              "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る",
+              "example_en": "Hand out worksheets."
             },
             {
               "term_ja": "プリント",
@@ -85,7 +91,8 @@
               "meaning_en": "Handout, worksheet",
               "meaning_zh": "印刷品，讲义",
               "example_ja": "プリントを配る",
-              "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る"
+              "example_ruby": "プリントを<ruby>配<rt>くば</rt></ruby>る",
+              "example_en": "Hand out worksheets."
             },
             {
               "term_ja": "得意",
@@ -94,7 +101,8 @@
               "meaning_en": "Good at, strong in",
               "meaning_zh": "拿手，擅长",
               "example_ja": "英語が得意だ",
-              "example_ruby": "<ruby>英語<rt>えいご</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>だ"
+              "example_ruby": "<ruby>英語<rt>えいご</rt></ruby>が<ruby>得意<rt>とくい</rt></ruby>だ",
+              "example_en": "I'm good at English."
             },
             {
               "term_ja": "苦手",
@@ -103,7 +111,8 @@
               "meaning_en": "Bad at, weak in",
               "meaning_zh": "不擅长",
               "example_ja": "数学が苦手だ",
-              "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>が<ruby>苦手<rt>にがて</rt></ruby>だ"
+              "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>が<ruby>苦手<rt>にがて</rt></ruby>だ",
+              "example_en": "I'm bad at math."
             },
             {
               "term_ja": "おしゃべり",
@@ -112,7 +121,8 @@
               "meaning_en": "Chatting, talkative",
               "meaning_zh": "闲聊",
               "example_ja": "授業中におしゃべりする",
-              "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>におしゃべりする"
+              "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>におしゃべりする",
+              "example_en": "Chat during class."
             },
             {
               "term_ja": "居眠り",
@@ -121,7 +131,8 @@
               "meaning_en": "Doze off, nodding off",
               "meaning_zh": "打瞌睡",
               "example_ja": "授業中に居眠りする",
-              "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>に<ruby>居眠<rt>いねむ</rt></ruby>りする"
+              "example_ruby": "<ruby>授業中<rt>じゅぎょうちゅう</rt></ruby>に<ruby>居眠<rt>いねむ</rt></ruby>りする",
+              "example_en": "Doze off during class."
             },
             {
               "term_ja": "給食",
@@ -130,7 +141,8 @@
               "meaning_en": "School lunch",
               "meaning_zh": "给食，供给膳食",
               "example_ja": "給食を食べる",
-              "example_ruby": "<ruby>給食<rt>きゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる"
+              "example_ruby": "<ruby>給食<rt>きゅうしょく</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる",
+              "example_en": "Eat the school lunch."
             },
             {
               "term_ja": "お弁当",
@@ -139,7 +151,8 @@
               "meaning_en": "Box lunch, bento",
               "meaning_zh": "便当",
               "example_ja": "お弁当を食べる",
-              "example_ruby": "お<ruby>弁当<rt>べんとう</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる"
+              "example_ruby": "お<ruby>弁当<rt>べんとう</rt></ruby>を<ruby>食<rt>た</rt></ruby>べる",
+              "example_en": "Eat a boxed lunch."
             },
             {
               "term_ja": "クラブ",
@@ -148,7 +161,8 @@
               "meaning_en": "School club, activity club",
               "meaning_zh": "俱乐部",
               "example_ja": "クラブに入る",
-              "example_ruby": "クラブに<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "クラブに<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "Join a club."
             },
             {
               "term_ja": "部",
@@ -157,7 +171,8 @@
               "meaning_en": "Club, school team (suffix)",
               "meaning_zh": "部",
               "example_ja": "サッカー部に入る",
-              "example_ruby": "サッカー<ruby>部<rt>ぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "サッカー<ruby>部<rt>ぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "Join the soccer club."
             },
             {
               "term_ja": "大会",
@@ -166,7 +181,8 @@
               "meaning_en": "Tournament, mass meeting",
               "meaning_zh": "大赛，大会",
               "example_ja": "クラブの大会に出る",
-              "example_ruby": "クラブの<ruby>大会<rt>たいかい</rt></ruby>に<ruby>出<rt>で</rt></ruby>る"
+              "example_ruby": "クラブの<ruby>大会<rt>たいかい</rt></ruby>に<ruby>出<rt>で</rt></ruby>る",
+              "example_en": "Take part in the club tournament."
             },
             {
               "term_ja": "遠足",
@@ -175,7 +191,8 @@
               "meaning_en": "School excursion, outing",
               "meaning_zh": "远足，郊游",
               "example_ja": "遠足に行く",
-              "example_ruby": "<ruby>遠足<rt>えんそく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>遠足<rt>えんそく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go on a school excursion."
             },
             {
               "term_ja": "修学旅行",
@@ -184,7 +201,8 @@
               "meaning_en": "School trip, educational trip",
               "meaning_zh": "修学旅行",
               "example_ja": "修学旅行に行く",
-              "example_ruby": "<ruby>修学旅行<rt>しゅうがくりょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>修学旅行<rt>しゅうがくりょこう</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go on a school trip."
             },
             {
               "term_ja": "運動会",
@@ -193,7 +211,8 @@
               "meaning_en": "Sports festival, athletic meet",
               "meaning_zh": "运动会",
               "example_ja": "運動会に参加する",
-              "example_ruby": "<ruby>運動会<rt>うんどうかい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "<ruby>運動会<rt>うんどうかい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in the sports festival."
             },
             {
               "term_ja": "体育祭",
@@ -202,7 +221,8 @@
               "meaning_en": "Sports festival (junior/high school)",
               "meaning_zh": "体育节",
               "example_ja": "体育祭に参加する",
-              "example_ruby": "<ruby>体育祭<rt>たいいくさい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "<ruby>体育祭<rt>たいいくさい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in the sports festival."
             },
             {
               "term_ja": "文化祭",
@@ -211,7 +231,8 @@
               "meaning_en": "School cultural festival",
               "meaning_zh": "文化节",
               "example_ja": "文化祭で発表する",
-              "example_ruby": "<ruby>文化祭<rt>ぶんかさい</rt></ruby>で<ruby>発表<rt>はっぴょう</rt></ruby>する"
+              "example_ruby": "<ruby>文化祭<rt>ぶんかさい</rt></ruby>で<ruby>発表<rt>はっぴょう</rt></ruby>する",
+              "example_en": "Give a presentation at the cultural festival."
             }
           ],
           "yattemiyou": [
@@ -256,7 +277,8 @@
               "meaning_en": "Learn, study",
               "meaning_zh": "学，学习",
               "example_ja": "日本語を学ぶ",
-              "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶ"
+              "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>学<rt>まな</rt></ruby>ぶ",
+              "example_en": "Learn Japanese."
             },
             {
               "term_ja": "学習する",
@@ -265,7 +287,8 @@
               "meaning_en": "Study, learn",
               "meaning_zh": "学习",
               "example_ja": "言葉を学習する",
-              "example_ruby": "<ruby>言葉<rt>ことば</rt></ruby>を<ruby>学習<rt>がくしゅう</rt></ruby>する"
+              "example_ruby": "<ruby>言葉<rt>ことば</rt></ruby>を<ruby>学習<rt>がくしゅう</rt></ruby>する",
+              "example_en": "Study vocabulary."
             },
             {
               "term_ja": "基礎",
@@ -274,7 +297,8 @@
               "meaning_en": "Basics, foundation",
               "meaning_zh": "基础",
               "example_ja": "勉強の基礎",
-              "example_ruby": "<ruby>勉強<rt>べんきょう</rt></ruby>の<ruby>基礎<rt>きそ</rt></ruby>"
+              "example_ruby": "<ruby>勉強<rt>べんきょう</rt></ruby>の<ruby>基礎<rt>きそ</rt></ruby>",
+              "example_en": "The basics of studying."
             },
             {
               "term_ja": "習う",
@@ -283,7 +307,8 @@
               "meaning_en": "Learn, take lessons",
               "meaning_zh": "学，练习",
               "example_ja": "先生に習う",
-              "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>習<rt>なら</rt></ruby>う"
+              "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>習<rt>なら</rt></ruby>う",
+              "example_en": "Learn from a teacher."
             },
             {
               "term_ja": "教わる",
@@ -292,7 +317,8 @@
               "meaning_en": "Be taught, learn from",
               "meaning_zh": "受教，学习",
               "example_ja": "先生に教わる",
-              "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>教<rt>おそ</rt></ruby>わる"
+              "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>教<rt>おそ</rt></ruby>わる",
+              "example_en": "Be taught by a teacher."
             },
             {
               "term_ja": "知識",
@@ -301,7 +327,8 @@
               "meaning_en": "Knowledge",
               "meaning_zh": "知识",
               "example_ja": "知識を深める",
-              "example_ruby": "<ruby>知識<rt>ちしき</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>める"
+              "example_ruby": "<ruby>知識<rt>ちしき</rt></ruby>を<ruby>深<rt>ふか</rt></ruby>める",
+              "example_en": "Deepen one's knowledge."
             },
             {
               "term_ja": "疑問",
@@ -310,7 +337,8 @@
               "meaning_en": "Question, doubt",
               "meaning_zh": "疑问",
               "example_ja": "疑問を持つ",
-              "example_ruby": "<ruby>疑問<rt>ぎもん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ"
+              "example_ruby": "<ruby>疑問<rt>ぎもん</rt></ruby>を<ruby>持<rt>も</rt></ruby>つ",
+              "example_en": "Have a question."
             },
             {
               "term_ja": "実力",
@@ -319,7 +347,8 @@
               "meaning_en": "Ability, real capability",
               "meaning_zh": "实力",
               "example_ja": "実力を試す",
-              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す"
+              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す",
+              "example_en": "Test one's real ability."
             },
             {
               "term_ja": "付ける",
@@ -328,7 +357,8 @@
               "meaning_en": "Acquire, gain (ability)",
               "meaning_zh": "掌握，培养",
               "example_ja": "実力を付ける",
-              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける"
+              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける",
+              "example_en": "Build up real ability."
             },
             {
               "term_ja": "試す",
@@ -337,7 +367,8 @@
               "meaning_en": "Try out, test",
               "meaning_zh": "试验，尝试",
               "example_ja": "実力を試す",
-              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す"
+              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>試<rt>ため</rt></ruby>す",
+              "example_en": "Test one's real ability."
             },
             {
               "term_ja": "出す",
@@ -346,7 +377,8 @@
               "meaning_en": "Demonstrate, show (ability)",
               "meaning_zh": "发挥",
               "example_ja": "実力を出す",
-              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>実力<rt>じつりょく</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Show one's real ability."
             },
             {
               "term_ja": "満点",
@@ -355,7 +387,8 @@
               "meaning_en": "Full marks, perfect score",
               "meaning_zh": "满分",
               "example_ja": "テストで満点を取る",
-              "example_ruby": "テストで<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "テストで<ruby>満点<rt>まんてん</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Get full marks on a test."
             },
             {
               "term_ja": "成績",
@@ -364,7 +397,8 @@
               "meaning_en": "Grades, marks",
               "meaning_zh": "成绩",
               "example_ja": "成績がいい",
-              "example_ruby": "<ruby>成績<rt>せいせき</rt></ruby>がいい"
+              "example_ruby": "<ruby>成績<rt>せいせき</rt></ruby>がいい",
+              "example_en": "Have good grades."
             },
             {
               "term_ja": "単語",
@@ -373,7 +407,8 @@
               "meaning_en": "Word, vocabulary",
               "meaning_zh": "单词",
               "example_ja": "単語を暗記する",
-              "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する"
+              "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する",
+              "example_en": "Memorize vocabulary."
             },
             {
               "term_ja": "暗記する",
@@ -382,7 +417,8 @@
               "meaning_en": "Memorize, learn by heart",
               "meaning_zh": "熟记，背诵",
               "example_ja": "単語を暗記する",
-              "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する"
+              "example_ruby": "<ruby>単語<rt>たんご</rt></ruby>を<ruby>暗記<rt>あんき</rt></ruby>する",
+              "example_en": "Memorize vocabulary."
             },
             {
               "term_ja": "内容",
@@ -391,7 +427,8 @@
               "meaning_en": "Content, subject matter",
               "meaning_zh": "内容",
               "example_ja": "授業の内容を理解する",
-              "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する"
+              "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>の<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する",
+              "example_en": "Understand the content of the class."
             },
             {
               "term_ja": "理解する",
@@ -400,7 +437,8 @@
               "meaning_en": "Understand, comprehend",
               "meaning_zh": "理解",
               "example_ja": "内容を理解する",
-              "example_ruby": "<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する"
+              "example_ruby": "<ruby>内容<rt>ないよう</rt></ruby>を<ruby>理解<rt>りかい</rt></ruby>する",
+              "example_en": "Understand the content."
             },
             {
               "term_ja": "スピーチする",
@@ -409,7 +447,8 @@
               "meaning_en": "Make a speech",
               "meaning_zh": "演讲",
               "example_ja": "クラスでスピーチする",
-              "example_ruby": "クラスでスピーチする"
+              "example_ruby": "クラスでスピーチする",
+              "example_en": "Give a speech in class."
             },
             {
               "term_ja": "レベル",
@@ -418,7 +457,8 @@
               "meaning_en": "Level",
               "meaning_zh": "水平，级别",
               "example_ja": "日本語のレベル",
-              "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>のレベル"
+              "example_ruby": "<ruby>日本語<rt>にほんご</rt></ruby>のレベル",
+              "example_en": "Japanese level."
             },
             {
               "term_ja": "初級",
@@ -427,7 +467,8 @@
               "meaning_en": "Beginner level, elementary",
               "meaning_zh": "初级",
               "example_ja": "初級のクラス",
-              "example_ruby": "<ruby>初級<rt>しょきゅう</rt></ruby>のクラス"
+              "example_ruby": "<ruby>初級<rt>しょきゅう</rt></ruby>のクラス",
+              "example_en": "A beginner-level class."
             },
             {
               "term_ja": "中級",
@@ -436,7 +477,8 @@
               "meaning_en": "Intermediate level",
               "meaning_zh": "中级",
               "example_ja": "中級のクラス",
-              "example_ruby": "<ruby>中級<rt>ちゅうきゅう</rt></ruby>のクラス"
+              "example_ruby": "<ruby>中級<rt>ちゅうきゅう</rt></ruby>のクラス",
+              "example_en": "An intermediate-level class."
             },
             {
               "term_ja": "上級",
@@ -445,7 +487,8 @@
               "meaning_en": "Advanced level",
               "meaning_zh": "高级",
               "example_ja": "上級のクラス",
-              "example_ruby": "<ruby>上級<rt>じょうきゅう</rt></ruby>のクラス"
+              "example_ruby": "<ruby>上級<rt>じょうきゅう</rt></ruby>のクラス",
+              "example_en": "An advanced-level class."
             },
             {
               "term_ja": "国語",
@@ -454,7 +497,8 @@
               "meaning_en": "National language, Japanese",
               "meaning_zh": "语文，国语",
               "example_ja": "国語の教科書",
-              "example_ruby": "<ruby>国語<rt>こくご</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>"
+              "example_ruby": "<ruby>国語<rt>こくご</rt></ruby>の<ruby>教科書<rt>きょうかしょ</rt></ruby>",
+              "example_en": "A Japanese-language textbook."
             },
             {
               "term_ja": "理科",
@@ -463,7 +507,8 @@
               "meaning_en": "Science (elementary/middle school)",
               "meaning_zh": "理科",
               "example_ja": "理科の実験",
-              "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>"
+              "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>",
+              "example_en": "A science experiment."
             },
             {
               "term_ja": "体育",
@@ -472,7 +517,8 @@
               "meaning_en": "Physical education, PE",
               "meaning_zh": "体育",
               "example_ja": "体育の授業",
-              "example_ruby": "<ruby>体育<rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>"
+              "example_ruby": "<ruby>体育<rt>たいいく</rt></ruby>の<ruby>授業<rt>じゅぎょう</rt></ruby>",
+              "example_en": "A PE class."
             },
             {
               "term_ja": "数学",
@@ -481,7 +527,8 @@
               "meaning_en": "Mathematics, math",
               "meaning_zh": "数学",
               "example_ja": "数学の問題",
-              "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>"
+              "example_ruby": "<ruby>数学<rt>すうがく</rt></ruby>の<ruby>問題<rt>もんだい</rt></ruby>",
+              "example_en": "A math problem."
             },
             {
               "term_ja": "社会",
@@ -490,7 +537,8 @@
               "meaning_en": "Social studies; society",
               "meaning_zh": "社会科",
               "example_ja": "社会の勉強",
-              "example_ruby": "<ruby>社会<rt>しゃかい</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>"
+              "example_ruby": "<ruby>社会<rt>しゃかい</rt></ruby>の<ruby>勉強<rt>べんきょう</rt></ruby>",
+              "example_en": "Studying social studies."
             },
             {
               "term_ja": "音楽",
@@ -499,7 +547,8 @@
               "meaning_en": "Music",
               "meaning_zh": "音乐",
               "example_ja": "音楽の時間",
-              "example_ruby": "<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>"
+              "example_ruby": "<ruby>音楽<rt>おんがく</rt></ruby>の<ruby>時間<rt>じかん</rt></ruby>",
+              "example_en": "Music period."
             }
           ],
           "yattemiyou": [
@@ -915,7 +964,8 @@
               "meaning_en": "Taking entrance exams; take an exam",
               "meaning_zh": "投考，应试",
               "example_ja": "大学を受験する",
-              "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>受験<rt>じゅけん</rt></ruby>する"
+              "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>を<ruby>受験<rt>じゅけん</rt></ruby>する",
+              "example_en": "Take the entrance exam for a university."
             },
             {
               "term_ja": "私立",
@@ -924,7 +974,8 @@
               "meaning_en": "Private (institution)",
               "meaning_zh": "私立",
               "example_ja": "私立大学",
-              "example_ruby": "<ruby>私立大学<rt>しりつだいがく</rt></ruby>"
+              "example_ruby": "<ruby>私立大学<rt>しりつだいがく</rt></ruby>",
+              "example_en": "A private university."
             },
             {
               "term_ja": "国立",
@@ -933,7 +984,8 @@
               "meaning_en": "National (institution)",
               "meaning_zh": "国立",
               "example_ja": "国立大学",
-              "example_ruby": "<ruby>国立大学<rt>こくりつだいがく</rt></ruby>"
+              "example_ruby": "<ruby>国立大学<rt>こくりつだいがく</rt></ruby>",
+              "example_en": "A national university."
             },
             {
               "term_ja": "大学院",
@@ -942,7 +994,8 @@
               "meaning_en": "Graduate school",
               "meaning_zh": "研究生院",
               "example_ja": "大学院に進学する",
-              "example_ruby": "<ruby>大学院<rt>だいがくいん</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する"
+              "example_ruby": "<ruby>大学院<rt>だいがくいん</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する",
+              "example_en": "Go on to graduate school."
             },
             {
               "term_ja": "進学する",
@@ -951,7 +1004,8 @@
               "meaning_en": "Entering higher education; enter higher school",
               "meaning_zh": "升学",
               "example_ja": "大学に進学する",
-              "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する"
+              "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>に<ruby>進学<rt>しんがく</rt></ruby>する",
+              "example_en": "Go on to university."
             },
             {
               "term_ja": "徹夜",
@@ -960,7 +1014,8 @@
               "meaning_en": "All-nighter; stay up all night",
               "meaning_zh": "熬夜，通宵",
               "example_ja": "徹夜で勉強する",
-              "example_ruby": "<ruby>徹夜<rt>てつや</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>する"
+              "example_ruby": "<ruby>徹夜<rt>てつや</rt></ruby>で<ruby>勉強<rt>べんきょう</rt></ruby>する",
+              "example_en": "Stay up all night studying."
             },
             {
               "term_ja": "努力する",
@@ -969,7 +1024,8 @@
               "meaning_en": "Effort; make an effort",
               "meaning_zh": "努力",
               "example_ja": "合格のために努力する",
-              "example_ruby": "<ruby>合格<rt>ごうかく</rt></ruby>のために<ruby>努力<rt>どりょく</rt></ruby>する"
+              "example_ruby": "<ruby>合格<rt>ごうかく</rt></ruby>のために<ruby>努力<rt>どりょく</rt></ruby>する",
+              "example_en": "Make an effort to pass."
             },
             {
               "term_ja": "ミス",
@@ -978,7 +1034,8 @@
               "meaning_en": "Mistake, error",
               "meaning_zh": "差错，失误",
               "example_ja": "計算のミスをする",
-              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>のミスをする"
+              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>のミスをする",
+              "example_en": "Make a calculation error."
             },
             {
               "term_ja": "確かめる",
@@ -987,7 +1044,8 @@
               "meaning_en": "Check, make sure",
               "meaning_zh": "弄清，确认",
               "example_ja": "答えを確かめる",
-              "example_ruby": "<ruby>答<rt>こた</rt></ruby>えを<ruby>確<rt>たし</rt></ruby>かめる"
+              "example_ruby": "<ruby>答<rt>こた</rt></ruby>えを<ruby>確<rt>たし</rt></ruby>かめる",
+              "example_en": "Check one's answer."
             },
             {
               "term_ja": "確認する",
@@ -996,7 +1054,8 @@
               "meaning_en": "Confirmation; confirm",
               "meaning_zh": "确认",
               "example_ja": "時間を確認する",
-              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する"
+              "example_ruby": "<ruby>時間<rt>じかん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>する",
+              "example_en": "Check the time."
             },
             {
               "term_ja": "解答",
@@ -1005,7 +1064,8 @@
               "meaning_en": "Answer, solution",
               "meaning_zh": "解答",
               "example_ja": "解答を見直す",
-              "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す"
+              "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す",
+              "example_en": "Look over one's answers again."
             },
             {
               "term_ja": "見直す",
@@ -1014,7 +1074,8 @@
               "meaning_en": "Review, look over again",
               "meaning_zh": "重新看，重温",
               "example_ja": "解答を見直す",
-              "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す"
+              "example_ruby": "<ruby>解答<rt>かいとう</rt></ruby>を<ruby>見直<rt>みなお</rt></ruby>す",
+              "example_en": "Look over one's answers again."
             },
             {
               "term_ja": "計算",
@@ -1023,7 +1084,8 @@
               "meaning_en": "Calculation; calculate",
               "meaning_zh": "计算",
               "example_ja": "計算を間違う",
-              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う"
+              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う",
+              "example_en": "Get a calculation wrong."
             },
             {
               "term_ja": "間違う",
@@ -1032,7 +1094,8 @@
               "meaning_en": "Make a mistake, be mistaken",
               "meaning_zh": "弄错",
               "example_ja": "計算を間違う",
-              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う"
+              "example_ruby": "<ruby>計算<rt>けいさん</rt></ruby>を<ruby>間違<rt>まちが</rt></ruby>う",
+              "example_en": "Get a calculation wrong."
             },
             {
               "term_ja": "結果",
@@ -1041,7 +1104,8 @@
               "meaning_en": "Result, outcome",
               "meaning_zh": "结果",
               "example_ja": "結果が発表される",
-              "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される"
+              "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される",
+              "example_en": "The results are announced."
             },
             {
               "term_ja": "発表される",
@@ -1050,7 +1114,8 @@
               "meaning_en": "Be announced, published",
               "meaning_zh": "公布",
               "example_ja": "結果が発表される",
-              "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される"
+              "example_ruby": "<ruby>結果<rt>けっか</rt></ruby>が<ruby>発表<rt>はっぴょう</rt></ruby>される",
+              "example_en": "The results are announced."
             },
             {
               "term_ja": "通る",
@@ -1059,7 +1124,8 @@
               "meaning_en": "Pass (an examination)",
               "meaning_zh": "通过",
               "example_ja": "試験に通る",
-              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>通<rt>とお</rt></ruby>る"
+              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>通<rt>とお</rt></ruby>る",
+              "example_en": "Pass an exam."
             },
             {
               "term_ja": "合格する",
@@ -1068,7 +1134,8 @@
               "meaning_en": "Pass an examination",
               "meaning_zh": "及格，合格",
               "example_ja": "試験に合格する",
-              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>する"
+              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>合格<rt>ごうかく</rt></ruby>する",
+              "example_en": "Pass an exam."
             },
             {
               "term_ja": "パスする",
@@ -1077,7 +1144,8 @@
               "meaning_en": "Pass (exam)",
               "meaning_zh": "通过",
               "example_ja": "試験をパスする",
-              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>をパスする"
+              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>をパスする",
+              "example_en": "Pass an exam."
             },
             {
               "term_ja": "落ちる",
@@ -1086,7 +1154,8 @@
               "meaning_en": "Fail (an exam)",
               "meaning_zh": "落榜，不及格",
               "example_ja": "試験に落ちる",
-              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる"
+              "example_ruby": "<ruby>試験<rt>しけん</rt></ruby>に<ruby>落<rt>お</rt></ruby>ちる",
+              "example_en": "Fail an exam."
             },
             {
               "term_ja": "不合格",
@@ -1095,7 +1164,8 @@
               "meaning_en": "Failure, rejection",
               "meaning_zh": "不及格，不合格",
               "example_ja": "不合格になる",
-              "example_ruby": "<ruby>不合格<rt>ふごうかく</rt></ruby>になる"
+              "example_ruby": "<ruby>不合格<rt>ふごうかく</rt></ruby>になる",
+              "example_en": "Fail (be rejected)."
             },
             {
               "term_ja": "教科書",
@@ -1104,7 +1174,8 @@
               "meaning_en": "Textbook",
               "meaning_zh": "教科书",
               "example_ja": "教科書を読む",
-              "example_ruby": "<ruby>教科書<rt>きょうかしょ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む"
+              "example_ruby": "<ruby>教科書<rt>きょうかしょ</rt></ruby>を<ruby>読<rt>よ</rt></ruby>む",
+              "example_en": "Read a textbook."
             },
             {
               "term_ja": "参考書",
@@ -1113,7 +1184,8 @@
               "meaning_en": "Reference book",
               "meaning_zh": "参考书",
               "example_ja": "参考書で調べる",
-              "example_ruby": "<ruby>参考書<rt>さんこうしょ</rt></ruby>で<ruby>調<rt>しら</rt></ruby>べる"
+              "example_ruby": "<ruby>参考書<rt>さんこうしょ</rt></ruby>で<ruby>調<rt>しら</rt></ruby>べる",
+              "example_en": "Look something up in a reference book."
             },
             {
               "term_ja": "問題集",
@@ -1122,7 +1194,8 @@
               "meaning_en": "Collection of problems, workbook",
               "meaning_zh": "练习册",
               "example_ja": "問題集を解く",
-              "example_ruby": "<ruby>問題集<rt>もんだいしゅう</rt></ruby>を<ruby>解<rt>と</rt></ruby>く"
+              "example_ruby": "<ruby>問題集<rt>もんだいしゅう</rt></ruby>を<ruby>解<rt>と</rt></ruby>く",
+              "example_en": "Work through a workbook."
             },
             {
               "term_ja": "医学部",
@@ -1131,7 +1204,8 @@
               "meaning_en": "School / faculty of medicine",
               "meaning_zh": "医学系",
               "example_ja": "医学部を目指す",
-              "example_ruby": "<ruby>医学部<rt>いがくぶ</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す"
+              "example_ruby": "<ruby>医学部<rt>いがくぶ</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す",
+              "example_en": "Aim for medical school."
             },
             {
               "term_ja": "理工学部",
@@ -1140,7 +1214,8 @@
               "meaning_en": "Faculty of science and engineering",
               "meaning_zh": "理工学系",
               "example_ja": "理工学部に入る",
-              "example_ruby": "<ruby>理工学部<rt>りこうがくぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "<ruby>理工学部<rt>りこうがくぶ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "Enter the faculty of science and engineering."
             },
             {
               "term_ja": "文学部",
@@ -1149,7 +1224,8 @@
               "meaning_en": "Faculty of letters, humanities",
               "meaning_zh": "文学系",
               "example_ja": "文学部で学ぶ",
-              "example_ruby": "<ruby>文学部<rt>ぶんがくぶ</rt></ruby>で<ruby>学<rt>まな</rt></ruby>ぶ"
+              "example_ruby": "<ruby>文学部<rt>ぶんがくぶ</rt></ruby>で<ruby>学<rt>まな</rt></ruby>ぶ",
+              "example_en": "Study in the faculty of letters."
             },
             {
               "term_ja": "法学部",
@@ -1158,7 +1234,8 @@
               "meaning_en": "Faculty of law",
               "meaning_zh": "法学系",
               "example_ja": "法学部の学生",
-              "example_ruby": "<ruby>法学部<rt>ほうがくぶ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>"
+              "example_ruby": "<ruby>法学部<rt>ほうがくぶ</rt></ruby>の<ruby>学生<rt>がくせい</rt></ruby>",
+              "example_en": "A student in the faculty of law."
             },
             {
               "term_ja": "経済学部",
@@ -1167,7 +1244,8 @@
               "meaning_en": "Faculty of economics",
               "meaning_zh": "经济学系",
               "example_ja": "経済学部を卒業する",
-              "example_ruby": "<ruby>経済学部<rt>けいざいがくぶ</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>する"
+              "example_ruby": "<ruby>経済学部<rt>けいざいがくぶ</rt></ruby>を<ruby>卒業<rt>そつぎょう</rt></ruby>する",
+              "example_en": "Graduate from the faculty of economics."
             },
             {
               "term_ja": "社会学部",
@@ -1176,7 +1254,8 @@
               "meaning_en": "Faculty of sociology / social sciences",
               "meaning_zh": "社会学系",
               "example_ja": "社会学部に通う",
-              "example_ruby": "<ruby>社会学部<rt>しゃかいがくぶ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う"
+              "example_ruby": "<ruby>社会学部<rt>しゃかいがくぶ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う",
+              "example_en": "Attend the faculty of sociology."
             }
           ],
           "yattemiyou": [
@@ -1221,7 +1300,8 @@
               "meaning_en": "Lecture",
               "meaning_zh": "讲课，讲义",
               "example_ja": "講義を聴く",
-              "example_ruby": "<ruby>講義<rt>こうぎ</rt></ruby>を<ruby>聴<rt>き</rt></ruby>く"
+              "example_ruby": "<ruby>講義<rt>こうぎ</rt></ruby>を<ruby>聴<rt>き</rt></ruby>く",
+              "example_en": "Listen to a lecture."
             },
             {
               "term_ja": "ゼミ",
@@ -1230,7 +1310,8 @@
               "meaning_en": "Seminar",
               "meaning_zh": "研讨会",
               "example_ja": "ゼミに参加する",
-              "example_ruby": "ゼミに<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "ゼミに<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in a seminar."
             },
             {
               "term_ja": "教授",
@@ -1239,7 +1320,8 @@
               "meaning_en": "Professor",
               "meaning_zh": "教授",
               "example_ja": "大学の教授",
-              "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>の<ruby>教授<rt>きょうじゅ</rt></ruby>"
+              "example_ruby": "<ruby>大学<rt>だいがく</rt></ruby>の<ruby>教授<rt>きょうじゅ</rt></ruby>",
+              "example_en": "A university professor."
             },
             {
               "term_ja": "指導",
@@ -1248,7 +1330,8 @@
               "meaning_en": "Guidance, instruction",
               "meaning_zh": "指导",
               "example_ja": "教授の指導を受ける",
-              "example_ruby": "<ruby>教授<rt>きょうじゅ</rt></ruby>の<ruby>指導<rt>しどう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける"
+              "example_ruby": "<ruby>教授<rt>きょうじゅ</rt></ruby>の<ruby>指導<rt>しどう</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
+              "example_en": "Receive a professor's guidance."
             },
             {
               "term_ja": "先輩",
@@ -1257,7 +1340,8 @@
               "meaning_en": "Senior (student / colleague)",
               "meaning_zh": "前辈，学长",
               "example_ja": "先輩に相談する",
-              "example_ruby": "<ruby>先輩<rt>せんぱい</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>する"
+              "example_ruby": "<ruby>先輩<rt>せんぱい</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>する",
+              "example_en": "Consult a senior."
             },
             {
               "term_ja": "アドバイス",
@@ -1266,7 +1350,8 @@
               "meaning_en": "Advice",
               "meaning_zh": "建议，劝告",
               "example_ja": "アドバイスをもらう",
-              "example_ruby": "アドバイスをもらう"
+              "example_ruby": "アドバイスをもらう",
+              "example_en": "Get advice."
             },
             {
               "term_ja": "コメント",
@@ -1275,7 +1360,8 @@
               "meaning_en": "Comment",
               "meaning_zh": "评论，评语",
               "example_ja": "コメントをもらう",
-              "example_ruby": "コメントをもらう"
+              "example_ruby": "コメントをもらう",
+              "example_en": "Receive comments."
             },
             {
               "term_ja": "授業",
@@ -1284,7 +1370,8 @@
               "meaning_en": "Class, lecture",
               "meaning_zh": "上课",
               "example_ja": "授業に出る",
-              "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>に<ruby>出<rt>で</rt></ruby>る"
+              "example_ruby": "<ruby>授業<rt>じゅぎょう</rt></ruby>に<ruby>出<rt>で</rt></ruby>る",
+              "example_en": "Attend class."
             },
             {
               "term_ja": "研究",
@@ -1293,7 +1380,8 @@
               "meaning_en": "Research; do research",
               "meaning_zh": "研究",
               "example_ja": "日本の歴史を研究する",
-              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>を<ruby>研究<rt>けんきゅう</rt></ruby>する"
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>の<ruby>歴史<rt>れきし</rt></ruby>を<ruby>研究<rt>けんきゅう</rt></ruby>する",
+              "example_en": "Research Japanese history."
             },
             {
               "term_ja": "実験",
@@ -1302,7 +1390,8 @@
               "meaning_en": "Experiment; do experiments",
               "meaning_zh": "实验",
               "example_ja": "理科の実験をする",
-              "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>をする"
+              "example_ruby": "<ruby>理科<rt>りか</rt></ruby>の<ruby>実験<rt>じっけん</rt></ruby>をする",
+              "example_en": "Do a science experiment."
             },
             {
               "term_ja": "提出する",
@@ -1311,7 +1400,8 @@
               "meaning_en": "Submit, turn in",
               "meaning_zh": "提出，提交",
               "example_ja": "レポートを提出する",
-              "example_ruby": "レポートを<ruby>提出<rt>ていしゅつ</rt></ruby>する"
+              "example_ruby": "レポートを<ruby>提出<rt>ていしゅつ</rt></ruby>する",
+              "example_en": "Submit a report."
             },
             {
               "term_ja": "レポート",
@@ -1320,7 +1410,8 @@
               "meaning_en": "Report, term paper",
               "meaning_zh": "报告",
               "example_ja": "レポートを書く",
-              "example_ruby": "レポートを<ruby>書<rt>か</rt></ruby>く"
+              "example_ruby": "レポートを<ruby>書<rt>か</rt></ruby>く",
+              "example_en": "Write a report."
             },
             {
               "term_ja": "課題",
@@ -1329,7 +1420,8 @@
               "meaning_en": "Assignment, task",
               "meaning_zh": "课题，作业",
               "example_ja": "課題を出す",
-              "example_ruby": "<ruby>課題<rt>かだい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>課題<rt>かだい</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Assign homework."
             },
             {
               "term_ja": "卒業論文",
@@ -1338,7 +1430,8 @@
               "meaning_en": "Graduation thesis",
               "meaning_zh": "毕业论文",
               "example_ja": "卒業論文を書く",
-              "example_ruby": "<ruby>卒業論文<rt>そつぎょうろんぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+              "example_ruby": "<ruby>卒業論文<rt>そつぎょうろんぶん</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
+              "example_en": "Write a graduation thesis."
             },
             {
               "term_ja": "卒論",
@@ -1347,7 +1440,8 @@
               "meaning_en": "Graduation thesis (abbreviation)",
               "meaning_zh": "毕业论文（简称）",
               "example_ja": "卒論のテーマ",
-              "example_ruby": "<ruby>卒論<rt>そつろん</rt></ruby>のテーマ"
+              "example_ruby": "<ruby>卒論<rt>そつろん</rt></ruby>のテーマ",
+              "example_en": "The topic of a graduation thesis."
             },
             {
               "term_ja": "授業料",
@@ -1356,7 +1450,8 @@
               "meaning_en": "Tuition, class fee",
               "meaning_zh": "学费",
               "example_ja": "授業料を払う",
-              "example_ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+              "example_ruby": "<ruby>授業料<rt>じゅぎょうりょう</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
+              "example_en": "Pay tuition."
             },
             {
               "term_ja": "学費",
@@ -1365,7 +1460,8 @@
               "meaning_en": "Tuition fees, academic expenses",
               "meaning_zh": "学费",
               "example_ja": "学費を払う",
-              "example_ruby": "<ruby>学費<rt>がくひ</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う"
+              "example_ruby": "<ruby>学費<rt>がくひ</rt></ruby>を<ruby>払<rt>はら</rt></ruby>う",
+              "example_en": "Pay school fees."
             },
             {
               "term_ja": "寮",
@@ -1374,7 +1470,8 @@
               "meaning_en": "Dormitory",
               "meaning_zh": "宿舍",
               "example_ja": "学生寮に住む",
-              "example_ruby": "<ruby>学生寮<rt>がくせいりょう</rt></ruby>に<ruby>住<rt>す</rt></ruby>む"
+              "example_ruby": "<ruby>学生寮<rt>がくせいりょう</rt></ruby>に<ruby>住<rt>す</rt></ruby>む",
+              "example_en": "Live in a student dormitory."
             },
             {
               "term_ja": "暮らす",
@@ -1383,7 +1480,8 @@
               "meaning_en": "Live, make a living",
               "meaning_zh": "生活",
               "example_ja": "一人で暮らす",
-              "example_ruby": "<ruby>一人<rt>ひとり</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす"
+              "example_ruby": "<ruby>一人<rt>ひとり</rt></ruby>で<ruby>暮<rt>く</rt></ruby>らす",
+              "example_en": "Live alone."
             },
             {
               "term_ja": "一人暮らし",
@@ -1392,7 +1490,8 @@
               "meaning_en": "Living alone",
               "meaning_zh": "一个人生活",
               "example_ja": "一人暮らしを始める",
-              "example_ruby": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>める"
+              "example_ruby": "<ruby>一人暮<rt>ひとりぐ</rt></ruby>らしを<ruby>始<rt>はじ</rt></ruby>める",
+              "example_en": "Start living alone."
             },
             {
               "term_ja": "サークル",
@@ -1401,7 +1500,8 @@
               "meaning_en": "Club, student circle",
               "meaning_zh": "(同好会) 团体",
               "example_ja": "サークルに入る",
-              "example_ruby": "サークルに<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "サークルに<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "Join a club (student circle)."
             },
             {
               "term_ja": "飲み会",
@@ -1410,7 +1510,8 @@
               "meaning_en": "Drinking party",
               "meaning_zh": "酒会",
               "example_ja": "飲み会に参加する",
-              "example_ruby": "<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "<ruby>飲<rt>の</rt></ruby>み<ruby>会<rt>かい</rt></ruby>に<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in a drinking party."
             },
             {
               "term_ja": "合宿",
@@ -1419,7 +1520,8 @@
               "meaning_en": "Training camp, group retreat",
               "meaning_zh": "集中合练",
               "example_ja": "夏休みに合宿に行く",
-              "example_ruby": "<ruby>夏休み<rt>なつやすみ</rt></ruby>に<ruby>合宿<rt>がっしゅく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>夏休み<rt>なつやすみ</rt></ruby>に<ruby>合宿<rt>がっしゅく</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go to a training camp in the summer vacation."
             },
             {
               "term_ja": "後輩",
@@ -1428,7 +1530,8 @@
               "meaning_en": "Junior (student / colleague)",
               "meaning_zh": "后辈，学弟",
               "example_ja": "後輩を育てる",
-              "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+              "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
+              "example_en": "Train a junior member."
             },
             {
               "term_ja": "育てる",
@@ -1437,7 +1540,8 @@
               "meaning_en": "Bring up, train, foster",
               "meaning_zh": "培养",
               "example_ja": "後輩を育てる",
-              "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる"
+              "example_ruby": "<ruby>後輩<rt>こうはい</rt></ruby>を<ruby>育<rt>そだ</rt></ruby>てる",
+              "example_en": "Train a junior member."
             },
             {
               "term_ja": "学園祭",
@@ -1446,7 +1550,8 @@
               "meaning_en": "Campus festival, school festival",
               "meaning_zh": "校园祭",
               "example_ja": "学園祭に行く",
-              "example_ruby": "<ruby>学園祭<rt>がくえんさい</rt></ruby>に<ruby>行<rt>い</rt></ruby>く"
+              "example_ruby": "<ruby>学園祭<rt>がくえんさい</rt></ruby>に<ruby>行<rt>い</rt></ruby>く",
+              "example_en": "Go to the campus festival."
             },
             {
               "term_ja": "参加する",
@@ -1455,7 +1560,8 @@
               "meaning_en": "Participation; participate",
               "meaning_zh": "参加",
               "example_ja": "イベントに参加する",
-              "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する"
+              "example_ruby": "イベントに<ruby>参加<rt>さんか</rt></ruby>する",
+              "example_en": "Take part in an event."
             },
             {
               "term_ja": "留学する",
@@ -1464,7 +1570,8 @@
               "meaning_en": "Study abroad",
               "meaning_zh": "留学",
               "example_ja": "日本に留学する",
-              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>留学<rt>りゅうがく</rt></ruby>する"
+              "example_ruby": "<ruby>日本<rt>にほん</rt></ruby>に<ruby>留学<rt>りゅうがく</rt></ruby>する",
+              "example_en": "Study abroad in Japan."
             }
           ],
           "yattemiyou": [
@@ -1879,7 +1986,8 @@
               "meaning_en": "Recruitment; recruit, advertise for",
               "meaning_zh": "招募，征聘",
               "example_ja": "社員を募集する",
-              "example_ruby": "<ruby>社員<rt>しゃいん</rt></ruby>を<ruby>募集<rt>ぼしゅう</rt></ruby>する"
+              "example_ruby": "<ruby>社員<rt>しゃいん</rt></ruby>を<ruby>募集<rt>ぼしゅう</rt></ruby>する",
+              "example_en": "Recruit employees."
             },
             {
               "term_ja": "スタッフ",
@@ -1888,7 +1996,8 @@
               "meaning_en": "Staff, employee",
               "meaning_zh": "员工",
               "example_ja": "店のスタッフ",
-              "example_ruby": "<ruby>店<rt>みせ</rt></ruby>のスタッフ"
+              "example_ruby": "<ruby>店<rt>みせ</rt></ruby>のスタッフ",
+              "example_en": "The shop's staff."
             },
             {
               "term_ja": "社員",
@@ -1897,7 +2006,8 @@
               "meaning_en": "Employee, company member",
               "meaning_zh": "公司职员",
               "example_ja": "会社の社員",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>社員<rt>しゃいん</rt></ruby>"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>の<ruby>社員<rt>しゃいん</rt></ruby>",
+              "example_en": "A company employee."
             },
             {
               "term_ja": "アルバイト",
@@ -1906,7 +2016,8 @@
               "meaning_en": "Part-time job",
               "meaning_zh": "打工",
               "example_ja": "アルバイトを探す",
-              "example_ruby": "アルバイトを<ruby>探<rt>さが</rt></ruby>す"
+              "example_ruby": "アルバイトを<ruby>探<rt>さが</rt></ruby>す",
+              "example_en": "Look for a part-time job."
             },
             {
               "term_ja": "バイト",
@@ -1915,7 +2026,8 @@
               "meaning_en": "Part-time job (abbreviation)",
               "meaning_zh": "打工（简称）",
               "example_ja": "バイトをする",
-              "example_ruby": "バイトをする"
+              "example_ruby": "バイトをする",
+              "example_en": "Work a part-time job."
             },
             {
               "term_ja": "履歴書",
@@ -1924,7 +2036,8 @@
               "meaning_en": "Curriculum vitae, resume",
               "meaning_zh": "简历",
               "example_ja": "履歴書を書く",
-              "example_ruby": "<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+              "example_ruby": "<ruby>履歴書<rt>りれきしょ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
+              "example_en": "Write a resume."
             },
             {
               "term_ja": "面接",
@@ -1933,7 +2046,8 @@
               "meaning_en": "Interview",
               "meaning_zh": "面试",
               "example_ja": "面接を受ける",
-              "example_ruby": "<ruby>面接<rt>めんせつ</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける"
+              "example_ruby": "<ruby>面接<rt>めんせつ</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
+              "example_en": "Have an interview."
             },
             {
               "term_ja": "入社試験",
@@ -1942,7 +2056,8 @@
               "meaning_en": "Company entrance examination",
               "meaning_zh": "进社考试",
               "example_ja": "入社試験を受ける",
-              "example_ruby": "<ruby>入社試験<rt>にゅうしゃしけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける"
+              "example_ruby": "<ruby>入社試験<rt>にゅうしゃしけん</rt></ruby>を<ruby>受<rt>う</rt></ruby>ける",
+              "example_en": "Take a company entrance exam."
             },
             {
               "term_ja": "生年月日",
@@ -1951,7 +2066,8 @@
               "meaning_en": "Date of birth",
               "meaning_zh": "出生年月日",
               "example_ja": "生年月日を書く",
-              "example_ruby": "<ruby>生年月日<rt>せいねんがっぴ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く"
+              "example_ruby": "<ruby>生年月日<rt>せいねんがっぴ</rt></ruby>を<ruby>書<rt>か</rt></ruby>く",
+              "example_en": "Write one's date of birth."
             },
             {
               "term_ja": "資格",
@@ -1960,7 +2076,8 @@
               "meaning_en": "Qualification, certification",
               "meaning_zh": "资格",
               "example_ja": "資格を取る",
-              "example_ruby": "<ruby>資格<rt>しかく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>資格<rt>しかく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Get a qualification."
             },
             {
               "term_ja": "免許",
@@ -1969,7 +2086,8 @@
               "meaning_en": "License, permit",
               "meaning_zh": "执照",
               "example_ja": "運転免許を取る",
-              "example_ruby": "<ruby>運転免許<rt>うんてんめんきょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>運転免許<rt>うんてんめんきょ</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Get a driver's license."
             },
             {
               "term_ja": "職業",
@@ -1978,7 +2096,8 @@
               "meaning_en": "Occupation, vocation",
               "meaning_zh": "职业",
               "example_ja": "職業に就く",
-              "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く"
+              "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く",
+              "example_en": "Take up an occupation."
             },
             {
               "term_ja": "就く",
@@ -1987,7 +2106,8 @@
               "meaning_en": "Take up (a post), get (a job)",
               "meaning_zh": "就职",
               "example_ja": "職業に就く",
-              "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く"
+              "example_ruby": "<ruby>職業<rt>しょくぎょう</rt></ruby>に<ruby>就<rt>つ</rt></ruby>く",
+              "example_en": "Take up an occupation."
             },
             {
               "term_ja": "企業",
@@ -1996,7 +2116,8 @@
               "meaning_en": "Enterprise, corporation",
               "meaning_zh": "企业",
               "example_ja": "有名企業に入る",
-              "example_ruby": "<ruby>有名企業<rt>ゆうめいきぎょう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "<ruby>有名企業<rt>ゆうめいきぎょう</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "Join a well-known company."
             },
             {
               "term_ja": "就職する",
@@ -2005,7 +2126,8 @@
               "meaning_en": "Finding employment; get a job",
               "meaning_zh": "就职",
               "example_ja": "会社に就職する",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>する"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>就職<rt>しゅうしょく</rt></ruby>する",
+              "example_en": "Get a job at a company."
             },
             {
               "term_ja": "入る",
@@ -2014,7 +2136,8 @@
               "meaning_en": "Join, enter (a company)",
               "meaning_zh": "进入",
               "example_ja": "会社に入る",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>入<rt>はい</rt></ruby>る",
+              "example_en": "Join a company."
             },
             {
               "term_ja": "辞める",
@@ -2023,7 +2146,8 @@
               "meaning_en": "Resign, quit (a job)",
               "meaning_zh": "辞去",
               "example_ja": "会社を辞める",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>辞<rt>や</rt></ruby>める"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>辞<rt>や</rt></ruby>める",
+              "example_en": "Quit a company."
             },
             {
               "term_ja": "首になる",
@@ -2032,7 +2156,8 @@
               "meaning_en": "Be fired, dismissed",
               "meaning_zh": "被解雇",
               "example_ja": "会社を首になる",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>首<rt>くび</rt></ruby>になる"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>首<rt>くび</rt></ruby>になる",
+              "example_en": "Be fired from a company."
             },
             {
               "term_ja": "失う",
@@ -2041,7 +2166,8 @@
               "meaning_en": "Lose (a job)",
               "meaning_zh": "失去",
               "example_ja": "職を失う",
-              "example_ruby": "<ruby>職<rt>しょく</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う"
+              "example_ruby": "<ruby>職<rt>しょく</rt></ruby>を<ruby>失<rt>うしな</rt></ruby>う",
+              "example_en": "Lose one's job."
             },
             {
               "term_ja": "会社員",
@@ -2050,7 +2176,8 @@
               "meaning_en": "Company employee",
               "meaning_zh": "公司职员",
               "example_ja": "会社員として働く",
-              "example_ruby": "<ruby>会社員<rt>かいしゃいん</rt></ruby>として<ruby>働<rt>はたら</rt></ruby>く"
+              "example_ruby": "<ruby>会社員<rt>かいしゃいん</rt></ruby>として<ruby>働<rt>はたら</rt></ruby>く",
+              "example_en": "Work as a company employee."
             },
             {
               "term_ja": "公務員",
@@ -2059,7 +2186,8 @@
               "meaning_en": "Civil servant, public official",
               "meaning_zh": "公务员",
               "example_ja": "公務員になる",
-              "example_ruby": "<ruby>公務員<rt>こうむいん</rt></ruby>になる"
+              "example_ruby": "<ruby>公務員<rt>こうむいん</rt></ruby>になる",
+              "example_en": "Become a civil servant."
             },
             {
               "term_ja": "職人",
@@ -2068,7 +2196,8 @@
               "meaning_en": "Craftsman, artisan",
               "meaning_zh": "手艺人，工匠",
               "example_ja": "伝統の職人",
-              "example_ruby": "<ruby>伝統<rt>でんとう</rt></ruby>の<ruby>職人<rt>しょくにん</rt></ruby>"
+              "example_ruby": "<ruby>伝統<rt>でんとう</rt></ruby>の<ruby>職人<rt>しょくにん</rt></ruby>",
+              "example_en": "A traditional craftsman."
             },
             {
               "term_ja": "モデル",
@@ -2077,7 +2206,8 @@
               "meaning_en": "Fashion model",
               "meaning_zh": "模特",
               "example_ja": "ファッションモデル",
-              "example_ruby": "ファッションモデル"
+              "example_ruby": "ファッションモデル",
+              "example_en": "A fashion model."
             },
             {
               "term_ja": "記者",
@@ -2086,7 +2216,8 @@
               "meaning_en": "Reporter, journalist",
               "meaning_zh": "记者",
               "example_ja": "新聞記者",
-              "example_ruby": "<ruby>新聞記者<rt>しんぶんきしゃ</rt></ruby>"
+              "example_ruby": "<ruby>新聞記者<rt>しんぶんきしゃ</rt></ruby>",
+              "example_en": "A newspaper reporter."
             },
             {
               "term_ja": "パイロット",
@@ -2095,7 +2226,8 @@
               "meaning_en": "Pilot",
               "meaning_zh": "飞行员",
               "example_ja": "飛行機のパイロット",
-              "example_ruby": "<ruby>飛行機<rt>ひこうき</rt></ruby>のパイロット"
+              "example_ruby": "<ruby>飛行機<rt>ひこうき</rt></ruby>のパイロット",
+              "example_en": "An airplane pilot."
             },
             {
               "term_ja": "教師",
@@ -2104,7 +2236,8 @@
               "meaning_en": "Teacher, instructor",
               "meaning_zh": "教师",
               "example_ja": "高校の教師",
-              "example_ruby": "<ruby>高校<rt>こうこう</rt></ruby>の<ruby>教師<rt>きょうし</rt></ruby>"
+              "example_ruby": "<ruby>高校<rt>こうこう</rt></ruby>の<ruby>教師<rt>きょうし</rt></ruby>",
+              "example_en": "A high school teacher."
             },
             {
               "term_ja": "医師",
@@ -2113,7 +2246,8 @@
               "meaning_en": "Doctor, physician",
               "meaning_zh": "医生",
               "example_ja": "病院の医師",
-              "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>医師<rt>いし</rt></ruby>"
+              "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>医師<rt>いし</rt></ruby>",
+              "example_en": "A hospital doctor."
             },
             {
               "term_ja": "看護師",
@@ -2122,7 +2256,8 @@
               "meaning_en": "Nurse",
               "meaning_zh": "护士",
               "example_ja": "病院の看護師",
-              "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>看護師<rt>かんごし</rt></ruby>"
+              "example_ruby": "<ruby>病院<rt>びょういん</rt></ruby>の<ruby>看護師<rt>かんごし</rt></ruby>",
+              "example_en": "A hospital nurse."
             },
             {
               "term_ja": "弁護士",
@@ -2131,7 +2266,8 @@
               "meaning_en": "Lawyer, attorney",
               "meaning_zh": "律师",
               "example_ja": "弁護士に依頼する",
-              "example_ruby": "<ruby>弁護士<rt>べんごし</rt></ruby>に<ruby>依頼<rt>いらい</rt></ruby>する"
+              "example_ruby": "<ruby>弁護士<rt>べんごし</rt></ruby>に<ruby>依頼<rt>いらい</rt></ruby>する",
+              "example_en": "Hire a lawyer."
             },
             {
               "term_ja": "政治家",
@@ -2140,7 +2276,8 @@
               "meaning_en": "Politician",
               "meaning_zh": "政治家",
               "example_ja": "政治家を目指す",
-              "example_ruby": "<ruby>政治家<rt>せいじか</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す"
+              "example_ruby": "<ruby>政治家<rt>せいじか</rt></ruby>を<ruby>目指<rt>めざ</rt></ruby>す",
+              "example_en": "Aim to become a politician."
             }
           ],
           "yattemiyou": [
@@ -2191,7 +2328,8 @@
               "meaning_en": "Meeting",
               "meaning_zh": "会议",
               "example_ja": "朝のミーティング",
-              "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>のミーティング"
+              "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>のミーティング",
+              "example_en": "The morning meeting."
             },
             {
               "term_ja": "資料",
@@ -2200,7 +2338,8 @@
               "meaning_en": "Materials, document, data",
               "meaning_zh": "资料",
               "example_ja": "会議の資料を配る",
-              "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る"
+              "example_ruby": "<ruby>会議<rt>かいぎ</rt></ruby>の<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る",
+              "example_en": "Hand out the meeting materials."
             },
             {
               "term_ja": "配る",
@@ -2209,7 +2348,8 @@
               "meaning_en": "Distribute, hand out",
               "meaning_zh": "分发",
               "example_ja": "資料を配る",
-              "example_ruby": "<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る"
+              "example_ruby": "<ruby>資料<rt>しりょう</rt></ruby>を<ruby>配<rt>くば</rt></ruby>る",
+              "example_en": "Hand out the materials."
             },
             {
               "term_ja": "スケジュール",
@@ -2218,7 +2358,8 @@
               "meaning_en": "Schedule",
               "meaning_zh": "日程表",
               "example_ja": "スケジュールを立てる",
-              "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる"
+              "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる",
+              "example_en": "Make a schedule."
             },
             {
               "term_ja": "立てる",
@@ -2227,7 +2368,8 @@
               "meaning_en": "Set up, make (plans/schedule)",
               "meaning_zh": "制定",
               "example_ja": "スケジュールを立てる",
-              "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる"
+              "example_ruby": "スケジュールを<ruby>立<rt>た</rt></ruby>てる",
+              "example_en": "Make a schedule."
             },
             {
               "term_ja": "アイデア",
@@ -2236,7 +2378,8 @@
               "meaning_en": "Idea",
               "meaning_zh": "想法，主意",
               "example_ja": "アイデアを出す",
-              "example_ruby": "アイデアを<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "アイデアを<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Come up with an idea."
             },
             {
               "term_ja": "部長",
@@ -2245,7 +2388,8 @@
               "meaning_en": "Department manager, director",
               "meaning_zh": "部长",
               "example_ja": "部長の指示",
-              "example_ruby": "<ruby>部長<rt>ぶちょう</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>"
+              "example_ruby": "<ruby>部長<rt>ぶちょう</rt></ruby>の<ruby>指示<rt>しじ</rt></ruby>",
+              "example_en": "The department manager's instructions."
             },
             {
               "term_ja": "指示",
@@ -2254,7 +2398,8 @@
               "meaning_en": "Instructions, directions",
               "meaning_zh": "指示",
               "example_ja": "指示を出す",
-              "example_ruby": "<ruby>指示<rt>しじ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>指示<rt>しじ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Give instructions."
             },
             {
               "term_ja": "作業",
@@ -2263,7 +2408,8 @@
               "meaning_en": "Work, operation, task",
               "meaning_zh": "操作，工作",
               "example_ja": "作業が進む",
-              "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む"
+              "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む",
+              "example_en": "The work is progressing."
             },
             {
               "term_ja": "進む",
@@ -2272,7 +2418,8 @@
               "meaning_en": "Make progress, advance",
               "meaning_zh": "进展",
               "example_ja": "作業が進む",
-              "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む"
+              "example_ruby": "<ruby>作業<rt>さぎょう</rt></ruby>が<ruby>進<rt>すす</rt></ruby>む",
+              "example_en": "The work is progressing."
             },
             {
               "term_ja": "書類",
@@ -2281,7 +2428,8 @@
               "meaning_en": "Documents, papers",
               "meaning_zh": "文件",
               "example_ja": "書類を整理する",
-              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する"
+              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する",
+              "example_en": "Organize the documents."
             },
             {
               "term_ja": "整理する",
@@ -2290,7 +2438,8 @@
               "meaning_en": "Arranging; organize, tidy up",
               "meaning_zh": "整理",
               "example_ja": "書類を整理する",
-              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する"
+              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>整理<rt>せいり</rt></ruby>する",
+              "example_en": "Organize the documents."
             },
             {
               "term_ja": "契約",
@@ -2299,7 +2448,8 @@
               "meaning_en": "Contract, agreement",
               "meaning_zh": "契约，合同",
               "example_ja": "契約を結ぶ",
-              "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ"
+              "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ",
+              "example_en": "Sign a contract."
             },
             {
               "term_ja": "結ぶ",
@@ -2308,7 +2458,8 @@
               "meaning_en": "Conclude, sign (a contract)",
               "meaning_zh": "缔结",
               "example_ja": "契約を結ぶ",
-              "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ"
+              "example_ruby": "<ruby>契約<rt>けいやく</rt></ruby>を<ruby>結<rt>むす</rt></ruby>ぶ",
+              "example_en": "Sign a contract."
             },
             {
               "term_ja": "商品",
@@ -2317,7 +2468,8 @@
               "meaning_en": "Goods, merchandise, product",
               "meaning_zh": "商品",
               "example_ja": "商品を販売する",
-              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する"
+              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する",
+              "example_en": "Sell a product."
             },
             {
               "term_ja": "販売する",
@@ -2326,7 +2478,8 @@
               "meaning_en": "Sale; sell",
               "meaning_zh": "销售",
               "example_ja": "商品を販売する",
-              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する"
+              "example_ruby": "<ruby>商品<rt>しょうひん</rt></ruby>を<ruby>販売<rt>はんばい</rt></ruby>する",
+              "example_en": "Sell a product."
             },
             {
               "term_ja": "通う",
@@ -2335,7 +2488,8 @@
               "meaning_en": "Commute, go back and forth",
               "meaning_zh": "通勤，往来",
               "example_ja": "会社に通う",
-              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う"
+              "example_ruby": "<ruby>会社<rt>かいしゃ</rt></ruby>に<ruby>通<rt>かよ</rt></ruby>う",
+              "example_en": "Commute to the company."
             },
             {
               "term_ja": "通勤する",
@@ -2344,7 +2498,8 @@
               "meaning_en": "Commute to work",
               "meaning_zh": "上下班",
               "example_ja": "電車で通勤する",
-              "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>する"
+              "example_ruby": "<ruby>電車<rt>でんしゃ</rt></ruby>で<ruby>通勤<rt>つうきん</rt></ruby>する",
+              "example_en": "Commute to work by train."
             },
             {
               "term_ja": "出勤する",
@@ -2353,7 +2508,8 @@
               "meaning_en": "Going to work; report for work",
               "meaning_zh": "出勤",
               "example_ja": "朝9時に出勤する",
-              "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>9<ruby>時<rt>じ</rt></ruby>に<ruby>出勤<rt>しゅっきん</rt></ruby>する"
+              "example_ruby": "<ruby>朝<rt>あさ</rt></ruby>9<ruby>時<rt>じ</rt></ruby>に<ruby>出勤<rt>しゅっきん</rt></ruby>する",
+              "example_en": "Report for work at 9 a.m."
             },
             {
               "term_ja": "事務所",
@@ -2362,7 +2518,8 @@
               "meaning_en": "Office",
               "meaning_zh": "办公室",
               "example_ja": "事務所で働く",
-              "example_ruby": "<ruby>事務所<rt>じむしょ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>く"
+              "example_ruby": "<ruby>事務所<rt>じむしょ</rt></ruby>で<ruby>働<rt>はたら</rt></ruby>く",
+              "example_en": "Work at an office."
             },
             {
               "term_ja": "オフィス",
@@ -2371,7 +2528,8 @@
               "meaning_en": "Office",
               "meaning_zh": "办公室",
               "example_ja": "新しいオフィス",
-              "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しいオフィス"
+              "example_ruby": "<ruby>新<rt>あたら</rt></ruby>しいオフィス",
+              "example_en": "A new office."
             },
             {
               "term_ja": "本社",
@@ -2380,7 +2538,8 @@
               "meaning_en": "Headquarters, head office",
               "meaning_zh": "总公司",
               "example_ja": "本社に転勤する",
-              "example_ruby": "<ruby>本社<rt>ほんしゃ</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>する"
+              "example_ruby": "<ruby>本社<rt>ほんしゃ</rt></ruby>に<ruby>転勤<rt>てんきん</rt></ruby>する",
+              "example_en": "Be transferred to the head office."
             },
             {
               "term_ja": "深夜",
@@ -2389,7 +2548,8 @@
               "meaning_en": "Late at night, midnight",
               "meaning_zh": "深夜",
               "example_ja": "深夜まで働く",
-              "example_ruby": "<ruby>深夜<rt>しんや</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>く"
+              "example_ruby": "<ruby>深夜<rt>しんや</rt></ruby>まで<ruby>働<rt>はたら</rt></ruby>く",
+              "example_en": "Work until late at night."
             },
             {
               "term_ja": "残業する",
@@ -2398,7 +2558,8 @@
               "meaning_en": "Overtime work; work overtime",
               "meaning_zh": "加班",
               "example_ja": "残業する日が多い",
-              "example_ruby": "<ruby>残業<rt>ざんぎょう</rt></ruby>する<ruby>日<rt>ひ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い"
+              "example_ruby": "<ruby>残業<rt>ざんぎょう</rt></ruby>する<ruby>日<rt>ひ</rt></ruby>が<ruby>多<rt>おお</rt></ruby>い",
+              "example_en": "There are many days when I work overtime."
             },
             {
               "term_ja": "きつい",
@@ -2407,7 +2568,8 @@
               "meaning_en": "Tough, hard, strenuous",
               "meaning_zh": "吃力，辛苦",
               "example_ja": "仕事がきつい",
-              "example_ruby": "<ruby>仕事<rt>しごと</rt></ruby>がきつい"
+              "example_ruby": "<ruby>仕事<rt>しごと</rt></ruby>がきつい",
+              "example_en": "The work is tough."
             },
             {
               "term_ja": "楽な",
@@ -2416,7 +2578,8 @@
               "meaning_en": "Easy, comfortable",
               "meaning_zh": "轻松的",
               "example_ja": "楽な仕事",
-              "example_ruby": "<ruby>楽<rt>らく</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>"
+              "example_ruby": "<ruby>楽<rt>らく</rt></ruby>な<ruby>仕事<rt>しごと</rt></ruby>",
+              "example_en": "An easy job."
             },
             {
               "term_ja": "時給",
@@ -2425,7 +2588,8 @@
               "meaning_en": "Hourly wage",
               "meaning_zh": "时薪",
               "example_ja": "時給が高い",
-              "example_ruby": "<ruby>時給<rt>じきゅう</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い"
+              "example_ruby": "<ruby>時給<rt>じきゅう</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い",
+              "example_en": "The hourly wage is high."
             },
             {
               "term_ja": "給料",
@@ -2434,7 +2598,8 @@
               "meaning_en": "Salary, wage",
               "meaning_zh": "工资",
               "example_ja": "給料をもらう",
-              "example_ruby": "<ruby>給料<rt>きゅうりょう</rt></ruby>をもらう"
+              "example_ruby": "<ruby>給料<rt>きゅうりょう</rt></ruby>をもらう",
+              "example_en": "Receive a salary."
             },
             {
               "term_ja": "ボーナス",
@@ -2443,7 +2608,8 @@
               "meaning_en": "Bonus",
               "meaning_zh": "奖金",
               "example_ja": "ボーナスが出る",
-              "example_ruby": "ボーナスが<ruby>出<rt>で</rt></ruby>る"
+              "example_ruby": "ボーナスが<ruby>出<rt>で</rt></ruby>る",
+              "example_en": "A bonus is paid."
             }
           ],
           "yattemiyou": [
@@ -2843,7 +3009,8 @@
               "meaning_en": "Personal computer, PC",
               "meaning_zh": "个人电脑",
               "example_ja": "パソコンを使う",
-              "example_ruby": "パソコンを<ruby>使<rt>つか</rt></ruby>う"
+              "example_ruby": "パソコンを<ruby>使<rt>つか</rt></ruby>う",
+              "example_en": "Use a computer."
             },
             {
               "term_ja": "スイッチ",
@@ -2852,7 +3019,8 @@
               "meaning_en": "Switch",
               "meaning_zh": "开关",
               "example_ja": "スイッチを入れる",
-              "example_ruby": "スイッチを<ruby>入<rt>い</rt></ruby>れる"
+              "example_ruby": "スイッチを<ruby>入<rt>い</rt></ruby>れる",
+              "example_en": "Turn on the switch."
             },
             {
               "term_ja": "クリックする",
@@ -2861,7 +3029,8 @@
               "meaning_en": "Click (mouse)",
               "meaning_zh": "点击",
               "example_ja": "ボタンをクリックする",
-              "example_ruby": "ボタンをクリックする"
+              "example_ruby": "ボタンをクリックする",
+              "example_en": "Click the button."
             },
             {
               "term_ja": "マウス",
@@ -2870,7 +3039,8 @@
               "meaning_en": "Mouse",
               "meaning_zh": "鼠标",
               "example_ja": "マウスを動かす",
-              "example_ruby": "マウスを<ruby>動<rt>うご</rt></ruby>かす"
+              "example_ruby": "マウスを<ruby>動<rt>うご</rt></ruby>かす",
+              "example_en": "Move the mouse."
             },
             {
               "term_ja": "ボタン",
@@ -2879,7 +3049,8 @@
               "meaning_en": "Button",
               "meaning_zh": "按钮",
               "example_ja": "ボタンを押す",
-              "example_ruby": "ボタンを<ruby>押<rt>お</rt></ruby>す"
+              "example_ruby": "ボタンを<ruby>押<rt>お</rt></ruby>す",
+              "example_en": "Press the button."
             },
             {
               "term_ja": "ファイル",
@@ -2888,7 +3059,8 @@
               "meaning_en": "File",
               "meaning_zh": "文件",
               "example_ja": "ファイルを開く",
-              "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く"
+              "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く",
+              "example_en": "Open a file."
             },
             {
               "term_ja": "開く",
@@ -2897,7 +3069,8 @@
               "meaning_en": "Open (a file)",
               "meaning_zh": "打开",
               "example_ja": "ファイルを開く",
-              "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く"
+              "example_ruby": "ファイルを<ruby>開<rt>ひら</rt></ruby>く",
+              "example_en": "Open a file."
             },
             {
               "term_ja": "閉じる",
@@ -2906,7 +3079,8 @@
               "meaning_en": "Close (a file)",
               "meaning_zh": "关闭",
               "example_ja": "ファイルを閉じる",
-              "example_ruby": "ファイルを<ruby>閉<rt>と</rt></ruby>じる"
+              "example_ruby": "ファイルを<ruby>閉<rt>と</rt></ruby>じる",
+              "example_en": "Close a file."
             },
             {
               "term_ja": "画面",
@@ -2915,7 +3089,8 @@
               "meaning_en": "Screen",
               "meaning_zh": "画面，屏幕",
               "example_ja": "画面を見る",
-              "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>を<ruby>見<rt>み</rt></ruby>る"
+              "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>を<ruby>見<rt>み</rt></ruby>る",
+              "example_en": "Look at the screen."
             },
             {
               "term_ja": "表示する",
@@ -2924,7 +3099,8 @@
               "meaning_en": "Display, show",
               "meaning_zh": "显示",
               "example_ja": "画面に表示する",
-              "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>する"
+              "example_ruby": "<ruby>画面<rt>がめん</rt></ruby>に<ruby>表示<rt>ひょうじ</rt></ruby>する",
+              "example_en": "Display on the screen."
             },
             {
               "term_ja": "入力する",
@@ -2933,7 +3109,8 @@
               "meaning_en": "Input, enter (data)",
               "meaning_zh": "输入",
               "example_ja": "文字を入力する",
-              "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+              "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する",
+              "example_en": "Enter characters."
             },
             {
               "term_ja": "文字",
@@ -2942,7 +3119,8 @@
               "meaning_en": "Character, letter",
               "meaning_zh": "文字",
               "example_ja": "文字を入力する",
-              "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+              "example_ruby": "<ruby>文字<rt>もじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する",
+              "example_en": "Enter characters."
             },
             {
               "term_ja": "数字",
@@ -2951,7 +3129,8 @@
               "meaning_en": "Number, figure",
               "meaning_zh": "数字",
               "example_ja": "数字を入力する",
-              "example_ruby": "<ruby>数字<rt>すうじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+              "example_ruby": "<ruby>数字<rt>すうじ</rt></ruby>を<ruby>入力<rt>にゅうりょく</rt></ruby>する",
+              "example_en": "Enter numbers."
             },
             {
               "term_ja": "パスワード",
@@ -2960,7 +3139,8 @@
               "meaning_en": "Password",
               "meaning_zh": "密码",
               "example_ja": "パスワードを入力する",
-              "example_ruby": "パスワードを<ruby>入力<rt>にゅうりょく</rt></ruby>する"
+              "example_ruby": "パスワードを<ruby>入力<rt>にゅうりょく</rt></ruby>する",
+              "example_en": "Enter a password."
             },
             {
               "term_ja": "確認する",
@@ -2969,7 +3149,8 @@
               "meaning_en": "Confirm, check",
               "meaning_zh": "确认",
               "example_ja": "パスワードを確認する",
-              "example_ruby": "パスワードを<ruby>確認<rt>かくにん</rt></ruby>する"
+              "example_ruby": "パスワードを<ruby>確認<rt>かくにん</rt></ruby>する",
+              "example_en": "Confirm the password."
             },
             {
               "term_ja": "メール",
@@ -2978,7 +3159,8 @@
               "meaning_en": "Email, mail",
               "meaning_zh": "邮件",
               "example_ja": "メールをチェックする",
-              "example_ruby": "メールをチェックする"
+              "example_ruby": "メールをチェックする",
+              "example_en": "Check email."
             },
             {
               "term_ja": "チェックする",
@@ -2987,7 +3169,8 @@
               "meaning_en": "Check",
               "meaning_zh": "检查，查收",
               "example_ja": "メールをチェックする",
-              "example_ruby": "メールをチェックする"
+              "example_ruby": "メールをチェックする",
+              "example_en": "Check email."
             },
             {
               "term_ja": "ウェブサイト",
@@ -2996,7 +3179,8 @@
               "meaning_en": "Website",
               "meaning_zh": "网站",
               "example_ja": "ウェブサイトを見る",
-              "example_ruby": "ウェブサイトを<ruby>見<rt>み</rt></ruby>る"
+              "example_ruby": "ウェブサイトを<ruby>見<rt>み</rt></ruby>る",
+              "example_en": "Look at a website."
             },
             {
               "term_ja": "サイト",
@@ -3005,7 +3189,8 @@
               "meaning_en": "Site, website",
               "meaning_zh": "网站",
               "example_ja": "サイトで調べる",
-              "example_ruby": "サイトで<ruby>調<rt>しら</rt></ruby>べる"
+              "example_ruby": "サイトで<ruby>調<rt>しら</rt></ruby>べる",
+              "example_en": "Look something up on a site."
             },
             {
               "term_ja": "ホームページ",
@@ -3014,7 +3199,8 @@
               "meaning_en": "Homepage, website",
               "meaning_zh": "网页，主页",
               "example_ja": "ホームページを見る",
-              "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る"
+              "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る",
+              "example_en": "Look at a homepage."
             },
             {
               "term_ja": "見る",
@@ -3023,7 +3209,8 @@
               "meaning_en": "Look at, browse",
               "meaning_zh": "看，浏览",
               "example_ja": "ホームページを見る",
-              "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る"
+              "example_ruby": "ホームページを<ruby>見<rt>み</rt></ruby>る",
+              "example_en": "Look at a homepage."
             },
             {
               "term_ja": "インターネット",
@@ -3032,7 +3219,8 @@
               "meaning_en": "Internet",
               "meaning_zh": "因特网",
               "example_ja": "インターネットで調べる",
-              "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる"
+              "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる",
+              "example_en": "Look something up on the internet."
             },
             {
               "term_ja": "調べる",
@@ -3041,7 +3229,8 @@
               "meaning_en": "Search, look up",
               "meaning_zh": "调查，查询",
               "example_ja": "インターネットで調べる",
-              "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる"
+              "example_ruby": "インターネットで<ruby>調<rt>しら</rt></ruby>べる",
+              "example_en": "Look something up on the internet."
             },
             {
               "term_ja": "サービス",
@@ -3050,7 +3239,8 @@
               "meaning_en": "Service",
               "meaning_zh": "服务",
               "example_ja": "オンラインサービスを利用する",
-              "example_ruby": "オンラインサービスを<ruby>利用<rt>りよう</rt></ruby>する"
+              "example_ruby": "オンラインサービスを<ruby>利用<rt>りよう</rt></ruby>する",
+              "example_en": "Use an online service."
             },
             {
               "term_ja": "利用する",
@@ -3059,7 +3249,8 @@
               "meaning_en": "Use, utilize",
               "meaning_zh": "利用",
               "example_ja": "サービスを利用する",
-              "example_ruby": "サービスを<ruby>利用<rt>りよう</rt></ruby>する"
+              "example_ruby": "サービスを<ruby>利用<rt>りよう</rt></ruby>する",
+              "example_en": "Use a service."
             },
             {
               "term_ja": "文章",
@@ -3068,7 +3259,8 @@
               "meaning_en": "Sentence, text, writing",
               "meaning_zh": "文章",
               "example_ja": "文章をまとめる",
-              "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる"
+              "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる",
+              "example_en": "Put a text together."
             },
             {
               "term_ja": "まとめる",
@@ -3077,7 +3269,8 @@
               "meaning_en": "Summarize, gather together",
               "meaning_zh": "归纳，整理",
               "example_ja": "文章をまとめる",
-              "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる"
+              "example_ruby": "<ruby>文章<rt>ぶんしょう</rt></ruby>をまとめる",
+              "example_en": "Put a text together."
             },
             {
               "term_ja": "基本",
@@ -3086,7 +3279,8 @@
               "meaning_en": "Basics, foundation",
               "meaning_zh": "基础",
               "example_ja": "パソコンの基本",
-              "example_ruby": "パソコンの<ruby>基本<rt>きほん</rt></ruby>"
+              "example_ruby": "パソコンの<ruby>基本<rt>きほん</rt></ruby>",
+              "example_en": "The basics of using a computer."
             },
             {
               "term_ja": "マスターする",
@@ -3095,7 +3289,8 @@
               "meaning_en": "Master, learn thoroughly",
               "meaning_zh": "掌握",
               "example_ja": "基本をマスターする",
-              "example_ruby": "<ruby>基本<rt>きほん</rt></ruby>をマスターする"
+              "example_ruby": "<ruby>基本<rt>きほん</rt></ruby>をマスターする",
+              "example_en": "Master the basics."
             }
           ],
           "yattemiyou": [
@@ -3152,7 +3347,8 @@
               "meaning_en": "Document, papers",
               "meaning_zh": "文件",
               "example_ja": "書類を郵送する",
-              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する"
+              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する",
+              "example_en": "Mail the documents."
             },
             {
               "term_ja": "郵送する",
@@ -3161,7 +3357,8 @@
               "meaning_en": "Mail (v); send by post",
               "meaning_zh": "邮寄",
               "example_ja": "書類を郵送する",
-              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する"
+              "example_ruby": "<ruby>書類<rt>しょるい</rt></ruby>を<ruby>郵送<rt>ゆうそう</rt></ruby>する",
+              "example_en": "Mail the documents."
             },
             {
               "term_ja": "速達",
@@ -3170,7 +3367,8 @@
               "meaning_en": "Express mail, special delivery",
               "meaning_zh": "快递",
               "example_ja": "速達で手紙を出す",
-              "example_ruby": "<ruby>速達<rt>そくたつ</rt></ruby>で<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>速達<rt>そくたつ</rt></ruby>で<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Send a letter by express mail."
             },
             {
               "term_ja": "配達する",
@@ -3179,7 +3377,8 @@
               "meaning_en": "Delivery; deliver",
               "meaning_zh": "投递",
               "example_ja": "手紙を配達する",
-              "example_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>配達<rt>はいたつ</rt></ruby>する"
+              "example_ruby": "<ruby>手紙<rt>てがみ</rt></ruby>を<ruby>配達<rt>はいたつ</rt></ruby>する",
+              "example_en": "Deliver a letter."
             },
             {
               "term_ja": "郵便",
@@ -3188,7 +3387,8 @@
               "meaning_en": "Post, mail service",
               "meaning_zh": "邮政",
               "example_ja": "郵便で荷物が届く",
-              "example_ruby": "<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く"
+              "example_ruby": "<ruby>郵便<rt>ゆうびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く",
+              "example_en": "A package arrives by mail."
             },
             {
               "term_ja": "届く",
@@ -3197,7 +3397,8 @@
               "meaning_en": "Arrive, be delivered",
               "meaning_zh": "寄到",
               "example_ja": "荷物が届く",
-              "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く"
+              "example_ruby": "<ruby>荷物<rt>にもつ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>く",
+              "example_en": "A package arrives."
             },
             {
               "term_ja": "つながる",
@@ -3206,7 +3407,8 @@
               "meaning_en": "Be connected (phone/line)",
               "meaning_zh": "(电话) 接通",
               "example_ja": "電話がつながる",
-              "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>がつながる"
+              "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>がつながる",
+              "example_en": "The phone call connects."
             },
             {
               "term_ja": "切れる",
@@ -3215,7 +3417,8 @@
               "meaning_en": "Be disconnected, hang up",
               "meaning_zh": "(电话) 挂断",
               "example_ja": "電話が切れる",
-              "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる"
+              "example_ruby": "<ruby>電話<rt>でんわ</rt></ruby>が<ruby>切<rt>き</rt></ruby>れる",
+              "example_en": "The phone call gets cut off."
             },
             {
               "term_ja": "しゃべる",
@@ -3224,7 +3427,8 @@
               "meaning_en": "Chat, talk",
               "meaning_zh": "说话",
               "example_ja": "友達と電話でしゃべる",
-              "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>電話<rt>でんわ</rt></ruby>でしゃべる"
+              "example_ruby": "<ruby>友達<rt>ともだち</rt></ruby>と<ruby>電話<rt>でんわ</rt></ruby>でしゃべる",
+              "example_en": "Chat with a friend on the phone."
             },
             {
               "term_ja": "連絡を取る",
@@ -3233,7 +3437,8 @@
               "meaning_en": "Get in touch, contact",
               "meaning_zh": "联系",
               "example_ja": "先生と連絡を取る",
-              "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>と<ruby>連絡<rt>れんらく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>先生<rt>せんせい</rt></ruby>と<ruby>連絡<rt>れんらく</rt></ruby>を<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Get in touch with a teacher."
             },
             {
               "term_ja": "携帯電話",
@@ -3242,7 +3447,8 @@
               "meaning_en": "Mobile phone, cellphone",
               "meaning_zh": "手机",
               "example_ja": "携帯電話の電源を切る",
-              "example_ruby": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る"
+              "example_ruby": "<ruby>携帯電話<rt>けいたいでんわ</rt></ruby>の<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る",
+              "example_en": "Turn off a mobile phone."
             },
             {
               "term_ja": "電源",
@@ -3251,7 +3457,8 @@
               "meaning_en": "Power source, power switch",
               "meaning_zh": "电源",
               "example_ja": "電源を切る",
-              "example_ruby": "<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る"
+              "example_ruby": "<ruby>電源<rt>でんげん</rt></ruby>を<ruby>切<rt>き</rt></ruby>る",
+              "example_en": "Turn off the power."
             },
             {
               "term_ja": "マナー",
@@ -3260,7 +3467,8 @@
               "meaning_en": "Manners, etiquette",
               "meaning_zh": "礼仪",
               "example_ja": "マナーを守る",
-              "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る"
+              "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る",
+              "example_en": "Observe good manners."
             },
             {
               "term_ja": "守る",
@@ -3269,7 +3477,8 @@
               "meaning_en": "Keep, observe, protect",
               "meaning_zh": "遵守",
               "example_ja": "マナーを守る",
-              "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る"
+              "example_ruby": "マナーを<ruby>守<rt>まも</rt></ruby>る",
+              "example_en": "Observe good manners."
             },
             {
               "term_ja": "メッセージ",
@@ -3278,7 +3487,8 @@
               "meaning_en": "Message",
               "meaning_zh": "信息，留言",
               "example_ja": "メッセージを送る",
-              "example_ruby": "メッセージを<ruby>送<rt>おく</rt></ruby>る"
+              "example_ruby": "メッセージを<ruby>送<rt>おく</rt></ruby>る",
+              "example_en": "Send a message."
             },
             {
               "term_ja": "残す",
@@ -3287,7 +3497,8 @@
               "meaning_en": "Leave (a message)",
               "meaning_zh": "留下",
               "example_ja": "メッセージを残す",
-              "example_ruby": "メッセージを<ruby>残<rt>のこ</rt></ruby>す"
+              "example_ruby": "メッセージを<ruby>残<rt>のこ</rt></ruby>す",
+              "example_en": "Leave a message."
             },
             {
               "term_ja": "再生する",
@@ -3296,7 +3507,8 @@
               "meaning_en": "Play back, replay",
               "meaning_zh": "播放 (音乐等)",
               "example_ja": "メッセージを再生する",
-              "example_ruby": "メッセージを<ruby>再生<rt>さいせい</rt></ruby>する"
+              "example_ruby": "メッセージを<ruby>再生<rt>さいせい</rt></ruby>する",
+              "example_en": "Play back a message."
             },
             {
               "term_ja": "ファックス",
@@ -3305,7 +3517,8 @@
               "meaning_en": "Fax, facsimile",
               "meaning_zh": "传真",
               "example_ja": "ファックスで送る",
-              "example_ruby": "ファックスで<ruby>送<rt>おく</rt></ruby>る"
+              "example_ruby": "ファックスで<ruby>送<rt>おく</rt></ruby>る",
+              "example_en": "Send by fax."
             },
             {
               "term_ja": "郵便番号",
@@ -3314,7 +3527,8 @@
               "meaning_en": "Postal code, zip code",
               "meaning_zh": "邮政编码",
               "example_ja": "郵便番号を調べる",
-              "example_ruby": "<ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる"
+              "example_ruby": "<ruby>郵便番号<rt>ゆうびんばんごう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる",
+              "example_en": "Look up a postal code."
             },
             {
               "term_ja": "送料",
@@ -3323,7 +3537,8 @@
               "meaning_en": "Postage, shipping fee",
               "meaning_zh": "邮费",
               "example_ja": "送料を調べる",
-              "example_ruby": "<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる"
+              "example_ruby": "<ruby>送料<rt>そうりょう</rt></ruby>を<ruby>調<rt>しら</rt></ruby>べる",
+              "example_en": "Check the shipping fee."
             },
             {
               "term_ja": "宅配便",
@@ -3332,7 +3547,8 @@
               "meaning_en": "Home delivery service, courier",
               "meaning_zh": "宅急送",
               "example_ja": "宅配便で荷物を送る",
-              "example_ruby": "<ruby>宅配便<rt>たくはいびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る"
+              "example_ruby": "<ruby>宅配便<rt>たくはいびん</rt></ruby>で<ruby>荷物<rt>にもつ</rt></ruby>を<ruby>送<rt>おく</rt></ruby>る",
+              "example_en": "Send a package by courier."
             },
             {
               "term_ja": "航空便",
@@ -3341,7 +3557,8 @@
               "meaning_en": "Airmail",
               "meaning_zh": "航空邮件",
               "example_ja": "航空便で送る",
-              "example_ruby": "<ruby>航空便<rt>こうくうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る"
+              "example_ruby": "<ruby>航空便<rt>こうくうびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る",
+              "example_en": "Send by airmail."
             },
             {
               "term_ja": "船便",
@@ -3350,7 +3567,8 @@
               "meaning_en": "Surface mail, sea mail",
               "meaning_zh": "水陆路邮件",
               "example_ja": "船便で送る",
-              "example_ruby": "<ruby>船便<rt>ふなびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る"
+              "example_ruby": "<ruby>船便<rt>ふなびん</rt></ruby>で<ruby>送<rt>おく</rt></ruby>る",
+              "example_en": "Send by sea mail."
             }
           ],
           "yattemiyou": [
@@ -3970,7 +4188,8 @@
               "meaning_en": "Incident, crime, affair",
               "meaning_zh": "事件",
               "example_ja": "事件が起きる",
-              "example_ruby": "<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる"
+              "example_ruby": "<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる",
+              "example_en": "An incident occurs."
             },
             {
               "term_ja": "恐ろしい",
@@ -3979,7 +4198,8 @@
               "meaning_en": "Terrible, awful, terrifying",
               "meaning_zh": "可怕",
               "example_ja": "恐ろしい事件が起きる",
-              "example_ruby": "<ruby>恐<rt>おそ</rt></ruby>ろしい<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる"
+              "example_ruby": "<ruby>恐<rt>おそ</rt></ruby>ろしい<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる",
+              "example_en": "A terrible incident occurs."
             },
             {
               "term_ja": "重大な",
@@ -3988,7 +4208,8 @@
               "meaning_en": "Serious, grave, critical",
               "meaning_zh": "重大",
               "example_ja": "重大な事件が起きる",
-              "example_ruby": "<ruby>重大<rt>じゅうだい</rt></ruby>な<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる"
+              "example_ruby": "<ruby>重大<rt>じゅうだい</rt></ruby>な<ruby>事件<rt>じけん</rt></ruby>が<ruby>起<rt>お</rt></ruby>きる",
+              "example_en": "A serious incident occurs."
             },
             {
               "term_ja": "トラブル",
@@ -3997,7 +4218,8 @@
               "meaning_en": "Difficulties, hassle, trouble",
               "meaning_zh": "麻烦，纠纷",
               "example_ja": "トラブルを起こす",
-              "example_ruby": "トラブルを<ruby>起<rt>お</rt></ruby>こす"
+              "example_ruby": "トラブルを<ruby>起<rt>お</rt></ruby>こす",
+              "example_en": "Cause trouble."
             },
             {
               "term_ja": "だます",
@@ -4006,7 +4228,8 @@
               "meaning_en": "Cheat, deceive, trick",
               "meaning_zh": "欺骗",
               "example_ja": "人をだます",
-              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>をだます"
+              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>をだます",
+              "example_en": "Deceive people."
             },
             {
               "term_ja": "殴る",
@@ -4015,7 +4238,8 @@
               "meaning_en": "Beat, hit, strike",
               "meaning_zh": "殴打",
               "example_ja": "人を殴る",
-              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>殴<rt>なぐ</rt></ruby>る"
+              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>殴<rt>なぐ</rt></ruby>る",
+              "example_en": "Hit a person."
             },
             {
               "term_ja": "撃つ",
@@ -4024,7 +4248,8 @@
               "meaning_en": "Shoot, fire (a gun)",
               "meaning_zh": "射击",
               "example_ja": "人を撃つ",
-              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>撃<rt>う</rt></ruby>つ"
+              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>撃<rt>う</rt></ruby>つ",
+              "example_en": "Shoot a person."
             },
             {
               "term_ja": "殺す",
@@ -4033,7 +4258,8 @@
               "meaning_en": "Kill, murder",
               "meaning_zh": "杀害",
               "example_ja": "人を殺す",
-              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>す"
+              "example_ruby": "<ruby>人<rt>ひと</rt></ruby>を<ruby>殺<rt>ころ</rt></ruby>す",
+              "example_en": "Kill a person."
             },
             {
               "term_ja": "受け取る",
@@ -4042,7 +4268,8 @@
               "meaning_en": "Receive, accept, take",
               "meaning_zh": "收到",
               "example_ja": "金を受け取る",
-              "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>る"
+              "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>受<rt>う</rt></ruby>け<ruby>取<rt>と</rt></ruby>る",
+              "example_en": "Receive money."
             },
             {
               "term_ja": "奪う",
@@ -4051,7 +4278,8 @@
               "meaning_en": "Seize, rob, snatch",
               "meaning_zh": "夺取",
               "example_ja": "金を奪う",
-              "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>奪<rt>うば</rt></ruby>う"
+              "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>奪<rt>うば</rt></ruby>う",
+              "example_en": "Seize money."
             },
             {
               "term_ja": "隠す",
@@ -4060,7 +4288,8 @@
               "meaning_en": "Hide, conceal",
               "meaning_zh": "隐藏",
               "example_ja": "金を隠す",
-              "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す"
+              "example_ruby": "<ruby>金<rt>かね</rt></ruby>を<ruby>隠<rt>かく</rt></ruby>す",
+              "example_en": "Hide money."
             },
             {
               "term_ja": "怪しい",
@@ -4069,7 +4298,8 @@
               "meaning_en": "Suspicious, fishy, shady",
               "meaning_zh": "可疑",
               "example_ja": "怪しい男がいる",
-              "example_ruby": "<ruby>怪<rt>あや</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>がいる"
+              "example_ruby": "<ruby>怪<rt>あや</rt></ruby>しい<ruby>男<rt>おとこ</rt></ruby>がいる",
+              "example_en": "There is a suspicious man."
             },
             {
               "term_ja": "様子",
@@ -4078,7 +4308,8 @@
               "meaning_en": "Appearance, look, state",
               "meaning_zh": "样子",
               "example_ja": "様子がおかしい",
-              "example_ruby": "<ruby>様子<rt>ようす</rt></ruby>がおかしい"
+              "example_ruby": "<ruby>様子<rt>ようす</rt></ruby>がおかしい",
+              "example_en": "Something seems off."
             },
             {
               "term_ja": "被害",
@@ -4087,7 +4318,8 @@
               "meaning_en": "Damage, harm, injury",
               "meaning_zh": "受害",
               "example_ja": "被害に遭う",
-              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う"
+              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う",
+              "example_en": "Suffer damage."
             },
             {
               "term_ja": "遭う",
@@ -4096,7 +4328,8 @@
               "meaning_en": "Sustain, suffer, encounter (an unfortunate event)",
               "meaning_zh": "遇到（不好的事）",
               "example_ja": "被害に遭う",
-              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う"
+              "example_ruby": "<ruby>被害<rt>ひがい</rt></ruby>に<ruby>遭<rt>あ</rt></ruby>う",
+              "example_en": "Suffer damage."
             },
             {
               "term_ja": "警察",
@@ -4105,7 +4338,8 @@
               "meaning_en": "Police",
               "meaning_zh": "警察",
               "example_ja": "警察が犯人を逮捕する",
-              "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する"
+              "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する",
+              "example_en": "The police arrest the criminal."
             },
             {
               "term_ja": "犯人",
@@ -4114,7 +4348,8 @@
               "meaning_en": "Criminal, culprit, offender",
               "meaning_zh": "犯人",
               "example_ja": "警察が犯人を逮捕する",
-              "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する"
+              "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する",
+              "example_en": "The police arrest the criminal."
             },
             {
               "term_ja": "逮捕する",
@@ -4123,7 +4358,8 @@
               "meaning_en": "Arrest (n); arrest (v)",
               "meaning_zh": "逮捕",
               "example_ja": "警察が犯人を逮捕する",
-              "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する"
+              "example_ruby": "<ruby>警察<rt>けいさつ</rt></ruby>が<ruby>犯人<rt>はんにん</rt></ruby>を<ruby>逮捕<rt>たいほ</rt></ruby>する",
+              "example_en": "The police arrest the criminal."
             },
             {
               "term_ja": "罪",
@@ -4132,7 +4368,8 @@
               "meaning_en": "Crime, sin, guilt",
               "meaning_zh": "罪行",
               "example_ja": "罪を認める",
-              "example_ruby": "<ruby>罪<rt>つみ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>める"
+              "example_ruby": "<ruby>罪<rt>つみ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>める",
+              "example_en": "Admit guilt."
             },
             {
               "term_ja": "認める",
@@ -4141,7 +4378,8 @@
               "meaning_en": "Admit, acknowledge, recognize",
               "meaning_zh": "承认",
               "example_ja": "罪を認める",
-              "example_ruby": "<ruby>罪<rt>つみ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>める"
+              "example_ruby": "<ruby>罪<rt>つみ</rt></ruby>を<ruby>認<rt>みと</rt></ruby>める",
+              "example_en": "Admit guilt."
             }
           ],
           "yattemiyou": [
@@ -4210,7 +4448,8 @@
               "meaning_en": "Traffic accident",
               "meaning_zh": "交通事故",
               "example_ja": "交通事故が起こる",
-              "example_ruby": "<ruby>交通事故<rt>こうつうじこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる"
+              "example_ruby": "<ruby>交通事故<rt>こうつうじこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる",
+              "example_en": "A traffic accident happens."
             },
             {
               "term_ja": "起こる",
@@ -4219,7 +4458,8 @@
               "meaning_en": "Happen, occur",
               "meaning_zh": "发生（事件等）",
               "example_ja": "交通事故が起こる",
-              "example_ruby": "<ruby>交通事故<rt>こうつうじこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる"
+              "example_ruby": "<ruby>交通事故<rt>こうつうじこ</rt></ruby>が<ruby>起<rt>お</rt></ruby>こる",
+              "example_en": "A traffic accident happens."
             },
             {
               "term_ja": "ぶつかる",
@@ -4228,7 +4468,8 @@
               "meaning_en": "Bump into, collide",
               "meaning_zh": "撞（车）",
               "example_ja": "車とバイクがぶつかる",
-              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>とバイクがぶつかる"
+              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>とバイクがぶつかる",
+              "example_en": "A car and a motorcycle collide."
             },
             {
               "term_ja": "ひかれる",
@@ -4237,7 +4478,8 @@
               "meaning_en": "Be run over (by a vehicle)",
               "meaning_zh": "（被车）碾压",
               "example_ja": "車にひかれる",
-              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>にひかれる"
+              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>にひかれる",
+              "example_en": "Be run over by a car."
             },
             {
               "term_ja": "原因",
@@ -4246,7 +4488,8 @@
               "meaning_en": "Cause, reason",
               "meaning_zh": "原因",
               "example_ja": "事故の原因を調査する",
-              "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>する"
+              "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>する",
+              "example_en": "Investigate the cause of the accident."
             },
             {
               "term_ja": "調査する",
@@ -4255,7 +4498,8 @@
               "meaning_en": "Investigation; investigate",
               "meaning_zh": "调查",
               "example_ja": "事故の原因を調査する",
-              "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>する"
+              "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>の<ruby>原因<rt>げんいん</rt></ruby>を<ruby>調査<rt>ちょうさ</rt></ruby>する",
+              "example_en": "Investigate the cause of the accident."
             },
             {
               "term_ja": "信号",
@@ -4264,7 +4508,8 @@
               "meaning_en": "Traffic lights, traffic signal",
               "meaning_zh": "红绿灯",
               "example_ja": "信号を無視する",
-              "example_ruby": "<ruby>信号<rt>しんごう</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する"
+              "example_ruby": "<ruby>信号<rt>しんごう</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する",
+              "example_en": "Ignore a traffic light."
             },
             {
               "term_ja": "無視する",
@@ -4273,7 +4518,8 @@
               "meaning_en": "Ignoring; ignore",
               "meaning_zh": "无视",
               "example_ja": "信号を無視する",
-              "example_ruby": "<ruby>信号<rt>しんごう</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する"
+              "example_ruby": "<ruby>信号<rt>しんごう</rt></ruby>を<ruby>無視<rt>むし</rt></ruby>する",
+              "example_en": "Ignore a traffic light."
             },
             {
               "term_ja": "歩道",
@@ -4282,7 +4528,8 @@
               "meaning_en": "Sidewalk, pedestrian path",
               "meaning_zh": "人行道",
               "example_ja": "歩道を歩く",
-              "example_ruby": "<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く"
+              "example_ruby": "<ruby>歩道<rt>ほどう</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>く",
+              "example_en": "Walk on the sidewalk."
             },
             {
               "term_ja": "道路",
@@ -4291,7 +4538,8 @@
               "meaning_en": "Road, highway",
               "meaning_zh": "道路",
               "example_ja": "道路に飛び出す",
-              "example_ruby": "<ruby>道路<rt>どうろ</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>道路<rt>どうろ</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Rush out into the road."
             },
             {
               "term_ja": "飛び出す",
@@ -4300,7 +4548,8 @@
               "meaning_en": "Jump out into, rush out",
               "meaning_zh": "突然跑出来",
               "example_ja": "道路に飛び出す",
-              "example_ruby": "<ruby>道路<rt>どうろ</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "<ruby>道路<rt>どうろ</rt></ruby>に<ruby>飛<rt>と</rt></ruby>び<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Rush out into the road."
             },
             {
               "term_ja": "スピード",
@@ -4309,7 +4558,8 @@
               "meaning_en": "Speed",
               "meaning_zh": "速度",
               "example_ja": "スピードを出す",
-              "example_ruby": "スピードを<ruby>出<rt>だ</rt></ruby>す"
+              "example_ruby": "スピードを<ruby>出<rt>だ</rt></ruby>す",
+              "example_en": "Pick up speed."
             },
             {
               "term_ja": "ブレーキ",
@@ -4318,7 +4568,8 @@
               "meaning_en": "Brakes",
               "meaning_zh": "刹车",
               "example_ja": "ブレーキを踏む",
-              "example_ruby": "ブレーキを<ruby>踏<rt>ふ</rt></ruby>む"
+              "example_ruby": "ブレーキを<ruby>踏<rt>ふ</rt></ruby>む",
+              "example_en": "Step on the brakes."
             },
             {
               "term_ja": "踏む",
@@ -4327,7 +4578,8 @@
               "meaning_en": "Step on, tread on",
               "meaning_zh": "踩",
               "example_ja": "ブレーキを踏む",
-              "example_ruby": "ブレーキを<ruby>踏<rt>ふ</rt></ruby>む"
+              "example_ruby": "ブレーキを<ruby>踏<rt>ふ</rt></ruby>む",
+              "example_en": "Step on the brakes."
             },
             {
               "term_ja": "転ぶ",
@@ -4336,7 +4588,8 @@
               "meaning_en": "Fall over, tumble",
               "meaning_zh": "摔倒",
               "example_ja": "自転車で転ぶ",
-              "example_ruby": "<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>転<rt>ころ</rt></ruby>ぶ"
+              "example_ruby": "<ruby>自転車<rt>じてんしゃ</rt></ruby>で<ruby>転<rt>ころ</rt></ruby>ぶ",
+              "example_en": "Fall off a bicycle."
             },
             {
               "term_ja": "骨",
@@ -4345,7 +4598,8 @@
               "meaning_en": "Bone",
               "meaning_zh": "骨",
               "example_ja": "足の骨を折る",
-              "example_ruby": "<ruby>足<rt>あし</rt></ruby>の<ruby>骨<rt>ほね</rt></ruby>を<ruby>折<rt>お</rt></ruby>る"
+              "example_ruby": "<ruby>足<rt>あし</rt></ruby>の<ruby>骨<rt>ほね</rt></ruby>を<ruby>折<rt>お</rt></ruby>る",
+              "example_en": "Break a bone in one's leg."
             },
             {
               "term_ja": "折る",
@@ -4354,7 +4608,8 @@
               "meaning_en": "Break, fracture, snap",
               "meaning_zh": "折",
               "example_ja": "足の骨を折る",
-              "example_ruby": "<ruby>足<rt>あし</rt></ruby>の<ruby>骨<rt>ほね</rt></ruby>を<ruby>折<rt>お</rt></ruby>る"
+              "example_ruby": "<ruby>足<rt>あし</rt></ruby>の<ruby>骨<rt>ほね</rt></ruby>を<ruby>折<rt>お</rt></ruby>る",
+              "example_en": "Break a bone in one's leg."
             },
             {
               "term_ja": "骨折する",
@@ -4363,7 +4618,8 @@
               "meaning_en": "Bone fracture (n); fracture (v)",
               "meaning_zh": "骨折",
               "example_ja": "足を骨折する",
-              "example_ruby": "<ruby>足<rt>あし</rt></ruby>を<ruby>骨折<rt>こっせつ</rt></ruby>する"
+              "example_ruby": "<ruby>足<rt>あし</rt></ruby>を<ruby>骨折<rt>こっせつ</rt></ruby>する",
+              "example_en": "Fracture one's leg."
             },
             {
               "term_ja": "気を付ける",
@@ -4372,7 +4628,8 @@
               "meaning_en": "Be careful, pay attention",
               "meaning_zh": "注意，小心",
               "example_ja": "車に気を付ける",
-              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>に<ruby>気<rt>き</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける"
+              "example_ruby": "<ruby>車<rt>くるま</rt></ruby>に<ruby>気<rt>き</rt></ruby>を<ruby>付<rt>つ</rt></ruby>ける",
+              "example_en": "Watch out for cars."
             },
             {
               "term_ja": "防ぐ",
@@ -4381,7 +4638,8 @@
               "meaning_en": "Prevent, avoid, ward off",
               "meaning_zh": "防止",
               "example_ja": "事故を防ぐ",
-              "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐ"
+              "example_ruby": "<ruby>事故<rt>じこ</rt></ruby>を<ruby>防<rt>ふせ</rt></ruby>ぐ",
+              "example_en": "Prevent an accident."
             }
           ],
           "yattemiyou": [

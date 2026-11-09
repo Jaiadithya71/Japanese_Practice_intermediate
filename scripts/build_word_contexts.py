@@ -124,7 +124,17 @@ def load_vocab_data():
     return vocab_by_exact_term, all_vocab_examples
 
 
+def load_exercise_translations():
+    # Hand-written English for complete exercise sentences that ship without one.
+    path = os.path.join(KANJI_DIR, 'exercise_translations.json')
+    if os.path.exists(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+
 def load_kanji_exercises():
+    ex_tr = load_exercise_translations()
     ex_files = sorted(glob.glob(os.path.join(KANJI_DIR, 'exercises_part*.json')))
     exercises = []
     for ef in ex_files:
@@ -139,7 +149,11 @@ def load_kanji_exercises():
                     qid = itm.get('id') or f"L{l_num}"
                     clean_q = strip_html(q_raw)
                     clean_m = strip_html(m_raw)
-                    if clean_q:
+                    if not clean_m:
+                        clean_m = ex_tr.get(f"kanji_ex:{qid}", '')
+                    # A context card must show an English line: skip untranslated
+                    # fill-in-the-blank stems so the next source is used instead.
+                    if clean_q and clean_m:
                         exercises.append({
                             'sentence_ja': clean_q,
                             'meaning': clean_m,
