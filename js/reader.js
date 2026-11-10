@@ -9,7 +9,7 @@ import { state } from './state.js';
 import { beginGistReviewSession, endGistReviewSession, scheduleGistSave } from './gist-sync.js';
 import { addAttempt, attachAccuracy, MIN_ATTEMPT_SECONDS } from './reading-times.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js';
-import { renderCard } from './study.js?v=4.4';
+import { renderCard } from './study.js?v=4.5';
 import { showView } from './navigation.js';
 import { getAllWords, getAllReadingLessons } from './data-loader.js';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';

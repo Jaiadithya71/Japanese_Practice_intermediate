@@ -13,7 +13,7 @@ import { state } from './state.js';
 import { startTestSession } from './test.js';
 import { beginGistReviewSession } from './gist-sync.js';
 import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus, peekItemStatus } from './srs.js?v=20261109-kanjistatus2';
-import { startStudy, renderCard } from './study.js?v=4.4';
+import { startStudy, renderCard } from './study.js?v=4.5';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
 import { pickDistractors } from './distractors.js?v=20261104-options2';

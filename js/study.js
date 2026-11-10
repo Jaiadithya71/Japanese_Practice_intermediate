@@ -828,21 +828,37 @@ export function playCurrentCardAudio() {
   }
 }
 
-function celebrateStudyCompletion() {
-  if (state._completionConfettiActive || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+function celebrateStudyCompletion(onDone) {
+  // Follow-up work (the end-of-session Gist sync) merges and re-serializes
+  // thousands of progress records on the main thread - enough to freeze this
+  // animation mid-burst. Callers pass it as onDone so it runs after the fall.
+  const done = typeof onDone === 'function' ? onDone : () => {};
+  if (state._completionConfettiActive) {
+    // A burst is already falling - run the follow-up work when it finishes.
+    state._completionConfettiQueue.push(done);
+    return;
+  }
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { done(); return; }
   state._completionConfettiActive = true;
+  state._completionConfettiQueue = [done];
   const canvas = document.createElement('canvas');
   canvas.setAttribute('aria-hidden', 'true');
   canvas.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:9999;';
   document.body.appendChild(canvas);
+  const finish = () => {
+    canvas.remove();
+    state._completionConfettiActive = false;
+    const queue = state._completionConfettiQueue || [];
+    state._completionConfettiQueue = null;
+    for (const cb of queue) { try { cb(); } catch (_) {} }
+  };
   const ctx = canvas.getContext('2d');
-  if (!ctx) { canvas.remove(); state._completionConfettiActive = false; return; }
+  if (!ctx) { finish(); return; }
   const width = window.innerWidth;
   const height = window.innerHeight;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   canvas.width = width * dpr;
   canvas.height = height * dpr;
-  ctx.scale(dpr, dpr);
   const colors = ['#a78bfa', '#34d399', '#fbbf24', '#f472b6', '#60a5fa'];
   const pieces = Array.from({ length: 110 }, () => ({
     x: Math.random() * width,
@@ -855,10 +871,12 @@ function celebrateStudyCompletion() {
   }));
   let previous = performance.now();
   function frame(now) {
-    // Integrate elapsed seconds, so low-refresh screens get the same full fall.
-    const dt = Math.max(0, (now - previous) / 1000);
+    // Clamp the step: after a busy main-thread moment the pieces keep their
+    // pace instead of jumping, so a stall reads as a brief pause, not a lurch.
+    const dt = Math.min(0.05, Math.max(0, (now - previous) / 1000));
     previous = now;
-    ctx.clearRect(0, 0, width, height);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     let remaining = 0;
     for (const p of pieces) {
       p.x += p.vx * dt;
@@ -867,28 +885,26 @@ function celebrateStudyCompletion() {
       p.spin += 4.8 * dt;
       if (p.y - p.size > height) continue;
       remaining++;
-      ctx.save();
+      // setTransform per piece avoids the save/translate/rotate/restore stack.
+      const c = Math.cos(p.spin);
+      const s = Math.sin(p.spin);
+      ctx.setTransform(dpr * c, dpr * s, -dpr * s, dpr * c, p.x * dpr, p.y * dpr);
       ctx.globalAlpha = Math.max(0, Math.min(1, (height + p.size - p.y) / 100));
-      ctx.translate(p.x, p.y);
-      ctx.rotate(p.spin);
       ctx.fillStyle = p.color;
       ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size * 0.65);
-      ctx.restore();
     }
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.globalAlpha = 1;
     // Clean up only after the last particle has fallen below the viewport.
     if (remaining) requestAnimationFrame(frame);
-    else {
-      canvas.remove();
-      state._completionConfettiActive = false;
-    }
+    else finish();
   }
   requestAnimationFrame(frame);
 }
 
 function renderStudySummary() {
-  endGistReviewSession();
   const container = document.getElementById('study-card-container');
-  if (!container) return;
+  if (!container) { endGistReviewSession(); return; }
 
   const answered = state.sessionTotalAnswered || 0;
   const correct = state.sessionRight || 0;
@@ -897,8 +913,6 @@ function renderStudySummary() {
   const hasKanjiOrVocab = state.drillOrigin === 'kanji' || state.sessionItems.some(item =>
     item.type === 'kanji' || item.type === 'kanji_word' || item.type === 'vocab' || item.book === 'vocab'
   );
-  if (answered > 0 && hasKanjiOrVocab) celebrateStudyCompletion();
-
   // The header score chip lags the final grade - refresh it on the end screen.
   const chipCorrect = document.getElementById('session-correct');
   const chipTotal = document.getElementById('session-total');
@@ -988,6 +1002,18 @@ ${statsRow}
   if (gradeControlsEl) gradeControlsEl.style.display = 'none';
   const controlsHintEl = document.getElementById('card-controls-hint');
   if (controlsHintEl) controlsHintEl.style.display = 'none';
+
+  // Sync the review session only once the confetti has finished falling (see
+  // celebrateStudyCompletion). Sessions without a celebration sync at once.
+  if (!(answered > 0 && hasKanjiOrVocab)) { endGistReviewSession(); return; }
+  const summarySeq = (state.summarySeq = (state.summarySeq || 0) + 1);
+  celebrateStudyCompletion(() => {
+    // If a new session already started from the summary's buttons, its own
+    // completion (or exitStudy) ends the review session - don't cut it short.
+    if (state.summarySeq === summarySeq && state.sessionIdx >= state.sessionItems.length) {
+      endGistReviewSession();
+    }
+  });
 }
 
 export function exitStudy() {
