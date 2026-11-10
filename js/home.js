@@ -26,7 +26,9 @@ export function renderHomeView() {
   try { state.studyDirection = localStorage.getItem('n3_home_study_direction') || state.studyDirection; } catch (_) {}
   updateMasteryCounters();
   if (!state.homePickerInitialized) {
-    if (!state.selectedChapters.size && state.vocabDB['01']) state.selectedChapters.add('01');
+    // Suggested first step for brand-new sessions, Topics tab only - adding it
+    // while another group is showing would be an invisible selection.
+    if (!state.selectedChapters.size && state.activeChapterGroup === 'topic' && state.vocabDB['01']) state.selectedChapters.add('01');
     state.homePickerInitialized = true;
   }
   renderLessonGrid();
@@ -113,20 +115,26 @@ export function selectAllChaptersInGroup() {
 }
 
 export function clearChapterSelection() {
-  state.selectedChapters.clear();
+  // Clear only the visible group's selections; picks made in the other group
+  // stay intact for when the user switches back.
+  for (const selKey of homeActiveGroupSelKeys()) state.selectedChapters.delete(selKey);
   renderLessonGrid();
   updateHomeLessonControls();
 }
 
-function textbookChapterKeys() {
-  return Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k) || k.startsWith('part2_'));
-}
-function homeSelectedChapterKeys() {
-  // Selection entries are `chId` (part A) or `chId|B` (kana-first part B);
-  // the word pool is the same chapters either way.
-  return state.selectedChapters.size
-    ? [...new Set(Array.from(state.selectedChapters, k => k.split('|')[0]))]
-    : textbookChapterKeys();
+
+function homeActiveGroupSelKeys() {
+  // Only selection entries that belong to the group currently shown in the
+  // picker. The selection Set is shared across the Topics/Characteristics
+  // tabs (and other views write into it too), so entries from the other group
+  // must not count toward - or be drilled from - this tab, where they are
+  // invisible. Entries are `chId` (part A) or `chId|B` (kana-first part B).
+  const isChar = state.activeChapterGroup !== 'topic';
+  return Array.from(state.selectedChapters).filter(k => {
+    const base = String(k).split('|')[0];
+    const isCharacteristics = base.startsWith('part2_');
+    return isCharacteristics === isChar && (isCharacteristics || /^\d+$/.test(base));
+  });
 }
 
 
@@ -236,24 +244,26 @@ function updateHomeLessonControls() {
   const phaseHint = document.getElementById('home-review-phase-hint');
   if (phaseHint) phaseHint.textContent = phase === 'learn' ? 'Reading, meaning & examples. No grading.' : 'Recall first, then reveal and grade.';
 
-  const chapters = homeSelectedChapterKeys();
+  const selKeys = homeActiveGroupSelKeys();
   // With "Drill hard words only" on, the pool is just the hard words the drill
   // will draw (same per-part filter as startSelectedLessonRun); otherwise the
-  // normal full count.
+  // normal full count. Each selected part (A and B) contributes the chapter's
+  // words, matching the cards the run actually draws.
   let wordCount;
   if (homeHardOnlyChecked()) {
     wordCount = 0;
-    for (const selKey of state.selectedChapters) {
+    for (const selKey of selKeys) {
       const kanaFirst = selKey.endsWith('|B');
       const chapter = kanaFirst ? selKey.slice(0, -2) : selKey;
       wordCount += homeHardWordCount(state.vocabDB[chapter] || [], kanaFirst ? 'kana-en' : state.studyDirection);
     }
   } else {
-    wordCount = chapters.reduce((sum, id) => sum + (state.vocabDB[id] || []).length, 0);
+    wordCount = selKeys.reduce((sum, selKey) => sum + (state.vocabDB[String(selKey).split('|')[0]] || []).length, 0);
   }
+  const lessonCount = new Set(selKeys.map(k => String(k).split('|')[0])).size;
   const summary = document.getElementById('home-lessons-count');
-  if (summary) summary.textContent = state.selectedChapters.size
-    ? `${state.selectedChapters.size} lesson${state.selectedChapters.size === 1 ? '' : 's'} selected · ${wordCount.toLocaleString()} words in pool`
+  if (summary) summary.textContent = lessonCount
+    ? `${lessonCount} lesson${lessonCount === 1 ? '' : 's'} selected · ${wordCount.toLocaleString()} words in pool`
     : '0 lessons selected';
   const size = document.querySelector('[aria-label="Session size"]');
   if (size) size.value = homeRunSize();
@@ -263,7 +273,7 @@ function updateHomeLessonControls() {
   const characteristic = document.getElementById('home-tab-char');
   if (topic) topic.textContent = `Topics · ${Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k)).length || 21}`;
   if (characteristic) characteristic.textContent = `Characteristics · ${Object.keys(state.vocabDB).filter(k => k.startsWith('part2_')).length || 8}`;
-  const canStart = state.selectedChapters.size > 0;
+  const canStart = selKeys.length > 0;
   const flashcards = document.getElementById('btn-start-selected-study');
   const tests = document.getElementById('btn-start-selected-test');
   if (flashcards) flashcards.disabled = !canStart;
@@ -271,7 +281,8 @@ function updateHomeLessonControls() {
 }
 
 export function startSelectedLessonTestRun() {
-  const selected = new Set(state.selectedChapters);
+  const selected = new Set(homeActiveGroupSelKeys());
+  if (!selected.size) { alert('Select at least one lesson first.'); return null; }
   const baseIds = new Set(Array.from(selected, k => String(k).split('|')[0]));
   const tests = getAllAvailableTests().filter(test => test.pillar === 'vocab' && test.category !== 'vocab_reviews' && test.category !== 'mock_exams' && baseIds.has(String(test.id).replace(/^vocab-/, '')));
   const questions = tests.flatMap(test => test.questions || []).filter(question =>
@@ -308,8 +319,8 @@ function startHomeBatch() {
 }
 
 export function startSelectedLessonRun() {
-  if (!state.selectedChapters.size) { alert('Select at least one lesson first.'); return; }
-  const chapters = Array.from(state.selectedChapters);
+  const chapters = homeActiveGroupSelKeys();
+  if (!chapters.length) { alert('Select at least one lesson first.'); return; }
   const pool = [];
   for (const selKey of chapters) {
     const kanaFirst = selKey.endsWith('|B');
