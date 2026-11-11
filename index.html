@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/test.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/mobile.css" />
-  <link rel="stylesheet" href="css/sync.css?v=2.6" />
+  <link rel="stylesheet" href="css/sync.css?v=2.7" />
   <link rel="stylesheet" href="css/srs-home.css?v=gold-1" />
   <link rel="stylesheet" href="css/today.css" />
   <link rel="stylesheet" href="css/grammar-star.css" />
@@ -528,11 +528,82 @@
 
         <!-- BOOK 3: GRAMMAR MASTERY SUITE -->
         <section id="view-grammar" class="view">
-      <div class="view-header">
-        <div class="view-title-group">
-          <h2>3. 文法 (Grammar Master Suite)</h2>
+      <div class="view-header"><div class="view-title-group"><h2>3. 文法 (Grammar Master Suite)</h2></div><button id="n3sync-grammar" class="n3s-kanji-indicator n3s-idle" onclick="openSyncSetup()" aria-label="Gist sync: sync off"><i class="fa-solid fa-cloud"></i><span>Sync off</span></button></div>
+
+      <section class="home-lessons-card" aria-labelledby="grammar-picker-title">
+        <div class="home-picker-heading">
+          <h3 id="grammar-picker-title">Select lessons</h3>
+          <div class="home-lesson-tabs" role="tablist" aria-label="Grammar lesson groups">
+            <button id="grammar-tab-part1" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="setGrammarLessonGroup('1')">Part 1 · 12</button>
+            <button id="grammar-tab-part2" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarLessonGroup('2')">Part 2 · 15</button>
+            <button id="grammar-tab-part3" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarLessonGroup('3')">Part 3 · 10</button>
+          </div>
         </div>
-      </div>
+        <div class="home-picker-tools">
+          <button type="button" class="home-picker-action" id="grammar-select-all"><i class="fa-solid fa-check-double"></i> Select All</button>
+          <button type="button" class="home-picker-action" id="grammar-clear-selection"><i class="fa-solid fa-square-minus"></i> Clear</button>
+        </div>
+        <div id="grammar-lesson-chips-row" class="home-lesson-grid" aria-label="Grammar lessons"></div>
+        <p id="grammar-picker-summary" class="home-picker-summary" aria-live="polite"></p>
+        <div class="home-run-settings">
+          <label class="home-run-setting" id="grammar-setting-size"><span>Session size</span><select id="grammar-session-size" aria-label="Grammar session size" onchange="setGrammarSessionSize(this.value)">
+            <option value="10">10 cards</option><option value="20">20 cards</option><option value="all" selected>All cards</option>
+          </select></label>
+          <label class="home-run-check"><input id="grammar-picker-hard" type="checkbox" onchange="toggleGrammarHardOnly()"> Drill hard items only</label>
+        </div>
+        <div class="home-picker-buttons">
+          <button class="btn btn-secondary" id="btn-grammar-learn" onclick="startGrammarLearn()"><i class="fa-solid fa-clone"></i> Learn</button>
+          <button class="btn btn-primary" id="btn-grammar-practice" onclick="startGrammarPractice()"><i class="fa-solid fa-play"></i> Start practice</button>
+        </div>
+        <p id="grammar-start-hint" class="kanji-start-hint"></p>
+      </section>
+
+      <section id="grammar-status" class="home-vocab-status" aria-labelledby="grammar-status-title">
+        <h3 id="grammar-status-title">Grammar status</h3>
+        <div id="gst-rows" class="hvs-rows"></div>
+      </section>
+
+      <section class="home-activity-card" aria-labelledby="grammar-activity-title">
+        <div class="home-activity-head">
+          <div>
+            <h3 id="grammar-activity-title">Grammar study activity</h3>
+            <p>Grammar reviews over the last 30 days</p>
+          </div>
+          <div class="home-activity-summary"><strong id="grammar-review-streak">0</strong><span>day streak</span></div>
+        </div>
+        <div id="grammar-activity-heatmap" class="home-activity-heatmap"></div>
+        <p id="grammar-activity-hint" class="activity-day-hint">Tap a day to see its grammar reviews.</p>
+        <div id="grammar-activity-detail" class="home-activity-today" aria-live="polite"><span id="grammar-reviews-today">0</span> grammar reviews</div>
+      </section>
+
+      <details class="home-secondary-details">
+        <summary>Grammar progress <i class="fa-solid fa-chevron-down"></i></summary>
+        <div class="home-secondary-content">
+          <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 0.5rem;">
+            <div class="stat-card" style="border-left: 3px solid var(--green);">
+              <span class="stat-card-title">Mastered</span>
+              <span class="stat-card-value" id="grammar-prog-mastered">0</span>
+              <span class="stat-card-sub">patterns</span>
+            </div>
+            <div class="stat-card" style="border-left: 3px solid var(--accent);">
+              <span class="stat-card-title">Learning</span>
+              <span class="stat-card-value" id="grammar-prog-learning">0</span>
+              <span class="stat-card-sub">patterns</span>
+            </div>
+            <div class="stat-card" style="border-left: 3px solid var(--red);">
+              <span class="stat-card-title">Struggling</span>
+              <span class="stat-card-value" id="grammar-prog-hard">0</span>
+              <span class="stat-card-sub">patterns</span>
+            </div>
+            <div class="stat-card" style="border-left: 3px solid var(--text-dim);">
+              <span class="stat-card-title">Unseen</span>
+              <span class="stat-card-value" id="grammar-prog-unseen">0</span>
+              <span class="stat-card-sub">patterns</span>
+            </div>
+          </div>
+          <p class="home-picker-summary" id="grammar-prog-note"></p>
+        </div>
+      </details>
 
       <!-- Pillar Sub-Tabs -->
       <div class="pillar-sub-tabs" id="subtabs-grammar" role="tablist">
@@ -543,7 +614,7 @@
           <i class="fa-solid fa-bolt"></i> 復習 Due SRS
         </button>
         <button class="pst-btn" data-sub="hard" onclick="setGrammarSubTab('hard')">
-          <i class="fa-solid fa-fire"></i> 苦手 &amp; 混同 Clusters <span class="badge badge-red" id="subtab-grammar-hard-badge">0</span>
+          <i class="fa-solid fa-fire"></i> 苦手 Hard Grammar <span class="badge badge-red" id="subtab-grammar-hard-badge">0</span>
         </button>
         <button class="pst-btn" data-sub="drills" onclick="setGrammarSubTab('drills')">
           <i class="fa-solid fa-pen-clip"></i> 演習問題 Drills &amp; Mocks
@@ -1148,7 +1219,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=20261109-kanjiheatmap1"></script>
+  <script type="module" src="js/main.js?v=20261111-grammar1"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

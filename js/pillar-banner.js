@@ -317,7 +317,7 @@ export function renderPillarBanners() {
     }
     if (p === 'kanji' && el.querySelector('.pb-options')) reviewOptionsOpen = el.querySelector('.pb-options').open;
     el.innerHTML = bannerHtml(p, dataByP[p], false);
-    if (p === 'kanji') {
+    if (p === 'kanji' || p === 'grammar') {
       const picker = view.querySelector('.home-lessons-card');
       if (picker && picker.nextElementSibling !== el) picker.after(el);
     }

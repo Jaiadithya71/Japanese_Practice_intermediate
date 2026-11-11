@@ -4,8 +4,9 @@
    Pillar Sub-Tabs, Pillar-Scoped SRS, Hard Panes, & Settings Drawer
    ======================================================= */
 
+import { grammarSections } from './grammar-lessons.js';
 import { state } from './state.js';
-import { getDueItemsCount, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey, isKanjiReadingCovered } from './srs.js';
+import { getDueItemsCount, peekItemStatus, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey, isKanjiReadingCovered } from './srs.js';
 import { startStudy, startOmniReview, startDueReview } from './study.js?v=4.5';
 import { exportBackup, importBackup, restoreSnapshot } from './backup.js';
 import { openSyncSetup } from './gist-sync.js';
@@ -546,7 +547,9 @@ export function renderKanjiHardPane() {
 export function renderGrammarSRSPane() {
   const container = document.getElementById('grammar-srs-container');
   if (!container) return;
-  const dueCount = getDueItemsCount('grammar');
+  const selected = state.selectedDueGrammarSections || new Set();
+  const dueCount = getDueItemsCount('grammar', selected);
+  const sections = grammarSections();
   const currentBatch = activeBatches.grammar;
 
   container.innerHTML = `
@@ -557,11 +560,17 @@ export function renderGrammarSRSPane() {
       </div>
       <div class="psc-count-box">
         <span class="psc-count" style="color: var(--amber);">${dueCount}</span>
-        <span class="psc-count-label">star blanks (★) &amp; decision questions due</span>
+        <span class="psc-count-label">patterns and drill questions due</span>
       </div>
       <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.5;">
-        Grammar sentence ordering and meaning discrimination drills calibrated with interleaved cluster reviews.
+        Review patterns and drill questions you have practised. Patterns and questions keep separate review schedules.
       </p>
+      <label for="grammar-due-lesson">Lesson</label>
+      <select id="grammar-due-lesson" style="width:100%;margin:.5rem 0" onchange="window.N3BookPlatform.setGrammarDueLesson(this.value)">
+        <option value="all">All lessons</option>
+        ${sections.map(sec => `<option value="${sec.secId}" ${selected.has(sec.secId) ? 'selected' : ''}>${sec.titlePlain} (${getDueItemsCount('grammar',new Set([sec.secId]))} due)</option>`).join('')}
+      </select>
+      <p class="home-picker-summary">This round: ${Math.min(dueCount,currentBatch === 'all' ? dueCount : Number(currentBatch))} items · ${dueCount ? Math.ceil(dueCount/(currentBatch === 'all' ? dueCount : Number(currentBatch))) : 0} rounds at this batch size</p>
       <div class="today-batch-selector" style="margin-top: 1rem;">
         <span class="batch-label">Batch Size:</span>
         <button class="batch-chip ${currentBatch === '10' ? 'active' : ''}" onclick="window.N3BookPlatform.setBatch('grammar', '10')">10</button>
@@ -570,7 +579,7 @@ export function renderGrammarSRSPane() {
       </div>
       <div class="psc-actions">
         <button class="btn btn-primary psc-btn-launch" ${dueCount === 0 ? 'disabled' : ''} onclick="window.N3BookPlatform.startPillarSRS('grammar')">
-          <i class="fa-solid fa-play"></i> Start Grammar Star SRS (~${Math.ceil((currentBatch === 'all' ? dueCount : parseInt(currentBatch, 10)) * 0.7)} min)
+          <i class="fa-solid fa-play"></i> Start Grammar Review (~${Math.ceil(Math.min(dueCount,currentBatch === 'all' ? dueCount : parseInt(currentBatch, 10)) * 0.7)} min)
         </button>
       </div>
     </div>
@@ -583,19 +592,19 @@ export function renderGrammarHardPane() {
 
   const patterns = state.grammarDB?.index || [];
   const hardPatterns = patterns.filter(p => {
-    const s = getItemStats(`G:${p.id}`);
-    return s.isHard || (s.weight || 1.0) >= 1.2 || s.lapses >= 2;
+    return peekItemStatus(`G:${p.id}`) === 'hard';
   });
 
+  const hardDrills = Object.keys(state.stats || {}).filter(k => k.startsWith('GD:') && peekItemStatus(k) === 'hard').map(k => resolveItemForKey(k,state.stats[k]));
   // Update badge
   const badge = document.getElementById('subtab-grammar-hard-badge');
-  if (badge) badge.textContent = hardPatterns.length;
+  if (badge) badge.textContent = hardPatterns.length + hardDrills.length;
 
   container.innerHTML = `
     <div class="pillar-hard-header">
       <div class="phh-info">
-        <div class="phh-title"><i class="fa-solid fa-fire" style="color: #ef4444;"></i> 苦手文法 &amp; 混同しやすい文型 (Confusion Clusters)</div>
-        <div class="phh-sub">Patterns with similar forms or meanings that cause exam errors</div>
+        <div class="phh-title"><i class="fa-solid fa-fire" style="color: #ef4444;"></i> 苦手文法 (Hard Grammar)</div>
+        <div class="phh-sub">Patterns and drill questions marked hard or missed repeatedly</div>
       </div>
     </div>
     <div id="grammar-clusters-box" style="margin-top: 1rem;">
@@ -603,10 +612,11 @@ export function renderGrammarHardPane() {
     </div>
   `;
 
-  // Render clusters if available
-  if (typeof window.N3GrammarSRS?.renderClustersToContainer === 'function') {
-    window.N3GrammarSRS.renderClustersToContainer('grammar-clusters-box');
-  }
+  const box = document.getElementById('grammar-clusters-box');
+  if (box) box.innerHTML = hardPatterns.length ? hardPatterns.map(p => `<div class="pillar-srs-card"><strong>${p.pattern_ruby || p.pattern}</strong><p>${p.meaning_en || ''}</p><button class="btn btn-secondary" onclick="selectGrammarLesson('${p.section_id}', 'only'); startGrammarLearn()">Review this lesson</button></div>`).join('') : '<p class="home-picker-summary">No hard patterns yet. Mark a pattern with the flame during a flashcard session, or use Again when recall fails.</p>';
+  if (box && hardDrills.length) box.innerHTML += `<h4>${hardDrills.length} hard drill questions</h4>` + hardDrills.map(q => `<div class="pillar-srs-card"><p>${q.prompt}</p><button class="btn btn-secondary" onclick="selectGrammarLesson('${q.section_id}', 'only'); document.getElementById('grammar-picker-hard').checked=true; if(!window.grammarHardOnlyEnabled?.()) toggleGrammarHardOnly(); startGrammarPractice()">Practice hard questions in this lesson</button></div>`).join('');
+
+
 }
 
 // =======================================================
@@ -785,14 +795,17 @@ export const N3BookPlatform = {
     state.selectedDueKanjiLessons.clear();
     renderKanjiSRSPane();
   },
+  setGrammarDueLesson: value => { state.selectedDueGrammarSections = value === 'all' ? new Set() : new Set([value]); renderGrammarSRSPane(); },
   startPillarSRS: (pillar) => {
-    const limit = activeBatches[pillar] === 'all' ? (pillar === 'kanji' ? 'all' : 100) : parseInt(activeBatches[pillar], 10);
+    const limit = activeBatches[pillar] === 'all' ? (pillar === 'kanji' || pillar === 'grammar' ? 'all' : 100) : parseInt(activeBatches[pillar], 10);
     state.dueBatchSize = limit;
     let filter = null;
     if (pillar === 'vocab') {
       if (state.selectedDueVocabChapters && state.selectedDueVocabChapters.size > 0) {
         filter = state.selectedDueVocabChapters;
       }
+    } else if (pillar === 'grammar') {
+      filter = state.selectedDueGrammarSections || null;
     } else if (pillar === 'kanji') {
       if (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0) {
         filter = state.selectedDueKanjiLessons;

@@ -35,3 +35,8 @@
 /* Me view has its own Configure Gist Sync entry in Settings; the floating pill
    overlaps the sticky Settings tab at phone widths, so it stays hidden there. */
 @media(max-width:900px){body:has(#view-me.active) #n3sync-mobile{display:none!important}}
+
+#view-grammar>.view-header{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:.7rem;text-align:left}#view-grammar>.view-header .view-title-group{min-width:0;align-items:flex-start;text-align:left}#view-grammar>.view-header h2{font-size:1.3rem;overflow-wrap:anywhere}
+@media(max-width:900px){body:has(#view-grammar.active) #n3sync-mobile{display:none!important}}
+#grammar-status .hvs-label{width:6rem;flex-shrink:0;font-size:.7rem}#grammar-patterns-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))!important}
+#view-grammar .home-lesson-tabs{max-width:100%;flex-wrap:wrap}#view-grammar .home-lesson-tab{min-width:0;white-space:normal}#view-grammar>.view-header .view-title-group{flex:1}#view-grammar #n3sync-grammar{flex-shrink:0}

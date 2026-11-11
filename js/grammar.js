@@ -9,9 +9,12 @@
    - Book Structure & Conjugation Symbols Guide
    ======================================================= */
 
+import { grammarDrillContent } from './grammar-card-data.js';
 import { state } from './state.js';
+import { renderGrammarLessonArea } from './grammar-lessons.js';
 
 export function renderGrammarView() {
+  renderGrammarLessonArea();
   const tab = state.grammarActiveTab || 'patterns';
 
   // Highlight active tab buttons
@@ -65,6 +68,7 @@ export function renderGrammarPatternsList() {
   const query = (state.grammarSearchQuery || '').toLowerCase().trim();
 
   const filtered = patterns.filter(p => {
+    if (!state.grammarSelectionEmpty && state.grammarSelectedSections?.size && (!state.grammarSelectedSections.has(p.section_id) || (state.grammarLessonGroup && (p.section_id.startsWith('p1-') ? '1' : p.section_id.startsWith('p3-') ? '3' : '2') !== state.grammarLessonGroup))) return false;
     if (partFilter !== 'all' && !p.category.includes(partFilter)) return false;
     if (query) {
       const matchPat = (p.pattern || '').toLowerCase().includes(query);
@@ -137,7 +141,7 @@ export function renderGrammarDrills() {
 
   const sec1to6 = state.grammarDB.part1_1_6?.sections || [];
   const sec7to12 = state.grammarDB.part1_7_12?.sections || [];
-  const allSections = [...sec1to6, ...sec7to12];
+  const allSections = [...sec1to6, ...sec7to12].map(s => ({...s, id:String(s.section_number), drills:(s.drills || []).map(q => ({...q, id:`p1:${s.section_number}:${q.question_id}`}))}));
 
   if (allSections.length === 0) {
     container.innerHTML = `<div style="padding: 2rem; text-align: center; color: var(--text-muted);">No drill sections loaded.</div>`;
@@ -167,8 +171,10 @@ export function renderGrammarDrills() {
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
           ${drills.map((drill, idx) => {
+            const data = grammarDrillContent(drill);
+            if (!data.correctIndex) return `<div class="drill-item" style="padding:1rem;border:1px solid var(--border);border-radius:8px"><p>${data.prompt}</p><details><summary>Reveal answer (self-check)</summary>${data.answerText}<p>${data.explanation_en || data.explanation_ja}</p></details></div>`;
             const userChoice = state.grammarSelectedAnswers[drill.id];
-            const isCorrect = userChoice === drill.correct_answer;
+            const isCorrect = userChoice === grammarAnswerIndex(drill);
             return `
               <div class="drill-item" style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
                 <div style="font-size: 0.95rem; font-weight: 600; color: #fff; margin-bottom: 0.75rem;">
@@ -183,7 +189,7 @@ export function renderGrammarDrills() {
                     let bg = 'background: rgba(255,255,255,0.03);';
                     let border = 'border: 1px solid var(--border);';
                     if (showKey) {
-                      if (optNum === drill.correct_answer) {
+                      if (optNum === grammarAnswerIndex(drill)) {
                         bg = 'background: rgba(34, 197, 94, 0.15);';
                         border = 'border: 1px solid #22c55e;';
                       } else if (isSelected) {
@@ -226,6 +232,15 @@ export function answerGrammarDrill(drillId, choice) {
   renderGrammarDrills();
 }
 
+// Drill data keys answers as option numbers ("1".."4") or letters ("a".."d");
+// the panes compare against 1-based option indices.
+export function grammarAnswerIndex(drill) {
+  const raw = String(drill?.correct_answer ?? '');
+  if (/^\d+$/.test(raw)) return parseInt(raw, 10);
+  if (/^[a-d]$/i.test(raw)) return raw.toLowerCase().charCodeAt(0) - 96;
+  return null;
+}
+
 // -------------------------------------------------------
 // 3. PART 2 STAR PROBLEMS (★ Blanks) RUNNER
 // -------------------------------------------------------
@@ -233,7 +248,7 @@ export function renderGrammarStarProblems() {
   const container = document.getElementById('grammar-star-container');
   if (!container) return;
 
-  const sections = state.grammarDB.part2?.sections || [];
+  const sections = (state.grammarDB.part2?.sections || []).map(s => ({...s, drills:(s.drills || []).map(q => ({...q,id:`p2:${s.section_number}:${q.question_id}`}))}));
   if (sections.length === 0) {
     container.innerHTML = `<div style="padding: 2rem; text-align: center; color: var(--text-muted);">No Part 2 sentence composition exercises loaded.</div>`;
     return;
@@ -246,8 +261,10 @@ export function renderGrammarStarProblems() {
 
         <div style="display: flex; flex-direction: column; gap: 1.25rem;">
           ${sections.flatMap(s => (s.drills || [])).slice(0, 30).map((drill, idx) => {
+            const data = grammarDrillContent(drill);
+            if (!data.correctIndex) return `<div class="drill-item" style="padding:1rem;border:1px solid var(--border);border-radius:8px"><p>${data.prompt}</p><details><summary>Reveal answer (self-check)</summary>${data.answerText}<p>${data.explanation_en || data.explanation_ja}</p></details></div>`;
             const userChoice = state.grammarSelectedAnswers[drill.id];
-            const isCorrect = userChoice === drill.correct_answer;
+            const isCorrect = userChoice === grammarAnswerIndex(drill);
             return `
               <div style="background: var(--bg-surface); border: 1px solid var(--border); border-radius: 8px; padding: 1rem;">
                 <div style="font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 0.75rem;">
@@ -262,7 +279,7 @@ export function renderGrammarStarProblems() {
                     let bg = 'background: rgba(255,255,255,0.03);';
                     let border = 'border: 1px solid var(--border);';
                     if (showKey) {
-                      if (optNum === drill.correct_answer) {
+                      if (optNum === grammarAnswerIndex(drill)) {
                         bg = 'background: rgba(34, 197, 94, 0.15);';
                         border = 'border: 1px solid #22c55e;';
                       } else if (isSelected) {
@@ -429,6 +446,7 @@ export function renderGrammarGuide() {
 
 // Window bindings for inline onclicks
 if (typeof window !== 'undefined') {
+  window.renderGrammarPatternsList = renderGrammarPatternsList;
   window.setGrammarTab = setGrammarTab;
   window.setGrammarPartFilter = setGrammarPartFilter;
   window.onGrammarSearch = onGrammarSearch;

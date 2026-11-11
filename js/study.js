@@ -20,7 +20,7 @@ function renderReviewPhase() {
   if (phaseItem !== item || phaseIndex !== state.sessionIdx) {
     phaseItem = item;
     phaseIndex = state.sessionIdx;
-    reviewPhase = initialReviewPhase(item, getReviewPhase());
+    reviewPhase = initialReviewPhase(item, item.reviewPhase || (item.book === 'grammar' ? 'test' : getReviewPhase()));
     if (reviewPhase === 'learn') state.cardFlipped = true;
   }
   const enabled = state.studyMode !== 'kanji_quiz';
@@ -41,7 +41,7 @@ function renderReviewPhase() {
 }
 
 import { vocabularyLessonLabel } from './study-labels.js';
-import { updateItemStats, toggleItemHard, getItemStatus, getAllDueItems, formatItemKey } from './srs.js';
+import { updateItemStats, toggleItemHard, getItemStatus, peekItemStatus, getAllDueItems, getDueItemsCount, formatItemKey } from './srs.js';
 import { showView } from './navigation.js';
 import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
 
@@ -105,6 +105,8 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
       } else if (state.selectedVocabChapters && state.selectedVocabChapters.size > 0 && state.vocabChapter !== 'all') {
         chapterFilter = state.selectedVocabChapters;
       }
+    } else if (pillarFilter === 'grammar') {
+      chapterFilter = state.selectedDueGrammarSections || null;
     } else if (pillarFilter === 'kanji') {
       if (state.selectedDueKanjiLessons && state.selectedDueKanjiLessons.size > 0) {
         chapterFilter = state.selectedDueKanjiLessons;
@@ -124,7 +126,7 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
   state.studyIsDrillHard = false;
   state.learnUnit = null;
   state.isDueReviewMode = true;
-  state.drillOrigin = 'home';
+  state.drillOrigin = pillarFilter === 'grammar' ? 'grammar' : 'home';
   state.sessionItems = pool;
   state.sessionIdx = 0;
   state.sessionRight = 0;
@@ -284,7 +286,9 @@ export function renderCard() {
       const isChosen = !!priorOutcome?.grade && btnGrade === priorOutcome.grade;
       // Graded cards keep live buttons: the chosen grade stays highlighted and
       // tapping a different one changes the grade (see regradeCard).
-      button.disabled = !state.cardFlipped;
+      const item = state.sessionItems[state.sessionIdx];
+      const fixedQuizGrade = item?.type === 'grammar_quiz' && item.userChoice != null ? (item.userChoice === item.correctIndex ? 'correct' : 'wrong') : null;
+      button.disabled = !state.cardFlipped || (fixedQuizGrade === 'wrong' && btnGrade !== 1) || (fixedQuizGrade === 'correct' && btnGrade === 1);
       button.classList.toggle('is-chosen-grade', isChosen);
       button.classList.toggle('is-dimmed-grade', !!priorOutcome?.grade && !isChosen);
       button.title = priorOutcome?.grade
@@ -336,7 +340,7 @@ function renderCardContent() {
 
   const item = state.sessionItems[state.sessionIdx];
   const itemKey = formatItemKey(item);
-  const isHard = getItemStatus(itemKey) === 'hard';
+  const isHard = (item.book === 'grammar' ? peekItemStatus(itemKey) : getItemStatus(itemKey)) === 'hard';
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'flex';
 
@@ -378,6 +382,27 @@ function renderCardContent() {
     if (typeof window !== 'undefined' && typeof window.renderKanjiQuizCard === 'function') {
       window.renderKanjiQuizCard(item);
     }
+    return;
+  }
+
+  // Grammar patterns use their own fields, never the vocabulary fallback.
+  if (item.type === 'grammar' || item.type === 'grammar_quiz') {
+    if (lessonTag) lessonTag.textContent = item.sectionLabel || item.section_title || 'Grammar';
+    if (audioBtn) audioBtn.style.display = 'none';
+    if (exBox) exBox.style.display = 'none';
+    const quiz = item.type === 'grammar_quiz';
+    termEl.innerHTML = `<div style="font-size:1.2rem;line-height:1.7;text-align:left">${quiz ? item.prompt : (item.pattern_ruby || item.pattern || '')}</div>`;
+    meaningEl.style.color = 'var(--text)';
+    if (!state.cardFlipped) {
+      meaningEl.innerHTML = quiz && item.options
+        ? `<div style="display:grid;gap:.5rem;font-size:1rem;text-align:left">${item.options.map((o,i) => `<button class="btn btn-secondary" style="text-align:left;white-space:normal" onclick="event.stopPropagation(); chooseGrammarOption(${i+1})">${i+1}. ${o}</button>`).join('')}</div>`
+        : '<span style="font-size:.9rem;color:var(--text-muted)">Recall, then tap to reveal</span>';
+    } else {
+      const feedback = quiz && item.userChoice != null ? `<p style="color:${item.userChoice === item.correctIndex ? 'var(--green)' : 'var(--red)'}">${item.userChoice === item.correctIndex ? 'Correct' : 'Incorrect'} · You chose ${item.userChoice}</p>` : '';
+      meaningEl.innerHTML = `<div style="font-size:1rem;line-height:1.6;text-align:left">${feedback}${quiz ? `<strong>Answer:</strong> ${item.answerText}<p>${item.explanation_en || item.explanation_ja || ''}</p>` : `<strong>${item.meaning_en || ''}</strong><p>${item.meaning_ja || ''}</p><p>${item.connection || ''}</p>`}</div>`;
+    }
+    document.getElementById('card-controls-hint').style.display = 'none';
+    document.getElementById('grade-controls').style.display = state.cardFlipped ? 'grid' : 'none';
     return;
   }
 
@@ -705,10 +730,29 @@ function renderCardContent() {
   }
 }
 
+export function chooseGrammarOption(choice) {
+  const item = state.sessionItems[state.sessionIdx];
+  if (item?.type !== 'grammar_quiz' || state.cardFlipped) return;
+  item.userChoice = choice;
+  state.cardFlipped = true;
+  renderCard();
+  revealGrammarAnswer();
+}
+function revealGrammarAnswer() {
+  const item = state.sessionItems[state.sessionIdx];
+  if (item?.type === 'grammar_quiz' && state.cardFlipped) {
+    const body = document.querySelector('#flashcard .flashcard-body');
+    const answer = document.getElementById('card-meaning');
+    if (body && answer) body.scrollTop += answer.getBoundingClientRect().top - body.getBoundingClientRect().top;
+  }
+}
+if (typeof window !== 'undefined') window.chooseGrammarOption = chooseGrammarOption;
+
 export function flipCard() {
   if (state.studyMode === 'kanji_quiz' || reviewPhase === 'learn') return;
   state.cardFlipped = !state.cardFlipped;
   renderCard();
+  revealGrammarAnswer();
 }
 
 export function gradeCard(grade) {
@@ -716,6 +760,7 @@ export function gradeCard(grade) {
   if (state.sessionIdx >= state.sessionItems.length) return;
 
   const item = state.sessionItems[state.sessionIdx];
+  if (item.type === 'grammar_quiz' && item.userChoice != null) grade = item.userChoice === item.correctIndex ? Math.max(2, grade) : 1;
   const prior = studyHistory.get(state.sessionItems, item);
   if (prior?.grade) {
     // Card was already graded: treat the tap as changing that grade, not a new review.
@@ -741,7 +786,7 @@ export function gradeCard(grade) {
   const isAgain = grade === 1;
   if (isAgain) {
     const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
-    const copy = { ...item, _requeued: true };
+    const copy = { ...item, userChoice: undefined, _requeued: true };
     state.sessionItems.splice(insertAt, 0, copy);
     entry.requeueNode = copy;
   }
@@ -795,7 +840,7 @@ function regradeCard(item, entry, newGrade) {
   entry.grade = newGrade;
   if (newGrade === 1) {
     const insertAt = Math.min(state.sessionIdx + 3, state.sessionItems.length);
-    const copy = { ...item, _requeued: true };
+    const copy = { ...item, userChoice: undefined, _requeued: true };
     state.sessionItems.splice(insertAt, 0, copy);
     entry.requeueNode = copy;
   }
@@ -921,7 +966,7 @@ function renderStudySummary() {
 
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'none';
-  const again = state.studyMode === 'kanji_quiz'
+  const again = state.drillOrigin === 'grammar' ? (state.isDueReviewMode ? `startDueReview('grammar')` : 'startGrammarAgain()') : state.studyMode === 'kanji_quiz'
     ? 'startKanjiQuickQuiz()'
     : state.learnUnit
       ? `startLearnNew('${state.learnUnit}')`
@@ -932,7 +977,9 @@ function renderStudySummary() {
           : `startStudy('${state.studyMode}', ${state.studyIsDrillHard}, '${state.drillOrigin}')`));
   const hasNextHomeBatch = state.homeRunBatchRun === true && state.drillOrigin === 'home' && !state.isDueReviewMode && Array.isArray(state.homeRunQueue) && state.homeRunQueue.length > 0;
   const hasNextKanjiBatch = state.kanjiRunBatchRun === true && state.drillOrigin === 'kanji' && !state.isDueReviewMode && Array.isArray(state.kanjiRunQueue) && state.kanjiRunQueue.length > 0;
-  const nextBatchButton = hasNextHomeBatch
+  const hasNextGrammarBatch = state.drillOrigin === 'grammar' && !state.isDueReviewMode && state.grammarRunQueue?.length > 0;
+  const dueGrammarRemaining = state.drillOrigin === 'grammar' && state.isDueReviewMode ? getDueItemsCount('grammar',state.selectedDueGrammarSections) : 0;
+  const nextBatchButton = dueGrammarRemaining ? `<button class="btn btn-primary" onclick="startDueReview('grammar')">Next due batch (${dueGrammarRemaining} left)</button>` : hasNextGrammarBatch ? `<button class="btn btn-primary" onclick="startNextGrammarBatch()">Next batch (${state.grammarRunQueue.length} left)</button>` : hasNextHomeBatch
     ? `<button class="btn btn-primary" onclick="startNextHomeBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.homeRunQueue.length} left)</button>`
     : (hasNextKanjiBatch ? `<button class="btn btn-primary" onclick="startNextKanjiBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.kanjiRunQueue.length} left)</button>` : '');
   const againLabel = state.studyMode === 'kanji_quiz'

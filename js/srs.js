@@ -27,6 +27,7 @@ import {
   HIST_LEN,
   BACKLOG_THRESHOLD
 } from './config.js';
+import { grammarDrillContent } from './grammar-card-data.js';
 import { state } from './state.js';
 import { examCapDays } from './planner.js';
 import { logActivity } from './daylog.js';
@@ -561,6 +562,8 @@ export function getDueItemsCount(pillar = 'all', chapterFilter = null) {
       if (itemPillar === 'vocab') {
         const ch = resolved.chapter;
         if (ch && !filterSet.has(ch) && !filterSet.has(String(ch))) continue;
+      } else if (itemPillar === 'grammar') {
+        if (!filterSet.has(resolved.section_id)) continue;
       } else if (itemPillar === 'kanji') {
         const lNum = resolved.lesson_number;
         if (lNum && !filterSet.has(lNum) && !filterSet.has(Number(lNum))) continue;
@@ -818,7 +821,16 @@ export function resolveItemForKey(key, stats) {
   }
 
   if (facet === 'GD') {
-    return { id: key, type: 'grammar_decision', key, book: 'grammar', stats, facet, pillar };
+    const [, source, sec, ...qidParts] = key.split(':');
+    const qid = qidParts.join(':');
+    const dbKey = {p1a:'part1_1_6',p1b:'part1_7_12',p2:'part2',p3:'part3'}[source];
+    const section = state.grammarDB?.[dbKey]?.sections?.find(s => String(s.section_number) === sec);
+    const q = section?.drills?.find(q => String(q.question_id) === qid);
+    if (!q) return { id:key,type:'grammar_decision',key,book:'grammar',stats,facet,pillar };
+    return { id:key, type:'grammar_quiz', key, book:'grammar', stats, facet, pillar,
+      section_id: source === 'p1a' || source === 'p1b' ? `p1-sec-${sec}` : source === 'p3' ? `p3-sec-${sec}` : `sec-${sec}`,
+      ...grammarDrillContent(q), sectionLabel:section?.title || section?.title_en || 'Grammar' };
+
   }
 
   if (facet === 'GS') {
@@ -834,7 +846,9 @@ export function resolveItemForKey(key, stats) {
   }
 
   if (facet === 'G') {
-    return { id: key.replace(/^G:/, ''), type: 'grammar', key, book: 'grammar', stats, facet, pillar };
+    const id = key.slice(2);
+    const pattern = (state.grammarDB?.index || []).find(p => p.id === id);
+    return { ...pattern, id, type: 'grammar', key, book: 'grammar', stats, facet, pillar };
   }
 
   return { id: key, key, type: 'item', stats, facet, pillar };
@@ -877,6 +891,8 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null,
       if (itemPillar === 'vocab') {
         const ch = resolved.chapter;
         if (ch && !filterSet.has(ch) && !filterSet.has(String(ch))) continue;
+      } else if (itemPillar === 'grammar') {
+        if (!filterSet.has(resolved.section_id)) continue;
       } else if (itemPillar === 'kanji') {
         const lNum = resolved.lesson_number;
         if (lNum && !filterSet.has(lNum) && !filterSet.has(Number(lNum))) continue;
@@ -908,7 +924,7 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null,
 
   // 3. Batch sizing & Catch-up mode per-session cap (40 cards)
   if (limit === 'all') {
-    return catchUp ? interleaved.slice(0, 40) : interleaved;
+    return catchUp && pillar !== 'grammar' ? interleaved.slice(0, 40) : interleaved;
   }
 
   const requestedLimit = parseInt(limit, 10) || 20;
