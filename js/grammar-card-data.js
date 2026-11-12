@@ -1,7 +1,7 @@
 // Shared lossless adapter for existing grammar exercise answer formats.
 // Compound and free-text questions are self-checked, never auto-scored as MC.
 export function grammarDrillContent(q = {}) {
-  const rawOptions = Array.isArray(q.options) ? q.options.map(o => String(o).replace(/^[a-d][\s　]/, '')) : null;
+  const rawOptions = Array.isArray(q.options) ? q.options.map(o => String(o).replace(/^([a-d]|\d+)[\s　]/, '')) : null;
   const raw = q.correct_answer;
   let correctIndex = /^[a-d]$/i.test(String(raw)) ? String(raw).toLowerCase().charCodeAt(0)-96 : /^\d+$/.test(String(raw)) ? Number(raw) : null;
   if (!rawOptions || !(correctIndex >= 1 && correctIndex <= rawOptions.length)) correctIndex = null;

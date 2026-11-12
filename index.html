@@ -533,11 +533,16 @@
       <section class="home-lessons-card" aria-labelledby="grammar-picker-title">
         <div class="home-picker-heading">
           <h3 id="grammar-picker-title">Select lessons</h3>
-          <div class="home-lesson-tabs" role="tablist" aria-label="Grammar lesson groups">
-            <button id="grammar-tab-part1" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="setGrammarLessonGroup('1')">Part 1 · 12</button>
-            <button id="grammar-tab-part2" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarLessonGroup('2')">Part 2 · 15</button>
-            <button id="grammar-tab-part3" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarLessonGroup('3')">Part 3 · 10</button>
+          <div class="home-lesson-tabs" id="grammar-mode-tabs" role="tablist" aria-label="Grammar study mode">
+            <button id="grammar-mode-learn" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="setGrammarPickerMode('learn')">Learn</button>
+            <button id="grammar-mode-drill" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarPickerMode('drill')">Drill</button>
+            <button id="grammar-mode-test" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarPickerMode('test')">Test</button>
           </div>
+        </div>
+        <div class="home-lesson-tabs" id="grammar-part-tabs" role="tablist" aria-label="Grammar lesson groups" style="display:none;margin-bottom:10px">
+          <button id="grammar-tab-part1" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="setGrammarLessonGroup('1')">Part 1 · 12</button>
+          <button id="grammar-tab-part2" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarLessonGroup('2')">Part 2 · 15</button>
+          <button id="grammar-tab-part3" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarLessonGroup('3')">Part 3 · 10</button>
         </div>
         <div class="home-picker-tools">
           <button type="button" class="home-picker-action" id="grammar-select-all"><i class="fa-solid fa-check-double"></i> Select All</button>
@@ -549,11 +554,12 @@
           <label class="home-run-setting" id="grammar-setting-size"><span>Session size</span><select id="grammar-session-size" aria-label="Grammar session size" onchange="setGrammarSessionSize(this.value)">
             <option value="10">10 cards</option><option value="20">20 cards</option><option value="all" selected>All cards</option>
           </select></label>
-          <label class="home-run-check"><input id="grammar-picker-hard" type="checkbox" onchange="toggleGrammarHardOnly()"> Drill hard items only</label>
+          <label class="home-run-check" id="grammar-setting-hard"><input id="grammar-picker-hard" type="checkbox" onchange="toggleGrammarHardOnly()"> Drill hard items only</label>
         </div>
         <div class="home-picker-buttons">
-          <button class="btn btn-secondary" id="btn-grammar-learn" onclick="startGrammarLearn()"><i class="fa-solid fa-clone"></i> Learn</button>
-          <button class="btn btn-primary" id="btn-grammar-practice" onclick="startGrammarPractice()"><i class="fa-solid fa-play"></i> Start practice</button>
+          <button class="btn btn-primary" id="btn-grammar-learn" onclick="startGrammarLearn()"><i class="fa-solid fa-clone"></i> Start learn</button>
+          <button class="btn btn-primary" id="btn-grammar-practice" onclick="startGrammarPractice()" style="display:none"><i class="fa-solid fa-pen-clip"></i> Start drill</button>
+          <button class="btn btn-primary" id="btn-grammar-test" onclick="startGrammarTest()" style="display:none"><i class="fa-solid fa-clipboard-check"></i> Start test</button>
         </div>
         <p id="grammar-start-hint" class="kanji-start-hint"></p>
       </section>

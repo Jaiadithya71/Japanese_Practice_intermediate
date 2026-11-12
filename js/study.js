@@ -399,7 +399,7 @@ function renderCardContent() {
         : '<span style="font-size:.9rem;color:var(--text-muted)">Recall, then tap to reveal</span>';
     } else {
       const feedback = quiz && item.userChoice != null ? `<p style="color:${item.userChoice === item.correctIndex ? 'var(--green)' : 'var(--red)'}">${item.userChoice === item.correctIndex ? 'Correct' : 'Incorrect'} · You chose ${item.userChoice}</p>` : '';
-      meaningEl.innerHTML = `<div style="font-size:1rem;line-height:1.6;text-align:left">${feedback}${quiz ? `<strong>Answer:</strong> ${item.answerText}<p>${item.explanation_en || item.explanation_ja || ''}</p>` : `<strong>${item.meaning_en || ''}</strong><p>${item.meaning_ja || ''}</p><p>${item.connection || ''}</p>`}</div>`;
+      meaningEl.innerHTML = `<div style="font-size:1rem;line-height:1.6;text-align:left">${feedback}${quiz ? `<strong>Answer:</strong> ${item.answerText}<p>${item.explanation_en || item.explanation_ja || ''}</p>` : `<strong>${item.meaning_en || ''}</strong><p>${item.meaning_ja || ''}</p>`}</div>`;
     }
     document.getElementById('card-controls-hint').style.display = 'none';
     document.getElementById('grade-controls').style.display = state.cardFlipped ? 'grid' : 'none';

@@ -91,7 +91,7 @@ export function getPillarFromKey(key) {
   if (!key || typeof key !== 'string') return 'other';
   if (key.startsWith('V:') || key.startsWith('VC:')) return 'vocab';
   if (key.startsWith('K:') || key.startsWith('K_EX:') || key.startsWith('KWR:') || key.startsWith('KWW:') || key.startsWith('KWM:') || key.startsWith('KWK:')) return 'kanji';
-  if (key.startsWith('G:') || key.startsWith('GD:') || key.startsWith('GS:') || key.startsWith('GT:') || key.startsWith('GC:')) return 'grammar';
+  if (key.startsWith('G:') || key.startsWith('GD:') || key.startsWith('GS:') || key.startsWith('GT:') || key.startsWith('GC:') || key.startsWith('GM:')) return 'grammar';
   if (key.startsWith('R_Q:') || key.startsWith('R_P:') || key.startsWith('RP:') || key.startsWith('RW:')) return 'reading';
   return 'other';
 }

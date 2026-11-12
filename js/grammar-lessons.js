@@ -96,6 +96,59 @@ function ensureSelectionState() {
   if (typeof state.grammarSelectionEmpty !== 'boolean') state.grammarSelectionEmpty = true;
   if (!state.grammarLessonGroup) state.grammarLessonGroup = '1';
   if (!state.grammarSessionSize) state.grammarSessionSize = 'all';
+  if (!state.grammarPickerMode) state.grammarPickerMode = 'learn';
+  if (!(state.grammarSelectedGroups instanceof Set)) state.grammarSelectedGroups = new Set();
+  if (typeof state.grammarGroupSelectionEmpty !== 'boolean') state.grammarGroupSelectionEmpty = true;
+  if (!(state.grammarSelectedTests instanceof Set)) state.grammarSelectedTests = new Set();
+  if (typeof state.grammarTestSelectionEmpty !== 'boolean') state.grammarTestSelectionEmpty = true;
+}
+
+// -------------------------------------------------------
+// LEARN GROUPS (his ask 2026-11-12): learn in chunks of ~35-40
+// grammar points instead of 3-5 per textbook lesson. Book order,
+// split at lesson boundaries; 83 patterns -> two ~41-pattern groups
+// (a strict 40 cap would leave a tiny 7-pattern tail group).
+// -------------------------------------------------------
+export function learnGroups() {
+  const secs = grammarSections();
+  const groups = [];
+  let cur = null;
+  secs.forEach(sec => {
+    if (!sec.patterns.length) return;
+    if (cur && cur.patterns.length + sec.patterns.length > 42) { groups.push(cur); cur = null; }
+    if (!cur) cur = { id: `learn-g${groups.length + 1}`, secs: [], patterns: [] };
+    cur.secs.push(sec);
+    cur.patterns.push(...sec.patterns.map(pattern => ({ sec, pattern })));
+  });
+  if (cur) groups.push(cur);
+  groups.forEach(g => {
+    const first = g.secs[0], last = g.secs[g.secs.length - 1];
+    g.label = first.part === last.part && first.part === '1' ? `${first.label}-${last.label}` : `${first.label}+`;
+    g.title = g.secs.map(sec => sec.titlePlain).join(' · ');
+  });
+  return groups;
+}
+
+// Mock exam list from the loaded grammar DB.
+function mockTests() {
+  const mock = state.grammarDB?.mock;
+  if (!mock) return [];
+  const tests = mock.mock_tests || [];
+  const questions = mock.questions || [];
+  return tests.map(t => ({
+    n: t.test_number,
+    title: (t.title_en || `Mock Test ${t.test_number}`),
+    questions: questions.filter(q => String(q.category || '').startsWith(`第${t.test_number}回`))
+  })).filter(t => t.questions.length);
+}
+
+export function setGrammarPickerMode(mode) {
+  if (!['learn', 'drill', 'test'].includes(mode)) return;
+  ensureSelectionState();
+  state.grammarPickerMode = mode;
+  renderGrammarLessonChips();
+  updateGrammarActionButtonLabels();
+  if (typeof window !== 'undefined') window.renderGrammarPatternsList?.();
 }
 
 function selectedSections() {
@@ -115,8 +168,40 @@ export function setGrammarLessonGroup(group) {
   if (typeof window !== 'undefined') window.renderGrammarPatternsList?.();
 }
 
+export function selectGrammarLearnGroup(groupId) {
+  ensureSelectionState();
+  const sel = state.grammarSelectedGroups;
+  if (sel.has(groupId)) sel.delete(groupId); else sel.add(groupId);
+  state.grammarGroupSelectionEmpty = sel.size === 0;
+  renderGrammarLessonChips();
+  updateGrammarActionButtonLabels();
+}
+
+export function selectGrammarTest(testN) {
+  ensureSelectionState();
+  const sel = state.grammarSelectedTests;
+  if (sel.has(testN)) sel.delete(testN); else sel.add(testN);
+  state.grammarTestSelectionEmpty = sel.size === 0;
+  renderGrammarLessonChips();
+  updateGrammarActionButtonLabels();
+}
+
 export function selectGrammarLesson(secId, mode = 'toggle') {
   ensureSelectionState();
+  if (secId === 'all' && state.grammarPickerMode === 'learn') {
+    state.grammarGroupSelectionEmpty = false;
+    learnGroups().forEach(g => state.grammarSelectedGroups.add(g.id));
+    renderGrammarLessonChips();
+    updateGrammarActionButtonLabels();
+    return;
+  }
+  if (secId === 'all' && state.grammarPickerMode === 'test') {
+    state.grammarTestSelectionEmpty = false;
+    mockTests().forEach(t => state.grammarSelectedTests.add(t.n));
+    renderGrammarLessonChips();
+    updateGrammarActionButtonLabels();
+    return;
+  }
   const sel = state.grammarSelectedSections;
   if (secId === 'all') {
     // Select every lesson in the active group.
@@ -138,8 +223,16 @@ export function selectGrammarLesson(secId, mode = 'toggle') {
 
 export function clearGrammarLessonSelection() {
   ensureSelectionState();
-  state.grammarSelectedSections.clear();
-  state.grammarSelectionEmpty = true;
+  if (state.grammarPickerMode === 'learn') {
+    state.grammarSelectedGroups.clear();
+    state.grammarGroupSelectionEmpty = true;
+  } else if (state.grammarPickerMode === 'test') {
+    state.grammarSelectedTests.clear();
+    state.grammarTestSelectionEmpty = true;
+  } else {
+    state.grammarSelectedSections.clear();
+    state.grammarSelectionEmpty = true;
+  }
   renderGrammarLessonChips();
   updateGrammarActionButtonLabels();
   if (typeof window !== 'undefined') window.renderGrammarPatternsList?.();
@@ -170,6 +263,78 @@ export function renderGrammarLessonChips() {
   const banner = document.getElementById('pb-grammar');
   const picker = document.querySelector('#view-grammar .home-lessons-card');
   if (banner && picker && picker.nextElementSibling !== banner) picker.after(banner);
+
+  const mode = state.grammarPickerMode;
+  ['learn', 'drill', 'test'].forEach(m => {
+    const tab = document.getElementById(`grammar-mode-${m}`);
+    if (tab) { tab.classList.toggle('active', m === mode); tab.setAttribute('aria-selected', String(m === mode)); }
+  });
+  const partTabs = document.getElementById('grammar-part-tabs');
+  if (partTabs) partTabs.style.display = mode === 'drill' ? '' : 'none';
+  const hardSetting = document.getElementById('grammar-setting-hard');
+  if (hardSetting) hardSetting.style.display = mode === 'test' ? 'none' : '';
+  const learnBtn0 = document.getElementById('btn-grammar-learn');
+  if (learnBtn0) learnBtn0.style.display = mode === 'learn' ? '' : 'none';
+  const practiceBtn0 = document.getElementById('btn-grammar-practice');
+  if (practiceBtn0) practiceBtn0.style.display = mode === 'drill' ? '' : 'none';
+  const testBtn0 = document.getElementById('btn-grammar-test');
+  if (testBtn0) testBtn0.style.display = mode === 'test' ? '' : 'none';
+
+  if (mode === 'learn') {
+    const selG = state.grammarSelectedGroups;
+    learnGroups().forEach(g => {
+      const selected = !state.grammarGroupSelectionEmpty && selG.has(g.id);
+      let hasHard = false;
+      let allMastered = true;
+      g.patterns.forEach(({ pattern }) => {
+        const st = peekItemStatus(`G:${pattern.id}`);
+        if (st === 'hard') hasHard = true;
+        if (st !== 'mastered') allMastered = false;
+      });
+      const tile = document.createElement('button');
+      tile.type = 'button';
+      tile.className = `home-lesson-tile${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}`;
+      tile.setAttribute('aria-pressed', String(selected));
+      tile.setAttribute('aria-label', `${g.title}, ${g.patterns.length} patterns${selected ? ', selected' : ''}`);
+      tile.title = `${g.title} · ${g.patterns.length} patterns`;
+      tile.innerHTML = `<span class="home-lesson-tile-num">${g.label}</span><span class="home-lesson-tile-count">${g.patterns.length}p</span>`;
+      tile.onclick = () => selectGrammarLearnGroup(g.id);
+      container.appendChild(tile);
+    });
+    const selectAllBtnL = document.getElementById('grammar-select-all');
+    if (selectAllBtnL) selectAllBtnL.onclick = () => selectGrammarLesson('all');
+    const clearBtnL = document.getElementById('grammar-clear-selection');
+    if (clearBtnL) clearBtnL.onclick = () => clearGrammarLessonSelection();
+    return;
+  }
+
+  if (mode === 'test') {
+    const selT = state.grammarSelectedTests;
+    mockTests().forEach(t => {
+      const selected = !state.grammarTestSelectionEmpty && selT.has(t.n);
+      let hasHard = false;
+      let allMastered = true;
+      t.questions.forEach(q => {
+        const st = peekItemStatus(`GM:${q.question_id}`);
+        if (st === 'hard') hasHard = true;
+        if (st !== 'mastered') allMastered = false;
+      });
+      const tile = document.createElement('button');
+      tile.type = 'button';
+      tile.className = `home-lesson-tile${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}`;
+      tile.setAttribute('aria-pressed', String(selected));
+      tile.setAttribute('aria-label', `${t.title}, ${t.questions.length} questions${selected ? ', selected' : ''}`);
+      tile.title = `${t.title} · ${t.questions.length} questions`;
+      tile.innerHTML = `<span class="home-lesson-tile-num">${t.n}</span><span class="home-lesson-tile-count">${t.questions.length}q</span>`;
+      tile.onclick = () => selectGrammarTest(t.n);
+      container.appendChild(tile);
+    });
+    const selectAllBtnT = document.getElementById('grammar-select-all');
+    if (selectAllBtnT) selectAllBtnT.onclick = () => selectGrammarLesson('all');
+    const clearBtnT = document.getElementById('grammar-clear-selection');
+    if (clearBtnT) clearBtnT.onclick = () => clearGrammarLessonSelection();
+    return;
+  }
 
   const group = state.grammarLessonGroup;
   const sel = state.grammarSelectedSections;
@@ -237,24 +402,59 @@ function lessonPool() {
 
 export function updateGrammarActionButtonLabels() {
   ensureSelectionState();
-  const { secs, patterns, drills } = lessonPool();
-  const lessonCount = secs.length;
+  const mode = state.grammarPickerMode;
   const summary = document.getElementById('grammar-picker-summary');
-  if (summary) {
-    summary.textContent = state.grammarSelectionEmpty
-      ? 'Choose a lesson to begin'
-      : `${lessonCount} ${lessonCount === 1 ? 'lesson' : 'lessons'} selected · ${patterns.length} patterns · ${drills.length} drill questions${state.grammarHardOnly ? ' · hard only' : ''}`;
-  }
   const hint = document.getElementById('grammar-start-hint');
-  if (hint) {
-    hint.textContent = state.grammarSelectionEmpty
-      ? 'Tap a lesson tile above. The groups follow the three source exercise sets.'
-      : secs.map(sec => sec.titlePlain).join(' · ') + (!patterns.length && drills.length ? ' · Drill-only lesson: use Start practice.' : '');
+
+  if (mode === 'learn') {
+    const groups = learnGroups();
+    const chosen = state.grammarGroupSelectionEmpty ? [] : groups.filter(g => state.grammarSelectedGroups.has(g.id));
+    let patterns = chosen.flatMap(g => g.patterns);
+    if (state.grammarHardOnly) patterns = patterns.filter(({ pattern }) => peekItemStatus(`G:${pattern.id}`) === 'hard');
+    if (summary) {
+      summary.textContent = state.grammarGroupSelectionEmpty
+        ? 'Choose a learn group to begin'
+        : `${chosen.length} ${chosen.length === 1 ? 'group' : 'groups'} selected · ${patterns.length} patterns${state.grammarHardOnly ? ' · hard only' : ''}`;
+    }
+    if (hint) {
+      hint.textContent = state.grammarGroupSelectionEmpty
+        ? 'Groups bundle the small textbook lessons into about 35-40 patterns each.'
+        : chosen.map(g => `${g.label}: ${g.title}`).join('  |  ');
+    }
+    const learnBtn = document.getElementById('btn-grammar-learn');
+    if (learnBtn) learnBtn.disabled = patterns.length === 0;
+  } else if (mode === 'test') {
+    const tests = mockTests();
+    const chosen = state.grammarTestSelectionEmpty ? [] : tests.filter(t => state.grammarSelectedTests.has(t.n));
+    const count = chosen.reduce((n, t) => n + t.questions.length, 0);
+    if (summary) {
+      summary.textContent = state.grammarTestSelectionEmpty
+        ? 'Choose a mock test to begin'
+        : `${chosen.length} ${chosen.length === 1 ? 'test' : 'tests'} selected · ${count} questions`;
+    }
+    if (hint) {
+      hint.textContent = state.grammarTestSelectionEmpty
+        ? 'Full JLPT N3 grammar mock exams, in exam order.'
+        : chosen.map(t => t.title).join(' · ');
+    }
+    const testBtn = document.getElementById('btn-grammar-test');
+    if (testBtn) testBtn.disabled = count === 0;
+  } else {
+    const { secs, patterns, drills } = lessonPool();
+    const lessonCount = secs.length;
+    if (summary) {
+      summary.textContent = state.grammarSelectionEmpty
+        ? 'Choose a lesson to begin'
+        : `${lessonCount} ${lessonCount === 1 ? 'lesson' : 'lessons'} selected · ${patterns.length} patterns · ${drills.length} drill questions${state.grammarHardOnly ? ' · hard only' : ''}`;
+    }
+    if (hint) {
+      hint.textContent = state.grammarSelectionEmpty
+        ? 'Tap a lesson tile above. The groups follow the three source exercise sets.'
+        : secs.map(sec => sec.titlePlain).join(' · ') + (!patterns.length && drills.length ? ' · Drill-only lesson.' : '');
+    }
+    const practiceBtn = document.getElementById('btn-grammar-practice');
+    if (practiceBtn) practiceBtn.disabled = drills.length === 0;
   }
-  const learnBtn = document.getElementById('btn-grammar-learn');
-  if (learnBtn) learnBtn.disabled = patterns.length === 0;
-  const practiceBtn = document.getElementById('btn-grammar-practice');
-  if (practiceBtn) practiceBtn.disabled = drills.length === 0;
   const sizeSel = document.getElementById('grammar-session-size');
   if (sizeSel) sizeSel.value = state.grammarSessionSize;
   const hardCheck = document.getElementById('grammar-picker-hard');
@@ -287,9 +487,13 @@ function beginGrammarSession(items, kind, nextBatch = false) {
 }
 
 export function startGrammarLearn() {
-  const { patterns } = lessonPool();
+  ensureSelectionState();
+  const groups = learnGroups();
+  const chosen = state.grammarGroupSelectionEmpty ? [] : groups.filter(g => state.grammarSelectedGroups.has(g.id));
+  let patterns = chosen.flatMap(g => g.patterns);
+  if (state.grammarHardOnly) patterns = patterns.filter(({ pattern }) => peekItemStatus(`G:${pattern.id}`) === 'hard');
   if (patterns.length === 0) {
-    alert(state.grammarHardOnly ? 'No hard patterns in the selected lessons!' : 'Select at least one lesson first.');
+    alert(state.grammarHardOnly ? 'No hard patterns in the selected groups!' : 'Select at least one learn group first.');
     return;
   }
   // Book order: lesson by lesson, pattern by pattern.
@@ -327,12 +531,40 @@ export async function startGrammarPractice() {
   beginGrammarSession(items, 'practice');
 }
 
+// Mock exam run: full test in exam order, graded through the standard SRS
+// grader under additive GM:<qid> keys (existing G:/GD: progress untouched).
+export function startGrammarTest() {
+  ensureSelectionState();
+  const tests = mockTests();
+  const chosen = state.grammarTestSelectionEmpty ? [] : tests.filter(t => state.grammarSelectedTests.has(t.n));
+  if (chosen.length === 0) {
+    alert('Select at least one mock test first.');
+    return;
+  }
+  const items = [];
+  chosen.forEach(t => {
+    t.questions.forEach(q => {
+      items.push({
+        type: 'grammar_quiz',
+        book: 'grammar',
+        key: `GM:${q.question_id}`,
+        qid: q.question_id,
+        ...grammarDrillContent(q),
+        sectionLabel: t.title,
+        reviewPhase: 'test'
+      });
+    });
+  });
+  beginGrammarSession(items, 'test');
+}
+
 export function startNextGrammarBatch() {
   if (state.grammarRunQueue?.length) beginGrammarSession([], state.grammarLastRun, true);
 }
 
 export function startGrammarAgain() {
   if (state.grammarLastRun === 'practice') startGrammarPractice();
+  else if (state.grammarLastRun === 'test') startGrammarTest();
   else startGrammarLearn();
 }
 
@@ -444,7 +676,11 @@ export function renderGrammarLessonArea() {
 if (typeof window !== 'undefined') {
   window.grammarHardOnlyEnabled = () => Boolean(state.grammarHardOnly);
   window.setGrammarLessonGroup = setGrammarLessonGroup;
+  window.setGrammarPickerMode = setGrammarPickerMode;
+  window.selectGrammarLearnGroup = selectGrammarLearnGroup;
+  window.selectGrammarTest = selectGrammarTest;
   window.selectGrammarLesson = selectGrammarLesson;
+  window.startGrammarTest = startGrammarTest;
   window.clearGrammarLessonSelection = clearGrammarLessonSelection;
   window.setGrammarSessionSize = setGrammarSessionSize;
   window.toggleGrammarHardOnly = toggleGrammarHardOnly;
