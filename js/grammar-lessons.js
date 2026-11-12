@@ -501,7 +501,7 @@ function renderGrammarRoute() {
     <p class="grammar-route-note">${secs.length ? (!counts[step] ? 'This step has no matching book content in these lessons. Choose another step; no questions are added or borrowed.' : `${secs.length} selected lesson${secs.length === 1 ? '' : 's'} · A/B strips show questions practised, not mastery.`) : 'Select a lesson above to begin.'}</p>
     <p class="grammar-route-score">Target 80% · ${secs.length ? secs.map(sec => {
       const r = routeResults()[sec.secId];
-      return `${sec.label}: ${r ? `last test ${Math.round(r.correct/r.total*100)}% (${r.correct}/${r.total})${r.correct/r.total >= .8 ? ' · target met' : ' · below target'}` : 'not tested'}`;
+      return `${sec.label}: ${r ? `last test ${Math.round(r.correct/r.total*1000)/10}% (${r.correct}/${r.total})${r.correct/r.total >= .8 ? ' · target met' : ' · below target'}` : 'not tested'}`;
     }).join(' | ') : 'No test yet'}</p><details class="grammar-route-note"><summary>Route notes</summary>Test scores stay on this browser. Full mock exams and grouped Learn are in the other tabs. Other book question formats remain in Drill.</details>`;
   const summary = document.getElementById('grammar-picker-summary');
   if (summary) summary.textContent = secs.length ? `${secs.length} selected · ${patterns.length} patterns · A ${counts.a} · B ${counts.b}` : 'Choose lessons for your route';
@@ -543,7 +543,7 @@ export function grammarRouteSummary(getGrade) {
     if (run.step === 'test') state.sessionItems.filter(x => !x._requeued).forEach(item => {
       const s = run.scores[item.routeSection] ||= {correct:0,total:0};
       s.total++;
-      if ((getGrade(item) || 0) >= 2) s.correct++;
+      if ((getGrade(item) || 0) >= 2 && item.userChoice === item.correctIndex) s.correct++;
     });
   }
   if (state.grammarRunQueue?.length) return '<p class="grammar-route-note">Finish the next batch to complete this route step.</p>';
@@ -555,7 +555,7 @@ export function grammarRouteSummary(getGrade) {
       const results = routeResults();
       Object.assign(results,run.scores);
       try { localStorage.setItem(GRAMMAR_ROUTE_STORE,JSON.stringify(results)); } catch { /* Browser storage may be unavailable. */ }
-      score = `<p>Lesson test: ${Math.round(correct/total*100)}% (${correct}/${total} first attempts) · target 80% · ${correct/total >= .8 ? 'Target met' : 'Keep practising'}</p>`;
+      score = `<p>Lesson test: ${Math.round(correct/total*1000)/10}% (${correct}/${total} first attempts) · target 80% · ${correct/total >= .8 ? 'Target met' : 'Keep practising'}</p>`;
     }
   }
   const next = routeSteps[routeSteps.indexOf(run.step)+1];
