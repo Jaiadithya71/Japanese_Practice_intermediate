@@ -169,12 +169,14 @@ export function startLearnNew(unitId, count = 10) {
 export function learnGotIt() {
   const item = state.sessionItems[state.sessionIdx];
   if (!item) return;
-  if (item.learnNew && !item.learned) {
+  if (item.learnNew && !item.learned && item.type !== 'grammar') {
     item.learned = true;
     reviewPhase = 'test';
     state.cardFlipped = false;
   } else {
     // A learning session advances without grading or marking the word skipped.
+    // Grammar learn cards always take this path: the group is browsed first
+    // and tested from the end-of-session Test button (startGrammarPatternTest).
     state.sessionIdx++;
     state.cardFlipped = false;
   }
@@ -263,7 +265,9 @@ export function renderCard() {
   if (topAction) {
     const item = state.sessionItems[state.sessionIdx];
     topAction.hidden = !learning || !item;
-    topAction.textContent = item?.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word';
+    // Grammar learn runs browse card by card and test at the end of the
+    // group, so the action advances instead of quizzing in place.
+    topAction.textContent = item?.type === 'grammar' ? 'Next' : (item?.learnNew && !item.learned ? 'Got it, quiz me' : 'Next word');
   }
   actionRow?.classList.toggle('has-learn-action', learning);
   document.getElementById('study-skip-row')?.classList.toggle('has-learn-action', learning);
@@ -979,6 +983,13 @@ function renderStudySummary() {
   const hasNextKanjiBatch = state.kanjiRunBatchRun === true && state.drillOrigin === 'kanji' && !state.isDueReviewMode && Array.isArray(state.kanjiRunQueue) && state.kanjiRunQueue.length > 0;
   const hasNextGrammarBatch = state.drillOrigin === 'grammar' && !state.isDueReviewMode && state.grammarRunQueue?.length > 0;
   const dueGrammarRemaining = state.drillOrigin === 'grammar' && state.isDueReviewMode ? getDueItemsCount('grammar',state.selectedDueGrammarSections) : 0;
+  // After a grammar Learn group is fully browsed, offer the graded test over
+  // the same patterns (front-first cards + the four grade buttons).
+  const grammarLearnTestCount = state.drillOrigin === 'grammar' && state.grammarLastRun === 'learn'
+    ? state.sessionItems.filter(item => item.type === 'grammar').length : 0;
+  const grammarTestButton = grammarLearnTestCount
+    ? `<button class="btn btn-primary" onclick="startGrammarPatternTest()"><i class="fa-solid fa-clipboard-check"></i> Test these ${grammarLearnTestCount} patterns</button>`
+    : '';
   const nextBatchButton = dueGrammarRemaining ? `<button class="btn btn-primary" onclick="startDueReview('grammar')">Next due batch (${dueGrammarRemaining} left)</button>` : hasNextGrammarBatch ? `<button class="btn btn-primary" onclick="startNextGrammarBatch()">Next batch (${state.grammarRunQueue.length} left)</button>` : hasNextHomeBatch
     ? `<button class="btn btn-primary" onclick="startNextHomeBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.homeRunQueue.length} left)</button>`
     : (hasNextKanjiBatch ? `<button class="btn btn-primary" onclick="startNextKanjiBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.kanjiRunQueue.length} left)</button>` : '');
@@ -1034,6 +1045,7 @@ function renderStudySummary() {
 ${statsRow}
 
       <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap:wrap; justify-content:center;">
+        ${grammarTestButton}
         ${nextBatchButton}
         <button class="btn btn-primary" onclick="${again}">
           <i class="fa-solid fa-rotate-right"></i> ${againLabel}
@@ -1100,4 +1112,4 @@ export function resetStudyViewHTML() {
       </div>
     </div>
   `;
-          }
+}
