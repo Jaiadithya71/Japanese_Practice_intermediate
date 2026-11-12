@@ -41,6 +41,20 @@
   #view-grammar .home-activity-head p { font-size:.74rem; color:#a5acbf; margin-top:3px; }
   #view-grammar .home-activity-summary { padding:7px 10px; border-radius:12px; gap:4px; background:rgba(48,205,160,.1); border:1px solid rgba(48,205,160,.14); white-space:nowrap; font-size:.67rem; color:#63dfbb; flex:none; }
   #view-grammar .home-activity-summary strong { font-size:1.03rem; }
+  /* Grammar activity heatmap: same full-width mobile grid as Home/Kanji
+     (otherwise home.css shrinks it to an 18px left-aligned strip with a
+     blank gap beside it). Data, streak, level scale and labels unchanged. */
+  #view-grammar #grammar-activity-heatmap { margin-top:16px; overflow:visible; }
+  #grammar-activity-heatmap .heatmap-grid-inner { min-width:0; width:100%; gap:8px; }
+  #view-grammar #grammar-activity-heatmap .heatmap-weekdays,
+  #view-grammar #grammar-activity-heatmap .heatmap-cells-grid { display:grid!important; width:100%; grid-template-columns:repeat(7,minmax(0,1fr))!important; justify-content:stretch!important; gap:6px!important; }
+  #view-grammar #grammar-activity-heatmap .heatmap-col-head { font-size:.67rem; color:#929eb4; }
+  #view-grammar #grammar-activity-heatmap .heatmap-cells-grid .heatmap-cell { width:100%!important; height:27px!important; min-height:0!important; aspect-ratio:auto!important; border-radius:6px; }
+  #view-grammar #grammar-activity-heatmap .heatmap-cells-grid .level-0 { background:#242c39; box-shadow:inset 0 0 0 1px rgba(183,193,218,.07); }
+  #view-grammar .home-heatmap-legend { margin-top:11px; font-size:.65rem; color:#a0abc0; gap:5px; }
+  #view-grammar #grammar-activity-heatmap .home-heatmap-legend .heatmap-cell { width:12px!important; height:12px!important; min-height:0!important; border-radius:3px; }
+  #view-grammar .home-activity-today { margin-top:14px; padding-top:12px; border-top:1px solid rgba(183,193,218,.12); color:#bbc4d5; font-size:.78rem; }
+  #view-grammar #grammar-reviews-today { font-size:1.04rem; font-weight:750; margin-right:3px; }
   #view-home #home-activity-heatmap { margin-top:16px; overflow:visible; }
   #home-activity-heatmap .heatmap-grid-inner { min-width:0; width:100%; gap:8px; }
   #view-home #home-activity-heatmap .heatmap-weekdays,
@@ -59,6 +73,12 @@
   #view-home .home-secondary-details>summary i { color:#8997b0; font-size:.75rem; }
   #view-home button:focus-visible,#view-home select:focus-visible { outline:2px solid #b6a5ff; outline-offset:3px; }
 }
+/* Grammar heatmap cells are <button>s: strip default button chrome (same
+   reset Home and Kanji have in home.css/kanji.css). */
+#grammar-activity-heatmap button.heatmap-cell { display:block; padding:0; border:0; cursor:pointer; font:inherit; }
+#grammar-activity-heatmap button.heatmap-cell:hover { filter:brightness(1.3); }
+#grammar-activity-heatmap button.heatmap-cell[aria-pressed="true"] { outline:2px solid #c3b5ff; outline-offset:2px; }
+#grammar-activity-heatmap button.heatmap-cell:focus-visible { outline:3px solid #fff; outline-offset:2px; }
 @media (max-width: 360px) {
   #view-home .home-lessons-card,#view-home .home-activity-card { padding:13px; }
   #view-home .home-lesson-grid { gap:5px; }
