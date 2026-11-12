@@ -345,3 +345,21 @@
 .hvs-seg.hvs-mastered{background:#34d399}.hvs-seg.hvs-learning{background:#fbbf24}.hvs-seg.hvs-hard{background:#f87171}
 .hvs-counts{display:flex;flex-wrap:wrap;gap:.1rem .6rem;margin-top:.3rem;font-size:.68rem;color:var(--text-muted)}
 .hvs-counts b{font-size:.82rem}.hvs-counts .hvs-mastered b{color:#34d399}.hvs-counts .hvs-learning b{color:#fbbf24}.hvs-counts .hvs-hard b{color:#f87171}.hvs-counts .hvs-unseen b{color:#cbd5e1}
+
+/* Grammar guided route, reusing lesson tiles and their A/B strip. */
+#grammar-mode-tabs { flex-wrap:wrap; }
+#view-grammar .home-lesson-tile:has(.home-lesson-ab) { padding:5px 3px; }
+#view-grammar .home-lesson-ab-seg { font-size:.55rem; cursor:inherit; }
+.grammar-route-steps { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:5px; margin:12px 0 8px; }
+.grammar-route-step { min-height:76px; padding:7px 2px; border:1px solid var(--border); border-radius:10px; background:var(--bg2); color:var(--text-muted); font-size:.75rem; font-weight:700; cursor:pointer; }
+.grammar-route-step small { display:block; margin-bottom:4px; color:var(--accent); }
+.grammar-route-step span { display:block; margin-top:4px; font-size:.58rem; font-weight:400; }
+.grammar-route-step.active { border-color:var(--accent); background:var(--accent-light); color:var(--text); }
+.grammar-route-note { font-size:.72rem; color:var(--text-muted); line-height:1.5; margin:7px 0; }
+.grammar-route-start { width:100%; }
+.grammar-route-score { font-size:.78rem; color:var(--accent); line-height:1.6; margin:8px 0; }
+
+#view-grammar .home-lesson-ab-seg { white-space:nowrap; gap:1px; font-size:.53rem; }
+#view-grammar .home-lesson-ab-dot { display:none; }
+#view-grammar .home-lesson-ab-seg.all-done { border-color:#10b981; color:#10b981; }
+.grammar-route-start:disabled { opacity:.4; cursor:not-allowed; }

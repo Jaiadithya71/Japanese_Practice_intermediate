@@ -534,6 +534,7 @@
         <div class="home-picker-heading">
           <h3 id="grammar-picker-title">Select lessons</h3>
           <div class="home-lesson-tabs" id="grammar-mode-tabs" role="tablist" aria-label="Grammar study mode">
+            <button id="grammar-mode-route" class="home-lesson-tab" role="tab" aria-selected="true" onclick="setGrammarPickerMode('route')">Guided route</button>
             <button id="grammar-mode-learn" class="home-lesson-tab active" role="tab" aria-selected="true" onclick="setGrammarPickerMode('learn')">Learn</button>
             <button id="grammar-mode-drill" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarPickerMode('drill')">Drill</button>
             <button id="grammar-mode-test" class="home-lesson-tab" role="tab" aria-selected="false" onclick="setGrammarPickerMode('test')">Test</button>
@@ -550,6 +551,7 @@
         </div>
         <div id="grammar-lesson-chips-row" class="home-lesson-grid" aria-label="Grammar lessons"></div>
         <p id="grammar-picker-summary" class="home-picker-summary" aria-live="polite"></p>
+        <div id="grammar-route"></div>
         <div class="home-run-settings">
           <label class="home-run-setting" id="grammar-setting-size"><span>Session size</span><select id="grammar-session-size" aria-label="Grammar session size" onchange="setGrammarSessionSize(this.value)">
             <option value="10">10 cards</option><option value="20">20 cards</option><option value="all" selected>All cards</option>

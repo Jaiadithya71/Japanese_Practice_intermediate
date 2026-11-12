@@ -97,7 +97,7 @@ function ensureSelectionState() {
   if (typeof state.grammarSelectionEmpty !== 'boolean') state.grammarSelectionEmpty = true;
   if (!state.grammarLessonGroup) state.grammarLessonGroup = '1';
   if (!state.grammarSessionSize) state.grammarSessionSize = 'all';
-  if (!state.grammarPickerMode) state.grammarPickerMode = 'learn';
+  if (!state.grammarPickerMode) state.grammarPickerMode = 'route';
   if (!(state.grammarSelectedGroups instanceof Set)) state.grammarSelectedGroups = new Set();
   if (typeof state.grammarGroupSelectionEmpty !== 'boolean') state.grammarGroupSelectionEmpty = true;
   if (!(state.grammarSelectedTests instanceof Set)) state.grammarSelectedTests = new Set();
@@ -144,7 +144,7 @@ function mockTests() {
 }
 
 export function setGrammarPickerMode(mode) {
-  if (!['learn', 'drill', 'test'].includes(mode)) return;
+  if (!['route', 'learn', 'drill', 'test'].includes(mode)) return;
   ensureSelectionState();
   state.grammarPickerMode = mode;
   renderGrammarLessonChips();
@@ -266,14 +266,16 @@ export function renderGrammarLessonChips() {
   if (banner && picker && picker.nextElementSibling !== banner) picker.after(banner);
 
   const mode = state.grammarPickerMode;
-  ['learn', 'drill', 'test'].forEach(m => {
+  ['route', 'learn', 'drill', 'test'].forEach(m => {
     const tab = document.getElementById(`grammar-mode-${m}`);
     if (tab) { tab.classList.toggle('active', m === mode); tab.setAttribute('aria-selected', String(m === mode)); }
   });
   const partTabs = document.getElementById('grammar-part-tabs');
-  if (partTabs) partTabs.style.display = mode === 'drill' ? '' : 'none';
+  if (partTabs) partTabs.style.display = (mode === 'drill' || mode === 'route') ? '' : 'none';
   const hardSetting = document.getElementById('grammar-setting-hard');
-  if (hardSetting) hardSetting.style.display = mode === 'test' ? 'none' : '';
+  if (hardSetting) hardSetting.style.display = (mode === 'test' || mode === 'route') ? 'none' : '';
+  const routeBox = document.getElementById('grammar-route');
+  if (routeBox) routeBox.hidden = mode !== 'route';
   const learnBtn0 = document.getElementById('btn-grammar-learn');
   if (learnBtn0) learnBtn0.style.display = mode === 'learn' ? '' : 'none';
   const practiceBtn0 = document.getElementById('btn-grammar-practice');
@@ -367,7 +369,7 @@ export function renderGrammarLessonChips() {
     tile.setAttribute('aria-pressed', String(selected));
     tile.setAttribute('aria-label', `${sec.titlePlain}, ${sec.patterns.length} patterns${selected ? ', selected' : ''}`);
     tile.title = `${sec.titlePlain} · ${sec.patterns.length} patterns`;
-    tile.innerHTML = `<span class="home-lesson-tile-num">${sec.label}</span><span class="home-lesson-tile-count">${sec.patterns.length ? sec.patterns.length+'p' : drillsForSection(sec).drills.length+'q'}</span>`;
+    tile.innerHTML = `<span class="home-lesson-tile-num">${sec.label}</span><span class="home-lesson-tile-count">${sec.patterns.length ? sec.patterns.length+'p' : drillsForSection(sec).drills.length+'q'}</span>${mode === 'route' ? grammarRouteTile(sec) : ''}`;
     tile.onclick = () => selectGrammarLesson(sec.secId, 'toggle');
     container.appendChild(tile);
   });
@@ -390,7 +392,7 @@ function lessonPool() {
       drills.push({ sec, drill, key });
     });
   });
-  if (state.grammarHardOnly) {
+  if (state.grammarHardOnly && state.grammarPickerMode !== 'route') {
     const isHard = pid => peekItemStatus(`G:${pid}`) === 'hard';
     return {
       secs,
@@ -407,7 +409,9 @@ export function updateGrammarActionButtonLabels() {
   const summary = document.getElementById('grammar-picker-summary');
   const hint = document.getElementById('grammar-start-hint');
 
-  if (mode === 'learn') {
+  if (mode === 'route') {
+    renderGrammarRoute();
+  } else if (mode === 'learn') {
     const groups = learnGroups();
     const chosen = state.grammarGroupSelectionEmpty ? [] : groups.filter(g => state.grammarSelectedGroups.has(g.id));
     let patterns = chosen.flatMap(g => g.patterns);
@@ -462,11 +466,115 @@ export function updateGrammarActionButtonLabels() {
   if (hardCheck) hardCheck.checked = Boolean(state.grammarHardOnly);
 }
 
+// Guided route: presentation + local score history only. SRS grading is unchanged.
+const GRAMMAR_ROUTE_STORE = 'n3-grammar-route-results-v1';
+const routeSteps = ['learn', 'a', 'b', 'test'];
+const routeNames = {learn:'Learn', a:'Drill A', b:'Drill B', test:'Test'};
+function routeResults() {
+  try { const value = JSON.parse(localStorage.getItem(GRAMMAR_ROUTE_STORE) || '{}'); return value && typeof value === 'object' && !Array.isArray(value) ? value : {}; } catch { return {}; }
+}
+function grammarRouteType(q) {
+  if (!grammarDrillContent(q).correctIndex) return null;
+  if (q.question_type === 'star_arrangement') return 'b';
+  if (['multiple_choice', 'binary_choice', 'three_choice'].includes(q.question_type)) return 'a';
+  return null;
+}
+function grammarRouteTile(sec) {
+  const d = drillsForSection(sec);
+  return `<span class="home-lesson-ab">${['a','b'].map(type => {
+    const pool = d.drills.filter(q => grammarRouteType(q) === type);
+    const done = pool.filter(q => ['mastered','learning','hard'].includes(peekItemStatus(`GD:${d.tagPrefix}:${d.num}:${q.question_id}`))).length;
+    const hard = pool.some(q => peekItemStatus(`GD:${d.tagPrefix}:${d.num}:${q.question_id}`) === 'hard');
+    return `<span class="home-lesson-ab-seg${type === 'b' ? ' home-lesson-ab-seg-b' : ''}${hard ? ' has-hard' : pool.length && done === pool.length ? ' all-done' : ''}" title="${type.toUpperCase()}: ${done}/${pool.length} practised">${type.toUpperCase()} ${pool.length ? `${done}/${pool.length}` : '-'}<span class="home-lesson-ab-dot" aria-hidden="true"></span></span>`;
+  }).join('')}</span>`;
+}
+function renderGrammarRoute() {
+  const box = document.getElementById('grammar-route');
+  if (!box) return;
+  const {secs, patterns, drills} = lessonPool();
+  const counts = {learn:patterns.length, a:drills.filter(x => grammarRouteType(x.drill) === 'a').length, b:drills.filter(x => grammarRouteType(x.drill) === 'b').length};
+  counts.test = counts.a + counts.b;
+  const step = state.grammarRouteStep || 'learn';
+  box.innerHTML = `<div class="grammar-route-steps" aria-label="Grammar route">${routeSteps.map((k,i) => `<button type="button" class="grammar-route-step${step === k ? ' active' : ''}" aria-pressed="${step === k}" onclick="setGrammarRouteStep('${k}')"><small>${i+1}</small>${routeNames[k]}<span>${counts[k] ? `${counts[k]} ${k === 'learn' ? 'patterns' : 'questions'}` : (secs.length ? 'Not in lesson' : 'Choose lesson')}</span></button>`).join('')}</div>
+    <p class="grammar-route-note">${{learn:'Read the patterns and examples, then move to Drill A.',a:'Fill-in-the-blank choices. Grade each answer, then move to Drill B.',b:'Sentence ordering: choose the option that belongs at the star.',test:'Lesson test: the same A + B question bank, shuffled. Target: 80% on first attempts.'}[step]}</p>
+    <button type="button" class="btn btn-primary grammar-route-start" ${counts[step] ? '' : 'disabled'} onclick="startGrammarRouteStep()">Start ${routeNames[step]}${step === 'test' ? ' · target 80%' : ''}</button>
+    <p class="grammar-route-note">${secs.length ? (!counts[step] ? 'This step has no matching book content in these lessons. Choose another step; no questions are added or borrowed.' : `${secs.length} selected lesson${secs.length === 1 ? '' : 's'} · A/B strips show questions practised, not mastery.`) : 'Select a lesson above to begin.'}</p>
+    <p class="grammar-route-score">Target 80% · ${secs.length ? secs.map(sec => {
+      const r = routeResults()[sec.secId];
+      return `${sec.label}: ${r ? `last test ${Math.round(r.correct/r.total*100)}% (${r.correct}/${r.total})${r.correct/r.total >= .8 ? ' · target met' : ' · below target'}` : 'not tested'}`;
+    }).join(' | ') : 'No test yet'}</p><details class="grammar-route-note"><summary>Route notes</summary>Test scores stay on this browser. Full mock exams and grouped Learn are in the other tabs. Other book question formats remain in Drill.</details>`;
+  const summary = document.getElementById('grammar-picker-summary');
+  if (summary) summary.textContent = secs.length ? `${secs.length} selected · ${patterns.length} patterns · A ${counts.a} · B ${counts.b}` : 'Choose lessons for your route';
+  const hint = document.getElementById('grammar-start-hint');
+  if (hint) hint.textContent = secs.map(sec => sec.titlePlain).join(' · ');
+}
+export function setGrammarRouteStep(step) {
+  if (!routeSteps.includes(step)) return;
+  state.grammarRouteStep = step;
+  renderGrammarRoute();
+}
+export function startGrammarRouteStep(step = state.grammarRouteStep || 'learn') {
+  if (!routeSteps.includes(step)) return;
+  state.grammarRouteStep = step;
+  const secs = selectedSections();
+  if (!secs.length) return;
+  state.grammarPickerMode = 'route';
+  state.grammarRouteStarting = true;
+  state.grammarRouteRun = {step, sections:secs.map(s => s.secId), scores:{}, batches: new Set()};
+  try {
+    if (step === 'learn') startGrammarLearn();
+    else if (step === 'test') startGrammarRouteTest();
+    else startGrammarPractice();
+  } finally { state.grammarRouteStarting = false; }
+}
+function startGrammarRouteTest() {
+  const drills = lessonPool().drills.filter(x => grammarRouteType(x.drill));
+  if (!drills.length) return;
+  const items = drills.sort(() => Math.random() - .5).map(({sec,drill,key}) => ({type:'grammar_quiz', book:'grammar', key, qid:drill.question_id, ...grammarDrillContent(drill), sectionLabel:sec.titlePlain, routeSection:sec.secId, reviewPhase:'test'}));
+  beginGrammarSession(items, 'routeTest');
+}
+// Called only by the runner's completed-session screen. First attempts exclude
+// Again requeues; skipped/ungraded questions count as missed, never inflate %.
+export function grammarRouteSummary(getGrade) {
+  const run = state.grammarRouteRun;
+  if (!run || state.drillOrigin !== 'grammar' || state.isDueReviewMode || !['learn','a','b','routeTest'].includes(state.grammarLastRun)) return '';
+  if (!run.batches.has(state.sessionItems)) {
+    run.batches.add(state.sessionItems);
+    if (run.step === 'test') state.sessionItems.filter(x => !x._requeued).forEach(item => {
+      const s = run.scores[item.routeSection] ||= {correct:0,total:0};
+      s.total++;
+      if ((getGrade(item) || 0) >= 2) s.correct++;
+    });
+  }
+  if (state.grammarRunQueue?.length) return '<p class="grammar-route-note">Finish the next batch to complete this route step.</p>';
+  let score = '';
+  if (run.step === 'test') {
+    const values = Object.values(run.scores);
+    const total = values.reduce((n,x) => n+x.total,0), correct = values.reduce((n,x) => n+x.correct,0);
+    if (total) {
+      const results = routeResults();
+      Object.assign(results,run.scores);
+      try { localStorage.setItem(GRAMMAR_ROUTE_STORE,JSON.stringify(results)); } catch { /* Browser storage may be unavailable. */ }
+      score = `<p>Lesson test: ${Math.round(correct/total*100)}% (${correct}/${total} first attempts) · target 80% · ${correct/total >= .8 ? 'Target met' : 'Keep practising'}</p>`;
+    }
+  }
+  const next = routeSteps[routeSteps.indexOf(run.step)+1];
+  return `${score}${next ? `<button class="btn btn-primary" onclick="exitStudy(); setGrammarRouteStep('${next}')">Next: ${routeNames[next]}</button>` : ''}<button class="btn btn-ghost" onclick="exitStudy()">Back to lesson route</button>`;
+}
+if (typeof window !== 'undefined') {
+  window.setGrammarRouteStep = setGrammarRouteStep;
+  window.startGrammarRouteStep = startGrammarRouteStep;
+  window.grammarRouteSummary = grammarRouteSummary;
+}
+
 // -------------------------------------------------------
 // SESSIONS (study runner)
 // -------------------------------------------------------
 function beginGrammarSession(items, kind, nextBatch = false) {
-  if (!nextBatch) state.grammarRunQueue = items.slice();
+  if (!nextBatch) {
+    state.grammarRunQueue = items.slice();
+    if (!state.grammarRouteStarting) state.grammarRouteRun = null;
+  }
   const size = state.grammarSessionSize === 'all' ? state.grammarRunQueue.length : Number(state.grammarSessionSize) || 10;
   items = state.grammarRunQueue.splice(0, size);
   state.studyMode = 'flashcard';
@@ -508,8 +616,8 @@ export function startGrammarLearn() {
   ensureSelectionState();
   const groups = learnGroups();
   const chosen = state.grammarGroupSelectionEmpty ? [] : groups.filter(g => state.grammarSelectedGroups.has(g.id));
-  let patterns = chosen.flatMap(g => g.patterns);
-  if (state.grammarHardOnly) patterns = patterns.filter(({ pattern }) => peekItemStatus(`G:${pattern.id}`) === 'hard');
+  let patterns = state.grammarPickerMode === 'route' ? selectedSections().flatMap(sec => sec.patterns.map(pattern => ({sec, pattern}))) : chosen.flatMap(g => g.patterns);
+  if (state.grammarHardOnly && state.grammarPickerMode !== 'route') patterns = patterns.filter(({ pattern }) => peekItemStatus(`G:${pattern.id}`) === 'hard');
   if (patterns.length === 0) {
     alert(state.grammarHardOnly ? 'No hard patterns in the selected groups!' : 'Select at least one learn group first.');
     return;
@@ -536,7 +644,8 @@ export function startGrammarLearn() {
 }
 
 export async function startGrammarPractice() {
-  const { drills } = lessonPool();
+  const { drills: rawDrills } = lessonPool();
+  const drills = state.grammarPickerMode === 'route' ? rawDrills.filter(x => grammarRouteType(x.drill) === state.grammarRouteStep) : rawDrills;
   if (drills.length === 0) {
     alert(state.grammarHardOnly ? 'No hard drill questions in the selected lessons!' : 'Select at least one lesson first.');
     return;
@@ -555,12 +664,13 @@ export async function startGrammarPractice() {
       reviewPhase: 'test'
     };
   });
-  beginGrammarSession(items, 'practice');
+  beginGrammarSession(items, state.grammarPickerMode === 'route' ? state.grammarRouteStep : 'practice');
 }
 
 // Mock exam run: full test in exam order, graded through the standard SRS
 // grader under additive GM:<qid> keys (existing G:/GD: progress untouched).
 export function startGrammarTest() {
+  if (state.grammarPickerMode === 'route') { startGrammarRouteTest(); return; }
   ensureSelectionState();
   const tests = mockTests();
   const chosen = state.grammarTestSelectionEmpty ? [] : tests.filter(t => state.grammarSelectedTests.has(t.n));
@@ -600,6 +710,7 @@ export function startNextGrammarBatch() {
 }
 
 export function startGrammarAgain() {
+  if (state.grammarRouteRun) { startGrammarRouteStep(state.grammarRouteRun.step); return; }
   if (state.grammarLastRun === 'practice') startGrammarPractice();
   else if (state.grammarLastRun === 'test') startGrammarTest();
   else if (state.grammarLastRun === 'patternTest') startGrammarPatternTest();

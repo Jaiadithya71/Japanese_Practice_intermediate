@@ -995,7 +995,7 @@ function renderStudySummary() {
   const dueGrammarRemaining = state.drillOrigin === 'grammar' && state.isDueReviewMode ? getDueItemsCount('grammar',state.selectedDueGrammarSections) : 0;
   // After a grammar Learn group is fully browsed, offer the graded test over
   // the same patterns (front-first cards + the four grade buttons).
-  const grammarLearnTestCount = state.drillOrigin === 'grammar' && state.grammarLastRun === 'learn'
+  const grammarLearnTestCount = !state.grammarRouteRun && state.drillOrigin === 'grammar' && state.grammarLastRun === 'learn'
     ? state.sessionItems.filter(item => item.type === 'grammar').length : 0;
   const grammarTestButton = grammarLearnTestCount
     ? `<button class="btn btn-primary" onclick="startGrammarPatternTest()"><i class="fa-solid fa-clipboard-check"></i> Test these ${grammarLearnTestCount} patterns</button>`
@@ -1014,9 +1014,10 @@ function renderStudySummary() {
   const browsedOnly = answered === 0;
   const summaryIcon = browsedOnly ? 'fa-circle-check'
     : pct >= 90 ? 'fa-trophy' : pct >= 70 ? 'fa-award' : pct >= 50 ? 'fa-circle-check' : 'fa-book-open';
-  const summaryTitle = browsedOnly ? 'All cards viewed!'
+  const routeTesting = state.drillOrigin === 'grammar' && !state.isDueReviewMode && state.grammarRouteRun?.step === 'test';
+  const summaryTitle = routeTesting ? (hasNextGrammarBatch ? 'Test batch complete' : 'Lesson test complete') : browsedOnly ? 'All cards viewed!'
     : pct >= 90 ? 'Excellent!' : pct >= 70 ? 'Well done!' : pct >= 50 ? 'Keep going!' : 'Keep practising!';
-  const scoreRing = browsedOnly ? '' : `
+  const scoreRing = browsedOnly || routeTesting ? '' : `
       <div class="summary-score-ring">
         <span class="summary-ring-pct">${pct}%</span>
         <span class="summary-ring-label">accuracy</span>
@@ -1055,6 +1056,7 @@ function renderStudySummary() {
 ${statsRow}
 
       <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap:wrap; justify-content:center;">
+        ${window.grammarRouteSummary?.(item => studyHistory.get(state.sessionItems, item)?.grade) || ''}
         ${grammarTestButton}
         ${nextBatchButton}
         <button class="btn btn-primary" onclick="${again}">
