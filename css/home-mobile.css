@@ -35,6 +35,12 @@
   #view-home .home-activity-head p { font-size:.74rem; color:var(--home-muted); margin-top:3px; }
   #view-home .home-activity-summary { padding:7px 10px; border-radius:12px; gap:4px; background:rgba(48,205,160,.1); border:1px solid rgba(48,205,160,.14); white-space:nowrap; font-size:.67rem; color:#63dfbb; }
   #view-home .home-activity-summary strong { font-size:1.03rem; }
+  /* Grammar activity card: same streak badge as Home/Kanji (no wrap). */
+  #view-grammar .home-activity-head { align-items:center; gap:10px; }
+  #view-grammar .home-activity-head h3 { font-size:1.07rem; letter-spacing:-.025em; font-weight:750; }
+  #view-grammar .home-activity-head p { font-size:.74rem; color:#a5acbf; margin-top:3px; }
+  #view-grammar .home-activity-summary { padding:7px 10px; border-radius:12px; gap:4px; background:rgba(48,205,160,.1); border:1px solid rgba(48,205,160,.14); white-space:nowrap; font-size:.67rem; color:#63dfbb; flex:none; }
+  #view-grammar .home-activity-summary strong { font-size:1.03rem; }
   #view-home #home-activity-heatmap { margin-top:16px; overflow:visible; }
   #home-activity-heatmap .heatmap-grid-inner { min-width:0; width:100%; gap:8px; }
   #view-home #home-activity-heatmap .heatmap-weekdays,
