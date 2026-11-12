@@ -530,7 +530,7 @@ export function startGrammarRouteStep(step = state.grammarRouteStep || 'learn') 
 function startGrammarRouteTest() {
   const drills = lessonPool().drills.filter(x => grammarRouteType(x.drill));
   if (!drills.length) return;
-  const items = drills.sort(() => Math.random() - .5).map(({sec,drill,key}) => ({type:'grammar_quiz', book:'grammar', key, qid:drill.question_id, ...grammarDrillContent(drill), sectionLabel:sec.titlePlain, routeSection:sec.secId, reviewPhase:'test'}));
+  const items = drills.sort(() => Math.random() - .5).map(({sec,drill,key}) => ({type:'grammar_quiz', book:'grammar', key, qid:drill.question_id, ...grammarDrillContent(drill), sectionLabel:`Test · target 80% · ${sec.titlePlain}`, routeSection:sec.secId, reviewPhase:'test'}));
   beginGrammarSession(items, 'routeTest');
 }
 // Called only by the runner's completed-session screen. First attempts exclude
@@ -632,7 +632,7 @@ export function startGrammarLearn() {
       type: 'grammar',
       book: 'grammar',
       key: `G:${pattern.id}`,
-      sectionLabel: sec.titlePlain,
+      sectionLabel: state.grammarPickerMode === 'route' ? `Learn · ${sec.titlePlain}` : sec.titlePlain,
       example_ja: ex.japanese || '',
       example_en: ex.english || '',
       pattern_ruby: GRAMMAR_FURIGANA[pattern.id]?.title || pattern.pattern_ruby || pattern.pattern,
@@ -660,7 +660,7 @@ export async function startGrammarPractice() {
       key,
       qid: drill.question_id,
       ...grammarDrillContent(drill),
-      sectionLabel: sec.titlePlain,
+      sectionLabel: state.grammarPickerMode === 'route' ? `${routeNames[state.grammarRouteStep]} · ${sec.titlePlain}` : sec.titlePlain,
       reviewPhase: 'test'
     };
   });
