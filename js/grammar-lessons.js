@@ -10,6 +10,7 @@
    ======================================================= */
 
 import { grammarDrillContent } from './grammar-card-data.js';
+import { GRAMMAR_FURIGANA } from './grammar-furigana.js';
 import { state } from './state.js';
 import { peekItemStatus } from './srs.js';
 import { beginGistReviewSession } from './gist-sync.js';
@@ -486,6 +487,23 @@ function beginGrammarSession(items, kind, nextBatch = false) {
   renderCard();
 }
 
+// First textbook example per pattern, joined from the part source files by
+// section + pattern name (tags stripped, whitespace ignored). Cached on state.
+function grammarPatternExamples() {
+  if (state.grammarPatternExampleMap) return state.grammarPatternExampleMap;
+  const norm = s => String(s || '').replace(/<[^>]+>/g, '').replace(/[\s　]/g, '');
+  const map = {};
+  for (const [dbKey, prefix] of [['part1_1_6', 'p1-sec-'], ['part1_7_12', 'p1-sec-'], ['part2', 'sec-'], ['part3', 'p3-sec-']]) {
+    for (const raw of (state.grammarDB?.[dbKey]?.sections || [])) {
+      const secId = prefix + raw.section_number;
+      (raw.patterns || []).forEach(p => { const ex = (p.example_sentences || [])[0]; if (ex?.japanese) map[`${secId}|${norm(p.pattern_name)}`] = ex; });
+      (raw.points || []).forEach(pt => (pt.patterns || []).forEach(p => { const ex = (p.examples || [])[0]; if (ex?.japanese) map[`${secId}|${norm(p.pattern)}`] = ex; }));
+    }
+  }
+  state.grammarPatternExampleMap = map;
+  return map;
+}
+
 export function startGrammarLearn() {
   ensureSelectionState();
   const groups = learnGroups();
@@ -496,15 +514,24 @@ export function startGrammarLearn() {
     alert(state.grammarHardOnly ? 'No hard patterns in the selected groups!' : 'Select at least one learn group first.');
     return;
   }
+  const exMap = grammarPatternExamples();
+  const normEx = s => String(s || '').replace(/<[^>]+>/g, '').replace(/[\s　]/g, '');
   // Book order: lesson by lesson, pattern by pattern.
-  const items = patterns.map(({ sec, pattern }) => ({
-    ...pattern,
-    type: 'grammar',
-    book: 'grammar',
-    key: `G:${pattern.id}`,
-    sectionLabel: sec.titlePlain,
-    reviewPhase: 'test', learnNew: true, learned: false
-  }));
+  const items = patterns.map(({ sec, pattern }) => {
+    const ex = exMap[`${sec.secId}|${normEx(pattern.pattern)}`] || {};
+    return {
+      ...pattern,
+      type: 'grammar',
+      book: 'grammar',
+      key: `G:${pattern.id}`,
+      sectionLabel: sec.titlePlain,
+      example_ja: ex.japanese || '',
+      example_en: ex.english || '',
+      pattern_ruby: GRAMMAR_FURIGANA[pattern.id]?.title || pattern.pattern_ruby || pattern.pattern,
+      meaning_ja_ruby: GRAMMAR_FURIGANA[pattern.id]?.gloss || '',
+      reviewPhase: 'test', learnNew: true, learned: false
+    };
+  });
   beginGrammarSession(items, 'learn');
 }
 
@@ -701,4 +728,4 @@ if (typeof window !== 'undefined') {
   window.startGrammarPatternTest = startGrammarPatternTest;
   window.startGrammarAgain = startGrammarAgain;
   window.renderGrammarLessonArea = renderGrammarLessonArea;
-}
+     }
