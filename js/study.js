@@ -408,7 +408,12 @@ function renderCardContent() {
       const exampleHtml = !quiz && isLearnStage(item) && item.example_ja
         ? `<div style="margin-top:.65rem;padding-top:.55rem;border-top:1px solid var(--border);text-align:left"><div class="font-ja" style="font-size:.95rem;line-height:1.7">${item.example_ja}</div><div style="color:var(--text-muted);font-size:.82rem;margin-top:.25rem">${item.example_en || ''}</div></div>`
         : '';
-      meaningEl.innerHTML = `<div style="font-size:1rem;line-height:1.6;text-align:left">${feedback}${quiz ? `<strong>Answer:</strong> ${item.answerText}<p>${item.explanation_en || item.explanation_ja || ''}</p>` : `<strong>${item.meaning_en || ''}</strong><p>${item.meaning_ja_ruby || item.meaning_ja || ''}</p>${exampleHtml}`}</div>`;
+      // Revealed quiz backs carry the completed sentence + its book English
+      // translation when the question data has one; nothing is invented.
+      const sentenceHtml = quiz && item.full_sentence_en
+        ? `<div style="margin-top:.65rem;padding-top:.55rem;border-top:1px solid var(--border);text-align:left">${item.full_sentence ? `<div class="font-ja" style="font-size:.95rem;line-height:1.7">${item.full_sentence}</div>` : ''}<div style="color:var(--text-muted);font-size:.82rem;margin-top:.25rem">${item.full_sentence_en}</div></div>`
+        : '';
+      meaningEl.innerHTML = `<div style="font-size:1rem;line-height:1.6;text-align:left">${feedback}${quiz ? `<strong>Answer:</strong> ${item.answerText}<p>${item.explanation_en || item.explanation_ja || ''}</p>${sentenceHtml}` : `<strong>${item.meaning_en || ''}</strong><p>${item.meaning_ja_ruby || item.meaning_ja || ''}</p>${exampleHtml}`}</div>`;
     }
     document.getElementById('card-controls-hint').style.display = 'none';
     document.getElementById('grade-controls').style.display = state.cardFlipped ? 'grid' : 'none';
@@ -1117,4 +1122,4 @@ export function resetStudyViewHTML() {
       </div>
     </div>
   `;
-  }
+     }
