@@ -558,6 +558,16 @@ export function startGrammarTest() {
   beginGrammarSession(items, 'test');
 }
 
+// Graded test over the patterns from the learn run that just finished: same
+// cards, now front-first with reveal + the four grade buttons, SRS-graded
+// under the same G: keys as before.
+export function startGrammarPatternTest() {
+  const learned = (state.sessionItems || []).filter(item => item.type === 'grammar');
+  if (learned.length === 0) { startGrammarLearn(); return; }
+  const items = learned.map(item => ({ ...item, learnNew: false, learned: true, reviewPhase: 'test' }));
+  beginGrammarSession(items, 'patternTest');
+}
+
 export function startNextGrammarBatch() {
   if (state.grammarRunQueue?.length) beginGrammarSession([], state.grammarLastRun, true);
 }
@@ -565,6 +575,7 @@ export function startNextGrammarBatch() {
 export function startGrammarAgain() {
   if (state.grammarLastRun === 'practice') startGrammarPractice();
   else if (state.grammarLastRun === 'test') startGrammarTest();
+  else if (state.grammarLastRun === 'patternTest') startGrammarPatternTest();
   else startGrammarLearn();
 }
 
@@ -687,6 +698,7 @@ if (typeof window !== 'undefined') {
   window.startGrammarLearn = startGrammarLearn;
   window.startGrammarPractice = startGrammarPractice;
   window.startNextGrammarBatch = startNextGrammarBatch;
+  window.startGrammarPatternTest = startGrammarPatternTest;
   window.startGrammarAgain = startGrammarAgain;
   window.renderGrammarLessonArea = renderGrammarLessonArea;
 }
