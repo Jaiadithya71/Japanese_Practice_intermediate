@@ -13,5 +13,8 @@ export function grammarDrillContent(q = {}) {
     correctIndex,
     answerText,
     explanation_en:q.explanation_en || '', explanation_ja:q.explanation_ja || '',
+    // Completed sentence + its book English translation, when the data has one
+    // (sentence-ordering and mock-exam questions). Never invented elsewhere.
+    full_sentence: q.full_sentence || '', full_sentence_en: q.full_sentence_en || '',
   };
 }
