@@ -52,6 +52,7 @@ function loadReaderSettings() {
       return {
         fontScale: typeof parsed.fontScale === 'number' ? parsed.fontScale : 1.0,
         showFurigana: parsed.showFurigana !== false,
+        showTapHints: parsed.showTapHints !== false,
         showTranslations: Boolean(parsed.showTranslations),
         chunkMode: Boolean(parsed.chunkMode),
         showStrategyFurigana: Boolean(parsed.showStrategyFurigana)
@@ -61,6 +62,7 @@ function loadReaderSettings() {
   return {
     fontScale: 1.0,
     showFurigana: true,
+    showTapHints: true,
     showTranslations: false,
     chunkMode: false,
     showStrategyFurigana: false
@@ -738,6 +740,36 @@ export function renderWorkspace() {
       renderPreviewPhase(container);
       break;
   }
+  // Shared by book, passage, questions and review. Hints never change tap targets.
+  container.classList.toggle('reading-tap-hints', readerRuntime.settings.showTapHints);
+  if (container.querySelector('.gloss-term')) {
+    const nav = container.querySelector('.reading-nav-bar');
+    const hints = `<div class="reading-tap-hints-bar">
+      <span class="reading-tap-hints-label">${readerRuntime.settings.showTapHints ? 'Gold dots mark tappable words.' : 'Word taps still work.'}</span>
+      <button class="t-btn-toggle${readerRuntime.settings.showTapHints ? ' active' : ''}" onclick="toggleReadingTapHints()"
+        aria-pressed="${readerRuntime.settings.showTapHints}" title="Show or hide tappable word markers">Tap hints: ${readerRuntime.settings.showTapHints ? 'On' : 'Off'}</button>
+    </div>`;
+    if (nav) nav.insertAdjacentHTML('afterend', hints);
+    else container.insertAdjacentHTML('afterbegin', hints);
+  }
+}
+
+export function toggleReadingTapHints() {
+  readerRuntime.settings.showTapHints = !readerRuntime.settings.showTapHints;
+  saveReaderSettings(readerRuntime.settings);
+  // Only repaint the hints, preserving scroll, the timer, answers and any open gloss.
+  const container = document.getElementById('dokkai-workspace-container');
+  if (!container) return;
+  const on = readerRuntime.settings.showTapHints;
+  container.classList.toggle('reading-tap-hints', on);
+  const button = container.querySelector('.reading-tap-hints-bar button');
+  if (button) {
+    button.classList.toggle('active', on);
+    button.setAttribute('aria-pressed', String(on));
+    button.textContent = `Tap hints: ${on ? 'On' : 'Off'}`;
+  }
+  const label = container.querySelector('.reading-tap-hints-label');
+  if (label) label.textContent = on ? 'Gold dots mark tappable words.' : 'Word taps still work.';
 }
 
 // =======================================================
@@ -3259,8 +3291,29 @@ function ensureReaderStyles() {
       border-radius: 2px;
       transition: background-color 0.2s ease;
     }
-    .gloss-term:hover {
-      box-shadow: 0 1px 0 0 var(--accent);
+    .reading-tap-hints-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.6rem;
+      margin: 0.4rem 0 0.8rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    .reading-tap-hints .gloss-term[data-gloss-start] {
+      /* One quiet dot per word, even when ruby splits it into several spans.
+         An inset shadow/underline would turn long passages into a wall of lines. */
+      background-image: radial-gradient(circle, var(--accent) 1px, transparent 1.5px);
+      background-size: 4px 4px;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      padding-bottom: 3px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .gloss-term:hover { box-shadow: 0 1px 0 0 var(--accent); }
     }
     .gloss-term.gloss-flash {
       background: var(--accent-glow);
@@ -3610,6 +3663,7 @@ if (typeof window !== 'undefined') {
   window.goToQuestions = goToQuestions;
   window.skipToQuestions = skipToQuestions;
   window.togglePassageFurigana = togglePassageFurigana;
+  window.toggleReadingTapHints = toggleReadingTapHints;
   window.togglePassageTranslations = togglePassageTranslations;
   window.togglePassageChunks = togglePassageChunks;
   window.toggleStrategyFurigana = toggleStrategyFurigana;

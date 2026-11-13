@@ -37,6 +37,10 @@ function visit(v) {
     const plain = v.replace(/<(rt|rp|sup)\b[^>]*>.*?<\/\1>/gs, '').replace(/<[^>]*>/g, '');
     // Entities are decoded in the actual browser integration test.
     if (plain.includes('&')) return;
+    assert.equal((wrapped.match(/data-gloss-start=""/g) || []).length,
+      textLookupTokens(plain).length, 'one hint marker per word, including across ruby boundaries');
+    assert.equal(wrapReadingGloss(wrapped, {map:new Map(), protected:new Set()}), wrapped,
+      'rewrapping must not add markers or duplicate tap spans');
     strings++;
     for (const chunk of plain.match(/[^。！？!?\n]+[。！？!?]?|[。！？!?]/g) || []) {
       if (!/[一-龯々ぁ-んァ-ヶ]/.test(chunk)) continue;

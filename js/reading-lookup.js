@@ -85,7 +85,7 @@ export function wrapReadingGloss(html, gloss) {
       const a = boundaries[Math.max(start,token.start)-start], b = boundaries[Math.min(end,token.end)-start];
       out += parts[i].slice(cursor,a);
       const onclick = `event.stopPropagation(); showWordGloss(${JSON.stringify(token.term)}, this, '', ${token.id === null ? 'null' : token.id})`;
-      out += `<span class="gloss-term" data-gloss="${escapeAttr(token.term)}"${token.id === null ? '' : ` data-lookup-id="${token.id}"`} onclick="${escapeAttr(onclick)}">${parts[i].slice(a,b)}</span>`;
+      out += `<span class="gloss-term"${token.start >= start ? ' data-gloss-start=""' : ''} data-gloss="${escapeAttr(token.term)}"${token.id === null ? '' : ` data-lookup-id="${token.id}"`} onclick="${escapeAttr(onclick)}">${parts[i].slice(a,b)}</span>`;
       cursor = b;
     }
     parts[i] = out + parts[i].slice(cursor);
