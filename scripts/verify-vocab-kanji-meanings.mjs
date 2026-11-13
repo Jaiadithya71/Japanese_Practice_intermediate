@@ -49,3 +49,37 @@ assert.equal(example.inserted,null);
 renderVocabularyKanjiBreakdown({type:'vocab',term_ja:'いとこ'},true);
 assert.equal(example.inserted,null);
 console.log('Actual renderer: revealed chips, front hidden, kana-only hidden passed.');
+
+// App-wide coverage: every kanji in the app's Japanese text must have
+// meanings, except documented Chinese-gloss-only characters (exported as
+// `uncovered` by the refresh script).
+import { uncovered } from '../data/kanji/vocab_character_meanings.js';
+import path from 'node:path';
+const KANJI = /[\u4e00-\u9fff]/g, KANA = /[ぁ-んァ-ヶー]/;
+const appChars = new Set();
+function collect(obj, key = '') {
+  if (typeof obj === 'string') {
+    if (!(key.endsWith('_zh') || key === 'meaning_zh')) for (const m of obj.matchAll(KANJI)) appChars.add(m[0]);
+  } else if (Array.isArray(obj)) obj.forEach(v => collect(v, key));
+  else if (obj && typeof obj === 'object') for (const [k, v] of Object.entries(obj)) collect(v, k);
+}
+function* jsonFiles(dir) {
+  for (const name of fs.readdirSync(dir, { withFileTypes: true })) {
+    const p = path.join(dir, name.name);
+    if (name.isDirectory()) yield* jsonFiles(p);
+    else if (name.name.endsWith('.json')) yield p;
+  }
+}
+for (const p of jsonFiles('data')) collect(JSON.parse(fs.readFileSync(p, 'utf8')));
+const lookupSrc = fs.readFileSync('data/reading-lookup.js', 'utf8');
+for (const m of lookupSrc.matchAll(/\["((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"/g)) {
+  if (KANA.test(m[2])) for (const c of m[1].matchAll(KANJI)) appChars.add(c[0]);
+}
+for (const p of fs.readdirSync('js').filter(f => f.endsWith('.js')).map(f => `js/${f}`).concat(['index.html'])) {
+  for (const c of fs.readFileSync(p, 'utf8').matchAll(KANJI)) appChars.add(c[0]);
+}
+const uncoveredSet = new Set(uncovered);
+const gaps = [...appChars].filter(c => !(entries[c]?.every(s => typeof s === 'string' && s.length)) && !uncoveredSet.has(c));
+assert.deepEqual(gaps, [], 'app-text kanji without meanings');
+for (const c of appChars) if (!entries[c]) assert.ok(uncoveredSet.has(c), c);
+console.log(`${appChars.size} app-text kanji: all covered by meanings or documented Chinese-gloss exclusions (${uncoveredSet.size}).`);

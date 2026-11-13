@@ -1,24 +1,85 @@
-"""Refresh the vocabulary-only KANJIDIC2 subset. Run at least monthly.
+"""Refresh the KANJIDIC2 subset so every kanji in the app's Japanese text has
+English meanings: vocabulary, the kanji book, reading passages and questions,
+grammar, exercises, lookup tables and UI strings. Run at least monthly and
+whenever app text changes.
+
 Data copyright James William Breen and EDRDG, CC BY-SA 4.0.
 """
-import gzip,json,glob,urllib.request,xml.etree.ElementTree as ET
+import gzip, json, glob, os, re, urllib.request, xml.etree.ElementTree as ET
 from pathlib import Path
-words=[w for f in glob.glob('data/vocabulary/*.json') for c in json.load(open(f)).get('chapters',[]) for s in c.get('sections',[]) for w in s.get('words',[])]
-chars={c for w in words for c in w.get('term_ja','') if '\u4e00'<=c<='\u9fff'}
-# Kanji book: target kanji and every character appearing in their compounds,
-# so Learn cards and Quick Quiz feedback can show a meaning for each kanji.
-kanji_recs=[k for f in glob.glob('data/kanji/part*_lessons_*.json') for les in json.load(open(f)).get('lessons',[]) for k in les.get('kanji',[])]
-for k in kanji_recs:
-    lit=k.get('kanji','')
-    if len(lit)==1 and '\u4e00'<=lit<='\u9fff': chars.add(lit)
-    for w in k.get('words',[]):
-        for c in w.get('term_ja',''):
-            if '\u4e00'<=c<='\u9fff': chars.add(c)
-url='https://www.edrdg.org/kanjidic/kanjidic2.xml.gz'
-root=ET.fromstring(gzip.decompress(urllib.request.urlopen(url,timeout=30).read()))
-entries={c.findtext('literal'):[m.text for m in c.findall('.//meaning') if 'm_lang' not in m.attrib] for c in root.findall('character') if c.findtext('literal') in chars}
-missing=chars-set(entries)
-assert not missing and all(entries.values()), f'Missing dictionary meanings: {missing}'
-metadata={'source':'KANJIDIC2','copyright':'James William Breen and Electronic Dictionary Research and Development Group','license':'CC BY-SA 4.0','license_url':'https://www.edrdg.org/edrdg/licence.html','source_url':'https://www.edrdg.org/kanjidic/kanjd2index_legacy.html','database_date':root.findtext('header/date_of_creation'),'adaptation':'Vocabulary and kanji-book character English subset; meanings unmodified.'}
-Path('data/kanji/vocab_character_meanings.js').write_text('// KANJIDIC2 English subset, CC BY-SA 4.0. See KANJIDIC2-SOURCES.md.\nexport const metadata = '+json.dumps(metadata,ensure_ascii=False)+';\nexport const entries = '+json.dumps(entries,ensure_ascii=False,separators=(',',':'))+';\n')
-print(f'{len(entries)} characters; source date {metadata["database_date"]}')
+
+KANJI = re.compile(r'[一-鿿]')
+KANA = re.compile(r'[ぁ-んァ-ヶー]')
+
+def strings_in(obj, key=''):
+    if isinstance(obj, str):
+        yield key, obj
+    elif isinstance(obj, dict):
+        for k, v in obj.items():
+            yield from strings_in(v, k)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from strings_in(v, key)
+
+def is_jis_x_0208(char):
+    try:
+        char.encode('iso2022_jp')
+        return True
+    except UnicodeEncodeError:
+        return False
+
+chars = set()
+# All app data, excluding Chinese translation fields (*_zh, meaning_zh):
+# they are glosses, never tappable Japanese text.
+for f in glob.glob('data/**/*.json', recursive=True):
+    for k, s in strings_in(json.load(open(f, encoding='utf-8'))):
+        if k.endswith('_zh') or k == 'meaning_zh':
+            continue
+        chars.update(KANJI.findall(s))
+
+# Word-lookup table. Real entries carry a kana reading; entries whose
+# "reading" repeats the surface are Chinese gloss leftovers, not words.
+lookup_src = Path('data/reading-lookup.js').read_text(encoding='utf-8')
+for surface, reading in re.findall(r'\["((?:[^"\\]|\\.)*)","((?:[^"\\]|\\.)*)"', lookup_src):
+    if KANA.search(reading):
+        chars.update(KANJI.findall(surface))
+
+# UI strings in scripts and pages.
+for f in glob.glob('js/*.js') + glob.glob('*.html'):
+    chars.update(KANJI.findall(Path(f).read_text(encoding='utf-8')))
+
+cache = os.environ.get('KANJIDIC2_XML')
+raw = Path(cache).read_bytes() if cache else urllib.request.urlopen('https://www.edrdg.org/kanjidic/kanjidic2.xml.gz', timeout=60).read()
+root = ET.fromstring(gzip.decompress(raw))
+kanjidic = {}
+for c in root.findall('character'):
+    lit = c.findtext('literal')
+    kanjidic[lit] = [m.text for m in c.findall('.//meaning') if 'm_lang' not in m.attrib and m.text]
+
+entries = {lit: kanjidic[lit] for lit in sorted(chars) if lit in kanjidic and kanjidic[lit]}
+uncovered = sorted(chars - set(entries))
+# Every Japanese (JIS X 0208) character must have meanings. The only allowed
+# gaps are simplified-Chinese characters from embedded Chinese glosses, which
+# a Japanese kanji dictionary does not cover.
+japanese_gaps = [c for c in uncovered if is_jis_x_0208(c)]
+assert not japanese_gaps, f'Japanese characters without dictionary meanings: {japanese_gaps}'
+assert entries and all(entries.values())
+
+metadata = {
+    'source': 'KANJIDIC2',
+    'copyright': 'James William Breen and Electronic Dictionary Research and Development Group',
+    'license': 'CC BY-SA 4.0',
+    'license_url': 'https://www.edrdg.org/edrdg/licence.html',
+    'source_url': 'https://www.edrdg.org/kanjidic/kanjd2index_legacy.html',
+    'database_date': root.findtext('header/date_of_creation'),
+    'adaptation': 'English meanings for every kanji appearing in the app\'s Japanese text (vocabulary, kanji book, reading, grammar, exercises, lookup tables, UI); meanings unmodified.',
+}
+out = '// KANJIDIC2 English subset, CC BY-SA 4.0. See KANJIDIC2-SOURCES.md.\n'
+out += 'export const metadata = ' + json.dumps(metadata, ensure_ascii=False) + ';\n'
+out += 'export const entries = ' + json.dumps(entries, ensure_ascii=False, separators=(',', ':')) + ';\n'
+# App-text characters intentionally without entries: simplified-Chinese-only
+# characters from embedded Chinese glosses, outside KANJIDIC2's scope.
+out += 'export const uncovered = ' + json.dumps(uncovered, ensure_ascii=False) + ';\n'
+Path('data/kanji/vocab_character_meanings.js').write_text(out, encoding='utf-8')
+print(f'{len(entries)} characters with meanings; source date {metadata["database_date"]}')
+print(f'{len(uncovered)} Chinese-gloss characters intentionally uncovered: {"".join(uncovered)}')
