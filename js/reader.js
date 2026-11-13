@@ -6,6 +6,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { wrapReadingGloss, lookupEntry } from './reading-lookup.js';
 import { beginGistReviewSession, endGistReviewSession, scheduleGistSave } from './gist-sync.js';
 import { addAttempt, attachAccuracy, MIN_ATTEMPT_SECONDS } from './reading-times.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js';
@@ -864,7 +865,7 @@ function drillOptionsHtml(options) {
     ${options.map(o => `
       <div class="book-drill-option">
         <span class="drill-option-key">${o.key}</span>
-        <span class="font-ja">${o.text_ja || ''}</span>
+        <span class="font-ja">${glossifyBookText(o.text_ja || '')}</span>
         ${o.text_en ? `<div style="color: var(--text-dim); font-size: 0.8rem; margin-left: 1.5rem;">${o.text_en}</div>` : ''}
       </div>`).join('')}
   </div>`;
@@ -888,7 +889,7 @@ function renderBookDrillItem(it) {
       || (it.paragraph ? `Paragraph ${it.paragraph}` : '');
     return `
       <div class="book-drill-item">
-        ${promptJa ? `<p class="font-ja drill-item-term" style="white-space: pre-line;">${promptJa}</p>` : ''}
+        ${promptJa ? `<p class="font-ja drill-item-term" style="white-space: pre-line;">${glossifyBookText(promptJa)}</p>` : ''}
         ${it.prompt_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; white-space: pre-line;">${it.prompt_en}</p>` : ''}
         ${drillOptionsHtml(it.options)}
         ${it.correctKey ? drillAnswerDetails(`
@@ -901,7 +902,7 @@ function renderBookDrillItem(it) {
   if (it.evaluation) {
     return `
       <div class="book-drill-item">
-        <p class="font-ja drill-item-term">${it.text_ja || ''}</p>
+        <p class="font-ja drill-item-term">${glossifyBookText(it.text_ja || '')}</p>
         ${it.text_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.text_en}</p>` : ''}
         ${drillAnswerDetails(`
           <p style="margin-top: 0.35rem;">Answer: <strong class="book-drill-eval">${it.evaluation}</strong></p>
@@ -918,7 +919,7 @@ function renderBookDrillItem(it) {
         <p class="font-ja drill-item-sentence">${sentence}</p>
         ${it.fullSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.fullSentence_en}</p>` : ''}
         ${drillAnswerDetails(`
-          <p class="font-ja" style="margin-top: 0.35rem; font-weight: 600;">${it.modifyingClause_ja || ''}</p>
+          <p class="font-ja" style="margin-top: 0.35rem; font-weight: 600;">${glossifyBookText(it.modifyingClause_ja || '')}</p>
           ${it.modifyingClause_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.modifyingClause_en}</p>` : ''}
           ${drillExplanationHtml(it.explanation_en)}`)}
       </div>`;
@@ -933,8 +934,8 @@ function renderBookDrillItem(it) {
         <p class="font-ja drill-item-sentence">${sentence}</p>
         ${it.fullSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.fullSentence_en}</p>` : ''}
         ${drillAnswerDetails(`
-          <p class="font-ja" style="margin-top: 0.35rem; font-weight: 600;">${it.demonstrative} = ${it.targetReferent_ja || ''}</p>
-          ${it.completedSentence_ja ? `<p class="font-ja" style="margin-top: 0.25rem;">${it.completedSentence_ja}</p>` : ''}
+          <p class="font-ja" style="margin-top: 0.35rem; font-weight: 600;">${it.demonstrative} = ${glossifyBookText(it.targetReferent_ja || '')}</p>
+          ${it.completedSentence_ja ? `<p class="font-ja" style="margin-top: 0.25rem;">${glossifyBookText(it.completedSentence_ja)}</p>` : ''}
           ${it.completedSentence_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.completedSentence_en}</p>` : ''}
           ${drillExplanationHtml(it.explanation_en)}`)}
       </div>`;
@@ -945,11 +946,11 @@ function renderBookDrillItem(it) {
   if (it.term_ja || it.text_ja) {
     return `
       <details class="book-drill-answer book-drill-item">
-        <summary><span class="font-ja drill-item-term">${it.marker ? `${it.marker}. ` : ''}${it.term_ja || it.text_ja || ''}${it.reading && it.reading !== it.term_ja ? `（${it.reading}）` : ''}</span></summary>
+        <summary><span class="font-ja drill-item-term">${it.marker ? `${it.marker}. ` : ''}${glossifyBookText(it.term_ja || it.text_ja || '')}${it.reading && it.reading !== it.term_ja ? `（${it.reading}）` : ''}</span></summary>
         ${it.text_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.3rem;">${it.text_en}</p>` : ''}
         ${it.hint_ja ? `<p class="font-ja" style="margin-top: 0.3rem;">${glossifyBookText(it.hint_ja)}</p>` : ''}
         ${it.hint_en ? `<p style="color: var(--text-dim); font-size: 0.82rem;">${it.hint_en}</p>` : ''}
-        ${it.meaning_ja ? `<p class="font-ja" style="margin-top: 0.25rem; font-weight: 600;">${it.meaning_ja}</p>` : ''}
+        ${it.meaning_ja ? `<p class="font-ja" style="margin-top: 0.25rem; font-weight: 600;">${glossifyBookText(it.meaning_ja)}</p>` : ''}
         ${it.meaning_en ? `<p style="color: var(--text-dim); font-size: 0.82rem; margin-top: 0.2rem;">${it.meaning_en}</p>` : ''}
       </details>`;
   }
@@ -958,7 +959,7 @@ function renderBookDrillItem(it) {
   const fallback = it.prompt_ja || it.fullSentence_ja || it.term || '';
   return fallback ? `
     <div class="book-drill-item">
-      <p class="font-ja drill-item-term" style="white-space: pre-line;">${fallback}</p>
+      <p class="font-ja drill-item-term" style="white-space: pre-line;">${glossifyBookText(fallback)}</p>
       ${drillExplanationHtml(it.explanation_en)}
     </div>` : '';
 }
@@ -984,7 +985,7 @@ function renderBookDrillCard(d) {
           ${d.options.map(o => `
             <div class="book-drill-option">
               <span class="drill-option-key">${o.key}</span>
-              <span class="font-ja">${o.text_ja || ''}</span>
+              <span class="font-ja">${glossifyBookText(o.text_ja || '')}</span>
               ${o.text_en ? `<div style="color: var(--text-dim); font-size: 0.8rem; margin-left: 1.5rem;">${o.text_en}</div>` : ''}
             </div>`).join('')}
         </div>
@@ -1087,7 +1088,7 @@ function renderBookPhase(container) {
         <div class="book-section-label"><i class="fa-solid fa-book-open-reader"></i> 本文 Passage</div>
         ${lesson.passageInstructions ? `
           <div class="reading-instructions-box font-ja" style="margin-bottom: 0.6rem;">
-            <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
+            <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${glossifyBookText(lesson.passageInstructions.instruction_ja || '')}
             <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
           </div>` : ''}
         ${questions.length > 0 ? `
@@ -1181,7 +1182,7 @@ function renderBookPhase(container) {
     bodyHtml = lesson.passageInstructions ? `
       <div class="book-section">
         <div class="reading-instructions-box font-ja">
-          <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
+          <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${glossifyBookText(lesson.passageInstructions.instruction_ja || '')}
           <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
         </div>
       </div>` : '';
@@ -1456,7 +1457,7 @@ function renderReadPhase(container) {
 
         ${lesson.passageInstructions ? `
           <div class="reading-instructions-box font-ja">
-            <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${lesson.passageInstructions.instruction_ja || ''}
+            <strong><i class="fa-solid fa-circle-info"></i> 指示:</strong> ${glossifyBookText(lesson.passageInstructions.instruction_ja || '')}
             <div style="font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem;">${lesson.passageInstructions.instruction_en || ''}</div>
           </div>` : ''}
 
@@ -1615,52 +1616,10 @@ function extendedDictPrefixLookup(term) {
   return bestKey ? extendedDict.map.get(bestKey) : null;
 }
 
-// Wrap dictionary terms found in html text nodes with tappable gloss spans,
-// then wrap every remaining kanji word (e.g. 以外) with a fallback lookup that
-// uses the passage furigana as its reading plus per-kanji meaning hints.
-// Skips content inside <rt> (furigana readings) and <sup> (footnote markers).
-const KANJI_RUN_REGEX = /[\u4e00-\u9faf\u3005\u3033-\u3035\u30f6]{2,}/g;
-
+// One shared, morphology-backed renderer for passages, book sections,
+// questions, options, explanations and review. Ruby stays visually intact.
 function wrapGlossTerms(html, gloss) {
-  if (!html) return html;
-  const parts = html.split(/(<[^>]+>)/g);
-  let skipDepth = 0;
-  for (let i = 0; i < parts.length; i++) {
-    const p = parts[i];
-    if (!p) continue;
-    if (p[0] === '<') {
-      if (/^<(rt|sup)[\s>]/.test(p)) skipDepth++;
-      else if (/^<\/(rt|sup)>/.test(p)) skipDepth = Math.max(0, skipDepth - 1);
-      continue;
-    }
-    if (skipDepth > 0) continue;
-    // 1) curated dictionary terms
-    const prot = gloss && gloss.protected;
-    let seg = (gloss && gloss.regex) ? p.replace(gloss.regex, m =>
-      (prot && prot.has(m)) ? m :
-      `<span class="gloss-term" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m.replace(/'/g, "\\'")}', this)">${m}</span>`) : p;
-    // 2) fallback: remaining kanji words; reading from the enclosing <rt> when present
-    const rtOpen = parts[i + 1] || '';
-    const rubyReading = (parts[i - 1] === '<ruby>' && /^<rt>$/.test(rtOpen) && (parts[i + 2] || '')[0] !== '<')
-      ? (parts[i + 2] || '') : '';
-    const sub = seg.split(/(<[^>]+>)/g);
-    let glossDepth = 0;
-    for (let k = 0; k < sub.length; k++) {
-      const q = sub[k];
-      if (!q) continue;
-      if (q[0] === '<') {
-        if (/^<span[^>]*gloss-term/.test(q)) glossDepth++;
-        else if (/^<\/span>/.test(q) && glossDepth > 0) glossDepth--;
-        continue;
-      }
-      if (glossDepth > 0) continue;
-      sub[k] = q.replace(KANJI_RUN_REGEX, m =>
-        (prot && prot.has(m)) ? m :
-        `<span class="gloss-term gloss-term-fallback" data-gloss="${m}" onclick="event.stopPropagation(); showWordGloss('${m}', this${rubyReading ? `, '${rubyReading}'` : ''})">${m}</span>`);
-    }
-    parts[i] = sub.join('');
-  }
-  return parts.join('');
+  return wrapReadingGloss(html, gloss);
 }
 
 // Make (注N) footnote markers tappable in both ruby (<sup>) and plain text.
@@ -1703,8 +1662,8 @@ function renderFootnotesBlock(footnotes) {
       ${items.map(f => `
         <div class="passage-footnote" id="footnote-${f.num}">
           <span class="footnote-num">(注${f.num})</span>
-          <span class="font-ja footnote-term">${f.term}${f.reading && f.reading !== f.term ? `【${f.reading}】` : ''}</span>
-          ${f.defJa ? `<span class="font-ja footnote-def-ja">${f.defJa}</span>` : ''}
+          <span class="font-ja footnote-term">${glossifyBookText(f.term)}${f.reading && f.reading !== f.term ? `【${f.reading}】` : ''}</span>
+          ${f.defJa ? `<span class="font-ja footnote-def-ja">${glossifyBookText(f.defJa)}</span>` : ''}
           ${f.defEn ? `<span class="footnote-def-en">${f.defEn}</span>` : ''}
         </div>`).join('')}
     </div>`;
@@ -1753,7 +1712,7 @@ function renderSkillsOrDrillFallback(lesson) {
     return `
       <div class="strategy-display-card">
         <h3><i class="fa-solid fa-chess"></i> ${lesson.readingStrategy.point_ja || '読解ストラテジー'}</h3>
-        <p style="margin-top: 0.5rem; line-height: 1.8;">${lesson.readingStrategy.rule_ja || ''}</p>
+        <p style="margin-top: 0.5rem; line-height: 1.8;">${glossifyBookText(lesson.readingStrategy.rule_ja || '')}</p>
         <p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 0.35rem;">${lesson.readingStrategy.rule_en || ''}</p>
       </div>
     `;
@@ -1805,7 +1764,7 @@ function renderAnswerPhase(container) {
 
       <div id="answer-peek-pane" style="display: ${readerRuntime.showPassageInAnswer ? 'block' : 'none'}; margin-bottom: 1.5rem;" class="passage-view-card">
         <div class="font-ja" style="line-height: 1.85; max-height: 240px; overflow-y: auto; padding: 0.75rem;">
-          ${(lesson.passage?.sentences || []).map(s => `<div>${bookJaText(s.text_ja, s.ruby_html)}</div>`).join('')}
+          ${(lesson.passage?.sentences || []).map(s => `<div>${glossifyBookText(bookJaText(s.text_ja, s.ruby_html))}</div>`).join('')}
         </div>
       </div>
 
@@ -2153,7 +2112,7 @@ function renderReviewPhase(container) {
       ${lesson.commentary ? `
         <div class="commentary-card font-ja">
           <h3><i class="fa-solid fa-diagram-project" style="color: var(--cyan);"></i> 本文の解説 (Commentary)</h3>
-          <p style="margin-top: 0.6rem; line-height: 1.8;">${lesson.commentary.summary_ja || lesson.commentary.logicFlow || ''}</p>
+          <p style="margin-top: 0.6rem; line-height: 1.8;">${glossifyBookText(lesson.commentary.summary_ja || lesson.commentary.logicFlow || '')}</p>
           ${lesson.commentary.summary_en ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${lesson.commentary.summary_en}</p>` : ''}
         </div>
       ` : ''}
@@ -2161,7 +2120,7 @@ function renderReviewPhase(container) {
       ${lesson.testAdvice ? `
         <div class="test-advice-card font-ja">
           <h3><i class="fa-solid fa-compass" style="color: var(--amber);"></i> 試験のコツ (Test Advice)</h3>
-          <p style="margin-top: 0.6rem; line-height: 1.8;">${lesson.testAdvice.advice_ja || lesson.testAdvice.traps || ''}</p>
+          <p style="margin-top: 0.6rem; line-height: 1.8;">${glossifyBookText(lesson.testAdvice.advice_ja || lesson.testAdvice.traps || '')}</p>
           ${lesson.testAdvice.advice_en ? `<p style="font-size: 0.85rem; color: var(--text-dim); margin-top: 0.35rem;">${lesson.testAdvice.advice_en}</p>` : ''}
         </div>
       ` : ''}
@@ -2353,11 +2312,28 @@ export function returnToBook() {
 // WORD GLOSS MINI-SHEET & VOCABULARY ENGINE INTEGRATION (§8)
 // =======================================================
 
-export function showWordGloss(term, anchorEl, reading) {
+function glossText(value) {
+  return String(value || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+export function showWordGloss(term, anchorEl, reading, lookupId = null) {
   const lesson = readerRuntime.lesson;
   if (!lesson) return;
 
-  let vocab = (lesson.vocabulary || []).find(v => v.term === term);
+  // Surface form and dictionary form are different learning facts.
+  const form = lookupId !== null ? lookupEntry(lookupId) : null;
+  const base = form ? form[1] : term;
+  let vocab;
+  if (form) {
+    const known = getGlossIndex(lesson).map.get(base);
+    vocab = {
+      term: form[0], reading: form[2] || reading || '',
+      meaning: known?.meaning || form[5] || '', type: known?.type || '',
+      base, baseReading: known?.reading || form[4] || '', formNote: form[3],
+      extended: !known, lexeme: known, fallback: !(known?.meaning || form[5])
+    };
+  }
+  if (!vocab) vocab = (lesson.vocabulary || []).find(v => v.term === term);
   if (!vocab) vocab = getGlossIndex(lesson).map.get(term);
   if (!vocab) {
     ensureExtendedDict();
@@ -2377,7 +2353,7 @@ export function showWordGloss(term, anchorEl, reading) {
     }
   }
 
-  readerRuntime.activeGlossWord = (vocab.fallback || vocab.extended) ? null : vocab;
+  readerRuntime.activeGlossWord = (vocab.fallback || vocab.extended) ? null : (vocab.lexeme || vocab);
   let container = document.getElementById('word-gloss-sheet-container');
   if (!container) {
     // Some phases (answers, review) never rendered the container, which made
@@ -2393,15 +2369,17 @@ export function showWordGloss(term, anchorEl, reading) {
     <div class="word-gloss-popup" role="dialog" aria-label="Word meaning">
       <div class="gloss-sheet-header">
         <div>
-          <span class="font-ja gloss-term-title">${vocab.term}</span>
-          ${vocab.reading ? `<span class="gloss-reading">【${vocab.reading}】</span>` : ''}
-          ${vocab.type ? `<span class="badge" style="background:var(--surface);">${vocab.type}</span>` : ''}
+          <span class="font-ja gloss-term-title">${glossText(vocab.term)}</span>
+          ${vocab.reading ? `<span class="gloss-reading">【${glossText(vocab.reading)}】</span>` : ''}
+          ${vocab.type ? `<span class="badge" style="background:var(--surface);">${glossText(vocab.type)}</span>` : ''}
         </div>
         <button class="btn btn-xs btn-ghost" onclick="closeWordGloss()"><i class="fa-solid fa-xmark"></i></button>
       </div>
-      ${vocab.meaning ? `<div class="gloss-meaning-text">${vocab.meaning}</div>` : `
+      ${vocab.base && vocab.base !== vocab.term ? `<div class="gloss-base-form">${vocab.formNote ? 'Dictionary form' : 'Dictionary entry'}: <b class="font-ja">${glossText(vocab.base)}</b>${vocab.baseReading ? ` 【${glossText(vocab.baseReading)}】` : ''}</div>` : ''}
+      ${vocab.formNote ? `<div class="gloss-form-note">Form: ${glossText(vocab.formNote)}</div>` : ''}
+      ${vocab.meaning ? `${vocab.formNote && vocab.base !== vocab.term ? `<div class="gloss-base-form">Meaning of ${glossText(vocab.base)}:</div>` : ''}<div class="gloss-meaning-text">${glossText(vocab.meaning)}</div>` : `
         <div class="gloss-meaning-text" style="color: var(--text-dim); font-size: 0.85rem;">
-          Not in the app's word list yet. ${vocab.reading ? 'Reading from the passage furigana; ' : ''}Kanji-by-kanji hints below (not a literal translation).
+          No whole-word definition available. ${vocab.reading ? 'Reading shown above. ' : ''}Kanji hints below are not a word translation.
         </div>`}
       ${kanjiParts.length ? `
         <div class="vocab-kanji-breakdown gloss-kanji-breakdown">
@@ -2788,7 +2766,7 @@ function renderBookQuestionsSection(lesson, questions) {
       ${peek ? `
         <div class="passage-view-card" style="margin-bottom: 0.8rem;">
           <div class="font-ja" style="line-height: 1.85; max-height: 240px; overflow-y: auto; padding: 0.75rem;">
-            ${sentences.map(s => `<div>${bookJaText(s.text_ja, s.ruby_html)}</div>`).join('')}
+            ${sentences.map(s => `<div>${glossifyBookText(bookJaText(s.text_ja, s.ruby_html))}</div>`).join('')}
           </div>
         </div>` : ''}
       <div class="questions-list">
@@ -3262,6 +3240,8 @@ function ensureReaderStyles() {
       color: var(--cyan);
       min-width: 1rem;
     }
+    .gloss-base-form { margin-top: 0.4rem; font-size: 0.85rem; color: var(--text-muted); }
+    .gloss-form-note { margin: 0.3rem 0; font-size: 0.85rem; color: var(--accent); }
     .gloss-kanji-breakdown {
       margin-top: 0.6rem;
     }

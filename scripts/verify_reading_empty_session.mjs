@@ -187,7 +187,7 @@ reader.openReadingLesson('dokkai-n3-l04', { startPhase: 'book' });
 assert.match(workspace.innerHTML, /toggleStrategyFurigana/, 'furigana toggle offered on strategy section');
 assert.doesNotMatch(workspace.innerHTML, /<ruby>/, 'furigana hidden by default');
 reader.toggleStrategyFurigana();
-assert.match(workspace.innerHTML, /<ruby>前後関係<rt>ぜんごかんけい<\/rt><\/ruby>/, 'toggle shows accurate ruby');
+assert.match(workspace.innerHTML.replace(/<span\b[^>]*class="gloss-term"[^>]*>/g, '').replace(/<\/span>/g, ''), /<ruby>前後関係<rt>ぜんごかんけい<\/rt><\/ruby>/, 'toggle shows accurate ruby, allowing tappable base spans');
 assert.match(workspace.innerHTML, /ふりがな/, 'toggle persists on section');
 reader.toggleStrategyFurigana();
 assert.doesNotMatch(workspace.innerHTML, /<ruby>/, 'toggle back off hides ruby');

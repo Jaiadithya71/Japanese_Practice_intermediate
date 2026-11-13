@@ -77,3 +77,15 @@ https://www.edrdg.org/jmdict/j_jmdict.html
 It is filtered to common-priority entries whose kanji form appears in this app's
 reading lessons, and provides whole-word meanings for words outside the
 textbook's own word list.
+
+
+`data/reading-lookup.js` adds precomputed word boundaries, surface readings and
+dictionary-form links for Reading content. Analysis uses fugashi + UniDic-lite
+(UniDic: BSD licence, https://github.com/polm/unidic-lite; notice in `docs/licenses/unidic-bsd.txt`). English definitions
+are selected from JMdict, under the same CC BY-SA 4.0 / EDRDG licence above.
+The generated data is distributed under CC BY-SA 4.0. No machine-generated
+English sentence translations are added. Rebuild with
+`python scripts/build-reading-lookup.py /path/to/JMdict_e.gz` after installing
+`fugashi` and `unidic-lite`. Run `node scripts/verify-reading-lookup.mjs`.
+The index covers checked-in Reading text; newly added unindexed text uses
+conservative whole-word dictionary matches until the next rebuild.
