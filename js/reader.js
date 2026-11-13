@@ -90,6 +90,7 @@ const readerRuntime = {
   charCount: 0,
   showOptionEn: false,
   showPassageInAnswer: false,
+  showPeekTranslation: false,
   activeGlossWord: null,
   expandedSentenceTrans: new Set(),
   settings: loadReaderSettings(),
@@ -653,6 +654,7 @@ export function openReadingLesson(lessonId, options = {}) {
   readerRuntime.activeGlossWord = null;
   readerRuntime.showOptionEn = false;
   readerRuntime.showPassageInAnswer = false;
+  readerRuntime.showPeekTranslation = false;
 
   readerRuntime.charCount = countPassageChars(lesson.passage || lesson);
   readerRuntime.targetSeconds = calculateTargetSeconds(readerRuntime.charCount);
@@ -715,6 +717,7 @@ export function closeReadingWorkspace() {
 }
 
 export function renderWorkspace() {
+  document.getElementById('second-pass-lock-note')?.classList.remove('show');
   const container = document.getElementById('dokkai-workspace-container');
   if (!container || !readerRuntime.lesson) return;
 
@@ -1340,7 +1343,7 @@ function renderPreviewPhase(container) {
             <i class="fa-solid fa-rotate"></i>
             <div>
               <strong>Second-Pass Re-read Mode</strong>
-              <p>Furigana and translation are forced OFF. Question options are shuffled. Aim for &ge; 80% accuracy within 1.3&times; target time.</p>
+              <p>Furigana and translation are forced OFF while you read. Translation unlocks in Questions (Peek Passage) and in the Review. Question options are shuffled. Aim for &ge; 80% accuracy within 1.3&times; target time.</p>
             </div>
           </div>
         ` : ''}
@@ -1786,6 +1789,9 @@ function renderAnswerPhase(container) {
         <button class="btn btn-sm btn-ghost" onclick="togglePassagePeek()">
           <i class="fa-solid fa-book"></i> ${readerRuntime.showPassageInAnswer ? 'Hide Passage' : 'Peek Passage'}
         </button>
+        <button class="btn btn-sm btn-ghost" onclick="togglePeekTranslation()">
+          <i class="fa-solid fa-language"></i> 訳 Passage: ${readerRuntime.showPeekTranslation ? 'ON' : 'OFF'}
+        </button>
         <button class="btn btn-sm btn-ghost" onclick="toggleOptionEnglish()">
           <i class="fa-solid fa-language"></i> EN Translations: ${readerRuntime.showOptionEn ? 'ON' : 'OFF'}
         </button>
@@ -1796,7 +1802,7 @@ function renderAnswerPhase(container) {
 
       <div id="answer-peek-pane" style="display: ${readerRuntime.showPassageInAnswer ? 'block' : 'none'}; margin-bottom: 1.5rem;" class="passage-view-card">
         <div class="font-ja" style="line-height: 1.85; max-height: 240px; overflow-y: auto; padding: 0.75rem;">
-          ${(lesson.passage?.sentences || []).map(s => `<div>${glossifyBookText(bookJaText(s.text_ja, s.ruby_html))}</div>`).join('')}
+          ${renderPeekSentences(lesson.passage?.sentences || [])}
         </div>
       </div>
 
@@ -2140,6 +2146,8 @@ function renderReviewPhase(container) {
         ${results.map((r, idx) => renderReviewQuestionHTML(r, idx)).join('')}
       </div>
 
+      ${renderPassageTranslationCard(lesson)}
+
       <!-- Commentary & Test Advice Cards -->
       ${lesson.commentary ? `
         <div class="commentary-card font-ja">
@@ -2265,7 +2273,7 @@ export function adjustFontScale(delta) {
 }
 
 export function togglePassageFurigana() {
-  if (readerRuntime.isSecondPass) return;
+  if (readerRuntime.isSecondPass) { showLockedNote(); return; }
   readerRuntime.settings.showFurigana = !readerRuntime.settings.showFurigana;
   state.showFurigana = readerRuntime.settings.showFurigana;
   saveReaderSettings(readerRuntime.settings);
@@ -2273,7 +2281,7 @@ export function togglePassageFurigana() {
 }
 
 export function togglePassageTranslations() {
-  if (readerRuntime.isSecondPass) return;
+  if (readerRuntime.isSecondPass) { showLockedNote(); return; }
   readerRuntime.settings.showTranslations = !readerRuntime.settings.showTranslations;
   state.showSentenceTranslations = readerRuntime.settings.showTranslations;
   saveReaderSettings(readerRuntime.settings);
@@ -2297,6 +2305,43 @@ export function toggleSingleSentenceTrans(sId) {
     readerRuntime.expandedSentenceTrans.add(sId);
   }
   renderWorkspace();
+}
+
+function renderPeekSentences(sentences) {
+  const showEn = readerRuntime.showPeekTranslation;
+  return (sentences || []).map(s => `<div class="peek-sentence">${glossifyBookText(bookJaText(s.text_ja, s.ruby_html))}${showEn && s.text_en ? `<div class="peek-sentence-en">${s.text_en}</div>` : ''}</div>`).join('');
+}
+
+// Full passage with English, shown once answers are checked (review step and
+// the book questions result). Always available, including second pass.
+function renderPassageTranslationCard(lesson) {
+  const sentences = (lesson && lesson.passage && lesson.passage.sentences) || [];
+  if (!sentences.some(s => s.text_en)) return '';
+  return `
+    <details class="passage-translation-card">
+      <summary><i class="fa-solid fa-language"></i> 訳 Passage with English translation</summary>
+      <div class="font-ja passage-translation-body">${sentences.map(s => `<div class="peek-sentence">${glossifyBookText(bookJaText(s.text_ja, s.ruby_html))}${s.text_en ? `<div class="peek-sentence-en">${s.text_en}</div>` : ''}</div>`).join('')}</div>
+    </details>`;
+}
+
+export function togglePeekTranslation() {
+  readerRuntime.showPeekTranslation = !readerRuntime.showPeekTranslation;
+  if (readerRuntime.showPeekTranslation) readerRuntime.showPassageInAnswer = true;
+  renderWorkspace();
+}
+
+function showLockedNote() {
+  let t = document.getElementById('second-pass-lock-note');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'second-pass-lock-note';
+    t.className = 'second-pass-lock-note';
+    document.body.appendChild(t);
+  }
+  t.textContent = 'Locked during the timed re-read. Translation is available in Questions (Peek Passage → 訳) and in the Review.';
+  t.classList.add('show');
+  clearTimeout(showLockedNote._t);
+  showLockedNote._t = setTimeout(() => t.classList.remove('show'), 4500);
 }
 
 export function togglePassagePeek() {
@@ -2798,6 +2843,9 @@ function renderBookQuestionsSection(lesson, questions) {
         <button class="btn btn-sm btn-ghost" onclick="togglePassagePeek()">
           <i class="fa-solid fa-book"></i> ${peek ? 'Hide Passage' : 'Peek Passage'}
         </button>
+        <button class="btn btn-sm btn-ghost" onclick="togglePeekTranslation()">
+          <i class="fa-solid fa-language"></i> 訳 Passage: ${readerRuntime.showPeekTranslation ? 'ON' : 'OFF'}
+        </button>
         <button class="btn btn-sm btn-ghost" onclick="toggleOptionEnglish()">
           <i class="fa-solid fa-language"></i> EN Translations: ${readerRuntime.showOptionEn ? 'ON' : 'OFF'}
         </button>
@@ -2806,7 +2854,7 @@ function renderBookQuestionsSection(lesson, questions) {
       ${peek ? `
         <div class="passage-view-card" style="margin-bottom: 0.8rem;">
           <div class="font-ja" style="line-height: 1.85; max-height: 240px; overflow-y: auto; padding: 0.75rem;">
-            ${sentences.map(s => `<div>${glossifyBookText(bookJaText(s.text_ja, s.ruby_html))}</div>`).join('')}
+            ${renderPeekSentences(sentences)}
           </div>
         </div>` : ''}
       <div class="questions-list">
@@ -2828,7 +2876,8 @@ function renderBookQuestionsSection(lesson, questions) {
       </div>
       <div class="questions-list">
         ${questions.map((q, idx) => renderBookQuestionResult(q, idx)).join('')}
-      </div>`;
+      </div>
+      ${renderPassageTranslationCard(lesson)}`;
   }
   return `
     <div class="book-section">
@@ -3378,6 +3427,13 @@ function ensureReaderStyles() {
       border-color: var(--accent);
       color: #fff;
     }
+    .peek-sentence { margin-bottom: 0.35rem; }
+    .peek-sentence-en { font-family: inherit; font-size: 0.85rem; color: var(--text-muted, #aab); line-height: 1.5; margin-top: 0.1rem; padding-left: 0.6rem; border-left: 2px solid var(--accent, #c9a227); }
+    .passage-translation-card { margin: 1rem 0; padding: 0.75rem 1rem; border: 1px solid var(--border, #334); border-radius: 12px; background: var(--surface, rgba(255,255,255,0.03)); }
+    .passage-translation-card summary { cursor: pointer; font-weight: 700; }
+    .passage-translation-body { margin-top: 0.7rem; line-height: 1.85; }
+    .second-pass-lock-note { position: fixed; left: 50%; bottom: 5.5rem; transform: translateX(-50%); max-width: 90vw; background: #1b2236; color: #fff; border: 1px solid var(--accent, #c9a227); padding: 0.6rem 0.9rem; border-radius: 10px; font-size: 0.85rem; z-index: 9999; opacity: 0; pointer-events: none; transition: opacity .2s; }
+    .second-pass-lock-note.show { opacity: 1; }
     .t-btn-toggle.disabled {
       opacity: 0.4;
       cursor: not-allowed;
@@ -3676,6 +3732,7 @@ if (typeof window !== 'undefined') {
   window.addWordFromPreview = addWordFromPreview;
   window.addAllPassageWordsToMyWords = addAllPassageWordsToMyWords;
   window.togglePassagePeek = togglePassagePeek;
+  window.togglePeekTranslation = togglePeekTranslation;
   window.toggleAnswerFurigana = toggleAnswerFurigana;
   window.toggleOptionEnglish = toggleOptionEnglish;
   window.returnToPassageReading = returnToPassageReading;
