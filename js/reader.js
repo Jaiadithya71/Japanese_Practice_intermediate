@@ -2320,6 +2320,13 @@ export function showWordGloss(term, anchorEl, reading, lookupId = null) {
   const lesson = readerRuntime.lesson;
   if (!lesson) return;
 
+  // Mark the tapped word while its popup is open; the text itself stays
+  // clean of resting underlines now that every word is tappable.
+  if (anchorEl && anchorEl.classList) {
+    document.querySelectorAll('.gloss-term.gloss-flash').forEach(el => el.classList.remove('gloss-flash'));
+    anchorEl.classList.add('gloss-flash');
+  }
+
   // Surface form and dictionary form are different learning facts.
   const form = lookupId !== null ? lookupEntry(lookupId) : null;
   const base = form ? form[1] : term;
@@ -2357,7 +2364,7 @@ export function showWordGloss(term, anchorEl, reading, lookupId = null) {
   let container = document.getElementById('word-gloss-sheet-container');
   if (!container) {
     // Some phases (answers, review) never rendered the container, which made
-    // underlined-word taps silently dead there. Create it on demand instead.
+    // word-tap popups silently dead there. Create it on demand instead.
     container = document.createElement('div');
     container.id = 'word-gloss-sheet-container';
     document.body.appendChild(container);
@@ -2449,6 +2456,7 @@ export function closeWordGloss() {
     readerRuntime.glossDismissHandlers = null;
   }
   document.querySelectorAll('body > .word-gloss-popup').forEach(el => el.remove());
+  document.querySelectorAll('.gloss-term.gloss-flash').forEach(el => el.classList.remove('gloss-flash'));
   const container = document.getElementById('word-gloss-sheet-container');
   if (container) container.innerHTML = '';
 }
@@ -2778,7 +2786,7 @@ function renderBookQuestionsSection(lesson, questions) {
             <i class="fa-solid fa-check"></i> Check Answers
           </button>
         </div>` : ''}
-      <p class="book-questions-hint">Tapping an underlined word shows its meaning; it never selects an answer.${readerRuntime.elapsedSeconds > 0 ? ` Your measured reading time (${formatTime(readerRuntime.elapsedSeconds)}) is saved with your score.` : ''}</p>`;
+      <p class="book-questions-hint">Tap any word for its reading and meaning; it never selects an answer.${readerRuntime.elapsedSeconds > 0 ? ` Your measured reading time (${formatTime(readerRuntime.elapsedSeconds)}) is saved with your score.` : ''}</p>`;
   } else {
     const r = readerRuntime.lastResults;
     inner = `
@@ -3246,15 +3254,16 @@ function ensureReaderStyles() {
       margin-top: 0.6rem;
     }
     .gloss-term {
-      border-bottom: 1px dashed var(--accent);
-      color: #fff;
+      color: inherit;
       cursor: pointer;
+      border-radius: 2px;
+      transition: background-color 0.2s ease;
     }
     .gloss-term:hover {
-      color: var(--accent);
+      box-shadow: 0 1px 0 0 var(--accent);
     }
-    .gloss-term-fallback {
-      border-bottom-style: dotted;
+    .gloss-term.gloss-flash {
+      background: var(--accent-glow);
     }
     .reading-sticky-toolbar {
       position: sticky;
