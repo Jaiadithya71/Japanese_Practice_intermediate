@@ -83,21 +83,31 @@ export function updatePillarCards() {
 }
 
 export function setHomeGroup(group) {
-  state.activeChapterGroup = group;
+  // The picker is a single Topics sequence now (1-21, C1-C8, R1-R9); the old
+  // Characteristics group is folded in, so any 'characteristics' request - or
+  // a stale stored value - lands on the merged tab.
+  state.activeChapterGroup = 'topic';
   const tabT = document.getElementById('home-tab-topic');
   const tabC = document.getElementById('home-tab-char');
-  if (tabT) tabT.classList.toggle('active', group === 'topic');
-  if (tabC) tabC.classList.toggle('active', group === 'characteristics');
-  if (tabT) tabT.setAttribute('aria-selected', String(group === 'topic'));
-  if (tabC) tabC.setAttribute('aria-selected', String(group === 'characteristics'));
+  if (tabT) tabT.classList.add('active');
+  if (tabC) tabC.classList.remove('active');
+  if (tabT) tabT.setAttribute('aria-selected', 'true');
+  if (tabC) tabC.setAttribute('aria-selected', 'false');
   renderLessonGrid();
   updateHomeLessonControls();
 }
 
 export function chapterKeysForGroup() {
-  const isChar = state.activeChapterGroup !== 'topic';
-  const keys = Object.keys(state.vocabDB).filter(k => { const isCharacteristics = k.startsWith('part2_'); return isCharacteristics === isChar && (isCharacteristics || /^\d+$/.test(k)); });
-  const rank = k => (k.startsWith('review_') ? 1000 + parseInt(k.slice(7), 10) : parseInt(k.replace('part2_', ''), 10));
+  // One merged sequence: textbook Topics 1-21, then the Part 2 characteristics
+  // lessons shown as C1-C8, then the Reading-sourced lessons shown as R1-R9.
+  // Chapter ids themselves are unchanged so progress, selection persistence
+  // and the Test hub keep working.
+  const keys = Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k) || k.startsWith('part2_'));
+  const rank = k => {
+    if (k.startsWith('part2_')) return 30 + parseInt(k.slice(6), 10);
+    const n = parseInt(k, 10);
+    return n <= 30 ? n : n + 8;
+  };
   return keys.sort((a, b) => rank(a) - rank(b));
 }
 
@@ -129,11 +139,9 @@ function homeActiveGroupSelKeys() {
   // tabs (and other views write into it too), so entries from the other group
   // must not count toward - or be drilled from - this tab, where they are
   // invisible. Entries are `chId` (part A) or `chId|B` (kana-first part B).
-  const isChar = state.activeChapterGroup !== 'topic';
   return Array.from(state.selectedChapters).filter(k => {
     const base = String(k).split('|')[0];
-    const isCharacteristics = base.startsWith('part2_');
-    return isCharacteristics === isChar && (isCharacteristics || /^\d+$/.test(base));
+    return base.startsWith('part2_') || /^\d+$/.test(base);
   });
 }
 
@@ -166,7 +174,10 @@ export function renderLessonGrid() {
   chapterKeysForGroup().forEach(chId => {
     const meta = state.chapterMetadata[chId] || {};
     const words = state.vocabDB[chId] || [];
-    const label = String(Number(chId.startsWith('part2_') ? chId.slice(6) : chId));
+    const label = chId.startsWith('part2_')
+      ? 'C' + Number(chId.slice(6))
+      : (Number(chId) > 30 ? 'K' + (Number(chId) - 30)
+        : (Number(chId) > 21 ? 'R' + (Number(chId) - 21) : String(Number(chId))));
     // One compact tile per lesson with small A/B selectors inside, so the
     // list stays short. A: kanji-first (the existing track). B: kana-first -
     // the same words shown by their kana reading, tracked separately from A.
@@ -270,9 +281,7 @@ function updateHomeLessonControls() {
   const direction = document.querySelector('[aria-label="Study direction"]');
   if (direction) direction.value = state.studyDirection;
   const topic = document.getElementById('home-tab-topic');
-  const characteristic = document.getElementById('home-tab-char');
-  if (topic) topic.textContent = `Topics · ${Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k)).length || 21}`;
-  if (characteristic) characteristic.textContent = `Characteristics · ${Object.keys(state.vocabDB).filter(k => k.startsWith('part2_')).length || 8}`;
+  if (topic) topic.textContent = `Topics · ${Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k) || k.startsWith('part2_')).length || 38}`;
   const canStart = selKeys.length > 0;
   const flashcards = document.getElementById('btn-start-selected-study');
   const tests = document.getElementById('btn-start-selected-test');

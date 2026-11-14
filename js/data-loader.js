@@ -14,6 +14,7 @@ const VOCAB_FILES = [
   'data/vocabulary/part1_topics_ch11_15.json',
   'data/vocabulary/part1_topics_ch16_21.json',
   'data/vocabulary/part1_topics_ch22_30_reading.json',
+  'data/vocabulary/part1_topics_ch31_45_kanji.json',
   'data/vocabulary/part2_characteristics_ch01_04.json',
   'data/vocabulary/part2_characteristics_ch05_08.json',
   'data/vocabulary/part3_mock_exams.json'
