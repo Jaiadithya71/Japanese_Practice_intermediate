@@ -1,0 +1,2903 @@
+{
+  "title": "Part 1 Topics Chapters 22-30 (Reading Book Words)",
+  "part": "part_1",
+  "metadata": {
+    "title": "読解テキストのことば - 第1部 22課〜30課",
+    "part": "part_1",
+    "chapters_range": "22-30",
+    "description": "Key vocabulary collected from the Reading Comprehension book lessons, added as extra Topics lessons for flashcard practice. Words already present in lessons 1-21 or other parts are not duplicated.",
+    "version": "1.0.0"
+  },
+  "chapters": [
+    {
+      "metadata": {
+        "chapter": 22,
+        "part": 1,
+        "topic_ja": "読解のことば 1",
+        "topic_en": "Reading Words 1",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 1",
+          "title_en": "Reading Words 1",
+          "words": [
+            {
+              "term_ja": "片づく",
+              "reading": "かたづく",
+              "ruby_html": "<ruby>片づく<rt>かたづく</rt></ruby>",
+              "meaning_en": "to be put in order, to be tidied up"
+            },
+            {
+              "term_ja": "悩まされる",
+              "reading": "なやまされる",
+              "ruby_html": "<ruby>悩まされる<rt>なやまされる</rt></ruby>",
+              "meaning_en": "to be troubled by, to be plagued with"
+            },
+            {
+              "term_ja": "整理",
+              "reading": "せいり",
+              "ruby_html": "<ruby>整理<rt>せいり</rt></ruby>",
+              "meaning_en": "sorting out, discarding unnecessary items"
+            },
+            {
+              "term_ja": "整頓",
+              "reading": "せいとん",
+              "ruby_html": "<ruby>整頓<rt>せいとん</rt></ruby>",
+              "meaning_en": "neat arrangement, organizing items for easy access"
+            },
+            {
+              "term_ja": "配置する",
+              "reading": "はいちする",
+              "ruby_html": "<ruby>配置する<rt>はいちする</rt></ruby>",
+              "meaning_en": "to place, arrange, deploy in position"
+            },
+            {
+              "term_ja": "徹底的",
+              "reading": "てっていてき",
+              "ruby_html": "<ruby>徹底的<rt>てっていてき</rt></ruby>",
+              "meaning_en": "thorough, exhaustive",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "終了する",
+              "reading": "しゅうりょうする",
+              "ruby_html": "<ruby>終了する<rt>しゅうりょうする</rt></ruby>",
+              "meaning_en": "to conclude, to be completed"
+            },
+            {
+              "term_ja": "品物",
+              "reading": "しなもの",
+              "ruby_html": "<ruby>品物<rt>しなもの</rt></ruby>",
+              "meaning_en": "goods, article, product",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "満足させる",
+              "reading": "まんぞくさせる",
+              "ruby_html": "<ruby>満足させる<rt>まんぞくさせる</rt></ruby>",
+              "meaning_en": "to satisfy, bring satisfaction to"
+            },
+            {
+              "term_ja": "要素",
+              "reading": "ようそ",
+              "ruby_html": "<ruby>要素<rt>ようそ</rt></ruby>",
+              "meaning_en": "factor, essential element",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "間違いない",
+              "reading": "まちがいない",
+              "ruby_html": "<ruby>間違いない<rt>まちがいない</rt></ruby>",
+              "meaning_en": "undoubtedly, certain"
+            },
+            {
+              "term_ja": "売り上げ",
+              "reading": "うりあげ",
+              "ruby_html": "<ruby>売り上げ<rt>うりあげ</rt></ruby>",
+              "meaning_en": "sales, proceeds",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "組織",
+              "reading": "そしき",
+              "ruby_html": "<ruby>組織<rt>そしき</rt></ruby>",
+              "meaning_en": "organization",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "困る",
+              "reading": "こまる",
+              "ruby_html": "<ruby>困る<rt>こまる</rt></ruby>",
+              "meaning_en": "to be troubled, in difficulty"
+            },
+            {
+              "term_ja": "助けになる",
+              "reading": "たすけになる",
+              "ruby_html": "<ruby>助けになる<rt>たすけになる</rt></ruby>",
+              "meaning_en": "to be helpful, to assist",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "手に入る",
+              "reading": "てにはいる",
+              "ruby_html": "<ruby>手に入る<rt>てにはいる</rt></ruby>",
+              "meaning_en": "to obtain, come into possession of"
+            },
+            {
+              "term_ja": "地震",
+              "reading": "じしん",
+              "ruby_html": "<ruby>地震<rt>じしん</rt></ruby>",
+              "meaning_en": "earthquake",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "外出する",
+              "reading": "がいしゅつする",
+              "ruby_html": "<ruby>外出する<rt>がいしゅつする</rt></ruby>",
+              "meaning_en": "to go out, to be away from home"
+            },
+            {
+              "term_ja": "夜中",
+              "reading": "よなか",
+              "ruby_html": "<ruby>夜中<rt>よなか</rt></ruby>",
+              "meaning_en": "middle of the night, dead of night",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "亡くなる",
+              "reading": "なくなる",
+              "ruby_html": "<ruby>亡くなる<rt>なくなる</rt></ruby>",
+              "meaning_en": "to pass away, die (euphemistic)"
+            },
+            {
+              "term_ja": "不思議",
+              "reading": "ふしぎ",
+              "ruby_html": "<ruby>不思議<rt>ふしぎ</rt></ruby>",
+              "meaning_en": "mysterious, strange, wonder"
+            },
+            {
+              "term_ja": "揺れる",
+              "reading": "ゆれる",
+              "ruby_html": "<ruby>揺れる<rt>ゆれる</rt></ruby>",
+              "meaning_en": "to shake, sway, tremor"
+            },
+            {
+              "term_ja": "自然に",
+              "reading": "しぜんに",
+              "ruby_html": "<ruby>自然に<rt>しぜんに</rt></ruby>",
+              "meaning_en": "spontaneously, naturally",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "喜ぶ",
+              "reading": "よろこぶ",
+              "ruby_html": "<ruby>喜ぶ<rt>よろこぶ</rt></ruby>",
+              "meaning_en": "to be glad, pleased, rejoice"
+            },
+            {
+              "term_ja": "研究結果",
+              "reading": "けんきゅうけっか",
+              "ruby_html": "<ruby>研究結果<rt>けんきゅうけっか</rt></ruby>",
+              "meaning_en": "research results, study findings",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "仕組み",
+              "reading": "しくみ",
+              "ruby_html": "<ruby>仕組み<rt>しくみ</rt></ruby>",
+              "meaning_en": "mechanism, workings, structure",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "活性酸素",
+              "reading": "かっせいさんそ",
+              "ruby_html": "<ruby>活性酸素<rt>かっせいさんそ</rt></ruby>",
+              "meaning_en": "active oxygen, reactive oxygen species",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "物質",
+              "reading": "ぶっしつ",
+              "ruby_html": "<ruby>物質<rt>ぶっしつ</rt></ruby>",
+              "meaning_en": "substance, material",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "含まれる",
+              "reading": "ふくまれる",
+              "ruby_html": "<ruby>含まれる<rt>ふくまれる</rt></ruby>",
+              "meaning_en": "to be contained, included"
+            },
+            {
+              "term_ja": "働き",
+              "reading": "はたらき",
+              "ruby_html": "<ruby>働き<rt>はたらき</rt></ruby>",
+              "meaning_en": "function, action, operation",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "美容",
+              "reading": "びよう",
+              "ruby_html": "<ruby>美容<rt>びよう</rt></ruby>",
+              "meaning_en": "beauty, cosmetics, skin aesthetics",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "冷房",
+              "reading": "れいぼう",
+              "ruby_html": "<ruby>冷房<rt>れいぼう</rt></ruby>",
+              "meaning_en": "air conditioning, cooling",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "快適",
+              "reading": "かいてき",
+              "ruby_html": "<ruby>快適<rt>かいてき</rt></ruby>",
+              "meaning_en": "comfortable, agreeable",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "調節する",
+              "reading": "ちょうせつする",
+              "ruby_html": "<ruby>調節する<rt>ちょうせつする</rt></ruby>",
+              "meaning_en": "to regulate, adjust"
+            },
+            {
+              "term_ja": "神経",
+              "reading": "しんけい",
+              "ruby_html": "<ruby>神経<rt>しんけい</rt></ruby>",
+              "meaning_en": "nerves, nervous system",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "室外",
+              "reading": "しつがい",
+              "ruby_html": "<ruby>室外<rt>しつがい</rt></ruby>",
+              "meaning_en": "outdoors, outside room",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "室内",
+              "reading": "しつない",
+              "ruby_html": "<ruby>室内<rt>しつない</rt></ruby>",
+              "meaning_en": "indoors, inside room",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "温度差",
+              "reading": "おんどさ",
+              "ruby_html": "<ruby>温度差<rt>おんどさ</rt></ruby>",
+              "meaning_en": "temperature difference",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "症状",
+              "reading": "しょうじょう",
+              "ruby_html": "<ruby>症状<rt>しょうじょう</rt></ruby>",
+              "meaning_en": "symptoms, condition",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "具合",
+              "reading": "ぐあい",
+              "ruby_html": "<ruby>具合<rt>ぐあい</rt></ruby>",
+              "meaning_en": "health condition, state",
+              "part_of_speech": "名詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 23,
+        "part": 1,
+        "topic_ja": "読解のことば 2",
+        "topic_en": "Reading Words 2",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 2",
+          "title_en": "Reading Words 2",
+          "words": [
+            {
+              "term_ja": "治る",
+              "reading": "なおる",
+              "ruby_html": "<ruby>治る<rt>なおる</rt></ruby>",
+              "meaning_en": "to heal, get better, recover"
+            },
+            {
+              "term_ja": "体調不良",
+              "reading": "たいちょうふりょう",
+              "ruby_html": "<ruby>体調不良<rt>たいちょうふりょう</rt></ruby>",
+              "meaning_en": "poor physical health, ailment",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "思わぬ",
+              "reading": "おもわぬ",
+              "ruby_html": "<ruby>思わぬ<rt>おもわぬ</rt></ruby>",
+              "meaning_en": "unexpected, unforeseen"
+            },
+            {
+              "term_ja": "どころか",
+              "reading": "どころか",
+              "ruby_html": "どころか",
+              "meaning_en": "far from, let alone"
+            },
+            {
+              "term_ja": "かざり",
+              "reading": "かざり",
+              "ruby_html": "かざり",
+              "meaning_en": "decoration, ornament",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "期待",
+              "reading": "きたい",
+              "ruby_html": "<ruby>期待<rt>きたい</rt></ruby>",
+              "meaning_en": "expectation, anticipation"
+            },
+            {
+              "term_ja": "集団",
+              "reading": "しゅうだん",
+              "ruby_html": "<ruby>集団<rt>しゅうだん</rt></ruby>",
+              "meaning_en": "group, crowd",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "運ぶ",
+              "reading": "はこぶ",
+              "ruby_html": "<ruby>運ぶ<rt>はこぶ</rt></ruby>",
+              "meaning_en": "to carry, convey, serve"
+            },
+            {
+              "term_ja": "大声",
+              "reading": "おおごえ",
+              "ruby_html": "<ruby>大声<rt>おおごえ</rt></ruby>",
+              "meaning_en": "loud voice",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "聞かされる",
+              "reading": "きかされる",
+              "ruby_html": "<ruby>聞かされる<rt>きかされる</rt></ruby>",
+              "meaning_en": "to be forced to listen to (causative-passive)",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "どうでもいい",
+              "reading": "どうでもいい",
+              "ruby_html": "どうでもいい",
+              "meaning_en": "doesn't matter, indifferent",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "取り上げる",
+              "reading": "とりあげる",
+              "ruby_html": "<ruby>取り上げる<rt>とりあげる</rt></ruby>",
+              "meaning_en": "to take up, feature, adopt"
+            },
+            {
+              "term_ja": "特徴",
+              "reading": "とくちょう",
+              "ruby_html": "<ruby>特徴<rt>とくちょう</rt></ruby>",
+              "meaning_en": "characteristic, distinctive feature",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "文型",
+              "reading": "ぶんけい",
+              "ruby_html": "<ruby>文型<rt>ぶんけい</rt></ruby>",
+              "meaning_en": "sentence pattern",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "紹介",
+              "reading": "しょうかい",
+              "ruby_html": "<ruby>紹介<rt>しょうかい</rt></ruby>",
+              "meaning_en": "introduction, presentation"
+            },
+            {
+              "term_ja": "短文",
+              "reading": "たんぶん",
+              "ruby_html": "<ruby>短文<rt>たんぶん</rt></ruby>",
+              "meaning_en": "short text / short sentence",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "長文",
+              "reading": "ちょうぶん",
+              "ruby_html": "<ruby>長文<rt>ちょうぶん</rt></ruby>",
+              "meaning_en": "long text / long passage",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "語句",
+              "reading": "ごく",
+              "ruby_html": "<ruby>語句<rt>ごく</rt></ruby>",
+              "meaning_en": "words and phrases",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "形式",
+              "reading": "けいしき",
+              "ruby_html": "<ruby>形式<rt>けいしき</rt></ruby>",
+              "meaning_en": "form, format, style",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "注意点",
+              "reading": "ちゅういてん",
+              "ruby_html": "<ruby>注意点<rt>ちゅういてん</rt></ruby>",
+              "meaning_en": "points to note / precautions",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "^o^/",
+              "reading": "^o^/",
+              "ruby_html": "^o^/",
+              "meaning_en": "笑って手を振っている様子 (waving and smiling",
+              "meaning_zh": "笑着挥手的样子)"
+            },
+            {
+              "term_ja": "やってます",
+              "reading": "やってます",
+              "ruby_html": "やってます",
+              "meaning_en": "＝やっています (doing / getting along)"
+            },
+            {
+              "term_ja": "^^",
+              "reading": "^^",
+              "ruby_html": "^^",
+              "meaning_en": "笑っている様子 (smiling",
+              "meaning_zh": "笑着的样子)"
+            },
+            {
+              "term_ja": "♪♪",
+              "reading": "♪♪",
+              "ruby_html": "♪♪",
+              "meaning_en": "嬉しい、楽しい気持ち (happy, having fun",
+              "meaning_zh": "喜悦、快乐的心情)"
+            },
+            {
+              "term_ja": "都合のいい",
+              "reading": "つごうのいい",
+              "ruby_html": "<ruby>都合のいい<rt>つごうのいい</rt></ruby>",
+              "meaning_en": "convenient, suitable (for one's schedule)",
+              "part_of_speech": "い形容詞"
+            },
+            {
+              "term_ja": "(お元気で)お過ごしのことと思います",
+              "reading": "(おげんきで)おすごしのこととおもいます",
+              "ruby_html": "<ruby>(お元気で)お過ごしのことと思います<rt>(おげんきで)おすごしのこととおもいます</rt></ruby>",
+              "meaning_en": "I hope things are going well for you",
+              "meaning_zh": "您身体还好吧",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "順調に",
+              "reading": "じゅんちょうに",
+              "ruby_html": "<ruby>順調に<rt>じゅんちょうに</rt></ruby>",
+              "meaning_en": "smoothly, favorably",
+              "meaning_zh": "顺利",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "さて",
+              "reading": "さて",
+              "ruby_html": "さて",
+              "meaning_en": "well..., now then (transition to main topic)",
+              "meaning_zh": "那么",
+              "part_of_speech": "接続詞"
+            },
+            {
+              "term_ja": "(お体にお気をつけて)お過ごしください",
+              "reading": "(おからだにおきをつけて)おすごしください",
+              "ruby_html": "<ruby>(お体にお気をつけて)お過ごしください<rt>(おからだにおきをつけて)おすごしください</rt></ruby>",
+              "meaning_en": "Take care, look after yourself",
+              "meaning_zh": "请您多保重",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "さしあげる",
+              "reading": "さしあげる",
+              "ruby_html": "さしあげる",
+              "meaning_en": "to give (humble/polite expression for あげる)",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "役に立つ",
+              "reading": "やくにたつ",
+              "ruby_html": "<ruby>役に立つ<rt>やくにたつ</rt></ruby>",
+              "meaning_en": "to be helpful, to be useful",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "ご遠慮ください",
+              "reading": "ごえんりょください",
+              "ruby_html": "<ruby>ご遠慮ください<rt>ごえんりょください</rt></ruby>",
+              "meaning_en": "Please do not / Please refrain from",
+              "meaning_zh": "请不要",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "故障中",
+              "reading": "こしょうちゅう",
+              "ruby_html": "<ruby>故障中<rt>こしょうちゅう</rt></ruby>",
+              "meaning_en": "out of order, broken down",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "修理",
+              "reading": "しゅうり",
+              "ruby_html": "<ruby>修理<rt>しゅうり</rt></ruby>",
+              "meaning_en": "repair, servicing"
+            },
+            {
+              "term_ja": "事務室",
+              "reading": "じむしつ",
+              "ruby_html": "<ruby>事務室<rt>じむしつ</rt></ruby>",
+              "meaning_en": "office room",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "資料準備室",
+              "reading": "しりょうじゅんびしつ",
+              "ruby_html": "<ruby>資料準備室<rt>しりょうじゅんびしつ</rt></ruby>",
+              "meaning_en": "document preparation room",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "資料管理室",
+              "reading": "しりょうかんりしつ",
+              "ruby_html": "<ruby>資料管理室<rt>しりょうかんりしつ</rt></ruby>",
+              "meaning_en": "document management room",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "調味料",
+              "reading": "ちょうみりょう",
+              "ruby_html": "<ruby>調味料<rt>ちょうみりょう</rt></ruby>",
+              "meaning_en": "seasoning",
+              "meaning_zh": "调味料",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "大さじ、小さじ",
+              "reading": "おおさじ、こさじ",
+              "ruby_html": "<ruby>大さじ、小さじ<rt>おおさじ、こさじ</rt></ruby>",
+              "meaning_en": "tablespoon, teaspoon",
+              "meaning_zh": "大勺、小勺",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "切る",
+              "reading": "きる",
+              "ruby_html": "<ruby>切る<rt>きる</rt></ruby>",
+              "meaning_en": "to cut",
+              "meaning_zh": "切",
+              "part_of_speech": "動詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 24,
+        "part": 1,
+        "topic_ja": "読解のことば 3",
+        "topic_en": "Reading Words 3",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 3",
+          "title_en": "Reading Words 3",
+          "words": [
+            {
+              "term_ja": "火にかける",
+              "reading": "ひにかける",
+              "ruby_html": "<ruby>火にかける<rt>ひにかける</rt></ruby>",
+              "meaning_en": "to cook on a stove, put over heat",
+              "meaning_zh": "开火加热"
+            },
+            {
+              "term_ja": "強火、中火、弱火",
+              "reading": "つよび、ちゅうび、よわび",
+              "ruby_html": "<ruby>強火、中火、弱火<rt>つよび、ちゅうび、よわび</rt></ruby>",
+              "meaning_en": "high heat, medium heat, low heat",
+              "meaning_zh": "大火、中火、小火",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "煮る／煮える",
+              "reading": "にる／にえる",
+              "ruby_html": "<ruby>煮る／煮える<rt>にる／にえる</rt></ruby>",
+              "meaning_en": "boil / be boiled (simmer / be simmered)",
+              "meaning_zh": "煮/炖",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "迷惑をかける",
+              "reading": "めいわくをかける",
+              "ruby_html": "<ruby>迷惑をかける<rt>めいわくをかける</rt></ruby>",
+              "meaning_en": "To cause inconvenience",
+              "meaning_zh": "添麻烦",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "す(る)べきではない",
+              "reading": "す(る)べきではない",
+              "ruby_html": "す(る)べきではない",
+              "meaning_en": "Should not do",
+              "meaning_zh": "不应该做",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "不快な",
+              "reading": "ふかいな",
+              "ruby_html": "<ruby>不快な<rt>ふかいな</rt></ruby>",
+              "meaning_en": "Unpleasant, disagreeable",
+              "meaning_zh": "不高兴、不快",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "印象を与える",
+              "reading": "いんしょうをあたえる",
+              "ruby_html": "<ruby>印象を与える<rt>いんしょうをあたえる</rt></ruby>",
+              "meaning_en": "To create an impression",
+              "meaning_zh": "留下印象",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "乗客",
+              "reading": "じょうきゃく",
+              "ruby_html": "<ruby>乗客<rt>じょうきゃく</rt></ruby>",
+              "meaning_en": "passenger",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "失礼",
+              "reading": "しつれい",
+              "ruby_html": "<ruby>失礼<rt>しつれい</rt></ruby>",
+              "meaning_en": "rude, impolite, disrespectful"
+            },
+            {
+              "term_ja": "幼稚園",
+              "reading": "ようちえん",
+              "ruby_html": "<ruby>幼稚園<rt>ようちえん</rt></ruby>",
+              "meaning_en": "kindergarten",
+              "meaning_zh": "幼儿园",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "校庭",
+              "reading": "こうてい",
+              "ruby_html": "<ruby>校庭<rt>こうてい</rt></ruby>",
+              "meaning_en": "schoolyard, school grounds",
+              "meaning_zh": "校园，操场",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "素早く",
+              "reading": "すばやく",
+              "ruby_html": "<ruby>素早く<rt>すばやく</rt></ruby>",
+              "meaning_en": "quickly, promptly",
+              "meaning_zh": "敏捷地，迅速地",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "〜のたびに",
+              "reading": "〜のたびに",
+              "ruby_html": "〜のたびに",
+              "meaning_en": "every time, whenever",
+              "meaning_zh": "每当，每次",
+              "part_of_speech": "文法"
+            },
+            {
+              "term_ja": "耳にする",
+              "reading": "みみにする",
+              "ruby_html": "<ruby>耳にする<rt>みみにする</rt></ruby>",
+              "meaning_en": "to hear",
+              "meaning_zh": "听到",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "〜ない（人）はいない",
+              "reading": "〜ない（ひと）はいない",
+              "ruby_html": "<ruby>〜ない（人）はいない<rt>〜ない（ひと）はいない</rt></ruby>",
+              "meaning_en": "there is no one who doesn't...",
+              "meaning_zh": "没有不……的人",
+              "part_of_speech": "文法"
+            },
+            {
+              "term_ja": "〜ほど〜",
+              "reading": "〜ほど〜",
+              "ruby_html": "〜ほど〜",
+              "meaning_en": "to the extent that...",
+              "meaning_zh": "到了……的地步",
+              "part_of_speech": "文法"
+            },
+            {
+              "term_ja": "身につける",
+              "reading": "みにつける",
+              "ruby_html": "<ruby>身につける<rt>みにつける</rt></ruby>",
+              "meaning_en": "to acquire, master, learn",
+              "meaning_zh": "掌握，养成"
+            },
+            {
+              "term_ja": "感激する",
+              "reading": "かんげきする",
+              "ruby_html": "<ruby>感激する<rt>かんげきする</rt></ruby>",
+              "meaning_en": "to be deeply moved, deeply touched",
+              "meaning_zh": "感激，感动",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "姿",
+              "reading": "すがた",
+              "ruby_html": "<ruby>姿<rt>すがた</rt></ruby>",
+              "meaning_en": "figure, appearance, shape",
+              "meaning_zh": "姿态，身影",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "そういえば",
+              "reading": "そういえば",
+              "ruby_html": "そういえば",
+              "meaning_en": "come to think of it, that reminds me",
+              "meaning_zh": "话说回来，这么说来",
+              "part_of_speech": "接続詞"
+            },
+            {
+              "term_ja": "寒椿",
+              "reading": "かんつばき",
+              "ruby_html": "<ruby>寒椿<rt>かんつばき</rt></ruby>",
+              "meaning_en": "winter camellia",
+              "meaning_zh": "冬山茶花",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "先取りする",
+              "reading": "さきどりする",
+              "ruby_html": "<ruby>先取りする<rt>さきどりする</rt></ruby>",
+              "meaning_en": "to anticipate, capture ahead of time",
+              "meaning_zh": "抢先，超前",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "移り変わり",
+              "reading": "うつりかわり",
+              "ruby_html": "<ruby>移り変わり<rt>うつりかわり</rt></ruby>",
+              "meaning_en": "transition, changing",
+              "meaning_zh": "变迁，更替",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "兆し",
+              "reading": "きざし",
+              "ruby_html": "<ruby>兆し<rt>きざし</rt></ruby>",
+              "meaning_en": "sign, omen, indication",
+              "meaning_zh": "迹象，兆头",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "膨らむ",
+              "reading": "ふくらむ",
+              "ruby_html": "<ruby>膨らむ<rt>ふくらむ</rt></ruby>",
+              "meaning_en": "to swell, bud, expand",
+              "meaning_zh": "膨胀，鼓起",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "情報検索",
+              "reading": "じょうほうけんさく",
+              "ruby_html": "<ruby>情報検索<rt>じょうほうけんさく</rt></ruby>",
+              "meaning_en": "information search",
+              "meaning_zh": "信息检索",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "広告",
+              "reading": "こうこく",
+              "ruby_html": "<ruby>広告<rt>こうこく</rt></ruby>",
+              "meaning_en": "advertisement",
+              "meaning_zh": "广告",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "お知らせ",
+              "reading": "おしらせ",
+              "ruby_html": "<ruby>お知らせ<rt>おしらせ</rt></ruby>",
+              "meaning_en": "notice, announcement",
+              "meaning_zh": "通知，告示",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "見出し",
+              "reading": "みだし",
+              "ruby_html": "<ruby>見出し<rt>みだし</rt></ruby>",
+              "meaning_en": "heading, headline",
+              "meaning_zh": "标题",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "条件",
+              "reading": "じょうけん",
+              "ruby_html": "<ruby>条件<rt>じょうけん</rt></ruby>",
+              "meaning_en": "condition, requirement",
+              "meaning_zh": "条件",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "該当箇所",
+              "reading": "がいとうかしょ",
+              "ruby_html": "<ruby>該当箇所<rt>がいとうかしょ</rt></ruby>",
+              "meaning_en": "relevant section, corresponding part",
+              "meaning_zh": "相应位置",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "乗車券",
+              "reading": "じょうしゃけん",
+              "ruby_html": "<ruby>乗車券<rt>じょうしゃけん</rt></ruby>",
+              "meaning_en": "ticket (bus/train)",
+              "meaning_zh": "乘车券",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "共通入場券",
+              "reading": "きょうつうにゅうじょうけん",
+              "ruby_html": "<ruby>共通入場券<rt>きょうつうにゅうじょうけん</rt></ruby>",
+              "meaning_en": "combined admission ticket",
+              "meaning_zh": "通用门票",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "お得な",
+              "reading": "おとくな",
+              "ruby_html": "<ruby>お得な<rt>おとくな</rt></ruby>",
+              "meaning_en": "bargain, advantageous",
+              "meaning_zh": "划算的，优惠的",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "セット",
+              "reading": "セット",
+              "ruby_html": "セット",
+              "meaning_en": "set, bundle",
+              "meaning_zh": "套票，组",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "発売期間",
+              "reading": "はつばいきかん",
+              "ruby_html": "<ruby>発売期間<rt>はつばいきかん</rt></ruby>",
+              "meaning_en": "sales period",
+              "meaning_zh": "发售期间",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "有効期間",
+              "reading": "ゆうこうきかん",
+              "ruby_html": "<ruby>有効期間<rt>ゆうこうきかん</rt></ruby>",
+              "meaning_en": "validity period",
+              "meaning_zh": "有效期",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜限り",
+              "reading": "〜かぎり",
+              "ruby_html": "<ruby>〜限り<rt>〜かぎり</rt></ruby>",
+              "meaning_en": "only, limited to",
+              "meaning_zh": "仅限"
+            },
+            {
+              "term_ja": "通常",
+              "reading": "つうじょう",
+              "ruby_html": "<ruby>通常<rt>つうじょう</rt></ruby>",
+              "meaning_en": "normal, regular",
+              "meaning_zh": "通常，平时",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "窓口",
+              "reading": "まどぐち",
+              "ruby_html": "<ruby>窓口<rt>まどぐち</rt></ruby>",
+              "meaning_en": "counter, ticket window",
+              "meaning_zh": "窗口，服务台",
+              "part_of_speech": "名詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 25,
+        "part": 1,
+        "topic_ja": "読解のことば 4",
+        "topic_en": "Reading Words 4",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 4",
+          "title_en": "Reading Words 4",
+          "words": [
+            {
+              "term_ja": "対象",
+              "reading": "たいしょう",
+              "ruby_html": "<ruby>対象<rt>たいしょう</rt></ruby>",
+              "meaning_en": "target audience, eligibility",
+              "meaning_zh": "对象",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "在住",
+              "reading": "ざいじゅう",
+              "ruby_html": "<ruby>在住<rt>ざいじゅう</rt></ruby>",
+              "meaning_en": "residing in, living in",
+              "meaning_zh": "居住",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "定員",
+              "reading": "ていいん",
+              "ruby_html": "<ruby>定員<rt>ていいん</rt></ruby>",
+              "meaning_en": "quota, capacity",
+              "meaning_zh": "定员，定额人数",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "費用",
+              "reading": "ひよう",
+              "ruby_html": "<ruby>費用<rt>ひよう</rt></ruby>",
+              "meaning_en": "cost, fee, expense",
+              "meaning_zh": "费用",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "申し込み",
+              "reading": "もうしこみ",
+              "ruby_html": "<ruby>申し込み<rt>もうしこみ</rt></ruby>",
+              "meaning_en": "application, entry",
+              "meaning_zh": "申请，报名",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "往復はがき",
+              "reading": "おうふくはがき",
+              "ruby_html": "<ruby>往復はがき<rt>おうふくはがき</rt></ruby>",
+              "meaning_en": "round-trip postcard",
+              "meaning_zh": "往返明信片",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "発送する",
+              "reading": "はっそうする",
+              "ruby_html": "<ruby>発送する<rt>はっそうする</rt></ruby>",
+              "meaning_en": "to send, dispatch",
+              "meaning_zh": "寄送，发出",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "宛て先",
+              "reading": "あてさき",
+              "ruby_html": "<ruby>宛て先<rt>あてさき</rt></ruby>",
+              "meaning_en": "address, destination",
+              "meaning_zh": "寄往地址，收件人",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "問い合わせ先",
+              "reading": "といあわせさき",
+              "ruby_html": "<ruby>問い合わせ先<rt>といあわせさき</rt></ruby>",
+              "meaning_en": "contact for inquiries",
+              "meaning_zh": "咨询联络处",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "必着",
+              "reading": "ひっちゃく",
+              "ruby_html": "<ruby>必着<rt>ひっちゃく</rt></ruby>",
+              "meaning_en": "must arrive by date",
+              "meaning_zh": "必达，务必送达",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "上映会",
+              "reading": "じょうえいかい",
+              "ruby_html": "<ruby>上映会<rt>じょうえいかい</rt></ruby>",
+              "meaning_en": "film screening event",
+              "meaning_zh": "电影放映会",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "視聴覚室",
+              "reading": "しちょうかくしつ",
+              "ruby_html": "<ruby>視聴覚室<rt>しちょうかくしつ</rt></ruby>",
+              "meaning_en": "audiovisual room",
+              "meaning_zh": "视听室",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "先着順",
+              "reading": "せんちゃくじゅん",
+              "ruby_html": "<ruby>先着順<rt>せんちゃくじゅん</rt></ruby>",
+              "meaning_en": "first-come, first-served basis",
+              "meaning_zh": "先到顺序",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "幼児",
+              "reading": "ようじ",
+              "ruby_html": "<ruby>幼児<rt>ようじ</rt></ruby>",
+              "meaning_en": "young child, infant (under school age)",
+              "meaning_zh": "幼儿",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "児童",
+              "reading": "じどう",
+              "ruby_html": "<ruby>児童<rt>じどう</rt></ruby>",
+              "meaning_en": "children, juveniles",
+              "meaning_zh": "儿童",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "保護者",
+              "reading": "ほごしゃ",
+              "ruby_html": "<ruby>保護者<rt>ほごしゃ</rt></ruby>",
+              "meaning_en": "guardian, parent",
+              "meaning_zh": "监护人，家长",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ほのぼの",
+              "reading": "ほのぼの",
+              "ruby_html": "ほのぼの",
+              "meaning_en": "heartwarming, peaceful and gentle",
+              "meaning_zh": "温暖人心的",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "絆",
+              "reading": "きずな",
+              "ruby_html": "<ruby>絆<rt>きずな</rt></ruby>",
+              "meaning_en": "bonds, emotional ties",
+              "meaning_zh": "羁绊，纽带",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "固くお断りする",
+              "reading": "かたくおことわりする",
+              "ruby_html": "<ruby>固くお断りする<rt>かたくおことわりする</rt></ruby>",
+              "meaning_en": "to strictly refuse/prohibit",
+              "meaning_zh": "坚决拒绝，严禁",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "合唱",
+              "reading": "がっしょう",
+              "ruby_html": "<ruby>合唱<rt>がっしょう</rt></ruby>",
+              "meaning_en": "chorus, choir singing",
+              "meaning_zh": "合唱",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "開演",
+              "reading": "かいえん",
+              "ruby_html": "<ruby>開演<rt>かいえん</rt></ruby>",
+              "meaning_en": "curtain time, performance start",
+              "meaning_zh": "开演",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "開場",
+              "reading": "かいじょう",
+              "ruby_html": "<ruby>開場<rt>かいじょう</rt></ruby>",
+              "meaning_en": "doors open, hall opening",
+              "meaning_zh": "开门进场",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "就学前",
+              "reading": "しゅうがくまえ",
+              "ruby_html": "<ruby>就学前<rt>しゅうがくまえ</rt></ruby>",
+              "meaning_en": "preschool, before entering school",
+              "meaning_zh": "学龄前",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "私語",
+              "reading": "しご",
+              "ruby_html": "<ruby>私語<rt>しご</rt></ruby>",
+              "meaning_en": "whispering, private talking",
+              "meaning_zh": "私下谈话",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "お控えください",
+              "reading": "おひかえください",
+              "ruby_html": "<ruby>お控えください<rt>おひかえください</rt></ruby>",
+              "meaning_en": "please refrain from",
+              "meaning_zh": "请勿，请克制",
+              "part_of_speech": "表現"
+            },
+            {
+              "term_ja": "録音",
+              "reading": "ろくおん",
+              "ruby_html": "<ruby>録音<rt>ろくおん</rt></ruby>",
+              "meaning_en": "sound recording",
+              "meaning_zh": "录音",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "整理券",
+              "reading": "せいりけん",
+              "ruby_html": "<ruby>整理券<rt>せいりけん</rt></ruby>",
+              "meaning_en": "numbered ticket",
+              "meaning_zh": "整理券，号码牌",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "運転停止",
+              "reading": "うんてんていし",
+              "ruby_html": "<ruby>運転停止<rt>うんてんていし</rt></ruby>",
+              "meaning_en": "service suspension, shutdown",
+              "meaning_zh": "停止运行",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "定期点検",
+              "reading": "ていきてんけん",
+              "ruby_html": "<ruby>定期点検<rt>ていきてんけん</rt></ruby>",
+              "meaning_en": "periodic inspection",
+              "meaning_zh": "定期检修",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "東館",
+              "reading": "ひがしかん",
+              "ruby_html": "<ruby>東館<rt>ひがしかん</rt></ruby>",
+              "meaning_en": "East Wing",
+              "meaning_zh": "东馆",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "西館",
+              "reading": "にしかん",
+              "ruby_html": "<ruby>西館<rt>にしかん</rt></ruby>",
+              "meaning_en": "West Wing",
+              "meaning_zh": "西馆",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "北館",
+              "reading": "きたかん",
+              "ruby_html": "<ruby>北館<rt>きたかん</rt></ruby>",
+              "meaning_en": "North Wing",
+              "meaning_zh": "北馆",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "エスカレーター",
+              "reading": "エスカレーター",
+              "ruby_html": "エスカレーター",
+              "meaning_en": "escalator",
+              "meaning_zh": "自动扶梯",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "非常階段",
+              "reading": "ひじょうかいだん",
+              "ruby_html": "<ruby>非常階段<rt>ひじょうかいだん</rt></ruby>",
+              "meaning_en": "emergency stairs",
+              "meaning_zh": "应急楼梯",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "進捗状況",
+              "reading": "しんちょくじょうきょう",
+              "ruby_html": "<ruby>進捗状況<rt>しんちょくじょうきょう</rt></ruby>",
+              "meaning_en": "progress status",
+              "meaning_zh": "进展情况",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "多少前後する",
+              "reading": "たしょうぜんごする",
+              "ruby_html": "<ruby>多少前後する<rt>たしょうぜんごする</rt></ruby>",
+              "meaning_en": "to shift/vary slightly",
+              "meaning_zh": "略有前后变动",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "内線",
+              "reading": "ないせん",
+              "ruby_html": "<ruby>内線<rt>ないせん</rt></ruby>",
+              "meaning_en": "phone extension",
+              "meaning_zh": "分机",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "錠剤",
+              "reading": "じょうざい",
+              "ruby_html": "<ruby>錠剤<rt>じょうざい</rt></ruby>",
+              "meaning_en": "tablet, pill",
+              "meaning_zh": "药片",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "カプセル",
+              "reading": "カプセル",
+              "ruby_html": "カプセル",
+              "meaning_en": "capsule",
+              "meaning_zh": "胶囊",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "食後",
+              "reading": "しょくご",
+              "ruby_html": "<ruby>食後<rt>しょくご</rt></ruby>",
+              "meaning_en": "after meals",
+              "meaning_zh": "饭后",
+              "part_of_speech": "名詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 26,
+        "part": 1,
+        "topic_ja": "読解のことば 5",
+        "topic_en": "Reading Words 5",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 5",
+          "title_en": "Reading Words 5",
+          "words": [
+            {
+              "term_ja": "服用",
+              "reading": "ふくよう",
+              "ruby_html": "<ruby>服用<rt>ふくよう</rt></ruby>",
+              "meaning_en": "taking medicine",
+              "meaning_zh": "服用（药物）",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ぬるま湯",
+              "reading": "ぬるまゆ",
+              "ruby_html": "<ruby>ぬるま湯<rt>ぬるまゆ</rt></ruby>",
+              "meaning_en": "lukewarm water",
+              "meaning_zh": "温水",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "噛む",
+              "reading": "かむ",
+              "ruby_html": "<ruby>噛む<rt>かむ</rt></ruby>",
+              "meaning_en": "to chew, bite",
+              "meaning_zh": "咀嚼，咬",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "飲み忘れる",
+              "reading": "のみわすれる",
+              "ruby_html": "<ruby>飲み忘れる<rt>のみわすれる</rt></ruby>",
+              "meaning_en": "to forget to take medicine",
+              "meaning_zh": "忘记吃药",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "飛ばす",
+              "reading": "とばす",
+              "ruby_html": "<ruby>飛ばす<rt>とばす</rt></ruby>",
+              "meaning_en": "to skip, omit",
+              "meaning_zh": "跳过，略过",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "胃腸薬",
+              "reading": "いちょうやく",
+              "ruby_html": "<ruby>胃腸薬<rt>いちょうやく</rt></ruby>",
+              "meaning_en": "gastrointestinal medicine",
+              "meaning_zh": "肠胃药",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "実態調査",
+              "reading": "じったいちょうさ",
+              "ruby_html": "<ruby>実態調査<rt>じったいちょうさ</rt></ruby>",
+              "meaning_en": "fact-finding survey, empirical study",
+              "meaning_zh": "实际情况调查",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "割合",
+              "reading": "わりあい",
+              "ruby_html": "<ruby>割合<rt>わりあい</rt></ruby>",
+              "meaning_en": "ratio, percentage, proportion",
+              "meaning_zh": "比例",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "生活費",
+              "reading": "せいかつひ",
+              "ruby_html": "<ruby>生活費<rt>せいかつひ</rt></ruby>",
+              "meaning_en": "living expenses",
+              "meaning_zh": "生活费",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "稼ぐ",
+              "reading": "かせぐ",
+              "ruby_html": "<ruby>稼ぐ<rt>かせぐ</rt></ruby>",
+              "meaning_en": "to earn (money)",
+              "meaning_zh": "赚（钱）",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "交際費",
+              "reading": "こうさいひ",
+              "ruby_html": "<ruby>交際費<rt>こうさいひ</rt></ruby>",
+              "meaning_en": "social expenses, entertainment expenses",
+              "meaning_zh": "应酬费，交际费",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "社会経験",
+              "reading": "しゃかいけいけん",
+              "ruby_html": "<ruby>社会経験<rt>しゃかいけいけん</rt></ruby>",
+              "meaning_en": "social experience, real-world experience",
+              "meaning_zh": "社会经验",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "就職活動",
+              "reading": "しゅうしょくかつどう",
+              "ruby_html": "<ruby>就職活動<rt>しゅうしょくかつどう</rt></ruby>",
+              "meaning_en": "job hunting",
+              "meaning_zh": "求职活动",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "役立てる",
+              "reading": "やくだてる",
+              "ruby_html": "<ruby>役立てる<rt>やくだてる</rt></ruby>",
+              "meaning_en": "to put to use, apply toward",
+              "meaning_zh": "用于，使起作用",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "見据える",
+              "reading": "みすえる",
+              "ruby_html": "<ruby>見据える<rt>みすえる</rt></ruby>",
+              "meaning_en": "to look ahead to, keep in view",
+              "meaning_zh": "着眼于，看清",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "占める",
+              "reading": "しめる",
+              "ruby_html": "<ruby>占める<rt>しめる</rt></ruby>",
+              "meaning_en": "to account for, occupy",
+              "meaning_zh": "占（比例）",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "発送完了",
+              "reading": "はっそうかんりょう",
+              "ruby_html": "<ruby>発送完了<rt>はっそうかんりょう</rt></ruby>",
+              "meaning_en": "shipment completed, dispatch complete",
+              "meaning_zh": "发货完成",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "手続き",
+              "reading": "てつづき",
+              "ruby_html": "<ruby>手続き<rt>てつづき</rt></ruby>",
+              "meaning_en": "procedure, formality",
+              "meaning_zh": "手续",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "お届け先",
+              "reading": "おとどけさき",
+              "ruby_html": "<ruby>お届け先<rt>おとどけさき</rt></ruby>",
+              "meaning_en": "shipping address, delivery recipient",
+              "meaning_zh": "收件人，送达地址",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "配達希望日時",
+              "reading": "はいたつきぼうにちじ",
+              "ruby_html": "<ruby>配達希望日時<rt>はいたつきぼうにちじ</rt></ruby>",
+              "meaning_en": "desired delivery date and time",
+              "meaning_zh": "指定送达日期与时间",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "一括払い",
+              "reading": "いっかつばらい",
+              "ruby_html": "<ruby>一括払い<rt>いっかつばらい</rt></ruby>",
+              "meaning_en": "lump-sum payment, single payment",
+              "meaning_zh": "一次性付清",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "配送状況",
+              "reading": "はいそうじょうきょう",
+              "ruby_html": "<ruby>配送状況<rt>はいそうじょうきょう</rt></ruby>",
+              "meaning_en": "delivery tracking status",
+              "meaning_zh": "配送物流状态",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "お客様情報",
+              "reading": "おきゃくさまじょうほう",
+              "ruby_html": "<ruby>お客様情報<rt>おきゃくさまじょうほう</rt></ruby>",
+              "meaning_en": "Customer Information",
+              "meaning_zh": "客户信息",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "伝票番号",
+              "reading": "でんぴょうばんごう",
+              "ruby_html": "<ruby>伝票番号<rt>でんぴょうばんごう</rt></ruby>",
+              "meaning_en": "tracking number, slip number",
+              "meaning_zh": "快递单号",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "特選",
+              "reading": "とくせん",
+              "ruby_html": "<ruby>特選<rt>とくせん</rt></ruby>",
+              "meaning_en": "specially selected",
+              "meaning_zh": "特选，精选",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "桐箱入り",
+              "reading": "きりばこいり",
+              "ruby_html": "<ruby>桐箱入り<rt>きりばこいり</rt></ruby>",
+              "meaning_en": "in a paulownia wooden gift box",
+              "meaning_zh": "桐木盒装",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "読解力",
+              "reading": "どっかいりょく",
+              "ruby_html": "<ruby>読解力<rt>どっかいりょく</rt></ruby>",
+              "meaning_en": "reading comprehension ability",
+              "meaning_zh": "阅读理解能力",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "時間配分",
+              "reading": "じかんはいぶん",
+              "ruby_html": "<ruby>時間配分<rt>じかんはいぶん</rt></ruby>",
+              "meaning_en": "time allocation, pacing",
+              "meaning_zh": "时间分配",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ただ〜だけ",
+              "reading": "ただ〜だけ",
+              "ruby_html": "ただ〜だけ",
+              "meaning_en": "just, only",
+              "meaning_zh": "只是",
+              "part_of_speech": "文法"
+            },
+            {
+              "term_ja": "ぎゅうぎゅう",
+              "reading": "ぎゅうぎゅう",
+              "ruby_html": "ぎゅうぎゅう",
+              "meaning_en": "tightly, packed tightly",
+              "meaning_zh": "使劲状，挤得满满地",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "ふわふわ",
+              "reading": "ふわふわ",
+              "ruby_html": "ふわふわ",
+              "meaning_en": "fluffy, soft",
+              "meaning_zh": "蓬松绵软状",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "力を込める",
+              "reading": "ちからをこめる",
+              "ruby_html": "<ruby>力を込める<rt>ちからをこめる</rt></ruby>",
+              "meaning_en": "to put strength/force into",
+              "meaning_zh": "用力",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "くずれる",
+              "reading": "くずれる",
+              "ruby_html": "くずれる",
+              "meaning_en": "to crumble, fall apart",
+              "meaning_zh": "散架，崩溃",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "田植え",
+              "reading": "たうえ",
+              "ruby_html": "<ruby>田植え<rt>たうえ</rt></ruby>",
+              "meaning_en": "rice-planting",
+              "meaning_zh": "插秧",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "収穫",
+              "reading": "しゅうかく",
+              "ruby_html": "<ruby>収穫<rt>しゅうかく</rt></ruby>",
+              "meaning_en": "harvest",
+              "meaning_zh": "收割，收获",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "管理する",
+              "reading": "かんりする",
+              "ruby_html": "<ruby>管理する<rt>かんりする</rt></ruby>",
+              "meaning_en": "to manage",
+              "meaning_zh": "管理",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "基準",
+              "reading": "きじゅん",
+              "ruby_html": "<ruby>基準<rt>きじゅん</rt></ruby>",
+              "meaning_en": "standard, criterion",
+              "meaning_zh": "基准",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "引き出す",
+              "reading": "ひきだす",
+              "ruby_html": "<ruby>引き出す<rt>ひきだす</rt></ruby>",
+              "meaning_en": "to draw out, pull out",
+              "meaning_zh": "拔出来，拉出",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "発電",
+              "reading": "はつでん",
+              "ruby_html": "<ruby>発電<rt>はつでん</rt></ruby>",
+              "meaning_en": "power generation",
+              "meaning_zh": "发电",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜が可能だ",
+              "reading": "〜がかのうだ",
+              "ruby_html": "<ruby>〜が可能だ<rt>〜がかのうだ</rt></ruby>",
+              "meaning_en": "it is possible to ~",
+              "meaning_zh": "能够~",
+              "part_of_speech": "慣用句"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 27,
+        "part": 1,
+        "topic_ja": "読解のことば 6",
+        "topic_en": "Reading Words 6",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 6",
+          "title_en": "Reading Words 6",
+          "words": [
+            {
+              "term_ja": "〜上",
+              "reading": "〜じょう",
+              "ruby_html": "<ruby>〜上<rt>〜じょう</rt></ruby>",
+              "meaning_en": "in terms of ~, regarding ~",
+              "meaning_zh": "~方面",
+              "part_of_speech": "接尾辞"
+            },
+            {
+              "term_ja": "分解する",
+              "reading": "ぶんかいする",
+              "ruby_html": "<ruby>分解する<rt>ぶんかいする</rt></ruby>",
+              "meaning_en": "to disassemble, take apart",
+              "meaning_zh": "拆卸，分解",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "防水性",
+              "reading": "ぼうすいせい",
+              "ruby_html": "<ruby>防水性<rt>ぼうすいせい</rt></ruby>",
+              "meaning_en": "waterproof quality",
+              "meaning_zh": "防水性",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "都合が悪い",
+              "reading": "つごうがわるい",
+              "ruby_html": "<ruby>都合が悪い<rt>つごうがわるい</rt></ruby>",
+              "meaning_en": "inconvenient, schedule conflict",
+              "meaning_zh": "不方便",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "変更する",
+              "reading": "へんこうする",
+              "ruby_html": "<ruby>変更する<rt>へんこうする</rt></ruby>",
+              "meaning_en": "to change, reschedule",
+              "meaning_zh": "变更",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "以降",
+              "reading": "いこう",
+              "ruby_html": "<ruby>以降<rt>いこう</rt></ruby>",
+              "meaning_en": "onward, after",
+              "meaning_zh": "之后",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "親せき",
+              "reading": "しんせき",
+              "ruby_html": "<ruby>親せき<rt>しんせき</rt></ruby>",
+              "meaning_en": "relation, kin, relatives",
+              "meaning_zh": "亲戚",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "高級車",
+              "reading": "こうきゅうしゃ",
+              "ruby_html": "<ruby>高級車<rt>こうきゅうしゃ</rt></ruby>",
+              "meaning_en": "luxury car",
+              "meaning_zh": "豪华车",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "気持ちが変わる",
+              "reading": "きもちがかわる",
+              "ruby_html": "<ruby>気持ちが変わる<rt>きもちがかわる</rt></ruby>",
+              "meaning_en": "to change one's mind",
+              "meaning_zh": "改变主意",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "かしこい",
+              "reading": "かしこい",
+              "ruby_html": "かしこい",
+              "meaning_en": "clever, intelligent",
+              "meaning_zh": "聪明",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "人間関係",
+              "reading": "にんげんかんけい",
+              "ruby_html": "<ruby>人間関係<rt>にんげんかんけい</rt></ruby>",
+              "meaning_en": "interpersonal relations",
+              "meaning_zh": "人际关系",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "そうはいかない",
+              "reading": "そうはいかない",
+              "ruby_html": "そうはいかない",
+              "meaning_en": "cannot do that easily",
+              "meaning_zh": "不可能实现，行不通",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "まだいい",
+              "reading": "まだいい",
+              "ruby_html": "まだいい",
+              "meaning_en": "tolerable, preferable",
+              "meaning_zh": "勉强可以",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "〜せず",
+              "reading": "〜せず",
+              "ruby_html": "〜せず",
+              "meaning_en": "without doing ~",
+              "meaning_zh": "没有~，不做~",
+              "part_of_speech": "文法"
+            },
+            {
+              "term_ja": "そのまま",
+              "reading": "そのまま",
+              "ruby_html": "そのまま",
+              "meaning_en": "as is, without changing",
+              "meaning_zh": "保持原样",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "きっかけ",
+              "reading": "きっかけ",
+              "ruby_html": "きっかけ",
+              "meaning_en": "trigger, incentive",
+              "meaning_zh": "契机",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜かどうか",
+              "reading": "〜かどうか",
+              "ruby_html": "〜かどうか",
+              "meaning_en": "whether or not ~",
+              "meaning_zh": "是否~",
+              "part_of_speech": "文法"
+            },
+            {
+              "term_ja": "白っぽい",
+              "reading": "しろっぽい",
+              "ruby_html": "<ruby>白っぽい<rt>しろっぽい</rt></ruby>",
+              "meaning_en": "whitish",
+              "meaning_zh": "发白",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "田んぼ",
+              "reading": "たんぼ",
+              "ruby_html": "<ruby>田んぼ<rt>たんぼ</rt></ruby>",
+              "meaning_en": "rice paddy",
+              "meaning_zh": "稻田",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "汚染",
+              "reading": "おせん",
+              "ruby_html": "<ruby>汚染<rt>おせん</rt></ruby>",
+              "meaning_en": "pollution, contamination",
+              "meaning_zh": "污染",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "自然に戻す",
+              "reading": "しぜんにもどす",
+              "ruby_html": "<ruby>自然に戻す<rt>しぜんにもどす</rt></ruby>",
+              "meaning_en": "to return to nature, release into wild",
+              "meaning_zh": "放归大自然",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "自動販売機",
+              "reading": "じどうはんばいき",
+              "ruby_html": "<ruby>自動販売機<rt>じどうはんばいき</rt></ruby>",
+              "meaning_en": "vending machine",
+              "meaning_zh": "自动售货机",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "むだ使いする",
+              "reading": "むだづかいする",
+              "ruby_html": "<ruby>むだ使いする<rt>むだづかいする</rt></ruby>",
+              "meaning_en": "to waste, spend lavishly",
+              "meaning_zh": "浪费",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "工夫",
+              "reading": "くふう",
+              "ruby_html": "<ruby>工夫<rt>くふう</rt></ruby>",
+              "meaning_en": "ingenuity, scheme, clever idea",
+              "meaning_zh": "窍门，好的做法",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "最小限",
+              "reading": "さいしょうげん",
+              "ruby_html": "<ruby>最小限<rt>さいしょうげん</rt></ruby>",
+              "meaning_en": "minimum",
+              "meaning_zh": "最小限度",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "消費",
+              "reading": "しょうひ",
+              "ruby_html": "<ruby>消費<rt>しょうひ</rt></ruby>",
+              "meaning_en": "consumption",
+              "meaning_zh": "消费，消耗",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "じっとする",
+              "reading": "じっとする",
+              "ruby_html": "じっとする",
+              "meaning_en": "to stay still, keep quiet",
+              "meaning_zh": "一动不动",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "合図",
+              "reading": "あいず",
+              "ruby_html": "<ruby>合図<rt>あいず</rt></ruby>",
+              "meaning_en": "signal, sign",
+              "meaning_zh": "暗号，信号",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "相づちを打つ",
+              "reading": "あいづちをうつ",
+              "ruby_html": "<ruby>相づちを打つ<rt>あいづちをうつ</rt></ruby>",
+              "meaning_en": "to nod along, chime in",
+              "meaning_zh": "随声附和",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "同意する",
+              "reading": "どういする",
+              "ruby_html": "<ruby>同意する<rt>どういする</rt></ruby>",
+              "meaning_en": "to agree",
+              "meaning_zh": "同意",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "共感",
+              "reading": "きょうかん",
+              "ruby_html": "<ruby>共感<rt>きょうかん</rt></ruby>",
+              "meaning_en": "empathy, sympathy",
+              "meaning_zh": "共鸣，同感",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "快適な",
+              "reading": "かいてきな",
+              "ruby_html": "<ruby>快適な<rt>かいてきな</rt></ruby>",
+              "meaning_en": "comfortable",
+              "meaning_zh": "舒适",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "持ち上げる",
+              "reading": "もちあげる",
+              "ruby_html": "<ruby>持ち上げる<rt>もちあげる</rt></ruby>",
+              "meaning_en": "to lift, raise",
+              "meaning_zh": "举起",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "気づかされる",
+              "reading": "きづかされる",
+              "ruby_html": "<ruby>気づかされる<rt>きづかされる</rt></ruby>",
+              "meaning_en": "to be made aware of",
+              "meaning_zh": "被启发意识到",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "増加する",
+              "reading": "ぞうかする",
+              "ruby_html": "<ruby>増加する<rt>ぞうかする</rt></ruby>",
+              "meaning_en": "to increase",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "高齢者",
+              "reading": "こうれいしゃ",
+              "ruby_html": "<ruby>高齢者<rt>こうれいしゃ</rt></ruby>",
+              "meaning_en": "senior citizen; elderly person",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "気軽に",
+              "reading": "きがるに",
+              "ruby_html": "<ruby>気軽に<rt>きがるに</rt></ruby>",
+              "meaning_en": "easily; casually; without hesitation",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "高齢化",
+              "reading": "こうれいか",
+              "ruby_html": "<ruby>高齢化<rt>こうれいか</rt></ruby>",
+              "meaning_en": "aging of society",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "減少する",
+              "reading": "げんしょうする",
+              "ruby_html": "<ruby>減少する<rt>げんしょうする</rt></ruby>",
+              "meaning_en": "to decrease",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "注目する",
+              "reading": "ちゅうもくする",
+              "ruby_html": "<ruby>注目する<rt>ちゅうもくする</rt></ruby>",
+              "meaning_en": "to pay attention to; to focus on",
+              "part_of_speech": "動詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 28,
+        "part": 1,
+        "topic_ja": "読解のことば 7",
+        "topic_en": "Reading Words 7",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 7",
+          "title_en": "Reading Words 7",
+          "words": [
+            {
+              "term_ja": "郊外",
+              "reading": "こうがい",
+              "ruby_html": "<ruby>郊外<rt>こうがい</rt></ruby>",
+              "meaning_en": "suburbs; outskirts",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "閉店する",
+              "reading": "へいてんする",
+              "ruby_html": "<ruby>閉店する<rt>へいてんする</rt></ruby>",
+              "meaning_en": "to close down (store)",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "冷たい目",
+              "reading": "つめたいめ",
+              "ruby_html": "<ruby>冷たい目<rt>つめたいめ</rt></ruby>",
+              "meaning_en": "cold stare; looking unfavourably upon someone",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "（緊張が）とける",
+              "reading": "きんちょうがとける",
+              "ruby_html": "<ruby>（緊張が）とける<rt>きんちょうがとける</rt></ruby>",
+              "meaning_en": "tension dissipates / eases / melts away",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "笑い合う",
+              "reading": "わらいあう",
+              "ruby_html": "<ruby>笑い合う<rt>わらいあう</rt></ruby>",
+              "meaning_en": "to laugh together",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "中高年",
+              "reading": "ちゅうこうねん",
+              "ruby_html": "<ruby>中高年<rt>ちゅうこうねん</rt></ruby>",
+              "meaning_en": "middle-aged and elderly",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "言葉遊び",
+              "reading": "ことばあそび",
+              "ruby_html": "<ruby>言葉遊び<rt>ことばあそび</rt></ruby>",
+              "meaning_en": "wordplay; punning",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "鍛える",
+              "reading": "きたえる",
+              "ruby_html": "<ruby>鍛える<rt>きたえる</rt></ruby>",
+              "meaning_en": "to train; to discipline; to strengthen",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "ボケ防止",
+              "reading": "ぼけぼうし",
+              "ruby_html": "<ruby>ボケ防止<rt>ぼけぼうし</rt></ruby>",
+              "meaning_en": "preventing mental decline / senility",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ゲスト",
+              "reading": "ゲスト",
+              "ruby_html": "ゲスト",
+              "meaning_en": "guest",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "出演する",
+              "reading": "しゅつえんする",
+              "ruby_html": "<ruby>出演する<rt>しゅつえんする</rt></ruby>",
+              "meaning_en": "to appear; to perform (on stage)",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "来場する",
+              "reading": "らいじょうする",
+              "ruby_html": "<ruby>来場する<rt>らいじょうする</rt></ruby>",
+              "meaning_en": "to attend; to visit the venue",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "限られている",
+              "reading": "かぎられている",
+              "ruby_html": "<ruby>限られている<rt>かぎられている</rt></ruby>",
+              "meaning_en": "to be limited",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "同封",
+              "reading": "どうふう",
+              "ruby_html": "<ruby>同封<rt>どうふう</rt></ruby>",
+              "meaning_en": "enclosure (included with a letter)",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "満開",
+              "reading": "まんかい",
+              "ruby_html": "<ruby>満開<rt>まんかい</rt></ruby>",
+              "meaning_en": "full bloom",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "結構",
+              "reading": "けっこう",
+              "ruby_html": "<ruby>結構<rt>けっこう</rt></ruby>",
+              "meaning_en": "fine; no charge needed (代金は結構です = no payment necessary)",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "拝啓",
+              "reading": "はいけい",
+              "ruby_html": "<ruby>拝啓<rt>はいけい</rt></ruby>",
+              "meaning_en": "Dear Sir/Madam (opening salutation)",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "敬具",
+              "reading": "けいぐ",
+              "ruby_html": "<ruby>敬具<rt>けいぐ</rt></ruby>",
+              "meaning_en": "Sincerely yours (closing salutation)",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "分野",
+              "reading": "ぶんや",
+              "ruby_html": "<ruby>分野<rt>ぶんや</rt></ruby>",
+              "meaning_en": "field, domain",
+              "meaning_zh": "领域",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "評論家",
+              "reading": "ひょうろんか",
+              "ruby_html": "<ruby>評論家<rt>ひょうろんか</rt></ruby>",
+              "meaning_en": "critic, commentator",
+              "meaning_zh": "评论家",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "資格試験",
+              "reading": "しかくしけん",
+              "ruby_html": "<ruby>資格試験<rt>しかくしけん</rt></ruby>",
+              "meaning_en": "qualifying examination",
+              "meaning_zh": "资格考试",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "一体",
+              "reading": "いったい",
+              "ruby_html": "<ruby>一体<rt>いったい</rt></ruby>",
+              "meaning_en": "[how] on earth, in the world",
+              "meaning_zh": "究竟，到底",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "人並み外れた",
+              "reading": "ひとなみはずれた",
+              "ruby_html": "<ruby>人並み外れた<rt>ひとなみはずれた</rt></ruby>",
+              "meaning_en": "extraordinary, out of the ordinary",
+              "meaning_zh": "超乎常人的",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "うらやましい",
+              "reading": "うらやましい",
+              "ruby_html": "うらやましい",
+              "meaning_en": "envious, jealous",
+              "meaning_zh": "羡慕",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "収入を得る",
+              "reading": "しゅうにゅうをえる",
+              "ruby_html": "<ruby>収入を得る<rt>しゅうにゅうをえる</rt></ruby>",
+              "meaning_en": "to earn an income",
+              "meaning_zh": "获取收入",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "納得する",
+              "reading": "なっとくする",
+              "ruby_html": "<ruby>納得する<rt>なっとくする</rt></ruby>",
+              "meaning_en": "to accept, understand, agree to",
+              "meaning_zh": "理解，接受",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "説得力",
+              "reading": "せっとくりょく",
+              "ruby_html": "<ruby>説得力<rt>せっとくりょく</rt></ruby>",
+              "meaning_en": "persuasiveness",
+              "meaning_zh": "说服力",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "魅力",
+              "reading": "みりょく",
+              "ruby_html": "<ruby>魅力<rt>みりょく</rt></ruby>",
+              "meaning_en": "charm, appeal",
+              "meaning_zh": "魅力",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ある〜",
+              "reading": "ある〜",
+              "ruby_html": "ある〜",
+              "meaning_en": "a certain, some ~",
+              "meaning_zh": "某个",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "活躍する",
+              "reading": "かつやくする",
+              "ruby_html": "<ruby>活躍する<rt>かつやくする</rt></ruby>",
+              "meaning_en": "to be active, to flourish",
+              "meaning_zh": "活跃",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "舞台",
+              "reading": "ぶたい",
+              "ruby_html": "<ruby>舞台<rt>ぶたい</rt></ruby>",
+              "meaning_en": "setting, background, stage",
+              "meaning_zh": "舞台，背景",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "感激",
+              "reading": "かんげき",
+              "ruby_html": "<ruby>感激<rt>かんげき</rt></ruby>",
+              "meaning_en": "deep emotion, being deeply moved",
+              "meaning_zh": "感动，感激",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "物足りない",
+              "reading": "ものたりない",
+              "ruby_html": "<ruby>物足りない<rt>ものたりない</rt></ruby>",
+              "meaning_en": "feeling that something is missing, unsatisfactory",
+              "meaning_zh": "美中不足，不满足",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "心をこめて",
+              "reading": "こころをこめて",
+              "ruby_html": "<ruby>心をこめて<rt>こころをこめて</rt></ruby>",
+              "meaning_en": "wholeheartedly, with all one's heart",
+              "meaning_zh": "倾注心意",
+              "part_of_speech": "表現"
+            },
+            {
+              "term_ja": "伝わる",
+              "reading": "つたわる",
+              "ruby_html": "<ruby>伝わる<rt>つたわる</rt></ruby>",
+              "meaning_en": "to be conveyed, to come across",
+              "meaning_zh": "传达，流传",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "関わり",
+              "reading": "かかわり",
+              "ruby_html": "<ruby>関わり<rt>かかわり</rt></ruby>",
+              "meaning_en": "relation, connection",
+              "meaning_zh": "交往",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "描く",
+              "reading": "えがく",
+              "ruby_html": "<ruby>描く<rt>えがく</rt></ruby>",
+              "meaning_en": "to describe, depict",
+              "meaning_zh": "描写",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "注目の",
+              "reading": "ちゅうもくの",
+              "ruby_html": "<ruby>注目の<rt>ちゅうもくの</rt></ruby>",
+              "meaning_en": "noteworthy, in focus",
+              "meaning_zh": "备受瞩目的",
+              "part_of_speech": "形容詞"
+            },
+            {
+              "term_ja": "純粋さ",
+              "reading": "じゅんすいさ",
+              "ruby_html": "<ruby>純粋さ<rt>じゅんすいさ</rt></ruby>",
+              "meaning_en": "purity, innocence",
+              "meaning_zh": "纯真",
+              "part_of_speech": "名詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 29,
+        "part": 1,
+        "topic_ja": "読解のことば 8",
+        "topic_en": "Reading Words 8",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 8",
+          "title_en": "Reading Words 8",
+          "words": [
+            {
+              "term_ja": "事情",
+              "reading": "じじょう",
+              "ruby_html": "<ruby>事情<rt>じじょう</rt></ruby>",
+              "meaning_en": "situation, circumstances",
+              "meaning_zh": "事情原委",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "元気づけられる",
+              "reading": "げんきづけられる",
+              "ruby_html": "<ruby>元気づけられる<rt>げんきづけられる</rt></ruby>",
+              "meaning_en": "to be encouraged, cheered up",
+              "meaning_zh": "受到鼓舞",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "人の役に立つ",
+              "reading": "ひとのやくにたつ",
+              "ruby_html": "<ruby>人の役に立つ<rt>ひとのやくにたつ</rt></ruby>",
+              "meaning_en": "to be useful/helpful to others",
+              "meaning_zh": "对他人有帮助",
+              "part_of_speech": "表現"
+            },
+            {
+              "term_ja": "セール期間",
+              "reading": "せーるきかん",
+              "ruby_html": "<ruby>セール期間<rt>せーるきかん</rt></ruby>",
+              "meaning_en": "period of a sale",
+              "meaning_zh": "折扣优惠期间",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "割引券",
+              "reading": "わりびきけん",
+              "ruby_html": "<ruby>割引券<rt>わりびきけん</rt></ruby>",
+              "meaning_en": "discount coupon",
+              "meaning_zh": "打折券",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "価格",
+              "reading": "かかく",
+              "ruby_html": "<ruby>価格<rt>かかく</rt></ruby>",
+              "meaning_en": "price",
+              "meaning_zh": "价格",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜円引き",
+              "reading": "〜えんびき",
+              "ruby_html": "<ruby>〜円引き<rt>〜えんびき</rt></ruby>",
+              "meaning_en": "discount of ~ yen",
+              "meaning_zh": "便宜〜日元",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "募集",
+              "reading": "ぼしゅう",
+              "ruby_html": "<ruby>募集<rt>ぼしゅう</rt></ruby>",
+              "meaning_en": "recruitment",
+              "meaning_zh": "招募",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "勤務",
+              "reading": "きんむ",
+              "ruby_html": "<ruby>勤務<rt>きんむ</rt></ruby>",
+              "meaning_en": "service, duty, work",
+              "meaning_zh": "工作",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "給与",
+              "reading": "きゅうよ",
+              "ruby_html": "<ruby>給与<rt>きゅうよ</rt></ruby>",
+              "meaning_en": "salary, pay",
+              "meaning_zh": "薪水",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "応募",
+              "reading": "おうぼ",
+              "ruby_html": "<ruby>応募<rt>おうぼ</rt></ruby>",
+              "meaning_en": "application, applying",
+              "meaning_zh": "应聘",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "徒歩",
+              "reading": "とほ",
+              "ruby_html": "<ruby>徒歩<rt>とほ</rt></ruby>",
+              "meaning_en": "on foot, walking",
+              "meaning_zh": "徒步",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "築",
+              "reading": "ちく",
+              "ruby_html": "<ruby>築<rt>ちく</rt></ruby>",
+              "meaning_en": "built in [year], building age",
+              "meaning_zh": "建造（年数）",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ワンルーム",
+              "reading": "わんるーむ",
+              "ruby_html": "ワンルーム",
+              "meaning_en": "single-room studio apartment",
+              "meaning_zh": "单间公寓",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "玄関",
+              "reading": "げんかん",
+              "ruby_html": "<ruby>玄関<rt>げんかん</rt></ruby>",
+              "meaning_en": "front entrance, doorway",
+              "meaning_zh": "房门、玄关",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "浴室",
+              "reading": "よくしつ",
+              "ruby_html": "<ruby>浴室<rt>よくしつ</rt></ruby>",
+              "meaning_en": "washroom, bathroom",
+              "meaning_zh": "浴室",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "収納",
+              "reading": "しゅうのう",
+              "ruby_html": "<ruby>収納<rt>しゅうのう</rt></ruby>",
+              "meaning_en": "storage area, closet",
+              "meaning_zh": "储物间、收纳",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "ベランダ",
+              "reading": "べらんだ",
+              "ruby_html": "ベランダ",
+              "meaning_en": "veranda, balcony",
+              "meaning_zh": "阳台",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "語学",
+              "reading": "ごがく",
+              "ruby_html": "<ruby>語学<rt>ごがく</rt></ruby>",
+              "meaning_en": "study of languages",
+              "meaning_zh": "外语（学习）",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "情報",
+              "reading": "じょうほう",
+              "ruby_html": "<ruby>情報<rt>じょうほう</rt></ruby>",
+              "meaning_en": "information",
+              "meaning_zh": "信息",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "交換する",
+              "reading": "こうかんする",
+              "ruby_html": "<ruby>交換する<rt>こうかんする</rt></ruby>",
+              "meaning_en": "to exchange",
+              "meaning_zh": "交换",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "さしみ",
+              "reading": "さしみ",
+              "ruby_html": "さしみ",
+              "meaning_en": "raw fish, sashimi",
+              "meaning_zh": "生鱼片",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "豊富",
+              "reading": "ほうふ",
+              "ruby_html": "<ruby>豊富<rt>ほうふ</rt></ruby>",
+              "meaning_en": "very varied, rich, abundant",
+              "meaning_zh": "丰富",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "個室",
+              "reading": "こしつ",
+              "ruby_html": "<ruby>個室<rt>こしつ</rt></ruby>",
+              "meaning_en": "single private room",
+              "meaning_zh": "包间",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "食べ放題",
+              "reading": "たべほうだい",
+              "ruby_html": "<ruby>食べ放題<rt>たべほうだい</rt></ruby>",
+              "meaning_en": "all-you-can-eat meal",
+              "meaning_zh": "自助餐",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "年中無休",
+              "reading": "ねんじゅうむきゅう",
+              "ruby_html": "<ruby>年中無休<rt>ねんじゅうむきゅう</rt></ruby>",
+              "meaning_en": "[open] all-year-round",
+              "meaning_zh": "全年不休",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "日替わり",
+              "reading": "ひがわり",
+              "ruby_html": "<ruby>日替わり<rt>ひがわり</rt></ruby>",
+              "meaning_en": "daily special",
+              "meaning_zh": "每日推荐",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜付",
+              "reading": "〜つき",
+              "ruby_html": "<ruby>〜付<rt>〜つき</rt></ruby>",
+              "meaning_en": "with, accompanied by ~",
+              "meaning_zh": "附送〜",
+              "part_of_speech": "接尾辞"
+            },
+            {
+              "term_ja": "注文",
+              "reading": "ちゅうもん",
+              "ruby_html": "<ruby>注文<rt>ちゅうもん</rt></ruby>",
+              "meaning_en": "order",
+              "meaning_zh": "订购",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "受付",
+              "reading": "うけつけ",
+              "ruby_html": "<ruby>受付<rt>うけつけ</rt></ruby>",
+              "meaning_en": "order reception",
+              "meaning_zh": "受理",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "配達",
+              "reading": "はいたつ",
+              "ruby_html": "<ruby>配達<rt>はいたつ</rt></ruby>",
+              "meaning_en": "delivery",
+              "meaning_zh": "配送",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜未満",
+              "reading": "〜みまん",
+              "ruby_html": "<ruby>〜未満<rt>〜みまん</rt></ruby>",
+              "meaning_en": "less than ~",
+              "meaning_zh": "不到〜",
+              "part_of_speech": "接尾辞"
+            },
+            {
+              "term_ja": "〜以上",
+              "reading": "〜いじょう",
+              "ruby_html": "<ruby>〜以上<rt>〜いじょう</rt></ruby>",
+              "meaning_en": "~ and above, or more",
+              "meaning_zh": "等于或超过〜",
+              "part_of_speech": "接尾辞"
+            },
+            {
+              "term_ja": "請求額",
+              "reading": "せいきゅうがく",
+              "ruby_html": "<ruby>請求額<rt>せいきゅうがく</rt></ruby>",
+              "meaning_en": "invoiced amount",
+              "meaning_zh": "支付金额",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "支払い期限",
+              "reading": "しはらいきげん",
+              "ruby_html": "<ruby>支払い期限<rt>しはらいきげん</rt></ruby>",
+              "meaning_en": "payment deadline",
+              "meaning_zh": "支付截止日",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "発行",
+              "reading": "はっこう",
+              "ruby_html": "<ruby>発行<rt>はっこう</rt></ruby>",
+              "meaning_en": "to issue",
+              "meaning_zh": "发行",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "現金",
+              "reading": "げんきん",
+              "ruby_html": "<ruby>現金<rt>げんきん</rt></ruby>",
+              "meaning_en": "cash",
+              "meaning_zh": "现金",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "振込用紙",
+              "reading": "ふりこみようし",
+              "ruby_html": "<ruby>振込用紙<rt>ふりこみようし</rt></ruby>",
+              "meaning_en": "transfer payment slip",
+              "meaning_zh": "汇款单",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "銀行口座",
+              "reading": "ぎんこうこうざ",
+              "ruby_html": "<ruby>銀行口座<rt>ぎんこうこうざ</rt></ruby>",
+              "meaning_en": "bank account",
+              "meaning_zh": "银行账号",
+              "part_of_speech": "名詞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "metadata": {
+        "chapter": 30,
+        "part": 1,
+        "topic_ja": "読解のことば 9",
+        "topic_en": "Reading Words 9",
+        "pages": []
+      },
+      "sections": [
+        {
+          "section_id": 1,
+          "title_ja": "読解のことば 9",
+          "title_en": "Reading Words 9",
+          "words": [
+            {
+              "term_ja": "自動的に",
+              "reading": "じどうてきに",
+              "ruby_html": "<ruby>自動的に<rt>じどうてきに</rt></ruby>",
+              "meaning_en": "automatically",
+              "meaning_zh": "自动地",
+              "part_of_speech": "副詞"
+            },
+            {
+              "term_ja": "メーカー",
+              "reading": "めーかー",
+              "ruby_html": "メーカー",
+              "meaning_en": "maker, manufacturer",
+              "meaning_zh": "生产厂商",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "お買い上げ日",
+              "reading": "おかいあげび",
+              "ruby_html": "<ruby>お買い上げ日<rt>おかいあげび</rt></ruby>",
+              "meaning_en": "date of purchase",
+              "meaning_zh": "购买日",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "修理する",
+              "reading": "しゅうりする",
+              "ruby_html": "<ruby>修理する<rt>しゅうりする</rt></ruby>",
+              "meaning_en": "to repair",
+              "meaning_zh": "修理",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "限る",
+              "reading": "かぎる",
+              "ruby_html": "<ruby>限る<rt>かぎる</rt></ruby>",
+              "meaning_en": "to limit, restrict",
+              "meaning_zh": "仅限于",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "〜席",
+              "reading": "〜せき",
+              "ruby_html": "<ruby>〜席<rt>〜せき</rt></ruby>",
+              "meaning_en": "seating for ~",
+              "meaning_zh": "〜座位",
+              "part_of_speech": "接尾辞"
+            },
+            {
+              "term_ja": "添付ファイル",
+              "reading": "てんぷふぁいる",
+              "ruby_html": "<ruby>添付ファイル<rt>てんぷふぁいる</rt></ruby>",
+              "meaning_en": "attached document, attachment",
+              "meaning_zh": "附件",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "株式会社",
+              "reading": "かぶしきがいしゃ",
+              "ruby_html": "<ruby>株式会社<rt>かぶしきがいしゃ</rt></ruby>",
+              "meaning_en": "joint-stock company, Co., Ltd.",
+              "meaning_zh": "股份公司",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "採用",
+              "reading": "さいよう",
+              "ruby_html": "<ruby>採用<rt>さいよう</rt></ruby>",
+              "meaning_en": "hiring, recruitment",
+              "meaning_zh": "录用",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "筆記用具",
+              "reading": "ひっきようぐ",
+              "ruby_html": "<ruby>筆記用具<rt>ひっきようぐ</rt></ruby>",
+              "meaning_en": "writing instruments",
+              "meaning_zh": "文具",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "プリントアウト",
+              "reading": "ぷりんとおうと",
+              "ruby_html": "プリントアウト",
+              "meaning_en": "printout",
+              "meaning_zh": "打印",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "来社する",
+              "reading": "らいしゃする",
+              "ruby_html": "<ruby>来社する<rt>らいしゃする</rt></ruby>",
+              "meaning_en": "to visit the company",
+              "meaning_zh": "来公司",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "時間厳守",
+              "reading": "じかんげんしゅ",
+              "ruby_html": "<ruby>時間厳守<rt>じかんげんしゅ</rt></ruby>",
+              "meaning_en": "strict punctuality",
+              "meaning_zh": "严格遵守时间",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "当社",
+              "reading": "とうしゃ",
+              "ruby_html": "<ruby>当社<rt>とうしゃ</rt></ruby>",
+              "meaning_en": "our company",
+              "meaning_zh": "我公司",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "キャンセル",
+              "reading": "きゃんせる",
+              "ruby_html": "キャンセル",
+              "meaning_en": "cancellation",
+              "meaning_zh": "取消",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "不用品",
+              "reading": "ふようひん",
+              "ruby_html": "<ruby>不用品<rt>ふようひん</rt></ruby>",
+              "meaning_en": "unneeded, unwanted article",
+              "meaning_zh": "不使用的东西",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "特集",
+              "reading": "とくしゅう",
+              "ruby_html": "<ruby>特集<rt>とくしゅう</rt></ruby>",
+              "meaning_en": "special feature",
+              "meaning_zh": "专题",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "節約",
+              "reading": "せつやく",
+              "ruby_html": "<ruby>節約<rt>せつやく</rt></ruby>",
+              "meaning_en": "saving, economizing",
+              "meaning_zh": "节约",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "餅つき",
+              "reading": "もちつき",
+              "ruby_html": "<ruby>餅つき<rt>もちつき</rt></ruby>",
+              "meaning_en": "pounding rice into mochi",
+              "meaning_zh": "捣年糕",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "おせち料理",
+              "reading": "おせちりょうり",
+              "ruby_html": "<ruby>おせち料理<rt>おせちりょうり</rt></ruby>",
+              "meaning_en": "traditional New Year's dishes",
+              "meaning_zh": "年节饭",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "カットする",
+              "reading": "かっとする",
+              "ruby_html": "カットする",
+              "meaning_en": "to cut, reduce",
+              "meaning_zh": "削减",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "配信",
+              "reading": "はいしん",
+              "ruby_html": "<ruby>配信<rt>はいしん</rt></ruby>",
+              "meaning_en": "send out, transmit",
+              "meaning_zh": "发送",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "〜専用",
+              "reading": "〜せんよう",
+              "ruby_html": "<ruby>〜専用<rt>〜せんよう</rt></ruby>",
+              "meaning_en": "exclusively for ~",
+              "meaning_zh": "〜专用",
+              "part_of_speech": "接尾辞"
+            },
+            {
+              "term_ja": "返信",
+              "reading": "へんしん",
+              "ruby_html": "<ruby>返信<rt>へんしん</rt></ruby>",
+              "meaning_en": "reply",
+              "meaning_zh": "回信",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "不良品",
+              "reading": "ふりょうひん",
+              "ruby_html": "<ruby>不良品<rt>ふりょうひん</rt></ruby>",
+              "meaning_en": "defective item",
+              "meaning_zh": "残次品",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "担当",
+              "reading": "たんとう",
+              "ruby_html": "<ruby>担当<rt>たんとう</rt></ruby>",
+              "meaning_en": "being in charge, representative",
+              "meaning_zh": "负责人",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "面倒な",
+              "reading": "めんどうな",
+              "ruby_html": "<ruby>面倒な<rt>めんどうな</rt></ruby>",
+              "meaning_en": "bothersome",
+              "meaning_zh": "麻烦的",
+              "part_of_speech": "な形容詞"
+            },
+            {
+              "term_ja": "返送する",
+              "reading": "へんそうする",
+              "ruby_html": "<ruby>返送する<rt>へんそうする</rt></ruby>",
+              "meaning_en": "to send back, return",
+              "meaning_zh": "寄回",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "対応をする",
+              "reading": "たいおうをする",
+              "ruby_html": "<ruby>対応をする<rt>たいおうをする</rt></ruby>",
+              "meaning_en": "to handle, process",
+              "meaning_zh": "处理",
+              "part_of_speech": "慣用句"
+            },
+            {
+              "term_ja": "つきましては",
+              "reading": "つきましては",
+              "ruby_html": "つきましては",
+              "meaning_en": "in this connection, therefore",
+              "meaning_zh": "因此",
+              "part_of_speech": "接続詞"
+            },
+            {
+              "term_ja": "振込先口座",
+              "reading": "ふりこみさきこうざ",
+              "ruby_html": "<ruby>振込先口座<rt>ふりこみさきこうざ</rt></ruby>",
+              "meaning_en": "bank account for refund",
+              "meaning_zh": "汇款账户",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "項目",
+              "reading": "こうもく",
+              "ruby_html": "<ruby>項目<rt>こうもく</rt></ruby>",
+              "meaning_en": "item, field",
+              "meaning_zh": "项目",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "返信する",
+              "reading": "へんしんする",
+              "ruby_html": "<ruby>返信する<rt>へんしんする</rt></ruby>",
+              "meaning_en": "to reply",
+              "meaning_zh": "回信",
+              "part_of_speech": "動詞"
+            },
+            {
+              "term_ja": "名義",
+              "reading": "めいぎ",
+              "ruby_html": "<ruby>名義<rt>めいぎ</rt></ruby>",
+              "meaning_en": "name, account holder",
+              "meaning_zh": "用户名",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "全国",
+              "reading": "ぜんこく",
+              "ruby_html": "<ruby>全国<rt>ぜんこく</rt></ruby>",
+              "meaning_en": "whole country, nationwide",
+              "meaning_zh": "全国",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "調査",
+              "reading": "ちょうさ",
+              "ruby_html": "<ruby>調査<rt>ちょうさ</rt></ruby>",
+              "meaning_en": "investigation, survey",
+              "meaning_zh": "调查",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "上位",
+              "reading": "じょうい",
+              "ruby_html": "<ruby>上位<rt>じょうい</rt></ruby>",
+              "meaning_en": "the top ~, the leading ~",
+              "meaning_zh": "排位靠前",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "差",
+              "reading": "さ",
+              "ruby_html": "<ruby>差<rt>さ</rt></ruby>",
+              "meaning_en": "difference, gap",
+              "meaning_zh": "差异",
+              "part_of_speech": "名詞"
+            },
+            {
+              "term_ja": "複数回答",
+              "reading": "ふくすうかいとう",
+              "ruby_html": "<ruby>複数回答<rt>ふくすうかいとう</rt></ruby>",
+              "meaning_en": "multiple responses allowed",
+              "meaning_zh": "多项选择题",
+              "part_of_speech": "名詞"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
