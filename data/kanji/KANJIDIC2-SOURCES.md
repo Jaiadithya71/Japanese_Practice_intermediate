@@ -28,15 +28,23 @@ Inspect the dataset date and diff, then commit/push the refreshed subset. The sc
 
 ## Component breakdown subset
 
-`kanji_components.js` lists the visual component parts of every kanji in the
-app's kanji-meaning chips, shown when a chip is tapped. Component elements come
-from KRADFILE (Copyright Michael Raine, James Breen and EDRDG, used under the
-Group's licence at https://www.edrdg.org/edrdg/licence.html; source download
-http://ftp.edrdg.org/pub/Nihongo/kradfile.gz). Self-references, bare strokes and
-kana-shaped glyphs are dropped (kanji with dropped elements are flagged
-`hidden`); each remaining element carries its first KANJIDIC2 English gloss.
-Elements are visual parts, not a promise of historical etymology. Rebuild from
-the repository root:
+`kanji_components.js` gives the component parts of every kanji in the app's
+kanji-meaning chips, shown when a chip is tapped. The component structure comes
+from KanjiVG (Copyright Ulrich Apel and the KanjiVG contributors, used under
+CC BY-SA 3.0: https://creativecommons.org/licenses/by-sa/3.0/; project:
+https://github.com/KanjiVG/kanjivg, release r20260714): each kanji is shown as
+its top-level split into recognizable parts (e.g. 製 = 制 + 衣, 合 = 人 + 一 +
+口), with unnamed structural groups opened one level, split-position elements
+merged, and repeated elements given an xN count. Part meanings are KANJIDIC2
+English glosses (CC BY-SA 4.0, as above); a variant element (e.g. ⻌) takes the
+gloss of its original form (辶). Bare ungrouped strokes are dropped and the
+kanji is flagged `hidden` so the UI can note that stroke-only marks are not
+shown. Kanji outside KanjiVG fall back to the flat KRADFILE element list
+(Copyright Michael Raine, James Breen and EDRDG, used under the Group's licence
+at https://www.edrdg.org/edrdg/licence.html; source download
+http://ftp.edrdg.org/pub/Nihongo/kradfile.gz). Components are visual parts, not
+a promise of historical etymology. This derived data is distributed under CC
+BY-SA 3.0. Rebuild from the repository root:
 
 ```
 python3 scripts/build-kanji-components.py

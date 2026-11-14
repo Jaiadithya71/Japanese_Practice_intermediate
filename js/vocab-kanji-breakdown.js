@@ -88,13 +88,20 @@ export function renderVocabularyKanjiBreakdown(item, revealed) {
     chips.append(chip);
   }
   row.append(chips);
-  const source = document.createElement('a');
-  source.href = 'https://www.edrdg.org/edrdg/licence.html';
-  source.textContent = 'KANJIDIC2 · KRADFILE · EDRDG';
+  const source = document.createElement('div');
   source.className = 'vocab-kanji-source';
-  source.target = '_blank';
-  source.rel = 'noopener';
-  source.addEventListener('click', event => event.stopPropagation());
+  const kvg = document.createElement('a');
+  kvg.href = 'https://kanjivg.tagaini.net';
+  kvg.textContent = 'KanjiVG';
+  const edrdg = document.createElement('a');
+  edrdg.href = 'https://www.edrdg.org/edrdg/licence.html';
+  edrdg.textContent = 'KANJIDIC2 · EDRDG';
+  for (const link of [kvg, edrdg]) {
+    link.target = '_blank';
+    link.rel = 'noopener';
+    link.addEventListener('click', event => event.stopPropagation());
+  }
+  source.append(document.createTextNode('parts: '), kvg, document.createTextNode(' · meanings: '), edrdg);
   row.append(source);
   example.before(row);
 }

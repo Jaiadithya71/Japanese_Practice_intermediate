@@ -17,18 +17,27 @@ for (const [kanji, entry] of Object.entries(components)) {
   assert.equal(typeof entry.hidden, 'boolean', kanji);
 }
 
-// Grounded samples straight from KRADFILE.
+// Grounded samples straight from the KanjiVG component hierarchy.
 const charsOf = k => components[k].parts.map(([c]) => c);
-assert.ok(charsOf('製').includes('衣') && charsOf('製').includes('巾'), '製');
-assert.ok(charsOf('語').includes('言') && charsOf('語').includes('五'), '語');
-assert.ok(charsOf('勉').includes('力') && charsOf('勉').includes('免'), '勉');
+assert.deepEqual(charsOf('製'), ['制', '衣'], '製 = 制 + 衣');
+assert.deepEqual(charsOf('知'), ['矢', '口'], '知 = 矢 + 口');
+assert.deepEqual(charsOf('婦'), ['女', '帚'], '婦 = 女 + 帚');
+assert.deepEqual(charsOf('造'), ['告', '⻌'], '造 = 告 + ⻌');
+assert.deepEqual(charsOf('合'), ['人', '一', '口'], '合 = 人 + 一 + 口');
+assert.deepEqual(charsOf('語'), ['言', '吾'], '語 = 言 + 吾');
 assert.deepEqual(charsOf('人'), [], '人 is a building block');
 assert.equal(components['人'].hidden, false);
+
+// Meanings are KANJIDIC2 glosses (a variant element may take its original's).
+assert.ok(components['製'].parts[0][1].includes('system'), '制 gloss');
+assert.ok(components['衣'] && components['製'].parts[1][1].includes('garment'), '衣 gloss');
+assert.ok(components['造'].parts[1][1].includes('walk'), '⻌ takes 辶 gloss');
 
 // Coverage: every chip kanji either has a components entry (possibly empty
 // parts for building blocks) or is a documented no-data character.
 const missed = Object.keys(entries).filter(k => !components[k] && !uncovered.includes(k));
 assert.deepEqual(missed, [], 'chip kanji with neither components nor uncovered entry');
 
-assert.ok(metadata.license.includes('CC BY-SA 4.0'));
+assert.ok(metadata.license.includes('CC BY-SA 3.0'), 'KanjiVG licence');
+assert.ok(metadata.source_url.includes('kanjivg'), 'KanjiVG attribution');
 console.log(`${Object.keys(components).length} kanji with component data, ${partCount} parts, ${uncovered.length} documented no-data kanji.`);
