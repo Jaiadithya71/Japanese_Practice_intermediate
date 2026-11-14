@@ -83,7 +83,7 @@ export function updatePillarCards() {
 }
 
 export function setHomeGroup(group) {
-  // The picker is a single Topics sequence now (1-21, C1-C8, R1-R9); the old
+  // The picker is a single Topics sequence now (1-21, C1-C8, R1-R9, K1-K25); the old
   // Characteristics group is folded in, so any 'characteristics' request - or
   // a stale stored value - lands on the merged tab.
   state.activeChapterGroup = 'topic';
@@ -99,14 +99,17 @@ export function setHomeGroup(group) {
 
 export function chapterKeysForGroup() {
   // One merged sequence: textbook Topics 1-21, then the Part 2 characteristics
-  // lessons shown as C1-C8, then the Reading-sourced lessons shown as R1-R9.
+  // lessons shown as C1-C8, then the Reading-sourced lessons shown as R1-R9,
+  // then the kanji-book lessons shown as K1-K25 (K number = kanji book lesson).
   // Chapter ids themselves are unchanged so progress, selection persistence
   // and the Test hub keep working.
   const keys = Object.keys(state.vocabDB).filter(k => /^\d+$/.test(k) || k.startsWith('part2_'));
+  // Display order: 1-21, C1-C8, R1-R9, K1-K25 (chapter ids unchanged).
   const rank = k => {
-    if (k.startsWith('part2_')) return 30 + parseInt(k.slice(6), 10);
+    if (k.startsWith('part2_')) return 21 + parseInt(k.slice(6), 10);
     const n = parseInt(k, 10);
-    return n <= 30 ? n : n + 8;
+    if (n <= 21) return n;
+    return n <= 30 ? 30 + (n - 21) : n + 9;
   };
   return keys.sort((a, b) => rank(a) - rank(b));
 }
