@@ -25,3 +25,20 @@ Inspect the dataset date and diff, then commit/push the refreshed subset. The sc
 ## Shape matching subset
 
 `character_shapes.js` is a Joyo (2,136 character) subset of the official KANJIDIC2 download dated 2026-10-22. It retains classical radical numbers, primary stroke counts, and Japanese readings. These fields support visually related quiz distractors and exclusion of alternate correct readings. This derived data is also CC BY-SA 4.0. Radical matches are a shape heuristic, not a pixel-level glyph comparison; explicit look-alike/component families take precedence. For rare radicals without enough peers, nearest stroke-count candidates form the last ranked tier. Candidate selection is deterministic.
+
+## Component breakdown subset
+
+`kanji_components.js` lists the visual component parts of every kanji in the
+app's kanji-meaning chips, shown when a chip is tapped. Component elements come
+from KRADFILE (Copyright Michael Raine, James Breen and EDRDG, used under the
+Group's licence at https://www.edrdg.org/edrdg/licence.html; source download
+http://ftp.edrdg.org/pub/Nihongo/kradfile.gz). Self-references, bare strokes and
+kana-shaped glyphs are dropped (kanji with dropped elements are flagged
+`hidden`); each remaining element carries its first KANJIDIC2 English gloss.
+Elements are visual parts, not a promise of historical etymology. Rebuild from
+the repository root:
+
+```
+python3 scripts/build-kanji-components.py
+node scripts/verify-kanji-components.mjs
+```
