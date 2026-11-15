@@ -429,9 +429,9 @@ export function renderHomeVocabStatus() {
    one compact bar - due count, per-pillar breakdown, Start - plus a
    collapsible lesson grid (elementary-app pattern) that doubles as the
    review lesson picker. Selection and grid open state are remembered.
-   The grid lists every lesson (his 14:01 ask: "look at all the lessons
-   present in those chapters"), due ones highlighted with their count,
-   the rest dimmed with 0; a picked lesson with nothing due is said out
+   The grid lists only lessons with due cards (his 14:17 ask; the full
+   list is the Select lessons section below), plus any still-picked
+   lesson so it can be unpicked; a picked lesson with nothing due is said out
    loud on the bar ("0 due in picked lessons") and Start stays off rather
    than failing silently. Vocab chapters 31-55 are the kanji-book lessons
    (K1-K25) and also filter kanji-pillar due for the matching kanji
@@ -440,6 +440,7 @@ export function renderHomeVocabStatus() {
    Start will serve.
    ======================================================= */
 const HRD_SEL_KEY = 'n3_home_review_lessons';
+const HRD_PILLAR = 'vocab';
 const HRD_OPEN_KEY = 'n3_home_review_grid_open';
 
 function homeReviewSelection() {
@@ -455,13 +456,10 @@ function saveHomeReviewSelection(sel) {
 
 function homeReviewEffectiveFilter(sel) {
   if (!sel.size) return null;
-  const f = new Set(sel);
-  for (const chId of sel) {
-    const n = Number(chId);
-    if (Number.isFinite(n) && n > 30) { f.add(n - 30); f.add(String(n - 30)); }
-  }
-  try { for (const sec of grammarSections()) f.add(sec.secId); } catch (_) {}
-  return f;
+  // Words only (his 14:18 ask): vocab chapters, K1-K25 included. To bring
+  // kanji/reading/grammar back, set HRD_PILLAR to 'all' and restore the
+  // kanji/grammar additions from commit 2931060.
+  return new Set(sel);
 }
 
 export function renderHomeReviewDue() {
@@ -469,8 +467,8 @@ export function renderHomeReviewDue() {
   if (!root || !state.stats) return;
   const sel = homeReviewSelection();
   const filter = homeReviewEffectiveFilter(sel);
-  const total = getDueItemsCount('all');
-  const count = filter ? getDueItemsCount('all', filter) : total;
+  const total = getDueItemsCount(HRD_PILLAR);
+  const count = filter ? getDueItemsCount(HRD_PILLAR, filter) : total;
 
   // Per-lesson due counts, computed once for the bar and the grid. Vocab
   // chapters 31-55 (K1-K25) also count kanji-pillar due for their kanji lesson.
@@ -479,7 +477,6 @@ export function renderHomeReviewDue() {
   for (const chId of keys) {
     const n = Number(chId);
     let due = getDueItemsCount('vocab', new Set([chId]));
-    if (Number.isFinite(n) && n > 30) due += getDueItemsCount('kanji', new Set([n - 30, String(n - 30)]));
     dueMap[chId] = due;
   }
   let pickedDue = 0;
@@ -509,13 +506,7 @@ export function renderHomeReviewDue() {
     } else if (filter) {
       breakdownEl.textContent = count + ' of ' + total + ' due · ' + sel.size + ' lesson' + (sel.size === 1 ? '' : 's');
     } else {
-      const v = getDueItemsCount('vocab'), k = getDueItemsCount('kanji'), r = getDueItemsCount('reading'), g = getDueItemsCount('grammar');
-      const parts = [];
-      if (v) parts.push('V ' + v);
-      if (k) parts.push('K ' + k);
-      if (r) parts.push('R ' + r);
-      if (g) parts.push('G ' + g);
-      breakdownEl.textContent = parts.join(' · ');
+      breakdownEl.textContent = total + ' word' + (total === 1 ? '' : 's') + ' due';
     }
   }
 
@@ -538,6 +529,7 @@ export function renderHomeReviewDue() {
     const n = Number(chId);
     const due = dueMap[chId];
     const isSel = sel.has(chId);
+    if (!due && !isSel) continue; // box lists only lessons with due cards (a still-picked lesson stays so it can be unpicked)
     const label = chId.startsWith('part2_') ? 'C' + Number(chId.slice(6))
       : (n > 30 ? 'K' + (n - 30) : (n > 21 ? 'R' + (n - 21) : String(n)));
     const topic = (state.chapterMetadata[chId] || {}).topic_en || '';
@@ -575,6 +567,6 @@ if (typeof window !== 'undefined') window.toggleHomeReviewGrid = toggleHomeRevie
 export function startHomeDueReview() {
   const sel = homeReviewSelection();
   const filter = homeReviewEffectiveFilter(sel);
-  startDueReview('all', filter);
+  startDueReview(HRD_PILLAR, filter || new Set());
 }
 if (typeof window !== 'undefined') window.startHomeDueReview = startHomeDueReview;
