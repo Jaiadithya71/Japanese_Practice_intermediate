@@ -7,7 +7,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 
 import { state } from './state.js';
 import { getWordStatus, peekItemStatus, getDueItemsCount } from './srs.js';
-import { startStudy, renderCard, startDueReview } from './study.js?v=4.5';
+import { startStudy, renderCard, startDueReview } from './study.js?v=4.6';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
@@ -442,6 +442,29 @@ export function renderHomeVocabStatus() {
 const HRD_SEL_KEY = 'n3_home_review_lessons';
 const HRD_PILLAR = 'vocab';
 const HRD_OPEN_KEY = 'n3_home_review_grid_open';
+const HRD_PART_KEY = 'n3_home_review_part';
+
+// Global A / B / Both switch (his 14:35 ask: "Yes, but let's not make it
+// lesson wise"). A = kanji-front cards, B = kana-front cards, Both = both.
+// One switch for the whole box: it filters the due count, the chips' counts
+// and the round, so the bar count always equals the cards Start serves.
+function homeReviewPart() {
+  try {
+    const p = localStorage.getItem(HRD_PART_KEY);
+    return (p === 'A' || p === 'B') ? p : 'both';
+  } catch (_) { return 'both'; }
+}
+
+function homeReviewPartOpts() {
+  const p = homeReviewPart();
+  return p === 'both' ? {} : { part: p };
+}
+
+export function setHomeReviewPart(part) {
+  try { localStorage.setItem(HRD_PART_KEY, (part === 'A' || part === 'B') ? part : 'both'); } catch (_) {}
+  renderHomeReviewDue();
+}
+if (typeof window !== 'undefined') window.setHomeReviewPart = setHomeReviewPart;
 
 function homeReviewSelection() {
   try {
@@ -467,8 +490,17 @@ export function renderHomeReviewDue() {
   if (!root || !state.stats) return;
   const sel = homeReviewSelection();
   const filter = homeReviewEffectiveFilter(sel);
-  const total = getDueItemsCount(HRD_PILLAR);
-  const count = filter ? getDueItemsCount(HRD_PILLAR, filter) : total;
+  const part = homeReviewPart();
+  const partOpts = part === 'both' ? {} : { part };
+  const total = getDueItemsCount(HRD_PILLAR, null, partOpts);
+  const count = filter ? getDueItemsCount(HRD_PILLAR, filter, partOpts) : total;
+
+  const partWrap = document.getElementById('hrd-part');
+  if (partWrap) {
+    partWrap.querySelectorAll('button[data-part]').forEach(b => {
+      b.classList.toggle('selected', b.dataset.part === part);
+    });
+  }
 
   // Per-lesson due counts, computed once for the bar and the grid. Vocab
   // chapters 31-55 (K1-K25) also count kanji-pillar due for their kanji lesson.
@@ -476,7 +508,7 @@ export function renderHomeReviewDue() {
   const dueMap = {};
   for (const chId of keys) {
     const n = Number(chId);
-    let due = getDueItemsCount('vocab', new Set([chId]));
+    let due = getDueItemsCount('vocab', new Set([chId]), partOpts);
     dueMap[chId] = due;
   }
   let pickedDue = 0;
@@ -492,7 +524,7 @@ export function renderHomeReviewDue() {
   }
   if (breakdownEl) {
     if (total === 0) {
-      breakdownEl.textContent = 'All caught up';
+      breakdownEl.textContent = part === 'both' ? 'All caught up' : 'No ' + part + ' cards due';
     } else if (filter && pickedDue === 0 && count === 0) {
       // Picked lessons have nothing due and there is no always-included
       // grammar/reading due either: say so instead of letting Start fail
@@ -506,7 +538,7 @@ export function renderHomeReviewDue() {
     } else if (filter) {
       breakdownEl.textContent = count + ' of ' + total + ' due · ' + sel.size + ' lesson' + (sel.size === 1 ? '' : 's');
     } else {
-      breakdownEl.textContent = total + ' word' + (total === 1 ? '' : 's') + ' due';
+      breakdownEl.textContent = total + ' word' + (total === 1 ? '' : 's') + ' due' + (part === 'both' ? '' : ' · ' + part);
     }
   }
 
@@ -567,6 +599,6 @@ if (typeof window !== 'undefined') window.toggleHomeReviewGrid = toggleHomeRevie
 export function startHomeDueReview() {
   const sel = homeReviewSelection();
   const filter = homeReviewEffectiveFilter(sel);
-  startDueReview(HRD_PILLAR, filter || new Set());
+  startDueReview(HRD_PILLAR, filter || new Set(), homeReviewPartOpts());
 }
 if (typeof window !== 'undefined') window.startHomeDueReview = startHomeDueReview;

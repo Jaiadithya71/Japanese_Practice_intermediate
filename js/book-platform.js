@@ -7,7 +7,7 @@
 import { grammarSections } from './grammar-lessons.js';
 import { state } from './state.js';
 import { getDueItemsCount, peekItemStatus, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey, isKanjiReadingCovered } from './srs.js';
-import { startStudy, startOmniReview, startDueReview } from './study.js?v=4.5';
+import { startStudy, startOmniReview, startDueReview } from './study.js?v=4.6';
 import { exportBackup, importBackup, restoreSnapshot } from './backup.js';
 import { openSyncSetup } from './gist-sync.js';
 import { renderKanjiView, setKanjiTab, drillKanjiSingle } from './kanji.js';

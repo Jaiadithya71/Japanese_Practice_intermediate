@@ -391,6 +391,17 @@
   flex: 1; min-width: 0; font-size: 0.72rem; color: var(--text-dim, #7a8099); text-align: right;
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
+.hrd-part {
+  display: inline-flex; border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  border-radius: 8px; overflow: hidden; flex: none;
+}
+.hrd-part button {
+  background: none; border: none; color: var(--text-muted, #9aa0b5);
+  padding: 0.4rem 0.5rem; font-size: 0.72rem; font-weight: 700;
+  cursor: pointer; font-family: inherit; line-height: 1;
+}
+.hrd-part button + button { border-left: 1px solid var(--border, rgba(255, 255, 255, 0.12)); }
+.hrd-part button.selected { background: var(--accent, #d4af6a); color: #101528; }
 .hrd-toggle {
   background: none; border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
   color: var(--text-muted, #9aa0b5); border-radius: 8px; padding: 0.4rem 0.6rem;
@@ -405,3 +416,9 @@
 .hrd-grid .due-chip.no-due { opacity: 0.45; }
 .hrd-grid .due-chip.no-due.selected { opacity: 1; }
 .hrd-grid-hint { margin: 0.45rem 0 0; font-size: 0.7rem; color: var(--text-dim, #7a8099); }
+/* Narrow phones: with the A/B/Both switch in the row, the breakdown wraps
+   to its own full-width line instead of being crushed between the buttons. */
+@media (max-width: 480px) {
+  .hrd-row { flex-wrap: wrap; }
+  .hrd-breakdown { flex: 1 1 100%; order: 5; text-align: left; -webkit-line-clamp: 2; }
+}

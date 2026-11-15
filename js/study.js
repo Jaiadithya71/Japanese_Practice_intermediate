@@ -94,7 +94,7 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   renderCard();
 }
 
-export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
+export function startDueReview(pillarFilter = 'all', chapterFilter = null, options = {}) {
   state.omniDueFilter = pillarFilter;
 
   // Use explicit chapterFilter or active selection from state
@@ -114,7 +114,7 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null) {
     }
   }
 
-  const pool = pillarFilter === 'kanji' ? kanjiReviewPlan(chapterFilter || state.selectedDueKanjiLessons).items : getAllDueItems(pillarFilter, state.dueBatchSize, chapterFilter);
+  const pool = pillarFilter === 'kanji' ? kanjiReviewPlan(chapterFilter || state.selectedDueKanjiLessons).items : getAllDueItems(pillarFilter, state.dueBatchSize, chapterFilter, options);
 
   if (pool.length === 0) {
     alert('No due items right now for this filter! Great job staying caught up.');

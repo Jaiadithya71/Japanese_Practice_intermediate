@@ -533,7 +533,7 @@ export function isKanjiReadingCovered(char, stats = state.stats) {
 // OMNI-REVIEW & MULTI-BOOK DUE ITEMS
 // =======================================================
 
-export function getDueItemsCount(pillar = 'all', chapterFilter = null) {
+export function getDueItemsCount(pillar = 'all', chapterFilter = null, options = {}) {
   const now = Date.now();
   let count = 0;
   if (!state.stats) return 0;
@@ -556,6 +556,17 @@ export function getDueItemsCount(pillar = 'all', chapterFilter = null) {
 
     const itemPillar = getPillarFromKey(key);
     if (pillar !== 'all' && pillar !== itemPillar) continue;
+
+    // Home Review due A/B switch (2026-11-15, his ask): one global switch,
+    // not per lesson. A = kanji-front word card (V:<id>), B = kana-front
+    // (V:<id>:kana). Other key shapes (VC: collocations, V:<id>:rev) are in
+    // neither A nor B; Both passes no options.part and keeps everything.
+    if (options.part === 'A' || options.part === 'B') {
+      const isVWord = key.startsWith('V:') && !key.endsWith(':rev');
+      const isB = isVWord && key.endsWith(':kana');
+      if (options.part === 'A' && (!isVWord || isB)) continue;
+      if (options.part === 'B' && !isB) continue;
+    }
 
     if (filterSet && filterSet.size > 0) {
       const resolved = resolveItemForKey(key, s);
@@ -883,6 +894,15 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null,
     if (options.facets && !options.facets.has(getFacetFromKey(key))) continue;
     const itemPillar = getPillarFromKey(key);
     if (pillar !== 'all' && pillar !== itemPillar) continue;
+
+    // Home Review due A/B switch: see getDueItemsCount. Must stay in step so
+    // the count on the bar equals the cards Start serves.
+    if (options.part === 'A' || options.part === 'B') {
+      const isVWord = key.startsWith('V:') && !key.endsWith(':rev');
+      const isB = isVWord && key.endsWith(':kana');
+      if (options.part === 'A' && (!isVWord || isB)) continue;
+      if (options.part === 'B' && !isB) continue;
+    }
 
     const resolved = resolveItemForKey(key, s);
 

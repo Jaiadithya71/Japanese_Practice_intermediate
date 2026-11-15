@@ -14,7 +14,7 @@ import { GRAMMAR_FURIGANA } from './grammar-furigana.js';
 import { state } from './state.js';
 import { peekItemStatus } from './srs.js';
 import { beginGistReviewSession } from './gist-sync.js';
-import { renderCard } from './study.js?v=4.5';
+import { renderCard } from './study.js?v=4.6';
 import { showView } from './navigation.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
