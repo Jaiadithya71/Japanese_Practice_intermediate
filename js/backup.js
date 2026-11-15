@@ -4,6 +4,7 @@
    ======================================================= */
 
 import { state } from './state.js';
+import { loadAttempts, mergeAttempts } from './reading-times.js';
 
 export const STORAGE_KEYS = {
   STATS: 'nihongo_intermediate_stats_v1',

@@ -6,7 +6,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
    ======================================================= */
 
 import { state } from './state.js';
-import { getWordStatus, peekItemStatus, getDueItemsCount } from './srs.js';
+import { getWordStatus, peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js';
 import { startStudy, renderCard, startDueReview } from './study.js?v=4.6';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js';
@@ -492,8 +492,9 @@ export function renderHomeReviewDue() {
   const filter = homeReviewEffectiveFilter(sel);
   const part = homeReviewPart();
   const partOpts = part === 'both' ? {} : { part };
-  const total = getDueItemsCount(HRD_PILLAR, null, partOpts);
-  const count = filter ? getDueItemsCount(HRD_PILLAR, filter, partOpts) : total;
+  const summary = getVocabDueSummary(partOpts);
+  const total = summary.total;
+  const count = filter ? summary.unassigned + [...filter].reduce((n, ch) => n + (summary.byChapter.get(String(ch)) || 0), 0) : total;
 
   const partWrap = document.getElementById('hrd-part');
   if (partWrap) {
@@ -508,7 +509,7 @@ export function renderHomeReviewDue() {
   const dueMap = {};
   for (const chId of keys) {
     const n = Number(chId);
-    let due = getDueItemsCount('vocab', new Set([chId]), partOpts);
+    const due = (summary.byChapter.get(String(chId)) || 0) + summary.unassigned;
     dueMap[chId] = due;
   }
   let pickedDue = 0;

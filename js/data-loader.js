@@ -31,13 +31,20 @@ const READING_FILES = [
   { file: 'data/reading/part4_long_info.json', cat: 'real_long_info' }
 ];
 
+// Start each book's independent requests together; process results in source
+// order so duplicate precedence and progress migrations remain unchanged.
+function fetchBookFiles(files) {
+  return new Map(files.map(file => [file, fetch(file).catch(error => ({ ok: false, status: 0, error }))]));
+}
+
 export async function loadIntermediateVocabDB() {
   const allChapters = {};
   const allMetadata = {};
 
+  const responses = fetchBookFiles(VOCAB_FILES);
   for (const file of VOCAB_FILES) {
     try {
-      const res = await fetch(file);
+      const res = await responses.get(file);
       if (!res.ok) {
         console.warn(`Could not load ${file}: HTTP ${res.status}`);
         continue;
@@ -143,9 +150,10 @@ export async function loadIntermediateReadingDB() {
     info: []
   };
 
+  const responses = fetchBookFiles(READING_FILES.map(item => item.file));
   for (const item of READING_FILES) {
     try {
-      const res = await fetch(item.file);
+      const res = await responses.get(item.file);
       if (!res.ok) {
         console.warn(`Could not load ${item.file}: HTTP ${res.status}`);
         continue;
@@ -257,10 +265,14 @@ export async function loadIntermediateKanjiDB() {
   const allLessons = [];
   const exercisesMap = {};
 
+  const responses = fetchBookFiles([
+    ...KANJI_PART_FILES.map(item => item.file), ...KANJI_EXERCISE_FILES,
+    'data/kanji/review_300_n4_n5.json', 'data/kanji/special_readings.json', 'data/kanji/kanji_mock_tests.json'
+  ]);
   // 1. Load Parts 1-5 target kanji
   for (const item of KANJI_PART_FILES) {
     try {
-      const res = await fetch(item.file);
+      const res = await responses.get(item.file);
       if (!res.ok) continue;
       const data = await res.json();
       const lessons = data.lessons || [];
@@ -294,7 +306,7 @@ export async function loadIntermediateKanjiDB() {
   // 2. Load Exercises
   for (const exFile of KANJI_EXERCISE_FILES) {
     try {
-      const res = await fetch(exFile);
+      const res = await responses.get(exFile);
       if (!res.ok) continue;
       const data = await res.json();
       const lessons = data.lessons || [];
@@ -317,7 +329,7 @@ export async function loadIntermediateKanjiDB() {
 
   // 3. Load Review 300
   try {
-    const res = await fetch('data/kanji/review_300_n4_n5.json');
+    const res = await responses.get('data/kanji/review_300_n4_n5.json');
     if (res.ok) {
       const data = await res.json();
       state.kanjiReview300 = data.items || [];
@@ -328,7 +340,7 @@ export async function loadIntermediateKanjiDB() {
 
   // 4. Load Special Readings
   try {
-    const res = await fetch('data/kanji/special_readings.json');
+    const res = await responses.get('data/kanji/special_readings.json');
     if (res.ok) {
       const data = await res.json();
       state.kanjiSpecialReadings = data.items || [];
@@ -339,7 +351,7 @@ export async function loadIntermediateKanjiDB() {
 
   // 5. Load Mock Tests
   try {
-    const res = await fetch('data/kanji/kanji_mock_tests.json');
+    const res = await responses.get('data/kanji/kanji_mock_tests.json');
     if (res.ok) {
       const data = await res.json();
       state.kanjiMockTests = data.chapters || [];

@@ -396,9 +396,11 @@ export function scheduleGistSave() {
   else setStatus('pending', 'Sync pending · ends with a review');
 }
 
+// Reuse the formatter. Creating one per record froze session exit while the
+// daily summary scanned thousands of SRS records, even untouched defaults.
+const summaryDateFormat = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' });
 function istDateKeyFor(timestamp = Date.now()) {
-  const d = new Date(timestamp);
-  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Kolkata', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+  return summaryDateFormat.format(new Date(timestamp));
 }
 
 function daySessionTotals(date, elapsedMs) {

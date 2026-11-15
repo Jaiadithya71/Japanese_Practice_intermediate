@@ -533,6 +533,43 @@ export function isKanjiReadingCovered(char, stats = state.stats) {
 // OMNI-REVIEW & MULTI-BOOK DUE ITEMS
 // =======================================================
 
+// Index immutable vocabulary data once, not once per due card / lesson.
+// Replaced datasets rebuild the index; stats are always read live (no stale sync cache).
+let vocabIndexSource;
+let vocabById = new Map();
+function vocabWordForId(id) {
+  if (vocabIndexSource !== state.vocabDB) {
+    vocabIndexSource = state.vocabDB;
+    vocabById = new Map();
+    for (const words of Object.values(state.vocabDB || {})) {
+      for (const word of words) if (!vocabById.has(word.id)) vocabById.set(word.id, word);
+    }
+  }
+  return vocabById.get(id);
+}
+
+function matchesReviewPart(key, part) {
+  if (part !== 'A' && part !== 'B') return true;
+  const word = key.startsWith('V:') && !key.endsWith(':rev');
+  const kana = word && key.endsWith(':kana');
+  return part === 'A' ? word && !kana : kana;
+}
+
+// One live pass for Home's total and all lesson chips, even with the grid closed.
+export function getVocabDueSummary(options = {}) {
+  const now = Date.now();
+  const byChapter = new Map();
+  let total = 0, unassigned = 0;
+  for (const [key, stats] of Object.entries(state.stats || {})) {
+    if (!stats?.nextDue || stats.nextDue > now || getPillarFromKey(key) !== 'vocab' || !matchesReviewPart(key, options.part)) continue;
+    total++;
+    const chapter = resolveItemForKey(key, stats).chapter;
+    if (chapter == null) unassigned++;
+    else byChapter.set(String(chapter), (byChapter.get(String(chapter)) || 0) + 1);
+  }
+  return { total, byChapter, unassigned };
+}
+
 export function getDueItemsCount(pillar = 'all', chapterFilter = null, options = {}) {
   const now = Date.now();
   let count = 0;
@@ -545,6 +582,8 @@ export function getDueItemsCount(pillar = 'all', chapterFilter = null, options =
   for (const key in state.stats) {
     const s = state.stats[key];
     if (!s || !s.nextDue || s.nextDue > now) continue;
+
+    if (pillar !== 'all' && pillar !== getPillarFromKey(key)) continue;
 
     // KWM (Kanji -> English) is no longer served in review; keep the count in
     // step with getAllDueItems so "N due" matches the cards actually shown.
@@ -687,10 +726,8 @@ export function resolveItemForKey(key, stats) {
   if (facet === 'V') {
     const kanaFirst = key.endsWith(':kana');
     const id = key.replace(/^V:/, '').replace(/:rev$/, '').replace(/:kana$/, '');
-    for (const chId in (state.vocabDB || {})) {
-      const w = (state.vocabDB[chId] || []).find(item => item.id === id);
-      if (w) return { ...w, type: 'vocab', key, book: 'vocab', stats, facet, pillar, kanaFirst };
-    }
+    const w = vocabWordForId(id);
+    if (w) return { ...w, type: 'vocab', key, book: 'vocab', stats, facet, pillar, kanaFirst };
     return { id, key, type: 'vocab', book: 'vocab', stats, facet, pillar, kanaFirst };
   }
 
@@ -881,6 +918,8 @@ export function getAllDueItems(pillar = 'all', limit = 20, chapterFilter = null,
   for (const key in state.stats) {
     const s = state.stats[key];
     if (!s || !s.nextDue || s.nextDue > now) continue;
+
+    if (pillar !== 'all' && pillar !== getPillarFromKey(key)) continue;
 
     // Kanji -> English (KWM) is no longer a study direction (user ask
     // 2026-10-26: keep only kana <-> kanji, matching the Quick Quiz picker).

@@ -82,3 +82,14 @@
 #ptr.done{color:#34d399;border-color:rgba(52,211,153,.45)}
 #ptr.done i{animation:n3spop .4s ease-out}
 @keyframes ptrspin{to{transform:rotate(360deg)}}
+
+/* Long explorers retain every card, but skip offscreen layout/paint on phones. */
+@media (max-width: 899px) {
+  .grammar-card, .test-card, .vocab-card {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 220px;
+  }
+}
+
+/* Match study mode: don't cover test header controls with the sync badge. */
+body:has(#test-runner-screen:not(.hide)) #n3sync-mobile { display: none; }

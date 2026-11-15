@@ -207,7 +207,11 @@ export function toggleFurigana() {
   }
 }
 
+let vocabListObserver;
+let vocabListGeneration = 0;
 export function renderVocabList() {
+  vocabListObserver?.disconnect();
+  const generation = ++vocabListGeneration;
   const container = document.getElementById('vocab-list-container');
   if (!container) return;
   container.innerHTML = '';
@@ -283,7 +287,18 @@ export function renderVocabList() {
 
   const isStudyMode = document.getElementById('vocab-study-mode')?.checked || false;
 
-  list.forEach(w => {
+  // Keep filtering/counts/drills over the entire selection, but only construct
+  // cards near the viewport. Thousands of hidden cards used to stall every tab.
+  let rendered = 0;
+  const more = document.createElement('button');
+  more.type = 'button';
+  more.className = 'btn btn-outline vocab-load-more';
+  more.style.cssText = 'width:100%;min-height:48px;margin:1rem 0';
+  const appendBatch = () => {
+    if (generation !== vocabListGeneration) return;
+    const fragment = document.createDocumentFragment();
+    const end = Math.min(rendered + 40, list.length);
+    list.slice(rendered, end).forEach(w => {
     const st = getWordStatus(w.id, state.studyDirection);
     const isHard = st === 'hard';
     const card = document.createElement('div');
@@ -353,8 +368,24 @@ export function renderVocabList() {
         </div>
       `;
     }
-    container.appendChild(card);
-  });
+    fragment.appendChild(card);
+    });
+    rendered = end;
+    more.remove();
+    container.appendChild(fragment);
+    if (rendered < list.length) {
+      more.textContent = `Show more words (${rendered} of ${list.length})`;
+      container.appendChild(more);
+      vocabListObserver?.observe(more);
+    } else vocabListObserver?.disconnect();
+  };
+  more.onclick = appendBatch;
+  if (typeof IntersectionObserver !== 'undefined') {
+    vocabListObserver = new IntersectionObserver(entries => {
+      if (entries.some(e => e.isIntersecting)) appendBatch();
+    }, { rootMargin: '400px' });
+  }
+  appendBatch();
 }
 
 export function onToggleHard(wordId) {
