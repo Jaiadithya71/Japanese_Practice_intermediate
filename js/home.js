@@ -429,11 +429,15 @@ export function renderHomeVocabStatus() {
    one compact bar - due count, per-pillar breakdown, Start - plus a
    collapsible lesson grid (elementary-app pattern) that doubles as the
    review lesson picker. Selection and grid open state are remembered.
-   The grid lists only lessons with due cards; vocab chapters 31-55 are
-   the kanji-book lessons (K1-K25) and also filter kanji-pillar due for
-   the matching kanji lesson. Reading and grammar due cards have no
-   lesson picker here and stay in every round, so the count on the bar
-   always equals the cards Start will serve.
+   The grid lists every lesson (his 14:01 ask: "look at all the lessons
+   present in those chapters"), due ones highlighted with their count,
+   the rest dimmed with 0; a picked lesson with nothing due is said out
+   loud on the bar ("0 due in picked lessons") and Start stays off rather
+   than failing silently. Vocab chapters 31-55 are the kanji-book lessons
+   (K1-K25) and also filter kanji-pillar due for the matching kanji
+   lesson. Reading and grammar due cards have no lesson picker here and
+   stay in every round, so the count on the bar always equals the cards
+   Start will serve.
    ======================================================= */
 const HRD_SEL_KEY = 'n3_home_review_lessons';
 const HRD_OPEN_KEY = 'n3_home_review_grid_open';
@@ -468,6 +472,19 @@ export function renderHomeReviewDue() {
   const total = getDueItemsCount('all');
   const count = filter ? getDueItemsCount('all', filter) : total;
 
+  // Per-lesson due counts, computed once for the bar and the grid. Vocab
+  // chapters 31-55 (K1-K25) also count kanji-pillar due for their kanji lesson.
+  const keys = chapterKeysForGroup();
+  const dueMap = {};
+  for (const chId of keys) {
+    const n = Number(chId);
+    let due = getDueItemsCount('vocab', new Set([chId]));
+    if (Number.isFinite(n) && n > 30) due += getDueItemsCount('kanji', new Set([n - 30, String(n - 30)]));
+    dueMap[chId] = due;
+  }
+  let pickedDue = 0;
+  for (const chId of sel) pickedDue += dueMap[chId] || 0;
+
   const countEl = document.getElementById('hrd-count');
   const startBtn = document.getElementById('hrd-start');
   const breakdownEl = document.getElementById('hrd-breakdown');
@@ -479,6 +496,16 @@ export function renderHomeReviewDue() {
   if (breakdownEl) {
     if (total === 0) {
       breakdownEl.textContent = 'All caught up';
+    } else if (filter && pickedDue === 0 && count === 0) {
+      // Picked lessons have nothing due and there is no always-included
+      // grammar/reading due either: say so instead of letting Start fail
+      // (startDueReview would only alert).
+      breakdownEl.textContent = '0 due in picked lesson' + (sel.size === 1 ? '' : 's') + ' · ' + total + ' due elsewhere';
+    } else if (filter && pickedDue === 0) {
+      // Nothing due in the picked lessons. Due grammar/reading cards stay
+      // in every round, so the button count may still be non-zero; the hint
+      // line under the grid says they are always included.
+      breakdownEl.textContent = '0 due in picked lesson' + (sel.size === 1 ? '' : 's');
     } else if (filter) {
       breakdownEl.textContent = count + ' of ' + total + ' due · ' + sel.size + ' lesson' + (sel.size === 1 ? '' : 's');
     } else {
@@ -507,16 +534,15 @@ export function renderHomeReviewDue() {
   if (!grid) return;
   const chips = [];
   chips.push('<button type="button" class="due-chip' + (sel.size === 0 ? ' selected' : '') + '" onclick="window.clearHomeReviewLessons()">All<span class="due-chip-count">' + total + '</span></button>');
-  for (const chId of chapterKeysForGroup()) {
+  for (const chId of keys) {
     const n = Number(chId);
-    let due = getDueItemsCount('vocab', new Set([chId]));
-    if (Number.isFinite(n) && n > 30) due += getDueItemsCount('kanji', new Set([n - 30, String(n - 30)]));
+    const due = dueMap[chId];
     const isSel = sel.has(chId);
-    if (!due && !isSel) continue;
     const label = chId.startsWith('part2_') ? 'C' + Number(chId.slice(6))
       : (n > 30 ? 'K' + (n - 30) : (n > 21 ? 'R' + (n - 21) : String(n)));
     const topic = (state.chapterMetadata[chId] || {}).topic_en || '';
-    chips.push('<button type="button" class="due-chip' + (isSel ? ' selected' : '') + '" title="' + (topic ? topic.replace(/&/g, '&amp;').replace(/"/g, '&quot;') + ' · ' : '') + due + ' due" onclick="window.toggleHomeReviewLesson(\'' + chId + '\')">' + label + '<span class="due-chip-count">' + due + '</span></button>');
+    const cls = 'due-chip' + (isSel ? ' selected' : '') + (due ? ' has-due' : ' no-due');
+    chips.push('<button type="button" class="' + cls + '" title="' + (topic ? topic.replace(/&/g, '&amp;').replace(/"/g, '&quot;') + ' · ' : '') + due + ' due" onclick="window.toggleHomeReviewLesson(\'' + chId + '\')">' + label + '<span class="due-chip-count">' + due + '</span></button>');
   }
   grid.innerHTML = chips.join('');
 }

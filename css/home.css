@@ -388,8 +388,8 @@
 .hrd-start.hrd-caught-up { background: var(--bg3, #1e2230); color: var(--green, #34d399); }
 .hrd-start.hrd-caught-up .hrd-count { background: rgba(255, 255, 255, 0.08); }
 .hrd-breakdown {
-  flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-  font-size: 0.72rem; color: var(--text-dim, #7a8099); text-align: right;
+  flex: 1; min-width: 0; font-size: 0.72rem; color: var(--text-dim, #7a8099); text-align: right;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
 .hrd-toggle {
   background: none; border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
@@ -399,4 +399,9 @@
 .hrd-toggle .fa-chevron-down { transition: transform 0.15s ease; }
 .hrd-toggle.open .fa-chevron-down { transform: rotate(180deg); }
 .hrd-grid-wrap { margin-top: 0.55rem; }
+.hrd-grid-wrap .due-chapter-grid { max-height: 172px; overflow-y: auto; padding-right: 0.15rem; }
+.hrd-grid .due-chip.has-due { border-color: rgba(212, 175, 106, 0.45); }
+.hrd-grid .due-chip.has-due .due-chip-count { color: var(--accent, #d4af6a); }
+.hrd-grid .due-chip.no-due { opacity: 0.45; }
+.hrd-grid .due-chip.no-due.selected { opacity: 1; }
 .hrd-grid-hint { margin: 0.45rem 0 0; font-size: 0.7rem; color: var(--text-dim, #7a8099); }
