@@ -93,3 +93,9 @@
 
 /* Match study mode: don't cover test header controls with the sync badge. */
 body:has(#test-runner-screen:not(.hide)) #n3sync-mobile { display: none; }
+@media (max-width: 899px) {
+  /* Route transitions must not add a visible delay after the work is done. */
+  .view.active { animation: none !important; opacity: 1 !important; transform: none !important; }
+  /* The floating sync-off badge must not cover the explorer title. */
+  #view-vocab > .view-header { padding-top: 30px; }
+}
