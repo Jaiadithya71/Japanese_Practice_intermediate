@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css?v=20261022-taps" />
   <link rel="stylesheet" href="css/navigation.css" />
-  <link rel="stylesheet" href="css/home.css?v=20261114-picker" />
+  <link rel="stylesheet" href="css/home.css?v=20261115-reviewdue" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css?v=20261106-update5" />
   <link rel="stylesheet" href="css/kanji.css?v=20261028-learnbtn" />
@@ -117,6 +117,22 @@
         <span id="home-sync-state" class="home-status-sync n3s-idle"><i class="fa-solid fa-cloud"></i><span>Sync off</span></span>
       </div>
       <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin: 0 0 0.75rem;"></div>
+
+      <section id="home-review-due" class="home-review-due" aria-label="Due reviews">
+        <div class="hrd-row">
+          <button type="button" id="hrd-start" class="hrd-start" onclick="window.startHomeDueReview()">
+            <i class="fa-solid fa-bolt"></i><span>Review due</span><strong id="hrd-count" class="hrd-count">0</strong>
+          </button>
+          <span id="hrd-breakdown" class="hrd-breakdown"></span>
+          <button type="button" id="hrd-toggle" class="hrd-toggle" aria-expanded="false" onclick="window.toggleHomeReviewGrid()">
+            Lessons <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+        <div id="hrd-grid-wrap" class="hrd-grid-wrap" hidden>
+          <div id="hrd-grid" class="due-chapter-grid"></div>
+          <p class="hrd-grid-hint">Tap lessons to focus the review (All = everything due). Due reading and grammar cards are always included.</p>
+        </div>
+      </section>
 
       <section class="home-lessons-card" aria-labelledby="home-lessons-title">
         <div class="home-picker-heading">
@@ -1223,7 +1239,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=4.11-kanji-book-lessons"></script>
+  <script type="module" src="js/main.js?v=4.12-review-due"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

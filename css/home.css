@@ -363,3 +363,40 @@
 #view-grammar .home-lesson-ab-dot { display:none; }
 #view-grammar .home-lesson-ab-seg.all-done { border-color:#10b981; color:#10b981; }
 .grammar-route-start:disabled { opacity:.4; cursor:not-allowed; }
+
+/* Home: compact "Review due" entry (2026-11-15) */
+.home-review-due {
+  margin: 0 0 0.75rem;
+  background: var(--bg2, rgba(255, 255, 255, 0.03));
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
+  padding: 0.5rem 0.6rem;
+}
+.hrd-row { display: flex; align-items: center; gap: 0.5rem; }
+.hrd-start {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  background: var(--accent, #d4af6a); color: #101528;
+  border: none; border-radius: 9px; padding: 0.45rem 0.75rem;
+  font-weight: 700; font-size: 0.85rem; cursor: pointer; font-family: inherit;
+  white-space: nowrap;
+}
+.hrd-start:disabled { opacity: 0.55; cursor: default; }
+.hrd-start .hrd-count {
+  background: rgba(0, 0, 0, 0.25); border-radius: 999px;
+  padding: 0.05rem 0.5rem; font-size: 0.85rem;
+}
+.hrd-start.hrd-caught-up { background: var(--bg3, #1e2230); color: var(--green, #34d399); }
+.hrd-start.hrd-caught-up .hrd-count { background: rgba(255, 255, 255, 0.08); }
+.hrd-breakdown {
+  flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: 0.72rem; color: var(--text-dim, #7a8099); text-align: right;
+}
+.hrd-toggle {
+  background: none; border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  color: var(--text-muted, #9aa0b5); border-radius: 8px; padding: 0.4rem 0.6rem;
+  font-size: 0.75rem; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.hrd-toggle .fa-chevron-down { transition: transform 0.15s ease; }
+.hrd-toggle.open .fa-chevron-down { transform: rotate(180deg); }
+.hrd-grid-wrap { margin-top: 0.55rem; }
+.hrd-grid-hint { margin: 0.45rem 0 0; font-size: 0.7rem; color: var(--text-dim, #7a8099); }

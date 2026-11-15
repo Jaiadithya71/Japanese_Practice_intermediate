@@ -6,8 +6,9 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
    ======================================================= */
 
 import { state } from './state.js';
-import { getWordStatus, peekItemStatus } from './srs.js';
-import { startStudy, renderCard } from './study.js?v=4.5';
+import { getWordStatus, peekItemStatus, getDueItemsCount } from './srs.js';
+import { startStudy, renderCard, startDueReview } from './study.js?v=4.5';
+import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
@@ -31,6 +32,7 @@ export function renderHomeView() {
     if (!state.selectedChapters.size && state.activeChapterGroup === 'topic' && state.vocabDB['01']) state.selectedChapters.add('01');
     state.homePickerInitialized = true;
   }
+  renderHomeReviewDue();
   renderLessonGrid();
   renderHomeVocabStatus();
   renderHomeActivity();
@@ -421,3 +423,132 @@ export function renderHomeVocabStatus() {
     </div>`;
   }).join('');
 }
+
+/* =======================================================
+   Home "Review due" entry (2026-11-15, his ask):
+   one compact bar - due count, per-pillar breakdown, Start - plus a
+   collapsible lesson grid (elementary-app pattern) that doubles as the
+   review lesson picker. Selection and grid open state are remembered.
+   The grid lists only lessons with due cards; vocab chapters 31-55 are
+   the kanji-book lessons (K1-K25) and also filter kanji-pillar due for
+   the matching kanji lesson. Reading and grammar due cards have no
+   lesson picker here and stay in every round, so the count on the bar
+   always equals the cards Start will serve.
+   ======================================================= */
+const HRD_SEL_KEY = 'n3_home_review_lessons';
+const HRD_OPEN_KEY = 'n3_home_review_grid_open';
+
+function homeReviewSelection() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(HRD_SEL_KEY) || '[]');
+    return new Set(Array.isArray(arr) ? arr.map(String) : []);
+  } catch (_) { return new Set(); }
+}
+
+function saveHomeReviewSelection(sel) {
+  try { localStorage.setItem(HRD_SEL_KEY, JSON.stringify([...sel])); } catch (_) {}
+}
+
+function homeReviewEffectiveFilter(sel) {
+  if (!sel.size) return null;
+  const f = new Set(sel);
+  for (const chId of sel) {
+    const n = Number(chId);
+    if (Number.isFinite(n) && n > 30) { f.add(n - 30); f.add(String(n - 30)); }
+  }
+  try { for (const sec of grammarSections()) f.add(sec.secId); } catch (_) {}
+  return f;
+}
+
+export function renderHomeReviewDue() {
+  const root = document.getElementById('home-review-due');
+  if (!root || !state.stats) return;
+  const sel = homeReviewSelection();
+  const filter = homeReviewEffectiveFilter(sel);
+  const total = getDueItemsCount('all');
+  const count = filter ? getDueItemsCount('all', filter) : total;
+
+  const countEl = document.getElementById('hrd-count');
+  const startBtn = document.getElementById('hrd-start');
+  const breakdownEl = document.getElementById('hrd-breakdown');
+  if (countEl) countEl.textContent = count;
+  if (startBtn) {
+    startBtn.disabled = count === 0;
+    startBtn.classList.toggle('hrd-caught-up', total === 0);
+  }
+  if (breakdownEl) {
+    if (total === 0) {
+      breakdownEl.textContent = 'All caught up';
+    } else if (filter) {
+      breakdownEl.textContent = count + ' of ' + total + ' due · ' + sel.size + ' lesson' + (sel.size === 1 ? '' : 's');
+    } else {
+      const v = getDueItemsCount('vocab'), k = getDueItemsCount('kanji'), r = getDueItemsCount('reading'), g = getDueItemsCount('grammar');
+      const parts = [];
+      if (v) parts.push('V ' + v);
+      if (k) parts.push('K ' + k);
+      if (r) parts.push('R ' + r);
+      if (g) parts.push('G ' + g);
+      breakdownEl.textContent = parts.join(' · ');
+    }
+  }
+
+  const wrap = document.getElementById('hrd-grid-wrap');
+  const toggle = document.getElementById('hrd-toggle');
+  let open = false;
+  try { open = localStorage.getItem(HRD_OPEN_KEY) === '1'; } catch (_) {}
+  if (wrap) wrap.hidden = !open;
+  if (toggle) {
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    toggle.classList.toggle('open', open);
+  }
+  if (!open) return;
+
+  const grid = document.getElementById('hrd-grid');
+  if (!grid) return;
+  const chips = [];
+  chips.push('<button type="button" class="due-chip' + (sel.size === 0 ? ' selected' : '') + '" onclick="window.clearHomeReviewLessons()">All<span class="due-chip-count">' + total + '</span></button>');
+  for (const chId of chapterKeysForGroup()) {
+    const n = Number(chId);
+    let due = getDueItemsCount('vocab', new Set([chId]));
+    if (Number.isFinite(n) && n > 30) due += getDueItemsCount('kanji', new Set([n - 30, String(n - 30)]));
+    const isSel = sel.has(chId);
+    if (!due && !isSel) continue;
+    const label = chId.startsWith('part2_') ? 'C' + Number(chId.slice(6))
+      : (n > 30 ? 'K' + (n - 30) : (n > 21 ? 'R' + (n - 21) : String(n)));
+    const topic = (state.chapterMetadata[chId] || {}).topic_en || '';
+    chips.push('<button type="button" class="due-chip' + (isSel ? ' selected' : '') + '" title="' + (topic ? topic.replace(/&/g, '&amp;').replace(/"/g, '&quot;') + ' · ' : '') + due + ' due" onclick="window.toggleHomeReviewLesson(\'' + chId + '\')">' + label + '<span class="due-chip-count">' + due + '</span></button>');
+  }
+  grid.innerHTML = chips.join('');
+}
+
+export function toggleHomeReviewLesson(chId) {
+  const sel = homeReviewSelection();
+  chId = String(chId);
+  if (sel.has(chId)) sel.delete(chId); else sel.add(chId);
+  saveHomeReviewSelection(sel);
+  renderHomeReviewDue();
+}
+if (typeof window !== 'undefined') window.toggleHomeReviewLesson = toggleHomeReviewLesson;
+
+export function clearHomeReviewLessons() {
+  saveHomeReviewSelection(new Set());
+  renderHomeReviewDue();
+}
+if (typeof window !== 'undefined') window.clearHomeReviewLessons = clearHomeReviewLessons;
+
+export function toggleHomeReviewGrid() {
+  let open = false;
+  try {
+    open = localStorage.getItem(HRD_OPEN_KEY) !== '1';
+    localStorage.setItem(HRD_OPEN_KEY, open ? '1' : '0');
+  } catch (_) {}
+  renderHomeReviewDue();
+}
+if (typeof window !== 'undefined') window.toggleHomeReviewGrid = toggleHomeReviewGrid;
+
+export function startHomeDueReview() {
+  const sel = homeReviewSelection();
+  const filter = homeReviewEffectiveFilter(sel);
+  startDueReview('all', filter);
+}
+if (typeof window !== 'undefined') window.startHomeDueReview = startHomeDueReview;
