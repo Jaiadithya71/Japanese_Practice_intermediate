@@ -4,13 +4,13 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { renderHomeView } from './home.js?v=20261116-hrd1';
+import { renderHomeView } from './home.js?v=20261116-lag1';
 import './today.js';
 import { renderSrsHome } from './home-srs.js';
-import { renderChapterChips, renderVocabList, updateHardWordsView } from './vocab-browser.js';
+import { renderChapterChips, renderVocabList, updateHardWordsView } from './vocab-browser.js?v=20261116-lag1';
 import { renderReadingView } from './reader.js';
 import { renderGrammarView } from './grammar.js';
-import { renderKanjiView } from './kanji.js';
+import { renderKanjiView } from './kanji.js?v=20261116-lag1';
 import { initTestHub } from './test.js';
 import { renderClassTrackHTML } from './class-curriculum.js';
 

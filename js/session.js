@@ -15,7 +15,7 @@ import {
   updateItemStats,
   getItemStats,
   formatItemKey
-} from './srs.js';
+} from './srs.js?v=20261116-lag1';
 
 /**
  * Creates and initializes a session state object (doc 02 §5.1).

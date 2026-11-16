@@ -11,8 +11,8 @@
 
 import { state } from './state.js';
 import { startTestSession } from './test.js';
-import { beginGistReviewSession } from './gist-sync.js';
-import { getKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus, peekItemStatus } from './srs.js?v=20261109-kanjistatus2';
+import { beginGistReviewSession } from './gist-sync.js?v=20261116-lag1';
+import { getKanjiStatus, peekKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus, peekItemStatus } from './srs.js?v=20261116-lag1';
 import { startStudy, renderCard } from './study.js?v=4.6';
 import { showView } from './navigation.js';
 import { getKanjiBreakdownPills, generateDistractors } from './kanji-words.js';
@@ -132,10 +132,48 @@ export function populateLessonSelector() {
   });
 }
 
+// Per-lesson kanji/word sets for the picker tiles. kanjiDB is static after
+// data load, so build once and reuse; the old code re-filtered all 443 kanji
+// for each of the 25 tiles on every render (and every tap).
+let kanjiLessonDataCache = null;
+let kanjiLessonDataSource = null;
+function kanjiLessonData(i) {
+  if (!kanjiLessonDataCache || kanjiLessonDataSource !== state.kanjiDB) {
+    kanjiLessonDataCache = new Map();
+    kanjiLessonDataSource = state.kanjiDB;
+    for (const k of Object.values(state.kanjiDB || {})) {
+      const n = k.lesson_number;
+      if (!kanjiLessonDataCache.has(n)) kanjiLessonDataCache.set(n, { kanjiCount: 0, words: new Set() });
+      const d = kanjiLessonDataCache.get(n);
+      d.kanjiCount++;
+      (k.words || []).forEach(w => { const t = (w.term_ja || w.word || '').trim(); if (t) d.words.add(t); });
+    }
+  }
+  return kanjiLessonDataCache.get(i) || { kanjiCount: 0, words: new Set() };
+}
+
+// Live tile element refs so a tap updates one tile in place (see home.js).
+const kanjiTileEls = new Map();
+
+function updateKanjiTileSelection(lessonNum) {
+  const refs = kanjiTileEls.get(lessonNum);
+  if (!refs) return;
+  const isAll = !state.kanjiSelectionEmpty && state.kanjiSelectedLessons.size === 0;
+  const aSel = isAll || state.kanjiSelectedLessons.has(lessonNum);
+  const bSel = state.kanjiSelectedLessons.has(`${lessonNum}|B`);
+  refs.tile.classList.toggle('selected', aSel || bSel);
+  for (const [sel, seg] of [[aSel, refs.segA], [bSel, refs.segB]]) {
+    if (!seg) continue;
+    seg.classList.toggle('selected', sel);
+    seg.setAttribute('aria-pressed', String(sel));
+  }
+}
+
 export function renderKanjiLessonChips() {
   const container = document.getElementById('kanji-lesson-chips-row');
   if (!container) return;
   container.innerHTML = '';
+  kanjiTileEls.clear();
   if (!(state.kanjiSelectedLessons instanceof Set)) state.kanjiSelectedLessons = new Set();
   if (state.kanjiSelectedLessons.size > 0) state.kanjiSelectionEmpty = false;
   const banner = document.getElementById('pb-kanji');
@@ -144,9 +182,9 @@ export function renderKanjiLessonChips() {
   const isAll = !state.kanjiSelectionEmpty && state.kanjiSelectedLessons.size === 0;
   for (let i = 1; i <= 25; i++) {
     const lesson = (state.kanjiLessons || []).find(l => l.lesson_number === i);
-    const kanji = Object.values(state.kanjiDB || {}).filter(k => k.lesson_number === i);
-    const lessonWords = new Set();
-    kanji.forEach(k => (k.words || []).forEach(w => { const t = (w.term_ja || w.word || '').trim(); if (t) lessonWords.add(t); }));
+    const data = kanjiLessonData(i);
+    const kanjiCount = data.kanjiCount;
+    const lessonWords = data.words;
     // One compact tile per lesson with small A/B selectors inside, so the
     // picker stays short. Part A: kanji-first (existing track, KWR:/KWW:
     // facets). Part B: kana-first (kana on top, meaning on the reveal),
@@ -163,18 +201,20 @@ export function renderKanjiLessonChips() {
       const selected = (part.suffix === 'A' && isAll) || state.kanjiSelectedLessons.has(part.selKey);
       let hasHard = false, allMastered = lessonWords.size > 0;
       lessonWords.forEach(w => {
-        const st = getItemStatus(`${part.facet}:${w}`);
+        const st = peekItemStatus(`${part.facet}:${w}`);
         if (st === 'hard') hasHard = true;
         if (st !== 'mastered') allMastered = false;
       });
       const title = `${lesson?.title_ja || `Lesson ${i}`} part ${part.suffix} (${part.partLabel}) · ${lessonWords.size} words`;
-      const aria = `Lesson ${i} part ${part.suffix} (${part.partLabel}), ${kanji.length} kanji, ${lessonWords.size} words${selected ? ', selected' : ''}${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`;
+      const aria = `Lesson ${i} part ${part.suffix} (${part.partLabel}), ${kanjiCount} kanji, ${lessonWords.size} words${selected ? ', selected' : ''}${lesson?.title_ja ? ', ' + lesson.title_ja : ''}`;
       segHtml.push(`<button type="button" class="home-lesson-ab-seg${part.segClass || ''}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allMastered ? ' all-done' : ''}" aria-pressed="${selected}" aria-label="${aria}" title="${title}" data-selkey="${part.selKey}">${part.suffix}<span class="home-lesson-ab-dot" aria-hidden="true"></span></button>`);
     }
     tile.innerHTML = `<span class="home-lesson-tile-num">${i}</span><span class="home-lesson-tile-count">${lessonWords.size}w</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
-    tile.querySelectorAll('.home-lesson-ab-seg').forEach(seg => {
+    const segs = tile.querySelectorAll('.home-lesson-ab-seg');
+    segs.forEach(seg => {
       seg.onclick = () => selectKanjiLesson(seg.dataset.selkey, 'toggle');
     });
+    kanjiTileEls.set(i, { tile, segA: segs[0], segB: segs[1] });
     container.appendChild(tile);
   }
   document.getElementById('kanji-select-all').onclick = () => selectKanjiLesson('all');
@@ -213,7 +253,10 @@ export function selectKanjiLesson(lessonNum, mode = 'toggle') {
     state.kanjiLesson = state.kanjiSelectedLessons.size === 1 ? Array.from(state.kanjiSelectedLessons)[0] : 'all';
   }
 
-  renderKanjiLessonChips();
+  // Update tile selection classes in place (25 cheap classList toggles); a
+  // full chip rebuild is only needed when the kanji data itself changes.
+  // Every tile is refreshed because the isAll state affects all A segments.
+  kanjiTileEls.forEach((_, n) => updateKanjiTileSelection(n));
   renderKanjiTargetGrid();
   updateKanjiActionButtonLabels();
   if (typeof window.renderPillarSRS === 'function' && state.kanjiSubTab === 'srs') {
@@ -244,7 +287,7 @@ export function renderKanjiTargetGrid() {
     if (selLessons.size > 0 && !_parts.a.has(k.lesson_number) && !_parts.b.has(k.lesson_number)) return false;
 
     // Status filter
-    const status = getKanjiStatus(char);
+    const status = peekKanjiStatus(char);
     if (state.kanjiFilter !== 'all' && status !== state.kanjiFilter) return false;
 
     // Search query
@@ -272,7 +315,7 @@ export function renderKanjiTargetGrid() {
 
   filtered.forEach(char => {
     const k = state.kanjiDB[char];
-    const status = getKanjiStatus(char);
+    const status = peekKanjiStatus(char);
     const card = document.createElement('div');
     card.className = 'kanji-card kanji-card-minimal';
     card.onclick = () => openKanjiModal(char);
@@ -320,7 +363,7 @@ export function openKanjiModal(char) {
   if (onEl) onEl.textContent = onStr;
   if (kunEl) kunEl.textContent = kunStr;
 
-  const isHard = getKanjiStatus(char) === 'hard';
+  const isHard = peekKanjiStatus(char) === 'hard';
   if (flameBtn) {
     flameBtn.innerHTML = `<i class="fa-solid fa-fire"></i> ${isHard ? 'Struggling (Hard)' : 'Mark as Weak Point'}`;
     flameBtn.className = `btn btn-sm ${isHard ? 'btn-danger' : 'btn-ghost'}`;
@@ -452,9 +495,9 @@ export function buildHardKanjiItems(kanjiList) {
   ['ja-kana', 'kana-ja', 'ja-meaning'].forEach(dir => {
     buildKanjiStudyItems(kanjiList, dir).forEach(it => {
       if (it.type === 'kanji') {
-        if (dir === 'ja-kana' && getItemStatus(it.key) === 'hard') out.push(it);
-      } else if (getItemStatus(it.key) === 'hard' ||
-                 (dir === 'ja-kana' && getKanjiStatus(it.baseKanji) === 'hard')) {
+        if (dir === 'ja-kana' && peekItemStatus(it.key) === 'hard') out.push(it);
+      } else if (peekItemStatus(it.key) === 'hard' ||
+                 (dir === 'ja-kana' && peekKanjiStatus(it.baseKanji) === 'hard')) {
         out.push(it);
       }
     });
@@ -685,7 +728,7 @@ export function updateKanjiProgress() {
   }
   let mastered = 0, learning = 0, hard = 0, unseen = 0;
   words.forEach(w => {
-    const st = getItemStatus(`KWR:${w}`);
+    const st = peekItemStatus(`KWR:${w}`);
     if (st === 'mastered') mastered++;
     else if (st === 'hard') hard++;
     else if (st === 'learning') learning++;
@@ -693,7 +736,7 @@ export function updateKanjiProgress() {
   });
   let charSeen = 0;
   for (const char in (state.kanjiDB || {})) {
-    if (getKanjiStatus(char) !== 'unseen') charSeen++;
+    if (peekKanjiStatus(char) !== 'unseen') charSeen++;
   }
   const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
   set('kanji-prog-mastered', mastered);
@@ -1325,7 +1368,7 @@ export function startKanjiExamPractice() {
   const section = direction => {
     const facet = direction === 'kana-ja' ? 'KWW:' : 'KWR:';
     const source = scope.filter(it => !state.kanjiHardOnly ||
-      getItemStatus(facet + it.word) === 'hard' || getKanjiStatus(it.baseKanji) === 'hard');
+      peekItemStatus(facet + it.word) === 'hard' || peekKanjiStatus(it.baseKanji) === 'hard');
     const questions = shuffle(source).map(it => {
       const correct = direction === 'kana-ja' ? it.word : it.reading;
       // Exam-style confusable options, never a correct alternative (homophone / other reading)

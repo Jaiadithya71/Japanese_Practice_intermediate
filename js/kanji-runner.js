@@ -5,7 +5,7 @@
    ======================================================= */
 
 import { state as defaultState } from './state.js';
-import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=20261116-lag1';
 import { snapToNextDueSlot } from './time.js';
 import {
   buildWordCard,

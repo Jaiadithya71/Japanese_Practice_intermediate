@@ -34,11 +34,47 @@ import { logActivity } from './daylog.js';
 
 export { examCapDays };
 
+/**
+ * True for a placeholder record an old picker/display render materialized
+ * through getItemStats but no answer ever touched: every counter at its
+ * default, no history, no scheduling. Status derived from it is 'unseen',
+ * identical to the record not existing, so dropping it loses nothing. Such
+ * records only bloat saves, sync payloads and full-stats iterations.
+ */
+export function isPristinePlaceholder(s) {
+  return !!s && typeof s === 'object' && !Array.isArray(s) &&
+    !s.correct && !s.incorrect && !s.reps && !s.lapses && !s.streak &&
+    !s.nextDue && !s.isHard && !s.leech && !s.firstSeen && !s.lastSeen &&
+    !s.reads && !s.bestAcc && !s.lastAcc && !s.bestCpm && !s.lastCpm && !s.step &&
+    !s.note && !s.cause && !s.reading && !s.meaning && !s.term && !s.mastered &&
+    (s.weight === undefined || s.weight === 1) &&
+    (s.relearnBase === undefined || s.relearnBase === null) &&
+    (!Array.isArray(s.hist) || s.hist.length === 0);
+}
+
+/** Drop placeholder records from a stats object in place. Returns count removed. */
+export function prunePlaceholderStats(stats) {
+  let pruned = 0;
+  if (!stats || typeof stats !== 'object') return 0;
+  for (const key in stats) {
+    if (isPristinePlaceholder(stats[key])) { delete stats[key]; pruned++; }
+  }
+  return pruned;
+}
+
 export function loadStats() {
   try {
     state.stats = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
   } catch {
     state.stats = {};
+  }
+  // Placeholder records accumulate from past picker renders; prune on every
+  // load so saves, due scans and sync stay small. Write back directly (not
+  // saveStats) to avoid scheduling a sync during boot.
+  const pruned = prunePlaceholderStats(state.stats);
+  if (pruned) {
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state.stats)); } catch (_) {}
+    try { console.info(`[n3] pruned ${pruned} empty placeholder progress records`); } catch (_) {}
   }
   return state.stats;
 }
@@ -237,6 +273,12 @@ export function getWordStatus(wordId, direction = 'ja-en') {
   return getItemStatus(`V:${wordId}${rev}`);
 }
 
+/** Non-mutating getWordStatus for pickers/badges/filters (see peekItemStatus). */
+export function peekWordStatus(wordId, direction = 'ja-en') {
+  const rev = direction === 'en-ja' ? ':rev' : (direction === 'kana-en' ? ':kana' : '');
+  return peekItemStatus(`V:${wordId}${rev}`);
+}
+
 /**
  * Extended SM-2 scheduling engine with 6 early steps, exam capping and leech detection (doc 02 §4.2).
  *
@@ -394,6 +436,11 @@ export function toggleItemHard(itemKey) {
 
 export function getKanjiStatus(char) {
   return getItemStatus(`K:${char}`);
+}
+
+/** Non-mutating getKanjiStatus for pickers/badges/filters (see peekItemStatus). */
+export function peekKanjiStatus(char) {
+  return peekItemStatus(`K:${char}`);
 }
 
 export function toggleKanjiHard(char) {
@@ -999,7 +1046,7 @@ export function updateSidebarStats() {
   // Track Vocabulary
   for (const chId in (state.vocabDB || {})) {
     for (const w of (state.vocabDB[chId] || [])) {
-      const st = getWordStatus(w.id, state.studyDirection);
+      const st = peekWordStatus(w.id, state.studyDirection);
       if (st === 'mastered') mastered++;
       else if (st === 'hard') hard++;
       else if (st === 'learning') learning++;
@@ -1013,7 +1060,7 @@ export function updateSidebarStats() {
     const questions = lesson.comprehensionQuestions || lesson.questions || [];
     for (const q of questions) {
       const qId = q.id || `${lid}_q${q.questionNumber || 1}`;
-      const st = getItemStatus(`R_Q:${qId}`);
+      const st = peekItemStatus(`R_Q:${qId}`);
       if (st === 'mastered') mastered++;
       else if (st === 'hard') hard++;
       else if (st === 'learning') learning++;
@@ -1035,7 +1082,7 @@ export function updateSidebarStats() {
       return s && ((s.reps || 0) > 0 || (s.correct || 0) > 0 || (s.incorrect || 0) > 0 || s.isHard);
     });
     if (touched.length === 0) { unseen++; continue; }
-    const sts = touched.map(k => getItemStatus(k));
+    const sts = touched.map(k => peekItemStatus(k));
     if (sts.includes('hard')) hard++;
     else if (sts.every(x => x === 'mastered')) mastered++;
     else learning++;

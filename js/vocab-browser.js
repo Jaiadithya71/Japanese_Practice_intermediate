@@ -4,7 +4,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { getWordStatus, toggleWordHard, updateSidebarStats } from './srs.js';
+import { peekWordStatus, toggleWordHard, updateSidebarStats } from './srs.js?v=20261116-lag1';
 import { startStudy } from './study.js?v=4.6';
 
 function groupKeys() {
@@ -45,7 +45,7 @@ export function renderChapterChips() {
     let masteredCount = 0;
 
     words.forEach(w => {
-      const st = getWordStatus(w.id, state.studyDirection);
+      const st = peekWordStatus(w.id, state.studyDirection);
       if (st === 'hard') hardCount++;
       if (st === 'mastered') masteredCount++;
     });
@@ -235,7 +235,7 @@ export function renderVocabList() {
   let totalShowing = baseList.length;
   let totalHard = 0, totalLearning = 0, totalMastered = 0, totalUnseen = 0;
   baseList.forEach(w => {
-    const st = getWordStatus(w.id, state.studyDirection);
+    const st = peekWordStatus(w.id, state.studyDirection);
     if (st === 'hard') totalHard++;
     else if (st === 'learning') totalLearning++;
     else if (st === 'mastered') totalMastered++;
@@ -258,7 +258,7 @@ export function renderVocabList() {
 
   // Filter by status tab
   if (state.vocabFilter !== 'all') {
-    list = list.filter(w => getWordStatus(w.id, state.studyDirection) === state.vocabFilter);
+    list = list.filter(w => peekWordStatus(w.id, state.studyDirection) === state.vocabFilter);
   }
 
   // Filter by search query
@@ -299,7 +299,7 @@ export function renderVocabList() {
     const fragment = document.createDocumentFragment();
     const end = Math.min(rendered + 40, list.length);
     list.slice(rendered, end).forEach(w => {
-    const st = getWordStatus(w.id, state.studyDirection);
+    const st = peekWordStatus(w.id, state.studyDirection);
     const isHard = st === 'hard';
     const card = document.createElement('div');
     card.className = 'vocab-card';
@@ -430,7 +430,7 @@ export function updateHardWordsView() {
     for (const chId in state.vocabDB) {
       for (const w of state.vocabDB[chId]) {
         const itemKey = `V:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
-        if (getWordStatus(w.id, state.studyDirection) === 'hard') {
+        if (peekWordStatus(w.id, state.studyDirection) === 'hard') {
           weakItems.push({ ...w, type: 'vocab', key: itemKey, book: 'vocab' });
         }
       }

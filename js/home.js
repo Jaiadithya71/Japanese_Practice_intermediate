@@ -1,4 +1,4 @@
-import { renderActivityDayHtml } from './activity-detail.js?v=4';
+import { renderActivityDayHtml } from './activity-detail.js';
 import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — home.js
@@ -6,14 +6,14 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
    ======================================================= */
 
 import { state } from './state.js';
-import { getWordStatus, peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js';
+import { peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js?v=20261116-lag1';
 import { startStudy, renderCard, startDueReview } from './study.js?v=4.6';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
 import { renderHeatmapGridHtml } from './today.js';
-import { beginGistReviewSession } from './gist-sync.js';
+import { beginGistReviewSession } from './gist-sync.js?v=20261116-lag1';
 import { showView } from './navigation.js';
 
 export function startSingleChapterStudy(chId) {
@@ -47,7 +47,7 @@ export function updateMasteryCounters() {
   for (const chId in state.vocabDB) {
     for (const w of state.vocabDB[chId]) {
       total++;
-      const st = getWordStatus(w.id, state.studyDirection);
+      const st = peekItemStatus(homeWordStatusKey(w.id, state.studyDirection));
       if (st === 'mastered') mastered++;
       else if (st === 'hard') hard++;
       else if (st === 'learning') learning++;
@@ -116,16 +116,49 @@ export function chapterKeysForGroup() {
   return keys.sort((a, b) => rank(a) - rank(b));
 }
 
+// Live element refs for the picker tiles, keyed by chapter id, so a tap can
+// update one tile in place instead of rebuilding all 63 (the per-tap rebuild
+// was the lesson-picker lag).
+const homeTileEls = new Map();
+
+function homeTileCountText(chId) {
+  const words = state.vocabDB[chId] || [];
+  if (!homeHardOnlyChecked()) return `${words.length}w`;
+  const aSel = state.selectedChapters.has(chId);
+  const bSel = state.selectedChapters.has(`${chId}|B`);
+  if (aSel || bSel) {
+    let n = 0;
+    if (aSel) n += homeHardWordCount(words, state.studyDirection);
+    if (bSel) n += homeHardWordCount(words, 'kana-en');
+    return `${n}w`;
+  }
+  return `${homeHardWordCount(words, state.studyDirection)}w`;
+}
+
+function updateHomeTileSelection(chId) {
+  const refs = homeTileEls.get(chId);
+  if (!refs) return;
+  const aSel = state.selectedChapters.has(chId);
+  const bSel = state.selectedChapters.has(`${chId}|B`);
+  refs.tile.classList.toggle('selected', aSel || bSel);
+  for (const [sel, seg] of [[aSel, refs.segA], [bSel, refs.segB]]) {
+    if (!seg) continue;
+    seg.classList.toggle('selected', sel);
+    seg.setAttribute('aria-pressed', String(sel));
+  }
+  refs.countEl.textContent = homeTileCountText(chId);
+}
+
 export function toggleChapterSelection(chId) {
   if (state.selectedChapters.has(chId)) state.selectedChapters.delete(chId);
   else state.selectedChapters.add(chId);
-  renderLessonGrid();
+  updateHomeTileSelection(String(chId).split('|')[0]);
   updateHomeLessonControls();
 }
 
 export function selectAllChaptersInGroup() {
   chapterKeysForGroup().forEach(k => state.selectedChapters.add(k));
-  renderLessonGrid();
+  chapterKeysForGroup().forEach(k => updateHomeTileSelection(k));
   updateHomeLessonControls();
 }
 
@@ -133,7 +166,7 @@ export function clearChapterSelection() {
   // Clear only the visible group's selections; picks made in the other group
   // stay intact for when the user switches back.
   for (const selKey of homeActiveGroupSelKeys()) state.selectedChapters.delete(selKey);
-  renderLessonGrid();
+  chapterKeysForGroup().forEach(k => updateHomeTileSelection(k));
   updateHomeLessonControls();
 }
 
@@ -175,7 +208,25 @@ if (typeof window !== 'undefined') window.toggleHomeHardOnly = toggleHomeHardOnl
 export function renderLessonGrid() {
   const container = document.getElementById('home-lesson-grid');
   if (!container) return;
+  // One pass over the word list with non-mutating peeks gives every tile its
+  // A and B tallies. The old per-tile filter/some loops ran getWordStatus
+  // (which creates a full empty SRS record per unseen word) ~8,800 times per
+  // render, polluting state.stats with thousands of placeholder records.
+  const counts = {};
+  for (const chId of chapterKeysForGroup()) {
+    let am = 0, ah = false, bm = 0, bh = false;
+    const words = state.vocabDB[chId] || [];
+    const aKeySuffix = state.studyDirection === 'en-ja' ? ':rev' : '';
+    for (const w of words) {
+      const a = peekItemStatus(`V:${w.id}${aKeySuffix}`);
+      if (a === 'mastered') am++; else if (a === 'hard') ah = true;
+      const b = peekItemStatus(`V:${w.id}:kana`);
+      if (b === 'mastered') bm++; else if (b === 'hard') bh = true;
+    }
+    counts[chId] = { am, ah, bm, bh, total: words.length };
+  }
   container.innerHTML = '';
+  homeTileEls.clear();
   chapterKeysForGroup().forEach(chId => {
     const meta = state.chapterMetadata[chId] || {};
     const words = state.vocabDB[chId] || [];
@@ -197,25 +248,18 @@ export function renderLessonGrid() {
     const segHtml = [];
     for (const part of parts) {
       const selected = state.selectedChapters.has(part.selKey);
-      const mastered = words.filter(w => getWordStatus(w.id, part.direction) === 'mastered').length;
-      const hasHard = words.some(w => getWordStatus(w.id, part.direction) === 'hard');
+      const c = counts[chId];
+      const mastered = part.suffix === 'A' ? c.am : c.bm;
+      const hasHard = part.suffix === 'A' ? c.ah : c.bh;
       const allDone = mastered === words.length && words.length;
       segHtml.push(`<button type="button" class="home-lesson-ab-seg${part.segClass || ''}${selected ? ' selected' : ''}${hasHard ? ' has-hard' : ''}${allDone ? ' all-done' : ''}" aria-pressed="${selected}" aria-label="Lesson ${label} part ${part.suffix} (${part.partLabel})${selected ? ', selected' : ''}" title="${topic} part ${part.suffix} (${part.partLabel}) · ${words.length} words · ${mastered} mastered" data-selkey="${part.selKey}">${part.suffix}<span class="home-lesson-ab-dot" aria-hidden="true"></span></button>`);
     }
-    // With "Drill hard words only" on, the tile count shows how many words the
-    // drill would actually draw from this lesson (per selected A/B part, like
-    // the pool); unselected lessons show the count for the current direction.
-    let tileCount = words.length;
-    if (homeHardOnlyChecked()) {
-      const picked = parts.filter(part => state.selectedChapters.has(part.selKey));
-      tileCount = picked.length
-        ? picked.reduce((sum, part) => sum + homeHardWordCount(words, part.direction), 0)
-        : homeHardWordCount(words, state.studyDirection);
-    }
-    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${tileCount}w</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
-    tile.querySelectorAll('.home-lesson-ab-seg').forEach(seg => {
+    tile.innerHTML = `<span class="home-lesson-tile-num">${label}</span><span class="home-lesson-tile-count">${homeTileCountText(chId)}</span><span class="home-lesson-ab">${segHtml.join('')}</span>`;
+    const segs = tile.querySelectorAll('.home-lesson-ab-seg');
+    segs.forEach(seg => {
       seg.onclick = () => toggleChapterSelection(seg.dataset.selkey);
     });
+    homeTileEls.set(chId, { tile, segA: segs[0], segB: segs[1], countEl: tile.querySelector('.home-lesson-tile-count') });
     container.appendChild(tile);
   });
   updateHomeLessonControls();
@@ -340,7 +384,7 @@ export function startSelectedLessonRun() {
     const kanaFirst = selKey.endsWith('|B');
     const chapter = kanaFirst ? selKey.slice(0, -2) : selKey;
     for (const word of (state.vocabDB[chapter] || [])) {
-      if (document.getElementById('home-hard-only')?.checked && getWordStatus(word.id, kanaFirst ? 'kana-en' : state.studyDirection) !== 'hard') continue;
+      if (document.getElementById('home-hard-only')?.checked && peekItemStatus(homeWordStatusKey(word.id, kanaFirst ? 'kana-en' : state.studyDirection)) !== 'hard') continue;
       const key = kanaFirst ? `V:${word.id}:kana` : `V:${word.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
       pool.push({ ...word, type: 'vocab', key, book: 'vocab', kanaFirst });
     }
@@ -411,7 +455,7 @@ export function renderHomeVocabStatus() {
     let total = 0;
     for (const chId in state.vocabDB) for (const w of state.vocabDB[chId]) {
       total++;
-      const st = getWordStatus(w.id, dir);
+      const st = peekItemStatus(homeWordStatusKey(w.id, dir));
       c[st === 'mastered' || st === 'hard' || st === 'learning' ? st : 'unseen']++;
     }
     const pct = n => (total ? (n / total) * 100 : 0).toFixed(2);

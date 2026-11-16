@@ -12,8 +12,8 @@
 import { grammarDrillContent } from './grammar-card-data.js';
 import { GRAMMAR_FURIGANA } from './grammar-furigana.js';
 import { state } from './state.js';
-import { peekItemStatus } from './srs.js';
-import { beginGistReviewSession } from './gist-sync.js';
+import { peekItemStatus } from './srs.js?v=20261116-lag1';
+import { beginGistReviewSession } from './gist-sync.js?v=20261116-lag1';
 import { renderCard } from './study.js?v=4.6';
 import { showView } from './navigation.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';

@@ -1,7 +1,7 @@
 /* SRS-first Hub card: due reviews across all pillars + one primary action.
    Replaces the vocab+reading-only Today card rendering on the Hub. */
 import { state } from './state.js';
-import { getDueItemsCount } from './srs.js';
+import { getDueItemsCount } from './srs.js?v=20261116-lag1';
 
 const seenIt = s => !!s && (s.reps > 0 || s.correct > 0 || s.incorrect > 0);
 const esc = t => String(t == null ? '' : t).replace(/</g, '&lt;');

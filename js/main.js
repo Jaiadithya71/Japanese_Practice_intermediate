@@ -1,4 +1,4 @@
-import { setHomeReviewPhase } from './home.js?v=20261116-hrd1';
+import { setHomeReviewPhase } from './home.js?v=20261116-lag1';
 window.setHomeReviewPhase = setHomeReviewPhase;
 /* =======================================================
    NIHONGO INTERMEDIATE — main.js
@@ -7,13 +7,13 @@ window.setHomeReviewPhase = setHomeReviewPhase;
 
 import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js?v=20261114-kanji25';
-import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js';
+import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js?v=20261116-lag1';
 import { showView } from './navigation.js';
 import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=4.6';
-import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=2.4';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261116-hrd1';
+import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261116-lag1';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261116-lag1';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
-import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js';
+import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js?v=20261116-lag1';
 import {
   renderKanjiView, setKanjiTab, setKanjiPart, setKanjiLesson, setKanjiFilter, onKanjiSearch,
   openKanjiModal, closeKanjiModal, toggleModalKanjiHard, drillActiveModalKanji,
@@ -22,7 +22,7 @@ import {
   setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected,
   startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
   nextKanjiQuizCard, prevKanjiQuizCard, toggleKanjiAutoNext
-} from './kanji.js?v=20261109-kanjiheatmap1';
+} from './kanji.js?v=20261116-lag1';
 import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
@@ -44,7 +44,7 @@ import './daily.js';
 import './today.js';
 import './reading-types.js';
 import './grammar-srs.js';
-import './me-tab.js';
+import './me-tab.js?v=20261116-lag1';
 import './class-curriculum.js';
 import './book-platform.js';
 

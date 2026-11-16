@@ -15,7 +15,7 @@ import {
   getItemStats,
   getItemStatus,
   isCatchUpMode
-} from './srs.js';
+} from './srs.js?v=20261116-lag1';
 import { CHUNK_KANJI } from './kanji-runner.js';
 import {
   BACKLOG_THRESHOLD,

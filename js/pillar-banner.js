@@ -6,7 +6,7 @@
 
 import { state } from './state.js';
 import { kanjiReviewPlan } from './kanji-review-options.js';
-import { getDueItemsCount, getItemStatus, getPillarFromKey, getFacetFromKey, resolveItemForKey, isCatchUpMode } from './srs.js';
+import { getDueItemsCount, getItemStatus, peekItemStatus, getPillarFromKey, getFacetFromKey, resolveItemForKey, isCatchUpMode } from './srs.js?v=20261116-lag1';
 import { getCurrentStreak, getDay } from './daylog.js';
 import { istDateKey } from './time.js';
 import { startDueReview, startLearnNew } from './study.js?v=4.6';
@@ -25,7 +25,7 @@ const stripHtml = h => String(h || '').replace(/<rt>.*?<\/rt>/g, '').replace(/<[
 function statusCounts(keys) {
   let mastered = 0, learning = 0, hard = 0, unseen = 0;
   keys.forEach(ks => {
-    const st = ks.map(k => getItemStatus(k));
+    const st = ks.map(k => peekItemStatus(k));
     const any = ks.some(k => seen(state.stats && state.stats[k]));
     if (!any) { unseen++; return; }
     if (st.includes('hard')) hard++;

@@ -41,9 +41,9 @@ function renderReviewPhase() {
 }
 
 import { vocabularyLessonLabel } from './study-labels.js';
-import { updateItemStats, toggleItemHard, getItemStatus, peekItemStatus, getAllDueItems, getDueItemsCount, formatItemKey } from './srs.js';
+import { updateItemStats, toggleItemHard, getItemStatus, peekItemStatus, getAllDueItems, getDueItemsCount, formatItemKey } from './srs.js?v=20261116-lag1';
 import { showView } from './navigation.js';
-import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=20261116-lag1';
 
 export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'home') {
   state.homeRunQueue = [];
@@ -63,7 +63,7 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
     for (const w of (state.vocabDB[chId] || [])) {
       const itemKey = `V:${w.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
       if (isDrillHard) {
-        if (getItemStatus(itemKey) === 'hard') {
+        if (peekItemStatus(itemKey) === 'hard') {
           pool.push({ ...w, type: 'vocab', key: itemKey, book: 'vocab' });
         }
       } else {

@@ -15,11 +15,12 @@ import {
 import {
   getItemStats,
   getItemStatus,
+  peekItemStatus,
   toggleItemHard,
   getPillarFromKey,
   saveStats,
   updateSidebarStats
-} from './srs.js';
+} from './srs.js?v=20261116-lag1';
 import { getHeatmap30, getCurrentStreak, loadDaylog } from './daylog.js';
 import { loadAttempts } from './reading-times.js';
 import {
@@ -878,7 +879,7 @@ function computePillarMasteryCounts() {
     const pillar = getPillarFromKey(key);
     if (!result[pillar]) continue;
 
-    const st = getItemStatus(key);
+    const st = peekItemStatus(key);
     if (st === 'mastered') result[pillar].mastered++;
     else if (st === 'hard') result[pillar].struggling++;
     else if (st === 'learning') result[pillar].learning++;

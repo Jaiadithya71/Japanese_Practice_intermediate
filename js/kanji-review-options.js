@@ -1,6 +1,6 @@
 // One queue plan for compact review preview and launch. No study records are changed.
 import { state } from './state.js';
-import { getAllDueItems, isCatchUpMode } from './srs.js';
+import { getAllDueItems, isCatchUpMode } from './srs.js?v=20261116-lag1';
 export function kanjiReviewPlan(lessons = state.selectedDueKanjiLessons) {
   const direction = state.kanjiDueDirection || 'both';
   const facets = new Set(direction === 'reading' ? ['KWR'] : direction === 'writing' ? ['KWW'] : ['KWR', 'KWW']);

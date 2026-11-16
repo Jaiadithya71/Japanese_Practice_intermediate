@@ -6,7 +6,7 @@
 
 import { STORAGE_KEY } from './config.js';
 import { state } from './state.js';
-import { updateSidebarStats } from './srs.js';
+import { updateSidebarStats, isPristinePlaceholder, prunePlaceholderStats } from './srs.js?v=20261116-lag1';
 import { encodeStats, decodeStatsText } from './stats-codec.js';
 import { getDay, loadDaylog, saveDaylog } from './daylog.js';
 import { loadAttempts, mergeAttempts, parseAttemptsText } from './reading-times.js';
@@ -120,7 +120,11 @@ function mergeStats(remote) {
   let changed = false;
   Object.entries(remote || {}).forEach(([key, rs]) => {
     const ls = state.stats[key];
-    if (!ls) { state.stats[key] = rs; changed = true; return; }
+    // Never resurrect placeholder records pruned locally (see srs.js).
+    if (!ls) {
+      if (isPristinePlaceholder(rs)) return;
+      state.stats[key] = rs; changed = true; return;
+    }
     const lt = ls.lastSeen || 0, rt = rs.lastSeen || 0;
     if (rt > lt || (rt === lt && itemScore(rs) > itemScore(ls))) {
       state.stats[key] = {
@@ -178,6 +182,9 @@ function serializeStats() {
   if (!state.stats || typeof state.stats !== 'object' || Array.isArray(state.stats)) {
     throw new Error('Local progress is not a valid stats object; nothing was written.');
   }
+  // Placeholder records (materialized by old picker renders, never answered)
+  // carry no progress; leave them out so the Gist itself shrinks on this push.
+  prunePlaceholderStats(state.stats);
   // A versioned schema compacts repeated field names/defaults; codec round-trip validation is lossless.
   return encodeStats(state.stats);
 }

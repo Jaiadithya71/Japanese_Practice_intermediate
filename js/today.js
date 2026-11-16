@@ -17,7 +17,7 @@ import {
   getDueItemsCount,
   getItemStatus,
   isCatchUpMode
-} from './srs.js';
+} from './srs.js?v=20261116-lag1';
 import {
   nextBestAction,
   getDailyPlanStatus,

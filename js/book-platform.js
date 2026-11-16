@@ -6,12 +6,12 @@
 
 import { grammarSections } from './grammar-lessons.js';
 import { state } from './state.js';
-import { getDueItemsCount, peekItemStatus, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey, isKanjiReadingCovered } from './srs.js';
+import { getDueItemsCount, peekItemStatus, getItemStatus, getItemStats, toggleItemHard, getPillarFromKey, resolveItemForKey, isKanjiReadingCovered } from './srs.js?v=20261116-lag1';
 import { startStudy, startOmniReview, startDueReview } from './study.js?v=4.6';
 import { exportBackup, importBackup, restoreSnapshot } from './backup.js';
-import { openSyncSetup } from './gist-sync.js';
-import { renderKanjiView, setKanjiTab, drillKanjiSingle } from './kanji.js';
-import { renderChapterChips, renderVocabList, toggleFurigana, playAudio } from './vocab-browser.js';
+import { openSyncSetup } from './gist-sync.js?v=20261116-lag1';
+import { renderKanjiView, setKanjiTab, drillKanjiSingle } from './kanji.js?v=20261116-lag1';
+import { renderChapterChips, renderVocabList, toggleFurigana, playAudio } from './vocab-browser.js?v=20261116-lag1';
 import { renderGrammarView, setGrammarTab } from './grammar.js';
 import { renderReadingView, openReadingLesson } from './reader.js';
 
