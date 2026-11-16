@@ -457,7 +457,8 @@ function homeReviewPart() {
 
 function homeReviewPartOpts() {
   const p = homeReviewPart();
-  return p === 'both' ? {} : { part: p };
+  // uncapped: Review due runs every due card (no batch size, no catch-up cap)
+  return p === 'both' ? { uncapped: true } : { part: p, uncapped: true };
 }
 
 export function setHomeReviewPart(part) {
