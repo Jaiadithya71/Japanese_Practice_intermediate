@@ -13,6 +13,26 @@ import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=2
 let activeTestSession = null;
 let activeTestCategory = 'all';
 let testSearchQuery = '';
+let classTestsCache = null;
+let classTestsLoading = false;
+
+// Class test questions (Thirdwave class forms) with English translations.
+async function loadClassTests() {
+  if (classTestsCache || classTestsLoading) return;
+  classTestsLoading = true;
+  try {
+    const res = await fetch('data/class_tests.json');
+    if (res.ok) {
+      const data = await res.json();
+      classTestsCache = data.tests || [];
+      renderTestCardsGrid();
+    }
+  } catch (e) {
+    console.warn('Class tests unavailable', e);
+  } finally {
+    classTestsLoading = false;
+  }
+}
 
 export function getActiveTestSession() {
   return activeTestSession;
@@ -266,6 +286,7 @@ export function initTestHub() {
   ensureStylesInjected();
   renderTestCategoryTabs();
   renderTestCardsGrid();
+  loadClassTests();
 }
 
 export function getAllAvailableTests() {
@@ -578,6 +599,37 @@ export function getAllAvailableTests() {
     });
   }
 
+  // Class tests (from the class Google Forms, correct answers + English)
+  (classTestsCache || []).forEach(ct => {
+    const questions = (ct.questions || []).map(q => ({
+      id: q.id,
+      category: 'class',
+      exerciseTitle: ct.title,
+      type: 'multiple_choice',
+      question: q.question,
+      questionEn: q.question_en || '',
+      sectionLabel: q.section || '',
+      options: q.options || [],
+      optionsEn: q.options_en || null,
+      correct: Number(q.correct) || 1,
+      correctAnswerText: (q.options || [])[(Number(q.correct) || 1) - 1] || '',
+      explanation: q.explanation || ''
+    }));
+    if (questions.length > 0) {
+      tests.push({
+        id: ct.id,
+        category: 'class_tests',
+        catLabel: 'Class Test',
+        badgeClass: 'badge-qb',
+        title: ct.title,
+        subTitle: ct.title_en || 'Class Test',
+        pillar: 'class',
+        questionCount: questions.length,
+        questions
+      });
+    }
+  });
+
   return tests;
 }
 
@@ -594,7 +646,8 @@ export function renderTestCategoryTabs() {
     { id: 'kanji', label: 'Kanji' },
     { id: 'grammar', label: 'Grammar' },
     { id: 'reading', label: 'Reading' },
-    { id: 'mock_exams', label: 'Mock Exams' }
+    { id: 'mock_exams', label: 'Mock Exams' },
+    { id: 'class', label: 'Class Tests' }
   ];
 
   container.innerHTML = categories.map(cat => `
@@ -779,7 +832,9 @@ export function renderTestQuestion() {
   }
 
   if (promptEl) {
-    promptEl.innerHTML = `<span style="font-family: var(--font-japanese); font-size: 1.25rem; line-height: 1.7; font-weight: 600;">${q.question}</span>`;
+    const secHtml = q.sectionLabel ? `<div style="font-size:.78rem;color:var(--text-muted);margin-bottom:.35rem;">${q.sectionLabel}</div>` : '';
+    const enHtml = q.questionEn ? `<div style="font-size:.9rem;color:var(--text-muted);margin-top:.4rem;line-height:1.45;">${q.questionEn}</div>` : '';
+    promptEl.innerHTML = `${secHtml}<span style="font-family: var(--font-japanese); font-size: 1.25rem; line-height: 1.7; font-weight: 600;">${q.question}</span>${enHtml}`;
   }
 
   // Options Container
@@ -793,7 +848,7 @@ export function renderTestQuestion() {
     optsContainer.innerHTML = (q.options || []).map((opt, i) => `
       <button class="test-opt-btn" onclick="window.submitQuestionAnswer(${i + 1})">
         <span class="test-opt-badge">${i + 1}</span>
-        <span class="test-opt-text font-ja">${opt}</span>
+        <span class="test-opt-text font-ja">${opt}${(q.optionsEn && q.optionsEn[i]) ? `<span style="display:block;font-family:var(--font-body,inherit);font-size:.78rem;color:var(--text-muted);font-weight:400;">${q.optionsEn[i]}</span>` : ''}</span>
       </button>
     `).join('');
 
@@ -816,7 +871,7 @@ export function renderTestQuestion() {
       return `
         <button class="${optClass}" disabled>
           <span class="test-opt-badge">${optNum}</span>
-          <span class="test-opt-text font-ja">${opt}</span>
+          <span class="test-opt-text font-ja">${opt}${(q.optionsEn && q.optionsEn[i]) ? `<span style="display:block;font-family:var(--font-body,inherit);font-size:.78rem;color:var(--text-muted);font-weight:400;">${q.optionsEn[i]}</span>` : ''}</span>
           ${optNum === q.correct ? '<i class="fa-solid fa-circle-check" style="margin-left:auto; color:var(--green)"></i>' : ''}
           ${(optNum === currentAnswer.selected && optNum !== q.correct) ? '<i class="fa-solid fa-circle-xmark" style="margin-left:auto; color:var(--red)"></i>' : ''}
         </button>

@@ -1,0 +1,2397 @@
+{
+ "metadata": {
+  "description": "Practice questions from Thirdwave class tests (L9-14 kanji/vocab/grammar) with correct answers and English translations.",
+  "count": 140
+ },
+ "tests": [
+  {
+   "id": "class-kanji-l11-12",
+   "title": "漢字テスト L11-12",
+   "title_en": "Kanji Test L11-12",
+   "questions": [
+    {
+     "id": "kanji-l11-12-01",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "私は学生の時、成績(せいせき)は［ふつう］だった。",
+     "question_en": "When I was a student, my grades were [average].",
+     "options": [
+      "晋通",
+      "並通",
+      "普通",
+      "曽通"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-02",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "月は約30日で［ちきゅう］の周（まわ）りを回るそうだ。",
+     "question_en": "The moon reportedly goes around the [Earth] about once every 30 days.",
+     "options": [
+      "地玉",
+      "地求",
+      "地珠",
+      "地球"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l11-12-03",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "今日の学校の［きゅうしょく］は、子どもたちが大好きなメニューだ。",
+     "question_en": "Today's school [lunch] is a menu the kids love.",
+     "options": [
+      "給食",
+      "紹食",
+      "休食",
+      "紿食"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l11-12-04",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［しっぱい］しても、またがんばればいい。",
+     "question_en": "Even if you [fail], you can just try hard again.",
+     "options": [
+      "朱敗",
+      "失敗",
+      "夫敗",
+      "矢敗"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l11-12-05",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "最近の［ろうじん］は若くて元気だ。",
+     "question_en": "[Elderly people] these days are young and energetic.",
+     "options": [
+      "孝人",
+      "考人",
+      "老人",
+      "者人"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-06",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "パーティーの最後に［きねん］写真をとりましょう。",
+     "question_en": "Let's take a [commemorative] photo at the end of the party.",
+     "options": [
+      "紀忿",
+      "記怠",
+      "記念",
+      "紀念"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-07",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［みらい］は自分の力で変えられると思っています。",
+     "question_en": "I believe the [future] can be changed by my own power.",
+     "options": [
+      "末来",
+      "未来",
+      "天来",
+      "将来"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l11-12-08",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "会議の［しかい］は、古田さんにお願いします。",
+     "question_en": "Mr. Furuta, please be the [chairperson/MC] of the meeting.",
+     "options": [
+      "同会",
+      "句会",
+      "局会",
+      "司会"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l11-12-09",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［にゅうがくしき］は10時から行われた。",
+     "question_en": "The [entrance ceremony] was held from 10 o'clock.",
+     "options": [
+      "入学弐",
+      "人学弌",
+      "入学式",
+      "人学式"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-10",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "田中さんは広島［してん］に転勤（てんきん）するとか。",
+     "question_en": "I hear Mr. Tanaka is being transferred to the Hiroshima [branch].",
+     "options": [
+      "又店",
+      "皮店",
+      "支店",
+      "芝店"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-11",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "この角（かど）を右へ行くと［ひじょうぐち］があります。",
+     "question_en": "If you turn right at this corner, there is an [emergency exit].",
+     "options": [
+      "非常口",
+      "俳宮口",
+      "非宮口",
+      "北常口"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l11-12-12",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "私は会社員で、妻で、母で、［主婦］です。",
+     "question_en": "I'm a company employee, a wife and a mother, and a [housewife].",
+     "options": [
+      "しゅふう",
+      "しゅうふ",
+      "しょふ",
+      "しゅふ"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l11-12-13",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "この書類を［速達］で出したら、明日相手に着きます。",
+     "question_en": "If you send this document by [express mail], it will reach them tomorrow.",
+     "options": [
+      "そくたつ",
+      "そくだち",
+      "そっくたつ",
+      "そくたち"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l11-12-14",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "旅行の［予算］はどのくらいですか。",
+     "question_en": "How much is the [budget] for the trip?",
+     "options": [
+      "よてい",
+      "けいさん",
+      "よさん",
+      "いさん"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-15",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "私は京都［出身］ですが、京都の有名なお寺や神社に行ったことがありません。",
+     "question_en": "I'm from Kyoto [(by origin)], but I've never been to Kyoto's famous temples and shrines.",
+     "options": [
+      "しっしん",
+      "しゅうしん",
+      "しゅっしん",
+      "しゅしん"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-16",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "調査の結果、問題の［原因］がわかった。",
+     "question_en": "The investigation found the [cause] of the problem.",
+     "options": [
+      "げんいん",
+      "げんい",
+      "げいいん",
+      "けいいん"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l11-12-17",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "おなかの調子が悪(わる)いので、［早退］してもいいですか。",
+     "question_en": "My stomach feels bad, so may I [leave early]?",
+     "options": [
+      "そおたい",
+      "はやたい",
+      "そうたい",
+      "そたい"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-18",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "父の［財産］が原因で、兄と姉がけんかしている。",
+     "question_en": "My brother and sister are fighting over our father's [property].",
+     "options": [
+      "さいさん",
+      "ざいざん",
+      "せいさん",
+      "ざいさん"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l11-12-19",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "彼の［収入］は私よりずっと多い。",
+     "question_en": "His [income] is much higher than mine.",
+     "options": [
+      "しゅにゅう",
+      "しょうにゅう",
+      "しゅうにゅう",
+      "しうにゅう"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l11-12-20",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "すぐに［準備］が終わるとは限（かぎ）らない。",
+     "question_en": "It's not always the case that the [preparation] will finish soon.",
+     "options": [
+      "じゅんび",
+      "じゅうんび",
+      "じんび",
+      "じゅんひ"
+     ],
+     "correct": 1
+    }
+   ]
+  },
+  {
+   "id": "class-kanji-l9-10",
+   "title": "漢字テスト L9-10",
+   "title_en": "Kanji Test L9-10",
+   "questions": [
+    {
+     "id": "kanji-l9-10-01",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "どんな ［しかく］ を持っているか、教えてください。",
+     "question_en": "Please tell me what [qualifications] you have.",
+     "options": [
+      "四角",
+      "資格",
+      "質格",
+      "死角"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l9-10-02",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "市長が［あらわれる］と、みんなが大きな声で彼の名前を呼んだ。",
+     "question_en": "When the mayor [appeared], everyone called out his name loudly.",
+     "options": [
+      "現る",
+      "現れる",
+      "表れる",
+      "表らわれる"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l9-10-03",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "休憩（きゅうけい）が［すんだら］、すぐに戻（もど）ってきてください。",
+     "question_en": "Please come back as soon as the break [is over].",
+     "options": [
+      "済んだら",
+      "過んだら",
+      "住んだら",
+      "斉んだら"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l9-10-04",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［そつぎょう］してから、みんなと旅行に行きます。",
+     "question_en": "After I [graduate], I'm going on a trip with everyone.",
+     "options": [
+      "傘業",
+      "率業",
+      "卆業",
+      "卒業"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-05",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "アメリカのチームと１度［たたかって］みたいです。",
+     "question_en": "I'd like to [fight/compete against] an American team once.",
+     "options": [
+      "戦って",
+      "戦かって",
+      "争かって",
+      "争って"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l9-10-06",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "あなたは自分の［たんしょ］を知っていますか。",
+     "question_en": "Do you know your own [weak points]?",
+     "options": [
+      "知所",
+      "短所",
+      "単書",
+      "短書"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l9-10-07",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［かいとう］用紙(ようし)がない人は、手をあげてください。",
+     "question_en": "Those who don't have an [answer] sheet, please raise your hand.",
+     "options": [
+      "解答",
+      "答解",
+      "鉾筌",
+      "解筌"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l9-10-08",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "今週の ［ざっし］ で、日本の記事を読みました。",
+     "question_en": "This week's [magazine] had an article about Japan.",
+     "options": [
+      "雑志",
+      "難資",
+      "離誌",
+      "雑誌"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-09",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "日本へ行った時、［  かんたん  ］な日本語もわからなかった。",
+     "question_en": "When I went to Japan, I couldn't understand even [simple] Japanese.",
+     "options": [
+      "感短",
+      "簡巣",
+      "間単",
+      "簡単"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-10",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "祖母から［じしょ］をもらってうれしかった。",
+     "question_en": "I was happy to get a [dictionary] from my grandmother.",
+     "options": [
+      "時書",
+      "事情",
+      "地所",
+      "辞書"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-11",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［こうとう］学校は「高校」のことだ。",
+     "question_en": "A [senior high] school means 'kōkō' (high school).",
+     "options": [
+      "高筆",
+      "高等",
+      "高答",
+      "高筒"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l9-10-12",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "［勝手］なお客（きゃく）さんが多くて困っている。",
+     "question_en": "Many [selfish] customers are causing us trouble.",
+     "options": [
+      "かりて",
+      "しょうしゅ",
+      "かちて",
+      "かって"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-13",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "絵も音楽も映画も［芸術］のひとつだ。",
+     "question_en": "Painting, music and film are all [arts].",
+     "options": [
+      "がくじゅつ",
+      "しゅじゅつ",
+      "びじゅつ",
+      "げいじゅつ"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-14",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "いろいろやってみたが、この［方法］がいちばんいい。",
+     "question_en": "I tried various things, but this [method] is the best.",
+     "options": [
+      "ほうほ",
+      "ほうぼう",
+      "ほうほう",
+      "ほうこう"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l9-10-15",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "彼はもっとよい国を作りたいと思って［政治家］になった。",
+     "question_en": "He wanted to build a better country, so he became a [politician].",
+     "options": [
+      "せいじか",
+      "せえじか",
+      "せんじか",
+      "せじか"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l9-10-16",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "祖父は貿易会社を［経営］していた。",
+     "question_en": "My grandfather used to [run] a trading company.",
+     "options": [
+      "けいかく",
+      "けいえい",
+      "けいざい",
+      "けいけん"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l9-10-17",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "値上がりが続いているが、たまごの［値段］はあまりかわらない。",
+     "question_en": "The price of eggs hasn't changed much, even though [prices] keep rising.",
+     "options": [
+      "ねだん",
+      "ぶっか",
+      "かち",
+      "かいだん"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l9-10-18",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "先生はいつも［優しい］とは限（かぎ）らない。",
+     "question_en": "Teachers are not always [kind].",
+     "options": [
+      "やさしい",
+      "むずかしい",
+      "うれしい",
+      "きびしい"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l9-10-19",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "［国立］大学に入りたいので、毎日徹夜（てつやで勉強している。",
+     "question_en": "I want to get into a [national] university, so I study all night every day.",
+     "options": [
+      "こうたつ",
+      "くにたつ",
+      "くにたち",
+      "こくりつ"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l9-10-20",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "わからない単語に［点線］をひいた。",
+     "question_en": "I drew a [dotted line] under the words I didn't understand.",
+     "options": [
+      "きょくせん",
+      "でんせん",
+      "てんせん",
+      "ちょくせん"
+     ],
+     "correct": 3
+    }
+   ]
+  },
+  {
+   "id": "class-vocab-l11-12",
+   "title": "語彙テスト L11-12",
+   "title_en": "Vocabulary Test L11-12",
+   "questions": [
+    {
+     "id": "vocab-l11-12-01",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "特別な講義(こうぎ)を受(う)けた後、急(きゅう)に成績(せいせき)が（　　　）。",
+     "question_en": "After taking a special lecture, my grades suddenly ( ).",
+     "options": [
+      "出た",
+      "上がった",
+      "ついた",
+      "増（ふ）えた"
+     ],
+     "correct": 2,
+     "options_en": [
+      "came out",
+      "went up",
+      "got attached",
+      "increased"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-02",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "日本以外の国からもこの大学の（　　　）試験を受(う)けに来るそうだ。",
+     "question_en": "They say people come from countries other than Japan to take this university's ( ) exam.",
+     "options": [
+      "入社",
+      "入学",
+      "進学",
+      "卒業（そつぎょう）"
+     ],
+     "correct": 2,
+     "options_en": [
+      "company entrance",
+      "university entrance",
+      "going on to higher school",
+      "graduation"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-03",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "グプタ先生は漢字について（　　　）知識（ちしき）をお持ちだ。",
+     "question_en": "Professor Gupta has ( ) knowledge about kanji.",
+     "options": [
+      "長い",
+      "大きい",
+      "複雑（ふくざつ）な",
+      "深い"
+     ],
+     "correct": 4,
+     "options_en": [
+      "long",
+      "big",
+      "complicated",
+      "deep"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-04",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "エンジニアになるために、（　　　）に入った。",
+     "question_en": "To become an engineer, I entered the ( ).",
+     "options": [
+      "文学部（ぶ）",
+      "理工学部（りこうがくぶ）",
+      "社会学部（がくぶ）",
+      "法学部（ほうがくぶ）"
+     ],
+     "correct": 2,
+     "options_en": [
+      "faculty of literature",
+      "faculty of science and engineering",
+      "faculty of sociology",
+      "faculty of law"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-05",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "私はチェンナイの日本語学校で日本語の（　　　）を学んだ。",
+     "question_en": "I learned the ( ) of Japanese at a Japanese school in Chennai.",
+     "options": [
+      "ゼミ",
+      "免許（めんきょ）",
+      "資格（しかく）",
+      "基礎（きそ）"
+     ],
+     "correct": 4,
+     "options_en": [
+      "seminar",
+      "license",
+      "qualification",
+      "basics"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-06",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "先生の ご（　　　）のおかげで、試験に合格しました。",
+     "question_en": "Thanks to the teacher's ( ), I passed the exam.",
+     "options": [
+      "成績（せいせき）",
+      "指導（しどう）",
+      "コメント",
+      "アドバイス"
+     ],
+     "correct": 2,
+     "options_en": [
+      "grades",
+      "guidance",
+      "comment",
+      "advice (loanword)"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-07",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "JLPTで（　　　）が出せるよう、毎日練習(れんしゅう)問題をしています。",
+     "question_en": "I do practice problems every day so I can show my ( ) on the JLPT.",
+     "options": [
+      "疑問（ぎもん）",
+      "実力（じつりょく）",
+      "理解（りかい）",
+      "得意（とくい）"
+     ],
+     "correct": 2,
+     "options_en": [
+      "question",
+      "real ability",
+      "understanding",
+      "strong point"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-08",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "チョコレートがたくさんありますから、２つずつみんなに（　　　）ください。",
+     "question_en": "There's lots of chocolate, so please ( ) two to each person.",
+     "options": [
+      "渡（わた）して",
+      "もらって",
+      "配（くば）って",
+      "やって"
+     ],
+     "correct": 3,
+     "options_en": [
+      "hand over",
+      "receive",
+      "hand out / distribute",
+      "give (casual)"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-09",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "お客（きゃく）様に送る書類（しょるい）を作ったので、（　　　）いただけませんか。",
+     "question_en": "I made the documents to send to the customer; could you ( ) them?",
+     "options": [
+      "受（じゅ）験して",
+      "確認（かくにん）して",
+      "提出（ていしゅつ）して",
+      "参加（さんか）して"
+     ],
+     "correct": 2,
+     "options_en": [
+      "take an exam on",
+      "check / confirm",
+      "submit",
+      "participate in"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-10",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "田中さんは京都出身なので、東京では（　　　）だそうだ。",
+     "question_en": "Mr. Tanaka is from Kyoto, so I hear in Tokyo he is ( ).",
+     "options": [
+      "サークル",
+      "遠足（えんそく）",
+      "留（りゅう）学",
+      "ひとり暮（ぐ）らし"
+     ],
+     "correct": 4,
+     "options_en": [
+      "in a club",
+      "on a field trip",
+      "studying abroad",
+      "living alone"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-11",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "「社長が代（か）わるそうですよ。さっき、会社から（　　　）んです。」",
+     "question_en": "\"I hear the president is changing. Just now, the company ( ).\"",
+     "options": [
+      "確認（かくにん）された",
+      "習（なら）わされた",
+      "結果（けっか）された",
+      "発表（はっぴょう）された"
+     ],
+     "correct": 4,
+     "options_en": [
+      "confirmed it",
+      "was made to learn it",
+      "was resulted",
+      "announced it (passive: we were told by the company)"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-12",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "彼はたった１年でN１に合格（ごうかく）できたが、それは彼の（　　　）によるものだ",
+     "question_en": "He passed N1 in just one year, but that is due to his ( ).",
+     "options": [
+      "満点（まんてん）",
+      "実験（じっけん）",
+      "努力（どりょく）",
+      "計算（けいさん）"
+     ],
+     "correct": 3,
+     "options_en": [
+      "full marks",
+      "experiment",
+      "effort",
+      "calculation"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-13",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "お客（きゃく）様から電話がかかってきたら、ちゃんと（　　　）をメモしておいてください。",
+     "question_en": "When a customer calls, please be sure to write down the ( ).",
+     "options": [
+      "単語（たんご）",
+      "おしゃべり",
+      "内容（ないよう）",
+      "卒論（そつろん）"
+     ],
+     "correct": 3,
+     "options_en": [
+      "word",
+      "chatting",
+      "content",
+      "graduation thesis"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-14",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "日本語の単語を［ 暗記する ］のは大変だ。",
+     "question_en": "It is hard to [memorize] Japanese words.",
+     "options": [
+      "忘（わす）れる",
+      "覚（おぼ）える",
+      "学習（がくしゅう）する",
+      "教わる"
+     ],
+     "correct": 2,
+     "options_en": [
+      "forget",
+      "remember / learn by heart",
+      "study",
+      "be taught"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-15",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "シンさんの日本語の会話のレベルはとても［ 高い ］。まるで日本人のようだ。",
+     "question_en": "Mr. Shin's Japanese conversation level is very [high]. He's just like a Japanese person.",
+     "options": [
+      "まあまあだ",
+      "中級（ちゅうきゅう）だ",
+      "上級（じょうきゅう）だ",
+      "初級（しょきゅう）だ"
+     ],
+     "correct": 3,
+     "options_en": [
+      "so-so",
+      "intermediate",
+      "advanced",
+      "beginner"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-16",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "解答用紙（かいとうようし）を出す前に、答えを［ 見直(みなお)して ］ください。",
+     "question_en": "Please [look over again] your answers before handing in the answer sheet.",
+     "options": [
+      "もう一度チェックして",
+      "出して",
+      "直（なお）して",
+      "消（け）して"
+     ],
+     "correct": 1,
+     "options_en": [
+      "check once more",
+      "hand in",
+      "fix",
+      "erase"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-17",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "今日は１学期（がっき）の最後のテストなので、［ 徹夜（てつや）］で勉強した。",
+     "question_en": "Today was the last test of the term, so I studied [all night].",
+     "options": [
+      "朝まで寝（ね）ないで",
+      "何もしないで",
+      "夜遅（おそ）くまで",
+      "朝早くまで"
+     ],
+     "correct": 1,
+     "options_en": [
+      "without sleeping until morning",
+      "doing nothing",
+      "until late at night",
+      "until early morning"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-18",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "急（きゅう）な出張（しゅっちょう）のため、今日の会議（かいぎ）は［ 欠席（けっせき）］した。",
+     "question_en": "I was [absent] from today's meeting because of a sudden business trip.",
+     "options": [
+      "中止した",
+      "遅刻（ちこく）した",
+      "休んだ",
+      "出た"
+     ],
+     "correct": 3,
+     "options_en": [
+      "canceled",
+      "was late",
+      "took a day off",
+      "attended"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-19",
+     "section": "（３）次のことばの使い方として一番いいものを選びなさい。",
+     "question": "苦手（にがて）",
+     "question_en": "Usage of 苦手 (not good at / dislike): choose the best sentence.",
+     "options": [
+      "数学が［苦手］なので、いつも数学の成績（せいせき）は学校で１番だ。",
+      "はしを［ 苦手 ］で持って、上手に食べることができます。",
+      "ケーキですか？ すみません。あまいものが［苦手］で、食べられないんです。",
+      "長い間、病気で［苦手した］が、やっと退院（たいいん）できることになった。"
+     ],
+     "correct": 3,
+     "options_en": [
+      "I'm bad at math, so my math grades are always number one at school. (wrong)",
+      "You can eat well by holding chopsticks with your 'weak point'. (wrong)",
+      "Cake? Sorry. I'm not good with sweet things, so I can't eat it. (correct)",
+      "I was 'weak-pointed' by illness for a long time, but I can finally leave the hospital. (wrong)"
+     ]
+    },
+    {
+     "id": "vocab-l11-12-20",
+     "section": "（３）次のことばの使い方として一番いいものを選びなさい。",
+     "question": "合宿（がっしゅく）",
+     "question_en": "Usage of 合宿 (training camp): choose the best sentence.",
+     "options": [
+      "サッカー部の［ 合宿 ］では、1週間練習ばかりだった。",
+      "私たちの［ 合宿 ］は、去年できたばかりで、学校のすぐそばにあります。",
+      "疲れたから、あそこの［ 合宿 ］に泊まることにした。",
+      "会社をやめて、来月からオーストラリアへ［ 合宿 ］することに決めました。"
+     ],
+     "correct": 1,
+     "options_en": [
+      "At the soccer club's training camp, it was nothing but practice for a week. (correct)",
+      "Our training camp was only built last year and is right next to the school. (wrong)",
+      "I was tired, so I decided to stay at that training camp over there. (wrong)",
+      "I quit my company and decided to 'training-camp' to Australia next month. (wrong)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "class-kanji-l13-14",
+   "title": "漢字テスト L13-14",
+   "title_en": "Kanji Test L13-14",
+   "questions": [
+    {
+     "id": "kanji-l13-14-01",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "グプタ先生を［ごぞんじ］ですか。",
+     "question_en": "Do you [know] Mr. Gupta? (honorific)",
+     "options": [
+      "ご存じ",
+      "ご圧じ",
+      "ご仔じ",
+      "ご在じ"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-02",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "子どもを教育するとき、両親の［せきにん］は大きい。",
+     "question_en": "When educating children, the parents' [responsibility] is big.",
+     "options": [
+      "責任",
+      "貢任",
+      "青仕",
+      "青任"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-03",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［つとめている］会社は近いので、朝、ゆっくりできる。",
+     "question_en": "The company I [work for] is close, so I can take it easy in the morning.",
+     "options": [
+      "努めて",
+      "勤めて",
+      "務めて",
+      "勧めて"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l13-14-04",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "弁護士（べんごし）になることは子どものころからの［ゆめ］だった。",
+     "question_en": "Becoming a lawyer has been my [dream] since childhood.",
+     "options": [
+      "參",
+      "夛",
+      "愛",
+      "夢"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-05",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "最近、政治に［かんしん］があるので、毎日新聞を読んでいる。",
+     "question_en": "Recently I've been [interested] in politics, so I read the newspaper every day.",
+     "options": [
+      "感信",
+      "関心",
+      "感心",
+      "観心"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "kanji-l13-14-06",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "部長は、ご［ふうふ］でパーティーにご参加くださいました。",
+     "question_en": "The department head attended the party with his [wife] (as a couple).",
+     "options": [
+      "夫婦",
+      "未妻",
+      "夫妻",
+      "天婦"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-07",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "今度の［れんきゅう］は、どのようにすごしますか。",
+     "question_en": "How will you spend the coming [consecutive holidays]?",
+     "options": [
+      "連休",
+      "運休",
+      "連体",
+      "通件"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-08",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "田中さんと山田さんはそっくりだが、［たにん］だ。",
+     "question_en": "Mr. Tanaka and Mr. Yamada look just alike, but they're [unrelated people].",
+     "options": [
+      "他人",
+      "地人",
+      "也人",
+      "池人"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-09",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "兄はピアノの［さいのう］があり、アメリカへ留(りゅう)学した。",
+     "question_en": "My older brother has [talent] for piano and went to study in America.",
+     "options": [
+      "才態",
+      "オ熊",
+      "オ能",
+      "才能"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-10",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "［けんさ］の結果、１か月入院することになった。",
+     "question_en": "As a result of the [examination], I'll be hospitalized for a month.",
+     "options": [
+      "験渣",
+      "険査",
+      "険渣",
+      "検査"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-11",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "先生の説明に［ぎもん］がある。",
+     "question_en": "I have a [question] about the teacher's explanation.",
+     "options": [
+      "凝間",
+      "疑門",
+      "疑問",
+      "擬聞"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l13-14-12",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "日本の［れきし］について、何か知っていますか。",
+     "question_en": "Do you know anything about Japanese [history]?",
+     "options": [
+      "暦吏",
+      "暦央",
+      "歴史",
+      "歴更"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l13-14-13",
+     "section": "（１） ［  ］のことばは漢字でどうかきますか。",
+     "question": "言いたいことがあれば、［ちょくせつ］彼女に言ってみたらどうですか。",
+     "question_en": "If there is something you want to say, why not say it to her [directly]?",
+     "options": [
+      "値妾",
+      "真説",
+      "眞椄",
+      "直接"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-14",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "うちの［庭］にあやしい男の人がいた。",
+     "question_en": "A suspicious man was in our [garden].",
+     "options": [
+      "やね",
+      "みせ",
+      "うら",
+      "にわ"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-15",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "歯がいたいので、近くの［歯科］へ行った。",
+     "question_en": "My tooth hurts, so I went to a nearby [dentist].",
+     "options": [
+      "はか",
+      "いか",
+      "めか",
+      "しか"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-16",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "このかわいい女の子の絵を描(か)いた画家は、［不幸］な人生だった。",
+     "question_en": "The painter who drew this cute girl picture had an [unhappy] life.",
+     "options": [
+      "ふこう",
+      "ふっこう",
+      "ふしあわせ",
+      "ぶこう"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-17",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "政府のやり方に［反対］する人が多い。",
+     "question_en": "Many people [oppose] the government's way of doing things.",
+     "options": [
+      "はんたい",
+      "はんせい",
+      "さんせい",
+      "へんつい"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "kanji-l13-14-18",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "事故で、頭から［出血］している人を見た。",
+     "question_en": "I saw a person [bleeding] from the head in an accident.",
+     "options": [
+      "しゅっち",
+      "しゅけつ",
+      "しゅっけつ",
+      "しゅつち"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "kanji-l13-14-19",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "私の［予想］では、この試合はインドのチームが勝つと思う。",
+     "question_en": "In my [prediction], the Indian team will win this match.",
+     "options": [
+      "かんそう",
+      "そうぞう",
+      "りそう",
+      "よそう"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "kanji-l13-14-20",
+     "section": "（２）［  ］の漢字はなんと読みますか。",
+     "question": "電車が［満員］で乗れなかった。",
+     "question_en": "The train was [full] and I couldn't get on.",
+     "options": [
+      "まんいん",
+      "まんにん",
+      "まにん",
+      "まいいん"
+     ],
+     "correct": 1
+    }
+   ]
+  },
+  {
+   "id": "class-vocab-l13-14",
+   "title": "語彙テスト L13-14",
+   "title_en": "Vocabulary Test L13-14",
+   "questions": [
+    {
+     "id": "vocab-l13-14-01",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "来月の会議（かいぎ）の予定（よてい）を決（き）めたいが、まだ部長の（　　　）を聞いていないので決められない。",
+     "question_en": "I want to decide next month's meeting schedule, but I haven't heard the manager's ( ) yet, so I can't.",
+     "options": [
+      "サービス",
+      "スケジュール",
+      "ミーティング",
+      "オフィス"
+     ],
+     "correct": 2,
+     "options_en": [
+      "service",
+      "schedule",
+      "meeting",
+      "office"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-02",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "今日は3時からSkypeで日本の会社の（　　　）がある。",
+     "question_en": "Today at 3 o'clock I have an ( ) with a Japanese company over Skype.",
+     "options": [
+      "入社（にゅうしゃ）",
+      "インタビュー",
+      "募集（ぼしゅう）",
+      "面接（めんせつ）"
+     ],
+     "correct": 4,
+     "options_en": [
+      "joining a company",
+      "interview (loanword)",
+      "recruitment",
+      "job interview"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-03",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "きのう、Amazonで注文（ちゅうもん）したパソコンが、もう（　　　）。",
+     "question_en": "The PC I ordered on Amazon yesterday has already ( ).",
+     "options": [
+      "配（くば）った",
+      "連絡（れんらく）した",
+      "配達（はいたつ）した",
+      "届（とど）いた"
+     ],
+     "correct": 4,
+     "options_en": [
+      "handed out",
+      "contacted",
+      "delivered (someone delivered it)",
+      "arrived"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-04",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "今朝出勤（しゅっきん）したら、つくえの上に田中さんが（　　　）メモがあった。",
+     "question_en": "When I came to work this morning, there was a note on my desk that Mr. Tanaka had ( ).",
+     "options": [
+      "残（のこ）した",
+      "速達（そくたつ）した",
+      "郵送（ゆうそう）した",
+      "送った"
+     ],
+     "correct": 1,
+     "options_en": [
+      "left",
+      "sent express",
+      "mailed",
+      "sent"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-05",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "会議（かいぎ）の（　　　）が足りないので、急（いそ）いでコピーしてください。",
+     "question_en": "We don't have enough ( ) for the meeting, so please copy them quickly.",
+     "options": [
+      "時給（じきゅう）",
+      "資料（しりょう）",
+      "メッセージ",
+      "資格（しかく）"
+     ],
+     "correct": 2,
+     "options_en": [
+      "hourly wage",
+      "materials / handouts",
+      "message",
+      "qualification"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-06",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "社員全員の意見を（　　　）、社長に伝えた。",
+     "question_en": "I ( ) everyone's opinions and told the president.",
+     "options": [
+      "まとめて",
+      "表示（ひょうじ）して",
+      "結（むす）んで",
+      "指示（しじ）して"
+     ],
+     "correct": 1,
+     "options_en": [
+      "gathered / summarized",
+      "displayed",
+      "tied",
+      "instructed"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-07",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "会社に電話したいが、ここは地下（ちか）なので、携帯電話（けいたいでんわ）が（　　　）。",
+     "question_en": "I want to phone the company, but it's underground here, so the mobile phone ( ).",
+     "options": [
+      "切れにくい",
+      "つながりにくい",
+      "作業（さぎょう）しにくい",
+      "しゃべりにくい"
+     ],
+     "correct": 2,
+     "options_en": [
+      "is hard to cut off",
+      "has poor connection",
+      "is hard to work",
+      "is hard to chat"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-08",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "（　　　）をマスターすれば、あとの仕事は簡単（かんたん）だ。",
+     "question_en": "If you master ( ), the rest of the work is easy.",
+     "options": [
+      "パスワード",
+      "ファックス",
+      "基本（きほん）",
+      "画面（がめん）"
+     ],
+     "correct": 3,
+     "options_en": [
+      "password",
+      "fax",
+      "basics",
+      "screen"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-09",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "新聞の記事(きじ)は、（　　　）が書いている。",
+     "question_en": "The newspaper articles are written by a ( ).",
+     "options": [
+      "公務員（こうむいん）",
+      "記者（きしゃ）",
+      "職人（しょくにん）",
+      "看護師（かんごし）"
+     ],
+     "correct": 2,
+     "options_en": [
+      "civil servant",
+      "reporter",
+      "craftsman",
+      "nurse"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-10",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "最近（さいきん）、この公園を利用（りよう）する人たちの（　　　）が悪（わる）くて困（こま）っている。",
+     "question_en": "Lately the ( ) of the people who use this park is bad and it's a problem.",
+     "options": [
+      "スタッフ",
+      "商品（しょうひん）",
+      "給料（きゅうりょう）",
+      "マナー"
+     ],
+     "correct": 4,
+     "options_en": [
+      "staff",
+      "products",
+      "salary",
+      "manners"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-11",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "出勤（しゅっきん）したら、すぐにコピー機（き）の（　　　）を入れることにしている。",
+     "question_en": "When I get to work, I always ( ) the copier's ( ) on right away.",
+     "options": [
+      "マウス",
+      "ボタン",
+      "クリック",
+      "スイッチ"
+     ],
+     "correct": 4,
+     "options_en": [
+      "mouse",
+      "button",
+      "click",
+      "switch"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-12",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "日本からインドへ本を送るのに（　　　）を使った。送料は安かったが、１ヶ月以上かかってしまった。",
+     "question_en": "I used ( ) to send books from Japan to India. Postage was cheap, but it took over a month.",
+     "options": [
+      "宅配便（たくはいびん）",
+      "航空便（こうくうびん）",
+      "船便（ふなびん）",
+      "サービス"
+     ],
+     "correct": 3,
+     "options_en": [
+      "home delivery",
+      "airmail",
+      "surface (ship) mail",
+      "service"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-13",
+     "section": "（１）正しい答えを選びなさい。",
+     "question": "タミル語の（　　　）は丸（まる）くてかわいいと思いますが、覚（おぼ）えるのはとてもむずかしいです。",
+     "question_en": "I think Tamil ( ) are round and cute, but they are very hard to learn.",
+     "options": [
+      "数字（すうじ）",
+      "入力（にゅうりょく）",
+      "文字（もじ）",
+      "メッセージ"
+     ],
+     "correct": 3,
+     "options_en": [
+      "numbers",
+      "input",
+      "letters / characters",
+      "message"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-14",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "毎日深夜（しんや）まで残業（ざんぎょう）して、日曜日も出勤（しゅっきん）しているので、この仕事はとても［きつい］。",
+     "question_en": "Working overtime until late at night every day and even on Sundays, this job is really [tough].",
+     "options": [
+      "楽（らく）だ",
+      "大変（たいへん）だ",
+      "ぴったりだ",
+      "ひまだ"
+     ],
+     "correct": 2,
+     "options_en": [
+      "easy",
+      "hard / tough",
+      "a perfect fit",
+      "free (not busy)"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-15",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "課長（かちょう）は会社のお金で自分のパソコンを買ったので、［会社を首になった］。",
+     "question_en": "The section chief bought his own PC with company money, so [he was fired].",
+     "options": [
+      "ボーナスをもらった",
+      "家へ帰った",
+      "仕事を失（うしな）った",
+      "入社（にゅうしゃ）試験を受（う）けた"
+     ],
+     "correct": 3,
+     "options_en": [
+      "got a bonus",
+      "went home",
+      "lost his job",
+      "took the entry exam"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-16",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "やっと日本の会社に［就職（しゅうしょく）］できたので、うれしい。",
+     "question_en": "I'm happy I could finally [get a job] at a Japanese company.",
+     "options": [
+      "入れた",
+      "出勤（しゅっきん）できた",
+      "辞（や）められた",
+      "通勤（つうきん）できた"
+     ],
+     "correct": 1,
+     "options_en": [
+      "get in",
+      "be able to come to work",
+      "be quit",
+      "be able to commute"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-17",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "部長からメールが来たかどうか、［チェック］してください。",
+     "question_en": "Please [check] whether an email came from the manager.",
+     "options": [
+      "読んで",
+      "再生（さいせい）",
+      "直（なお）して",
+      "確認（かくにん）"
+     ],
+     "correct": 4,
+     "options_en": [
+      "read",
+      "play back",
+      "fix",
+      "confirm"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-18",
+     "section": "（２）［  ］の言葉と同じ意味の言葉を選びなさい。",
+     "question": "この店は安くていいものを［販売（はんばい）している］。",
+     "question_en": "This shop [sells] good things cheaply.",
+     "options": [
+      "売っている",
+      "契約(けいやく)している",
+      "買っている",
+      "作っている"
+     ],
+     "correct": 1,
+     "options_en": [
+      "is selling",
+      "is contracting",
+      "is buying",
+      "is making"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-19",
+     "section": "（３）次のことばの使い方として一番いいものを選びなさい。",
+     "question": "免許（めんきょ）",
+     "question_en": "Usage of 免許 (license): choose the best sentence.",
+     "options": [
+      "このウェブサイトは［免許］を入れたら、見ることができます。",
+      "明日病院へ行くので、部長に休みの［免許］をもらった。",
+      "課長（かちょう）から、資料（しりょう）を入力したら帰ってもいいという［免許］があった。",
+      "一生懸命（いっしょうけんめい）勉強したおかげで、医師（いし）［免許］をもらうことができた。"
+     ],
+     "correct": 4,
+     "options_en": [
+      "You can see this website if you enter a 'license'. (wrong)",
+      "I'm going to the hospital tomorrow, so I got a 'license' for leave from my manager. (wrong)",
+      "The section chief gave a 'license' saying I may go home once I enter the data. (wrong)",
+      "Thanks to studying hard, I was able to get a doctor's license. (correct)"
+     ]
+    },
+    {
+     "id": "vocab-l13-14-20",
+     "section": "（３）次のことばの使い方として一番いいものを選びなさい。",
+     "question": "整理（せいり）",
+     "question_en": "Usage of 整理 (organize / tidy): choose the best sentence.",
+     "options": [
+      "会社を辞（や）めるので、机（つくえ）の中を［整理］した。",
+      "［ 整理 ］された服を着て、卒業式（そつぎょうしき）に出席（しゅっせき）した。",
+      "歯（は）が痛（いた）いので、歯医者（はいしゃ）で［整理］してもらった。",
+      "面接（めんせつ）の前に、髪（かみ）を［整理］しなければならない。"
+     ],
+     "correct": 1,
+     "options_en": [
+      "I'm quitting the company, so I tidied up the inside of my desk. (correct)",
+      "I attended the graduation ceremony wearing 'organized' clothes. (wrong)",
+      "My tooth hurts, so I had it 'organized' at the dentist. (wrong)",
+      "I have to 'organize' my hair before the interview. (wrong)"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "class-grammar-l11-12",
+   "title": "文法テスト L11-12",
+   "title_en": "Grammar Test L11-12",
+   "questions": [
+    {
+     "id": "grammar-l11-12-01",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "お母様はあなたに何と（　　　）。",
+     "question_en": "What did your mother ( ) to you?",
+     "options": [
+      "申（もう）し上げましたか",
+      "おっしゃいましたか",
+      "お言いでいらっしゃいましたか",
+      "申（もう）されましたか"
+     ],
+     "correct": 2,
+     "options_en": [
+      "said (humble, wrong for another person's action)",
+      "said (honorific)",
+      "(unnatural double honorific)",
+      "(non-standard honorific)"
+     ],
+     "explanation": "おっしゃる is the honorific for 言う. 申し上げる is humble, so it can't be used for someone else's mother."
+    },
+    {
+     "id": "grammar-l11-12-02",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "私は毎朝３つの新聞を（　　　）。",
+     "question_en": "I ( ) three newspapers every morning.",
+     "options": [
+      "読むことにしている",
+      "拝見するようにしている",
+      "ごらんになることにしている",
+      "いただくようにしている"
+     ],
+     "correct": 1,
+     "options_en": [
+      "make it a habit to read",
+      "make a point of reading (humble 拝見)",
+      "make it a habit to look at (honorific, not for yourself)",
+      "make a point of receiving"
+     ],
+     "explanation": "〜ことにしている = make it a habit/rule. Honorific/humble forms are not mixed in here."
+    },
+    {
+     "id": "grammar-l11-12-03",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "借金（しゃっきん）が300万円もあるので、これ以上（　　　　）ようにしなければならない。",
+     "question_en": "I have 3 million yen of debt, so I have to make sure it ( ) any more.",
+     "options": [
+      "減（へ）る",
+      "増（ふ）やす",
+      "減（へ）らない",
+      "増（ふ）えない"
+     ],
+     "correct": 4,
+     "options_en": [
+      "decrease (intransitive)",
+      "increase (transitive)",
+      "doesn't decrease",
+      "doesn't increase"
+     ],
+     "explanation": "〜ようにする: make an effort so that. 'Make sure it does not increase' = 増えない."
+    },
+    {
+     "id": "grammar-l11-12-04",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "お世話（せわ）になった先生にお手紙（てがみ）を（　　　）。",
+     "question_en": "I ( ) a letter to the teacher who looked after me.",
+     "options": [
+      "いたしました",
+      "もうしあげました",
+      "お書きなさいました",
+      "さしあげました"
+     ],
+     "correct": 4,
+     "options_en": [
+      "did (humble)",
+      "said (humble)",
+      "wrote (honorific, not for yourself)",
+      "gave / presented (humble)"
+     ],
+     "explanation": "Writing a letter to a teacher: your own action to a superior takes the humble 差し上げる."
+    },
+    {
+     "id": "grammar-l11-12-05",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "毎朝早く起きて、日本語のレッスンを（　　　　）いる。",
+     "question_en": "I get up early every morning and ( ) Japanese lessons.",
+     "options": [
+      "受けるようにして",
+      "受けないようにして",
+      "受けるのにして",
+      "受けるようになって"
+     ],
+     "correct": 1,
+     "options_en": [
+      "make an effort to take",
+      "make an effort not to take",
+      "(wrong form)",
+      "have come to take"
+     ],
+     "explanation": "〜ようにしている = make an effort to keep doing it every morning."
+    },
+    {
+     "id": "grammar-l11-12-06",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "都会（とかい）は好きじゃないと言って、（　　　　）東京へ行こうとしなかった。",
+     "question_en": "Saying she didn't like cities, ( ) wouldn't try to go to Tokyo.",
+     "options": [
+      "父も私も",
+      "私は",
+      "父は",
+      "私が"
+     ],
+     "correct": 3,
+     "options_en": [
+      "both my father and I",
+      "I",
+      "my father",
+      "(me, wrong particle)"
+     ],
+     "explanation": "The subject who said she dislikes cities is one person (father), so 父は."
+    },
+    {
+     "id": "grammar-l11-12-07",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "図書館を（　　　　）したとき、アラームがなって、係（かかり）の人が走ってきた。",
+     "question_en": "When I was ( ) the library, the alarm went off and a staff member came running.",
+     "options": [
+      "出るように",
+      "出るつもりに",
+      "出（だ）",
+      "出ようと"
+     ],
+     "correct": 4,
+     "options_en": [
+      "so that I leave",
+      "intending to leave",
+      "(wrong form)",
+      "about to leave"
+     ],
+     "explanation": "〜ようとしたとき = when I was about to (leave the library)."
+    },
+    {
+     "id": "grammar-l11-12-08",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "こちらで（　　　　）お待ちください。",
+     "question_en": "Please ( ) wait here.",
+     "options": [
+      "おかけされて",
+      "おかけして",
+      "おかけになって",
+      "おかけて"
+     ],
+     "correct": 3,
+     "options_en": [
+      "(incorrect honorific)",
+      "(humble form)",
+      "please take a seat (honorific)",
+      "(ungrammatical)"
+     ],
+     "explanation": "お + verb stem + になる is the honorific for a customer: おかけになってお待ちください."
+    },
+    {
+     "id": "grammar-l11-12-09",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "A「お客様、何に（　　　　）。」　B「Aランチお願いします」",
+     "question_en": "A: \"Sir/madam, what ( )?\" B: \"Lunch A, please.\"",
+     "options": [
+      "いたしますか",
+      "なさいますか",
+      "いただきますか",
+      "お食べになりますか"
+     ],
+     "correct": 2,
+     "options_en": [
+      "shall I do (humble)",
+      "will you have (honorific)",
+      "will you receive (humble)",
+      "will you eat (wrong honorific)"
+     ],
+     "explanation": "なさる is the honorific of する, so なさいますか asks what the customer will have."
+    },
+    {
+     "id": "grammar-l11-12-10",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "エレベーターを降（お）りようとしたら、（　　　　）。",
+     "question_en": "When I was about to get off the elevator, ( ).",
+     "options": [
+      "となりの人と話していた",
+      "ドアが閉まってしまった",
+      "ボタンを押（お）した",
+      "だれも降（お）りませんでした"
+     ],
+     "correct": 2,
+     "options_en": [
+      "I was talking with the person next to me",
+      "the door closed on me",
+      "I pressed the button",
+      "nobody got off"
+     ],
+     "explanation": "The action after 〜ようとしたら is an unexpected result: the door closed."
+    },
+    {
+     "id": "grammar-l11-12-11",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "社長はよく和食を（　　　）そうです。",
+     "question_en": "I hear the president often ( ) Japanese food.",
+     "options": [
+      "召（め）し上がる",
+      "お食べする",
+      "いただく",
+      "なさる"
+     ],
+     "correct": 1,
+     "options_en": [
+      "eats (honorific)",
+      "(wrong form)",
+      "receives/eats (humble)",
+      "does (honorific)"
+     ],
+     "explanation": "The president is the subject, so use the honorific 召し上がる."
+    },
+    {
+     "id": "grammar-l11-12-12",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "N3の漢字を全部（　　　　）が、mock テストで20点しかとれなかった。",
+     "question_en": "I ( ) all the N3 kanji, but I only got 20 points on the mock test.",
+     "options": [
+      "読めなかった",
+      "書いたことにした",
+      "覚（おぼ）えたつもりだ",
+      "忘（わす）れたことだ"
+     ],
+     "correct": 3,
+     "options_en": [
+      "couldn't read",
+      "pretended I wrote",
+      "thought I had memorized",
+      "said I forgot"
+     ],
+     "explanation": "〜たつもりだ = I thought I had (done it), but it turned out otherwise."
+    },
+    {
+     "id": "grammar-l11-12-13",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "私は正直（しょうじき）に（　　　　）つもりだったけど、彼は私がうそをついていると思ったようだ。",
+     "question_en": "I ( ) to be honest, but he seemed to think I was lying.",
+     "options": [
+      "言った",
+      "言わなかった",
+      "言う",
+      "言わない"
+     ],
+     "correct": 1,
+     "options_en": [
+      "meant to have told the truth (past)",
+      "didn't tell",
+      "tell",
+      "don't tell"
+     ],
+     "explanation": "〜たつもり = I believed that I had (told the truth)."
+    },
+    {
+     "id": "grammar-l11-12-14",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "あなたはいつまで（　　　　）つもりなんですか。もっと責任（せきにん）を持って仕事をしてください、",
+     "question_en": "How long do you intend to ( )? Please work with more responsibility.",
+     "options": [
+      "学生の",
+      "学生らしい",
+      "学生みたいな",
+      "学生だと言った"
+     ],
+     "correct": 1,
+     "options_en": [
+      "act like a student (学生のつもり)",
+      "student-like",
+      "like a student",
+      "said you were a student"
+     ],
+     "explanation": "学生のつもり = acting as if you were still a student; noun + の + つもり."
+    },
+    {
+     "id": "grammar-l11-12-15",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "来週の月曜日は祝日なので、祖父のうちへ（　　　　）。",
+     "question_en": "Next Monday is a holiday, so I ( ) my grandfather's house.",
+     "options": [
+      "行くのにした",
+      "行くようにした",
+      "行けることにした",
+      "行くことにした"
+     ],
+     "correct": 4,
+     "options_en": [
+      "(ungrammatical)",
+      "made an effort to go",
+      "decided that I can go (odd)",
+      "decided to go"
+     ],
+     "explanation": "〜ことにする = decide to. The holiday is the reason you decided."
+    },
+    {
+     "id": "grammar-l11-12-16",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "来週国から両親（りょうしん）が（　　　）。",
+     "question_en": "My parents ( ) from my home country next week.",
+     "options": [
+      "見えます",
+      "参（まい）ります",
+      "おいでです",
+      "いらっしゃいます"
+     ],
+     "correct": 2,
+     "options_en": [
+      "appears (honorific)",
+      "come (humble)",
+      "is here (honorific)",
+      "come (honorific)"
+     ],
+     "explanation": "Your own parents are your in-group, so use the humble 参ります (come)."
+    },
+    {
+     "id": "grammar-l11-12-17",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "【電話で】では、明日３時に（　　　）よろしいでしょうか。",
+     "question_en": "[On the phone] Then, would it be all right if I ( ) at 3 o'clock tomorrow?",
+     "options": [
+      "いらっしゃっても",
+      "お目にかかっても",
+      "おいでになっても",
+      "うかがっても"
+     ],
+     "correct": 4,
+     "options_en": [
+      "come (honorific)",
+      "meet (humble)",
+      "come (honorific)",
+      "visit (humble)"
+     ],
+     "explanation": "Visiting someone: humble うかがう; 〜ても よろしいでしょうか asks permission."
+    },
+    {
+     "id": "grammar-l11-12-18",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "こちらの資料（しりょう）はどうぞご自由に（　　　）ください。",
+     "question_en": "Please feel free to ( ) these materials.",
+     "options": [
+      "お目にかかり",
+      "お持ちして",
+      "お取（と）り",
+      "いただいて"
+     ],
+     "correct": 3,
+     "options_en": [
+      "meet (humble)",
+      "bring (humble)",
+      "take (honorific)",
+      "receive (humble)"
+     ],
+     "explanation": "お + verb stem + ください: お取りください (please take)."
+    },
+    {
+     "id": "grammar-l11-12-19",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "【デパートで】あの、お客（きゃく）様、どちらへ（　　　）。この奥（おく）は関係者以外（かんけいしゃいがい）は入れませんが。",
+     "question_en": "[At a department store] Excuse me, where ( )? Only authorized people may go past here.",
+     "options": [
+      "行かれますか",
+      "見えますか",
+      "参（まい）りますか",
+      "おられますか"
+     ],
+     "correct": 1,
+     "options_en": [
+      "are you going (honorific)",
+      "are you coming (honorific, 見える)",
+      "am I / are you going (humble)",
+      "are you there (おる, humble)"
+     ],
+     "explanation": "Speaking to a customer: honorific passive 行かれる for 行く."
+    },
+    {
+     "id": "grammar-l11-12-20",
+     "section": "問題１ （ ）の中に入れる言葉をえらびなさい。",
+     "question": "兄はバイクに（　　　　）したとき、転（ころ）んで骨（ほね）を折（お）ってしまった。",
+     "question_en": "When my brother ( ) a motorbike, he fell and broke a bone.",
+     "options": [
+      "乗（の）るように",
+      "乗（の）ったつもりに",
+      "乗（の）ることに",
+      "乗（の）ろうと"
+     ],
+     "correct": 4,
+     "options_en": [
+      "so as to ride",
+      "pretending to have ridden",
+      "decided to ride",
+      "tried to / about to ride"
+     ],
+     "explanation": "〜ようとしたとき = when about to do (ride the motorbike)."
+    }
+   ]
+  },
+  {
+   "id": "class-grammar-1a",
+   "title": "文法テスト 1-A",
+   "title_en": "Grammar Test 1-A (particles, ordering)",
+   "questions": [
+    {
+     "id": "grammar-1a-01",
+     "section": "",
+     "question": "おなかがいっぱいだったが、あまいものが大好きなので、ケーキだけでなくアイスクリーム（　　　）食べてしまった。",
+     "question_en": "Even though I was full, I love sweets, so I ate not only cake but ( ) ice cream.",
+     "options": [
+      "こそ",
+      "など",
+      "さえ",
+      "まで"
+     ],
+     "correct": 4,
+     "options_en": [
+      "precisely (こそ)",
+      "such as (など)",
+      "even (さえ)",
+      "even / to the extent of (まで)"
+     ],
+     "explanation": "ケーキだけでなく〜まで: not only X but even Y."
+    },
+    {
+     "id": "grammar-1a-02",
+     "section": "",
+     "question": "その機械は、人と同じ（　　　　）の高さだった。",
+     "question_en": "That machine was ( ) as tall as a person.",
+     "options": [
+      "など",
+      "だけ",
+      "くらい",
+      "まで"
+     ],
+     "correct": 3,
+     "options_en": [
+      "such as (など)",
+      "only (だけ)",
+      "about (くらい)",
+      "up to (まで)"
+     ],
+     "explanation": "くらい after a noun = about the same degree (同じくらいの高さ)."
+    },
+    {
+     "id": "grammar-1a-03",
+     "section": "",
+     "question": "朝から目がいたくて、目を開けること（　　　）できない。",
+     "question_en": "My eyes have hurt since morning, and I ( ) can't open them.",
+     "options": [
+      "にも",
+      "でも",
+      "こそ",
+      "も"
+     ],
+     "correct": 4,
+     "options_en": [
+      "even in (にも)",
+      "even (でも)",
+      "precisely (こそ)",
+      "not even (も)"
+     ],
+     "explanation": "〜ことも できない: can't even open them (も emphasizes the minimum)."
+    },
+    {
+     "id": "grammar-1a-04",
+     "section": "",
+     "question": "忙しいから、ゆっくり休んで（　　　）いられないよ。",
+     "question_en": "I'm busy, so I ( ) can't rest leisurely.",
+     "options": [
+      "でも",
+      "こそ",
+      "なんか",
+      "だけ"
+     ],
+     "correct": 3,
+     "options_en": [
+      "even / or something (でも)",
+      "precisely (こそ)",
+      "not the sort to (なんか)",
+      "only (だけ)"
+     ],
+     "explanation": "〜なんか いられない: can't afford to rest."
+    },
+    {
+     "id": "grammar-1a-05",
+     "section": "",
+     "question": "あなたのことが好きだから（　　　）言わなければならないんです。",
+     "question_en": "Because I like you, ( ) I have to say it.",
+     "options": [
+      "だけ",
+      "さえ",
+      "こそ",
+      "でも"
+     ],
+     "correct": 3,
+     "options_en": [
+      "only (だけ)",
+      "even (さえ)",
+      "precisely because (こそ)",
+      "even / or something (でも)"
+     ],
+     "explanation": "〜からこそ = precisely because."
+    },
+    {
+     "id": "grammar-1a-06",
+     "section": "",
+     "question": "せっかく日本に行ったのに、ひどい風邪（かぜ）をひいてホテルで寝ていたので、買い物（　　　）行くことができなかった。",
+     "question_en": "I went all the way to Japan, but I caught a bad cold and slept in the hotel, so I couldn't ( ) go shopping.",
+     "options": [
+      "さえ",
+      "でも",
+      "だけ",
+      "まで"
+     ],
+     "correct": 1,
+     "options_en": [
+      "even (さえ)",
+      "or something (でも)",
+      "only (だけ)",
+      "even / to the extent of (まで)"
+     ],
+     "explanation": "〜さえ + negative: can't even go shopping (let alone anything else)."
+    },
+    {
+     "id": "grammar-1a-07",
+     "section": "",
+     "question": "私は果物が好きだが、バナナ（　　　）いやだ。",
+     "question_en": "I like fruit, but bananas ( ) I dislike.",
+     "options": [
+      "さえ",
+      "だけは",
+      "でも",
+      "も"
+     ],
+     "correct": 2,
+     "options_en": [
+      "even (さえ)",
+      "only this one (だけは)",
+      "or something (でも)",
+      "also (も)"
+     ],
+     "explanation": "だけは singles out bananas as the one exception."
+    },
+    {
+     "id": "grammar-1a-08",
+     "section": "",
+     "question": "あー、おなかすいたー。あ、あの店でケーキ（　　　）食べない？",
+     "question_en": "Ah, I'm hungry! Hey, shall we ( ) have cake at that shop?",
+     "options": [
+      "こそ",
+      "も",
+      "さえ",
+      "でも"
+     ],
+     "correct": 4,
+     "options_en": [
+      "precisely (こそ)",
+      "also (も)",
+      "even (さえ)",
+      "or something (でも)"
+     ],
+     "explanation": "〜でも as a soft suggestion: ケーキでも食べない?"
+    },
+    {
+     "id": "grammar-1a-09",
+     "section": "",
+     "question": "私が大きいミスをしたので、課長（かちょう）や部長だけでなく、社長（　　　）しかられた。",
+     "question_en": "I made a big mistake, so I was scolded not only by the section chief and manager but ( ) by the president.",
+     "options": [
+      "さえ",
+      "にまで",
+      "こそ",
+      "など"
+     ],
+     "correct": 2,
+     "options_en": [
+      "even (さえ)",
+      "even by (にまで)",
+      "precisely (こそ)",
+      "such as (など)"
+     ],
+     "explanation": "〜にまで: even to/by the president (a surprising extreme)."
+    },
+    {
+     "id": "grammar-1a-10",
+     "section": "",
+     "question": "以前はだれもマスクをしていなかったが、今では小さな子ども（　　　）マスクをしている。",
+     "question_en": "Before, nobody wore masks, but now ( ) small children wear them.",
+     "options": [
+      "なんか",
+      "くらい",
+      "だけ",
+      "でも"
+     ],
+     "correct": 4,
+     "options_en": [
+      "such as (なんか)",
+      "about (くらい)",
+      "only (だけ)",
+      "even (でも)"
+     ],
+     "explanation": "でも gives an extreme example: even small children."
+    },
+    {
+     "id": "grammar-1a-11",
+     "section": "",
+     "question": "この問題（　　　）やってしまえば、今日の宿題は終わる。",
+     "question_en": "If I ( ) finish this problem, today's homework will be done.",
+     "options": [
+      "さえ",
+      "でさえ",
+      "なんか",
+      "なんて"
+     ],
+     "correct": 1,
+     "options_en": [
+      "just (さえ)",
+      "even (でさえ)",
+      "such as (なんか)",
+      "such a thing (なんて)"
+     ],
+     "explanation": "〜さえ + 〜ば: if only this one problem is done."
+    },
+    {
+     "id": "grammar-1a-12",
+     "section": "",
+     "question": "青い服の男の子が泣（な）いたら、となりの女の子（　　　）泣いてしまった。",
+     "question_en": "When the boy in blue cried, the girl next to him ( ) cried too.",
+     "options": [
+      "こそ",
+      "だけ",
+      "さえ",
+      "まで"
+     ],
+     "correct": 4,
+     "options_en": [
+      "precisely (こそ)",
+      "only (だけ)",
+      "even (さえ)",
+      "even / too (まで)"
+     ],
+     "explanation": "まで adds a further case: even the girl next to him cried."
+    },
+    {
+     "id": "grammar-1a-13",
+     "section": "",
+     "question": "私のうちはまずしかったが、父は他の人にお金を１円も（　　　）。",
+     "question_en": "We were poor, but my father ( ) any money from others.",
+     "options": [
+      "貸（か）した",
+      "借（か）りた",
+      "借（か）りなかった",
+      "貸（か）さなかった"
+     ],
+     "correct": 3,
+     "options_en": [
+      "lent",
+      "borrowed",
+      "did not borrow",
+      "did not lend"
+     ],
+     "explanation": "Poor family, so he never borrowed money (借りなかった)."
+    },
+    {
+     "id": "grammar-1a-14",
+     "section": "",
+     "question": "そのカメラは買っただけで、（　　　）。",
+     "question_en": "I only bought that camera, ( ).",
+     "options": [
+      "知らない",
+      "もう使っている",
+      "まだ使っていない",
+      "とてもよかった"
+     ],
+     "correct": 3,
+     "options_en": [
+      "I don't know",
+      "I'm already using it",
+      "I haven't used it yet",
+      "it was very good"
+     ],
+     "explanation": "〜ただけで、まだ使っていない: bought it but haven't used it."
+    },
+    {
+     "id": "grammar-1a-15",
+     "section": "",
+     "question": "大きらいな部長が夢（ゆめ）にまで（　　　）。",
+     "question_en": "The manager I hate even ( ) in my dreams.",
+     "options": [
+      "出てくる",
+      "出てこない",
+      "見えない",
+      "見える"
+     ],
+     "correct": 1,
+     "options_en": [
+      "shows up",
+      "doesn't show up",
+      "isn't visible",
+      "is visible"
+     ],
+     "explanation": "〜にまで出てくる: shows up even in dreams."
+    },
+    {
+     "id": "grammar-1a-16",
+     "section": "",
+     "question": "日本人に会ったとき「こんにちは」ぐらいちゃんと（　　　）。",
+     "question_en": "When you meet a Japanese person, you ( ) say at least 'konnichiwa' properly.",
+     "options": [
+      "言えてすごいですね",
+      "言えなかった",
+      "言わなかった",
+      "言えなければだめだ"
+     ],
+     "correct": 4,
+     "options_en": [
+      "(you) were good to be able to say it, amazing",
+      "couldn't say it",
+      "didn't say it",
+      "you're no good if you can't say it"
+     ],
+     "explanation": "〜くらい ちゃんと言えなければだめだ: you must be able to say at least that."
+    },
+    {
+     "id": "grammar-1a-17",
+     "section": "",
+     "question": "チョコレート味のパンは全部（ぜんぶ）売れてしまって、（　　　）。",
+     "question_en": "All the chocolate-flavored bread has sold out, so ( ).",
+     "options": [
+      "一つも残（のこ）っていない",
+      "一つしか残（のこ）っている",
+      "一つも残（のこ）っている",
+      "一つしか残（のこ）っていない"
+     ],
+     "correct": 1,
+     "options_en": [
+      "not a single one is left",
+      "(ungrammatical: only one is left)",
+      "(ungrammatical: even one is left)",
+      "only one isn't left"
+     ],
+     "explanation": "〜も + negative: not even one. 一つも残っていない."
+    },
+    {
+     "id": "grammar-1a-18",
+     "section": "",
+     "question": "やれる（　　）（  ★  ）（　　）（　　）みんな　やった。",
+     "question_en": "(Star question) Fill the star: やれる（　）（★）（　）（　）みんなやった.",
+     "options": [
+      "だけ",
+      "の",
+      "もう",
+      "ことは"
+     ],
+     "correct": 2,
+     "options_en": [
+      "only (だけ)",
+      "of (の)",
+      "already (もう)",
+      "the thing (ことは)"
+     ],
+     "explanation": "Correct order: やれる だけ の ことは もう みんなやった (I did everything I could). The star is the 2nd slot: の."
+    },
+    {
+     "id": "grammar-1a-19",
+     "section": "",
+     "question": "私がもうすぐ国へ帰ること（　　）（　　）（  ★  ）（　　）言わないでください。",
+     "question_en": "(Star question) Fill the star: 私がもうすぐ国へ帰ること（　）（　）（★）（　）言わないでください.",
+     "options": [
+      "は",
+      "も",
+      "に",
+      "だれ"
+     ],
+     "correct": 3,
+     "options_en": [
+      "topic marker (は)",
+      "also (も)",
+      "to (に)",
+      "anyone (だれ)"
+     ],
+     "explanation": "Order: は → だれ → ★に → も. Full: 私がもうすぐ国へ帰ることはだれにも言わないでください. ★ is the 3rd slot: に."
+    },
+    {
+     "id": "grammar-1a-20",
+     "section": "",
+     "question": "今さがしているのは、わたし（　　）（  ★  ）（　　）（　　）です。",
+     "question_en": "(Star question) Fill the star: 今さがしているのは、わたし（　）（★）（　）（　）です.",
+     "options": [
+      "買える",
+      "くらいの",
+      "でも",
+      "パソコン"
+     ],
+     "correct": 1,
+     "options_en": [
+      "can buy (買える)",
+      "about as much as (くらいの)",
+      "even (でも)",
+      "PC (パソコン)"
+     ],
+     "explanation": "Order: でも → ★買える → くらいの → パソコン. Full: わたしでも買えるくらいのパソコン. ★ is the 2nd slot: 買える."
+    }
+   ]
+  }
+ ]
+}
