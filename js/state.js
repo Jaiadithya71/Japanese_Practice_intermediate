@@ -6,6 +6,7 @@
 export const state = {
   // 5 PILLARS DATA REPOSITORIES
   vocabDB: {},           // Book 1: Vocabulary (29 units, 1,251 words)
+  vocabLessonOverlaps: {}, // per-lesson words deduplicated out of R/K Home lessons (data/vocab_lesson_overlaps.json)
   chapterMetadata: {},
 
   readingDB: {},         // Book 2: Reading Comprehension (54 lessons, 90+ questions)

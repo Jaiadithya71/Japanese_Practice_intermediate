@@ -93,6 +93,24 @@ export async function loadIntermediateVocabDB() {
 
   state.vocabDB = allChapters;
   state.chapterMetadata = allMetadata;
+
+  // Words that belong to a lesson's own source list but were left out of the
+  // Home lesson because they already appeared in an earlier chapter (reading
+  // R lessons and kanji K lessons were deduplicated). The Home "All lesson
+  // words (incl. overlaps)" option adds them back to the drill pool. Overlap
+  // entries reuse the existing word id, so SRS progress stays per-word.
+  state.vocabLessonOverlaps = {};
+  try {
+    const res = await fetch('data/vocab_lesson_overlaps.json');
+    if (res.ok) {
+      const data = await res.json();
+      for (const [chId, words] of Object.entries(data.overlaps || {})) {
+        state.vocabLessonOverlaps[chId] = words.map(w => ({ ...w, type: 'vocab', book: 'vocab', chapter: chId }));
+      }
+    }
+  } catch (err) {
+    console.warn('Could not load vocab lesson overlaps:', err);
+  }
   return allChapters;
 }
 

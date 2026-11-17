@@ -157,6 +157,7 @@
             <option value="ja-en" selected>Japanese → English</option><option value="en-ja">English → Japanese</option>
           </select></label>
           <label class="home-run-check"><input id="home-hard-only" type="checkbox" onchange="window.toggleHomeHardOnly()"> Drill hard words only</label>
+          <label class="home-run-check"><input id="home-include-overlaps" type="checkbox" onchange="window.toggleHomeIncludeOverlaps()"> All lesson words (incl. overlaps)</label>
         </div>
         <div class="home-phase-row">
           <span>Flashcard mode</span>
@@ -1244,7 +1245,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=4.20-lag1"></script>
+  <script type="module" src="js/main.js?v=4.21-ovl1"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

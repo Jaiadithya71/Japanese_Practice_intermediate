@@ -12,7 +12,7 @@ import { addAttempt, attachAccuracy, MIN_ATTEMPT_SECONDS } from './reading-times
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js?v=20261116-lag1';
 import { renderCard } from './study.js?v=4.6';
 import { showView } from './navigation.js';
-import { getAllWords, getAllReadingLessons } from './data-loader.js?v=20261114-kanji25';
+import { getAllWords, getAllReadingLessons } from './data-loader.js?v=20261117-ovl1';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';
 import {
   PASSAGE_GENRES,

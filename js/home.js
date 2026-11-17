@@ -32,6 +32,10 @@ export function renderHomeView() {
     if (!state.selectedChapters.size && state.activeChapterGroup === 'topic' && state.vocabDB['01']) state.selectedChapters.add('01');
     state.homePickerInitialized = true;
   }
+  try {
+    const ov = document.getElementById('home-include-overlaps');
+    if (ov) ov.checked = localStorage.getItem('n3_home_include_overlaps') === '1';
+  } catch (_) {}
   renderHomeReviewDue();
   renderLessonGrid();
   renderHomeVocabStatus();
@@ -121,8 +125,31 @@ export function chapterKeysForGroup() {
 // was the lesson-picker lag).
 const homeTileEls = new Map();
 
+function homeIncludeOverlapsChecked() {
+  return Boolean(document.getElementById('home-include-overlaps')?.checked);
+}
+
+export function toggleHomeIncludeOverlaps() {
+  try { localStorage.setItem('n3_home_include_overlaps', homeIncludeOverlapsChecked() ? '1' : '0'); } catch (_) {}
+  renderLessonGrid();
+  updateHomeLessonControls();
+}
+if (typeof window !== 'undefined') window.toggleHomeIncludeOverlaps = toggleHomeIncludeOverlaps;
+
+// Words drilled for a Home lesson. R (reading) and K (kanji) lessons were
+// deduplicated against earlier lessons, so chapter-wise class-test prep can
+// miss words; with "All lesson words (incl. overlaps)" on, the lesson's own
+// full source list is restored. Overlap entries reuse the original word id,
+// so SRS progress stays per-word.
+function homeChapterWords(chId) {
+  const base = state.vocabDB[chId] || [];
+  if (!homeIncludeOverlapsChecked()) return base;
+  const extra = (state.vocabLessonOverlaps || {})[chId] || [];
+  return extra.length ? base.concat(extra) : base;
+}
+
 function homeTileCountText(chId) {
-  const words = state.vocabDB[chId] || [];
+  const words = homeChapterWords(chId);
   if (!homeHardOnlyChecked()) return `${words.length}w`;
   const aSel = state.selectedChapters.has(chId);
   const bSel = state.selectedChapters.has(`${chId}|B`);
@@ -215,7 +242,7 @@ export function renderLessonGrid() {
   const counts = {};
   for (const chId of chapterKeysForGroup()) {
     let am = 0, ah = false, bm = 0, bh = false;
-    const words = state.vocabDB[chId] || [];
+    const words = homeChapterWords(chId);
     const aKeySuffix = state.studyDirection === 'en-ja' ? ':rev' : '';
     for (const w of words) {
       const a = peekItemStatus(`V:${w.id}${aKeySuffix}`);
@@ -315,10 +342,10 @@ function updateHomeLessonControls() {
     for (const selKey of selKeys) {
       const kanaFirst = selKey.endsWith('|B');
       const chapter = kanaFirst ? selKey.slice(0, -2) : selKey;
-      wordCount += homeHardWordCount(state.vocabDB[chapter] || [], kanaFirst ? 'kana-en' : state.studyDirection);
+      wordCount += homeHardWordCount(homeChapterWords(chapter), kanaFirst ? 'kana-en' : state.studyDirection);
     }
   } else {
-    wordCount = selKeys.reduce((sum, selKey) => sum + (state.vocabDB[String(selKey).split('|')[0]] || []).length, 0);
+    wordCount = selKeys.reduce((sum, selKey) => sum + homeChapterWords(String(selKey).split('|')[0]).length, 0);
   }
   const lessonCount = new Set(selKeys.map(k => String(k).split('|')[0])).size;
   const summary = document.getElementById('home-lessons-count');
@@ -380,12 +407,15 @@ export function startSelectedLessonRun() {
   const chapters = homeActiveGroupSelKeys();
   if (!chapters.length) { alert('Select at least one lesson first.'); return; }
   const pool = [];
+  const seenKeys = new Set();
   for (const selKey of chapters) {
     const kanaFirst = selKey.endsWith('|B');
     const chapter = kanaFirst ? selKey.slice(0, -2) : selKey;
-    for (const word of (state.vocabDB[chapter] || [])) {
+    for (const word of homeChapterWords(chapter)) {
       if (document.getElementById('home-hard-only')?.checked && peekItemStatus(homeWordStatusKey(word.id, kanaFirst ? 'kana-en' : state.studyDirection)) !== 'hard') continue;
       const key = kanaFirst ? `V:${word.id}:kana` : `V:${word.id}${state.studyDirection === 'en-ja' ? ':rev' : ''}`;
+      if (seenKeys.has(key)) continue; // overlap word already in the pool via its original lesson
+      seenKeys.add(key);
       pool.push({ ...word, type: 'vocab', key, book: 'vocab', kanaFirst });
     }
   }
