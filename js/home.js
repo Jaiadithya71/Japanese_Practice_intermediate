@@ -563,13 +563,11 @@ function homeReviewEffectiveFilter(sel) {
 export function renderHomeReviewDue() {
   const root = document.getElementById('home-review-due');
   if (!root || !state.stats) return;
-  const sel = homeReviewSelection();
-  const filter = homeReviewEffectiveFilter(sel);
+  let sel = homeReviewSelection();
   const part = homeReviewPart();
   const partOpts = part === 'both' ? {} : { part };
   const summary = getVocabDueSummary(partOpts);
   const total = summary.total;
-  const count = filter ? summary.unassigned + [...filter].reduce((n, ch) => n + (summary.byChapter.get(String(ch)) || 0), 0) : total;
 
   const partWrap = document.getElementById('hrd-part');
   if (partWrap) {
@@ -587,6 +585,20 @@ export function renderHomeReviewDue() {
     const due = (summary.byChapter.get(String(chId)) || 0) + summary.unassigned;
     dueMap[chId] = due;
   }
+
+  // Drop picked lessons that have nothing due left (e.g. right after their
+  // review round), so the box never comes back showing 0 on the picked chips;
+  // with no picks left it returns to the All view.
+  if (sel.size) {
+    const kept = new Set([...sel].filter(chId => (dueMap[chId] || 0) > 0));
+    if (kept.size !== sel.size) {
+      sel = kept;
+      saveHomeReviewSelection(kept);
+    }
+  }
+
+  const filter = homeReviewEffectiveFilter(sel);
+  const count = filter ? summary.unassigned + [...filter].reduce((n, ch) => n + (summary.byChapter.get(String(ch)) || 0), 0) : total;
   let pickedDue = 0;
   for (const chId of sel) pickedDue += dueMap[chId] || 0;
 
@@ -637,7 +649,7 @@ export function renderHomeReviewDue() {
     const n = Number(chId);
     const due = dueMap[chId];
     const isSel = sel.has(chId);
-    if (!due && !isSel) continue; // box lists only lessons with due cards (a still-picked lesson stays so it can be unpicked)
+    if (!due) continue; // box lists only lessons with due cards; picked lessons with 0 left were already unpicked above
     const label = chId.startsWith('part2_') ? 'C' + Number(chId.slice(6))
       : (n > 30 ? 'K' + (n - 30) : (n > 21 ? 'R' + (n - 21) : String(n)));
     const topic = (state.chapterMetadata[chId] || {}).topic_en || '';
