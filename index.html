@@ -148,7 +148,7 @@
           </div>
         </div>
         <div id="home-lesson-grid" class="home-lesson-grid" aria-label="Vocabulary lessons"></div>
-        <p id="home-lessons-count" class="home-picker-summary">1 lesson selected · 41 words in pool</p>
+        <p id="home-lessons-count" class="home-picker-summary">0 lessons selected</p>
         <div class="home-run-settings">
           <label class="home-run-setting"><span>Session size</span><select aria-label="Session size" onchange="window.setHomeSessionSize(this.value)">
             <option value="10">10 words</option><option value="20">20 words</option><option value="50">50 words</option><option value="all" selected>All words</option>
@@ -168,8 +168,8 @@
         </div>
         <p id="home-review-phase-hint" class="home-phase-hint">Recall first, then reveal and grade.</p>
         <div class="home-picker-buttons">
-          <button id="btn-start-selected-study" class="btn btn-primary" onclick="window.startSelectedLessonRun()"><i class="fa-solid fa-clone"></i> Flashcards</button>
-          <button id="btn-start-selected-test" class="btn btn-secondary" onclick="window.startSelectedLessonTestRun()"><i class="fa-solid fa-list-check"></i> Multiple Choice</button>
+          <button id="btn-start-selected-study" class="btn btn-primary" disabled onclick="window.startSelectedLessonRun()"><i class="fa-solid fa-clone"></i> Flashcards</button>
+          <button id="btn-start-selected-test" class="btn btn-secondary" disabled onclick="window.startSelectedLessonTestRun()"><i class="fa-solid fa-list-check"></i> Multiple Choice</button>
         </div>
       </section>
 
@@ -1245,7 +1245,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=4.23-rev1"></script>
+  <script type="module" src="js/main.js?v=4.23-rev2"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

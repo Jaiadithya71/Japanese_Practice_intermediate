@@ -26,12 +26,7 @@ if (typeof window !== 'undefined') window.startSingleChapterStudy = startSingleC
 export function renderHomeView() {
   try { state.studyDirection = localStorage.getItem('n3_home_study_direction') || state.studyDirection; } catch (_) {}
   updateMasteryCounters();
-  if (!state.homePickerInitialized) {
-    // Suggested first step for brand-new sessions, Topics tab only - adding it
-    // while another group is showing would be an invisible selection.
-    if (!state.selectedChapters.size && state.activeChapterGroup === 'topic' && state.vocabDB['01']) state.selectedChapters.add('01');
-    state.homePickerInitialized = true;
-  }
+  // Home starts with no lesson selected. Learners choose lessons explicitly or use Select All.
   try {
     const ov = document.getElementById('home-include-overlaps');
     if (ov) ov.checked = localStorage.getItem('n3_home_include_overlaps') === '1';

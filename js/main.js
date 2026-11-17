@@ -1,4 +1,4 @@
-import { setHomeReviewPhase } from './home.js?v=20261117-ovl1';
+import { setHomeReviewPhase } from './home.js?v=20261117-ovl2';
 window.setHomeReviewPhase = setHomeReviewPhase;
 /* =======================================================
    NIHONGO INTERMEDIATE — main.js
@@ -11,7 +11,7 @@ import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js?v=202611
 import { showView } from './navigation.js';
 import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=4.6';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261116-lag1';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261117-ovl1';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261117-ovl2';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js?v=20261116-lag1';
 import {
