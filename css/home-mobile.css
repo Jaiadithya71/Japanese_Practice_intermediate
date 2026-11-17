@@ -24,8 +24,11 @@
   #view-home .home-run-setting { display:grid; grid-template-columns:88px minmax(0,1fr); align-items:center; flex-wrap:nowrap; width:100%; min-height:44px; gap:10px; font-size:.79rem; color:#b6bfd0; }
   #view-home .home-run-setting>span { flex:0 0 88px; }
   #view-home .home-run-setting select { flex:1; width:100%; min-width:0; max-width:none; min-height:44px; border-radius:12px; padding:9px 12px; background:#212735; color:#edf0fa; border-color:rgba(181,193,220,.15); font-size:.81rem; color-scheme:dark; }
-  #view-home .home-run-check { gap:10px; min-height:40px; color:#b6bfd0; font-size:.79rem; }
-  #view-home .home-run-check input { width:19px; height:19px; accent-color:#9581ff; flex:none; }
+  #view-home .home-run-check { gap:10px; min-height:46px; padding:9px 12px; border-radius:13px; background:#1b212c; border-color:rgba(180,190,215,.09); color:#b6bfd0; font-size:.79rem; }
+  #view-home .home-run-check input[type="checkbox"] { width:21px; height:21px; border-color:rgba(181,193,220,.28); background:rgba(255,255,255,.04); flex:none; }
+  #view-home .home-run-check input[type="checkbox"]:checked { background:linear-gradient(135deg,#9380ff,#7661e9); border-color:#9c8aff; box-shadow:0 0 0 3px rgba(156,138,255,.18); }
+  #view-home .home-run-check input[type="checkbox"]::before { background:#fff; }
+  #view-home .home-run-check:has(input:checked) { border-color:rgba(156,138,255,.45); background:rgba(74,61,135,.32); color:#eeeaff; }
   #view-home .home-picker-buttons { gap:8px; }
   #view-home .home-picker-buttons .btn { min-height:48px; border-radius:14px; font-size:.76rem; font-weight:650; padding:10px 5px; gap:7px; }
   #view-home .home-picker-buttons .btn-primary { background:linear-gradient(135deg,#9380ff,#7661e9); box-shadow:0 5px 16px rgba(110,85,229,.2); }

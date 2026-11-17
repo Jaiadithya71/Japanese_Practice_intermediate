@@ -422,3 +422,15 @@
   .hrd-row { flex-wrap: wrap; }
   .hrd-breakdown { flex: 1 1 100%; order: 5; text-align: left; -webkit-line-clamp: 2; }
 }
+
+/* Home drill option checkboxes — custom pill options (scoped to the Home run
+   settings so the Kanji tab's plain checkbox is untouched). Behavior and
+   markup are unchanged: the native input stays inside the label. */
+.home-run-settings .home-run-check{display:flex;align-items:center;gap:.6rem;min-height:44px;padding:.5rem .8rem;border:1px solid var(--border);border-radius:12px;background:var(--surface);color:var(--text-muted);font-size:.78rem;font-weight:600;cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;transition:border-color .15s ease,background .15s ease,color .15s ease}
+.home-run-settings .home-run-check:hover{border-color:var(--border-strong);color:var(--text)}
+.home-run-settings .home-run-check input[type="checkbox"]{appearance:none;-webkit-appearance:none;width:20px;height:20px;flex:none;margin:0;border:1.5px solid var(--border-strong);border-radius:7px;background:rgba(255,255,255,.03);display:inline-grid;place-content:center;cursor:pointer;transition:background .15s ease,border-color .15s ease,box-shadow .15s ease}
+.home-run-settings .home-run-check input[type="checkbox"]::before{content:"";width:11px;height:11px;transform:scale(0);transition:transform .14s cubic-bezier(.2,.9,.3,1.3);background:#0b0e17;clip-path:polygon(14% 44%,0 65%,50% 100%,100% 16%,80% 0%,43% 70%)}
+.home-run-settings .home-run-check input[type="checkbox"]:checked{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-light)}
+.home-run-settings .home-run-check input[type="checkbox"]:checked::before{transform:scale(1)}
+.home-run-settings .home-run-check input[type="checkbox"]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.home-run-settings .home-run-check:has(input:checked){border-color:var(--accent-glow);background:var(--accent-light);color:var(--text)}
