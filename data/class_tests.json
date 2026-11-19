@@ -1,7 +1,7 @@
 {
  "metadata": {
-  "description": "Practice questions from Thirdwave class tests (L9-14 kanji/vocab/grammar) with correct answers and English translations.",
-  "count": 140
+  "description": "Practice questions from N3 class tests (L9-18 vocab and kanji, plus grammar D-E), with correct answers and English translations.",
+  "count": 205
  },
  "tests": [
   {
@@ -2390,6 +2390,807 @@
       "PC (パソコン)"
      ],
      "explanation": "Order: でも → ★買える → くらいの → パソコン. Full: わたしでも買えるくらいのパソコン. ★ is the 2nd slot: 買える."
+    }
+   ]
+  },
+  {
+   "id": "class-vocab-l17-18",
+   "title": "語彙テスト L17-18",
+   "title_en": "Vocab Test L17-18",
+   "questions": [
+    {
+     "id": "class-vocab-l17-18-01",
+     "question": "01）台風が（　　　）。",
+     "question_en": "A typhoon (　　　).",
+     "options": [
+      "晴れる",
+      "来る",
+      "吹（ふ）く",
+      "出る"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-02",
+     "question": "02）気温（きおん）が（　　　）。",
+     "question_en": "The temperature (　　　).",
+     "options": [
+      "下がる",
+      "降（ふ）る",
+      "落（お）ちる",
+      "下（さ）げる"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-vocab-l17-18-03",
+     "question": "03）太陽（たいよう）が（　　　）。",
+     "question_en": "The sun (　　　).",
+     "options": [
+      "落（お）ちる",
+      "沈（しず）む",
+      "晴（は）れる",
+      "明ける"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-04",
+     "question": "04）雪が  （　　　）。",
+     "question_en": "Snow (　　　).",
+     "options": [
+      "あふれる",
+      "止（や）む",
+      "吹（ふ）く",
+      "明ける"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-05",
+     "question": "05）夜が　（　　　）。",
+     "question_en": "Night (　　　).",
+     "options": [
+      "晴（は）れる",
+      "明ける",
+      "沈（しず）む",
+      "出る"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-06",
+     "question": "06）滝（たき）が　（　　　）。",
+     "question_en": "The waterfall (　　　).",
+     "options": [
+      "あふれる",
+      "降（ふ）る",
+      "落（お）ちる",
+      "下がる"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-07",
+     "question": "07）風が　（　　　）。",
+     "question_en": "The wind (　　　).",
+     "options": [
+      "止（と）める",
+      "吹（ふ）く",
+      "晴（は）れる",
+      "上がる"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-08",
+     "question": "08）空が　（　　　）。",
+     "question_en": "The sky (　　　).",
+     "options": [
+      "鳴る",
+      "明ける",
+      "晴（は）れる",
+      "流（なが）れる"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-09",
+     "question": "09）雷（かみなり）が　（　　　）。",
+     "question_en": "Thunder (　　　).",
+     "options": [
+      "下がる",
+      "鳴る",
+      "吹（ふ）く",
+      "出る"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-10",
+     "question": "10）湖が　（　　　）。",
+     "question_en": "The lake (　　　).",
+     "options": [
+      "上がる",
+      "出る",
+      "流（なが）れる",
+      "あふれる"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-vocab-l17-18-11",
+     "question": "11）虹（にじ）が　（　　　）。",
+     "question_en": "A rainbow (　　　).",
+     "options": [
+      "下がる",
+      "明ける",
+      "晴（は）れる",
+      "出る"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-vocab-l17-18-12",
+     "question": "12）川が　（　　　）。",
+     "question_en": "The river (　　　).",
+     "options": [
+      "落（お）ちる",
+      "沈（しず）む",
+      "流（なが）れる",
+      "止める"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-13",
+     "question": "13）友達のお姉さんが亡（な）くなったので（　　　）に行ってきた。",
+     "question_en": "My friend’s older sister passed away, so I went to the (　　　).",
+     "options": [
+      "お祝（いわ）い",
+      "行事（ぎょうじ）",
+      "葬式（そうしき）",
+      "結婚式"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-14",
+     "question": "14）祇園祭（ぎおんまつり）は京都の（　　　）のある祭（まつ）りです。",
+     "question_en": "The Gion Festival is a festival in Kyoto with a long (　　　).",
+     "options": [
+      "飾（かざ）り",
+      "未来",
+      "伝統（でんとう）",
+      "仏教（ぶっきょう）"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-15",
+     "question": "15）そのコンサートは（　　　）を忘れてしまうぐらいすばらしかった。",
+     "question_en": "The concert was so wonderful that I forgot to (　　　).",
+     "options": [
+      "参加（さんか）",
+      "拍手（はくしゅ）",
+      "神（かみ）",
+      "占（うらな）い"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-16",
+     "question": "16）日本にはないが、インドの西側（がわ）には大きい（　　　）がある。",
+     "question_en": "Japan does not have one, but there is a large (　　　) west of India.",
+     "options": [
+      "砂漠（さばく）",
+      "地域（ちいき）",
+      "大陸（たいりく）",
+      "地方（ちほう）"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-vocab-l17-18-17",
+     "question": "17）私が住んでいる町は、（　　　）がさかんなので、野菜を安く買うことができる。",
+     "question_en": "Agriculture is thriving in the town where I live, so I can buy vegetables cheaply.",
+     "options": [
+      "農業（のうぎょう）",
+      "都会（とかい）",
+      "爆発（ばくはつ）",
+      "田舎（いなか）"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-vocab-l17-18-18",
+     "question": "18）仕事をやめて、来月、（　　　）に帰ることになった。",
+     "question_en": "I quit my job and will be returning to my (　　　) next month.",
+     "options": [
+      "出身（しゅっしん）",
+      "土地（とち）",
+      "ところ",
+      "故郷（こきょう）"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-vocab-l17-18-19",
+     "question": "01）［年末年始（ねんまつねんし）］は、掃除（そうじ）をしたり買い物をしたりして、とても忙（いそが）しい。",
+     "question_en": "The year-end and New Year period is very busy, with cleaning, shopping, and other preparations.",
+     "options": [
+      "12月20日から12月31日",
+      "クリスマスごろから１月7日ごろまで",
+      "12月31 日と1月1日",
+      "1月1日から1月3日まで"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-20",
+     "question": "02）前から欲（ほ）しかったバッグが50％割引（わりびき）で買えて、［ラッキー］だ。",
+     "question_en": "I was able to buy a bag I had wanted for a long time at 50% off. I was so lucky.",
+     "options": [
+      "平和だ",
+      "運がいい",
+      "懐（なつ）かしい",
+      "爽（さわ）やかだ"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-21",
+     "question": "03）梅雨（つゆ）に入ったのでとても［蒸（む）し暑い］",
+     "question_en": "The rainy season has begun, so it is very hot and humid.",
+     "options": [
+      "湿度（しつど）が高くて暑い",
+      "湿度（しつど）が低くて暑い",
+      "気温（きおん）が30度以上（いじょう）で暑い",
+      "空気（くうき）が乾燥（かんそう）して暑い"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-vocab-l17-18-22",
+     "question": "04）東京を［ 離（はな）れて］ もう30年になる。",
+     "question_en": "It has been 30 years since I left Tokyo.",
+     "options": [
+      "眺（なが）めて",
+      "超（こ）えて",
+      "出て",
+      "浮（う）かんで"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-23",
+     "question": "05）日本は ［四季（しき）］ がはっきりしている。",
+     "question_en": "Japan has four distinct seasons.",
+     "options": [
+      "東西南北",
+      "春夏秋冬",
+      "前後左右",
+      "晴、雲、雨、雪"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-vocab-l17-18-24",
+     "question": "01）シーズン",
+     "question_en": "Choose the sentence that uses “season” correctly.",
+     "options": [
+      "予定されていた［シーズン］が中止になった。",
+      "みんなで彼の成人（せいじん）［シーズン］を祝（いわ）った。",
+      "大陸（たいりく）から鳥が渡（わた）ってくる［シーズン］になった。",
+      "クリスマスの日は、家族と楽しい［シーズン］を過（す）ごした。"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-vocab-l17-18-25",
+     "question": "02）確率（かくりつ）",
+     "question_en": "Choose the sentence that uses “probability” correctly.",
+     "options": [
+      "彼女はいつもパーティーに来ないから、今夜のパーティーも来ない［確率］は高いね。",
+      "来週のバーゲンでは、店の商品がすべて50パーセント［確率］される。",
+      "この学校の男の生徒（せいと）の［確率］は何パーセントですか。",
+      "インドでは人口の［確率］が上がっている。"
+     ],
+     "correct": 1
+    }
+   ]
+  },
+  {
+   "id": "class-kanji-l17-18",
+   "title": "漢字テスト L17-18",
+   "title_en": "Kanji Test L17-18",
+   "questions": [
+    {
+     "id": "class-kanji-l17-18-01",
+     "question": "01）なぜこの解答（かいとう）になるのか、いくら［かんがえて］もわからない。",
+     "question_en": "No matter how much I think about why this is the answer, I still do not understand.",
+     "options": [
+      "老えて",
+      "考えて",
+      "者えて",
+      "孝えて"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-kanji-l17-18-02",
+     "question": "02）今朝の温度は今年の［さいてい］温度だった。",
+     "question_en": "This morning’s temperature was the lowest of the year.",
+     "options": [
+      "最紙",
+      "最底",
+      "最高",
+      "最低"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-kanji-l17-18-03",
+     "question": "03）道を渡（わた）るときは、［さゆう］をよく見てから渡ってください。",
+     "question_en": "When crossing the road, look carefully left and right before you cross.",
+     "options": [
+      "在右",
+      "左石",
+      "右左",
+      "左右"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-kanji-l17-18-04",
+     "question": "04）この商品の［とくしょく］は５つあります。",
+     "question_en": "This product has five distinctive features.",
+     "options": [
+      "持邑",
+      "特巴",
+      "待色",
+      "特色"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-kanji-l17-18-05",
+     "question": "05）では、これから会議を［はじめます］。",
+     "question_en": "Well then, I will begin the meeting now.",
+     "options": [
+      "始めます",
+      "最めます",
+      "初めます",
+      "開めます"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-kanji-l17-18-06",
+     "question": "06）キムさんが一生懸命（いっしょうけんめい）アルバイトをしているのは、［しんがく］するためだ。",
+     "question_en": "Mr. Kim is working very hard at a part-time job in order to go on to higher education.",
+     "options": [
+      "進学",
+      "親学",
+      "寝学",
+      "新学"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-kanji-l17-18-07",
+     "question": "07）［ちょうしょく］をお取りいただいた後は、バスで美術館へ行きます。",
+     "question_en": "After you have had breakfast, we will take the bus to the art museum.",
+     "options": [
+      "注食",
+      "朝食",
+      "中食",
+      "昼食"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-kanji-l17-18-08",
+     "question": "08）この公園で野球をするのは［きんし］されています。",
+     "question_en": "Playing baseball in this park is prohibited.",
+     "options": [
+      "禁止",
+      "噤止",
+      "票止",
+      "林止"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-kanji-l17-18-09",
+     "question": "09）公園にいた［しょうじょ］にいつ来たか聞いた。",
+     "question_en": "I asked the girl who was in the park when she had arrived.",
+     "options": [
+      "性女",
+      "小女",
+      "少女",
+      "正女"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-kanji-l17-18-10",
+     "question": "10）午後４時まで［れんしゅう］を続けます。",
+     "question_en": "I will continue practicing until 4 p.m.",
+     "options": [
+      "諌習",
+      "錬習",
+      "練習",
+      "棟習"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-kanji-l17-18-11",
+     "question": "11）危（あぶ）ないですから、［ほどう］を歩いてください。",
+     "question_en": "It is dangerous, so please walk on the sidewalk.",
+     "options": [
+      "歩度",
+      "走通",
+      "走道",
+      "歩道"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-kanji-l17-18-12",
+     "question": "12）授業の前の日に、［よしゅう］をするのを忘れないでください。",
+     "question_en": "Do not forget to review the lesson the day before class.",
+     "options": [
+      "予皆",
+      "余習",
+      "予習",
+      "復習"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-kanji-l17-18-13",
+     "question": "01）都市に人口が［集中］しているのは、田舎から都市に移る人が多いからだ。",
+     "question_en": "The reason the population is concentrated in cities is that many people move from the countryside to the cities.",
+     "options": [
+      "しゅうじゅう",
+      "しゅっちゅう",
+      "しゅちゅう",
+      "しゅうちゅう"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-kanji-l17-18-14",
+     "question": "02）今日は、新しい雑誌の［発売日］だ。",
+     "question_en": "Today is the release date of the new magazine.",
+     "options": [
+      "はつばいび",
+      "はつうりび",
+      "はっばいび",
+      "はっぴょうび"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-kanji-l17-18-15",
+     "question": "03）本の［目次］は本の最初の方にある。",
+     "question_en": "The table of contents is near the beginning of the book.",
+     "options": [
+      "もくじ",
+      "めつぎ",
+      "もくつぎ",
+      "めじ"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-kanji-l17-18-16",
+     "question": "04）フランスの［首都］はどこですか。",
+     "question_en": "What is the capital of France?",
+     "options": [
+      "しゅっと",
+      "じゅうと",
+      "しゅと",
+      "しゅうと"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-kanji-l17-18-17",
+     "question": "05）サントスさんほどすばらしい［青年］はいない。",
+     "question_en": "There is no young man as wonderful as Mr. Santos.",
+     "options": [
+      "あおとし",
+      "しょうねん",
+      "せいじん",
+      "せいねん"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-kanji-l17-18-18",
+     "question": "06）先生になるために高校で［実習］をした。",
+     "question_en": "I did practical training at high school in order to become a teacher.",
+     "options": [
+      "じじゅう",
+      "じつしゅう",
+      "じっしゅう",
+      "じしゅう"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-kanji-l17-18-19",
+     "question": "07）生徒（せいと）の［父母］に集まってもらった。",
+     "question_en": "We had the students’ parents gather.",
+     "options": [
+      "ふぼ",
+      "ちちはは",
+      "ふうぼ",
+      "ぶも"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-kanji-l17-18-20",
+     "question": "08）どうして彼がここにいないのか［不思議］だ",
+     "question_en": "It is mysterious why he is not here.",
+     "options": [
+      "ふしぎ",
+      "ふうしぎ",
+      "ぶしぎ",
+      "ふうじぎ"
+     ],
+     "correct": 1
+    }
+   ]
+  },
+  {
+   "id": "class-grammar-d-e",
+   "title": "文法テスト D-E",
+   "title_en": "Grammar Test D-E",
+   "questions": [
+    {
+     "id": "class-grammar-d-e-01",
+     "question": "けがが早く治る（　　　）、薬を飲んだり、クリームを塗（ぬ）ったりしています。",
+     "question_en": "I am taking medicine and applying cream so that the injury heals quickly.",
+     "options": [
+      "ために",
+      "ようだ",
+      "ような",
+      "ように"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-grammar-d-e-02",
+     "question": "１個（こ）買ったら3000円で、10個（こ）買ったら１割引（わりびき）だから、27,000円になる（　　　）。",
+     "question_en": "If you buy one, it is 3,000 yen, and if you buy ten, they are 10% off, so that means it comes to 27,000 yen.",
+     "options": [
+      "わけがない",
+      "わけですね",
+      "わけにはいかない",
+      "わけではない"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-grammar-d-e-03",
+     "question": "いつか必（かなら）ず日本へ来れます（　　　）お祈（おいの）りします。",
+     "question_en": "I pray that I will be able to come to Japan someday.",
+     "options": [
+      "ような",
+      "ように",
+      "ようだ",
+      "ために"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-grammar-d-e-04",
+     "question": "私の歩き方はまるで父の（　　　）と母が言った。",
+     "question_en": "Mother said that the way I walk is just like Father’s.",
+     "options": [
+      "ように",
+      "わけだ",
+      "ようだ",
+      "ような"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-grammar-d-e-05",
+     "question": "試験（しけん）を受（う）ける（　　　）、お金を払（はら）って、書類を出した。",
+     "question_en": "I paid the fee and submitted the paperwork in order to take the exam.",
+     "options": [
+      "かのように",
+      "ようだ",
+      "ために",
+      "ように"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-grammar-d-e-06",
+     "question": "日本人（　　　）、何年も英語を勉強していても、英語が話せない人もいる。",
+     "question_en": "Like Japanese people, some people cannot speak English even after studying it for years.",
+     "options": [
+      "のような",
+      "のように",
+      "さえ",
+      "にとって"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-grammar-d-e-07",
+     "question": "入院する（　　　）。ちょっと検査（けんさ）をするだけなんです。",
+     "question_en": "It does not mean that I am going to be hospitalized. I am only having a quick examination.",
+     "options": [
+      "はずです",
+      "わけだ",
+      "というわけなんです",
+      "わけではありません"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-grammar-d-e-08",
+     "question": "本当はしたくないけど、父が「しろ」と言うので（　　　）。",
+     "question_en": "I do not really want to, but since my father tells me to do it, I have no choice but to do it.",
+     "options": [
+      "するわけにはいかない",
+      "するというわけだ",
+      "しないわけにはいかない",
+      "することはない"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-grammar-d-e-09",
+     "question": "先週、ニュースでも言っていた（　　　）、今日から首相（しゅしょう）はヨーロッパへ行きます。",
+     "question_en": "As they said on the news last week, the prime minister is going to Europe starting today.",
+     "options": [
+      "ようだ",
+      "かのように",
+      "ために",
+      "ように"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-grammar-d-e-10",
+     "question": "日本へ行ったら必ず毎日電話する（　　　）、両親に言われた。",
+     "question_en": "My parents told me to be sure to call every day when I go to Japan.",
+     "options": [
+      "ようにと",
+      "ために",
+      "ような",
+      "わけだと"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-grammar-d-e-11",
+     "question": "あの家はだれも住んでいないから、電気がつく（　　　）",
+     "question_en": "Nobody lives in that house, so there is no way the lights are on.",
+     "options": [
+      "というわけではない",
+      "ようだ",
+      "わけだ",
+      "わけがない"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-grammar-d-e-12",
+     "question": "このバッグは小さく畳（たた）める（　　　）。",
+     "question_en": "This bag is designed so that it can be folded up small.",
+     "options": [
+      "ようになっている",
+      "ためになっている",
+      "ようにする",
+      "ようにしている"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-grammar-d-e-13",
+     "question": "さっきからお腹が痛（いた）いので、どうも古い牛乳（ぎゅうにゅう）を飲んだ（　　　）。",
+     "question_en": "My stomach has been hurting for a while, so it seems I drank some old milk.",
+     "options": [
+      "わけだ",
+      "ようになっている",
+      "ようにしている",
+      "ようだ"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-grammar-d-e-14",
+     "question": "屋上でパーティーが（　　　　）ように、テーブルやいすを運んだ。",
+     "question_en": "I carried tables and chairs so that a party could be held on the rooftop.",
+     "options": [
+      "する",
+      "できた",
+      "できる",
+      "している"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-grammar-d-e-15",
+     "question": "空港まで30分なので、今、家を出れば、時間に（　　　　）というわけだ。",
+     "question_en": "The airport is 30 minutes away, so if I leave home now, that means I will make it on time.",
+     "options": [
+      "間に合う",
+      "間に合うことだ",
+      "間に合うことにした",
+      "間に合っている"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-grammar-d-e-16",
+     "question": "子どもにそんな難（むずか）しい話をしても（　　　　）わけがないよ。",
+     "question_en": "There is no way a child would understand something that difficult, even if you told them.",
+     "options": [
+      "わかる",
+      "わかるの",
+      "わかった",
+      "わからない"
+     ],
+     "correct": 1
+    },
+    {
+     "id": "class-grammar-d-e-17",
+     "question": "祖母（そぼ）でも（　　　　）ケーキを作った。",
+     "question_en": "I made a cake that even my grandmother could eat.",
+     "options": [
+      "食べるようにする",
+      "食べられそうな",
+      "食べるようにしている",
+      "食べるかのような"
+     ],
+     "correct": 2
+    },
+    {
+     "id": "class-grammar-d-e-18",
+     "question": "一生懸命（いっしょうけんめい）がんばって日本の会社に入れたのだから、すぐ国に（　　　　）わけにはいかない。",
+     "question_en": "Since I worked so hard to get into a Japanese company, I cannot just return to my country right away.",
+     "options": [
+      "帰らない",
+      "帰れる",
+      "帰った",
+      "帰る"
+     ],
+     "correct": 4
+    },
+    {
+     "id": "class-grammar-d-e-19",
+     "question": "ぼくが日本で初めて地震（じしん）を経験（けいけん）した時、日本人は何も（　　　　）ように仕事を続（つづ）けていた。",
+     "question_en": "When I experienced an earthquake for the first time in Japan, Japanese people continued working as if nothing had happened.",
+     "options": [
+      "しないわけにはいかない",
+      "あったかの",
+      "なかったかの",
+      "しない"
+     ],
+     "correct": 3
+    },
+    {
+     "id": "class-grammar-d-e-20",
+     "question": "自分でちゃんと（　　　）わけではないですが、インターネットの記事でその話を知りました。",
+     "question_en": "I did not research it properly myself, but I learned about it from an article on the internet.",
+     "options": [
+      "調（しら）べるの",
+      "調（しら）べる",
+      "調（しら）べた",
+      "調（しら）べない"
+     ],
+     "correct": 3
     }
    ]
   }

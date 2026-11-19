@@ -21,7 +21,7 @@ async function loadClassTests() {
   if (classTestsCache || classTestsLoading) return;
   classTestsLoading = true;
   try {
-    const res = await fetch('data/class_tests.json');
+    const res = await fetch('data/class_tests.json?v=20261119-class-tests');
     if (res.ok) {
       const data = await res.json();
       classTestsCache = data.tests || [];

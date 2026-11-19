@@ -27,7 +27,7 @@ import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
   exitTestToHub, filterTestCategory, getAllAvailableTests
-} from './test.js';
+} from './test.js?v=20261119-class-tests';
 
 // New Foundation & Memory Engine Modules (WP-0 to WP-5)
 import './backup.js';
