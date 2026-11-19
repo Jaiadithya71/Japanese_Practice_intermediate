@@ -5,7 +5,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { getAllAvailableTests } from './test.js';
+import { getAllAvailableTests } from './test.js?v=20261119-class-tests';
 
 export const CLASS_STORAGE_KEY = 'nihongo_intermediate_class_progress_v1';
 

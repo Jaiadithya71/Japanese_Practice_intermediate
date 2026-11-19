@@ -9,7 +9,7 @@ import { state } from './state.js';
 import { peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js?v=20261116-lag1';
 import { startStudy, renderCard, startDueReview } from './study.js?v=20261119-review-again';
 import { grammarSections } from './grammar-lessons.js';
-import { getAllAvailableTests, startTestSession } from './test.js';
+import { getAllAvailableTests, startTestSession } from './test.js?v=20261119-class-tests';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
 import { renderHeatmapGridHtml } from './today.js';

@@ -11,7 +11,7 @@ import { renderChapterChips, renderVocabList, updateHardWordsView } from './voca
 import { renderReadingView } from './reader.js';
 import { renderGrammarView } from './grammar.js';
 import { renderKanjiView } from './kanji.js?v=20261116-lag1';
-import { initTestHub } from './test.js';
+import { initTestHub } from './test.js?v=20261119-class-tests';
 import { renderClassTrackHTML } from './class-curriculum.js';
 
 // Safe UI state initialization

@@ -10,7 +10,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { startTestSession } from './test.js';
+import { startTestSession } from './test.js?v=20261119-class-tests';
 import { beginGistReviewSession } from './gist-sync.js?v=20261116-lag1';
 import { getKanjiStatus, peekKanjiStatus, toggleKanjiHard, updateItemStats, getItemStatus, peekItemStatus } from './srs.js?v=20261116-lag1';
 import { startStudy, renderCard } from './study.js?v=20261119-review-again';
