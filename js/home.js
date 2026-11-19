@@ -7,7 +7,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 
 import { state } from './state.js';
 import { peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js?v=20261116-lag1';
-import { startStudy, renderCard, startDueReview } from './study.js?v=4.6';
+import { startStudy, renderCard, startDueReview } from './study.js?v=20261119-review-again';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';

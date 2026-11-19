@@ -30,7 +30,8 @@ import {
   createSnapshot
 } from './backup.js';
 import { showView } from './navigation.js';
-import { renderCard } from './study.js?v=4.6';
+import { renderCard } from './study.js?v=20261119-review-again';
+import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold } from './review-again-policy.js?v=20261119-review-again';
 
 // Storage Keys
 export const SETTINGS_STORAGE_KEY = 'nihongo_intermediate_settings_v1';
@@ -43,7 +44,8 @@ export const DEFAULT_SETTINGS = {
   timeBudget: 40,
   furigana: true,
   readingFontScale: 1.0,
-  targetReadingCpm: 330
+  targetReadingCpm: 330,
+  reviewAgainAccuracyThreshold: DEFAULT_REVIEW_AGAIN_THRESHOLD
 };
 
 // Pace Profile Quotas (doc 02 §6.3)
@@ -942,6 +944,7 @@ export function renderSettingsSegment() {
   const examDate = settings.examDate || EXAM_DATE_ISO || '2026-12-13';
   const profileKey = (settings.profile || 'standard').toLowerCase();
   const studyDays = settings.studyDays !== undefined ? settings.studyDays : 6;
+  const reviewAgainThreshold = normalizeReviewAgainThreshold(settings.reviewAgainAccuracyThreshold);
 
   // Compute countdown
   const now = Date.now();
@@ -1015,6 +1018,21 @@ export function renderSettingsSegment() {
         </div>
       </div>
 
+      <!-- Review-again accuracy threshold -->
+      <div class="stat-card setting-section-card">
+        <div class="setting-title-row">
+          <i class="fa-solid fa-bullseye" style="color: #f59e0b;"></i>
+          <div>
+            <h3>Review Again Threshold</h3>
+            <p>Below this accuracy after a due-review round, only Hard or Again words return in the immediate retry round.</p>
+          </div>
+        </div>
+        <label class="review-threshold-control" for="me-setting-review-again-threshold">
+          <span>Accuracy threshold</span>
+          <span><input type="number" id="me-setting-review-again-threshold" min="0" max="100" step="1" value="${reviewAgainThreshold}" onchange="window.onReviewAgainThresholdChange(this.value)"> %</span>
+        </label>
+      </div>
+
       <!-- 4. Data Management Actions -->
       <div class="stat-card setting-section-card">
         <div class="setting-title-row">
@@ -1070,6 +1088,18 @@ export function onPaceProfileChange(profileKey) {
 
 export function onStudyDaysChange(days) {
   saveSettings({ studyDays: parseInt(days, 10) || 6 });
+}
+
+export function onReviewAgainThresholdChange(value) {
+  const parsed = Number.parseInt(value, 10);
+  if (!Number.isFinite(parsed)) {
+    const current = loadSettings().reviewAgainAccuracyThreshold;
+    renderSettingsSegment();
+    return current;
+  }
+  const threshold = normalizeReviewAgainThreshold(parsed);
+  saveSettings({ reviewAgainAccuracyThreshold: threshold });
+  return threshold;
 }
 
 export function exportBackupJson() {
@@ -1826,6 +1856,7 @@ if (typeof window !== 'undefined') {
   window.onExamDateChange = onExamDateChange;
   window.onPaceProfileChange = onPaceProfileChange;
   window.onStudyDaysChange = onStudyDaysChange;
+  window.onReviewAgainThresholdChange = onReviewAgainThresholdChange;
   window.exportBackupJson = exportBackupJson;
   window.triggerImportBackup = triggerImportBackup;
   window.handleBackupFileSelected = handleBackupFileSelected;

@@ -234,6 +234,13 @@
 }
 
 
+.review-threshold-note {
+  margin: 0;
+  max-width: 36rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
 /* Summary score ring (elementary-style): the success rate as the centerpiece */
 .summary-score-ring {
   background: var(--bg3);

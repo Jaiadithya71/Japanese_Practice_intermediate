@@ -1,4 +1,4 @@
-import { setHomeReviewPhase } from './home.js?v=20261117-ovl2';
+import { setHomeReviewPhase } from './home.js?v=20261119-review-again';
 window.setHomeReviewPhase = setHomeReviewPhase;
 /* =======================================================
    NIHONGO INTERMEDIATE — main.js
@@ -9,10 +9,10 @@ import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js?v=20261117-ovl1';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js?v=20261116-lag1';
 import { showView } from './navigation.js';
-import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=4.6';
-import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261116-lag1';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261117-ovl2';
-import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js';
+import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, repeatDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=20261119-review-again';
+import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261119-review-again';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261119-review-again';
+import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js?v=20261119-review-again';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js?v=20261116-lag1';
 import {
   renderKanjiView, setKanjiTab, setKanjiPart, setKanjiLesson, setKanjiFilter, onKanjiSearch,
@@ -22,7 +22,7 @@ import {
   setKanjiStudyDirection, selectKanjiLesson, drillKanjiSelected,
   startKanjiQuickQuiz, renderKanjiQuizCard, answerKanjiQuizOption,
   nextKanjiQuizCard, prevKanjiQuizCard, toggleKanjiAutoNext
-} from './kanji.js?v=20261116-lag1';
+} from './kanji.js?v=20261119-review-again';
 import { startKanjiRunner } from './kanji-runner.js';
 import {
   initTestHub, startTestSession, submitQuestionAnswer, advanceTestQuestion,
@@ -73,6 +73,7 @@ window.learnGotIt = learnGotIt;
 window.previousStudyCard = previousStudyCard;
 window.nextStudyCard = nextStudyCard;
 window.startDueReview = startDueReview;
+window.repeatDueReview = repeatDueReview;
 window.startOmniReview = startOmniReview;
 window.flipCard = flipCard;
 window.gradeCard = gradeCard;

@@ -101,5 +101,10 @@ export const state = {
   omniDueFilter: 'all',  // 'all' | 'vocab' | 'reading'
 
   // Due Review Settings
-  dueBatchSize: '20'
+  dueBatchSize: '20',
+  dueReviewOriginalItems: [],
+  dueReviewActiveItems: [],
+  dueReviewRetryItems: [],
+  dueReviewThresholdResult: null,
+  dueReviewPillar: null
 };

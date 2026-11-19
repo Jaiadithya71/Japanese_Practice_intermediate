@@ -8,6 +8,8 @@ import { state } from './state.js';
 import { kanjiReviewPlan } from './kanji-review-options.js';
 import { renderVocabularyKanjiBreakdown } from './vocab-kanji-breakdown.js';
 import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
+import { snapshotDueReviewItems, repeatDueReviewItems } from './due-review-session.js?v=20261119-review-again';
+import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold, selectReviewAgainItems } from './review-again-policy.js?v=20261119-review-again';
 
 const studyHistory = createStudyHistory();
 let reviewPhase = 'test';
@@ -48,6 +50,11 @@ import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=2
 export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'home') {
   state.homeRunQueue = [];
   state.homeRunBatchRun = false;
+  state.dueReviewOriginalItems = [];
+  state.dueReviewActiveItems = [];
+  state.dueReviewRetryItems = [];
+  state.dueReviewThresholdResult = null;
+  state.dueReviewPillar = null;
   state.studyMode = mode;
   state.studyIsDrillHard = isDrillHard;
   state.drillOrigin = origin;
@@ -121,12 +128,22 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null, optio
     return;
   }
 
+  state.dueReviewOriginalItems = snapshotDueReviewItems(pool);
+  state.dueReviewRetryItems = [];
+  state.dueReviewThresholdResult = null;
+  state.dueReviewPillar = pillarFilter;
+  startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), pillarFilter);
+}
+
+function startDueReviewPool(pool, pillarFilter) {
   beginGistReviewSession();
   state.studyMode = 'flashcard';
   state.studyIsDrillHard = false;
   state.learnUnit = null;
   state.isDueReviewMode = true;
   state.drillOrigin = pillarFilter === 'grammar' ? 'grammar' : 'home';
+  state.omniDueFilter = pillarFilter;
+  state.dueReviewActiveItems = snapshotDueReviewItems(pool);
   state.sessionItems = pool;
   state.sessionIdx = 0;
   state.sessionRight = 0;
@@ -137,6 +154,55 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null, optio
 
   showView('study');
   renderCard();
+}
+
+// Repeat the captured due-review queue, excluding Again copies added during the prior run.
+export function repeatDueReview() {
+  const original = Array.isArray(state.dueReviewOriginalItems) ? state.dueReviewOriginalItems : [];
+  const retry = state.dueReviewThresholdResult?.belowThreshold
+    ? (Array.isArray(state.dueReviewRetryItems) ? state.dueReviewRetryItems : [])
+    : original;
+  if (!retry.length) {
+    alert(state.dueReviewThresholdResult?.belowThreshold
+      ? 'There are no Hard or Again words left to retry.'
+      : 'This due-review session can no longer be repeated.');
+    return;
+  }
+  startDueReviewPool(repeatDueReviewItems(retry), state.dueReviewPillar || 'all');
+}
+
+function currentReviewAgainThreshold() {
+  let value = state.settings?.reviewAgainAccuracyThreshold;
+  try {
+    const settings = JSON.parse(localStorage.getItem('nihongo_intermediate_settings_v1') || '{}');
+    if (settings && settings.reviewAgainAccuracyThreshold !== undefined) value = settings.reviewAgainAccuracyThreshold;
+  } catch (_) {}
+  return normalizeReviewAgainThreshold(value === undefined ? DEFAULT_REVIEW_AGAIN_THRESHOLD : value);
+}
+
+function applyReviewAgainThreshold(accuracyPercent) {
+  if (!state.isDueReviewMode || state.dueReviewPillar !== 'vocab' || !state.dueReviewOriginalItems?.length) return null;
+  if (!Number.isFinite(accuracyPercent)) return null;
+  const threshold = currentReviewAgainThreshold();
+  const gradedEntries = (state.sessionItems || []).map(item => ({
+    key: formatItemKey(item),
+    grade: studyHistory.get(state.sessionItems, item)?.grade
+  }));
+  const selection = selectReviewAgainItems(
+    state.dueReviewActiveItems,
+    gradedEntries,
+    accuracyPercent,
+    threshold,
+    formatItemKey
+  );
+  state.dueReviewRetryItems = selection.items;
+  state.dueReviewThresholdResult = {
+    accuracyPercent,
+    threshold,
+    belowThreshold: selection.belowThreshold,
+    retryCount: selection.items.length
+  };
+  return state.dueReviewThresholdResult;
 }
 
 const seenIt = st => !!st && (st.reps > 0 || st.correct > 0 || st.incorrect > 0);
@@ -968,6 +1034,7 @@ function renderStudySummary() {
   const answered = state.sessionTotalAnswered || 0;
   const correct = state.sessionRight || 0;
   const pct = answered ? Math.round((correct / answered) * 100) : 0;
+  const thresholdResult = applyReviewAgainThreshold(answered ? pct : null);
   const initialTotal = state.sessionTotalInitial || state.sessionTotal || state.sessionItems.length;
   const hasKanjiOrVocab = state.drillOrigin === 'kanji' || state.sessionItems.some(item =>
     item.type === 'kanji' || item.type === 'kanji_word' || item.type === 'vocab' || item.book === 'vocab'
@@ -980,7 +1047,7 @@ function renderStudySummary() {
 
   const skipRow = document.getElementById('study-skip-row');
   if (skipRow) skipRow.style.display = 'none';
-  const again = state.drillOrigin === 'grammar' ? (state.isDueReviewMode ? `startDueReview('grammar')` : 'startGrammarAgain()') : state.studyMode === 'kanji_quiz'
+  const again = state.isDueReviewMode ? 'repeatDueReview()' : state.drillOrigin === 'grammar' ? `startGrammarAgain()` : state.studyMode === 'kanji_quiz'
     ? 'startKanjiQuickQuiz()'
     : state.learnUnit
       ? `startLearnNew('${state.learnUnit}')`
@@ -1025,6 +1092,11 @@ function renderStudySummary() {
   const summaryLine = browsedOnly
     ? `You viewed all ${initialTotal} items. Nothing was graded, so your scores are unchanged.`
     : `You completed all ${initialTotal} items (${answered} reviews total).`;
+  const thresholdNote = thresholdResult
+    ? thresholdResult.belowThreshold
+      ? `<p class="review-threshold-note">Below your ${thresholdResult.threshold}% threshold. Review Again will retry only ${thresholdResult.retryCount} Hard/Again word${thresholdResult.retryCount === 1 ? '' : 's'}. Normal review dates are unchanged.</p>`
+      : `<p class="review-threshold-note">You met your ${thresholdResult.threshold}% threshold. Normal review dates are unchanged. Review Again replays this due-review queue.</p>`
+    : '';
   const statsRow = browsedOnly ? `
       <div class="summary-stats-row">
         <div class="summary-stat-box">
@@ -1053,6 +1125,7 @@ function renderStudySummary() {
       <i class="fa-solid ${summaryIcon} summary-trophy"></i>
       <h2>${summaryTitle}</h2>${scoreRing}
       <p style="color: var(--text-muted); margin: 0;">${summaryLine}</p>
+      ${thresholdNote}
 ${statsRow}
 
       <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap:wrap; justify-content:center;">

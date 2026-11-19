@@ -847,6 +847,29 @@
   flex-wrap: wrap;
 }
 
+.review-threshold-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+.review-threshold-control input {
+  width: 5rem;
+  background: #0b0f19;
+  border: 1.5px solid #334155;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.55rem 0.65rem;
+  font: inherit;
+  text-align: right;
+}
+.review-threshold-control input:focus {
+  outline: none;
+  border-color: var(--accent, #d4af6a);
+}
+
 .me-date-input {
   background: #0b0f19;
   border: 1.5px solid #334155;
