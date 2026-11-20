@@ -12,6 +12,7 @@ import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-pha
 import { snapshotDueReviewItems, repeatDueReviewItems } from './due-review-session.js?v=20261119-review-again';
 import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold, selectReviewAgainItems } from './review-again-policy.js?v=20261119-review-again';
 import { loadSavedReviewAgainByLesson, saveReviewAgainForLesson, clearReviewAgainForLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
+import { persistAbandonedVocabRetries, resetStudySessionState } from './abandoned-review-retries.js?v=20261120-abandon-resume';
 
 const studyHistory = createStudyHistory();
 let reviewPhase = 'test';
@@ -1199,9 +1200,30 @@ ${statsRow}
   });
 }
 
+function saveAbandonedReviewRetries() {
+  persistAbandonedVocabRetries(
+    state,
+    studyHistory,
+    formatItemKey,
+    loadSavedReviewAgainByLesson,
+    saveReviewAgainForLesson,
+    clearReviewAgainForLesson
+  );
+}
+
+function resetStudySessionAfterExit() {
+  resetStudySessionState(state);
+  phaseItem = null;
+  phaseIndex = -1;
+  reviewPhase = 'test';
+}
+
 export function exitStudy() {
+  const returnView = state.drillOrigin || 'home';
+  saveAbandonedReviewRetries();
   endGistReviewSession();
-  showView(state.drillOrigin || 'home');
+  resetStudySessionAfterExit();
+  showView(returnView);
   resetStudyViewHTML();
 }
 
