@@ -13,6 +13,7 @@ import { renderGrammarView } from './grammar.js';
 import { renderKanjiView } from './kanji.js?v=20261116-lag1';
 import { initTestHub } from './test.js?v=20261119-class-tests';
 import { renderClassTrackHTML } from './class-curriculum.js';
+import { renderListening } from './listening.js?v=20261120-listening-4';
 
 // Safe UI state initialization
 if (!state.ui) {
@@ -42,6 +43,7 @@ export const VIEW_TO_TAB = {
   class: 'today',
   'class-track': 'today',
   test: 'today',
+  listen: 'listen',
   me: 'more',
   'hard-words': 'today'
 };
@@ -193,6 +195,10 @@ export function showView(viewId) {
   } else if (viewId === 'test') {
     const vTest = document.getElementById('view-test');
     if (vTest) vTest.classList.add('active');
+  } else if (viewId === 'listen') {
+    const vListen = document.getElementById('view-listen');
+    if (vListen) vListen.classList.add('active');
+    renderListening();
   } else if (viewId === 'me') {
     const vMe = document.getElementById('view-me');
     if (vMe) vMe.classList.add('active');

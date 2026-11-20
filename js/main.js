@@ -8,7 +8,7 @@ window.setHomeReviewPhase = setHomeReviewPhase;
 import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js?v=20261117-ovl1';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js?v=20261116-lag1';
-import { showView } from './navigation.js';
+import { showView } from './navigation.js?v=20261120-listening-2';
 import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, repeatDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=20261120-count-clarity';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261119-review-again';
 import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261120-review-again-by-lesson';
@@ -34,6 +34,7 @@ import './backup.js';
 import './time.js';
 import './daylog.js';
 import { buildIndexes } from './indexes.js';
+import { initListening } from './listening.js?v=20261120-listening-2';
 import { initUpdateCheck } from './update-check.js?v=20261106-1';
 import './session.js';
 import './planner.js';
@@ -179,8 +180,22 @@ window.addEventListener('keydown', (e) => {
 // App Initialization
 window.__n3CurrentView = () => state.currentView;
 
+async function prepareOfflineShell() {
+  if (!('serviceWorker' in navigator)) return;
+  try {
+    await navigator.serviceWorker.register('./sw.js?v=20261120-listening', { scope: './' });
+    await Promise.race([
+      navigator.serviceWorker.ready,
+      new Promise(resolve => setTimeout(resolve, 8000))
+    ]);
+  } catch (error) {
+    console.warn('Offline shell setup did not finish:', error);
+  }
+}
+
 async function initApp() {
   console.log('Initializing Nihongo Intermediate 5-Pillar Suite...');
+  await prepareOfflineShell();
   loadStats();
   
   const loadEl = document.getElementById('dash-loading-status');
@@ -188,6 +203,7 @@ async function initApp() {
 
   await loadAllActiveBooks();
   window.N3Indexes = buildIndexes(state.db);
+  await initListening();
   
   if (loadEl) {
     loadEl.textContent = '';

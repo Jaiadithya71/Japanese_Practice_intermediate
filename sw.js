@@ -1,0 +1,166 @@
+// Offline shell for the N3 listening pack. Bump the cache name on an incompatible release.
+const CACHE_NAME = 'n3-listening-shell-v4';
+const ASSETS = [
+  "./",
+  "./sw.js",
+  "./apple-touch-icon.png",
+  "./css/base.css",
+  "./css/book-platform.css",
+  "./css/class-track.css",
+  "./css/grammar-star.css",
+  "./css/home-mobile.css",
+  "./css/home.css",
+  "./css/kanji.css",
+  "./css/listening.css",
+  "./css/me-tab.css",
+  "./css/mobile.css",
+  "./css/navigation.css",
+  "./css/premium.css",
+  "./css/reader.css",
+  "./css/responsive.css",
+  "./css/srs-home.css",
+  "./css/study-mobile.css",
+  "./css/study.css",
+  "./css/sync.css",
+  "./css/test.css",
+  "./css/today.css",
+  "./css/variables.css",
+  "./css/vocab.css",
+  "./data/class_tests.json",
+  "./data/clusters.json",
+  "./data/dict-extended.json",
+  "./data/drill_tags.json",
+  "./data/grammar/clusters.json",
+  "./data/grammar/drill_tags.json",
+  "./data/grammar/grammar_index.json",
+  "./data/grammar/intro_and_guide.json",
+  "./data/grammar/mock_test.json",
+  "./data/grammar/part1_sec1_to_6.json",
+  "./data/grammar/part1_sec7_to_12.json",
+  "./data/grammar/part2_sentence_grammar2.json",
+  "./data/grammar/part3_text_grammar.json",
+  "./data/kanji/character_shapes.js",
+  "./data/kanji/exercise_translations.json",
+  "./data/kanji/exercises_part1.json",
+  "./data/kanji/exercises_part2.json",
+  "./data/kanji/exercises_part3.json",
+  "./data/kanji/exercises_part4.json",
+  "./data/kanji/exercises_part5.json",
+  "./data/kanji/kanji_components.js",
+  "./data/kanji/kanji_mock_tests.json",
+  "./data/kanji/part1_lessons_01_05.json",
+  "./data/kanji/part2_lessons_06_10.json",
+  "./data/kanji/part3_lessons_11_15.json",
+  "./data/kanji/part4_lessons_16_20.json",
+  "./data/kanji/part5_lessons_21_25.json",
+  "./data/kanji/review_300_n4_n5.json",
+  "./data/kanji/special_readings.json",
+  "./data/kanji/vocab_character_meanings.js",
+  "./data/kanji/word_contexts.json",
+  "./data/reading-lookup.js",
+  "./data/reading/part1_foundation.json",
+  "./data/reading/part2_short_1.json",
+  "./data/reading/part2_short_2.json",
+  "./data/reading/part2_short_3.json",
+  "./data/reading/part4_long_info.json",
+  "./data/reading/part4_short_medium.json",
+  "./data/reading/passages.json",
+  "./data/vocab_lesson_overlaps.json",
+  "./data/vocab_tiers.json",
+  "./data/vocabulary.json",
+  "./data/vocabulary/example_translations.json",
+  "./data/vocabulary/part1_topics_ch01_05.json",
+  "./data/vocabulary/part1_topics_ch06_10.json",
+  "./data/vocabulary/part1_topics_ch11_15.json",
+  "./data/vocabulary/part1_topics_ch16_21.json",
+  "./data/vocabulary/part1_topics_ch22_30_reading.json",
+  "./data/vocabulary/part1_topics_ch31_55_kanji.json",
+  "./data/vocabulary/part2_characteristics_ch01_04.json",
+  "./data/vocabulary/part2_characteristics_ch05_08.json",
+  "./data/vocabulary/part3_mock_exams.json",
+  "./data/vocabulary/vocab_tiers.json",
+  "./data/word_contexts.json",
+  "./favicon.png",
+  "./icon-192.png",
+  "./icon-512.png",
+  "./index.html",
+  "./js/activity-detail.js",
+  "./js/backup.js",
+  "./js/book-platform.js",
+  "./js/class-curriculum.js",
+  "./js/config.js",
+  "./js/daily.js",
+  "./js/data-loader.js",
+  "./js/daylog.js",
+  "./js/distractors.js",
+  "./js/due-review-session.js",
+  "./js/gist-sync.js",
+  "./js/grammar-card-data.js",
+  "./js/grammar-furigana.js",
+  "./js/grammar-lessons.js",
+  "./js/grammar-srs.js",
+  "./js/grammar.js",
+  "./js/home-srs.js",
+  "./js/home.js",
+  "./js/indexes.js",
+  "./js/kanji-review-options.js",
+  "./js/kanji-runner.js",
+  "./js/kanji-words.js",
+  "./js/kanji.js",
+  "./js/listening.js",
+  "./js/main.js",
+  "./js/me-tab.js",
+  "./js/navigation.js",
+  "./js/pillar-banner.js",
+  "./js/planner.js",
+  "./js/pull-refresh.js",
+  "./js/reader.js",
+  "./js/reading-lookup.js",
+  "./js/reading-times.js",
+  "./js/reading-types.js",
+  "./js/review-again-by-lesson.js",
+  "./js/review-again-policy.js",
+  "./js/review-phase.js",
+  "./js/session.js",
+  "./js/srs.js",
+  "./js/state.js",
+  "./js/stats-codec.js",
+  "./js/study-history.js",
+  "./js/study-labels.js",
+  "./js/study-summary-metrics.js",
+  "./js/study.js",
+  "./js/test.js",
+  "./js/time.js",
+  "./js/today.js",
+  "./js/update-check.js",
+  "./js/vocab-browser.js",
+  "./js/vocab-kanji-breakdown.js",
+  "./manifest.webmanifest"
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('n3-listening-shell-') && key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim()));
+});
+
+self.addEventListener('fetch', event => {
+  const request = event.request;
+  if (request.method !== 'GET') return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    try {
+      const response = await fetch(request);
+      if (response && response.ok && response.type !== 'opaque') await cache.put(request, response.clone());
+      return response;
+    } catch (error) {
+      const cached = await cache.match(request, { ignoreSearch: true });
+      if (cached) return cached;
+      throw error;
+    }
+  })());
+});

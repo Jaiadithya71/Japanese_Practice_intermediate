@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="css/home-mobile.css?v=2" />
   <link rel="stylesheet" href="css/study-mobile.css?v=20261120-n3-retry-local" />
   <link rel="stylesheet" href="css/premium.css?v=1" />
+  <link rel="stylesheet" href="css/listening.css?v=20261120-kokoro-e" />
 </head>
 <body>
 
@@ -67,6 +68,11 @@
       <button class="nav-btn" data-view="kanji" data-tab="kanji" onclick="showView('kanji')">
         <i class="fa-solid fa-shapes"></i>
         <span>2. 漢字 (Kanji)</span>
+      </button>
+
+      <button class="nav-btn" data-view="listen" data-tab="listen" onclick="showView('listen')">
+        <i class="fa-solid fa-headphones"></i>
+        <span>Listening</span>
       </button>
 
       <!-- Less-used study areas are grouped in the More sheet. -->
@@ -1151,6 +1157,50 @@
       </div>
     </section>
 
+
+    <!-- ==============================================
+         TAB: LISTENING
+         ============================================== -->
+    <section id="view-listen" class="view">
+      <header class="listen-header">
+        <div>
+          <h1><i class="fa-solid fa-headphones" style="color:var(--accent);margin-right:.35rem"></i>Listening</h1>
+        </div>
+        <span class="listen-pack-pill"><i class="fa-solid fa-microphone-lines"></i> Voice B · Kokoro jm_kumo + af_heart</span>
+      </header>
+      <div class="listen-layout">
+        <section class="listen-panel" aria-labelledby="listen-lessons-heading">
+          <div class="listen-panel-head">
+            <div class="listen-actions">
+              <button type="button" onclick="window.N3Listening.selectAll()">Select all</button>
+              <button type="button" onclick="window.N3Listening.clearSelection()">Clear</button>
+            </div>
+          </div>
+          <div id="listen-lesson-grid" class="listen-lesson-grid" aria-label="Listening lessons"></div>
+          <div class="listen-picker-foot">
+            <span id="listen-selected-count">0 lessons selected</span>
+            <button type="button" class="listen-control listen-picker-start" onclick="window.N3Listening.startPlayback()"><i class="fa-solid fa-play"></i> Start</button>
+          </div>
+        </section>
+        <section class="listen-panel listen-player" aria-label="Audio player">
+          <h2 id="listen-current-term" class="listen-current-term">Choose lessons</h2>
+          <p id="listen-current-meaning" class="listen-current-meaning"></p>
+          <p id="listen-current-lesson" class="listen-current-lesson">No lesson selected</p>
+          <input id="listen-progress" class="listen-progress" type="range" min="0" max="100" value="0" aria-label="Audio position" oninput="window.N3Listening.seek(this.value)" />
+          <div class="listen-progress-label"><span id="listen-time-current">0:00</span><span id="listen-time-total">0:00</span></div>
+          <div class="listen-transport">
+            <button type="button" id="listen-previous" aria-label="Previous word" onclick="window.N3Listening.previous()"><i class="fa-solid fa-backward-step"></i></button>
+            <button type="button" id="listen-toggle" class="listen-play" onclick="window.N3Listening.togglePlayback()"><i class="fa-solid fa-play"></i></button>
+            <button type="button" id="listen-next" aria-label="Next word" onclick="window.N3Listening.next()"><i class="fa-solid fa-forward-step"></i></button>
+          </div>
+          <label class="listen-settings"><span>Playback speed <strong id="listen-speed-label">1×</strong></span><input id="listen-speed" type="range" min="0.7" max="1.3" step="0.1" value="1" oninput="window.N3Listening.setSpeed(this.value)" /></label>
+          <button type="button" class="listen-control listen-download" id="listen-download" onclick="window.N3Listening.downloadSelectedAudio()"><i class="fa-solid fa-download"></i> Save selected audio</button>
+          <div id="listen-status" class="listen-status is-info" role="status" aria-live="polite"></div>
+          <audio id="listen-audio-player" preload="metadata"></audio>
+        </section>
+      </div>
+    </section>
+
   </main>
 
   <!-- ===== PRIMARY MOBILE DOCK ===== -->
@@ -1158,6 +1208,7 @@
     <button class="mobile-dock-item mobile-nav-item active" data-tab="today" onclick="showView('today')"><i class="fa-solid fa-house"></i><span>Home</span></button>
     <button class="mobile-dock-item mobile-nav-item" data-tab="vocab" onclick="showView('vocab')"><i class="fa-solid fa-book-bookmark"></i><span>Vocab</span></button>
     <button class="mobile-dock-item mobile-nav-item" data-tab="kanji" onclick="showView('kanji')"><i class="fa-solid fa-shapes"></i><span>Kanji</span></button>
+    <button class="mobile-dock-item mobile-nav-item" data-tab="listen" onclick="showView('listen')"><i class="fa-solid fa-headphones"></i><span>Listen</span></button>
     <button class="mobile-dock-item mobile-nav-item" data-tab="more" onclick="openMoreMenu()"><i class="fa-solid fa-ellipsis"></i><span>More</span></button>
   </nav>
   <div id="more-sheet" class="more-sheet" onclick="closeMoreMenu()" aria-label="More study tools">
@@ -1245,7 +1296,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=20261120-count-clarity"></script>
+  <script type="module" src="js/main.js?v=20261120-listening-2"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">
