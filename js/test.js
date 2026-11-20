@@ -8,7 +8,7 @@
 
 import { state } from './state.js';
 import { updateItemStats, saveStats, getItemStats, updateSidebarStats } from './srs.js?v=20261116-lag1';
-import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=20261116-lag1';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=20261120-sync-retry';
 
 let activeTestSession = null;
 let activeTestCategory = 'all';

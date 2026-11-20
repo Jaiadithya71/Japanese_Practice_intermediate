@@ -30,7 +30,7 @@ import {
   createSnapshot
 } from './backup.js';
 import { showView } from './navigation.js';
-import { renderCard } from './study.js?v=20261119-review-again';
+import { renderCard } from './study.js?v=20261120-review-again-by-lesson';
 import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold } from './review-again-policy.js?v=20261119-review-again';
 
 // Storage Keys

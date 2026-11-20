@@ -10,6 +10,7 @@ import { renderVocabularyKanjiBreakdown } from './vocab-kanji-breakdown.js';
 import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-phase.js';
 import { snapshotDueReviewItems, repeatDueReviewItems } from './due-review-session.js?v=20261119-review-again';
 import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold, selectReviewAgainItems } from './review-again-policy.js?v=20261119-review-again';
+import { loadSavedReviewAgainByLesson, saveReviewAgainForLesson, clearReviewAgainForLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
 
 const studyHistory = createStudyHistory();
 let reviewPhase = 'test';
@@ -45,7 +46,7 @@ function renderReviewPhase() {
 import { vocabularyLessonLabel } from './study-labels.js';
 import { updateItemStats, toggleItemHard, getItemStatus, peekItemStatus, getAllDueItems, getDueItemsCount, formatItemKey } from './srs.js?v=20261116-lag1';
 import { showView } from './navigation.js';
-import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=20261116-lag1';
+import { beginGistReviewSession, endGistReviewSession } from './gist-sync.js?v=20261120-sync-retry';
 
 export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'home') {
   state.homeRunQueue = [];
@@ -55,6 +56,7 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   state.dueReviewRetryItems = [];
   state.dueReviewThresholdResult = null;
   state.dueReviewPillar = null;
+  state.savedRetryLessonId = null;
   state.studyMode = mode;
   state.studyIsDrillHard = isDrillHard;
   state.drillOrigin = origin;
@@ -132,6 +134,7 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null, optio
   state.dueReviewRetryItems = [];
   state.dueReviewThresholdResult = null;
   state.dueReviewPillar = pillarFilter;
+  state.savedRetryLessonId = null;
   startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), pillarFilter);
 }
 
@@ -155,6 +158,20 @@ function startDueReviewPool(pool, pillarFilter) {
   showView('study');
   renderCard();
 }
+
+export function startSavedReviewAgain(chapterId) {
+  const chapter = String(chapterId || '');
+  const saved = loadSavedReviewAgainByLesson()[chapter];
+  const items = Array.isArray(saved?.items) ? saved.items : [];
+  if (!chapter || !items.length) return;
+  state.dueReviewOriginalItems = snapshotDueReviewItems(items);
+  state.dueReviewRetryItems = [];
+  state.dueReviewThresholdResult = null;
+  state.dueReviewPillar = 'vocab';
+  state.savedRetryLessonId = chapter;
+  startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), 'vocab');
+}
+if (typeof window !== 'undefined') window.startSavedReviewAgain = startSavedReviewAgain;
 
 // Repeat the captured due-review queue, excluding Again copies added during the prior run.
 export function repeatDueReview() {
@@ -773,8 +790,9 @@ function renderCardContent() {
       meaningEl.style.color = 'var(--text-dim)';
       if (exBox) exBox.style.display = 'none';
     } else if (state.studyDirection === 'ja-en') {
-      // Recall front uses the written word only. Reading stays on the revealed side.
-      termEl.textContent = item.term_ja || item.reading || '';
+      // Recall uses the same ruby markup as Reveal, with the reading hidden in
+      // test-front-layout so the base characters stay at the same y-position.
+      termEl.innerHTML = item.ruby_html || item.term_ja || item.reading || '';
       meaningEl.textContent = 'Tap card to reveal meaning';
       meaningEl.style.color = 'var(--text-dim)';
       if (exBox) exBox.style.display = 'none';
@@ -1036,6 +1054,21 @@ function renderStudySummary() {
   const pct = answered ? Math.round((correct / answered) * 100) : 0;
   const thresholdResult = applyReviewAgainThreshold(answered ? pct : null);
   const initialTotal = state.sessionTotalInitial || state.sessionTotal || state.sessionItems.length;
+  const savedLesson = state.savedRetryLessonId;
+  const retryItemsForStorage = (state.dueReviewRetryItems || []).map(item => ({ ...item, key: formatItemKey(item) }));
+  if (thresholdResult && savedLesson) {
+    if (thresholdResult.belowThreshold) saveReviewAgainForLesson(savedLesson, retryItemsForStorage);
+    else clearReviewAgainForLesson(savedLesson);
+  } else if (thresholdResult?.belowThreshold && state.dueReviewPillar === 'vocab') {
+    const byLesson = new Map();
+    for (const item of retryItemsForStorage) {
+      const chapter = String(item.chapter || '');
+      if (!chapter) continue;
+      if (!byLesson.has(chapter)) byLesson.set(chapter, []);
+      byLesson.get(chapter).push(item);
+    }
+    for (const [chapter, items] of byLesson) saveReviewAgainForLesson(chapter, items);
+  }
   const hasKanjiOrVocab = state.drillOrigin === 'kanji' || state.sessionItems.some(item =>
     item.type === 'kanji' || item.type === 'kanji_word' || item.type === 'vocab' || item.book === 'vocab'
   );
@@ -1070,11 +1103,13 @@ function renderStudySummary() {
   const nextBatchButton = dueGrammarRemaining ? `<button class="btn btn-primary" onclick="startDueReview('grammar')">Next due batch (${dueGrammarRemaining} left)</button>` : hasNextGrammarBatch ? `<button class="btn btn-primary" onclick="startNextGrammarBatch()">Next batch (${state.grammarRunQueue.length} left)</button>` : hasNextHomeBatch
     ? `<button class="btn btn-primary" onclick="startNextHomeBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.homeRunQueue.length} left)</button>`
     : (hasNextKanjiBatch ? `<button class="btn btn-primary" onclick="startNextKanjiBatch()"><i class="fa-solid fa-forward-step"></i> Next batch (${state.kanjiRunQueue.length} left)</button>` : '');
-  const againLabel = state.studyMode === 'kanji_quiz'
-    ? 'Quiz Again'
-    : state.learnUnit
-      ? 'Learn more words'
-      : (state.drillOrigin === 'kanji' || state.drillOrigin === 'reading' ? 'Drill Again' : 'Review Again');
+  const againLabel = thresholdResult
+    ? `Review Again (${thresholdResult.belowThreshold ? thresholdResult.retryCount : initialTotal})`
+    : state.studyMode === 'kanji_quiz'
+      ? 'Quiz Again'
+      : state.learnUnit
+        ? 'Learn more words'
+        : (state.drillOrigin === 'kanji' || state.drillOrigin === 'reading' ? 'Drill Again' : 'Review Again');
 
   // A session with no graded cards (Learn-mode browsing) is not a test:
   // skip the accuracy framing and report what was actually viewed.
@@ -1089,14 +1124,27 @@ function renderStudySummary() {
         <span class="summary-ring-pct">${pct}%</span>
         <span class="summary-ring-label">accuracy</span>
       </div>`;
-  const summaryLine = browsedOnly
-    ? `You viewed all ${initialTotal} items. Nothing was graded, so your scores are unchanged.`
-    : `You completed all ${initialTotal} items (${answered} reviews total).`;
-  const thresholdNote = thresholdResult
-    ? thresholdResult.belowThreshold
-      ? `<p class="review-threshold-note">Below your ${thresholdResult.threshold}% threshold. Review Again will retry only ${thresholdResult.retryCount} Hard/Again word${thresholdResult.retryCount === 1 ? '' : 's'}. Normal review dates are unchanged.</p>`
-      : `<p class="review-threshold-note">You met your ${thresholdResult.threshold}% threshold. Normal review dates are unchanged. Review Again replays this due-review queue.</p>`
-    : '';
+  const summaryLine = thresholdResult
+    ? (thresholdResult.belowThreshold
+      ? `Below ${thresholdResult.threshold}% · ${thresholdResult.retryCount} word${thresholdResult.retryCount === 1 ? '' : 's'} to retry.`
+      : `Met your ${thresholdResult.threshold}% target.`)
+    : browsedOnly
+      ? `You viewed all ${initialTotal} items. Nothing was graded, so your scores are unchanged.`
+      : `You completed ${initialTotal} items.`;
+  const thresholdNote = '';
+  const retryAgainCount = (() => {
+    if (thresholdResult?.belowThreshold) return thresholdResult.retryCount;
+    const seen = new Set();
+    let count = 0;
+    for (const item of state.sessionItems || []) {
+      const key = formatItemKey(item);
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      const grade = studyHistory.get(state.sessionItems, item)?.grade;
+      if (grade === 1 || grade === 2) count++;
+    }
+    return count;
+  })();
   const statsRow = browsedOnly ? `
       <div class="summary-stats-row">
         <div class="summary-stat-box">
@@ -1111,8 +1159,8 @@ function renderStudySummary() {
           <span style="font-size: 0.8rem; color: var(--text-dim);">Correct</span>
         </div>
         <div class="summary-stat-box">
-          <span class="summary-stat-val" style="color: var(--red);">${Math.max(0, answered - correct)}</span>
-          <span style="font-size: 0.8rem; color: var(--text-dim);">Again Re-queues</span>
+          <span class="summary-stat-val" style="color: var(--red);">${retryAgainCount}</span>
+          <span style="font-size: 0.8rem; color: var(--text-dim);">Retry / Again</span>
         </div>
         <div class="summary-stat-box">
           <span class="summary-stat-val" style="color: var(--text-muted);">${answered}</span>
@@ -1121,10 +1169,10 @@ function renderStudySummary() {
       </div>
 `;
   container.innerHTML = `
-    <div class="study-summary-card">
+    <div class="study-summary-card${thresholdResult ? ' review-again-summary' : ''}">
       <i class="fa-solid ${summaryIcon} summary-trophy"></i>
       <h2>${summaryTitle}</h2>${scoreRing}
-      <p style="color: var(--text-muted); margin: 0;">${summaryLine}</p>
+      <p class="${thresholdResult ? 'review-again-summary-line' : ''}" style="color: var(--text-muted); margin: 0;">${summaryLine}</p>
       ${thresholdNote}
 ${statsRow}
 

@@ -1,7 +1,7 @@
 /* Pull-down-to-refresh for the mobile app (main scroller #main) */
 import { state } from './state.js';
 
-const THRESH = 70, MAX = 110;
+const START_EDGE = 84, THRESH = 110, MAX = 160;
 let startY = 0, pulling = false, dist = 0, busy = false;
 const el = document.createElement('div');
 el.id = 'ptr';
@@ -22,7 +22,9 @@ function ok() {
 
 document.addEventListener('touchstart', e => {
   if (e.touches.length !== 1 || !ok()) return;
-  startY = e.touches[0].clientY; pulling = true; dist = 0;
+  startY = e.touches[0].clientY;
+  if (startY > START_EDGE) return;
+  pulling = true; dist = 0;
 }, { passive: true });
 
 document.addEventListener('touchmove', e => {
@@ -75,4 +77,8 @@ async function end() {
   }
 }
 document.addEventListener('touchend', end, { passive: true });
-document.addEventListener('touchcancel', end, { passive: true });
+document.addEventListener('touchcancel', () => {
+  pulling = false; dist = 0;
+  el.classList.remove('show', 'ready');
+  el.style.transform = '';
+}, { passive: true });

@@ -170,6 +170,7 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
     scrollbar-width:none;
   }
   #view-study.test-action-layout .review-testing .flashcard-body::-webkit-scrollbar { display:none; }
+  #view-study.test-action-layout.test-front-layout .review-testing .card-term-large rt { visibility:hidden; }
   #view-study.test-action-layout .review-testing .card-term-large {
     flex:none;
     margin:0;

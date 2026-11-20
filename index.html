@@ -20,11 +20,11 @@
   <link rel="stylesheet" href="css/variables.css" />
   <link rel="stylesheet" href="css/base.css?v=20261022-taps" />
   <link rel="stylesheet" href="css/navigation.css" />
-  <link rel="stylesheet" href="css/home.css?v=20261115-review-ab" />
+  <link rel="stylesheet" href="css/home.css?v=20261120-sync-retry" />
   <link rel="stylesheet" href="css/vocab.css" />
   <link rel="stylesheet" href="css/reader.css?v=20261106-update5" />
   <link rel="stylesheet" href="css/kanji.css?v=20261028-learnbtn" />
-  <link rel="stylesheet" href="css/study.css?v=20261119-review-again" />
+  <link rel="stylesheet" href="css/study.css?v=20261120-review-by-lesson" />
   <link rel="stylesheet" href="css/test.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/mobile.css?v=20261115-perf2" />
@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="css/class-track.css" />
   <link rel="stylesheet" href="css/book-platform.css" />
   <link rel="stylesheet" href="css/home-mobile.css?v=2" />
-  <link rel="stylesheet" href="css/study-mobile.css?v=20261120-grade-fill" />
+  <link rel="stylesheet" href="css/study-mobile.css?v=20261120-n3-retry-local" />
   <link rel="stylesheet" href="css/premium.css?v=1" />
 </head>
 <body>
@@ -114,7 +114,7 @@
       <div id="home-status-strip" class="home-status-strip" role="status" aria-live="polite">
         <span class="home-status-brand"><span class="home-status-n3">N3</span> Practice</span>
         <span class="home-status-saved"><i class="fa-solid fa-floppy-disk"></i> Progress saved on this device</span>
-        <span id="home-sync-state" class="home-status-sync n3s-idle"><i class="fa-solid fa-cloud"></i><span>Sync off</span></span>
+        <button type="button" id="home-sync-state" class="home-status-sync n3s-idle" aria-label="Gist sync: sync off" title="Sync off" disabled onclick="window.retryHomeSync()"><i class="fa-solid fa-cloud"></i><span>Sync off</span></button>
       </div>
       <div id="dash-loading-status" style="font-size: 0.85rem; color: var(--accent); margin: 0 0 0.75rem;"></div>
 
@@ -1245,7 +1245,7 @@
     </div>
   </div>
 
-  <script type="module" src="js/main.js?v=20261120-grade-fill"></script>
+  <script type="module" src="js/main.js?v=20261120-sync-retry"></script>
 
   <!-- ===== SLIDE-OVER SETTINGS DRAWER ===== -->
   <div id="settings-drawer-overlay" class="settings-drawer-overlay" onclick="if(event.target===this)closeSettingsDrawer()">

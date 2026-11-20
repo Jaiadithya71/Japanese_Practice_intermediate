@@ -234,6 +234,13 @@
 }
 
 
+/* Compact stats under the Review Again result message. */
+.study-summary-card.review-again-summary .summary-stats-row { gap:1.25rem; margin:.45rem 0 .8rem; }
+.study-summary-card.review-again-summary .summary-stat-box { gap:.15rem; }
+.study-summary-card.review-again-summary .summary-stat-val { font-size:1.25rem; line-height:1.2; }
+.study-summary-card.review-again-summary .summary-stat-box span:last-child { font-size:.68rem!important; white-space:nowrap; }
+.study-summary-card.review-again-summary .review-again-summary-line { font-size:.88rem; white-space:nowrap; }
+
 .review-threshold-note {
   margin: 0;
   max-width: 36rem;

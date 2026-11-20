@@ -7,13 +7,14 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 
 import { state } from './state.js';
 import { peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js?v=20261116-lag1';
-import { startStudy, renderCard, startDueReview } from './study.js?v=20261119-review-again';
+import { startStudy, renderCard, startDueReview, startSavedReviewAgain } from './study.js?v=20261120-review-again-by-lesson';
+import { loadSavedReviewAgainByLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js?v=20261119-class-tests';
 import { getDay, getHeatmap30, getCurrentStreak } from './daylog.js';
 import { istDateKey } from './time.js';
 import { renderHeatmapGridHtml } from './today.js';
-import { beginGistReviewSession } from './gist-sync.js?v=20261116-lag1';
+import { beginGistReviewSession } from './gist-sync.js?v=20261120-sync-retry';
 import { showView } from './navigation.js';
 
 export function startSingleChapterStudy(chId) {
@@ -32,6 +33,7 @@ export function renderHomeView() {
     if (ov) ov.checked = localStorage.getItem('n3_home_include_overlaps') === '1';
   } catch (_) {}
   renderHomeReviewDue();
+  renderHomeSavedReviewAgain();
   renderLessonGrid();
   renderHomeVocabStatus();
   renderHomeActivity();
@@ -652,6 +654,59 @@ export function renderHomeReviewDue() {
     chips.push('<button type="button" class="' + cls + '" title="' + (topic ? topic.replace(/&/g, '&amp;').replace(/"/g, '&quot;') + ' · ' : '') + due + ' due" onclick="window.toggleHomeReviewLesson(\'' + chId + '\')">' + label + '<span class="due-chip-count">' + due + '</span></button>');
   }
   grid.innerHTML = chips.join('');
+}
+
+export function renderHomeSavedReviewAgain() {
+  const due = document.getElementById('home-review-due');
+  if (!due) return;
+  let section = document.getElementById('home-review-again-saved');
+  const saved = loadSavedReviewAgainByLesson();
+  const entries = Object.entries(saved)
+    .filter(([, value]) => Array.isArray(value?.items) && value.items.length)
+    .sort((a, b) => Number(b[1].updatedAt || 0) - Number(a[1].updatedAt || 0));
+  const expanded = section?.dataset.expanded === 'true';
+  const visibleEntries = expanded ? entries : entries.slice(0, 3);
+  if (!entries.length) { section?.remove(); return; }
+  if (!section) {
+    section = document.createElement('section');
+    section.id = 'home-review-again-saved';
+    section.className = 'home-review-again-saved';
+    section.setAttribute('aria-label', 'Saved words to review again');
+    due.before(section);
+  }
+  section.replaceChildren();
+  const heading = document.createElement('h3');
+  heading.textContent = 'Review again';
+  section.append(heading);
+  for (const [chapter, entry] of visibleEntries) {
+    const n = Number(chapter);
+    const label = chapter.startsWith('part2_') ? 'C' + Number(chapter.slice(6))
+      : n > 30 ? 'K' + (n - 30) : n > 21 ? 'R' + (n - 21) : String(n || chapter);
+    const topic = state.chapterMetadata?.[chapter]?.topic_en || '';
+    const row = document.createElement('div');
+    row.className = 'home-review-again-row';
+    const name = document.createElement('span');
+    name.className = 'home-review-again-name';
+    name.textContent = topic ? `${label} · ${topic}` : `Lesson ${label}`;
+    const resume = document.createElement('button');
+    resume.type = 'button';
+    resume.className = 'home-review-again-resume';
+    resume.textContent = `Resume · ${entry.items.length}`;
+    resume.addEventListener('click', () => startSavedReviewAgain(chapter));
+    row.append(name, resume);
+    section.append(row);
+  }
+  if (entries.length > 3) {
+    const more = document.createElement('button');
+    more.type = 'button';
+    more.className = 'home-review-again-more';
+    more.textContent = expanded ? 'Show fewer' : `Show all ${entries.length}`;
+    more.addEventListener('click', () => {
+      section.dataset.expanded = expanded ? 'false' : 'true';
+      renderHomeSavedReviewAgain();
+    });
+    section.append(more);
+  }
 }
 
 export function toggleHomeReviewLesson(chId) {

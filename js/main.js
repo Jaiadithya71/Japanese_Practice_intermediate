@@ -1,4 +1,4 @@
-import { setHomeReviewPhase } from './home.js?v=20261119-review-again';
+import { setHomeReviewPhase } from './home.js?v=20261120-review-again-by-lesson';
 window.setHomeReviewPhase = setHomeReviewPhase;
 /* =======================================================
    NIHONGO INTERMEDIATE — main.js
@@ -9,11 +9,11 @@ import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js?v=20261117-ovl1';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js?v=20261116-lag1';
 import { showView } from './navigation.js';
-import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, repeatDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=20261119-review-again';
+import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, repeatDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=20261120-review-again-by-lesson';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261119-review-again';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261119-review-again';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261120-review-again-by-lesson';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js?v=20261119-review-again';
-import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, disconnectGist, initSyncUI } from './gist-sync.js?v=20261116-lag1';
+import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, retryHomeSync, disconnectGist, initSyncUI } from './gist-sync.js?v=20261120-sync-retry';
 import {
   renderKanjiView, setKanjiTab, setKanjiPart, setKanjiLesson, setKanjiFilter, onKanjiSearch,
   openKanjiModal, closeKanjiModal, toggleModalKanjiHard, drillActiveModalKanji,
@@ -64,6 +64,7 @@ window.openSyncSetup = openSyncSetup;
 window.closeSyncSetup = closeSyncSetup;
 window.connectGist = connectGist;
 window.forceSyncNow = forceSyncNow;
+window.retryHomeSync = retryHomeSync;
 window.disconnectGist = disconnectGist;
 
 // Study & Multi-Pillar Omni-Review

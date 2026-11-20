@@ -42,6 +42,7 @@ let pushPromise = null;
 let lastRemoteDaylog = null;
 let lastRemoteReadingTimes = null;
 let changeRevision = 0;
+let homeSyncPromise = null;
 
 function isReviewActive() {
   return reviewSessionActive || localStorage.getItem(ACTIVE_KEY) === '1';
@@ -107,6 +108,11 @@ function setStatus(kind, text) {
     const icons = { idle: 'fa-cloud', saving: 'fa-arrows-rotate fa-spin', ok: 'fa-circle-check', error: 'fa-triangle-exclamation', pending: 'fa-cloud-arrow-up' };
     homeState.title = text;
     homeState.setAttribute('aria-label', `Gist sync: ${text}`);
+    const { pat, gistId } = creds();
+    const canRetry = (kind === 'pending' || kind === 'error') && !!pat && !!gistId && navigator.onLine && !isReviewActive();
+    homeState.disabled = !canRetry;
+    homeState.setAttribute('aria-disabled', String(!canRetry));
+    homeState.title = canRetry ? `${text} · tap to retry` : text;
     homeState.innerHTML = `<i class="fa-solid ${icons[kind] || icons.idle}"></i><span>${labels[kind] || 'Sync'}</span>`;
   }
 }
@@ -810,6 +816,19 @@ export async function forceSyncNow() {
     await gistLoadStats({ allowRepair: true, forcePush: true });
   }
   if (btn) btn.disabled = false;
+}
+
+export async function retryHomeSync() {
+  const homeState = document.getElementById('home-sync-state');
+  if (!homeState || !(homeState.classList.contains('n3s-pending') || homeState.classList.contains('n3s-error'))) return false;
+  if (homeSyncPromise) return homeSyncPromise;
+  const { pat, gistId } = creds();
+  if (!pat || !gistId) { openSyncSetup(); return false; }
+  if (!navigator.onLine) { setStatus('pending', 'Offline · saved on this device'); return false; }
+  if (isReviewActive()) { setStatus('pending', 'Review active · syncs when it ends'); return false; }
+  setStatus('saving', 'Syncing…');
+  homeSyncPromise = forceSyncNow().then(() => true).finally(() => { homeSyncPromise = null; });
+  return homeSyncPromise;
 }
 
 export function disconnectGist() {
