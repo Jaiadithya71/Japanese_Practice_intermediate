@@ -185,10 +185,10 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   #view-study.test-action-layout .review-testing .card-example-box { flex:none; margin-top:4px; padding:8px 10px; }
   #view-study.test-action-layout .grade-controls {
     order:3;
-    display:grid!important;
-    flex:none;
+    display:grid;
+    flex:1 1 0%;
     width:100%;
-    min-height:120px;
+    min-height:150px;
     margin:0;
     gap:7px!important;
     grid-template-columns:repeat(2,minmax(0,1fr));
@@ -196,7 +196,7 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
   }
   #view-study.test-action-layout .btn-grade {
     height:100%;
-    min-height:56px!important;
+    min-height:72px!important;
     border-radius:14px!important;
   }
   #view-study.test-action-layout .btn-grade:disabled { opacity:.4; cursor:default; }
