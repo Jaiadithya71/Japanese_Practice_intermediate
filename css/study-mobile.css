@@ -206,39 +206,6 @@ body.hide-furigana #view-study .review-learning rt { visibility:visible; }
     visibility:hidden;
   }
 }
-@media(max-width:600px) {
-  #view-study.test-action-layout .review-testing .vocab-kanji-parts {
-    position:absolute;
-    z-index:5;
-    left:12px;
-    right:12px;
-    bottom:10px;
-    width:auto;
-    margin:0;
-    background:#202838;
-    box-shadow:0 6px 18px rgba(0,0,0,.38);
-  }
-}
-@media(max-width:370px) {
-  /* Four-character kanji cue sets can wrap to three rows on narrow phones.
-     Use a compact two-column chip layout so all four remain visible in the card. */
-  #view-study.test-action-layout .review-testing .vocab-kanji-chips:has(.vocab-kanji-chip:nth-child(4)) {
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:3px;
-  }
-  #view-study.test-action-layout .review-testing .vocab-kanji-chip {
-    min-width:0;
-    width:100%;
-    padding:2px 4px;
-    gap:3px;
-    font-size:.6rem;
-    line-height:1.16;
-    align-items:center;
-    overflow-wrap:anywhere;
-  }
-  #view-study.test-action-layout .review-testing .vocab-kanji-chip b { font-size:.78rem; }
-}
 #view-study.test-action-layout .grade-controls.awaiting-reveal { visibility:hidden; pointer-events:none; }
 
 /* Kanji quiz: stage grows with the card so the wrong-answer review stays inside */
