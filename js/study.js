@@ -1,3 +1,4 @@
+import { summarizeStudyReviewCounts } from './study-summary-metrics.js?v=20261120-summary-counts';
 import { createStudyHistory } from './study-history.js';
 /* =======================================================
    NIHONGO INTERMEDIATE — study.js
@@ -1050,8 +1051,9 @@ function renderStudySummary() {
   if (!container) { endGistReviewSession(); return; }
 
   const answered = state.sessionTotalAnswered || 0;
-  const correct = state.sessionRight || 0;
-  const pct = answered ? Math.round((correct / answered) * 100) : 0;
+  const reviewMetrics = summarizeStudyReviewCounts(answered, state.sessionRight || 0);
+  const correct = reviewMetrics.correctReviews;
+  const pct = reviewMetrics.accuracyPercent;
   const thresholdResult = applyReviewAgainThreshold(answered ? pct : null);
   const initialTotal = state.sessionTotalInitial || state.sessionTotal || state.sessionItems.length;
   const savedLesson = state.savedRetryLessonId;
@@ -1126,25 +1128,14 @@ function renderStudySummary() {
       </div>`;
   const summaryLine = thresholdResult
     ? (thresholdResult.belowThreshold
-      ? `Below ${thresholdResult.threshold}% · ${thresholdResult.retryCount} word${thresholdResult.retryCount === 1 ? '' : 's'} to retry.`
+      ? `Below ${thresholdResult.threshold}% · ${thresholdResult.retryCount} Hard/Again card${thresholdResult.retryCount === 1 ? '' : 's'} to retry.`
       : `Met your ${thresholdResult.threshold}% target.`)
     : browsedOnly
       ? `You viewed all ${initialTotal} items. Nothing was graded, so your scores are unchanged.`
-      : `You completed ${initialTotal} items.`;
+      : `Started with ${initialTotal} cards; completed ${answered} reviews, including retries.`;
   const thresholdNote = '';
-  const retryAgainCount = (() => {
-    if (thresholdResult?.belowThreshold) return thresholdResult.retryCount;
-    const seen = new Set();
-    let count = 0;
-    for (const item of state.sessionItems || []) {
-      const key = formatItemKey(item);
-      if (!key || seen.has(key)) continue;
-      seen.add(key);
-      const grade = studyHistory.get(state.sessionItems, item)?.grade;
-      if (grade === 1 || grade === 2) count++;
-    }
-    return count;
-  })();
+  // Score stats count review attempts; the threshold message above counts distinct cards eligible to retry.
+  const againReviewCount = reviewMetrics.againCount;
   const statsRow = browsedOnly ? `
       <div class="summary-stats-row">
         <div class="summary-stat-box">
@@ -1159,8 +1150,8 @@ function renderStudySummary() {
           <span style="font-size: 0.8rem; color: var(--text-dim);">Correct</span>
         </div>
         <div class="summary-stat-box">
-          <span class="summary-stat-val" style="color: var(--red);">${retryAgainCount}</span>
-          <span style="font-size: 0.8rem; color: var(--text-dim);">Retry / Again</span>
+          <span class="summary-stat-val" style="color: var(--red);">${againReviewCount}</span>
+          <span style="font-size: 0.8rem; color: var(--text-dim);">Again</span>
         </div>
         <div class="summary-stat-box">
           <span class="summary-stat-val" style="color: var(--text-muted);">${answered}</span>

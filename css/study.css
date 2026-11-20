@@ -239,7 +239,7 @@
 .study-summary-card.review-again-summary .summary-stat-box { gap:.15rem; }
 .study-summary-card.review-again-summary .summary-stat-val { font-size:1.25rem; line-height:1.2; }
 .study-summary-card.review-again-summary .summary-stat-box span:last-child { font-size:.68rem!important; white-space:nowrap; }
-.study-summary-card.review-again-summary .review-again-summary-line { font-size:.88rem; white-space:nowrap; }
+.study-summary-card.review-again-summary .review-again-summary-line { font-size:.88rem; white-space:normal; line-height:1.35; text-align:center; }
 
 .review-threshold-note {
   margin: 0;
