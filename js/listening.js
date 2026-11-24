@@ -10,6 +10,8 @@ let selectedLessons = new Set();
 let queue = [];
 let currentIndex = -1;
 let manifestByKey = new Map();
+let packVersion = null;
+let packUpdateAvailable = false;
 let dbPromise;
 let downloadBusy = false;
 let generatedLessons = [];
@@ -152,6 +154,10 @@ async function fetchManifest() {
     if (!response.ok) throw new Error(`Audio pack manifest returned ${response.status}.`);
     const data = await response.json();
     manifestByKey = new Map((data.pairs || []).map(item => [item.key, { ...item, url: new URL(item.url, data.baseUrl || response.url).href }]));
+    packVersion = data.version != null ? String(data.version) : null;
+    let storedVersion = null;
+    try { storedVersion = localStorage.getItem(`${STORAGE_PREFIX}audio_pack_version`); } catch (_) {}
+    packUpdateAvailable = !!(packVersion && storedVersion !== packVersion);
     return data;
   } catch (error) {
     manifestByKey = new Map();
@@ -555,11 +561,11 @@ export async function downloadSelectedAudio() {
   if (button) button.disabled = true;
   let saved = 0;
   try {
-    const entries = [...uniquePairs].filter(([key]) => !cache.has(key));
-    for (const [key, item] of entries) {
+  const entries = packUpdateAvailable ? [...uniquePairs] : [...uniquePairs].filter(([key]) => !cache.has(key));
+  for (const [key, item] of entries) {
       const source = manifestByKey.get(key)?.url;
       if (!source) throw new Error(`Missing audio URL for ${item.reading}.`);
-      const response = await fetch(source);
+      const response = await fetch(source, { cache: packUpdateAvailable ? 'no-store' : 'default' });
       if (!response.ok) throw new Error(`Audio fetch returned ${response.status} for ${item.reading}.`);
       const blob = await response.blob();
       if (!blob.size) throw new Error(`Empty audio file for ${item.reading}.`);
@@ -567,6 +573,7 @@ export async function downloadSelectedAudio() {
       saved += 1;
       setStatus(`Saving audio: ${saved} of ${entries.length} clips. Keep this tab open until it finishes.`, 'info');
     }
+    if (packVersion) { try { localStorage.setItem(`${STORAGE_PREFIX}audio_pack_version`, packVersion); } catch (_) {} packUpdateAvailable = false; }
     setStatus(`Saved ${uniquePairs.size} unique clips for ${selectedOccurrences().length} lesson plays on this device.`, 'success');
   } catch (error) {
     setStatus(`Audio save stopped: ${error.message}`, 'error');
@@ -586,6 +593,11 @@ export async function startPlayback() {
   queue = occurrences;
   const keys = new Set(queue.map(item => item.key));
   const present = await savedKeys(keys);
+  if (packUpdateAvailable && present.size) {
+    renderPlayer();
+    setStatus('New listening audio is available. Tap "Save selected audio" to update, then play.', 'warning');
+    return;
+  }
   const absent = [...keys].filter(key => !present.has(key)).length;
   if (absent) {
     renderPlayer();
@@ -656,7 +668,9 @@ async function renderStorageStatus() {
       request.onsuccess = () => resolve(request.result);
       request.onerror = () => reject(request.error);
     });
-    countEl.textContent = `${count.toLocaleString()} clips saved on this device`;
+    countEl.textContent = packUpdateAvailable && count > 0
+      ? `${count.toLocaleString()} clips saved on this device · update available`
+      : `${count.toLocaleString()} clips saved on this device`;
   } catch (_) {
     countEl.textContent = 'Offline audio storage is not available in this browser';
   }

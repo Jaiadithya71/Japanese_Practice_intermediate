@@ -1,5 +1,5 @@
 // Offline shell for the N3 listening pack. Bump the cache name on an incompatible release.
-const CACHE_NAME = 'n3-listening-shell-v6';
+const CACHE_NAME = 'n3-listening-shell-v7';
 const ASSETS = [
   "./",
   "./sw.js",
