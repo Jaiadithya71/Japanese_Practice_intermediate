@@ -13,6 +13,13 @@ let manifestByKey = new Map();
 let dbPromise;
 let downloadBusy = false;
 let generatedLessons = [];
+let repeatMode = 'off'; // 'off' | 'all' | 'lesson'
+let segments = [];
+let currentSegmentIndex = -1;
+let segmentEntry = null; // {url, boundaries:[{start}], duration}
+const segmentAudioCache = new Map(); // seg.key -> entry
+let audioContext = null;
+let mergedPlaybackFailed = false;
 
 function pairKey(word) {
   return `${String(word.reading || '').trim()}${SEPARATOR}${String(word.meaning_en || '').trim()}`;
@@ -246,17 +253,245 @@ function updateMediaSession(item) {
     navigator.mediaSession.metadata = new MediaMetadata({
       title: `${item.term} · ${item.meaning}`,
       artist: `N3 Listening · Lesson ${item.lessonLabel}`,
-      album: 'Nihongo Intermediate'
+      album: 'Nihongo Intermediate',
+      artwork: [
+        { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
+        { src: 'icon-512.png', sizes: '512x512', type: 'image/png' }
+      ]
     });
     navigator.mediaSession.setActionHandler('play', () => document.getElementById('listen-audio-player')?.play());
     navigator.mediaSession.setActionHandler('pause', () => document.getElementById('listen-audio-player')?.pause());
     navigator.mediaSession.setActionHandler('previoustrack', () => previous());
     navigator.mediaSession.setActionHandler('nexttrack', () => next());
+    navigator.mediaSession.setActionHandler('seekto', details => {
+      const player = document.getElementById('listen-audio-player');
+      if (player && details.seekTime != null && Number.isFinite(player.duration)) player.currentTime = Math.min(details.seekTime, player.duration);
+    });
   } catch (_) { /* Media Session support varies by browser */ }
 }
 
-function previous() { if (currentIndex > 0) loadQueueItem(currentIndex - 1, true); }
-function next() { if (currentIndex + 1 < queue.length) loadQueueItem(currentIndex + 1, true); }
+function updatePositionState() {
+  if (!('mediaSession' in navigator) || !('setPositionState' in navigator.mediaSession)) return;
+  const player = document.getElementById('listen-audio-player');
+  if (!player || !Number.isFinite(player.duration) || player.duration <= 0) return;
+  try {
+    navigator.mediaSession.setPositionState({
+      duration: player.duration,
+      playbackRate: player.playbackRate || 1,
+      position: Math.min(player.currentTime, player.duration)
+    });
+  } catch (_) { /* position state support varies by browser */ }
+}
+
+function getAudioContext() {
+  if (!audioContext) {
+    const Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) throw new Error('Web Audio is not available in this browser.');
+    audioContext = new Ctx();
+  }
+  if (audioContext.state === 'suspended') audioContext.resume().catch(() => {});
+  return audioContext;
+}
+
+function encodeWav16(samples, sampleRate) {
+  const dataSize = samples.length * 2;
+  const buffer = new ArrayBuffer(44 + dataSize);
+  const view = new DataView(buffer);
+  const writeString = (offset, text) => { for (let i = 0; i < text.length; i++) view.setUint8(offset + i, text.charCodeAt(i)); };
+  writeString(0, 'RIFF');
+  view.setUint32(4, 36 + dataSize, true);
+  writeString(8, 'WAVE');
+  writeString(12, 'fmt ');
+  view.setUint32(16, 16, true);
+  view.setUint16(20, 1, true);
+  view.setUint16(22, 1, true);
+  view.setUint32(24, sampleRate, true);
+  view.setUint32(28, sampleRate * 2, true);
+  view.setUint16(32, 2, true);
+  view.setUint16(34, 16, true);
+  writeString(36, 'data');
+  view.setUint32(40, dataSize, true);
+  for (let i = 0; i < samples.length; i++) {
+    const s = Math.max(-1, Math.min(1, samples[i]));
+    view.setInt16(44 + i * 2, s < 0 ? s * 0x8000 : s * 0x7fff, true);
+  }
+  return new Blob([buffer], { type: 'audio/wav' });
+}
+
+function buildSegments() {
+  segments = [];
+  for (let i = 0; i < queue.length; i++) {
+    const item = queue[i];
+    const last = segments[segments.length - 1];
+    if (last && last.chapter === item.chapter) last.items.push(item);
+    else segments.push({ chapter: item.chapter, lessonLabel: item.lessonLabel, items: [item], queueStart: i, key: `${item.chapter}:${i}` });
+  }
+}
+
+async function ensureSegmentAudio(seg) {
+  const cached = segmentAudioCache.get(seg.key);
+  if (cached) return cached;
+  const ctx = getAudioContext();
+  const buffers = [];
+  for (const item of seg.items) {
+    const blob = await readClip(item.key);
+    if (!blob) throw new Error(`Missing saved clip for ${item.reading}.`);
+    buffers.push(await ctx.decodeAudioData(await blob.arrayBuffer()));
+  }
+  const sampleRate = buffers[0].sampleRate;
+  const boundaries = [];
+  let total = 0;
+  for (const buf of buffers) { boundaries.push({ start: total / sampleRate }); total += buf.length; }
+  const mono = new Float32Array(total);
+  let offset = 0;
+  for (const buf of buffers) {
+    const ch0 = buf.getChannelData(0);
+    if (buf.numberOfChannels === 1) mono.set(ch0, offset);
+    else {
+      const ch1 = buf.getChannelData(1);
+      for (let i = 0; i < buf.length; i++) mono[offset + i] = (ch0[i] + ch1[i]) / 2;
+    }
+    offset += buf.length;
+  }
+  const entry = { url: URL.createObjectURL(encodeWav16(mono, sampleRate)), boundaries, duration: total / sampleRate };
+  segmentAudioCache.set(seg.key, entry);
+  return entry;
+}
+
+function evictSegmentCache(keepKeys) {
+  for (const [key, entry] of segmentAudioCache) {
+    if (keepKeys.has(key)) continue;
+    try { URL.revokeObjectURL(entry.url); } catch (_) {}
+    segmentAudioCache.delete(key);
+  }
+}
+
+function currentMergedPos() {
+  const player = document.getElementById('listen-audio-player');
+  if (!player || !segmentEntry) return 0;
+  const t = player.currentTime;
+  const b = segmentEntry.boundaries;
+  let pos = 0;
+  for (let i = 0; i < b.length; i++) { if (b[i].start <= t) pos = i; else break; }
+  return pos;
+}
+
+function updateMergedWord() {
+  if (mergedPlaybackFailed || !segmentEntry || currentSegmentIndex < 0) return;
+  const seg = segments[currentSegmentIndex];
+  if (!seg) return;
+  const qIdx = seg.queueStart + currentMergedPos();
+  if (qIdx !== currentIndex && queue[qIdx]) {
+    currentIndex = qIdx;
+    renderPlayer();
+    updateMediaSession(queue[currentIndex]);
+  }
+  updatePositionState();
+}
+
+function seekToBoundary(pos, autoPlay = true) {
+  const player = document.getElementById('listen-audio-player');
+  if (!player || !segmentEntry) return;
+  player.currentTime = (segmentEntry.boundaries[pos]?.start || 0) + 0.01;
+  if (autoPlay && player.paused) player.play().catch(() => {});
+}
+
+async function loadSegment(segIdx, itemPos = 0, autoPlay = false) {
+  const player = document.getElementById('listen-audio-player');
+  if (!player || segIdx < 0 || segIdx >= segments.length) return;
+  const seg = segments[segIdx];
+  currentSegmentIndex = segIdx;
+  let entry;
+  try {
+    setStatus(`Preparing lesson ${seg.lessonLabel} as one continuous track.`, 'info');
+    entry = await ensureSegmentAudio(seg);
+  } catch (error) {
+    mergedPlaybackFailed = true;
+    segmentEntry = null;
+    await loadQueueItem(seg.queueStart + itemPos, autoPlay);
+    return;
+  }
+  segmentEntry = entry;
+  player.src = entry.url;
+  player.playbackRate = Number(document.getElementById('listen-speed')?.value || 1);
+  currentIndex = seg.queueStart + itemPos;
+  renderPlayer();
+  updateMediaSession(queue[currentIndex]);
+  player.currentTime = entry.boundaries[itemPos]?.start || 0;
+  if (autoPlay) {
+    try { await player.play(); setStatus('Playing Japanese, then English. One continuous track per lesson, so it keeps playing with the screen off.', 'success'); }
+    catch (_) { setStatus('Tap Play to start audio. Your browser may require a direct tap.', 'warning'); }
+  }
+  const nextSeg = segments[segIdx + 1];
+  if (nextSeg) ensureSegmentAudio(nextSeg).catch(() => {});
+  evictSegmentCache(new Set([seg.key, nextSeg?.key].filter(Boolean)));
+}
+
+function legacyAdvance() {
+  if (currentIndex + 1 < queue.length) { loadQueueItem(currentIndex + 1, true); return; }
+  if (repeatMode === 'lesson' && segments.length && currentSegmentIndex >= 0) { loadQueueItem(segments[currentSegmentIndex].queueStart, true); return; }
+  if (repeatMode !== 'off' && queue.length) { loadQueueItem(0, true); return; }
+  renderPlayer();
+  setStatus('Listening queue finished.', 'success');
+}
+
+function onPlayerEnded() {
+  if (mergedPlaybackFailed || !segmentEntry || currentSegmentIndex < 0) return legacyAdvance();
+  const player = document.getElementById('listen-audio-player');
+  if (repeatMode === 'lesson') {
+    if (player) { player.currentTime = 0; player.play().catch(() => {}); }
+    return;
+  }
+  if (currentSegmentIndex + 1 < segments.length) { loadSegment(currentSegmentIndex + 1, 0, true); return; }
+  if (repeatMode === 'all') { loadSegment(0, 0, true); return; }
+  renderPlayer();
+  setStatus('Listening queue finished.', 'success');
+}
+
+function previous() {
+  if (mergedPlaybackFailed || !segmentEntry || currentSegmentIndex < 0) {
+    if (currentIndex > 0) loadQueueItem(currentIndex - 1, true);
+    return;
+  }
+  const player = document.getElementById('listen-audio-player');
+  const t = player?.currentTime || 0;
+  const pos = currentMergedPos();
+  const seg = segments[currentSegmentIndex];
+  if (t - (segmentEntry.boundaries[pos]?.start || 0) > 1.5) seekToBoundary(pos);
+  else if (pos > 0) seekToBoundary(pos - 1);
+  else if (currentSegmentIndex > 0) loadSegment(currentSegmentIndex - 1, seg ? segments[currentSegmentIndex - 1].items.length - 1 : 0, true);
+  else seekToBoundary(0);
+}
+
+function next() {
+  if (mergedPlaybackFailed || !segmentEntry || currentSegmentIndex < 0) {
+    if (currentIndex + 1 < queue.length) loadQueueItem(currentIndex + 1, true);
+    return;
+  }
+  const pos = currentMergedPos();
+  const seg = segments[currentSegmentIndex];
+  if (pos < seg.items.length - 1) seekToBoundary(pos + 1);
+  else if (currentSegmentIndex + 1 < segments.length) loadSegment(currentSegmentIndex + 1, 0, true);
+  else if (repeatMode === 'all') loadSegment(0, 0, true);
+}
+
+export function cycleRepeat() {
+  repeatMode = repeatMode === 'off' ? 'all' : repeatMode === 'all' ? 'lesson' : 'off';
+  try { localStorage.setItem(`${STORAGE_PREFIX}repeat_mode`, repeatMode); } catch (_) {}
+  applyRepeatButton();
+  const label = repeatMode === 'off' ? 'Repeat off.' : repeatMode === 'all' ? 'Repeat all selected lessons: on.' : 'Repeat the current lesson: on.';
+  setStatus(label, 'info');
+}
+
+function applyRepeatButton() {
+  const btn = document.getElementById('listen-repeat');
+  if (!btn) return;
+  btn.classList.toggle('is-on', repeatMode !== 'off');
+  btn.innerHTML = repeatMode === 'lesson' ? '<i class="fa-solid fa-repeat"></i><span class="listen-repeat-badge">1</span>' : '<i class="fa-solid fa-repeat"></i>';
+  const label = repeatMode === 'off' ? 'Repeat: off' : repeatMode === 'all' ? 'Repeat: all selected lessons' : 'Repeat: current lesson';
+  btn.setAttribute('aria-label', label);
+  btn.title = label;
+}
 
 export function toggleLesson(chapter) {
   chapter = String(chapter);
@@ -281,6 +516,10 @@ export function clearSelection() {
   persistSelection();
   queue = [];
   currentIndex = -1;
+  segments = [];
+  currentSegmentIndex = -1;
+  segmentEntry = null;
+  evictSegmentCache(new Set());
   document.getElementById('listen-audio-player')?.pause();
   renderLessonTiles();
   renderPlayer();
@@ -342,7 +581,10 @@ export async function startPlayback() {
     return;
   }
   currentIndex = 0;
-  await loadQueueItem(0, true);
+  mergedPlaybackFailed = false;
+  segmentEntry = null;
+  buildSegments();
+  await loadSegment(0, 0, true);
   renderPlayer();
 }
 
@@ -377,6 +619,7 @@ function updateProgress() {
   if (progress) progress.value = Number.isFinite(player.duration) && player.duration > 0 ? String(player.currentTime / player.duration * 100) : '0';
   if (current) current.textContent = formatTime(player.currentTime);
   if (total) total.textContent = formatTime(player.duration);
+  updateMergedWord();
 }
 
 export async function togglePlayback() {
@@ -412,6 +655,11 @@ export async function initListening() {
     const saved = JSON.parse(localStorage.getItem(`${STORAGE_PREFIX}selected_lessons`) || '[]');
     selectedLessons = new Set(saved.map(String));
   } catch (_) { selectedLessons = new Set(); }
+  try {
+    const mode = localStorage.getItem(`${STORAGE_PREFIX}repeat_mode`);
+    repeatMode = ['off', 'all', 'lesson'].includes(mode) ? mode : 'off';
+  } catch (_) { repeatMode = 'off'; }
+  applyRepeatButton();
   const data = await fetchManifest();
   setStatus(data.available ? `${data.pairs?.length || 0} audio clips available.` : 'Audio pack unavailable.', data.available ? 'info' : 'warning');
   renderLessonTiles();
@@ -424,10 +672,7 @@ export async function initListening() {
     player.addEventListener('pause', renderPlayer);
     player.addEventListener('timeupdate', updateProgress);
     player.addEventListener('loadedmetadata', updateProgress);
-    player.addEventListener('ended', () => {
-      if (currentIndex + 1 < queue.length) loadQueueItem(currentIndex + 1, true);
-      else { renderPlayer(); setStatus('Listening queue finished.', 'success'); }
-    });
+    player.addEventListener('ended', onPlayerEnded);
     player.addEventListener('error', () => setStatus('This saved audio file could not be played.', 'error'));
   }
 }
@@ -439,5 +684,5 @@ export function renderListening() {
 }
 
 if (typeof window !== 'undefined') {
-  window.N3Listening = { toggleLesson, selectAll, clearSelection, downloadSelectedAudio, startPlayback, togglePlayback, seek, setSpeed, previous, next, initListening };
+  window.N3Listening = { toggleLesson, selectAll, clearSelection, downloadSelectedAudio, startPlayback, togglePlayback, seek, setSpeed, previous, next, initListening, cycleRepeat };
 }

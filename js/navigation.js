@@ -13,7 +13,7 @@ import { renderGrammarView } from './grammar.js';
 import { renderKanjiView } from './kanji.js?v=20261116-lag1';
 import { initTestHub } from './test.js?v=20261119-class-tests';
 import { renderClassTrackHTML } from './class-curriculum.js';
-import { renderListening } from './listening.js?v=20261120-listening-2';
+import { renderListening } from './listening.js?v=20261124-listen-repeat-1';
 
 // Safe UI state initialization
 if (!state.ui) {

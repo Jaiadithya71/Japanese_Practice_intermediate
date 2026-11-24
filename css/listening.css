@@ -38,6 +38,9 @@
 .listen-transport { display:flex; align-items:center; justify-content:center; gap:.55rem; margin:1rem 0; }
 .listen-transport button { width:44px; height:44px; border-radius:14px; border:1px solid rgba(255,255,255,.1); background:rgba(255,255,255,.04); color:#e6e9f2; font-size:.94rem; cursor:pointer; }
 .listen-transport button:disabled { opacity:.4; cursor:not-allowed; }
+.listen-transport button.is-on { border-color:rgba(212,175,106,.65); color:#d4af6a; }
+.listen-repeat-badge { font:700 .55rem var(--font-body); vertical-align:super; margin-left:-2px; }
+.listen-bg-hint { margin:-.3rem 0 .55rem; text-align:center; color:#8f97ab; font-size:.72rem; }
 .listen-transport .listen-play { min-width:88px; width:auto; height:58px; padding:0 .9rem; display:inline-flex; align-items:center; justify-content:center; gap:.4rem; border:0; border-radius:18px; background:linear-gradient(135deg,#d4af6a,#bd8e42); color:#171923; font:700 .9rem var(--font-body); box-shadow:0 8px 22px rgba(212,175,106,.22); }
 .listen-settings { display:flex; align-items:center; justify-content:space-between; gap:.7rem; padding:.65rem .7rem; border-radius:13px; background:rgba(255,255,255,.035); color:#c8ccda; font-size:.78rem; }
 .listen-settings input { width:115px; accent-color:#d4af6a; }
