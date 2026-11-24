@@ -9,7 +9,7 @@ import { kanjiReviewPlan } from './kanji-review-options.js';
 import { getDueItemsCount, getItemStatus, peekItemStatus, getPillarFromKey, getFacetFromKey, resolveItemForKey, isCatchUpMode } from './srs.js?v=20261116-lag1';
 import { getCurrentStreak, getDay } from './daylog.js';
 import { istDateKey } from './time.js';
-import { startDueReview, startLearnNew } from './study.js?v=20261120-review-again-by-lesson';
+import { startDueReview, startLearnNew } from './study.js?v=20261124-review-1';
 import { showView } from './navigation.js';
 
 const PILLARS = {

@@ -7,7 +7,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 
 import { state } from './state.js';
 import { peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js?v=20261116-lag1';
-import { startStudy, renderCard, startDueReview, startSavedReviewAgain } from './study.js?v=20261120-review-again-by-lesson';
+import { startStudy, renderCard, startDueReview, startSavedReviewAgain } from './study.js?v=20261124-review-1';
 import { loadSavedReviewAgainByLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js?v=20261119-class-tests';
@@ -678,22 +678,42 @@ export function renderHomeSavedReviewAgain() {
   const heading = document.createElement('h3');
   heading.textContent = 'Review again';
   section.append(heading);
+  const dueA = getVocabDueSummary({ part: 'A' }).byChapter;
+  const dueB = getVocabDueSummary({ part: 'B' }).byChapter;
+  const age = ts => {
+    if (!ts) return 'saved earlier';
+    const mins = Math.max(0, Math.round((Date.now() - ts) / 60000));
+    if (mins < 60) return `${mins}m ago`;
+    const hours = Math.round(mins / 60);
+    if (hours < 48) return `${hours}h ago`;
+    return `${Math.round(hours / 24)}d ago`;
+  };
   for (const [chapter, entry] of visibleEntries) {
     const n = Number(chapter);
     const label = chapter.startsWith('part2_') ? 'C' + Number(chapter.slice(6))
       : n > 30 ? 'K' + (n - 30) : n > 21 ? 'R' + (n - 21) : String(n || chapter);
-    const topic = state.chapterMetadata?.[chapter]?.topic_en || '';
     const row = document.createElement('div');
     row.className = 'home-review-again-row';
+    const info = document.createElement('div');
+    info.className = 'home-review-again-info';
     const name = document.createElement('span');
     name.className = 'home-review-again-name';
-    name.textContent = topic ? `${label} · ${topic}` : `Lesson ${label}`;
+    name.textContent = `Lesson ${label}`;
+    const meta = document.createElement('span');
+    meta.className = 'home-review-again-meta';
+    const a = dueA.get(String(chapter)) || 0;
+    const b = dueB.get(String(chapter)) || 0;
+    const bits = [`${entry.items.length} saved`];
+    if (a + b > 0) bits.push(`${a + b} due today (A ${a} · B ${b})`);
+    bits.push(age(entry.updatedAt));
+    meta.textContent = bits.join(' · ');
+    info.append(name, meta);
     const resume = document.createElement('button');
     resume.type = 'button';
     resume.className = 'home-review-again-resume';
     resume.textContent = `Resume · ${entry.items.length}`;
     resume.addEventListener('click', () => startSavedReviewAgain(chapter));
-    row.append(name, resume);
+    row.append(info, resume);
     section.append(row);
   }
   if (entries.length > 3) {

@@ -1,4 +1,4 @@
-import { setHomeReviewPhase } from './home.js?v=20261120-review-again-by-lesson';
+import { setHomeReviewPhase } from './home.js?v=20261124-review-1';
 window.setHomeReviewPhase = setHomeReviewPhase;
 /* =======================================================
    NIHONGO INTERMEDIATE — main.js
@@ -9,9 +9,9 @@ import { state } from './state.js';
 import { loadAllActiveBooks } from './data-loader.js?v=20261117-ovl1';
 import { loadStats, updateSidebarStats, toggleWordHard } from './srs.js?v=20261116-lag1';
 import { showView } from './navigation.js?v=20261120-listening-2';
-import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, repeatDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=20261120-count-clarity';
+import { previousStudyCard, nextStudyCard, startStudy, startLearnNew, learnGotIt, startDueReview, repeatDueReview, startOmniReview, flipCard, gradeCard, exitStudy, playCurrentCardAudio, toggleCurrentCardHard } from './study.js?v=20261124-review-1';
 import { setChapterGroup, selectChapter, setVocabFilter, onVocabSearch, toggleFurigana, playAudio, onToggleHard, drillAllHardWords, toggleRevealHardWords, setWeakPointsFilter, drillVocabSelected, toggleVocabMultiSelectMode } from './vocab-browser.js?v=20261119-review-again';
-import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261120-review-again-by-lesson';
+import { setHomeGroup, toggleChapterSelection, selectAllChaptersInGroup, clearChapterSelection, renderHomeView, setHomeSessionSize, setHomeStudyDirection, startSelectedLessonRun, startNextHomeBatch, renderHomeActivity, startSelectedLessonTestRun } from './home.js?v=20261124-review-1';
 import { openReadingLesson, closeReadingWorkspace, setReadingCategory, selectQuizOption, submitQuizAnswers, addMissedQuestionsToSRS, toggleSentenceTranslations } from './reader.js?v=20261119-review-again';
 import { scheduleGistSave, openSyncSetup, closeSyncSetup, connectGist, forceSyncNow, retryHomeSync, disconnectGist, initSyncUI } from './gist-sync.js?v=20261120-sync-retry';
 import {

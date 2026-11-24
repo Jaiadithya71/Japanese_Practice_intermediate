@@ -433,6 +433,8 @@
 }
 .home-review-again-saved h3 { margin:0 0 .45rem; color:var(--accent,#d4af6a); font-size:.82rem; }
 .home-review-again-row { display:flex; align-items:center; gap:.65rem; min-height:42px; }
+.home-review-again-info { flex:1; display:flex; flex-direction:column; gap:2px; min-width:0; }
+.home-review-again-meta { font-size:.78rem; color:var(--text-muted); }
 .home-review-again-row + .home-review-again-row { border-top:1px solid rgba(255,255,255,.06); }
 .home-review-again-name { flex:1; min-width:0; color:var(--text,#f0f2f8); font-size:.8rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 .home-review-again-resume { flex:none; border:1px solid rgba(212,175,106,.36); border-radius:9px; padding:.4rem .75rem; background:rgba(212,175,106,.16); color:var(--accent,#d4af6a); font-size:.75rem; font-weight:600; font-family:inherit; cursor:pointer; }

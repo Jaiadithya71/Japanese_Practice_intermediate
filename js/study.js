@@ -140,8 +140,29 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null, optio
   startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), pillarFilter);
 }
 
+function shuffleInPlace(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+// Shuffle session order so the next card is not predictable from lesson order.
+// Batch membership still comes from due priority; kanji keeps its KWW -> KWR
+// section order with shuffled order inside each section.
+function shuffleReviewSessionOrder(pool, pillarFilter) {
+  if (pillarFilter === 'kanji') {
+    const groups = { KWW: [], KWR: [], other: [] };
+    for (const item of pool) groups[item.facet === 'KWW' ? 'KWW' : item.facet === 'KWR' ? 'KWR' : 'other'].push(item);
+    return [...shuffleInPlace(groups.KWW), ...shuffleInPlace(groups.KWR), ...shuffleInPlace(groups.other)];
+  }
+  return shuffleInPlace([...pool]);
+}
+
 function startDueReviewPool(pool, pillarFilter) {
   beginGistReviewSession();
+  pool = shuffleReviewSessionOrder(pool, pillarFilter);
   state.studyMode = 'flashcard';
   state.studyIsDrillHard = false;
   state.learnUnit = null;
