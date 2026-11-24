@@ -34,7 +34,7 @@ import './backup.js';
 import './time.js';
 import './daylog.js';
 import { buildIndexes } from './indexes.js';
-import { initListening } from './listening.js?v=20261124-listen-repeat-1';
+import { initListening } from './listening.js?v=20261124-repeat-fix-1';
 import { initUpdateCheck } from './update-check.js?v=20261106-1';
 import './session.js';
 import './planner.js';
