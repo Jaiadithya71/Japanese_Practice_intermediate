@@ -422,9 +422,13 @@ async function loadSegment(segIdx, itemPos = 0, autoPlay = false) {
     try { await player.play(); setStatus('Playing Japanese, then English. One continuous track per lesson, so it keeps playing with the screen off.', 'success'); }
     catch (_) { setStatus('Tap Play to start audio. Your browser may require a direct tap.', 'warning'); }
   }
+  syncLoop();
   const nextSeg = segments[segIdx + 1];
-  if (nextSeg) ensureSegmentAudio(nextSeg).catch(() => {});
-  evictSegmentCache(new Set([seg.key, nextSeg?.key].filter(Boolean)));
+  // Pre-build the wrap-around lesson too, so repeat-all can restart instantly at track end.
+  const wrapSeg = !nextSeg && repeatMode === 'all' && segments.length > 1 ? segments[0] : null;
+  const prefetchSeg = nextSeg || wrapSeg;
+  if (prefetchSeg) ensureSegmentAudio(prefetchSeg).catch(() => {});
+  evictSegmentCache(new Set([seg.key, prefetchSeg?.key].filter(Boolean)));
 }
 
 function legacyAdvance() {
@@ -433,6 +437,13 @@ function legacyAdvance() {
   if (repeatMode !== 'off' && queue.length) { loadQueueItem(0, true); return; }
   renderPlayer();
   setStatus('Listening queue finished.', 'success');
+}
+
+function syncLoop() {
+  const player = document.getElementById('listen-audio-player');
+  if (!player) return;
+  // Native loop needs no JS when the track ends, so repeat keeps working with the screen locked.
+  player.loop = repeatMode === 'lesson' || (repeatMode === 'all' && segments.length === 1);
 }
 
 function onPlayerEnded() {
@@ -484,6 +495,7 @@ export function cycleRepeat() {
 }
 
 function applyRepeatButton() {
+  syncLoop();
   const btn = document.getElementById('listen-repeat');
   if (!btn) return;
   btn.classList.toggle('is-on', repeatMode !== 'off');
