@@ -90,5 +90,7 @@ export function resetStudySessionState(state) {
   state.dueReviewThresholdResult = null;
   state.dueReviewPillar = null;
   state.savedRetryLessonId = null;
+  state.savedRetryPart = null;
+  state.savedRetryAll = null;
   state.isDueReviewMode = false;
 }

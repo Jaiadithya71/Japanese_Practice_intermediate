@@ -12,7 +12,7 @@ import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-pha
 import { snapshotDueReviewItems, repeatDueReviewItems } from './due-review-session.js?v=20261119-review-again';
 import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold, selectReviewAgainItems } from './review-again-policy.js?v=20261119-review-again';
 import { loadSavedReviewAgainByLesson, saveReviewAgainForLesson, clearReviewAgainForLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
-import { persistAbandonedVocabRetries, resetStudySessionState } from './abandoned-review-retries.js?v=20261120-abandon-resume';
+import { persistAbandonedVocabRetries, resetStudySessionState } from './abandoned-review-retries.js?v=20261125-ra-absep';
 
 const studyHistory = createStudyHistory();
 let reviewPhase = 'test';
@@ -59,6 +59,8 @@ export function startStudy(mode = 'flashcard', isDrillHard = false, origin = 'ho
   state.dueReviewThresholdResult = null;
   state.dueReviewPillar = null;
   state.savedRetryLessonId = null;
+  state.savedRetryPart = null;
+  state.savedRetryAll = null;
   state.studyMode = mode;
   state.studyIsDrillHard = isDrillHard;
   state.drillOrigin = origin;
@@ -137,6 +139,8 @@ export function startDueReview(pillarFilter = 'all', chapterFilter = null, optio
   state.dueReviewThresholdResult = null;
   state.dueReviewPillar = pillarFilter;
   state.savedRetryLessonId = null;
+  state.savedRetryPart = null;
+  state.savedRetryAll = null;
   startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), pillarFilter);
 }
 
@@ -182,19 +186,53 @@ function startDueReviewPool(pool, pillarFilter) {
   renderCard();
 }
 
-export function startSavedReviewAgain(chapterId) {
+export function startSavedReviewAgain(chapterId, options = {}) {
   const chapter = String(chapterId || '');
   const saved = loadSavedReviewAgainByLesson()[chapter];
-  const items = Array.isArray(saved?.items) ? saved.items : [];
+  let items = Array.isArray(saved?.items) ? saved.items : [];
   if (!chapter || !items.length) return;
+  // Review again tiles offer one lesson's A or B part alone (2026-11-25, his
+  // ask). A = kanji-front word (V:<id>), B = kana-front (V:<id>:kana); other
+  // key shapes belong to neither and are only served without a part filter.
+  const part = options && options.part;
+  if (part === 'A' || part === 'B') {
+    items = items.filter(item => {
+      const key = item?.key || '';
+      const isV = key.startsWith('V:') && !key.endsWith(':rev');
+      const isB = isV && key.endsWith(':kana');
+      return part === 'A' ? (isV && !isB) : isB;
+    });
+    if (!items.length) return;
+  }
   state.dueReviewOriginalItems = snapshotDueReviewItems(items);
   state.dueReviewRetryItems = [];
   state.dueReviewThresholdResult = null;
   state.dueReviewPillar = 'vocab';
   state.savedRetryLessonId = chapter;
+  state.savedRetryPart = (part === 'A' || part === 'B') ? part : null;
+  state.savedRetryAll = null;
   startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), 'vocab');
 }
 if (typeof window !== 'undefined') window.startSavedReviewAgain = startSavedReviewAgain;
+
+// One queue of everything saved, every lesson, A and B cards together
+// (2026-11-25, his ask: nothing neglected; lesson boxes stay for picking one).
+export function startSavedReviewAgainAll() {
+  const saved = loadSavedReviewAgainByLesson();
+  const items = [];
+  for (const entry of Object.values(saved)) {
+    if (Array.isArray(entry?.items)) items.push(...entry.items);
+  }
+  if (!items.length) return;
+  state.dueReviewOriginalItems = snapshotDueReviewItems(items);
+  state.dueReviewRetryItems = [];
+  state.dueReviewThresholdResult = null;
+  state.dueReviewPillar = 'vocab';
+  state.savedRetryLessonId = null;
+  state.savedRetryAll = true;
+  startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), 'vocab');
+}
+if (typeof window !== 'undefined') window.startSavedReviewAgainAll = startSavedReviewAgainAll;
 
 // Repeat the captured due-review queue, excluding Again copies added during the prior run.
 export function repeatDueReview() {
@@ -1081,8 +1119,34 @@ function renderStudySummary() {
   const savedLesson = state.savedRetryLessonId;
   const retryItemsForStorage = (state.dueReviewRetryItems || []).map(item => ({ ...item, key: formatItemKey(item) }));
   if (thresholdResult && savedLesson) {
-    if (thresholdResult.belowThreshold) saveReviewAgainForLesson(savedLesson, retryItemsForStorage);
+    const savedPart = state.savedRetryPart;
+    if (savedPart === 'A' || savedPart === 'B') {
+      // Part-filtered retry settles only the served keys; the other part's
+      // saved words stay in the lesson. An empty remainder deletes it.
+      const servedKeys = new Set((state.dueReviewOriginalItems || []).map(item => formatItemKey(item)));
+      const kept = (loadSavedReviewAgainByLesson()[savedLesson]?.items || [])
+        .filter(item => !servedKeys.has(item?.key || ''));
+      if (thresholdResult.belowThreshold) saveReviewAgainForLesson(savedLesson, [...kept, ...retryItemsForStorage]);
+      else saveReviewAgainForLesson(savedLesson, kept);
+    } else if (thresholdResult.belowThreshold) saveReviewAgainForLesson(savedLesson, retryItemsForStorage);
     else clearReviewAgainForLesson(savedLesson);
+  } else if (thresholdResult && state.savedRetryAll && state.dueReviewPillar === 'vocab') {
+    // Combined saved queue: every served lesson settles. Passed words leave
+    // the store; on a below-threshold round the still-failing words stay
+    // saved under their own lesson. An empty remainder deletes the lesson.
+    const servedKeys = new Set((state.dueReviewOriginalItems || []).map(item => formatItemKey(item)));
+    const retryByLesson = new Map();
+    for (const item of retryItemsForStorage) {
+      const ch = String(item.chapter || '');
+      if (!ch) continue;
+      if (!retryByLesson.has(ch)) retryByLesson.set(ch, []);
+      retryByLesson.get(ch).push(item);
+    }
+    const savedAll = loadSavedReviewAgainByLesson();
+    for (const chapter of Object.keys(savedAll)) {
+      const remaining = (savedAll[chapter]?.items || []).filter(item => !servedKeys.has(item?.key || ''));
+      saveReviewAgainForLesson(chapter, [...remaining, ...(retryByLesson.get(chapter) || [])]);
+    }
   } else if (thresholdResult?.belowThreshold && state.dueReviewPillar === 'vocab') {
     const byLesson = new Map();
     for (const item of retryItemsForStorage) {

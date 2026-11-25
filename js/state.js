@@ -107,5 +107,7 @@ export const state = {
   dueReviewRetryItems: [],
   dueReviewThresholdResult: null,
   dueReviewPillar: null,
-  savedRetryLessonId: null
+  savedRetryLessonId: null,
+  savedRetryPart: null,
+  savedRetryAll: null
 };

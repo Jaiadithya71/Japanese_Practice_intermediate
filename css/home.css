@@ -423,24 +423,51 @@
   .hrd-breakdown { flex: 1 1 100%; order: 5; text-align: left; -webkit-line-clamp: 2; }
 }
 
-/* Saved missed words by lesson, retained locally until the lesson retry clears. */
+/* Saved missed words by lesson, retained locally until the lesson retry clears.
+   2026-11-25: compact single-row card matching "Review due", lessons behind a toggle. */
 .home-review-again-saved {
   margin: 0 0 .75rem;
-  padding: .7rem .8rem;
-  background: linear-gradient(135deg, rgba(212,175,106,.11), rgba(255,255,255,.025));
-  border: 1px solid rgba(212,175,106,.28);
-  border-radius: 14px;
+  padding: 0.5rem 0.6rem;
+  background: var(--bg2, rgba(255, 255, 255, 0.03));
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 12px;
 }
-.home-review-again-saved h3 { margin:0 0 .45rem; color:var(--accent,#d4af6a); font-size:.82rem; }
-.home-review-again-row { display:flex; align-items:center; gap:.65rem; min-height:42px; }
-.home-review-again-info { flex:1; display:flex; flex-direction:column; gap:2px; min-width:0; }
-.home-review-again-meta { font-size:.78rem; color:var(--text-muted); }
-.home-review-again-row + .home-review-again-row { border-top:1px solid rgba(255,255,255,.06); }
-.home-review-again-name { flex:1; min-width:0; color:var(--text,#f0f2f8); font-size:.8rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-.home-review-again-resume { flex:none; border:1px solid rgba(212,175,106,.36); border-radius:9px; padding:.4rem .75rem; background:rgba(212,175,106,.16); color:var(--accent,#d4af6a); font-size:.75rem; font-weight:600; font-family:inherit; cursor:pointer; }
-.home-review-again-more { display:block; margin:.45rem auto 0; border:0; padding:.35rem .6rem; background:transparent; color:var(--text-muted,#9aa3b2); font-size:.72rem; font-weight:600; font-family:inherit; cursor:pointer; }
-.home-review-again-saved[data-expanded="true"] { max-height:50vh; overflow:auto; }
-.home-review-again-saved[data-expanded="true"] .home-review-again-more { position:sticky; bottom:0; background:var(--bg2,#141821); }
+.hra-row { display:flex; align-items:center; gap:0.5rem; }
+.hra-start {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--accent, #d4af6a); color: #101528;
+  border: none; border-radius: 9px; padding: 0.45rem 0.6rem;
+  font-weight: 700; font-size: 0.8rem; cursor: pointer; font-family: inherit;
+  white-space: nowrap;
+}
+.hra-start .hra-count {
+  background: rgba(0, 0, 0, 0.25); border-radius: 999px;
+  padding: 0.05rem 0.5rem; font-size: 0.85rem;
+}
+.hra-breakdown {
+  flex: 1; min-width: 0; font-size: 0.72rem; color: var(--text-dim, #7a8099); text-align: right;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.hra-toggle {
+  background: none; border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  color: var(--text-muted, #9aa0b5); border-radius: 8px; padding: 0.4rem 0.5rem;
+  font-size: 0.75rem; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.hra-toggle .fa-chevron-down { transition: transform 0.15s ease; }
+.hra-toggle.open .fa-chevron-down { transform: rotate(180deg); }
+.hra-start:disabled { opacity: 0.55; cursor: default; }
+.hra-list { margin-top: 0.55rem; }
+.hra-list .home-lesson-grid { max-height: 220px; overflow-y: auto; padding-right: 0.15rem; }
+.hra-list .home-lesson-tile { border-color: rgba(212, 175, 106, 0.45); cursor: pointer; font-family: inherit; }
+.hra-list .home-lesson-tile:disabled { opacity: 0.35; cursor: default; }
+.hra-list .home-lesson-tile-num { color: var(--text, #f0f2f8); }
+.hra-part-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; }
+.hra-part-a { color: var(--text-dim); }
+.hra-part-b { color: var(--accent, #d4af6a); }
+@media (max-width: 480px) {
+  .hra-row { flex-wrap: wrap; }
+  .hra-breakdown { flex: 1 1 100%; order: 5; text-align: left; }
+}
 
 /* Home drill option checkboxes — custom pill options (scoped to the Home run
    settings so the Kanji tab's plain checkbox is untouched). Behavior and

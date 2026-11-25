@@ -96,21 +96,21 @@ const state = {
   sessionItems: [{ key: 'V:a' }], sessionIdx: 1, sessionRight: 1, sessionTotal: 2,
   sessionTotalInitial: 2, sessionTotalAnswered: 2, cardFlipped: true,
   dueReviewOriginalItems: [{}], dueReviewActiveItems: [{}], dueReviewRetryItems: [{}],
-  dueReviewThresholdResult: {}, dueReviewPillar: 'vocab', savedRetryLessonId: '01', isDueReviewMode: true
+  dueReviewThresholdResult: {}, dueReviewPillar: 'vocab', savedRetryLessonId: '01', savedRetryPart: 'A', savedRetryAll: true, isDueReviewMode: true
 };
 resetStudySessionState(state);
 assert.deepEqual(state, {
   sessionItems: [], sessionIdx: 0, sessionRight: 0, sessionTotal: 0,
   sessionTotalInitial: 0, sessionTotalAnswered: 0, cardFlipped: false,
   dueReviewOriginalItems: [], dueReviewActiveItems: [], dueReviewRetryItems: [],
-  dueReviewThresholdResult: null, dueReviewPillar: null, savedRetryLessonId: null, isDueReviewMode: false
+  dueReviewThresholdResult: null, dueReviewPillar: null, savedRetryLessonId: null, savedRetryPart: null, savedRetryAll: null, isDueReviewMode: false
 });
 const studySource = fs.readFileSync(new URL('../js/study.js', import.meta.url), 'utf8');
 assert.match(studySource, /function saveAbandonedReviewRetries\(\) \{[\s\S]*?persistAbandonedVocabRetries\(/);
 assert.match(studySource, /export function exitStudy\(\) \{\s*const returnView = state\.drillOrigin \|\| 'home';\s*saveAbandonedReviewRetries\(\);\s*endGistReviewSession\(\);\s*resetStudySessionAfterExit\(\);/);
 const homeSource = fs.readFileSync(new URL('../js/home.js', import.meta.url), 'utf8');
-assert.match(homeSource, /resume\.textContent = `Resume · \$\{entry\.items\.length\}`/);
-assert.match(homeSource, /startSavedReviewAgain\(chapter\)/);
-console.log('Exit integration: save pending lesson retries before ending sync, reset active queue, and show the lesson Resume row.');
+assert.match(homeSource, /tile\.className = 'home-lesson-tile hra-tile-part'/);
+assert.match(homeSource, /startSavedReviewAgain\(chapter, \{ part \}\)/);
+console.log('Exit integration: save pending lesson retries before ending sync, reset active queue, and show the lesson Resume boxes.');
 
 console.log('Abandoned review: per-lesson Hard/Again persistence, resolved grades, retry occurrence handling, and session reset passed.');
