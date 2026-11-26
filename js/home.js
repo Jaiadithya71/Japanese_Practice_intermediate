@@ -7,7 +7,7 @@ import { getReviewPhase, setReviewPhasePreference } from './review-phase.js';
 
 import { state } from './state.js';
 import { peekItemStatus, getDueItemsCount, getVocabDueSummary } from './srs.js?v=20261116-lag1';
-import { startStudy, renderCard, startDueReview, startSavedReviewAgain, startSavedReviewAgainAll } from './study.js?v=20261125-ra-absep';
+import { startStudy, renderCard, startDueReview, startSavedReviewAgain, startSavedReviewAgainAll, startSavedReviewAgainSelected } from './study.js?v=20261126-ra-multi';
 import { loadSavedReviewAgainByLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
 import { grammarSections } from './grammar-lessons.js';
 import { getAllAvailableTests, startTestSession } from './test.js?v=20261119-class-tests';
@@ -667,6 +667,8 @@ function hraPartMatch(key, part) {
   return part === 'A' ? (isV && !isB) : isB;
 }
 
+const hraSelected = new Set(); // 'chapter|A' / 'chapter|B', cleared on collapse and after a round
+
 export function renderHomeSavedReviewAgain() {
   const due = document.getElementById('home-review-due');
   if (!due) return;
@@ -685,16 +687,32 @@ export function renderHomeSavedReviewAgain() {
   }
   section.replaceChildren();
   const totalWords = entries.reduce((sum, [, entry]) => sum + entry.items.length, 0);
+  const partCounts = new Map();
+  for (const [chapter, entry] of entries) {
+    for (const part of ['A', 'B']) {
+      partCounts.set(chapter + '|' + part, entry.items.filter(it => hraPartMatch(it?.key || '', part)).length);
+    }
+  }
+  for (const k of [...hraSelected]) if (!(partCounts.get(k) > 0)) hraSelected.delete(k);
+  const selectedWords = [...hraSelected].reduce((sum, k) => sum + (partCounts.get(k) || 0), 0);
 
   const row = document.createElement('div');
   row.className = 'hra-row';
   const start = document.createElement('button');
   start.type = 'button';
   start.className = 'hra-start';
-  start.innerHTML = '<i class="fa-solid fa-rotate-left"></i><span>Review again</span><strong class="hra-count"></strong>';
-  start.querySelector('.hra-count').textContent = totalWords;
-  start.title = 'Retry everything saved, all lessons together';
-  start.addEventListener('click', () => startSavedReviewAgainAll());
+  const hasPicks = hraSelected.size > 0;
+  start.innerHTML = '<i class="fa-solid fa-rotate-left"></i><span></span><strong class="hra-count"></strong>';
+  start.querySelector('span').textContent = hasPicks ? 'Start selected' : 'Review all';
+  start.querySelector('.hra-count').textContent = hasPicks ? selectedWords : totalWords;
+  start.title = hasPicks ? 'Retry only the ticked boxes together' : 'Retry everything saved, all lessons together';
+  start.addEventListener('click', () => {
+    if (hraSelected.size) {
+      const picks = [...hraSelected].map(k => { const [chapter, part] = k.split('|'); return { chapter, part }; });
+      hraSelected.clear();
+      startSavedReviewAgainSelected(picks);
+    } else startSavedReviewAgainAll();
+  });
   const breakdown = document.createElement('span');
   breakdown.className = 'hra-breakdown';
   breakdown.textContent = entries.length + ' lesson' + (entries.length === 1 ? '' : 's') + ' saved';
@@ -712,6 +730,7 @@ export function renderHomeSavedReviewAgain() {
       now = localStorage.getItem(HRA_OPEN_KEY) !== '1';
       localStorage.setItem(HRA_OPEN_KEY, now ? '1' : '0');
     } catch (_) {}
+    if (!now) hraSelected.clear();
     renderHomeSavedReviewAgain();
   });
   row.append(start, breakdown, toggle);
@@ -747,10 +766,12 @@ export function renderHomeSavedReviewAgain() {
     // One full-size box per lesson part, both always visible (2026-11-25, his
     // ask: "make them separate boxes - the A and B").
     for (const [part, partCount] of [['A', aSaved], ['B', bSaved]]) {
+      if (partCount === 0) continue; // empty parts stay hidden (2026-11-26)
+      const selKey = chapter + '|' + part;
       const tile = document.createElement('button');
       tile.type = 'button';
-      tile.className = 'home-lesson-tile hra-tile-part';
-      tile.disabled = partCount === 0;
+      tile.className = 'home-lesson-tile hra-tile-part' + (hraSelected.has(selKey) ? ' selected' : '');
+      tile.setAttribute('aria-pressed', hraSelected.has(selKey) ? 'true' : 'false');
       tile.title = bits.join(' \u00b7 ') + ` \u00b7 retry lesson ${label} part ${part} (${part === 'A' ? 'kanji front' : 'kana front'})`;
       tile.setAttribute('aria-label', tile.title);
       const num = document.createElement('span');
@@ -763,13 +784,16 @@ export function renderHomeSavedReviewAgain() {
       count.className = 'home-lesson-tile-count';
       count.textContent = partCount + ' saved';
       tile.append(num, partEl, count);
-      tile.addEventListener('click', () => startSavedReviewAgain(chapter, { part }));
+      tile.addEventListener('click', () => {
+        if (hraSelected.has(selKey)) hraSelected.delete(selKey); else hraSelected.add(selKey);
+        renderHomeSavedReviewAgain();
+      });
       grid.append(tile);
     }
   }
   const hint = document.createElement('p');
   hint.className = 'hrd-grid-hint';
-  hint.textContent = 'A = kanji front, B = kana front. Tap a box to retry that part of that lesson; the gold button retries everything together.';
+  hint.textContent = 'A = kanji front, B = kana front. Tap boxes to pick what to retry, then Start selected. With nothing picked the gold button retries everything.';
   list.append(hint);
 }
 

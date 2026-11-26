@@ -4,7 +4,7 @@
    ======================================================= */
 
 import { state } from './state.js';
-import { renderHomeView } from './home.js?v=20261125-ra-absep';
+import { renderHomeView } from './home.js?v=20261126-ra-multi';
 import './today.js';
 import { renderSrsHome } from './home-srs.js';
 import { renderChapterChips, renderVocabList, updateHardWordsView } from './vocab-browser.js?v=20261116-lag1';

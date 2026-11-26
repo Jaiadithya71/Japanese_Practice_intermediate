@@ -12,7 +12,7 @@ import { initialReviewPhase, canGradeReview, getReviewPhase } from './review-pha
 import { snapshotDueReviewItems, repeatDueReviewItems } from './due-review-session.js?v=20261119-review-again';
 import { DEFAULT_REVIEW_AGAIN_THRESHOLD, normalizeReviewAgainThreshold, selectReviewAgainItems } from './review-again-policy.js?v=20261119-review-again';
 import { loadSavedReviewAgainByLesson, saveReviewAgainForLesson, clearReviewAgainForLesson } from './review-again-by-lesson.js?v=20261120-retry-by-lesson';
-import { persistAbandonedVocabRetries, resetStudySessionState } from './abandoned-review-retries.js?v=20261125-ra-absep';
+import { persistAbandonedVocabRetries, resetStudySessionState } from './abandoned-review-retries.js?v=20261126-ra-multi';
 
 const studyHistory = createStudyHistory();
 let reviewPhase = 'test';
@@ -214,6 +214,42 @@ export function startSavedReviewAgain(chapterId, options = {}) {
   startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), 'vocab');
 }
 if (typeof window !== 'undefined') window.startSavedReviewAgain = startSavedReviewAgain;
+
+// Several picked lesson-part boxes as one shuffled queue (2026-11-26, his ask:
+// tick several boxes, one Start button). picks = [{ chapter, part }]. Settles
+// like the combined queue: only the served keys leave or re-save, so unticked
+// boxes keep their words.
+export function startSavedReviewAgainSelected(picks) {
+  const saved = loadSavedReviewAgainByLesson();
+  const items = [];
+  const seen = new Set();
+  for (const pick of Array.isArray(picks) ? picks : []) {
+    const chapter = String(pick?.chapter || '');
+    const part = pick?.part;
+    const list = Array.isArray(saved[chapter]?.items) ? saved[chapter].items : [];
+    for (const item of list) {
+      const key = item?.key || '';
+      if (part === 'A' || part === 'B') {
+        const isV = key.startsWith('V:') && !key.endsWith(':rev');
+        const isB = isV && key.endsWith(':kana');
+        if (part === 'A' ? !(isV && !isB) : !isB) continue;
+      }
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      items.push(item);
+    }
+  }
+  if (!items.length) return;
+  state.dueReviewOriginalItems = snapshotDueReviewItems(items);
+  state.dueReviewRetryItems = [];
+  state.dueReviewThresholdResult = null;
+  state.dueReviewPillar = 'vocab';
+  state.savedRetryLessonId = null;
+  state.savedRetryPart = null;
+  state.savedRetryAll = true;
+  startDueReviewPool(repeatDueReviewItems(state.dueReviewOriginalItems), 'vocab');
+}
+if (typeof window !== 'undefined') window.startSavedReviewAgainSelected = startSavedReviewAgainSelected;
 
 // One queue of everything saved, every lesson, A and B cards together
 // (2026-11-25, his ask: nothing neglected; lesson boxes stay for picking one).

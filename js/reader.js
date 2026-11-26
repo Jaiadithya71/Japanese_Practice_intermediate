@@ -10,7 +10,7 @@ import { wrapReadingGloss, lookupEntry } from './reading-lookup.js';
 import { beginGistReviewSession, endGistReviewSession, scheduleGistSave } from './gist-sync.js?v=20261120-sync-retry';
 import { addAttempt, attachAccuracy, MIN_ATTEMPT_SECONDS } from './reading-times.js';
 import { updateItemStats, toggleItemHard, updateSidebarStats, snapToNextDueSlot, saveStats, peekItemStatus } from './srs.js?v=20261116-lag1';
-import { renderCard } from './study.js?v=20261125-ra-absep';
+import { renderCard } from './study.js?v=20261126-ra-multi';
 import { showView } from './navigation.js';
 import { getAllWords, getAllReadingLessons } from './data-loader.js?v=20261117-ovl1';
 import { vocabularyKanjiMeanings } from './vocab-kanji-breakdown.js';

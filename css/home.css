@@ -461,6 +461,13 @@
 .hra-list .home-lesson-tile { border-color: rgba(212, 175, 106, 0.45); cursor: pointer; font-family: inherit; }
 .hra-list .home-lesson-tile:disabled { opacity: 0.35; cursor: default; }
 .hra-list .home-lesson-tile-num { color: var(--text, #f0f2f8); }
+.hra-list .home-lesson-tile { position: relative; }
+.hra-list .home-lesson-tile.hra-tile-part.selected { border: 2px solid var(--accent, #d4af6a) !important; background: rgba(212, 175, 106, 0.14) !important; box-shadow: none !important; }
+.hra-list .hra-tile-part.selected::after {
+  content: '\2713'; position: absolute; top: 4px; right: 5px; width: 18px; height: 18px;
+  border-radius: 50%; background: var(--accent, #d4af6a); color: #101528;
+  font-size: 0.68rem; font-weight: 800; line-height: 18px; text-align: center;
+}
 .hra-part-label { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.04em; }
 .hra-part-a { color: var(--text-dim); }
 .hra-part-b { color: var(--accent, #d4af6a); }
