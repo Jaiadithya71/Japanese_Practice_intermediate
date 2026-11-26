@@ -110,7 +110,7 @@ assert.match(studySource, /function saveAbandonedReviewRetries\(\) \{[\s\S]*?per
 assert.match(studySource, /export function exitStudy\(\) \{\s*const returnView = state\.drillOrigin \|\| 'home';\s*saveAbandonedReviewRetries\(\);\s*endGistReviewSession\(\);\s*resetStudySessionAfterExit\(\);/);
 const homeSource = fs.readFileSync(new URL('../js/home.js', import.meta.url), 'utf8');
 assert.match(homeSource, /tile\.className = 'home-lesson-tile hra-tile-part'/);
-assert.match(homeSource, /startSavedReviewAgain\(chapter, \{ part \}\)/);
+assert.match(homeSource, /startSavedReviewAgainSelected\(picks\)/);
 console.log('Exit integration: save pending lesson retries before ending sync, reset active queue, and show the lesson Resume boxes.');
 
 console.log('Abandoned review: per-lesson Hard/Again persistence, resolved grades, retry occurrence handling, and session reset passed.');
